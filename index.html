@@ -25,20 +25,25 @@
     <div ng-controller="ctrl" class="container mt-4">
     <h1 class="mb-4">1500 words</h1>
 	  <button type="button" class="btn btn-sm btn-warning">adjective</button>
-     <button type="button" class="btn btn-sm btn-danger">adverb</button>
+      <button type="button" class="btn btn-sm btn-danger">adverb</button>
 	  <button type="button" class="btn btn-sm btn-success">verb</button>
 	  <button type="button" class="btn btn-sm btn-info">noun</button>
 
 		<div class="card mt-4" ng-repeat="word in words">
 		    <div class="card-body">
           <div class="card-text my-4"><span class="font-weight-bold mr-4">{{word.word}}</span>
-            {{word.us}}
-              <button class="btn btn-primary mx-4" 
-          ng-class="word.type == 0 ? 'bg-warning' : (word.type == 1 ? 'bg-danger' : (word.type == 2 ? 'bg-success' : 'bg-info'))"
-          ng-click="sayIt(word.word)"><span class="glyphicon glyphicon-headphones"></span></button>
+           	<span class="mr-4">{{word.us}}</span>
+
+            <span ng-repeat="type in word.types" class="mx-1 px-2 lead"
+            ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}</span>
+
+	         <button class="btn btn-primary mx-4" 
+	         		 ng-click="sayIt(word.word)">
+	          		<span class="glyphicon glyphicon-headphones"></span>
+	      	</button>
           </div>
           <div class="card-text my-3 text-justify" 
-              ng-repeat="ex in word.examples">- {{ex}}<button ng-click="sayIt(ex)" class="ml-4 btn btn-link glyphicon glyphicon-headphones"></button>
+              ng-repeat="ex in word.examples"><button ng-click="sayIt(ex)" class="ml-2 btn btn-link glyphicon glyphicon-headphones"></button> {{ex}}
           </div>
           <a href="https://dictionary.cambridge.org/dictionary/english/{{word.word}}"
           class="btn btn-primary mt-4 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>Cambridge</a>
@@ -52,10 +57,21 @@
     var app = angular.module("myApp", []);
     app.controller("ctrl", function($scope) {
     $scope.words = [
-        {word: "additional", us: /əˈdɪʃ·ə·nəl/, type: 0, mean: "bổ sung", examples: ["There will be an extra charge for any additional passengers.", "The doctor has made an initial diagnosis, but there'll be an additional examination by a specialist."]},
-        {word: "admit", us: /ədˈmit/, type: 2, mean: "thừa nhân", examples: ["Lorem"]},
-        {word: "agree", us: /əˈɡriː/, type: 2, mean: "đồng ý", examples: ["Lorem"]},
-        {word: "announce", us: /əˈnaʊns/, type: 2, mean: "thông báo", examples: ["Lorem"]},
+        {word: "additional", us: /əˈdɪʃ·ə·nəl/, types: ["adj"], mean: "bổ sung", examples: ["There will be an extra charge for any additional passengers.", "The doctor has made an initial diagnosis, but there'll be an additional examination by a specialist."]},
+        {word: "admit", us: /ədˈmit/, types: ["v"], mean: "thừa nhân", examples: ["He admitted his mistake."]},
+        {word: "agree", us: /əˈɡriː/, types: ["v"], mean: "đồng ý", examples: ["I agree with you on this issue."]},
+        {word: "announce", us: /əˈnaʊns/, types: ["v"], mean: "thông báo", examples: ["They announced the death of their mother in the local paper.", "She announced the winner of the competition to an excited audience."]},
+        {word: "apologize", us: /əˈpɑː.lə.dʒaɪz/, types: ["v"], mean: "xin lỗi", examples: ["She apologized profusely for having to leave at 3.30 p.m. "]},
+        {word: "approve", us: /əˈpruːv/, types: ["v"], mean: "tán thành", examples: ["She doesn't approve of my friends.", "He doesn't approve of smoking.", "I thoroughly approve of what the government is doing."]},
+        {word: "argue", us: /ˈɑːrɡ.juː/, types: ["v"], mean: "tranh luận", examples: ["The children are always arguing.","Kids, will you stop arguing with each other?"]},
+        {word: "blame", us: /bleɪm/, types: ["v"], mean: "thông báo", examples: ["Hugh blames his mother for his lack of confidence."]},
+        {word: "brief", us: /briːf/, types: ["adj","adv","v"], mean: "thông báo", examples: ["His acceptance speech was mercifully brief.", "We had already been briefed about/on what the job would entail."]},
+        {word: "brochure", us: /broʊˈʃʊr/, types: ["n"], mean: "cuốn sách nhỏ", examples: ["Enclosed is a brochure that highlights the benefits that you can receive as a corporate donor."]},
+        {word: "certain", us: /ˈsɝː.tən/, types: ["adv"], mean: "chắc chắn", examples: ["The police seem certain that they will find the people responsible for the attack."]},
+        {word: "comma", us:  /ˈkɑː.mə/, types: ["n"], mean: "thông báo", examples: ["We usually put a comma after thousands in numbers."]},
+        {word: "complaint", us:  /ˈkɑː.mə/, types: ["n"], mean: "thông báo", examples: ["We've received a complaint from one of our listeners about offensive language."]},
+        {word: "comma", us:   /kəmˈpleɪnt/, types: ["v"], mean: "thông báo", examples: ["1111"]},
+        {word: "comma", us:   /kəmˈpleɪnt/, types: ["v"], mean: "thông báo", examples: ["1111"]},
 	   ];
 
     $scope.sayIt = function (theText) {
@@ -65,5 +81,7 @@
     })
 </script>
 </html>
+
+
 
 

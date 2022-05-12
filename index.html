@@ -74,16 +74,7 @@
 	   ];
 
     $scope.sayIt = function (theText) {
-    	var voices = window.speechSynthesis.getVoices();
-
     	Speech = new SpeechSynthesisUtterance(theText);
-	    Speech.voice = voices[1];
-	    Speech.voiceURI = "Google UK English Male";
-	    Speech.volume = 1; // 0 to 1
-	    Speech.rate = 1; // 0.1 to 10
-	    Speech.pitch = 0; //0 to 2
-	    Speech.lang = 'en-GB';
-    
         window.speechSynthesis.speak(Speech);
      };
 

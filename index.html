@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>1500 Words</title>
+	<title>1500 English</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -24,13 +24,18 @@
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
     <h1 class="mb-4">1500 words</h1>
-	<div class="card mt-4" ng-repeat="word in words">
+	  <button type="button" class="btn btn-sm btn-warning">adjective</button>
+      <button type="button" class="btn btn-sm btn-danger">adverb</button>
+	  <button type="button" class="btn btn-sm btn-success">verb</button>
+	  <button type="button" class="btn btn-sm btn-info">noun</button>
+
+		<div class="card mt-4" ng-repeat="word in words">
 		    <div class="card-body">
           <div class="card-text my-4"><span class="font-weight-bold mr-4">{{word.word}}</span>
            	<span class="mr-4 font-italic">{{word.mean}}</span>
            	<span class="mr-4">{{word.us}}</span>
 
-            <span ng-repeat="type in word.types" class="mx-1 px-2 py-2 lead"
+            <span ng-repeat="type in word.types" class="mx-1 px-2 lead"
             ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}</span>
 
 	         <button class="btn btn-primary mx-4" 
@@ -38,8 +43,8 @@
 	          		<span class="glyphicon glyphicon-headphones"></span>
 	      	</button>
           </div>
-          <div class="card-text mt-3 mb-1 text-justify" 
-              ng-repeat="ex in word.examples"><button ng-click="sayIt(ex)" class="ml-2 btn btn-link glyphicon glyphicon-headphones"></button> {{ex}}
+          <div class="card-text text-justify" 
+              ng-repeat="exam in word.examples"><button ng-click="sayIt(exam)" class="ml-2 btn btn-link glyphicon glyphicon-headphones"></button> {{exam}}
           </div>
           <a href="https://dictionary.cambridge.org/dictionary/english/{{word.word}}"
           class="btn btn-primary mt-1 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>Cambridge</a>
@@ -66,13 +71,21 @@
         {word: "certain", us: /ˈsɝː.tən/, types: ["adv"], mean: "chắc chắn", examples: ["The police seem certain that they will find the people responsible for the attack."]},
         {word: "comma", us:  /ˈkɑː.mə/, types: ["n"], mean: "dấu phẩy", examples: ["We usually put a comma after thousands in numbers."]},
         {word: "complaint", us:  /ˈkɑː.mə/, types: ["n"], mean: "lời phàn nàn", examples: ["We've received a complaint from one of our listeners about offensive language."]},
-        {word: "comma", us:   /kəmˈpleɪnt/, types: ["v"], mean: "thông báo", examples: ["1111"]},
-        {word: "comma", us:   /kəmˈpleɪnt/, types: ["v"], mean: "thông báo", examples: ["1111"]},
 	   ];
 
     $scope.sayIt = function (theText) {
-          window.speechSynthesis.speak(new SpeechSynthesisUtterance(theText));
-      };
+    	var voices = window.speechSynthesis.getVoices();
+
+    	Speech = new SpeechSynthesisUtterance(theText);
+	    Speech.voice = voices[2];
+	    Speech.voiceURI = "Google UK English Male";
+	    Speech.volume = 1; // 0 to 1
+	    Speech.rate = 1; // 0.1 to 10
+	    Speech.pitch = 0; //0 to 2
+	    Speech.lang = 'en-GB';
+    
+        window.speechSynthesis.speak(Speech);
+     };
 
     })
 </script>

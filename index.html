@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bootstrap Card</title>
+	<title>1500 English</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -38,7 +38,7 @@
           ng-click="sayIt(word.word)"><span class="glyphicon glyphicon-headphones"></span></button>
           </div>
           <div class="card-text my-3 text-justify" 
-              ng-repeat="ex in word.examples">- {{ex}}<button ng-click="sayIt(ex)" class="ml-4 btn btn-primary glyphicon glyphicon-headphones"></button>
+              ng-repeat="ex in word.examples">- {{ex}}<button ng-click="sayIt(ex)" class="ml-4 btn btn-link glyphicon glyphicon-headphones"></button>
           </div>
           <a href="https://dictionary.cambridge.org/dictionary/english/{{word.word}}"
           class="btn btn-primary mt-4 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>Cambridge</a>

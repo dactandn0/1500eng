@@ -32,6 +32,7 @@
 		<div class="card mt-4" ng-repeat="word in words">
 		    <div class="card-body">
           <div class="card-text my-4"><span class="font-weight-bold mr-4">{{word.word}}</span>
+           	<span class="mr-4 font-italic">{{word.mean}}</span>
            	<span class="mr-4">{{word.us}}</span>
 
             <span ng-repeat="type in word.types" class="mx-1 px-2 lead"
@@ -42,11 +43,11 @@
 	          		<span class="glyphicon glyphicon-headphones"></span>
 	      	</button>
           </div>
-          <div class="card-text my-3 text-justify" 
+          <div class="card-text mt-3 mb-1 text-justify" 
               ng-repeat="ex in word.examples"><button ng-click="sayIt(ex)" class="ml-2 btn btn-link glyphicon glyphicon-headphones"></button> {{ex}}
           </div>
           <a href="https://dictionary.cambridge.org/dictionary/english/{{word.word}}"
-          class="btn btn-primary mt-4 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>Cambridge</a>
+          class="btn btn-primary mt-1 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>Cambridge</a>
         </div>
 		 </div>		 
     </div>
@@ -68,8 +69,8 @@
         {word: "brief", us: /briːf/, types: ["adj","adv","v"], mean: "thông báo", examples: ["His acceptance speech was mercifully brief.", "We had already been briefed about/on what the job would entail."]},
         {word: "brochure", us: /broʊˈʃʊr/, types: ["n"], mean: "cuốn sách nhỏ", examples: ["Enclosed is a brochure that highlights the benefits that you can receive as a corporate donor."]},
         {word: "certain", us: /ˈsɝː.tən/, types: ["adv"], mean: "chắc chắn", examples: ["The police seem certain that they will find the people responsible for the attack."]},
-        {word: "comma", us:  /ˈkɑː.mə/, types: ["n"], mean: "thông báo", examples: ["We usually put a comma after thousands in numbers."]},
-        {word: "complaint", us:  /ˈkɑː.mə/, types: ["n"], mean: "thông báo", examples: ["We've received a complaint from one of our listeners about offensive language."]},
+        {word: "comma", us:  /ˈkɑː.mə/, types: ["n"], mean: "dấu phẩy", examples: ["We usually put a comma after thousands in numbers."]},
+        {word: "complaint", us:  /ˈkɑː.mə/, types: ["n"], mean: "lời phàn nàn", examples: ["We've received a complaint from one of our listeners about offensive language."]},
         {word: "comma", us:   /kəmˈpleɪnt/, types: ["v"], mean: "thông báo", examples: ["1111"]},
         {word: "comma", us:   /kəmˈpleɪnt/, types: ["v"], mean: "thông báo", examples: ["1111"]},
 	   ];

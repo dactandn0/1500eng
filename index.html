@@ -24,12 +24,7 @@
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
     <h1 class="mb-4">1500 words</h1>
-	  <button type="button" class="btn btn-sm btn-warning">adjective</button>
-      <button type="button" class="btn btn-sm btn-danger">adverb</button>
-	  <button type="button" class="btn btn-sm btn-success">verb</button>
-	  <button type="button" class="btn btn-sm btn-info">noun</button>
-
-		<div class="card mt-4" ng-repeat="word in words">
+	<div class="card mt-4" ng-repeat="word in words">
 		    <div class="card-body">
           <div class="card-text my-4"><span class="font-weight-bold mr-4">{{word.word}}</span>
            	<span class="mr-4 font-italic">{{word.mean}}</span>

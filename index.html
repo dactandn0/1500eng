@@ -30,7 +30,7 @@
            	<span class="mr-4 font-italic">{{word.mean}}</span>
            	<span class="mr-4">{{word.us}}</span>
 
-            <span ng-repeat="type in word.types" class="mx-1 px-2 lead"
+            <span ng-repeat="type in word.types" class="mx-1 px-2 py-2 lead"
             ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}</span>
 
 	         <button class="btn btn-primary mx-4" 

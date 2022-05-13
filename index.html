@@ -49,22 +49,33 @@
 		</p>
 
 		 <div>
-		 	<p class="my-5">
+		 	<p class="mt-2" ng-if="quiz.question.word">
 		 		<span class="mb-4 mr-4 font-weight-bold">{{quiz.question.word}}</span>   
-		 		<button class="btn btn-primary mx-4" 
-		         		 ng-click="sayIt(quiz.question.word)">
-		         </button>
-			 	<span ng-repeat="type in quiz.question.types" class="mx-1 px-2 lead"
+		 		
+			 	<button ng-repeat="type in quiz.question.types" class="btn btn-sm mx-1"
 		            ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}
-		        </span>
+		        </button>
+
+		        <button class="btn btn-sm btn-primary ml-3" 
+		         		ng-click="sayIt(quiz.question.word)">Hear
+		        </button>
 		 	</p>
 
-		 	<div ng-repeat="choice in quiz.choices">
-		 		<button 
-			 		class="btn btn-light mx-4 my-2"
-			        ng-click="checkAnwser(choice.word)">
-			        {{choice.mean}}
-			    </button>
+		 	 <div class="card-text my-2	" 
+	              ng-repeat="exam in quiz.question.examples" ng-click="sayIt(exam)">- {{exam}}
+	          </div>
+		 	<div class="form-check mt-4 ml-4">
+		 		<div class="form-check my-3" ng-repeat="choice in quiz.choices">
+				  <label class="form-check-label">
+				    <input 
+					    type="radio"
+					    class="form-check-input" 
+					    name="choices" 
+					    ng-value="$index" 
+					    ng-model="radioChoice"
+					    ng-change="checkAnwser(choice.word);">{{choice.mean}}
+				  </label>
+				</div>
 		 	</div>
 		 </div>
     </div> <!-- container -->
@@ -72,7 +83,7 @@
 
 <script type="text/javascript">
     var app = angular.module("myApp", []);
-    app.controller("ctrl", function($scope) {
+    app.controller("ctrl", function($scope, $timeout) {
 
      $scope.pointClass = '';
      $scope.quiz = {};
@@ -93,6 +104,11 @@
         {word: "comma", us:  /ˈkɑː.mə/, types: ["n"], mean: "dấu phẩy", examples: ["We usually put a comma after thousands in numbers."]},
         {word: "complaint", us:  /ˈkɑː.mə/, types: ["n"], mean: "lời phàn nàn", examples: ["We've received a complaint from one of our listeners about offensive language."]},
 	   ];
+
+	$scope.stopSound = function () {
+		Speech = new SpeechSynthesisUtterance();
+	    window.speechSynthesis.cancel(Speech);
+	};
 
 	$scope.sayIt = function (theText) {
 		Speech = new SpeechSynthesisUtterance(theText);
@@ -127,58 +143,62 @@
 	  	return array;
 	}
 
-
-     $scope.checkAnwser = function (word) {
-     	console.log("Radio Selected Word = " + word);
-     	if ($scope.quiz.question.word == word)
-     	{
-     		$scope.point++;
-     		$scope.pointClass = 'text-success';
-     		$scope.sayIt("Perfect");
-     	}
-     	else
-     	{
-     		$scope.point--;
-     		$scope.pointClass = 'text-danger';
-     		$scope.sayIt("Wrong");
-     	}
-    	$scope.reLoadQuiz();
+	$scope.checkAnwser = function (word) {
+	 	console.log("Radio Selected Word = " + word);
+	 	if ($scope.quiz.question.word == word)
+	 	{
+	 		$scope.point++;
+	 		$scope.pointClass = 'text-success';
+	 		$scope.sayIt("Perfect");
+	 	}
+	 	else
+	 	{
+	 		$scope.point--;
+	 		$scope.pointClass = 'text-danger';
+	 		$scope.sayIt("Wrong");
+	 	}
+		$scope.reLoadQuiz();
      };
 
      $scope.reLoadQuiz = function () {
 
+     	$scope.stopSound();
      	$scope.quiz = {};
      	$scope.radioV = null;
 
-     	var rand1, rand2, rand3, rand4;
-      	rand1 = $scope.rdQuiz(0, 1);
-  		do { rand2 = $scope.rdQuiz(); } while (rand2 == rand1);
-  		do { rand3 = $scope.rdQuiz(); } while (rand3 == rand2 || rand3 == rand1);
-  		do { rand4 = $scope.rdQuiz(); } while (rand4 == rand3 || rand4 == rand2  || rand4 == rand1);
-  		var rdOrder = $scope.rdInRange(0, 3);
-  	//	console.log(rand1, rand2, rand3, rand4)
-  	//	console.log("AnwserIdx = " + rdOrder)
-  		if (rdOrder==0)
-  		{
-  			$scope.quiz.question = $scope.words[rand1];
-  			$scope.quiz.choices = [$scope.words[rand1], $scope.words[rand2], $scope.words[rand3], $scope.words[rand4]];
-  		}
-  		else if (rdOrder==1)
-  		{
-  			$scope.quiz.question = $scope.words[rand2];
-  			$scope.quiz.choices = [$scope.words[rand2], $scope.words[rand1], $scope.words[rand3], $scope.words[rand4]];
-  		}
-  		else if (rdOrder==2)
-  		{
-  			$scope.quiz.question = $scope.words[rand3];
-  			$scope.quiz.choices = [$scope.words[rand3], $scope.words[rand1], $scope.words[rand2], $scope.words[rand4]];
-  		}
-  		else if (rdOrder==3)
-  		{
-  			$scope.quiz.question = $scope.words[rand4];
-  			$scope.quiz.choices = [$scope.words[rand4], $scope.words[rand1], $scope.words[rand2], $scope.words[rand3]];
-  		}
-  		$scope.shuffle($scope.quiz.choices)
+     	$timeout(function() { 
+	     	var rand1, rand2, rand3, rand4;
+	      	rand1 = $scope.rdQuiz(0, 1);
+	  		do { rand2 = $scope.rdQuiz(); } while (rand2 == rand1);
+	  		do { rand3 = $scope.rdQuiz(); } while (rand3 == rand2 || rand3 == rand1);
+	  		do { rand4 = $scope.rdQuiz(); } while (rand4 == rand3 || rand4 == rand2  || rand4 == rand1);
+	  		var rdOrder = $scope.rdInRange(0, 3);
+	  	//	console.log(rand1, rand2, rand3, rand4)
+	  	//	console.log("AnwserIdx = " + rdOrder)
+	  		if (rdOrder==0)
+	  		{
+	  			$scope.quiz.question = $scope.words[rand1];
+	  			$scope.quiz.choices = [$scope.words[rand1], $scope.words[rand2], $scope.words[rand3], $scope.words[rand4]];
+	  		}
+	  		else if (rdOrder==1)
+	  		{
+	  			$scope.quiz.question = $scope.words[rand2];
+	  			$scope.quiz.choices = [$scope.words[rand2], $scope.words[rand1], $scope.words[rand3], $scope.words[rand4]];
+	  		}
+	  		else if (rdOrder==2)
+	  		{
+	  			$scope.quiz.question = $scope.words[rand3];
+	  			$scope.quiz.choices = [$scope.words[rand3], $scope.words[rand1], $scope.words[rand2], $scope.words[rand4]];
+	  		}
+	  		else if (rdOrder==3)
+	  		{
+	  			$scope.quiz.question = $scope.words[rand4];
+	  			$scope.quiz.choices = [$scope.words[rand4], $scope.words[rand1], $scope.words[rand2], $scope.words[rand3]];
+	  		}
+	  		$scope.shuffle($scope.quiz.choices)
+		}, 200);
+
+    
      };
 
     $scope.reLoadQuiz();

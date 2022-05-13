@@ -43,18 +43,29 @@
 		 </div> <!-- card -->
 
 		<!-- <button class="btn btn-primary my-3" ng-click="reLoadQuiz()"> Reload </button> -->
-		<span class="font-weight-bold">Point:</span> <span class="ml-4 text-danger">{{point}}</span>
+		<p class="font-weight-bold">Point:
+			<span class="ml-5 text-primary">{{point}}</span> 
+			<span class="ml-3" ng-if="pointClass != ''" ng-class="pointClass">{{pointClass == 'text-success' ? '+1' : '-1'}}</span> 
+		</p>
 
-		 <div class="mt-4">
-		 	<span class="mb-4 mr-4 font-weight-bold">{{quiz.question.word}}</span>  
-		 	<span ng-repeat="type in quiz.question.types" class="mx-1 px-2 lead"
-	            ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}</span>
-			<form class="mt-4">
-			  <div class="custom-control custom-radio my-3" ng-repeat="choice in quiz.choices" >
-			    <input type="radio" class="custom-control-input" id="{{choice}}" value="{{$index}}" ng-model="x" ng-change="checkAnwser(choice.word)">
-			    <label class="custom-control-label" for="{{choice}}">{{choice.mean}}</label>
-			  </div>
-			</form>
+		 <div>
+		 	<p class="my-5">
+		 		<span class="mb-4 mr-4 font-weight-bold">{{quiz.question.word}}</span>   
+		 		<button class="btn btn-primary mx-4" 
+		         		 ng-click="sayIt(quiz.question.word)">
+		         </button>
+			 	<span ng-repeat="type in quiz.question.types" class="mx-1 px-2 lead"
+		            ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}
+		        </span>
+		 	</p>
+
+		 	<div ng-repeat="choice in quiz.choices">
+		 		<button 
+			 		class="btn btn-light mx-4 my-2"
+			        ng-click="checkAnwser(choice.word)">
+			        {{choice.mean}}
+			    </button>
+		 	</div>
 		 </div>
     </div> <!-- container -->
 </body>
@@ -63,6 +74,7 @@
     var app = angular.module("myApp", []);
     app.controller("ctrl", function($scope) {
 
+     $scope.pointClass = '';
      $scope.quiz = {};
      $scope.point = 0;
 
@@ -120,28 +132,32 @@
      	console.log("Radio Selected Word = " + word);
      	if ($scope.quiz.question.word == word)
      	{
-     		console.log("Bingo");
      		$scope.point++;
+     		$scope.pointClass = 'text-success';
      		$scope.sayIt("Perfect");
      	}
      	else
      	{
      		$scope.point--;
+     		$scope.pointClass = 'text-danger';
      		$scope.sayIt("Wrong");
      	}
-     	$scope.reLoadQuiz();
+    	$scope.reLoadQuiz();
      };
 
      $scope.reLoadQuiz = function () {
+
      	$scope.quiz = {};
+     	$scope.radioV = null;
+
      	var rand1, rand2, rand3, rand4;
       	rand1 = $scope.rdQuiz(0, 1);
   		do { rand2 = $scope.rdQuiz(); } while (rand2 == rand1);
   		do { rand3 = $scope.rdQuiz(); } while (rand3 == rand2 || rand3 == rand1);
   		do { rand4 = $scope.rdQuiz(); } while (rand4 == rand3 || rand4 == rand2  || rand4 == rand1);
   		var rdOrder = $scope.rdInRange(0, 3);
-  		console.log(rand1, rand2, rand3, rand4)
-  		console.log("AnwserIdx = " + rdOrder)
+  	//	console.log(rand1, rand2, rand3, rand4)
+  	//	console.log("AnwserIdx = " + rdOrder)
   		if (rdOrder==0)
   		{
   			$scope.quiz.question = $scope.words[rand1];
@@ -167,8 +183,6 @@
 
     $scope.reLoadQuiz();
 
-  
-    
     });
 </script>
 </html>

@@ -42,7 +42,7 @@
 		 </div> <!-- card -->
 
 		<!-- <button class="btn btn-primary my-3" ng-click="reLoadQuiz()"> Reload </button> -->
-		<p class="font-weight-bold">Point:
+		<p class="font-weight-bold">points:
 			<span class="ml-5 text-primary">{{point}}</span> 
 			<span class="ml-3" ng-if="pointClass != ''" ng-class="pointClass">{{pointClass == 'text-success' ? '+1' : '-1'}}</span> 
 		</p>
@@ -78,7 +78,7 @@
 	              - <span wrap-in-tag word="{{quiz.question.word}}" text="{{exam}}">{{exam}}</span>
 	        </div>
 
-	        <button class="btn btn-sm btn-danger mx-3" ng-click="showTip = 1; point = point-5">Típ</button>
+	        <button class="btn btn-large btn-danger float-right mt-5" ng-click="showTip = 1; point = point-5">Show tip(-5 points)</button>
 	          
 		 </div>
     </div> <!-- container -->
@@ -338,13 +338,13 @@
 	 	{
 	 		$scope.point++;
 	 		$scope.pointClass = 'text-success';
-	 		$scope.sayIt("Perfect");
+	 		$scope.playSound("good");
 	 	}
 	 	else
 	 	{
 	 		$scope.point--;
 	 		$scope.pointClass = 'text-danger';
-	 		$scope.sayIt("Wrong");
+	 		$scope.playSound("wrong");
 	 	}
 	 	$timeout(function() { 
 			$scope.reLoadQuiz();

@@ -50,14 +50,11 @@
 
 		 <div>
 		 	<p class="mt-2" ng-if="quiz.question.word">
-		 		<span class="mb-4 mr-4 font-weight-bold">{{quiz.question.word}}</span>   
+		 		<span class="mb-4 mr-3 font-weight-bold" ng-click="sayIt(quiz.question.word)">{{quiz.question.word}}</span>   
+		 		<span class="mb-4 mr-3 font-weight-bold">{{quiz.question.us}}</span>   
 		 		
 			 	<button ng-repeat="type in quiz.question.types" class="btn btn-sm mx-1"
 		            ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}
-		        </button>
-
-		        <button class="btn btn-sm btn-primary ml-3" 
-		         		ng-click="sayIt(quiz.question.word)">Hear
 		        </button>
 		 	</p>
 

@@ -51,8 +51,8 @@
 		 	<p class="mt-2" ng-if="quiz.question.word">
 		 		<span class="mb-4 mr-3 font-weight-bold" ng-click="sayIt(quiz.question.word)">{{quiz.question.word}}</span>  
 		 		<span class="mb-4 mr-3">{{quiz.question.us}}</span>   
-			 	<button ng-repeat="type in quiz.question.types" class="btn btn-sm mx-1"
-		            ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}
+			 	<button class="btn btn-sm mx-1"
+		            ng-class="quiz.question.types == 'adj' ? 'bg-warning' : (quiz.question.types == 'adv' ? 'bg-danger' : (quiz.question.types == 'v' ? 'bg-success' : 'bg-info'))">{{quiz.question.types}}
 		        </button>
 		 	</p>
 
@@ -65,7 +65,7 @@
 					    name="choices" 
 					    ng-value="$index" 
 					    ng-model="radioChoice"
-					    ng-change="checkAnwser(choice.word);">{{choice.mean}}
+					    ng-change="checkAnwser(choice.word);"><span remove-ipa word={{choice.mean}}>{{choice.mean}}</span>
 				  </label>
 				</div>
 		 	</div> <!-- radio -->
@@ -96,6 +96,18 @@
 	    }
 	});
 
+	 app.directive('removeIpa', function() {
+		return {
+	        restrict: 'A',
+	        link: function(scope, ele, attr) {
+	          var word = attr.word || [];
+	          var ipa =  word.split(" ")[0];       
+	          word = word.replace(ipa, "")
+           	 ele.html(word);
+	        }
+	    }
+	});
+
     app.controller("ctrl", function($scope, $timeout) {
 
      $scope.pointClass = '';
@@ -103,28 +115,170 @@
      $scope.point = 0;
 
     $scope.words = [
-        {word: "additional", us: /əˈdɪʃ·ə·nəl/, types: ["adj"], mean: "bổ sung", examples: ["There will be an extra charge for any additional passengers.", "The doctor has made an initial diagnosis, but there'll be an additional examination by a specialist."]},
-        {word: "admit", us: /ədˈmit/, types: ["v"], mean: "thừa nhận", examples: ["He admitted his mistake."]},
-        {word: "agree", us: /əˈɡriː/, types: ["v"], mean: "đồng ý", examples: ["I agree with you on this issue."]},
-        {word: "announce", us: /əˈnaʊns/, types: ["v"], mean: "thông báo", examples: ["They announced the death of their mother in the local paper.", "She announced the winner of the competition to an excited audience."]},
-        {word: "apologize", us: /əˈpɑː.lə.dʒaɪz/, types: ["v"], mean: "xin lỗi", examples: ["She apologized profusely for having to leave at 3.30 p.m. "]},
-        {word: "approve", us: /əˈpruːv/, types: ["v"], mean: "tán thành", examples: ["She doesn't approve of my friends.", "He doesn't approve of smoking.", "I thoroughly approve of what the government is doing."]},
-        {word: "argue", us: /ˈɑːrɡ.juː/, types: ["v"], mean: "tranh luận", examples: ["The children are always arguing.","Kids, will you stop arguing with each other?"]},
-        {word: "blame", us: /bleɪm/, types: ["v"], mean: "khiển trách", examples: ["Hugh blames his mother for his lack of confidence."]},
-        {word: "brief", us: /briːf/, types: ["adj","adv","v"], mean: "tóm tắt", examples: ["His acceptance speech was mercifully brief.", "We had already been briefed about/on what the job would entail."]},
-        {word: "brochure", us: /broʊˈʃʊr/, types: ["n"], mean: "cuốn sách nhỏ", examples: ["Enclosed is a brochure that highlights the benefits that you can receive as a corporate donor."]},
-        {word: "certain", us: /ˈsɝː.tən/, types: ["adv"], mean: "chắc chắn", examples: ["The police seem certain that they will find the people responsible for the attack."]},
-        {word: "comma", us: /ˈkɑː.mə/, types: ["n"], mean: "dấu phẩy", examples: ["We usually put a comma after thousands in numbers."]},
-        {word: "complaint", us: /kəmˈpleɪnt/, types: ["n"], mean: "lời phàn nàn", examples: ["We've received a complaint from one of our listeners about offensive language."]},
-        {word: "complete", us: /kəmˈpliːt/, types: ["v"], mean: "hoàn thành", examples: ["He only needs two more cards to complete the set."]},
-        {word: "conference", us: /ˈkɑːn.fɚ.əns/, types: ["n"], mean: "hội nghị", examples: ["They frequently hold conferences at that hotel."]},
-        {word: "confirm", us: /kənˈfɝːm/, types: ["v"], mean: "xác nhận", examples: ["Please confirm your reservation in writing by Friday."]},
-        {word: "contract", us: /ˈkɑːn.trækt/, types: ["n"], mean: "hợp đồng", examples: ["Don't sign into any contract before examining its conditions carefully."]},
-        {word: "contract", us: /ˈkɑːn.trækt/, types: ["v"], mean: "ký kết, làm teo(nhỏ), liên lạc", examples: ["He contracted malaria while he was travelling."]},
-        {word: "convince", us: /kənˈvɪns/, types: ["v"], mean: "thuyết phục", examples: ["He managed to convince the jury of his innocence."]},
-        {word: "discuss", us: /dɪˈskʌs/, types: ["v"], mean: "thảo luận", examples: ["The police want to discuss these recent racist attacks with local people."]},
-        {word: "extreme", us: /ɪkˈstriːm/, types: ["adv","n"], mean: "tột/vô cùng", examples: ["In extreme cases, the disease can lead to blindness."]},
-        {word: "hint", us: /hɪnt/, types: ["n"], mean: "lời gợi ý, ám chỉ", examples: ["Did she give you any hints about where she was going?"]},
+
+        // {word: "additional", us: /əˈdɪʃ·ə·nəl/, types: ["adj"], mean: "bổ sung", examples: ["There will be an extra charge for any additional passengers.", "The doctor has made an initial diagnosis, but there'll be an additional examination by a specialist."]},
+        // {word: "admit", us: /ədˈmit/, types: ["v"], mean: "thừa nhận", examples: ["He admitted his mistake."]},
+        // {word: "agree", us: /əˈɡriː/, types: ["v"], mean: "đồng ý", examples: ["I agree with you on this issue."]},
+        // {word: "announce", us: /əˈnaʊns/, types: ["v"], mean: "thông báo", examples: ["They announced the death of their mother in the local paper.", "She announced the winner of the competition to an excited audience."]},
+        // {word: "apologize", us: /əˈpɑː.lə.dʒaɪz/, types: ["v"], mean: "xin lỗi", examples: ["She apologized profusely for having to leave at 3.30 p.m. "]},
+        // {word: "approve", us: /əˈpruːv/, types: ["v"], mean: "tán thành", examples: ["She doesn't approve of my friends.", "He doesn't approve of smoking.", "I thoroughly approve of what the government is doing."]},
+        // {word: "argue", us: /ˈɑːrɡ.juː/, types: ["v"], mean: "tranh luận", examples: ["The children are always arguing.","Kids, will you stop arguing with each other?"]},
+        // {word: "blame", us: /bleɪm/, types: ["v"], mean: "khiển trách", examples: ["Hugh blames his mother for his lack of confidence."]},
+        // {word: "brief", us: /briːf/, types: ["adj","adv","v"], mean: "tóm tắt", examples: ["His acceptance speech was mercifully brief.", "We had already been briefed about/on what the job would entail."]},
+        // {word: "brochure", us: /broʊˈʃʊr/, types: ["n"], mean: "cuốn sách nhỏ", examples: ["Enclosed is a brochure that highlights the benefits that you can receive as a corporate donor."]},
+        // {word: "certain", us: /ˈsɝː.tən/, types: ["adv"], mean: "chắc chắn", examples: ["The police seem certain that they will find the people responsible for the attack."]},
+        // {word: "comma", us: /ˈkɑː.mə/, types: ["n"], mean: "dấu phẩy", examples: ["We usually put a comma after thousands in numbers."]},
+        // {word: "complaint", us: /kəmˈpleɪnt/, types: ["n"], mean: "lời phàn nàn", examples: ["We've received a complaint from one of our listeners about offensive language."]},
+        // {word: "complete", us: /kəmˈpliːt/, types: ["v"], mean: "hoàn thành", examples: ["He only needs two more cards to complete the set."]},
+        // {word: "conference", us: /ˈkɑːn.fɚ.əns/, types: ["n"], mean: "hội nghị", examples: ["They frequently hold conferences at that hotel."]},
+        // {word: "confirm", us: /kənˈfɝːm/, types: ["v"], mean: "xác nhận", examples: ["Please confirm your reservation in writing by Friday."]},
+        // {word: "contract", us: /ˈkɑːn.trækt/, types: ["n"], mean: "hợp đồng", examples: ["Don't sign into any contract before examining its conditions carefully."]},
+        // {word: "contract", us: /ˈkɑːn.trækt/, types: ["v"], mean: "ký kết, làm teo(nhỏ), liên lạc", examples: ["He contracted malaria while he was travelling."]},
+        // {word: "convince", us: /kənˈvɪns/, types: ["v"], mean: "thuyết phục", examples: ["He managed to convince the jury of his innocence."]},
+        // {word: "discuss", us: /dɪˈskʌs/, types: ["v"], mean: "thảo luận", examples: ["The police want to discuss these recent racist attacks with local people."]},
+        // {word: "extreme", us: /ɪkˈstriːm/, types: ["adv","n"], mean: "tột/vô cùng", examples: ["In extreme cases, the disease can lead to blindness."]},
+        // {word: "hint", us: /hɪnt/, types: ["n"], mean: "lời gợi ý, ám chỉ", examples: ["Did she give you any hints about where she was going?"]},
+
+        {word: "abandon", types: "v", mean: "ə'bændən bỏ, từ bỏ "},
+{word: "abandoned", types: "adj", mean: "ə'bændənd bị bỏ rơi, bị ruồng bỏ "},
+{word: "ability", types: "n", mean: "ə'biliti khả năng, năng lực "},
+{word: "able", types: "adj", mean: "eibl có năng lực, có tài "},
+{word: "about", types: "adv", mean: "ə'baut khoảng, về "},
+{word: "about", types: "prep", mean: "ə'baut khoảng, về "},
+{word: "above", types: "prep", mean: "ə'bʌv ở trên, lên trên "},
+{word: "above", types: "adv", mean: "ə'bʌv ở trên, lên trên "},
+{word: "abroad", types: "adv", mean: "ə'brɔ:d ở, ra nước ngoài, ngoài trời "},
+{word: "absence", types: "n", mean: "æbsəns sự vắng mặt "},
+{word: "absent", types: "adj", mean: "æbsənt vắng mặt, nghỉ "},
+{word: "absolute", types: "adj", mean: "æbsəlu:t tuyệt đối, hoàn toàn "},
+{word: "absolutely", types: "adv", mean: "æbsəlu:tli tuyệt đối, hoàn toàn "},
+{word: "absorb", types: "v", mean: "əb'sɔ:b thu hút, hấp thu, lôi cuốn "},
+{word: "abuse", types: "n", mean: "ə'bju:s lộng hành, lạm dụng "},
+{word: "abuse", types: "v", mean: "ə'bju:s lộng hành, lạm dụng "},
+
+{word: "academic", types: "adj", mean: ",ækə'demik thuộc học viện, ĐH, viện hàn lâm "},
+{word: "accent", types: "n", mean: "æksənt trọng âm, dấu trọng âm "},
+{word: "accept", types: "v", mean: "ək'sept chấp nhận, chấp thuận "},
+{word: "acceptable", types: "adj", mean: "ək'septəbl có thể chấp nhận, chấp thuận "},
+{word: "access", types: "n", mean: "ækses lối, cửa, đường vào "},
+{word: "accident", types: "n", mean: "æksidənt tai nạn, rủi ro. by accident: tình cờ "},
+{word: "accidental", types: "adj", mean: ",æksi'dentl tình cờ, bất ngờ "},
+{word: "accidentally", types: "adv", mean: ",æksi'dentəli tình cờ, ngẫu nhiên "},
+{word: "accommodation", types: "n", mean: "ə,kɔmə'deiʃn sự thích nghi, sự điều tiết, sự làm cho phù hợp "},
+{word: "accompany", types: "v", mean: "ə'kʌmpəni đi theo, đi cùng, kèm theo. "},
+{word: "according to", types: "prep", mean: "ə'kɔ:diɳ theo, y theo "},
+{word: "account", types: "n", mean: "ə'kaunt tài khoản, kế toán; tính toán, tính đến "},
+{word: "account", types: "v", mean: "ə'kaunt tài khoản, kế toán; tính toán, tính đến "},
+{word: "accurate", types: "adj", mean: "ækjurit đúng đắn, chính xác, xác đáng "},
+{word: "accurately", types: "adv", mean: "ækjuritli đúng đắn, chính xác "},
+{word: "accuse", types: "v", mean: "ə'kju:z tố cáo, buộc tội, kết tội "},
+{word: "achieve", types: "v", mean: "ə'tʃi:v đạt được, dành được "},
+{word: "achievement", types: "n", mean: "ə'tʃi:vmənt thành tích, thành tựu "},
+
+{word: "acid", types: "n", mean: "æsid axit "},
+{word: "acknowledge", types: "v", mean: "ək'nɔlidʤ công nhận, thừa nhận "},
+{word: "acquire", types: "v", mean: "ə'kwaiə dành được, đạt được, kiếm được "},
+{word: "across", types: "adv", mean: "ə'krɔs qua, ngang qua "},
+{word: "act", types: "n", mean: "ækt hành động, hành vi, cử chỉ, đối xử "},
+{word: "act", types: "v", mean: "ækt hành động, hành vi, cử chỉ, đối xử "},
+{word: "action", types: "n", mean: "ækʃn hành động, hành vi, tác động. Take action: hành động "},
+{word: "active", types: "adj", mean: "æktiv tích cực hoạt động, nhanh nhẹn "},
+{word: "actively", types: "adv", mean: "æktivli tích cực hoạt động; nhanh nhẹn, linh lợi; có hiệu lực "},
+{word: "activity", types: "n", mean: "æk'tiviti sự tích cực, sự hoạt động, sự nhanh nhẹn, sự linh lợi "},
+{word: "actor", types: "n", mean: "æktə diễn viên nam "},
+{word: "actress", types: "n", mean: "æktris diễn viên nữ "},
+{word: "actual", types: "adj", mean: "æktjuəl thực tế, có thật "},
+{word: "actually", types: "adv", mean: "æktjuəli hiện nay, hiện tại "},
+{word: "adapt", types: "v", mean: "ə'dæpt tra, lắp vào "},
+{word: "add", types: "v", mean: "æd cộng, thêm vào "},
+{word: "addition", types: "n", mean: "ə'diʃn tính cộng, phép cộng "},
+{word: "additional", types: "adj", mean: "ə'diʃənl thêm vào, tăng thêm "},
+{word: "address", types: "n", mean: "ə'dres địa chỉ, đề địa chỉ "},
+{word: "address", types: "v", mean: "ə'dres địa chỉ, địa chỉ "},
+{word: "adequate", types: "adj", mean: "ædikwit đầy, đầy đủ "},
+{word: "adequately", types: "adv", mean: "ædikwitli tương xứng, thỏa đáng "},
+{word: "adjust", types: "v", mean: "ə'dʤʌst sửa lại cho đúng, điều chỉnh "},
+{word: "admiration", types: "n", mean: ",ædmə'reiʃn sự khâm phục, thán phục "},
+{word: "admire", types: "v", mean: "əd'maiə khâm phục, thán phục "},
+{word: "admit", types: "v", mean: "əd'mit nhận vào, cho vào, kết hợp "},
+{word: "adopt", types: "v", mean: "ə'dɔpt nhận làm con nuôi, bố mẹ nuôi "},
+{word: "adult", types: "n", mean: "ædʌlt người lớn, người trưởng thành; trưởng thành "},
+{word: "adult", types: "adj", mean: "ædʌlt người lớn, người trưởng thành; trưởng thành "},
+{word: "advance", types: "v", mean: "əd'vɑ:ns tiến bộ, tiến lên; đưa lên, đề xuat "},
+{word: "advance", types: "n", mean: "əd'vɑ:ns sự tiến bộ, tiến lên; đưa lên, đề xuat "},
+{word: "advanced", types: "adj", mean: "əd'vɑ:nst tiên tiến, tiến bộ, cap cao. in advance trước, sớm "},
+{word: "advantage", types: "n", mean: "əb'vɑ:ntidʤ sự thuận lợi, lợi ích, lợi thế. take advantage of lợi dụng "},
+
+ {word: "adventure", types: "n", mean: "əd'ventʃə sự phiêu lưu, mạo hiểm "},
+ {word: "advertise", types: "v", mean: "ædvətaiz báo cho biết, báo cho biết trước "},
+ {word: "advertisement", types: "n", mean: "əd'və:tismənt quảng cáo "},
+ {word: "advertising", types: "n", mean: "əd'və:tismənt sự quảng cáo, nghề quảng cáo "},
+ {word: "advice", types: "n", mean: "əd'vais lời khuyên, lời chỉ bảo "},
+ {word: "advise", types: "v", mean: "əd'vaiz khuyên, khuyên bảo, răn bảo "},
+ {word: "affair", types: "n", mean: "ə'feə việc "},
+ {word: "affect", types: "v", mean: "ə'fekt làm ảnh hưởng, tác động đến "},
+ {word: "affection", types: "n", mean: "ə'fekʃn tình cảm, sự yêu mến "},
+ {word: "afford", types: "v", mean: "ə'fɔ:d có thể, có đủ khả năng, điều kiện (làm gì) "},
+ {word: "afraid", types: "adj", mean: "ə'freid sợ, sợ hãi, hoảng sợ "},
+ {word: "after", types: "adv", mean: "ɑ:ftə sau, đằng sau, sau khi "},
+ {word: "afternoon", types: "n", mean: "ɑ:ftə'nu:n buổi chiều "},
+ {word: "afterwards", types: "adv", mean: "ɑ:ftəwəd sau này, về sau, rồi thì, sau đây "},
+ {word: "again", types: "adv", mean: "ə'gen lại, nữa, lần nữa "},
+ {word: "against", types: "prep", mean: "ə'geinst chống lại, phản đối "},
+ {word: "age", types: "n", mean: "eidʤ tuổi "},
+ {word: "aged", types: "adj", mean: "eidʤid già đi "},
+ {word: "agency", types: "n", mean: "eidʤənsi tác dụng, lực; môi giới, trung gian "},
+ {word: "agent", types: "n", mean: "eidʤənt đại lý, tác nhân "},
+ {word: "aggressive", types: "adj", mean: "ə'gresiv xâm lược, hung hăng (US: xông xáo) "},
+ {word: "ago", types: "adv", mean: "ə'gou trước đây "},
+ {word: "agree", types: "v", mean: "ə'gri: đồng ý, tán thành "},
+ {word: "agreement", types: "n", mean: "ə'gri:mənt sự đồng ý, tán thành; hiệp định, hợp đồng "},
+ {word: "ahead", types: "adv", mean: "ə'hed trước, về phía trước "},
+ {word: "aid", types: "n", mean: "eid sự giúp đỡ; thêm vào, phụ vào "},
+ {word: "aid", types: "v", mean: "eid giúp đỡ; thêm vào, phụ vào "},
+ {word: "aim", types: "n", mean: "eim sự nhắm (bắn), mục tiêu, ý định; nhắm, tập trung, hướng vào "},
+ {word: "aim", types: "v", mean: "eim nhắm (bắn), mục tiêu, ý định; nhắm, tập trung, hướng vào "},
+ {word: "air", types: "n", mean: "eə không khí, bầu không khí, không gian "},
+ {word: "aircraft", types: "n", mean: "eəkrɑ:ft máy bay, khí cầu "},
+ {word: "airport", types: "n", mean: "sân bay, phi trường "},
+
+ {word: "alarm", types: "n", mean: "ə'lɑ:m báo động, báo nguy "},
+ {word: "alarm", types: "v", mean: "ə'lɑ:m báo động, báo nguy "},
+ {word: "alarmed", types: "adj", mean: "ə'lɑ:m báo động "},
+ {word: "alarming", types: "adj", mean: "ə'lɑ:miɳ làm lo sợ, làm hốt hoảng, làm sợ hãi "},
+ {word: "alcohol", types: "n", mean: "ælkəhɔl rượu cồn "},
+ {word: "alcoholic", types: "adj", mean: ",ælkə'hɔlik nghiện rượu "},
+ {word: "alcoholic", types: "n", mean: ",ælkə'hɔlik rượu; người nghiện rượu "},
+ {word: "alive", types: "adj", mean: "ə'laiv sống, vẫn còn sống, còn tồn tại "},
+ {word: "all", types: "adv", mean: "ɔ:l tất cả "},
+ {word: "all right", types: "adv", mean: "ɔ:l'rait tốt, ổn, khỏe mạnh; được "},
+ {word: "allied", types: "adj", mean: "ə'laid liên minh, đồng minh, thông gia "},
+ {word: "allow", types: "v", mean: "ə'lau cho phép, để cho "},
+ {word: "ally", types: "n", mean: "æli nước đồng minh, liên minh; liên kết, kết thông gia "},
+ {word: "ally", types: "v", mean: "æli liên minh; liên kết, kết thông gia "},
+ {word: "almost", types: "adv", mean: "ɔ:lmoust hầu như, gần như "},
+ {word: "alone", types: "adj", mean: "ə'loun cô đơn, một mình "},
+ {word: "alone", types: "adv", mean: "ə'loun cô đơn, một mình "},
+ {word: "along", types: "adv", mean: "ə'lɔɳ dọc theo, theo; theo chiều dài, suốt theo "},
+ {word: "alongside", types: "adv", mean: "ə'lɔɳ'said sát cạnh, kế bên, dọc theo "},
+ {word: "aloud", types: "adv", mean: "ə'laud lớn tiếng, to tiếng "},
+ {word: "alphabet", types: "n", mean: "ælfəbit bảng chữ cái, bước đầu, điều cơ bản "},
+ {word: "alphabetical", types: "adj", mean: ",æflə'betikl thuộc bảng chứ cái "},
+ {word: "alphabetically", types: "adv", mean: ",ælfə'betikəli theo thứ tự abc "},
+ {word: "already", types: "adv", mean: "ɔ:l'redi đã, rồi, đã… rồi "},
+ {word: "also", types: "adv", mean: "ɔ:lsou cũng, cũng vậy, cũng thế "},
+ {word: "alter", types: "v", mean: "ɔ:ltə thay đổi, biến đổi, sửa đổi "},
+ {word: "alternative", types: "n", mean: "ɔ:l'tə:nətiv sự lựa chọn; lựa chọn "},
+ {word: "alternative", types: "adj", mean: "ɔ:l'tə:nətiv lựa chọn; lựa chọn "},
+ {word: "alternatively", types: "adv", mean: "như một sự lựa chọn "},
+ {word: "although", types: "conj", mean: "ɔ:l'ðou mặc dù, dẫu cho "},
+ {word: "altogether", types: "adv", mean: ",ɔ:ltə'geðə hoàn toàn, hầu như; nói chung "},
+ {word: "always", types: "adv", mean: "ɔ:lwəz luôn luôn "},
+ {word: "amaze", types: "v", mean: "ə'meiz làm ngạc nhiên, làm sửng sốt "},
+ {word: "amazed", types: "adj", mean: "ə'meiz kinh ngạc, sửng sốt "},
+ {word: "amazing", types: "adj", mean: "ə'meiziɳ kinh ngạc, sửng sốt "},
+// 120 words
+
 	   ];
 
 	

@@ -335,7 +335,9 @@
 	 		$scope.pointClass = 'text-danger';
 	 		$scope.sayIt("Wrong");
 	 	}
-		$scope.reLoadQuiz();
+	 	$timeout(function() { 
+			$scope.reLoadQuiz();
+	 	}, 500);
      };
 
      $scope.reLoadQuiz = function () {

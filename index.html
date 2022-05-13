@@ -52,7 +52,8 @@
 		 		<span class="mb-4 mr-3 font-weight-bold" ng-click="playSound(quiz.question.word)">{{quiz.question.word}}</span>  
 		 		<span class="mb-4 mr-3">{{quiz.question.us}}</span>   
 			 	<button class="btn btn-sm mx-1"
-		            ng-class="quiz.question.types == 'adj' ? 'bg-warning' : (quiz.question.types == 'adv' ? 'bg-danger' : (quiz.question.types == 'v' ? 'bg-success' : 'bg-info'))">{{quiz.question.types}}
+		            ng-class="quiz.question.types == 'adj' ? 'bg-warning' : (quiz.question.types == 'adv' ? 'bg-danger' : (quiz.question.types == 'v' ? 'bg-success' : 'bg-info'))"
+		            >{{quiz.question.types}}
 		        </button>
 		 	</p>
 
@@ -65,7 +66,9 @@
 					    name="choices" 
 					    ng-value="$index" 
 					    ng-model="radioChoice"
-					    ng-change="checkAnwser(choice.word);"><span remove-ipa word={{choice.mean}}>{{choice.mean}}</span>
+					    ng-change="checkAnwser(choice.word);">
+					    <span remove-ipa word={{choice.mean}}>{{choice.mean}}</span>
+					    <span class="ml-4 font-italic text-danger" ng-if="showTip">{{choice.word}}</span>
 				  </label>
 				</div>
 		 	</div> <!-- radio -->
@@ -74,6 +77,8 @@
 	              ng-repeat="exam in quiz.question.examples" ng-click="sayIt(exam)">
 	              - <span wrap-in-tag word="{{quiz.question.word}}" text="{{exam}}">{{exam}}</span>
 	        </div>
+
+	        <button class="btn btn-sm btn-danger mx-3" ng-click="showTip = 1; point = point-5">Típ</button>
 	          
 		 </div>
     </div> <!-- container -->
@@ -113,6 +118,7 @@
      $scope.pointClass = '';
      $scope.quiz = {};
      $scope.point = 0;
+     $scope.showTip = 0;
 
     $scope.words = [
 
@@ -332,7 +338,7 @@
 	 	{
 	 		$scope.point++;
 	 		$scope.pointClass = 'text-success';
-	 		$scope.sayIt("OK");
+	 		$scope.sayIt("Perfect");
 	 	}
 	 	else
 	 	{
@@ -342,14 +348,14 @@
 	 	}
 	 	$timeout(function() { 
 			$scope.reLoadQuiz();
-	 	}, 700);
+	 	}, 500);
      };
 
      $scope.reLoadQuiz = function () {
 
      	$scope.stopSound();
      	$scope.quiz = {};
-     	$scope.radioV = null;
+     	$scope.showTip = 0;
 
      	$timeout(function() { 
 	     	var rand1, rand2, rand3, rand4;

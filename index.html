@@ -1,4 +1,5 @@
-
+<!-- (\w+)\s+(\w+)\s+(.+) -->
+<!-- {word: "$1", types: "$2", mean: "$3"}, -->
 
 <!DOCTYPE html>
 <html>
@@ -38,7 +39,9 @@
 	              ng-repeat="exam in word.examples"><button ng-click="sayIt(exam)" class="ml-2 btn btn-link glyphicon glyphicon-headphones"></button> {{exam}}
 	          </div>
 	          <a href="https://dictionary.cambridge.org/dictionary/english/{{word.word}}"
-	          class="btn btn-primary mt-1 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>Cambridge</a>
+	          		class="btn btn-primary mt-1 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>
+	          		Cambridge
+	      		</a>
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->
 
@@ -58,6 +61,11 @@
 		            ng-class="quiz.question.types == 'adj' ? 'bg-warning' : (quiz.question.types == 'adv' ? 'bg-danger' : (quiz.question.types == 'v' ? 'bg-success' : 'bg-info'))"
 		            >{{quiz.question.types}}
 		        </button>
+
+		         <a href="https://dictionary.cambridge.org/dictionary/english/{{quiz.question.word}}" 
+		         		ng-if="bEngToVi == 1"
+	          			class="btn btn-sm btn-primary">Cambridge
+	      		</a>
 		 	</p>
 
 		 	<div class="form-check mt-4 ml-4">
@@ -129,30 +137,6 @@
      $scope.showTip = 0;
 
     $scope.words = [
-
-        // {word: "additional", us: /əˈdɪʃ·ə·nəl/, types: ["adj"], mean: "bổ sung", examples: ["There will be an extra charge for any additional passengers.", "The doctor has made an initial diagnosis, but there'll be an additional examination by a specialist."]},
-        // {word: "admit", us: /ədˈmit/, types: ["v"], mean: "thừa nhận", examples: ["He admitted his mistake."]},
-        // {word: "agree", us: /əˈɡriː/, types: ["v"], mean: "đồng ý", examples: ["I agree with you on this issue."]},
-        // {word: "announce", us: /əˈnaʊns/, types: ["v"], mean: "thông báo", examples: ["They announced the death of their mother in the local paper.", "She announced the winner of the competition to an excited audience."]},
-        // {word: "apologize", us: /əˈpɑː.lə.dʒaɪz/, types: ["v"], mean: "xin lỗi", examples: ["She apologized profusely for having to leave at 3.30 p.m. "]},
-        // {word: "approve", us: /əˈpruːv/, types: ["v"], mean: "tán thành", examples: ["She doesn't approve of my friends.", "He doesn't approve of smoking.", "I thoroughly approve of what the government is doing."]},
-        // {word: "argue", us: /ˈɑːrɡ.juː/, types: ["v"], mean: "tranh luận", examples: ["The children are always arguing.","Kids, will you stop arguing with each other?"]},
-        // {word: "blame", us: /bleɪm/, types: ["v"], mean: "khiển trách", examples: ["Hugh blames his mother for his lack of confidence."]},
-        // {word: "brief", us: /briːf/, types: ["adj","adv","v"], mean: "tóm tắt", examples: ["His acceptance speech was mercifully brief.", "We had already been briefed about/on what the job would entail."]},
-        // {word: "brochure", us: /broʊˈʃʊr/, types: ["n"], mean: "cuốn sách nhỏ", examples: ["Enclosed is a brochure that highlights the benefits that you can receive as a corporate donor."]},
-        // {word: "certain", us: /ˈsɝː.tən/, types: ["adv"], mean: "chắc chắn", examples: ["The police seem certain that they will find the people responsible for the attack."]},
-        // {word: "comma", us: /ˈkɑː.mə/, types: ["n"], mean: "dấu phẩy", examples: ["We usually put a comma after thousands in numbers."]},
-        // {word: "complaint", us: /kəmˈpleɪnt/, types: ["n"], mean: "lời phàn nàn", examples: ["We've received a complaint from one of our listeners about offensive language."]},
-        // {word: "complete", us: /kəmˈpliːt/, types: ["v"], mean: "hoàn thành", examples: ["He only needs two more cards to complete the set."]},
-        // {word: "conference", us: /ˈkɑːn.fɚ.əns/, types: ["n"], mean: "hội nghị", examples: ["They frequently hold conferences at that hotel."]},
-        // {word: "confirm", us: /kənˈfɝːm/, types: ["v"], mean: "xác nhận", examples: ["Please confirm your reservation in writing by Friday."]},
-        // {word: "contract", us: /ˈkɑːn.trækt/, types: ["n"], mean: "hợp đồng", examples: ["Don't sign into any contract before examining its conditions carefully."]},
-        // {word: "contract", us: /ˈkɑːn.trækt/, types: ["v"], mean: "ký kết, làm teo(nhỏ), liên lạc", examples: ["He contracted malaria while he was travelling."]},
-        // {word: "convince", us: /kənˈvɪns/, types: ["v"], mean: "thuyết phục", examples: ["He managed to convince the jury of his innocence."]},
-        // {word: "discuss", us: /dɪˈskʌs/, types: ["v"], mean: "thảo luận", examples: ["The police want to discuss these recent racist attacks with local people."]},
-        // {word: "extreme", us: /ɪkˈstriːm/, types: ["adv","n"], mean: "tột/vô cùng", examples: ["In extreme cases, the disease can lead to blindness."]},
-        // {word: "hint", us: /hɪnt/, types: ["n"], mean: "lời gợi ý, ám chỉ", examples: ["Did she give you any hints about where she was going?"]},
-
 {word: "abandon", types: "v", mean: "ə'bændən bỏ, từ bỏ "},
 {word: "abandoned", types: "adj", mean: "ə'bændənd bị bỏ rơi, bị ruồng bỏ "},
 {word: "ability", types: "n", mean: "ə'biliti khả năng, năng lực "},
@@ -506,47 +490,88 @@
 {word: "behaviour", types: "n", mean: "thái độ, cách đối xử; cách cư xử"},
 {word: "behind", types: "prep", mean: "bi'haind sau, ở đằng sau [adv]"},
 
+{word: "belief", types: "n", mean: "bi'li:f lòng tin, đức tin, sự tin tưởng "},
+{word: "believe", types: "v", mean: "bi'li:v tin, tin tưởng "},
+{word: "bell", types: "n", mean: "bel cái chuông, tiếng chuông "},
+{word: "belong", types: "v", mean: "bi'lɔɳ thuộc về, của, thuộc quyền sở hữu "},
+{word: "below", types: "adv", mean: "bi'lou ở dưới, dưới thấp, phía dưới (prep) "},
+{word: "belt", types: "n", mean: "belt dây lưng, thắt lưng "},
+{word: "bend", types: "v", mean: "bentʃ cúi xuống, uốn cong "},
+{word: "bend", types: "n", mean: "bentʃ chỗ rẽ, chỗ uốn, khuỷu tay"},
+{word: "beneath", types: "adv", mean: "bi'ni:θ ở dưới, dưới thấp [prep]"},
+{word: "benefit", types: "n", mean: "benifit lợi, lợi ích"},
+{word: "benefit", types: "v", mean: "benifit giúp ích, làm lợi cho "},
+{word: "bent", types: "adj", mean: "bent khiếu, sở thích, khuynh hướng "},
+{word: "beside", types: "prep", mean: "bi'said bên cạnh, so với "},
+{word: "bet", types: "v", mean: "bet đánh cuộc, cá cược "},
+{word: "bet", types: "n", mean: "bet sự đánh cuộc "},
+{word: "better", types: "adj", mean: "betə tốt hơn "},
+{word: "betting", types: "n", mean: "beting sự đánh cuộc "},
+{word: "between", types: "adv", mean: "bi'twi:n giữa, ở giữa "},
+{word: "beyond", types: "adv", mean: "bi'jɔnd ở xa, phía bên kia [prep]"},
+{word: "bicycle", types: "n", mean: "baisikl xe đạp "},
+{word: "bike", types: "n", mean: "baisikl xe đạp "},
+{word: "bid", types: "n", mean: "bid sự đặt giá, sự trả giá "},
+{word: "bid", types: "v", mean: "bid đặt giá, trả giá"},
+{word: "big", types: "adj", mean: "big to, lớn "},
+{word: "bill", types: "n", mean: "bil hóa đơn, giấy bạc "},
+{word: "bin", types: "n", mean: "bin thùng, thùng đựng rượu "},
+{word: "biology", types: "n", mean: "bai'ɔlədʤi sinh vật học "},
+{word: "bird", types: "n", mean: "bə:d chim "},
+{word: "birth", types: "n", mean: "bə:θ sự ra đời, sự sinh đẻ "},
+{word: "birthday", types: "n", mean: "bə:θdei ngày sinh, sinh nhật "},
+{word: "biscuit", types: "n", mean: "biskit bánh quy "},
+{word: "bit", types: "n", mean: "bit miếng, mảnh. "},
+{word: "a bit", types: "phrase", mean: "abit một chút"},
+{word: "bite", types: "n", mean: "bait sự cắn, sự ngoạm "},
+{word: "bite", types: "v", mean: "bait cắn, ngoạm"},
+{word: "bitter", types: "adj", mean: "bitə đắng; đắng cay, chua xót "},
+{word: "bitterly", types: "adv", mean: "bitəli đắng, đắng cay, chua xót "},
+{word: "black", types: "n", mean: "blæk đen; màu đen "},
+{word: "black", types: "adj", mean: "blæk đen; màu đen "},
 
- {word: "belief", types: "n", mean: "bi'li:f lòng tin, đức tin, sự tin tưởng "},
- {word: "believe", types: "v", mean: "bi'li:v tin, tin tưởng "},
- {word: "bell", types: "n", mean: "bel cái chuông, tiếng chuông "},
- {word: "belong", types: "v", mean: "bi'lɔɳ thuộc về, của, thuộc quyền sở hữu "},
- {word: "below", types: "adv", mean: "bi'lou ở dưới, dưới thấp, phía dưới (prep) "},
- {word: "belt", types: "n", mean: "belt dây lưng, thắt lưng "},
- {word: "bend", types: "v", mean: "bentʃ cúi xuống, uốn cong "},
- {word: "bend", types: "n", mean: "bentʃ chỗ rẽ, chỗ uốn, khuỷu tay"},
- {word: "beneath", types: "adv", mean: "bi'ni:θ ở dưới, dưới thấp [prep]"},
- {word: "benefit", types: "n", mean: "benifit lợi, lợi ích"},
- {word: "benefit", types: "v", mean: "benifit giúp ích, làm lợi cho "},
- {word: "bent", types: "adj", mean: "bent khiếu, sở thích, khuynh hướng "},
- {word: "beside", types: "prep", mean: "bi'said bên cạnh, so với "},
- {word: "bet", types: "v", mean: "bet đánh cuộc, cá cược "},
- {word: "bet", types: "n", mean: "bet sự đánh cuộc "},
- {word: "better", types: "adj", mean: "betə tốt hơn "},
- {word: "betting", types: "n", mean: "beting sự đánh cuộc "},
- {word: "between", types: "adv", mean: "bi'twi:n giữa, ở giữa "},
- {word: "beyond", types: "adv", mean: "bi'jɔnd ở xa, phía bên kia [prep]"},
- {word: "bicycle", types: "n", mean: "baisikl xe đạp "},
- {word: "bike", types: "n", mean: "baisikl xe đạp "},
- {word: "bid", types: "n", mean: "bid sự đặt giá, sự trả giá "},
- {word: "bid", types: "v", mean: "bid đặt giá, trả giá"},
- {word: "big", types: "adj", mean: "big to, lớn "},
- {word: "bill", types: "n", mean: "bil hóa đơn, giấy bạc "},
- {word: "bin", types: "n", mean: "bin thùng, thùng đựng rượu "},
- {word: "biology", types: "n", mean: "bai'ɔlədʤi sinh vật học "},
- {word: "bird", types: "n", mean: "bə:d chim "},
- {word: "birth", types: "n", mean: "bə:θ sự ra đời, sự sinh đẻ "},
- {word: "birthday", types: "n", mean: "bə:θdei ngày sinh, sinh nhật "},
- {word: "biscuit", types: "n", mean: "biskit bánh quy "},
- {word: "bit", types: "n", mean: "bit miếng, mảnh. "},
- {word: "a bit", types: "phrase", mean: "abit một chút"},
- {word: "bite", types: "n", mean: "bait sự cắn, sự ngoạm "},
- {word: "bite", types: "v", mean: "bait cắn, ngoạm"},
- {word: "bitter", types: "adj", mean: "bitə đắng; đắng cay, chua xót "},
- {word: "bitterly", types: "adv", mean: "bitəli đắng, đắng cay, chua xót "},
- {word: "black", types: "n", mean: "blæk đen; màu đen "},
- {word: "black", types: "adj", mean: "blæk đen; màu đen "},
-// 300 words
+
+ {word: "blade", types: "n", mean: "bleid lưỡi (dao, kiếm); lá (cỏ, cây); mái (chèo); cánh (chong chóng) "},
+ {word: "blame", types: "v", mean: "bleim khiển trách, mắng trách"},
+ {word: "blame", types: "n", mean: "bleim sự khiển trách, sự mắng trách "},
+ {word: "blank", types: "adj", mean: "blæɳk trống, để trắng"},
+ {word: "blank", types: "n", mean: "sự trống rỗng "},
+ {word: "blankly", types: "adv", mean: "blæɳkli ngây ra, không có thần "},
+ {word: "blind", types: "adj", mean: "blaind đui, mù "},
+ {word: "block", types: "n", mean: "blɔk khối, tảng (đá)"},
+ {word: "block", types: "v", mean: "blɔk làm ngăn cản, ngăn chặn "},
+ {word: "blonde / blond", types: "adj", mean: "blɔnd hoe vàng, mái tóc hoe vàng"},
+ {word: "blonde", types: "n", mean: "blɔnd tóc vàng (blond)"},
+ {word: "blood", types: "n", mean: "blʌd máu, huyết; sự tàn sát, chem giết "},
+ {word: "blow", types: "n", mean: "blou sự nở hoa "},
+ {word: "blow", types: "v", mean: "blou nở hoa"},
+ {word: "blue", types: "n", mean: "blu: màu xanh"},
+ {word: "blue", types: "adj", mean: "blu: xanh, có màu xanh "},
+ {word: "board", types: "n", mean: "bɔ:d tấm ván, tàu thủy "},
+ {word: "board", types: "v", mean: "bɔ:d lót ván "},
+ {word: "boat", types: "n", mean: "bout tàu, thuyền "},
+ {word: "body", types: "n", mean: "bɔdi thân thể, thân xác "},
+ {word: "boil", types: "v", mean: "bɔil sôi, luộc "},
+ {word: "bomb", types: "n", mean: "bɔm quả bom"},
+ {word: "bomb", types: "v", mean: "bɔm đặt(đánh) bom, thả bom "},
+ {word: "bone", types: "n", mean: "boun xương "},
+ {word: "book", types: "n", mean: "buk sách"},
+ {word: "book", types: "v", mean: "buk đặt phòng"},
+ {word: "boot", types: "n", mean: "bu:t giày ống "},
+ {word: "border", types: "n", mean: "bɔ:də bờ, mép, vỉa, lề (đường) "},
+ {word: "bore", types: "v", mean: "bɔ: buồn chán, buồn tẻ "},
+ {word: "bored", types: "adj", mean: "bɔ:d buồn chán "},
+ {word: "boring", types: "adj", mean: "bɔ:riɳ buồn chán "},
+ {word: "be born", types: "v", mean: "bɔ:n (được) sinh, đẻ"},
+ {word: "borrow", types: "v", mean: "bɔrou vay, mượn "},
+ {word: "boss", types: "n", mean: "bɔs ông chủ, thủ trưởng "},
+ {word: "both", types: "pron", mean: "bouθ cả hai "},
+ {word: "bother", types: "v", mean: "bɔðə làm phiền, quấy rầy, làm bực mình "},
+ {word: "bottle", types: "n", mean: "bɔtl chai, lọ "},
+ {word: "bottom", types: "n", mean: "bɔtəm phần dưới cùng, thấp nhất"},
+ {word: "bottom", types: "adj", mean: "bɔtəm cuối, cuối cùng "},
+ {word: "bound (to)", types: "adj", mean: "baund nhất định, chắc chắn"},
+// 361 words
 
 	   ];
 

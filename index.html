@@ -19,7 +19,8 @@
 
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
-    <h4 class="mb-4">3000 words</h4>
+    <h4 class="mb-4">3000 Words</h4>
+        <a href="./truyenchem.html" class="mb-4">Truyện chêm</a>
     	<button class="btn btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng -> vi' : 'vi -> eng' }}</button>
 		<div class="card mt-4" ng-repeat="word in words" ng-if="false">
 		    <div class="card-body">
@@ -46,7 +47,7 @@
 		 </div> <!-- card -->
 
 		<!-- <button class="btn btn-primary my-3" ng-click="reLoadQuiz()"> Reload </button> -->
-		<p class="font-weight-bold">points:
+		<p class="font-weight-bold mt-4">points:
 			<span class="ml-5 text-primary">{{point}}</span> 
 			<span class="ml-3" ng-if="pointClass != ''" ng-class="pointClass">{{pointClass == 'text-success' ? '+1' : '-1'}}</span> 
 		</p>
@@ -80,10 +81,6 @@
 					    ng-change="checkAnwser(choice.word);">
 					    <span ng-if="bEngToVi == 1" remove-ipa word={{choice.mean}}>{{choice.mean}}</span>
 					    <span ng-if="bEngToVi == 0">{{choice.word}}</span>
-					    <span class="ml-4 font-italic text-danger" ng-if="showTip">
-					    	<span ng-if="bEngToVi == 1">{{choice.word}}</span>
-					    	<span ng-if="bEngToVi == 0" remove-ipa word={{choice.mean}}>{{choice.mean}}</span>
-					    </span>
 				  </label>
 				</div>
 		 	</div> <!-- radio -->
@@ -92,8 +89,6 @@
 	              ng-repeat="exam in quiz.question.examples" ng-click="sayIt(exam)">
 	              - <span wrap-in-tag word="{{quiz.question.word}}" text="{{exam}}">{{exam}}</span>
 	        </div>
-
-	        <button class="btn btn-large btn-danger float-right mt-3" ng-click="showTip = 1; point = point-5">Show tip(-5 points)</button>
 	          
 		 </div>
     </div> <!-- container -->
@@ -101,40 +96,12 @@
 
 <script type="text/javascript">
     var app = angular.module("myApp", []);
-
-    app.directive('wrapInTag', function() {
-		return {
-	        restrict: 'A',
-	        link: function(scope, ele, attr) {
-	          var tag = attr.tag || 'strong';
-	          var word = attr.word || [];
-	          var text = attr.text || [];
-	          console.log("text " + text);
-	          text =  text.replace(word,'<'+tag+'>'+word+'</'+tag+'>');         
-           	 ele.html(text);
-	        }
-	    }
-	});
-
-	 app.directive('removeIpa', function() {
-		return {
-	        restrict: 'A',
-	        link: function(scope, ele, attr) {
-	          var word = attr.word || [];
-	          var ipa =  word.split(" ")[0];       
-	          word = word.replace(ipa, "")
-           	 ele.html(word);
-	        }
-	    }
-	});
-
     app.controller("ctrl", function($scope, $timeout) {
 
      $scope.bEngToVi = 1;
      $scope.pointClass = '';
      $scope.quiz = {};
      $scope.point = 0;
-     $scope.showTip = 0;
 
     $scope.words = [
 {word: "abandon", types: "v", mean: "ə'bændən bỏ, từ bỏ "},
@@ -642,7 +609,6 @@
 
      	$scope.stopSound();
      	$scope.quiz = {};
-     	$scope.showTip = 0;
 
      	$timeout(function() { 
 	     	var rand1, rand2, rand3, rand4;
@@ -682,5 +648,33 @@
     $scope.reLoadQuiz();
 
     });
+
+
+    app.directive('wrapInTag', function() {
+		return {
+	        restrict: 'A',
+	        link: function(scope, ele, attr) {
+	          var tag = attr.tag || 'strong';
+	          var word = attr.word || [];
+	          var text = attr.text || [];
+	          console.log("text " + text);
+	          text =  text.replace(word,'<'+tag+'>'+word+'</'+tag+'>');         
+           	 ele.html(text);
+	        }
+	    }
+	});
+
+	 app.directive('removeIpa', function() {
+		return {
+	        restrict: 'A',
+	        link: function(scope, ele, attr) {
+	          var word = attr.word || [];
+	          var ipa =  word.split(" ")[0];       
+	          word = word.replace(ipa, "")
+           	 ele.html(word);
+	        }
+	    }
+	});
+
 </script>
 </html>

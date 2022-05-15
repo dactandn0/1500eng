@@ -1,0 +1,103 @@
+<!-- (\w+)\s+(\w+)\s+(.+) -->
+<!-- {word: "$1", types: "$2", mean: "$3"}, -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3000 Words</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body ng-app="myApp">
+    <div ng-controller="ctrl" class="container mt-4">
+    <h4 class="mb-4">Truyện chêm</h4>
+    	<a href="./index.html" class="mt-2">3000 Words</a>
+    	<button class="btn btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng -> vi' : 'vi -> eng' }}</button>
+		<div class="card mt-4" ng-repeat="word in words">
+		    <div class="card-body">
+	          <div class="card-text my-2">
+	          	<p class="font-weight-bold">{{word.title}}</p>
+	          	<p ng-bind-html="word.eng" ng-if="bEngToVi"></p>
+	          	<p ng-bind-html="word.vi" ng-if="!bEngToVi"></p>
+	          </div> <!-- card-text -->
+	          <button class="btn btn-info mx-3" ng-click="playSound(word.title)">{{bPlaying ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
+	          <button class="btn btn-info" ng-if="bPlaying" ng-click="stopSound()">Stop</button>
+        	</div> 		<!-- card-body -->
+		 </div> <!-- card -->
+    </div> <!-- container -->
+</body>
+
+<script type="text/javascript">
+    var app = angular.module("myApp", ['ngSanitize']);
+    app.controller("ctrl", function($scope, $timeout) {
+
+     $scope.bPlaying = false;
+     $scope.bPause = false;
+     $scope.bEngToVi = 1;
+     $scope.audio;
+     $scope.currentTime = 0;;
+
+    $scope.words = [
+{eng: "A ………….. lion lived in the forest. Every day, he killed and ate a …………..of animals. The other animals were …………..the lion would kill them all.<p></p> The animals told the lion, “ Let’s make a deal. If you …………..to eat only one animal each day, then one of us will come to you every day. Then you don’t have to …………..and kill us.”<p></p> The plan sounded well thought-out to the lion, so he ………….., but he also said, “If you don’t come every day, I …………..to kill all of you the next day!”<p></p> Each day after that, one animal went to the lion so that the lion could eat it. Then, all the other animals were …………...<p></p> ………….., it was the rabbit’s turn to go to the lion. The rabbit went very slowly that day, so the lion was …………..when the rabbit ﬁnally …………...<p></p> The lion angrily asked the rabbit, “ Why are you late?”<p></p> “ I was …………..from another lion in the forest. That lion said he was the king, so I was afraid.”<p></p> The lion told the rabbit, “ I am the only king here! Take me to that other lion, and I will kill him.<p></p> The rabbit ………….., “ I will be happy to show you where he lives.”<p></p> The rabbit led the lion to an old well in the ………….. of the forest. The well was very deep with water at the …………... The rabbit told the lion, “ Look in there. The lion lives at the bottom.”<p></p> When the lion looked in the well, he could see his own face in-the water. He thought that was the other lion.<p></p> Without waiting another ………….., the lion jumped into the well to …………..the other lion. He never came out.<p></p> All of the other animal in the forest-were very pleased with the rabbit’s clever trick.",
+
+ title: "1.1 The Lion and the Rabbit",
+vi: 'Một con Sư Tử cruel sống trong rừng. Hằng ngày, nó giết và ăn rất lot loài vật. Muông thú afraid rằng Sư Tử sẽ giết là ăn thịt tất cả loài vật trong khu rừng.<p></p> Chúng nói với Sư Tử rằng: "Chúng ta hãy thỏa thuận. Nếu ngày promise rằng mỗi ngày ngài chỉ ăn một con vật, thì hàng ngày một trong số chúng tôi sẽ tới đây nộp mạng. Ngài sẽ không phải hunt và giết chúng tôi nữa". <p></p> Sư Tử thấy thỏa thuận nghe rất well nên nó đã agreed, nhưng nó cũng nói rằng: "Nếu mỗi ngày không có một đứa tới nạp mạng, tao sẽ giết tất cả chúng mày vào ngày hôm sau!".<p></p> Cứ như vậy, mỗi ngày một con vật lại tới nộp mạng cho Sư Tử. Và như thế, tất cả muôn loài đề safe.<p></p> Finally, đến lượt Thỏ tới nộp mạng cho Sư Tử. Thỏ hôm đó tới rất muộn nên Sư Tử đã rất angry khi thỏ arrived.<p></p> Sư Tử tức giận hỏi Thỏ: "Tại sao mày lại tới muộn?"<p></p> "Tôi đã hiding khỏi một con Sư Tử khác trong rừng. Con Sư Tử đó là chúa sơn lâm, nên tôi rất sợ hãi".<p></p> "Tao là chúa sơn lâm duy nhất trong khu rừng này. Đưa tao tới gặp con Sư Tử đó, tao sẽ giết chết nó" - Sư Tử nói với Thỏ.<p></p> Thỏ replied: "Tôi rất vui mừng chỉ cho ngài nơi hắn sống".<p></p> Thỏ đưa Sư thử tới một chiếc giếng cũ ở middle khu rừng. Chiếc giếng sâu hun hút và có nước ở bottom. Thỏ nói với Sư Tử: "Ngài hãy nhìn vào trong này. Hắn sống ở dưới đáy kia kìa". Khi Sư Tử nhìn xuống đấy giếng, nó thấy chính khuôn mặt mình in trên mặt nước. Nó nghĩ đó là con Sư Tử kia. Không đợi một moment nào, Sư Tử nhảy xuống giếng để attack con Sư Tử kia. Nó không bao giờ có thể thoát ra được nữa.<p></p> Tất cả các loài vật trong rừng đều rất pleased với clever trick của Thỏ.'
+},
+
+// 361 words
+
+	   ];
+
+	$scope.playSound = function (path) {
+		if ($scope.bPlaying)
+		{
+			$scope.pauseSound();
+		}
+	  	else
+	  	{
+	  		$scope.audio = new Audio("truyenchem/" + path + '.mp3');
+		    $scope.audio.loop = false;
+		    $scope.audio.play();
+	  	}
+	    $scope.bPlaying = true;
+	}
+
+	$scope.pauseSound = function () {
+		$scope.bPause = !$scope.bPause;
+		if ($scope.bPause)
+	    {
+	    	$scope.audio.pause();
+	    	$scope.currentTime = $scope.audio.currentTime;
+	    }
+	    else
+	    {
+	    	$scope.audio.currentTime = $scope.currentTime;
+	    	$scope.audio.play();
+	    }
+	}
+
+	$scope.stopSound = function () {
+		 $scope.audio.pause();
+		 $scope.audio.currentTime = 0;
+		 $scope.currentTime = 0;
+		 $scope.bPlaying = false
+	};
+
+	$scope.sayIt = function (theText) {
+		Speech = new SpeechSynthesisUtterance(theText);
+	    window.speechSynthesis.speak(Speech);
+	};
+
+    });
+
+</script>
+</html>

@@ -22,14 +22,14 @@
     <h4 class="mb-4">Truyện chêm</h4>
     	<a href="./index.html" class="mt-2">3000 Words</a>
     	<button class="btn btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng -> vi' : 'vi -> eng' }}</button>
-		<div class="card mt-4" ng-repeat="word in words">
+		<div class="card mt-4" ng-repeat="(index1,story) in stories track by $index">
 		    <div class="card-body">
 	          <div class="card-text my-2">
-	          	<p class="font-weight-bold">{{word.title}}</p>
-	          	<p ng-bind-html="word.eng" ng-if="bEngToVi"></p>
-	          	<p ng-bind-html="word.vi" ng-if="!bEngToVi"></p>
+	          	<p class="font-weight-bold">{{story.title}}</p> 
+	          	<p ng-repeat="(index2,sentence) in story.engs" ng-if="bEngToVi" ng-click="playSentence(index1,index2)">{{sentence}}</p>
+	          	<p ng-bind-html="story.vi" ng-if="!bEngToVi"></p>
 	          </div> <!-- card-text -->
-	          <button class="btn btn-info mx-3" ng-click="playSound(word.title)">{{bPlaying ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
+	          <button class="btn btn-info mx-3" ng-click="playFullSound($index)">{{bPlaying ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
 	          <button class="btn btn-info" ng-if="bPlaying" ng-click="stopSound()">Stop</button>
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->
@@ -46,25 +46,48 @@
      $scope.audio;
      $scope.currentTime = 0;;
 
-    $scope.words = [
-{eng: "A ………….. lion lived in the forest. Every day, he killed and ate a …………..of animals. The other animals were …………..the lion would kill them all.<p></p> The animals told the lion, “ Let’s make a deal. If you …………..to eat only one animal each day, then one of us will come to you every day. Then you don’t have to …………..and kill us.”<p></p> The plan sounded well thought-out to the lion, so he ………….., but he also said, “If you don’t come every day, I …………..to kill all of you the next day!”<p></p> Each day after that, one animal went to the lion so that the lion could eat it. Then, all the other animals were …………...<p></p> ………….., it was the rabbit’s turn to go to the lion. The rabbit went very slowly that day, so the lion was …………..when the rabbit ﬁnally …………...<p></p> The lion angrily asked the rabbit, “ Why are you late?”<p></p> “ I was …………..from another lion in the forest. That lion said he was the king, so I was afraid.”<p></p> The lion told the rabbit, “ I am the only king here! Take me to that other lion, and I will kill him.<p></p> The rabbit ………….., “ I will be happy to show you where he lives.”<p></p> The rabbit led the lion to an old well in the ………….. of the forest. The well was very deep with water at the …………... The rabbit told the lion, “ Look in there. The lion lives at the bottom.”<p></p> When the lion looked in the well, he could see his own face in-the water. He thought that was the other lion.<p></p> Without waiting another ………….., the lion jumped into the well to …………..the other lion. He never came out.<p></p> All of the other animal in the forest-were very pleased with the rabbit’s clever trick.",
-
- title: "1.1 The Lion and the Rabbit",
-vi: 'Một con Sư Tử <b>cruel</b> sống trong rừng. Hằng ngày, nó giết và ăn rất <b>lot</b> loài vật. Muông thú <b>afraid</b> rằng Sư Tử sẽ giết là ăn thịt tất cả loài vật trong khu rừng.<p></p> Chúng nói với Sư Tử rằng: "Chúng ta hãy thỏa thuận. Nếu ngày <b>promise</b> rằng mỗi ngày ngài chỉ ăn một con vật, thì hàng ngày một trong số chúng tôi sẽ tới đây nộp mạng. Ngài sẽ không phải <b>hunt</b> và giết chúng tôi nữa". <p></p> Sư Tử thấy thỏa thuận nghe rất <b>well</b> nên nó đã <b>agreed</b>, nhưng nó cũng nói rằng: "Nếu mỗi ngày không có một đứa tới nạp mạng, tao <b>promise</b> sẽ giết tất cả chúng mày vào ngày hôm sau!".<p></p> Cứ như vậy, mỗi ngày một con vật lại tới nộp mạng cho Sư Tử. Và như thế, tất cả muôn loài đề <b>safe</b>.<p></p> <b>Finally</b>, đến lượt Thỏ tới nộp mạng cho Sư Tử. Thỏ hôm đó tới rất muộn nên Sư Tử đã rất <b>angry</b> khi thỏ <b>arrived</b>.<p></p> Sư Tử tức giận hỏi Thỏ: "Tại sao mày lại tới muộn?"<p></p> "Tôi đã <b>hiding</b> khỏi một con Sư Tử khác trong rừng. Con Sư Tử đó là chúa sơn lâm, nên tôi rất sợ hãi".<p></p> "Tao là chúa sơn lâm duy nhất trong khu rừng này. Đưa tao tới gặp con Sư Tử đó, tao sẽ giết chết nó" - Sư Tử nói với Thỏ.<p></p> Thỏ <b>replied</b>: "Tôi rất vui mừng chỉ cho ngài nơi hắn sống".<p></p> Thỏ đưa Sư thử tới một chiếc giếng cũ ở <b>middle</b> khu rừng. Chiếc giếng sâu hun hút và có nước ở <b>bottom</b>. Thỏ nói với Sư Tử: "Ngài hãy nhìn vào trong này. Hắn sống ở dưới đáy kia kìa". Khi Sư Tử nhìn xuống đấy giếng, nó thấy chính khuôn mặt mình in trên mặt nước. Nó nghĩ đó là con Sư Tử kia. Không đợi một <b>moment</b> nào, Sư Tử nhảy xuống giếng để <b>attack</b> con Sư Tử kia. Nó không bao giờ có thể thoát ra được nữa.<p></p> Tất cả các loài vật trong rừng đều rất pleased với clever trick của Thỏ.'
+    $scope.stories = [
+{
+	engs: 
+	[
+	"1.1 The Lion and the Rabbit",
+	"A ………….. lion lived in the forest. Every day, he killed and ate a …………..of animals. The other animals were …………..the lion would kill them all.",
+	"The animals told the lion, “ Let’s make a deal. If you …………..to eat only one animal each day, then one of us will come to you every day. Then you don’t have to …………..and kill us.”",
+	"The plan sounded well thought-out to the lion, so he ………….., but he also said, “If you don’t come every day, I …………..to kill all of you the next day!”",
+	"Each day after that, one animal went to the lion so that the lion could eat it. Then, all the other animals were …………...",
+	"………….., it was the rabbit’s turn to go to the lion. The rabbit went very slowly that day, so the lion was …………..when the rabbit ﬁnally …………...",
+	"The lion angrily asked the rabbit, “ Why are you late?”",
+	"“I was …………..from another lion in the forest. That lion said he was the king, so I was afraid.”",
+	"The lion told the rabbit, “ I am the only king here! Take me to that other lion, and I will kill him.",
+	"The rabbit ………….., “ I will be happy to show you where he lives.”",
+	"The rabbit led the lion to an old well in the ………….. of the forest. The well was very deep with water at the …………... The rabbit told the lion, “ Look in there. The lion lives at the bottom.”",
+	"When the lion looked in the well, he could see his own face in-the water. He thought that was the other lion.",
+	"Without waiting another ………….., the lion jumped into the well to …………..the other lion. He never came out.",
+	"All of the other animal in the forest-were very pleased with the rabbit’s clever trick."
+	],
+	vi: 
+	'1.1 SƯ TỬ VÀ THỎ<p></p>Một con Sư Tử <b>cruel</b> sống trong rừng. Hằng ngày, nó giết và ăn rất <b>lot</b> loài vật. Muông thú <b>afraid</b> rằng Sư Tử sẽ giết là ăn thịt tất cả loài vật trong khu rừng.<p></p> Chúng nói với Sư Tử rằng: "Chúng ta hãy thỏa thuận. Nếu ngày <b>promise</b> rằng mỗi ngày ngài chỉ ăn một con vật, thì hàng ngày một trong số chúng tôi sẽ tới đây nộp mạng. Ngài sẽ không phải <b>hunt</b> và giết chúng tôi nữa". <p></p> Sư Tử thấy thỏa thuận nghe rất <b>well</b> nên nó đã <b>agreed</b>, nhưng nó cũng nói rằng: "Nếu mỗi ngày không có một đứa tới nạp mạng, tao <b>promise</b> sẽ giết tất cả chúng mày vào ngày hôm sau!".<p></p> Cứ như vậy, mỗi ngày một con vật lại tới nộp mạng cho Sư Tử. Và như thế, tất cả muôn loài đề <b>safe</b>.<p></p> <b>Finally</b>, đến lượt Thỏ tới nộp mạng cho Sư Tử. Thỏ hôm đó tới rất muộn nên Sư Tử đã rất <b>angry</b> khi thỏ <b>arrived</b>.<p></p> Sư Tử tức giận hỏi Thỏ: "Tại sao mày lại tới muộn?"<p></p> "Tôi đã <b>hiding</b> khỏi một con Sư Tử khác trong rừng. Con Sư Tử đó là chúa sơn lâm, nên tôi rất sợ hãi".<p></p> "Tao là chúa sơn lâm duy nhất trong khu rừng này. Đưa tao tới gặp con Sư Tử đó, tao sẽ giết chết nó" - Sư Tử nói với Thỏ.<p></p> Thỏ <b>replied</b>: "Tôi rất vui mừng chỉ cho ngài nơi hắn sống".<p></p> Thỏ đưa Sư thử tới một chiếc giếng cũ ở <b>middle</b> khu rừng. Chiếc giếng sâu hun hút và có nước ở <b>bottom</b>. Thỏ nói với Sư Tử: "Ngài hãy nhìn vào trong này. Hắn sống ở dưới đáy kia kìa". Khi Sư Tử nhìn xuống đấy giếng, nó thấy chính khuôn mặt mình in trên mặt nước. Nó nghĩ đó là con Sư Tử kia. Không đợi một <b>moment</b> nào, Sư Tử nhảy xuống giếng để <b>attack</b> con Sư Tử kia. Nó không bao giờ có thể thoát ra được nữa.<p></p> Tất cả các loài vật trong rừng đều rất pleased với clever trick của Thỏ.'
 },
 
 // 361 words
 
 	   ];
 
-	$scope.playSound = function (path) {
+	$scope.playSentence = function (indexParent, index) {
+		$scope.stopSound();
+  		$scope.audio = new Audio("truyenchem/" + indexParent + "/" + indexParent + '.' + index + '.mp3');
+	    $scope.audio.loop = false;
+	    $scope.audio.play();
+	}
+
+	$scope.playFullSound = function (index) {
 		if ($scope.bPlaying)
 		{
 			$scope.pauseSound();
 		}
 	  	else
 	  	{
-	  		$scope.audio = new Audio("truyenchem/" + path + '.mp3');
+	  		$scope.audio = new Audio("truyenchem/" + index + "/" + index + '.full.mp3');
 		    $scope.audio.loop = false;
 		    $scope.audio.play();
 	  	}
@@ -72,6 +95,7 @@ vi: 'Một con Sư Tử <b>cruel</b> sống trong rừng. Hằng ngày, nó gi�
 	}
 
 	$scope.pauseSound = function () {
+		if (!$scope.audio) return;
 		$scope.bPause = !$scope.bPause;
 		if ($scope.bPause)
 	    {
@@ -86,15 +110,11 @@ vi: 'Một con Sư Tử <b>cruel</b> sống trong rừng. Hằng ngày, nó gi�
 	}
 
 	$scope.stopSound = function () {
+		if (!$scope.audio) return;
 		 $scope.audio.pause();
 		 $scope.audio.currentTime = 0;
 		 $scope.currentTime = 0;
 		 $scope.bPlaying = false
-	};
-
-	$scope.sayIt = function (theText) {
-		Speech = new SpeechSynthesisUtterance(theText);
-	    window.speechSynthesis.speak(Speech);
 	};
 
     });

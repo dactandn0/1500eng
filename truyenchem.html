@@ -21,15 +21,20 @@
     <div ng-controller="ctrl" class="container mt-4">
     <h4 class="mb-4">Truyện chêm</h4>
     	<a href="./index.html" class="mt-2">3000 Words</a>
-    	<button class="btn btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng -> vi' : 'vi -> eng' }}</button>
-		<div class="card mt-4" ng-repeat="(index1,story) in stories track by $index">
+    	<button class="btn btn-sm btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'en->vi' : 'vi->en' }}</button>
+    	
+    	<div class="my-3">
+    		<button class="btn btn-sm btn-info" ng-if="storyIdx > 0" ng-click="fetchStory(-1)">Prev. Story</button>
+    		<button class="btn btn-sm btn-info" ng-if="storyIdx < (stories.length - 1)" ng-click="fetchStory(1)">Next Story</button>
+    	</div>
+
+		<div class="card mt-4">
 		    <div class="card-body">
 	          <div class="card-text my-2">
-	          	<p class="font-weight-bold">{{story.title}}</p> 
-	          	<p ng-repeat="(index2,sentence) in story.engs" ng-if="bEngToVi" ng-click="playSentence(index1,index2)">{{sentence}}</p>
+	          	<p ng-repeat="(index, sentence) in story.engs" ng-if="bEngToVi" ng-click="playSentence(index)">{{sentence}}</p>
 	          	<p ng-bind-html="story.vi" ng-if="!bEngToVi"></p>
 	          </div> <!-- card-text -->
-	          <button class="btn btn-info mx-3" ng-click="playFullSound($index)">{{bPlaying ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
+	          <button class="btn btn-info mr-2" ng-click="playFullSound($index)">{{bPlaying ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
 	          <button class="btn btn-info" ng-if="bPlaying" ng-click="stopSound()">Stop</button>
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->
@@ -40,11 +45,12 @@
     var app = angular.module("myApp", ['ngSanitize']);
     app.controller("ctrl", function($scope, $timeout) {
 
+     $scope.storyIdx = 0;
      $scope.bPlaying = false;
      $scope.bPause = false;
      $scope.bEngToVi = 1;
      $scope.audio;
-     $scope.currentTime = 0;;
+     $scope.currentTime = 0;
 
     $scope.stories = [
 {
@@ -73,9 +79,17 @@
 
 	   ];
 
-	$scope.playSentence = function (indexParent, index) {
+
+    $scope.story = $scope.stories[$scope.storyIdx];
+
+	$scope.fetchStory = function (index) {
+		$scope.storyIdx = $scope.storyIdx + index;
+		$scope.story = $scope.stories[$scope.storyIdx];
+	}
+
+	$scope.playSentence = function (index) {
 		$scope.stopSound();
-  		$scope.audio = new Audio("truyenchem/" + indexParent + "/" + indexParent + '.' + index + '.mp3');
+  		$scope.audio = new Audio("truyenchem/" + $scope.storyIdx + "/" + $scope.storyIdx + '.' + index + '.mp3');
 	    $scope.audio.loop = false;
 	    $scope.audio.play();
 	}

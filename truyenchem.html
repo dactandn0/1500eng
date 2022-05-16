@@ -26,6 +26,8 @@
     	<div class="my-3">
     		<button class="btn btn-sm btn-info" ng-if="storyIdx > 0" ng-click="fetchStory(-1)">Prev. Story</button>
     		<button class="btn btn-sm btn-info" ng-if="storyIdx < (stories.length - 1)" ng-click="fetchStory(1)">Next Story</button>
+    		<button class="btn btn-sm btn-info mr-2" ng-click="playFullSound($index)">{{bPlaying ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
+	        <button class="btn btn-sm btn-info" ng-if="bPlaying" ng-click="stopSound()">Stop</button>
     	</div>
 
 		<div class="card mt-4">
@@ -33,9 +35,12 @@
 	          <div class="card-text my-2">
 	          	<p ng-repeat="(index, sentence) in story.engs" ng-if="bEngToVi" ng-click="playSentence(index)">{{sentence}}</p>
 	          	<p ng-bind-html="story.vi" ng-if="!bEngToVi"></p>
+	          	<div class="mt-5"  ng-if="story.voca">
+	          		<hr/>
+	          		<p ng-bind-html="story.voca"></p>
+	          	</div>
+	          	
 	          </div> <!-- card-text -->
-	          <button class="btn btn-info mr-2" ng-click="playFullSound($index)">{{bPlaying ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
-	          <button class="btn btn-info" ng-if="bPlaying" ng-click="stopSound()">Stop</button>
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->
     </div> <!-- container -->
@@ -74,7 +79,24 @@
 	vi: 
 	'1.1 SƯ TỬ VÀ THỎ<p></p>Một con Sư Tử <b>cruel</b> sống trong rừng. Hằng ngày, nó giết và ăn rất <b>lot</b> loài vật. Muông thú <b>afraid</b> rằng Sư Tử sẽ giết là ăn thịt tất cả loài vật trong khu rừng.<p></p> Chúng nói với Sư Tử rằng: "Chúng ta hãy thỏa thuận. Nếu ngày <b>promise</b> rằng mỗi ngày ngài chỉ ăn một con vật, thì hàng ngày một trong số chúng tôi sẽ tới đây nộp mạng. Ngài sẽ không phải <b>hunt</b> và giết chúng tôi nữa". <p></p> Sư Tử thấy thỏa thuận nghe rất <b>well</b> nên nó đã <b>agreed</b>, nhưng nó cũng nói rằng: "Nếu mỗi ngày không có một đứa tới nạp mạng, tao <b>promise</b> sẽ giết tất cả chúng mày vào ngày hôm sau!".<p></p> Cứ như vậy, mỗi ngày một con vật lại tới nộp mạng cho Sư Tử. Và như thế, tất cả muôn loài đề <b>safe</b>.<p></p> <b>Finally</b>, đến lượt Thỏ tới nộp mạng cho Sư Tử. Thỏ hôm đó tới rất muộn nên Sư Tử đã rất <b>angry</b> khi thỏ <b>arrived</b>.<p></p> Sư Tử tức giận hỏi Thỏ: "Tại sao mày lại tới muộn?"<p></p> "Tôi đã <b>hiding</b> khỏi một con Sư Tử khác trong rừng. Con Sư Tử đó là chúa sơn lâm, nên tôi rất sợ hãi".<p></p> "Tao là chúa sơn lâm duy nhất trong khu rừng này. Đưa tao tới gặp con Sư Tử đó, tao sẽ giết chết nó" - Sư Tử nói với Thỏ.<p></p> Thỏ <b>replied</b>: "Tôi rất vui mừng chỉ cho ngài nơi hắn sống".<p></p> Thỏ đưa Sư thử tới một chiếc giếng cũ ở <b>middle</b> khu rừng. Chiếc giếng sâu hun hút và có nước ở <b>bottom</b>. Thỏ nói với Sư Tử: "Ngài hãy nhìn vào trong này. Hắn sống ở dưới đáy kia kìa". Khi Sư Tử nhìn xuống đấy giếng, nó thấy chính khuôn mặt mình in trên mặt nước. Nó nghĩ đó là con Sư Tử kia. Không đợi một <b>moment</b> nào, Sư Tử nhảy xuống giếng để <b>attack</b> con Sư Tử kia. Nó không bao giờ có thể thoát ra được nữa.<p></p> Tất cả các loài vật trong rừng đều rất pleased với clever trick của Thỏ.'
 },
-
+{
+	engs: 
+	[
+	"1.2 THE LABORATORY",
+	"Mia's father had a ...................., but she had no idea what was in it. Her dad always closed and locked the door when he went in. She knew that he used it to do .................... for work. He never told Mia what the project where.",
+	"One night, Mia .................... the door to the laboratory. She stopped and thought, 'I wonder what crazy ..................... he is doing now.' Suddenly, she heard a ................... ................... It sounded like an .................. ..................The noise .................... her, so she walked quickly back to her room.",
+	"The next night, her friend Liz came to her house. When Liz arrived, Mia told about the night before. 'Oh, It was .....................', She said.",
+	"'Why don't we see what is in there?' Liz asked. 'It will be a fun ....................!' Mia felt ..................... about going into her father's laboratory, but she agreed. As always, the door was locked. The waited until Mia's father left the laboratory to eat dinner. 'He didn't lock the door!' Liz said. Let's go.",
+	"The laboratory was dark. The girls walked down the stairs .................... Mia .................... strange .................... What terrible thing was her father ....................?",
+	"Suddenly, they heard an evil laugh. It was even ....... than the one MIa heard the night before. What if a monster was going to .................... them? Mia had to do something. She.................... for help.",
+	"Mia's father ran into the room and turned on the lights. 'Oh, no', he said. 'You must have learned my ....................'",
+	"'Your monster tried to kill us', Mia said. 'Monster?' he asked. 'You mean this?' He had a pretty doll in his hands. The doll laughed. The laugh didn't sound so evil anymoe. 'I made this for your birthday. I wanted to give it to your then, but you can have it now. I hope you like it!'",
+	],
+	vi: 
+	'1.2 PHÒNG THÍ NGHIỆM<p></p> Ba của Mia có một cái <b>laboratory</b>, nhưng cô bé không hề biết có thứ gì ở trong đó. Ba luôn luôn đóng và khóa chửa khi ông vào trong phòng thì nghiệm. Cô bé biết ông dùng nó để làm <b>projects</b> cho công việc. Nhung ba chưa bao giờ nói cho Mia biết những dự án đó là gì.<p></p> Một đêm, Mia <b>approached</b> cửa phòng thí nghiệm. Cô bé dừng lại và nghĩ. "Mình tự hỏi rằng cha đang làm <b>experiment</b> điên cuồng gì bay giờ nhỉ". Bỗng nhiên, cô bé nghe thấy một <b>loud noise</b>. Âm thanh đó nghe như là <b>evil laugh</b>. Tiếng ồn đó làm cô bé <b>scared</b> nên Mia vội vã quay trở lại phòng mình.<p></p> Đêm hôm sau, Liz - bạn của Mia tới chơi. Khi Liz tới, Mia kể cho cô bé nghe về chuyển xảy ra vào tối hôm trước. "Ôi, điều đó thật <b>terrible</b>" - Liz thốt lên.<p></p> "Tại sao chúng mình không nhìn xem có gì trong đó?" - Liz hỏi. "Đấy sẽ là một <b>adventure</b> thú vị!".<p></p> Mia cảm thấy <b>nervous</b> về chuyện bước vào phòng thí nghiệm của bố, nhưng cuối cùng cô bé đã đồng ý với Liz. Như mọi lần, cánh cửa lại bị khóa. Liz và Mia đợi tới khi ba của Mia rời khỏi phòng thì nghiệm để ăn tối. "Ba cậu không khóa cửa kìa" - Liz nói. "Bọn mình đi thôi".<p></p> Phòng thí nghiệm tối om. Hai cô bé bước xuống cầu thang thật <b>carefully</b>. Mia <b>smelled</b> những <b>chemicals</b> rất lạ lẫm. Đó có phải là những thứ khủng khiếp mà ba đã từng <b>creating</b> không?<p></p> Bất chợt, hai cô bé nghe thấy tiếng cười rùng rợn. Thậm chí lần này âm thành còn <b>worse</b> hơn cả đêm hôm trước. Nếu như có một con quái vật nhảy ra và <b>kill</b> hai cô bé thì sao? Mia nghĩ mình phải làm gì đó. Cô bé <b>shouted</b> tìm kiếm sự giúp đỡ.<p></p> Ba của Mia chạy vào phòng và bật đèn lên. "Ôi, không" - ông nói. "Con hẳn đã biết <b>secret</b> của ba rồi".<p></p> "Con quái vật của ba đang cố giết tụi con" - Mia nói.<p></p> "Quái vật?" - ông hỏi. "Ý con là cái này phải không?". Ông cầm một con búp bê xinh xắn trên tay. Con búp bê cười. Tiếng cười không còn rùng rợn nữa. "Bố làm để tặng con ngày sinh nhật. Bố muốn tới ngày đó mới tặng cho con, nhưng con có thể nhận nó ngay bây giờ. Bố hi vọng là con thích nó. Mia".',
+	voca:
+	'Laboratory (Danh từ): Phòng thì nghiệm<p></p> Project (Danh từ): Dự án<p></p> Approach (Động từ): Đến gần	<p></p> Experiment (Danh Từ): Thí nghiệm<p></p> Loud (Tính từ): Ồn	<p></p> Noise (Danh từ): Tiếng<p></p> Evil (Tính từ): Ma quái	<p></p> Laugh (n,v): (Tiếng) cười<p></p> Scare (Động từ): Làm hoảng sợ	<p></p> Terrible (Tính từ): Tệ hại<p></p> Adventure (Danh từ): Chuyến phiêu lưu	<p></p> Nervous (Tính từ): Lo lắng<p></p> Carefully (Trạng từ): Một cách cẩn thận	<p></p> Smell (Động từ): Ngửi thấy<p></p> Chemical (Danh từ): Chất hóa học	<p></p> Worse (Tính từ so sánh): Tệ hơn<p></p> Shout (Động từ): Kêu gào	<p></p>'
+},
 // 361 words
 
 	   ];
@@ -101,7 +123,7 @@
 		}
 	  	else
 	  	{
-	  		$scope.audio = new Audio("truyenchem/" + index + "/" + index + '.full.mp3');
+	  		$scope.audio = new Audio("truyenchem/" + $scope.storyIdx + "/" + $scope.storyIdx + '.full.mp3');
 		    $scope.audio.loop = false;
 		    $scope.audio.play();
 	  	}

@@ -19,6 +19,15 @@
 
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
+	    <model-viewer 
+			alt="Neil Armstrong" 
+			src="./out.glb" 
+			ar environment-image="" 
+			poster="" 
+			shadow-intensity="1" 
+			camera-controls touch-action="pan-y" 
+			generate-schema>
+		</model-viewer>
     <h4 class="mb-4">3000 Words</h4>
         <a href="./truyenchem.html" class="mb-4">Truyện chêm</a>
     	<button class="btn btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng -> vi' : 'vi -> eng' }}</button>
@@ -91,15 +100,7 @@
 	        </div>
 	          
 		 </div>
-	    	<model-viewer 
-			alt="Neil Armstrong" 
-			src="./out.glb" 
-			ar environment-image="" 
-			poster="" 
-			shadow-intensity="1" 
-			camera-controls touch-action="pan-y" 
-			generate-schema>
-		</model-viewer>
+	    	
     </div> <!-- container -->
 </body>
 

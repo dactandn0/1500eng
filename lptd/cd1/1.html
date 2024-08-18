@@ -55,25 +55,6 @@
     var app = angular.module("myApp", ['ngSanitize']);
     app.controller("ctrl", function($scope, $timeout) {
 
-    $scope.range = function(min, max, step) {
-	    step = step || 1;
-	    var input = [];
-	    for (var i = min; i <= max; i += step) {
-	        input.push(i);
-	    }
-	    return input;
-	};
-
-     $scope.storyIdx = 0;
-     $scope.bPlayingSentence = false;
-
-     $scope.bPlayingFull = false;
-     $scope.bPause = false;
-     $scope.bEngToVi = 0;
-     $scope.audio;
-     $scope.currentTime = 0;
-     $scope.isAudioLoop = false;
-
     $scope.stories = [
 {
 	en: 
@@ -239,8 +220,7 @@ voca: ''
 	birds have colorful feathers. Some birds sing<br>\
 	beautiful songs. Some birds make special nests<br>\
 	to lay eggs in.<br>\
-	G : Really? Maybe I will go bird watching one day<br>\
-	after all!',
+	G : Really? Maybe I will go bird watching one day after all!',
 	vi:
 	'<b>Unit 4: Ngắm chim</b><br>\
 	B: Ngày mai tôi muốn đi ngắm chim. Bạn<br>\
@@ -260,8 +240,7 @@ voca: ''
 	loài chim có bộ lông sặc sỡ. Một số loài chim hót<br>\
 	những bài hát hay. Một số loài chim làm tổ đặc biệt<br>\
 	để đẻ trứng.<br>\
-	G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim<br>\
-	sau tất cả!'
+	G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim sau tất cả!'
 },
 {
 en:'<b>Unit 5: Trees in the Forest</b><br>\
@@ -348,12 +327,9 @@ thẻ tín dụng.'
 {
 en: '<b>Unit 7: Cell Phone Messages</b> <br> \
 	W: I need to check my messages.<br>\
-	M: How are you going to do that? We are in the<br> \
-	middle of the freeway!<br>\
-	W: I’m going to use my cell phone. Haven’t you<br> \
-	ever done that?<br>\
-	M: No. I just use my cell phone to talk to other<br> \
-	people.<br>\
+	M: How are you going to do that? We are in the middle of the freeway!<br>\
+	W: I’m going to use my cell phone. Haven’t you ever done that?<br>\
+	M: No. I just use my cell phone to talk to other people.<br>\
 	W: Now you can also use a cell phone to send and<br> \
 	receive short text messages. It’s very useful.<br>\
 	M: How do you send a message that way?<br>\
@@ -362,35 +338,451 @@ en: '<b>Unit 7: Cell Phone Messages</b> <br> \
 	cheaper than making a phone call.<br>\
 	M: That’s a great idea! You can save both time and<br>\
 	money that way. <br>\
-	W: Right. All my friends usually send me text<br>\
-	messages now. <br>\
+	W: Right. All my friends usually send me text messages now. <br>\
 	M: Thanks for telling me about this. I’ll have to try<br>\
 	it!<br>\
 	W: You’re welcome. I think you’ll find it useful.',
  vi:
 '<b>Unit 7: Tin nhắn trên điện thoại di động </b> <br> \
 W: Tôi cần kiểm tra tin nhắn của mình.<br>\
-M: Bạn định làm thế nào? Chúng ta đang ở<br>\
-giữa đường cao tốc!<br>\
-W: Tôi sẽ sử dụng điện thoại di động của mình. Bạn chưa<br>\
-bao giờ làm thế sao?<br>\
-M: Không. Tôi chỉ sử dụng điện thoại di động của mình để nói chuyện với những<br>\
-người khác.<br>\
+M: Bạn định làm thế nào? Chúng ta đang ở giữa đường cao tốc!<br>\
+W: Tôi sẽ sử dụng điện thoại di động của mình. Bạn chưa bao giờ làm thế sao?<br>\
+M: Không. Tôi chỉ sử dụng điện thoại di động của mình để nói chuyện với những người khác.<br>\
 W: Bây giờ bạn cũng có thể sử dụng điện thoại di động để gửi và<br>\
 nhận tin nhắn văn bản ngắn. Rất hữu ích.<br>\
 M: Bạn gửi tin nhắn theo cách đó như thế nào?<br>\
 W: Tôi chỉ sử dụng các phím trên điện thoại để nhập một tin<br>\
 tin ngắn. Sau đó, tôi nhấn nút *gửi*. Rẻ hơn là gọi điện thoại.<br>\
-M: Đó là một ý tưởng tuyệt vời! Bạn có thể tiết kiệm cả thời gian và<br>\
-tiền bạc theo cách đó.<br>\
-W: Đúng vậy. Tất cả bạn bè của tôi hiện nay thường gửi tin nhắn văn bản<br>\
-cho tôi.<br>\
+M: Đó là một ý tưởng tuyệt vời! Bạn có thể tiết kiệm cả thời gian và tiền bạc theo cách đó.<br>\
+W: Đúng vậy. Tất cả bạn bè của tôi hiện nay thường gửi tin nhắn văn bản cho tôi.<br>\
 M: Cảm ơn bạn đã cho tôi biết về điều này. Tôi sẽ phải thử!<br>\
 W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích.'
 }
-
+,
+{
+en:'<b>Unit 8: Bubbles in Boiling Water</b><br>\
+G : Where do the bubbles come from when you<br>\
+boil water?<br>\
+Water is a liquid. When it is heated, it moves<br>\
+around faster and faster. When it starts to boil,<br>\
+the liquid turns into a gas. This gas is called<br>\
+water vapor. This gas is lighter than the water<br>\
+around it. It rises to the top. Then it disappears into the air.<br>\
+As the water gets hotter and hotter, it starts<br>\
+turning into gas very quickly. A lot of bubbles<br>\
+form at the same time. All these bubbles try to<br>\
+escape at once. The bubbles push the water out<br>\
+of the way and “jump” out. This is what we call “boiling water.”<br>\
+More and more water turns into gas. More<br>\
+of it disappears into the air. After a while, every<br>\
+drop of the water will be gone. Try it and see!'
+,
+vi:'<b>Unit 8: Bong bóng trong nước sôi</b><br>\
+G: Bong bóng xuất hiện từ đâu khi bạn<br>\
+đun sôi nước?<br>\
+Nước là chất lỏng. Khi được đun nóng, nó di chuyển<br>\
+xung quanh ngày càng nhanh hơn. Khi bắt đầu sôi,<br>\
+chất lỏng chuyển thành khí. Khí này được gọi là<br>\
+hơi nước. Khí này nhẹ hơn nước<br>\
+xung quanh nó. Nó nổi lên trên. Sau đó, nó biến mất<br>\
+vào không khí.<br>\
+Khi nước ngày càng nóng hơn, nó bắt đầu<br>\
+biến thành khí rất nhanh. Rất nhiều bong bóng<br>\
+hình thành cùng một lúc. Tất cả những bong bóng này đều cố gắng<br>\
+thoát ra cùng một lúc. Các bong bóng đẩy nước ra<br>\
+và "nhảy" ra ngoài. Đây là những gì chúng ta gọi là<br>\
+“nước sôi”.<br>\
+Càng ngày càng nhiều nước chuyển thành khí. Càng nhiều<br>\
+nước biến mất vào không khí. Sau một thời gian, từng<br>\
+giọt nước sẽ biến mất. Hãy thử và xem!'
+},
+{
+en:'<b>Unit 9 The Blue Sky</b><br>\
+B : Joe asked me something about science just now.<br>\
+But I didn’t know the answer.<br>\
+G : I’m good at science. Ask me.<br>\
+B : OK. Why is the sky blue?<br>\
+G : I’ll explain it in a simple way. Light comes<br>\
+through the air from the sun in waves.<br>\
+B : The light is in many colors, right?<br>\
+G : Right. Blue light waves are smaller than air<br>\
+molecules. They sometimes get absorbed by these molecules.<br>\
+B : OK. What happens then?<br>\
+G : Then the blue light waves scatter in many<br>\
+directions. Your eyes see this blue light from<br>\
+above you, after it leaves the air molecules.<br>\
+B : So that is what makes the sky blue! What<br>\
+happens to the other colors?<br>\
+G : They reflect off the things that they hit. Your<br>\
+shirt is red because our eyes see the red light<br>\
+reflected from it.<br>\
+B : Now I understand why the sky is blue!'
+,
+vi: '<b>Unit 9: Bầu trời xanh</b><br>\
+B: Joe vừa hỏi mình một điều về khoa học.<br>\
+Nhưng mình không biết câu trả lời.<br>\
+G: Mình giỏi khoa học. Hỏi mình đi.<br>\
+B: Được. Tại sao bầu trời lại xanh?<br>\
+G: Mình sẽ giải thích một cách đơn giản. Ánh sáng đi<br>\
+qua không khí từ mặt trời theo từng đợt.<br>\
+B: Ánh sáng có nhiều màu, đúng không?<br>\
+G: Đúng. Sóng ánh sáng xanh nhỏ hơn các phân tử không khí. Đôi khi chúng bị hấp thụ bởi<br>\
+các phân tử này.<br>\
+B: Được. Vậy thì điều gì xảy ra?<br>\
+G: Sau đó, sóng ánh sáng xanh phân tán theo nhiều<br>\
+hướng. Mắt bạn nhìn thấy ánh sáng xanh này từ<br>\
+phía trên bạn, sau khi nó rời khỏi các phân tử không khí.<br>\
+B: Vậy đó là điều khiến bầu trời có màu xanh! Điều gì xảy ra với các màu khác?<br>\
+G: Chúng phản chiếu từ những thứ mà chúng chiếu vào.<br>\
+Áo sơ mi của bạn có màu đỏ vì mắt chúng ta nhìn thấy ánh sáng đỏ phản chiếu từ nó.<br>\
+B: Bây giờ mình hiểu tại sao bầu trời lại có màu xanh rồi!'
+},
+{
+en: '<b>Unit 10: A New Camera</b><br>\
+M: I just bought a digital camera!<br>\
+W: What is wrong with your old camera?<br>\
+M: Nothing. I bought this one because I want to<br>\
+store my pictures on my computer.<br>\
+W: I see.<br>\
+M: I can also delete pictures that are not very good.<br>\
+I don’t have to print them.<br>\
+W: I like to print all my photos. That’s why I like<br>\
+the old cameras.<br>\
+M: Oh, you can print digital photos, too. Many<br>\
+shops will print them for you.<br>\
+W: Really?<br>\
+M: Yes. You can even buy a good printer and do it<br>\
+from home.<br>\
+W: That seems easy! How do you store these digital<br>\
+pictures?<br>\
+M: You can store the pictures on your computer.<br>\
+But you might run out of space. I save all the<br>\
+pictures I like on compact discs. You can store<br>\
+more than seven hundred photos on one CD!<br>\
+W: Great! Maybe I should get a digital camera, too.',
+vi: '<b>Unit 10: Máy ảnh mới</b><br>\
+M: Tôi vừa mua một chiếc máy ảnh kỹ thuật số!<br>\
+W: Máy ảnh cũ của bạn có vấn đề gì vậy?<br>\
+M: Không có gì. Tôi mua chiếc này vì tôi muốn<br>\
+lưu trữ ảnh trên máy tính.<br>\
+W: Tôi hiểu rồi.<br>\
+M: Tôi cũng có thể xóa những bức ảnh không đẹp.<br>\
+Tôi không cần phải in chúng.<br>\
+W: Tôi thích in tất cả ảnh của mình. Đó là lý do tại sao tôi thích<br>\
+những chiếc máy ảnh cũ.<br>\
+M: Ồ, bạn cũng có thể in ảnh kỹ thuật số. Nhiều<br>\
+cửa hàng sẽ in ảnh cho bạn.<br>\
+W: Thật sao?<br>\
+M: Vâng. Bạn thậm chí có thể mua một chiếc máy in tốt và in ảnh<br>\
+tại nhà.<br>\
+W: Có vẻ dễ! Bạn lưu trữ những bức ảnh kỹ thuật số này như thế nào?<br>\
+M: Bạn có thể lưu trữ ảnh trên máy tính.<br>\
+Nhưng bạn có thể hết dung lượng. Tôi lưu tất cả<br>\
+những bức ảnh tôi thích trên đĩa CD. Bạn có thể lưu trữ<br>\
+hơn bảy trăm bức ảnh trên một đĩa CD!<br>\
+W: Tuyệt! Có lẽ tôi cũng nên mua một chiếc máy ảnh kỹ thuật số.'
+}
+,
+{
+en:'<b>Unit 11 Gold</b><br>\
+M: Gold has been a part of many cultures for<br>\
+hundreds of years. People made coins and jewelry<br>\
+with gold.<br>\
+Gold is a soft metal. It is easy to shape into<br>\
+sheets, long wires, or rings. People sometimes<br>\
+mix gold with other metals. This makes the gold<br>\
+harder. Then it can be made into beautiful jewelry.<br>\
+Why do we value gold so much? It has a<br>\
+special color. No other metal is a bright yellow.<br>\
+We also value gold because it is rare. A rare<br>\
+thing is hard to find. Even after hundreds of<br>\
+years, gold is still a precious metal now. It is still<br>\
+valued for its beauty. It is still rare.<br>\
+Today, banks store gold in the form of bars.<br>\
+Its value is more than $600 per ounce. Gold is<br>\
+more useful now than ever before.'
+,vi:'<b>Unit 11: Vàng</b><br>\
+M: Vàng đã là một phần của nhiều nền văn hóa trong<br>\
+hàng trăm năm. Người ta làm tiền xu và đồ trang sức<br>\
+bằng vàng.<br>\
+Vàng là một kim loại mềm. Dễ dàng tạo hình thành<br>\
+tấm, sợi dài hoặc nhẫn. Đôi khi, người ta<br>\
+trộn vàng với các kim loại khác. Điều này làm cho vàng<br>\
+cứng hơn. Sau đó, vàng có thể được chế tác thành đồ trang sức đẹp.<br>\
+Tại sao chúng ta lại coi trọng vàng như vậy? Vàng có<br>\
+một màu đặc biệt. Không có kim loại nào khác có màu vàng tươi.<br>\
+Chúng ta cũng coi trọng vàng vì vàng rất hiếm. Một thứ<br>\
+hiếm rất khó tìm. Ngay cả sau hàng trăm<br>\
+năm, vàng vẫn là một kim loại quý. Nó vẫn<br>\
+được coi trọng vì vẻ đẹp của nó. Nó vẫn rất hiếm.<br>\
+Ngày nay, các ngân hàng lưu trữ vàng dưới dạng thỏi.<br>\
+Giá trị của nó là hơn 600 đô la một ounce. Vàng<br>\
+hiện hữu ích hơn bao giờ hết.'
+},
+{
+	en:'<b>Unit 12 The Summer Music Festival</b><br>\
+W: Have you heard about the music festival next<br>\
+summer? I read that it is going to have about 20<br>\
+different bands playing in it.<br>\
+M: I think I did hear someone talking about it. Are<br>\
+you planning on going?<br>\
+W: I’ll go if I can get tickets. I heard that people are<br>\
+going to line up overnight to get tickets. I might<br>\
+line up overnight, too.<br>\
+M: I don’t think I want to line up all night long!<br>\
+W: Well, I’m going to do it. I think it is going to be<br>\
+a great music festival that I won’t want to miss.<br>\
+M: Maybe. Do you know how much the tickets are<br>\
+going to cost?<br>\
+W: I’m not sure, but I think each ticket will be<br>\
+about $75.<br>\
+M: That’s a lot of money! I don’t think I want to<br>\
+spend that much on a ticket. Good luck, anyway!',
+vi: 'Bài 12 Lễ hội âm nhạc mùa hè<br>\
+W: Bạn đã nghe về lễ hội âm nhạc vào<br>\
+mùa hè năm sau chưa? Tôi đọc rằng sẽ có khoảng 20<br>\
+ban nhạc khác nhau chơi nhạc ở đó.<br>\
+M: Tôi nghĩ là tôi đã nghe ai đó nói về nó.<br>\
+Bạn có định đi không?<br>\
+W: Tôi sẽ đi nếu tôi có thể mua được vé. Tôi nghe nói rằng mọi người<br>\
+sẽ xếp hàng qua đêm để mua vé. Tôi cũng có thể<br>\
+xếp hàng qua đêm.<br>\
+M: Tôi không nghĩ là tôi muốn xếp hàng suốt đêm!<br>\
+W: Vâng, tôi sẽ làm vậy. Tôi nghĩ đó sẽ là<br>\
+một lễ hội âm nhạc tuyệt vời mà tôi không muốn bỏ lỡ.<br>\
+M: Có thể. Bạn có biết giá vé<br>\
+sẽ là bao nhiêu không?<br>\
+W: Tôi không chắc, nhưng tôi nghĩ mỗi vé sẽ<br>\
+khoảng 75 đô la.<br>\
+M: Nhiều tiền quá! Tôi không nghĩ là mình muốn<br>\
+chi nhiều tiền như vậy cho một tấm vé. Dù sao thì chúc may mắn!'
+},
+{
+	en:'Unit 13 The School Play<br>\
+B : Are you going to the school play on Saturday night?<br>\
+G : The school play? I didn’t know there was going to be a play on Saturday night.<br>\
+B : Yes, I heard about it in English class yesterday. I<br>\
+think it will be really good.<br>\
+G : Who told you about it?<br>\
+B : Ms. Martin, our English teacher, told us all<br>\
+about it. This is the drama club’s first play of the year.<br>\
+G : What is the play about? I hope it’s nothing boring.<br>\
+B : Can you guess what it is?<br>\
+G : Oh, come on, tell me please!<br>\
+B : It’s The Sound of Music.<br>\
+G : Really? I watched The Sound of Music on TV<br>\
+last month! It’s very good! Are you sure?<br>\
+B : Of course I’m sure, that’s what Ms. Martin said.<br>\
+Would you like to watch the play with me on Saturday night?<br>\
+G : That would be great! Let’s go early so we get<br>\
+good seats!'
+, vi:'Bài 13 Vở kịch của trường<br>\
+B: Bạn có đi xem vở kịch của trường vào tối thứ Bảy không?<br>\
+G: Vở kịch của trường à? Tôi không biết là sẽ có<br>\
+vở kịch vào tối thứ Bảy.<br>\
+B: Vâng, tôi đã nghe về vở kịch đó trong lớp tiếng Anh hôm qua. Tôi<br>\
+nghĩ là nó sẽ rất hay.<br>\
+G: Ai đã kể cho bạn nghe về nó?<br>\
+B: Cô Martin, giáo viên tiếng Anh của chúng tôi, đã kể cho chúng tôi nghe tất cả<br>\
+về nó. Đây là vở kịch đầu tiên của câu lạc bộ kịch trong năm.<br>\
+G: Vở kịch nói về điều gì? Tôi hy vọng là không có gì nhàm chán.<br>\
+B: Bạn có đoán được đó là vở kịch gì không?<br>\
+G: Ồ, nào, nói cho tôi biết đi!<br>\
+B: Đó là The Sound of Music.<br>\
+G: Thật sao? Tôi đã xem The Sound of Music trên TV<br>\
+tháng trước! Nó rất hay! Bạn có chắc không?<br>\
+B: Tất nhiên là tôi chắc rồi, đó là những gì cô Martin nói.<br>\
+Bạn có muốn xem vở kịch đó với tôi vào tối thứ Bảy không?<br>\
+G: Thật tuyệt! Chúng ta hãy đi sớm để có được chỗ ngồi tốt!'
+},
+{
+	en:'Unit 14 Ballet Class<br>\
+W: Hi Cindy, where are you going?<br>\
+G : Good afternoon, Mrs. White, I’m going to ballet class.<br>\
+W: Ballet class? I didn’t know you were studying<br>\
+ballet. How long have you been studying ballet?<br>\
+G : Today is my first day, and I don’t want to go.<br>\
+My mom and dad want me to learn ballet. I’m<br>\
+not sure I want to learn how to dance.<br>\
+W: I used to learn ballet too, when I was your age.<br>\
+Now I teach ballet in a dance school.<br>\
+G : Oh, I didn’t know that! Where do you teach your classes?<br>\
+W: Down the street at Easy Steps Dance Academy.<br>\
+Ballet is fun to learn, and it’s a very graceful<br>\
+dance. You’ll need to learn the steps and practice<br>\
+a lot of course, but I think you’ll enjoy it.<br>\
+G : I hope so!<br>\
+W: Well, go and have some fun dancing!', vi:'Unit 14 Lớp học múa ba lê<br>\
+W: Chào Cindy, bạn đi đâu vậy?<br>\
+G: Chào buổi chiều, cô White, tôi sẽ học múa ba lê<br>\
+lớp.<br>\
+W: Lớp học múa ba lê à? Tôi không biết là bạn đang học<br>\
+ba lê. Bạn đã học múa ba lê bao lâu rồi?<br>\
+G: Hôm nay là ngày đầu tiên của tôi, và tôi không muốn đi.<br>\
+Bố mẹ tôi muốn tôi học múa ba lê. Tôi<br>\
+không chắc mình có muốn học nhảy không.<br>\
+W: Tôi cũng từng học múa ba lê, khi tôi bằng tuổi bạn.<br>\
+Bây giờ tôi dạy múa ba lê ở một trường dạy múa.<br>\
+G: Ồ, tôi không biết điều đó! Bạn dạy<br>\
+lớp học của bạn ở đâu?<br>\
+W: Học tại Học viện khiêu vũ Easy Steps ở cuối phố.<br>\
+Múa ba lê rất thú vị và là một điệu nhảy rất duyên dáng. Tất nhiên, bạn sẽ cần phải học các bước nhảy và luyện tập<br>\
+rất nhiều, nhưng tôi nghĩ bạn sẽ thích nó.<br>\
+G: Tôi hy vọng là vậy!<br>\
+W: Thôi, hãy đi và vui vẻ khiêu vũ nhé!'
+},
+{
+	en:'Unit 15 Monet’s Garden<br>\
+W: Claude Monet was a great artist. He was the<br>\
+first of a group of artists called the<br>\
+Impressionists. This group of artists thought<br>\
+about how things in the world made them feel.<br>\
+They tried to show this in their work. This way<br>\
+of painting shows how light can change shapes<br>\
+and colors.<br>\
+Monet did a lot of his work outdoors. He<br>\
+wanted to show how daylight made things look.<br>\
+Many of his paintings are of gardens. He liked<br>\
+to paint flowers and trees. He loved to paint in<br>\
+his own garden. His garden was in a village. He<br>\
+lived there for many years.<br>\
+Today, many visitors come each year to this<br>\
+garden. They come from all over the world.<br>\
+Most of them are art lovers or artists. They<br>\
+come to see the place that Monet loved so much.'
+,  vi: 'Bài 15 Khu vườn của Monet<br>\
+W: Claude Monet là một nghệ sĩ vĩ đại. Ông là<br>\
+người đầu tiên trong nhóm nghệ sĩ được gọi là<br>\
+Trường phái Ấn tượng. Nhóm nghệ sĩ này nghĩ<br>\
+về cách mọi thứ trên thế giới khiến họ cảm thấy.<br>\
+Họ đã cố gắng thể hiện điều này trong tác phẩm của mình. Cách<br>\
+tranh này cho thấy ánh sáng có thể thay đổi hình dạng<br>\
+và màu sắc như thế nào.<br>\
+Monet đã thực hiện nhiều tác phẩm của mình ngoài trời. Ông<br>\
+muốn thể hiện cách ánh sáng ban ngày làm cho mọi thứ trông như thế nào.<br>\
+Nhiều bức tranh của ông là về khu vườn. Ông thích<br>\
+vẽ hoa và cây cối. Ông thích vẽ trong<br>\
+khu vườn của riêng mình. Khu vườn của ông nằm trong một ngôi làng. Ông<br>\
+đã sống ở đó nhiều năm.<br>\
+Ngày nay, nhiều du khách đến thăm khu vườn này mỗi năm. Họ đến từ khắp nơi trên thế giới.<br>\
+Hầu hết họ là những người yêu nghệ thuật hoặc nghệ sĩ. Họ<br>\
+đến để xem nơi mà Monet yêu thích đến vậy.'
+}
+,
+{
+en:'Unit 16 A Haunted House<br>\
+G : Oh no, it’s raining! I wanted to go to the beach<br>\
+today.<br>\
+B : Well, I’m visiting a haunted house this afternoon.<br>\
+You can come with me if you like.<br>\
+G : A haunted house? What is it like?<br>\
+B : It’s really dark, with lots of old furniture and<br>\
+pictures on the walls. It’s called a haunted house<br>\
+because it’s full of ghosts!<br>\
+G : You’re joking, right? I don’t believe in ghosts!<br>\
+Where is the haunted house?<br>\
+B : The house is in the old forest.<br>\
+G : Oh! Are you really sure you want to go?<br>\
+B : What’s wrong? I thought you didn’t believe in ghosts!<br>\
+G : Well, I don’t really believe in ghosts, but . . .<br>\
+B : That’s OK, I don’t believe in ghosts, either! I was<br>\
+only joking. The old house isn’t really haunted;<br>\
+it’s just a very old, empty house.<br>\
+G : Whew, I’m glad to hear that! Sure, I’ll come<br>\
+with you!', 
+vi:'Unit 16 Ngôi nhà ma ám<br>\
+G: Ôi không, trời mưa! Mình muốn đi biển hôm nay.<br>\
+B: À, chiều nay mình sẽ đến thăm một ngôi nhà ma.<br>\
+Bạn có thể đi cùng mình nếu bạn thích.<br>\
+G: Một ngôi nhà ma á? Nó như thế nào?<br>\
+B: Nó thực sự tối, với rất nhiều đồ nội thất cũ và<br>\
+hình ảnh trên tường. Nó được gọi là ngôi nhà ma ám vì nó đầy ma!<br>\
+G: Bạn đang đùa phải không? Mình không tin vào ma!<br>\
+Ngôi nhà ma ám ở đâu?<br>\
+B: Ngôi nhà nằm trong khu rừng già.<br>\
+G: Ồ! Bạn thực sự chắc chắn muốn đi sao?<br>\
+B: Có chuyện gì vậy? Tôi nghĩ là anh không tin vào<br>\
+ma!<br>\
+G: Ờ, tôi không thực sự tin vào ma, nhưng...<br>\
+B: Không sao đâu, tôi cũng không tin vào ma! Tôi chỉ đùa thôi. Ngôi nhà cũ không thực sự bị ma ám;<br>\
+nó chỉ là một ngôi nhà rất cũ và trống rỗng.<br>\
+G: Chà, tôi mừng khi nghe điều đó! Chắc chắn rồi, tôi sẽ đi cùng anh!'
+}
+,
+{
+en:'Unit 17 A Big Screen TV<br>\
+M: I’m thinking about buying a big screen TV.<br>\
+W: Wow! I’ve seen those in the store. They cost a lot<br>\
+of money. Can you afford to buy one?<br>\
+M: They do cost a lot of money. But I really enjoy<br>\
+watching TV. I think it’s much more fun to<br>\
+watch TV shows on a big screen.<br>\
+W: I’ve never watched TV on a big screen. Do you<br>\
+think the quality of the picture is good?<br>\
+M: Yes, the quality is great. When you watch soccer<br>\
+games, you feel like you are right there on the field!<br>\
+W: When you buy the TV, can I come over to your<br>\
+house? Then, I can enjoy watching TV on the big screen with you!<br>\
+M: I have to save some money to buy the TV first.<br>\
+It will be a few months before I can afford to buy it!', 
+vi:'Bài 17 Một chiếc TV màn hình lớn<br>\
+M: Tôi đang nghĩ đến việc mua một chiếc TV màn hình lớn.<br>\
+W: Wow! Tôi đã thấy những chiếc đó trong cửa hàng. Chúng đắt lắm. Bạn có đủ khả năng mua một chiếc không?<br>\
+M: Chúng đắt lắm. Nhưng tôi thực sự thích xem TV. Tôi nghĩ rằng xem các chương trình truyền hình trên màn hình lớn thú vị hơn nhiều.<br>\
+W: Tôi chưa bao giờ xem TV trên màn hình lớn. Bạn có nghĩ rằng chất lượng hình ảnh tốt không?<br>\
+M: Vâng, chất lượng tuyệt vời. Khi bạn xem các trận đấu bóng đá, bạn cảm thấy như mình đang ở ngay trên sân bóng!<br>\
+W: Khi bạn mua chiếc TV, tôi có thể đến nhà bạn không? Sau đó, tôi có thể thưởng thức việc xem TV trên màn hình lớn cùng bạn!<br>\
+M: Trước tiên, tôi phải tiết kiệm một ít tiền để mua TV.<br>\
+Phải mất vài tháng nữa tôi mới đủ tiền mua nó!'
+}
+,{
+	en:'Unit 18 He’s Famous!<br>\
+B : Are you going to the new Tim Cross movie tonight?<br>\
+G : I don’t know. It looks kind of boring.<br>\
+B : Really? I think it looks quite interesting. Besides, Tim Cross is a famous actor.<br>\
+G : He may be famous, but I don’t think he’s a very good actor. He always acts in the same sort of movie. He never does anything different.<br>\
+B : Well, at least you think he’s good looking, right?<br>\
+G : No, not really. He always looks so sleepy.<br>\
+B : But most girls think he’s handsome. Maybe<br>\
+that’s why he is so famous.<br>\
+G : None of my friends think he is good looking at<br>\
+all. I used to like him a few years ago, but now<br>\
+I think he’s not handsome at all.<br>\
+B : Hey! I just got a haircut to try to look more like him!<br>\
+G : Well, that explains why I don’t like your new haircut!',
+vi:'Bài 18 Anh ấy nổi tiếng!<br>\
+B: Tối nay bạn có đi xem phim mới của Tim Cross không?<br>\
+G: Tôi không biết. Có vẻ hơi chán.<br>\
+B: Thật sao? Tôi nghĩ trông khá thú vị. Hơn nữa, Tim Cross là một diễn viên nổi tiếng.<br>\
+G: Anh ấy có thể nổi tiếng, nhưng tôi không nghĩ anh ấy là một diễn viên giỏi. Anh ấy luôn đóng cùng một loại phim. Anh ấy không bao giờ làm điều gì khác biệt.<br>\
+B: À, ít nhất thì bạn nghĩ anh ấy đẹp trai, đúng không?<br>\
+G: Không, không hẳn vậy. Anh ấy lúc nào cũng trông buồn ngủ.<br>\
+B: Nhưng hầu hết các cô gái đều nghĩ anh ấy đẹp trai. Có lẽ đó là lý do tại sao anh ấy nổi tiếng như vậy.<br>\
+G: Không ai trong số bạn bè tôi nghĩ anh ấy đẹp trai cả. Tôi từng thích anh ấy cách đây vài năm, nhưng giờ thì<br>\
+Tôi nghĩ anh ấy chẳng đẹp trai chút nào.<br>\
+B: Này! Tôi vừa cắt tóc để trông giống anh ấy hơn!<br>\
+G: Vâng, điều đó giải thích tại sao tôi không thích kiểu tóc mới của anh!'
+}
 	   ];
 
+	$scope.range = function(min, max, step) {
+	    step = step || 1;
+	    var input = [];
+	    for (var i = min; i <= max; i += step) {
+	        input.push(i);
+	    }
+	    return input;
+	};
+
+     $scope.storyIdx = 0;
+     $scope.bPlayingSentence = false;
+
+     $scope.bPlayingFull = false;
+     $scope.bPause = false;
+     $scope.bEngToVi = 0;
+     $scope.audio;
+     $scope.currentTime = 0;
+     $scope.isAudioLoop = false;
 
     $scope.story = $scope.stories[$scope.storyIdx];
 

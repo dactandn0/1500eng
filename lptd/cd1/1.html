@@ -22,7 +22,10 @@
     <h4 class="mb-4">Listening Practice Through Dictation CD1</h4>
     	<a href="../../index.html" class="mt-2"><< 3000 Words</a>
     	<div class="my-3">
-		    <a ng-repeat="n in range(1,40)" ng-click="fetchStory(n);"  href=""> {{n}} &nbsp|</a>
+		    <div ng-repeat="u in units"> {{u.title}}
+		    	 <a ng-repeat="n in range(u.num, u.num + 5)" ng-click="fetchStory(n);"  href=""> {{n}} &nbsp|
+		    	</a>
+		    </div>
 		    <br> <label> <input class="my-3" type="checkbox" ng-click="isAudioLoop=!isAudioLoop">&nbspAudio loop</label>
 
 		 </div>
@@ -61,7 +64,7 @@
     $scope.stories = [
 {
 	en: 
-	'<b>Unit 1: A Picnic by the River </b><br>\
+	'Unit 1 A Picnic by the River<br>\
 	W: This is a good spot. Let’s stop and have our picnic next to the river. <br>\
 	M: Good idea. Walking always makes me hungry. I’m ready for lunch.<br>\
 	W: We can sit here on the grass. Oh no! Someone forgot to throw these empty paper bags away. There is litter everywhere!<br>\
@@ -72,7 +75,7 @@
 	M: OK! And next week, let’s come back with friends and pick up some more.<br>\
 	W: Good idea!',
 	vi: 
-	'<b>Unit 1: Dã ngoại bên bờ sông</b><br>\
+	'Bài 1 Dã ngoại bên bờ sông<br>\
 	W: Đây là một địa điểm tốt. Chúng ta hãy dừng lại và dã ngoại bên bờ sông.<br>\
 	M: Ý tưởng hay. Đi bộ luôn khiến tôi đói. Tôi đã sẵn sàng cho bữa trưa.<br>\
 	W: Chúng ta có thể ngồi đây trên bãi cỏ. Ôi không! Có người quên vứt những chiếc túi giấy rỗng này đi. Rác ở khắp mọi nơi!<br>\
@@ -87,7 +90,7 @@
 },
 {
 	en: 
-	'<b>Unit 2: Let’s Recycle!</b><br>\
+	'Unit 2 Let’s Recycle!<br>\
 	M: Hi, Jane! Have you heard about the new laws to help people recycle?<br>\
 	W: I heard about them on the news last night. I don’t think I like them.<br>\
 	M: The government wants to keep the environment clean by recycling paper, metal, and glass instead of throwing these things away. <br>\
@@ -98,7 +101,7 @@
 	W: That’s fair. Well, maybe the government is right, after all. I’ll return all the paper coffee cups I use from now on.<br>\
 	M: Good! We all need to recycle. It helps to keep the environment clean<br>',
 	vi: 
-	'<b>Unit 2: Hãy tái chế!</b><br>\
+	'Bài 2 Hãy tái chế!<br>\
 	M: Chào Jane! Bạn đã nghe về luật mới để giúp mọi người tái chế chưa?<br>\
 	W: Tôi nghe về chúng trên bản tin tối qua. Tôi không nghĩ là tôi thích chúng.<br>\
 	M: Chính phủ muốn giữ cho môi trường sạch sẽ bằng cách tái chế giấy, kim loại và thủy tinh thay vì vứt những thứ này đi.<br>\
@@ -113,7 +116,7 @@
 },
 {
 	en:
-	'<b>Unit 3: Growing Roses</b><br>\
+	'Unit 3 Growing Roses<br>\
 	M: Excuse me, ma’am. I have a problem with my rose bush. It used to produce a lot of pink roses. But now it doesn’t produce any flowers at all.<br>\
 	W: I see. That does seem like a problem. Do the leaves on the plant look healthy? <br>\
 	M: Not really. The leaves used to be very green. Now, most of them have turned brown.<br>\
@@ -126,7 +129,7 @@
 	W: You’re welcome!',
 
 	vi:
-	'<b>Unit 3: Trồng hoa hồng</b><br>\
+	'Bài 3 Trồng hoa hồng<br>\
 	M: Xin lỗi, thưa bà. Tôi có vấn đề với cây hoa hồng của tôi. Trước đây nó từng ra rất nhiều hoa hồng màu hồng. Nhưng bây giờ nó không ra hoa nữa.<br>\
 	W: Tôi hiểu rồi. Có vẻ như đó là vấn đề. Lá trên cây có khỏe không?<br>\
 	M: Không hẳn. Lá trước đây rất xanh. Bây giờ, hầu hết đã chuyển sang màu nâu.<br>\
@@ -140,7 +143,7 @@
 voca: ''
 },
 {
-	en: '<b>Unit 4: Bird Watching</b><br>\
+	en: 'Unit 4 Bird Watching<br>\
 	B : I want to go bird watching tomorrow. Do you know a good area for birds?<br>\
 	G : There is a quiet park near here. There are always many beautiful birds there. <br>\
 	B : Will I be able to see different types of birds in this area?<br>\
@@ -152,7 +155,7 @@ voca: ''
 	B : That’s not true! Birds are very interesting. Some birds have colorful feathers. Some birds sing beautiful songs. Some birds make special nests to lay eggs in.<br>\
 	G : Really? Maybe I will go bird watching one day after all!',
 	vi:
-	'<b>Unit 4: Ngắm chim</b><br>\
+	'Bài 4 Ngắm chim<br>\
 	B: Ngày mai tôi muốn đi ngắm chim. Bạn có biết khu vực nào thích hợp để ngắm chim không?<br>\
 	G: Có một công viên yên tĩnh gần đây. Luôn có nhiều loài chim đẹp ở đó.<br>\
 	B: Tôi có thể nhìn thấy nhiều loài chim khác nhau ở khu vực này không?<br>\
@@ -165,11 +168,11 @@ voca: ''
 	G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim sau tất cả!'
 },
 {
-en:'<b>Unit 5: Trees in the Forest</b><br>\
+en:'Unit 5 Trees in the Forest<br>\
 	B : There are many forests in North America. There are many trees in these forests. Some of these trees are more than two hundred feet tall.<br>\
 	Some are over five hundred years old. Several kinds of trees grow in these forests. Fir, cedar, and pine are three. These trees grow in different areas. Some grow in forests. Some grow on the mountains. People who lived in this place long ago used these trees to make things out of wood. Many of these trees are now in special areas. These areas are called forest reserves or national parks. Some parks charge a small entrance fee. Visitors must pay the fee to enter the parks. Then they can walk among the beautiful old trees. They must take care not to damage the trees. We should all take care of forests.'
 ,
-vi:'<b>Unit 5: Cây trong rừng</b><br>\
+vi:'Bài 5 Cây trong rừng<br>\
 B: Có nhiều khu rừng ở Bắc Mỹ. Có nhiều cây trong những khu rừng này. Một số cây này cao hơn hai trăm feet.<br>\
 Một số cây đã hơn năm trăm năm tuổi. Có một số loại cây mọc trong những khu rừng này.<br>\
 Cây linh sam, cây tuyết tùng và cây thông là ba loại. Những loại cây này mọc ở<br>\
@@ -182,7 +185,7 @@ Sau đó, họ có thể đi bộ giữa những cây cổ thụ tuyệt đẹp.
 ,
 
 {
-en:'<b>Unit 6 An Easy Way to Shop</b><br> \
+en:'Unit 6 An Easy Way to Shop<br> \
 G : Hey, Steve. Look at my new MP3 player!<br> \
 B : Wow! It looks cool! Where did you buy it?<br>\
 G : I bought it online at an electronics website. <br>\
@@ -193,7 +196,7 @@ G : Yes, it is. It only takes about a week for your item to come. Of course, if 
 B : Do you pay for the item when it comes?<br>\
 G : No, you have to pay for it online with a credit card.',
 
-vi: '<b>Unit 6: Một cách mua sắm dễ dàng</b><br>\
+vi: 'Bài 6 Một cách mua sắm dễ dàng<br>\
 G: Này, Steve. Nhìn máy nghe nhạc MP3 mới của tôi này!<br>\
 B: Chà! Trông tuyệt quá! Bạn mua ở đâu thế?<br>\
 G: Tôi mua trực tuyến trên một trang web điện tử.<br>\
@@ -205,7 +208,7 @@ G: Không, bạn phải thanh toán trực tuyến bằng thẻ tín dụng.'
 }
 ,
 {
-en: '<b>Unit 7: Cell Phone Messages</b> <br> \
+en: 'Unit 7 Cell Phone Messages<br> \
 	W: I need to check my messages.<br>\
 	M: How are you going to do that? We are in the middle of the freeway!<br>\
 	W: I’m going to use my cell phone. Haven’t you ever done that?<br>\
@@ -218,7 +221,7 @@ en: '<b>Unit 7: Cell Phone Messages</b> <br> \
 	M: Thanks for telling me about this. I’ll have to try it!<br>\
 	W: You’re welcome. I think you’ll find it useful.',
  vi:
-'<b>Unit 7: Tin nhắn trên điện thoại di động </b> <br> \
+'Bài 7 Tin nhắn trên điện thoại di động<br> \
 W: Tôi cần kiểm tra tin nhắn của mình.<br>\
 M: Bạn định làm thế nào? Chúng ta đang ở giữa đường cao tốc!<br>\
 W: Tôi sẽ sử dụng điện thoại di động của mình. Bạn chưa bao giờ làm thế sao?<br>\
@@ -233,14 +236,14 @@ W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích.'
 }
 ,
 {
-en:'<b>Unit 8: Bubbles in Boiling Water</b><br>\
+en:'Unit 8 Bubbles in Boiling Water<br>\
 G : Where do the bubbles come from when you boil water? Water is a liquid. When it is heated, it moves around faster and faster. When it starts to boil, the liquid turns into a gas. This gas is called water vapor. This gas is lighter than the water around it. It rises to the top. Then it disappears into the air. turning into gas very quickly. A lot of bubbles form at the same time. All these bubbles try to escape at once. The bubbles push the water out of the way and “jump” out. This is what we call “boiling water.” More and more water turns into gas. More of it disappears into the air. After a while, every drop of the water will be gone. Try it and see!'
 ,
-vi:'<b>Unit 8: Bong bóng trong nước sôi</b><br>\
+vi:'Bài 8 Bong bóng trong nước sôi<br>\
 G: Bong bóng xuất hiện từ đâu khi bạn đun sôi nước? Nước là chất lỏng. Khi được đun nóng, nó di chuyển xung quanh ngày càng nhanh hơn. Khi bắt đầu sôi, chất lỏng chuyển thành khí. Khí này được gọi là hơi nước. Khí này nhẹ hơn nước xung quanh nó. Nó nổi lên trên. Sau đó, nó biến mất vào không khí. Khi nước ngày càng nóng hơn, nó bắt đầu biến thành khí rất nhanh. Rất nhiều bong bóng hình thành cùng một lúc. Tất cả những bong bóng này đều cố gắng thoát ra cùng một lúc. Các bong bóng đẩy nước ra và "nhảy" ra ngoài. Đây là những gì chúng ta gọi là “nước sôi”.Càng ngày càng nhiều nước chuyển thành khí. Càng nhiều nước biến mất vào không khí. Sau một thời gian, từng< giọt nước sẽ biến mất. Hãy thử và xem!'
 },
 {
-en:'<b>Unit 9 The Blue Sky</b><br>\
+en:'Unit 9 The Blue Sky<br>\
 B : Joe asked me something about science just now. But I didn’t know the answer.<br>\
 G : I’m good at science. Ask me.<br>\
 B : OK. Why is the sky blue?<br>\
@@ -253,7 +256,7 @@ B : So that is what makes the sky blue! What happens to the other colors?<br>\
 G : They reflect off the things that they hit. Your shirt is red because our eyes see the red light reflected from it.<br>\
 B : Now I understand why the sky is blue!'
 ,
-vi: '<b>Unit 9: Bầu trời xanh</b><br>\
+vi: 'Bài 9 Bầu trời xanh<br>\
 B: Joe vừa hỏi mình một điều về khoa học. Nhưng mình không biết câu trả lời.<br>\
 G: Mình giỏi khoa học. Hỏi mình đi.<br>\
 B: Được. Tại sao bầu trời lại xanh?<br>\
@@ -267,7 +270,7 @@ G: Chúng phản chiếu từ những thứ mà chúng chiếu vào. Áo sơ mi 
 B: Bây giờ mình hiểu tại sao bầu trời lại có màu xanh rồi!'
 },
 {
-en: '<b>Unit 10: A New Camera</b><br>\
+en: 'Unit 10 A New Camera<br>\
 M: I just bought a digital camera!<br>\
 W: What is wrong with your old camera?<br>\
 M: Nothing. I bought this one because I want to store my pictures on my computer.<br>\
@@ -280,7 +283,7 @@ M: Yes. You can even buy a good printer and do it from home.<br>\
 W: That seems easy! How do you store these digital pictures?<br>\
 M: You can store the pictures on your computer. But you might run out of space. I save all the pictures I like on compact discs. You can store more than seven hundred photos on one CD!<br>\
 W: Great! Maybe I should get a digital camera, too.',
-vi: '<b>Unit 10: Máy ảnh mới</b><br>\
+vi: 'Bài 10 Máy ảnh mới<br>\
 M: Tôi vừa mua một chiếc máy ảnh kỹ thuật số!<br>\
 W: Máy ảnh cũ của bạn có vấn đề gì vậy?<br>\
 M: Không có gì. Tôi mua chiếc này vì tôi muốn lưu trữ ảnh trên máy tính.<br>\
@@ -292,19 +295,19 @@ W: Thật sao?<br>\
 M: Vâng. Bạn thậm chí có thể mua một chiếc máy in tốt và in ảnh tại nhà.<br>\
 W: Có vẻ dễ! Bạn lưu trữ những bức ảnh kỹ thuật số này như thế nào?<br>\
 M: Bạn có thể lưu trữ ảnh trên máy tính. Nhưng bạn có thể hết dung lượng. Tôi lưu tất cả những bức ảnh tôi thích trên đĩa CD. Bạn có thể lưu trữ hơn bảy trăm bức ảnh trên một đĩa CD!<br>\
-W: Tuyệt! Có lẽ tôi cũng nên mua một chiếc máy ảnh kỹ thuật số.'
+W: Tuyệt! Có lẽ tBàiôi cũng nên mua một chiếc máy ảnh kỹ thuật số.'
 }
 ,
 {
-en:'<b>Unit 11 Gold</b><br>\
+en:'Unit 11 Gold<br>\
 M: Gold has been a part of many cultures for hundreds of years. People made coins and jewelry with gold. Gold is a soft metal. It is easy to shape into sheets, long wires, or rings. People sometimes mix gold with other metals. This makes the gold harder. Then it can be made into beautiful jewelry. Why do we value gold so much? It has a special color. No other metal is a bright yellow.<br> <br>We also value gold because it is rare. A rare thing is hard to find. Even after hundreds of years, gold is still a precious metal now. It is still valued for its beauty. It is still rare. Today, banks store gold in the form of bars.<br>\
 Its value is more than $600 per ounce. Gold is more useful now than ever before.'
-,vi:'<b>Unit 11: Vàng</b><br>\
+,vi:'Bài 11 Vàng<br>\
 M: Vàng đã là một phần của nhiều nền văn hóa trong hàng trăm năm. Người ta làm tiền xu và đồ trang sức bằng vàng. Vàng là một kim loại mềm. Dễ dàng tạo hình thành tấm, sợi dài hoặc nhẫn. Đôi khi, người ta trộn vàng với các kim loại khác. Điều này làm cho vàng cứng hơn. Sau đó, vàng có thể được chế tác thành đồ trang sức đẹp. Tại sao chúng ta lại coi trọng vàng như vậy? Vàng có một màu đặc biệt. Không có kim loại nào khác có màu vàng tươi.<br><br>\
 Chúng ta cũng coi trọng vàng vì vàng rất hiếm. Một thứ hiếm rất khó tìm. Ngay cả sau hàng trăm năm, vàng vẫn là một kim loại quý. Nó vẫn được coi trọng vì vẻ đẹp của nó. Nó vẫn rất hiếm. Ngày nay, các ngân hàng lưu trữ vàng dưới dạng thỏi. Giá trị của nó là hơn 600 đô la một ounce. Vàng hiện hữu ích hơn bao giờ hết.'
 },
 {
-	en:'<b>Unit 12 The Summer Music Festival</b><br>\
+	en:'Unit 12 The Summer Music Festival<br>\
 W: Have you heard about the music festival next summer? I read that it is going to have about 20 different bands playing in it.<br>\
 M: I think I did hear someone talking about it. Are you planning on going?<br>\
 W: I’ll go if I can get tickets. I heard that people are going to line up overnight to get tickets. I might line up overnight, too.<br>\
@@ -455,8 +458,81 @@ B: Nhưng hầu hết các cô gái đều nghĩ anh ấy đẹp trai. Có lẽ 
 G: Không ai trong số bạn bè tôi nghĩ anh ấy đẹp trai cả. Tôi từng thích anh ấy cách đây vài năm, nhưng giờ thì Tôi nghĩ anh ấy chẳng đẹp trai chút nào.<br>\
 B: Này! Tôi vừa cắt tóc để trông giống anh ấy hơn!<br>\
 G: Vâng, điều đó giải thích tại sao tôi không thích kiểu tóc mới của anh!'
+},
+{
+en:'Unit 19 A Housewarming Party<br>\
+W: Hi, Steve! Thanks for coming to my housewarming party.<br>\
+M: Hello, Sue! Thanks for inviting me to see your lovely new home. It’s beautiful!<br>\
+W: Thank you. I’m glad you like it.<br>\
+M: Did you decorate your house all by yourself?<br>\
+W: Yes, I did. I traveled around Europe last year. I got some beautiful furniture for my house there.<br>\
+M: Do you plan to go on a new trip this summer?<br>\
+W: Yes, I am planning to visit China.<br>\
+M: That’s great! How long will you be there?<br>\
+W: I will be there for a month.<br>\
+M: You can find some beautiful things in China for your new house. You should go shopping while you are there. <br>\
+W: Of course! It will be fun to go shopping there. By the way, please help yourself to the refreshments.<br>\
+M: Thanks. The food looks delicious!'
+, 
+vi:'Bài 19 Tiệc tân gia<br>\
+W: Xin chào, Steve! Cảm ơn vì đã đến dự tiệc tân gia của tôi.<br>\
+M: Xin chào, Sue! Cảm ơn vì đã mời tôi đến xem ngôi nhà mới đáng yêu của bạn. Đẹp quá!<br>\
+W: Cảm ơn bạn. Tôi rất vui vì bạn thích nó.<br>\
+M: Bạn tự trang trí nhà mình à?<br>\
+W: Vâng, tôi đã làm thế. Tôi đã đi du lịch vòng quanh châu Âu vào năm ngoái. Tôi đã mua một số đồ nội thất đẹp cho ngôi nhà của mình ở đó.<br>\
+M: Bạn có dự định đi du lịch mới vào mùa hè này không?<br>\
+W: Vâng, tôi đang có kế hoạch đến thăm Trung Quốc.<br>\
+M: Tuyệt quá! Bạn sẽ ở đó bao lâu?<br>\
+W: Tôi sẽ ở đó trong một tháng.<br>\
+M: Bạn có thể tìm thấy một số thứ đẹp đẽ ở Trung Quốc cho ngôi nhà mới của mình. Bạn nên đi mua sắm trong khi bạn ở đó.<br>\
+W: Tất nhiên rồi! Sẽ rất vui khi đi mua sắm ở đó. Nhân tiện, hãy tự phục vụ đồ giải khát nhé.<br>\
+M: Cảm ơn. Đồ ăn trông ngon quá!'
+},
+{
+en:'Unit 20 Making Music<br>\
+Do you like to listen to music? Music is made up of sound. People all over the world like music. People have liked it for hundreds of years.<br>\
+People who write music are called composers.<br>\
+Most of the time, a composer does not sing or play his own music. He writes it all down in the form of notes. Those who know how to read music can understand these notes. This is how people can sing the song or play it.<br>\
+Lots of people like to play music. Music can be played on instruments. There are many types of musical instruments. Some of these are the piano, the violin, and the drum. <br>\
+People can make music as a group. A choir is a group of people who sing. An orchestra is a group of people who play musical instruments'
+,
+vi:'Bài 20 Làm nhạc<br>\
+Bạn có thích nghe nhạc không? Âm nhạc được tạo thành từ âm thanh. Mọi người trên khắp thế giới đều thích âm nhạc. Mọi người đã thích nó trong hàng trăm năm.<br>\
+Những người viết nhạc được gọi là nhà soạn nhạc.<br>\
+Hầu hết thời gian, một nhà soạn nhạc không hát hoặc chơi nhạc của riêng mình. Họ viết tất cả xuống dưới dạng nốt nhạc. Những người biết cách đọc nhạc có thể hiểu những nốt nhạc này. Đây là cách mọi người có thể hát bài hát hoặc chơi nó.<br>\
+Rất nhiều người thích chơi nhạc. Âm nhạc có thể được chơi bằng nhạc cụ. Có nhiều loại nhạc cụ. Một số trong số đó là piano, violin và trống. <br>\
+Mọi người có thể tạo ra âm nhạc như một nhóm. Dàn hợp xướng là một nhóm người hát. Dàn nhạc là một nhóm người chơi nhạc cụ.'
+},
+{
+en:'Unit 21 Where Is Your Homework?<br>\
+G : Did you finish your homework for English class?<br>\
+B : Homework? There wasn’t any homework.<br>\
+G : We had to finish reading a book and then write a 200-word essay on it. <br>\
+B : I don’t think Ms. Jones gave us any homework. I always write what I have to do in my notebook. Did she really tell us to write an essay?<br>\
+G : Yes. Look, here’s my essay. See?<br>\
+B : Oh no! What am I going to do? We’ve only got 10 minutes before class starts.<br>\
+G : I don’t know. Maybe Ms. Jones will let you hand it in tomorrow.<br>\
+B : Hey, let me copy your essay. I’ll change a few words. Ms. Jones will never know.<br>\
+G : No, I’m sorry. That’s not the right thing to do. <br>\
+B : Oh, come on! I thought you were my friend.<br>\
+G : I am your friend. That’s why I’m not letting you copy my work!'
+,vi:'Bài 21 Bài tập về nhà của em đâu rồi?<br>\
+G: Em đã làm xong bài tập về nhà cho lớp tiếng Anh chưa?<br>\
+B: Bài tập về nhà? Không có bài tập về nhà nào cả.<br>\
+G: Chúng ta phải đọc xong một cuốn sách rồi viết một bài luận dài 200 từ về cuốn sách đó. <br>\
+B: Em không nghĩ là cô Jones giao bài tập về nhà cho chúng ta. Em luôn viết những gì mình phải làm vào vở. Cô ấy có thực sự bảo chúng ta viết bài luận không?<br>\
+G: Đúng rồi. Nhìn này, đây là bài luận của em. Thấy chưa?<br>\
+B: Ôi không! Em phải làm gì đây? Chúng ta chỉ còn 10 phút nữa là đến giờ học rồi.<br>\
+G: Em không biết nữa. Có lẽ cô Jones sẽ cho em nộp bài vào ngày mai.<br>\
+B: Này, để cô chép bài luận của em cho em. Cô sẽ thay đổi một vài từ. Cô Jones sẽ không bao giờ biết đâu.<br>\
+G: Không, cô xin lỗi. Làm vậy không đúng đâu. <br>\
+B: Ồ, thôi nào! Tôi nghĩ anh là bạn của tôi.<br>\
+G: Tôi là bạn của anh. Đó là lý do tại sao tôi không cho anh sao chép tác phẩm của tôi!'
 }
+
 	   ];
+
+
 
 	$scope.range = function(min, max, step) {
 	    step = step || 1;
@@ -467,23 +543,28 @@ G: Vâng, điều đó giải thích tại sao tôi không thích kiểu tóc m�
 	    return input;
 	};
 
-     $scope.storyIdx = 0;
-     $scope.bPlayingSentence = false;
+	 $scope.storyIdx = -1;
+	 $scope.bPlayingSentence = false;
 
-     $scope.bPlayingFull = false;
-     $scope.bPause = false;
-     $scope.bEngToVi = 0;
-     $scope.audio;
-     $scope.currentTime = 0;
-     $scope.isAudioLoop = false;
+	 $scope.bPlayingFull = false;
+	 $scope.bPause = false;
+	 $scope.bEngToVi = 0;
+	 $scope.audio;
+	 $scope.currentTime = 0;
+	 $scope.isAudioLoop = false;
 
-    $scope.story = $scope.stories[$scope.storyIdx];
+    
+	$scope.units = [
+		{'title':"Nature and the Environment", 'num': 1},
+		{'title':"Science and Technology", 'num':6},
+		{'title':"Art and Culture", 'num': 11},
+		{'title':"Leisure and Entertainment", 'num':16},
+		{'title':"School and Family", 'num':21},
+		{'title':"People and Work", 'num':26},
+		{'title':"Sports and Health", 'num':31},
+		{'title':"Travel and Transport", 'num':36},
+	];
 
-	$scope.fetchStory = function (index) {
-		$scope.stopSound();
-		$scope.storyIdx = index-1;
-		$scope.story = $scope.stories[index-1];
-	}	
 
 	$scope.backSound = function (sec) {
 		$scope.audio.currentTime = $scope.audio.currentTime + sec;
@@ -520,8 +601,6 @@ G: Vâng, điều đó giải thích tại sao tôi không thích kiểu tóc m�
 	  	}
 	}
 
-
-
 	$scope.pauseSound = function () {
 		if (!$scope.audio) return;
 		$scope.bPause = !$scope.bPause;
@@ -546,7 +625,20 @@ G: Vâng, điều đó giải thích tại sao tôi không thích kiểu tóc m�
 		 $scope.bPlayingSentence = false;
 	};
 
-	
+	$scope.fetchStory = function (index) {
+		$scope.stopSound();
+		$scope.storyIdx = index-1;
+		$scope.story = $scope.stories[index-1];
+
+		var titleEn = $scope.story.en.split('<br>')[0];
+		$scope.story.en = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b><br>');
+
+		var titleVi = $scope.story.vi.split('<br>')[0];
+		$scope.story.vi = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b><br>');
+	}	
+
+	$scope.fetchStory(1);
+
     });
 
 </script>

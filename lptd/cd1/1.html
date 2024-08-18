@@ -1,4 +1,4 @@
-<!-- (\w+)\s+(\w+)\s+(.+) -->
+<!-- (<br>\w+)<br>\s+(<br>\w+)<br>\s+(.+) -->
 <!-- {word: "$1", types: "$2", mean: "$3"}, -->
 
 <!DOCTYPE html>
@@ -19,27 +19,30 @@
 
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
-    <div ng-include="'../in1.html'"></div>
-    <h4 class="mb-4">Listening Practice Through Dictation</h4>
-    	<a href="../../index.html" class="mt-2">3000 Words</a>
-    	<button class="btn btn-sm btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'en->vi' : 'vi->en' }}</button>
-    	
+    <h4 class="mb-4">Listening Practice Through Dictation CD1</h4>
+    	<a href="../../index.html" class="mt-2"><< 3000 Words</a>
     	<div class="my-3">
-    		<button class="btn btn-sm btn-info" ng-if="storyIdx > 0" ng-click="fetchStory(-1)">Prev. Story</button>
-    		<button class="btn btn-sm btn-info" ng-if="storyIdx < (stories.length - 1)" ng-click="fetchStory(1)">Next Story</button>
-    		<button class="btn btn-sm btn-info mr-2" ng-click="playFullSound($index)">{{bPlayingFull ? (bPause ? 'Resume' : 'Pause') : 'Play'}}</button>
-	        <button class="btn btn-sm btn-info" ng-if="bPlayingFull" ng-click="stopSound()">Stop</button>
-    	</div>
+		    <a ng-repeat="n in range(1,40)" ng-click="fetchStory(n);"  href=""> {{n}} &nbsp|</a>
+		    <br> <label> <input class="my-3" type="checkbox" ng-click="isAudioLoop=!isAudioLoop">&nbspAudio loop</label>
+		 </div>
+
+    	<button class="btn btn-sm btn-info mr-4" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
+    	<button class="btn btn-sm btn-info mr-4" ng-click="pauseSound()" ng-if="bPlayingFull">{{bPause ? 'Resume' : 'Pause'}}</button>
+
+    	  <button class="btn btn-sm btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 0 ? 'en->vi' : 'vi->en' }}</button>
 
 		<div class="card mt-4">
 		    <div class="card-body">
 	          <div class="card-text my-2">
-	          	<p ng-repeat="(index, sentence) in story.engs" ng-if="bEngToVi" ng-click="playSentence(index)">{{sentence}}</p>
-	          	<p ng-bind-html="story.vi" ng-if="!bEngToVi"></p>
-	          	<div class="mt-5"  ng-if="story.voca">
+	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bEngToVi" ng-click="playSentence(index)">{{sentence}}</p> -->
+	          	<p ng-bind-html="story.en" ng-if="!bEngToVi"></p>
+	          	<p ng-bind-html="story.vi" ng-if="bEngToVi"></p>
+	        <!--   	
+	        	<div class="mt-5"  ng-if="story.voca">
 	          		<hr/>
 	          		<p ng-bind-html="story.voca"></p>
 	          	</div>
+	          	 -->
 	          	
 	          </div> <!-- card-text -->
         	</div> 		<!-- card-body -->
@@ -51,75 +54,337 @@
     var app = angular.module("myApp", ['ngSanitize']);
     app.controller("ctrl", function($scope, $timeout) {
 
+    $scope.range = function(min, max, step) {
+	    step = step || 1;
+	    var input = [];
+	    for (var i = min; i <= max; i += step) {
+	        input.push(i);
+	    }
+	    return input;
+	};
+
      $scope.storyIdx = 0;
      $scope.bPlayingSentence = false;
-     $scope.bPlayingFull = false;
-     $scope.bPause = false;
-     $scope.bEngToVi = 1;
+     $scope.bPlayingFull = 0;
+     $scope.bPause = 0;
+     $scope.bEngToVi = 0;
      $scope.audio;
      $scope.currentTime = 0;
+     $scope.isAudioLoop = false;
 
     $scope.stories = [
 {
-	engs: 
-	[
-	"1.1 The Lion and the Rabbit",
-	"A ………….. lion lived in the forest. Every day, he killed and ate a …………..of animals. The other animals were …………..the lion would kill them all.",
-	"The animals told the lion, “ Let’s make a deal. If you …………..to eat only one animal each day, then one of us will come to you every day. Then you don’t have to …………..and kill us.”",
-	"The plan sounded well thought-out to the lion, so he ………….., but he also said, “If you don’t come every day, I …………..to kill all of you the next day!”",
-	"Each day after that, one animal went to the lion so that the lion could eat it. Then, all the other animals were …………...",
-	"………….., it was the rabbit’s turn to go to the lion. The rabbit went very slowly that day, so the lion was …………..when the rabbit ﬁnally …………...",
-	"The lion angrily asked the rabbit, “ Why are you late?”",
-	"“I was …………..from another lion in the forest. That lion said he was the king, so I was afraid.”",
-	"The lion told the rabbit, “ I am the only king here! Take me to that other lion, and I will kill him.",
-	"The rabbit ………….., “ I will be happy to show you where he lives.”",
-	"The rabbit led the lion to an old well in the ………….. of the forest. The well was very deep with water at the …………... The rabbit told the lion, “ Look in there. The lion lives at the bottom.”",
-	"When the lion looked in the well, he could see his own face in-the water. He thought that was the other lion.",
-	"Without waiting another ………….., the lion jumped into the well to …………..the other lion. He never came out.",
-	"All of the other animal in the forest-were very pleased with the rabbit’s clever trick."
-	],
+	en: 
+	'<b>Unit 1: A Picnic by the River </b><br>\
+	W: This is a good spot. Let’s stop and have our picnic <br>\
+	next to the river. <br>\
+	M: Good idea. Walking always makes me hungry.<br>\
+	I’m ready for lunch.<br>\
+	W: We can sit here on the grass. Oh no! Someone <br>\
+	forgot to throw these empty paper bags away.<br>\
+	There is litter everywhere!<br>\
+	M: Why do people always leave litter around? It’s<br>\
+	not a nice thing to do. It spoils other people’s<br>\
+	picnics.<br>\
+	W: I think they are lazy. Or maybe they just don’t<br>\
+	care. Look, there are some empty cans and glass<br>\
+	bottles under that tree, too. <br>\
+	M: People should clean up before they leave, and <br>\
+	not leave litter lying around. <br>\
+	W: That’s right. Well, after our picnic, let’s pick up<br>\
+	all the litter we can and take it out of here.<br>\
+	M: OK! And next week, let’s come back with<br>\
+	friends and pick up some more.<br>\
+	W: Good idea!',
 	vi: 
-	'1.1 SƯ TỬ VÀ THỎ<p></p>Một con Sư Tử <b>cruel</b> sống trong rừng. Hằng ngày, nó giết và ăn rất <b>lot</b> loài vật. Muông thú <b>afraid</b> rằng Sư Tử sẽ giết là ăn thịt tất cả loài vật trong khu rừng.<p></p> Chúng nói với Sư Tử rằng: "Chúng ta hãy thỏa thuận. Nếu ngày <b>promise</b> rằng mỗi ngày ngài chỉ ăn một con vật, thì hàng ngày một trong số chúng tôi sẽ tới đây nộp mạng. Ngài sẽ không phải <b>hunt</b> và giết chúng tôi nữa". <p></p> Sư Tử thấy thỏa thuận nghe rất <b>well</b> nên nó đã <b>agreed</b>, nhưng nó cũng nói rằng: "Nếu mỗi ngày không có một đứa tới nạp mạng, tao <b>promise</b> sẽ giết tất cả chúng mày vào ngày hôm sau!".<p></p> Cứ như vậy, mỗi ngày một con vật lại tới nộp mạng cho Sư Tử. Và như thế, tất cả muôn loài đề <b>safe</b>.<p></p> <b>Finally</b>, đến lượt Thỏ tới nộp mạng cho Sư Tử. Thỏ hôm đó tới rất muộn nên Sư Tử đã rất <b>angry</b> khi thỏ <b>arrived</b>.<p></p> Sư Tử tức giận hỏi Thỏ: "Tại sao mày lại tới muộn?"<p></p> "Tôi đã <b>hiding</b> khỏi một con Sư Tử khác trong rừng. Con Sư Tử đó là chúa sơn lâm, nên tôi rất sợ hãi".<p></p> "Tao là chúa sơn lâm duy nhất trong khu rừng này. Đưa tao tới gặp con Sư Tử đó, tao sẽ giết chết nó" - Sư Tử nói với Thỏ.<p></p> Thỏ <b>replied</b>: "Tôi rất vui mừng chỉ cho ngài nơi hắn sống".<p></p> Thỏ đưa Sư thử tới một chiếc giếng cũ ở <b>middle</b> khu rừng. Chiếc giếng sâu hun hút và có nước ở <b>bottom</b>. Thỏ nói với Sư Tử: "Ngài hãy nhìn vào trong này. Hắn sống ở dưới đáy kia kìa". Khi Sư Tử nhìn xuống đấy giếng, nó thấy chính khuôn mặt mình in trên mặt nước. Nó nghĩ đó là con Sư Tử kia. Không đợi một <b>moment</b> nào, Sư Tử nhảy xuống giếng để <b>attack</b> con Sư Tử kia. Nó không bao giờ có thể thoát ra được nữa.<p></p> Tất cả các loài vật trong rừng đều rất <b>pleased</b> với <b>clever trick</b> của Thỏ.',
+	'<b>Unit 1: Dã ngoại bên bờ sông</b><br>\
+	W: Đây là một địa điểm tốt. Chúng ta hãy dừng lại và dã ngoại<br>\
+	bên bờ sông.<br>\
+	M: Ý tưởng hay. Đi bộ luôn khiến tôi đói.<br>\
+	Tôi đã sẵn sàng cho bữa trưa.<br>\
+	W: Chúng ta có thể ngồi đây trên bãi cỏ. Ôi không! Có người<br>\
+	quên vứt những chiếc túi giấy rỗng này đi.<br>\
+	Rác ở khắp mọi nơi!<br>\
+	M: Tại sao mọi người luôn vứt rác khắp nơi?<br>\
+	Đó không phải là một điều tốt đẹp. Nó làm hỏng buổi dã ngoại<br>\
+	của người khác.<br>\
+	W: Tôi nghĩ họ lười biếng. Hoặc có thể họ chỉ<br>\
+	không quan tâm. Nhìn kìa, có một số lon rỗng và chai thủy tinh<br>\
+	dưới gốc cây đó nữa.<br>\
+	M: Mọi người nên dọn dẹp trước khi rời đi, và<br>\
+	không để rác nằm xung quanh.<br>\
+	W: Đúng vậy. Vâng, sau buổi dã ngoại của chúng ta, chúng ta hãy nhặt<br>\
+	hết rác có thể và mang chúng ra khỏi đây.<br>\
+	M: Được! Và tuần tới, chúng ta hãy quay lại với<br>\
+	bạn bè và nhặt thêm một số.<br>\
+	W: Ý tưởng hay!',
 	voca:
-	'Cruel (Tính từ): Hung Bạo<p></p>Lot (Phó từ): Nhiều<p></p>Afraid (Tính từ): Sợ Hãi<p></p>Promise (Động từ): Hứa<p></p>Hunt (Động từ): Săn bắt<p></p>Well (Trạng từ): Ổn, Tốt<p></p>Agree(Động từ): Đồng ý<p></p>Safe (Tính từ): An toàn<p></p>Finally (Phó từ): Cuối cùng<p></p>Angry (Tính từ): Bực tức, tức giận<p></p>Arrive (Động từ): Đến nơi<p></p>Hide (Động từ): Trốn<p></p>Reply (Động từ): Trả lời<p></p>Middle (Giới từ): Giữa<p></p>Bottom (Giới từ): Dưới đáy<p></p>Moment (Danh từ): Khoảnh khắc<p></p>Attack (Động từ): Tấn công<p></p>Pleased (Tính từ): Vui lòng<p></p>Clever (Tính từ): Thông minh<p></p>Trick (Danh từ): Mẹo'
+	''
 },
 {
-	engs: 
-	[
-	"1.2 THE LABORATORY",
-	"Mia's father had a ...................., but she had no idea what was in it. Her dad always closed and locked the door when he went in. She knew that he used it to do .................... for work. He never told Mia what the project where.",
-	"One night, Mia .................... the door to the laboratory. She stopped and thought, 'I wonder what crazy ..................... he is doing now.' Suddenly, she heard a ................... ................... It sounded like an .................. ..................The noise .................... her, so she walked quickly back to her room.",
-	"The next night, her friend Liz came to her house. When Liz arrived, Mia told about the night before. 'Oh, It was .....................', She said.",
-	"'Why don't we see what is in there?' Liz asked. 'It will be a fun ....................!' Mia felt ..................... about going into her father's laboratory, but she agreed. As always, the door was locked. The waited until Mia's father left the laboratory to eat dinner. 'He didn't lock the door!' Liz said. Let's go.",
-	"The laboratory was dark. The girls walked down the stairs .................... Mia .................... strange .................... What terrible thing was her father ....................?",
-	"Suddenly, they heard an evil laugh. It was even ....... than the one MIa heard the night before. What if a monster was going to .................... them? Mia had to do something. She.................... for help.",
-	"Mia's father ran into the room and turned on the lights. 'Oh, no', he said. 'You must have learned my ....................'",
-	"'Your monster tried to kill us', Mia said. 'Monster?' he asked. 'You mean this?' He had a pretty doll in his hands. The doll laughed. The laugh didn't sound so evil anymoe. 'I made this for your birthday. I wanted to give it to your then, but you can have it now. I hope you like it!'",
-	],
+	en: 
+	'<b>Unit 2: Let’s Recycle!</b><br>\
+	M: Hi, Jane! Have you heard about the new laws to<br>\
+	help people recycle?<br>\
+	W: I heard about them on the news last night. I<br>\
+	don’t think I like them.<br>\
+	M: The government wants to keep the environment<br>\
+	clean by recycling paper, metal, and glass<br>\
+	instead of throwing these things away. <br>\
+	W: But who wants to pay an extra 50 cents each<br>\
+	time you buy a cup of coffee? That’s a lot of<br>\
+	money!<br>\
+	M: 50 cents? It’s only five cents extra for a paper<br>\
+	cup. <br>\
+	W: I thought it was 50 cents! <br>\
+	M: No, it’s only five cents. Don’t worry. And you<br>\
+	can get your money back when you return the<br>\
+	cup. <br>\
+	W: That’s fair. Well, maybe the government is right,<br>\
+	after all. I’ll return all the paper coffee cups I use<br>\
+	from now on.<br>\
+	M: Good! We all need to recycle. It helps to keep<br>\
+	the environment clean<br>',
 	vi: 
-	'1.2 PHÒNG THÍ NGHIỆM<p></p> Ba của Mia có một cái <b>laboratory</b>, nhưng cô bé không hề biết có thứ gì ở trong đó. Ba luôn luôn đóng và khóa chửa khi ông vào trong phòng thì nghiệm. Cô bé biết ông dùng nó để làm <b>projects</b> cho công việc. Nhung ba chưa bao giờ nói cho Mia biết những dự án đó là gì.<p></p> Một đêm, Mia <b>approached</b> cửa phòng thí nghiệm. Cô bé dừng lại và nghĩ. "Mình tự hỏi rằng cha đang làm <b>experiment</b> điên cuồng gì bay giờ nhỉ". Bỗng nhiên, cô bé nghe thấy một <b>loud noise</b>. Âm thanh đó nghe như là <b>evil laugh</b>. Tiếng ồn đó làm cô bé <b>scared</b> nên Mia vội vã quay trở lại phòng mình.<p></p> Đêm hôm sau, Liz - bạn của Mia tới chơi. Khi Liz tới, Mia kể cho cô bé nghe về chuyển xảy ra vào tối hôm trước. "Ôi, điều đó thật <b>terrible</b>" - Liz thốt lên.<p></p> "Tại sao chúng mình không nhìn xem có gì trong đó?" - Liz hỏi. "Đấy sẽ là một <b>adventure</b> thú vị!".<p></p> Mia cảm thấy <b>nervous</b> về chuyện bước vào phòng thí nghiệm của bố, nhưng cuối cùng cô bé đã đồng ý với Liz. Như mọi lần, cánh cửa lại bị khóa. Liz và Mia đợi tới khi ba của Mia rời khỏi phòng thì nghiệm để ăn tối. "Ba cậu không khóa cửa kìa" - Liz nói. "Bọn mình đi thôi".<p></p> Phòng thí nghiệm tối om. Hai cô bé bước xuống cầu thang thật <b>carefully</b>. Mia <b>smelled</b> những <b>chemicals</b> rất lạ lẫm. Đó có phải là những thứ khủng khiếp mà ba đã từng <b>creating</b> không?<p></p> Bất chợt, hai cô bé nghe thấy tiếng cười rùng rợn. Thậm chí lần này âm thành còn <b>worse</b> hơn cả đêm hôm trước. Nếu như có một con quái vật nhảy ra và <b>kill</b> hai cô bé thì sao? Mia nghĩ mình phải làm gì đó. Cô bé <b>shouted</b> tìm kiếm sự giúp đỡ.<p></p> Ba của Mia chạy vào phòng và bật đèn lên. "Ôi, không" - ông nói. "Con hẳn đã biết <b>secret</b> của ba rồi".<p></p> "Con quái vật của ba đang cố giết tụi con" - Mia nói.<p></p> "Quái vật?" - ông hỏi. "Ý con là cái này phải không?". Ông cầm một con búp bê xinh xắn trên tay. Con búp bê cười. Tiếng cười không còn rùng rợn nữa. "Bố làm để tặng con ngày sinh nhật. Bố muốn tới ngày đó mới tặng cho con, nhưng con có thể nhận nó ngay bây giờ. Bố hi vọng là con thích nó. Mia".',
+	'<b>Unit 2: Hãy tái chế!</b><br>\
+	M: Chào Jane! Bạn đã nghe về luật mới để<br>\
+	giúp mọi người tái chế chưa?<br>\
+	W: Tôi nghe về chúng trên bản tin tối qua. Tôi<br>\
+	không nghĩ là tôi thích chúng.<br>\
+	M: Chính phủ muốn giữ cho môi trường<br>\
+	sạch sẽ bằng cách tái chế giấy, kim loại và thủy tinh<br>\
+	thay vì vứt những thứ này đi.<br>\
+	W: Nhưng ai muốn trả thêm 50 xu mỗi lần<br>\
+	mua một cốc cà phê? Thật là nhiều<br>\
+	tiền!<br>\
+	M: 50 xu? Chỉ mất thêm năm xu cho một cốc<br>\
+	giấy.<br>\
+	W: Tôi nghĩ là 50 xu!<br>\
+	M: Không, chỉ năm xu thôi. Đừng lo. Và bạn<br>\
+	có thể lấy lại tiền khi trả lại<br>\
+	cốc.<br>\
+	W: Công bằng mà. Vâng, có lẽ chính phủ đúng,<br>\
+	sau cùng. Tôi sẽ trả lại tất cả các cốc cà phê giấy mà tôi sử dụng<br>\
+	từ bây giờ.<br>\
+	M: Tốt! Tất cả chúng ta đều cần tái chế. Điều đó giúp giữ cho<br>\
+	môi trường sạch sẽ',
 	voca:
-	'Laboratory (Danh từ): Phòng thì nghiệm<p></p> Project (Danh từ): Dự án<p></p> Approach (Động từ): Đến gần	<p></p> Experiment (Danh Từ): Thí nghiệm<p></p> Loud (Tính từ): Ồn	<p></p> Noise (Danh từ): Tiếng<p></p> Evil (Tính từ): Ma quái	<p></p> Laugh (n,v): (Tiếng) cười<p></p> Scare (Động từ): Làm hoảng sợ	<p></p> Terrible (Tính từ): Tệ hại<p></p> Adventure (Danh từ): Chuyến phiêu lưu	<p></p> Nervous (Tính từ): Lo lắng<p></p> Carefully (Trạng từ): Một cách cẩn thận	<p></p> Smell (Động từ): Ngửi thấy<p></p> Chemical (Danh từ): Chất hóa học	<p></p> Worse (Tính từ so sánh): Tệ hơn<p></p> Shout (Động từ): Kêu gào	<p></p>'
+	''
 },
 {
-	engs:
-	[
-	"1.3 THE REPORT",
-"Lee sat ........... the books at the ........... and thougth about his group project.",
-"They had to turn it in soon, but he hadn't even started his part! Jack and Claire were in his group.",
-"They had worked hard. They were also very smart, and Lee didn't want them to get a bad ...........",
-"Jack did the ........... He wrote a lot of very good sentences and ........... things with great adjectives. Claire drew a nice map of the stars. Now, Lee needed to do his part of the project.",
-"'Well, I ........... I need to start my model'. Lee thought.",
-"Making a model of a ........... was really hard. Lee tried to read ........... books, but he couldn't ........... any of the ........... 'I wish I could see a planet, ........... of having to read about it!'",
-"..........., there was a bright light. Lee was pulled from his chair, though the roof, and right into a strage ship! 'Hello, kid', said an ........... 'Did you ask for help?'",
-"Lee told the ........... alien all about his project. The alien agreed to help Lee ........... his problem. 'First, we'll fly through space to ........... the ........... Then, I can help you make a model of my planet.'",
-"Soon, they were going through the ........... They passed the moon. Then they viewed Mars. Lee was very excited. Instead of a bad grade, his group would have the best project ...........!",
-"_'It's time to go home', _the alien finally said. On the way back, he helped Lee make a model of the planet Mars. Soon, they were on Earth.",
-"'Thanks', Lee said. 'My model will be awesome!' Then he took his model and said goodbye to his new friend.",
-],
+	en:
+	'<b>Unit 3: Growing Roses</b><br>\
+	M: Excuse me, ma’am. I have a problem with my<br>\
+	rose bush. It used to produce a lot of pink roses.<br>\
+	But now it doesn’t produce any flowers at all.<br>\
+	W: I see. That does seem like a problem. Do the<br>\
+	leaves on the plant look healthy? <br>\
+	M: Not really. The leaves used to be very green.<br>\
+	Now, most of them have turned brown.<br>\
+	W: Well, I think your rose bush needs some fertilizer.<br>\
+	M: OK. What sort of fertilizer do you think I should<br>\
+	use? <br>\
+	W: This liquid fertilizer is very good. It will help<br>\
+	make your rose leaves green again. Then the<br>\
+	plant should produce roses quite soon. The<br>\
+	fertilizer costs about ten dollars.<br>\
+	M: How long will it take for my rose bush to recover?<br>\
+	W: About two weeks, I think. <br>\
+	M: Great. I’ll take it. Thank you so much for your<br>\
+	help.<br>\
+	W: You’re welcome!',
 
-vi:'1.3 BẢN BÁO CÁO<p></p>Lee ngồi <b>among</b> những cuốn sách ở <b>library</b> và nghĩ về bài tập về nhà của cả nhóm.<p></p> Họ cần phải nộp bài sớm, nhưng Lee thậm chí còn chưa bắt đầu làm phần bài tập của cậu ấy! Jack và Claire cùng nhóm với Lee.<p></p> Họ đã làm bài tập rất chăm chỉ. Họ cũng là những người rất thông minh, Lee không muốn họ bị <b>grade</b> kém.<p></p><p></p>Jack làm <b>report</b>. Cậu đã viết rất nhiều câu từ hoa mỹ và <b>described</b> bản báo cáo với những tính từ rất tuyệt vời. Claire đã vẽ một bản đồ những ngôi sao rất đẹp. Giờ thì, Lee cần phải hoàn thành phần bài của cậu ấy.<p></p><p></p>"Ồ, mình <b>suppose</b> mình cần phải bắt đầu làm mẫu vật của mình thôi", Lee nghĩ.<p></p><p></p>Làm mẫu vật của một <b>planet</b> rất là khó. Lee cố gắng độc <b>several</b> quyển sách, nhưng cậu cũng không thể <b>comprehend</b> bất kỳ một cái <b>charts</b> nào. "Cả nhóm sẽ <b>fail</b> bời vì mình mất thôi" - Lee buồn bã nói. Cậu gục đầu xuống bàn và nói, "Ước gì mình có thể nhìn thấy một hành tinh thực sự, instead việc đọc về nó!".<p></p><p></p><b>Suddenly</b>, có một tia sáng chói lòa. Lee bị kéo ra khỏi ghế, băng qua nóc nhà, bay thằng vào trong một chiếc phi thuyền lạ! "Chào cậu bé", <b>Alien</b> nói. "Có phải cậu cầu giúp đỡ không?"<p></p><p></p>Lee nói với người ngoài hành tinh <b>friendly</b> kia về bài tập. Người ngoài hành tinh đồng ý giúp Lee <b>solve</b> vấn đề của cậu. "Đầu tiên, chúng ta sẽ bay qua không gian để <b>view the universe</b>. Sau đó, tôi sẽ giúp cậu làm mẫu vật hành tinh của tôi".<p></p><p></p>Lập tức, họ bay qua những <b>clounds</b>. Họ băng qua mặt trăng rồi họ nhìn thấy Sao Hỏa. Lee rất háo hức. Thay vì phải nhận điểm kém, nhóm của cậu sẽ có một bài tập về nhà hoàn hảo nhất <b>ever</b>!<p></p><p></p>"Đến giờ phải về rồi", người ngoài hành tinh nói. Trên đường về nhà, ông giúp Lee làm mẫu vật Sao Hỏa. Chẳng bao lâu họ đã về tới Trái Đất.<p></p><p></p>"Cảm ơn ông" - Lee nói. "Mẫu vật của cháu chắc chắn sẽ rất tuyệt cho coi". Sau đó cậu bé lấy mẫu vật và tạm biệt người bạn mới của mình.',
-voca: 'Among (Trạng từ): Ở giữa<p></p>Library (Danh từ): Thư viện<p></p>Grade (Danh từ): Thứ hạng<p></p>Report (Danh từ): Báo cáo<p></p>Suppose (Động từ): Nghĩ rằng<p></p>Planet (Danh từ): Hành tinh<p></p>Serveral (Tính từ): Một vài<p></p>Comprehend (Động từ): Hiểu<p></p>Chart (Danh từ): Biểu đồ<p></p>Fail: Thất bại<p></p>Instead (Phó từ): Thay vì<p></p>Suddenly (Trạng từ): Đột nhiên<p></p>Alien (Danh từ): Người ngoài hành tinh<p></p>Friendly (Tính từ): Thân thiện<p></p>Solve (Động từ): Giải quyết<p></p>View (Động từ): Xem, chiêm ngưỡng<p></p>Universe (Danh từ): Vũ trụ<p></p>Clound (Danh từ): Mây<p></p>Ever (Phó từ): Từ trước đến nay<p></p>Describe (Động từ): Mô tả'
+	vi:
+	'<b>Unit 3: Trồng hoa hồng</b><br>\
+	M: Xin lỗi, thưa bà. Tôi có vấn đề với<br>\
+	cây hoa hồng của tôi. Trước đây nó từng ra rất nhiều hoa hồng màu hồng.<br>\
+	Nhưng bây giờ nó không ra hoa nữa.<br>\
+	W: Tôi hiểu rồi. Có vẻ như đó là vấn đề.<br>\
+	Lá trên cây có khỏe không?<br>\
+	M: Không hẳn. Lá trước đây rất xanh.<br>\
+	Bây giờ, hầu hết đã chuyển sang màu nâu.<br>\
+	W: Vâng, tôi nghĩ bụi hoa hồng của bà cần một ít phân bón.<br>\
+	M: Được. Bà nghĩ tôi nên<br>\
+	sử dụng loại phân bón nào?<br>\
+	W: Loại phân bón dạng lỏng này rất tốt. Nó sẽ giúp<br>\
+	làm cho lá hoa hồng của bà xanh trở lại. Sau đó,<br>\
+	cây sẽ sớm ra hoa hồng.<br>\
+	Loại phân bón này có giá khoảng mười đô la.<br>\
+	M: Phải mất bao lâu để cây hoa hồng của tôi phục hồi?<br>\
+	W: Tôi nghĩ là khoảng hai tuần.<br>\
+	M: Tuyệt. Tôi sẽ dùng. Cảm ơn bà rất nhiều vì đã<br>\
+	giúp đỡ.<br>\
+	W: Không có gì!',
+voca: ''
+},
+{
+	en: '<b>Unit 4: Bird Watching</b><br>\
+	B : I want to go bird watching tomorrow. Do you<br>\
+	know a good area for birds?<br>\
+	G : There is a quiet park near here. There are always<br>\
+	many beautiful birds there. <br>\
+	B : Will I be able to see different types of birds in<br>\
+	this area?<br>\
+	G : Yes, I think so. If you use binoculars, you can<br>\
+	see the birds, even if they are far away.<br>\
+	B : Great! I have a book about all the different types<br>\
+	of birds.<br>\
+	G : It seems as if you really like bird watching.<br>\
+	B : Yes, I do! Would you like to come with me<br>\
+	tomorrow?<br>\
+	G : No, thank you. I think bird watching is boring.<br>\
+	B : That’s not true! Birds are very interesting. Some<br>\
+	birds have colorful feathers. Some birds sing<br>\
+	beautiful songs. Some birds make special nests<br>\
+	to lay eggs in.<br>\
+	G : Really? Maybe I will go bird watching one day<br>\
+	after all!',
+	vi:
+	'<b>Unit 4: Ngắm chim</b><br>\
+	B: Ngày mai tôi muốn đi ngắm chim. Bạn<br>\
+	có biết khu vực nào thích hợp để ngắm chim không?<br>\
+	G: Có một công viên yên tĩnh gần đây. Luôn có<br>\
+	nhiều loài chim đẹp ở đó.<br>\
+	B: Tôi có thể nhìn thấy nhiều loài chim khác nhau ở<br>\
+	khu vực này không?<br>\
+	G: Có, tôi nghĩ là có. Nếu bạn sử dụng ống nhòm, bạn có thể<br>\
+	nhìn thấy những chú chim, ngay cả khi chúng ở rất xa.<br>\
+	B: Tuyệt! Tôi có một cuốn sách về tất cả các loài chim khác nhau.<br>\
+	G: Có vẻ như bạn thực sự thích ngắm chim.<br>\
+	B: Có, tôi thích! Bạn có muốn đi cùng tôi<br>\
+	vào ngày mai không?<br>\
+	G: Không, cảm ơn. Tôi nghĩ ngắm chim rất nhàm chán.<br>\
+	B: Không đúng! Chim rất thú vị. Một số<br>\
+	loài chim có bộ lông sặc sỡ. Một số loài chim hót<br>\
+	những bài hát hay. Một số loài chim làm tổ đặc biệt<br>\
+	để đẻ trứng.<br>\
+	G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim<br>\
+	sau tất cả!'
+},
+{
+en:'<b>Unit 5: Trees in the Forest</b><br>\
+	B : There are many forests in North America.<br>\
+	There are many trees in these forests. Some of<br>\
+	these trees are more than two hundred feet tall.<br>\
+	Some are over five hundred years old. <br>\
+	Several kinds of trees grow in these forests.<br>\
+	Fir, cedar, and pine are three. These trees grow in<br>\
+	different areas. Some grow in forests. Some grow<br>\
+	on the mountains. People who lived in this place<br>\
+	long ago used these trees to make things out of<br>\
+	wood.<br>\
+	Many of these trees are now in special areas.<br>\
+	These areas are called forest reserves or national<br>\
+	parks. <br>\
+	Some parks charge a small entrance fee.<br>\
+	Visitors must pay the fee to enter the parks.<br>\
+	Then they can walk among the beautiful old<br>\
+	trees. They must take care not to damage the<br>\
+	trees. We should all take care of forests.'
+,
+vi:'<b>Unit 5: Cây trong rừng</b><br>\
+B: Có nhiều khu rừng ở Bắc Mỹ.<br>\
+Có nhiều cây trong những khu rừng này. Một số<br>\
+cây này cao hơn hai trăm feet.<br>\
+Một số cây đã hơn năm trăm năm tuổi.<br>\
+Có một số loại cây mọc trong những khu rừng này.<br>\
+Cây linh sam, cây tuyết tùng và cây thông là ba loại. Những loại cây này mọc ở<br>\
+các khu vực khác nhau. Một số mọc trong rừng. Một số mọc<br>\
+trên núi. Những người sống ở nơi này<br>\
+từ lâu đã sử dụng những loại cây này để làm ra<br>\
+gỗ.<br>\
+Nhiều loại cây này hiện nằm ở những khu vực đặc biệt.<br>\
+Những khu vực này được gọi là khu bảo tồn rừng hoặc công viên<br>\
+quốc gia.<br>\
+Một số công viên thu một khoản phí vào cửa nhỏ.<br>\
+Du khách phải trả phí để vào công viên.<br>\
+Sau đó, họ có thể đi bộ giữa những cây cổ thụ<br>\
+tuyệt đẹp. Họ phải cẩn thận không làm hỏng<br>\
+cây. Tất cả chúng ta nên chăm sóc rừng.'
+}
+,
+
+{
+en:'<b>Unit 6 An Easy Way to Shop</b><br> \
+G : Hey, Steve. Look at my new MP3 player!<br> \
+B : Wow! It looks cool! Where did you buy it?<br>\
+G : I bought it online at an electronics website. <br>\
+B : I’m not very good at using a computer. Is it hard<br>\
+to buy things online?<br>\
+G : It’s really easy. All you do is go to the website,<br>\
+and choose the item you want to look at. There<br>\
+are so many items to choose from on the website!<br>\
+After you choose what you want to buy, you<br>\
+click on the “check out” button. <br>\
+B : That does seem easy!<br>\
+G : Yes, it is. It only takes about a week for your<br>\
+item to come. Of course, if you are in a hurry,<br>\
+you can pay more to get it sent faster.<br>\
+B : Do you pay for the item when it comes?<br>\
+G : No, you have to pay for it online with a credit<br>\
+card.',
+
+vi: '<b>Unit 6: Một cách mua sắm dễ dàng</b><br>\
+G: Này, Steve. Nhìn máy nghe nhạc MP3 mới của tôi này!<br>\
+B: Chà! Trông tuyệt quá! Bạn mua ở đâu thế?<br>\
+G: Tôi mua trực tuyến trên một trang web điện tử.<br>\
+B: Tôi không giỏi sử dụng máy tính lắm. Mua hàng trực tuyến có khó không?<br>\
+G: Thực sự dễ lắm. Bạn chỉ cần vào trang web<br>\
+và chọn mặt hàng bạn muốn xem. Có<br>\
+rất nhiều mặt hàng để lựa chọn trên trang web!<br>\
+Sau khi chọn mặt hàng bạn muốn mua, bạn<br>\
+nhấp vào nút "thanh toán".<br>\
+B: Có vẻ dễ đấy!<br>\
+G: Đúng vậy. Chỉ mất khoảng một tuần để mặt hàng của bạn<br>\
+đến. Tất nhiên, nếu bạn đang vội,<br>\
+bạn có thể trả thêm tiền để được gửi nhanh hơn.<br>\
+B: Bạn có trả tiền khi nhận được mặt hàng không?<br>\
+G: Không, bạn phải thanh toán trực tuyến bằng<br>\
+thẻ tín dụng.'
+}
+,
+{
+en: '<b>Unit 7: Cell Phone Messages</b> <br> \
+	W: I need to check my messages.<br>\
+	M: How are you going to do that? We are in the<br> \
+	middle of the freeway!<br>\
+	W: I’m going to use my cell phone. Haven’t you<br> \
+	ever done that?<br>\
+	M: No. I just use my cell phone to talk to other<br> \
+	people.<br>\
+	W: Now you can also use a cell phone to send and<br> \
+	receive short text messages. It’s very useful.<br>\
+	M: How do you send a message that way?<br>\
+	W: I just use the keys on the phone to type a short<br>\
+	message. Then I press the “send” button. It’s<br>\
+	cheaper than making a phone call.<br>\
+	M: That’s a great idea! You can save both time and<br>\
+	money that way. <br>\
+	W: Right. All my friends usually send me text<br>\
+	messages now. <br>\
+	M: Thanks for telling me about this. I’ll have to try<br>\
+	it!<br>\
+	W: You’re welcome. I think you’ll find it useful.',
+ vi:
+'<b>Unit 7: Tin nhắn trên điện thoại di động </b> <br> \
+W: Tôi cần kiểm tra tin nhắn của mình.<br>\
+M: Bạn định làm thế nào? Chúng ta đang ở<br>\
+giữa đường cao tốc!<br>\
+W: Tôi sẽ sử dụng điện thoại di động của mình. Bạn chưa<br>\
+bao giờ làm thế sao?<br>\
+M: Không. Tôi chỉ sử dụng điện thoại di động của mình để nói chuyện với những<br>\
+người khác.<br>\
+W: Bây giờ bạn cũng có thể sử dụng điện thoại di động để gửi và<br>\
+nhận tin nhắn văn bản ngắn. Rất hữu ích.<br>\
+M: Bạn gửi tin nhắn theo cách đó như thế nào?<br>\
+W: Tôi chỉ sử dụng các phím trên điện thoại để nhập một tin<br>\
+tin ngắn. Sau đó, tôi nhấn nút *gửi*. Rẻ hơn là gọi điện thoại.<br>\
+M: Đó là một ý tưởng tuyệt vời! Bạn có thể tiết kiệm cả thời gian và<br>\
+tiền bạc theo cách đó.<br>\
+W: Đúng vậy. Tất cả bạn bè của tôi hiện nay thường gửi tin nhắn văn bản<br>\
+cho tôi.<br>\
+M: Cảm ơn bạn đã cho tôi biết về điều này. Tôi sẽ phải thử!<br>\
+W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích.'
 }
 
 	   ];
@@ -129,36 +394,43 @@ voca: 'Among (Trạng từ): Ở giữa<p></p>Library (Danh từ): Thư viê
 
 	$scope.fetchStory = function (index) {
 		$scope.stopSound();
-		$scope.storyIdx = $scope.storyIdx + index;
-		$scope.story = $scope.stories[$scope.storyIdx];
+		$scope.storyIdx = index-1;
+		$scope.story = $scope.stories[index-1];
 	}
 
-	$scope.playSentence = function (index) {
-		$scope.stopSound();
-  		$scope.audio = new Audio("truyenchem/" + $scope.storyIdx + "/" + $scope.storyIdx + '.' + index + '.mp3');
-	    $scope.audio.loop = false;
-	    $scope.audio.play();
-	    $scope.bPlayingSentence = true;
+	$scope.resetAudioBtnUI = function()
+	{
+		$scope.bPause=false;
+        $scope.bPlayingFull=false;
+        if ($scope.isAudioLoop)
+        {
+        	$scope.playFullSound($scope.storyIdx);
+        }
+        $scope.$apply();
 	}
 
 	$scope.playFullSound = function (index) {
-		if ($scope.bPlayingSentence)
-		{
-			$scope.stopSound();
-		}
-
 		if ($scope.bPlayingFull)
 		{
-			$scope.pauseSound();
+			$scope.stopSound();
+			$scope.bPause=false;
 		}
 	  	else
 	  	{
-	  		$scope.audio = new Audio("truyenchem/" + $scope.storyIdx + "/" + $scope.storyIdx + '.full.mp3');
+	  		$scope.audio = new Audio($scope.storyIdx + '.mp3');
 		    $scope.audio.loop = false;
 		    $scope.audio.play();
+
+ 			$scope.audio.addEventListener("ended", function(){
+			   $scope.resetAudioBtnUI();
+			});
+
+		    $scope.bPlayingFull = true;
+
 	  	}
-	    $scope.bPlayingFull = true;
 	}
+
+
 
 	$scope.pauseSound = function () {
 		if (!$scope.audio) return;
@@ -184,6 +456,7 @@ voca: 'Among (Trạng từ): Ở giữa<p></p>Library (Danh từ): Thư viê
 		 $scope.bPlayingSentence = false;
 	};
 
+	
     });
 
 </script>

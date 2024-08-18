@@ -23,7 +23,10 @@
     	<a href="../../index.html" class="mt-2"><< 3000 Words</a>
     	<div class="my-3">
 		    <a ng-repeat="n in range(1,40)" ng-click="fetchStory(n);"  href=""> {{n}} &nbsp|</a>
+<<<<<<< HEAD
 		    <br> <label> <input class="my-3" type="checkbox" ng-click="isAudioLoop=!isAudioLoop">&nbspAudio loop</label>
+=======
+>>>>>>> 086e0e1367478af412ede5272859f9ebad485a19
 		 </div>
 
     	<button class="btn btn-sm btn-info mr-4" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
@@ -65,8 +68,13 @@
 
      $scope.storyIdx = 0;
      $scope.bPlayingSentence = false;
+<<<<<<< HEAD
      $scope.bPlayingFull = 0;
      $scope.bPause = 0;
+=======
+     $scope.bPlayingFull = false;
+     $scope.bPause = false;
+>>>>>>> 086e0e1367478af412ede5272859f9ebad485a19
      $scope.bEngToVi = 0;
      $scope.audio;
      $scope.currentTime = 0;
@@ -396,6 +404,7 @@ W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích.'
 		$scope.stopSound();
 		$scope.storyIdx = index-1;
 		$scope.story = $scope.stories[index-1];
+<<<<<<< HEAD
 	}
 
 	$scope.resetAudioBtnUI = function()
@@ -407,6 +416,8 @@ W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích.'
         	$scope.playFullSound($scope.storyIdx);
         }
         $scope.$apply();
+=======
+>>>>>>> 086e0e1367478af412ede5272859f9ebad485a19
 	}
 
 	$scope.playFullSound = function (index) {
@@ -420,6 +431,7 @@ W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích.'
 	  		$scope.audio = new Audio($scope.storyIdx + '.mp3');
 		    $scope.audio.loop = false;
 		    $scope.audio.play();
+<<<<<<< HEAD
 
  			$scope.audio.addEventListener("ended", function(){
 			   $scope.resetAudioBtnUI();
@@ -427,6 +439,9 @@ W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích.'
 
 		    $scope.bPlayingFull = true;
 
+=======
+		    $scope.bPlayingFull = true;
+>>>>>>> 086e0e1367478af412ede5272859f9ebad485a19
 	  	}
 	}
 

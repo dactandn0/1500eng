@@ -27,17 +27,17 @@
 		    	</a>
 		    </div>
 		    <br> <label> <input class="my-3" type="checkbox" ng-click="isAudioLoop=!isAudioLoop">&nbspAudio loop</label>
-
+		        <button class="btn btn-sm btn-info float-right" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
+    			<button class="btn btn-sm btn-info float-right mr-3" ng-click="bHiddenWords = !bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button>
 		 </div>
 
-    	<button class="btn btn-sm btn-info mr-4" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
-    	<button class="btn btn-sm btn-info mr-4" ng-click="pauseSound()" ng-if="bPlayingFull">{{bPause ? 'Resume' : 'Pause'}}</button>
+    	<button class="btn btn-sm btn-info mr-3" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
+    	<button class="btn btn-sm btn-info mr-3" ng-click="pauseSound()" ng-if="bPlayingFull">{{bPause ? 'Resume' : 'Pause'}}</button>
 
-    	<button class="btn btn-sm btn-info mr-4" ng-click="backSound(-5)" ng-if="bPlayingFull">-5s</button>
-    	<button class="btn btn-sm btn-info mr-4" ng-click="backSound(5)" ng-if="bPlayingFull">+5s</button>
+    	<button class="btn btn-sm btn-info mr-3" ng-click="backSound(-5)" ng-if="bPlayingFull">-5s</button>
+    	<button class="btn btn-sm btn-info mr-3" ng-click="backSound(5)" ng-if="bPlayingFull">+5s</button>
 
-    	<button class="btn btn-sm btn-info float-right" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-    	<button class="btn btn-sm btn-info float-right mr-4" ng-click="bHiddenWords = !bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button>
+
     	
 
 		<div class="card mt-4">

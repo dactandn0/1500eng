@@ -834,6 +834,8 @@ Mọi người nên thực hành làm việc nhóm. Làm việc nhóm hiệu qu�
 		//
 		$scope.story.en_hidden_words = $scope.story.en;
 		var words = $scope.story.en.split(' ');
+		var _wPosArr = [];   // index in Arr
+		var kDot = "";
 		for (let i = 0; i < words.length; i++) {
 		  	var word = words[i];
 		  	if (word.length >= 3) {
@@ -847,11 +849,30 @@ Mọi người nên thực hành làm việc nhóm. Làm việc nhóm hiệu qu�
 		  			{
 		  				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
 		  				if (rd % 4 == 0) {
-		  					$scope.story.en_hidden_words = $scope.story.en_hidden_words.replace(word, ".........");
+		  					var _w = ' ' + word + ' ';
+		  					var idxOf = $scope.story.en.indexOf(_w);
+		  					var obj = {'w': _w, "idx": idxOf}
+
+		  					_wPosArr.push(obj);
+
+		  					kDot = ' ' + word.replace(/./g, ".") + ' ';
+
+		  			//		console.log(_w);
+		  			//		console.log(idxOf);
+
+		  					var s = $scope.story.en_hidden_words;
+
+		  					let firstPart = s.substr(0, idxOf);
+						    let lastPart = s.substr(idxOf + kDot.length);
+						    let newString = firstPart + kDot + lastPart;
+
+		  					$scope.story.en_hidden_words = newString;
 		  				}
 					}
 		  	}
-		}
+		} // for
+
+		
 	}	
 
 	$scope.fetchStory(1);

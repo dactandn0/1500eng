@@ -36,14 +36,17 @@
     	<button class="btn btn-sm btn-info mr-4" ng-click="backSound(-5)" ng-if="bPlayingFull">-5s</button>
     	<button class="btn btn-sm btn-info mr-4" ng-click="backSound(5)" ng-if="bPlayingFull">+5s</button>
 
-    	<button class="btn btn-sm btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 0 ? 'en->vi' : 'vi->en' }}</button>
+    	<button class="btn btn-sm btn-info float-right" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
+    	<button class="btn btn-sm btn-info float-right mr-4" ng-click="bHiddenWords = !bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button>
+    	
 
 		<div class="card mt-4">
 		    <div class="card-body">
 	          <div class="card-text my-2">
-	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bEngToVi" ng-click="playSentence(index)">{{sentence}}</p> -->
-	          	<p ng-bind-html="story.en" ng-if="!bEngToVi"></p>
-	          	<p ng-bind-html="story.vi" ng-if="bEngToVi"></p>
+	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
+	          	<p ng-bind-html="story.en" ng-if="!bShowVi && !bHiddenWords"></p>
+	          	<p ng-bind-html="story.vi" ng-if="bShowVi"></p>
+	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
 	        <!--   	
 	        	<div class="mt-5"  ng-if="story.voca">
 	          		<hr/>
@@ -612,6 +615,114 @@ Người đàn ông đưa cho người con trai út hai cây gậy lớn. Ông b
 Người đàn ông nói, "Các con giống như những cây gậy này. Nếu các con cùng nhau làm việc, không ai có thể bẻ gãy các con. Nhưng nếu các con cứ đánh nhau suốt, một ngày nào đó, sẽ có người bẻ gãy cả hai con." <br>\
 Sau bài học đó, hai người con trai ngừng đánh nhau. Họ bắt đầu cùng nhau làm việc'
 }
+,
+{ 
+en:'Unit 26 A Problem at the Office<br>\
+M: I had a big problem at the office today!<br>\
+W: What happened?<br>\
+M: I could not use my computer all day!<br>\
+W: Was it because of a virus?<br>\
+M: Yes. I opened a file that had a virus. <br>\
+W: Oh no! You must be careful when you open files in your email. A virus can make your whole computer crash.<br>\
+M: It was an accident! I didn’t know the file had a virus. I’ll be more careful next time.<br>\
+W: What did you do next?<br>\
+M: I asked a computer repairman to come to the office. He worked all day to repair my computer. But the real problem is that I may have lost some of my work.<br>\
+W: Don’t worry. Your work is probably still on your computer. I can help you get it back. Next time, make sure you have back-up files. Just in case it happens again!',
+vi:'Bài 26 Một vấn đề ở văn phòng<br>\
+M: Hôm nay tôi gặp một vấn đề lớn ở văn phòng!<br>\
+W: Chuyện gì đã xảy ra vậy?<br>\
+M: Tôi không thể sử dụng máy tính cả ngày!<br>\
+W: Có phải do vi-rút không?<br>\
+M: Vâng. Tôi đã mở một tệp có vi-rút. <br>\
+W: Ôi không! Bạn phải cẩn thận khi mở tệp trong email của mình. Vi-rút có thể khiến toàn bộ máy tính của bạn bị sập.<br>\
+M: Đó là một tai nạn! Tôi không biết tệp có vi-rút. Lần sau tôi sẽ cẩn thận hơn.<br>\
+W: Bạn đã làm gì tiếp theo?<br>\
+M: Tôi đã yêu cầu một thợ sửa máy tính đến văn phòng. Anh ấy đã làm việc cả ngày để sửa máy tính của tôi. Nhưng vấn đề thực sự là tôi có thể đã mất một số công việc của mình.<br>\
+W: Đừng lo lắng. Công việc của bạn có thể vẫn còn trên máy tính của bạn. Tôi có thể giúp bạn lấy lại chúng. Lần sau, hãy đảm bảo bạn có tệp sao lưu. Phòng trường hợp điều đó xảy ra lần nữa!'
+}
+,
+{
+	en:'Unit 27 My Future Job<br>\
+G : What do you want to be when you grow up, Mark?<br>\
+B : I want to be a teacher. I think I would like to help children learn.<br>\
+G : Well, you know, teachers work very hard, and they are not paid much money.<br>\
+B : I don’t care about money. Teaching is an important job.<br>\
+G : What subject do you want to teach?<br>\
+B : I want to teach mathematics, like Ms. Kim. She makes learning fun. I didn’t know that I would like math so much until I joined her class. Now, mathematics is my favorite subject.<br>\
+G : If you want to teach math, you’ll have to work hard and learn it well.<br>\
+B : No problem! I got an A on the mathematics examination last week. With good teachers like Ms. Kim, learning is easy.<br>\
+G : I want to be a teacher, too. But I want to teach English, not math!'
+, vi:'Bài 27 Nghề nghiệp tương lai của tôi<br>\
+G: Lớn lên con muốn làm nghề gì, Mark?<br>\
+B: Con muốn làm giáo viên. Con nghĩ con muốn giúp trẻ em học tập.<br>\
+G: À, con biết đấy, giáo viên làm việc rất chăm chỉ, và họ không được trả nhiều tiền.<br>\
+B: Con không quan tâm đến tiền. Dạy học là một công việc quan trọng.<br>\
+G: Con muốn dạy môn gì?<br>\
+B: Con muốn dạy toán, giống như cô Kim. Cô ấy làm cho việc học trở nên thú vị. Con không biết rằng mình sẽ thích toán đến vậy cho đến khi con tham gia lớp học của cô ấy. Bây giờ, toán là môn học yêu thích của con.<br>\
+G: Nếu con muốn dạy toán, con sẽ phải chăm chỉ và học thật giỏi.<br>\
+B: Không vấn đề gì! Tuần trước con đã đạt điểm A trong kỳ thi toán. Với những giáo viên giỏi như cô Kim, việc học trở nên dễ dàng.<br>\
+G: Con cũng muốn làm giáo viên. Nhưng tôi muốn dạy tiếng Anh chứ không phải toán!'
+},
+{
+	en:'Unit 28 Shopping<br>\
+W: We are having a summer sale. Everything is 50% off the normal price.<br>\
+M: Really? Everything?<br>\
+W: Yes. Everything is on sale, including sunglasses, hats, and bags. All the summer clothes are on sale, too.<br>\
+M: I do need some new sunglasses. I lost mine when I went to the beach this summer. Oh, these are really nice. What is the price of these? There is no price tag on them.<br>\
+W: Well, sir, there’s no price tag on those sunglasses because they are mine!<br>\
+M: Really? I would like to get a pair of sunglasses just like these. Where did you get them?<br>\
+W: Actually, I got them for $15 at Super Glasses.<br>\
+M: There is a Super Glasses store in this mall, isn’t there?<br>\
+W: Yes, but let me show you the sunglasses we have on sale.<br>\
+M: No, thanks. I think I’ll just go to Super Glasses!'
+, vi:'Đơn vị 28 Mua sắm<br>\
+W: Chúng tôi đang có chương trình giảm giá mùa hè. Mọi thứ đều giảm giá 50% so với giá thông thường.<br>\
+M: Thật sao? Mọi thứ sao?<br>\
+W: Vâng. Mọi thứ đều được giảm giá, bao gồm cả kính râm, mũ và túi xách. Tất cả quần áo mùa hè cũng đang được giảm giá.<br>\
+M: Tôi cần một số kính râm mới. Tôi đã làm mất kính khi đi biển vào mùa hè này. Ồ, chúng đẹp thật. Giá của chúng là bao nhiêu? Không có nhãn giá trên đó.<br>\
+W: Vâng, thưa ông, không có nhãn giá trên kính râm đó vì chúng là của tôi!<br>\
+M: Thật sao? Tôi muốn mua một cặp kính râm giống như thế này. Bạn mua chúng ở đâu vậy?<br>\
+W: Thực ra, tôi mua chúng với giá 15 đô la tại Super Glasses.<br>\
+M: Có một cửa hàng Super Glasses trong trung tâm thương mại này, đúng không?<br>\
+W: Vâng, nhưng để tôi cho bạn xem kính râm đang được bán giảm giá.<br>\
+M: Không, cảm ơn. Tôi nghĩ tôi sẽ chỉ đến Super Glasses thôi!'
+},
+{
+	en:'Unit 29 A Part-time Job<br>\
+B : I want to find a part-time job. Do you have any ideas about where I should look for work?<br>\
+W: Have you looked in the newspaper? There are lots of job advertisements in the newspaper.<br>\
+B : Yes, I have. But there were no jobs I was interested in.<br>\
+W: Did you search on the Internet? Many companies put job advertisements on the Internet.<br>\
+B : No, I haven’t looked on the Internet. I don’t know what I should search for.<br>\
+W: There are many websites that have job postings that you could look at. You could also search for the type of job you are interested in.<br>\
+B : OK. Thanks for telling me what I need to do. I’ll start my Internet search right now.<br>\
+W: I have a list of some websites. You could start looking at those first. That might save you some time.<br>\
+B : That would be very useful. Thanks!'
+, vi:'Bài 29 Một công việc bán thời gian<br>\
+B: Tôi muốn tìm một công việc bán thời gian. Bạn có ý tưởng nào về nơi tôi nên tìm việc không?<br>\
+W: Bạn đã tìm kiếm trên báo chưa? Có rất nhiều quảng cáo việc làm trên báo.<br>\
+B: Có, tôi đã tìm. Nhưng không có công việc nào tôi quan tâm.<br>\
+W: Bạn đã tìm kiếm trên Internet chưa? Nhiều công ty đăng quảng cáo việc làm trên Internet.<br>\
+B: Không, tôi chưa tìm kiếm trên Internet. Tôi không biết mình nên tìm kiếm gì.<br>\
+W: Có nhiều trang web có thông tin tuyển dụng mà bạn có thể xem. Bạn cũng có thể tìm kiếm loại công việc bạn quan tâm.<br>\
+B: Được. Cảm ơn bạn đã cho tôi biết những gì tôi cần làm. Tôi sẽ bắt đầu tìm kiếm trên Internet ngay bây giờ.<br>\
+W: Tôi có danh sách một số trang web. Bạn có thể bắt đầu xem những trang web đó trước. Điều đó có thể giúp bạn tiết kiệm thời gian.<br>\
+B: Điều đó sẽ rất hữu ích. Cảm ơn!'
+},
+{
+	en:'Unit 30 Teamwork<br>\
+G : When people work together as a team, they can achieve a lot. You can easily get things done when you share the work.<br>\
+We practice teamwork in my family. Both my parents have jobs. My father is a doctor. My mother is a teacher. Both of them work long hours all week. My brother is a student at college.<br>\
+I am a student in school. We all have very busy lives. So, when it comes to household chores, we all work together to get them done.<br>\
+Each of us has different chores. My parents take turns to cook. My father takes out the trash. My mother does the laundry. My brother washes the dishes. I sweep the floor. We share the chores and work together. Everything gets done fast.<br>\
+People should practice working as a team. Teamwork works.',
+vi:'Bài 30 Làm việc nhóm<br>\
+G: Khi mọi người làm việc cùng nhau như một nhóm, họ có thể đạt được nhiều thành tựu. Bạn có thể dễ dàng hoàn thành mọi việc khi chia sẻ công việc.<br>\
+Chúng tôi thực hành làm việc nhóm trong gia đình tôi. Cả bố và mẹ tôi đều có công việc. Bố tôi là bác sĩ. Mẹ tôi là giáo viên. Cả hai đều làm việc nhiều giờ cả tuần. Anh trai tôi là sinh viên đại học.<br>\
+Tôi là sinh viên. Tất cả chúng tôi đều có cuộc sống rất bận rộn. Vì vậy, khi nói đến việc nhà, tất cả chúng tôi cùng nhau làm việc để hoàn thành.<br>\
+Mỗi người chúng tôi có những công việc khác nhau. Bố mẹ tôi thay phiên nhau nấu ăn. Bố tôi đổ rác. Mẹ tôi giặt quần áo. Anh trai tôi rửa bát. Tôi quét nhà. Chúng tôi chia sẻ công việc và cùng nhau làm việc. Mọi việc được hoàn thành nhanh chóng.<br>\
+Mọi người nên thực hành làm việc nhóm. Làm việc nhóm hiệu quả.'
+}
 	   ];
 
 
@@ -630,7 +741,8 @@ Sau bài học đó, hai người con trai ngừng đánh nhau. Họ bắt đầ
 
 	 $scope.bPlayingFull = false;
 	 $scope.bPause = false;
-	 $scope.bEngToVi = 0;
+	 $scope.bShowVi = 0;
+	 $scope.bHiddenWords = 1;
 	 $scope.audio;
 	 $scope.currentTime = 0;
 	 $scope.isAudioLoop = false;
@@ -712,11 +824,34 @@ Sau bài học đó, hai người con trai ngừng đánh nhau. Họ bắt đầ
 		$scope.storyIdx = index-1;
 		$scope.story = $scope.stories[index-1];
 
+		// bold title
 		var titleEn = $scope.story.en.split('<br>')[0];
-		$scope.story.en = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b><br>');
+		$scope.story.en = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b>');
 
 		var titleVi = $scope.story.vi.split('<br>')[0];
-		$scope.story.vi = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b><br>');
+		$scope.story.vi = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
+
+		//
+		$scope.story.en_hidden_words = $scope.story.en;
+		var words = $scope.story.en.split(' ');
+		for (let i = 0; i < words.length; i++) {
+		  	var word = words[i];
+		  	if (word.length >= 3) {
+		  		if (word.toLowerCase().indexOf("<br>") == -1 
+		  		&& word.toLowerCase().indexOf("<b>") == -1
+		  		&& word.toLowerCase().indexOf("!") == -1
+		  		&& word.toLowerCase().indexOf(".") == -1
+		  		&& word.toLowerCase().indexOf("'") == -1
+		  		&& word.toLowerCase().indexOf(",") == -1
+		  			) 
+		  			{
+		  				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
+		  				if (rd % 4 == 0) {
+		  					$scope.story.en_hidden_words = $scope.story.en_hidden_words.replace(word, ".........");
+		  				}
+					}
+		  	}
+		}
 	}	
 
 	$scope.fetchStory(1);

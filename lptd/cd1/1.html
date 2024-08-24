@@ -22,6 +22,7 @@
     <h4 class="mb-4">LPTD CD1</h4>
     	<a href="../../index.html" class="mt-2">Home</a>
     	<a href="../cd2/2.html" class="mt-2">Lptd CD2</a>
+    	<a href="../../cherry.html" class="mt-2">Cherry</a>
     	<div class="my-3">
 		    <div ng-repeat="u in units"> {{u.title}}
 		    	 <a ng-repeat="n in range(u.num, u.num + 4)" ng-click="fetchStory(n-1);"  href=""> {{n}} &nbsp|
@@ -1108,7 +1109,7 @@ Dù bạn chọn đi đâu, du ngoạn là một cách tuyệt vời để đi d
 	{	
 		word = word.trim();
 		if (word.length < 4) return false;
-		let arr = ['<br>','<b>','</b>', '!', '.',',',"'",'’','unit','there','this','that','those'];
+		let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
 		for (var i = 0; i < arr.length; i++) {
 			bList = arr[i];
 			if (word.toLowerCase().indexOf(bList) >= 0) return false;

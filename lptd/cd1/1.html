@@ -44,8 +44,8 @@
 		    <div class="card-body">
 	          <div class="card-text my-2">
 	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
-	          	<p ng-bind-html="story.en" ng-if="!bShowVi && !bHiddenWords"></p>
-	          	<p ng-bind-html="story.vi" ng-if="bShowVi"></p>
+	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
+	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
 	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
 	        <!--   	
 	        	<div class="mt-5"  ng-if="story.voca">
@@ -824,58 +824,71 @@ Mọi người nên thực hành làm việc nhóm. Làm việc nhóm hiệu qu�
 		$scope.storyIdx = index-1;
 		$scope.story = $scope.stories[index-1];
 
+		// show to website
+		// $scope.story.en ~ origin [not edit]
+		$scope.story.enShow = '';
+		$scope.story.viShow = '';
+		$scope.story.en_hidden_words = '';
+
 		// bold title
 		var titleEn = $scope.story.en.split('<br>')[0];
-		$scope.story.en = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b>');
+		$scope.story.enShow = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b>');
 
 		var titleVi = $scope.story.vi.split('<br>')[0];
-		$scope.story.vi = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
+		$scope.story.viShow = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
 
 		//
 		$scope.story.en_hidden_words = $scope.story.en;
-		var words = $scope.story.en.split(' ');
+		console.log('=-==========================');
+		var words = $scope.story.en.match(/\b(\w+)\b/g);
 		var _wPosArr = [];   // index in Arr
 		var kDot = "";
+		var kSpace = "";
 		for (let i = 0; i < words.length; i++) {
 		  	var word = words[i];
-		  	if (word.length >= 3) {
-		  		if (word.toLowerCase().indexOf("<br>") == -1 
-		  		&& word.toLowerCase().indexOf("<b>") == -1
-		  		&& word.toLowerCase().indexOf("!") == -1
-		  		&& word.toLowerCase().indexOf(".") == -1
-		  		&& word.toLowerCase().indexOf("'") == -1
-		  		&& word.toLowerCase().indexOf(",") == -1
-		  			) 
-		  			{
-		  				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
-		  				if (rd % 4 == 0) {
-		  					var _w = ' ' + word + ' ';
-		  					var idxOf = $scope.story.en.indexOf(_w);
-		  					var obj = {'w': _w, "idx": idxOf}
+		  	if (validateWord(word)) 
+		  	{
+  				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
+  				if (rd % 5 == 0) {
+  					var _w = kSpace + word + kSpace;
+  					var idxOf = $scope.story.en.indexOf(_w);
+  					var obj = {'w': _w, "idx": idxOf}
 
-		  					_wPosArr.push(obj);
+  					_wPosArr.push(obj);
+  				//	console.log(_w);
+  					
+  					kDot = kSpace + word.replace(/./g, ".") + kSpace;
+  				//	console.log(kDot);
+  					var s = $scope.story.en_hidden_words;
 
-		  					kDot = ' ' + word.replace(/./g, ".") + ' ';
+  					let firstPart = s.substr(0, idxOf);
+				    let lastPart = s.substr(idxOf + kDot.length);
+				    let newString = firstPart + kDot + lastPart;
 
-		  			//		console.log(_w);
-		  			//		console.log(idxOf);
-
-		  					var s = $scope.story.en_hidden_words;
-
-		  					let firstPart = s.substr(0, idxOf);
-						    let lastPart = s.substr(idxOf + kDot.length);
-						    let newString = firstPart + kDot + lastPart;
-
-		  					$scope.story.en_hidden_words = newString;
-		  				}
-					}
+  					$scope.story.en_hidden_words = newString;
+  				}
 		  	}
 		} // for
+		titleEn = $scope.story.en_hidden_words.split('<br>')[0];
+		$scope.story.en_hidden_words = $scope.story.en_hidden_words.replace(titleEn, '<b>' + titleEn + '</b>');
+	}
 
-		
-	}	
+	function validateWord(word) 
+	{	
+		word = word.trim();
+		if (word.length < 4) return false;
+		let arr = ['<br>','<b>','</b>', '!', '.',',',"'",'’','unit','there','this','that','those'];
+		for (var i = 0; i < arr.length; i++) {
+			bList = arr[i];
+			if (word.toLowerCase().indexOf(bList) >= 0) return false;
+		}
+		return true;
+	}
 
 	$scope.fetchStory(1);
+
+
+
 
     });
 

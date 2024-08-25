@@ -1,0 +1,32 @@
+    	<a href="../../index.html" class="mt-2">Home</a>
+    	<a href="../cd2/2.html" class="mt-2">Lptd CD2</a>
+    	<a href="../../cherry.html" class="mt-2">Cherry</a>
+
+    	<div class="my-3">
+		    <div ng-repeat="u in units"> {{u.title}}
+		    	 <a ng-repeat="n in range(u.num, u.num + 4)" ng-click="fetchStory(n-1);"  href=""> {{n}} &nbsp|
+		    	</a>
+		    </div>
+		    <br> 
+		    <label> <input class="my-3" type="checkbox" ng-click="isAudioLoop=!isAudioLoop">&nbspAudio loop</label>
+
+		    	<span class="btnShowVi opa">
+		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
+		    	</span>
+
+		        <span ng-show="!bShowVi" class="btnEnVi opa">
+    				<p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p>
+    				<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
+    			</span>
+
+		 </div>
+
+		<span  class="btnPlay opa">
+			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
+		</span>
+
+    	<span ng-show="bPlayingFull" class="btnSound opa">
+    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-5)">-5s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(5)">+5s</button></p>
+    	</span>

@@ -20,33 +20,9 @@
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
     <h4 class="mb-4">Lptd CD2</h4>
-    	<a href="../cd1/1.html" class="mt-2">Lptd CD1</a>
-    	<div class="my-3">
-		    <div ng-repeat="u in units"> {{u.title}}
-		    	 <a ng-repeat="n in range(u.num, u.num + 4)" ng-click="fetchStory(n-1);"  href=""> {{n}} &nbsp|
-		    	</a>
-		    </div>
-		    <br> 
-		    <label> <input class="my-3" type="checkbox" ng-click="isAudioLoop=!isAudioLoop">&nbspAudio loop</label>
-		        <button class="btn btn-sm btn-info float-right" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
 
-		        <span ng-show="!bShowVi">
-    				<button class="btn btn-sm btn-info float-right mr-3" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button>
-    				<button class="btn btn-sm btn-info float-right mr-3" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button>
-    			</span>
-
-		 </div>
-
-    	<button class="btn btn-sm btn-info mr-3" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
-
-    	<span ng-show="bPlayingFull">
-    		<button class="btn btn-sm btn-info mr-3" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button>
-    		<button class="btn btn-sm btn-info mr-3" ng-click="backSound(-5)">-5s</button>
-    		<button class="btn btn-sm btn-info mr-3" ng-click="backSound(5)">+5s</button>
-    	</span>
-
+    	<div ng-include="../lptd_include1.htm"></div>
     	
-
 		<div class="card mt-4">
 		    <div class="card-body">
 	          <div class="card-text my-2">

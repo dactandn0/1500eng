@@ -15,20 +15,19 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 
 
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
-    <h4 class="mb-4">LPTD CD1</h4>
+    <h4 class="mb-4">Stories</h4>
 
     	<a href="../../index.html" class="mt-2">Home</a>
-    	<a href="../cd2/2.html" class="mt-2">CD2</a>
 
     	<div class="my-3">
 		    <div ng-repeat="u in units"> {{u.title}}
-		    	 <a ng-repeat="n in range(u.num, u.num + 4)" ng-click="fetchStory(n-1);"  href=""> {{n}} &nbsp|
+		    	 <a ng-repeat="n in range(u.num, u.num + 20)" ng-click="fetchStory(n-1);"  href=""> {{n}} &nbsp|
 		    	</a>
 		    </div>
 		    <br> 
@@ -58,7 +57,7 @@
 		<div class="card mt-4">
 		    <div class="card-body">
 	          <div class="card-text my-2">
-	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
+	          	<label class="btn-sm btn-success">{{storyIdx+1}}</label>
 	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
 	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
 	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
@@ -82,53 +81,55 @@
     $scope.stories = [
 {
 	en: 
-	'Unit 1 A Picnic by the River<br>\
-	W: This is a good spot. Let’s stop and have our picnic next to the river. <br>\
-	M: Good idea. Walking always makes me hungry. I’m ready for lunch.<br>\
-	W: We can sit here on the grass. Oh no! Someone forgot to throw these empty paper bags away. There is litter everywhere!<br>\
-	M: Why do people always leave litter around? It’s not a nice thing to do. It spoils other people’s picnics.<br>\
-	W: I think they are lazy. Or maybe they just don’t care. Look, there are some empty cans and glass bottles under that tree, too. <br>\
-	M: People should clean up before they leave, and not leave litter lying around. <br>\
-	W: That’s right. Well, after our picnic, let’s pick up all the litter we can and take it out of here.<br>\
-	M: OK! And next week, let’s come back with friends and pick up some more.<br>\
-	W: Good idea!',
+	'The Lion and the Rabbit <br>\
+A cruel lion lived in the forest. Every day, he killed and ate a lot of animals. The other animals were afraid the lion would kill them all.<br>\
+The animals told the lion, "Let‘s make a deal. If you promise to eat only one animal each day, then one of us will come to you every day. Then you don‘t have to hunt and kill us."<br>\
+The plan sounded well thought-out to the lion, so he agreed, but he also said, "If you don‘t come every day, I promise to kill all of you the next day!"<br>\
+Each day after that, one animal went to the lion so that the lion could eat it. Then, all the other animals were safe.<br>\
+Finally, it was the rabbit‘s turn to go to the lion. The rabbit went very slowly that day, so the lion was angry when the rabbit finally arrived.<br>\
+The lion angrily asked the rabbit, "Why are you late?" <br>\
+"I was hiding from another lion in the forest. That lion said he was the king, so I was afraid."<br>\
+The lion told the rabbit, "I am the only king here! Take me to that other lion, and I will kill him. The rabbit replied, "I will be happy to show you where he lives."<br>\
+The rabbit led the lion to an old well in the middle of the forest. The well was very deep with water at the bottom.<br>\
+The rabbit told the lion, "Look in there. The lion lives at the bottom." <br>\
+When the lion looked in the well, he could see his own face in-the water. He thought that was the other lion. Without waiting another moment, the lion jumped into the well to attack the other lion. He never came out.<br>\
+All of the other animals in the forest were very pleased with the rabbit‘s clever trick.',
 	vi: 
-	'Bài 1 Dã ngoại bên bờ sông<br>\
-	W: Đây là một địa điểm tốt. Chúng ta hãy dừng lại và dã ngoại bên bờ sông.<br>\
-	M: Ý tưởng hay. Đi bộ luôn khiến tôi đói. Tôi đã sẵn sàng cho bữa trưa.<br>\
-	W: Chúng ta có thể ngồi đây trên bãi cỏ. Ôi không! Có người quên vứt những chiếc túi giấy rỗng này đi. Rác ở khắp mọi nơi!<br>\
-	M: Tại sao mọi người luôn vứt rác khắp nơi? Đó không phải là một điều tốt đẹp. Nó làm hỏng buổi dã ngoại của người khác.<br>\
-	W: Tôi nghĩ họ lười biếng. Hoặc có thể họ chỉ không quan tâm. Nhìn kìa, có một số lon rỗng và chai thủy tinh dưới gốc cây đó nữa.<br>\
-	M: Mọi người nên dọn dẹp trước khi rời đi, và không để rác nằm xung quanh.<br>\
-	W: Đúng vậy. Vâng, sau buổi dã ngoại của chúng ta, chúng ta hãy nhặt hết rác có thể và mang chúng ra khỏi đây.<br>\
-	M: Được! Và tuần tới, chúng ta hãy quay lại với bạn bè và nhặt thêm một số.<br>\
-	W: Ý tưởng hay!',
-	voca:
-	''
+	'Sư tử và Thỏ <br>\
+Một con sư tử hung dữ sống trong rừng. Mỗi ngày, nó giết và ăn rất nhiều động vật. Các loài động vật khác sợ rằng sư tử sẽ giết hết chúng.<br>\
+Các loài động vật nói với sư tử, "Chúng ta hãy thỏa thuận. Nếu anh hứa chỉ ăn một con vật mỗi ngày, thì một trong số chúng tôi sẽ đến gặp anh mỗi ngày. Khi đó, anh không phải săn đuổi và giết chúng tôi nữa."<br>\
+Kế hoạch nghe có vẻ hợp lý với sư tử, nên nó đồng ý, nhưng nó cũng nói, "Nếu anh không đến mỗi ngày, tôi hứa sẽ giết hết các người vào ngày hôm sau!"<br>\
+Mỗi ngày sau đó, một con vật đến gặp sư tử để sư tử có thể ăn thịt nó. Sau đó, tất cả các loài động vật khác đều được an toàn.<br>\
+Cuối cùng, đến lượt thỏ đến gặp sư tử. Thỏ đi rất chậm vào ngày hôm đó, vì vậy sư tử đã tức giận khi thỏ cuối cùng cũng đến.<br>\
+Sư tử tức giận hỏi thỏ, "Tại sao bạn đến muộn? <br>\
+"Tôi đang trốn một con sư tử khác trong rừng. Con sư tử đó nói rằng nó là vua, vì vậy tôi sợ."<br>\
+Sư tử nói với thỏ, "Tôi là vị vua duy nhất ở đây! Hãy dẫn tôi đến chỗ con sư tử kia, và tôi sẽ giết nó." Thỏ trả lời, "Tôi sẽ rất vui khi chỉ cho bạn nơi nó sống."<br>\
+Thỏ dẫn sư tử đến một cái giếng cũ ở giữa rừng. Giếng rất sâu với nước ở dưới đáy.<br>\
+Thỏ nói với sư tử, "Hãy nhìn vào đó. Sư tử sống ở dưới đáy." <br>\
+Khi sư tử nhìn vào giếng, nó có thể nhìn thấy khuôn mặt của chính mình trong nước. Nó nghĩ rằng đó là con sư tử kia. Không đợi thêm một phút nào nữa, sư tử nhảy xuống giếng để tấn công con sư tử kia. Anh ta không bao giờ ra ngoài.<br>\
+Tất cả các loài động vật khác trong rừng đều rất hài lòng với trò lừa bịp thông minh của chú thỏ.',
 },
 {
 	en: 
-	'Unit 2 Let’s Recycle!<br>\
-	M: Hi, Jane! Have you heard about the new laws to help people recycle?<br>\
-	W: I heard about them on the news last night. I don’t think I like them.<br>\
-	M: The government wants to keep the environment clean by recycling paper, metal, and glass instead of throwing these things away. <br>\
-	W: But who wants to pay an extra 50 cents each time you buy a cup of coffee? That’s a lot of money!<br>\
-	M: 50 cents? It’s only five cents extra for a paper cup. <br>\
-	W: I thought it was 50 cents! <br>\
-	M: No, it’s only five cents. Don’t worry. And you can get your money back when you return the cup. <br>\
-	W: That’s fair. Well, maybe the government is right, after all. I’ll return all the paper coffee cups I use from now on.<br>\
-	M: Good! We all need to recycle. It helps to keep the environment clean.',
+	'The Laboratory <br>\
+Mia‘s father had a laboratory, but she had no idea what was in it. Her dad always closed and locked the door when he went in. She knew that he used it to do projects for work. He never told Mia what these projects were.<br>\
+One night, Mia approached the door to the laboratory. She stopped and thought, "I wonder what crazy experiment he is doing now." Suddenly, she heard a loud noise. It sounded like an evil laugh. The noise scared her, so she walked quickly back to her room.<br>\
+The next night, her friend Liz came to her house. When Liz arrived, Mia told her about the night before. "Oh, it was terrible," she said. "Why don‘t we see what is in there?" Liz asked. "It will be a fun adventure!"<br>\
+Mia felt nervous about going into her father‘s laboratory, but she agreed. <br>\
+As always, the door was locked. They waited until Mia‘s father left the laboratory to eat dinner. "He didn‘t lock the door!" Liz said. "Let‘s go."<br>\
+The laboratory was dark. The girls walked down the stairs carefully. Mia smelled strange chemicals. What terrible thing was her father creating? Suddenly, they heard an evil laugh. It was even worse than the one Mia heard the night before. What if a monster was going to kill them? Mia had to do something. She shouted for help.<br>\
+Mia‘s father ran into the room and turned on the lights. "Oh, no," he said. "You must have learned my secret." "Your monster tried to kill us," Mia said.<br>\
+"Monster?" he asked. "You mean this?" He had a pretty doll in his hands. The doll laughed. The laugh didn‘t sound so evil anymore. "I made this for your birthday. I wanted to give it to you then, but you can have it now. I hope you like it!"',
 	vi: 
-	'Bài 2 Hãy tái chế!<br>\
-	M: Chào Jane! Bạn đã nghe về luật mới để giúp mọi người tái chế chưa?<br>\
-	W: Tôi nghe về chúng trên bản tin tối qua. Tôi không nghĩ là tôi thích chúng.<br>\
-	M: Chính phủ muốn giữ cho môi trường sạch sẽ bằng cách tái chế giấy, kim loại và thủy tinh thay vì vứt những thứ này đi.<br>\
-	W: Nhưng ai muốn trả thêm 50 xu mỗi lần mua một cốc cà phê? Thật là nhiều tiền!<br>\
-	M: 50 xu? Chỉ mất thêm năm xu cho một cốc giấy.<br>\
-	W: Tôi nghĩ là 50 xu!<br>\
-	M: Không, chỉ năm xu thôi. Đừng lo. Và bạn có thể lấy lại tiền khi trả lại cốc.<br>\
-	W: Công bằng mà. Vâng, có lẽ chính phủ đúng, sau cùng. Tôi sẽ trả lại tất cả các cốc cà phê giấy mà tôi sử dụng từ bây giờ.<br>\
-	M: Tốt! Tất cả chúng ta đều cần tái chế. Điều đó giúp giữ môi trường sạch.',
+	'Phòng thí nghiệm <br>\
+Bố của Mia có một phòng thí nghiệm, nhưng cô bé không biết bên trong có gì. Bố cô bé luôn đóng và khóa cửa khi vào. Cô bé biết rằng ông dùng phòng thí nghiệm để làm dự án cho công việc. Ông chưa bao giờ nói với Mia những dự án đó là gì.<br>\
+Một đêm nọ, Mia đến gần cửa phòng thí nghiệm. Cô bé dừng lại và nghĩ, "Không biết ông ấy đang làm thí nghiệm điên rồ gì đây." Đột nhiên, cô bé nghe thấy một tiếng động lớn. Nghe giống như tiếng cười ma quái. Tiếng động đó khiến cô bé sợ hãi, vì vậy cô bé nhanh chóng quay trở lại phòng mình.<br>\
+Đêm hôm sau, bạn của cô bé là Liz đến nhà cô bé. Khi Liz đến, Mia kể cho cô bé nghe về đêm hôm trước. "Ồ, kinh khủng thật," cô bé nói. "Sao chúng ta không xem bên trong có gì nhỉ?" Liz hỏi. "Sẽ là một cuộc phiêu lưu thú vị!"<br>\
+Mia cảm thấy lo lắng khi vào phòng thí nghiệm của bố mình, nhưng cô bé đồng ý. <br>\
+Như thường lệ, cửa đã bị khóa. Họ đợi cho đến khi bố của Mia rời khỏi phòng thí nghiệm để ăn tối. "Bố ấy không khóa cửa!" Liz nói. "Đi thôi."<br>\
+Phòng thí nghiệm tối om. Các cô gái cẩn thận bước xuống cầu thang. Mia ngửi thấy mùi hóa chất lạ. Cha cô đang tạo ra thứ gì kinh khủng thế? Đột nhiên, họ nghe thấy tiếng cười độc ác. Thậm chí còn tệ hơn tiếng cười mà Mia nghe thấy đêm hôm trước. Nếu một con quái vật định giết họ thì sao? Mia phải làm gì đó. Cô hét lên cầu cứu.<br>\
+Cha của Mia chạy vào phòng và bật đèn. "Ồ, không," ông nói. "Con hẳn đã biết được bí mật của cha." "Con quái vật của con đã cố giết chúng ta," Mia nói.<br>\
+"Quái vật?" ông hỏi. "Ý con là cái này à?" Ông cầm một con búp bê xinh xắn trên tay. Con búp bê cười. Tiếng cười không còn nghe có vẻ độc ác nữa. "Cha đã làm cái này cho sinh nhật con. Cha đã muốn tặng con lúc đó, nhưng giờ con có thể lấy nó. Cha hy vọng con thích nó!"',
 	voca:
 	''
 },
@@ -743,7 +744,8 @@ M: That’s right. My friend is a runner, so I went there to watch her run. We t
 W: You are so lucky! Which part of the marathon did you see?<br>\
 M: I watched the entire race, from start to finish.<br>\
 W: I don’t know how the runners can finish the whole race! It’s so long and difficult! I could never do something like that.<br>\
-M: I tried to run a marathon once. It was really difficult. I just can’t run like my friend can. W: Yes, running a marathon is not an easy thing to do. By the way, how did your friend do in the race?<br>\
+M: I tried to run a marathon once. It was really difficult. I just can’t run like my friend can.<br>\
+W: Yes, running a marathon is not an easy thing to do. By the way, how did your friend do in the race?<br>\
 M: She did quite well! She was not the fastest runner, but she was in the top 50.'
 , vi: 'Bài 31 Marathon<br>\
 W: Bạn có xem giải marathon Boston không?<br>\
@@ -753,8 +755,9 @@ M: Đúng rồi. Bạn tôi là một vận động viên chạy bộ, vì vậy
 W: Bạn thật may mắn! Bạn đã xem phần nào của giải marathon?<br>\
 M: Tôi đã xem toàn bộ cuộc đua, từ đầu đến cuối.<br>\
 W: Tôi không biết làm thế nào mà những người chạy bộ có thể hoàn thành toàn bộ cuộc đua! Nó dài và khó khăn quá! Tôi không bao giờ có thể làm được điều gì như vậy.<br>\
-M: Tôi đã từng thử chạy marathon một lần. Thực sự rất khó. Tôi không thể chạy như bạn tôi được. W: Đúng vậy, chạy marathon không phải là một việc dễ dàng. Nhân tiện, bạn của bạn đã làm thế nào trong cuộc đua?<br>\
-M: Cô ấy đã làm khá tốt! Cô ấy không phải là người chạy nhanh nhất, nhưng cô ấy nằm trong top 50'
+M: Tôi đã từng thử chạy marathon một lần. Thực sự rất khó. Tôi không thể chạy như bạn tôi được.<br>\ 
+W: Đúng vậy, chạy marathon không phải là một việc dễ dàng. Nhân tiện, bạn của bạn đã làm thế nào trong cuộc đua?<br>\
+M: Cô ấy đã làm khá tốt! Cô ấy không phải là người chạy nhanh nhất, nhưng cô ấy nằm trong top 50.'
 },
 {
 	en:'Unit 32 Racquetball<br>\
@@ -803,9 +806,10 @@ G : Did you have fun?<br>\
 B : Yes, I did. But it was also my first time, so it was really difficult. I was scared that I would fall down. After a short time, my muscles were really tired.<br>\
 G : Next time will be easier. You just need more practice.<br>\
 B : What about you? What did you do during the weekend?<br>\
-G : Actually, I also went inline skating. I go every weekend with my father. We usually skate about 20 kilometers each time. B : Wow! How can you skate so far? Your muscles must be really strong.<br>\
+G : Actually, I also went inline skating. I go every weekend with my father. We usually skate about 20 kilometers each time.<br>\ 
+B : Wow! How can you skate so far? Your muscles must be really strong.<br>\
 G : I’ve been skating for three years now. You could skate that far, too. You just need to build up your muscles. Let’s go skating together next weekend.<br>\
-B : OK!',
+B : Ok!',
 	vi:'Bài 34 Trượt patin<br>\
 B: Ôi! Chân mình đau quá!<br>\
 G: Thật sao? Bạn đã làm gì vào cuối tuần vậy?<br>\
@@ -814,7 +818,8 @@ G: Bạn có vui không?<br>\
 B: Có chứ. Nhưng đó cũng là lần đầu tiên của mình, nên thực sự khó khăn. Mình sợ mình sẽ ngã. Sau một thời gian ngắn, cơ bắp của mình thực sự mệt mỏi.<br>\
 G: Lần sau sẽ dễ hơn. Bạn chỉ cần luyện tập nhiều hơn.<br>\
 B: Còn bạn thì sao? Bạn đã làm gì vào cuối tuần vậy?<br>\
-G: Thực ra, mình cũng đi trượt patin. Mình đi vào mỗi cuối tuần với bố. Chúng mình thường trượt khoảng 20 km mỗi lần. B: Wow! Làm sao bạn có thể trượt xa như vậy? Cơ bắp của bạn chắc phải khỏe lắm.<br>\
+G: Thực ra, mình cũng đi trượt patin. Mình đi vào mỗi cuối tuần với bố. Chúng mình thường trượt khoảng 20 km mỗi lần.<br>\ 
+B: Wow! Làm sao bạn có thể trượt xa như vậy? Cơ bắp của bạn chắc phải khỏe lắm.<br>\
 G: Mình đã trượt patin được ba năm rồi. Bạn cũng có thể trượt xa như vậy. Bạn chỉ cần tăng cường cơ bắp thôi. Chúng ta hãy cùng nhau đi trượt băng vào cuối tuần tới nhé.<br>\
 B: Được thôi!',
 },
@@ -961,21 +966,21 @@ Dù bạn chọn đi đâu, du ngoạn là một cách tuyệt vời để đi d
 	 $scope.bPlayingFull = false;
 	 $scope.bPause = false;
 	 $scope.bShowVi = 0;
-	 $scope.bHiddenWords = 1;
+	 $scope.bHiddenWords = 0;
 	 $scope.audio;
 	 $scope.currentTime = 0;
 	 $scope.isAudioLoop = false;
 
     
 	$scope.units = [
-		{'title':"Nature and the Environment", 'num': 1},
-		{'title':"Science and Technology", 'num':6},
-		{'title':"Art and Culture", 'num': 11},
-		{'title':"Leisure and Entertainment", 'num':16},
-		{'title':"School and Family", 'num':21},
-		{'title':"People and Work", 'num':26},
-		{'title':"Sports and Health", 'num':31},
-		{'title':"Travel and Transport", 'num':36},
+		 {'title':"", 'num': 1},
+		// {'title':"Science and Technology", 'num':6},
+		// {'title':"Art and Culture", 'num': 11},
+		// {'title':"Leisure and Entertainment", 'num':16},
+		// {'title':"School and Family", 'num':21},
+		// {'title':"People and Work", 'num':26},
+		// {'title':"Sports and Health", 'num':31},
+		// {'title':"Travel and Transport", 'num':36},
 	];
 
 
@@ -983,7 +988,7 @@ Dù bạn chọn đi đâu, du ngoạn là một cách tuyệt vời để đi d
 		$scope.bPlayingFull = false;
 		$scope.bPause = false;
 		$scope.bShowVi = 0;
-		$scope.bHiddenWords = 1;
+		$scope.bHiddenWords = 0;
 	}	
 
 	$scope.backSound = function (sec) {

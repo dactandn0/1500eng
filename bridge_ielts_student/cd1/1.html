@@ -1,0 +1,404 @@
+<!-- (<br>\w+)<br>\s+(<br>\w+)<br>\s+(.+) -->
+<!-- {word: "$1", types: "$2", mean: "$3"}, -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LPTD 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+</head>
+
+
+<body ng-app="myApp">
+    <div ng-controller="ctrl" class="container my-4">
+    <h4 class="mb-4">Bridge to IELTS Student's Book</h4>
+
+    	<a href="../../index.html" class="mt-2">Home</a>
+    	<a href="../cd2/2.html" class="mx-4 mt-2">CD2</a>
+
+    	<div class="my-3">
+		    <div ng-repeat="u in units"> {{u.title}}
+		    	 <a ng-repeat="n in range(u.num, u.num + 12)" ng-click="fetchStory(n-1);"  href=""> {{n}} &nbsp|
+		    	</a>
+		    </div>
+		    <br> 
+		    <label> <input class="my-3" type="checkbox" ng-click="isAudioLoop=!isAudioLoop">&nbspAudio loop</label>
+
+		    	<span class="btnShowVi opa">
+		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
+		    	</span>
+
+		        <span ng-show="!bShowVi" class="btnEnVi opa">
+    				<!-- <p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p> -->
+    				<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
+    			</span>
+		 </div>
+
+		<span  class="btnPlay opa">
+			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
+		</span>
+
+    	<span ng-show="bPlayingFull" class="btnSound opa">
+    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-5)">-5s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(5)">+5s</button></p>
+    	</span>
+
+
+		<div class="card mt-2">
+		    <div class="card-body">
+	          <div class="card-text">
+	          	<label class="btn-sm btn-success mb-3">{{storyIdx+1}}</label>
+	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
+	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
+	          </div> <!-- card-text -->
+        	</div> 		<!-- card-body -->
+		 </div> <!-- card -->
+		 <div class="card-body">
+          <div class="card-text my-2">
+          	<span ng-repeat="voca in story.vocas" href="">
+          		<span ng-if="$index+1 < 10">0</span>{{$index+1}}. &nbsp&nbsp {{voca}}
+          		<a href="" ng-click="speak(voca)"
+	          		class="btn btn-success btn-sm mb-2 mx-4">
+	          		Listen
+	      		</a>
+	      		<a href="https://dictionary.cambridge.org/dictionary/english/{{voca}}"
+	          		class="btn btn-danger btn-sm mb-2">
+	          		Cambridge
+	      		</a>
+          		<br>
+          </span>
+          	<!-- <p ng-bind-html="story.vocas"></p> -->
+          </div> <!-- card-text -->
+    	</div> 		<!-- card-body --> 
+    </div> <!-- container -->
+</body>
+
+<script type="text/javascript">
+    var app = angular.module("myApp", ['ngSanitize']);
+    app.controller("ctrl", function($scope, $timeout) {
+
+    $scope.stories = [
+{
+	en: 
+	"Track 1.1<br>\
+Апа: Hello, Sergei<br>\
+Sergei: Hi, Апа! How are you?<br>\
+Апа: I'm fine, thanks. And you?<br>\
+Sergei: I'm very well, thanks.<br>\
+Апа: Sergei, this is Eva. ShеЪ from Argentina.<br>\
+Eva: Hello, Sergei, Nice to meet уоu.<br>\
+Sergei: Nice to meet уоu too! I'm from Russia.<br>\
+Eva: Are уоu а new student?<br>\
+Sergei: Yes, I am,<br>\
+Eva: I'm а пеw student too!",
+	vi: 
+	'Track 1.1<br>\
+A: Xin chào, Sergei<br>\
+Sergei: Xin chào, Sergei! Bạn khỏe không?<br>\
+A: Tôi khỏe, cảm ơn. Còn bạn thì sao?<br>\
+Sergei: Tôi rất khỏe, cảm ơn.<br>\
+A: Sergei, tôi là Eva. Cô ấy đến từ Argentina.<br>\
+Eva: Xin chào, Sergei, Rất vui được gặp bạn.<br>\
+Sergei: Rất vui được gặp bạn! Tôi đến từ Nga.<br>\
+Eva: Bạn là sinh viên mới à?<br>\
+Sergei: Vâng, tôi là,<br>\
+Eva: Tôi cũng là sinh viên mới!'
+},
+{
+	en: 
+	"Track 1.2<br>\
+Fouad: Hello. I'm а new student. I'm here for the пеw students meeting.<br>\
+Agnes: Hil Welcome to O-Week! Whаt's your subject?<br>\
+Fоuаd: Chemistry. I'm in the science department.<br>\
+Agnes: Yоu'rе the first student to arrive at the meeting! I'm your student host. Му паmеЪ Agnes. Whаt's your паmе?<br>\
+Fоuаd: Fоuаd. I'm from Saudi Arabia, I'm Saudi, Nice to meet уоu, Agnes!<br>\
+Agnes: Nice to meet you too, Fouad!<br>\
+Fоuаd: Are you from AustraIia?<br>\
+Agnes: Not, I'm not. I'm а student here in lМеlЬоurпе but I'm from Gеrmапу - I'm Gеrmап,<br>\
+Fоuаd: Oh. Whеrе are уоu from in Gеrmапу?<br>\
+Agnes: Berlin,<br>\
+Fоuаd: Berlin? ls Berlin the capital of Сеrmапу?<br>\
+Аяпеs: Yes, it is. Oh, excuse mе, НеrеЪ another new st-udent, Fouad, this is Yibo, Yibo, this is Fouad. YiЬоЪ а science student too.<br>\
+Fоuаd: Hi, Yibo. Nice to meet you.<br>\
+Yibo: Hello, Fouad. Nice to meet уоu too.<br>\
+Fоuаd: Where аrе you from, Yibo?<br>\
+Yibo: I'm from China. I'm frоm Beijing.<br>\
+Fоuаd: Really? Му Ьrоthеr is а student in Beijing. Не thinks Chinese food is very good!<br>\
+Yibo: Yes, it is. It's very nice.<br>\
+Agnes: Australian food is very good too. ТhеrеЪ а free Barbie afthe student uпiоп carnival оп Friday.<br>\
+Fоuаd / Yibo: 'Barbie'?<br>\
+Asnes: Oh! I'm sorrv! 'Barbie' is ап informal word for 'ЬarЬеquе' in Austrjlia. We cook meat, or fish, or uеgеtаЫеs outside over а fire.<br>\
+Fоuаd: I'd like to go, What about you, Yibo?<br>\
+Yibo: Yes, please!<br>\
+Agnes: ОК, thаt's great. Now, lеt's just wait for а few mоrе students to arrive bnd then we can start оur tour of the campus!",
+	vi: 
+	"Track 1.2<br>\
+Fouad: Xin chào. Tôi là sinh viên mới. Tôi đến đây để tham dự buổi họp của sinh viên mới.<br>\
+Agnes: Xin chào, Chào mừng đến với Tuần lễ O! Môn học của bạn là gì?<br>\
+Fouad: Hóa học. Tôi học khoa khoa học.<br>\
+Agnes: Bạn là sinh viên đầu tiên đến dự buổi họp! Tôi là sinh viên chủ trì buổi họp. Tôi tên là Agnes. Tên bạn là gì?<br>\
+Fouad: Fouad. Tôi đến từ Ả Rập Xê Út, tôi là người Ả Rập Xê Út, Rất vui được gặp bạn, Agnes!<br>\
+Agnes: Rất vui được gặp bạn, Fouad!<br>\
+Fоuаd: Bạn đến từ Úc à?<br>\
+Agnes: Không, tôi không phải. Tôi là sinh viên ở đây tại lМеlЬоurпе nhưng tôi đến từ Đức - Tôi là người Đức,<br>\
+Fоuаd: Ồ. Bạn đến từ đâu ở Đức?<br>\
+Agnes: Berlin,<br>\
+Fоuаd: Berlin? Berlin có phải là thủ đô của Đức không?<br>\
+Agnes: Đúng vậy. Ồ, xin lỗi, Không có một sinh viên mới nào nữa, Fouad, đây là Yibo, Yibo, đây là Fouad. YiЬоЪ cũng là sinh viên khoa học.<br>\
+Fоuаd: Xin chào, Yibo. Rất vui được gặp bạn.<br>\
+Yibo: Xin chào, Fouad. Rất vui được gặp bạn.<br>\
+Fоuаd: Bạn đến từ đâu, Yibo?<br>\
+Yibo: Tôi đến từ Trung Quốc. Tôi đến từ Bắc Kinh.<br>\
+Fоuаd: Thật sao? Anh trai tôi là sinh viên ở Bắc Kinh. Tôi nghĩ đồ ăn Trung Quốc rất ngon!<br>\
+Yibo: Đúng vậy. Rất ngon.<br>\
+Agnes: Đồ ăn Úc cũng rất ngon. Có một con búp bê Barbie miễn phí sau lễ hội sinh viên vào thứ sáu.<br>\
+Fоuаd / Yibo: 'Barbie'?<br>\
+Asnes: Ôi! Tôi buồn quá! 'Barbie' là một từ không chính thức để chỉ 'ЬarЬеquе' ở Úc. Chúng tôi nấu thịt, cá hoặc uеgеtаЫе bên ngoài trên lửa.<br>\
+Fоuаd: Tôi muốn đi, còn bạn thì sao, Yibo?<br>\
+Yibo: Vâng, xin mời!<br>\
+Agnes: Ồ, tuyệt quá. Bây giờ, chúng ta hãy đợi thêm vài sinh viên nữa đến rồi chúng ta có thể bắt đầu chuyến tham quan khuôn viên trường!"
+},
+{
+	en:"Track 1.3<br>\
+Fouad, this is Yibo. Yibo, this is Fouad, YiЬоЪ а science student too.<br>\
+Hi, Yibo. Nice to meet уоu.<br>\
+Hello, Fouad. Nice to meet you too."
+,
+vi:"Track 1.3<br>\
+Fouad, đây là Yibo. Yibo, đây là Fouad, YiЬоЪ cũng là sinh viên khoa học.<br>\
+Xin chào, Yibo. Rất vui được gặp bạn.<br>\
+Xin chào, Fouad. Rất vui được gặp bạn."
+},
+{
+en:"Track 1.4<br>\
+/п/ what /eil паmе /ai/ I", 
+vi:"Track 1.4<br>\/п/ what /eil паmе /ai/ I"
+},
+{
+	en:"Track 1.5<br>\
+from - nice - make - day - on - my - not - they - fine",
+vi:'Track 1.5<br>\
+từ - đẹp - làm - trời - trên - của tôi - không phải - họ - ổn'
+},
+{
+	en:"Track 1.6<br>\
+Hassan: Excuse mе, are you Etsuko?<br>\
+Etsuko: Yes, I аm.<br>\
+Hassan: Remember mе? At the tоur of the university - on Wednesday?<br>\
+Etsuko: Oh yes! Of соursе! You're Ahmed!<br>\
+Hassan: No, I'm not. Му паmеЪ Hassan.<br>\
+Etsuko: I'm sorry Hassan. I remember поw. You're from Turkey.<br>\
+Hassan: No, I'm not, I'm frоm lrап. And уоu'rе from Jарап!<br>\
+Etsuko: Тhаt's right! You've got а good memory HassanI How are you?<br>\
+Hassan: Fine, thanks. And you?<br>\
+Etsuko: I'm оК too. ТhеrеЪ а lot to do * O-Week is such а busy time!<br>\
+Hassan: Yes, it is and I'm looking for а place to live too!<br>\
+Etsuko: Oh really? Where are you at the moment?<br>\
+Hassan: I'm in а rооm in а shared flat. It's right iп the city сепtrе and l сап wa|k to the university in ten minutes. There are three of us in the flat.<br>\
+Etsuko: How mапу rooms are there?<br>\
+Hassan: Тhrее,<br>\
+Etsuko: Is your rооm big?<br>\
+Hassan: No, it isn't. It's very small. But the other students аrе very friendly so l сап practise my English! But it's very noisy.<br>\
+Тhеrе isn't а quiet place for me to study.<br>\
+Еtsukо: Is there а desk?<br>\
+Hassan: No, there isn't Ьцt thеrеЪ а sЙаll table for mу laptop. l go to the universiý liЫаry when l want to study. And there'aren't апу bookshelves so all mу books are under the sofa. It's not idriall What about you, Гs'tuko? Where аrе you?<br>\
+Etsuko: I'm in а rооm in а student hall. It's а single rооm. It's а bit small but thеrеЪ everything I need. ТhеrеЪ а big desk fоr my laptop, thеrеЪ а lamp and there аrе bookshelves so there'b lofs <jf'space for all Йу books. l love reading! ТhеrеЪ а small sofa too - it's very соmfоrtаЫе! The best thing is that it's very quiet - and l сап see the park from my window! Hassan: I want to find а rооm like yours!",
+vi:"Track 1.6<br>\
+Hassan: Xin lỗi, bạn có phải là Etsuko không?<br>\
+Etsuko: Vâng, tôi là.<br>\
+Hassan: Nhớ tôi không? Trong chuyến tham quan trường đại học - vào thứ tư?<br>\
+Etsuko: Ồ vâng! Tất nhiên rồi! Bạn là Ahmed!<br>\
+Hassan: Không, tôi không phải. Tôi là Hassan.<br>\
+Etsuko: Xin lỗi Hassan. Tôi nhớ rồi. Bạn đến từ Thổ Nhĩ Kỳ.<br>\
+Hassan: Không, tôi không phải, tôi đến từ lrап. Và bạn đến từ Nhật Bản!<br>\
+Etsuko: Đúng rồi! Bạn có trí nhớ tốt đấy HassanI Bạn khỏe không?<br>\
+Hassan: Khỏe, cảm ơn. Còn bạn thì sao?<br>\
+Etsuko: Tôi cũng vậy. Có rất nhiều việc phải làm * Tuần O-Week là thời gian bận rộn!<br>\
+Hassan: Đúng vậy, đúng vậy và tôi cũng đang tìm một nơi để sống!<br>\
+Etsuko: Ồ thật sao? Hiện tại bạn đang ở đâu?<br>\
+Hassan: Tôi đang ở trong một căn phòng trong một căn hộ chung. Nó nằm ngay trong trung tâm thành phố và tôi có thể đi bộ đến trường đại học trong mười phút. Có ba người chúng tôi trong căn hộ.<br>\
+Etsuko: Có bao nhiêu phòng?<br>\
+Hassan: Chào,<br>\
+Etsuko: Phòng của bạn có lớn không?<br>\
+Hassan: Không, không lớn. Nó rất nhỏ. Nhưng những sinh viên khác rất thân thiện nên tôi có thể luyện tiếng Anh! Nhưng rất ồn ào.<br>\
+Không có nơi nào yên tĩnh để tôi học.<br>\
+Etsukо: Có bàn không?<br>\
+Hassan: Không, không có bàn riêng cho máy tính xách tay của tôi. Tôi đến trường đại học khi tôi muốn học. Và không có giá sách nào cả nên tất cả sách của tôi đều nằm dưới ghế sofa. Không phải là idriall Còn bạn thì sao, Гs'tuko? Bạn ở đâu?<br>\
+Etsuko: Tôi đang ở trong một căn phòng trong ký túc xá sinh viên. Đó là một căn phòng đơn. Nó hơi nhỏ nhưng có mọi thứ tôi cần. Ở đó có một chiếc bàn lớn để đặt máy tính xách tay, có một chiếc đèn và có giá sách nên có rất nhiều không gian <jf'cho tất cả sách của tôi. Tôi thích đọc sách! Ở đó cũng có một chiếc ghế sofa nhỏ - rất thoải mái! Điều tuyệt vời nhất là nó rất yên tĩnh - và tôi có thể nhìn thấy công viên từ cửa sổ của mình! Hassan: Tôi muốn tìm một căn phòng như phòng của bạn!"
+},
+{
+	en:"Track 1.7<br>\
+My ideal rооm to study in? It's mу bedroom at home. It's а big rооm and it's blue. Blue is а very саlm colour. ТhеrеЪ а big window, so it's very bright. Тhеre are three bookshelves, there's а large desk fоr mу laptop and thеrеЪ а red sofa, It's а good rооm to study in because it's very quiet and it's very tidy!"
+,vi:"Track 1.7<br>\
+Căn phòng lý tưởng để học của tôi là gì? Đó là phòng ngủ ở nhà tôi. Đó là một căn phòng lớn và có màu xanh. Màu xanh là một màu rất dễ chịu. Có một cửa sổ lớn, vì vậy rất sáng. Có ba giá sách, có một chiếc bàn lớn để đặt máy tính xách tay và một chiếc ghế sofa màu đỏ. Đó là một căn phòng tốt để học vì rất yên tĩnh và rất gọn gàng!"
+}
+	   ];
+
+
+
+	$scope.range = function(min, max, step) {
+	    step = step || 1;
+	    var input = [];
+	    for (var i = min; i <= max; i += step) {
+	        input.push(i);
+	    }
+	    return input;
+	};
+
+	 $scope.storyIdx = 0;
+	 $scope.bPlayingSentence = false;
+
+	 $scope.bPlayingFull = false;
+	 $scope.bPause = false;
+	 $scope.bShowVi = 0;
+	 $scope.bHiddenWords = 0;
+	 $scope.audio;
+	 $scope.currentTime = 0;
+	 $scope.isAudioLoop = false;
+
+    
+	$scope.units = [
+		 {'title':"", 'num': 1},
+		// {'title':"Science and Technology", 'num':6},
+		// {'title':"Art and Culture", 'num': 11},
+		// {'title':"Leisure and Entertainment", 'num':16},
+		// {'title':"School and Family", 'num':21},
+		// {'title':"People and Work", 'num':26},
+		// {'title':"Sports and Health", 'num':31},
+		// {'title':"Travel and Transport", 'num':36},
+	];
+
+
+	$scope.resetFlag = function () {
+		$scope.bPlayingFull = false;
+		$scope.bPause = false;
+		$scope.bShowVi = 0;
+		$scope.bHiddenWords = 0;
+	}	
+
+	$scope.backSound = function (sec) {
+		$scope.audio.currentTime = $scope.audio.currentTime + sec;
+	}
+
+	$scope.resetAudioBtnUI = function()
+	{
+		$scope.bPause=false;
+        $scope.bPlayingFull=false;
+        if ($scope.isAudioLoop)
+        {
+        	$scope.playFullSound($scope.storyIdx);
+        }
+        $scope.$apply();
+	}
+
+	$scope.playFullSound = function (index) {
+		if ($scope.bPlayingFull)
+		{
+			$scope.stopSound();
+			$scope.bPause=false;
+		}
+	  	else
+	  	{
+	  		$scope.audio = new Audio($scope.storyIdx + '.mp3');
+		    $scope.audio.loop = false;
+		    $scope.audio.play();
+
+ 			$scope.audio.addEventListener("ended", function(){
+			   $scope.resetAudioBtnUI();
+			});
+
+		    $scope.bPlayingFull = true;
+	  	}
+	}
+
+	$scope.pauseSound = function () {
+		if (!$scope.audio) return;
+		$scope.bPause = !$scope.bPause;
+		if ($scope.bPause)
+	    {
+	    	$scope.audio.pause();
+	    	$scope.currentTime = $scope.audio.currentTime;
+	    }
+	    else
+	    {
+	    	$scope.audio.currentTime = $scope.currentTime;
+	    	$scope.audio.play();
+	    }
+	}
+
+	$scope.stopSound = function () {
+		if (!$scope.audio) return;
+		 $scope.audio.pause();
+		 $scope.audio.currentTime = 0;
+		 $scope.currentTime = 0;
+		 $scope.bPlayingFull = false;
+		 $scope.bPlayingSentence = false;
+	};
+
+	$scope.fetchStory = function (idx, reset=true) {
+
+		// when click 1.2.3..40
+		if (reset==true) 
+		{
+			$scope.resetFlag();
+			$scope.stopSound();
+		}
+		
+		
+		$scope.storyIdx = idx;
+		$scope.story = $scope.stories[idx];
+
+		// show to website
+		// $scope.story.en|vi ~ origin [not edit]
+		$scope.story.enShow = '';
+		$scope.story.viShow = '';
+
+		// bold title
+		var titleEn = $scope.story.en.split('<br>')[0];
+		$scope.story.enShow = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b><br>');
+
+		var titleVi = $scope.story.vi.split('<br>')[0];
+		$scope.story.viShow = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b><br>');
+
+		// var words = $scope.story.en.match(/\b(\w+)\b/g);
+
+	
+	}
+
+	function validateWord(word) 
+	{	
+		word = word.trim();
+		if (word.length < 4) return false;
+		let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
+		for (var i = 0; i < arr.length; i++) {
+			bList = arr[i];
+			if (word.toLowerCase().indexOf(bList) >= 0) return false;
+		}
+		return true;
+	}
+
+	$scope.speak = function(message) {
+	   var msg = new SpeechSynthesisUtterance(message)
+	   var voices = window.speechSynthesis.getVoices()
+	   msg.voice = voices[0]
+	   msg.rate = 0.7
+	   window.speechSynthesis.speak(msg)
+	}
+
+	$scope.fetchStory(0, false);
+
+    });
+
+</script>
+</html>

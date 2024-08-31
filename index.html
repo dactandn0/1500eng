@@ -20,11 +20,11 @@
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
     <h4 class="mb-4">3000 Words</h4>
-        <a href="./truyenchem/1.html" class="mb-4">Truyện chêm</a> 
-        <a href="./lptd/cd1/1.html" class="ml-4 mb-4">LPTD1</a>
-        <a href="./bridge_ielts_student/cd1/1.html" class="ml-4 mb-4">Bridge_Ielts_Student</a>
+        <a href="./truyenchem/1.html" class="mb-4 h6">Chêm</a> 
+        <a href="./lptd/cd1/1.html" class="ml-4 mb-4 h6">LPTD1</a>
+        <a href="./bridge_ielts_student/cd1/1.html" class="ml-4 mb-4 h6">BriIeltsStu</a>
         <a href="./cheri/cheri.html" class="ml-4 mb-4">Cheri</a>
-    	<button class="btn btn-info float-right" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng -> vi' : 'vi -> eng' }}</button>
+    	<button class="btn btn-info float-right my-4" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng->vi' : 'vi->eng' }}</button>
 		<div class="card mt-4" ng-repeat="word in words" ng-if="false">
 		    <div class="card-body">
 	          <div class="card-text my-4"><span class="font-weight-bold mr-4">{{word.word}}</span>
@@ -50,8 +50,8 @@
 		 </div> <!-- card -->
 
 		<!-- <button class="btn btn-primary my-3" ng-click="reLoadQuiz()"> Reload </button> -->
-		<p class="font-weight-bold mt-4">points:
-			<span class="ml-5 text-primary">{{point}}</span> 
+		<p class="font-weight-bold mt-4">Points:
+			<span class="ml-5">{{point}}</span> 
 			<span class="ml-3" ng-if="pointClass != ''" ng-class="pointClass">{{pointClass == 'text-success' ? '+1' : '-1'}}</span> 
 		</p>
 

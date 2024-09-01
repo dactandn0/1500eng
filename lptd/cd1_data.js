@@ -1,93 +1,5 @@
-<!-- (<br>\w+)<br>\s+(<br>\w+)<br>\s+(.+) -->
-<!-- {word: "$1", types: "$2", mean: "$3"}, -->
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>LPTD 1</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
-
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="../../styles.css">
-  <script type="text/javascript">
-	function chkClick()
-	{	
-		var chk =  document.getElementById('audioLoopEle');
-		localStorage.setItem("isChecked", chk.checked);
-		console.log("isChecked saved storage = ", chk.checked );
-	}
-  </script>
-</head>
-
-
-<body ng-app="myApp">
-    <div ng-controller="ctrl" class="container mt-4">
-    <h4 class="mb-4">LPTD CD1</h4>
-
-    	<a href="../../index.html" class="mt-2">Home</a>
-    	<a href="../cd2/2.html" class="mt-2">CD2</a>
-
-    	<div class="my-3">
-		    <div ng-repeat="u in units"> {{u.title}}
-		    	 <a ng-repeat="n in range(u.num, u.num + 4)" ng-click="fetchStory(n-1);" href=""> {{n}} &nbsp|
-		    	</a>
-		    </div>
-		    <br> 
-		    <label> <input id="audioLoopEle" class="my-3" type="checkbox" onclick="chkClick()">&nbspLoop</label>
-
-		    	<span class="btnShowVi opa">
-		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-		    	</span>
-
-		        <span ng-show="!bShowVi" class="btnEnVi opa">
-		        	<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
-    				<p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p>
-    			</span>
-		 </div>
-
-		<span  class="btnPlay opa">
-			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
-		</span>
-
-    	<span ng-show="bPlayingFull" class="btnSound opa">
-    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-5)">-5s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(5)">+5s</button></p>
-    	</span>
-
-
-		<div class="card mt-4">
-		    <div class="card-body">
-	          <div class="card-text my-2">
-	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
-	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
-	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
-	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
-	        <!--   	
-	        	<div class="mt-5"  ng-if="story.voca">
-	          		<hr/>
-	          		<p ng-bind-html="story.voca"></p>
-	          	</div>
-	          	 -->
-	          	
-	          </div> <!-- card-text -->
-        	</div> 		<!-- card-body -->
-		 </div> <!-- card -->
-    </div> <!-- container -->
-</body>
-
-<script type="text/javascript">
-    var app = angular.module("myApp", ['ngSanitize']);
-    app.controller("ctrl", function($scope, $timeout) {
-
-    $scope.stories = [
+const cd1_stories = [
 {
 	en: 
 	'Unit 1 A Picnic by the River<br>\
@@ -837,7 +749,8 @@ G : Did you have fun?<br>\
 B : Yes, I did. But it was also my first time, so it was really difficult. I was scared that I would fall down. After a short time, my muscles were really tired.<br>\
 G : Next time will be easier. You just need more practice.<br>\
 B : What about you? What did you do during the weekend?<br>\
-G : Actually, I also went inline skating. I go every weekend with my father. We usually skate about 20 kilometers each time. B : Wow! How can you skate so far? Your muscles must be really strong.<br>\
+G : Actually, I also went inline skating. I go every weekend with my father. We usually skate about 20 kilometers each time.<br>\
+B : Wow! How can you skate so far? Your muscles must be really strong.<br>\
 G : I’ve been skating for three years now. You could skate that far, too. You just need to build up your muscles. Let’s go skating together next weekend.<br>\
 B : OK!',
 	vi:'Bài 34 Trượt patin<br>\
@@ -848,10 +761,11 @@ G: Bạn có vui không?<br>\
 B: Có chứ. Nhưng đó cũng là lần đầu tiên của mình, nên thực sự khó khăn. Mình sợ mình sẽ ngã. Sau một thời gian ngắn, cơ bắp của mình thực sự mệt mỏi.<br>\
 G: Lần sau sẽ dễ hơn. Bạn chỉ cần luyện tập nhiều hơn.<br>\
 B: Còn bạn thì sao? Bạn đã làm gì vào cuối tuần vậy?<br>\
-G: Thực ra, mình cũng đi trượt patin. Mình đi vào mỗi cuối tuần với bố. Chúng mình thường trượt khoảng 20 km mỗi lần. B: Wow! Làm sao bạn có thể trượt xa như vậy? Cơ bắp của bạn chắc phải khỏe lắm.<br>\
+G: Thực ra, mình cũng đi trượt patin. Mình đi vào mỗi cuối tuần với bố. Chúng mình thường trượt khoảng 20 km mỗi lần.<br>\
+B: Wow! Làm sao bạn có thể trượt xa như vậy? Cơ bắp của bạn chắc phải khỏe lắm.<br>\
 G: Mình đã trượt patin được ba năm rồi. Bạn cũng có thể trượt xa như vậy. Bạn chỉ cần tăng cường cơ bắp thôi. Chúng ta hãy cùng nhau đi trượt băng vào cuối tuần tới nhé.<br>\
 B: Được thôi!',
-voca:"skate,kilometer,scared,muscles,sore,strong,throat,catch,a,cold,gas,station,build up"
+voca:"skate[/skeɪt/],kilometer,scared,muscles,sore,strong,throat,catch,cold,gas,station,build up"
 },
 {
 	en:'Unit 35 The Olympics<br>\
@@ -916,11 +830,11 @@ B : Có, có rất nhiều thứ để xem. Thành phố này nổi tiếng vớ
 G : Loại hạt nào?<br>\
 B : Quả hồ đào. Có rất nhiều cây hồ đào mọc trong và xung quanh thành phố.<br>\
 G : Tôi thích quả hồ đào. Las Cruces cách đây bao xa?<br>\
-B : Chỉ mất khoảng bốn giờ lái xe nếu bạn đi trên đường cao tốc và lái xe thẳng về phía nam.<br>\
+B : Chỉ mất khoảng bốn giờ lái xe nếu bạn đi trên đường cao tốc và lái thẳng về phía nam.<br>\
 G : Chắc chắn là một chuyến đi dễ dàng. Khi nào bạn đi?<br>\
 B: Chúng tôi sẽ đi vào sáng thứ Bảy. Chúng tôi sẽ trở về vào tối thứ Hai.<br>\
 G: Chúc bạn có thời gian vui vẻ! Mang cho tôi một ít hồ đào nhé!',
-voca:"south,morning,city,evening,directly,nuts,pecan,bring,make for,look forward to"
+voca:"south,morning,city,evening,directly,nut[​seed |bead | corn],pecan,bring,make for,look forward to"
 },
 {
 	en:'Unit 38 The Travel Agent<br>\
@@ -943,7 +857,7 @@ M: Vâng, bạn sẽ bay thẳng đến Bắc Kinh. Hướng dẫn viên của b
 W: Nghe tuyệt quá! Chúng ta sẽ sử dụng phương tiện giao thông nào để đi từ nơi này đến nơi khác?<br>\
 M: Bạn sẽ đi xe buýt với nhóm du lịch của mình. <br>\
 W: Được. Tôi có thể đặt tour du lịch trọn gói này ngay bây giờ không? Sẽ có năm người chúng tôi tham gia chuyến đi này.<br>M: Chắc chắn rồi!',
-voca:"airport,a lot of sightseeing,hotel,transport,landmark,bus,package,tour,fly,the Forbidden City,the Great Wall"
+voca:"airport,a lot of sightseeing,hotel,transport,landmark,bus,package,tour,guide,fly,Forbidden City,Great Wall,Summer Palace,one place to another"
 },
 {
 	en:'Unit 39 Taking the Train<br>\
@@ -981,200 +895,6 @@ M: Bạn có thấy chán những chuyến đi dài trên ô tô không? Bạn c
 Bạn có thích ngắm nhìn những kỳ quan nhân tạo không?<br>\
 Đi du ngoạn đến Kênh đào Panama! Bạn có muốn ngắm những tảng băng trôi không? Bạn có muốn ngắm hải cẩu và cá voi không? Hãy đi du ngoạn đến Alaska!<br>\
 Dù bạn chọn đi đâu, du ngoạn là một cách tuyệt vời để đi du lịch. Đặt chuyến đi trên du thuyền ngay hôm nay! Bạn sẽ thích!',
-voca:"cruise,whale,man-made,autumn,northeast,wherever,compass,mammal,wonder,the Panama Canal,Go late in the year,sight"
+voca:"cruise[n],whale,man-made,autumn,northeast,wherever,compass,mammal,wonder,the Panama Canal,Go late in the year,sight"
 },
-	   ];
-
-
-	$scope.range = function(min, max, step) {
-	    step = step || 1;
-	    var input = [];
-	    for (var i = min; i <= max; i += step) {
-	        input.push(i);
-	    }
-	    return input;
-	};
-
-	 $scope.storyIdx = 0;
-	 $scope.bPlayingSentence = false;
-
-	 $scope.bPlayingFull = false;
-	 $scope.bPause = false;
-	 $scope.bShowVi = 0;
-	 $scope.bHiddenWords = 0;
-	 $scope.audio;
-	 $scope.currentTime = 0;
-    
-	$scope.units = [
-		{'title':"Nature", 'num': 1},
-		{'title':"Science", 'num':6},
-		{'title':"Art", 'num': 11},
-		{'title':"Leisure", 'num':16},
-		{'title':"School", 'num':21},
-		{'title':"People", 'num':26},
-		{'title':"Sports", 'num':31},
-		{'title':"Travel", 'num':36},
-	];
-
-
-	$scope.resetFlag = function () {
-		$scope.bPlayingFull = false;
-		$scope.bPause = false;
-		$scope.bShowVi = 0;
-		$scope.bHiddenWords = 0;
-	}	
-
-	$scope.backSound = function (sec) {
-		$scope.audio.currentTime = $scope.audio.currentTime + sec;
-	}
-
-	$scope.resetAudioBtnUI = function()
-	{
-		$scope.bPause=false;
-        $scope.bPlayingFull=false;
-
-        var isChkLoopChecked = false;
-        if (localStorage.hasOwnProperty("isChecked")) {
-			isChkLoopChecked = localStorage.isChecked;
-		}
-        if (isChkLoopChecked=='true')
-        {
-        	$scope.playFullSound($scope.storyIdx);
-        }
-
-        $scope.$apply();
-	}
-
-	$scope.playFullSound = function (index) {
-		if ($scope.bPlayingFull)
-		{
-			$scope.stopSound();
-			$scope.bPause=false;
-		}
-	  	else
-	  	{
-	  		$scope.audio = new Audio($scope.storyIdx + '.mp3');
-		    $scope.audio.loop = false;
-		    $scope.audio.play();
-
- 			$scope.audio.addEventListener("ended", function(){
-			   $scope.resetAudioBtnUI();
-			});
-
-		    $scope.bPlayingFull = true;
-	  	}
-	}
-
-	$scope.pauseSound = function () {
-		if (!$scope.audio) return;
-		$scope.bPause = !$scope.bPause;
-		if ($scope.bPause)
-	    {
-	    	$scope.audio.pause();
-	    	$scope.currentTime = $scope.audio.currentTime;
-	    }
-	    else
-	    {
-	    	$scope.audio.currentTime = $scope.currentTime;
-	    	$scope.audio.play();
-	    }
-	}
-
-	$scope.stopSound = function () {
-		if (!$scope.audio) return;
-		 $scope.audio.pause();
-		 $scope.audio.currentTime = 0;
-		 $scope.currentTime = 0;
-		 $scope.bPlayingFull = false;
-		 $scope.bPlayingSentence = false;
-	};
-
-	$scope.fetchStory = function (idx, reset=true) {
-		// when click 1.2.3..40
-		if (reset==true) 
-		{
-			$scope.resetFlag();
-			$scope.stopSound();
-		}
-		
-		$scope.storyIdx = idx;
-		$scope.story = $scope.stories[idx];
-
-		// show to website
-		// $scope.story.en|vi ~ origin [not edit]
-		$scope.story.enShow = '';
-		$scope.story.viShow = '';
-		$scope.story.en_hidden_words = '';
-
-		// bold title
-		var titleEn = $scope.story.en.split('<br>')[0];
-		$scope.story.enShow = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b>');
-
-		var titleVi = $scope.story.vi.split('<br>')[0];
-		$scope.story.viShow = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
-
-		//
-		$scope.story.en_hidden_words = $scope.story.en;
-
-		var words = $scope.story.en.match(/\b(\w+)\b/g);
-		var _wPosArr = [];   // index in Arr
-		var kDot = "";
-		var kSpace = "";
-		for (let i = 0; i < words.length; i++) {
-		  	var word = words[i];
-		  	if (validateWord(word)) 
-		  	{
-  				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
-  				if (rd % 5 == 0) {
-  					var _w = kSpace + word + kSpace;
-  					var idxOf = $scope.story.en.indexOf(_w);
-  					var obj = {'w': _w, "idx": idxOf}
-
-  					_wPosArr.push(obj);
-  				//	console.log(_w);
-  					
-  					kDot = kSpace + word.replace(/./g, ".") + kSpace;
-  				//	console.log(kDot);
-  					var s = $scope.story.en_hidden_words;
-
-  					let firstPart = s.substr(0, idxOf);
-				    let lastPart = s.substr(idxOf + kDot.length);
-				    let newString = firstPart + kDot + lastPart;
-
-  					$scope.story.en_hidden_words = newString;
-  				}
-		  	}
-		} // for
-		titleEn = $scope.story.en_hidden_words.split('<br>')[0];
-		$scope.story.en_hidden_words = $scope.story.en_hidden_words.replace(titleEn, '<b>' + titleEn + '</b>');
-
-		if ($scope.story.voca) {
-			var vocas = $scope.story.voca.split(',');
-			$scope.story.vocas = vocas;
-			for (var i = 0; i < vocas.length; i++) {
-				voca = vocas[i].trim();
-				var regex = new RegExp(`\\b${voca}` , 'g')
-				$scope.story.enShow = $scope.story.enShow.replace(regex, '<b>' + voca + '</b>');
-			}
-		}
-	}
-
-	function validateWord(word) 
-	{	
-		word = word.trim();
-		if (word.length < 4) return false;
-		let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
-		for (var i = 0; i < arr.length; i++) {
-			bList = arr[i];
-			if (word.toLowerCase().indexOf(bList) >= 0) return false;
-		}
-		return true;
-	}
-
-	$scope.fetchStory(0, false);
-
-    });
-
-</script>
-</html>
-
+];

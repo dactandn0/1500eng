@@ -1,0 +1,96 @@
+<!-- (<br>\w+)<br>\s+(<br>\w+)<br>\s+(.+) -->
+<!-- {word: "$1", types: "$2", mean: "$3"}, -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LPTD 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+
+  <script type="text/javascript" src="cd1_data.js"></script>
+  <script type="text/javascript" src="cd2_data.js"></script>
+  <script type="text/javascript" src="ctrlJS.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="ctrl" class="container mt-4">
+    <h4 class="mb-4">LPTD CD1-4</h4>
+
+    	<a href="../index.html" class="mr-4">Home</a>
+
+    	<form name="cdForm" class="my-3" role="group">
+    		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>
+        	<input type="radio" name="radioCD" value="2" onchange="radioCDChange(2)" /><span class="mr-3">2</span>
+        	<input type="radio" name="radioCD" value="3" onchange="radioCDChange(3)" /><span class="mr-3">3</span>
+        	<input type="radio" name="radioCD" value="4" onchange="radioCDChange(4)" />4
+    	</form>
+
+    	<div class="my-3">
+		    <div ng-repeat="u in units"> {{u.title}}
+		    	 <a ng-repeat="n in range(u.num, u.num + 4)" ng-click="fetchStory(n-1);" href=""> {{n}} &nbsp|
+		    	</a>
+		    </div>
+		    <br> 
+		    <label> <input id="audioLoopEle" class="my-3" type="checkbox" onclick="chkClick()">&nbspLoop</label>
+		    	<span class="btnShowVi opa">
+		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
+		    	</span>
+
+		        <span ng-show="!bShowVi" class="btnEnVi opa">
+		        	<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
+    				<p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p>
+    			</span>
+		 </div>
+
+		<span  class="btnPlay opa">
+			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
+		</span>
+
+    	<span ng-show="bPlayingFull" class="btnSound opa">
+    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-5)">-5s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(5)">+5s</button></p>
+    	</span>
+
+
+		<div class="card mt-4">
+		    <div class="card-body">
+	          <div class="card-text my-2">
+	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
+	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
+	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
+	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
+	           	
+	        	<div class="mt-1" ng-if="story.vocaNotes">
+	          		<hr/>
+	          		<p ng-bind-html="story.vocaNotes"></p>
+	          	</div>
+	          	
+	          	
+	          </div> <!-- card-text -->
+        	</div> 		<!-- card-body -->
+		 </div> <!-- card -->
+    </div> <!-- container -->
+</body>
+
+</html>
+
+<script type="text/javascript">
+function chkClick()
+{	
+	var chk =  document.getElementById('audioLoopEle');
+	localStorage.setItem("lptd_isAudioLoop", chk.checked);
+	console.log("lptd_isAudioLoop saved storage = ", chk.checked );
+}
+</script>

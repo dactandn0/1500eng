@@ -834,7 +834,7 @@ B : Chỉ mất khoảng bốn giờ lái xe nếu bạn đi trên đường cao
 G : Chắc chắn là một chuyến đi dễ dàng. Khi nào bạn đi?<br>\
 B: Chúng tôi sẽ đi vào sáng thứ Bảy. Chúng tôi sẽ trở về vào tối thứ Hai.<br>\
 G: Chúc bạn có thời gian vui vẻ! Mang cho tôi một ít hồ đào nhé!',
-voca:"south,morning,city,evening,directly,nut[​seed |bead | corn],pecan,bring,make for,look forward to"
+voca:"south,nut[​seed |bead | corn],pecan,bring,makes for,looking forward to"
 },
 {
 	en:'Unit 38 The Travel Agent<br>\

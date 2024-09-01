@@ -1,4 +1,8 @@
 
+function MYLOG(msg) {
+	console.log(msg);
+}
+
 var app = angular.module("myApp", ['ngSanitize']);
 app.controller("ctrl", function($scope, $timeout) {
 
@@ -7,11 +11,12 @@ radioCDChange = function (cd) {
 	switch (cd) {
 		case 1: kSTORIES = cd1_stories; break;
 		case 2: kSTORIES = cd2_stories; break;
-		case 3: kSTORIES = cd2_stories; break;
-		case 4: kSTORIES = cd2_stories; break;
+		case 3: kSTORIES = []; break;
+		case 4: kSTORIES = []; break;
 	}
 	localStorage.setItem("lptd_cd", cd);
-	console.log("localStorage saved CD= ", cd);
+	$scope.cd = cd;
+	MYLOG("localStorage saved CD= " + cd);
 }
 
 $scope.cd = 1;
@@ -120,7 +125,7 @@ $scope.stopSound = function () {
 };
 
 $scope.fetchStory = function (idx, reset=true) {
-	console.log('fetchStory');
+	MYLOG('fetchStory');
 	// when click 1.2.3..40
 	if (reset==true) 
 	{
@@ -132,11 +137,10 @@ $scope.fetchStory = function (idx, reset=true) {
 	$scope.storyIdx = idx;
 	$scope.story = $scope.stories[idx];
 
-	if (!$scope.story) {console.log('Dont have Unit'); return;}
 	// save DB
 	localStorage.setItem("lptd_unit", idx);
-	console.log("localStorage save unit=" + idx);
-
+	MYLOG("localStorage save unit=" + idx);
+	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	// show to website
 	// $scope.story.en|vi ~ origin [not edit]
 	$scope.story.enShow = '';
@@ -168,10 +172,10 @@ $scope.fetchStory = function (idx, reset=true) {
 					var obj = {'w': _w, "idx": idxOf}
 
 					_wPosArr.push(obj);
-				//	console.log(_w);
+				//	MYLOG(_w);
 					
 					kDot = kSpace + word.replace(/./g, ".") + kSpace;
-				//	console.log(kDot);
+				//	MYLOG(kDot);
 					var s = $scope.story.en_hidden_words;
 
 					let firstPart = s.substr(0, idxOf);
@@ -190,11 +194,12 @@ $scope.fetchStory = function (idx, reset=true) {
 		$scope.story.vocaNotes = [];
 		for (var i = 0; i < vocas.length; i++) {
 			voca = vocas[i].trim();
-			if (voca.indexOf("[") >= 0) {
-				voca = voca.replace(/\s*\|\s*/g, ", ");
-				voca = voca.replace(/\s*\[\s*/g, " : ");
-				voca = voca.replace(/\s*\]\s*/g, "");
-				$scope.story.vocaNotes.push(voca);
+			var temp = voca;
+			if (temp.indexOf("[") >= 0) {
+				temp = temp.replace(/\s*\|\s*/g, ", ");
+				temp = temp.replace(/\s*\[\s*/g, " : ");
+				temp = temp.replace(/\s*\]\s*/g, "");
+				$scope.story.vocaNotes.push(temp);
 			}
 			voca = voca.replace(/\[.*\]/g, '').trim();
 			var regex = new RegExp(`\\b${voca}` , 'g')
@@ -216,21 +221,22 @@ function validateWord(word)
 }
 
 $scope.loadData = function () {
-	console.log('loadData');
+	MYLOG('loadData');
 	if (localStorage.hasOwnProperty("lptd_isAudioLoop")) {
 		document.getElementById('audioLoopEle').checked = localStorage.lptd_isAudioLoop === 'true';
 	}
 
 	if (localStorage.hasOwnProperty("lptd_cd")) {
 		var cd = localStorage.lptd_cd;
-		console.log("localStorage load CD=" + cd);
+		MYLOG("localStorage load CD=" + cd);
 		radioCDChange(parseInt(cd));
 		document.cdForm.radioCD.value=cd;
+		$scope.cd=cd;
 	}
 
 	if (localStorage.hasOwnProperty("lptd_unit")) {
 		idx = localStorage.lptd_unit;
-		console.log("localStorage load unit=" + idx);
+		MYLOG("localStorage load unit=" + idx);
 		$scope.storyIdx = parseInt(idx);
 	}
 

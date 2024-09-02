@@ -3,17 +3,20 @@ const cd2_stories = [
 {
 	en: 
 	'Unit 1 Antarctica<br>\
-B : Antarctica is another name for the South Pole. It is also a continent. A long time ago, the South Pole was close to the equator. That was 500 million years ago. It was once joined to Australia. Then, all the land on Earth started to move. Antarctica moved away from Australia and went south. <br>\
+Antarctica is another name for the South Pole. It is also a continent. A long time ago, the South Pole was close to the equator.\
+ That was 500 million years ago. It was once joined to Australia. Then, all the land on Earth started to move. Antarctica moved away from Australia and went south. <br>\
 Dinosaur bones were once found at the South Pole. Do you know why? Dinosaurs lived there millions of years ago. This was before it moved away from the equator. <br>\
-About 98% of this continent is frozen. The rest is made up of rock. The South Pole has 87% of the world’s ice. But did you know that it gets very little snow? Only about two inches of snow falls each year.<br>\
-How many people live on your continent? No one lives in the South Pole. Only animals, like penguins, live there. Scientists and tourists visit there, but they don’t stay long. Do you want to visit Antarctica? It is the coldest, driest place on Earth!',
+About 98% of this continent is frozen. The rest is made up of rock. The South Pole has 87% of the world’s ice. \
+But did you know that it gets very little snow? Only about two inches of snow falls each year.<br>\
+How many people live on your continent? No one lives in the South Pole. Only animals, like penguins, live there.\
+ Scientists and tourists visit there, but they don’t stay long. Do you want to visit Antarctica? It is the coldest, driest place on Earth!',
 	vi: 
 	'Đơn vị 1 Nam Cực<br>\
-B: Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục địa. Cách đây rất lâu, Nam Cực nằm gần đường xích đạo. Đó là 500 triệu năm trước. Nó từng được nối với Úc. Sau đó, toàn bộ đất liền trên Trái Đất bắt đầu di chuyển. Nam Cực rời xa Úc và di chuyển về phía nam. <br>\
+Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục địa. Cách đây rất lâu, Nam Cực nằm gần đường xích đạo. Đó là 500 triệu năm trước. Nó từng được nối với Úc. Sau đó, toàn bộ đất liền trên Trái Đất bắt đầu di chuyển. Nam Cực rời xa Úc và di chuyển về phía nam. <br>\
 Xương khủng long từng được tìm thấy ở Nam Cực. Bạn có biết tại sao không? Khủng long đã sống ở đó hàng triệu năm trước. Trước khi nó di chuyển ra khỏi đường xích đạo. <br>\
 Khoảng 98% lục địa này bị đóng băng. Phần còn lại được tạo thành từ đá. Nam Cực có 87% băng trên thế giới. Nhưng bạn có biết rằng nơi này có rất ít tuyết không? Chỉ có khoảng hai inch tuyết rơi mỗi năm.<br>\
 Có bao nhiêu người sống trên lục địa của bạn? Không ai sống ở Nam Cực. Chỉ có động vật, như chim cánh cụt, sống ở đó. Các nhà khoa học và khách du lịch đến thăm nơi này, nhưng họ không ở lại lâu. Bạn có muốn đến thăm Nam Cực không? Đây là nơi lạnh nhất và khô nhất trên Trái Đất!',
-	voca:'South Pole,500 million years,Scientist,equator,tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls'
+	voca:'South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
 },
 {
 	en: 

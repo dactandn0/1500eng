@@ -106,7 +106,11 @@ const cd1_stories = [
 {
 en:'Unit 5 Trees in the Forest<br>\
 	B : There are many forests in North America. There are many trees in these forests. Some of these trees are more than two hundred feet tall.<br>\
-	Some are over five hundred years old. Several kinds of trees grow in these forests. Fir, cedar, and pine are three. These trees grow in different areas. Some grow in forests. Some grow on the mountains. People who lived in this place long ago used these trees to make things out of wood. Many of these trees are now in special areas. These areas are called forest reserves or national parks. Some parks charge a small entrance fee. Visitors must pay the fee to enter the parks. Then they can walk among the beautiful old trees. They must take care not to damage the trees. We should all take care of forests.'
+	Some are over five hundred years old. Several kinds of trees grow in these forests. Fir, cedar, and pine are three. These trees grow in different areas.\
+	Some grow in forests. Some grow on the mountains. People who lived in this place long ago used these trees to make things out of wood.\
+	 Many of these trees are now in special areas. These areas are called forest reserves or national parks. Some parks charge a small entrance fee.\
+	  Visitors must pay the fee to enter the parks. Then they can walk among the beautiful old trees.\
+	   They must take care not to damage the trees. We should all take care of forests.'
 ,
 vi:'Bài 5 Cây trong rừng<br>\
 B: Có nhiều khu rừng ở Bắc Mỹ. Có nhiều cây trong những khu rừng này. Một số cây này cao hơn hai trăm feet.<br>\
@@ -117,7 +121,7 @@ Nhiều loại cây này hiện nằm ở những khu vực đặc biệt.<br>\
 Những khu vực này được gọi là khu bảo tồn rừng hoặc công viên quốc gia.<br>\
 Một số công viên thu một khoản phí vào cửa nhỏ. Du khách phải trả phí để vào công viên.<br>\
 Sau đó, họ có thể đi bộ giữa những cây cổ thụ tuyệt đẹp. Họ phải cẩn thận không làm hỏng cây. Tất cả chúng ta nên chăm sóc rừng.',
-voca:"forest,several,visitor,hundred,feet,fee,damage,reserve,national,entrance,take care of"
+voca:"forest,several,visitor,hundred,feet,fee,damage,reserve,national,entrance,take care of,make,out of[make out of: làm ra từ|make up of: tạo nên từ]"
 }
 ,
 {

@@ -37,8 +37,9 @@
     	</form>
 
     	<div class="my-3">
-		    <div ng-repeat="u in units"> {{u.title}}
-		    	 <a ng-repeat="n in range(u.num, u.num + 4)" class="unit" ng-click="fetchStory(n-1);" href=""> {{n}} &nbsp|
+		    <div ng-repeat="u in units" style="text-align: right;" class="col-md-4">
+		    	<span class="mr-2">{{u.title}}</span>
+		    	 <a ng-repeat="n in range(u.num, u.num + 4)"  ng-click="fetchStory(n-1);" href="" class="p-2 mr-1"> [{{n}}]
 		    	</a>
 		    </div>
 		    <br> 

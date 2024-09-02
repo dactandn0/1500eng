@@ -11,6 +11,17 @@ $scope.bPlayingFull = false;
 $scope.bPause = false;
 
 $scope.audio;
+$scope.acc=0;
+
+$scope.acc_isShow = function (id) {
+	return $scope.acc===id;
+};
+
+$scope.acc_click = function (id) {
+	if($scope.acc===id) $scope.acc=-1;
+	else
+		$scope.acc=id;
+};
 
 $scope.stopSound = function () {
 	if (!$scope.audio) return;

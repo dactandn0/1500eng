@@ -71,10 +71,12 @@
 	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
 	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
 	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
-	           	
+
 	        	<div class="mt-1" ng-if="story.vocaNotes">
-	          		<hr/>
-	          		<p ng-bind-html="story.vocaNotes"></p>
+	           	<hr/>
+	        		<p  class="mb-1"  ng-repeat="(index, note) in story.vocaNotes">
+	          			{{note}}
+	          		</p>
 	          	</div>
 	          	
 	          </div> <!-- card-text -->

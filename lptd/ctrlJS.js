@@ -1,6 +1,6 @@
 
 function MYLOG(msg) {
-	console.log(msg);
+//	console.log(msg);
 }
 
 var app = angular.module("myApp", ['ngSanitize']);

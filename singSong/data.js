@@ -22,7 +22,7 @@ var SONGS =
 		]
 	},
 	{
-		title:"Sealed with a Kiss",
+		title:"SealedWithAKiss",
 		lyrics: 
 		[
 			{txt:"Though we've gotta say goodbye.For the summer.Darling, I promise you this.I'll send you all my love.Every day in a letter.Sealed with a kiss.", time: 10},

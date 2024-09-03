@@ -1,10 +1,9 @@
-<!-- (<br>\w+)<br>\s+(<br>\w+)<br>\s+(.+) -->
-<!-- {word: "$1", types: "$2", mean: "$3"}, -->
+<!-- bridge+complete ielst [Englab] -->
 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LPTD 1-4</title>
+  <title>Bridge & Complete Ielts</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -17,29 +16,26 @@
 
   <link rel="stylesheet" type="text/css" href="../styles.css">
 
-  <script type="text/javascript" src="cd1_data.js"></script>
-  <script type="text/javascript" src="cd2_data.js"></script>
+  <script type="text/javascript" src="bridge_cd1.js"></script>
+  <script type="text/javascript" src="bridge_cd2.js"></script>
   <script type="text/javascript" src="ctrlJS.js"></script>
 
 </head>
 
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
-    <h5 class="mb-4">LPTD CD1-4</h5>
+    <h5 class="mb-4">Bridge & Complete Ielts</h5>
 
     	<a href="../index.html" class="mr-4">Home</a>
 
     	<form name="cdForm" class="my-3" role="group">
-    		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>
-        	<input type="radio" name="radioCD" value="2" onchange="radioCDChange(2)" /><span class="mr-3">2</span>
-        	<input type="radio" name="radioCD" value="3" onchange="radioCDChange(3)" /><span class="mr-3">3</span>
-        	<input type="radio" name="radioCD" value="4" onchange="radioCDChange(4)" />4
+    		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-2">B_CD1</span>
+    		<!-- <input type="radio" name="radioCD" value="2" onchange="radioCDChange(2)" checked/><span class="mr-2">Bridge_CD2</span> -->
     	</form>
 
     	<div class="my-3">
-		    <div ng-repeat="u in units" style="text-align: right;" class="col-md-4">
-		    	<span class="mr-2">{{u.title}}</span>
-		    	 <a ng-repeat="n in range(u.num, u.num + 4)"  ng-click="fetchStory(n-1);" href="" class="p-2 mr-1"> [{{n}}]
+		    <div class="col-md-12">
+		    	 <a ng-repeat="n in range(1, 14)"  ng-click="fetchStory(n-1);" href="" class="pr-2 mr-1" ng-class="isLongTrack(n-1) ? 'text-warning font-weight-bold' : 'text-muted'"> [{{n}}]
 		    	</a>
 		    </div>
 		    <br> 
@@ -48,10 +44,10 @@
 		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
 		    	</span>
 
-		        <span ng-show="!bShowVi" class="btnEnVi opa">
+		     <!--    <span ng-show="!bShowVi" class="btnEnVi opa">
 		        	<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
     				<p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p>
-    			</span>
+    			</span> dont use -->
 		 </div>
 
 		<span  class="btnPlay opa">
@@ -92,7 +88,7 @@
 function chkClick()
 {	
 	var chk =  document.getElementById('audioLoopEle');
-	localStorage.setItem("lptd_isAudioLoop", chk.checked);
-	console.log("lptd_isAudioLoop saved storage = ", chk.checked );
+	localStorage.setItem("bri_complete_isAudioLoop", chk.checked);
+//	console.log("bri_complete_isAudioLoop saved storage = ", chk.checked );
 }
 </script>

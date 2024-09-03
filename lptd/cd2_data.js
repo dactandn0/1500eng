@@ -16,7 +16,7 @@ Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục đ�
 Xương khủng long từng được tìm thấy ở Nam Cực. Bạn có biết tại sao không? Khủng long đã sống ở đó hàng triệu năm trước. Trước khi nó di chuyển ra khỏi đường xích đạo. <br>\
 Khoảng 98% lục địa này bị đóng băng. Phần còn lại được tạo thành từ đá. Nam Cực có 87% băng trên thế giới. Nhưng bạn có biết rằng nơi này có rất ít tuyết không? Chỉ có khoảng hai inch tuyết rơi mỗi năm.<br>\
 Có bao nhiêu người sống trên lục địa của bạn? Không ai sống ở Nam Cực. Chỉ có động vật, như chim cánh cụt, sống ở đó. Các nhà khoa học và khách du lịch đến thăm nơi này, nhưng họ không ở lại lâu. Bạn có muốn đến thăm Nam Cực không? Đây là nơi lạnh nhất và khô nhất trên Trái Đất!',
-	voca:'South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
+	voca:'Dinosaur,South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
 },
 {
 	en: 
@@ -519,6 +519,76 @@ Trường học tại nhà có nhiều lợi ích.<br>\
 Trường học tại nhà rất nhỏ. Chỉ có một hoặc hai học sinh. Cha mẹ hoặc cha của học sinh là giáo viên. Một lợi ích khác là học sinh có thể học những điều thú vị.<br>\
 Một số người nghĩ rằng trường học tại nhà không tốt cho học sinh. Họ tin rằng trường công dạy cho trẻ tính kỷ luật. Họ cảm thấy trường công mang lại cảm giác cộng đồng. Cuối cùng, cha mẹ phải quyết định xem trường học tại nhà có phải là lựa chọn phù hợp cho con mình hay không."
 ,voca:"public,benefit,discipline,dangerous,reason,approve,firm,smoke,provide,community,level of education,home schooling"
+},
+{
+	en:"Unit 25 Big Brother.<br>\
+G : So, how does it feel to have a new baby brother in the house?.<br>\
+B : It’s really exciting, but not as easy as I thought it would be, because the baby cries constantly. I love my baby brother, but I don’t like all that noise!.<br>\
+G : I know! When my baby sister was born, she cried and slept all the time. I had to help change diapers and feed her..<br>\
+B : I hope I never have to change a diaper! My mom and dad do a good job of that. I learned how to heat the bottle to the right temperature, though. Having a new baby around is hard work..<br>\
+G : What do you like most about your new brother?.<br>\
+B : He’s really cute, and everyone says he looks like me, but with darker hair..<br>\
+G : Smaller too, of course!.<br>\
+B : He laughs when I tickle his little feet. When he grows up a bit, I’ll teach him how to ride a bicycle, and we can also play games together! I’m going to be the best big brother in the world!",
+vi:"Bài 25 Anh cả.<br>\
+G: Vậy, cảm giác có một em trai mới trong nhà thế nào?.<br>\
+B: Thực sự rất thú vị, nhưng không dễ như tôi nghĩ, vì em bé khóc liên tục. Tôi yêu em trai mình, nhưng tôi không thích tiếng ồn như vậy!.<br>\
+G: Tôi biết mà! Khi em gái tôi chào đời, em khóc và ngủ suốt. Tôi phải giúp em thay tã và cho em bú..<br>\
+B: Tôi hy vọng mình không bao giờ phải thay tã! Bố mẹ tôi làm rất tốt việc đó. Tuy nhiên, tôi đã học được cách hâm nóng bình sữa đến đúng nhiệt độ. Có một đứa em mới ở bên thật là vất vả..<br>\
+G: Con thích nhất điều gì ở em trai mới của con?.<br>\
+B: Em ấy dễ thương lắm, và mọi người đều nói em ấy giống con, nhưng tóc sẫm màu hơn..<br>\
+G: Tất nhiên là nhỏ hơn nữa!.<br>\
+B: Em ấy cười khi con cù vào chân em ấy. Khi em ấy lớn hơn một chút, con sẽ dạy em ấy cách đi xe đạp, và chúng con cũng có thể chơi trò chơi cùng nhau! Con sẽ trở thành người anh trai tuyệt vời nhất thế giới!",
+voca:"diaper,tickle,cute,exciting,constantly,temperature,wet,feed a bit,look after"
+},
+{en:"Unit 26 The New Boss.<br>\
+M: You know, Kim, I think our new boss doesn’t like me. I don’t understand why..<br>\
+W: That’s not true, Trevor! Why, just this morning I heard her say you’re a very good employee. She said you work very hard every day..<br>\
+M: That’s news to me. I wish she would say it to me, but she just criticizes everything I do..<br>\
+W: I think that you’re being too sensitive..<br>\
+M: Do you really think so? Maybe I just need a vacation. I haven’t had one for years..<br>\
+W: It’s not good to work so hard, Trevor. I think a vacation is a great idea..<br>\
+M: How about you? Are you happy at work these days?.<br>\
+W: Yes, I’m really enjoying working for this new boss. That’s why I’m surprised that you think she criticizes your work. Actually, I think she is helping you to improve your work. She’s just trying to help..<br>\
+M: I didn’t realize that. Now that I think about it, you’re right. I feel much better..<br>\
+W: Good! Let’s go for lunch!"
+,vi:"Bài 26 Ông chủ mới.<br>\
+M: Bạn biết đấy, Kim, tôi nghĩ ông chủ mới của chúng ta không thích tôi. Tôi không hiểu tại sao..<br>\
+W: Không đúng đâu, Trevor! Tại sao, sáng nay tôi nghe cô ấy nói rằng bạn là một nhân viên rất tốt. Cô ấy nói rằng bạn làm việc rất chăm chỉ mỗi ngày..<br>\
+M: Điều đó mới với tôi. Tôi ước cô ấy nói với tôi điều đó, nhưng cô ấy chỉ trích mọi thứ tôi làm..<br>\
+W: Tôi nghĩ rằng bạn quá nhạy cảm..<br>\
+M: Bạn thực sự nghĩ vậy sao? Có lẽ tôi chỉ cần một kỳ nghỉ. Tôi đã không có kỳ nghỉ nào trong nhiều năm..<br>\
+W: Làm việc chăm chỉ như vậy không tốt, Trevor. Tôi nghĩ rằng một kỳ nghỉ là một ý tưởng tuyệt vời..<br>\
+M: Còn bạn thì sao? Bạn có vui vẻ khi làm việc những ngày này không?.<br>\
+W: Vâng, tôi thực sự thích làm việc cho ông chủ mới này. Đó là lý do tại sao tôi ngạc nhiên khi bạn nghĩ cô ấy chỉ trích công việc của bạn. Thực ra, tôi nghĩ cô ấy đang giúp bạn cải thiện công việc của mình. Cô ấy chỉ đang cố gắng giúp đỡ..<br>\
+M: Tôi không nhận ra điều đó. Bây giờ nghĩ lại, bạn đúng. Tôi cảm thấy tốt hơn nhiều..<br>\
+W: Tốt! Chúng ta đi ăn trưa nhé!",
+voca:"employee,sensitive,realize,criticize,improve,vacation,rather,responsibility,handwriting,messy"
+},
+{
+	en:"Unit 27 The Principal.<br>\
+W: How long have you been a school principal, Mr. Shin?.<br>\
+M: I have been a school principal for 18 years..<br>\
+W: What made you get involved in education?.<br>\
+M: When I was 12 years old, I read an article about how the human brain works. I studied very hard. I tried to use my brain well. Soon, I began to get interested in education..<br>\
+W: I see!.<br>\
+M: After college, I became a teacher. I was given the position of principal 12 years later..<br>\
+W: Do you ever wish that you had done something else?.<br>\
+M: When I first started as a principal, I missed being a teacher. I liked spending time with children and helping them learn and grow. However, I knew that I could do a lot of good as a principal..<br>\
+W: You have certainly done a lot of good, Mr. Shin! You started a special program to send all the students in your school to college!.<br>\
+M: I have been planning to do that for some time. I’m glad the program is so successful.",
+vi:"Bài 27 Hiệu trưởng.<br>\
+W: Thầy Shin, thầy đã làm hiệu trưởng trường bao lâu rồi?.<br>\
+M: Tôi đã làm hiệu trưởng trường được 18 năm..<br>\
+W: Điều gì khiến thầy tham gia vào giáo dục?.<br>\
+M: Khi tôi 12 tuổi, tôi đã đọc một bài báo về cách bộ não con người hoạt động. Tôi đã học rất chăm chỉ. Tôi đã cố gắng sử dụng bộ não của mình thật tốt. Chẳng bao lâu sau, tôi bắt đầu quan tâm đến giáo dục..<br>\
+W: Tôi hiểu rồi!.<br>\
+M: Sau khi tốt nghiệp đại học, tôi trở thành giáo viên. Tôi được giao chức hiệu trưởng sau 12 năm..<br>\
+W: Thầy có bao giờ ước mình đã làm một việc khác không?.<br>\
+M: Khi mới bắt đầu làm hiệu trưởng, tôi nhớ công việc giáo viên. Tôi thích dành thời gian cho trẻ em và giúp chúng học hỏi và phát triển. Tuy nhiên, tôi biết rằng tôi có thể làm được nhiều điều tốt với tư cách là một hiệu trưởng..<br>\
+W: Ông chắc chắn đã làm được nhiều điều tốt, thưa ông Shin! Ông đã khởi động một chương trình đặc biệt để gửi tất cả học sinh trong trường của ông đến trường đại học!.<br>\
+M: Tôi đã có kế hoạch làm điều đó trong một thời gian. Tôi rất vui vì chương trình đã thành công như vậy.",
+voca:"principal,program,brain,education,involved,college,protect,train,position,set up"
 }
 ];
 

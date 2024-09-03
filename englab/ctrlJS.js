@@ -6,15 +6,15 @@ function MYLOG(msg) {
 var app = angular.module("myApp", ['ngSanitize']);
 app.controller("ctrl", function($scope, $timeout) {
 
-var kSTORIES = cd1_stories;
+var kSTORIES = bridge_cd1;
 radioCDChange = function (cd) {
 	switch (cd) {
-		case 1: kSTORIES = cd1_stories; break;
-		case 2: kSTORIES = cd2_stories; break;
+		case 1: kSTORIES = bridge_cd1; break;
+		case 2: kSTORIES = bridge_cd2; break;
 		case 3: kSTORIES = []; break;
 		case 4: kSTORIES = []; break;
 	}
-	localStorage.setItem("lptd_cd", cd);
+	localStorage.setItem("bri_complete_cd", cd);
 	$scope.cd = cd;
 	MYLOG("localStorage saved CD= " + cd);
 }
@@ -41,14 +41,7 @@ $scope.range = function(min, max, step) {
  $scope.currentTime = 0;
 
 $scope.units = [
-	{'title':"Nature", 'num': 1},
-	{'title':"Science", 'num':6},
-	{'title':"Art", 'num': 11},
-	{'title':"Leisure", 'num':16},
-	{'title':"School", 'num':21},
-	{'title':"People", 'num':26},
-	{'title':"Sports", 'num':31},
-	{'title':"Travel", 'num':36},
+	{'title':"", 'num': 1},
 ];
 
 $scope.resetFlag = function () {
@@ -68,8 +61,8 @@ $scope.resetAudioBtnUI = function()
     $scope.bPlayingFull=false;
 
     var isChkLoopChecked = false;
-    if (localStorage.hasOwnProperty("lptd_isAudioLoop")) {
-		isChkLoopChecked = localStorage.lptd_isAudioLoop;
+    if (localStorage.hasOwnProperty("bri_complete_isAudioLoop")) {
+		isChkLoopChecked = localStorage.bri_complete_isAudioLoop;
 	}
     if (isChkLoopChecked=='true')
     {
@@ -136,7 +129,7 @@ $scope.fetchStory = function (idx, reset=true) {
 	$scope.story = $scope.stories[idx];
 
 	// save DB
-	localStorage.setItem("lptd_unit", idx);
+	localStorage.setItem("bri_complete_unit", idx);
 	MYLOG("localStorage save unit=" + idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	// show to website
@@ -218,22 +211,33 @@ function validateWord(word)
 	return true;
 }
 
+
+$scope.isLongTrack = function(idx) {
+	var track = $scope.stories[idx];
+	var lengthCount = track.en.length;
+	if (lengthCount > 800 )
+	{
+			return true;
+	}
+	return false;
+}
+
 $scope.loadData = function () {
 	MYLOG('loadData');
-	if (localStorage.hasOwnProperty("lptd_isAudioLoop")) {
-		document.getElementById('audioLoopEle').checked = localStorage.lptd_isAudioLoop === 'true';
+	if (localStorage.hasOwnProperty("bri_complete_isAudioLoop")) {
+		document.getElementById('audioLoopEle').checked = localStorage.bri_complete_isAudioLoop === 'true';
 	}
 
-	if (localStorage.hasOwnProperty("lptd_cd")) {
-		var cd = localStorage.lptd_cd;
+	if (localStorage.hasOwnProperty("bri_complete_cd")) {
+		var cd = localStorage.bri_complete_cd;
 		MYLOG("localStorage load CD=" + cd);
 		radioCDChange(parseInt(cd));
 		document.cdForm.radioCD.value=cd;
 		$scope.cd=cd;
 	}
 
-	if (localStorage.hasOwnProperty("lptd_unit")) {
-		idx = localStorage.lptd_unit;
+	if (localStorage.hasOwnProperty("bri_complete_unit")) {
+		idx = localStorage.bri_complete_unit;
 		MYLOG("localStorage load unit=" + idx);
 		$scope.storyIdx = parseInt(idx);
 	}

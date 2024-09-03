@@ -167,7 +167,7 @@ Etsuko: Well, there are amazing snow sculptures all over the city and there is e
 Ahmed: Well I don't! What's interesting about an ice palace? It's boring.<br>\
 Etsuko: OK but you like sport - there's a canoe race across the St Lawrence River. It's one of the main attractions - it's very exciting!<br>\
 Ahmed: I like playing sport - I don't like watching it. And I hate watching sport in the cold!<br>\
-Etsuko: So you don't want to see the snow bathers then ... <br>\
+Etsuko: So you don't want to see the snow bathers then... <br>\
 Ahmed: Snow bathers? Do you mean people actually have a bath in the snow!<br>\
 Etsuko: Yes, can you imagine? Isn't that awful?<br>\
 Ahmed: I feel freezing cold just thinking about it.<br>\
@@ -319,7 +319,7 @@ Grant: Thank you for coming today, Pilar.<br>\
 Pilar: My pleasure.<br>\
 Grant: Well, let's start. So the job is with Student Services - we're part of the university that tries to help the students with any problems.<br>\
 Pilar: Yes, I looked at Student Services on the Internet.<br>\
-Grant: Oh, really good. Now, you have an MBA...<br>\
+Grant: Oh, really good. Now, you have an MBA.<br>\
 Pilar: Yes, from the University of Santiago. I really enjoyed doing it.<br>\
 Grant: Yes, Spain is a wonderful country.<br>\
 Pilar: Chile.<br>\
@@ -353,7 +353,7 @@ Grant: Cảm ơn bạn đã đến hôm nay, Pilar.<br>\
 Pilar: Rất vui được phục vụ bạn.<br>\
 Grant: Vâng, chúng ta hãy bắt đầu. Vậy thì công việc là với Dịch vụ sinh viên - chúng tôi là một phần của trường đại học cố gắng giúp đỡ sinh viên giải quyết mọi vấn đề.<br>\
 Pilar: Vâng, tôi đã xem Dịch vụ sinh viên trên Internet.<br>\
-Grant: Ồ, tốt lắm. Bây giờ, bạn có bằng MBA...<br>\
+Grant: Ồ, tốt lắm. Bây giờ, bạn có bằng MBA.<br>\
 Pilar: Vâng, từ Đại học Santiago. Tôi thực sự thích làm việc đó.<br>\
 Grant: Vâng, Tây Ban Nha là một quốc gia tuyệt vời.<br>\
 Pilar: Chile.<br>\
@@ -381,6 +381,166 @@ Grant: Bạn có kinh nghiệm lãnh đạo nhóm không?<br>\
 Pilar: Không, tôi không có. Nhưng tôi có kinh nghiệm lãnh đạo các dự án.<br>\
 Grant: Vậy, bạn có cảm thấy mình có thể quản lý một nhóm không?<br>\
 Pilar: Vâng, tôi chắc chắn mình có thể quản lý một nhóm tốt. Tôi có đủ kỹ năng để làm điều đó và tôi chắc chắn mình có thể làm tốt công việc.<br>\
-Grant: Được rồi, chúng ta hãy nói thêm về quản lý dự án của bạn..."
-}
+Grant: Được rồi, chúng ta hãy nói thêm về quản lý dự án của bạn."
+},
+{
+	en:"Track 1.15.<br>\
+1. I can manage a team..<br>\
+2. Harold can't get a job. 3 Can you speak French?.<br>\
+4. Yes, I can..<br>\
+5. Pilar can help too.<br>\
+6 Can you take an IELTS test?",
+vi:"Track 1.15.<br>\
+1 Tôi có thể quản lý một nhóm..<br>\
+2 Harold không thể xin được việc. 3 Bạn có thể nói tiếng Pháp không?.<br>\
+4 Có, tôi có thể..<br>\
+5 Pilar cũng có thể giúp.<br>\
+6. Bạn có thể làm bài kiểm tra IELTS không?"
+} , {} , {}, {}, {}, {}, {},
+{
+	en:"Track 1.22.<br>\
+Dr Sawyer: Good afternoon, everyone. Today Esra is talking about changes in education. Are you ready?.<br>\
+Esra: Yes, I think so..<br>\
+Dr Sawyer: OK, Esra, let's start.<br>\
+Esra: A big change in education in my country is that more women are going to university and colleges. This is happening in many countries. Today I'm talking about the UK.<br>\
+Dr Sawyer: Not your country?.<br>\
+Esra: No, Dr Sawyer - I'm taking another country as an example.<br>\
+Dr Sawyer: I see.<br>\
+Esra: So, some years ago in Britain the number of women in higher education went up until there were more.<br>\
+women than men. Today 49.2 per cent of women are now studying at university, with only 37.2 per cent of men at university.\
+ There is a 12% difference in the number of men and women at university in the UK. Two other things are important: the kind of qualification women get and the subjects they choose. The percentage of men getting a good degree at university is nearly 60%. But almost 64% of women at university are getting good degrees. Another important thing is that more men leave university early than women. Women students are successfully finishing their courses.<br>\
+Dr Sawyer: So what about the type of course? Is it still true that more men take science subjects than women?.<br>\
+Esra: Well, research shows that there are more women on most courses, especially in law and medicine. But in maths, \
+computer science and engineering there are more men than women. In computer science just under 20% of students are women and 80% are men. In engineering just 14% of students are women and 86% are men. So more men than women are taking science subjects. <br>\
+John: And is this just in Britain?.<br>\
+Esra: No, this is the same in many other countries and in Arab countries too. So one of the main changes in education\
+ is the rising number of women and the fact that women are doing well- this is something we can be proud of."
+,vi:"Track 1.22.<br>\
+Tiến sĩ Sawyer: Chào buổi chiều, mọi người. Hôm nay Esra sẽ nói về những thay đổi trong giáo dục. Các bạn đã sẵn sàng chưa?.<br>\
+Esra: Vâng, tôi nghĩ là vậy.<br>\
+Tiến sĩ Sawyer: Được rồi, Esra, chúng ta hãy bắt đầu.<br>\
+Esra: Một thay đổi lớn trong giáo dục ở đất nước tôi là ngày càng có nhiều phụ nữ vào đại học và cao đẳng. Điều này đang diễn ra ở nhiều quốc gia. Hôm nay tôi sẽ nói về Vương quốc Anh.<br>\
+Tiến sĩ Sawyer: Không phải đất nước của bạn sao?.<br>\
+Esra: Không, Tiến sĩ Sawyer - Tôi lấy một quốc gia khác làm ví dụ.<br>\
+Tiến sĩ Sawyer: Tôi hiểu rồi.<br>\
+Esra: Vậy là, vài năm trước ở Anh, số lượng phụ nữ theo học bậc giáo dục đại học đã tăng lên cho đến khi có nhiều hơn.<br>\
+phụ nữ hơn nam giới. Ngày nay, 49,2 phần trăm phụ nữ đang học đại học, trong khi chỉ có 37,2 phần trăm nam giới đang học đại học.\
+ Có sự khác biệt 12% về số lượng nam giới và nữ giới đang học đại học tại Vương quốc Anh. Hai điều quan trọng khác: loại bằng cấp mà phụ nữ nhận được và các môn học mà họ chọn. Tỷ lệ nam giới nhận được bằng cấp tốt tại trường đại học là gần 60%. Nhưng gần 64% phụ nữ đang học đại học đang nhận được bằng cấp tốt. Một điều quan trọng khác là nhiều nam giới rời trường đại học sớm hơn phụ nữ. Sinh viên nữ đang hoàn thành khóa học của mình một cách thành công.<br>\
+Tiến sĩ Sawyer: Vậy còn loại khóa học thì sao? Có còn đúng là nhiều nam giới học các môn khoa học hơn phụ nữ không?.<br>\
+Esra: Vâng, nghiên cứu cho thấy có nhiều phụ nữ hơn trong hầu hết các khóa học, đặc biệt là luật và y khoa. Nhưng trong toán học,\
+ khoa học máy tính và kỹ thuật thì có nhiều nam giới hơn phụ nữ. Trong khoa học máy tính, chỉ dưới 20% sinh viên là nữ và 80% là nam giới. Trong kỹ thuật, chỉ có 14% sinh viên là nữ và 86% là nam giới. Vì vậy, nam giới học các môn khoa học nhiều hơn nữ giới. .<br>\
+John: Và điều này chỉ xảy ra ở Anh thôi sao?.<br>\
+Esra: Không, điều này cũng xảy ra ở nhiều quốc gia khác và ở các quốc gia Ả Rập nữa. Vì vậy, một trong những thay đổi chính \
+trong giáo dục là số lượng phụ nữ ngày càng tăng và thực tế là phụ nữ đang làm tốt - đây là điều chúng ta có thể tự hào."
+} , {},{},
+{
+	en:"Track 1.25.<br>\
+Examiner: Can you tell me what you're studying at the moment, Adel?<br>\
+Adel: At the moment I am an undergraduate student. I'm studying biology at King Saud University in Riyadh in Saudi Arabia. It's a good place to learn\
+and I'm really enjoying my course. Biology is about living things. I'm interested in biology because I want to understand how life started. <br>\
+Examiner: Yun, tell me about your education.<br>\
+ Yun: I'm studying at the University of Wuhan in China. My subject is sociology - that's the study of society.\
+ It's a master's degree so it's quite difficult. I'm interested in it because society is changing very quickly in China. \
+ I want to understand how these changes affect us.<br>\
+  Examiner: Esra, can you tell me about what you're studying? <br>\
+ Esra: I'm from Oman, but I'm studying in Scotland at the University of Glasgow. It's a great place to study. I'm taking a masters in psychology educational psychology.\
+ Educational psychology is the study of how people learn in education. I want to find out why there are more women in education. I find it fascinating.",
+vi:"Track 1.25.<br>\
+Giám khảo: Bạn có thể cho tôi biết bạn đang học gì không, Adel?.<br>\
+Adel: Hiện tại tôi là sinh viên đại học. Tôi đang học ngành sinh học tại Đại học King Saud ở Riyadh, Ả Rập Xê Út. Đây là một nơi tốt để học\
+và tôi thực sự thích khóa học của mình. Sinh học là về các sinh vật sống. Tôi quan tâm đến sinh học vì tôi muốn hiểu sự sống bắt đầu như thế nào. <br>\
+Giám khảo: Yun, hãy cho tôi biết về quá trình học tập của bạn. <br>\
+Yun: Tôi đang học tại Đại học Vũ Hán ở Trung Quốc. Môn học của tôi là xã hội học - đó là nghiên cứu về xã hội.\
+Đó là bằng thạc sĩ nên khá khó. Tôi quan tâm đến nó vì xã hội đang thay đổi rất nhanh ở Trung Quốc. \
+Tôi muốn hiểu những thay đổi này ảnh hưởng đến chúng ta như thế nào. <br>\
+Giám khảo: Esra, bạn có thể cho tôi biết bạn đang học gì không? <br>\
+Esra: Tôi đến từ Oman, nhưng tôi đang học tại Đại học Glasgow ở Scotland. Đây là nơi tuyệt vời để học. Tôi đang học thạc sĩ về tâm lý học giáo dục.\
+Tâm lý học giáo dục là ngành nghiên cứu về cách mọi người học trong giáo dục. Tôi muốn tìm hiểu lý do tại sao có nhiều phụ nữ hơn trong giáo dục. Tôi thấy điều đó thật hấp dẫn.",
+voca:"masters in psychology educational psychology"
+}, {},
+{
+	en:"Track 1.27<br>\
+Tao: Sorry, can you help me?<br>\
+Karen: Sure.<br>\
+Tao: I'm trying to find the Business School.<br>\
+Karen: Oh, yes, the Business School. That's easy. You see that big, old building?<br>\
+Tao: Yes, it's amazing.<br>\
+Karen: That's the Gilbert Scott building. The Business School is in there.<br>\
+Tao: Thanks.<br>\
+Ann: Excuse me, I'm looking for the restaurant. Can you tell me where it is?<br>\
+Nikki: Sure, it's opposite the library. Can you see the modern building made of glass and stone?<br>\
+Ann: I think so. The one with green and blue glass?<br>\
+Nikki: Yes, that's it. That's the Fraser building - you can get sandwiches and hot food there.<br>\
+Pilar: Excuse me. Can you help me? I'm looking for the library.<br>\
+Lee: The main library?<br>\
+Pilar: Yes.<br>\
+Lee: OK. Look over there at that huge, tall, concrete building. That's the library. It's next to the art gallery.<br>\
+Pilar: Yes, I can see it.<br>\
+Lee: The information desk is at the front door. Pilar: Thanks.",
+vi:"Track 1.27<br>\
+Tao: Xin lỗi, bạn có thể giúp tôi không?<br>\
+Karen: Chắc chắn rồi.<br>\
+Tao: Tôi đang cố tìm Trường Kinh doanh.<br>\
+Karen: À, vâng, Trường Kinh doanh. Dễ thôi. Bạn thấy tòa nhà lớn, cũ kỹ kia không?<br>\
+Tao: Vâng, tuyệt lắm.<br>\
+Karen: Đó là tòa nhà Gilbert Scott. Trường Kinh doanh ở trong đó.<br>\
+Tao: Cảm ơn.<br>\
+Ann: Xin lỗi, tôi đang tìm nhà hàng. Bạn có thể chỉ cho tôi biết nó ở đâu không?<br>\
+Nikki: Chắc chắn rồi, nó nằm đối diện thư viện. Bạn có thấy tòa nhà hiện đại làm bằng kính và đá không?<br>\
+Ann: Tôi nghĩ là có. Tòa nhà có kính màu xanh lá cây và xanh lam?<br>\
+Nikki: Vâng, đúng rồi. Đó là tòa nhà Fraser - bạn có thể mua bánh sandwich và đồ ăn nóng ở đó.<br>\
+Pilar: Xin lỗi. Bạn có thể giúp tôi không? Tôi đang tìm thư viện.<br>\
+Lee: Thư viện chính à?<br>\
+Pilar: Vâng.<br>\
+Lee: Được rồi. Nhìn tòa nhà bê tông cao, đồ sộ kia kìa. Đó là thư viện. Nó nằm cạnh phòng trưng bày nghệ thuật.<br>\
+Pilar: Vâng, tôi có thể nhìn thấy nó.<br>\
+Lee: Quầy thông tin ở ngay cửa trước. Pilar: Cảm ơn.",
+voca:""
+},
+{
+	en:"Track 1.28<br>\
+Alan: Good evening and welcome to Great Designs, where we look at some amazing buildings. I'm Alan Davies, and tonight I'm talking to Professor Gu Ying about a building that wasn't here for a long time. In fact it was only here for six months but the ideas for the building are still with us today. Professor Gu Ying works in London, and knows all about the building of the Seed Cathedral - which many people visited in the Shanghai Expo. Professor Gu, welcome to the programme... How did the project start?<br>\
+Gu: Well, the seed bank in London was the starting point. We collected seeds from all over the world for the future. Then, in 2010 Thomas Heatherwick decided to use the seeds for the UK building in the Shanghai World Fair in China.<br>\
+Alan: It was an amazing building.<br>\
+Gu: Yes, it was. It was fantastic. There were thousands of clear plastic rods which were very flexible and moved in the wind. These rods weren't very big- in fact, they were very small- and there were seeds at the end of each rod. So, in the daytime, there was a lot of natural light in the building because sunlight came inside through the rods. And at night the rods lit up, as there was a small light inside each one. Alan: How many rods were there?<br>\
+Gu: I think there were about 60000.<br>\
+Alan: Was there any special reason for the design?<br>\
+Gu: Well, Heatherwick didn't want a lot of high technology in his building. He wanted to show the main idea of the Shanghai World Fair. This was 'Better City, Better Life. Alan: Better City, Better Life? A very simple idea!<br>\
+Gu: Yes, it was. He liked all the beautiful parks and gardens in the city of London, and he wanted to show that nature can make a city a better place to live in.<br>\
+Alan: Were you at the building when it was in Shanghai? Gu: Yes, I was. I was there many times.<br>\
+Alan: Was it very special?<br>\
+Gu: Yes, it was. It was very peaceful and quiet inside the cathedral. It was very popular - people loved the idea. Alan: What happened to all the seeds after the World Fair closed?<br>\
+Gu: Well, that's one of the best things about the whole project. After the fair, all the rods were presented to schools in China and the UK to keep. It really was a very great success.<br>\
+Alan: That's very good to know. Thank you very much for talking to me about it, Professor Gu.<br>\
+Gu: Thank you, Alan.",
+vi:"Track 1.28<br>\
+Alan: Chào buổi tối và chào mừng đến với Great Designs, nơi chúng ta sẽ xem một số tòa nhà tuyệt đẹp. Tôi là Alan Davies, và tối nay tôi sẽ nói chuyện với Giáo sư Gu Ying về một tòa nhà đã không còn tồn tại trong một thời gian dài. Trên thực tế, tòa nhà chỉ tồn tại trong sáu tháng nhưng ý tưởng về tòa nhà vẫn còn tồn tại cho đến ngày nay. Giáo sư Gu Ying làm việc tại London và biết tất cả về tòa nhà Seed Cathedral - nơi mà nhiều người đã đến thăm tại Triển lãm Thượng Hải. Giáo sư Gu, chào mừng đến với chương trình... Dự án bắt đầu như thế nào?<br>\
+Gu: Vâng, ngân hàng hạt giống ở London là điểm khởi đầu. Chúng tôi đã thu thập hạt giống từ khắp nơi trên thế giới cho tương lai. Sau đó, vào năm 2010, Thomas Heatherwick quyết định sử dụng hạt giống cho tòa nhà của Vương quốc Anh tại Hội chợ Thế giới Thượng Hải ở Trung Quốc.<br>\
+Alan: Đó là một tòa nhà tuyệt đẹp.<br>\
+Gu: Đúng vậy. Thật tuyệt vời. Có hàng nghìn thanh nhựa trong suốt rất mềm dẻo và có thể chuyển động theo gió. Những thanh này không lớn lắm - thực tế là chúng rất nhỏ - và có hạt giống ở cuối mỗi thanh. Vì vậy, vào ban ngày, có rất nhiều ánh sáng tự nhiên trong tòa nhà vì ánh sáng mặt trời chiếu vào qua các thanh. Và vào ban đêm, các thanh sáng lên vì có một ánh sáng nhỏ bên trong mỗi thanh. Alan: Có bao nhiêu thanh?<br>\
+Gu: Tôi nghĩ có khoảng 60000 thanh.<br>\
+Alan: Có lý do đặc biệt nào cho thiết kế này không?<br>\
+Gu: Vâng, Heatherwick không muốn có nhiều công nghệ cao trong tòa nhà của mình. Ông ấy muốn thể hiện ý tưởng chính của Hội chợ Thế giới Thượng Hải. Đó là 'Thành phố tốt hơn, Cuộc sống tốt hơn. Alan: Thành phố tốt hơn, Cuộc sống tốt hơn? Một ý tưởng rất đơn giản!<br>\
+Gu: Đúng vậy. Ông ấy thích tất cả các công viên và khu vườn xinh đẹp ở thành phố London và ông ấy muốn chứng minh rằng thiên nhiên có thể biến thành phố thành một nơi đáng sống hơn.<br>\
+Alan: Bạn có ở tòa nhà đó khi nó ở Thượng Hải không? Gu: Có chứ. Tôi đã đến đó nhiều lần.<br>\
+Alan: Có đặc biệt lắm không?<br>\
+Gu: Có chứ. Bên trong nhà thờ rất yên bình và tĩnh lặng. Nó rất được ưa chuộng - mọi người đều thích ý tưởng này. Alan: Chuyện gì đã xảy ra với tất cả các hạt giống sau khi Hội chợ Thế giới kết thúc?<br>\
+Gu: Vâng, đó là một trong những điều tuyệt vời nhất của toàn bộ dự án. Sau hội chợ, tất cả các thanh gỗ đã được tặng cho các trường học ở Trung Quốc và Vương quốc Anh để giữ lại. Đó thực sự là một thành công rất lớn.<br>\
+Alan: Thật tuyệt khi biết điều đó. Cảm ơn Giáo sư Gu rất nhiều vì đã nói chuyện với tôi về điều đó.<br>\
+Gu: Cảm ơn anh, Alan.",
+voca:""
+} , {}, {},
+{
+	en:"Track 1.31<br>\
+Kinga: A special building? Well, Sydney Opera House is very special for me. It's in Sydney, of course, in the east of Australia.\
+ What do I know about it? Well, it's a really spectacular building. The designer was from Denmark. I think his name was Jorn Utzon.\
+  He changed his plans for the building many times and the construction work took a long time-fifteen years I think! Why is it special for me? I love the shape of the roof. It's completely unique.\
+It's amazing in daylight and it looks very dramatic at night too. People from all over the world see it as a landmark of Australia. It represents my country and I'm very proud of it.",
+vi:"Track 1.31<br>\
+Kinga: Một tòa nhà đặc biệt ư? Vâng, Nhà hát Opera Sydney rất đặc biệt đối với tôi. Tất nhiên là nó ở Sydney, ở phía đông của Úc.\
+Tôi biết gì về nó? Vâng, đó là một tòa nhà thực sự ngoạn mục. Nhà thiết kế đến từ Đan Mạch. Tôi nghĩ tên ông ấy là Jorn Utzon.\
+Ông ấy đã thay đổi kế hoạch xây dựng tòa nhà nhiều lần và công trình xây dựng mất rất nhiều thời gian - tôi nghĩ là mười lăm năm! Tại sao nó lại đặc biệt đối với tôi? Tôi thích hình dạng của mái nhà. Nó hoàn toàn độc đáo.\
+Nó thật tuyệt vời vào ban ngày và trông cũng rất ấn tượng vào ban đêm. Mọi người trên khắp thế giới coi nó là một địa danh của Úc. Nó đại diện cho đất nước tôi và tôi rất tự hào về nó.",
+voca:""
+}, {}
 ];

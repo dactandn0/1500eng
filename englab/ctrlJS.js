@@ -131,7 +131,7 @@ $scope.fetchStory = function (idx, reset=true) {
 	// save DB
 	localStorage.setItem("bri_complete_unit", idx);
 	MYLOG("localStorage save unit=" + idx);
-	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
+	if (!$scope.story || !$scope.story.en) {MYLOG('Dont have Unit'); return;}
 	// show to website
 	// $scope.story.en|vi ~ origin [not edit]
 	$scope.story.enShow = '';
@@ -214,12 +214,13 @@ function validateWord(word)
 
 $scope.isLongTrack = function(idx) {
 	var track = $scope.stories[idx];
+	if (!track || !track.en) return 'text-muted';
 	var lengthCount = track.en.length;
 	if (lengthCount > 800 )
 	{
-			return true;
+			return 'text-danger';
 	}
-	return false;
+	return 'text-warning';
 }
 
 $scope.loadData = function () {

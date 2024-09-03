@@ -11,7 +11,7 @@ But did you know that it gets very little snow? Only about two inches of snow fa
 How many people live on your continent? No one lives in the South Pole. Only animals, like penguins, live there.\
  Scientists and tourists visit there, but they don’t stay long. Do you want to visit Antarctica? It is the coldest, driest place on Earth!',
 	vi: 
-	'Đơn vị 1 Nam Cực<br>\
+	'Bài 1 Nam Cực<br>\
 Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục địa. Cách đây rất lâu, Nam Cực nằm gần đường xích đạo. Đó là 500 triệu năm trước. Nó từng được nối với Úc. Sau đó, toàn bộ đất liền trên Trái Đất bắt đầu di chuyển. Nam Cực rời xa Úc và di chuyển về phía nam. <br>\
 Xương khủng long từng được tìm thấy ở Nam Cực. Bạn có biết tại sao không? Khủng long đã sống ở đó hàng triệu năm trước. Trước khi nó di chuyển ra khỏi đường xích đạo. <br>\
 Khoảng 98% lục địa này bị đóng băng. Phần còn lại được tạo thành từ đá. Nam Cực có 87% băng trên thế giới. Nhưng bạn có biết rằng nơi này có rất ít tuyết không? Chỉ có khoảng hai inch tuyết rơi mỗi năm.<br>\
@@ -30,7 +30,7 @@ W: What activity will we do when we get to the cabin on the mountain?<br>\
 M: Well, it takes seven hours to hike to the cabin, so it will be late by the time we arrive. After we unpack, we’ll start a campfire. Then we can sing, eat, and tell stories around the fire. The following day we’ll leave at dawn and hike to the top of the mountain. After we take pictures, we’ll hike back down. If we have time, we might go swimming in the lake on the mountain!<br>\
 W: Those sound like really fun activities, and I can’t wait to go!',
 	vi: 
-	'Đơn vị 2 Một chuyến đi bộ đường dài<br>\
+	'Bài 2 Một chuyến đi bộ đường dài<br>\
 M: Chào Anne! Bạn đã đăng ký chuyến đi vào thứ Bảy chưa?<br>\
 W: Chuyến đi nào vậy? Tôi không biết là có chuyến đi vào thứ Bảy.<br>\
 M: Câu lạc bộ đi bộ đường dài sẽ đến Bear Mountain. Xe buýt sẽ thả chúng ta xuống chân núi và chúng ta sẽ đi bộ cho đến khi đến một cabin ở giữa núi.<br>\
@@ -39,7 +39,7 @@ M: Đến gặp Jennifer. Cô ấy sẽ giúp bạn đăng ký.<br>\
 W: Chúng ta sẽ tham gia hoạt động gì khi đến cabin trên núi?<br>\
 M: À, phải mất bảy giờ để đi bộ đến cabin, vì vậy sẽ muộn khi chúng ta đến nơi. Sau khi dỡ đồ, chúng ta sẽ đốt lửa trại. Sau đó, chúng ta có thể hát, ăn và kể chuyện quanh đống lửa. Ngày hôm sau, chúng ta sẽ khởi hành lúc rạng sáng và đi bộ lên đỉnh núi. Sau khi chụp ảnh, chúng ta sẽ đi bộ xuống. Nếu có thời gian, chúng ta có thể đi bơi ở hồ trên núi!<br>\
 W: Nghe có vẻ là những hoạt động thực sự thú vị, và tôi rất mong được đi!',
-	voca:'trip,cabin,sign,up,activity,hike,club,receive,announcement,president,rent'
+	voca:'trip,cabin,sign,up,activity,hike,club,receive,announcement,president,rent,halfway up,campfire'
 },
 {
 	en:
@@ -73,12 +73,12 @@ If you’re lucky, you may see a yellow deer or a brown bear, two species that l
 There are so many birds to see. It is fun to go into the forest with binoculars to look at birds. Seeing the birds through binoculars makes them seem much nearer than they actually are. You can write down all of the species that you see. You should learn about their calls first. That means the sounds that each bird makes. Sometimes it’s hard to see the birds. However, you can identify them if you happen to hear them.<br>\
 I want to go back to Iran again someday. It’s so beautiful that I want to see and explore much more of it!',
 	vi:
-	'Đơn vị 4 Đi bộ đường dài ở Iran<br>\
+	'Bài 4 Đi bộ đường dài ở Iran<br>\
 G: Hầu hết mọi người nghĩ rằng Trung Đông chỉ là sa mạc. Điều này không đúng chút nào. Năm ngoái, tôi đã đi bộ đường dài ở Iran. Iran có nhiều núi. Bạn có thể tìm thấy những cái cây rụng lá vào mùa đông.<br>\
 Nếu may mắn, bạn có thể nhìn thấy một con hươu vàng hoặc một con gấu nâu, hai loài sống ở đó. Không khí trong lành và bạn có thể bơi trong những hồ nước trong vắt. Tôi thực sự khuyên bạn nên thử.<br>\
 Có rất nhiều loài chim để ngắm. Thật thú vị khi đi vào rừng với ống nhòm để ngắm chim. Nhìn thấy những chú chim qua ống nhòm khiến chúng có vẻ gần hơn nhiều so với thực tế. Bạn có thể viết ra tất cả các loài mà bạn nhìn thấy. Trước tiên, bạn nên tìm hiểu về tiếng kêu của chúng. Nghĩa là âm thanh mà mỗi loài chim tạo ra. Đôi khi rất khó để nhìn thấy những chú chim. Tuy nhiên, bạn có thể nhận dạng chúng nếu tình cờ nghe thấy chúng.<br>\
 Tôi muốn quay lại Iran một lần nữa vào một ngày nào đó. Nó đẹp đến nỗi tôi muốn được nhìn thấy và khám phá nhiều hơn nữa!',
-voca:"recommend,desert,happen,species,identify,binoculars,owl,definitely,actually,explore"
+voca:"recommend,desert,happen,species,identify,binoculars,owl,definitely,actually,explore,Middle East,much more of[a lof of]"
 },
 {
 en:'Unit 5 Jane Goodall<br>\
@@ -86,12 +86,12 @@ G : Jane Goodall went to Africa when she was 26 years old. She went there to res
 At first, Jane studied the chimps from far away. The chimps were afraid of her. They ran away if she came close to them. After some time, the chimps saw that she was not going to hurt them. They let her walk near them. Soon, she was living among them. She wanted to learn more and more about them. Jane did a lot of research on chimps. She discovered many new things about them. She learned that each chimp has its own personality. She saw that they have feelings.<br>\
 Jane discovered that chimps have very close families. Mothers and fathers take good care of baby chimps. An adult female chimp will sometimes adopt an orphan.<br>\
 In 1977, Jane started an institute to help protect animals. She wanted to help animals all around the world. Today, this institute runs programs in over 70 countries.',
-vi:'Đơn vị 5 Jane Goodall<br>\
+vi:'Bài 5 Jane Goodall<br>\
 G: Jane Goodall đã đến Châu Phi khi cô 26 tuổi. Cô đến đó để nghiên cứu về tinh tinh. Vào thời điểm đó, không có nhà khoa học nữ nào làm việc một mình ở đó.<br>\
 Lúc đầu, Jane nghiên cứu tinh tinh từ xa. Những con tinh tinh sợ cô. Chúng chạy trốn nếu cô đến gần chúng. Sau một thời gian, những con tinh tinh thấy rằng cô sẽ không làm hại chúng. Chúng để cô đi gần chúng. Chẳng mấy chốc, cô đã sống giữa chúng. Cô muốn tìm hiểu thêm về chúng. Jane đã nghiên cứu rất nhiều về tinh tinh. Cô đã khám phá ra nhiều điều mới mẻ về chúng. Cô biết rằng mỗi con tinh tinh đều có tính cách riêng. Cô thấy rằng chúng có cảm xúc.<br>\
 Jane phát hiện ra rằng tinh tinh có gia đình rất gắn bó. Những người mẹ và người cha chăm sóc rất tốt cho những con tinh tinh con. Một con tinh tinh cái trưởng thành đôi khi sẽ nhận nuôi một đứa trẻ mồ côi.<br>\
 Vào năm 1977, Jane đã thành lập một viện để giúp bảo vệ động vật. Cô muốn giúp đỡ các loài động vật trên khắp thế giới. Ngày nay, viện này triển khai chương trình ở hơn 70 quốc gia.',
-voca:"research,personality,adult,discover,institute,orphan,cave,afraid,chimp,adopt"
+voca:"research,personality,adult,discover,institute,orphan,cave,afraid,chimpanzees,chimp,adopt"
 },
 {
 en:'Unit 6 Flying Cars<br>\
@@ -346,7 +346,7 @@ W: Let’s watch it together this week. It’s on Thursday at eight o’clock, r
 M: That’s right, but where shall we watch it?<br>\
 W: Well, I have a big-screen TV and a comfortable sofa.<br>\
 M: OK, we’ll watch it at your place then, and I’ll bring some snacks. See you then!",
-vi:"Đơn vị 17 Xem TV<br>\
+vi:"Bài 17 Xem TV<br>\
 W: Bạn đã xem tập mới nhất của chương trình truyền hình thực tế mới tối qua chưa?<br>\
 M: Có rất nhiều chương trình truyền hình thực tế như vậy ngày nay. Bạn đang nói đến chương trình nào?<br>\
 W: Chương trình có tên là 'Good Fences' và toàn là về những người hàng xóm. Đây là chương trình truyền hình thực tế duy nhất tôi thích, vì bạn nói đúng, những chương trình khác chỉ toàn là ngớ ngẩn.<br>\
@@ -512,7 +512,7 @@ Parents choose to home school their children for many reasons. Some people feel 
 There are many benefits to home schooling.<br>\
 Home schools are very small. There are just one or two students. The student’s mother or father is the teacher. Another benefit is that students can study interesting things.<br>\
 Some people think that home schooling is not good for students. They believe public schools teach children discipline. They feel that public schools give a sense of community. In the end, parents must decide if home schooling is the right choice for their children."
-,vi:"Đơn vị 24 Trường học tại nhà<br>\
+,vi:"Bài 24 Trường học tại nhà<br>\
 M: Có nhiều loại trường học dành cho nhiều loại học sinh. Một loại trường học là trường học tại nhà. Trường học tại nhà chính xác là trường học tại nhà.<br>\
 Cha mẹ chọn trường học tại nhà cho con cái vì nhiều lý do. Một số người cảm thấy trường công quá nguy hiểm. Một số người nghĩ rằng trình độ học vấn quá thấp. Một số phụ huynh không chấp nhận các môn học mà con cái họ học ở trường công. Nếu cha mẹ chọn trường học tại nhà cho con cái, họ phải sẵn sàng dạy chúng thật tốt.<br>\
 Trường học tại nhà có nhiều lợi ích.<br>\
@@ -589,8 +589,328 @@ M: Khi mới bắt đầu làm hiệu trưởng, tôi nhớ công việc giáo v
 W: Ông chắc chắn đã làm được nhiều điều tốt, thưa ông Shin! Ông đã khởi động một chương trình đặc biệt để gửi tất cả học sinh trong trường của ông đến trường đại học!.<br>\
 M: Tôi đã có kế hoạch làm điều đó trong một thời gian. Tôi rất vui vì chương trình đã thành công như vậy.",
 voca:"principal,program,brain,education,involved,college,protect,train,position,set up"
+},
+{
+	en:"Unit 28 Bill Gates<br>\
+M: Look at this article I am reading. It says here that Microsoft made over $36 billion in 2004.<br>\
+W: Wow!<br>\
+M: I wish I was Bill Gates, the owner of Microsoft!<br>\
+W: Is it just because of the money?<br>\
+M: Of course! You can donate a lot of money to help other people. Bill Gates donates millions to charity every year. He also employs about 55,000 people in 85 different countries.<br>\
+W: I heard that he got interested in computers when he was really young.<br>\
+M: That’s right. He started programming computers when he was 13 years old.<br>\
+W: Really?<br>\
+M: Yes. Then he studied computers at Harvard University.<br>\
+W: He was a Harvard graduate? This shows how important education is to success.<br>\
+M: Actually, Bill Gates decided to drop out of Harvard. He was an excellent student. But he did not want to graduate.<br>\
+W: Why not?<br>\
+M: He had a dream. He dreamed that computers would be in every home and office in the world.<br>\
+W: I see! He decided to follow his dream. <br>\
+M: Yes. He made the right decision!",
+vi:"Bài 28 Bill Gates<br>\
+M: Hãy xem bài viết này mà tôi đang đọc. Ở đây nói rằng Microsoft đã kiếm được hơn 36 tỷ đô la vào năm 2004.<br>\
+W: Wow!<br>\
+M: Tôi ước mình là Bill Gates, chủ sở hữu của Microsoft!<br>\
+W: Chỉ vì tiền thôi sao?<br>\
+M: Tất nhiên rồi! Bạn có thể quyên góp rất nhiều tiền để giúp đỡ người khác. Bill Gates quyên góp hàng triệu đô la cho tổ chức từ thiện mỗi năm. Ông ấy cũng tuyển dụng khoảng 55.000 nhân viên ở 85 quốc gia khác nhau.<br>\
+W: Tôi nghe nói rằng ông ấy bắt đầu quan tâm đến máy tính từ khi còn rất trẻ.<br>\
+M: Đúng vậy. Ông ấy bắt đầu lập trình máy tính từ năm 13 tuổi.<br>\
+W: Thật sao?<br>\
+M: Vâng. Sau đó, ông ấy học máy tính tại Đại học Harvard.<br>\
+W: Ông ấy tốt nghiệp Harvard à? Điều này cho thấy giáo dục quan trọng như thế nào đối với thành công.<br>\
+M: Thực ra, Bill Gates đã quyết định bỏ học Harvard. Ông ấy là một sinh viên xuất sắc. Nhưng ông ấy không muốn tốt nghiệp.<br>\
+W: Tại sao không?<br>\
+M: Ông ấy có một giấc mơ. Ông ấy mơ rằng máy tính sẽ có mặt ở mọi ngôi nhà và văn phòng trên thế giới.<br>\
+W: Tôi hiểu rồi! Ông ấy quyết định theo đuổi giấc mơ của mình. <br>\
+M: Đúng vậy. Ông ấy đã đưa ra quyết định đúng đắn!",
+voca:"owner,charity,computer,donate,employ,excellent,company,the,poor,follow,drop out"
+},
+{
+	en:'Unit 29 Mark Twain<br>\
+G : Here is a story that Mark Twain, the famous author of Tom Sawyer and The Adventures of Huckleberry Finn, told one afternoon.<br>\
+Years ago, I was on a train leaving New York. There were too many people, and the sleeper train was full. I asked the young man at the ticket office if I could have a room in the sleeper section of the train. He answered rudely, "No!"<br>\
+I left feeling quite angry. As I was getting on the train, I saw a man watching me. He watched me for a few minutes. Then he spoke to the conductor in a whisper. Immediately the conductor came over to me.<br>\
+"Can I help you?" he asked. "Do you want a place in the sleeper section?"<br>\
+"Yes, give me anything."<br>\
+"We have two beds and chairs in a private section."<br>\
+The conductor made sure I was comfortable.<br>\
+Then he said, "I’m so proud to have you on this train, sir."<br>\
+"Oh? Who am I?" I asked.<br>\
+"General McClellan."',
+	vi:'Bài 29 Mark Twain<br>\
+G: Đây là câu chuyện mà Mark Twain, tác giả nổi tiếng của Tom Sawyer và Những cuộc phiêu lưu của Huckleberry Finn, đã kể vào một buổi chiều.<br>\
+Nhiều năm trước, tôi đang trên một chuyến tàu rời New York. Có quá nhiều người và toa tàu giường nằm thì chật kín. Tôi hỏi chàng trai trẻ ở phòng vé xem tôi có thể có một phòng ở toa tàu giường nằm không. Anh ta trả lời một cách thô lỗ, "Không!"<br>\
+Tôi cảm thấy khá tức giận. Khi tôi đang lên tàu, tôi thấy một người đàn ông đang nhìn tôi. Anh ta nhìn tôi trong vài phút. Sau đó, anh ta thì thầm với người soát vé. Ngay lập tức, người soát vé đến chỗ tôi.<br>\
+"Tôi có thể giúp gì cho anh không?" anh ta hỏi. "Anh có muốn một chỗ ở khoang giường nằm không?"<br>\
+"Được, cho tôi bất cứ thứ gì."<br>\
+"Chúng tôi có hai giường và ghế ở khoang riêng."<br>\
+Người soát vé đảm bảo tôi được thoải mái.<br>\
+Sau đó, anh ấy nói, "Tôi rất tự hào khi có anh trên chuyến tàu này, thưa ngài."<br>\
+"Ồ? Tôi là ai?" Tôi hỏi.<br>\
+"Tướng McClellan."',
+	voca:"whisper,author,section,proud,comfortable,secret,general,uncomfortable,immediately"
+},
+{
+	en:"Unit 30 A Soccer Star<br>\
+B : Soccer is a very popular team sport worldwide. Many people love to watch it.\
+ Hong Myung-bo is a famous soccer player. He started playing soccer in 1990. He played for the Pohang Steelers for six years. \
+Then he played for the Los Angeles Galaxy. He was the first Korean to play for a major league soccer team in the United States. Now, he is a coach for the South Korean soccer team.<br>\
+Hong is famous because he played soccer well. He played in more than 125 international games. He also played in four World Cups. He played in the World Cup in 1990, 1994, 1998, and 2002.<br>\
+Hong won two soccer awards in 2002. His team won the award for the Most Entertaining Team in the World Cup. \
+People thought it was fun to watch Hong’s team play soccer! Hong also won the Adidas Bronze Ball Award. \
+This award was for his outstanding performance in the game. Even though Hong did not play in the final game, he played well.",
+	vi:"Bài 30 Ngôi sao bóng đá<br>\
+B: Bóng đá là môn thể thao đồng đội rất phổ biến trên toàn thế giới. Nhiều người thích xem môn thể thao này.\
+Hong Myung-bo là một cầu thủ bóng đá nổi tiếng. Anh bắt đầu chơi bóng đá vào năm 1990. Anh chơi cho Pohang Steelers trong sáu năm. \
+Sau đó, anh chơi cho Los Angeles Galaxy. Anh là người Hàn Quốc đầu tiên chơi cho một đội bóng đá lớn tại Hoa Kỳ. Hiện tại, anh là huấn luyện viên cho đội bóng đá Hàn Quốc.<br>\
+Hong nổi tiếng vì anh chơi bóng đá giỏi. Anh đã chơi trong hơn 125 trận đấu quốc tế. Anh cũng chơi ở bốn kỳ World Cup. Anh đã chơi ở World Cup vào các năm 1990, 1994, 1998 và 2002.<br>\
+Hong đã giành được hai giải thưởng bóng đá vào năm 2002. Đội của anh đã giành giải thưởng Đội bóng giải trí nhất tại World Cup. \
+Mọi người nghĩ rằng thật thú vị khi xem đội của Hong chơi bóng đá! Hong cũng đã giành được Giải thưởng Quả bóng đồng Adidas. \
+Giải thưởng này dành cho màn trình diễn xuất sắc của anh ấy trong trò chơi. Mặc dù Hong không chơi trong trận chung kết, anh ấy đã chơi rất tốt.",
+	voca:"soccer,international,award,worldwide,finals,outstanding,league,grade,goal,performance"
+},
+{
+	en:"Unit 31 Keeping Fit<br>\
+W: We all need regular exercise to keep fit. But if we study all day, we don’t have time to run, swim, lift weights, or play basketball. What can we do to stay in shape?<br>\
+One thing we could do is walk more often. Walking is good exercise. Instead of going to school by car or bus, we could walk. \
+During recess, we could go outside and stroll around before we go back to class. Instead of taking the elevator in buildings all the time, we could use the stairs.<br>\
+Another important thing is to take breaks from studying. If we sit at our desks or in front of a computer for a long time, we should stand up and stretch our arms and legs once each hour.\
+ If we stand for a long time, we should sit down and stretch our backs.<br>\
+These are just a few ways we can stay fit when we don’t have a lot of time to exercise. Do you know some other ways?",
+	vi:"Bài 31 Giữ gìn vóc dáng<br>\
+W: Tất cả chúng ta đều cần tập thể dục thường xuyên để giữ gìn vóc dáng. Nhưng nếu học cả ngày, chúng ta sẽ không có thời gian để chạy, bơi, nâng tạ hoặc chơi bóng rổ. Chúng ta có thể làm gì để giữ gìn vóc dáng?<br>\
+Một điều chúng ta có thể làm là đi bộ thường xuyên hơn. Đi bộ là bài tập tốt. Thay vì đến trường bằng ô tô hoặc xe buýt, chúng ta có thể đi bộ. \
+Trong giờ ra chơi, chúng ta có thể ra ngoài và đi dạo xung quanh trước khi quay lại lớp. Thay vì đi thang máy trong các tòa nhà mọi lúc, chúng ta có thể đi cầu thang bộ.<br>\
+Một điều quan trọng khác là nghỉ giải lao sau khi học. Nếu chúng ta ngồi ở bàn làm việc hoặc trước máy tính trong thời gian dài, chúng ta nên đứng dậy và duỗi tay chân một lần mỗi giờ.\
+Nếu chúng ta đứng trong thời gian dài, chúng ta nên ngồi xuống và duỗi lưng.<br>\
+Đây chỉ là một số cách chúng ta có thể giữ gìn vóc dáng khi không có nhiều thời gian để tập thể dục. Bạn có biết một số cách khác không?",
+	voca:"exercise,regular,stretch,elevator,stroll,desk,gym,properly,recess,stay in shape"
+},
+{
+	en:"Unit 32 Stop Yawning!<br>\
+W: Stop yawning, Jason!<br>\
+B : I’m sorry, Ms. Terry. I can’t help it! W: You can! You yawn because your lungs need more oxygen. When you need more oxygen, you open your mouth wide and take in a lot of air.<br>\
+B : What can I do to stop yawning? <br>\
+W: You should go outside into the fresh air and breathe deeply. Then you won’t need to yawn anymore. Your lungs will have lots of oxygen.<br>\
+B : We just came in from recess, so why am I yawning?<br>\
+W: Are you tired? Being tired also makes you yawn. This is because your body needs rest. Oxygen helps your body rest. Sleeping rests your body and makes you take long, deep breaths.<br>\
+B : Then, why do I yawn when I am bored, Ms. Terry?<br>\
+W: Well, Jason, when you are bored, you are probably not breathing deeply enough. The best way to stop yawning from boredom is to do something interesting. If you can’t do that, try taking deep breaths. This will not stop the boredom, but it will help you stop yawning.",
+	vi:"Bài 32 Đừng ngáp nữa!<br>\
+W: Đừng ngáp nữa, Jason!<br>\
+B: Em xin lỗi, cô Terry. Em không nhịn được! W: Em có thể! Em ngáp vì phổi của em cần nhiều oxy hơn. Khi em cần nhiều oxy hơn, em há miệng thật to và hít thật nhiều không khí.<br>\
+B: Em có thể làm gì để ngừng ngáp? <br>\
+W: Em nên ra ngoài hít thở không khí trong lành và hít thở thật sâu. Khi đó em sẽ không cần ngáp nữa. Phổi của em sẽ có nhiều oxy.<br>\
+B: Chúng ta vừa mới ra chơi về, vậy tại sao em lại ngáp?<br>\
+W: Em có mệt không? Mệt mỏi cũng khiến em ngáp. Đó là vì cơ thể em cần được nghỉ ngơi. Oxy giúp cơ thể em được nghỉ ngơi. Ngủ giúp cơ thể bạn được nghỉ ngơi và giúp bạn hít thở sâu và dài.<br>\
+B: Vậy tại sao tôi lại ngáp khi buồn chán, cô Terry?<br>\
+W: Vâng, Jason, khi bạn buồn chán, có lẽ bạn không thở đủ sâu. Cách tốt nhất để ngừng ngáp vì buồn chán là làm điều gì đó thú vị. Nếu bạn không thể làm điều đó, hãy thử hít thở sâu. Điều này sẽ không ngăn chặn sự buồn chán, nhưng nó sẽ giúp bạn ngừng ngáp.",
+	voca:"yawn,breathe,boredom,breath,oxygen,lungs,deep,rest,meal,give off"
+},
+{
+	en:"Unit 33 The Gym<br>\
+W: Did you hear that a new gym opened on one of the streets nearby?<br>\
+M: That’s great news! I’ve gained some weight, and I’d like to lose it through exercise.<br>\
+W: I need to lose weight, too, and I’ve always wanted to take yoga classes.<br>\
+M: Do you know if the new gym offers yoga classes?<br>\
+W: I’m not sure. I’m planning to go there on Friday evening to look around. Do you want to join me?<br>\
+M: Let me check my schedule for this week. I’m too busy on Friday, so can we go on Saturday afternoon instead?<br>\
+W: Sure. We can see what the new gym has to offer, and get some exercise, too. It’s fun to work out in a gym with other people. We might even meet new people with similar hobbies!<br>\
+M: Hold on, let’s see what the gym looks like first before we start planning anything else. Let’s meet for lunch at the West End Café before we go. It might be the last good meal we eat!<br>\
+W: Good plan!",
+	vi:"Bài 33 Phòng tập thể dục<br>\
+W: Bạn có nghe nói rằng một phòng tập thể dục mới mở trên một trong những con phố gần đây không?<br>\
+M: Thật là tin tuyệt vời! Tôi đã tăng cân và tôi muốn giảm cân thông qua tập thể dục.<br>\
+W: Tôi cũng cần giảm cân và tôi luôn muốn tham gia các lớp học yoga.<br>\
+M: Bạn có biết phòng tập thể dục mới có lớp học yoga không?<br>\
+W: Tôi không chắc. Tôi định đến đó vào tối thứ Sáu để tham quan xung quanh. Bạn có muốn tham gia cùng tôi không?<br>\
+M: Để tôi kiểm tra lịch trình của mình trong tuần này. Tôi quá bận vào thứ Sáu, vậy chúng ta có thể đi vào chiều thứ Bảy thay thế không?<br>\
+W: Được thôi. Chúng ta có thể xem phòng tập thể dục mới có gì và cũng có thể tập thể dục. Tập luyện trong phòng tập thể dục với những người khác rất vui. Chúng ta thậm chí có thể gặp những người mới có cùng sở thích!<br>\
+M: Đợi đã, chúng ta hãy xem phòng tập trông như thế nào trước khi bắt đầu lên kế hoạch cho bất kỳ điều gì khác. Chúng ta sẽ gặp nhau ăn trưa tại West End Café trước khi đi. Có thể đó là bữa ăn ngon cuối cùng chúng ta ăn!<br>\
+W: Kế hoạch hay đấy!",
+	voca:"nearby,weight,schedule,yoga,similar,lose,gain,work out,hold on"
+},
+{
+	en:"Unit 34 A Healthy Lifestyle<br>\
+W: This burger is delicious! Do you want some?<br>\
+M: No, thank you. I’m working out at the gym these days. I want to be healthy, so I’ve also started eating good, fresh food.<br>\
+W: You’re exercising? That’s fantastic! When did you start thinking about your weight and staying in shape?<br>\
+M: Last month I had a check-up. My doctor told me that I should be leading a much healthier lifestyle now that I’m getting older. Now, I try to eat small, regular meals instead of one or two big meals a day.<br>\
+W: I see. What types of food do you usually eat now?<br>\
+M: I eat lots of fruit and vegetables. I try to limit carbohydrates like bread, rice, and pasta. I also try not to eat sugary foods.<br>\
+W: Oh dear! I love sugary foods, especially cakes.<br>\
+M: Well, try to eat food that is good for you. You need to take care of yourself.<br>\
+W: You’re right. I should start thinking about a healthier lifestyle. But first, I’m going to finish my burger!",
+	vi:"Bài 34 Lối sống lành mạnh<br>\
+W: Chiếc bánh mì kẹp thịt này ngon quá! Bạn có muốn ăn không?<br>\
+M: Không, cảm ơn. Dạo này tôi đang tập thể dục ở phòng tập. Tôi muốn khỏe mạnh, vì vậy tôi cũng bắt đầu ăn những thực phẩm tươi ngon.<br>\
+W: Bạn đang tập thể dục à? Thật tuyệt! Bạn bắt đầu nghĩ đến cân nặng và giữ dáng từ khi nào?<br>\
+M: Tháng trước tôi đã đi khám sức khỏe. Bác sĩ bảo tôi nên có lối sống lành mạnh hơn nhiều vì tôi đã lớn tuổi rồi. Bây giờ, tôi cố gắng ăn những bữa nhỏ, đều đặn thay vì một hoặc hai bữa lớn mỗi ngày.<br>\
+W: Tôi hiểu rồi. Bây giờ bạn thường ăn những loại thực phẩm nào?<br>\
+M: Tôi ăn nhiều trái cây và rau. Tôi cố gắng hạn chế carbohydrate như bánh mì, cơm và mì ống. Tôi cũng cố gắng không ăn đồ ngọt.<br>\
+W: Ôi trời! Tôi thích đồ ăn có đường, đặc biệt là bánh ngọt.<br>\
+M: Vâng, hãy cố gắng ăn những thực phẩm tốt cho bạn. Bạn cần phải chăm sóc bản thân mình.<br>\
+W: Bạn nói đúng. Tôi nên bắt đầu nghĩ về một lối sống lành mạnh hơn. Nhưng trước tiên, tôi sẽ ăn hết chiếc burger của mình!",
+	voca:"check-up,lifestyle,healthy,limit,carbohydrates,vegetables,fantastic,sugary,burger,advice"
+},
+{
+	en:"Unit 35 A Balanced Meal<br>\
+W: I have lost seven pounds in one week! Skipping breakfast really works.<br>\
+M: I don’t think that’s a good idea.<br>\
+W: Why not?<br>\
+M: People who skip breakfast eat more at the next meal. Eating breakfast is very important. Breakfast gives you energy for the day.<br>\
+W: Well, I eat one big meal a day at dinnertime.<br>\
+M: Having one meal a day is not good. You should have several small meals a day. You’ll have more energy that way.<br>\
+W: Maybe you’re right. I have been feeling really tired lately.<br>\
+M: What do you usually eat?<br>\
+W: I only eat salads now.<br>\
+M: Salads alone may not be nutritious enough.<br>\
+W: So, what should I eat?<br>\
+M: You need some protein and carbohydrates. It is important to eat a good variety of food at each meal. You should have balanced meals. Make sure you eat cereals, fruits and vegetables, and some bread or rice. You also need milk and dairy products, and some meat. You’ll be healthier. You’ll have more energy. You’ll even look better!",
+	vi:"Bài 35 Bữa ăn cân bằng<br>\
+W: Tôi đã giảm được bảy pound trong một tuần! Bỏ bữa sáng thực sự hiệu quả.<br>\
+M: Tôi không nghĩ đó là ý kiến ​​hay.<br>\
+W: Tại sao không?<br>\
+M: Những người bỏ bữa sáng sẽ ăn nhiều hơn vào bữa tiếp theo. Ăn sáng rất quan trọng. Bữa sáng cung cấp cho bạn năng lượng cho cả ngày.<br>\
+W: Vâng, tôi ăn một bữa lớn mỗi ngày vào bữa tối.<br>\
+M: Ăn một bữa một ngày không tốt. Bạn nên ăn nhiều bữa nhỏ mỗi ngày. Theo cách đó, bạn sẽ có nhiều năng lượng hơn.<br>\
+W: Có lẽ bạn đúng. Gần đây tôi cảm thấy rất mệt mỏi.<br>\
+M: Bạn thường ăn gì?<br>\
+W: Bây giờ tôi chỉ ăn salad.<br>\
+M: Chỉ riêng salad có thể không đủ dinh dưỡng.<br>\
+W: Vậy, tôi nên ăn gì?<br>\
+M: Bạn cần một ít protein và carbohydrate. Điều quan trọng là phải ăn nhiều loại thực phẩm khác nhau trong mỗi bữa ăn. Bạn nên có những bữa ăn cân bằng. Đảm bảo bạn ăn ngũ cốc, trái cây và rau, và một ít bánh mì hoặc gạo. Bạn cũng cần sữa và các sản phẩm từ sữa, và một ít thịt. Bạn sẽ khỏe mạnh hơn. Bạn sẽ có nhiều năng lượng hơn. Bạn thậm chí sẽ trông đẹp hơn!",
+	voca:"energy,skip,salad,variety,dairy,meal,balance,nutritious,protein,cereal[grain],catch up on"
+},
+{
+	en:"Unit 36 Across Canada<br>\
+W: I’m so excited! I just got back from the travel agency.<br>\
+M: Travel agency? Where are you going?<br>\
+W: I’m planning to go to Canada on vacation.<br>\
+M: Canada! How exciting! How long are you going for?<br>\
+W: I’m going for a month. I want to see as much as I can!<br>\
+M: You are so lucky! What places are you going to visit?<br>\
+W: First, I’ll spend a few days in Vancouver. Then I’ll take a train through the Rocky Mountains.<br>\
+M: Oh, you’re riding through the Rockies! That’s really exciting!<br>\
+W: Then I’ll fly to Toronto, and take a bus to Niagara Falls. Did you know that you can actually take a boat under that huge waterfall? It’s called Maid of the Mist.<br>\
+M: Wow! That’s an amazing thing to do! You’re so lucky!<br>\
+W: Well, I hope I don’t get seasick! I’ll finish my trip in Nova Scotia. I want to eat lobster for dinner every night. And I’d like to bike around some small fishing villages, too.<br>\
+M: Have a great time, and take lots of pictures!",
+	vi:"Bài 36 Xuyên Canada<br>\
+W: Tôi phấn khích quá! Tôi vừa trở về từ công ty du lịch.<br>\
+M: Công ty du lịch à? Bạn định đi đâu vậy?<br>\
+W: Tôi đang định đi nghỉ ở Canada.<br>\
+M: Canada! Thật phấn khích! Bạn sẽ đi trong bao lâu?<br>\
+W: Tôi sẽ đi trong một tháng. Tôi muốn khám phá nhiều nhất có thể!<br>\
+M: Bạn thật may mắn! Bạn sẽ đến thăm những nơi nào?<br>\
+W: Đầu tiên, tôi sẽ ở Vancouver vài ngày. Sau đó, tôi sẽ đi tàu qua dãy núi Rocky.<br>\
+M: Ồ, bạn đang đi qua dãy núi Rocky! Thật phấn khích!<br>\
+W: Sau đó, tôi sẽ bay đến Toronto và đi xe buýt đến Thác Niagara. Bạn có biết rằng bạn thực sự có thể đi thuyền dưới thác nước khổng lồ đó không? Nó được gọi là Maid of the Mist.<br>\
+M: Wow! Thật là một điều tuyệt vời để làm! Bạn thật may mắn!<br>\
+W: Chà, tôi hy vọng mình không bị say sóng! Tôi sẽ kết thúc chuyến đi của mình ở Nova Scotia. Tôi muốn ăn tôm hùm vào bữa tối mỗi tối. Và tôi cũng muốn đạp xe quanh một số làng chài nhỏ nữa.<br>\
+M: Chúc bạn có một khoảng thời gian tuyệt vời và chụp thật nhiều ảnh nhé!",
+	voca:"lobster,amazing,seasick,travel,agency,waterfall,fishing,village,package,tour,deposit,motorcycle,huge"
+},
+{
+	en:"Unit 37 A Trip to Europe<br>\
+G : Where are you going on vacation this year, Andre?<br>\
+B : I’m going to Europe with my parents. We’re going to take a tour of France, Italy, and Germany.<br>\
+G : Oh! That will be such fun! How long will you be gone?<br>\
+B : Three weeks. We’re going in the summer, so I won’t miss any school.<br>\
+G : What will you do there?<br>\
+B : We’re going to visit historical sites, like the Coliseum in Rome. We’ll also see famous museums, like the Louvre in Paris. And, of course, we’re going to the top of the Eiffel Tower.<br>\
+G : How will you travel from one country to another?<br>\
+B : There’s a famous train that goes all over Europe. It’s called the Eurorail.<br>\
+G : I wish I could go with you! My family is going to the seashore again, just like last year. I’d like to go somewhere I’ve never been.<br>\
+B : Don’t worry, Julie. I will take lots of pictures, and I’ll buy you a souvenir.<br>\
+G : Thank you! I’ll collect some seashells from the beach for you.<br>\
+B : Thanks!",
+	vi:"Bài 37 Một chuyến đi đến Châu Âu<br>\
+G: Năm nay, Andre, bạn sẽ đi nghỉ ở đâu?<br>\
+B: Mình sẽ đi Châu Âu với bố mẹ. Chúng mình sẽ đi du lịch Pháp, Ý và Đức.<br>\
+G: Ồ! Sẽ vui lắm! Bạn sẽ đi bao lâu?<br>\
+B: Ba tuần. Chúng mình sẽ đi vào mùa hè, vì vậy mình sẽ không nghỉ học.<br>\
+G: Bạn sẽ làm gì ở đó?<br>\
+B: Chúng mình sẽ đến thăm các địa điểm lịch sử, như Đấu trường La Mã ở Rome. Chúng mình cũng sẽ đến thăm các bảo tàng nổi tiếng, như Bảo tàng Louvre ở Paris. Và tất nhiên, chúng mình sẽ lên đỉnh Tháp Eiffel.<br>\
+G: Bạn sẽ đi từ nước này sang nước khác bằng cách nào?<br>\
+B: Có một chuyến tàu nổi tiếng đi khắp Châu Âu. Nó được gọi là Eurorail.<br>\
+G: Mình ước mình có thể đi cùng bạn! Gia đình tôi lại đi biển, giống như năm ngoái. Tôi muốn đến một nơi mà tôi chưa từng đến.<br>\
+B: Đừng lo, Julie. Tôi sẽ chụp thật nhiều ảnh và mua cho bạn một món quà lưu niệm.<br>\
+G: Cảm ơn bạn! Tôi sẽ nhặt một số vỏ sò từ bãi biển cho bạn.<br>\
+B: Cảm ơn bạn!",
+	voca:"tour,historical,museum,seashore,souvenir,site,construction,seashell,the,Eiffel,Tower,Euro rail"
+},
+{
+	en:"Unit 38 New Mexico<br>\
+B : Hi, I haven’t seen you for two whole weeks! Where did you go on your vacation?<br>\
+G : I visited my cousin in New Mexico. I had a great time!<br>\
+B : Mexico? I thought you went to the US.<br>\
+G : I did. New Mexico is a state in the southwestern US. It’s between Texas and Arizona. Guess what? A lot of Americans don’t know that New Mexico is a state. The license plates on cars in New Mexico also say 'USA' This is so that people don’t get confused and think the driver is from Mexico. <br>\
+B : That’s funny! So, tell me what you did in New<br>\
+Mexico.<br>\
+G : My favorite part was visiting Carlsbad Caverns. There are 30 miles of caves! In one cave, we had to wear hats with lights on them so we could see in the dark. Sometimes we had to crawl through very narrow tunnels on our hands and knees.<br>\
+B : Weren’t you scared?<br>\
+G : No, it was a lot of fun! I’m going to visit my cousin again next year. You should come with me!",
+	vi:"Bài 38 New Mexico<br>\
+B: Xin chào, tôi đã không gặp bạn trong suốt hai tuần! Bạn đã đi nghỉ ở đâu?<br>\
+G: Tôi đã đến thăm anh họ của tôi ở New Mexico. Tôi đã có một khoảng thời gian tuyệt vời!<br>\
+B: Mexico? Tôi nghĩ bạn đã đến Hoa Kỳ.<br>\
+G: Đúng vậy. New Mexico là một tiểu bang ở phía tây nam Hoa Kỳ. Nó nằm giữa Texas và Arizona. Đoán xem? Nhiều người Mỹ không biết rằng New Mexico là một tiểu bang. Biển số xe ô tô ở New Mexico cũng ghi 'USA'. Điều này là để mọi người không bị nhầm lẫn và nghĩ rằng người lái xe đến từ Mexico. <br>\
+B: Thật buồn cười! Vậy, hãy kể cho tôi biết bạn đã làm gì ở New<br>\
+Mexico.<br>\
+G: Phần tôi thích nhất là đến thăm Carlsbad Caverns. Có 30 dặm hang động! Trong một hang động, chúng tôi phải đội mũ có đèn để có thể nhìn thấy trong bóng tối. Đôi khi chúng tôi phải bò qua những đường hầm rất hẹp bằng tay và đầu gối.<br>\
+B: Bạn không sợ sao?<br>\
+G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm sau. Bạn nên đi cùng tôi!",
+	voca:"state,cave,tunnel,license,pla,crawl,confused,prisoner,dig,narrow,knee"
+},
+{
+	en:"Unit 39 A Good Way to Travel<br>\
+- Traveling is a good hobby. If you have very little money, backpacking is a good way to travel. Many students like to backpack. They can travel cheaply. They can travel to many places. These travelers carry their belongings in large backpacks. They are called backpackers.<br>\
+- Backpackers take buses or trains to save money. They camp outdoors to sleep. If they stay in a city, they may go to a hostel. A hostel is like a hotel. Hotels are not cheap. Hostels are very cheap. Travelers often share rooms at hostels. There are only a few toilets and baths. People share them, too.<br>\
+- Hostels are a good place to meet other travelers. You can make friends. They can tell you about fun things to do in the area. Many hostels have kitchens. These kitchens have stoves. Some have toasters. You can buy your food from a store. Then, you can cook at the hostel. This is cheaper than eating out. Just remember to clean up when you are done!",
+	vi:"Bài 39 Một cách du lịch tốt<br>\
+- Du lịch là một sở thích tốt. Nếu bạn có rất ít tiền, du lịch ba lô là một cách du lịch tốt. Nhiều sinh viên thích du lịch ba lô. Họ có thể du lịch giá rẻ. Họ có thể du lịch đến nhiều nơi. Những du khách này mang theo đồ đạc của mình trong những chiếc ba lô lớn. Họ được gọi là du khách ba lô.<br>\
+- Du khách ba lô đi xe buýt hoặc tàu hỏa để tiết kiệm tiền. Họ cắm trại ngoài trời để ngủ. Nếu họ ở trong thành phố, họ có thể đến nhà trọ. Nhà trọ giống như khách sạn. Khách sạn không rẻ. Nhà trọ rất rẻ. Du khách thường chia sẻ phòng tại nhà trọ. Chỉ có một vài nhà vệ sinh và phòng tắm. Mọi người cũng chia sẻ chúng.<br>\
+- Nhà trọ là nơi tốt để gặp gỡ những du khách khác. Bạn có thể kết bạn. Họ có thể kể cho bạn nghe về những điều thú vị để làm trong khu vực. Nhiều nhà trọ có bếp. Những nhà bếp này có bếp lò. Một số có máy nướng bánh mì. Bạn có thể mua đồ ăn từ cửa hàng. Sau đó, bạn có thể nấu ăn tại nhà trọ. Điều này rẻ hơn so với việc ăn ngoài. Chỉ cần nhớ dọn dẹp sạch sẽ khi bạn làm xong nhé!",
+	voca:"backpack,traveler,toilet,belongings,hostel,kitchen,prepare,aisle,stove,toaster"
+},
+{
+	en:"Unit 40 A Train Announcement<br>\
+W: Welcome on board the TGV 740. We are now leaving Paris. We will arrive in Marseilles at 3:00 p.m.<br>\
+We offer free beverages in each car. Please have as much coffee, tea, or soft drinks as you wish. There is a restaurant on the train. You may purchase a meal there during the trip. The restaurant is in car 11.<br>\
+We will make two stops on this trip. We will pick up passengers in Provence and Dijon. Passengers changing trains can ask the attendant for a free timetable. This will help you with your onward trip.<br>\
+Please note that smoking is only permitted in cars 15 and 23. Newspapers are given to all passengers. Mobile phones and the Internet may be used in cars 18 and 25. If you need assistance, please press the button near your seat to contact a cabin attendant.<br>\
+Please sit back, relax, and enjoy the trip. We are pleased to have you on board. We look forward to serving you again in the futur.",
+	vi:"Bài 40 A Thông báo về tàu hỏa<br>\
+W: Chào mừng quý khách lên tàu TGV 740. Chúng tôi sẽ rời Paris. Chúng tôi sẽ đến Marseille lúc 3:00 chiều<br>\
+Chúng tôi cung cấp đồ uống miễn phí trên mỗi toa tàu. Vui lòng uống nhiều cà phê, trà hoặc nước ngọt tùy thích. Có một nhà hàng trên tàu. Quý khách có thể mua bữa ăn ở đó trong suốt chuyến đi. Nhà hàng nằm ở toa tàu 11.<br>\
+Chúng tôi sẽ dừng lại hai lần trong chuyến đi này. Chúng tôi sẽ đón hành khách ở Provence và Dijon. Hành khách đổi tàu có thể yêu cầu tiếp viên cung cấp lịch trình miễn phí. Điều này sẽ giúp ích cho chuyến đi tiếp theo của quý khách.<br>\
+Xin lưu ý rằng chỉ được phép hút thuốc ở toa tàu 15 và 23. Tất cả hành khách đều được phát báo. Có thể sử dụng điện thoại di động và Internet ở toa tàu 18 và 25. Nếu quý khách cần hỗ trợ, vui lòng nhấn nút gần chỗ ngồi của mình để liên hệ với tiếp viên.<br>\
+Xin hãy ngồi xuống, thư giãn và tận hưởng chuyến đi. Chúng tôi rất vui khi được đón tiếp bạn. Chúng tôi mong muốn được phục vụ bạn một lần nữa trong tương lai.",
+	voca:"beverage,restaurant,purchase,attendant,passenger,assistance,onward,flight,relax,permit"
 }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

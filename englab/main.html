@@ -76,6 +76,12 @@
 	          			{{note}}
 	          		</p>
 	          	</div>
+
+	          	<div ng-if="story.slides">
+		          	<hr>
+		          	<h6 >Slides:</h6>
+		          	<p ng-bind-html="story.slides" ng-if="story.slides"></p>
+	          	</div>
 	          	
 	          </div> <!-- card-text -->
         	</div> 		<!-- card-body -->

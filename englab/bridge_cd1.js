@@ -257,8 +257,36 @@ Jing: Ý tưởng hay!"
 Leah: An important day for me? Oh, that's easy! Singapore National Day is really special. It's on the 9th of August. What happens? Well, I spend the day with my family and friends. We watch the National Day parade on a live webcast! It's very colourful! Then we eat delicious chicken rice. I like it very much! I wear national costume too - we call it Peranakan dress - it's very beautiful! Why is the day special? Well, it's not just a public holiday to me - it's a day when I can celebrate everything about Singapore and be happy!",
 vi:"Track 1.12<br>\
 Leah: Một ngày quan trọng đối với tôi ư? Ồ, dễ thôi! Ngày Quốc khánh Singapore thực sự đặc biệt. Ngày này là ngày 9 tháng 8. Chuyện gì xảy ra? Vâng, tôi dành cả ngày này với gia đình và bạn bè. Chúng tôi xem diễu hành Ngày Quốc khánh trên webcast trực tiếp! Rất nhiều màu sắc! Sau đó, chúng tôi ăn cơm gà ngon tuyệt. Tôi rất thích nó! Tôi cũng mặc trang phục dân tộc - chúng tôi gọi là trang phục Peranakan - rất đẹp! Tại sao ngày này lại đặc biệt? Vâng, đối với tôi, đó không chỉ là ngày lễ - đó là ngày tôi có thể ăn mừng mọi thứ về Singapore và vui vẻ!"
+,slides:"1. Yes, it’s on September 2nd - also known as the Independence Day.<br>\
+-How: people celebrate this day with flags, fireworks,... <br>\
+watch parades (diễu hành), eat good food, hang out,...<br>\
+2. Yes of course, i think National days are important because:<br>\
+honor (tôn vinh) and preserve(giữ gìn) the country’s history and culture<br>\
+create a sense of community (tạo cảm giác cộng đồng)<br>\
+pass down(truyền lại) values and customs to future generations.<br><br>\
+parade (n) buổi diễu hành<br>\
+lion dance (n) múa lân/rồng<br>\
+celebrate (v) ăn mừng<br>\
+preserve (v) giữ gìn, bảo tồn<br>\
+culture(n) văn hóa<br>\
+value (n) giá trị → cultural value (n) giá trị văn hóa<br><br>\
+- What it is – Let me tell you about a special day/event in my country and it is ….<br>\
+- When it is  – It’s held on / It takes place on + date…<br>\
+- What you do  – I hang out with my … , watch …, eat …, go …<br>\
+- Why it is special for you – This day is special for me because ….<br>\
+- can have fun, be happy<br>\
+- gather with loved ones<br>\
+- unwind, recharge my battery after nerve-racking time<br>\
+- celebrate + N (history, culture, victory,...)<br><br>\
+HOMEWORD<br>\
+* Describe a traditional festival in your country<br>\
+- What it is<br>\
+- When it takes place<br>\
+- What people do during this holiday<br>\
+- What you feel about this holiday"
 },
-{en:"Track 1.13<br>\
+{
+	en:"Track 1.13<br>\
 Katrin: Excuse me, Li Bo? Are you busy?<br>\
 Li Bo: Not really. I'm trying to write an essay.<br>\
 Katrin: I'd like to ask you a few questions.<br>\

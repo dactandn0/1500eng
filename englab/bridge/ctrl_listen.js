@@ -14,7 +14,7 @@ radioCDChange = function (cd) {
 		case 3: kSTORIES = []; break;
 		case 4: kSTORIES = []; break;
 	}
-	localStorage.setItem("bri_complete_cd", cd);
+	localStorage.setItem("bri_listen_cd", cd);
 	$scope.cd = cd;
 	MYLOG("localStorage saved CD= " + cd);
 }
@@ -61,8 +61,8 @@ $scope.resetAudioBtnUI = function()
     $scope.bPlayingFull=false;
 
     var isChkLoopChecked = false;
-    if (localStorage.hasOwnProperty("bri_complete_isAudioLoop")) {
-		isChkLoopChecked = localStorage.bri_complete_isAudioLoop;
+    if (localStorage.hasOwnProperty("bri_listen_isAudioLoop")) {
+		isChkLoopChecked = localStorage.bri_listen_isAudioLoop;
 	}
     if (isChkLoopChecked=='true')
     {
@@ -80,7 +80,7 @@ $scope.playFullSound = function (index) {
 	}
   	else
   	{
-  		$scope.audio = new Audio("cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
+  		$scope.audio = new Audio("listen_data/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
 	    $scope.audio.loop = false;
 	    $scope.audio.play();
 
@@ -129,7 +129,7 @@ $scope.fetchStory = function (idx, reset=true) {
 	$scope.story = $scope.stories[idx];
 
 	// save DB
-	localStorage.setItem("bri_complete_unit", idx);
+	localStorage.setItem("bri_listen_unit", idx);
 	MYLOG("localStorage save unit=" + idx);
 	if (!$scope.story || !$scope.story.en) {MYLOG('Dont have Unit'); return;}
 	// show to website
@@ -225,20 +225,20 @@ $scope.isLongTrack = function(idx) {
 
 $scope.loadData = function () {
 	MYLOG('loadData');
-	if (localStorage.hasOwnProperty("bri_complete_isAudioLoop")) {
-		document.getElementById('audioLoopEle').checked = localStorage.bri_complete_isAudioLoop === 'true';
+	if (localStorage.hasOwnProperty("bri_listen_isAudioLoop")) {
+		document.getElementById('audioLoopEle').checked = localStorage.bri_listen_isAudioLoop === 'true';
 	}
 
-	if (localStorage.hasOwnProperty("bri_complete_cd")) {
-		var cd = localStorage.bri_complete_cd;
+	if (localStorage.hasOwnProperty("bri_listen_cd")) {
+		var cd = localStorage.bri_listen_cd;
 		MYLOG("localStorage load CD=" + cd);
 		radioCDChange(parseInt(cd));
 		document.cdForm.radioCD.value=cd;
 		$scope.cd=cd;
 	}
 
-	if (localStorage.hasOwnProperty("bri_complete_unit")) {
-		idx = localStorage.bri_complete_unit;
+	if (localStorage.hasOwnProperty("bri_listen_unit")) {
+		idx = localStorage.bri_listen_unit;
 		MYLOG("localStorage load unit=" + idx);
 		$scope.storyIdx = parseInt(idx);
 	}

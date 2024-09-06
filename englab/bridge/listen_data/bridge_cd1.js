@@ -194,7 +194,8 @@ Ahmed: Tôi thấy lạnh cóng khi nghĩ đến điều đó. Etsuko: Được 
 Ahmed: Tôi có áo khoác và khăn quàng cổ nhưng tôi không có mũ...<br>\
 Etsuko: Tôi có một chiếc màu đỏ cho bạn. Nào, Ahmed! Tôi thực sự muốn bạn gặp Bonhomme!<br>\
 Ahmed: Anh ấy là ai?<br>\
-Etsuko: Anh ấy là người tuyết! Và anh ấy cũng đội một chiếc mũ đỏ tươi!"
+Etsuko: Anh ấy là người tuyết! Và anh ấy cũng đội một chiếc mũ đỏ tươi!",
+voca:"carnival[festival],canoe[/kəˈnuː/],race,palace,coat,scarf"
 },
 {
 	en:"Track 1.9<br>\
@@ -254,9 +255,13 @@ Jing: Ý tưởng hay!"
 },
 {
 	en:"Track 1.12<br>\
-Leah: An important day for me? Oh, that's easy! Singapore National Day is really special. It's on the 9th of August. What happens? Well, I spend the day with my family and friends. We watch the National Day parade on a live webcast! It's very colourful! Then we eat delicious chicken rice. I like it very much! I wear national costume too - we call it Peranakan dress - it's very beautiful! Why is the day special? Well, it's not just a public holiday to me - it's a day when I can celebrate everything about Singapore and be happy!",
+Leah: An important day for me? Oh, that's easy! Singapore National Day is really special. It's on the 9th of August. \
+What happens? Well, I spend the day with my family and friends. We watch the National Day parade on a live webcast! \
+It's very colourful! Then we eat delicious chicken rice. I like it very much! I wear national costume too - \
+we call it Peranakan dress - it's very beautiful! Why is the day special? Well, it's not just a public holiday to me - it's a day when I can celebrate everything about Singapore and be happy!",
 vi:"Track 1.12<br>\
 Leah: Một ngày quan trọng đối với tôi ư? Ồ, dễ thôi! Ngày Quốc khánh Singapore thực sự đặc biệt. Ngày này là ngày 9 tháng 8. Chuyện gì xảy ra? Vâng, tôi dành cả ngày này với gia đình và bạn bè. Chúng tôi xem diễu hành Ngày Quốc khánh trên webcast trực tiếp! Rất nhiều màu sắc! Sau đó, chúng tôi ăn cơm gà ngon tuyệt. Tôi rất thích nó! Tôi cũng mặc trang phục dân tộc - chúng tôi gọi là trang phục Peranakan - rất đẹp! Tại sao ngày này lại đặc biệt? Vâng, đối với tôi, đó không chỉ là ngày lễ - đó là ngày tôi có thể ăn mừng mọi thứ về Singapore và vui vẻ!"
+,voca:"National Day,parade,celebrate"
 ,slides:"1. Yes, it’s on September 2nd - also known as the Independence Day.<br>\
 -How: people celebrate this day with flags, fireworks,... <br>\
 watch parades (diễu hành), eat good food, hang out,...<br>\
@@ -266,8 +271,8 @@ create a sense of community (tạo cảm giác cộng đồng)<br>\
 pass down(truyền lại) values and customs to future generations.<br><br>\
 parade (n) buổi diễu hành<br>\
 lion dance (n) múa lân/rồng<br>\
-celebrate (v) ăn mừng<br>\
-preserve (v) giữ gìn, bảo tồn<br>\
+celebrate (v) ăn mừng. We celebrated our 25th wedding anniversary in Florence<br>\
+preserve (v) giữ gìn, bảo tồn. He was anxious to preserve his reputation<br>\
 culture(n) văn hóa<br>\
 value (n) giá trị → cultural value (n) giá trị văn hóa<br><br>\
 - What it is – Let me tell you about a special day/event in my country and it is ….<br>\

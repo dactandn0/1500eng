@@ -70,23 +70,17 @@
 	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
 	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
 	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
-	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
 
-	        	<div class="mt-1" ng-if="story.vocaNotes">
+	          	<img ng-src="listen_data\images\{{story.img}}-min.png" class="img-fluid">
+
+	          	<div class="mt-1" ng-if="story.vocaNotes">
 	           	<hr/>
-	        		<p  class="mb-1"  ng-repeat="(index, note) in story.vocaNotes">
+	        		<p  class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
 	          			{{note}}
 	          		</p>
 	          	</div>
 
-
-	          	<div ng-if="story.slides">
-		          	<hr>
-		          	<h6 >Slides:</h6>
-		          	<p ng-bind-html="story.slides" ng-if="story.slides"></p>
-	          	</div>
-
-	          	
+	        
 	          </div> <!-- card-text -->
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->

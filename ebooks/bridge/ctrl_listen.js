@@ -115,6 +115,20 @@ $scope.stopSound = function () {
 	 $scope.bPlayingFull = false;
 };
 
+$scope.preprocessStories = function () 
+{
+	for (var i = 0; i < $scope.stories.length; i++) {
+		var story = $scope.stories[i];
+		if (story.en)
+		{
+			var titleEn = story.en.split('<br>')[0];
+		// add image to origin data
+		var trackNum = titleEn.replace(/[^0-9.]/g, '');
+		story.img = trackNum;
+		}
+	}
+}
+
 $scope.fetchStory = function (idx, reset=true) {
 	MYLOG('fetchStory');
 	// when click 1.2.3..40
@@ -136,7 +150,6 @@ $scope.fetchStory = function (idx, reset=true) {
 	// $scope.story.en|vi ~ origin [not edit]
 	$scope.story.enShow = '';
 	$scope.story.viShow = '';
-	$scope.story.en_hidden_words = '';
 
 	// bold title
 	var titleEn = $scope.story.en.split('<br>')[0];
@@ -144,9 +157,6 @@ $scope.fetchStory = function (idx, reset=true) {
 
 	var titleVi = $scope.story.vi.split('<br>')[0];
 	$scope.story.viShow = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
-
-	//
-	$scope.story.en_hidden_words = $scope.story.en;
 
 	var words = $scope.story.en.match(/\b(\w+)\b/g);
 	var _wPosArr = [];   // index in Arr
@@ -167,18 +177,10 @@ $scope.fetchStory = function (idx, reset=true) {
 					
 					kDot = kSpace + word.replace(/./g, ".") + kSpace;
 				//	MYLOG(kDot);
-					var s = $scope.story.en_hidden_words;
-
-					let firstPart = s.substr(0, idxOf);
-			    let lastPart = s.substr(idxOf + kDot.length);
-			    let newString = firstPart + kDot + lastPart;
-
-					$scope.story.en_hidden_words = newString;
+		
 				}
 	  	}
 	} // for
-	titleEn = $scope.story.en_hidden_words.split('<br>')[0];
-	$scope.story.en_hidden_words = $scope.story.en_hidden_words.replace(titleEn, '<b>' + titleEn + '</b>');
 
 	if ($scope.story.voca) {
 		var vocas = $scope.story.voca.split(',');
@@ -216,11 +218,14 @@ $scope.isLongTrack = function(idx) {
 	var track = $scope.stories[idx];
 	if (!track || !track.en) return 'text-muted';
 	var lengthCount = track.en.length;
+	let result = ''
 	if (lengthCount > 800 )
 	{
-			return 'text-danger';
+			result = 'font-weight-bold';
 	}
-	return 'text-warning';
+
+//	if (track.img) result += " text-danger";
+	return result;
 }
 
 $scope.loadData = function () {
@@ -243,7 +248,10 @@ $scope.loadData = function () {
 		$scope.storyIdx = parseInt(idx);
 	}
 
+
 	$scope.fetchStory($scope.storyIdx, false);
+	$scope.preprocessStories();
+
 };
 
 $scope.loadData();

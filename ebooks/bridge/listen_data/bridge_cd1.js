@@ -79,7 +79,7 @@ Asnes: Ôi! Tôi xin lỗi! 'Barbie' là một từ không chính thức để c
 Fоuаd: Tôi muốn đi, còn bạn thì sao, Yibo?<br>\
 Yibo: Vâng, xin mời!<br>\
 Agnes: Ồ, tuyệt quá. Bây giờ, chúng ta hãy đợi thêm vài sinh viên nữa đến rồi chúng ta có thể bắt đầu chuyến tham quan khuôn viên trường!"
-,voca:"campus,Barbeque,Berlin,Australia,carnival,union,Beijing,informal,host"
+,voca:"campus,Barbeque,Berlin,Australia,carnival,union,Beijing,informal,host",
 },
 {
 	en:"Track 1.3<br>\
@@ -148,18 +148,23 @@ Etsuko: Có bàn không?<br>\
 Hassan: Không, không có nhưng có một chiếc bàn nhỏ để tôi đặt máy tính xách tay. Tôi đến thư viện trường đại học khi muốn học. Và không có giá sách nào cả nên tất cả sách của tôi đều nằm dưới ghế sofa. Không lý tưởng chút nào! Còn bạn thì sao, Estuko? Bạn ở đâu?<br>\
 Etsuko: Tôi ở trong một căn phòng trong ký túc xá sinh viên. Đó là một căn phòng đơn. Nó hơi nhỏ nhưng có mọi thứ tôi cần. Có một chiếc bàn lớn để tôi đặt máy tính xách tay, có một chiếc đèn và có giá sách nên có nhiều chỗ cho tất cả sách của tôi. Tôi thích đọc sách! Có một chiếc ghế sofa nhỏ nữa - rất thoải mái! Điều tuyệt nhất là nó rất yên tĩnh và tôi có thể nhìn thấy công viên từ cửa sổ của mình! <br>\
 Hassan: Tôi muốn tìm một căn phòng như phòng của bạn!",
-voca:"memory,sofa,university,tour,shared flat,bookshelves,Turkey,Iran,Saudi Arabia,student hall,comfortable,centre,at the moment,lots of space,quiet"
+voca:"memory,sofa,university,tour,shared flat,bookshelves,Turkey,Iran,Saudi Arabia,student hall,comfortable,centre,at the moment,lots of space,quiet",
+
 },
 {
 	en:"Track 1.7<br>\
-My ideal rооm to study in? It's mу bedroom at home. It's а big rооm and it's blue. Blue is а very саlm colour. There's а big window, so it's very bright. Тhеre are three bookshelves, there's а large desk fоr mу laptop and there's а red sofa, It's а good rооm to study in because it's very quiet and it's very tidy!"
+My ideal rооm to study in? It's mу bedroom at home. It's а big rооm and it's blue. Blue is а very саlm colour. There's а big window, so it's very bright. \
+Тhеre are three bookshelves, there's а large desk fоr mу laptop and there's а red sofa, It's а good rооm to study in because it's very quiet and it's very tidy!"
 ,vi:"Track 1.7<br>\
-Căn phòng lý tưởng để học của tôi là gì? Đó là phòng ngủ ở nhà tôi. Đó là một căn phòng lớn và có màu xanh. Màu xanh là một màu rất dễ chịu. Có một cửa sổ lớn, vì vậy rất sáng. Có ba giá sách, có một chiếc bàn lớn để đặt máy tính xách tay và một chiếc ghế sofa màu đỏ. Đó là một căn phòng tốt để học vì rất yên tĩnh và rất gọn gàng!"
+Căn phòng lý tưởng để học của tôi là gì? Đó là phòng ngủ ở nhà tôi. Đó là một căn phòng lớn và có màu xanh. Màu xanh là một màu rất dễ chịu. Có một cửa sổ lớn, vì vậy rất sáng.\
+ Có ba giá sách, có một chiếc bàn lớn để đặt máy tính xách tay và một chiếc ghế sofa màu đỏ. Đó là một căn phòng tốt để học vì rất yên tĩnh và rất gọn gàng!"
+
 },
 {
 	en:"Track 1.8<br> \
 Etsuko: Hi Ahmed! How are you?<br>\
-Ahmed: OK, but I'm freezing. It's minus 10 degrees today! Etsuko: Yes, I know it's very cold, Ahmed. But, it is January and Canada is the coldest country in the world!<br>\
+Ahmed: OK, but I'm freezing. It's minus 10 degrees today! <br>\
+Etsuko: Yes, I know it's very cold, Ahmed. But, it is January and Canada is the coldest country in the world!<br>\
 Ahmed: I really don't like winter. It's awful.<br>\
 Etsuko: No, it isn't! It's fantastic! I love it. The winter carnival starts this weekend - on Saturday! Do you want to come with me?<br>\
 Ahmed: I'm not sure. What happens at the carnival?<br>\
@@ -179,7 +184,8 @@ Etsuko: He's a snowman! And he wears a bright red hat too!"
 ,
 vi:"Track 1.8<br>\
 Etsuko: Chào Ahmed! Bạn khỏe không?<br>\
-Ahmed: Ổn, nhưng tôi đang lạnh cóng. Hôm nay là âm 10 độ! Etsuko: Vâng, tôi biết là rất lạnh, Ahmed. Nhưng, ĐANG LÀ tháng Một và Canada là quốc gia lạnh nhất thế giới!<br>\
+Ahmed: Ổn, nhưng tôi đang lạnh cóng. Hôm nay là âm 10 độ! <br>\
+Etsuko: Vâng, tôi biết là rất lạnh, Ahmed. Nhưng, ĐANG LÀ tháng Một và Canada là quốc gia lạnh nhất thế giới!<br>\
 Ahmed: Tôi thực sự không thích mùa đông. Thật kinh khủng.<br>\
 Etsuko: Không, không phải! Thật tuyệt! Tôi thích lắm. Lễ hội mùa đông sẽ bắt đầu vào cuối tuần này - vào thứ Bảy! Bạn có muốn đi cùng tôi không?<br>\
 Ahmed: Tôi không chắc. Lễ hội diễn ra như thế nào?<br>\
@@ -251,7 +257,7 @@ Fouad: Tôi không thích! Tôi nhảy rất tệ. Nhưng có một hội thảo
 Fouad: Làm sao chúng ta đến được bãi biển Bondi? Tôi không muốn đi bằng ô tô - rất khó để đỗ xe gần bãi biển.<br>\
 Jing: Đúng vậy. Chúng ta có thể đi tàu đến Bondi Junction rồi bắt xe buýt.<br>\
 Fouad: Bạn có muốn kiểm tra trang web và tìm hiểu không? Lễ hội bắt đầu lúc 11 giờ sáng - chúng ta không muốn đến muộn.<br>\
-Jing: Ý tưởng hay!"
+Jing: Ý tưởng hay!",
 },
 {
 	en:"Track 1.12<br>\
@@ -262,33 +268,6 @@ we call it Peranakan dress - it's very beautiful! Why is the day special? Well, 
 vi:"Track 1.12<br>\
 Leah: Một ngày quan trọng đối với tôi ư? Ồ, dễ thôi! Ngày Quốc khánh Singapore thực sự đặc biệt. Ngày này là ngày 9 tháng 8. Chuyện gì xảy ra? Vâng, tôi dành cả ngày này với gia đình và bạn bè. Chúng tôi xem diễu hành Ngày Quốc khánh trên webcast trực tiếp! Rất nhiều màu sắc! Sau đó, chúng tôi ăn cơm gà ngon tuyệt. Tôi rất thích nó! Tôi cũng mặc trang phục dân tộc - chúng tôi gọi là trang phục Peranakan - rất đẹp! Tại sao ngày này lại đặc biệt? Vâng, đối với tôi, đó không chỉ là ngày lễ - đó là ngày tôi có thể ăn mừng mọi thứ về Singapore và vui vẻ!"
 ,voca:"National Day,parade,celebrate"
-,slides:"1. Yes, it’s on September 2nd - also known as the Independence Day.<br>\
--How: people celebrate this day with flags, fireworks,... <br>\
-watch parades (diễu hành), eat good food, hang out,...<br>\
-2. Yes of course, i think National days are important because:<br>\
-honor (tôn vinh) and preserve(giữ gìn) the country’s history and culture<br>\
-create a sense of community (tạo cảm giác cộng đồng)<br>\
-pass down(truyền lại) values and customs to future generations.<br><br>\
-parade (n) buổi diễu hành<br>\
-lion dance (n) múa lân/rồng<br>\
-celebrate (v) ăn mừng. We celebrated our 25th wedding anniversary in Florence<br>\
-preserve (v) giữ gìn, bảo tồn. He was anxious to preserve his reputation<br>\
-culture(n) văn hóa<br>\
-value (n) giá trị → cultural value (n) giá trị văn hóa<br><br>\
-- What it is – Let me tell you about a special day/event in my country and it is ….<br>\
-- When it is  – It’s held on / It takes place on + date…<br>\
-- What you do  – I hang out with my … , watch …, eat …, go …<br>\
-- Why it is special for you – This day is special for me because ….<br>\
-- can have fun, be happy<br>\
-- gather with loved ones<br>\
-- unwind, recharge my battery after nerve-racking time<br>\
-- celebrate + N (history, culture, victory,...)<br><br>\
-HOMEWORD<br>\
-* Describe a traditional festival in your country<br>\
-- What it is<br>\
-- When it takes place<br>\
-- What people do during this holiday<br>\
-- What you feel about this holiday"
 },
 {
 	en:"Track 1.13<br>\
@@ -417,7 +396,7 @@ Pilar: Vâng, tôi chắc chắn mình có thể quản lý một nhóm tốt. T
 Grant: Được rồi, chúng ta hãy nói thêm về quản lý dự án của bạn."
 },
 {
-	en:"Track 1.15.<br>\
+	en:"Track 1.15<br>\
 1. I can manage a team..<br>\
 2. Harold can't get a job. 3 Can you speak French?.<br>\
 4. Yes, I can..<br>\

@@ -25,9 +25,10 @@
     <div ng-controller="ctrl" class="container mt-4">
     <h5 class="mb-4">Bridge Ielt Reading</h5>
 
-    	<a href="../../index.html" class="mr-4">Home</a>
+    	<a href="../ebooks.html" class="mr-4"><< Ebooks</a>
     	<a href="listen.html" class="mr-4">Listening</a>
     	<hr>
+      
     	<div ng-repeat="story in stories track by $index" class="mb-2" >
 		  <h6 class="accordion" >
 		    <a href ng-click="acc_click($index)">{{$index+1}}. Unit {{story.unit}}: {{story.title}}</a>
@@ -42,44 +43,11 @@
 	          		</p>
 	          	</div>
 		  </div>
-		</div>
+		</div> <!-- ng-repeat -->
 
     	<span class="btnShowVi opa">
         	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
     	</span>
-
-    <!-- 	<form name="cdForm" class="my-3" role="group">
-    		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-2">B_CD1</span>
-    	</form> -->
- <!-- 
-    	<div class="my-3">
-		    <div class="col-md-12">
-		    	 <a ng-repeat="n in range(1, 15)"  ng-click="fetchStory(n-1);" href="" class="pr-2 mr-1" 
-		    	 ng-class=""> [{{n}}]
-		    	</a>
-		    </div>
-		    <br> 
-
-
-		       <span ng-show="!bShowVi" class="btnEnVi opa">
-		        	<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
-    				<p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p>
-    			</span> dont use 
-		 </div>
--->
-		 <!--
-		<span  class="btnPlay opa">
-			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
-		</span>
-
-    	<span ng-show="bPlayingFull" class="btnSound opa">
-    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-10)">-10s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(10)">+10s</button></p>
-    	</span>
-		-->
-
-
 
     </div> <!-- container -->
 </body>

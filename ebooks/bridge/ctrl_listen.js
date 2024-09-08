@@ -1,3 +1,7 @@
+// include other *.js
+document.write('<script src="../../uncount_nouns.js" type="text/javascript"></script>');
+document.write('<script src="listen_data/bridge_cd1.js" type="text/javascript"></script>');
+document.write('<script src="listen_data/bridge_cd2.js" type="text/javascript"></script>');
 
 function MYLOG(msg) {
 //	console.log(msg);
@@ -164,22 +168,8 @@ $scope.fetchStory = function (idx, reset=true) {
 	var kSpace = "";
 	for (let i = 0; i < words.length; i++) {
 	  	var word = words[i];
-	  	if (validateWord(word)) 
-	  	{
-				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
-				if (rd % 5 == 0) {
-					var _w = kSpace + word + kSpace;
-					var idxOf = $scope.story.en.indexOf(_w);
-					var obj = {'w': _w, "idx": idxOf}
-
-					_wPosArr.push(obj);
-				//	MYLOG(_w);
-					
-					kDot = kSpace + word.replace(/./g, ".") + kSpace;
-				//	MYLOG(kDot);
-		
-				}
-	  	}
+	  	// uncountable_nouns hightlight
+		$scope.story.enShow = hLightUncountNoun(word, $scope.story.enShow);
 	} // for
 
 	if ($scope.story.voca) {

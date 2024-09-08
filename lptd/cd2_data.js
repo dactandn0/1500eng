@@ -1,6 +1,4 @@
-$.getScript("../abc.js", function() {
-   
-});
+
 
 const cd2_stories = [
 {

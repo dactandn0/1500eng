@@ -1,3 +1,8 @@
+// include other *.js
+document.write('<script src="../uncount_nouns.js" type="text/javascript"></script>');
+document.write('<script src="cd1_data.js" type="text/javascript"></script>');
+document.write('<script src="cd2_data.js" type="text/javascript"></script>');
+
 
 function MYLOG(msg) {
 //	console.log(msg);
@@ -158,11 +163,16 @@ $scope.fetchStory = function (idx, reset=true) {
 	$scope.story.title = titleEn;
 
 	var words = $scope.story.en.match(/\b(\w+)\b/g);
-	var _wPosArr = [];   // index in Arr
 	var kDot = "";
 	var kSpace = "";
 	for (let i = 0; i < words.length; i++) {
 	  	var word = words[i];
+
+	  	// uncountable_nouns hightlight
+		$scope.story.enShow = hLightUncountNoun(word, $scope.story.enShow);
+		$scope.story.enShow = hLightNounSameVerb(word, $scope.story.enShow);
+
+	  	// make ....
 	  	if (validateWord(word)) 
 	  	{
 				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
@@ -170,17 +180,12 @@ $scope.fetchStory = function (idx, reset=true) {
 					var _w = kSpace + word + kSpace;
 					var idxOf = $scope.story.en.indexOf(_w);
 					var obj = {'w': _w, "idx": idxOf}
-
-					_wPosArr.push(obj);
-				//	MYLOG(_w);
-					
 					kDot = kSpace + word.replace(/./g, ".") + kSpace;
-				//	MYLOG(kDot);
 					var s = $scope.story.en_hidden_words;
 
 					let firstPart = s.substr(0, idxOf);
-			    let lastPart = s.substr(idxOf + kDot.length);
-			    let newString = firstPart + kDot + lastPart;
+			    	let lastPart = s.substr(idxOf + kDot.length);
+			    	let newString = firstPart + kDot + lastPart;
 
 					$scope.story.en_hidden_words = newString;
 				}
@@ -206,6 +211,9 @@ $scope.fetchStory = function (idx, reset=true) {
 			$scope.story.enShow = $scope.story.enShow.replace(regex, '<b>' + voca + '</b>');
 		}
 	}
+
+	// isUncountableNoun
+
 }
 
 function validateWord(word) 

@@ -48,7 +48,7 @@ const cd1_stories = [
 	M: Không, chỉ năm xu thôi. Đừng lo. Và bạn có thể lấy lại tiền khi trả lại cốc.<br>\
 	W: Công bằng mà. Vâng, có lẽ chính phủ đúng, sau cùng. Tôi sẽ trả lại tất cả các cốc cà phê giấy mà tôi sử dụng từ bây giờ.<br>\
 	M: Tốt! Tất cả chúng ta đều cần tái chế. Điều đó giúp giữ môi trường sạch.',
-	voca:'recycle,environment,money,government,extra,return,law,fair,instead of,after all'
+	voca:'recycle,environment,government,extra,return,law,fair,instead of,after all'
 },
 {
 	en:

@@ -240,6 +240,7 @@ Fouad: How do we get to Bondi beach? I don't want to go by car - it's difficult 
 Jing: That's true. We can take a train to Bondi Junction and then catch a bus.<br>\
 Fouad: Do you want to check the website and find out? The festival starts at 11am - we don't want to be late.<br>\
 Jing: Good idea!",
+voca:"exactly,kite,poster,entertainment programme,exhibition,dance,workshop,stall,catch a bus",
 vi:"Track 1.11<br>\
 Fouad: Chào Jing! Bạn có muốn đến Lễ hội Gió vào cuối tuần tới không?<br>\
 Jing: Lễ hội Gió ư? Chính xác thì đó là gì?<br>\
@@ -324,6 +325,7 @@ Katrin: Vậy, bạn cảm thấy vui?<br>\
 Li Bo: Vâng.<br>\
 Katrin: Cảm ơn bạn rất nhiều vì đã giúp đỡ, Li Bo.<br>\
 Li Bo: Không vấn đề gì."
+,voca:"first-year student,confident,shy,somewhere,conversation,describe,talkative,tutor,in front of a lot of people"
 },
 {
 	en:"Track 1.14<br>\

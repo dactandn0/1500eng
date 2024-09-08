@@ -5,10 +5,18 @@ const bridge_read_data =
 	unit:2,
 	title: "Quebec Winter Carnival",
 	en: 
-	"Chantal lives in Quebec in Canada. She speaks English and French. Every year she goes to the Quebec Winter Carnival. It's one of the largest festivals in the world and many people visit the city for two weeks in January or February to enjoy it. They come to celebrate winter and go to fun attractions, including colourful street parades. Chantal loves the carnival! She likes looking at the snow sculptures but she doesn't want to touch them-they are too cold! There is also a canoe race across the icy St Lawrence River but don't come to watch it if you don't like cold weather! The carnival mascot is Bonhomme, a snowman in a red hat.",
-voca:"Russia",
+	"Chantal lives in Quebec in Canada. She speaks English and French. Every year she goes to the Quebec Winter Carnival. \
+	It's one of the largest festivals in the world and many people visit the city for two weeks in January or February to enjoy it. \
+	They come to celebrate winter and go to fun attractions, including colourful street parades. Chantal loves the carnival! \
+	She likes looking at the snow sculptures but she doesn't want to touch them-they are too cold! \
+	There is also a canoe race across the icy St Lawrence River but don't come to watch it if you don't like cold weather! The carnival mascot is Bonhomme, a snowman in a red hat.",
+voca:"carnival,snow sculptures,parade,attractions",
 	vi: 
-	'Chantal sống ở Quebec, Canada. Cô ấy nói tiếng Anh và tiếng Pháp. Hàng năm, cô ấy đều đến Quebec Winter Carnival. Đây là một trong những lễ hội lớn nhất thế giới và nhiều người đến thành phố này trong hai tuần vào tháng 1 hoặc tháng 2 để tận hưởng. Họ đến đây để chào đón mùa đông và tham gia các hoạt động vui chơi, bao gồm cả các cuộc diễu hành đường phố đầy màu sắc. Chantal rất thích lễ hội! Cô ấy thích ngắm nhìn những tác phẩm điêu khắc bằng tuyết nhưng không muốn chạm vào chúng vì chúng quá lạnh! Ngoài ra còn có một cuộc đua thuyền độc mộc qua Sông St Lawrence băng giá nhưng đừng đến xem nếu bạn không thích thời tiết lạnh! Linh vật của lễ hội là Bonhomme, một người tuyết đội mũ đỏ.'
+	'Chantal sống ở Quebec, Canada. Cô ấy nói tiếng Anh và tiếng Pháp. Hàng năm, cô ấy đều đến Quebec Winter Carnival. \
+	Đây là một trong những lễ hội lớn nhất thế giới và nhiều người đến thành phố này trong hai tuần vào tháng 1 hoặc tháng 2 để tận hưởng.\
+	 Họ đến đây để chào đón mùa đông và tham gia các hoạt động vui chơi, bao gồm cả các cuộc diễu hành đường phố đầy màu sắc. \
+	 Chantal rất thích lễ hội! Cô ấy thích ngắm nhìn những tác phẩm điêu khắc bằng tuyết nhưng không muốn chạm vào chúng vì chúng quá lạnh! \
+	 Ngoài ra còn có một cuộc đua thuyền độc mộc qua Sông St Lawrence băng giá nhưng đừng đến xem nếu bạn không thích thời tiết lạnh! Linh vật của lễ hội là Bonhomme, một người tuyết đội mũ đỏ.'
 },
 {
 	unit:2,

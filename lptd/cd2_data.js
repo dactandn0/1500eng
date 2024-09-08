@@ -12,11 +12,14 @@ How many people live on your continent? No one lives in the South Pole. Only ani
  Scientists and tourists visit there, but they don’t stay long. Do you want to visit Antarctica? It is the coldest, driest place on Earth!',
 	vi: 
 	'Bài 1 Nam Cực<br>\
-Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục địa. Cách đây rất lâu, Nam Cực nằm gần đường xích đạo. Đó là 500 triệu năm trước. Nó từng được nối với Úc. Sau đó, toàn bộ đất liền trên Trái Đất bắt đầu di chuyển. Nam Cực rời xa Úc và di chuyển về phía nam. <br>\
+Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục địa. Cách đây rất lâu, Nam Cực nằm gần đường xích đạo. Đó là 500 triệu năm trước. Nó từng được nối với Úc.\
+ Sau đó, toàn bộ đất liền trên Trái Đất bắt đầu di chuyển. Nam Cực rời xa Úc và di chuyển về phía nam. <br>\
 Xương khủng long từng được tìm thấy ở Nam Cực. Bạn có biết tại sao không? Khủng long đã sống ở đó hàng triệu năm trước. Trước khi nó di chuyển ra khỏi đường xích đạo. <br>\
-Khoảng 98% lục địa này bị đóng băng. Phần còn lại được tạo thành từ đá. Nam Cực có 87% băng trên thế giới. Nhưng bạn có biết rằng nơi này có rất ít tuyết không? Chỉ có khoảng hai inch tuyết rơi mỗi năm.<br>\
-Có bao nhiêu người sống trên lục địa của bạn? Không ai sống ở Nam Cực. Chỉ có động vật, như chim cánh cụt, sống ở đó. Các nhà khoa học và khách du lịch đến thăm nơi này, nhưng họ không ở lại lâu. Bạn có muốn đến thăm Nam Cực không? Đây là nơi lạnh nhất và khô nhất trên Trái Đất!',
-	voca:'Dinosaur,South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
+Khoảng 98% lục địa này bị đóng băng. Phần còn lại được tạo thành từ đá. Nam Cực có 87% băng trên thế giới. Nhưng bạn có biết rằng nơi này có rất ít tuyết không?\
+ Chỉ có khoảng hai inch tuyết rơi mỗi năm.<br>\
+Có bao nhiêu người sống trên lục địa của bạn? Không ai sống ở Nam Cực. Chỉ có động vật, như chim cánh cụt, sống ở đó. Các nhà khoa học và khách du lịch đến thăm nơi này,\
+ nhưng họ không ở lại lâu. Bạn có muốn đến thăm Nam Cực không? Đây là nơi lạnh nhất và khô nhất trên Trái Đất!',
+voca:'Dinosaur,South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
 },
 {
 	en: 
@@ -27,7 +30,9 @@ M: The hiking club is going to Bear Mountain. The bus drops us off at the bottom
 W: That sounds really great! Where can I sign up?<br>\
 M: Go and see Jennifer. She’ll help you sign up.<br>\
 W: What activity will we do when we get to the cabin on the mountain?<br>\
-M: Well, it takes seven hours to hike to the cabin, so it will be late by the time we arrive. After we unpack, we’ll start a campfire. Then we can sing, eat, and tell stories around the fire. The following day we’ll leave at dawn and hike to the top of the mountain. After we take pictures, we’ll hike back down. If we have time, we might go swimming in the lake on the mountain!<br>\
+M: Well, it takes seven hours to hike to the cabin, so it will be late by the time we arrive. After we unpack, we’ll start a campfire.\
+ Then we can sing, eat, and tell stories around the fire. The following day we’ll leave at dawn and hike to the top of the mountain.\
+  After we take pictures, we’ll hike back down. If we have time, we might go swimming in the lake on the mountain!<br>\
 W: Those sound like really fun activities, and I can’t wait to go!',
 	vi: 
 	'Bài 2 Một chuyến đi bộ đường dài<br>\
@@ -37,7 +42,9 @@ M: Câu lạc bộ đi bộ đường dài sẽ đến Bear Mountain. Xe buýt s
 W: Nghe có vẻ tuyệt đấy! Tôi có thể đăng ký ở đâu?<br>\
 M: Đến gặp Jennifer. Cô ấy sẽ giúp bạn đăng ký.<br>\
 W: Chúng ta sẽ tham gia hoạt động gì khi đến cabin trên núi?<br>\
-M: À, phải mất bảy giờ để đi bộ đến cabin, vì vậy sẽ muộn khi chúng ta đến nơi. Sau khi dỡ đồ, chúng ta sẽ đốt lửa trại. Sau đó, chúng ta có thể hát, ăn và kể chuyện quanh đống lửa. Ngày hôm sau, chúng ta sẽ khởi hành lúc rạng sáng và đi bộ lên đỉnh núi. Sau khi chụp ảnh, chúng ta sẽ đi bộ xuống. Nếu có thời gian, chúng ta có thể đi bơi ở hồ trên núi!<br>\
+M: À, phải mất bảy giờ để đi bộ đến cabin, vì vậy sẽ muộn khi chúng ta đến nơi. Sau khi dỡ đồ, chúng ta sẽ đốt lửa trại.\
+ Sau đó, chúng ta có thể hát, ăn và kể chuyện quanh đống lửa. Ngày hôm sau, chúng ta sẽ khởi hành lúc rạng sáng và đi bộ lên đỉnh núi.\
+  Sau khi chụp ảnh, chúng ta sẽ đi bộ xuống. Nếu có thời gian, chúng ta có thể đi bơi ở hồ trên núi!<br>\
 W: Nghe có vẻ là những hoạt động thực sự thú vị, và tôi rất mong được đi!',
 	voca:'trip,cabin,sign,up,activity,hike,club,receive,announcement,president,rent,halfway up,campfire'
 },
@@ -46,9 +53,11 @@ W: Nghe có vẻ là những hoạt động thực sự thú vị, và tôi rấ
 	'Unit 3 Save the Turtles<br>\
 M: Have you heard about the plan to save turtles in Mexico?<br>\
 W: No. What is the story? <br>\
-M: Turtles are in danger of becoming extinct around the world. Every year, thousands of turtles lay eggs on the beach. After the turtles lay their eggs in the sand, people come along and take them.<br>\
+M: Turtles are in danger of becoming extinct around the world. Every year, thousands of turtles lay eggs on the beach.\
+ After the turtles lay their eggs in the sand, people come along and take them.<br>\
 W: I suppose the people like eating turtle eggs.<br>\
-M: Exactly. Turtles are beginning to stay away from certain places, now. There are fewer and fewer of them left. There is a new project in Mexico to save these eggs. Then turtles will not become extinct. I think it’s a very good project.<br>\
+M: Exactly. Turtles are beginning to stay away from certain places, now. There are fewer and fewer of them left.\
+ There is a new project in Mexico to save these eggs. Then turtles will not become extinct. I think it’s a very good project.<br>\
 W: Is there anything we can do to help?<br>\
 M: I’m going to call the Environmental Protection hotline. They might have some information about the project to help save turtles in Mexico.<br>\
 W: They might even have a brochure. Let’s find the website on my computer. Oh, here it is. The address is www.enviro.com. There’s plenty of information here.<br>\
@@ -68,15 +77,19 @@ voca: 'save,extinct,information,project,brochure,hotline,available,nearly,colorf
 },
 {
 	en: 'Unit 4 Hiking in Iran<br>\
-G : Most people think that the Middle East is only a desert. This is far from true. Last year, I went hiking in Iran. Iran has many mountains. You can find trees that lose their leaves in winter.<br>\
+G : Most people think that the Middle East is only a desert. This is far from true. Last year, I went hiking in Iran.\
+ Iran has many mountains. You can find trees that lose their leaves in winter.<br>\
 If you’re lucky, you may see a yellow deer or a brown bear, two species that live there. The air is fresh, and you can swim in clear, clean lakes. I definitely recommend it.<br>\
-There are so many birds to see. It is fun to go into the forest with binoculars to look at birds. Seeing the birds through binoculars makes them seem much nearer than they actually are. You can write down all of the species that you see. You should learn about their calls first. That means the sounds that each bird makes. Sometimes it’s hard to see the birds. However, you can identify them if you happen to hear them.<br>\
+There are so many birds to see. It is fun to go into the forest with binoculars to look at birds.\
+ Seeing the birds through binoculars makes them seem much nearer than they actually are. You can write down all of the species that you see. You should learn about their calls first. That means the sounds that each bird makes. Sometimes it’s hard to see the birds. However, you can identify them if you happen to hear them.<br>\
 I want to go back to Iran again someday. It’s so beautiful that I want to see and explore much more of it!',
 	vi:
 	'Bài 4 Đi bộ đường dài ở Iran<br>\
-G: Hầu hết mọi người nghĩ rằng Trung Đông chỉ là sa mạc. Điều này không đúng chút nào. Năm ngoái, tôi đã đi bộ đường dài ở Iran. Iran có nhiều núi. Bạn có thể tìm thấy những cái cây rụng lá vào mùa đông.<br>\
+G: Hầu hết mọi người nghĩ rằng Trung Đông chỉ là sa mạc. Điều này không đúng chút nào. Năm ngoái, tôi đã đi bộ đường dài ở Iran.\
+ Iran có nhiều núi. Bạn có thể tìm thấy những cái cây rụng lá vào mùa đông.<br>\
 Nếu may mắn, bạn có thể nhìn thấy một con hươu vàng hoặc một con gấu nâu, hai loài sống ở đó. Không khí trong lành và bạn có thể bơi trong những hồ nước trong vắt. Tôi thực sự khuyên bạn nên thử.<br>\
-Có rất nhiều loài chim để ngắm. Thật thú vị khi đi vào rừng với ống nhòm để ngắm chim. Nhìn thấy những chú chim qua ống nhòm khiến chúng có vẻ gần hơn nhiều so với thực tế. Bạn có thể viết ra tất cả các loài mà bạn nhìn thấy. Trước tiên, bạn nên tìm hiểu về tiếng kêu của chúng. Nghĩa là âm thanh mà mỗi loài chim tạo ra. Đôi khi rất khó để nhìn thấy những chú chim. Tuy nhiên, bạn có thể nhận dạng chúng nếu tình cờ nghe thấy chúng.<br>\
+Có rất nhiều loài chim để ngắm. Thật thú vị khi đi vào rừng với ống nhòm để ngắm chim. \
+Nhìn thấy những chú chim qua ống nhòm khiến chúng có vẻ gần hơn nhiều so với thực tế. Bạn có thể viết ra tất cả các loài mà bạn nhìn thấy. Trước tiên, bạn nên tìm hiểu về tiếng kêu của chúng. Nghĩa là âm thanh mà mỗi loài chim tạo ra. Đôi khi rất khó để nhìn thấy những chú chim. Tuy nhiên, bạn có thể nhận dạng chúng nếu tình cờ nghe thấy chúng.<br>\
 Tôi muốn quay lại Iran một lần nữa vào một ngày nào đó. Nó đẹp đến nỗi tôi muốn được nhìn thấy và khám phá nhiều hơn nữa!',
 voca:"recommend,desert,happen,species,identify,binoculars,owl,definitely,actually,explore,Middle East,much more of[a lof of]"
 },
@@ -137,7 +150,7 @@ W: Rất đơn giản. Đầu tiên, hãy thu gom bát đĩa bẩn và cạo s�
 M: Nghe có vẻ dễ sử dụng. Tôi nghĩ vợ tôi sẽ thực sự thích nó. Giá của nó là bao nhiêu?<br>\
 W: Ông thật may mắn, thưa ông! Nó đang được bán với giá 400 đô la trong tuần này. <br>\
 M: Tuyệt, tôi sẽ mua nó!',
-voca:"appliance,dishwasher,garbage,housework,simple,perfect,vacuum,cleaner,scrape,detergent,leftover"
+voca:"appliance,dishwasher,garbage,housework,simple,perfect,vacuum,cleaner,scrape[/skreɪp/],detergent,leftover,cutlery,compartment,rinse,sparkling,popular,wash cycle,on sale,for"
 },
 {
 en:'Unit 8 Acupuncture<br>\
@@ -394,7 +407,8 @@ voca:"apartment,downtown,shower,phone,bus,stop,anymore,bus,station,honestly,bath
 	en:"Unit 19 Tickets to the Game<br>\
 W: You won’t believe this, but I have some great news! I’ve got two tickets to the baseball game next Saturday.<br>\
 M: Did I hear you correctly? You have two tickets to the baseball game? How did you get those? I thought it was impossible to get tickets because they were all sold out last month!<br>\
-W: It was easy, actually. My colleague and her husband have to go to London that week, so they’ll miss the game. They offered me their tickets, and of course I was happy to accept. M: You’re so lucky! Who are you going to take with you?<br>\
+W: It was easy, actually. My colleague and her husband have to go to London that week, so they’ll miss the game.\
+ They offered me their tickets, and of course I was happy to accept. M: You’re so lucky! Who are you going to take with you?<br>\
 W: I was thinking that maybe you would like to go. Otherwise, I might take my brother instead.<br>\
 M: Don’t do that, I would love to watch the game with you!<br>\
 W: I was just joking. I know you really want to go. Where shall we meet on Saturday?<br>\
@@ -404,7 +418,8 @@ M: Good idea. I can’t wait!",
 vi:"Bài 19 Vé xem trận đấu<br>\
 W: Bạn sẽ không tin điều này đâu, nhưng tôi có một số tin tuyệt vời! Tôi có hai vé xem trận bóng chày vào thứ Bảy tuần tới.<br>\
 M: Tôi có nghe đúng không? Bạn có hai vé xem trận bóng chày à? Bạn lấy chúng bằng cách nào? Tôi nghĩ là không thể lấy được vé vì chúng đã bán hết vào tháng trước rồi!<br>\
-W: Thực ra thì dễ lắm. Đồng nghiệp của tôi và chồng cô ấy phải đến London vào tuần đó, nên họ sẽ bỏ lỡ trận đấu. Họ đã đề nghị tôi mua vé của họ, và tất nhiên là tôi vui vẻ nhận lời. M: Bạn thật may mắn! Bạn sẽ đưa ai đi cùng?<br>\
+W: Thực ra thì dễ lắm. Đồng nghiệp của tôi và chồng cô ấy phải đến London vào tuần đó, nên họ sẽ bỏ lỡ trận đấu.\
+ Họ đã đề nghị tôi mua vé của họ, và tất nhiên là tôi vui vẻ nhận lời. M: Bạn thật may mắn! Bạn sẽ đưa ai đi cùng?<br>\
 W: Tôi nghĩ rằng có lẽ bạn muốn đi. Nếu không, tôi có thể đưa anh trai tôi đi thay.<br>\
 M: Đừng làm thế, tôi rất muốn xem trận đấu cùng bạn!<br>\
 W: Tôi chỉ đùa thôi. Tôi biết là bạn thực sự muốn đi. Chúng ta sẽ gặp nhau ở đâu vào thứ Bảy?<br>\
@@ -437,7 +452,8 @@ M: Good! How is your blood type determined?<br>\
 G : You get your blood type from both your parents. Your blood type is a combination of genes from your father and your mother.<br>\
 M: That’s right.<br>\
 G : Before the lecture, I always thought that all blood was the same. Why can’t two different blood types mix?<br>\
-M: In some ways, every person’s blood is the same. But it is very dangerous to mix two different blood types. Your blood cells may begin to stick together. If you are given the wrong type of blood in a hospital, you could die.<br>\
+M: In some ways, every person’s blood is the same. But it is very dangerous to mix two different blood types.\
+ Your blood cells may begin to stick together. If you are given the wrong type of blood in a hospital, you could die.<br>\
 G : I see. So, that’s why blood types must be matched in the hospital. And this must be done before blood is given to anyone.<br>\
 M: Exactly!",
 vi:"Bài 21 Nhóm máu<br>\
@@ -448,7 +464,8 @@ M: Tốt! Nhóm máu của bạn được xác định như thế nào?<br>\
 G: Bạn nhận được nhóm máu của cả cha và mẹ. Nhóm máu của bạn là sự kết hợp các gen từ cha và mẹ của bạn.<br>\
 M: Đúng vậy.<br>\
 G: Trước bài giảng, tôi luôn nghĩ rằng tất cả các loại máu đều giống nhau. Tại sao hai loại máu khác nhau không thể trộn lẫn với nhau?<br>\
-M: Theo một số cách, máu của mỗi người đều giống nhau. Nhưng việc trộn lẫn hai loại máu khác nhau rất nguy hiểm. Các tế bào máu của bạn có thể bắt đầu dính vào nhau. Nếu bạn được truyền nhầm loại máu trong bệnh viện, bạn có thể tử vong.<br>\
+M: Theo một số cách, máu của mỗi người đều giống nhau. Nhưng việc trộn lẫn hai loại máu khác nhau rất nguy hiểm.\
+ Các tế bào máu của bạn có thể bắt đầu dính vào nhau. Nếu bạn được truyền nhầm loại máu trong bệnh viện, bạn có thể tử vong.<br>\
 G: Tôi hiểu rồi. Vậy nên, đó là lý do tại sao nhóm máu phải được khớp trong bệnh viện. Và điều này phải được thực hiện trước khi truyền máu cho bất kỳ ai.<br>\
 M: Chính xác!",
 voca:"lecture,mix,type,explain,hospital,blood,determined,gene,cell,match"

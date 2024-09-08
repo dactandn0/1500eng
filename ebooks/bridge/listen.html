@@ -42,7 +42,7 @@
 		    	</a>
 		    </div>
 		    <br> 
-		    <label> <input id="audioLoopEle" class="my-3" type="checkbox" onclick="chkClick()">&nbspLoop</label>
+		    <label> <input id="audioLoopEle" class="my-3" type="checkbox" checked onclick="chkClick()">&nbspLoop</label>
 		    	<span class="btnShowVi opa">
 		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
 		    	</span>
@@ -94,6 +94,6 @@ function chkClick()
 {	
 	var chk =  document.getElementById('audioLoopEle');
 	localStorage.setItem("bri_complete_isAudioLoop", chk.checked);
-//	console.log("bri_complete_isAudioLoop saved storage = ", chk.checked );
+	console.log("bri_listen_isAudioLoop saved storage = ", chk.checked );
 }
 </script>

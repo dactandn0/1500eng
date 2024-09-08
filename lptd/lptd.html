@@ -70,7 +70,7 @@
 	          <div class="card-text my-2">
 	          	
 	          	<h6 class="accordion" >
-				    <a href ng-click="showText=!showText"><i class="fa fa-lg fa-toggle-on"></i> {{story.title}}</a>
+				    <a href ng-click="showText=!showText"> {{story.title}}</a>
 				 </h6>
 	          	 <div class="accordion-content">
 	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords && showText"></p>

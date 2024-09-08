@@ -1,3 +1,6 @@
+$.getScript("../abc.js", function() {
+   
+});
 
 const cd2_stories = [
 {
@@ -154,31 +157,47 @@ voca:"appliance,dishwasher,garbage,housework,simple,perfect,vacuum,cleaner,scrap
 },
 {
 en:'Unit 8 Acupuncture<br>\
-B : Acupuncture began in China thousands of years ago. It is a special way to treat sick people. There are many acupuncture spots on the human body. Small metal needles are put into spots on the body. Each spot is connected to a special body part or system. There are many spots for each part.<br>\
-An expert puts the needles into these spots in a person’s body. These spots connect to the body system that has a problem. The needles do not go deep. People say that the needles do not hurt.<br>\
-We are not sure why acupuncture works. But studies have shown that it works very well. No one can explain why. Doctors think that it helps the nerves in the body. Some doctors use acupuncture to treat people who cannot take medicine.<br>\
-People in Asia have been using this special method for a long time. At first, people outside Asia did not trust this method. They did not think that it would help them. Now, it has become very popular around the world.'
+B : Acupuncture began in China thousands of years ago. It is a special way to treat sick people. There are many acupuncture spots on the human body.\
+ Small metal needles are put into spots on the body. Each spot is connected to a special body part or system. There are many spots for each part.<br>\
+An expert puts the needles into these spots in a person’s body. These spots connect to the body system that has a problem. The needles do not go deep.\
+ People say that the needles do not hurt.<br>\
+We are not sure why acupuncture works. But studies have shown that it works very well. No one can explain why. Doctors think that it helps the nerves in the body.\
+ Some doctors use acupuncture to treat people who cannot take medicine.<br>\
+People in Asia have been using this special method for a long time. At first, people outside Asia did not trust this method. They did not think that it would help them.\
+ Now, it has become very popular around the world.'
 ,
 vi:'Bài 8 Châm cứu<br>\
-B: Châm cứu bắt đầu ở Trung Quốc từ hàng ngàn năm trước. Đây là một phương pháp đặc biệt để điều trị bệnh. Có nhiều huyệt châm cứu trên cơ thể con người. Những chiếc kim kim loại nhỏ được châm vào các huyệt trên cơ thể. Mỗi huyệt được kết nối với một bộ phận hoặc hệ thống cơ thể đặc biệt. Mỗi bộ phận có nhiều huyệt.<br>\
-Một chuyên gia châm kim vào những huyệt này trên cơ thể một người. Những huyệt này kết nối với hệ thống cơ thể có vấn đề. Các kim không đi sâu. Mọi người nói rằng các kim không gây đau.<br>\
-Chúng tôi không chắc tại sao châm cứu lại có tác dụng. Nhưng các nghiên cứu đã chỉ ra rằng nó có tác dụng rất tốt. Không ai có thể giải thích tại sao. Các bác sĩ cho rằng nó giúp ích cho các dây thần kinh trong cơ thể. Một số bác sĩ sử dụng châm cứu để điều trị cho những người không thể uống thuốc.<br>\
-Người dân ở Châu Á đã sử dụng phương pháp đặc biệt này trong một thời gian dài. Lúc đầu, những người bên ngoài Châu Á không tin tưởng phương pháp này. Họ không nghĩ rằng nó sẽ giúp ích cho họ. Bây giờ, nó đã trở nên rất phổ biến trên toàn thế giới.'
-,voca:"treat,spot,nerves,needle,system,special,digestive,thread,acupuncture,connect"
+B: Châm cứu bắt đầu ở Trung Quốc từ hàng ngàn năm trước. Đây là một phương pháp đặc biệt để điều trị bệnh. Có nhiều huyệt châm cứu trên cơ thể con người.\
+ Những chiếc kim kim loại nhỏ được châm vào các huyệt trên cơ thể. Mỗi huyệt được kết nối với một bộ phận hoặc hệ thống cơ thể đặc biệt. Mỗi bộ phận có nhiều huyệt.<br>\
+Một chuyên gia châm kim vào những huyệt này trên cơ thể một người. Những huyệt này kết nối với hệ thống cơ thể có vấn đề. Các kim không đi sâu.\
+ Mọi người nói rằng các kim không gây đau.<br>\
+Chúng tôi không chắc tại sao châm cứu lại có tác dụng. Nhưng các nghiên cứu đã chỉ ra rằng nó có tác dụng rất tốt. Không ai có thể giải thích tại sao.\
+ Các bác sĩ cho rằng nó giúp ích cho các dây thần kinh trong cơ thể. Một số bác sĩ sử dụng châm cứu để điều trị cho những người không thể uống thuốc.<br>\
+Người dân ở Châu Á đã sử dụng phương pháp đặc biệt này trong một thời gian dài. Lúc đầu, những người bên ngoài Châu Á không tin tưởng phương pháp này.\
+ Họ không nghĩ rằng nó sẽ giúp ích cho họ. Bây giờ, nó đã trở nên rất phổ biến trên toàn thế giới.'
+,voca:"treat,spot,nerves,needle,system,special,digestive,thread,acupuncture,connect,popular,Asia,expert"
 },
 {
 en:'Unit 9 Albert Einstein<br>\
 B : Albert Einstein is famous around the world. He is famous for his work in science. Many people think that he was the greatest scientist of the 20th century.<br>\
-Einstein was born in Germany in 1879. His interest in science began when he was very young. Someone gave him a compass in 1884. Young Einstein was interested in how it worked. He wanted to learn science. He wanted to become a scientist.<br>\
-Einstein tried to enter a top Swiss university. At first, he met with failure. He did not get a place. But Einstein did not give up easily. He applied again to the same university in the next year. This time he was successful. Einstein was a good student. He graduated from this famous university in 1896.<br>\
-As a scientist, Einstein did important work in the field of physics. His work was very good. He received the Nobel Prize for physics in 1921. In 1933, he went to live in the United States with his wife.'
+Einstein was born in Germany in 1879. His interest in science began when he was very young. Someone gave him a compass in 1884.\
+ Young Einstein was interested in how it worked. He wanted to learn science. He wanted to become a scientist.<br>\
+Einstein tried to enter a top Swiss university. At first, he met with failure. He did not get a place. But Einstein did not give up easily.\
+ He applied again to the same university in the next year. This time he was successful. Einstein was a good student.\
+  He graduated from this famous university in 1896.<br>\
+As a scientist, Einstein did important work in the field of physics. His work was very good. He received the Nobel Prize for physics in 1921.\
+ In 1933, he went to live in the United States with his wife.'
 ,
 vi: 'Bài 9 Albert Einstein<br>\
 B: Albert Einstein nổi tiếng khắp thế giới. Ông nổi tiếng với công trình khoa học của mình. Nhiều người cho rằng ông là nhà khoa học vĩ đại nhất của thế kỷ 20.<br>\
-Einstein sinh ra tại Đức vào năm 1879. Ông bắt đầu quan tâm đến khoa học từ khi còn rất nhỏ. Có người tặng ông một chiếc la bàn vào năm 1884. Einstein thời trẻ rất thích tìm hiểu cách thức hoạt động của la bàn. Ông muốn học khoa học. Ông muốn trở thành một nhà khoa học.<br>\
-Einstein đã cố gắng vào một trường đại học hàng đầu của Thụy Sĩ. Lúc đầu, ông đã thất bại. Ông không được nhận vào học. Nhưng Einstein không dễ dàng từ bỏ. Ông lại nộp đơn vào cùng trường đại học đó vào năm sau. Lần này ông đã thành công. Einstein là một sinh viên giỏi. Ông tốt nghiệp trường đại học nổi tiếng này vào năm 1896.<br>\
-Là một nhà khoa học, Einstein đã có những công trình quan trọng trong lĩnh vực vật lý. Những công trình của ông rất xuất sắc. Ông nhận giải Nobel Vật lý năm 1921. Năm 1933, ông chuyển đến sống tại Hoa Kỳ cùng vợ.'
-,voca:"successful,university,failure,field,century,young,chemistry,Switzerland,graduate,physics"
+Einstein sinh ra tại Đức vào năm 1879. Ông bắt đầu quan tâm đến khoa học từ khi còn rất nhỏ. Có người tặng ông một chiếc la bàn vào năm 1884.\
+ Einstein thời trẻ rất thích tìm hiểu cách thức hoạt động của la bàn. Ông muốn học khoa học. Ông muốn trở thành một nhà khoa học.<br>\
+Einstein đã cố gắng vào một trường đại học hàng đầu của Thụy Sĩ. Lúc đầu, ông đã thất bại. Ông không được nhận vào học.\
+ Nhưng Einstein không dễ dàng từ bỏ. Ông lại nộp đơn vào cùng trường đại học đó vào năm sau. Lần này ông đã thành công.\
+  Einstein là một sinh viên giỏi. Ông tốt nghiệp trường đại học nổi tiếng này vào năm 1896.<br>\
+Là một nhà khoa học, Einstein đã có những công trình quan trọng trong lĩnh vực vật lý. Những công trình của ông rất xuất sắc.\
+ Ông nhận giải Nobel Vật lý năm 1921. Năm 1933, ông chuyển đến sống tại Hoa Kỳ cùng vợ.'
+,voca:"successful,university,failure,field,century,young,chemistry,Switzerland,graduate,physics,famous around,for,in science,Swiss,from,As a scientist,Nobel,Prize"
 },
 {
 en: 'Unit 10 The Telescope<br>\

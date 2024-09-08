@@ -147,13 +147,15 @@ $scope.fetchStory = function (idx, reset=true) {
 
 	// bold title
 	var titleEn = $scope.story.en.split('<br>')[0];
-	$scope.story.enShow = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b>');
+	$scope.story.enShow = $scope.story.en.replace(titleEn,  '' );
 
 	var titleVi = $scope.story.vi.split('<br>')[0];
 	$scope.story.viShow = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
 
 	//
 	$scope.story.en_hidden_words = $scope.story.en;
+
+	$scope.story.title = titleEn;
 
 	var words = $scope.story.en.match(/\b(\w+)\b/g);
 	var _wPosArr = [];   // index in Arr
@@ -185,7 +187,7 @@ $scope.fetchStory = function (idx, reset=true) {
 	  	}
 	} // for
 	titleEn = $scope.story.en_hidden_words.split('<br>')[0];
-	$scope.story.en_hidden_words = $scope.story.en_hidden_words.replace(titleEn, '<b>' + titleEn + '</b>');
+	$scope.story.en_hidden_words = $scope.story.en_hidden_words.replace(titleEn, '' );
 
 	if ($scope.story.voca) {
 		var vocas = $scope.story.voca.split(',');

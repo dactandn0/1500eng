@@ -11,7 +11,7 @@ $scope.bPlayingFull = false;
 $scope.bPause = false;
 
 $scope.audio;
-$scope.acc=0;
+$scope.acc=-1;
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc===id;

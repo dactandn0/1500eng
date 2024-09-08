@@ -23,7 +23,7 @@
 
 </head>
 
-<body ng-app="myApp">
+<body ng-app="myApp" ng-init="showText=0">
     <div ng-controller="ctrl" class="container mt-4">
     <h5 class="mb-4">LPTD CD1-4</h5>
 
@@ -36,14 +36,14 @@
         	<input type="radio" name="radioCD" value="4" onchange="radioCDChange(4)" />4
     	</form>
 
-    	<div class="my-3">
+    	<div class="my-1">
 		    <div ng-repeat="u in units" style="text-align: right;" class="col-md-4">
 		    	<span class="mr-2">{{u.title}}</span>
 		    	 <a ng-repeat="n in range(u.num, u.num + 4)"  ng-click="fetchStory(n-1);" href="" class="p-2 mr-1"> [{{n}}]
 		    	</a>
 		    </div>
 		    <br> 
-		    <label> <input id="audioLoopEle" class="my-3" type="checkbox" onclick="chkClick()">&nbspLoop</label>
+		    <label> <input id="audioLoopEle" class="my-1" type="checkbox" onclick="chkClick()">&nbspLoop</label>
 		    	<span class="btnShowVi opa">
 		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
 		    	</span>
@@ -65,17 +65,22 @@
     	</span>
 
 
-		<div class="card mt-4">
+		<div class="card mt-1">
 		    <div class="card-body">
 	          <div class="card-text my-2">
-	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
-	          	<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords"></p>
-	          	<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
-	          	<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi"></p>
+	          	
+	          	<h6 class="accordion" >
+				    <a href ng-click="showText=!showText"><i class="fa fa-lg fa-toggle-on"></i> {{story.title}}</a>
+				 </h6>
+	          	 <div class="accordion-content">
+	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords && showText"></p>
+	          		<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
+	          		<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi && showText"></p>
+	          	</div>
 
-	        	<div class="mt-1" ng-if="story.vocaNotes">
+	        	<div class="mt-1 p-3" ng-if="story.vocaNotes.length">
 	           	<hr/>
-	        		<p  class="mb-1"  ng-repeat="(index, note) in story.vocaNotes">
+	        		<p class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
 	          			{{note}}
 	          		</p>
 	          	</div>

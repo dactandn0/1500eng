@@ -31,3 +31,27 @@
 	  right: 10px; /* Place the button 30px from the right */
 	  z-index: 99; /* Make sure it does not overlap */
 	}
+
+/*override BS*/
+.card-body{
+	padding: 0.25rem !important;
+}
+
+/* accordion */
+	h3.accordion{
+    margin: 0;
+}
+.accordion a{
+    padding: 10px;
+    background: #ddd;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1px;
+}
+.accordion-content{
+    /*border: 1px solid #ddd;*/
+    padding: 10px;
+    margin: 1px 0;
+}

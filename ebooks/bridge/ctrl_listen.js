@@ -11,8 +11,6 @@ radioCDChange = function (cd) {
 	switch (cd) {
 		case 1: kSTORIES = bridge_cd1; break;
 		case 2: kSTORIES = bridge_cd2; break;
-		case 3: kSTORIES = []; break;
-		case 4: kSTORIES = []; break;
 	}
 	localStorage.setItem("bri_listen_cd", cd);
 	$scope.cd = cd;
@@ -154,6 +152,8 @@ $scope.fetchStory = function (idx, reset=true) {
 	// bold title
 	var titleEn = $scope.story.en.split('<br>')[0];
 	$scope.story.enShow = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b>');
+	
+	$scope.story.title = titleEn;
 
 	var titleVi = $scope.story.vi.split('<br>')[0];
 	$scope.story.viShow = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');

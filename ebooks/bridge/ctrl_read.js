@@ -1,4 +1,7 @@
 
+document.write('<script src="../../global_js.js" type="text/javascript"></script>');
+document.write('<script src="read_data/bridge_read_data.js" type="text/javascript"></script>');
+
 function MYLOG(msg) {
 //	console.log(msg);
 }
@@ -19,7 +22,7 @@ radioCDChange = function (cd) {
 $scope.cd = 1;
 $scope.stories = kSTORIES; //1
 
-$scope.acc=0;
+$scope.acc=-1;
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc===id;
@@ -129,45 +132,11 @@ $scope.fetchStory = function () {
 
 	for (var k = 0; k < kSTORIES.length; k++) {
 		story = $scope.stories[k];
-		if (story.voca) 
-		{
-			var vocas = story.voca.split(',');
-			story.vocaNotes = [];
-			for (var i = 0; i < vocas.length; i++) {
-				voca = vocas[i].trim();
-				var temp = voca;
-				if (temp.indexOf("[") >= 0) {
-					temp = temp.replace(/\s*\|\s*/g, ", ");
-					temp = temp.replace(/\s*\[\s*/g, " : ");
-					temp = temp.replace(/\s*\]\s*/g, "");
-					story.vocaNotes.push(temp);
-				}
-				voca = voca.replace(/\[.*\]/g, '').trim();
-				var regex = new RegExp(`\\b${voca}` , 'g')
-				story.en = story.en.replace(regex, '<b>' + voca + '</b>');
-			}
-		}
+		story = processStory(story);
 	} // for
-
-	
-
 }
-
-function validateWord(word) 
-{	
-	word = word.trim();
-	if (word.length < 4) return false;
-	let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
-	for (var i = 0; i < arr.length; i++) {
-		bList = arr[i];
-		if (word.toLowerCase().indexOf(bList) >= 0) return false;
-	}
-	return true;
-}
-
 
 $scope.loadData = function () {
-	MYLOG('loadData');
 	$scope.fetchStory();
 };
 

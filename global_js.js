@@ -67,4 +67,87 @@ function hLightNounSameVerb(word, graph) {
 	return graph;
 }
 
+
+function processStory (story) {
+	story.enShow = '';
+	story.viShow = '';
+	story.en_hidden_words = '';
+
+	// bold title
+	var titleEn = story.en.split('<br>')[0];
+	story.enShow = story.en.replace(titleEn,  '' );
+
+	var titleVi = story.vi.split('<br>')[0];
+	story.viShow = story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
+
+	//
+	story.en_hidden_words = story.en;
+
+	story.title = titleEn;
+
+	var words = story.en.match(/\b(\w+)\b/g);
+	var kDot = "";
+	var kSpace = "";
+	for (let i = 0; i < words.length; i++) {
+	  	var word = words[i];
+
+	  	// uncountable_nouns hightlight
+		story.enShow = hLightUncountNoun(word, story.enShow);
+		story.enShow = hLightNounSameVerb(word, story.enShow);
+
+	  	// make ....
+	  	if (validateWord(word)) 
+	  	{
+				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
+				if (rd % 5 == 0) {
+					var _w = kSpace + word + kSpace;
+					var idxOf = story.en.indexOf(_w);
+					var obj = {'w': _w, "idx": idxOf}
+					kDot = kSpace + word.replace(/./g, ".") + kSpace;
+					var s = story.en_hidden_words;
+
+					let firstPart = s.substr(0, idxOf);
+			    	let lastPart = s.substr(idxOf + kDot.length);
+			    	let newString = firstPart + kDot + lastPart;
+
+					story.en_hidden_words = newString;
+				}
+	  	}
+	} // for
+	var titleEn = story.en_hidden_words.split('<br>')[0];
+	story.en_hidden_words = story.en_hidden_words.replace(titleEn, '' );
+
+	if (story.voca) {
+		var vocas = story.voca.split(',');
+		story.vocaNotes = [];
+		for (var i = 0; i < vocas.length; i++) {
+			voca = vocas[i].trim();
+			var temp = voca;
+			if (temp.indexOf("[") >= 0) {
+				temp = temp.replace(/\s*\|\s*/g, ", ");
+				temp = temp.replace(/\s*\[\s*/g, " : ");
+				temp = temp.replace(/\s*\]\s*/g, "");
+				story.vocaNotes.push(temp);
+			}
+			voca = voca.replace(/\[.*\]/g, '').trim();
+			var regex = new RegExp(`\\b${voca}` , 'g')
+			story.enShow = story.enShow.replace(regex, '<b>' + voca + '</b>');
+		}
+	}
+	return story;
+
+}
+
+function validateWord(word) 
+{	
+	word = word.trim();
+	if (word.length < 4) return false;
+	let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
+	for (var i = 0; i < arr.length; i++) {
+		bList = arr[i];
+		if (word.toLowerCase().indexOf(bList) >= 0) return false;
+	}
+	return true;
+}
+
 preprocess();

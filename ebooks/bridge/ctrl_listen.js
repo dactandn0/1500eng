@@ -1,5 +1,5 @@
 // include other *.js
-document.write('<script src="../../uncount_nouns.js" type="text/javascript"></script>');
+document.write('<script src="../../global_js.js" type="text/javascript"></script>');
 document.write('<script src="listen_data/bridge_cd1.js" type="text/javascript"></script>');
 document.write('<script src="listen_data/bridge_cd2.js" type="text/javascript"></script>');
 
@@ -148,47 +148,8 @@ $scope.fetchStory = function (idx, reset=true) {
 	localStorage.setItem("bri_listen_unit", idx);
 	MYLOG("localStorage save unit=" + idx);
 	if (!$scope.story || !$scope.story.en) {MYLOG('Dont have Unit'); return;}
-	// show to website
-	// $scope.story.en|vi ~ origin [not edit]
-	$scope.story.enShow = '';
-	$scope.story.viShow = '';
-
-	// bold title
-	var titleEn = $scope.story.en.split('<br>')[0];
-	$scope.story.enShow = $scope.story.en.replace(titleEn, '<b>' + titleEn + '</b>');
 	
-	$scope.story.title = titleEn;
-
-	var titleVi = $scope.story.vi.split('<br>')[0];
-	$scope.story.viShow = $scope.story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
-
-	var words = $scope.story.en.match(/\b(\w+)\b/g);
-	var _wPosArr = [];   // index in Arr
-	var kDot = "";
-	var kSpace = "";
-	for (let i = 0; i < words.length; i++) {
-	  	var word = words[i];
-	  	// uncountable_nouns hightlight
-		$scope.story.enShow = hLightUncountNoun(word, $scope.story.enShow);
-	} // for
-
-	if ($scope.story.voca) {
-		var vocas = $scope.story.voca.split(',');
-		$scope.story.vocaNotes = [];
-		for (var i = 0; i < vocas.length; i++) {
-			voca = vocas[i].trim();
-			var temp = voca;
-			if (temp.indexOf("[") >= 0) {
-				temp = temp.replace(/\s*\|\s*/g, ", ");
-				temp = temp.replace(/\s*\[\s*/g, " : ");
-				temp = temp.replace(/\s*\]\s*/g, "");
-				$scope.story.vocaNotes.push(temp);
-			}
-			voca = voca.replace(/\[.*\]/g, '').trim();
-			var regex = new RegExp(`\\b${voca}` , 'g')
-			$scope.story.enShow = $scope.story.enShow.replace(regex, '<b>' + voca + '</b>');
-		}
-	}
+	$scope.story = processStory($scope.story);
 }
 
 function validateWord(word) 

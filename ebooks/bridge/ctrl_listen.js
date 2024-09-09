@@ -117,20 +117,6 @@ $scope.stopSound = function () {
 	 $scope.bPlayingFull = false;
 };
 
-$scope.preprocessStories = function () 
-{
-	for (var i = 0; i < $scope.stories.length; i++) {
-		var story = $scope.stories[i];
-		if (story.en)
-		{
-			var titleEn = story.en.split('<br>')[0];
-		// add image to origin data
-		var trackNum = titleEn.replace(/[^0-9.]/g, '');
-		story.img = trackNum;
-		}
-	}
-}
-
 $scope.fetchStory = function (idx, reset=true) {
 	MYLOG('fetchStory');
 	// when click 1.2.3..40
@@ -201,7 +187,7 @@ $scope.loadData = function () {
 
 
 	$scope.fetchStory($scope.storyIdx, false);
-	$scope.preprocessStories();
+
 
 };
 

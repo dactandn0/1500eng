@@ -25,6 +25,11 @@ radioCDChange = function (cd) {
 	MYLOG("localStorage saved CD= " + cd);
 }
 
+radioLoopChange = function (val) {
+	localStorage.setItem("lptd_loop", val);
+	MYLOG("localStorage lptd_loop" + val);
+}
+
 $scope.cd = 1;
 $scope.stories = kSTORIES; //1
 
@@ -73,13 +78,20 @@ $scope.resetAudioBtnUI = function()
 	$scope.bPause=false;
     $scope.bPlayingFull=false;
 
-    var isChkLoopChecked = false;
-    if (localStorage.hasOwnProperty("lptd_isAudioLoop")) {
-		isChkLoopChecked = localStorage.lptd_isAudioLoop;
+    var loopRadio = 0;
+    if (localStorage.hasOwnProperty("lptd_loop")) {
+		loopRadio = localStorage.lptd_loop;
+		MYLOG(loopRadio)
 	}
-    if (isChkLoopChecked=='true')
+    if (loopRadio==='1') // loop
     {
     	$scope.playFullSound($scope.storyIdx);
+    } else if (loopRadio==='2') // play next
+    {
+    	var next = $scope.storyIdx + 1;
+    	if (next > 39) { next = 0 }; 
+    	$scope.fetchStory(next, true);
+    	$scope.playFullSound(next);
     }
 
     $scope.$apply();
@@ -160,10 +172,16 @@ $scope.loadData = function () {
 
 	if (localStorage.hasOwnProperty("lptd_cd")) {
 		var cd = localStorage.lptd_cd;
-		MYLOG("localStorage load CD=" + cd);
+		MYLOG("localStorage load lptd_cd=" + cd);
 		radioCDChange(parseInt(cd));
 		document.cdForm.radioCD.value=cd;
 		$scope.cd=cd;
+	}
+
+	if (localStorage.hasOwnProperty("lptd_loop")) {
+		var val = localStorage.lptd_loop;
+		MYLOG("localStorage load lptd_loop=" + val);
+		document.loopForm.radioLoop.value = val;
 	}
 
 	if (localStorage.hasOwnProperty("lptd_unit")) {

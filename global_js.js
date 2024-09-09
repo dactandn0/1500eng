@@ -1,6 +1,23 @@
 // console.log("uncount_nouns.js")
+const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
 
-const NOUN_SAME_VERBS = "access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,excuse,mind,ski,bail,exhibit,mine,slice,balance,experience,miss,slide,balloon,eye,mistake,slip,ban,face,moor,smell,bandage,fall,move,smile,bank,favor,mug,smirk,bare,fax,nail,smoke,bargain,fear,name,snack,battle,feel,need,snow,beam,fight,nest,sound,bear,file,notch,span,beat,fill,note,spot,bend,film,notice,spray,benefit,finish,number,sprout,blame,fish,object,squash,blast,fix,offer,stain,bleach,flap,oil,stamp,block,flash,order,stand,bloom,float,pack,star,blow,flood,pad,start,board,floss,paddle,state,bomb,flow,paint,steer,bother,flower,park,step,bounce,fly,part,sting,bow,fold,pass,stop,box,fool,paste,store,bread,force,pat,storm,break,form,pause,stress,breed,frame,pay,strip,broadcast,freeze,pedal,stroke,brush,frown,peel,struggle,bump,function,pelt,study,burn,garden,permit,stuff,buy,gaze,phone,stunt,cake,gel,photograph,subject,call,glue,pick,suit,camp,grate,pine,supply,care,grease,place,support,catch,grill,plan,surf,cause,grimace,plane,surprise,challenge,grin,plant,suspect,change,grip,play,swap,chant,guarantee,plow,swing,charge,guard,plug,swivel,cheat,guess,point,tack,check,guide,poke,talk,cheer,hammer,pop,taste,chip,hand,post,tear,claim,handle,practice,tease,clip,harm,praise,telephone,cloud,harness,present,test,clue,hate,proceed,thought,coach,head,process,thunder,color,heap,produce,tick,comb,heat,progress,tie,combat,help,project,time,comfort,hide,promise,tip,conduct,highlight,protest,tire,conflict,hike,pull,toast,contest,hit,pump,touch,contract,hold,punch,tour,contrast,hop,push,tow,control,hope,question,trace,cook,hose,quilt,track,coop,hug,quiz,trade,copy,humor,race,train,cost,hunt,rain,transport,count,hurry,raise,trap,cover,ice,rant,travel,crack,impact,rate,treat,crash,inch,reach,trick,crate,increase,reason,trim,credit,influence,rebel,trust,crush,insult,record,tug,cure,interest,refill,turn,curl,iron,refund,twist,curve,itch,reign,type,cut,jail,reject,upstage,cycle,jam,rent,use,dam,joke,repair,vacuum,damage,judge,repeat,value,dance,jump,reply,visit,deal,keep,report,voice,decay,kick,request,vote,decrease,kiss,rhyme,wake,delay,knit,ring,walk,delight,knock,riot,waltz,demand,knot,risk,watch,design,label,rock,water,dial,land,roll,wave,die,last,row,wear,dislike,laugh,ruin,whip,display,lead,rule,whisper,dive,leap,run,whistle,divorce,level,sail,wick,dock,license,sand,wink,double,lie,saw,wire,doubt,lift,scare,wish,drain,light,scratch,work,draw,limit,screw,worry,dream,link,search,wrap,dress,load,season,wreck,drill,loan,sense,X-ray,drink,lock,shampoo,yawn,drive,look,shape,yield,duck,love,share,zone";
+const NOUN_SAME_VERBS = "access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
+signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\
+excuse,mind,ski,bail,exhibit,mine,slice,balance,experience,miss,slide,balloon,eye,mistake,slip,ban,face,moor,smell,bandage,fall,move,smile,bank,favor,\
+mug,smirk,bare,fax,nail,smoke,bargain,fear,name,snack,battle,feel,need,snow,beam,fight,nest,sound,bear,file,notch,span,beat,fill,note,spot,bend,film,\
+notice,spray,benefit,finish,number,sprout,blame,fish,object,squash,blast,fix,offer,stain,bleach,flap,oil,stamp,block,flash,order,stand,bloom,float,pack,\
+star,blow,flood,pad,start,board,floss,paddle,state,bomb,flow,paint,steer,bother,flower,park,step,bounce,fly,part,sting,bow,fold,pass,stop,box,fool,paste,\
+store,bread,force,pat,storm,break,form,pause,stress,breed,frame,pay,strip,broadcast,freeze,pedal,stroke,brush,frown,peel,struggle,bump,function,pelt,study,\
+burn,garden,permit,stuff,buy,gaze,phone,stunt,cake,gel,photograph,subject,call,glue,pick,suit,camp,grate,pine,supply,care,grease,place,support,catch,grill,\
+plan,surf,cause,grimace,plane,surprise,challenge,grin,plant,suspect,change,grip,play,swap,chant,guarantee,plow,swing,charge,guard,plug,swivel,cheat,guess,\
+point,tack,check,guide,poke,talk,cheer,hammer,pop,taste,chip,hand,post,tear,claim,handle,practice,tease,clip,harm,praise,telephone,cloud,harness,present,\
+test,clue,hate,proceed,thought,coach,head,process,thunder,color,heap,produce,tick,comb,heat,progress,tie,combat,help,project,time,comfort,hide,promise,tip,\
+conduct,highlight,protest,tire,conflict,hike,pull,toast,contest,hit,pump,touch,contract,hold,punch,tour,contrast,hop,push,tow,control,hope,question,trace,cook,hose,quilt,track,coop,hug,quiz,trade,\
+copy,humor,race,train,cost,hunt,rain,transport,count,hurry,raise,trap,cover,ice,rant,travel,crack,impact,rate,treat,crash,inch,reach,trick,crate,increase,reason,trim,credit,influence,rebel,trust,\
+crush,insult,record,tug,cure,interest,refill,turn,curl,iron,refund,twist,curve,itch,reign,type,cut,jail,reject,upstage,cycle,jam,rent,use,dam,joke,repair,vacuum,damage,judge,repeat,value,dance,jump,\
+reply,visit,deal,keep,report,voice,decay,kick,request,vote,decrease,kiss,rhyme,wake,delay,knit,ring,walk,delight,knock,riot,waltz,demand,knot,risk,watch,design,label,rock,water,dial,land,roll,wave,die,\
+last,row,wear,dislike,laugh,ruin,whip,display,lead,rule,whisper,dive,leap,run,whistle,divorce,level,sail,wick,dock,license,sand,wink,double,lie,saw,wire,doubt,lift,scare,wish,drain,light,scratch,work,\
+draw,limit,screw,worry,dream,link,search,wrap,dress,load,season,wreck,drill,loan,sense,drink,lock,shampoo,yawn,drive,look,shape,yield,duck,love,share,zone";
 
 const UNCOUNT_NOUNS = "advice,information,knowledge,imagination,creativity,education,intelligence,love,luck,music,air,cement,clothing,energy,glue,gold,\
 iron,money,oil,paper,salt,sand,steel,wood,water,gasoline,steam,sugar,vinegar,beauty,confidence,happiness,justice,peace,respect,safety,strength,time,\
@@ -26,8 +43,13 @@ validity,vitality,vision,vegetation,vegetarianism,vengeance,warmth,weight,whiske
 youth,yeast,zoology,zinc";
 
 
-document.write('<small class="note"><i class="text-danger">italic-red:</i> Uncountable Noun<br><u>underline:</u> Noun=Verb</small>');
+document.write('<small class="note">\
+	<i class="text-danger">italic-red:</i> uncount.noun<br>\
+	<u>underline:</u> noun=verb<br>\
+	</small>'
+	);
 
+var arrBOTH_COUNT_UNCOUNT = [];
 var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
 function longStrToArray(long_txt) {
@@ -41,49 +63,39 @@ function longStrToArray(long_txt) {
 function preprocess() {
 	arrUNCOUNT_NOUNS = longStrToArray(UNCOUNT_NOUNS);
 	arrNOUN_SAME_VERBS = longStrToArray(NOUN_SAME_VERBS);
+	// arrBOTH_COUNT_UNCOUNT = longStrToArray(BOTH_COUNT_AND_UNCOUNT);
 };
 
-function isUncountNoun(word) {
-	return arrUNCOUNT_NOUNS.includes(word);
+function isInArr(word, arr) {
+	return arr.includes(word);
 };
 
-function hLightUncountNoun(word, graph) {
-	if (isUncountNoun(word)) {
+function hLightWord(word, arr, graph, tagOpen, tagClose) {
+	if (isInArr(word, arr)) {
 		var regex = new RegExp(`\\b${word}\\b` , 'g')
-		return graph.replace(regex, '<i class="text-danger">' + word + '</i>');
+		return graph.replace(regex, tagOpen + word + tagClose);
 	}
 	return graph;
 }
-
-function isNounSameVerb(word) {
-	return arrNOUN_SAME_VERBS.includes(word);
-};
-
-function hLightNounSameVerb(word, graph) {
-	if (isNounSameVerb(word)) {
-		var regex = new RegExp(`\\b${word}\\b` , 'g')
-		return graph.replace(regex, '<u>' + word + '</u>');
-	}
-	return graph;
-}
-
 
 function processStory (story) {
+	if (story.en.trim().length == 0) return story;
 	story.enShow = '';
 	story.viShow = '';
 	story.en_hidden_words = '';
 
 	// bold title
 	var titleEn = story.en.split('<br>')[0];
-	story.enShow = story.en.replace(titleEn,  '' );
+	story.enShow = story.en.replace('',  '' );
 
 	var titleVi = story.vi.split('<br>')[0];
-	story.viShow = story.vi.replace(titleVi, '<b>' + titleVi + '</b>');
+	story.viShow = story.vi.replace(titleVi, titleVi);
 
-	//
 	story.en_hidden_words = story.en;
 
 	story.title = titleEn;
+	var trackNum = titleEn.replace(/[^0-9.]/g, '');
+	story.img = trackNum;
 
 	var words = story.en.match(/\b(\w+)\b/g);
 	var kDot = "";
@@ -91,9 +103,8 @@ function processStory (story) {
 	for (let i = 0; i < words.length; i++) {
 	  	var word = words[i];
 
-	  	// uncountable_nouns hightlight
-		story.enShow = hLightUncountNoun(word, story.enShow);
-		story.enShow = hLightNounSameVerb(word, story.enShow);
+		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , '<i class="text-danger">', '</i>' );
+		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
 
 	  	// make ....
 	  	if (validateWord(word)) 

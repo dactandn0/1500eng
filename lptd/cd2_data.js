@@ -575,7 +575,7 @@ G: Tất nhiên là nhỏ hơn nữa!.<br>\
 B: Em ấy cười khi con cù vào chân em ấy. Khi em ấy lớn hơn một chút, con sẽ dạy em ấy cách đi xe đạp, và chúng con cũng có thể chơi trò chơi cùng nhau! Con sẽ trở thành người anh trai tuyệt vời nhất thế giới!",
 voca:"diaper,tickle,cute,exciting,constantly,temperature,wet,feed a bit,look after"
 },
-{en:"Unit 26 The New Boss.<br>\
+{en:"Unit 26 The New Boss<br>\
 M: You know, Kim, I think our new boss doesn’t like me. I don’t understand why..<br>\
 W: That’s not true, Trevor! Why, just this morning I heard her say you’re a very good employee. She said you work very hard every day..<br>\
 M: That’s news to me. I wish she would say it to me, but she just criticizes everything I do..<br>\
@@ -586,7 +586,7 @@ M: How about you? Are you happy at work these days?.<br>\
 W: Yes, I’m really enjoying working for this new boss. That’s why I’m surprised that you think she criticizes your work. Actually, I think she is helping you to improve your work. She’s just trying to help..<br>\
 M: I didn’t realize that. Now that I think about it, you’re right. I feel much better..<br>\
 W: Good! Let’s go for lunch!"
-,vi:"Bài 26 Ông chủ mới.<br>\
+,vi:"Bài 26 Ông chủ mới<br>\
 M: Bạn biết đấy, Kim, tôi nghĩ ông chủ mới của chúng ta không thích tôi. Tôi không hiểu tại sao..<br>\
 W: Không đúng đâu, Trevor! Tại sao, sáng nay tôi nghe cô ấy nói rằng bạn là một nhân viên rất tốt. Cô ấy nói rằng bạn làm việc rất chăm chỉ mỗi ngày..<br>\
 M: Điều đó mới với tôi. Tôi ước cô ấy nói với tôi điều đó, nhưng cô ấy chỉ trích mọi thứ tôi làm..<br>\
@@ -895,7 +895,7 @@ Mexico.<br>\
 G: Phần tôi thích nhất là đến thăm Carlsbad Caverns. Có 30 dặm hang động! Trong một hang động, chúng tôi phải đội mũ có đèn để có thể nhìn thấy trong bóng tối. Đôi khi chúng tôi phải bò qua những đường hầm rất hẹp bằng tay và đầu gối.<br>\
 B: Bạn không sợ sao?<br>\
 G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm sau. Bạn nên đi cùng tôi!",
-	voca:"state,cave,tunnel,license,pla,crawl,confused,prisoner,dig,narrow,knee"
+	voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern[a],Texas,Arizona,funny"
 },
 {
 	en:"Unit 39 A Good Way to Travel<br>\

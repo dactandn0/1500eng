@@ -40,15 +40,21 @@
 		    	</a>
 		    </div>
 		    <br> 
-		    <label> <input id="audioLoopEle" class="my-1" type="checkbox" onclick="chkClick()">&nbspLoop</label>
-		    	<span class="btnShowVi opa">
-		        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-		    	</span>
+		    <form name="loopForm" class="mb-3" role="group">
+	    		<input type="radio" name="radioLoop" value="0" onchange="radioLoopChange(0)" checked/><span class="mr-3">No</span>
+	        	<input type="radio" name="radioLoop" value="1" onchange="radioLoopChange(1)" /><span class="mr-3">Yes</span>
+	        	<input type="radio" name="radioLoop" value="2" onchange="radioLoopChange(2)" /><span class="mr-3">Auto</span>
+    		</form>
 
-		        <span ng-show="!bShowVi" class="btnEnVi opa">
-		        	<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
-    				<p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p>
-    			</span>
+
+	    	<span class="btnShowVi opa">
+	        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
+	    	</span>
+
+	        <span ng-show="!bShowVi" class="btnEnVi opa">
+	        	<!-- <p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p> -->
+				<!-- <p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p> -->
+			</span>
 		 </div>
 
 		<span  class="btnPlay opa">
@@ -57,8 +63,8 @@
 
     	<span ng-show="bPlayingFull" class="btnSound opa">
     		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-10)">-10s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(10)">+10s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-8)">-8s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(8)">+8s</button></p>
     	</span>
 
 
@@ -71,7 +77,7 @@
 				 </h6>
 	          	 <div class="accordion-content">
 	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords && showText"></p>
-	          		<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
+	          		<p ng-bind-html="story.viShow" ng-if="bShowVi && showText""></p>
 	          		<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi && showText"></p>
 	          	</div>
 

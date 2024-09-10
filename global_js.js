@@ -42,6 +42,14 @@ trust,trouble,temperature,understanding,usage,underwear,unemployment,unity,viole
 validity,vitality,vision,vegetation,vegetarianism,vengeance,warmth,weight,whiskey,weather,wildlife,welfare,wine,wisdom,wealth,wheat,wool,width,yoga,\
 youth,yeast,zoology,zinc";
 
+RANGE = function(min, max, step) {
+    step = step || 1;
+    var input = [];
+    for (var i = min; i <= max; i += step) {
+        input.push(i);
+    }
+    return input;
+};
 
 document.write('<small class="note">\
 	<i class="text-danger">italic-red:</i> uncount.noun<br>\

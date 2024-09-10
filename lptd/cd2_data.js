@@ -895,7 +895,7 @@ Mexico.<br>\
 G: Phần tôi thích nhất là đến thăm Carlsbad Caverns. Có 30 dặm hang động! Trong một hang động, chúng tôi phải đội mũ có đèn để có thể nhìn thấy trong bóng tối. Đôi khi chúng tôi phải bò qua những đường hầm rất hẹp bằng tay và đầu gối.<br>\
 B: Bạn không sợ sao?<br>\
 G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm sau. Bạn nên đi cùng tôi!",
-	voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern[a],Texas,Arizona,funny"
+voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern[a],Texas,Arizona,funny"
 },
 {
 	en:"Unit 39 A Good Way to Travel<br>\
@@ -903,7 +903,7 @@ G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm
 - Backpackers take buses or trains to save money. They camp outdoors to sleep. If they stay in a city, they may go to a hostel. A hostel is like a hotel. Hotels are not cheap. Hostels are very cheap. Travelers often share rooms at hostels. There are only a few toilets and baths. People share them, too.<br>\
 - Hostels are a good place to meet other travelers. You can make friends. They can tell you about fun things to do in the area. Many hostels have kitchens. These kitchens have stoves. Some have toasters. You can buy your food from a store. Then, you can cook at the hostel. This is cheaper than eating out. Just remember to clean up when you are done!",
 	vi:"Bài 39 Một cách du lịch tốt<br>\
-- Du lịch là một sở thích tốt. Nếu bạn có rất ít tiền, du lịch ba lô là một cách du lịch tốt. Nhiều sinh viên thích du lịch ba lô. Họ có thể du lịch giá rẻ. Họ có thể du lịch đến nhiều nơi. Những du khách này mang theo đồ đạc của mình trong những chiếc ba lô lớn. Họ được gọi là du khách ba lô.<br>\
+- Du lịch là một sở thích tốt. Nếu bạn có rất ít tiền, du lịch ba lô là một cách tốt. Nhiều sinh viên thích du lịch ba lô. Họ có thể du lịch giá rẻ. Họ có thể du lịch đến nhiều nơi. Những du khách này mang theo đồ đạc của mình trong những chiếc ba lô lớn. Họ được gọi là du khách ba lô.<br>\
 - Du khách ba lô đi xe buýt hoặc tàu hỏa để tiết kiệm tiền. Họ cắm trại ngoài trời để ngủ. Nếu họ ở trong thành phố, họ có thể đến nhà trọ. Nhà trọ giống như khách sạn. Khách sạn không rẻ. Nhà trọ rất rẻ. Du khách thường chia sẻ phòng tại nhà trọ. Chỉ có một vài nhà vệ sinh và phòng tắm. Mọi người cũng chia sẻ chúng.<br>\
 - Nhà trọ là nơi tốt để gặp gỡ những du khách khác. Bạn có thể kết bạn. Họ có thể kể cho bạn nghe về những điều thú vị để làm trong khu vực. Nhiều nhà trọ có bếp. Những nhà bếp này có bếp lò. Một số có máy nướng bánh mì. Bạn có thể mua đồ ăn từ cửa hàng. Sau đó, bạn có thể nấu ăn tại nhà trọ. Điều này rẻ hơn so với việc ăn ngoài. Chỉ cần nhớ dọn dẹp sạch sẽ khi bạn làm xong nhé!",
 	voca:"backpack,traveler,toilet,belongings,hostel,kitchen,prepare,aisle,stove,toaster"

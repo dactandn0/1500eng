@@ -3,6 +3,7 @@
 document.write('<script src="../global_js.js" type="text/javascript"></script>');
 document.write('<script src="cd1_data.js" type="text/javascript"></script>');
 document.write('<script src="cd2_data.js" type="text/javascript"></script>');
+document.write('<script src="cd3_data.js" type="text/javascript"></script>');
 
 
 function MYLOG(msg) {
@@ -17,7 +18,7 @@ radioCDChange = function (cd) {
 	switch (cd) {
 		case 1: kSTORIES = cd1_stories; break;
 		case 2: kSTORIES = cd2_stories; break;
-		case 3: kSTORIES = []; break;
+		case 3: kSTORIES = cd3_stories; break;
 		case 4: kSTORIES = []; break;
 	}
 	localStorage.setItem("lptd_cd", cd);
@@ -34,22 +35,17 @@ $scope.cd = 1;
 $scope.stories = kSTORIES; //1
 
 $scope.range = function(min, max, step) {
-    step = step || 1;
-    var input = [];
-    for (var i = min; i <= max; i += step) {
-        input.push(i);
-    }
-    return input;
+    return RANGE(min, max, step);
 };
 
 
- $scope.storyIdx = 0;
- $scope.bPlayingFull = false;
- $scope.bPause = false;
- $scope.bShowVi = 0;
- $scope.bHiddenWords = 0;
- $scope.audio;
- $scope.currentTime = 0;
+$scope.storyIdx = 0;
+$scope.bPlayingFull = false;
+$scope.bPause = false;
+$scope.bShowVi = 0;
+$scope.bHiddenWords = 0;
+$scope.audio;
+$scope.currentTime = 0;
 
 $scope.units = [
 	{'title':"Nature", 'num': 1},
@@ -148,7 +144,6 @@ $scope.fetchStory = function (idx, reset=true) {
 		$scope.resetFlag();
 		$scope.stopSound();
 	}
-
 	$scope.stories = kSTORIES;
 	$scope.storyIdx = idx;
 	$scope.story = $scope.stories[idx];
@@ -159,10 +154,7 @@ $scope.fetchStory = function (idx, reset=true) {
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
-
 }
-
-
 
 $scope.loadData = function () {
 	MYLOG('loadData');

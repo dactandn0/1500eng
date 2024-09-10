@@ -20,7 +20,7 @@
 
 </head>
 
-<body ng-app="myApp" ng-init="showText=0">
+<body ng-app="myApp" ng-init="showText=1">
     <div ng-controller="ctrl" class="container mt-4">
     <h5 class="mb-4">LPTD CD1-4</h5>
 
@@ -45,8 +45,7 @@
 	        	<input type="radio" name="radioLoop" value="1" onchange="radioLoopChange(1)" /><span class="mr-3">Yes</span>
 	        	<input type="radio" name="radioLoop" value="2" onchange="radioLoopChange(2)" /><span class="mr-3">Auto</span>
     		</form>
-
-
+    		
 	    	<span class="btnShowVi opa">
 	        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
 	    	</span>

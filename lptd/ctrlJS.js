@@ -27,8 +27,8 @@ radioCDChange = function (cd) {
 }
 
 radioLoopChange = function (val) {
-	localStorage.setItem("lptd_loop", val);
-	MYLOG("localStorage lptd_loop" + val);
+	localStorage.setItem("audio_loop", val);
+	MYLOG("localStorage audio_loop" + val);
 }
 
 $scope.cd = 1;
@@ -75,8 +75,8 @@ $scope.resetAudioBtnUI = function()
     $scope.bPlayingFull=false;
 
     var loopRadio = 0;
-    if (localStorage.hasOwnProperty("lptd_loop")) {
-		loopRadio = localStorage.lptd_loop;
+    if (localStorage.hasOwnProperty("audio_loop")) {
+		loopRadio = localStorage.audio_loop;
 		MYLOG(loopRadio)
 	}
     if (loopRadio==='1') // loop
@@ -157,7 +157,6 @@ $scope.fetchStory = function (idx, reset=true) {
 }
 
 $scope.loadData = function () {
-	MYLOG('loadData');
 	if (localStorage.hasOwnProperty("lptd_isAudioLoop")) {
 		document.getElementById('audioLoopEle').checked = localStorage.lptd_isAudioLoop === 'true';
 	}
@@ -170,9 +169,9 @@ $scope.loadData = function () {
 		$scope.cd=cd;
 	}
 
-	if (localStorage.hasOwnProperty("lptd_loop")) {
-		var val = localStorage.lptd_loop;
-		MYLOG("localStorage load lptd_loop=" + val);
+	if (localStorage.hasOwnProperty("audio_loop")) {
+		var val = localStorage.audio_loop;
+		MYLOG("localStorage load audio_loop=" + val);
 		document.loopForm.radioLoop.value = val;
 	}
 

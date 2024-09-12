@@ -9,7 +9,7 @@ app.controller("ctrl", function($scope, $timeout) {
 
 $scope.cd = 1;
 $scope.stories = SLIDES;
-$scope.acc=0;
+$scope.acc= -1;
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc===id;

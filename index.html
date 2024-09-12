@@ -1,683 +1,89 @@
-<!-- (\w+)\s+(\w+)\s+(.+) -->
-<!-- {word: "$1", types: "$2", mean: "$3"}, -->
+<!-- bridge+complete ielst [Englab] -->
 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Home</title>
+  <title>Home - 3000 Words</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
 
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-</head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
+  <script type="text/javascript" src="indexData.js"></script>
+  <script type="text/javascript" src="indexCtrl.js"></script>
+
+</head>
 
 <body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
-    <h4 class="mb-4">Home</h4>
-        <a href="./truyenchem/1.html" class="mb-4">Chem</a> 
+    <h5 class="mb-4">3000 Words</h5>
+
+     	<a href="./4000words/4000_book.html" class="mb-4">4000words</a> 
         <a href="./lptd/lptd.html" class="ml-4 mb-4">LPTD</a>
         <a href="./ebooks/ebooks.html" class="ml-4 mb-4">Ebooks</a>
         <a href="./singSong/main.html" class="ml-4 mb-4">SingSong</a>
-    	<button class="btn btn-info float-right my-4" ng-click="bEngToVi = !bEngToVi">{{bEngToVi == 1 ? 'eng->vi' : 'vi->eng' }}</button>
-		<div class="card mt-4" ng-repeat="word in words" ng-if="false">
-		    <div class="card-body">
-	          <div class="card-text my-4"><span class="font-weight-bold mr-4">{{word.word}}</span>
-	           	<span class="mr-4 font-italic">{{word.mean}}</span>
-	           	<span class="mr-4">{{word.us}}</span>
+    	<hr>
+    	<div ng-repeat="story in stories track by $index" class="mb-2" >
+		  <h6 class="accordion" >
+		    <a href ng-click="acc_click($index)"><span ng-if="$index<10">0</span>{{$index+1}}. {{story.title}} &nbsp&nbsp&nbsp&nbsp[{{story.numOfWord}}: words]</a>
+		  </h6>
+		  <div class="accordion-content" ng-show="acc_isShow($index)">
+		     <p ng-bind-html="story.en" ng-if="!bShowVi"></p>
+		     <p ng-bind-html="story.vi" ng-if="bShowVi"></p>
+		     <div class="mt-1" ng-if="story.vocaNotes">
+	           	<hr/>
+	        		<p  class="mb-1" ng-repeat="note in story.vocaNotes">
+	          			{{note}}
+	          		</p>
+	          	</div>
+		  </div>
+		</div>
 
-	            <span ng-repeat="type in word.types" class="mx-1 px-2 lead"
-	            ng-class="type == 'adj' ? 'bg-warning' : (type == 'adv' ? 'bg-danger' : (type == 'v' ? 'bg-success' : 'bg-info'))">{{type}}</span>
+    	<span class="btnShowVi opa">
+        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
+    	</span>
 
-		        <button class="btn btn-primary mx-4" 
-		         		 ng-click="sayIt(word.word)">
-		          		<span class="glyphicon glyphicon-headphones"></span>
-		      	</button>
-	          </div>
-	          <div class="card-text text-justify" 
-	              ng-repeat="exam in word.examples"><button ng-click="sayIt(exam)" class="ml-2 btn btn-link glyphicon glyphicon-headphones"></button> {{exam}}
-	          </div>
-	          <a href="https://dictionary.cambridge.org/dictionary/english/{{word.word}}"
-	          		class="btn btn-primary mt-1 float-right"><span class="mr-4 glyphicon glyphicon-menu-right"></span>
-	          		Cambridge
-	      		</a>
-        	</div> 		<!-- card-body -->
-		 </div> <!-- card -->
+    <!-- 	<form name="cdForm" class="my-3" role="group">
+    		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-2">B_CD1</span>
+    	</form> -->
+ <!-- 
+    	<div class="my-3">
+		    <div class="col-md-12">
+		    	 <a ng-repeat="n in range(1, 15)"  ng-click="fetchStory(n-1);" href="" class="pr-2 mr-1" 
+		    	 ng-class=""> [{{n}}]
+		    	</a>
+		    </div>
+		    <br> 
 
-		<!-- <button class="btn btn-primary my-3" ng-click="reLoadQuiz()"> Reload </button> -->
-		<p class="font-weight-bold mt-4">Points:
-			<span class="ml-5">{{point}}</span> 
-			<span class="ml-3" ng-if="pointClass != ''" ng-class="pointClass">{{pointClass == 'text-success' ? '+1' : '-1'}}</span> 
-		</p>
 
-		 <div>
-		 	<p class="mt-2" ng-if="quiz.question.word">
-		 		<span class="mb-4 mr-3 font-weight-bold" ng-click="playSound(quiz.question.word)">
-		 			<span ng-if="bEngToVi == 1">{{quiz.question.word}}</span>
-		 			<span ng-if="bEngToVi == 0" remove-ipa word={{quiz.question.mean}}>{{quiz.question.mean}}</span>
-		 		</span>  
-			 	<button class="btn btn-sm mx-1"
-		            ng-class="quiz.question.types == 'adj' ? 'bg-warning' : (quiz.question.types == 'adv' ? 'bg-danger' : (quiz.question.types == 'v' ? 'bg-success' : 'bg-info'))"
-		            >{{quiz.question.types}}
-		        </button>
-
-		         <a href="https://dictionary.cambridge.org/dictionary/english/{{quiz.question.word}}" 
-		         		ng-if="bEngToVi == 1"
-	          			class="btn btn-sm btn-primary">Cambridge
-	      		</a>
-		 	</p>
-
-		 	<div class="form-check mt-4 ml-4">
-		 		<div class="form-check my-3" ng-repeat="choice in quiz.choices">
-				  <label class="form-check-label">
-				    <input 
-					    type="radio"
-					    class="form-check-input" 
-					    name="choices" 
-					    ng-value="$index" 
-					    ng-model="radioChoice"
-					    ng-change="checkAnwser(choice.word);">
-					    <span ng-if="bEngToVi == 1" remove-ipa word={{choice.mean}}>{{choice.mean}}</span>
-					    <span ng-if="bEngToVi == 0">{{choice.word}}</span>
-				  </label>
-				</div>
-		 	</div> <!-- radio -->
-
-		 	<div class="card-text my-2	" 
-	              ng-repeat="exam in quiz.question.examples" ng-click="sayIt(exam)">
-	              - <span wrap-in-tag word="{{quiz.question.word}}" text="{{exam}}">{{exam}}</span>
-	        </div>
-	          
+		       <span ng-show="!bShowVi" class="btnEnVi opa">
+		        	<p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p>
+    				<p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p>
+    			</span> dont use 
 		 </div>
+-->
+		 <!--
+		<span  class="btnPlay opa">
+			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
+		</span>
+
+    	<span ng-show="bPlayingFull" class="btnSound opa">
+    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-10)">-10s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(10)">+10s</button></p>
+    	</span>
+		-->
+
+
+
     </div> <!-- container -->
 </body>
 
-<script type="text/javascript">
-    var app = angular.module("myApp", []);
-    app.controller("ctrl", function($scope, $timeout) {
-
-     $scope.bEngToVi = 1;
-     $scope.pointClass = '';
-     $scope.quiz = {};
-     $scope.point = 0;
-
-    $scope.words = [
-{word: "abandon", types: "v", mean: "ə'bændən bỏ, từ bỏ "},
-{word: "abandoned", types: "adj", mean: "ə'bændənd bị bỏ rơi, bị ruồng bỏ "},
-{word: "ability", types: "n", mean: "ə'biliti khả năng, năng lực "},
-{word: "able", types: "adj", mean: "eibl có năng lực, có tài "},
-{word: "about", types: "adv", mean: "ə'baut khoảng, về "},
-{word: "about", types: "prep", mean: "ə'baut khoảng, về "},
-{word: "above", types: "prep", mean: "ə'bʌv ở trên, lên trên "},
-{word: "above", types: "adv", mean: "ə'bʌv ở trên, lên trên "},
-{word: "abroad", types: "adv", mean: "ə'brɔ:d ở, ra nước ngoài, ngoài trời "},
-{word: "absence", types: "n", mean: "æbsəns sự vắng mặt "},
-{word: "absent", types: "adj", mean: "æbsənt vắng mặt, nghỉ "},
-{word: "absolute", types: "adj", mean: "æbsəlu:t tuyệt đối, hoàn toàn "},
-{word: "absolutely", types: "adv", mean: "æbsəlu:tli tuyệt đối, hoàn toàn "},
-{word: "absorb", types: "v", mean: "əb'sɔ:b thu hút, hấp thu, lôi cuốn "},
-{word: "abuse", types: "n", mean: "ə'bju:s lộng hành, lạm dụng "},
-{word: "abuse", types: "v", mean: "ə'bju:s lộng hành, lạm dụng "},
-
-{word: "academic", types: "adj", mean: ",ækə'demik thuộc học viện, ĐH, viện hàn lâm "},
-{word: "accent", types: "n", mean: "æksənt trọng âm, dấu trọng âm "},
-{word: "accept", types: "v", mean: "ək'sept chấp nhận, chấp thuận "},
-{word: "acceptable", types: "adj", mean: "ək'septəbl có thể chấp nhận, chấp thuận "},
-{word: "access", types: "n", mean: "ækses lối, cửa, đường vào "},
-{word: "accident", types: "n", mean: "æksidənt tai nạn, rủi ro. by accident: tình cờ "},
-{word: "accidental", types: "adj", mean: ",æksi'dentl tình cờ, bất ngờ "},
-{word: "accidentally", types: "adv", mean: ",æksi'dentəli tình cờ, ngẫu nhiên "},
-{word: "accommodation", types: "n", mean: "ə,kɔmə'deiʃn sự thích nghi, sự điều tiết, sự làm cho phù hợp "},
-{word: "accompany", types: "v", mean: "ə'kʌmpəni đi theo, đi cùng, kèm theo. "},
-{word: "according to", types: "prep", mean: "ə'kɔ:diɳ theo, y theo "},
-{word: "account", types: "n", mean: "ə'kaunt tài khoản, kế toán"},
-{word: "account", types: "v", mean: "ə'kaunt tính toán, tính đến "},
-{word: "accurate", types: "adj", mean: "ækjurit đúng đắn, chính xác, xác đáng "},
-{word: "accurately", types: "adv", mean: "ækjuritli đúng đắn, chính xác "},
-{word: "accuse", types: "v", mean: "ə'kju:z tố cáo, buộc tội, kết tội "},
-{word: "achieve", types: "v", mean: "ə'tʃi:v đạt được, dành được "},
-{word: "achievement", types: "n", mean: "ə'tʃi:vmənt thành tích, thành tựu "},
-
-{word: "acid", types: "n", mean: "æsid axit "},
-{word: "acknowledge", types: "v", mean: "ək'nɔlidʤ công nhận, thừa nhận "},
-{word: "acquire", types: "v", mean: "ə'kwaiə dành được, đạt được, kiếm được "},
-{word: "across", types: "adv", mean: "ə'krɔs qua, ngang qua "},
-{word: "act", types: "n", mean: "ækt hành động, hành vi, cử chỉ, đối xử "},
-{word: "act", types: "v", mean: "ækt hành động, hành vi, cử chỉ, đối xử "},
-{word: "action", types: "n", mean: "ækʃn hành động, hành vi, tác động."},
-{word: "active", types: "adj", mean: "æktiv tích cực hoạt động, nhanh nhẹn "},
-{word: "actively", types: "adv", mean: "æktivli nhanh nhẹn, linh lợi,có hiệu lực "},
-{word: "activity", types: "n", mean: "æk'tiviti sự tích cực, nhanh nhẹn "},
-{word: "actor", types: "n", mean: "æktə diễn viên nam "},
-{word: "actress", types: "n", mean: "æktris diễn viên nữ "},
-{word: "actual", types: "adj", mean: "æktjuəl thực tế, có thật "},
-{word: "actually", types: "adv", mean: "æktjuəli hiện nay, hiện tại "},
-{word: "adapt", types: "v", mean: "ə'dæpt tra, lắp vào "},
-{word: "add", types: "v", mean: "æd cộng, thêm vào "},
-{word: "addition", types: "n", mean: "ə'diʃn tính cộng, phép cộng "},
-{word: "additional", types: "adj", mean: "ə'diʃənl thêm vào, tăng thêm "},
-{word: "address", types: "n", mean: "ə'dres địa chỉ, đề địa chỉ "},
-{word: "address", types: "v", mean: "ə'dres địa chỉ, địa chỉ "},
-{word: "adequate", types: "adj", mean: "ædikwit đầy, đầy đủ "},
-{word: "adequate", types: "adj", mean: "ædikwit tương xứng, đầy đủ "},
-{word: "adequately", types: "adv", mean: "ædikwitli tương xứng, thỏa đáng, đầy đủ "},
-{word: "adjust", types: "v", mean: "ə'dʤʌst sửa lại cho đúng, điều chỉnh "},
-{word: "admiration", types: "n", mean: ",ædmə'reiʃn sự khâm phục, thán phục "},
-{word: "admire", types: "v", mean: "əd'maiə khâm phục, thán phục "},
-{word: "admit", types: "v", mean: "əd'mit nhận(cho) vào, thừa nhận, có sức nhận(chứa) "},
-{word: "adopt", types: "v", mean: "ə'dɔpt nhận nuô "},
-{word: "adult", types: "n", mean: "ædʌlt người lớn, người trưởng thành,trưởng thành "},
-{word: "adult", types: "adj", mean: "ædʌlt người lớn, người trưởng thành,trưởng thành "},
-{word: "advance", types: "v", mean: "əd'vɑ:ns tiến bộ, tiến lên,đưa lên, đề xuat "},
-{word: "advance", types: "n", mean: "əd'vɑ:ns sự tiến bộ, tiến lên,đưa lên, đề xuat "},
-{word: "advanced", types: "adj", mean: "əd'vɑ:nst tiên tiến, tiến bộ, cap cao"},
-{word: "in advanced", types: "adj", mean: "trước, sớm "},
-{word: "advantage", types: "n", mean: "əb'vɑ:ntidʤ sự thuận lợi, lợi ích, lợi thế"},
-
- {word: "adventure", types: "n", mean: "əd'ventʃə sự phiêu lưu, mạo hiểm "},
- {word: "advertise", types: "v", mean: "ædvətaiz báo cho biết, báo cho biết trước "},
- {word: "advertisement", types: "n", mean: "əd'və:tismənt quảng cáo "},
- {word: "advertising", types: "n", mean: "əd'və:tismənt sự quảng cáo, nghề quảng cáo "},
- {word: "advice", types: "n", mean: "əd'vais lời khuyên, lời chỉ bảo "},
- {word: "advise", types: "v", mean: "əd'vaiz khuyên, khuyên bảo, răn bảo "},
- {word: "affair", types: "n", mean: "ə'feə việc "},
- {word: "affect", types: "v", mean: "ə'fekt làm ảnh hưởng, tác động đến "},
- {word: "affection", types: "n", mean: "ə'fekʃn tình cảm, sự yêu mến "},
- {word: "afford", types: "v", mean: "ə'fɔ:d có thể, có đủ khả năng, điều kiện (làm gì) "},
- {word: "afraid", types: "adj", mean: "ə'freid sợ, sợ hãi, hoảng sợ "},
- {word: "after", types: "adv", mean: "ɑ:ftə sau, đằng sau, sau khi "},
- {word: "afternoon", types: "n", mean: "ɑ:ftə'nu:n buổi chiều "},
- {word: "afterwards", types: "adv", mean: "ɑ:ftəwəd sau này, về sau, rồi thì, sau đây "},
- {word: "again", types: "adv", mean: "ə'gen lại, nữa, lần nữa "},
- {word: "against", types: "prep", mean: "ə'geinst chống lại, phản đối "},
- {word: "age", types: "n", mean: "eidʤ tuổi "},
- {word: "aged", types: "adj", mean: "eidʤid già đi "},
- {word: "agency", types: "n", mean: "eidʤənsi tác dụng, lực,môi giới, trung gian "},
- {word: "agent", types: "n", mean: "eidʤənt đại lý, tác nhân "},
- {word: "aggressive", types: "adj", mean: "ə'gresiv xâm lược, hung hăng (US: xông xáo) "},
- {word: "ago", types: "adv", mean: "ə'gou trước đây "},
- {word: "agree", types: "v", mean: "ə'gri: đồng ý, tán thành "},
- {word: "agreement", types: "n", mean: "ə'gri:mənt sự đồng ý, tán thành,hiệp định, hợp đồng "},
- {word: "ahead", types: "adv", mean: "ə'hed trước, về phía trước "},
- {word: "aid", types: "n", mean: "eid sự giúp đỡ,thêm vào, phụ vào "},
- {word: "aid", types: "v", mean: "eid giúp đỡ,thêm vào, phụ vào "},
- {word: "aim", types: "n", mean: "eim sự nhắm (bắn), mục tiêu, ý định,nhắm, tập trung, hướng vào "},
- {word: "aim", types: "v", mean: "eim nhắm (bắn), mục tiêu, ý định,nhắm, tập trung, hướng vào "},
- {word: "air", types: "n", mean: "eə không khí, bầu không khí, không gian "},
- {word: "aircraft", types: "n", mean: "eəkrɑ:ft máy bay, khí cầu "},
- {word: "airport", types: "n", mean: "sân bay, phi trường "},
-
- {word: "alarm", types: "n", mean: "ə'lɑ:m báo động, báo nguy "},
- {word: "alarm", types: "v", mean: "ə'lɑ:m báo động, báo nguy "},
- {word: "alarmed", types: "adj", mean: "ə'lɑ:m báo động "},
- {word: "alarming", types: "adj", mean: "ə'lɑ:miɳ làm lo sợ, làm hốt hoảng, làm sợ hãi "},
- {word: "alcohol", types: "n", mean: "ælkəhɔl rượu cồn "},
- {word: "alcoholic", types: "adj", mean: ",ælkə'hɔlik nghiện rượu "},
- {word: "alcoholic", types: "n", mean: ",ælkə'hɔlik rượu,người nghiện rượu "},
- {word: "alive", types: "adj", mean: "ə'laiv sống, vẫn còn sống, còn tồn tại "},
- {word: "all", types: "adv", mean: "ɔ:l tất cả "},
- {word: "all right", types: "adv", mean: "ɔ:l'rait tốt, ổn, khỏe mạnh,được "},
- {word: "allied", types: "adj", mean: "ə'laid liên minh, đồng minh, thông gia "},
- {word: "allow", types: "v", mean: "ə'lau cho phép, để cho "},
- {word: "ally", types: "n", mean: "æli nước đồng minh, liên minh,liên kết, kết thông gia "},
- {word: "ally", types: "v", mean: "æli liên minh,liên kết, kết thông gia "},
- {word: "almost", types: "adv", mean: "ɔ:lmoust hầu như, gần như "},
- {word: "alone", types: "adj", mean: "ə'loun cô đơn, một mình "},
- {word: "alone", types: "adv", mean: "ə'loun cô đơn, một mình "},
- {word: "along", types: "adv", mean: "ə'lɔɳ dọc theo, theo,theo chiều dài, suốt theo "},
- {word: "alongside", types: "adv", mean: "ə'lɔɳ'said sát cạnh, kế bên, dọc theo "},
- {word: "aloud", types: "adv", mean: "ə'laud lớn tiếng, to tiếng "},
- {word: "alphabet", types: "n", mean: "ælfəbit bảng chữ cái, bước đầu, điều cơ bản "},
- {word: "alphabetical", types: "adj", mean: ",æflə'betikl thuộc bảng chứ cái "},
- {word: "alphabetically", types: "adv", mean: ",ælfə'betikəli theo thứ tự abc "},
- {word: "already", types: "adv", mean: "ɔ:l'redi đã, rồi, đã… rồi "},
- {word: "also", types: "adv", mean: "ɔ:lsou cũng, cũng vậy, cũng thế "},
- {word: "alter", types: "v", mean: "ɔ:ltə thay đổi, biến đổi, sửa đổi "},
- {word: "alternative", types: "n", mean: "ɔ:l'tə:nətiv sự lựa chọn,"},
- {word: "alternative", types: "adj", mean: "ɔ:l'tə:nətiv thay thế, thay đổi "},
- {word: "alternatively", types: "adv", mean: "như một sự lựa chọn "},
- {word: "although", types: "conj", mean: "ɔ:l'ðou mặc dù, dẫu cho "},
- {word: "altogether", types: "adv", mean: ",ɔ:ltə'geðə hoàn toàn, hầu như,nói chung "},
- {word: "always", types: "adv", mean: "ɔ:lwəz luôn luôn "},
- {word: "amaze", types: "v", mean: "ə'meiz làm ngạc nhiên, làm sửng sốt "},
- {word: "amazed", types: "adj", mean: "ə'meiz kinh ngạc, sửng sốt "},
- {word: "amazing", types: "adj", mean: "ə'meiziɳ kinh ngạc, sửng sốt "},
-
- {word: "ambition", types: "n", mean: "æm'biʃn hoài bão, khát vọng "},
-{word: "ambulance", types: "n", mean: "æmbjuləns xe cứu thương, xe cấp cứu "},
-{word: "among", types: "prep", mean: "ə'mʌɳ giữa, ở giữa "},
-{word: "amount", types: "n", mean: "ə'maunt số lượng, số nhiều"},
-{word: "amount", types: "v", mean: "ə'maunt lên tới (money) "},
-{word: "amuse", types: "v", mean: "ə'mju:z làm cho vui, thích, làm buồn cười "},
-{word: "amused", types: "adj", mean: "ə'mju:zd vui thích "},
-{word: "amusing", types: "adj", mean: "ə'mju:ziɳ vui thích "},
-{word: "analyse", types: "v", mean: "ænəlaiz phân tích "},
-{word: "analyze", types: "v", mean: "ænəlaiz phân tích "},
-{word: "analysis", types: "n", mean: "ə'næləsis sự phân tích "},
-{word: "ancient", types: "adj", mean: "einʃənt xưa, cổ "},
-{word: "and", types: "conj", mean: "ænd và "},
-{word: "anger", types: "n", mean: "æɳgə sự tức giận, sự giận dữ "},
-{word: "angle", types: "n", mean: "æɳgl góc "},
-{word: "angrily", types: "adv", mean: "æɳgrili tức giận, giận dữ "},
-{word: "angry", types: "adj", mean: "æɳgri giận, tức giận "},
-{word: "animal", types: "n", mean: "æniməl động vật, thú vật "},
-{word: "ankle", types: "n", mean: "æɳkl mắt cá chân "},
-{word: "anniversary", types: "n", mean: ",æni'və:səri ngày, lễ kỉ niệm "},
-{word: "announce", types: "v", mean: "ə'nauns báo, thông báo "},
-{word: "annoy", types: "v", mean: "ə'nɔi chọc tức, làm phiền, quẫy nhiễu "},
-{word: "annoyed", types: "adj", mean: "ə'nɔid bị khó chịu, bực mình, bị quấy rầy "},
-{word: "annoying", types: "adj", mean: "ə'nɔiiɳ chọc tức, làm bực mình"},
-{word: "annual", types: "adj", mean: "ænjuəl hàng năm, từng năm "},
-{word: "annually", types: "adv", mean: "ænjuəli hàng năm, từng năm "},
-{word: "another", types: "pron", mean: "ə'nʌðə khác "},
-{word: "answer", types: "n", mean: "ɑ:nsə sự trả lời "},
-{word: "answer", types: "v", mean: "ɑ:nsə trả lời "},
-{word: "anti", types: "prefix", mean: "anˌtī chống lại "},
-{word: "anticipate", types: "v", mean: "æn'tisipeit thấy trước, chặn trước, lường trước "},
-{word: "anxiety", types: "n", mean: "æɳ'zaiəti mối lo âu, sự lo lắng "},
-{word: "anxious", types: "adj", mean: "æɳkʃəs lo âu, lo lắng, băn khoăn "},
-{word: "anxiously", types: "adv", mean: "æɳkʃəsli lo âu, lo lắng, băn khoăn "},
-
-
-{word: "any", types: "adv", mean: "một chút nào, tí nào "},
-{word: "anyone", types: "pron", mean: "eniwʌn người nào, bất cứ ai "},
-{word: "anything", types: "pron", mean: "eniθiɳ bất cứ việc gì, vật gì "},
-{word: "anyway", types: "adv", mean: "eniwei thế nào cũng được, dù sấo chăng nữa "},
-{word: "anywhere", types: "adv", mean: "eniweə bất cứ chỗ nào, bất cứ nơi đâu "},
-{word: "apart", types: "adv", mean: "ə'pɑ:t về một bên, qua một bên "},
-{word: "apartment", types: "n", mean: "ə'pɑ:tmənt căn phòng, căn buồng "},
-{word: "apologize", types: "v", mean: "ə'pɔlədʤaiz xin lỗi, tạ lỗi "},
-{word: "apparent", types: "adj", mean: "ə'pærənt bề ngoài, có vẻ "},
-{word: "apparently", types: "adv", mean: "nhìn bên ngoài, hình như "},
-{word: "appeal", types: "n", mean: "ə'pi:l sự kêu gọi, lời kêu gọi"},
-{word: "appeal", types: "v", mean: "ə'pi:l kêu gọi, cầu khẩn "},
-{word: "appear", types: "v", mean: "ə'piə xuất hiện, hiện ra, trình diện "},
-{word: "appearance", types: "n", mean: "ə'piərəns sự xuất hiện, sự trình diện "},
-{word: "apple", types: "n", mean: "æpl quả táo "},
-{word: "application", types: "n", mean: ",æpli'keiʃn sự gắn vào, sự chuyên cần"},
-{word: "apply", types: "v", mean: "ə'plai gắn vào, ghép vào, áp dụng vào "},
-{word: "appoint", types: "v", mean: "ə'pɔint bổ nhiệm, chỉ định, chọn "},
-{word: "appointment", types: "n", mean: "ə'pɔintmənt sự bổ nhiệm, người được bổ nhiệm "},
-{word: "appreciate", types: "v", mean: "ə'pri:ʃieit thấy rõ, nhận thức "},
-{word: "approach", types: "v", mean: "ə'proutʃ đến gần, lại gần"},
-{word: "approach", types: "n", mean: "ə'proutʃ sự đến gần, sự lại gần "},
-{word: "appropriate (to, for)", types: "adj", mean: "ə'proupriit thích hợp, thích đáng"},
-{word: "approval", types: "n", mean: "ə'pru:vəl sự tán thành, đồng ý, sự chấp thuận "},
-{word: "approve of", types: "v", mean: "ə'pru:v tán thành, đồng ý, chấp thuận"},
-{word: "approving", types: "adj", mean: "ə'pru:viɳ tán thành, đồng ý, chấp thuận "},
-{word: "approximate to", types: "adj", mean: "ə'prɔksimit giống với, giống hệt với"},
-{word: "approximately", types: "adv", mean: "ə'prɔksimitli khoảng chừng, độ chừng "},
-
-
-{word: "april", types: "n", mean: "eiprəl tháng Tư "},
-{word: "area", types: "n", mean: "eəriə diện tích, bề mặt "},
-{word: "argue", types: "v", mean: "ɑ:gju: chứng tỏ, chỉ rõ "},
-{word: "argument", types: "n", mean: "ɑ:gjumənt lý lẽ "},
-{word: "arise", types: "v", mean: "ə'raiz xuất hiện, nảy ra, nảy sinh ra "},
-{word: "arm", types: "n", mean: "ɑ:m cánh tay"},
-{word: "arm", types: "v", mean: "ɑ:m nhắm đến, vũ trang, trang bị"},
-{word: "armed", types: "adj", mean: "ɑ:md vũ trang "},
-{word: "arms", types: "n", mean: "vũ khí, binh giới, binh khí "},
-{word: "army", types: "n", mean: "ɑ:mi quân đội "},
-{word: "around", types: "adv", mean: "ə'raund xung quanh, vòng quanh "},
-{word: "arrange", types: "v", mean: "ə'reindʤ sắp xếp, sắp đặt, sửa soạn "},
-{word: "arrangement", types: "n", mean: "ə'reindʤmənt sự sắp xếp, sắp đặt, sự sửa soạn "},
-{word: "arrest", types: "n", mean: "ə'rest bắt giữ, sự bắt giữ "},
-{word: "arrest", types: "v", mean: "ə'rest bắt giữ "},
-{word: "arrival", types: "n", mean: "ə'raivəl sự đến, sự tới nơi "},
-{word: "arrive (at, in)", types: "v", mean: "ə'raiv đến, tới nơi"},
-{word: "arrow", types: "n", mean: "ærou tên, mũi tên "},
-{word: "art", types: "n", mean: "ɑ:t nghệ thuật, mỹ thuật "},
-{word: "article", types: "n", mean: "ɑ:tikl bài báo, đề mục "},
-{word: "artificial", types: "adj", mean: ",ɑ:ti'fiʃəl nhân tạo "},
-{word: "artificially", types: "adv", mean: ",ɑ:ti'fiʃəli nhân tạo "},
-{word: "artist", types: "n", mean: "ɑ:tist nghệ sĩ "},
-{word: "artistic", types: "adj", mean: "ɑ:'tistik thuộc nghệ thuật, thuộc mỹ thuật "},
-{word: "as", types: "adv", mean: "æ như (as you know…) "},
-{word: "as", types: "conj", mean: "æz như (as you know…) "},
-{word: "as", types: "prep", mean: "æz như (as you know…) "},
-{word: "as well", types: "adv", mean: "cũng, cũng như "},
-{word: "ashamed", types: "adj", mean: "ə'ʃeimd ngượng, xấu hổ "},
-{word: "aside", types: "adv", mean: "ə'said về một bên, sang một bên. aside from: ngoài ra, trư ra "},
-{word: "ask", types: "v", mean: "ɑ:sk hỏi "},
-{word: "asleep", types: "adj", mean: "ə'sli:p ngủ, đang ngủ"},
-{word: "fall asleep", types: "v", mean: "ngủ thiếp đi (gục) "},
-{word: "aspect", types: "n", mean: "æspekt vẻ bề ngoài, diện mạo "},
-{word: "assist", types: "v", mean: "ə'sist giúp, giúp đỡ, tham dự, có mặt "},
-{word: "assistance", types: "n", mean: "ə'sistəns sự giúp đỡ "},
-
-{word: "assistant", types: "n", mean: "ə'sistənt người giúp đỡ, người phụ tá; giúp đỡ "},
-{word: "assistant", types: "adj", mean: "ə'sistənt người giúp đỡ, người phụ tá; giúp đỡ "},
-{word: "associate", types: "v", mean: "ə'souʃiit  kết giao, liên kết, kết hợp, cho cộng tác. "},
-{word: "association", types: "n", mean: "ə,sousi'eiʃn sự kết hợp, sự liên kết "},
-{word: "assume", types: "v", mean: "ə'sju:m mang, khoác, có, lấy (cái vẻ, tính chất…) "},
-{word: "assure", types: "v", mean: "ə'ʃuə đảm bảo, cấm đoán "},
-{word: "atmosphere", types: "n", mean: "ætməsfiə khí quyển "},
-{word: "atom", types: "n", mean: "ætəm nguyên tử "},
-{word: "attach", types: "v", mean: "ə'tætʃ gắn, dán, trói, buộc "},
-{word: "attached", types: "adj", mean: "gắn bó "},
-{word: "attack", types: "n", mean: "ə'tæk sự tấn công"},
-{word: "attack", types: "v", mean: "ə'tæk tấn công, công kích "},
-{word: "attempt", types: "n", mean: "ə'tempt sự cố gắng, sự cố gắng, thử "},
-{word: "attempt", types: "v", mean: "ə'tempt cố gắng, thử "},
-{word: "attempted", types: "adj", mean: "ə'temptid cố gắng, thử "},
-{word: "attend", types: "v", mean: "ə'tend dự, có mặt "},
-{word: "attention", types: "n", mean: "ə'tenʃn sự chú ý "},
-{word: "attitude", types: "n", mean: "ætitju:d thái độ, quan điểm "},
-{word: "attorney", types: "n", mean: "ə'tə:ni người được ủy quyền "},
-{word: "attract", types: "v", mean: "ə'trækt thu hút, hấp dẫn "},
-{word: "attraction", types: "n", mean: "ə'trækʃn sự hút, sức hút "},
-{word: "attractive", types: "adj", mean: "ə'træktiv hút, thu hút, có duyên, lôi cuốn "},
-{word: "audience", types: "n", mean: "ɔ:djəns thính, khan giả "},
-{word: "August", types: "n", mean: "ɔ:gəst tháng Tám "},
-{word: "aunt", types: "n", mean: "ɑ:nt cô, dì "},
-{word: "author", types: "n", mean: "ɔ:θə tác giả "},
-{word: "authority", types: "n", mean: "ɔ:'θɔriti uy quyền, quyền lực "},
-{word: "automatic", types: "adj", mean: ",ɔ:tə'mætik tự động "},
-{word: "automatically", types: "adv", mean: "một cách tự động "},
-{word: "autumn", types: "n", mean: "ɔ:təm mùa thu (US: mùa thu là fall) "},
-{word: "available", types: "adj", mean: "ə'veiləbl có thể dùng được, có giá trị, hiệu lực "},
-{word: "average", types: "adj", mean: "ævəridʤ trung bình, số trung bình, mức trung bình "},
-{word: "average", types: "n", mean: "ævəridʤ trung bình, số trung bình, mức trung bình "},
-
-
-{word: "avoid", types: "v", mean: "ə'vɔid tránh, tránh xa "},
-{word: "awake", types: "adj", mean: "ə'weik đánh thức, làm thức dậy "},
-{word: "award", types: "n", mean: "ə'wɔ:d phần thưởng"},
-{word: "award", types: "v", mean: "ə'wɔ:d tặng, thưởng "},
-{word: "aware", types: "adj", mean: "ə'weə biết, nhận thức, nhận thức thấy "},
-{word: "away", types: "adv", mean: "ə'wei xa, xa cách, rời xa, đi xa "},
-{word: "awful", types: "adj", mean: "ɔ:ful oai nghiêm, dễ sợ "},
-{word: "awfully", types: "adv", mean: "ɔ:fully tàn khốc, khủng khiếp "},
-{word: "awkward", types: "adj", mean: "ɔ:kwəd vụng về, lung túng "},
-{word: "awkwardly", types: "adv", mean: "ɔ:kwəd vụng về, lung túng "},
-{word: "back", types: "n", mean: "bæk lưng, sau, về phía sau, trở lại [adj,adv,v] "},
-{word: "background", types: "n", mean: "bækgraund phía sau, nền "},
-{word: "backward", types: "adj", mean: "bækwəd về phía sau, lùi lại "},
-{word: "backwards", types: "adv", mean: "bækwədz ngược "},
-{word: "bacteria", types: "n", mean: "bæk'tiəriəm vi khuẩn "},
-{word: "bad", types: "adj", mean: "bæd xấu, tồi (badly: adv)"},
-{word: "bad-tempered ", types: "adj", mean: "bæd'tempəd xấu tính, dễ nổi cáu "},
-{word: "bag", types: "n", mean: "bæg bao, túi, cặp xách "},
-{word: "baggage", types: "n", mean: "bædidʤ hành lý "},
-{word: "bake", types: "v", mean: "beik nung, nướng bằng lò "},
-{word: "balance", types: "n", mean: "bæləns cái cân"},
-{word: "balance", types: "v", mean: "bæləns làm cho cân bằng, tương xứng "},
-{word: "ball", types: "n", mean: "bɔ:l quả bóng "},
-{word: "ban", types: "v", mean: "bæn sự cấm "},
-{word: "ban", types: "n", mean: "bæn cấm "},
-{word: "band", types: "n", mean: "bænd băng, đai, nẹp "},
-{word: "bandage", types: "n", mean: "bændidʤ dải băng"},
-{word: "bandage", types: "v", mean: "bændidʤ băng bó "},
-{word: "bank", types: "n", mean: "bæɳk ngân hàng, bờ/đê (sông)"},
-{word: "bar", types: "n", mean: "bɑ: quán bán rượu "},
-{word: "bargain", types: "n", mean: "bɑ:gin sự mặc cả, sự giao kèo mua bán "},
-{word: "barrier", types: "n", mean: "bæriə đặt chướng ngại vật "},
-
-{word: "base", types: "n", mean: "beis cơ sở, cơ bản, nền móng "},
-{word: "base", types: "v", mean: "beis đặt tên, đặt cơ sở trên cái gì "},
-{word: "based", types: "on", mean: "beisd dựa trên "},
-{word: "basic", types: "adj", mean: "beisik cơ bản, cơ sở "},
-
-{word: "basically", types: "adv", mean: "beisikəli cơ bản, về cơ bản "},
-{word: "basis", types: "n", mean: "beisis nền tảng, cơ sở "},
-{word: "bath", types: "n", mean: "bɑ:θ sự tắm "},
-{word: "bathroom", types: "n", mean: "bathroom buồng tắm, nhà vệ sinh "},
-{word: "battery", types: "n", mean: "bætəri pin, ắc quy "},
-{word: "battle", types: "n", mean: "bætl trận đánh, chiến thuật "},
-
-{word: "bay", types: "n", mean: "bei gian (nhà), nhịp (cầu), chuồng (ngựa) "},
-{word: "bays", types: "n", mean: "beis vòng nguyệt quế, vịnh "},
-
-{word: "be", types: "sick", mean: "bị ốm "},
-{word: "beach", types: "n", mean: "bi:tʃ bãi biển "},
-{word: "beak", types: "n", mean: "bi:k mỏ chim "},
-{word: "bear", types: "v", mean: "beə mang, cầm, vác, đeo, ôm "},
-{word: "beard", types: "n", mean: "biəd râu "},
-{word: "beat", types: "n", mean: "bi:t tiếng đập, sự đập"},
-{word: "beat", types: "v", mean: "bi:t đánh đập, đấm "},
-{word: "beautiful", types: "adj", mean: "bju:təful đẹp "},
-{word: "beautifully", types: "adv", mean: "bju:təfuli tốt đẹp, đáng hài lòng "},
-{word: "beauty", types: "n", mean: "bju:ti vẻ đẹp, cái đẹp; người đẹp "},
-{word: "because", types: "conj", mean: "bi'kɔz bởi vì, vì. because of prep. vì, do bởi "},
-{word: "become", types: "v", mean: "bi'kʌm trở thành, trở nên "},
-{word: "bed", types: "n", mean: "bed cái giường "},
-{word: "bedroom", types: "n", mean: "bedrum phòng ngủ "},
-{word: "beef", types: "n", mean: "bi:f thịt bò "},
-{word: "beer", types: "n", mean: "bi:ə rượu bia "},
-{word: "before", types: "prep", mean: "bi'fɔ: trước, đằng trước [conj, adv]"},
-{word: "begin", types: "v", mean: "bi'gin bắt đầu, khởi đầu "},
-{word: "beginning", types: "n", mean: "bi'giniɳ phần đầu, lúc bắt đầu, lúc khởi đầu "},
-{word: "behalf", types: "n", mean: "bi:hɑ:f sự thay mặt. on behalf of sb thay mặt cho ai, nhân danh ai "},
-{word: "on sb’s behalf", types: "", mean: "x nhân danh cá nhân/ai"},
-{word: "behave", types: "v", mean: "bi'heiv đối xử, ăn ở, cư xử "},
-{word: "behavior", types: "n", mean: "thái độ, cách đối xử, cách cư xử, ăn ở"},
-{word: "behaviour", types: "n", mean: "thái độ, cách đối xử; cách cư xử"},
-{word: "behind", types: "prep", mean: "bi'haind sau, ở đằng sau [adv]"},
-
-{word: "belief", types: "n", mean: "bi'li:f lòng tin, đức tin, sự tin tưởng "},
-{word: "believe", types: "v", mean: "bi'li:v tin, tin tưởng "},
-{word: "bell", types: "n", mean: "bel cái chuông, tiếng chuông "},
-{word: "belong", types: "v", mean: "bi'lɔɳ thuộc về, của, thuộc quyền sở hữu "},
-{word: "below", types: "adv", mean: "bi'lou ở dưới, dưới thấp, phía dưới (prep) "},
-{word: "belt", types: "n", mean: "belt dây lưng, thắt lưng "},
-{word: "bend", types: "v", mean: "bentʃ cúi xuống, uốn cong "},
-{word: "bend", types: "n", mean: "bentʃ chỗ rẽ, chỗ uốn, khuỷu tay"},
-{word: "beneath", types: "adv", mean: "bi'ni:θ ở dưới, dưới thấp [prep]"},
-{word: "benefit", types: "n", mean: "benifit lợi, lợi ích"},
-{word: "benefit", types: "v", mean: "benifit giúp ích, làm lợi cho "},
-{word: "bent", types: "adj", mean: "bent khiếu, sở thích, khuynh hướng "},
-{word: "beside", types: "prep", mean: "bi'said bên cạnh, so với "},
-{word: "bet", types: "v", mean: "bet đánh cuộc, cá cược "},
-{word: "bet", types: "n", mean: "bet sự đánh cuộc "},
-{word: "better", types: "adj", mean: "betə tốt hơn "},
-{word: "betting", types: "n", mean: "beting sự đánh cuộc "},
-{word: "between", types: "adv", mean: "bi'twi:n giữa, ở giữa "},
-{word: "beyond", types: "adv", mean: "bi'jɔnd ở xa, phía bên kia [prep]"},
-{word: "bicycle", types: "n", mean: "baisikl xe đạp "},
-{word: "bike", types: "n", mean: "baisikl xe đạp "},
-{word: "bid", types: "n", mean: "bid sự đặt giá, sự trả giá "},
-{word: "bid", types: "v", mean: "bid đặt giá, trả giá"},
-{word: "big", types: "adj", mean: "big to, lớn "},
-{word: "bill", types: "n", mean: "bil hóa đơn, giấy bạc "},
-{word: "bin", types: "n", mean: "bin thùng, thùng đựng rượu "},
-{word: "biology", types: "n", mean: "bai'ɔlədʤi sinh vật học "},
-{word: "bird", types: "n", mean: "bə:d chim "},
-{word: "birth", types: "n", mean: "bə:θ sự ra đời, sự sinh đẻ "},
-{word: "birthday", types: "n", mean: "bə:θdei ngày sinh, sinh nhật "},
-{word: "biscuit", types: "n", mean: "biskit bánh quy "},
-{word: "bit", types: "n", mean: "bit miếng, mảnh. "},
-{word: "a bit", types: "phrase", mean: "abit một chút"},
-{word: "bite", types: "n", mean: "bait sự cắn, sự ngoạm "},
-{word: "bite", types: "v", mean: "bait cắn, ngoạm"},
-{word: "bitter", types: "adj", mean: "bitə đắng; đắng cay, chua xót "},
-{word: "bitterly", types: "adv", mean: "bitəli đắng, đắng cay, chua xót "},
-{word: "black", types: "n", mean: "blæk đen; màu đen "},
-{word: "black", types: "adj", mean: "blæk đen; màu đen "},
-
-{word: "blade", types: "n", mean: "bleid lưỡi (dao, kiếm); lá (cỏ, cây); mái (chèo); cánh (chong chóng) "},
-{word: "blame", types: "v", mean: "bleim khiển trách, mắng trách"},
-{word: "blame", types: "n", mean: "bleim sự khiển trách, sự mắng trách "},
-{word: "blank", types: "adj", mean: "blæɳk trống, để trắng"},
-{word: "blank", types: "n", mean: "sự trống rỗng "},
-{word: "blankly", types: "adv", mean: "blæɳkli ngây ra, không có thần "},
-{word: "blind", types: "adj", mean: "blaind đui, mù "},
-{word: "block", types: "n", mean: "blɔk khối, tảng (đá)"},
-{word: "block", types: "v", mean: "blɔk làm ngăn cản, ngăn chặn "},
-{word: "blonde / blond", types: "adj", mean: "blɔnd hoe vàng, mái tóc hoe vàng"},
-{word: "blonde", types: "n", mean: "blɔnd tóc vàng (blond)"},
-{word: "blood", types: "n", mean: "blʌd máu, huyết; sự tàn sát, chem giết "},
-{word: "blow", types: "n", mean: "blou sự nở hoa "},
-{word: "blow", types: "v", mean: "blou nở hoa"},
-{word: "blue", types: "n", mean: "blu: màu xanh"},
-{word: "blue", types: "adj", mean: "blu: xanh, có màu xanh "},
-{word: "board", types: "n", mean: "bɔ:d tấm ván, tàu thủy "},
-{word: "board", types: "v", mean: "bɔ:d lót ván "},
-{word: "boat", types: "n", mean: "bout tàu, thuyền "},
-{word: "body", types: "n", mean: "bɔdi thân thể, thân xác "},
-{word: "boil", types: "v", mean: "bɔil sôi, luộc "},
-{word: "bomb", types: "n", mean: "bɔm quả bom"},
-{word: "bomb", types: "v", mean: "bɔm đặt(đánh) bom, thả bom "},
-{word: "bone", types: "n", mean: "boun xương "},
-{word: "book", types: "n", mean: "buk sách"},
-{word: "book", types: "v", mean: "buk đặt phòng"},
-{word: "boot", types: "n", mean: "bu:t giày ống "},
-{word: "border", types: "n", mean: "bɔ:də bờ, mép, vỉa, lề (đường) "},
-{word: "bore", types: "v", mean: "bɔ: buồn chán, buồn tẻ "},
-{word: "bored", types: "adj", mean: "bɔ:d buồn chán "},
-{word: "boring", types: "adj", mean: "bɔ:riɳ buồn chán "},
-{word: "be born", types: "v", mean: "bɔ:n (được) sinh, đẻ"},
-{word: "borrow", types: "v", mean: "bɔrou vay, mượn "},
-{word: "boss", types: "n", mean: "bɔs ông chủ, thủ trưởng "},
-{word: "both", types: "pron", mean: "bouθ cả hai "},
-{word: "bother", types: "v", mean: "bɔðə làm phiền, quấy rầy, làm bực mình "},
-{word: "bottle", types: "n", mean: "bɔtl chai, lọ "},
-{word: "bottom", types: "n", mean: "bɔtəm phần dưới cùng, thấp nhất"},
-{word: "bottom", types: "adj", mean: "bɔtəm cuối, cuối cùng "},
-{word: "bound (to)", types: "adj", mean: "baund nhất định, chắc chắn"},
-// 361 words
-
-	   ];
-
-	$scope.playSound = function (path) {
-	    var audio = new Audio("sounds/" + path +'.mp3');
-	    audio.loop = false;
-	    audio.play();
-	}
-
-	$scope.stopSound = function () {
-		Speech = new SpeechSynthesisUtterance();
-	    window.speechSynthesis.cancel(Speech);
-	};
-
-	$scope.sayIt = function (theText) {
-		Speech = new SpeechSynthesisUtterance(theText);
-	    window.speechSynthesis.speak(Speech);
-	};
-
-	$scope.rdQuiz = function () {
-		var rand = Math.random() *  ($scope.words.length - 1);
-		return Math.floor(rand);
-	};
-
-	$scope.rdInRange = function (min, max) {
-		var rand = min + Math.random() *  (max - min);
-		return Math.floor(rand);
-	};
-
-	$scope.shuffle = function(array) {
-	  	var currentIndex = array.length,  randomIndex;
-
-	  // While there remain elements to shuffle.
-	  while (currentIndex != 0) {
-
-	    // Pick a remaining element.
-	    randomIndex = Math.floor(Math.random() * currentIndex);
-	    currentIndex--;
-
-	    // And swap it with the current element.
-	    [array[currentIndex], array[randomIndex]] = [
-	      array[randomIndex], array[currentIndex]];
-	  }
-
-	  	return array;
-	}
-
-	$scope.checkAnwser = function (word) {
-	 	console.log("Radio Selected Word = " + word);
-	 	$scope.bAnwserRight = 0;
-	 	if ($scope.quiz.question.word == word)
-	 	{
-	 		$scope.point++;
-	 		$scope.pointClass = 'text-success';
-	 		$scope.playSound("good");
-	 	}
-	 	else
-	 	{
-	 		$scope.point--;
-	 		$scope.pointClass = 'text-danger';
-	 		$scope.playSound("wrong");
-	 	}
-	 	$timeout(function() { 
-			$scope.reLoadQuiz();
-	 	}, 50);
-     };
-
-     $scope.reLoadQuiz = function () {
-
-     	$scope.stopSound();
-     	$scope.quiz = {};
-
-     	$timeout(function() { 
-	     	var rand1, rand2, rand3, rand4;
-	      	rand1 = $scope.rdQuiz(0, 1);
-	  		do { rand2 = $scope.rdQuiz(); } while (rand2 == rand1);
-	  		do { rand3 = $scope.rdQuiz(); } while (rand3 == rand2 || rand3 == rand1);
-	  		do { rand4 = $scope.rdQuiz(); } while (rand4 == rand3 || rand4 == rand2  || rand4 == rand1);
-	  		var rdOrder = $scope.rdInRange(0, 3);
-	  	//	console.log(rand1, rand2, rand3, rand4)
-	  	//	console.log("AnwserIdx = " + rdOrder)
-	  		if (rdOrder==0)
-	  		{
-	  			$scope.quiz.question = $scope.words[rand1];
-	  			$scope.quiz.choices = [$scope.words[rand1], $scope.words[rand2], $scope.words[rand3], $scope.words[rand4]];
-	  		}
-	  		else if (rdOrder==1)
-	  		{
-	  			$scope.quiz.question = $scope.words[rand2];
-	  			$scope.quiz.choices = [$scope.words[rand2], $scope.words[rand1], $scope.words[rand3], $scope.words[rand4]];
-	  		}
-	  		else if (rdOrder==2)
-	  		{
-	  			$scope.quiz.question = $scope.words[rand3];
-	  			$scope.quiz.choices = [$scope.words[rand3], $scope.words[rand1], $scope.words[rand2], $scope.words[rand4]];
-	  		}
-	  		else if (rdOrder==3)
-	  		{
-	  			$scope.quiz.question = $scope.words[rand4];
-	  			$scope.quiz.choices = [$scope.words[rand4], $scope.words[rand1], $scope.words[rand2], $scope.words[rand3]];
-	  		}
-	  		$scope.shuffle($scope.quiz.choices)
-		}, 50);
-
-    
-     };
-
-    $scope.reLoadQuiz();
-
-    });
-
-
-    app.directive('wrapInTag', function() {
-		return {
-	        restrict: 'A',
-	        link: function(scope, ele, attr) {
-	          var tag = attr.tag || 'strong';
-	          var word = attr.word || [];
-	          var text = attr.text || [];
-	          console.log("text " + text);
-	          text =  text.replace(word,'<'+tag+'>'+word+'</'+tag+'>');         
-           	 ele.html(text);
-	        }
-	    }
-	});
-
-	 app.directive('removeIpa', function() {
-		return {
-	        restrict: 'A',
-	        link: function(scope, ele, attr) {
-	          var word = attr.word || [];
-	          var ipa =  word.split(" ")[0];       
-	          word = word.replace(ipa, "")
-           	 ele.html(word);
-	        }
-	    }
-	});
-
-</script>
 </html>

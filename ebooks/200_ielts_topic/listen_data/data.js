@@ -23,8 +23,14 @@ Candidate: Well, like I said, I like the fact that you can meet people from all 
 Examiner: OK, Ameneh. Tell me, what do most of the people do in your hometown? <br>\
 Candidate: Well, as Tehran is the capital, there's a variety of vocations and activities going on during the day. Obviously it's the base of a country, so you have businessmen, you have lots of shops, and you have many ministries, many schools. All in all, there's a variety of jobs and activities going on.<br>\
 Examiner: OK, thanks Ameneh. Now let's move on to the second part. I would like to show you a topic card, and you have to talk about this topic for about two minutes. You have one minute to prepare yourself. Here is a paper and a pencil. You can write down your notes if you wish.<br>\
-Candidate: Thank you very much.<br>\
-<br>\
+Candidate: Thank you very much.<hr>\
+Describe the most important success in your life. <br>\
+You should say: <br>\
+When you achieved it <br>\
+Who contributed to your success <br>\
+How you have managed to succeed <br>\
+and explain why it is do important to you.<br>\
+<hr>\
 Part 2<br>\
 Examiner: OK Ameneh, now you must start talking please. <br>\
 Candidate: Well, in relation to success, I have to say that I consider my education by far my most important success. This is due to the fact that while I was in university I did meet my husband and I married, so that was before I finished my degree. Since then, even though I have started a family, I've managed to obtain a degree with Honours, and subsequently was accepted on a post graduate programme which was actually quite difficult to get into. I think the main people who contributed to my success must have been my immediate family. My parents were very supportive in all my decisions. And also my spouse gave me all the support that I could possibly need from a husband. I have to say that the most important factor was my own self-determination, my self-discipline, time-management, and also uncompromising goals that I set for myself. Little goals, but nonetheless goals that made me reach where I am flow.<br>\
@@ -34,6 +40,7 @@ Candidate: That's a difficult question to answer, because I might not be the big
 Examiner: OK thanks. And do you think having an organised programme can lead to people's success? Candidate: Well I think it's of the utmost importance actually. I think that not having an organised programme or schedule will almost certainly result in the shortage of time. It's specifically important for short-term goals, as time is of the essence. A schedule is also necessary for long-term goals. Because its human nature to put things off till later, or you know, procrastinate, and you end up running out of time without even realising it. So, having a schedule will help you keep track of it.<br>\
 Examiner: Thank you very much. This is the end of the speaking test Have a nice day. <br>\
 Candidate: Thank you. You too."
+,voca:"passport"
 ,vi: "Bài kiểm tra mẫu 1<br>\
 Giám khảo: Xin chào. Mời vào và ngồi. <br>\
 Ứng viên: Cảm ơn. <br>\
@@ -55,8 +62,14 @@ Giám khảo: Được rồi Ameneh. Bạn thích điều gì ở quê hương m
 Giám khảo: Được rồi, Ameneh. Hãy cho tôi biết, hầu hết mọi người làm gì ở quê hương bạn? <br>\
 Ứng viên: Vâng, vì Tehran là thủ đô, nên có nhiều nghề nghiệp và hoạt động diễn ra vào ban ngày. Rõ ràng đây là cơ sở của một quốc gia, vì vậy bạn có các doanh nhân, bạn có rất nhiều cửa hàng và bạn có nhiều mục vụ, nhiều trường học. Nhìn chung, có rất nhiều công việc và hoạt động đang diễn ra.<br>\
 Giám khảo: Được rồi, cảm ơn Ameneh. Bây giờ chúng ta hãy chuyển sang phần thứ hai. Tôi muốn cho bạn xem một thẻ chủ đề và bạn phải nói về chủ đề này trong khoảng hai phút. Bạn có một phút để chuẩn bị. Đây là một tờ giấy và một cây bút chì. Bạn có thể ghi chú lại nếu muốn.<br>\
-Ứng viên: Cảm ơn bạn rất nhiều.<br>\
-<br>\
+Ứng viên: Cảm ơn bạn rất nhiều.<hr>\
+Hãy mô tả thành công quan trọng nhất trong cuộc đời bạn. <br>\
+Bạn nên nói: <br>\
+Khi nào bạn đạt được thành công đó <br>\
+Ai đã đóng góp vào thành công của bạn <br>\
+Bạn đã xoay xở để thành công như thế nào <br>\
+và giải thích tại sao thành công đó lại quan trọng với bạn.<br>\
+<hr>\
 Phần 2<br>\
 Giám khảo: Được rồi Ameneh, bây giờ bạn phải bắt đầu nói chuyện nhé. <br>\
 Ứng viên: Vâng, liên quan đến thành công, tôi phải nói rằng tôi coi việc học của mình là thành công quan trọng nhất của tôi. Điều này là do thực tế là khi tôi còn học đại học, tôi đã gặp chồng mình và tôi đã kết hôn, vì vậy đó là trước khi tôi hoàn thành bằng cấp của mình. Kể từ đó, mặc dù tôi đã lập gia đình, tôi đã xoay sở để lấy được bằng danh dự, và sau đó được chấp nhận vào một chương trình sau đại học thực sự khá khó khăn để vào. Tôi nghĩ những người chính đóng góp vào thành công của tôi hẳn là gia đình trực hệ của tôi. Bố mẹ tôi rất ủng hộ mọi quyết định của tôi. Và vợ tôi cũng đã cho tôi mọi sự hỗ trợ mà tôi có thể cần từ một người chồng. Tôi phải nói rằng yếu tố quan trọng nhất là sự tự quyết định của chính tôi, tính tự kỷ luật, khả năng quản lý thời gian và cả những mục tiêu không khoan nhượng mà tôi đặt ra cho bản thân. Những mục tiêu nhỏ, nhưng dù sao thì đó cũng là những mục tiêu giúp tôi đạt được nơi mình đang ở.<br>\

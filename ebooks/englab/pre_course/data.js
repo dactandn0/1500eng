@@ -74,26 +74,20 @@ Reading passage vocab:<br>\
 	unit:"2",
 	en:"PART 2: TRADITIONAL FESTIVAL<br>\
 Describe a traditional festival in your country<br>\
-+ Lemme spill the beans/tea on a traditional event in my country that everyone is<br>\
-crazy about.<br>\
-+ It’s called Tet holiday or Lunar New Year, which is the longest holiday in<br>\
-Vietnam,<br>\
++ Lemme spill the beans/tea on a traditional event in my country that everyone is crazy about.<br>\
++ It’s called Tet holiday or Lunar New Year, which is the longest holiday in Vietnam,<br>\
 When it is often celebrated:<br>\
 + we observe Tet holiday at the beginning of the lunar calendar<br>\
 How it is celebrated:<br>\
 + a vast array of activities in Tet holiday<br>\
 + before Tet holiday<br>\
-→ go shopping to buy new clothes, flowers (cherry blossoms or apricots),<br>\
-traditional food<br>\
-→ clean the house from top to bottom → we believe this will bring good luck<br>\
-in the new year<br>\
+→ go shopping to buy new clothes, flowers (cherry blossoms or apricots), traditional food<br>\
+→ clean the house from top to bottom → we believe this will bring good luck in the new year<br>\
 + during tet holiday → visit our relatives(ng thân) → exchange wishes +<br>\
-children receive lucky money in red envelopes which represent good<br>\
-fortune/luck<br>\
+children receive lucky money in red envelopes which represent good fortune/luck<br>\
 And explain what you feel about this festival:<br>\
 + I can’t wait to enjoy Tet holiday → can escape from schoolwork/heavy<br>\
-workload and spend more quality time with family and friends → have a whale<br>\
-of a time together.<br>\
+workload and spend more quality time with family and friends → have a whale of a time together.<br>\
 This festival is a special occasion for family gatherings.<br>\
 To Strengthen/tighten family bonds<br>\
 Allows us to be more close-knit<br>\
@@ -103,8 +97,7 @@ This is…<br>\
 When - It’s held on(diễn ra) 20th of November<br>\
 Students give gifts to teachers- hangout together<br>\
 Students send best wishes to their teachers<br>\
-This holiday is Special for me because vn’s teachers day reminds(nhac nho) me<br>\
-to remember and be grateful + to the contributions of teachers.<br>\
+This holiday is Special for me because vn’s teachers day reminds(nhac nho) me to remember and be grateful + to the contributions of teachers.<br>\
 MID-AUTUMN FESTIVAL<br>\
 It’s the Mid-Autumn Festival - it’s one of the most…<br>\
 Takes place on the 15 th of August according to the lunar calendar<br>\
@@ -118,21 +111,16 @@ Carp-shaped lantern: đèn cá chép<br>\
 Star-shaped lantern: đèn ông sao<br>\
 + During the festival<br>\
 Children will carry candle lanterns and parade on the streets<br>\
-There will be people performing lion dances to every house in the neighborhood<br>\
-with the hope that it will bring fortune to the households.<br>\
-→ Tất cả các hđ đó tạo nên 1 cảnh tượng tuyệt đẹp và bầu không khí vui nhộn,<br>\
-nhộn nhịp.<br>\
+There will be people performing lion dances to every house in the neighborhood with the hope that it will bring fortune to the households.<br>\
+→ Tất cả các hđ đó tạo nên 1 cảnh tượng tuyệt đẹp và bầu không khí vui nhộn, nhộn nhịp.<br>\
 And explain what you feel about this festival:<br>\
 <br>\
-I still vividly remember how I felt about this festival when i was a kid // How i felt<br>\
-about this festival when i was a kid is still fresh in my mind.<br>\
+I still vividly remember how I felt about this festival when i was a kid // How i felt about this festival when i was a kid is still fresh in my mind.<br>\
 + I couldn’t wait to enjoy Tet holiday → can escape from schoolwork, eat a lot<br>\
-of candies and sweets, have fun with friends, → have a whale of a time<br>\
-together.<br>\
+of candies and sweets, have fun with friends, → have a whale of a time together<br>\
 This festival is a special occasion for family gatherings.<br>\
 To Strengthen/tighten family bonds<br>\
 Allows us to be more close-knit<br>\
-<br>\
 Let me introduce about the Vietnamese women’s day<br>\
 It takes place on…<br>\
 On this day, S + V<br>\

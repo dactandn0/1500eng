@@ -30,6 +30,15 @@
         <a href="./ebooks/ebooks.html" class="ml-4 mb-4">Ebooks</a>
         <a href="./singSong/main.html" class="ml-4 mb-4">SingSong</a>
     	<hr>
+
+      <div class="form-group">
+        <input type="text" class="form-control col-md-6" ng-model="search" ng-change="searchTyping()" placeholder="Search...">
+      </div>
+
+       <ul class="mb-4 mt-2">
+          <li class="text-sm" ng-repeat="name in searchDataResult">{{ name }}</li>
+      </ul>
+
     	<div ng-repeat="story in stories track by $index" class="mb-2" >
 		  <h6 class="accordion" >
 		    <a href ng-click="acc_click($index)"><span ng-if="$index<10">0</span>{{$index+1}}. {{story.title}} &nbsp&nbsp&nbsp&nbsp[{{story.numOfWord}}: words]</a>
@@ -45,10 +54,6 @@
 	          	</div>
 		  </div>
 		</div>
-
-    	<span class="btnShowVi opa">
-        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-    	</span>
 
     <!-- 	<form name="cdForm" class="my-3" role="group">
     		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-2">B_CD1</span>

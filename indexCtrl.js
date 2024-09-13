@@ -1,4 +1,6 @@
 
+document.write('<script src="global_js.js" type="text/javascript"></script>');
+
 function MYLOG(msg) {
 //	console.log(msg);
 }
@@ -37,10 +39,14 @@ $scope.range = function(min, max, step) {
  $scope.storyIdx = 0;
  $scope.bPlayingFull = false;
  $scope.bPause = false;
- $scope.bShowVi = 0;
- $scope.bHiddenWords = 0;
+
  $scope.audio;
  $scope.currentTime = 0;
+
+$scope.searchData = [];
+$scope.searchDataResult = [];
+$scope.search = "";
+
 
 $scope.units = [
 	{'title':"", 'num': 1},
@@ -53,76 +59,15 @@ $scope.resetFlag = function () {
 	$scope.bHiddenWords = 0;
 }	
 
-$scope.backSound = function (sec) {
-	$scope.audio.currentTime = $scope.audio.currentTime + sec;
-}
-
-$scope.resetAudioBtnUI = function()
-{
-	$scope.bPause=false;
-    $scope.bPlayingFull=false;
-
-    var isChkLoopChecked = false;
-    if (localStorage.hasOwnProperty("bri_complete_isAudioLoop")) {
-		isChkLoopChecked = localStorage.bri_complete_isAudioLoop;
-	}
-    if (isChkLoopChecked=='true')
-    {
-    	$scope.playFullSound($scope.storyIdx);
-    }
-
-    $scope.$apply();
-}
-
-$scope.playFullSound = function (index) {
-	if ($scope.bPlayingFull)
-	{
-		$scope.stopSound();
-		$scope.bPause=false;
-	}
-  	else
-  	{
-  		$scope.audio = new Audio("cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
-	    $scope.audio.loop = false;
-	    $scope.audio.play();
-
-		$scope.audio.addEventListener("ended", function(){
-		   $scope.resetAudioBtnUI();
-		});
-
-	    $scope.bPlayingFull = true;
-  	}
-}
-
-$scope.pauseSound = function () {
-	if (!$scope.audio) return;
-	$scope.bPause = !$scope.bPause;
-	if ($scope.bPause)
-    {
-    	$scope.audio.pause();
-    	$scope.currentTime = $scope.audio.currentTime;
-    }
-    else
-    {
-    	$scope.audio.currentTime = $scope.currentTime;
-    	$scope.audio.play();
-    }
-}
-
-$scope.stopSound = function () {
-	if (!$scope.audio) return;
-	 $scope.audio.pause();
-	 $scope.audio.currentTime = 0;
-	 $scope.currentTime = 0;
-	 $scope.bPlayingFull = false;
-};
 
 $scope.preProcess = function () {
 	for (var k = 0; k < kSTORIES.length; k++) {
 		story = $scope.stories[k];
 		if (story.en) 
-		{
-			story.numOfWord = story.en.split('<br>').length;
+		{	
+			var arr = story.en.split('<br>');
+			story.numOfWord = arr.length;
+			$scope.searchData = $scope.searchData.concat(arr);
 		}
 	} // for
 }
@@ -139,6 +84,20 @@ function validateWord(word)
 	return true;
 }
 
+
+$scope.searchTyping = function() {
+	$scope.searchDataResult = [];
+	if ($scope.search.length < 2)return;
+    var search = removeVietnameseTones($scope.search.toLowerCase());
+    if ($scope.searchData.length==0) return true;       
+    for (var i = 0; i < $scope.searchData.length; i++) {
+    	var dataVN = $scope.searchData[i];
+    	data = removeVietnameseTones(dataVN.toLowerCase());
+    	if (data.includes(search)) {
+    		$scope.searchDataResult.push(dataVN);
+    	}
+    }
+};
 
 $scope.loadData = function () {
 	$scope.preProcess();

@@ -5,25 +5,25 @@ const INDEX_DATA =
 unit:1,
 title: "School Supplies",
 en: "Watercolour n /ˈwɔː.təˌkʌl.ər/ Màu nước<br>\
-	Thumbtack n /ˈθʌm.tæk/ Đinh ghim<br>\
-	Textbook n /ˈtekst.bʊk/ Sách giáo khoa<br>\
-	Test Tube n. phr /ˈtest ˌtjuːb/ Ống nghiệm<br>\
-	Tape measure n. phr /ˈteɪp ˌmeʒ.ər/ Thước dây<br>\
-	Stencil n /ˈsten.səl/ Giấy nến<br>\
-	Stapler n /ˈsteɪ.plər/ Đồ dập ghim<br>\
-	Staple remover n. phr /ˈsteɪ.plər rɪˈmuː.vər/ Cái gỡ ghim bấm<br>\
-	Set Square n. phr /ˈset ˌskweər/ Ê-ke<br>\
-	Scotch Tape n. phr /ˌskɒtʃ ˈteɪp/ Băng dính trong suốt<br>\
-	Scissors n /ˈsɪz.əz/ Kéo<br>\
-	Ruler n /ˈruː.lər/ Thước<br>\
-	Ribbon n /ˈrɪb.ən/ Ruy-băng<br>\
-	Protractor n /prəˈtræk.tər/ Thước đo góc<br>\
-	Post-it note n. phr /ˈpəʊst.ɪt ˌnəʊt/ Giấy nhớ<br>\
-	Pin n /pɪn/ Đinh ghim, kẹp<br>\
-	Pencil n /ˈpen.səl/ Bút chì<br>\
-	Pencil Sharpener n. phr /ˈpen.səl ˌʃɑː.pən.ər/ Đồ gọt bút chì<br>\
-	Pencil Case n. phr /ˈpen.səl ˌkeɪs/ Hộp bút<br>\
-	Pen n /pen/ Bút mực<br>\
+Thumbtack n /ˈθʌm.tæk/ Đinh ghim<br>\
+Textbook n /ˈtekst.bʊk/ Sách giáo khoa<br>\
+Test Tube n. phr /ˈtest ˌtjuːb/ Ống nghiệm<br>\
+Tape measure n. phr /ˈteɪp ˌmeʒ.ər/ Thước dây<br>\
+Stencil n /ˈsten.səl/ Giấy nến<br>\
+Stapler n /ˈsteɪ.plər/ Đồ dập ghim<br>\
+Staple remover n. phr /ˈsteɪ.plər rɪˈmuː.vər/ Cái gỡ ghim bấm<br>\
+Set Square n. phr /ˈset ˌskweər/ Ê-ke<br>\
+Scotch Tape n. phr /ˌskɒtʃ ˈteɪp/ Băng dính trong suốt<br>\
+Scissors n /ˈsɪz.əz/ Kéo<br>\
+Ruler n /ˈruː.lər/ Thước<br>\
+Ribbon n /ˈrɪb.ən/ Ruy-băng<br>\
+Protractor n /prəˈtræk.tər/ Thước đo góc<br>\
+Post-it note n. phr /ˈpəʊst.ɪt ˌnəʊt/ Giấy nhớ<br>\
+Pin n /pɪn/ Đinh ghim, kẹp<br>\
+Pencil n /ˈpen.səl/ Bút chì<br>\
+Pencil Sharpener n. phr /ˈpen.səl ˌʃɑː.pən.ər/ Đồ gọt bút chì<br>\
+Pencil Case n. phr /ˈpen.səl ˌkeɪs/ Hộp bút<br>\
+Pen n /pen/ Bút mực<br>\
 Paper n /ˈpeɪ.pər/ Giấy<br>\
 Paper fastener n. phr /ˈpeɪ.pər ˈfɑːs.ən.ər/ Dụng cụ kẹp giấy<br>\
 Paper Clip n. phr /ˈpeɪ.pə ˌklɪp/ Kẹp giấy<br>\
@@ -742,7 +742,35 @@ Wife n /waɪf/ Vợ<br>\
 Ceremony n /ˈser.ɪ.mə.ni/ Nghi lễ, nghi thức<br>\
 Betroth v /bɪˈtrəʊð/ Hứa hôn, đính hôn",
 }
-
+,{
+title:"Type of money",
+en:"donation n /dəʊˈneɪʃn/ tiền quyên góp<br>\
+fee n /fiː/ phí, học phí, tiền công<br>\
+ransom n /ˈrænsəm/ tiền chuộc<br>\
+loan n /ləʊn/ tiền vay ngân hàng<br>\
+salary n /ˈsæləri/ lương<br>\
+fine n /faɪn/ tiền phạt<br>\
+pension n /ˈpenʃn/ lương hưu<br>\
+alimony n /ˈælɪməʊni/ tiền cấp dưỡng sau li hôn<br>\
+allowance n allowance tiền trợ cấp/cấp dưỡng<br>\
+tax n /tæks/ thuế<br>\
+debt n /det/ khoản nợ<br>\
+wage n /weɪdʒ/  tiền công theo giờ<br>\
+bribe n /braɪb/ tiền hối lộ<br>\
+tip n tɪp/ tiền boa",
+},
+{
+title:"Tasting",
+en:"sweet a /swiːt/ ngọt<br>\
+salty a /ˈsɔːlti/ mặn<br>\
+bitter a /ˈbɪtər/ đắng<br>\
+bland a /blænd/ nhạt<br>\
+garlicky a /ˈɡɑːrlɪki/ vị tỏi<br>\
+sour a /ˈsaʊər/ chua<br>\
+cheesy a /ˈtʃiːzi/ béo phô mai<br>\
+spicy a /ˈspaɪsi/ cay<br>\
+smoky a /ˈsməʊki/ xông khói",
+}
 
 
 

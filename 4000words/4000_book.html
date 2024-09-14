@@ -89,11 +89,33 @@
 	          			{{note}}
 	          		</p>
 	          	</div>
+
+
+    	<div ng-repeat="voca in story.voca4k track by $index" class="mb-2" >
+		  <h6 class="accordion" >
+		  	 <div class="input-group">
+		        <a href ng-click="acc_click($index)">{{$index+1}}. {{voca.en}}. <small><!-- {{voca.ipa}}  -->{{voca.type}}</small></a>
+		        <div class="input-group-append">
+		          <button class="btn btn-sm" type="button" ng-click="playAtTime(voca.time)">[Speech]</button>
+		        </div>
+		     </div>
+
+		   
+		  </h6>
+		  <div class="accordion-content" ng-show="acc_isShow($index)">
+		    <span>{{voca.mean}}</span><br>
+		    <span>--> {{voca.sample}}</span>
+		  </div> <!-- acc -->
+		</div> <!-- ng-repeat -->
+
+
 	          	
 	          </div> <!-- card-text -->
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->
     </div> <!-- container -->
+
+    <p style=" height: 30vh;">	</p>
 </body>
 
 </html>

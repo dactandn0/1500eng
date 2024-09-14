@@ -31,6 +31,16 @@ $scope.range = function(min, max, step) {
     return RANGE(min, max, step);
 };
 
+$scope.acc = -1;
+$scope.acc_isShow = function (id) {
+	return $scope.acc===id;
+};
+
+$scope.acc_click = function (id) {
+	if($scope.acc===id) $scope.acc=-1;
+	else
+		$scope.acc=id;
+};
 
 $scope.storyIdx = 0;
 
@@ -48,11 +58,24 @@ $scope.units = [
 ];
 
 $scope.resetFlag = function () {
+	$scope.bPlayingVoca = false;
 	$scope.bPlayingFull = false;
 	$scope.bPause = false;
 	$scope.bShowVi = 0;
 	$scope.bHiddenWords = 0;
-}	
+}
+
+$scope.playAtTime = function (time) {
+    $scope.stopSound();
+	$scope.audio = new Audio("data/4000_audio_" + $scope.cd + "/" + $scope.storyIdx + 'b.mp3');
+	$scope.bPlayingVoca = true;
+	$scope.bPlayingFull = false;
+	$scope.audio.currentTime = time;
+	$scope.audio.play();
+	$scope.audio.addEventListener("ended", function(){
+	   $scope.resetAudioBtnUI(true);
+	});
+}
 
 $scope.backSound = function (sec) {
 	$scope.audio.currentTime = $scope.audio.currentTime + sec;
@@ -62,6 +85,7 @@ $scope.resetAudioBtnUI = function(isVoca)
 {
 	$scope.bPause=false;
     $scope.bPlayingFull=false;
+    $scope.bPlayingVoca=false;
 
     var loopRadio = 0;
     if (localStorage.hasOwnProperty("audio_loop")) {
@@ -69,7 +93,7 @@ $scope.resetAudioBtnUI = function(isVoca)
 	}
     if (loopRadio==='1') // loop
     {
-    	$scope.playFullSound($scope.storyIdx);
+    	$scope.playFullSound($scope.storyIdx,isVoca);
     } else if (loopRadio==='2') // play next
     {
     	var next = $scope.storyIdx + 1;
@@ -138,8 +162,6 @@ $scope.stopSound = function () {
 };
 
 $scope.fetchStory = function (idx, reset=true) {
-	MYLOG('fetchStory');
-	// when click 1.2.3..40
 	if (reset==true) 
 	{
 		$scope.resetFlag();

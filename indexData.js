@@ -2,28 +2,28 @@
 const INDEX_DATA =
 [
 {
-	unit:1,
-	title: "School Supplies",
-	en: "Watercolour n /ˈwɔː.təˌkʌl.ər/ Màu nước<br>\
-		Thumbtack n /ˈθʌm.tæk/ Đinh ghim<br>\
-		Textbook n /ˈtekst.bʊk/ Sách giáo khoa<br>\
-		Test Tube n. phr /ˈtest ˌtjuːb/ Ống nghiệm<br>\
-		Tape measure n. phr /ˈteɪp ˌmeʒ.ər/ Thước dây<br>\
-		Stencil n /ˈsten.səl/ Giấy nến<br>\
-		Stapler n /ˈsteɪ.plər/ Đồ dập ghim<br>\
-		Staple remover n. phr /ˈsteɪ.plər rɪˈmuː.vər/ Cái gỡ ghim bấm<br>\
-		Set Square n. phr /ˈset ˌskweər/ Ê-ke<br>\
-		Scotch Tape n. phr /ˌskɒtʃ ˈteɪp/ Băng dính trong suốt<br>\
-		Scissors n /ˈsɪz.əz/ Kéo<br>\
-		Ruler n /ˈruː.lər/ Thước<br>\
-		Ribbon n /ˈrɪb.ən/ Ruy-băng<br>\
-		Protractor n /prəˈtræk.tər/ Thước đo góc<br>\
-		Post-it note n. phr /ˈpəʊst.ɪt ˌnəʊt/ Giấy nhớ<br>\
-		Pin n /pɪn/ Đinh ghim, kẹp<br>\
-		Pencil n /ˈpen.səl/ Bút chì<br>\
-		Pencil Sharpener n. phr /ˈpen.səl ˌʃɑː.pən.ər/ Đồ gọt bút chì<br>\
-		Pencil Case n. phr /ˈpen.səl ˌkeɪs/ Hộp bút<br>\
-		Pen n /pen/ Bút mực<br>\
+unit:1,
+title: "School Supplies",
+en: "Watercolour n /ˈwɔː.təˌkʌl.ər/ Màu nước<br>\
+	Thumbtack n /ˈθʌm.tæk/ Đinh ghim<br>\
+	Textbook n /ˈtekst.bʊk/ Sách giáo khoa<br>\
+	Test Tube n. phr /ˈtest ˌtjuːb/ Ống nghiệm<br>\
+	Tape measure n. phr /ˈteɪp ˌmeʒ.ər/ Thước dây<br>\
+	Stencil n /ˈsten.səl/ Giấy nến<br>\
+	Stapler n /ˈsteɪ.plər/ Đồ dập ghim<br>\
+	Staple remover n. phr /ˈsteɪ.plər rɪˈmuː.vər/ Cái gỡ ghim bấm<br>\
+	Set Square n. phr /ˈset ˌskweər/ Ê-ke<br>\
+	Scotch Tape n. phr /ˌskɒtʃ ˈteɪp/ Băng dính trong suốt<br>\
+	Scissors n /ˈsɪz.əz/ Kéo<br>\
+	Ruler n /ˈruː.lər/ Thước<br>\
+	Ribbon n /ˈrɪb.ən/ Ruy-băng<br>\
+	Protractor n /prəˈtræk.tər/ Thước đo góc<br>\
+	Post-it note n. phr /ˈpəʊst.ɪt ˌnəʊt/ Giấy nhớ<br>\
+	Pin n /pɪn/ Đinh ghim, kẹp<br>\
+	Pencil n /ˈpen.səl/ Bút chì<br>\
+	Pencil Sharpener n. phr /ˈpen.səl ˌʃɑː.pən.ər/ Đồ gọt bút chì<br>\
+	Pencil Case n. phr /ˈpen.səl ˌkeɪs/ Hộp bút<br>\
+	Pen n /pen/ Bút mực<br>\
 Paper n /ˈpeɪ.pər/ Giấy<br>\
 Paper fastener n. phr /ˈpeɪ.pər ˈfɑːs.ən.ər/ Dụng cụ kẹp giấy<br>\
 Paper Clip n. phr /ˈpeɪ.pə ˌklɪp/ Kẹp giấy<br>\
@@ -70,8 +70,8 @@ Funnel n /ˈfʌn.əl/ Cái phễu\
 vi: ""
 },
 {
-	title:"Action",
-	en:"Pack v /pæk/ Bó, gói<br>\
+title:"Action",
+en:"Pack v /pæk/ Bó, gói<br>\
 Paint v /peint/ Quét sơn<br>\
 Paste v /peist/ Dán<br>\
 Pick v /pik/ Hái, nhổ<br>\
@@ -113,8 +113,8 @@ Throw v /θrəʊ/ Ném, quăng<br>\
 Tie v /tai/ Buộc, cột, trói"
 },
 {
-	title:"Daily Activities",
-	en:"Brush your teeth v. phr /brʌʃ ti:θ/ Đánh răng<br>\
+title:"Daily Activities",
+en:"Brush your teeth v. phr /brʌʃ ti:θ/ Đánh răng<br>\
 Buy v /bai/ Mua<br>\
 Comb the hair v. phr /koum ðə heə/ Chải đầu<br>\
 Cook v /kuk/ Nấu ăn<br>\
@@ -163,8 +163,8 @@ Watch television v. phr /wɔtʃ ‘teli,viʤn/ Xem tivi<br>\
 Work v /wə:k/ Làm việc"
 },
 {
-	title:"Sea",
-	en:"Sea n /siː/ Biển<br>\
+title:"Sea",
+en:"Sea n /siː/ Biển<br>\
 Ocean n /ˈəʊʃən/ Đại dương<br>\
 Wave n /weɪv/ Sóng<br>\
 Island n /ˈaɪlənd/ Hòn đảo<br>\
@@ -198,7 +198,7 @@ Turtle n /ˈtɜːtl/ Rùa biển<br>\
 Crab n /kræb/ Cua",
 },
 {
-	en:"Cardinal number n. phr /ˈkɑr·dən·əl ˈnʌm·bər/ Số đếm<br>\
+en:"Cardinal number n. phr /ˈkɑr·dən·əl ˈnʌm·bər/ Số đếm<br>\
 Ordinal number n. phr /ˈɔr·dən·əl ˈnʌm·bər/ Số thứ tự<br>\
 Decimal n /ˈdes.ɪ.məl/ Số thập phân<br>\
 Fraction n /ˈfræk.ʃən/ Phân số<br>\
@@ -218,11 +218,11 @@ Thousand n /ˈθaʊ.zənd/ Một nghìn<br>\
 Million n /ˈmɪl.jən/ Một triệu<br>\
 Billion n /ˈbɪl.jən/ Một tỷ<br>\
 Half n /hɑːf/ Một nửa",
-	title:"Number",
+title:"Number",
 },
 {
-	title:"Shopping",
-	en:"Customer n /ˈkʌs.tə.mər/ Khách hàng<br>\
+title:"Shopping",
+en:"Customer n /ˈkʌs.tə.mər/ Khách hàng<br>\
 Cashier n /kæʃˈɪər/ Nhân viên thu ngân<br>\
 Attendant n /əˈten.dənt/ Người phục vụ<br>\
 Manager n /ˈmæn.ɪ.dʒər/ Giám đốc, quản lý<br>\
@@ -267,8 +267,8 @@ Butcher n /ˈbʊtʃ.ər/ Người bán thịt<br>\
 ",
 },
 {
-	title:"Bed room",
-	en:"Lamp n /læmp/ Đèn<br>\
+title:"Bed room",
+en:"Lamp n /læmp/ Đèn<br>\
 Pillowcase n /ˈpɪl.əʊ.keɪs/ Bao gối<br>\
 Curtain n /ˈkɜː.tən/ Rèm<br>\
 Bed n /bed/ Giường<br>\
@@ -296,8 +296,8 @@ Light switch n /laɪt swɪtʃ/ Công tắc điện<br>\
 Chest of drawers n. phr /ˌtʃest əv ˈdrɔːz/ Tủ kéo"
 },
 {
-	title:"Friends",
-	en:"Classmate n /ˈklɑːs.meɪt/ Bạn cùng lớp<br>\
+title:"Friends",
+en:"Classmate n /ˈklɑːs.meɪt/ Bạn cùng lớp<br>\
 Schoolmate n /ˈskuːl.meɪt/ Bạn cùng trường<br>\
 Roommate n /ˈruːm.meɪt/ Bạn cùng phòng<br>\
 Soulmate n /ˈsəʊl.meɪt/ Tri kỷ<br>\
@@ -313,11 +313,12 @@ Friendship n /ˈfrend.ʃɪp/ Tình bạn<br>\
 Close adj /kləʊz/ Thân thiết",
 },
 {
-	title:"Kicken",
-	en:"Dishwasher n /ˈdɪʃˌwɒʃ.ər/ Máy rửa chén<br>\
+title:"Kitchen",
+en:"Dishwasher n /ˈdɪʃˌwɒʃ.ər/ Máy rửa chén<br>\
 Dish drainer n. phr /dɪʃ ˈdreɪ.nər/ Kệ để chén bát<br>\
+Ddishwashing liquid<br>\
 Steamer n /ˈstiː.mər/ Nồi hấp<br>\
-Colander n /ˈkɒl.ən.dər/ Cái chao<br>\
+Colander n /ˈkɒl.ən.dər/ Rây lọc<br>\
 Lid n /lɪd/ Nắp, vung<br>\
 Blender n /ˈblen.dər/ Máy xay sinh tố<br>\
 Pot n /pɒt/ Nồi<br>\
@@ -348,12 +349,37 @@ Grill n /ɡrɪl/ Vỉ nướng<br>\
 Tray n /treɪ/ Cái khay, cái mâm<br>\
 Whisk n /wɪsk/ Máy đánh trứng<br>\
 Knife n /naɪf/ Dao<br>\
-Spoon n /spuːn/ Muỗng, thìa",
+Spoon n /spuːn/ Muỗng, thìa\
+Apron /ˈeɪ.prən/ – Tạp dề<br>\
+Breadbasket /ˈbrɛdˌbæskət/ – Rổ<br>\
+Measuring cup /ˈmɛʒərɪŋ kʌp/ – Cốc đo<br>\
+Spice container /spaɪs kənˈteɪnər/ – Hộp gia vị<br>\
+Oven glove /ˈʌv.ən ˌɡlʌv/  – Găng tay lò nướng <br>\
+Napkin /ˈnæp.kɪn/ – Khăn ăn <br>\
+Chopsticks /ˈʧɑpˌstɪks/  – Đũa<br>\
+Rolling pin /ˈroʊ.lɪŋ ˌpɪn/  <br>\
+Measuring spoon  /ˈmɛʒərɪŋ spun/ – Muỗng (đo để nêm gia vị)<br>\
+Whisk /wɪsk/  – Đồ dùng để đánh trứng<br>\
+Wooden spoon /ˈwʊdən spun/ – Thìa gỗ<br>\
+Strainer /ˈstreɪ.nɚ/  – Lọc<br>\
+Steak hammer /steɪk ˈhæmər/ – Bít tết<br>\
+Mesh skimmer /mɛʃ ˈskɪmər/  – Lưỡi skimmer<br>\
+Cleaver /ˈkliː.vɚ/ – Chẻ<br>\
+Ladle /ˈleɪ.dəl/ – Muôi múc canh <br>\
+Knife /naɪf/ – Dao<br>\
+Kitchen shears /ˈkɪʧən ʃirz/  – Kéo làm bếp<br>\
+Fork /fɔːrk/  – Cái nĩa<br>\
+Cutlery /ˈkʌt.lɚ.i/  – Dao kéo<br>\
+Corkscrew /ˈkɔːrk.skruː/  – Đồ mở nắp chai<br>\
+Frying pan /ˈfraɪ.ɪŋ ˌpæn/  – Chảo chiên<br>\
+Pressure cooker /ˈpreʃ.ɚ ˌkʊk.ɚ/  – Nồi áp suất<br>\
+Casserole dish /ˈkæsəˌroʊl dɪʃ/  – Hầm món ăn\
+",
 }
 ,
 {
-	title:"Jewelry",
-	en:"Earring n /ˈɪə.rɪŋ/ Bông tai<br>\
+title:"Jewelry",
+en:"Earring n /ˈɪə.rɪŋ/ Bông tai<br>\
 Necklace n /ˈnek.ləs/ Dây chuyền<br>\
 Bracelet n /ˈbreɪ.slət/ Vòng tay<br>\
 Brooch n /brəʊtʃ/ Trâm cài<br>\
@@ -374,8 +400,8 @@ Tiepin n /ˈtaɪ.pɪn/ Ghim cà vạt<br>\
 Precious stone n. phr /ˌpreʃ.əs ˈstəʊn/ Đá quý",
 }
 ,{
-	title:"Environment",
-	en:"Land n /lænd/ Đất, đất đai<br>\
+title:"Environment",
+en:"Land n /lænd/ Đất, đất đai<br>\
 Pollute v /pəˈluːt/ Làm ô nhiễm<br>\
 Decompose v /ˌdiː.kəmˈpəʊz/ Phân hủy<br>\
 Balance n /ˈbæl.əns/ Sự cân bằng<br>\
@@ -398,8 +424,8 @@ Fauna n /ˈfɔː.nə/ Hệ động vật<br>\
 ",
 },
 {
-	title:"Living room",
-	en:"Drapes n /dreɪps/ Màn cửa<br>\
+title:"Living room",
+en:"Drapes n /dreɪps/ Màn cửa<br>\
 Cushion n /ˈkʊʃ.ən/ Đệm ngồi<br>\
 Sofa n /ˈsəʊ.fə/ Ghế sô-pha<br>\
 Rug n /rʌɡ/ Tấm thảm<br>\
@@ -433,8 +459,8 @@ Couch n /kaʊtʃ/ Trường kỷ<br>\
 Curtain n /ˈkɜː.tən/ Rèm cửa",
 },
 {
-	title:"Hospital",
-	en:"Radiologist n /ˌreɪ.diˈɒl.ə.dʒɪst/ Bác sĩ chụp X-quang<br>\
+title:"Hospital",
+en:"Radiologist n /ˌreɪ.diˈɒl.ə.dʒɪst/ Bác sĩ chụp X-quang<br>\
 Emergency room n. phr /ɪˈmɜː.dʒən.si ˌruːm/ Phòng cấp cứu<br>\
 Obstetrician n /ˌɒb.stəˈtrɪʃ.ən/ Bác sĩ sản khoa<br>\
 Operating room n. phr /ˈɒp.ər.eɪ.tɪŋ ˌruːm/ Phòng phẫu thuật<br>\
@@ -466,8 +492,8 @@ Coma n /ˈkəʊ.mə/ Sự hôn mê<br>\
 Common cold n. phr ˌkɒm.ən ˈkəʊld/ Bệnh cảm lạnh thông thường",
 }
 ,{
-	title:"Computer",
-	en:"Monitor n /ˈmɒn.ɪ.tər/ Màn hình<br>\
+title:"Computer",
+en:"Monitor n /ˈmɒn.ɪ.tər/ Màn hình<br>\
 Mouse pad n. phr /ˈmaʊs ˌpæd/ Tấm lót chuột<br>\
 Printer n /ˈprɪn.tər/ Máy in<br>\
 Scanner n /ˈskæn.ər/ Máy quét<br>\
@@ -506,8 +532,8 @@ Search v /sɜːtʃ/ Tìm kiếm (thông tin)<br>\
 Screen n /skriːn/ Màn hình",
 },
 {
-	title:"Housework",
-	en:"Dusting n /ˈdʌs.tɪŋ/ Việc quét bụi<br>\
+title:"Housework",
+en:"Dusting n /ˈdʌs.tɪŋ/ Việc quét bụi<br>\
 Cooking n /ˈkʊk.ɪŋ/ Việc nấu ăn<br>\
 Ironing n /ˈaɪə.nɪŋ/ Việc ủi đồ<br>\
 Sweep v /swiːp/ Quét dọn<br>\
@@ -528,8 +554,8 @@ Water the plants v. phr /ˈwɔː.tər ðəˈplɑːnt/ Tưới cây<br>\
 Clean the kitchen v. phr /kliːn ðə ˈkɪʧən/ Lau dọn bếp",
 },
 {
-	title:"Shop",
-	en:"Bakery n /ˈbeɪ.kər.i/ Tiệm bánh<br>\
+title:"Shop",
+en:"Bakery n /ˈbeɪ.kər.i/ Tiệm bánh<br>\
 Bookshop n /ˈbʊk.ʃɒp/ Tiệm sách<br>\
 Butcher's n /ˈbʊtʃ.ər/ Cửa hàng thịt<br>\
 Candy store n. phr /ˈkæn.di ˌstɔːr/ Cửa hàng kẹo<br>\
@@ -549,8 +575,8 @@ Bookstall n /ˈbʊk.stɔːl/ Quầy bán sách<br>\
 Sports center n. phr /ˈspɔːrts ˌsen.t̬ɚ/ Trung tâm thể thao",
 },
 {
-	title:"Entertainment",
-	en:"Play n /pleɪ/ Vở kịch<br>\
+title:"Entertainment",
+en:"Play n /pleɪ/ Vở kịch<br>\
 Circus n /ˈsɜː.kəs/ Rạp xiếc<br>\
 Stadium n /ˈsteɪ.di.əm/ Sân vận động<br>\
 Orchestra n /ˈɔː.kɪ.strə/ Ban nhạc, dàn nhạc<br>\
@@ -566,6 +592,155 @@ Chamber music n. phr /ˈtʃeɪm.bə ˌmjuː.zɪk/ Nhạc thính phòng<br>\
 Casino n /kəˈsiː.nəʊ/ Sòng bạc<br>\
 Pub n /pʌb/ Quán rượu<br>\
 Concert hall n. phr /ˈkɒn.sət ˌhɔːl/ Phòng hoà nhạc",
+},
+{
+title:"Travel",
+en:"Travel v /ˈtræv.əl/ Du lịch<br>\
+Travel agent n. phr /ˈtræv.əl ˌeɪ.dʒənt/ Đại lý du lịch<br>\
+Vacation n /veɪˈkeɪ.ʃən/ Kỳ nghỉ<br>\
+Flight n /flaɪt/ Chuyến bay<br>\
+Voyage n /ˈvɔɪ.ɪdʒ/ Chuyến hải hành<br>\
+Relax v /rɪˈlæks/ Thư giãn<br>\
+Cancel v /ˈkæn.səl/ Hủy bỏ<br>\
+Homestay n /ˈhəʊm.steɪ/ (dịch vụ) lưu trú tại nhà dân bản địa<br>\
+Souvenir n /ˌsuː.vənˈɪər/ Quà lưu niệm<br>\
+Travel sickness n. phr /ˈtræv.əl ˌsɪk.nəs/ Việc say tàu xe<br>\
+Journey n /ˈdʒɜː.ni/ Chuyến đi<br>\
+Peak season n. phr /piːk ˈsiː.zən/ Mùa cao điểm<br>\
+Route n /ruːt/ Tuyến đường<br>\
+Trip n /trɪp/ Chuyến đi (ngắn ngày)<br>\
+Excursion n /ɪkˈskɜː.ʃən/ Chuyến tham quan<br>\
+Luggage n /ˈlʌɡ.ɪdʒ/ Hành lý<br>\
+Tourist n /ˈtʊə.rɪst/ Du khách<br>\
+Ticket n /ˈtɪk.ɪt/ Vé<br>\
+Eager adj /ˈiː.ɡər/ Háo hức<br>\
+Sunglasses n /ˈsʌŋˌɡlɑː.sɪz/ Kính mát<br>\
+Safari n /səˈfɑː.ri/ Chuyến thám hiểm thiên nhiên",
+},
+{
+title:"Mid-autumn festival",
+en:"Mid-Autumn Festival n. phr /mɪd ˈɔː.təm ˈfes.tɪ.vəl/ Tết Trung thu<br>\
+Moon n /muːn/ Trăng<br>\
+Cake n /keɪk/ Bánh ngọt<br>\
+Toy n /tɔɪ/ Đồ chơi<br>\
+Mask n /mɑːsk/ Mặt nạ<br>\
+Banyan n /ˈbæn.jæn/ Cây đa<br>\
+Lantern n /ˈlæn.tən/ Lồng đèn<br>\
+Bamboo n /bæmˈbuː/ Tre<br>\
+Perform n /pəˈfɔːm/ Trình diễn, biểu diễn<br>\
+Celebrate n /ˈsel.ə.breɪt/ Kỷ niệm<br>\
+Family reunion n. phr /ˈfæm.əl.i ˌriːˈjuː.njən/ Họp mặt gia đình<br>\
+Rabbit n /ˈræb.ɪt/ Thỏ<br>\
+Lion dance n",
+},
+{
+title:"Sport",
+en:"Sport n /spɔːrt/ Thể thao<br>\
+Skiing n /ˈskiː.ɪŋ/ Trượt tuyết<br>\
+Ice skating n. phr /ˈaɪs ˌskeɪ.tɪŋ/ Trượt băng<br>\
+Horse racing n. phr /ˈhɔːrs ˌreɪ.sɪŋ/ Đua ngựa<br>\
+Running n /ˈrʌn.ɪŋ/ Chạy<br>\
+Walking n /ˈwɔː.kɪŋ/ Đi bộ, tản bộ<br>\
+Water sports n. phr /ˈwɔː.tər spɔːrts/ Thể thao dưới nước<br>\
+Boxing n /ˈbɒk.sɪŋ/ Quyền anh<br>\
+Swimming n /ˈswɪm.ɪŋ/ Bơi lội<br>\
+Football n /ˈfʊt.bɔːl/ Bóng đá<br>\
+Basketball n /ˈbæs.kɪtˌbɔːl/ Bóng rổ<br>\
+Badminton n /ˈbæd.mɪn.tən/ Cầu lông<br>\
+Tennis n /ˈtɛn.ɪs/ Quần vợt<br>\
+Table tennis n. phr /ˈteɪ.bəl ˈtɛn.ɪs/ Bóng bàn<br>\
+Baseball n /ˈbeɪs.bɔːl/ Bóng chày<br>\
+Cycling n /ˈsaɪ.klɪŋ/ Đua xe đạp, đạp xe<br>\
+Golf n /ɡɑːlf/ Đánh gôn<br>\
+Contact sport n. phr /ˈkɒn.tækt spɔːrt/ Thể thao tiếp xúc<br>\
+Water polo n. phr /ˈwɔː.tər ˈpoʊ.loʊ/ Bóng nước<br>\
+Archery n /ˈɑːr.tʃər.i/ Bắn cung<br>\
+Weightlifting n /ˈweɪtˌlɪf.tɪŋ/ Cử tạ<br>\
+Wrestling n /ˈrɛs.lɪŋ/ Đấu vật<br>\
+Bowling n /ˈboʊ.lɪŋ/ Bóng gỗ<br>\
+Lacrosse n /ləˈkrɒs/ Bóng vợt<br>\
+Hockey n /ˈhɒk.i/ Khúc côn cầu<br>\
+Referee n /ˌrɛf.əˈriː/ Trọng tài<br>\
+Dart n /dɑːrt/ Ném phi tiêu<br>\
+Synchronized swimming n. phr /ˈsɪŋ.krə.naɪzd ˈswɪm.ɪŋ/ Bơi nghệ thuật<br>\
+SEA Games n. phr /ˈsiː ˌɡeɪmz/ Đại hội Thể thao Đông Nam Á<br>\
+Host v /hoʊst/ Đăng cai, tổ chức<br>\
+Wushu n /ˈwuː.ʃuː/ (môn) võ wushu<br>\
+Sportsmanship n /ˈspɔːrts.mənˌʃɪp/ Tinh thần thể thao<br>\
+Captain n /ˈkæp.tən/ Đội trưởng<br>\
+Cross-country n /ˌkrɒsˈkʌn.tri/ Chạy việt dã",
+},
+{
+title:"Hometown",
+en:"Village n /ˈvɪl.ɪdʒ/ Ngôi làng<br>\
+Countryside n /ˈkʌn.tri.saɪd/ Nông thôn<br>\
+Cottage n /ˈkɒt.ɪdʒ/ Nhà tranh<br>\
+Winding adj /ˈwaɪn.dɪŋ/ Quanh co, uốn khúc<br>\
+Well n /wel/ Giếng<br>\
+Buffalo n /ˈbʌf.ə.ləʊ/ Con trâu<br>\
+Field n /fiːld/ Cánh đồng<br>\
+Canal n /kəˈnæl/ Kênh<br>\
+River n /ˈrɪv.ər/ Sông<br>\
+Pond n /pɒnd/ Ao<br>\
+Folk music n. phr /ˈfoʊk ˌmju·zɪk/ Nhạc dân gian<br>\
+Farm n /fɑːm/ Trang trại<br>\
+Plow v /plaʊ/ Cày<br>\
+Agriculture n /ˈæɡ.rɪ.kʌl.tʃər/ Nông nghiệp<br>\
+Boat n /bəʊt/ Thuyền<br>\
+Peaceful adj /ˈpiːs.fəl/ Yên bình<br>\
+Bay n /beɪ/ Vịnh<br>\
+Hill n /hɪl/ Ngọn đồi<br>\
+Forest n /ˈfɒr.ɪst/ Rừng<br>\
+Mountain n /ˈmaʊn.tɪn/ Núi<br>\
+Port n /pɔːt/ Bến cảng<br>\
+Lake n /leɪk/ Hồ<br>\
+Sea n /siː/ Biển<br>\
+Sand n /sænd/ Cát<br>\
+Valley n /ˈvæl.i/ Thung lũng<br>\
+Waterfall n /ˈwɔː.tə.fɔːl/ Thác nước<br>\
+Barn n /bɑːn/ Kho thóc<br>\
+Harvest n /ˈhɑː.vɪst/ Vụ gặt<br>\
+Cattle n /ˈkæt.əl/ Gia súc<br>\
+Rural adj /ˈrʊə.rəl/ (thuộc) nông thôn<br>\
+Cliff n /klɪf/ Vách đá<br>\
+Landscape n /ˈlænd.skeɪp/ Phong cảnh<br>\
+Terraced house n. phr /ˈrəʊˌhaʊs/ Dãy nhà<br>\
+View n /vjuː/ Khung cảnh, quang cảnh<br>\
+",
+},
+{
+title:"Wedding",
+en:"Bride n /braɪd/ Cô dâu<br>\
+Vow n /vaʊ/ Lời thề<br>\
+Groomsman n /ˈɡruːmz.mən/ Phù rể<br>\
+Groom n /ɡruːm/ Chú rể<br>\
+Tuxedo n /tʌkˈsiː.dəʊ/ Áo ximôckinh<br>\
+Party n /ˈpɑː.ti/ Bữa tiệc<br>\
+Wedding n /ˈwed.ɪŋ/ Đám cưới<br>\
+Wedding card n. phr /ˈwed.ɪŋ kɑːd/ Thiệp mời đám cưới<br>\
+Reception n /rɪˈsep.ʃən/ Tiệc chiêu đãi<br>\
+Champagne n /ʃæmˈpeɪn/ Rượu sâm panh<br>\
+Bouquet n /buˈkeɪ/ Bó hoa<br>\
+Married adj /ˈmær.id/ Đã kết hôn<br>\
+Newlywed n /ˈnjuː.li.wed/ Người mới cưới<br>\
+Cake n /keɪk/ Bánh ngọt<br>\
+Ring n /rɪŋ/ Nhẫn<br>\
+Emblem n /ˈem.bləm/ Biểu tượng<br>\
+Band n /bænd/ Ban nhạc<br>\
+Congratulation n /kənˌɡrætʃ.əˈleɪ.ʃən/ Lời chúc mừng<br>\
+Jewelry n /ˈdʒuː.əl.ri/ Trang sức<br>\
+Wine n /waɪn/ Rượu vang<br>\
+Dowry n /ˈdaʊ.ri/ Của hồi môn<br>\
+Honeymoon n /ˈhʌn.i.muːn/ Tuần trăng mật<br>\
+Anniversary n /ˌæn.ɪˈvɜː.sər.i/ Ngày kỷ niệm<br>\
+Brother-in-law n /ˈbrʌð.ə.rɪn.lɔː/ Anh/em rể, anh/em chồng, anh/em vợ<br>\
+Sister-in-law n /ˈsɪs.tə.rɪn.lɔː/ Chị/em dâu, chị/em chồng, chị/em vợ<br>\
+Engaged v /ɪnˈɡeɪdʒd/ Đã đính ước, hứa hôn<br>\
+Couple n /ˈkʌp.əl/ Cặp đôi, đôi vợ chồng<br>\
+Husband n /ˈhʌz.bənd/ Chồng<br>\
+Wife n /waɪf/ Vợ<br>\
+Ceremony n /ˈser.ɪ.mə.ni/ Nghi lễ, nghi thức<br>\
+Betroth v /bɪˈtrəʊð/ Hứa hôn, đính hôn",
 }
 
 

@@ -16,7 +16,6 @@
 
   <link rel="stylesheet" type="text/css" href="../../styles.css">
 
-  <script type="text/javascript" src="read_data/complete_read_data.js"></script>
   <script type="text/javascript" src="ctrl_read.js"></script>
 
 </head>
@@ -34,8 +33,8 @@
 		    <a href ng-click="acc_click($index)">{{$index+1}}. Unit {{story.unit}}: {{story.title}}</a>
 		  </h6>
 		  <div class="accordion-content" ng-show="acc_isShow($index)">
-		     <p ng-bind-html="story.en" ng-if="!bShowVi"></p>
-		     <p ng-bind-html="story.vi" ng-if="bShowVi"></p>
+		     <p ng-bind-html="story.enShow" ng-if="!bShowVi"></p>
+		     <p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
 		     <div class="mt-1" ng-if="story.vocaNotes">
 	           	<hr/>
 	        		<p  class="mb-1" ng-repeat="note in story.vocaNotes">

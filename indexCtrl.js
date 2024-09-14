@@ -26,22 +26,6 @@ $scope.acc_click = function (id) {
 		$scope.acc=id;
 };
 
-$scope.range = function(min, max, step) {
-    step = step || 1;
-    var input = [];
-    for (var i = min; i <= max; i += step) {
-        input.push(i);
-    }
-    return input;
-};
-
-
- $scope.storyIdx = 0;
- $scope.bPlayingFull = false;
- $scope.bPause = false;
-
- $scope.audio;
- $scope.currentTime = 0;
 
 $scope.searchData = [];
 $scope.searchDataResult = [];
@@ -52,38 +36,18 @@ $scope.units = [
 	{'title':"", 'num': 1},
 ];
 
-$scope.resetFlag = function () {
-	$scope.bPlayingFull = false;
-	$scope.bPause = false;
-	$scope.bShowVi = 0;
-	$scope.bHiddenWords = 0;
-}	
 
 
 $scope.preProcess = function () {
 	for (var k = 0; k < kSTORIES.length; k++) {
 		story = $scope.stories[k];
-		if (story.en) 
-		{	
+		if (story.en) {	
 			var arr = story.en.split('<br>');
 			story.numOfWord = arr.length;
 			$scope.searchData = $scope.searchData.concat(arr);
 		}
-	} // for
-}
-
-function validateWord(word) 
-{	
-	word = word.trim();
-	if (word.length < 4) return false;
-	let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
-	for (var i = 0; i < arr.length; i++) {
-		bList = arr[i];
-		if (word.toLowerCase().indexOf(bList) >= 0) return false;
 	}
-	return true;
 }
-
 
 $scope.searchTyping = function() {
 	$scope.searchDataResult = [];
@@ -97,6 +61,11 @@ $scope.searchTyping = function() {
     		$scope.searchDataResult.push(dataVN);
     	}
     }
+};
+
+$scope.clearSearch = function () {
+	$scope.search = '';
+	$scope.searchDataResult = [];
 };
 
 $scope.loadData = function () {

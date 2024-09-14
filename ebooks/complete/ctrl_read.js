@@ -1,4 +1,7 @@
 
+document.write('<script src="../../global_js.js" type="text/javascript"></script>');
+document.write('<script src="read_data/complete_read_data.js" type="text/javascript"></script>');
+
 function MYLOG(msg) {
 //	console.log(msg);
 }
@@ -6,10 +9,10 @@ function MYLOG(msg) {
 var app = angular.module("myApp", ['ngSanitize']);
 app.controller("ctrl", function($scope, $timeout) {
 
-var kSTORIES = bridge_read_data;
+var kSTORIES = complete_read_data;
 radioCDChange = function (cd) {
 	switch (cd) {
-		case 1: kSTORIES = bridge_read_data; break;
+		case 1: kSTORIES = complete_read_data; break;
 	}
 	localStorage.setItem("bri_complete_cd", cd);
 	$scope.cd = cd;
@@ -125,32 +128,10 @@ $scope.stopSound = function () {
 };
 
 $scope.fetchStory = function () {
-	MYLOG('fetchStory');
-
 	for (var k = 0; k < kSTORIES.length; k++) {
 		story = $scope.stories[k];
-		if (story.voca) 
-		{
-			var vocas = story.voca.split(',');
-			story.vocaNotes = [];
-			for (var i = 0; i < vocas.length; i++) {
-				voca = vocas[i].trim();
-				var temp = voca;
-				if (temp.indexOf("[") >= 0) {
-					temp = temp.replace(/\s*\|\s*/g, ", ");
-					temp = temp.replace(/\s*\[\s*/g, " : ");
-					temp = temp.replace(/\s*\]\s*/g, "");
-					story.vocaNotes.push(temp);
-				}
-				voca = voca.replace(/\[.*\]/g, '').trim();
-				var regex = new RegExp(`\\b${voca}` , 'g')
-				story.en = story.en.replace(regex, '<b>' + voca + '</b>');
-			}
-		}
+		story = processStory(story);
 	} // for
-
-	
-
 }
 
 function validateWord(word) 

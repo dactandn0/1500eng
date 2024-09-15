@@ -92,17 +92,12 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 }
 
 // 4000 words
-function hLightWords(dataJSON) {
-	var result = dataJSON;
-	for (var i = 0; i < result.length; i++) {
-		var longTxt = result[i].en;
-		for (var k = 0; k < arrUNCOUNT_NOUNS.length; k++) {
-			word = arrUNCOUNT_NOUNS[k];
-			longTxt = longTxt.replace(word, ITALIC_RED_TAG_BEGIN + word + ITALIC_RED_TAG_END);
-			console.log(longTxt)
-		}
+function hLightWords(text) {
+	if (text.trim()===0) return '';
+	if (UNCOUNT_NOUNS.indexOf(text) != -1){
+		return ITALIC_RED_TAG_BEGIN + text + ITALIC_RED_TAG_END;
 	}
-	return result;
+	return text;
 }
 
 function processStory (story) {

@@ -60,13 +60,20 @@ $scope.preProcess = function () {
 	for (var k = 0; k < kSTORIES.length; k++) {
 		story = $scope.stories[k];
 		if (story.en) {	
-			story.en = story.en.replaceAll('|n|', '<small class="text-info mx-2">n</small>');
-			story.en = story.en.replaceAll('|a|', '<small class="text-success">a</small>');
-			story.en = story.en.replaceAll('|adv|', '<small class="text-success font-weight-bold">adv</small>');
-			story.en = story.en.replaceAll('|v|', '<small class="text-warning">v</small>');
-			var word = story.en.split('<br>');
-			story.numOfWord = word.length;
-			$scope.searchData = $scope.searchData.concat(word);
+
+			var words = story.en.split('<br>');
+			story.numOfWords = words.length;
+			for (var i = 0; i < words.length; i++) {
+				var word = words[i];
+				var textEn = word.split('|')[0];
+				story.en = story.en.replace(textEn,hLightWords(textEn.trim()));
+			}
+			story.en = story.en.replaceAll('|n|', '<label class="text-info ml-2">n</label>');
+			story.en = story.en.replaceAll('|a|', '<label class="text-success ml-2">a</label>');
+			story.en = story.en.replaceAll('|adv|', '<label class="text-success font-weight-bold ml-2">adv</label>');
+			story.en = story.en.replaceAll('|v|', '<label class="text-warning ml-2">v</label>');
+			$scope.searchData = $scope.searchData.concat(words);
+
 		}	
 	}
 }

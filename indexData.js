@@ -4,7 +4,7 @@ const INDEX_DATA =
 {
 unit:1,
 title: "School Supplies",
-en: "Watercolour |n| /ˈwɔː.təˌkʌl.ər/ |  Màu nước<br>\
+en: "knowledge |n| /ˈwɔː.təˌkʌl.ər/ |  Màu nước<br>\
 Thumbtack |n| /ˈθʌm.tæk/ |  Đinh ghim<br>\
 Textbook |n| /ˈtekst.bʊk/ |  Sách giáo khoa<br>\
 Test Tube |n| /ˈtest ˌtjuːb/ |  Ống nghiệm<br>\
@@ -44,7 +44,7 @@ Felt pen |n| /felt pen/ |  Bút dạ<br>\
 Rubber |n| /ˈrʌb.ər/ |  Cục tẩy<br>\
 Duster |n| /ˈdʌs.tər/ |  Khăn lau bảng<br>\
 Dossier |n| /ˈdɒs.i.eɪ/ |  Hồ sơ<br>\
-Dictionary |a| /ˈdɪk.ʃən.ər.i/ |  Từ điển<br>\
+Dictionary |n| /ˈdɪk.ʃən.ər.i/ |  Từ điển<br>\
 Desk |n| /desk/ |  Bàn học<br>\
 Crayon |n| /ˈkreɪ.ɒn/ |  Bút chì màu<br>\
 Computer |n| /kəmˈpjuː.tər/ |  Máy tính bàn<br>\
@@ -86,12 +86,12 @@ Go home |v| /gou houm/ |  Về nhà<br>\
 Go shopping |v| /gouˈʃɒp.ɪŋ/ |  Đi mua sắm<br>\
 Go to bed |v| /gou tə bed/ |  Đi ngủ<br>\
 Go to the movies |v| /gou tə ðəˈmuː.vi/ |  Đi xem phim<br>\
-Have |a| bath |v| /hæv ə ‘bɑ:θ/ |  Đi tắm<br>\
-Have |a| nap |v| /ˌhæv.ə næp/ |  Ngủ ngắn<br>\
+Have a bath |v| /hæv ə ‘bɑ:θ/ |  Đi tắm<br>\
+Have a nap |v| /ˌhæv.ə næp/ |  Ngủ ngắn<br>\
 Have breakfast |v| /ˌhævˈbrek.fəst/ |  Ăn sáng<br>\
 Have dinner |v| /ˌhævˈdɪn.ər/ |  Án tối<br>\
 Have lunch |v| /ˌhæv lʌntʃ/ |  Ăn trưa<br>\
-Have |a| shower |v| /hæv ə ˈʃaʊər/ |  Tắm vòi hoa sen<br>\
+Have a shower |v| /hæv ə ˈʃaʊər/ |  Tắm vòi hoa sen<br>\
 Listen to music |v| /ˈlɪs.ən tuːˈmjuː.zɪk/ |  Nghe nhạc<br>\
 Make breakfast |v| /meik ‘brekfəst/ |  Làm bữa ăn sáng<br>\
 Make up |v| /meik Λp/ |  Trang điểm<br>\
@@ -207,7 +207,7 @@ Shopping mall |n| /ˈʃɒp.ɪŋ ˌmɔːl/ |  Trung tâm mua sắm<br>\
 Grocery store |n| /ˈɡrəʊ.sər.i ˌstɔːr/ |  Cửa hàng tạp hóa<br>\
 Convenience store |n| /kənˈviː.ni.əns ˌstɔːr/ |  Cửa hàng tiện lợi<br>\
 Bargain |n| /ˈbɑː.ɡɪn/ |  Mặc cả<br>\
-Refund n/v /ˈriː.fʌnd/ |  Hoàn lại, trả lại<br>\
+Refund |n,v| /ˈriː.fʌnd/ |  Hoàn lại, trả lại<br>\
 Brochure |n| /ˈbrəʊ.ʃər/ |  Tập quảng cáo<br>\
 Liquor store |n| /ˈlɪk.ə ˌstɔːr/ |  Quán rượu<br>\
 Drugstore |n| /ˈdrʌɡ.stɔːr/ |  Tiệm thuốc<br>\

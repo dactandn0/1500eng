@@ -41,7 +41,7 @@
       <div class="text-sm ml-2" ng-repeat="name in searchDataResult track by $index"><span ng-bind-html="name"></span><br></div>
 
     	<div ng-repeat="story in stories track by $index" class="my-2" >
-		  <h6 class="accordion">
+		  <h6 class="accordion scroll">
 		    <a href ng-click="acc_click($index)"><span ng-if="$index<9">0</span>{{$index+1}}. {{story.title}} &nbsp&nbsp&nbsp&nbsp[{{story.numOfWords}}: words]</a>
 		  </h6>
 		  <div class="accordion-content" ng-show="acc_isShow($index)">

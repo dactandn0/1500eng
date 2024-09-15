@@ -224,7 +224,8 @@ function validateWord(word)
 	return true;
 }
 
-function _scrollIntoView(ele) {
+function _scrollIntoView(idx) {
+var ele = document.getElementsByClassName("scroll")[idx];
 setTimeout(function () {
            ele.scrollIntoView({
                behavior: "smooth",

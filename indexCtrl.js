@@ -46,10 +46,7 @@ $scope.acc_click = function (id) {
 		story.en = story.en.replace(textEn, hLightWords(textEn.trim()));
 	}
 
-
-	var ele = document.getElementsByClassName("accordion")[id];
-	_scrollIntoView(ele);
-	
+	_scrollIntoView(id);
 };
 
 

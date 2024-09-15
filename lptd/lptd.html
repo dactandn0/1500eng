@@ -79,9 +79,8 @@
 	          		<p ng-bind-html="story.viShow" ng-if="bShowVi && showText""></p>
 	          		<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi && showText"></p>
 	          	</div>
-
-	        	<div class="mt-1 p-3" ng-if="story.vocaNotes.length">
-	           	<hr/>
+	          		<hr>	
+	        	<div class="px-2" ng-if="story.vocaNotes.length">
 	        		<p class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
 	          			{{note}}
 	          		</p>

@@ -132,6 +132,10 @@ $scope.fetchStory = function (idx, reset=true) {
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
+	$scope.story.enShow = $scope.story.enShow.replaceAll('Candidate', '<b>Candidate</b>');
+	$scope.story.viShow = $scope.story.viShow.replaceAll('Candidate', '<b>Candidate</b>');
+	$scope.story.enShow = $scope.story.enShow.replaceAll('Examiner', '<b>Examiner</b>');
+	$scope.story.viShow = $scope.story.viShow.replaceAll('Examiner', '<b>Examiner</b>');
 }
 
 $scope.loadData = function () {

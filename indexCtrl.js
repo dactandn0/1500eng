@@ -36,19 +36,6 @@ $scope.units = [
 	{'title':"", 'num': 1},
 ];
 
-
-
-$scope.preProcess = function () {
-	for (var k = 0; k < kSTORIES.length; k++) {
-		story = $scope.stories[k];
-		if (story.en) {	
-			var arr = story.en.split('<br>');
-			story.numOfWord = arr.length;
-			$scope.searchData = $scope.searchData.concat(arr);
-		}
-	}
-}
-
 $scope.searchTyping = function() {
 	$scope.searchDataResult = [];
 	if ($scope.search.length < 2)return;
@@ -67,6 +54,24 @@ $scope.clearSearch = function () {
 	$scope.search = '';
 	$scope.searchDataResult = [];
 };
+
+$scope.preProcess = function () {
+
+	for (var k = 0; k < kSTORIES.length; k++) {
+		story = $scope.stories[k];
+		if (story.en) {	
+			story.en = story.en.replaceAll('|n|', '<small class="text-info mx-2">n</small>');
+			story.en = story.en.replaceAll('|a|', '<small class="text-success">a</small>');
+			story.en = story.en.replaceAll('|adv|', '<small class="text-success font-weight-bold">adv</small>');
+			story.en = story.en.replaceAll('|v|', '<small class="text-warning">v</small>');
+			var word = story.en.split('<br>');
+			story.numOfWord = word.length;
+			$scope.searchData = $scope.searchData.concat(word);
+		}	
+	}
+}
+
+
 
 $scope.loadData = function () {
 	$scope.preProcess();

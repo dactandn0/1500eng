@@ -1,4 +1,5 @@
-
+const ITALIC_RED_TAG_BEGIN = '<i class="text-danger">'
+const ITALIC_RED_TAG_END = '</i>'
 
 
 // console.log("uncount_nouns.js")
@@ -22,7 +23,7 @@ reply,visit,deal,keep,report,voice,decay,kick,request,vote,decrease,kiss,rhyme,w
 last,row,wear,dislike,laugh,ruin,whip,display,lead,rule,whisper,dive,leap,run,whistle,divorce,level,sail,wick,dock,license,sand,wink,double,lie,saw,wire,doubt,lift,scare,wish,drain,light,scratch,work,\
 draw,limit,screw,worry,dream,link,search,wrap,dress,load,season,wreck,drill,loan,sense,drink,lock,shampoo,yawn,drive,look,shape,yield,duck,love,share,zone";
 
-const UNCOUNT_NOUNS = "advice,information,knowledge,imagination,creativity,education,intelligence,love,luck,music,air,cement,clothing,energy,glue,gold,\
+const UNCOUNT_NOUNS = "advice,information,knowledge,imagination,creativity,education,intelligence,love,luck,music,air,cement,clothing,energy,glue,gold,coral,\
 iron,money,oil,paper,salt,sand,steel,wood,water,gasoline,steam,sugar,vinegar,beauty,confidence,happiness,justice,peace,respect,safety,strength,time,\
 furniture,equipment,machinery,tools,weapons,lightning,rain,snow,wind,medicine,accommodation,advertising,beer,bread,childhood,chocolate,coffee,courage,\
 fame,food,freedom,fun,hair,health,homework,juice,luggage,milk,news,poetry,progress,research,rice,rubbish,tea,transport,travel,whisky,work,aggression,\
@@ -90,6 +91,20 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	return graph;
 }
 
+// 4000 words
+function hLightWords(dataJSON) {
+	var result = dataJSON;
+	for (var i = 0; i < result.length; i++) {
+		var longTxt = result[i].en;
+		for (var k = 0; k < arrUNCOUNT_NOUNS.length; k++) {
+			word = arrUNCOUNT_NOUNS[k];
+			longTxt = longTxt.replace(word, ITALIC_RED_TAG_BEGIN + word + ITALIC_RED_TAG_END);
+			console.log(longTxt)
+		}
+	}
+	return result;
+}
+
 function processStory (story) {
 	if (story.en.trim().length == 0) return story;
 	story.enShow = '';
@@ -115,7 +130,7 @@ function processStory (story) {
 	for (let i = 0; i < words.length; i++) {
 	  	var word = words[i];
 
-		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , '<i class="text-danger">', '</i>' );
+		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , ITALIC_RED_TAG_BEGIN, ITALIC_RED_TAG_END );
 		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
 
 	  	// make ....
@@ -190,6 +205,17 @@ function removeVietnameseTones(str) {
 	    return str;
 }
 
+
+function getLastWord(splitChar, string) {
+	var str = string.split(splitChar);
+	return str[str.length - 1];
+}
+
+function deleteLastWord(splitChar, string) {
+	if (!string.includes(splitChar)) return string;
+	var lastW = getLastWord(splitChar, string)
+	return string.replace(splitChar + lastW, "");
+}
 
 function validateWord(word) 
 {	

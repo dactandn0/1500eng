@@ -872,7 +872,7 @@ G: Mình ước mình có thể đi cùng bạn! Gia đình tôi lại đi biể
 B: Đừng lo, Julie. Tôi sẽ chụp thật nhiều ảnh và mua cho bạn một món quà lưu niệm.<br>\
 G: Cảm ơn bạn! Tôi sẽ nhặt một số vỏ sò từ bãi biển cho bạn.<br>\
 B: Cảm ơn bạn!",
-	voca:"tour,historical,museum,seashore,souvenir,site,construction,seashell,the,Eiffel,Tower,Euro rail"
+voca:"tour,historical,museum,seashore,souvenir,site,construction,seashell,the,Eiffel,Tower,Euro rail"
 },
 {
 	en:"Unit 38 New Mexico<br>\
@@ -895,7 +895,7 @@ Mexico.<br>\
 G: Phần tôi thích nhất là đến thăm Carlsbad Caverns. Có 30 dặm hang động! Trong một hang động, chúng tôi phải đội mũ có đèn để có thể nhìn thấy trong bóng tối. Đôi khi chúng tôi phải bò qua những đường hầm rất hẹp bằng tay và đầu gối.<br>\
 B: Bạn không sợ sao?<br>\
 G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm sau. Bạn nên đi cùng tôi!",
-voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern[a],Texas,Arizona,funny"
+voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern[a.],Texas,Arizona,funny"
 },
 {
 	en:"Unit 39 A Good Way to Travel<br>\

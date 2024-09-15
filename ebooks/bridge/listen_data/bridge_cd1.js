@@ -555,6 +555,6 @@ Kinga: Một tòa nhà đặc biệt ư? Vâng, Nhà hát Opera Sydney rất đ�
 Tôi biết gì về nó? Vâng, đó là một tòa nhà thực sự ngoạn mục. Nhà thiết kế đến từ Đan Mạch. Tôi nghĩ tên ông ấy là Jorn Utzon.\
 Ông ấy đã thay đổi kế hoạch xây dựng tòa nhà nhiều lần và công trình xây dựng mất rất nhiều thời gian - tôi nghĩ là mười lăm năm! Tại sao nó lại đặc biệt đối với tôi? Tôi thích hình dạng của mái nhà. Nó hoàn toàn độc đáo.\
 Nó thật tuyệt vời vào ban ngày và trông cũng rất ấn tượng vào ban đêm. Mọi người trên khắp thế giới coi nó là một địa danh của Úc. Nó đại diện cho đất nước tôi và tôi rất tự hào về nó.",
-voca:""
+voca:"represent"
 }, {}
 ];

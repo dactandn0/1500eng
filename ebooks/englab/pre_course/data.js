@@ -123,7 +123,7 @@ On this day, S + V<br>\
 This day is special for me because I can show my love for my loved ones.",
 vi:"",
 voca:"vividly[sống động],Lion Dance,neighborhood,longevity[tuổi thọ],prosperity,represent,feel about,ingredient,Star-shaped,Carp-shaped,lantern,lunar,calendar,cherry blossoms,apricots,wish,\
-vast,array,receive,occasion,close-knit,whale,strengthen,tighten,take,place on,On this day,loved one"
+represent,vast,array,receive,occasion,close-knit,whale,strengthen,tighten,take,place on,On this day,loved one,"
 },
 {
 title:"Thank of a famous person you admire",

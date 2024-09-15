@@ -224,4 +224,13 @@ function validateWord(word)
 	return true;
 }
 
+function _scrollIntoView(ele) {
+setTimeout(function () {
+           ele.scrollIntoView({
+               behavior: "smooth",
+               block: "start",
+           });
+      }, 100);
+}
+
 preprocess();

@@ -47,6 +47,7 @@ $scope.bHiddenWords = 0;
 $scope.audio;
 $scope.currentTime = 0;
 
+
 $scope.units = [
 	{'title':"Nature", 'num': 1},
 	{'title':"Science", 'num':6},

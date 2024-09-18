@@ -10,8 +10,8 @@ en:"1. S + V + too + adj/adv + (for S.O) + to do S.TH: (quá....để cho ai là
 - This box is so heavy that I cannot take it.<br>\
 - He speaks so soft that we can’t hear anything.<br>\
 3. It + V + such + (a/an) + N(s) + that + S + V: (quá... đến nỗi mà...)<br>\
-- It is such a heavy box that I cannot take it.<br>\
-- It is such interesting books that I cannot ignore them at all.<br>\
+- It's such a heavy box that I cannot take it.<br>\
+- It's such interesting books that I cannot ignore them at all.<br>\
 4. S + V + adj/ adv + enough + (for S.O) + to do S.TH : (Đủ... cho ai đó làm gì...)<br>\
 - She's old enough to get married.<br>\
 - They're intelligent enough for me to teach them English.<br>\
@@ -85,11 +85,11 @@ It’s time + to do S.TH<br>\
 keep/ imagine/ fancy + V-ing<br>\
 - I always practise speaking English everyday.<br>\
 31. It's + Adj + ( for S.B ) + to do S.TH<br>\
-- It's difficult for old people to learn English. ( Người có tuổi học tiếng Anh thì khó )<br>\
+- It's difficult for old people to learn English.<br>\
 32. To be interested in + N / V_ing ( Thích cái gì / làm cái gì )<br>\
-- We're interested in reading books on history. ( Chúng tôi thích đọc sách về lịch sử )<br>\
+- We're interested in reading books on history.<br>\
 33. To be bored with ( Chán làm cái gì )<br>\
-- We're bored with doing the same things everyday. ( Chúng tôi chán ngày nào cũng làm những công việc lặp đi lặp lại )<br>\
+- We're bored with doing the same things everyday.<br>\
 34. It’s the first time S.B have ( has ) + P2 S.TH ( Đây là lần đầu tiên ai làm cái gì )<br>\
 - It’s the first time we have visited this place. ( Đây là lần đầu tiên chúng tôi tới thăm nơi này )<br>\
 35. enough + N ( đủ cái gì ) + ( to do S.TH )<br>\
@@ -98,7 +98,7 @@ keep/ imagine/ fancy + V-ing<br>\
 - I’m not rich enough to buy a car. ( Tôi không đủ giàu để mua ôtô )<br>\
 37. too + Adj + to do S.TH ( Quá làm sao để làm cái gì )<br>\
 - I’m to young to get married. ( Tôi còn quá trẻ để kết hôn )<br>\
-38. To want S.B to do S.TH = To want to have S.TH + PII<br>\
+38. To want S.B to do S.TH = To want to have S.TH + Vp.p<br>\
 ( Muốn ai làm gì ) ( Muốn có cái gì được làm )<br>\
 - She wants someone to make her a dress. ( Cô ấy muốn ai đó may cho cô ấy một chiếc váy )<br>\
 She wants to have a dress made. ( Cô ấy muốn có một chiếc váy được may )<br>\
@@ -106,7 +106,7 @@ She wants to have a dress made. ( Cô ấy muốn có một chiếc váy đượ
 - It’s time we went home. ( Đã đến lúc tôi phải về nhà )<br>\
 40. It’s not necessary for S.B to do S.TH = S.B don’t need to do S.TH<br>\
 ( Ai không cần thiết phải làm gì ) doesn’t have to do S.TH<br>\
-- It is not necessary for you to do this exercise.<br>\
+- It's not necessary for you to do this exercise.<br>\
 41. To look forward to V_ing ( Mong chờ, mong đợi làm gì )<br>\
 - We're looking forward to going on holiday.<br>\
 42. To provide S.B from V_ing ( Cung cấp cho ai cái gì )<br>\
@@ -129,19 +129,18 @@ S + V + so + Adv<br>\
 1. The exercise is so difficult that no one can do it.<br>\
 2. He spoke so quickly that I couldn’t understand him.<br>\
 50. S + be + such + ( Adj ) + N + that + S + V.<br>\
-- It is such a difficult exercise that noone can do it.<br>\
-51. It is ( very ) kind of S.B to do S.TH ( Ai thật tốt bụng / tử tế khi làm gì)<br>\
-- It is very kind of you to help me.<br>\
+- It's such a difficult exercise that noone can do it.<br>\
+51. It's ( very ) kind of S.B to do S.TH ( Ai thật tốt bụng / tử tế khi làm gì)<br>\
+- It's very kind of you to help me.<br>\
 52. To find it + Adj + to do S.TH<br>\
 - We find it difficult to learn English.<br>\
 53. To make sure of S.TH ( Bảo đảm điều gì )<br>\
 To make sure that + S + V<br>\
 1. I have to make sure of that information.<br>\
 2. You have to make sure that you’ll pass the exam.<br>\
-54. It takes ( S.B ) + thời gian + to do S.TH ( Mất ( của ai ) bao nhiêu thời gian để làm gì)<br>\
+54. It takes ( S.B ) + Time + to do S.TH ( Mất ( của ai ) bao nhiêu Time để làm gì)<br>\
 - It took me an hour to do this exercise.<br>\
-55. To spend + time/money + on S.TH ( Dành thời gian / tiền bạc vào cái gì<br>\
-doing S.TH làm gì )<br>\
+55. To spend + time/money + on N/V_ing ( Dành thời gian / tiền bạc vào cái gì<br>\
 - We spend a lot of time on TV/watching TV.<br>\
 56. To have no idea of S.TH = don’t know about S.TH ( Không biết về cái gì )<br>\
 - I have no idea of this word = I don’t know this word.<br>\
@@ -149,7 +148,7 @@ doing S.TH làm gì )<br>\
 not to do S.TH không làm gì )<br>\
 - Our teacher advises us to study hard.<br>\
 58. To plan to do S.TH ( Dự định / có kế hoạch làm gì ) - intend<br>\
-- We planed to go for a piSic.<br>\
+- We planed to go for a walk.<br>\
 59. To invite S.B to do S.TH ( Mời ai làm gì )<br>\
 - They invited me to go to the cinema.<br>\
 60. To offer S.B S.TH ( Mời / đề nghị ai cái gì )<br>\
@@ -161,25 +160,20 @@ not to do S.TH không làm gì )<br>\
 - He always keeps promises.<br>\
 63. To be able to do S.TH = To be capable of + V_ing ( Có khả năng làm gì )<br>\
 - I’m able to speak English = I'm capable of speaking English.<br>\
-64. To be good at ( + V_ing ) S.TH ( Giỏi ( làm ) cái gì )<br>\
-- I’m good at ( playing ) tennis.<br>\
+64. <br>\
 65. To prefer S.TH to S.TH  (Thích cái gì hơn cái gì )<br>\
 doing S.TH to doing S.TH làm gì hơn làm gì<br>\
 - We prefer spending money than earning money.<br>\
 66. To apologize for doing S.TH ( Xin lỗi ai vì đã làm gì )<br>\
 - I want to apologize for being rude to you.<br>\
-( Tôi muốn xin lỗi vì đã bất lịch sự với bạn )<br>\
 67. Had ('d ) better do S.TH ( Nên làm gì )<br>\
 Had ('d )not do S.TH ( Không nên làm gì )<br>\
 1. You'd better learn hard.<br>\
-( Bạn nên học chăm chỉ )<br>\
 2. You'd better not go out.<br>\
-( Bạn không nên đi ra ngoài )<br>\
 68. <br>\
 Would ('d ) rather do S.TH  (Thà làm gì)<br>\
 Would ('d ) rather not do S.TH đừng làm gì<br>\
-- I’d rather stay at home.<br>\
-I’d rather not say at home.<br>\
+- I’d rather (not) stay at home.<br>\
 69. Would ( ‘d ) rather S.B did S.TH ( Muốn ai làm gì )<br>\
 - I’d rather you ( he / she ) stayed at home today.<br>\
 70. To suggest S.B ( should ) do S.TH ( Gợi ý ai làm gì )<br>\
@@ -198,12 +192,11 @@ I’d rather not say at home.<br>\
 - I remember seeing this film.<br>\
 77. To remember to do ( Nhớ làm gì ) ( chưa làm cái này )<br>\
 - Remember to do your homework.<br>\
-78. To have S.TH + PII ( Có cái gì được làm )<br>\
-- I’m going to have my house repainted.<br>\
-(thuê người sơn nhà)<br>\
+78. To have S.TH + Vp.p ( Có cái gì được làm )<br>\
 = To have S.B do S.TH ( Thuê ai làm gì )<br>\
+- I’m going to have my house repainted. (thuê người sơn nhà)<br>\
 - I’m going to have the garage repair my car.<br>\
-= I’m going to have my car repaired.<br>\
+- I’m going to have my car repaired.<br>\
 79. To be busy doing S.TH ( Bận rộn làm gì )<br>\
 - We're busy preparing for our exam.<br>\
 80. To mind doing S.TH ( Phiền làm gì )<br>\
@@ -591,7 +584,17 @@ Insect |n| /ˈɪn.sekt/  Côn trùng<br>\
 Reproduction |n| /ˌriː.prəˈdʌk.ʃən/  Sự sinh sản<br>\
 Wildlife |n| /ˈwaɪld.laɪf/  Động vật hoang dã<br>\
 Sewage |n| /ˈsuː.ɪdʒ/  Nước thải<br>\
-Fauna |n| /ˈfɔː.nə/  Hệ động vật",
+Fauna |n| /ˈfɔː.nə/  Hệ động vật<br>\
+pollution |n| /pǝ'lu:fn/ sự ô nhiễm<br>\
+Deforestation |n| /di: fori'stein/ nạn phá rừng<br>\
+Climate change |n| /'klamat tfernd3/ sự biến đổi khí hậu<br>\
+Natural resource |n| /'nætfral ri's :s/ tài nguyên tự nhiên<br>\
+Conservation |n| /konsǝ'vein/ sự bảo tồn<br>\
+Desertification |n| /di z3:tifi'kexfn/ sự sa mạc hóa<br>\
+Endangered |a| /in'deindzǝd/ gặp nguy hiểm<br>\
+Sustainability |n| /sa steina 'bulati/ sự bền vững<br>\
+Global warming |n| /glaubl 'wo:min/ sự ấm lên toàn cầu<br>\
+Extinction |n| /Ik'stinkfn/ sự tuyệt chủng [extinct a.]"
 },
 {
 title:"Living room",
@@ -649,7 +652,7 @@ Injection |n| /ɪnˈdʒek.ʃən/  Việc tiêm thuốc<br>\
 Calcium |n| /ˈkæl.si.əm/  Canxi<br>\
 Hospital |n| /ˈhɒs.pɪ.təl/  Bệnh viện<br>\
 Crutch |n| /krʌtʃ/  Cái nạng<br>\
-Wheelchair |n| ˈwiːl.tʃeər/  Xe lăn<br>\
+Wheelchair |n| /ˈwiːl.tʃeər/  Xe lăn<br>\
 Paramedic |n| /ˌpær.əˈmed.ɪk/  Nhân viên y tế<br>\
 Stretcher |n| /ˈstretʃ.ər/  Cáng cứu thương<br>\
 Rush |n| /rʌʃ/  Đưa đi, chuyển đi (nhanh)<br>\
@@ -983,6 +986,124 @@ tsunami |n| /tsuːˈnɑːmi/ sóng thần<br>\
 landslide |n| /ˈlændslaɪd/ sạt lở đất<br>\
 volcanic eruption |n| /vɑːlˈkænɪk ɪˈrʌpʃn/ núi lửa phun<br>\
 flood |n| /flʌd/ lũ lụt",
+},
+{
+	title:"Character",
+	en:"anxious |a| /'ænkfǝs/ lo lắng<br>\
+naughty |a| /'no:ti/ nghịch ngợm<br>\
+stubborn |a| /'stɅbǝn/ bướng bỉnh<br>\
+impatient |a| /Imipenfant/ thiếu kiên nhẫn<br>\
+sensitive |a| /'sensitiv/ nhạy cảm<br>\
+intelligent |a| /In'talidant/ thông minh<br>\
+nice |a| /nais/ tốt bụng<br>\
+emotional |a| /I'mǝufǝnl/ đa cảm<br>\
+bad-tempered |a| /'bæd temped/ nóng tính<br>\
+nervous |a| /'nз:vǝs/ lo lắng<br>\
+distracted |a| /dis'træktrd/ bị phân tâm<br>\
+dishonest |a| /dis'onist/ không trung thực<br>\
+rude |a| /ru:d/ thô lỗ<br>\
+discreet |a| /dis'kri:t/ kín đáo<br>\
+crazy |a| /'kreizi/ khùng<br>\
+cheeky |a| /'tfi:ki/ trơ tráo<br>\
+cheerful |a| /'tfiǝful/ vui tươi<br>\
+energetic |a| / Ena'd3etik/ đầy năng lượng<br>\
+untidy |a| /Ʌn'tardi/ luộm thuộm<br>\
+pessimistic |a| /pεsi mistik/ bi quan<br>\
+optimistic |a| / ppti'mestik/ lạc quan<br>\
+unpleasant |a| /^n'plεznt/ khó chịu<br>\
+talkative |a| /'tɔ:kǝtiv/ lắm lời<br>\
+calm |a| /ka:m/ điềm tĩnh<br>\
+passionate |a| /'pæfǝnit/ đam mê<br>\
+proud |a| /praud/ tự hào<br>\
+sincere |a| /sin'SIǝ/ chân thành<br>\
+lazy |a| /'lerzi/ lười biếng <br>\
+funny |a| /'fɅni/ vui tính<br>\
+honest |a| /'pnist/ thật thà<br>\
+fearless |a| /'fiǝlis/ dũng cảm<br>\
+unfriendly |a| /n'frendli/ khó gần<br>\
+generous |a| /'denares/ hào phóng<br>\
+compassionate |a| /kamipæfant/ giàu lòng trắc ẩn<br>\
+warm-hearted |a| /wom-hatid/ ấm áp<br>\
+impolite |a| / Impalart/ bất lịch sự <br>\
+disobedient |a| / dss='bidiant/ không vâng lời<br>\
+straightforward |a| /strert'f:wad/ thẳng thắn<br>\
+selfish |a| /'sεlfif/ ích kỷ<br>\
+stupid /'stju:pid/ đần độn<br>\
+loving /'lAVIN/ đáng yêu<br>\
+reliable /ri'laiǝbl/ đáng tin cậy <br>\
+scared /skeǝd/ sợ hãi<br>\
+conscientious / konfr'anJas/ tận tâm<br>\
+good-tempered / god'tampad/ hòa nhã<br>\
+careful /'keaful/ cẩn thận<br>\
+gentle /'dzεntl/ lịch lãm<br>\
+enthusiastic /n0ju:z'æstik/ nhiệt tình<br>\
+dull /dɅl/ đần độn<br>\
+faithful /'fereful/ chung thủy <br>\
+kind /kaind/ tốt bụng<br>\
+courageous /kǝ'reidzǝs/ can đảm<br>\
+loyal /'bial/ trung thành<br>\
+modest /'mpdist/ khiêm tốn<br>\
+tidy /'taidi/ gọn gàng<br>\
+confident /'konfidǝnt/ tự tin<br>\
+unmerciful /Ʌn'mз:SIful/ nhẫn tâm<br>\
+attentive /ǝ'tεntiv/ ân cần <br>\
+imaginative /'mædginativ/ giàu trí tưởng tượng<br>\
+plucky /'plɅki/ dũng cảm<br>\
+patient /'perfant/ kiên nhẫn<br>\
+impatient /Im'perfǝnt/ nóng vội<br>\
+easy-going /'i:zi gǝvin/ dễ dãi<br>\
+careless /'keǝlis/ cẩu thả<br>\
+messy /'mεsi/ bừa bộn<br>\
+hard-working /'ha:d w3:kin/ chăm chỉ<br>\
+polite /pǝ'lart/ lịch sự<br>\
+creative /kri(:)'eitiv/ sáng tạo<br>\
+broad-minded /bb:d-'mandid/ nghĩ rộng<br>\
+placid /'plæsid/ điềm tĩnh<br>\
+jealous /'dzεlǝs/ ghen tuông<br>\
+helpful /'helpful/ hữu ích <br>\
+persistent /pǝ'sistant/ kiên trì<br>\
+sensible /'sɛnsǝbl/ lý trí<br>\
+rational /'ræfǝnl/ lý trí<br>\
+reserved /ri'zз:vd/ kín đáo<br>\
+self-confident /self-konfident/ tự tin<br>\
+bossy /'bpsi/ hống hách<br>\
+blackguardly /'blæga:dli/ đều cảng<br>\
+silly /'sili/ ngớ ngẩn<br>\
+shy /Jai/ nhút nhát<br>\
+determined /di'tз:mind/ kiên định<br>\
+sociable /'sǝufǝbl/ hòa đồng<br>\
+worried /'wɅrid/ lo lắng<br>\
+thoughtful /0:tful/ chu đáo<br>\
+humble /'hɅmbl/ khiêm tốn<br>\
+friendly /'frendli/ thân thiện<br>\
+frank /frænk/ thẳng thắn<br>\
+obedient /ǝ'bi:diǝnt/ vâng lời",
+},
+{
+	title:"Many/much/some/no most",
+	en:"many + N đếm số nhiều<br>\
+much + N ko đếm<br>\
+<br>\
+(a) few +  N đếm số nhiều<br>\
+(a) little +  N ko đếm<br>\
+<br>\
+a great deal of +  N ko đếm<br>\
+a large number of + N đếm số nhiều<br>\
+<br>\
+every + N đếm số ít  + V_số ít<br>\
+<br>\
+each + N đếm số ít<br>\
+each + the/these/those. + N số nhiều<br>\
+each + us/you/them  <br>\
+each đứng 1 mình<br>\
+	each ....  + V_số ít<br>\
+<br>\
+both + the/these/those. + N số nhiều<br>\
+both + us/you/them <br>\
+both ....  + V_số nhiều<br>\
+<br>\
+all/most/some/any/no + N đếm | ko đếm<br>\
+a lot of / lots of + N đếm | ko đếm",
 }
 
 

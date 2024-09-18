@@ -2,7 +2,7 @@
 const bridge_cd1 = [
 {
 	en: 
-	"Track 1.1<br>\
+	"1.T1.1<br>\
 Апа: Hello, Sergei<br>\
 Sergei: Hi, Апа! How are you?<br>\
 Апа: I'm fine, thanks. And you?<br>\
@@ -14,7 +14,7 @@ Eva: Are уоu а new student?<br>\
 Sergei: Yes, I am,<br>\
 Eva: I'm а пеw student too!",
 	vi: 
-	'Track 1.1<br>\
+	'1.T1.1<br>\
 Ana: Xin chào, Sergei<br>\
 Sergei: Xin chào, Sergei! Bạn khỏe không?<br>\
 Ana: Tôi khỏe, cảm ơn. Còn bạn thì sao?<br>\
@@ -28,7 +28,7 @@ Eva: Tôi cũng là sinh viên mới!'
 },
 {
 	en: 
-	"Track 1.2<br>\
+	"1.T1.2<br>\
 Fouad: Hello. I'm а new student. I'm here for the пеw students meeting.<br>\
 Agnes: Hi! Welcome to O-Week! Whаt's your subject?<br>\
 Fоuаd: Chemistry. I'm in the science department.<br>\
@@ -54,7 +54,7 @@ Fоuаd: I'd like to go, What about you, Yibo?<br>\
 Yibo: Yes, please!<br>\
 Agnes: ОК, thаt's great. Now, lеt's just wait for а few mоrе students to arrive and then we can start оur tour of the campus!",
 	vi: 
-	"Track 1.2<br>\
+	"1.T1.2<br>\
 Fouad: Xin chào. Tôi là sinh viên mới. Tôi đến đây để tham dự buổi họp của sinh viên mới.<br>\
 Agnes: Xin chào, Chào mừng đến với Tuần lễ-O! Môn học của bạn là gì?<br>\
 Fouad: Hóa học. Tôi học khoa khoa học.<br>\
@@ -82,29 +82,7 @@ Agnes: Ồ, tuyệt quá. Bây giờ, chúng ta hãy đợi thêm vài sinh viê
 ,voca:"campus,Barbeque,Berlin,Australia,carnival,union,Beijing,informal,host",
 },
 {
-	en:"Track 1.3<br>\
-Fouad, this is Yibo. Yibo, this is Fouad, Yibo is а science student too.<br>\
-Hi, Yibo. Nice to meet уоu.<br>\
-Hello, Fouad. Nice to meet you too."
-,
-vi:"Track 1.3<br>\
-Fouad, đây là Yibo. Yibo, đây là Fouad, Yibo cũng là sinh viên khoa học.<br>\
-Xin chào, Yibo. Rất vui được gặp bạn.<br>\
-Xin chào, Fouad. Rất vui được gặp bạn."
-},
-{
-en:"Track 1.4<br>\
-/п/ what /eil паmе /ai/ I", 
-vi:"Track 1.4<br>\/п/ what /eil паmе /ai/ I"
-},
-{
-	en:"Track 1.5<br>\
-from - nice - make - day - on - my - not - they - fine",
-vi:'Track 1.5<br>\
-từ - đẹp - làm - trời - trên - của tôi - không phải - họ - ổn'
-},
-{
-	en:"Track 1.6<br>\
+	en:"1.T1.6<br>\
 Hassan: Excuse me, are you Etsuko?<br>\
 Etsuko: Yes, I am.<br>\
 Hassan: Remember me? At the tour of the university - on Wednesday?<br>\
@@ -126,7 +104,7 @@ Etsuko: Is there a desk?<br>\
 Hassan: No, there isn't but there's a small table for my laptop. I go to the university library when I want to study. And there aren't any bookshelves so all my books are under the sofa. It's not ideal! What about you, Estuko? Where are you?<br>\
 Etsuko: I'm in a room in a student hall. It's a single room. It's a bit small but there's everything I need. There's a big desk for my laptop, there's a lamp and there are bookshelves so there's lots of space for all my books. I love reading! There's a small sofa too - it's very comfortable! The best thing is that it's very quiet and I can see the park from my window!<br>\
 Hassan: I want to find a room like yours!",
-vi:"Track 1.6<br>\
+vi:"1.T1.6<br>\
 Hassan: Xin lỗi, bạn là Etsuko phải không?<br>\
 Etsuko: Vâng, đúng rồi.<br>\
 Hassan: Nhớ tôi không? Trong chuyến tham quan trường đại học - vào thứ tư?<br>\
@@ -149,19 +127,9 @@ Hassan: Không, không có nhưng có một chiếc bàn nhỏ để tôi đặt
 Etsuko: Tôi ở trong một căn phòng trong ký túc xá sinh viên. Đó là một căn phòng đơn. Nó hơi nhỏ nhưng có mọi thứ tôi cần. Có một chiếc bàn lớn để tôi đặt máy tính xách tay, có một chiếc đèn và có giá sách nên có nhiều chỗ cho tất cả sách của tôi. Tôi thích đọc sách! Có một chiếc ghế sofa nhỏ nữa - rất thoải mái! Điều tuyệt nhất là nó rất yên tĩnh và tôi có thể nhìn thấy công viên từ cửa sổ của mình! <br>\
 Hassan: Tôi muốn tìm một căn phòng như phòng của bạn!",
 voca:"memory,sofa,university,tour,shared flat,bookshelves,Turkey,Iran,Saudi Arabia,student hall,comfortable,centre,at the moment,lots of space,quiet",
-
 },
 {
-	en:"Track 1.7<br>\
-My ideal rооm to study in? It's mу bedroom at home. It's а big rооm and it's blue. Blue is а very саlm colour. There's а big window, so it's very bright. \
-Тhеre are three bookshelves, there's а large desk fоr mу laptop and there's а red sofa, It's а good rооm to study in because it's very quiet and it's very tidy!"
-,vi:"Track 1.7<br>\
-Căn phòng lý tưởng để học của tôi là gì? Đó là phòng ngủ ở nhà tôi. Đó là một căn phòng lớn và có màu xanh. Màu xanh là một màu rất dễ chịu. Có một cửa sổ lớn, vì vậy rất sáng.\
- Có ba giá sách, có một chiếc bàn lớn để đặt máy tính xách tay và một chiếc ghế sofa màu đỏ. Đó là một căn phòng tốt để học vì rất yên tĩnh và rất gọn gàng!"
-
-},
-{
-	en:"Track 1.8<br> \
+	en:"2.T1.8<br> \
 Etsuko: Hi Ahmed! How are you?<br>\
 Ahmed: OK, but I'm freezing. It's minus 10 degrees today! <br>\
 Etsuko: Yes, I know it's very cold, Ahmed. But, it is January and Canada is the coldest country in the world!<br>\
@@ -182,7 +150,7 @@ Etsuko: I've got a red one you can have. Come on, Ahmed! I really want you to me
 Ahmed: Who's he?<br>\
 Etsuko: He's a snowman! And he wears a bright red hat too!"
 ,
-vi:"Track 1.8<br>\
+vi:"2.T1.8<br>\
 Etsuko: Chào Ahmed! Bạn khỏe không?<br>\
 Ahmed: Ổn, nhưng tôi đang lạnh cóng. Hôm nay là âm 10 độ! <br>\
 Etsuko: Vâng, tôi biết là rất lạnh, Ahmed. Nhưng, ĐANG LÀ tháng Một và Canada là quốc gia lạnh nhất thế giới!<br>\
@@ -204,25 +172,7 @@ Etsuko: Anh ấy là người tuyết! Và anh ấy cũng đội một chiếc m
 voca:"carnival[festival],canoe[/kəˈnuː/],race,palace,coat,scarf"
 },
 {
-	en:"Track 1.9<br>\
-I really don't like winter. <br>\
-I like playing sport.<br>\
-I love it.<br>\
-I hate watching sport in the cold!",
-vi:"Bài 1.9<br>\
-Tôi thực sự không thích mùa đông. <br>\
-Tôi thích chơi thể thao.<br>\
-Tôi thích lắm.<br>\
-Tôi ghét xem thể thao trong thời tiết lạnh!"
-},
-{
-	en:"Track 1.10<br>\
-awful <br>interesting<br>fantastic<br>exciting<br>beautiful<br>boring <br>amazing<br>colourful<br>freezing<br>delicious",
-vi:"Track 1.10<br>\
-khủng khiếp <br>thú vị<br>tuyệt vời<br>thú vị<br>đẹp<br>nhàm chán<br>tuyệt vời<br>sặc sỡ<br>lạnh cóng<br>ngon"
-},
-{
-	en:"Track 1.11<br>\
+	en:"2.T1.11<br>\
 Fouad: Hi, Jing! Do you want to go to the Festival of the Winds next weekend?<br>\
 Jing: The Festival of the Winds? What is that exactly?<br>\
 Fouad: It's a kite festival! Look at the poster! It's a festival for people who love kites. It's only once a year, and lasts for one day. I don't want to miss it!<br>\
@@ -241,7 +191,7 @@ Jing: That's true. We can take a train to Bondi Junction and then catch a bus.<b
 Fouad: Do you want to check the website and find out? The festival starts at 11am - we don't want to be late.<br>\
 Jing: Good idea!",
 voca:"exactly,kite,poster,entertainment programme,exhibition,dance,workshop,stall,catch a bus",
-vi:"Track 1.11<br>\
+vi:"2.T1.11<br>\
 Fouad: Chào Jing! Bạn có muốn đến Lễ hội Gió vào cuối tuần tới không?<br>\
 Jing: Lễ hội Gió ư? Chính xác thì đó là gì?<br>\
 Fouad: Đó là lễ hội thả diều! Hãy nhìn tấm áp phích này! Đó là lễ hội dành cho những người yêu thích diều. Lễ hội chỉ diễn ra một lần trong năm và kéo dài trong một ngày. Tôi không muốn bỏ lỡ!<br>\
@@ -261,17 +211,7 @@ Fouad: Bạn có muốn kiểm tra trang web và tìm hiểu không? Lễ hội 
 Jing: Ý tưởng hay!",
 },
 {
-	en:"Track 1.12<br>\
-Leah: An important day for me? Oh, that's easy! Singapore National Day is really special. It's on the 9th of August. \
-What happens? Well, I spend the day with my family and friends. We watch the National Day parade on a live webcast! \
-It's very colourful! Then we eat delicious chicken rice. I like it very much! I wear national costume too - \
-we call it Peranakan dress - it's very beautiful! Why is the day special? Well, it's not just a public holiday to me - it's a day when I can celebrate everything about Singapore and be happy!",
-vi:"Track 1.12<br>\
-Leah: Một ngày quan trọng đối với tôi ư? Ồ, dễ thôi! Ngày Quốc khánh Singapore thực sự đặc biệt. Ngày này là ngày 9 tháng 8. Chuyện gì xảy ra? Vâng, tôi dành cả ngày này với gia đình và bạn bè. Chúng tôi xem diễu hành Ngày Quốc khánh trên webcast trực tiếp! Rất nhiều màu sắc! Sau đó, chúng tôi ăn cơm gà ngon tuyệt. Tôi rất thích nó! Tôi cũng mặc trang phục dân tộc - chúng tôi gọi là trang phục Peranakan - rất đẹp! Tại sao ngày này lại đặc biệt? Vâng, đối với tôi, đó không chỉ là ngày lễ - đó là ngày tôi có thể ăn mừng mọi thứ về Singapore và vui vẻ!"
-,voca:"National Day,parade,celebrate"
-},
-{
-	en:"Track 1.13<br>\
+	en:"3.T1.13<br>\
 Katrin: Excuse me, Li Bo? Are you busy?<br>\
 Li Bo: Not really. I'm trying to write an essay.<br>\
 Katrin: I'd like to ask you a few questions.<br>\
@@ -298,7 +238,7 @@ Katrin: So, you feel good?<br>\
 Li Bo: Yes.<br>\
 Katrin: Thanks very much for your help, Li Bo.<br>\
 Li Bo: No problem."
-, vi:"Track 1.13<br>\
+, vi:"3.T1.13<br>\
 Katrin: Xin lỗi, Li Bo? Bạn có bận không?<br>\
 Li Bo: Không thực sự. Tôi đang cố viết một bài luận.<br>\
 Katrin: Tôi muốn hỏi bạn một vài câu hỏi.<br>\
@@ -328,7 +268,7 @@ Li Bo: Không vấn đề gì."
 ,voca:"first-year student,confident,shy,somewhere,conversation,describe,talkative,tutor,in front of a lot of people"
 },
 {
-	en:"Track 1.14<br>\
+	en:"3.T1.14<br>\
 Grant: Thank you for coming today, Pilar.<br>\
 Pilar: My pleasure.<br>\
 Grant: Well, let's start. So the job is with Student Services - we're part of the university that tries to help the students with any problems.<br>\
@@ -362,7 +302,7 @@ Pilar: No, I don't. But I do have experience leading projects.<br>\
 Grant: So, do you feel that you can manage a team?<br>\
 Pilar: Yes, I'm sure I can manage a team well. I have all the skills to do it and I'm sure I can do a good job.<br>\
 Grant: OK, well let's talk more about your project management...",
-vi:"Track 1.14<br>\
+vi:"3.T1.14<br>\
 Grant: Cảm ơn bạn đã đến hôm nay, Pilar.<br>\
 Pilar: Rất vui được phục vụ bạn.<br>\
 Grant: Vâng, chúng ta hãy bắt đầu. Vậy thì công việc là với Dịch vụ sinh viên - chúng tôi là một phần của trường đại học cố gắng giúp đỡ sinh viên giải quyết mọi vấn đề.<br>\
@@ -398,21 +338,7 @@ Pilar: Vâng, tôi chắc chắn mình có thể quản lý một nhóm tốt. T
 Grant: Được rồi, chúng ta hãy nói thêm về quản lý dự án của bạn."
 },
 {
-	en:"Track 1.15<br>\
-1. I can manage a team..<br>\
-2. Harold can't get a job. 3 Can you speak French?.<br>\
-4. Yes, I can..<br>\
-5. Pilar can help too.<br>\
-6 Can you take an IELTS test?",
-vi:"Track 1.15.<br>\
-1 Tôi có thể quản lý một nhóm..<br>\
-2 Harold không thể xin được việc. 3 Bạn có thể nói tiếng Pháp không?.<br>\
-4 Có, tôi có thể..<br>\
-5 Pilar cũng có thể giúp.<br>\
-6. Bạn có thể làm bài kiểm tra IELTS không?"
-} , {} , {}, {}, {}, {}, {},
-{
-	en:"Track 1.22.<br>\
+	en:"4.T1.22.<br>\
 Dr Sawyer: Good afternoon, everyone. Today Esra is talking about changes in education. Are you ready?.<br>\
 Esra: Yes, I think so..<br>\
 Dr Sawyer: OK, Esra, let's start.<br>\
@@ -429,7 +355,7 @@ computer science and engineering there are more men than women. In computer scie
 John: And is this just in Britain?.<br>\
 Esra: No, this is the same in many other countries and in Arab countries too. So one of the main changes in education\
  is the rising number of women and the fact that women are doing well- this is something we can be proud of."
-,vi:"Track 1.22.<br>\
+,vi:"4.T1.22.<br>\
 Tiến sĩ Sawyer: Chào buổi chiều, mọi người. Hôm nay Esra sẽ nói về những thay đổi trong giáo dục. Các bạn đã sẵn sàng chưa?.<br>\
 Esra: Vâng, tôi nghĩ là vậy.<br>\
 Tiến sĩ Sawyer: Được rồi, Esra, chúng ta hãy bắt đầu.<br>\
@@ -446,9 +372,9 @@ Esra: Vâng, nghiên cứu cho thấy có nhiều phụ nữ hơn trong hầu h�
 John: Và điều này chỉ xảy ra ở Anh thôi sao?.<br>\
 Esra: Không, điều này cũng xảy ra ở nhiều quốc gia khác và ở các quốc gia Ả Rập nữa. Vì vậy, một trong những thay đổi chính \
 trong giáo dục là số lượng phụ nữ ngày càng tăng và thực tế là phụ nữ đang làm tốt - đây là điều chúng ta có thể tự hào."
-} , {},{},
+},
 {
-	en:"Track 1.25.<br>\
+	en:"4.T1.25.<br>\
 Examiner: Can you tell me what you're studying at the moment, Adel?<br>\
 Adel: At the moment I am an undergraduate student. I'm studying biology at King Saud University in Riyadh in Saudi Arabia. It's a good place to learn\
 and I'm really enjoying my course. Biology is about living things. I'm interested in biology because I want to understand how life started. <br>\
@@ -471,9 +397,9 @@ Giám khảo: Esra, bạn có thể cho tôi biết bạn đang học gì không
 Esra: Tôi đến từ Oman, nhưng tôi đang học tại Đại học Glasgow ở Scotland. Đây là nơi tuyệt vời để học. Tôi đang học thạc sĩ về tâm lý học giáo dục.\
 Tâm lý học giáo dục là ngành nghiên cứu về cách mọi người học trong giáo dục. Tôi muốn tìm hiểu lý do tại sao có nhiều phụ nữ hơn trong giáo dục. Tôi thấy điều đó thật hấp dẫn.",
 voca:"masters in psychology educational psychology"
-}, {},
+},
 {
-	en:"Track 1.27<br>\
+	en:"5.T1.27<br>\
 Tao: Sorry, can you help me?<br>\
 Karen: Sure.<br>\
 Tao: I'm trying to find the Business School.<br>\
@@ -491,7 +417,7 @@ Pilar: Yes.<br>\
 Lee: OK. Look over there at that huge, tall, concrete building. That's the library. It's next to the art gallery.<br>\
 Pilar: Yes, I can see it.<br>\
 Lee: The information desk is at the front door. Pilar: Thanks.",
-vi:"Track 1.27<br>\
+vi:"5.T1.27<br>\
 Tao: Xin lỗi, bạn có thể giúp tôi không?<br>\
 Karen: Chắc chắn rồi.<br>\
 Tao: Tôi đang cố tìm Trường Kinh doanh.<br>\
@@ -512,7 +438,7 @@ Lee: Quầy thông tin ở ngay cửa trước. Pilar: Cảm ơn.",
 voca:""
 },
 {
-	en:"Track 1.28<br>\
+en:"5.T1.28<br>\
 Alan: Good evening and welcome to Great Designs, where we look at some amazing buildings. I'm Alan Davies, and tonight I'm talking to Professor Gu Ying about a building that wasn't here for a long time. In fact it was only here for six months but the ideas for the building are still with us today. Professor Gu Ying works in London, and knows all about the building of the Seed Cathedral - which many people visited in the Shanghai Expo. Professor Gu, welcome to the programme... How did the project start?<br>\
 Gu: Well, the seed bank in London was the starting point. We collected seeds from all over the world for the future. Then, in 2010 Thomas Heatherwick decided to use the seeds for the UK building in the Shanghai World Fair in China.<br>\
 Alan: It was an amazing building.<br>\
@@ -527,7 +453,7 @@ Gu: Yes, it was. It was very peaceful and quiet inside the cathedral. It was ver
 Gu: Well, that's one of the best things about the whole project. After the fair, all the rods were presented to schools in China and the UK to keep. It really was a very great success.<br>\
 Alan: That's very good to know. Thank you very much for talking to me about it, Professor Gu.<br>\
 Gu: Thank you, Alan.",
-vi:"Track 1.28<br>\
+vi:"5.T1.28<br>\
 Alan: Chào buổi tối và chào mừng đến với Great Designs, nơi chúng ta sẽ xem một số tòa nhà tuyệt đẹp. Tôi là Alan Davies, và tối nay tôi sẽ nói chuyện với Giáo sư Gu Ying về một tòa nhà đã không còn tồn tại trong một thời gian dài. Trên thực tế, tòa nhà chỉ tồn tại trong sáu tháng nhưng ý tưởng về tòa nhà vẫn còn tồn tại cho đến ngày nay. Giáo sư Gu Ying làm việc tại London và biết tất cả về tòa nhà Seed Cathedral - nơi mà nhiều người đã đến thăm tại Triển lãm Thượng Hải. Giáo sư Gu, chào mừng đến với chương trình... Dự án bắt đầu như thế nào?<br>\
 Gu: Vâng, ngân hàng hạt giống ở London là điểm khởi đầu. Chúng tôi đã thu thập hạt giống từ khắp nơi trên thế giới cho tương lai. Sau đó, vào năm 2010, Thomas Heatherwick quyết định sử dụng hạt giống cho tòa nhà của Vương quốc Anh tại Hội chợ Thế giới Thượng Hải ở Trung Quốc.<br>\
 Alan: Đó là một tòa nhà tuyệt đẹp.<br>\
@@ -543,18 +469,18 @@ Gu: Vâng, đó là một trong những điều tuyệt vời nhất của toàn
 Alan: Thật tuyệt khi biết điều đó. Cảm ơn Giáo sư Gu rất nhiều vì đã nói chuyện với tôi về điều đó.<br>\
 Gu: Cảm ơn anh, Alan.",
 voca:""
-} , {}, {},
+} ,
 {
-	en:"Track 1.31<br>\
+	en:"5.T1.31<br>\
 Kinga: A special building? Well, Sydney Opera House is very special for me. It's in Sydney, of course, in the east of Australia.\
  What do I know about it? Well, it's a really spectacular building. The designer was from Denmark. I think his name was Jorn Utzon.\
   He changed his plans for the building many times and the construction work took a long time-fifteen years I think! Why is it special for me? I love the shape of the roof. It's completely unique.\
 It's amazing in daylight and it looks very dramatic at night too. People from all over the world see it as a landmark of Australia. It represents my country and I'm very proud of it.",
-vi:"Track 1.31<br>\
+vi:"5.T1.31<br>\
 Kinga: Một tòa nhà đặc biệt ư? Vâng, Nhà hát Opera Sydney rất đặc biệt đối với tôi. Tất nhiên là nó ở Sydney, ở phía đông của Úc.\
 Tôi biết gì về nó? Vâng, đó là một tòa nhà thực sự ngoạn mục. Nhà thiết kế đến từ Đan Mạch. Tôi nghĩ tên ông ấy là Jorn Utzon.\
 Ông ấy đã thay đổi kế hoạch xây dựng tòa nhà nhiều lần và công trình xây dựng mất rất nhiều thời gian - tôi nghĩ là mười lăm năm! Tại sao nó lại đặc biệt đối với tôi? Tôi thích hình dạng của mái nhà. Nó hoàn toàn độc đáo.\
 Nó thật tuyệt vời vào ban ngày và trông cũng rất ấn tượng vào ban đêm. Mọi người trên khắp thế giới coi nó là một địa danh của Úc. Nó đại diện cho đất nước tôi và tôi rất tự hào về nó.",
 voca:"represent"
-}, {}
+},
 ];

@@ -174,13 +174,25 @@ I really admire Leonardo DiCaprio. He's an actor, and he makes really good films
 voca:"traditional,nuclear,extended,admire"
 },
 {
-	title:"Describe a trip [Speaking]",
-	unit:"",
+	date:"T4.18/09/2024",
+	title:"Complete [3.Track19] & Describe a trip [Speaking]",
+	unit:"3",
 	en:"I went to Nui Thanh<br>\
 It was bought by my parents. I travelled with my friends, we went thru Tam ky and reached NT.<br>\
 We went to the beach and swam in the clear water<br>\
 we ate seafood it was delicious but expensive,<br>\
 The good thing about the journey was that we had fun and happy moments. The bad thing was this trip was not safe, it took us about 2 hours to travel from my home to NT.<br>\
 I remember this trip because at the time, i met the girl who later became my girlfriend.",
+},
+{
+	date:"T6.20/09/2024",
+	unit:"",
+	title:"Complete[Freya Stark], Bridge [Meerkat - Teamwork]",
+	en:"- Occupation (n) nghề nghiệp<br>\
+- Flight (n) chuyến bay<br>\
+- Expedition (n) chuyến thám hiểm<br>\
+- Media (n) truyền thông<br>\
+- Office worker (n) nhân viên văn phòng<br>\
+- Africa (n) châu Phi",
 }
 ]

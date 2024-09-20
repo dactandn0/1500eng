@@ -22,7 +22,7 @@ radioCDChange = function (cd) {
 $scope.cd = 1;
 $scope.stories = kSTORIES; //1
 
-$scope.acc=0;
+$scope.acc=-1;
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc===id;

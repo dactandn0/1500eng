@@ -27,9 +27,10 @@
         <hr>
         <div ng-repeat="story in stories track by $index" class="mb-2" >
         <h6 class="accordion" >
-          <a href ng-click="acc_click($index)">{{$index+1}}. Unit {{story.unit}}: {{story.title}}</a>
+          <a href ng-click="acc_click($index)">{{$index+1}}. {{story.date}}</a>
         </h6>
           <div class="accordion-content" ng-show="acc_isShow($index)">
+              <p><i>{{story.title}}</i></p>
              <p ng-bind-html="story.en"></p>
              <div class="mt-1" ng-if="story.vocaNotes">
                   <hr/>

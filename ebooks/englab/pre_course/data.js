@@ -172,5 +172,15 @@ and explain the reasons you admire them.<br>\
 Sample<br>\
 I really admire Leonardo DiCaprio. He's an actor, and he makes really good films. He's hardworking and funny - he makes me laugh. I really admire him because he is 2 generous - he's rich and he uses his money to help people. He's also 3 intelligent; he has a website about the environment and he wants to change the world.",
 voca:"traditional,nuclear,extended,admire"
+},
+{
+	title:"Describe a trip [Speaking]",
+	unit:"",
+	en:"I went to Nui Thanh<br>\
+It was bought by my parents. I travelled with my friends, we went thru Tam ky and reached NT.<br>\
+We went to the beach and swam in the clear water<br>\
+we ate seafood it was delicious but expensive,<br>\
+The good thing about the journey was that we had fun and happy moments. The bad thing was this trip was not safe, it took us about 2 hours to travel from my home to NT.<br>\
+I remember this trip because at the time, i met the girl who later became my girlfriend.",
 }
 ]

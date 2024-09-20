@@ -10,46 +10,33 @@ function MYLOG(msg) {
 var app = angular.module("myApp", ['ngSanitize']);
 app.controller("ctrl", function($scope, $timeout) {
 
-var kSTORIES = bridge_cd1;
 radioCDChange = function (cd) {
 	$scope.cd = cd;
 	if (cd===1) {
-		kSTORIES = bridge_cd1;
+		$scope.stories = bridge_cd1;
 		$scope.listTrackTitle();
 	}
-	
-	localStorage.setItem("bri_listen_cd", cd);
-	$scope.cd = cd;
 }
 
 $scope.cd = 1;
-$scope.stories = kSTORIES; //1
-
-
+$scope.stories = bridge_cd1; //1
 $scope.storyIdx = 0;
 $scope.bPlayingFull = false;
 $scope.bPause = false;
 $scope.bShowVi = 0;
-$scope.bHiddenWords = 0;
 $scope.audio;
 $scope.currentTime = 0;
+$scope.loopType = 1;
 
-$scope.loopType = 0;
-
-
-$scope.units = [
-	{'title':"", 'num': 1},
-];
 
 $scope.resetFlag = function () {
 	$scope.bPlayingFull = false;
 	$scope.bPause = false;
 	$scope.bShowVi = 0;
-	$scope.bHiddenWords = 0;
 }	
 
-$scope.backSound = function (sec) {
-	$scope.audio.currentTime = $scope.audio.currentTime + sec;
+$scope.backSound = function (mul) {
+	$scope.audio.currentTime = $scope.audio.currentTime + kBackTimeAudio * mul;
 }
 
 $scope.resetAudioBtnUI = function()
@@ -65,7 +52,7 @@ $scope.resetAudioBtnUI = function()
     } else if ( $scope.loopType===2) // play next
     {
     	var next = $scope.storyIdx + 1;
-    	if (next > kSTORIES.length-1) { next = 0 }; 
+    	if (next > $scope.stories.length-1) { next = 0 }; 
     	$scope.fetchStory(next, true);
     	$scope.playFullSound(next);
     }
@@ -123,34 +110,24 @@ $scope.fetchStory = function (idx, reset=true) {
 		$scope.stopSound();
 	}
 
-	$scope.stories = kSTORIES;
 	$scope.storyIdx = idx;
 	$scope.story = $scope.stories[idx];
-
-	// save DB
-	localStorage.setItem("bri_listen_unit", idx);
-	MYLOG("localStorage save unit=" + idx);
-	if (!$scope.story || !$scope.story.en) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
 }
 
-
 $scope.listTrackTitle = function() {
-	for (var i = 0; i < kSTORIES.length; i++) {
-		var story = kSTORIES[i];
-		if (story.en)
+	for (var i = 0; i < $scope.stories.length; i++) {
+		var story = $scope.stories[i];
 		story.title = story.en.split("<br>")[0];
 	}
 }
 
-
-
-$scope.loadData = function () {
+$scope.init = function () {
 	$scope.listTrackTitle();
 	$scope.fetchStory($scope.storyIdx, false);
 };
 
-$scope.loadData();
+$scope.init();
 
 });

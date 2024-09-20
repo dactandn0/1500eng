@@ -31,7 +31,7 @@
 
     	<div class="my-3">
 		    <div class="col-md-12">
-		    	 <a ng-repeat="story in stories"  ng-click="fetchStory($index);" href="" class="pr-2 mr-1"> [{{story.title}}]
+		    	 <a ng-repeat="story in stories track by $index"  ng-click="fetchStory($index);" href="" class="pr-2 mr-1"> [{{story.title}}]
 		    	</a>
 		    </div>
 		    <br> 
@@ -49,8 +49,8 @@
 
     	<span ng-show="bPlayingFull" class="btnSound opa">
     		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-10)">-10s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(10)">+10s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+s</button></p>
     	</span>
 
 		<span class="btnShowVi opa">
@@ -90,12 +90,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-function chkClick()
-{	
-	var chk =  document.getElementById('audioLoopEle');
-	localStorage.setItem("bri_listen_isAudioLoop", chk.checked);
-	console.log("bri_listen_isAudioLoop saved storage = ", chk.checked );
-}
-</script>

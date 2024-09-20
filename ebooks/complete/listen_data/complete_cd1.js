@@ -30,6 +30,7 @@ E: Bạn thích nhất điều gì ở trường?<br>\
 H: Tôi nghĩ rằng tôi thích học các môn khoa học nhất. Tôi đặc biệt thích vật lý và hóa học. Chúng tôi không chơi thể thao ở trường, vì vậy tôi đã chơi những môn đó vào thời gian rảnh rỗi.<br>\
 E: Và khi bạn còn đi học, bạn nghĩ ai là giáo viên giỏi nhất của bạn?<br>\
 H: Tôi nghĩ, có lẽ, là giáo viên hóa học của tôi vì cô ấy đã giải thích mọi thứ rất rõ ràng. Ngoài ra, cô ấy rất - tôi không chắc về từ này - uh, hứng thú, không, nhiệt tình. Cô ấy bắt chúng tôi làm bài kiểm tra, ý tôi là thí nghiệm trong phòng thí nghiệm, vì vậy chúng tôi học được rất nhiều. Tôi không bao giờ bỏ lỡ một bài học nào của cô ấy."
+,voca:"childhood,experiment"
 },
 {
 	en: "3.T19<br>\

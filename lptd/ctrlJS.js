@@ -66,8 +66,8 @@ $scope.resetFlag = function () {
 	$scope.bHiddenWords = 0;
 }	
 
-$scope.backSound = function (sec) {
-	$scope.audio.currentTime = $scope.audio.currentTime + sec;
+$scope.backSound = function (mul) {
+	$scope.audio.currentTime = $scope.audio.currentTime + kBackTimeAudio * mul;
 }
 
 $scope.resetAudioBtnUI = function()

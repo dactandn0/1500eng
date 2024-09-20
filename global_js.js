@@ -1,6 +1,7 @@
+
 const ITALIC_RED_TAG_BEGIN = '<i class="text-danger">'
 const ITALIC_RED_TAG_END = '</i>'
-
+const kBackTimeAudio = 8; //8s
 
 // console.log("uncount_nouns.js")
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"

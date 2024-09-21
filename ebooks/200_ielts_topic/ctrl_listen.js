@@ -23,18 +23,25 @@ $scope.range = function(min, max, step) {
 };
 
 
+$scope.acc = -1;
 $scope.storyIdx = 0;
 $scope.bPlayingFull = false;
 $scope.bPause = false;
 $scope.bShowVi = 0;
-$scope.bHiddenWords = 0;
 $scope.audio;
 $scope.currentTime = 0;
 
-$scope.units = [
-	{'title':"Nature", 'num': 1},
-	
-];
+$scope.acc_isShow = function (id) {
+	return $scope.acc===id;
+};
+
+$scope.acc_click = function (id) {
+	if($scope.acc===id) $scope.acc=-1;
+	else
+		$scope.acc=id;
+
+	$scope.storyIdx = id;
+};
 
 $scope.resetFlag = function () {
 	$scope.bPlayingFull = false;
@@ -114,45 +121,20 @@ $scope.stopSound = function () {
 	 $scope.bPlayingFull = false;
 };
 
-$scope.fetchStory = function (idx, reset=true) {
-	MYLOG('fetchStory');
-	// when click 1.2.3..40
-	if (reset==true) 
-	{
-		$scope.resetFlag();
-		$scope.stopSound();
+$scope.preProcess = function () {
+	for (var i = 0; i < $scope.stories.length; i++) {
+		var story = $scope.stories[i];
+		story = processStory(story);
+		story.enShow = story.enShow.replaceAll('Candidate', '<b>Candidate</b>');
+		story.viShow = story.viShow.replaceAll('Candidate', '<b>Candidate</b>');
+		story.enShow = story.enShow.replaceAll('Examiner', '<b>Examiner</b>');
+		story.viShow = story.viShow.replaceAll('Examiner', '<b>Examiner</b>');
 	}
-	$scope.stories = kSTORIES;
-	$scope.storyIdx = idx;
-	$scope.story = $scope.stories[idx];
-
-	// save DB
-	localStorage.setItem("ielt_listen_sample_track", idx);
-	MYLOG("localStorage save unit=" + idx);
-	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
-	$scope.story = processStory($scope.story);
-	$scope.story.enShow = $scope.story.enShow.replaceAll('Candidate', '<b>Candidate</b>');
-	$scope.story.viShow = $scope.story.viShow.replaceAll('Candidate', '<b>Candidate</b>');
-	$scope.story.enShow = $scope.story.enShow.replaceAll('Examiner', '<b>Examiner</b>');
-	$scope.story.viShow = $scope.story.viShow.replaceAll('Examiner', '<b>Examiner</b>');
 }
 
 $scope.loadData = function () {
-
-	if (localStorage.hasOwnProperty("audio_loop")) {
-		var val = localStorage.audio_loop;
-		MYLOG("localStorage load audio_loop=" + val);
-		document.loopForm.radioLoop.value = val;
-	}
-
-	if (localStorage.hasOwnProperty("ielt_listen_sample_track")) {
-		idx = localStorage.ielt_listen_sample_track;
-		MYLOG("localStorage load unit=" + idx);
-		$scope.storyIdx = parseInt(idx);
-	}
-
-	$scope.fetchStory($scope.storyIdx, false);
+	$scope.preProcess();
 };
 
 $scope.loadData();

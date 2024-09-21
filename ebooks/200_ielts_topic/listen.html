@@ -20,7 +20,7 @@
 
 </head>
 
-<body ng-app="myApp" ng-init="showText=1">
+<body ng-app="myApp">
     <div ng-controller="ctrl" class="container mt-4">
     <h5 class="mb-4">220 IELTS Speaking topics</h5>
 
@@ -28,12 +28,7 @@
     	<a href="../ebooks.html" class="mr-4"><< Ebooks</a>
     	<a href="reading.html" class="mr-4">Reading</a>
 
-    	<div class="my-1">
-		    <div ng-repeat="u in units" class="col-md-4">
-		    	 <a ng-repeat="n in range(1, 1)"  ng-click="fetchStory(n-1);" href="" class="p-2 mr-1"> [{{n}}]
-		    	</a>
-		    </div>
-		    <br> 
+    	<div class="mt-3">
 		    <form name="loopForm" class="mb-3" role="group">
 	    		<input type="radio" name="radioLoop" value="0" onchange="radioLoopChange(0)" checked/><span class="mr-3">No</span>
 	        	<input type="radio" name="radioLoop" value="1" onchange="radioLoopChange(1)" /><span class="mr-3">Yes</span>
@@ -60,24 +55,20 @@
 
 		<div class="card mt-1">
 		    <div class="card-body">
-	          <div class="card-text my-2">
-	          	
+	          <div class="card-text my-2" ng-repeat="story in stories track by $index">
 	          	<h6 class="accordion" >
-				    <a href ng-click="showText=!showText"> {{story.title}}</a>
+				    <a href ng-click="acc_click($index)"> {{story.title}}</a>
 				 </h6>
-	          	 <div class="accordion-content">
-	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords && showText"></p>
-	          		<p ng-bind-html="story.viShow" ng-if="bShowVi && showText""></p>
-	          		<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi && showText"></p>
+	          	 <div class="accordion-content" ng-show="acc_isShow($index)">
+	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi"></p>
+	          		<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
 	          	</div>
-
 	        	<div class="mt-1 p-3" ng-if="story.vocaNotes.length">
 	           	<hr/>
 	        		<p class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
 	          			{{note}}
 	          		</p>
-	          	</div>
-	          	
+	          	</div>	          	
 	          </div> <!-- card-text -->
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->
@@ -87,12 +78,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-function chkClick()
-{	
-	var chk =  document.getElementById('audioLoopEle');
-	localStorage.setItem("lptd_isAudioLoop", chk.checked);
-	console.log("lptd_isAudioLoop saved storage = ", chk.checked );
-}
-</script>

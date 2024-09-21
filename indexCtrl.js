@@ -5,10 +5,10 @@ function MYLOG(msg) {
 //	console.log(msg);
 }
 function hightlightTypeOfWord(txt) {
-	txt = txt.replaceAll('|n|', '<label class="text-info ml-2">n</label>');
-	txt = txt.replaceAll('|a|', '<label class="text-success ml-2">a</label>');
-	txt = txt.replaceAll('|adv|', '<label class="text-success font-weight-bold ml-2">adv</label>');
-	txt = txt.replaceAll('|v|', '<label class="text-warning ml-2">v</label>');
+	txt = txt.replaceAll(' n ', '<label class="text-info ml-2">n&nbsp;</label>');
+	txt = txt.replaceAll(' a ', '<label class="text-success ml-2">a&nbsp;</label>');
+	txt = txt.replaceAll(' adv ', '<label class="text-success font-weight-bold ml-2">adv&nbsp;</label>');
+	txt = txt.replaceAll(' v ', '<label class="text-warning ml-2">v&nbsp;</label>');
 	return txt;
 }
 
@@ -54,10 +54,6 @@ $scope.searchData = [];
 $scope.searchDataResult = [];
 $scope.search = "";
 $scope.story = '';
-
-$scope.units = [
-	{'title':"", 'num': 1},
-];
 
 $scope.searchTyping = function() {
     if ($scope.searchData.length==0) return true;       

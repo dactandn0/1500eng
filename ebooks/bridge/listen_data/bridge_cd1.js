@@ -483,4 +483,195 @@ Tôi biết gì về nó? Vâng, đó là một tòa nhà thực sự ngoạn m�
 Nó thật tuyệt vời vào ban ngày và trông cũng rất ấn tượng vào ban đêm. Mọi người trên khắp thế giới coi nó là một địa danh của Úc. Nó đại diện cho đất nước tôi và tôi rất tự hào về nó.",
 voca:"represent"
 },
+{
+	en:"6.T1.33<br>\
+Sebastien: Hi Monika! You look busy - what are you doing? <br>\
+Monika: I AM busy! I want to help as a volunteer in the student welcome centre and I need to apply online. <br>\
+Sebastien: Ah yes! I saw an advertisement in the student union. I'm not surprised they need helpers for the student welcome centre! It's always so busy there. It was really busy when we first arrived as new students. I can't believe that was two years ago!<br>\
+Monika: I know it's amazing! I met you in the queue on the very first day of the semester!<br>\
+Sebastien: That's right! In fact, we waited so long that we got to know each other really well!<br>\
+Monika: Yes, we spent an hour in that queue and you told me about your family in Switzerland...<br>\
+Sebastien: And you felt very excited about starting your new life here.<br>\
+Monika: I remember! We talked so much that by the time we got to the front of the queue we didn't remember what we wanted to ask!<br>\
+Sebastien: That's right! I can't believe that we came here two years ago!<br>\
+Monika: I know - it's amazing.<br>\
+Sebastien: So do you really want to be a volunteer? <br>\
+Monika: Yes, I do.<br>\
+Sebastien: But you don't have any work experience. <br>\
+Monika: That's true, but I've got experience of being a student. I understand how new students feel when they leave their own country and arrive in a completely new place. I really missed my family and friends when I left Brazil. I had so many questions so it was good to talk to the volunteers.<br>\
+Sebastien: That's true. I found them really easy to talk to and they gave me some really useful advice too. But you don't get paid to be a volunteer.<br>\
+Monika: I don't care about that. I just want to do something different and help people at the same time. Why don't you apply to become а volunteer too? What do you say?<br>\
+Sebastien: l'm not sure. l'll think about it ...",
+	vi:"6.T1.33<br>\
+Sebastien: Chào Monika! Trông bạn có vẻ bận rộn - bạn đang làm gì vậy? <br>\
+Monika: TÔI RẤT bận! Tôi muốn giúp đỡ với tư cách là tình nguyện viên tại trung tâm chào đón sinh viên và tôi cần nộp đơn trực tuyến. <br>\
+Sebastien: À vâng! Tôi thấy một quảng cáo trong hội sinh viên. Tôi không ngạc nhiên khi họ cần người giúp việc cho trung tâm chào đón sinh viên! Ở đó lúc nào cũng bận rộn. Thực sự rất bận rộn khi chúng tôi mới đến với tư cách là sinh viên mới. Tôi không thể tin rằng đó là hai năm trước!<br>\
+Monika: Tôi biết điều đó thật tuyệt! Tôi đã gặp bạn trong hàng đợi vào đúng ngày đầu tiên của học kỳ!<br>\
+Sebastien: Đúng vậy! Trên thực tế, chúng ta đã đợi rất lâu để có thể hiểu nhau thực sự!<br>\
+Monika: Đúng vậy, chúng ta đã xếp hàng một tiếng đồng hồ và bạn đã kể cho tôi nghe về gia đình bạn ở Thụy Sĩ...<br>\
+Sebastien: Và bạn cảm thấy rất hào hứng khi bắt đầu cuộc sống mới ở đây.<br>\
+Monika: Tôi nhớ! Chúng ta đã nói chuyện rất nhiều đến nỗi khi đến đầu hàng, chúng tôi không nhớ mình muốn hỏi gì nữa!<br>\
+Sebastien: Đúng vậy! Tôi không thể tin rằng chúng ta đã đến đây hai năm trước!<br>\
+Monika: Tôi biết - thật tuyệt vời.<br>\
+Sebastien: Vậy bạn có thực sự muốn trở thành tình nguyện viên không? <br>\
+Monika: Có, tôi muốn.<br>\
+Sebastien: Nhưng bạn không có bất kỳ kinh nghiệm làm việc nào. <br>\
+Monika: Đúng vậy, nhưng tôi đã có kinh nghiệm làm sinh viên. Tôi hiểu cảm giác của những sinh viên mới khi họ rời xa đất nước của mình và đến một nơi hoàn toàn mới. Tôi thực sự nhớ gia đình và bạn bè khi rời Brazil. Tôi có rất nhiều câu hỏi nên thật tuyệt khi được nói chuyện với các tình nguyện viên.<br>\
+Sebastien: Đúng vậy. Tôi thấy họ rất dễ nói chuyện và họ cũng cho tôi một số lời khuyên thực sự hữu ích. Nhưng bạn không được trả tiền để làm tình nguyện viên.<br>\
+Monika: Tôi không quan tâm đến điều đó. Tôi chỉ muốn làm điều gì đó khác biệt và đồng thời giúp đỡ mọi người. Tại sao bạn không nộp đơn xin làm tình nguyện viên? Bạn nghĩ sao?<br>\
+Sebastien: Tôi không chắc. Tôi sẽ cân nhắc về điều đó ...",
+},
+{
+	en:"6.T1.34<br>\
+Jakub: Hi Hiromi! How was your holiday?<br>\
+Hiromi: Hi Jakub! It was great. I didn't go back to Japan though. I didn't have enough money for that so I stayed here. Actually, I spent most of the time working!<br>\
+Jakub: You worked all holiday? I didn't know. What did you do?<br>\
+Hiromi: I was a sandwich artist.<br>\
+Jakub: A sandwich artist! What's that? It sounds very important.<br>\
+Hiromi: I made sandwiches in a cafe!<br>\
+Jakub: Oh! I'd like to do that. Chicken Caesar is my favourite! Did you eat the sandwiches too?<br>\
+Hiromi: No I didn't! I made so many sandwiches the last thing I wanted to do was eat them! I always had salad for lunch. I didn't just make sandwiches though, I served customers too. I felt very nervous about that at first because I didn't feel confident about my English. But most of the people who came into the shop were really friendly. In fact, I began to really enjoy talking to them. Talking to people became the best part of the job for me! It made me happy. It was a really early start though. I got up at 6am every morning and began work at 7am.<br>\
+Jakub: You got up at 6am!<br>\
+Hiromi: Yes! I didn't like that - in fact, one morning I slept really late and didn't get to work until 8!<br>\
+Jakub: So, how many hours did you work?<br>\
+Hiromi: 6 hours a day so - 30 hours a week.<br>\
+Jakub: 30 hours? I thought that students couldn't work more than 20 hours.<br>\
+Hiromi: We can't work more than 20 hours during semester. But you can work as many hours as you want during the holidays. I went to the student centre to check that before I took the job.<br>\
+Jakub: So did you work Monday to Friday?<br>\
+Hiromi: Yes, weekdays only so I had time to relax on Saturdays and Sundays. In fact, I spent most of my weekends on the beach!<br>\
+Jakub: I think I need to find a job too.<br>\
+Hiromi: That's a good idea. I found it a really useful experience. I feel much more confident about my English now and I made some money too! So next mid holiday I can go back to Japan!<br>\
+Jakub: Do you think I could be a sandwich artist too? <br>\
+Hiromi: Of course you could. After all, you love food! <br>\
+Jakub: So, can you give me the address of the sandwich shop you worked in?<br>\
+Hiromi: Yes, of course I can. Now, where did I put my pen...",
+	vi:"6.T1.34<br>\
+Jakub: Chào Hiromi! Kỳ nghỉ của bạn thế nào?<br>\
+Hiromi: Chào Jakub! Thật tuyệt. Nhưng tôi không quay lại Nhật Bản. Tôi không có đủ tiền cho việc đó nên tôi ở lại đây. Thực ra, tôi dành phần lớn thời gian để làm việc!<br>\
+Jakub: Bạn làm việc suốt kỳ nghỉ sao? Tôi không biết. Bạn đã làm gì?<br>\
+Hiromi: Tôi là một nghệ sĩ làm bánh sandwich.<br>\
+Jakub: Một nghệ sĩ làm bánh sandwich! Cái đó là gì? Nghe có vẻ rất quan trọng.<br>\
+Hiromi: Tôi đã làm bánh sandwich trong một quán cà phê!<br>\
+Jakub: Ồ! Tôi muốn làm điều đó. Chicken Caesar là món tôi thích nhất! Bạn cũng đã ăn bánh sandwich chưa?<br>\
+Hiromi: Không, tôi không ăn! Tôi đã làm rất nhiều bánh sandwich đến nỗi điều cuối cùng tôi muốn làm là ăn chúng! Tôi luôn ăn salad vào bữa trưa. Tuy nhiên, tôi không chỉ làm bánh sandwich, tôi còn phục vụ khách hàng nữa. Lúc đầu tôi thấy rất lo lắng về điều đó vì tôi không tự tin vào tiếng Anh của mình. Nhưng hầu hết những người đến cửa hàng đều rất thân thiện. Thực tế là tôi bắt đầu thực sự thích nói chuyện với họ. Đối với tôi, nói chuyện với mọi người trở thành phần tuyệt vời nhất của công việc! Điều đó khiến tôi vui. Tuy nhiên, đó là một khởi đầu rất sớm. Tôi thức dậy lúc 6 giờ sáng mỗi ngày và bắt đầu làm việc lúc 7 giờ sáng.<br>\
+Jakub: Bạn thức dậy lúc 6 giờ sáng!<br>\
+Hiromi: Đúng vậy! Tôi không thích điều đó - thực tế là, một buổi sáng tôi ngủ rất muộn và không đến làm việc cho đến 8 giờ!<br>\
+Jakub: Vậy, bạn đã làm việc bao nhiêu giờ?<br>\
+Hiromi: 6 giờ một ngày, tức là 30 giờ một tuần.<br>\
+Jakub: 30 giờ? Tôi nghĩ rằng sinh viên không được làm việc quá 20 giờ.<br>\
+Hiromi: Chúng tôi không được làm việc quá 20 giờ trong học kỳ. Nhưng bạn có thể làm việc nhiều giờ tùy thích trong kỳ nghỉ. Tôi đã đến trung tâm sinh viên để kiểm tra trước khi nhận việc.<br>\
+Jakub: Vậy bạn làm việc từ thứ Hai đến thứ Sáu à?<br>\
+Hiromi: Vâng, chỉ làm vào các ngày trong tuần nên tôi có thời gian thư giãn vào thứ Bảy và Chủ Nhật. Thực tế là tôi đã dành phần lớn thời gian cuối tuần của mình ở bãi biển!<br>\
+Jakub: Tôi nghĩ mình cũng cần tìm việc.<br>\
+Hiromi: Đó là một ý kiến ​​hay. Tôi thấy đó là một trải nghiệm thực sự hữu ích. Bây giờ tôi tự tin hơn nhiều về tiếng Anh của mình và tôi cũng kiếm được một ít tiền! Vì vậy, vào giữa kỳ nghỉ tới, tôi có thể quay lại Nhật Bản!<br>\
+Jakub: Bạn có nghĩ tôi cũng có thể trở thành một nghệ sĩ làm bánh sandwich không? <br>\
+Hiromi: Tất nhiên là được. Rốt cuộc, bạn thích đồ ăn mà! <br>\
+Jakub: Vậy, bạn có thể cho tôi địa chỉ của cửa hàng bánh sandwich mà bạn đã làm việc không?<br>\
+Hiromi: Vâng, tất nhiên là được. Bây giờ, tôi để bút ở đâu nhỉ...",
+},
+{
+	en:"6.T1.36<br>\
+Jing: Last summer I worked as a school holiday assistant. What did I do? Well, I had to think of different activities and games to play with the kids in the\
+ morning and in the afternoons we took them on trips to museums or the zoo. I'm really glad I did it\
+  - it was really challenging because I had to think about different ways to keep the children happy and busy!\
+   I had to be quite flexible too. Kids can get bored very quickly, you know! The best thing was that it was relevant to my psychology course.\
+    I'm so glad I did it! <br><br>Agnes: A time when I did something rewarding? Well, I really enjoyed it when I spent a few weeks picking fruit in Tasmania.\
+     We began work early in the morning and didn't finish until early evening. Well, it wasn't exactly hard work but it was quite tiring.\
+      Why was it so rewarding? Well, the money was good but I also liked the social life. I made some good friends with students from all over the world.\
+       In fact, I met my boyfriend there too, so that was an added benefit!",
+	vi:"6.T1.36<br>\
+Jing: Mùa hè năm ngoái, tôi làm trợ lý kỳ nghỉ ở trường. Tôi đã làm gì? Ồ, tôi phải nghĩ ra nhiều hoạt động và trò chơi khác nhau để chơi với bọn trẻ vào buổi sáng và buổi chiều, chúng tôi đưa chúng đi tham quan bảo tàng hoặc sở thú. Tôi thực sự vui vì đã làm như vậy\
+- thực sự rất khó khăn vì tôi phải nghĩ ra nhiều cách khác nhau để bọn trẻ vui vẻ và bận rộn!\
+Tôi cũng phải khá linh hoạt. Trẻ em có thể chán rất nhanh, bạn biết đấy! Điều tuyệt nhất là nó liên quan đến khóa học tâm lý của tôi.\
+Tôi rất vui vì đã làm như vậy! <br><br>Agnes: Một thời gian khi tôi làm điều gì đó có ích? Ồ, tôi thực sự thích khi dành một vài tuần để hái trái cây ở Tasmania.\
+Chúng tôi bắt đầu làm việc từ sáng sớm và không hoàn thành cho đến đầu giờ tối. Ồ, công việc không thực sự vất vả nhưng khá mệt mỏi.\
+Tại sao nó lại có ích như vậy? Ồ, tiền thì nhiều nhưng tôi cũng thích cuộc sống xã hội. Tôi đã kết bạn với một số sinh viên từ khắp nơi trên thế giới.\
+Thực tế, tôi cũng đã gặp bạn trai của mình ở đó, vì vậy đó là một lợi ích bổ sung!",
+voca:"assistant,museum,flexible,psychology,rewarding"
+},
+{
+	en:"7.T1.40<br>\
+Dee Dee: Hello.<br>\
+Bob: Hi, Dee Dee - Bob here, Joey and I need some help. <br>\
+Dee Dee: Sure, go ahead.<br>\
+Bob: I'm on North Main Street with Joey. We've got a clue from City Hunt. Can you help us?<br>\
+Dee Dee: What is it?<br>\
+Bob: OK. It says: 'Your next challenge is in Japan. Can you find the place where man went into space?'<br>\
+Dee Dee: Space. Challenge. Japan?... It's got to be the Challenger Space Shuttle Memorial statue.<br>\
+Bob: Great. But in Japan?<br>\
+Dee Dee: It's in Little Tokyo.<br>\
+Bob: Great Joey, there's a taxi, stop it!<br>\
+Dee Dee: No, Bob. You can't go by taxi. You have to walk. Go south to East 1st Street and walk for two blocks. It's at the Weller Court building.<br>\
+Joey: Hey, Dee Dee. We found the Space Shuttle Memorial. <br>\
+Dee Dee: Yes, I can see you on the Internet. You have to take a photo and send it to me. I can put it on the website. Joey: OK - I'm sending it now.<br>\
+Dee Dee: Send me the next clue too.<br>\
+Joey: Right.<br>\
+Dee Dee: Got it. A mouse and the Lion King come here to play and sing.<br>\
+Joey: That's really difficult.<br>\
+Dee Dee: Well, the Lion King is an old cartoon.<br>\
+Joey: And the mouse is Mickey Mouse ...<br>\
+Dee Dee: Got it! It's the Walt Disney Concert Hall. Joey: That's South Grand Avenue. That's near you.<br>\
+Dee Dee: Yeah, but I can't go there, it's not allowed. You have to go there, and quickly. I can see the next team is very close to you.<br>\
+Joey: How do we get there?<br>\
+Dee Dee: Go back to 1st Street. Then take a bus back to Grand Avenue. Hurry!",
+	vi:"7.T1.40<br>\
+Dee Dee: Xin chào.<br>\
+Bob: Xin chào, Dee Dee - Bob đây, Joey và tôi cần giúp đỡ. <br>\
+Dee Dee: Được thôi, cứ đi đi.<br>\
+Bob: Tôi đang ở Phố North Main với Joey. Chúng tôi có manh mối từ City Hunt. Bạn có thể giúp chúng tôi không?<br>\
+Dee Dee: Gì vậy?<br>\
+Bob: Được. Nó nói: 'Thử thách tiếp theo của bạn là ở Nhật Bản. Bạn có thể tìm ra nơi con người đã đi vào không gian không?'<br>\
+Dee Dee: Không gian. Thử thách. Nhật Bản?... Phải là tượng Đài tưởng niệm Tàu con thoi Challenger.<br>\
+Bob: Tuyệt. Nhưng ở Nhật Bản thì sao?<br>\
+Dee Dee: Ở Little Tokyo.<br>\
+Bob: Tuyệt Joey, có taxi kìa, dừng lại đi!<br>\
+Dee Dee: Không, Bob. Bạn không thể đi bằng taxi được. Bạn phải đi bộ. Đi về phía nam đến Phố East 1st và đi bộ hai dãy nhà. Tòa nhà ở Tòa án Weller.<br>\
+Joey: Này, Dee Dee. Chúng ta đã tìm thấy Đài tưởng niệm Tàu con thoi.<br>\
+Dee Dee: Vâng, tôi có thể thấy bạn trên Internet. Bạn phải chụp ảnh và gửi cho tôi. Tôi có thể đưa lên trang web. Joey: OK - Tôi sẽ gửi ngay bây giờ.<br>\
+Dee Dee: Gửi cho tôi cả gợi ý tiếp theo nữa.<br>\
+Joey: Đúng rồi.<br>\
+Dee Dee: Hiểu rồi. Một chú chuột và Vua Sư Tử đến đây để chơi và hát.<br>\
+Joey: Khó thật đấy.<br>\
+Dee Dee: À, Vua Sư Tử là một bộ phim hoạt hình cũ.<br>\
+Joey: Còn chú chuột là Chuột Mickey...<br>\
+Dee Dee: Hiểu rồi! Đó là Nhà hát hòa nhạc Walt Disney. Joey: Đó là Đại lộ South Grand. Gần chỗ anh rồi.<br>\
+Dee Dee: Ừ, nhưng tôi không thể đến đó được, không được phép. Anh phải đến đó, và nhanh lên. Tôi thấy đội tiếp theo rất gần anh.<br>\
+Joey: Làm sao chúng ta đến đó được?<br>\
+Dee Dee: Quay lại Phố 1. Sau đó đi xe buýt trở lại Đại lộ Grand. Nhanh lên!",
+	voca:"",
+}
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

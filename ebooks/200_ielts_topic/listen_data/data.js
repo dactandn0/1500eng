@@ -16,7 +16,7 @@ Candidate: Well, it's an interesting story because at the time that I was born t
 Examiner: Alright Ameneh. Is your name important to you? <br>\
 Candidate: Well yes, I think everybody's name is important to them. It's the one thing that you fully associate yourself with.<br>\
 Examiner: OK, thanks Ameneh. And tell me where do you come from? <br>\
-Candidate: Well I come from Tehran, which is the capital of Iran. Tehran is a bustling city with a very large population of! think about E7 million people. It's a very busy and polluted city, but at the same time it's very charming and you can meet people from all sorts of backgrounds.<br>\
+Candidate: Well I come from Tehran, which is the capital of Iran. Tehran is a bustling city with a very large population of I think about 7 million people. It's a very busy and polluted city, but at the same time it's very charming and you can meet people from all sorts of backgrounds.<br>\
 Examiner: Alright Ameneh. What do you like about your hometown? <br>\
 Candidate: Well, like I said, I like the fact that you can meet people from all sorts of backgrounds. My hometown, Tehran, has beautiful mountains in the North. It's very vibrant. You can almost find something interesting in every neighbourhood. There's lots of activity going on during the day, which makes it very interesting as a city.<br>\
 Examiner: OK, Ameneh. Tell me, what do most of the people do in your hometown? <br>\
@@ -57,7 +57,7 @@ Candidate: Vâng, đó là một câu chuyện thú vị vì vào thời điểm
 Examiner: Được rồi Ameneh. Tên của bạn có quan trọng với bạn không? <br>\
 Candidate: Vâng, tôi nghĩ tên của mọi người đều quan trọng với họ. Đó là thứ duy nhất mà bạn hoàn toàn gắn kết với chính mình.<br>\
 Examiner: Vâng, cảm ơn Ameneh. Và hãy cho tôi biết bạn đến từ đâu? <br>\
-Candidate: Vâng, tôi đến từ Tehran, thủ đô của Iran. Tehran là một thành phố nhộn nhịp với dân số rất lớn! hãy nghĩ đến E7 triệu người. Đây là một thành phố rất bận rộn và ô nhiễm, nhưng đồng thời cũng rất quyến rũ và bạn có thể gặp gỡ mọi người từ mọi tầng lớp.<br>\
+Candidate: Vâng, tôi đến từ Tehran, thủ đô của Iran. Tehran là một thành phố nhộn nhịp với dân số rất lớn tôi nghĩ đến 7 triệu người. Đây là một thành phố rất bận rộn và ô nhiễm, nhưng đồng thời cũng rất quyến rũ và bạn có thể gặp gỡ mọi người từ mọi tầng lớp.<br>\
 Examiner: Được rồi Ameneh. Bạn thích điều gì ở quê hương mình? <br>\
 Candidate: Vâng, như tôi đã nói, tôi thích việc bạn có thể gặp gỡ mọi người từ mọi tầng lớp. Quê hương tôi, Tehran, có những ngọn núi tuyệt đẹp ở phía Bắc. Nơi đây rất sôi động. Bạn gần như có thể tìm thấy điều gì đó thú vị ở mọi khu phố. Có rất nhiều hoạt động diễn ra vào ban ngày, điều này khiến nơi đây trở nên rất thú vị như một thành phố.<br>\
 Examiner: Được rồi, Ameneh. Hãy cho tôi biết, hầu hết mọi người làm gì ở quê hương bạn? <br>\

@@ -1,218 +1,7 @@
 
-const INDEX_DATA =
+const WORDS_3K_DATA =
 [
 {
-title:"Sentences Building",
-en:"1. S + V + too + adj/adv + (for S.O) + to do S.TH: (quá....để cho ai làm gì...)<br>\
-- This structure is too easy for you to remember.<br>\
-- He ran too fast for me to follow.<br>\
-2. S + V + so + adj/ adv + that + S + V: (quá... đến nỗi mà...)<br>\
-- This box is so heavy that I cannot take it.<br>\
-- He speaks so soft that we can’t hear anything.<br>\
-3. It + V + such + (a/an) + N(s) + that + S + V: (quá... đến nỗi mà...)<br>\
-- It's such a heavy box that I cannot take it.<br>\
-- It's such interesting books that I cannot ignore them at all.<br>\
-4. S + V + adj/ adv + enough + (for S.O) + to do S.TH : (Đủ... cho ai đó làm gì...)<br>\
-- She's old enough to get married.<br>\
-- They're intelligent enough for me to teach them English.<br>\
-5. Have/ get + S.TH + done (P.P): (nhờ ai hoặc thuê ai làm gì...)<br>\
-- I had my hair cut yesterday.<br>\
-- I’d like to have my shoes repaired.<br>\
-6. <br>\
-It's time + S + V (-ed, cột 2)<br>\
-It’s time +for S.O +to do S.TH : (đã đến lúc ai đó phải làm gì...)<br>\
-It’s time + to do S.TH<br>\
-- It's time to go.<br>\
-- It's time you had a shower.<br>\
-- It's time for me to ask all of you for this question.<br>\
-7. It + takes/took+ S.O + amount of time + to do S.TH: (làm gì... mất bao nhiêu thời gian...)<br>\
-- It takes me 5 minutes to get to school.<br>\
-- It took him 10 minutes to do this exercise yesterday.<br>\
-8. To prevent/stop + S.O/S.TH + From + V-ing: (ngăn cản ai/ cái gì... làm gì..)<br>\
-- He prevented us from parking our car here.<br>\
-9. S + find+ it+ a to do S.TH: (thấy ... để làm gì...)<br>\
-- I find it very difficult to learn about English.<br>\
-- They found it easy to overcome that problem.<br>\
-10. To prefer + Noun/ V-ing + to + N/ V-ing. (Thích cái gì/ làm gì hơn cái gì/ làm gì)<br>\
-- I prefer dog to cat.<br>\
-- I prefer reading books to watching TV.<br>\
-11. Would rather ('d rather) + V (infinitive) + than + V (infinitive: (thích làm gì hơn làm gì)<br>\
-- She would play games than read books.<br>\
-- I’d rather learn English than learn Biology.<br>\
-12. To be/get used to + V-ing: (quen làm gì)<br>\
-- I'm used to eating with chopsticks.<br>\
-13. Used to + V (infinitive): (Thường làm gì trong qk và bây giờ không làm nữa)<br>\
-- I used to go fishing with my friend when I was young.<br>\
-- She used to smoke 10 cigarettes a day.<br>\
-14. To be amazed at = to be surprised at + N/V-ing: ngạc nhiên về....<br>\
-- I was amazed at his big beautiful villa.<br>\
-15. To be angry at + N/V-ing: tức giận về<br>\
-- Her mother was very angry at her bad marks.<br>\
-16. to be good at/ bad at + N/ V-ing: giỏi về.../ kém về...<br>\
-- I'm good at swimming.<br>\
-- He's very bad at English.<br>\
-17. by chance = by accident (adv): tình cờ<br>\
-- I met her in Paris by chance last week.<br>\
-18. to be/get tired of + N/V-ing: mệt mỏi về...<br>\
-- My mother was tired of doing too much housework everyday.<br>\
-19. can’t stand/ help/ bear/ resist + V-ing: Không chịu nỗi/không nhịn được làm gì...<br>\
-- She can't stand laughing at her little dog.<br>\
-20. to be keen on/ to be fond of + N/V-ing : thích làm gì đó...<br>\
-- My younger sister is fond of playing with her dolls.<br>\
-21. to be interested in + N/V-ing: quan tâm đến...<br>\
-- Mrs Brown is interested in going shopping on Sundays.<br>\
-22. to waste + time/ money + V-ing: tốn tiền hoặc thời gian làm gì<br>\
-- He always wastes time playing computer games each day.<br>\
-- Sometimes, I waste a lot of money buying clothes.<br>\
-23. To spend + amount of time/ money + V-ing: dành bao nhiêu thời gian làm gì..<br>\
-- I spend 2 hours reading books a day.<br>\
-- Mr Jim spent a lot of money traveling around the world last year.<br>\
-24. To spend + amount of time/ money + on + S.TH: dành thời gian vào việc gì...<br>\
-- My mother often spends 2 hours on housework everyday.<br>\
-- She spent all of her money on clothes.<br>\
-25. to give up + V-ing/ N: từ bỏ làm gì/ cái gì...<br>\
-- You should give up smoking as soon as possible.<br>\
-26. would like/ want/wish + to do S.TH: thích làm gì...<br>\
-- I would like to go to the cinema with you tonight.<br>\
-27. have + (S.TH) to + Verb: có cái gì đó để làm<br>\
-- I have many things to do this week.<br>\
-28. It + be + S.TH/ S.O + that/ who: chính...mà...<br>\
-- It's Tom who got the best marks in my class.<br>\
-- It's the villa that he had to spend a lot of money last year.<br>\
-29. Had better + V(infinitive): nên làm gì....<br>\
-- You had better go to see the doctor.<br>\
-30. hate/ like/ dislike/ enjoy/ avoid/ finish/ mind/ postpone/ practise/ consider/ delay/ deny/ suggest/ risk/ <br>\
-keep/ imagine/ fancy + V-ing<br>\
-- I always practise speaking English everyday.<br>\
-31. It's + a + ( for S.B ) + to do S.TH<br>\
-- It's difficult for old people to learn English.<br>\
-32. To be interested in + N / V_ing ( Thích cái gì / làm cái gì )<br>\
-- We're interested in reading books on history.<br>\
-33. To be bored with ( Chán làm cái gì )<br>\
-- We're bored with doing the same things everyday.<br>\
-34. It’s the first time S.B have ( has ) + P2 S.TH ( Đây là lần đầu tiên ai làm cái gì )<br>\
-- It’s the first time we have visited this place. ( Đây là lần đầu tiên chúng tôi tới thăm nơi này )<br>\
-35. enough + N ( đủ cái gì ) + ( to do S.TH )<br>\
-- I don’t have enough time to study. ( Tôi không có đủ thời gian để học )<br>\
-36. a + enough (đủ làm sao ) + ( to do S.TH )<br>\
-- I’m not rich enough to buy a car. ( Tôi không đủ giàu để mua ôtô )<br>\
-37. too + a + to do S.TH ( Quá làm sao để làm cái gì )<br>\
-- I’m to young to get married. ( Tôi còn quá trẻ để kết hôn )<br>\
-38. To want S.B to do S.TH = To want to have S.TH + Vp.p<br>\
-( Muốn ai làm gì ) ( Muốn có cái gì được làm )<br>\
-- She wants someone to make her a dress. ( Cô ấy muốn ai đó may cho cô ấy một chiếc váy )<br>\
-She wants to have a dress made. ( Cô ấy muốn có một chiếc váy được may )<br>\
-39. It’s time S.B did S.TH ( Đã đến lúc ai phải làm gì )<br>\
-- It’s time we went home. ( Đã đến lúc tôi phải về nhà )<br>\
-40. It’s not necessary for S.B to do S.TH = S.B don’t need to do S.TH<br>\
-( Ai không cần thiết phải làm gì ) doesn’t have to do S.TH<br>\
-- It's not necessary for you to do this exercise.<br>\
-41. To look forward to V_ing ( Mong chờ, mong đợi làm gì )<br>\
-- We're looking forward to going on holiday.<br>\
-42. To provide S.B from V_ing ( Cung cấp cho ai cái gì )<br>\
-- Can you provide us with some books in history?<br>\
-43. To prevent/stop S.B from V_ing (Cản trở ai làm gì )<br>\
-- The rain stopped us from going for a walk.<br>\
-44. To fail to do S.TH (Không làm được cái gì / Thất bại trong việc làm cái gì)<br>\
-- We failed to do this exercise.<br>\
-45. To be succeed in V_ing (Thành công trong việc làm cái gì)<br>\
-- We were succeed in passing the exam.<br>\
-46. To borrow S.TH from S.B (Mượn cái gì của ai)<br>\
-- She borrowed this book from the liblary.<br>\
-47. To lend S.B S.TH (Cho ai mượn cái gì)<br>\
-- Can you lend me some money?<br>\
-48. To make S.B do S.TH (Bắt ai làm gì)<br>\
-- The teacher made us do a lot of homework.<br>\
-49. <br>\
-S + be + so + a + that + S + V. ( Đến mức mà )<br>\
-S + V + so + Adv<br>\
-1. The exercise is so difficult that no one can do it.<br>\
-2. He spoke so quickly that I couldn’t understand him.<br>\
-50. S + be + such + ( a ) + N + that + S + V.<br>\
-- It's such a difficult exercise that noone can do it.<br>\
-51. It's ( very ) kind of S.B to do S.TH ( Ai thật tốt bụng / tử tế khi làm gì)<br>\
-- It's very kind of you to help me.<br>\
-52. To find it + a + to do S.TH<br>\
-- We find it difficult to learn English.<br>\
-53. To make sure of S.TH ( Bảo đảm điều gì )<br>\
-To make sure that + S + V<br>\
-1. I have to make sure of that information.<br>\
-2. You have to make sure that you’ll pass the exam.<br>\
-54. It takes ( S.B ) + Time + to do S.TH ( Mất ( của ai ) bao nhiêu Time để làm gì)<br>\
-- It took me an hour to do this exercise.<br>\
-55. To spend + time/money + on N/V_ing ( Dành thời gian / tiền bạc vào cái gì<br>\
-- We spend a lot of time on TV/watching TV.<br>\
-56. To have no idea of S.TH = don’t know about S.TH ( Không biết về cái gì )<br>\
-- I have no idea of this word = I don’t know this word.<br>\
-57. To advise S.B to do S.TH ( Khuyên ai làm gì<br>\
-not to do S.TH không làm gì )<br>\
-- Our teacher advises us to study hard.<br>\
-58. To plan to do S.TH ( Dự định / có kế hoạch làm gì ) - intend<br>\
-- We planed to go for a walk.<br>\
-59. To invite S.B to do S.TH ( Mời ai làm gì )<br>\
-- They invited me to go to the cinema.<br>\
-60. To offer S.B S.TH ( Mời / đề nghị ai cái gì )<br>\
-- He offered me a job in his company.<br>\
-( Anh ta mời tôi làm việc cho công ty anh ta )<br>\
-61. To rely on S.B ( tin cậy, dựa dẫm vào ai )<br>\
-- You can rely on him.<br>\
-62. To keep promise ( Gĩư lời hứa )<br>\
-- He always keeps promises.<br>\
-63. To be able to do S.TH = To be capable of + V_ing ( Có khả năng làm gì )<br>\
-- I’m able to speak English = I'm capable of speaking English.<br>\
-64. <br>\
-65. To prefer S.TH to S.TH  (Thích cái gì hơn cái gì )<br>\
-doing S.TH to doing S.TH làm gì hơn làm gì<br>\
-- We prefer spending money than earning money.<br>\
-66. To apologize for doing S.TH ( Xin lỗi ai vì đã làm gì )<br>\
-- I want to apologize for being rude to you.<br>\
-67. Had ('d ) better do S.TH ( Nên làm gì )<br>\
-Had ('d )not do S.TH ( Không nên làm gì )<br>\
-1. You'd better learn hard.<br>\
-2. You'd better not go out.<br>\
-68. <br>\
-Would ('d ) rather do S.TH  (Thà làm gì)<br>\
-Would ('d ) rather not do S.TH đừng làm gì<br>\
-- I’d rather (not) stay at home.<br>\
-69. Would ( ‘d ) rather S.B did S.TH ( Muốn ai làm gì )<br>\
-- I’d rather you ( he / she ) stayed at home today.<br>\
-70. To suggest S.B ( should ) do S.TH ( Gợi ý ai làm gì )<br>\
-- I suggested she ( should ) buy this house.<br>\
-71. To suggest doing S.TH ( Gợi ý làm gì )<br>\
-- I suggested going for a walk.<br>\
-72. Try to do ( Cố làm gì )<br>\
-- We tried to learn hard.<br>\
-73. Try doing S.TH ( Thử làm gì )<br>\
-- We tried cooking this food.<br>\
-74. To need to do S.TH ( Cần làm gì )<br>\
-- You need to work harder.<br>\
-75. To need doing ( Cần được làm )<br>\
-- This car needs repairing.<br>\
-76. To remember doing ( Nhớ đã làm gì )<br>\
-- I remember seeing this film.<br>\
-77. To remember to do ( Nhớ làm gì ) ( chưa làm cái này )<br>\
-- Remember to do your homework.<br>\
-78. To have S.TH + Vp.p ( Có cái gì được làm )<br>\
-= To have S.B do S.TH ( Thuê ai làm gì )<br>\
-- I’m going to have my house repainted. (thuê người sơn nhà)<br>\
-- I’m going to have the garage repair my car.<br>\
-- I’m going to have my car repaired.<br>\
-79. To be busy doing S.TH ( Bận rộn làm gì )<br>\
-- We're busy preparing for our exam.<br>\
-80. To mind doing S.TH ( Phiền làm gì )<br>\
-- Do / Would you mind closing the door for me?<br>\
-81. To be used to doing S.TH ( Quen với việc làm gì )<br>\
-- We're used to getting up early.<br>\
-82. To stop to do S.TH ( Dừng lại để làm gì )<br>\
-- We stopped to buy some petrol.<br>\
-83. To stop doing S.TH ( Thôi không làm gì nữa )<br>\
-- We stopped going out late.<br>\
-84. Let S.B do S.TH ( Để ai làm gì )<br>\
-- Let him come in.<br>\
-",
-}
-,{
-unit:1,
 title: "School Supplies",
 en: "Watercolor n /ˈwɔː.təˌkʌl.ər/  Màu nước<br>\
 Thumbtack n /ˈθʌm.tæk/  Đinh ghim<br>\
@@ -281,9 +70,7 @@ Funnel n /ˈfʌn.əl/  Cái phễu\
 {
 title:"Daily Activities",
 en:"Brush your teeth v /brʌʃ ti:θ/  Đánh răng<br>\
-Buy v /bai/  Mua<br>\
 Comb the hair v /koum ðə heə/  Chải đầu<br>\
-Cook v /kuk/  Nấu ăn<br>\
 Do exercise v /du: eksəsaiz/  Tập thể dục<br>\
 Do your homework v /du ‘houmwə:k/  Làm bài tập về nhà<br>\
 Eat out v /ˈiːt ˌaʊt/  Đi ăn ở ngoài<br>\
@@ -362,6 +149,7 @@ Turtle n /ˈtɜːtl/  Rùa biển<br>\
 Crab n /kræb/  Cua",
 },
 {
+title:"Number",
 en:"Cardinal number n /ˈkɑr·dən·əl ˈnʌm·bər/  Số đếm<br>\
 Ordinal number n /ˈɔr·dən·əl ˈnʌm·bər/  Số thứ tự<br>\
 Decimal n /ˈdes.ɪ.məl/  Số thập phân<br>\
@@ -382,7 +170,6 @@ Thousand n /ˈθaʊ.zənd/  Một nghìn<br>\
 Million n /ˈmɪl.jən/  Một triệu<br>\
 Billion n /ˈbɪl.jən/  Một tỷ<br>\
 Half n /hɑːf/  Một nửa",
-title:"Number",
 },
 {
 title:"Shopping",
@@ -1141,15 +928,27 @@ smoky a /ˈsməʊki/  xông khói",
 },
 {
 title:"Natural disasters",
-en:"tornado n /tɔːrˈneɪdəʊ/ lốc xoáy<br>\
-snowstorm n /ˈsnəʊstɔːrm/ bão tuyết<br>\
-earthquake n /ˈɜːrθkweɪk/ động đất<br>\
-typhoon n /taɪˈfuːn/ bão<br>\
-drought n /draʊt/ hạn hán<br>\
-tsunami n /tsuːˈnɑːmi/ sóng thần<br>\
+en:"Snowstorm n /ˈsnəʊstɔːrm/ bão tuyết<br>\
+Typhoon n /taɪˈfuːn/ bão<br>\
+Tsunami n /tsuːˈnɑːmi/ sóng thần<br>\
 landslide n /ˈlændslaɪd/ sạt lở đất<br>\
-volcanic eruption n /vɑːlˈkænɪk ɪˈrʌpʃn/ núi lửa phun<br>\
-flood n /flʌd/ lũ lụt",
+Volcanic eruption n /vɑːlˈkænɪk ɪˈrʌpʃn/ núi lửa phun<br>\
+Earthquake n /ˈɜːrθˌkweɪk/ Động đất<br>\
+Aftershock n /ˈæftərˌʃɒk/ Dư chấn<br>\
+Flood n /flʌd/ Lũ lụt<br>\
+Drought n draʊt/ Hạn hán<br>\
+Famine n /ˈfæmɪn/ Nạn đói<br>\
+Avalanche n /ˈævəˌlæntʃ/ Tuyết lở<br>\
+Blizzard n /ˈblɪzərd/ Bão tuyết<br>\
+Tornado n /tɔrˈneɪdoʊ/ Lốc xoáy<br>\
+Forest fire n. phr /ˈfɔːrɪst ˌfaɪər/ Cháy rừng<br>\
+Hurricane n /ˈhɜːrɪˌkeɪn/ Bão<br>\
+Storm n /stɔːrm/ Bão<br>\
+Evacuation n /ɪˌvækjuˈeɪʃən/ Sự sơ tán<br>\
+Evacuate v /ɪˈvækjuˌeɪt/ Sơ tán<br>\
+Catastrophic adj /ˌkætəˈstrɒfɪk/ Thảm khốc<br>\
+Nationwide adj /ˌneɪʃənˈwaɪd/ Toàn quốc<br>\
+Precaution n /prɪˈkɔːʃən/ Sự phòng ngừa"
 },
 {
 	title:"Character",
@@ -1250,32 +1049,6 @@ frank /frænk/ thẳng thắn<br>\
 obedient /ǝ'bi:diǝnt/ vâng lời",
 },
 {
-	title:"Many/much/some/no most",
-	en:"many + N đếm số nhiều<br>\
-much + N ko đếm<br>\
-<br>\
-(a) few +  N đếm số nhiều<br>\
-(a) little +  N ko đếm<br>\
-<br>\
-a great deal of +  N ko đếm<br>\
-a large number of + N đếm số nhiều<br>\
-<br>\
-every + N đếm số ít  + V_số ít<br>\
-<br>\
-each + N đếm số ít<br>\
-each + the/these/those. + N số nhiều<br>\
-each + us/you/them  <br>\
-each đứng 1 mình<br>\
-	each ....  + V_số ít<br>\
-<br>\
-both + the/these/those. + N số nhiều<br>\
-both + us/you/them <br>\
-both ....  + V_số nhiều<br>\
-<br>\
-all/most/some/any/no + N đếm | ko đếm<br>\
-a lot of / lots of + N đếm | ko đếm",
-},
-{
 	title:"Emotion, Feeling",
 	en:"Angry a /ˈæŋɡri/ Tức giận<br>\
 Sleepy a /ˈsliːpi/ Buồn ngủ<br>\
@@ -1318,7 +1091,910 @@ Non-alcoholic a /ˌnɑːn ˌæl.kəˈhɒl.ɪk/ Không cồn<br>\
 Full-cream a /ˌfʊl ˈkriːm/ Nguyên kem<br>\
 Herbal a /ˈhɜːr.bəl/ (chứa) thảo mộc<br>\
 Mineral water n /ˈmɪn.ər.əl ˈwɔː.tər/ Nước khoáng",
+},
+{
+	title:"Flowers",
+	en:"Lotus n /ˈloʊtəs/ Hoa sen<br>\
+Lily adv /ˈlɪli/ Hoa loa kèn<br>\
+Poppy n /ˈpɒp.i/ Hoa anh túc<br>\
+Bougainvillea n /ˌbuː.ɡənˈvɪl.i.ə/ Hoa giấy<br>\
+Gerbera flower n /ˈɡɜːr.bər.ə ˈflaʊ.ər/ Hoa đồng tiền<br>\
+Tuberose n /ˈtuː.bəˌroʊz/ Hoa huệ<br>\
+Apricot blossom n /ˈeɪ.prɪ.kɒt ˈblɒs.əm/ Hoa mai<br>\
+Dahlia n /ˈdeɪ.li.ə/ Hoa thược dược<br>\
+Jasmine n /ˈʤæzmɪn/ Hoa lài<br>\
+Sunflower n /ˈsʌnˌflaʊ.ər/ Hoa hướng dương<br>\
+Marigold n /ˈmær.ɪˌɡoʊld/ Hoa cúc vạn thọ<br>\
+Orchid n /ˈɔːr.kɪd/ Hoa lan<br>\
+Rose n /roʊz/ Hoa hồng<br>\
+Carnation n /kɑːrˈneɪ.ʃən/ Hoa cẩm chướng<br>\
+Cherry blossom n /ˈtʃɛr.i ˈblɒs.əm/ Hoa anh đào<br>\
+Poinsettia n /ˌpɔɪnˈsɛˌtiə/ Hoa trạng nguyên<br>\
+Flamboyant n /flæmˈbɔɪənt/ Hoa phượng<br>\
+Hibiscus n /hɪˈbɪs.kəs/ Hoa dâm bụt<br>\
+Peach blossom n /piːtʃ ˈblɒs.əm/ Hoa đào",
+},
+{
+	title:"Movie",
+	en:"Movie n /ˈmuː.vi/ Phim<br>\
+Famous a /ˈfeɪməs/ Nổi tiếng<br>\
+Comedy n /ˈkɑmədi/ Hài kịch<br>\
+Audience n /ˈɔː.di.əns/ Khán giả<br>\
+Film Festival n /fɪlm ˈfɛstɪvəl/ Liên hoan phim<br>\
+Trailer n /ˈtreɪlər/ Đoạn phim quảng cáo<br>\
+Movie star n /ˈmuː.vi stɑːr/ Ngôi sao điện ảnh<br>\
+Soundtrack n /ˈsaʊnˌtræk/ Nhạc phim<br>\
+Cartoon n /kɑːrˈtuːn/ Phim hoạt hình<br>\
+Drama n /ˈdrɑː.mə/ Vở kịch<br>\
+Action film n /ˈækʃən fɪlm/ Phim hành động<br>\
+Celebrity n /səˈlɛbrɪti/ Người nổi tiếng<br>\
+Script n /skrɪpt/ Kịch bản<br>\
+Theater n /ˈθiː.ə.tər/ Nhà hát<br>\
+Actor n /ˈæktər/ Nam diễn viên<br>\
+Actress n /ˈæk.trɪs/ Nữ diễn viên<br>\
+Director n /dɪˈrɛktər/ Đạo diễn<br>\
+Romantic a /roʊˈmæntɪk/ Lãng mạn<br>\
+Silent film n /ˈsaɪlənt fɪlm/ Phim câm<br>\
+Movie ticket n /ˈmuː.vi ˈtɪk.ɪt/ Vé xem phim",
+},
+{
+	title:"Football",
+	en:"Stadium n /ˈsteɪdiəm/ Sân vận động<br>\
+Stand n /stænd/ Khán đài<br>\
+Pitch n /pɪʧ/ Sân<br>\
+Touchline n /ˈtʌtʃ.laɪn/ Đường biên<br>\
+Penalty area n /ˈpɛnəlti ˈɛriə/ Khu phạt đền<br>\
+Goal n /goʊl/ Khung thành<br>\
+Penalty n /ˈpɛnəlti/ Phạt đền<br>\
+Corner kick n /ˈkɔːr.nər kɪk/ Cú đá phạt góc<br>\
+Free kick n /ˌfriː ˈkɪk/ Đá phạt trực tiếp<br>\
+Indirect free kick n /ˌɪn.daɪˈrɛkt ˌfriː ˈkɪk/ Đá phạt gián tiếp<br>\
+Kick off v /ˈkɪk .ɔːf/ Bắt đầu, lăn bóng<br>\
+Offside n /ˌɒfˈsaɪd/ Việt vị<br>\
+Corner flag n /ˈkɔːr.nər flæɡ/ Cờ cắm tại góc sân bóng đá Bet v /bɛt/ Cá độ<br>\
+The bench n /ðə bɛnʧ/ Băng ghế dự bị<br>\
+Foul n /faʊl/ Lỗi, pha phạm lỗi<br>\
+Goal line n /ˈɡoʊl laɪn/ Vạch kẻ (khung thành)<br>\
+Shoot v /ʃuːt/ Ném, sút<br>\
+Goalkeeper n /ˈɡoʊlˌkiː.pər/ Thủ môn<br>\
+Defender n /dɪˈfɛn.dər/ Hậu vệ<br>\
+Centre back n /ˈsɛn.tər bæk/ Trung vệ<br>\
+Midfielder n /ˈmɪdˌfiːl.dər/ Trung vệ <br>\
+Attacking midfielder n /əˈtæk.ɪŋ ˈmɪdˌfiːl.dər/ Tiền vệ tấn công<br>\
+Winger n /ˈwɪŋ.ər/ Cầu thủ chạy biên<br>\
+Referee n /ˌrɛf.əˈriː/ Trọng tài<br>\
+Commentator n /ˈkɒm.ənˌteɪ.tər/ Bình luận viên<br>\
+Supporter n /səˈpɔːr.tər/ Cổ động viên<br>\
+Linesman n /ˈlaɪnz.mən/ Trọng tài biên<br>\
+Hooligan n /ˈhuː.lɪ.ɡən/ Kẻ côn đồ, quá khích<br>\
+Red card n /ˈrɛd kɑːrd/ Thẻ đỏ<br>\
+Yellow card n /ˈjɛl.oʊ kɑːrd/ Thẻ vàng<br>\
+Coach n /koʊtʃ/ Huấn luyện viên<br>\
+Reserve team n /rɪˈzɜːrv tiːm/ Đội dự bị<br>\
+Caution n /ˈkɔː.ʃən/ Lời cảnh cáo<br>\
+Stimulant n /ˈstɪm.jʊ.lənt/ Chất kích thích<br>\
+Strategy n /ˈstræt.ə.dʒi/ Chiến lược<br>\
+Striker n /ˈstraɪ.kər/ Tiền đạo",
+},
+{
+	title:"Christmas",
+	en:"Winter n /ˈwɪn.tər/ Mùa đông<br>\
+Candle n /ˈkæn.dəl/ Nến<br>\
+Snow n /snoʊ/ Tuyết<br>\
+Sack n /sæk/ Bao, túi<br>\
+Card n /kɑːrd/ Tấm thiệp<br>\
+Fireplace n /ˈfaɪərˌpleɪs/ Lò sưởi<br>\
+Chimney n /ˈtʃɪm.ni/ Ống khói<br>\
+Gift n /ɡɪft/ Quà tặng<br>\
+Christmas n /ˈkrɪs.məs/ Lễ Giáng Sinh<br>\
+Ornament n /ˈɔːr.nə.mənt/ Đồ trang trí<br>\
+Pine tree n /paɪn triː/ Cây thông<br>\
+Sled v /slɛd/ Xe trượt tuyết<br>\
+Bell n /bɛl/ Chuông<br>\
+Snowflake n /ˈsnoʊˌfleɪk/ Bông tuyết<br>\
+Wreath n /riːθ/ Vòng hoa<br>\
+Scarf n /skɑːrf/ Khăn choàng cổ<br>\
+Christmas tree n /ˈkrɪs.məs triː/ Cây thông Giáng Sinh<br>\
+Christmas card n /ˈkrɪs.məs kɑːrd/ Thiệp Giáng sinh",
+},
+{
+	title:"Food",
+	en:"Beef n /biːf/ Thịt bò<br>\
+Pork n /pɔːrk/ Thịt heo<br>\
+Bacon n /ˈbeɪ.kən/ Thịt ba rọi xông khói<br>\
+Ham n /hæm/ Thịt đùi, thịt xông khói<br>\
+Yoghurt n /ˈjoʊ.ɡərt/ Sữa chua<br>\
+Pie n /paɪ/ Bánh nướng<br>\
+Bread n /brɛd/ Bánh mì<br>\
+Cake n /keɪk/ Bánh ngọt<br>\
+Chip n /tʃɪp/ Khoai tây chiên<br>\
+Biscuit n /ˈbɪs.kɪt/ Bánh quy<br>\
+Noodle n /ˈnuː.dəl/ Mì, bún<br>\
+Butter n /ˈbʌt.ər/ Bơ<br>\
+Olive n /ˈɒl.ɪv/ Quả ô liu<br>\
+Soy n /sɔɪ/ Đậu nành<br>\
+Flour n /ˈflaʊər/ Bột<br>\
+Lunch n /lʌntʃ/ Bữa ăn trưa<br>\
+Mint n /mɪnt/ Bạc hà<br>\
+Vanilla n /vəˈnɪl.ə/ Vani<br>\
+Candy n /ˈkæn.di/ Kẹo<br>\
+Popcorn n /ˈpɒp.kɔːrn/ Bỏng ngô<br>\
+Snack n /snæk/ Bữa ăn nhẹ<br>\
+Barbecue n /ˈbɑːr.bɪ.kjuː/ Tiệc nướng ngoài trời [BBQ]<br>\
+Fast food n /ˌfæst ˈfuːd/ Thức ăn nhanh<br>\
+Junk food n /ˈdʒʌŋk ˌfuːd/ Đồ ăn vặt<br>\
+Frozen food n /ˈfroʊ.zən ˌfuːd/ Thực phẩm đông lạnh<br>\
+Health food n /ˈhɛlθ ˌfuːd/ Thực phẩm tự nhiên<br>\
+Distinctive a /dɪˈstɪŋk.tɪv/ Đặc trưng, khác biệt<br>\
+Flavor n /ˈfleɪ.vər/ Hương vị<br>\
+Balanced diet n /ˈbæl.ənst ˈdaɪ.ət/ Chế độ ăn uống cân bằng<br>\
+Stale a /steɪl/ Ôi, thiu<br>\
+Sour a /ˈsaʊ.ər/ Chua<br>\
+Burnt a /bɜːrnt/ Cháy, khét<br>\
+Overdone a /ˌoʊ.vərˈdʌn/ Quá chín, rục<br>\
+Underdone a /ˌʌn.dərˈdʌn/ Chưa chín, tái<br>\
+Full a /fʊl/ No<br>\
+Veal n /viːl/ Thịt bê<br>\
+Cereal n /ˈsɪər.i.əl/ Ngũ cốc<br>\
+Hot dog n /ˈhɒt dɒɡ/ Bánh mì kẹp xúc xích",
 }
+,{
+	title:"Music",
+	en:"Music n /ˈmjuː.zɪk/ Âm nhạc<br>\
+Band n /bænd/ Nhóm nhạc, ban nhạc<br>\
+Play v /pleɪ/ Chơi (nhạc cụ)<br>\
+Note n /noʊt/ Nốt nhạc<br>\
+Drum n /drʌm/ Trống<br>\
+Playlist n /ˈpleɪ.lɪst/ Danh sách bài hát<br>\
+Musician n /mjuˈzɪʃ.ən/ Nhạc sĩ<br>\
+Perform v /pərˈfɔːrm/ Trình diễn, biểu diễn<br>\
+Rhythm n /ˈrɪð.əm/ Nhịp điệu<br>\
+Dance v /dæns/ Nhảy, khiêu vũ<br>\
+Listen v /ˈlɪs.ən/ Lắng nghe<br>\
+Volume n /ˈvɑːl.juːm/ Âm lượng<br>\
+Song n /sɔːŋ/ Bài hát<br>\
+Sing v /sɪŋ/ Hát, ca hát<br>\
+Piano n /piˈæn.oʊ/ Đàn piano<br>\
+Guitar n /ɡɪˈtɑːr/ Đàn ghi-ta<br>\
+Instrument n /ˈɪn.strə.mənt/ Nhạc cụ<br>\
+Harmony n /ˈhɑːr.mə.ni/ Hoà âm<br>\
+Melody n /ˈmɛl.ə.di/ Giai điệu<br>\
+String n /strɪŋ/ Dây đàn<br>\
+The brass n /ðə bræs/ Dàn kèn đồng<br>\
+Symphony n /ˈsɪm.fə.ni/ Bản giao hưởng<br>\
+Overture n /ˈoʊ.vər.tʃʊr/ Khúc dạo đầu<br>\
+Conductor n /kənˈdʌk.tər/ Nhạc trưởng<br>\
+Composer n /kəmˈpoʊ.zər/ Nhà soạn nhạc<br>\
+Voice n /vɔɪs/ Giọng nói, giọng hát<br>\
+Solo n /ˈsoʊ.loʊ/ Bài đơn ca<br>\
+Lead singer n /liːd ˈsɪŋ.ər/ Ca sĩ hát chính<br>\
+Guitarist n /ɡɪˈtɑːr.ɪst/ Nghệ sĩ ghi-ta<br>\
+Drummer n /ˈdrʌm.ər/ Người đánh trống<br>\
+Lyrics n /ˈlɪr.ɪks/ Lời bài hát<br>\
+Chorus n /ˈkɔːr.əs/ Điệp khúc<br>\
+Opera n /ˈɑː.pə.rə/ Nhạc kịch, ô-pê-ra<br>\
+Folk music n /ˈfoʊk ˌmjuː.zɪk/ Nhạc dân gian<br>\
+Album n /ˈæl.bəm/ Tuyển tập ca khúc<br>\
+Tune n /tjuːn/ Giai điệu<br>\
+Violin n /ˌvaɪəˈlɪn/ Đàn vi-ô-lông<br>\
+Classical music n /ˈklæs.ɪ.kəl ˌmjuː.zɪk/ Nhạc cổ điển",
+}
+,{
+	title:"Love",
+	en:"Date n /deɪt/ Buổi hẹn hò<br>\
+Engagement n /ɪnˈɡeɪdʒ.mənt/ Đính hôn<br>\
+Ring n /rɪŋ/ Nhẫn<br>\
+Romantic a /roʊˈmæn.tɪk/ Lãng mạn<br>\
+Sweet a /swiːt/ Ngọt ngào<br>\
+Alone a /əˈloʊn/ Một mình<br>\
+Couple n /ˈkʌp.əl/ Cặp đôi<br>\
+Forever adv /fɔːrˈɛv.ər/ Mãi mãi<br>\
+Boyfriend n /ˈbɔɪ.frɛnd/ Bạn trai<br>\
+Girlfriend n /ˈɡɜːl.frɛnd/ Bạn gái<br>\
+Kiss v /kɪs/ Hôn<br>\
+Heart n /hɑːrt/ Trái tim<br>\
+Hug v /hʌɡ/ Ôm<br>\
+Propose v /prəˈpoʊz/ Cầu hôn<br>\
+Chocolate n /ˈtʃɒk.lɪt/ Sô-cô-la<br>\
+Wedding n /ˈwɛd.ɪŋ/ Đám cưới<br>\
+Anniversary n /ˌæn.ɪˈvɜː.sər.i/ Ngày kỷ niệm<br>\
+Darling n /ˈdɑːr.lɪŋ/ Em yêu, anh yêu<br>\
+Single a /ˈsɪŋ.ɡəl/ Độc thân<br>\
+",
+},
+{
+	title:"Restaurant, Hotel",
+	en:"Restaurant n /ˈrɛs.tə.rɒnt/ Nhà hàng<br>\
+Main course n /meɪn kɔːrs/ Món chính<br>\
+Napkin n /ˈnæp.kɪn/ Khăn ăn<br>\
+Wine n /waɪn/ Rượu vang<br>\
+Cutlery n /ˈkʌt.lə.ri/ Dụng cụ ăn<br>\
+Drink n /drɪŋk/ Đồ uống<br>\
+Combo n /ˈkɒm.boʊ/ Gói, bộ<br>\
+Side dish n /saɪd dɪʃ/ Đồ ăn kèm<br>\
+Meal n /miːl/ Bữa ăn<br>\
+Order v /ˈɔːr.dər/ Gọi món<br>\
+Speciality n /ˌspeʃ.iˈæl.ə.ti/ Đặc sản<br>\
+Dessert n /dɪˈzɜːrt/ Món tráng miệng<br>\
+Salad n /ˈsæl.əd/ Rau trộn<br>\
+Menu n /ˈmɛnjuː/ Thực đơn<br>\
+Waiter n /ˈweɪ.tər/ Người hầu bàn (nam)<br>\
+Guest n /ɡɛst/ Khách<br>\
+Coupon n /ˈkuː.pɒn/ Phiếu giảm giá<br>\
+Neat a /niːt/ Gọn gàng, ngăn nắp<br>\
+Animated a /ˈæn.ɪˌmeɪ.tɪd/ Náo nhiệt, sôi nổi<br>\
+Hotel n /hoʊˈtɛl/ Khách sạn<br>\
+Hotel receptionist n /hoʊˈtɛl rɪˈsɛp.ʃən.ɪst/ Nhân viên lễ tân khách sạn<br>\
+Housekeeper n /ˈhaʊsˌkiː.pər/ Nhân viên dọn phòng<br>\
+Hall n /hɔːl/ Hành lang<br>\
+Vacancy n /ˈveɪ.kən.si/ Phòng trống<br>\
+Lobby n /ˈlɒb.i/ Hành lang<br>\
+Concierge n /kɒn.siˈɛrʒ/ Nhân viên hướng dẫn<br>\
+Check-in n /ˈtʃɛk.ɪn/ Việc nhận phòng<br>\
+Desk clerk n /dɛsk klɜːrk/ Nhân viên lễ tân<br>\
+Double bed n /ˈdʌb.əl bɛd/ Giường đôi<br>\
+Single bed n /ˈsɪŋ.ɡəl bɛd/ Giường đơn<br>\
+Doorman n /ˈdɔːr.mən/ Nhân viên gác cửa<br>\
+Reception n /rɪˈsɛp.ʃən/ Quầy lễ tân<br>\
+Elevator n /ˈɛl.ɪˌveɪ.tər/ Thang máy<br>\
+Reservation n /ˌrɛz.ərˈveɪ.ʃən/ Sự đặt chỗ trước<br>\
+Bellboy n /ˈbɛl.bɔɪ/ Người trực tầng<br>\
+Check out v /ˈtʃɛk aʊt/ Trả phòng",
+},
+{
+	title:"School",
+	en:"Nursery school n /ˈnɜː.sər.i skuːl/ Trường mẫu giáo<br>\
+Teacher n /ˈtiː.tʃər/ Giáo viên<br>\
+Classmate n /ˈklæs.meɪt/ Bạn cùng lớp<br>\
+Library n /ˈlaɪ.brər.i/ Thư viện<br>\
+Pen n /pɛn/ Bút mực<br>\
+Pencil n /ˈpɛn.səl/ Bút chì<br>\
+Ruler n /ˈruː.lər/ Cây thước<br>\
+Calculator n /ˈkæl.kjʊ.leɪ.tər/ Máy tính cầm tay<br>\
+Chalk n /tʃɔːk/ Phấn<br>\
+Student n /ˈstjuː.dənt/ Sinh viên, học sinh<br>\
+Classroom n /ˈklæs.ruːm/ Phòng học<br>\
+Primary school n /ˈpraɪ.mə.ri skuːl/ Trường tiểu học<br>\
+Secondary school n /ˈsɛk.ən.dər.i skuːl/ Trường trung học cơ sở<br>\
+High school n /haɪ skuːl/ Trường trung học phổ thông<br>\
+Vocational school n /voʊˈkeɪ.ʃən.əl skuːl/ Trường dạy nghề<br>\
+College n /ˈkɒl.ɪdʒ/ Trường đại học, cao đẳng<br>\
+University n /ˌjuː.nɪˈvɜː.sə.ti/ Trường đại học<br>\
+Principal n /ˈprɪn.sɪ.pəl/ Hiệu trưởng<br>\
+Blackboard n /ˈblæk.bɔːd/ Bảng đen<br>\
+Compass n /ˈkʌm.pəs/ Com-pa<br>\
+History n /ˈhɪs.tər.i/ Môn lịch sử<br>\
+Economics n /ˌiː.kəˈnɒm.ɪks/ Kinh tế học<br>\
+Chemistry n /ˈkɛm.ɪ.stri/ Hóa học<br>\
+Biology n /baɪˈɒl.ə.dʒi/ Sinh học IT n /aɪ ˈtiː/ Công nghệ thông tin<br>\
+Geography n /dʒɪˈɒɡ.rə.fi/ Địa lý<br>\
+Art n /ɑːrt/ Mỹ thuật<br>\
+Fail v /feɪl/ Rớt; đánh rớt<br>\
+Pass v /pɑːs/ Đậu, đỗ (kỳ thi)<br>\
+Graduate v /ˈɡrædʒ.u.eɪt/ Tốt nghiệp<br>\
+Degree n /dɪˈɡriː/ Bằng cấp<br>\
+Playground n /ˈpleɪ.ɡraʊnd/ Sân chơi<br>\
+Uniform n /ˈjuː.nɪ.fɔːm/ Đồng phục<br>\
+Grade n /ɡreɪd/ Điểm số<br>\
+Form teacher n /fɔːm ˈtiː.tʃər/ Giáo viên chủ nhiệm<br>\
+Proctor n /ˈprɒk.tər/ Giám thị<br>\
+School bag n /skuːl bæg/ Cặp<br>\
+Dean n /diːn/ Trưởng khoa<br>\
+Lesson n /ˈles.ən/ Bài học<br>\
+Course n /kɔːs/ Khoá học",
+},
+{
+	title:"Weather",
+	en:"Weather n /ˈwɛð.ər/ Thời tiết<br>\
+Warm a /wɔːrm/ Ấm áp, ấm<br>\
+Wind n /wɪnd/ Gió<br>\
+Rain n /reɪn/ Mưa<br>\
+Temperature n /ˈtɛm.prə.tʃər/ Nhiệt độ<br>\
+Weather forecast n /ˈwɛð.ər ˈfɔːr.kæst/ Bản tin dự báo thời tiết<br>\
+Sunny n /ˈsʌn.i/ Có nắng<br>\
+Sunshine n /ˈsʌn.ʃaɪn/ Ánh nắng mặt trời<br>\
+Icy n /ˈaɪ.si/ Lạnh lẽo<br>\
+Atmosphere n /ˈæt.mə.sfɪər/ Bầu khí quyển<br>\
+Dry a /draɪ/ Khô<br>\
+Sun n /sʌn/ Mặt trời<br>\
+Cloud n /klaʊd/ Đám mây<br>\
+Fog n /fɔːɡ/ Sương mù<br>\
+Snow n /snoʊ/ Tuyết<br>\
+Cold a /koʊld/ Lạnh<br>\
+Cool a /kuːl/ Mát mẻ<br>\
+Hot a /hɒt/ Nóng<br>\
+Wet a /wɛt/ Ẩm ướt<br>\
+Erratic a /ɪˈræt.ɪk/ Thất thường<br>\
+Thunder n /ˈθʌn.dər/ Sấm<br>\
+Hailstone n /ˈheɪl.stoʊn/ Viên mưa đá<br>\
+Blustery a /ˈblʌs.tər.i/ Có gió lớn<br>\
+Downpour n /ˈdaʊn.pɔːr/ Mưa lớn<br>\
+Raincoat n /ˈreɪn.koʊt/ Áo mưa<br>\
+Blizzard n /ˈblɪz.ərd/ Bão tuyết<br>\
+Rainbow n /ˈreɪn.boʊ/ Cầu vồng<br>\
+Dew n /djuː/ Sương<br>\
+Sleet n /sliːt/ Mưa tuyết<br>\
+Stormy a /ˈstɔːr.mi/ Có bão<br>\
+Snowflake n /ˈsnoʊ.fleɪk/ Bông tuyết<br>\
+Puddle n /ˈpʌd.əl/ Vũng nước mưa<br>\
+Lightning n /ˈlaɪt.nɪŋ/ Tia chớp<br>\
+Mild a /maɪld/ Ôn hoà<br>\
+Dull a /dʌl/ U ám<br>\
+Shelter n /ˈʃɛl.tər/ Chỗ trú ẩn<br>\
+Celsius a /ˈsɛl.si.əs/ (thuộc) độ C<br>\
+Fine n /faɪn/ Đẹp<br>\
+",
+},
+{
+	title:"Clothes",
+	en:"Skirt n /skɜːrt/ Váy<br>\
+Leggings n /ˈlɛɡ.ɪŋz/ Quần bó<br>\
+Overalls n /ˈoʊ.vər.ɔːlz/ Quần yếm<br>\
+Turtleneck n /ˈtɜːr.tl̩.nɛk/ Áo cổ lọ<br>\
+Bow tie n. phr /ˈboʊ taɪ/ Nơ con bướm<br>\
+Tie n /taɪ/ Cà vạt<br>\
+Tunic n /ˈtuː.nɪk/ Áo trùm hông<br>\
+Vest n /vɛst/ Áo gi-lê<br>\
+T-shirt n /ˈtiː.ʃɜːrt/ Áo thun<br>\
+Shirt n /ʃɜːrt/ Áo sơ mi<br>\
+Jeans n /dʒiːnz/ Quần jean<br>\
+Dress n /drɛs/ Áo đầm<br>\
+Coat n /koʊt/ Áo khoác<br>\
+Jacket n /ˈdʒæk.ɪt/ Áo khoác<br>\
+Sweater n /ˈswɛt.ər/ Áo len<br>\
+Jumpsuit n /ˈdʒʌmp.suːt/ Bộ áo liền quần<br>\
+Shorts n /ʃɔːrts/ Quần đùi<br>\
+Suit n /suːt/ Bộ com lê<br>\
+Anorak n /ˈæn.ə.ræk/ Áo ngoài có mũ trùm đầu<br>\
+Hat n /hæt/ Mũ, nón<br>\
+Cap n /kæp/ Mũ lưỡi trai<br>\
+Glove n /ɡlʌv/ Găng tay<br>\
+Scarf n /skɑːrf/ Khăn choàng cổ<br>\
+Sandals n /ˈsæn.dəlz/ Giày xăng-đan<br>\
+Slippers n /ˈslɪp.ərz/ Đôi dép<br>\
+Pocket n /ˈpɒk.ɪt/ Túi (quần áo)<br>\
+Sleeve n /sliːv/ Tay áo<br>\
+Collar n /ˈkɒl.ər/ Cổ áo<br>\
+Zip n /zɪp/ Khóa kéo<br>\
+Blouse n /blaʊs/ Áo sơ mi nữ<br>\
+Button n /ˈbʌt.ən/ Khuy, nút<br>\
+Underwear n /ˈʌn.dərˌwɛər/ Đồ lót<br>\
+Bra n /brɑː/ Áo ngực<br>\
+Pants n /pænts/ Quần dài<br>\
+Belt n /bɛlt/ Dây nịt<br>\
+High heels n. phr /haɪ hiːlz/ Giày cao gót<br>\
+Try on v /traɪ ɒn/ Thử (quần áo)<br>\
+Size n /saɪz/ Kích cỡ",
+}
+,{
+	title:"Body Parts",
+	en:"Head n /hɛd/ Đầu<br>\
+Face n /feɪs/ Khuôn mặt<br>\
+Hair n /hɛr/ Tóc<br>\
+Ear n /ɪr/ Tai<br>\
+Neck n /nɛk/ Cổ<br>\
+Forehead n /ˈfɔːrˌhɛd/ Trán<br>\
+Beard n /bɪrd/ Râu<br>\
+Eye n /aɪ/ Mắt<br>\
+Nose n /noʊz/ Mũi<br>\
+Mouth n /maʊθ/ Miệng<br>\
+Chin n /tʃɪn/ Cằm<br>\
+Shoulder n /ˈʃoʊl.dər/ Vai<br>\
+Elbow n /ˈɛl.boʊ/ Khuỷu tay<br>\
+Arm n /ɑ:rm/ Cánh tay<br>\
+Chest n /tʃɛst/ Ngực<br>\
+Armpit n /ˈɑ:rmˌpɪt/ Nách<br>\
+Wrist n /rɪst/ Cổ tay<br>\
+Navel n /ˈneɪ.vəl/ Rún, rốn<br>\
+Ankle n /ˈæŋ.kəl/ Mắt cá chân<br>\
+Waist n /weɪst/ Eo<br>\
+Abdomen n /ˈæb.də.mən/ Bụng<br>\
+Leg n /lɛɡ/ Chân<br>\
+Thigh n /θaɪ/ Đùi<br>\
+Knee n /niː/ Đầu gối<br>\
+Hand n /hænd/ Bàn tay<br>\
+Thumb n /θʌm/ Ngón tay cái<br>\
+Back n /bæk/ Lưng<br>\
+Foot n /fʊt/ Bàn chân<br>\
+Finger n /ˈfɪŋ.ɡər/ Ngón tay<br>\
+Toe n /toʊ/ Ngón chân",
+},
+{
+	title:"Education",
+	en:"Boarding school n ˈbɔːrd.ɪŋ skuːl/ Trường nội trú<br>\
+Public school n /ˈpʌb.lɪk skuːl/ Trường công lập<br>\
+Private school n /ˈpraɪ.vɪt skuːl/ Trường tư thục<br>\
+Secondary school n /ˈsɛk.ənˌdɛr.i skuːl/ Trường trung học cơ sở<br>\
+High school n /haɪ skuːl/ Trường trung học phổ thông<br>\
+Primary school n /ˈpraɪˌmɛr.i skuːl/ Trường tiểu học<br>\
+Nursery school n /ˈnɜːr.sər.i skuːl/ Trường mẫu giáo<br>\
+School n /skuːl/ Trường học<br>\
+College n /ˈkɒl.ɪdʒ/ Trường đại học, cao đẳng<br>\
+University n /ˌjuː.nɪˈvɜːr.sə.ti/ Trường đại học<br>\
+Professor n /prəˈfɛs.ər/ Giáo sư<br>\
+Lecturer n /ˈlɛk.tʃər.ər/ Giảng viên<br>\
+Researcher n /rɪˈsɜːr.tʃər/ Nghiên cứu viên<br>\
+Graduate v /ˈɡrædʒ.u.eɪt/ Tốt nghiệp<br>\
+Degree n /dɪˈɡriː/ Bằng cấp<br>\
+Thesis n /ˈθiː.sɪs/ Luận văn, luận án<br>\
+Lecture n /ˈlɛk.tʃər/ Bài giảng, bài thuyết trình<br>\
+Debate n /dɪˈbeɪt/ Cuộc tranh luận<br>\
+Higher education n /ˈhaɪ.ər ˌɛdʒ.əˈkeɪ.ʃən/ Giáo dục đại học<br>\
+Semester n /sɪˈmɛs.tər/ Học kỳ<br>\
+Student n /ˈstjuː.dənt/ Sinh viên, học sinh<br>\
+Student union n /ˈstjuː.dənt ˈjuː.njən/ Hội sinh viên<br>\
+Tuition fee n /tjuːˈɪʃ.ən fiː/ Học phí<br>\
+Exam n /ɪɡˈzæm/ Bài thi, kì thi<br>\
+Fail v /feɪl/ Thi trượt<br>\
+Pass v /pæs/ Đậu, đỗ<br>\
+Study v /ˈstʌd.i/ Học<br>\
+Learn v /lɜːrn/ Học<br>\
+Curriculum n /kəˈrɪk.jə.ləm/ Chương trình giảng dạy<br>\
+Course n /kɔːrs/ Khóa học<br>\
+Subject n /ˈsʌb.dʒɪkt/ Môn học<br>\
+Grade n /ɡreɪd/ Điểm số<br>\
+Mark n /mɑːrk/ Điểm số<br>\
+Qualification n /ˌkwɒl.ɪ.fɪˈkeɪ.ʃən/ Trình độ chuyên môn<br>\
+Attendance n /əˈtɛn.dəns/ Sự có mặt<br>\
+Absence n /ˈæb.səns/ Sự vắng mặt<br>\
+Projector n /prəˈdʒɛk.tər/ Máy chiếu<br>\
+Textbook n /ˈtɛkstˌbʊk/ Sách giáo khoa<br>\
+Question n /ˈkwɛs.tʃən/ Câu hỏi<br>\
+Answer v /ˈæn.sər/ Trả lời<br>\
+Mistake n /mɪˈsteɪk/ Sai lầm, lỗi<br>\
+Right a /raɪt/ Đúng<br>\
+Wrong a /rɒŋ/ Sai<br>\
+Register n /ˈrɛdʒ.ɪ.stər/ Sổ sách<br>\
+Assembly n /əˈsɛm.bli/ Cuộc họp<br>\
+Holiday n /ˈhɒl.ɪ.deɪ/ Kỳ nghỉ<br>\
+Teacher n /ˈtiː.tʃər/ Giáo viên<br>\
+Pupil n /ˈpjuː.pəl/ Học sinh<br>\
+Playground n /ˈpleɪ.ɡraʊnd/ Sân chơi<br>\
+Library n /ˈlaɪ.brər.i/ Thư viện<br>\
+Hall n /hɔːl/ Hội trường<br>\
+Dormitory n /ˈdɔːr.mɪ.tɔːr.i/ Ký túc xá<br>\
+Locker n /ˈlɒk.ər/ Tủ có khoá<br>\
+Classroom n /ˈklæs.ruːm/ Phòng học<br>\
+Chalk n /tʃɔːk/ Phấn<br>\
+Lesson n /ˈlɛs.ən/ Bài học<br>\
+Homework n /ˈhoʊm.wɜːrk/ Bài tập về nhà<br>\
+Test n /tɛst/ Bài kiểm tra<br>\
+",
+},
+{
+	title:"Family",
+	en:"Husband n /ˈhʌz.bənd/ Chồng<br>\
+Grandson n /ˈɡrænd.sʌn/ Cháu trai (của ông bà)<br>\
+Uncle n /ˈʌŋ.kəl/ Chú, cậu,…<br>\
+Aunt n /ænt/ Cô, dì,…<br>\
+Niece n /niːs/ Cháu gái (của cô, dì, chú)<br>\
+Nephew n /ˈnɛ.vjuː/ Cháu trai (của cô, dì, chú)<br>\
+Son-in-law n /ˈsʌn ɪn lɔː/ Con rể<br>\
+Daughter-in-law n /ˈdɔː.tər ɪn lɔː/ Con dâu<br>\
+Granddaughter n /ˈɡrændˌdɔː.tər/ Cháu gái (của ông bà)<br>\
+Grandfather n /ˈɡrændˌfɑː.ðər/ Ông nội, ông ngoại<br>\
+Wife n /waɪf/ Vợ<br>\
+Father n /ˈfɑː.ðər/ Bố<br>\
+Mother n /ˈmʌð.ər/ Mẹ<br>\
+Daughter n /ˈdɔː.tər/ Con gái<br>\
+Son n /sʌn/ Con trai<br>\
+Sister n /ˈsɪs.tər/ Chị gái, em gái<br>\
+Brother n /ˈbrʌð.ər/ Anh trai, em trai<br>\
+Grandmother n /ˈɡrændˌmʌð.ər/ Bà nội, bà ngoại<br>\
+Brother-in-law n /ˈbrʌð.ər ɪn lɔː/ Anh/em rể, anh/em chồng, anh/em vợ<br>\
+Cousin n /ˈkʌz.ɪn/ Anh họ, em họ<br>\
+Parent n /ˈpɛr.ənt/ Bố, mẹ<br>\
+Relative n /ˈrɛl.ə.tɪv/ Họ hàng, người thân<br>\
+Mother-in-law n /ˈmʌð.ər ɪn lɔː/ Mẹ chồng, mẹ vợ<br>\
+Father-in-law n /ˈfɑː.ðər ɪn lɔː/ Bố chồng, bố vợ<br>\
+Sister-in-law n /ˈsɪs.tər ɪn lɔː/ Chị/em dâu, chị/em chồng, chị/em vợ<br>\
+Adopt v /əˈdɒpt/ Nhận con nuôi<br>\
+Children n /ˈtʃɪl.drən/ Con cái<br>\
+Take care of v. phr /teɪk kɛər əv/ Chăm sóc, quan tâm<br>\
+Family tree n /ˈfæm.ə.li triː/ Gia phả<br>\
+Anniversary n /ˌæn.ɪˈvɜː.sə.ri/ Ngày kỷ niệm<br>\
+Close-knit a ˌkloʊsˈnɪt/ Khăng khít<br>\
+Stepchild n /ˈstɛpˌtʃaɪld/ Con riêng<br>\
+Half-brother n /ˈhɑːfˌbrʌð.ər/ Anh trai, em trai (cùng cha/mẹ khác mẹ/cha)<br>\
+Half-sister n /ˈhɑːfˌsɪs.tər/ Chị gái, em gái (cùng cha/mẹ khác mẹ/cha)<br>\
+Godfather n /ˈɡɒdˌfɑː.ðər/ Cha đỡ đầu<br>\
+Hereditary a /həˈrɛd.ɪ.tər.i/ Di truyền<br>\
+Stepmother n /ˈstɛpˌmʌð.ər/ Mẹ kế<br>\
+Stepfather n /ˈstɛpˌfɑː.ðər/ Cha dượng<br>\
+Orphan n /ˈɔːr.fən/ Trẻ mồ côi<br>\
+Generation n /ˌdʒɛn.əˈreɪ.ʃən/ Thế hệ<br>\
+",
+},
+{
+	title:"Fruit",
+	en:"Orange n /ˈɔːr.ɪndʒ/ Quả cam<br>\
+Lemon n /ˈlɛm.ən/ Quả chanh<br>\
+Mango n /ˈmæŋ.ɡoʊ/ Quả xoài<br>\
+Apple n /ˈæp.əl/ Quả táo<br>\
+Tangerine n /ˌtæn.dʒəˈriːn/ Quả quýt<br>\
+Grape n /ɡreɪp/ Quả nho<br>\
+Strawberry n /ˈstrɔːˌbɛr.i/ Quả dâu tây<br>\
+Melon n /ˈmɛl.ən/ Quả dưa<br>\
+Passion fruit n. phr /ˈpæʃ.ən ˌfruːt/ Quả chanh dây<br>\
+Grapefruit n /ˈɡreɪpˌfruːt/ Quả bưởi chùm<br>\
+Watermelon n /ˈwɔː.tərˌmɛl.ən/ Quả dưa hấu<br>\
+Peach n /piːtʃ/ Quả đào<br>\
+Pear n /pɛr/ Quả lê<br>\
+Banana n /bəˈnæn.ə/ Quả chuối<br>\
+Plum n /plʌm/ Quả mận<br>\
+Papaya n /pəˈpaɪ.ə/ Quả đu đủ<br>\
+Avocado n /ˌæv.əˈkɑː.doʊ/ Quả bơ<br>\
+Starfruit n /ˈstɑːrˌfruːt/ Quả khế<br>\
+Pineapple n /ˈpaɪnˌæp.əl/ Quả dứa<br>\
+Coconut n /ˈkoʊ.kəˌnʌt/ Quả dừa<br>\
+Raspberry n /ˈræzˌbɛr.i/ Quả mâm xôi<br>\
+Nectarine n /ˈnɛk.təˌriːn/ Quả xuân đào<br>\
+Mulberry n /ˈmʌlˌbɛr.i/ Quả dâu tằm<br>\
+Raisin n /ˈreɪ.zən/ Nho khô<br>\
+Jackfruit n /ˈdʒækˌfruːt/ Quả mít<br>\
+Persimmon n /pərˈsɪm.ən/ Quả hồng<br>\
+Dragon fruit n. phr ˈdræɡ.ən ˌfruːt/ Quả thanh long<br>\
+Custard apple n. phr /ˈkʌs.tərd ˌæp.əl/ Quả na<br>\
+Quince n /kwɪns/ Quả mộc qua<br>\
+Cherry n /ˈtʃɛr.i/ Quả anh đào<br>\
+Kiwi n /ˈkiː.wi/ Quả kiwi<br>\
+Pomegranate n /ˈpɒm.ɪˌɡræn.ɪt/ Quả lựu<br>\
+Guava n /ˈɡwɑː.və/ Quả ổi<br>\
+Apricot n /ˈeɪ.prɪˌkɒt/ Quả mơ<br>\
+Blueberry n /ˈbluːˌbɛr.i/ Quả việt quất<br>\
+Durian n /ˈdʊr.i.ən/ Quả sầu riêng<br>\
+Lychee n /ˈlaɪ.tʃiː/ Quả vải<br>\
+Tamarind n /ˈtæm.ər.ɪnd/ Quả me<br>\
+Kumquat n ˈkʌm.kwɒt/ Quả quất",
+},
+{
+	title:"Animal",
+	en:"Piglet n /ˈpɪɡ.lɪt/ Lợn con<br>\
+Sow n /saʊ/ Lợn cái<br>\
+Pig n /pɪɡ/ Lợn<br>\
+Duck n /dʌk/ Vịt<br>\
+Animal n /ˈæn.ɪ.məl/ Động vật<br>\
+Goat n /ɡoʊt/ Dê<br>\
+Horse n /hɔːrs/ Ngựa<br>\
+Goose n /ɡuːs/ Ngỗng<br>\
+Donkey n /ˈdɒŋ.ki/ Lừa<br>\
+Sheep n /ʃiːp/ Cừu<br>\
+Ox n /ɒks/ Bò<br>\
+Dog n /dɒɡ/ Chó<br>\
+Cat n /kæt/ Mèo<br>\
+Chicken n /ˈtʃɪk.ɪn/ Gà<br>\
+Rooster n /ˈruː.stər/ Gà trống<br>\
+Hen n /hɛn/ Gà mái<br>\
+Cow n /kaʊ/ Bò cái<br>\
+Bull n /bʊl/ Bò đực<br>\
+Calf n /kɑːf/ Bê<br>\
+Rabbit n /ˈræb.ɪt/ Thỏ<br>\
+Owl n /aʊl/ Cú<br>\
+Deer n /dɪr/ Hươu, nai<br>\
+Bat n bæt/ Dơi<br>\
+Mink n /mɪŋk/ Chồn vizon<br>\
+Monkey n /ˈmʌŋ.ki/ Khỉ<br>\
+Snake n /sneɪk/ Rắn<br>\
+Lizard n /ˈlɪz.ərd/ Thằn lằn<br>\
+Giraffe n /dʒəˈræf/ Hươu cao cổ<br>\
+Bear n /bɛr/ Gấu<br>\
+Rhino n /ˈraɪ.noʊ/ Tê giác<br>\
+Elephant n /ˈɛl.ɪ.fənt/ Voi<br>\
+Panther n /ˈpæn.θər/ Báo đen<br>\
+Leopard n /ˈlɛp.ərd/ Báo<br>\
+Tiger n /ˈtaɪ.ɡər/ Hổ<br>\
+Lion n /ˈlaɪ.ən/ Sư tử<br>\
+Fox n /fɒks/ Cáo<br>\
+Dinosaur n /ˈdaɪ.nəˌsɔːr/ Khủng long<br>\
+Turtle n /ˈtɜːr.təl/ Rùa biển<br>\
+Snail n /sneɪl/ Ốc sên<br>\
+Crow n /kroʊ/ Quạ<br>\
+Parrot n /ˈpær.ət/ Vẹt",
+},
+{
+	title:"Insect",
+	en:"Caterpillar n /ˈkæt.ərˌpɪl.ər/ Sâu bướm<br>\
+Cocoon n /kəˈkuːn/ Cái kén (tằm)<br>\
+Butterfly n /ˈbʌt.ərˌflaɪ/ Bướm<br>\
+Dragonfly n /ˈdræɡ.ənˌflaɪ/ Chuồn chuồn<br>\
+Cricket n /ˈkrɪk.ɪt/ Dế<br>\
+Grasshopper n /ˈɡræsˌhɒp.ər/ Châu chấu<br>\
+Cockroach n /ˈkɒkˌroʊtʃ/ Gián<br>\
+Beetle n /ˈbiː.təl/ Bọ cánh cứng<br>\
+Termite n /ˈtɜːr.maɪt/ Mối<br>\
+Ant n /ænt/ Kiến<br>\
+Mosquito n /məˈskiː.toʊ/ Muỗi<br>\
+Ladybug n /ˈleɪ.diˌbʌɡ/ Bọ rùa<br>\
+Spider n /ˈspaɪ.dər/ Nhện<br>\
+Firefly n /ˈfaɪrˌflaɪ/ Đom đóm<br>\
+Fly n /flaɪ/ Ruồi<br>\
+Bee n /biː/ Ong<br>\
+Wasp n /wɒsp/ Ong bắp cày<br>\
+Centipede n /ˈsɛn.tɪˌpiːd/ Rết",
+},
+{
+	title:"Studying",
+	en:"Class n /klæs/ Lớp học<br>\
+Classroom n /ˈklæsˌruːm/ Phòng học<br>\
+Textbook n /ˈtɛkstˌbʊk/ Sách giáo khoa<br>\
+Workbook n /ˈwɜːkˌbʊk/ Sách bài tập<br>\
+Reference book n. phr /ˈrɛf.ər.əns ˌbʊk/ Sách tham khảo<br>\
+Notebook n /ˈnoʊtˌbʊk/ Vở<br>\
+Notepad n /ˈnoʊtˌpæd/ Sổ ghi chép<br>\
+Pencil n /ˈpɛn.səl/ Bút chì<br>\
+Crayon n /ˈkreɪ.ɒn/ Bút chì màu<br>\
+Pencil sharpener n. phr /ˈpɛn.səl ˌʃɑːp.nər/ Đồ gọt bút chì<br>\
+Eraser n /ɪˈreɪ.zər/ Cục tẩy<br>\
+Pen n /pɛn/ Bút mực<br>\
+Ballpoint pen n. phr /ˈbɔːl.pɔɪnt ˌpɛn/ Bút bi<br>\
+Paper n /ˈpeɪ.pər/ Giấy<br>\
+Desk n /dɛsk/ Bàn học<br>\
+Map n /mæp/ Bản đồ<br>\
+Glue n /ɡluː/ Hồ dán<br>\
+Scissors n /ˈsɪz.ərz/ Kéo<br>\
+Ruler n /ˈruː.lər/ Thước<br>\
+Protractor n /prəˈtræk.tər/ Thước đo góc<br>\
+Ink n /ɪŋk/ Mực<br>\
+Chalk n /tʃɔːk/ Phấn<br>\
+Folder n /ˈfoʊl.dər/ Thư mục",
+},
+{
+	title:"Plant",
+	en:"Tree n /triː/ Cây<br>\
+Pine n /paɪn/ Cây thông<br>\
+Cedar n /ˈsiː.dər/ Cây tuyết tùng<br>\
+Oak n /oʊk/ Cây sồi<br>\
+Ivy n /ˈaɪ.vi/ Dây thường xuân<br>\
+Moss n /mɔːs/ Rêu<br>\
+Mushroom n /ˈmʌʃ.rʊm/ Nấm<br>\
+Wheat n /wiːt/ Lúa mì<br>\
+Corn n /kɔːrn/ Bắp, ngô<br>\
+Flower n /ˈflaʊ.ər/ Hoa<br>\
+Grass n /ɡræs/ Cỏ<br>\
+Herb n /hɜːrb/ Thảo mộc<br>\
+Bush n /bʊʃ/ Bụi cây, bụi rậm<br>\
+Coconut tree n. phr /ˈkoʊ.kəˌnʌt triː/ Cây dừa<br>\
+Apple tree n. phr /ˈæpəl triː/ Cây táo<br>\
+Shrubland n /ˈʃrʌblænd/ Vùng cây bụi<br>\
+",
+},
+{
+	title:"Seafood",
+	en:"Herring n /ˈhɛr.ɪŋ/ Cá trích<br>\
+Skate n /skeɪt/ Cá đuối<br>\
+Salmon n /ˈsæmən/ Cá hồi<br>\
+Prawn n /prɔːn/ Tôm<br>\
+Cuttlefish n /ˈkʌtəl.fɪʃ/ Mực nang<br>\
+Lobster n /ˈlɒbstər/ Tôm hùm<br>\
+Squid n /skwɪd/ Mực ống<br>\
+Shrimp n /ʃrɪmp/ Tôm<br>\
+Oyster n /ˈɔɪ.stər/ Hàu<br>\
+Crab n /kræb/ Cua<br>\
+Cockle n /ˈkɒk.əl/ Sò<br>\
+Scallop n /ˈskɒl.əp/ Sò điệp<br>\
+Octopus n /ˈɒk.tə.pʊs/ Bạch tuộc<br>\
+Fish n /fɪʃ/ Cá<br>\
+Eel n /iːl/ Lươn<br>\
+Mussel n /ˈmʌsəl/ Vẹm<br>\
+Clam n /klæm/ Nghêu<br>\
+Jellyfish n /ˈdʒɛliˌfɪʃ/ Sứa",
+}
+,{
+	title:"Energy",
+	en:"Charcoal n /ˈtʃɑːrˌkoʊl/ Than củi<br>\
+Battery n /ˈbætəri/ Pin<br>\
+Gasoline n /ˈɡæsəˌliːn/ Xăng<br>\
+Turbine n /ˈtɜr.baɪn/ Tua-bin<br>\
+Sun n /sʌn/ Mặt trời<br>\
+Wind n /wɪnd/ Gió<br>\
+Waterfall n /ˈwɔːtərˌfɔːl/ Thác nước<br>\
+Refinery n /rɪˈfaɪnəri/ Nhà máy lọc<br>\
+Nuclear reactor n. phr /ˈnjuː.kliər riˈæktər/ Lò phản ứng hạt nhân<br>\
+Dam n /dæm/ Đập (thủy điện)<br>\
+Power plant n. phr /ˈpaʊər plænt/ Nhà máy điện<br>\
+Transformer n /trænsˈfɔːrmər/ Máy biến thế<br>\
+Heat v /hiːt/ Sưởi ấm, làm nóng<br>\
+Natural gas n. phr /ˈnætʃərəl ɡæs/ Khí tự nhiên<br>\
+Diesel n /ˈdiːzəl/ Dầu đi-ê-zen<br>\
+Solar power n. phr /ˈsoʊlər ˈpaʊər/ Năng lượng mặt trời<br>\
+",
+},
+{
+	title:"Job/Career/Vocation",
+	en:"Dancer n /ˈdæn.sər/ Vũ công<br>\
+Designer n /dɪˈzaɪ.nər/ Nhà thiết kế<br>\
+Magician n /məˈdʒɪʃ.ən/ Nhà ảo thuật<br>\
+Tour guide n. phr /tʊr ɡaɪd/ Hướng dẫn viên du lịch<br>\
+Sailor n /ˈseɪ.lər/ Thủy thủ<br>\
+Commentator n /ˈkɒm.ənˌteɪ.tər/ Bình luận viên<br>\
+Dentist n /ˈdɛn.tɪst/ Nha sĩ<br>\
+Postman n /ˈpoʊst.mæn/ Người đưa thư<br>\
+Writer n /ˈraɪ.tər/ Nhà văn<br>\
+Pilot n /ˈpaɪ.lət/ Phi công<br>\
+Plumber n /ˈplʌm.ər/ Thợ sửa chữa ống nước<br>\
+Tailor n /ˈteɪ.lər/ Thợ may<br>\
+Copywriter n /ˈkɒp.iˌraɪ.tər/ Người viết bài (quảng cáo)<br>\
+Journalist n /ˈdʒɜː.nə.lɪst/ Nhà báo<br>\
+Grocer n /ˈɡroʊ.sər/ Người bán tạp hóa<br>\
+Clerk n /klɜrk/ Người thư ký<br>\
+Assistant n /əˈsɪs.tənt/ Trợ lý<br>\
+Model n /ˈmɒd.əl/ Người mẫu<br>\
+Freelancer n /ˈfriːˌlænsər/ Người làm việc tự do<br>\
+Consultant n /kənˈsʌl.tənt/ Chuyên viên tư vấn<br>\
+Self-employed a /ˌsɛlfɪmˈplɔɪd/ Tự làm chủ<br>\
+Supervisor n /ˈsuː.pərˌvaɪ.zər/ Giám sát viên<br>\
+Sales manager n. phr /seɪlz ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
+Production manager n. phr /prəˈdʌk.ʃən ˈmæn.ɪ.dʒər/ Giám đốc sản xuất<br>\
+Mechanic n /məˈkæn.ɪk/ Thợ cơ khí<br>\
+Managing director n. phr /ˈmæn.ɪ.dʒɪŋ dɪˈrɛktər/ Giám đốc điều hành<br>\
+Personal assistant n. phr /ˈpɜː.sən.əl əˈsɪs.tənt/ Trợ lý riêng<br>\
+Hairdresser n /ˈhɛərˌdrɛs.ər/ Thợ cắt tóc<br>\
+Architect n /ˈɑːrkɪˌtɛkt/ Kiến trúc sư<br>\
+Engineer n /ˌɛn.dʒɪˈnɪər/ Kỹ sư<br>\
+Vet n /vɛt/ Bác sĩ thú y<br>\
+Shoemaker n /ˈʃuːˌmeɪ.kər/ Thợ đóng giày<br>\
+Translator n /trænzˈleɪ.tər/ Biên dịch viên<br>\
+Interpreter n /ɪnˈtɜː.prɪ.tər/ Phiên dịch viên<br>\
+Sanitation worker n. phr /ˌsænɪˈteɪ.ʃən ˈwɜːrkər/ Lao công<br>\
+Business manager n. phr /ˈbɪznɪs ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
+Police officer n. phr /pəˈliːs ˈɒfɪ.sər/ Cảnh sát<br>\
+Personnel manager n. phr /ˌpɜːrsəˈnɛl ˈmæn.ɪ.dʒər/ Giám đốc nhân sự<br>\
+Teacher n /ˈtiː.tʃər/ Giáo viên<br>\
+Doctor n /ˈdɒk.tər/ Bác sĩ<br>\
+Nurse n /nɜrs/ Y tá<br>\
+Farmer n /ˈfɑː.mər/ Nông dân",
+},
+{
+	title:"Diet",
+	en:"Keep-fit n /kiːp-fɪt/ Thể dục<br>\
+Regular a /ˈrɛɡ.jʊ.lər/ Thường xuyên<br>\
+Diabetes n /ˌdaɪəˈbiːtiːz/ Bệnh tiểu đường<br>\
+Dietitian n /ˌdaɪɪˈtɪʃən/ Chuyên gia về dinh dưỡng<br>\
+Goiter n /ˈɡɔɪtər/ Bướu cổ<br>\
+Body n /ˈbɒdi/ Cơ thể<br>\
+Thin a /θɪn/ Gầy, ốm<br>\
+Dietary a /ˈdaɪəˌtɛri/ (thuộc) chế độ ăn uống<br>\
+Fat a /fæt/ Mập<br>\
+Overweight a /ˌoʊvərˈweɪt/ Béo, thừa cân<br>\
+Eating disorder n. phr /ˈiːtɪŋ dɪsˈɔːrdər/ Rối loạn ăn uống<br>\
+Nutrient n /ˈnuːtriənt/ Chất dinh dưỡng<br>\
+Ingredient n /ɪnˈɡriːdiənt/ Thành phần, nguyên liệu<br>\
+Allergy n /ˈælədʒi/ Dị ứng<br>\
+Vitamin n /ˈvaɪtəmɪn/ Vi-ta-min<br>\
+Overeat v /ˌoʊvərˈiːt/ Ăn quá nhiều<br>\
+Nutritious a /njuˈtrɪʃəs/ Bổ dưỡng<br>\
+Vegetarian n /ˌvɛdʒɪˈtɛəriən/ Người ăn chay<br>\
+Mineral n /ˈmɪnərəl/ Khoáng chất<br>\
+",
+}
+,{
+	title:"Street",
+	en:"Avenue n /ˈævəˌnjuː/ Đại lộ<br>\
+Between pre /bɪˈtwiːn/ Ở giữa<br>\
+Beside pre bɪˈsaɪd/ Bên cạnh<br>\
+Behind pre /bɪˈhaɪnd/ Ở phía sau<br>\
+Curve v /kɜːrv/ Uốn cong<br>\
+In front of pre /ɪn frʌnt əv/ (vị trí) ở phía trước, ở đằng trước<br>\
+Opposite pre /ˈɒpəzɪt/ Trước mặt, đối diện<br>\
+Near pre /nɪər/ Gần<br>\
+Turn right v. phr /tɜrn raɪt/ Rẽ phải<br>\
+Turn left v. phr /tɜrn lɛft/ Rẽ trái<br>\
+Junction n /ˈdʒʌŋkʃən/ Giao lộ<br>\
+Turning n /ˈtɜrnɪŋ/ Ngã rẽ<br>\
+Roundabout n /ˈraʊndəˌbaʊt/ Bùng binh<br>\
+Pavement n /ˈpeɪvmənt/ Vỉa hè",
+},
+{
+	title:"Post office",
+	en:"Advanced a /ədˈvænst/ Tiên tiến<br>\
+Equip v /ɪˈkwɪp/ Trang bị<br>\
+Express mail n. phr /ɪkˈsprɛs meɪl/ Thư chuyển phát nhanh<br>\
+Graphic a /ˈɡræfɪk/ Thuộc đồ họa<br>\
+Messenger Call Service n. phr /ˈmɛsɪndʒər kɔːl ˈsɜːrvɪs/ Dịch vụ Điện thoại<br>\
+Notify v /ˈnoʊtɪˌfaɪ/ Thông báo<br>\
+Parcel n /ˈpɑːrsəl/ Bưu kiện, bưu phẩm<br>\
+Press n /prɛs/ Báo chí<br>\
+Receive v /rɪˈsiːv/ Nhận<br>\
+Recipient n rɪˈsɪpiənt/ Người nhận<br>\
+Secure a /sɪˈkjʊr/ (cảm giác) yên tâm, an toàn<br>\
+Service n /ˈsɜːrvɪs/ Dịch vụ<br>\
+Spacious a /ˈspeɪʃəs/ Rộng rãi<br>\
+Speedy a /ˈspiːdi/ Nhanh chóng<br>\
+Staff n /stæf/ Nhân viên<br>\
+Subscribe v /səbˈskraɪb/ Đặt mua<br>\
+Surface mail n. phr /ˈsɜːrfɪs meɪl/ Thư gửi bằng đường bộ <br>\
+Technology n /tɛkˈnɒlədʒi/ Công nghệ<br>\
+Thoughtful a /ˈθɔːtfəl/ Ân cần, chu đáo<br>\
+Transfer v /trænsˈfɜːr/ Chuyển<br>\
+Transmit v /trænzˈmɪt/ Truyền<br>\
+Well-trained a /wɛl treɪnd/ Được đào tạo bài bản",
+},
+{
+	title:"Banking",
+	en:"Staff movements n /stæf ˈmuːvmənts/ Luân chuyển nhân sự<br>\
+Retire v /rɪˈtaɪər/ Nghỉ hưu<br>\
+Dismiss v /dɪsˈmɪs/ Sa thải<br>\
+Finance n /ˈfaɪnæns/ Tài chính<br>\
+Appointment n /əˈpɔɪntmənt/ Sự bổ nhiệm<br>\
+Multinational a /ˌmʌltɪˈnæʃənəl/ Đa quốc gia<br>\
+Investor n /ɪnˈvɛstər/ Nhà đầu tư<br>\
+Inherit v /ɪnˈhɛrɪt/ Thừa kế<br>\
+Accountant n /əˈkaʊntənt/ Nhân viên kế toán<br>\
+Lend v /lɛnd/ Cho vay<br>\
+Borrow v /ˈbɒroʊ/ Vay, mượn<br>\
+Rent v /rɛnt/ Thuê<br>\
+Distribution n /ˌdɪstrɪˈbjuːʃən/ Sự phân phối, phân phát<br>\
+Co-ordinate v /koʊˈɔrdəˌneɪt/ Phối hợp, sắp xếp<br>\
+Purchase v /ˈpɜrʧəs/ Mua<br>\
+Stock exchange n /stɒk ɪksˈʧeɪndʒ/ Sàn giao dịch chứng khoán<br>\
+Stock market n /stɒk ˈmɑrkɪt/ Thị trường chứng khoán<br>\
+Opportunity n /ˌɒpərˈtunɪti/ Cơ hội<br>\
+Challenge n /ˈʧæləndʒ/ Thử thách<br>\
+Career n /kəˈrɪər/ Nghề nghiệp, sự nghiệp<br>\
+Intensive course n /ɪnˈtɛnsɪv kɔrs/ Khóa học cấp tốc<br>\
+Commerce n /ˈkɑːmɜrs/ Thương mại<br>\
+Costly a /ˈkɒstli/ Tốn kém<br>\
+Responsible a /rɪˈspɒnsəbl/ Chịu trách nhiệm<br>\
+Communicate v /kəˈmjuːnɪˌkeɪt/ Giao tiếp<br>\
+Abroad adv /əˈbrɔd/ Ở nước ngoài<br>\
+Inheritance n /ɪnˈhɛrɪtəns/ Sự thừa kế<br>\
+Fortune n /ˈfɔrʧən/ Tài sản, vận may<br>\
+Property n /ˈprɒpərti/ Tài sản<br>\
+Cash machine n /kæʃ məˈʃiːn/ Máy rút tiền<br>\
+Online account n /ˈɒnˌlaɪn əˈkaʊnt/ Tài khoản trực tuyến<br>\
+Insurance policy n /ɪnˈʃʊrəns ˈpɒlɪsi/ Hợp đồng bảo hiểm<br>\
+Credit card n /ˈkrɛdɪt kɑrd/ Thẻ tín dụng<br>\
+Debit card n /ˈdɛbɪt kɑrd/ Thẻ ghi nợ<br>\
+Rental contract n /ˈrɛntəl ˈkɒntrækt/ Hợp đồng cho thuê<br>\
+Discount n /ˈdɪskaʊnt/ Sự giảm giá, chiết khấu<br>\
+Credit limit n /ˈkrɛdɪt ˈlɪmɪt/ Hạn mức tín dụng<br>\
+Survey n /ˈsɜːrveɪ/ Khảo sát<br>\
+Possession n /pəˈzɛʃən/ Sự sở hữu<br>\
+Equality n /ɪˈkwɒlɪti/ Sự ngang bằng nhau<br>\
+Poverty n /ˈpɒvərti/ Sự nghèo<br>\
+Charge n /ʧɑrdʒ/ Phí, tiền phải trả<br>\
+Outsource v /ˈaʊtsɔrs/ Thuê ngoài<br>\
+Grant n /ɡrænt/ Trợ cấp, công nhận<br>\
+Warehouse n /ˈwɛrˌhaʊs/ Kho hàng<br>\
+Lease v /liːs/ Cho thuê<br>\
+In-house a /ˈɪnhaʊs/ Tiến hành trong một tổ chức<br>\
+Potential a/n /pəˈtɛnʃəl/ Tiềm lực , tiềm tàng<br>\
+Back-office n /bæk ˈɒfɪs/ Văn phòng hành chính<br>\
+Campaign n /kæmˈpeɪn/ Chiến dịch<br>\
+Insecurity n /ˌɪnsɪˈkjʊrɪti/ Tính ko an toàn<br>\
+Insurance provider n /ɪnˈʃʊrəns prəˈvaɪdər/ Nhà cung cấp bảo hiểm<br>\
+Compensation n /ˌkɒmpənˈseɪʃən/ Sự đền bù, bồi thường<br>\
+Commit v /kəˈmɪt/ Cam kết<br>\
+Short-term cost n /ˈʃɔrtˌtɜrm kɒst/ Chi phí ngắn hạn<br>\
+Long-term gain n /ˈlɒŋˌtɜrm ɡeɪn/ Tiền kiếm được dài hạn<br>\
+Expense n /ɪkˈspɛns/ Phí tổn<br>\
+Invoice n /ˈɪnvɔɪs/ Hóa đơn<br>\
+Bribery n /ˈbraɪbəri/ Sự đút lót, hối lộ<br>\
+Corrupt v /kəˈrʌpt/ Tham nhũng<br>\
+Balance of payment n /ˈbælɪns əv ˈpeɪmənt/ Cán cân thanh toán quốc tế<br>\
+Balance of trade n /ˈbælɪns əv treɪd/ Cán cân thương mại<br>\
+Budget n /ˈbʌdʒɪt/ Ngân sách<br>\
+Cost of borrowing n /kɒst əv ˈbɒroʊɪŋ/ Chi phí vay<br>\
+Consumer price index n /kənˈsumər praɪs ˈɪndɛks/ Chỉ số giá tiêu dùng<br>\
+Retail banking n /ˈriːteɪl ˈbæŋkɪŋ/ Ngân hàng bán lẻ<br>\
+Commercial bank n /kəˈmɜrʃəl bæŋk/ Ngân hàng thương mại <br>\
+Central bank n /ˈsɛntrəl bæŋk/ Ngân hàng trung ương<br>\
+Treasury n /ˈtrɛʒəri/ Kho bạc<br>\
+Investment bank n /ɪnˈvɛstmənt bæŋk/ Ngân hàng đầu tư<br>\
+",
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

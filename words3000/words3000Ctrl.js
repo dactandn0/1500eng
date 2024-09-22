@@ -1,6 +1,6 @@
 
-document.write('<script src="../words3000/3k_words_data.js" type="text/javascript"></script>');
-document.write('<script src="../words3000/5k_ielt_words.js" type="text/javascript"></script>');
+document.write('<script src="./words3000/3k_words_data.js" type="text/javascript"></script>');
+document.write('<script src="./words3000/5k_ielt_words.js" type="text/javascript"></script>');
 
 function hightlightTypeOfWord(txt) {
 	return txt;

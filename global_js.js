@@ -225,6 +225,10 @@ function validateWord(word)
 	return true;
 }
 
+function MYLOG(msg) {
+	console.log(msg);
+}
+
 function _scrollIntoView(idx) {
 var ele = document.getElementsByClassName("scroll")[idx];
 setTimeout(function () {

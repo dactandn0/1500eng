@@ -1,13 +1,10 @@
 
-document.write('<script src="../../global_js.js" type="text/javascript"></script>');
-document.write('<script src="read_data/bridge_read_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/bridge/read_data/bridge_read_data.js" type="text/javascript"></script>');
 
-function MYLOG(msg) {
-//	console.log(msg);
-}
 
-var app = angular.module("myApp", ['ngSanitize']);
-app.controller("ctrl", function($scope, $timeout) {
+
+var app = angular.module("bridgeRApp", ['ngSanitize']);
+app.controller("bridgeRCtrl", function($scope, $timeout) {
 
 var kSTORIES = bridge_read_data;
 radioCDChange = function (cd) {
@@ -16,7 +13,6 @@ radioCDChange = function (cd) {
 	}
 	localStorage.setItem("bri_complete_cd", cd);
 	$scope.cd = cd;
-	MYLOG("localStorage saved CD= " + cd);
 }
 
 $scope.cd = 1;
@@ -44,17 +40,14 @@ $scope.range = function(min, max, step) {
 };
 
 
- $scope.storyIdx = 0;
- $scope.bPlayingFull = false;
- $scope.bPause = false;
- $scope.bShowVi = 0;
- $scope.bHiddenWords = 0;
- $scope.audio;
- $scope.currentTime = 0;
+$scope.storyIdx = 0;
+$scope.bPlayingFull = false;
+$scope.bPause = false;
+$scope.bShowVi = 0;
+$scope.bHiddenWords = 0;
+$scope.audio;
+$scope.currentTime = 0;
 
-$scope.units = [
-	{'title':"", 'num': 1},
-];
 
 $scope.resetFlag = function () {
 	$scope.bPlayingFull = false;

@@ -1,25 +1,27 @@
 // include other *.js
-document.write('<script src="../../global_js.js" type="text/javascript"></script>');
-document.write('<script src="listen_data/bridge_cd1.js" type="text/javascript"></script>');
-document.write('<script src="listen_data/bridge_cd2.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/complete/listen_data/complete_cd1.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/complete/listen_data/complete_cd2.js" type="text/javascript"></script>');
 
 function MYLOG(msg) {
 //	console.log(msg);
 }
 
-var app = angular.module("myApp", ['ngSanitize']);
-app.controller("ctrl", function($scope, $timeout) {
+var app = angular.module("completeLApp", ['ngSanitize']);
+app.controller("completeLCtrl", function($scope, $rootScope, $timeout) {
+$rootScope.$on('$routeChangeStart', function () {
+	$scope.stopSound();
+});
 
 radioCDChange = function (cd) {
 	$scope.cd = cd;
 	if (cd===1) {
-		$scope.stories = bridge_cd1;
+		$scope.stories = complete_cd1;
 		$scope.listTrackTitle();
 	}
 }
 
 $scope.cd = 1;
-$scope.stories = bridge_cd1; //1
+$scope.stories = complete_cd1; //1
 $scope.storyIdx = 0;
 $scope.bPlayingFull = false;
 $scope.bPause = false;
@@ -68,7 +70,7 @@ $scope.playFullSound = function (index) {
 	}
   	else
   	{
-  		$scope.audio = new Audio("listen_data/cd" + $scope.cd + "/" + $scope.story.title + ".mp3");
+  		$scope.audio = new Audio("./ebooks/complete/listen_data/cd" + $scope.cd + "/" + $scope.story.title + ".mp3");
 	    $scope.audio.loop = false;
 	    $scope.audio.play();
 
@@ -114,6 +116,21 @@ $scope.fetchStory = function (idx, reset=true) {
 	$scope.story = $scope.stories[idx];
 	
 	$scope.story = processStory($scope.story);
+}
+
+
+$scope.isLongTrack = function(idx) {
+	var track = $scope.stories[idx];
+	if (!track || !track.en) return 'text-muted';
+	var lengthCount = track.en.length;
+	let result = ''
+	if (lengthCount > 800 )
+	{
+			result = 'font-weight-bold';
+	}
+
+//	if (track.img) result += " text-danger";
+	return result;
 }
 
 $scope.listTrackTitle = function() {

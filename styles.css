@@ -47,7 +47,7 @@
     background: #ddd;
     color: #333;
     text-decoration: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
     display: block;
     margin-bottom: 1px;
 }

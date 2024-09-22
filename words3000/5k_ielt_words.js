@@ -222,6 +222,6 @@ Wearable devices /ˈwɛrəbəl dɪˈvaɪsɪz/ Thiết bị đeo được<br>\
 Web development [wɛb dɪˈvɛləpmənt] Phát triển web<br>\
 Web hosting [wɛb ˈhoʊstɪŋ] Lưu trữ web<br>\
 Wireless communication /ˈwaɪərlɪs kəmjuːnɪˈkeɪʃən/ Giao tiếp không dây<br>\
-Wireless network [ˈwaɪərlɪs ˈnɛtwɜːrk] Mạng không dây",
+Wireless network [ˈwaɪərlɪs ˈnɛtwɜːrk] Mạng không dây<br>",
 }
 ]

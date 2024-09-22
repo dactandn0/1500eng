@@ -9,7 +9,7 @@ function hightlightTypeOfWord(txt) {
 var app = angular.module("words3000App", ['ngSanitize','ngRoute']);
 app.controller("words3000Ctrl", function($scope, $timeout) {
 
-var kSTORIES = WORDS_3K_DATA.concat(IELTS_5K_DATA);
+var kSTORIES = WORDS_3K_DATA.concat(IELTS_5K_DATA).concat(GRAMMER_DATA);
 
 
 $scope.cd = 1;
@@ -44,38 +44,13 @@ $scope.acc_click = function (id) {
 };
 
 
-$scope.searchData = [];
-$scope.searchDataResult = [];
-$scope.search = "";
-$scope.story = '';
-
-$scope.searchTyping = function() {
-    if ($scope.searchData.length==0) return true;       
-	$scope.searchDataResult = [];
-	if ($scope.search.length <= 2) return;
-    var search = removeVietnameseTones($scope.search.toLowerCase());
-    for (var i = 0; i < $scope.searchData.length; i++) {
-    	var dataVN = $scope.searchData[i];
-    	data = removeVietnameseTones(dataVN.toLowerCase());
-    	if (data.includes(search)) {
-			dataVN = hightlightTypeOfWord(dataVN)
-    		$scope.searchDataResult.push(dataVN);
-    	}
-    }
-};
-
-$scope.clearSearch = function () {
-	$scope.search = '';
-	$scope.searchDataResult = [];
-};
 
 $scope.preProcess = function () {
 	for (var k = 0; k < kSTORIES.length; k++) {
-		story = $scope.stories[k];
+		var story = $scope.stories[k];
 		if (story.en) {	
 			var words = story.en.split('<br>');
 			story.numOfWords = words.length;
-			$scope.searchData = $scope.searchData.concat(words);
 		}	
 	}
 }

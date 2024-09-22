@@ -1,28 +1,17 @@
 
-document.write('<script src="../../global_js.js" type="text/javascript"></script>');
-document.write('<script src="read_data/complete_read_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/englab/preCourse/data.js" type="text/javascript"></script>');
 
 function MYLOG(msg) {
 //	console.log(msg);
 }
 
-var app = angular.module("myApp", ['ngSanitize']);
-app.controller("ctrl", function($scope, $timeout) {
+var app = angular.module("preCourseApp", ['ngSanitize']);
+app.controller("preCourseCtrl", function($scope, $timeout) {
 
-var kSTORIES = complete_read_data;
-radioCDChange = function (cd) {
-	switch (cd) {
-		case 1: kSTORIES = complete_read_data; break;
-	}
-	localStorage.setItem("bri_complete_cd", cd);
-	$scope.cd = cd;
-	MYLOG("localStorage saved CD= " + cd);
-}
 
 $scope.cd = 1;
-$scope.stories = kSTORIES; //1
-
-$scope.acc=-1;
+$scope.stories = SLIDES;
+$scope.acc= -1;
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc===id;
@@ -34,23 +23,14 @@ $scope.acc_click = function (id) {
 		$scope.acc=id;
 };
 
-$scope.range = function(min, max, step) {
-    step = step || 1;
-    var input = [];
-    for (var i = min; i <= max; i += step) {
-        input.push(i);
-    }
-    return input;
-};
 
-
- $scope.storyIdx = 0;
- $scope.bPlayingFull = false;
- $scope.bPause = false;
- $scope.bShowVi = 0;
- $scope.bHiddenWords = 0;
- $scope.audio;
- $scope.currentTime = 0;
+$scope.storyIdx = 0;
+$scope.bPlayingFull = false;
+$scope.bPause = false;
+$scope.bShowVi = 0;
+$scope.bHiddenWords = 0;
+$scope.audio;
+$scope.currentTime = 0;
 
 $scope.units = [
 	{'title':"", 'num': 1},
@@ -128,27 +108,31 @@ $scope.stopSound = function () {
 };
 
 $scope.fetchStory = function () {
-	for (var k = 0; k < kSTORIES.length; k++) {
+	for (var k = 0; k < $scope.stories.length; k++) {
 		story = $scope.stories[k];
-		story = processStory(story);
+		if (story.voca) 
+		{
+			var vocas = story.voca.split(',');
+			story.vocaNotes = [];
+			for (var i = 0; i < vocas.length; i++) {
+				voca = vocas[i].trim();
+				var temp = voca;
+				if (temp.indexOf("[") >= 0) {
+					temp = temp.replace(/\s*\|\s*/g, ", ");
+					temp = temp.replace(/\s*\[\s*/g, " : ");
+					temp = temp.replace(/\s*\]\s*/g, "");
+					story.vocaNotes.push(temp);
+				}
+				voca = voca.replace(/\[.*\]/g, '').trim();
+				var regex = new RegExp(`\\b${voca}` , 'g')
+				story.en = story.en.replace(regex, '<b>' + voca + '</b>');
+			}
+		}
 	} // for
-}
 
-function validateWord(word) 
-{	
-	word = word.trim();
-	if (word.length < 4) return false;
-	let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
-	for (var i = 0; i < arr.length; i++) {
-		bList = arr[i];
-		if (word.toLowerCase().indexOf(bList) >= 0) return false;
-	}
-	return true;
 }
-
 
 $scope.loadData = function () {
-	MYLOG('loadData');
 	$scope.fetchStory();
 };
 

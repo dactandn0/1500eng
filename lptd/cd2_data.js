@@ -583,21 +583,23 @@ W: I think that you’re being too sensitive..<br>\
 M: Do you really think so? Maybe I just need a vacation. I haven’t had one for years..<br>\
 W: It’s not good to work so hard, Trevor. I think a vacation is a great idea..<br>\
 M: How about you? Are you happy at work these days?.<br>\
-W: Yes, I’m really enjoying working for this new boss. That’s why I’m surprised that you think she criticizes your work. Actually, I think she is helping you to improve your work. She’s just trying to help..<br>\
+W: Yes, I’m really enjoying working for this new boss. That’s why I’m surprised that you think she criticizes your work. \
+Actually, I think she is helping you to improve your work. She’s just trying to help..<br>\
 M: I didn’t realize that. Now that I think about it, you’re right. I feel much better..<br>\
 W: Good! Let’s go for lunch!"
 ,vi:"Bài 26 Ông chủ mới<br>\
-M: Bạn biết đấy, Kim, tôi nghĩ ông chủ mới của chúng ta không thích tôi. Tôi không hiểu tại sao..<br>\
+M: Bạn biết đấy, Kim, tôi nghĩ sếp mới của chúng ta không thích tôi. Tôi không hiểu tại sao..<br>\
 W: Không đúng đâu, Trevor! Tại sao, sáng nay tôi nghe cô ấy nói rằng bạn là một nhân viên rất tốt. Cô ấy nói rằng bạn làm việc rất chăm chỉ mỗi ngày..<br>\
 M: Điều đó mới với tôi. Tôi ước cô ấy nói với tôi điều đó, nhưng cô ấy chỉ trích mọi thứ tôi làm..<br>\
 W: Tôi nghĩ rằng bạn quá nhạy cảm..<br>\
 M: Bạn thực sự nghĩ vậy sao? Có lẽ tôi chỉ cần một kỳ nghỉ. Tôi đã không có kỳ nghỉ nào trong nhiều năm..<br>\
 W: Làm việc chăm chỉ như vậy không tốt, Trevor. Tôi nghĩ rằng một kỳ nghỉ là một ý tưởng tuyệt vời..<br>\
 M: Còn bạn thì sao? Bạn có vui vẻ khi làm việc những ngày này không?.<br>\
-W: Vâng, tôi thực sự thích làm việc cho ông chủ mới này. Đó là lý do tại sao tôi ngạc nhiên khi bạn nghĩ cô ấy chỉ trích công việc của bạn. Thực ra, tôi nghĩ cô ấy đang giúp bạn cải thiện công việc của mình. Cô ấy chỉ đang cố gắng giúp đỡ..<br>\
+W: Vâng, tôi thực sự thích làm việc cho sếp mới này. Đó là lý do tại sao tôi ngạc nhiên khi bạn nghĩ cô ấy chỉ trích công việc của bạn. \
+Thực ra, tôi nghĩ cô ấy đang giúp bạn cải thiện công việc của mình. Cô ấy chỉ đang cố gắng giúp đỡ..<br>\
 M: Tôi không nhận ra điều đó. Bây giờ nghĩ lại, bạn đúng. Tôi cảm thấy tốt hơn nhiều..<br>\
 W: Tốt! Chúng ta đi ăn trưa nhé!",
-voca:"employee,sensitive,realize,criticize,improve,vacation,rather,responsibility,handwriting,messy"
+voca:"employee,sensitive,realize,criticize,improve,vacation,rather,responsibility,handwriting,messy,feel much better"
 },
 {
 	en:"Unit 27 The Principal.<br>\

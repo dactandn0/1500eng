@@ -1508,8 +1508,6 @@ Secondary school n /ˈsɛk.ənˌdɛr.i skuːl/ Trường trung học cơ sở<br
 High school n /haɪ skuːl/ Trường trung học phổ thông<br>\
 Primary school n /ˈpraɪˌmɛr.i skuːl/ Trường tiểu học<br>\
 Nursery school n /ˈnɜːr.sər.i skuːl/ Trường mẫu giáo<br>\
-School n /skuːl/ Trường học<br>\
-College n /ˈkɒl.ɪdʒ/ Trường đại học, cao đẳng<br>\
 University n /ˌjuː.nɪˈvɜːr.sə.ti/ Trường đại học<br>\
 Professor n /prəˈfɛs.ər/ Giáo sư<br>\
 Lecturer n /ˈlɛk.tʃər.ər/ Giảng viên<br>\
@@ -1981,7 +1979,8 @@ Commercial bank n /kəˈmɜrʃəl bæŋk/ Ngân hàng thương mại <br>\
 Central bank n /ˈsɛntrəl bæŋk/ Ngân hàng trung ương<br>\
 Treasury n /ˈtrɛʒəri/ Kho bạc<br>\
 Investment bank n /ɪnˈvɛstmənt bæŋk/ Ngân hàng đầu tư<br>\
-",
+Rely v /rɪˈlaɪ/ phụ thuộc, lệ thuộc [Rely upon]<br>\
+Reply v / /rɪˈplaɪ/ hồi đáp",
 }
 
 

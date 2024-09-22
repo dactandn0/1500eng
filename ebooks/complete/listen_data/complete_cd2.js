@@ -1,2 +1,2 @@
-const bridge_cd2 = [
+const complete_cd2 = [
 ]

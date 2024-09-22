@@ -1,13 +1,12 @@
-// include other *.js
-document.write('<script src="../../global_js.js" type="text/javascript"></script>');
-document.write('<script src="listen_data/data.js" type="text/javascript"></script>');
 
-function MYLOG(msg) {
-//	console.log(msg);
-}
+document.write('<script src="./ebooks/sampleSpeaking/listen_data/data.js" type="text/javascript"></script>');
 
-var app = angular.module("myApp", ['ngSanitize']);
-app.controller("ctrl", function($scope, $timeout) {
+
+var app = angular.module("sampleSpeakingApp", ['ngSanitize']);
+app.controller("sampleSpeakingCtrl", function($scope, $rootScope, $timeout) {
+$rootScope.$on('$routeChangeStart', function () {
+	$scope.stopSound();
+});
 
 var kSTORIES = listen_tracks;
 
@@ -78,6 +77,11 @@ $scope.resetAudioBtnUI = function()
     $scope.$apply();
 }
 
+$scope.isPlayTrack = function (index) {
+	if 	($scope.storyIdx===index && $scope.bPlayingFull) return 'font-weight-bold';
+	 return 'font-weight-normal';
+
+}
 $scope.playFullSound = function (index) {
 	if ($scope.bPlayingFull)
 	{
@@ -86,7 +90,7 @@ $scope.playFullSound = function (index) {
 	}
   	else
   	{
-  		$scope.audio = new Audio("listen_data/audio/" + $scope.storyIdx + '.mp3');
+  		$scope.audio = new Audio("./ebooks/sampleSpeaking/listen_data/audio/" + $scope.storyIdx + '.mp3');
 	    $scope.audio.loop = false;
 	    $scope.audio.play();
 

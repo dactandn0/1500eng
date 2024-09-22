@@ -6,24 +6,52 @@ function hightlightTypeOfWord(txt) {
 	return txt;
 }
 
-var app = angular.module("myApp", ['grammerApp','lptdApp','words3000App','words4000App','ngSanitize','ngRoute']);
+var app = angular.module("myApp", [
+  'preCourseApp',
+  'sampleSpeakingApp',
+  'completeLApp','completeRApp',
+  'bridgeRApp','bridgeLApp',
+  'grammerApp','lptdApp',
+  'words3000App','words4000App',
+  'ngSanitize','ngRoute'
+  ]);
 app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'words3000/words3000.html',
-        controller: 'words3000Ctrl'
+        templateUrl: 'words3000/words3000.html', controller: 'words3000Ctrl'
       })      
       .when('/book4k', {
-        templateUrl: 'words4000/words4000.html',
-        controller: 'words4000Ctrl'
+        templateUrl: 'words4000/words4000.html', controller: 'words4000Ctrl'
       })
       .when('/lptd', {
-        templateUrl: 'lptd/lptd.html',
-        controller: 'lptdCtrl'
+        templateUrl: 'lptd/lptd.html', controller: 'lptdCtrl'
       }) 
       .when('/grammer', {
-        templateUrl: 'grammer/grammer.html',
-        controller: 'grammerCtrl'
+        templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'
+      }) 
+      .when('/ebooks', {
+        templateUrl: 'ebooks/ebooks.html',
+      })         
+      .when('/englab', {
+        templateUrl: 'ebooks/englab/englab.html',
+      })    
+      .when('/bridgeL', {
+        templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'
+      })
+       .when('/bridgeR', {
+       templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'
+      }) 
+       .when('/completeL', {
+       templateUrl: 'ebooks/complete/completeL.html', controller: 'completeLCtrl'
+      })    
+       .when('/completeR', {
+       templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'
+      }) 
+      .when('/sampleSpeaking', {
+       templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'
+      })      
+      .when('/preCourse', {
+       templateUrl: 'ebooks/englab/preCourse/preCourse.html', controller: 'preCourseCtrl'
       })
       .otherwise({
          redirectTo: '/'
@@ -32,12 +60,11 @@ app.config(function($routeProvider) {
 
 app.controller("indexCtrl", function($scope, $timeout) {
 
-var kSTORIES = WORDS_3K_DATA.concat(IELTS_5K_DATA);
+var kSTORIES = WORDS_3K_DATA.concat(IELTS_5K_DATA).concat(GRAMMER_DATA)
 
 $scope.searchData = [];
 $scope.searchDataResult = [];
 $scope.search = "";
-$scope.story = '';
 
 $scope.searchTyping = function() {
     if ($scope.searchData.length==0) return true;       

@@ -1,27 +1,24 @@
 // include other *.js
 
-document.write('<script src="../global_js.js" type="text/javascript"></script>');
-document.write('<script src="data/4000_book1_data.js" type="text/javascript"></script>');
+document.write('<script src="../words4000/data/words4000_data_1.js" type="text/javascript"></script>');
 
 function MYLOG(msg) {
 //	console.log(msg);
 }
 
-var app = angular.module("myApp", ['ngSanitize']);
-app.controller("ctrl", function($scope, $timeout) {
+var app = angular.module("words4000App", ['ngSanitize']);
+app.controller("words4000Ctrl", function($scope, $timeout) {
 
-var kSTORIES = STORIES1;
+var kSTORIES = BOOK4K_1;
 radioCDChange = function (cd) {
 	switch (cd) {
 		case 1: kSTORIES = cd1_stories; break;
 	}
 	localStorage.setItem("book_4k_num", cd);
 	$scope.cd = cd;
-	MYLOG("localStorage saved CD= " + cd);
 }
 radioLoopChange = function (val) {
 	localStorage.setItem("audio_loop", val);
-	MYLOG("localStorage audio_loop" + val);
 }
 
 $scope.cd = 1;
@@ -67,7 +64,7 @@ $scope.resetFlag = function () {
 
 $scope.playAtTime = function (time) {
     $scope.stopSound();
-	$scope.audio = new Audio("data/4000_audio_" + $scope.cd + "/" + $scope.storyIdx + 'b.mp3');
+	$scope.audio = new Audio("words4000/data/words4000_" + $scope.cd + "/" + $scope.storyIdx + 'b.mp3');
 	$scope.bPlayingVoca = true;
 	$scope.bPlayingFull = false;
 	$scope.audio.currentTime = time;
@@ -121,12 +118,12 @@ $scope.playFullSound = function (index, isVoca) {
 	}
 
 	if (isVoca) {
-		 $scope.audio = new Audio("data/4000_audio_" + $scope.cd + "/" + $scope.storyIdx + 'b.mp3');
+		 $scope.audio = new Audio("words4000/data/words4000_" + $scope.cd + "/" + $scope.storyIdx + 'b.mp3');
 		 $scope.bPlayingVoca = true;
 		 $scope.bPlayingFull = false;
 	}
 	else {
-		$scope.audio = new Audio("data/4000_audio_" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
+		$scope.audio = new Audio("words4000/data/words4000_" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
 		$scope.bPlayingFull = true;
 		$scope.bPlayingVoca = false;
 	}

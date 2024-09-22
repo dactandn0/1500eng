@@ -1,5 +1,5 @@
 
-const STORIES1 = [
+const BOOK4K_1 = [
 {
 	en: 
 	'The Lion and the Rabbit <br>\

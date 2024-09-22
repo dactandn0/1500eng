@@ -24,7 +24,10 @@
     <div ng-controller="ctrl" class="container mt-4">
     <h5 class="mb-4">LPTD CD1-4</h5>
 
-	 <div ng-repeat="fromPage in [{'src':'lptd'}]" ng-include="'../header.html'"></div>
+		<a ng-href="../index.html" class="mr-4 mb-4" >Home</a>
+	 	<a ng-href="../4000words/4000_book.html" class="mb-4">4kWords</a> 
+		<a ng-href="../ebooks/ebooks.html" class="ml-4 mb-4">Ebooks</a>
+		<a ng-href="../grammer/grammer.html" class="ml-4 mb-4">Grammer</a>
 
     	<form name="cdForm" class="my-3" role="group">
     		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>

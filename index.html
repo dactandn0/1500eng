@@ -25,9 +25,12 @@
     <div ng-controller="ctrl" class="container mt-4">
     <h5 class="mb-4">3000 Words</h5>
 
-      <div ng-repeat="fromPage in [{'src':'home'}]" ng-include="'header.html'"></div>
+	<a ng-href="4000words/4000_book.html" class="mb-4">4kWords</a> 
+	<a ng-href="lptd/lptd.html" class="ml-4 mb-4" >LPTD</a>
+	<a ng-href="ebooks/ebooks.html" class="ml-4 mb-4">Ebooks</a>
+	<a ng-href="grammer/grammer.html" class="ml-4 mb-4">Grammer</a>
      
-      <div class="input-group mb-3">
+      <div class="input-group my-3">
         <input type="text" class="form-control" ng-change="searchTyping()" ng-model="search" placeholder="Search...">  
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button" ng-click="clearSearch()">[X]</button>

@@ -28,14 +28,7 @@
      	<a href="../index.html" class="mb-4">Home</a> 
       <a href="../lptd/lptd.html" class="ml-4 mb-4">LPTD</a>
     	<hr>
-
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" ng-change="searchTyping()" ng-model="search" placeholder="Search...">  
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" ng-click="clearSearch()">[X]</button>
-        </div>
-      </div>
-
+      
       <div class="text-sm ml-2" ng-repeat="name in searchDataResult track by $index"><span ng-bind-html="name"></span><br></div>
 
     	<div ng-repeat="story in stories track by $index" class="my-2" >

@@ -6,7 +6,7 @@ function hightlightTypeOfWord(txt) {
 	return txt;
 }
 
-var app = angular.module("myApp", ['words3000App','words4000App','ngSanitize','ngRoute']);
+var app = angular.module("myApp", ['grammerApp','lptdApp','words3000App','words4000App','ngSanitize','ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
@@ -16,6 +16,14 @@ app.config(function($routeProvider) {
       .when('/book4k', {
         templateUrl: 'words4000/words4000.html',
         controller: 'words4000Ctrl'
+      })
+      .when('/lptd', {
+        templateUrl: 'lptd/lptd.html',
+        controller: 'lptdCtrl'
+      }) 
+      .when('/grammer', {
+        templateUrl: 'grammer/grammer.html',
+        controller: 'grammerCtrl'
       })
       .otherwise({
          redirectTo: '/'

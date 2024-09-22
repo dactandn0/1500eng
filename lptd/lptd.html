@@ -1,33 +1,5 @@
-<!-- (<br>\w+)<br>\s+(<br>\w+)<br>\s+(.+) -->
-<!-- {word: "$1", types: "$2", mean: "$3"}, -->
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>LPTD 1-4</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
-
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="../styles.css">
-  <script type="text/javascript" src="ctrlJS.js"></script>
-
-</head>
-
-<body ng-app="myApp" ng-init="showText=1">
-    <div ng-controller="ctrl" class="container mt-4">
-    <h5 class="mb-4">LPTD CD1-4</h5>
-
-		<a ng-href="../index.html" class="mr-4 mb-4" >Home</a>
-	 	<a ng-href="../4000words/4000_book.html" class="mb-4">4kWords</a> 
-		<a ng-href="../ebooks/ebooks.html" class="ml-4 mb-4">Ebooks</a>
-		<a ng-href="../grammer/grammer.html" class="ml-4 mb-4">Grammer</a>
+    <h5 class="mb-4" ng-init="showText=1">LPTD CD1-4</h5>
 
     	<form name="cdForm" class="my-3" role="group">
     		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>
@@ -92,17 +64,6 @@
 	          </div> <!-- card-text -->
         	</div> 		<!-- card-body -->
 		 </div> <!-- card -->
-    </div> <!-- container -->
 
-</body>
 
 </html>
-
-<script type="text/javascript">
-function chkClick()
-{	
-	var chk =  document.getElementById('audioLoopEle');
-	localStorage.setItem("lptd_isAudioLoop", chk.checked);
-	console.log("lptd_isAudioLoop saved storage = ", chk.checked );
-}
-</script>

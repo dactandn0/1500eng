@@ -1,17 +1,19 @@
 // include other *.js
 
-document.write('<script src="../global_js.js" type="text/javascript"></script>');
-document.write('<script src="cd1_data.js" type="text/javascript"></script>');
-document.write('<script src="cd2_data.js" type="text/javascript"></script>');
-document.write('<script src="cd3_data.js" type="text/javascript"></script>');
+document.write('<script src="./lptd/cd1_data.js" type="text/javascript"></script>');
+document.write('<script src="./lptd/cd2_data.js" type="text/javascript"></script>');
+document.write('<script src="./lptd/cd3_data.js" type="text/javascript"></script>');
 
 
 function MYLOG(msg) {
 //	console.log(msg);
 }
 
-var app = angular.module("myApp", ['ngSanitize']);
-app.controller("ctrl", function($scope, $timeout) {
+var app = angular.module("lptdApp", ['ngSanitize']);
+app.controller("lptdCtrl", function($scope, $rootScope, $timeout) {
+$rootScope.$on('$routeChangeStart', function () {
+	$scope.stopSound();
+  });
 
 var kSTORIES = cd1_stories;
 radioCDChange = function (cd) {
@@ -102,7 +104,7 @@ $scope.playFullSound = function (index) {
 	}
   	else
   	{
-  		$scope.audio = new Audio("cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
+  		$scope.audio = new Audio("lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
 	    $scope.audio.loop = false;
 	    $scope.audio.play();
 

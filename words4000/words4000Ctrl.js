@@ -7,7 +7,10 @@ function MYLOG(msg) {
 }
 
 var app = angular.module("words4000App", ['ngSanitize']);
-app.controller("words4000Ctrl", function($scope, $timeout) {
+app.controller("words4000Ctrl", function($scope, $rootScope, $timeout) {
+$rootScope.$on('$routeChangeStart', function () {
+	$scope.stopSound();
+});
 
 var kSTORIES = BOOK4K_1;
 radioCDChange = function (cd) {

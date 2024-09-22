@@ -1,19 +1,8 @@
 
-document.write('<script src="../global_js.js" type="text/javascript"></script>');
+document.write('<script src="./grammer/grammer_data.js" type="text/javascript"></script>');
 
-function MYLOG(msg) {
-//	console.log(msg);
-}
-function hightlightTypeOfWord(txt) {
-	txt = txt.replaceAll(' n ', '<label class="text-info">&nbsp;&nbsp;n&nbsp;</label>');
-	txt = txt.replaceAll(' a ', '<label class="text-success">&nbsp;&nbsp;a&nbsp;</label>');
-	txt = txt.replaceAll(' adv ', '<label class="text-success font-weight-bold">&nbsp;&nbsp;adv&nbsp;</label>');
-	txt = txt.replaceAll(' v ', '<label class="text-warning">&nbsp;&nbsp;v&nbsp;</label>');
-	return txt;
-}
-
-var app = angular.module("myApp", ['ngSanitize']);
-app.controller("ctrl", function($scope, $timeout) {
+var app = angular.module("grammerApp", ['ngSanitize']);
+app.controller("grammerCtrl", function($scope, $timeout) {
 
 var kDATA = GRAMMER_DATA;
 

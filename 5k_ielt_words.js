@@ -25,8 +25,7 @@ Downsizing /ˈdaʊn.saɪz.ɪŋ/ Thu nhỏ quy mô<br>\
 Employee /ɪmˈplɔɪ.iː/ Nhân viên<br>\
 Employee assistance program /ɪmˈplɔɪ.iː əˈsɪstəns ˈproʊ.ɡræm/ Chương trình hỗ trợ nhân viên<br>\
 Employee benefits /ɪmˈplɔɪ.iː ˈbɛn.ɪ.fɪts/ Phúc lợi cho nhân viên<br>\
-Employee engagement /ɪmˈplɔɪ.iː ɪnˈɡeɪdʒ.mənt/<br>\
-Sự tương tác của nhân viên<br>\
+Employee engagement /ɪmˈplɔɪ.iː ɪnˈɡeɪdʒ.mənt/ Sự tương tác của nhân viên<br>\
 Employer /ɪmˈplɔɪ.ər/ Nhà tuyển dụng<br>\
 Employment /ɪmˈplɔɪ.mənt/ Việc làm<br>\
 Entrepreneur /ˌɑːn.trə.prəˈnɜːr/ Doanh nhân<br>\
@@ -117,8 +116,8 @@ Workplace conflict /ˈwɜːrkpleɪs ˈkɒnflɪkt/ Xung đột trong nơi làm vi
 "
 },
 {
-	title:"Technology (Ielts)",
-	en:"3D printing /ˌθriː diː ˈprɪntɪŋ/ In 3D<br>\
+title:"Technology (Ielts)",
+en:"3D printing /ˌθriː diː ˈprɪntɪŋ/ In 3D<br>\
 Advancement /ədˈvænsmənt/ Sự tiến bộ, sự phát triển<br>\
 Algorithm /ˈælɡərɪðəm/ Thuật toán<br>\
 Artificial intelligence (AI) /ˌɑːrtɪˈfɪʃəl ɪnˈtɛlədʒəns/ Trí tuệ nhân tạo<br>\
@@ -200,7 +199,7 @@ Programming [ˈproʊˌgræmɪŋ] Lập trình<br>\
 Remote access [rɪˈmoʊt ˈæksɛs] Truy cập từ xa<br>\
 Renewable energy /rɪˈnuːəbl ˈɛnərdʒi/ Năng lượng tái tạo<br>\
 Renewable resources /rɪˈnuːərəbl rɪˈsɔrsɪz/ Tài nguyên tái tạo<br>\
-Robotics /rəˈbɑːtɪks/ Robot học<br>\
+Robotics /rəˈbɑːtɪks/ Kỹ thuật Robot<br>\
 Smart homes /smɑːrt hoʊmz/ Nhà thông minh<br>\
 Social media /ˈsoʊʃəl ˈmidiə/ Mạng xã hội<br>\
 Software development /ˈsɔːftwɛr dɪˈvɛləpmənt/ Phát triển phần mềm<br>\

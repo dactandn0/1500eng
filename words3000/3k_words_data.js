@@ -701,7 +701,19 @@ Betroth v /bɪˈtrəʊð/  Hứa hôn, đính hôn",
 }
 ,
 {
-	en:"",
+	en:"aboard /əˈbɔːd/ đi lên, ở trên (phương tiện) tắt<br>\
+/ˈɒk.sɪ.dʒən ˌmɑːsk/ mặt nạ thở oxy<br>\
+serve /sɜːv/ phục vụ (thức ăn)<br>\
+window seat /ˈwɪn.dəʊ ˌsiːt/ ghế cạnh cửa sổ<br>\
+airsick /ˈeə.sɪk/ (bị) say máy bay<br>\
+cockpit /ˈkɒk.pɪt/ buồng lái<br>\
+fasten /ˈfɑː.sən/ thắt, buộc<br>\
+take off /teɪk ɒf/ cất cánh<br>\
+co-pilot /ˈkəʊˌpaɪ.lət/ phi công phụ, lái phụ<br>\
+assist /əˈsɪst/ hỗ trợ, giúp đỡ<br>\
+first-class /ˌfɜːst ˈklɑːs/ (ghế) hạng nhất<br>\
+confiscate /ˈkɒn.fɪ.skeɪt/ tịch thu<br>\
+turn on /tɜːn ɒn/ bật, mở",
 	title:"Airport",
 }
 ,{
@@ -1658,8 +1670,6 @@ Goose n /ɡuːs/ Ngỗng<br>\
 Donkey n /ˈdɒŋ.ki/ Lừa<br>\
 Sheep n /ʃiːp/ Cừu<br>\
 Ox n /ɒks/ Bò<br>\
-Dog n /dɒɡ/ Chó<br>\
-Cat n /kæt/ Mèo<br>\
 Chicken n /ˈtʃɪk.ɪn/ Gà<br>\
 Rooster n /ˈruː.stər/ Gà trống<br>\
 Hen n /hɛn/ Gà mái<br>\

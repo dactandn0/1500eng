@@ -157,6 +157,7 @@ $scope.fetchStory = function (idx, reset=true) {
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
+
 }
 
 $scope.loadData = function () {

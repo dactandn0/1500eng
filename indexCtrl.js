@@ -96,6 +96,12 @@ $scope.preProcess = function () {
 	}
 }
 
+
+$scope.topFunction = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
 $scope.loadData = function () {
 	$scope.preProcess();
 };

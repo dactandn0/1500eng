@@ -223,5 +223,118 @@ Web development [wɛb dɪˈvɛləpmənt] Phát triển web<br>\
 Web hosting [wɛb ˈhoʊstɪŋ] Lưu trữ web<br>\
 Wireless communication /ˈwaɪərlɪs kəmjuːnɪˈkeɪʃən/ Giao tiếp không dây<br>\
 Wireless network [ˈwaɪərlɪs ˈnɛtwɜːrk] Mạng không dây<br>",
+},
+{
+	title:"Advertising (Ielts)",
+	en:"(To) cold call /koʊld kɔːl/ Gọi điện không mời trước<br>\
+Acquisition /ˌæk.wəˈzɪʃ.ən/ Sự mua, sự thu được<br>\
+Ad campaign /æd kæmˈpeɪn/ Chiến dịch quảng cáo<br>\
+Ad copy /æd ˈkɒpi/ Bản quảng cáo<br>\
+Ad placement /æd ˈpleɪsmənt/ Vị trí đặt quảng cáo<br>\
+Ad space /æd speɪs/ Không gian quảng cáo<br>\
+Advertisement /ədˈvɜːrtɪsmənt/ Quảng cáo<br>\
+Advertiser's target /ˈædvərˌtaɪzərz ˈtɑrɡɪt/ Đối tượng của người quảng cáo<br>\
+Advertising budget /ˈædvərˌtaɪzɪŋ ˈbʌdʒɪt/ Ngân sách quảng cáo<br>\
+Advertising effectiveness /ˈædvərˌtaɪzɪŋ ɪˈfɛktɪvnəs/ Hiệu quả quảng cáo<br>\
+Advertising impact /ˈædvərˌtaɪzɪŋ ˈɪmpækt/ Tác động của quảng cáo<br>\
+Advertising medium /ˈædvərˌtaɪzɪŋ ˈmidiəm/ Phương tiện quảng cáo<br>\
+Advertising platform /ˈædvərˌtaɪzɪŋ ˈplætfɔrm/ Nền tảng quảng cáo<br>\
+Advertising revenue /ˈædvərˌtaɪzɪŋ ˈrɛvənjuː/ Doanh thu quảng cáo<br>\
+Advertising strategy /ˈædvərˌtaɪzɪŋ ˈstrætədʒi/ Chiến lược quảng cáo<br>\
+Alternatives /ɔːlˈtɜːrnətɪvz/ Sự lựa chọn khác<br>\
+Association /əˌsoʊsiˈeɪʃən/ Liên kết<br>\
+Awareness /əˈwɛərnəs/ Nhận thức<br>\
+Billboard /ˈbɪlbɔːrd/ Biển quảng cáo<br>\
+Brand awareness /brænd əˈwɛərnɪs/ Nhận thức về thương hiệu<br>\
+Brand loyalty /brænd ˈlɔɪəlti/ Sự trung thành với thương hiệu<br>\
+Brand recognition /brænd ˌrɛkəɡˈnɪʃən/ Nhận diện thương hiệu<br>\
+Branding /ˈbrændɪŋ/ Xây dựng thương hiệu<br>\
+Buy and sell /baɪ ænd sɛl/ Mua bán<br>\
+Call to action /kɔːl tuː ˈækʃən/ Lời kêu gọi hành động<br>\
+Campaign /kæmˈpeɪn/ Chiến dịch<br>\
+Celebrity endorsement /səˈlɛbrɪti ɪnˈdɔːrsmənt/ Quảng bá thương hiệu bằng người nổi tiếng<br>\
+Channels /ˈtʃænəlz/ Kênh<br>\
+Classified ads /ˈklæsɪˌfaɪd ædz/ Quảng cáo phân loại<br>\
+Commercial /kəˈmɜːrʃəl/ Thương mại<br>\
+Commercial break /kəˈmɜːrʃəl breɪk/ Quảng cáo<br>\
+Commercial channel /kəˈmɜːrʃəl ˈtʃænəl/ Kênh truyền hình quảng cáo<br>\
+Companies /ˈkʌmpəniz/ Các công ty<br>\
+Competition /ˌkɒmpɪˈtɪʃən/ Sự cạnh tranh<br>\
+Competitors /kəmˈpɛtɪtərz/ Đối thủ cạnh tranh<br>\
+Consumer /kənˈsjuːmər/ Người tiêu dùng<br>\
+Consumer behavior /kənˈsjuːmər bɪˈheɪvjər/ Hành vi của người tiêu dùng<br>\
+Consumerism /kənˈsjuːmərɪzəm/ Chủ nghĩa tiêu dùng<br>\
+Consumption habits /kənˈsʌmpʃən ˈhæbɪts/ Thói quen tiêu dùng<br>\
+Critical thinking skills /ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz/ Kỹ năng tư duy phản biện<br>\
+Customer /ˈkʌstəmər/ Khách hàng<br>\
+Deceptive /dɪˈsɛptɪv/ Lừa dối<br>\
+Digital marketing /ˈdɪdʒɪtl ˈmɑːrkɪtɪŋ/ Marketing số<br>\
+Direct mail /dɪˈrɛkt meɪl/ Quảng cáo trực tiếp qua thư<br>\
+Dissatisfaction /ˌdɪsəˈsætɪsˌfækʃən/ Sự không hài lòng<br>\
+Distribution /ˌdɪstrɪˈbjuːʃən/ Phân phối<br>\
+Early age /ˈɜːrli eɪdʒ/ Thời kỳ sơ khai<br>\
+Ethical implications /ˈɛθɪkəl ˌɪmplɪˈkeɪʃənz/ Hàm ý đạo đức<br>\
+Evaluate /ɪˈvæljʊˌeɪt/ Đánh giá<br>\
+Exaggerate /ɪɡˈzædʒəˌreɪt/ Phóng đại<br>\
+Excessive /ɪkˈsɛsɪv/ Quá mức<br>\
+Exploitation /ˌɛksplɔɪˈteɪʃən/ Khai thác<br>\
+False expectations /fɔls ˌɛkspɛkˈteɪʃənz/ Kỳ vọng sai lầm<br>\
+Familiarity /fəˌmɪliˈærəti/ Sự quen thuộc<br>\
+Goods /ɡʊdz/ Hàng hóa<br>\
+Impact /ˈɪmpækt/ Tác động<br>\
+Informed choices /ɪnˈfɔrmd ˈtʃɔɪsɪz/ Lựa chọn được thông tin<br>\
+Interests /ˈɪntrəsts/ Lợi ích<br>\
+Junk mail /dʒʌŋk meɪl/ Thư rác<br>\
+Logo /ˈloʊɡoʊ/ Lô gô<br>\
+Loyalty /ˈlɔɪəlti/ Sự trung thành<br>\
+Mailing list /ˈmeɪlɪŋ lɪst/ Danh sách gửi thư<br>\
+Manipulate /məˈnɪpjəleɪt/ Thao túng<br>\
+Market research /ˈmɑːrkɪt rɪˈsɜːrtʃ/ Nghiên cứu thị trường<br>\
+Market segmentation /ˈmɑrkɪt ˌsɛɡmɛnˈteɪʃən/ Phân đoạn thị trường<br>\
+Marketing /ˈmɑːrkɪtɪŋ/ Tiếp thị<br>\
+Marketing tactics /ˈmɑrkɪtɪŋ ˈtæktɪks/ Chiến thuật tiếp thị<br>\
+Mass media /mæs ˈmiːdiə/ Truyền thông đại chúng<br>\
+Materialism /məˈtɪəriəlɪzəm/ Chủ nghĩa vật chất<br>\
+Media /ˈmiːdiə/ Phương tiện truyền<br>\
+Misleading information /mɪsˈliːdɪŋ ˌɪnfərˈmeɪʃən/ Thông tin gây hiểu lầm<br>\
+Niche product /nitʃ ˈprɒdʌkt/ Sản phẩm hướng đến một nhóm đối tượng nhỏ<br>\
+Online advertising /ˈɒnˌlaɪn ˈædvərˌtaɪzɪŋ/ Quảng cáo trực tuyến<br>\
+Online platforms /ˈɒnˌlaɪn ˈplætfɔːrmz/ Nền tảng trực tuyến<br>\
+Perceptions /pərˈsɛpʃənz/ Sự nhận thức<br>\
+Persuasion /pərˈsweɪʒən/ Sự thuyết phục<br>\
+Preferences /ˈprɛfərənsɪz/ Sở thích<br>\
+Press release /prɛs rɪˈliːs/ Thông cáo báo chí<br>\
+Prime time /praɪm taɪm/ Giờ vàng, thời gian cao điểm truyền hình/radio có lượng người xem/nghe cao nhất.<br>\
+Print advertising /prɪnt ˈædvərˌtaɪzɪŋ/ Quảng cáo in ấn<br>\
+Print media /prɪnt ˈmidiə/ Phương tiện truyền thông in ấn<br>\
+Product placement /ˈprɒdʌkt ˈpleɪsmənt/ Đặt sản phẩm trong phim, chương trình truyền hình để quảng cáo.<br>\
+Products /ˈprɒdʌkts/ Sản phẩm<br>\
+Promote /prəˈmoʊt/ Quảng bá, thúc đẩy<br>\
+Promotion /prəˈmoʊʃən/ Sự quảng bá<br>\
+Protecting /prəˈtɛktɪŋ/ Bảo vệ<br>\
+Public relations /ˈpʌblɪk rɪˈleɪʃənz/ Quan hệ công chúng<br>\
+Purchasing decisions /ˈpɜːrtʃəsɪŋ dɪˈsɪʒənz/ Quyết định mua hàng<br>\
+Radio /ˈreɪdioʊ/ Đài phát thanh<br>\
+Radio advertising /ˈreɪdioʊ ˈædvərˌtaɪzɪŋ/ Quảng cáo trên đài phát thanh<br>\
+Regulators /ˈrɛɡjəˌleɪtərz/ Cơ quan quản lý<br>\
+Sales /seɪlz/ Doanh số<br>\
+Sales page /seɪlz peɪdʒ/ Trang bán hàng, trang giới thiệu sản phẩm.<br>\
+Services /ˈsɜːrvɪsɪz/ Dịch vụ<br>\
+Social media /ˈsoʊʃəl ˈmidiə/ Mạng xã hội<br>\
+Social media marketing /ˈsoʊʃəl ˈmidiə ˈmɑrkɪtɪŋ/ Tiếp thị truyền thông xã hội<br>\
+Spam email /spæm iˈmeɪl/ Email rác<br>\
+Sponsorship /ˈspɑːnsərʃɪp/ Tài trợ<br>\
+Strike a balance /straɪk ə ˈbæləns/ Đạt được sự cân bằng<br>\
+Strong brands /strɔːŋ brændz/ Những thương hiệu tiếng tăm<br>\
+Target audience /ˈtɑːrɡɪt ˈɔːdiəns/ Đối tượng mục tiêu<br>\
+Television /ˈtɛlɪˌvɪʒən/ Truyền hình<br>\
+Television advertising /ˈtɛlɪˌvɪʒən ˈædvərˌtaɪzɪŋ/ Quảng cáo trên truyền hình<br>\
+To go viral /tuː ɡoʊ ˈvaɪrəl/ Lan truyền nhanh chóng trên mạng<br>\
+To launch a product /tuː lɔːntʃ ə ˈprɒdʌkt/ Ra mắt sản phẩm<br>\
+Values /ˈvæljuːz/ Giá trị<br>\
+Viral marketing /ˈvaɪrəl ˈmɑrkɪtɪŋ/ Tiếp thị viral<br>\
+Vulnerable populations /ˈvʌlnərəbl ˌpɒpjʊˈleɪʃənz/ Nhóm đối tượng dễ bị tổn thương<br>\
+Word of mouth /wɜːrd ʌv maʊθ/ Truyền miệng<br>\
+",
 }
 ]

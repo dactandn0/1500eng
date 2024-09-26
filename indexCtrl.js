@@ -96,6 +96,18 @@ $scope.preProcess = function () {
 	}
 }
 
+$scope.findSameWord = function() {
+  for (var i = 0; i < $scope.searchData.length-1; i++) {
+    var word1 = $scope.searchData[i].split(" ")[0].trim();
+    for (var k = i+1; k < $scope.searchData.length; k++) {
+      var word2 = $scope.searchData[k].split(" ")[0].trim()
+      if (word1 === word2) {
+        console.log(word1);
+        break;
+      }
+    }
+  }
+}
 
 $scope.topFunction = function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -103,7 +115,8 @@ $scope.topFunction = function() {
 
 
 $scope.loadData = function () {
-	$scope.preProcess();
+  $scope.preProcess();
+	$scope.findSameWord();
 };
 
 $scope.loadData();

@@ -10,7 +10,6 @@ Application /ˌæp.lɪˈkeɪ.ʃən/ Đơn xin việc<br>\
 Benefits /ˈben.ɪ.fɪts/ Phúc lợi<br>\
 Bonus /ˈboʊ.nəs/ Tiền thưởng<br>\
 Break /breɪk/ Giờ nghỉ<br>\
-Career /kəˈrɪr/ Sự nghiệp<br>\
 Career counseling /kəˈrɪr ˈkaʊn.səl.ɪŋ/ Tư vấn nghề nghiệp<br>\
 Co-working space /ˌkoʊˈwɜːrk.ɪŋ speɪs/ Không gian làm việc chung<br>\
 Colleague /ˈkɑː.liːɡ/ Đồng nghiệp<br>\
@@ -73,7 +72,7 @@ Performance management /pərˈfɔːrməns ˈmænɪdʒ.mənt/ Quản lý hiệu s
 Permanent /ˈpɜːr.mə.nənt/ Vĩnh viễn<br>\
 Profession /prəˈfeʃ.ən/ Chức nghiệp<br>\
 Professional growth /prəˈfɛʃənl ɡroʊθ/ Phát triển chuyên môn<br>\
-Promotion /prəˈmoʊ.ʃən/ Thăng tiến<br>\
+Promotion /prəˈmoʊ.ʃən/ Thăng tiến, Sự quảng bá<br>\
 Qualifications /ˌkwɑː.lə.fɪˈkeɪ.ʃənz/ Trình độ, bằng cấp<br>\
 Raise /reɪz/ Tăng lương<br>\
 Recruitment /rɪˈkruːt.mənt/ Tuyển dụng<br>\
@@ -93,7 +92,6 @@ Staffing /ˈstæfɪŋ/ Quản lý nhân sự<br>\
 Succession planning /səkˈsɛʃən ˈplænɪŋ/ Kế hoạch thành công<br>\
 Talent acquisition /ˈtælənt ˌæk.wɪˈzɪʃən/ Tuyển dụng nhân tài<br>\
 Teamwork /ˈtiːm.wɜːrk/ Làm việc nhóm<br>\
-Telecommuting /ˈtɛlɪkjuːˌmjuːtɪŋ/ Làm việc từ xa<br>\
 Temporary /ˈtem.pər.er.i/ Tạm thời<br>\
 Time clock /taɪm klɑːk/ Máy chấm công<br>\
 Training /ˈtreɪ.nɪŋ/ Đào tạo<br>\
@@ -251,7 +249,6 @@ Brand recognition /brænd ˌrɛkəɡˈnɪʃən/ Nhận diện thương hiệu<br
 Branding /ˈbrændɪŋ/ Xây dựng thương hiệu<br>\
 Buy and sell /baɪ ænd sɛl/ Mua bán<br>\
 Call to action /kɔːl tuː ˈækʃən/ Lời kêu gọi hành động<br>\
-Campaign /kæmˈpeɪn/ Chiến dịch<br>\
 Celebrity endorsement /səˈlɛbrɪti ɪnˈdɔːrsmənt/ Quảng bá thương hiệu bằng người nổi tiếng<br>\
 Channels /ˈtʃænəlz/ Kênh<br>\
 Classified ads /ˈklæsɪˌfaɪd ædz/ Quảng cáo phân loại<br>\
@@ -268,10 +265,8 @@ Consumption habits /kənˈsʌmpʃən ˈhæbɪts/ Thói quen tiêu dùng<br>\
 Critical thinking skills /ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz/ Kỹ năng tư duy phản biện<br>\
 Customer /ˈkʌstəmər/ Khách hàng<br>\
 Deceptive /dɪˈsɛptɪv/ Lừa dối<br>\
-Digital marketing /ˈdɪdʒɪtl ˈmɑːrkɪtɪŋ/ Marketing số<br>\
 Direct mail /dɪˈrɛkt meɪl/ Quảng cáo trực tiếp qua thư<br>\
 Dissatisfaction /ˌdɪsəˈsætɪsˌfækʃən/ Sự không hài lòng<br>\
-Distribution /ˌdɪstrɪˈbjuːʃən/ Phân phối<br>\
 Early age /ˈɜːrli eɪdʒ/ Thời kỳ sơ khai<br>\
 Ethical implications /ˈɛθɪkəl ˌɪmplɪˈkeɪʃənz/ Hàm ý đạo đức<br>\
 Evaluate /ɪˈvæljʊˌeɪt/ Đánh giá<br>\
@@ -310,7 +305,6 @@ Print media /prɪnt ˈmidiə/ Phương tiện truyền thông in ấn<br>\
 Product placement /ˈprɒdʌkt ˈpleɪsmənt/ Đặt sản phẩm trong phim, chương trình truyền hình để quảng cáo.<br>\
 Products /ˈprɒdʌkts/ Sản phẩm<br>\
 Promote /prəˈmoʊt/ Quảng bá, thúc đẩy<br>\
-Promotion /prəˈmoʊʃən/ Sự quảng bá<br>\
 Protecting /prəˈtɛktɪŋ/ Bảo vệ<br>\
 Public relations /ˈpʌblɪk rɪˈleɪʃənz/ Quan hệ công chúng<br>\
 Purchasing decisions /ˈpɜːrtʃəsɪŋ dɪˈsɪʒənz/ Quyết định mua hàng<br>\
@@ -320,14 +314,12 @@ Regulators /ˈrɛɡjəˌleɪtərz/ Cơ quan quản lý<br>\
 Sales /seɪlz/ Doanh số<br>\
 Sales page /seɪlz peɪdʒ/ Trang bán hàng, trang giới thiệu sản phẩm.<br>\
 Services /ˈsɜːrvɪsɪz/ Dịch vụ<br>\
-Social media /ˈsoʊʃəl ˈmidiə/ Mạng xã hội<br>\
 Social media marketing /ˈsoʊʃəl ˈmidiə ˈmɑrkɪtɪŋ/ Tiếp thị truyền thông xã hội<br>\
 Spam email /spæm iˈmeɪl/ Email rác<br>\
 Sponsorship /ˈspɑːnsərʃɪp/ Tài trợ<br>\
 Strike a balance /straɪk ə ˈbæləns/ Đạt được sự cân bằng<br>\
 Strong brands /strɔːŋ brændz/ Những thương hiệu tiếng tăm<br>\
 Target audience /ˈtɑːrɡɪt ˈɔːdiəns/ Đối tượng mục tiêu<br>\
-Television /ˈtɛlɪˌvɪʒən/ Truyền hình<br>\
 Television advertising /ˈtɛlɪˌvɪʒən ˈædvərˌtaɪzɪŋ/ Quảng cáo trên truyền hình<br>\
 To go viral /tuː ɡoʊ ˈvaɪrəl/ Lan truyền nhanh chóng trên mạng<br>\
 To launch a product /tuː lɔːntʃ ə ˈprɒdʌkt/ Ra mắt sản phẩm<br>\

@@ -67,6 +67,7 @@ Ngay bên cạnh rạp chiếu phim là cầu thang dẫn xuống các cabin tr�
 Trên boong này, tức là Boong B, bạn cũng sẽ tìm thấy một khu vực nơi bạn có thể chơi trò chơi trong khu trò chơi điện tử đặc biệt của chúng tôi hoặc mua sắm.<br>\
 <br>\
 Ngay phía sau đó trên cùng một tầng, những người muốn hít thở không khí trong lành hoặc chỉ muốn ngắm biển có thể ra boong ngắm cảnh, nằm ngoài trời. Hãy đảm bảo rằng bạn mặc áo khoác hoặc áo choàng, vì trời có thể khá lạnh và gió."
+,voca:"record,announcement,facilities,reception,appetites,reclining,viewing deck,staircase,steward,three-course meal,arrival,cater,available"
 },
 {
 	en:"3.T18<br>\

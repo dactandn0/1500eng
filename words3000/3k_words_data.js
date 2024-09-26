@@ -5,7 +5,6 @@ const WORDS_3K_DATA =
 title: "School Supplies",
 en: "Watercolor n /ˈwɔː.təˌkʌl.ər/  Màu nước<br>\
 Thumbtack n /ˈθʌm.tæk/  Đinh ghim<br>\
-Textbook n /ˈtekst.bʊk/  Sách giáo khoa<br>\
 Test Tube n /ˈtest ˌtjuːb/  Ống nghiệm<br>\
 Tape measure n /ˈteɪp ˌmeʒ.ər/  Thước dây<br>\
 Stencil n /ˈsten.səl/  Giấy nến<br>\
@@ -14,16 +13,13 @@ Staple remover n /ˈsteɪ.plər rɪˈmuː.vər/  Cái gỡ ghim bấm<br>\
 Set Square n /ˈset ˌskweər/  Ê-ke<br>\
 Scotch Tape n /ˌskɒtʃ ˈteɪp/  Băng dính trong suốt<br>\
 Scissors n /ˈsɪz.əz/  Kéo<br>\
-Ruler n /ˈruː.lər/  Thước<br>\
 Ribbon n /ˈrɪb.ən/  Ruy-băng<br>\
 Protractor n /prəˈtræk.tər/  Thước đo góc<br>\
 Post-it note n /ˈpəʊst.ɪt ˌnəʊt/  Giấy nhớ<br>\
 Pin n /pɪn/  Đinh ghim, kẹp<br>\
-Pencil n /ˈpen.səl/  Bút chì<br>\
 Pencil Sharpener n /ˈpen.səl ˌʃɑː.pən.ər/  Đồ gọt bút chì<br>\
 Pencil Case n /ˈpen.səl ˌkeɪs/  Hộp bút<br>\
 Pen n /pen/  Bút mực<br>\
-Paper n /ˈpeɪ.pər/  Giấy<br>\
 Paper fastener n /ˈpeɪ.pər ˈfɑːs.ən.ər/  Dụng cụ kẹp giấy<br>\
 Paper Clip n /ˈpeɪ.pə ˌklɪp/  Kẹp giấy<br>\
 Palette n /ˈpæl.ət/  Bảng màu<br>\
@@ -46,23 +42,17 @@ Dossier n /ˈdɒs.i.eɪ/  Hồ sơ<br>\
 Dictionary n /ˈdɪk.ʃən.ər.i/  Từ điển<br>\
 Desk n /desk/  Bàn học<br>\
 Crayon n /ˈkreɪ.ɒn/  Bút chì màu<br>\
-Computer n /kəmˈpjuː.tər/  Máy tính bàn<br>\
 Compass n /ˈkʌm.pəs/  Com-pa<br>\
 Coloured Pencil n /ˈkʌl.əd ˈpen.səl/  Bút chì màu<br>\
-Clock n /klɒk/  Đồng hồ treo tường<br>\
 Clamp n klæmp/  Kẹp<br>\
-Chalk n /tʃɔːk/  Phấn<br>\
 Chair n /tʃeər/  Ghế<br>\
 Carbon paper n /ˈkɑː.bən ˌpeɪ.pər/  Giấy than<br>\
-Calculator n /ˈkæl.kjə.leɪ.tər/  Máy tính cầm tay<br>\
 Bookcase n /ˈbʊk.keɪs/  Giá sách<br>\
 Book n /bʊk/  Sách<br>\
 Board n /bɔːd/  Bảng<br>\
-Blackboard n /ˈblæk.bɔːd/  Bảng đen<br>\
 Binder n /ˈbaɪn.dər/  Bìa rời (báo, tạp chí)<br>\
 Beaker n /ˈbiː.kər/  Cốc bêse<br>\
 Ballpoint pen n /ˌbɔːl.pɔɪnt ˈpen/  Bút bi<br>\
-Bag n /bæɡ/  Cặp sách<br>\
 Backpack n /ˈbæk.pæk/  Ba lô<br>\
 Funnel n /ˈfʌn.əl/  Cái phễu\
 ",
@@ -135,7 +125,6 @@ Whale n /weɪl/  Cá voi<br>\
 Shark n /ʃɑːk/  Cá mập<br>\
 Dolphin n /ˈdɒlfɪn/  Cá heo<br>\
 Octopus n /ˈɑːktəpəs/  Bạch tuộc<br>\
-Fish n /fɪʃ/  Cá<br>\
 Jellyfish n /ˈdʒelifɪʃ/  Sứa<br>\
 Sea horse n /ˈsiˌhɔrs/  Cá ngựa<br>\
 Seaweed n /ˈsiːwiːd/  Rong biển<br>\
@@ -309,7 +298,7 @@ Rolling pin n /ˈroʊ.lɪŋ ˌpɪn/   <br>\
 Measuring spoon  /ˈmɛʒərɪŋ spun/Muỗng (đo để nêm gia vị)<br>\
 Whisk /wɪsk/ Đồ dùng để đánh trứng<br>\
 Wooden spoon /ˈwʊdən spun/Thìa gỗ<br>\
-Strainer /ˈstreɪ.nɚ/ Lọc<br>\
+Strainer /ˈstreɪ.nɚ/ Ray Lọc<br>\
 Steak hammer n /steɪk ˈhæmər/Bít tết<br>\
 Mesh skimmer n /mɛʃ ˈskɪmər/ Lưỡi skimmer<br>\
 Cleaver n /ˈkliː.vɚ/Chẻ<br>\
@@ -358,7 +347,6 @@ Oil slick n /ˈɔɪl ˌslɪk/  Dầu loang<br>\
 Ozone layer n /ˈəʊ.zəʊn ˌleɪ.ər/  Tầng ozon<br>\
 Biodiversity n /ˌbaɪ.əʊ.daɪˈvɜː.sə.t i/  Đa dạng sinh học<br>\
 Ecology n /iˈkɒl.ə.dʒi/  Sinh thái học<br>\
-Water n /ˈwɔː.tər/  Nước<br>\
 Air n /eər/  Không khí<br>\
 Forest n /ˈfɒr.ɪst/  Rừng<br>\
 Flora n /ˈflɔː.rə/  Hệ thực vật<br>\
@@ -382,7 +370,6 @@ Extinction n /Ik'stinkfn/ sự tuyệt chủng [extinct a.]"
 {
 title:"Living room",
 en:"Drapes n /dreɪps/  Màn cửa<br>\
-Cushion n /ˈkʊʃ.ən/  Đệm ngồi<br>\
 Sofa n /ˈsəʊ.fə/  Ghế sô-pha<br>\
 Rug n /rʌɡ/  Tấm thảm<br>\
 Banister n /ˈbæn.ɪ.stər/  Lan can<br>\
@@ -402,7 +389,6 @@ Stereo n /ˈster.i.əʊ/  Máy xtê-rê-ô<br>\
 Television n /ˈtel.ɪ.vɪʒ.ən/  Ti vi<br>\
 Vase n /vɑːz/  Cái bình, lọ<br>\
 Wall unit n /wɔːl ˈjuː.nɪt/  Tủ tường<br>\
-Lamp n /læmp/  Đèn<br>\
 Calendar n /ˈkæl.ən.dər/  Lịch<br>\
 Fan n /fæn/  Cái quạt<br>\
 Chair n /tʃeər/  Cái ghế<br>\
@@ -515,8 +501,6 @@ en:"Bakery n /ˈbeɪ.kər.i/  Tiệm bánh<br>\
 Bookshop n /ˈbʊk.ʃɒp/  Tiệm sách<br>\
 Butcher's n /ˈbʊtʃ.ər/  Cửa hàng thịt<br>\
 Candy store n /ˈkæn.di ˌstɔːr/  Cửa hàng kẹo<br>\
-Convenience store n /kənˈviː.ni.əns ˌstɔːr/  Cửa hàng tiện lợi<br>\
-Greengrocer n /ˈɡriːŋ.ɡrəʊ.sər/  Cửa hàng bán rau quả<br>\
 Flower shop n /flaʊər ʃɒp/  Cửa hàng hoa<br>\
 Store n /ˌstɔːr/  Cửa hàng<br>\
 Gift shop n /ˈɡɪft ˌʃɒp/  Cửa hàng đồ lưu niệm<br>\
@@ -685,7 +669,6 @@ Jewelry n /ˈdʒuː.əl.ri/  Trang sức<br>\
 Wine n /waɪn/  Rượu vang<br>\
 Dowry n /ˈdaʊ.ri/  Của hồi môn<br>\
 Honeymoon n /ˈhʌn.i.muːn/  Tuần trăng mật<br>\
-Anniversary n /ˌæn.ɪˈvɜː.sər.i/  Ngày kỷ niệm<br>\
 Brother-in-law n /ˈbrʌð.ə.rɪn.lɔː/  Anh/em rể, anh/em chồng, anh/em vợ<br>\
 Sister-in-law n /ˈsɪs.tə.rɪn.lɔː/  Chị/em dâu, chị/em chồng, chị/em vợ<br>\
 Engaged v /ɪnˈɡeɪdʒd/  Đã đính ước, hứa hôn<br>\
@@ -1199,7 +1182,6 @@ Ornament n /ˈɔːr.nə.mənt/ Đồ trang trí<br>\
 Pine tree n /paɪn triː/ Cây thông<br>\
 Sled v /slɛd/ Xe trượt tuyết<br>\
 Bell n /bɛl/ Chuông<br>\
-Snowflake n /ˈsnoʊˌfleɪk/ Bông tuyết<br>\
 Wreath n /riːθ/ Vòng hoa<br>\
 Scarf n /skɑːrf/ Khăn choàng cổ<br>\
 Christmas tree n /ˈkrɪs.məs triː/ Cây thông Giáng Sinh<br>\
@@ -1356,21 +1338,13 @@ Teacher n /ˈtiː.tʃər/ Giáo viên<br>\
 Classmate n /ˈklæs.meɪt/ Bạn cùng lớp<br>\
 Library n /ˈlaɪ.brər.i/ Thư viện<br>\
 Pen n /pɛn/ Bút mực<br>\
-Pencil n /ˈpɛn.səl/ Bút chì<br>\
 Ruler n /ˈruː.lər/ Cây thước<br>\
 Calculator n /ˈkæl.kjʊ.leɪ.tər/ Máy tính cầm tay<br>\
-Chalk n /tʃɔːk/ Phấn<br>\
-Student n /ˈstjuː.dənt/ Sinh viên, học sinh<br>\
-Classroom n /ˈklæs.ruːm/ Phòng học<br>\
-Primary school n /ˈpraɪ.mə.ri skuːl/ Trường tiểu học<br>\
-Secondary school n /ˈsɛk.ən.dər.i skuːl/ Trường trung học cơ sở<br>\
 High school n /haɪ skuːl/ Trường trung học phổ thông<br>\
 Vocational school n /voʊˈkeɪ.ʃən.əl skuːl/ Trường dạy nghề<br>\
 College n /ˈkɒl.ɪdʒ/ Trường đại học, cao đẳng<br>\
-University n /ˌjuː.nɪˈvɜː.sə.ti/ Trường đại học<br>\
 Principal n /ˈprɪn.sɪ.pəl/ Hiệu trưởng<br>\
 Blackboard n /ˈblæk.bɔːd/ Bảng đen<br>\
-Compass n /ˈkʌm.pəs/ Com-pa<br>\
 History n /ˈhɪs.tər.i/ Môn lịch sử<br>\
 Economics n /ˌiː.kəˈnɒm.ɪks/ Kinh tế học<br>\
 Chemistry n /ˈkɛm.ɪ.stri/ Hóa học<br>\
@@ -1379,16 +1353,12 @@ Geography n /dʒɪˈɒɡ.rə.fi/ Địa lý<br>\
 Art n /ɑːrt/ Mỹ thuật<br>\
 Fail v /feɪl/ Rớt; đánh rớt<br>\
 Pass v /pɑːs/ Đậu, đỗ (kỳ thi)<br>\
-Graduate v /ˈɡrædʒ.u.eɪt/ Tốt nghiệp<br>\
-Degree n /dɪˈɡriː/ Bằng cấp<br>\
-Playground n /ˈpleɪ.ɡraʊnd/ Sân chơi<br>\
 Uniform n /ˈjuː.nɪ.fɔːm/ Đồng phục<br>\
 Grade n /ɡreɪd/ Điểm số<br>\
 Form teacher n /fɔːm ˈtiː.tʃər/ Giáo viên chủ nhiệm<br>\
 Proctor n /ˈprɒk.tər/ Giám thị<br>\
 School bag n /skuːl bæg/ Cặp<br>\
 Dean n /diːn/ Trưởng khoa<br>\
-Lesson n /ˈles.ən/ Bài học<br>\
 Course n /kɔːs/ Khoá học",
 },
 {
@@ -1457,7 +1427,6 @@ Anorak n /ˈæn.ə.ræk/ Áo ngoài có mũ trùm đầu<br>\
 Hat n /hæt/ Mũ, nón<br>\
 Cap n /kæp/ Mũ lưỡi trai<br>\
 Glove n /ɡlʌv/ Găng tay<br>\
-Scarf n /skɑːrf/ Khăn choàng cổ<br>\
 Sandals n /ˈsæn.dəlz/ Giày xăng-đan<br>\
 Slippers n /ˈslɪp.ərz/ Đôi dép<br>\
 Pocket n /ˈpɒk.ɪt/ Túi (quần áo)<br>\
@@ -1531,14 +1500,12 @@ Student n /ˈstjuː.dənt/ Sinh viên, học sinh<br>\
 Student union n /ˈstjuː.dənt ˈjuː.njən/ Hội sinh viên<br>\
 Tuition fee n /tjuːˈɪʃ.ən fiː/ Học phí<br>\
 Exam n /ɪɡˈzæm/ Bài thi, kì thi<br>\
-Fail v /feɪl/ Thi trượt<br>\
 Pass v /pæs/ Đậu, đỗ<br>\
 Study v /ˈstʌd.i/ Học<br>\
 Learn v /lɜːrn/ Học<br>\
 Curriculum n /kəˈrɪk.jə.ləm/ Chương trình giảng dạy<br>\
 Course n /kɔːrs/ Khóa học<br>\
 Subject n /ˈsʌb.dʒɪkt/ Môn học<br>\
-Grade n /ɡreɪd/ Điểm số<br>\
 Mark n /mɑːrk/ Điểm số<br>\
 Qualification n /ˌkwɒl.ɪ.fɪˈkeɪ.ʃən/ Trình độ chuyên môn<br>\
 Attendance n /əˈtɛn.dəns/ Sự có mặt<br>\
@@ -1560,8 +1527,6 @@ Library n /ˈlaɪ.brər.i/ Thư viện<br>\
 Hall n /hɔːl/ Hội trường<br>\
 Dormitory n /ˈdɔːr.mɪ.tɔːr.i/ Ký túc xá<br>\
 Locker n /ˈlɒk.ər/ Tủ có khoá<br>\
-Classroom n /ˈklæs.ruːm/ Phòng học<br>\
-Chalk n /tʃɔːk/ Phấn<br>\
 Lesson n /ˈlɛs.ən/ Bài học<br>\
 Homework n /ˈhoʊm.wɜːrk/ Bài tập về nhà<br>\
 Test n /tɛst/ Bài kiểm tra<br>\
@@ -1598,7 +1563,6 @@ Adopt v /əˈdɒpt/ Nhận con nuôi<br>\
 Children n /ˈtʃɪl.drən/ Con cái<br>\
 Take care of v. phr /teɪk kɛər əv/ Chăm sóc, quan tâm<br>\
 Family tree n /ˈfæm.ə.li triː/ Gia phả<br>\
-Anniversary n /ˌæn.ɪˈvɜː.sə.ri/ Ngày kỷ niệm<br>\
 Close-knit a ˌkloʊsˈnɪt/ Khăng khít<br>\
 Stepchild n /ˈstɛpˌtʃaɪld/ Con riêng<br>\
 Half-brother n /ˈhɑːfˌbrʌð.ər/ Anh trai, em trai (cùng cha/mẹ khác mẹ/cha)<br>\
@@ -1665,7 +1629,6 @@ Horse n /hɔːrs/ Ngựa<br>\
 Goose n /ɡuːs/ Ngỗng<br>\
 Donkey n /ˈdɒŋ.ki/ Lừa<br>\
 Sheep n /ʃiːp/ Cừu<br>\
-Ox n /ɒks/ Bò<br>\
 Chicken n /ˈtʃɪk.ɪn/ Gà<br>\
 Rooster n /ˈruː.stər/ Gà trống<br>\
 Hen n /hɛn/ Gà mái<br>\
@@ -1690,7 +1653,6 @@ Tiger n /ˈtaɪ.ɡər/ Hổ<br>\
 Lion n /ˈlaɪ.ən/ Sư tử<br>\
 Fox n /fɒks/ Cáo<br>\
 Dinosaur n /ˈdaɪ.nəˌsɔːr/ Khủng long<br>\
-Turtle n /ˈtɜːr.təl/ Rùa biển<br>\
 Snail n /sneɪl/ Ốc sên<br>\
 Crow n /kroʊ/ Quạ<br>\
 Parrot n /ˈpær.ət/ Vẹt",
@@ -1720,24 +1682,17 @@ Centipede n /ˈsɛn.tɪˌpiːd/ Rết",
 	title:"Studying",
 	en:"Class n /klæs/ Lớp học<br>\
 Classroom n /ˈklæsˌruːm/ Phòng học<br>\
-Textbook n /ˈtɛkstˌbʊk/ Sách giáo khoa<br>\
 Workbook n /ˈwɜːkˌbʊk/ Sách bài tập<br>\
 Reference book n /ˈrɛf.ər.əns ˌbʊk/ Sách tham khảo<br>\
-Notebook n /ˈnoʊtˌbʊk/ Vở<br>\
 Notepad n /ˈnoʊtˌpæd/ Sổ ghi chép<br>\
-Pencil n /ˈpɛn.səl/ Bút chì<br>\
 Crayon n /ˈkreɪ.ɒn/ Bút chì màu<br>\
 Pencil sharpener n /ˈpɛn.səl ˌʃɑːp.nər/ Đồ gọt bút chì<br>\
 Eraser n /ɪˈreɪ.zər/ Cục tẩy<br>\
 Pen n /pɛn/ Bút mực<br>\
 Ballpoint pen n /ˈbɔːl.pɔɪnt ˌpɛn/ Bút bi<br>\
-Paper n /ˈpeɪ.pər/ Giấy<br>\
 Desk n /dɛsk/ Bàn học<br>\
 Map n /mæp/ Bản đồ<br>\
 Glue n /ɡluː/ Hồ dán<br>\
-Scissors n /ˈsɪz.ərz/ Kéo<br>\
-Ruler n /ˈruː.lər/ Thước<br>\
-Protractor n /prəˈtræk.tər/ Thước đo góc<br>\
 Ink n /ɪŋk/ Mực<br>\
 Chalk n /tʃɔːk/ Phấn<br>\
 Folder n /ˈfoʊl.dər/ Thư mục",
@@ -1773,7 +1728,6 @@ Lobster n /ˈlɒbstər/ Tôm hùm<br>\
 Squid n /skwɪd/ Mực ống<br>\
 Shrimp n /ʃrɪmp/ Tôm<br>\
 Oyster n /ˈɔɪ.stər/ Hàu<br>\
-Crab n /kræb/ Cua<br>\
 Cockle n /ˈkɒk.əl/ Sò<br>\
 Scallop n /ˈskɒl.əp/ Sò điệp<br>\
 Octopus n /ˈɒk.tə.pʊs/ Bạch tuộc<br>\
@@ -1810,7 +1764,6 @@ Designer n /dɪˈzaɪ.nər/ Nhà thiết kế<br>\
 Magician n /məˈdʒɪʃ.ən/ Nhà ảo thuật<br>\
 Tour guide n /tʊr ɡaɪd/ Hướng dẫn viên du lịch<br>\
 Sailor n /ˈseɪ.lər/ Thủy thủ<br>\
-Commentator n /ˈkɒm.ənˌteɪ.tər/ Bình luận viên<br>\
 Dentist n /ˈdɛn.tɪst/ Nha sĩ<br>\
 Postman n /ˈpoʊst.mæn/ Người đưa thư<br>\
 Writer n /ˈraɪ.tər/ Nhà văn<br>\
@@ -1823,7 +1776,6 @@ Grocer n /ˈɡroʊ.sər/ Người bán tạp hóa<br>\
 Clerk n /klɜrk/ Người thư ký<br>\
 Assistant n /əˈsɪs.tənt/ Trợ lý<br>\
 Model n /ˈmɒd.əl/ Người mẫu<br>\
-Freelancer n /ˈfriːˌlænsər/ Người làm việc tự do<br>\
 Consultant n /kənˈsʌl.tənt/ Chuyên viên tư vấn<br>\
 Self-employed a /ˌsɛlfɪmˈplɔɪd/ Tự làm chủ<br>\
 Supervisor n /ˈsuː.pərˌvaɪ.zər/ Giám sát viên<br>\
@@ -1843,7 +1795,6 @@ Sanitation worker n /ˌsænɪˈteɪ.ʃən ˈwɜːrkər/ Lao công<br>\
 Business manager n /ˈbɪznɪs ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
 Police officer n /pəˈliːs ˈɒfɪ.sər/ Cảnh sát<br>\
 Personnel manager n /ˌpɜːrsəˈnɛl ˈmæn.ɪ.dʒər/ Giám đốc nhân sự<br>\
-Teacher n /ˈtiː.tʃər/ Giáo viên<br>\
 Doctor n /ˈdɒk.tər/ Bác sĩ<br>\
 Nurse n /nɜrs/ Y tá<br>\
 Farmer n /ˈfɑː.mər/ Nông dân",
@@ -1884,7 +1835,6 @@ Near pre /nɪər/ Gần<br>\
 Turn right v. phr /tɜrn raɪt/ Rẽ phải<br>\
 Turn left v. phr /tɜrn lɛft/ Rẽ trái<br>\
 Junction n /ˈdʒʌŋkʃən/ Giao lộ<br>\
-Turning n /ˈtɜrnɪŋ/ Ngã rẽ<br>\
 Roundabout n /ˈraʊndəˌbaʊt/ Bùng binh<br>\
 Pavement n /ˈpeɪvmənt/ Vỉa hè",
 },
@@ -1947,7 +1897,6 @@ Property n /ˈprɒpərti/ Tài sản<br>\
 Cash machine n /kæʃ məˈʃiːn/ Máy rút tiền<br>\
 Online account n /ˈɒnˌlaɪn əˈkaʊnt/ Tài khoản trực tuyến<br>\
 Insurance policy n /ɪnˈʃʊrəns ˈpɒlɪsi/ Hợp đồng bảo hiểm<br>\
-Credit card n /ˈkrɛdɪt kɑrd/ Thẻ tín dụng<br>\
 Debit card n /ˈdɛbɪt kɑrd/ Thẻ ghi nợ<br>\
 Rental contract n /ˈrɛntəl ˈkɒntrækt/ Hợp đồng cho thuê<br>\
 Discount n /ˈdɪskaʊnt/ Sự giảm giá, chiết khấu<br>\

@@ -229,14 +229,16 @@ function MYLOG(msg) {
 	console.log(msg);
 }
 
+// for word3000.js
 function _scrollIntoView(idx) {
 var ele = document.getElementsByClassName("scroll")[idx];
 setTimeout(function () {
-           ele.scrollIntoView({
-               behavior: "smooth",
-               block: "start",
-           });
-      }, 100);
+	if (ele)
+	   ele.scrollIntoView({
+	       behavior: "smooth",
+	       block: "start",
+	   });
+	}, 100);
 }
 
 preprocess();

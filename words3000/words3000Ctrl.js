@@ -13,7 +13,6 @@ var kSTORIES = WORDS_3K_DATA
 	.concat(word_4000_data);
 
 
-$scope.cd = 1;
 $scope.stories = kSTORIES;
 $scope.storyTitles = []; 
 $scope.storyId = -1;
@@ -34,8 +33,8 @@ $scope.acc_click = function (id) {
 	}
 
 	$scope.story = kSTORIES[$scope.acc];
-	
 	_scrollIntoView(id);
+	localStorage.setItem("w3000_idx", id);
 };
 
 
@@ -48,8 +47,14 @@ $scope.preProcess = function () {
 }
 
 $scope.loadData = function () {
+	if (localStorage.hasOwnProperty("w3000_idx")) {
+		$scope.acc_click( Number(localStorage.w3000_idx)  );
+	}
 	$scope.preProcess();
 };
+
+ $scope.$on('$viewContentLoaded', function(){
+  });
 
 $scope.loadData();
 

@@ -425,7 +425,8 @@ voca:"apartment,downtown,shower,phone,bus,stop,anymore,bus,station,honestly,bath
 W: You won’t believe this, but I have some great news! I’ve got two tickets to the baseball game next Saturday.<br>\
 M: Did I hear you correctly? You have two tickets to the baseball game? How did you get those? I thought it was impossible to get tickets because they were all sold out last month!<br>\
 W: It was easy, actually. My colleague and her husband have to go to London that week, so they’ll miss the game.\
- They offered me their tickets, and of course I was happy to accept. M: You’re so lucky! Who are you going to take with you?<br>\
+ They offered me their tickets, and of course I was happy to accept. <br>\
+ M: You’re so lucky! Who are you going to take with you?<br>\
 W: I was thinking that maybe you would like to go. Otherwise, I might take my brother instead.<br>\
 M: Don’t do that, I would love to watch the game with you!<br>\
 W: I was just joking. I know you really want to go. Where shall we meet on Saturday?<br>\
@@ -436,14 +437,15 @@ vi:"Bài 19 Vé xem trận đấu<br>\
 W: Bạn sẽ không tin điều này đâu, nhưng tôi có một số tin tuyệt vời! Tôi có hai vé xem trận bóng chày vào thứ Bảy tuần tới.<br>\
 M: Tôi có nghe đúng không? Bạn có hai vé xem trận bóng chày à? Bạn lấy chúng bằng cách nào? Tôi nghĩ là không thể lấy được vé vì chúng đã bán hết vào tháng trước rồi!<br>\
 W: Thực ra thì dễ lắm. Đồng nghiệp của tôi và chồng cô ấy phải đến London vào tuần đó, nên họ sẽ bỏ lỡ trận đấu.\
- Họ đã đề nghị tôi mua vé của họ, và tất nhiên là tôi vui vẻ nhận lời. M: Bạn thật may mắn! Bạn sẽ đưa ai đi cùng?<br>\
+ Họ đã đề nghị tôi mua vé của họ, và tất nhiên là tôi vui vẻ nhận lời. <br>\
+ M: Bạn thật may mắn! Bạn sẽ đưa ai đi cùng?<br>\
 W: Tôi nghĩ rằng có lẽ bạn muốn đi. Nếu không, tôi có thể đưa anh trai tôi đi thay.<br>\
 M: Đừng làm thế, tôi rất muốn xem trận đấu cùng bạn!<br>\
 W: Tôi chỉ đùa thôi. Tôi biết là bạn thực sự muốn đi. Chúng ta sẽ gặp nhau ở đâu vào thứ Bảy?<br>\
 M: Vâng, trận đấu bắt đầu lúc chín giờ sáng, đúng không?<br>\
 W: Vâng, chúng ta sẽ gặp nhau ở đây lúc 8:30 sáng thứ Bảy?<br>\
 M: Ý tưởng hay đấy. Tôi không thể đợi được!",
-voca:"ticket,impossible,colleague,husband,correctly,otherwise,sold,out,offer,accept,cab"
+voca:"ticket,impossible,colleague,husband,correctly,otherwise,sold,out,offer,accept"
 },
 {
 	en:"Unit 20 Wonder Woman<br>\

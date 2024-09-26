@@ -128,16 +128,46 @@ voca:'alien, among, chart, cloud, comprehend, describe, ever, fail, friendly, gr
 {
 	en:'The Dog’s Bell<br>\
 John‘s dog was a bad dog. He bit people frequently. John had great concern about this. It was not an appropriate way for a dog to behave. His friends in the village always expected the dog to bite them. The news about John‘s dog spread through the village. None of the people wanted to go to John‘s house. John tried to instruct the dog to behave, but it never worked. He tried to be patient and teach the dog to be calm. That also didn‘t work. John didn‘t want to punish the dog. "How will I stop my dog‘s bad habit?" John asked himself.<br>\
-John‘s friend came to talk to him about the issue. During their important meeting, his friend said, ―The people in the village asked me to represent them. We want your dog to stop this habit. Why don‘t you put a bell around the dog‘s neck? This way, we would hear your dog coming down the street." John thought this was a great idea. Now, people could stay away from the dog. It would not be able to bite anyone anymore.<br>\
-The dog liked the bell, too. People looked at him when they heard his bell. This made the dog very content. He liked the song the bell played when he walked. One day, John‘s dog strolled through the village and met some other dogs. He expected them to want a bell like his. But they laughed at his bell. They said the bell made people avoid him. John‘s dog shook his head. "No, they look at me because they like the bell."<br>\
-The other dogs said, ―You have the wrong idea of what makes you popular. Of course they like your bell. It tells them where you are so they can avoid you. You aren‘t able to bite them anymore!"<br>\
-You see, being popular isn‘t something positive when it‘s for the wrong reason.',
+<br>John‘s friend came to talk to him about the issue. During their important meeting, his friend said, -The people in the village asked me to represent them. We want your dog to stop this habit. Why don‘t you put a bell around the dog‘s neck? This way, we would hear your dog coming down the street." John thought this was a great idea. Now, people could stay away from the dog. It would not be able to bite anyone anymore.<br>\
+<br>The dog liked the bell, too. People looked at him when they heard his bell. This made the dog very content. He liked the song the bell played when he walked. One day, John‘s dog strolled through the village and met some other dogs. He expected them to want a bell like his. But they laughed at his bell. They said the bell made people avoid him. John‘s dog shook his head. "No, they look at me because they like the bell."<br>\
+<br>The other dogs said, -You have the wrong idea of what makes you popular. Of course they like your bell. It tells them where you are so they can avoid you. You aren‘t able to bite them anymore!"<br>\
+<br>You see, being popular isn‘t something positive when it‘s for the wrong reason.',
 vi:'Chuông chó<br>\
 Con chó của John là một con chó hư. Nó thường xuyên cắn người. John rất lo lắng về điều này. Đây không phải là cách cư xử phù hợp của một con chó. Bạn bè anh trong làng luôn mong đợi con chó sẽ cắn họ. Tin tức về con chó của John lan truyền khắp làng. Không ai trong số những người dân muốn đến nhà John. John đã cố gắng hướng dẫn con chó cư xử, nhưng không bao giờ có hiệu quả. Anh đã cố gắng kiên nhẫn và dạy con chó bình tĩnh. Điều đó cũng không hiệu quả. John không muốn trừng phạt con chó. "Làm sao mình có thể ngăn chặn thói quen xấu của con chó?" John tự hỏi.<br>\
-Người bạn của John đã đến nói chuyện với anh về vấn đề này. Trong cuộc họp quan trọng của họ, người bạn của anh ấy nói, ―Những người dân trong làng đã yêu cầu tôi đại diện cho họ. Chúng tôi muốn con chó của anh dừng thói quen này. Tại sao anh không đeo một chiếc chuông quanh cổ con chó? Bằng cách này, chúng tôi sẽ nghe thấy tiếng chó của anh đi xuống phố." John nghĩ đây là một ý tưởng tuyệt vời. Bây giờ, mọi người có thể tránh xa con chó. Nó sẽ không thể cắn bất kỳ ai nữa.<br>\
-Con chó cũng thích tiếng chuông. Mọi người nhìn nó khi nghe thấy tiếng chuông. Điều này khiến con chó rất vui. Nó thích bài hát mà tiếng chuông phát ra khi nó đi bộ. Một ngày nọ, con chó của John đi dạo qua làng và gặp một số con chó khác. Nó mong đợi chúng muốn có một chiếc chuông giống như của nó. Nhưng chúng cười nhạo tiếng chuông của nó. Chúng nói rằng tiếng chuông khiến mọi người tránh xa nó. Con chó của John lắc đầu. "Không, chúng nhìn tôi vì chúng thích tiếng chuông."<br>\
-Những con chó khác nói, ―Bạn đã hiểu sai về điều khiến bạn trở nên nổi tiếng. Tất nhiên là chúng thích tiếng chuông của bạn. Nó cho chúng biết bạn đang ở đâu để chúng có thể tránh bạn. Bạn không thể cắn chúng nữa!"<br>\
-Bạn thấy đấy, trở nên nổi tiếng không phải là điều tích cực khi nó xuất phát từ lý do sai lầm.',
+<br>Người bạn của John đã đến nói chuyện với anh về vấn đề này. Trong cuộc họp quan trọng của họ, người bạn của anh ấy nói, -Những người dân trong làng đã yêu cầu tôi đại diện cho họ. Chúng tôi muốn con chó của anh dừng thói quen này. Tại sao anh không đeo một chiếc chuông quanh cổ con chó? Bằng cách này, chúng tôi sẽ nghe thấy tiếng chó của anh đi xuống phố." John nghĩ đây là một ý tưởng tuyệt vời. Bây giờ, mọi người có thể tránh xa con chó. Nó sẽ không thể cắn bất kỳ ai nữa.<br>\
+<br>Con chó cũng thích tiếng chuông. Mọi người nhìn nó khi nghe thấy tiếng chuông. Điều này khiến con chó rất vui. Nó thích bài hát mà tiếng chuông phát ra khi nó đi bộ. Một ngày nọ, con chó của John đi dạo qua làng và gặp một số con chó khác. Nó mong đợi chúng muốn có một chiếc chuông giống như của nó. Nhưng chúng cười nhạo tiếng chuông của nó. Chúng nói rằng tiếng chuông khiến mọi người tránh xa nó. Con chó của John lắc đầu. "Không, chúng nhìn tôi vì chúng thích tiếng chuông."<br>\
+<br>Những con chó khác nói, -Bạn đã hiểu sai về điều khiến bạn trở nên nổi tiếng. Tất nhiên là chúng thích tiếng chuông của bạn. Nó cho chúng biết bạn đang ở đâu để chúng có thể tránh bạn. Bạn không thể cắn chúng nữa!"<br>\
+<br>Bạn thấy đấy, trở nên nổi tiếng không phải là điều tích cực khi nó xuất phát từ lý do sai lầm.',
 voca:'appropriate, avoid, behave, calm, concern, content, expect, frequently, habit, instruct, issue, none, patient, positive, punish, represent, shake, spread, stroll, village'
 }
-	   ];
+,
+{
+	en:"The Jackal and the Sun Child<br>\
+	A jackal is a wild dog with a big black back. It resides in the desert. But how did the jackal get his black back? This was how it happened.<br>\
+<br>\
+One day, the jackal saw a girl. She was sitting upon a rock. She was not a normal child. She was a rare and beautiful sun child. She was bright and warm like the sun. The child saw the jackal and smiled.<br>\
+She said, 'Jackal, I have been relaxing on this rock for too long. I must get home soon. But, I am slow and you are fast. You will likely get me home more quickly.' Then she requested, 'Will you carry me home? If you do, I’ll give you a gift. This necklace belongs to me, but I will give it to you.'<br>\
+<br>\
+The wild jackal agreed. So the sun child sat on the dog’s back. They started to walk. But soon, the jackal felt ill. The sun child was very hot on his back. The heat was hurting his back very badly. 'I made a terrible error in judgment.' he thought. He shouldn’t have agreed to carry her. So he asked her to get off.<br>\
+<br>\
+But she did not. The jackal’s back continued to get hotter and hotter. He had to get away from the sun child. So he made a plan. First, he ran as fast as he could. <br>\
+<br>\
+He hoped the sun child would fall off. But she did not. So when the sun child was looking at the sky, not aware of the jackal’s next plan, he jumped into a field of flowers. As a result, the child rolled off his back. The jackal ran away.<br>\
+<br>\
+But the sun child left a mark on the jackal’s back, a visible black mark. Ever since his experience with the sun child, the jackal has had a black back."
+,vi:"Chó rừng và đứa con mặt trời<br>\
+Chó rừng là một loài chó hoang có lưng đen to. Chúng sống ở sa mạc. Nhưng làm sao chó rừng có được lưng đen? Chuyện là thế này.<br>\
+<br>\
+Một ngày nọ, chó rừng nhìn thấy một cô gái. Cô bé đang ngồi trên một tảng đá. Cô bé không phải là một đứa trẻ bình thường. Cô bé là một đứa trẻ mặt trời hiếm có và xinh đẹp. Cô bé rạng rỡ và ấm áp như mặt trời. Đứa trẻ nhìn thấy chó rừng và mỉm cười.<br>\
+Cô bé nói, 'Chó rừng, tôi đã thư giãn trên tảng đá này quá lâu rồi. Tôi phải về nhà sớm thôi. Nhưng tôi thì chậm còn anh thì nhanh. Có lẽ anh sẽ đưa tôi về nhà nhanh hơn.' Sau đó, cô bé yêu cầu, 'Anh có thể bế tôi về nhà không? Nếu anh bế, tôi sẽ tặng anh một món quà. Chiếc vòng cổ này là của tôi, nhưng tôi sẽ tặng anh.'<br>\
+<br>\
+Chó rừng đồng ý. Vì vậy, đứa trẻ mặt trời ngồi trên lưng con chó. Họ bắt đầu đi bộ. Nhưng chẳng mấy chốc, chó rừng cảm thấy không khỏe. Đứa trẻ mặt trời rất nóng khi nằm ngửa. Cái nóng làm lưng anh đau dữ dội. 'Mình đã phạm một sai lầm khủng khiếp trong phán đoán.' anh nghĩ. Anh không nên đồng ý bế cô. Vì vậy, anh yêu cầu cô xuống.<br>\
+<br>\
+Nhưng cô không xuống. Lưng của con chó rừng ngày càng nóng hơn. Anh phải tránh xa đứa con của mặt trời. Vì vậy, anh đã lập một kế hoạch. Đầu tiên, anh chạy nhanh nhất có thể. <br>\
+<br>\
+Anh hy vọng đứa con của mặt trời sẽ ngã. Nhưng cô không ngã. Vì vậy, khi đứa con của mặt trời đang nhìn bầu trời, không biết kế hoạch tiếp theo của con chó rừng, anh đã nhảy xuống một cánh đồng hoa. Kết quả là, đứa trẻ lăn khỏi lưng anh. Con chó rừng bỏ chạy.<br>\
+<br>\
+Nhưng đứa con của mặt trời đã để lại một vết trên lưng con chó rừng, một vết đen có thể nhìn thấy được. Kể từ khi trải nghiệm với đứa con của mặt trời, lưng của con chó rừng đã đen."
+,voca:"aware, badly, belong, continue, error, experience, field, hurt, judgment, likely, normal, rare, relax, request, reside, result, roll, since, visible, wild"
+}
+];

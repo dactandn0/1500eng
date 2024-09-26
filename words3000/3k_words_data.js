@@ -187,7 +187,6 @@ Pay v /peɪ/  Trả tiền<br>\
 Expensive a /ɪkˈspen.sɪv/  Đắt<br>\
 Cheap n /tʃiːp/  Rẻ<br>\
 Discount n /ˈdɪs.kaʊnt/  Giảm giá<br>\
-Sell v /sel/  Bán<br>\
 Price n /praɪs/  Giá cả<br>\
 Trolley n /ˈtrɒl.i/  Xe đẩy<br>\
 Credit card n /ˈkred.ɪt ˌkɑːd/  Thẻ tín dụng<br>\
@@ -196,7 +195,6 @@ Shop n /ʃɒp/  Cửa hàng<br>\
 Money n /ˈmʌn.i/  Tiền<br>\
 Basket n /ˈbɑː.skɪt/  Rổ, giỏ<br>\
 Bag n /bæɡ/  Túi<br>\
-Buy v /baɪ/  Mua<br>\
 Greengrocer n /ˈɡriːŋ.ɡrəʊ.sər/  Cửa hàng bán rau quả<br>\
 Housewares n /ˈhaʊs.weəz/  Đồ gia dụng<br>\
 Toy store n /tɔɪ stɔːr/  Cửa hàng đồ chơi<br>\
@@ -301,30 +299,28 @@ Tray n /treɪ/  Cái khay, cái mâm<br>\
 Whisk n /wɪsk/  Máy đánh trứng<br>\
 Knife n /naɪf/  Dao<br>\
 Spoon n /spuːn/  Muỗng, thìa\
-Apron /ˈeɪ.prən/  – Tạp dề<br>\
-Breadbasket /ˈbrɛdˌbæskət/  – Rổ<br>\
-Measuring cup n /ˈmɛʒərɪŋ kʌp/  – Cốc đo<br>\
-Spice container n /spaɪs kənˈteɪnər/  – Hộp gia vị<br>\
-Oven glove n /ˈʌv.ən ˌɡlʌv/   – Găng tay lò nướng <br>\
-Napkin n /ˈnæp.kɪn/  – Khăn ăn <br>\
-Chopsticks n /ˈʧɑpˌstɪks/   – Đũa<br>\
+Apron /ˈeɪ.prən/Tạp dề<br>\
+Breadbasket /ˈbrɛdˌbæskət/Rổ<br>\
+Measuring cup n /ˈmɛʒərɪŋ kʌp/Cốc đo<br>\
+Spice container n /spaɪs kənˈteɪnər/Hộp gia vị<br>\
+Oven glove n /ˈʌv.ən ˌɡlʌv/ Găng tay lò nướng <br>\
+Napkin n /ˈnæp.kɪn/Khăn ăn <br>\
 Rolling pin n /ˈroʊ.lɪŋ ˌpɪn/   <br>\
-Measuring spoon  /ˈmɛʒərɪŋ spun/  – Muỗng (đo để nêm gia vị)<br>\
-Whisk /wɪsk/   – Đồ dùng để đánh trứng<br>\
-Wooden spoon /ˈwʊdən spun/  – Thìa gỗ<br>\
-Strainer /ˈstreɪ.nɚ/   – Lọc<br>\
-Steak hammer n /steɪk ˈhæmər/  – Bít tết<br>\
-Mesh skimmer n /mɛʃ ˈskɪmər/   – Lưỡi skimmer<br>\
-Cleaver n /ˈkliː.vɚ/  – Chẻ<br>\
-Ladle n /ˈleɪ.dəl/  – Muôi múc canh <br>\
-Knife n /naɪf/  – Dao<br>\
-Kitchen shears n /ˈkɪʧən ʃirz/   – Kéo làm bếp<br>\
-Fork n /fɔːrk/   – Cái nĩa<br>\
-Cutlery n /ˈkʌt.lɚ.i/   – Dao kéo<br>\
-Corkscrew n /ˈkɔːrk.skruː/   – Đồ mở nắp chai<br>\
-Frying pan n /ˈfraɪ.ɪŋ ˌpæn/   – Chảo chiên<br>\
-Pressure cooker n /ˈpreʃ.ɚ ˌkʊk.ɚ/   – Nồi áp suất<br>\
-Casserole dish n /ˈkæsəˌroʊl dɪʃ/   – Hầm món ăn\
+Measuring spoon  /ˈmɛʒərɪŋ spun/Muỗng (đo để nêm gia vị)<br>\
+Whisk /wɪsk/ Đồ dùng để đánh trứng<br>\
+Wooden spoon /ˈwʊdən spun/Thìa gỗ<br>\
+Strainer /ˈstreɪ.nɚ/ Lọc<br>\
+Steak hammer n /steɪk ˈhæmər/Bít tết<br>\
+Mesh skimmer n /mɛʃ ˈskɪmər/ Lưỡi skimmer<br>\
+Cleaver n /ˈkliː.vɚ/Chẻ<br>\
+Ladle n /ˈleɪ.dəl/Muôi múc canh <br>\
+Kitchen shears n /ˈkɪʧən ʃirz/ Kéo làm bếp<br>\
+Fork n /fɔːrk/ Cái nĩa<br>\
+Cutlery n /ˈkʌt.lɚ.i/ Dao kéo<br>\
+Corkscrew n /ˈkɔːrk.skruː/ Đồ mở nắp chai<br>\
+Frying pan n /ˈfraɪ.ɪŋ ˌpæn/ Chảo chiên<br>\
+Pressure cooker n /ˈpreʃ.ɚ ˌkʊk.ɚ/ Nồi áp suất<br>\
+Casserole n /ˈkæsəˌroʊl dɪʃ/ Nồi hầm món ăn, thịt hầm\
 ",
 }
 ,
@@ -953,7 +949,7 @@ Famine n /ˈfæmɪn/ Nạn đói<br>\
 Avalanche n /ˈævəˌlæntʃ/ Tuyết lở<br>\
 Blizzard n /ˈblɪzərd/ Bão tuyết<br>\
 Tornado n /tɔrˈneɪdoʊ/ Lốc xoáy<br>\
-Forest fire n. phr /ˈfɔːrɪst ˌfaɪər/ Cháy rừng<br>\
+Forest fire n /ˈfɔːrɪst ˌfaɪər/ Cháy rừng<br>\
 Hurricane n /ˈhɜːrɪˌkeɪn/ Bão<br>\
 Storm n /stɔːrm/ Bão<br>\
 Evacuation n /ɪˌvækjuˈeɪʃən/ Sự sơ tán<br>\
@@ -1443,7 +1439,7 @@ Fine n /faɪn/ Đẹp<br>\
 Leggings n /ˈlɛɡ.ɪŋz/ Quần bó<br>\
 Overalls n /ˈoʊ.vər.ɔːlz/ Quần yếm<br>\
 Turtleneck n /ˈtɜːr.tl̩.nɛk/ Áo cổ lọ<br>\
-Bow tie n. phr /ˈboʊ taɪ/ Nơ con bướm<br>\
+Bow tie n /ˈboʊ taɪ/ Nơ con bướm<br>\
 Tie n /taɪ/ Cà vạt<br>\
 Tunic n /ˈtuː.nɪk/ Áo trùm hông<br>\
 Vest n /vɛst/ Áo gi-lê<br>\
@@ -1474,7 +1470,7 @@ Underwear n /ˈʌn.dərˌwɛər/ Đồ lót<br>\
 Bra n /brɑː/ Áo ngực<br>\
 Pants n /pænts/ Quần dài<br>\
 Belt n /bɛlt/ Dây nịt<br>\
-High heels n. phr /haɪ hiːlz/ Giày cao gót<br>\
+High heels n /haɪ hiːlz/ Giày cao gót<br>\
 Try on v /traɪ ɒn/ Thử (quần áo)<br>\
 Size n /saɪz/ Kích cỡ",
 }
@@ -1625,7 +1621,7 @@ Tangerine n /ˌtæn.dʒəˈriːn/ Quả quýt<br>\
 Grape n /ɡreɪp/ Quả nho<br>\
 Strawberry n /ˈstrɔːˌbɛr.i/ Quả dâu tây<br>\
 Melon n /ˈmɛl.ən/ Quả dưa<br>\
-Passion fruit n. phr /ˈpæʃ.ən ˌfruːt/ Quả chanh dây<br>\
+Passion fruit n /ˈpæʃ.ən ˌfruːt/ Quả chanh dây<br>\
 Grapefruit n /ˈɡreɪpˌfruːt/ Quả bưởi chùm<br>\
 Watermelon n /ˈwɔː.tərˌmɛl.ən/ Quả dưa hấu<br>\
 Peach n /piːtʃ/ Quả đào<br>\
@@ -1643,8 +1639,8 @@ Mulberry n /ˈmʌlˌbɛr.i/ Quả dâu tằm<br>\
 Raisin n /ˈreɪ.zən/ Nho khô<br>\
 Jackfruit n /ˈdʒækˌfruːt/ Quả mít<br>\
 Persimmon n /pərˈsɪm.ən/ Quả hồng<br>\
-Dragon fruit n. phr ˈdræɡ.ən ˌfruːt/ Quả thanh long<br>\
-Custard apple n. phr /ˈkʌs.tərd ˌæp.əl/ Quả na<br>\
+Dragon fruit n ˈdræɡ.ən ˌfruːt/ Quả thanh long<br>\
+Custard apple n /ˈkʌs.tərd ˌæp.əl/ Quả na<br>\
 Quince n /kwɪns/ Quả mộc qua<br>\
 Cherry n /ˈtʃɛr.i/ Quả anh đào<br>\
 Kiwi n /ˈkiː.wi/ Quả kiwi<br>\
@@ -1726,15 +1722,15 @@ Centipede n /ˈsɛn.tɪˌpiːd/ Rết",
 Classroom n /ˈklæsˌruːm/ Phòng học<br>\
 Textbook n /ˈtɛkstˌbʊk/ Sách giáo khoa<br>\
 Workbook n /ˈwɜːkˌbʊk/ Sách bài tập<br>\
-Reference book n. phr /ˈrɛf.ər.əns ˌbʊk/ Sách tham khảo<br>\
+Reference book n /ˈrɛf.ər.əns ˌbʊk/ Sách tham khảo<br>\
 Notebook n /ˈnoʊtˌbʊk/ Vở<br>\
 Notepad n /ˈnoʊtˌpæd/ Sổ ghi chép<br>\
 Pencil n /ˈpɛn.səl/ Bút chì<br>\
 Crayon n /ˈkreɪ.ɒn/ Bút chì màu<br>\
-Pencil sharpener n. phr /ˈpɛn.səl ˌʃɑːp.nər/ Đồ gọt bút chì<br>\
+Pencil sharpener n /ˈpɛn.səl ˌʃɑːp.nər/ Đồ gọt bút chì<br>\
 Eraser n /ɪˈreɪ.zər/ Cục tẩy<br>\
 Pen n /pɛn/ Bút mực<br>\
-Ballpoint pen n. phr /ˈbɔːl.pɔɪnt ˌpɛn/ Bút bi<br>\
+Ballpoint pen n /ˈbɔːl.pɔɪnt ˌpɛn/ Bút bi<br>\
 Paper n /ˈpeɪ.pər/ Giấy<br>\
 Desk n /dɛsk/ Bàn học<br>\
 Map n /mæp/ Bản đồ<br>\
@@ -1761,8 +1757,8 @@ Flower n /ˈflaʊ.ər/ Hoa<br>\
 Grass n /ɡræs/ Cỏ<br>\
 Herb n /hɜːrb/ Thảo mộc<br>\
 Bush n /bʊʃ/ Bụi cây, bụi rậm<br>\
-Coconut tree n. phr /ˈkoʊ.kəˌnʌt triː/ Cây dừa<br>\
-Apple tree n. phr /ˈæpəl triː/ Cây táo<br>\
+Coconut tree n /ˈkoʊ.kəˌnʌt triː/ Cây dừa<br>\
+Apple tree n /ˈæpəl triː/ Cây táo<br>\
 Shrubland n /ˈʃrʌblænd/ Vùng cây bụi<br>\
 ",
 },
@@ -1797,14 +1793,14 @@ Sun n /sʌn/ Mặt trời<br>\
 Wind n /wɪnd/ Gió<br>\
 Waterfall n /ˈwɔːtərˌfɔːl/ Thác nước<br>\
 Refinery n /rɪˈfaɪnəri/ Nhà máy lọc<br>\
-Nuclear reactor n. phr /ˈnjuː.kliər riˈæktər/ Lò phản ứng hạt nhân<br>\
+Nuclear reactor n /ˈnjuː.kliər riˈæktər/ Lò phản ứng hạt nhân<br>\
 Dam n /dæm/ Đập (thủy điện)<br>\
-Power plant n. phr /ˈpaʊər plænt/ Nhà máy điện<br>\
+Power plant n /ˈpaʊər plænt/ Nhà máy điện<br>\
 Transformer n /trænsˈfɔːrmər/ Máy biến thế<br>\
 Heat v /hiːt/ Sưởi ấm, làm nóng<br>\
-Natural gas n. phr /ˈnætʃərəl ɡæs/ Khí tự nhiên<br>\
+Natural gas n /ˈnætʃərəl ɡæs/ Khí tự nhiên<br>\
 Diesel n /ˈdiːzəl/ Dầu đi-ê-zen<br>\
-Solar power n. phr /ˈsoʊlər ˈpaʊər/ Năng lượng mặt trời<br>\
+Solar power n /ˈsoʊlər ˈpaʊər/ Năng lượng mặt trời<br>\
 ",
 },
 {
@@ -1812,7 +1808,7 @@ Solar power n. phr /ˈsoʊlər ˈpaʊər/ Năng lượng mặt trời<br>\
 	en:"Dancer n /ˈdæn.sər/ Vũ công<br>\
 Designer n /dɪˈzaɪ.nər/ Nhà thiết kế<br>\
 Magician n /məˈdʒɪʃ.ən/ Nhà ảo thuật<br>\
-Tour guide n. phr /tʊr ɡaɪd/ Hướng dẫn viên du lịch<br>\
+Tour guide n /tʊr ɡaɪd/ Hướng dẫn viên du lịch<br>\
 Sailor n /ˈseɪ.lər/ Thủy thủ<br>\
 Commentator n /ˈkɒm.ənˌteɪ.tər/ Bình luận viên<br>\
 Dentist n /ˈdɛn.tɪst/ Nha sĩ<br>\
@@ -1831,11 +1827,11 @@ Freelancer n /ˈfriːˌlænsər/ Người làm việc tự do<br>\
 Consultant n /kənˈsʌl.tənt/ Chuyên viên tư vấn<br>\
 Self-employed a /ˌsɛlfɪmˈplɔɪd/ Tự làm chủ<br>\
 Supervisor n /ˈsuː.pərˌvaɪ.zər/ Giám sát viên<br>\
-Sales manager n. phr /seɪlz ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
-Production manager n. phr /prəˈdʌk.ʃən ˈmæn.ɪ.dʒər/ Giám đốc sản xuất<br>\
+Sales manager n /seɪlz ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
+Production manager n /prəˈdʌk.ʃən ˈmæn.ɪ.dʒər/ Giám đốc sản xuất<br>\
 Mechanic n /məˈkæn.ɪk/ Thợ cơ khí<br>\
-Managing director n. phr /ˈmæn.ɪ.dʒɪŋ dɪˈrɛktər/ Giám đốc điều hành<br>\
-Personal assistant n. phr /ˈpɜː.sən.əl əˈsɪs.tənt/ Trợ lý riêng<br>\
+Managing director n /ˈmæn.ɪ.dʒɪŋ dɪˈrɛktər/ Giám đốc điều hành<br>\
+Personal assistant n /ˈpɜː.sən.əl əˈsɪs.tənt/ Trợ lý riêng<br>\
 Hairdresser n /ˈhɛərˌdrɛs.ər/ Thợ cắt tóc<br>\
 Architect n /ˈɑːrkɪˌtɛkt/ Kiến trúc sư<br>\
 Engineer n /ˌɛn.dʒɪˈnɪər/ Kỹ sư<br>\
@@ -1843,10 +1839,10 @@ Vet n /vɛt/ Bác sĩ thú y<br>\
 Shoemaker n /ˈʃuːˌmeɪ.kər/ Thợ đóng giày<br>\
 Translator n /trænzˈleɪ.tər/ Biên dịch viên<br>\
 Interpreter n /ɪnˈtɜː.prɪ.tər/ Phiên dịch viên<br>\
-Sanitation worker n. phr /ˌsænɪˈteɪ.ʃən ˈwɜːrkər/ Lao công<br>\
-Business manager n. phr /ˈbɪznɪs ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
-Police officer n. phr /pəˈliːs ˈɒfɪ.sər/ Cảnh sát<br>\
-Personnel manager n. phr /ˌpɜːrsəˈnɛl ˈmæn.ɪ.dʒər/ Giám đốc nhân sự<br>\
+Sanitation worker n /ˌsænɪˈteɪ.ʃən ˈwɜːrkər/ Lao công<br>\
+Business manager n /ˈbɪznɪs ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
+Police officer n /pəˈliːs ˈɒfɪ.sər/ Cảnh sát<br>\
+Personnel manager n /ˌpɜːrsəˈnɛl ˈmæn.ɪ.dʒər/ Giám đốc nhân sự<br>\
 Teacher n /ˈtiː.tʃər/ Giáo viên<br>\
 Doctor n /ˈdɒk.tər/ Bác sĩ<br>\
 Nurse n /nɜrs/ Y tá<br>\
@@ -1864,7 +1860,7 @@ Thin a /θɪn/ Gầy, ốm<br>\
 Dietary a /ˈdaɪəˌtɛri/ (thuộc) chế độ ăn uống<br>\
 Fat a /fæt/ Mập<br>\
 Overweight a /ˌoʊvərˈweɪt/ Béo, thừa cân<br>\
-Eating disorder n. phr /ˈiːtɪŋ dɪsˈɔːrdər/ Rối loạn ăn uống<br>\
+Eating disorder n /ˈiːtɪŋ dɪsˈɔːrdər/ Rối loạn ăn uống<br>\
 Nutrient n /ˈnuːtriənt/ Chất dinh dưỡng<br>\
 Ingredient n /ɪnˈɡriːdiənt/ Thành phần, nguyên liệu<br>\
 Allergy n /ˈælədʒi/ Dị ứng<br>\
@@ -1896,9 +1892,9 @@ Pavement n /ˈpeɪvmənt/ Vỉa hè",
 	title:"Post office",
 	en:"Advanced a /ədˈvænst/ Tiên tiến<br>\
 Equip v /ɪˈkwɪp/ Trang bị<br>\
-Express mail n. phr /ɪkˈsprɛs meɪl/ Thư chuyển phát nhanh<br>\
+Express mail n /ɪkˈsprɛs meɪl/ Thư chuyển phát nhanh<br>\
 Graphic a /ˈɡræfɪk/ Thuộc đồ họa<br>\
-Messenger Call Service n. phr /ˈmɛsɪndʒər kɔːl ˈsɜːrvɪs/ Dịch vụ Điện thoại<br>\
+Messenger Call Service n /ˈmɛsɪndʒər kɔːl ˈsɜːrvɪs/ Dịch vụ Điện thoại<br>\
 Notify v /ˈnoʊtɪˌfaɪ/ Thông báo<br>\
 Parcel n /ˈpɑːrsəl/ Bưu kiện, bưu phẩm<br>\
 Press n /prɛs/ Báo chí<br>\
@@ -1910,7 +1906,7 @@ Spacious a /ˈspeɪʃəs/ Rộng rãi<br>\
 Speedy a /ˈspiːdi/ Nhanh chóng<br>\
 Staff n /stæf/ Nhân viên<br>\
 Subscribe v /səbˈskraɪb/ Đặt mua<br>\
-Surface mail n. phr /ˈsɜːrfɪs meɪl/ Thư gửi bằng đường bộ <br>\
+Surface mail n /ˈsɜːrfɪs meɪl/ Thư gửi bằng đường bộ <br>\
 Technology n /tɛkˈnɒlədʒi/ Công nghệ<br>\
 Thoughtful a /ˈθɔːtfəl/ Ân cần, chu đáo<br>\
 Transfer v /trænsˈfɜːr/ Chuyển<br>\

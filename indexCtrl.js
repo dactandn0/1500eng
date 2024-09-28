@@ -13,12 +13,12 @@ var app = angular.module("myApp", [
   'bridgeRApp','bridgeLApp',
   'grammerApp','lptdApp',
   'words3000App','words4000App',
-  'ngSanitize','ngRoute'
+  'ngSanitize','ngRoute', 'ui.bootstrap','ngAnimate'
   ]);
 app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'words3000/words3000.html', controller: 'words3000Ctrl'
+        templateUrl: 'words3000/words3000.html', controller: 'words3000Ctrl',controllerAs:"words3000As"
       })      
       .when('/book4k', {
         templateUrl: 'words4000/words4000.html', controller: 'words4000Ctrl'
@@ -116,9 +116,10 @@ $scope.topFunction = function() {
 
 $scope.loadData = function () {
   $scope.preProcess();
-	$scope.findSameWord();
+//	$scope.findSameWord();
 };
 
 $scope.loadData();
 
 });
+

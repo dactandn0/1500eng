@@ -1,4 +1,4 @@
-const cd3_stories = [
+const lptd_cd3_stories = [
 {
 	en:"Unit 1 A Big Responsibility<br>\
 B : Mom, can I get a puppy? <br>\
@@ -84,7 +84,7 @@ voca:"patio,exterminator,mint,cayenne pepper,sprinkle,cinnamon,hazardous,yard,th
 - It is the widest river in the world. The river rises more than nine meters during the rainy season. It overflows its banks. It floods large areas of the rainforest. During that time, in some parts, it has a width of up to 40 kilometers. The Amazon River is over 325 kilometers wide at its mouth. It has more water than any other river in the world.<br>\
 <br>\
 - The Amazon River is also home to many animals. Over 2,000 types of fish live in the Amazon River. One kind of fish is the piranha. The piranha is a terrifying fish. A piranha grows up to 60 centimeters long. It hunts in a group. A group of piranha can kill and eat cattle in a matter of minutes. They are so efficient that only the bones are left. This fish is one of the most dangerous creatures in the Amazon River.",
-	vi:"Đơn vị 5 Rừng Amazon kỳ thú<br>\
+	vi:"Bài 5 Rừng Amazon kỳ thú<br>\
 - Sông Amazon là một con sông kỳ thú. Nó độc đáo theo nhiều cách. Đây là con sông dài thứ hai trên thế giới. Nó dài 6.500 km. Nó bắt nguồn từ dãy núi Andes. Lưu vực thoát nước của nó (khu vực đất tích tụ nước) bao phủ 40 phần trăm Nam Mỹ. Sông Amazon có nhiều con sông nhỏ cung cấp nước cho nó.<br>\
 <br>\
 - Đây là con sông rộng nhất thế giới. Mực nước sông dâng cao hơn chín mét vào mùa mưa. Nó tràn bờ. Nó làm ngập những khu vực rộng lớn của rừng nhiệt đới. Trong thời gian đó, ở một số nơi, nó có chiều rộng lên tới 40 km. Sông Amazon rộng hơn 325 km tại cửa sông. Nó có nhiều nước hơn bất kỳ con sông nào khác trên thế giới.<br>\
@@ -156,7 +156,7 @@ W: Tôi sẽ lấy nó.",
 - The highlight of the year for us is the annual Robot Maze race. Everyone who wants to take part has to make a small computer-controlled robot. You need to race it to the center of a maze. We work together in teams of three or four. This year, I am working with two students who won last year’s competition, so I think we have a really good chance of winning.<br>\
 <br>\
 - Our robot is about 30 centimeters high. It weighs two kilograms. It should be really quick. We have been practicing often, and we have already equaled last year’s speed, so we just need to get a little faster. We are keeping the design of our robot secret. If we win, we will get $500. I hope this will be my lucky year.",
-	vi:"Đơn vị 8 Đua Robot<br>\
+	vi:"Bài 8 Đua Robot<br>\
 - Tôi đã quan tâm đến robot từ khi tôi còn nhớ. Điều đầu tiên tôi làm khi vào trung học là tham gia câu lạc bộ chế tạo robot Robotech. Chúng tôi tụ tập sau giờ học mỗi ngày và tự tạo ra robot của riêng mình. Ngày nay, rất dễ tìm thấy bộ dụng cụ để chế tạo robot của riêng bạn và đây là những gì chúng tôi sử dụng.<br>\
 <br>\
 - Điểm nổi bật của năm đối với chúng tôi là cuộc đua Robot Maze hàng năm. Mọi người muốn tham gia đều phải chế tạo một robot nhỏ do máy tính điều khiển. Bạn cần đua nó đến trung tâm của một mê cung. Chúng tôi làm việc theo nhóm gồm ba hoặc bốn người. Năm nay, tôi đang làm việc với hai học sinh đã giành chiến thắng trong cuộc thi năm ngoái, vì vậy tôi nghĩ chúng tôi có cơ hội thực sự cao để giành chiến thắng.<br>\
@@ -202,5 +202,90 @@ vi:"Bài 10 Giải Nobel<br>\
 <br>\
 - Mỗi giải thưởng gồm ba phần: bằng tốt nghiệp, huy chương vàng và tiền. Số tiền đã tăng lên kể từ năm 1980. Hiện tại, giải thưởng là mười triệu crown Thụy Điển. Tương đương khoảng một triệu euro. Người chiến thắng được chọn như thế nào? Năm ủy ban bí mật họp để chọn ra người chiến thắng. Giải Nobel Kinh tế là giải thưởng duy nhất không được quyết định theo cách đó. Đó là vì giải thưởng này được Ngân hàng Thụy Điển tạo ra vào năm 1956 để vinh danh kỷ niệm 50 năm ngày mất của Alfred Nobel. Ngân hàng Thụy Điển quyết định ai sẽ nhận được Giải Nobel Kinh tế. Kể từ năm 1901, hơn 750 người đã giành được Giải Nobel.",
 voca:"achievements,construction,decides,invented,committees,increase,chemistry,brick,dynamite,literature"
+},
+{
+	en:"Unit 11 Great Art<br>\
+What makes a painting a great work of art? There are many answers to that question. Some people think that a painting should look pretty. Others disagree. The skill of the painter is important. The techniques used are also important. Most of all, a great painting has meaning. A great painting has a special element in it.<br>\
+<br>\
+Sometimes, a painter's special element is the way he portrays his or her feelings in a piece of art. An example of this is Picasso's painting, Guernica. It has strange shapes in it. It shows suffering people, too. It is not a very pretty picture. However, it makes people understand Picasso's feelings about war.<br>\
+<br>\
+Other times, the element is a memory or feeling. This comes from inside another person. Someone may see a painting and be reminded of a beautiful memory. A painting can also remind people of a feeling. For example, Leonardo da Vinci's Mona Lisa is very popular. Many people like her smile. Some people say it is a mysterious smile. Others say it is a happy one. Still others make up stories about the woman in the painting.<br>\
+<br>\
+Which element is the most important? Is it the skill of the artist or the feelings of the person looking at the painting? Whatever the case, a painting that grabs people's emotions is popular."
+	,vi:"Bài 11 Nghệ thuật vĩ đại<br>\
+Điều gì làm nên một bức tranh là một tác phẩm nghệ thuật vĩ đại? Có nhiều câu trả lời cho câu hỏi đó. Một số người cho rằng một bức tranh phải đẹp. Những người khác không đồng ý. Kỹ năng của họa sĩ là quan trọng. Các kỹ thuật được sử dụng cũng quan trọng. Trên hết, một bức tranh vĩ đại có ý nghĩa. Một bức tranh vĩ đại có một yếu tố đặc biệt trong đó.<br>\
+<br>\
+Đôi khi, yếu tố đặc biệt của một họa sĩ là cách anh ta miêu tả cảm xúc của mình trong một tác phẩm nghệ thuật. Một ví dụ về điều này là bức tranh Guernica của Picasso. Nó có những hình dạng kỳ lạ trong đó. Nó cũng cho thấy những con người đau khổ. Đây không phải là một bức tranh đẹp. Tuy nhiên, nó khiến mọi người hiểu được cảm xúc của Picasso về chiến tranh.<br>\
+<br>\
+Những lần khác, yếu tố là một ký ức hoặc cảm giác. Điều này đến từ bên trong một người khác. Một người nào đó có thể nhìn thấy một bức tranh và được nhắc nhở về một ký ức đẹp. Một bức tranh cũng có thể gợi cho mọi người nhớ đến một cảm giác. Ví dụ, bức Mona Lisa của Leonardo da Vinci rất được ưa chuộng. Nhiều người thích nụ cười của cô ấy. Một số người nói rằng đó là một nụ cười bí ẩn. Những người khác nói rằng đó là một bức tranh hạnh phúc. Những người khác lại bịa ra những câu chuyện về người phụ nữ trong bức tranh.<br>\
+<br>\
+Yếu tố nào là quan trọng nhất? Đó là kỹ năng của nghệ sĩ hay cảm xúc của người xem bức tranh? Dù thế nào đi nữa, một bức tranh nắm bắt được cảm xúc của mọi người đều rất được ưa chuộng."
+	,voca:"",
 }
+,
+{
+	en:"Unit 12 Talking Drums<br>\
+B: I want to be a member of a heavy metal band. I love heavy metal drums, James.<br>\
+M: I don't, Henry! They are too heavy, if you ask me. I prefer a more traditional style, like African barrel drums.<br>\
+B: Barrel drums? What are those?<br>\
+M: They are made with hollow logs and animal skins. First, they cut down a tree. They cut a section that's about as thick and tall as a barrel. They stretch an animal skin over the top, and tie it to the sides with wooden pegs. These pegs can be tightened to change the pitch.<br>\
+B: Hmm... that sounds interesting.<br>\
+M: In Nigeria, they have 'talking' drums. They use a hollow tree trunk that's smaller than a barrel drum, and leave an opening at both ends. Then they fit an animal skin on each end. There's a string between each of these ends. When a player holds the drum under an armpit and squeezes, it tightens the string and raises the pitch.<br>\
+B: Why do they call it a 'talking' drum? <br>\
+M: The drummers are so skillful they can make the drums imitate human voices. They seem to cry, laugh, and shout.<br>\
+B: I'd like to hear that.<br>\
+M: Why don't you come to the community college with me tomorrow? A troupe from Africa is giving a concert, and they are supposed to have the best drummers in the world.<br>\
+B: Now, that sounds great!"
+	,vi:"Bài 12 Trống biết nói<br>\
+B: Tôi muốn trở thành thành viên của một ban nhạc heavy metal. Tôi thích trống heavy metal, James.<br>\
+M: Tôi không thích, Henry! Chúng quá nặng, nếu bạn hỏi tôi. Tôi thích phong cách truyền thống hơn, như trống thùng châu Phi.<br>\
+B: Trống thùng? Chúng là gì?<br>\
+M: Chúng được làm bằng gỗ rỗng và da động vật. Đầu tiên, họ chặt một cái cây. Họ cắt một đoạn có độ dày và cao bằng một cái thùng. Họ căng một tấm da động vật lên trên cùng và buộc nó vào hai bên bằng chốt gỗ. Những cái chốt này có thể được siết chặt để thay đổi cao độ.<br>\
+B: Ồ... nghe có vẻ thú vị.<br>\
+M: Ở Nigeria, họ có trống 'biết nói'. Họ sử dụng một thân cây rỗng nhỏ hơn trống thùng và để hở ở cả hai đầu. Sau đó, họ lắp một tấm da động vật vào mỗi đầu. Có một sợi dây giữa mỗi đầu này. Khi một người chơi giữ trống dưới nách và bóp, nó sẽ làm căng dây và nâng cao cao độ.<br>\
+B: Tại sao họ gọi nó là trống 'nói'? <br>\
+M: Những người đánh trống rất khéo léo đến nỗi họ có thể làm cho trống bắt chước giọng nói của con người. Họ dường như khóc, cười và hét lên.<br>\
+B: Tôi muốn nghe điều đó.<br>\
+M: Tại sao bạn không đến trường cao đẳng cộng đồng với tôi vào ngày mai? Một đoàn kịch từ Châu Phi đang tổ chức một buổi hòa nhạc và họ được cho là có những tay trống giỏi nhất thế giới.<br>\
+B: Nghe tuyệt quá!"
+	,voca:"troupe",
+},
+{
+	en:"Unit 13 The Hot New Movie<br>\
+The latest blockbuster movie Robots Attack 2 starring Garrison Fort opened yesterday. Fort and Andy Robot are at it again, saving people from the jaws of death. The evil robots are invading Atlantis once again. The crowds seemed to love the sequel. Maybe they loved it as much, if not more than, the first Robots Attack. The special effects are fantastic! Mr. Fort seems to have worked on his fighting technique. His martial arts skills are amazing. He beats the evil robots easily.<br>\
+<br>\
+Of course, our leading man saves a lady in distress, the fair Angie. She promptly falls in love with Garrison the hero. However, Andy Robot is jealous of this new love.<br>\
+<br>\
+He spends a good part of the movie trying to ruin their plans. Another surprise is the evil robot, Homer, who decides he wants to become a do-gooder. His partner, Ethel, works hard to make him return to his evil ways.<br>\
+<br>\
+Does Andy Robot succeed in rescuing Garrison Fort from love? What about Ethel? Does she bring Homer back to his evil ways? To find out, head for the theater, buy a ticket, and sit back and relax."
+	,vi:"Unit 13 The Hot New Movie<br>\
+Phim bom tấn mới nhất Robots Attack 2 có sự tham gia của Garrison Fort đã ra mắt vào ngày hôm qua. Fort và Andy Robot lại tiếp tục hành trình, cứu mọi người khỏi nanh vuốt tử thần. Những chú robot độc ác đang xâm chiếm Atlantis một lần nữa. Khán giả dường như rất thích phần tiếp theo. Có lẽ họ thích nó nhiều như, nếu không muốn nói là hơn, phần đầu Robots Attack. Các hiệu ứng đặc biệt thật tuyệt vời! Có vẻ như ông Fort đã rèn luyện kỹ thuật chiến đấu của mình. Kỹ năng võ thuật của ông thật tuyệt vời. Ông dễ dàng đánh bại những chú robot độc ác.<br>\
+<br>\
+Tất nhiên, nam chính của chúng ta đã cứu một người phụ nữ gặp nạn, cô gái xinh đẹp Angie. Cô ấy nhanh chóng yêu anh hùng Garrison. Tuy nhiên, Andy Robot lại ghen tị với tình yêu mới này.<br>\
+<br>\
+Anh ta dành phần lớn thời lượng của bộ phim để cố gắng phá hỏng kế hoạch của họ. Một điều bất ngờ khác là chú robot độc ác, Homer, quyết định trở thành một người làm việc thiện. Người bạn đời của anh, Ethel, đã làm việc chăm chỉ để khiến anh quay lại con đường tội lỗi của mình.<br>\
+<br>\
+Liệu Andy Robot có thành công trong việc giải cứu Garrison Fort khỏi tình yêu không? Còn Ethel thì sao? Liệu cô ấy có đưa Homer quay lại con đường tội lỗi của mình không? Để tìm hiểu, hãy đến rạp chiếu phim, mua vé và ngồi xuống thư giãn."
+	,voca:"blockbuster,distress[danger],leading man,martial,art,do-gooder,promptly",
+},
+{
+	en:"Unit 14 A Faux Pas<br>\
+G : It happens a lot. So many people visit and live in foreign countries nowadays. The culture and manners of every country are different. It is likely that a foreigner will say or do something inappropriate. This is called a faux pas. In one culture, it is fine to do something one way. In another culture, it is rude.<br>\
+<br>\
+For example, my friend visited a relative in Israel. She offered to wash the dishes. She did not know that it was important to wash the meat dishes with a special sponge. She used the wrong sponge. Her friend’s father was very upset. In Canada, it is fine to use the same sponge to wash all of the dishes, but not in Israel.<br>\
+<br>\
+Something similar happened to me when I visited a temple in India. I was surprised when two officials stopped me and told me to take off my shoes. It was only then that I realized that people are not allowed to enter a temple with their shoes on. I was very embarrassed. Of course, I apologized for my mistake.<br>\
+<br>\
+A faux pas is embarrassing. No one wants to be rude. No one wants to cause problems. However, when two cultures meet, there can be misunderstandings. The next time someone is rude, be patient and understanding. He may think he is acting politely."
+	,vi:"Bài 14 Một lỗi sai<br>\
+G: Điều này xảy ra rất nhiều. Ngày nay, rất nhiều người đến thăm và sinh sống ở nước ngoài. Văn hóa và cách cư xử của mỗi quốc gia đều khác nhau. Rất có thể người nước ngoài sẽ nói hoặc làm điều gì đó không phù hợp. Đây được gọi là lỗi sai. Ở một nền văn hóa, làm một việc theo một cách nào đó là bình thường. Ở một nền văn hóa khác, làm như vậy là thô lỗ.<br>\
+<br>\
+Ví dụ, bạn tôi đến thăm một người họ hàng ở Israel. Cô ấy đề nghị rửa bát. Cô ấy không biết rằng rửa bát bằng một miếng bọt biển chuyên dụng là rất quan trọng. Cô ấy đã sử dụng nhầm miếng bọt biển. Bố của bạn cô ấy rất tức giận. Ở Canada, bạn có thể sử dụng cùng một miếng bọt biển để rửa tất cả các món ăn, nhưng ở Israel thì không.<br>\
+<br>\
+Một điều tương tự đã xảy ra với tôi khi tôi đến thăm một ngôi đền ở Ấn Độ. Tôi đã rất ngạc nhiên khi hai viên chức chặn tôi lại và bảo tôi cởi giày. Chỉ đến lúc đó tôi mới nhận ra rằng mọi người không được phép vào đền khi đang đi giày. Tôi đã rất xấu hổ. Tất nhiên, tôi đã xin lỗi vì lỗi của mình.<br>\
+<br>\
+Một lỗi lầm là đáng xấu hổ. Không ai muốn thô lỗ. Không ai muốn gây ra vấn đề. Tuy nhiên, khi hai nền văn hóa gặp nhau, có thể có sự hiểu lầm. Lần tới khi ai đó thô lỗ, hãy kiên nhẫn và thông cảm. Anh ta có thể nghĩ rằng mình đang hành động lịch sự."
+	,voca:"culture,faux pas,inappropriate,relative,sponge,embarrassing,rude",
+}	
 ]

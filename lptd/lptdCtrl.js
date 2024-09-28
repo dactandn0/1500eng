@@ -15,12 +15,12 @@ $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
   });
 
-var kSTORIES = cd1_stories;
+var kSTORIES = lptd_cd1_stories;
 radioCDChange = function (cd) {
 	switch (cd) {
-		case 1: kSTORIES = cd1_stories; break;
-		case 2: kSTORIES = cd2_stories; break;
-		case 3: kSTORIES = cd3_stories; break;
+		case 1: kSTORIES = lptd_cd1_stories; break;
+		case 2: kSTORIES = lptd_cd2_stories; break;
+		case 3: kSTORIES = lptd_cd3_stories; break;
 		case 4: kSTORIES = []; break;
 	}
 	localStorage.setItem("lptd_cd", cd);

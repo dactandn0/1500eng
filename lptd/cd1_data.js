@@ -1,5 +1,5 @@
 
-const cd1_stories = [
+const lptd_cd1_stories = [
 {
 	en: 
 	'Unit 1 A Picnic by the River<br>\

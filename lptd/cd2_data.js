@@ -1,6 +1,6 @@
 
 
-const cd2_stories = [
+const lptd_cd2_stories = [
 {
 	en: 
 	'Unit 1 Antarctica<br>\

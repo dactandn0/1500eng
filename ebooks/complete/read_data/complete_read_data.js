@@ -57,6 +57,6 @@ Mau đã đi thuyền từ Hawaii đến Tahiti bằng các phương pháp truy�
 Ông nội đã bắt đầu nhiệm vụ dạy ông cách định hướng khi ông còn là một đứa trẻ. Ông đã chỉ cho ông những vũng nước trên bãi biển để dạy ông cách sóng và gió thay đổi ở những nơi khác nhau. Sau đó, Mau sử dụng một vòng tròn đá để ghi nhớ vị trí của các vì sao. Mỗi viên đá được đặt trên cát để tượng trưng cho một vì sao.<br>\
 <br>\
 Chuyến đi đã chứng minh rằng những cư dân đầu tiên của Hawaii đã đến bằng những chiếc thuyền nhỏ và định hướng bằng cách đọc biển và các vì sao. Bản thân Mau đã trở thành một giáo viên nhiệt tình, truyền lại những bí quyết truyền thống của mình cho những người ở các nền văn hóa khác để kiến ​​thức của ông không bị mai một. Ông đã giải thích vị trí của các vì sao cho học sinh của mình, nhưng ông cho phép họ viết ra vì ông biết họ sẽ không bao giờ có thể nhớ hết mọi thứ như ông đã làm."
-,voca:"expedition,sail,seafarer,navigational,instrument,populated,behave,voyage,memorise,prove,keen,represent"
+,voca:"expedition,sail,seafarer,navigational,instrument,populated,behave,voyage,memorise,prove,keen,represent,inhabitant,chart"
 }	
 ];

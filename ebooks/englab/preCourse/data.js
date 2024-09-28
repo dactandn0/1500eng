@@ -189,10 +189,51 @@ I remember this trip because at the time, i met the girl who later became my gir
 	unit:"",
 	title:"Complete[Freya Stark], Bridge [Meerkat - Teamwork]",
 	en:"- Occupation (n) nghề nghiệp<br>\
-- Flight (n) chuyến bay<br>\
-- Expedition (n) chuyến thám hiểm<br>\
-- Media (n) truyền thông<br>\
-- Office worker (n) nhân viên văn phòng<br>\
-- Africa (n) châu Phi",
+Flight (n) chuyến bay<br>\
+Expedition (n) chuyến thám hiểm<br>\
+Media (n) truyền thông<br>\
+Office worker (n) nhân viên văn phòng<br>\
+Africa (n) châu Phi<br>\
+Explorer (n) nhà thám hiểm<br>\
+n<br>\
+Nurse corps (n) đội ngũ y tá<br>\
+Distant area (n) vùng xa xôi, hẻo lánh<br>\
+Attend (v) tham gia, tham dự<br>\
+Fluent (a) trôi chảy<br>\
+Donkey (n) con lừa<br>\
+Mountainous area (n) vùng núi<br>\
+Career (n) sự nghiệp<br>\
+Establish (v) thiết lập, thành lập<br>\
+Personal commentary (n) bình luận cá nhân<br>\
+<br>\
+Meerkat (v) con cầy mangut<br>\
+Eagle (n) đại bàng<br>\
+Snake (n) rắn<br>\
+<br>\
+Desert (n) sa mạc<br>\
+Survive (v) sống sót, sinh tồn<br>\
+Preparation (n) sự chuẩn bị<br>\
+Decision (n) quyết định\
+",
+},
+{
+	date:"T4.25/09/2024",
+	title:"Listening Complete (p.30)",
+	en:"- Deck (n) boong tàu<br>\
+- Reception (n) khu vực lễ tân<br>\
+- Lounge (n) phòng chờ, lounge<br>\
+- Steward (n) người quản lý<br>\
+- Reclining seat (n) ghế ngả<br>\
+<br>\
+Ocean navigator (n) hoa tiêu đại đương/ người định hướng dẫn đường<br>\
+<br>\Mau Piailug, ocean navigator<br>\
+- Sailor (n) thủy thủ<br>\
+- Voyage (n) chuyến hành trình (dài)<br>\
+- Navigational skill (n) kĩ năng định hướng<br>\
+- Compass (n) la bàn<br>\
+- Chart (n) biểu đồ<br>\
+- Inhabitant (n) cư dân<br>\
+- Memorise (v) ghi nhớ<br>\
+- Position (n) vị trí"
 }
 ]

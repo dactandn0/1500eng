@@ -40,7 +40,7 @@ Rubber n /ˈrʌb.ər/  Cục tẩy<br>\
 Duster n /ˈdʌs.tər/  Khăn lau bảng<br>\
 Dossier n /ˈdɒs.i.eɪ/  Hồ sơ<br>\
 Dictionary n /ˈdɪk.ʃən.ər.i/  Từ điển<br>\
-Desk n /desk/  Bàn học<br>\
+Desk n /desk/  Bàn học, bàn làm việc<br>\
 Crayon n /ˈkreɪ.ɒn/  Bút chì màu<br>\
 Compass n /ˈkʌm.pəs/  Com-pa<br>\
 Coloured Pencil n /ˈkʌl.əd ˈpen.səl/  Bút chì màu<br>\
@@ -348,7 +348,6 @@ Ozone layer n /ˈəʊ.zəʊn ˌleɪ.ər/  Tầng ozon<br>\
 Biodiversity n /ˌbaɪ.əʊ.daɪˈvɜː.sə.t i/  Đa dạng sinh học<br>\
 Ecology n /iˈkɒl.ə.dʒi/  Sinh thái học<br>\
 Air n /eər/  Không khí<br>\
-Forest n /ˈfɒr.ɪst/  Rừng<br>\
 Flora n /ˈflɔː.rə/  Hệ thực vật<br>\
 Creature n /ˈkriː.tʃər/  Sinh vật<br>\
 Insect n /ˈɪn.sekt/  Côn trùng<br>\
@@ -376,7 +375,6 @@ Banister n /ˈbæn.ɪ.stər/  Lan can<br>\
 Bookcase n /ˈbʊk.keɪs/  Tủ sách<br>\
 Ceiling n /ˈsiː.lɪŋ/  Trần nhà<br>\
 Clock n /klɒk/  Đồng hồ treo tường<br>\
-Desk n /desk/  Bàn làm việc<br>\
 Frame n /freɪm/  Khung (ảnh, cửa)<br>\
 Lampshade n /ˈlæmp.ʃeɪd/  Chụp đèn<br>\
 Mantelpiece n /ˈmæn.təl.piːs/  Bệ lò sưởi<br>\
@@ -599,7 +597,6 @@ Wrestling n /ˈrɛs.lɪŋ/  Đấu vật<br>\
 Bowling n /ˈboʊ.lɪŋ/  Bóng gỗ<br>\
 Lacrosse n /ləˈkrɒs/  Bóng vợt<br>\
 Hockey n /ˈhɒk.i/  Khúc côn cầu<br>\
-Referee n /ˌrɛf.əˈriː/  Trọng tài<br>\
 Dart n /dɑːrt/  Ném phi tiêu<br>\
 Synchronized swimming n /ˈsɪŋ.krə.naɪzd ˈswɪm.ɪŋ/  Bơi nghệ thuật<br>\
 SEA Games n /ˈsiː ˌɡeɪmz/  Đại hội Thể thao Đông Nam Á<br>\
@@ -621,7 +618,6 @@ Field n /fiːld/  Cánh đồng<br>\
 Canal n /kəˈnæl/  Kênh<br>\
 River n /ˈrɪv.ər/  Sông<br>\
 Pond n /pɒnd/  Ao<br>\
-Folk music n /ˈfoʊk ˌmju·zɪk/  Nhạc dân gian<br>\
 Farm n /fɑːm/  Trang trại<br>\
 Plow v /plaʊ/  Cày<br>\
 Agriculture n /ˈæɡ.rɪ.kʌl.tʃər/  Nông nghiệp<br>\
@@ -663,7 +659,6 @@ Newlywed n /ˈnjuː.li.wed/  Người mới cưới<br>\
 Cake n /keɪk/  Bánh ngọt<br>\
 Ring n /rɪŋ/  Nhẫn<br>\
 Emblem n /ˈem.bləm/  Biểu tượng<br>\
-Band n /bænd/  Ban nhạc<br>\
 Congratulation n /kənˌɡrætʃ.əˈleɪ.ʃən/  Lời chúc mừng<br>\
 Jewelry n /ˈdʒuː.əl.ri/  Trang sức<br>\
 Wine n /waɪn/  Rượu vang<br>\
@@ -673,7 +668,6 @@ Brother-in-law n /ˈbrʌð.ə.rɪn.lɔː/  Anh/em rể, anh/em chồng, anh/em v
 Sister-in-law n /ˈsɪs.tə.rɪn.lɔː/  Chị/em dâu, chị/em chồng, chị/em vợ<br>\
 Engaged v /ɪnˈɡeɪdʒd/  Đã đính ước, hứa hôn<br>\
 Couple n /ˈkʌp.əl/  Cặp đôi, đôi vợ chồng<br>\
-Husband n /ˈhʌz.bənd/  Chồng<br>\
 Wife n /waɪf/  Vợ<br>\
 Ceremony n /ˈser.ɪ.mə.ni/  Nghi lễ, nghi thức<br>\
 Betroth v /bɪˈtrəʊð/  Hứa hôn, đính hôn",
@@ -734,12 +728,10 @@ Sneeze v /sni:z/ Hắt hơi<br>\
 Bad breath n /bæd breθ/ Hôi miệng<br>\
 Earache n /’iəreik/ Đau tai<br>\
 Nausea n /’nɔ:sjə/ Chứng buồn nôn<br>\
-Eating disorder n /ˈiːtɪŋ dɪsˈɔːrdər/ Rối loạn ăn uống<br>\
 Asthma n /ˈæzmə/ Hen, suyễn<br>\
 Backache n /ˈbækeɪk bəʊn/ Bệnh đau lưng<br>\
 Chill n /tʃɪl/ Cảm lạnh<br>\
 Fever virus n /’fi:və ‘vaiərəs/ Sốt siêu vi<br>\
-Allergy n /ˈælərdʒi/ Dị ứng<br>\
 Paralyse v /ˈpærəlaɪz/ Liệt<br>\
 Infected v /in’dʤekʃn/ Nhiễm trùng<br>\
 Inflamed a /ɪnˈfleɪmd/ Bị viêm<br>\
@@ -1124,7 +1116,6 @@ Theater n /ˈθiː.ə.tər/ Nhà hát<br>\
 Actor n /ˈæktər/ Nam diễn viên<br>\
 Actress n /ˈæk.trɪs/ Nữ diễn viên<br>\
 Director n /dɪˈrɛktər/ Đạo diễn<br>\
-Romantic a /roʊˈmæntɪk/ Lãng mạn<br>\
 Silent film n /ˈsaɪlənt fɪlm/ Phim câm<br>\
 Movie ticket n /ˈmuː.vi ˈtɪk.ɪt/ Vé xem phim",
 },
@@ -1277,7 +1268,6 @@ Ring n /rɪŋ/ Nhẫn<br>\
 Romantic a /roʊˈmæn.tɪk/ Lãng mạn<br>\
 Sweet a /swiːt/ Ngọt ngào<br>\
 Alone a /əˈloʊn/ Một mình<br>\
-Couple n /ˈkʌp.əl/ Cặp đôi<br>\
 Forever adv /fɔːrˈɛv.ər/ Mãi mãi<br>\
 Boyfriend n /ˈbɔɪ.frɛnd/ Bạn trai<br>\
 Girlfriend n /ˈɡɜːl.frɛnd/ Bạn gái<br>\
@@ -1359,7 +1349,7 @@ Form teacher n /fɔːm ˈtiː.tʃər/ Giáo viên chủ nhiệm<br>\
 Proctor n /ˈprɒk.tər/ Giám thị<br>\
 School bag n /skuːl bæg/ Cặp<br>\
 Dean n /diːn/ Trưởng khoa<br>\
-Course n /kɔːs/ Khoá học",
+",
 },
 {
 	title:"Weather",
@@ -1484,7 +1474,6 @@ Private school n /ˈpraɪ.vɪt skuːl/ Trường tư thục<br>\
 Secondary school n /ˈsɛk.ənˌdɛr.i skuːl/ Trường trung học cơ sở<br>\
 High school n /haɪ skuːl/ Trường trung học phổ thông<br>\
 Primary school n /ˈpraɪˌmɛr.i skuːl/ Trường tiểu học<br>\
-Nursery school n /ˈnɜːr.sər.i skuːl/ Trường mẫu giáo<br>\
 University n /ˌjuː.nɪˈvɜːr.sə.ti/ Trường đại học<br>\
 Professor n /prəˈfɛs.ər/ Giáo sư<br>\
 Lecturer n /ˈlɛk.tʃər.ər/ Giảng viên<br>\
@@ -1500,7 +1489,6 @@ Student n /ˈstjuː.dənt/ Sinh viên, học sinh<br>\
 Student union n /ˈstjuː.dənt ˈjuː.njən/ Hội sinh viên<br>\
 Tuition fee n /tjuːˈɪʃ.ən fiː/ Học phí<br>\
 Exam n /ɪɡˈzæm/ Bài thi, kì thi<br>\
-Pass v /pæs/ Đậu, đỗ<br>\
 Study v /ˈstʌd.i/ Học<br>\
 Learn v /lɜːrn/ Học<br>\
 Curriculum n /kəˈrɪk.jə.ləm/ Chương trình giảng dạy<br>\
@@ -1520,10 +1508,8 @@ Wrong a /rɒŋ/ Sai<br>\
 Register n /ˈrɛdʒ.ɪ.stər/ Sổ sách<br>\
 Assembly n /əˈsɛm.bli/ Cuộc họp<br>\
 Holiday n /ˈhɒl.ɪ.deɪ/ Kỳ nghỉ<br>\
-Teacher n /ˈtiː.tʃər/ Giáo viên<br>\
 Pupil n /ˈpjuː.pəl/ Học sinh<br>\
 Playground n /ˈpleɪ.ɡraʊnd/ Sân chơi<br>\
-Library n /ˈlaɪ.brər.i/ Thư viện<br>\
 Hall n /hɔːl/ Hội trường<br>\
 Dormitory n /ˈdɔːr.mɪ.tɔːr.i/ Ký túc xá<br>\
 Locker n /ˈlɒk.ər/ Tủ có khoá<br>\
@@ -1544,7 +1530,6 @@ Son-in-law n /ˈsʌn ɪn lɔː/ Con rể<br>\
 Daughter-in-law n /ˈdɔː.tər ɪn lɔː/ Con dâu<br>\
 Granddaughter n /ˈɡrændˌdɔː.tər/ Cháu gái (của ông bà)<br>\
 Grandfather n /ˈɡrændˌfɑː.ðər/ Ông nội, ông ngoại<br>\
-Wife n /waɪf/ Vợ<br>\
 Father n /ˈfɑː.ðər/ Bố<br>\
 Mother n /ˈmʌð.ər/ Mẹ<br>\
 Daughter n /ˈdɔː.tər/ Con gái<br>\
@@ -1690,7 +1675,6 @@ Pencil sharpener n /ˈpɛn.səl ˌʃɑːp.nər/ Đồ gọt bút chì<br>\
 Eraser n /ɪˈreɪ.zər/ Cục tẩy<br>\
 Pen n /pɛn/ Bút mực<br>\
 Ballpoint pen n /ˈbɔːl.pɔɪnt ˌpɛn/ Bút bi<br>\
-Desk n /dɛsk/ Bàn học<br>\
 Map n /mæp/ Bản đồ<br>\
 Glue n /ɡluː/ Hồ dán<br>\
 Ink n /ɪŋk/ Mực<br>\
@@ -1744,7 +1728,6 @@ Battery n /ˈbætəri/ Pin<br>\
 Gasoline n /ˈɡæsəˌliːn/ Xăng<br>\
 Turbine n /ˈtɜr.baɪn/ Tua-bin<br>\
 Sun n /sʌn/ Mặt trời<br>\
-Wind n /wɪnd/ Gió<br>\
 Waterfall n /ˈwɔːtərˌfɔːl/ Thác nước<br>\
 Refinery n /rɪˈfaɪnəri/ Nhà máy lọc<br>\
 Nuclear reactor n /ˈnjuː.kliər riˈæktər/ Lò phản ứng hạt nhân<br>\
@@ -1835,7 +1818,6 @@ Near pre /nɪər/ Gần<br>\
 Turn right v. phr /tɜrn raɪt/ Rẽ phải<br>\
 Turn left v. phr /tɜrn lɛft/ Rẽ trái<br>\
 Junction n /ˈdʒʌŋkʃən/ Giao lộ<br>\
-Roundabout n /ˈraʊndəˌbaʊt/ Bùng binh<br>\
 Pavement n /ˈpeɪvmənt/ Vỉa hè",
 },
 {

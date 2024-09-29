@@ -24,6 +24,8 @@
   <script type="text/javascript" src="global_js.js"></script>
   <script type="text/javascript" src="indexCtrl.js"></script>
 
+  <script type="text/javascript" src="modal/modalCtrl.js"></script>
+
   <script type="text/javascript" src="words3000/words3000Ctrl.js"></script>
   <script type="text/javascript" src="words4000/words4000Ctrl.js"></script>
   <script type="text/javascript" src="lptd/lptdCtrl.js"></script>
@@ -47,7 +49,6 @@
     <a ng-href="#!grammer" class="ml-3 mb-4">Grammer</a>
   	<a ng-href="#!ebooks" class="ml-3 mb-4">Ebooks</a>
 
-
       <div class="input-group my-3">
         <input type="text" class="form-control" ng-change="searchTyping()" ng-model="search" placeholder="Search...">  
         <div class="input-group-append">
@@ -55,9 +56,10 @@
         </div>
       </div>
 
-      <div class="text-sm ml-2" 
-        ng-repeat="name in searchDataResult track by $index">
-        <span ng-bind-html="name"></span><br>
+      <div class="text-sm my-1" 
+        ng-repeat="wordFull in searchDataResult track by $index">
+        <button class="btn btn-sm border-primary" ng-click="showExampleModal('alert', wordFull, $event)">Ex</button>
+        <span ng-bind-html="wordFull"></span><br>
       </div>
 
       <div class="my-3" ng-view></div>

@@ -13,12 +13,13 @@ var app = angular.module("myApp", [
   'bridgeRApp','bridgeLApp',
   'grammerApp','lptdApp',
   'words3000App','words4000App',
-  'ngSanitize','ngRoute', 'ui.bootstrap','ngAnimate'
+  'modalApp',
+  'ngSanitize','ngRoute',
   ]);
 app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'words3000/words3000.html', controller: 'words3000Ctrl',controllerAs:"words3000As"
+        templateUrl: 'words3000/words3000.html', controller: 'words3000Ctrl'
       })      
       .when('/book4k', {
         templateUrl: 'words4000/words4000.html', controller: 'words4000Ctrl'
@@ -58,9 +59,15 @@ app.config(function($routeProvider) {
       });
  }); // route
 
-app.controller("indexCtrl", function($scope, $timeout) {
+app.controller("indexCtrl",  ['$scope', 'appAlert', function($scope, appAlert) {
 
-var kSTORIES = WORDS_3K_DATA.concat(IELTS_5K_DATA).concat(GRAMMER_DATA)
+var kAllVocaWords = WORDS_3K_DATA
+    .concat(IELTS_5K_DATA)
+    .concat(GRAMMER_DATA)
+
+var kAllStories = lptd_cd1_stories
+  .concat(lptd_cd2_stories)
+  .concat(lptd_cd3_stories);
 
 $scope.searchData = [];
 $scope.searchDataResult = [];
@@ -87,8 +94,8 @@ $scope.clearSearch = function () {
 };
 
 $scope.preProcess = function () {
-	for (var k = 0; k < kSTORIES.length; k++) {
-		story = kSTORIES[k];
+	for (var k = 0; k < kAllVocaWords.length; k++) {
+		story = kAllVocaWords[k];
 		if (story.en) {	
 			var words = story.en.split('<br>');
 			$scope.searchData = $scope.searchData.concat(words);
@@ -121,5 +128,53 @@ $scope.loadData = function () {
 
 $scope.loadData();
 
-});
+$scope.showExampleModal = function(type, wordFull, event) {
+      var sentences = $scope.fetchSentences(wordFull);
+      if (!sentences) {
+        event.target.style.display = 'none';
+        return;
+      }
+      if (type == 'alert') {
+          appAlert.alert({
+              title: 'Title',
+              message: 'This is alert message!',
+              type: 'danger',
+              dataSent: sentences
+          });
+      } else {
+          appAlert.confirm({
+              title: 'Confirm delete!',
+              message: 'Do you want to delete this record ?'
+          }, function(isOk) {
+              if (isOk) {
+                  appAlert.alert({
+                      title: 'Success',
+                      message: 'Delete record successfully!',
+                      type: 'success'
+                  });
+              }
+          });
+      }
+  };
 
+
+// wordFull like:  Sea n /siː/ Biển
+$scope.fetchSentences = function(wordFull) {
+  var word = wordFull.split(" ")[0].trim();
+  var ptrn = new RegExp(String.raw`[^\.\?!<>:]*\b${word}(s|es)*\b.*?[\?|\.|!]+?`, 'gi');
+  for (var i = 0; i < kAllStories.length; i++) {
+    var para = kAllStories[i].en.replaceAll("<br>", '.');
+    var results = para.match(ptrn);  // array
+    if (results) {
+      var regex = new RegExp(`\\b${word}` , 'gi')
+      for (var i = 0; i < results.length; i++) {
+        var nn = results[i];
+        var match = nn.match(regex)[0];
+        results[i] = nn.replaceAll(match , "<strong>" + match +"</strong>");
+      }
+      return results;
+    }
+  }
+}
+
+}]);  //end of ctrl

@@ -628,7 +628,6 @@ Forest n /ˈfɒr.ɪst/  Rừng<br>\
 Mountain n /ˈmaʊn.tɪn/  Núi<br>\
 Port n /pɔːt/  Bến cảng<br>\
 Lake n /leɪk/  Hồ<br>\
-Sea n /siː/  Biển<br>\
 Sand n /sænd/  Cát<br>\
 Valley n /ˈvæl.i/  Thung lũng<br>\
 Waterfall n /ˈwɔː.tə.fɔːl/  Thác nước<br>\

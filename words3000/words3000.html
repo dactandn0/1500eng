@@ -5,9 +5,9 @@
 	</h6>
 	<div class="accordion-content" ng-show="acc_isShow($index)">
 
-		<div ng-repeat="word in words track by $index">
-			<button class="btn btn-sm" ng-click="getExample($index)">Ex</button>
-	   		<span ng-bind-html="word" class="mb-1"></span> <br>
+		<div ng-repeat="wordFull in words track by $index" class="my-1">
+			<button class="btn btn-sm border-primary" ng-click="showExampleModal('alert', wordFull, $event)">Ex</button>
+	   		<span ng-bind-html="wordFull" class="mb-1"></span> <br>
 		</div>
 
 	   <div class="mt-1" ng-if="story.vocaNotes">

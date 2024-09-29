@@ -1,7 +1,6 @@
 
 
 const word_4000_data = [
-
 {
 title:"4k Book1",
 en:"afraid a /əˈfreɪd/ sợ<br>\
@@ -43,7 +42,6 @@ worse  tệ hơn<br>\
 alien n /ˈeɪliən/ người ngoài hành tinh<br>\
 among trong<br>\
 chart biểu đồ<br>\
-cloud đám mây<br>\
 comprehend hiểu<br>\
 describe v /dɪˈskraɪb/ mô tả<br>\
 ever bao giờ<br>\
@@ -90,7 +88,6 @@ judgment phán đoán<br>\
 likely có khả năng<br>\
 normal bình thường<br>\
 rare hiếm<br>\
-relax thư giãn<br>\
 request yêu cầu<br>\
 reside cư trú<br>\
 result kết quả<br>\
@@ -116,7 +113,6 @@ return trở về<br>\
 survive sống sót<br>\
 upset bực bội<br>\
 voice giọng nói<br>\
-weather thời tiết<br>\
 wise a /waɪz/ khôn ngoan<br>\
 allow cho phép<br>\
 announce thông báo<br>\
@@ -347,7 +343,6 @@ treat  điều trị<br>\
 alive sống<br>\
 bone xương<br>\
 bother làm phiền<br>\
-captain thuyền trưởng<br>\
 conclusion kết luận<br>\
 doubt nghi ngờ<br>\
 explore khám phá<br>\
@@ -407,7 +402,6 @@ amaze kinh ngạc<br>\
 charge tính phí<br>\
 comfort thoải mái<br>\
 contact liên hệ<br>\
-customer khách hàng<br>\
 deliver giao hàng<br>\
 earn kiếm được<br>\
 gate cổng<br>\
@@ -574,8 +568,7 @@ memory bộ nhớ<br>\
 proper phù hợp<br>\
 scan quét<br>\
 section phần<br>\
-surface bề mặt<br>\
-",
+surface bề mặt",
 },
 {
 	title:"4k Book2",
@@ -607,7 +600,7 @@ jewelry đồ trang sức<br>\
 land đất<br>\
 meteor sao băng<br>\
 monster,northern quái vật,phía bắc<br>\
-remote xa<br>\
+remote a. /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
 southern phía nam<br>\
 statue tượng<br>\
 steam hơi nước<br>\
@@ -1034,7 +1027,6 @@ admit thừa nhận<br>\
 bin thùng<br>\
 bowl bát<br>\
 cabin cabin<br>\
-cash tiền mặt<br>\
 criminal a tội phạm, hình sự, có trọng tội<br>\
 dozen tá<br>\
 elder người già<br>\
@@ -1066,7 +1058,6 @@ reef rạn san hô<br>\
 shut đóng cửa<br>\
 strict nghiêm ngặt<br>\
 surf lướt sóng<br>\
-task nhiệm vụ<br>\
 zone  khu vực <br>\
 apology xin lỗi<br>\
 bold táo bạo<br>\
@@ -1114,7 +1105,7 @@ deserve v đáng thưởng<br>\
 feather lông vũ<br>\
 fertile a màu mỡ, đất tốt<br>\
 furniture nội thất<br>\
-grave ngôi mộ<br>\
+grave n /ɡreɪv/ ngôi mộ<br>\
 ideal lý tưởng<br>\
 intelligence trí thông minh<br>\
 nowadays ngày nay<br>\
@@ -1123,26 +1114,67 @@ religious tôn giáo<br>\
 romantic lãng mạn<br>\
 shell n vỏ hến, vỏ bọc (v, lột vỏ)<br>\
 shore bờ biển<br>\
-wheel bánh xe<br>\
+wheel n /wiːl/ bánh xe<br>\
 appeal kêu gọi<br>\
-assume giả định<br>\
+assume v /əˈsuːm/ giả định<br>\
 client khách hàng<br>\
 downtown trung tâm<br>\
 dull buồn tẻ<br>\
 embarrass xấu hổ<br>\
-fare giá vé<br>\
+fare n /fer/ giá vé (bus, plane, taxi)<br>\
 former trước đây<br>\
 formula công thức<br>\
 found tìm thấy<br>\
 invest đầu tư<br>\
-loan cho vay<br>\
 practical thực tế<br>\
-quarter quý<br>\
-scholarship học bổng<br>\
+quarter n /ˈkwɔːrtər/ quý<br>\
+scholarship  n /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
 treasure kho báu<br>\
-urge thúc giục<br>\
-"
+urge v /ɜːrdʒ/ thúc giục"
+},
+{
+	title:"4k Book3",
+	en:"arise phát sinh<br>\
+benefactor người làm ơn<br>\
+blacksmith thợ rèn<br>\
+charitable từ thiện<br>\
+chimney ống khói<br>\
+compensate bù trừ<br>\
+encounter gặp gỡ<br>\
+exceed vượt quá<br>\
+forge rèn<br>\
+humble khiêm tốn<br>\
+iron sắt<br>\
+ladder thang<br>\
+modest khiêm tốn<br>\
+occupy chiếm đóng<br>\
+penny đồng xu<br>\
+preach giảng đạo<br>\
+prosper thịnh vượng<br>\
+province tỉnh<br>\
+satisfaction hài lòng<br>\
+sustain duy trì<br>\
+acquire thu thập<br>\
+awkward ngượng ngùng<br>\
+caretaker người chăm sóc<br>\
+deceive v /dɪˈsiːv/ lừa dối, ngoại tình, lừa phỉnh<br>\
+discourage v /dɪsˈkɜːrɪdʒ/ không khuyến khích, làm nản lòng<br>\
+fake giả<br>\
+hatred hận thù<br>\
+hut lều<br>\
+inferior thấp kém<br>\
+lodge lều<br>\
+neglect bỏ bê<br>\
+newcomer người mới<br>\
+offense tội lỗi<br>\
+overlook bỏ qua<br>\
+repay trả lại<br>\
+ridiculous a /rɪˈdɪkjələs/ vô lý, tức cười<br>\
+satisfactory thỏa đáng<br>\
+shepherd người chăn cừu<br>\
+venture mạo hiểm<br>\
+wheat lúa mì"
 }
 ]
 

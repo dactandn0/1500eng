@@ -19,18 +19,15 @@ Post-it note n /ˈpəʊst.ɪt ˌnəʊt/  Giấy nhớ<br>\
 Pin n /pɪn/  Đinh ghim, kẹp<br>\
 Pencil Sharpener n /ˈpen.səl ˌʃɑː.pən.ər/  Đồ gọt bút chì<br>\
 Pencil Case n /ˈpen.səl ˌkeɪs/  Hộp bút<br>\
-Pen n /pen/  Bút mực<br>\
 Paper fastener n /ˈpeɪ.pər ˈfɑːs.ən.ər/  Dụng cụ kẹp giấy<br>\
 Paper Clip n /ˈpeɪ.pə ˌklɪp/  Kẹp giấy<br>\
 Palette n /ˈpæl.ət/  Bảng màu<br>\
 Paint n /peɪnt/  Sơn, màu<br>\
 Paintbrush n /ˈpeɪntˌbrʌʃ/  Chổi sơn<br>\
 Notebook n /ˈnəʊt.bʊk/  Cuốn sổ, vở<br>\
-Map n /mæp/  Bản đồ<br>\
 Magnifying Glass n /ˈmæɡ.nɪ.faɪ.ɪŋ ˌɡlɑːs/  Kính lúp<br>\
 Index card n /ˈkɑːd ˌɪn.deks/  Phiếu làm mục lục<br>\
 Highlighter n /ˈhaɪˌlaɪ.tər/  Bút đánh dấu màu<br>\
-Glue n /ɡluː/  Keo<br>\
 Globe n /ɡləʊb/  Quả địa cầu<br>\
 Flash card n /ˈflæʃ ˌkɑːd/  Thẻ ghi nhớ<br>\
 File Holder n /faɪlˈhəʊl.dər/  Tập hồ sơ<br>\
@@ -41,18 +38,14 @@ Duster n /ˈdʌs.tər/  Khăn lau bảng<br>\
 Dossier n /ˈdɒs.i.eɪ/  Hồ sơ<br>\
 Dictionary n /ˈdɪk.ʃən.ər.i/  Từ điển<br>\
 Desk n /desk/  Bàn học, bàn làm việc<br>\
-Crayon n /ˈkreɪ.ɒn/  Bút chì màu<br>\
 Compass n /ˈkʌm.pəs/  Com-pa<br>\
 Coloured Pencil n /ˈkʌl.əd ˈpen.səl/  Bút chì màu<br>\
 Clamp n klæmp/  Kẹp<br>\
-Chair n /tʃeər/  Ghế<br>\
 Carbon paper n /ˈkɑː.bən ˌpeɪ.pər/  Giấy than<br>\
-Bookcase n /ˈbʊk.keɪs/  Giá sách<br>\
 Book n /bʊk/  Sách<br>\
 Board n /bɔːd/  Bảng<br>\
 Binder n /ˈbaɪn.dər/  Bìa rời (báo, tạp chí)<br>\
 Beaker n /ˈbiː.kər/  Cốc bêse<br>\
-Ballpoint pen n /ˌbɔːl.pɔɪnt ˈpen/  Bút bi<br>\
 Backpack n /ˈbæk.pæk/  Ba lô<br>\
 Funnel n /ˈfʌn.əl/  Cái phễu",
 },
@@ -88,14 +81,13 @@ Play sports v /pleɪ spɔːts/  Chơi thể thao<br>\
 Play video games v /pleɪ ˈvɪd.i.əʊ ˌɡeɪmz/  Chơi trò chơi điện tử<br>\
 Read books v /riːd bʊks/  Đọc sách<br>\
 Read newspapers v /ri:d’nju:z,peipəz/  Đọc báo<br>\
-Relax v /rɪˈlæks/  Thư giãn<br>\
 Set the alarm v /set ðə ə’lɑ:m/  Đặt chuông báo thức<br>\
 Shave v /∫eiv/  Cạo râu<br>\
 Sleep v /sliːp/  Ngủ<br>\
 Study v /ˈstʌd.i/  Học tập, nghiên cứu<br>\
 Surf the internet v /sɜːf ðiː ˈɪn.tə.net/  Lướt mạng<br>\
 Take the rubbish out v /teik ðə ‘rʌbiʃ aut/  Đi đổ rác<br>\
-Drink v /driɳk/  Uống<br>\
+Drink v /driɳk/ Uống(v), đồ uống (n)<br>\
 Turn off v /tɜrn ɒf/  Tắt<br>\
 Visit your friend v /ˈvɪz.ɪt jɔːr frend/  Thăm bạn bè<br>\
 Wake up v /weik Λp/  Tỉnh giấc<br>\
@@ -113,7 +105,7 @@ Island n /ˈaɪlənd/  Hòn đảo<br>\
 Harbor n /ˈhɑːr.bɚ/  Cảng biển<br>\
 Lighthouse n /ˈlaɪthaʊs/  Hải đăng<br>\
 Submarine n /ˌsʌbmərˈiːn/  Tàu ngầm<br>\
-Captain n /ˈkæptɪn/  Thuyền trưởng<br>\
+Captain n /ˈkæptɪn/  Thuyền trưởng, đội trưởng<br>\
 Fisherman n /ˈfɪʃəmən/  Ngư dân<br>\
 Lifeguard n /ˈlaɪfɡɑːd/  Người cứu hộ<br>\
 Seashore n /ˈsiːʃɔːr/  Bờ biển<br>\
@@ -124,13 +116,11 @@ Whale n /weɪl/  Cá voi<br>\
 Shark n /ʃɑːk/  Cá mập<br>\
 Dolphin n /ˈdɒlfɪn/  Cá heo<br>\
 Octopus n /ˈɑːktəpəs/  Bạch tuộc<br>\
-Jellyfish n /ˈdʒelifɪʃ/  Sứa<br>\
 Sea horse n /ˈsiˌhɔrs/  Cá ngựa<br>\
 Seaweed n /ˈsiːwiːd/  Rong biển<br>\
 Coral n /ˈkɒrəl/  San hô<br>\
 Coral reef n /ˌkɒr.əl ˈriːf/  Rạn san hô<br>\
 Shellfish n /ˈʃel.fɪʃ/  Động vật có vỏ<br>\
-Clam n /klæm/  Nghêu<br>\
 Starfish n /ˈstɑːrfɪʃ/  Sao biển<br>\
 Seal n /siːl/  Hải cẩu<br>\
 Turtle n /ˈtɜːtl/  Rùa biển<br>\
@@ -174,12 +164,10 @@ Receipt n /rɪˈsiːt/  Biên lai<br>\
 Pay v /peɪ/  Trả tiền<br>\
 Expensive a /ɪkˈspen.sɪv/  Đắt<br>\
 Cheap n /tʃiːp/  Rẻ<br>\
-Discount n /ˈdɪs.kaʊnt/  Giảm giá<br>\
 Price n /praɪs/  Giá cả<br>\
 Trolley n /ˈtrɒl.i/  Xe đẩy<br>\
 Credit card n /ˈkred.ɪt ˌkɑːd/  Thẻ tín dụng<br>\
 Cash n /kæʃ/  Tiền mặt<br>\
-Shop n /ʃɒp/  Cửa hàng<br>\
 Money n /ˈmʌn.i/  Tiền<br>\
 Basket n /ˈbɑː.skɪt/  Rổ, giỏ<br>\
 Bag n /bæɡ/  Túi<br>\
@@ -237,7 +225,6 @@ en:"Classmate n /ˈklɑːs.meɪt/  Bạn cùng lớp<br>\
 Schoolmate n /ˈskuːl.meɪt/  Bạn cùng trường<br>\
 Roommate n /ˈruːm.meɪt/  Bạn cùng phòng<br>\
 Soulmate n /ˈsəʊl.meɪt/  Tri kỷ<br>\
-Colleague n /ˈkɒl.iːɡ/  Đồng nghiệp<br>\
 Comradeship n /ˈkɒm.reɪd.ʃɪp/  Tình bạn, tình đồng chí<br>\
 Partner n /ˈpɑːt.nər/  Cộng sự<br>\
 Associate n /əˈsəʊ.si.eɪt/  Bạn đồng liêu, đồng minh<br>\
@@ -338,7 +325,6 @@ en:"Land n /lænd/  Đất, đất đai<br>\
 Pollute v /pəˈluːt/  Làm ô nhiễm<br>\
 Decompose v /ˌdiː.kəmˈpəʊz/  Phân hủy<br>\
 Balance n /ˈbæl.əns/  Sự cân bằng<br>\
-Climate change n /ˈklaɪ.mət ˌtʃeɪndʒ/  Biến đổi khí hậu<br>\
 Global warming n /ˌɡləʊ.bəl ˈwɔː.mɪŋ/  Nóng lên toàn cầu<br>\
 Oil slick n /ˈɔɪl ˌslɪk/  Dầu loang<br>\
 Ozone layer n /ˈəʊ.zəʊn ˌleɪ.ər/  Tầng ozon<br>\
@@ -360,7 +346,6 @@ Conservation n /konsǝ'vein/ sự bảo tồn<br>\
 Desertification n /di z3:tifi'kexfn/ sự sa mạc hóa<br>\
 Endangered a /in'deindzǝd/ gặp nguy hiểm<br>\
 Sustainability n /sa steina 'bulati/ sự bền vững<br>\
-Global warming n /glaubl 'wo:min/ sự ấm lên toàn cầu<br>\
 Extinction n /Ik'stinkfn/ sự tuyệt chủng [extinct a.]"
 },
 {
@@ -463,7 +448,6 @@ Mouse mat n /ˈmaʊs ˌmæt/  Miếng lót chuột<br>\
 Key n /kiː/  Phím<br>\
 Shut down v /ʃʌt daʊn/  Tắt máy<br>\
 Folder n /ˈfəʊl.dər/  Thư mục<br>\
-Print v /prɪnt/  In<br>\
 Program n /ˈprəʊ.ɡræm/  Chương trình<br>\
 Search v /sɜːtʃ/  Tìm kiếm (thông tin)<br>\
 Screen n /skriːn/  Màn hình",
@@ -495,7 +479,6 @@ title:"Shop",
 en:"Bakery n /ˈbeɪ.kər.i/  Tiệm bánh<br>\
 Bookshop n /ˈbʊk.ʃɒp/  Tiệm sách<br>\
 Butcher's n /ˈbʊtʃ.ər/  Cửa hàng thịt<br>\
-Candy store n /ˈkæn.di ˌstɔːr/  Cửa hàng kẹo<br>\
 Flower shop n /flaʊər ʃɒp/  Cửa hàng hoa<br>\
 Store n /ˌstɔːr/  Cửa hàng<br>\
 Gift shop n /ˈɡɪft ˌʃɒp/  Cửa hàng đồ lưu niệm<br>\
@@ -600,7 +583,6 @@ SEA Games n /ˈsiː ˌɡeɪmz/  Đại hội Thể thao Đông Nam Á<br>\
 Host v /hoʊst/  Đăng cai, tổ chức<br>\
 Wushu n /ˈwuː.ʃuː/  (môn) võ wushu<br>\
 Sportsmanship n /ˈspɔːrts.mənˌʃɪp/  Tinh thần thể thao<br>\
-Captain n /ˈkæp.tən/  Đội trưởng<br>\
 Cross-country n /ˌkrɒsˈkʌn.tri/  Chạy việt dã",
 },
 {
@@ -1283,8 +1265,6 @@ Single a /ˈsɪŋ.ɡəl/ Độc thân",
 Main course n /meɪn kɔːrs/ Món chính<br>\
 Napkin n /ˈnæp.kɪn/ Khăn ăn<br>\
 Wine n /waɪn/ Rượu vang<br>\
-Cutlery n /ˈkʌt.lə.ri/ Dụng cụ ăn<br>\
-Drink n /drɪŋk/ Đồ uống<br>\
 Combo n /ˈkɒm.boʊ/ Gói, bộ<br>\
 Side dish n /saɪd dɪʃ/ Đồ ăn kèm<br>\
 Meal n /miːl/ Bữa ăn<br>\
@@ -1301,7 +1281,6 @@ Animated a /ˈæn.ɪˌmeɪ.tɪd/ Náo nhiệt, sôi nổi<br>\
 Hotel n /hoʊˈtɛl/ Khách sạn<br>\
 Hotel receptionist n /hoʊˈtɛl rɪˈsɛp.ʃən.ɪst/ Nhân viên lễ tân khách sạn<br>\
 Housekeeper n /ˈhaʊsˌkiː.pər/ Nhân viên dọn phòng<br>\
-Hall n /hɔːl/ Hành lang<br>\
 Vacancy n /ˈveɪ.kən.si/ Phòng trống<br>\
 Lobby n /ˈlɒb.i/ Hành lang<br>\
 Concierge n /kɒn.siˈɛrʒ/ Nhân viên hướng dẫn<br>\
@@ -1358,7 +1337,6 @@ Sunshine n /ˈsʌn.ʃaɪn/ Ánh nắng mặt trời<br>\
 Icy n /ˈaɪ.si/ Lạnh lẽo<br>\
 Atmosphere n /ˈæt.mə.sfɪər/ Bầu khí quyển<br>\
 Dry a /draɪ/ Khô<br>\
-Sun n /sʌn/ Mặt trời<br>\
 Cloud n /klaʊd/ Đám mây<br>\
 Fog n /fɔːɡ/ Sương mù<br>\
 Snow n /snoʊ/ Tuyết<br>\
@@ -1482,7 +1460,6 @@ Student n /ˈstjuː.dənt/ Sinh viên, học sinh<br>\
 Student union n /ˈstjuː.dənt ˈjuː.njən/ Hội sinh viên<br>\
 Tuition fee n /tjuːˈɪʃ.ən fiː/ Học phí<br>\
 Exam n /ɪɡˈzæm/ Bài thi, kì thi<br>\
-Study v /ˈstʌd.i/ Học<br>\
 Learn v /lɜːrn/ Học<br>\
 Curriculum n /kəˈrɪk.jə.ləm/ Chương trình giảng dạy<br>\
 Course n /kɔːrs/ Khóa học<br>\
@@ -1503,7 +1480,8 @@ Assembly n /əˈsɛm.bli/ Cuộc họp<br>\
 Holiday n /ˈhɒl.ɪ.deɪ/ Kỳ nghỉ<br>\
 Pupil n /ˈpjuː.pəl/ Học sinh<br>\
 Playground n /ˈpleɪ.ɡraʊnd/ Sân chơi<br>\
-Hall n /hɔːl/ Hội trường<br>\
+Hall n /hɔːl/ Hội trường, hành lang<br>\
+Student hall n ký túc xá sinh viên<br>\
 Dormitory n /ˈdɔːr.mɪ.tɔːr.i/ Ký túc xá<br>\
 Locker n /ˈlɒk.ər/ Tủ có khoá<br>\
 Lesson n /ˈlɛs.ən/ Bài học<br>\
@@ -1540,7 +1518,7 @@ Adopt v /əˈdɒpt/ Nhận con nuôi<br>\
 Children n /ˈtʃɪl.drən/ Con cái<br>\
 Take care of v. phr /teɪk kɛər əv/ Chăm sóc, quan tâm<br>\
 Family tree n /ˈfæm.ə.li triː/ Gia phả<br>\
-Close-knit a ˌkloʊsˈnɪt/ Khăng khít<br>\
+Close-knit a /kloʊsˈnɪt/ Khăng khít<br>\
 Stepchild n /ˈstɛpˌtʃaɪld/ Con riêng<br>\
 Half-brother n /ˈhɑːfˌbrʌð.ər/ Anh trai, em trai (cùng cha/mẹ khác mẹ/cha)<br>\
 Half-sister n /ˈhɑːfˌsɪs.tər/ Chị gái, em gái (cùng cha/mẹ khác mẹ/cha)<br>\
@@ -1664,7 +1642,6 @@ Notepad n /ˈnoʊtˌpæd/ Sổ ghi chép<br>\
 Crayon n /ˈkreɪ.ɒn/ Bút chì màu<br>\
 Pencil sharpener n /ˈpɛn.səl ˌʃɑːp.nər/ Đồ gọt bút chì<br>\
 Eraser n /ɪˈreɪ.zər/ Cục tẩy<br>\
-Pen n /pɛn/ Bút mực<br>\
 Ballpoint pen n /ˈbɔːl.pɔɪnt ˌpɛn/ Bút bi<br>\
 Map n /mæp/ Bản đồ<br>\
 Glue n /ɡluː/ Hồ dán<br>\
@@ -1704,7 +1681,6 @@ Shrimp n /ʃrɪmp/ Tôm<br>\
 Oyster n /ˈɔɪ.stər/ Hàu<br>\
 Cockle n /ˈkɒk.əl/ Sò<br>\
 Scallop n /ˈskɒl.əp/ Sò điệp<br>\
-Octopus n /ˈɒk.tə.pʊs/ Bạch tuộc<br>\
 Fish n /fɪʃ/ Cá<br>\
 Eel n /iːl/ Lươn<br>\
 Mussel n /ˈmʌsəl/ Vẹm<br>\

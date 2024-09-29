@@ -63,7 +63,7 @@ app.controller("indexCtrl",  ['$scope', 'appAlert', function($scope, appAlert) {
 
 var kAllVocaWords = WORDS_3K_DATA
     .concat(IELTS_5K_DATA)
-    .concat(GRAMMER_DATA)
+    .concat(word_4000_data)
 
 var kAllStories = lptd_cd1_stories
   .concat(lptd_cd2_stories)
@@ -80,7 +80,7 @@ $scope.searchDataResult = [];
 $scope.search = "";
 
 $scope.searchTyping = function() {
-    if ($scope.searchData.length==0) return true;       
+  if ($scope.searchData.length==0) return true;       
 	$scope.searchDataResult = [];
 	if ($scope.search.length <= 2) return;
     var search = removeVietnameseTones($scope.search.toLowerCase());
@@ -112,6 +112,11 @@ $scope.preProcess = function () {
 $scope.findSameWord = function() {
   for (var i = 0; i < $scope.searchData.length-1; i++) {
     var word1 = $scope.searchData[i].split(" ")[0].trim();
+    if (word1.length <= 2) continue;
+    if (word1 == '-') continue;
+    if (word1.indexOf('(') > 0) continue;
+    if (word1.indexOf(')') > 0) continue;
+    if (word1.indexOf('.') > 0) continue;
     for (var k = i+1; k < $scope.searchData.length; k++) {
       var word2 = $scope.searchData[k].split(" ")[0].trim()
       if (word1 === word2) {

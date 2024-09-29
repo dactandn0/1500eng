@@ -67,7 +67,13 @@ var kAllVocaWords = WORDS_3K_DATA
 
 var kAllStories = lptd_cd1_stories
   .concat(lptd_cd2_stories)
-  .concat(lptd_cd3_stories);
+  .concat(lptd_cd3_stories)
+  .concat(BOOK4K_1)
+  .concat(bridge_cd1)
+  .concat(bridge_read_data)
+  .concat(complete_cd1)
+  .concat(complete_read_data)
+
 
 $scope.searchData = [];
 $scope.searchDataResult = [];
@@ -160,11 +166,18 @@ $scope.showExampleModal = function(type, wordFull, event) {
 
 // wordFull like:  Sea n /siː/ Biển
 $scope.fetchSentences = function(wordFull) {
-  var word = wordFull.split(" ")[0].trim();
-  var ptrn = new RegExp(String.raw`[^\.\?!<>:]*\b${word}(s|es)*\b.*?[\?|\.|!]+?`, 'gi');
-  for (var i = 0; i < kAllStories.length; i++) {
-    var para = kAllStories[i].en.replaceAll("<br>", '.');
+
+  var word = wordFull.trim().split(" ")[0].trim();
+  if (word==='-') return 0;
+
+  var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b${word}(s|es)*\b.*?[\?|\.|!"]+?`, 'gi');
+  
+  var shuffleStories = shuffle(kAllStories);
+
+  for (var i = 0; i < shuffleStories.length; i++) {
+    var para = shuffleStories[i].en.replaceAll("<br>", '.');
     var results = para.match(ptrn);  // array
+
     if (results) {
       var regex = new RegExp(`\\b${word}` , 'gi')
       for (var i = 0; i < results.length; i++) {
@@ -172,7 +185,7 @@ $scope.fetchSentences = function(wordFull) {
         var match = nn.match(regex)[0];
         results[i] = nn.replaceAll(match , "<strong>" + match +"</strong>");
       }
-      return results;
+      return (results);
     }
   }
 }

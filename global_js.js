@@ -248,9 +248,21 @@ preprocess();
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   let mybutton = document.getElementById("btn_back_to_top");
+  
+  if (!mybutton) return;
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
+}
+
+
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
 }

@@ -54,8 +54,7 @@ Binder n /ˈbaɪn.dər/  Bìa rời (báo, tạp chí)<br>\
 Beaker n /ˈbiː.kər/  Cốc bêse<br>\
 Ballpoint pen n /ˌbɔːl.pɔɪnt ˈpen/  Bút bi<br>\
 Backpack n /ˈbæk.pæk/  Ba lô<br>\
-Funnel n /ˈfʌn.əl/  Cái phễu\
-",
+Funnel n /ˈfʌn.əl/  Cái phễu",
 },
 {
 title:"Daily Activities",
@@ -201,8 +200,7 @@ Pet shop n /pet ʃɒp/  Tiệm thú cưng<br>\
 Shoe shop n /ʃuːʃɒp/  Tiệm giày<br>\
 Meat shop n /miːt ʃɒp/  Cửa hàng thịt<br>\
 Florist n /ˈflɒr.ɪst/  Người bán hoa<br>\
-Butcher n /ˈbʊtʃ.ər/  Người bán thịt<br>\
-",
+Butcher n /ˈbʊtʃ.ər/  Người bán thịt",
 },
 {
 title:"Bed room",
@@ -309,8 +307,7 @@ Cutlery n /ˈkʌt.lɚ.i/ Dao kéo<br>\
 Corkscrew n /ˈkɔːrk.skruː/ Đồ mở nắp chai<br>\
 Frying pan n /ˈfraɪ.ɪŋ ˌpæn/ Chảo chiên<br>\
 Pressure cooker n /ˈpreʃ.ɚ ˌkʊk.ɚ/ Nồi áp suất<br>\
-Casserole n /ˈkæsəˌroʊl dɪʃ/ Nồi hầm món ăn, thịt hầm\
-",
+Casserole n /ˈkæsəˌroʊl dɪʃ/ Nồi hầm món ăn, thịt hầm",
 }
 ,
 {
@@ -1278,8 +1275,7 @@ Chocolate n /ˈtʃɒk.lɪt/ Sô-cô-la<br>\
 Wedding n /ˈwɛd.ɪŋ/ Đám cưới<br>\
 Anniversary n /ˌæn.ɪˈvɜː.sər.i/ Ngày kỷ niệm<br>\
 Darling n /ˈdɑːr.lɪŋ/ Em yêu, anh yêu<br>\
-Single a /ˈsɪŋ.ɡəl/ Độc thân<br>\
-",
+Single a /ˈsɪŋ.ɡəl/ Độc thân",
 },
 {
 	title:"Restaurant, Hotel",
@@ -1347,8 +1343,7 @@ Grade n /ɡreɪd/ Điểm số<br>\
 Form teacher n /fɔːm ˈtiː.tʃər/ Giáo viên chủ nhiệm<br>\
 Proctor n /ˈprɒk.tər/ Giám thị<br>\
 School bag n /skuːl bæg/ Cặp<br>\
-Dean n /diːn/ Trưởng khoa<br>\
-",
+Dean n /diːn/ Trưởng khoa",
 },
 {
 	title:"Weather",
@@ -1389,8 +1384,7 @@ Mild a /maɪld/ Ôn hoà<br>\
 Dull a /dʌl/ U ám<br>\
 Shelter n /ˈʃɛl.tər/ Chỗ trú ẩn<br>\
 Celsius a /ˈsɛl.si.əs/ (thuộc) độ C<br>\
-Fine n /faɪn/ Đẹp<br>\
-",
+Fine n /faɪn/ Đẹp",
 },
 {
 	title:"Clothes",
@@ -1514,8 +1508,7 @@ Dormitory n /ˈdɔːr.mɪ.tɔːr.i/ Ký túc xá<br>\
 Locker n /ˈlɒk.ər/ Tủ có khoá<br>\
 Lesson n /ˈlɛs.ən/ Bài học<br>\
 Homework n /ˈhoʊm.wɜːrk/ Bài tập về nhà<br>\
-Test n /tɛst/ Bài kiểm tra<br>\
-",
+Test n /tɛst/ Bài kiểm tra",
 },
 {
 	title:"Family",
@@ -1556,8 +1549,7 @@ Hereditary a /həˈrɛd.ɪ.tər.i/ Di truyền<br>\
 Stepmother n /ˈstɛpˌmʌð.ər/ Mẹ kế<br>\
 Stepfather n /ˈstɛpˌfɑː.ðər/ Cha dượng<br>\
 Orphan n /ˈɔːr.fən/ Trẻ mồ côi<br>\
-Generation n /ˌdʒɛn.əˈreɪ.ʃən/ Thế hệ<br>\
-",
+Generation n /ˌdʒɛn.əˈreɪ.ʃən/ Thế hệ",
 },
 {
 	title:"Fruit",
@@ -1697,13 +1689,12 @@ Herb n /hɜːrb/ Thảo mộc<br>\
 Bush n /bʊʃ/ Bụi cây, bụi rậm<br>\
 Coconut tree n /ˈkoʊ.kəˌnʌt triː/ Cây dừa<br>\
 Apple tree n /ˈæpəl triː/ Cây táo<br>\
-Shrubland n /ˈʃrʌblænd/ Vùng cây bụi<br>\
-",
+Shrubland n /ˈʃrʌblænd/ Vùng cây bụi",
 },
 {
 	title:"Seafood",
 	en:"Herring n /ˈhɛr.ɪŋ/ Cá trích<br>\
-Skate n /skeɪt/ Cá đuối<br>\
+Skate n,v /skeɪt/ Cá đuối, trượt ván<br>\
 Salmon n /ˈsæmən/ Cá hồi<br>\
 Prawn n /prɔːn/ Tôm<br>\
 Cuttlefish n /ˈkʌtəl.fɪʃ/ Mực nang<br>\
@@ -1736,8 +1727,7 @@ Transformer n /trænsˈfɔːrmər/ Máy biến thế<br>\
 Heat v /hiːt/ Sưởi ấm, làm nóng<br>\
 Natural gas n /ˈnætʃərəl ɡæs/ Khí tự nhiên<br>\
 Diesel n /ˈdiːzəl/ Dầu đi-ê-zen<br>\
-Solar power n /ˈsoʊlər ˈpaʊər/ Năng lượng mặt trời<br>\
-",
+Solar power n /ˈsoʊlər ˈpaʊər/ Năng lượng mặt trời",
 },
 {
 	title:"Job/Career/Vocation",
@@ -1801,8 +1791,7 @@ Vitamin n /ˈvaɪtəmɪn/ Vi-ta-min<br>\
 Overeat v /ˌoʊvərˈiːt/ Ăn quá nhiều<br>\
 Nutritious a /njuˈtrɪʃəs/ Bổ dưỡng<br>\
 Vegetarian n /ˌvɛdʒɪˈtɛəriən/ Người ăn chay<br>\
-Mineral n /ˈmɪnərəl/ Khoáng chất<br>\
-",
+Mineral n /ˈmɪnərəl/ Khoáng chất",
 }
 ,{
 	title:"Street",

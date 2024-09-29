@@ -147,7 +147,6 @@ encourage v /ɪnˈkɜːrɪdʒ/ khuyến khích<br>\
 familiar quen thuộc<br>\
 grab chộp lấy<br>\
 hang treo<br>\
-huge lớn<br>\
 necessary cần thiết<br>\
 pattern mẫu<br>\
 propose đề xuất<br>\
@@ -163,15 +162,13 @@ beach bãi biển<br>\
 damage thiệt hại<br>\
 discover khám phá<br>\
 emotion cảm xúc<br>\
-fix sửa<br>\
 frank thẳng thắn<br>\
 identify xác định<br>\
-ocean đại dương<br>\
 perhaps có lẽ<br>\
 pleasant dễ chịu<br>\
 prevent ngăn chặn<br>\
 rock đá<br>\
-save lưu<br>\
+save v lưu, tiết kiệm<br>\
 step bước<br>\
 still vẫn<br>\
 taste nếm ​​thử<br>\
@@ -205,12 +202,11 @@ conversation cuộc trò chuyện<br>\
 creature sinh vật<br>\
 decision quyết định<br>\
 either hoặc<br>\
-forest rừng<br>\
 ground mặt đất<br>\
 introduce giới thiệu<br>\
-marry kết hôn<br>\
+marry v kết hôn<br>\
 prepare chuẩn bị<br>\
-sail buồm buồm<br>\
+sail n,v buồm, lái thuyền<br>\
 serious nghiêm túc<br>\
 spend chi tiêu<br>\
 strange lạ<br>\

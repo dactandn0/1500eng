@@ -248,7 +248,7 @@ Pot n /pɒt/  Nồi<br>\
 Toaster n /ˈtəʊ.stər/  Lò nướng bánh<br>\
 Dishtowel n /ˈdɪʃ.taʊəl/  Khăn lau chén<br>\
 Refrigerator n /rɪˈfrɪdʒ.ər.eɪ.tər/  Tủ lạnh<br>\
-Freezer n /ˈfriː.zər/  Tủ đông<br>\
+Freezer n,v /ˈfriː.zər/  Tủ đông, đóng băng<br>\
 Cabinet n /ˈkæb.ɪ.nət/  Tủ (có nhiều ngăn)<br>\
 Microwave n /ˈmaɪ.krə.weɪv/  Lò vi sóng<br>\
 Bowl n /bəʊl/  Bát, chén<br>\

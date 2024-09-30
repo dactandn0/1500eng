@@ -235,5 +235,29 @@ Ocean navigator (n) hoa tiêu đại đương/ người định hướng dẫn �
 - Inhabitant (n) cư dân<br>\
 - Memorise (v) ghi nhớ<br>\
 - Position (n) vị trí"
-}
+},
+{
+	date:"T6 27/09/2024"
+	,title:"Speaking about a special building"
+	,en:"Are there any special buildings in your country?<br>\
+Yes, of course. FE: Landmark 81 located in HCM city, DN Administrative center in Danang. In addition, Hoi An has many well-preserved traditional buildings that are special because of their historical & cultural value.<br>\
+<br>\
+2. What do people think about them?<br>\
+- (be) proud of them - because FE, Landmark 81 represents (đại diện) the modernity and growth of the country. Or Hoi An ancient buildings are a symbol of cultural heritage (di sản văn hóa)<br>\
+- admire (v)<br><br>\
+3. Do you think it’s important to protect special buildings?<br>\
+Yes. Because they:<br>\
+- attract tourists, visitors<br>\
+- boost economy<br>\
+- represent the country’s identity (bản sắc) and culture.",
+},
+{
+	date:"T2 30/09/2024"
+	,title:"Job"
+	,en:"Benefits of volunteering at DIFF<br>\
+There are three main benefits of working as a volunteer at DIFF 2024. Firstly, you can practice your English. I worked as a volunteer,\
+ so it gave me the opportunity to speak English with a lot of foreigners. Secondly, you can make many friends when you work. I met and\
+  talked with many people from all over the world, so I got to know lots of amazing people. Finally, you have the best view to see the firework. Volunteers often stand very close to the stage,\
+ so I really enjoyed being there. I think that volunteering at DIFF 2024 was a very good experience because it helps me grow personally.",
+}	
 ]

@@ -827,7 +827,6 @@ uniform đồng phục<br>\
 vision  absorb tầm nhìn hấp thụ<br>\
 boss ông chủ<br>\
 committee ủy ban<br>\
-contract hợp đồng<br>\
 crew phi hành đoàn<br>\
 devote cống hiến<br>\
 dig đào<br>\
@@ -847,9 +846,7 @@ chamber buồng<br>\
 deny phủ nhận<br>\
 document tài liệu<br>\
 emphasize nhấn mạnh<br>\
-fever sốt<br>\
 flu cúm<br>\
-freeze đóng băng<br>\
 gesture cử chỉ<br>\
 interrupt ngắt<br>\
 last cuối cùng<br>\
@@ -884,7 +881,6 @@ shift shift<br>\
 signal signal<br>\
 sincere  sincere <br>\
 ability khả năng<br>\
-agriculture nông nghiệp<br>\
 cartoon hoạt hình<br>\
 ceiling trần nhà<br>\
 convince thuyết phục<br>\

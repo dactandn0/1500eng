@@ -7,14 +7,20 @@ var app = angular.module("modalApp", [
 app.controller('modal.alert', ['$scope', '$uibModalInstance', 'data', function($scope, $uibModalInstance, data) {
 $scope.data = data;
 
-$scope.ok = function() {
-    $uibModalInstance.close();
-};
+    $scope.ok = function() {
+        $uibModalInstance.close();
+    };
 
-$scope.close = function() {
-    $uibModalInstance.close();
-};
-}])
+    $scope.close = function() {
+        $uibModalInstance.close();
+    };
+
+    $scope.shuffle = function() {
+        $scope.data.dataSent = shuffle($scope.data.dataSent)
+    };
+
+}]);
+
 
 app.controller('modal.confirm', ['$scope', '$uibModalInstance', 'data', function($scope, $uibModalInstance, data) {
 $scope.data = data;

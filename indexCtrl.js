@@ -171,9 +171,14 @@ $scope.showExampleModal = function(type, wordFull, event) {
 
 // wordFull like:  Sea n /siː/ Biển
 $scope.fetchSentences = function(wordFull) {
-
-  var word = wordFull.trim().split(" ")[0].trim();
-  if (word==='-') return 0;
+  var splitW = wordFull.trim().split(" ");
+  var word1 = splitW[0].trim();
+  var word2 = splitW[1].trim();
+  var word3 = splitW[2].trim();   //rarely to meet
+  var word = word1;
+  if (validateWord(word2)) word = word + " " + word2;
+  if (validateWord(word3)) word = word + " " + word3;
+  if (validateWord(word, 20)) return 0;
 
   var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b${word}(s|es)*\b.*?[\?|\.|!"]+?`, 'gi');
   
@@ -184,6 +189,12 @@ $scope.fetchSentences = function(wordFull) {
     var results = para.match(ptrn);  // array
 
     if (results) {
+
+      // Shuffle array
+      results = results.sort(() => 0.5 - Math.random());
+      // Get 10 elements after shuffled
+      results = results.slice(0, 10);
+
       var regex = new RegExp(`\\b${word}` , 'gi')
       for (var i = 0; i < results.length; i++) {
         var nn = results[i];

@@ -213,11 +213,11 @@ function deleteLastWord(splitChar, string) {
 	return string.replace(splitChar + lastW, "");
 }
 
-function validateWord(word) 
+function validateWord(word, minL = 2) 
 {	
 	word = word.trim();
-	if (word.length < 4) return false;
-	let arr = ['<br>','<b>','</b>', '!','.',',',"'",'’','unit','there','this','that','those'];
+	if (word.length <= minL) return false;
+	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']','-', '!','.',',',"'",'’','unit','there','this','that','those'];
 	for (var i = 0; i < arr.length; i++) {
 		bList = arr[i];
 		if (word.toLowerCase().indexOf(bList) >= 0) return false;
@@ -259,10 +259,8 @@ function scrollFunction() {
 }
 
 
-function shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
+function shuffle(array) {
+  return array.sort(function() {
+    return .5 - Math.random();
+  });
 }

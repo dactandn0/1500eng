@@ -56,8 +56,7 @@ Lunch break /lʌntʃ breɪk/ Giờ nghỉ trưa<br>\
 Maternity/paternity leave /məˈtɜːr.nə.t̬i/pəˈtern.ə.t̬ i liːv/ Nghỉ thai sản/ nghỉ phép vợ sinh<br>\
 Mentor /ˈmɛn.tɔːr/ Người hướng dẫn<br>\
 Networking /ˈnɛtˌwɜːrkɪŋ/ Mạng lưới quan hệ<br>\
-Non-disclosure agreement /ˌnɒn-dɪsˈkləʊʒər əˈɡriː.mənt/<br>\
-Hợp đồng không tiết lộ thông tin<br>\
+Non-disclosure agreement /ˌnɒn-dɪsˈkləʊʒər əˈɡriː.mənt/ Thỏa thuận không tiết lộ<br>\
 Occupation /ˌɑː.kjəˈpeɪ.ʃən/ Nghề nghiệp<br>\
 Occupational hazard /ˌɑː.kjuˈpeɪ.ʃənəl ˈhæz.ərd/ Rủi ro nghề nghiệp<br>\
 Office /ˈɔː.fɪs/ Văn phòng<br>\
@@ -110,8 +109,7 @@ Workforce planning /ˈwɜːrkfɔːrs ˈplænɪŋ/ Kế hoạch nhân lực<br>\
 Working hours /ˈwɜːrkɪŋ aʊərz/ Giờ làm việc<br>\
 Workload /ˈwɜːrk.loʊd/ Khối lượng công việc<br>\
 Workplace /ˈwɜːrk.pleɪs/ Nơi làm việc<br>\
-Workplace conflict /ˈwɜːrkpleɪs ˈkɒnflɪkt/ Xung đột trong nơi làm việc<br>\
-"
+Workplace conflict /ˈwɜːrkpleɪs ˈkɒnflɪkt/ Xung đột trong nơi làm việc"
 },
 {
 title:"Technology (Ielts)",
@@ -220,7 +218,7 @@ Wearable devices /ˈwɛrəbəl dɪˈvaɪsɪz/ Thiết bị đeo được<br>\
 Web development [wɛb dɪˈvɛləpmənt] Phát triển web<br>\
 Web hosting [wɛb ˈhoʊstɪŋ] Lưu trữ web<br>\
 Wireless communication /ˈwaɪərlɪs kəmjuːnɪˈkeɪʃən/ Giao tiếp không dây<br>\
-Wireless network [ˈwaɪərlɪs ˈnɛtwɜːrk] Mạng không dây<br>",
+Wireless network [ˈwaɪərlɪs ˈnɛtwɜːrk] Mạng không dây",
 },
 {
 	title:"Advertising (Ielts)",
@@ -321,12 +319,11 @@ Strike a balance /straɪk ə ˈbæləns/ Đạt được sự cân bằng<br>\
 Strong brands /strɔːŋ brændz/ Những thương hiệu tiếng tăm<br>\
 Target audience /ˈtɑːrɡɪt ˈɔːdiəns/ Đối tượng mục tiêu<br>\
 Television advertising /ˈtɛlɪˌvɪʒən ˈædvərˌtaɪzɪŋ/ Quảng cáo trên truyền hình<br>\
-To go viral /tuː ɡoʊ ˈvaɪrəl/ Lan truyền nhanh chóng trên mạng<br>\
-To launch a product /tuː lɔːntʃ ə ˈprɒdʌkt/ Ra mắt sản phẩm<br>\
+Go viral /tuː ɡoʊ ˈvaɪrəl/ Lan truyền nhanh chóng trên mạng<br>\
+Launch a product /tuː lɔːntʃ ə ˈprɒdʌkt/ Ra mắt sản phẩm<br>\
 Values /ˈvæljuːz/ Giá trị<br>\
 Viral marketing /ˈvaɪrəl ˈmɑrkɪtɪŋ/ Tiếp thị viral<br>\
 Vulnerable populations /ˈvʌlnərəbl ˌpɒpjʊˈleɪʃənz/ Nhóm đối tượng dễ bị tổn thương<br>\
-Word of mouth /wɜːrd ʌv maʊθ/ Truyền miệng<br>\
-",
+Word of mouth /wɜːrd ʌv maʊθ/ Truyền miệng",
 }
 ]

@@ -20,7 +20,7 @@ Khoảng 98% lục địa này bị đóng băng. Phần còn lại được t�
  Chỉ có khoảng hai inch tuyết rơi mỗi năm.<br>\
 Có bao nhiêu người sống trên lục địa của bạn? Không ai sống ở Nam Cực. Chỉ có động vật, như chim cánh cụt, sống ở đó. Các nhà khoa học và khách du lịch đến thăm nơi này,\
  nhưng họ không ở lại lâu. Bạn có muốn đến thăm Nam Cực không? Đây là nơi lạnh nhất và khô nhất trên Trái Đất!',
-voca:'Dinosaur,South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
+voca:'Dinosaur,went[go south],south,South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
 },
 {
 	en: 

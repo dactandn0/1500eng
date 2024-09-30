@@ -8,5 +8,17 @@
 
 </div>
 <div class="modal-footer">
-    <button class="btn btn-alert border-primary" type="button" ng-click="close()">Close</button>
+    <button 
+    	ng-if="data.dataSent.length > 5"
+    	class="btn btn-sm border-alert" 
+    	ng-click="shuffle()"
+    	>
+    	Shuffle
+    </button>
+    <button 
+    	class="btn btn-sm border-warning" 
+    	ng-click="close()"
+    	>
+    	Close
+	</button>
 </div>

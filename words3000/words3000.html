@@ -6,11 +6,14 @@
 	<div class="accordion-content" ng-if="acc_isShow($index)">
 
 		<div ng-repeat="wordFull in words track by $index" class="my-1">
-			<button 
+		<!-- 	<button 
 				class="btn btn-sm border-primary" 
-				ng-click="showExampleModal('alert', wordFull, $event)"
-				>Ex</button>
-	   		<span ng-bind-html="wordFull" class="mb-1"></span> <br>
+				>Ex</button> -->
+	   		<span 
+	   		ng-bind-html="wordFull" 
+	   		ng-click="showExampleModal('alert', wordFull, $event)"
+	   		class="mb-1"
+	   		></span><br>
 		</div>
 
 	</div>

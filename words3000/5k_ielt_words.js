@@ -173,7 +173,7 @@ IT consulting [ˌaɪˈti kənˈsʌltɪŋ] Tư vấn công nghệ thông tin<br>\
 IT infrastructure [ˌaɪˈti ˈɪnfrəˌstrʌkʧər] Cơ sở hạ tầng công nghệ thông tin<br>\
 IT support [ˌaɪˈti səˈpɔːrt] Hỗ trợ công nghệ thông tin<br>\
 Machine learning /məˈʃiːn ˈlɜːrnɪŋ/ Học máy<br>\
-Mobile applications /ˈmoʊbəl ˌæplɪˈkeɪʃənz/ Ứng dụng di động<br>\
+Mobile application /ˈmoʊbəl ˌæplɪˈkeɪʃənz/ Ứng dụng di động<br>\
 Mobile network [ˈmoʊbəl ˈnɛtwɜːrk] Mạng di động<br>\
 Mobile technology /ˈmoʊbəl tɛkˈnɑlədʒi/ Công nghệ di động<br>\
 Nanotechnology /ˌnænoʊtɛkˈnɑːlədʒi/ Công nghệ nano<br>\
@@ -194,27 +194,27 @@ Privacy settings [ˈpraɪvəsi ˈsɛtɪŋz] Thiết lập quyền riêng tư<br>
 Programming [ˈproʊˌgræmɪŋ] Lập trình<br>\
 Remote access [rɪˈmoʊt ˈæksɛs] Truy cập từ xa<br>\
 Renewable energy /rɪˈnuːəbl ˈɛnərdʒi/ Năng lượng tái tạo<br>\
-Renewable resources /rɪˈnuːərəbl rɪˈsɔrsɪz/ Tài nguyên tái tạo<br>\
+Renewable resource /rɪˈnuːərəbl rɪˈsɔrsɪz/ Tài nguyên tái tạo<br>\
 Robotics /rəˈbɑːtɪks/ Kỹ thuật Robot<br>\
 Smart homes /smɑːrt hoʊmz/ Nhà thông minh<br>\
 Social media /ˈsoʊʃəl ˈmidiə/ Mạng xã hội<br>\
 Software development /ˈsɔːftwɛr dɪˈvɛləpmənt/ Phát triển phần mềm<br>\
 Software engineering [ˈsɒftwɛr ˌɛnʤɪˈnɪərɪŋ] Kỹ thuật phần mềm<br>\
-Software updates [ˈsɒftwɛr ʌpˌdeɪts] Cập nhật phần mềm<br>\
-Streaming services /ˈstriːmɪŋ ˈsɜːrvɪsɪz/ Dịch vụ phát trực tuyến<br>\
+Software update [ˈsɒftwɛr ʌpˌdeɪts] Cập nhật phần mềm<br>\
+Streaming service /ˈstriːmɪŋ ˈsɜːrvɪsɪz/ Dịch vụ phát trực tuyến<br>\
 Sustainable technology /səˈsteɪnəbl tɛkˈnɑːlədʒi/ Công nghệ bền vững<br>\
 System integration [ˈsɪstəm ˌɪntɪˈgreɪʃən] Tích hợp hệ thống<br>\
 Tech startup /tɛk ˈstɑːrtʌp/ Công ty khởi nghiệp công nghệ<br>\
 Tech-savvy [tɛk-ˈsævi] Thành thạo công nghệ Technological advancements /ˌtɛknəˈlɑʤɪkəl ədˈvænsmənts/ Tiến bộ công nghệ<br>\
 Technological revolution /ˌtɛknəˈlɑːdʒɪkəl ˌrɛvəˈluːʃən/ Cuộc cách mạng công nghệ<br>\
-Telecommunications /ˌtɛlɪkəˌmjuːnɪˈkeɪʃənz/ Viễn thông<br>\
+Telecommunication /ˌtɛlɪkəˌmjuːnɪˈkeɪʃənz/ Viễn thông<br>\
 Telecommuting /ˈtɛlɪkəˌmjuːtɪŋ/ Làm việc từ xa<br>\
 User experience (UX) /ˈjuːzər ɪkˈspɪriəns/ Trải nghiệm người dùng<br>\
 User interface (UI) /ˈjuːzər ˈɪntərfeɪs/ Giao diện người dùng<br>\
 Video conferencing /ˈvɪdi.oʊ ˈkɑːnfərənsɪŋ/ Hội nghị trực tuyến<br>\
 Virtual private network (VPN) [ˈvɜːrtʃʊəl ˈpraɪvət ˈnɛtwɜːrk] Mạng riêng ảo<br>\
 Virtual reality (VR) /ˈvɜːrtʃuəl riˈæləti/ Thực tế ảo<br>\
-Wearable devices /ˈwɛrəbəl dɪˈvaɪsɪz/ Thiết bị đeo được<br>\
+Wearable device /ˈwɛrəbəl dɪˈvaɪsɪz/ Thiết bị đeo được<br>\
 Web development [wɛb dɪˈvɛləpmənt] Phát triển web<br>\
 Web hosting [wɛb ˈhoʊstɪŋ] Lưu trữ web<br>\
 Wireless communication /ˈwaɪərlɪs kəmjuːnɪˈkeɪʃən/ Giao tiếp không dây<br>\
@@ -222,7 +222,7 @@ Wireless network [ˈwaɪərlɪs ˈnɛtwɜːrk] Mạng không dây",
 },
 {
 	title:"Advertising (Ielts)",
-	en:"(To) cold call /koʊld kɔːl/ Gọi điện không mời trước<br>\
+	en:"Cold call v /koʊld kɔːl/ Gọi điện không mời trước<br>\
 Acquisition /ˌæk.wəˈzɪʃ.ən/ Sự mua, sự thu được<br>\
 Ad campaign /æd kæmˈpeɪn/ Chiến dịch quảng cáo<br>\
 Ad copy /æd ˈkɒpi/ Bản quảng cáo<br>\
@@ -245,22 +245,20 @@ Brand awareness /brænd əˈwɛərnɪs/ Nhận thức về thương hiệu<br>\
 Brand loyalty /brænd ˈlɔɪəlti/ Sự trung thành với thương hiệu<br>\
 Brand recognition /brænd ˌrɛkəɡˈnɪʃən/ Nhận diện thương hiệu<br>\
 Branding /ˈbrændɪŋ/ Xây dựng thương hiệu<br>\
-Buy and sell /baɪ ænd sɛl/ Mua bán<br>\
 Call to action /kɔːl tuː ˈækʃən/ Lời kêu gọi hành động<br>\
 Celebrity endorsement /səˈlɛbrɪti ɪnˈdɔːrsmənt/ Quảng bá thương hiệu bằng người nổi tiếng<br>\
-Channels /ˈtʃænəlz/ Kênh<br>\
 Classified ads /ˈklæsɪˌfaɪd ædz/ Quảng cáo phân loại<br>\
 Commercial /kəˈmɜːrʃəl/ Thương mại<br>\
 Commercial break /kəˈmɜːrʃəl breɪk/ Quảng cáo<br>\
 Commercial channel /kəˈmɜːrʃəl ˈtʃænəl/ Kênh truyền hình quảng cáo<br>\
-Companies /ˈkʌmpəniz/ Các công ty<br>\
+Company /ˈkʌmpəni/ Các công ty<br>\
 Competition /ˌkɒmpɪˈtɪʃən/ Sự cạnh tranh<br>\
-Competitors /kəmˈpɛtɪtərz/ Đối thủ cạnh tranh<br>\
+Competitor /kəmˈpɛtɪtər/ Đối thủ cạnh tranh<br>\
 Consumer /kənˈsjuːmər/ Người tiêu dùng<br>\
 Consumer behavior /kənˈsjuːmər bɪˈheɪvjər/ Hành vi của người tiêu dùng<br>\
 Consumerism /kənˈsjuːmərɪzəm/ Chủ nghĩa tiêu dùng<br>\
-Consumption habits /kənˈsʌmpʃən ˈhæbɪts/ Thói quen tiêu dùng<br>\
-Critical thinking skills /ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz/ Kỹ năng tư duy phản biện<br>\
+Consumption habit /kənˈsʌmpʃən ˈhæbɪt/ Thói quen tiêu dùng<br>\
+Critical thinking skill /ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪl/ Kỹ năng tư duy phản biện<br>\
 Customer /ˈkʌstəmər/ Khách hàng<br>\
 Deceptive /dɪˈsɛptɪv/ Lừa dối<br>\
 Direct mail /dɪˈrɛkt meɪl/ Quảng cáo trực tiếp qua thư<br>\
@@ -301,7 +299,7 @@ Prime time /praɪm taɪm/ Giờ vàng, thời gian cao điểm truyền hình/ra
 Print advertising /prɪnt ˈædvərˌtaɪzɪŋ/ Quảng cáo in ấn<br>\
 Print media /prɪnt ˈmidiə/ Phương tiện truyền thông in ấn<br>\
 Product placement /ˈprɒdʌkt ˈpleɪsmənt/ Đặt sản phẩm trong phim, chương trình truyền hình để quảng cáo.<br>\
-Products /ˈprɒdʌkts/ Sản phẩm<br>\
+Product /ˈprɒdʌkt/ Sản phẩm<br>\
 Promote /prəˈmoʊt/ Quảng bá, thúc đẩy<br>\
 Protecting /prəˈtɛktɪŋ/ Bảo vệ<br>\
 Public relations /ˈpʌblɪk rɪˈleɪʃənz/ Quan hệ công chúng<br>\
@@ -309,19 +307,18 @@ Purchasing decisions /ˈpɜːrtʃəsɪŋ dɪˈsɪʒənz/ Quyết định mua hà
 Radio /ˈreɪdioʊ/ Đài phát thanh<br>\
 Radio advertising /ˈreɪdioʊ ˈædvərˌtaɪzɪŋ/ Quảng cáo trên đài phát thanh<br>\
 Regulators /ˈrɛɡjəˌleɪtərz/ Cơ quan quản lý<br>\
-Sales /seɪlz/ Doanh số<br>\
+Sale /seɪl/ Buôn bán<br>\
 Sales page /seɪlz peɪdʒ/ Trang bán hàng, trang giới thiệu sản phẩm.<br>\
 Services /ˈsɜːrvɪsɪz/ Dịch vụ<br>\
 Social media marketing /ˈsoʊʃəl ˈmidiə ˈmɑrkɪtɪŋ/ Tiếp thị truyền thông xã hội<br>\
 Spam email /spæm iˈmeɪl/ Email rác<br>\
 Sponsorship /ˈspɑːnsərʃɪp/ Tài trợ<br>\
 Strike a balance /straɪk ə ˈbæləns/ Đạt được sự cân bằng<br>\
-Strong brands /strɔːŋ brændz/ Những thương hiệu tiếng tăm<br>\
+Strong brand /strɔːŋ brænd/ Thương hiệu tiếng tăm<br>\
 Target audience /ˈtɑːrɡɪt ˈɔːdiəns/ Đối tượng mục tiêu<br>\
 Television advertising /ˈtɛlɪˌvɪʒən ˈædvərˌtaɪzɪŋ/ Quảng cáo trên truyền hình<br>\
 Go viral /tuː ɡoʊ ˈvaɪrəl/ Lan truyền nhanh chóng trên mạng<br>\
 Launch a product /tuː lɔːntʃ ə ˈprɒdʌkt/ Ra mắt sản phẩm<br>\
-Values /ˈvæljuːz/ Giá trị<br>\
 Viral marketing /ˈvaɪrəl ˈmɑrkɪtɪŋ/ Tiếp thị viral<br>\
 Vulnerable populations /ˈvʌlnərəbl ˌpɒpjʊˈleɪʃənz/ Nhóm đối tượng dễ bị tổn thương<br>\
 Word of mouth /wɜːrd ʌv maʊθ/ Truyền miệng",

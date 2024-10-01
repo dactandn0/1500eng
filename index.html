@@ -51,16 +51,25 @@
   	<a ng-href="#!ebooks" class="ml-3 mb-4">Ebooks</a>
 
       <div class="input-group my-3">
-        <input type="text" class="form-control" ng-change="searchTyping()" ng-model="search" placeholder="Search...">  
+        <input type="text" 
+        	class="form-control" 
+        	ng-change="searchTyping()" 
+        	ng-model="search" 
+        	placeholder="Search..."
+        	>  
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" ng-click="clearSearch()">[X]</button>
+          <button class="btn btn-outline-secondary" 
+           	ng-click="clearSearch()">
+       		[X]</button>
         </div>
       </div>
 
       <div class="text-sm my-1" 
         ng-repeat="wordFull in searchDataResult track by $index">
-        <button class="btn btn-sm border-primary" ng-click="showExampleModal('alert', wordFull, $event)">Ex</button>
-        <span ng-bind-html="wordFull"></span><br>
+        <!-- <button class="btn btn-sm border-primary" >Ex</button> -->
+        <span ng-bind-html="wordFull"
+        ng-click="showExampleModal('alert', wordFull, $event)"
+        ></span><br>
       </div>
 
       <div class="my-3" ng-view></div>

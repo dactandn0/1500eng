@@ -225,7 +225,7 @@ function ValidateWord(word, minL = 2)
 	if (!isAsciiString(word)) return false;
 
 	if (word.length <= minL) return false;
-	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']','-', '!','.',',',"'",'’','unit','there','this','that','those'];
+	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']', '!','.',',',"'",'’','unit','there','this','that','those'];
 	for (var i = 0; i < arr.length; i++) {
 		bList = arr[i];
 		if (word.toLowerCase().indexOf(bList) >= 0) return false;

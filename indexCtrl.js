@@ -142,9 +142,10 @@ $scope.loadData();
 $scope.showExampleModal = function(type, wordFull, event) {
       var sentences = $scope.fetchSentences(wordFull);
       if (!sentences) {
-        event.target.style.display = 'none';
+        event.target.style.color = 'red';
         return;
       }
+      event.target.style.color = 'green';
       if (type == 'alert') {
           appAlert.alert({
               title: 'Title',

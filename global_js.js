@@ -47,6 +47,12 @@ trust,trouble,temperature,understanding,usage,underwear,unemployment,unity,viole
 validity,vitality,vision,vegetation,vegetarianism,vengeance,warmth,weight,whiskey,weather,wildlife,welfare,wine,wisdom,wealth,wheat,wool,width,yoga,\
 youth,yeast,zoology,zinc";
 
+
+function MYLOG(msg) {
+	console.log(msg);
+}
+
+
 RANGE = function(min, max, step) {
     step = step || 1;
     var input = [];
@@ -130,7 +136,7 @@ function processStory (story) {
 		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
 
 	  	// make ....
-	  	if (validateWord(word)) 
+	  	if (ValidateWord(word)) 
 	  	{
 				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
 				if (rd % 5 == 0) {
@@ -213,9 +219,11 @@ function deleteLastWord(splitChar, string) {
 	return string.replace(splitChar + lastW, "");
 }
 
-function validateWord(word, minL = 2) 
+function ValidateWord(word, minL = 2) 
 {	
 	word = word.trim();
+	if (!isAsciiString(word)) return false;
+
 	if (word.length <= minL) return false;
 	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']','-', '!','.',',',"'",'’','unit','there','this','that','those'];
 	for (var i = 0; i < arr.length; i++) {
@@ -223,10 +231,6 @@ function validateWord(word, minL = 2)
 		if (word.toLowerCase().indexOf(bList) >= 0) return false;
 	}
 	return true;
-}
-
-function MYLOG(msg) {
-	console.log(msg);
 }
 
 // for word3000.js
@@ -263,4 +267,22 @@ function shuffle(array) {
   return array.sort(function() {
     return .5 - Math.random();
   });
+}
+
+function isAsciiString(text) {
+    return /^[\x00-\x7F]+$/g.test(text);
+} 
+
+function GetVocaFromWordFull(wordFull) {
+  var splitW = wordFull.trim().split(" ");
+  var result = "";
+  for (var i = 0; i < splitW.length; i++) {
+  	  var part = splitW[i].trim();
+  	  if (ValidateWord(part)) 
+  	  	result = result + " " + part;
+  	  else break;
+  }
+  // console.log(result);
+  return result.trim();
+
 }

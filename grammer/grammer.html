@@ -3,7 +3,7 @@
 		  <h6 class="accordion scroll">
 		    <a href ng-click="acc_click($index)"><span ng-if="$index<9">0</span>{{$index+1}}. {{story.title}} &nbsp&nbsp&nbsp&nbsp[{{story.numOfWords}}: words]</a>
 		  </h6>
-		  <div class="accordion-content" ng-show="acc_isShow($index)">
+		  <div class="accordion-content" ng-if="acc_isShow($index)">
 		     <p ng-bind-html="story.en"></p>
 		     <p ng-bind-html="story.vi"></p>
 		     <div class="mt-1" ng-if="story.vocaNotes">

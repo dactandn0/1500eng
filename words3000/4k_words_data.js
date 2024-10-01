@@ -324,7 +324,6 @@ solution giải pháp<br>\
 waste chất thải<br>\
 whether  cho dù<br>\
 argue tranh luận<br>\
-communicate giao tiếp<br>\
 crowd đám đông<br>\
 depend phụ thuộc<br>\
 empty trống rỗng<br>\
@@ -597,7 +596,6 @@ counsel tư vấn<br>\
 ensure đảm bảo<br>\
 explosion vụ nổ<br>\
 jewelry đồ trang sức<br>\
-land đất<br>\
 meteor sao băng<br>\
 monster,northern quái vật,phía bắc<br>\
 remote a. /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\

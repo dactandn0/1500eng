@@ -36,8 +36,9 @@ $scope.acc_click = function (id) {
 		$scope.acc = id;
 	}
 
-	$scope.story = kSTORIES[$scope.acc];
-	$scope.words = $scope.story.en.split("<br>");
+	var element = kSTORIES[$scope.acc];
+	$scope.words = element.en.split("<br>");
+
 	_scrollIntoView(id);
 	localStorage.setItem("w3000_idx", id);
 };

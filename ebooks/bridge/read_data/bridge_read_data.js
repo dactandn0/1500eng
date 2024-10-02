@@ -56,5 +56,10 @@ vi:"Làm việc nhóm<br>\
 [C] Vậy con người có thể học được gì về làm việc nhóm từ những loài động vật tuyệt vời này? Chúng cho chúng ta thấy tầm quan trọng của giao tiếp và đưa ra quyết định. Đội là những nhóm nhỏ những người làm việc cùng nhau, nhưng có các kỹ năng khác nhau. Các nhóm thường đưa ra quyết định tốt hơn so với một người đơn lẻ. Vì nhóm thường có những người có kỹ năng khác nhau nên có nhiều ý tưởng hơn một người. Với nhiều ý tưởng hơn, nhóm có thể chọn câu trả lời tốt nhất cho vấn đề.<br>\
 [D] Nhưng làm việc nhóm không phải lúc nào cũng là cách tốt nhất để đưa ra quyết định - nó có vấn đề. Đôi khi mất nhiều thời gian và thường cần sự chuẩn bị tốt. Nhưng vì mọi người trong nhóm đều có thể giúp đưa ra quyết định nên mọi người thường làm việc chăm chỉ và cảm thấy vui khi được ở trong một nhóm."
 ,voca:'desert,survive,alone,underground,group,role,communication,decision,preparation,teamwork '
+},
+{
+	en:""
+	,vi:""
+	,voca:"",
 }
 ];

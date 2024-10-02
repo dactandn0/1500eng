@@ -58,5 +58,41 @@ Mau đã đi thuyền từ Hawaii đến Tahiti bằng các phương pháp truy�
 <br>\
 Chuyến đi đã chứng minh rằng những cư dân đầu tiên của Hawaii đã đến bằng những chiếc thuyền nhỏ và định hướng bằng cách đọc biển và các vì sao. Bản thân Mau đã trở thành một giáo viên nhiệt tình, truyền lại những bí quyết truyền thống của mình cho những người ở các nền văn hóa khác để kiến ​​thức của ông không bị mai một. Ông đã giải thích vị trí của các vì sao cho học sinh của mình, nhưng ông cho phép họ viết ra vì ông biết họ sẽ không bao giờ có thể nhớ hết mọi thứ như ông đã làm."
 ,voca:"expedition,sail,seafarer,navigational,instrument,populated,behave,voyage,memorise,prove,keen,represent,inhabitant,chart"
+},
+{
+	unit:3,
+	en:"The electric revolution<br>\
+Your next car may be electric. We look at the technologies that will bring the revolution.<br>\
+The main reasons why electric cars are not more popular at present are their price and their relatively small range. Existing battery systems only allow electric cars to travel\
+ a distance of between 100 and 160 km. However, this distance may not be a problem for urban drivers. A recent Sydney study reported that 70 percent of journeys were 30 km or less,\
+  and recent data from the US suggests that 77 percent of trips taken there are 48 km or less.<br>\
+<br>\
+An innovative company called Better Place is aiming to make electric cars an option for all drivers.\
+ It wants to see existing vehicles replaced by electric vehicles which, it says, offer a number of benefits. Firstly, they can be powered by renewable energy which produces zero emissions.\
+  What is more, electric motors are more efficient and can convert more than 90 percent of power into movement, whereas the efficiency of diesel or petrol engines is less than 20 percent.\
+   To achieve its aim, Better Place plans to use technology which is already available.<br>\
+<br>\
+The plan is simple but revolutionary. It starts with the installation of a home charge point, and through this,\
+ the vehicle will be plugged into the electricity grid whenever it is in the garage, typically at night.\
+  In the morning, with a fully charged battery, the car is capable of as much as 160 km in urban motoring conditions.\
+   In addition to the home charge point, the battery can be topped up by charge points at work and at supermarkets.<br>\
+<br>\
+The battery is linked to a control centre by smart technology inside the vehicle. Better Place can then ensure that the car\
+ is charged with electricity from renewable sources at the cheapest price. For longer trips, a navigation system directs the\
+  driver to the nearest switch station, where the depleted battery can be replaced with a charged one by a robot within a couple of minutes.<br>\
+<br>\
+by Tim Thwaites, issue 29 of Cosmos, October 2000"
+	,vi:"Cuộc cách mạng điện<br>\
+Chiếc xe tiếp theo của bạn có thể là xe điện. Chúng ta hãy cùng xem xét các công nghệ sẽ mang đến cuộc cách mạng này.<br>\
+Những lý do chính khiến xe điện không được ưa chuộng hiện nay là giá thành và phạm vi hoạt động tương đối nhỏ. Các hệ thống pin hiện tại chỉ cho phép xe điện di chuyển quãng đường từ 100 đến 160 km. Tuy nhiên, quãng đường này có thể không phải là vấn đề đối với những người lái xe ở thành phố. Một nghiên cứu gần đây của Sydney đã báo cáo rằng 70 phần trăm hành trình là 30 km trở xuống và dữ liệu gần đây từ Hoa Kỳ cho thấy 77 phần trăm hành trình thực hiện ở đó là 48 km trở xuống.<br>\
+<br>\
+Một công ty sáng tạo có tên là Better Place đang hướng tới mục tiêu biến xe điện thành một lựa chọn cho tất cả người lái xe. Công ty muốn thấy những phương tiện hiện có được thay thế bằng xe điện, theo như công ty này nói, mang lại một số lợi ích. Đầu tiên, chúng có thể được cung cấp năng lượng từ năng lượng tái tạo, không phát thải. Hơn nữa, động cơ điện hiệu quả hơn và có thể chuyển đổi hơn 90 phần trăm công suất thành chuyển động, trong khi hiệu suất của động cơ diesel hoặc xăng chỉ dưới 20 phần trăm. Để đạt được mục tiêu, Better Place có kế hoạch sử dụng công nghệ hiện có.<br>\
+<br>\
+Kế hoạch này đơn giản nhưng mang tính cách mạng. Bắt đầu bằng việc lắp đặt một điểm sạc tại nhà, và thông qua đó, xe sẽ được cắm vào lưới điện bất cứ khi nào xe ở trong gara, thường là vào ban đêm. Vào buổi sáng, với pin được sạc đầy, xe có thể đi được quãng đường lên tới 160 km trong điều kiện lái xe trong thành phố. Ngoài điểm sạc tại nhà, pin có thể được sạc đầy tại các điểm sạc tại nơi làm việc và siêu thị.<br>\
+<br>\
+Pin được kết nối với trung tâm điều khiển bằng công nghệ thông minh bên trong xe. Sau đó, Better Place có thể đảm bảo rằng xe được sạc bằng điện từ các nguồn tái tạo với giá rẻ nhất. Đối với những chuyến đi dài hơn, hệ thống định vị sẽ hướng dẫn người lái xe đến trạm chuyển mạch gần nhất, nơi pin cạn có thể được thay thế bằng pin đã sạc bằng một con rô-bốt trong vòng vài phút.<br>\
+<br>\
+Tác giả Tim Thwaites, số 29 của Cosmos, tháng 10 năm 2000"
+	,voca:"revolution,renewable,charge,point,robot,whenever,zero emissions,vehicle,depleted,direct,revolutionary",
 }	
 ];

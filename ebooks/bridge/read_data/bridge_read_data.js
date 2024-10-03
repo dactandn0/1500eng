@@ -58,8 +58,47 @@ vi:"Làm việc nhóm<br>\
 ,voca:'desert,survive,alone,underground,group,role,communication,decision,preparation,teamwork '
 },
 {
-	en:""
-	,vi:""
+	unit:4,
+	en:"Choices in today's education<br>\
+[A] Students today have many educational choices and some students are leaving their country to study. There are four million international students and this is increasing every year.<br>\
+<br>\
+[B] Of course, lots of international students travel to America, Canada, Britain and Australia. But students aren't just going to English-speaking countries - more than 200 000 international students are studying in China today. In Europe, the number of international students is going up too. They are looking for good universities with an interesting social life.<br>\
+<br>\
+[C] Students can also get an international education in their home country. There are over 160 international campuses all over the world and this number is growing. Students at these campuses have a Western-style education. Some people think this is a bad thing because the students often leave their home countries and go overseas to work.<br>\
+<br>\
+[D] Other people say there are lots of advantages to an international education. International students leave universities with up-to-date ideas and take this knowledge back to their countries. Students also learn the language and culture of these countries. They learn about work, business and how to do well in the global economy.<br>\
+<br>\
+[E] International education is changing universities too. Now they are becoming exciting places, with students from all over the world. International students bring new ideas and new ways of looking at the world."
+	,vi:"Lựa chọn trong giáo dục ngày nay<br>\
+[A] Học sinh ngày nay có nhiều lựa chọn giáo dục và một số học sinh rời khỏi đất nước của mình để đi du học. Có bốn triệu sinh viên quốc tế và con số này đang tăng lên hàng năm.<br>\
+<br>\
+[B] Tất nhiên, rất nhiều sinh viên quốc tế đi du lịch đến Mỹ, Canada, Anh và Úc. Nhưng sinh viên không chỉ đến các quốc gia nói tiếng Anh - hơn 200.000 sinh viên quốc tế đang học tập tại Trung Quốc hiện nay. Ở châu Âu, số lượng sinh viên quốc tế cũng đang tăng lên. Họ đang tìm kiếm những trường đại học tốt với đời sống xã hội thú vị.<br>\
+<br>\
+[C] Sinh viên cũng có thể nhận được nền giáo dục quốc tế tại quốc gia của mình. Có hơn 160 cơ sở quốc tế trên toàn thế giới và con số này đang tăng lên. Sinh viên tại các cơ sở này có nền giáo dục theo phong cách phương Tây. Một số người cho rằng đây là điều không tốt vì sinh viên thường rời khỏi đất nước của mình và ra nước ngoài làm việc.<br>\
+<br>\
+[D] Những người khác nói rằng có rất nhiều lợi thế đối với nền giáo dục quốc tế. Sinh viên quốc tế rời trường đại học với những ý tưởng mới mẻ và mang kiến ​​thức này trở về đất nước của họ. Sinh viên cũng học ngôn ngữ và văn hóa của các quốc gia này. Họ học về công việc, kinh doanh và cách làm tốt trong nền kinh tế toàn cầu.<br>\
+<br>\
+[E] Giáo dục quốc tế cũng đang thay đổi các trường đại học. Giờ đây, chúng đang trở thành những nơi thú vị, với sinh viên từ khắp nơi trên thế giới. Sinh viên quốc tế mang đến những ý tưởng mới và cách nhìn mới về thế giới."
 	,voca:"",
+},
+{
+	unit:5,
+	en:"The Eiffel Tower<br>\
+[A] World Fairs are great adverts for countries. They show the world your national culture and advertise your country. World Fairs started in London in 1851 and celebrated industrial technology and design. Other countries also wanted to hold World Fairs. Now the event goes to a different country every few years - in 2010 it was in Shanghai in China, then in 2015, it will be Turin, in Italy.<br>\
+<br>\
+[B] The Eiffel Tower in Paris was the entrance to the 1889 World Fair. The French engineer Gustave Eiffel designed the tower. He wanted to show that iron could be as strong as stone, and could also be much higher. Construction of the tower started in 1887. 132 workers and 50 engineers completed it in two years and a team of twenty five painters used brushes to paint it. They needed approximately 60 tons of paint!<br>\
+<br>\
+[C] Many people didn't like the tower at first. They believed it was too tall for the city. They called it a 'street lamp' and 'candlestick'. The writer Guy de Maupassant hated it, but enjoyed lunch in the tower's restaurant every day. He explained that it was the one place in Paris where he didn't see the structure! The organisers of the World Fair wanted to take down the tower after the event. They planned to sell the metal, but in the end this didn't happen. The government decided the tower was important for communication.<br>\
+<br>\
+[D] World Fairs leave important buildings after them. Today the Eiffel Tower is a famous landmark of the city of Paris. Around six million tourists visit it each year. The first World Fair had a big impact on society, education, international business and the tourist trade. This is still true today."
+	,vi:"Tháp Eiffel<br>\
+[A] Hội chợ Thế giới là nơi quảng cáo tuyệt vời cho các quốc gia. Chúng cho thế giới thấy nền văn hóa quốc gia của bạn và quảng bá cho quốc gia của bạn. Hội chợ Thế giới bắt đầu ở London vào năm 1851 và tôn vinh công nghệ và thiết kế công nghiệp. Các quốc gia khác cũng muốn tổ chức Hội chợ Thế giới. Bây giờ sự kiện này diễn ra ở một quốc gia khác sau mỗi vài năm - năm 2010 là ở Thượng Hải, Trung Quốc, sau đó là Turin, Ý vào năm 2015.<br>\
+<br>\
+[B] Tháp Eiffel ở Paris là lối vào Hội chợ Thế giới năm 1889. Kỹ sư người Pháp Gustave Eiffel đã thiết kế tòa tháp này. Ông muốn chứng minh rằng sắt có thể cứng như đá và cũng có thể cao hơn nhiều. Việc xây dựng tòa tháp bắt đầu vào năm 1887. 132 công nhân và 50 kỹ sư đã hoàn thành tòa tháp trong hai năm và một nhóm gồm hai mươi lăm họa sĩ đã sử dụng cọ để sơn tòa tháp. Họ cần khoảng 60 tấn sơn!<br>\
+<br>\
+[C] Lúc đầu, nhiều người không thích tòa tháp. Họ tin rằng nó quá cao so với thành phố. Họ gọi nó là 'đèn đường' và 'chân nến'. Nhà văn Guy de Maupassant ghét nó, nhưng vẫn thích ăn trưa tại nhà hàng của tòa tháp mỗi ngày. Ông giải thích rằng đó là nơi duy nhất ở Paris mà ông không nhìn thấy công trình này! Những người tổ chức Hội chợ Thế giới muốn phá bỏ tòa tháp sau sự kiện. Họ định bán kim loại, nhưng cuối cùng điều này đã không xảy ra. Chính phủ quyết định rằng tòa tháp rất quan trọng đối với truyền thông.<br>\
+<br>\
+[D] Hội chợ Thế giới để lại những tòa nhà quan trọng sau họ. Ngày nay, Tháp Eiffel là một địa danh nổi tiếng của thành phố Paris. Khoảng sáu triệu khách du lịch đến thăm nơi này mỗi năm. Hội chợ Thế giới đầu tiên đã có tác động lớn đến xã hội, giáo dục, kinh doanh quốc tế và thương mại du lịch. Điều này vẫn đúng cho đến ngày nay."
+,voca:"",
 }
 ];

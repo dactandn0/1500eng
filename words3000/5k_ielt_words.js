@@ -82,7 +82,6 @@ Resignation /ˌrɛzɪɡˈneɪʃən/ Sự từ chức<br>\
 Resume /rɪˈzuːm/ Sơ yếu lý lịch<br>\
 Retirement plan /rɪˈtaɪər.mənt plæn/ Kế hoạch nghỉ hưu<br>\
 Salary /ˈsæl.ər.i/ Lương<br>\
-Self-employed /ˌself.ɪmˈplɔɪd/ Tự làm chủ<br>\
 Severance package /ˈsɛvərəns ˈpækɪdʒ/ Gói hỗ trợ khi chấm dứt hợp đồng<br>\
 Shift work /ʃɪft wɜːrk/ Làm việc theo ca<br>\
 Sick leave /sɪk liːv/ Nghỉ ốm<br>\
@@ -259,7 +258,6 @@ Consumer behavior /kənˈsjuːmər bɪˈheɪvjər/ Hành vi của người tiêu
 Consumerism /kənˈsjuːmərɪzəm/ Chủ nghĩa tiêu dùng<br>\
 Consumption habit /kənˈsʌmpʃən ˈhæbɪt/ Thói quen tiêu dùng<br>\
 Critical thinking skill /ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪl/ Kỹ năng tư duy phản biện<br>\
-Customer /ˈkʌstəmər/ Khách hàng<br>\
 Deceptive /dɪˈsɛptɪv/ Lừa dối<br>\
 Direct mail /dɪˈrɛkt meɪl/ Quảng cáo trực tiếp qua thư<br>\
 Dissatisfaction /ˌdɪsəˈsætɪsˌfækʃən/ Sự không hài lòng<br>\

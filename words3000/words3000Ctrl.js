@@ -1,4 +1,5 @@
 
+document.write('<script src="./words3000/voca_special.js" type="text/javascript"></script>');
 document.write('<script src="./words3000/3k_words_data.js" type="text/javascript"></script>');
 document.write('<script src="./words3000/5k_ielt_words.js" type="text/javascript"></script>');
 document.write('<script src="./words3000/4k_words_data.js" type="text/javascript"></script>');
@@ -13,7 +14,8 @@ app.controller("words3000Ctrl", function($scope) {
 
 var kSTORIES = WORDS_3K_DATA
 	.concat(IELTS_5K_DATA)
-	.concat(word_4000_data);
+	.concat(word_4000_data)
+	.concat(VOCA_SPECIAL)
 
 
 $scope.stories = kSTORIES;

@@ -10,3 +10,4 @@ function PushLoadedIdx (idx) {
 function IsLoadedIdx (idx) {
 	return DOM_LOAD_IDX.includes(idx);
 }
+

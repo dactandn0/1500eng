@@ -286,3 +286,8 @@ function GetVocaFromWordFull(wordFull) {
   return result.trim();
 
 }
+
+// arrow up scroll
+topFunction = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}

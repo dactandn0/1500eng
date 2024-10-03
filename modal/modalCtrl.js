@@ -15,8 +15,8 @@ $scope.data = data;
         $uibModalInstance.close();
     };
 
-    $scope.shuffle = function() {
-        $scope.data.dataSent = shuffle($scope.data.dataSent)
+    $scope.shuffleFromModal = function(wordFull) {
+        $scope.data.dataSent = IndexCtrlScope.fetchSentences(wordFull);
     };
 
 }]);
@@ -72,26 +72,3 @@ app.service('appAlert', ['$uibModal', function($uibModal, $http) {
         /*end modal*/
     };
 }])
-
-
-/*
-var words3000As = this;
-words3000As.open = function (dataSent) {
-    var modalInstance = $uibModal.open({
-      animation: false,
-      templateUrl: 'modal.html',
-      controller: 'ModalInstanceCtrl',
-      controllerAs:"words3000As",
-      // size: 'sm',
-      windowClass: 'show',
-      resolve: {
-        data: function () {
-          return dataSent;
-        }
-      }
-    });
-
-    modalInstance.result.then(function () {
-    });
-};
-*/

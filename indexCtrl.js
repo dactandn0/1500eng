@@ -60,6 +60,7 @@ app.config(function($routeProvider) {
  }); // route
 
 app.controller("indexCtrl",  ['$scope', 'appAlert', function($scope, appAlert) {
+IndexCtrlScope = $scope;
 
 var kAllVocaWords = WORDS_3K_DATA
     .concat(IELTS_5K_DATA)
@@ -111,14 +112,10 @@ $scope.preProcess = function () {
 
 $scope.findSameWord = function() {
   for (var i = 0; i < $scope.searchData.length-1; i++) {
-    var word1 = $scope.searchData[i].split(" ")[0].trim();
-    if (word1.length <= 2) continue;
-    if (word1 == '-') continue;
-    if (word1.indexOf('(') > 0) continue;
-    if (word1.indexOf(')') > 0) continue;
-    if (word1.indexOf('.') > 0) continue;
+    var word1=  GetVocaFromWordFull($scope.searchData[i]);
+    if (word1.length==0) continue;
     for (var k = i+1; k < $scope.searchData.length; k++) {
-      var word2 = $scope.searchData[k].split(" ")[0].trim()
+      var word2=  GetVocaFromWordFull($scope.searchData[k]);
       if (word1 === word2) {
         console.log(word1);
         break;
@@ -126,11 +123,6 @@ $scope.findSameWord = function() {
     }
   }
 }
-
-$scope.topFunction = function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
 
 $scope.loadData = function () {
   $scope.preProcess();
@@ -151,7 +143,8 @@ $scope.showExampleModal = function(type, wordFull, event) {
               title: 'Title',
               message: 'This is alert message!',
               type: 'danger',
-              dataSent: sentences
+              dataSent: sentences,
+              wordFull: wordFull
           });
       } else {
           appAlert.confirm({
@@ -179,18 +172,12 @@ $scope.fetchSentences = function(wordFull) {
   var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b${word}(s|es)*\b.*?[\?|\.|!"]+?`, 'gi');
   
   var shuffleStories = shuffle(kAllStories);
-
+  
   for (var i = 0; i < shuffleStories.length; i++) {
     var para = shuffleStories[i].en.replaceAll("<br>", '.');
     var results = para.match(ptrn);  // array
 
     if (results) {
-
-      // Shuffle array
-      results = results.sort(() => 0.5 - Math.random());
-      // Get 10 elements after shuffled
-      results = results.slice(0, 10);
-
       var regex = new RegExp(`\\b${word}` , 'gi')
       for (var i = 0; i < results.length; i++) {
         var nn = results[i];
@@ -200,7 +187,6 @@ $scope.fetchSentences = function(wordFull) {
       return (results);
     }
   }
-
   return 0;
 }
 

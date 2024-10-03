@@ -1,5 +1,5 @@
 <div class="modal-header">
-    <h6 class="modal-title" id="modal-title">Examples:</h6>
+    <h6 class="modal-title" id="modal-title">{{data.wordFull}}</h6>
 </div>
 <div class="modal-body p-1" id="modal-body">
     <ul ng-repeat="sentence in data.dataSent | limitTo: -5 track by $index" class="my-2" >
@@ -9,9 +9,8 @@
 </div>
 <div class="modal-footer">
     <button 
-    	ng-if="data.dataSent.length > 5"
-    	class="btn btn-sm border-alert" 
-    	ng-click="shuffle()"
+    	class="btn btn-sm border-danger" 
+    	ng-click="shuffleFromModal(data.wordFull)"
     	>
     	Shuffle
     </button>

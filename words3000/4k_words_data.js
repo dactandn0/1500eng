@@ -30,7 +30,6 @@ kill giết<br>\
 laboratory phòng thí nghiệm<br>\
 laugh cười<br>\
 loud lớn<br>\
-nervous lo lắng<br>\
 noise n tiếng ồn. Don't make a noise<br>\
 project dự án<br>\
 scare sợ hãi<br>\
@@ -46,7 +45,6 @@ comprehend hiểu<br>\
 describe v /dɪˈskraɪb/ mô tả<br>\
 ever bao giờ<br>\
 fail thất bại<br>\
-friendly thân thiện<br>\
 grade cấp<br>\
 instead thay thế<br>\
 library thư viện<br>\
@@ -60,7 +58,6 @@ universe vũ trụ<br>\
 appropriate thích hợp<br>\
 avoid tránh<br>\
 behave hành xử<br>\
-calm bình tĩnh<br>\
 concern quan tâm<br>\
 content nội dung<br>\
 expect mong đợi<br>\
@@ -69,7 +66,6 @@ habit thói quen<br>\
 instruct hướng dẫn<br>\
 issue vấn đề<br>\
 none không có<br>\
-patient kiên nhẫn<br>\
 positive tích cực<br>\
 punish trừng phạt<br>\
 represent đại diện<br>\
@@ -137,7 +133,6 @@ therefore  do đó<br>\
 accept chấp nhận<br>\
 arrange sắp xếp<br>\
 attend tham dự<br>\
-balance cân bằng<br>\
 contrast tương phản<br>\
 encourage v /ɪnˈkɜːrɪdʒ/ khuyến khích<br>\
 familiar quen thuộc<br>\
@@ -158,7 +153,6 @@ beach bãi biển<br>\
 damage thiệt hại<br>\
 discover khám phá<br>\
 emotion cảm xúc<br>\
-frank thẳng thắn<br>\
 identify xác định<br>\
 perhaps có lẽ<br>\
 pleasant dễ chịu<br>\
@@ -182,7 +176,6 @@ guard bảo vệ<br>\
 image hình ảnh<br>\
 immediate ngay lập tức<br>\
 primary chính<br>\
-proud tự hào<br>\
 remain vẫn<br>\
 rest nghỉ ngơi<br>\
 separate tách biệt<br>\
@@ -262,7 +255,6 @@ poet nhà thơ<br>\
 print in<br>\
 scene cảnh<br>\
 sheet tờ<br>\
-silly a ngớ ngẩn<br>\
 store cửa hàng<br>\
 suffer chịu đựng<br>\
 technology  công nghệ<br>\
@@ -373,7 +365,6 @@ meat thịt<br>\
 opinion ý kiến<br>\
 reflect phản ánh<br>\
 regard xem xét<br>\
-serve phục vụ<br>\
 vegetable rau<br>\
 war chiến tranh<br>\
 worth  đáng giá<br>\
@@ -443,7 +434,6 @@ friendship tình bạn<br>\
 guide hướng dẫn<br>\
 lack thiếu<br>\
 passage đoạn văn<br>\
-perform thực hiện<br>\
 pressure áp lực<br>\
 probable có thể<br>\
 public công cộng<br>\
@@ -468,7 +458,6 @@ range phạm vi<br>\
 recognize nhận ra<br>\
 regular thường xuyên<br>\
 sign dấu hiệu<br>\
-tip mẹo<br>\
 tradition truyền thống<br>\
 trash rác<br>\
 wide rộng<br>\
@@ -571,8 +560,7 @@ surface bề mặt",
 },
 {
 	title:"4k Book2",
-	en: "anxious lo lắng<br>\
-awful a tệ hại (very bad)<br>\
+	en: "awful a tệ hại (very bad)<br>\
 consist có<br>\
 desire mong muốn<br>\
 eager háo hức<br>\
@@ -583,7 +571,6 @@ lift nâng<br>\
 load,lung tải,phổi<br>\
 motion chuyển động<br>\
 pace nhịp<br>\
-polite lịch sự<br>\
 possess sở hữu<br>\
 rapidly nhanh chóng<br>\
 remark nhận xét<br>\
@@ -624,7 +611,6 @@ steady ổn định<br>\
 trust tin tưởng<br>\
 twist xoắn<br>\
 unless trừ khi<br>\
-weapon chest vũ khí ngực<br>\
 confidence tự tin<br>\
 consequence hậu quả<br>\
 disaster thảm họa<br>\
@@ -637,7 +623,6 @@ pale nhợt nhạt<br>\
 rough thô<br>\
 satisfy thỏa mãn<br>\
 scream la hét<br>\
-sensitive nhạy cảm<br>\
 shade bóng râm<br>\
 supplement bổ sung<br>\
 terror khủng bố<br>\
@@ -669,7 +654,6 @@ disappoint thất vọng<br>\
 dive lặn<br>\
 exchange trao đổi<br>\
 favor ủng hộ<br>\
-fee phí<br>\
 forever,guy mãi mãi,anh chàng<br>\
 lovely đáng yêu<br>\
 mood tâm trạng<br>\
@@ -702,7 +686,6 @@ capable có khả năng<br>\
 cheat gian lận<br>\
 concentrate tập trung<br>\
 conclude kết luận<br>\
-confident tự tin<br>\
 considerable đáng kể<br>\
 convey,definite truyền đạt, xác định<br>\
 delight thích thú<br>\
@@ -732,7 +715,6 @@ reputation danh tiếng<br>\
 royal hoàng gia<br>\
 slave nô lệ<br>\
 struggle đấu tranh<br>\
-stupid  citizen ngu ngốc công dân<br>\
 council hội đồng<br>\
 declare tuyên bố<br>\
 enormous to lớn<br>\
@@ -759,7 +741,6 @@ dinosaur khủng long<br>\
 exhibit triển lãm<br>\
 fame danh tiếng<br>\
 forecast,genius dự báo, thiên tài<br>\
-gentle nhẹ nhàng<br>\
 geography địa lý<br>\
 interfere can thiệp<br>\
 lightly nhẹ nhàng<br>\
@@ -774,7 +755,6 @@ bake nướng<br>\
 bean đậu<br>\
 candle nến<br>\
 convert chuyển đổi<br>\
-debt nợ<br>\
 decrease giảm<br>\
 fault lỗi<br>\
 fund quỹ<br>\
@@ -851,33 +831,26 @@ last cuối cùng<br>\
 likeness  giống<br>\
 moreover hơn nữa<br>\
 perspective quan điểm<br>\
-rational hợp lý<br>\
 recover phục hồi<br>\
 rely dựa vào<br>\
 shock sốc<br>\
-shy nhút nhát<br>\
 stare nhìn chằm chằm<br>\
 thus adv do đó <br>\
 aim aim<br>\
-attach attach<br>\
 bet bet<br>\
-carriage carriage<br>\
-classic classic<br>\
-commute commute<br>\
+carriage xe<br>\
+commute n trao đổi<br>\
 confirm confirm<br>\
-criticize criticize<br>\
-differ differ<br>\
-expense expense<br>\
-formal formal<br>\
-height height<br>\
-invent invent<br>\
+criticize chỉ trích<br>\
+differ v khác biệt<br>\
+expense chi phí<br>\
+formal a chính thức<br>\
+invent v phát minh<br>\
 junior junior<br>\
 labor labor<br>\
-mechanic mechanic<br>\
-prime prime<br>\
-shift shift<br>\
-signal signal<br>\
-sincere  sincere <br>\
+mechanic thợ máy, cơ khí<br>\
+prime a xuất sắc,hảo hạng<br>\
+shift n sự thay đổi, đổi chỗ<br>\
 ability khả năng<br>\
 cartoon hoạt hình<br>\
 ceiling trần nhà<br>\
@@ -912,7 +885,6 @@ kindly kindly<br>\
 motive motive<br>\
 nest nest<br>\
 origin origin<br>\
-reception reception<br>\
 reject reject<br>\
 silence silence<br>\
 stream stream<br>\
@@ -1031,7 +1003,6 @@ mere chỉ là, không đáng để tâm<br>\
 neat gọn gàng<br>\
 occasion dịp, thời cơ<br>\
 penalty hình phạt<br>\
-rude a thô lỗ<br>\
 settle v giải quyết vấn đề<br>\
 wallet ví<br>\
 yell  la hét <br>\
@@ -1094,7 +1065,6 @@ abstract abstract<br>\
 annual annual<br>\
 clay đất sét<br>\
 cloth n vải<br>\
-curtain tấm màn<br>\
 deserve v đáng thưởng<br>\
 feather lông vũ<br>\
 fertile a màu mỡ, đất tốt<br>\
@@ -1113,7 +1083,6 @@ appeal kêu gọi<br>\
 assume v /əˈsuːm/ giả định<br>\
 client khách hàng<br>\
 downtown trung tâm<br>\
-dull buồn tẻ<br>\
 embarrass xấu hổ<br>\
 fare n /fer/ giá vé (bus, plane, taxi)<br>\
 former trước đây<br>\
@@ -1138,10 +1107,8 @@ compensate bù trừ<br>\
 encounter gặp gỡ<br>\
 exceed vượt quá<br>\
 forge rèn<br>\
-humble khiêm tốn<br>\
 iron sắt<br>\
 ladder thang<br>\
-modest khiêm tốn<br>\
 occupy chiếm đóng<br>\
 penny đồng xu<br>\
 preach giảng đạo<br>\

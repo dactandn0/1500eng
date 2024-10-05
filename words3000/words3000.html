@@ -1,7 +1,7 @@
 
 <div ng-repeat="category in storyTitles track by $index" class="my-2" >
 	<h6 class="accordion scroll">
-	  <a href ng-click="acc_click($index)"><span ng-if="$index<9">0</span>{{$index+1}}. {{category.title}} &nbsp&nbsp&nbsp&nbsp[{{category.num}}: words]</a>
+	  <a href ng-click="acc_click($index)"><span ng-if="$index<9">0</span>{{$index+1}}. {{category.title}} &nbsp&nbsp&nbsp&nbsp<small>[{{category.num}}: words]</small></a>
 	</h6>
 	<div class="accordion-content" ng-if="acc_isShow($index)">
 

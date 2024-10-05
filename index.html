@@ -48,7 +48,7 @@
     <div ng-controller="indexCtrl" class="container mt-4" ng-cloak>
 
       <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark justify-content-end px-4">
-    <a class="navbar-brand" ng-href="#/!">Home</a>
+    <a class="navbar-brand mr-auto" ng-href="#/!">Home</a>
     <!-- <button class="btn btn-success ml-auto">My Button</button> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
@@ -160,6 +160,9 @@
 
   <script>
     $("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
+      $("#navbarSupportedContent").collapse("hide");
+    });    
+    $(".navbar-brand").click(function() {
       $("#navbarSupportedContent").collapse("hide");
     });
   </script>

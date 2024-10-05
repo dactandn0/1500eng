@@ -4,6 +4,7 @@ const ITALIC_RED_TAG_END = '</i>'
 const kBackTimeAudio = 8; //8s
 
 var Helper_AudioSpeed = 0.9;
+var UtterEnd = true;
 
 // console.log("uncount_nouns.js")
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
@@ -223,16 +224,18 @@ function deleteLastWord(splitChar, string) {
 
 function ValidateWord(word, minL = 2) 
 {	
+	var result = true;
 	word = word.trim().toLowerCase();
-	if (!isAsciiString(word)) return false;
+	if (!isAsciiString(word)) result = false;
 
-	if (word.length <= minL) return false;
-	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']', '!','.',',',"'",'’','unit','there','this','that','those','adj','adv'];
+	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']'];
 	for (var i = 0; i < arr.length; i++) {
 		bList = arr[i];
-		if (word.length===bList.length && word.indexOf(bList) >= 0) return false;
+		if (word.indexOf(bList) >= 0) {
+			result = false;
+		}
 	}
-	return true;
+	return result;
 }
 
 // for word3000.js
@@ -256,7 +259,6 @@ function scrollFunction() {
   let mybutton = document.getElementById("btn_back_to_top");
   
   if (!mybutton) return;
-
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
@@ -272,7 +274,8 @@ function shuffle(array) {
 }
 
 function isAsciiString(text) {
-    return /^[\x00-\x7F]+$/g.test(text);
+	var r = /^[\x00-\x7F]+$/g.test(text);
+    return r;
 } 
 
 function Helper_GetVocaFromWordFull(wordFull) {
@@ -284,7 +287,7 @@ function Helper_GetVocaFromWordFull(wordFull) {
   	  	result = result + " " + part;
   	  else break;
   }
-  // console.log(result);
+   
   return result.trim();
 
 }
@@ -302,6 +305,9 @@ function ArrayRemove(arr, eleName) {
 }
 
 Helper_Speak = function (event, txt, fullSentence) {
+
+	if (!UtterEnd) return;
+
 	var target = Helper_GetVocaFromWordFull(txt);
 	if (fullSentence) target = txt.replace(/(<([^>]+)>)/ig, '');;
 
@@ -311,5 +317,11 @@ Helper_Speak = function (event, txt, fullSentence) {
 	 utter.rate  = Helper_AudioSpeed;
 	 utter.lang='en-US';
 
+	 utter.addEventListener('end', (evt) => {
+  		const { charIndex, utterance } = evt
+  			UtterEnd = true;
+		})
+
 	 speechSynthesis.speak(utter);
+	 UtterEnd = false;
 }

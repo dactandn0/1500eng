@@ -24,19 +24,15 @@ $scope.removeNote = function (event, word) {
 	}
 	Helper_SaveDB(saveSeq);
 }
-
+ $scope.voices = [];
 $scope.speak = function (event, txt) {
 	var voca = Helper_GetVocaFromWordFull(txt);
+
+	 speechSynthesis.getVoices();
+
 	 const utter = new SpeechSynthesisUtterance(voca);
+	 utter.text = voca;
 
-	  // Select a voice
-	  const voices = speechSynthesis.getVoices();
-	 for (var i = 0; i < voices.length; i++) {
-	 	console.log(voices[i])
-	 }
-	  utter.voice = voices[4]; // Choose a specific voice
-
-	  // Speak the text
 	  speechSynthesis.speak(utter);
 }
 

@@ -273,7 +273,7 @@ function isAsciiString(text) {
     return /^[\x00-\x7F]+$/g.test(text);
 } 
 
-function GetVocaFromWordFull(wordFull) {
+function Helper_GetVocaFromWordFull(wordFull) {
   var splitW = wordFull.trim().split(" ");
   var result = "";
   for (var i = 0; i < splitW.length; i++) {
@@ -290,4 +290,11 @@ function GetVocaFromWordFull(wordFull) {
 // arrow up scroll
 topFunction = function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+function ArrayRemove(arr, eleName) {
+	return arr.filter((item) => {
+    	return item !== eleName
+	});
 }

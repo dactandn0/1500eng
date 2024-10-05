@@ -259,5 +259,38 @@ There are three main benefits of working as a volunteer at DIFF 2024. Firstly, y
  so it gave me the opportunity to speak English with a lot of foreigners. Secondly, you can make many friends when you work. I met and\
   talked with many people from all over the world, so I got to know lots of amazing people. Finally, you have the best view to see the firework. Volunteers often stand very close to the stage,\
  so I really enjoyed being there. I think that volunteering at DIFF 2024 was a very good experience because it helps me grow personally.",
-}	
+},
+{
+	date: "T6 04/10/2024",
+	title: "Accommodation",
+	en:"1. Do you live in a house or an apartment? Could you describe it?<br>\
+2. What do you like about living there?<br>\
+3. What is your favorite room in your home? Why?<br>\
+4. Would you like to move to a different home in the future? If yes,<br>\
+what kind of house would you like to live in?<br>\
+<br>\
+Practice<br>\
+<br>\
+1. Do you live in a house or an apartment?<br>\
+I live in a two-storey terraced house with my family which is located in the city centre./ on the outskirts of the city (vùng ngoại ô tpho).<br>\
+<br>\
+2. What do you like about living there?<br>\
+I like that most of the rooms face south, which means we get a lot of natural light. And the location is very convenient as all the facilities and services are within walking distance, which means I can easily grab anything I need in just a few minutes.<br>\
+<br>\
+3. What is your favorite room?<br>\
+I would say that it’s the living room because it’s the most spacious room in the house, with a comfy sofa and a big, round table where we eat dinner every night. That’s the room where the whole family gathers together and shares ups and downs in our lives.<br>\
+<br>\
+VOCABULARY<br>\
+(to) immerse myself in my own world: đắm chìm vào tg riêng của tôi<br>\
+(to) recharge my battery = blow off some steam = unwind<br>\
+do sth + without being disturbed: làm gì đó mà k bị làm phiền<br>\
+<br>\
+Ups and downs (n): thăng trầm<br>\
+Delicacy (n): món ngon<br>\
+(to) immerse in …: đắm chìm vào …<br>\
+(be) engrossed in + books, movies: chăm chú say mê ….<br>\
+(to) binge-watch + Netflix series: cày phim<br>\
+(to) savor/ enjoy my privacy: tận hưởng sự riêng tư<br>\
+(to) sleep in: ngủ nướng"
+},
 ]

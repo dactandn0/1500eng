@@ -220,7 +220,7 @@ space không gian<br>\
 stair cầu thang<br>\
 symbol biểu tượng<br>\
 thin  mỏng<br>\
-blood máu<br>\
+blood n /blʌd/ máu<br>\
 burn bỏng<br>\
 cell tế bào<br>\
 contain chứa<br>\
@@ -609,7 +609,7 @@ obey tuân theo<br>\
 secure an toàn<br>\
 steady ổn định<br>\
 trust tin tưởng<br>\
-twist xoắn<br>\
+twist v /twɪst/ xoắn<br>\
 unless trừ khi<br>\
 confidence tự tin<br>\
 consequence hậu quả<br>\

@@ -1,5 +1,5 @@
 
-const WORDS_3K_DATA =
+const VocaNoted_Data =
 [
 {
 title: "School Supplies",

@@ -25,6 +25,14 @@ $scope.story = {};
 $scope.acc = -1;
 $scope.words = [];
 
+$scope.saveNoted = function(event, word) {
+ 	IndexCtrlScope.saveNoted (event, word);
+}
+
+$scope.IsWordSavedBefore = function(word) {
+  return IndexCtrlScope.IsWordSavedBefore(word);
+} 
+
 $scope.acc_isShow = function (id) {
 	return $scope.acc===id;
 };

@@ -11,35 +11,45 @@
   font-size: 1rem ;
 }
 
-
+/* sound */
 	.opa{
 		opacity: 0.4;
 	}
 	.btnPlay {
 	  position: fixed; 
-	  bottom: 180px;
+	  bottom: 270px;
 	  left: 10px;
 	  z-index: 30;
-
 	}
+
 	.btnSound {
 	  position: fixed; 
-	  bottom: 20px; /* Place the button at the bottom of the page */
-	  left: 10px; /* Place the button 30px from the right */
-	  z-index: 30; /* Make sure it does not overlap */
+	  bottom: 110px; 
+	  left: 10px; 
+	  z-index: 30;
 	}
 	.btnEnVi {
 	  position: fixed; 
-	  bottom: 70px; /* Place the button at the bottom of the page */
-	  right: 10px; /* Place the button 30px from the right */
-	  z-index: 30; /* Make sure it does not overlap */
+	  bottom: 160px; 
+	  right: 10px;
+	  z-index: 30; 
 	}
 	.btnShowVi {
 	  position: fixed; 
-	  bottom: 180px; /* Place the button at the bottom of the page */
-	  right: 10px; /* Place the button 30px from the right */
-	  z-index: 30; /* Make sure it does not overlap */
+	  bottom: 270px; 
+	  right: 10px; 
+	  z-index: 30; 
 	}
+
+
+.btnNotedVoca {
+  position: fixed; 
+  bottom:50px;
+  left: 10px;
+  z-index: 30;
+
+}
+
 
 /*override BS*/
 .card-body{

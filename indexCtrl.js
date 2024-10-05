@@ -7,6 +7,7 @@ function hightlightTypeOfWord(txt) {
 }
 
 var app = angular.module("myApp", [
+  'vocaNotedApp',
   'preCourseApp',
   'sampleSpeakingApp',
   'completeLApp','completeRApp',
@@ -20,7 +21,10 @@ app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'words3000/words3000.html', controller: 'words3000Ctrl'
-      })      
+      }) 
+      .when('/vocaNoted', {
+        templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'
+      })        
       .when('/book4k', {
         templateUrl: 'words4000/words4000.html', controller: 'words4000Ctrl'
       })
@@ -59,7 +63,7 @@ app.config(function($routeProvider) {
       });
  }); // route
 
-app.controller("indexCtrl",  ['$scope', 'appAlert', function($scope, appAlert) {
+app.controller("indexCtrl",  ['$scope', 'appAlert','$location', function($scope, appAlert, $location) {
 IndexCtrlScope = $scope;
 
 var kAllVocaWords = WORDS_3K_DATA
@@ -74,13 +78,42 @@ var kAllStories = lptd_cd1_stories
   .concat(bridge_read_data)
   .concat(complete_cd1)
   .concat(complete_read_data)
+  .concat(listen_tracks)
 
 
 $scope.searchData = [];
 $scope.searchDataResult = [];
 $scope.search = "";
+$scope.sentenceSearches = "";
+
+$scope.notedWordInput = "";
+$scope.IsShowNotedPanel = false;
+
+$scope.saveNoted = function(event, word) {
+  event.target.style.color = 'white';
+  word = word.trim();
+  var kDatabase = Helper_FetchDB();
+
+  if (word.length >= 2 && !Helper_IsWordSavedBefore(word)) {
+
+    kDatabase = kDatabase + "@" + word;
+    Helper_SaveDB(kDatabase);
+    $scope.notedWordInput = "";
+
+    if ($location.path().indexOf('vocaNoted') >=0 ) {
+      VocaNotedCtrl.appendDataToUI(word);
+    }
+  } else {
+    event.target.style.color = 'red';
+  }
+}
+
+$scope.IsWordSavedBefore = function(word) {
+  return Helper_IsWordSavedBefore(word);
+} 
 
 $scope.searchTyping = function() {
+  $scope.sentenceSearches = [];
   if ($scope.searchData.length==0) return true;       
 	$scope.searchDataResult = [];
 	if ($scope.search.length <= 2) return;
@@ -93,7 +126,7 @@ $scope.searchTyping = function() {
     		$scope.searchDataResult.push(dataVN);
     	}
     }
-};
+}
 
 $scope.clearSearch = function () {
 	$scope.search = '';
@@ -112,10 +145,10 @@ $scope.preProcess = function () {
 
 $scope.findSameWord = function() {
   for (var i = 0; i < $scope.searchData.length-1; i++) {
-    var word1=  GetVocaFromWordFull($scope.searchData[i]);
+    var word1=  Helper_GetVocaFromWordFull($scope.searchData[i]);
     if (word1.length==0) continue;
     for (var k = i+1; k < $scope.searchData.length; k++) {
-      var word2=  GetVocaFromWordFull($scope.searchData[k]);
+      var word2=  Helper_GetVocaFromWordFull($scope.searchData[k]);
       if (word1 === word2) {
         console.log(word1);
         break;
@@ -166,7 +199,7 @@ $scope.showExampleModal = function(type, wordFull, event) {
 // wordFull like:  Sea n /siː/ Biển
 $scope.fetchSentences = function(wordFull) {
   
-  var word = GetVocaFromWordFull(wordFull);
+  var word = Helper_GetVocaFromWordFull(wordFull);
   if (word==='') return 0;
 
   var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b${word}(s|es)*\b.*?[\?|\.|!"]+?`, 'gi');
@@ -188,6 +221,10 @@ $scope.fetchSentences = function(wordFull) {
     }
   }
   return 0;
+}
+
+$scope.fetchSentenceSearch = function() {
+    $scope.sentenceSearches = $scope.fetchSentences($scope.search);
 }
 
 }]);  //end of ctrl

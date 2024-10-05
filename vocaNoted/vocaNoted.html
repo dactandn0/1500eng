@@ -1,0 +1,27 @@
+
+
+<h6><strong>Vocabulary Noted</strong></h6>
+
+<div class="text-sm my-2" 
+	ng-repeat="word in notedWords track by $index">
+
+	- <span ng-if="word.length>0"
+		ng-click="showExampleModal('alert', word, $event)"
+		ng-bind-html="word"
+	></span>
+
+
+	  <button class="btn-md btn-danger float-right"
+        ng-click="removeNote($event, word)">
+            X
+          </button>
+
+          
+	  <button class="btn-md btn-danger float-right"
+        ng-click="speak($event, word)">
+            Voice
+          </button>
+	<br>
+</div>
+
+

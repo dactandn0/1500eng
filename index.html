@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 
   <script type="text/javascript" src="global_js.js"></script>
-  <script type="text/javascript" src="helper/performance.js"></script>
+  <script type="text/javascript" src="helper/wordNoted.js"></script>
   <script type="text/javascript" src="indexCtrl.js"></script>
 
   <script type="text/javascript" src="modal/modalCtrl.js"></script>
@@ -37,6 +37,7 @@
   <script type="text/javascript" src="ebooks/complete/completeRCtrl.js"></script>
   <script type="text/javascript" src="ebooks/sampleSpeaking/sampleSpeakingCtrl.js"></script>
   <script type="text/javascript" src="ebooks/englab/preCourse/preCourseCtrl.js"></script>
+  <script type="text/javascript" src="vocaNoted/vocaNotedCtrl.js"></script>
 
 </head>
 
@@ -48,7 +49,8 @@
   	<a ng-href="#!book4k" class="ml-3 mb-4">4kWords</a> 
   	<a ng-href="#!lptd" class="ml-3 mb-4" >LPTD</a>
     <a ng-href="#!grammer" class="ml-3 mb-4">Grammer</a>
-  	<a ng-href="#!ebooks" class="ml-3 mb-4">Ebooks</a>
+    <a ng-href="#!ebooks" class="ml-3 mb-4">Ebooks</a>
+  	<a ng-href="#!vocaNoted" class="ml-3 mb-4">Noted</a>
 
       <div class="input-group my-3">
         <input type="text" 
@@ -59,20 +61,62 @@
         	>  
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" 
+           	ng-click="fetchSentenceSearch()">
+       		[SE]</button>
+        </div>
+
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" 
            	ng-click="clearSearch()">
        		[X]</button>
         </div>
       </div>
 
       <div class="text-sm my-1" 
+        ng-repeat="sen in sentenceSearches | limitTo:-3 track by $index">
+        <!-- <button class="btn btn-sm border-primary" >Ex</button> -->
+        <span class="text-danger">*</span> 
+        <span 
+        	ng-bind-html="sen"
+        ></span><br>
+      </div>
+
+      <div class="text-sm my-2" 
         ng-repeat="wordFull in searchDataResult track by $index">
         <!-- <button class="btn btn-sm border-primary" >Ex</button> -->
         <span ng-bind-html="wordFull"
         ng-click="showExampleModal('alert', wordFull, $event)"
-        ></span><br>
+        ></span>
+
+        <button class="btn-sm btn-primary float-right pb-0"
+            ng-show="!IsWordSavedBefore(wordFull)"
+            ng-click="saveNoted($event, wordFull)">
+            S
+        </button>
+        <br>
       </div>
 
       <div class="my-3" ng-view></div>
+
+    <div class="btnNotedVoca opa">
+       <div class="input-group my-3">
+          <div class="input-group-append">
+          <button class="btn-sm btn-primary" 
+            ng-click="IsShowNotedPanel=!IsShowNotedPanel">
+          Note</button>
+        </div>
+          <input type="text" 
+          class="form-control" 
+          ng-model="notedWordInput"
+          ng-show="IsShowNotedPanel"
+          >
+          <button class="btn-sm btn-primary"
+            ng-show="IsShowNotedPanel"
+            ng-click="saveNoted($event, notedWordInput)">
+            OK
+          </button>
+      </div>
+    </div>
 
     <button
         onclick="topFunction()" 

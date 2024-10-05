@@ -7,11 +7,12 @@
 
 		<div ng-repeat="word in words track by $index" class="my-2">
 
-	   		 <button class="btn-sm btn-primary vocaNoteBtn"
-	            ng-show="!IsWordSavedBefore(word)"
-	            ng-click="saveNoted($event, word)">
+	        <button class="btn-sm btn-primary vocaNoteBtn"
+	        ng-show="!IsWordSavedBefore(word)"
+	        ng-click="saveNoted($event, word)">
 	            s
 	        </button>	
+
 	   		<span 
 	   		ng-bind-html="word" 
 	   		ng-click="showExampleModal('alert', word, $event)"
@@ -20,8 +21,10 @@
 
 	   		<button class="btn btn-sm btn-primary float-right vocaNoteBtn"
         		ng-click="Index_Speak($event, word)">
-            v
+        		v
           </button>
+
+
 
 	   		<br>
 		</div>

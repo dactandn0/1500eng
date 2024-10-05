@@ -7,6 +7,7 @@
 }
 
   body {
+  	margin-top: 80px;
   height: 130vh;
   font-size: 1rem ;
 }
@@ -110,6 +111,8 @@
   background-color: #a55;
 }
 
-.vocaNoteBtn {
+.vocaNoteBtn:before {
 	/*padding: 1px 3px;*/
 }
+
+

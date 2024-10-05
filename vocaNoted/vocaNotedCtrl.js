@@ -9,6 +9,13 @@ VocaNotedCtrl = $scope;
 
 var kDatabase = []
 $scope.notedWords = []
+$scope.audioSpeed = 0.8
+
+
+$scope.setAudioSpeed = function () {
+	Helper_AudioSpeed = $scope.audioSpeed;
+	localStorage.setItem("audioSpd", Helper_AudioSpeed);
+}
 
 $scope.appendDataToUI = function (word) {
 	$scope.notedWords.push(word);
@@ -31,6 +38,12 @@ $scope.loadArray = function () {
 
 	//remove element that length = 0
 	$scope.notedWords = $scope.notedWords.filter(String);
+
+	$scope.audioSpeed = 0.9;
+	if (localStorage.hasOwnProperty("audioSpd")) {
+		$scope.audioSpeed = parseFloat(localStorage.audioSpd);
+		$scope.setAudioSpeed();
+	}
 };
 
 

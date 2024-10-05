@@ -2,27 +2,27 @@
     <small class="modal-title" id="modal-title">{{data.wordFull}}</small>
 </div>
 <div class="modal-body p-1" id="modal-body">
-    <p ng-repeat="sentence in data.dataSent | limitTo: -5 track by $index" class="my-2" >
+    <p ng-repeat="sentence in data.dataSent | limitTo: -3 track by $index" class="my-2" >
         -<span ng-bind-html="sentence" class="d-inline"></span> 
-        <button class="btn btn-sm border-danger"
+        <button class="btn btn-sm btn-primary"
             ng-click="speak(sentence)">
-                V
+                <i class='fa fa-volume-down'></i>
         </button>
     </p> 
 
 </div>
 <div class="modal-footer">
     <button 
-    	class="btn btn-sm border-danger" 
+    	class="btn-sm btn-primary" 
     	ng-click="shuffleFromModal(data.wordFull)"
     	>
-    	Shuffle
+    	 <i class='fa fa-rotate-left'></i>
     </button>
 
     <button 
-    	class="btn btn-sm border-warning" 
+    	class="btn-sm btn-primary" 
     	ng-click="close()"
     	>
-    	[X]
+    	 <i class='fa fa-close'></i>
 	</button>
 </div>

@@ -3,6 +3,8 @@ const ITALIC_RED_TAG_BEGIN = '<i class="text-danger">'
 const ITALIC_RED_TAG_END = '</i>'
 const kBackTimeAudio = 8; //8s
 
+var Helper_AudioSpeed = 0.9;
+
 // console.log("uncount_nouns.js")
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
 
@@ -221,14 +223,14 @@ function deleteLastWord(splitChar, string) {
 
 function ValidateWord(word, minL = 2) 
 {	
-	word = word.trim();
+	word = word.trim().toLowerCase();
 	if (!isAsciiString(word)) return false;
 
 	if (word.length <= minL) return false;
 	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']', '!','.',',',"'",'’','unit','there','this','that','those','adj','adv'];
 	for (var i = 0; i < arr.length; i++) {
 		bList = arr[i];
-		if (word.toLowerCase().indexOf(bList) >= 0) return false;
+		if (word.length===bList.length && word.indexOf(bList) >= 0) return false;
 	}
 	return true;
 }
@@ -304,9 +306,9 @@ Helper_Speak = function (event, txt, fullSentence) {
 	if (fullSentence) target = txt.replace(/(<([^>]+)>)/ig, '');;
 
 	 speechSynthesis.getVoices();
-
 	 const utter = new SpeechSynthesisUtterance(target);
 	 utter.text = target;
+	 utter.rate  = Helper_AudioSpeed;
 	 utter.lang='en-US';
 
 	 speechSynthesis.speak(utter);

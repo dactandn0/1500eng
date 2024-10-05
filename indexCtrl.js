@@ -63,7 +63,7 @@ app.config(function($routeProvider) {
       });
  }); // route
 
-app.controller("indexCtrl",  ['$scope', 'appAlert','$location', function($scope, appAlert, $location) {
+app.controller("indexCtrl",  ['$scope', 'appAlert','$location', function($scope, appAlert, $location, $rootScope) {
 IndexCtrlScope = $scope;
 
 var kAllVocaWords = WORDS_3K_DATA
@@ -88,6 +88,12 @@ $scope.sentenceSearches = "";
 
 $scope.notedWordInput = "";
 $scope.IsShowNotedPanel = false;
+
+// clear Search data when routed
+$scope.$on('$routeChangeSuccess', function($event, next, current) { 
+    $scope.search = "";
+    $scope.searchDataResult = [];
+ });
 
 $scope.saveNoted = function(event, word) {
   event.target.style.color = 'white';

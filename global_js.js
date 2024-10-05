@@ -225,7 +225,7 @@ function ValidateWord(word, minL = 2)
 	if (!isAsciiString(word)) return false;
 
 	if (word.length <= minL) return false;
-	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']', '!','.',',',"'",'’','unit','there','this','that','those'];
+	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']', '!','.',',',"'",'’','unit','there','this','that','those','adj','adv'];
 	for (var i = 0; i < arr.length; i++) {
 		bList = arr[i];
 		if (word.toLowerCase().indexOf(bList) >= 0) return false;
@@ -301,7 +301,7 @@ function ArrayRemove(arr, eleName) {
 
 Helper_Speak = function (event, txt, fullSentence) {
 	var target = Helper_GetVocaFromWordFull(txt);
-	if (fullSentence) target = txt;
+	if (fullSentence) target = txt.replace(/(<([^>]+)>)/ig, '');;
 
 	 speechSynthesis.getVoices();
 

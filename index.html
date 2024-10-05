@@ -78,7 +78,12 @@
         <span class="text-danger">*</span> 
         <span 
         	ng-bind-html="sen"
-        ></span><br>
+        ></span>
+        <button class="btn btn-sm btn-primary float-right vocaNoteBtn"
+            ng-click="Index_Speak($event, sen, true)">
+            v
+          </button>
+        <br>
       </div>
 
       <div class="text-sm my-2" 
@@ -90,9 +95,9 @@
             s
         </button>
 
-        <small ng-bind-html="word"
+        <span ng-bind-html="word"
         ng-click="showExampleModal('alert', word, $event)"
-        ></small>
+        ></span>
 
           <button class="btn btn-sm btn-primary float-right vocaNoteBtn"
             ng-click="Index_Speak($event, word)">

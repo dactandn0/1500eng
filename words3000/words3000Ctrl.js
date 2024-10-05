@@ -3,7 +3,7 @@ document.write('<script src="./words3000/voca_special.js" type="text/javascript"
 document.write('<script src="./words3000/3k_words_data.js" type="text/javascript"></script>');
 document.write('<script src="./words3000/5k_ielt_words.js" type="text/javascript"></script>');
 document.write('<script src="./words3000/4k_words_data.js" type="text/javascript"></script>');
-document.write('<script src="./words3000/4k_words_data_make.js" type="text/javascript"></script>');
+// document.write('<script src="./words3000/4k_words_data_make.js" type="text/javascript"></script>');
 
 
 var app = angular.module("words3000App", 

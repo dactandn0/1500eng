@@ -5,18 +5,17 @@
 <div class="text-sm my-2" 
 	ng-repeat="word in notedWords track by $index">
 
-	- <span ng-if="word.length>0"
-		ng-click="showExampleModal('alert', word, $event)"
-		ng-bind-html="word"
-	></span>
-
-
-	  <button class="btn-md btn-danger float-right pb-0"
+	  <button class="btn-sm btn-danger "
         ng-click="removeNote($event, word)">
             X
-          </button>
-           
-	  <button class="btn-md btn-danger float-right pb-0"
+          </button> 
+
+      <span ng-if="word.length>0"
+		ng-click="showExampleModal('alert', word, $event)"
+		ng-bind-html="word">
+	  </span>
+   
+	  <button class="btn-sm btn-danger float-right"
         ng-click="speak($event, word)">
             V
           </button>

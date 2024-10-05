@@ -32,8 +32,9 @@ $scope.speak = function (event, txt) {
 
 	 const utter = new SpeechSynthesisUtterance(voca);
 	 utter.text = voca;
+	 utter.lang='en-US';
 
-	  speechSynthesis.speak(utter);
+	 speechSynthesis.speak(utter);
 }
 
 $scope.loadArray = function () {

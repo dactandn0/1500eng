@@ -1,10 +1,14 @@
 <div class="modal-header">
-    <h6 class="modal-title" id="modal-title">{{data.wordFull}}</h6>
+    <small class="modal-title" id="modal-title">{{data.wordFull}}</small>
 </div>
 <div class="modal-body p-1" id="modal-body">
-    <ul ng-repeat="sentence in data.dataSent | limitTo: -5 track by $index" class="my-2" >
-        <li ng-bind-html="sentence"></li>
-    </ul> 
+    <p ng-repeat="sentence in data.dataSent | limitTo: -5 track by $index" class="my-2" >
+        -<span ng-bind-html="sentence" class="d-inline"></span> 
+        <button class="btn btn-sm border-danger"
+            ng-click="speak(sentence)">
+                V
+        </button>
+    </p> 
 
 </div>
 <div class="modal-footer">
@@ -14,10 +18,11 @@
     	>
     	Shuffle
     </button>
+
     <button 
     	class="btn btn-sm border-warning" 
     	ng-click="close()"
     	>
-    	Close
+    	[X]
 	</button>
 </div>

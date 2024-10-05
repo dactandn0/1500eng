@@ -5,21 +5,23 @@
 	</h6>
 	<div class="accordion-content" ng-if="acc_isShow($index)">
 
-		<div ng-repeat="wordFull in words track by $index" class="my-2">
-		<!-- 	<button 
-				class="btn btn-sm border-primary" 
-				>Ex</button> -->
-	   		<span 
-	   		ng-bind-html="wordFull" 
-	   		ng-click="showExampleModal('alert', wordFull, $event)"
-	   		class="mb-1"
-	   		></span>
+		<div ng-repeat="word in words track by $index" class="my-2">
 
-	   		 <button class="btn-sm btn-primary float-right pb-0"
-	            ng-show="!IsWordSavedBefore(wordFull)"
-	            ng-click="saveNoted($event, wordFull)">
-	            S
-	        </button>
+	   		 <button class="btn-sm btn-primary vocaNoteBtn"
+	            ng-show="!IsWordSavedBefore(word)"
+	            ng-click="saveNoted($event, word)">
+	            s
+	        </button>	
+	   		<small 
+	   		ng-bind-html="word" 
+	   		ng-click="showExampleModal('alert', word, $event)"
+	   		class="mb-1"
+	   		></small>
+
+	   		<button class="btn btn-sm btn-primary float-right vocaNoteBtn"
+        		ng-click="Index_Speak($event, word)">
+            v
+          </button>
 
 	   		<br>
 		</div>

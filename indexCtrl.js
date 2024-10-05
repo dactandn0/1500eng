@@ -157,12 +157,12 @@ $scope.findSameWord = function() {
   }
 }
 
-$scope.loadData = function () {
-  $scope.preProcess();
-//	$scope.findSameWord();
-};
 
-$scope.loadData();
+
+$scope.Index_Speak = function (event, word, fullSentence = false) {
+  Helper_Speak(event, word, fullSentence);
+}
+
 
 $scope.showExampleModal = function(type, wordFull, event) {
       var sentences = $scope.fetchSentences(wordFull);
@@ -226,5 +226,13 @@ $scope.fetchSentences = function(wordFull) {
 $scope.fetchSentenceSearch = function() {
     $scope.sentenceSearches = $scope.fetchSentences($scope.search);
 }
+
+
+$scope.loadData = function () {
+  $scope.preProcess();
+//  $scope.findSameWord();
+};
+
+$scope.loadData();
 
 }]);  //end of ctrl

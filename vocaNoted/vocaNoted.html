@@ -5,9 +5,9 @@
 <div class="text-sm my-2" 
 	ng-repeat="word in notedWords track by $index">
 
-	  <button class="btn-sm btn-danger "
+	  <button class="btn-sm btn-danger vocaNoteBtn"
         ng-click="removeNote($event, word)">
-            X
+            x
           </button> 
 
       <span ng-if="word.length>0"
@@ -15,9 +15,9 @@
 		ng-bind-html="word">
 	  </span>
    
-	  <button class="btn-sm btn-danger float-right"
-        ng-click="speak($event, word)">
-            V
+	  <button class="btn-sm btn-danger float-right vocaNoteBtn"
+        ng-click="Index_Speak($event, word)">
+            v
           </button>
 	<br>
 </div>

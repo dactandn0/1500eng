@@ -24,18 +24,6 @@ $scope.removeNote = function (event, word) {
 	}
 	Helper_SaveDB(saveSeq);
 }
- $scope.voices = [];
-$scope.speak = function (event, txt) {
-	var voca = Helper_GetVocaFromWordFull(txt);
-
-	 speechSynthesis.getVoices();
-
-	 const utter = new SpeechSynthesisUtterance(voca);
-	 utter.text = voca;
-	 utter.lang='en-US';
-
-	 speechSynthesis.speak(utter);
-}
 
 $scope.loadArray = function () {
 	var kDatabase = Helper_FetchDB();

@@ -109,3 +109,7 @@
 #btn_back_to_top:hover {
   background-color: #a55;
 }
+
+.vocaNoteBtn {
+	padding: 1px 3px;
+}

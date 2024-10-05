@@ -82,17 +82,23 @@
       </div>
 
       <div class="text-sm my-2" 
-        ng-repeat="wordFull in searchDataResult track by $index">
-        <!-- <button class="btn btn-sm border-primary" >Ex</button> -->
-        <span ng-bind-html="wordFull"
-        ng-click="showExampleModal('alert', wordFull, $event)"
-        ></span>
+        ng-repeat="word in searchDataResult track by $index">
 
-        <button class="btn-sm btn-primary float-right pb-0"
-            ng-show="!IsWordSavedBefore(wordFull)"
-            ng-click="saveNoted($event, wordFull)">
-            S
+        <button class="btn-sm btn-primary vocaNoteBtn"
+            ng-show="!IsWordSavedBefore(word)"
+            ng-click="saveNoted($event, word)">
+            s
         </button>
+
+        <small ng-bind-html="word"
+        ng-click="showExampleModal('alert', word, $event)"
+        ></small>
+
+          <button class="btn btn-sm btn-primary float-right vocaNoteBtn"
+            ng-click="Index_Speak($event, word)">
+            v
+          </button>
+
         <br>
       </div>
 

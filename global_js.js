@@ -298,3 +298,16 @@ function ArrayRemove(arr, eleName) {
     	return item !== eleName
 	});
 }
+
+Helper_Speak = function (event, txt, fullSentence) {
+	var target = Helper_GetVocaFromWordFull(txt);
+	if (fullSentence) target = txt;
+
+	 speechSynthesis.getVoices();
+
+	 const utter = new SpeechSynthesisUtterance(target);
+	 utter.text = target;
+	 utter.lang='en-US';
+
+	 speechSynthesis.speak(utter);
+}

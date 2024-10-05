@@ -19,6 +19,10 @@ $scope.data = data;
         $scope.data.dataSent = IndexCtrlScope.fetchSentences(wordFull);
     };
 
+     $scope.speak = function(sentence) {
+        IndexCtrlScope.Index_Speak(null, sentence, true);
+    };
+
 }]);
 
 

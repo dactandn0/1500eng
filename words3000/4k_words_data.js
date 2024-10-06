@@ -71,7 +71,7 @@ punish trừng phạt<br>\
 represent đại diện<br>\
 shake lắc<br>\
 spread (v) /spred/ lan truyền<br>\
-stroll n,v đi dạo<br>\
+stroll (n,v) đi dạo<br>\
 aware nhận thức<br>\
 badly tệ<br>\
 belong thuộc về<br>\
@@ -192,7 +192,7 @@ ground mặt đất<br>\
 introduce giới thiệu<br>\
 marry (v) kết hôn<br>\
 prepare chuẩn bị<br>\
-sail n,v buồm, lái thuyền<br>\
+sail (n,v) buồm, lái thuyền<br>\
 serious nghiêm túc<br>\
 spend chi tiêu<br>\
 strange lạ<br>\
@@ -596,7 +596,7 @@ enemy kẻ thù<br>\
 entrance lối vào<br>\
 hardly hiếm khi<br>\
 intend,laughter có ý định,cười<br>\
-log log<br>\
+log (n,v) nhật ký, ghi chép<br>\
 military quân sự<br>\
 obey tuân theo<br>\
 secure an toàn<br>\

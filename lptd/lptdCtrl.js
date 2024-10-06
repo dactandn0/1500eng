@@ -169,14 +169,14 @@ $scope.loadData = function () {
 		var cd = localStorage.lptd_cd;
 		MYLOG("localStorage load lptd_cd=" + cd);
 		radioCDChange(parseInt(cd));
-		document.cdForm.radioCD.value=cd;
+		document.lptd_cdForm.radioCD.value=cd;
 		$scope.cd=cd;
 	}
 
 	if (localStorage.hasOwnProperty("audio_loop")) {
 		var val = localStorage.audio_loop;
 		MYLOG("localStorage load audio_loop=" + val);
-		document.loopForm.radioLoop.value = val;
+		document.lptd_loopForm.radioLoop.value = val;
 	}
 
 	if (localStorage.hasOwnProperty("lptd_unit")) {
@@ -188,6 +188,10 @@ $scope.loadData = function () {
 	$scope.fetchStory($scope.storyIdx, false);
 };
 
-$scope.loadData();
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
+
+
 
 });

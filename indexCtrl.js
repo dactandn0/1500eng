@@ -80,7 +80,7 @@ kAllStories = lptd_cd1_stories
 $scope.searchData = [];
 $scope.searchDataResult = [];
 $scope.search = "";
-$scope.sentenceSearches = "";
+$scope.sentenceSearches = [];
 
 // clear Search data when routed
 $scope.$on('$routeChangeSuccess', function($event, next, current) { 
@@ -128,6 +128,7 @@ $scope.searchTyping = function() {
 $scope.clearSearch = function () {
 	$scope.search = '';
 	$scope.searchDataResult = [];
+  $scope.sentenceSearches = []
 };
 
 $scope.preProcess = function () {

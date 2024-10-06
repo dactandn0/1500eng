@@ -182,13 +182,13 @@ $scope.loadData = function () {
 	if (localStorage.hasOwnProperty("book_4k_num")) {
 		var cd = localStorage.book_4k_num;
 		radioCDChange(parseInt(cd));
-		document.cdForm.radioCD.value=cd;
+		document.word4k_cdForm.radioCD.value=cd;
 		$scope.cd=cd;
 	}
 
 	if (localStorage.hasOwnProperty("audio_loop")) {
 		var val = localStorage.audio_loop;
-		document.loopForm.radioLoop.value = val;
+		document.word4k_loopForm.radioLoop.value = val;
 	}
 
 	if (localStorage.hasOwnProperty("book_4k_unit")) {

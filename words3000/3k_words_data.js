@@ -133,8 +133,8 @@ Fraction (n) /ˈfræk.ʃən/ Phân số<br>\
 Percentage (n) /pəˈsen.tɪdʒ/ Phần trăm<br>\
 Arithmetic adj/n /əˈrɪθ.mə.tɪk/ Số học<br>\
 Divide (v) /dɪˈvaɪd/ Chia<br>\
-Plus (pre) /plʌs/ Cộng<br>\
-Minus (pre) /ˈmaɪ.nəs/ Trừ<br>\
+Plus (prep)  /plʌs/ Cộng<br>\
+Minus (prep)  /ˈmaɪ.nəs/ Trừ<br>\
 Multiply (v) /ˈmʌl.tɪ.plaɪ/ Nhân<br>\
 Equal (adj/v) /ˈiː.kwəl/ Ngang bằng, bằng<br>\
 Total (a) /ˈtəʊ.təl/ Tổng, tổng số<br>\
@@ -1276,7 +1276,7 @@ Blackboard (n) /ˈblæk.bɔːd/ Bảng đen<br>\
 History (n) /ˈhɪs.tər.i/ Môn lịch sử<br>\
 Economics (n) /ˌiː.kəˈnɒm.ɪks/ Kinh tế học<br>\
 Chemistry (n) /ˈkɛm.ɪ.stri/ Hóa học<br>\
-Biology (n) /baɪˈɒl.ə.dʒi/ Sinh học IT (n) /aɪ ˈtiː/ Công nghệ thông tin<br>\
+Biology (n) /baɪˈɒl.ə.dʒi/ Sinh học<br>\
 Geography (n) /dʒɪˈɒɡ.rə.fi/ Địa lý<br>\
 Art (n) /ɑːrt/ Mỹ thuật<br>\
 Fail (v) /feɪl/ Rớt; đánh rớt<br>\
@@ -1726,13 +1726,13 @@ Mineral (n) /ˈmɪnərəl/ Khoáng chất",
 ,{
 	title:"Street",
 	en:"Avenue (n) /ˈævəˌnjuː/ Đại lộ<br>\
-Between pre /bɪˈtwiːn/ Ở giữa<br>\
-Beside pre bɪˈsaɪd/ Bên cạnh<br>\
-Behind pre /bɪˈhaɪnd/ Ở phía sau<br>\
+Between (prep) /bɪˈtwiːn/ Ở giữa<br>\
+Beside (prep) bɪˈsaɪd/ Bên cạnh<br>\
+Behind (prep) /bɪˈhaɪnd/ Ở phía sau<br>\
 Curve (v) /kɜːrv/ Uốn cong<br>\
-In front of pre /ɪn frʌnt əv/ (vị trí) ở phía trước, ở đằng trước<br>\
-Opposite pre /ˈɒpəzɪt/ Trước mặt, đối diện<br>\
-Near pre /nɪər/ Gần<br>\
+In front of (prep) /ɪn frʌnt əv/ (vị trí) ở phía trước, ở đằng trước<br>\
+Opposite (prep) /ˈɒpəzɪt/ Trước mặt, đối diện<br>\
+Near (prep) /nɪər/ Gần<br>\
 Turn right v. phr /tɜrn raɪt/ Rẽ phải<br>\
 Turn left v. phr /tɜrn lɛft/ Rẽ trái<br>\
 Junction (n) /ˈdʒʌŋkʃən/ Giao lộ<br>\

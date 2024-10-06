@@ -330,10 +330,18 @@ Helper_SliceHalfString = function (str) {
 	var arr = str.split(" ");
 	var partOne = ""
 	var partTwo = ""
-	var mm = Math.floor(arr.length/2)
-	for (var i = 0; i < mm; i++) {
-		partOne += arr[i] + " "
+
+	if (arr.length===1) {
+		partOne = str;
+		partTwo = ' /unknown/'
 	}
-	partTwo = str.substr(partOne.length)
+	else {
+		var mm = Math.floor(arr.length/2)
+		for (var i = 0; i < mm; i++) {
+			partOne += arr[i] + " "
+		}
+		partTwo = str.substr(partOne.length)
+	}
+
 	return { p1:partOne, p2:partTwo, full:str }
 }

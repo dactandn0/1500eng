@@ -325,3 +325,13 @@ Helper_Speak = function (event, txt, fullSentence) {
 	 speechSynthesis.speak(utter);
 	 UtterEnd = false;
 }
+
+Helper_SliceHalfString = function (str) {
+	var arr = str.split(" ");
+	var partOne = arr[0] + ""
+	var partTwo = ""
+	for (var i = 1; i < arr.length; i++) {
+		partTwo += arr[i] + " "
+	}
+	return { p1:partOne, p2:partTwo, full:str }
+}

@@ -2,18 +2,18 @@
     <span class="modal-title" id="modal-title">{{data.wordFull}}</span>
 </div>
 <div class="modal-body p-1" id="modal-body">
-    <p ng-repeat="sentence in data.dataSent | limitTo: -5 track by $index" class="my-2" >
+    <p ng-repeat="sentence in data.dataSent | limitTo: -3 track by $index" class="my-2" >
         -<span ng-bind-html="sentence" ng-click="speak(sentence)"></span> 
     </p> 
 
 </div>
 <div class="modal-footer">
-  <!--   <button 
+    <button 
     	class="btn btn-primary" 
     	ng-click="shuffleFromModal(data.wordFull)"
     	>
     	 <i class='fa fa-rotate-left'></i>
-    </button> -->
+    </button>
 
     <button 
     	class="btn btn-primary" 

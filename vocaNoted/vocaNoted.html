@@ -1,30 +1,36 @@
 
-<input type="range" class="form-range mt-3 mr-3" id="audioSpeed" 
+<label>Audio Rate:</label>
+<input 
+	type="range" 
+	class="form-range mt-3 mx-3"
 	min="0.6" 
 	max="2" 
 	step="0.05"
 	ng-model="audioSpeed" 
 	ng-change="setAudioSpeed()"> {{audioSpeed}}
 
-<h6 class="my-2"><strong>Vocabulary Noted</strong></h6>
+<h6 class="my-3"><strong>Vocabulary Noted</strong></h6>
 
-<div class="text-sm my-3" 
+<p ng-hide="notedWords.length > 0"> No record.</p>
+<div class="text-sm my-2" 
 	ng-repeat="word in notedWords track by $index">
 
+       <button class="btn-sm btn-primary p0 px-1 mr-2"
+       ng-click="showConfirmModal(word, $event)"
+        >
+            <i class="fa fa-close"></i>
+       </button> 
+
       <span ng-if="word.length>0"
-		ng-click="showExampleModal('alert', word, $event)"
+		ng-click="showExampleModal(word, $event)"
 		ng-bind-html="word">
 	  </span>
    
-	  <button class="btn-sm btn-primary float-right vocaNoteBtn"
+	  <button class="btn-sm btn-primary float-right  p0 px-2"
         ng-click="Index_Speak($event, word)">
-            v
-          </button>
+             <i class="fa fa-volume-down"></i>
+      </button>
 
-          	  <button class="btn-sm btn-primary float-right vocaNoteBtn mr-2"
-        ng-click="removeNote($event, word)">
-            x
-          </button> 
 	<br>
 </div>
 

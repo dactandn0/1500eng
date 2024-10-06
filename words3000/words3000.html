@@ -1,30 +1,29 @@
 
 <div ng-repeat="category in storyTitles track by $index" class="my-2" >
 	<h6 class="accordion scroll">
-	  <a href ng-click="acc_click($index)"><span ng-if="$index<9">0</span>{{$index+1}}. {{category.title}} &nbsp&nbsp&nbsp&nbsp<small>[{{category.num}}: words]</small></a>
+	  <a href ng-click="acc_click($index)"><span ng-if="$index<9">0</span>{{$index+1}}. {{category.title}} &nbsp&nbsp<small>[{{category.num}}: words]</small></a>
 	</h6>
 	<div class="accordion-content" ng-if="acc_isShow($index)">
 
 		<div ng-repeat="word in words track by $index" class="my-2">
 
-	        <button class="btn-sm btn-primary vocaNoteBtn"
-	        ng-show="!IsWordSavedBefore(word)"
-	        ng-click="saveNoted($event, word)">
-	            s
+	        <button class="btn-sm btn-primary p0 vocaNoteBtn"
+	        ng-show="!IsWordSavedBefore(word.full)"
+	        ng-click="saveNoted($event, word.full)">
+	            <i class="fa fa-save"></i>
 	        </button>	
 
 	   		<span 
-	   		ng-bind-html="word" 
-	   		ng-click="showExampleModal('alert', word, $event)"
+	   		ng-bind-html="word.p1" 
+	   		ng-click="Index_Speak($event, word.full)"
 	   		class="mb-1"
 	   		></span>
 
-	   		<button class="btn btn-sm btn-primary float-right vocaNoteBtn"
-        		ng-click="Index_Speak($event, word)">
-        		v
-          </button>
-
-
+	   		<span 
+	   		ng-bind-html="word.p2"
+	   		ng-click="showExampleModal(word.full, $event)"
+	   		class="mb-1"
+	   		></span>
 
 	   		<br>
 		</div>

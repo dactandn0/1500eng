@@ -2,9 +2,6 @@
 function MYLOG(msg) {
 //	console.log(msg);
 }
-function hightlightTypeOfWord(txt) {
-	return txt;
-}
 
 var app = angular.module("myApp", [
   'vocaNotedApp',
@@ -128,8 +125,7 @@ $scope.searchTyping = function() {
     	var dataVN = $scope.searchData[i];
     	data = removeVietnameseTones(dataVN.toLowerCase());
     	if (data.includes(search)) {
-			dataVN = hightlightTypeOfWord(dataVN)
-    		$scope.searchDataResult.push(dataVN);
+    		$scope.searchDataResult.push(Helper_SliceHalfString(dataVN));
     	}
     }
 }
@@ -170,36 +166,36 @@ $scope.Index_Speak = function (event, word, fullSentence = false) {
 }
 
 
-$scope.showExampleModal = function(type, wordFull, event) {
+$scope.showExampleModal = function(wordFull, event) {
       var sentences = $scope.fetchSentences(wordFull);
       if (!sentences) {
         event.target.style.color = 'red';
         return;
       }
       event.target.style.color = 'green';
-      if (type == 'alert') {
-          appAlert.alert({
-              title: 'Title',
-              message: 'This is alert message!',
-              type: 'danger',
-              dataSent: sentences,
-              wordFull: wordFull
-          });
-      } else {
-          appAlert.confirm({
-              title: 'Confirm delete!',
-              message: 'Do you want to delete this record ?'
-          }, function(isOk) {
-              if (isOk) {
-                  appAlert.alert({
-                      title: 'Success',
-                      message: 'Delete record successfully!',
-                      type: 'success'
-                  });
-              }
-          });
-      }
+
+      appAlert.alert({
+          title: 'Title',
+          message: 'This is alert message!',
+          type: 'danger',
+          dataSent: sentences,
+          wordFull: wordFull
+      });
+    
   };
+
+$scope.showConfirmModal = function(wordFull, event) {    
+    appAlert.confirm({
+        title: 'Confirm delete!',
+        message: 'Do you want to delete this record ?',
+        dataSent: wordFull,
+    }, function(isOk) {
+        if (isOk) {
+        //  console.log("Press OK")
+          VocaNotedCtrl.removeNote(wordFull, event)
+        }
+    });
+};
 
 
 // wordFull like:  Sea n /siː/ Biển
@@ -221,7 +217,7 @@ $scope.fetchSentences = function(wordFull) {
       for (var i = 0; i < results.length; i++) {
         var nn = results[i];
         var match = nn.match(regex)[0];
-        results[i] = nn.replaceAll(match , "<strong>" + match +"</strong>");
+        results[i] = nn.replaceAll(match , "<b>" + match +"</b>");
       }
       return (results);
     }

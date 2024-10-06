@@ -21,8 +21,8 @@ $scope.appendDataToUI = function (word) {
 	$scope.notedWords.push(word);
 }
 
-$scope.removeNote = function (event, word) {
-	event.target.parentElement.remove();
+$scope.removeNote = function (word, event) {
+	event.target.parentElement.parentElement.remove();
 	$scope.notedWords = ArrayRemove($scope.notedWords, word);
 
 	var saveSeq = "";

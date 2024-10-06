@@ -48,15 +48,14 @@
     <div ng-controller="indexCtrl" class="container mt-4" ng-cloak>
 
       <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark justify-content-end px-4">
-    <a class="navbar-brand mr-auto" ng-href="#/!">Home</a>
-    <!-- <button class="btn btn-success ml-auto">My Button</button> -->
+    <a class="navbar-brand mr-auto" ng-href="#/!"><i class="fa fa-lg fa-language"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarSupportedContent"  data-toggle="collapse" data-target="#navbar-collapse">
         <ul class="navbar-nav text-right">
-            <li class="nav-item "><a class="nav-link" ng-href="#!book4k">4kWords</a></li>
             <li class="nav-item "><a class="nav-link" ng-href="#!lptd">LPTD</a></li>
+            <li class="nav-item "><a class="nav-link" ng-href="#!book4k">4kWords</a></li>
             <li class="nav-item "><a class="nav-link" ng-href="#!ebooks">Ebooks</a></li>
             <li class="nav-item "><a class="nav-link" ng-href="#!grammer">Grammer</a></li>
             <li class="nav-item "><a class="nav-link" href="#!vocaNoted">Voca</a></li>
@@ -100,20 +99,18 @@
 
       <div class="text-sm my-2" 
         ng-repeat="word in searchDataResult track by $index">
-                <button class="btn-sm btn-primary vocaNoteBtn"
-            ng-show="!IsWordSavedBefore(word)"
-            ng-click="saveNoted($event, word)">
-            s
+         <button class="btn-sm btn-primary vocaNoteBtn p0"
+            ng-show="!IsWordSavedBefore(word.full)"
+            ng-click="saveNoted($event, word.full)">
+            <i class="fa fa-save"></i>
         </button>
-        <span ng-bind-html="word"
-        ng-click="showExampleModal('alert', word, $event)"
+        <span ng-bind-html="word.p1"
+          ng-click="Index_Speak($event, word.full)"
         ></span>
 
-          <button class="btn btn-sm btn-primary float-right vocaNoteBtn"
-            ng-click="Index_Speak($event, word)">
-            v
-          </button>
-
+        <span ng-bind-html="word.p2"
+          ng-click="showExampleModal(word.full, $event)"
+        ></span>
 
 
         <br>

@@ -46,8 +46,12 @@ $scope.acc_click = function (id) {
 		$scope.acc = id;
 	}
 
+	$scope.words = [];
 	var element = kSTORIES[$scope.acc];
-	$scope.words = element.en.split("<br>");
+	var arr = element.en.split("<br>");
+	for (var i = 0; i < arr.length; i++) {
+		$scope.words.push(Helper_SliceHalfString(arr[i]))
+	}
 
 	_scrollIntoView(id);
 	localStorage.setItem("w3000_idx", id);

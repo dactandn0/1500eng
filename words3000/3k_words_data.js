@@ -245,7 +245,7 @@ Pot (n) /pɒt/ Nồi<br>\
 Toaster (n) /ˈtəʊ.stər/ Lò nướng bánh<br>\
 Dishtowel (n) /ˈdɪʃ.taʊəl/ Khăn lau chén<br>\
 Refrigerator (n) /rɪˈfrɪdʒ.ər.eɪ.tər/ Tủ lạnh<br>\
-Freezer n,v /ˈfriː.zər/ Tủ đông, đóng băng<br>\
+Freezer (n,v) /ˈfriː.zər/ Tủ đông, đóng băng<br>\
 Cabinet (n) /ˈkæb.ɪ.nət/ Tủ (có nhiều ngăn)<br>\
 Microwave (n) /ˈmaɪ.krə.weɪv/ Lò vi sóng<br>\
 Bowl (n) /bəʊl/ Bát, chén<br>\
@@ -699,8 +699,9 @@ Lump (n) /lʌmp/ U bướu<br>\
 Insect bite (n) /ˈɪn.sekt baɪt/ Côn trùng đốt<br>\
 Stomachache (n) /ˈstʌmək-eɪk/ Đau dạ dày<br>\
 Toothache (n) /ˈtuːθ.eɪk/ Đau răng<br>\
-High blood pressure (n) /haɪ blʌd ˈpreʃ.əʳ/ Cao huyết áp<br>\
-Sore throat (n) /sɔːʳ θrəʊt/ Viêm họng<br>\
+High blood pressure (n) // Cao huyết áp<br>\
+Low blood pressure (n) // Huyết áp thấp<br>\
+Sore throat (n) /ˌsɔːr ˈθrəʊt/ Viêm họng<br>\
 Sprain (n) /spreɪn/ Bong gân<br>\
 Burn (n) /bɜːn/ Bỏng<br>\
 Malaria (n) /məˈleriə/ Sốt rét<br>\
@@ -712,10 +713,9 @@ Cancer (n) /ˈkænsər/ Bệnh ung thư<br>\
 Pneumonia (n) /nuːˈmoʊniə/ Viêm phổi<br>\
 Chicken pox (n) /ˈtʃɪkɪn pɑːks/ Bệnh thủy đậu<br>\
 Depression (n) /dɪˈpreʃn/ Trầm cảm<br>\
-Low blood pressure (n) /loʊ blʌd ˈpreʃər/ Huyết áp thấp<br>\
 Hypertension (n) /ˌhaɪ.pəˈten.ʃən/ Huyết áp cao<br>\
 Measles (n) /ˈmiːzlz/ Bệnh sởi<br>\
-Migraine (n) /ˈmaɪɡreɪn/ Bệnh đau nửa đầu<br>\
+Migraine (n) /ˈmaɪɡreɪn/ Đau nửa đầu<br>\
 Mumps (n) /mʌmps/ Bệnh quai bị<br>\
 Rheumatism (n) /ˈruːmətɪzəm/ Bệnh thấp khớp",
 },
@@ -933,11 +933,11 @@ generous (a) /'denares/ hào phóng<br>\
 compassionate (a) /kamipæfant/ giàu lòng trắc ẩn<br>\
 warm-hearted (a) /wom-hatid/ ấm áp<br>\
 impolite (a) / Impalart/ bất lịch sự <br>\
-disobedient (a) / dss='bidiant/ không vâng lời<br>\
+disobedient (a) /ˌdɪsəˈbiːdiənt/ không vâng lời<br>\
 straightforward (a) /strert'f:wad/ thẳng thắn<br>\
 selfish (a) /'sεlfif/ ích kỷ<br>\
 stupid /'stju:pid/ đần độn<br>\
-loving /'lAVIN/ đáng yêu<br>\
+loving /ˈlʌvɪŋ/ đáng yêu<br>\
 reliable /ri'laiǝbl/ đáng tin cậy <br>\
 scared /skeǝd/ sợ hãi<br>\
 conscientious / konfr'anJas/ tận tâm<br>\
@@ -990,7 +990,7 @@ obedient /ǝ'bi:diǝnt/ vâng lời",
 	title:"Emotion, Feeling",
 	en:"Angry (a) /ˈæŋɡri/ Tức giận<br>\
 Sleepy (a) /ˈsliːpi/ Buồn ngủ<br>\
-Surprised (a) /səˈpraɪzd/ - /sərˈpraɪzd/ Ngạc nhiên, bất ngờ<br>\
+Surprised (a) /səˈpraɪzd/ Ngạc nhiên, bất ngờ<br>\
 Grateful (a) /ˈɡreɪtfl/ Biết ơn<br>\
 Scared (a) /skeəd/ - /skerd/ Sợ hãi<br>\
 Embarrassed (a) /ɪmˈbærəst/ Bối rối, xấu hổ<br>\
@@ -1000,9 +1000,9 @@ Hungry (a) /ˈhʌŋɡri/ Đói bụng<br>\
 Full (a) /fʊl/ No<br>\
 Happy (a) /ˈhæpi/ Vui, hạnh phúc<br>\
 Jealous (a) /ˈdʒeləs/ Ghen, ghen tuông<br>\
-Nervous (a) /ˈnɜːvəs/ - /ˈnɜːrvəs/ Bồn chồn, lo lắng<br>\
-Thirsty (a) /ˈθɜːsti/ - /ˈθɜːrsti/ Khát nước<br>\
-Comfortable (a) /ˈkʌmftəbl/ - /ˈkʌmfətəbl/ Thoải mái<br>\
+Nervous (a) /ˈnɜːvəs/ Bồn chồn, lo lắng<br>\
+Thirsty (a) /ˈθɜːrsti/ Khát nước<br>\
+Comfortable (a) /ˈkʌmftəbl/ Thoải mái<br>\
 Tense (a) /tens/ Căng thẳng<br>\
 Tired (a) /ˈtaɪəd/ - /ˈtaɪərd/ Mệt mỏi<br>\
 Bored (v) /bɔːd/ - /bɔːrd/ Chán nản",
@@ -1087,7 +1087,8 @@ Free kick (n) /ˌfriː ˈkɪk/ Đá phạt trực tiếp<br>\
 Indirect free kick (n) /ˌɪn.daɪˈrɛkt ˌfriː ˈkɪk/ Đá phạt gián tiếp<br>\
 Kick off (v) /ˈkɪk .ɔːf/ Bắt đầu, lăn bóng<br>\
 Offside (n) /ˌɒfˈsaɪd/ Việt vị<br>\
-Corner flag (n) /ˈkɔːr.nər flæɡ/ Cờ cắm tại góc sân bóng đá Bet (v) /bɛt/ Cá độ<br>\
+Corner flag (n) /ˈkɔːr.nər flæɡ/ Cờ cắm tại góc sân bóng đá<br>\
+Bet (v) /bɛt/ Cá độ<br>\
 The bench (n) /ðə bɛnʧ/ Băng ghế dự bị<br>\
 Foul (n) /faʊl/ Lỗi, pha phạm lỗi<br>\
 Goal line (n) /ˈɡoʊl laɪn/ Vạch kẻ (khung thành)<br>\
@@ -1637,7 +1638,7 @@ Shrubland (n) /ˈʃrʌblænd/ Vùng cây bụi",
 {
 	title:"Seafood",
 	en:"Herring (n) /ˈhɛr.ɪŋ/ Cá trích<br>\
-Skate n,v /skeɪt/ Cá đuối, trượt ván<br>\
+Skate (n,v) /skeɪt/ Cá đuối, trượt ván<br>\
 Salmon (n) /ˈsæmən/ Cá hồi<br>\
 Prawn (n) /prɔːn/ Tôm<br>\
 Cuttlefish (n) /ˈkʌtəl.fɪʃ/ Mực nang<br>\

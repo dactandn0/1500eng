@@ -3,14 +3,14 @@
 const word_4000_data = [
 {
 title:"4k Book1",
-en:"afraid a /əˈfreɪd/ sợ<br>\
-agree with/about/on v /əˈɡriː/ đồng ý<br>\
+en:"afraid (a) /əˈfreɪd/ sợ<br>\
+agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 angry giận dữ<br>\
 arrive /əˈraɪv/ đến<br>\
 attack tấn công<br>\
-bottom n /ˈbɑːtəm/ dưới<br>\
-clever a thông minh<br>\
-cruel a /ˈkruːəl/ tàn ác<br>\
+bottom (n) /ˈbɑːtəm/ dưới<br>\
+clever (a) thông minh<br>\
+cruel (a) /ˈkruːəl/ tàn ác<br>\
 finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
@@ -30,19 +30,19 @@ kill giết<br>\
 laboratory phòng thí nghiệm<br>\
 laugh cười<br>\
 loud lớn<br>\
-noise n tiếng ồn. Don't make a noise<br>\
+noise (n) tiếng ồn<br>\
 project dự án<br>\
 scare sợ hãi<br>\
 secret bí mật<br>\
 shout /ʃaʊt/ la hét (at/for)<br>\
 smell mùi<br>\
-terrible a khủng khiếp<br>\
+terrible (a) khủng khiếp<br>\
 worse  tệ hơn<br>\
-alien n /ˈeɪliən/ người ngoài hành tinh<br>\
-among trong<br>\
+alien (n) /ˈeɪliən/ người ngoài HT<br>\
+among (prep) trong<br>\
 chart biểu đồ<br>\
 comprehend hiểu<br>\
-describe v /dɪˈskraɪb/ mô tả<br>\
+describe (v) /dɪˈskraɪb/ mô tả<br>\
 ever bao giờ<br>\
 fail thất bại<br>\
 grade cấp<br>\
@@ -70,7 +70,7 @@ positive tích cực<br>\
 punish trừng phạt<br>\
 represent đại diện<br>\
 shake lắc<br>\
-spread v /spred/ lan truyền<br>\
+spread (v) /spred/ lan truyền<br>\
 stroll n,v đi dạo<br>\
 aware nhận thức<br>\
 badly tệ<br>\
@@ -89,14 +89,14 @@ reside cư trú<br>\
 result kết quả<br>\
 roll lăn<br>\
 since kể từ<br>\
-visible có thể nhìn thấy<br>\
+visible (a) dễ thấy<br>\
 wild  hoang dã<br>\
 advantage lợi thế<br>\
 cause nguyên nhân<br>\
 choice lựa chọn<br>\
 community cộng đồng<br>\
 dead chết<br>\
-distance khoảng cách<br>\
+distance (n,v) khoảng cách<br>\
 escape thoát<br>\
 face mặt<br>\
 follow theo<br>\
@@ -109,7 +109,7 @@ return trở về<br>\
 survive sống sót<br>\
 upset bực bội<br>\
 voice giọng nói<br>\
-wise a /waɪz/ khôn ngoan<br>\
+wise (a) /waɪz/ khôn ngoan<br>\
 allow cho phép<br>\
 announce thông báo<br>\
 beside bên cạnh<br>\
@@ -134,7 +134,7 @@ accept chấp nhận<br>\
 arrange sắp xếp<br>\
 attend tham dự<br>\
 contrast tương phản<br>\
-encourage v /ɪnˈkɜːrɪdʒ/ khuyến khích<br>\
+encourage (v) /ɪnˈkɜːrɪdʒ/ khuyến khích<br>\
 familiar quen thuộc<br>\
 grab chộp lấy<br>\
 hang treo<br>\
@@ -158,7 +158,7 @@ perhaps có lẽ<br>\
 pleasant dễ chịu<br>\
 prevent ngăn chặn<br>\
 rock đá<br>\
-save v lưu, tiết kiệm<br>\
+save (v) lưu, tiết kiệm<br>\
 step bước<br>\
 still vẫn<br>\
 taste nếm ​​thử<br>\
@@ -171,7 +171,6 @@ effect hiệu ứng<br>\
 essential thiết yếu<br>\
 focus tập trung<br>\
 function chức năng<br>\
-grass cỏ<br>\
 guard bảo vệ<br>\
 image hình ảnh<br>\
 immediate ngay lập tức<br>\
@@ -183,7 +182,7 @@ site trang web<br>\
 tail đuôi<br>\
 trouble  rắc rối<br>\
 anymore nữa<br>\
-asleep a /əˈsliːp/ ngủ<br>\
+asleep (a) /əˈsliːp/ ngủ<br>\
 berry quả mọng<br>\
 collect thu thập<br>\
 compete cạnh tranh<br>\
@@ -193,7 +192,7 @@ decision quyết định<br>\
 either hoặc<br>\
 ground mặt đất<br>\
 introduce giới thiệu<br>\
-marry v kết hôn<br>\
+marry (v) kết hôn<br>\
 prepare chuẩn bị<br>\
 sail n,v buồm, lái thuyền<br>\
 serious nghiêm túc<br>\
@@ -220,7 +219,7 @@ space không gian<br>\
 stair cầu thang<br>\
 symbol biểu tượng<br>\
 thin  mỏng<br>\
-blood n /blʌd/ máu<br>\
+blood (n) /blʌd/ máu<br>\
 burn bỏng<br>\
 cell tế bào<br>\
 contain chứa<br>\
@@ -260,7 +259,7 @@ suffer chịu đựng<br>\
 technology  công nghệ<br>\
 across xuyên<br>\
 breathe hít thở<br>\
-characteristic n /ˌkærəktəˈrɪstɪk/ đặc điểm<br>\
+characteristic (n) /ˌkærəktəˈrɪstɪk/ đặc điểm<br>\
 consume tiêu thụ<br>\
 excite kích thích<br>\
 extreme cực đoan<br>\
@@ -294,7 +293,7 @@ pound pound<br>\
 process quy trình<br>\
 publish xuất bản<br>\
 theater sân khấu<br>\
-wealth n /welθ/ sự giàu có<br>\
+wealth (n) /welθ/ sự giàu có<br>\
 appreciate đánh giá cao<br>\
 available có sẵn<br>\
 beat đánh bại<br>\
@@ -484,7 +483,7 @@ suggest  gợi ý<br>\
 actually thực sự<br>\
 bite cắn<br>\
 deal thỏa thuận<br>\
-desert n /ˈdezərt/ sa mạc<br>\
+desert (n) /ˈdezərt/ sa mạc<br>\
 earthquake động đất<br>\
 effective hiệu quả<br>\
 examine kiểm tra<br>\
@@ -493,7 +492,7 @@ gift quà tặng<br>\
 hunger đói<br>\
 imagine tưởng tượng<br>\
 journey hành trình<br>\
-puzzle n /ˈpʌzl/ câu đố<br>\
+puzzle (n) /ˈpʌzl/ câu đố<br>\
 quite khá<br>\
 rather khá<br>\
 specific cụ thể<br>\
@@ -504,11 +503,11 @@ barely adv /ˈberli/ vừa đủ<br>\
 cancel hủy<br>\
 driveway lối đi xe<br>\
 garbage rác<br>\
-instrument n /ˈɪnstrəmənt/ nhạc cụ<br>\
+instrument (n) /ˈɪnstrəmənt/ nhạc cụ<br>\
 list danh sách<br>\
 magic ma thuật<br>\
 message tin nhắn<br>\
-notice  v /ˈnəʊtɪs/ thông báo<br>\
+notice  (v) /ˈnəʊtɪs/ thông báo<br>\
 own sở hữu<br>\
 predict dự đoán<br>\
 professor giáo sư<br>\
@@ -525,9 +524,9 @@ breakfast bữa sáng<br>\
 competition cuộc thi<br>\
 cool mát mẻ<br>\
 gain tăng<br>\
-importance n /ɪmˈpɔːrtns/ tầm quan trọng<br>\
+importance (n) /ɪmˈpɔːrtns/ tầm quan trọng<br>\
 knowledge kiến thức<br>\
-major a /ˈmeɪdʒər/ chính<br>\
+major (a) /ˈmeɪdʒər/ chính<br>\
 mean trung bình<br>\
 prefer ưa thích<br>\
 president chủ tịch<br>\
@@ -560,7 +559,7 @@ surface bề mặt",
 },
 {
 	title:"4k Book2",
-	en: "awful a tệ hại (very bad)<br>\
+	en: "awful (a) tệ hại (very bad)<br>\
 consist có<br>\
 desire mong muốn<br>\
 eager háo hức<br>\
@@ -576,7 +575,7 @@ rapidly nhanh chóng<br>\
 remark nhận xét<br>\
 seek tìm kiếm<br>\
 shine tỏa sáng<br>\
-spill v làm tràn, làm ngập<br>\
+spill (v) làm tràn, làm ngập<br>\
 castle lâu đài<br>\
 command lệnh<br>\
 counsel tư vấn<br>\
@@ -609,7 +608,7 @@ obey tuân theo<br>\
 secure an toàn<br>\
 steady ổn định<br>\
 trust tin tưởng<br>\
-twist v /twɪst/ xoắn<br>\
+twist (v) /twɪst/ xoắn<br>\
 unless trừ khi<br>\
 confidence tự tin<br>\
 consequence hậu quả<br>\
@@ -839,18 +838,18 @@ thus adv do đó <br>\
 aim aim<br>\
 bet bet<br>\
 carriage xe<br>\
-commute n trao đổi<br>\
+commute (n) trao đổi<br>\
 confirm confirm<br>\
 criticize chỉ trích<br>\
-differ v khác biệt<br>\
+differ (v) khác biệt<br>\
 expense chi phí<br>\
-formal a chính thức<br>\
-invent v phát minh<br>\
+formal (a) chính thức<br>\
+invent (v) phát minh<br>\
 junior junior<br>\
 labor labor<br>\
 mechanic thợ máy, cơ khí<br>\
-prime a xuất sắc,hảo hạng<br>\
-shift n sự thay đổi, đổi chỗ<br>\
+prime (a) xuất sắc,hảo hạng<br>\
+shift (n) sự thay đổi, đổi chỗ<br>\
 ability khả năng<br>\
 cartoon hoạt hình<br>\
 ceiling trần nhà<br>\
@@ -993,7 +992,7 @@ admit thừa nhận<br>\
 bin thùng<br>\
 bowl bát<br>\
 cabin cabin<br>\
-criminal a tội phạm, hình sự, có trọng tội<br>\
+criminal (a) tội phạm, hình sự, có trọng tội<br>\
 dozen tá<br>\
 elder người già<br>\
 facial mặt<br>\
@@ -1003,7 +1002,7 @@ mere chỉ là, không đáng để tâm<br>\
 neat gọn gàng<br>\
 occasion dịp, thời cơ<br>\
 penalty hình phạt<br>\
-settle v giải quyết vấn đề<br>\
+settle (v) giải quyết vấn đề<br>\
 wallet ví<br>\
 yell  la hét <br>\
 accuse tố cáo<br>\
@@ -1013,7 +1012,7 @@ cotton bông<br>\
 crash sụp đổ<br>\
 deck boong<br>\
 engage tham gia<br>\
-firm a chắc chắn, kiên cố<br>\
+firm (a) chắc chắn, kiên cố<br>\
 fuel nhiên liệu<br>\
 grand lớn<br>\
 hurricane bão<br>\
@@ -1027,14 +1026,14 @@ zone  khu vực <br>\
 apology xin lỗi<br>\
 bold táo bạo<br>\
 capture bắt giữ<br>\
-cardinal a cốt yếu(phải làm)<br>\
+cardinal (a) cốt yếu(phải làm)<br>\
 duke công tước<br>\
 expose phơi bày<br>\
 guilty có tội<br>\
 hire thuê<br>\
-innocent a ngây thơ, trong sạch, vô tội<br>\
+innocent (a) ngây thơ, trong sạch, vô tội<br>\
 jail tù<br>\
-minister n bộ trưởng<br>\
+minister (n) bộ trưởng<br>\
 ordinary bình thường<br>\
 permanent vĩnh viễn<br>\
 preserve bảo tồn<br>\
@@ -1042,59 +1041,59 @@ pronounce phát âm<br>\
 resemble giống<br>\
 symptom triệu chứng<br>\
 tobacco thuốc lá<br>\
-twin n con sinh đôi, (v) sinh đôi<br>\
+twin (n) con sinh đôi, (v) sinh đôi<br>\
 witch  phù thủy <br>\
 accompany đi cùng (+to) (+by: passive)<br>\
-bare a trần truồng<br>\
+bare (a) trần truồng<br>\
 branch nhánh<br>\
 cast cast<br>\
 dare dám liều mao hiểm<br>\
-electronic a thuộc điện tử<br>\
-electronics n thiết bị điện tử<br>\
+electronic (a) thuộc điện tử<br>\
+electronics (n) thiết bị điện tử<br>\
 inn inn<br>\
 net mạng lưới<br>\
 philosophy triết lí<br>\
 seed hạt giống<br>\
-sharp a sắc nhọn<br>\
-subtract v trừ đi<br>\
+sharp (a) sắc nhọn<br>\
+subtract (v) trừ đi<br>\
 tight tight<br>\
 virtual thực sự, virtual focus: tiêu điểm ảo [vật lí]<br>\
-weigh v cân nặng<br>\
+weigh (v) cân nặng<br>\
 whisper whisper<br>\
 abstract abstract<br>\
 annual annual<br>\
 clay đất sét<br>\
-cloth n vải<br>\
-deserve v đáng thưởng<br>\
+cloth (n) vải<br>\
+deserve (v) đáng thưởng<br>\
 feather lông vũ<br>\
-fertile a màu mỡ, đất tốt<br>\
+fertile (a) màu mỡ, đất tốt<br>\
 furniture nội thất<br>\
-grave n /ɡreɪv/ ngôi mộ<br>\
+grave (n) /ɡreɪv/ ngôi mộ<br>\
 ideal lý tưởng<br>\
 intelligence trí thông minh<br>\
 nowadays ngày nay<br>\
 obtain có được<br>\
 religious tôn giáo<br>\
 romantic lãng mạn<br>\
-shell n vỏ hến, vỏ bọc (v, lột vỏ)<br>\
+shell (n) vỏ hến, vỏ bọc (v, lột vỏ)<br>\
 shore bờ biển<br>\
-wheel n /wiːl/ bánh xe<br>\
+wheel (n) /wiːl/ bánh xe<br>\
 appeal kêu gọi<br>\
-assume v /əˈsuːm/ giả định<br>\
+assume (v) /əˈsuːm/ giả định<br>\
 client khách hàng<br>\
 downtown trung tâm<br>\
 embarrass xấu hổ<br>\
-fare n /fer/ giá vé (bus, plane, taxi)<br>\
+fare (n) /fer/ giá vé (bus, plane, taxi)<br>\
 former trước đây<br>\
 formula công thức<br>\
 found tìm thấy<br>\
 invest đầu tư<br>\
 practical thực tế<br>\
-quarter n /ˈkwɔːrtər/ quý<br>\
-scholarship  n /ˈskɑːlərʃɪp/ học bổng<br>\
+quarter (n) /ˈkwɔːrtər/ quý<br>\
+scholarship  (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
 treasure kho báu<br>\
-urge v /ɜːrdʒ/ thúc giục"
+urge (v) /ɜːrdʒ/ thúc giục"
 },
 {
 	title:"4k Book3",
@@ -1119,8 +1118,8 @@ sustain duy trì<br>\
 acquire thu thập<br>\
 awkward ngượng ngùng<br>\
 caretaker người chăm sóc<br>\
-deceive v /dɪˈsiːv/ lừa dối, ngoại tình, lừa phỉnh<br>\
-discourage v /dɪsˈkɜːrɪdʒ/ không khuyến khích, làm nản lòng<br>\
+deceive (v) /dɪˈsiːv/ lừa dối, ngoại tình, lừa phỉnh<br>\
+discourage (v) /dɪsˈkɜːrɪdʒ/ không khuyến khích, làm nản lòng<br>\
 fake giả<br>\
 hatred hận thù<br>\
 hut lều<br>\
@@ -1131,7 +1130,7 @@ newcomer người mới<br>\
 offense tội lỗi<br>\
 overlook bỏ qua<br>\
 repay trả lại<br>\
-ridiculous a /rɪˈdɪkjələs/ vô lý, tức cười<br>\
+ridiculous (a) /rɪˈdɪkjələs/ vô lý, tức cười<br>\
 satisfactory thỏa đáng<br>\
 shepherd người chăn cừu<br>\
 venture mạo hiểm<br>\

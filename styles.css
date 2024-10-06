@@ -18,38 +18,29 @@
 	}
 	.btnPlay {
 	  position: fixed; 
-	  bottom: 270px;
+	  bottom: 180px;
 	  left: 10px;
 	  z-index: 30;
 	}
 
 	.btnSound {
 	  position: fixed; 
-	  bottom: 110px; 
+	  bottom: 20px; 
 	  left: 10px; 
 	  z-index: 30;
 	}
 	.btnEnVi {
 	  position: fixed; 
-	  bottom: 160px; 
+	  bottom: 70px; 
 	  right: 10px;
 	  z-index: 30; 
 	}
 	.btnShowVi {
 	  position: fixed; 
-	  bottom: 270px; 
+	  bottom: 180px; 
 	  right: 10px; 
 	  z-index: 30; 
 	}
-
-
-.btnNotedVoca {
-  position: fixed; 
-  bottom: 35px;
-  left: 10px;
-  z-index: 30;
-
-}
 
 
 /*override BS*/

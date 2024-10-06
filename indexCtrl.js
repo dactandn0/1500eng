@@ -1,7 +1,4 @@
 
-function MYLOG(msg) {
-//	console.log(msg);
-}
 
 var app = angular.module("myApp", [
   'vocaNotedApp',
@@ -63,11 +60,13 @@ app.config(function($routeProvider) {
 app.controller("indexCtrl",  ['$scope', 'appAlert','$location', function($scope, appAlert, $location, $rootScope) {
 IndexCtrlScope = $scope;
 
-var kAllVocaWords = WORDS_3K_DATA
+$scope.kAllVocaWords = WORDS_3K_DATA
     .concat(IELTS_5K_DATA)
     .concat(word_4000_data)
+    .concat(VOCA_SPECIAL)
+    .concat(IELTS_SYN)
 
-var kAllStories = lptd_cd1_stories
+kAllStories = lptd_cd1_stories
   .concat(lptd_cd2_stories)
   .concat(lptd_cd3_stories)
   .concat(BOOK4K_1)
@@ -83,9 +82,6 @@ $scope.searchDataResult = [];
 $scope.search = "";
 $scope.sentenceSearches = "";
 
-$scope.notedWordInput = "";
-$scope.IsShowNotedPanel = false;
-
 // clear Search data when routed
 $scope.$on('$routeChangeSuccess', function($event, next, current) { 
     $scope.search = "";
@@ -93,7 +89,7 @@ $scope.$on('$routeChangeSuccess', function($event, next, current) {
  });
 
 $scope.saveNoted = function(event, word) {
-  event.target.style.color = 'white';
+  event.target.style.borderColor = 'black';
   word = word.trim();
   var kDatabase = Helper_FetchDB();
 
@@ -101,13 +97,12 @@ $scope.saveNoted = function(event, word) {
 
     kDatabase = kDatabase + "@" + word;
     Helper_SaveDB(kDatabase);
-    $scope.notedWordInput = "";
 
     if ($location.path().indexOf('vocaNoted') >=0 ) {
       VocaNotedCtrl.appendDataToUI(word);
     }
   } else {
-    event.target.style.color = 'red';
+    event.target.style.borderColor = 'red';
   }
 }
 
@@ -136,8 +131,8 @@ $scope.clearSearch = function () {
 };
 
 $scope.preProcess = function () {
-	for (var k = 0; k < kAllVocaWords.length; k++) {
-		story = kAllVocaWords[k];
+	for (var k = 0; k < $scope.kAllVocaWords.length; k++) {
+		story = $scope.kAllVocaWords[k];
 		if (story.en) {	
 			var words = story.en.split('<br>');
 			$scope.searchData = $scope.searchData.concat(words);
@@ -234,7 +229,7 @@ $scope.fetchSentenceSearch = function() {
 
 $scope.loadData = function () {
   $scope.preProcess();
-//  $scope.findSameWord();
+ // $scope.findSameWord();
 };
 
 $scope.loadData();

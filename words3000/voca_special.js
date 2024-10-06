@@ -28,7 +28,16 @@ stable (a.) ổn định | (n) chuồng ngựa<br>\
 rest (n) nghĩ ngơi | (n) phần còn loại<br>\
 star (v) đóng phim | (n) ngôi sao <br>\
 mine của tôi | (n) hầm mỏ<br>\
-company (n) đồng hành | (n) công ty"
+company (n) đồng hành | (n) công ty<br>\
+notice (n) thông báo | (v) nhận ra<br>\
+bank (n) bờ sông | (n) ngân hàng<br>\
+board (n) cái bảng | (v) lên tàu, máy bay<br>\
+book (n) sách | (v) đặt trước (vé)<br>\
+jam (n) mứt | (n) sự ùn tắc<br>\
+fly (n) còn ruồi | (v) bay<br>\
+fall (n) mùa thu | (v) ngã, rơi<br>\
+clip (n) đoạn film ngắn | (v) cắt xén<br>\
+check (n) séc | (v) kiểm tra"
 
 }	
 ]

@@ -152,7 +152,6 @@ against chống lại<br>\
 beach bãi biển<br>\
 damage thiệt hại<br>\
 discover khám phá<br>\
-emotion cảm xúc<br>\
 identify xác định<br>\
 perhaps có lẽ<br>\
 pleasant dễ chịu<br>\
@@ -176,7 +175,6 @@ image hình ảnh<br>\
 immediate ngay lập tức<br>\
 primary chính<br>\
 remain vẫn<br>\
-rest nghỉ ngơi<br>\
 separate tách biệt<br>\
 site trang web<br>\
 tail đuôi<br>\
@@ -235,7 +233,6 @@ position vị trí<br>\
 raise nâng cao<br>\
 responsible có trách nhiệm<br>\
 sight tầm nhìn<br>\
-spot điểm<br>\
 structure cấu trúc<br>\
 whole  toàn bộ<br>\
 coach huấn luyện viên<br>\
@@ -359,7 +356,6 @@ destroy phá hủy<br>\
 entertain giải trí<br>\
 extra thêm<br>\
 goal mục tiêu<br>\
-lie nói dối<br>\
 meat thịt<br>\
 opinion ý kiến<br>\
 reflect phản ánh<br>\
@@ -412,7 +408,6 @@ behavior hành vi<br>\
 behind đằng sau<br>\
 course khóa học<br>\
 lower thấp hơn<br>\
-match trận đấu<br>\
 member thành viên<br>\
 mental tinh thần<br>\
 passenger hành khách<br>\
@@ -496,7 +491,6 @@ puzzle (n) /ˈpʌzl/ câu đố<br>\
 quite khá<br>\
 rather khá<br>\
 specific cụ thể<br>\
-trip chuyến đi<br>\
 value  giá trị<br>\
 band dải<br>\
 barely adv /ˈberli/ vừa đủ<br>\
@@ -584,7 +578,7 @@ explosion vụ nổ<br>\
 jewelry đồ trang sức<br>\
 meteor sao băng<br>\
 monster,northern quái vật,phía bắc<br>\
-remote a. /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
+remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
 southern phía nam<br>\
 statue tượng<br>\
 steam hơi nước<br>\
@@ -826,7 +820,6 @@ emphasize nhấn mạnh<br>\
 flu cúm<br>\
 gesture cử chỉ<br>\
 interrupt ngắt<br>\
-last cuối cùng<br>\
 likeness  giống<br>\
 moreover hơn nữa<br>\
 perspective quan điểm<br>\
@@ -945,7 +938,6 @@ resume sơ yếu lý lịch<br>\
 rob cướp<br>\
 slip trượt<br>\
 somewhat hơi<br>\
-stable ổn định<br>\
 tissue mô<br>\
 yard  sân <br>\
 alike giống nhau<br>\

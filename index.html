@@ -70,17 +70,25 @@
         	ng-model="search" 
         	placeholder="Search..."
         	>  
+
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" 
-           	ng-click="fetchSentenceSearch()">
-       		[SE]</button>
+          <button class="btn" 
+            ng-click="saveNoted($event, search)">
+           <i class="fa fa-save"></i></button>
+         </div> 
+
+        <div class="input-group-append">
+          <button class="btn-sm btn-outline-secondary" 
+            ng-click="fetchSentenceSearch()">
+          [SE]</button>
         </div>
 
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" 
-           	ng-click="clearSearch()">
-       		[X]</button>
+          <button class="btn-sm btn-outline-secondary" 
+            ng-click="clearSearch()">
+          <i class="fa fa-close"></i></button>
         </div>
+
       </div>
 
       <div class="text-sm my-1" 
@@ -89,21 +97,21 @@
         <span class="text-danger">*</span> 
         <span 
         	ng-bind-html="sen"
+          ng-click="Index_Speak($event, sen, true)"
         ></span>
-        <button class="btn btn-sm btn-primary float-right vocaNoteBtn"
-            ng-click="Index_Speak($event, sen, true)">
-            <i class='fa fa-volume-down'></i>
-          </button>
+     
         <br>
       </div>
 
       <div class="text-sm my-2" 
         ng-repeat="word in searchDataResult track by $index">
          <button class="btn-sm btn-primary vocaNoteBtn p-1"
+
             ng-show="!IsWordSavedBefore(word.full)"
             ng-click="saveNoted($event, word.full)">
             <i class="fa fa-save"></i>
         </button>
+
         <span ng-bind-html="word.p1"
           ng-click="Index_Speak($event, word.full)"
         ></span>
@@ -117,26 +125,6 @@
       </div>
 
       <div class="my-3" ng-view></div>
-
-    <div class="btnNotedVoca opa">
-       <div class="input-group my-3">
-          <div class="input-group-append">
-          <button class="btn-sm btn-primary" 
-            ng-click="IsShowNotedPanel=!IsShowNotedPanel">
-          Note</button>
-        </div>
-          <input type="text" 
-          class="form-control" 
-          ng-model="notedWordInput"
-          ng-show="IsShowNotedPanel"
-          >
-          <button class="btn-sm btn-primary"
-            ng-show="IsShowNotedPanel"
-            ng-click="saveNoted($event, notedWordInput)">
-            OK
-          </button>
-      </div>
-    </div>
 
     <button
         onclick="topFunction()" 

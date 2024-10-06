@@ -30,28 +30,6 @@ Thỏ nói với sư tử, "Hãy nhìn vào đó. Sư tử sống ở dưới đ
 Khi sư tử nhìn vào giếng, nó có thể nhìn thấy khuôn mặt của chính mình trong nước. Nó nghĩ rằng đó là con sư tử kia. Không đợi thêm một phút nào nữa, sư tử nhảy xuống giếng để tấn công con sư tử kia. Anh ta không bao giờ ra ngoài.<br>\
 Tất cả các loài động vật khác trong rừng đều rất hài lòng với trò lừa bịp thông minh của chú thỏ.',
 voca:'afraid, agree, angry, arrive, attack, bottom, clever, cruel, finally, hide, hunt, lot, middle, moment, pleased, promise, reply, safe, trick, well',
-voca4k: [
-{en:"afraid", type:'a.', ipa: '[afreid]', mean:'When someone is afraid, they feel fear.', sample:'The woman was afraid of what she saw.',time: 3},
-{en:"agree", type:'v.', ipa: '[fegn:i]', mean:'To agree is to say “yes” or to think the same way.', sample:'A: The food is very good in that restaurant. B: I agree with you.',time: 14},
-{en:"angry", type:'a.', ipa: '[]', mean:'When someone is angry, they may want to speak loudly or fight.', sample:' She didn’t do her homework, so her father is angry.',time: 27},
-{en:"arrive", type:'v.', ipa: '[]', mean:'To arrive is to get to or reach some place.', sample:'The bus always arrives at the corner of my street at 4:00.',time: 40},
-{en:"attack", type:'v.', ipa: '[]', mean:'To attack is to try to fight or to hurt.', sample:'The man with the sword attacked the other man first.',time: 53},
-{en:"bottom", type:'n.', ipa: '[]', mean:'The bottom is the lowest part.', sample:'The bottom of my shoe has a hole in it.',time: 65},
-{en:"clever", type:'a.', ipa: '[]', mean:'When someone is clever, they can solve a hard puzzle or problem.', sample:'The clever boy thought of a good idea.',time: 75},
-{en:"cruel", type:'a.', ipa: '[]', mean:'When someone is cruel, they do bad things to hurt others.', sample:'The cruel man yelled at his sister.',time: 87},
-{en:"finally", type:'adv.', ipa: '[]', mean:'If something happens finally, it happens after a longtime or at the end.', sample:'He finally crossed the finish line after five hours of running.',time: 98},
-{en:"hide", type:'v.', ipa: '[]', mean:'To hide is to try not to let others see you', sample:'The other children will hide while you count to 100',time: 112},
-{en:"hunt", type:'v.', ipa: '[]', mean:'To hunt is to look for or search for an animal to kill.', sample:'Long ago, people hunted with bows and arrows',time: 123},
-{en:"lot", type:'n.', ipa: '[]', mean:'A lot means a large number or amount of people, animals, things, etc.', sample:'There are a lot of apples in the basket.',time: 134},
-{en:"middle", type:'n.', ipa: '[]', mean:'The middle of something is the center or halfway point.', sample:'The Canadian flag has a maple leaf in the middle of it.',time: 148},
-{en:"moment", type:'n.', ipa: '[]', mean:'A moment is a second or a very short time.', sample:'I was only a few moments late for the meeting.',time: 161},
-{en:"pleased", type:'a.', ipa: '[pli:zd]', mean:'When someone is pleased, they are happy.', sample:'She was pleased with the phone call she received.',time: 172},
-{en:"promise", type:'v.', ipa: '[prdmis]', mean:'To promise is to say you will do something for sure.', sample:'He promised to return my key by tomorrow.',time: 182},
-{en:"reply", type:'v.', ipa: '[]', mean:'To reply is to give an answer or say back to someone.', sample:'She asked him what time his meeting was. He replied, "at three."',time: 193},
-{en:"safe", type:'a.', ipa: '[seif]', mean:'When a person is safe, they are not in danger.', sample:'Put on your seat belt in the car to be safe.',time: 206},
-{en:"trick", type:'n.', ipa: '[]', mean:'A trick is something you do to fool another person.', sample:'His card trick really surprised us.',time: 217},
-{en:"well", type:'adv.', ipa: '[wel]', mean:'You use well to say that something was done in a good way.', sample:'The couple can dance quite well.',time: 227},
-]
 },
 {
 	en: 
@@ -75,28 +53,6 @@ Phòng thí nghiệm tối om. Các cô gái cẩn thận bước xuống cầu 
 Cha của Mia chạy vào phòng và bật đèn. "Ồ, không," ông nói. "Con hẳn đã biết được bí mật của cha." "Con quái vật của con đã cố giết chúng ta," Mia nói.<br>\
 "Quái vật?" ông hỏi. "Ý con là cái này à?" Ông cầm một con búp bê xinh xắn trên tay. Con búp bê cười. Tiếng cười không còn nghe có vẻ độc ác nữa. "Cha đã làm cái này cho sinh nhật con. Cha đã muốn tặng con lúc đó, nhưng giờ con có thể lấy nó. Cha hy vọng con thích nó!"',
 voca: 'adventure, approach, carefully, chemical, create, evil, experiment, kill, laboratory, laugh, loud, nervous, noise, project, scare, secret, shout, smell, terrible, worse',
-voca4k:[
-{en:"adventure", type:'n.', ipa: '[]', mean:'An adventure is a fun or exciting thing that you do.', sample:'Riding in the rough water was an adventure.',time: 5},
-{en:"approach", type:'v.', ipa: '[]', mean:'To approach something means to move close to it.', sample:'The boy approached his school.',time: 17},
-{en:"carefully", type:'adv.', ipa: '[]', mean:'Carefully means with great attention, especially to detail or safety.', sample:'The baby carefully climbed down the stairs.',time: 26},
-{en:"chemical", type:'n.', ipa: '[]', mean:'A chemical is something that scientists use in chemistry.', sample:'The scientist mixed the chemicals',time: 40},
-{en:"create", type:'v.', ipa: '[]', mean:'To create means to make something new.', sample:'She created an igloo from blocks of snow.',time: 50},
-{en:"evil", type:'n.', ipa: '[]', mean:'Evil describes something or someone bad or cruel, not good.', sample:' The evil figure scared us all.',time: 61},
-{en:"experiment", type:'n.', ipa: '[]', mean:'Evil describes something or someone bad or cruel, not good."', sample:'I killed the fly with a fly swatter.',time: 74},
-{en:"kill", type:'v.', ipa: '[]', mean:"To kill someone or something is to make them die.", sample:'The evil figure scared us all.',time: 86},
-{en:"laboratory", type:'n.', ipa: '[]', mean:'A laboratory is a room where a scientist works.', sample:'My mother works in a laboratory.',time: 95},
-{en:"laugh", type:'n.', ipa: '[]', mean:'Laugh is the sound made when someone is happy or a funny thing occurs', sample:'The sound of their laugh filled the room.',time: 107},
-{en:"loud", type:'a.', ipa: '[]', mean:'If a sound is loud, it is strong and very easy to hear.', sample:'The man’s voice was so loud that we all could hear him',time: 118},
-{en:"nervous", type:'a.', ipa: '[]', mean:'When a person is nervous, they think something bad will happen.', sample:'The boy became nervous when he heard the news.',time: 130},
-{en:"noise", type:'n.', ipa: '[]', mean:'A noise is an unpleasant sound.', sample:'The crying baby made a loud noise.',time: 142},
-{en:"project", type:'n.', ipa: '[]', mean:'A project is a type of work that you do for school ora job.', sample:'His afternoon work project was to paint the room green.',time: 152},
-{en:"scare", type:'v.', ipa: '[]', mean:'To scare someone is to make them feel afraid.', sample:'My uncle was scared by what he saw in the room.',time: 165},
-{en:"secret", type:'n.', ipa: '[]', mean:'A secret is something that you do not tell other people.', sample:'The two boys were sharing a secret.',time: 177},
-{en:"shout", type:'v.', ipa: '[]', mean:'To shout is to say something loudly.', sample:'My boss shouted at me because I was late for work.',time: 187},
-{en:"smell", type:'v.', ipa: '[]', mean:'To smell something means to use your nose to sense it.', sample:'The two friends smelled the flower',time: 199},
-{en:"terrible", type:'a.', ipa: '[]', mean:'If something is terrible, it is very bad.', sample:'The way he treated his classmate was terrible.',time: 209},
-{en:"worse", type:'adj.', ipa: '[]', mean:'If something is worse, it is of poorer quality than another thing.', sample:'Business was worse this month than last month.',time: 220},
-]
 },
 {
 	en:'The Report <br>\

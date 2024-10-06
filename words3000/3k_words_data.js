@@ -99,7 +99,6 @@ Work (v) /wə:k/ Làm việc"
 title:"Sea",
 en:"Sea (n)/siː/ Biển<br>\
 Ocean (n)/ˈəʊʃən/ Đại dương<br>\
-Wave (n)/weɪv/ Sóng<br>\
 Island (n)/ˈaɪlənd/ Hòn đảo<br>\
 Harbor (n)/ˈhɑːr.bɚ/ Cảng biển<br>\
 Lighthouse (n)/ˈlaɪthaʊs/ Hải đăng<br>\
@@ -305,7 +304,6 @@ Jewelry store (n) /ˈdʒuː.əl.ri stɔː r/ Cửa hàng trang sức<br>\
 Anklet (n) /ˈæŋ.klət/ Vòng chân<br>\
 Noble (a) /ˈnəʊ.bəl/ Quý<br>\
 Luxurious (a) /lʌɡˈʒʊə.ri.əs/ Sang trọng, xa hoa<br>\
-Modern (a) /ˈmɒd.ən/ Hiện đại<br>\
 Suitable (a) /ˈsuː.tə.bəl/ Phù hợp, thích hợp<br>\
 Twinkle (v) /ˈtwɪŋ.kəl/ Lấp lánh<br>\
 Bead (n) /biːd/ Hạt (của chuỗi hạt)<br>\
@@ -341,7 +339,8 @@ Conservation (n) /konsǝ'vein/ sự bảo tồn<br>\
 Desertification (n) /di z3:tifi'kexfn/ sự sa mạc hóa<br>\
 Endangered (a) /in'deindzǝd/ gặp nguy hiểm<br>\
 Sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
-Extinction (n) /Ik'stinkfn/ sự tuyệt chủng [extinct a.]"
+Extinction (n) /Ik'stinkfn/ sự tuyệt chủng<br>\
+Extinct (a) /Ik'stink/ bị tuyệt chủng"
 },
 {
 title:"Living room",
@@ -485,8 +484,7 @@ Sports center (n) /ˈspɔːrts ˌsen.t̬ɚ/ Trung tâm thể thao",
 },
 {
 title:"Entertainment",
-en:"Play (n) /pleɪ/ Vở kịch<br>\
-Circus (n) /ˈsɜː.kəs/ Rạp xiếc<br>\
+en:"Circus (n) /ˈsɜː.kəs/ Rạp xiếc<br>\
 Orchestra (n) /ˈɔː.kɪ.strə/ Ban nhạc, dàn nhạc<br>\
 Scene (n) /siːn/ Phân cảnh<br>\
 Opera (n) /ˈɒp.ər.ə/ Nhạc kịch, ô-pê-ra<br>\
@@ -603,7 +601,6 @@ Cattle (n) /ˈkæt.əl/ Gia súc<br>\
 Rural (a) /ˈrʊə.rəl/ (thuộc) nông thôn<br>\
 Cliff (n) /klɪf/ Vách đá<br>\
 Landscape (n) /ˈlænd.skeɪp/ Phong cảnh<br>\
-Terraced house (n) /ˈrəʊˌhaʊs/ Dãy nhà<br>\
 View (n) /vjuː/ Khung cảnh, quang cảnh"
 },
 {
@@ -615,7 +612,6 @@ Groom (n) /ɡruːm/ Chú rể<br>\
 Tuxedo (n) /tʌkˈsiː.dəʊ/ Áo ximôckinh<br>\
 Party (n) /ˈpɑː.ti/ Bữa tiệc<br>\
 Wedding card (n) /ˈwed.ɪŋ kɑːd/ Thiệp mời đám cưới<br>\
-Reception (n) /rɪˈsep.ʃən/ Tiệc chiêu đãi<br>\
 Bouquet (n) /buˈkeɪ/ Bó hoa<br>\
 Married (a) /ˈmær.id/ Đã kết hôn<br>\
 Newlywed (n) /ˈnjuː.li.wed/ Người mới cưới<br>\
@@ -654,7 +650,6 @@ fee (n) /fiː/ phí, học phí, tiền công<br>\
 ransom (n) /ˈrænsəm/ tiền chuộc<br>\
 loan (n) /ləʊn/ tiền vay ngân hàng<br>\
 salary (n) /ˈsæləri/ lương<br>\
-fine (n) /faɪn/ tiền phạt<br>\
 pension (n) /ˈpenʃn/ lương hưu<br>\
 alimony (n) /ˈælɪməʊni/ tiền cấp dưỡng sau li hôn<br>\
 allowance (n) /əˈlaʊəns/ tiền trợ cấp/cấp dưỡng<br>\
@@ -899,6 +894,7 @@ sensitive (a) /'sensitiv/ nhạy cảm<br>\
 intelligent (a) /In'talidant/ thông minh<br>\
 nice (a) /nais/ tốt bụng<br>\
 emotional (a) /I'mǝufǝnl/ đa cảm<br>\
+emotion (n) cảm xúc<br>\
 bad-tempered (a) /'bæd temped/ nóng tính<br>\
 nervous (a) /'nз:vǝs/ lo lắng<br>\
 distracted (a) /dis'træktrd/ bị phân tâm<br>\
@@ -957,7 +953,6 @@ unmerciful /Ʌn'mз:SIful/ nhẫn tâm<br>\
 attentive /ǝ'tεntiv/ ân cần <br>\
 imaginative /'mædginativ/ giàu trí tưởng tượng<br>\
 plucky /'plɅki/ dũng cảm<br>\
-patient /'perfant/ kiên nhẫn<br>\
 easy-going /'i:zi gǝvin/ dễ dãi<br>\
 careless /'keǝlis/ cẩu thả<br>\
 messy /'mεsi/ bừa bộn<br>\
@@ -1175,7 +1170,6 @@ Hot dog (n) /ˈhɒt dɒɡ/ Bánh mì kẹp xúc xích",
 	title:"Music",
 	en:"Music (n) /ˈmjuː.zɪk/ Âm nhạc<br>\
 Band (n) /bænd/ Nhóm nhạc, ban nhạc<br>\
-Play (v) /pleɪ/ Chơi (nhạc cụ)<br>\
 Note (n) /noʊt/ Nốt nhạc<br>\
 Drum (n) /drʌm/ Trống<br>\
 Playlist (n) /ˈpleɪ.lɪst/ Danh sách bài hát<br>\
@@ -1305,7 +1299,6 @@ Weather forecast (n) /ˈwɛð.ər ˈfɔːr.kæst/ Bản tin dự báo thời ti�
 Sunny (n) /ˈsʌn.i/ Có nắng<br>\
 Sunshine (n) /ˈsʌn.ʃaɪn/ Ánh nắng mặt trời<br>\
 Icy (n) /ˈaɪ.si/ Lạnh lẽo<br>\
-Atmosphere (n) /ˈæt.mə.sfɪər/ Bầu khí quyển<br>\
 Dry (a) /draɪ/ Khô<br>\
 Cloud (n) /klaʊd/ Đám mây<br>\
 Fog (n) /fɔːɡ/ Sương mù<br>\
@@ -1330,8 +1323,7 @@ Lightning (n) /ˈlaɪt.nɪŋ/ Tia chớp<br>\
 Mild (a) /maɪld/ Ôn hoà<br>\
 Dull (a) /dʌl/ U ám<br>\
 Shelter (n) /ˈʃɛl.tər/ Chỗ trú ẩn<br>\
-Celsius (a) /ˈsɛl.si.əs/ (thuộc) độ C<br>\
-Fine (n) /faɪn/ Đẹp",
+Celsius (a) /ˈsɛl.si.əs/ (thuộc) độ C",
 },
 {
 	title:"Clothes",
@@ -1486,7 +1478,6 @@ Adopt (v) /əˈdɒpt/ Nhận con nuôi<br>\
 Children (n) /ˈtʃɪl.drən/ Con cái<br>\
 Take care of v. phr /teɪk kɛər əv/ Chăm sóc, quan tâm<br>\
 Family tree (n) /ˈfæm.ə.li triː/ Gia phả<br>\
-Close-knit (a) /kloʊsˈnɪt/ Khăng khít<br>\
 Stepchild (n) /ˈstɛpˌtʃaɪld/ Con riêng<br>\
 Half-brother (n) /ˈhɑːfˌbrʌð.ər/ Anh trai, em trai (cùng cha/mẹ khác mẹ/cha)<br>\
 Half-sister (n) /ˈhɑːfˌsɪs.tər/ Chị gái, em gái (cùng cha/mẹ khác mẹ/cha)<br>\
@@ -1871,7 +1862,6 @@ Bustling (a) /ˈbʌslɪŋ/ nhộn nhịp<br>\
 Vibrant (a) /ˈvaɪbrənt/ Sôi động<br>\
 Metropolis (n) /məˈtrɑːpəlɪs/ Đô thị<br>\
 Sprawling (a) /ˈsprɔːlɪŋ/ lan rộng<br>\
-Rural (a) /ˈrʊrəl/ Nông thôn<br>\
 Suburbs (n) /ˈsʌbɜːrb/ Ngoại ô (= Outskirts)<br>\
 Tranquil (a) /ˈtræŋkwɪl/ Yên tĩnh<br>\
 Picturesque (a) /ˌpɪktʃəˈresk/ Đẹp như tranh vẽ<br>\
@@ -1886,8 +1876,7 @@ Villa (n) /ˈvɪlə/<br>\
 Apartment (n) /əˈpɑːrtmənt/ Căn hộ<br>\
 Flat (a) phẳng, n. căn hộ<br>\
 Convenient (a) /kənˈviːniənt/ thuận tiện,<br>\
-Security (n) /sɪˈkjʊrəti/<br>\
-Natural light"
+Natural light (n) Ánh sáng tự nhiên"
 }
 
 

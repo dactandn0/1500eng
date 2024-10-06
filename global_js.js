@@ -328,10 +328,12 @@ Helper_Speak = function (event, txt, fullSentence) {
 
 Helper_SliceHalfString = function (str) {
 	var arr = str.split(" ");
-	var partOne = arr[0] + ""
+	var partOne = ""
 	var partTwo = ""
-	for (var i = 1; i < arr.length; i++) {
-		partTwo += arr[i] + " "
+	var mm = Math.floor(arr.length/2)
+	for (var i = 0; i < mm; i++) {
+		partOne += arr[i] + " "
 	}
+	partTwo = str.substr(partOne.length)
 	return { p1:partOne, p2:partTwo, full:str }
 }

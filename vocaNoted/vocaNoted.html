@@ -9,13 +9,20 @@
 	ng-model="audioSpeed" 
 	ng-change="setAudioSpeed()"> {{audioSpeed}}
 
-<h6 class="my-3"><strong>Vocabulary Noted</strong></h6>
-
-<p ng-hide="notedWords.length > 0"> No record.</p>
-<div class="text-sm my-2" 
+<div class="my-3">
+ <button class="btn-sm btn-primary"
+ 		ng-show="notedWords.length > 0"
+       ng-click="showConfirmModal('Delete all records?', $event)"
+        >
+   <i class="fa fa-lg fa-trash"></i>
+       </button> 
+<span "><i>Vocabulary Noted</i></span>
+</div>
+<p ng-hide="notedWords.length > 0"><i>No record(s)</i></p>
+<div class="text-sm my-3" 
 	ng-repeat="word in notedWords track by $index">
 
-       <button class="btn-sm btn-primary p0 px-1 mr-2"
+       <button class="btn-sm btn-primary px-1 mr-2"
        ng-click="showConfirmModal(word, $event)"
         >
             <i class="fa fa-close"></i>
@@ -26,7 +33,7 @@
 		ng-bind-html="word">
 	  </span>
    
-	  <button class="btn-sm btn-primary float-right  p0 px-2"
+	  <button class="btn-sm btn-primary float-right px-2"
         ng-click="Index_Speak($event, word)">
              <i class="fa fa-volume-down"></i>
       </button>

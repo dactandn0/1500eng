@@ -7,7 +7,7 @@
 
 		<div ng-repeat="word in words track by $index" class="my-2">
 
-	        <button class="btn-sm btn-primary p0 vocaNoteBtn"
+	        <button class="btn-sm btn-primary p-1 vocaNoteBtn"
 	        ng-show="!IsWordSavedBefore(word.full)"
 	        ng-click="saveNoted($event, word.full)">
 	            <i class="fa fa-save"></i>
@@ -16,7 +16,7 @@
 	   		<span 
 	   		ng-bind-html="word.p1" 
 	   		ng-click="Index_Speak($event, word.full)"
-	   		class="mb-1"
+	   		class="ml-2"
 	   		></span>
 
 	   		<span 

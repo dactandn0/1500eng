@@ -99,7 +99,7 @@
 
       <div class="text-sm my-2" 
         ng-repeat="word in searchDataResult track by $index">
-         <button class="btn-sm btn-primary vocaNoteBtn p0"
+         <button class="btn-sm btn-primary vocaNoteBtn p-1"
             ng-show="!IsWordSavedBefore(word.full)"
             ng-click="saveNoted($event, word.full)">
             <i class="fa fa-save"></i>

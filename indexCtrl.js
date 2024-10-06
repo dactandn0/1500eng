@@ -191,8 +191,10 @@ $scope.showConfirmModal = function(wordFull, event) {
         dataSent: wordFull,
     }, function(isOk) {
         if (isOk) {
-        //  console.log("Press OK")
-          VocaNotedCtrl.removeNote(wordFull, event)
+          if (wordFull.indexOf("all") >=0) 
+            VocaNotedCtrl.removeAllNoted();
+          else
+            VocaNotedCtrl.removeNote(wordFull, event)
         }
     });
 };

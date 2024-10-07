@@ -100,5 +100,30 @@ vi:"Làm việc nhóm<br>\
 <br>\
 [D] Hội chợ Thế giới để lại những tòa nhà quan trọng sau họ. Ngày nay, Tháp Eiffel là một địa danh nổi tiếng của thành phố Paris. Khoảng sáu triệu khách du lịch đến thăm nơi này mỗi năm. Hội chợ Thế giới đầu tiên đã có tác động lớn đến xã hội, giáo dục, kinh doanh quốc tế và thương mại du lịch. Điều này vẫn đúng cho đến ngày nay."
 ,voca:"",
+},
+{
+	unit:8,
+	en:"The changing environment of Australia<br>\
+[A] Australia is an amazing and beautiful country. But it also has something special which makes it very interesting for scientists.\
+Australian plants and animals are very different from those of other continents.\
+Because the continent was separate from the rest of the world for a very long time, many species evolved and developed that do not exist in other countries or which are uncommon.\
+Examples include the kangaroo and the platypus. There are also 54000 known species of insects, but scientists believe there are many others they haven't discovered.<br>\
+<br>\
+[B] People have lived in Australia for a very long time. The native Aboriginal people respected the natural world. However, when Europeans came to Australia in the eighteenth century, their ways of life changed the country's landscapes and living things in harmful ways. Since the Europeans arrived, there has been a loss of 40% of total forest area and 75% of rainforests.<br>\
+<br>\
+[C] These changes have resulted in the loss of many animal and plants.\
+Eighteen species of mammal have already become extinct including the Tasmanian tiger and the desert rat kangaroo.\
+At least thirty species have become endangered and at risk of extinction.\
+The Europeans also brought many non-native animals, which have now run wild.\
+These include foxes and cats which have become a danger to small native mammals and birds.\
+Rabbits have destroyed massive areas of land and water buffalo have caused environmental damage in the rivers.\
+The aboriginal people introduced the dingo, a kind of wild dog, but they have successfully adapted and become part of the native species."
+,vi:"Môi trường thay đổi của Úc<br>\
+[A] Úc là một đất nước tuyệt vời và xinh đẹp. Nhưng nó cũng có một điều gì đó đặc biệt khiến nó trở nên rất thú vị đối với các nhà khoa học. Thực vật và động vật Úc rất khác so với các châu lục khác. Vì châu lục này tách biệt với phần còn lại của thế giới trong một thời gian rất dài, nhiều loài đã tiến hóa và phát triển mà không tồn tại ở các quốc gia khác hoặc không phổ biến. Ví dụ bao gồm kangaroo và thú mỏ vịt. Ngoài ra còn có 54000 loài côn trùng đã biết, nhưng các nhà khoa học tin rằng còn nhiều loài khác mà họ chưa phát hiện ra.<br>\
+<br>\
+[B] Con người đã sống ở Úc trong một thời gian rất dài. Người thổ dân bản địa tôn trọng thế giới tự nhiên. Tuy nhiên, khi người châu Âu đến Úc vào thế kỷ thứ mười tám, lối sống của họ đã thay đổi cảnh quan và sinh vật của đất nước theo những cách có hại. Kể từ khi người châu Âu đến, đã có 40% tổng diện tích rừng và 75% rừng mưa nhiệt đới bị mất.<br>\
+<br>\
+[C] Những thay đổi này đã dẫn đến sự mất mát của nhiều loài động vật và thực vật. Mười tám loài động vật có vú đã tuyệt chủng bao gồm hổ Tasmania và chuột túi sa mạc. Ít nhất ba mươi loài đã trở nên nguy cấp và có nguy cơ tuyệt chủng. Người châu Âu cũng mang theo nhiều loài động vật không phải bản địa, hiện đã chạy hoang dã. Chúng bao gồm cáo và mèo đã trở thành mối nguy hiểm đối với các loài động vật có vú và chim bản địa nhỏ. Thỏ đã phá hủy các vùng đất rộng lớn và trâu nước đã gây ra thiệt hại về môi trường ở các con sông. Người bản địa đã du nhập chó dingo, một loại chó hoang, nhưng chúng đã thích nghi thành công và trở thành một phần của loài bản địa."
+,voca:"",
 }
 ];

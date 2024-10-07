@@ -351,18 +351,18 @@ W: No, the place we went to rented out small private rooms. Nobody else could he
 M: Cool! What kind of music did they have?<br>\
 W: They had hundreds of different songs to choose from. They had both new songs and old songs. They had songs in English and songs in several other languages, too. It was really fun!<br>\
 M: I think I’ll go karaoke singing next weekend!",
-vi:"Unit 16 Karaoke<br>\
-M: It’s nice to see you, Karen. How have you been?<br>\
-W: I’ve been very well, thank you. How are you, Dan?<br>\
-M: I’m fine, thanks. I went to the movies Saturday night. I wanted to invite you, but you weren’t home.<br>\
-W: That’s right, I went karaoke singing with some friends on Saturday night.<br>\
-M: Really? I’ve never sung karaoke. What’s it like?<br>\
-W: I had never gone karaoke singing before either, but I had a great time. My friends were experienced karaoke singers, so they showed me what to do.<br>\
-M: Did you have to sing in front of a lot of strangers?<br>\
-W: No, the place we went to rented out small private rooms. Nobody else could hear us. They even gave us free sodas!<br>\
-M: Cool! What kind of music did they have?<br>\
-W: They had hundreds of different songs to choose from. They had both new songs and old songs. They had songs in English and songs in several other languages, too. It was really fun!<br>\
-M: I think I’ll go karaoke singing next weekend!",
+vi:"Bài 16 Karaoke<br>\
+M: Rất vui được gặp bạn, Karen. Bạn thế nào?<br>\
+W: Tôi rất khỏe, cảm ơn bạn. Bạn thế nào, Dan?<br>\
+M: Tôi khỏe, cảm ơn bạn. Tôi đã đi xem phim vào tối thứ bảy. Tôi muốn mời bạn, nhưng bạn không ở nhà.<br>\
+W: Đúng vậy, tôi đã đi hát karaoke với một số người bạn vào tối thứ bảy.<br>\
+M: Thật sao? Tôi chưa bao giờ hát karaoke. Cảm giác thế nào?<br>\
+W: Tôi cũng chưa bao giờ đi hát karaoke trước đây, nhưng tôi đã có một khoảng thời gian tuyệt vời. Bạn bè tôi là những ca sĩ hát karaoke có kinh nghiệm, vì vậy họ đã chỉ cho tôi cách làm.<br>\
+M: Bạn có phải hát trước mặt nhiều người lạ không?<br>\
+W: Không, nơi chúng tôi đến thuê những phòng riêng nhỏ. Không ai khác có thể nghe thấy chúng tôi. Họ thậm chí còn tặng chúng tôi soda miễn phí!<br>\
+M: Tuyệt! Họ có thể loại nhạc gì?<br>\
+W: Họ có hàng trăm bài hát khác nhau để lựa chọn. Họ có cả bài hát mới và bài hát cũ. Họ có bài hát bằng tiếng Anh và một số ngôn ngữ khác nữa. Thật sự rất vui!<br>\
+M: Tôi nghĩ mình sẽ đi hát karaoke vào cuối tuần tới!",
 voca:"language,invite,private,rented,stranger,free,karaoke,experience,choose,soda"
 },
 {en:"Unit 17 Watching TV<br>\
@@ -847,7 +847,7 @@ W: Sau đó, tôi sẽ bay đến Toronto và đi xe buýt đến Thác Niagara.
 M: Wow! Thật là một điều tuyệt vời để làm! Bạn thật may mắn!<br>\
 W: Chà, tôi hy vọng mình không bị say sóng! Tôi sẽ kết thúc chuyến đi của mình ở Nova Scotia. Tôi muốn ăn tôm hùm vào bữa tối mỗi tối. Và tôi cũng muốn đạp xe quanh một số làng chài nhỏ nữa.<br>\
 M: Chúc bạn có một khoảng thời gian tuyệt vời và chụp thật nhiều ảnh nhé!",
-	voca:"lobster,amazing,seasick,travel,agency,waterfall,fishing,village,package,tour,deposit,motorcycle,huge"
+voca:"lobster,amazing,seasick,travel,agency,waterfall,fishing,village,package,tour,deposit,motorcycle,huge,planning,to go to,How exciting,spend a few days,take a train through,take a boat,for dinner,bike around,fly, going for a month,see as much as I can"
 },
 {
 	en:"Unit 37 A Trip to Europe<br>\

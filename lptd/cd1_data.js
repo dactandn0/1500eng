@@ -630,7 +630,7 @@ W: Actually, I got them for $15 at Super Glasses.<br>\
 M: There is a Super Glasses store in this mall, isn’t there?<br>\
 W: Yes, but let me show you the sunglasses we have on sale.<br>\
 M: No, thanks. I think I’ll just go to Super Glasses!'
-, vi:'Đơn vị 28 Mua sắm<br>\
+, vi:'Bài 28 Mua sắm<br>\
 W: Chúng tôi đang có chương trình giảm giá mùa hè. Mọi thứ đều giảm giá 50% so với giá thông thường.<br>\
 M: Thật sao? Mọi thứ sao?<br>\
 W: Vâng. Mọi thứ đều được giảm giá, bao gồm cả kính râm, mũ và túi xách. Tất cả quần áo mùa hè cũng đang được giảm giá.<br>\

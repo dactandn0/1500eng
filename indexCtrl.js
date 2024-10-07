@@ -84,9 +84,14 @@ $scope.sentenceSearches = [];
 
 // clear Search data when routed
 $scope.$on('$routeChangeSuccess', function($event, next, current) { 
-    $scope.search = "";
-    $scope.searchDataResult = [];
+    $scope.clearSearch();
  });
+
+$scope.clearSearch = function () {
+  $scope.search = '';
+  $scope.searchDataResult = [];
+  $scope.sentenceSearches = []
+};
 
 $scope.saveNoted = function(event, word) {
   event.target.style.borderColor = 'black';
@@ -125,11 +130,6 @@ $scope.searchTyping = function() {
     }
 }
 
-$scope.clearSearch = function () {
-	$scope.search = '';
-	$scope.searchDataResult = [];
-  $scope.sentenceSearches = []
-};
 
 $scope.preProcess = function () {
 	for (var k = 0; k < $scope.kAllVocaWords.length; k++) {

@@ -234,6 +234,17 @@ both + us/you/them <br>\
 both ....  + V_số nhiều<br>\
 <br>\
 all/most/some/any/no + N đếm | ko đếm<br>\
-a lot of / lots of + N đếm | ko đếm<br>",
+a lot of / lots of + N đếm | ko đếm<br>\
+<br>\
+- Several: một vài<br>\
+- Various: nhiều, đa dạng<br>\
+- Numerous: rất nhiều<br>\
+- Countless: vô số<br>\
+- Plenty of: nhiều<br>\
+- Dozens of: hàng chục<br>\
+- Scores of: số lượng lớn<br>\
+- A large number of: một số lượng lớn<br>\
+- A multitude of: rất nhiều<br>\
+- A great deal of: rất nhiều (uncountable)",
 },
 ]

@@ -57,7 +57,7 @@ app.config(function($routeProvider) {
       });
  }); // route
 
-app.controller("indexCtrl",  ['$scope', 'appAlert','$location', function($scope, appAlert, $location, $rootScope) {
+app.controller("indexCtrl",  ['$scope', 'appAlert','$location',  function($scope, appAlert, $location, $rootScope) {
 IndexCtrlScope = $scope;
 
 $scope.kAllVocaWords = WORDS_3K_DATA
@@ -161,6 +161,10 @@ $scope.Index_Speak = function (event, word, fullSentence = false) {
   Helper_Speak(event, word, fullSentence);
 }
 
+$scope.Index_ngClickWordSpeak = function (event) {
+  Helper_ngClickWordSpeak(event);
+}
+
 
 $scope.showExampleModal = function(wordFull, event) {
       var sentences = $scope.fetchSentences(wordFull);
@@ -236,3 +240,28 @@ $scope.loadData = function () {
 $scope.loadData();
 
 }]);  //end of ctrl
+
+app.directive('compile', ['$compile', function ($compile) {
+    return function(scope, element, attrs) {
+        scope.$watch(
+            function(scope) {
+                // watch the 'compile' expression for changes
+                return scope.$eval(attrs.compile);
+            },
+            function(value) {
+                // when the 'compile' expression changes
+                // assign it into the current DOM
+                element.html(value);
+
+                // compile the new DOM and link it to the current
+                // scope.
+                // NOTE: we only compile .childNodes so that
+                // we don't get into infinite loop compiling ourselves
+                $compile(element.contents())(scope);
+
+            }
+        );
+    };
+}])
+
+

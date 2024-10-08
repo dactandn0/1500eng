@@ -1,6 +1,6 @@
 
-const ITALIC_RED_TAG_BEGIN = '<i class="text-danger">'
-const ITALIC_RED_TAG_END = '</i>'
+const UNCOUNT_TAG_BEGIN = '<span class="uncount_voca_story">'
+const UNCOUNT_TAG_END = '</span>'
 const kBackTimeAudio = 8; //8s
 
 var Helper_AudioSpeed = 0.9;
@@ -34,7 +34,7 @@ fame,food,freedom,fun,hair,health,homework,juice,luggage,milk,news,poetry,progre
 assistance,attention,athletics,access,adulthood,alcohol,applause,agriculture,atmosphere,anger,art,absence,aid,arithmetic,age,beef,bravery,business,\
 blood,botany,bacon,baggage,ballet,butter,biology,behaviour,cake,cash,chaos,compassion,calm,corruption,comprehension,cheese,currency,carbon,cardboard,\
 chalk,chess,coal,commerce,confusion,cookery,countryside,crockery,cutlery,content,cotton,data,dancing,democracy,damage,darkness,determination,\
-delight,depression,driving,dignity,dessert,design,dust,distribution,dirt,duty,economics,earth,expense,electricity,enthusiasm,enjoyment,\
+delight,depression,driving,dignity,dessert,design,dust,distribution,dirt,duty,economics,earth,expense,electricity,enthusiasm,danger,enjoyment,\
 envy,evil,engineering,entertainment,evolution,existence,ethics,evidence,employment,experience,failure,fire,fiction,fashion,forgiveness,faith,flour,\
 flu,fear,finance,fruit,fuel,friendship,flesh,genetics,garbage,growth,grief,grammar,garlic,gossip,gymnastics,glass,grass,golf,gratitude,ground,guilt,\
 harm,hardware,hydrogen,help,hate,hope,hospitality,heat,hatred,hunger,honey,humour,honesty,height,housework,history,ice,independence,infrastructure,\
@@ -66,7 +66,7 @@ RANGE = function(min, max, step) {
 };
 
 document.write('<small class="note">\
-	<i class="text-danger">italic-red:</i> uncount.noun<br>\
+	<span class="text-danger">red:</span> uncount.noun<br>\
 	<u>underline:</u> noun=verb<br>\
 	</small>'
 	);
@@ -101,13 +101,16 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	return graph;
 }
 
-// 4000 words
-function hLightWords(text) {
-	if (text.trim()===0) return '';
-	if (UNCOUNT_NOUNS.indexOf(text) != -1){
-		return ITALIC_RED_TAG_BEGIN + text + ITALIC_RED_TAG_END;
+function ngClickOnWord(word, graph) {
+	if (ValidateWord(word) && word !=='br') 
+  	{
+		const tagOpen = '<span ng-click="Index_ngClickWordSpeak($event)">'
+		const tagClose = '</span>'
+
+		var regex = new RegExp(`\\b${word}\\b` , 'g')
+		return graph.replace(regex, tagOpen + word + tagClose);
 	}
-	return text;
+	return graph
 }
 
 function processStory (story) {
@@ -135,10 +138,12 @@ function processStory (story) {
 	for (let i = 0; i < words.length; i++) {
 	  	var word = words[i];
 
-		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , ITALIC_RED_TAG_BEGIN, ITALIC_RED_TAG_END );
+		story.enShow = ngClickOnWord(word, story.enShow);
+		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
 
-	  	// make ....
+	  	// make .... en_hidden_words
+	  	/*
 	  	if (ValidateWord(word)) 
 	  	{
 				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
@@ -156,6 +161,7 @@ function processStory (story) {
 					story.en_hidden_words = newString;
 				}
 	  	}
+	  	*/
 	} // for
 	var titleEn = story.en_hidden_words.split('<br>')[0];
 	story.en_hidden_words = story.en_hidden_words.replace(titleEn, '' );
@@ -228,9 +234,9 @@ function ValidateWord(word, minL = 2)
 	word = word.trim().toLowerCase();
 	if (!isAsciiString(word)) result = false;
 
-	let arr = ['<br>','<b>','</b>', '/','(',')', '[',']'];
+	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']'];
 	for (var i = 0; i < arr.length; i++) {
-		bList = arr[i];
+		var bList = arr[i];
 		if (word.indexOf(bList) >= 0) {
 			result = false;
 		}
@@ -309,7 +315,28 @@ Helper_Speak = function (event, txt, fullSentence) {
 	if (!UtterEnd) return;
 
 	var target = Helper_GetVocaFromWordFull(txt);
-	if (fullSentence) target = txt.replace(/(<([^>]+)>)/ig, '');;
+	if (fullSentence) target = txt.replace(/(<([^>]+)>)/ig, '');
+
+	 speechSynthesis.getVoices();
+	 const utter = new SpeechSynthesisUtterance(target);
+	 utter.text = target;
+	 utter.rate  = Helper_AudioSpeed;
+	 utter.lang='en-US';
+
+	 utter.addEventListener('end', (evt) => {
+  		const { charIndex, utterance } = evt
+  			UtterEnd = true;
+		})
+
+	 speechSynthesis.speak(utter);
+	 UtterEnd = false;
+}
+
+Helper_ngClickWordSpeak = function (event) {
+
+	if (!UtterEnd) return;
+
+	var target = event.target.innerText;
 
 	 speechSynthesis.getVoices();
 	 const utter = new SpeechSynthesisUtterance(target);

@@ -55,9 +55,8 @@
 				    <a href ng-click="showText=!showText"> {{story.title}}</a>
 				 </h6>
 	          	 <div class="accordion-content">
-	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi && !bHiddenWords && showText"></p>
+	          		<p compile="story.enShow" ng-if="!bShowVi && showText"></p>
 	          		<p ng-bind-html="story.viShow" ng-if="bShowVi && showText""></p>
-	          		<p ng-bind-html="story.en_hidden_words" ng-if="bHiddenWords && !bShowVi && showText"></p>
 	          	</div>
 	          		<hr>	
 	        	<div class="px-2" ng-if="story.vocaNotes.length">

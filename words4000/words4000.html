@@ -54,7 +54,7 @@
 				    <a href> {{story.title}}</a>
 				 </h6>
 	          	 <div class="accordion-content">
-	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi"></p>
+	          		<p compile="story.enShow" ng-if="!bShowVi"></p>
 	          		<p ng-bind-html="story.viShow" ng-if="bShowVi""></p>
 	          	</div>
 

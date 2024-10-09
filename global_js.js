@@ -144,9 +144,10 @@ function processStory (story) {
 	for (let i = 0; i < words.length; i++) {
 	  	var word = words[i];
 
-		story.enShow = ngClickOnWord(word, story.enShow);
 		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
+		story.enShow = ngClickOnWord(word, story.enShow);
+
 
 	} // for
 
@@ -163,7 +164,7 @@ function processStory (story) {
 				story.vocaNotes.push(temp);
 			}
 			voca = voca.replace(/\[.*\]/g, '').trim();
-			var regex = new RegExp(`\\b${voca}` , 'g')
+			var regex = new RegExp(`\\b${voca}\\b` , 'g')
 			story.enShow = story.enShow.replace(regex, '<b>' + voca + '</b>');
 		}
 	}

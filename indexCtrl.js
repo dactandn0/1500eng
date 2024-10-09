@@ -165,11 +165,11 @@ $scope.Index_ngClickWordSpeak = function (event) {
   Helper_ngClickWordSpeak(event);
 
   var src = event.target.innerText;
+  
   for (var i = 0; i < $scope.searchData.length; i++) {
     var wordFull = $scope.searchData[i]
     var word = Helper_GetVocaFromWordFull(wordFull);
-    console.log(word)
-    if (word===src) {
+    if (word.toLowerCase()===src.toLowerCase()) {
         toastr.info(wordFull);
         break;
     }
@@ -284,10 +284,10 @@ app.config(function(toastrConfig) {
     maxOpened: 0,    
     newestOnTop: true,
     positionClass: 'toast-bottom-center',
-    preventDuplicates: true,
-    preventOpenDuplicates: true,
+    preventDuplicates: false,
+    preventOpenDuplicates: false,
     target: 'body',
-    timeOut: 2000,
+    timeOut: 4000,
     tapToDismiss: true,
   });
 });

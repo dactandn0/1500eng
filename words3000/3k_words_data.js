@@ -46,7 +46,9 @@ Book (n) /bʊk/ Sách<br>\
 Board (n) /bɔːd/ Bảng<br>\
 Binder (n) /ˈbaɪn.dər/ Bìa rời (báo, tạp chí)<br>\
 Beaker (n) /ˈbiː.kər/ Cốc bêse<br>\
-Backpack (n) /ˈbæk.pæk/ Ba lô<br>\
+Backpack (n) /ˈbækpækər/ Ba lô<br>\
+Backpacker (n) /ˈbæk.pæk/ Du khách ba lô<br>\
+Backpacking (n) Đi du lịch ba lô<br>\
 Funnel (n) /ˈfʌn.əl/ Cái phễu",
 },
 {
@@ -1363,6 +1365,7 @@ Pants (n) /pænts/ Quần dài<br>\
 Belt (n) /bɛlt/ Dây nịt<br>\
 High heels (n) /haɪ hiːlz/ Giày cao gót<br>\
 Try on (v) /traɪ ɒn/ Thử (quần áo)<br>\
+Try (v) /traɪ/ Thử<br>\
 Size (n) /saɪz/ Kích cỡ",
 }
 ,{
@@ -1509,7 +1512,7 @@ Papaya (n) /pəˈpaɪ.ə/ Quả đu đủ<br>\
 Avocado (n) /ˌæv.əˈkɑː.doʊ/ Quả bơ<br>\
 Starfruit (n) /ˈstɑːrˌfruːt/ Quả khế<br>\
 Pineapple (n) /ˈpaɪnˌæp.əl/ Quả dứa<br>\
-Coconut (n) /ˈkoʊ.kəˌnʌt/ Quả dừa<br>\
+Coconut (n) /ˈkoʊ.kəˌnʌt/ Quả dừa (+tree)<br>\
 Raspberry (n) /ˈræzˌbɛr.i/ Quả mâm xôi<br>\
 Nectarine (n) /ˈnɛk.təˌriːn/ Quả xuân đào<br>\
 Mulberry (n) /ˈmʌlˌbɛr.i/ Quả dâu tằm<br>\
@@ -1622,7 +1625,6 @@ Flower (n) /ˈflaʊ.ər/ Hoa<br>\
 Grass (n) /ɡræs/ Cỏ<br>\
 Herb (n) /hɜːrb/ Thảo mộc<br>\
 Bush (n) /bʊʃ/ Bụi cây, bụi rậm<br>\
-Coconut tree (n) /ˈkoʊ.kəˌnʌt triː/ Cây dừa<br>\
 Apple tree (n) /ˈæpəl triː/ Cây táo<br>\
 Shrubland (n) /ˈʃrʌblænd/ Vùng cây bụi",
 },

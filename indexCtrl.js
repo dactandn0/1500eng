@@ -161,15 +161,18 @@ $scope.Index_Speak = function (event, word, fullSentence = false) {
   Helper_Speak(event, word, fullSentence);
 }
 
-$scope.Index_ngClickWordSpeak = function (event) {
+$scope.Idx_ngCL_Wo_rdSp_eak = function (event) {
   Helper_ngClickWordSpeak(event);
 
   var src = event.target.innerText;
   
   for (var i = 0; i < $scope.searchData.length; i++) {
     var wordFull = $scope.searchData[i]
+
     var word = Helper_GetVocaFromWordFull(wordFull);
-    if (word.toLowerCase()===src.toLowerCase()) {
+    var word_s_es = Helper_N_V_Add_S_ES(word)
+
+    if (word.toLowerCase()===src.toLowerCase() || word_s_es.toLowerCase()===src.toLowerCase()) {
         toastr.info(wordFull);
         break;
     }
@@ -215,9 +218,12 @@ $scope.showConfirmModal = function(wordFull, event) {
 $scope.fetchSentences = function(wordFull) {
   
   var word = Helper_GetVocaFromWordFull(wordFull);
+
   if (word==='') return 0;
 
-  var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b${word}(s|es)*\b.*?[\?|\.|!"]+?`, 'gi');
+  var word_s_es = Helper_N_V_Add_S_ES(word);
+
+  var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b(${word}|${word_s_es})\b.*?[\?|\.|!"]+?`, 'gi');
   
   var shuffleStories = shuffle(kAllStories);
   
@@ -226,7 +232,7 @@ $scope.fetchSentences = function(wordFull) {
     var results = para.match(ptrn);  // array
 
     if (results) {
-      var regex = new RegExp(`\\b${word}` , 'gi')
+      var regex = new RegExp(`\\b(${word}|${word_s_es})` , 'gi')
       for (var i = 0; i < results.length; i++) {
         var nn = results[i];
         var match = nn.match(regex)[0];

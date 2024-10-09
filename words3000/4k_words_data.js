@@ -728,7 +728,6 @@ trial xét xử<br>\
 violent  admission bạo lực nhập học<br>\
 astronomy thiên văn học<br>\
 blame trách nhiệm<br>\
-chemistry hóa học<br>\
 despite mặc dù<br>\
 dinosaur khủng long<br>\
 exhibit triển lãm<br>\

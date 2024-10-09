@@ -293,4 +293,48 @@ Delicacy (n): món ngon<br>\
 (to) savor/ enjoy my privacy: tận hưởng sự riêng tư<br>\
 (to) sleep in: ngủ nướng"
 },
+{
+	date:"07/10/2024",
+	title:"Pros and cons of tourism",
+	en:"Animals and plants<br>\
+- the ecosystem will be destroyed by tearing down mountains to build houses and<br>\
+roads<br>\
+ + Increase awareness of people about the importance of the ecosystem<br>\
++ preservation centres will help protect the endangered animals and plants<br>\
+Buildings<br>\
++ make buildings look more attractive<br>\
++ help preserve and repair local culture and buildings<br>\
+Population<br>\
++ boost economy<br>\
+– increase the chance for social evils<br>\
+Street/ traffic<br>\
++ the number of entertainment activities will increase<br>\
++ the local infrastructure will be improved<br>\
+– the streets will become more crowded/ overcrowded/ busy<br>\
+The environment<br>\
+- tourism can cause polluted air by the number of flights<br>\
+– tourism can negatively affect animals and plants<br>\
+Jobs<br>\
++ create more job opportunities for the local<br>\
+– populated areas can be a place for scammers/ pickpocketers<br>\
+Money (doanh thu)<br>\
++ increase GDP/ income of the local area<br>\
+– raise inflation rate because …<br>\
+Price (gia ca)<br>\
+– might provide opportunities for scammers to push up the price for tourists<br>\
+Relationship<br>\
++ Provide a chance to meet foreign people from different cultures<br>\
+Education<br>\
++ Create more motivation for language learners<br>\
++ Provide valuable opportunities to practice speaking skills<br>\
+<br>\
+Example:<br>\
+There are three advantages of tourism for local people and the environment.\
+ First of all, tourism can bring in money for local people because tourists often buy souvenirs when they travel to another country.\
+  Secondly, tourism can create more job opportunities for people so they will have more money. Finally, it can educate tourists about the environment so they can protect it better.<br>\
+However, there are also three disadvantages of tourism.\
+ Firstly, new hotels and resorts can destroy the living of endangered species. Secondly, tourism can create traffic jams because many people come to visit the country.\
+  Lastly, tourism can increase food prices for local people because shops are designed for tourists"
+,voca:"First of all,Secondly,Lastly,advantages,disadvantages",
+}
 ]

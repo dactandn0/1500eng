@@ -14,8 +14,8 @@ cruel (a) /ˈkruːəl/ tàn ác<br>\
 finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
-moment khoảnh khắc<br>\
-pleased vui lòng<br>\
+moment (n) khoảnh khắc<br>\
+pleased (a) vui lòng<br>\
 promise hứa<br>\
 reply trả lời<br>\
 safe an toàn<br>\
@@ -25,7 +25,7 @@ approach tiếp cận<br>\
 carefully cẩn thận<br>\
 chemical hóa học<br>\
 evil ác<br>\
-experiment thí nghiệm<br>\
+experiment (n) /ɪkˈsperɪmənt/ thí nghiệm<br>\
 kill giết<br>\
 laboratory phòng thí nghiệm<br>\
 laugh cười<br>\
@@ -46,7 +46,7 @@ describe (v) /dɪˈskraɪb/ mô tả<br>\
 ever bao giờ<br>\
 fail thất bại<br>\
 grade cấp<br>\
-instead thay thế<br>\
+instead (adv) /ɪnˈsted/ thay thế<br>\
 library thư viện<br>\
 planet hành tinh<br>\
 report báo cáo<br>\
@@ -58,9 +58,9 @@ universe vũ trụ<br>\
 appropriate thích hợp<br>\
 avoid tránh<br>\
 behave hành xử<br>\
-concern quan tâm<br>\
+concern (v) /kənˈsɜːrn/ quan tâm<br>\
 content nội dung<br>\
-expect mong đợi<br>\
+expect (v) /ɪkˈspekt/ mong đợi<br>\
 frequently thường xuyên<br>\
 habit thói quen<br>\
 instruct hướng dẫn<br>\
@@ -90,7 +90,7 @@ result kết quả<br>\
 roll lăn<br>\
 since kể từ<br>\
 visible (a) dễ thấy<br>\
-wild  hoang dã<br>\
+wild (a) /waɪld/ hoang dã<br>\
 advantage lợi thế<br>\
 cause nguyên nhân<br>\
 choice lựa chọn<br>\
@@ -99,7 +99,7 @@ dead chết<br>\
 distance (n,v) khoảng cách<br>\
 escape thoát<br>\
 face mặt<br>\
-follow theo<br>\
+follow (v) /ˈfɑːləʊ/ theo<br>\
 fright sợ hãi<br>\
 ghost ma<br>\
 individual cá nhân<br>\
@@ -311,7 +311,7 @@ season mùa<br>\
 solution giải pháp<br>\
 waste chất thải<br>\
 whether  cho dù<br>\
-argue tranh luận<br>\
+argue (v) /ˈɑːrɡjuː/ tranh luận<br>\
 crowd đám đông<br>\
 depend phụ thuộc<br>\
 empty trống rỗng<br>\
@@ -345,7 +345,7 @@ social xã hội<br>\
 speech bài phát biểu<br>\
 staff nhân viên<br>\
 toward hướng tới<br>\
-wood  gỗ<br>\
+wood gỗ<br>\
 achieve đạt được<br>\
 advise khuyên bảo<br>\
 already đã<br>\
@@ -359,10 +359,10 @@ goal mục tiêu<br>\
 meat thịt<br>\
 opinion ý kiến<br>\
 reflect phản ánh<br>\
-regard xem xét<br>\
+regard (v) /rɪˈɡɑːrd/ xem xét<br>\
 vegetable rau<br>\
 war chiến tranh<br>\
-worth  đáng giá<br>\
+worth đáng giá<br>\
 appear xuất hiện<br>\
 base cơ sở<br>\
 brain não<br>\
@@ -383,14 +383,14 @@ refuse từ chối<br>\
 though mặc dù<br>\
 various  khác nhau<br>\
 actual thực tế<br>\
-amaze kinh ngạc<br>\
+amaze (v) /əˈmeɪz/ kinh ngạc<br>\
 charge tính phí<br>\
 comfort thoải mái<br>\
 contact liên hệ<br>\
-deliver giao hàng<br>\
+deliver (v) /dɪˈlɪvər/ giao hàng<br>\
 earn kiếm được<br>\
 gate cổng<br>\
-include bao gồm<br>\
+include (v) /ɪnˈkluːd/ bao gồm<br>\
 manage quản lý<br>\
 mystery bí ẩn<br>\
 occur xảy ra<br>\
@@ -409,7 +409,7 @@ behind đằng sau<br>\
 course khóa học<br>\
 lower thấp hơn<br>\
 member thành viên<br>\
-mental tinh thần<br>\
+mental (a)  /ˈmentl/ tinh thần<br>\
 passenger hành khách<br>\
 personality tính cách<br>\
 poem bài thơ<br>\
@@ -512,7 +512,7 @@ stage sân khấu<br>\
 storm bão<br>\
 within  trong<br>\
 advertise quảng cáo<br>\
-assign giao<br>\
+assign (v) /əˈsaɪn/ giao<br>\
 audience khán giả<br>\
 breakfast bữa sáng<br>\
 competition cuộc thi<br>\
@@ -660,7 +660,7 @@ biology sinh học<br>\
 cage lồng<br>\
 colleague đồng nghiệp<br>\
 colony thuộc địa<br>\
-debate tranh luận<br>\
+debate (v) /dɪˈbeɪt/ tranh luận<br>\
 depart khởi hành<br>\
 depress ức chế<br>\
 factual thực tế<br>\

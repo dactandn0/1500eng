@@ -8,7 +8,7 @@
         </h6>
           <div class="accordion-content" ng-show="acc_isShow($index)">
               <p><i>{{story.title}}</i></p>
-             <p ng-bind-html="story.en"></p>
+             <p compile="story.en"></p>
              <div class="mt-1" ng-if="story.vocaNotes">
                   <hr/>
                   <p  class="mb-1" ng-repeat="note in story.vocaNotes">

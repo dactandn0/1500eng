@@ -58,7 +58,9 @@
 	          		<p compile="story.enShow" ng-if="!bShowVi && showText"></p>
 	          		<p ng-bind-html="story.viShow" ng-if="bShowVi && showText""></p>
 	          	</div>
-	          		<hr>	
+
+	          	<hr ng-if="story.vocaNotes.length">	
+	          	
 	        	<div class="px-2" ng-if="story.vocaNotes.length">
 	        		<p class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
 	          			{{note}}

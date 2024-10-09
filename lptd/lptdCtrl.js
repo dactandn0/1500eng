@@ -9,7 +9,7 @@ function MYLOG(msg) {
 //	console.log(msg);
 }
 
-var app = angular.module("lptdApp", ['ngSanitize']);
+var app = angular.module("lptdApp", []);
 app.controller("lptdCtrl", function($scope, $rootScope, $timeout) {
 $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();

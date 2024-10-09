@@ -1,6 +1,6 @@
 
-const UNCOUNT_TAG_BEGIN = '<span class="uncount_voca_story">'
-const UNCOUNT_TAG_END = '</span>'
+const UNCOUNT_TAG_BEGIN = '<xxx class="abcdxyz">'
+const UNCOUNT_TAG_END = '</xxx>'
 const kBackTimeAudio = 8; //8s
 
 var Helper_AudioSpeed = 0.9;
@@ -66,8 +66,8 @@ RANGE = function(min, max, step) {
 };
 
 document.write('<small class="note">\
-	<span class="text-danger">red:</span> uncount.noun<br>\
-	<u>underline:</u> noun=verb<br>\
+	<span class="text-danger">red:</span> uncount.n<br>\
+	<u>u:</u> n = v<br>\
 	</small>'
 	);
 
@@ -89,8 +89,8 @@ function preprocess() {
 
 };
 
-function isInArr(word, arr) {
-	return arr.includes(word);
+function isInArr(ele, arr) {
+	return arr.includes(ele);
 };
 
 function hLightWord(word, arr, graph, tagOpen, tagClose) {
@@ -101,13 +101,21 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	return graph;
 }
 
+var dones = []
 function ngClickOnWord(word, graph) {
-	if (ValidateWord(word) && word !=='br') 
+	if (ValidateWord(word) 
+		&& word !=='br'
+		&& word !=='hr' 
+		&& UNCOUNT_TAG_BEGIN.indexOf(word) === -1
+		&& !isInArr(word, dones)
+		) 
   	{
 		const tagOpen = '<span ng-click="Index_ngClickWordSpeak($event)">'
 		const tagClose = '</span>'
 
 		var regex = new RegExp(`\\b${word}\\b` , 'g')
+
+		dones.push(word)
 		return graph.replace(regex, tagOpen + word + tagClose);
 	}
 	return graph
@@ -117,7 +125,6 @@ function processStory (story) {
 	if (story.en.trim().length == 0) return story;
 	story.enShow = '';
 	story.viShow = '';
-	story.en_hidden_words = '';
 
 	// bold title
 	var titleEn = story.en.split('<br>')[0];
@@ -126,7 +133,6 @@ function processStory (story) {
 	var titleVi = story.vi.split('<br>')[0];
 	story.viShow = story.vi.replace(titleVi, titleVi);
 
-	story.en_hidden_words = story.en;
 
 	story.title = titleEn;
 	var trackNum = titleEn.replace(/[^0-9.]/g, '');
@@ -142,29 +148,7 @@ function processStory (story) {
 		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
 
-	  	// make .... en_hidden_words
-	  	/*
-	  	if (ValidateWord(word)) 
-	  	{
-				var rd = Math.floor(Math.random() * 11);   // integer from 0 to 12
-				if (rd % 5 == 0) {
-					var _w = kSpace + word + kSpace;
-					var idxOf = story.en.indexOf(_w);
-					var obj = {'w': _w, "idx": idxOf}
-					kDot = kSpace + word.replace(/./g, ".") + kSpace;
-					var s = story.en_hidden_words;
-
-					let firstPart = s.substr(0, idxOf);
-			    	let lastPart = s.substr(idxOf + kDot.length);
-			    	let newString = firstPart + kDot + lastPart;
-
-					story.en_hidden_words = newString;
-				}
-	  	}
-	  	*/
 	} // for
-	var titleEn = story.en_hidden_words.split('<br>')[0];
-	story.en_hidden_words = story.en_hidden_words.replace(titleEn, '' );
 
 	if (story.voca) {
 		var vocas = story.voca.split(',');
@@ -280,7 +264,8 @@ function shuffle(array) {
 }
 
 function isAsciiString(text) {
-	var r = /^[\x00-\x7F]+$/g.test(text);
+	var tiengViet = ['giao','vui','trong', 'bao', 'kinh', 'tinh']
+	var r = /^[\x00-\x7F]+$/g.test(text) && !isInArr(r, tiengViet);
     return r;
 } 
 

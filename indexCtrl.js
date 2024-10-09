@@ -9,7 +9,7 @@ var app = angular.module("myApp", [
   'grammerApp','lptdApp',
   'words3000App','words4000App',
   'modalApp',
-  'ngSanitize','ngRoute',
+  'ngSanitize','ngRoute','toastr'
   ]);
 app.config(function($routeProvider) {
     $routeProvider
@@ -57,7 +57,7 @@ app.config(function($routeProvider) {
       });
  }); // route
 
-app.controller("indexCtrl",  ['$scope', 'appAlert','$location',  function($scope, appAlert, $location, $rootScope) {
+app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr',  function($scope, appAlert, $location, toastr, $rootScope ) {
 IndexCtrlScope = $scope;
 
 $scope.kAllVocaWords = WORDS_3K_DATA
@@ -163,6 +163,17 @@ $scope.Index_Speak = function (event, word, fullSentence = false) {
 
 $scope.Index_ngClickWordSpeak = function (event) {
   Helper_ngClickWordSpeak(event);
+
+  var src = event.target.innerText;
+  for (var i = 0; i < $scope.searchData.length; i++) {
+    var wordFull = $scope.searchData[i]
+    var word = Helper_GetVocaFromWordFull(wordFull);
+    console.log(word)
+    if (word===src) {
+        toastr.info(wordFull);
+        break;
+    }
+  }
 }
 
 
@@ -265,3 +276,18 @@ app.directive('compile', ['$compile', function ($compile) {
 }])
 
 
+// https://github.com/Foxandxss/angular-toastr
+app.config(function(toastrConfig) {
+  angular.extend(toastrConfig, {
+    autoDismiss: false,
+    containerId: 'toast-container',
+    maxOpened: 0,    
+    newestOnTop: true,
+    positionClass: 'toast-bottom-center',
+    preventDuplicates: true,
+    preventOpenDuplicates: true,
+    target: 'body',
+    timeOut: 2000,
+    tapToDismiss: true,
+  });
+});

@@ -34,7 +34,7 @@
 				    <a href ng-click="acc_click($index)"> {{story.title}}</a>
 				 </h6>
 	          	 <div class="accordion-content" ng-show="acc_isShow($index)">
-	          		<p ng-bind-html="story.enShow" ng-if="!bShowVi"></p>
+	          		<p compile="story.enShow" ng-if="!bShowVi"></p>
 	          		<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
 	          	</div>
 	        	<div class="mt-1 p-3" ng-if="story.vocaNotes.length">

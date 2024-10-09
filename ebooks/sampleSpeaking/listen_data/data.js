@@ -107,7 +107,7 @@ Candidate: Well, if! have the time, I do enjoy going for a swim every once in a 
 Examiner: OK Sara. How much time do you spend with your friends in your spare time? <br>\
 Candidate: Well, I like to divide that spare time between my family and my friends. Obviously, I see my family every day, mostly over a meal in the evening. Friends, it's not so. Of course, my university friends I'll see during the day, if we have classes together. But other friends, it's difficult to catch up on a regular basis. I'd say I wouldn't mind spending one day a week catching up with my friends and seeing what they're up to, and exchanging our weekly stories.<br>\
 Examiner: Alright Sara, now we move onto another topic. I will show you a topic card and I would like you to talk about the topic for about two minutes. You have once minute to organise your mind and think about the topic. Here is a paper and a pencil and you can write down notes if you wish.<br>\
-Candidate: Thank you very much.<br>\
+Candidate: Thank you very much.\
 <hr><br>\
 Describe your favorite photograph. <br>\
 You should say: <br>\

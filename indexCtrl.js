@@ -8,7 +8,7 @@ var app = angular.module("myApp", [
   'bridgeRApp','bridgeLApp',
   'grammerApp','lptdApp',
   'words3000App','words4000App',
-  'modalApp',
+  'modalApp', 'audioApp',
   'ngSanitize','ngRoute','toastr'
   ]);
 app.config(function($routeProvider) {
@@ -251,7 +251,7 @@ $scope.fetchSentenceSearch = function() {
 
 $scope.loadData = function () {
   $scope.preProcess();
- // $scope.findSameWord();
+ $scope.findSameWord();
 };
 
 $scope.loadData();
@@ -293,7 +293,8 @@ app.config(function(toastrConfig) {
     preventDuplicates: false,
     preventOpenDuplicates: false,
     target: 'body',
-    timeOut: 4000,
+    timeOut: 5000,
     tapToDismiss: true,
   });
 });
+

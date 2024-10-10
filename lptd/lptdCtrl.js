@@ -10,10 +10,7 @@ function MYLOG(msg) {
 }
 
 var app = angular.module("lptdApp", []);
-app.controller("lptdCtrl", function($scope, $rootScope, $timeout) {
-$rootScope.$on('$routeChangeStart', function () {
-	$scope.stopSound();
-  });
+app.controller("lptdCtrl", function($scope, $rootScope, $timeout ) {
 
 var kSTORIES = lptd_cd1_stories;
 radioCDChange = function (cd) {
@@ -40,15 +37,12 @@ $scope.range = function(min, max, step) {
     return RANGE(min, max, step);
 };
 
-
 $scope.storyIdx = 0;
-$scope.bPlayingFull = false;
-$scope.bPause = false;
 $scope.bShowVi = 0;
-$scope.bHiddenWords = 0;
-$scope.audio;
-$scope.currentTime = 0;
 
+$scope.createAudioScr = function() {
+	return "./lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3';
+}
 
 $scope.units = [
 	{'title':"Nature", 'num': 1},
@@ -61,99 +55,50 @@ $scope.units = [
 	{'title':"Travel", 'num':36},
 ];
 
-$scope.resetFlag = function () {
-	$scope.bPlayingFull = false;
-	$scope.bPause = false;
-	$scope.bShowVi = 0;
-	$scope.bHiddenWords = 0;
-}	
+$scope.$on('parent_whenAudioEnded', function(event, message) {
+	$scope.whenAudioEnded();
+});
 
-$scope.backSound = function (mul) {
-	$scope.audio.currentTime = $scope.audio.currentTime + kBackTimeAudio * mul;
-}
-
-$scope.resetAudioBtnUI = function()
+$scope.whenAudioEnded = function()
 {
-	$scope.bPause=false;
-    $scope.bPlayingFull=false;
-
+	var nextStoryIdx = $scope.storyIdx;
     var loopRadio = 0;
     if (localStorage.hasOwnProperty("audio_loop")) {
 		loopRadio = localStorage.audio_loop;
-		MYLOG(loopRadio)
 	}
     if (loopRadio==='1') // loop
     {
-    	$scope.playFullSound($scope.storyIdx);
+    	$scope.$broadcast('child_playFullSound', $scope.createAudioScr())  
     } else if (loopRadio==='2') // play next
     {
-    	var next = $scope.storyIdx + 1;
-    	if (next > 39) { next = 0 }; 
-    	$scope.fetchStory(next, true);
-    	$scope.playFullSound(next);
+    	nextStoryIdx = $scope.storyIdx + 1;
+    	if (nextStoryIdx > 39) { nextStoryIdx = 0 }; 
+    	$scope.fetchStory(nextStoryIdx, true);
+
+    	$scope.storyIdx = nextStoryIdx;
+    	$scope.$broadcast('child_playFullSound', $scope.createAudioScr())  
     }
 
     $scope.$apply();
 }
-
-$scope.playFullSound = function (index) {
-	if ($scope.bPlayingFull)
-	{
-		$scope.stopSound();
-		$scope.bPause=false;
-	}
-  	else
-  	{
-  		$scope.audio = new Audio("lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
-	    $scope.audio.loop = false;
-	    $scope.audio.play();
-
-		$scope.audio.addEventListener("ended", function(){
-		   $scope.resetAudioBtnUI();
-		});
-
-	    $scope.bPlayingFull = true;
-  	}
-}
-
-$scope.pauseSound = function () {
-	if (!$scope.audio) return;
-	$scope.bPause = !$scope.bPause;
-	if ($scope.bPause)
-    {
-    	$scope.audio.pause();
-    	$scope.currentTime = $scope.audio.currentTime;
-    }
-    else
-    {
-    	$scope.audio.currentTime = $scope.currentTime;
-    	$scope.audio.play();
-    }
-}
-
-$scope.stopSound = function () {
-	if (!$scope.audio) return;
-	 $scope.audio.pause();
-	 $scope.audio.currentTime = 0;
-	 $scope.currentTime = 0;
-	 $scope.bPlayingFull = false;
-};
 
 $scope.fetchStory = function (idx, reset=true) {
 	MYLOG('fetchStory');
 	// when click 1.2.3..40
 	if (reset==true) 
 	{
-		$scope.resetFlag();
-		$scope.stopSound();
+		$scope.$broadcast("child_resetFlag","");
+		$scope.$broadcast("child_stopSound","");
 	}
+
 	$scope.stories = kSTORIES;
 	$scope.storyIdx = idx;
 	$scope.story = $scope.stories[idx];
 
+	$scope.$broadcast("child_audioSrcAsLoad", $scope.createAudioScr());
+
 	// save DB
 	localStorage.setItem("lptd_unit", idx);
-	MYLOG("localStorage save unit=" + idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);

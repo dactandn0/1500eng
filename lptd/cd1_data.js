@@ -125,8 +125,8 @@ voca:"forest,several,visitor,hundred,feet,fee,damage,reserve,national,entrance,t
 }
 ,
 {
-en:'Unit 6 An Easy Way to Shop<br> \
-G : Hey, Steve. Look at my new MP3 player!<br> \
+en:'Unit 6 An Easy Way to Shop<br>\
+G : Hey, Steve. Look at my new MP3 player!<br>\
 B : Wow! It looks cool! Where did you buy it?<br>\
 G : I bought it online at an electronics website. <br>\
 B : I’m not very good at using a computer. Is it hard to buy things online?<br>\
@@ -147,7 +147,7 @@ G: Không, bạn phải thanh toán trực tuyến bằng thẻ tín dụng.',
 voca:"website,item,button,online,choose,easy,electronics,hard,faster,credit card"
 },
 {
-en: 'Unit 7 Cell Phone Messages<br> \
+en: 'Unit 7 Cell Phone Messages<br>\
 	W: I need to check my messages.<br>\
 	M: How are you going to do that? We are in the middle of the freeway!<br>\
 	W: I’m going to use my cell phone. Haven’t you ever done that?<br>\
@@ -160,7 +160,7 @@ en: 'Unit 7 Cell Phone Messages<br> \
 	M: Thanks for telling me about this. I’ll have to try it!<br>\
 	W: You’re welcome. I think you’ll find it useful.',
  vi:
-'Bài 7 Tin nhắn trên điện thoại di động<br> \
+'Bài 7 Tin nhắn trên điện thoại di động<br>\
 W: Tôi cần kiểm tra tin nhắn của mình.<br>\
 M: Bạn định làm thế nào? Chúng ta đang ở giữa đường cao tốc!<br>\
 W: Tôi sẽ sử dụng điện thoại di động của mình. Bạn chưa bao giờ làm thế sao?<br>\

@@ -162,7 +162,6 @@ step bước<br>\
 still vẫn<br>\
 taste nếm ​​thử<br>\
 throw ném<br>\
-wave  sóng<br>\
 benefit lợi ích<br>\
 certain chắc chắn<br>\
 chance cơ hội<br>\
@@ -274,7 +273,6 @@ risk rủi ro<br>\
 wonder tự hỏi<br>\
 academy học viện<br>\
 ancient cổ đại<br>\
-board bảng<br>\
 century thế kỷ<br>\
 clue manh mối<br>\
 concert buổi hòa nhạc<br>\
@@ -478,12 +476,10 @@ suggest  gợi ý<br>\
 actually thực sự<br>\
 bite cắn<br>\
 deal thỏa thuận<br>\
-desert (n) /ˈdezərt/ sa mạc<br>\
 earthquake động đất<br>\
 effective hiệu quả<br>\
 examine kiểm tra<br>\
 false sai<br>\
-gift quà tặng<br>\
 hunger đói<br>\
 imagine tưởng tượng<br>\
 journey hành trình<br>\
@@ -491,7 +487,6 @@ puzzle (n) /ˈpʌzl/ câu đố<br>\
 quite khá<br>\
 rather khá<br>\
 specific cụ thể<br>\
-value  giá trị<br>\
 band dải<br>\
 barely adv /ˈberli/ vừa đủ<br>\
 cancel hủy<br>\
@@ -501,7 +496,6 @@ instrument (n) /ˈɪnstrəmənt/ nhạc cụ<br>\
 list danh sách<br>\
 magic ma thuật<br>\
 message tin nhắn<br>\
-notice  (v) /ˈnəʊtɪs/ thông báo<br>\
 own sở hữu<br>\
 predict dự đoán<br>\
 professor giáo sư<br>\
@@ -704,7 +698,6 @@ frustrate làm thất vọng<br>\
 govern cai trị<br>\
 plenty nhiều<br>\
 relieve giảm nhẹ<br>\
-reputation danh tiếng<br>\
 royal hoàng gia<br>\
 slave nô lệ<br>\
 struggle đấu tranh<br>\
@@ -740,7 +733,7 @@ principal chính<br>\
 row hàng<br>\
 shelf kệ<br>\
 spite mặc dù<br>\
-super siêu<br>\
+super (a) /ˈsuːpər/ siêu<br>\
 wet  abuse ướt lạm dụng<br>\
 afford có khả năng<br>\
 bake nướng<br>\
@@ -750,7 +743,6 @@ convert chuyển đổi<br>\
 decrease giảm<br>\
 fault lỗi<br>\
 fund quỹ<br>\
-generous,ingredient hào phóng,thành phần<br>\
 insist kiên trì<br>\
 mess lộn xộn<br>\
 metal kim loại<br>\
@@ -758,7 +750,7 @@ monitor giám sát<br>\
 oppose phản đối<br>\
 passive thụ động<br>\
 quantity số lượng<br>\
-sue  anxiety kiện tụng lo lắng<br>\
+sue (v) /suː/ kiện tụng<br>\
 army quân đội<br>\
 billion tỷ<br>\
 carve khắc<br>\

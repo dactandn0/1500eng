@@ -85,8 +85,9 @@ function xxx () {
 function test(noun) {
 	console.log(Helper_N_V_Add_S_ES(noun))
 } 
-test("go to school")
-test("play")
-test("baby")
+
+// test("go to school")
+// test("play")
+// test("baby")
 
 function Helper_Is(noun) {}

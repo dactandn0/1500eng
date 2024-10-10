@@ -305,7 +305,6 @@ Purchasing decisions /ˈpɜːrtʃəsɪŋ dɪˈsɪʒənz/ Quyết định mua hà
 Radio /ˈreɪdioʊ/ Đài phát thanh<br>\
 Radio advertising /ˈreɪdioʊ ˈædvərˌtaɪzɪŋ/ Quảng cáo trên đài phát thanh<br>\
 Regulators /ˈrɛɡjəˌleɪtərz/ Cơ quan quản lý<br>\
-Sale /seɪl/ Buôn bán<br>\
 Sales page /seɪlz peɪdʒ/ Trang bán hàng, trang giới thiệu sản phẩm.<br>\
 Services /ˈsɜːrvɪsɪz/ Dịch vụ<br>\
 Social media marketing /ˈsoʊʃəl ˈmidiə ˈmɑrkɪtɪŋ/ Tiếp thị truyền thông xã hội<br>\

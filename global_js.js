@@ -1,7 +1,6 @@
 
 const UNCOUNT_TAG_BEGIN = '<xxx class="abcdxyz">'
 const UNCOUNT_TAG_END = '</xxx>'
-const kBackTimeAudio = 8; //8s
 
 var Helper_AudioSpeed = 0.9;
 var UtterEnd = true;
@@ -61,16 +60,18 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 
 var dones = []
 function ngClickOnWord(word, graph) {
+	const tagOpen = '<span ng-click="Idx_ngCL_Wo_rdSp_eak($event)">'
 	if (ValidateWord(word) 
 		&& word !=='br'
 		&& word !=='hr' 
 		&& word !=='span' 
 		&& word !=='event' 
 		&& UNCOUNT_TAG_BEGIN.indexOf(word) === -1
+		&& tagOpen.indexOf(word) === -1
 		&& !isInArr(word, dones)
 		) 
   	{
-		const tagOpen = '<span ng-click="Idx_ngCL_Wo_rdSp_eak($event)">'
+		
 		const tagClose = '</span>'
 
 		var regex = new RegExp(`\\b${word}\\b` , 'g')
@@ -243,7 +244,6 @@ function Helper_GetVocaFromWordFull(wordFull) {
   }
    
   return result.trim();
-
 }
 
 // arrow up scroll

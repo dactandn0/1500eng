@@ -3,8 +3,8 @@
 const IELTS_SYN = [
 
 {
-	title:"Ielts Synonyms",
-	en:"important, crucial, significant (a) quan trọng <br>\
+title:"Ielts Synonyms",
+en:"important, crucial, significant (a) quan trọng <br>\
 common, universal, ubiquitous (a) phổ biến <br>\
 abundant, ample, plentiful (a) dồi dào <br>\
 stick, adhere, cling (v) gắn với<br>\
@@ -18,6 +18,8 @@ competitor, rival, opponent (n) đối thủ <br>\
 blame, condemn, đổ lỗi<br>\
 opinion perspective, standpoint (n) quan điểm<br>\
 fame, prestige, reputation (n) danh tiếng<br>\
-build, erect, establish (v) xây dựng"
+build, erect, establish (v) /bɪld/ /ɪˈrekt/ /ɪˈstæblɪʃ/ xây dựng<br>\
+Shopping mall, Mall (n) /ˈʃɒp.ɪŋ mɔːl/ /mɔːl/ Trung tâm mua sắm<br>\
+intelligent, smart (a) /ɪnˈtelɪdʒənt/ /smɑːrt/ thông minh"
 }
 ]

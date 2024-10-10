@@ -36,7 +36,9 @@
 			</span>
 		 </div>
 
-		<span class="btnPlay opa">
+		  <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
+
+<!-- 		<span class="btnPlay opa">
 			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
 		</span>
 
@@ -45,7 +47,7 @@
     		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-s</button></p>
     		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+s</button></p>
     	</span>
-
+ -->
 
 		<div class="card mt-1">
 		    <div class="card-body">

@@ -418,7 +418,7 @@ web  web<br>\
 block block<br>\
 cheer cổ vũ<br>\
 complex phức tạp<br>\
-critic phê bình<br>\
+critic (n) /ˈkrɪtɪk/ phê bình<br>\
 event sự kiện<br>\
 exercise bài tập<br>\
 fit phù hợp<br>\
@@ -547,7 +547,7 @@ surface bề mặt",
 },
 {
 	title:"4k Book2",
-	en: "awful (a) tệ hại (very bad)<br>\
+	en: "awful (a) tệ hại(very bad)<br>\
 consist có<br>\
 desire mong muốn<br>\
 eager háo hức<br>\
@@ -1076,7 +1076,8 @@ quarter (n) /ˈkwɔːrtər/ quý<br>\
 scholarship  (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
 treasure kho báu<br>\
-urge (v) /ɜːrdʒ/ thúc giục"
+urge (v) /ɜːrdʒ/ thúc giục<br>\
+masquerade (n,v) /ˌmæskəˈreɪd/ (n. dạ hội) hóa trang"
 },
 {
 	title:"4k Book3",

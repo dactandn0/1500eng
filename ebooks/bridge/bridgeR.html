@@ -3,9 +3,9 @@
     	<a ng-href="#!bridgeL">Listening</a>
     	<hr>
       
-    	<div ng-repeat="story in stories track by $index" class="mb-2" >
+    	<div ng-repeat="fTitle in fullTitles track by $index" class="mb-2" >
 		  <h6 class="accordion" >
-		    <a href ng-click="acc_click($index)">{{$index+1}}. Unit {{story.unit}}: {{story.title}}</a>
+		    <a href ng-click="acc_click($index)">{{$index+1}}. {{fTitle}}</a>
 		  </h6>
 		  <div class="accordion-content" ng-if="acc_isShow($index)">
 		     <p compile="story.enShow" ng-if="!bShowVi"></p>

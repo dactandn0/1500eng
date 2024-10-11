@@ -4,11 +4,6 @@ document.write('<script src="./lptd/cd1_data.js" type="text/javascript"></script
 document.write('<script src="./lptd/cd2_data.js" type="text/javascript"></script>');
 document.write('<script src="./lptd/cd3_data.js" type="text/javascript"></script>');
 
-
-function MYLOG(msg) {
-//	console.log(msg);
-}
-
 var app = angular.module("lptdApp", []);
 app.controller("lptdCtrl", function($scope, $rootScope, $timeout ) {
 
@@ -40,9 +35,14 @@ $scope.range = function(min, max, step) {
 $scope.storyIdx = 0;
 $scope.bShowVi = 0;
 
-$scope.createAudioScr = function() {
+$scope.createAudioSrc = function() {
 	return "./lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3';
 }
+
+$scope.$on('parent_whenAudioEnded', function(event, message) {
+	$scope.whenAudioEnded();
+});
+
 
 $scope.units = [
 	{'title':"Nature", 'num': 1},
@@ -55,47 +55,40 @@ $scope.units = [
 	{'title':"Travel", 'num':36},
 ];
 
-$scope.$on('parent_whenAudioEnded', function(event, message) {
-	$scope.whenAudioEnded();
-});
-
 $scope.whenAudioEnded = function()
 {
 	var nextStoryIdx = $scope.storyIdx;
     var loopRadio = 0;
+
     if (localStorage.hasOwnProperty("audio_loop")) {
-		loopRadio = localStorage.audio_loop;
+		loopRadio = parseInt(localStorage.audio_loop);
 	}
-    if (loopRadio==='1') // loop
-    {
-    	$scope.$broadcast('child_playFullSound', $scope.createAudioScr())  
-    } else if (loopRadio==='2') // play next
+    if (loopRadio === 2) // play next
     {
     	nextStoryIdx = $scope.storyIdx + 1;
-    	if (nextStoryIdx > 39) { nextStoryIdx = 0 }; 
-    	$scope.fetchStory(nextStoryIdx, true);
-
+    	if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
     	$scope.storyIdx = nextStoryIdx;
-    	$scope.$broadcast('child_playFullSound', $scope.createAudioScr())  
+    	$scope.fetchStory($scope.storyIdx, true);
+    }
+    if (loopRadio !== 0) // loop
+    {
+    	$scope.$broadcast('child_playFullSound')  
     }
 
-    $scope.$apply();
 }
 
 $scope.fetchStory = function (idx, reset=true) {
-	MYLOG('fetchStory');
-	// when click 1.2.3..40
+
 	if (reset==true) 
 	{
-		$scope.$broadcast("child_resetFlag","");
-		$scope.$broadcast("child_stopSound","");
+		$scope.$broadcast("child_stopSound");
 	}
 
 	$scope.stories = kSTORIES;
 	$scope.storyIdx = idx;
 	$scope.story = $scope.stories[idx];
 
-	$scope.$broadcast("child_audioSrcAsLoad", $scope.createAudioScr());
+	$rootScope.audioSrc = $scope.createAudioSrc();
 
 	// save DB
 	localStorage.setItem("lptd_unit", idx);
@@ -136,8 +129,6 @@ $scope.loadData = function () {
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 });
-
-
 
 });
 

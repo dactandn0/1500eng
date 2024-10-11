@@ -1,0 +1,14 @@
+
+
+<div>
+		<span class="btnPlay opa">
+			<button class="btn btn-sm btn-info" ng-click="playFullSound()">{{bPlaying ? 'Stop' : 'Play'}}</button>
+		</span>
+
+    	<span ng-show="bPlaying" class="btnSound opa">
+    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-{{audioAdjTime}}s</button></p>
+    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+{{audioAdjTime}}s</button></p>
+    	</span>
+</div>
+

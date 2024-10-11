@@ -3,22 +3,18 @@
   
     <h5 class="mb-4">Books 1-6</h5>
 
-
     	<form name="word4k_cdForm" class="my-3" role="group">
     		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>
     	</form>
 
     	<div class="my-1">
-		    <div ng-repeat="u in units" class="col-md-4">
-		    	<span class="mr-2">{{u.title}}</span>
-		    	 <a ng-repeat="n in range(u.num, u.num + 4)"  
-		    	 ng-click="fetchStory(n-1);" 
-		    	 ng-class="storyIdx==n-1 ? 'font-weight-bold' : 'font-weight-normal'"
-		    	 href="" class="p-2 mr-1"> [{{n}}]
-		    	</a>
-		    </div>
+	    	 <a ng-repeat="story in stories"
+		    	 ng-click="fetchStory($index);" 
+		    	 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
+		    	 href="" class="p-2 mr-1"> {{story.audio}}
+	    	</a>
 		    <br> 
-		    <form name="word4k_loopForm" class="mb-3" role="group">
+		    <form name="word4k_loopForm" class="my-3" role="group">
 	    		<input type="radio" name="radioLoop" value="0" onchange="radioLoopChange(0)" checked/><span class="mr-3">No</span>
 	        	<input type="radio" name="radioLoop" value="1" onchange="radioLoopChange(1)" /><span class="mr-3">Yes</span>
 	        	<input type="radio" name="radioLoop" value="2" onchange="radioLoopChange(2)" /><span class="mr-3">Auto</span>
@@ -29,28 +25,17 @@
 	    	</span>
 
 	        <span ng-show="!bShowVi" class="btnEnVi opa">
-	        	<!-- <p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p> -->
-				<!-- <p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p> -->
 			</span>
 		 </div>
 
-		<span  class="btnPlay opa">
-			<button class="btn btn-sm btn-info" ng-click="playFullSound($index, false)">{{bPlayingFull ? 'Stop' : 'Play'}}</button><br>
-			<button class="btn btn-sm btn-info mt-2" ng-click="playFullSound($index, true)">{{bPlayingVoca ? 'Stop' : 'Voca'}}</button>
-		</span>
-
-    	<span ng-show="bPlayingFull || bPlayingVoca " class="btnSound opa">
-    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-8)">-8s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(8)">+8s</button></p>
-    	</span>
+		<div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
 
 
 		<div class="card mt-1">
 		    <div class="card-body">
 	          <div class="card-text my-2">
 	          	
-	          	<h6 class="accordion" >
+	          	<h6 class="accordion">
 				    <a href> {{story.title}}</a>
 				 </h6>
 	          	 <div class="accordion-content">

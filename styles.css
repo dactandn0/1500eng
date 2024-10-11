@@ -111,6 +111,12 @@ background-color: #a55;
 	padding: 0px
 }
 
-.uncount_voca_story, .abcdxyz {
+/*UNCOUNT_TAG_BEGIN*/
+.uncount_voca_story, ._y_z {
 	color:red;
+}
+
+
+.toast  {
+	 opacity: 1 !important;
 }

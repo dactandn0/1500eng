@@ -539,9 +539,10 @@ Mask (n) /mɑːsk/ Mặt nạ<br>\
 Banyan (n) /ˈbæn.jæn/ Cây đa<br>\
 Lantern (n) /ˈlæn.tən/ Lồng đèn<br>\
 Bamboo (n) /bæmˈbuː/ Tre<br>\
-Celebrate (n) /ˈsel.ə.breɪt/ Kỷ niệm<br>\
+Celebrate (v) /ˈselɪbreɪt/ Kỷ niệm, làm lễ<br>\
+Celebration (n) /ˌselɪˈbreɪʃn/ Lễ kỷ niệm<br>\
 Family reunion (n) /ˈfæm.əl.i riːˈjuː.njən/ Họp mặt gia đình<br>\
-Lion dance (n)",
+Lion dance (n) /ˈlaɪən dæns/",
 },
 {
 title:"Sport",
@@ -1448,6 +1449,7 @@ Register (n) /ˈrɛdʒ.ɪ.stər/ Sổ sách<br>\
 Assembly (n) /əˈsɛm.bli/ Cuộc họp<br>\
 Holiday (n) /ˈhɒl.ɪ.deɪ/ Kỳ nghỉ<br>\
 Carnival (n) /ˈkɑːrnɪvl/ Lễ hội<br>\
+Mascot (n) /ˈmæskɑːt/ Linh vật<br>\
 Playground (n) /ˈpleɪ.ɡraʊnd/ Sân chơi<br>\
 Hall (n) /hɔːl/ Hội trường, hành lang<br>\
 Student hall (n) ký túc xá sinh viên<br>\

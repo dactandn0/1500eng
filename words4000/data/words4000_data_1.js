@@ -1,6 +1,7 @@
 
 const BOOK4K_1 = [
 {
+	audio: "1.1",
 	en: 
 	'The Lion and the Rabbit <br>\
 A cruel lion lived in the forest. Every day, he killed and ate a lot of animals. The other animals were afraid the lion would kill them all.<br>\
@@ -32,6 +33,7 @@ Tất cả các loài động vật khác trong rừng đều rất hài lòng v
 voca:'afraid, agree, angry, arrive, attack, bottom, clever, cruel, finally, hide, hunt, lot, middle, moment, pleased, promise, reply, safe, trick, well',
 },
 {
+	audio: "1.2",
 	en: 
 	'The Laboratory <br>\
 Mia‘s father had a laboratory, but she had no idea what was in it. Her dad always closed and locked the door when he went in. She knew that he used it to do projects for work. He never told Mia what these projects were.<br>\
@@ -55,6 +57,7 @@ Cha của Mia chạy vào phòng và bật đèn. "Ồ, không," ông nói. "Con
 voca: 'adventure, approach, carefully, chemical, create, evil, experiment, kill, laboratory, laugh, loud, nervous, noise, project, scare, secret, shout, smell, terrible, worse',
 },
 {
+	audio: "1.3",
 	en:'The Report <br>\
 Lee sat among the books at the library and thought about his group project.<br>\
 They had to turn it in soon, but he hadn‘t even started his part! Jack and Claire were in his group. They had worked hard. They were also very smart, and Lee didn‘t want them to get a bad grade.<br>\
@@ -82,6 +85,7 @@ Chẳng mấy chốc, họ đã bay qua những đám mây. Họ đã đi qua m�
 voca:'alien, among, chart, cloud, comprehend, describe, ever, fail, friendly, grade, instead, library, planet, report, several, solve, suddenly, suppose, universe, view'
 },
 {
+	audio: "1.4",
 	en:'The Dog’s Bell<br>\
 John‘s dog was a bad dog. He bit people frequently. John had great concern about this. It was not an appropriate way for a dog to behave. His friends in the village always expected the dog to bite them. The news about John‘s dog spread through the village. None of the people wanted to go to John‘s house. John tried to instruct the dog to behave, but it never worked. He tried to be patient and teach the dog to be calm. That also didn‘t work. John didn‘t want to punish the dog. "How will I stop my dog‘s bad habit?" John asked himself.<br>\
 <br>John‘s friend came to talk to him about the issue. During their important meeting, his friend said, -The people in the village asked me to represent them. We want your dog to stop this habit. Why don‘t you put a bell around the dog‘s neck? This way, we would hear your dog coming down the street." John thought this was a great idea. Now, people could stay away from the dog. It would not be able to bite anyone anymore.<br>\
@@ -98,6 +102,7 @@ voca:'appropriate, avoid, behave, calm, concern, content, expect, frequently, ha
 }
 ,
 {
+	audio: "1.5",
 	en:"The Jackal and the Sun Child<br>\
 	A jackal is a wild dog with a big black back. It resides in the desert. But how did the jackal get his black back? This was how it happened.<br>\
 <br>\
@@ -125,5 +130,53 @@ Anh hy vọng đứa con của mặt trời sẽ ngã. Nhưng cô không ngã. V
 <br>\
 Nhưng đứa con của mặt trời đã để lại một vết trên lưng con chó rừng, một vết đen có thể nhìn thấy được. Kể từ khi trải nghiệm với đứa con của mặt trời, lưng của con chó rừng đã đen."
 ,voca:"aware, badly, belong, continue, error, experience, field, hurt, judgment, likely, normal, rare, relax, request, reside, result, roll, since, visible, wild"
+},
+{
+	audio: 1.6,
+	en:"The Friendly Ghost<br>\
+A nice woman lived by a large river. She loved children. She wanted to help them in any way. She loved her community, and everyone in the community loved her. She lived a very long time and became very wise. When she died, she became a ghost. She was dead, but every night she returned to her community. She wanted to help children and not to cause them fright. But she had a scary voice. Children were afraid of her, but the ghost was a good one. She only scared them to help them.<br>\
+<br>\
+One night, some children and a dog were playing by the river. They were having fun with their pet. But they were far from home. Then the weather became bad. It rained and rained. The river was rising. It was very dark. The children knew they were lost. They needed to go north, but they didn’t know which direction it was. When the moon came out, they saw a ghost by the river. The ghost said, 'Go away!'<br>\
+<br>\
+The children felt great fright. They knew it was a ghost. Then the ghost moved closer. She yelled again, 'Go away!' The children became very upset. Some of them began to cry. The children knew they had a choice: they could escape, or they could stay and face this scary individual in the dark.<br>\
+<br>\
+The children ran a long distance away. The ghost followed them all the way. Finally, the children reached home. The ghost was very happy. Soon the river rose higher and higher. It was very dangerous. The ghost had helped the children survive! She had saved them from the rising water. She also used her power to lead them home. Sometimes, meeting a ghost has advantages. A ghost can save your life!"
+	,vi:"Hồn ma thân thiện<br>\
+Một người phụ nữ tốt bụng sống bên bờ sông lớn. Bà yêu trẻ con. Bà muốn giúp đỡ chúng bằng mọi cách. Bà yêu cộng đồng của mình, và mọi người trong cộng đồng đều yêu quý bà. Bà sống rất lâu và trở nên rất thông thái. Khi bà qua đời, bà trở thành một hồn ma. Bà đã chết, nhưng mỗi đêm bà đều trở về cộng đồng của mình. Bà muốn giúp đỡ trẻ em và không muốn làm chúng sợ hãi. Nhưng bà có giọng nói đáng sợ. Trẻ em sợ bà, nhưng hồn ma thì tốt. Bà chỉ dọa chúng để giúp chúng.<br>\
+<br>\
+Một đêm nọ, một số trẻ em và một con chó đang chơi đùa bên bờ sông. Chúng đang vui đùa với thú cưng của mình. Nhưng chúng ở xa nhà. Rồi thời tiết trở nên xấu. Trời mưa và mưa. Nước sông dâng cao. Trời rất tối. Những đứa trẻ biết rằng chúng bị lạc. Chúng cần đi về phía bắc, nhưng chúng không biết hướng nào. Khi mặt trăng ló dạng, chúng nhìn thấy một hồn ma bên bờ sông. Hồn ma nói, 'Đi đi!'<br>\
+<br>\
+Những đứa trẻ cảm thấy rất sợ hãi. Họ biết đó là một con ma. Sau đó, con ma tiến lại gần hơn. Bà ta lại hét lên, 'Đi đi!' Những đứa trẻ trở nên rất buồn bã. Một số đứa bắt đầu khóc. Những đứa trẻ biết rằng chúng có một sự lựa chọn: chúng có thể trốn thoát, hoặc chúng có thể ở lại và đối mặt với cá nhân đáng sợ này trong bóng tối.<br>\
+<br>\
+Những đứa trẻ chạy một quãng đường dài. Con ma đi theo chúng suốt chặng đường. Cuối cùng, những đứa trẻ đã về đến nhà. Con ma rất vui mừng. Chẳng mấy chốc, dòng sông dâng cao hơn và cao hơn. Thật nguy hiểm. Con ma đã giúp những đứa trẻ sống sót! Bà ta đã cứu chúng khỏi dòng nước đang dâng cao. Bà ta cũng sử dụng sức mạnh của mình để dẫn chúng về nhà. Đôi khi, gặp một con ma cũng có lợi. Một con ma có thể cứu mạng bạn!"
+	,voca:"advantage,cause,choice,community,dead,distance,escape,face,follow,fright,ghost,individual,pet,reach,return,survive,upset,voice,weather,wise",
+},
+{
+	audio: 1.9,
+	en:"The Starfish<br>\
+Last summer I took a trip to an island. I had a lot of fun. I sat and watched the waves and listened to the ocean. I learned to identify birds. I discovered pretty things and enjoyed the taste of new foods. It was a very nice time. <br>\
+<br>\
+One evening I took a pleasant walk by the ocean. When the waves came in, many starfish* fell on the beach. Some starfish went back into the water, and they were safe. But other starfish were still on the sand. They would die if they did not get into the water. There were many starfish on the beach that night. It made me sad, but I knew I could not fix the problem. I stepped very carefully so I did not damage them.<br>\
+<br>\
+Then I saw a little girl. She was also sad about the starfish. She wanted to prevent all of them from dying. She asked me if I could perhaps help her. 'To be frank, I don’t think we can do anything,' I said.<br>\
+<br>\
+The little girl started to cry. She sat back against a rock and thought for a while. Finally, the emotion was gone. She stopped crying and stood up. Then she picked up a starfish and threw it into the water.<br>\
+<br>\
+'What are you doing?' I asked her. But she did not answer me. She just threw as many starfish as she could. 'You cannot save all of them!' I said.<br>\
+<br>\
+She stopped to look at me. 'No, I cannot save them all,' she replied. Then she picked up a very big starfish and said, 'But I can save this one.' And then she smiled and threw the starfish as far as she could into the ocean."
+	,vi:"Sao biển<br>\
+Mùa hè năm ngoái, tôi đã đi du lịch đến một hòn đảo. Tôi đã có rất nhiều niềm vui. Tôi ngồi ngắm sóng biển và lắng nghe đại dương. Tôi học cách nhận dạng các loài chim. Tôi đã khám phá ra những điều đẹp đẽ và thưởng thức hương vị của những món ăn mới. Đó là một khoảng thời gian rất tuyệt. <br>\
+<br>\
+Một buổi tối, tôi đi dạo thư giãn bên bờ biển. Khi sóng biển ập vào, nhiều sao biển* đã rơi xuống bãi biển. Một số sao biển đã trở lại nước và chúng đã an toàn. Nhưng những con sao biển khác vẫn còn trên cát. Chúng sẽ chết nếu không xuống nước. Có rất nhiều sao biển trên bãi biển đêm đó. Điều đó khiến tôi buồn, nhưng tôi biết mình không thể giải quyết vấn đề. Tôi bước rất cẩn thận để không làm hỏng chúng.<br>\
+<br>\
+Sau đó, tôi nhìn thấy một bé gái. Cô bé cũng buồn về những con sao biển. Cô bé muốn ngăn không cho tất cả chúng chết. Cô bé hỏi tôi liệu tôi có thể giúp cô bé không. 'Thành thật mà nói, tôi không nghĩ chúng ta có thể làm gì được,' tôi nói.<br>\
+<br>\
+Cô bé bắt đầu khóc. Cô bé ngồi dựa vào một tảng đá và suy nghĩ một lúc. Cuối cùng, cảm xúc đã biến mất. Cô bé ngừng khóc và đứng dậy. Sau đó, cô bé nhặt một con sao biển và ném xuống nước.<br>\
+<br>\
+'Con đang làm gì vậy?' Tôi hỏi cô bé. Nhưng cô bé không trả lời tôi. Cô bé chỉ ném càng nhiều sao biển càng tốt. 'Con không thể cứu tất cả chúng được!' Tôi nói.<br>\
+<br>\
+Cô bé dừng lại nhìn tôi. 'Không, con không thể cứu tất cả chúng được,' cô bé trả lời. Sau đó, cô bé nhặt một con sao biển rất lớn và nói, 'Nhưng con có thể cứu con này.' Và rồi cô bé mỉm cười và ném con sao biển xa nhất có thể xuống biển."
+	,voca:"against,beach,damage,discover,emotion,fix,frank,identify,island,ocean,perhaps,pleasant,prevent,rock,save,step,still,taste,throw,wave",
 }
 ];

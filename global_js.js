@@ -1,6 +1,6 @@
 
-const UNCOUNT_TAG_BEGIN = '<xxx class="abcdxyz">'
-const UNCOUNT_TAG_END = '</xxx>'
+const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
+const UNCOUNT_TAG_END = '</x1x>'
 
 var Helper_AudioSpeed = 0.9;
 var UtterEnd = true;
@@ -58,25 +58,18 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	return graph;
 }
 
-var dones = []
+
 function ngClickOnWord(word, graph) {
-	const tagOpen = '<span ng-click="Idx_ngCL_Wo_rdSp_eak($event)">'
+	const tagOpen = '<span ng-click="Idx_n_L_WSp_($event)">'
 	if (ValidateWord(word) 
 		&& word !=='br'
 		&& word !=='hr' 
-		&& word !=='span' 
-		&& word !=='event' 
 		&& UNCOUNT_TAG_BEGIN.indexOf(word) === -1
 		&& tagOpen.indexOf(word) === -1
-		&& !isInArr(word, dones)
 		) 
   	{
-		
 		const tagClose = '</span>'
-
 		var regex = new RegExp(`\\b${word}\\b` , 'g')
-
-		dones.push(word)
 		return graph.replace(regex, tagOpen + word + tagClose);
 	}
 	return graph
@@ -94,7 +87,6 @@ function processStory (story) {
 	var titleVi = story.vi.split('<br>')[0];
 	story.viShow = story.vi.replace(titleVi, titleVi);
 
-
 	story.title = titleEn;
 	var trackNum = titleEn.replace(/[^0-9.]/g, '');
 	story.img = trackNum;
@@ -102,15 +94,17 @@ function processStory (story) {
 	var words = story.en.match(/\b(\w+)\b/g);
 	var kDot = "";
 	var kSpace = "";
+	var dones = []
 	for (let i = 0; i < words.length; i++) {
 
 	  	var word = words[i];
+		if (!isInArr(word, dones)) {
+			story.enShow = ngClickOnWord(word, story.enShow);
+			dones.push(word);
+		}
 
-		story.enShow = ngClickOnWord(word, story.enShow);
 		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
-
-
 	} // for
 
 	if (story.voca) {
@@ -118,6 +112,7 @@ function processStory (story) {
 		story.vocaNotes = [];
 		for (var i = 0; i < vocas.length; i++) {
 			voca = vocas[i].trim();
+			if (voca==='') continue;
 			var temp = voca;
 			if (temp.indexOf("[") >= 0) {
 				temp = temp.replace(/\s*\|\s*/g, ", ");
@@ -260,7 +255,7 @@ function ArrayRemove(arr, eleName) {
 
 Helper_Speak = function (event, txt, fullSentence) {
 
-	if (!UtterEnd) return;
+	//if (!UtterEnd) return;
 
 	var target = Helper_GetVocaFromWordFull(txt);
 	if (fullSentence) target = txt.replace(/(<([^>]+)>)/ig, '');

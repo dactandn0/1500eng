@@ -3,6 +3,7 @@ const bridge_read_data =
 [
 {
 	unit:2,
+	title:"Quebec Winter Carnival",
 	en: 
 	"Quebec Winter Carnival<br>\
 	Chantal lives in Quebec in Canada. She speaks English and French. Every year she goes to the Quebec Winter Carnival. \
@@ -21,6 +22,7 @@ voca:"carnival,snow sculptures,parade,attractions",
 },
 {
 	unit:2,
+	title:"New Year In Australia",
 	en: 
 	"New Year In Australia<br>\
 	- Many Australians celebrate New Year's Eve on 31 December each year. It is the day before New Year's Day, the 1 January.\
@@ -45,6 +47,7 @@ Lễ kỷ niệm đêm giao thừa lớn nhất diễn ra ở Sydney và Melbour
 },
 {
 	unit:3,
+	title:"Teamwork",
 en:"Teamwork<br>\
 [A] Meerkats live in the desert, with enemies everywhere. So how do they survive? They have all the skills to live there: they can hunt well, they can see their enemies from long distances. But they cannot survive alone. They survive because of one skill - they live and work together as a team. Meerkats are very good examples of the importance of teamwork. For them, teamwork is life or death.<br>\
 [B] Meerkats live underground in large groups and have different group roles. Some watch for enemies, others look after the young meerkats and others go hunting. Meerkats can't talk like humans, but they can communicate with each other using different sounds. They can tell the others where the enemy is an eagle in the air flying towards them or a snake on the ground.<br>\
@@ -59,6 +62,7 @@ vi:"Làm việc nhóm<br>\
 },
 {
 	unit:4,
+	title:"Choices in today's education",
 	en:"Choices in today's education<br>\
 [A] Students today have many educational choices and some students are leaving their country to study. There are four million international students and this is increasing every year.<br>\
 <br>\
@@ -83,6 +87,7 @@ vi:"Làm việc nhóm<br>\
 },
 {
 	unit:5,
+	title:"The Eiffel Tower",
 	en:"The Eiffel Tower<br>\
 [A] World Fairs are great adverts for countries. They show the world your national culture and advertise your country. World Fairs started in London in 1851 and celebrated industrial technology and design. Other countries also wanted to hold World Fairs. Now the event goes to a different country every few years - in 2010 it was in Shanghai in China, then in 2015, it will be Turin, in Italy.<br>\
 <br>\
@@ -103,6 +108,7 @@ vi:"Làm việc nhóm<br>\
 },
 {
 	unit:8,
+	title:"The changing environment of Australia",
 	en:"The changing environment of Australia<br>\
 [A] Australia is an amazing and beautiful country. But it also has something special which makes it very interesting for scientists.\
 Australian plants and animals are very different from those of other continents.\

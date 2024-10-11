@@ -155,13 +155,12 @@ $scope.findSameWord = function() {
   }
 }
 
-
-
 $scope.Index_Speak = function (event, word, fullSentence = false) {
   Helper_Speak(event, word, fullSentence);
 }
 
-$scope.Idx_ngCL_Wo_rdSp_eak = function (event) {
+// click word to speech
+$scope.Idx_n_L_WSp_ = function (event) {
   Helper_ngClickWordSpeak(event);
 
   var src = event.target.innerText;

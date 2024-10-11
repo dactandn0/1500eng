@@ -3,6 +3,7 @@ const complete_read_data =
 [
 {
 	unit:1,
+	title: "The happiest country in the world",
 	en: "The happiest country in the world<br>\
 	- Children growing up in Costa Rica are surrounded by some of the most beautiful and diverse landscapes in the world. Preserving tropical rainforests isn't Costa Rica's only success, because the government also makes sure everyone has access to health-care and education. So when the New Economics Foundation released its second Happy Planet Index, Costa Rica came out number one. The index is a ranking of countries based on their impact on the environment and the health and happiness of their citizens.<br>\
 - According to Mariano Rojas, a Costa Rican economics professor, Costa Rica is a mid-income country where citizens have plenty of time for themselves and for their relationships with others. 'A mid-income level allows most citizens to satisfy their basic needs. The government makes sure that all Costa Ricans have access to education, health and nutrition services.' Costa Ricans, he believes, are not interested in status or spending money to show how successful they are.<br>\
@@ -18,6 +19,7 @@ Chuyển thể từ Tạp chí Yes!"
 },
 {
 	unit:2,
+	title:"Freya Stark, explorer and writer",
 	en:"Freya Stark, explorer and writer<br>\
 <i>Freya Stark travelled to many areas of the Middle East, often alone.</i><br>\<br>\
 Freya Stark was an explorer who lived during a time when explorers were regarded as heroes. She travelled to distant areas of the Middle East, where few Europeans\
@@ -31,7 +33,8 @@ Stark was born in Paris in 1893. Although she had no formal education as a child
 Stark became well known as a traveller and explorer in the Middle East. She travelled to the Lebanon in 1927 at the age of 33 when she had saved enough money, and while there,\
  she studied Arabic. In 1928, she travelled by donkey to the Jebel Druze, a mountainous area in Syria. During another trip, she went to a distant region of the Elburz, a mountain range in Iran, where she made a map. She was searching for information about an ancient Muslim sect known as the Assassins, which she wrote about in Valley of the Assassins (1934), a classic for which she was awarded a Gold Medal by the Royal Geographic Society. For the next 12 years, she continued her career as a traveller and writer, establishing a style which combined an account of her journeys with personal commentary on the people, places, customs, history and politics of the Middle East.<br>\
  <br>adapted from Science and its times, 2000"
-,vi:"<i>Freya Stark đã đi đến nhiều vùng của Trung Đông, thường là một mình.</i><br>\<br>\
+,vi:"Freya Stark, nhà thám hiểm và nhà văn<br>\
+<i>Freya Stark đã đi đến nhiều vùng của Trung Đông, thường là một mình.</i><br>\<br>\
 Freya Stark là một nhà thám hiểm sống vào thời mà các nhà thám hiểm được coi là anh hùng. Bà đã đi đến những vùng xa xôi của Trung Đông, nơi mà ít người châu Âu\
 - đặc biệt là phụ nữ - từng đi đến trước đây. Bà cũng đã đi du lịch nhiều nơi ở Thổ Nhĩ Kỳ, Hy Lạp, Ý, Nepal và Afghanistan. <br>\
 <br>\
@@ -45,6 +48,7 @@ Stark trở nên nổi tiếng với tư cách là một nhà thám hiểm và l
 },
 {
 	unit:2,
+	title:"Mau Piailug, ocean navigator",
 	en:"Mau Piailug, ocean navigator<br>\
 Mau sailed from Hawaii to Tahiti using traditional methods. In early 1976, Mau Piailug, a fisherman, led an expedition in which he sailed a traditional Polynesian boat across 2,500 miles of ocean from Hawaii to Tahiti. The Polynesian Voyaging Society had organised the expedition. Its purpose was to find out if seafarers in the distant past could have found their way from one island to the other without navigational instruments, or whether the islands had been populated by accident. At the time, Mau was the only man alive who knew how to navigate just by observing the stars, the wind and the sea. He had never before sailed to Tahiti, which was a long way to the south. However, he understood how the wind and the sea behave around islands, so he was confident he could find his way. The voyage took him and his crew a month to complete and he did it without a compass or charts.<br>\
 <br>\
@@ -61,6 +65,7 @@ Chuyến đi đã chứng minh rằng những cư dân đầu tiên của Hawaii
 },
 {
 	unit:3,
+	title:"The electric revolution",
 	en:"The electric revolution<br>\
 Your next car may be electric. We look at the technologies that will bring the revolution.<br>\
 The main reasons why electric cars are not more popular at present are their price and their relatively small range. Existing battery systems only allow electric cars to travel\
@@ -94,5 +99,64 @@ Pin được kết nối với trung tâm điều khiển bằng công nghệ th
 <br>\
 Tác giả Tim Thwaites, số 29 của Cosmos, tháng 10 năm 2000"
 	,voca:"revolution,renewable,charge,point,robot,whenever,zero emissions,vehicle,depleted,direct,revolutionary",
-}	
+},
+{
+	unit:3,
+	title:"Traffic jams - no end in sight",
+	en:"Traffic jams - no end in sight<br>\
+There are no easy answers to the problems of traffic congestion.<br>\
+<br>\
+[A] Traffic congestion affects people throughout the world Traffic jams cause smog in dozens of cities across both the developed and developing world. In the US, commuters spend an average of a full working week each year sitting in traffic jams, according to the Texas Transportation Institute. While alternative ways of getting around are available, most people still choose their cars because they are looking for convenience, comfort and privacy.<br>\
+<br>\
+[B] The most promising technique for reducing city traffic is called congestion pricing, whereby cities charge a toll to enter certain parts of town at certain times of day. In theory, if the toll is high enough, some drivers will cancel their trips or go by bus or train. And in practice it seems to work: Singapore, London and Stockholm have reduced traffic and pollution in city centres thanks to congestion pricing.<br>\
+<br>\
+[C] Another way to reduce rush-hour traffic is for employers to implement flexitime, which lets employees travel to and from work at off-peak traffic times to avoid the rush hour. Those who have to travel during busy times can do their part by sharing cars. Employers can also allow more staff to telecommute (work from home) so as to keep more cars off the road altogether.<br>\
+<br>\
+[D] Some urban planners still believe that the best way to ease traffic congestion is to build more roads, especially roads that can take drivers around or over crowded city streets. But such techniques do not really keep cars off the road; they only accommodate more of them.<br>\
+<br>\
+[E] Other, more forward-thinking, planners know that more and more drivers and cars are taking to the roads every day,\
+ and they are unwilling to encourage more private automobiles when public transport is so much better both for people and the environment.\
+  For this reason, the American government has decided to spend some $7 billion on helping to increase capacity on public- transport systems and upgrade them with more efficient technologies .\
+   But environmentalists complain that such funding is tiny compared to the $50 billion being spent on roads and bridges.<br>\
+<br>Adapted from The Environmental Magazine, Earthtalk"
+	,vi:"Kẹt xe - không thấy hồi kết<br>\
+Không có câu trả lời dễ dàng nào cho vấn đề tắc đường.<br>\
+<br>\
+[A] Tắc đường ảnh hưởng đến mọi người trên toàn thế giới Tắc đường gây ra khói bụi ở hàng chục thành phố trên khắp thế giới phát triển và đang phát triển. Theo Viện Giao thông Texas, tại Hoa Kỳ, người đi làm trung bình mất một tuần làm việc mỗi năm để ngồi trong tình trạng kẹt xe. Mặc dù có nhiều cách di chuyển khác, nhưng hầu hết mọi người vẫn chọn ô tô vì họ muốn sự tiện lợi, thoải mái và riêng tư.<br>\
+<br>\
+[B] Kỹ thuật hứa hẹn nhất để giảm tắc đường trong thành phố được gọi là giá tắc đường, theo đó các thành phố tính phí khi vào một số khu vực nhất định của thành phố vào một số thời điểm nhất định trong ngày. Về lý thuyết, nếu phí đủ cao, một số tài xế sẽ hủy chuyến hoặc đi xe buýt hoặc tàu hỏa. Và trên thực tế, có vẻ như nó hiệu quả: Singapore, London và Stockholm đã giảm được tình trạng tắc nghẽn giao thông và ô nhiễm ở trung tâm thành phố nhờ giá dịch vụ tắc nghẽn.<br>\
+<br>\
+[C] Một cách khác để giảm tắc nghẽn giao thông vào giờ cao điểm là các chủ lao động áp dụng giờ làm việc linh hoạt, cho phép nhân viên đi làm và về nhà vào giờ thấp điểm để tránh giờ cao điểm. Những người phải đi làm vào giờ cao điểm có thể chia sẻ xe. Chủ lao động cũng có thể cho phép nhiều nhân viên làm việc từ xa (làm việc tại nhà) để giảm bớt tình trạng tắc nghẽn giao thông.<br>\
+<br>\
+[D] Một số nhà quy hoạch đô thị vẫn tin rằng cách tốt nhất để giảm tắc nghẽn giao thông là xây dựng thêm đường, đặc biệt là những con đường có thể đưa người lái xe đi vòng quanh hoặc qua những con phố đông đúc trong thành phố. Nhưng những kỹ thuật như vậy không thực sự giúp giảm ô tô trên đường; họ chỉ thích nghi với nhiều người hơn.<br>\
+<br>\
+[E] Những nhà quy hoạch khác, có tư duy tiến bộ hơn, biết rằng ngày càng có nhiều tài xế và ô tô ra đường mỗi ngày và họ không muốn khuyến khích nhiều ô tô cá nhân hơn khi phương tiện công cộng tốt hơn nhiều cho cả con người và môi trường. Vì lý do này, chính phủ Hoa Kỳ đã quyết định chi khoảng 7 tỷ đô la để giúp tăng năng lực cho các hệ thống giao thông công cộng và nâng cấp chúng bằng các công nghệ hiệu quả hơn. Nhưng các nhà môi trường phàn nàn rằng khoản tài trợ như vậy là quá nhỏ so với 50 tỷ đô la được chi cho đường bộ và cầu.<br>\
+<br>Chuyển thể từ Tạp chí Môi trường, Earthtalk"
+	,voca:"congestion,smog,dozens,commuters,average of,alternative,privacy,promising,technique,toll,theory,flexitime,off-peak,environmentalists,encourage",
+},
+{
+	unit:4,
+	title:"Air conditioning",
+	en:"Air conditioning<br>\
+The history of an invention that makes life more pleasant<br>\
+<br>\
+Willis Carrier designed the first air-conditioning unit in 1902, just a year after graduating from Cornell University with a Masters in Engineering. At a Brooklyn printing plant, fluctuations in heat and moisture were causing the size of the printing paper to keep changing slightly, making it hard to align different colours. Carrier's invention made it possible to control temperature and humidity levels and so align the colours. The invention also allowed industries such as film, processed food, textiles and pharmaceuticals to improve the quality of their products<br>\
+<br>\
+In 1914, the first air-conditioning device was installed in a private house. However, its size, similar to that of an early computer, meant it took up too much space to come into widespread, use, and later models, such as the Weathermaker, which Carrier brought out in the 1920s, cost too much for most people. Cooling for human comfort, rather than industrial need, really took off when three air conditioners were installed in the J.L. Hudson Department Store in Detroit, Michigan. People crowded into the shop to experience the new invention. The fashion spread, from department stores to cinemas, whose income rose steeply as a result of the comfort they provided. <br>\
+<br>\
+To start with, money-conscious employers regarded air conditioning as a luxury. They considered that if they were paying people to work, they should not be paying for them to be comfortable as well. So in the 1940s and '50s, the industry started putting out a different message about its product: according to their research, installing air conditioning increased productivity amongst employees. They found that typists increased their output by 24% when transferred from a regular office to a cooled one. Another study into office working conditions, which was carried out in the late '50s, showed that the majority of companies cited air conditioning as the single most important contributor to efficiency in offices.<br>\
+<br>\
+However, air conditioning has its critics. Jed Brown, an environmentalist, complains that air conditioning is a factor in global warming. Unfortunately, he adds, because air conditioning leads to higher temperatures, people have to use it even more. However, he admits that it provides a healthier environment for many people in the heat of summer."
+	,vi:"Máy điều hòa không khí<br>\
+Lịch sử của một phát minh giúp cuộc sống dễ chịu hơn<br>\
+<br>\
+Willis Carrier đã thiết kế ra máy điều hòa không khí đầu tiên vào năm 1902, chỉ một năm sau khi tốt nghiệp Đại học Cornell với bằng Thạc sĩ Kỹ thuật. Tại một nhà máy in ở Brooklyn, nhiệt độ và độ ẩm thay đổi liên tục khiến kích thước giấy in thay đổi đôi chút, khiến việc căn chỉnh các màu khác nhau trở nên khó khăn. Phát minh của Carrier giúp kiểm soát được nhiệt độ và độ ẩm, từ đó căn chỉnh màu sắc. Phát minh này cũng cho phép các ngành công nghiệp như phim, thực phẩm chế biến, dệt may và dược phẩm cải thiện chất lượng sản phẩm của họ<br>\
+<br>\
+Năm 1914, thiết bị điều hòa không khí đầu tiên được lắp đặt trong một ngôi nhà riêng. Tuy nhiên, kích thước của nó, tương tự như máy tính thời kỳ đầu, khiến nó chiếm quá nhiều không gian để được sử dụng rộng rãi và các mẫu máy sau này, chẳng hạn như Weathermaker, được Carrier tung ra vào những năm 1920, có giá quá cao đối với hầu hết mọi người. Làm mát để tạo sự thoải mái cho con người, thay vì nhu cầu công nghiệp, thực sự đã cất cánh khi ba máy điều hòa không khí được lắp đặt tại Cửa hàng bách hóa J.L. Hudson ở Detroit, Michigan. Mọi người chen chúc vào cửa hàng để trải nghiệm phát minh mới này. Thời trang này lan rộng từ các cửa hàng bách hóa đến rạp chiếu phim, nơi thu nhập tăng mạnh nhờ sự thoải mái mà chúng mang lại. <br>\
+<br>\
+Đầu tiên, những người sử dụng lao động coi trọng tiền bạc coi máy điều hòa không khí là một thứ xa xỉ. Họ cho rằng nếu họ trả tiền cho mọi người để làm việc, họ không nên trả tiền để họ được thoải mái. Vì vậy, vào những năm 1940 và 1950, ngành công nghiệp này bắt đầu đưa ra một thông điệp khác về sản phẩm của mình: theo nghiên cứu của họ, việc lắp đặt máy điều hòa không khí đã làm tăng năng suất của nhân viên. Họ phát hiện ra rằng những người đánh máy đã tăng năng suất của họ lên 24% khi được chuyển từ văn phòng thông thường sang văn phòng có hệ thống làm mát. Một nghiên cứu khác về điều kiện làm việc tại văn phòng được thực hiện vào cuối những năm 1950 cho thấy rằng phần lớn các công ty coi máy điều hòa không khí là yếu tố quan trọng nhất góp phần vào hiệu quả trong văn phòng.<br>\
+<br>\
+Tuy nhiên, máy điều hòa không khí cũng có những lời chỉ trích. Jed Brown, một nhà bảo vệ môi trường, phàn nàn rằng điều hòa không khí là một yếu tố gây ra hiện tượng nóng lên toàn cầu. Thật không may, ông nói thêm, vì điều hòa không khí dẫn đến nhiệt độ cao hơn, mọi người phải sử dụng nó nhiều hơn. Tuy nhiên, ông thừa nhận rằng nó mang lại môi trường lành mạnh hơn cho nhiều người trong cái nóng của mùa hè."
+,voca:"factor,spread,fluctuations,moisture,humidity,pharmaceuticals,widespread,imcome rose steeply,critics,complains,heat of summer"
+},
 ];

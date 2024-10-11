@@ -2,34 +2,25 @@
 
 document.write('<script src="./words4000/data/words4000_data_1.js" type="text/javascript"></script>');
 
-function MYLOG(msg) {
-//	console.log(msg);
-}
-
-var app = angular.module("words4000App", ['ngSanitize']);
+var app = angular.module("words4000App", []);
 app.controller("words4000Ctrl", function($scope, $rootScope, $timeout) {
-$rootScope.$on('$routeChangeStart', function () {
-	$scope.stopSound();
-});
 
 var kSTORIES = BOOK4K_1;
+
 radioCDChange = function (cd) {
-	switch (cd) {
-		case 1: kSTORIES = cd1_stories; break;
+	if (cd===1) {
+		kSTORIES = BOOK4K_1;
 	}
 	localStorage.setItem("book_4k_num", cd);
 	$scope.cd = cd;
 }
+
 radioLoopChange = function (val) {
 	localStorage.setItem("audio_loop", val);
 }
 
 $scope.cd = 1;
 $scope.stories = kSTORIES; //1
-
-$scope.range = function(min, max, step) {
-    return RANGE(min, max, step);
-};
 
 $scope.acc = -1;
 $scope.acc_isShow = function (id) {
@@ -43,135 +34,57 @@ $scope.acc_click = function (id) {
 };
 
 $scope.storyIdx = 0;
-
-$scope.bPlayingFull = false;
-$scope.bPlayingVoca = false;
-
-$scope.bPause = false;
 $scope.bShowVi = 0;
-$scope.bHiddenWords = 0;
-$scope.audio;
-$scope.currentTime = 0;
 
-$scope.units = [
-	{'title':"", 'num': 1},
-];
-
-$scope.resetFlag = function () {
-	$scope.bPlayingVoca = false;
-	$scope.bPlayingFull = false;
-	$scope.bPause = false;
-	$scope.bShowVi = 0;
-	$scope.bHiddenWords = 0;
+$scope.fetchAudio = function() {
+	return kSTORIES[$scope.storyIdx].audio;
 }
 
-$scope.playAtTime = function (time) {
-    $scope.stopSound();
-	$scope.audio = new Audio("words4000/data/words4000_" + $scope.cd + "/" + $scope.storyIdx + 'b.mp3');
-	$scope.bPlayingVoca = true;
-	$scope.bPlayingFull = false;
-	$scope.audio.currentTime = time;
-	$scope.audio.play();
-	$scope.audio.addEventListener("ended", function(){
-	   $scope.resetAudioBtnUI(true);
-	});
+$scope.createAudioScr = function() {
+	var rr = "./words4000/data/words4000_" + $scope.cd + "/" + $scope.fetchAudio() + '.mp3';
+	return rr;
 }
 
-$scope.backSound = function (sec) {
-	$scope.audio.currentTime = $scope.audio.currentTime + sec;
-}
+$scope.$on('parent_whenAudioEnded', function(event, message) {
+	$scope.whenAudioEnded();
+});
 
-$scope.resetAudioBtnUI = function(isVoca)
+
+$scope.whenAudioEnded = function(isVoca)
 {
-	$scope.bPause=false;
-    $scope.bPlayingFull=false;
-    $scope.bPlayingVoca=false;
-
+   var nextStoryIdx = $scope.storyIdx;
     var loopRadio = 0;
     if (localStorage.hasOwnProperty("audio_loop")) {
 		loopRadio = localStorage.audio_loop;
 	}
     if (loopRadio==='1') // loop
     {
-    	$scope.playFullSound($scope.storyIdx,isVoca);
+    	$scope.$broadcast('child_playFullSound')  
     } else if (loopRadio==='2') // play next
     {
-    	var next = $scope.storyIdx + 1;
-    	if (next > 29) { next = 0 }; 
-    	$scope.fetchStory(next, true);
-    	$scope.playFullSound(next, isVoca);
+    	nextStoryIdx = $scope.storyIdx + 1;
+    	if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
+    	$scope.fetchStory(nextStoryIdx, true);
+
+    	$scope.storyIdx = nextStoryIdx;
+    	$scope.$broadcast('child_playFullSound')
     }
 
     $scope.$apply();
 }
 
-$scope.playFullSound = function (index, isVoca) {
-	if ($scope.bPlayingFull && !$scope.bPlayingVoca) {
-		$scope.stopSound();
-		$scope.bPause=false;
-		$scope.bPlayingFull = false;
-		if (!isVoca) return;
-	}
-
-	if (!$scope.bPlayingFull && $scope.bPlayingVoca) {
-		$scope.stopSound();
-		$scope.bPause=false;
-		$scope.bPlayingVoca = false;
-		if (isVoca) return;
-	}
-
-	if (isVoca) {
-		 $scope.audio = new Audio("words4000/data/words4000_" + $scope.cd + "/" + $scope.storyIdx + 'b.mp3');
-		 $scope.bPlayingVoca = true;
-		 $scope.bPlayingFull = false;
-	}
-	else {
-		$scope.audio = new Audio("words4000/data/words4000_" + $scope.cd + "/" + $scope.storyIdx + '.mp3');
-		$scope.bPlayingFull = true;
-		$scope.bPlayingVoca = false;
-	}
-
-    $scope.audio.loop = false;
-    $scope.audio.play();
-
-	$scope.audio.addEventListener("ended", function(){
-	   $scope.resetAudioBtnUI(isVoca);
-	});
-}
-
-$scope.pauseSound = function () {
-	if (!$scope.audio) return;
-	$scope.bPause = !$scope.bPause;
-	if ($scope.bPause)
-    {
-    	$scope.audio.pause();
-    	$scope.currentTime = $scope.audio.currentTime;
-    }
-    else
-    {
-    	$scope.audio.currentTime = $scope.currentTime;
-    	$scope.audio.play();
-    }
-}
-
-$scope.stopSound = function () {
-	if (!$scope.audio) return;
-	 $scope.audio.pause();
-	 $scope.audio.currentTime = 0;
-	 $scope.currentTime = 0;
-};
 
 $scope.fetchStory = function (idx, reset=true) {
 	if (reset==true) 
 	{
-		$scope.resetFlag();
-		$scope.stopSound();
+		$scope.$broadcast("child_stopSound");
 	}
 	$scope.stories = kSTORIES;
 	$scope.storyIdx = idx;
 	$scope.story = $scope.stories[idx];
 
-	// save DB
+	$rootScope.audioSrc = $scope.createAudioScr();
+
 	localStorage.setItem("book_4k_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
@@ -199,6 +112,9 @@ $scope.loadData = function () {
 	$scope.fetchStory($scope.storyIdx, false);
 };
 
-$scope.loadData();
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
+
 
 });

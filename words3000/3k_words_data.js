@@ -443,7 +443,17 @@ Shut down (v) /ʃʌt daʊn/ Tắt máy<br>\
 Folder (n) /ˈfəʊl.dər/ Thư mục<br>\
 Program (n) /ˈprəʊ.ɡræm/ Chương trình<br>\
 Search (v) /sɜːtʃ/ Tìm kiếm (thông tin)<br>\
-Screen (n) /skriːn/ Màn hình",
+Screen (n) /skriːn/ Màn hình<br>\
+Electric (a) /ɪˈlektrɪk/ thuộc về điện<br>\
+Revolution (n) /ˌrevəˈluːʃn/ Cuộc cách mạng<br>\
+Revolutionary (n) nhà cách mạng | (a) thuộc cách mạng, khởi nghĩa<br>\
+Relatively (adv) /ˈrelətɪvli/ tùy theo, tương đối<br>\
+Efficient (a) /ɪˈfɪʃnt/ có hiệu quả<br>\
+Efficiency (n) ɪˈfɪʃnsi/ Hiệu quả, năng lực, năng suất<br>\
+Deplete (v) /dɪˈpliːt/ cạn kiệt, dùng hết, làm tan máu<br>\
+Depleted (a) /dɪˈpliːt/ cạn kiệt, dùng hết, làm tan máu<br>\
+Depleted battery (n) Pin cạn<br>\
+",
 },
 {
 title:"Housework",
@@ -801,7 +811,8 @@ Airplane/ plane (n) máy bay<br>\
 Helicopter (n) /ˈhelɪkɑːptər/ trực thăng<br>\
 Hot-air balloon (n) khinh khí cầu<br>\
 Glider (n) /ˈɡlaɪdər/ Tàu lượn<br>\
-Propeller plane (n) /prəˈpelər pleɪn/ Máy bay động cơ cánh quạt",
+Propeller plane (n) /prəˈpelər pleɪn/ Máy bay động cơ cánh quạt<br>\
+Station (n) /ˈsteɪʃn/ ga tàu, trạm"
 },
 {
 	title:"Transportation",

@@ -98,7 +98,7 @@ Kế hoạch này đơn giản nhưng mang tính cách mạng. Bắt đầu bằ
 Pin được kết nối với trung tâm điều khiển bằng công nghệ thông minh bên trong xe. Sau đó, Better Place có thể đảm bảo rằng xe được sạc bằng điện từ các nguồn tái tạo với giá rẻ nhất. Đối với những chuyến đi dài hơn, hệ thống định vị sẽ hướng dẫn người lái xe đến trạm chuyển mạch gần nhất, nơi pin cạn có thể được thay thế bằng pin đã sạc bằng một con rô-bốt trong vòng vài phút.<br>\
 <br>\
 Tác giả Tim Thwaites, số 29 của Cosmos, tháng 10 năm 2000"
-	,voca:"revolution,renewable,charge,point,robot,whenever,zero emissions,vehicle,depleted,direct,revolutionary",
+	,voca:"revolution,renewable,charge,point,robot,whenever,zero emissions,vehicle,depleted,direct,revolutionary,a couple of minutes,whenever,whereas",
 },
 {
 	unit:3,
@@ -132,7 +132,7 @@ Không có câu trả lời dễ dàng nào cho vấn đề tắc đường.<br>
 <br>\
 [E] Những nhà quy hoạch khác, có tư duy tiến bộ hơn, biết rằng ngày càng có nhiều tài xế và ô tô ra đường mỗi ngày và họ không muốn khuyến khích nhiều ô tô cá nhân hơn khi phương tiện công cộng tốt hơn nhiều cho cả con người và môi trường. Vì lý do này, chính phủ Hoa Kỳ đã quyết định chi khoảng 7 tỷ đô la để giúp tăng năng lực cho các hệ thống giao thông công cộng và nâng cấp chúng bằng các công nghệ hiệu quả hơn. Nhưng các nhà môi trường phàn nàn rằng khoản tài trợ như vậy là quá nhỏ so với 50 tỷ đô la được chi cho đường bộ và cầu.<br>\
 <br>Chuyển thể từ Tạp chí Môi trường, Earthtalk"
-	,voca:"congestion,smog,dozens,commuters,average of,alternative,privacy,promising,technique,toll,theory,flexitime,off-peak,environmentalists,encourage",
+	,voca:"congestion,smog,dozens,commuters,average of,alternative,privacy,promising,technique,toll,theory,flexitime,off-peak,environmentalists,encourage,whereby",
 },
 {
 	unit:4,

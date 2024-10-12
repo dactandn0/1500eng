@@ -15,7 +15,7 @@ patient (a.) kiên nhẫn | (n) bệnh nhân<br>\
 play (v) chơi | (n) vở kịch<br>\
 order (v) yêu cầu | (n) trật tự<br>\
 park (v) đỗ xe | (n) công viên<br>\
-fine (a.) ổn thỏa | (v) phạt tiền S.O + Money<br>\
+fine (a.) ổn thỏa | (v) phạt tiền s.o + money<br>\
 lie (v) nằm | (v) nói dối<br>\
 last (v) kéo dài | (a) cuối cùng<br>\
 spot (n) điểm, chấm nhỏ | (v) nhìn thấy<br>\
@@ -38,6 +38,36 @@ fly (n) còn ruồi | (v) bay<br>\
 fall (n) mùa thu | (v) ngã, rơi<br>\
 clip (n) đoạn film ngắn | (v) cắt xén<br>\
 check (n) séc | (v) kiểm tra"
-
-}	
+},
+{
+	title:"Conjuntion",
+	en:"wherever (conj) /werˈevər/ bất cứ nơi nào<br>\
+whether (conj) /ˈweðər/ /ˈweðər/ liệu<br>\
+anywhere (conj) bất cứ nơi đâu<br>\
+whenever (conj) /wenˈevər/ bất cứ khi nào<br>\
+whereas (conj) /ˌwerˈæz/ trong khi<br>\
+whereby (adv) theo đó, qua đó<br>\
+everywhere (conj) ở mọi nơi<br>\
+as near as (conj) tới gần nơi<br>\
+how often (conj) thường xuyên thế nào<br>\
+on what (conj) về cái gì<br>\
+on whose (conj) vì<br>\
+while (conj) trong khi<br>\
+as soon as (conj) ngay khi<br>\
+as though (conj) như thể là<br>\
+as if (conj) như thể<br>\
+as though (conj) như thể là<br>\
+though (conj) mặc dù<br>\
+although /ɔːlˈðəʊ/ mặc dù<br>\
+even if (conj) thậm chí, mặc dù<br>\
+even though (conj) thậm chí<br>\
+however (conj) /haʊˈevər/ dù thế nào, tuy nhiên<br>\
+what is more (conj) còn gì nữa<br>\
+nowhere: không nơi nào ([phi] vật lý).<br>\
+somewhere: nơi nào đó (nhưng không rõ nơi nào).<br>\
+anywhere bất cứ đâu<br>\
+anytime (adv) bất cứ khi nào (= whenever, at any time, on any occasion)<br>\
+at any time (adv) bất cứ khi nào (= anytime)<br>\
+any time (v) bất cứ thời gian nào (câu ?/-)"
+}
 ]

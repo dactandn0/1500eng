@@ -49,7 +49,7 @@ grade cấp<br>\
 instead (adv) /ɪnˈsted/ thay thế<br>\
 library thư viện<br>\
 planet hành tinh<br>\
-report báo cáo<br>\
+report (v) /rɪˈpɔːrt/ báo cáo<br>\
 several nhiều<br>\
 solve giải quyết<br>\
 suddenly đột nhiên<br>\
@@ -466,13 +466,14 @@ maintain duy trì<br>\
 neither không<br>\
 otherwise nếu không<br>\
 physical vật lý<br>\
-prove chứng minh<br>\
+prove (v) /pruːv/ chứng minh<br>\
 react phản ứng<br>\
 ride đi xe<br>\
 situated ở vị trí<br>\
 society xã hội<br>\
 standard tiêu chuẩn<br>\
-suggest  gợi ý<br>\
+suggest (v) /səɡˈdʒest/ gợi ý<br>\
+percent (a,adv) /pər ˈsent/ %<br>\
 actually thực sự<br>\
 bite cắn<br>\
 deal thỏa thuận<br>\
@@ -983,7 +984,7 @@ fence hàng rào<br>\
 inspire truyền cảm hứng<br>\
 mere chỉ là, không đáng để tâm<br>\
 neat gọn gàng<br>\
-occasion dịp, thời cơ<br>\
+occasion (n) /əˈkeɪʒn/ dịp, thời cơ<br>\
 penalty hình phạt<br>\
 settle (v) giải quyết vấn đề<br>\
 wallet ví<br>\

@@ -807,7 +807,7 @@ Sailboat (n) /ˈseɪlbəʊt/ thuyền buồm<br>\
 Cargo ship (n) tàu chở hàng trên biển<br>\
 Cruise ship (n) tàu du lịch (du thuyền)<br>\
 Rowing boat (n) thuyền có mái chèo<br>\
-Airplane/ plane (n) máy bay<br>\
+Airplane, plane (n) máy bay<br>\
 Helicopter (n) /ˈhelɪkɑːptər/ trực thăng<br>\
 Hot-air balloon (n) khinh khí cầu<br>\
 Glider (n) /ˈɡlaɪdər/ Tàu lượn<br>\

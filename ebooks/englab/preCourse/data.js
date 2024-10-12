@@ -294,7 +294,7 @@ Delicacy (n): món ngon<br>\
 (to) sleep in: ngủ nướng"
 },
 {
-	date:"07/10/2024",
+	date:"T2 07/10/2024",
 	title:"Pros and cons of tourism",
 	en:"Animals and plants<br>\
 - the ecosystem will be destroyed by tearing down mountains to build houses and<br>\
@@ -336,5 +336,21 @@ However, there are also three disadvantages of tourism.\
  Firstly, new hotels and resorts can destroy the living of endangered species. Secondly, tourism can create traffic jams because many people come to visit the country.\
   Lastly, tourism can increase food prices for local people because shops are designed for tourists"
 ,voca:"First of all,Secondly,Lastly,advantages,disadvantages",
+},
+{
+	date:"T6 11/10/2024",
+	title:"Describe a device you own which has improved your life",
+	en:"I’m going to talk about my smartphone which is one of the most important gadgets in my life.<br>\
+Last year, on the occasion of my 16th birthday, my mother gave me a very precious gift, which is an iPhone 6s. I have used it both in study and entertainment every day.<br>\
+My smartphone is considered as one of my modern educational tools. Only with the phone connected to the Internet, I can access and surf webs to broaden my knowledge. For example, when there are lessons that I don’t understand in class, I can use it to search for lectures and videos online, which is really helpful.<br>\
+Moreover, I can download a lot of games or books, music, movies and they are free. As a result, after tiring lessons, this will be a good way to relieve stress and get back my energy. For instance, when I do the housework with my mother, I regularly listen to my favorite songs. In addition, it helps me to keep in touch with my family and my friends. When I want to make contact with my classmates, I can text messages or make video calls and we can easily see each other’s faces.<br>\
+In short, my phone has offered me a range of great benefits in my daily life. If I didn’t have it, it would be difficult for me to contact my near and dear friends and family members.<br>\
+<br><b>Sport: pitch court course</b><br>\
+Pitch: a field where outdoor competitive sports are played that use a ball, for example football, baseball, cricket, rugby, etc.<br>\
+The match between Barcelona and Betis was cancelled because the pitch was flooded with water.<br>\
+Court: an area marked with lines where sports are played (often indoors), such as basketball, squash, tennis, etc.<br>\
+The best tennis players prefer to play on grass courts rather than clay courts.<br><br>\
+<i>golf course, basketball court, badminton court, volleyball court, football pitch</i>"
+	,voca:"Moreover, in short,as a result,for instance,pitch,court,course",
 }
 ]

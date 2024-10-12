@@ -3,6 +3,31 @@ const complete_read_data =
 [
 {
 	unit:1,
+	title:"The world's friendliest city",
+	en:"The world's friendliest city<br>\
+A team of social psychologists from California has spent six years studying the reactions of people in cities around the world to different situations. The results show that cities where people have less money generally have friendlier populations. Rio de Janeiro in Brazil, which is often known for its crime, comes out top, and the capital of Malawi, Lilongwe, comes third.<br>\
+<br>\
+But what makes one city friendlier than another? The psychologists from California State University say it has got more to do with environment than culture or nationality. <br>\
+<br>\
+They carried out a study into the way locals treated strangers in 23 cities around the world. The team conducted their research through a series of tests, where they dropped pens or pretended they were blind and needed help crossing the street.<br>\
+<br>\
+The study concludes that people are more helpful in cities with a more relaxed way of life such as Rio. While they were there, researchers received help in 93 percent of cases, and the percentage in Lilongwe was only a little lower. However, richer cities such as Amsterdam and New York are considered the least friendly. Inhabitants of Amsterdam helped the researchers in 53 percent of cases and in New York just 44 percent. The psychologists found that, in these cities, people tend to be short of time, so they hurry and often ignore strangers.<br>\
+<br>\
+adapted from an article by Victoria Harrison, BBC News"
+	,vi:"Thành phố thân thiện nhất thế giới<br>\
+Một nhóm các nhà tâm lý học xã hội từ California đã dành sáu năm để nghiên cứu phản ứng của người dân ở các thành phố trên khắp thế giới trước các tình huống khác nhau. Kết quả cho thấy những thành phố mà người dân có ít tiền thường có dân số thân thiện hơn. Rio de Janeiro ở Brazil, nơi thường nổi tiếng với tội phạm, đứng đầu, và thủ đô Lilongwe của Malawi đứng thứ ba.<br>\
+<br>\
+Nhưng điều gì khiến một thành phố thân thiện hơn thành phố khác? Các nhà tâm lý học từ Đại học bang California cho biết điều đó liên quan nhiều đến môi trường hơn là văn hóa hoặc quốc tịch. <br>\
+<br>\
+Họ đã tiến hành một nghiên cứu về cách người dân địa phương đối xử với người lạ ở 23 thành phố trên khắp thế giới. Nhóm nghiên cứu đã tiến hành nghiên cứu của mình thông qua một loạt các bài kiểm tra, trong đó họ làm rơi bút hoặc giả vờ bị mù và cần giúp đỡ khi băng qua đường.<br>\
+<br>\
+Nghiên cứu kết luận rằng mọi người sẽ hữu ích hơn ở những thành phố có lối sống thoải mái hơn như Rio. Trong thời gian họ ở đó, các nhà nghiên cứu đã nhận được sự giúp đỡ trong 93 phần trăm các trường hợp, và tỷ lệ ở Lilongwe chỉ thấp hơn một chút. Tuy nhiên, các thành phố giàu có hơn như Amsterdam và New York được coi là kém thân thiện nhất. Người dân Amsterdam đã giúp các nhà nghiên cứu trong 53 phần trăm các trường hợp và ở New York chỉ 44 phần trăm. Các nhà tâm lý học phát hiện ra rằng, ở những thành phố này, mọi người có xu hướng thiếu thời gian, vì vậy họ vội vã và thường phớt lờ người lạ.<br>\
+<br>\
+chuyển thể từ bài viết của Victoria Harrison, BBC News"
+	,voca:"",
+},
+{
+	unit:1,
 	title: "The happiest country in the world",
 	en: "The happiest country in the world<br>\
 	- Children growing up in Costa Rica are surrounded by some of the most beautiful and diverse landscapes in the world. Preserving tropical rainforests isn't Costa Rica's only success, because the government also makes sure everyone has access to health-care and education. So when the New Economics Foundation released its second Happy Planet Index, Costa Rica came out number one. The index is a ranking of countries based on their impact on the environment and the health and happiness of their citizens.<br>\
@@ -159,4 +184,50 @@ Năm 1914, thiết bị điều hòa không khí đầu tiên được lắp đ�
 Tuy nhiên, máy điều hòa không khí cũng có những lời chỉ trích. Jed Brown, một nhà bảo vệ môi trường, phàn nàn rằng điều hòa không khí là một yếu tố gây ra hiện tượng nóng lên toàn cầu. Thật không may, ông nói thêm, vì điều hòa không khí dẫn đến nhiệt độ cao hơn, mọi người phải sử dụng nó nhiều hơn. Tuy nhiên, ông thừa nhận rằng nó mang lại môi trường lành mạnh hơn cho nhiều người trong cái nóng của mùa hè."
 ,voca:"factor,spread,fluctuations,moisture,humidity,pharmaceuticals,widespread,imcome rose steeply,critics,complains,heat of summer"
 },
+{
+	unit:4,
+	title:"Rubik's Cube",
+	en:"Rubik's Cube<br>\
+How the puzzle achieved success<br>\
+Erno Rubik first studied sculpture and then later architecture in Budapest, where he went on to become a teacher of interior design. It was while he was working as a teacher that he began the preliminary work on an invention that he called the 'Magic Cube'.<br>\
+<br>\
+Rubik was inspired by geometric puzzles such as the Chinese tangram, a puzzle consisting of various triangles, a square and a parallelogram which can be combined to create different shapes and figures. However, unlike the tangram, which is two- dimensional, Rubik was more interested in investigating how three-dimensional forms, such as the cube, could be moved and combined to produce other forms.<br>\
+<br>\
+His design consisted of a cube made up of layers of individual smaller cubes, and each smaller cube could be turned in any direction except diagonally. To ensure that the cubes could move independently, without falling apart, Rubik first attempted to join them together using elastic bands. However, this proved to be impossible, so Rubik then solved the problem by assembling them using a rounded interior. This permitted them to move smoothly and easily. He experimented with different ways of marking the smaller cubes, but ended up with the simple solution of giving a different colour to each side. The object was to twist the layers of small cubes so that each side of the large cube was an identical colour.<br>\
+<br>\
+Rubik took out a patent for the Cube in 1977 and started manufacturing it in the same year. The Cube came to the attention of a Hungarian businessman, Tibor Laczi, who then demonstrated it at the Nuremberg Toy Fair. When British toy expert Tom Kremer saw it, he thought it was amazing and he persuaded a manufacturer, Ideal Toys, to produce 1 million of them in 1979. Ideal Toys renamed the Cube after the toy's inventor, and in 1980, Rubik's Cube was shown at toy fairs all over the world. It won that year's prize in Germany for Best Puzzle. Rubik's Cube is believed to be the world's best-selling puzzle; since its invention, more than 300 million Cubes have been sold worldwide."
+	,vi:"Khối Rubik<br>\
+Cách khối Rubik đạt được thành công<br>\
+Erno Rubik đầu tiên học điêu khắc và sau đó là kiến ​​trúc ở Budapest, nơi ông trở thành giáo viên thiết kế nội thất. Trong thời gian làm giáo viên, ông đã bắt đầu công việc sơ bộ về một phát minh mà ông gọi là 'Khối Rubik'.<br>\
+<br>\
+Rubik lấy cảm hứng từ các khối hình học như tangram của Trung Quốc, một khối gồm nhiều hình tam giác, hình vuông và hình bình hành có thể kết hợp để tạo ra nhiều hình dạng và hình khối khác nhau. Tuy nhiên, không giống như tangram, là khối hai chiều, Rubik quan tâm nhiều hơn đến việc nghiên cứu cách các hình dạng ba chiều, chẳng hạn như khối lập phương, có thể di chuyển và kết hợp để tạo ra các hình dạng khác.<br>\
+<br>\
+Thiết kế của ông bao gồm một khối lập phương được tạo thành từ các lớp khối lập phương nhỏ hơn riêng lẻ và mỗi khối lập phương nhỏ hơn có thể xoay theo bất kỳ hướng nào ngoại trừ theo đường chéo. Để đảm bảo các khối lập phương có thể di chuyển độc lập mà không bị vỡ ra, trước tiên Rubik đã thử ghép chúng lại với nhau bằng dây thun. Tuy nhiên, điều này tỏ ra là không thể, vì vậy Rubik sau đó đã giải quyết vấn đề bằng cách lắp ráp chúng bằng cách sử dụng phần bên trong tròn. Điều này cho phép chúng di chuyển trơn tru và dễ dàng. Ông đã thử nghiệm nhiều cách khác nhau để đánh dấu các khối lập phương nhỏ hơn, nhưng cuối cùng đã đưa ra giải pháp đơn giản là tô màu khác nhau cho mỗi mặt. Mục đích là xoắn các lớp khối lập phương nhỏ sao cho mỗi mặt của khối lập phương lớn có cùng màu.<br>\
+<br>\
+Rubik đã xin cấp bằng sáng chế cho Khối lập phương vào năm 1977 và bắt đầu sản xuất nó trong cùng năm đó. Khối lập phương đã thu hút sự chú ý của một doanh nhân người Hungary, Tibor Laczi, người sau đó đã trình diễn nó tại Hội chợ đồ chơi Nuremberg. Khi chuyên gia đồ chơi người Anh Tom Kremer nhìn thấy nó, ông nghĩ rằng nó thật tuyệt vời và ông đã thuyết phục một nhà sản xuất, Ideal Toys, sản xuất 1 triệu khối vào năm 1979. Ideal Toys đã đổi tên Khối lập phương theo tên nhà phát minh ra đồ chơi này, và vào năm 1980, Khối lập phương Rubik đã được trưng bày tại các hội chợ đồ chơi trên toàn thế giới. Nó đã giành được giải thưởng năm đó tại Đức cho Giải đố hay nhất. Khối Rubik được cho là trò chơi xếp hình bán chạy nhất thế giới; kể từ khi được phát minh, hơn 300 triệu khối Rubik đã được bán ra trên toàn thế giới."
+	,voca:"",
+},
+{
+	unit: 4,
+	title:"Writing Task 2",
+	en:"There is no doubt that modern electronic inventions have transformed people's jobs and their leisure time, so that many people spend less time taking exercise. However, it is not so certain that this has damaged their health.<br>\
+<br>\
+As far as work is concerned, office employees have always worked sitting down, and computers have not changed that. Computers have not affected physical jobs such as farming or building either, and people still do physical work like they did in the past. In fact, other machines such as washing machines and tractors, not computers, have reduced the amount of physical work people do.<br>\
+<br>\
+On the other hand, the way people spend their spare time has changed greatly. People spend many hours watching television and playing with their computers, so they do not do so much physical exercise. This is one of the things which has made more people overweight, and this affects their health when they are older.<br>\
+<br>\
+However, people have also put on weight because they eat more food than in the past, so we should not blame modern inventions for everything. What is more, new technologies have led to better medicine, and as a result people live longer.<br>\
+<br>\
+In conclusion, I believe that generally people live more healthily now. In my view, it is difficult to argue that modern inventions have had a harmful influence on our health. On the other hand, we need to make sure that we still take a reasonable amount of exercise."
+	,vi:"Không còn nghi ngờ gì nữa, những phát minh điện tử hiện đại đã thay đổi công việc và thời gian rảnh rỗi của con người, khiến nhiều người dành ít thời gian tập thể dục hơn. Tuy nhiên, không chắc chắn rằng điều này đã gây hại cho sức khỏe của họ.<br>\
+<br>\
+Về công việc, nhân viên văn phòng luôn ngồi làm việc và máy tính không thay đổi điều đó. Máy tính cũng không ảnh hưởng đến các công việc chân tay như làm nông hay xây dựng, và mọi người vẫn làm việc chân tay như trước đây. Trên thực tế, các loại máy móc khác như máy giặt và máy kéo, không phải máy tính, đã làm giảm lượng công việc chân tay mà mọi người làm.<br>\
+<br>\
+Mặt khác, cách mọi người dành thời gian rảnh rỗi đã thay đổi rất nhiều. Mọi người dành nhiều giờ để xem tivi và chơi máy tính, vì vậy họ không tập thể dục nhiều. Đây là một trong những lý do khiến nhiều người thừa cân hơn và điều này ảnh hưởng đến sức khỏe của họ khi họ già đi.<br>\
+<br>\
+Tuy nhiên, mọi người cũng tăng cân vì họ ăn nhiều thức ăn hơn trước đây, vì vậy chúng ta không nên đổ lỗi cho những phát minh hiện đại về mọi thứ. Hơn nữa, các công nghệ mới đã dẫn đến y học tốt hơn và kết quả là con người sống lâu hơn.<br>\
+<br>\
+Tóm lại, tôi tin rằng nhìn chung mọi người hiện nay sống khỏe mạnh hơn. Theo quan điểm của tôi, thật khó để tranh luận rằng những phát minh hiện đại đã có ảnh hưởng có hại đến sức khỏe của chúng ta. Mặt khác, chúng ta cần đảm bảo rằng chúng ta vẫn tập thể dục ở mức độ hợp lý."
+	,voca:"",
+}
 ];

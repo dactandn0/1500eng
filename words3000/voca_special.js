@@ -42,7 +42,8 @@ check (n) séc | (v) kiểm tra"
 {
 	title:"Conjuntion",
 	en:"wherever (conj) /werˈevər/ bất cứ nơi nào<br>\
-whether (conj) /ˈweðər/ /ˈweðər/ liệu<br>\
+whether (conj) /ˈweðər/ liệu, không biết<br>\
+whether [S + V + O] or not + Clause // dù đúng hay sai, muốn hay không<br>\
 anywhere (conj) bất cứ nơi đâu<br>\
 whenever (conj) /wenˈevər/ bất cứ khi nào<br>\
 whereas (conj) /ˌwerˈæz/ trong khi<br>\

@@ -977,7 +977,7 @@ bin thùng<br>\
 bowl bát<br>\
 cabin cabin<br>\
 criminal (a) tội phạm, hình sự, có trọng tội<br>\
-dozen tá<br>\
+dozens of hàng chục<br>\
 elder người già<br>\
 facial mặt<br>\
 fence hàng rào<br>\

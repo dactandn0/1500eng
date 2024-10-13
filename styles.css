@@ -112,10 +112,12 @@ background-color: #a55;
 }
 
 /*UNCOUNT_TAG_BEGIN*/
-.uncount_voca_story, ._y_z {
+._y_z {
 	color:red;
 }
-
+._y_1z {
+	text-decoration: underline;
+}
 
 .toast  {
 	 opacity: 1 !important;

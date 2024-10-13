@@ -11,12 +11,8 @@ radioCDChange = function (cd) {
 	if (cd===1) {
 		kSTORIES = BOOK4K_1;
 	}
-	localStorage.setItem("book_4k_num", cd);
+	localStorage.setItem("book_4k_cd", cd);
 	$scope.cd = cd;
-}
-
-radioLoopChange = function (val) {
-	localStorage.setItem("audio_loop", val);
 }
 
 $scope.cd = 1;
@@ -53,10 +49,7 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 $scope.whenAudioEnded = function(isVoca)
 {
    var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = 0;
-    if (localStorage.hasOwnProperty("audio_loop")) {
-		loopRadio = localStorage.audio_loop;
-	}
+    var loopRadio = $rootScope[kAudioLoopSaveKey];
     if (loopRadio==='1') // loop
     {
     	$scope.$broadcast('child_playFullSound')  
@@ -92,16 +85,11 @@ $scope.fetchStory = function (idx, reset=true) {
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("book_4k_num")) {
-		var cd = localStorage.book_4k_num;
+	if (localStorage.hasOwnProperty("book_4k_cd")) {
+		var cd = localStorage.book_4k_cd;
 		radioCDChange(parseInt(cd));
 		document.word4k_cdForm.radioCD.value=cd;
 		$scope.cd=cd;
-	}
-
-	if (localStorage.hasOwnProperty("audio_loop")) {
-		var val = localStorage.audio_loop;
-		document.word4k_loopForm.radioLoop.value = val;
 	}
 
 	if (localStorage.hasOwnProperty("book_4k_unit")) {

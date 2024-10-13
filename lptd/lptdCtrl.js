@@ -8,6 +8,10 @@ var app = angular.module("lptdApp", []);
 app.controller("lptdCtrl", function($scope, $rootScope, $timeout ) {
 
 var kSTORIES = lptd_cd1_stories;
+$scope.cd = 1;
+$scope.stories = kSTORIES; //1
+$scope.storyIdx = 0;
+
 radioCDChange = function (cd) {
 	switch (cd) {
 		case 1: kSTORIES = lptd_cd1_stories; break;
@@ -17,23 +21,12 @@ radioCDChange = function (cd) {
 	}
 	localStorage.setItem("lptd_cd", cd);
 	$scope.cd = cd;
-	MYLOG("localStorage saved CD= " + cd);
 }
-
-radioLoopChange = function (val) {
-	localStorage.setItem("audio_loop", val);
-	MYLOG("localStorage audio_loop" + val);
-}
-
-$scope.cd = 1;
-$scope.stories = kSTORIES; //1
 
 $scope.range = function(min, max, step) {
     return RANGE(min, max, step);
 };
 
-$scope.storyIdx = 0;
-$scope.bShowVi = 0;
 
 $scope.createAudioSrc = function() {
 	return "./lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3';
@@ -42,7 +35,6 @@ $scope.createAudioSrc = function() {
 $scope.$on('parent_whenAudioEnded', function(event, message) {
 	$scope.whenAudioEnded();
 });
-
 
 $scope.units = [
 	{'title':"Nature", 'num': 1},
@@ -58,11 +50,7 @@ $scope.units = [
 $scope.whenAudioEnded = function()
 {
 	var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = 0;
-
-    if (localStorage.hasOwnProperty("audio_loop")) {
-		loopRadio = parseInt(localStorage.audio_loop);
-	}
+    var loopRadio = $rootScope[kAudioLoopSaveKey];
     if (loopRadio === 2) // play next
     {
     	nextStoryIdx = $scope.storyIdx + 1;
@@ -77,8 +65,8 @@ $scope.whenAudioEnded = function()
 
 }
 
-$scope.fetchStory = function (idx, reset=true) {
-
+$scope.fetchStory = function (idx, reset=true) 
+{
 	if (reset==true) 
 	{
 		$scope.$broadcast("child_stopSound");
@@ -99,28 +87,15 @@ $scope.fetchStory = function (idx, reset=true) {
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("lptd_isAudioLoop")) {
-		document.getElementById('audioLoopEle').checked = localStorage.lptd_isAudioLoop === 'true';
-	}
-
 	if (localStorage.hasOwnProperty("lptd_cd")) {
 		var cd = localStorage.lptd_cd;
-		MYLOG("localStorage load lptd_cd=" + cd);
 		radioCDChange(parseInt(cd));
 		document.lptd_cdForm.radioCD.value=cd;
 		$scope.cd=cd;
 	}
 
-	if (localStorage.hasOwnProperty("audio_loop")) {
-		var val = localStorage.audio_loop;
-		MYLOG("localStorage load audio_loop=" + val);
-		document.lptd_loopForm.radioLoop.value = val;
-	}
-
 	if (localStorage.hasOwnProperty("lptd_unit")) {
-		idx = localStorage.lptd_unit;
-		MYLOG("localStorage load unit=" + idx);
-		$scope.storyIdx = parseInt(idx);
+		$scope.storyIdx = parseInt(localStorage.lptd_unit);
 	}
 
 	$scope.fetchStory($scope.storyIdx, false);

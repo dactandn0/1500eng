@@ -14,22 +14,12 @@
 		    	 href="" class="p-2 mr-1"> {{story.idx}}
 	    	</a>
 		    <br> 
-		    <form name="word4k_loopForm" class="my-3" role="group">
-	    		<input type="radio" name="radioLoop" value="0" onchange="radioLoopChange(0)" checked/><span class="mr-3">No</span>
-	        	<input type="radio" name="radioLoop" value="1" onchange="radioLoopChange(1)" /><span class="mr-3">Yes</span>
-	        	<input type="radio" name="radioLoop" value="2" onchange="radioLoopChange(2)" /><span class="mr-3">Auto</span>
-    		</form>
-    		
-	    	<span class="btnShowVi opa">
-	        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-	    	</span>
+		    
+		   <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl"></div>
 
-	        <span ng-show="!bShowVi" class="btnEnVi opa">
-			</span>
 		 </div>
 
 		<div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
-
 
 		<div class="card mt-1">
 		    <div class="card-body">
@@ -39,8 +29,8 @@
 				    <a href> {{story.idx}}. {{story.title}}</a>
 				 </h6>
 	          	 <div class="accordion-content">
-	          		<p compile="story.enShow" ng-if="!bShowVi"></p>
-	          		<p ng-bind-html="story.viShow" ng-if="bShowVi""></p>
+	          		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
+	          		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi""></p>
 	          	</div>
 
 	        	<div class="mt-1 p-3" ng-if="story.vocaNotes.length">

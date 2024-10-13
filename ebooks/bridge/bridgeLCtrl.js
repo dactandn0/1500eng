@@ -3,131 +3,70 @@
 document.write('<script src="./ebooks/bridge/listen_data/bridge_cd1.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/bridge/listen_data/bridge_cd2.js" type="text/javascript"></script>');
 
-function MYLOG(msg) {
-//	console.log(msg);
-}
-
 var app = angular.module("bridgeLApp", ['ngSanitize']);
 app.controller("bridgeLCtrl", function($scope, $rootScope, $timeout) {
-$rootScope.$on('$routeChangeStart', function () {
-	$scope.stopSound();
-});
+
+var kSTORIES = bridge_cd1; //1
 
 radioCDChange = function (cd) {
 	$scope.cd = cd;
 	if (cd===1) {
-		$scope.stories = bridge_cd1;
-		$scope.listTrackTitle();
+		$scope.stories = bridge_cd1; // update UI
+		kSTORIES = bridge_cd1;
 	}
 }
 
 $scope.cd = 1;
-$scope.stories = bridge_cd1; //1
+$scope.stories = kSTORIES; //1
 $scope.storyIdx = 0;
-$scope.bPlayingFull = false;
-$scope.bPause = false;
-$scope.bShowVi = 0;
-$scope.audio;
-$scope.currentTime = 0;
-$scope.loopType = 1;
 
-
-$scope.resetFlag = function () {
-	$scope.bPlayingFull = false;
-	$scope.bPause = false;
-	$scope.bShowVi = 0;
-}	
-
-$scope.backSound = function (mul) {
-	$scope.audio.currentTime = $scope.audio.currentTime + kBackTimeAudio * mul;
+$scope.createAudioSrc = function() {
+	return "./ebooks/bridge/listen_data/cd" + $scope.cd + "/" + $scope.story.idx + '.mp3';
 }
 
-$scope.resetAudioBtnUI = function()
+$scope.$on('parent_whenAudioEnded', function(event, message) {
+	$scope.whenAudioEnded();
+});
+
+$scope.whenAudioEnded = function()
 {
-	$scope.bPause=false;
-    $scope.bPlayingFull=false;
-
-    var isChkLoopChecked = false;
-
-    if ($scope.loopType===1) // loop
+	var nextStoryIdx = $scope.storyIdx;
+    var loopRadio = $rootScope[kAudioLoopSaveKey];
+    if (loopRadio === 2) // play next
     {
-    	$scope.playFullSound($scope.storyIdx);
-    } else if ( $scope.loopType===2) // play next
-    {
-    	var next = $scope.storyIdx + 1;
-    	if (next > $scope.stories.length-1) { next = 0 }; 
-    	$scope.fetchStory(next, true);
-    	$scope.playFullSound(next);
+    	nextStoryIdx = $scope.storyIdx + 1;
+    	if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
+    	$scope.storyIdx = nextStoryIdx;
+    	$scope.fetchStory($scope.storyIdx, true);
     }
-
-    $scope.$apply();
-}
-
-$scope.playFullSound = function (index) {
-	if ($scope.bPlayingFull)
-	{
-		$scope.stopSound();
-		$scope.bPause=false;
-	}
-  	else
-  	{
-  		$scope.audio = new Audio("./ebooks/bridge/listen_data/cd" + $scope.cd + "/" + $scope.story.title + ".mp3");
-	    $scope.audio.loop = false;
-	    $scope.audio.play();
-
-		$scope.audio.addEventListener("ended", function(){
-		   $scope.resetAudioBtnUI();
-		});
-
-	    $scope.bPlayingFull = true;
-  	}
-}
-
-$scope.pauseSound = function () {
-	if (!$scope.audio) return;
-	$scope.bPause = !$scope.bPause;
-	if ($scope.bPause)
+    if (loopRadio !== 0) // loop
     {
-    	$scope.audio.pause();
-    	$scope.currentTime = $scope.audio.currentTime;
-    }
-    else
-    {
-    	$scope.audio.currentTime = $scope.currentTime;
-    	$scope.audio.play();
+    	$scope.$broadcast('child_playFullSound')  
     }
 }
 
-$scope.stopSound = function () {
-	if (!$scope.audio) return;
-	 $scope.audio.pause();
-	 $scope.audio.currentTime = 0;
-	 $scope.currentTime = 0;
-	 $scope.bPlayingFull = false;
-};
-
-$scope.fetchStory = function (idx, reset=true) {
+$scope.fetchStory = function (idx, reset=true) 
+{
 	if (reset==true) 
 	{
-		$scope.resetFlag();
-		$scope.stopSound();
+		$scope.$broadcast("child_stopSound");
 	}
 
+	$scope.stories = kSTORIES;
 	$scope.storyIdx = idx;
-	$scope.story = $scope.stories[idx];
+	$scope.story = kSTORIES[idx];
+
+	$rootScope.audioSrc = $scope.createAudioSrc();
+
+	// save DB
+	localStorage.setItem("lptd_unit", idx);
+	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
-}
 
-$scope.listTrackTitle = function() {
-	for (var i = 0; i < $scope.stories.length; i++) {
-		var story = $scope.stories[i];
-		story.title = story.en.split("<br>")[0];
-	}
 }
 
 $scope.init = function () {
-	$scope.listTrackTitle();
 	$scope.fetchStory($scope.storyIdx, false);
 };
 

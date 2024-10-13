@@ -9,7 +9,7 @@ var app = angular.module("myApp", [
   'barron600RApp','barron600LApp',
   'grammerApp','lptdApp',
   'words3000App','words4000App', 
-  'modalApp', 'audioApp',
+  'modalApp', 'audioApp', 'audioLoopRadioApp',
   'ngSanitize','ngRoute','toastr'
   ]);
 app.config(function($routeProvider) {

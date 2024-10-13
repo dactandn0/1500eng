@@ -6,7 +6,7 @@ const ENGLAB_PRE_SLIDES = [
 	date:"",
 	en:"1. Yes, it's on September 2nd - also known as the Independence Day.<br>\
 - How: people celebrate this day with flags, fireworks, v.v <br>\
-Watch parades (diễu hành), eat good food, hang out,...<br>\
+watch parades (diễu hành), eat good food, hang out,...<br>\
 2. Yes of course, i think National days are important because:<br>\
 honor (tôn vinh) and preserve (giữ gìn) the country's history and culture<br>\
 create a sense of community (tạo cảm giác cộng đồng)<br>\

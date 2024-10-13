@@ -4,54 +4,70 @@ document.write('<script src="./ebooks/barron600/listen_data/barron600_listen_dat
 var app = angular.module("barron600LApp", []);
 app.controller("barron600LCtrl", function($scope, $rootScope, $timeout) {
 
+var kSTORIES = barron600_listen_data;
 $scope.cd = 1;
-$scope.stories = barron600_listen_data;
+$scope.stories = kSTORIES;
 $scope.storyIdx = 0;
-$scope.bShowVi = 0;
-$scope.loopType = 1;
 
+radioLoopChange = function (val) {
+    localStorage.setItem(Helper_AudioLoopSaveKey, val);
+}
 
-$scope.resetAudioBtnUI = function()
+$scope.createAudioSrc = function() {
+    return "./ebooks/barron600/listen_data/audio/" + $scope.story.track + '.mp3';
+}
+
+$scope.$on('parent_whenAudioEnded', function(event, message) {
+    $scope.whenAudioEnded();
+});
+
+$scope.whenAudioEnded = function()
 {
-	$scope.bPause=false;
-    $scope.bPlayingFull=false;
-
-    var isChkLoopChecked = false;
-
-    if ($scope.loopType===1) // loop
+    var nextStoryIdx = $scope.storyIdx;
+    var loopRadio = $rootScope[kAudioLoopSaveKey];
+    if (loopRadio === 2) // play next
     {
-    	$scope.playFullSound($scope.storyIdx);
-    } else if ( $scope.loopType===2) // play next
-    {
-    	var next = $scope.storyIdx + 1;
-    	if (next > $scope.stories.length-1) { next = 0 }; 
-    	$scope.fetchStory(next, true);
-    	$scope.playFullSound(next);
+        nextStoryIdx = $scope.storyIdx + 1;
+        if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
+        $scope.storyIdx = nextStoryIdx;
+        $scope.fetchStory($scope.storyIdx, true);
     }
-
-    $scope.$apply();
+    if (loopRadio !== 0) // loop
+    {
+        $scope.$broadcast('child_playFullSound')  
+    }
 }
 
 $scope.fetchStory = function (idx, reset=true) {
 	if (reset==true) 
-	{
-		$scope.resetFlag();
-		$scope.stopSound();
-	}
+    {
+        $scope.$broadcast("child_stopSound");
+    }
 
-	$scope.storyIdx = idx;
-	$scope.story = $scope.stories[idx];
-	
-	$scope.story = processStory($scope.story);
+    $scope.stories = kSTORIES;
+    $scope.storyIdx = idx;
+    $scope.story = $scope.stories[idx];
+
+    $rootScope.audioSrc = $scope.createAudioSrc();
+
+    // save DB
+    localStorage.setItem("barron600_unit", idx);
+    if (!$scope.story) {MYLOG('Dont have Unit'); return;}
+    
+    $scope.story = processStory($scope.story);
 }
 
-$scope.listTrackTitle = function() {
-}
+$scope.loadData = function () {
+    if (localStorage.hasOwnProperty("barron600_idx")) {
+        idx = localStorage.barron600_idx;
+        $scope.storyIdx = parseInt(idx);
+    }
 
-$scope.init = function () {
-	$scope.fetchStory($scope.storyIdx, false);
+    $scope.fetchStory($scope.storyIdx, false);
 };
 
-$scope.init();
+$scope.$on('$viewContentLoaded', function(){
+    $scope.loadData();
+});
 
 });

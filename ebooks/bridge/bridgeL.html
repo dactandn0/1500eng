@@ -15,39 +15,23 @@
 		    	 href="" 
 		    	 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
 		    	 class="pr-2 mr-1"> 
-		    	 [{{story.title}}]
+		    	 {{story.idx}}
 		    	</a>
 		    </div>
 		    <br> 
 
-	    <form name="loopForm" class="mb-3" role="group">
-    		<input type="radio" name="radioLoop" ng-value="0" ng-model="loopType"/><span class="mr-3">No</span>
-        	<input type="radio" name="radioLoop" ng-value="1" ng-model="loopType" /><span class="mr-3">Yes</span>
-        	<input type="radio" name="radioLoop" ng-value="2" ng-model="loopType"/><span class="mr-3">Auto</span>
-		</form>
+		  <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl"></div>
 
 		 </div>
-		<span  class="btnPlay opa">
-			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
-		</span>
 
-    	<span ng-show="bPlayingFull" class="btnSound opa">
-    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+s</button></p>
-    	</span>
-
-		<span class="btnShowVi opa">
-        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-    	</span>
-
+		  <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
 
 		<div class="card mt-4">
 		    <div class="card-body">
 	          <div class="card-text my-2">
 	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
 	          	<h6 class="accordion" >
-				    <a href>{{story.title}}</a>
+				    <a href>{{story.idx}}</a>
 				 </h6>
 
 				 <div class="accordion-content">

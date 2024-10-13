@@ -1,17 +1,17 @@
 
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
+const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
+const SAME_N_V_TAG_END = '</y1>'
 
-var Helper_AudioSpeed = 0.9;
+var Helper_AudioSpeed = 0.7;
 var UtterEnd = true;
 
-// console.log("uncount_nouns.js")
-
+var kAudioLoopSaveKey = "audioLoop";
 
 function MYLOG(msg) {
 	console.log(msg);
 }
-
 
 RANGE = function(min, max, step) {
     step = step || 1;
@@ -86,11 +86,11 @@ function processStory (story) {
 	  	var word = words[i];
 		if (!isInArr(word, dones)) {
 			story.enShow = ngClickOnWord(word, story.enShow);
+			story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
+			story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
 			dones.push(word);
 		}
-		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
-		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
-	} // for
+	}
 
 	if (story.voca) {
 		var vocas = story.voca.split(',');

@@ -2,48 +2,15 @@
 
 const complete_cd1 = [
 {
-	en:"2.T12<br>\
-	E: So. Hussein, I'm going to ask you some questions about your childhood. Do you come from a large family or a small family?<br>\
-Hussein I'm sorry, could you repeat, please?<br>\
-E: Do you come from a large family or a small family? <br>\
-H: Well, actually, it's not large or small, what's the word, it's middle... no, no, sorry, it's medium-sized. I am two brothers... sorry, I have two brothers who are both older than me.<br>\
-E: As a child, who did you spend more time with, your family or your friends?<br>\
-H: When I was a small child, I spent more time with my family,<br>\
-my mother, who looked after me, and I played a lot with my brothers. Then, when I was a bit older, about ten or 11, I started to play more with friends I made at school because we enjoyed doing the same things, and my mother went back to her job.<br>\
-E: And when you were a child, how did you spend your free time?<br>\
-H: I think I watched television quite a lot when I was a small<br>\
-child and I played computer games with my brothers. When I was older, I did a lot of sports with my friends. We went swimming and we played tennis and football because I love doing sports.<br>\
-E: What did you enjoy most about school?<br>\
-H: I think I enjoyed doing science subjects most. I liked physics and chemistry especially. We didn't do sports at school, so I did those in my free time.<br>\
-E: And when you were at school, who do you think was your best teacher?<br>\
-H: I think, perhaps, my chemistry teacher because she explained things very clearly. Also, she was very - I'm not sure about the word - uh, interested, no, enthusiastic. She made us do tests, I mean experiments in the laboratories, so we learned a lot. I never missed one of her lessons."
-,vi:"2.T12<br>\
-E: Vậy. Hussein, tôi sẽ hỏi bạn một số câu hỏi về tuổi thơ của bạn. Bạn xuất thân từ một gia đình đông con hay nhỏ con?<br>\
-Hussein, tôi xin lỗi, bạn có thể nhắc lại được không?<br>\
-E: Bạn xuất thân từ một gia đình đông con hay nhỏ con? <br>\
-H: Thực ra, không phải là đông con hay nhỏ con, từ gì vậy, mà là trung bình... không, không, xin lỗi, trung bình thôi. Tôi có hai anh em... xin lỗi, tôi có hai anh trai, cả hai đều lớn tuổi hơn tôi.<br>\
-E: Khi còn nhỏ, bạn dành nhiều thời gian hơn cho ai, gia đình hay bạn bè?<br>\
-H: Khi còn nhỏ, tôi dành nhiều thời gian hơn cho gia đình,<br>\
-mẹ tôi, người chăm sóc tôi, và tôi chơi rất nhiều với các anh trai của mình. Sau đó, khi tôi lớn hơn một chút, khoảng mười hoặc 11 tuổi, tôi bắt đầu chơi nhiều hơn với những người bạn tôi quen ở trường vì chúng tôi thích làm những việc giống nhau, và mẹ tôi đã quay lại với công việc của bà.<br>\
-E: Và khi còn nhỏ, bạn đã dành thời gian rảnh rỗi của mình như thế nào?<br>\
-H: Tôi nghĩ rằng tôi đã xem tivi khá nhiều khi tôi còn nhỏ và tôi đã chơi trò chơi điện tử với các anh trai của mình. Khi lớn hơn, tôi đã chơi rất nhiều môn thể thao với bạn bè của mình. Chúng tôi đã đi bơi và chơi quần vợt và bóng đá vì tôi thích chơi thể thao.<br>\
-E: Bạn thích nhất điều gì ở trường?<br>\
-H: Tôi nghĩ rằng tôi thích học các môn khoa học nhất. Tôi đặc biệt thích vật lý và hóa học. Chúng tôi không chơi thể thao ở trường, vì vậy tôi đã chơi những môn đó vào thời gian rảnh rỗi.<br>\
-E: Và khi bạn còn đi học, bạn nghĩ ai là giáo viên giỏi nhất của bạn?<br>\
-H: Tôi nghĩ, có lẽ, là giáo viên hóa học của tôi vì cô ấy đã giải thích mọi thứ rất rõ ràng. Ngoài ra, cô ấy rất - tôi không chắc về từ này - uh, hứng thú, không, nhiệt tình. Cô ấy bắt chúng tôi làm bài kiểm tra, ý tôi là thí nghiệm trong phòng thí nghiệm, vì vậy chúng tôi học được rất nhiều. Tôi không bao giờ bỏ lỡ một bài học nào của cô ấy."
-,voca:"childhood,experiment"
-},
-{
-	en: "3.T19<br>\
-	Well, I'm going to talk about a trip I made across Australia. The transport I used was a motorbike. It wasn't a new bike, it was what's the word - secondhand, and I bought it because I wanted to see Australia. I didn't want to use public transport because I wanted to be independent. I had a month's holiday before I started my course and I made the trip with a friend, a Chinese girl, because I was frightened of travelling alone. I met her at a language school where we studied English together. We travelled along the south coast and saw some of the desert. The good thing about the journey was that we met a lot of other people who were travelling. We went to places which are difficult to reach on public transport, and the trip was quite cheap. Also, the motorbike had quite a powerful engine, so it was fast and exciting. The bad things were the rain and the heat because they made us tired. I have great memories of the trip because I felt really free. We could go where we liked. Also, we met some very friendly people and we saw a lot of interesting places.<br>\
+	idx:"3.T19",
+	en: "Well, I'm going to talk about a trip I made across Australia. The transport I used was a motorbike. It wasn't a new bike, it was what's the word - secondhand, and I bought it because I wanted to see Australia. I didn't want to use public transport because I wanted to be independent. I had a month's holiday before I started my course and I made the trip with a friend, a Chinese girl, because I was frightened of travelling alone. I met her at a language school where we studied English together. We travelled along the south coast and saw some of the desert. The good thing about the journey was that we met a lot of other people who were travelling. We went to places which are difficult to reach on public transport, and the trip was quite cheap. Also, the motorbike had quite a powerful engine, so it was fast and exciting. The bad things were the rain and the heat because they made us tired. I have great memories of the trip because I felt really free. We could go where we liked. Also, we met some very friendly people and we saw a lot of interesting places.<br>\
 I still have friends who I made during that trip. In all, I think it was the best journey I've ever made.",
-	vi: "3.T19<br>\
-Vâng, tôi sẽ nói về chuyến đi xuyên Úc của tôi. Phương tiện di chuyển của tôi là xe máy. Đó không phải là xe mới, mà là xe cũ, và tôi mua nó vì tôi muốn khám phá Úc. Tôi không muốn sử dụng phương tiện công cộng vì tôi muốn tự lập. Tôi có một tháng nghỉ phép trước khi bắt đầu khóa học và tôi thực hiện chuyến đi với một người bạn, một cô gái Trung Quốc, vì tôi sợ đi du lịch một mình. Tôi gặp cô ấy tại một trường ngôn ngữ, nơi chúng tôi cùng học tiếng Anh. Chúng tôi đi dọc theo bờ biển phía nam và nhìn thấy một số sa mạc. Điều tốt về chuyến đi là chúng tôi gặp rất nhiều người khác cũng đang đi du lịch. Chúng tôi đã đến những nơi khó tiếp cận bằng phương tiện công cộng và chuyến đi khá rẻ. Ngoài ra, xe máy có động cơ khá mạnh nên rất nhanh và thú vị. Những điều không tốt là mưa và nắng nóng vì chúng khiến chúng tôi mệt mỏi. Tôi có những kỷ niệm tuyệt vời về chuyến đi vì tôi cảm thấy thực sự tự do. Chúng tôi có thể đi bất cứ nơi nào chúng tôi thích. Ngoài ra, chúng tôi đã gặp một số người rất thân thiện và chúng tôi đã thấy rất nhiều địa điểm thú vị.<br>\
+	vi: "Vâng, tôi sẽ nói về chuyến đi xuyên Úc của tôi. Phương tiện di chuyển của tôi là xe máy. Đó không phải là xe mới, mà là xe cũ, và tôi mua nó vì tôi muốn khám phá Úc. Tôi không muốn sử dụng phương tiện công cộng vì tôi muốn tự lập. Tôi có một tháng nghỉ phép trước khi bắt đầu khóa học và tôi thực hiện chuyến đi với một người bạn, một cô gái Trung Quốc, vì tôi sợ đi du lịch một mình. Tôi gặp cô ấy tại một trường ngôn ngữ, nơi chúng tôi cùng học tiếng Anh. Chúng tôi đi dọc theo bờ biển phía nam và nhìn thấy một số sa mạc. Điều tốt về chuyến đi là chúng tôi gặp rất nhiều người khác cũng đang đi du lịch. Chúng tôi đã đến những nơi khó tiếp cận bằng phương tiện công cộng và chuyến đi khá rẻ. Ngoài ra, xe máy có động cơ khá mạnh nên rất nhanh và thú vị. Những điều không tốt là mưa và nắng nóng vì chúng khiến chúng tôi mệt mỏi. Tôi có những kỷ niệm tuyệt vời về chuyến đi vì tôi cảm thấy thực sự tự do. Chúng tôi có thể đi bất cứ nơi nào chúng tôi thích. Ngoài ra, chúng tôi đã gặp một số người rất thân thiện và chúng tôi đã thấy rất nhiều địa điểm thú vị.<br>\
 Tôi vẫn còn những người bạn mà tôi đã kết bạn trong chuyến đi đó. Nhìn chung, tôi nghĩ đó là chuyến đi tuyệt vời nhất mà tôi từng thực hiện.",
 },
 {
-	en:"3.T17<br>\
-Good evening and welcome aboard the Pride of Poole. In this recorded announcement, we'll give you details of some of the facilities available on board this ship.<br>\
+	idx:"3.T17",
+	en:"Good evening and welcome aboard the Pride of Poole. In this recorded announcement, we'll give you details of some of the facilities available on board this ship.<br>\
 <br>\
 You're currently standing in the reception area in the centre of B Deck. If you're feeling hungry after a long day's travelling, go up the stairs to A Deck, where you'll find the restaurant. The restaurant caters for all appetites, with anything from a light snack to a full three-course meal. The restaurant will be open from the moment the ship leaves port to half an hour before arrival.<br>\
 <br>\
@@ -56,8 +23,8 @@ Just next to the cinema is the staircase leading down to the cabins on C Deck. T
 On this deck, that is B Deck, you'll also find an area where you can either play games in our special electronic games arcade or do your shopping.<br>\
 <br>\
 Just beyond that on the same level, people who want a bit of fresh air or just want to see the sea can go out onto the viewing deck, which is in the open air. Make sure you wear a jacket or coat, as it can be quite cold and windy."
-,vi:"3.T17<br>\
-Chào buổi tối và chào mừng bạn đến với Pride of Poole. Trong thông báo được ghi âm này, chúng tôi sẽ cung cấp cho bạn thông tin chi tiết về một số tiện nghi có sẵn trên tàu này.<br>\
+,
+vi:"Chào buổi tối và chào mừng bạn đến với Pride of Poole. Trong thông báo được ghi âm này, chúng tôi sẽ cung cấp cho bạn thông tin chi tiết về một số tiện nghi có sẵn trên tàu này.<br>\
 <br>\
 Hiện tại, bạn đang đứng ở khu vực lễ tân ở giữa Boong B. Nếu bạn cảm thấy đói sau một ngày dài di chuyển, hãy lên cầu thang đến Boong A, nơi bạn sẽ tìm thấy nhà hàng. Nhà hàng phục vụ mọi nhu cầu, từ đồ ăn nhẹ đến bữa ăn ba món đầy đủ. Nhà hàng sẽ mở cửa từ lúc tàu rời cảng cho đến nửa giờ trước khi cập cảng.<br>\
 <br>\
@@ -73,8 +40,8 @@ Ngay phía sau đó trên cùng một tầng, những người muốn hít thở
 ,voca:"record,announcement,facilities,reception,appetites,reclining,viewing deck,staircase,steward,three-course meal,arrival,cater,available"
 },
 {
-	en:"3.T18<br>\
-Now for some further details. This voyage is an overnight trip. The ship leaves port at 7 p.m. and the journey takes just over 12 hours and 45 minutes, reaching our destination at about eight tomorrow morning. This is for the convenience of those wishing to catch the nine o'clock train, which leaves from the ferry terminal.<br>\
+	idx:"3.T18",
+	en:"Now for some further details. This voyage is an overnight trip. The ship leaves port at 7 p.m. and the journey takes just over 12 hours and 45 minutes, reaching our destination at about eight tomorrow morning. This is for the convenience of those wishing to catch the nine o'clock train, which leaves from the ferry terminal.<br>\
 <br>\
 Passengers with children in their party are informed that there is a special section in the restaurant with kids' food and a play area. People with children are encouraged to turn up early to get a place, as the section is very popular.<br>\
 <br>\
@@ -83,8 +50,7 @@ Make this a trip to remember. Here at the information desk, you can obtain a sou
 For those using the lounge and wishing to check their email, there's a wireless connection, but you'll have to bring your own laptop. You can also watch the latest TV programmes there or in the coffee bar next to the restaurant.<br>\
 <br>\
 Finally, a unique feature on this crossing only: anyone who buys a fashion item from our wonderful range of men's and women's clothes in the shopping area has the chance to win a free holiday. All you have to do is complete a sentence starting 'I like Sealand Ferries because... and the best sentence wins the prize of a holiday in Switzerland with tickets to a three-day music festival included. Talk to any member of staff for more details."
-,vi:"3.T18<br>\
-Bây giờ là một số thông tin chi tiết hơn. Chuyến đi này là chuyến đi qua đêm. Tàu rời cảng lúc 7 giờ tối và hành trình mất hơn 12 giờ 45 phút một chút, đến đích vào khoảng tám giờ sáng mai. Điều này thuận tiện cho những người muốn bắt chuyến tàu chín giờ, khởi hành từ bến phà.<br>\
+,vi:"Bây giờ là một số thông tin chi tiết hơn. Chuyến đi này là chuyến đi qua đêm. Tàu rời cảng lúc 7 giờ tối và hành trình mất hơn 12 giờ 45 phút một chút, đến đích vào khoảng tám giờ sáng mai. Điều này thuận tiện cho những người muốn bắt chuyến tàu chín giờ, khởi hành từ bến phà.<br>\
 <br>\
 Những hành khách có trẻ em trong đoàn được thông báo rằng có một khu vực đặc biệt trong nhà hàng với đồ ăn dành cho trẻ em và khu vui chơi. Những người có trẻ em được khuyến khích đến sớm để có chỗ, vì khu vực này rất đông khách.<br>\
 <br>\
@@ -95,8 +61,8 @@ Hãy biến chuyến đi này thành chuyến đi đáng nhớ. Tại quầy th�
 Cuối cùng, một tính năng độc đáo chỉ có trên chuyến đi này: bất kỳ ai mua một mặt hàng thời trang từ bộ sưu tập quần áo nam và nữ tuyệt vời của chúng tôi trong khu vực mua sắm đều có cơ hội giành được một kỳ nghỉ miễn phí. Tất cả những gì bạn phải làm là hoàn thành một câu bắt đầu bằng 'Tôi thích Sealand Ferries vì... và câu hay nhất sẽ giành được giải thưởng là một kỳ nghỉ ở Thụy Sĩ bao gồm vé tham dự lễ hội âm nhạc kéo dài ba ngày. Hãy trao đổi với bất kỳ nhân viên nào để biết thêm chi tiết."
 },
 {
-	en:"4.T23<br>\
-W: Excuse me. <br>\
+	idx:"4.T23",
+	en:"W: Excuse me. <br>\
 I: Yes? <br>\
 W: Before you go through, I wonder if you could help us by answering a few questions for a survey. It won't take long. I No problem. We're not in any hurry.<br>\
 W: Fine, thanks. Now, er, let's look at the questions. <br>\
@@ -109,8 +75,7 @@ W: Right... And here's a question about this building. I know you haven't had a 
 I: Oh, it looks pretty good to me. It's got lots of natural light, so you don't have to put up with lots of electric lighting. which can be quite tiring on the eyes. It feels very large and spacious, which is great because although it's full of activity and quite noisy, it doesn't feel too crowded. Also, when you look up at the ceiling near the entrance with the design of stars and planets on it, that's something I really like. I'm not so keen on those revolving doors, though. I always feel I'm going to get stuck in one.<br>\
 W: And did you have any difficulties getting to the exhibition? <br>\
 I: Well, coming at this time of day the roads weren't too busy, so that was all right... and there were plenty of signposts, so the car park was easy to find. The only problem was it was full when I arrived - I guess I should have come earlier - so I had to find another one quite a long walk away, which was a pity. Then we had to stand outside for quite a long time queuing to get in - this exhibition is pretty popular. That was a bit of a problem, because my son gets impatient, but fortunately it wasn't raining, otherwise we might have gone home."
-,vi:"4.T23<br>\
-W: Xin lỗi. <br>\
+,vi:"W: Xin lỗi. <br>\
 I: Vâng? <br>\
 W: Trước khi bạn đi qua, tôi tự hỏi liệu bạn có thể giúp chúng tôi bằng cách trả lời một vài câu hỏi cho một cuộc khảo sát không. Sẽ không mất nhiều thời gian đâu. Tôi Không vấn đề gì. Chúng tôi không vội.<br>\
 W: Được thôi, cảm ơn. Bây giờ, ừm, chúng ta hãy xem các câu hỏi. <br>\
@@ -126,31 +91,31 @@ I: À, đến vào thời điểm này trong ngày, đường không quá đông
 	,voca:"",
 },
 {
-		en:"5.T27<br>\
-Hi there, everybody, and welcome to Animal World. Before you start your visit, I'd just like to tell you about a few special events happening here today. They're all free, and I'd really encourage you to go to as many of them as you can, as I think you'll learn a lot.<br>\
+	idx:"5.T27",
+en:"Hi there, everybody, and welcome to Animal World. Before you start your visit, I'd just like to tell you about a few special events happening here today. They're all free, and I'd really encourage you to go to as many of them as you can, as I think you'll learn a lot.<br>\
 The first event is called The World of Ants, and it's happening this morning quite soon in the Insect House, which is just a short walk from here. The well-known entomologist Dr David Crocker, who many of you will have seen on television, is giving a lecture all about ants - the different types of ants, how they organise themselves, what they eat, their behaviour and so on. It's actually a fascinating subject. So, The World of Ants, a lecture by Dr Crocker, in the Insect House, and it starts at 11 o'clock and lasts for 60 minutes.<br>\
 At midday, that's 12 o'clock, there's a film which is just as fascinating and it's called The Great Migration. This is all about birds and how they migrate across continents and oceans using the Sun, the stars and the Earth's magnetic field. As I said, it's a film an absolutely spectacular film - which all the family will enjoy, some fabulous photography - and it's on in Theatre C, which you can see here just behind me - so bear that in mind for 12 o'clock.<br>\
 The next event is a demonstration taking place in the Exhibition Room and given by Monica Chaddha. It's called Encouraging Garden Wildlife. Monica will be showing you ways of encouraging animals, birds and other wildlife to visit and live in your garden, how to place boxes for nests, what food to put out for them and all sorts of practical advice. That's at 2.30, so just after lunch.<br>\
 <br>\
 The final free event for today is Birds of Prey. Tasha, their keeper, will be giving a display of some of our most magnificent birds and how they fly, and I thoroughly recommend this event. The display includes eagles, vultures and owls and will be starting at 3.45 on the lawn outside. It's an unforgettable experience, so remember, on the front lawn at 3.45 to see the birds flying."
-		,vi:"5.T27<br>\
-Xin chào mọi người và chào mừng đến với Animal World. Trước khi bắt đầu chuyến tham quan, tôi chỉ muốn kể cho các bạn nghe về một vài sự kiện đặc biệt diễn ra tại đây hôm nay. Tất cả đều miễn phí và tôi thực sự khuyến khích các bạn đến càng nhiều sự kiện càng tốt, vì tôi nghĩ các bạn sẽ học được rất nhiều điều.<br>\
+,
+vi:"Xin chào mọi người và chào mừng đến với Animal World. Trước khi bắt đầu chuyến tham quan, tôi chỉ muốn kể cho các bạn nghe về một vài sự kiện đặc biệt diễn ra tại đây hôm nay. Tất cả đều miễn phí và tôi thực sự khuyến khích các bạn đến càng nhiều sự kiện càng tốt, vì tôi nghĩ các bạn sẽ học được rất nhiều điều.<br>\
 Sự kiện đầu tiên có tên là The World of Ants, và sẽ diễn ra vào sáng nay tại Insect House, chỉ cách đây một đoạn đi bộ ngắn. Nhà côn trùng học nổi tiếng Tiến sĩ David Crocker, người mà nhiều bạn đã từng thấy trên truyền hình, sẽ có bài giảng về kiến ​​- các loại kiến ​​khác nhau, cách chúng tự tổ chức, thức ăn của chúng, hành vi của chúng, v.v. Trên thực tế, đây là một chủ đề hấp dẫn. Vậy là, The World of Ants, một bài giảng của Tiến sĩ Crocker, tại Insect House, bắt đầu lúc 11 giờ và kéo dài trong 60 phút.<br>\
 Vào buổi trưa, tức là 12 giờ, có một bộ phim cũng hấp dẫn không kém và có tên là The Great Migration. Bộ phim này nói về loài chim và cách chúng di cư qua các lục địa và đại dương bằng cách sử dụng Mặt trời, các vì sao và từ trường của Trái đất. Như tôi đã nói, đây là một bộ phim thực sự ngoạn mục - mà cả gia đình sẽ thích, một số bức ảnh tuyệt đẹp - và nó được chiếu tại Rạp C, nơi bạn có thể xem ngay phía sau tôi - vì vậy hãy ghi nhớ điều đó vào lúc 12 giờ.<br>\
 Sự kiện tiếp theo là một buổi trình diễn diễn ra tại Phòng triển lãm và do Monica Chaddha trình bày. Sự kiện này có tên là Encouraging Garden Wildlife. Monica sẽ chỉ cho bạn cách khuyến khích động vật, chim và các loài động vật hoang dã khác đến thăm và sống trong khu vườn của bạn, cách đặt hộp làm tổ, loại thức ăn nào nên cho chúng và đủ loại lời khuyên thực tế. Đó là lúc 2.30, ngay sau bữa trưa.<br>\
 <br>\
 Sự kiện miễn phí cuối cùng trong ngày hôm nay là Birds of Prey. Tasha, người trông coi chúng, sẽ trình diễn một số loài chim tuyệt đẹp nhất của chúng tôi và cách chúng bay, và tôi thực sự khuyên bạn nên tham gia sự kiện này. Màn trình diễn bao gồm đại bàng, kền kền và cú và sẽ bắt đầu lúc 3.45 trên bãi cỏ bên ngoài. Đây là một trải nghiệm khó quên, vì vậy hãy nhớ, trên bãi cỏ phía trước lúc 3.45 để xem những chú chim bay."
-		,voca:"Migration",
-	},
-	{
-		en:"5.T28<br>\
-Now, I'll just give you a few directions before you leave, especially for those of you who are feeling a bit hungry. When you leave the main building, you come to an area where the path divides. If you take the right-hand path, you'll see the lake on your right, and exactly opposite the lake on your left is the gift shop. Apart from selling gifts, it sells snacks, sandwiches and light drinks. If you walk on past the lake, on your right you'll also see the penguins. Go past the penguins and you'll come to the restaurant, also on your right. Don't go too far, or you'll come to the aquarium. The aquarium is on your right at the crossroad, and just over the crossroad, also on your right, is the lion enclosure.<br>\
+,voca:"Migration",
+},
+{
+idx:"5.T228",
+en:"Now, I'll just give you a few directions before you leave, especially for those of you who are feeling a bit hungry. When you leave the main building, you come to an area where the path divides. If you take the right-hand path, you'll see the lake on your right, and exactly opposite the lake on your left is the gift shop. Apart from selling gifts, it sells snacks, sandwiches and light drinks. If you walk on past the lake, on your right you'll also see the penguins. Go past the penguins and you'll come to the restaurant, also on your right. Don't go too far, or you'll come to the aquarium. The aquarium is on your right at the crossroad, and just over the crossroad, also on your right, is the lion enclosure.<br>\
 <br>\
 If you're thinking of having a picnic, the best place to go is the picnic area, and for this you need to turn left at the crossroad and walk along a few metres. At the end of the path, you'll find the picnic area on your left.<br>\
 <br>\
 Now, if you have any questions, I'd be happy to answer them and, once again, I really hope you enjoy your visit. Thank you."
-		,vi:"5.T28<br>\
-Bây giờ, tôi sẽ chỉ cho bạn một vài chỉ dẫn trước khi bạn rời đi, đặc biệt là đối với những ai đang cảm thấy hơi đói. Khi bạn rời khỏi tòa nhà chính, bạn sẽ đến một khu vực có đường đi chia đôi. Nếu bạn đi theo con đường bên phải, bạn sẽ thấy hồ ở bên phải, và ngay đối diện với hồ ở bên trái là cửa hàng quà tặng. Ngoài việc bán quà tặng, nơi này còn bán đồ ăn nhẹ, bánh sandwich và đồ uống nhẹ. Nếu bạn đi qua hồ, bên phải bạn cũng sẽ thấy chim cánh cụt. Đi qua chim cánh cụt và bạn sẽ đến nhà hàng, cũng ở bên phải bạn. Đừng đi quá xa, nếu không bạn sẽ đến thủy cung. Thủy cung nằm bên phải bạn tại ngã tư, và ngay bên kia ngã tư, cũng ở bên phải bạn, là chuồng sư tử.<br>\
+,
+vi:"Bây giờ, tôi sẽ chỉ cho bạn một vài chỉ dẫn trước khi bạn rời đi, đặc biệt là đối với những ai đang cảm thấy hơi đói. Khi bạn rời khỏi tòa nhà chính, bạn sẽ đến một khu vực có đường đi chia đôi. Nếu bạn đi theo con đường bên phải, bạn sẽ thấy hồ ở bên phải, và ngay đối diện với hồ ở bên trái là cửa hàng quà tặng. Ngoài việc bán quà tặng, nơi này còn bán đồ ăn nhẹ, bánh sandwich và đồ uống nhẹ. Nếu bạn đi qua hồ, bên phải bạn cũng sẽ thấy chim cánh cụt. Đi qua chim cánh cụt và bạn sẽ đến nhà hàng, cũng ở bên phải bạn. Đừng đi quá xa, nếu không bạn sẽ đến thủy cung. Thủy cung nằm bên phải bạn tại ngã tư, và ngay bên kia ngã tư, cũng ở bên phải bạn, là chuồng sư tử.<br>\
 <br>\
 Nếu bạn đang nghĩ đến việc đi dã ngoại, nơi tốt nhất để đến là khu vực dã ngoại, và để đến đó, bạn cần rẽ trái tại ngã tư và đi bộ vài mét. Cuối con đường, bạn sẽ thấy khu vực dã ngoại ở bên trái.<br>\
 <br>\

@@ -1,9 +1,9 @@
 
 const bridge_cd1 = [
 {
+	idx: "1.T1.1",
 	en: 
-	"1.T1.1<br>\
-Апа: Hello, Sergei<br>\
+	"Апа: Hello, Sergei<br>\
 Sergei: Hi, Апа! How are you?<br>\
 Апа: I'm fine, thanks. And you?<br>\
 Sergei: I'm very well, thanks.<br>\
@@ -14,8 +14,7 @@ Eva: Are уоu а new student?<br>\
 Sergei: Yes, I am,<br>\
 Eva: I'm а пеw student too!",
 	vi: 
-	'1.T1.1<br>\
-Ana: Xin chào, Sergei<br>\
+	'Ana: Xin chào, Sergei<br>\
 Sergei: Xin chào, Sergei! Bạn khỏe không?<br>\
 Ana: Tôi khỏe, cảm ơn. Còn bạn thì sao?<br>\
 Sergei: Tôi rất khỏe, cảm ơn.<br>\
@@ -27,9 +26,9 @@ Sergei: Vâng, tôi là,<br>\
 Eva: Tôi cũng là sinh viên mới!'
 },
 {
+	idx: "1.T1.2",
 	en: 
-	"1.T1.2<br>\
-Fouad: Hello. I'm а new student. I'm here for the пеw students meeting.<br>\
+	"Fouad: Hello. I'm а new student. I'm here for the пеw students meeting.<br>\
 Agnes: Hi! Welcome to O-Week! Whаt's your subject?<br>\
 Fоuаd: Chemistry. I'm in the science department.<br>\
 Agnes: Yоu'rе the first student to arrive at the meeting! I'm your student host. Му паmе's Agnes. Whаt's your паmе?<br>\
@@ -54,8 +53,7 @@ Fоuаd: I'd like to go, What about you, Yibo?<br>\
 Yibo: Yes, please!<br>\
 Agnes: ОК, thаt's great. Now, lеt's just wait for а few mоrе students to arrive and then we can start оur tour of the campus!",
 	vi: 
-	"1.T1.2<br>\
-Fouad: Xin chào. Tôi là sinh viên mới. Tôi đến đây để tham dự buổi họp của sinh viên mới.<br>\
+	"Fouad: Xin chào. Tôi là sinh viên mới. Tôi đến đây để tham dự buổi họp của sinh viên mới.<br>\
 Agnes: Xin chào, Chào mừng đến với Tuần lễ-O! Môn học của bạn là gì?<br>\
 Fouad: Hóa học. Tôi học khoa khoa học.<br>\
 Agnes: Bạn là sinh viên đầu tiên đến dự buổi họp! Tôi là sinh viên chủ trì buổi họp. Tôi là Agnes. Tên bạn là gì?<br>\
@@ -82,8 +80,8 @@ Agnes: Ồ, tuyệt quá. Bây giờ, chúng ta hãy đợi thêm vài sinh viê
 ,voca:"campus,Barbeque,Berlin,Australia,carnival,union,Beijing,informal,host",
 },
 {
-	en:"1.T1.6<br>\
-Hassan: Excuse me, are you Etsuko?<br>\
+	idx: "1.T1.6",
+	en:"Hassan: Excuse me, are you Etsuko?<br>\
 Etsuko: Yes, I am.<br>\
 Hassan: Remember me? At the tour of the university - on Wednesday?<br>\
 Etsuko: Oh yes! Of course! You're Ahmed!<br>\
@@ -104,8 +102,7 @@ Etsuko: Is there a desk?<br>\
 Hassan: No, there isn't but there's a small table for my laptop. I go to the university library when I want to study. And there aren't any bookshelves so all my books are under the sofa. It's not ideal! What about you, Estuko? Where are you?<br>\
 Etsuko: I'm in a room in a student hall. It's a single room. It's a bit small but there's everything I need. There's a big desk for my laptop, there's a lamp and there are bookshelves so there's lots of space for all my books. I love reading! There's a small sofa too - it's very comfortable! The best thing is that it's very quiet and I can see the park from my window!<br>\
 Hassan: I want to find a room like yours!",
-vi:"1.T1.6<br>\
-Hassan: Xin lỗi, bạn là Etsuko phải không?<br>\
+vi:"Hassan: Xin lỗi, bạn là Etsuko phải không?<br>\
 Etsuko: Vâng, đúng rồi.<br>\
 Hassan: Nhớ tôi không? Trong chuyến tham quan trường đại học - vào thứ tư?<br>\
 Etsuko: Ồ vâng! Tất nhiên rồi! Bạn là Ahmed!<br>\
@@ -129,8 +126,8 @@ Hassan: Tôi muốn tìm một căn phòng như phòng của bạn!",
 voca:"memory,sofa,university,tour,shared flat,bookshelves,Turkey,Iran,Saudi Arabia,student hall,comfortable,centre,at the moment,lots of space,quiet",
 },
 {
-	en:"2.T1.8<br> \
-Etsuko: Hi Ahmed! How are you?<br>\
+	idx: "2.T1.8",
+	en:"Etsuko: Hi Ahmed! How are you?<br>\
 Ahmed: OK, but I'm freezing. It's minus 10 degrees today! <br>\
 Etsuko: Yes, I know it's very cold, Ahmed. But, it is January and Canada is the coldest country in the world!<br>\
 Ahmed: I really don't like winter. It's awful.<br>\
@@ -150,8 +147,7 @@ Etsuko: I've got a red one you can have. Come on, Ahmed! I really want you to me
 Ahmed: Who's he?<br>\
 Etsuko: He's a snowman! And he wears a bright red hat too!"
 ,
-vi:"2.T1.8<br>\
-Etsuko: Chào Ahmed! Bạn khỏe không?<br>\
+vi:"Etsuko: Chào Ahmed! Bạn khỏe không?<br>\
 Ahmed: Ổn, nhưng tôi đang lạnh cóng. Hôm nay là âm 10 độ! <br>\
 Etsuko: Vâng, tôi biết là rất lạnh, Ahmed. Nhưng, ĐANG LÀ tháng Một và Canada là quốc gia lạnh nhất thế giới!<br>\
 Ahmed: Tôi thực sự không thích mùa đông. Thật kinh khủng.<br>\
@@ -172,8 +168,8 @@ Etsuko: Anh ấy là người tuyết! Và anh ấy cũng đội một chiếc m
 voca:"carnival[festival],canoe[/kəˈnuː/],race,palace,coat,scarf"
 },
 {
-	en:"2.T1.11<br>\
-Fouad: Hi, Jing! Do you want to go to the Festival of the Winds next weekend?<br>\
+	idx: "2.T1.11",
+	en:"Fouad: Hi, Jing! Do you want to go to the Festival of the Winds next weekend?<br>\
 Jing: The Festival of the Winds? What is that exactly?<br>\
 Fouad: It's a kite festival! Look at the poster! It's a festival for people who love kites. It's only once a year, and lasts for one day. I don't want to miss it!<br>\
 Jing: I'm not sure. I haven't got a kite.<br>\
@@ -191,8 +187,7 @@ Jing: That's true. We can take a train to Bondi Junction and then catch a bus.<b
 Fouad: Do you want to check the website and find out? The festival starts at 11am - we don't want to be late.<br>\
 Jing: Good idea!",
 voca:"exactly,kite,poster,entertainment programme,exhibition,dance,workshop,stall,catch a bus",
-vi:"2.T1.11<br>\
-Fouad: Chào Jing! Bạn có muốn đến Lễ hội Gió vào cuối tuần tới không?<br>\
+vi:"Fouad: Chào Jing! Bạn có muốn đến Lễ hội Gió vào cuối tuần tới không?<br>\
 Jing: Lễ hội Gió ư? Chính xác thì đó là gì?<br>\
 Fouad: Đó là lễ hội thả diều! Hãy nhìn tấm áp phích này! Đó là lễ hội dành cho những người yêu thích diều. Lễ hội chỉ diễn ra một lần trong năm và kéo dài trong một ngày. Tôi không muốn bỏ lỡ!<br>\
 Jing: Tôi không chắc. Tôi không có diều.<br>\
@@ -211,8 +206,8 @@ Fouad: Bạn có muốn kiểm tra trang web và tìm hiểu không? Lễ hội 
 Jing: Ý tưởng hay!",
 },
 {
-	en:"3.T1.13<br>\
-Katrin: Excuse me, Li Bo? Are you busy?<br>\
+	idx: "3.T1.13",
+	en:"Katrin: Excuse me, Li Bo? Are you busy?<br>\
 Li Bo: Not really. I'm trying to write an essay.<br>\
 Katrin: I'd like to ask you a few questions.<br>\
 Li Bo: Sure, what about?<br>\
@@ -238,8 +233,7 @@ Katrin: So, you feel good?<br>\
 Li Bo: Yes.<br>\
 Katrin: Thanks very much for your help, Li Bo.<br>\
 Li Bo: No problem."
-, vi:"3.T1.13<br>\
-Katrin: Xin lỗi, Li Bo? Bạn có bận không?<br>\
+, vi:"Katrin: Xin lỗi, Li Bo? Bạn có bận không?<br>\
 Li Bo: Không thực sự. Tôi đang cố viết một bài luận.<br>\
 Katrin: Tôi muốn hỏi bạn một vài câu hỏi.<br>\
 Li Bo: Được thôi, về điều gì?<br>\
@@ -268,8 +262,8 @@ Li Bo: Không vấn đề gì."
 ,voca:"first-year student,confident,shy,somewhere,conversation,describe,talkative,tutor,in front of a lot of people"
 },
 {
-	en:"3.T1.14<br>\
-Grant: Thank you for coming today, Pilar.<br>\
+	idx:"3.T1.14",
+	en:"Grant: Thank you for coming today, Pilar.<br>\
 Pilar: My pleasure.<br>\
 Grant: Well, let's start. So the job is with Student Services - we're part of the university that tries to help the students with any problems.<br>\
 Pilar: Yes, I looked at Student Services on the Internet.<br>\
@@ -302,8 +296,7 @@ Pilar: No, I don't. But I do have experience leading projects.<br>\
 Grant: So, do you feel that you can manage a team?<br>\
 Pilar: Yes, I'm sure I can manage a team well. I have all the skills to do it and I'm sure I can do a good job.<br>\
 Grant: OK, well let's talk more about your project management...",
-vi:"3.T1.14<br>\
-Grant: Cảm ơn bạn đã đến hôm nay, Pilar.<br>\
+vi:"Grant: Cảm ơn bạn đã đến hôm nay, Pilar.<br>\
 Pilar: Rất vui được phục vụ bạn.<br>\
 Grant: Vâng, chúng ta hãy bắt đầu. Vậy thì công việc là với Dịch vụ sinh viên - chúng tôi là một phần của trường đại học cố gắng giúp đỡ sinh viên giải quyết mọi vấn đề.<br>\
 Pilar: Vâng, tôi đã xem Dịch vụ sinh viên trên Internet.<br>\
@@ -338,8 +331,8 @@ Pilar: Vâng, tôi chắc chắn mình có thể quản lý một nhóm tốt. T
 Grant: Được rồi, chúng ta hãy nói thêm về quản lý dự án của bạn."
 },
 {
-	en:"4.T1.22.<br>\
-Dr Sawyer: Good afternoon, everyone. Today Esra is talking about changes in education. Are you ready?.<br>\
+	idx:"4.T1.22",
+	en:"Dr Sawyer: Good afternoon, everyone. Today Esra is talking about changes in education. Are you ready?.<br>\
 Esra: Yes, I think so..<br>\
 Dr Sawyer: OK, Esra, let's start.<br>\
 Esra: A big change in education in my country is that more women are going to university and colleges. This is happening in many countries. Today I'm talking about the UK.<br>\
@@ -355,8 +348,7 @@ computer science and engineering there are more men than women. In computer scie
 John: And is this just in Britain?.<br>\
 Esra: No, this is the same in many other countries and in Arab countries too. So one of the main changes in education\
  is the rising number of women and the fact that women are doing well- this is something we can be proud of."
-,vi:"4.T1.22.<br>\
-Tiến sĩ Sawyer: Chào buổi chiều, mọi người. Hôm nay Esra sẽ nói về những thay đổi trong giáo dục. Các bạn đã sẵn sàng chưa?.<br>\
+,vi:"Tiến sĩ Sawyer: Chào buổi chiều, mọi người. Hôm nay Esra sẽ nói về những thay đổi trong giáo dục. Các bạn đã sẵn sàng chưa?.<br>\
 Esra: Vâng, tôi nghĩ là vậy.<br>\
 Tiến sĩ Sawyer: Được rồi, Esra, chúng ta hãy bắt đầu.<br>\
 Esra: Một thay đổi lớn trong giáo dục ở đất nước tôi là ngày càng có nhiều phụ nữ vào đại học và cao đẳng. Điều này đang diễn ra ở nhiều quốc gia. Hôm nay tôi sẽ nói về Vương quốc Anh.<br>\
@@ -374,8 +366,8 @@ Esra: Không, điều này cũng xảy ra ở nhiều quốc gia khác và ở c
 trong giáo dục là số lượng phụ nữ ngày càng tăng và thực tế là phụ nữ đang làm tốt - đây là điều chúng ta có thể tự hào."
 },
 {
-	en:"4.T1.25.<br>\
-Examiner: Can you tell me what you're studying at the moment, Adel?<br>\
+	idx:"4.T1.25",
+	en:"Examiner: Can you tell me what you're studying at the moment, Adel?<br>\
 Adel: At the moment I am an undergraduate student. I'm studying biology at King Saud University in Riyadh in Saudi Arabia. It's a good place to learn\
 and I'm really enjoying my course. Biology is about living things. I'm interested in biology because I want to understand how life started. <br>\
 Examiner: Yun, tell me about your education.<br>\
@@ -385,8 +377,7 @@ Examiner: Yun, tell me about your education.<br>\
   Examiner: Esra, can you tell me about what you're studying? <br>\
  Esra: I'm from Oman, but I'm studying in Scotland at the University of Glasgow. It's a great place to study. I'm taking a masters in psychology educational psychology.\
  Educational psychology is the study of how people learn in education. I want to find out why there are more women in education. I find it fascinating.",
-vi:"Track 1.25.<br>\
-Giám khảo: Bạn có thể cho tôi biết bạn đang học gì không, Adel?.<br>\
+vi:"Giám khảo: Bạn có thể cho tôi biết bạn đang học gì không, Adel?.<br>\
 Adel: Hiện tại tôi là sinh viên đại học. Tôi đang học ngành sinh học tại Đại học King Saud ở Riyadh, Ả Rập Xê Út. Đây là một nơi tốt để học\
 và tôi thực sự thích khóa học của mình. Sinh học là về các sinh vật sống. Tôi quan tâm đến sinh học vì tôi muốn hiểu sự sống bắt đầu như thế nào. <br>\
 Giám khảo: Yun, hãy cho tôi biết về quá trình học tập của bạn. <br>\
@@ -399,8 +390,8 @@ Tâm lý học giáo dục là ngành nghiên cứu về cách mọi người h�
 voca:"masters in psychology educational psychology"
 },
 {
-	en:"5.T1.27<br>\
-Tao: Sorry, can you help me?<br>\
+	idx: "5.T1.27",
+	en:"Tao: Sorry, can you help me?<br>\
 Karen: Sure.<br>\
 Tao: I'm trying to find the Business School.<br>\
 Karen: Oh, yes, the Business School. That's easy. You see that big, old building?<br>\
@@ -417,8 +408,7 @@ Pilar: Yes.<br>\
 Lee: OK. Look over there at that huge, tall, concrete building. That's the library. It's next to the art gallery.<br>\
 Pilar: Yes, I can see it.<br>\
 Lee: The information desk is at the front door. Pilar: Thanks.",
-vi:"5.T1.27<br>\
-Tao: Xin lỗi, bạn có thể giúp tôi không?<br>\
+vi:"Tao: Xin lỗi, bạn có thể giúp tôi không?<br>\
 Karen: Chắc chắn rồi.<br>\
 Tao: Tôi đang cố tìm Trường Kinh doanh.<br>\
 Karen: À, vâng, Trường Kinh doanh. Dễ thôi. Bạn thấy tòa nhà lớn, cũ kỹ kia không?<br>\
@@ -438,8 +428,8 @@ Lee: Quầy thông tin ở ngay cửa trước. Pilar: Cảm ơn.",
 voca:""
 },
 {
-en:"5.T1.28<br>\
-Alan: Good evening and welcome to Great Designs, where we look at some amazing buildings. I'm Alan Davies, and tonight I'm talking to Professor Gu Ying about a building that wasn't here for a long time. In fact it was only here for six months but the ideas for the building are still with us today. Professor Gu Ying works in London, and knows all about the building of the Seed Cathedral - which many people visited in the Shanghai Expo. Professor Gu, welcome to the programme... How did the project start?<br>\
+idx:"5.T1.28",
+en:"Alan: Good evening and welcome to Great Designs, where we look at some amazing buildings. I'm Alan Davies, and tonight I'm talking to Professor Gu Ying about a building that wasn't here for a long time. In fact it was only here for six months but the ideas for the building are still with us today. Professor Gu Ying works in London, and knows all about the building of the Seed Cathedral - which many people visited in the Shanghai Expo. Professor Gu, welcome to the programme... How did the project start?<br>\
 Gu: Well, the seed bank in London was the starting point. We collected seeds from all over the world for the future. Then, in 2010 Thomas Heatherwick decided to use the seeds for the UK building in the Shanghai World Fair in China.<br>\
 Alan: It was an amazing building.<br>\
 Gu: Yes, it was. It was fantastic. There were thousands of clear plastic rods which were very flexible and moved in the wind. These rods weren't very big- in fact, they were very small- and there were seeds at the end of each rod. So, in the daytime, there was a lot of natural light in the building because sunlight came inside through the rods. And at night the rods lit up, as there was a small light inside each one. Alan: How many rods were there?<br>\
@@ -453,8 +443,7 @@ Gu: Yes, it was. It was very peaceful and quiet inside the cathedral. It was ver
 Gu: Well, that's one of the best things about the whole project. After the fair, all the rods were presented to schools in China and the UK to keep. It really was a very great success.<br>\
 Alan: That's very good to know. Thank you very much for talking to me about it, Professor Gu.<br>\
 Gu: Thank you, Alan.",
-vi:"5.T1.28<br>\
-Alan: Chào buổi tối và chào mừng đến với Great Designs, nơi chúng ta sẽ xem một số tòa nhà tuyệt đẹp. Tôi là Alan Davies, và tối nay tôi sẽ nói chuyện với Giáo sư Gu Ying về một tòa nhà đã không còn tồn tại trong một thời gian dài. Trên thực tế, tòa nhà chỉ tồn tại trong sáu tháng nhưng ý tưởng về tòa nhà vẫn còn tồn tại cho đến ngày nay. Giáo sư Gu Ying làm việc tại London và biết tất cả về tòa nhà Seed Cathedral - nơi mà nhiều người đã đến thăm tại Triển lãm Thượng Hải. Giáo sư Gu, chào mừng đến với chương trình... Dự án bắt đầu như thế nào?<br>\
+vi:"Alan: Chào buổi tối và chào mừng đến với Great Designs, nơi chúng ta sẽ xem một số tòa nhà tuyệt đẹp. Tôi là Alan Davies, và tối nay tôi sẽ nói chuyện với Giáo sư Gu Ying về một tòa nhà đã không còn tồn tại trong một thời gian dài. Trên thực tế, tòa nhà chỉ tồn tại trong sáu tháng nhưng ý tưởng về tòa nhà vẫn còn tồn tại cho đến ngày nay. Giáo sư Gu Ying làm việc tại London và biết tất cả về tòa nhà Seed Cathedral - nơi mà nhiều người đã đến thăm tại Triển lãm Thượng Hải. Giáo sư Gu, chào mừng đến với chương trình... Dự án bắt đầu như thế nào?<br>\
 Gu: Vâng, ngân hàng hạt giống ở London là điểm khởi đầu. Chúng tôi đã thu thập hạt giống từ khắp nơi trên thế giới cho tương lai. Sau đó, vào năm 2010, Thomas Heatherwick quyết định sử dụng hạt giống cho tòa nhà của Vương quốc Anh tại Hội chợ Thế giới Thượng Hải ở Trung Quốc.<br>\
 Alan: Đó là một tòa nhà tuyệt đẹp.<br>\
 Gu: Đúng vậy. Thật tuyệt vời. Có hàng nghìn thanh nhựa trong suốt rất mềm dẻo và có thể chuyển động theo gió. Những thanh này không lớn lắm - thực tế là chúng rất nhỏ - và có hạt giống ở cuối mỗi thanh. Vì vậy, vào ban ngày, có rất nhiều ánh sáng tự nhiên trong tòa nhà vì ánh sáng mặt trời chiếu vào qua các thanh. Và vào ban đêm, các thanh sáng lên vì có một ánh sáng nhỏ bên trong mỗi thanh. Alan: Có bao nhiêu thanh?<br>\
@@ -471,21 +460,20 @@ Gu: Cảm ơn anh, Alan.",
 voca:""
 } ,
 {
-	en:"5.T1.31<br>\
-Kinga: A special building? Well, Sydney Opera House is very special for me. It's in Sydney, of course, in the east of Australia.\
+idx: "5.T1.31",
+en:"Kinga: A special building? Well, Sydney Opera House is very special for me. It's in Sydney, of course, in the east of Australia.\
  What do I know about it? Well, it's a really spectacular building. The designer was from Denmark. I think his name was Jorn Utzon.\
   He changed his plans for the building many times and the construction work took a long time-fifteen years I think! Why is it special for me? I love the shape of the roof. It's completely unique.\
 It's amazing in daylight and it looks very dramatic at night too. People from all over the world see it as a landmark of Australia. It represents my country and I'm very proud of it.",
-vi:"5.T1.31<br>\
-Kinga: Một tòa nhà đặc biệt ư? Vâng, Nhà hát Opera Sydney rất đặc biệt đối với tôi. Tất nhiên là nó ở Sydney, ở phía đông của Úc.\
+vi:"Kinga: Một tòa nhà đặc biệt ư? Vâng, Nhà hát Opera Sydney rất đặc biệt đối với tôi. Tất nhiên là nó ở Sydney, ở phía đông của Úc.\
 Tôi biết gì về nó? Vâng, đó là một tòa nhà thực sự ngoạn mục. Nhà thiết kế đến từ Đan Mạch. Tôi nghĩ tên ông ấy là Jorn Utzon.\
 Ông ấy đã thay đổi kế hoạch xây dựng tòa nhà nhiều lần và công trình xây dựng mất rất nhiều thời gian - tôi nghĩ là mười lăm năm! Tại sao nó lại đặc biệt đối với tôi? Tôi thích hình dạng của mái nhà. Nó hoàn toàn độc đáo.\
 Nó thật tuyệt vời vào ban ngày và trông cũng rất ấn tượng vào ban đêm. Mọi người trên khắp thế giới coi nó là một địa danh của Úc. Nó đại diện cho đất nước tôi và tôi rất tự hào về nó.",
 voca:"represent"
 },
 {
-	en:"6.T1.33<br>\
-Sebastien: Hi Monika! You look busy - what are you doing? <br>\
+idx:"6.T1.33",
+en:"Sebastien: Hi Monika! You look busy - what are you doing? <br>\
 Monika: I AM busy! I want to help as a volunteer in the student welcome centre and I need to apply online. <br>\
 Sebastien: Ah yes! I saw an advertisement in the student union. I'm not surprised they need helpers for the student welcome centre! It's always so busy there. It was really busy when we first arrived as new students. I can't believe that was two years ago!<br>\
 Monika: I know it's amazing! I met you in the queue on the very first day of the semester!<br>\
@@ -502,8 +490,7 @@ Monika: That's true, but I've got experience of being a student. I understand ho
 Sebastien: That's true. I found them really easy to talk to and they gave me some really useful advice too. But you don't get paid to be a volunteer.<br>\
 Monika: I don't care about that. I just want to do something different and help people at the same time. Why don't you apply to become а volunteer too? What do you say?<br>\
 Sebastien: l'm not sure. l'll think about it ...",
-	vi:"6.T1.33<br>\
-Sebastien: Chào Monika! Trông bạn có vẻ bận rộn - bạn đang làm gì vậy? <br>\
+vi:"Sebastien: Chào Monika! Trông bạn có vẻ bận rộn - bạn đang làm gì vậy? <br>\
 Monika: TÔI RẤT bận! Tôi muốn giúp đỡ với tư cách là tình nguyện viên tại trung tâm chào đón sinh viên và tôi cần nộp đơn trực tuyến. <br>\
 Sebastien: À vâng! Tôi thấy một quảng cáo trong hội sinh viên. Tôi không ngạc nhiên khi họ cần người giúp việc cho trung tâm chào đón sinh viên! Ở đó lúc nào cũng bận rộn. Thực sự rất bận rộn khi chúng tôi mới đến với tư cách là sinh viên mới. Tôi không thể tin rằng đó là hai năm trước!<br>\
 Monika: Tôi biết điều đó thật tuyệt! Tôi đã gặp bạn trong hàng đợi vào đúng ngày đầu tiên của học kỳ!<br>\
@@ -522,8 +509,8 @@ Monika: Tôi không quan tâm đến điều đó. Tôi chỉ muốn làm điề
 Sebastien: Tôi không chắc. Tôi sẽ cân nhắc về điều đó ...",
 },
 {
-	en:"6.T1.34<br>\
-Jakub: Hi Hiromi! How was your holiday?<br>\
+	idx: "6.T1.34",
+	en:"Jakub: Hi Hiromi! How was your holiday?<br>\
 Hiromi: Hi Jakub! It was great. I didn't go back to Japan though. I didn't have enough money for that so I stayed here. Actually, I spent most of the time working!<br>\
 Jakub: You worked all holiday? I didn't know. What did you do?<br>\
 Hiromi: I was a sandwich artist.<br>\
@@ -545,8 +532,7 @@ Jakub: Do you think I could be a sandwich artist too? <br>\
 Hiromi: Of course you could. After all, you love food! <br>\
 Jakub: So, can you give me the address of the sandwich shop you worked in?<br>\
 Hiromi: Yes, of course I can. Now, where did I put my pen...",
-	vi:"6.T1.34<br>\
-Jakub: Chào Hiromi! Kỳ nghỉ của bạn thế nào?<br>\
+	vi:"Jakub: Chào Hiromi! Kỳ nghỉ của bạn thế nào?<br>\
 Hiromi: Chào Jakub! Thật tuyệt. Nhưng tôi không quay lại Nhật Bản. Tôi không có đủ tiền cho việc đó nên tôi ở lại đây. Thực ra, tôi dành phần lớn thời gian để làm việc!<br>\
 Jakub: Bạn làm việc suốt kỳ nghỉ sao? Tôi không biết. Bạn đã làm gì?<br>\
 Hiromi: Tôi là một nghệ sĩ làm bánh sandwich.<br>\
@@ -570,8 +556,8 @@ Jakub: Vậy, bạn có thể cho tôi địa chỉ của cửa hàng bánh sand
 Hiromi: Vâng, tất nhiên là được. Bây giờ, tôi để bút ở đâu nhỉ...",
 },
 {
-	en:"6.T1.36<br>\
-Jing: Last summer I worked as a school holiday assistant. What did I do? Well, I had to think of different activities and games to play with the kids in the\
+	idx: "6.T1.36",
+	en:"Jing: Last summer I worked as a school holiday assistant. What did I do? Well, I had to think of different activities and games to play with the kids in the\
  morning and in the afternoons we took them on trips to museums or the zoo. I'm really glad I did it\
   - it was really challenging because I had to think about different ways to keep the children happy and busy!\
    I had to be quite flexible too. Kids can get bored very quickly, you know! The best thing was that it was relevant to my psychology course.\
@@ -579,8 +565,7 @@ Jing: Last summer I worked as a school holiday assistant. What did I do? Well, I
      We began work early in the morning and didn't finish until early evening. Well, it wasn't exactly hard work but it was quite tiring.\
       Why was it so rewarding? Well, the money was good but I also liked the social life. I made some good friends with students from all over the world.\
        In fact, I met my boyfriend there too, so that was an added benefit!",
-	vi:"6.T1.36<br>\
-Jing: Mùa hè năm ngoái, tôi làm trợ lý kỳ nghỉ ở trường. Tôi đã làm gì? Ồ, tôi phải nghĩ ra nhiều hoạt động và trò chơi khác nhau để chơi với bọn trẻ vào buổi sáng và buổi chiều, chúng tôi đưa chúng đi tham quan bảo tàng hoặc sở thú. Tôi thực sự vui vì đã làm như vậy\
+	vi:"Jing: Mùa hè năm ngoái, tôi làm trợ lý kỳ nghỉ ở trường. Tôi đã làm gì? Ồ, tôi phải nghĩ ra nhiều hoạt động và trò chơi khác nhau để chơi với bọn trẻ vào buổi sáng và buổi chiều, chúng tôi đưa chúng đi tham quan bảo tàng hoặc sở thú. Tôi thực sự vui vì đã làm như vậy\
 - thực sự rất khó khăn vì tôi phải nghĩ ra nhiều cách khác nhau để bọn trẻ vui vẻ và bận rộn!\
 Tôi cũng phải khá linh hoạt. Trẻ em có thể chán rất nhanh, bạn biết đấy! Điều tuyệt nhất là nó liên quan đến khóa học tâm lý của tôi.\
 Tôi rất vui vì đã làm như vậy! <br><br>Agnes: Một thời gian khi tôi làm điều gì đó có ích? Ồ, tôi thực sự thích khi dành một vài tuần để hái trái cây ở Tasmania.\
@@ -590,8 +575,8 @@ Thực tế, tôi cũng đã gặp bạn trai của mình ở đó, vì vậy đ
 voca:"assistant,museum,flexible,psychology,rewarding"
 },
 {
-	en:"7.T1.40<br>\
-Dee Dee: Hello.<br>\
+idx: "7.T1.40",
+en:"Dee Dee: Hello.<br>\
 Bob: Hi, Dee Dee - Bob here, Joey and I need some help. <br>\
 Dee Dee: Sure, go ahead.<br>\
 Bob: I'm on North Main Street with Joey. We've got a clue from City Hunt. Can you help us?<br>\
@@ -614,8 +599,7 @@ Dee Dee: Got it! It's the Walt Disney Concert Hall. Joey: That's South Grand Ave
 Dee Dee: Yeah, but I can't go there, it's not allowed. You have to go there, and quickly. I can see the next team is very close to you.<br>\
 Joey: How do we get there?<br>\
 Dee Dee: Go back to 1st Street. Then take a bus back to Grand Avenue. Hurry!",
-	vi:"7.T1.40<br>\
-Dee Dee: Xin chào.<br>\
+vi:"Dee Dee: Xin chào.<br>\
 Bob: Xin chào, Dee Dee - Bob đây, Joey và tôi cần giúp đỡ. <br>\
 Dee Dee: Được thôi, cứ đi đi.<br>\
 Bob: Tôi đang ở Phố North Main với Joey. Chúng tôi có manh mối từ City Hunt. Bạn có thể giúp chúng tôi không?<br>\

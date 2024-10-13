@@ -23,8 +23,6 @@ $scope.acc_click = function (id) {
 	}
 };
 
-
-
 $scope.fetchStory = function () {
 	for (var k = 0; k < kSTORIES.length; k++) {
 		var unit = kSTORIES[k].unit;

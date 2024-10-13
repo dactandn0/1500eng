@@ -1,6 +1,7 @@
 
 const lptd_cd1_stories = [
 {
+	title: 'Unit 1 A Picnic by the River',
 	en: 
 	'Unit 1 A Picnic by the River<br>\
 	W: This is a good spot. Let’s stop and have our picnic next to the river. <br>\
@@ -26,6 +27,7 @@ const lptd_cd1_stories = [
 	voca:'lunch,litter,hungry,empty,picnic,throw,spot,spoil,lie,pick up'
 },
 {
+	title: 'Unit 2 Let’s Recycle!',
 	en: 
 	'Unit 2 Let’s Recycle!<br>\
 	M: Hi, Jane! Have you heard about the new laws to help people recycle?<br>\
@@ -51,6 +53,7 @@ const lptd_cd1_stories = [
 	voca:'recycle,environment,government,extra,return,law,fair,instead of,after all'
 },
 {
+	title:'Unit 3 Growing Roses',
 	en:
 	'Unit 3 Growing Roses<br>\
 	M: Excuse me, ma’am. I have a problem with my rose bush. It used to produce a lot of pink roses. But now it doesn’t produce any flowers at all.<br>\
@@ -825,7 +828,7 @@ B : It only takes about four hours by car if you use the freeway and drive direc
 G : That certainly makes for an easy trip. When are you leaving?<br>\
 B : We’re going on Saturday morning. We’ll be back on Monday evening.<br>\
 G : Have a nice time! Bring me some pecans!',
-	vi:'Unit 37 Driving Down South<br>\
+	vi:'Bài 37 Lái xe xuống phía Nam<br>\
 B : Thật tuyệt khi không có lớp học nào vào thứ Hai phải không? Chúng ta có một kỳ nghỉ cuối tuần kéo dài ba ngày!<br>\
 G : Đúng rồi! Bạn có kế hoạch đặc biệt nào không?<br>\
 B : Gia đình tôi sẽ đi du lịch đến Las Cruces. Tôi thực sự mong chờ chuyến đi đó. Bạn đã từng đến đó chưa?<br>\

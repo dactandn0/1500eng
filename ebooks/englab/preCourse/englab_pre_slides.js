@@ -1,39 +1,43 @@
 
-const SLIDES = [
+const ENGLAB_PRE_SLIDES = [
 {
 	unit:"Lesson 2.pptx",
 	title:"Holiday",
-	en:"1. Yes, it’s on September 2nd - also known as the Independence Day.<br>\
--How: people celebrate this day with flags, fireworks,... <br>\
-watch parades (diễu hành), eat good food, hang out,...<br>\
+	date:"",
+	en:"1. Yes, it's on September 2nd - also known as the Independence Day.<br>\
+- How: people celebrate this day with flags, fireworks, v.v <br>\
+Watch parades (diễu hành), eat good food, hang out,...<br>\
 2. Yes of course, i think National days are important because:<br>\
-honor (tôn vinh) and preserve(giữ gìn) the country’s history and culture<br>\
+honor (tôn vinh) and preserve (giữ gìn) the country's history and culture<br>\
 create a sense of community (tạo cảm giác cộng đồng)<br>\
-pass down(truyền lại) values and customs to future generations.<br><br>\
+pass down (truyền lại) values and customs to future generations.<br><br>\
 parade (n) buổi diễu hành<br>\
 lion dance (n) múa lân/rồng<br>\
 celebrate (v) ăn mừng. We celebrated our 25th wedding anniversary in Florence<br>\
 preserve (v) giữ gìn, bảo tồn. He was anxious to preserve his reputation<br>\
 culture(n) văn hóa<br>\
 value (n) giá trị → cultural value (n) giá trị văn hóa<br><br>\
-- What it is – Let me tell you about a special day/event in my country and it is ….<br>\
-- When it is  – It’s held on / It takes place on + date…<br>\
-- What you do  – I hang out with my … , watch …, eat …, go …<br>\
-- Why it is special for you – This day is special for me because ….<br>\
+- What it is – Let me tell you about a special day/event in my country and it is ....<br>\
+- When it is  – It's held on / It takes place on + date…<br>\
+- What you do  – I hang out with my ... , watch ..., eat ..., go ...<br>\
+- Why it is special for you – This day is special for me because ....<br>\
 - can have fun, be happy<br>\
 - gather with loved ones<br>\
 - unwind, recharge my battery after nerve-racking time<br>\
 - celebrate + N (history, culture, victory,...)<br><br>\
-HOMEWORD<br>\
+Homeword<br>\
 * Describe a traditional festival in your country<br>\
-- What it is<br>\
-- When it takes place<br>\
-- What people do during this holiday<br>\
-- What you feel about this holiday"
+- What it is?<br>\
+- When it takes place?<br>\
+- What people do during this holiday?<br>\
+- What you feel about this holiday?"
+,vi:""
+,voca:""
 },
 {
 	unit:1,
 	title:"Listening Bridge",
+	date:"",
 	en:"Canoe (n) xuồng /kəˈnuː/<br>\
 - Palace (n) cung điện<br>\
 - Carnival (n) lễ hội<br>\
@@ -72,10 +76,11 @@ Reading passage vocab:<br>\
 {
 	title:"Traditional festival",
 	unit:"2",
+	date:"",
 	en:"PART 2: Traditional festival<br>\
 Describe a traditional festival in your country<br>\
 + Lemme spill the beans/tea on a traditional event in my country that everyone is crazy about.<br>\
-+ It’s called Tet holiday or Lunar New Year, which is the longest holiday in Vietnam,<br>\
++ It's called Tet holiday or Lunar New Year, which is the longest holiday in Vietnam,<br>\
 When it is often celebrated:<br>\
 + we observe Tet holiday at the beginning of the lunar calendar<br>\
 How it is celebrated:<br>\
@@ -84,26 +89,26 @@ How it is celebrated:<br>\
 → go shopping to buy new clothes, flowers (cherry blossoms or apricots [hoa anh đào hoặc mơ]), traditional food<br>\
 → clean the house from top to bottom → we believe this will bring good luck in the new year<br>\
 + during tet holiday → visit our relatives(ng thân) → exchange wishes + children receive lucky money in red envelopes which represent good fortune/luck<br>\And explain what you feel about this festival:<br>\
-+ I can’t wait to enjoy Tet holiday → can escape from schoolwork/heavy<br>\
++ I can't wait to enjoy Tet holiday → can escape from schoolwork/heavy<br>\
 workload and spend more quality time with family and friends → have a whale of a time together.<br>\
 This festival is a special occasion for family gatherings.<br>\
 To strengthen/tighten family bonds<br>\
 Allows us to be more close-knit<br>\
 <br>\
 This is a holiday ...  <br>\
-When - It’s held on(diễn ra) 20th of November<br>\
+When - It's held on(diễn ra) 20th of November<br>\
 Students give gifts to teachers- hangout together<br>\
 Students send best wishes to their teachers<br>\
-This holiday is Special for me because vn’s teachers day reminds(nhac nho) me to remember and be grateful + to the contributions of teachers.<br>\
+This holiday is Special for me because vn's teachers day reminds(nhac nho) me to remember and be grateful + to the contributions of teachers.<br>\
 MID-AUTUMN FESTIVAL<br>\
-It’s the Mid-Autumn Festival - it’s one of the most…<br>\
+It's the Mid-Autumn Festival - it's one of the most…<br>\
 Takes place on the 15 th of August according to the lunar calendar<br>\
 Other East Asian countries also celebrate this..<br>\
 How it is celebrated:<br>\
 + Before the festival<br>\
 → Adults prepare the ingredients to make moon cakes<br>\
 Moon cake represents happiness, prosperity (sự thịnh vượng) and longevity<br>\
-→ Children go to the store to buy …<br>\
+→ Children go to the store to buy ...<br>\
 Carp-shaped lantern: đèn cá chép<br>\
 Star-shaped lantern: đèn ông sao<br>\
 + During the festival<br>\
@@ -113,11 +118,11 @@ There will be people performing Lion Dances to every house in the neighborhood w
 And explain what you feel about this festival:<br>\
 <br>\
 I still vividly remember how I felt about this festival when i was a kid // How i felt about this festival when i was a kid is still fresh in my mind.<br>\
-+ I couldn’t wait to enjoy Tet holiday → can escape from schoolwork, eat a lot of candies and sweets, have fun with friends, → have a whale of a time together<br>\
++ I couldn't wait to enjoy Tet holiday → can escape from schoolwork, eat a lot of candies and sweets, have fun with friends, → have a whale of a time together<br>\
 This festival is a special occasion for family gatherings.<br>\
 To strengthen / tighten family bonds<br>\
 Allows us to be more close-knit<br>\
-Let me introduce about the Vietnamese women’s day<br>\
+Let me introduce about the Vietnamese women's day<br>\
 It takes place on…<br>\
 On this day, S + V<br>\
 This day is special for me because I can show my love for my loved ones.",
@@ -128,17 +133,9 @@ represent,vast,array,receive,occasion,close-knit,whale,strengthen,tighten,take,p
 {
 title:"Thank of a famous person you admire",
 unit:"Lesson 3.pptx",
-en:"Describe a traditional festival in your country<br>\
-- What it is<br>\
-- When it takes place<br>\
-- What people do during this holiday<br>\
-- What you feel about this holiday<br>\
-<br>\
-Do you come from a large family or a small family?<br>\
-<br>\
-– Well, I come from a small/large family which is a nuclear/extended one.<br>\
-<br>\
-There are ...  people in my family including ... <br>\
+date:"",
+en:"Do you come from a large family or a small family?<br>\
+– Well, I come from a small/large family which is a nuclear/extended one. There are ...  people in my family including ... <br>\
 <br>\
 - As a child, who did you spend more time with: your family or your friends? Why? <br>\
 -> I spent more time with ...  as a child, because ... <br>\
@@ -147,9 +144,8 @@ There are ...  people in my family including ... <br>\
 - What did you enjoy most about school? <br>\
 -> Well, as I remember, my favorite thing about school was ... <br>\
 <br>\
-<br>\
 02. BRIDGE page 30 (Describe a famous person you admire)<br>\
-<u>VOCABULARY</u><br>\
+Vocabulary<br>\
 actor (n) diễn viên<br>\
 political leader (n) lãnh đạo chính trị<br>\
 business leader (n) lãnh đạo doanh nghiệp<br>\
@@ -161,14 +157,12 @@ calm (a) bình tĩnh<br>\
 kind (a) tử tế<br>\
 <br>\
 5, Think of a famous person you admire. Make notes about them. Use the questions in activity 4.<br>\
-6, Work in pairs. Take turns to talk about the topic card. Use the notes you made in activity 5 to<br>\
-help you.<br>\
+6, Work in pairs. Take turns to talk about the topic card. Use the notes you made in activity 5 to help you.<br>\
 Describe a famous person you admire.<br>\
 You should say:<br>\
 - who they are<br>\
 - what they do<br>\
-- what you admire about them<br>\
-and explain the reasons you admire them.<br>\
+- what you admire about them and explain the reasons you admire them.<br>\
 Sample<br>\
 I really admire Leonardo DiCaprio. He's an actor, and he makes really good films. He's hardworking and funny - he makes me laugh. I really admire him because he is 2 generous - he's rich and he uses his money to help people. He's also 3 intelligent; he has a website about the environment and he wants to change the world.",
 voca:"traditional,nuclear,extended,admire"
@@ -179,16 +173,15 @@ voca:"traditional,nuclear,extended,admire"
 	unit:"3",
 	en:"I went to Nui Thanh<br>\
 It was bought by my parents. I travelled with my friends, we went thru Tam ky and reached NT.<br>\
-We went to the beach and swam in the clear water<br>\
-we ate seafood it was delicious but expensive,<br>\
+We went to the beach and swam in the clear water, we ate seafood it was delicious but expensive,<br>\
 The good thing about the journey was that we had fun and happy moments. The bad thing was this trip was not safe, it took us about 2 hours to travel from my home to NT.<br>\
 I remember this trip because at the time, i met the girl who later became my girlfriend.",
 },
 {
 	date:"T6.20/09/2024",
-	unit:"",
+	unit:"3",
 	title:"Complete[Freya Stark], Bridge [Meerkat - Teamwork]",
-	en:"- Occupation (n) nghề nghiệp<br>\
+	en:"Occupation (n) nghề nghiệp<br>\
 Flight (n) chuyến bay<br>\
 Expedition (n) chuyến thám hiểm<br>\
 Media (n) truyền thông<br>\
@@ -213,8 +206,7 @@ Snake (n) rắn<br>\
 Desert (n) sa mạc<br>\
 Survive (v) sống sót, sinh tồn<br>\
 Preparation (n) sự chuẩn bị<br>\
-Decision (n) quyết định\
-",
+Decision (n) quyết định",
 },
 {
 	date:"T4.25/09/2024",
@@ -226,7 +218,8 @@ Decision (n) quyết định\
 - Reclining seat (n) ghế ngả<br>\
 <br>\
 Ocean navigator (n) hoa tiêu đại đương/ người định hướng dẫn đường<br>\
-<br>\Mau Piailug, ocean navigator<br>\
+<br>\
+Mau Piailug, ocean navigator<br>\
 - Sailor (n) thủy thủ<br>\
 - Voyage (n) chuyến hành trình (dài)<br>\
 - Navigational skill (n) kĩ năng định hướng<br>\
@@ -237,24 +230,24 @@ Ocean navigator (n) hoa tiêu đại đương/ người định hướng dẫn �
 - Position (n) vị trí"
 },
 {
-	date:"T6 27/09/2024"
-	,title:"Speaking about a special building"
-	,en:"Are there any special buildings in your country?<br>\
+	date:"T6 27/09/2024",
+	title:"Speaking about a special building",
+	en:"Are there any special buildings in your country?<br>\
 Yes, of course. FE: Landmark 81 located in HCM city, DN Administrative center in Danang. In addition, Hoi An has many well-preserved traditional buildings that are special because of their historical & cultural value.<br>\
 <br>\
 2. What do people think about them?<br>\
 - (be) proud of them - because FE, Landmark 81 represents (đại diện) the modernity and growth of the country. Or Hoi An ancient buildings are a symbol of cultural heritage (di sản văn hóa)<br>\
 - admire (v)<br><br>\
-3. Do you think it’s important to protect special buildings?<br>\
+3. Do you think it's important to protect special buildings?<br>\
 Yes. Because they:<br>\
 - attract tourists, visitors<br>\
 - boost economy<br>\
-- represent the country’s identity (bản sắc) and culture.",
+- represent the country's identity (bản sắc) and culture.",
 },
 {
-	date:"T2 30/09/2024"
-	,title:"Job"
-	,en:"Benefits of volunteering at DIFF<br>\
+	date:"T2 30/09/2024",
+	title:"Job",
+	en:"Benefits of volunteering at DIFF<br>\
 There are three main benefits of working as a volunteer at DIFF 2024. Firstly, you can practice your English. I worked as a volunteer,\
  so it gave me the opportunity to speak English with a lot of foreigners. Secondly, you can make many friends when you work. I met and\
   talked with many people from all over the world, so I got to know lots of amazing people. Finally, you have the best view to see the firework. Volunteers often stand very close to the stage,\
@@ -278,17 +271,17 @@ I live in a two-storey terraced house with my family which is located in the cit
 I like that most of the rooms face south, which means we get a lot of natural light. And the location is very convenient as all the facilities and services are within walking distance, which means I can easily grab anything I need in just a few minutes.<br>\
 <br>\
 3. What is your favorite room?<br>\
-I would say that it’s the living room because it’s the most spacious room in the house, with a comfy sofa and a big, round table where we eat dinner every night. That’s the room where the whole family gathers together and shares ups and downs in our lives.<br>\
+I would say that it's the living room because it's the most spacious room in the house, with a comfy sofa and a big, round table where we eat dinner every night. That's the room where the whole family gathers together and shares ups and downs in our lives.<br>\
 <br>\
-VOCABULARY<br>\
+Vocabulary<br>\
 (to) immerse myself in my own world: đắm chìm vào tg riêng của tôi<br>\
 (to) recharge my battery = blow off some steam = unwind<br>\
 do sth + without being disturbed: làm gì đó mà k bị làm phiền<br>\
 <br>\
 Ups and downs (n): thăng trầm<br>\
 Delicacy (n): món ngon<br>\
-(to) immerse in …: đắm chìm vào …<br>\
-(be) engrossed in + books, movies: chăm chú say mê ….<br>\
+(to) immerse in ...: đắm chìm vào ...<br>\
+(be) engrossed in + books, movies: chăm chú say mê ....<br>\
 (to) binge-watch + Netflix series: cày phim<br>\
 (to) savor/ enjoy my privacy: tận hưởng sự riêng tư<br>\
 (to) sleep in: ngủ nướng"
@@ -319,7 +312,7 @@ Jobs<br>\
 – populated areas can be a place for scammers/ pickpocketers<br>\
 Money (doanh thu)<br>\
 + increase GDP/ income of the local area<br>\
-– raise inflation rate because …<br>\
+– raise inflation rate because ...<br>\
 Price (gia ca)<br>\
 – might provide opportunities for scammers to push up the price for tourists<br>\
 Relationship<br>\
@@ -340,17 +333,17 @@ However, there are also three disadvantages of tourism.\
 {
 	date:"T6 11/10/2024",
 	title:"Describe a device you own which has improved your life",
-	en:"I’m going to talk about my smartphone which is one of the most important gadgets in my life.<br>\
+	en:"I'm going to talk about my smartphone which is one of the most important gadgets in my life.<br>\
 Last year, on the occasion of my 16th birthday, my mother gave me a very precious gift, which is an iPhone 6s. I have used it both in study and entertainment every day.<br>\
-My smartphone is considered as one of my modern educational tools. Only with the phone connected to the Internet, I can access and surf webs to broaden my knowledge. For example, when there are lessons that I don’t understand in class, I can use it to search for lectures and videos online, which is really helpful.<br>\
-Moreover, I can download a lot of games or books, music, movies and they are free. As a result, after tiring lessons, this will be a good way to relieve stress and get back my energy. For instance, when I do the housework with my mother, I regularly listen to my favorite songs. In addition, it helps me to keep in touch with my family and my friends. When I want to make contact with my classmates, I can text messages or make video calls and we can easily see each other’s faces.<br>\
-In short, my phone has offered me a range of great benefits in my daily life. If I didn’t have it, it would be difficult for me to contact my near and dear friends and family members.<br>\
-<br><b>Sport: pitch court course</b><br>\
+My smartphone is considered as one of my modern educational tools. Only with the phone connected to the Internet, I can access and surf webs to broaden my knowledge. For example, when there are lessons that I don't understand in class, I can use it to search for lectures and videos online, which is really helpful.<br>\
+Moreover, I can download a lot of games or books, music, movies and they are free. As a result, after tiring lessons, this will be a good way to relieve stress and get back my energy. For instance, when I do the housework with my mother, I regularly listen to my favorite songs. In addition, it helps me to keep in touch with my family and my friends. When I want to make contact with my classmates, I can text messages or make video calls and we can easily see each other's faces.<br>\
+In short, my phone has offered me a range of great benefits in my daily life. If I didn't have it, it would be difficult for me to contact my near and dear friends and family members.<br>\
+<br>Sport: pitch court course<br>\
 Pitch: a field where outdoor competitive sports are played that use a ball, for example football, baseball, cricket, rugby, etc.<br>\
 The match between Barcelona and Betis was cancelled because the pitch was flooded with water.<br>\
 Court: an area marked with lines where sports are played (often indoors), such as basketball, squash, tennis, etc.<br>\
 The best tennis players prefer to play on grass courts rather than clay courts.<br><br>\
 <i>golf course, basketball court, badminton court, volleyball court, football pitch</i>"
-	,voca:"Moreover, in short,as a result,for instance,pitch,court,course",
+	,voca:"Moreover, in short,as a result,for instance,pitch,court,course,precious",
 }
 ]

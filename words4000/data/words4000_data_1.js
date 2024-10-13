@@ -1,7 +1,7 @@
 
 const BOOK4K_1 = [
 {
-	audio: "1.1",
+	idx: "1.1",
 	en: 
 	'The Lion and the Rabbit <br>\
 A cruel lion lived in the forest. Every day, he killed and ate a lot of animals. The other animals were afraid the lion would kill them all.<br>\
@@ -33,7 +33,7 @@ Tất cả các loài động vật khác trong rừng đều rất hài lòng v
 voca:'afraid, agree, angry, arrive, attack, bottom, clever, cruel, finally, hide, hunt, lot, middle, moment, pleased, promise, reply, safe, trick, well',
 },
 {
-	audio: "1.2",
+	idx: "1.2",
 	en: 
 	'The Laboratory <br>\
 Mia‘s father had a laboratory, but she had no idea what was in it. Her dad always closed and locked the door when he went in. She knew that he used it to do projects for work. He never told Mia what these projects were.<br>\
@@ -57,7 +57,7 @@ Cha của Mia chạy vào phòng và bật đèn. "Ồ, không," ông nói. "Con
 voca: 'adventure, approach, carefully, chemical, create, evil, experiment, kill, laboratory, laugh, loud, nervous, noise, project, scare, secret, shout, smell, terrible, worse',
 },
 {
-	audio: "1.3",
+	idx: "1.3",
 	en:'The Report <br>\
 Lee sat among the books at the library and thought about his group project.<br>\
 They had to turn it in soon, but he hadn‘t even started his part! Jack and Claire were in his group. They had worked hard. They were also very smart, and Lee didn‘t want them to get a bad grade.<br>\
@@ -85,7 +85,7 @@ Chẳng mấy chốc, họ đã bay qua những đám mây. Họ đã đi qua m�
 voca:'alien, among, chart, cloud, comprehend, describe, ever, fail, friendly, grade, instead, library, planet, report, several, solve, suddenly, suppose, universe, view'
 },
 {
-	audio: "1.4",
+	idx: "1.4",
 	en:'The Dog’s Bell<br>\
 John‘s dog was a bad dog. He bit people frequently. John had great concern about this. It was not an appropriate way for a dog to behave. His friends in the village always expected the dog to bite them. The news about John‘s dog spread through the village. None of the people wanted to go to John‘s house. John tried to instruct the dog to behave, but it never worked. He tried to be patient and teach the dog to be calm. That also didn‘t work. John didn‘t want to punish the dog. "How will I stop my dog‘s bad habit?" John asked himself.<br>\
 <br>John‘s friend came to talk to him about the issue. During their important meeting, his friend said, -The people in the village asked me to represent them. We want your dog to stop this habit. Why don‘t you put a bell around the dog‘s neck? This way, we would hear your dog coming down the street." John thought this was a great idea. Now, people could stay away from the dog. It would not be able to bite anyone anymore.<br>\
@@ -102,7 +102,7 @@ voca:'appropriate, avoid, behave, calm, concern, content, expect, frequently, ha
 }
 ,
 {
-	audio: "1.5",
+	idx: "1.5",
 	en:"The Jackal and the Sun Child<br>\
 	A jackal is a wild dog with a big black back. It resides in the desert. But how did the jackal get his black back? This was how it happened.<br>\
 <br>\
@@ -132,7 +132,7 @@ Nhưng đứa con của mặt trời đã để lại một vết trên lưng co
 ,voca:"aware, badly, belong, continue, error, experience, field, hurt, judgment, likely, normal, rare, relax, request, reside, result, roll, since, visible, wild"
 },
 {
-	audio: 1.6,
+	idx: 1.6,
 	en:"The Friendly Ghost<br>\
 A nice woman lived by a large river. She loved children. She wanted to help them in any way. She loved her community, and everyone in the community loved her. She lived a very long time and became very wise. When she died, she became a ghost. She was dead, but every night she returned to her community. She wanted to help children and not to cause them fright. But she had a scary voice. Children were afraid of her, but the ghost was a good one. She only scared them to help them.<br>\
 <br>\
@@ -152,7 +152,7 @@ Những đứa trẻ chạy một quãng đường dài. Con ma đi theo chúng 
 	,voca:"advantage,cause,choice,community,dead,distance,escape,face,follow,fright,ghost,individual,pet,reach,return,survive,upset,voice,weather,wise",
 },
 {
-	audio: 1.9,
+	idx: 1.9,
 	en:"The Starfish<br>\
 Last summer I took a trip to an island. I had a lot of fun. I sat and watched the waves and listened to the ocean. I learned to identify birds. I discovered pretty things and enjoyed the taste of new foods. It was a very nice time. <br>\
 <br>\

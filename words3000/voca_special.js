@@ -69,6 +69,7 @@ somewhere: nơi nào đó (nhưng không rõ nơi nào).<br>\
 anywhere bất cứ đâu<br>\
 anytime (adv) bất cứ khi nào (= whenever, at any time, on any occasion)<br>\
 at any time (adv) bất cứ khi nào (= anytime)<br>\
-any time (v) bất cứ thời gian nào (câu ?/-)"
+any time (v) bất cứ thời gian nào (câu ?/-)<br>\
+including (conj) bao gồm"
 }
 ]

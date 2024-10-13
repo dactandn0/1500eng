@@ -1,10 +1,10 @@
 
-document.write('<script src="./ebooks/complete/read_data/complete_read_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/barron600/read_data/barron600_read_data.js" type="text/javascript"></script>');
 
-var app = angular.module("completeRApp", []);
-app.controller("completeRCtrl", function($scope, $timeout) {
+var app = angular.module("barron600RApp", []);
+app.controller("barron600RCtrl", function($scope, $timeout) {
 
-var kSTORIES = complete_read_data;
+var kSTORIES = barron600_read_data;
 
 $scope.fullTitles = [];
 $scope.story = '';

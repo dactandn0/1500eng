@@ -23,7 +23,7 @@ RANGE = function(min, max, step) {
 };
 
 document.write('<small class="note">\
-	<span class="text-danger">red:</span> uncount.n<br>\
+	<span class="text-danger">uncount.n</span> <br>\
 	<u>u:</u> n = v<br>\
 	</small>'
 	);
@@ -35,14 +35,12 @@ function longStrToArray(long_txt) {
 	var arr  = long_txt.replace(/\s*\,\s*/g, ",");
 	arr = arr.split(',');
 	arr = arr.filter((item, index) => arr.indexOf(item) === index); // remove dup
-//	console.log(arr.toString());
 	return arr;
 };
 
 function preprocess() {
 	arrUNCOUNT_NOUNS = longStrToArray(UNCOUNT_NOUNS);
 	arrNOUN_SAME_VERBS = longStrToArray(NOUN_SAME_VERBS);
-	// arrBOTH_COUNT_UNCOUNT = longStrToArray(BOTH_COUNT_AND_UNCOUNT);
 
 };
 
@@ -71,29 +69,17 @@ function ngClickOnWord(word, graph) {
 		const tagClose = '</span>'
 		var regex = new RegExp(`\\b${word}\\b` , 'g')
 		return graph.replace(regex, tagOpen + word + tagClose);
-	}
+	} else // console.log("ngClickOnWord ignore: " + word)
 	return graph
 }
 
 function processStory (story) {
-	if (story.en.trim().length == 0) return story;
-	story.enShow = '';
-	story.viShow = '';
+	if (!story || !story.en || story.en.trim().length == 0) return story;
+	
+	story.enShow = story.en;
+	story.viShow = story.vi;
 
-	// bold title
-	var titleEn = story.en.split('<br>')[0];
-	story.enShow = story.en.replace('',  '' );
-
-	var titleVi = story.vi.split('<br>')[0];
-	story.viShow = story.vi.replace(titleVi, titleVi);
-
-	story.title = titleEn;
-	var trackNum = titleEn.replace(/[^0-9.]/g, '');
-	story.img = trackNum;
-
-	var words = story.en.match(/\b(\w+)\b/g);
-	var kDot = "";
-	var kSpace = "";
+	var words = story.en.match(/\b(\w+)('ll)*\b/g);
 	var dones = []
 	for (let i = 0; i < words.length; i++) {
 
@@ -102,7 +88,6 @@ function processStory (story) {
 			story.enShow = ngClickOnWord(word, story.enShow);
 			dones.push(word);
 		}
-
 		story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 		story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , '<u>', '</u>' );
 	} // for
@@ -177,7 +162,7 @@ function ValidateWord(word, minL = 2)
 	word = word.trim().toLowerCase();
 	if (!isAsciiString(word)) result = false;
 
-	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']'];
+	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];
 	for (var i = 0; i < arr.length; i++) {
 		var bList = arr[i];
 		if (word.indexOf(bList) >= 0) {

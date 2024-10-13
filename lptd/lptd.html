@@ -30,24 +30,10 @@
 	        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
 	    	</span>
 
-	        <span ng-show="!bShowVi" class="btnEnVi opa">
-	        	<!-- <p><button class="btn btn-sm btn-danger" ng-show="bHiddenWords" ng-click="fetchStory(storyIdx, false)">[Rs]</button></p> -->
-				<!-- <p><button class="btn btn-sm btn-danger" ng-click="bHiddenWords=!bHiddenWords">{{bHiddenWords == 0 ? '->[..]' : '->[w]' }}</button></p> -->
-			</span>
+	        <span ng-show="!bShowVi" class="btnEnVi opa"></span>
 		 </div>
 
 		  <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
-
-<!-- 		<span class="btnPlay opa">
-			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
-		</span>
-
-    	<span ng-show="bPlayingFull" class="btnSound opa">
-    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+s</button></p>
-    	</span>
- -->
 
 		<div class="card mt-1">
 		    <div class="card-body">

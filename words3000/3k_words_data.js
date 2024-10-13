@@ -964,6 +964,7 @@ enthusiastic /n0ju:z'æstik/ nhiệt tình<br>\
 dull /dɅl/ đần độn<br>\
 faithful /'fereful/ chung thủy <br>\
 kind /kaind/ tốt bụng<br>\
+attractive (a) /əˈtræktɪv/ hấp dẫn<br>\
 courageous /kǝ'reidzǝs/ can đảm<br>\
 loyal /'bial/ trung thành<br>\
 modest /'mpdist/ khiêm tốn<br>\

@@ -37,7 +37,7 @@ $scope.storyIdx = 0;
 $scope.bShowVi = 0;
 
 $scope.fetchAudio = function() {
-	return kSTORIES[$scope.storyIdx].audio;
+	return kSTORIES[$scope.storyIdx].idx;
 }
 
 $scope.createAudioScr = function() {

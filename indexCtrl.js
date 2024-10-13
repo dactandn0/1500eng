@@ -6,8 +6,9 @@ var app = angular.module("myApp", [
   'sampleSpeakingApp',
   'completeLApp','completeRApp',
   'bridgeRApp','bridgeLApp',
+  'barron600RApp','barron600LApp',
   'grammerApp','lptdApp',
-  'words3000App','words4000App',
+  'words3000App','words4000App', 
   'modalApp', 'audioApp',
   'ngSanitize','ngRoute','toastr'
   ]);
@@ -45,7 +46,13 @@ app.config(function($routeProvider) {
       })    
        .when('/completeR', {
        templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'
-      }) 
+      })    
+       .when('/barron600R', {
+       templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'
+      })        
+       .when('/barron600L', {
+       templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'
+      })    
       .when('/sampleSpeaking', {
        templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'
       })      
@@ -261,20 +268,11 @@ app.directive('compile', ['$compile', function ($compile) {
     return function(scope, element, attrs) {
         scope.$watch(
             function(scope) {
-                // watch the 'compile' expression for changes
                 return scope.$eval(attrs.compile);
             },
             function(value) {
-                // when the 'compile' expression changes
-                // assign it into the current DOM
                 element.html(value);
-
-                // compile the new DOM and link it to the current
-                // scope.
-                // NOTE: we only compile .childNodes so that
-                // we don't get into infinite loop compiling ourselves
                 $compile(element.contents())(scope);
-
             }
         );
     };

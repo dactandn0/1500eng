@@ -9,8 +9,8 @@
     	</form>
 
     	<div class="my-1">
-		    <div ng-repeat="u in units" style="text-align: right;" class="col-md-4">
-		    	<span class="mr-2">{{u.title}}</span>
+		    <div ng-repeat="u in units">
+		    	<small class="mr-2">{{u.title}}</small>
 		    	 <a ng-repeat="n in range(u.num, u.num + 4)" 
 		    	 ng-click="fetchStory(n-1);" 
 		    	 href="" 

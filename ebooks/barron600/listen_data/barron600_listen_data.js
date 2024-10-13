@@ -6,21 +6,21 @@ title:"Natural World-Environmental Impacts of Logging",
 narrator:"Listen to a lecture about trees",
 en:"Lecturer:<br>\
 When you look at a tree, you may notice only the branches and leaves. A closer look shows that there's actually a great deal more going on.\
-Trees provide homes to a large variety of terrestrial animals, from tiny insects to large birds such as owls.\
-Insects live beneath the bark, providing a source of food for many types of birds.\
-Squirrels and birds nest on the branches or in the trunk. Small animals defend themselves by hiding among the leaves.\
-The benefits of trees also extend to aquatic animals. The shade from trees keeps water cool, protecting aquatic animals from the heat of the summer sun.\
-The roots hold on to the soil, which keeps it from being eroded by the rain. This is a protection for aquatic habitats, as it prevents soil from running into the rivers and polluting them.\
-Clearly trees are very important. If forests vanish because of logging or other activities, the impacts on the environment will be great."
+ Trees provide homes to a large variety of terrestrial animals, from tiny insects to large birds such as owls.\
+ Insects live beneath the bark, providing a source of food for many types of birds.\
+ Squirrels and birds nest on the branches or in the trunk. Small animals defend themselves by hiding among the leaves.\
+ The benefits of trees also extend to aquatic animals. The shade from trees keeps water cool, protecting aquatic animals from the heat of the summer sun.\
+ The roots hold on to the soil, which keeps it from being eroded by the rain. This is a protection for aquatic habitats, as it prevents soil from running into the rivers and polluting them.\
+ Clearly trees are very important. If forests vanish because of logging or other activities, the impacts on the environment will be great."
 ,vi:"Giảng viên:<br>\
 Khi nhìn vào một cái cây, bạn có thể chỉ thấy cành và lá. Nhìn kỹ hơn, bạn sẽ thấy thực sự có nhiều thứ hơn thế nữa.\
-Cây cung cấp nơi trú ngụ cho nhiều loài động vật trên cạn, từ côn trùng nhỏ đến các loài chim lớn như cú.\
-Côn trùng sống bên dưới vỏ cây, cung cấp nguồn thức ăn cho nhiều loài chim.\
-Sóc và chim làm tổ trên cành hoặc trong thân cây. Động vật nhỏ tự vệ bằng cách ẩn núp giữa các lá.\
-Lợi ích của cây cũng mở rộng đến động vật dưới nước. Bóng râm từ cây giúp nước mát, bảo vệ động vật dưới nước khỏi sức nóng của mặt trời mùa hè.\
-Rễ cây bám chặt vào đất, giúp đất không bị xói mòn do mưa. Đây là biện pháp bảo vệ môi trường sống dưới nước, vì nó ngăn đất chảy vào sông và gây ô nhiễm.\
-Rõ ràng là cây rất quan trọng. Nếu rừng biến mất do khai thác gỗ hoặc các hoạt động khác, tác động đến môi trường sẽ rất lớn."
-,voca:"aquatic,defend,environment,eroded,extend,habitats,impacts,logging,migratory,nocturnal,polluting,terrestrial,vanish",
+ Cây cung cấp nơi trú ngụ cho nhiều loài động vật trên cạn, từ côn trùng nhỏ đến các loài chim lớn như cú.\
+ Côn trùng sống bên dưới vỏ cây, cung cấp nguồn thức ăn cho nhiều loài chim.\
+ Sóc và chim làm tổ trên cành hoặc trong thân cây. Động vật nhỏ tự vệ bằng cách ẩn núp giữa các lá.\
+ Lợi ích của cây cũng mở rộng đến động vật dưới nước. Bóng râm từ cây giúp nước mát, bảo vệ động vật dưới nước khỏi sức nóng của mặt trời mùa hè.\
+ Rễ cây bám chặt vào đất, giúp đất không bị xói mòn do mưa. Đây là biện pháp bảo vệ môi trường sống dưới nước, vì nó ngăn đất chảy vào sông và gây ô nhiễm.\
+ Rõ ràng là cây rất quan trọng. Nếu rừng biến mất do khai thác gỗ hoặc các hoạt động khác, tác động đến môi trường sẽ rất lớn."
+,voca:"aquatic,defend,environment,eroded,extend,habitats,impacts,logging,migratory,nocturnal,polluting,terrestrial,vanish,closer,a great deal more going on,beneath,protects[+from],prevents[+from],Clearly,hold on to",
 },
 {
 unit:"1",

@@ -64,14 +64,16 @@ app.config(function($routeProvider) {
       });
  }); // route
 
-app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr',  function($scope, appAlert, $location, toastr, $rootScope ) {
+app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope', function($scope, appAlert, $location, toastr, $rootScope ) {
 IndexCtrlScope = $scope;
 
-$scope.kAllVocaWords = WORDS_3K_DATA
-    .concat(IELTS_5K_DATA)
+$rootScope.ListVocaToUI = WORDS_3K_DATA.concat(IELTS_5K_DATA)
     .concat(word_4000_data)
     .concat(VOCA_SPECIAL)
+
+$rootScope.VocaForSearch = $rootScope.ListVocaToUI
     .concat(IELTS_SYN)
+    .concat(GRAMMER_DATA)
 
 kAllStories = lptd_cd1_stories
   .concat(lptd_cd2_stories)
@@ -139,8 +141,8 @@ $scope.searchTyping = function() {
 
 
 $scope.preProcess = function () {
-	for (var k = 0; k < $scope.kAllVocaWords.length; k++) {
-		story = $scope.kAllVocaWords[k];
+	for (var k = 0; k < $rootScope.VocaForSearch.length; k++) {
+		story = $rootScope.VocaForSearch[k];
 		if (story.en) {	
 			var words = story.en.split('<br>');
 			$scope.searchData = $scope.searchData.concat(words);
@@ -155,7 +157,7 @@ $scope.findSameWord = function() {
     for (var k = i+1; k < $scope.searchData.length; k++) {
       var word2=  Helper_GetVocaFromWordFull($scope.searchData[k]);
       if (word1 === word2) {
-        console.log(word1);
+        console.log("findSameWord: " + word1);
         break;
       }
     }
@@ -257,7 +259,7 @@ $scope.fetchSentenceSearch = function() {
 
 $scope.loadData = function () {
   $scope.preProcess();
- $scope.findSameWord();
+  if (HELPER_FOR_TEST) $scope.findSameWord();
 };
 
 $scope.loadData();

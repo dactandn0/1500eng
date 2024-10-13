@@ -141,7 +141,7 @@ Multiply (v) /ˈmʌl.tɪ.plaɪ/ Nhân<br>\
 Equal (adj/v) /ˈiː.kwəl/ Ngang bằng, bằng<br>\
 Total (a) /ˈtəʊ.təl/ Tổng, tổng số<br>\
 Dozen (n) /ˈdʌz.ən/ Tá (12 đơn vị)<br>\
-Around (adv) /əˈraʊnd/ Khoảng<br>\
+Around (adv) /əˈraʊnd/ Xung quanh<br>\
 Zero (n) /ˈzɪə.rəʊ/ Số không<br>\
 Hundred (n) /ˈhʌn.drəd/ Một trăm<br>\
 Thousand (n) /ˈθaʊ.zənd/ Một nghìn<br>\
@@ -188,6 +188,7 @@ Shoe shop (n) /ʃuːʃɒp/ Tiệm giày<br>\
 Meat shop (n) /miːt ʃɒp/ Cửa hàng thịt<br>\
 Florist (n) /ˈflɒr.ɪst/ Người bán hoa<br>\
 Sale (n) /seɪl/ Buôn bán, bán hạ giá<br>\
+Litter (n) /ˈlɪtər/ Rác<br>\
 Butcher (n) /ˈbʊtʃ.ər/ Người bán thịt",
 },
 {

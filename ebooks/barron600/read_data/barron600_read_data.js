@@ -29,7 +29,7 @@ E<br>\
 Trong một hệ sinh thái rừng khỏe mạnh, cây cối hút độ ẩm từ đất và giải phóng vào khí quyển trong khi chúng tạo bóng râm để giảm sự bốc hơi. Do đó, nạn phá rừng ảnh hưởng đến các kiểu mưa, dẫn đến lũ lụt cũng như hạn hán và cháy rừng. Nạn phá rừng là nguyên nhân gây ra khoảng một phần năm lượng khí thải carbon dioxide trên toàn thế giới, khiến nó trở thành tác nhân chính gây ra biến đổi khí hậu, đặc biệt là hiện tượng nóng lên toàn cầu. Chỉ riêng ở lưu vực sông Amazon, nạn phá rừng là nguyên nhân khiến hàng triệu tấn carbon dioxide được thải vào khí quyển hàng năm. Một số công ty khai thác gỗ đốt cháy những vùng rừng rộng lớn chỉ để tạo điều kiện tiếp cận một khu vực - một hoạt động thải ra nhiều carbon dioxide hơn.<br>\
 F<br>\
 Rừng, đặc biệt là rừng mưa nhiệt đới, là nguồn tài nguyên thiên nhiên quan trọng với đa dạng sinh học phong phú và môi trường sống của động vật hoang dã không thể thay thế. Các hoạt động khai thác gỗ có trách nhiệm hơn sẽ giúp đảm bảo rằng chúng được bảo vệ cho các thế hệ tương lai."
-	,voca:"",
+,voca:"logging,array,environment,habitat,logging,extend,felling,Nutrients,terrestrial,aquatic,myriad,intercepting,stabilize,erosion,vegetation,inhibit,defense,pollution,pollutants,deforestation,impacts",
 },
 {
 	unit:1,

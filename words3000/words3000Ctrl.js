@@ -7,15 +7,11 @@ document.write('<script src="./words3000/4k_words_data.js" type="text/javascript
 // document.write('<script src="./words3000/4k_words_data_make.js" type="text/javascript"></script>');
 
 
-var app = angular.module("words3000App", 
-	[
-	]);
-app.controller("words3000Ctrl", function($scope) {
+var app = angular.module("words3000App", []);
+app.controller("words3000Ctrl", function($scope, $rootScope) {
 
+var kSTORIES = $rootScope.ListVocaToUI
 
-var kSTORIES = IndexCtrlScope.kAllVocaWords
-
-$scope.stories = kSTORIES;
 $scope.storyTitles = []; 
 $scope.storyId = -1;
 $scope.story = {};
@@ -45,18 +41,19 @@ $scope.acc_click = function (id) {
 
 	$scope.words = [];
 	var element = kSTORIES[$scope.acc];
-	var arr = element.en.split("<br>");
-	for (var i = 0; i < arr.length; i++) {
-		$scope.words.push(Helper_SliceHalfString(arr[i]))
+	if (element) {
+		var arr = element.en.split("<br>");
+		for (var i = 0; i < arr.length; i++) {
+			$scope.words.push(Helper_SliceHalfString(arr[i]))
+		}
+		_scrollIntoView(id);
+		localStorage.setItem("w3000_idx", id);
 	}
-
-	_scrollIntoView(id);
-	localStorage.setItem("w3000_idx", id);
 };
 
 $scope.preProcess = function () {
 	for (var k = 0; k < kSTORIES.length; k++) {
-		var story = $scope.stories[k];
+		var story = kSTORIES[k];
 		var words = story.en.split('<br>');
 		$scope.storyTitles.push({'title':story.title,'num':words.length});
 	}

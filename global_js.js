@@ -1,4 +1,4 @@
-
+const HELPER_FOR_TEST = false
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
@@ -79,19 +79,6 @@ function processStory (story) {
 	story.enShow = story.en;
 	story.viShow = story.vi;
 
-	var words = story.en.match(/\b(\w+)('ll)*\b/g);
-	var dones = []
-	for (let i = 0; i < words.length; i++) {
-
-	  	var word = words[i];
-		if (!isInArr(word, dones)) {
-			story.enShow = ngClickOnWord(word, story.enShow);
-			story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
-			story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
-			dones.push(word);
-		}
-	}
-
 	if (story.voca) {
 		var vocas = story.voca.split(',');
 		story.vocaNotes = [];
@@ -111,6 +98,21 @@ function processStory (story) {
 			story.enShow = story.enShow.replace(regex, '<b>' + voca + '</b>');
 		}
 	}
+
+	var words = story.en.match(/\b(\w+)('ll)*\b/g);
+	var dones = []
+	for (let i = 0; i < words.length; i++) {
+
+	  	var word = words[i];
+		if (!isInArr(word, dones)) {
+			story.enShow = hLightWord(word, arrUNCOUNT_NOUNS, story.enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
+			story.enShow = hLightWord(word, arrNOUN_SAME_VERBS, story.enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
+			story.enShow = ngClickOnWord(word, story.enShow);
+			dones.push(word);
+		}
+	}
+
+	
 	return story;
 
 }

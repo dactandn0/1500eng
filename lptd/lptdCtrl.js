@@ -29,6 +29,7 @@ $scope.range = function(min, max, step) {
 
 
 $scope.createAudioSrc = function() {
+	if (HELPER_FOR_TEST) return "./lptd/cd1/test/0b.mp3"
 	return "./lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3';
 }
 

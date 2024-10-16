@@ -205,7 +205,7 @@ Rubik lấy cảm hứng từ các khối hình học như tangram của Trung Q
 Thiết kế của ông bao gồm một khối lập phương được tạo thành từ các lớp khối lập phương nhỏ hơn riêng lẻ và mỗi khối lập phương nhỏ hơn có thể xoay theo bất kỳ hướng nào ngoại trừ theo đường chéo. Để đảm bảo các khối lập phương có thể di chuyển độc lập mà không bị vỡ ra, trước tiên Rubik đã thử ghép chúng lại với nhau bằng dây thun. Tuy nhiên, điều này tỏ ra là không thể, vì vậy Rubik sau đó đã giải quyết vấn đề bằng cách lắp ráp chúng bằng cách sử dụng phần bên trong tròn. Điều này cho phép chúng di chuyển trơn tru và dễ dàng. Ông đã thử nghiệm nhiều cách khác nhau để đánh dấu các khối lập phương nhỏ hơn, nhưng cuối cùng đã đưa ra giải pháp đơn giản là tô màu khác nhau cho mỗi mặt. Mục đích là xoắn các lớp khối lập phương nhỏ sao cho mỗi mặt của khối lập phương lớn có cùng màu.<br>\
 <br>\
 Rubik đã xin cấp bằng sáng chế cho Khối lập phương vào năm 1977 và bắt đầu sản xuất nó trong cùng năm đó. Khối lập phương đã thu hút sự chú ý của một doanh nhân người Hungary, Tibor Laczi, người sau đó đã trình diễn nó tại Hội chợ đồ chơi Nuremberg. Khi chuyên gia đồ chơi người Anh Tom Kremer nhìn thấy nó, ông nghĩ rằng nó thật tuyệt vời và ông đã thuyết phục một nhà sản xuất, Ideal Toys, sản xuất 1 triệu khối vào năm 1979. Ideal Toys đã đổi tên Khối lập phương theo tên nhà phát minh ra đồ chơi này, và vào năm 1980, Khối lập phương Rubik đã được trưng bày tại các hội chợ đồ chơi trên toàn thế giới. Nó đã giành được giải thưởng năm đó tại Đức cho Giải đố hay nhất. Khối Rubik được cho là trò chơi xếp hình bán chạy nhất thế giới; kể từ khi được phát minh, hơn 300 triệu khối Rubik đã được bán ra trên toàn thế giới."
-	,voca:"",
+	,voca:"consisted,layers,diagonally,identical,toy fairs,preliminary,fall apart,attempted,assembling,experimented",
 },
 {
 	unit: 4,
@@ -229,5 +229,40 @@ Tuy nhiên, mọi người cũng tăng cân vì họ ăn nhiều thức ăn hơn
 <br>\
 Tóm lại, tôi tin rằng nhìn chung mọi người hiện nay sống khỏe mạnh hơn. Theo quan điểm của tôi, thật khó để tranh luận rằng những phát minh hiện đại đã có ảnh hưởng có hại đến sức khỏe của chúng ta. Mặt khác, chúng ta cần đảm bảo rằng chúng ta vẫn tập thể dục ở mức độ hợp lý."
 	,voca:"",
+},
+{
+	unit:5,
+	title:"The life of the European bee-eater",
+	en:"A brilliant movement of colour as it catches its food in the air, the European bee-eater moves between three continents.<br>\
+<br>\
+True to their name, bee-eaters eat bees (though their diet includes just about any flying insect). When the bird catches a bee, it returns to its tree to get rid of the bee's poison, which it does very efficiently. It hits the insect's head on one side of the branch, then rubs its body on the other. The rubbing makes its prey harmless.<br>\
+<br>\
+European bee-eaters (Merops apiaster) form families that breed in the spring and summer across an area that extends from Spain to Kazakhstan. Farmland and river valleys provide huge numbers of insects. Flocks of bee-eaters follow tractors as they work fields. When the birds come upon a beehive, they eat well - a researcher once found a hundred bees in the stomach of a bee-eater near a hive.<br>\
+<br>\
+European bees pass the winter by sleeping in their hives, which cuts off the bee-eater's main source of food. So, in late summer, bee-eaters begin a long, dangerous journey. Massive flocks from Spain, France and northern Italy cross the Sahara desert to their wintering grounds in West Africa. Bee-eaters from Hungary and other parts of Central and Eastern Europe cross the Mediterranean Sea and Arabian Desert to winter in southern Africa. 'It's an extremely risky stratagem, this migration,' says C. Hilary Fry, a British ornithologist who has studied European bee-eaters for more than 45 years. 'At least 30 percent of the birds will be killed by predators before they make it back to Europe the following spring.<br>\
+<br>\
+In April, they return to Europe. Birds build nests by digging tunnels in riverbanks. They work for up to 20 days. By the end of the job, they've moved 15 to 26 pounds of soil - more than 80 times their weight.<br>\
+<br>\
+The nesting season is a time when families help each other, and sons or uncles help feed their father's or brother's chicks as soon as they come out of their eggs. The helpers benefit, too: parents with helpers can provide more food for chicks to continue the family line.<br>\
+<br>\
+It's a short, spectacular life. European bee-eaters live for five to six years. The difficulties of migration and avoiding predators along the way affect every bird. Bee-eaters today also find it harder to find food, as there are fewer insects around as a result of pesticides. Breeding sites are also disappearing, as rivers are turned into concrete-walled canals.<br>\
+<br>\
+by Bruce Barcott, National Geographic magazine, 2008"
+	,vi:"Một chuyển động rực rỡ của màu sắc khi bắt thức ăn trên không, chim ăn ong châu Âu di chuyển giữa ba châu lục.<br>\
+<br>\
+Đúng như tên gọi của chúng, chim ăn ong ăn ong (mặc dù chế độ ăn của chúng bao gồm hầu hết mọi loại côn trùng biết bay). Khi con chim bắt được một con ong, nó sẽ quay trở lại cây của mình để loại bỏ chất độc của ong, và nó làm điều đó rất hiệu quả. Nó đập vào đầu con côn trùng ở một bên cành cây, sau đó cọ xát cơ thể của nó vào bên kia. Việc cọ xát khiến con mồi trở nên vô hại.<br>\
+<br>\
+Chim ăn ong châu Âu (Merops apiaster) tạo thành các gia đình sinh sản vào mùa xuân và mùa hè trên một khu vực trải dài từ Tây Ban Nha đến Kazakhstan. Đất nông nghiệp và thung lũng sông cung cấp một số lượng lớn côn trùng. Đàn chim ăn ong đi theo máy kéo khi chúng làm việc trên đồng ruộng. Khi những con chim bay đến tổ ong, chúng ăn rất ngon - một nhà nghiên cứu đã từng phát hiện ra một trăm con ong trong dạ dày của một con chim ăn ong gần một tổ ong.<br>\
+<br>\
+Ong châu Âu ngủ trong tổ của chúng qua mùa đông, điều này cắt đứt nguồn thức ăn chính của chim ăn ong. Vì vậy, vào cuối mùa hè, chim ăn ong bắt đầu một hành trình dài và nguy hiểm. Những đàn lớn từ Tây Ban Nha, Pháp và miền bắc nước Ý băng qua sa mạc Sahara đến nơi trú đông của chúng ở Tây Phi. Chim ăn ong từ Hungary và các vùng khác của Trung và Đông Âu băng qua Biển Địa Trung Hải và Sa mạc Ả Rập để trú đông ở miền nam châu Phi. 'Đây là một chiến lược cực kỳ nguy hiểm, cuộc di cư này', C. Hilary Fry, một nhà điểu học người Anh đã nghiên cứu chim ăn ong châu Âu trong hơn 45 năm, cho biết. 'Ít nhất 30 phần trăm số chim sẽ bị động vật ăn thịt giết chết trước khi chúng quay trở lại châu Âu vào mùa xuân năm sau.<br>\
+<br>\
+Vào tháng 4, chúng trở lại châu Âu. Chim xây tổ bằng cách đào đường hầm ở bờ sông. Chúng làm việc trong vòng 20 ngày. Đến cuối công việc, chúng đã di chuyển được 15 đến 26 pound đất - nặng hơn 80 lần trọng lượng của chúng.<br>\
+<br>\
+Mùa làm tổ là thời điểm các gia đình giúp đỡ lẫn nhau, và con trai hoặc chú giúp nuôi gà con của cha hoặc anh trai ngay khi chúng nở ra khỏi trứng. Những người giúp đỡ cũng được hưởng lợi: chim bố mẹ có người giúp đỡ có thể cung cấp nhiều thức ăn hơn cho chim con để tiếp tục dòng dõi gia đình.<br>\
+<br>\
+Cuộc đời ngắn ngủi nhưng ngoạn mục. Chim ăn ong châu Âu sống được năm đến sáu năm. Những khó khăn trong quá trình di cư và tránh những kẻ săn mồi trên đường đi ảnh hưởng đến mọi loài chim. Chim ăn ong ngày nay cũng thấy khó kiếm thức ăn hơn vì có ít côn trùng hơn do thuốc trừ sâu. Các địa điểm sinh sản cũng đang biến mất vì các con sông đã biến thành kênh đào có tường bê tông.<br>\
+<br>\
+Bởi Bruce Barcott, tạp chí National Geographic, 2008"
+	,voca:"tunnels,chicks,prey,pesticides,migration,diet,breed,flock,predators",
 }
 ];

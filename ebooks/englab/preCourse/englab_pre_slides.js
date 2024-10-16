@@ -937,5 +937,48 @@ Ví Dụ:<br>\
 - Để kết luận, tôi đề xuất rằng cách duy nhất hợp lý để giải quyết vấn đề này là giáo dục những người trẻ tuổi về mối nguy hiểm của việc sử dụng ma túy và thực hiện các bước để giảm áp lực cạnh tranh đặt lên họ.<br>\
 - Tóm lại, công nghệ hạt nhân chắc chắn có những công dụng tích cực nhưng vẫn nguy hiểm. Tuy nhiên, sẽ tốt hơn nếu nó không bao giờ được sử dụng để tạo ra vũ khí hạt nhân. Nếu sự sống trên Trái đất vẫn tiếp tục, tất cả các quốc gia hạt nhân trên thế giới nên đồng ý giải trừ vũ khí càng sớm càng tốt."
 	,voca:"",
+},
+{
+	unit:"Pro",
+	title:"Pros & Cons of city you live in",
+	en:"Pros:<br>\
+Fantastic, long beach. Walkable promenade next to the beach. I walk here every day.<br>\
+<br>\
+Cheapest beachside city I've ever been to. Accommodation can vary depending on your needs and how long you book for, but much cheaper than Thailand imo.<br>\
+<br>\
+Amazing food. Banh mi are less than $2. Plenty of amazing food to be had for incredibly cheap prices. Like everyone, I'd heard of Banh Mi and Pho but I've been falling in love with other Vietnamese dishes like Banh Xeo and Vietnamese pastries. All of which are usually less than $2-$3.<br>\
+<br>\
+Cafe culture in Vietnam is better than anywhere else on Earth imo. You're never more than a block away from a cafe. Go for a 10 min walk and you'll see at least 5. Coffee is $0.50 - $2 and delicious. Make sure to try egg coffee!<br>\
+<br>\
+I've only been here for 2-3 weeks and haven't had a chance to explore the mountains yet, but I can follow up once they do. So far, it's amazing scenery at least!<br>\
+<br>\
+Cons:<br>\
+Number one con is Vietnamese visa policy. Currently you can still only stay for 30 days on a tourist visa, although the government indicated last week they are looking at changing this. If they bring back 3 month tourist visas, I'll be staying in DN for at least another 3 months. For now, visa runs to Laos by bus are about $110 USD for Americans. So fairly pricey to stay here doing visa runs.<br>\
+<br>\
+This is common throughout Vietnam, but Da Nang definitely suffers from noise pollution. I never thought of myself as a person who would be bothered by this, but it's definitely affected me since I got here. I've stayed in 2 Airbnbs and a hotel since I got here, and in each I was kept awake by karaoke, bars, or large groups of people sitting in the streets eating and drinking until late in the night. Vietnamese are very social and, imo, much louder than say Thailand.<br>\
+<br>\
+If you're a big city person, you might get a little bored of Da Nang. There's a lot to see and do, but nowhere near the level of Bangkok or HCMC. For me, I actually don't usually like the mega metropolises, I find them a little overwhelming for a 1-3 month stay, so Da Nang is great for me.<br>\
+<br>\
+This one might not be a huge issue, but I've found compared to Thailand, there seems to be more tourist scams in Vietnam in general. Lots of Japanese restaurants that will pad the bill assuming you won't check or even care as a foreigner. I've had some pretty bad luck on Airbnb so far, and most of the time hosts will do the usual tricks, like refuse to give a refund, ask me to cancel first, offer to take you to one of their 'other' places which is usually far worse, etc. In general it feels like Vietnamese are more focused on making money off of you in any way they can compared to Thais. I think this is amplified in Da Nang because it's such a popular tourist destination. Not a huge dealbreaker but something to be aware of imo."
+	,vi:"Ưu điểm:<br>\
+Bãi biển dài tuyệt đẹp. Có thể đi bộ dạo bộ bên cạnh bãi biển. Tôi đi bộ ở đây mỗi ngày.<br>\
+<br>\
+Thành phố ven biển rẻ nhất mà tôi từng đến. Chỗ ở có thể thay đổi tùy theo nhu cầu của bạn và thời gian bạn đặt phòng, nhưng theo tôi thì rẻ hơn nhiều so với Thái Lan.<br>\
+<br>\
+Đồ ăn tuyệt vời. Bánh mì có giá dưới 2 đô la. Có rất nhiều món ăn tuyệt vời với giá cực rẻ. Giống như mọi người, tôi đã nghe nói về Bánh mì và Phở nhưng tôi đã yêu thích các món ăn Việt Nam khác như Bánh Xèo và bánh ngọt Việt Nam. Tất cả đều có giá dưới 2-3 đô la.<br>\
+<br>\
+Theo tôi thì văn hóa quán cà phê ở Việt Nam tốt hơn bất kỳ nơi nào khác trên Trái đất. Bạn không bao giờ cách một quán cà phê quá một dãy nhà. Đi bộ 10 phút và bạn sẽ thấy ít nhất 5 quán. Cà phê có giá từ 0,50 - 2 đô la và rất ngon. Hãy thử cà phê trứng nhé!<br>\
+<br>\
+Tôi mới chỉ ở đây 2-3 tuần và chưa có cơ hội khám phá những ngọn núi, nhưng tôi có thể quay lại sau khi họ khám phá. Cho đến nay, ít nhất thì cảnh đẹp ở đây cũng tuyệt vời!<br>\
+<br>\
+Nhược điểm:<br>\
+Nhược điểm số một là chính sách thị thực của Việt Nam. Hiện tại, bạn vẫn chỉ có thể ở lại 30 ngày với thị thực du lịch, mặc dù tuần trước chính phủ đã chỉ ra rằng họ đang xem xét thay đổi chính sách này. Nếu họ đưa thị thực du lịch 3 tháng trở lại, tôi sẽ ở lại DN ít nhất 3 tháng nữa. Hiện tại, chi phí đi xe buýt đến Lào để xin thị thực là khoảng 110 đô la Mỹ cho người Mỹ. Vì vậy, ở lại đây để xin thị thực khá đắt.<br>\
+<br>\
+Điều này phổ biến ở khắp Việt Nam, nhưng Đà Nẵng chắc chắn phải chịu ô nhiễm tiếng ồn. Tôi chưa bao giờ nghĩ mình là người sẽ bận tâm đến điều này, nhưng nó chắc chắn đã ảnh hưởng đến tôi kể từ khi tôi đến đây. Tôi đã ở 2 Airbnb và một khách sạn kể từ khi đến đây, và ở mỗi nơi, tôi đều thức trắng đêm vì karaoke, quán bar hoặc những nhóm người đông đúc ngồi trên phố ăn uống đến tận khuya. Người Việt Nam rất hòa đồng và theo tôi, ồn ào hơn nhiều so với Thái Lan.<br>\
+<br>\
+Nếu bạn là người thành phố lớn, bạn có thể sẽ thấy hơi chán Đà Nẵng. Có rất nhiều thứ để xem và làm, nhưng không thể sánh bằng Bangkok hay TP.HCM. Đối với tôi, thực ra tôi không thích các thành phố lớn, tôi thấy chúng hơi quá sức đối với một kỳ nghỉ kéo dài 1-3 tháng, vì vậy Đà Nẵng là nơi tuyệt vời đối với tôi.<br>\
+<br>\
+Điều này có thể không phải là vấn đề lớn, nhưng tôi thấy rằng so với Thái Lan, có vẻ như có nhiều vụ lừa đảo khách du lịch hơn ở Việt Nam nói chung. Rất nhiều nhà hàng Nhật Bản sẽ tính thêm tiền nếu bạn là người nước ngoài và không kiểm tra hoặc thậm chí không quan tâm. Tôi đã gặp một số điều không may trên Airbnb cho đến nay, và hầu hết thời gian, chủ nhà sẽ làm những trò thông thường, như từ chối hoàn lại tiền, yêu cầu tôi hủy trước, đề nghị đưa bạn đến một trong những nơi 'khác' của họ, thường tệ hơn nhiều, v.v. Nhìn chung, có vẻ như người Việt Nam tập trung nhiều hơn vào việc kiếm tiền từ bạn theo bất kỳ cách nào họ có thể so với người Thái. Tôi nghĩ điều này được khuếch đại ở Đà Nẵng vì đây là một điểm đến du lịch rất nổi tiếng. Không phải là một sự phá vỡ thỏa thuận lớn nhưng theo tôi, đây là điều cần lưu ý."
+	,voca:"",
 }
 ]

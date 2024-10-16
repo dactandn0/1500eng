@@ -150,7 +150,7 @@ Drones /droʊnz/ Máy bay không người lái<br>\
 E-commerce /ˈiːˌkɑːmɜːrs/ Thương mại điện tử<br>\
 Energy efficiency /ˈɛnərdʒi ɪˈfɪʃənsi/ Hiệu suất năng lượng<br>\
 Genetic engineering /dʒɪˈnɛtɪk ˌɛndʒɪˈnɪrɪŋ/ Kỹ thuật di truyền<br>\
-GPS navigation /dʒiːpiːˈɛs nævɪˈɡeɪʃən/ Định vị GPS<br>\
+Navigation /nævɪˈɡeɪʃən/ Định vị<br>\
 Hacking /ˈhækɪŋ/ Đánh cắp thông tin<br>\
 High-speed internet /haɪ spiːd ˈɪntərnɛt/ Internet tốc độ cao<br>\
 Information security /ˌɪnfərˈmeɪʃən sɪˈkjʊrəti/ An ninh thông tin<br>\
@@ -270,7 +270,15 @@ Exploitation /ˌɛksplɔɪˈteɪʃən/ Khai thác<br>\
 False expectations /fɔls ˌɛkspɛkˈteɪʃənz/ Kỳ vọng sai lầm<br>\
 Familiarity /fəˌmɪliˈærəti/ Sự quen thuộc<br>\
 Goods /ɡʊdz/ Hàng hóa<br>\
-Impact /ˈɪmpækt/ Tác động<br>\
+transitional (a) /trænˈzɪʃənl/ biến đổi, chuyển tiếp<br>\
+stressor (n) /ˈstresər/ tác nhân gây căng thẳng<br>\
+thrive (v) /θraɪv/ lớn lên, phát triển<br>\
+sparse (a) /spɑːrs/ thưa thớt<br>\
+prolific (a) /prəˈlɪfɪk/ phong phú <br>\
+swing (n,v) /swɪŋ/ cái xích đu, (sự) lung lay, lúc lắc<br>\
+Impact (n) /ˈɪmpækt/ Tác động<br>\
+moisture (n) /ˈmɔɪstʃər/ độ ẩm<br>\
+fringe (n) /frɪndʒ/ đường viền<br>\
 Informed choices /ɪnˈfɔrmd ˈtʃɔɪsɪz/ Lựa chọn được thông tin<br>\
 Interests /ˈɪntrəsts/ Lợi ích<br>\
 Junk mail /dʒʌŋk meɪl/ Thư rác<br>\

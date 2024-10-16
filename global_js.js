@@ -31,9 +31,9 @@ document.write('<small class="note">\
 var arrBOTH_COUNT_UNCOUNT = [];
 var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
-function longStrToArray(long_txt) {
+function longStrToArray(long_txt, deter = ',') {
 	var arr  = long_txt.replace(/\s*\,\s*/g, ",");
-	arr = arr.split(',');
+	arr = arr.split(deter);
 	arr = arr.filter((item, index) => arr.indexOf(item) === index); // remove dup
 	return arr;
 };

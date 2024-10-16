@@ -1,4 +1,23 @@
+// for list_noted_voca USE
+var VocaToUI = WORDS_3K_DATA.concat(IELTS_5K_DATA)
+    .concat(word_4000_data)
+    .concat(VOCA_SPECIAL)
 
+var VocaForSearch = VocaToUI
+    .concat(IELTS_SYN)
+    .concat(GRAMMER_DATA)
+
+var searchData = [];
+preProcess = function () {
+  for (var k = 0; k < VocaForSearch.length; k++) {
+    story = VocaForSearch[k];
+    if (story.en) { 
+      var words = story.en.split('<br>');
+      searchData = searchData.concat(words);
+    } 
+  }
+}
+preProcess();
 
 var app = angular.module("myApp", [
   'vocaNotedApp',
@@ -8,14 +27,14 @@ var app = angular.module("myApp", [
   'bridgeRApp','bridgeLApp',
   'barron600RApp','barron600LApp',
   'grammerApp','lptdApp',
-  'words3000App','words4000App', 
+  'wordCollectApp','words4000App', 
   'modalApp', 'audioApp', 'audioLoopRadioApp',
   'ngSanitize','ngRoute','toastr'
   ]);
 app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'words3000/words3000.html', controller: 'words3000Ctrl'
+        templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl'
       }) 
       .when('/vocaNoted', {
         templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'
@@ -67,13 +86,9 @@ app.config(function($routeProvider) {
 app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope', function($scope, appAlert, $location, toastr, $rootScope ) {
 IndexCtrlScope = $scope;
 
-$rootScope.ListVocaToUI = WORDS_3K_DATA.concat(IELTS_5K_DATA)
-    .concat(word_4000_data)
-    .concat(VOCA_SPECIAL)
-
-$rootScope.VocaForSearch = $rootScope.ListVocaToUI
-    .concat(IELTS_SYN)
-    .concat(GRAMMER_DATA)
+// for word300Ctrl
+$rootScope.VocaToUI = VocaToUI
+$rootScope.VocaForSearch = VocaForSearch
 
 kAllStories = lptd_cd1_stories
   .concat(lptd_cd2_stories)
@@ -86,7 +101,6 @@ kAllStories = lptd_cd1_stories
   .concat(listen_tracks)
 
 
-$scope.searchData = [];
 $scope.searchDataResult = [];
 $scope.search = "";
 $scope.sentenceSearches = [];
@@ -126,12 +140,12 @@ $scope.IsWordSavedBefore = function(word) {
 
 $scope.searchTyping = function() {
   $scope.sentenceSearches = [];
-  if ($scope.searchData.length==0) return true;       
+  if (searchData.length==0) return true;       
 	$scope.searchDataResult = [];
 	if ($scope.search.length <= 2) return;
     var search = removeVietnameseTones($scope.search.toLowerCase());
-    for (var i = 0; i < $scope.searchData.length; i++) {
-    	var dataVN = $scope.searchData[i];
+    for (var i = 0; i < searchData.length; i++) {
+    	var dataVN = searchData[i];
     	data = removeVietnameseTones(dataVN.toLowerCase());
     	if (data.includes(search)) {
     		$scope.searchDataResult.push(Helper_SliceHalfString(dataVN));
@@ -139,23 +153,12 @@ $scope.searchTyping = function() {
     }
 }
 
-
-$scope.preProcess = function () {
-	for (var k = 0; k < $rootScope.VocaForSearch.length; k++) {
-		story = $rootScope.VocaForSearch[k];
-		if (story.en) {	
-			var words = story.en.split('<br>');
-			$scope.searchData = $scope.searchData.concat(words);
-		}	
-	}
-}
-
 $scope.findSameWord = function() {
-  for (var i = 0; i < $scope.searchData.length-1; i++) {
-    var word1=  Helper_GetVocaFromWordFull($scope.searchData[i]);
+  for (var i = 0; i < searchData.length-1; i++) {
+    var word1=  Helper_GetVocaFromWordFull(searchData[i]);
     if (word1.length==0) continue;
-    for (var k = i+1; k < $scope.searchData.length; k++) {
-      var word2=  Helper_GetVocaFromWordFull($scope.searchData[k]);
+    for (var k = i+1; k < searchData.length; k++) {
+      var word2=  Helper_GetVocaFromWordFull(searchData[k]);
       if (word1 === word2) {
         console.log("findSameWord: " + word1);
         break;
@@ -174,8 +177,8 @@ $scope.Idx_n_L_WSp_ = function (event) {
 
   var src = event.target.innerText;
   
-  for (var i = 0; i < $scope.searchData.length; i++) {
-    var wordFull = $scope.searchData[i]
+  for (var i = 0; i < searchData.length; i++) {
+    var wordFull = searchData[i]
 
     var word = Helper_GetVocaFromWordFull(wordFull);
     var word_s_es = Helper_N_V_Add_S_ES(word)
@@ -258,7 +261,6 @@ $scope.fetchSentenceSearch = function() {
 
 
 $scope.loadData = function () {
-  $scope.preProcess();
   if (HELPER_FOR_TEST) $scope.findSameWord();
 };
 

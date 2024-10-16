@@ -264,7 +264,7 @@ fortunate may mắn<br>\
 happen xảy ra<br>\
 length chiều dài<br>\
 mistake sai lầm<br>\
-observe quan sát<br>\
+observe (v) /əbˈzɜːrv/ quan sát<br>\
 opportunity cơ hội<br>\
 prize giải thưởng<br>\
 realize nhận ra<br>\
@@ -691,7 +691,13 @@ attempt cố gắng<br>\
 authority quyền lực<br>\
 capital vốn<br>\
 cooperate hợp tác<br>\
-defend bảo vệ<br>\
+inhibit (v) /ɪnˈhɪbɪt/ ngăn cản<br>\
+defend (v) bảo vệ<br>\
+defense (n) /dɪˈfens/ sự che chở, phòng thủ, bảo vệ<br>\
+intercept (v) /ˌɪntərˈsept/ chặn lại<br>\
+stabilize (v) /ˈsteɪbəlaɪz/ làm cho vững, ổn định<br>\
+intercepting (v) /ˌɪntərˈsept/ chặn lại<br>\
+myriad (n,a) /ˈmɪriəd/ vô số<br>\
 destruction phá hủy<br>\
 disorder,division rối loạn, chia rẽ<br>\
 enable cho phép<br>\
@@ -831,7 +837,13 @@ expense chi phí<br>\
 formal (a) chính thức<br>\
 invent (v) phát minh<br>\
 junior junior<br>\
-labor labor<br>\
+beneath (prep) /bɪˈniːθ/ dưới [under]<br>\
+labor (n,v) nhân công, làm lụng<br>\
+breed (n,v) /ˈbriːdɪŋ/ sinh sản, chăn nuôi, nòi, loại<br>\
+breeding (n) /ˈbriːdɪŋ/ sự sinh sản, chăn nuôi<br>\
+aspect (n) /ˈæspekt/ khía cạnh<br>\
+a great deal more going on (n) còn nhiều điều đang diễn ra<br>\
+hold on to (v) giữ chặt lấy<br>\
 mechanic thợ máy, cơ khí<br>\
 prime (a) xuất sắc,hảo hạng<br>\
 shift (n) sự thay đổi, đổi chỗ<br>\
@@ -855,8 +867,9 @@ pause tạm dừng<br>\
 priest linh mục<br>\
 profession  nghề nghiệp <br>\
 adopt adopt<br>\
-beg beg<br>\
-beyond beyond<br>\
+beg (v) ăn xin, khẩn cầu<br>\
+beyond (prep) /bɪˈjɑːnd/ vượt trên<br>\
+clearly (adv) /ˈklɪrli/ rõ ràng<br>\
 costume costume<br>\
 exclaim exclaim<br>\
 extend extend<br>\

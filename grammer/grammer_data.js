@@ -235,6 +235,8 @@ both ....  + V_số nhiều<br>\
 <br>\
 all/most/some/any/no + N đếm | ko đếm<br>\
 a lot of / lots of + N đếm | ko đếm<br>\
+any + N (đếm|ko đếm) số ít (ít nhất một | bất kỳ cái nào)<br>\
+any + N đếm được số nhiều (nhiều hơn một)<br>\
 <br>\
 - Several: một vài<br>\
 - Various: nhiều, đa dạng<br>\

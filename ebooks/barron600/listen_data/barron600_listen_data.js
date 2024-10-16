@@ -20,7 +20,7 @@ Khi nhìn vào một cái cây, bạn có thể chỉ thấy cành và lá. Nhì
  Lợi ích của cây cũng mở rộng đến động vật dưới nước. Bóng râm từ cây giúp nước mát, bảo vệ động vật dưới nước khỏi sức nóng của mặt trời mùa hè.\
  Rễ cây bám chặt vào đất, giúp đất không bị xói mòn do mưa. Đây là biện pháp bảo vệ môi trường sống dưới nước, vì nó ngăn đất chảy vào sông và gây ô nhiễm.\
  Rõ ràng là cây rất quan trọng. Nếu rừng biến mất do khai thác gỗ hoặc các hoạt động khác, tác động đến môi trường sẽ rất lớn."
-,voca:"aquatic,defend,environment,eroded,extend,habitats,impacts,logging,migratory,nocturnal,polluting,terrestrial,vanish,closer,a great deal more going on,beneath,protects[+from],prevents[+from],Clearly,hold on to",
+,voca:"Squirrels,aquatic,defend,environment,eroded,extend,habitats,impacts,logging,migratory,nocturnal,polluting,terrestrial,vanish,closer,a great deal more going on,beneath,protects[+from],prevents[+from],Clearly,hold on to",
 },
 {
 unit:"1",
@@ -55,7 +55,7 @@ Tôi sẽ để bạn ở đây để quan sát bao lâu tùy thích, và tôi s
 Trước khi chia tay, tôi muốn nhắc bạn rằng khu bảo tồn chim này được xây dựng hoàn toàn bằng lao động tình nguyện và tiền quyên góp.\
 Bạn có thể tưởng tượng đó là một kỳ tích như thế nào và cần những gì để duy trì nó. Vui lòng cân nhắc quyên góp trước khi bạn rời đi.\
 Bạn sẽ tìm thấy một hộp đựng cho mục đích đó dọc theo con đường mòn ngay trước khi bạn đến cửa hàng lưu niệm."
-,voca:"aspects,breeding,diurnal,endure,feat,fuel,imperative,migration,navigation,nocturnal,observe,stray",
+,voca:"aspects,breeding,diurnal,endure,feat,fuel,imperative,migration,navigation,nocturnal,observe,stray,sanctuary,trail",
 },
 {
 unit:"1",

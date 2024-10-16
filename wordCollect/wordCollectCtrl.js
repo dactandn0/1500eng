@@ -1,16 +1,16 @@
 
-document.write('<script src="./words3000/ielts_syn.js" type="text/javascript"></script>');
-document.write('<script src="./words3000/voca_special.js" type="text/javascript"></script>');
-document.write('<script src="./words3000/3k_words_data.js" type="text/javascript"></script>');
-document.write('<script src="./words3000/5k_ielt_words.js" type="text/javascript"></script>');
-document.write('<script src="./words3000/4k_words_data.js" type="text/javascript"></script>');
-// document.write('<script src="./words3000/4k_words_data_make.js" type="text/javascript"></script>');
+document.write('<script src="./wordCollect/ielts_syn.js" type="text/javascript"></script>');
+document.write('<script src="./wordCollect/voca_special.js" type="text/javascript"></script>');
+document.write('<script src="./wordCollect/3k_words_data.js" type="text/javascript"></script>');
+document.write('<script src="./wordCollect/5k_ielt_words.js" type="text/javascript"></script>');
+document.write('<script src="./wordCollect/4k_words_data.js" type="text/javascript"></script>');
+// document.write('<script src="./wordCollect/4k_words_data_make.js" type="text/javascript"></script>');
 
 
-var app = angular.module("words3000App", []);
-app.controller("words3000Ctrl", function($scope, $rootScope) {
+var app = angular.module("wordCollectApp", []);
+app.controller("wordCollectCtrl", function($scope, $rootScope) {
 
-var kSTORIES = $rootScope.ListVocaToUI
+var kSTORIES = $rootScope.VocaToUI
 
 $scope.storyTitles = []; 
 $scope.storyId = -1;

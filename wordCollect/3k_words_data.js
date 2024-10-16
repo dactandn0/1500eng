@@ -319,6 +319,22 @@ Precious stone (n) /preʃ.əs ˈstəʊn/ Đá quý",
 ,{
 title:"Environment",
 en:"Land (n) /lænd/ Đất, đất đai<br>\
+vanish (v) /ˈvænɪʃ/ Biến mất<br>\
+pollute (v) /pəˈluːt/ làm ô nhiễm<br>\
+logging (n) /ˈlɔːɡɪŋ/ phá rừng<br>\
+diurnal (a) /daɪˈɜːrnl/ loài sống ban ngày<br>\
+nocturnal (a) /nɑːkˈtɜːrnl/ loài sống về đêm<br>\
+migratory (n) /ˈmaɪɡrətɔːri/ di cư<br>\
+habitat (n) /ˈhæbɪtæt/ môi trường sống<br>\
+extend (v) /ɪkˈstend/ mở rộng<br>\
+terrestrial (a) /təˈrestriəl/ loài sống trên cạn<br>\
+aquatic (a) /əˈkwɑːtɪk/ loài sống ở dưới<br>\
+felling (n) /felling/ đốn ngã<br>\
+pollutant (n) /pəˈluːtənt/ chất gây ô nhiễm<br>\
+sanctuary (n) /ˈsæŋktʃueri/ khu bảo tồn<br>\
+erode (v) /ɪˈrəʊd/ xói mòn, ăn mòn<br>\
+erosion (n) /ɪˈrəʊʒn/ sự xói mòn<br>\
+vegetation (n) /ˌvedʒəˈteɪʃn/ thảm thực vật<br>\
 Pollute (v) /pəˈluːt/ Làm ô nhiễm<br>\
 Decompose (v) /diː.kəmˈpəʊz/ Phân hủy<br>\
 Balance (n) /ˈbæl.əns/ Sự cân bằng<br>\
@@ -647,8 +663,8 @@ Betroth (v) /bɪˈtrəʊð/ Hứa hôn, đính hôn",
 }
 ,
 {
-		title:"Airport",
-	en:"aboard (adv,prep) /əˈbɔːd/ trên phương tiện, ngoại quốc<br>\
+title:"Airport",
+en:"aboard (adv,prep) /əˈbɔːd/ trên phương tiện, ngoại quốc<br>\
 oxygen mask (n) /ˈɒk.sɪ.dʒən mɑːsk/ mặt nạ thở oxy<br>\
 serve /sɜːv/ phục vụ (thức ăn)<br>\
 window seat /ˈwɪn.dəʊ siːt/ ghế cạnh cửa sổ<br>\
@@ -968,6 +984,9 @@ kind /kaind/ tốt bụng<br>\
 attractive (a) /əˈtræktɪv/ hấp dẫn<br>\
 courageous /kǝ'reidzǝs/ can đảm<br>\
 loyal /'bial/ trung thành<br>\
+imperative (a) /ɪmˈperətɪv/ bắt buộc<br>\
+endure (v) /ɪnˈdʊr/ việc làm, hành vi (a)<br>\
+feat (n,a) /fiːt/ chịu đựng<br>\
 modest /'mpdist/ khiêm tốn<br>\
 confident /'konfidǝnt/ tự tin<br>\
 unmerciful /Ʌn'mз:SIful/ nhẫn tâm<br>\
@@ -1044,6 +1063,7 @@ Red wine (n) /rɛd waɪn/ Rượu vang đỏ<br>\
 Non-alcoholic (a) /nɑːn æl.kəˈhɒl.ɪk/ Không cồn<br>\
 Full-cream (a) /fʊl ˈkriːm/ Nguyên kem<br>\
 Herbal (a) /ˈhɜːr.bəl/ (chứa) thảo mộc<br>\
+evaporation (n) /ɪˌvæpəˈreɪʃn/ bay hơi<br>\
 Mineral water (n) /ˈmɪn.ər.əl ˈwɔː.tər/ Nước khoáng",
 },
 {
@@ -1563,6 +1583,7 @@ Duck (n) /dʌk/ Vịt<br>\
 Goat (n) /ɡoʊt/ Dê<br>\
 Horse (n) /hɔːrs/ Ngựa<br>\
 Goose (n) /ɡuːs/ Ngỗng<br>\
+Squirrel (n) /ˈskwɜːrəl/ Sóc<br>\
 Donkey (n) /ˈdɒŋ.ki/ Lừa<br>\
 Sheep (n) /ʃiːp/ Cừu<br>\
 Chicken (n) /ˈtʃɪk.ɪn/ Gà<br>\
@@ -1589,6 +1610,8 @@ Fox (n) /fɒks/ Cáo<br>\
 Dinosaur (n) /ˈdaɪ.nəsɔːr/ Khủng long<br>\
 Snail (n) /sneɪl/ Ốc sên<br>\
 Crow (n) /kroʊ/ Quạ<br>\
+migration (n) /maɪˈɡreɪʃn/ di cư<br>\
+stray (n,a,v) /streɪ/ đi lạc,trẻ (con vật) đi lạc<br>\
 Parrot (n) /ˈpær.ət/ Vẹt",
 },
 {
@@ -1705,6 +1728,7 @@ Supervisor (n) /ˈsuː.pərvaɪ.zər/ Giám sát viên<br>\
 Sales manager (n) /seɪlz ˈmæn.ɪ.dʒər/ Giám đốc kinh doanh<br>\
 Production manager (n) /prəˈdʌk.ʃən ˈmæn.ɪ.dʒər/ Giám đốc sản xuất<br>\
 Mechanic (n) /məˈkæn.ɪk/ Thợ cơ khí<br>\
+array (n) /əˈreɪ/ một loạt <br>\
 Managing director (n) /ˈmæn.ɪ.dʒɪŋ dɪˈrɛktər/ Giám đốc điều hành<br>\
 Personal assistant (n) /ˈpɜː.sən.əl əˈsɪs.tənt/ Trợ lý riêng<br>\
 Hairdresser (n) /ˈhɛərdrɛs.ər/ Thợ cắt tóc<br>\
@@ -1756,6 +1780,7 @@ Near (prep) /nɪər/ Gần<br>\
 Turn right v. phr /tɜrn raɪt/ Rẽ phải<br>\
 Turn left v. phr /tɜrn lɛft/ Rẽ trái<br>\
 Junction (n) /ˈdʒʌŋkʃən/ Giao lộ<br>\
+trail (n) /treɪl/ đường mòn<br>\
 Pavement (n) /ˈpeɪvmənt/ Vỉa hè",
 },
 {
@@ -1800,6 +1825,8 @@ Rent (v) /rɛnt/ Thuê<br>\
 Distribution (n) /dɪstrɪˈbjuːʃən/ Sự phân phối, phân phát<br>\
 Co-ordinate (v) /koʊˈɔrdəneɪt/ Phối hợp, sắp xếp<br>\
 Purchase (v) /ˈpɜrʧəs/ Mua<br>\
+adapt (v) /əˈdæpt/ thích nghi<br>\
+accumulate (v) /əˈkjuːmjəleɪt/ tích lũy<br>\
 Stock exchange (n) /stɒk ɪksˈʧeɪndʒ/ Sàn giao dịch chứng khoán<br>\
 Stock market (n) /stɒk ˈmɑrkɪt/ Thị trường chứng khoán<br>\
 Opportunity (n) /ɒpərˈtunɪti/ Cơ hội<br>\

@@ -175,15 +175,14 @@ $scope.Index_Speak = function (event, word, fullSentence = false) {
 $scope.Idx_n_L_WSp_ = function (event) {
   Helper_ngClickWordSpeak(event);
 
-  var src = event.target.innerText;
+  var wordFormed = event.target.innerText.toLowerCase();
   
   for (var i = 0; i < searchData.length; i++) {
     var wordFull = searchData[i]
 
-    var word = Helper_GetVocaFromWordFull(wordFull);
-    var word_s_es = Helper_N_V_Add_S_ES(word)
+    var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
 
-    if (word.toLowerCase()===src.toLowerCase() || word_s_es.toLowerCase()===src.toLowerCase()) {
+    if (word === wordFormed || Helper_IsFormOfWord(word, wordFormed)) {
         toastr.info(wordFull);
         break;
     }

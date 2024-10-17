@@ -14,14 +14,14 @@ function doList(ebook) {
 	var notedWords = longStrToArray(outputStr)
 	var hasVocas  = []
 	for (var i = 0; i < notedWords.length; i++) {
-		var word = notedWords[i].trim();
+		var word = notedWords[i].trim().toLowerCase();
 		if (word) {
 			for (var j = 0; j < searchData.length; j++) {
 				var wordFull = searchData[j]
-				var word2 = Helper_GetVocaFromWordFull(wordFull)
+				var word2 = Helper_GetVocaFromWordFull(wordFull).toLowerCase()
 				var word_s_es = Helper_N_V_Add_S_ES(word2)
 
-			    if (word.toLowerCase()===word2.toLowerCase() || word_s_es.toLowerCase()===word.toLowerCase()) {
+			    if (word===word2 || Helper_IsFormOfWord(word)) {
 			       hasVocas.push(word)
 			    }
 			}

@@ -72,6 +72,45 @@ function Helper_N_V_Add_S_ES(words) {
 	return word +'s' + rest
 }
 
+
+function Helper_N_V_Add_ING(words) {
+
+	words = words.trim();
+	var word = words;
+	var rest = "";
+	// word is combine of 2,3...
+	if (words.indexOf(" ") >= 0)
+	{
+		word = words.split(" ")[0]
+		rest = words.substring(word.length)
+	}
+
+	if (word==='be') return 'being' + rest
+
+	var r = /^\w+.*(h|w|x|y)+$/gi.test(word)
+	if (r) return word+'ing' + rest
+
+	r = /^\w+.*(ee){1}\w{0,1}$/gi.test(word)
+	if (r) return word+'ing' + rest
+		
+	r = /^\w+.*(ie){1}$/gi.test(word)
+	if (r) return word.substring(0, word.length-2) + 'ying' + rest
+
+	r = /^\w+.*[ueoai]+[^hwxy]$/gi.test(word)
+	if (r) return word + word[word.length-1] + 'ing' + rest
+
+	r = /^\w+.*[^ei](e)+$/gi.test(word)
+	if (r) return word.substring(0, word.length-1) + 'ing' + rest
+
+	return word +'ing' + rest
+}
+
+function Helper_IsFormOfWord (word, wordFormed) {
+	var add_E_ES = Helper_N_V_Add_S_ES(word).toLowerCase(); 
+	var add_ING = Helper_N_V_Add_ING(word).toLowerCase();
+	return wordFormed === add_E_ES || wordFormed === add_ING
+}
+
 function xxx () {
 	var word = "go to word"
 
@@ -82,12 +121,18 @@ function xxx () {
 	console.log(rest)
 }
 
-function test(noun) {
-	console.log(Helper_N_V_Add_S_ES(noun))
+function test(word) {
+	console.log(Helper_N_V_Add_ING(word))
 } 
 
-// test("go to school")
-// test("play")
-// test("baby")
+ test("Fix")
+ test("Snow")
+ test("Sleep")
+ test("Prefer")
+ test("Lie")
+ test("Die")
+ test("Arrive")
+ test("agree")
+ test("live")
 
-function Helper_Is(noun) {}
+

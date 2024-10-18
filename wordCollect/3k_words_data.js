@@ -233,7 +233,9 @@ Ally (n) /ˈæl.aɪ/ Đồng minh<br>\
 Companion (n) /kəmˈpæn.jən/ Bạn đồng hành<br>\
 Pal (n) /pæl/ Bạn (từ lóng)<br>\
 Friendship (n) /ˈfrend.ʃɪp/ Tình bạn<br>\
-Close (a) /kləʊz/ Thân thiết, (v) /kləʊz/ Đóng, tắt",
+Closer (a) /kləʊzest/ Thân thiết hơn, nhìn gần(kỹ) hơn<br>\
+Closest (a) /kləʊzer/ superlative Close<br>\
+Close (a) /kləʊz/ Thân thiết, (v) /kləʊz/ Đóng, tắt"
 },
 {
 title:"Kitchen",
@@ -327,12 +329,13 @@ nocturnal (a) /nɑːkˈtɜːrnl/ loài sống về đêm<br>\
 migratory (n) /ˈmaɪɡrətɔːri/ di cư<br>\
 habitat (n) /ˈhæbɪtæt/ môi trường sống<br>\
 extend (v) /ɪkˈstend/ mở rộng<br>\
-terrestrial (a) /təˈrestriəl/ loài sống trên cạn<br>\
-aquatic (a) /əˈkwɑːtɪk/ loài sống ở dưới<br>\
+terrestrial (a) /təˈrestriəl/ loài trên cạn<br>\
+aquatic (a) /əˈkwɑːtɪk/ loài sống ở nước<br>\
 felling (n) /felling/ đốn ngã<br>\
 pollutant (n) /pəˈluːtənt/ chất gây ô nhiễm<br>\
 sanctuary (n) /ˈsæŋktʃueri/ khu bảo tồn<br>\
 erode (v) /ɪˈrəʊd/ xói mòn, ăn mòn<br>\
+eroded (v) /ɪˈrəʊded/ xói mòn, ăn mòn<br>\
 erosion (n) /ɪˈrəʊʒn/ sự xói mòn<br>\
 vegetation (n) /ˌvedʒəˈteɪʃn/ thảm thực vật<br>\
 Pollute (v) /pəˈluːt/ Làm ô nhiễm<br>\

@@ -124,7 +124,8 @@ Nhiều loại cây này hiện nằm ở những khu vực đặc biệt.<br>\
 Những khu vực này được gọi là khu bảo tồn rừng hoặc công viên quốc gia.<br>\
 Một số công viên thu một khoản phí vào cửa nhỏ. Du khách phải trả phí để vào công viên.<br>\
 Sau đó, họ có thể đi bộ giữa những cây cổ thụ tuyệt đẹp. Họ phải cẩn thận không làm hỏng cây. Tất cả chúng ta nên chăm sóc rừng.',
-voca:"forest,several,visitor,hundred,feet,fee,damage,reserve,national,entrance,take care of,make,out of[make out of: làm ra từ|make up of: tạo nên từ]"
+voca:"forest,several,visitor,hundred,feet,fee,damage,reserve,national,entrance,take care of,make things out of",
+note: ["make out of: làm ra từ", "make up of: tạo nên từ"]
 }
 ,
 {
@@ -772,7 +773,7 @@ G: Thực ra, mình cũng đi trượt patin. Mình đi vào mỗi cuối tuần
 B: Wow! Làm sao bạn có thể trượt xa như vậy? Cơ bắp của bạn chắc phải khỏe lắm.<br>\
 G: Mình đã trượt patin được ba năm rồi. Bạn cũng có thể trượt xa như vậy. Bạn chỉ cần tăng cường cơ bắp thôi. Chúng ta hãy cùng nhau đi trượt băng vào cuối tuần tới nhé.<br>\
 B: Được thôi!',
-voca:"skate[/skeɪt/],kilometer,scared,muscles,sore,strong,throat,catch,cold,gas,station,build up"
+voca:"skate,kilometer,scared,muscles,sore,strong,throat,catch,cold,gas,station,build up"
 },
 {
 	en:'Unit 35 The Olympics<br>\
@@ -841,7 +842,8 @@ B : Chỉ mất khoảng bốn giờ lái xe nếu bạn đi trên đường cao
 G : Chắc chắn là một chuyến đi dễ dàng. Khi nào bạn đi?<br>\
 B: Chúng tôi sẽ đi vào sáng thứ Bảy. Chúng tôi sẽ trở về vào tối thứ Hai.<br>\
 G: Chúc bạn có thời gian vui vẻ! Mang cho tôi một ít hồ đào nhé!',
-voca:"south,nut[​seed |bead | corn],pecan,bring,makes for,looking forward to"
+voca:"south,nut,pecan,bring,makes for,looking forward to",
+note:["nut = seed = bead = corn"]
 },
 {
 	en:'Unit 38 The Travel Agent<br>\
@@ -902,6 +904,6 @@ M: Bạn có thấy chán những chuyến đi dài trên ô tô không? Bạn c
 Bạn có thích ngắm nhìn những kỳ quan nhân tạo không?<br>\
 Đi du ngoạn đến Kênh đào Panama! Bạn có muốn ngắm những tảng băng trôi không? Bạn có muốn ngắm hải cẩu và cá voi không? Hãy đi du ngoạn đến Alaska!<br>\
 Dù bạn chọn đi đâu, du ngoạn là một cách tuyệt vời để đi du lịch. Đặt chuyến đi trên du thuyền ngay hôm nay! Bạn sẽ thích!',
-voca:"cruise[n],whale,man-made,autumn,northeast,wherever,compass,mammal,wonder,the Panama Canal,Go late in the year,sight"
+voca:"cruise,whale,man-made,autumn,northeast,wherever,compass,mammal,wonder,the Panama Canal,Go late in the year,sight"
 },
 ];

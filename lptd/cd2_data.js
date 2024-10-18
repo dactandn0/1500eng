@@ -20,7 +20,8 @@ Khoảng 98% lục địa này bị đóng băng. Phần còn lại được t�
  Chỉ có khoảng hai inch tuyết rơi mỗi năm.<br>\
 Có bao nhiêu người sống trên lục địa của bạn? Không ai sống ở Nam Cực. Chỉ có động vật, như chim cánh cụt, sống ở đó. Các nhà khoa học và khách du lịch đến thăm nơi này,\
  nhưng họ không ở lại lâu. Bạn có muốn đến thăm Nam Cực không? Đây là nơi lạnh nhất và khô nhất trên Trái Đất!',
-voca:'Dinosaur,went[go south],south,South Pole,500 million years,Scientist,equator[/ɪˈkweɪtər/],tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of[tạo nên từ],87%[ 87 percent]'
+voca:'Dinosaur,went,south,South Pole,500 million years,Scientist,equator,tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of',
+note:['87% = 87 percent']
 },
 {
 	en: 
@@ -92,7 +93,8 @@ Nếu may mắn, bạn có thể nhìn thấy một con hươu vàng hoặc mộ
 Có rất nhiều loài chim để ngắm. Thật thú vị khi đi vào rừng với ống nhòm để ngắm chim. \
 Nhìn thấy những chú chim qua ống nhòm khiến chúng có vẻ gần hơn nhiều so với thực tế. Bạn có thể viết ra tất cả các loài mà bạn nhìn thấy. Trước tiên, bạn nên tìm hiểu về tiếng kêu của chúng. Nghĩa là âm thanh mà mỗi loài chim tạo ra. Đôi khi rất khó để nhìn thấy những chú chim. Tuy nhiên, bạn có thể nhận dạng chúng nếu tình cờ nghe thấy chúng.<br>\
 Tôi muốn quay lại Iran một lần nữa vào một ngày nào đó. Nó đẹp đến nỗi tôi muốn được nhìn thấy và khám phá nhiều hơn nữa!',
-voca:"recommend,desert,happen,species,identify,binoculars,owl,definitely,actually,explore,Middle East,much more of[a lof of]"
+voca:"recommend,desert,happen,species,identify,binoculars,owl,definitely,actually,explore,Middle East,much more of",
+note:['much more of = a lof of']
 },
 {
 en:'Unit 5 Jane Goodall<br>\
@@ -151,7 +153,7 @@ W: Rất đơn giản. Đầu tiên, hãy thu gom bát đĩa bẩn và cạo s�
 M: Nghe có vẻ dễ sử dụng. Tôi nghĩ vợ tôi sẽ thực sự thích nó. Giá của nó là bao nhiêu?<br>\
 W: Ông thật may mắn, thưa ông! Nó đang được bán với giá 400 đô la trong tuần này. <br>\
 M: Tuyệt, tôi sẽ mua nó!',
-voca:"appliance,dishwasher,garbage,housework,simple,perfect,vacuum,cleaner,scrape[/skreɪp/],detergent,leftover,cutlery,compartment,rinse,sparkling,popular,wash cycle,on sale,for"
+voca:"appliance,dishwasher,garbage,housework,simple,perfect,vacuum,cleaner,scrape,detergent,leftover,cutlery,compartment,rinse,sparkling,popular,wash cycle,on sale,for"
 },
 {
 en:'Unit 8 Acupuncture<br>\
@@ -336,7 +338,7 @@ W: Có hơn sáu tỷ người trên thế giới. Mỗi người đều khác b
 Hầu hết người dân Việt Nam đều có mái tóc đen thẳng và đôi mắt đen. Nhưng tất cả đều trông khác nhau. Người dân ở Mỹ có mái tóc thẳng, tóc xoăn hoặc tóc gợn sóng. Tóc của họ có thể là màu đen, nâu, vàng hoặc đỏ. Một số người có đôi mắt nâu hoặc xám. Một số người có đôi mắt xanh hoặc xanh lá cây. Ngay cả những người trong cùng một gia đình cũng trông khác nhau!<br>\
 Tất cả chúng ta đều suy nghĩ khác nhau. Tất cả chúng ta đều thích những thứ khác nhau. Chúng ta thích những loại thực phẩm khác nhau và những loại nhạc khác nhau. Chúng ta cũng thích những phong cách quần áo khác nhau.<br>\
 Dù bạn ở đâu, bạn cũng khác biệt với mọi người. Không ai khác trông giống hệt bạn. Không ai có suy nghĩ hoặc tài năng của bạn. Có hơn sáu tỷ người trên Trái đất, nhưng không ai trong số họ giống hệt bạn. Bạn là duy nhất!'
-,voca:"nobody,exactly,differently[different],straight,world,alike,billion,totally,flavor,fingerprint,curly,wavy[frizzly]"
+,voca:"nobody,exactly,differently,straight,world,alike,billion,totally,flavor,fingerprint,curly,wavy"
 },
 {
 	en:"Unit 16 Karaoke<br>\
@@ -518,7 +520,8 @@ W: Được rồi, con sẽ bật CD, nhưng sẽ bật ở mức âm lượng c
 B: Cảm ơn mẹ.<br>\
 W: Con đã bao giờ kể cho mẹ nghe về những bài hát con thích ở độ tuổi của mẹ chưa? Mọi người nghe nhạc thực sự vào thời đó.<br>\
 G: Ôi, mẹ! Rap cũng là nhạc thực sự!",
-voca:"promise[​oath|vow|pledge|swearword|plight],awful[terrible],headache,volume,scenery[scene|view|spectacle],nonsense,suppose,loud,waste,behave"
+voca:"promise,headache,volume,scenery,nonsense,suppose,loud,waste,behave",
+note:['promise, oath, vow, pledge, swearword, plight','scenery, scene, view, spectacle']
 },
 {
 	en:"Unit 23 The Report<br>\
@@ -818,7 +821,7 @@ W: Bây giờ tôi chỉ ăn salad.<br>\
 M: Chỉ riêng salad có thể không đủ dinh dưỡng.<br>\
 W: Vậy, tôi nên ăn gì?<br>\
 M: Bạn cần một ít protein và carbohydrate. Điều quan trọng là phải ăn nhiều loại thực phẩm khác nhau trong mỗi bữa ăn. Bạn nên có những bữa ăn cân bằng. Đảm bảo bạn ăn ngũ cốc, trái cây và rau, và một ít bánh mì hoặc gạo. Bạn cũng cần sữa và các sản phẩm từ sữa, và một ít thịt. Bạn sẽ khỏe mạnh hơn. Bạn sẽ có nhiều năng lượng hơn. Bạn thậm chí sẽ trông đẹp hơn!",
-	voca:"energy,skip,salad,variety,dairy,meal,balance,nutritious,protein,cereal[grain],catch up on"
+	voca:"energy,skip,salad,variety,dairy,meal,balance,nutritious,protein,cereal,catch up on"
 },
 {
 	en:"Unit 36 Across Canada<br>\
@@ -899,7 +902,8 @@ Mexico.<br>\
 G: Phần tôi thích nhất là đến thăm Carlsbad Caverns. Có 30 dặm hang động! Trong một hang động, chúng tôi phải đội mũ có đèn để có thể nhìn thấy trong bóng tối. Đôi khi chúng tôi phải bò qua những đường hầm rất hẹp bằng tay và đầu gối.<br>\
 B: Bạn không sợ sao?<br>\
 G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm sau. Bạn nên đi cùng tôi!",
-voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern[a.],Texas,Arizona,funny"
+voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern,Texas,Arizona,funny",
+note:['southwestern (adj)']
 },
 {
 	en:"Unit 39 A Good Way to Travel<br>\

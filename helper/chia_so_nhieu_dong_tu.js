@@ -115,24 +115,31 @@ function xxx () {
 	var word = "go to word"
 
 	if (word.indexOf(" ") >= 0)
-	var firstW = word.split(" ")[0]
+	{
+		var firstW = word.split(" ")[0]
 	var rest = word.substring(firstW.length)
 	console.log(firstW)
 	console.log(rest)
+	}
 }
 
-function test(word) {
+function testS(word) {
+	console.log(Helper_N_V_Add_S_ES(word))
+}
+function testIng(word) {
 	console.log(Helper_N_V_Add_ING(word))
-} 
-
- test("Fix")
- test("Snow")
- test("Sleep")
- test("Prefer")
- test("Lie")
- test("Die")
- test("Arrive")
- test("agree")
- test("live")
-
+}
+//testS('Squirrel')
+//testS('Nutrient')
+/*
+ testIng("Fix")
+ testIng("Snow")
+ testIng("Sleep")
+ testIng("Prefer")
+ testIng("Lie")
+ testIng("Die")
+ testIng("Arrive")
+ testIng("agree")
+ testIng("live")
+*/
 

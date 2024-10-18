@@ -81,17 +81,9 @@ function processStory (story) {
 
 	if (story.voca) {
 		var vocas = story.voca.split(',');
-		story.vocaNotes = [];
 		for (var i = 0; i < vocas.length; i++) {
 			voca = vocas[i].trim();
-			if (voca==='') continue;
-			var temp = voca;
-			if (temp.indexOf("[") >= 0) {
-				temp = temp.replace(/\s*\|\s*/g, ", ");
-				temp = temp.replace(/\s*\[\s*/g, " : ");
-				temp = temp.replace(/\s*\]\s*/g, "");
-				story.vocaNotes.push(temp);
-			}
+			if (voca.length===0) continue;
 			voca = voca.replace(/\[.*\]/g, '').trim();
 			var regex = new RegExp(`\\b${voca}\\b` , 'g')
 			if (voca!='event')

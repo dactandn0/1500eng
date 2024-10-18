@@ -126,7 +126,8 @@ harm gây hại<br>\
 lay đặt<br>\
 peace hòa bình<br>\
 prince hoàng tử<br>\
-protect bảo vệ<br>\
+keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
+protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
 sense giác quan<br>\
 sudden đột ngột<br>\
 therefore  do đó<br>\
@@ -135,28 +136,28 @@ arrange sắp xếp<br>\
 attend tham dự<br>\
 contrast tương phản<br>\
 encourage (v) /ɪnˈkɜːrɪdʒ/ khuyến khích<br>\
-familiar quen thuộc<br>\
+familiar (a) /fəˈmɪliər quen thuộc<br>\
 grab chộp lấy<br>\
 hang treo<br>\
 necessary cần thiết<br>\
 pattern mẫu<br>\
 propose đề xuất<br>\
-purpose mục đích<br>\
+purpose (n) /ˈpɜːrpəs/ mục đích<br>\
 release giải phóng<br>\
 require yêu cầu<br>\
 single đơn lẻ<br>\
-success thành công<br>\
+success (n) /səkˈses/ thành công<br>\
 tear xé<br>\
-theory  lý thuyết<br>\
+theory (n) /ˈθɪri/ lý thuyết<br>\
 against chống lại<br>\
 beach bãi biển<br>\
 damage thiệt hại<br>\
-discover khám phá<br>\
-identify xác định<br>\
+discover (v) /dɪˈskʌvər/ khám phá<br>\
+identify (v) /aɪˈdentɪfaɪ/ xác định<br>\
 perhaps có lẽ<br>\
 pleasant dễ chịu<br>\
-prevent ngăn chặn<br>\
-rock đá<br>\
+prevent (v) /prɪˈvent/ ngăn chặn [s.th/s.o from + N/V_ing]<br>\
+rock (n) /rɑːk/ đá<br>\
 save (v) lưu, tiết kiệm<br>\
 step bước<br>\
 still vẫn<br>\
@@ -167,7 +168,7 @@ certain chắc chắn<br>\
 chance cơ hội<br>\
 effect hiệu ứng<br>\
 essential thiết yếu<br>\
-focus tập trung<br>\
+focus (v) /ˈfəʊkəs/ tập trung<br>\
 function chức năng<br>\
 guard bảo vệ<br>\
 image hình ảnh<br>\
@@ -373,7 +374,8 @@ hero anh hùng<br>\
 hurry vội vã<br>\
 inform thông báo<br>\
 later sau<br>\
-leave rời đi<br>\
+leaves (n) lá (plural of leaf) <br>\
+leave (v) /liːv/ để lại, rời đi<br>\
 locate xác định vị trí<br>\
 operation phẫu thuật<br>\
 pain đau<br>\

@@ -267,7 +267,8 @@ Tất nhiên, nam chính của chúng ta đã cứu một người phụ nữ g�
 Anh ta dành phần lớn thời lượng của bộ phim để cố gắng phá hỏng kế hoạch của họ. Một điều bất ngờ khác là chú robot độc ác, Homer, quyết định trở thành một người làm việc thiện. Người bạn đời của anh, Ethel, đã làm việc chăm chỉ để khiến anh quay lại con đường tội lỗi của mình.<br>\
 <br>\
 Liệu Andy Robot có thành công trong việc giải cứu Garrison Fort khỏi tình yêu không? Còn Ethel thì sao? Liệu cô ấy có đưa Homer quay lại con đường tội lỗi của mình không? Để tìm hiểu, hãy đến rạp chiếu phim, mua vé và ngồi xuống thư giãn."
-,voca:"blockbuster,distress[danger],leading man,martial,art,do-gooder,promptly",
+,voca:"blockbuster,distress,leading man,martial,art,do-gooder,promptly",
+note:['distress, danger']
 },
 {
 en:"Unit 14 A Faux Pas<br>\

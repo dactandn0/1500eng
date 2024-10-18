@@ -14,20 +14,19 @@ function doList(ebook) {
 	var notedWords = longStrToArray(outputStr)
 	var hasVocas  = []
 	for (var i = 0; i < notedWords.length; i++) {
-		var word = notedWords[i].trim().toLowerCase();
-		if (word) {
+		var wordFormed = notedWords[i].trim().toLowerCase();
+		if (wordFormed) {
 			for (var j = 0; j < searchData.length; j++) {
 				var wordFull = searchData[j]
-				var word2 = Helper_GetVocaFromWordFull(wordFull).toLowerCase()
-				var word_s_es = Helper_N_V_Add_S_ES(word2)
+				var wordNguyenGoc = Helper_GetVocaFromWordFull(wordFull).toLowerCase()
 
-			    if (word===word2 || Helper_IsFormOfWord(word)) {
-			       hasVocas.push(word)
+			    if (wordFormed===wordNguyenGoc || Helper_IsFormOfWord(wordNguyenGoc, wordFormed)) {
+			       hasVocas.push(wordFormed)
 			    }
 			}
 		}
 	}
-	var dontVoca = notedWords.filter(d => !hasVocas.includes(d))
+	var dontVoca = notedWords.filter(d => !hasVocas.includes(d.toLowerCase()))
 	for (var i = 0; i < dontVoca.length; i++) {
 		var loggg = dontVoca[i]
 		if (loggg) console.log(loggg)
@@ -35,4 +34,4 @@ function doList(ebook) {
 	}
 }
 
-if (HELPER_FOR_TEST) doList(barron);
+if (!HELPER_FOR_TEST) doList(barron);

@@ -228,7 +228,7 @@ Mặt khác, cách mọi người dành thời gian rảnh rỗi đã thay đổ
 Tuy nhiên, mọi người cũng tăng cân vì họ ăn nhiều thức ăn hơn trước đây, vì vậy chúng ta không nên đổ lỗi cho những phát minh hiện đại về mọi thứ. Hơn nữa, các công nghệ mới đã dẫn đến y học tốt hơn và kết quả là con người sống lâu hơn.<br>\
 <br>\
 Tóm lại, tôi tin rằng nhìn chung mọi người hiện nay sống khỏe mạnh hơn. Theo quan điểm của tôi, thật khó để tranh luận rằng những phát minh hiện đại đã có ảnh hưởng có hại đến sức khỏe của chúng ta. Mặt khác, chúng ta cần đảm bảo rằng chúng ta vẫn tập thể dục ở mức độ hợp lý."
-	,voca:"",
+	,voca:"There is no doubt that,However,In conclusion,On the other hand,greatly,In my view,What is more",
 },
 {
 	unit:5,

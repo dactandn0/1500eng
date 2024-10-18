@@ -113,7 +113,8 @@ $scope.$on('$routeChangeSuccess', function($event, next, current) {
 $scope.clearSearch = function () {
   $scope.search = '';
   $scope.searchDataResult = [];
-  $scope.sentenceSearches = []
+  $scope.sentenceSearches = [];
+  document.getElementById("searchTyping").focus();
 };
 
 $scope.saveNoted = function(event, word) {
@@ -179,7 +180,6 @@ $scope.Idx_n_L_WSp_ = function (event) {
   
   for (var i = 0; i < searchData.length; i++) {
     var wordFull = searchData[i]
-
     var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
 
     if (word === wordFormed || Helper_IsFormOfWord(word, wordFormed)) {

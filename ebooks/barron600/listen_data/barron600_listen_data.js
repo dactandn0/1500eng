@@ -20,7 +20,7 @@ Khi nhìn vào một cái cây, bạn có thể chỉ thấy cành và lá. Nhì
  Lợi ích của cây cũng mở rộng đến động vật dưới nước. Bóng râm từ cây giúp nước mát, bảo vệ động vật dưới nước khỏi sức nóng của mặt trời mùa hè.\
  Rễ cây bám chặt vào đất, giúp đất không bị xói mòn do mưa. Đây là biện pháp bảo vệ môi trường sống dưới nước, vì nó ngăn đất chảy vào sông và gây ô nhiễm.\
  Rõ ràng là cây rất quan trọng. Nếu rừng biến mất do khai thác gỗ hoặc các hoạt động khác, tác động đến môi trường sẽ rất lớn."
-,voca:"Squirrels,aquatic,defend,environment,eroded,extend,habitats,impacts,logging,migratory,nocturnal,polluting,terrestrial,vanish,closer,a great deal more going on,beneath,protects[+from],prevents[+from],Clearly,hold on to",
+,voca:"Squirrels,aquatic,defend,environment,eroded,extend,habitats,impacts,logging,migratory,nocturnal,polluting,terrestrial,vanish,closer,a great deal more going on,beneath,protects,prevents,Clearly,hold on to",
 },
 {
 unit:"1",

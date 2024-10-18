@@ -39,11 +39,11 @@
 	          		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi && showText""></p>
 	          	</div>
 
-	          	<hr ng-if="story.vocaNotes.length">	
+	          	<hr ng-if="story.note.length">	
 	          	
-	        	<div class="px-2" ng-if="story.vocaNotes.length">
-	        		<p class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
-	          			{{note}}
+	        	<div class="px-2" ng-if="story.note.length">
+	        		<p class="mb-1" ng-repeat="sen in story.note track by $index">
+	          			{{sen}}
 	          		</p>
 	          	</div>
 	          	

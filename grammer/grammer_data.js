@@ -80,8 +80,7 @@ It’s time + to do S.TH<br>\
 - It's the villa that he had to spend a lot of money last year.<br>\
 29. Had better + V(infinitive): nên làm gì....<br>\
 - You had better go to see the doctor.<br>\
-30. hate/ like/ dislike/ enjoy/ avoid/ finish/ mind/ postpone/ practise/ consider/ delay/ deny/ suggest/ risk/ <br>\
-keep/ imagine/ fancy + V-ing<br>\
+30. hate/ like/ dislike/ enjoy/ avoid/ finish/ mind/ postpone/ practise/ consider/ delay/ deny/ suggest/ risk/ keep/ imagine/ fancy + V-ing<br>\
 - I always practise speaking English everyday.<br>\
 31. It's + a + ( for S.B ) + to do S.TH<br>\
 - It's difficult for old people to learn English.<br>\

@@ -61,7 +61,7 @@ function ngClickOnWord(word, graph) {
 	const tagOpen = '<span ng-click="Idx_n_L_WSp_($event)">'
 	if (ValidateWord(word) 
 		&& word !=='br'
-		&& word !=='hr' 
+		&& word !=='hr'
 		&& UNCOUNT_TAG_BEGIN.indexOf(word) === -1
 		&& tagOpen.indexOf(word) === -1
 		) 
@@ -103,10 +103,7 @@ function processStory (story) {
 			dones.push(word);
 		}
 	}
-
-	
 	return story;
-
 }
 
 function removeVietnameseTones(str) {
@@ -152,9 +149,11 @@ function deleteLastWord(splitChar, string) {
 
 function ValidateWord(word, minL = 2) 
 {	
+	var exceptTag = 'bui'   // allow <B><u><i> in story.en Data
 	var result = true;
 	word = word.trim().toLowerCase();
-	if (word.length <= 1) return false;
+
+	if (exceptTag.indexOf(word) !== -1) return false;
 	if (!isAsciiString(word)) result = false;
 
 	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];
@@ -218,7 +217,6 @@ function Helper_GetVocaFromWordFull(wordFull) {
   	  	result = result + " " + part;
   	  else break;
   }
-   
   return result.trim();
 }
 
@@ -235,7 +233,8 @@ function ArrayRemove(arr, eleName) {
 }
 
 function Helper_RemoveHTMLtag(input) {
-	return input.replace(/(<([^>]+)>)/ig, '')
+	var rrr = input.replace(/(<([^>]+)>)/ig, '')
+	return	rrr;
 }
 
 Helper_Speak = function (event, txt) {
@@ -250,7 +249,6 @@ Helper_ngClickWordSpeak = function (event) {
 
 function Text2Speech(word) {
 	if (!UtterEnd) return;
-
 	 speechSynthesis.getVoices();
 	 const utter = new SpeechSynthesisUtterance(word);
 	 utter.text = word;

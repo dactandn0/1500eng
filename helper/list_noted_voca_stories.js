@@ -34,4 +34,4 @@ function doList(ebook) {
 	}
 }
 
-if (!HELPER_FOR_TEST) doList(barron);
+if (HELPER_FOR_TEST) doList(barron);

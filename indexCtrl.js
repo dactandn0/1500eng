@@ -233,8 +233,9 @@ $scope.fetchSentences = function(wordFull) {
   if (word==='') return 0;
 
   var word_s_es = Helper_N_V_Add_S_ES(word);
+  var word_ing = Helper_N_V_Add_ING(word);
 
-  var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b(${word}|${word_s_es})\b.*?[\?|\.|!"]+?`, 'gi');
+  var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b(${word}|${word_s_es}|${word_ing})\b.*?[\?|\.|!"]+?`, 'gi');
   
   var shuffleStories = shuffle(kAllStories);
   

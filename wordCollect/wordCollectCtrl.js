@@ -44,7 +44,9 @@ $scope.acc_click = function (id) {
 	if (element) {
 		var arr = element.en.split("<br>");
 		for (var i = 0; i < arr.length; i++) {
-			$scope.words.push(Helper_SliceHalfString(arr[i]))
+			var  word = arr[i];
+			word = Helper_IsUncountNoun(word)
+			$scope.words.push(Helper_SliceHalfString(word))
 		}
 		_scrollIntoView(id);
 		localStorage.setItem("w3000_idx", id);

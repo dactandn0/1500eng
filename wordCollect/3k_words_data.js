@@ -363,6 +363,17 @@ Desertification (n) /di z3:tifi'kexfn/ sự sa mạc hóa<br>\
 Desert (n) /ˈdezərt/ sa mạc<br>\
 Endangered (a) /in'deindzǝd/ gặp nguy hiểm<br>\
 Sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
+spectacular (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
+majestic (a) /məˈdʒestɪk/ hùng vĩ, đẹp mắt<br>\
+serene (a) /səˈriːn/ êm đềm, thanh thản<br>\
+incredible (a) /ɪnˈkredəbl/ đáng khinh ngạc<br>\
+fantastic (a) /fænˈtæstɪk/ tuyệt vời<br>\
+mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
+wonderful (a) /ˈwʌndərfl/ tuyệt vời, phi thường<br>\
+magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
+stunning (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
+breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt<br>\
+Sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
 Extinction (n) /Ik'stinkfn/ sự tuyệt chủng<br>\
 Extinct (a) /Ik'stink/ bị tuyệt chủng"
 },
@@ -1703,7 +1714,7 @@ Dam (n) /dæm/ Đập (thủy điện)<br>\
 Power plant (n) /ˈpaʊər plænt/ Nhà máy điện<br>\
 Transformer (n) /trænsˈfɔːrmər/ Máy biến thế<br>\
 Heat (v) /hiːt/ Sưởi ấm, làm nóng<br>\
-Natural gas (n) /ˈnætʃərəl ɡæs/ Khí tự nhiên<br>\
+Natural gas (n) /ˈnætʃrəl ɡæs/ Khí tự nhiên<br>\
 Solar power (n) /ˈsoʊlər ˈpaʊər/ Năng lượng mặt trời",
 },
 {
@@ -1895,7 +1906,6 @@ Colorful (a) /ˈkʌlərfl/ Đầy màu sắc<br>\
 Lively (a) /ˈlaɪvli/ Sống động<br>\
 Bridge (n) /brɪdʒ/ Cây cầu<br>\
 Sunset (n) /ˈsʌnset/ hoàng hôn, lúc già yếu<br>\
-Stunning (a) /ˈstʌnɪŋ/ Kinh ngạc<br>\
 Atmosphere (n) /ˈætməsfɪr Bầu không khí<br>\
 Suburban (a) /səˈbɜːrbən/ Ngoại ô<br>\
 On the outskirts = In the suburbs<br>\

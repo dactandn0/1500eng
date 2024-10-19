@@ -886,7 +886,7 @@ nest nest<br>\
 origin origin<br>\
 reject reject<br>\
 silence silence<br>\
-stream stream<br>\
+stream (n) /striːm/ suối<br>\
 tone  tone <br>\
 accomplish hoàn thành<br>\
 approve phê duyệt<br>\

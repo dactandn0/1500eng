@@ -35,13 +35,29 @@ mathematics,moonlight,methane,metal,mayonnaise,mud,mist,motivation,motherhood,me
 obesity,oxygen,passion,parking,pressure,perfume,physics,psychology,peel,pepper,patience,permission,philosophy,plastic,production,pollution,pleasure,\
 pork,petrol,pronunciation,pride,policy,purity,poverty,punctuation,power,produce,protection,publicity,pasta,pay,pain,painting,quartz,quality,quantity,\
 reliability,rum,recreation,reality,revenge,racism,relief,relaxation,religion,salad,scaffolding,soil,satisfaction,satire,security,sorrow,seafood,speed,\
-scenery,sewing,space,software,seaside,stream,stupidity,shopping,stress,shame,spite,silence,sunshine,sleep,status,success,soup,smoking,silver,symmetry,\
+scenery,sewing,space,software,seaside,streaming,stupidity,shopping,stress,shame,spite,silence,sunshine,sleep,status,success,soup,smoking,silver,symmetry,\
 spaghetti,spelling,soap,sport,stuff,smoke,tolerance,thirst,technology,trousers,tennis,trade,timber,turbulence,toothpaste,traffic,toast,thunder,transportation,\
 trust,trouble,temperature,understanding,usage,underwear,unemployment,unity,violence,veal,environment,\
 validity,vitality,vision,vegetation,vegetarianism,vengeance,warmth,weight,whiskey,weather,wildlife,welfare,wine,wisdom,wealth,wheat,wool,width,yoga,\
 youth,yeast,zoology,zinc";
 
 const NGUYEN_AM = 'ueoai'
+
+function Helper_IsUncountNoun(wordInput) {
+	var word = wordInput
+	if (wordInput.indexOf(" ") >= 0)
+	{
+		word = wordInput.split(" ")[0]
+	}
+	var regex = new RegExp(`\\b${word}\\b` , 'g')
+	var matches = UNCOUNT_NOUNS.match(regex);
+
+	if (matches && matches.length > 0) {
+		wordInput = wordInput.replace(word, UNCOUNT_TAG_BEGIN+word+UNCOUNT_TAG_END)
+		console.log(wordInput)
+	}
+	return wordInput;
+}
 
 function Helper_N_V_Add_S_ES(words) {
 

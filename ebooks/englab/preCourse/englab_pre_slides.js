@@ -347,13 +347,7 @@ The best tennis players prefer to play on grass courts rather than clay courts.<
 	,voca:"Moreover, in short,as a result,for instance,pitch,court,course,precious",
 },
 {
-	data:"",
-	title:"Pros & Cons of city you live in",
-	en:""
-	,voca:"",
-},
-{
-	unit:"Pro",
+	unit:"",
 	title:"Pros & Cons of city you live in",
 	en:"Pros:<br>\
 Fantastic, long beach. Walkable promenade next to the beach. I walk here every day.<br>\
@@ -394,5 +388,64 @@ Nếu bạn là người thành phố lớn, bạn có thể sẽ thấy hơi ch
 <br>\
 Điều này có thể không phải là vấn đề lớn, nhưng tôi thấy rằng so với Thái Lan, có vẻ như có nhiều vụ lừa đảo khách du lịch hơn ở Việt Nam nói chung. Rất nhiều nhà hàng Nhật Bản sẽ tính thêm tiền nếu bạn là người nước ngoài và không kiểm tra hoặc thậm chí không quan tâm. Tôi đã gặp một số điều không may trên Airbnb cho đến nay, và hầu hết thời gian, chủ nhà sẽ làm những trò thông thường, như từ chối hoàn lại tiền, yêu cầu tôi hủy trước, đề nghị đưa bạn đến một trong những nơi 'khác' của họ, thường tệ hơn nhiều, v.v. Nhìn chung, có vẻ như người Việt Nam tập trung nhiều hơn vào việc kiếm tiền từ bạn theo bất kỳ cách nào họ có thể so với người Thái. Tôi nghĩ điều này được khuếch đại ở Đà Nẵng vì đây là một điểm đến du lịch rất nổi tiếng. Không phải là một sự phá vỡ thỏa thuận lớn nhưng theo tôi, đây là điều cần lưu ý."
 	,voca:"",
-}
+},
+{
+	date:"14/10/2024",
+	title:"[W] About Da Nang && Connectors",
+	en:"Connectors: (liên kết các câu)<br>\
+Ví dụ: <br>\
+For example, S + V / <br>\
+For instance, S + V/ <br>\
+In reality, S + V, / <br>\
+In + X (in Vietnam, people are very friendly…..)<br>\
+Indeed, (thật vậy)<br>\
+<br>\
+Giải thích: <br>\
+To explain further, S + V <br>\
+To elaborate, S + V<br>\
+In other words, S + V<br>\
+<br>\
+Lý do: <br>\
+This is because S + V<br>\
+The reason is that S + V<br>\
+This is due to the fact that S + V<br>\
+<br>\
+Kết quả: <br>\
+As a result, S + V<br>\
+This can make + N + V<br>\
+This can help + N + to do something <br>\
+Consequently,<br>\
+As a consequence, <br>\
+So"
+	,vi:""
+	,voca:"",
+},
+{
+	date:"18/10/2024",
+	title:"[S] Sport && Area of Natural beauty ",
+	en:"<u>Sport</u><br>I would like to talk about my favorite sport, which is football, the king of sport to everyone in Vietnam. It’s absolutely great!<br>\
+You can play it in so many places, inside, in a pitch or a stadium, or outside, in a park.<br>\
+The rules of football are really easy/simple. You play in teams of … people. You have to kick the ball into the opponent's net (lưới của đối thủ).<br>\
+Players can use any part of their body except(ngoại trừ) their hands and arms, although the goalkeeper is an exception as they can use their hands within the penalty area. The team with the most goals at the end of the match wins.<br>\
+I love this sport for several reasons: First, ... Second,... Last but not least, ...<br><br>\
+<u>Area of natural beauty</u><br>\
+One special place of natural beauty that I would like to talk about is Ha Long Bay. Ha Long Bay is located in the northern part of Vietnam, in Quang Ninh province. It is famous for its stunning limestone islands that rise out of the emerald-green water. The bay has thousands of small islands, some with caves and beaches, and the scenery is really breathtaking.<br>\
+<br>\
+I have been to Ha Long Bay once, during a family trip. We took a boat tour around the bay and stopped at some of the islands to explore the caves. The water was calm, and the atmosphere was peaceful. I remember how quiet and beautiful it was, with the sun setting behind the rocks, making everything glow.<br>\
+<br>\
+Ha Long Bay is special to me because of its natural beauty and how peaceful it felt. It’s also a place where I felt really connected to nature. Being there made me feel relaxed and happy.\
+It’s a perfect place to escape from the busy city life and enjoy something truly unique.<br><br>\
+<b>Voca</b><br>\
+spectacular (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
+majestic (a) /məˈdʒestɪk/ hùng vĩ, đẹp mắt<br>\
+serene (a) /səˈriːn/ êm đềm, thanh thản<br>\
+incredible (a) /ɪnˈkredəbl/ đáng khinh ngạc<br>\
+fantastic (a) /fænˈtæstɪk/ tuyệt vời<br>\
+mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
+wonderful (a) /ˈwʌndərfl/ tuyệt vời, phi thường<br>\
+magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
+stunning (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
+breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt"
+	,voca:"",
+}	
 ]

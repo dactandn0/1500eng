@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-toastr@2/dist/angular-toastr.css">
 
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script type="text/javascript" src="helper/chia_so_nhieu_dong_tu.js"></script>
+  <script type="text/javascript" src="helper/form_of_word.js"></script>
 
   <script type="text/javascript" src="global_js.js"></script>
   <script type="text/javascript" src="helper/wordNoted.js"></script>
@@ -124,11 +124,11 @@
             <i class="fa fa-save"></i>
         </button>
 
-        <span ng-bind-html="word.p1"
+        <span compile="word.p1"
           ng-click="Index_Speak($event, word.full)"
         ></span>
 
-        <span ng-bind-html="word.p2"
+        <span compile="word.p2"
           ng-click="showExampleModal(word.full, $event)"
         ></span>
 

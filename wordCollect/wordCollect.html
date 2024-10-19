@@ -14,13 +14,13 @@
 	        </button>	
 
 	   		<span 
-	   		ng-bind-html="word.p1" 
+	   		compile="word.p1" 
 	   		ng-click="Index_Speak($event, word.full)"
 	   		class="ml-2"
 	   		></span>
 
 	   		<span 
-	   		ng-bind-html="word.p2"
+	   		compile="word.p2"
 	   		ng-click="showExampleModal(word.full, $event)"
 	   		class="mb-1"
 	   		></span>

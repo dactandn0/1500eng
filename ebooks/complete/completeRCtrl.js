@@ -4,7 +4,7 @@ document.write('<script src="./ebooks/complete/read_data/complete_read_data.js" 
 var app = angular.module("completeRApp", []);
 app.controller("completeRCtrl", function($scope, $timeout) {
 
-var kSTORIES = complete_read_data;
+var kSTORIES = complete_read_data.reverse();
 
 $scope.fullTitles = [];
 $scope.story = '';

@@ -4,7 +4,7 @@ document.write('<script src="./ebooks/barron600/read_data/barron600_read_data.js
 var app = angular.module("barron600RApp", []);
 app.controller("barron600RCtrl", function($scope, $timeout) {
 
-var kSTORIES = barron600_read_data;
+var kSTORIES = barron600_read_data.reverse();
 
 $scope.fullTitles = [];
 $scope.story = '';

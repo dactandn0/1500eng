@@ -5,7 +5,7 @@ var app = angular.module("preCourseApp", []);
 app.controller("preCourseCtrl", function($scope, $timeout) {
 
 
-var kSTORIES = ENGLAB_PRE_SLIDES;
+var kSTORIES = ENGLAB_PRE_SLIDES.reverse();
 
 $scope.fullTitles = [];
 $scope.story = '';
@@ -33,6 +33,7 @@ $scope.fetchStory = function () {
 		var ele = title + ' (' + date + ')'
 		$scope.fullTitles.push(ele);
 	}
+
 }
 
 $scope.loadData = function () {

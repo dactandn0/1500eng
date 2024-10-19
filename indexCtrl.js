@@ -1,5 +1,6 @@
 // for list_noted_voca USE
-var VocaToUI = WORDS_3K_DATA.concat(IELTS_5K_DATA)
+var VocaToUI = WORDS_3K_DATA
+  //  .concat(IELTS_5K_DATA)
     .concat(word_4000_data)
     .concat(VOCA_SPECIAL)
 
@@ -149,6 +150,7 @@ $scope.searchTyping = function() {
     	var dataVN = searchData[i];
     	data = removeVietnameseTones(dataVN.toLowerCase());
     	if (data.includes(search)) {
+        dataVN = Helper_IsUncountNoun(dataVN)
     		$scope.searchDataResult.push(Helper_SliceHalfString(dataVN));
     	}
     }
@@ -168,8 +170,8 @@ $scope.findSameWord = function() {
   }
 }
 
-$scope.Index_Speak = function (event, word, fullSentence = false) {
-  Helper_Speak(event, word, fullSentence);
+$scope.Index_Speak = function (event, word) {
+  Helper_Speak(event, word);
 }
 
 // click word to speech
@@ -203,7 +205,7 @@ $scope.showExampleModal = function(wordFull, event) {
           message: 'This is alert message!',
           type: 'danger',
           dataSent: sentences,
-          wordFull: wordFull
+          wordFull: Helper_RemoveHTMLtag(wordFull)
       });
     
   };
@@ -226,7 +228,6 @@ $scope.showConfirmModal = function(wordFull, event) {
 
 // wordFull like:  Sea n /siː/ Biển
 $scope.fetchSentences = function(wordFull) {
-  
   var word = Helper_GetVocaFromWordFull(wordFull);
 
   if (word==='') return 0;

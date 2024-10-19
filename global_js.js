@@ -23,7 +23,7 @@ RANGE = function(min, max, step) {
 };
 
 document.write('<small class="note">\
-	<span class="text-danger">uncount.n</span> <br>\
+	' + UNCOUNT_TAG_BEGIN + 'uncount.n' + UNCOUNT_TAG_END + ' <br>\
 	<u>u:</u> n = v<br>\
 	</small>'
 	);
@@ -31,6 +31,7 @@ document.write('<small class="note">\
 var arrBOTH_COUNT_UNCOUNT = [];
 var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
+
 function longStrToArray(long_txt, deter = ',') {
 	var arr  = long_txt.replace(/\s*\,\s*/g, ",");
 	arr = arr.split(deter);
@@ -41,7 +42,6 @@ function longStrToArray(long_txt, deter = ',') {
 function preprocess() {
 	arrUNCOUNT_NOUNS = longStrToArray(UNCOUNT_NOUNS);
 	arrNOUN_SAME_VERBS = longStrToArray(NOUN_SAME_VERBS);
-
 };
 
 function isInArr(ele, arr) {
@@ -154,6 +154,7 @@ function ValidateWord(word, minL = 2)
 {	
 	var result = true;
 	word = word.trim().toLowerCase();
+	if (word.length <= 1) return false;
 	if (!isAsciiString(word)) result = false;
 
 	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];
@@ -208,6 +209,7 @@ function isAsciiString(text) {
 } 
 
 function Helper_GetVocaFromWordFull(wordFull) {
+  wordFull = Helper_RemoveHTMLtag(wordFull);
   var splitW = wordFull.trim().split(" ");
   var result = "";
   for (var i = 0; i < splitW.length; i++) {
@@ -232,43 +234,32 @@ function ArrayRemove(arr, eleName) {
 	});
 }
 
-Helper_Speak = function (event, txt, fullSentence) {
+function Helper_RemoveHTMLtag(input) {
+	return input.replace(/(<([^>]+)>)/ig, '')
+}
 
-	//if (!UtterEnd) return;
-
+Helper_Speak = function (event, txt) {
 	var target = Helper_GetVocaFromWordFull(txt);
-	if (fullSentence) target = txt.replace(/(<([^>]+)>)/ig, '');
-
-	 speechSynthesis.getVoices();
-	 const utter = new SpeechSynthesisUtterance(target);
-	 utter.text = target;
-	 utter.rate  = Helper_AudioSpeed;
-	 utter.lang='en-US';
-
-	 utter.addEventListener('end', (evt) => {
-  		const { charIndex, utterance } = evt
-  			UtterEnd = true;
-		})
-
-	 speechSynthesis.speak(utter);
-	 UtterEnd = false;
+	Text2Speech(target)
 }
 
 Helper_ngClickWordSpeak = function (event) {
+	var target = event.target.innerText;
+	Text2Speech(target)
+}
 
+function Text2Speech(word) {
 	if (!UtterEnd) return;
 
-	var target = event.target.innerText;
-
 	 speechSynthesis.getVoices();
-	 const utter = new SpeechSynthesisUtterance(target);
-	 utter.text = target;
+	 const utter = new SpeechSynthesisUtterance(word);
+	 utter.text = word;
 	 utter.rate  = Helper_AudioSpeed;
 	 utter.lang='en-US';
 
 	 utter.addEventListener('end', (evt) => {
-  		const { charIndex, utterance } = evt
-  			UtterEnd = true;
+			const { charIndex, utterance } = evt
+				UtterEnd = true;
 		})
 
 	 speechSynthesis.speak(utter);

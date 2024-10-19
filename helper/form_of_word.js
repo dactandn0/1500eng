@@ -49,12 +49,11 @@ function Helper_IsUncountNoun(wordInput) {
 	{
 		word = wordInput.split(" ")[0]
 	}
-	var regex = new RegExp(`\\b${word}\\b` , 'g')
+	var regex = new RegExp(`\\b${word}\\b` , 'gi')
 	var matches = UNCOUNT_NOUNS.match(regex);
 
 	if (matches && matches.length > 0) {
 		wordInput = wordInput.replace(word, UNCOUNT_TAG_BEGIN+word+UNCOUNT_TAG_END)
-		console.log(wordInput)
 	}
 	return wordInput;
 }

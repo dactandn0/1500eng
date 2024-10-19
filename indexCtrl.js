@@ -49,12 +49,6 @@ app.config(function($routeProvider) {
       .when('/grammer', {
         templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'
       }) 
-      .when('/ebooks', {
-        templateUrl: 'ebooks/ebooks.html',
-      })         
-      .when('/englab', {
-        templateUrl: 'ebooks/englab/englab.html',
-      })    
       .when('/bridgeL', {
         templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'
       })

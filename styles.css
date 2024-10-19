@@ -123,3 +123,15 @@ background-color: #a55;
 .toast  {
 	 opacity: 1 !important;
 }
+
+.tan-drop-custom {
+	background-color: inherit !important;
+	border: none !important;
+	text-align: right !important;
+
+}
+
+.tan-drop-custom >  a.dropdown-item{
+	color: rgba(255,255,255,.5);
+
+}

@@ -4,7 +4,7 @@ document.write('<script src="./ebooks/bridge/read_data/bridge_read_data.js" type
 var app = angular.module("bridgeRApp", ['ngSanitize']);
 app.controller("bridgeRCtrl", function($scope, $timeout) {
 
-var kSTORIES = bridge_read_data.reverse();
+var kSTORIES = bridge_read_data;
 
 $scope.story = '';
 $scope.fullTitles = [];

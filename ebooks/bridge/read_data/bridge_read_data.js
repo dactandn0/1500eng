@@ -132,4 +132,4 @@ The aboriginal people introduced the dingo, a kind of wild dog, but they have su
 [C] Những thay đổi này đã dẫn đến sự mất mát của nhiều loài động vật và thực vật. Mười tám loài động vật có vú đã tuyệt chủng bao gồm hổ Tasmania và chuột túi sa mạc. Ít nhất ba mươi loài đã trở nên nguy cấp và có nguy cơ tuyệt chủng. Người châu Âu cũng mang theo nhiều loài động vật không phải bản địa, hiện đã chạy hoang dã. Chúng bao gồm cáo và mèo đã trở thành mối nguy hiểm đối với các loài động vật có vú và chim bản địa nhỏ. Thỏ đã phá hủy các vùng đất rộng lớn và trâu nước đã gây ra thiệt hại về môi trường ở các con sông. Người bản địa đã du nhập chó dingo, một loại chó hoang, nhưng chúng đã thích nghi thành công và trở thành một phần của loài bản địa."
 ,voca:"",
 }
-];
+].reverse();

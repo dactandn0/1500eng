@@ -265,4 +265,4 @@ Cuộc đời ngắn ngủi nhưng ngoạn mục. Chim ăn ong châu Âu sống 
 Bởi Bruce Barcott, tạp chí National Geographic, 2008"
 	,voca:"tunnels,chicks,prey,pesticides,migration,diet,breed,flock,predators",
 }
-];
+].reverse();

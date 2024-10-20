@@ -5,7 +5,7 @@ var app = angular.module("preCourseApp", []);
 app.controller("preCourseCtrl", function($scope, $timeout) {
 
 
-var kSTORIES = ENGLAB_PRE_SLIDES.reverse();
+var kSTORIES = ENGLAB_PRE_SLIDES;
 
 $scope.fullTitles = [];
 $scope.story = '';

@@ -444,8 +444,8 @@ fantastic (a) /fænˈtæstɪk/ tuyệt vời<br>\
 mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
 wonderful (a) /ˈwʌndərfl/ tuyệt vời, phi thường<br>\
 magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
-stunning (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
+stunning (a) /ˈstʌnɪŋ/ kinh ngạc, tuyệt vời<br>\
 breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt"
 	,voca:"",
 }	
-]
+].reverse();

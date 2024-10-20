@@ -58,42 +58,46 @@
 <body ng-app="myApp">
     <div ng-controller="indexCtrl" class="container mt-4" ng-cloak>
 
-      <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark justify-content-end px-4">
+   <nav class="navbar navbar-expand-lg fixed-top justify-content-end navbar-light" style="background-color: #33aabb;">
     <a class="navbar-brand mr-auto" ng-href="#/!"><i class="fa fa-lg fa-language"></i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarSupportedContent"  data-toggle="collapse" data-target="#navbar-collapse">
-        <ul class="navbar-nav text-right">
-            <li class="nav-item "><a class="nav-link" ng-href="#!lptd">LPTD</a></li>
-            <li class="nav-item "><a class="nav-link" ng-href="#!book4k">4kWords</a></li>
-              <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle nav-link" href="#" id="navbardrop" data-toggle="dropdown">
-        Ebooks
-      </a>
-      <div class="tan-drop-custom dropdown-menu">
-        <a class="dropdown-item" ng-href="#!bridgeL">Bridge</a>
-        <a class="dropdown-item" ng-href="#!completeL">Complete</a>
-        <a class="dropdown-item" ng-href="#!barron600L">Barron600</a>
-        <a class="dropdown-item" ng-href="#!sampleSpeaking">Speaking</a>
-        <a class="dropdown-item" ng-href="#!preCourse">PreCourse</a>
-      </div>
-    </li>
-            <li class="nav-item "><a class="nav-link" ng-href="#!grammer">Grammer</a></li>
-            <li class="nav-item "><a class="nav-link" href="#!vocaNoted">Voca</a></li>
-        </ul>
-    </div>
-</nav>
 
-      <div class="input-group my-3">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" ng-href="#!lptd">LPTD</a></li>
+        <li class="nav-item"><a class="nav-link" ng-href="#!book4k">4kWords</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" ng-href="#!lptd" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ebooks
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" ng-href="#!bridgeL">Bridge</a>
+            <a class="dropdown-item" ng-href="#!completeL">Complete</a>
+            <a class="dropdown-item" ng-href="#!barron600L">Barron600</a>
+            <a class="dropdown-item" ng-href="#!sampleSpeaking">Speaking</a>
+            <a class="dropdown-item" ng-href="#!preCourse">PreCourse</a>
+          </div>
+        </li>
+        <li class="nav-item "><a class="nav-link" ng-href="#!grammer">Grammer</a></li>
+        <li class="nav-item "><a class="nav-link" href="#!vocaNoted">Voca</a></li>
+      </ul>
+
+   <!--    <form class="form-inline my-lg-0">
+
+      </form> -->
+    </div>
+  </nav>
+
+        <div class="input-group">
         <input type="text"
           id="searchTyping"
-        	class="form-control" 
-        	ng-change="searchTyping()" 
-        	ng-model="search" 
-        	placeholder="Search..."
-        	>  
+          class="form-control" 
+          ng-change="searchTyping()" 
+          ng-model="search" 
+          placeholder="Search..."
+          >  
 
         <div class="input-group-append">
           <button class="btn" 
@@ -112,8 +116,7 @@
             ng-click="clearSearch()">
           <i class="fa fa-close"></i></button>
         </div>
-
-      </div>
+       </div> <!-- form-search -->
 
       <div class="text-sm my-1" 
         ng-repeat="sen in sentenceSearches | limitTo:-3 track by $index">

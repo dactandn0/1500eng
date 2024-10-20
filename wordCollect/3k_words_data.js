@@ -371,7 +371,7 @@ fantastic (a) /fænˈtæstɪk/ tuyệt vời<br>\
 mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
 wonderful (a) /ˈwʌndərfl/ tuyệt vời, phi thường<br>\
 magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
-stunning (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
+stunning (a) /ˈstʌnɪŋ/ kinh ngạc, tuyệt vời<br>\
 breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt<br>\
 Sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
 Extinction (n) /Ik'stinkfn/ sự tuyệt chủng<br>\
@@ -975,6 +975,8 @@ anxiety (n) /æŋˈzaɪəti/ lo lắng<br>\
 funny (a) /'fɅni/ vui tính<br>\
 honest (a) /'pnist/ thật thà<br>\
 fearless (a) /'fiǝlis/ dũng cảm<br>\
+friendly (a) /'frendli/ thân thiện<br>\
+in a friendly way (adv) thân thiện<br>\
 unfriendly (a) /n'frendli/ khó gần<br>\
 generous (a) /ˈdʒenərəs/ hào phóng<br>\
 compassionate (a) /kamipæfant/ giàu lòng trắc ẩn<br>\
@@ -1024,14 +1026,14 @@ reserved /ri'zз:vd/ kín đáo<br>\
 self-confident /self-konfident/ tự tin<br>\
 bossy /'bpsi/ hống hách<br>\
 blackguardly /'blæga:dli/ đều cảng<br>\
-silly /'sili/ ngớ ngẩn<br>\
+silly (a) /'sili/ ngớ ngẩn<br>\
+in a silly way (adv) ngớ ngẩn<br>\
 shy /Jai/ nhút nhát<br>\
 determined /di'tз:mind/ kiên định<br>\
 sociable /'sǝufǝbl/ hòa đồng<br>\
 worried /'wɅrid/ lo lắng<br>\
 thoughtful /0:tful/ chu đáo<br>\
 humble /'hɅmbl/ khiêm tốn<br>\
-friendly /'frendli/ thân thiện<br>\
 frank /frænk/ thẳng thắn<br>\
 obedient /ǝ'bi:diǝnt/ vâng lời",
 },

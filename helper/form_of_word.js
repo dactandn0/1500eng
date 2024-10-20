@@ -18,7 +18,7 @@ reply,visit,deal,keep,report,voice,decay,kick,request,vote,decrease,kiss,rhyme,w
 last,row,wear,dislike,laugh,ruin,whip,display,lead,rule,whisper,dive,leap,run,whistle,divorce,level,sail,wick,dock,license,sand,wink,double,lie,saw,wire,doubt,lift,scare,wish,drain,light,scratch,work,\
 draw,limit,screw,worry,dream,link,search,wrap,dress,load,season,wreck,drill,loan,sense,drink,lock,shampoo,yawn,drive,look,shape,yield,duck,love,share,zone,watch";
 
-const UNCOUNT_NOUNS = "advice,information,knowledge,imagination,creativity,education,intelligence,love,luck,music,air,cement,clothing,energy,glue,gold,coral,\
+const UNCOUNT_NOUNS = "advice,information,knowledge,imagination,creativity,education,intelligence,love,luck,music,air,cement,clothing,energy,glue,gold,surf,coral,\
 iron,money,oil,paper,salt,sand,steel,wood,water,gasoline,steam,sugar,vinegar,beauty,confidence,happiness,justice,peace,respect,safety,strength,time,\
 furniture,equipment,machinery,tools,weapons,lightning,rain,snow,wind,medicine,accommodation,advertising,beer,bread,childhood,chocolate,coffee,courage,\
 fame,food,freedom,fun,hair,health,homework,juice,luggage,milk,news,poetry,progress,research,rice,rubbish,tea,transport,travel,whisky,work,aggression,\
@@ -123,7 +123,14 @@ function Helper_N_V_Add_ING(words) {
 function Helper_IsFormOfWord (word, wordFormed) {
 	var add_E_ES = Helper_N_V_Add_S_ES(word).toLowerCase(); 
 	var add_ING = Helper_N_V_Add_ING(word).toLowerCase();
-	return wordFormed === add_E_ES || wordFormed === add_ING
+	var add_Ly = Helper_N_V_Add_ING(word).toLowerCase();
+	var add_ER = Helper_A_Add_ER(word).toLowerCase();
+	var add_EST = Helper_A_Add_EST(word).toLowerCase();
+	return wordFormed === add_E_ES 
+			|| wordFormed === add_ING 
+			|| wordFormed === add_Ly
+			|| wordFormed === add_ER
+			|| wordFormed === add_EST
 }
 
 function xxx () {
@@ -138,13 +145,139 @@ function xxx () {
 	}
 }
 
+function Helper_A_Add_LY(words) {
+
+	words = words.trim();
+	var word = words;
+	var rest = "";
+	// word is combine of 2,3...
+	if (words.indexOf(" ") >= 0)
+	{
+		word = words.split(" ")[0]
+		rest = words.substring(word.length)
+	}
+	var excepts = ['hard','late','fast', 'early','high','near','straight','wrong', 'wide', 'free'  // adv same adj
+	 			  ]
+	for (var i = 0; i < excepts.length; i++) {
+		if (word===excepts[i]) return word + rest
+	}
+	if (word==='public') return 'publicly' + rest
+
+	var r = /^\w+.*(y){1}$/gi.test(word)   			// end with y
+	if (r) return word.substring(0, word.length-1) + 'ily' + rest
+
+	r = /^\w+.*(able|ible|le){1}$/gi.test(word)		
+	if (r) return word.substring(0, word.length-1) + 'ly' + rest
+		
+	r = /^\w+.*(ic){1}$/gi.test(word)
+	if (r) return word + 'ally' + rest
+
+ 	// the rest
+	return word +'ly' + rest
+}
+
+function Helper_A_Add_ER(words) {
+
+	words = words.trim();
+	var word = words;
+	var rest = "";
+	// word is combine of 2,3...
+	if (words.indexOf(" ") >= 0)
+	{
+		word = words.split(" ")[0]
+		rest = words.substring(word.length)
+	}
+	var excepts = ['old','late']		// need define ss>,ssI in data.js
+	for (var i = 0; i < excepts.length; i++) {
+		if (word===excepts[i]) return word + rest
+	}
+	if (word==='good' || word==='well') return 'better' + rest
+	if (word==='bad' || word==='badly') return 'worse' + rest
+	if (word==='little') return 'less' + rest
+	if (word==='near') return 'nearer' + rest
+
+	var r = /^\w+.*(y){1}$/gi.test(word)   			// end with y
+	if (r) return word.substring(0, word.length-1) + 'ier' + rest
+
+	r = /^\w+.*(e){1}$/gi.test(word)	// end with e
+	if (r) return word + 'r' + rest
+
+	r = /^\w+.*(w|r|re|le|te|et){1}$/gi.test(word)	// end that regarded as a short or long adject
+	if (r) return word + 'er' + rest
+		
+	r = /^\w+.*[ueoai]+[^ueoai]$/gi.test(word)
+	if (r) return word + word[word.length-1]  + 'er' + rest
+
+ 	// the rest
+	return word +'er' + rest
+}
+
+// www.voca.vn/blog/so-sanh-hon-so-sanh-nhat--trong-tieng-anh-1265
+function Helper_A_Add_EST(words) {
+
+	words = words.trim();
+	var word = words;
+	var rest = "";
+	// word is combine of 2,3...
+	if (words.indexOf(" ") >= 0)
+	{
+		word = words.split(" ")[0]
+		rest = words.substring(word.length)
+	}
+	var excepts = ['old','late']   					// need define ss>,ssI in data.js
+	for (var i = 0; i < excepts.length; i++) {
+		if (word===excepts[i]) return word + rest
+	}
+	if (word==='good' || word==='well') return 'best' + rest
+	if (word==='bad' || word==='badly') return 'worst' + rest
+	if (word==='little') return 'least' + rest
+	if (word==='near') return 'nearest' + rest
+
+	var r = /^\w+.*(y){1}$/gi.test(word)   			// end with y
+	if (r) return word.substring(0, word.length-1) + 'iest' + rest
+
+	r = /^\w+.*(e){1}$/gi.test(word)	// end with e
+	if (r) return word + 'st' + rest
+	
+	r = /^\w+.*(w|r|re|le|te|et){1}$/gi.test(word)	// end that regarded as a short or long adject
+	if (r) return word + 'est' + rest
+
+	r = /^\w+.*[ueoai]+[^ueoai]$/gi.test(word)   // except near
+	if (r) return word + word[word.length-1]  + 'est' + rest
+
+ 	// the rest
+	return word +'est' + rest
+}
+
+
+
+function testEST(word) {
+	console.log(Helper_A_Add_EST(word))
+}
+
+function testLy(word) {
+	console.log(Helper_A_Add_LY(word))
+}
+
 function testS(word) {
 	console.log(Helper_N_V_Add_S_ES(word))
 }
+
 function testIng(word) {
 	console.log(Helper_N_V_Add_ING(word))
 }
-//testS('Squirrel')
+
+
+// testEST('funny')
+// testEST('small')
+// testEST('bad')
+// testEST('near')
+// testEST('bad')
+// testEST('slowly')
+// testEST('slowly')
+// testEST('narrow')
+
+
 //testS('Nutrient')
 /*
  testIng("Fix")

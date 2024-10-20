@@ -72,12 +72,23 @@ represent đại diện<br>\
 shake lắc<br>\
 spread (v) /spred/ lan truyền<br>\
 stroll (n,v) đi dạo<br>\
-aware nhận thức<br>\
-badly tệ<br>\
+aware (a)  /əˈwer/ nhận thức<br>\
+little (a,adv) /ˈlɪtl/ chút ít (less)<br>\
+badly (adv) tệ, bậy bạ<br>\
 belong thuộc về<br>\
 continue tiếp tục<br>\
+far (adv) xa<br>\
+farther (adv) xa (ss hơn của Far (khoảng cách))<br>\
+farthest (adv) xa (ss nhất của Far (khoảng cách))<br>\
+further (adv) xa (ss hơn của Far (khoảng cách hoặc thời gian))<br>\
+furthest (adv) xa (ss nhất của Far (khoảng cách hoặc thời gian))<br>\
+old (a) xưa, cũ, cổ, già<br>\
+older (a) ss hơn của Old (về tuổi tác)<br>\
+oldest (a) ss nhất của Old (về tuổi tác)<br>\
+elder (a) ss hơn của Old (về cấp bậc)<br>\
+eldest (a) ss nhất của Old (về cấp bậc)<br>\
 error lỗi<br>\
-experience kinh nghiệm<br>\
+experience (n) /ɪkˈspɪriəns/ kinh nghiệm<br>\
 field lĩnh vực<br>\
 hurt tổn thương<br>\
 judgment phán đoán<br>\
@@ -373,7 +384,6 @@ excellent xuất sắc<br>\
 hero anh hùng<br>\
 hurry vội vã<br>\
 inform thông báo<br>\
-later sau<br>\
 leaves (n) lá (plural of leaf) <br>\
 leave (v) /liːv/ để lại, rời đi<br>\
 locate xác định vị trí<br>\
@@ -437,7 +447,7 @@ task nhiệm vụ<br>\
 term thuật ngữ<br>\
 unite  đoàn kết<br>\
 associate liên kết<br>\
-environment môi trường<br>\
+environment (n) /ɪnˈvaɪrənmənt/ môi trường<br>\
 factory nhà máy<br>\
 feature tính năng<br>\
 instance trường hợp<br>\
@@ -454,7 +464,8 @@ regular thường xuyên<br>\
 sign dấu hiệu<br>\
 tradition truyền thống<br>\
 trash rác<br>\
-wide rộng<br>\
+wide (a,adv) rộng<br>\
+widely (a,adv) rộng rãi, xa (cách)<br>\
 advice lời khuyên<br>\
 along dọc<br>\
 attention chú ý<br>\
@@ -512,6 +523,17 @@ advertise quảng cáo<br>\
 assign (v) /əˈsaɪn/ giao<br>\
 audience khán giả<br>\
 breakfast bữa sáng<br>\
+fast (a,adv) nhanh<br>\
+hardly (adv) hầu(gần) như không<br>\
+hard (a,adv) chăm chỉ, khó tánh<br>\
+free (a,adv) miễn phí, rãnh<br>\
+freely (adv) tự do, khỏi trả tiền<br>\
+late (a,adv) trễ, muộn<br>\
+later (a,adv) trễ, muộn hơn (so sánh hơn của Late)<br>\
+latest (a) muộn nhất, mới nhất, gần nhất (so sánh nhất của Late)<br>\
+last (v,a) kéo dài, cuối cùng<br>\
+recently (adv) gần đây<br>\
+lately (adv) gần đây<br>\
 competition cuộc thi<br>\
 cool mát mẻ<br>\
 gain tăng<br>\
@@ -608,7 +630,8 @@ disturb làm phiền<br>\
 estimate ước tính<br>\
 honor vinh dự<br>\
 impress gây ấn tượng<br>\
-marathon,narrow marathon,hẹp<br>\
+marathon (a) /ˈmærəθɑːn/ marathon<br>\
+narrow (a) /ˈnærəʊ/ hẹp<br>\
 pale nhợt nhạt<br>\
 rough thô<br>\
 satisfy thỏa mãn<br>\
@@ -645,7 +668,8 @@ dive lặn<br>\
 exchange trao đổi<br>\
 favor ủng hộ<br>\
 forever,guy mãi mãi,anh chàng<br>\
-lovely đáng yêu<br>\
+lovely (a) đáng yêu<br>\
+in a lovely way (adv) đáng yêu<br>\
 mood tâm trạng<br>\
 palace cung điện<br>\
 permit giấy phép<br>\
@@ -1020,7 +1044,7 @@ plain đồng bằng<br>\
 reef rạn san hô<br>\
 shut đóng cửa<br>\
 strict nghiêm ngặt<br>\
-surf lướt sóng<br>\
+surf (n,v) /sɜːrf/ bọt biển, lướt sóng(website)<br>\
 zone  khu vực <br>\
 apology xin lỗi<br>\
 bold táo bạo<br>\

@@ -344,7 +344,7 @@ The match between Barcelona and Betis was cancelled because the pitch was floode
 Court: an area marked with lines where sports are played (often indoors), such as basketball, squash, tennis, etc.<br>\
 The best tennis players prefer to play on grass courts rather than clay courts.<br><br>\
 <i>golf course, basketball court, badminton court, volleyball court, football pitch</i>"
-	,voca:"Moreover, in short,as a result,for instance,pitch,court,course,precious",
+	,voca:"Moreover,In short,As a result,For instance,pitch,court,course,precious,broaden,relieve,range,In addition,entertainment",
 },
 {
 	unit:"",

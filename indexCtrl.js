@@ -112,8 +112,7 @@ $scope.clearSearch = function () {
   document.getElementById("searchTyping").focus();
 };
 
-$scope.saveNoted = function(event, word) {
-  event.target.style.borderColor = 'black';
+$scope.saveNoted = function(word) {
   word = word.trim();
   var kDatabase = Helper_FetchDB();
 
@@ -125,8 +124,10 @@ $scope.saveNoted = function(event, word) {
     if ($location.path().indexOf('vocaNoted') >=0 ) {
       VocaNotedCtrl.appendDataToUI(word);
     }
+    toastr.success("Saved: " + word);
+    $scope.clearSearch()
   } else {
-    event.target.style.borderColor = 'red';
+    toastr.error("Existed. Save failed")
   }
 }
 

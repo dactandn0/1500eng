@@ -100,6 +100,7 @@ function Helper_N_V_Add_ING(words) {
 		rest = words.substring(word.length)
 	}
 
+	if (word==='reward') return 'reward' + rest   // reward(n) # rewarding (a)
 	if (word==='be') return 'being' + rest
 
 	var r = /^\w+.*(h|w|x|y)+$/gi.test(word)

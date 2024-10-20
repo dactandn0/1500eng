@@ -15,7 +15,14 @@ finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
 moment (n) khoảnh khắc<br>\
+massive (a) /ˈmæsɪv/ to lớn<br>\
 pleased (a) vui lòng<br>\
+harmful (a) /ˈhɑːrmfl/ có hại<br>\
+environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
+mammal (n) /ˈmæml/ động vật có vú<br>\
+platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
+kangaroo (n) /ˌkæŋɡəˈruː/ chuột túi<br>\
+relevant (a) /ˈreləvənt/ liên quan<br>\
 promise hứa<br>\
 reply trả lời<br>\
 safe an toàn<br>\
@@ -94,7 +101,6 @@ hurt tổn thương<br>\
 judgment phán đoán<br>\
 likely có khả năng<br>\
 normal bình thường<br>\
-rare hiếm<br>\
 request yêu cầu<br>\
 reside cư trú<br>\
 result kết quả<br>\
@@ -186,7 +192,10 @@ image hình ảnh<br>\
 immediate ngay lập tức<br>\
 primary chính<br>\
 remain vẫn<br>\
-separate tách biệt<br>\
+uncommon (a)  /ʌnˈkɑːmən/ không phổ biến<br>\
+rare (a) /rer/ hiếm, không phổ biến<br>\
+unusual (a) /ʌnˈjuːʒəl/ hiếm có, không thông dụng<br>\
+separate (a) /ˈseprət/ tách biệt<br>\
 site trang web<br>\
 tail đuôi<br>\
 trouble  rắc rối<br>\
@@ -197,7 +206,7 @@ collect thu thập<br>\
 compete cạnh tranh<br>\
 conversation cuộc trò chuyện<br>\
 creature sinh vật<br>\
-decision quyết định<br>\
+decision (n) /dɪˈsɪʒn/ quyết định<br>\
 either hoặc<br>\
 ground mặt đất<br>\
 introduce giới thiệu<br>\
@@ -407,7 +416,8 @@ occur xảy ra<br>\
 opposite đối diện<br>\
 plate tấm<br>\
 receive nhận<br>\
-reward phần thưởng<br>\
+reward (n) phần thưởng<br>\
+rewarding (a) /rɪˈwɔːrdɪŋ/ đáng hài lòng, có ích<br>\
 set đặt<br>\
 steal trộm<br>\
 thief  kẻ trộm<br>\
@@ -514,14 +524,14 @@ own sở hữu<br>\
 predict dự đoán<br>\
 professor giáo sư<br>\
 rush vội vã<br>\
-schedule lịch trình<br>\
+schedule (n) /ˈskedʒuːl/ lịch trình<br>\
 share chia sẻ<br>\
 stage sân khấu<br>\
 storm bão<br>\
 within  trong<br>\
-advertise quảng cáo<br>\
+advertise (v) /ˈædvərtaɪz/ quảng cáo<br>\
 assign (v) /əˈsaɪn/ giao<br>\
-audience khán giả<br>\
+audience (n) /ˈɔːdiəns/ khán giả<br>\
 breakfast bữa sáng<br>\
 fast (a,adv) nhanh<br>\
 hardly (adv) hầu(gần) như không<br>\

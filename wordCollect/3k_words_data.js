@@ -637,6 +637,7 @@ Agriculture (n) /ˈæɡ.rɪ.kʌl.tʃər/ Nông nghiệp<br>\
 Peaceful (a) /ˈpiːs.fəl/ Yên bình<br>\
 Bay (n) /beɪ/ Vịnh<br>\
 Hill (n) /hɪl/ Ngọn đồi<br>\
+rainforest (n) /ˈreɪnfɔːrɪst/ Rừng mưa nhiệt đới [forest in tropical area]<br>\
 Forest (n) /ˈfɒr.ɪst/ Rừng<br>\
 Mountain (n) /ˈmaʊn.tɪn/ Núi<br>\
 Port (n) /pɔːt/ Bến cảng<br>\

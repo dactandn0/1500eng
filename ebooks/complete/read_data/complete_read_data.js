@@ -209,7 +209,7 @@ Rubik đã xin cấp bằng sáng chế cho Khối lập phương vào năm 1977
 },
 {
 	unit: 4,
-	title:"Writing Task 2",
+	title:"[W] Task 2",
 	en:"There is no doubt that modern electronic inventions have transformed people's jobs and their leisure time, so that many people spend less time taking exercise. However, it is not so certain that this has damaged their health.<br>\
 <br>\
 As far as work is concerned, office employees have always worked sitting down, and computers have not changed that. Computers have not affected physical jobs such as farming or building either, and people still do physical work like they did in the past. In fact, other machines such as washing machines and tractors, not computers, have reduced the amount of physical work people do.<br>\
@@ -264,5 +264,182 @@ Cuộc đời ngắn ngủi nhưng ngoạn mục. Chim ăn ong châu Âu sống 
 <br>\
 Bởi Bruce Barcott, tạp chí National Geographic, 2008"
 	,voca:"tunnels,chicks,prey,pesticides,migration,diet,breed,flock,predators",
+},
+{
+	unit:"5",
+	title:"Humpback whale breaks migration record",
+	en:"<i>A whale surprises researchers with her journey.</i><br>\
+A lone humpback whale travelled more than 9,800 kilometres from breeding areas in Brazil to those in Madagascar, setting a record for the longest mammal migration ever documented. Humpback whales (Megaptera novaeangliae) are known to have some of the longest migration distances of all mammals, and this huge journey is about 400 kilometres farther than the previous humpback record. The finding was made by Peter Stevick, a biologist at the College of the Atlantic in Bar Harbor, Maine. The whale's journey was unusual not only for its length, but also because it travelled across almost 90 degrees of longitude from west to east. Typically, humpbacks move in a north-south direction between cold feeding areas and warm breeding grounds and the longest journeys which have been recorded until now have been between breeding and feeding sites. The whale, a female, was first spotted off the coast of Brazil, where researchers photographed its tail fluke and took skin samples for chromosome testing to determine the animal's sex. Two years later, a tourist on a whale-watching boat snapped a photo of the humpback near Madagascar.<br>\
+<br>\
+To match the two sightings, Stevick's team used an extensive international catalogue of photographs of the undersides of tail flukes, which have distinctive markings. Researchers routinely compare the markings in each new photograph to those in the archive.<br>\
+<br>\
+The scientists then estimated the animal's shortest possible route: an arc skirting the southern tip of South Africa and heading north-east towards Madagascar. The minimum distance is 9,800 kilometres, says Stevick, but this is likely to be an underestimate, because the whale probably took a detour to feed on krill in the Southern Ocean near Antarctica before reaching its destination.<br>\
+<br>\
+Most humpback-whale researchers focus their efforts on the Northern Hemisphere because the Southern Ocean near the Antarctic is a hostile environment and it is hard to get to, explains Rochelle Constantine, who studies the ecology of humpback whales at the University of Auckland in New Zealand. But, for whales, oceans in the Southern Hemisphere are wider and easier to travel across, says Constantine. Scientists will probably observe more long-distance migrations in the Southern Hemisphere as satellite tracking becomes increasingly common, she adds.<br>\
+<br>\
+Daniel Palacios, an oceanographer at the University of Hawaii at Manoa, says that the record-breaking journey could indicate that migration patterns are shifting as populations begin to recover from near-extinction and the population increases. But the reasons why the whale did not follow the usual migration routes remain a mystery. She could have been exploring new habitats, or simply have lost her way. 'We generally think of humpback whales as very well studied, but then they surprise us with things like this,' Palacios says. 'Undoubtedly there are a lot of things we still don't know about whale migration.'<br>\
+by Janelle Weaver, published online in Nature"
+	,vi:"Một con cá voi khiến các nhà nghiên cứu ngạc nhiên với hành trình của nó.<br>\
+<br>\
+Một con cá voi lưng gù đơn độc đã di chuyển hơn 9.800 km từ các khu vực sinh sản ở Brazil đến các khu vực ở Madagascar, lập kỷ lục về cuộc di cư dài nhất của động vật có vú từng được ghi nhận. Cá voi lưng gù (Megaptera novaeangliae) được biết đến là loài có một số khoảng cách di cư dài nhất trong số tất cả các loài động vật có vú và hành trình khổng lồ này xa hơn khoảng 400 km so với kỷ lục trước đó của cá voi lưng gù. Phát hiện này được đưa ra bởi Peter Stevick, một nhà sinh vật học tại Cao đẳng Đại Tây Dương ở Bar ​​Harbor, Maine. Hành trình của con cá voi này không chỉ bất thường về độ dài mà còn vì nó di chuyển qua gần 90 độ kinh độ từ tây sang đông. Thông thường, cá voi lưng gù di chuyển theo hướng bắc-nam giữa các khu vực kiếm ăn lạnh và các bãi sinh sản ấm áp và các hành trình dài nhất được ghi nhận cho đến nay là giữa các địa điểm sinh sản và kiếm ăn. Con cá voi, một con cái, lần đầu tiên được phát hiện ngoài khơi bờ biển Brazil, nơi các nhà nghiên cứu chụp ảnh vây đuôi của nó và lấy mẫu da để xét nghiệm nhiễm sắc thể nhằm xác định giới tính của con vật. Hai năm sau, một du khách trên một chiếc thuyền ngắm cá voi đã chụp được một bức ảnh về con cá voi lưng gù gần Madagascar.<br>\
+<br>\
+Để khớp hai lần nhìn thấy, nhóm của Stevick đã sử dụng một danh mục ảnh quốc tế mở rộng về mặt dưới của vây đuôi, có các dấu hiệu đặc biệt. Các nhà nghiên cứu thường xuyên so sánh các dấu hiệu trong mỗi bức ảnh mới với các dấu hiệu trong kho lưu trữ.<br>\
+<br>\
+Sau đó, các nhà khoa học ước tính lộ trình ngắn nhất có thể của con vật: một vòng cung chạy dọc theo mũi phía nam của Nam Phi và hướng về phía đông bắc hướng tới Madagascar. Khoảng cách tối thiểu là 9.800 km, Stevick cho biết, nhưng con số này có thể bị đánh giá thấp, vì con cá voi có thể đã đi vòng để kiếm ăn ở Nam Đại Dương gần Nam Cực trước khi đến đích.<br>\
+<br>\
+Hầu hết các nhà nghiên cứu về cá voi lưng gù tập trung nỗ lực của họ vào Bán cầu Bắc vì Nam Đại Dương gần Nam Cực là môi trường khắc nghiệt và khó tiếp cận, Rochelle Constantine, người nghiên cứu về hệ sinh thái của cá voi lưng gù tại Đại học Auckland ở New Zealand, giải thích. Nhưng đối với cá voi, đại dương ở Nam Bán cầu rộng hơn và dễ di chuyển hơn, Constantine cho biết. Bà nói thêm rằng các nhà khoa học có thể sẽ quan sát thấy nhiều cuộc di cư đường dài hơn ở Nam Bán cầu khi việc theo dõi vệ tinh ngày càng trở nên phổ biến.<br>\
+<br>\
+Daniel Palacios, một nhà hải dương học tại Đại học Hawaii ở Manoa, cho biết hành trình phá kỷ lục này có thể chỉ ra rằng các mô hình di cư đang thay đổi khi quần thể bắt đầu phục hồi sau thời kỳ gần tuyệt chủng và quần thể tăng lên. Nhưng lý do tại sao con cá voi không đi theo các tuyến đường di cư thông thường vẫn còn là một bí ẩn. Nó có thể đã khám phá môi trường sống mới hoặc chỉ đơn giản là bị lạc đường. 'Chúng ta thường nghĩ rằng cá voi lưng gù đã được nghiên cứu rất kỹ, nhưng sau đó chúng lại làm chúng ta ngạc nhiên với những điều như thế này', Palacios nói. 'Chắc chắn vẫn còn rất nhiều điều chúng ta chưa biết về sự di cư của cá voi.'<br>\
+Tác giả Janelle Weaver, đăng trực tuyến trên tạp chí Nature"
+	,voca:"",
+},
+{
+	unit:"6",
+	title:"Making a change",
+	en:"<i>How easy is it for us to change our lives - and why?</i><br>\
+In 1990, a young American named Christopher McCandless gave up his career plans, left behind everyone he knew, including his family, and went off on an adventure. He was 22 at the time. In an act of kindness, he donated all his savings to the famous charity, Oxfam International, and hitchhiked his way through America to Alaska. His decisions were so unusual for his age that Jon Krakauer wrote a book about them called Into the Wild, and Sean Penn directed a film that had the same title.<br>\
+<br>\
+Of course, this is an unusual story. Most college graduates would not do quite the same thing. However, studies do show that in teenage years, people are more likely to try out new experiences. Instead of following the family career path, for example, and working his way up the same organisation like his grandfather did, a 15-year-old may dream about becoming a traveller - only to find in his early 20s that this fascination with new places is declining and change is less attractive. This age-related trend can be observed in all cultures. The reason why people all over the world become less keen to change as they get older may be because people's lives generally follow similar patterns and involve similar demands. Most people, wherever they are, aim to find a job and a partner. As they get older, they may have young children to look after and possibly elderly family members. These responsibilities cannot be achieved without some degree of consistency, which means that new experiences and ideas may not have a place in the person's life. New experiences may bring excitement but also insecurity, and so most people prefer to stay with the familiar.<br>\
+However, not every individual is the same. One toddler may want to play a different game every day and get fed up if nothing changes at the nursery. Another may seek out and play with the same children and toys on every visit. Young children who avoid new experiences will grow up to be more conventional than others. Psychologists argue that those who have more open personalities as children are more open than others might be when they are older. They also suggest that young men have a greater interest in novelty than women, although, as they age, this desire for new experiences fades more quickly than it does in women.<br>\
+<br>\
+The truth is that, as we get older, we prefer the things we know. We tend to order the same meals in restaurants, sit on the same side of the train when we commute to work, go on holiday to the same places and construct our day in the same way. If you are older than 20, remember that your openness to new experiences is slowly declining. So you are better off making a new start today than postponing it until later."
+	,vi:"Chúng ta có dễ dàng thay đổi cuộc sống của mình không - và tại sao?<br>\
+Vào năm 1990, một thanh niên người Mỹ tên là Christopher McCandless đã từ bỏ kế hoạch nghề nghiệp của mình, bỏ lại tất cả mọi người mà anh quen biết, bao gồm cả gia đình, và lên đường phiêu lưu. Khi đó anh mới 22 tuổi. Trong một hành động tử tế, anh đã quyên góp toàn bộ tiền tiết kiệm của mình cho tổ chức từ thiện nổi tiếng Oxfam International và đi nhờ xe qua nước Mỹ đến Alaska. Những quyết định của anh khác thường đến mức Jon Krakauer đã viết một cuốn sách về chúng có tên là Into the Wild, và Sean Penn đã đạo diễn một bộ phim có cùng tựa đề.<br>\
+<br>\
+Tất nhiên, đây là một câu chuyện khác thường. Hầu hết những người tốt nghiệp đại học sẽ không làm điều tương tự. Tuy nhiên, các nghiên cứu chỉ ra rằng ở độ tuổi thiếu niên, mọi người có nhiều khả năng thử những trải nghiệm mới. Ví dụ, thay vì theo đuổi con đường sự nghiệp của gia đình và thăng tiến trong cùng một tổ chức như ông nội mình đã làm, một cậu bé 15 tuổi có thể mơ ước trở thành một du khách - chỉ để nhận ra rằng khi bước sang tuổi 20, sự say mê với những địa điểm mới đang giảm dần và sự thay đổi trở nên kém hấp dẫn hơn. Xu hướng liên quan đến độ tuổi này có thể được quan sát thấy ở mọi nền văn hóa. Lý do tại sao mọi người trên khắp thế giới trở nên ít muốn thay đổi hơn khi họ già đi có thể là vì cuộc sống của mọi người thường tuân theo những mô hình tương tự và liên quan đến những nhu cầu tương tự. Hầu hết mọi người, bất kể họ ở đâu, đều hướng đến mục tiêu tìm kiếm một công việc và một người bạn đời. Khi họ già đi, họ có thể phải chăm sóc con nhỏ và có thể là những thành viên lớn tuổi trong gia đình. Những trách nhiệm này không thể đạt được nếu không có một mức độ nhất quán nào đó, điều đó có nghĩa là những trải nghiệm và ý tưởng mới có thể không có chỗ trong cuộc sống của một người. Những trải nghiệm mới có thể mang lại sự phấn khích nhưng cũng mang lại sự bất an, vì vậy hầu hết mọi người thích ở lại với những gì quen thuộc.<br>\
+Tuy nhiên, không phải mọi cá nhân đều giống nhau. Một đứa trẻ mới biết đi có thể muốn chơi một trò chơi khác nhau mỗi ngày và chán nản nếu không có gì thay đổi ở nhà trẻ. Một số khác có thể tìm kiếm và chơi với cùng một đứa trẻ và đồ chơi trong mỗi lần đến thăm. Trẻ nhỏ tránh trải nghiệm mới sẽ lớn lên theo thói quen hơn những trẻ khác. Các nhà tâm lý học lập luận rằng những người có tính cách cởi mở hơn khi còn nhỏ sẽ cởi mở hơn những người khác khi lớn lên. Họ cũng cho rằng nam thanh niên quan tâm đến sự mới lạ nhiều hơn phụ nữ, mặc dù khi họ già đi, mong muốn trải nghiệm mới này sẽ giảm nhanh hơn so với phụ nữ.<br>\
+<br>\
+Sự thật là khi chúng ta già đi, chúng ta thích những thứ mình biết hơn. Chúng ta có xu hướng gọi cùng một bữa ăn trong nhà hàng, ngồi cùng một bên tàu khi đi làm, đi nghỉ ở cùng một nơi và xây dựng ngày của mình theo cùng một cách. Nếu bạn trên 20 tuổi, hãy nhớ rằng sự cởi mở của bạn đối với những trải nghiệm mới đang dần giảm sút. Vì vậy, tốt hơn hết là bạn nên bắt đầu lại ngay hôm nay thay vì trì hoãn đến sau."
+	,voca:"",
+},
+{
+	unit:6,
+	title:"Reducing errors in memory",
+	en:"Sleep may reduce mistakes in memory, according to a first-of-its-kind study led by a scientist at Michigan State University.<br>\
+<br>\
+The findings, which appear in the September issue of the journal Learning & Memory, have practical implications for many people, from students doing multiple-choice tests to elderly people confusing their medicine, says Kimberly Fenn, principal investigator and assistant professor of psychology.<br>\
+<br>\
+'It's easy to muddle things in your mind,' Fenn says. 'This research suggests that after sleep, you're better able to pick out the incorrect parts of that memory.' Fenn and colleagues from the University of Chicago and Washington University in St Louis studied the presence of incorrect or false memory in groups of college students. While previous research has shown that sleep improves memory, this study is the first one that looks at errors in memory, she said.<br>\
+<br>\
+Study participants were 'trained' by being shown or listening to lists of words. Then, twelve hours later, they were shown individual words and asked to identify which words they had seen or heard in the earlier session. One group of students was trained at 10 a.m. and tested at 10 p.m. after the course of a normal sleepless day. Another group was trained at night and tested twelve hours later in the morning, after about six hours of sleep. Three experiments were conducted. In each experiment, the results showed that students who had slept did not have as many problems with false memory and chose fewer incorrect words.<br>\
+<br>\
+<br>\
+How does sleep help? The answer isn't known, Fenn said, but she suspects it may be due to sleep strengthening the source of the memory. The source, or context in which the information is acquired, is a vital element of the memory process. In other words, it may be easier to remember something if you can also remember where you first heard or saw it. Or perhaps the people who didn't sleep as much during the study received so much other information during the day that this affected their memory ability, Fenn said.<br>\
+<br>\
+Further research is needed, she said, adding that she plans to study different population groups, particularly the elderly. 'We know older individuals generally have worse memory performance than younger individuals. We also know from other research that elderly individuals tend to be more prone to false memories,' Fenn said. 'Given the work we've done, it's possible that sleep may actually help them to reject this false information. And potentially this could help to improve their quality of life.'"
+	,vi:"Giấc ngủ có thể làm giảm lỗi trong trí nhớ, theo một nghiên cứu đầu tiên do một nhà khoa học tại Đại học bang Michigan dẫn đầu.<br>\
+<br>\
+Những phát hiện, xuất hiện trên tạp chí Learning & Memory số tháng 9, có ý nghĩa thực tế đối với nhiều người, từ học sinh làm bài kiểm tra trắc nghiệm đến người cao tuổi nhầm lẫn thuốc, Kimberly Fenn, nhà nghiên cứu chính và phó giáo sư tâm lý học cho biết.<br>\
+<br>\
+'Thật dễ dàng để làm rối trí óc của bạn', Fenn nói. 'Nghiên cứu này cho thấy rằng sau khi ngủ, bạn có thể dễ dàng chọn ra những phần không chính xác trong trí nhớ đó hơn.' Fenn và các đồng nghiệp từ Đại học Chicago và Đại học Washington ở St Louis đã nghiên cứu sự hiện diện của trí nhớ không chính xác hoặc sai lệch ở các nhóm sinh viên đại học. Bà cho biết trong khi các nghiên cứu trước đây đã chỉ ra rằng giấc ngủ giúp cải thiện trí nhớ, thì nghiên cứu này là nghiên cứu đầu tiên xem xét các lỗi trong trí nhớ.<br>\
+<br>\
+Những người tham gia nghiên cứu đã được 'huấn luyện' bằng cách được cho xem hoặc nghe danh sách các từ. Sau đó, mười hai giờ sau, họ được cho xem từng từ riêng lẻ và được yêu cầu xác định những từ nào họ đã nhìn thấy hoặc nghe thấy trong buổi trước đó. Một nhóm học sinh được đào tạo lúc 10 giờ sáng và được kiểm tra lúc 10 giờ tối sau một ngày không ngủ bình thường. Một nhóm khác được đào tạo vào ban đêm và được kiểm tra mười hai giờ sau đó vào buổi sáng, sau khoảng sáu giờ ngủ. Ba thí nghiệm đã được tiến hành. Trong mỗi thí nghiệm, kết quả cho thấy những học sinh đã ngủ không gặp nhiều vấn đề về trí nhớ sai và chọn ít từ sai hơn.<br>\
+<br>\
+<br>\
+Giấc ngủ giúp ích như thế nào? Fenn cho biết câu trả lời vẫn chưa được biết, nhưng bà nghi ngờ rằng có thể là do giấc ngủ củng cố nguồn trí nhớ. Nguồn hoặc bối cảnh mà thông tin được tiếp thu là một yếu tố quan trọng của quá trình ghi nhớ. Nói cách khác, bạn có thể dễ nhớ hơn một điều gì đó nếu bạn cũng có thể nhớ nơi bạn nghe hoặc nhìn thấy nó lần đầu tiên. Hoặc có lẽ những người không ngủ nhiều trong quá trình nghiên cứu đã tiếp nhận quá nhiều thông tin khác trong ngày khiến điều này ảnh hưởng đến khả năng ghi nhớ của họ, Fenn cho biết.<br>\
+<br>\
+Bà cho biết cần phải nghiên cứu thêm, đồng thời nói thêm rằng bà có kế hoạch nghiên cứu các nhóm dân số khác nhau, đặc biệt là người cao tuổi. 'Chúng tôi biết rằng những người lớn tuổi thường có hiệu suất ghi nhớ kém hơn những người trẻ tuổi. Chúng tôi cũng biết từ các nghiên cứu khác rằng những người lớn tuổi có xu hướng dễ mắc phải những ký ức sai lệch hơn', Fenn cho biết. 'Với công trình chúng tôi đã thực hiện, có khả năng giấc ngủ thực sự có thể giúp họ từ chối thông tin sai lệch này. Và điều này có khả năng giúp cải thiện chất lượng cuộc sống của họ.'"
+	,voca:"",
+},
+{
+	unit:6,
+	title:"[W] Task2",
+	en:"Many people want to be successful, but it is not easy. However, a few people get to the top. Most of them succeed because of their hard work, but in my view, they also need to be talented and have a natural ability to do something well.<br>\
+If you want to be good at something, you must practise hard and regularly. For example, international footballers have to train for many hours every day. If a professional footballer does not train, his manager will drop him from the team.<br>\
+However, talent is important, too. Although some people try hard, they do not achieve much because they are not naturally talented. I like singing, but I will not make money unless I have a good singing voice. Similarly, if someone wants to work in finance, they need to have good number skills.<br>\
+Talent and hard work are not the only important things. As we can often improve our skills by taking courses, money is useful, too. Luck can also help you achieve success. For example, you can be more successful in business if you meet the right people. So there can be many factors that contribute to success.<br>\
+In conclusion, I do not think you can do something consistently well if you do not practise and you are not talented. However, some people become famous for other reasons. Everyone is different, so you cannot always say why one person succeeds and another person does not."
+	,vi:"Nhiều người muốn thành công, nhưng điều đó không dễ dàng. Tuy nhiên, một số ít người đã đạt đến đỉnh cao. Hầu hết họ thành công là nhờ sự chăm chỉ, nhưng theo tôi, họ cũng cần phải có tài năng và có khả năng bẩm sinh để làm tốt một việc gì đó.<br>\
+Nếu bạn muốn giỏi một việc gì đó, bạn phải luyện tập chăm chỉ và thường xuyên. Ví dụ, các cầu thủ bóng đá quốc tế phải luyện tập nhiều giờ mỗi ngày. Nếu một cầu thủ bóng đá chuyên nghiệp không luyện tập, huấn luyện viên của anh ta sẽ loại anh ta khỏi đội.<br>\
+Tuy nhiên, tài năng cũng rất quan trọng. Mặc dù một số người cố gắng rất nhiều, nhưng họ không đạt được nhiều thành tựu vì họ không có tài năng bẩm sinh. Tôi thích ca hát, nhưng tôi sẽ không kiếm được tiền nếu không có giọng hát hay. Tương tự như vậy, nếu ai đó muốn làm việc trong ngành tài chính, họ cần phải có kỹ năng tính toán tốt.<br>\
+Tài năng và sự chăm chỉ không phải là những thứ quan trọng duy nhất. Vì chúng ta thường có thể cải thiện kỹ năng của mình bằng cách tham gia các khóa học, nên tiền cũng rất hữu ích. May mắn cũng có thể giúp bạn đạt được thành công. Ví dụ, bạn có thể thành công hơn trong kinh doanh nếu bạn gặp đúng người. Vì vậy, có thể có nhiều yếu tố góp phần vào thành công.<br>\
+Tóm lại, tôi không nghĩ bạn có thể làm tốt một việc gì đó một cách nhất quán nếu bạn không luyện tập và không có tài năng. Tuy nhiên, một số người trở nên nổi tiếng vì những lý do khác. Mỗi người đều khác nhau, vì vậy bạn không thể luôn nói tại sao một người thành công và một người khác thì không."
+	,voca:"",
+},
+{
+	unit:7,
+	title:"Speed reading",
+	en:"What is speed reading, and why do we need it?<br>\
+<br>\
+[A] Speed reading is not just about reading fast. It is also about how much information you can remember when you have finished reading. The World Championship Speed-Reading Competition says that its top competitors average between 1,000 and 2,000 words a minute. But they must remember at least 50 percent of this in order to qualify for the competition.<br>\
+<br>\
+[B] Nowadays, speed reading has become an essential skill in any environment where people have to master a large volume of information. Professional workers need reading skills to help them get through many documents every day, while students under pressure to deal with assignments may feel they have to read more and read faster all the time.<br>\
+<br>\
+[C] Although there are various methods to increase reading speed, the trick is deciding what information you want first. For example, if you only want a rough outline of an issue, then you can skim the material quickly and extract the key facts. However, if you need to understand every detail in a document, then you must read it slowly enough to understand this. <br>\
+<br>\
+[D] Even when you know how to ignore irrelevant detail, there are other improvements you can make to your reading style which will increase your speed. For example, most people can read much faster if they read silently. Reading each word aloud takes time for the information to make a complete circuit in your brain before being pronounced. Some researchers believe that as long as the first and last letters are in place, the brain can still understand the arrangement of the other letters in the word because it logically puts each piece into place.<br>\
+<br>\
+[E] Chunking is another important method. Most people learn to read either letter by letter or word by word. As you improve, this changes. You will probably find that you are fixing your eyes on a block of words, then moving your eyes to the next block of words, and so on. You are reading blocks of words at a time, not individual words one by one. You may also notice that you do not always go from one block to the next: sometimes you may move back to a previous block if you are unsure about something.<br>\
+<br>\
+[F] A skilled reader will read a lot of words in each block. He or she will only look at each block for an instant and will then move on. Only rarely will the reader's eyes skip back to a previous block of words. This reduces the amount of work that the reader's eyes have to do. It also increases the volume of information that can be taken in over a given period of time.<br>\
+GOn the other hand, a slow reader will spend a lot of time reading small blocks of words. He or she will skip back often, losing the flow and structure of the text, and muddling their overall understanding of the subject. This irregular eye movement quickly makes the reader tired. Poor readers tend to dislike reading because they feel it is difficult to concentrate and comprehend written information.<br>\
+<br>\
+[H] The best tip anyone can have to improve their reading speed is to practise. In order to do this effectively, a person must be engaged in the material and want to know more. If you find yourself constantly having to re-read the same paragraph, you may want to switch to reading material that grabs your attention. If you enjoy what you are reading, you will make quicker progress."
+	,vi:"Đọc nhanh là gì và tại sao chúng ta cần nó?<br>\
+<br>\
+[A] Đọc nhanh không chỉ là đọc nhanh. Nó còn là về lượng thông tin bạn có thể nhớ khi đọc xong. Cuộc thi Đọc nhanh vô địch thế giới cho biết những người tham gia hàng đầu trung bình có thể đọc từ 1.000 đến 2.000 từ một phút. Nhưng họ phải nhớ ít nhất 50 phần trăm trong số này để đủ điều kiện tham gia cuộc thi.<br>\
+<br>\
+[B] Ngày nay, đọc nhanh đã trở thành một kỹ năng thiết yếu trong bất kỳ môi trường nào mà mọi người phải nắm vững một lượng thông tin lớn. Những người làm việc chuyên nghiệp cần kỹ năng đọc để giúp họ đọc qua nhiều tài liệu mỗi ngày, trong khi những sinh viên chịu áp lực phải giải quyết bài tập có thể cảm thấy họ phải đọc nhiều hơn và đọc nhanh hơn mọi lúc.<br>\
+<br>\
+[C] Mặc dù có nhiều phương pháp khác nhau để tăng tốc độ đọc, nhưng điều quan trọng là quyết định thông tin bạn muốn trước. Ví dụ, nếu bạn chỉ muốn phác thảo sơ bộ về một vấn đề, thì bạn có thể lướt qua tài liệu một cách nhanh chóng và trích xuất các sự kiện chính. Tuy nhiên, nếu bạn cần hiểu mọi chi tiết trong một tài liệu, thì bạn phải đọc đủ chậm để hiểu được điều này. <br>\
+<br>\
+[D] Ngay cả khi bạn biết cách bỏ qua các chi tiết không liên quan, vẫn có những cải thiện khác mà bạn có thể thực hiện đối với phong cách đọc của mình để tăng tốc độ. Ví dụ, hầu hết mọi người có thể đọc nhanh hơn nhiều nếu họ đọc thầm. Đọc to từng từ cần thời gian để thông tin tạo thành một mạch hoàn chỉnh trong não trước khi được phát âm. Một số nhà nghiên cứu tin rằng miễn là chữ cái đầu tiên và chữ cái cuối cùng ở đúng vị trí, não vẫn có thể hiểu được cách sắp xếp của các chữ cái khác trong từ vì nó sắp xếp hợp lý từng phần vào đúng vị trí.<br>\
+<br>\
+[E] Phân đoạn là một phương pháp quan trọng khác. Hầu hết mọi người học cách đọc từng chữ cái hoặc từng từ. Khi bạn cải thiện, phương pháp này sẽ thay đổi. Bạn có thể thấy rằng mình đang nhìn chằm chằm vào một khối từ, sau đó chuyển mắt sang khối từ tiếp theo, v.v. Bạn đang đọc các khối từ cùng một lúc, chứ không phải từng từ riêng lẻ. Bạn cũng có thể nhận thấy rằng bạn không phải lúc nào cũng chuyển từ khối này sang khối khác: đôi khi bạn có thể quay lại khối trước đó nếu bạn không chắc chắn về điều gì đó.<br>\
+<br>\
+[F] Một người đọc giỏi sẽ đọc rất nhiều từ trong mỗi khối. Người đó sẽ chỉ nhìn vào mỗi khối trong một khoảnh khắc rồi chuyển sang khối khác. Rất hiếm khi mắt người đọc quay lại khối từ trước đó. Điều này làm giảm lượng công việc mà mắt người đọc phải làm. Nó cũng làm tăng lượng thông tin có thể tiếp nhận trong một khoảng thời gian nhất định.<br>\
+Mặt khác, một người đọc chậm sẽ dành nhiều thời gian để đọc các khối từ nhỏ. Người đó sẽ thường xuyên quay lại, làm mất đi sự trôi chảy và cấu trúc của văn bản, và làm rối loạn sự hiểu biết chung của họ về chủ đề. Chuyển động mắt không đều này nhanh chóng khiến người đọc mệt mỏi. Những người đọc kém có xu hướng không thích đọc vì họ cảm thấy khó tập trung và hiểu thông tin đã viết.<br>\
+<br>\
+[H] Lời khuyên tốt nhất mà bất kỳ ai cũng có thể có để cải thiện tốc độ đọc của mình là luyện tập. Để làm được điều này một cách hiệu quả, một người phải tham gia vào tài liệu và muốn biết thêm. Nếu bạn thấy mình liên tục phải đọc lại cùng một đoạn văn, bạn có thể muốn chuyển sang tài liệu đọc thu hút sự chú ý của bạn. Nếu bạn thích những gì bạn đang đọc, bạn sẽ tiến bộ nhanh hơn."
+	,voca:"",
+},
+{
+	unit:8,
+	title:"Here today, gone tomorrow",
+	en:"The Arctic and Antarctica are now within reach of the modern tourist, with many going to see these icy wildernesses before it's too late. Christian Amodeo reports on the growth of polar tourism.<br>\
+<br>\
+Travel at the North and South Poles has become an expensive leisure activity, suitable for tourists of all ages. The poles may be inhospitable places, but they are seeing increasing numbers of visitors.<br>\
+<br>\
+Annual figures for the Arctic, where tourism has existed since the 19th century, have increased from about a million in the early 1990s to more than 1.5 million today. This is partly because of the lengthening summer season brought about by climate change. <br>\
+<br>\
+Most visitors arrive by ship. In 2007, 370,000 cruise passengers visited Norway, twice the number that arrived in 2000. Iceland, a country where tourism is the second-largest industry, has enjoyed an annual growth rate of nine percent since 1990. Meanwhile, Alaska received some 1,029,800 passengers, a rise of 7.3 percent from 2006. Greenland has seen the most rapid growth in marine tourism, with a sharp increase in cruise-ship arrivals of 250 percent since 2004. <br>\
+<br>\
+The global economic downturn may have affected the annual 20.6 percent rate of increase in visitors to the Antarctic - last season saw a drop of 17 percent to 38,200 - but there has been a 760 percent rise in land-based tourism there since 1997. More people than ever are landing at fragile sites, with light aircraft, helicopters and all-terrain vehicles increasingly used for greater access, while in the past two seasons, 'fly-sail' operations have begun. These deliver tourists by air to ships, so far more groups can enjoy a cruise in a season; large cruise ships capable of carrying up to 800 passengers are not uncommon.<br>\
+<br>\
+In addition, it seems that a high number of visitors return to the poles. 'Looking at six years' worth of data, of the people who have been to the polar regions, roughly 25 percent go for a second time,' says Louisa Richardson, a senior marketing executive at tour operator Exodus. <br>\
+<br>\
+In the same period that tourism has exploded, the 'health' of the poles has 'deteriorated'. 'The biggest changes taking place in the Antarctic are related to climate change,' says<br>\
+Rod Downie, Environmental Manager with the British Antarctic Survey (BAS). Large numbers of visitors increase these problems.<br>\
+<br>\
+Although polar tourism is widely accepted, there have been few regulations up until recently. At the meeting of the Antarctic Treaty in Baltimore, the 28 member nations adopted proposals for limits to tourist numbers. These included safety codes for tourist vessels in Antarctic waters, and improved environmental protection for the continent. They agreed to prevent ships with more than 500 passengers from landing in Antarctica, as well as limit the number of passengers going ashore to a maximum of 100 at any one time, with a minimum of one guide for every 20 tourists. 'Tourism in Antarctica is not without its risks,' says Downie. 'After all, Antarctica doesn't have a coastguard rescue service.'<br>\
+<br>\
+'So far, no surveys confirm that people are going quickly to see polar regions before they change,' says Frigg Jørgensen, General Secretary of the Association of Arctic Expedition Cruise Operators (AECO). 'However, Hillary Clinton and many other big names have been to Svalbard in the northernmost part of Norway to see the effects of climate change. The associated media coverage could influence others to do the same.' <br>\
+<br>\
+These days, rarely a week passes without a negative headline in the newspapers. The suffering polar bear has become a symbol of a warming world, its plight a warning that the clock is ticking. It would seem that this ticking clock is a small but growing factor for some tourists. There's an element of 'do it now',' acknowledges Prisca Campbell, Marketing Director of Quark Expeditions, which takes 7,000 people to the poles annually. Leaving the trip until later, it seems, may mean leaving it too late."
+	,vi:"Bắc Cực và Nam Cực hiện nằm trong tầm với của khách du lịch hiện đại, với nhiều người sẽ đến xem những vùng đất hoang băng giá này trước khi quá muộn. Christian Amodeo đưa tin về sự phát triển của du lịch vùng cực.<br>\
+<br>\
+Du lịch ở Bắc Cực và Nam Cực đã trở thành một hoạt động giải trí tốn kém, phù hợp với khách du lịch ở mọi lứa tuổi. Các cực có thể là những nơi không thân thiện, nhưng chúng đang đón lượng du khách ngày càng tăng.<br>\
+<br>\
+Số liệu hàng năm về Bắc Cực, nơi du lịch đã tồn tại từ thế kỷ 19, đã tăng từ khoảng một triệu vào đầu những năm 1990 lên hơn 1,5 triệu ngày nay. Một phần là do mùa hè kéo dài do biến đổi khí hậu. <br>\
+<br>\
+Hầu hết du khách đến bằng tàu. Năm 2007, 370.000 hành khách du lịch đã đến Na Uy, gấp đôi số lượng đến vào năm 2000. Iceland, một quốc gia có ngành du lịch là ngành công nghiệp lớn thứ hai, đã đạt được tốc độ tăng trưởng hàng năm là chín phần trăm kể từ năm 1990. Trong khi đó, Alaska đã đón khoảng 1.029.800 hành khách, tăng 7,3 phần trăm so với năm 2006. Greenland đã chứng kiến ​​sự tăng trưởng nhanh nhất về du lịch biển, với sự gia tăng mạnh mẽ về lượng du khách đến Nam Cực là 250 phần trăm kể từ năm 2004. <br>\
+<br>\
+Suy thoái kinh tế toàn cầu có thể đã ảnh hưởng đến tỷ lệ tăng trưởng hàng năm là 20,6 phần trăm của du khách đến Nam Cực - mùa trước đã giảm 17 phần trăm xuống còn 38.200 - nhưng đã có sự gia tăng 760 phần trăm của du lịch trên đất liền ở đó kể từ năm 1997. Nhiều người hơn bao giờ hết đang hạ cánh tại các địa điểm dễ vỡ, với máy bay hạng nhẹ, trực thăng và xe địa hình ngày càng được sử dụng để tiếp cận nhiều hơn, trong khi trong hai mùa qua, Các hoạt động 'bay buồm' đã bắt đầu. Những hoạt động này đưa khách du lịch bằng đường hàng không đến tàu, cho đến nay nhiều nhóm có thể tận hưởng chuyến du ngoạn trong một mùa; các tàu du lịch lớn có khả năng chở tới 800 hành khách không phải là hiếm.<br>\
+<br>\
+Ngoài ra, có vẻ như có rất nhiều du khách quay trở lại các cực. Louisa Richardson, giám đốc tiếp thị cấp cao tại công ty lữ hành Exodus, cho biết: 'Nhìn vào dữ liệu trong sáu năm, trong số những người đã đến các vùng cực, khoảng 25 phần trăm sẽ quay lại lần thứ hai'. <br>\
+<br>\
+Trong cùng thời kỳ du lịch bùng nổ, 'sức khỏe' của các cực đã 'suy giảm'. 'Những thay đổi lớn nhất diễn ra ở Nam Cực có liên quan đến biến đổi khí hậu', Rod Downie, Giám đốc Môi trường của Cơ quan Khảo sát Nam Cực của Anh (BAS) cho biết. Số lượng lớn du khách làm gia tăng các vấn đề này.<br>\
+<br>\
+Mặc dù du lịch vùng cực được chấp nhận rộng rãi, nhưng cho đến gần đây vẫn có rất ít quy định. Tại cuộc họp của Hiệp ước Nam Cực ở Baltimore, 28 quốc gia thành viên đã thông qua các đề xuất về giới hạn số lượng khách du lịch. Những đề xuất này bao gồm các quy tắc an toàn cho tàu du lịch ở vùng biển Nam Cực và cải thiện bảo vệ môi trường cho lục địa. Họ đã nhất trí ngăn chặn các tàu chở hơn 500 hành khách cập cảng Nam Cực, cũng như hạn chế số lượng hành khách lên bờ ở mức tối đa là 100 người tại bất kỳ thời điểm nào, với tối thiểu một hướng dẫn viên cho mỗi 20 khách du lịch. 'Du lịch ở Nam Cực không phải là không có rủi ro', Downie nói. 'Rốt cuộc, Nam Cực không có dịch vụ cứu hộ của lực lượng bảo vệ bờ biển.'<br>\
+<br>\
+'Cho đến nay, không có cuộc khảo sát nào xác nhận rằng mọi người sẽ nhanh chóng đến thăm các vùng cực trước khi chúng thay đổi', Frigg Jørgensen, Tổng thư ký Hiệp hội các nhà điều hành du thuyền thám hiểm Bắc Cực (AECO) cho biết. 'Tuy nhiên, Hillary Clinton và nhiều tên tuổi lớn khác đã đến Svalbard ở cực bắc của Na Uy để xem tác động của biến đổi khí hậu. Các phương tiện truyền thông đưa tin có liên quan có thể ảnh hưởng đến những người khác làm như vậy.' <br>\
+<br>\
+Ngày nay, hiếm có tuần nào trôi qua mà không có tiêu đề tiêu cực trên báo. Chú gấu Bắc Cực đau khổ đã trở thành biểu tượng của thế giới đang nóng lên, hoàn cảnh khốn khổ của nó là lời cảnh báo rằng thời gian đang trôi qua. Có vẻ như chiếc đồng hồ tích tắc này là một yếu tố nhỏ nhưng đang phát triển đối với một số khách du lịch. Có một yếu tố 'hãy làm ngay bây giờ', Prisca Campbell, Giám đốc Tiếp thị của Quark Expeditions, công ty đưa 7.000 người đến các cực hàng năm thừa nhận. Việc trì hoãn chuyến đi đến muộn hơn, có vẻ như, có nghĩa là để quá muộn."
+	,voca:"",
 }
+
+
+
+
+
 ].reverse();

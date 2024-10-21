@@ -65,6 +65,7 @@ $scope.playFullSound = function () {
 	}
 
 	$scope.audio = new Audio($rootScope.audioSrc);
+	$scope.audio.volume = Helper_AudioVolume;   // not working
     $scope.audio.loop = false;
     $scope.audio.play();
 

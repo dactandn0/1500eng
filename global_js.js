@@ -5,7 +5,18 @@ const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
 
 var Helper_AudioSpeed = 0.7;
+var Helper_AudioVolume = 1;
 var UtterEnd = true;
+
+function loadAudioConfig() {
+	if (localStorage.hasOwnProperty("audioSpd")) {
+		Helper_AudioVolume = parseFloat(localStorage['audioSpd']);
+	}
+	if (localStorage.hasOwnProperty("audioVol")) {
+		Helper_AudioVolume	= parseFloat(localStorage['audioVol']);
+	}
+}
+loadAudioConfig()
 
 var kAudioLoopSaveKey = "audioLoop";
 
@@ -255,6 +266,7 @@ function Text2Speech(word) {
 	 const utter = new SpeechSynthesisUtterance(word);
 	 utter.text = word;
 	 utter.rate  = Helper_AudioSpeed;
+	 utter.volume  = Helper_AudioVolume;
 	 utter.lang='en-US';
 
 	 utter.addEventListener('end', (evt) => {

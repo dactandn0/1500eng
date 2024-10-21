@@ -33,8 +33,9 @@ Other people have picnics in parks or have special parties and barbeques in thei
 The largest New Year's Eve celebrations take place in Sydney and Melbourne. In Sydney over 1.5 million people go to a massive firework display with around 5000 fireworks let off from the bridge and from boats in the harbour.<br>\
 - Firework displays mark the end of the old year and the beginning of the New Year. The largest and most impressive firework displays are at midnight on New Year's Eve. \
 It is a way of saying goodbye to the past and saying hello to the future.",
-voca:"celebrate,parade,entertainment,New Year's Eve,firework display,massive[huge|big],1.5[one point five],Sydney,Melbourne,masquerade,impressive[exciting|unforgettable]",
-	vi: 
+voca:"celebrate,parade,entertainment,New Year's Eve,firework display,massive,1.5,Sydney,Melbourne,masquerade,impressive",
+note:"impressive = exciting = unforgettable,massive = huge = big,1.5 ~ one point five"
+	,vi: 
 	'Năm mới ở Úc<br>\
 	- Nhiều người Úc ăn mừng đêm giao thừa vào ngày 31 tháng 12 hàng năm. Đây là ngày trước ngày đầu năm mới, ngày 1 tháng 1.\
 Đêm giao thừa không phải là ngày lễ công cộng ở Úc nhưng các trường học và cao đẳng đều đóng cửa vì đây là thời gian nghỉ lễ. \
@@ -58,7 +59,7 @@ vi:"Làm việc nhóm<br>\
 [B] Meerkat sống dưới lòng đất theo nhóm lớn và có các vai trò khác nhau trong nhóm. Một số canh chừng kẻ thù, những con khác trông chừng những con meerkat non và những con khác đi săn. Meerkat không thể nói như con người, nhưng chúng có thể giao tiếp với nhau bằng những âm thanh khác nhau. Chúng có thể cho những con khác biết kẻ thù là một con đại bàng trên không đang bay về phía chúng hay một con rắn trên mặt đất.<br>\
 [C] Vậy con người có thể học được gì về làm việc nhóm từ những loài động vật tuyệt vời này? Chúng cho chúng ta thấy tầm quan trọng của giao tiếp và đưa ra quyết định. Đội là những nhóm nhỏ những người làm việc cùng nhau, nhưng có các kỹ năng khác nhau. Các nhóm thường đưa ra quyết định tốt hơn so với một người đơn lẻ. Vì nhóm thường có những người có kỹ năng khác nhau nên có nhiều ý tưởng hơn một người. Với nhiều ý tưởng hơn, nhóm có thể chọn câu trả lời tốt nhất cho vấn đề.<br>\
 [D] Nhưng làm việc nhóm không phải lúc nào cũng là cách tốt nhất để đưa ra quyết định - nó có vấn đề. Đôi khi mất nhiều thời gian và thường cần sự chuẩn bị tốt. Nhưng vì mọi người trong nhóm đều có thể giúp đưa ra quyết định nên mọi người thường làm việc chăm chỉ và cảm thấy vui khi được ở trong một nhóm."
-,voca:'desert,survive,alone,underground,group,role,communication,decision,preparation,teamwork '
+,voca:'desert,survive,alone,underground,group,role,communication,decision,preparation,teamwork'
 },
 {
 	unit:4,

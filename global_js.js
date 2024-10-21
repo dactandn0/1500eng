@@ -32,11 +32,13 @@ var arrBOTH_COUNT_UNCOUNT = [];
 var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
 
+function Helper_ArrRemoveDup(arr) {
+	return arr.filter((item, index) => arr.indexOf(item.toLowerCase()) === index); // remove dup
+}
 function longStrToArray(long_txt, deter = ',') {
 	var arr  = long_txt.replace(/\s*\,\s*/g, ",");
 	arr = arr.split(deter);
-	arr = arr.filter((item, index) => arr.indexOf(item) === index); // remove dup
-	return arr;
+	return Helper_ArrRemoveDup(arr)
 };
 
 function preprocess() {

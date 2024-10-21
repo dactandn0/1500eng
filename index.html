@@ -52,27 +52,28 @@
   <script type="text/javascript" src="ebooks/englab/preCourse/preCourseCtrl.js"></script>
   <script type="text/javascript" src="vocaNoted/vocaNotedCtrl.js"></script>
   <script type="text/javascript" src="indexCtrl.js"></script>
+  <script type="text/javascript" src="vocaNoted/ebookNotedCtrl.js"></script>
   
 </head>
 
 <body ng-app="myApp">
     <div ng-controller="indexCtrl" class="container mt-4" ng-cloak>
 
-   <nav class="navbar navbar-expand-lg fixed-top justify-content-end navbar-light" style="background-color: #33aabb;">
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #33aabb;">
     <a class="navbar-brand mr-auto" ng-href="#/!"><i class="fa fa-lg fa-language"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto flex-wrap">
         <li class="nav-item"><a class="nav-link" ng-href="#!lptd">LPTD</a></li>
         <li class="nav-item"><a class="nav-link" ng-href="#!book4k">4kWords</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" ng-href="#!lptd" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="subEbooksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Ebooks
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="subEbooksDropdown">
             <a class="dropdown-item" ng-href="#!bridgeL">Bridge</a>
             <a class="dropdown-item" ng-href="#!completeL">Complete</a>
             <a class="dropdown-item" ng-href="#!barron600L">Barron600</a>
@@ -81,7 +82,16 @@
           </div>
         </li>
         <li class="nav-item "><a class="nav-link" ng-href="#!grammer">Grammer</a></li>
-        <li class="nav-item "><a class="nav-link" href="#!vocaNoted">Voca</a></li>
+        <li class="nav-item dropdown">
+        	<a class="nav-link dropdown-toggle" id="subNotedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Noted
+          </a>
+          <div class="dropdown-menu" aria-labelledby="subNotedDropdown">
+            <a class="dropdown-item" ng-href="#!vocaNoted">Self</a>
+            <a class="dropdown-item" ng-href="#!ebookNoted">Ebooks</a>
+          </div>
+
+        </li>
       </ul>
 
    <!--    <form class="form-inline my-lg-0">

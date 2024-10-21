@@ -664,7 +664,7 @@ W: Tại sao không?<br>\
 M: Ông ấy có một giấc mơ. Ông ấy mơ rằng máy tính sẽ có mặt ở mọi ngôi nhà và văn phòng trên thế giới.<br>\
 W: Tôi hiểu rồi! Ông ấy quyết định theo đuổi giấc mơ của mình. <br>\
 M: Đúng vậy. Ông ấy đã đưa ra quyết định đúng đắn!",
-voca:"owner,charity,computer,donate,employ,excellent,company,the,poor,follow,drop out"
+voca:"owner,charity,computer,donate,employ,excellent,company,poor,follow,drop out"
 },
 {
 	en:'Unit 29 Mark Twain<br>\
@@ -879,7 +879,7 @@ G: Mình ước mình có thể đi cùng bạn! Gia đình tôi lại đi biể
 B: Đừng lo, Julie. Tôi sẽ chụp thật nhiều ảnh và mua cho bạn một món quà lưu niệm.<br>\
 G: Cảm ơn bạn! Tôi sẽ nhặt một số vỏ sò từ bãi biển cho bạn.<br>\
 B: Cảm ơn bạn!",
-voca:"tour,historical,museum,seashore,souvenir,site,construction,seashell,the,Eiffel,Tower,Euro rail"
+voca:"tour,historical,museum,seashore,souvenir,site,construction,seashell,Eiffel,Tower,Euro rail"
 },
 {
 	en:"Unit 38 New Mexico<br>\

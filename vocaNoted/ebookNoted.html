@@ -1,0 +1,9 @@
+
+<h6>Noted from ebooks (<small>{{notedData.length}}</small>)</h6>
+
+<div class="text-sm my-1"
+	ng-repeat="word in notedData track by $index">
+		<span class="ml-3" ng-click="speech($event)">{{word}}</span>
+</div>
+
+

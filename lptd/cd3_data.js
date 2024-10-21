@@ -35,7 +35,7 @@ vi:"Bài 2 Con voi thật tuyệt vời<br>\
 - Voi rất thú vị. Chúng thông minh. Chúng cũng có trí nhớ tuyệt vời. Bạn nên luôn tử tế với voi. Chúng nhớ mọi thứ. Một người phụ nữ Ấn Độ đã kể cho tôi nghe một câu chuyện. Khi còn nhỏ, bà biết về một người quản tượng voi độc ác. Ông ta thường đánh voi của mình. Ông ta rất độc ác và tàn nhẫn với voi. Sau đó, người quản tượng độc ác đã bán con voi. Người quản tượng mới là một người rất tốt bụng. Nhiều năm sau, người quản tượng độc ác đã gặp lại con voi. Con voi nhớ người đàn ông độc ác đó. Nó dùng vòi nhặt một hòn đá và ném vào người đàn ông độc ác. Con voi vẫn biết người đàn ông đó, ngay cả sau nhiều năm.<br>\
 <br>- Voi cũng giúp đỡ lẫn nhau. Voi sử dụng một âm thanh đặc biệt. Âm thanh đó rất nhỏ nên con người không thể nghe thấy. Âm thanh này truyền đi rất xa.<br>\
 <br>- Các đàn voi có thể giao tiếp với nhau, ngay cả khi chúng ở rất xa nhau. Điều này rất hữu ích vì nó giúp voi tìm thấy nước và thức ăn. Những con voi hợp tác để giúp đỡ lẫn nhau.",
-voca:"India,evil,far apart,cooperate,cruel[adj],trunk"
+voca:"India,evil,far apart,cooperate,cruel,trunk"
 },
 {
 en:"Unit 3 Ants, Ants, Everywhere!<br>\

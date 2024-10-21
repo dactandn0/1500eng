@@ -104,7 +104,7 @@ const lptd_cd1_stories = [
 	G: Không, cảm ơn. Tôi nghĩ ngắm chim rất nhàm chán.<br>\
 	B: Không đúng! Chim rất thú vị. Một số loài chim có bộ lông sặc sỡ. Một số loài chim hót những bài hát hay. Một số loài chim làm tổ đặc biệt để đẻ trứng.<br>\
 	G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim sau tất cả!",
-	voca:"area,feathers,tomorrow,beautiful,park,boring,binoculars,as if,nest,lay"
+	voca:"area,feathers,tomorrow,park,boring,binoculars,as if,nest,lay"
 },
 {
 en:"Unit 5 Trees in the Forest<br>\
@@ -149,7 +149,7 @@ G: Thực sự dễ lắm. Bạn chỉ cần vào trang web và chọn mặt hà
 B: Có vẻ dễ đấy!<br>\
 G: Đúng vậy. Chỉ mất khoảng một tuần để mặt hàng của bạn đến. Tất nhiên, nếu bạn đang vội, bạn có thể trả thêm tiền để được gửi nhanh hơn. B: Bạn có trả tiền khi nhận được mặt hàng không?<br>\
 G: Không, bạn phải thanh toán trực tuyến bằng thẻ tín dụng.",
-voca:"website,item,button,online,choose,easy,electronics,hard,faster,credit card"
+voca:"website,item,button,easy,electronics,hard,faster,credit card"
 },
 {
 en: "Unit 7 Cell Phone Messages<br>\
@@ -177,7 +177,7 @@ M: Đó là một ý tưởng tuyệt vời! Bạn có thể tiết kiệm cả 
 W: Đúng vậy. Tất cả bạn bè của tôi hiện nay thường gửi tin nhắn văn bản cho tôi.<br>\
 M: Cảm ơn bạn đã cho tôi biết về điều này. Tôi sẽ phải thử!<br>\
 W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích."
-,voca:"message,cell phone,useful,middle,receive,check,freeway,press,cheaper,both"
+,voca:"message,cell phone,useful,middle,receive,check,freeway,press,cheaper"
 },
 {
 en:"Unit 8 Bubbles in Boiling Water<br>\
@@ -247,7 +247,7 @@ M: Vâng. Bạn thậm chí có thể mua một chiếc máy in tốt và in ả
 W: Có vẻ dễ! Bạn lưu trữ những bức ảnh kỹ thuật số này như thế nào?<br>\
 M: Bạn có thể lưu trữ ảnh trên máy tính. Nhưng bạn có thể hết dung lượng. Tôi lưu tất cả những bức ảnh tôi thích trên đĩa CD. Bạn có thể lưu trữ hơn bảy trăm bức ảnh trên một đĩa CD!<br>\
 W: Tuyệt! Có lẽ tBàiôi cũng nên mua một chiếc máy ảnh kỹ thuật số.",
-voca:"digital,delete,picture,camera,print,compact disc,store,save,run out of space"
+voca:"digital,delete,camera,print,compact disc,store,save,run out of space"
 }
 ,
 {
@@ -278,7 +278,7 @@ W: Vâng, tôi sẽ làm vậy. Tôi nghĩ đó sẽ là một lễ hội âm nh
 M: Có thể. Bạn có biết giá vé sẽ là bao nhiêu không?<br>\
 W: Tôi không chắc, nhưng tôi nghĩ mỗi vé sẽ khoảng 75 đô la.<br>\
 M: Nhiều tiền quá! Tôi không nghĩ là mình muốn chi nhiều tiền như vậy cho một tấm vé. Dù sao thì chúc may mắn!",
-voca:"spend,summer,ticket,music,overnight,festival,band,miss,each,line up,anyway"
+voca:"spend,ticket,overnight,festival,band,miss,each,line up,anyway"
 },
 {
 	en:"Unit 13 The School Play<br>\
@@ -308,7 +308,7 @@ B: Đó là The Sound of Music.<br>\
 G: Thật sao? Tôi đã xem The Sound of Music trên TV tháng trước! Nó rất hay! Bạn có chắc không?<br>\
 B: Tất nhiên là tôi chắc rồi, đó là những gì cô Martin nói. Bạn có muốn xem vở kịch đó với tôi vào tối thứ Bảy không?<br>\
 G: Thật tuyệt! Chúng ta hãy đi sớm để có được chỗ ngồi tốt!",
-voca:"yesterday,play,guess,early,first,teacher,hope,boring,watch,last"
+voca:"play,guess,early,hope,boring,watch,last"
 },
 {
 	en:"Unit 14 Ballet Class<br>\
@@ -344,7 +344,7 @@ Họ đã cố gắng thể hiện điều này trong tác phẩm của mình. C
 Monet đã thực hiện nhiều tác phẩm của mình ngoài trời. Ông muốn thể hiện cách ánh sáng ban ngày làm cho mọi thứ trông như thế nào.<br>\
 Nhiều bức tranh của ông là về khu vườn. Ông thích vẽ hoa và cây cối. Ông thích vẽ trong khu vườn của riêng mình. Khu vườn của ông nằm trong một ngôi làng. Ông đã sống ở đó nhiều năm.<br>\
 Ngày nay, nhiều du khách đến thăm khu vườn này mỗi năm. Họ đến từ khắp nơi trên thế giới. Hầu hết họ là những người yêu nghệ thuật hoặc nghệ sĩ. Họ đến để xem nơi mà Monet yêu thích đến vậy.",
-voca:"artist,shape,group,garden,daylight,change,impressionist,work,own,village"
+voca:"artist,shape,group,garden,daylight,change,impressionist,work"
 }
 ,
 {
@@ -392,7 +392,7 @@ W: Tôi chưa bao giờ xem TV trên màn hình lớn. Bạn có nghĩ rằng ch
 M: Vâng, chất lượng tuyệt vời. Khi bạn xem các trận đấu bóng đá, bạn cảm thấy như mình đang ở ngay trên sân bóng!<br>\
 W: Khi bạn mua chiếc TV, tôi có thể đến nhà bạn không? Sau đó, tôi có thể thưởng thức việc xem TV trên màn hình lớn cùng bạn!<br>\
 M: Trước tiên, tôi phải tiết kiệm một ít tiền để mua TV. Phải mất vài tháng nữa tôi mới đủ tiền mua nó!",
-voca:"screen,enjoy,never,quality,afford,living,room,soccer,game,field,save,come over"
+voca:"screen,never,afford,living,room,soccer,field,save,come over"
 }
 ,{
 	en:"Unit 18 He's famous!<br>\
@@ -446,7 +446,7 @@ W: Tôi sẽ ở đó trong một tháng.<br>\
 M: Bạn có thể tìm thấy một số thứ đẹp đẽ ở Trung Quốc cho ngôi nhà mới của mình. Bạn nên đi mua sắm trong khi bạn ở đó.<br>\
 W: Tất nhiên rồi! Sẽ rất vui khi đi mua sắm ở đó. Nhân tiện, hãy tự phục vụ đồ giải khát nhé.<br>\
 M: Cảm ơn. Đồ ăn trông ngon quá!",
-voca:"furniture,party,lovely,shopping,decorate,delicious,refreshments,housewarming,travel,mall,move,into,help yourself"
+voca:"furniture,party,lovely,shopping,decorate,delicious,refreshments,housewarming,mall,help yourself"
 },
 {
 en:"Unit 20 Making Music<br>\
@@ -462,7 +462,7 @@ Những người viết nhạc được gọi là nhà soạn nhạc.<br>\
 Hầu hết thời gian, một nhà soạn nhạc không hát hoặc chơi nhạc của riêng mình. Họ viết tất cả xuống dưới dạng nốt nhạc. Những người biết cách đọc nhạc có thể hiểu những nốt nhạc này. Đây là cách mọi người có thể hát bài hát hoặc chơi nó.<br>\
 Rất nhiều người thích chơi nhạc. Âm nhạc có thể được chơi bằng nhạc cụ. Có nhiều loại nhạc cụ. Một số trong số đó là piano, violin và trống. <br>\
 Mọi người có thể tạo ra âm nhạc như một nhóm. Dàn hợp xướng là một nhóm người hát. Dàn nhạc là một nhóm người chơi nhạc cụ.",
-voca:"sound,piano,choir,listen,write,instrument,orchestra,composer,note,made up of,hundreds of years,This is how"
+voca:"sound,piano,choir,instrument,orchestra,composer,note,made up of,hundreds of years,This is how"
 },
 {
 en:"Unit 21 Where Is Your Homework?<br>\
@@ -489,7 +489,7 @@ B: Này, để cô chép bài luận của em cho em. Cô sẽ thay đổi một
 G: Không, cô xin lỗi. Làm vậy không đúng đâu. <br>\
 B: Ồ, thôi nào! Tôi nghĩ anh là bạn của tôi.<br>\
 G: Tôi là bạn của anh. Đó là lý do tại sao tôi không cho anh sao chép tác phẩm của tôi!",
-voca:"homework,minutes,notebook,word,essay,copy,finish,hand,let"
+voca:"minutes,word,essay,hand,let"
 }
 ,
 {
@@ -515,7 +515,7 @@ B: Tôi sẽ chơi bóng đá với đội bóng của trường vào tuần nà
 G: Khi nào bạn có thời gian làm bài tập về nhà? Và khi nào bạn sẽ học?<br>\
 B: Tôi làm bài tập về nhà sau giờ học mỗi ngày. Tôi học vào mỗi cuối tuần. Mẹ tôi sẽ không cho tôi chơi thể thao cho đến khi tôi hoàn thành hết bài tập.<br>\
 G: Vâng, tôi hy vọng bạn sẽ có đủ thời gian cho cả việc học và chơi thể thao. Chúc may mắn!",
-voca:"soccer,busy,weekend,during,swimming,team,enough,free,usually,thunderstorm,hockey,schoolwork"
+voca:"soccer,busy,weekend,during,swimming,enough,free,thunderstorm,hockey,schoolwork"
 }
 ,
 {
@@ -577,7 +577,7 @@ W: Ngày xưa, có một người đàn ông sống với hai người con trai.
 Người đàn ông đưa cho người con trai út hai cây gậy lớn. Ông bảo cậu bé bẻ gãy chúng. Cậu bé cố gắng hết sức, nhưng không bẻ được những cây gậy. Người con trai lớn cũng không bẻ được những cây gậy. Cuối cùng, người đàn ông chỉ đưa cho mỗi người con một cây gậy. Ông nói, 'Bẻ gãy chúng đi.'' Mỗi người con trai đều bẻ gãy cây gậy của mình một cách dễ dàng. <br>\
 Người đàn ông nói, 'Các con giống như những cây gậy này. Nếu các con cùng nhau làm việc, không ai có thể bẻ gãy các con. Nhưng nếu các con cứ đánh nhau suốt, một ngày nào đó, sẽ có người bẻ gãy cả hai con.' <br>\
 Sau bài học đó, hai người con trai ngừng đánh nhau. Họ bắt đầu cùng nhau làm việc",
-voca:"lesson,together,younger,break,older,easily,fix,swing,daughter,one day"
+voca:"lesson,together,younger,break,older,easily,fix,swing,daughter"
 }
 ,
 { 
@@ -603,7 +603,7 @@ M: Đó là một tai nạn! Tôi không biết tệp có vi-rút. Lần sau tô
 W: Bạn đã làm gì tiếp theo?<br>\
 M: Tôi đã yêu cầu một thợ sửa máy tính đến văn phòng. Anh ấy đã làm việc cả ngày để sửa máy tính của tôi. Nhưng vấn đề thực sự là tôi có thể đã mất một số công việc của mình.<br>\
 W: Đừng lo lắng. Công việc của bạn có thể vẫn còn trên máy tính của bạn. Tôi có thể giúp bạn lấy lại chúng. Lần sau, hãy đảm bảo bạn có tệp sao lưu. Phòng trường hợp điều đó xảy ra lần nữa!"
-, voca:"accident,virus,file,office,careful,repair,contain,arrive,back-up,get,back,all day"
+, voca:"accident,virus,careful,repair,contain,arrive,back-up,get,back,all day"
 }
 ,
 {
@@ -627,7 +627,7 @@ B: Con muốn dạy toán, giống như cô Kim. Cô ấy làm cho việc học 
 G: Nếu con muốn dạy toán, con sẽ phải chăm chỉ và học thật giỏi.<br>\
 B: Không vấn đề gì! Tuần trước con đã đạt điểm A trong kỳ thi toán. Với những giáo viên giỏi như cô Kim, việc học trở nên dễ dàng.<br>\
 G: Con cũng muốn làm giáo viên. Nhưng tôi muốn dạy tiếng Anh chứ không phải toán!",
-voca:"job,mathematics,favorite,subject,join,art,examination,until,grow,up,would like to,learning fun"
+voca:"job,mathematics,favorite,subject,art,examination,grow,up,would like to,learning fun"
 },
 {
 	en:"Unit 28 Shopping<br>\
@@ -652,7 +652,7 @@ W: Thực ra, tôi mua chúng với giá 15 đô la tại Super Glasses.<br>\
 M: Có một cửa hàng Super Glasses trong trung tâm thương mại này, đúng không?<br>\
 W: Vâng, nhưng để tôi cho bạn xem kính râm đang được bán giảm giá.<br>\
 M: Không, cảm ơn. Tôi nghĩ tôi sẽ chỉ đến Super Glasses thôi!",
-voca:"sale,price,everything,sunglasses,normal,clothes,protect,hat,belong,drop off"
+voca:"sale,price,sunglasses,normal,clothes,protect,drop off"
 },
 {
 	en:"Unit 29 A Part-time Job<br>\

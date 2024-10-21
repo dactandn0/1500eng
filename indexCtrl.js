@@ -8,6 +8,17 @@ var VocaForSearch = VocaToUI
     .concat(IELTS_SYN)
     .concat(GRAMMER_DATA)
 
+// for notedEbookCtrl
+var kAllStories = lptd_cd1_stories
+  .concat(lptd_cd2_stories)
+  .concat(lptd_cd3_stories)
+  .concat(BOOK4K_1)
+  .concat(bridge_cd1)
+  .concat(bridge_read_data)
+  .concat(complete_cd1)
+  .concat(complete_read_data)
+  .concat(listen_tracks)
+
 var searchData = [];
 preProcess = function () {
   for (var k = 0; k < VocaForSearch.length; k++) {
@@ -21,7 +32,7 @@ preProcess = function () {
 preProcess();
 
 var app = angular.module("myApp", [
-  'vocaNotedApp',
+  'vocaNotedApp', 'ebookNotedApp',
   'preCourseApp',
   'sampleSpeakingApp',
   'completeLApp','completeRApp',
@@ -39,6 +50,9 @@ app.config(function($routeProvider) {
       }) 
       .when('/vocaNoted', {
         templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'
+      }) 
+      .when('/ebookNoted', {
+        templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'
       })        
       .when('/book4k', {
         templateUrl: 'words4000/words4000.html', controller: 'words4000Ctrl'
@@ -81,20 +95,9 @@ app.config(function($routeProvider) {
 app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope', function($scope, appAlert, $location, toastr, $rootScope ) {
 IndexCtrlScope = $scope;
 
-// for word300Ctrl
+// for word3000Ctrl
 $rootScope.VocaToUI = VocaToUI
 $rootScope.VocaForSearch = VocaForSearch
-
-kAllStories = lptd_cd1_stories
-  .concat(lptd_cd2_stories)
-  .concat(lptd_cd3_stories)
-  .concat(BOOK4K_1)
-  .concat(bridge_cd1)
-  .concat(bridge_read_data)
-  .concat(complete_cd1)
-  .concat(complete_read_data)
-  .concat(listen_tracks)
-
 
 $scope.searchDataResult = [];
 $scope.search = "";

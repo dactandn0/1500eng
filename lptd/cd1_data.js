@@ -753,7 +753,7 @@ G: Tôi thích xem bóng chày. Có lẽ tôi có thể đến xem đội của 
 B: Chúng ta có một trận đấu vào cuối tuần này. Bạn đến xem chúng tôi chơi ở công viên nhé?<br>\
 G: Chắc chắn rồi! Chỉ cần cho tôi biết thời gian trò chơi bắt đầu. Gặp lại sau.<br>\
 B: Tạm biệt!",
-voca:"medal,baseball,silver,ceremony,tired,women,gymnastics,win,invite,stay up"
+voca:"medal,baseball,silver,ceremony,tired,women,gymnastics,invite,stay up"
 },
 {
 	en:"Unit 34 Inline Skating<br>\
@@ -795,7 +795,7 @@ Mọi người đến từ khắp các quốc gia trên thế giới để tham 
 Bây giờ, phụ nữ cũng tham gia Thế vận hội Olympic. Có các môn thể thao đồng đội, như bóng rổ.<br>\
 Có võ thuật, như judo. Ngày càng có nhiều loại hình thể thao trong các trò chơi mỗi lần chúng được tổ chức.<br>\
 Rất khó để giành được huy chương tại các trò chơi này. Chỉ những nhà vô địch thế giới mới được tham gia Thế vận hội Olympic. Những người tham gia phải tập luyện chăm chỉ trong nhiều năm. Cơ thể của họ phải rất khỏe mạnh. Họ phải là người giỏi nhất để giành huy chương trong các trò chơi này.",
-voca:"champion,country,martial,arts,event,compete,winter,hold,fit,fall,allow"
+voca:"champion,martial,arts,event,compete,hold,fit,fall,allow"
 },
 {
 	en:"Unit 36 A Bicycle Trip<br>\
@@ -820,7 +820,7 @@ M: Tôi cần bản đồ đường bộ của các quốc gia tôi sẽ đến 
 W: Bạn có đi cùng người khác không?<br>\
 M: Vâng, tôi sẽ đi cùng một người bạn của tôi. Anh ấy thích đi xe đạp.<br>\
 W: Tôi cũng ước mình có thể đi xe đạp! Vâng, đừng để lốp xe bị xẹp quá nhiều nhé!",
-voca:"bicycle,equipment,map,travel,person,tire,environmentally,in order to,borrow,flat"
+voca:"equipment,person,tire,environmentally,in order to,borrow,flat"
 },
 {
 	en:"Unit 37 Driving Down South<br>\
@@ -873,7 +873,7 @@ M: Vâng, bạn sẽ bay thẳng đến Bắc Kinh. Hướng dẫn viên của b
 W: Nghe tuyệt quá! Chúng ta sẽ sử dụng phương tiện giao thông nào để đi từ nơi này đến nơi khác?<br>\
 M: Bạn sẽ đi xe buýt với nhóm du lịch của mình. <br>\
 W: Được. Tôi có thể đặt tour du lịch trọn gói này ngay bây giờ không? Sẽ có năm người chúng tôi tham gia chuyến đi này.<br>M: Chắc chắn rồi!",
-voca:"airport,a lot of sightseeing,hotel,transport,landmark,bus,package,tour,guide,fly,Forbidden City,Great Wall,Summer Palace,one place to another"
+voca:"airport,a lot of sightseeing,hotel,transport,landmark,package,tour,guide,Forbidden City,Great Wall,Summer Palace,one place to another"
 },
 {
 	en:"Unit 39 Taking the Train<br>\
@@ -896,7 +896,7 @@ W: Tôi không chắc giá vé tàu hỏa hiện tại như thế nào. Tôi ngh
 M: Bạn có thể gợi ý một người tốt để nói chuyện không?<br>\
 W: Đại lý du lịch của tôi luôn rất hữu ích. Đây là số điện thoại của anh ấy.<br>\
 M: Cảm ơn! Tôi sẽ gọi cho anh ấy ngay bây giờ. Điện thoại đâu?",
-voca:"train,destination,suggest,question,fare,helpful,matter,depend,travel agent,as"
+voca:"destination,suggest,question,fare,matter,depend,travel agent"
 },
 {
 	en:"Unit 40 Go on a Cruise!<br>\

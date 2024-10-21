@@ -2,33 +2,18 @@
 document.write('<script src="./ebooks/sampleSpeaking/listen_data/data.js" type="text/javascript"></script>');
 
 
-var app = angular.module("sampleSpeakingApp", ['ngSanitize']);
+var app = angular.module("sampleSpeakingApp", []);
 app.controller("sampleSpeakingCtrl", function($scope, $rootScope, $timeout) {
-$rootScope.$on('$routeChangeStart', function () {
-	$scope.stopSound();
-});
 
 var kSTORIES = listen_tracks;
 
-radioLoopChange = function (val) {
-	localStorage.setItem("audio_loop", val);
-}
-
 $scope.cd = 1;
 $scope.stories = kSTORIES; //1
-
-$scope.range = function(min, max, step) {
-    return RANGE(min, max, step);
-};
-
+$scope.story;
+$scope.titles = []; 
 
 $scope.acc = -1;
 $scope.storyIdx = 0;
-$scope.bPlayingFull = false;
-$scope.bPause = false;
-$scope.bShowVi = 0;
-$scope.audio;
-$scope.currentTime = 0;
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc===id;
@@ -40,105 +25,55 @@ $scope.acc_click = function (id) {
 		$scope.acc=id;
 
 	$scope.storyIdx = id;
+	$scope.process();
+	$rootScope.audioSrc = $scope.createAudioSrc();
 };
 
-$scope.resetFlag = function () {
-	$scope.bPlayingFull = false;
-	$scope.bPause = false;
-	$scope.bShowVi = 0;
-	$scope.bHiddenWords = 0;
-}	
-
-$scope.backSound = function (sec) {
-	$scope.audio.currentTime = $scope.audio.currentTime + sec;
+$scope.createAudioSrc = function() {
+	return "./ebooks/sampleSpeaking/listen_data/audio/" + kSTORIES[$scope.storyIdx].track + '.mp3';
 }
 
-$scope.resetAudioBtnUI = function()
+$scope.$on('parent_whenAudioEnded', function(event, message) {
+	$scope.whenAudioEnded();
+});
+
+$scope.whenAudioEnded = function()
 {
-	$scope.bPause=false;
-    $scope.bPlayingFull=false;
-
-    var loopRadio = 0;
-    if (localStorage.hasOwnProperty("audio_loop")) {
-		loopRadio = localStorage.audio_loop;
-		MYLOG(loopRadio)
-	}
-    if (loopRadio==='1') // loop
+	var nextStoryIdx = $scope.storyIdx;
+    var loopRadio = $rootScope[kAudioLoopSaveKey];
+    if (loopRadio === 2) // play next
     {
-    	$scope.playFullSound($scope.storyIdx);
-    } else if (loopRadio==='2') // play next
-    {
-    	var next = $scope.storyIdx + 1;
-    	if (next > 39) { next = 0 }; 
-    	$scope.fetchStory(next, true);
-    	$scope.playFullSound(next);
+    	nextStoryIdx = $scope.storyIdx + 1;
+    	if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
+    	$scope.storyIdx = nextStoryIdx;
+    	$scope.fetchStory($scope.storyIdx, true);
     }
-
-    $scope.$apply();
-}
-
-$scope.isPlayTrack = function (index) {
-	if 	($scope.storyIdx===index && $scope.bPlayingFull) return 'font-weight-bold';
-	 return 'font-weight-normal';
-
-}
-$scope.playFullSound = function (index) {
-	if ($scope.bPlayingFull)
-	{
-		$scope.stopSound();
-		$scope.bPause=false;
-	}
-  	else
-  	{
-  		$scope.audio = new Audio("./ebooks/sampleSpeaking/listen_data/audio/" + $scope.storyIdx + '.mp3');
-	    $scope.audio.loop = false;
-	    $scope.audio.play();
-
-		$scope.audio.addEventListener("ended", function(){
-		   $scope.resetAudioBtnUI();
-		});
-
-	    $scope.bPlayingFull = true;
-  	}
-}
-
-$scope.pauseSound = function () {
-	if (!$scope.audio) return;
-	$scope.bPause = !$scope.bPause;
-	if ($scope.bPause)
+    if (loopRadio !== 0) // loop
     {
-    	$scope.audio.pause();
-    	$scope.currentTime = $scope.audio.currentTime;
-    }
-    else
-    {
-    	$scope.audio.currentTime = $scope.currentTime;
-    	$scope.audio.play();
+    	$scope.$broadcast('child_playFullSound')  
     }
 }
 
-$scope.stopSound = function () {
-	if (!$scope.audio) return;
-	 $scope.audio.pause();
-	 $scope.audio.currentTime = 0;
-	 $scope.currentTime = 0;
-	 $scope.bPlayingFull = false;
-};
-
-$scope.preProcess = function () {
+$scope.init = function () {
 	for (var i = 0; i < $scope.stories.length; i++) {
-		var story = $scope.stories[i];
-		story = processStory(story);
-		story.enShow = story.enShow.replaceAll('Candidate', '<b>Candidate</b>');
-		story.viShow = story.viShow.replaceAll('Candidate', '<b>Candidate</b>');
-		story.enShow = story.enShow.replaceAll('Examiner', '<b>Examiner</b>');
-		story.viShow = story.viShow.replaceAll('Examiner', '<b>Examiner</b>');
+		var title = $scope.stories[i].title;
+		$scope.titles.push(title)
 	}
-	
+}
+
+$scope.process = function () {
+	var story = kSTORIES[$scope.storyIdx];
+	story = processStory(story);
+	story.enShow = story.enShow.replaceAll('Candidate', '<b>Candidate</b>');
+	story.viShow = story.viShow.replaceAll('Candidate', '<b>Candidate</b>');
+	story.enShow = story.enShow.replaceAll('Examiner', '<b>Examiner</b>');
+	story.viShow = story.viShow.replaceAll('Examiner', '<b>Examiner</b>');
+
+	$scope.story = story;
 }
 
 $scope.loadData = function () {
-	$scope.preProcess();
+	$scope.init();
 };
 
 $scope.loadData();

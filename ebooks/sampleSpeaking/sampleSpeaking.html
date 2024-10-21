@@ -3,35 +3,16 @@
 
 
     	<div class="mt-3">
-		    <form name="loopForm" class="mb-3" role="group">
-	    		<input type="radio" name="radioLoop" value="0" onchange="radioLoopChange(0)" checked/><span class="mr-3">No</span>
-	        	<input type="radio" name="radioLoop" value="1" onchange="radioLoopChange(1)" /><span class="mr-3">Yes</span>
-	        	<input type="radio" name="radioLoop" value="2" onchange="radioLoopChange(2)" /><span class="mr-3">Auto</span>
-    		</form>
-    		
-	    	<span class="btnShowVi opa">
-	        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-	    	</span>
+		     <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl"></div>
+	     </div>
 
-	        <span ng-show="!bShowVi" class="btnEnVi opa"></span>
-		 </div>
-
-		<span  class="btnPlay opa">
-			<button class="btn btn-sm btn-info" ng-click="playFullSound($index)">{{bPlayingFull ? 'Stop' : 'Play'}}</button>
-		</span>
-
-    	<span ng-show="bPlayingFull" class="btnSound opa">
-    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-8)">-8s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(8)">+8s</button></p>
-    	</span>
-
+		  <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
 
 		<div class="card mt-1">
 		    <div class="card-body">
-	          <div class="card-text my-2" ng-repeat="story in stories track by $index">
-	          	<h6 class="accordion" ng-class="isPlayTrack($index)">
-				    <a href ng-click="acc_click($index)"> {{story.title}}</a>
+	          <div class="card-text my-2" ng-repeat="title in titles track by $index">
+	          	<h6 class="accordion">
+				    <a href ng-click="acc_click($index)"> {{title}}</a>
 				 </h6>
 	          	 <div class="accordion-content" ng-show="acc_isShow($index)">
 	          		<p compile="story.enShow" ng-if="!bShowVi"></p>

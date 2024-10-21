@@ -657,7 +657,6 @@ border viền<br>\
 congratulate chúc mừng<br>\
 frame khung<br>\
 heaven thiên đường<br>\
-incredible không thể tin được<br>\
 legend huyền thoại<br>\
 praise,proceed ca ngợi,tiến hành<br>\
 pure thuần khiết<br>\

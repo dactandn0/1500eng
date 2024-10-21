@@ -572,7 +572,7 @@ Tôi rất vui vì đã làm như vậy! <br><br>Agnes: Một thời gian khi t�
 Chúng tôi bắt đầu làm việc từ sáng sớm và không hoàn thành cho đến đầu giờ tối. Ồ, công việc không thực sự vất vả nhưng khá mệt mỏi.\
 Tại sao nó lại có ích như vậy? Ồ, tiền thì nhiều nhưng tôi cũng thích cuộc sống xã hội. Tôi đã kết bạn với một số sinh viên từ khắp nơi trên thế giới.\
 Thực tế, tôi cũng đã gặp bạn trai của mình ở đó, vì vậy đó là một lợi ích bổ sung!",
-voca:"assistant,museum,flexible,psychology,rewarding"
+voca:"assistant,museum,flexible,psychology,rewarding,relevant to"
 },
 {
 idx: "7.T1.40",

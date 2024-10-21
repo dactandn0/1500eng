@@ -256,14 +256,47 @@ There are three main benefits of working as a volunteer at DIFF 2024. Firstly, y
 {
 	date: "T6 04/10/2024",
 	title: "Accommodation",
-	en:"1. Do you live in a house or an apartment? Could you describe it?<br>\
+	en:"Studio apartment (n)<br>\
+Terraced house (n) nhà theo dãy, sát vách<br>\
+Detached house (n) nhà biệt lập<br>\
+Condominium (n) chung cư<br>\
+Semi-detached house (n) bán biệt lập<br>\
+Villa (n)<br>\
+<br>\
+<b>City</b><br>\
+Buildings<br>\
+Traffic<br>\
+Busy<br>\
+Colorful<br>\
+Lively<br>\
+Houses<br>\
+<br>\
+<b>River</b><br>\
+Bridge<br>\
+Sunset<br>\
+Stunning<br>\
+Atmosphere<br>\
+<br>\
+<b>Suburban area</b><br>\
+On the outskirts = In the suburbs<br>\
+Neighborhood<br>\
+Security<br>\
+Quiet<br>\
+Residential area<br>\
+<br>\
+<b>Countryside</b><br>\
+Hills<br>\
+Fresh<br>\
+Peaceful<br>\
+Grass<br>\
+Breezy<br>\
+Beautiful<br>\
+1. Do you live in a house or an apartment? Could you describe it?<br>\
 2. What do you like about living there?<br>\
 3. What is your favorite room in your home? Why?<br>\
-4. Would you like to move to a different home in the future? If yes,<br>\
-what kind of house would you like to live in?<br>\
+4. Would you like to move to a different home in the future? If yes, what kind of house would you like to live in?<br>\
 <br>\
 Practice<br>\
-<br>\
 1. Do you live in a house or an apartment?<br>\
 I live in a two-storey terraced house with my family which is located in the city centre./ on the outskirts of the city (vùng ngoại ô tpho).<br>\
 <br>\
@@ -331,6 +364,53 @@ However, there are also three disadvantages of tourism.\
 ,voca:"First of all,Secondly,Lastly,advantages,disadvantages",
 },
 {
+	title:"Movies",
+	en:"<b>Kind of movie</b><br>\
+Romantic comedy (Rom-com)<br>\
+Fantasy<br>\
+Thriller <br>\
+Animation <br>\
+Documentary <br>\
+Action<br>\
+Horror<br>\
+Coming of age<br>\
+Martial arts<br>\
+Science fiction (Sci-fi)<br>\
+Adventure Superhero<br>\
+<br>\
+<b>Voca</b><br>\
+plot (n): cốt truyện, nội dung phim = storyline (n)<br>\
+character development (n): sự phát triển nhân vật<br>\
+protagonist (n): nhân vật chính<br>\
+gripping = compelling (a): hấp dẫn<br>\
+can’t put it down: không thể đặt nó xuống<br>\
+(be) on the edge of my seat: rất hồi hộp<br>\
+moving/ touching (a): cảm động – bring me to tears (v)<br>\
+readable (a) >< heavy-going (a)<br>\
+burst into tears (v) bật khóc<br>\
+(to) live up to sb’s expectations: giống như mong đợi của ai đó<br>\
+<br>\
+<b>Practice</b><br>\
+Do you like reading?<br>\
+Do you usually read for pleasure or for work purposes?<br>\
+What was the last book you read and would you recommend it?<br>\
+Do you like watching movies?<br>\
+Do you have a favorite movie?<br>\
+How often do you go to the cinema with your friends?<br>\
+Would you rather read or watch a film in your free time?<br>\
+<br>\
+<b>Collocations</b><br>\
+The plot of the novel was filled with unexpected twists and turns.<br>\
+The storyline of the movie was engaging and kept me hooked until the end.<br>\
+The author skillfully portrayed the protagonist's character development throughout the story.<br>\
+The thriller novel was so gripping that it kept me glued to its pages.<br>\
+The mystery novel was so captivating that I couldn't put it down until I finished it.<br>\
+The intense action scenes had me on the edge of my seat throughout the movie.<br>\
+The book was well-written and highly readable, making it enjoyable for a wide range of readers.<br>\
+The academic textbook was heavy-going because it requires lots of concentration to understand its complex concepts."
+	,voca:"",
+},
+{
 	date:"T6 11/10/2024",
 	title:"Describe a device you own which has improved your life",
 	en:"I'm going to talk about my smartphone which is one of the most important gadgets in my life.<br>\
@@ -349,24 +429,16 @@ The best tennis players prefer to play on grass courts rather than clay courts.<
 {
 	unit:"",
 	title:"Pros & Cons of city you live in",
-	en:"Pros:<br>\
+	en:"<b>Pros:</b><br>\
 Fantastic, long beach. Walkable promenade next to the beach. I walk here every day.<br>\
-<br>\
 Cheapest beachside city I've ever been to. Accommodation can vary depending on your needs and how long you book for, but much cheaper than Thailand imo.<br>\
-<br>\
 Amazing food. Banh mi are less than $2. Plenty of amazing food to be had for incredibly cheap prices. Like everyone, I'd heard of Banh Mi and Pho but I've been falling in love with other Vietnamese dishes like Banh Xeo and Vietnamese pastries. All of which are usually less than $2-$3.<br>\
-<br>\
 Cafe culture in Vietnam is better than anywhere else on Earth imo. You're never more than a block away from a cafe. Go for a 10 min walk and you'll see at least 5. Coffee is $0.50 - $2 and delicious. Make sure to try egg coffee!<br>\
-<br>\
 I've only been here for 2-3 weeks and haven't had a chance to explore the mountains yet, but I can follow up once they do. So far, it's amazing scenery at least!<br>\
-<br>\
-Cons:<br>\
+<b>Cons:</b><br>\
 Number one con is Vietnamese visa policy. Currently you can still only stay for 30 days on a tourist visa, although the government indicated last week they are looking at changing this. If they bring back 3 month tourist visas, I'll be staying in DN for at least another 3 months. For now, visa runs to Laos by bus are about $110 USD for Americans. So fairly pricey to stay here doing visa runs.<br>\
-<br>\
 This is common throughout Vietnam, but Da Nang definitely suffers from noise pollution. I never thought of myself as a person who would be bothered by this, but it's definitely affected me since I got here. I've stayed in 2 Airbnbs and a hotel since I got here, and in each I was kept awake by karaoke, bars, or large groups of people sitting in the streets eating and drinking until late in the night. Vietnamese are very social and, imo, much louder than say Thailand.<br>\
-<br>\
-If you're a big city person, you might get a little bored of Da Nang. There's a lot to see and do, but nowhere near the level of Bangkok or HCMC. For me, I actually don't usually like the mega metropolises, I find them a little overwhelming for a 1-3 month stay, so Da Nang is great for me.<br>\
-<br>\
+If you're a big city person, you might get a little bored of Da Nang. There's a lot to see and do, but nowhere near the level of Bangkok or Ho Chi Minh City. For me, I actually don't usually like the mega metropolises, I find them a little overwhelming for a 1-3 month stay, so Da Nang is great for me.<br>\
 This one might not be a huge issue, but I've found compared to Thailand, there seems to be more tourist scams in Vietnam in general. Lots of Japanese restaurants that will pad the bill assuming you won't check or even care as a foreigner. I've had some pretty bad luck on Airbnb so far, and most of the time hosts will do the usual tricks, like refuse to give a refund, ask me to cancel first, offer to take you to one of their 'other' places which is usually far worse, etc. In general it feels like Vietnamese are more focused on making money off of you in any way they can compared to Thais. I think this is amplified in Da Nang because it's such a popular tourist destination. Not a huge dealbreaker but something to be aware of imo."
 	,vi:"Ưu điểm:<br>\
 Bãi biển dài tuyệt đẹp. Có thể đi bộ dạo bộ bên cạnh bãi biển. Tôi đi bộ ở đây mỗi ngày.<br>\
@@ -392,7 +464,45 @@ Nếu bạn là người thành phố lớn, bạn có thể sẽ thấy hơi ch
 {
 	date:"14/10/2024",
 	title:"[W] About Da Nang && Connectors",
-	en:"Connectors: (liên kết các câu)<br>\
+	en:"<b>Pros of living in Danang</b><br>\
+Easy to travel<br>\
+Affordable houses<br>\
+Many good schools<br>\
+Quality healthcare<br>\
+Friendly people<br>\
+Beautiful beach<br>\
+Delicious and cheap food options, especially seafood<br>\
+Cheap houses for rent<br>\
+Friendly people<br>\
+Many famous landmarks<br>\
+Low crime rate<br>\
+Good location, easy to travel to other countries in Southeast Asia<br>\
+Cheap apartments<br>\
+Great beaches - My Khe is in the top 7 beaches in the world<br>\
+High political stability (peaceful) - no strikes and protests<br>\
+High income<br>\
+<br>\
+<b>Cons of living in Danang</b><br>\
+High crime rate<br>\
+Dirty streets<br>\
+Crowded traffic (usually have traffic jams)<br>\
+Polluted<br>\
+Boring food<br>\
+Some jobs offer low salary compared to other big cities<br>\
+Polluted air, seashore, beaches, rivers<br>\
+Some streets seem uninviting<br>\
+Less hygienic in some public toilets<br>\
+Hot and humid climate<br>\
+Urban planning can be unorganised<br>\
+Overpopulation (too many people living in the city) → less personal spaces (must stay in apartments/ fewer housing options)<br>\
+Traffic jams<br>\
+Expensive flights/journeys<br>\
+Difficult to travel to Western countries + Long flights to Western countries<br>\
+Racism/ unaware minority of racism<br>\
+Low awareness about the importance of the environment<br>\
+Inadequate quality facilities<br>\
+<br>\
+Connectors: (liên kết các câu)<br>\
 Ví dụ: <br>\
 For example, S + V / <br>\
 For instance, S + V/ <br>\

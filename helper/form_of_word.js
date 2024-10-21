@@ -124,7 +124,7 @@ function Helper_N_V_Add_ING(words) {
 function Helper_IsFormOfWord (word, wordFormed) {
 	var add_E_ES = Helper_N_V_Add_S_ES(word).toLowerCase(); 
 	var add_ING = Helper_N_V_Add_ING(word).toLowerCase();
-	var add_Ly = Helper_N_V_Add_ING(word).toLowerCase();
+	var add_Ly = Helper_A_Add_LY(word).toLowerCase();
 	var add_ER = Helper_A_Add_ER(word).toLowerCase();
 	var add_EST = Helper_A_Add_EST(word).toLowerCase();
 	return wordFormed === add_E_ES 
@@ -167,8 +167,8 @@ function Helper_A_Add_LY(words) {
 	var r = /^\w+.*(y){1}$/gi.test(word)   			// end with y
 	if (r) return word.substring(0, word.length-1) + 'ily' + rest
 
-	r = /^\w+.*(able|ible|le){1}$/gi.test(word)		
-	if (r) return word.substring(0, word.length-1) + 'ly' + rest
+	r = /^\w+.*(able|ible|le){1}$/gi.test(word)		// remove e to add 'y'
+	if (r) return word.substring(0, word.length-1) + 'y' + rest
 		
 	r = /^\w+.*(ic){1}$/gi.test(word)
 	if (r) return word + 'ally' + rest
@@ -269,7 +269,7 @@ function testIng(word) {
 }
 
 
-// testEST('funny')
+ testLy('incredible')
 // testEST('small')
 // testEST('bad')
 // testEST('near')

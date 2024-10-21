@@ -30,7 +30,8 @@ $scope.fetchStory = function () {
 		var unit = kSTORIES[k].unit;
 		var title = kSTORIES[k].title;
 		var date = kSTORIES[k].date;
-		var ele = title + ' (' + date + ')'
+		var ele = title
+		if (date) ele += ' (' + date + ')'
 		$scope.fullTitles.push(ele);
 	}
 

@@ -2,14 +2,14 @@
 
 const complete_cd1 = [
 {
-	idx:"3.T19",
+	track:"3.T19",
 	en: "Well, I'm going to talk about a trip I made across Australia. The transport I used was a motorbike. It wasn't a new bike, it was what's the word - secondhand, and I bought it because I wanted to see Australia. I didn't want to use public transport because I wanted to be independent. I had a month's holiday before I started my course and I made the trip with a friend, a Chinese girl, because I was frightened of travelling alone. I met her at a language school where we studied English together. We travelled along the south coast and saw some of the desert. The good thing about the journey was that we met a lot of other people who were travelling. We went to places which are difficult to reach on public transport, and the trip was quite cheap. Also, the motorbike had quite a powerful engine, so it was fast and exciting. The bad things were the rain and the heat because they made us tired. I have great memories of the trip because I felt really free. We could go where we liked. Also, we met some very friendly people and we saw a lot of interesting places.<br>\
 I still have friends who I made during that trip. In all, I think it was the best journey I've ever made.",
 	vi: "Vâng, tôi sẽ nói về chuyến đi xuyên Úc của tôi. Phương tiện di chuyển của tôi là xe máy. Đó không phải là xe mới, mà là xe cũ, và tôi mua nó vì tôi muốn khám phá Úc. Tôi không muốn sử dụng phương tiện công cộng vì tôi muốn tự lập. Tôi có một tháng nghỉ phép trước khi bắt đầu khóa học và tôi thực hiện chuyến đi với một người bạn, một cô gái Trung Quốc, vì tôi sợ đi du lịch một mình. Tôi gặp cô ấy tại một trường ngôn ngữ, nơi chúng tôi cùng học tiếng Anh. Chúng tôi đi dọc theo bờ biển phía nam và nhìn thấy một số sa mạc. Điều tốt về chuyến đi là chúng tôi gặp rất nhiều người khác cũng đang đi du lịch. Chúng tôi đã đến những nơi khó tiếp cận bằng phương tiện công cộng và chuyến đi khá rẻ. Ngoài ra, xe máy có động cơ khá mạnh nên rất nhanh và thú vị. Những điều không tốt là mưa và nắng nóng vì chúng khiến chúng tôi mệt mỏi. Tôi có những kỷ niệm tuyệt vời về chuyến đi vì tôi cảm thấy thực sự tự do. Chúng tôi có thể đi bất cứ nơi nào chúng tôi thích. Ngoài ra, chúng tôi đã gặp một số người rất thân thiện và chúng tôi đã thấy rất nhiều địa điểm thú vị.<br>\
 Tôi vẫn còn những người bạn mà tôi đã kết bạn trong chuyến đi đó. Nhìn chung, tôi nghĩ đó là chuyến đi tuyệt vời nhất mà tôi từng thực hiện.",
 },
 {
-	idx:"3.T17",
+	track:"3.T17",
 	en:"Good evening and welcome aboard the Pride of Poole. In this recorded announcement, we'll give you details of some of the facilities available on board this ship.<br>\
 <br>\
 You're currently standing in the reception area in the centre of B Deck. If you're feeling hungry after a long day's travelling, go up the stairs to A Deck, where you'll find the restaurant. The restaurant caters for all appetites, with anything from a light snack to a full three-course meal. The restaurant will be open from the moment the ship leaves port to half an hour before arrival.<br>\
@@ -40,7 +40,7 @@ Ngay phía sau đó trên cùng một tầng, những người muốn hít thở
 ,voca:"record,announcement,facilities,reception,appetites,reclining,viewing deck,staircase,steward,three-course meal,arrival,cater,available"
 },
 {
-	idx:"3.T18",
+	track:"3.T18",
 	en:"Now for some further details. This voyage is an overnight trip. The ship leaves port at 7 p.m. and the journey takes just over 12 hours and 45 minutes, reaching our destination at about eight tomorrow morning. This is for the convenience of those wishing to catch the nine o'clock train, which leaves from the ferry terminal.<br>\
 <br>\
 Passengers with children in their party are informed that there is a special section in the restaurant with kids' food and a play area. People with children are encouraged to turn up early to get a place, as the section is very popular.<br>\
@@ -61,7 +61,7 @@ Hãy biến chuyến đi này thành chuyến đi đáng nhớ. Tại quầy th�
 Cuối cùng, một tính năng độc đáo chỉ có trên chuyến đi này: bất kỳ ai mua một mặt hàng thời trang từ bộ sưu tập quần áo nam và nữ tuyệt vời của chúng tôi trong khu vực mua sắm đều có cơ hội giành được một kỳ nghỉ miễn phí. Tất cả những gì bạn phải làm là hoàn thành một câu bắt đầu bằng 'Tôi thích Sealand Ferries vì... và câu hay nhất sẽ giành được giải thưởng là một kỳ nghỉ ở Thụy Sĩ bao gồm vé tham dự lễ hội âm nhạc kéo dài ba ngày. Hãy trao đổi với bất kỳ nhân viên nào để biết thêm chi tiết."
 },
 {
-	idx:"4.T23",
+	track:"4.T23",
 	en:"W: Excuse me. <br>\
 I: Yes? <br>\
 W: Before you go through, I wonder if you could help us by answering a few questions for a survey. It won't take long. I No problem. We're not in any hurry.<br>\
@@ -91,7 +91,7 @@ I: À, đến vào thời điểm này trong ngày, đường không quá đông
 	,voca:"",
 },
 {
-	idx:"5.T27",
+	track:"5.T27",
 en:"Hi there, everybody, and welcome to Animal World. Before you start your visit, I'd just like to tell you about a few special events happening here today. They're all free, and I'd really encourage you to go to as many of them as you can, as I think you'll learn a lot.<br>\
 The first event is called The World of Ants, and it's happening this morning quite soon in the Insect House, which is just a short walk from here. The well-known entomologist Dr David Crocker, who many of you will have seen on television, is giving a lecture all about ants - the different types of ants, how they organise themselves, what they eat, their behaviour and so on. It's actually a fascinating subject. So, The World of Ants, a lecture by Dr Crocker, in the Insect House, and it starts at 11 o'clock and lasts for 60 minutes.<br>\
 At midday, that's 12 o'clock, there's a film which is just as fascinating and it's called The Great Migration. This is all about birds and how they migrate across continents and oceans using the Sun, the stars and the Earth's magnetic field. As I said, it's a film an absolutely spectacular film - which all the family will enjoy, some fabulous photography - and it's on in Theatre C, which you can see here just behind me - so bear that in mind for 12 o'clock.<br>\
@@ -108,18 +108,84 @@ Sự kiện miễn phí cuối cùng trong ngày hôm nay là Birds of Prey. Tas
 ,voca:"Migration",
 },
 {
-idx:"5.T228",
+track:"5.T28",
 en:"Now, I'll just give you a few directions before you leave, especially for those of you who are feeling a bit hungry. When you leave the main building, you come to an area where the path divides. If you take the right-hand path, you'll see the lake on your right, and exactly opposite the lake on your left is the gift shop. Apart from selling gifts, it sells snacks, sandwiches and light drinks. If you walk on past the lake, on your right you'll also see the penguins. Go past the penguins and you'll come to the restaurant, also on your right. Don't go too far, or you'll come to the aquarium. The aquarium is on your right at the crossroad, and just over the crossroad, also on your right, is the lion enclosure.<br>\
-<br>\
 If you're thinking of having a picnic, the best place to go is the picnic area, and for this you need to turn left at the crossroad and walk along a few metres. At the end of the path, you'll find the picnic area on your left.<br>\
-<br>\
 Now, if you have any questions, I'd be happy to answer them and, once again, I really hope you enjoy your visit. Thank you."
 ,
 vi:"Bây giờ, tôi sẽ chỉ cho bạn một vài chỉ dẫn trước khi bạn rời đi, đặc biệt là đối với những ai đang cảm thấy hơi đói. Khi bạn rời khỏi tòa nhà chính, bạn sẽ đến một khu vực có đường đi chia đôi. Nếu bạn đi theo con đường bên phải, bạn sẽ thấy hồ ở bên phải, và ngay đối diện với hồ ở bên trái là cửa hàng quà tặng. Ngoài việc bán quà tặng, nơi này còn bán đồ ăn nhẹ, bánh sandwich và đồ uống nhẹ. Nếu bạn đi qua hồ, bên phải bạn cũng sẽ thấy chim cánh cụt. Đi qua chim cánh cụt và bạn sẽ đến nhà hàng, cũng ở bên phải bạn. Đừng đi quá xa, nếu không bạn sẽ đến thủy cung. Thủy cung nằm bên phải bạn tại ngã tư, và ngay bên kia ngã tư, cũng ở bên phải bạn, là chuồng sư tử.<br>\
-<br>\
 Nếu bạn đang nghĩ đến việc đi dã ngoại, nơi tốt nhất để đến là khu vực dã ngoại, và để đến đó, bạn cần rẽ trái tại ngã tư và đi bộ vài mét. Cuối con đường, bạn sẽ thấy khu vực dã ngoại ở bên trái.<br>\
-<br>\
 Bây giờ, nếu bạn có bất kỳ câu hỏi nào, tôi rất vui lòng trả lời và một lần nữa, tôi thực sự hy vọng bạn thích chuyến thăm của mình. Cảm ơn bạn."
-		,voca:"",
-	}
+,voca:"",
+},
+{
+	track:"6.T5",
+	en:"M: So we have to do a presentation on a successful person at our next seminar.<br>\
+W: Yes, do you have any ideas?<br>\
+M: Well, I've been on the Internet and picked out a couple. <br>\
+W: OK-I've got some suggestions, too.<br>\
+M: Right, well, you start.<br>\
+W: OK... um, his name's Mahmoud Kaboor and he's a film maker in Dubai in the United Arab Emirates.<br>\
+M: Sounds good.<br>\
+W: Yes. He's the managing director of a very big film company. <br>\
+M: So what made him successful?<br>\
+W: Apparently his uncle was a film student and because of that, he started making short films when he was only 16.<br>\
+M: That's quite young... and were they good?<br>\
+W: Yup. He won a scholarship to go to Canada and study film, and that's how his career developed.<br>\
+M: Great. Um... here's one of my suggestions. She was a ballet dancer - born in St Petersburg in Russia in 1881.<br>\
+W: Anna Pavlova. OK - why have you picked her?<br>\
+M: Well, firstly, because her parents weren't wealthy - they were very poor, in fact - and yet she still went to the School of Imperial Ballet at ten years of age.<br>\
+W: That's so young! Was she very talented?<br>\
+M: Yes, she was, but she didn't follow the rules of ballet. She was very individual and did things that were different from other ballerinas at the time.<br>\
+W: Ah- and that's what made her stand out....<br>\
+M: Yes.<br>\
+W: OK. I've got another woman - Marie Curie.<br>\
+M: She's very famous. Wasn't she Polish?<br>\
+W: Yeah, born in 1867, but did you know that she was the first woman professor at the University of Paris and the first woman to win a Nobel prize?<br>\
+M: Yes - amazing!<br>\
+W: There were many brilliant scientists around when she was working.<br>\
+M: So why did she do better?<br>\
+W: Other scientists couldn't get ahead of her because she sensibly published her ideas straight away.<br>\
+M: What a clever thing to do!<br>\
+W: Yeah - everyone does it automatically these days, but all those years ago, people often didn't think about it.<br>\
+M: Great! Well, here's one more.<br>\
+W: OK - who is it?<br>\
+M: This is an African-American guy who worked as a chef in the 1850s. His name was George Crum.<br>\
+W: Did he make a famous dish or something?<br>\
+M: Not exactly - but without him, we wouldn't have the potato chip. Or crisps, as the British call them."
+	,vi:"M: Vậy chúng ta phải thuyết trình về một người thành đạt tại hội thảo tiếp theo.<br>\
+W: Vâng, anh có ý tưởng nào không?<br>\
+M: Vâng, tôi đã lên mạng và chọn ra một vài ý tưởng. <br>\
+W: OK-Tôi cũng có một số gợi ý.<br>\
+M: Được rồi, vậy thì anh bắt đầu nhé.<br>\
+W: OK... ừm, tên anh ấy là Mahmoud Kaboor và anh ấy là nhà làm phim ở Dubai thuộc Các Tiểu vương quốc Ả Rập Thống nhất.<br>\
+M: Nghe có vẻ hay.<br>\
+W: Đúng vậy. Anh ấy là giám đốc điều hành của một công ty phim rất lớn. <br>\
+M: Vậy điều gì đã làm nên thành công của anh ấy?<br>\
+W: Có vẻ như chú của anh ấy là một sinh viên điện ảnh và vì thế, anh ấy bắt đầu làm phim ngắn khi mới 16 tuổi.<br>\
+M: Khi đó còn khá trẻ... và chúng có hay không?<br>\
+W: Vâng. Anh ấy đã giành được học bổng để đến Canada và học điện ảnh, và đó là cách sự nghiệp của anh ấy phát triển.<br>\
+M: Tuyệt. Ừm... đây là một trong những gợi ý của tôi. Cô ấy là một vũ công ba lê - sinh ra tại St Petersburg ở Nga vào năm 1881.<br>\
+W: Anna Pavlova. OK - tại sao bạn lại chọn cô ấy?<br>\
+M: Vâng, trước tiên, vì cha mẹ cô ấy không giàu có - thực tế là họ rất nghèo - nhưng cô ấy vẫn theo học Trường Ba lê Hoàng gia khi mới mười tuổi.<br>\
+W: Còn trẻ quá! Cô ấy có thực sự tài năng không?<br>\
+M: Có, cô ấy có, nhưng cô ấy không tuân theo các quy tắc của ba lê. Cô ấy rất cá tính và làm những điều khác biệt so với các diễn viên ba lê khác vào thời điểm đó.<br>\
+W: À - và đó là điều khiến cô ấy nổi bật....<br>\
+M: Vâng.<br>\
+W: OK. Tôi có một người phụ nữ khác - Marie Curie.<br>\
+M: Cô ấy rất nổi tiếng. Bà ấy không phải người Ba Lan sao?<br>\
+W: Vâng, sinh năm 1867, nhưng bạn có biết bà là nữ giáo sư đầu tiên tại Đại học Paris và là người phụ nữ đầu tiên giành giải Nobel không?<br>\
+M: Vâng - thật tuyệt vời!<br>\
+W: Có rất nhiều nhà khoa học lỗi lạc khi bà ấy làm việc.<br>\
+M: Vậy tại sao bà ấy lại làm tốt hơn?<br>\
+W: Các nhà khoa học khác không thể vượt qua bà ấy vì bà ấy đã công bố ý tưởng của mình ngay lập tức.<br>\
+M: Thật là một điều thông minh!<br>\
+W: Vâng - mọi người đều tự động làm điều đó ngày nay, nhưng nhiều năm trước, mọi người thường không nghĩ về điều đó.<br>\
+M: Tuyệt! Vâng, đây là một điều nữa.<br>\
+W: OK - đó là ai?<br>\
+M: Đây là một anh chàng người Mỹ gốc Phi làm đầu bếp vào những năm 1850. Tên ông ấy là George Crum.<br>\
+W: Ông ấy có làm món ăn nổi tiếng nào không?<br>\
+M: Không hẳn vậy - nhưng nếu không có ông ấy, chúng ta sẽ không có khoai tây chiên. Hay khoai tây chiên giòn, như người Anh gọi."
+	,voca:"",
+}
 ]

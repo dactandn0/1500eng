@@ -326,7 +326,7 @@ pollute (v) /pəˈluːt/ làm ô nhiễm<br>\
 logging (n) /ˈlɔːɡɪŋ/ phá rừng<br>\
 diurnal (a) /daɪˈɜːrnl/ loài sống ban ngày<br>\
 nocturnal (a) /nɑːkˈtɜːrnl/ loài sống về đêm<br>\
-migratory (n) /ˈmaɪɡrətɔːri/ di cư<br>\
+migratory (a) /ˈmaɪɡrətɔːri/ di cư<br>\
 habitat (n) /ˈhæbɪtæt/ môi trường sống<br>\
 extend (v) /ɪkˈstend/ mở rộng<br>\
 terrestrial (a) /təˈrestriəl/ loài trên cạn<br>\
@@ -423,6 +423,7 @@ Nurse (n) /nɜːs/ Y tá<br>\
 Gurney (n) /ˈɡɜː.ni/ Xe đẩy tay<br>\
 Waiting room (n) /ˈweɪ.tɪŋ ruːm/ Phòng chờ<br>\
 Surgeon (n) /ˈsɜː.dʒən/ Bác sĩ phẫu thuật<br>\
+Surgery (n) /ˈsɜːrdʒəri/ Ca phẫu thuật<br>\
 Midwife (n) /ˈmɪd.waɪf/ Bà đỡ<br>\
 Injection (n) /ɪnˈdʒek.ʃən/ Việc tiêm thuốc<br>\
 Calcium (n) /ˈkæl.si.əm/ Canxi<br>\
@@ -438,6 +439,7 @@ Recovery (n) /rɪˈkʌv.ər.i/ Sự bình phục<br>\
 Suffer (v) /ˈsʌf.ər/ Chịu đựng<br>\
 Deteriorate (v) /dɪˈtɪə.ri.ə.reɪt/ Xấu đi, tệ hơn<br>\
 Coma (n) /ˈkəʊ.mə/ Sự hôn mê<br>\
+Well-paid (a) /wel ˈpeɪd/ Được trả lương cao<br>\
 Cold (n,a) /ˈkəʊld/ Bệnh cảm, lạnh, rét",
 }
 ,{

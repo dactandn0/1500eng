@@ -194,12 +194,10 @@ voca:"articles,share,mention,educational,fault,socialize,addicted,disabled,acces
 {
 en:"Unit 10 The Nobel Prize<br>\
 - One of the greatest achievements in the world is to win the Nobel Prize. It has been given to people since 1901. There are prizes for physics, chemistry, and medicine. There are also prizes for literature, economics, and peace. The Nobel Prize is named after Alfred Nobel. He was born in Stockholm, Sweden, in 1833. Alfred Nobel invented dynamite in 1866. Dynamite is used in mining, construction, and war. Before he died, he wrote that all of his money should be used to create the Nobel Prize. He died in 1896. The first prize was given in 1901.<br>\
-<br>\
 - Each prize has three parts: a diploma, a gold medal, and money. The money has increased since 1980. It is now ten million Swedish crowns. This is about one million euros. How are the winners chosen? Five committees secretly meet to pick the winners. The Nobel Prize for Economics is the only one that is not decided that way. That is because it was created in 1956 by the Bank of Sweden in honor of the fiftieth anniversary of Alfred Nobel’s death. The Bank of Sweden decides who gets the Nobel Prize for Economics. Since 1901, over 750 people have won the Nobel Prize."
 ,
 vi:"Bài 10 Giải Nobel<br>\
 - Một trong những thành tựu vĩ đại nhất trên thế giới là giành được Giải Nobel. Giải thưởng này đã được trao cho mọi người từ năm 1901. Có các giải thưởng về vật lý, hóa học và y học. Ngoài ra còn có các giải thưởng về văn học, kinh tế và hòa bình. Giải Nobel được đặt theo tên của Alfred Nobel. Ông sinh ra tại Stockholm, Thụy Điển, vào năm 1833. Alfred Nobel đã phát minh ra thuốc nổ vào năm 1866. Thuốc nổ được sử dụng trong khai thác mỏ, xây dựng và chiến tranh. Trước khi mất, ông đã viết rằng toàn bộ số tiền của mình nên được dùng để tạo ra Giải Nobel. Ông mất năm 1896. Giải thưởng đầu tiên được trao vào năm 1901.<br>\
-<br>\
 - Mỗi giải thưởng gồm ba phần: bằng tốt nghiệp, huy chương vàng và tiền. Số tiền đã tăng lên kể từ năm 1980. Hiện tại, giải thưởng là mười triệu crown Thụy Điển. Tương đương khoảng một triệu euro. Người chiến thắng được chọn như thế nào? Năm ủy ban bí mật họp để chọn ra người chiến thắng. Giải Nobel Kinh tế là giải thưởng duy nhất không được quyết định theo cách đó. Đó là vì giải thưởng này được Ngân hàng Thụy Điển tạo ra vào năm 1956 để vinh danh kỷ niệm 50 năm ngày mất của Alfred Nobel. Ngân hàng Thụy Điển quyết định ai sẽ nhận được Giải Nobel Kinh tế. Kể từ năm 1901, hơn 750 người đã giành được Giải Nobel.",
 voca:"achievements,construction,decides,invented,committees,increase,chemistry,brick,dynamite,literature"
 },
@@ -253,19 +251,13 @@ B: Nghe tuyệt quá!"
 {
 en:"Unit 13 The Hot New Movie<br>\
 The latest blockbuster movie Robots Attack 2 starring Garrison Fort opened yesterday. Fort and Andy Robot are at it again, saving people from the jaws of death. The evil robots are invading Atlantis once again. The crowds seemed to love the sequel. Maybe they loved it as much, if not more than, the first Robots Attack. The special effects are fantastic! Mr. Fort seems to have worked on his fighting technique. His martial arts skills are amazing. He beats the evil robots easily.<br>\
-<br>\
 Of course, our leading man saves a lady in distress, the fair Angie. She promptly falls in love with Garrison the hero. However, Andy Robot is jealous of this new love.<br>\
-<br>\
 He spends a good part of the movie trying to ruin their plans. Another surprise is the evil robot, Homer, who decides he wants to become a do-gooder. His partner, Ethel, works hard to make him return to his evil ways.<br>\
-<br>\
 Does Andy Robot succeed in rescuing Garrison Fort from love? What about Ethel? Does she bring Homer back to his evil ways? To find out, head for the theater, buy a ticket, and sit back and relax."
 ,vi:"Unit 13 The Hot New Movie<br>\
 Phim bom tấn mới nhất Robots Attack 2 có sự tham gia của Garrison Fort đã ra mắt vào ngày hôm qua. Fort và Andy Robot lại tiếp tục hành trình, cứu mọi người khỏi nanh vuốt tử thần. Những chú robot độc ác đang xâm chiếm Atlantis một lần nữa. Khán giả dường như rất thích phần tiếp theo. Có lẽ họ thích nó nhiều như, nếu không muốn nói là hơn, phần đầu Robots Attack. Các hiệu ứng đặc biệt thật tuyệt vời! Có vẻ như ông Fort đã rèn luyện kỹ thuật chiến đấu của mình. Kỹ năng võ thuật của ông thật tuyệt vời. Ông dễ dàng đánh bại những chú robot độc ác.<br>\
-<br>\
 Tất nhiên, nam chính của chúng ta đã cứu một người phụ nữ gặp nạn, cô gái xinh đẹp Angie. Cô ấy nhanh chóng yêu anh hùng Garrison. Tuy nhiên, Andy Robot lại ghen tị với tình yêu mới này.<br>\
-<br>\
 Anh ta dành phần lớn thời lượng của bộ phim để cố gắng phá hỏng kế hoạch của họ. Một điều bất ngờ khác là chú robot độc ác, Homer, quyết định trở thành một người làm việc thiện. Người bạn đời của anh, Ethel, đã làm việc chăm chỉ để khiến anh quay lại con đường tội lỗi của mình.<br>\
-<br>\
 Liệu Andy Robot có thành công trong việc giải cứu Garrison Fort khỏi tình yêu không? Còn Ethel thì sao? Liệu cô ấy có đưa Homer quay lại con đường tội lỗi của mình không? Để tìm hiểu, hãy đến rạp chiếu phim, mua vé và ngồi xuống thư giãn."
 ,voca:"blockbuster,distress,leading man,martial,art,do-gooder,promptly",
 note:['distress, danger']
@@ -273,20 +265,186 @@ note:['distress, danger']
 {
 en:"Unit 14 A Faux Pas<br>\
 G : It happens a lot. So many people visit and live in foreign countries nowadays. The culture and manners of every country are different. It is likely that a foreigner will say or do something inappropriate. This is called a faux pas. In one culture, it is fine to do something one way. In another culture, it is rude.<br>\
-<br>\
 For example, my friend visited a relative in Israel. She offered to wash the dishes. She did not know that it was important to wash the meat dishes with a special sponge. She used the wrong sponge. Her friend’s father was very upset. In Canada, it is fine to use the same sponge to wash all of the dishes, but not in Israel.<br>\
-<br>\
 Something similar happened to me when I visited a temple in India. I was surprised when two officials stopped me and told me to take off my shoes. It was only then that I realized that people are not allowed to enter a temple with their shoes on. I was very embarrassed. Of course, I apologized for my mistake.<br>\
-<br>\
 A faux pas is embarrassing. No one wants to be rude. No one wants to cause problems. However, when two cultures meet, there can be misunderstandings. The next time someone is rude, be patient and understanding. He may think he is acting politely."
 ,vi:"Bài 14 Một lỗi sai<br>\
 G: Điều này xảy ra rất nhiều. Ngày nay, rất nhiều người đến thăm và sinh sống ở nước ngoài. Văn hóa và cách cư xử của mỗi quốc gia đều khác nhau. Rất có thể người nước ngoài sẽ nói hoặc làm điều gì đó không phù hợp. Đây được gọi là lỗi sai. Ở một nền văn hóa, làm một việc theo một cách nào đó là bình thường. Ở một nền văn hóa khác, làm như vậy là thô lỗ.<br>\
-<br>\
 Ví dụ, bạn tôi đến thăm một người họ hàng ở Israel. Cô ấy đề nghị rửa bát. Cô ấy không biết rằng rửa bát bằng một miếng bọt biển chuyên dụng là rất quan trọng. Cô ấy đã sử dụng nhầm miếng bọt biển. Bố của bạn cô ấy rất tức giận. Ở Canada, bạn có thể sử dụng cùng một miếng bọt biển để rửa tất cả các món ăn, nhưng ở Israel thì không.<br>\
-<br>\
 Một điều tương tự đã xảy ra với tôi khi tôi đến thăm một ngôi đền ở Ấn Độ. Tôi đã rất ngạc nhiên khi hai viên chức chặn tôi lại và bảo tôi cởi giày. Chỉ đến lúc đó tôi mới nhận ra rằng mọi người không được phép vào đền khi đang đi giày. Tôi đã rất xấu hổ. Tất nhiên, tôi đã xin lỗi vì lỗi của mình.<br>\
-<br>\
 Một lỗi lầm là đáng xấu hổ. Không ai muốn thô lỗ. Không ai muốn gây ra vấn đề. Tuy nhiên, khi hai nền văn hóa gặp nhau, có thể có sự hiểu lầm. Lần tới khi ai đó thô lỗ, hãy kiên nhẫn và thông cảm. Anh ta có thể nghĩ rằng mình đang hành động lịch sự."
 ,voca:"culture,faux pas,inappropriate,relative,sponge,embarrassing,rude",
-}	
+},
+{
+	title:"Unit 15 The List",
+	en:"Unit 15 The List<br>\
+G: Thanks for coming, Dad. I can't believe my first day of school is just next week!<br>\
+M: Your mother and I are proud of you. Greer is a very prestigious art school.<br>\
+G: There is an enormous list of art supplies. They are mostly items I don't recognize.<br>\
+M: Let's look for the supplies that you recognize, Megan, and then we can get help with the rest. <br>\
+G: I need a large drawing board. I also need a drawing pad one meter by half a meter in size, newsprint paper, and a set of artist's drawing pencils.<br>\
+M: Here is the drawing board, and I noticed the pencils over there. What's next?<br>\
+G: I need watercolor paint, various brushes, India ink, and a fountain pen.<br>\
+M: They are on the wall display.<br>\
+G: Now we need to locate the vine charcoal.<br>\
+M: Excuse me, miss.<br>\
+W: Yes, sir? How can I help you?<br>\
+M: We're trying to find vine charcoal. Do you know what that is, and where we can find it?<br>\
+W: Vine charcoal is specially-burned wood. Burning it makes it like a black chalk. It is commonly used for drawing. Vine charcoal is very easy to erase, so we keep it next to the erasers.<br>\
+G: That's everything, Dad!<br>\
+M: Great! Let's pay for all these supplies."
+	,vi:"Bài 15 Danh sách<br>\
+G: Cảm ơn bố đã đến. Con không thể tin là ngày đầu tiên đi học của con chỉ mới là tuần tới!<br>\
+M: Mẹ con và bố tự hào về con. Greer là một trường nghệ thuật rất danh tiếng.<br>\
+G: Có một danh sách đồ dùng nghệ thuật khổng lồ. Hầu hết là những món đồ mà con không nhận ra.<br>\
+M: Chúng ta hãy tìm những đồ dùng mà con nhận ra, Megan, và sau đó chúng ta có thể nhờ giúp đỡ với phần còn lại. <br>\
+G: Bố cần một tấm bảng vẽ lớn. Bố cũng cần một tấm bảng vẽ kích thước một mét x nửa mét, giấy báo và một bộ bút chì vẽ của họa sĩ.<br>\
+M: Đây là bảng vẽ, và bố thấy những chiếc bút chì ở đằng kia. Tiếp theo là gì?<br>\
+G: Tôi cần màu nước, nhiều loại cọ, mực tàu và bút máy.<br>\
+M: Chúng được treo trên tường.<br>\
+G: Bây giờ chúng ta cần tìm than củi.<br>\
+M: Xin lỗi, cô.<br>\
+W: Vâng, thưa ông? Tôi có thể giúp gì cho ông?<br>\
+M: Chúng tôi đang cố tìm than củi. Ông có biết đó là gì không và chúng tôi có thể tìm thấy nó ở đâu?<br>\
+W: Than củi là loại gỗ được đốt đặc biệt. Đốt nó sẽ biến nó thành phấn đen. Nó thường được dùng để vẽ. Than củi rất dễ xóa, vì vậy chúng tôi để nó cạnh cục tẩy.<br>\
+G: Vậy là xong, bố!<br>\
+M: Tuyệt! Chúng ta hãy trả tiền cho tất cả những vật dụng này."
+	,voca:"",
+},
+{
+	title:"Unit 16 Family Camping",
+	en:"Unit 16 Family Camping<br>\
+There are many popular leisure time activities, but one of the most enjoyable is family time. Most people enjoy being with their families. There are many things to do with your family, too. Families can go to the movies, travel, visit museums, and play sports together. The most common family activity is probably camping.<br>\
+Many families like camping. It is a chance for the whole family to work together. They can stay in the wild. Children gather dry wood for the fire. Their parents set up the tents. Then the whole family gathers around the fire. They enjoy a special meal together. Then, they set off into the woods with a compass and a map. After hiking the trails, everyone gets a fishing pole. Each person casts the fishing line out into the river. Who gets the biggest fish? It's a great contest.<br>\
+Later, the children clean the fish by the river. They take the scales off the fish. Mom fries the fish over the campfire. Dad cleans up when everyone is finished. You don't want wild animals coming to eat your leftovers! Then everyone goes into their tents for a restful night.<br>\
+While there are many things that families can do together, camping is probably the most exciting."
+	,vi:"Bài 16 Cắm trại gia đình<br>\
+Có nhiều hoạt động giải trí phổ biến, nhưng một trong những hoạt động thú vị nhất là thời gian dành cho gia đình. Hầu hết mọi người đều thích ở bên gia đình. Cũng có nhiều việc để làm với gia đình bạn. Các gia đình có thể đi xem phim, du lịch, tham quan bảo tàng và chơi thể thao cùng nhau. Hoạt động gia đình phổ biến nhất có lẽ là cắm trại.<br>\
+Nhiều gia đình thích cắm trại. Đây là cơ hội để cả gia đình cùng nhau làm việc. Họ có thể ở ngoài thiên nhiên. Trẻ em thu thập củi khô để nhóm lửa. Cha mẹ dựng lều. Sau đó, cả gia đình quây quần bên đống lửa. Họ cùng nhau thưởng thức bữa ăn đặc biệt. Sau đó, họ vào rừng với một chiếc la bàn và một bản đồ. Sau khi đi bộ đường dài trên những con đường mòn, mọi người đều nhận được một cần câu. Mỗi người ném dây câu xuống sông. Ai bắt được con cá lớn nhất? Đó là một cuộc thi tuyệt vời.<br>\
+Sau đó, trẻ em làm sạch cá bên bờ sông. Chúng gỡ vảy cá. Mẹ chiên cá trên lửa trại. Bố dọn dẹp khi mọi người đã hoàn thành. Bạn không muốn động vật hoang dã đến ăn đồ ăn thừa của bạn! Sau đó, mọi người sẽ vào lều của mình để nghỉ ngơi qua đêm.<br>\
+Mặc dù có nhiều hoạt động mà các gia đình có thể cùng nhau làm, nhưng cắm trại có lẽ là hoạt động thú vị nhất."
+	,voca:"",
+},
+{
+	title:"Unit 17 The Amusement Park",
+	en:"Unit 17 The Amusement Park<br>\
+M: I love this amusement park, Fran! Thanks for suggesting it. I am having a fantastic time. There's that new ride! It's called, 'The Volcano' and it's supposed to be amazing.<br>\
+W: That looks awfully high. Do you really want to try it? We've experienced 'The Rocket', the giant Ferris Wheel, and those bumper boats. Don't you think that's enough? Besides, I am absolutely starving.<br>\
+M: If you come on 'The Volcano' with me, I'll buy you a pizza with whatever toppings you want. <br>\
+W: Do you really mean any topping, even mushrooms, which you don't like?<br>\
+M: Yes, I will even order a pizza with mushrooms! <br>\
+W: OK, Michael. I will try this last ride.<br>\
+M: Great, Fran! I know you will enjoy this. Did you know that when the volcano erupts, our seats shake? I heard it is quite an experience.<br>\
+W: I am not sure that I want to get on this ride anymore. M: Don't worry, Fran. Look at the people getting off the ride. They look very satisfied.<br>\
+W: I'm sorry, but I don't think I can do this, even for pizza. How would you feel if I bought lunch instead?<br>\
+M: I don't want to force you to do something you really don't want to do. And I am hungry. Sure, let's get some lunch.<br>\
+W: I want to try this new restaurant called Skylight. The top of the restaurant spins while you eat!<br>\
+M: Oh, wow! Let's go!"
+	,vi:"Bài 17 Công viên giải trí<br>\
+M: Tôi thích công viên giải trí này, Fran! Cảm ơn vì đã gợi ý. Tôi đang có một khoảng thời gian tuyệt vời. Có một trò chơi mới! Nó được gọi là 'The Volcano' và được cho là tuyệt vời.<br>\
+W: Trông cao quá. Bạn có thực sự muốn thử không? Chúng ta đã trải nghiệm 'The Rocket', Vòng đu quay khổng lồ và những chiếc thuyền đụng nhau. Bạn không nghĩ thế là đủ sao? Hơn nữa, tôi đang đói ngấu đây.<br>\
+M: Nếu bạn đi 'The Volcano' với tôi, tôi sẽ mua cho bạn một chiếc pizza với bất kỳ loại topping nào bạn muốn. <br>\
+W: Bạn thực sự muốn nói đến bất kỳ loại topping nào, ngay cả nấm, mà bạn không thích sao?<br>\
+M: Vâng, tôi thậm chí sẽ gọi một chiếc pizza với nấm! <br>\
+W: Được thôi, Michael. Tôi sẽ thử trò chơi cuối cùng này.<br>\
+M: Tuyệt, Fran! Tôi biết bạn sẽ thích trò này. Bạn có biết rằng khi núi lửa phun trào, ghế của chúng ta rung chuyển không? Tôi nghe nói đó là một trải nghiệm khá thú vị.<br>\
+W: Tôi không chắc mình có muốn tham gia trò chơi này nữa không. M: Đừng lo, Fran. Nhìn những người xuống khỏi trò chơi này kìa. Họ trông rất thỏa mãn.<br>\
+W: Tôi xin lỗi, nhưng tôi không nghĩ mình có thể làm được, ngay cả khi mua pizza. Bạn sẽ cảm thấy thế nào nếu tôi mua bữa trưa thay thế?<br>\
+M: Tôi không muốn ép bạn làm điều mà bạn thực sự không muốn làm. Và tôi đói. Được thôi, chúng ta hãy đi ăn trưa.<br>\
+W: Tôi muốn thử nhà hàng mới có tên là Skylight. Phần trên của nhà hàng sẽ quay trong khi bạn ăn!<br>\
+M: Ồ, tuyệt quá! Đi nào!"
+	,voca:"",
+},
+{
+	title:"Unit 18 Fresh Lemonade",
+	en:"Unit 18 Fresh Lemonade<br>\
+B: How can I earn some extra money this summer? <br>\
+G: Why don't we start a lemonade stand, Will? <br>\
+B: That's a great idea, Mary, but do you think we will make any money?<br>\
+G: If we set up in an area with a lot of traffic on a hot day, we will get plenty of customers. We can charge $1.50 per cup.<br>\
+B: That sounds a little expensive.<br>\
+G: But we need to charge that much to cover our expenses. By charging $1.50 per cup, we can make good money with our lemonade stand. <br>\
+B: OK. What do we need to get started? <br>\
+G: We need the ingredients to make lemonade, so we need lemons, sugar, and water. We need something to keep our money in, a sign to advertise the lemonade, paper cups, and a cardboard box to use as a stand.<br>\
+B: Should we sell food to go with the lemonade? <br>\
+G: I think that would be too complicated. We would need a permit and either a cooler or stove. We should stick to just selling lemonade.<br>\
+B: You're right, let's just keep it simple. <br>\
+G: OK, let's get set up and think of a plan to get some customers and make some sales!<br>\
+B: Why don't I attract the customers and you serve the lemonade?<br>\
+G: Sounds good to me."
+	,vi:"Bài 18 Nước chanh tươi<br>\
+B: Làm sao để kiếm thêm tiền vào mùa hè này? <br>\
+G: Tại sao chúng ta không mở một quầy nước chanh nhỉ, Will? <br>\
+B: Ý tưởng tuyệt vời đấy, Mary, nhưng bạn nghĩ chúng ta có kiếm được tiền không?<br>\
+G: Nếu chúng ta mở ở một khu vực có nhiều phương tiện giao thông vào một ngày nóng nực, chúng ta sẽ có rất nhiều khách hàng. Chúng ta có thể tính 1,50 đô la cho một cốc.<br>\
+B: Nghe có vẻ hơi đắt.<br>\
+G: Nhưng chúng ta cần tính nhiều như vậy để trang trải chi phí. Bằng cách tính 1,50 đô la cho một cốc, chúng ta có thể kiếm được nhiều tiền với quầy nước chanh của mình. <br>\
+B: Được rồi. Chúng ta cần những gì để bắt đầu? <br>\
+G: Chúng ta cần nguyên liệu để làm nước chanh, vì vậy chúng ta cần chanh, đường và nước. Chúng ta cần thứ gì đó để giữ tiền, một biển quảng cáo nước chanh, cốc giấy và hộp các tông để dùng làm giá đỡ.<br>\
+B: Chúng ta có nên bán đồ ăn kèm với nước chanh không? <br>\
+G: Tôi nghĩ như vậy sẽ quá phức tạp. Chúng ta cần giấy phép và một cái tủ lạnh hoặc bếp. Chúng ta nên chỉ bán nước chanh.<br>\
+B: Bạn nói đúng, chúng ta hãy làm đơn giản thôi. <br>\
+G: Được rồi, chúng ta hãy chuẩn bị và nghĩ ra một kế hoạch để có thêm khách hàng và bán được hàng!<br>\
+B: Tại sao tôi không thu hút khách hàng và bạn phục vụ nước chanh nhỉ?<br>\
+G: Nghe có vẻ ổn đấy."
+	,voca:"",
+},
+{
+	title:"Unit 19 At the Movies",
+	en:"Unit 19 At the Movies<br>\
+M: Ticket prices have certainly gone up!<br>\
+W: Yes, but I really needed a break, so if the price is a bit higher, it doesn't matter. Besides, I really want to see this movie on the big screen.<br>\
+M: Would you like something to snack on while we watch the movie?<br>\
+W: Sure. What do they have?<br>\
+M: It looks like the standard popcorn and soda. But there's also ice cream, hot dogs, and coffee. <br>\
+W: I have a craving for chocolate, but I should attempt to eat something healthy. I want to avoid getting sick this year. I am trying to change my diet. <br>\
+M: I'm afraid the healthiest item may be the coffee. <br>\
+W: Do they have any muffins?<br>\
+M: No, but they do have brownies.<br>\
+W: I haven't had a brownie in a long time. Please get me a brownie and a coffee. What are you getting?<br>\
+M: I'm getting the large popcorn and a cola. <br>\
+W: Here is some money.<br>\
+M: It's on me.<br>\
+W: No, please. The tickets were extremely expensive. I know you are on a restricted budget.<br>\
+M: I insist. Did you want cream and sugar in your coffee?<br>\
+W: Well, thank you very much. No cream in the coffee, please.<br>\
+M: So, you probably don't want sugar, either?<br>\
+W: No, I think there is enough sugar in the brownies. I'll find us some seats near the aisle."
+	,vi:"Unit 19 At the Movies<br>\
+M: Giá vé chắc chắn đã tăng!<br>\
+W: Vâng, nhưng tôi thực sự cần nghỉ ngơi, vì vậy nếu giá cao hơn một chút, thì cũng không sao. Hơn nữa, tôi thực sự muốn xem bộ phim này trên màn hình lớn.<br>\
+M: Bạn có muốn ăn nhẹ gì đó trong khi chúng ta xem phim không?<br>\
+W: Chắc chắn rồi. Họ có gì?<br>\
+M: Có vẻ như là bỏng ngô và soda thông thường. Nhưng cũng có kem, xúc xích và cà phê. <br>\
+W: Tôi thèm sô cô la, nhưng tôi nên cố gắng ăn thứ gì đó lành mạnh. Tôi muốn tránh bị ốm trong năm nay. Tôi đang cố gắng thay đổi chế độ ăn uống của mình. <br>\
+M: Tôi sợ rằng món lành mạnh nhất có thể là cà phê. <br>\
+W: Họ có bánh nướng xốp không?<br>\
+M: Không, nhưng họ có bánh brownie.<br>\
+W: Tôi đã không ăn bánh brownie trong một thời gian dài. Làm ơn lấy cho tôi một chiếc bánh brownie và một cốc cà phê. Bạn muốn gì?<br>\
+M: Tôi sẽ lấy một hộp bỏng ngô lớn và một cốc cola. <br>\
+W: Đây là tiền.<br>\
+M: Tôi trả.<br>\
+W: Không, làm ơn. Giá vé cực kỳ đắt. Tôi biết bạn đang eo hẹp về ngân sách.<br>\
+M: Tôi nài nỉ. Bạn có muốn thêm kem và đường vào cà phê không?<br>\
+W: Vâng, cảm ơn bạn rất nhiều. Không có kem vào cà phê, làm ơn.<br>\
+M: Vậy, có lẽ bạn cũng không muốn thêm đường?<br>\
+W: Không, tôi nghĩ là có đủ đường trong bánh brownie. Tôi sẽ tìm cho chúng ta một số chỗ ngồi gần lối đi."
+	,voca:"",
+},
+{
+	title:"Unit 20 Hobbies",
+	en:"Unit 20 Hobbies<br>\
+When someone does an activity that is not a part of his or her job and is done for fun, it is called a hobby. Most people enjoy hobbies during their free time. Some people spend a lot of time on their hobbies. There are nearly as many kinds of hobbies, as there are people. A hobby can be about making or collecting things, or enjoying an experience. <br>\
+Creative hobbies are popular. Some creative hobbies are writing, drawing, and making pottery. A lot of people like making jewelry or clothes. People who do these kinds of hobbies sometimes become writers or artists when they retire.<br>\
+Collecting is also popular. Most collectors used to buy coins, stamps, or baseball cards. Today, toys, games, and model cars are trendy. Collectors buy and sell things on the Internet. They also shop online in stores all around the world.<br>\
+Enjoying an experience is a hobby, too. Some people listen to music. Others watch movies or read books. Many people travel or play sports. Helping people is a hobby. There are places you can help build houses for poor families. You can help feed the homeless at soup kitchens. You can also tutor children or help the elderly.<br>\
+A hobby is something that is done for fun. With so many choices, there is no reason not to enjoy a hobby."
+	,vi:"Bài 20 Sở thích<br>\
+Khi ai đó làm một hoạt động không phải là một phần công việc của họ và được thực hiện để giải trí, thì đó được gọi là sở thích. Hầu hết mọi người đều thích sở thích trong thời gian rảnh rỗi. Một số người dành nhiều thời gian cho sở thích của họ. Có rất nhiều loại sở thích, cũng như có nhiều người. Sở thích có thể là về việc tạo ra hoặc sưu tầm đồ vật, hoặc tận hưởng một trải nghiệm. <br>\
+Sở thích sáng tạo rất phổ biến. Một số sở thích sáng tạo là viết lách, vẽ và làm đồ gốm. Nhiều người thích làm đồ trang sức hoặc quần áo. Những người làm những sở thích này đôi khi trở thành nhà văn hoặc nghệ sĩ khi họ nghỉ hưu.<br>\
+Sưu tầm cũng rất phổ biến. Hầu hết những người sưu tầm trước đây thường mua tiền xu, tem hoặc thẻ bóng chày. Ngày nay, đồ chơi, trò chơi và mô hình xe hơi đang là xu hướng. Những người sưu tầm mua và bán đồ trên Internet. Họ cũng mua sắm trực tuyến tại các cửa hàng trên khắp thế giới.<br>\
+Tận hưởng một trải nghiệm cũng là một sở thích. Một số người nghe nhạc. Những người khác xem phim hoặc đọc sách. Nhiều người đi du lịch hoặc chơi thể thao. Giúp đỡ mọi người là một sở thích. Có những nơi bạn có thể giúp xây nhà cho các gia đình nghèo. Bạn có thể giúp nuôi người vô gia cư tại các bếp ăn từ thiện. Bạn cũng có thể dạy kèm trẻ em hoặc giúp đỡ người già.<br>\
+Sở thích là thứ được thực hiện vì mục đích vui vẻ. Với rất nhiều lựa chọn, không có lý do gì để không tận hưởng sở thích."
+	,voca:"",
+}
 ]

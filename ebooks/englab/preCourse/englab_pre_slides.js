@@ -558,4 +558,26 @@ stunning (a) /ˈstʌnɪŋ/ kinh ngạc, tuyệt vời<br>\
 breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt"
 	,voca:"",
 }	
+,{
+	date:"23/10/2024",
+	title:"[L] Unit 6. Successful people",
+	en:"<b>Voca</b><br>\
+athlete<br>\
+weightlifter<br>\
+well-paid (a) /wel ˈpeɪd/ Được trả lương cao<br>\
+brilliant (a) /ˈbrɪliənt/ xuất sắc<br>\
+surgery<br>\
+surgeon"
+	,vi:""
+	,voca:"",
+}
+
+
+
+
+
+
+
+
+
 ].reverse();

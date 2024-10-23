@@ -420,11 +420,13 @@ reward (n) phần thưởng<br>\
 rewarding (a) /rɪˈwɔːrdɪŋ/ đáng hài lòng, có ích<br>\
 set đặt<br>\
 steal trộm<br>\
-thief  kẻ trộm<br>\
+thief (n) /θiːf/ kẻ trộm<br>\
 advance tiến lên<br>\
-athlete vận động viên<br>\
+athlete (n) /ˈæθliːt/ vận động viên<br>\
+weightlifter (n) /ˈweɪtlɪftər/ người cử tạ<br>\
 average trung bình<br>\
 behavior hành vi<br>\
+brilliant (a) /ˈbrɪliənt/ xuất sắc<br>\
 behind đằng sau<br>\
 course khóa học<br>\
 lower thấp hơn<br>\
@@ -1017,7 +1019,6 @@ recall nhớ lại<br>\
 regret hối tiếc<br>\
 soul linh hồn<br>\
 sufficient đủ<br>\
-surgery phẫu thuật<br>\
 tough khó khăn<br>\
 tube ống<br>\
 admit thừa nhận<br>\

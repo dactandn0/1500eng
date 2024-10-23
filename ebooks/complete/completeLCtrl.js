@@ -2,29 +2,16 @@
 document.write('<script src="./ebooks/complete/listen_data/complete_cd1.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/complete/listen_data/complete_cd2.js" type="text/javascript"></script>');
 
-function MYLOG(msg) {
-//	console.log(msg);
-}
-
 var app = angular.module("completeLApp", ['ngSanitize']);
 app.controller("completeLCtrl", function($scope, $rootScope, $timeout) {
 
 var kSTORIES = complete_cd1; // 1
 
-radioCDChange = function (cd) {
-	$scope.cd = cd;
-	if (cd===1) {
-		$scope.stories = complete_cd1;  // update UI
-		kSTORIES = complete_cd1;
-	}
-}
-
-$scope.cd = 1;
 $scope.stories = kSTORIES; //1
 $scope.storyIdx = 0;
 
 $scope.createAudioSrc = function() {
-	return "./ebooks/complete/listen_data/cd" + $scope.cd + "/" + $scope.story.idx + '.mp3';
+	return "./ebooks/complete/listen_data/audio/" + $scope.story.track + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -71,13 +58,6 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("complete_cd")) {
-		var cd = localStorage.complete_cd;
-		radioCDChange(parseInt(cd));
-		document.complete_cdForm.radioCD.value=cd;
-		$scope.cd=cd;
-	}
-
 	if (localStorage.hasOwnProperty("complete_unit")) {
 		$scope.storyIdx = parseInt(localStorage.complete_unit);
 	}
@@ -86,6 +66,7 @@ $scope.loadData = function () {
 };
 
 $scope.init = function () {
+	$scope.loadData();
 	$scope.fetchStory($scope.storyIdx, false);
 };
 

@@ -215,5 +215,64 @@ Since I started using this technique, I've made great progress. I've become more
 Tôi xem video này vì lúc đó, tôi thực sự gặp khó khăn trong quá trình luyện nghe. Tôi liên tục bỏ sót các chi tiết nhỏ và gặp khó khăn trong việc bắt đúng từ ngữ. Người thuyết trình đã giúp đỡ rất nhiều, anh ấy rất rõ ràng và đưa ra những ví dụ tuyệt vời, chia nhỏ từng bước một.<br>\
 Kể từ khi tôi bắt đầu sử dụng kỹ thuật này, tôi đã đạt được tiến bộ lớn. Tôi đã chú ý hơn và cuối cùng đã nắm được cách xác định các từ và cụm từ cụ thể, ngay cả trong cuộc trò chuyện nhanh. Và tôi không thể không cảm thấy một cảm giác tự hào dâng trào trong tim."
 	,voca:"",
+},
+{
+	track:"describe_photograph00",
+	title:"Describe a photograph of yourself that you like",
+	en:"The photograph I'd like to describe is a cherished one from my teenage years, which captures a moment when I truly felt pretty for the first time. It was taken during a family gathering on a warm summer evening.<br>\
+In the photograph, I'm standing in front of a beautiful garden adorned with colorful flowers, and the soft, golden rays of the setting sun bathed the scene in a warm, flattering light. I was wearing a simple, elegant dress that I had picked out for the occasion, and my hair was gently ruffled by the breeze.<br>\
+What struck me most when I saw this photograph was not just my appearance, but the genuine happiness that radiated from my smile. I remember that evening vividly; it was a rare moment of self-assurance. Prior to that, I had often felt awkward about my appearance, like many teenagers do. But on that particular day, the combination of the lovely surroundings and the joy of being with loved ones made me feel truly beautiful.<br>\
+This photograph has since become a source of confidence, reminding me that beauty transcends physical appearance. It underscores the notion that genuine beauty is rooted in our happiness, experiences, and inner contentment."
+	,vi:"Bức ảnh tôi muốn mô tả là bức ảnh tôi trân trọng chụp từ thời niên thiếu, ghi lại khoảnh khắc tôi thực sự cảm thấy mình xinh đẹp lần đầu tiên. Bức ảnh được chụp trong một buổi họp mặt gia đình vào một buổi tối mùa hè ấm áp.<br>\
+Trong ảnh, tôi đang đứng trước một khu vườn xinh đẹp được trang trí bằng những bông hoa đầy màu sắc, và những tia nắng vàng dịu nhẹ của mặt trời lặn chiếu rọi khung cảnh trong ánh sáng ấm áp, tôn lên vẻ đẹp. Tôi đang mặc một chiếc váy đơn giản, thanh lịch mà tôi đã chọn cho dịp này, và mái tóc tôi được gió nhẹ nhàng thổi tung.<br>\
+Điều khiến tôi ấn tượng nhất khi nhìn thấy bức ảnh này không chỉ là vẻ ngoài của tôi, mà còn là niềm hạnh phúc thực sự tỏa ra từ nụ cười của tôi. Tôi nhớ rất rõ buổi tối hôm đó; đó là khoảnh khắc hiếm hoi tôi cảm thấy tự tin. Trước đó, tôi thường cảm thấy ngượng ngùng về ngoại hình của mình, giống như nhiều thiếu niên khác. Nhưng vào ngày hôm đó, sự kết hợp giữa khung cảnh đáng yêu và niềm vui khi được ở bên những người thân yêu đã khiến tôi cảm thấy thực sự xinh đẹp.<br>\
+Kể từ đó, bức ảnh này đã trở thành nguồn tự tin, nhắc nhở tôi rằng vẻ đẹp vượt qua ngoại hình. Nó nhấn mạnh quan niệm rằng vẻ đẹp thực sự bắt nguồn từ hạnh phúc, trải nghiệm và sự hài lòng bên trong của chúng ta."
+	,voca:"",
+},
+{
+	track:"describe_park_garden00",
+	title:"Describe a park/garden you enjoy visiting",
+	en:"One of the most enjoyable parks I've visited is the Butchart Gardens, located in Brentwood Bay, near Victoria on Vancouver Island, Canada. The sheer beauty and the meticulous design of this garden left an indelible mark on me.<br>\
+The Butchart Gardens are spread over 55 acres and have a rich history. It was originally a limestone quarry that was transformed by Jennie Butchart, a visionary horticulturist, into a stunning garden over a century ago. When I visited, I was struck by the variety of gardens within this vast space, each with its unique theme and character.<br>\
+The Sunken Garden, which was once the quarry itself, is a breathtaking display of colorful blooms, tiered terraces, and intricate pathways. The Rose Garden, with its aromatic and vibrant roses, is a sensory delight. The Japanese Garden offers tranquility and a Zen-like atmosphere with its ponds and ornate bridges.<br>\
+During my visit, I spent hours exploring the various sections of the garden, taking in the fragrant scents, and capturing the beauty through photographs. It was not just a visual treat but a peaceful retreat from the hustle and bustle of daily life.<br>\
+In conclusion, the Butchart Gardens is a horticultural masterpiece that offers a sensory journey through its diverse and meticulously crafted landscapes. It's a place that brings solace, wonder, and appreciation for the artistry of nature and human horticultural skill."
+	,vi:"Một trong những công viên thú vị nhất mà tôi từng ghé thăm là Butchart Gardens, nằm ở Vịnh Brentwood, gần Victoria trên Đảo Vancouver, Canada. Vẻ đẹp tuyệt đối và thiết kế tỉ mỉ của khu vườn này đã để lại ấn tượng khó phai trong tôi.<br>\
+Butchart Gardens trải rộng trên 55 mẫu Anh và có lịch sử lâu đời. Ban đầu, nơi đây là một mỏ đá vôi đã được Jennie Butchart, một nhà làm vườn có tầm nhìn xa, biến thành một khu vườn tuyệt đẹp cách đây hơn một thế kỷ. Khi đến thăm, tôi đã bị ấn tượng bởi sự đa dạng của các khu vườn trong không gian rộng lớn này, mỗi khu vườn đều có chủ đề và đặc điểm riêng.<br>\
+Sunken Garden, trước đây là chính mỏ đá, là nơi trưng bày ngoạn mục những bông hoa đầy màu sắc, những bậc thang nhiều tầng và những lối đi phức tạp. Rose Garden, với những bông hồng thơm ngát và rực rỡ, là một niềm vui giác quan. Japanese Garden mang đến sự yên tĩnh và bầu không khí giống như Thiền với những ao nước và những cây cầu trang trí công phu.<br>\
+Trong chuyến thăm của mình, tôi đã dành nhiều giờ khám phá các khu vực khác nhau của khu vườn, hít thở mùi thơm và ghi lại vẻ đẹp qua những bức ảnh. Không chỉ là một niềm vui thị giác mà còn là nơi ẩn dật yên bình tránh xa sự hối hả và nhộn nhịp của cuộc sống thường nhật.<br>\
+Tóm lại, Butchart Gardens là một kiệt tác làm vườn mang đến một hành trình cảm giác qua những cảnh quan đa dạng và được chế tác tỉ mỉ. Đây là nơi mang đến sự an ủi, ngạc nhiên và trân trọng nghệ thuật của thiên nhiên và kỹ năng làm vườn của con người."
+	,voca:"",
+},
+{
+	track:"describe_time_meeting00",
+	title:"Describe a time when you missed or were late for a meeting",
+	en:"One of the most memorable instances where I was late for a meeting was during my first year of university. I had an important group project meeting scheduled with my team, and I had planned to arrive 15 minutes early at the designated location. However, I ended up oversleeping due to a late-night study session and woke up an hour after the meeting had already started.<br>\
+Panicking, I immediately called my group members and apologized for my tardiness. They were un- derstandably frustrated, and I felt terrible for letting them down. I quickly got dressed and rushed to the meeting location, arriving nearly an hour late.<br>\
+When I finally arrived, my team members had already covered most of the topics on the agenda, and I felt like I had missed out on crucial information and discussion points. However, I immediately apologized and offered to catch up on what I had missed. I made sure to take diligent notes and ask questions to make up for my absence.<br>\
+I learned an important lesson that day about the importance of punctuality and being responsible for my commitments. Since then, I have made a conscious effort to prioritize my time and ensure that I am always punctual for meetings and other important events. The experience also taught me the value of communication and accountability in group settings, and I now make it a point to communicate effectively with my team members and take responsibility for my actions."
+	,vi:"Một trong những lần đáng nhớ nhất khi tôi đến muộn trong một cuộc họp là vào năm đầu tiên học đại học. Tôi có một cuộc họp nhóm quan trọng với nhóm của mình và tôi đã lên kế hoạch đến sớm hơn 15 phút tại địa điểm đã định. Tuy nhiên, tôi đã ngủ quên do phải học đêm muộn và thức dậy sau một giờ khi cuộc họp đã bắt đầu.<br>\
+Hoảng loạn, tôi ngay lập tức gọi điện cho các thành viên trong nhóm và xin lỗi vì sự chậm trễ của mình. Họ đã rất thất vọng, và tôi cảm thấy rất tệ vì đã làm họ thất vọng. Tôi nhanh chóng mặc quần áo và chạy đến địa điểm họp, đến muộn gần một giờ.<br>\
+Khi cuối cùng tôi đến nơi, các thành viên trong nhóm của tôi đã thảo luận hầu hết các chủ đề trong chương trình nghị sự và tôi cảm thấy như mình đã bỏ lỡ thông tin quan trọng và các điểm thảo luận. Tuy nhiên, tôi đã ngay lập tức xin lỗi và đề nghị sẽ theo kịp những gì tôi đã bỏ lỡ. Tôi đảm bảo ghi chép cẩn thận và đặt câu hỏi để bù đắp cho sự vắng mặt của mình.<br>\
+Tôi đã học được một bài học quan trọng vào ngày hôm đó về tầm quan trọng của việc đúng giờ và chịu trách nhiệm về các cam kết của mình. Kể từ đó, tôi đã nỗ lực có ý thức để ưu tiên thời gian của mình và đảm bảo rằng tôi luôn đúng giờ trong các cuộc họp và các sự kiện quan trọng khác. Trải nghiệm này cũng dạy cho tôi giá trị của giao tiếp và trách nhiệm trong các bối cảnh nhóm, và bây giờ tôi coi việc giao tiếp hiệu quả với các thành viên trong nhóm và chịu trách nhiệm cho hành động của mình là một điểm."
+	,voca:"",
+},
+{
+	track:"describe_instrument00",
+	title:"Describe a person who can play an instrument or has musical talents",
+	en:"One person who stands out for their musical talent is my friend Alex. He's an incredibly gifted pianist, and watching him play is truly mesmerizing. Starting at just five years old, he has not only mastered the basics but has also become proficient in complex classical compositions and jazz improvisation.<br>\
+What's really impressive about Alex is his ability to express emotions through his music. Whether it's joy, sorrow, or excitement, he translates these feelings into his piano playing in a way that really resonates with his audience. I remember one particular performance at a school event where he played Chopin's 'Nocturne', and you could literally hear a pin drop - the entire room was captivated.<br>\
+Besides his solo performances, Alex also collaborates with other musicians. He plays in a jazz band, where he often improvises, showing off his creative side. This versatility in different musical styles is what sets him apart. ENGLISH CENTER<br>\
+Furthermore, Alex's dedication to music is inspiring. ractices for hours every day and is ways eager to learn new techniques or pieces. His passion for music isn't just a hobby; it's a significant part of his identity. Watching his journey and growth as a musician is truly inspiring"
+	,vi:"Một người nổi bật về tài năng âm nhạc là bạn tôi Alex. Cậu ấy là một nghệ sĩ piano tài năng đáng kinh ngạc, và việc xem cậu ấy chơi thực sự mê hoặc. Bắt đầu từ năm tuổi, cậu ấy không chỉ thành thạo những điều cơ bản mà còn trở nên thành thạo trong các sáng tác cổ điển phức tạp và ứng tấu nhạc jazz.<br>\
+Điều thực sự ấn tượng về Alex là khả năng thể hiện cảm xúc thông qua âm nhạc của mình. Cho dù đó là niềm vui, nỗi buồn hay sự phấn khích, cậu ấy đều truyền tải những cảm xúc này vào cách chơi piano theo cách thực sự gây được tiếng vang với khán giả. Tôi nhớ một buổi biểu diễn đặc biệt tại một sự kiện của trường, nơi cậu ấy chơi bản 'Nocturne' của Chopin và bạn thực sự có thể nghe thấy tiếng một chiếc ghim rơi - toàn bộ căn phòng đều bị cuốn hút.<br>\
+Ngoài các buổi biểu diễn solo, Alex còn hợp tác với các nhạc sĩ khác. Cậu ấy chơi trong một ban nhạc jazz, nơi cậu ấy thường ứng tấu, thể hiện khía cạnh sáng tạo của mình. Sự linh hoạt trong các phong cách âm nhạc khác nhau chính là điều khiến cậu ấy trở nên khác biệt. ENGLISH CENTER<br>\
+Hơn nữa, sự cống hiến của Alex cho âm nhạc thật truyền cảm hứng. luyện tập hàng giờ mỗi ngày và rất háo hức học các kỹ thuật hoặc bản nhạc mới. Niềm đam mê âm nhạc của anh không chỉ là sở thích; đó là một phần quan trọng trong bản sắc của anh. Việc theo dõi hành trình và sự phát triển của anh với tư cách là một nhạc sĩ thực sự truyền cảm hứng"
+	,voca:"",
 }
+
+
+
+
+
 ];

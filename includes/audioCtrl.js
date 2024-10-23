@@ -1,7 +1,7 @@
 
 var app = angular.module('audioApp', []);
 
-app.controller('AudioCtrl', function($scope, $rootScope) {
+app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, $rootScope, toastr) {
 
 $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
@@ -63,20 +63,23 @@ $scope.playFullSound = function () {
 		$scope.stopSound();
 		return;
 	}
+		$scope.audio = new Audio($rootScope.audioSrc);
+		$scope.audio.volume = Helper_AudioVolume;   // not working
+	    $scope.audio.loop = false;
+	    window.playResult = $scope.audio.play();
 
-	$scope.audio = new Audio($rootScope.audioSrc);
-	$scope.audio.volume = Helper_AudioVolume;   // not working
-    $scope.audio.loop = false;
-    $scope.audio.play();
+	    $scope.bPlaying = true;
+	    $scope.bPause = false;
+	    $scope.$evalAsync();
 
-    $scope.bPlaying = true;
-    $scope.bPause = false;
-    $scope.$evalAsync();
-
-	$scope.audio.addEventListener("ended", function() {
-		$scope.stopSound();
-		$scope.$emit('parent_whenAudioEnded')
-	});
+		$scope.audio.addEventListener("ended", function() {
+			$scope.stopSound();
+			$scope.$emit('parent_whenAudioEnded')
+		});
+		playResult.catch(e => {
+        	toastr.error(e)
+        	$scope.stopSound();
+    	});
 }
-});
+}]);
 

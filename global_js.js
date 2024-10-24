@@ -297,3 +297,30 @@ Helper_SliceHalfString = function (str) {
 
 	return { p1:partOne, p2:partTwo, full:str }
 }
+
+
+Helper_saveDB = function(key, val = 0) {
+	localStorage.setItem(key, val);
+}
+
+Helper_loadInt = function(key, defVal = 0) {
+	if (localStorage.hasOwnProperty(key)) {
+		return parseInt(localStorage[key].trim());
+	}
+	return defVal;
+}
+
+Helper_loadStr = function(key, defVal = '') {
+	if (localStorage.hasOwnProperty(key)) {
+		return localStorage[key].trim();
+	}
+	return defVal;
+}
+
+Helper_loadAudioLoop = function() {
+	return Helper_loadInt(kAudioLoopSaveKey, 1)
+}
+
+Helper_saveAudioLoop = function(val) {
+	return Helper_saveDB(kAudioLoopSaveKey, val)
+}

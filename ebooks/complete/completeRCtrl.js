@@ -21,6 +21,7 @@ $scope.acc_click = function (id) {
 		$scope.acc=id;
 		$scope.story = processStory(kSTORIES[id]);
 	}
+	Helper_saveDB("completeR_unit", id)
 };
 
 $scope.fetchStory = function () {
@@ -32,9 +33,11 @@ $scope.fetchStory = function () {
 }
 
 $scope.loadData = function () {
+	$scope.acc_click( Helper_loadInt('completeR_unit', -1));
 	$scope.fetchStory();
 };
 
-$scope.loadData();
-
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
 });

@@ -2,18 +2,14 @@
 var app = angular.module('audioLoopRadioApp', []);
 app.controller('audioLoopRadioCtrl', function($scope, $rootScope,  $timeout) {
 
-radioLoopChange = function (val) {
-	localStorage.setItem(kAudioLoopSaveKey, val);
-	$rootScope.audioLoop = val;
+$scope.radioVal = 1
+
+$scope.radioLoopChange = function (val) {
+	Helper_saveAudioLoop(val)
 }
 
-	$scope.finishLoading = function(){
-	if (localStorage.hasOwnProperty(kAudioLoopSaveKey)) {
-		$rootScope[kAudioLoopSaveKey] = parseInt(localStorage[kAudioLoopSaveKey]);
-	}
-	else $rootScope[kAudioLoopSaveKey] = 1;
-	if (document.audioLoopForm.radioLoop)
-    document.audioLoopForm.radioLoop.value = $rootScope[kAudioLoopSaveKey];
+$scope.finishLoading = function(){
+    $scope.radioVal = Helper_loadAudioLoop()
 }
 
 $scope.$on('$includeContentLoaded', function(){

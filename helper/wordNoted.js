@@ -1,7 +1,5 @@
 
 
-
-
 Helper_FetchDB = function() {
 	if (localStorage.hasOwnProperty("vocaNotedSeq")) {
 		return localStorage.vocaNotedSeq.trim();

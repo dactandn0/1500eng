@@ -59,17 +59,20 @@ $scope.fetchStory = function (idx, reset=true)
 	$rootScope.audioSrc = $scope.createAudioSrc();
 
 	// save DB
-	localStorage.setItem("lptd_unit", idx);
+	Helper_saveDB("bridgeL_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
 
 }
 
-$scope.init = function () {
+$scope.loadData = function () {
+	$scope.storyIdx = Helper_loadInt( parseInt('bridgeL_unit'), 0  );
 	$scope.fetchStory($scope.storyIdx, false);
 };
 
-$scope.init();
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
 
 });

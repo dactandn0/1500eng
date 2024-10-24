@@ -19,7 +19,7 @@ radioCDChange = function (cd) {
 		case 3: kSTORIES = lptd_cd3_stories; break;
 		case 4: kSTORIES = []; break;
 	}
-	localStorage.setItem("lptd_cd", cd);
+	Helper_saveDB("lptd_cd", cd);
 	$scope.cd = cd;
 }
 
@@ -51,7 +51,7 @@ $scope.units = [
 $scope.whenAudioEnded = function()
 {
 	var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = $rootScope[kAudioLoopSaveKey];
+    var loopRadio = Helper_loadAudioLoop();
     if (loopRadio === 2) // play next
     {
     	nextStoryIdx = $scope.storyIdx + 1;
@@ -80,7 +80,7 @@ $scope.fetchStory = function (idx, reset=true)
 	$rootScope.audioSrc = $scope.createAudioSrc();
 
 	// save DB
-	localStorage.setItem("lptd_unit", idx);
+	Helper_saveDB("lptd_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
@@ -88,17 +88,12 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("lptd_cd")) {
-		var cd = localStorage.lptd_cd;
-		radioCDChange(parseInt(cd));
-		document.lptd_cdForm.radioCD.value=cd;
-		$scope.cd=cd;
-	}
+	var cd = Helper_loadInt('lptd_cd', 1);
+	radioCDChange(cd);
+	document.lptd_cdForm.radioCD.value = cd;
+	$scope.cd=cd;
 
-	if (localStorage.hasOwnProperty("lptd_unit")) {
-		$scope.storyIdx = parseInt(localStorage.lptd_unit);
-	}
-
+	$scope.storyIdx = Helper_loadInt('lptd_unit', 0);
 	$scope.fetchStory($scope.storyIdx, false);
 };
 

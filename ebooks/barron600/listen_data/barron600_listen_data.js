@@ -29,32 +29,32 @@ title:"Natural World-Bird Migration",
 narrator: "Listen to a tour guide at a bird sanctuary",
 en:"Tour Guide:<br>\
 Welcome to the National Bird Sanctuary. The bird sanctuary provides us with the opportunity to study many aspects of the lives of the migratory birds that pass through here every year.\
-This is a breeding area for many different species, and we'll likely see a number of them on our walk today.\
-On our right, just past the entrance, you'll see a list of all the species that have been observed here.\
-You'll notice several nocturnal species as well as diurnal. They spend the warm months here but leave in the autumn, as they can't endure our cold winters.\
-Okay, take a look at your maps. We're beginning here at the entrance.\
-As we walk through the sanctuary, it's imperative that you not stray off the trail and that you be particularly careful to stay out of the restricted area, all along the trail to the left here.\
-The restricted area protects breeding birds from disturbance. All right, then.\
-That trail over to the right leads to the gift shop, but before we head there, let's continue to the end of this trail on the left, to the observation platform.\
-[pause] Here we are. We can look out over the wetlands from here and observe the waterbirds.\
-I'll leave you here to observe as long as you like, and I'll meet you afterward at the gift shop. It's at the end of that trail I pointed out to you earlier.\
-Before I leave you, I'd like to remind you that this bird sanctuary was built entirely by volunteer labor and donations.\
-You can imagine what a feat that was and what it takes to maintain it. Please consider giving a donation before you leave.\
-You'll find a box for that purpose along the trail right before you arrive at the gift shop."
+ This is a breeding area for many different species, and we'll likely see a number of them on our walk today.\
+ On our right, just past the entrance, you'll see a list of all the species that have been observed here.\
+ You'll notice several nocturnal species as well as diurnal. They spend the warm months here but leave in the autumn, as they can't endure our cold winters.\
+ Okay, take a look at your maps. We're beginning here at the entrance.\
+ As we walk through the sanctuary, it's imperative that you not stray off the trail and that you be particularly careful to stay out of the restricted area, all along the trail to the left here.\
+ The restricted area protects breeding birds from disturbance. All right, then.\
+ That trail over to the right leads to the gift shop, but before we head there, let's continue to the end of this trail on the left, to the observation platform.\
+ [pause] Here we are. We can look out over the wetlands from here and observe the waterbirds.\
+ I'll leave you here to observe as long as you like, and I'll meet you afterward at the gift shop. It's at the end of that trail I pointed out to you earlier.\
+ Before I leave you, I'd like to remind you that this bird sanctuary was built entirely by volunteer labor and donations.\
+ You can imagine what a feat that was and what it takes to maintain it. Please consider giving a donation before you leave.\
+ You'll find a box for that purpose along the trail right before you arrive at the gift shop."
 ,vi:"Hướng dẫn viên du lịch:<br>\
 Chào mừng đến với Khu bảo tồn chim quốc gia. Khu bảo tồn chim mang đến cho chúng ta cơ hội nghiên cứu nhiều khía cạnh trong cuộc sống của các loài chim di cư bay qua đây hàng năm.\
-Đây là khu vực sinh sản của nhiều loài khác nhau và chúng ta có thể sẽ nhìn thấy một số loài trong chuyến đi bộ hôm nay.\
-Bên phải chúng ta, ngay sau lối vào, bạn sẽ thấy danh sách tất cả các loài đã được quan sát thấy ở đây.\
-Bạn sẽ thấy một số loài sống về đêm cũng như sống về ban ngày. Chúng dành những tháng ấm áp ở đây nhưng rời đi vào mùa thu vì chúng không thể chịu đựng được mùa đông lạnh giá của chúng ta.\
-Được rồi, hãy xem bản đồ của bạn. Chúng ta bắt đầu ở đây tại lối vào.\
-Khi chúng ta đi bộ qua khu bảo tồn, điều bắt buộc là bạn không được đi lạc khỏi đường mòn và đặc biệt cẩn thận không được đi vào khu vực hạn chế, dọc theo đường mòn bên trái ở đây.\
-Khu vực hạn chế bảo vệ các loài chim sinh sản khỏi bị quấy rầy. Được rồi.\
-Con đường mòn bên phải dẫn đến cửa hàng lưu niệm, nhưng trước khi đến đó, hãy tiếp tục đi đến cuối con đường mòn bên trái, đến bệ quan sát.\
-[tạm dừng] Đây rồi. Chúng ta có thể ngắm nhìn vùng đất ngập nước từ đây và quan sát các loài chim nước.\
-Tôi sẽ để bạn ở đây để quan sát bao lâu tùy thích, và tôi sẽ gặp bạn sau đó tại cửa hàng lưu niệm. Nó nằm ở cuối con đường mòn mà tôi đã chỉ cho bạn trước đó.\
-Trước khi chia tay, tôi muốn nhắc bạn rằng khu bảo tồn chim này được xây dựng hoàn toàn bằng lao động tình nguyện và tiền quyên góp.\
-Bạn có thể tưởng tượng đó là một kỳ tích như thế nào và cần những gì để duy trì nó. Vui lòng cân nhắc quyên góp trước khi bạn rời đi.\
-Bạn sẽ tìm thấy một hộp đựng cho mục đích đó dọc theo con đường mòn ngay trước khi bạn đến cửa hàng lưu niệm."
+ Đây là khu vực sinh sản của nhiều loài khác nhau và chúng ta có thể sẽ nhìn thấy một số loài trong chuyến đi bộ hôm nay.\
+ Bên phải chúng ta, ngay sau lối vào, bạn sẽ thấy danh sách tất cả các loài đã được quan sát thấy ở đây.\
+ Bạn sẽ thấy một số loài sống về đêm cũng như sống về ban ngày. Chúng dành những tháng ấm áp ở đây nhưng rời đi vào mùa thu vì chúng không thể chịu đựng được mùa đông lạnh giá của chúng ta.\
+ Được rồi, hãy xem bản đồ của bạn. Chúng ta bắt đầu ở đây tại lối vào.\
+ Khi chúng ta đi bộ qua khu bảo tồn, điều bắt buộc là bạn không được đi lạc khỏi đường mòn và đặc biệt cẩn thận không được đi vào khu vực hạn chế, dọc theo đường mòn bên trái ở đây.\
+ Khu vực hạn chế bảo vệ các loài chim sinh sản khỏi bị quấy rầy. Được rồi.\
+ Con đường mòn bên phải dẫn đến cửa hàng lưu niệm, nhưng trước khi đến đó, hãy tiếp tục đi đến cuối con đường mòn bên trái, đến bệ quan sát.\
+ [tạm dừng] Đây rồi. Chúng ta có thể ngắm nhìn vùng đất ngập nước từ đây và quan sát các loài chim nước.\
+ Tôi sẽ để bạn ở đây để quan sát bao lâu tùy thích, và tôi sẽ gặp bạn sau đó tại cửa hàng lưu niệm. Nó nằm ở cuối con đường mòn mà tôi đã chỉ cho bạn trước đó.\
+ Trước khi chia tay, tôi muốn nhắc bạn rằng khu bảo tồn chim này được xây dựng hoàn toàn bằng lao động tình nguyện và tiền quyên góp.\
+ Bạn có thể tưởng tượng đó là một kỳ tích như thế nào và cần những gì để duy trì nó. Vui lòng cân nhắc quyên góp trước khi bạn rời đi.\
+ Bạn sẽ tìm thấy một hộp đựng cho mục đích đó dọc theo con đường mòn ngay trước khi bạn đến cửa hàng lưu niệm."
 ,voca:"aspects,breeding,diurnal,endure,feat,fuel,imperative,migration,navigation,nocturnal,observe,stray,sanctuary,trail",
 },
 {

@@ -11,23 +11,13 @@ radioCDChange = function (cd) {
 	if (cd===1) {
 		kSTORIES = BOOK4K_1;
 	}
-	localStorage.setItem("book_4k_cd", cd);
+	Helper_saveDB("book_4k_cd", cd);
 	$scope.cd = cd;
 }
 
 $scope.cd = 1;
 $scope.stories = kSTORIES; //1
 
-$scope.acc = -1;
-$scope.acc_isShow = function (id) {
-	return $scope.acc===id;
-};
-
-$scope.acc_click = function (id) {
-	if($scope.acc===id) $scope.acc=-1;
-	else
-		$scope.acc=id;
-};
 
 $scope.storyIdx = 0;
 $scope.bShowVi = 0;
@@ -78,25 +68,18 @@ $scope.fetchStory = function (idx, reset=true) {
 
 	$rootScope.audioSrc = $scope.createAudioScr();
 
-	localStorage.setItem("book_4k_unit", idx);
+	Helper_saveDB("book_4k_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("book_4k_cd")) {
-		var cd = localStorage.book_4k_cd;
-		radioCDChange(parseInt(cd));
-		document.word4k_cdForm.radioCD.value=cd;
-		$scope.cd=cd;
-	}
+	var cd = Helper_loadInt('book_4k_cd', 1)
+	radioCDChange(parseInt(cd));
+	document.word4k_cdForm.radioCD.value=cd;
 
-	if (localStorage.hasOwnProperty("book_4k_unit")) {
-		idx = localStorage.book_4k_unit;
-		$scope.storyIdx = parseInt(idx);
-	}
-
+	$scope.storyIdx = Helper_loadInt('book_4k_unit', 0)
 	$scope.fetchStory($scope.storyIdx, false);
 };
 

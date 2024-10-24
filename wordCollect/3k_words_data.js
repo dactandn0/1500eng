@@ -1005,7 +1005,7 @@ courageous /kǝ'reidzǝs/ can đảm<br>\
 loyal /'bial/ trung thành<br>\
 imperative (a) /ɪmˈperətɪv/ bắt buộc<br>\
 endure (v) /ɪnˈdʊr/ việc làm, hành vi (a)<br>\
-feat (n,a) /fiːt/ chịu đựng<br>\
+feat (n,a) /fiːt/ một thành tựu kỳ tích<br>\
 modest /'mpdist/ khiêm tốn<br>\
 confident /'konfidǝnt/ tự tin<br>\
 unmerciful /Ʌn'mз:SIful/ nhẫn tâm<br>\

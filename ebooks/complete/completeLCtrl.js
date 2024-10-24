@@ -50,7 +50,7 @@ $scope.fetchStory = function (idx, reset=true)
 	$rootScope.audioSrc = $scope.createAudioSrc();
 
 	// save DB
-	localStorage.setItem("complete_unit", idx);
+	Helper_saveDB("completeL_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
@@ -58,18 +58,11 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("complete_unit")) {
-		$scope.storyIdx = parseInt(localStorage.complete_unit);
-	}
-
+	$scope.storyIdx = Helper_loadInt('completeL_unit');
 	$scope.fetchStory($scope.storyIdx, false);
 };
 
-$scope.init = function () {
+$scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
-	$scope.fetchStory($scope.storyIdx, false);
-};
-
-$scope.init();
-
+});
 });

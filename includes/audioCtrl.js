@@ -7,6 +7,8 @@ $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
 });
 
+var audioDuration  = 0;
+
 $scope.audioAdjTime = 8; //8s
 
 $scope.bPlaying = false;
@@ -68,6 +70,12 @@ $scope.playFullSound = function () {
 	    $scope.audio.loop = false;
 	    window.playResult = $scope.audio.play();
 
+	    $scope.audio.addEventListener('timeupdate', $scope.setupSeekbar);
+	    $scope.audio.addEventListener('loadedmetadata', () => {
+	     	audioDuration = $scope.audio.duration;
+	     	console.log(audioDuration)
+	  	});
+
 	    $scope.bPlaying = true;
 	    $scope.bPause = false;
 	    $scope.$evalAsync();
@@ -81,5 +89,25 @@ $scope.playFullSound = function () {
         	$scope.stopSound();
     	});
 }
+
+setAudioTime = function () {
+	if ($scope.audio && $scope.bPlaying) {
+		var valBar = document.getElementById('xxx').value;
+		var val = audioDuration * valBar / 100.0
+		$scope.audio.currentTime = val
+	}
+}
+
+$scope.calAudioBarUI = function() {
+	var ratio = $scope.audio.currentTime * 100 / audioDuration;
+	document.getElementById('xxx').value = Math.floor(ratio)
+}
+
+$scope.setupSeekbar = function() {
+	$scope.calAudioBarUI()
+}
+
+
 }]);
+
 

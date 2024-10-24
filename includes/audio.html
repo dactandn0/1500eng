@@ -2,6 +2,8 @@
 
 <div ng-init="$root.bShowVi=0">
 
+
+
 	    	<span class="btnShowVi opa">
 	        	<button class="btn btn-sm btn-success" ng-click="$root.bShowVi=!$root.bShowVi">{{$root.bShowVi == 0 ? '->Vi' : '->En' }}</button>
 	    	</span>
@@ -14,6 +16,18 @@
     		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
     		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-{{audioAdjTime}}s</button></p>
     		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+{{audioAdjTime}}s</button></p>
+
+    		<input 
+				ng-show="bPlaying"
+				type="range" 
+				id="xxx"
+				class="form-range"
+				min="0" 
+				max="100" 
+				step="1"
+				value='0'
+				oninput="setAudioTime()"
+			>
     	</span>
 </div>
 

@@ -51,18 +51,14 @@ $scope.fetchStory = function (idx, reset=true) {
     $rootScope.audioSrc = $scope.createAudioSrc();
 
     // save DB
-    localStorage.setItem("barron600_unit", idx);
+    Helper_saveDB("barron600L_idx", idx);
     if (!$scope.story) {MYLOG('Dont have Unit'); return;}
     
     $scope.story = processStory($scope.story);
 }
 
 $scope.loadData = function () {
-    if (localStorage.hasOwnProperty("barron600_idx")) {
-        idx = localStorage.barron600_idx;
-        $scope.storyIdx = parseInt(idx);
-    }
-
+    $scope.storyIdx = Helper_loadInt('barron600L_idx', 0);
     $scope.fetchStory($scope.storyIdx, false);
 };
 

@@ -18,7 +18,7 @@ font-size: 1rem ;
 }
 .btnPlay {
   position: fixed; 
-  bottom: 180px;
+  bottom: 200px;
   left: 10px;
   z-index: 30;
 }

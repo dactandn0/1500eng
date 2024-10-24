@@ -21,6 +21,7 @@ $scope.acc_click = function (id) {
 		$scope.acc=id;
 		$scope.story = processStory(kSTORIES[id]);
 	}
+	Helper_saveDB("barron600R_idx", id);
 };
 
 $scope.fetchStory = function () {
@@ -32,6 +33,7 @@ $scope.fetchStory = function () {
 }
 
 $scope.loadData = function () {
+	$scope.acc_click (Helper_loadInt("barron600R_idx", -1));
 	$scope.fetchStory();
 };
 

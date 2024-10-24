@@ -18,9 +18,10 @@ $scope.acc_isShow = function (id) {
 $scope.acc_click = function (id) {
 	if($scope.acc===id) $scope.acc=-1;
 	else {
-		$scope.acc=id;
+		$scope.acc = id;
 		$scope.story = processStory(kSTORIES[id]);
 	}
+	localStorage.setItem("bridgeR_unit", id)
 };
 
 $scope.fetchStory = function () {
@@ -32,9 +33,14 @@ $scope.fetchStory = function () {
 }
 
 $scope.loadData = function () {
+	if (localStorage.hasOwnProperty("bridgeR_unit")) {
+		$scope.acc_click( parseInt(localStorage.bridgeR_unit) );
+	}
 	$scope.fetchStory();
 };
 
-$scope.loadData();
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
 
 });

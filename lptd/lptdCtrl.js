@@ -21,6 +21,7 @@ radioCDChange = function (cd) {
 	}
 	Helper_saveDB("lptd_cd", cd);
 	$scope.cd = cd;
+	$scope.fetchStory($scope.storyIdx, true);
 }
 
 $scope.range = function(min, max, step) {

@@ -62,8 +62,8 @@ $scope.preProcess = function () {
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("w3000_idx")) {
-		$scope.acc_click( Number(localStorage.w3000_idx)  );
+	if (localStorage.hasOwnProperty("")) {
+		$scope.acc_click( Helper_loadInt('w3000_idx')  );
 	}
 	$scope.preProcess();
 };

@@ -73,7 +73,6 @@ $scope.playFullSound = function () {
 	    $scope.audio.addEventListener('timeupdate', $scope.setupSeekbar);
 	    $scope.audio.addEventListener('loadedmetadata', () => {
 	     	audioDuration = $scope.audio.duration;
-	     	console.log(audioDuration)
 	  	});
 
 	    $scope.bPlaying = true;
@@ -92,7 +91,7 @@ $scope.playFullSound = function () {
 
 setAudioTime = function () {
 	if ($scope.audio && $scope.bPlaying) {
-		var valBar = document.getElementById('xxx').value;
+		var valBar = document.getElementById('slider').value;
 		var val = audioDuration * valBar / 100.0
 		$scope.audio.currentTime = val
 	}
@@ -100,7 +99,7 @@ setAudioTime = function () {
 
 $scope.calAudioBarUI = function() {
 	var ratio = $scope.audio.currentTime * 100 / audioDuration;
-	document.getElementById('xxx').value = Math.floor(ratio)
+	document.getElementById('slider').value = Math.floor(ratio)
 }
 
 $scope.setupSeekbar = function() {

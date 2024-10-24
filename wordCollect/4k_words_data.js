@@ -1146,7 +1146,7 @@ occupy chiếm đóng<br>\
 penny đồng xu<br>\
 preach giảng đạo<br>\
 prosper thịnh vượng<br>\
-province tỉnh<br>\
+province (n) /ˈprɑːvɪns/ tỉnh<br>\
 satisfaction hài lòng<br>\
 sustain duy trì<br>\
 acquire thu thập<br>\

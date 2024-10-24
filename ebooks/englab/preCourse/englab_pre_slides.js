@@ -459,7 +459,7 @@ Nhược điểm số một là chính sách thị thực của Việt Nam. Hi�
 Nếu bạn là người thành phố lớn, bạn có thể sẽ thấy hơi chán Đà Nẵng. Có rất nhiều thứ để xem và làm, nhưng không thể sánh bằng Bangkok hay TP.HCM. Đối với tôi, thực ra tôi không thích các thành phố lớn, tôi thấy chúng hơi quá sức đối với một kỳ nghỉ kéo dài 1-3 tháng, vì vậy Đà Nẵng là nơi tuyệt vời đối với tôi.<br>\
 <br>\
 Điều này có thể không phải là vấn đề lớn, nhưng tôi thấy rằng so với Thái Lan, có vẻ như có nhiều vụ lừa đảo khách du lịch hơn ở Việt Nam nói chung. Rất nhiều nhà hàng Nhật Bản sẽ tính thêm tiền nếu bạn là người nước ngoài và không kiểm tra hoặc thậm chí không quan tâm. Tôi đã gặp một số điều không may trên Airbnb cho đến nay, và hầu hết thời gian, chủ nhà sẽ làm những trò thông thường, như từ chối hoàn lại tiền, yêu cầu tôi hủy trước, đề nghị đưa bạn đến một trong những nơi 'khác' của họ, thường tệ hơn nhiều, v.v. Nhìn chung, có vẻ như người Việt Nam tập trung nhiều hơn vào việc kiếm tiền từ bạn theo bất kỳ cách nào họ có thể so với người Thái. Tôi nghĩ điều này được khuếch đại ở Đà Nẵng vì đây là một điểm đến du lịch rất nổi tiếng. Không phải là một sự phá vỡ thỏa thuận lớn nhưng theo tôi, đây là điều cần lưu ý."
-	,voca:"",
+	,voca:"incredibly cheap,throughout,in general,promenade,beachside",
 },
 {
 	date:"14/10/2024",

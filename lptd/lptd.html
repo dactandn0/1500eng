@@ -32,7 +32,7 @@
 	          <div class="card-text my-2">
 	          	
 	          	<h6 class="accordion" >
-				    <a href ng-click="showText=!showText"> {{story.title}}</a>
+				    <a href ng-click="showText=!showText"><small>{{story.title}}</small></a>
 				 </h6>
 	          	 <div class="accordion-content">
 	          		<p compile="story.enShow" ng-if="!$root.bShowVi && showText"></p>

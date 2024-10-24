@@ -28,7 +28,7 @@ $scope.fetchStory = function () {
 	for (var k = 0; k < kSTORIES.length; k++) {
 		var unit = kSTORIES[k].unit;
 		var title = kSTORIES[k].title;
-		$scope.fullTitles.push('Unit ' + unit + ": " + title);
+		$scope.fullTitles.push('U' + unit + ": " + title);
 	}
 }
 

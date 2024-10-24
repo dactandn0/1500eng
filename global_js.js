@@ -279,17 +279,25 @@ function Text2Speech(word) {
 }
 
 Helper_SliceHalfString = function (str) {
-	var arr = str.split(" ");
 	var partOne = ""
 	var partTwo = ""
 
+	var matchTags = str.match(/<.+>/);
+	if (matchTags && matchTags.length > 0) {
+		partOne = matchTags[0]
+		partTwo = str.substr(partOne.length)
+		return { p1:partOne, p2:partTwo, full:str }
+	}
+
+	var arr = str.split(" ");
 	if (arr.length===1) {
 		partOne = str;
 		partTwo = ' /unknown/'
 	}
 	else {
 		var mm = Math.floor(arr.length/2)
-		for (var i = 0; i < mm; i++) {
+		for (var i = 0; i < mm; i++) 
+		{
 			partOne += arr[i] + " "
 		}
 		partTwo = str.substr(partOne.length)

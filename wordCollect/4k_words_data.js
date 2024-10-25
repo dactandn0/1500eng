@@ -145,7 +145,7 @@ peace hòa bình<br>\
 prince hoàng tử<br>\
 keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
 protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
-sense giác quan<br>\
+sense (n) /sens/ giác quan [sense of direction/rhythm/timing/rhythm/timing/fun/adventure<br>\
 sudden đột ngột<br>\
 therefore  do đó<br>\
 accept chấp nhận<br>\
@@ -370,7 +370,7 @@ advise khuyên bảo<br>\
 already đã<br>\
 basic cơ bản<br>\
 bit một chút<br>\
-consider cân nhắc<br>\
+consider (v) /kənˈsɪdər/ cân nhắc [take into account]<br>\
 destroy phá hủy<br>\
 entertain giải trí<br>\
 extra thêm<br>\
@@ -648,7 +648,9 @@ pale nhợt nhạt<br>\
 rough thô<br>\
 satisfy thỏa mãn<br>\
 scream la hét<br>\
-shade bóng râm<br>\
+aesthetic (a) tính thẩm mỹ<br>\
+Aesthetically pleasing (a) thẩm mỹ dễ chịu<br>\
+shade (n) bóng râm, tông màu<br>\
 supplement bổ sung<br>\
 terror khủng bố<br>\
 threat mối đe dọa<br>\
@@ -983,7 +985,8 @@ somewhat hơi<br>\
 tissue mô<br>\
 yard  sân <br>\
 alike giống nhau<br>\
-annoy làm phiền<br>\
+annoy (v) /əˈnɔɪ/ làm phiền<br>\
+get on my nerves (v) /əˈnɔɪ/ làm phiền<br>\
 architecture kiến trúc<br>\
 artificial nhân tạo<br>\
 chain chuỗi<br>\
@@ -1132,7 +1135,12 @@ masquerade (n,v) /ˌmæskəˈreɪd/ (n. dạ hội) hóa trang"
 {
 	title:"4k Book3",
 	en:"arise phát sinh<br>\
-benefactor người làm ơn<br>\
+broaden (v) /ˈbrɔːdn/ Mở rộng<br>\
+expand (v) /ɪkˈspænd/ Mở rộng<br>\
+strengthen (v) /ˈstreŋkθn/ tăng cường<br>\
+hustle (n) /ˈhʌsl/ chen lấn, xô bồ<br>\
+bustle (n) /ˈbʌsl/ sự nhộn nhịp<br>\
+benefactor (n) /ˈbenɪfæktər/ người làm ơn<br>\
 blacksmith thợ rèn<br>\
 charitable từ thiện<br>\
 chimney ống khói<br>\

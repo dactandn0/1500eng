@@ -56,7 +56,12 @@ It’s time + to do S.TH<br>\
 - My mother was tired of doing too much housework everyday.<br>\
 19. can’t stand/ help/ bear/ resist + V-ing: Không chịu nỗi/không nhịn được làm gì...<br>\
 - She can't stand laughing at her little dog.<br>\
-20. to be keen on/ to be fond of + N/V-ing : thích làm gì đó...<br>\
+20. Like doing s.th<br>\
+to be keen on<br>\
+to be fond of<br>\
+to have a soft spot of +  + N/V-ing<br>\
+be into<br>\
+N/V+ing + be + my cup of tea<br>\
 - My younger sister is fond of playing with her dolls.<br>\
 21. to be interested in + N/V-ing: quan tâm đến...<br>\
 - Mrs Brown is interested in going shopping on Sundays.<br>\

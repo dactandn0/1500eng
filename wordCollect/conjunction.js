@@ -29,6 +29,7 @@ anywhere bất cứ đâu<br>\
 anytime (adv) bất cứ khi nào (= whenever, at any time, on any occasion)<br>\
 at any time (adv) bất cứ khi nào (= anytime)<br>\
 any time (v) bất cứ thời gian nào (câu ?/-)<br>\
+Furthermore (adv) /ˌfɜːrðərˈmɔːr/<br>\
 including (conj) bao gồm<br>\
 <br>\
 <br>\

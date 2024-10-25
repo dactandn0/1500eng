@@ -570,6 +570,107 @@ surgery<br>\
 surgeon"
 	,vi:""
 	,voca:"",
+},
+{
+	date:"25/10/2024",
+	title:"[S] Color/Admired person",
+	en:"Describe a famous person you would like to meet.<br>\
+A celebrity that I'd be honored to meet is Taylor Swift. Swift is an acclaimed musician who has acquired a global reputation for numerous hits over the past 20 years. She is also widely known for her exceptional song-writing ability.<br>\
+I started listening to Taylor Swift's music since middle school. I've been a huge fan of hers ever since. I find her tunes incredibly catchy and have always admired her lyrical skills. Also, through watching numerous interviews and talk shows featuring Taylor, I've come to adore her calm and collected personality, which is why I'd love to be able to interact with her in person.<br>\
+Furthermore, Taylor Swift has long been my role model for many reasons.\
+ She's not only a talented musician but also an independent and headstrong woman, who works hard to achieve her goals and fight for what she believes in.\
+  She never lets backlash and criticism get in the way of her success. It would be wonderful if I could simply chat with her over coffee about how she has overcome drawbacks in her career.\
+   I could learn a lot from that.<br>\
+<br><b>Hobbies: Like Sth</b><br>\
+I am keen on travelling<br>\
+I have a soft spot for travelling<br>\
+I am fond of travelling<br>\
+I am into travelling<br>\
+Travelling is my cup of tea<br>\
+<br>\
+<b>Benefit of hobbies</b><br>\
+Expand circle of friends<br>\
+Strengthen the family bonds<br>\
+Expand my horizons = broaden my knowledge<br>\
+Escape the hustle and bustle(n) trốn khỏi sự xô bồ<br>\
+Relax = unwind = blow off some steam<br>\
+reduce stress<br>\
+release stress<br>\
+<br>\
+<b>Colors vocabulary</b><br>\
+Monotones: đơn sắc<br>\
+Neutral colors: màu trung tính<br>\
+Pastel colors: màu phấn<br>\
+Minimalism(n): chủ nghĩa tối giản, minimalist (n)<br>\
+Shade (n): tông màu<br>\
+Instill (v) a sense of serenity/tranquility: mang lại cảm giác yên bình<br>\
+Bring me closer to the naturenature lover/enthusiast (n)<br>\
+Aesthetic (adj): thẩm mỹ 🡪 Sense of aesthetics: sự/khiếu thẩm mỹ<br>\
+Aesthetically pleasing (adj) thẩm mỹ dễ nhìn<br>\
+<br>\
+<br>\
+soothe my mind (v) = ease/ calm my mind: làm dịu tâm trí<br>\
+(to) hurt my eyesight >< (be) pleasing to the eye<br>\
+(to) get on my nerves = annoy me: làm tôi khó chịu<br>\
+play a crucial/indispensable part/role in... : đóng một vai trò ko thể thiếu trog ...<br>\
+consider = take into account: xem xét<br>\
+<br>\
+<b>STRUCTURE OF A 'DESCRIBE A PERSON' TOPIC</b><br>\
+Introduction (phần mở đầu)<br>\
+Personal information (thông tin cơ bản)<br>\
+Main ideas (ý chính)<br>\
+Feelings (cảm nhận)<br>\
+Ending (phần kết)<br>\
+<br>\
+1. INTRODUCTION<br>\
+I am going to talk about ... / I would like to tell you about ...<br>\
+<br>\
+When it comes to ...<br>\
+Speaking of + N ... <br>\
+the first person one that springs to my mind is ...<br>\
+the first person that pops up on my mind is ...<br>\
+my mom, who is an inspiring person to me<br>\
+my mom, who inspires me<br>\
+my mom, whom I admire the most<br>\
+<br>\
+2. PERSONAL INFORMATION + MAIN IDEAS<br>\
+<br>\
+Age<br>\
+She/he is in her 20s/30s/teens<br>\
+She/ he is a middle-aged/ 40-year-old + N<br>\
+Tips làm dài câu<br>\
+She is now in her mid 40s and she will turn 46 next year.<br>\
+<br>\
+Job<br>\
+He/ she is working as a/an ... at ...<br>\
+Tips làm dài câu<br>\
+Currently, she is working as a teacher at a secondary school near my house. Therefore, she has great discipline (kỷ luật).<br>\
+<br>\
+Miêu tả chung về nhân vật: My recollection of the first time we met is very hazy (mơ hồ).<br>\
+But if my memory serves me right, we were classmates at ...<br>\
+Mô tả thêm về tính cách: Everyone around him/her knows that he/she is ... Plus, another special thing about him/her is that ...<br>\
+Mô tả ngoại hình: She was a good-looking girl, with dark eyes and ... hair.<br>\
+Kể về một kỷ niệm chung giữa bạn và người ấy: We’ve had so many unforgettable memories together, but to tell you about one, it would have to be ...<br>\
+<br>\
+3. FEELINGS (Cảm nhận cá nhân)<br>\
+It has been a while since I last met him/ her. And I definitely miss him/ her every day<br>\
+I hope I could meet him/ her in person in the near future<br>\
+It is going to be the best day of my life!<br>\
+He/ she is a role model for me. That’s why I am striving for the best to become a person like her/ him.<br>\
+<br>\
+4. Ending <br>\
+Suggestion<br>\
+So well, if anyone asks me about the person ...<br>\
+I would tell them without any hesitation (không chút ngần ngại) about ..."
+
+	,vi:"Mô tả một người nổi tiếng mà bạn muốn gặp.<br>\
+Một người nổi tiếng mà tôi rất vinh dự được gặp là Taylor Swift. Swift là một nhạc sĩ được ca ngợi, người đã đạt được danh tiếng toàn cầu với nhiều bản hit trong 20 năm qua. Cô cũng được biết đến rộng rãi với khả năng sáng tác nhạc đặc biệt của mình.<br>\
+Tôi bắt đầu nghe nhạc của Taylor Swift từ khi còn học trung học. Tôi đã là một người hâm mộ lớn của cô ấy kể từ đó. Tôi thấy giai điệu của cô ấy vô cùng hấp dẫn và luôn ngưỡng mộ kỹ năng viết lời của cô ấy. Ngoài ra, thông qua việc xem nhiều cuộc phỏng vấn và chương trình trò chuyện có sự góp mặt của Taylor, tôi đã trở nên ngưỡng mộ tính cách điềm tĩnh và điềm đạm của cô ấy, đó là lý do tại sao tôi rất muốn được tương tác trực tiếp với cô ấy.<br>\
+Hơn nữa, Taylor Swift từ lâu đã là hình mẫu của tôi vì nhiều lý do. Cô ấy không chỉ là một nhạc sĩ tài năng mà còn là một người phụ nữ độc lập và bướng bỉnh, người làm việc chăm chỉ để đạt được mục tiêu của mình và đấu tranh cho những gì cô ấy tin tưởng. Cô ấy không bao giờ để phản ứng dữ dội và chỉ trích cản trở thành công của mình. Sẽ thật tuyệt nếu tôi có thể trò chuyện với cô ấy qua tách cà phê về cách cô ấy vượt qua những bất lợi trong sự nghiệp của mình. Tôi có thể học được nhiều điều từ đó."
+	
+
+
+	,voca:""
 }
 
 

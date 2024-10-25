@@ -366,6 +366,8 @@ Sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
 spectacular (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
 majestic (a) /məˈdʒestɪk/ hùng vĩ, đẹp mắt<br>\
 serene (a) /səˈriːn/ êm đềm, thanh thản<br>\
+serenity (n) /səˈrenəti/ êm đềm, thanh thản<br>\
+tranquility (n) /səˈrenəti/ sự yên tĩnh, yên ổn<br>\
 incredible (a) /ɪnˈkredəbl/ đáng khinh ngạc<br>\
 fantastic (a) /fænˈtæstɪk/ tuyệt vời<br>\
 mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
@@ -996,7 +998,8 @@ conscientious /konfr'anJas/ tận tâm<br>\
 good-tempered /god'tampad/ hòa nhã<br>\
 careful /'keaful/ cẩn thận<br>\
 gentle /'dzεntl/ lịch lãm<br>\
-enthusiastic /n0ju:z'æstik/ nhiệt tình<br>\
+enthusiastic (a) /n0ju:z'æstik/ nhiệt tình<br>\
+enthusiast (n) /ɪnˈθuːziæst/ người đam mê, nhiệt tâm<br>\
 dull /dɅl/ đần độn<br>\
 faithful /'fereful/ chung thủy <br>\
 kind /kaind/ tốt bụng<br>\
@@ -1243,7 +1246,7 @@ Sing (v) /sɪŋ/ Hát, ca hát<br>\
 Piano (n) /piˈæn.oʊ/ Đàn piano<br>\
 Guitar (n) /ɡɪˈtɑːr/ Đàn ghi-ta<br>\
 Instrument (n) /ˈɪn.strə.mənt/ Nhạc cụ<br>\
-Harmony (n) /ˈhɑːr.mə.ni/ Hoà âm<br>\
+Harmony (n) /ˈhɑːr.mə.ni/ Hoà hợp, hòa âm<br>\
 Melody (n) /ˈmɛl.ə.di/ Giai điệu<br>\
 String (n) /strɪŋ/ Dây đàn<br>\
 The brass (n) /ðə bræs/ Dàn kèn đồng<br>\
@@ -1392,6 +1395,7 @@ Clothes (n) [+ are] /ˈlɛɡ.ɪŋz/ Quần áo<br>\
 Leggings (n) /ˈlɛɡ.ɪŋz/ Quần bó<br>\
 Overalls (n) /ˈoʊ.vər.ɔːlz/ Quần yếm<br>\
 Turtleneck (n) /ˈtɜːr.tl̩.nɛk/ Áo cổ lọ<br>\
+mix and match (v) phối đồ<br>\
 Bow tie (n) /ˈboʊ taɪ/ Nơ con bướm<br>\
 Tie (n) /taɪ/ Cà vạt<br>\
 Tunic (n) /ˈtuː.nɪk/ Áo trùm hông<br>\

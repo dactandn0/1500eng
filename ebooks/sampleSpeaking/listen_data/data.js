@@ -179,7 +179,7 @@ Thí sinh: Cảm ơn bạn rất nhiều.",
 },
 {
 	track:"describe_city00",
-	title:"Describe a place (city/town) that is good for people to live",
+	title:"[P2] Describe a place (city/town) that is good for people to live",
 	en:"I'd like to talk about Da Nang, a coastal city in Vietnam that I think is an ideal place for people to live. Da Nang is located in centrer Vietnam, along the coast, and it's well-known for its stunning beaches, laid-back lifestyle, and friendly locals. I first heard about Da Nang from friends who had visited and couldn't stop raving about how beautiful and peaceful it was.<br>\
 The city itself this perfect blend of urban develcument and natural beauty, striking the ideal balance between the hustle and bustle of city life and the tranquility of nature. Specifically, on one side, you're amazed by modern infrastructure with good schools, hospitals, as well as shopping centers, and on the other side, you're surrounded by breathtaking landscapes like the Marble Mountains and the famous My Khe Beach. The weather is generally pleasant, neither too hot nor too cold, always just right, making it a comfortable place to live year-round.<br>\
 Unlike bigger cities like Hanoi or Ho Chi Minh City, Da Nang is less crowded and chaotic, which means less traffic, less pollution, and a slower pace of life. It's also considered one of the safest cities in Vietnam, making it a great place for families.<br>\
@@ -194,7 +194,7 @@ Vì vậy, tôi phải nói rằng Đà Nẵng có tất cả, cung cấp sự t
 },
 {
 	track:"describe_sport00",
-	title:"Describe a sport you watched and would like to try",
+	title:"[P2] Describe a sport you watched and would like to try",
 	en:"So, I'd like to talk about a sport I watched recently and I'd really love to try, it's skiing. Actually, skiing had been on my radar for such a long time but it wasn't until the Winter Olympics that I became obsessed with it. It is still imprinted on my mind how my family was all glued to the screen and in awe of the athletes exceptional performances. They were so talented, graceful and fast, zipping down the slopes with such control and balance. Honestly, their performances were out of this world.<br>\
 The main reason I watched it was because all winter sports tickle my fancy, even though I live in a tropical country where snow is nowhere to be found. I still vividly remember watching it with my siblings, and we all wondered how cool it would be to experience the sport and feel that adrenaline rush ourselves.<br>\
 Admittedly, skiing looks like it's no walk in the park, but isn't it fascinating to test your physical abilities, discover new potential, and enjoy the beauty of snowy landscapes - all at the same time?<br>\
@@ -207,7 +207,7 @@ Từ chính xác mà tôi sẽ dùng để mô tả cảm giác của mình khi 
 },
 {
 	track:"describe_video_online00",
-	title:"Describe an online video in which you learned something new",
+	title:"[P2] Describe an online video in which you learned something new",
 	en:"So, I'd like to share an experience about a time I watched an online video that really helped me with my IELTS preparation, specifically the listening section. I came across this video on YouTube while I was searching for ways to improve my listening skills, as that's the area I was struggling with. The video revolved around something called the 'dictation technique' which, to be honest, was a foreign concept to me. The idea is nothing short of simple: you listen to a short audio clip, then try to write down exactly what you hear, word by word. After that, you check your transcription against the original text to see what mistakes you made. It's fair to say, this technique helps you notice details like pronunciation, linking words, and even tricky accents, which are definitely not a walk in the park in the TELTS exam.<br>\
 I watched the video because, at the time, I was really hitting a wall with my listening practice. I kept missing small details and was having trouble catching the exact wording. The presenter was of great help, he was so clear and gave great examples, breaking it down step by step.<br>\
 Since I started using this technique, I've made great progress. I've become more attentive and have finally gotten the hang of identifying specific words and phrases, even in fast-paced conversation. And I can't help but feel a sense of pride welling up in my heart."
@@ -218,7 +218,7 @@ Kể từ khi tôi bắt đầu sử dụng kỹ thuật này, tôi đã đạt 
 },
 {
 	track:"describe_photograph00",
-	title:"Describe a photograph of yourself that you like",
+	title:"[P2] Describe a photograph of yourself that you like",
 	en:"The photograph I'd like to describe is a cherished one from my teenage years, which captures a moment when I truly felt pretty for the first time. It was taken during a family gathering on a warm summer evening.<br>\
 In the photograph, I'm standing in front of a beautiful garden adorned with colorful flowers, and the soft, golden rays of the setting sun bathed the scene in a warm, flattering light. I was wearing a simple, elegant dress that I had picked out for the occasion, and my hair was gently ruffled by the breeze.<br>\
 What struck me most when I saw this photograph was not just my appearance, but the genuine happiness that radiated from my smile. I remember that evening vividly; it was a rare moment of self-assurance. Prior to that, I had often felt awkward about my appearance, like many teenagers do. But on that particular day, the combination of the lovely surroundings and the joy of being with loved ones made me feel truly beautiful.<br>\
@@ -231,7 +231,7 @@ Kể từ đó, bức ảnh này đã trở thành nguồn tự tin, nhắc nh�
 },
 {
 	track:"describe_park_garden00",
-	title:"Describe a park/garden you enjoy visiting",
+	title:"[P2] Describe a park/garden you enjoy visiting",
 	en:"One of the most enjoyable parks I've visited is the Butchart Gardens, located in Brentwood Bay, near Victoria on Vancouver Island, Canada. The sheer beauty and the meticulous design of this garden left an indelible mark on me.<br>\
 The Butchart Gardens are spread over 55 acres and have a rich history. It was originally a limestone quarry that was transformed by Jennie Butchart, a visionary horticulturist, into a stunning garden over a century ago. When I visited, I was struck by the variety of gardens within this vast space, each with its unique theme and character.<br>\
 The Sunken Garden, which was once the quarry itself, is a breathtaking display of colorful blooms, tiered terraces, and intricate pathways. The Rose Garden, with its aromatic and vibrant roses, is a sensory delight. The Japanese Garden offers tranquility and a Zen-like atmosphere with its ponds and ornate bridges.<br>\
@@ -246,7 +246,7 @@ Tóm lại, Butchart Gardens là một kiệt tác làm vườn mang đến mộ
 },
 {
 	track:"describe_time_meeting00",
-	title:"Describe a time when you missed or were late for a meeting",
+	title:"[P2] Describe a time when you missed or were late for a meeting",
 	en:"One of the most memorable instances where I was late for a meeting was during my first year of university. I had an important group project meeting scheduled with my team, and I had planned to arrive 15 minutes early at the designated location. However, I ended up oversleeping due to a late-night study session and woke up an hour after the meeting had already started.<br>\
 Panicking, I immediately called my group members and apologized for my tardiness. They were un- derstandably frustrated, and I felt terrible for letting them down. I quickly got dressed and rushed to the meeting location, arriving nearly an hour late.<br>\
 When I finally arrived, my team members had already covered most of the topics on the agenda, and I felt like I had missed out on crucial information and discussion points. However, I immediately apologized and offered to catch up on what I had missed. I made sure to take diligent notes and ask questions to make up for my absence.<br>\
@@ -259,15 +259,15 @@ Tôi đã học được một bài học quan trọng vào ngày hôm đó về
 },
 {
 	track:"describe_instrument00",
-	title:"Describe a person who can play an instrument or has musical talents",
+	title:"[P2] Describe a person who can play an instrument or has musical talents",
 	en:"One person who stands out for their musical talent is my friend Alex. He's an incredibly gifted pianist, and watching him play is truly mesmerizing. Starting at just five years old, he has not only mastered the basics but has also become proficient in complex classical compositions and jazz improvisation.<br>\
 What's really impressive about Alex is his ability to express emotions through his music. Whether it's joy, sorrow, or excitement, he translates these feelings into his piano playing in a way that really resonates with his audience. I remember one particular performance at a school event where he played Chopin's 'Nocturne', and you could literally hear a pin drop - the entire room was captivated.<br>\
 Besides his solo performances, Alex also collaborates with other musicians. He plays in a jazz band, where he often improvises, showing off his creative side. This versatility in different musical styles is what sets him apart. ENGLISH CENTER<br>\
-Furthermore, Alex's dedication to music is inspiring. ractices for hours every day and is ways eager to learn new techniques or pieces. His passion for music isn't just a hobby; it's a significant part of his identity. Watching his journey and growth as a musician is truly inspiring"
+Furthermore, Alex's dedication to music is inspiring. ractices for hours every day and is ways eager to learn new techniques or pieces. His passion for music isn't just a hobby; it's a significant part of his identity. Watching his journey and growth as a musician is truly inspiring and a testament to wear passion and hard work can lead you."
 	,vi:"Một người nổi bật về tài năng âm nhạc là bạn tôi Alex. Cậu ấy là một nghệ sĩ piano tài năng đáng kinh ngạc, và việc xem cậu ấy chơi thực sự mê hoặc. Bắt đầu từ năm tuổi, cậu ấy không chỉ thành thạo những điều cơ bản mà còn trở nên thành thạo trong các sáng tác cổ điển phức tạp và ứng tấu nhạc jazz.<br>\
 Điều thực sự ấn tượng về Alex là khả năng thể hiện cảm xúc thông qua âm nhạc của mình. Cho dù đó là niềm vui, nỗi buồn hay sự phấn khích, cậu ấy đều truyền tải những cảm xúc này vào cách chơi piano theo cách thực sự gây được tiếng vang với khán giả. Tôi nhớ một buổi biểu diễn đặc biệt tại một sự kiện của trường, nơi cậu ấy chơi bản 'Nocturne' của Chopin và bạn thực sự có thể nghe thấy tiếng một chiếc ghim rơi - toàn bộ căn phòng đều bị cuốn hút.<br>\
 Ngoài các buổi biểu diễn solo, Alex còn hợp tác với các nhạc sĩ khác. Cậu ấy chơi trong một ban nhạc jazz, nơi cậu ấy thường ứng tấu, thể hiện khía cạnh sáng tạo của mình. Sự linh hoạt trong các phong cách âm nhạc khác nhau chính là điều khiến cậu ấy trở nên khác biệt. ENGLISH CENTER<br>\
-Hơn nữa, sự cống hiến của Alex cho âm nhạc thật truyền cảm hứng. luyện tập hàng giờ mỗi ngày và rất háo hức học các kỹ thuật hoặc bản nhạc mới. Niềm đam mê âm nhạc của anh không chỉ là sở thích; đó là một phần quan trọng trong bản sắc của anh. Việc theo dõi hành trình và sự phát triển của anh với tư cách là một nhạc sĩ thực sự truyền cảm hứng"
+Hơn nữa, sự cống hiến của Alex cho âm nhạc thật truyền cảm hứng. luyện tập hàng giờ mỗi ngày và rất háo hức học các kỹ thuật hoặc bản nhạc mới. Niềm đam mê âm nhạc của anh không chỉ là sở thích; đó là một phần quan trọng trong bản sắc của anh. Việc theo dõi hành trình và sự phát triển của anh với tư cách là một nhạc sĩ thực sự truyền cảm hứng và một minh chứng cho niềm đam mê và sự chăm chỉ có thể dẫn dắt bạn."
 	,voca:"",
 }
 

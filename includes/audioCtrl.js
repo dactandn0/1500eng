@@ -5,6 +5,8 @@ app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, 
 
 $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
+	$rootScope.audioSrc = ''
+	$scope.audio = null;
 });
 
 var audioDuration  = 0;
@@ -51,6 +53,7 @@ $scope.stopSound = function () {
 	{
 		$scope.audio.pause();
 		$scope.audio.currentTime = 0;
+		$scope.audio = null;
 	}
 	$scope.curTime = 0;
 	$scope.bPlaying = false;
@@ -98,8 +101,11 @@ setAudioTime = function () {
 }
 
 $scope.calAudioBarUI = function() {
-	var ratio = $scope.audio.currentTime * 100 / audioDuration;
-	document.getElementById('slider').value = Math.floor(ratio)
+	if ($scope.audio) 
+	{
+		var ratio = $scope.audio.currentTime * 100 / audioDuration;
+		document.getElementById('slider').value = Math.floor(ratio)	
+	}
 }
 
 $scope.setupSeekbar = function() {

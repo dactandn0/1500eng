@@ -36,7 +36,7 @@ const SynonymData = [
 	mean:"chính xác"
 },
 {
-	words:"vague /veɪɡ/|obscure /əbˈskjʊr/|hazy ˈheɪzi/",
+	words:"vague /veɪɡ/|obscure /əbˈskjʊr/|hazy /ˈheɪzi/",
 	type:"a",
 	mean:"không rõ ràng, mơ hồ"
 },
@@ -108,6 +108,10 @@ function showAttachWords(word, wordArr) {
 	var resultTxt = ''
 	for (var i = 0; i < wordArr.length; i++) {
 		var ele = wordArr[i]
+		
+		var rrr=  /\/.+\//gi.test(ele)
+		if (!rrr) console.log('showAttachWords::' + ele)
+
 		if ( ele.indexOf(word) == -1 ) {
 			resultTxt += ele.replace(/\/.+\//gi, '').trim() + ', '
 		}

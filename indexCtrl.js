@@ -35,6 +35,7 @@ var app = angular.module("myApp", [
   'vocaNotedApp', 'ebookNotedApp',
   'preCourseApp',
   'sampleSpeakingApp',
+  'collinsLApp',
   'completeLApp','completeRApp',
   'bridgeRApp','bridgeLApp',
   'barron600RApp','barron600LApp',
@@ -63,6 +64,9 @@ app.config(function($routeProvider) {
       .when('/grammer', {
         templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'
       }) 
+      .when('/collinsL', {
+        templateUrl: 'ebooks/collins/collinsL.html', controller: 'collinsLCtrl'
+      })
       .when('/bridgeL', {
         templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'
       })

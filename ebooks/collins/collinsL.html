@@ -1,0 +1,49 @@
+
+
+    <h5 class="mb-4">Collins Speaking</h5>
+    	<!-- <a ng-href="#!collinsL">Reading</a> -->
+    	<div class="my-3">
+		    <div class="col-md-12">
+		    	 <a ng-repeat="story in stories"  
+		    	 ng-click="fetchStory($index);" 
+		    	 href="" 
+		    	 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
+		    	 class="pr-2 mr-1"> 
+		    	 {{story.idx}}
+		    	</a>
+		    </div>
+		    <br> 
+
+		  <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl"></div>
+
+		 </div>
+
+		  <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
+
+		<div class="card mt-4">
+		    <div class="card-body">
+	          <div class="card-text my-2">
+	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
+	          	<h6 class="accordion" >
+				    <a href>{{story.idx}}</a>
+				 </h6>
+
+				 <div class="accordion-content">
+	          		<p compile="story.enShow" ng-if="!bShowVi"></p>
+	          		<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
+	        	</div>
+
+	          	<!-- <img ng-src="listen_data\images\{{story.img}}-min.png" class="img-fluid"> -->
+
+	          	<div class="mt-1" ng-if="story.vocaNotes">
+	           	<hr/>
+	        		<p  class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
+	          			{{note}}
+	          		</p>
+	          	</div>
+
+	        
+	          </div> <!-- card-text -->
+        	</div> 		<!-- card-body -->
+		 </div> <!-- card -->
+   

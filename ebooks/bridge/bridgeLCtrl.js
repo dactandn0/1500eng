@@ -31,7 +31,7 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 $scope.whenAudioEnded = function()
 {
 	var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = $rootScope[kAudioLoopSaveKey];
+    var loopRadio = Helper_loadAudioLoop();
     if (loopRadio === 2) // play next
     {
     	nextStoryIdx = $scope.storyIdx + 1;

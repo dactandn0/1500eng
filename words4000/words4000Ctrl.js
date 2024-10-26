@@ -39,7 +39,7 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 $scope.whenAudioEnded = function(isVoca)
 {
    var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = $rootScope[kAudioLoopSaveKey];
+    var loopRadio = Helper_loadAudioLoop();
     if (loopRadio==='1') // loop
     {
     	$scope.$broadcast('child_playFullSound')  

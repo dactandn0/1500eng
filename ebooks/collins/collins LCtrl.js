@@ -1,17 +1,17 @@
 // include other *.js
-document.write('<script src="./ebooks/complete/listen_data/complete_cd1.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/complete/listen_data/complete_cd2.js" type="text/javascript"></script>');
 
-var app = angular.module("completeLApp", ['ngSanitize']);
-app.controller("completeLCtrl", function($scope, $rootScope, $timeout) {
+document.write('<script src="./ebooks/collins/listen_data/collins_cd12.js" type="text/javascript"></script>');
 
-var kSTORIES = complete_cd1; // 1
+var app = angular.module("collinsLApp", ['ngSanitize']);
+app.controller("collinsLCtrl", function($scope, $rootScope, $timeout) {
+
+var kSTORIES = collins_cd12; //1
 
 $scope.stories = kSTORIES; //1
 $scope.storyIdx = 0;
 
 $scope.createAudioSrc = function() {
-	return "./ebooks/complete/listen_data/audio/" + $scope.story.track + '.mp3';
+	return "./ebooks/collins/listen_data/cd12/" + $scope.story.idx + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -33,7 +33,6 @@ $scope.whenAudioEnded = function()
     {
     	$scope.$broadcast('child_playFullSound')  
     }
-
 }
 
 $scope.fetchStory = function (idx, reset=true) 
@@ -50,7 +49,7 @@ $scope.fetchStory = function (idx, reset=true)
 	$rootScope.audioSrc = $scope.createAudioSrc();
 
 	// save DB
-	Helper_saveDB("completeL_unit", idx);
+	Helper_saveDB("collinsL_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	
 	$scope.story = processStory($scope.story);
@@ -58,11 +57,12 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
-	$scope.storyIdx = Helper_loadInt('completeL_unit');
+	$scope.storyIdx = Helper_loadInt( parseInt('collinsL_unit'), 0  );
 	$scope.fetchStory($scope.storyIdx, false);
 };
 
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 });
+
 });

@@ -69,7 +69,11 @@ function Helper_N_V_Add_S_ES(words) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-
+	// local (a) # locals (n)
+	var excepts = ['local']
+ 	for (var i = 0; i < excepts.length; i++) {
+		if (word===excepts[i]) return word + rest
+	}
 	if (word==='potato') return 'potatoes' + rest
 	if (word==='tomato') return 'tomatoes' + rest
 	if (word==='do') return 'does' + rest
@@ -99,7 +103,10 @@ function Helper_N_V_Add_ING(words) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-
+	var excepts = ['strike']
+ 	for (var i = 0; i < excepts.length; i++) {
+		if (word===excepts[i]) return word + rest
+	}
 	if (word==='reward') return 'reward' + rest   // reward(n) # rewarding (a)
 	if (word==='be') return 'being' + rest
 

@@ -67,7 +67,10 @@ margin-bottom: 1px;
 margin: 1px 0;
 }
 
-
+.syn {
+  font-style: italic;
+  color: green;
+}
 
 .note{
 	font-size: 11px;

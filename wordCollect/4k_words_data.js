@@ -15,8 +15,8 @@ finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
 moment (n) khoảnh khắc<br>\
-massive (a) /ˈmæsɪv/ to lớn<br>\
 pleased (a) vui lòng<br>\
+rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 mammal (n) /ˈmæml/ động vật có vú<br>\
@@ -262,21 +262,22 @@ direct trực tiếp<br>\
 exam kiểm tra<br>\
 example ví dụ<br>\
 limit giới hạn<br>\
-local cục bộ<br>\
+local (a) /ˈləʊkl/ cục bộ, locals người dân địa phương<br>\
 magical ma thuật<br>\
 mail thư<br>\
 novel tiểu thuyết<br>\
-outline phác thảo<br>\
+outline (n) /ˈaʊtlaɪn/ phác thảo<br>\
 poet nhà thơ<br>\
 print in<br>\
-scene cảnh<br>\
+scene (n) /siːn/ cảnh<br>\
 sheet tờ<br>\
 store cửa hàng<br>\
 suffer chịu đựng<br>\
-technology  công nghệ<br>\
+technology (n) /tekˈnɑːlədʒi/ công nghệ<br>\
+vividly (adv) /ˈvɪvɪdli/ sống động<br>\
 across xuyên<br>\
 breathe hít thở<br>\
-characteristic (n) /ˌkærəktəˈrɪstɪk/ đặc điểm<br>\
+characteristic (n) /ˌkærəktəˈrɪstɪk/ đặc điểm(tính)<br>\
 consume tiêu thụ<br>\
 excite kích thích<br>\
 extreme cực đoan<br>\
@@ -376,7 +377,6 @@ entertain giải trí<br>\
 extra thêm<br>\
 goal mục tiêu<br>\
 meat thịt<br>\
-opinion ý kiến<br>\
 reflect phản ánh<br>\
 regard (v) /rɪˈɡɑːrd/ xem xét<br>\
 vegetable rau<br>\
@@ -453,8 +453,9 @@ passage đoạn văn<br>\
 pressure áp lực<br>\
 probable có thể<br>\
 public công cộng<br>\
-strike đình công<br>\
-support hỗ trợ<br>\
+strike (n,v) /straɪk/ đánh đập, đình công<br>\
+striking (a) /ˈstraɪkɪŋ/ làm nổi bật<br>\
+support (v) /səˈpɔːrt/ hỗ trợ<br>\
 task nhiệm vụ<br>\
 term thuật ngữ<br>\
 unite  đoàn kết<br>\
@@ -522,15 +523,16 @@ instrument (n) /ˈɪnstrəmənt/ nhạc cụ<br>\
 list danh sách<br>\
 magic ma thuật<br>\
 message tin nhắn<br>\
-own sở hữu<br>\
+own (a,v) /əʊn/ (a)làm chủ,(v),thú nhận, sở hữu<br>\
 predict dự đoán<br>\
 professor giáo sư<br>\
+chaotic (a) /keɪˈɑːtɪk/ hỗn loạn, lộn xộn<br>\
 rush vội vã<br>\
 schedule (n) /ˈskedʒuːl/ lịch trình<br>\
 share chia sẻ<br>\
 stage sân khấu<br>\
 storm bão<br>\
-within  trong<br>\
+within (prep) /wɪˈðɪn/ trong<br>\
 advertise (v) /ˈædvərtaɪz/ quảng cáo<br>\
 assign (v) /əˈsaɪn/ giao<br>\
 audience (n) /ˈɔːdiəns/ khán giả<br>\
@@ -567,7 +569,6 @@ ahead trước<br>\
 amount số lượng<br>\
 belief niềm tin<br>\
 center trung tâm<br>\
-common chung<br>\
 cost chi phí<br>\
 demonstrate trình bày<br>\
 evidence bằng chứng<br>\
@@ -680,7 +681,6 @@ disappoint thất vọng<br>\
 dive lặn<br>\
 exchange trao đổi<br>\
 favor ủng hộ<br>\
-forever,guy mãi mãi,anh chàng<br>\
 lovely (a) đáng yêu<br>\
 in a lovely way (adv) đáng yêu<br>\
 mood tâm trạng<br>\
@@ -706,7 +706,6 @@ persuade thuyết phục<br>\
 route tuyến đường<br>\
 ruins tàn tích<br>\
 scholar học giả<br>\
-significant quan trọng<br>\
 volcano broad núi lửa rộng<br>\
 bush bụi<br>\
 capable có khả năng<br>\
@@ -766,7 +765,6 @@ trap bẫy<br>\
 trial xét xử<br>\
 violent  admission bạo lực nhập học<br>\
 astronomy thiên văn học<br>\
-blame trách nhiệm<br>\
 despite mặc dù<br>\
 dinosaur khủng long<br>\
 exhibit triển lãm<br>\
@@ -859,7 +857,6 @@ gesture cử chỉ<br>\
 interrupt ngắt<br>\
 likeness  giống<br>\
 moreover hơn nữa<br>\
-perspective quan điểm<br>\
 recover phục hồi<br>\
 rely dựa vào<br>\
 shock sốc<br>\
@@ -1167,7 +1164,6 @@ hatred hận thù<br>\
 hut lều<br>\
 inferior thấp kém<br>\
 lodge lều<br>\
-neglect bỏ bê<br>\
 newcomer người mới<br>\
 offense tội lỗi<br>\
 overlook bỏ qua<br>\

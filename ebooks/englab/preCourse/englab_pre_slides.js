@@ -634,13 +634,11 @@ my mom, who inspires me<br>\
 my mom, whom I admire the most<br>\
 <br>\
 2. PERSONAL INFORMATION + MAIN IDEAS<br>\
-<br>\
 Age<br>\
 She/he is in her 20s/30s/teens<br>\
 She/ he is a middle-aged/ 40-year-old + N<br>\
 Tips làm dài câu<br>\
 She is now in her mid 40s and she will turn 46 next year.<br>\
-<br>\
 Job<br>\
 He/ she is working as a/an ... at ...<br>\
 Tips làm dài câu<br>\

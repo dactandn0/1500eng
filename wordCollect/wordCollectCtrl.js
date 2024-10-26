@@ -18,8 +18,8 @@ $scope.story = {};
 $scope.acc = -1;
 $scope.words = [];
 
-$scope.saveNoted = function(event, word) {
- 	IndexCtrlScope.saveNoted (event, word);
+$scope.saveNoted = function(word) {
+ 	IndexCtrlScope.saveNoted (word);
 }
 
 $scope.IsWordSavedBefore = function(word) {

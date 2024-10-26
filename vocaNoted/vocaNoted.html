@@ -9,15 +9,6 @@
 	ng-model="audioSpeed" 
 	ng-change="setAudioSpeed()"> {{audioSpeed}}
 
-<input 
-	type="range" 
-	class="form-range mt-3 ml-4"
-	min="0.5" 
-	max="1" 
-	step="0.1"
-	ng-model="audioVolume" 
-	ng-change="setAudioVolume()"> {{audioVolume}}
-
 <div class="my-3">
  <button class="btn-sm btn-primary"
  		ng-show="notedWords.length > 0"

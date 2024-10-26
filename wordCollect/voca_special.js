@@ -7,7 +7,7 @@ const VOCA_SPECIAL = [
 wave (v) vẫy tay | (n) con sóng<br>\
 party (n) tiệc  |  đảng phái<br>\
 object (v) phản đối | (n) vật thể<br>\
-match (n) trận đấu | (v) phối hợp<br>\
+match (n) trận đấu | (v) phối hợp, khớp, sánh được<br>\
 trip (v) vấp ngã | (n) chuyến đi<br>\
 safe (a.) an toàn | (n) cái két<br>\
 train (n) tàu hỏa |(v) huấn luyện<br>\
@@ -16,7 +16,7 @@ play (v) chơi | (n) vở kịch<br>\
 order (v) yêu cầu | (n) trật tự<br>\
 park (v) đỗ xe | (n) công viên<br>\
 fine (a.) ổn thỏa | (v) phạt tiền s.o + money<br>\
-lie (v) nằm | (v) nói dối<br>\
+lie (v) nằm | (v) nói dối [lie + to + sb + about + sth]<br>\
 last (v) kéo dài | (a) cuối cùng<br>\
 spot (n) điểm, chấm nhỏ | (v) nhìn thấy<br>\
 kind of (n) loại | (a) tốt bụng<br>\

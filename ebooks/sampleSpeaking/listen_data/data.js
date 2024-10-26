@@ -180,7 +180,7 @@ Thí sinh: Cảm ơn bạn rất nhiều.",
 {
 	track:"describe_city00",
 	title:"Describe a place (city/town) that is good for people to live",
-	en:"I'd like to talk about Da Nang, a coastal city in Vietnam that I think is an ideal place for people to live. Da Nang is located in central Vietnam, along the coast, and it's well-known for its stunning beaches, laid-back lifestyle, and friendly locals. I first heard about Da Nang from friends who had visited and couldn't stop raving about how beautiful and peaceful it was.<br>\
+	en:"I'd like to talk about Da Nang, a coastal city in Vietnam that I think is an ideal place for people to live. Da Nang is located in centrer Vietnam, along the coast, and it's well-known for its stunning beaches, laid-back lifestyle, and friendly locals. I first heard about Da Nang from friends who had visited and couldn't stop raving about how beautiful and peaceful it was.<br>\
 The city itself this perfect blend of urban develcument and natural beauty, striking the ideal balance between the hustle and bustle of city life and the tranquility of nature. Specifically, on one side, you're amazed by modern infrastructure with good schools, hospitals, as well as shopping centers, and on the other side, you're surrounded by breathtaking landscapes like the Marble Mountains and the famous My Khe Beach. The weather is generally pleasant, neither too hot nor too cold, always just right, making it a comfortable place to live year-round.<br>\
 Unlike bigger cities like Hanoi or Ho Chi Minh City, Da Nang is less crowded and chaotic, which means less traffic, less pollution, and a slower pace of life. It's also considered one of the safest cities in Vietnam, making it a great place for families.<br>\
 On top of that, the people here are definitely nothing short of amazing. They are considerate, helpful, welcoming and they know the place like the back of their hand. My friend still vividly remembers how thoughtful the locals were when they lent a hand as she got lost.<br>\
@@ -190,7 +190,7 @@ Bản thân thành phố này là sự kết hợp hoàn hảo giữa sự phát
 Không giống như những thành phố lớn hơn như Hà Nội hay Thành phố Hồ Chí Minh, Đà Nẵng ít đông đúc và hỗn loạn hơn, nghĩa là ít giao thông hơn, ít ô nhiễm hơn và nhịp sống chậm hơn. Nơi đây cũng được coi là một trong những thành phố an toàn nhất tại Việt Nam, khiến nơi đây trở thành nơi tuyệt vời cho các gia đình.<br>\
 Ngoài ra, người dân ở đây chắc chắn không gì tuyệt vời hơn. Họ chu đáo, hữu ích, hiếu khách và họ biết rõ nơi này như lòng bàn tay. Bạn tôi vẫn còn nhớ rất rõ người dân địa phương đã chu đáo như thế nào khi họ giúp đỡ cô ấy khi cô ấy bị lạc.<br>\
 Vì vậy, tôi phải nói rằng Đà Nẵng có tất cả, cung cấp sự tiện lợi, giá cả phải chăng và vẻ đẹp tự nhiên theo cách mà ít thành phố nào khác có thể sánh được - một thiên đường yên bình thực sự."
-	,voca:"",
+	,voca:"coastal,well-known,laid-back,raving,nothing short of,chaotic,considered,vividly",
 },
 {
 	track:"describe_sport00",

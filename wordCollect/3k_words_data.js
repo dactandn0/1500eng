@@ -691,6 +691,7 @@ airsick /ˈeə.sɪk/ (bị) say máy bay<br>\
 cockpit /ˈkɒk.pɪt/ buồng lái<br>\
 fasten /ˈfɑː.sən/ thắt, buộc<br>\
 take off /teɪk ɒf/ cất cánh<br>\
+take in account (v) /teɪk ɒf/ cân nhắc, xem xét<br>\
 co-pilot /ˈkəʊpaɪ.lət/ phi công phụ, lái phụ<br>\
 assist /əˈsɪst/ hỗ trợ, giúp đỡ<br>\
 first-class /fɜːst ˈklɑːs/ (ghế) hạng nhất<br>\
@@ -1275,7 +1276,6 @@ Ring (n) /rɪŋ/ Nhẫn<br>\
 Romantic (a) /roʊˈmæn.tɪk/ Lãng mạn<br>\
 Sweet (a) /swiːt/ Ngọt ngào<br>\
 Alone (a) /əˈloʊn/ Một mình<br>\
-Forever (adv) /fɔːrˈɛv.ər/ Mãi mãi<br>\
 Boyfriend (n) /ˈbɔɪ.frɛnd/ Bạn trai<br>\
 Girlfriend (n) /ˈɡɜːl.frɛnd/ Bạn gái<br>\
 Kiss (v) /kɪs/ Hôn<br>\

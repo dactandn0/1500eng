@@ -71,6 +71,7 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 
 
 function ngClickOnWord(word, graph) {
+	if (word.trim().length == 0) return graph // safe
 	const tagOpen = '<span ng-click="Idx_n_L_WSp_($event)">'
 	if (ValidateWord(word) 
 		&& word !=='br'
@@ -314,6 +315,12 @@ Helper_saveDB = function(key, val = 0) {
 Helper_loadInt = function(key, defVal = 0) {
 	if (localStorage.hasOwnProperty(key)) {
 		return parseInt(localStorage[key].trim());
+	}
+	return defVal;
+}
+Helper_loadFloat = function(key, defVal = 0) {
+	if (localStorage.hasOwnProperty(key)) {
+		return parseFloat(localStorage[key].trim());
 	}
 	return defVal;
 }

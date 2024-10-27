@@ -32,6 +32,7 @@ approach tiếp cận<br>\
 carefully cẩn thận<br>\
 chemical hóa học<br>\
 evil ác<br>\
+obesity (n)  /əʊˈbiːsəti/ béo phì<br>\
 experiment (n) /ɪkˈsperɪmənt/ thí nghiệm<br>\
 kill giết<br>\
 laboratory phòng thí nghiệm<br>\
@@ -145,9 +146,9 @@ peace hòa bình<br>\
 prince hoàng tử<br>\
 keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
 protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
-sense (n) /sens/ giác quan [sense of direction/rhythm/timing/rhythm/timing/fun/adventure<br>\
+sense (n) /sens/ cảm giác, giác quan [sense of direction/rhythm/timing/rhythm/timing/fun/adventure<br>\
 sudden đột ngột<br>\
-therefore  do đó<br>\
+therefore (adv) /ˈðerfɔːr/ do đó<br>\
 accept chấp nhận<br>\
 arrange sắp xếp<br>\
 attend tham dự<br>\
@@ -156,7 +157,7 @@ encourage (v) /ɪnˈkɜːrɪdʒ/ khuyến khích<br>\
 familiar (a) /fəˈmɪliər quen thuộc<br>\
 grab chộp lấy<br>\
 hang treo<br>\
-necessary cần thiết<br>\
+necessary (a) /ˈnesəseri/ cần thiết<br>\
 pattern mẫu<br>\
 propose đề xuất<br>\
 purpose (n) /ˈpɜːrpəs/ mục đích<br>\

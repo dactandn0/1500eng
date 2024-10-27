@@ -557,7 +557,68 @@ magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
 stunning (a) /ˈstʌnɪŋ/ kinh ngạc, tuyệt vời<br>\
 breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt"
 	,voca:"",
-}	
+},
+{
+		date:"21/10/2024",
+		title:"[W] Pros && cons eating fast food and using technology in study",
+		en:"There are three advantages of eating fast food in our daylife. First of all, eating fast food helps our mood feel better. There are wide ranges of available dishes, even on the pavement. As a result, people could get food easily on bustle and hustle working days. Besides, we can always try new meals, and, likely, you won't grow bored because there are so many fast food options available, primarily if you reside in a big city. Secondly, eating fast food helps us avoid food waste. There are frequently leftovers when you prepare meals at home. They can be placed in the refrigerator with the best intentions, but the food is often wasted. When you order fast food, you get what you need for that specific meal, so there is nothing left to store in the fridge, and nothing is wasted. Finally, Fast food is also very convenient while traveling. While traveling, you wouldn't have time to prepare for your meal, so you might as well grab some fast food. You'll not only skip cooking, but you'll also escape having to clean the dishes afterward. Consequently, when traveling, fast food is an excellent alternative to cooking because you can spend additional time on trips and learning about the local culture.<br>\
+However, there are also three disadvantages of consuming fast food. Firstly, it has a lot of unhealthy ingredients and is typically lacking in essential vitamins and minerals. Despite the possibility of certain nutritious goods, the most popular dishes at fast food restaurants are frequently quite harmful. As a result, over time, your level of fitness, as well as your general quality of life, may decline significantly. Secondly, it contains calories, and makes people get fat. Besides, fast food isn't a smart choice for weight loss because it is high in calories. Lastly, there are a lot of low quality but expensive foods of unknown origin. So, happy cooking with family at home can still be less expensive and safe.<br>\
+In short, you should cook for yourself because cooking ensures you consume nutritious food, burn calories and cost less money than buying fast food. If you really love fast food, you should sometimes get it to protect yourself from bad ingredients and lose weight.<br>\
+<br>\
+<b>Pros</b><br>\
+Mental health - help our mood feel better <br>\
+Travelling - easy to bring when travelling<br>\
+Time - waiting time is very short<br>\
+Taste - amazing taste/tasty<br>\
+Social life - provides a space to hang out<br>\
+<b>Cons</b><br>\
+Weight - can make people get fat<br>\
+Physical health - overprocessed ingredients can cause heart disease<br>\
+Price - not very affordable to eat daily<br>\
+Addiction - may get addicted from eating fast food<br>\
+Quality - low-quality food<br>\
+<br>\
+What are the advantages and disadvantages of students using technology in free time. <br>\
+<b>Pros:</b><br>\
+1. easy to find information (google)<br>\
+2. learn English while using technology (duolingo/ games)<br>\
+3. (facebook) connects with friends<br>\
+<b>Cons</b>:<br>\
+1. Risk of getting addicted to using technology (playing games) -> can cause depression<br>\
+2. Decrease the ability to concentrate -> research -> neurons/ brain ('TikTok rewires our brains')<br>\
+3. Fewer opportunities to develop communication skills (how to talk and eye contact)/ too much screen time decreases face-to-face interaction<br>\
+4. May affect eye health -> can cause myopia (short-sightedness)<br>\
+5. May contribute to a sedentary lifestyle (inactive lifestyle) -> cause obesity / overweight"
+		,vi:"Có ba lợi ích của việc ăn đồ ăn nhanh trong cuộc sống hàng ngày của chúng ta. Trước hết, ăn đồ ăn nhanh giúp tâm trạng của chúng ta tốt hơn. Có rất nhiều loại món ăn có sẵn, ngay cả trên vỉa hè. Do đó, mọi người có thể dễ dàng tìm thấy thức ăn trong những ngày làm việc bận rộn và hối hả. Bên cạnh đó, chúng ta luôn có thể thử những bữa ăn mới và có thể bạn sẽ không thấy chán vì có rất nhiều lựa chọn đồ ăn nhanh, đặc biệt là nếu bạn sống ở thành phố lớn. Thứ hai, ăn đồ ăn nhanh giúp chúng ta tránh lãng phí thực phẩm. Thường có thức ăn thừa khi bạn chuẩn bị bữa ăn ở nhà. Chúng có thể được để trong tủ lạnh với ý định tốt nhất, nhưng thức ăn thường bị lãng phí. Khi bạn gọi đồ ăn nhanh, bạn sẽ nhận được những gì bạn cần cho bữa ăn cụ thể đó, vì vậy không còn gì để lưu trữ trong tủ lạnh và không có gì bị lãng phí. Cuối cùng, đồ ăn nhanh cũng rất tiện lợi khi đi du lịch. Khi đi du lịch, bạn sẽ không có thời gian để chuẩn bị cho bữa ăn của mình, vì vậy bạn cũng có thể mua một ít đồ ăn nhanh. Bạn sẽ không chỉ bỏ qua việc nấu nướng mà còn thoát khỏi việc phải rửa bát đĩa sau đó. Do đó, khi đi du lịch, đồ ăn nhanh là một lựa chọn thay thế tuyệt vời cho việc nấu ăn vì bạn có thể dành thêm thời gian cho các chuyến đi và tìm hiểu về văn hóa địa phương.<br>\
+Tuy nhiên, cũng có ba nhược điểm khi tiêu thụ đồ ăn nhanh. Thứ nhất, nó có nhiều thành phần không lành mạnh và thường thiếu các loại vitamin và khoáng chất thiết yếu. Mặc dù có một số loại thực phẩm bổ dưỡng, nhưng các món ăn phổ biến nhất tại các nhà hàng thức ăn nhanh thường khá có hại. Do đó, theo thời gian, mức độ thể lực cũng như chất lượng cuộc sống nói chung của bạn có thể giảm đáng kể. Thứ hai, nó chứa calo và khiến mọi người béo phì. Bên cạnh đó, đồ ăn nhanh không phải là lựa chọn thông minh để giảm cân vì nó chứa nhiều calo. Cuối cùng, có rất nhiều loại thực phẩm chất lượng thấp nhưng đắt tiền không rõ nguồn gốc. Vì vậy, việc nấu ăn vui vẻ cùng gia đình tại nhà vẫn có thể ít tốn kém và an toàn hơn.<br>\
+Tóm lại, bạn nên tự nấu ăn vì nấu ăn đảm bảo bạn tiêu thụ thực phẩm bổ dưỡng, đốt cháy calo và tốn ít tiền hơn so với việc mua đồ ăn nhanh. Nếu bạn thực sự thích đồ ăn nhanh, đôi khi bạn nên mua để bảo vệ bản thân khỏi các thành phần không tốt và giảm cân.<br>\
+<br>\
+<b>Ưu điểm</b><br>\
+Sức khỏe tinh thần - giúp tâm trạng của chúng ta tốt hơn <br>\
+Du lịch - dễ mang theo khi đi du lịch<br>\
+Thời gian - thời gian chờ rất ngắn<br>\
+Hương vị - hương vị tuyệt vời/ngon<br>\
+Cuộc sống xã hội - cung cấp không gian để tụ tập<br>\
+<b>Nhược điểm</b><br>\
+Cân nặng - có thể khiến mọi người béo phì<br>\
+Sức khỏe thể chất - các thành phần chế biến quá mức có thể gây ra bệnh tim<br>\
+Giá cả - không phải là thứ quá đắt để ăn hàng ngày<br>\
+Nghiện - có thể bị nghiện khi ăn đồ ăn nhanh<br>\
+Chất lượng - thực phẩm chất lượng thấp<br>\
+<br>\
+Ưu điểm và nhược điểm của việc học sinh sử dụng công nghệ trong thời gian rảnh rỗi là gì. <br>\
+<b>Ưu điểm:</b><br>\
+1. dễ tìm thông tin (google)<br>\
+2. học tiếng Anh trong khi sử dụng công nghệ (duolingo/ trò chơi)<br>\
+3. (facebook) kết nối với bạn bè<br>\
+<b>Nhược điểm</b>:<br>\
+1. Nguy cơ nghiện sử dụng công nghệ (chơi trò chơi) -> có thể gây trầm cảm<br>\
+2. Giảm khả năng tập trung -> nghiên cứu -> tế bào thần kinh/ não ('TikTok kết nối lại não của chúng ta')<br>\
+3. Ít cơ hội phát triển kỹ năng giao tiếp (cách nói chuyện và giao tiếp bằng mắt)/ quá nhiều thời gian sử dụng màn hình làm giảm tương tác trực tiếp<br>\
+4. Có thể ảnh hưởng đến sức khỏe của mắt -> có thể gây cận thị (tầm nhìn ngắn)<br>\
+5. Có thể góp phần vào lối sống ít vận động (lối sống không hoạt động) -> gây béo phì/thừa cân"
+		,voca:"",
+	}	
 ,{
 	date:"23/10/2024",
 	title:"[L] Unit 6. Successful people",
@@ -665,8 +726,6 @@ I would tell them without any hesitation (không chút ngần ngại) about ..."
 Một người nổi tiếng mà tôi rất vinh dự được gặp là Taylor Swift. Swift là một nhạc sĩ được ca ngợi, người đã đạt được danh tiếng toàn cầu với nhiều bản hit trong 20 năm qua. Cô cũng được biết đến rộng rãi với khả năng sáng tác nhạc đặc biệt của mình.<br>\
 Tôi bắt đầu nghe nhạc của Taylor Swift từ khi còn học trung học. Tôi đã là một người hâm mộ lớn của cô ấy kể từ đó. Tôi thấy giai điệu của cô ấy vô cùng hấp dẫn và luôn ngưỡng mộ kỹ năng viết lời của cô ấy. Ngoài ra, thông qua việc xem nhiều cuộc phỏng vấn và chương trình trò chuyện có sự góp mặt của Taylor, tôi đã trở nên ngưỡng mộ tính cách điềm tĩnh và điềm đạm của cô ấy, đó là lý do tại sao tôi rất muốn được tương tác trực tiếp với cô ấy.<br>\
 Hơn nữa, Taylor Swift từ lâu đã là hình mẫu của tôi vì nhiều lý do. Cô ấy không chỉ là một nhạc sĩ tài năng mà còn là một người phụ nữ độc lập và bướng bỉnh, người làm việc chăm chỉ để đạt được mục tiêu của mình và đấu tranh cho những gì cô ấy tin tưởng. Cô ấy không bao giờ để phản ứng dữ dội và chỉ trích cản trở thành công của mình. Sẽ thật tuyệt nếu tôi có thể trò chuyện với cô ấy qua tách cà phê về cách cô ấy vượt qua những bất lợi trong sự nghiệp của mình. Tôi có thể học được nhiều điều từ đó."
-	
-
 
 	,voca:""
 }

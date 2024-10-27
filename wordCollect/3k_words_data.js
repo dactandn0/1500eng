@@ -722,6 +722,7 @@ Hurt (v) /hɜːt/ Đau<br>\
 Swollen (a) /ˈswoʊlən/ Bị sưng<br>\
 Pus (n) /pʌs/ Mủ<br>\
 Graze (v) /Greiz/ Trầy xước (da)<br>\
+myopia  (n) /maɪˈəʊpiə/ cận thị<br>\
 Headache (n) /ˈhɛdeɪk/ Đau đầu<br>\
 Insomnia (n) /ɪnˈsɑːmniə/ Chứng mất ngủ<br>\
 Rash (n) /ræʃ/ Phát ban<br>\
@@ -1063,7 +1064,8 @@ Thirsty (a) /ˈθɜːrsti/ Khát nước<br>\
 Comfortable (a) /ˈkʌmftəbl/ Thoải mái<br>\
 Tense (a) /tens/ Căng thẳng<br>\
 Tired (a) /ˈtaɪəd/ - /ˈtaɪərd/ Mệt mỏi<br>\
-Bored (v) /bɔːd/ - /bɔːrd/ Chán nản",
+Bored (v) /bɔːd/ Chán nản<br>\
+Boredom (n) /ˈbɔːrdəm/ Sự (buồn) chán nản",
 },
 {
 	title:"Drink",

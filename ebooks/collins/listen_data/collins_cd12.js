@@ -295,5 +295,49 @@ Giám khảo: Làm thế nào để các nhà quản lý có thể tăng động
 Ứng viên: Phân công đúng nhiệm vụ cho người có đúng kỹ năng, nhưng làm cho mỗi nhiệm vụ hơi khác nhau một chút để họ có thể học hỏi mỗi lần. Điều đó có thể dẫn đến tăng động lực. Đó là làm cho công việc trở nên thú vị, nhưng không làm nhân viên ngập trong quá nhiều thông tin mới mỗi lần. Nếu họ thấy rằng họ có thể tiến bộ đều đặn và đáp ứng các thách thức được đặt ra, thì họ sẽ duy trì được động lực.<br>\
 Giám khảo: Mọi người có động lực hơn nếu công việc của họ liên quan đến việc giúp đỡ người khác không? Mặc dù công việc của tôi không thực sự liên quan đến việc giúp đỡ mọi người, chỉ là đào tạo họ, nhưng tôi mạo hiểm đoán rằng những người làm công tác thanh thiếu niên, chẳng hạn, thấy rất bổ ích khi giúp một người trẻ đạt được mục tiêu cá nhân hoặc vượt qua thử thách cá nhân. Tôi cũng có thể hình dung rằng một cố vấn sẽ vô cùng hài lòng với công việc khi biết rằng nếu họ không ở đó để lắng nghe các vấn đề của bệnh nhân, mọi thứ có thể sẽ không diễn ra tốt đẹp với họ. Vì vậy, vâng, mặc dù tôi không thể biết chắc chắn, nhưng tôi cho rằng những người làm những công việc như vậy sẽ thích thú hơn với công việc của họ và được thúc đẩy bởi một điều gì đó sâu sắc hơn là tiền bạc."
 	,voca:"",
+},
+{
+	idx:"1.T21",
+	en:"[1] Where I come from it's almost always sweltering. Ours is an arid climate, and in most parts of the country precipitation is very low. Can you believe that in the summer, the temperature can exceed 50°C?<br>\
+[2] Sometimes I feel like it's constantly drizzling here and it generally feels damp. In fact, right now it's pouring down. That does mean we have the most beautiful lush, green countryside, though. And the climate is temperate, so we don't suffer from any extreme weather, thank goodness.<br>\
+[3] The weather here is notoriously changeable. People often think our country is very, very cold all the time, but ocean currents keep our climate fairly mild, considering the latitude. I don't mind our winters, which are bearable as long as you wrap up warm, but I don't like our summers because it never gets above 25°C."
+	,vi:"[1] Nơi tôi đến gần như lúc nào cũng oi bức. Khí hậu nơi tôi ở rất khô cằn, và hầu hết các vùng trong nước đều có lượng mưa rất thấp. Bạn có tin được là vào mùa hè, nhiệt độ có thể vượt quá 50°C không?<br>\
+[2] Đôi khi tôi cảm thấy trời liên tục mưa phùn ở đây và thường ẩm ướt. Thực tế là lúc này trời đang đổ mưa như trút nước. Nhưng điều đó có nghĩa là chúng tôi có vùng nông thôn xanh tươi, tươi tốt đẹp nhất. Và khí hậu ôn hòa, vì vậy chúng tôi không phải chịu bất kỳ thời tiết khắc nghiệt nào, thật may mắn.<br>\
+[3] Thời tiết ở đây nổi tiếng là thay đổi thất thường. Mọi người thường nghĩ rằng đất nước chúng tôi rất, rất lạnh mọi lúc, nhưng các dòng hải lưu giúp khí hậu của chúng tôi khá ôn hòa, xét đến vĩ độ. Tôi không bận tâm đến mùa đông của chúng tôi, mùa đông có thể chịu đựng được miễn là bạn mặc ấm, nhưng tôi không thích mùa hè của chúng tôi vì nhiệt độ không bao giờ vượt quá 25°C."
+	,voca:"",
+},
+{
+	idx:"1.T23",
+	en:"Examiner: Tell me about your country's climate.<br>\
+Candidate: We have an extreme climate. Our winters are absolutely freezing, and our summers are boiling hot. That means that the people, the houses, the transport system, everything needs to be prepared to cope with every kind of weather.<br>\
+Examiner: What's your favourite kind of weather? <br>\
+Candidate: What I like most is hot, dry weather. I love being able to sit outside on a balmy evening with a drink, rather than cooped up inside like you are in the winter. <br>\
+Examiner: Does the weather influence your mood? <br>\
+Candidate: Yes, it certainly does. It's the rain that influences my mood the most. I hate it when it's raining - it makes me feel so down. Irs hard to go out, without getting soaked to the skin, anyway. And the sky is so dismal and overcast. It's miserable!<br>\
+Examiner: Is it worse to feel too hot or too cold? <br>\
+Candidate: Well, I suppose if it's too cold you can just wear more layers, but nevertheless I prefer to ,be too hot. At least it means the weather is good, and you can always go for a swim to cool down. What I really can't stand is being cold and wet. That's the worst combination and it makes me worry that I'm going to catch a cold."
+	,vi:"Giám khảo: Hãy kể cho tôi nghe về khí hậu ở đất nước bạn.<br>\
+Ứng viên: Chúng ta có khí hậu khắc nghiệt. Mùa đông của chúng ta lạnh cóng, còn mùa hè thì nóng như thiêu đốt. Điều đó có nghĩa là con người, nhà cửa, hệ thống giao thông, mọi thứ đều cần được chuẩn bị để ứng phó với mọi loại thời tiết.<br>\
+Giám khảo: Bạn thích loại thời tiết nào nhất? <br>\
+Ứng viên: Tôi thích nhất là thời tiết nóng và khô. Tôi thích được ngồi ngoài trời vào một buổi tối ấm áp với một ly đồ uống, thay vì bị nhốt trong nhà như bạn vào mùa đông. <br>\
+Giám khảo: Thời tiết có ảnh hưởng đến tâm trạng của bạn không? <br>\
+Ứng viên: Có chứ, chắc chắn là có. Mưa ảnh hưởng đến tâm trạng của tôi nhiều nhất. Tôi ghét khi trời mưa - nó khiến tôi cảm thấy rất chán nản. Dù sao thì cũng khó mà ra ngoài mà không bị ướt như chuột lột. Và bầu trời thì u ám và u ám. Thật khốn khổ!<br>\
+Giám khảo: Cảm thấy quá nóng hay quá lạnh tệ hơn? <br>\
+Ứng viên: Vâng, tôi cho rằng nếu trời quá lạnh, bạn có thể mặc thêm nhiều lớp, nhưng dù sao thì tôi vẫn thích, quá nóng. Ít nhất thì điều đó có nghĩa là thời tiết tốt, và bạn luôn có thể đi bơi để hạ nhiệt. Điều tôi thực sự không thể chịu được là lạnh và ướt. Đó là sự kết hợp tệ nhất và nó khiến tôi lo lắng rằng mình sẽ bị cảm lạnh."
+	,voca:"",
+},
+{
+	idx:"1.T24",
+	en:"Candidate: My favourite season is most certainly the summer, which is officially from June to September. I say 'officially' because the reality is that we generally get a very short summer, in that the weather is only really 'summery' for a few weeks a year. The rest of the season merges with the others, being rather cold and rainy. The highest the temperature gets is about 3D, and when it gets that high, people start complaining because they're not used to such heat. This irritates me, to be honest, because my view is that we so rarely have hot weather that we should just appreciate it and enjoy it when we do. In this country, and especially in my region, you can't rely on good weather in the summer. I've been to many outdoor events, like weddings, concerts, barbecues and so on, where the organisers were optimistic about the weather, but where it rained non stop. Of course, you can't blame them - if you can 't organise an outdoor event in August, when can you?<br>\
+In the summer, I typically go abroad on holiday to places where scorching sunshine is practically guaranteed. This is because I am a sun worshipper and like to get a good tan. Having sun on my skin makes me feel healthy, though I am fully aware of all the dangers associated with too much exposure to the sun. When I am at home, I like to have friends over for barbecues, and we stay out in the garden all evening until it gets too chilly or until it's time for them to go home.<br>\
+The reason summer is my favourite season is that sunshine makes me happy. It's a scientific fact that it releases endorphins. In fact, during the winter many people in my country use light boxes, which recreate the light of the sun. You have to sit and stare into the light and it is intended to lift your mood. In the summer, though, you don't need such gadgets; you can just go outside, sit in the sun and get a natural energy boost. It's wonderful. <br>\
+Examiner: Do you dislike the winter?<br>\
+Candidate: No, I don't. All the seasons have something to offer. In the winter it's nice to snuggle up inside, with a mug of hot chocolate."
+	,vi:"Ứng viên: Mùa yêu thích của tôi chắc chắn là mùa hè, chính thức là từ tháng 6 đến tháng 9. Tôi nói 'chính thức' vì thực tế là chúng tôi thường có một mùa hè rất ngắn, vì thời tiết chỉ thực sự 'mùa hè' trong vài tuần một năm. Phần còn lại của mùa hòa vào những mùa khác, khá lạnh và mưa. Nhiệt độ cao nhất đạt được là khoảng 3D, và khi nhiệt độ lên cao như vậy, mọi người bắt đầu phàn nàn vì họ không quen với cái nóng như vậy. Thành thật mà nói, điều này làm tôi khó chịu, bởi vì quan điểm của tôi là chúng tôi hiếm khi có thời tiết nóng nên chúng tôi chỉ nên trân trọng và tận hưởng khi có. Ở đất nước này, và đặc biệt là ở khu vực của tôi, bạn không thể trông chờ vào thời tiết tốt vào mùa hè. Tôi đã đến nhiều sự kiện ngoài trời, như đám cưới, buổi hòa nhạc, tiệc nướng, v.v., nơi những người tổ chức lạc quan về thời tiết, nhưng trời mưa không ngừng. Tất nhiên, bạn không thể trách họ - nếu bạn không thể tổ chức một sự kiện ngoài trời vào tháng 8, thì khi nào bạn có thể?<br>\
+Vào mùa hè, tôi thường đi nghỉ ở nước ngoài đến những nơi gần như chắc chắn có nắng nóng. Lý do là vì tôi là người tôn thờ ánh nắng mặt trời và thích rám nắng. Ánh nắng mặt trời khiến tôi cảm thấy khỏe mạnh, mặc dù tôi hoàn toàn nhận thức được mọi nguy hiểm liên quan đến việc tiếp xúc quá nhiều với ánh nắng mặt trời. Khi ở nhà, tôi thích mời bạn bè đến dự tiệc nướng và chúng tôi ở ngoài vườn suốt buổi tối cho đến khi trời quá lạnh hoặc đến lúc họ phải về nhà.<br>\
+Lý do mùa hè là mùa tôi yêu thích nhất là vì ánh nắng mặt trời khiến tôi vui vẻ. Một sự thật khoa học là nó giải phóng endorphin. Trên thực tế, vào mùa đông, nhiều người ở đất nước tôi sử dụng hộp đèn, nơi tái tạo ánh sáng của mặt trời. Bạn phải ngồi và nhìn chằm chằm vào ánh sáng và nó nhằm mục đích nâng cao tâm trạng của bạn. Tuy nhiên, vào mùa hè, bạn không cần những tiện ích như vậy; bạn chỉ cần ra ngoài, ngồi dưới nắng và lấy lại năng lượng tự nhiên. Thật tuyệt. <br>\
+Giám khảo: Bạn có ghét mùa đông không?<br>\
+Ứng viên: Không, tôi không. Mọi mùa đều có điều gì đó để cống hiến. Vào mùa đông, thật tuyệt khi được cuộn tròn trong nhà, với một cốc sô cô la nóng."
+	,voca:"",
 }
 ]

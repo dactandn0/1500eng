@@ -5,9 +5,8 @@ document.write('<script src="./ebooks/collins/listen_data/collins_cd12.js" type=
 var app = angular.module("collinsLApp", ['ngSanitize']);
 app.controller("collinsLCtrl", function($scope, $rootScope, $timeout) {
 
-var kSTORIES = collins_cd12; //1
-
-$scope.stories = kSTORIES; //1
+var kSTORIES = collins_cd12;
+$scope.stories = kSTORIES;
 $scope.storyIdx = 0;
 
 $scope.createAudioSrc = function() {
@@ -57,8 +56,8 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
-	$scope.storyIdx = Helper_loadInt( parseInt('collinsL_unit'), 0  );
-	$scope.fetchStory($scope.storyIdx, false);
+	var id = Helper_loadInt('collinsL_unit', 0);
+	$scope.fetchStory(id, false);
 };
 
 $scope.$on('$viewContentLoaded', function(){

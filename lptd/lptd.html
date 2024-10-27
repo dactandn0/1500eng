@@ -1,5 +1,5 @@
 
-    <h5 class="mb-4" ng-init="showText=1">LPTD CD1-4</h5>
+    <h5 class="mb-4">LPTD CD1-4</h5>
 
     	<form name="lptd_cdForm" class="my-3" role="group">
     		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>
@@ -31,12 +31,12 @@
 		    <div class="card-body">
 	          <div class="card-text my-2">
 	          	
-	          	<h6 class="accordion" >
-				    <a href ng-click="showText=!showText"><small>{{story.title}}</small></a>
+	          	<h6 class="accordion toggleClick" >
+				    <a href><small>{{story.title}}</small></a>
 				 </h6>
-	          	 <div class="accordion-content">
-	          		<p compile="story.enShow" ng-if="!$root.bShowVi && showText"></p>
-	          		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi && showText""></p>
+	          	 <div class="accordion-content toggleShow">
+	          		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
+	          		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi"></p>
 	          	</div>
 
 	          	<hr ng-if="story.note.length">	

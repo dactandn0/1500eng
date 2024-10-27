@@ -30,11 +30,11 @@
 		    <div class="card-body">
 	          <div class="card-text my-2">
 	          	<!-- <p ng-repeat="(index, sentence) in story.en" ng-if="bShowVi" ng-click="playSentence(index)">{{sentence}}</p> -->
-	          	<h6 class="accordion" >
+	          	<h6 class="accordion toggleClick" >
 				    <a href>{{story.idx}}</a>
 				 </h6>
 
-				 <div class="accordion-content">
+				 <div class="accordion-content toggleShow">
 	          		<p compile="story.enShow" ng-if="!bShowVi"></p>
 	          		<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
 	        	</div>

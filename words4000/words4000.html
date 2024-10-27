@@ -25,10 +25,10 @@
 		    <div class="card-body">
 	          <div class="card-text my-2">
 	          	
-	          	<h6 class="accordion">
+	          	<h6 class="accordion toggleClick">
 				    <a href> {{story.idx}}. {{story.title}}</a>
 				 </h6>
-	          	 <div class="accordion-content">
+	          	 <div class="accordion-content toggleShow">
 	          		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
 	          		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi""></p>
 	          	</div>

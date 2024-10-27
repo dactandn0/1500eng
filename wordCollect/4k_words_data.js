@@ -982,7 +982,6 @@ somewhat hơi<br>\
 tissue mô<br>\
 yard  sân <br>\
 alike giống nhau<br>\
-annoy (v) /əˈnɔɪ/ làm phiền<br>\
 get on my nerves (v) /əˈnɔɪ/ làm phiền<br>\
 architecture kiến trúc<br>\
 artificial nhân tạo<br>\
@@ -1094,7 +1093,7 @@ virtual thực sự, virtual focus: tiêu điểm ảo [vật lí]<br>\
 weigh (v) cân nặng<br>\
 whisper whisper<br>\
 abstract abstract<br>\
-annual annual<br>\
+annual (a) /ˈænjuəl/ hàng năm<br>\
 clay đất sét<br>\
 cloth (n) vải<br>\
 deserve (v) đáng thưởng<br>\
@@ -1117,7 +1116,7 @@ client khách hàng<br>\
 downtown trung tâm<br>\
 embarrass xấu hổ<br>\
 fare (n) /fer/ giá vé (bus, plane, taxi)<br>\
-former trước đây<br>\
+former (a) /ˈfɔːrmər/ cũ, trước đây<br>\
 formula công thức<br>\
 found tìm thấy<br>\
 invest đầu tư<br>\
@@ -1125,7 +1124,7 @@ practical thực tế<br>\
 quarter (n) /ˈkwɔːrtər/ quý<br>\
 scholarship  (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
-treasure kho báu<br>\
+treasure (n) /ˈtreʒər/ kho báu<br>\
 urge (v) /ɜːrdʒ/ thúc giục<br>\
 masquerade (n,v) /ˌmæskəˈreɪd/ (n. dạ hội) hóa trang"
 },
@@ -1149,14 +1148,14 @@ iron sắt<br>\
 ladder thang<br>\
 occupy chiếm đóng<br>\
 penny đồng xu<br>\
-preach giảng đạo<br>\
-prosper thịnh vượng<br>\
+preach (v) /priːtʃ/ giảng đạo<br>\
+prosper (v) /ˈprɑːspər/ phát đạt, thành công<br>\
 province (n) /ˈprɑːvɪns/ tỉnh<br>\
 satisfaction hài lòng<br>\
 sustain duy trì<br>\
 acquire thu thập<br>\
-awkward ngượng ngùng<br>\
-caretaker người chăm sóc<br>\
+awkward (a) /ˈɔːkwərd/ ngượng ngùng<br>\
+caretaker (n) /ˈkerteɪkər/ người chăm sóc<br>\
 deceive (v) /dɪˈsiːv/ lừa dối, ngoại tình, lừa phỉnh<br>\
 discourage (v) /dɪsˈkɜːrɪdʒ/ không khuyến khích, làm nản lòng<br>\
 fake giả<br>\
@@ -1164,15 +1163,29 @@ hatred hận thù<br>\
 hut lều<br>\
 inferior thấp kém<br>\
 lodge lều<br>\
-newcomer người mới<br>\
+newcomer (n) /ˈnuːkʌmər/ người mới<br>\
 offense tội lỗi<br>\
 overlook bỏ qua<br>\
 repay trả lại<br>\
 ridiculous (a) /rɪˈdɪkjələs/ vô lý, tức cười<br>\
 satisfactory thỏa đáng<br>\
 shepherd người chăn cừu<br>\
-venture mạo hiểm<br>\
-wheat lúa mì"
+venture (n) /ˈventʃər/ mạo hiểm<br>\
+wheat (n) /wiːt/ lúa mì<br>\
+alley (n) /ˈæli/ hẻm, đường(ngỏ) hẹp<br>\
+ax (n) /æks/ cây rùi<br>\
+bunch (n,v) /bʌntʃ/ bó, chùm, xâu<br>\
+chore (n) /tʃɔːr/ việc lặt vặt<br>\
+decent (a) /ˈdiːsnt/ tử tế<br>\
+disgrace (n) /dɪsˈɡreɪs/ sự ô nhục<br>\
+loose (a) /luːs/ lỏng lẻo<br>\
+offend (v) /əˈfend/ xúc phạm, phạm tội<br>\
+persist (v) /pərˈsɪst/ kiên trì<br>\
+scar (n) /skɑːr/ vết sẹo<br>\
+sensation (n) /senˈseɪʃn/ cảm giác, sự kích động<br>\
+sled (n) /sled/ xe trượt tuyết<br>\
+tease (n,v) /tiːz/ (n)người hay chọc, trêu chọc(tức)<br>\
+valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
 }
 ]
 

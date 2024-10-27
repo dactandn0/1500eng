@@ -89,12 +89,13 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
+	$scope.storyIdx = Helper_loadInt('lptd_unit', 0);
+	
 	var cd = Helper_loadInt('lptd_cd', 1);
 	radioCDChange(cd);
 	document.lptd_cdForm.radioCD.value = cd;
 	$scope.cd=cd;
 
-	$scope.storyIdx = Helper_loadInt('lptd_unit', 0);
 	$scope.fetchStory($scope.storyIdx, false);
 };
 

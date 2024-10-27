@@ -49,7 +49,8 @@ const SynonymData = [
 	words:"competitor /kəmˈpetɪtər/|rival /ˈraɪvl/|opponent /əˈpəʊnənt/",
 	type:"n",
 	mean:"đối thủ"
-},{
+},
+{
 	words:"blame/bleɪm/|condemn/kənˈdem/",
 	type:"v",
 	mean:"đổ lỗi"
@@ -77,6 +78,11 @@ const SynonymData = [
 {
 	words:"forever (adv) /fɔːrˈɛv.ər/|perpetual (a) /pərˈpetʃuəl/|immutable (a) /ɪˈmjuːtəbl/",
 	mean:"mãi mãi"
+},
+{
+	words:"irritate /ˈɪrɪteɪt/|annoy /əˈnɔɪ/",
+	type:"v",
+	mean:"làm phiền"
 },
 ]
 
@@ -110,7 +116,7 @@ function showAttachWords(word, wordArr) {
 		var ele = wordArr[i]
 		
 		var rrr=  /\/.+\//gi.test(ele)
-		if (!rrr) console.log('showAttachWords::' + ele)
+	//	if (!rrr) console.log('showAttachWords::' + ele)
 
 		if ( ele.indexOf(word) == -1 ) {
 			resultTxt += ele.replace(/\/.+\//gi, '').trim() + ', '

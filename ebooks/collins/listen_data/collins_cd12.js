@@ -251,5 +251,49 @@ Candidate: I learnt when I was a small boy. My dad taught me as he was a very sk
 Giám khảo: Bạn học chèo thuyền khi nào?<br>\
 Ứng viên: Tôi học khi còn nhỏ. Bố tôi dạy tôi vì ông là một thủy thủ rất giỏi. Ông cũng dạy anh chị em tôi, và tất cả chúng tôi đều rất vui vì ông đã làm vậy."
 	,voca:"",
+},
+{
+	idx:"1.T18",
+	en:"Education <br>\
+Do you think science subjects are more useful than arts subjects? <br>\
+Are students mature enough to choose what to study themselves or should their parents decide for them? <br>\
+In your country, does having a university education help you into a better career? <br>\
+Motivation <br>\
+Do you think older or younger workers are more motivated? <br>\
+How can managers increase motivation among their workforce? <br>\
+Are people more motivated if their job involves helping others?<br>\
+Sample answers: <br>\
+Education  <br>\
+Examiner: Do you think science subjects are more useful than arts subjects? <br>\
+Candidate: I think they are more useful because they are primarily concerned with practical matters. If you study science, you might, for example, go on to have some kind of technical role in the production of a device, like a computer or a car. However, all great leaders have studied more arty subjects, such as philosophy, history and economics. This makes them better leaders because they have an understanding of human nature.<br>\
+Examiner: Are young people mature enough to choose what to study themselves or should their parents decide for them? I think success in studying comes from being highly motivated to study a specific subject area. Therefore the student should choose which subject they're interested in. By way of an example, I had a friend who studied science A levels because his parents pushed him down that route, but he hated it and so didn't get very good results. He still graduated and managed to get a place at university where he studied law, and he became a top student because law was what he was interested in.<br>\
+Examiner: In your country, does having a university education help you into a better career? Yes, it does, as all top companies recruit graduates for their top positions. Therefore you get a better start. However, it's fair to say that a university degree is not everything and it's what you do with it that matters. You can have a degree yet still get overtaken by somebody who isn't university educated but who gets promoted over you because they work harder.<br>\
+Motivation <br>\
+Examiner: Do you think older or younger workers are more motivated? <br>\
+Candidate: Younger workers should be more motivated because everything in their job is new to them and therefore exciting and they have to build their career, which is all ahead of them. Older workers have a tendency to think they've seen it all and very often just wait for retirement. I do know of at least one older person who's made a point of retiring on a high and is therefore highly motivated to get a project delivered to a very high standard before he retires. But no matter how fascinating your job is, when you reach the end of your career, I suspect you mainly focus on your impending retirement.<br>\
+Examiner: How can managers increase motivation among their workforce? <br>\
+Candidate: Allocating the right tasks to the person with the right skills, but making every task slightly different so that they learn every time. That can lead to an increase in motivation. It's about making the job interesting, but without drowning staff in too much new information each time. If they see that they can progress steadily and meet the challenges set, then they'll stay motivated.<br>\
+Examiner: Are people more motivated if their job involves helping others? Although my job doesn't really involve helping people, just training them, I'd hazard a guess that youth workers, for example, find it very rewarding helping a young person to achieve their personal goals or overcome a personal challenge. I can imagine, too, that it gives a counsellor tremendous job satisfaction to know that if they weren't there to listen to their patients' problems, things would probably not turn out as well for them. So, yes, although it's impossible for me to know for sure, I'd say people with those kinds of jobs take more pleasure from their work and are motivated by something more profound than just money."
+	,vi:"Giáo dục <br>\
+Bạn có nghĩ các môn khoa học hữu ích hơn các môn nghệ thuật không? <br>\
+Học sinh đã đủ trưởng thành để tự chọn ngành học hay cha mẹ quyết định thay? <br>\
+Ở quốc gia của bạn, việc học đại học có giúp bạn có sự nghiệp tốt hơn không? <br>\
+Động lực <br>\
+Bạn nghĩ những người lao động lớn tuổi hay trẻ tuổi có động lực hơn? <br>\
+Làm thế nào để các nhà quản lý có thể tăng động lực cho lực lượng lao động của mình? <br>\
+Mọi người có động lực hơn nếu công việc của họ liên quan đến việc giúp đỡ người khác không?<br>\
+Câu trả lời mẫu: <br>\
+Giáo dục <br>\
+Giám khảo: Bạn có nghĩ các môn khoa học hữu ích hơn các môn nghệ thuật không? <br>\
+Thí sinh: Tôi nghĩ chúng hữu ích hơn vì chúng chủ yếu liên quan đến các vấn đề thực tế. Nếu bạn học khoa học, chẳng hạn, bạn có thể tiếp tục đảm nhiệm một số vai trò kỹ thuật trong quá trình sản xuất thiết bị, chẳng hạn như máy tính hoặc ô tô. Tuy nhiên, tất cả các nhà lãnh đạo vĩ đại đều học các môn nghệ thuật hơn, chẳng hạn như triết học, lịch sử và kinh tế. Điều này giúp họ trở thành những nhà lãnh đạo tốt hơn vì họ hiểu được bản chất con người.<br>\
+Giám khảo: Những người trẻ tuổi đã đủ trưởng thành để tự chọn ngành học hay cha mẹ họ quyết định thay họ? Tôi nghĩ rằng thành công trong học tập đến từ việc có động lực cao để học một lĩnh vực cụ thể. Do đó, học sinh nên chọn ngành mà họ quan tâm. Ví dụ, tôi có một người bạn học khoa học A level vì cha mẹ anh ấy thúc đẩy anh ấy theo con đường đó, nhưng anh ấy ghét nó và do đó không đạt được kết quả tốt. Anh ấy vẫn tốt nghiệp và cố gắng vào được trường đại học nơi anh ấy học luật, và anh ấy đã trở thành một sinh viên giỏi vì luật là ngành anh ấy quan tâm.<br>\
+Giám khảo: Ở đất nước của bạn, việc học đại học có giúp bạn có được sự nghiệp tốt hơn không? Có chứ, vì tất cả các công ty hàng đầu đều tuyển dụng những người tốt nghiệp cho các vị trí cao nhất của họ. Do đó, bạn sẽ có khởi đầu tốt hơn. Tuy nhiên, có thể nói rằng bằng đại học không phải là tất cả và điều quan trọng là bạn làm gì với nó. Bạn có thể có bằng cấp nhưng vẫn bị vượt mặt bởi một người không được đào tạo đại học nhưng lại được thăng chức vì họ làm việc chăm chỉ hơn bạn.<br>\
+Động lực <br>\
+Giám khảo: Bạn nghĩ rằng những người lao động lớn tuổi hay trẻ tuổi có động lực hơn? <br>\
+Ứng viên: Những người lao động trẻ tuổi sẽ có động lực hơn vì mọi thứ trong công việc của họ đều mới mẻ đối với họ và do đó rất thú vị và họ phải xây dựng sự nghiệp của mình, tất cả đều ở phía trước. Những người lao động lớn tuổi có xu hướng nghĩ rằng họ đã trải qua tất cả và rất thường chỉ chờ đến lúc nghỉ hưu. Tôi biết ít nhất một người lớn tuổi đã quyết định nghỉ hưu ở một vị trí cao và do đó có động lực cao để hoàn thành một dự án với tiêu chuẩn rất cao trước khi nghỉ hưu. Nhưng dù công việc của bạn có hấp dẫn đến đâu, khi bạn đến cuối sự nghiệp, tôi ngờ rằng bạn chủ yếu tập trung vào việc nghỉ hưu sắp tới của mình.<br>\
+Giám khảo: Làm thế nào để các nhà quản lý có thể tăng động lực cho lực lượng lao động của mình? <br>\
+Ứng viên: Phân công đúng nhiệm vụ cho người có đúng kỹ năng, nhưng làm cho mỗi nhiệm vụ hơi khác nhau một chút để họ có thể học hỏi mỗi lần. Điều đó có thể dẫn đến tăng động lực. Đó là làm cho công việc trở nên thú vị, nhưng không làm nhân viên ngập trong quá nhiều thông tin mới mỗi lần. Nếu họ thấy rằng họ có thể tiến bộ đều đặn và đáp ứng các thách thức được đặt ra, thì họ sẽ duy trì được động lực.<br>\
+Giám khảo: Mọi người có động lực hơn nếu công việc của họ liên quan đến việc giúp đỡ người khác không? Mặc dù công việc của tôi không thực sự liên quan đến việc giúp đỡ mọi người, chỉ là đào tạo họ, nhưng tôi mạo hiểm đoán rằng những người làm công tác thanh thiếu niên, chẳng hạn, thấy rất bổ ích khi giúp một người trẻ đạt được mục tiêu cá nhân hoặc vượt qua thử thách cá nhân. Tôi cũng có thể hình dung rằng một cố vấn sẽ vô cùng hài lòng với công việc khi biết rằng nếu họ không ở đó để lắng nghe các vấn đề của bệnh nhân, mọi thứ có thể sẽ không diễn ra tốt đẹp với họ. Vì vậy, vâng, mặc dù tôi không thể biết chắc chắn, nhưng tôi cho rằng những người làm những công việc như vậy sẽ thích thú hơn với công việc của họ và được thúc đẩy bởi một điều gì đó sâu sắc hơn là tiền bạc."
+	,voca:"",
 }
 ]

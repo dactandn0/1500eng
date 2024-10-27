@@ -262,12 +262,19 @@ $scope.fetchSentenceSearch = function() {
     $scope.sentenceSearches = $scope.fetchSentences($scope.search);
 }
 
-
 $scope.loadData = function () {
   if (HELPER_FOR_TEST) $scope.findSameWord();
 };
 
 $scope.loadData();
+
+$scope.$on('$viewContentLoaded', function () {
+    $(".toggleClick").on('click', function(event){
+        if ($('.toggleShow').is(':visible')) {
+          $('.toggleShow').hide()
+        } else $('.toggleShow').show()
+    });
+});
 
 }]);  //end of ctrl
 

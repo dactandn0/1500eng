@@ -21,7 +21,7 @@ harmful (a) /ˈhɑːrmfl/ có hại<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 mammal (n) /ˈmæml/ động vật có vú<br>\
 platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
-kangaroo (n) /ˌkæŋɡəˈruː/ chuột túi<br>\
+kangaroo (n) /kæŋɡəˈruː/ chuột túi<br>\
 relevant (a) /ˈreləvənt/ liên quan<br>\
 promise hứa<br>\
 reply trả lời<br>\
@@ -278,7 +278,7 @@ technology (n) /tekˈnɑːlədʒi/ công nghệ<br>\
 vividly (adv) /ˈvɪvɪdli/ sống động<br>\
 across xuyên<br>\
 breathe hít thở<br>\
-characteristic (n) /ˌkærəktəˈrɪstɪk/ đặc điểm(tính)<br>\
+characteristic (n) /kærəktəˈrɪstɪk/ đặc điểm(tính)<br>\
 consume tiêu thụ<br>\
 excite kích thích<br>\
 extreme cực đoan<br>\
@@ -714,7 +714,8 @@ cheat gian lận<br>\
 concentrate tập trung<br>\
 conclude kết luận<br>\
 considerable đáng kể<br>\
-convey,definite truyền đạt, xác định<br>\
+definite (a) /ˈdefɪnət/ xác định<br>\
+convey truyền đạt<br>\
 delight thích thú<br>\
 destination điểm đến<br>\
 dictate ra lệnh<br>\
@@ -730,12 +731,14 @@ attempt cố gắng<br>\
 authority quyền lực<br>\
 capital vốn<br>\
 cooperate hợp tác<br>\
+cliche (n) /kliːˈʃeɪ/ sáo rỗng<br>\
 inhibit (v) /ɪnˈhɪbɪt/ ngăn cản<br>\
 defend (v) bảo vệ<br>\
 defense (n) /dɪˈfens/ sự che chở, phòng thủ, bảo vệ<br>\
-intercept (v) /ˌɪntərˈsept/ chặn lại<br>\
+intercept (v) /ɪntərˈsept/ chặn lại<br>\
 stabilize (v) /ˈsteɪbəlaɪz/ làm cho vững, ổn định<br>\
-intercepting (v) /ˌɪntərˈsept/ chặn lại<br>\
+intercepting (v) /ɪntərˈsept/ chặn lại<br>\
+inseparable (a) /ɪnˈseprəbl/ không thể tách rời<br>\
 myriad (n,a) /ˈmɪriəd/ vô số<br>\
 destruction phá hủy<br>\
 disorder,division rối loạn, chia rẽ<br>\
@@ -964,7 +967,7 @@ stretch kéo dài<br>\
 telescope kính viễn vọng<br>\
 underground  dưới lòng đất <br>\
 alarm báo động<br>\
-apart tách<br>\
+apart (adv) /əˈpɑːrt/ tách<br>\
 arrest bắt giữ<br>\
 award giải thưởng<br>\
 breed giống<br>\
@@ -1127,7 +1130,7 @@ scholarship  (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
 treasure (n) /ˈtreʒər/ kho báu<br>\
 urge (v) /ɜːrdʒ/ thúc giục<br>\
-masquerade (n,v) /ˌmæskəˈreɪd/ (n. dạ hội) hóa trang"
+masquerade (n,v) /mæskəˈreɪd/ (n. dạ hội) hóa trang"
 },
 {
 	title:"4k Book3",

@@ -690,7 +690,7 @@ Chúng tôi thực hành làm việc nhóm trong gia đình tôi. Cả bố và 
 Tôi là sinh viên. Tất cả chúng tôi đều có cuộc sống rất bận rộn. Vì vậy, khi nói đến việc nhà, tất cả chúng tôi cùng nhau làm việc để hoàn thành.<br>\
 Mỗi người chúng tôi có những công việc khác nhau. Bố mẹ tôi thay phiên nhau nấu ăn. Bố tôi đổ rác. Mẹ tôi giặt quần áo. Anh trai tôi rửa bát. Tôi quét nhà. Chúng tôi chia sẻ công việc và cùng nhau làm việc. Mọi việc được hoàn thành nhanh chóng.<br>\
 Mọi người nên thực hành làm việc nhóm. Làm việc nhóm hiệu quả.",
-voca:"achieve,student,chores,parents,teamwork,laundry,household,share,sweep,take turns"
+voca:"achieve,chores,teamwork,laundry,household,share,sweep,take turns"
 },
 {
 en:"Unit 31 The Marathon<br>\
@@ -726,7 +726,7 @@ B: Bóng vợt là một môn thể thao phổ biến. Môn này lần đầu ti
 Các môn thể thao vợt khác như quần vợt và bóng quần đã được chơi trong một thời gian dài. Luật chơi bóng vợt là sự kết hợp giữa luật chơi bóng ném và bóng quần. Một cây vợt ngắn được sử dụng để chơi trò chơi này.<br>\
 Trò chơi này trở nên phổ biến ngay khi mới ra mắt. Ngày càng có nhiều người muốn chơi. Các câu lạc bộ bắt đầu xây dựng sân bóng vợt. Họ xây dựng những sân này cho những người chơi môn thể thao mới này.<br>\
 Mọi người ở mọi lứa tuổi đều có thể chơi trò chơi này. Nhưng hầu hết người chơi ngày nay là những người trẻ tuổi. Hầu hết trong số họ ở độ tuổi từ 12 đến 34. Bóng vợt hiện là một môn thể thao nổi tiếng. Nó được chơi trên khắp thế giới",
-voca:"tennis,between,player,sport,racket,rules,bookmark,squash,Australia,all over"
+voca:"tennis,between,sport,racket,rules,bookmark,squash,Australia,all over"
 },
 {
 	en:"Unit 33 Summer Sports<br>\

@@ -337,7 +337,7 @@ sanctuary (n) /ˈsæŋktʃueri/ khu bảo tồn<br>\
 erode (v) /ɪˈrəʊd/ xói mòn, ăn mòn<br>\
 eroded (v) /ɪˈrəʊded/ xói mòn, ăn mòn<br>\
 erosion (n) /ɪˈrəʊʒn/ sự xói mòn<br>\
-vegetation (n) /ˌvedʒəˈteɪʃn/ thảm thực vật<br>\
+vegetation (n) /vedʒəˈteɪʃn/ thảm thực vật<br>\
 Pollute (v) /pəˈluːt/ Làm ô nhiễm<br>\
 Decompose (v) /diː.kəmˈpəʊz/ Phân hủy<br>\
 Balance (n) /ˈbæl.əns/ Sự cân bằng<br>\
@@ -480,7 +480,7 @@ Program (n) /ˈprəʊ.ɡræm/ Chương trình<br>\
 Search (v) /sɜːtʃ/ Tìm kiếm (thông tin)<br>\
 Screen (n) /skriːn/ Màn hình<br>\
 Electric (a) /ɪˈlektrɪk/ thuộc về điện<br>\
-Revolution (n) /ˌrevəˈluːʃn/ Cuộc cách mạng<br>\
+Revolution (n) /revəˈluːʃn/ Cuộc cách mạng<br>\
 Revolutionary (n) nhà cách mạng | (a) thuộc cách mạng, khởi nghĩa<br>\
 Relatively (adv) /ˈrelətɪvli/ tùy theo, tương đối<br>\
 Efficient (a) /ɪˈfɪʃnt/ có hiệu quả<br>\
@@ -585,7 +585,7 @@ Banyan (n) /ˈbæn.jæn/ Cây đa<br>\
 Lantern (n) /ˈlæn.tən/ Lồng đèn<br>\
 Bamboo (n) /bæmˈbuː/ Tre<br>\
 Celebrate (v) /ˈselɪbreɪt/ Kỷ niệm, làm lễ<br>\
-Celebration (n) /ˌselɪˈbreɪʃn/ Lễ kỷ niệm<br>\
+Celebration (n) /selɪˈbreɪʃn/ Lễ kỷ niệm<br>\
 Family reunion (n) /ˈfæm.əl.i riːˈjuː.njən/ Họp mặt gia đình<br>\
 Lion dance (n) /ˈlaɪən dæns/",
 },
@@ -976,7 +976,7 @@ lazy (a) /'lerzi/ lười biếng <br>\
 Stingy (a) /ˈstɪnʤi/ Keo kiệt <br>\
 Liar (n) /laɪər/ Người nói dối<br>\
 Ambitious (a) /æmˈbɪʃəs/ Tham vọng<br>\
-Extrovert (n) /ˈɛk.strə.vɜːt/ Người hướng ngoại<br>\
+extrovert (n) /ˈɛk.strə.vɜːt/ Người hướng ngoại<br>\
 Introvert (n) /ˈɪn.trə.vɜːt/ Người hướng nội<br>\
 anxiety (n) /æŋˈzaɪəti/ lo lắng<br>\
 funny (a) /'fɅni/ vui tính<br>\
@@ -984,7 +984,11 @@ honest (a) /'pnist/ thật thà<br>\
 fearless (a) /'fiǝlis/ dũng cảm<br>\
 friendly (a) /'frendli/ thân thiện<br>\
 in a friendly way (adv) thân thiện<br>\
+blunt (a) /blʌnt/ cùn (dao), nói thẳng thắn.<br>\
+open-minded (a)  /əʊpən ˈmaɪndɪd/ cởi mở<br>\
 unfriendly (a) /n'frendli/ khó gần<br>\
+judgemental (a) /dʒʌdʒˈmentl/ tính phán xét<br>\
+nosy (a)  /ˈnəʊzi/ tính tò mò, tọc mạch<br>\
 generous (a) /ˈdʒenərəs/ hào phóng<br>\
 compassionate (a) /kamipæfant/ giàu lòng trắc ẩn<br>\
 warm-hearted (a) /wom-hatid/ ấm áp<br>\
@@ -1038,7 +1042,7 @@ silly (a) /'sili/ ngớ ngẩn<br>\
 in a silly way (adv) ngớ ngẩn<br>\
 shy /Jai/ nhút nhát<br>\
 determined /di'tз:mind/ kiên định<br>\
-sociable /'sǝufǝbl/ hòa đồng<br>\
+sociable (a) /'sǝufǝbl/ hòa đồng<br>\
 worried /'wɅrid/ lo lắng<br>\
 thoughtful /0:tful/ chu đáo<br>\
 humble /'hɅmbl/ khiêm tốn<br>\
@@ -1088,7 +1092,7 @@ Red wine (n) /rɛd waɪn/ Rượu vang đỏ<br>\
 Non-alcoholic (a) /nɑːn æl.kəˈhɒl.ɪk/ Không cồn<br>\
 Full-cream (a) /fʊl ˈkriːm/ Nguyên kem<br>\
 Herbal (a) /ˈhɜːr.bəl/ (chứa) thảo mộc<br>\
-evaporation (n) /ɪˌvæpəˈreɪʃn/ bay hơi<br>\
+evaporation (n) /ɪvæpəˈreɪʃn/ bay hơi<br>\
 Mineral water (n) /ˈmɪn.ər.əl ˈwɔː.tər/ Nước khoáng",
 },
 {

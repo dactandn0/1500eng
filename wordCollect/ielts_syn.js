@@ -6,7 +6,7 @@ const SynonymData = [
 	mean:"quan trọng"
 },
 {
-	words:"common /ˈkɑːmən/|universal /ˌjuːnɪˈvɜːrsl/|ubiquitous /juːˈbɪkwɪtəs/",
+	words:"common /ˈkɑːmən/|universal /juːnɪˈvɜːrsl/|ubiquitous /juːˈbɪkwɪtəs/",
 	type:"a",
 	mean:"phổ biến"
 },
@@ -80,9 +80,18 @@ const SynonymData = [
 	mean:"mãi mãi"
 },
 {
-	words:"irritate /ˈɪrɪteɪt/|annoy /əˈnɔɪ/",
+	words:"irritate /ˈɪrɪteɪt/|annoy /əˈnɔɪ/|upset /ʌpˈset/",
 	type:"v",
-	mean:"làm phiền"
+	mean:"làm phiền, làm khó chịu"
+},
+{
+	words:"ever since //|Since then //|Since that time //",
+	type:"adv",
+	mean:"từ đó trở đi"
+},
+{
+	words:"outgoing (a) /ˈɪrɪteɪt/|extrovert (n) /ˈekstrəvɜːrt/",
+	mean:"hướng ngoại"
 },
 ]
 

@@ -132,6 +132,19 @@ The aboriginal people introduced the dingo, a kind of wild dog, but they have su
 <br>\
 [C] Những thay đổi này đã dẫn đến sự mất mát của nhiều loài động vật và thực vật. Mười tám loài động vật có vú đã tuyệt chủng bao gồm hổ Tasmania và chuột túi sa mạc. Ít nhất ba mươi loài đã trở nên nguy cấp và có nguy cơ tuyệt chủng. Người châu Âu cũng mang theo nhiều loài động vật không phải bản địa, hiện đã chạy hoang dã. Chúng bao gồm cáo và mèo đã trở thành mối nguy hiểm đối với các loài động vật có vú và chim bản địa nhỏ. Thỏ đã phá hủy các vùng đất rộng lớn và trâu nước đã gây ra thiệt hại về môi trường ở các con sông. Người bản địa đã du nhập chó dingo, một loại chó hoang, nhưng chúng đã thích nghi thành công và trở thành một phần của loài bản địa."
 ,voca:"Europeans,kangaroo,mammal,Aboriginal,century,at risk of,non-native,separate,known species,platypus,discovered,evolved,exist,ways of life,harmful,a loss of,become a danger to,wild,massive",
+},
+{
+	unit:10,
+	title:'A difficult balance - how we are managing fresh water supplies',
+	en:"Rivers are beautiful and important parts of the landscape. Over five billion people need them, as well as thousands of animals. But water supplies in countries all over the world are decreasing and river pollution is increasing.<br>\
+Today, even the world's great rivers like the Nile, Yangtze and Ganges are in danger, with 30 out of 47 of the largest rivers showing water pollution. Some of the most polluted rivers are in Europe and the United States. There isn't much clean water left and the cleanest rivers are a long way from humans, in the Arctic or Siberia.<br>\
+The situation in the Middle East is a good example of how we are using water too much. In the 1970s, Saudi Arabia wanted to produce food for its people. To do this, they needed water. But how much water does the country have? In a year it only has 100 mm of rain. To get water, engineers drilled down into the rock. How many years did they have before the water ran out? It took just 20 years to use all the underground water.<br>\
+All over the world, people are suffering because of the problems caused by growing populations and falling water supply. For the first time in history, food production from agriculture is dropping, and nothing can help to stop this. Each day brings 10000 more people to feed with less water to do this. We haven't got much time. We have to clean up our rivers - and fast."
+	,vi:"Sông là những phần đẹp và quan trọng của cảnh quan. Hơn năm tỷ người cần chúng, cũng như hàng nghìn loài động vật. Nhưng nguồn cung cấp nước ở các quốc gia trên khắp thế giới đang giảm dần và ô nhiễm sông ngòi đang gia tăng.<br>\
+Ngày nay, ngay cả những con sông lớn nhất thế giới như sông Nile, sông Dương Tử và sông Hằng cũng đang gặp nguy hiểm, với 30 trong số 47 con sông lớn nhất có tình trạng ô nhiễm nước. Một số con sông ô nhiễm nhất nằm ở Châu Âu và Hoa Kỳ. Không còn nhiều nước sạch nữa và những con sông sạch nhất lại cách xa con người, ở Bắc Cực hoặc Siberia.<br>\
+Tình hình ở Trung Đông là một ví dụ điển hình về cách chúng ta sử dụng nước quá nhiều. Vào những năm 1970, Ả Rập Xê Út muốn sản xuất lương thực cho người dân của mình. Để làm được điều này, họ cần nước. Nhưng đất nước này có bao nhiêu nước? Trong một năm, lượng mưa chỉ là 100 mm. Để lấy nước, các kỹ sư đã khoan xuống đá. Họ còn bao nhiêu năm nữa trước khi nước cạn kiệt? Chỉ mất 20 năm để sử dụng hết nước ngầm.<br>\
+Trên khắp thế giới, con người đang phải chịu đựng những vấn đề do dân số tăng và nguồn cung cấp nước giảm. Lần đầu tiên trong lịch sử, sản lượng lương thực từ nông nghiệp đang giảm và không gì có thể ngăn chặn được điều này. Mỗi ngày có thêm 10.000 người phải kiếm ăn với ít nước hơn để làm điều này. Chúng ta không có nhiều thời gian. Chúng ta phải làm sạch các con sông của mình - và phải nhanh chóng."
+	,voca:"",
 }
 
 

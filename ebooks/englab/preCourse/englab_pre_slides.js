@@ -726,10 +726,94 @@ I would tell them without any hesitation (không chút ngần ngại) about ..."
 Một người nổi tiếng mà tôi rất vinh dự được gặp là Taylor Swift. Swift là một nhạc sĩ được ca ngợi, người đã đạt được danh tiếng toàn cầu với nhiều bản hit trong 20 năm qua. Cô cũng được biết đến rộng rãi với khả năng sáng tác nhạc đặc biệt của mình.<br>\
 Tôi bắt đầu nghe nhạc của Taylor Swift từ khi còn học trung học. Tôi đã là một người hâm mộ lớn của cô ấy kể từ đó. Tôi thấy giai điệu của cô ấy vô cùng hấp dẫn và luôn ngưỡng mộ kỹ năng viết lời của cô ấy. Ngoài ra, thông qua việc xem nhiều cuộc phỏng vấn và chương trình trò chuyện có sự góp mặt của Taylor, tôi đã trở nên ngưỡng mộ tính cách điềm tĩnh và điềm đạm của cô ấy, đó là lý do tại sao tôi rất muốn được tương tác trực tiếp với cô ấy.<br>\
 Hơn nữa, Taylor Swift từ lâu đã là hình mẫu của tôi vì nhiều lý do. Cô ấy không chỉ là một nhạc sĩ tài năng mà còn là một người phụ nữ độc lập và bướng bỉnh, người làm việc chăm chỉ để đạt được mục tiêu của mình và đấu tranh cho những gì cô ấy tin tưởng. Cô ấy không bao giờ để phản ứng dữ dội và chỉ trích cản trở thành công của mình. Sẽ thật tuyệt nếu tôi có thể trò chuyện với cô ấy qua tách cà phê về cách cô ấy vượt qua những bất lợi trong sự nghiệp của mình. Tôi có thể học được nhiều điều từ đó."
-
 	,voca:""
 }
-
+,
+{
+	date:"28/10/2024",
+	title:"[W] Climate change",
+	en:"Global warming is a very big threat to humans and animals. We need to prevent it from happening.<br>\
+Many chemicals are being poured into the water. This can be a threat to the fish<br>\
+<br>\
+Polar bear<br>\
+Otter<br>\
+Dolphin<br>\
+Black rhino<br>\
+Gorilla<br>\
+Pollution<br>\
+Conservation<br>\
+Extinction<br>\
+Preservation<br>\
+Protection<br>\
+Restoration<br>\
+Prevention<br>\
+<br>\
+Work in pairs:<br>\
+Animals and plants are disappearing<br>\
+What are the reasons for this?<br>\
+What can we do to help?<br>\
+Are you doing anything to help with the problem? Why or why not?<br>\
+<br>\
+Reasons:<br>\
+Illegal poaching/ hunting: săn bắn trái phép<br>\
+Environmental pollution: ô nhiễm môi trường<br>\
+Deforestation: nạn chặt rừng<br>\
+Exploiting natural resources: Cạn kiệt tài nguyên<br>\
+<br>\
+Solutions:<br>\
+The government implement stricter laws on poaching/ hunting<br>\
+The government set a cap on factory emissions<br>\
+Local authorities should plant more trees<br>\
+People must use renewable energy<br>\
+<br>\
+Writing prompt: Animals and plants are disappearing.<br>\
+- What are humans doing that are a threat to animals?<br>\
+- Describe at least 3 ways we can help them.<br>\
+<br>\
+- Today, many animals are endangered. Firstly, a lot of people are illegal poaching animals because they want to sell animal-related products. Secondly, people are destroying the natural habitats of animals. For example, many factories release chemicals into lakes and rivers. Lastly, people are cutting down forests, so it limits the space that animals have<br>\
+- We need to do 3 things to solve this situation. First, we should write to politicians because they can stop hunters from killing more animals. Secondly, we need to prevent factories from releasing harmful chemicals into the water so the fish can live longer. Third, we can restore the natural habitats of animals by planting trees so they can have a natural environment to live."
+	,vi:"Hiện tượng nóng lên toàn cầu là mối đe dọa rất lớn đối với con người và động vật. Chúng ta cần ngăn chặn điều đó xảy ra.<br>\
+Nhiều hóa chất đang được đổ vào nước. Điều này có thể gây ra mối đe dọa cho cá<br>\
+<br>\
+Gấu Bắc Cực<br>\
+Rái cá<br>\
+Cá heo<br>\
+Tê giác đen<br>\
+Khỉ đột<br>\
+Ô nhiễm<br>\
+Bảo tồn<br>\
+Tuyệt chủng<br>\
+Bảo tồn<br>\
+Bảo vệ<br>\
+Phục hồi<br>\
+Phòng ngừa<br>\
+<br>\
+Làm việc theo cặp:<br>\
+Động vật và thực vật đang biến mất<br>\
+Nguyên nhân của hiện tượng này là gì?<br>\
+Chúng ta có thể làm gì để giúp đỡ?<br>\
+Bạn có đang làm gì để giúp giải quyết vấn đề này không? Tại sao hoặc tại sao không?<br>\
+<br>\
+Lý do:<br>\
+Săn trộm/săn bắt trái phép: săn bắn trái phép<br>\
+Ô nhiễm môi trường: ô nhiễm môi trường<br>\
+Phá rừng: nạn chặt rừng<br>\
+Khai thác tài nguyên thiên nhiên: Cạn kiệt tài nguyên<br>\
+<br>\
+Giải pháp:<br>\
+Chính phủ ban hành luật nghiêm ngặt hơn về săn trộm/săn bắt<br>\
+Chính phủ đặt ra giới hạn về khí thải nhà máy<br>\
+Chính quyền địa phương nên trồng nhiều cây hơn<br>\
+Người dân phải sử dụng năng lượng tái tạo<br>\
+<br>\
+Yêu cầu viết: Động vật và thực vật đang biến mất.<br>\
+- Con người đang làm gì để đe dọa động vật?<br>\
+- Mô tả ít nhất 3 cách chúng ta có thể giúp chúng.<br>\
+<br>\
+- Ngày nay, nhiều loài động vật đang bị đe dọa. Đầu tiên, rất nhiều người săn trộm động vật trái phép vì họ muốn bán các sản phẩm liên quan đến động vật. Thứ hai, con người đang phá hủy môi trường sống tự nhiên của động vật. Ví dụ, nhiều nhà máy thải hóa chất vào hồ và sông. Cuối cùng, con người đang chặt phá rừng, do đó hạn chế không gian mà động vật có<br>\
+- Chúng ta cần làm 3 việc để giải quyết tình trạng này. Đầu tiên, chúng ta nên viết thư cho các chính trị gia vì họ có thể ngăn chặn thợ săn giết thêm động vật. Thứ hai, chúng ta cần ngăn chặn các nhà máy thải hóa chất độc hại vào nước để cá có thể sống lâu hơn. Thứ ba, chúng ta có thể khôi phục môi trường sống tự nhiên của động vật bằng cách trồng cây để chúng có môi trường sống tự nhiên."
+	,voca:"Chemical,Threat,endangered",
+}
 
 
 

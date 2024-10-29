@@ -46,6 +46,11 @@ const SynonymData = [
 	mean:"đỉnh, đạt đỉnh"
 },
 {
+	words:"conservation /konsǝ'vein/|preservation /prezərˈveɪʃn/",
+	type:"n",
+	mean:"sự bảo tồn"
+},
+{
 	words:"competitor /kəmˈpetɪtər/|rival /ˈraɪvl/|opponent /əˈpəʊnənt/",
 	type:"n",
 	mean:"đối thủ"
@@ -90,6 +95,11 @@ const SynonymData = [
 	mean:"từ đó trở đi"
 },
 {
+	words:"definitely /ˈdefɪnətli/|certainly /ˈsɜːrtnli/|surely /ˈʃʊrli/",
+	type:"adv",
+	mean:"chắc chắn"
+},
+{
 	words:"outgoing (a) /ˈɪrɪteɪt/|extrovert (n) /ˈekstrəvɜːrt/",
 	mean:"hướng ngoại"
 },
@@ -108,6 +118,19 @@ function progress() {
 		}
 	}
 	IELTS_SYN[0].en = en.replace(/\s\s/gi, " ")
+}
+
+function IELTS_SYN_IsIn(wordFormed) {
+	var arr = IELTS_SYN[0].en.split('<br>')
+	for (var i = 0; i < arr.length; i++) {
+		var wordFullData = arr[i]
+		var regex = new RegExp(`\\b${wordFormed}\\b` , 'g')
+		var matches = wordFullData.match(regex)
+		if (matches && matches.length > 0 ) {
+			return wordFullData
+		}
+	}
+	return ''
 }
 
 function addMean(txt) {

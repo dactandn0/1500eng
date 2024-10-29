@@ -125,7 +125,6 @@ pet thú cưng<br>\
 reach với tới<br>\
 return trở về<br>\
 survive sống sót<br>\
-upset bực bội<br>\
 voice giọng nói<br>\
 wise (a) /waɪz/ khôn ngoan<br>\
 allow cho phép<br>\

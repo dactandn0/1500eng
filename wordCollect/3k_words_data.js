@@ -358,7 +358,6 @@ pollution (n) /pǝ'lu:fn/ sự ô nhiễm<br>\
 Deforestation (n) /di: fori'stein/ nạn phá rừng<br>\
 Climate change (n) /'klamat tfernd3/ sự biến đổi khí hậu<br>\
 Natural resource (n) /'nætfral ri's :s/ tài nguyên tự nhiên<br>\
-Conservation (n) /konsǝ'vein/ sự bảo tồn<br>\
 Desertification (n) /di z3:tifi'kexfn/ sự sa mạc hóa<br>\
 Desert (n) /ˈdezərt/ sa mạc<br>\
 Endangered (a) /in'deindzǝd/ gặp nguy hiểm<br>\
@@ -1632,6 +1631,7 @@ Lizard (n) /ˈlɪz.ərd/ Thằn lằn<br>\
 Giraffe (n) /dʒəˈræf/ Hươu cao cổ<br>\
 Bear (n) /bɛr/ Gấu<br>\
 Rhino (n) /ˈraɪ.noʊ/ Tê giác<br>\
+Gorilla (n) /ɡəˈrɪlə/ Khỉ đột<br>\
 Elephant (n) /ˈɛl.ɪ.fənt/ Voi<br>\
 Panther (n) /ˈpæn.θər/ Báo đen<br>\
 Leopard (n) /ˈlɛp.ərd/ Báo<br>\

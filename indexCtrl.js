@@ -181,11 +181,15 @@ $scope.Idx_n_L_WSp_ = function (event) {
   Helper_ngClickWordSpeak(event);
 
   var wordFormed = event.target.innerText.toLowerCase();
+  var result = IELTS_SYN_IsIn(wordFormed)
+  if (result !== '') {
+     toastr.info(result);
+     return;
+  }
   
   for (var i = 0; i < searchData.length; i++) {
     var wordFull = searchData[i]
     var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
-
     if (word === wordFormed || Helper_IsFormOfWord(word, wordFormed)) {
         toastr.info(wordFull);
         break;

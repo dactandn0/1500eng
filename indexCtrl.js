@@ -65,7 +65,7 @@ app.config(function($routeProvider) {
         templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'
       }) 
       .when('/collinsL', {
-        templateUrl: 'ebooks/collins/collinsL.html', controller: 'collinsLCtrl'
+        templateUrl: 'templates/non_cd_listening.html', controller: 'collinsLCtrl'
       })
       .when('/bridgeL', {
         templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'
@@ -83,7 +83,7 @@ app.config(function($routeProvider) {
        templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'
       })        
        .when('/barron600L', {
-       templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'
+       templateUrl: 'templates/non_cd_listening.html', controller: 'barron600LCtrl'
       })    
       .when('/sampleSpeaking', {
        templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'
@@ -273,11 +273,6 @@ $scope.loadData = function () {
 $scope.loadData();
 
 $scope.$on('$viewContentLoaded', function () {
-    $(".toggleClick").on('click', function(event){
-        if ($('.toggleShow').is(':visible')) {
-          $('.toggleShow').hide()
-        } else $('.toggleShow').show()
-    });
 });
 
 }]);  //end of ctrl

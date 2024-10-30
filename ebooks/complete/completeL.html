@@ -1,48 +1,19 @@
 
-    <h5 class="mb-4">Complete Listening</h5>
+<h5 class="mb-2">Complete Listening</h5>
+<a href="#!completeR">Reading</a>
 
-    	<a href="#!completeR">Reading</a>
+<div class="mt-3">
+    <div class="col-md-12">
+    	 <a ng-repeat="story in stories track by $index"  
+    	 ng-click="fetchStory($index);" 
+    	 href="" 
+    	 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
+    	 class="pr-2 mr-1"> [{{story.track}}]
+    	</a>
+    </div>
+    <br> 
 
-    	<div class="my-3">
-		    <div class="col-md-12">
-		    	 <a ng-repeat="story in stories track by $index"  
-		    	 ng-click="fetchStory($index);" 
-		    	 href="" 
-		    	 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
-		    	 class="pr-2 mr-1"> [{{story.track}}]
-		    	</a>
-		    </div>
-		    <br> 
+ </div>
 
+<div ng-include="'./includes/storyL.html'" ></div>
 
-	  		<div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl"></div>
-
-		 </div>
-
-		  <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
-
-		<div class="card mt-4">
-		    <div class="card-body">
-	          <div class="card-text my-2">
-	          	<h6 class="accordion toggleClick" >
-				    <a href>{{story.track}}</a>
-				 </h6>
-
-				 <div class="accordion-content toggleShow">
-	          		<p compile="story.enShow" ng-if="!bShowVi"></p>
-	          		<p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
-	        	</div>
-
-	          	<!-- <img ng-src="listen_data\images\{{story.img}}-min.png" class="img-fluid"> -->
-
-	          	<div class="mt-1" ng-if="story.vocaNotes">
-	           	<hr/>
-	        		<p  class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
-	          			{{note}}
-	          		</p>
-	          	</div>
-
-	        
-	          </div> <!-- card-text -->
-        	</div> 		<!-- card-body -->
-		 </div> <!-- card -->

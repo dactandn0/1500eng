@@ -1,0 +1,16 @@
+
+<h5 class="mb-4">Speaking</h5>
+<div class="my-1">
+<div class="col-md-12">
+	 <a ng-repeat="story in stories"  
+	 ng-click="fetchStory($index);" 
+	 href="" 
+	 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
+	 class="pr-2 mr-1"> 
+	 {{story.idx}}
+	</a>
+</div>
+<br> 
+</div>
+
+<div ng-include="'./includes/storyL.html'" ></div>

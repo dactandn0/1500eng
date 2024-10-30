@@ -1,0 +1,27 @@
+
+<div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-3"></div>
+<div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
+
+<div class="card mt-1" ng-init=showText=1>
+	<div class="card-body">
+	  <div class="card-text my-2">
+	  	
+	  	<h6 class="accordion toggleClick" ng-click="showText=!showText">
+		    <a href>{{story.title || story.idx || story.track}}</a>
+		 </h6>
+	  	 <div class="accordion-content toggleShow">
+	  		<p compile="story.enShow" ng-if="!$root.bShowVi && showText"></p>
+	  		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi && showText"></p>
+	  	</div>
+
+	  	<hr ng-if="story.note.split('|').length">	
+
+		<div class="px-2 mb-3" ng-if="story.note.length">
+		<p class="mb-1" ng-repeat="sen in story.note.split('|') track by $index">
+				{{sen}}
+			</p>
+		</div>
+	  	
+	  </div> <!-- card-text -->
+	</div> 		<!-- card-body -->
+</div> <!-- card -->

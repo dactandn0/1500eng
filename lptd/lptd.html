@@ -1,55 +1,27 @@
 
-    <h5 class="mb-4">LPTD CD1-4</h5>
+<h5 class="mb-4">LPTD CD1-4</h5>
 
-    	<form name="lptd_cdForm" class="my-3" role="group">
-    		<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>
-        	<input type="radio" name="radioCD" value="2" onchange="radioCDChange(2)" /><span class="mr-3">2</span>
-        	<input type="radio" name="radioCD" value="3" onchange="radioCDChange(3)" /><span class="mr-3">3</span>
-        	<input type="radio" name="radioCD" value="4" onchange="radioCDChange(4)" />4
-    	</form>
+<form name="lptd_cdForm" class="my-3" role="group">
+	<input type="radio" name="radioCD" value="1" onchange="radioCDChange(1)" checked/><span class="mr-3">1</span>
+	<input type="radio" name="radioCD" value="2" onchange="radioCDChange(2)" /><span class="mr-3">2</span>
+	<input type="radio" name="radioCD" value="3" onchange="radioCDChange(3)" /><span class="mr-3">3</span>
+	<input type="radio" name="radioCD" value="4" onchange="radioCDChange(4)" />4
+</form>
 
-    	<div class="my-1">
-		    <div ng-repeat="u in units">
-		    	<small class="mr-2">{{u.title}}</small>
-		    	 <a ng-repeat="n in range(u.num, u.num + 4)" 
-		    	 ng-click="fetchStory(n-1);" 
-		    	 href="" 
-		    	 ng-class="storyIdx==n-1 ? 'font-weight-bold' : 'font-weight-normal'"
-		    	 class="p-2 mr-1"> 
-		    	 [{{n}}]
-		    	</a>
-		    </div>
-		    <br> 
-
-		  <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl"></div>
-
-		 </div>
-
-		  <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
-
-		<div class="card mt-1">
-		    <div class="card-body">
-	          <div class="card-text my-2">
-	          	
-	          	<h6 class="accordion toggleClick" >
-				    <a href><small>{{story.title}}</small></a>
-				 </h6>
-	          	 <div class="accordion-content toggleShow">
-	          		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
-	          		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi"></p>
-	          	</div>
-
-	          	<hr ng-if="story.note.length">	
-	          	
-	        	<div class="px-2" ng-if="story.note.length">
-	        		<p class="mb-1" ng-repeat="sen in story.note track by $index">
-	          			{{sen}}
-	          		</p>
-	          	</div>
-	          	
-	          </div> <!-- card-text -->
-        	</div> 		<!-- card-body -->
-		 </div> <!-- card -->
+<div class="my-1">
+    <div ng-repeat="u in units">
+    	<small class="mr-2">{{u.title}}</small>
+    	 <a ng-repeat="n in range(u.num, u.num + 4)" 
+    	 ng-click="fetchStory(n-1);" 
+    	 href="" 
+    	 ng-class="storyIdx==n-1 ? 'font-weight-bold' : 'font-weight-normal'"
+    	 class="p-2 mr-1"> 
+    	 [{{n}}]
+    	</a>
+    </div>
+    <br> 
+</div>
 
 
-</html>
+<div ng-include="'./includes/storyL.html'" ></div>
+

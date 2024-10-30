@@ -21,29 +21,8 @@
 
 		<div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
 
-		<div class="card mt-1">
-		    <div class="card-body">
-	          <div class="card-text my-2">
-	          	
-	          	<h6 class="accordion toggleClick">
-				    <a href> {{story.idx}}. {{story.title}}</a>
-				 </h6>
-	          	 <div class="accordion-content toggleShow">
-	          		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
-	          		<p ng-bind-html="story.viShow" ng-if="$root.bShowVi""></p>
-	          	</div>
+		<div ng-include="'./includes/html_listening_temp.html'" ></div>
 
-	        	<div class="mt-1 p-3" ng-if="story.vocaNotes.length">
-	           	<hr/>
-	        		<p class="mb-1" ng-repeat="(index, note) in story.vocaNotes">
-	          			{{note}}
-	          		</p>
-	          	</div>
-
-	          	
-	          </div> <!-- card-text -->
-        	</div> 		<!-- card-body -->
-		 </div> <!-- card -->
 </body>
 
 </html>

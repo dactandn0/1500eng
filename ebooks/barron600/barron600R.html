@@ -10,12 +10,9 @@
 		  <div class="accordion-content" ng-if="acc_isShow($index)">
 		     <p compile="story.enShow" ng-if="!bShowVi"></p>
 		     <p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
-		     <div class="mt-1" ng-if="story.vocaNotes">
-	           	<hr/>
-	        		<p  class="mb-1" ng-repeat="note in story.vocaNotes">
-	          			{{note}}
-	          		</p>
-	          	</div>
+
+		      <div ng-include="'./includes/html_note.html'"></div>
+		      
 		  </div>
 		</div>
 

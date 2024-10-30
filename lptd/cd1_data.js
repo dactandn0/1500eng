@@ -125,7 +125,7 @@ Những khu vực này được gọi là khu bảo tồn rừng hoặc công vi
 Một số công viên thu một khoản phí vào cửa nhỏ. Du khách phải trả phí để vào công viên.<br>\
 Sau đó, họ có thể đi bộ giữa những cây cổ thụ tuyệt đẹp. Họ phải cẩn thận không làm hỏng cây. Tất cả chúng ta nên chăm sóc rừng.",
 voca:"forest,several,visitor,hundred,feet,fee,damage,reserve,national,entrance,take care of,make things out of",
-note: ["make out of: làm ra từ", "make up of: tạo nên từ"]
+note: "make out of: làm ra từ|make up of: tạo nên từ"
 }
 ,
 {
@@ -850,7 +850,7 @@ G : Chắc chắn là một chuyến đi dễ dàng. Khi nào bạn đi?<br>\
 B: Chúng tôi sẽ đi vào sáng thứ Bảy. Chúng tôi sẽ trở về vào tối thứ Hai.<br>\
 G: Chúc bạn có thời gian vui vẻ! Mang cho tôi một ít hồ đào nhé!",
 voca:"south,nut,pecan,bring,makes for,looking forward to",
-note:["nut = seed = bead = corn"]
+note:"nut = seed = bead = corn"
 },
 {
 	en:"Unit 38 The Travel Agent<br>\

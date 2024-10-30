@@ -83,7 +83,7 @@ app.config(function($routeProvider) {
        templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'
       })        
        .when('/barron600L', {
-       templateUrl: 'templates/non_cd_listening.html', controller: 'barron600LCtrl'
+       templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'
       })    
       .when('/sampleSpeaking', {
        templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'

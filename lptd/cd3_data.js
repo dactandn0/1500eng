@@ -446,5 +446,265 @@ Sưu tầm cũng rất phổ biến. Hầu hết những người sưu tầm tr�
 Tận hưởng một trải nghiệm cũng là một sở thích. Một số người nghe nhạc. Những người khác xem phim hoặc đọc sách. Nhiều người đi du lịch hoặc chơi thể thao. Giúp đỡ mọi người là một sở thích. Có những nơi bạn có thể giúp xây nhà cho các gia đình nghèo. Bạn có thể giúp nuôi người vô gia cư tại các bếp ăn từ thiện. Bạn cũng có thể dạy kèm trẻ em hoặc giúp đỡ người già.<br>\
 Sở thích là thứ được thực hiện vì mục đích vui vẻ. Với rất nhiều lựa chọn, không có lý do gì để không tận hưởng sở thích."
 	,voca:"",
+},
+{
+	title:"Unit 21 Defense!",
+	en:"Unit 21 Defense!<br>\
+M: Stay low and bend your knees! Come over here.<br>\
+B: Yes, Coach?<br>\
+M: Jackson, when you're playing defense, keep your knees bent and your body low. It helps you keep your balance. And it allows you to move more quickly in every direction.<br>\
+B: Like this?<br>\
+M: That's right. You should attempt to stay on the balls of your feet. It's like you are getting ready to pounce. Athletes never rest on their heels.<br>\
+B: Should I stand with my legs close together or far apart?<br>\
+M: It is best to keep them about shoulder-width apart. Bend your knees and keep your back straight. Spread your arms straight out at your sides.<br>\
+B: This seems almost like I'm getting ready to attack the ball.<br>\
+M: It is a little bit like that. Your stance looks much better than before.<br>\
+B: Coach, how do I move forward and backward on defense? I feel like my stance is fine, but when I try to dart toward my opponent, I keep tripping over my feet.<br>\
+M: When you move forward, put your right foot in front of you, with your toes pointing in the direction you want to go. When you move backward, just reverse it: follow the direction of your left foot. How are you feeling?<br>\
+B: My legs are tired and my back aches. <br>\
+M: Playing defense is hard work. Take a break, then we'll try it again."
+	,vi:"Bài 21 Phòng thủ!<br>\
+M: Giữ tư thế thấp và cong đầu gối! Đến đây nào.<br>\
+B: Vâng, Huấn luyện viên?<br>\
+M: Jackson, khi chơi phòng thủ, hãy giữ đầu gối cong và cơ thể thấp. Điều này giúp bạn giữ thăng bằng. Và cho phép bạn di chuyển nhanh hơn theo mọi hướng.<br>\
+B: Như thế này à?<br>\
+M: Đúng rồi. Bạn nên cố gắng giữ thăng bằng trên phần bóng của bàn chân. Giống như bạn đang chuẩn bị lao vào vậy. Các vận động viên không bao giờ nghỉ ngơi trên gót chân của họ.<br>\
+B: Tôi nên đứng với hai chân khép lại hay dang rộng?<br>\
+M: Tốt nhất là giữ chúng cách nhau khoảng bằng vai. Cong đầu gối và giữ lưng thẳng. Dang rộng hai tay ra hai bên.<br>\
+B: Trông gần giống như tôi đang chuẩn bị tấn công bóng vậy.<br>\
+M: Có một chút giống như vậy. Thế đứng của anh trông tốt hơn nhiều so với trước đây.<br>\
+B: Huấn luyện viên, làm sao để tôi tiến lên và lùi lại khi phòng thủ? Tôi cảm thấy thế đứng của mình ổn, nhưng khi tôi cố lao về phía đối thủ, tôi cứ vấp chân.<br>\
+M: Khi anh tiến lên, hãy đặt chân phải ra trước mặt, với các ngón chân hướng về hướng anh muốn đi. Khi anh lùi lại, chỉ cần đảo ngược lại: theo hướng của chân trái. Anh cảm thấy thế nào?<br>\
+B: Chân tôi mỏi và lưng tôi đau. <br>\
+M: Chơi phòng thủ rất vất vả. Nghỉ ngơi một lát, sau đó chúng ta sẽ thử lại."
+	,voca:"",
+},
+{
+	title:"Unit 22 The Importance of Writing",
+	en:"Unit 22 The Importance of Writing<br>\
+B: This is terrible! I hate this assignment. <br>\
+W: What’s wrong, Timmy?<br>\
+B: I am frustrated because I need to write a book report, and I can’t get started.<br>\
+W: May I see your paper? There’s nothing here!<br>\
+B: I can’t think of anything to write, and it’s due tomorrow. To make matters worse, we have to perform an oral presentation in front of the entire class. I don’t see the purpose of writing a book report, anyway.<br>\
+W: Writing is a necessary skill that you’ll use for the rest of your life. This book report is just one way to begin learning that skill. It’s another form of communication and a means of expressing your thoughts. It allows others to understand what is in your heart and mind. <br>\
+B: I’ve never had to write before. Why should I start now?<br>\
+W: Now is the best time to begin. The best writers read a lot, and practice writing. Anyone can learn to write well. I know you can do it.<br>\
+B: OK, Mom. When you put it that way, I think I can do it.<br>\
+W: That’s the right attitude. Let’s try to organize some of your thoughts by brainstorming. What can you tell me about the book?<br>\
+B: The book? I’ve only watched the movie! Does that count?<br>\
+W: Oh, goodness! What kind of child am I raising?<br>\
+B: One that probably won’t be a famous writer!"
+	,vi:"Bài 22 Tầm quan trọng của việc viết<br>\
+B: Bài này tệ quá! Mình ghét bài tập này. <br>\
+W: Có chuyện gì vậy, Timmy?<br>\
+B: Mình bực mình vì mình cần viết một bài báo cáo sách, và mình không thể bắt đầu.<br>\
+W: Mình có thể xem bài của bạn không? Không có gì ở đây cả!<br>\
+B: Mình không nghĩ ra được điều gì để viết, và ngày mai phải nộp rồi. Tệ hơn nữa, chúng ta phải thuyết trình trước cả lớp. Dù sao thì mình cũng không thấy mục đích của việc viết một bài báo cáo sách.<br>\
+W: Viết là một kỹ năng cần thiết mà bạn sẽ sử dụng trong suốt quãng đời còn lại. Bài báo cáo sách này chỉ là một cách để bắt đầu học kỹ năng đó. Đây là một hình thức giao tiếp khác và là phương tiện để bạn thể hiện suy nghĩ của mình. Bài báo cáo cho phép người khác hiểu được những gì trong trái tim và tâm trí bạn. <br>\
+B: Trước đây, mình chưa bao giờ phải viết. Tại sao tôi nên bắt đầu ngay bây giờ?<br>\
+W: Bây giờ là thời điểm tốt nhất để bắt đầu. Những nhà văn giỏi nhất đọc rất nhiều và luyện viết. Bất kỳ ai cũng có thể học cách viết tốt. Tôi biết bạn có thể làm được.<br>\
+B: Được rồi, Mẹ. Khi mẹ nói theo cách đó, con nghĩ là con có thể làm được.<br>\
+W: Đó là thái độ đúng đắn. Chúng ta hãy thử sắp xếp một số suy nghĩ của con bằng cách động não. Con có thể cho mẹ biết gì về cuốn sách không?<br>\
+B: Cuốn sách ư? Con chỉ xem phim thôi! Điều đó có được tính không?<br>\
+W: Ôi trời! Con đang nuôi dạy đứa trẻ như thế nào?<br>\
+B: Một đứa trẻ có lẽ sẽ không trở thành nhà văn nổi tiếng!"
+	,voca:"",
+},
+{
+	title:"Unit 23 The Course Schedule",
+	en:"Unit 23 The Course Schedule<br>\
+W: It's so difficult to choose what courses to take this semester. Henry, have you chosen all of your courses yet?<br>\
+M: No, Sue. I'm having a hard time making up my mind, and I still need to select two more. Do you have any ideas? Do you know anything about the professors?<br>\
+W: I heard that the psychology professor is tough but fair. If you work hard, you can get a good grade.<br>\
+M: Psychology sounds interesting.<br>\
+W:How about we both sign up for psychology? Then we'd be in the same class, and we could help each other with assignments.<br>\
+M: I remember the last class we took together. I'm not so sure that's a good idea.<br>\
+W: Oh, come on. It would be fun. I promise I'll attend the classes and not just borrow your notes this time.<br>\
+M: Thanks! <br>\
+W: I was thinking about taking film studies. Why don't you take that?<br>\
+M: I like going to the movies, but I don't want to study them.<br>\
+W: I know someone who took that course last year, and she said it's very easy. Almost everyone gets an 'A' or a 'B'” And there is no homework.<br>\
+M:That is tempting, but I want to learn something useful.<br>\
+W: Fine, but don't complain to me if you get a 'C'."
+	,vi:"Bài 23 Lịch học<br>\
+W: Thật khó để chọn khóa học nào cho học kỳ này. Henry, bạn đã chọn tất cả các khóa học của mình chưa?<br>\
+M: Chưa, Sue. Mình đang gặp khó khăn trong việc quyết định, và mình vẫn cần chọn thêm hai khóa nữa. Bạn có ý tưởng nào không? Bạn có biết gì về các giáo sư không?<br>\
+W: Mình nghe nói giáo sư tâm lý học rất nghiêm khắc nhưng công bằng. Nếu bạn học chăm chỉ, bạn có thể đạt điểm cao.<br>\
+M: Tâm lý học nghe có vẻ thú vị.<br>\
+W: Hay là chúng ta cùng đăng ký học tâm lý học nhé? Khi đó chúng ta sẽ học cùng lớp và có thể giúp nhau làm bài tập.<br>\
+M: Mình nhớ buổi học cuối cùng chúng ta học cùng nhau. Mình không chắc đó có phải là ý kiến ​​hay không.<br>\
+W: Thôi nào. Sẽ vui lắm. Mình hứa sẽ tham gia các lớp học và lần này không chỉ mượn vở của bạn.<br>\
+M: Cảm ơn bạn! <br>\
+W: Tôi đang nghĩ đến việc học nghiên cứu phim. Sao bạn không học ngành đó?<br>\
+M: Tôi thích đi xem phim, nhưng tôi không muốn học chúng.<br>\
+W: Tôi biết một người đã học khóa học đó vào năm ngoái và cô ấy nói rằng nó rất dễ. Hầu như ai cũng được điểm 'A' hoặc 'B'. Và không có bài tập về nhà.<br>\
+M: Nghe hấp dẫn đấy, nhưng tôi muốn học một cái gì đó hữu ích.<br>\
+W: Được thôi, nhưng đừng phàn nàn với tôi nếu bạn được điểm 'C'."
+	,voca:"",
+},
+{
+	title:" Unit 24 Food, Family, and Fun",
+	en:"Unit 24 Food, Family, and Fun<br>Thanksgiving is a special family holiday in America. Families come together to give thanks for all they have. Although every family celebrates in slightly different ways, a typical Thanksgiving is full of food, family, and fun. My family celebrates Thanksgiving, too.<br>\
+Everyone in my family goes to my parents’ place for Thanksgiving. We have a large meal. Everyone helps on Thanksgiving. The children set the table. My mother cooks the turkey using her own secret ingredients. My father makes the side dishes. He makes potatoes, beans, carrots, stuffing, oysters, and beets. My mom makes cranberry sauce. My sister-in-law brings a pumpkin pie. I come early to help my parents cook.<br>\
+When it is time to eat, we put all the food on the table. Everyone sits down. We each say what we are thankful for before we eat. Some of us are thankful for our health, and others are thankful for their jobs. Everyone is thankful for something different.<br>\
+There is a lot of activity after the meal. My aunt and uncle clean off the table. My sister-in-law helps me wash the dishes. The teenagers wash and put away the silverware. The children help to tidy the dining room. My brothers take out the garbage. Then they go play football in the backyard. The rest of us sit down and relax. We are thankful for the food and our blessings. Most of all, we are thankful to have each other."
+	,vi:"Bài 24 Thực phẩm, Gia đình và Vui chơi<br>Lễ Tạ ơn là một ngày lễ gia đình đặc biệt ở Mỹ. Các gia đình tụ họp lại để cảm ơn tất cả những gì họ có. Mặc dù mỗi gia đình ăn mừng theo những cách hơi khác nhau, nhưng một Lễ Tạ ơn điển hình luôn tràn ngập đồ ăn, gia đình và niềm vui. Gia đình tôi cũng ăn mừng Lễ Tạ ơn.<br>\
+Mọi người trong gia đình tôi đều đến nhà bố mẹ tôi để ăn Lễ Tạ ơn. Chúng tôi ăn một bữa thịnh soạn. Mọi người đều giúp đỡ nhau vào Lễ Tạ ơn. Trẻ em dọn bàn. Mẹ tôi nấu gà tây bằng những nguyên liệu bí mật của riêng bà. Bố tôi làm các món ăn kèm. Ông làm khoai tây, đậu, cà rốt, nhân nhồi, hàu và củ cải đường. Mẹ tôi làm nước sốt nam việt quất. Chị dâu tôi mang một chiếc bánh bí ngô. Tôi đến sớm để giúp bố mẹ nấu ăn.<br>\
+Khi đến giờ ăn, chúng tôi bày hết đồ ăn lên bàn. Mọi người ngồi xuống. Mỗi người chúng tôi nói điều mình biết ơn trước khi ăn. Một số người trong chúng tôi biết ơn sức khỏe của mình, những người khác biết ơn công việc của mình. Mọi người đều biết ơn vì một điều gì đó khác nhau.<br>\
+Có rất nhiều hoạt động sau bữa ăn. Cô và chú tôi dọn dẹp bàn ăn. Chị dâu tôi giúp tôi rửa bát. Các thiếu niên rửa và cất đồ bạc. Trẻ em giúp dọn dẹp phòng ăn. Anh em trai tôi đổ rác. Sau đó, họ đi chơi bóng đá ở sân sau. Những người còn lại trong chúng tôi ngồi xuống và thư giãn. Chúng tôi biết ơn vì thức ăn và phước lành của mình. Trên hết, chúng tôi biết ơn vì có nhau."
+	,voca:"",
+},
+{
+	title:"Unit 25 The Project",
+	en:"Unit 25 The Project<br>\
+B: Hey Dad! Do you think you can help me out? I’ve just been assigned this enormous project at school, and I really don’t know where to begin.<br>\
+M: Sure Jason, I’ll give it my best shot. <br>\
+B: Oh, Dad, I know you will be a great help and inspiration to me.<br>\
+M: OK, OK. That’s enough flattery from you for one day. What’s this project about?<br>\
+B: Well, I have two choices. I can research a profession, or I can interview someone that I admire about their profession. If I do the second option, I must also add my own opinion about their profession.<br>\
+M: Well, I am an expert when it comes to my profession. Accounting is a noble profession and one that I am always happy to talk about.<br>\
+B: Dad, I know how much you love your career. It isn’t that I don’t admire you. But what I was hoping actually, was that you could speak to Mr. Chang, your diving friend, and see if he would agree to an interview. Diving for a living sounds cool!<br>\
+M: I see. That’s a great idea! You know how I really dislike talking about myself for too long. Let me give David Chang a call right now and find out.<br>\
+B: Thanks, Dad! You’re the best! I know this will be an awesome project!"
+	,vi:"Bài 25 Dự án<br>\
+B: Này bố! Bố có thể giúp con không? Con vừa được giao một dự án lớn ở trường, và con thực sự không biết phải bắt đầu từ đâu.<br>\
+M: Được thôi Jason, con sẽ cố gắng hết sức. <br>\
+B: Ồ, bố, con biết bố sẽ giúp đỡ và truyền cảm hứng cho con rất nhiều.<br>\
+M: Được, được. Bợ đỡ thế là đủ cho một ngày rồi. Dự án này là về cái gì?<br>\
+B: Vâng, con có hai lựa chọn. Con có thể nghiên cứu về một nghề nghiệp, hoặc con có thể phỏng vấn một người mà con ngưỡng mộ về nghề nghiệp của họ. Nếu con chọn phương án thứ hai, con cũng phải thêm ý kiến ​​của riêng mình về nghề nghiệp của họ.<br>\
+M: Vâng, con là chuyên gia về nghề nghiệp của mình. Kế toán là một nghề cao quý và con luôn sẵn lòng nói về nghề nghiệp đó.<br>\
+B: Bố, con biết bố yêu nghề nghiệp của mình đến mức nào. Không phải là con không ngưỡng mộ bố. Nhưng điều tôi thực sự hy vọng là bạn có thể nói chuyện với anh Chang, người bạn lặn của bạn, và xem anh ấy có đồng ý phỏng vấn không. Lặn để kiếm sống nghe có vẻ hay!<br>\
+M: Tôi hiểu rồi. Đó là một ý tưởng tuyệt vời! Bạn biết đấy, tôi thực sự không thích nói về bản thân mình quá lâu. Để tôi gọi cho David Chang ngay bây giờ và tìm hiểu nhé.<br>\
+B: Cảm ơn bố! Bố là người giỏi nhất! Tôi biết đây sẽ là một dự án tuyệt vời!"
+	,voca:"",
+},
+{
+	title:"Unit 26 The Assignment",
+	en:"Unit 26 The Assignment<br>\
+B: Hello Wendy! Who did you do your homework about?<br>\
+G: I wrote about my dad because he is a firefighter.<br>\
+B: Really? Does he actually go into burning buildings?<br>\
+G: Yes, and he sometimes has to crawl into tight places to rescue people.<br>\
+B: Has he ever been trapped in a burning building?<br>\
+G: Well, one time he needed to break down a door. He was carrying a little girl out of her house. Someone left the stove on, and it ignited a fire in the kitchen.<br>\
+B: Was everyone all right?<br>\
+G: All five people living there escaped safely, but the house burned to the ground.<br>\
+B: Your dad is incredibly brave, a real hero. What does he do at the fire station?<br>\
+G: He resides there for a few days when he works. All of the firefighters cook, eat, and clean together. When there’s a fire, they slide down a pole into the fire station’s garage to get their fire-fighting equipment. They quickly put on their gear and then jump onto the fire trucks. My dad loves to drive the fire trucks.<br>\
+B:Wow! Maybe I should be a firefighter someday.<br>\
+G: I’m definitely going to be a firefighter, Ian. I want to be just like my dad."
+	,vi:"Bài tập số 26<br>\
+B: Xin chào Wendy! Bạn đã làm bài tập về nhà về ai?<br>\
+G: Tôi viết về bố tôi vì ông ấy là lính cứu hỏa.<br>\
+B: Thật sao? Ông ấy có thực sự vào những tòa nhà đang cháy không?<br>\
+G: Có, và đôi khi ông ấy phải bò vào những nơi chật hẹp để cứu người.<br>\
+B: Ông ấy đã bao giờ bị mắc kẹt trong một tòa nhà đang cháy chưa?<br>\
+G: À, có một lần ông ấy cần phá cửa. Ông ấy đang bế một bé gái ra khỏi nhà. Có người để bếp bật và nó đã gây ra hỏa hoạn trong bếp.<br>\
+B: Mọi người đều ổn chứ?<br>\
+G: Cả năm người sống ở đó đều thoát ra an toàn, nhưng ngôi nhà đã bị thiêu rụi.<br>\
+B: Bố bạn vô cùng dũng cảm, một anh hùng thực sự. Ông ấy làm gì ở đồn cứu hỏa?<br>\
+G: Ông ấy ở đó vài ngày khi đi làm. Tất cả lính cứu hỏa cùng nhau nấu ăn, ăn uống và dọn dẹp. Khi có hỏa hoạn, họ trượt xuống một cây sào vào gara của trạm cứu hỏa để lấy thiết bị chữa cháy. Họ nhanh chóng mặc đồ vào rồi nhảy lên xe cứu hỏa. Bố tôi thích lái xe cứu hỏa.<br>\
+B: Wow! Có lẽ một ngày nào đó tôi nên trở thành lính cứu hỏa.<br>\
+G: Tôi chắc chắn sẽ trở thành lính cứu hỏa, Ian. Tôi muốn trở thành người giống như bố tôi."
+	,voca:"",
+},
+{
+	title:"Unit 27 CoCo Lee",
+	en:"Unit 27 CoCo Lee<br>\
+G: Ferren Lee’s mother hoped her daughter would follow in her footsteps and become a doctor. However, Ferren always knew she wanted to sing.<br>\
+In her spare time, Ferren sang along with pop songs. Ferren also entered singing contests. She won many competitions. Her big break came after high school. She was on vacation in Hong Kong and took second place in an important singing competition. She got a recording contract with Fancy Pie Records, and, a few years later, Sony.<br>\
+Today, CoCo Lee, as she is now known, is one of the most famous pop singers in the world. She was born in Hong Kong on January 17, 1975, but she was raised in San Francisco. She has made records in English and Chinese. Her 1998 album, DiDaDi, won the MTV Asia music award for best album and best music video. CoCo’s next album was in English. It was called Just No Other Way. It introduced her to American audiences.<br>\
+Apart from her beautiful voice and stunning looks, CoCo Lee is intelligent. She had a 3.8 grade-point average in college. She also earned a double major in bio-chemistry and bio-science. One of her dreams, she says, is to help find a cure for cancer.<br>\
+Who knows? CoCo’s mother may yet get her wish."
+	,vi:"Unit 27 CoCo Lee<br>\
+G: Mẹ của Ferren Lee hy vọng con gái bà sẽ theo bước chân của bà và trở thành bác sĩ. Tuy nhiên, Ferren luôn biết rằng cô bé muốn ca hát.<br>\
+Vào thời gian rảnh rỗi, Ferren hát theo các bài hát nhạc pop. Ferren cũng tham gia các cuộc thi ca hát. Cô đã giành chiến thắng trong nhiều cuộc thi. Bước đột phá lớn của cô đến sau khi học xong trung học. Cô đang đi nghỉ ở Hồng Kông và giành giải nhì trong một cuộc thi ca hát quan trọng. Cô đã ký hợp đồng thu âm với Fancy Pie Records và vài năm sau là Sony.<br>\
+Ngày nay, CoCo Lee, tên cô hiện được biết đến, là một trong những ca sĩ nhạc pop nổi tiếng nhất thế giới. Cô sinh ra tại Hồng Kông vào ngày 17 tháng 1 năm 1975, nhưng cô lớn lên ở San Francisco. Cô đã thực hiện các bản thu âm bằng tiếng Anh và tiếng Trung. Album năm 1998 của cô, DiDaDi, đã giành giải thưởng âm nhạc MTV Châu Á cho album hay nhất và video ca nhạc hay nhất. Album tiếp theo của CoCo là bằng tiếng Anh. Nó có tên là Just No Other Way. Nó đã giới thiệu cô với khán giả Mỹ.<br>\
+Ngoài giọng hát tuyệt vời và vẻ ngoài ấn tượng, CoCo Lee còn rất thông minh. Cô có điểm trung bình 3,8 ở trường đại học. Cô cũng lấy bằng kép về hóa sinh và khoa học sinh học. Một trong những ước mơ của cô, cô nói, là giúp tìm ra phương pháp chữa bệnh ung thư.<br>\
+Ai mà biết được? Mẹ của CoCo có thể đạt được ước nguyện của cô."
+	,voca:"",
+},
+{
+	title:"Unit 28 A Blind Date",
+	en:"Unit 28 A Blind Date<br>\
+W: What’s wrong, Mike? You appear to be depressed.<br>\
+M: I haven’t slept in days, and I feel awful. My fiancée and I broke up just before I went to Madrid for the concert.<br>\
+W: Why didn’t you say something? No wonder your playing sounded so bad. Oh dear, I’m really sorry.<br>\
+M: It was an appalling performance, I agree. I was miserable and unhappy, but I had to perform, anyway.<br>\
+W: Have you been seeing anyone else since you broke up with her?<br>\
+M: No, I have been working overtime instead. The conductor was not pleased with my last performance. Besides, don’t you think it’s too soon?<br>\
+W: Not at all. You might just need to get out and socialize. Hey, I’ve got a fabulous idea!<br>\
+M: Oh no, not another one of your ideas. What is it this time?<br>\
+W: Do you remember me telling you about Julia, a friend from work?<br>\
+M: I think so. Why?<br>\
+W: Well, she is single. I could set up the two of you. <br>\
+M: A blind date? I tried that when I was younger, and it was a disaster.<br>\
+W: Come on, Mike. I’d be helping two friends who will, of course, have a great time together. She has a charming personality, and she also plays the oboe. You can go to the concert in the park on Saturday afternoon. Maybe you can have coffee afterwards.<br>\
+M: She plays the oboe? OK. Let me know when and where to meet her."
+	,vi:"Bài 28 Một cuộc hẹn hò giấu mặt<br>\
+W: Có chuyện gì vậy, Mike? Có vẻ như anh đang bị trầm cảm.<br>\
+M: Tôi đã không ngủ trong nhiều ngày và tôi cảm thấy rất tệ. Tôi và hôn thê đã chia tay ngay trước khi tôi đến Madrid để tham dự buổi hòa nhạc.<br>\
+W: Tại sao anh không nói gì cả? Chẳng trách anh chơi tệ đến vậy. Ôi trời, tôi thực sự xin lỗi.<br>\
+M: Đó là một buổi biểu diễn tệ hại, tôi đồng ý. Tôi rất đau khổ và không vui, nhưng dù sao thì tôi cũng phải biểu diễn.<br>\
+W: Anh có gặp gỡ ai khác kể từ khi chia tay cô ấy không?<br>\
+M: Không, tôi phải làm thêm giờ. Người chỉ huy dàn nhạc không hài lòng với buổi biểu diễn gần đây nhất của tôi. Hơn nữa, anh không nghĩ là còn quá sớm sao?<br>\
+W: Không hề. Có lẽ anh chỉ cần ra ngoài và giao lưu thôi. Này, tôi có một ý tưởng tuyệt vời!<br>\
+M: Ồ không, không phải là một trong những ý tưởng của anh nữa sao. Lần này là gì vậy?<br>\
+W: Bạn có nhớ tôi đã kể với bạn về Julia, một người bạn cùng làm không?<br>\
+M: Tôi nghĩ là có. Tại sao vậy?<br>\
+W: À, cô ấy còn độc thân. Tôi có thể sắp xếp cho hai người. <br>\
+M: Một buổi hẹn hò giấu mặt ư? Tôi đã thử điều đó khi còn trẻ, và đó là một thảm họa.<br>\
+W: Thôi nào, Mike. Tôi sẽ giúp hai người bạn, tất nhiên, họ sẽ có khoảng thời gian tuyệt vời bên nhau. Cô ấy có tính cách quyến rũ, và cô ấy cũng chơi ô-boa. Bạn có thể đến buổi hòa nhạc ở công viên vào chiều thứ bảy. Có lẽ bạn có thể uống cà phê sau đó.<br>\
+M: Cô ấy chơi ô-boa? Được thôi. Hãy cho tôi biết khi nào và ở đâu để gặp cô ấy."
+	,voca:"",
+},
+{
+	title:"Unit 29 Crime Does Not Pay",
+	en:"Unit 29 Crime Does Not Pay<br>\
+Have you ever thought about committing a crime? Have you ever dreamed about holding up a bank and driving away in a fast car? Or, have you ever thought about taking a famous painting from a big museum?<br>\
+There are many stories in movies and on TV of criminals who make a lot of money. They go on to live a life of luxury. However, for every successful criminal, there are many, many more who fail. These crooks soon regret their crimes.<br>\
+Take the example of a man in Winnipeg who tried to break into cars in a police academy parking lot. The man was found by the police in the parking lot. They saw him trying to open the doors of all the cars. The man was hoping to find some loose change, or maybe take some good car stereos.<br>\
+However, he did not know that he was being watched by police officers. He chose the parking lot because it was in a very quiet area. He thought that no one would see him. He was soon arrested by the police. A foolish criminal like this man shows us that crime does not pay."
+	,vi:"Đơn vị 29 Tội ác không được đền đáp<br>\
+Bạn đã bao giờ nghĩ đến việc phạm tội chưa? Bạn đã bao giờ mơ về việc cướp ngân hàng và lái xe đi mất bằng một chiếc xe hơi nhanh chưa? Hay, bạn đã bao giờ nghĩ đến việc lấy một bức tranh nổi tiếng từ một bảo tàng lớn chưa?<br>\
+Có rất nhiều câu chuyện trong phim và trên TV về những tên tội phạm kiếm được rất nhiều tiền. Chúng tiếp tục sống một cuộc sống xa hoa. Tuy nhiên, cứ mỗi tên tội phạm thành công thì lại có rất nhiều tên khác thất bại. Những tên tội phạm này sớm hối hận về tội ác của mình.<br>\
+Lấy ví dụ về một người đàn ông ở Winnipeg đã cố đột nhập vào những chiếc ô tô trong bãi đậu xe của học viện cảnh sát. Cảnh sát đã tìm thấy người đàn ông đó trong bãi đậu xe. Họ thấy anh ta cố mở cửa tất cả các xe. Người đàn ông đó hy vọng tìm thấy một ít tiền lẻ, hoặc có thể lấy một số dàn âm thanh nổi tốt trên ô tô.<br>\
+Tuy nhiên, anh ta không biết rằng mình đang bị cảnh sát theo dõi. Anh ta chọn bãi đậu xe vì đó là một khu vực rất yên tĩnh. Anh ta nghĩ rằng sẽ không có ai nhìn thấy mình. Anh ta đã sớm bị cảnh sát bắt giữ. Một tên tội phạm ngu ngốc như người đàn ông này cho chúng ta thấy rằng tội ác không mang lại lợi ích gì."
+	,voca:"",
+},
+{
+	title:"Unit 30 A Job Interview",
+	en:"Unit 30 A Job Interview<br>\
+M: Hello, Ms. Jones? Please, come in and sit down.<br>\
+W: Thank you.<br>\
+M: So, you're applying for the position of computer technician. <br>\
+W: Yes, that's right.<br>\
+M: My name is Mr. Smith, and I will be interviewing you today.<br>\
+W: Nice to meet you.<br>\
+M: Can you tell me a little bit about yourself?<br>\
+W: As my resume shows, I graduated from Leeds University with a Computer Science degree. During my junior and senior years, I worked part time as a computer lab monitor in the university. As part of that job, I helped students with PC and desktop application problems and did hardware and software maintenance. I also taught a weekly one-hour class on how to use Microsoft Office applications.<br>\
+M: How would you describe yourself?<br>\
+W: I really enjoy problem solving, and I'm hardworking. I'm also very organized, so when I have a lot of problems to deal with, I make a list and work through it from the most to the least urgent. That way, I can get everything done within the set deadlines.<br>\
+M: That's a good way to manage your time. Just one more question. Why do you want to work for us?<br>\
+W: Your company is well-known, and is respected in the computer industry. I would really like a chance to be part of your company.<br>\
+M: OK. Thank you for coming in. I'll be in touch.<br>\
+W: Thank you. Goodbye."
+	,vi:"Bài 30 Phỏng vấn xin việc<br>\
+M: Xin chào, cô Jones? Mời cô vào và ngồi xuống.<br>\
+W: Cảm ơn cô.<br>\
+M: Vậy là cô đang ứng tuyển vào vị trí kỹ thuật viên máy tính. <br>\
+W: Vâng, đúng rồi.<br>\
+M: Tôi tên là ông Smith và tôi sẽ phỏng vấn cô hôm nay.<br>\
+W: Rất vui được gặp cô.<br>\
+M: Cô có thể cho tôi biết đôi nét về bản thân mình không?<br>\
+W: Như sơ yếu lý lịch của tôi cho thấy, tôi tốt nghiệp Đại học Leeds với bằng Khoa học máy tính. Trong những năm học thứ ba và thứ tư, tôi làm việc bán thời gian với tư cách là người giám sát phòng máy tính tại trường đại học. Một phần công việc đó là tôi giúp sinh viên giải quyết các vấn đề về PC và ứng dụng máy tính để bàn, đồng thời bảo trì phần cứng và phần mềm. Tôi cũng dạy một lớp học một giờ hàng tuần về cách sử dụng các ứng dụng Microsoft Office.<br>\
+M: Bạn sẽ mô tả bản thân mình như thế nào?<br>\
+W: Tôi thực sự thích giải quyết vấn đề và tôi chăm chỉ. Tôi cũng rất có tổ chức, vì vậy khi tôi có nhiều vấn đề cần giải quyết, tôi lập danh sách và giải quyết theo thứ tự từ cấp bách nhất đến cấp bách nhất. Bằng cách đó, tôi có thể hoàn thành mọi việc trong thời hạn đã định.<br>\
+M: Đó là cách tốt để quản lý thời gian của bạn. Chỉ còn một câu hỏi nữa thôi. Tại sao bạn muốn làm việc cho chúng tôi?<br>\
+W: Công ty của bạn rất nổi tiếng và được kính trọng trong ngành máy tính. Tôi thực sự muốn có cơ hội trở thành một phần của công ty bạn.<br>\
+M: Được thôi. Cảm ơn bạn đã đến. Tôi sẽ liên lạc lại.<br>\
+W: Cảm ơn bạn. Tạm biệt."
+	,voca:"",
 }
 ]

@@ -978,7 +978,7 @@ journalist nhà báo<br>\
 pup chó con<br>\
 qualify đủ điều kiện<br>\
 repair sửa chữa<br>\
-resume sơ yếu lý lịch<br>\
+resume (n,v) /rɪˈzuːm/ sơ yếu lý lịch (v) bắt đầu lại<br>\
 rob cướp<br>\
 slip trượt<br>\
 somewhat hơi<br>\

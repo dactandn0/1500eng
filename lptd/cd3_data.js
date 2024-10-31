@@ -706,5 +706,205 @@ W: Công ty của bạn rất nổi tiếng và được kính trọng trong ng�
 M: Được thôi. Cảm ơn bạn đã đến. Tôi sẽ liên lạc lại.<br>\
 W: Cảm ơn bạn. Tạm biệt."
 	,voca:"",
+},
+{
+	title:"Unit 31 An Ounce of Prevention",
+	en:"Unit 31 An Ounce of Prevention<br>\
+M: Hi, Sandy. I have a question for you.<br>\
+W: Sure, Joe. <br>\
+M:  I need to have a physical examination, and there is a new clinic on Elm Street. Have you heard anything about it?<br>\
+W: One of my friends went there recently. She said it was very hygienic and well-run. It is great to have a new clinic close by, since there is a shortage of doctors around here. Why are you going?<br>\
+M: I've just joined a gym. I want to get more exercise, and they require a medical exam before I can start.<br>\
+W:What kind of tests do they want you to have?<br>\
+M: They want to know my blood pressure, how much I weigh, and results from a blood test to check for any possible diseases. I feel terrific, so I'm not worried.<br>\
+W: I had a routine check-up last month, and the doctor discovered that my blood pressure is a little high. It's not serious, but I am glad that I found out about it. I am walking every day, and I have cut down on my salt intake. I would rather not take medication if I don't have to. The change in diet has really made me feel better. You know the saying, 'An ounce of prevention is worth a pound of cure.'<br>\
+M: I think you are right. Prevention is very important. I'm going to call right now and set up an appointment."
+	,vi:"Bài 31 Một ounce phòng ngừa<br>\
+M: Chào Sandy. Tôi có một câu hỏi cho bạn.<br>\
+W: Chắc chắn rồi, Joe. <br>\
+M: Tôi cần khám sức khỏe và có một phòng khám mới trên phố Elm. Bạn đã nghe nói gì về nó chưa?<br>\
+W: Một người bạn của tôi đã đến đó gần đây. Cô ấy nói rằng phòng khám rất vệ sinh và được quản lý tốt. Thật tuyệt khi có một phòng khám mới gần đây, vì ở đây đang thiếu bác sĩ. Tại sao bạn lại đến đó?<br>\
+M: Tôi vừa mới tham gia một phòng tập thể dục. Tôi muốn tập thể dục nhiều hơn và họ yêu cầu tôi phải khám sức khỏe trước khi tôi có thể bắt đầu.<br>\
+W: Họ muốn bạn làm những xét nghiệm nào?<br>\
+M: Họ muốn biết huyết áp, cân nặng và kết quả xét nghiệm máu của tôi để kiểm tra xem có bất kỳ bệnh nào không. Tôi cảm thấy rất tuyệt, vì vậy tôi không lo lắng.<br>\
+W: Tôi đã kiểm tra sức khỏe định kỳ vào tháng trước và bác sĩ phát hiện ra rằng huyết áp của tôi hơi cao. Không nghiêm trọng, nhưng tôi mừng vì đã phát hiện ra điều đó. Tôi đi bộ mỗi ngày và tôi đã cắt giảm lượng muối nạp vào. Tôi thà không dùng thuốc nếu không cần thiết. Việc thay đổi chế độ ăn uống thực sự khiến tôi cảm thấy khỏe hơn. Bạn biết câu nói, 'Phòng bệnh hơn chữa bệnh'.<br>\
+M: Tôi nghĩ bạn nói đúng. Phòng bệnh rất quan trọng. Tôi sẽ gọi điện ngay bây giờ và đặt lịch hẹn."
+	,voca:"",
+},
+{
+	title:"Unit 32 Herbal Medicine",
+	en:"Unit 32 Herbal Medicine<br>\
+Everyone wants to be healthy. People see doctors. They take pills to stay healthy. However, plants have been used to heal for thousands of years. More and more people are trying herbs to stay healthy. Plants used to heal are called 'herbal medicine.'<br>\
+There are many plants used in herbal medicine. Each plant is used in a certain way. Herbal medicine works more slowly than most pills. Many people think plants are gentle on the body. There are a lot of examples of helpful plants. Ginger can help your body. Eating ginger often may help you stay healthy. Another helpful plant is parsley. It can stop bad breath.<br>\
+Herbs may be gentler than some pills. However, this does not mean that anyone can take them in any way. You should always be careful. Some herbs can be harmful, too. Too much rosemary can be very bad for your stomach. It can make you sick. Foxglove is a very pretty flower. It also has poison in it.<br>\
+Nevertheless, if you are afraid of using herbs, you may be surprised. You have probably already used some kind of herbal medicine. Coffee, garlic, ginseng, and peppermint are all used in herbal medicine. Herbal medicine is becoming popular again, as people become more interested in their health."
+	,vi:"Bài 32 Thuốc thảo dược<br>\
+Mọi người đều muốn khỏe mạnh. Mọi người đi khám bác sĩ. Họ uống thuốc để duy trì sức khỏe. Tuy nhiên, thực vật đã được sử dụng để chữa bệnh trong hàng ngàn năm. Ngày càng có nhiều người thử dùng thảo dược để duy trì sức khỏe. Thực vật được sử dụng để chữa bệnh được gọi là 'thuốc thảo dược'.<br>\
+Có nhiều loại thực vật được sử dụng trong thuốc thảo dược. Mỗi loại thực vật được sử dụng theo một cách nhất định. Thuốc thảo dược có tác dụng chậm hơn hầu hết các loại thuốc viên. Nhiều người nghĩ rằng thực vật nhẹ nhàng với cơ thể. Có rất nhiều ví dụ về các loại thực vật có ích. Gừng có thể giúp cơ thể bạn. Ăn gừng thường xuyên có thể giúp bạn duy trì sức khỏe. Một loại thực vật có ích khác là rau mùi tây. Nó có thể ngăn ngừa hôi miệng.<br>\
+Các loại thảo mộc có thể nhẹ nhàng hơn một số loại thuốc. Tuy nhiên, điều này không có nghĩa là bất kỳ ai cũng có thể dùng chúng theo bất kỳ cách nào. Bạn nên luôn cẩn thận. Một số loại thảo mộc cũng có thể gây hại. Quá nhiều hương thảo có thể rất có hại cho dạ dày của bạn. Nó có thể khiến bạn bị ốm. Hoa mao địa hoàng là một loài hoa rất đẹp. Nó cũng có chất độc.<br>\
+Tuy nhiên, nếu bạn sợ sử dụng thảo mộc, bạn có thể ngạc nhiên. Có lẽ bạn đã sử dụng một số loại thuốc thảo dược. Cà phê, tỏi, nhân sâm và bạc hà đều được sử dụng trong thuốc thảo dược. Thuốc thảo dược đang trở nên phổ biến trở lại, vì mọi người ngày càng quan tâm đến sức khỏe của mình."
+	,voca:"",
+},
+{
+	title:"Unit 33 Home Remedies ",
+	en:"Unit 33 Home Remedies <br>\
+Everyone gets a cold now and then. Doctors cannot cure colds. Sleep and rest are good for taking care of a cold. However, in almost every culture, most families have a home remedy for colds. These remedies are passed down from parents to children. They have changed very little over time.<br>\
+<br>\
+Different cultures use different ingredients. In Mexico, cinnamon, raisins, oregano, and hot water are used to make a special tea. Honey is sometimes added. A fruit called genipap is used as a cold remedy in Puerto Rico. The fruit is cut up. It is then soaked in water. Sugar can be added to make it sweet. Chicken soup is popular in America. A large chicken is boiled in a pot. Carrots, onions, garlic, and other vegetables are usually added. Ginger tea is used to help a cold in China. A ginger root is peeled. It is then crushed. The ginger is boiled for about thirty minutes. Some honey can be added after it is done.<br>\
+<br>\
+Each family usually has a home remedy for a cold. Some remedies work. Some do not. Some taste good. Others do not. No matter what, home remedies are sure to be around for a long time."
+	,vi:"Bài 33 Biện pháp khắc phục tại nhà <br>\
+Mọi người thỉnh thoảng đều bị cảm lạnh. Bác sĩ không thể chữa khỏi cảm lạnh. Ngủ và nghỉ ngơi là cách tốt để chăm sóc cảm lạnh. Tuy nhiên, ở hầu hết mọi nền văn hóa, hầu hết các gia đình đều có biện pháp khắc phục cảm lạnh tại nhà. Những biện pháp khắc phục này được truyền từ cha mẹ sang con cái. Chúng hầu như không thay đổi theo thời gian.<br>\
+<br>\
+Các nền văn hóa khác nhau sử dụng các thành phần khác nhau. Ở Mexico, quế, nho khô, kinh giới và nước nóng được sử dụng để pha một loại trà đặc biệt. Đôi khi người ta thêm mật ong. Một loại quả gọi là genipap được sử dụng làm thuốc chữa cảm lạnh ở Puerto Rico. Quả được cắt nhỏ. Sau đó ngâm trong nước. Có thể thêm đường để làm ngọt. Súp gà rất phổ biến ở Mỹ. Một con gà lớn được luộc trong nồi. Cà rốt, hành tây, tỏi và các loại rau khác thường được thêm vào. Trà gừng được sử dụng để chữa cảm lạnh ở Trung Quốc. Gọt vỏ một củ gừng. Sau đó, nghiền nát. Đun sôi gừng trong khoảng ba mươi phút. Có thể thêm một ít mật ong sau khi làm xong.<br>\
+<br>\
+Mỗi gia đình thường có một bài thuốc dân gian chữa cảm lạnh. Một số bài thuốc có tác dụng. Một số thì không. Một số có vị ngon. Một số thì không. Dù thế nào đi nữa, các bài thuốc dân gian chắc chắn sẽ tồn tại trong một thời gian dài."
+	,voca:"",
+},
+{
+	title:"Unit 34 Too Much of a Good Thing? ",
+	en:"Unit 34 Too Much of a Good Thing? <br>\
+M: Hi, Jenny. Are you drinking coffee again?<br>\
+W: Hi, Sam. This is my third cup.<br>\
+M: Are you sure it's all right to drink so much? Don't you think all that caffeine is bad for you?<br>\
+W: No, that's a misconception. Everyone thinks coffee is bad for you, but it's not.<br>\
+M: Really?<br>\
+W: According to an article I read, coffee can be beneficial to your health.<br>\
+M: That's interesting. But you should remember that one study does not prove much. There are a lot of other studies out there, too.<br>\
+W: This doctor in Italy found a lot of benefits.<br>\
+M: Such as?<br>\
+W: She says the chemicals in coffee can be good for your heart and may relieve headaches, too.<br>\
+M: I know that some coffee can be good sometimes, but drinking too much is not beneficial. Coffee has a lot of caffeine, which is addictive. It affects your blood circulation and removes calcium from your bones.<br>\
+W: The doctor did admit that it is not for everyone, and that you shouldn't drink more than three cups a day.<br>\
+M: You seem nervous when you drink a lot. And remember when you told me that you are not sleeping well? Do you think that maybe you should cut back?<br>\
+W: I appreciate your concern. I was thinking of cutting back. Would you like a cup of green tea?"
+	,vi:"Bài 34 Quá nhiều thứ tốt? <br>\
+M: Chào Jenny. Bạn lại uống cà phê à?<br>\
+W: Chào Sam. Đây là cốc thứ ba của tôi.<br>\
+M: Bạn có chắc là uống nhiều như vậy là ổn không? Bạn không nghĩ rằng lượng caffeine đó có hại cho bạn sao? <br>\
+W: Không, đó là một quan niệm sai lầm. Mọi người đều nghĩ rằng cà phê có hại cho bạn, nhưng không phải vậy.<br>\
+M: Thật sao?<br>\
+W: Theo một bài báo tôi đọc, cà phê có thể có lợi cho sức khỏe của bạn.<br>\
+M: Thật thú vị. Nhưng bạn nên nhớ rằng một nghiên cứu không chứng minh được nhiều điều. Ngoài ra còn có rất nhiều nghiên cứu khác nữa.<br>\
+W: Bác sĩ ở Ý này đã tìm ra rất nhiều lợi ích.<br>\
+M: Ví dụ như?<br>\
+W: Cô ấy nói rằng các hóa chất trong cà phê có thể tốt cho tim và cũng có thể làm giảm đau đầu.<br>\
+M: Tôi biết rằng một số loại cà phê đôi khi có thể tốt, nhưng uống quá nhiều thì không có lợi. Cà phê có nhiều caffeine, gây nghiện. Nó ảnh hưởng đến quá trình lưu thông máu và loại bỏ canxi khỏi xương của bạn.<br>\
+W: Bác sĩ đã thừa nhận rằng nó không dành cho tất cả mọi người và bạn không nên uống quá ba cốc mỗi ngày.<br>\
+M: Bạn có vẻ lo lắng khi uống nhiều. Và bạn còn nhớ khi bạn nói với tôi rằng bạn không ngủ ngon không? Bạn có nghĩ rằng có lẽ bạn nên cắt giảm không?<br>\
+W: Tôi rất cảm kích sự quan tâm của bạn. Tôi đang nghĩ đến việc cắt giảm. Bạn có muốn một tách trà xanh không?"
+	,voca:"",
+},
+{
+	title:"Unit 35 Soccer Rules",
+	en:"Unit 35 Soccer Rules<br>\
+Soccer is one of the most popular sports in the world. Although the main idea of the game is easy to understand, there are many rules to be followed.<br>\
+A player gets a yellow card for not following the rules. A yellow card is a warning. If a player keeps breaking the rules, he gets a red card. When this happens, he cannot play anymore. He is ejected from the game.<br>\
+Another rule is about 'handling.' 'Handling' is when another player touches the ball with his hands on purpose. Players cannot handle the ball. A player may not do anything that is dangerous to another player. He cannot kick an opponent’s legs to get the ball.<br>\
+There are also some lesser-known rules. A player is not allowed to impede an opponent. This means that a player cannot purposely slow down another player on the field. A penalty can be called if this occurs. There is a rule about blocking a goalkeeper, too. A yellow card or an indirect kick can be given to the opponent’s team if a player tries this. Yes, soccer is full of rules!"
+	,vi:"Bài 35 Luật bóng đá<br>\
+Bóng đá là một trong những môn thể thao phổ biến nhất trên thế giới. Mặc dù ý tưởng chính của trò chơi rất dễ hiểu, nhưng có rất nhiều luật cần tuân thủ.<br>\
+Một cầu thủ sẽ nhận thẻ vàng vì không tuân thủ luật. Thẻ vàng là một lời cảnh cáo. Nếu một cầu thủ tiếp tục vi phạm luật, anh ta sẽ nhận thẻ đỏ. Khi điều này xảy ra, anh ta không được chơi nữa. Anh ta sẽ bị đuổi khỏi trò chơi.<br>\
+Một luật khác là về 'xử lý'. 'Xử lý' là khi một cầu thủ khác cố tình chạm bóng bằng tay. Các cầu thủ không được xử lý bóng. Một cầu thủ không được làm bất cứ điều gì gây nguy hiểm cho một cầu thủ khác. Anh ta không được đá vào chân đối thủ để lấy bóng.<br>\
+Ngoài ra còn có một số luật ít được biết đến hơn. Một cầu thủ không được phép cản trở đối thủ. Điều này có nghĩa là một cầu thủ không được cố tình làm chậm một cầu thủ khác trên sân. Có thể thổi phạt nếu điều này xảy ra. Cũng có một luật về việc chặn thủ môn. Đội đối phương có thể bị phạt thẻ vàng hoặc đá phạt gián tiếp nếu cầu thủ cố tình làm vậy. Đúng vậy, bóng đá đầy rẫy luật lệ!"
+	,voca:"",
+},
+{
+	title:"Unit 36 Visit Frisco City!",
+	en:"Unit 36 Visit Frisco City!<br>\
+Frisco City is the place for your next vacation. The city has lots of shopping, food, and fun. There are so many things to do! The River Walk is a must-see. Take a city bus to any of the three downtown stops. There, you will find stairs. The stairs go down to the riverside.<br>\
+There are about five kilometers of sidewalk on either side of the river. Palm trees and cypress trees decorate the area. There are also tropical plants. You will see many unique shops, casual cafés, and upscale restaurants. Every shop is different. You can ride one of the riverboats and hear a guide talk about the history of the River Walk.<br>\
+However, the River Walk is only one of the attractions of Frisco City. There are also two amusement parks just outside Frisco City. You can enjoy a day of fun in the sun at Water World Park. You can also spend the day enjoying the roller coasters and other rides at Sun Land.<br>\
+Visit Frisco City! You will have a great time."
+	,vi:"Đơn vị 36 Tham quan Frisco City!<br>\
+Frisco City là nơi lý tưởng cho kỳ nghỉ tiếp theo của bạn. Thành phố có rất nhiều cửa hàng mua sắm, ẩm thực và vui chơi. Có rất nhiều thứ để làm! River Walk là điểm đến không thể bỏ qua. Đi xe buýt thành phố đến bất kỳ điểm dừng nào trong ba điểm dừng ở trung tâm thành phố. Ở đó, bạn sẽ tìm thấy cầu thang. Cầu thang dẫn xuống bờ sông.<br>\
+Có khoảng năm km vỉa hè ở mỗi bên bờ sông. Cây cọ và cây bách trang trí cho khu vực này. Ngoài ra còn có các loại cây nhiệt đới. Bạn sẽ thấy nhiều cửa hàng độc đáo, quán cà phê bình dân và nhà hàng cao cấp. Mỗi cửa hàng đều khác nhau. Bạn có thể đi thuyền trên sông và nghe hướng dẫn viên kể về lịch sử của River Walk.<br>\
+Tuy nhiên, River Walk chỉ là một trong những điểm tham quan của Frisco City. Ngoài ra còn có hai công viên giải trí ngay bên ngoài Frisco City. Bạn có thể tận hưởng một ngày vui chơi dưới ánh nắng mặt trời tại Công viên Water World. Bạn cũng có thể dành cả ngày để tận hưởng tàu lượn siêu tốc và các trò chơi khác tại Sun Land.<br>\
+Ghé thăm Frisco City! Bạn sẽ có khoảng thời gian tuyệt vời."
+	,voca:"",
+},
+{
+	title:"Unit 37 Asking for Directions",
+	en:"Unit 37 Asking for Directions<br>\
+Asking for directions can be risky. I realized exactly how risky it could be when I needed to meet one of my friends one day.<br>\
+A while ago, I arranged to meet my friend at a new mall. My friend had been there before and indicated that we should shop there together. We planned to meet at 3:00 p.m. at Burger Palace in the mall.<br>\
+When I arrived at the mall, I realized I did not know where Burger Palace was, so I asked a woman for directions. She advised me to go straight past the bank, and turn right before the food court. She mentioned that I would walk for a few minutes, passing a shoe store until I reached Burger Palace, which was next to the bookstore. I followed her directions and arrived just in time.<br>\
+Twenty minutes later, I was beginning to wonder where my friend was. Thirty minutes later, I was worried. I did not know what to do, so I just kept waiting. At around 3:40 p.m., I saw my friend walking quickly toward me. I rushed to him and demanded to know what happened. 'I was at the other Burger Palace!' he cried. We had not realized there were two Burger Palaces in the mall.<br>\
+Since then, I have made sure that I get the directions from my friends before I go to meet them. It saves me a lot of trouble!"
+	,vi:"Bài 37 Hỏi đường<br>\
+Hỏi đường có thể rất nguy hiểm. Tôi nhận ra rằng việc đó có thể nguy hiểm như thế nào khi một ngày nào đó tôi cần gặp một người bạn của mình.<br>\
+Cách đây một thời gian, tôi đã sắp xếp để gặp bạn mình tại một trung tâm thương mại mới. Bạn tôi đã từng đến đó trước đó và bảo chúng tôi nên cùng nhau mua sắm ở đó. Chúng tôi đã lên kế hoạch gặp nhau lúc 3:00 chiều tại Burger Palace trong trung tâm thương mại.<br>\
+Khi đến trung tâm thương mại, tôi nhận ra mình không biết Burger Palace ở đâu, vì vậy tôi đã hỏi một người phụ nữ chỉ đường. Cô ấy khuyên tôi đi thẳng qua ngân hàng và rẽ phải trước khu ẩm thực. Cô ấy nói rằng tôi sẽ đi bộ vài phút, đi qua một cửa hàng giày cho đến khi tôi đến Burger Palace, nằm cạnh hiệu sách. Tôi làm theo chỉ dẫn của cô ấy và đến nơi vừa kịp lúc.<br>\
+Hai mươi phút sau, tôi bắt đầu tự hỏi bạn mình đang ở đâu. Ba mươi phút sau, tôi lo lắng. Tôi không biết phải làm gì, vì vậy tôi chỉ tiếp tục chờ. Vào khoảng 3:40 chiều, tôi thấy bạn tôi đang đi nhanh về phía tôi. Tôi chạy đến chỗ bạn tôi và yêu cầu biết chuyện gì đã xảy ra. 'Tôi đã ở Burger Palace kia!' anh ấy hét lên. Chúng tôi đã không biết rằng có hai Burger Palace trong trung tâm thương mại.<br>\
+Kể từ đó, tôi đã đảm bảo rằng mình nhận được chỉ dẫn từ bạn bè trước khi đến gặp họ. Điều đó giúp tôi tiết kiệm được rất nhiều rắc rối!"
+	,voca:"",
+},
+{
+	title:"Unit 38 Fixing a Flat",
+	en:"Unit 38 Fixing a Flat<br>\
+When your car gets a flat tire, do not panic. First, apply your brakes and pull over. Inside the trunk, you will find a spare tire and a toolbox.<br>\
+One of these tools is a jack, which is a tool you use to raise the car. This makes the tire easy to remove. Position the jack beneath the car, behind the tire that is flat. Insert the jack handle and turn it clockwise. Continue turning the handle until the car rises high enough, so that the flat tire is well off the ground and spins freely. Make sure that the jack is securely supporting the vehicle. If the car is unsteady or the jack is unstable, lower the car. Reposition the jack and begin again.<br>\
+Next, use a crowbar to pry off the hubcap (the metal cover on the side of the tire). Inside the hubcap are four bolts that hold the tire in place. Loosen these, using the long L-shaped tool. Push firmly on the tool to get the bolts to turn. It may be difficult.<br>\
+Once the bolts are loose, the flat tire can be pulled off easily. Now you can put on the new tire. Once it is in place, replace the four bolts and tighten them. Place the flat tire and the toolbox back in the trunk.<br>\
+Finally, drive to the nearest service station and get your flat tire fixed!"
+	,vi:"Bài 38 Sửa lốp xe bị xẹp<br>\
+Khi xe bạn bị xẹp lốp, đừng hoảng sợ. Trước tiên, hãy phanh và dừng lại. Bên trong cốp xe, bạn sẽ thấy một lốp dự phòng và một hộp đựng đồ nghề.<br>\
+Một trong những dụng cụ này là kích, đây là dụng cụ bạn dùng để nâng xe lên. Nhờ đó, bạn có thể dễ dàng tháo lốp. Đặt kích bên dưới xe, phía sau lốp xe bị xẹp. Lắp tay cầm kích và xoay theo chiều kim đồng hồ. Tiếp tục xoay tay cầm cho đến khi xe nâng lên đủ cao, sao cho lốp xe xẹp cách xa mặt đất và quay tự do. Đảm bảo kích nâng đỡ xe một cách an toàn. Nếu xe không ổn định hoặc kích không ổn định, hãy hạ xe xuống. Đặt lại vị trí kích và bắt đầu lại.<br>\
+Tiếp theo, dùng xà beng để nạy nắp chụp vành (nắp kim loại ở bên hông lốp). Bên trong nắp chụp vành có bốn bu lông giữ lốp cố định tại chỗ. Nới lỏng chúng bằng dụng cụ hình chữ L dài. Đẩy mạnh dụng cụ để vặn bu lông. Có thể khó.<br>\
+Khi các bu lông đã lỏng, bạn có thể dễ dàng tháo lốp xe bị xẹp. Bây giờ bạn có thể lắp lốp mới. Khi đã lắp xong, hãy lắp lại bốn bu lông và siết chặt chúng. Đặt lốp xe bị xẹp và hộp đựng đồ nghề trở lại cốp xe.<br>\
+Cuối cùng, hãy lái xe đến trạm dịch vụ gần nhất và sửa lốp xe bị xẹp!"
+	,voca:"",
+},
+{
+	title:"Unit 39 The Exchange Rate",
+	en:"Unit 39 The Exchange Rate<br>\
+M: Welcome to the Atlanta International Airport, ma'am. How may I help you?<br>\
+W: I am traveling to Venezuela. Can you tell me what the exchange rate is for the dollar?<br>\
+M: One moment, please, and I will look it up. The currency in Venezuela is the bolivar. The exchange rate is 200 bolivars per dollar.<br>\
+W: That seems rather low. Are you certain that that is all the dollar is worth?<br>\
+M: There may be several local businesses that may exchange for a higher rate, but the official rate is the one I gave you.<br>\
+W: Can I exchange 100 dollars? I need to have some money for a taxi and a hotel once I arrive in Caracas.<br>\
+M: No problem. Here is your money. Would you like a receipt?<br>\
+W: Yes, please. I will need it to keep track of my business expenses.<br>\
+M: Is there anything else I can do for you?<br>\
+W: I just have one more question. Do you know where I can exchange dollars in Venezuela once I arrive? I will probably need more cash, and I<br>\
+want to find a reliable exchange.<br>\
+M: The best place to exchange money is at a large bank. They will always give you the official rate. You can also find money exchange stores in most large cities.<br>\
+W: Wonderful. I will look for a bank. I appreciate your advice.<br>\
+M: My pleasure. I hope you enjoy Venezuela."
+	,vi:"Bài 39 Tỷ giá hối đoái<br>\
+M: Chào mừng đến Sân bay quốc tế Atlanta, thưa bà. Tôi có thể giúp gì cho bà?<br>\
+W: Tôi sắp đi Venezuela. Bà có thể cho tôi biết tỷ giá hối đoái của đô la là bao nhiêu không?<br>\
+M: Xin vui lòng đợi một lát, tôi sẽ tra cứu. Tiền tệ ở Venezuela là bolivar. Tỷ giá hối đoái là 200 bolivar cho một đô la.<br>\
+W: Có vẻ hơi thấp. Bà có chắc rằng đó là tất cả giá trị của đô la không?<br>\
+M: Có thể có một số doanh nghiệp địa phương có thể đổi với tỷ giá cao hơn, nhưng tỷ giá chính thức là tỷ giá tôi đã đưa cho bà.<br>\
+W: Tôi có thể đổi 100 đô la không? Tôi cần một ít tiền để đi taxi và thuê khách sạn khi đến Caracas.<br>\
+M: Không vấn đề gì. Đây là tiền của bà. Bà có muốn biên lai không?<br>\
+W: Vâng, làm ơn. Tôi sẽ cần nó để theo dõi chi phí kinh doanh của mình.<br>\
+M: Tôi có thể giúp gì thêm cho bạn không?<br>\
+W: Tôi chỉ có một câu hỏi nữa thôi. Bạn có biết tôi có thể đổi đô la ở đâu tại Venezuela khi tôi đến nơi không? Tôi có thể sẽ cần thêm tiền mặt và tôi<br>\
+muốn tìm một nơi đổi tiền đáng tin cậy.<br>\
+M: Nơi tốt nhất để đổi tiền là tại một ngân hàng lớn. Họ sẽ luôn cung cấp cho bạn tỷ giá chính thức. Bạn cũng có thể tìm thấy các cửa hàng đổi tiền ở hầu hết các thành phố lớn.<br>\
+W: Tuyệt vời. Tôi sẽ tìm một ngân hàng. Tôi đánh giá cao lời khuyên của bạn.<br>\
+M: Rất vui được giúp bạn. Tôi hy vọng bạn thích Venezuela."
+	,voca:"",
+},
+{
+	title:"Unit 40 The First Nations",
+	en:"Unit 40 The First Nations<br>\
+The First Nations are the people who lived in North America before Europeans migrated there.<br>\
+There is a place in Canada where you can learn about the culture of the First Nations. It is where the First Nations people used to live. Now, a Visitors' Center is there. There is also an archeology lab and walking trails. You can learn about the culture through the displays in the Center. The displays show everyday activities. They show how the people lived.<br>\
+The gift shop in the Visitors' Center sells crafts made by the First Nations people. There are jewelry, paintings, and pottery. You can also eat at the restaurant. Bison meat is in many dishes.<br>\
+There are also wild rice dishes, fruit pies, and traditional bread. All of the food is tasty. <br>\
+The archeology lab is run by the local university. A big window lets you see the archeologists working. They found a very old spearhead. They also found ancient human bones.<br>\
+The First Nations Visitors' Center is a great place. You can learn about the First Nations' culture. You can also see archeologists at work. You can walk on the trails, or enjoy a traditional meal. It is an experience to remember."
+	,vi:"Bài 40 Các quốc gia đầu tiên<br>\
+Các quốc gia đầu tiên là những người đã sống ở Bắc Mỹ trước khi người châu Âu di cư đến đó.<br>\
+Có một nơi ở Canada mà bạn có thể tìm hiểu về văn hóa của các quốc gia đầu tiên. Đó là nơi mà người dân các quốc gia đầu tiên từng sinh sống. Hiện tại, có một Trung tâm du khách ở đó. Ngoài ra còn có một phòng thí nghiệm khảo cổ học và những con đường mòn đi bộ. Bạn có thể tìm hiểu về văn hóa thông qua các màn hình trong Trung tâm. Các màn hình hiển thị các hoạt động hàng ngày. Chúng cho thấy cách người dân sống.<br>\
+Cửa hàng quà tặng trong Trung tâm du khách bán đồ thủ công do người dân các quốc gia đầu tiên làm ra. Có đồ trang sức, tranh vẽ và đồ gốm. Bạn cũng có thể ăn tại nhà hàng. Thịt bò rừng có trong nhiều món ăn.<br>\
+Ngoài ra còn có các món cơm hoang, bánh trái cây và bánh mì truyền thống. Tất cả các món ăn đều ngon. <br>\
+Phòng thí nghiệm khảo cổ học do trường đại học địa phương điều hành. Một cửa sổ lớn cho phép bạn nhìn thấy các nhà khảo cổ học đang làm việc. Họ đã tìm thấy một mũi giáo rất cũ. Họ cũng tìm thấy xương người cổ đại.<br>\
+Trung tâm Du khách của Người bản xứ là một nơi tuyệt vời. Bạn có thể tìm hiểu về văn hóa của Người bản xứ. Bạn cũng có thể xem các nhà khảo cổ học làm việc. Bạn có thể đi bộ trên những con đường mòn hoặc thưởng thức một bữa ăn truyền thống. Đây là một trải nghiệm đáng nhớ."
+	,voca:"display,culture,traditional,archeology,ancient,experience,migrate,trail,spearhead,firecracker",
 }
 ]

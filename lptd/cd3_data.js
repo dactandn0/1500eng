@@ -218,7 +218,7 @@ Which element is the most important? Is it the skill of the artist or the feelin
 Những lần khác, yếu tố là một ký ức hoặc cảm giác. Điều này đến từ bên trong một người khác. Một người nào đó có thể nhìn thấy một bức tranh và được nhắc nhở về một ký ức đẹp. Một bức tranh cũng có thể gợi cho mọi người nhớ đến một cảm giác. Ví dụ, bức Mona Lisa của Leonardo da Vinci rất được ưa chuộng. Nhiều người thích nụ cười của cô ấy. Một số người nói rằng đó là một nụ cười bí ẩn. Những người khác nói rằng đó là một bức tranh hạnh phúc. Những người khác lại bịa ra những câu chuyện về người phụ nữ trong bức tranh.<br>\
 <br>\
 Yếu tố nào là quan trọng nhất? Đó là kỹ năng của nghệ sĩ hay cảm xúc của người xem bức tranh? Dù thế nào đi nữa, một bức tranh nắm bắt được cảm xúc của mọi người đều rất được ưa chuộng."
-,voca:"",
+,voca:"reminded,mysterious,suffering,element,memory,emotions,victim,grab,agree,capture",
 }
 ,
 {
@@ -246,7 +246,7 @@ M: Những người đánh trống rất khéo léo đến nỗi họ có thể 
 B: Tôi muốn nghe điều đó.<br>\
 M: Tại sao bạn không đến trường cao đẳng cộng đồng với tôi vào ngày mai? Một đoàn kịch từ Châu Phi đang tổ chức một buổi hòa nhạc và họ được cho là có những tay trống giỏi nhất thế giới.<br>\
 B: Nghe tuyệt quá!"
-,voca:"troupe",
+,voca:"troupe,imitate,hollow,squeezes,pitch,tightens,skillful,string,pour,arrow,armpit",
 },
 {
 en:"Unit 13 The Hot New Movie<br>\
@@ -260,7 +260,7 @@ Tất nhiên, nam chính của chúng ta đã cứu một người phụ nữ g�
 Anh ta dành phần lớn thời lượng của bộ phim để cố gắng phá hỏng kế hoạch của họ. Một điều bất ngờ khác là chú robot độc ác, Homer, quyết định trở thành một người làm việc thiện. Người bạn đời của anh, Ethel, đã làm việc chăm chỉ để khiến anh quay lại con đường tội lỗi của mình.<br>\
 Liệu Andy Robot có thành công trong việc giải cứu Garrison Fort khỏi tình yêu không? Còn Ethel thì sao? Liệu cô ấy có đưa Homer quay lại con đường tội lỗi của mình không? Để tìm hiểu, hãy đến rạp chiếu phim, mua vé và ngồi xuống thư giãn."
 ,voca:"blockbuster,distress,leading man,martial,art,do-gooder,promptly",
-note:['distress, danger']
+note:'distress|danger'
 },
 {
 en:"Unit 14 A Faux Pas<br>\
@@ -309,7 +309,7 @@ M: Chúng tôi đang cố tìm than củi. Ông có biết đó là gì không v
 W: Than củi là loại gỗ được đốt đặc biệt. Đốt nó sẽ biến nó thành phấn đen. Nó thường được dùng để vẽ. Than củi rất dễ xóa, vì vậy chúng tôi để nó cạnh cục tẩy.<br>\
 G: Vậy là xong, bố!<br>\
 M: Tuyệt! Chúng ta hãy trả tiền cho tất cả những vật dụng này."
-	,voca:"",
+	,voca:"prestigious,locate,recognize,noticed,supplies,commonly,reputation,enormous,charcoal,fountain pen",
 },
 {
 	title:"Unit 16 Family Camping",
@@ -323,7 +323,7 @@ Có nhiều hoạt động giải trí phổ biến, nhưng một trong những 
 Nhiều gia đình thích cắm trại. Đây là cơ hội để cả gia đình cùng nhau làm việc. Họ có thể ở ngoài thiên nhiên. Trẻ em thu thập củi khô để nhóm lửa. Cha mẹ dựng lều. Sau đó, cả gia đình quây quần bên đống lửa. Họ cùng nhau thưởng thức bữa ăn đặc biệt. Sau đó, họ vào rừng với một chiếc la bàn và một bản đồ. Sau khi đi bộ đường dài trên những con đường mòn, mọi người đều nhận được một cần câu. Mỗi người ném dây câu xuống sông. Ai bắt được con cá lớn nhất? Đó là một cuộc thi tuyệt vời.<br>\
 Sau đó, trẻ em làm sạch cá bên bờ sông. Chúng gỡ vảy cá. Mẹ chiên cá trên lửa trại. Bố dọn dẹp khi mọi người đã hoàn thành. Bạn không muốn động vật hoang dã đến ăn đồ ăn thừa của bạn! Sau đó, mọi người sẽ vào lều của mình để nghỉ ngơi qua đêm.<br>\
 Mặc dù có nhiều hoạt động mà các gia đình có thể cùng nhau làm, nhưng cắm trại có lẽ là hoạt động thú vị nhất."
-	,voca:"",
+	,voca:"wild,leisure,casts,chance,compass,leftovers,gather,scale,troupe,retire",
 },
 {
 	title:"Unit 17 The Amusement Park",
@@ -352,7 +352,7 @@ W: Tôi không chắc mình có muốn tham gia trò chơi này nữa không. M:
 W: Tôi xin lỗi, nhưng tôi không nghĩ mình có thể làm được, ngay cả khi mua pizza. Bạn sẽ cảm thấy thế nào nếu tôi mua bữa trưa thay thế?<br>\
 M: Tôi không muốn ép bạn làm điều mà bạn thực sự không muốn làm. Và tôi đói. Được thôi, chúng ta hãy đi ăn trưa.<br>\
 W: Tôi muốn thử nhà hàng mới có tên là Skylight. Phần trên của nhà hàng sẽ quay trong khi bạn ăn!<br>\
-M: Ồ, tuyệt quá! Đi nào!"
+M: Ồ, tuyệt! Đi nào!"
 	,voca:"",
 },
 {
@@ -657,7 +657,7 @@ W: À, cô ấy còn độc thân. Tôi có thể sắp xếp cho hai người. 
 M: Một buổi hẹn hò giấu mặt ư? Tôi đã thử điều đó khi còn trẻ, và đó là một thảm họa.<br>\
 W: Thôi nào, Mike. Tôi sẽ giúp hai người bạn, tất nhiên, họ sẽ có khoảng thời gian tuyệt vời bên nhau. Cô ấy có tính cách quyến rũ, và cô ấy cũng chơi ô-boa. Bạn có thể đến buổi hòa nhạc ở công viên vào chiều thứ bảy. Có lẽ bạn có thể uống cà phê sau đó.<br>\
 M: Cô ấy chơi ô-boa? Được thôi. Hãy cho tôi biết khi nào và ở đâu để gặp cô ấy."
-	,voca:"",
+	,voca:"fiancee,appalling,charming,performance,concert,depressed,miserable,conductor,fabulous,afterwards",
 },
 {
 	title:"Unit 29 Crime Does Not Pay",
@@ -671,7 +671,7 @@ Bạn đã bao giờ nghĩ đến việc phạm tội chưa? Bạn đã bao gi�
 Có rất nhiều câu chuyện trong phim và trên TV về những tên tội phạm kiếm được rất nhiều tiền. Chúng tiếp tục sống một cuộc sống xa hoa. Tuy nhiên, cứ mỗi tên tội phạm thành công thì lại có rất nhiều tên khác thất bại. Những tên tội phạm này sớm hối hận về tội ác của mình.<br>\
 Lấy ví dụ về một người đàn ông ở Winnipeg đã cố đột nhập vào những chiếc ô tô trong bãi đậu xe của học viện cảnh sát. Cảnh sát đã tìm thấy người đàn ông đó trong bãi đậu xe. Họ thấy anh ta cố mở cửa tất cả các xe. Người đàn ông đó hy vọng tìm thấy một ít tiền lẻ, hoặc có thể lấy một số dàn âm thanh nổi tốt trên ô tô.<br>\
 Tuy nhiên, anh ta không biết rằng mình đang bị cảnh sát theo dõi. Anh ta chọn bãi đậu xe vì đó là một khu vực rất yên tĩnh. Anh ta nghĩ rằng sẽ không có ai nhìn thấy mình. Anh ta đã sớm bị cảnh sát bắt giữ. Một tên tội phạm ngu ngốc như người đàn ông này cho chúng ta thấy rằng tội ác không mang lại lợi ích gì."
-	,voca:"",
+	,voca:"committing,fail,arrested,criminal,luxury,regret,crook,guilty,gourmet,effort",
 },
 {
 	title:"Unit 30 A Job Interview",

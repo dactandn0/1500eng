@@ -3,6 +3,7 @@
 document.write('<script src="./lptd/cd1_data.js" type="text/javascript"></script>');
 document.write('<script src="./lptd/cd2_data.js" type="text/javascript"></script>');
 document.write('<script src="./lptd/cd3_data.js" type="text/javascript"></script>');
+document.write('<script src="./lptd/cd4_data.js" type="text/javascript"></script>');
 
 var app = angular.module("lptdApp", []);
 app.controller("lptdCtrl", function($scope, $rootScope, $timeout ) {
@@ -17,7 +18,7 @@ radioCDChange = function (cd) {
 		case 1: kSTORIES = lptd_cd1_stories; break;
 		case 2: kSTORIES = lptd_cd2_stories; break;
 		case 3: kSTORIES = lptd_cd3_stories; break;
-		case 4: kSTORIES = []; break;
+		case 4: kSTORIES = lptd_cd4_stories; break;
 	}
 	Helper_saveDB("lptd_cd", cd);
 	$scope.cd = cd;

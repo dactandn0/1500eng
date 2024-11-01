@@ -1,119 +1,119 @@
 
 const lptd_cd1_stories = [
 {
-	title: 'Unit 1 A Picnic by the River',
-	en: 
-	"Unit 1 A Picnic by the River<br>\
-	W: This is a good spot. Let's stop and have our picnic next to the river. <br>\
-	M: Good idea. Walking always makes me hungry. I'm ready for lunch.<br>\
-	W: We can sit here on the grass. Oh no! Someone forgot to throw these empty paper bags away. There is litter everywhere!<br>\
-	M: Why do people always leave litter around? It's not a nice thing to do. It spoils other people's picnics.<br>\
-	W: I think they are lazy. Or maybe they just don't care. Look, there are some empty cans and glass bottles under that tree, too. <br>\
-	M: People should clean up before they leave, and not leave litter lying around. <br>\
-	W: That's right. Well, after our picnic, let's pick up all the litter we can and take it out of here.<br>\
-	M: OK! And next week, let's come back with friends and pick up some more.<br>\
-	W: Good idea!",
-	vi: 
-	'Bài 1 Dã ngoại bên bờ sông<br>\
-	W: Đây là một địa điểm tốt. Chúng ta hãy dừng lại và dã ngoại bên bờ sông.<br>\
-	M: Ý tưởng hay. Đi bộ luôn khiến tôi đói. Tôi đã sẵn sàng cho bữa trưa.<br>\
-	W: Chúng ta có thể ngồi đây trên bãi cỏ. Ôi không! Có người quên vứt những chiếc túi giấy rỗng này đi. Rác ở khắp mọi nơi!<br>\
-	M: Tại sao mọi người luôn vứt rác khắp nơi? Đó không phải là một điều tốt đẹp. Nó làm hỏng buổi dã ngoại của người khác.<br>\
-	W: Tôi nghĩ họ lười biếng. Hoặc có thể họ chỉ không quan tâm. Nhìn kìa, có một số lon rỗng và chai thủy tinh dưới gốc cây đó nữa.<br>\
-	M: Mọi người nên dọn dẹp trước khi rời đi, và không để rác nằm xung quanh.<br>\
-	W: Đúng vậy. Vâng, sau buổi dã ngoại của chúng ta, chúng ta hãy nhặt hết rác có thể và mang chúng ra khỏi đây.<br>\
-	M: Được! Và tuần tới, chúng ta hãy quay lại với bạn bè và nhặt thêm một số.<br>\
-	W: Ý tưởng hay!',
-	voca:'lunch,litter,hungry,empty,picnic,throw,spot,spoil,lie,pick up'
+title: 'Unit 1 A Picnic by the River',
+en: 
+"Unit 1 A Picnic by the River<br>\
+W: This is a good spot. Let's stop and have our picnic next to the river. <br>\
+M: Good idea. Walking always makes me hungry. I'm ready for lunch.<br>\
+W: We can sit here on the grass. Oh no! Someone forgot to throw these empty paper bags away. There is litter everywhere!<br>\
+M: Why do people always leave litter around? It's not a nice thing to do. It spoils other people's picnics.<br>\
+W: I think they are lazy. Or maybe they just don't care. Look, there are some empty cans and glass bottles under that tree, too. <br>\
+M: People should clean up before they leave, and not leave litter lying around. <br>\
+W: That's right. Well, after our picnic, let's pick up all the litter we can and take it out of here.<br>\
+M: OK! And next week, let's come back with friends and pick up some more.<br>\
+W: Good idea!",
+vi: 
+'Bài 1 Dã ngoại bên bờ sông<br>\
+W: Đây là một địa điểm tốt. Chúng ta hãy dừng lại và dã ngoại bên bờ sông.<br>\
+M: Ý tưởng hay. Đi bộ luôn khiến tôi đói. Tôi đã sẵn sàng cho bữa trưa.<br>\
+W: Chúng ta có thể ngồi đây trên bãi cỏ. Ôi không! Có người quên vứt những chiếc túi giấy rỗng này đi. Rác ở khắp mọi nơi!<br>\
+M: Tại sao mọi người luôn vứt rác khắp nơi? Đó không phải là một điều tốt đẹp. Nó làm hỏng buổi dã ngoại của người khác.<br>\
+W: Tôi nghĩ họ lười biếng. Hoặc có thể họ chỉ không quan tâm. Nhìn kìa, có một số lon rỗng và chai thủy tinh dưới gốc cây đó nữa.<br>\
+M: Mọi người nên dọn dẹp trước khi rời đi, và không để rác nằm xung quanh.<br>\
+W: Đúng vậy. Vâng, sau buổi dã ngoại của chúng ta, chúng ta hãy nhặt hết rác có thể và mang chúng ra khỏi đây.<br>\
+M: Được! Và tuần tới, chúng ta hãy quay lại với bạn bè và nhặt thêm một số.<br>\
+W: Ý tưởng hay!',
+voca:'lunch,litter,hungry,empty,picnic,throw,spot,spoil,lie,pick up'
 },
 {
-	title: "Unit 2 Let's Recycle!",
-	en: 
-	"Unit 2 Let's Recycle!<br>\
-	M: Hi, Jane! Have you heard about the new laws to help people recycle?<br>\
-	W: I heard about them on the news last night. I don't think I like them.<br>\
-	M: The government wants to keep the environment clean by recycling paper, metal, and glass instead of throwing these things away. <br>\
-	W: But who wants to pay an extra 50 cents each time you buy a cup of coffee? That's a lot of money!<br>\
-	M: 50 cents? It's only five cents extra for a paper cup. <br>\
-	W: I thought it was 50 cents! <br>\
-	M: No, it's only five cents. Don't worry. And you can get your money back when you return the cup. <br>\
-	W: That's fair. Well, maybe the government is right, after all. I'll return all the paper coffee cups I use from now on.<br>\
-	M: Good! We all need to recycle. It helps to keep the environment clean.",
-	vi: 
-	'Bài 2 Hãy tái chế!<br>\
-	M: Chào Jane! Bạn đã nghe về luật mới để giúp mọi người tái chế chưa?<br>\
-	W: Tôi nghe về chúng trên bản tin tối qua. Tôi không nghĩ là tôi thích chúng.<br>\
-	M: Chính phủ muốn giữ cho môi trường sạch sẽ bằng cách tái chế giấy, kim loại và thủy tinh thay vì vứt những thứ này đi.<br>\
-	W: Nhưng ai muốn trả thêm 50 xu mỗi lần mua một cốc cà phê? Thật là nhiều tiền!<br>\
-	M: 50 xu? Chỉ mất thêm năm xu cho một cốc giấy.<br>\
-	W: Tôi nghĩ là 50 xu!<br>\
-	M: Không, chỉ năm xu thôi. Đừng lo. Và bạn có thể lấy lại tiền khi trả lại cốc.<br>\
-	W: Công bằng mà. Vâng, có lẽ chính phủ đúng, sau cùng. Tôi sẽ trả lại tất cả các cốc cà phê giấy mà tôi sử dụng từ bây giờ.<br>\
-	M: Tốt! Tất cả chúng ta đều cần tái chế. Điều đó giúp giữ môi trường sạch.',
-	voca:'recycle,environment,government,extra,return,law,fair,instead of,after all'
+title: "Unit 2 Let's Recycle!",
+en: 
+"Unit 2 Let's Recycle!<br>\
+M: Hi, Jane! Have you heard about the new laws to help people recycle?<br>\
+W: I heard about them on the news last night. I don't think I like them.<br>\
+M: The government wants to keep the environment clean by recycling paper, metal, and glass instead of throwing these things away. <br>\
+W: But who wants to pay an extra 50 cents each time you buy a cup of coffee? That's a lot of money!<br>\
+M: 50 cents? It's only five cents extra for a paper cup. <br>\
+W: I thought it was 50 cents! <br>\
+M: No, it's only five cents. Don't worry. And you can get your money back when you return the cup. <br>\
+W: That's fair. Well, maybe the government is right, after all. I'll return all the paper coffee cups I use from now on.<br>\
+M: Good! We all need to recycle. It helps to keep the environment clean.",
+vi: 
+'Bài 2 Hãy tái chế!<br>\
+M: Chào Jane! Bạn đã nghe về luật mới để giúp mọi người tái chế chưa?<br>\
+W: Tôi nghe về chúng trên bản tin tối qua. Tôi không nghĩ là tôi thích chúng.<br>\
+M: Chính phủ muốn giữ cho môi trường sạch sẽ bằng cách tái chế giấy, kim loại và thủy tinh thay vì vứt những thứ này đi.<br>\
+W: Nhưng ai muốn trả thêm 50 xu mỗi lần mua một cốc cà phê? Thật là nhiều tiền!<br>\
+M: 50 xu? Chỉ mất thêm năm xu cho một cốc giấy.<br>\
+W: Tôi nghĩ là 50 xu!<br>\
+M: Không, chỉ năm xu thôi. Đừng lo. Và bạn có thể lấy lại tiền khi trả lại cốc.<br>\
+W: Công bằng mà. Vâng, có lẽ chính phủ đúng, sau cùng. Tôi sẽ trả lại tất cả các cốc cà phê giấy mà tôi sử dụng từ bây giờ.<br>\
+M: Tốt! Tất cả chúng ta đều cần tái chế. Điều đó giúp giữ môi trường sạch.',
+voca:'recycle,environment,government,extra,return,law,fair,instead of,after all'
 },
 {
-	title:"Unit 3 Growing Roses",
-	en:
-	"Unit 3 Growing Roses<br>\
-	M: Excuse me, ma'am. I have a problem with my rose bush. It used to produce a lot of pink roses. But now it doesn't produce any flowers at all.<br>\
-	W: I see. That does seem like a problem. Do the leaves on the plant look healthy? <br>\
-	M: Not really. The leaves used to be very green. Now, most of them have turned brown.<br>\
-	W: Well, I think your rose bush needs some fertilizer.<br>\
-	M: OK. What sort of fertilizer do you think I should use? <br>\
-	W: This liquid fertilizer is very good. It will help make your rose leaves green again. Then the plant should produce roses quite soon. The fertilizer costs about ten dollars.<br>\
-	M: How long will it take for my rose bush to recover?<br>\
-	W: About two weeks, I think. <br>\
-	M: Great. I'll take it. Thank you so much for your help.<br>\
-	W: You're welcome!",
-	vi:
-	"Bài 3 Trồng hoa hồng<br>\
-	M: Xin lỗi, thưa bà. Tôi có vấn đề với cây hoa hồng của tôi. Trước đây nó từng ra rất nhiều hoa hồng màu hồng. Nhưng bây giờ nó không ra hoa nữa.<br>\
-	W: Tôi hiểu rồi. Có vẻ như đó là vấn đề. Lá trên cây có khỏe không?<br>\
-	M: Không hẳn. Lá trước đây rất xanh. Bây giờ, hầu hết đã chuyển sang màu nâu.<br>\
-	W: Vâng, tôi nghĩ bụi hoa hồng của bà cần một ít phân bón.<br>\
-	M: Được. Bà nghĩ tôi nên sử dụng loại phân bón nào?<br>\
-	W: Loại phân bón dạng lỏng này rất tốt. Nó sẽ giúp làm cho lá hoa hồng của anh xanh trở lại. Sau đó, cây sẽ sớm ra hoa hồng. Loại phân bón này có giá khoảng mười đô la.<br>\
-	M: Phải mất bao lâu để cây hoa hồng của tôi phục hồi?<br>\
-	W: Tôi nghĩ là khoảng hai tuần.<br>\
-	M: Tuyệt. Tôi sẽ dùng. Cảm ơn bà rất nhiều vì đã giúp đỡ.<br>\
-	W: Không có gì!",
-	voca: "bush,problem,leaf,liquid,recover,ferilizer,produce,quite,cost,at all"
+title:"Unit 3 Growing Roses",
+en:
+"Unit 3 Growing Roses<br>\
+M: Excuse me, ma'am. I have a problem with my rose bush. It used to produce a lot of pink roses. But now it doesn't produce any flowers at all.<br>\
+W: I see. That does seem like a problem. Do the leaves on the plant look healthy? <br>\
+M: Not really. The leaves used to be very green. Now, most of them have turned brown.<br>\
+W: Well, I think your rose bush needs some fertilizer.<br>\
+M: OK. What sort of fertilizer do you think I should use? <br>\
+W: This liquid fertilizer is very good. It will help make your rose leaves green again. Then the plant should produce roses quite soon. The fertilizer costs about ten dollars.<br>\
+M: How long will it take for my rose bush to recover?<br>\
+W: About two weeks, I think. <br>\
+M: Great. I'll take it. Thank you so much for your help.<br>\
+W: You're welcome!",
+vi:
+"Bài 3 Trồng hoa hồng<br>\
+M: Xin lỗi, thưa bà. Tôi có vấn đề với cây hoa hồng của tôi. Trước đây nó từng ra rất nhiều hoa hồng màu hồng. Nhưng bây giờ nó không ra hoa nữa.<br>\
+W: Tôi hiểu rồi. Có vẻ như đó là vấn đề. Lá trên cây có khỏe không?<br>\
+M: Không hẳn. Lá trước đây rất xanh. Bây giờ, hầu hết đã chuyển sang màu nâu.<br>\
+W: Vâng, tôi nghĩ bụi hoa hồng của bà cần một ít phân bón.<br>\
+M: Được. Bà nghĩ tôi nên sử dụng loại phân bón nào?<br>\
+W: Loại phân bón dạng lỏng này rất tốt. Nó sẽ giúp làm cho lá hoa hồng của anh xanh trở lại. Sau đó, cây sẽ sớm ra hoa hồng. Loại phân bón này có giá khoảng mười đô la.<br>\
+M: Phải mất bao lâu để cây hoa hồng của tôi phục hồi?<br>\
+W: Tôi nghĩ là khoảng hai tuần.<br>\
+M: Tuyệt. Tôi sẽ dùng. Cảm ơn bà rất nhiều vì đã giúp đỡ.<br>\
+W: Không có gì!",
+voca: "bush,problem,leaf,liquid,recover,ferilizer,produce,quite,cost,at all"
 },
 {
-	en: "Unit 4 Bird Watching<br>\
-	B : I want to go bird watching tomorrow. Do you know a good area for birds?<br>\
-	G : There is a quiet park near here. There are always many beautiful birds there. <br>\
-	B : Will I be able to see different types of birds in this area?<br>\
-	G : Yes, I think so. If you use binoculars, you can see the birds, even if they are far away.<br>\
-	B : Great! I have a book about all the different types of birds.<br>\
-	G : It seems as if you really like bird watching.<br>\
-	B : Yes, I do! Would you like to come with me tomorrow?<br>\
-	G : No, thank you. I think bird watching is boring.<br>\
-	B : That's not true! Birds are very interesting. Some birds have colorful feathers. Some birds sing beautiful songs. Some birds make special nests to lay eggs in.<br>\
-	G : Really? Maybe I will go bird watching one day after all!",
-	vi:
-	"Bài 4 Ngắm chim<br>\
-	B: Ngày mai tôi muốn đi ngắm chim. Bạn có biết khu vực nào thích hợp để ngắm chim không?<br>\
-	G: Có một công viên yên tĩnh gần đây. Luôn có nhiều loài chim đẹp ở đó.<br>\
-	B: Tôi có thể nhìn thấy nhiều loài chim khác nhau ở khu vực này không?<br>\
-	G: Có, tôi nghĩ là có. Nếu bạn sử dụng ống nhòm, bạn có thể nhìn thấy những chú chim, ngay cả khi chúng ở rất xa.<br>\
-	B: Tuyệt! Tôi có một cuốn sách về tất cả các loài chim khác nhau.<br>\
-	G: Có vẻ như bạn thực sự thích ngắm chim.<br>\
-	B: Có, tôi thích! Bạn có muốn đi cùng tôi vào ngày mai không?<br>\
-	G: Không, cảm ơn. Tôi nghĩ ngắm chim rất nhàm chán.<br>\
-	B: Không đúng! Chim rất thú vị. Một số loài chim có bộ lông sặc sỡ. Một số loài chim hót những bài hát hay. Một số loài chim làm tổ đặc biệt để đẻ trứng.<br>\
-	G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim sau tất cả!",
-	voca:"area,feathers,tomorrow,park,boring,binoculars,as if,nest,lay"
+en: "Unit 4 Bird Watching<br>\
+B : I want to go bird watching tomorrow. Do you know a good area for birds?<br>\
+G : There is a quiet park near here. There are always many beautiful birds there. <br>\
+B : Will I be able to see different types of birds in this area?<br>\
+G : Yes, I think so. If you use binoculars, you can see the birds, even if they are far away.<br>\
+B : Great! I have a book about all the different types of birds.<br>\
+G : It seems as if you really like bird watching.<br>\
+B : Yes, I do! Would you like to come with me tomorrow?<br>\
+G : No, thank you. I think bird watching is boring.<br>\
+B : That's not true! Birds are very interesting. Some birds have colorful feathers. Some birds sing beautiful songs. Some birds make special nests to lay eggs in.<br>\
+G : Really? Maybe I will go bird watching one day after all!",
+vi:
+"Bài 4 Ngắm chim<br>\
+B: Ngày mai tôi muốn đi ngắm chim. Bạn có biết khu vực nào thích hợp để ngắm chim không?<br>\
+G: Có một công viên yên tĩnh gần đây. Luôn có nhiều loài chim đẹp ở đó.<br>\
+B: Tôi có thể nhìn thấy nhiều loài chim khác nhau ở khu vực này không?<br>\
+G: Có, tôi nghĩ là có. Nếu bạn sử dụng ống nhòm, bạn có thể nhìn thấy những chú chim, ngay cả khi chúng ở rất xa.<br>\
+B: Tuyệt! Tôi có một cuốn sách về tất cả các loài chim khác nhau.<br>\
+G: Có vẻ như bạn thực sự thích ngắm chim.<br>\
+B: Có, tôi thích! Bạn có muốn đi cùng tôi vào ngày mai không?<br>\
+G: Không, cảm ơn. Tôi nghĩ ngắm chim rất nhàm chán.<br>\
+B: Không đúng! Chim rất thú vị. Một số loài chim có bộ lông sặc sỡ. Một số loài chim hót những bài hát hay. Một số loài chim làm tổ đặc biệt để đẻ trứng.<br>\
+G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim sau tất cả!",
+voca:"area,feathers,tomorrow,park,boring,binoculars,as if,nest,lay"
 },
 {
 en:"Unit 5 Trees in the Forest<br>\
-	B : There are many forests in North America. There are many trees in these forests. Some of these trees are more than two hundred feet tall.<br>\
-	Some are over five hundred years old. Several kinds of trees grow in these forests. Fir, cedar, and pine are three. These trees grow in different areas.\
-	Some grow in forests. Some grow on the mountains. People who lived in this place long ago used these trees to make things out of wood.\
-	 Many of these trees are now in special areas. These areas are called forest reserves or national parks. Some parks charge a small entrance fee.\
-	  Visitors must pay the fee to enter the parks. Then they can walk among the beautiful old trees.\
-	   They must take care not to damage the trees. We should all take care of forests."
+B : There are many forests in North America. There are many trees in these forests. Some of these trees are more than two hundred feet tall.<br>\
+Some are over five hundred years old. Several kinds of trees grow in these forests. Fir, cedar, and pine are three. These trees grow in different areas.\
+Some grow in forests. Some grow on the mountains. People who lived in this place long ago used these trees to make things out of wood.\
+ Many of these trees are now in special areas. These areas are called forest reserves or national parks. Some parks charge a small entrance fee.\
+  Visitors must pay the fee to enter the parks. Then they can walk among the beautiful old trees.\
+   They must take care not to damage the trees. We should all take care of forests."
 ,
 vi:"Bài 5 Cây trong rừng<br>\
 B: Có nhiều khu rừng ở Bắc Mỹ. Có nhiều cây trong những khu rừng này. Một số cây này cao hơn hai trăm feet.<br>\
@@ -135,7 +135,7 @@ B : Wow! It looks cool! Where did you buy it?<br>\
 G : I bought it online at an electronics website. <br>\
 B : I'm not very good at using a computer. Is it hard to buy things online?<br>\
 G : It's really easy. All you do is go to the website, and choose the item you want to look at. There are so many items to choose from on the website!\
- After you choose what you want to buy, you click on the 'check out' button. <br>\
+After you choose what you want to buy, you click on the 'check out' button. <br>\
 B : That does seem easy!<br>\
 G : Yes, it is. It only takes about a week for your item to come. Of course, if you are in a hurry, you can pay more to get it sent faster.<br>\
 B : Do you pay for the item when it comes?<br>\
@@ -153,18 +153,18 @@ voca:"website,item,button,easy,electronics,hard,faster,credit card"
 },
 {
 en: "Unit 7 Cell Phone Messages<br>\
-	W: I need to check my messages.<br>\
-	M: How are you going to do that? We are in the middle of the freeway!<br>\
-	W: I'm going to use my cell phone. Haven't you ever done that?<br>\
-	M: No. I just use my cell phone to talk to other people.<br>\
-	W: Now you can also use a cell phone to send and receive short text messages. It's very useful.<br>\
-	M: How do you send a message that way?<br>\
-	W: I just use the keys on the phone to type a short message. Then I press the 'send' button. It's cheaper than making a phone call.<br>\
-	M: That's a great idea! You can save both time and money that way. <br>\
-	W: Right. All my friends usually send me text messages now. <br>\
-	M: Thanks for telling me about this. I'll have to try it!<br>\
-	W: You're welcome. I think you'll find it useful.",
- vi:
+W: I need to check my messages.<br>\
+M: How are you going to do that? We are in the middle of the freeway!<br>\
+W: I'm going to use my cell phone. Haven't you ever done that?<br>\
+M: No. I just use my cell phone to talk to other people.<br>\
+W: Now you can also use a cell phone to send and receive short text messages. It's very useful.<br>\
+M: How do you send a message that way?<br>\
+W: I just use the keys on the phone to type a short message. Then I press the 'send' button. It's cheaper than making a phone call.<br>\
+M: That's a great idea! You can save both time and money that way. <br>\
+W: Right. All my friends usually send me text messages now. <br>\
+M: Thanks for telling me about this. I'll have to try it!<br>\
+W: You're welcome. I think you'll find it useful.",
+vi:
 "Bài 7 Tin nhắn trên điện thoại di động<br>\
 W: Tôi cần kiểm tra tin nhắn của mình.<br>\
 M: Bạn định làm thế nào? Chúng ta đang ở giữa đường cao tốc!<br>\
@@ -182,15 +182,15 @@ W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích."
 {
 en:"Unit 8 Bubbles in Boiling Water<br>\
 G : Where do the bubbles come from when you boil water? Water is a liquid. When it is heated, it moves around faster and faster.\
- When it starts to boil, the liquid turns into a gas. This gas is called water vapor. This gas is lighter than the water around it.\
- It rises to the top. Then it disappears into the air. turning into gas very quickly. A lot of bubbles form at the same time.\
-  All these bubbles try to escape at once. The bubbles push the water out of the way and 'jump' out. This is what we call 'boiling water.' More and more water turns into gas. More of it disappears into the air. After a while, every drop of the water will be gone. Try it and see!"
+When it starts to boil, the liquid turns into a gas. This gas is called water vapor. This gas is lighter than the water around it.\
+It rises to the top. Then it disappears into the air. turning into gas very quickly. A lot of bubbles form at the same time.\
+All these bubbles try to escape at once. The bubbles push the water out of the way and 'jump' out. This is what we call 'boiling water.' More and more water turns into gas. More of it disappears into the air. After a while, every drop of the water will be gone. Try it and see!"
 ,
 vi:"Bài 8 Bong bóng trong nước sôi<br>\
 G: Bong bóng xuất hiện từ đâu khi bạn đun sôi nước? Nước là chất lỏng. Khi được đun nóng, nó di chuyển xung quanh ngày càng nhanh hơn.\
- Khi bắt đầu sôi, chất lỏng chuyển thành khí. Khí này được gọi là hơi nước. Khí này nhẹ hơn nước xung quanh nó.\
-  Nó nổi lên trên. Sau đó, nó biến mất vào không khí. Khi nước ngày càng nóng hơn, nó bắt đầu biến thành khí rất nhanh.\
-   Rất nhiều bong bóng hình thành cùng một lúc. Tất cả những bong bóng này đều cố gắng thoát ra cùng một lúc. Các bong bóng đẩy nước ra và 'nhảy' ra ngoài. Đây là những gì chúng ta gọi là 'nước sôi'.Càng ngày càng nhiều nước chuyển thành khí. Càng nhiều nước biến mất vào không khí. Sau một thời gian, từng< giọt nước sẽ biến mất. Hãy thử và xem!",
+Khi bắt đầu sôi, chất lỏng chuyển thành khí. Khí này được gọi là hơi nước. Khí này nhẹ hơn nước xung quanh nó.\
+Nó nổi lên trên. Sau đó, nó biến mất vào không khí. Khi nước ngày càng nóng hơn, nó bắt đầu biến thành khí rất nhanh.\
+Rất nhiều bong bóng hình thành cùng một lúc. Tất cả những bong bóng này đều cố gắng thoát ra cùng một lúc. Các bong bóng đẩy nước ra và 'nhảy' ra ngoài. Đây là những gì chúng ta gọi là 'nước sôi'.Càng ngày càng nhiều nước chuyển thành khí. Càng nhiều nước biến mất vào không khí. Sau một thời gian, từng< giọt nước sẽ biến mất. Hãy thử và xem!",
 voca:"gas,disappear,escape,boil,bubble(s),drop,vapor,quick,push,turn into"
 },
 {
@@ -260,7 +260,7 @@ Chúng ta cũng coi trọng vàng vì vàng rất hiếm. Một thứ hiếm r�
 voca:"gold,value,beauty,metal,jewelry,rare,shape,precious,form,bar"
 },
 {
-	en:"Unit 12 The Summer Music Festival<br>\
+en:"Unit 12 The Summer Music Festival<br>\
 W: Have you heard about the music festival next summer? I read that it is going to have about 20 different bands playing in it.<br>\
 M: I think I did hear someone talking about it. Are you planning on going?<br>\
 W: I'll go if I can get tickets. I heard that people are going to line up overnight to get tickets. I might line up overnight, too.<br>\
@@ -281,7 +281,7 @@ M: Nhiều tiền quá! Tôi không nghĩ là mình muốn chi nhiều tiền nh
 voca:"spend,ticket,overnight,festival,band,miss,each,line up,anyway"
 },
 {
-	en:"Unit 13 The School Play<br>\
+en:"Unit 13 The School Play<br>\
 B : Are you going to the school play on Saturday night?<br>\
 G : The school play? I didn't know there was going to be a play on Saturday night.<br>\
 B : Yes, I heard about it in English class yesterday. I think it will be really good.<br>\
@@ -311,7 +311,7 @@ G: Thật tuyệt! Chúng ta hãy đi sớm để có được chỗ ngồi tố
 voca:"play,guess,early,hope,boring,watch,last"
 },
 {
-	en:"Unit 14 Ballet Class<br>\
+en:"Unit 14 Ballet Class<br>\
 W: Hi Cindy, where are you going?<br>\
 G : Good afternoon, Mrs. White, I'm going to ballet class.<br>\
 W: Ballet class? I didn't know you were studying ballet. How long have you been studying ballet?<br>\
@@ -333,12 +333,12 @@ W: Thôi, hãy đi và vui vẻ khiêu vũ nhé!",
 voca:"ballet,practice,learn,dance,street,graceful,age,step,course,enjoy"
 },
 {
-	en:"Unit 15 Monet's Garden<br>\
+en:"Unit 15 Monet's Garden<br>\
 W: Claude Monet was a great artist. He was the first of a group of artists called the Impressionists. This group of artists thought about how things in the world made them feel. They tried to show this in their work. This way of painting shows how light can change shapes and colors. Monet did a lot of his work outdoors. He wanted to show how daylight made things look.<br>\
 Many of his paintings are of gardens. He liked to paint flowers and trees. He loved to paint in his own garden. His garden was in a village. He lived there for many years.<br>\
 Today, many visitors come each year to this garden. They come from all over the world. Most of them are art lovers or artists. They come to see the place that Monet loved so much."
 , 
- vi: "Bài 15 Khu vườn của Monet<br>\
+vi: "Bài 15 Khu vườn của Monet<br>\
 W: Claude Monet là một nghệ sĩ vĩ đại. Ông là người đầu tiên trong nhóm nghệ sĩ được gọi là Trường phái Ấn tượng. Nhóm nghệ sĩ này nghĩ về cách mọi thứ trên thế giới khiến họ cảm thấy.<br>\
 Họ đã cố gắng thể hiện điều này trong tác phẩm của mình. Cách tranh này cho thấy ánh sáng có thể thay đổi hình dạng và màu sắc như thế nào.<br>\
 Monet đã thực hiện nhiều tác phẩm của mình ngoài trời. Ông muốn thể hiện cách ánh sáng ban ngày làm cho mọi thứ trông như thế nào.<br>\
@@ -395,7 +395,7 @@ M: Trước tiên, tôi phải tiết kiệm một ít tiền để mua TV. Ph�
 voca:"screen,never,afford,living,room,soccer,field,save,come over"
 }
 ,{
-	en:"Unit 18 He's famous!<br>\
+en:"Unit 18 He's famous!<br>\
 B : Are you going to the new Tim Cross movie tonight?<br>\
 G : I don't know. It looks kind of boring.<br>\
 B : Really? I think it looks quite interesting. Besides, Tim Cross is a famous actor.<br>\
@@ -493,7 +493,7 @@ voca:"minutes,word,essay,hand,let"
 }
 ,
 {
-	en:"Unit 22 After School Activities<br>\
+en:"Unit 22 After School Activities<br>\
 B : Will you play any sports this school year?<br>\
 G : I want to play hockey. But I'm not sure if I will have enough time.<br>\
 B : I'm on the school soccer team. I'm also going to take up swimming. <br>\
@@ -519,7 +519,7 @@ voca:"soccer,busy,weekend,during,swimming,enough,free,thunderstorm,hockey,school
 }
 ,
 {
-	en:"Unit 23 Arts and Crafts Class<br>\
+en:"Unit 23 Arts and Crafts Class<br>\
 G : Hi, Mom, I'm back from arts and crafts class. Look at what I'm wearing.<br>\
 W: Well, you're wearing a blue T-shirt and jeans.<br>\
 G : Sure, but what else am I wearing?<br>\
@@ -542,7 +542,7 @@ G: Tuần tới, tôi sẽ làm một chiếc vòng cổ.",
 voca:"earring,jewelry,necklace,bead,a lot of fun,transparent,plastic,wire,bracelet"
 },
 {
-	en:"Unit 24 Grandfather's Birthday<br>\
+en:"Unit 24 Grandfather's Birthday<br>\
 B : Hi, Mom! Guess what? We got our English test back today. I got the highest score in my class! <br>\
 W: Oh, Billy, I'm glad you did so well! You worked hard for that test. <br>\
 B : Thanks, Mom. I'm hungry. What's for dinner?<br>\
@@ -567,7 +567,7 @@ W: Khi bố đi làm về.",
 voca:"Guess what,Anyway,aunt,uncle,cousin,Grandpa,whole,attend,wrap,gift"
 },
 {
-	en:"Unit 25 The Lesson<br>\
+en:"Unit 25 The Lesson<br>\
 W: There was once a man who lived with his two sons. The two sons were always fighting with each other. One day, the man decided to teach his sons a lesson.<br>\
 The man gave his younger son two large sticks. He told the boy to break them. The boy tried hard, but he could not break the sticks. The older son also could not break the sticks. At last, the man gave only one stick to each son. He said, 'Break them.' Each son broke his stick easily. <br>\
 The man said, 'You are like these sticks. If you work together, no one can break you. But if you fight with each other all the time, one day, someone will break both of you.' <br>\
@@ -607,7 +607,7 @@ W: Đừng lo lắng. Công việc của bạn có thể vẫn còn trên máy t
 }
 ,
 {
-	en:"Unit 27 My Future Job<br>\
+en:"Unit 27 My Future Job<br>\
 G : What do you want to be when you grow up, Mark?<br>\
 B : I want to be a teacher. I think I would like to help children learn.<br>\
 G : Well, you know, teachers work very hard, and they are not paid much money.<br>\
@@ -630,7 +630,7 @@ G: Con cũng muốn làm giáo viên. Nhưng tôi muốn dạy tiếng Anh chứ
 voca:"job,mathematics,favorite,subject,art,examination,grow,up,would like to,learning fun"
 },
 {
-	en:"Unit 28 Shopping<br>\
+en:"Unit 28 Shopping<br>\
 W: We are having a summer sale. Everything is 50% off the normal price.<br>\
 M: Really? Everything?<br>\
 W: Yes. Everything is on sale, including sunglasses, hats, and bags. All the summer clothes are on sale, too.<br>\
@@ -655,7 +655,7 @@ M: Không, cảm ơn. Tôi nghĩ tôi sẽ chỉ đến Super Glasses thôi!",
 voca:"sale,price,sunglasses,normal,clothes,protect,drop off"
 },
 {
-	en:"Unit 29 A Part-time Job<br>\
+en:"Unit 29 A Part-time Job<br>\
 B : I want to find a part-time job. Do you have any ideas about where I should look for work?<br>\
 W: Have you looked in the newspaper? There are lots of job advertisements in the newspaper.<br>\
 B : Yes, I have. But there were no jobs I was interested in.<br>\
@@ -678,7 +678,7 @@ B: Điều đó sẽ rất hữu ích. Cảm ơn!",
 voca:"internet,search,interested,advertisement,newspaper,list,part-time,missing,posting,right away"
 },
 {
-	en:"Unit 30 Teamwork<br>\
+en:"Unit 30 Teamwork<br>\
 G : When people work together as a team, they can achieve a lot. You can easily get things done when you share the work.<br>\
 We practice teamwork in my family. Both my parents have jobs. My father is a doctor. My mother is a teacher. Both of them work long hours all week. My brother is a student at college.<br>\
 I am a student in school. We all have very busy lives. So, when it comes to household chores, we all work together to get them done.<br>\
@@ -716,12 +716,12 @@ M: Cô ấy đã làm khá tốt! Cô ấy không phải là người chạy nha
 voca:"marathon,runners,difficult,fifty,race,lucky,entire,in the top 50,by the way,take part"
 },
 {
-	en:"Unit 32 Racquetball<br>\
+en:"Unit 32 Racquetball<br>\
 B : Racquetball is a popular sport. It was first played in the US. This game started just a little more than 50 years ago. That makes it quite a new sport.<br>\
 Other racket sports like tennis and squash have been played for a long time. Racquetball rules are a mix of rules from both handball and squash. A short racket is used to play this game.<br>\
 This game became popular almost at once when it first came out. More and more people wanted to play it. Clubs began to build racquetball courts. They built these courts for players of this new sport.<br>\
 People of all ages can play this game. But most players today are young people. Most of them are between the ages of 12 and 34. Racquetball is now a famous sport. It is played all over the world.",
-	vi:"Bài 32 Bóng vợt<br>\
+vi:"Bài 32 Bóng vợt<br>\
 B: Bóng vợt là một môn thể thao phổ biến. Môn này lần đầu tiên được chơi ở Hoa Kỳ. Môn này bắt đầu cách đây hơn 50 năm một chút. Điều đó khiến nó trở thành một môn thể thao khá mới.<br>\
 Các môn thể thao vợt khác như quần vợt và bóng quần đã được chơi trong một thời gian dài. Luật chơi bóng vợt là sự kết hợp giữa luật chơi bóng ném và bóng quần. Một cây vợt ngắn được sử dụng để chơi trò chơi này.<br>\
 Trò chơi này trở nên phổ biến ngay khi mới ra mắt. Ngày càng có nhiều người muốn chơi. Các câu lạc bộ bắt đầu xây dựng sân bóng vợt. Họ xây dựng những sân này cho những người chơi môn thể thao mới này.<br>\
@@ -729,7 +729,7 @@ Mọi người ở mọi lứa tuổi đều có thể chơi trò chơi này. Nh
 voca:"tennis,between,sport,racket,rules,bookmark,squash,Australia,all over"
 },
 {
-	en:"Unit 33 Summer Sports<br>\
+en:"Unit 33 Summer Sports<br>\
 B : Hi, Alice. What have you been doing? You look tired.<br>\
 G : I stayed up late last night to watch the Olympics. We won a gold medal for men's basketball. We also won the silver medal for women's tennis.<br>\
 B : That's great! What about gymnastics?<br>\
@@ -741,7 +741,7 @@ G : I like to watch baseball. Maybe I can come and watch your team play some tim
 B : We have a game this weekend. Why don't you come and watch us play in the park?<br>\
 G : Sure! Just let me know what time the game starts. See you later.<br>\
 B : Bye!",
-	vi:"Bài 33 Thể thao mùa hè<br>\
+vi:"Bài 33 Thể thao mùa hè<br>\
 B: Chào Alice. Bạn đã làm gì thế? Trông bạn có vẻ mệt mỏi.<br>\
 G: Tôi thức khuya đêm qua để xem Thế vận hội. Chúng ta đã giành huy chương vàng bóng rổ nam. Chúng ta cũng đã giành huy chương bạc quần vợt nữ.<br>\
 B: Tuyệt quá! Còn thể dục dụng cụ thì sao?<br>\
@@ -756,7 +756,7 @@ B: Tạm biệt!",
 voca:"medal,baseball,silver,ceremony,tired,women,gymnastics,invite,stay up"
 },
 {
-	en:"Unit 34 Inline Skating<br>\
+en:"Unit 34 Inline Skating<br>\
 B : Oh! My legs are so sore!<br>\
 G : Really? What did you do during the weekend?<br>\
 B : I went inline skating with my friends at the park. <br>\
@@ -768,7 +768,7 @@ G : Actually, I also went inline skating. I go every weekend with my father. We 
 B : Wow! How can you skate so far? Your muscles must be really strong.<br>\
 G : I've been skating for three years now. You could skate that far, too. You just need to build up your muscles. Let's go skating together next weekend.<br>\
 B : OK!",
-	vi:"Bài 34 Trượt patin<br>\
+vi:"Bài 34 Trượt patin<br>\
 B: Ôi! Chân mình đau quá!<br>\
 G: Thật sao? Bạn đã làm gì vào cuối tuần vậy?<br>\
 B: Mình đã đi trượt patin với bạn bè ở công viên. <br>\
@@ -783,13 +783,13 @@ B: Được thôi!",
 voca:"skate,kilometer,scared,muscles,sore,strong,throat,catch,cold,gas,station,build up"
 },
 {
-	en:"Unit 35 The Olympics<br>\
+en:"Unit 35 The Olympics<br>\
 W: The Olympic Games are a famous world sports event. These games are held once in four years. There are summer games and winter games.<br>\
 People come from countries all over the world to compete in the games. These games started a long time ago in Greece. In those days, only men took part in them. There were only a few sports events.<br>\
 Now, women take part in the Olympic Games, too. There are team sports, like basketball.<br>\
 There are martial arts, like judo. More and more types of sports are in the games each time they are held.<br>\
 It is very hard to win a medal at these games. Only world champions take part in the Olympics. Those who compete must work hard for years. Their bodies must be very fit. They must be the best to win medals in these games.",
-	vi:"Bài 35 Thế vận hội Olympic<br>\
+vi:"Bài 35 Thế vận hội Olympic<br>\
 W: Thế vận hội Olympic là sự kiện thể thao nổi tiếng thế giới. Các trò chơi này được tổ chức bốn năm một lần. Có các trò chơi mùa hè và mùa đông.<br>\
 Mọi người đến từ khắp các quốc gia trên thế giới để tham gia các trò chơi. Các trò chơi này bắt đầu từ rất lâu trước đây ở Hy Lạp. Vào thời đó, chỉ có đàn ông tham gia. Chỉ có một vài sự kiện thể thao.<br>\
 Bây giờ, phụ nữ cũng tham gia Thế vận hội Olympic. Có các môn thể thao đồng đội, như bóng rổ.<br>\
@@ -798,7 +798,7 @@ Rất khó để giành được huy chương tại các trò chơi này. Chỉ 
 voca:"champion,martial,arts,event,compete,hold,fit,fall,allow"
 },
 {
-	en:"Unit 36 A Bicycle Trip<br>\
+en:"Unit 36 A Bicycle Trip<br>\
 M: I'm planning to go on a bicycle trip around Europe.<br>\
 W: Why do you want to go on a bicycle trip?<br>\
 M: It is an environmentally friendly way to travel. <br>\
@@ -809,7 +809,7 @@ M: I need road maps of the countries I am going to visit. I also need strong bag
 W: Are you traveling with another person?<br>\
 M: Yes, I am going with a friend of mine. He likes bicycle trips.<br>\
 W: I wish I could go on a bicycle trip, too! Well, don't get too many flat tires!",
-	vi:"Bài 36 Chuyến đi bằng xe đạp<br>\
+vi:"Bài 36 Chuyến đi bằng xe đạp<br>\
 M: Tôi đang có kế hoạch đi xe đạp vòng quanh châu Âu.<br>\
 W: Tại sao bạn muốn đi xe đạp?<br>\
 M: Đây là cách đi lại thân thiện với môi trường. <br>\
@@ -823,7 +823,7 @@ W: Tôi cũng ước mình có thể đi xe đạp! Vâng, đừng để lốp x
 voca:"equipment,person,tire,environmentally,in order to,borrow,flat"
 },
 {
-	en:"Unit 37 Driving Down South<br>\
+en:"Unit 37 Driving Down South<br>\
 B : Isn't it great that there aren't any classes on Monday? We have a three-day weekend!<br>\
 G : That's right! Do you have any special plans?<br>\
 B : My family is taking a trip to Las Cruces. I'm really looking forward to it. Have you ever been there?<br>\
@@ -836,7 +836,7 @@ B : It only takes about four hours by car if you use the freeway and drive direc
 G : That certainly makes for an easy trip. When are you leaving?<br>\
 B : We're going on Saturday morning. We'll be back on Monday evening.<br>\
 G : Have a nice time! Bring me some pecans!",
-	vi:"Bài 37 Lái xe xuống phía Nam<br>\
+vi:"Bài 37 Lái xe xuống phía Nam<br>\
 B : Thật tuyệt khi không có lớp học nào vào thứ Hai phải không? Chúng ta có một kỳ nghỉ cuối tuần kéo dài ba ngày!<br>\
 G : Đúng rồi! Bạn có kế hoạch đặc biệt nào không?<br>\
 B : Gia đình tôi sẽ đi du lịch đến Las Cruces. Tôi thực sự mong chờ chuyến đi đó. Bạn đã từng đến đó chưa?<br>\
@@ -853,7 +853,7 @@ voca:"south,nut,pecan,bring,makes for,looking forward to",
 note:"nut = seed = bead = corn"
 },
 {
-	en:"Unit 38 The Travel Agent<br>\
+en:"Unit 38 The Travel Agent<br>\
 W: I want to go on a trip to China.<br>\
 M: How long do you want to stay?<br>\
 W: Four or five days. <br>\
@@ -863,7 +863,7 @@ M: Well, you'll fly directly to Beijing. Your tour guide will meet you at the ai
 W: That sounds great! What sort of transport will we use to get from one place to another?<br>\
 M: You will take a bus with your tour group. <br>\
 W: OK. Can I book this package tour now? There will be five of us going on this trip.<br>M: Sure!",
-	vi:"Bài 38 Đại lý du lịch<br>\
+vi:"Bài 38 Đại lý du lịch<br>\
 W: Tôi muốn đi du lịch Trung Quốc.<br>\
 M: Bạn muốn ở lại bao lâu?<br>\
 W: Bốn hoặc năm ngày. <br>\
@@ -876,7 +876,7 @@ W: Được. Tôi có thể đặt tour du lịch trọn gói này ngay bây gi�
 voca:"airport,a lot of sightseeing,hotel,transport,landmark,package,tour,guide,Forbidden City,Great Wall,Summer Palace,one place to another"
 },
 {
-	en:"Unit 39 Taking the Train<br>\
+en:"Unit 39 Taking the Train<br>\
 M: You're so lucky, Marian. You're leaving for Hawaii in five hours! I never travel because I hate flying in airplanes. I don't like buses, either.<br>\
 W: That doesn't matter, Dean. There are other ways to get around. You should take the train somewhere.<br>\
 M: That's true. It's been a long time since I last traveled. I've always wanted to take a long train trip.<br>\
@@ -886,7 +886,7 @@ W: I'm not sure what train fares are like now. I think it depends on your destin
 M: Can you suggest a good person to talk to?<br>\
 W: My travel agent is always very helpful. Here is his phone number.<br>\
 M: Thanks! I'll call him right now. Where's the phone?",
-	vi:"Bài 39 Đi tàu hỏa<br>\
+vi:"Bài 39 Đi tàu hỏa<br>\
 M: Bạn thật may mắn, Marian. Bạn sẽ khởi hành đến Hawaii trong năm giờ nữa! Tôi không bao giờ đi du lịch vì tôi ghét đi máy bay. Tôi cũng không thích xe buýt.<br>\
 W: Điều đó không quan trọng, Dean. Có những cách khác để đi lại. Bạn nên đi tàu hỏa đến một nơi nào đó.<br>\
 M: Đúng vậy. Đã lâu rồi tôi không đi du lịch. Tôi luôn muốn đi tàu hỏa một chuyến dài.<br>\
@@ -899,13 +899,13 @@ M: Cảm ơn! Tôi sẽ gọi cho anh ấy ngay bây giờ. Điện thoại đâ
 voca:"destination,suggest,question,fare,matter,depend,travel agent"
 },
 {
-	en:"Unit 40 Go on a Cruise!<br>\
+en:"Unit 40 Go on a Cruise!<br>\
 M: Are you sick of long road trips in a car? Do you find long trips in an airplane boring? Do you want to travel in a special way? You should take a cruise to all the places you would like to see!<br>\
 Go by cruise ship to the northeast part of the US! Go late in the year. Then, you can enjoy the colors of the autumn leaves on the trees. It is a beautiful sight.<br>\
 Do you like to look at man-made wonders?<br>\
 Go on a cruise to the Panama Canal! Do you want to see icebergs? Do you want to look at seals and whales? Go on a cruise to Alaska!<br>\
 Wherever you may choose to go, a cruise is a great way to travel. Book a trip on a cruise ship today! You will love it!",
-	vi:"Bài 40 Đi du thuyền!<br>\
+vi:"Bài 40 Đi du thuyền!<br>\
 M: Bạn có thấy chán những chuyến đi dài trên ô tô không? Bạn có thấy những chuyến đi dài trên máy bay thật nhàm chán không? Bạn có muốn đi du lịch theo cách đặc biệt không? Bạn nên đi du ngoạn đến tất cả những nơi bạn muốn đến!<br>\
 Đi du thuyền đến vùng đông bắc Hoa Kỳ! Đi vào cuối năm. Khi đó, bạn có thể ngắm nhìn những màu sắc của lá mùa thu trên cây. Thật là một cảnh tượng tuyệt đẹp.<br>\
 Bạn có thích ngắm nhìn những kỳ quan nhân tạo không?<br>\

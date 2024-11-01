@@ -50,14 +50,15 @@ $scope.fetchStory = function (idx, reset=true)
 	// save DB
 	Helper_saveDB("collinsL_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
-	
 	$scope.story = processStory($scope.story);
+	
+	/*
 	var story = $scope.story
 	story.enShow = story.enShow.replaceAll('Candidate', '<b>Candidate</b>');
 	story.viShow = story.viShow.replaceAll('Ứng viên', '<b>Ứng viên</b>');
 	story.enShow = story.enShow.replaceAll('Examiner', '<b>Examiner</b>');
 	story.viShow = story.viShow.replaceAll('Giám khảo', '<b>Giám khảo</b>');
-
+	*/
 }
 
 $scope.loadData = function () {

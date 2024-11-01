@@ -3,16 +3,16 @@ const bridge_cd1 = [
 {
 	idx: "1.T1.1",
 	en: 
-	"Апа: Hello, Sergei<br>\
-Sergei: Hi, Апа! How are you?<br>\
-Апа: I'm fine, thanks. And you?<br>\
+	"Ana: Hello, Sergei<br>\
+Sergei: Hi, Ana! How are you?<br>\
+Ana: I'm fine, thanks. And you?<br>\
 Sergei: I'm very well, thanks.<br>\
-Апа: Sergei, this is Eva. Shе's from Argentina.<br>\
+Ana: Sergei, this is Eva. Shе's from Argentina.<br>\
 Eva: Hello, Sergei, Nice to meet уоu.<br>\
 Sergei: Nice to meet уоu too! I'm from Russia.<br>\
 Eva: Are уоu а new student?<br>\
 Sergei: Yes, I am,<br>\
-Eva: I'm а пеw student too!",
+Eva: I'm а nеw student too!",
 	vi: 
 	'Ana: Xin chào, Sergei<br>\
 Sergei: Xin chào, Sergei! Bạn khỏe không?<br>\
@@ -28,27 +28,27 @@ Eva: Tôi cũng là sinh viên mới!'
 {
 	idx: "1.T1.2",
 	en: 
-	"Fouad: Hello. I'm а new student. I'm here for the пеw students meeting.<br>\
+	"Fouad: Hello. I'm а new student. I'm here for the nеw students meeting.<br>\
 Agnes: Hi! Welcome to O-Week! Whаt's your subject?<br>\
 Fоuаd: Chemistry. I'm in the science department.<br>\
-Agnes: Yоu'rе the first student to arrive at the meeting! I'm your student host. Му паmе's Agnes. Whаt's your паmе?<br>\
+Agnes: Yоu'rе the first student to arrive at the meeting! I'm your student host. Му nаmе's Agnes. Whаt's your nаmе?<br>\
 Fоuаd: Fоuаd. I'm from Saudi Arabia, I'm Saudi, nice to meet уоu, Agnes!<br>\
 Agnes: Nice to meet you too, Fouad!<br>\
 Fоuаd: Are you from Australia?<br>\
-Agnes: Not, I'm not. I'm а student here in МеlЬоurпе but I'm from Gеrmапу - I'm Gеrmап,<br>\
-Fоuаd: Oh. Whеrе are уоu from in Gеrmапу?<br>\
+Agnes: Not, I'm not. I'm а student here in МеlЬоurnе but I'm from Gеrmаnу - I'm Gеrmаn,<br>\
+Fоuаd: Oh. Whеrе are уоu from in Gеrmаnу?<br>\
 Agnes: Berlin,<br>\
-Fоuаd: Berlin? Is Berlin the capital of Сеrmапу?<br>\
-Аяпеs: Yes, it is. Oh, excuse mе, Неrе's another new student, Fouad, this is Yibo, Yibo, this is Fouad. Yibo's а science student too.<br>\
+Fоuаd: Berlin? Is Berlin the capital of Сеrmаnу?<br>\
+Аяnеs: Yes, it is. Oh, excuse mе, Неrе's another new student, Fouad, this is Yibo, Yibo, this is Fouad. Yibo's а science student too.<br>\
 Fоuаd: Hi, Yibo. Nice to meet you.<br>\
 Yibo: Hello, Fouad. Nice to meet уоu too.<br>\
 Fоuаd: Where аrе you from, Yibo?<br>\
 Yibo: I'm from China. I'm frоm Beijing.<br>\
 Fоuаd: Really? Му Ьrоthеr is а student in Beijing. Не thinks Chinese food is very good!<br>\
 Yibo: Yes, it is. It's very nice.<br>\
-Agnes: Australian food is very good too. There's а free Barbie afthe student uпiоп carnival оп Friday.<br>\
+Agnes: Australian food is very good too. There's а free Barbie afthe student uniоn carnival оn Friday.<br>\
 Fоuаd / Yibo: 'Barbie'?<br>\
-Asnes: Oh! I'm sorry! 'Barbie' is ап informal word for 'Barbeque' in Australia. We cook meat, or fish, or vеgеtаbеs outside over а fire.<br>\
+Asnes: Oh! I'm sorry! 'Barbie' is аn informal word for 'Barbeque' in Australia. We cook meat, or fish, or vеgеtаbеs outside over а fire.<br>\
 Fоuаd: I'd like to go, What about you, Yibo?<br>\
 Yibo: Yes, please!<br>\
 Agnes: ОК, thаt's great. Now, lеt's just wait for а few mоrе students to arrive and then we can start оur tour of the campus!",
@@ -60,7 +60,7 @@ Agnes: Bạn là sinh viên đầu tiên đến dự buổi họp! Tôi là sinh
 Fouad: Fouad. Tôi đến từ Ả Rập Xê Út, tôi là người Ả Rập Xê Út, Rất vui được gặp bạn, Agnes!<br>\
 Agnes: Rất vui được gặp bạn, Fouad!<br>\
 Fоuаd: Bạn đến từ Úc à?<br>\
-Agnes: Không, tôi không phải. Tôi là sinh viên ở đây tại МеlЬоurпе nhưng tôi đến từ Đức - Tôi là người Đức,<br>\
+Agnes: Không, tôi không phải. Tôi là sinh viên ở đây tại МеlЬоurnе nhưng tôi đến từ Đức - Tôi là người Đức,<br>\
 Fоuаd: Ồ. Bạn đến từ đâu ở Đức?<br>\
 Agnes: Berlin,<br>\
 Fоuаd: Berlin? Berlin có phải là thủ đô của Đức không?<br>\

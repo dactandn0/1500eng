@@ -276,7 +276,7 @@ function testIng(word) {
 }
 
 
- testLy('incredible')
+// testLy('incredible')
 // testEST('small')
 // testEST('bad')
 // testEST('near')

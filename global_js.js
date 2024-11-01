@@ -25,12 +25,12 @@ function MYLOG(msg) {
 }
 
 RANGE = function(min, max, step) {
-    step = step || 1;
-    var input = [];
-    for (var i = min; i <= max; i += step) {
-        input.push(i);
-    }
-    return input;
+	step = step || 1;
+	var input = [];
+	for (var i = min; i <= max; i += step) {
+		input.push(i);
+	}
+	return input;
 };
 
 document.write('<small class="note">\
@@ -72,14 +72,14 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 
 function ngClickOnWord(word, graph) {
 	if (word.trim().length == 0) return graph // safe
-	const tagOpen = '<span ng-click="Idx_n_L_WSp_($event)">'
+		const tagOpen = '<span ng-click="Idx_n_L_WSp_($event)">'
 	if (ValidateWord(word) 
 		&& word !=='br'
 		&& word !=='hr'
 		&& UNCOUNT_TAG_BEGIN.indexOf(word) === -1
 		&& tagOpen.indexOf(word) === -1
 		) 
-  	{
+	{
 		const tagClose = '</span>'
 		var regex = new RegExp(`\\b${word}\\b` , 'g')
 		return graph.replace(regex, tagOpen + word + tagClose);
@@ -101,14 +101,14 @@ function processStory (story) {
 			voca = voca.replace(/\[.*\]/g, '').trim();
 			var regex = new RegExp(`\\b${voca}\\b` , 'g')
 			if (voca!='event')
-			enShow = enShow.replace(regex, '<b>' + voca + '</b>');
+				enShow = enShow.replace(regex, '<b>' + voca + '</b>');
 		}
 	}
 
 	var words = story.en.match(/\b(\w+)('ll)*\b/g);
 	var dones = []
 	for (var i = 0; i < words.length; i++) {
-	  	var word = words[i];
+		var word = words[i];
 		if (!isInArr(word, dones)) {
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
@@ -117,34 +117,41 @@ function processStory (story) {
 		}
 	}
 	var enAndVi = ''
-    var sentencesEn = enShow.split('<br>');
-    var sentencesVi = story.vi.split('<br>');
-  	for (var i = 0; i < sentencesEn.length; i++) {
-  		viii = sentencesVi[i].replace(/^(B|G|W|M)\d*\s*\:+\s*/gi, '')
-  		enAndVi += sentencesEn[i] + ' <i class="text-primary">(' + viii  + ')</i><br>'
-  	}
-  	
-  	story.viShow = enAndVi
+	var viii = ''
+	var sentencesEn = enShow.split('<br>');
+	var sentencesVi = '';
+	if (story.vi) sentencesVi = story.vi.split('<br>');
+	if (sentencesEn.length === sentencesVi.length) {
+		for (var i = 0; i < sentencesEn.length; i++) {
+			if (sentencesVi[i]) {
+				viii = '(' + sentencesVi[i].trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '') + ')'
+			}
+
+			enAndVi += sentencesEn[i] + ' <i class="text-primary">' + viii  + '</i><br>'
+		}
+	}
+	
+	story.viShow = enAndVi
 	story.enShow = enShow
 
 	return story;
 }
 
 function removeVietnameseTones(str) {
-	    str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
-	    str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
-	    str = str.replace(/ì|í|ị|ỉ|ĩ/g,"i"); 
-	    str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"); 
-	    str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"); 
-	    str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"); 
-	    str = str.replace(/đ/g,"d");
-	    str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
-	    str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
-	    str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
-	    str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
-	    str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
-	    str = str.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
-	    str = str.replace(/Đ/g, "D");
+	str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
+	str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
+	str = str.replace(/ì|í|ị|ỉ|ĩ/g,"i"); 
+	str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"); 
+	str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"); 
+	str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"); 
+	str = str.replace(/đ/g,"d");
+	str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
+	str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
+	str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
+	str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
+	str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
+	str = str.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
+	str = str.replace(/Đ/g, "D");
 	    // Some system encode vietnamese combining accent as individual utf-8 characters
 	    // Một vài bộ encode coi các dấu mũ, dấu chữ như một kí tự riêng biệt nên thêm hai dòng này
 	    str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, ""); // ̀ ́ ̃ ̉ ̣  huyền, sắc, ngã, hỏi, nặng
@@ -157,48 +164,50 @@ function removeVietnameseTones(str) {
 	    // Bỏ dấu câu, kí tự đặc biệt
 	    str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g," ");
 	    return str;
-}
-
-
-function getLastWord(splitChar, string) {
-	var str = string.split(splitChar);
-	return str[str.length - 1];
-}
-
-function deleteLastWord(splitChar, string) {
-	if (!string.includes(splitChar)) return string;
-	var lastW = getLastWord(splitChar, string)
-	return string.replace(splitChar + lastW, "");
-}
-
-function ValidateWord(word, minL = 2) 
-{	
-	var exceptTag = 'bui'   // allow <B><u><i> in story.en Data
-	var result = true;
-	word = word.trim().toLowerCase();
-
-	if (exceptTag.indexOf(word) !== -1) return false;
-	if (!isAsciiString(word)) result = false;
-
-	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];
-	for (var i = 0; i < arr.length; i++) {
-		var bList = arr[i];
-		if (word.indexOf(bList) >= 0) {
-			result = false;
-		}
 	}
-	return result;
+
+
+	function getLastWord(splitChar, string) {
+		var str = string.split(splitChar);
+		return str[str.length - 1];
+	}
+
+	function deleteLastWord(splitChar, string) {
+		if (!string.includes(splitChar)) return string;
+		var lastW = getLastWord(splitChar, string)
+		return string.replace(splitChar + lastW, "");
+	}
+
+	function ValidateWord(word, minL = 2) 
+	{	
+	var reg = /^[^\d]$/;   // length = 1 but not digit
+	if (word.match(reg)) return false
+	var exceptTag = 'bui'   // allow <B><u><i> in story.en Data
+var result = true;
+word = word.trim().toLowerCase();
+
+if (exceptTag.indexOf(word) !== -1) return false;
+if (!isAsciiString(word)) result = false;
+
+let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];
+for (var i = 0; i < arr.length; i++) {
+	var bList = arr[i];
+	if (word.indexOf(bList) >= 0) {
+		result = false;
+	}
+}
+return result;
 }
 
 // for word3000.js
 function _scrollIntoView(idx) {
-var ele = document.getElementsByClassName("scroll")[idx];
-setTimeout(function () {
-	if (ele)
-	   ele.scrollIntoView({
-	       behavior: "smooth",
-	       block: "start",
-	   });
+	var ele = document.getElementsByClassName("scroll")[idx];
+	setTimeout(function () {
+		if (ele)
+			ele.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			});
 	}, 100);
 }
 
@@ -208,51 +217,51 @@ preprocess();
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  let mybutton = document.getElementById("btn_back_to_top");
-  
-  if (!mybutton) return;
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+	let mybutton = document.getElementById("btn_back_to_top");
+	
+	if (!mybutton) return;
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
 }
 
 
 function shuffle(array) {
-  return array.sort(function() {
-    return .5 - Math.random();
-  });
+	return array.sort(function() {
+		return .5 - Math.random();
+	});
 }
 
 function isAsciiString(text) {
 	var tiengViet = ['giao','vui','trong', 'bao', 'kinh', 'tinh']
 	var r = /^[\x00-\x7F]+$/g.test(text) && !isInArr(r, tiengViet);
-    return r;
+	return r;
 } 
 
 function Helper_GetVocaFromWordFull(wordFull) {
-  wordFull = Helper_RemoveHTMLtag(wordFull);
-  var splitW = wordFull.trim().split(" ");
-  var result = "";
-  for (var i = 0; i < splitW.length; i++) {
-  	  var part = splitW[i].trim();
-  	  if (ValidateWord(part)) 
-  	  	result = result + " " + part;
-  	  else break;
-  }
-  return result.trim();
+	wordFull = Helper_RemoveHTMLtag(wordFull);
+	var splitW = wordFull.trim().split(" ");
+	var result = "";
+	for (var i = 0; i < splitW.length; i++) {
+		var part = splitW[i].trim();
+		if (ValidateWord(part)) 
+			result = result + " " + part;
+		else break;
+	}
+	return result.trim();
 }
 
 // arrow up scroll
 topFunction = function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 
 function ArrayRemove(arr, eleName) {
 	return arr.filter((item) => {
-    	return item !== eleName
+		return item !== eleName
 	});
 }
 
@@ -273,20 +282,20 @@ Helper_ngClickWordSpeak = function (event) {
 
 function Text2Speech(word) {
 	if (!UtterEnd) return;
-	 speechSynthesis.getVoices();
-	 const utter = new SpeechSynthesisUtterance(word);
-	 utter.text = word;
-	 utter.rate  = Helper_AudioSpeed;
-	 utter.volume  = Helper_AudioVolume;
-	 utter.lang='en-US';
+	speechSynthesis.getVoices();
+	const utter = new SpeechSynthesisUtterance(word);
+	utter.text = word;
+	utter.rate  = Helper_AudioSpeed;
+	utter.volume  = Helper_AudioVolume;
+	utter.lang='en-US';
 
-	 utter.addEventListener('end', (evt) => {
-			const { charIndex, utterance } = evt
-				UtterEnd = true;
-		})
+	utter.addEventListener('end', (evt) => {
+		const { charIndex, utterance } = evt
+		UtterEnd = true;
+	})
 
-	 speechSynthesis.speak(utter);
-	 UtterEnd = false;
+	speechSynthesis.speak(utter);
+	UtterEnd = false;
 }
 
 Helper_SliceHalfString = function (str) {

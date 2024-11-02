@@ -26,7 +26,8 @@
 	<br>
 
 <select ng-model="selectedVoiceIdx" ng-change="saveSelectedVoiceIdx()">
+		  <option ng-value="-1">Nope</option>
           <option ng-value="$index" ng-repeat="voice in VOICES">
-			{{voice.name}}
+			{{voice.name}} - {{voice.lang}}
 		 </option>
 </select>

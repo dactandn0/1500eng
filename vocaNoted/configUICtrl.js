@@ -7,7 +7,7 @@ app.controller("configUICtrl", function($scope) {
 
 $scope.audioSpeed = 0.8
 $scope.adjAudioTime = 8
-$scope.selectedVoiceIdx = 4
+$scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
 
 $scope.setAudioSpeed = function () {
@@ -24,6 +24,7 @@ $scope.saveSelectedVoiceIdx = function () {
 
 $scope.loadDB = function () {
 	$scope.VOICES = Helper_Voices
+//	console.log(Helper_Voices)
 	$scope.audioSpeed = Helper_loadFloat(Helper_AudioSpdKey, 0.8)
 	$scope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, 4)

@@ -337,7 +337,9 @@ function Text2Speech(word) {
 	utter.rate  = Helper_loadFloat(Helper_AudioSpdKey, 1);
 	utter.volume  = 1;
 	utter.lang='en-US';
-	utter.voice= Helper_Voices[Helper_loadInt(Helper_SelectedVoiceIdx, 4)];
+	var selectedVoice = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
+	if (selectedVoice !== -1)
+	utter.voice= Helper_Voices[selectedVoice];
 
 	utter.addEventListener('end', (evt) => {
 		const { charIndex, utterance } = evt

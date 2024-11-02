@@ -38,6 +38,7 @@ vi:"Bài 2 Con voi thật tuyệt vời<br>\
 voca:"India,evil,far apart,cooperate,cruel,trunk"
 },
 {
+title:"Unit 3 Ants, Ants, Everywhere!",
 en:"Unit 3 Ants, Ants, Everywhere!<br>\
 G: Hello, Mrs. Wilson. How are you?<br>\
 W: I'm worried, Brianna. Thousands of ants are all over my patio!<br>\
@@ -90,6 +91,7 @@ voca:"overflow,efficient,terrifying,flood,rainforest,collect,supply,harvest,trop
 }
 ,
 {
+title:"Unit 6 Research",
 en:"Unit 6 Research<br>\
 W: What are you doing, Billy?<br>\
 B: I'm doing research. I found a lot of great websites.<br>\
@@ -146,6 +148,7 @@ W: Tôi sẽ lấy nó.",
 voca:"specific,warranty,digit,personal,solar,basic,replace,fancy,kit,customer"
 },
 {
+title:"Unit 8 Racing Robots",
 en:"Unit 8 Racing Robots<br>\
 - I have been interested in robots for as long as I can remember. The first thing I did when I entered high school was join the Robotech robot-making club. We get together after school every day and create our own robots. Nowadays it is very easy to find kits to build your own robot and these are what we use.<br>\
 <br>\
@@ -161,6 +164,7 @@ vi:"Bài 8 Đua Robot<br>\
 voca:"create,annual,design,robot,secret,highlight,maze,fine,nowadays,competition"
 },
 {
+title:"Unit 9 Online Chatting",
 en:"Unit 9 Online Chatting<br>\
 W: Philip, are you still chatting online? It's 9:30 pm. You have an exam tomorrow.<br>\
 B: Yes, Mom. I'll get off in a minute.<br>\

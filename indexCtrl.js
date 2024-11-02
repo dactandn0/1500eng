@@ -323,16 +323,16 @@ app.directive('compile', ['$compile', function ($compile) {
 // https://github.com/Foxandxss/angular-toastr
 app.config(function(toastrConfig) {
   angular.extend(toastrConfig, {
-    autoDismiss: false,
+    autoDismiss: true,
     containerId: 'toast-container',
     maxOpened: 0,    
     newestOnTop: true,
     positionClass: 'toast-bottom-center',
-    preventDuplicates: false,
+    preventDuplicates: true,
     preventOpenDuplicates: false,
     target: 'body',
     timeOut: 5000,
-    tapToDismiss: false,
+    tapToDismiss: true,
   });
 });
 

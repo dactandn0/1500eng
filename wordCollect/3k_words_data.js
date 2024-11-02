@@ -534,11 +534,8 @@ Display (n,v) /dɪˈspleɪ/ Trưng bày"
 },
 {
 title:"Entertainment",
-en:"Circus (n) /ˈsɜː.kəs/ Rạp xiếc<br>\
-Orchestra (n) /ˈɔː.kɪ.strə/ Ban nhạc, dàn nhạc<br>\
-Scene (n) /siːn/ Phân cảnh<br>\
-Opera (n) /ˈɒp.ər.ə/ Nhạc kịch, ô-pê-ra<br>\
-Theater (n) /ˈθɪə.tər/ Nhà hát<br>\
+en:"circus (n) /ˈsɜː.kəs/ Rạp xiếc<br>\
+scene (n) /siːn/ Phân cảnh<br>\
 Applaud (v) /əˈplɔːd/ Vỗ tay (tán thưởng)<br>\
 Perform (v) /pəˈfɔːm/ Trình diễn, biểu diễn<br>\
 Exhibit (n) /ɪɡˈzɪb.ɪt/ Vật triển lãm<br>\
@@ -1242,6 +1239,10 @@ Hot dog (n) /ˈhɒt dɒɡ/ Bánh mì kẹp xúc xích",
 Band (n) /bænd/ Nhóm nhạc, ban nhạc<br>\
 Note (n) /noʊt/ Nốt nhạc<br>\
 Drum (n) /drʌm/ Trống<br>\
+choir (n) /ˈkwaɪər/ Hợp xướng<br>\
+orchestra (n) /ˈɔː.kɪ.strə/ Ban nhạc, dàn nhạc<br>\
+opera (n) /ˈɒp.ər.ə/ Nhạc kịch, ô-pê-ra<br>\
+theater (n) /ˈθɪə.tər/ Nhà hát<br>\
 Playlist (n) /ˈpleɪ.lɪst/ Danh sách bài hát<br>\
 Musician (n) /mjuˈzɪʃ.ən/ Nhạc sĩ<br>\
 Rhythm (n) /ˈrɪð.əm/ Nhịp điệu<br>\

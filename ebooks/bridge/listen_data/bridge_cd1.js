@@ -54,7 +54,7 @@ Yibo: Yes, please!<br>\
 Agnes: ОК, thаt's great. Now, lеt's just wait for а few mоrе students to arrive and then we can start оur tour of the campus!",
 	vi: 
 	"Fouad: Xin chào. Tôi là sinh viên mới. Tôi đến đây để tham dự buổi họp của sinh viên mới.<br>\
-Agnes: Xin chào, Chào mừng đến với Tuần lễ-O! Môn học của bạn là gì?<br>\
+Agnes: Xin chào. Chào mừng đến với tuần lễ-O! Môn học của bạn là gì?<br>\
 Fouad: Hóa học. Tôi học khoa khoa học.<br>\
 Agnes: Bạn là sinh viên đầu tiên đến dự buổi họp! Tôi là sinh viên chủ trì buổi họp. Tôi là Agnes. Tên bạn là gì?<br>\
 Fouad: Fouad. Tôi đến từ Ả Rập Xê Út, tôi là người Ả Rập Xê Út, Rất vui được gặp bạn, Agnes!<br>\
@@ -155,7 +155,7 @@ Etsuko: Không, không phải! Thật tuyệt! Tôi thích lắm. Lễ hội mù
 Ahmed: Tôi không chắc. Lễ hội diễn ra như thế nào?<br>\
 Etsuko: À, có những tác phẩm điêu khắc tuyết tuyệt đẹp khắp thành phố và thậm chí còn có cả một cung điện băng! Rất đẹp đặc biệt là vào ban đêm khi ánh đèn chiếu qua những bức tường băng. Tôi thực sự muốn xem nó!<br>\
 Ahmed: Ờ thì tôi không thích! Cung điện băng có gì thú vị? Thật nhàm chán.<br>\
-Etsuko: Được thôi nhưng bạn thích thể thao - có một cuộc đua thuyền qua Sông St. Lawrence. Đó là một trong những điểm thu hút chính - rất thú vị!<br>\
+Etsuko: Được thôi nhưng bạn thích thể thao - có một cuộc đua thuyền qua Sông St Lawrence. Đó là một trong những điểm thu hút chính - rất thú vị!<br>\
 Ahmed: Tôi thích chơi thể thao - Tôi không thích xem. Và tôi ghét xem thể thao trong thời tiết lạnh!<br>\
 Etsuko: Vậy là bạn không muốn nhìn thấy những người tắm tuyết...<br>\
 Ahmed: Những người tắm tuyết? Ý bạn là mọi người thực sự tắm trong tuyết sao!<br>\
@@ -295,7 +295,7 @@ Grant: Do you have experience leading a team?<br>\
 Pilar: No, I don't. But I do have experience leading projects.<br>\
 Grant: So, do you feel that you can manage a team?<br>\
 Pilar: Yes, I'm sure I can manage a team well. I have all the skills to do it and I'm sure I can do a good job.<br>\
-Grant: OK, well let's talk more about your project management...",
+Grant: OK, well let's talk more about your project management.",
 vi:"Grant: Cảm ơn bạn đã đến hôm nay, Pilar.<br>\
 Pilar: Rất vui được phục vụ bạn.<br>\
 Grant: Vâng, chúng ta hãy bắt đầu. Vậy thì công việc là với Dịch vụ sinh viên - chúng tôi là một phần của trường đại học cố gắng giúp đỡ sinh viên giải quyết mọi vấn đề.<br>\
@@ -344,10 +344,10 @@ women than men. Today 49.2 per cent of women are now studying at university, wit
  There is a 12% difference in the number of men and women at university in the UK. Two other things are important: the kind of qualification women get and the subjects they choose. The percentage of men getting a good degree at university is nearly 60%. But almost 64% of women at university are getting good degrees. Another important thing is that more men leave university early than women. Women students are successfully finishing their courses.<br>\
 Dr Sawyer: So what about the type of course? Is it still true that more men take science subjects than women?.<br>\
 Esra: Well, research shows that there are more women on most courses, especially in law and medicine. But in maths, \
-computer science and engineering there are more men than women. In computer science just under 20% of students are women and 80% are men. In engineering just 14% of students are women and 86% are men. So more men than women are taking science subjects. <br>\
-John: And is this just in Britain?.<br>\
+computer science and engineering there are more men than women. In computer science just under 20% of students are women and 80% are men. In engineering just 14% of students are women and 86% are men. So more men than women are taking science subjects.<br>\
+John: And is this just in Britain?<br>\
 Esra: No, this is the same in many other countries and in Arab countries too. So one of the main changes in education\
- is the rising number of women and the fact that women are doing well- this is something we can be proud of."
+ is the rising number of women and the fact that women are doing well - this is something we can be proud of."
 ,vi:"Tiến sĩ Sawyer: Chào buổi chiều, mọi người. Hôm nay Esra sẽ nói về những thay đổi trong giáo dục. Các bạn đã sẵn sàng chưa?.<br>\
 Esra: Vâng, tôi nghĩ là vậy.<br>\
 Tiến sĩ Sawyer: Được rồi, Esra, chúng ta hãy bắt đầu.<br>\
@@ -360,8 +360,8 @@ phụ nữ hơn nam giới. Ngày nay, 49,2 phần trăm phụ nữ đang học 
  Có sự khác biệt 12% về số lượng nam giới và nữ giới đang học đại học tại Vương quốc Anh. Hai điều quan trọng khác: loại bằng cấp mà phụ nữ nhận được và các môn học mà họ chọn. Tỷ lệ nam giới nhận được bằng cấp tốt tại trường đại học là gần 60%. Nhưng gần 64% phụ nữ đang học đại học đang nhận được bằng cấp tốt. Một điều quan trọng khác là nhiều nam giới rời trường đại học sớm hơn phụ nữ. Sinh viên nữ đang hoàn thành khóa học của mình một cách thành công.<br>\
 Tiến sĩ Sawyer: Vậy còn loại khóa học thì sao? Có còn đúng là nhiều nam giới học các môn khoa học hơn phụ nữ không?.<br>\
 Esra: Vâng, nghiên cứu cho thấy có nhiều phụ nữ hơn trong hầu hết các khóa học, đặc biệt là luật và y khoa. Nhưng trong toán học,\
- khoa học máy tính và kỹ thuật thì có nhiều nam giới hơn phụ nữ. Trong khoa học máy tính, chỉ dưới 20% sinh viên là nữ và 80% là nam giới. Trong kỹ thuật, chỉ có 14% sinh viên là nữ và 86% là nam giới. Vì vậy, nam giới học các môn khoa học nhiều hơn nữ giới. .<br>\
-John: Và điều này chỉ xảy ra ở Anh thôi sao?.<br>\
+ khoa học máy tính và kỹ thuật thì có nhiều nam giới hơn phụ nữ. Trong khoa học máy tính, chỉ dưới 20% sinh viên là nữ và 80% là nam giới. Trong kỹ thuật, chỉ có 14% sinh viên là nữ và 86% là nam giới. Vì vậy, nam giới học các môn khoa học nhiều hơn nữ giới.<br>\
+John: Và điều này chỉ xảy ra ở Anh sao?<br>\
 Esra: Không, điều này cũng xảy ra ở nhiều quốc gia khác và ở các quốc gia Ả Rập nữa. Vì vậy, một trong những thay đổi chính \
 trong giáo dục là số lượng phụ nữ ngày càng tăng và thực tế là phụ nữ đang làm tốt - đây là điều chúng ta có thể tự hào."
 },

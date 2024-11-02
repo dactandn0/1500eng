@@ -6,7 +6,45 @@ const SAME_N_V_TAG_END = '</y1>'
 
 var Helper_AudioSpeed = 0.7;
 var Helper_AudioVolume = 1;
-var UtterEnd = true;
+var UtterEnd = true;		// prevent a word from constantly double-click
+
+var kReplaceWords = [
+	{ src: 'ms\\.', desc: 'Ms'},
+	{ src: 'mr\\.', desc: 'Mr'},
+	{ src: 'p\\.m\\.', desc: 'pm'},
+	{ src: 'a\\.m\\.', desc: 'am'},
+	{ src: 'mrs\\.', desc: 'Mrs'},
+]
+
+function IsRegexMatch(rg, txt) {
+	var mmm = txt.match(rg);
+	return mmm && mmm.length > 1
+}
+
+function dotToComma(txt) {
+	txt = txt.replace(/\.{2,}/gi, "_ _");
+	txt = txt.replace(".'", "'.");
+	txt = txt.replaceAll("v.v", "vv");
+	var rg = /\d+\.\d+/g;
+	var num = '';
+	var mat = txt.match(rg)
+	if (mat) {
+		num = mat[0]
+		num = num.replace(/[\.,]/gi, ',')
+		return txt.replace(rg, num)
+	}
+	return txt;
+}
+
+function doReplaceWords(txt) {
+	var rrr = txt
+	for (var i = 0; i < kReplaceWords.length; i++) {
+		var data = kReplaceWords[i]
+		var regex = new RegExp(`\\b(${data.src})` , 'gi')
+		rrr = rrr.replace(regex, data.desc);
+	}
+	return rrr;
+}
 
 function loadAudioConfig() {
 	if (localStorage.hasOwnProperty("audioSpd")) {
@@ -91,8 +129,12 @@ function processStory (story) {
 	if (!story || !story.en || story.en.trim().length == 0) return story;
 	
 	story.enShow = story.en;
-	story.viShow = story.vi;
 	let enShow = story.enShow
+	let viShow = story.vi
+	enShow = doReplaceWords(enShow)
+	enShow = dotToComma(enShow)
+	viShow = dotToComma(viShow)
+
 	if (story.voca) {
 		var vocas = story.voca.split(',');
 		for (var i = 0; i < vocas.length; i++) {
@@ -116,21 +158,36 @@ function processStory (story) {
 			dones.push(word);
 		}
 	}
+
+
+	var kBrTag = '<br>'
+	var rgSen = /.*?((\.*\s*<br>)|(\!*\s*<br>)|(\?*\s*<br>)|('*\s*<br>)|("*\s*<br>)|\.|\!|\?'")/gi
 	var enAndVi = ''
 	var viii = ''
-	var sentencesEn = enShow.split('<br>');
+	var sentencesEn = enShow.match(rgSen);
 	var sentencesVi = '';
-	if (story.vi) sentencesVi = story.vi.split('<br>');
+	if (viShow) sentencesVi = viShow.match(rgSen);
 	if (sentencesEn.length === sentencesVi.length) {
-		for (var i = 0; i < sentencesEn.length; i++) {
-			if (sentencesVi[i]) {
-				viii = '(' + sentencesVi[i].trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '') + ')'
-			}
-
-			enAndVi += sentencesEn[i] + ' <i class="text-primary">' + viii  + '</i><br>'
-		}
-	}
 	
+	} else alert('sentencesEn.length !== sentencesVi.length')
+			for (var i = 0; i < sentencesEn.length; i++) {
+			var enSen = sentencesEn[i]
+			var viSen = sentencesVi[i]
+			if (viSen && viSen.trim()!=='<br>') {
+				var rep = viSen.trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '')
+				if (rep.length > 1 ) {
+					viii = '(' + rep + ')'
+					if (viii.indexOf(kBrTag)!==-1) {
+						viii = viii.replace(kBrTag,'');
+						viii += kBrTag
+					}
+				}
+				if (enSen.indexOf(kBrTag)!==-1) {
+					enSen = enSen.replace(kBrTag,'');
+				}
+				enAndVi += enSen + ' <i class="text-primary">' + viii  + '</i>'
+			}
+		}
 	story.viShow = enAndVi
 	story.enShow = enShow
 
@@ -183,20 +240,20 @@ function removeVietnameseTones(str) {
 	var reg = /^[^\d]$/;   // length = 1 but not digit
 	if (word.match(reg)) return false
 	var exceptTag = 'bui'   // allow <B><u><i> in story.en Data
-var result = true;
-word = word.trim().toLowerCase();
+	var result = true;
+	word = word.trim().toLowerCase();
 
-if (exceptTag.indexOf(word) !== -1) return false;
-if (!isAsciiString(word)) result = false;
+	if (exceptTag.indexOf(word) !== -1) return false;
+	if (!isAsciiString(word)) result = false;
 
-let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];
-for (var i = 0; i < arr.length; i++) {
-	var bList = arr[i];
-	if (word.indexOf(bList) >= 0) {
-		result = false;
+	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];
+	for (var i = 0; i < arr.length; i++) {
+		var bList = arr[i];
+		if (word.indexOf(bList) >= 0) {
+			result = false;
+		}
 	}
-}
-return result;
+	return result;
 }
 
 // for word3000.js

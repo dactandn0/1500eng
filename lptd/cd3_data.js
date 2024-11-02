@@ -524,7 +524,7 @@ W: Oh, come on. It would be fun. I promise I'll attend the classes and not just 
 M: Thanks! <br>\
 W: I was thinking about taking film studies. Why don't you take that?<br>\
 M: I like going to the movies, but I don't want to study them.<br>\
-W: I know someone who took that course last year, and she said it's very easy. Almost everyone gets an 'A' or a 'B'” And there is no homework.<br>\
+W: I know someone who took that course last year, and she said it's very easy. Almost everyone gets an 'A' or a 'B'. And there is no homework.<br>\
 M:That is tempting, but I want to learn something useful.<br>\
 W: Fine, but don't complain to me if you get a 'C'."
 	,vi:"Bài 23 Lịch học<br>\
@@ -538,7 +538,7 @@ W: Thôi nào. Sẽ vui lắm. Mình hứa sẽ tham gia các lớp học và l�
 M: Cảm ơn bạn! <br>\
 W: Tôi đang nghĩ đến việc học nghiên cứu phim. Sao bạn không học ngành đó?<br>\
 M: Tôi thích đi xem phim, nhưng tôi không muốn học chúng.<br>\
-W: Tôi biết một người đã học khóa học đó vào năm ngoái và cô ấy nói rằng nó rất dễ. Hầu như ai cũng được điểm 'A' hoặc 'B'. Và không có bài tập về nhà.<br>\
+W: Tôi biết một người đã học khóa học đó vào năm ngoái và cô ấy nói rằng nó rất dễ. Hầu như ai cũng được điểm 'A' hoặc 'B. Và không có bài tập về nhà.<br>\
 M: Nghe hấp dẫn đấy, nhưng tôi muốn học một cái gì đó hữu ích.<br>\
 W: Được thôi, nhưng đừng phàn nàn với tôi nếu bạn được điểm 'C'."
 	,voca:"",
@@ -708,18 +708,18 @@ W: Cảm ơn bạn. Tạm biệt."
 	,voca:"",
 },
 {
-	title:"Unit 31 An Ounce of Prevention",
-	en:"Unit 31 An Ounce of Prevention<br>\
+title:"Unit 31 An Ounce of Prevention",
+en:"Unit 31 An Ounce of Prevention<br>\
 M: Hi, Sandy. I have a question for you.<br>\
 W: Sure, Joe. <br>\
-M:  I need to have a physical examination, and there is a new clinic on Elm Street. Have you heard anything about it?<br>\
+M: I need to have a physical examination, and there is a new clinic on Elm Street. Have you heard anything about it?<br>\
 W: One of my friends went there recently. She said it was very hygienic and well-run. It is great to have a new clinic close by, since there is a shortage of doctors around here. Why are you going?<br>\
 M: I've just joined a gym. I want to get more exercise, and they require a medical exam before I can start.<br>\
-W:What kind of tests do they want you to have?<br>\
+W: What kind of tests do they want you to have?<br>\
 M: They want to know my blood pressure, how much I weigh, and results from a blood test to check for any possible diseases. I feel terrific, so I'm not worried.<br>\
 W: I had a routine check-up last month, and the doctor discovered that my blood pressure is a little high. It's not serious, but I am glad that I found out about it. I am walking every day, and I have cut down on my salt intake. I would rather not take medication if I don't have to. The change in diet has really made me feel better. You know the saying, 'An ounce of prevention is worth a pound of cure.'<br>\
 M: I think you are right. Prevention is very important. I'm going to call right now and set up an appointment."
-	,vi:"Bài 31 Một ounce phòng ngừa<br>\
+,vi:"Bài 31 Một ounce phòng ngừa<br>\
 M: Chào Sandy. Tôi có một câu hỏi cho bạn.<br>\
 W: Chắc chắn rồi, Joe. <br>\
 M: Tôi cần khám sức khỏe và có một phòng khám mới trên phố Elm. Bạn đã nghe nói gì về nó chưa?<br>\
@@ -827,9 +827,9 @@ Ghé thăm Frisco City! Bạn sẽ có khoảng thời gian tuyệt vời."
 	title:"Unit 37 Asking for Directions",
 	en:"Unit 37 Asking for Directions<br>\
 Asking for directions can be risky. I realized exactly how risky it could be when I needed to meet one of my friends one day.<br>\
-A while ago, I arranged to meet my friend at a new mall. My friend had been there before and indicated that we should shop there together. We planned to meet at 3:00 p.m. at Burger Palace in the mall.<br>\
+A while ago, I arranged to meet my friend at a new mall. My friend had been there before and indicated that we should shop there together. We planned to meet at 3:00 p.m at Burger Palace in the mall.<br>\
 When I arrived at the mall, I realized I did not know where Burger Palace was, so I asked a woman for directions. She advised me to go straight past the bank, and turn right before the food court. She mentioned that I would walk for a few minutes, passing a shoe store until I reached Burger Palace, which was next to the bookstore. I followed her directions and arrived just in time.<br>\
-Twenty minutes later, I was beginning to wonder where my friend was. Thirty minutes later, I was worried. I did not know what to do, so I just kept waiting. At around 3:40 p.m., I saw my friend walking quickly toward me. I rushed to him and demanded to know what happened. 'I was at the other Burger Palace!' he cried. We had not realized there were two Burger Palaces in the mall.<br>\
+Twenty minutes later, I was beginning to wonder where my friend was. Thirty minutes later, I was worried. I did not know what to do, so I just kept waiting. At around 3:40 p.m, I saw my friend walking quickly toward me. I rushed to him and demanded to know what happened. 'I was at the other Burger Palace!' he cried. We had not realized there were two Burger Palaces in the mall.<br>\
 Since then, I have made sure that I get the directions from my friends before I go to meet them. It saves me a lot of trouble!"
 	,vi:"Bài 37 Hỏi đường<br>\
 Hỏi đường có thể rất nguy hiểm. Tôi nhận ra rằng việc đó có thể nguy hiểm như thế nào khi một ngày nào đó tôi cần gặp một người bạn của mình.<br>\

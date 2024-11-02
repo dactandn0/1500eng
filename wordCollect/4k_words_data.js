@@ -221,18 +221,19 @@ wake  thức dậy<br>\
 apartment căn hộ<br>\
 article bài viết<br>\
 artist nghệ sĩ<br>\
-attitude thái độ<br>\
+attitude (n) /ˈætɪtuːd/ thái độ<br>\
 compare so sánh<br>\
 judge phán xét<br>\
-magazine tạp chí<br>\
-material vật liệu<br>\
+magazine (n) /ˈmæɡəziːn/ tạp chí<br>\
+material (n) /məˈtɪriəl/ vật liệu<br>\
 meal bữa ăn<br>\
-method phương pháp<br>\
+method (n) /ˈmeθəd/ phương pháp<br>\
 neighbor hàng xóm<br>\
-professional chuyên nghiệp<br>\
+regularity (n) /ˌreɡjuˈlærəti/ sự chuyên nghiệp, chánh thức, hợp pháp<br>\
+professional (a) /prəˈfeʃənl/ chuyên nghiệp<br>\
 profit lợi nhuận<br>\
-quality chất lượng<br>\
-shape hình dạng<br>\
+quality (n) /ˈkwɑːləti/ chất lượng<br>\
+shape (n) /ʃeɪp/ hình dạng<br>\
 space không gian<br>\
 stair cầu thang<br>\
 symbol biểu tượng<br>\
@@ -253,8 +254,8 @@ position vị trí<br>\
 raise nâng cao<br>\
 responsible có trách nhiệm<br>\
 sight tầm nhìn<br>\
-structure cấu trúc<br>\
-whole  toàn bộ<br>\
+structure (n) /ˈstrʌktʃər/ cấu trúc<br>\
+whole toàn bộ<br>\
 coach huấn luyện viên<br>\
 control kiểm soát<br>\
 description mô tả<br>\

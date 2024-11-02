@@ -67,7 +67,7 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
-	$scope.storyIdx = Helper_loadInt( parseInt('bridgeL_unit'), 0  );
+	$scope.storyIdx = Helper_loadInt( 'bridgeL_unit', 0 );
 	$scope.fetchStory($scope.storyIdx, false);
 };
 

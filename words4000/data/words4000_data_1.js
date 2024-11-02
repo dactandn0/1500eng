@@ -129,7 +129,7 @@ Nhưng cô không xuống. Lưng của con chó rừng ngày càng nóng hơn. A
 Anh hy vọng đứa con của mặt trời sẽ ngã. Nhưng cô không ngã. Vì vậy, khi đứa con của mặt trời đang nhìn bầu trời, không biết kế hoạch tiếp theo của con chó rừng, anh đã nhảy xuống một cánh đồng hoa. Kết quả là, đứa trẻ lăn khỏi lưng anh. Con chó rừng bỏ chạy.<br>\
 <br>\
 Nhưng đứa con của mặt trời đã để lại một vết trên lưng con chó rừng, một vết đen có thể nhìn thấy được. Kể từ khi trải nghiệm với đứa con của mặt trời, lưng của con chó rừng đã đen."
-,voca:"aware, badly, belong, continue, error, experience, field, hurt, judgment, likely, normal, rare, relax, request, reside, result, roll, since, visible, wild"
+,voca:"aware, badly, error, experience, field, hurt, judgment, likely, normal, rare, relax, request, reside, result, roll, since, visible, wild"
 },
 {
 	idx: 1.6,
@@ -149,7 +149,7 @@ Một đêm nọ, một số trẻ em và một con chó đang chơi đùa bên 
 Những đứa trẻ cảm thấy rất sợ hãi. Họ biết đó là một con ma. Sau đó, con ma tiến lại gần hơn. Bà ta lại hét lên, 'Đi đi!' Những đứa trẻ trở nên rất buồn bã. Một số đứa bắt đầu khóc. Những đứa trẻ biết rằng chúng có một sự lựa chọn: chúng có thể trốn thoát, hoặc chúng có thể ở lại và đối mặt với cá nhân đáng sợ này trong bóng tối.<br>\
 <br>\
 Những đứa trẻ chạy một quãng đường dài. Con ma đi theo chúng suốt chặng đường. Cuối cùng, những đứa trẻ đã về đến nhà. Con ma rất vui mừng. Chẳng mấy chốc, dòng sông dâng cao hơn và cao hơn. Thật nguy hiểm. Con ma đã giúp những đứa trẻ sống sót! Bà ta đã cứu chúng khỏi dòng nước đang dâng cao. Bà ta cũng sử dụng sức mạnh của mình để dẫn chúng về nhà. Đôi khi, gặp một con ma cũng có lợi. Một con ma có thể cứu mạng bạn!"
-	,voca:"advantage,cause,choice,community,dead,distance,escape,face,follow,fright,ghost,individual,pet,reach,return,survive,upset,voice,weather,wise",
+	,voca:"advantage,cause,choice,dead,distance,escape,face,follow,fright,individual,reach,return,survive,upset,weather,wise",
 },
 {
 	idx: 1.9,
@@ -177,6 +177,6 @@ Cô bé bắt đầu khóc. Cô bé ngồi dựa vào một tảng đá và suy 
 'Con đang làm gì vậy?' Tôi hỏi cô bé. Nhưng cô bé không trả lời tôi. Cô bé chỉ ném càng nhiều sao biển càng tốt. 'Con không thể cứu tất cả chúng được!' Tôi nói.<br>\
 <br>\
 Cô bé dừng lại nhìn tôi. 'Không, con không thể cứu tất cả chúng được,' cô bé trả lời. Sau đó, cô bé nhặt một con sao biển rất lớn và nói, 'Nhưng con có thể cứu con này.' Và rồi cô bé mỉm cười và ném con sao biển xa nhất có thể xuống biển."
-	,voca:"against,beach,damage,discover,emotion,fix,frank,identify,island,ocean,perhaps,pleasant,prevent,rock,save,step,still,taste,throw,wave",
+	,voca:"against,beach,damage,discover,emotion,fix,frank,identify,island,ocean,perhaps,pleasant,still,taste,wave",
 }
 ];

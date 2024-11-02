@@ -33,8 +33,8 @@ Other people have picnics in parks or have special parties and barbeques in thei
 The largest New Year's Eve celebrations take place in Sydney and Melbourne. In Sydney over 1.5 million people go to a massive firework display with around 5000 fireworks let off from the bridge and from boats in the harbour.<br>\
 - Firework displays mark the end of the old year and the beginning of the New Year. The largest and most impressive firework displays are at midnight on New Year's Eve. \
 It is a way of saying goodbye to the past and saying hello to the future.",
-voca:"celebrate,parade,entertainment,New Year's Eve,firework display,massive,1.5,Sydney,Melbourne,masquerade,impressive",
-note:"impressive = exciting = unforgettable,massive = huge = big,1.5 ~ one point five"
+voca:"parade,entertainment,New Year's Eve display,massive,masquerade,impressive",
+note:"impressive = exciting = unforgettable,massive = huge = big|1.5 ~ one point five"
 	,vi: 
 	'Năm mới ở Úc<br>\
 	- Nhiều người Úc ăn mừng đêm giao thừa vào ngày 31 tháng 12 hàng năm. Đây là ngày trước ngày đầu năm mới, ngày 1 tháng 1.\

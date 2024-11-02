@@ -79,7 +79,7 @@ voca: 'save,extinct,information,project,brochure,hotline,available,nearly,colorf
 },
 {
 	en: 'Unit 4 Hiking in Iran<br>\
-G : Most people think that the Middle East is only a desert. This is far from true. Last year, I went hiking in Iran.\
+G: Most people think that the Middle East is only a desert. This is far from true. Last year, I went hiking in Iran.\
  Iran has many mountains. You can find trees that lose their leaves in winter.<br>\
 If you’re lucky, you may see a yellow deer or a brown bear, two species that live there. The air is fresh, and you can swim in clear, clean lakes. I definitely recommend it.<br>\
 There are so many birds to see. It is fun to go into the forest with binoculars to look at birds.\
@@ -98,7 +98,7 @@ note:['much more of = a lof of']
 },
 {
 en:'Unit 5 Jane Goodall<br>\
-G : Jane Goodall went to Africa when she was 26 years old. She went there to research chimpanzees. At that time, no other women scientists worked there alone.<br>\
+G: Jane Goodall went to Africa when she was 26 years old. She went there to research chimpanzees. At that time, no other women scientists worked there alone.<br>\
 At first, Jane studied the chimps from far away. The chimps were afraid of her. They ran away if she came close to them. After some time, the chimps saw that she was not going to hurt them. They let her walk near them. Soon, she was living among them. She wanted to learn more and more about them. Jane did a lot of research on chimps. She discovered many new things about them. She learned that each chimp has its own personality. She saw that they have feelings.<br>\
 Jane discovered that chimps have very close families. Mothers and fathers take good care of baby chimps. An adult female chimp will sometimes adopt an orphan.<br>\
 In 1977, Jane started an institute to help protect animals. She wanted to help animals all around the world. Today, this institute runs programs in over 70 countries.',
@@ -110,6 +110,7 @@ Vào năm 1977, Jane đã thành lập một viện để giúp bảo vệ độ
 voca:"research,personality,adult,discover,institute,orphan,cave,afraid,chimpanzees,chimp,adopt"
 },
 {
+title:"Unit 6 Flying Cars",
 en:'Unit 6 Flying Cars<br>\
 M: Listen to this! This newspaper article says that some scientists are working on a new kind of airplane. People can use these "flying cars" for short trips.<br>\
 W: How interesting! <br>\
@@ -127,7 +128,7 @@ W: Sớm thôi! Chiếc xe bay này hoạt động như thế nào? Ai cũng có
 M: Bạn không cần phải là phi công lái máy bay mới có thể sử dụng xe bay. Bài báo nói rằng sẽ có một máy tính bên trong xe biết bạn muốn đi đâu. Người lái không cần phải điều khiển xe trừ khi có sự cố xảy ra.<br>\
 W: Bài báo có nói rằng một chiếc xe bay sẽ tốn bao nhiêu không? Có lẽ là tốn quá nhiều tiền! Chúng ta sẽ không đủ khả năng mua một chiếc.<br>\
 M: Đúng vậy, nhưng liệu có tuyệt vời không khi bay qua các điểm tắc đường, thay vì ngồi giữa chúng?<br>\
-W: Đúng vậy. Nhưng sau đó chúng ta có thể sẽ phải đối mặt với tình trạng tắc đường trên bầu trời',
+W: Đúng vậy. Nhưng sau đó chúng ta có thể sẽ phải đối mặt với tình trạng tắc đường trên bầu trời.',
 voca:"article,interesting,cost,airplane,control,traffic,jam,author,pilot,probably,end up"
 },
 {
@@ -157,7 +158,7 @@ voca:"appliance,dishwasher,garbage,housework,simple,perfect,vacuum,cleaner,scrap
 },
 {
 en:'Unit 8 Acupuncture<br>\
-B : Acupuncture began in China thousands of years ago. It is a special way to treat sick people. There are many acupuncture spots on the human body.\
+B: Acupuncture began in China thousands of years ago. It is a special way to treat sick people. There are many acupuncture spots on the human body.\
  Small metal needles are put into spots on the body. Each spot is connected to a special body part or system. There are many spots for each part.<br>\
 An expert puts the needles into these spots in a person’s body. These spots connect to the body system that has a problem. The needles do not go deep.\
  People say that the needles do not hurt.<br>\
@@ -179,7 +180,7 @@ Người dân ở Châu Á đã sử dụng phương pháp đặc biệt này tr
 },
 {
 en:'Unit 9 Albert Einstein<br>\
-B : Albert Einstein is famous around the world. He is famous for his work in science. Many people think that he was the greatest scientist of the 20th century.<br>\
+B: Albert Einstein is famous around the world. He is famous for his work in science. Many people think that he was the greatest scientist of the 20th century.<br>\
 Einstein was born in Germany in 1879. His interest in science began when he was very young. Someone gave him a compass in 1884.\
  Young Einstein was interested in how it worked. He wanted to learn science. He wanted to become a scientist.<br>\
 Einstein tried to enter a top Swiss university. At first, he met with failure. He did not get a place. But Einstein did not give up easily.\
@@ -201,20 +202,20 @@ Là một nhà khoa học, Einstein đã có những công trình quan trọng t
 },
 {
 en: 'Unit 10 The Telescope<br>\
-G : Come and look at the telescope I got for my birthday.<br>\
-B : That’s neat!<br>\
-G : Yeah, now we can look at the moon. Did you know that the moon is the Earth’s only natural satellite?<br>\
-B : No, I didn’t know that. I thought the moon was a planet.<br>\
-G : Well, a planet moves around the sun, but a satellite moves around a planet.<br>\
-B : Oh, I see. Can you see other planets with your telescope?<br>\
-G : Sure, I can see two planets close to Earth really well.<br>\
-B : Which planet is closest to Earth?<br>\
-G : Mars is the closest planet to Earth. Many scientists believe that Mars once had rivers and oceans just like Earth. Mars has two moons.<br>\
-B : That’s cool! What is the other planet near Earth?<br>\
-G : The other planet near Earth is Venus, but Venus has no moons.<br>\
-B : Do you think people will ever be able to visit Mars or Venus?<br>\
-G : Maybe someday people will be able to visit Mars, but not Venus because it’s too hot.<br>\
-B : Well, at least we can see them with your new telescope!',
+G: Come and look at the telescope I got for my birthday.<br>\
+B: That’s neat!<br>\
+G: Yeah, now we can look at the moon. Did you know that the moon is the Earth’s only natural satellite?<br>\
+B: No, I didn’t know that. I thought the moon was a planet.<br>\
+G: Well, a planet moves around the sun, but a satellite moves around a planet.<br>\
+B: Oh, I see. Can you see other planets with your telescope?<br>\
+G: Sure, I can see two planets close to Earth really well.<br>\
+B: Which planet is closest to Earth?<br>\
+G: Mars is the closest planet to Earth. Many scientists believe that Mars once had rivers and oceans just like Earth. Mars has two moons.<br>\
+B: That’s cool! What is the other planet near Earth?<br>\
+G: The other planet near Earth is Venus, but Venus has no moons.<br>\
+B: Do you think people will ever be able to visit Mars or Venus?<br>\
+G: Maybe someday people will be able to visit Mars, but not Venus because it’s too hot.<br>\
+B: Well, at least we can see them with your new telescope!',
 vi: 'Bài 10 Kính thiên văn<br>\
 G: Đến xem chiếc kính thiên văn mà tớ được tặng vào ngày sinh nhật nhé.<br>\
 B: Tuyệt quá!<br>\
@@ -235,16 +236,16 @@ voca:"telescope,planet,moon,satellite,near,closest,lifeguard,Venus,Mars,Jupiter"
 ,
 {
 en:'Unit 11 The Mona Lisa<br>\
-G : What are you looking at, Billy?<br>\
-B : This is a copy of my favorite painting. It’s the Mona Lisa by Leonardo da Vinci.<br>\
-G : Why is that your favorite painting?<br>\
-B : Well, there are a few things that make the Mona Lisa great. First, she has no eyebrows. Second, she has a really beautiful smile. Most of all, I like the soft colors of the painting. Have you seen the Mona Lisa before? It is a very famous painting!<br>\
-G : Of course! I’ve seen the painting a few times before. But I never noticed that her eyebrows are missing. I wonder why she has no eyebrows. Do you know why?<br>\
-B : At the time da Vinci painted it, it was fashionable for young Italian girls to shave off their eyebrows. Every girl wanted to be fashionable.<br>\
-G : Wow! That’s really interesting! In what year was the Mona Lisa painted?<br>\
-B : I think it was painted sometime between 1503 and 1505.<br>\
-G : I wonder what a modern Mona Lisa would look like.<br>\
-B : She might have purple hair!',
+G: What are you looking at, Billy?<br>\
+B: This is a copy of my favorite painting. It’s the Mona Lisa by Leonardo da Vinci.<br>\
+G: Why is that your favorite painting?<br>\
+B: Well, there are a few things that make the Mona Lisa great. First, she has no eyebrows. Second, she has a really beautiful smile. Most of all, I like the soft colors of the painting. Have you seen the Mona Lisa before? It is a very famous painting!<br>\
+G: Of course! I’ve seen the painting a few times before. But I never noticed that her eyebrows are missing. I wonder why she has no eyebrows. Do you know why?<br>\
+B: At the time da Vinci painted it, it was fashionable for young Italian girls to shave off their eyebrows. Every girl wanted to be fashionable.<br>\
+G: Wow! That’s really interesting! In what year was the Mona Lisa painted?<br>\
+B: I think it was painted sometime between 1503 and 1505.<br>\
+G: I wonder what a modern Mona Lisa would look like.<br>\
+B: She might have purple hair!',
 vi:'Bài 11 Mona Lisa<br>\
 G: Cậu đang nhìn gì thế, Billy?<br>\
 B: Đây là bản sao bức tranh yêu thích của tớ. Đó là bức Mona Lisa của Leonardo da Vinci.<br>\
@@ -260,7 +261,7 @@ voca:"painting,shave,fashionable,missing,eyebrows,modern,forehead,high-heeled,no
 },
 {
 	en:'Unit 12 Bang Yi<br>\
-G : Once upon a time, there was a poor, kind man named Bang Yi. He had a rich but greedy brother. One day, Bang Yi asked his brother to give him some grain seeds to grow. His greedy brother gave Bang Yi some poisoned seeds.<br>\
+G: Once upon a time, there was a poor, kind man named Bang Yi. He had a rich but greedy brother. One day, Bang Yi asked his brother to give him some grain seeds to grow. His greedy brother gave Bang Yi some poisoned seeds.<br>\
 Only one plant grew from the poisoned seeds, but Bang Yi was very happy. He took good care of the plant. Then, one afternoon, a bird came and stole the plant. Bang Yi chased the bird into the forest. In the forest, he saw two monsters using a magic stick to turn rocks into food. Bang Yi hid behind a big rock and watched the monsters. The monsters ate a lot of food. Soon, they became very sleepy. When the monsters had fallen asleep, Bang Yi took their magic stick. He became very rich!<br>\
 Bang Yi’s greedy brother went to the forest to find a magic stick for himself. The angry monsters saw him. They chased him deep into the forest. The greedy brother was never seen again.',
 vi: 'Bài 12 Bang Yi<br>\
@@ -341,18 +342,19 @@ Dù bạn ở đâu, bạn cũng khác biệt với mọi người. Không ai kh
 ,voca:"nobody,exactly,differently,straight,world,alike,billion,totally,flavor,fingerprint,curly,wavy"
 },
 {
-	en:"Unit 16 Karaoke<br>\
-M: It’s nice to see you, Karen. How have you been?<br>\
-W: I’ve been very well, thank you. How are you, Dan?<br>\
-M: I’m fine, thanks. I went to the movies Saturday night. I wanted to invite you, but you weren’t home.<br>\
-W: That’s right, I went karaoke singing with some friends on Saturday night.<br>\
-M: Really? I’ve never sung karaoke. What’s it like?<br>\
+title:"Unit 16 Karaoke",
+en:"Unit 16 Karaoke<br>\
+M: It's nice to see you, Karen. How have you been?<br>\
+W: I've been very well, thank you. How are you, Dan?<br>\
+M: I'm fine, thanks. I went to the movies Saturday night. I wanted to invite you, but you weren't home.<br>\
+W: That's right, I went karaoke singing with some friends on Saturday night.<br>\
+M: Really? I've never sung karaoke. What's it like?<br>\
 W: I had never gone karaoke singing before either, but I had a great time. My friends were experienced karaoke singers, so they showed me what to do.<br>\
 M: Did you have to sing in front of a lot of strangers?<br>\
 W: No, the place we went to rented out small private rooms. Nobody else could hear us. They even gave us free sodas!<br>\
 M: Cool! What kind of music did they have?<br>\
 W: They had hundreds of different songs to choose from. They had both new songs and old songs. They had songs in English and songs in several other languages, too. It was really fun!<br>\
-M: I think I’ll go karaoke singing next weekend!",
+M: I think I'll go karaoke singing next weekend!",
 vi:"Bài 16 Karaoke<br>\
 M: Rất vui được gặp bạn, Karen. Bạn thế nào?<br>\
 W: Tôi rất khỏe, cảm ơn bạn. Bạn thế nào, Dan?<br>\
@@ -361,23 +363,23 @@ W: Đúng vậy, tôi đã đi hát karaoke với một số người bạn vào
 M: Thật sao? Tôi chưa bao giờ hát karaoke. Cảm giác thế nào?<br>\
 W: Tôi cũng chưa bao giờ đi hát karaoke trước đây, nhưng tôi đã có một khoảng thời gian tuyệt vời. Bạn bè tôi là những ca sĩ hát karaoke có kinh nghiệm, vì vậy họ đã chỉ cho tôi cách làm.<br>\
 M: Bạn có phải hát trước mặt nhiều người lạ không?<br>\
-W: Không, nơi chúng tôi đến thuê những phòng riêng nhỏ. Không ai khác có thể nghe thấy chúng tôi. Họ thậm chí còn tặng chúng tôi soda miễn phí!<br>\
+W: Không, nơi chúng tôi đến cho thuê những phòng riêng nhỏ. Không ai khác có thể nghe thấy chúng tôi. Họ thậm chí còn tặng chúng tôi soda miễn phí!<br>\
 M: Tuyệt! Họ có thể loại nhạc gì?<br>\
 W: Họ có hàng trăm bài hát khác nhau để lựa chọn. Họ có cả bài hát mới và bài hát cũ. Họ có bài hát bằng tiếng Anh và một số ngôn ngữ khác nữa. Thật sự rất vui!<br>\
 M: Tôi nghĩ mình sẽ đi hát karaoke vào cuối tuần tới!",
-voca:"language,invite,private,rented,stranger,free,karaoke,experience,choose,soda"
+voca:"language,invite,private,rented,stranger,karaoke,experience,choose,soda"
 },
 {en:"Unit 17 Watching TV<br>\
 W: Did you watch the latest episode of that new reality show last night?<br>\
 M: There are so many of those reality shows these days. Which one are you talking about?<br>\
-W: It’s called 'Good Fences,' and it’s all about neighbors. This reality show is the only one I like, because you’re right, the others are just silly.<br>\
+W: It's called 'Good Fences,' and it's all about neighbors. This reality show is the only one I like, because you're right, the others are just silly.<br>\
 M: I never watch reality shows at all. I prefer to watch shows that teach me about something, like science and nature programs, and travel shows.<br>\
 W: Oh, I like travel shows, too. My favorite travel show is the one with that chef from England. He travels, cooks, and eats all the time!<br>\
 M: I like that one, too. He really makes me laugh. He has a good sense of humor.<br>\
-W: Let’s watch it together this week. It’s on Thursday at eight o’clock, right?<br>\
-M: That’s right, but where shall we watch it?<br>\
+W: Let's watch it together this week. It's on Thursday at eight o'clock, right?<br>\
+M: That's right, but where shall we watch it?<br>\
 W: Well, I have a big-screen TV and a comfortable sofa.<br>\
-M: OK, we’ll watch it at your place then, and I’ll bring some snacks. See you then!",
+M: OK, we'll watch it at your place then, and I'll bring some snacks. See you then!",
 vi:"Bài 17 Xem TV<br>\
 W: Bạn đã xem tập mới nhất của chương trình truyền hình thực tế mới tối qua chưa?<br>\
 M: Có rất nhiều chương trình truyền hình thực tế như vậy ngày nay. Bạn đang nói đến chương trình nào?<br>\
@@ -451,7 +453,7 @@ voca:"ticket,impossible,colleague,husband,correctly,otherwise,sold,out,offer,acc
 },
 {
 	en:"Unit 20 Wonder Woman<br>\
-B : Comic book heroes have been popular for many years. One hero has the strength of one hundred men. This hero also has the speed of lightning. This hero cannot be killed. If you think this hero is Superman, you are wrong! This hero is Wonder Woman!<br>\
+B: Comic book heroes have been popular for many years. One hero has the strength of one hundred men. This hero also has the speed of lightning. This hero cannot be killed. If you think this hero is Superman, you are wrong! This hero is Wonder Woman!<br>\
 A man called William Marston created Wonder Woman in 1941. He was a graduate of Harvard University. He used a false name on his comics. He did not want his colleagues to know that he wrote comics. The false name was Charles Moulton.<br>\
 Mr. Marston wanted to make a strong female hero for little girls. Of course, he hoped that little boys would like Wonder Woman, too. Wonder Woman was not very popular at first. Then, World War II began in 1941.<br>\
 Wonder Woman became a role model for children around the world. She was both strong and beautiful. She always tried to do what was right. <br>\
@@ -466,16 +468,16 @@ voca:"hero,strength,comics,lightning,role,model,speed,create,female,pretend,grad
 },
 {
 	en:"Unit 21 Blood Types<br>\
-G : Thanks for meeting with me today, Professor. I don’t understand last week’s lecture on blood types. Could you please explain it to me?<br>\
+G: Thanks for meeting with me today, Professor. I don’t understand last week’s lecture on blood types. Could you please explain it to me?<br>\
 M: No problem, Angela. First, let’s see what you do understand. Can you tell me about blood types?<br>\
-G : There are four types of blood: A, B, AB, and O. <br>\
+G: There are four types of blood: A, B, AB, and O. <br>\
 M: Good! How is your blood type determined?<br>\
-G : You get your blood type from both your parents. Your blood type is a combination of genes from your father and your mother.<br>\
+G: You get your blood type from both your parents. Your blood type is a combination of genes from your father and your mother.<br>\
 M: That’s right.<br>\
-G : Before the lecture, I always thought that all blood was the same. Why can’t two different blood types mix?<br>\
+G: Before the lecture, I always thought that all blood was the same. Why can’t two different blood types mix?<br>\
 M: In some ways, every person’s blood is the same. But it is very dangerous to mix two different blood types.\
  Your blood cells may begin to stick together. If you are given the wrong type of blood in a hospital, you could die.<br>\
-G : I see. So, that’s why blood types must be matched in the hospital. And this must be done before blood is given to anyone.<br>\
+G: I see. So, that’s why blood types must be matched in the hospital. And this must be done before blood is given to anyone.<br>\
 M: Exactly!",
 vi:"Bài 21 Nhóm máu<br>\
 G: Cảm ơn Giáo sư đã cho tôi gặp mặt hôm nay. Tôi không hiểu bài giảng về nhóm máu tuần trước. Giáo sư có thể giải thích cho tôi được không?<br>\
@@ -493,19 +495,19 @@ voca:"lecture,mix,type,explain,hospital,blood,determined,gene,cell,match"
 },
 {
 	en:"Unit 22 The Car Ride<br>\
-B : Mom, Danielle’s on my side of the car again. Tell her to move over!<br>\
+B: Mom, Danielle’s on my side of the car again. Tell her to move over!<br>\
 W: Listen, both of you, I’ve had enough of your nonsense. Sit still, be quiet, and enjoy the scenery!<br>\
-G : Mom, is Toronto still far away?<br>\
+G: Mom, is Toronto still far away?<br>\
 W: It’s going to take a long time to get there, so read your book.<br>\
-G : I don’t like to read in the car because it gives me a headache. Can we put a CD in?<br>\
+G: I don’t like to read in the car because it gives me a headache. Can we put a CD in?<br>\
 W: I suppose so, but it had better not be rap music. That music is awful, and I can’t believe you children actually listen to it.<br>\
-B : Oh, please, can we play some rap music? You might like it, Mom.<br>\
+B: Oh, please, can we play some rap music? You might like it, Mom.<br>\
 W: Well, only if you promise that there is no bad language in it.<br>\
-B : There isn’t any bad language, I promise!<br>\
+B: There isn’t any bad language, I promise!<br>\
 W: All right, I’ll play the CD, but it will be at the volume I choose.<br>\
-B : Thanks, Mom.<br>\
+B: Thanks, Mom.<br>\
 W: Have I ever told you about the songs I liked at your age? People listened to real music in those days.<br>\
-G : Oh, Mom! Rap is real music, too!",
+G: Oh, Mom! Rap is real music, too!",
 vi:"Bài 22 Chuyến đi bằng ô tô<br>\
 B: Mẹ ơi, Danielle lại ở bên phía xe của con rồi. Bảo cô ấy tránh đường đi!<br>\
 W: Nghe này, cả hai đứa, mẹ đã chán mấy trò vô lý của hai đứa rồi. Ngồi yên, im lặng và tận hưởng cảnh đẹp đi!<br>\
@@ -525,14 +527,14 @@ note:['promise, oath, vow, pledge, swearword, plight','scenery, scene, view, spe
 },
 {
 	en:"Unit 23 The Report<br>\
-B : I finished my report on the French Revolution last night.<br>\
-G : How did you finish it so fast? I’m still trying to find books about it.<br>\
-B : There was something about the French Revolution on TV last week. I wrote down the names of all the people who were on the show.<br>\
-G : What did you do next?<br>\
-B : I went to the library and looked for their books. It was very easy, especially because I already understood what they wanted to say.<br>\
-G : I guess I could have done that, but I missed the TV show. Why did Ms. Dessard make us write about French history, anyway? She’s a French language teacher, not a history teacher.<br>\
-B : Ms. Dessard said that if we want to understand the language, we should understand the culture. I don’t know if I speak better French, but I know more about French history now. If the French Revolution had never happened, French would be a very different language.<br>\
-G : You’re right. I’m going to talk to Ms. Dessard now. I’ll see you later.",
+B: I finished my report on the French Revolution last night.<br>\
+G: How did you finish it so fast? I’m still trying to find books about it.<br>\
+B: There was something about the French Revolution on TV last week. I wrote down the names of all the people who were on the show.<br>\
+G: What did you do next?<br>\
+B: I went to the library and looked for their books. It was very easy, especially because I already understood what they wanted to say.<br>\
+G: I guess I could have done that, but I missed the TV show. Why did Ms. Dessard make us write about French history, anyway? She’s a French language teacher, not a history teacher.<br>\
+B: Ms. Dessard said that if we want to understand the language, we should understand the culture. I don’t know if I speak better French, but I know more about French history now. If the French Revolution had never happened, French would be a very different language.<br>\
+G: You’re right. I’m going to talk to Ms. Dessard now. I’ll see you later.",
 vi:"Unit 23 The Report<br>\
 B: Tôi đã hoàn thành báo cáo về Cách mạng Pháp tối qua.<br>\
 G: Làm sao bạn hoàn thành nhanh thế? Tôi vẫn đang cố tìm sách về chủ đề này.<br>\
@@ -561,14 +563,14 @@ Một số người nghĩ rằng trường học tại nhà không tốt cho h�
 },
 {
 	en:"Unit 25 Big Brother.<br>\
-G : So, how does it feel to have a new baby brother in the house?.<br>\
-B : It’s really exciting, but not as easy as I thought it would be, because the baby cries constantly. I love my baby brother, but I don’t like all that noise!.<br>\
-G : I know! When my baby sister was born, she cried and slept all the time. I had to help change diapers and feed her..<br>\
-B : I hope I never have to change a diaper! My mom and dad do a good job of that. I learned how to heat the bottle to the right temperature, though. Having a new baby around is hard work..<br>\
-G : What do you like most about your new brother?.<br>\
-B : He’s really cute, and everyone says he looks like me, but with darker hair..<br>\
-G : Smaller too, of course!.<br>\
-B : He laughs when I tickle his little feet. When he grows up a bit, I’ll teach him how to ride a bicycle, and we can also play games together! I’m going to be the best big brother in the world!",
+G: So, how does it feel to have a new baby brother in the house?.<br>\
+B: It’s really exciting, but not as easy as I thought it would be, because the baby cries constantly. I love my baby brother, but I don’t like all that noise!.<br>\
+G: I know! When my baby sister was born, she cried and slept all the time. I had to help change diapers and feed her..<br>\
+B: I hope I never have to change a diaper! My mom and dad do a good job of that. I learned how to heat the bottle to the right temperature, though. Having a new baby around is hard work..<br>\
+G: What do you like most about your new brother?.<br>\
+B: He’s really cute, and everyone says he looks like me, but with darker hair..<br>\
+G: Smaller too, of course!.<br>\
+B: He laughs when I tickle his little feet. When he grows up a bit, I’ll teach him how to ride a bicycle, and we can also play games together! I’m going to be the best big brother in the world!",
 vi:"Bài 25 Anh cả.<br>\
 G: Vậy, cảm giác có một em trai mới trong nhà thế nào?.<br>\
 B: Thực sự rất thú vị, nhưng không dễ như tôi nghĩ, vì em bé khóc liên tục. Tôi yêu em trai mình, nhưng tôi không thích tiếng ồn như vậy!.<br>\
@@ -632,12 +634,13 @@ M: Tôi đã có kế hoạch làm điều đó trong một thời gian. Tôi r�
 voca:"principal,program,brain,education,involved,college,protect,train,position,set up"
 },
 {
-	en:"Unit 28 Bill Gates<br>\
+title:"Unit 28 Bill Gates",
+en:"Unit 28 Bill Gates<br>\
 M: Look at this article I am reading. It says here that Microsoft made over $36 billion in 2004.<br>\
 W: Wow!<br>\
 M: I wish I was Bill Gates, the owner of Microsoft!<br>\
 W: Is it just because of the money?<br>\
-M: Of course! You can donate a lot of money to help other people. Bill Gates donates millions to charity every year. He also employs about 55,000 people in 85 different countries.<br>\
+M: Of course! You can donate a lot of money to help other people. Bill Gates donates millions to charity every year. He also employs about 55.000 people in 85 different countries.<br>\
 W: I heard that he got interested in computers when he was really young.<br>\
 M: That’s right. He started programming computers when he was 13 years old.<br>\
 W: Really?<br>\
@@ -653,7 +656,7 @@ M: Hãy xem bài viết này mà tôi đang đọc. Ở đây nói rằng Micros
 W: Wow!<br>\
 M: Tôi ước mình là Bill Gates, chủ sở hữu của Microsoft!<br>\
 W: Chỉ vì tiền thôi sao?<br>\
-M: Tất nhiên rồi! Bạn có thể quyên góp rất nhiều tiền để giúp đỡ người khác. Bill Gates quyên góp hàng triệu đô la cho tổ chức từ thiện mỗi năm. Ông ấy cũng tuyển dụng khoảng 55.000 nhân viên ở 85 quốc gia khác nhau.<br>\
+M: Tất nhiên rồi! Bạn có thể quyên góp rất nhiều tiền để giúp đỡ người khác. Bill Gates quyên góp hàng triệu đô la cho tổ chức từ thiện mỗi năm. Ông ấy cũng tuyển dụng khoảng 55,000 nhân viên ở 85 quốc gia khác nhau.<br>\
 W: Tôi nghe nói rằng ông ấy bắt đầu quan tâm đến máy tính từ khi còn rất trẻ.<br>\
 M: Đúng vậy. Ông ấy bắt đầu lập trình máy tính từ năm 13 tuổi.<br>\
 W: Thật sao?<br>\
@@ -668,7 +671,7 @@ voca:"owner,charity,computer,donate,employ,excellent,company,poor,follow,drop ou
 },
 {
 	en:'Unit 29 Mark Twain<br>\
-G : Here is a story that Mark Twain, the famous author of Tom Sawyer and The Adventures of Huckleberry Finn, told one afternoon.<br>\
+G: Here is a story that Mark Twain, the famous author of Tom Sawyer and The Adventures of Huckleberry Finn, told one afternoon.<br>\
 Years ago, I was on a train leaving New York. There were too many people, and the sleeper train was full. I asked the young man at the ticket office if I could have a room in the sleeper section of the train. He answered rudely, "No!"<br>\
 I left feeling quite angry. As I was getting on the train, I saw a man watching me. He watched me for a few minutes. Then he spoke to the conductor in a whisper. Immediately the conductor came over to me.<br>\
 "Can I help you?" he asked. "Do you want a place in the sleeper section?"<br>\
@@ -693,7 +696,7 @@ Sau đó, anh ấy nói, "Tôi rất tự hào khi có anh trên chuyến tàu n
 },
 {
 	en:"Unit 30 A Soccer Star<br>\
-B : Soccer is a very popular team sport worldwide. Many people love to watch it.\
+B: Soccer is a very popular team sport worldwide. Many people love to watch it.\
  Hong Myung-bo is a famous soccer player. He started playing soccer in 1990. He played for the Pohang Steelers for six years. \
 Then he played for the Los Angeles Galaxy. He was the first Korean to play for a major league soccer team in the United States. Now, he is a coach for the South Korean soccer team.<br>\
 Hong is famous because he played soccer well. He played in more than 125 international games. He also played in four World Cups. He played in the World Cup in 1990, 1994, 1998, and 2002.<br>\
@@ -730,12 +733,12 @@ Nếu chúng ta đứng trong thời gian dài, chúng ta nên ngồi xuống v�
 {
 	en:"Unit 32 Stop Yawning!<br>\
 W: Stop yawning, Jason!<br>\
-B : I’m sorry, Ms. Terry. I can’t help it! W: You can! You yawn because your lungs need more oxygen. When you need more oxygen, you open your mouth wide and take in a lot of air.<br>\
-B : What can I do to stop yawning? <br>\
+B: I’m sorry, Ms. Terry. I can’t help it! W: You can! You yawn because your lungs need more oxygen. When you need more oxygen, you open your mouth wide and take in a lot of air.<br>\
+B: What can I do to stop yawning? <br>\
 W: You should go outside into the fresh air and breathe deeply. Then you won’t need to yawn anymore. Your lungs will have lots of oxygen.<br>\
-B : We just came in from recess, so why am I yawning?<br>\
+B: We just came in from recess, so why am I yawning?<br>\
 W: Are you tired? Being tired also makes you yawn. This is because your body needs rest. Oxygen helps your body rest. Sleeping rests your body and makes you take long, deep breaths.<br>\
-B : Then, why do I yawn when I am bored, Ms. Terry?<br>\
+B: Then, why do I yawn when I am bored, Ms. Terry?<br>\
 W: Well, Jason, when you are bored, you are probably not breathing deeply enough. The best way to stop yawning from boredom is to do something interesting. If you can’t do that, try taking deep breaths. This will not stop the boredom, but it will help you stop yawning.",
 	vi:"Bài 32 Đừng ngáp nữa!<br>\
 W: Đừng ngáp nữa, Jason!<br>\
@@ -854,18 +857,18 @@ voca:"lobster,amazing,seasick,travel,agency,waterfall,fishing,village,package,to
 },
 {
 	en:"Unit 37 A Trip to Europe<br>\
-G : Where are you going on vacation this year, Andre?<br>\
-B : I’m going to Europe with my parents. We’re going to take a tour of France, Italy, and Germany.<br>\
-G : Oh! That will be such fun! How long will you be gone?<br>\
-B : Three weeks. We’re going in the summer, so I won’t miss any school.<br>\
-G : What will you do there?<br>\
-B : We’re going to visit historical sites, like the Coliseum in Rome. We’ll also see famous museums, like the Louvre in Paris. And, of course, we’re going to the top of the Eiffel Tower.<br>\
-G : How will you travel from one country to another?<br>\
-B : There’s a famous train that goes all over Europe. It’s called the Eurorail.<br>\
-G : I wish I could go with you! My family is going to the seashore again, just like last year. I’d like to go somewhere I’ve never been.<br>\
-B : Don’t worry, Julie. I will take lots of pictures, and I’ll buy you a souvenir.<br>\
-G : Thank you! I’ll collect some seashells from the beach for you.<br>\
-B : Thanks!",
+G: Where are you going on vacation this year, Andre?<br>\
+B: I’m going to Europe with my parents. We’re going to take a tour of France, Italy, and Germany.<br>\
+G: Oh! That will be such fun! How long will you be gone?<br>\
+B: Three weeks. We’re going in the summer, so I won’t miss any school.<br>\
+G: What will you do there?<br>\
+B: We’re going to visit historical sites, like the Coliseum in Rome. We’ll also see famous museums, like the Louvre in Paris. And, of course, we’re going to the top of the Eiffel Tower.<br>\
+G: How will you travel from one country to another?<br>\
+B: There’s a famous train that goes all over Europe. It’s called the Eurorail.<br>\
+G: I wish I could go with you! My family is going to the seashore again, just like last year. I’d like to go somewhere I’ve never been.<br>\
+B: Don’t worry, Julie. I will take lots of pictures, and I’ll buy you a souvenir.<br>\
+G: Thank you! I’ll collect some seashells from the beach for you.<br>\
+B: Thanks!",
 	vi:"Bài 37 Một chuyến đi đến Châu Âu<br>\
 G: Năm nay, Andre, bạn sẽ đi nghỉ ở đâu?<br>\
 B: Mình sẽ đi Châu Âu với bố mẹ. Chúng mình sẽ đi du lịch Pháp, Ý và Đức.<br>\
@@ -882,24 +885,23 @@ B: Cảm ơn bạn!",
 voca:"tour,historical,museum,seashore,souvenir,site,construction,seashell,Eiffel,Tower,Euro rail"
 },
 {
+	title:"Unit 38 New Mexico",
 	en:"Unit 38 New Mexico<br>\
-B : Hi, I haven’t seen you for two whole weeks! Where did you go on your vacation?<br>\
-G : I visited my cousin in New Mexico. I had a great time!<br>\
-B : Mexico? I thought you went to the US.<br>\
-G : I did. New Mexico is a state in the southwestern US. It’s between Texas and Arizona. Guess what? A lot of Americans don’t know that New Mexico is a state. The license plates on cars in New Mexico also say 'USA' This is so that people don’t get confused and think the driver is from Mexico. <br>\
-B : That’s funny! So, tell me what you did in New<br>\
-Mexico.<br>\
-G : My favorite part was visiting Carlsbad Caverns. There are 30 miles of caves! In one cave, we had to wear hats with lights on them so we could see in the dark. Sometimes we had to crawl through very narrow tunnels on our hands and knees.<br>\
-B : Weren’t you scared?<br>\
-G : No, it was a lot of fun! I’m going to visit my cousin again next year. You should come with me!",
+B: Hi, I haven’t seen you for two whole weeks! Where did you go on your vacation?<br>\
+G: I visited my cousin in New Mexico. I had a great time!<br>\
+B: Mexico? I thought you went to the US.<br>\
+G: I did. New Mexico is a state in the southwestern US. It’s between Texas and Arizona. Guess what? A lot of Americans don’t know that New Mexico is a state. The license plates on cars in New Mexico also say 'USA'. This is so that people don’t get confused and think the driver is from Mexico. <br>\
+B: That’s funny! So, tell me what you did in New Mexico.<br>\
+G: My favorite part was visiting Carlsbad Caverns. There are 30 miles of caves! In one cave, we had to wear hats with lights on them so we could see in the dark. Sometimes we had to crawl through very narrow tunnels on our hands and knees.<br>\
+B: Weren’t you scared?<br>\
+G: No, it was a lot of fun! I’m going to visit my cousin again next year. You should come with me!",
 	vi:"Bài 38 New Mexico<br>\
 B: Xin chào, tôi đã không gặp bạn trong suốt hai tuần! Bạn đã đi nghỉ ở đâu?<br>\
 G: Tôi đã đến thăm anh họ của tôi ở New Mexico. Tôi đã có một khoảng thời gian tuyệt vời!<br>\
 B: Mexico? Tôi nghĩ bạn đã đến Hoa Kỳ.<br>\
-G: Đúng vậy. New Mexico là một tiểu bang ở phía tây nam Hoa Kỳ. Nó nằm giữa Texas và Arizona. Đoán xem? Nhiều người Mỹ không biết rằng New Mexico là một tiểu bang. Biển số xe ô tô ở New Mexico cũng ghi 'USA'. Điều này là để mọi người không bị nhầm lẫn và nghĩ rằng người lái xe đến từ Mexico. <br>\
-B: Thật buồn cười! Vậy, hãy kể cho tôi biết bạn đã làm gì ở New<br>\
-Mexico.<br>\
-G: Phần tôi thích nhất là đến thăm Carlsbad Caverns. Có 30 dặm hang động! Trong một hang động, chúng tôi phải đội mũ có đèn để có thể nhìn thấy trong bóng tối. Đôi khi chúng tôi phải bò qua những đường hầm rất hẹp bằng tay và đầu gối.<br>\
+G: Đúng vậy. New Mexico là một tiểu bang ở phía tây nam Hoa Kỳ. Nó nằm giữa Texas và Arizona. Đoán xem? Nhiều người Mỹ không biết rằng New Mexico là một tiểu bang. Biển số xe ô tô ở New Mexico cũng ghi là 'USA'. Điều này là để mọi người không bị nhầm lẫn và nghĩ rằng người lái xe đến từ Mexico. <br>\
+B: Thật buồn cười! Vậy, hãy kể cho tôi biết bạn đã làm gì ở New Mexico.<br>\
+G: Phần tôi thích nhất là đến thăm Hang động Carlsbad. Có 30 dặm hang động! Trong một hang động, chúng tôi phải đội mũ có đèn để có thể nhìn thấy trong bóng tối. Đôi khi chúng tôi phải bò qua những đường hầm rất hẹp bằng tay và đầu gối.<br>\
 B: Bạn không sợ sao?<br>\
 G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm sau. Bạn nên đi cùng tôi!",
 voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern,Texas,Arizona,funny",
@@ -923,7 +925,7 @@ We offer free beverages in each car. Please have as much coffee, tea, or soft dr
 We will make two stops on this trip. We will pick up passengers in Provence and Dijon. Passengers changing trains can ask the attendant for a free timetable. This will help you with your onward trip.<br>\
 Please note that smoking is only permitted in cars 15 and 23. Newspapers are given to all passengers. Mobile phones and the Internet may be used in cars 18 and 25. If you need assistance, please press the button near your seat to contact a cabin attendant.<br>\
 Please sit back, relax, and enjoy the trip. We are pleased to have you on board. We look forward to serving you again in the futur.",
-	vi:"Bài 40 A Thông báo về tàu hỏa<br>\
+	vi:"Bài 40 Thông báo về tàu hỏa<br>\
 W: Chào mừng quý khách lên tàu TGV 740. Chúng tôi sẽ rời Paris. Chúng tôi sẽ đến Marseille lúc 3:00 chiều<br>\
 Chúng tôi cung cấp đồ uống miễn phí trên mỗi toa tàu. Vui lòng uống nhiều cà phê, trà hoặc nước ngọt tùy thích. Có một nhà hàng trên tàu. Quý khách có thể mua bữa ăn ở đó trong suốt chuyến đi. Nhà hàng nằm ở toa tàu 11.<br>\
 Chúng tôi sẽ dừng lại hai lần trong chuyến đi này. Chúng tôi sẽ đón hành khách ở Provence và Dijon. Hành khách đổi tàu có thể yêu cầu tiếp viên cung cấp lịch trình miễn phí. Điều này sẽ giúp ích cho chuyến đi tiếp theo của quý khách.<br>\

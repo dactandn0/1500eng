@@ -328,7 +328,7 @@ app.config(function(toastrConfig) {
     maxOpened: 0,    
     newestOnTop: true,
     positionClass: 'toast-bottom-center',
-    preventDuplicates: true,
+    preventDuplicates: false,
     preventOpenDuplicates: false,
     target: 'body',
     timeOut: 5000,

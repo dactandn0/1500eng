@@ -1,31 +1,6 @@
 
 const bridge_cd1 = [
 {
-	idx: "1.T1.1",
-	en: 
-	"Ana: Hello, Sergei<br>\
-Sergei: Hi, Ana! How are you?<br>\
-Ana: I'm fine, thanks. And you?<br>\
-Sergei: I'm very well, thanks.<br>\
-Ana: Sergei, this is Eva. Shе's from Argentina.<br>\
-Eva: Hello, Sergei, Nice to meet уоu.<br>\
-Sergei: Nice to meet уоu too! I'm from Russia.<br>\
-Eva: Are уоu а new student?<br>\
-Sergei: Yes, I am,<br>\
-Eva: I'm а nеw student too!",
-	vi: 
-	'Ana: Xin chào, Sergei<br>\
-Sergei: Xin chào, Sergei! Bạn khỏe không?<br>\
-Ana: Tôi khỏe, cảm ơn. Còn bạn thì sao?<br>\
-Sergei: Tôi rất khỏe, cảm ơn.<br>\
-Ana: Sergei, tôi là Eva. Cô ấy đến từ Argentina.<br>\
-Eva: Xin chào, Sergei, Rất vui được gặp bạn.<br>\
-Sergei: Rất vui được gặp bạn! Tôi đến từ Nga.<br>\
-Eva: Bạn là sinh viên mới à?<br>\
-Sergei: Vâng, tôi là,<br>\
-Eva: Tôi cũng là sinh viên mới!'
-},
-{
 	idx: "1.T1.2",
 	en: 
 	"Fouad: Hello. I'm а new student. I'm here for the nеw students meeting.<br>\
@@ -39,7 +14,7 @@ Agnes: Not, I'm not. I'm а student here in МеlЬоurnе but I'm from Gеrmаn
 Fоuаd: Oh. Whеrе are уоu from in Gеrmаnу?<br>\
 Agnes: Berlin,<br>\
 Fоuаd: Berlin? Is Berlin the capital of Сеrmаnу?<br>\
-Аяnеs: Yes, it is. Oh, excuse mе, Неrе's another new student, Fouad, this is Yibo, Yibo, this is Fouad. Yibo's а science student too.<br>\
+Agnes: Yes, it is. Oh, excuse mе, Неrе's another new student, Fouad, this is Yibo, Yibo, this is Fouad. Yibo's а science student too.<br>\
 Fоuаd: Hi, Yibo. Nice to meet you.<br>\
 Yibo: Hello, Fouad. Nice to meet уоu too.<br>\
 Fоuаd: Where аrе you from, Yibo?<br>\
@@ -93,7 +68,7 @@ Hassan: Fine, thanks. And you?<br>\
 Etsuko: I'm OK too. There's a lot to do - O-Week is such a busy time!<br>\
 Hassan: Yes, it is and I'm looking for a place to live too!<br>\
 Etsuko: Oh really? Where are you at the moment?<br>\
-Hassan: I'm in a room in a shared flat. It's right in the city centre(center[US]) and I can walk to the university in ten minutes. There are three of us in the flat.<br>\
+Hassan: I'm in a room in a shared flat. It's right in the city centre and I can walk to the university in ten minutes. There are three of us in the flat.<br>\
 Etsuko: How many rooms are there?<br>\
 Hassan: Three.<br>\
 Etsuko: Is your room big?<br>\

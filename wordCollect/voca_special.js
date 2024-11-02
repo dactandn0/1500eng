@@ -15,7 +15,7 @@ patient (a.) kiên nhẫn | (n) bệnh nhân<br>\
 play (v) chơi | (n) vở kịch<br>\
 order (v) yêu cầu | (n) trật tự<br>\
 park (v) đỗ xe | (n) công viên<br>\
-fine (a.) ổn thỏa | (v) phạt tiền s.o + money<br>\
+fine (a) ổn thỏa | (v) phạt tiền s.o + money<br>\
 lie (v) nằm | (n,v) (lời) nói dối [lie + to + sb + about + sth]<br>\
 last (v) kéo dài | (a) cuối cùng<br>\
 spot (n) điểm, chấm nhỏ | (v) nhìn thấy<br>\
@@ -24,7 +24,7 @@ hard (a.) cứng | (a) khó khăn<br>\
 kid (n) đứa trẻ | (v) trêu đùa<br>\
 head (v) hướng về | (n) cái đầu<br>\
 seal (n) hải cẩu | (v) niêm phong<br>\
-stable (a.) ổn định | (n) chuồng ngựa<br>\
+stable (a) ổn định | (n) chuồng ngựa<br>\
 rest (n) nghĩ ngơi | (n) phần còn loại<br>\
 star (v) đóng phim | (n) ngôi sao <br>\
 mine của tôi | (n) hầm mỏ<br>\
@@ -37,7 +37,8 @@ jam (n) mứt | (n) sự ùn tắc<br>\
 fly (n) còn ruồi | (v) bay<br>\
 fall (n) mùa thu | (v) ngã, rơi<br>\
 clip (n) đoạn film ngắn | (v) cắt xén<br>\
-check (n) séc | (v) kiểm tra"
+check (n) séc | (v) kiểm tra<br>\
+back (n) lưng | (v) trợ giúp | (adv) sau, quay lại"
 },
 
 ]

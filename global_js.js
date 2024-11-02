@@ -4,7 +4,8 @@ const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
 
-var Helper_AudioSpdKey = 'AudioSpd';
+var Helper_AudioPitchKey = 'AudioPitch';
+var Helper_AudioRateKey = 'AudioRate';
 var Helper_AdjAudioTimeKey = 'AdjAudioTime';
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
@@ -334,7 +335,8 @@ function Text2Speech(word) {
 	speechSynthesis.getVoices();
 	const utter = new SpeechSynthesisUtterance(word);
 	utter.text = word;
-	utter.rate  = Helper_loadFloat(Helper_AudioSpdKey, 1);
+	utter.pitch  = Helper_loadFloat(Helper_AudioPitchKey, 1);
+	utter.rate  = Helper_loadFloat(Helper_AudioRateKey, 1);
 	utter.volume  = 1;
 	utter.lang='en-US';
 	var selectedVoice = Helper_loadInt(Helper_SelectedVoiceIdx, -1)

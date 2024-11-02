@@ -1466,7 +1466,6 @@ Thigh (n) /θaɪ/ Đùi<br>\
 Knee (n) /niː/ Đầu gối<br>\
 Hand (n) /hænd/ Bàn tay<br>\
 Thumb (n) /θʌm/ Ngón tay cái<br>\
-Back (n) /bæk/ Lưng<br>\
 Foot (n) /fʊt/ Bàn chân<br>\
 Finger (n) /ˈfɪŋ.ɡər/ Ngón tay<br>\
 Toe (n) /toʊ/ Ngón chân",

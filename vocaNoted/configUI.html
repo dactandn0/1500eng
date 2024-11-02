@@ -1,22 +1,46 @@
 
-<h5>Text to speech config:</h5>
-<label>Audio Rate:</label>
+<h6>Text2Speech config:</h6>
+
+<label>Pitch:</label>
+<input 
+	type="range" 
+	class="form-range mt-3 mx-3"
+	min="0" 
+	max="2" 
+	step="0.1"
+	ng-model="audioPitch" 
+	ng-change="setAudioPitch()"> {{audioPitch}}
+
+	<br>
+
+
+<label>Rate:</label>
 <input 
 	type="range" 
 	class="form-range mt-3 mx-3"
 	min="0.6" 
 	max="2" 
 	step="0.05"
-	ng-model="audioSpeed" 
-	ng-change="setAudioSpeed()"> {{audioSpeed}}
+	ng-model="audioRate" 
+	ng-change="setAudioRate()"> {{audioRate}}
 
 	<br>
 
+<select class="my-3" ng-model="selectedVoiceIdx" ng-change="saveSelectedVoiceIdx()">
+		  <option ng-value="-1">Nope</option>
+          <option ng-value="$index" ng-repeat="voice in VOICES">
+			{{voice.name}} - {{voice.lang}}
+		 </option>
+</select>
+	<br>
+<button class="btn btn-sm btn-danger" ng-click="speechTest()">Test Voice</button>
 
-<label>Adjust audio time:</label>
+<hr>
+
+<label>[-/+] *.mp3 time:</label>
 <input 
 	type="range" 
-	class="form-range my-4 mx-3"
+	class="form-range mt-3 mx-3"
 	min="1" 
 	max="30" 
 	step="1"
@@ -24,10 +48,3 @@
 	ng-change="setAdjAudioTime()"> {{adjAudioTime}}(s)
 
 	<br>
-
-<select ng-model="selectedVoiceIdx" ng-change="saveSelectedVoiceIdx()">
-		  <option ng-value="-1">Nope</option>
-          <option ng-value="$index" ng-repeat="voice in VOICES">
-			{{voice.name}} - {{voice.lang}}
-		 </option>
-</select>

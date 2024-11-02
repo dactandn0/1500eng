@@ -1,35 +1,34 @@
 
 
-<div class="my-3">
- <button class="btn-sm btn-primary"
- 		ng-show="notedWords.length > 0"
-       ng-click="showConfirmModal('Delete all records?', $event)"
-        >
-   <i class="fa fa-lg fa-trash"></i>
-       </button> 
-<span "><i>Vocabulary Noted</i></span>
+<div class="my-4">
+  <button class="btn-sm btn-primary"
+  		     ng-show="wordsShow.length > 0"
+          ng-click="showConfirmModal('Delete all records?', $event)"
+  >[X]
+  </button> 
+
+  <span><i>{{wordsShow.length}} word(s)</i></span>
 </div>
-<p ng-hide="notedWords.length > 0"><i>No record(s)</i></p>
-<div class="text-sm my-3" 
-	ng-repeat="word in notedWords track by $index">
 
-       <button class="btn-sm btn-primary px-1 mr-2"
-       ng-click="showConfirmModal(word, $event)"
-        >
-            <i class="fa fa-close"></i>
+<div class="text-sm my-4" 
+	ng-repeat="word in wordsShow track by $index">
+
+       <button class="btn-sm btn-primary mr-2"
+              ng-click="showConfirmModal(word.full, $event)"
+              >
+            X
        </button> 
 
-      <span ng-if="word.length>0"
-		ng-click="showExampleModal(word, $event)"
-		ng-bind-html="word">
-	  </span>
-   
-	  <button class="btn-sm btn-primary float-right px-2"
-        ng-click="Index_Speak($event, word)">
-             <i class="fa fa-volume-down"></i>
-      </button>
 
-	<br>
+      <span ng-if="word.p1.length>0"
+        ng-click="Index_Speak($event, word.full)"
+        ng-bind-html="word.p1">
+    </span>
+    
+      <span ng-if="word.p2.length>0"
+        ng-click="showExampleModal(word.full, $event)"
+        ng-bind-html="word.p2">
+    </span>
 </div>
 
 

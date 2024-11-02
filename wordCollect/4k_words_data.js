@@ -15,6 +15,8 @@ finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
 moment (n) khoảnh khắc<br>\
+addict (n) /ˈædɪkt/ người ghiện<br>\
+addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 pleased (a) vui lòng<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
@@ -289,7 +291,7 @@ length chiều dài<br>\
 mistake sai lầm<br>\
 observe (v) /əbˈzɜːrv/ quan sát<br>\
 opportunity cơ hội<br>\
-prize giải thưởng<br>\
+prize (n) /praɪz/ giải thưởng<br>\
 realize nhận ra<br>\
 respond phản ứng<br>\
 risk rủi ro<br>\
@@ -360,7 +362,7 @@ however tuy nhiên<br>\
 injustice bất công<br>\
 international quốc tế<br>\
 lawyer luật sư<br>\
-mention đề cập<br>\
+mention (n,v) /ˈmenʃn/ đề cập<br>\
 policy chính sách<br>\
 social xã hội<br>\
 speech bài phát biểu<br>\
@@ -437,7 +439,7 @@ passenger hành khách<br>\
 personality tính cách<br>\
 poem bài thơ<br>\
 pole cột<br>\
-safety an toàn<br>\
+safety (n) /ˈseɪfti/ (nơi) an toàn<br>\
 shoot bắn<br>\
 web  web<br>\
 block block<br>\
@@ -602,7 +604,7 @@ rapidly nhanh chóng<br>\
 remark nhận xét<br>\
 seek tìm kiếm<br>\
 shine tỏa sáng<br>\
-spill (v) làm tràn, làm ngập<br>\
+spill (v) /spɪl/ làm tràn, làm ngập<br>\
 castle lâu đài<br>\
 command lệnh<br>\
 counsel tư vấn<br>\
@@ -850,7 +852,7 @@ handle xử lý<br>\
 layer lớp<br>\
 mud bùn<br>\
 smooth mịn<br>\
-soil đất<br>\
+soil (n) /sɔɪl/ đất<br>\
 unique duy nhất<br>\
 chamber buồng<br>\
 deny phủ nhận<br>\
@@ -1053,6 +1055,7 @@ fuel nhiên liệu<br>\
 grand lớn<br>\
 hurricane bão<br>\
 loss mất mát<br>\
+misinformation (n) /ˌmɪsɪnfərˈmeɪʃn/ thông tin sai lệch<br>\
 plain đồng bằng<br>\
 reef rạn san hô<br>\
 shut đóng cửa<br>\

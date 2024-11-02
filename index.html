@@ -24,19 +24,19 @@
   <script src="https://cdn.jsdelivr.net/npm/angular-toastr@2/dist/angular-toastr.tpls.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-toastr@2/dist/angular-toastr.css">
 
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="text/javascript" src="helper/form_of_word.js"></script>
 
+  <script type="text/javascript" src="helper/dbFunc.js"></script>
   <script type="text/javascript" src="global_js.js"></script>
-  <script type="text/javascript" src="helper/wordNoted.js"></script>
 
   <script type="text/javascript" src="modal/modalCtrl.js"></script>
   <script type="text/javascript" src="includes/audioCtrl.js"></script>
   <script type="text/javascript" src="includes/audioLoopRadioCtrl.js"></script>
   
   <script type="text/javascript" src="wordCollect/wordCollectCtrl.js"></script>
-  <script type="text/javascript" src="words4000/words4000Ctrl.js"></script>
-  <script type="text/javascript" src="lptd/lptdCtrl.js"></script>
+  <script type="text/javascript" src="ebooks/words4000/words4000Ctrl.js"></script>
+  <script type="text/javascript" src="ebooks/lptd/lptdCtrl.js"></script>
   <script type="text/javascript" src="grammer/grammerCtrl.js"></script>
   
   <script type="text/javascript" src="ebooks/collins/collinsLCtrl.js"></script>
@@ -55,6 +55,7 @@
   <script type="text/javascript" src="vocaNoted/vocaNotedCtrl.js"></script>
   <script type="text/javascript" src="indexCtrl.js"></script>
   <script type="text/javascript" src="vocaNoted/ebookNotedCtrl.js"></script>
+  <script type="text/javascript" src="vocaNoted/configUICtrl.js"></script>
   
 </head>
 
@@ -92,6 +93,7 @@
           <div class="dropdown-menu" aria-labelledby="subNotedDropdown">
             <a class="dropdown-item" ng-href="#!vocaNoted">Self</a>
             <a class="dropdown-item" ng-href="#!ebookNoted">Ebooks</a>
+            <a class="dropdown-item" ng-href="#!configUI">Config</a>
           </div>
 
         </li>
@@ -110,10 +112,16 @@
           ng-change="searchTyping()" 
           ng-model="search" 
           placeholder="Search..."
-          >  
+          > 
 
         <div class="input-group-append">
-          <button class="btn" 
+          <button class="btn-sm btn-outline-secondary" 
+            ng-click="Index_Speak($event, search)">
+           <i class="fa fa-volume-up"></i></button>
+         </div> 
+
+        <div class="input-group-append">
+          <button class="btn-sm btn-outline-secondary" 
             ng-click="saveNoted(search)">
            <i class="fa fa-save"></i></button>
          </div> 

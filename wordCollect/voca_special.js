@@ -16,7 +16,7 @@ play (v) chơi | (n) vở kịch<br>\
 order (v) yêu cầu | (n) trật tự<br>\
 park (v) đỗ xe | (n) công viên<br>\
 fine (a.) ổn thỏa | (v) phạt tiền s.o + money<br>\
-lie (v) nằm | (v) nói dối [lie + to + sb + about + sth]<br>\
+lie (v) nằm | (n,v) (lời) nói dối [lie + to + sb + about + sth]<br>\
 last (v) kéo dài | (a) cuối cùng<br>\
 spot (n) điểm, chấm nhỏ | (v) nhìn thấy<br>\
 kind of (n) loại | (a) tốt bụng<br>\

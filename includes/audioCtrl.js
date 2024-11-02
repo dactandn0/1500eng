@@ -10,8 +10,7 @@ $rootScope.$on('$routeChangeStart', function () {
 });
 
 var audioDuration  = 0;
-
-$scope.audioAdjTime = 8; //8s
+$scope.audioAdjTime = 8 //8s
 
 $scope.bPlaying = false;
 $scope.bPause = false;
@@ -63,13 +62,14 @@ $scope.stopSound = function () {
 };
 
 $scope.playFullSound = function () {
+	$scope.audioAdjTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
+	
 	if ($scope.bPlaying)
 	{
 		$scope.stopSound();
 		return;
 	}
 		$scope.audio = new Audio($rootScope.audioSrc);
-		$scope.audio.volume = Helper_AudioVolume;   // not working
 	    $scope.audio.loop = false;
 	    window.playResult = $scope.audio.play();
 
@@ -92,6 +92,7 @@ $scope.playFullSound = function () {
     	});
 }
 
+// for html call event
 setAudioTime = function () {
 	if ($scope.audio && $scope.bPlaying) {
 		var valBar = document.getElementById('slider').value;
@@ -111,6 +112,13 @@ $scope.calAudioBarUI = function() {
 $scope.setupSeekbar = function() {
 	$scope.calAudioBarUI()
 }
+
+$scope.loadData = function() {
+}
+
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
 
 
 }]);

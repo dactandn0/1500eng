@@ -9,12 +9,7 @@ VocaNotedCtrl = $scope;
 
 var kDatabase = []
 $scope.notedWords = []
-$scope.audioSpeed = 0.8
 
-$scope.setAudioSpeed = function () {
-	Helper_AudioSpeed = $scope.audioSpeed;
-	localStorage.setItem("audioSpd", Helper_AudioSpeed);
-}
 
 $scope.appendDataToUI = function (word) {
 	$scope.notedWords.push(word);
@@ -27,22 +22,19 @@ $scope.removeNote = function (word, event) {
 	for (var i = 0; i < $scope.notedWords.length; i++) {
 		saveSeq += $scope.notedWords[i] + "@";
 	}
-	Helper_SaveDB(saveSeq);
+	Helper_NoteSaveDB(saveSeq);
 }
 
 $scope.removeAllNoted = function () {
 	$scope.notedWords = [];
-	Helper_SaveDB('');
+	Helper_NoteSaveDB('');
 }
 
 $scope.loadArray = function () {
-	var kDatabase = Helper_FetchDB();
+	var kDatabase = Helper_NoteFetchDB();
 	$scope.notedWords = kDatabase.trim().split("@");
-
 	//remove element that length = 0
 	$scope.notedWords = $scope.notedWords.filter(String);
-	$scope.audioSpeed = Helper_loadFloat('audioSpd', 1)
-	$scope.setAudioSpeed();
 };
 
 

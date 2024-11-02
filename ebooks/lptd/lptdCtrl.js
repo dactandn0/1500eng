@@ -1,9 +1,9 @@
 // include other *.js
 
-document.write('<script src="./lptd/cd1_data.js" type="text/javascript"></script>');
-document.write('<script src="./lptd/cd2_data.js" type="text/javascript"></script>');
-document.write('<script src="./lptd/cd3_data.js" type="text/javascript"></script>');
-document.write('<script src="./lptd/cd4_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/lptd/cd1_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/lptd/cd2_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/lptd/cd3_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/lptd/cd4_data.js" type="text/javascript"></script>');
 
 var app = angular.module("lptdApp", []);
 app.controller("lptdCtrl", function($scope, $rootScope, $timeout ) {
@@ -31,8 +31,8 @@ $scope.range = function(min, max, step) {
 
 
 $scope.createAudioSrc = function() {
-	if (HELPER_FOR_TEST) return "./lptd/cd1/test/0b.mp3"
-	return "./lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3';
+	if (HELPER_FOR_TEST) return "./ebooks/lptd/cd1/test/0b.mp3"
+	return "./ebooks/lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {

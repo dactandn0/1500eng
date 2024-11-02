@@ -546,17 +546,41 @@ I have been to Ha Long Bay once, during a family trip. We took a boat tour aroun
 Ha Long Bay is special to me because of its natural beauty and how peaceful it felt. It’s also a place where I felt really connected to nature. Being there made me feel relaxed and happy.\
 It’s a perfect place to escape from the busy city life and enjoy something truly unique.<br><br>\
 <b>Voca</b><br>\
-spectacular (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
-majestic (a) /məˈdʒestɪk/ hùng vĩ, đẹp mắt<br>\
-serene (a) /səˈriːn/ êm đềm, thanh thản<br>\
-incredible (a) /ɪnˈkredəbl/ đáng khinh ngạc<br>\
-fantastic (a) /fænˈtæstɪk/ tuyệt vời<br>\
-mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
-wonderful (a) /ˈwʌndərfl/ tuyệt vời, phi thường<br>\
-magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
-stunning (a) /ˈstʌnɪŋ/ kinh ngạc, tuyệt vời<br>\
-breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt"
-	,voca:"",
+spectacular<br>\
+majestic<br>\
+serene<br>\
+incrediblec<br>\
+fantastic<br>\
+mavelous<br>\
+wonderful<br>\
+magnificent <br>\
+stunning<br>\
+breathtaking"
+,vi:"<u>Thể thao</u><br>Tôi muốn nói về môn thể thao yêu thích của tôi, đó là bóng đá, môn thể thao vua đối với mọi người ở Việt Nam. Nó thực sự tuyệt vời!<br>\
+Bạn có thể chơi ở rất nhiều nơi, trong nhà, trên sân cỏ hoặc sân vận động, hoặc ngoài trời, trong công viên.<br>\
+Luật chơi bóng đá thực sự dễ dàng/đơn giản. Bạn chơi theo đội gồm… người. Bạn phải đá bóng vào lưới của đối thủ (lưới của đối thủ).<br>\
+Cầu thủ có thể sử dụng bất kỳ bộ phận nào trên cơ thể ngoại trừ (trừ) tay và cánh tay, mặc dù thủ môn là một ngoại lệ vì họ có thể sử dụng tay trong vòng cấm. Đội ghi được nhiều bàn thắng nhất vào cuối trận sẽ giành chiến thắng.<br>\
+Tôi thích môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ...<br><br>\
+<u>Khu vực có vẻ đẹp thiên nhiên</u><br>\
+Một địa điểm có vẻ đẹp thiên nhiên đặc biệt mà tôi muốn nói đến là Vịnh Hạ Long. Vịnh Hạ Long nằm ở phía bắc Việt Nam, thuộc tỉnh Quảng Ninh. Nơi đây nổi tiếng với những hòn đảo đá vôi tuyệt đẹp nhô lên khỏi mặt nước xanh ngọc lục bảo. Vịnh có hàng ngàn hòn đảo nhỏ, một số có hang động và bãi biển, và cảnh quan thực sự ngoạn mục.<br>\
+<br>\
+Tôi đã đến Vịnh Hạ Long một lần, trong một chuyến đi gia đình. Chúng tôi đi thuyền quanh vịnh và dừng lại ở một số hòn đảo để khám phá các hang động. Mặt nước phẳng lặng và bầu không khí yên bình. Tôi nhớ nơi đây yên tĩnh và đẹp như thế nào, với cảnh mặt trời lặn sau những tảng đá, làm mọi thứ trở nên rực rỡ.<br>\
+<br>\
+Vịnh Hạ Long đặc biệt đối với tôi vì vẻ đẹp tự nhiên và cảm giác yên bình. Đây cũng là nơi tôi cảm thấy thực sự gắn kết với thiên nhiên. Ở đó khiến tôi cảm thấy thư giãn và vui vẻ.\
+Đây là nơi hoàn hảo để thoát khỏi cuộc sống bận rộn của thành phố và tận hưởng điều gì đó thực sự độc đáo.<br><br>\
+<b>Voca</b><br>\
+ngoạn mục<br>\
+hùng vĩ<br>\
+thanh thản<br>\
+incrediblec<br>\
+tuyệt vời<br>\
+mavelous<br>\
+tuyệt vời<br>\
+tuyệt vời<br>\
+tuyệt vời<br>\
+tuyệt đẹp<br>\
+ngoạn mục"
+,voca:"",
 },
 {
 		date:"21/10/2024",
@@ -589,7 +613,7 @@ What are the advantages and disadvantages of students using technology in free t
 3. Fewer opportunities to develop communication skills (how to talk and eye contact)/ too much screen time decreases face-to-face interaction<br>\
 4. May affect eye health -> can cause myopia (short-sightedness)<br>\
 5. May contribute to a sedentary lifestyle (inactive lifestyle) -> cause obesity / overweight"
-		,vi:"Có ba lợi ích của việc ăn đồ ăn nhanh trong cuộc sống hàng ngày của chúng ta. Trước hết, ăn đồ ăn nhanh giúp tâm trạng của chúng ta tốt hơn. Có rất nhiều loại món ăn có sẵn, ngay cả trên vỉa hè. Do đó, mọi người có thể dễ dàng tìm thấy thức ăn trong những ngày làm việc bận rộn và hối hả. Bên cạnh đó, chúng ta luôn có thể thử những bữa ăn mới và có thể bạn sẽ không thấy chán vì có rất nhiều lựa chọn đồ ăn nhanh, đặc biệt là nếu bạn sống ở thành phố lớn. Thứ hai, ăn đồ ăn nhanh giúp chúng ta tránh lãng phí thực phẩm. Thường có thức ăn thừa khi bạn chuẩn bị bữa ăn ở nhà. Chúng có thể được để trong tủ lạnh với ý định tốt nhất, nhưng thức ăn thường bị lãng phí. Khi bạn gọi đồ ăn nhanh, bạn sẽ nhận được những gì bạn cần cho bữa ăn cụ thể đó, vì vậy không còn gì để lưu trữ trong tủ lạnh và không có gì bị lãng phí. Cuối cùng, đồ ăn nhanh cũng rất tiện lợi khi đi du lịch. Khi đi du lịch, bạn sẽ không có thời gian để chuẩn bị cho bữa ăn của mình, vì vậy bạn cũng có thể mua một ít đồ ăn nhanh. Bạn sẽ không chỉ bỏ qua việc nấu nướng mà còn thoát khỏi việc phải rửa bát đĩa sau đó. Do đó, khi đi du lịch, đồ ăn nhanh là một lựa chọn thay thế tuyệt vời cho việc nấu ăn vì bạn có thể dành thêm thời gian cho các chuyến đi và tìm hiểu về văn hóa địa phương.<br>\
+,vi:"Có ba lợi ích của việc ăn đồ ăn nhanh trong cuộc sống hàng ngày của chúng ta. Trước hết, ăn đồ ăn nhanh giúp tâm trạng của chúng ta tốt hơn. Có rất nhiều loại món ăn có sẵn, ngay cả trên vỉa hè. Do đó, mọi người có thể dễ dàng tìm thấy thức ăn trong những ngày làm việc bận rộn và hối hả. Bên cạnh đó, chúng ta luôn có thể thử những bữa ăn mới và có thể bạn sẽ không thấy chán vì có rất nhiều lựa chọn đồ ăn nhanh, đặc biệt là nếu bạn sống ở thành phố lớn. Thứ hai, ăn đồ ăn nhanh giúp chúng ta tránh lãng phí thực phẩm. Thường có thức ăn thừa khi bạn chuẩn bị bữa ăn ở nhà. Chúng có thể được để trong tủ lạnh với ý định tốt nhất, nhưng thức ăn thường bị lãng phí. Khi bạn gọi đồ ăn nhanh, bạn sẽ nhận được những gì bạn cần cho bữa ăn cụ thể đó, vì vậy không còn gì để lưu trữ trong tủ lạnh và không có gì bị lãng phí. Cuối cùng, đồ ăn nhanh cũng rất tiện lợi khi đi du lịch. Khi đi du lịch, bạn sẽ không có thời gian để chuẩn bị cho bữa ăn của mình, vì vậy bạn cũng có thể mua một ít đồ ăn nhanh. Bạn sẽ không chỉ bỏ qua việc nấu nướng mà còn thoát khỏi việc phải rửa bát đĩa sau đó. Do đó, khi đi du lịch, đồ ăn nhanh là một lựa chọn thay thế tuyệt vời cho việc nấu ăn vì bạn có thể dành thêm thời gian cho các chuyến đi và tìm hiểu về văn hóa địa phương.<br>\
 Tuy nhiên, cũng có ba nhược điểm khi tiêu thụ đồ ăn nhanh. Thứ nhất, nó có nhiều thành phần không lành mạnh và thường thiếu các loại vitamin và khoáng chất thiết yếu. Mặc dù có một số loại thực phẩm bổ dưỡng, nhưng các món ăn phổ biến nhất tại các nhà hàng thức ăn nhanh thường khá có hại. Do đó, theo thời gian, mức độ thể lực cũng như chất lượng cuộc sống nói chung của bạn có thể giảm đáng kể. Thứ hai, nó chứa calo và khiến mọi người béo phì. Bên cạnh đó, đồ ăn nhanh không phải là lựa chọn thông minh để giảm cân vì nó chứa nhiều calo. Cuối cùng, có rất nhiều loại thực phẩm chất lượng thấp nhưng đắt tiền không rõ nguồn gốc. Vì vậy, việc nấu ăn vui vẻ cùng gia đình tại nhà vẫn có thể ít tốn kém và an toàn hơn.<br>\
 Tóm lại, bạn nên tự nấu ăn vì nấu ăn đảm bảo bạn tiêu thụ thực phẩm bổ dưỡng, đốt cháy calo và tốn ít tiền hơn so với việc mua đồ ăn nhanh. Nếu bạn thực sự thích đồ ăn nhanh, đôi khi bạn nên mua để bảo vệ bản thân khỏi các thành phần không tốt và giảm cân.<br>\
 <br>\
@@ -625,11 +649,17 @@ Chất lượng - thực phẩm chất lượng thấp<br>\
 	en:"<b>Voca</b><br>\
 athlete<br>\
 weightlifter<br>\
-well-paid (a) /wel ˈpeɪd/ Được trả lương cao<br>\
-brilliant (a) /ˈbrɪliənt/ xuất sắc<br>\
+well-paid (a)<br>\
+brilliant (a)<br>\
 surgery<br>\
 surgeon"
-	,vi:""
+	,vi:"<b>Voca</b><br>\
+vận động viên<br>\
+cử tạ<br>\
+được trả lương cao (a)<br>\
+xuất sắc (a)<br>\
+phẫu thuật<br>\
+bác sĩ phẫu thuật"
 	,voca:"",
 },
 {
@@ -721,8 +751,7 @@ He/ she is a role model for me. That’s why I am striving for the best to becom
 Suggestion<br>\
 So well, if anyone asks me about the person ...<br>\
 I would tell them without any hesitation (không chút ngần ngại) about ..."
-
-	,vi:"Mô tả một người nổi tiếng mà bạn muốn gặp.<br>\
+,vi:"Mô tả một người nổi tiếng mà bạn muốn gặp.<br>\
 Một người nổi tiếng mà tôi rất vinh dự được gặp là Taylor Swift. Swift là một nhạc sĩ được ca ngợi, người đã đạt được danh tiếng toàn cầu với nhiều bản hit trong 20 năm qua. Cô cũng được biết đến rộng rãi với khả năng sáng tác nhạc đặc biệt của mình.<br>\
 Tôi bắt đầu nghe nhạc của Taylor Swift từ khi còn học trung học. Tôi đã là một người hâm mộ lớn của cô ấy kể từ đó. Tôi thấy giai điệu của cô ấy vô cùng hấp dẫn và luôn ngưỡng mộ kỹ năng viết lời của cô ấy. Ngoài ra, thông qua việc xem nhiều cuộc phỏng vấn và chương trình trò chuyện có sự góp mặt của Taylor, tôi đã trở nên ngưỡng mộ tính cách điềm tĩnh và điềm đạm của cô ấy, đó là lý do tại sao tôi rất muốn được tương tác trực tiếp với cô ấy.<br>\
 Hơn nữa, Taylor Swift từ lâu đã là hình mẫu của tôi vì nhiều lý do. Cô ấy không chỉ là một nhạc sĩ tài năng mà còn là một người phụ nữ độc lập và bướng bỉnh, người làm việc chăm chỉ để đạt được mục tiêu của mình và đấu tranh cho những gì cô ấy tin tưởng. Cô ấy không bao giờ để phản ứng dữ dội và chỉ trích cản trở thành công của mình. Sẽ thật tuyệt nếu tôi có thể trò chuyện với cô ấy qua tách cà phê về cách cô ấy vượt qua những bất lợi trong sự nghiệp của mình. Tôi có thể học được nhiều điều từ đó."

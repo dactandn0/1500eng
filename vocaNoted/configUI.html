@@ -1,0 +1,32 @@
+
+<h5>Text to speech config:</h5>
+<label>Audio Rate:</label>
+<input 
+	type="range" 
+	class="form-range mt-3 mx-3"
+	min="0.6" 
+	max="2" 
+	step="0.05"
+	ng-model="audioSpeed" 
+	ng-change="setAudioSpeed()"> {{audioSpeed}}
+
+	<br>
+
+
+<label>Adjust audio time:</label>
+<input 
+	type="range" 
+	class="form-range my-4 mx-3"
+	min="1" 
+	max="30" 
+	step="1"
+	ng-model="adjAudioTime" 
+	ng-change="setAdjAudioTime()"> {{adjAudioTime}}(s)
+
+	<br>
+
+<select ng-model="selectedVoiceIdx" ng-change="saveSelectedVoiceIdx()">
+          <option ng-value="$index" ng-repeat="voice in VOICES">
+			{{voice.name}}
+		 </option>
+</select>

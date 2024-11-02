@@ -19,6 +19,7 @@ var kAllStories = lptd_cd1_stories
   .concat(complete_read_data)
   .concat(listen_tracks)
 
+var saveFromToastrVal = ''
 var searchData = [];
 preProcess = function () {
   for (var k = 0; k < VocaForSearch.length; k++) {
@@ -33,6 +34,7 @@ preProcess();
 
 var app = angular.module("myApp", [
   'vocaNotedApp', 'ebookNotedApp',
+  'configUIApp',
   'preCourseApp',
   'sampleSpeakingApp',
   'collinsLApp',
@@ -49,6 +51,9 @@ app.config(function($routeProvider) {
       .when('/', {
         templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl'
       }) 
+      .when('/configUI', {
+        templateUrl: 'vocaNoted/configUI.html', controller: 'configUICtrl'
+      }) 
       .when('/vocaNoted', {
         templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'
       }) 
@@ -56,10 +61,10 @@ app.config(function($routeProvider) {
         templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'
       })        
       .when('/book4k', {
-        templateUrl: 'words4000/words4000.html', controller: 'words4000Ctrl'
+        templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'
       })
       .when('/lptd', {
-        templateUrl: 'lptd/lptd.html', controller: 'lptdCtrl'
+        templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'
       }) 
       .when('/grammer', {
         templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'
@@ -121,12 +126,12 @@ $scope.clearSearch = function () {
 
 $scope.saveNoted = function(word) {
   word = word.trim();
-  var kDatabase = Helper_FetchDB();
+  var kDatabase = Helper_NoteFetchDB();
 
   if (word.length >= 2 && !Helper_IsWordSavedBefore(word)) {
 
     kDatabase = kDatabase + "@" + word;
-    Helper_SaveDB(kDatabase);
+    Helper_NoteSaveDB(kDatabase);
 
     if ($location.path().indexOf('vocaNoted') >=0 ) {
       VocaNotedCtrl.appendDataToUI(word);
@@ -172,6 +177,11 @@ $scope.findSameWord = function() {
   }
 }
 
+saveFromToastr = function () {
+  if (saveFromToastrVal.trim().length > 0)
+    $scope.saveNoted(saveFromToastrVal)
+}
+
 $scope.Index_Speak = function (event, word) {
   Helper_Speak(event, word);
 }
@@ -183,18 +193,36 @@ $scope.Idx_n_L_WSp_ = function (event) {
   var wordFormed = event.target.innerText.toLowerCase();
   var result = IELTS_SYN_IsIn(wordFormed)
   if (result !== '') {
-     toastr.info(result);
+     doShowToast(result, true);
      return;
   }
-  
+  var found = false;
   for (var i = 0; i < searchData.length; i++) {
     var wordFull = searchData[i]
     var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
     if (word === wordFormed || Helper_IsFormOfWord(word, wordFormed)) {
-        toastr.info(wordFull);
+        doShowToast(wordFull, true);
+        found = true;
         break;
+    } else {  
     }
   }
+  // not in DB
+  if (!found) {
+    doShowToast(wordFormed, false)
+  }
+  
+}
+
+function doShowToast(wordFull, isInDB) {
+  if (Helper_IsWordSavedBefore(wordFull)) {
+       toastr.info(wordFull);
+       return;
+  } 
+  saveFromToastrVal = wordFull;
+  toastr.info('<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>', wordFull, {
+    allowHtml: true
+  });
 }
 
 
@@ -304,7 +332,7 @@ app.config(function(toastrConfig) {
     preventOpenDuplicates: false,
     target: 'body',
     timeOut: 5000,
-    tapToDismiss: true,
+    tapToDismiss: false,
   });
 });
 

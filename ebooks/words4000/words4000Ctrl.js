@@ -1,6 +1,6 @@
 // include other *.js
 
-document.write('<script src="./words4000/data/words4000_data_1.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/words4000/data/words4000_data_1.js" type="text/javascript"></script>');
 
 var app = angular.module("words4000App", []);
 app.controller("words4000Ctrl", function($scope, $rootScope, $timeout) {
@@ -27,7 +27,7 @@ $scope.fetchAudio = function() {
 }
 
 $scope.createAudioScr = function() {
-	var rr = "./words4000/data/words4000_" + $scope.cd + "/" + $scope.fetchAudio() + '.mp3';
+	var rr = "./ebooks/words4000/data/words4000_" + $scope.cd + "/" + $scope.fetchAudio() + '.mp3';
 	return rr;
 }
 

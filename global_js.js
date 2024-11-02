@@ -4,8 +4,10 @@ const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
 
-var Helper_AudioSpeed = 0.7;
-var Helper_AudioVolume = 1;
+var Helper_AudioSpdKey = 'AudioSpd';
+var Helper_AdjAudioTimeKey = 'AdjAudioTime';
+var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
+var Helper_Voices
 var UtterEnd = true;		// prevent a word from constantly double-click
 
 var kReplaceWords = [
@@ -45,16 +47,6 @@ function doReplaceWords(txt) {
 	}
 	return rrr;
 }
-
-function loadAudioConfig() {
-	if (localStorage.hasOwnProperty("audioSpd")) {
-		Helper_AudioVolume = parseFloat(localStorage['audioSpd']);
-	}
-	if (localStorage.hasOwnProperty("audioVol")) {
-		Helper_AudioVolume	= parseFloat(localStorage['audioVol']);
-	}
-}
-loadAudioConfig()
 
 var kAudioLoopSaveKey = "audioLoop";
 
@@ -342,9 +334,10 @@ function Text2Speech(word) {
 	speechSynthesis.getVoices();
 	const utter = new SpeechSynthesisUtterance(word);
 	utter.text = word;
-	utter.rate  = Helper_AudioSpeed;
-	utter.volume  = Helper_AudioVolume;
+	utter.rate  = Helper_loadFloat(Helper_AudioSpdKey, 1);
+	utter.volume  = 1;
 	utter.lang='en-US';
+	utter.voice= Helper_Voices[Helper_loadInt(Helper_SelectedVoiceIdx, 4)];
 
 	utter.addEventListener('end', (evt) => {
 		const { charIndex, utterance } = evt
@@ -384,34 +377,21 @@ Helper_SliceHalfString = function (str) {
 }
 
 
-Helper_saveDB = function(key, val = 0) {
-	localStorage.setItem(key, val);
+function setSpeech() {
+    return new Promise(
+        function (resolve, reject) {
+            let synth = window.speechSynthesis;
+            let id;
+
+            id = setInterval(() => {
+                if (synth.getVoices().length !== 0) {
+                    resolve(synth.getVoices());
+                    clearInterval(id);
+                }
+            }, 10);
+        }
+    )
 }
 
-Helper_loadInt = function(key, defVal = 0) {
-	if (localStorage.hasOwnProperty(key)) {
-		return parseInt(localStorage[key].trim());
-	}
-	return defVal;
-}
-Helper_loadFloat = function(key, defVal = 0) {
-	if (localStorage.hasOwnProperty(key)) {
-		return parseFloat(localStorage[key].trim());
-	}
-	return defVal;
-}
-
-Helper_loadStr = function(key, defVal = '') {
-	if (localStorage.hasOwnProperty(key)) {
-		return localStorage[key].trim();
-	}
-	return defVal;
-}
-
-Helper_loadAudioLoop = function() {
-	return Helper_loadInt(kAudioLoopSaveKey, 1)
-}
-
-Helper_saveAudioLoop = function(val) {
-	return Helper_saveDB(kAudioLoopSaveKey, val)
-}
+let s = setSpeech();
+s.then((voices) => Helper_Voices = voices); 

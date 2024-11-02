@@ -1,17 +1,17 @@
 const lptd_cd3_stories = [
 {
 en:"Unit 1 A Big Responsibility<br>\
-B : Mom, can I get a puppy? <br>\
+B: Mom, can I get a puppy? <br>\
 W: No, Billy. Taking care of a pet is a big responsibility.<br>\
-B : I promise to take good care of him, and you won’t have to remind me to do things for him.<br>\
-W: A dog isn’t a toy that you play with for a while. He will be part of our life for the next 10 or 20 years. He is a living creature.<br>\
-B : I understand that, Mom. I promise to feed him every morning and take him for walks every afternoon.<br>\
-W: That’s part of the responsibility, but there’s more. He needs a license and has to go to the vet to get shots. A dog also needs companionship. You can’t go off with your friends and leave him locked up in the house all day.<br>\
-B : I understand, Mom. I have almost $100 in the bank so I can pay for his license and shots now.<br>\
+B: I promise to take good care of him, and you won't have to remind me to do things for him.<br>\
+W: A dog isn't a toy that you play with for a while. He will be part of our life for the next 10 or 20 years. He is a living creature.<br>\
+B: I understand that, Mom. I promise to feed him every morning and take him for walks every afternoon.<br>\
+W: That's part of the responsibility, but there's more. He needs a license and has to go to the vet to get shots. A dog also needs companionship. You can't go off with your friends and leave him locked up in the house all day.<br>\
+B: I understand, Mom. I have almost $100 in the bank so I can pay for his license and shots now.<br>\
 W: There are other expenses, too. Dog food is rather expensive.<br>\
-B : Well, I have my job mowing lawns and I’ll get a newspaper route.<br>\
+B: Well, I have my job mowing lawns and I'll get a newspaper route.<br>\
 W: I think we should discuss this with your father when he gets home. This is a family decision.<br>\
-B : OK, Mom. Thanks! ",
+B: OK, Mom. Thanks! ",
 vi:"Bài 1 Trách nhiệm lớn<br>\
 B: Mẹ ơi, con có thể nuôi một chú chó con không?<br>\
 W: Không, Billy. Chăm sóc thú cưng là một trách nhiệm lớn.<br>\
@@ -39,18 +39,18 @@ voca:"India,evil,far apart,cooperate,cruel,trunk"
 },
 {
 en:"Unit 3 Ants, Ants, Everywhere!<br>\
-G : Hello, Mrs. Wilson. How are you?<br>\
-W: I’m worried, Brianna. Thousands of ants are all over my patio!<br>\
-G : That’s quite a problem. <br>\
-W: What’s worse is that my daughter’s birthday party is in a few days and I wanted to have it on the patio.<br>\
-G : Why don’t you call an exterminator?<br>\
-W: I would, but I don’t want all those hazardous chemicals around my children. It’s harmful and unhealthy. I also don’t want dangerous substances to seep into the garden.<br>\
-G : I usually don’t have problems with ants, and I don’t use any chemicals.<br>\
-W: What’s your secret?<br>\
-G : Well, ants are difficult to control, so I planted a lot of mint plants near my deck. I also use cinnamon and cayenne pepper. I just sprinkle them around the places I don’t want ants. Some people have tried it and said it worked. Others said that they needed to try something else.<br>\
-W: I think it’s worth a try. I would rather use cinnamon and mint around my patio than some hazardous chemicals. Besides, I don’t mind having the ants in the yard. I simply don’t want them coming to the birthday party. Would you mind helping me?<br>\
-G : It would be a pleasure. I have a lot of cinnamon at home and I can run to the store to get the plants for you.<br>\
-W: Thank you, Brianna. You’re such a thoughtful person.",
+G: Hello, Mrs. Wilson. How are you?<br>\
+W: I'm worried, Brianna. Thousands of ants are all over my patio!<br>\
+G: That's quite a problem. <br>\
+W: What's worse is that my daughter's birthday party is in a few days and I wanted to have it on the patio.<br>\
+G: Why don't you call an exterminator?<br>\
+W: I would, but I don't want all those hazardous chemicals around my children. It's harmful and unhealthy. I also don't want dangerous substances to seep into the garden.<br>\
+G: I usually don't have problems with ants, and I don't use any chemicals.<br>\
+W: What's your secret?<br>\
+G: Well, ants are difficult to control, so I planted a lot of mint plants near my deck. I also use cinnamon and cayenne pepper. I just sprinkle them around the places I don't want ants. Some people have tried it and said it worked. Others said that they needed to try something else.<br>\
+W: I think it's worth a try. I would rather use cinnamon and mint around my patio than some hazardous chemicals. Besides, I don't mind having the ants in the yard. I simply don't want them coming to the birthday party. Would you mind helping me?<br>\
+G: It would be a pleasure. I have a lot of cinnamon at home and I can run to the store to get the plants for you.<br>\
+W: Thank you, Brianna. You're such a thoughtful person.",
 vi:"Bài 3 Kiến, Kiến, Khắp mọi nơi!<br>\
 G: Xin chào, bà Wilson. Bà khỏe không?<br>\
 W: Tôi lo lắng, Brianna. Hàng ngàn con kiến ​​đang ở khắp hiên nhà tôi!<br>\
@@ -68,7 +68,7 @@ voca:"patio,exterminator,mint,cayenne pepper,sprinkle,cinnamon,hazardous,yard,th
 },
 {
 en:"Unit 4 The Oil Spill <br>\
-- My best friend Katy lives near a beautiful white sand beach. Her parents take us there every summer. The water is clean and refreshing. We have a lot of fun in the waves. Last year, there was an oil spill at Katy’s beach. We volunteered at the beach to clean up the oil and help the birds that were caught in the spill.<br>\
+- My best friend Katy lives near a beautiful white sand beach. Her parents take us there every summer. The water is clean and refreshing. We have a lot of fun in the waves. Last year, there was an oil spill at Katy's beach. We volunteered at the beach to clean up the oil and help the birds that were caught in the spill.<br>\
 <br>- When we arrived at the beach that day, the water was slick with oil and the white sand had turned black. It was an ugly sight. At first, the rescue workers would not let us on the beach. We had to watch from a distance. We watched as they put a huge float in the water, called a boom. This device kept the oil slick from spreading. Once they stopped the slick, we were allowed on the beach to help. Each of us was given a broom. We swept the oil into a pile. The workers took it away in big trucks. We all worked very hard that day to restore the beach.<br>\
 <br>- Once the oil was removed, the birds that had been caught in the oil had to be helped. The workers showed us how to remove the oil from their wings. Then the birds could fly away to safety. We were very proud of ourselves that day. We helped save our beautiful beach and the birds who visit it.",
 vi:"Bài 4 Sự cố tràn dầu <br>\
@@ -80,15 +80,11 @@ voca:"volunteered,restore,pile,oil,spill,refreshing,remove,rubbish,tractor,destr
 {
 en:"Unit 5 The Amazing Amazon<br>\
 - The Amazon is an amazing river. It is unique in many ways. It is the second longest river in the world. It is 6,500 kilometers long. It starts up in the Andes Mountains. Its drainage basin (the area of land that collects water) covers 40 percent of South America. The Amazon River has many small rivers that supply it with water.<br>\
-<br>\
 - It is the widest river in the world. The river rises more than nine meters during the rainy season. It overflows its banks. It floods large areas of the rainforest. During that time, in some parts, it has a width of up to 40 kilometers. The Amazon River is over 325 kilometers wide at its mouth. It has more water than any other river in the world.<br>\
-<br>\
 - The Amazon River is also home to many animals. Over 2,000 types of fish live in the Amazon River. One kind of fish is the piranha. The piranha is a terrifying fish. A piranha grows up to 60 centimeters long. It hunts in a group. A group of piranha can kill and eat cattle in a matter of minutes. They are so efficient that only the bones are left. This fish is one of the most dangerous creatures in the Amazon River.",
 vi:"Bài 5 Rừng Amazon kỳ thú<br>\
 - Sông Amazon là một con sông kỳ thú. Nó độc đáo theo nhiều cách. Đây là con sông dài thứ hai trên thế giới. Nó dài 6.500 km. Nó bắt nguồn từ dãy núi Andes. Lưu vực thoát nước của nó (khu vực đất tích tụ nước) bao phủ 40 phần trăm Nam Mỹ. Sông Amazon có nhiều con sông nhỏ cung cấp nước cho nó.<br>\
-<br>\
 - Đây là con sông rộng nhất thế giới. Mực nước sông dâng cao hơn chín mét vào mùa mưa. Nó tràn bờ. Nó làm ngập những khu vực rộng lớn của rừng nhiệt đới. Trong thời gian đó, ở một số nơi, nó có chiều rộng lên tới 40 km. Sông Amazon rộng hơn 325 km tại cửa sông. Nó có nhiều nước hơn bất kỳ con sông nào khác trên thế giới.<br>\
-<br>\
 - Sông Amazon cũng là nơi sinh sống của nhiều loài động vật. Hơn 2.000 loài cá sống ở Sông Amazon. Một loài cá là cá piranha. Cá piranha là một loài cá đáng sợ. Cá piranha có thể dài tới 60 cm. Chúng săn mồi theo bầy. Một bầy cá piranha có thể giết và ăn thịt gia súc chỉ trong vài phút. Chúng rất hiệu quả đến mức chỉ còn lại xương. Loài cá này là một trong những sinh vật nguy hiểm nhất ở Sông Amazon.",
 voca:"overflow,efficient,terrifying,flood,rainforest,collect,supply,harvest,tropical,reptile"
 }
@@ -96,15 +92,15 @@ voca:"overflow,efficient,terrifying,flood,rainforest,collect,supply,harvest,trop
 {
 en:"Unit 6 Research<br>\
 W: What are you doing, Billy?<br>\
-B : I’m doing research. I found a lot of great websites.<br>\
+B: I'm doing research. I found a lot of great websites.<br>\
 W: You know, I think you might want to go to the library and look at some books.<br>\
-B : I don’t want to. It takes too much time, and besides, this is fast, easy, and fun. This paper will be done in no time.<br>\
-W: The Internet is great for finding information. But it is also full of misinformation and lies. You don’t really know what you are looking at unless you are at a reliable site. It’s safer to get some books first and then search for more information.<br>\
-B : Grandma, I love you, but I think you are a little old-fashioned. Look at all this great information! My report is on Albert Einstein. Now, according to this site, he was born in 1979, came up with the theory of relatives, and was awarded the Nobel Prize for Physics in 1922.<br>\
+B: I don't want to. It takes too much time, and besides, this is fast, easy, and fun. This paper will be done in no time.<br>\
+W: The Internet is great for finding information. But it is also full of misinformation and lies. You don't really know what you are looking at unless you are at a reliable site. It's safer to get some books first and then search for more information.<br>\
+B: Grandma, I love you, but I think you are a little old-fashioned. Look at all this great information! My report is on Albert Einstein. Now, according to this site, he was born in 1979, came up with the theory of relatives, and was awarded the Nobel Prize for Physics in 1922.<br>\
 W: Your information is wrong. Albert Einstein was born in 1879 and developed the theory of general relativity. He won the Nobel Prize in 1921.<br>\
-B : Wow! That means all this stuff is inaccurate. How did you know all that?<br>\
-W: Come with me to the library and I’ll help you find the books with those facts.<br>\
-B : Thank you, Grandma. You’re a real life-saver!",
+B: Wow! That means all this stuff is inaccurate. How did you know all that?<br>\
+W: Come with me to the library and I'll help you find the books with those facts.<br>\
+B: Thank you, Grandma. You're a real life-saver!",
 vi:"Bài 6 Nghiên cứu<br>\
 W: Cháu đang làm gì thế, Billy?<br>\
 B: Cháu đang nghiên cứu. Cháu tìm thấy rất nhiều trang web tuyệt vời.<br>\
@@ -120,19 +116,19 @@ voca:" lies,developed,reliable,relatives,according,inaccurate,old-fashioned,reci
 },
 {
 en:"Unit 7 A New Calculator<br>\
-W: Hi. I’d like to see your calculators.<br>\
-M: Did you have a certain model in mind, ma’am?<br>\
-W: I’m not thinking of any specific model. I want something simple for basic math.<br>\
+W: Hi. I'd like to see your calculators.<br>\
+M: Did you have a certain model in mind, ma'am?<br>\
+W: I'm not thinking of any specific model. I want something simple for basic math.<br>\
 M: Is it for personal use?<br>\
 W: Yes. I just need it for shopping and keeping track of my bills.<br>\
 M: Well, the great thing is that these simple calculators are very inexpensive and small. Here is a solar model that never needs batteries. It is thin, too.<br>\
-W: It’s too small. I can’t read the numbers very easily.<br>\
-M: How about this one? It is a pocket calculator. It’s a bit bigger. The display is easier to read.<br>\
+W: It's too small. I can't read the numbers very easily.<br>\
+M: How about this one? It is a pocket calculator. It's a bit bigger. The display is easier to read.<br>\
 W: Yes, I can see the numbers better. It is easier to hold, too. Is it also solar?<br>\
 M: Yes, it is. It is battery-powered, as well. It has an eight-digit display. This calculator also has a memory key.<br>\
 W: How much is it?<br>\
 M: It is only five dollars plus tax. It comes with a one-year warranty.<br>\
-W: I’ll take it.",
+W: I'll take it.",
 vi:"Bài 7 Máy tính mới<br>\
 W: Xin chào. Tôi muốn xem máy tính của cô.<br>\
 M: Cô có nghĩ đến một mẫu máy tính cụ thể nào không?<br>\
@@ -153,9 +149,9 @@ voca:"specific,warranty,digit,personal,solar,basic,replace,fancy,kit,customer"
 en:"Unit 8 Racing Robots<br>\
 - I have been interested in robots for as long as I can remember. The first thing I did when I entered high school was join the Robotech robot-making club. We get together after school every day and create our own robots. Nowadays it is very easy to find kits to build your own robot and these are what we use.<br>\
 <br>\
-- The highlight of the year for us is the annual Robot Maze race. Everyone who wants to take part has to make a small computer-controlled robot. You need to race it to the center of a maze. We work together in teams of three or four. This year, I am working with two students who won last year’s competition, so I think we have a really good chance of winning.<br>\
+- The highlight of the year for us is the annual Robot Maze race. Everyone who wants to take part has to make a small computer-controlled robot. You need to race it to the center of a maze. We work together in teams of three or four. This year, I am working with two students who won last year's competition, so I think we have a really good chance of winning.<br>\
 <br>\
-- Our robot is about 30 centimeters high. It weighs two kilograms. It should be really quick. We have been practicing often, and we have already equaled last year’s speed, so we just need to get a little faster. We are keeping the design of our robot secret. If we win, we will get $500. I hope this will be my lucky year.",
+- Our robot is about 30 centimeters high. It weighs two kilograms. It should be really quick. We have been practicing often, and we have already equaled last year's speed, so we just need to get a little faster. We are keeping the design of our robot secret. If we win, we will get $500. I hope this will be my lucky year.",
 vi:"Bài 8 Đua Robot<br>\
 - Tôi đã quan tâm đến robot từ khi tôi còn nhớ. Điều đầu tiên tôi làm khi vào trung học là tham gia câu lạc bộ chế tạo robot Robotech. Chúng tôi tụ tập sau giờ học mỗi ngày và tự tạo ra robot của riêng mình. Ngày nay, rất dễ tìm thấy bộ dụng cụ để chế tạo robot của riêng bạn và đây là những gì chúng tôi sử dụng.<br>\
 <br>\
@@ -166,16 +162,16 @@ voca:"create,annual,design,robot,secret,highlight,maze,fine,nowadays,competition
 },
 {
 en:"Unit 9 Online Chatting<br>\
-W: Philip, are you still chatting online? It’s 9:30 p.m. You have an exam tomorrow.<br>\
-B : Yes, Mom. I’ll get off in a minute.<br>\
-W: I read some articles about chatting online. I’m not so sure you should be spending so much time in front of your computer.<br>\
-B : Mom, that seems unfair. It can be very educational. You meet people from all over the world who talk about lots of different things.<br>\
+W: Philip, are you still chatting online? It's 9:30 pm. You have an exam tomorrow.<br>\
+B: Yes, Mom. I'll get off in a minute.<br>\
+W: I read some articles about chatting online. I'm not so sure you should be spending so much time in front of your computer.<br>\
+B: Mom, that seems unfair. It can be very educational. You meet people from all over the world who talk about lots of different things.<br>\
 W: OK, maybe these people share their knowledge. I still think it is better to join clubs and socialize with real people.<br>\
-B : Do you think chatting online causes bad behavior?<br>\
+B: Do you think chatting online causes bad behavior?<br>\
 W: Online chatting can be very addictive, not to mention expensive.<br>\
-B : Well, if you have DSL, chatting is not expensive. Also, not everyone who chats is an addict. Disabled people are better able to socialize online. You know, not every area is wheelchair-accessible.<br>\
-W: True. However, I’ve read that there are lots of strange people online who are dangerous.<br>\
-B : I’ll be careful. Besides, you can always see what I am writing and who I am writing to. In my opinion, the biggest fault with chatting online is the lag time or delay in the system.<br>\
+B: Well, if you have DSL, chatting is not expensive. Also, not everyone who chats is an addict. Disabled people are better able to socialize online. You know, not every area is wheelchair-accessible.<br>\
+W: True. However, I've read that there are lots of strange people online who are dangerous.<br>\
+B: I'll be careful. Besides, you can always see what I am writing and who I am writing to. In my opinion, the biggest fault with chatting online is the lag time or delay in the system.<br>\
 W: I agree, I have noticed that there is some lag time in you getting off the computer!",
 vi:"Bài 9 Trò chuyện trực tuyến<br>\
 W: Philip, con vẫn trò chuyện trực tuyến chứ? Bây giờ là 9:30 tối. Ngày mai con có bài kiểm tra.<br>\
@@ -194,7 +190,7 @@ voca:"articles,share,mention,educational,fault,socialize,addicted,disabled,acces
 {
 en:"Unit 10 The Nobel Prize<br>\
 - One of the greatest achievements in the world is to win the Nobel Prize. It has been given to people since 1901. There are prizes for physics, chemistry, and medicine. There are also prizes for literature, economics, and peace. The Nobel Prize is named after Alfred Nobel. He was born in Stockholm, Sweden, in 1833. Alfred Nobel invented dynamite in 1866. Dynamite is used in mining, construction, and war. Before he died, he wrote that all of his money should be used to create the Nobel Prize. He died in 1896. The first prize was given in 1901.<br>\
-- Each prize has three parts: a diploma, a gold medal, and money. The money has increased since 1980. It is now ten million Swedish crowns. This is about one million euros. How are the winners chosen? Five committees secretly meet to pick the winners. The Nobel Prize for Economics is the only one that is not decided that way. That is because it was created in 1956 by the Bank of Sweden in honor of the fiftieth anniversary of Alfred Nobel’s death. The Bank of Sweden decides who gets the Nobel Prize for Economics. Since 1901, over 750 people have won the Nobel Prize."
+- Each prize has three parts: a diploma, a gold medal, and money. The money has increased since 1980. It is now ten million Swedish crowns. This is about one million euros. How are the winners chosen? Five committees secretly meet to pick the winners. The Nobel Prize for Economics is the only one that is not decided that way. That is because it was created in 1956 by the Bank of Sweden in honor of the fiftieth anniversary of Alfred Nobel's death. The Bank of Sweden decides who gets the Nobel Prize for Economics. Since 1901, over 750 people have won the Nobel Prize."
 ,
 vi:"Bài 10 Giải Nobel<br>\
 - Một trong những thành tựu vĩ đại nhất trên thế giới là giành được Giải Nobel. Giải thưởng này đã được trao cho mọi người từ năm 1901. Có các giải thưởng về vật lý, hóa học và y học. Ngoài ra còn có các giải thưởng về văn học, kinh tế và hòa bình. Giải Nobel được đặt theo tên của Alfred Nobel. Ông sinh ra tại Stockholm, Thụy Điển, vào năm 1833. Alfred Nobel đã phát minh ra thuốc nổ vào năm 1866. Thuốc nổ được sử dụng trong khai thác mỏ, xây dựng và chiến tranh. Trước khi mất, ông đã viết rằng toàn bộ số tiền của mình nên được dùng để tạo ra Giải Nobel. Ông mất năm 1896. Giải thưởng đầu tiên được trao vào năm 1901.<br>\
@@ -264,8 +260,8 @@ note:'distress|danger'
 },
 {
 en:"Unit 14 A Faux Pas<br>\
-G : It happens a lot. So many people visit and live in foreign countries nowadays. The culture and manners of every country are different. It is likely that a foreigner will say or do something inappropriate. This is called a faux pas. In one culture, it is fine to do something one way. In another culture, it is rude.<br>\
-For example, my friend visited a relative in Israel. She offered to wash the dishes. She did not know that it was important to wash the meat dishes with a special sponge. She used the wrong sponge. Her friend’s father was very upset. In Canada, it is fine to use the same sponge to wash all of the dishes, but not in Israel.<br>\
+G: It happens a lot. So many people visit and live in foreign countries nowadays. The culture and manners of every country are different. It is likely that a foreigner will say or do something inappropriate. This is called a faux pas. In one culture, it is fine to do something one way. In another culture, it is rude.<br>\
+For example, my friend visited a relative in Israel. She offered to wash the dishes. She did not know that it was important to wash the meat dishes with a special sponge. She used the wrong sponge. Her friend's father was very upset. In Canada, it is fine to use the same sponge to wash all of the dishes, but not in Israel.<br>\
 Something similar happened to me when I visited a temple in India. I was surprised when two officials stopped me and told me to take off my shoes. It was only then that I realized that people are not allowed to enter a temple with their shoes on. I was very embarrassed. Of course, I apologized for my mistake.<br>\
 A faux pas is embarrassing. No one wants to be rude. No one wants to cause problems. However, when two cultures meet, there can be misunderstandings. The next time someone is rude, be patient and understanding. He may think he is acting politely."
 ,vi:"Bài 14 Một lỗi sai<br>\
@@ -483,18 +479,18 @@ M: Chơi phòng thủ rất vất vả. Nghỉ ngơi một lát, sau đó chúng
 	title:"Unit 22 The Importance of Writing",
 	en:"Unit 22 The Importance of Writing<br>\
 B: This is terrible! I hate this assignment. <br>\
-W: What’s wrong, Timmy?<br>\
-B: I am frustrated because I need to write a book report, and I can’t get started.<br>\
-W: May I see your paper? There’s nothing here!<br>\
-B: I can’t think of anything to write, and it’s due tomorrow. To make matters worse, we have to perform an oral presentation in front of the entire class. I don’t see the purpose of writing a book report, anyway.<br>\
-W: Writing is a necessary skill that you’ll use for the rest of your life. This book report is just one way to begin learning that skill. It’s another form of communication and a means of expressing your thoughts. It allows others to understand what is in your heart and mind. <br>\
-B: I’ve never had to write before. Why should I start now?<br>\
+W: What's wrong, Timmy?<br>\
+B: I am frustrated because I need to write a book report, and I can't get started.<br>\
+W: May I see your paper? There's nothing here!<br>\
+B: I can't think of anything to write, and it's due tomorrow. To make matters worse, we have to perform an oral presentation in front of the entire class. I don't see the purpose of writing a book report, anyway.<br>\
+W: Writing is a necessary skill that you'll use for the rest of your life. This book report is just one way to begin learning that skill. It's another form of communication and a means of expressing your thoughts. It allows others to understand what is in your heart and mind. <br>\
+B: I've never had to write before. Why should I start now?<br>\
 W: Now is the best time to begin. The best writers read a lot, and practice writing. Anyone can learn to write well. I know you can do it.<br>\
 B: OK, Mom. When you put it that way, I think I can do it.<br>\
-W: That’s the right attitude. Let’s try to organize some of your thoughts by brainstorming. What can you tell me about the book?<br>\
-B: The book? I’ve only watched the movie! Does that count?<br>\
+W: That's the right attitude. Let's try to organize some of your thoughts by brainstorming. What can you tell me about the book?<br>\
+B: The book? I've only watched the movie! Does that count?<br>\
 W: Oh, goodness! What kind of child am I raising?<br>\
-B: One that probably won’t be a famous writer!"
+B: One that probably won't be a famous writer!"
 	,vi:"Bài 22 Tầm quan trọng của việc viết<br>\
 B: Bài này tệ quá! Mình ghét bài tập này. <br>\
 W: Có chuyện gì vậy, Timmy?<br>\
@@ -546,7 +542,7 @@ W: Được thôi, nhưng đừng phàn nàn với tôi nếu bạn được đi
 {
 	title:" Unit 24 Food, Family, and Fun",
 	en:"Unit 24 Food, Family, and Fun<br>Thanksgiving is a special family holiday in America. Families come together to give thanks for all they have. Although every family celebrates in slightly different ways, a typical Thanksgiving is full of food, family, and fun. My family celebrates Thanksgiving, too.<br>\
-Everyone in my family goes to my parents’ place for Thanksgiving. We have a large meal. Everyone helps on Thanksgiving. The children set the table. My mother cooks the turkey using her own secret ingredients. My father makes the side dishes. He makes potatoes, beans, carrots, stuffing, oysters, and beets. My mom makes cranberry sauce. My sister-in-law brings a pumpkin pie. I come early to help my parents cook.<br>\
+Everyone in my family goes to my parents' place for Thanksgiving. We have a large meal. Everyone helps on Thanksgiving. The children set the table. My mother cooks the turkey using her own secret ingredients. My father makes the side dishes. He makes potatoes, beans, carrots, stuffing, oysters, and beets. My mom makes cranberry sauce. My sister-in-law brings a pumpkin pie. I come early to help my parents cook.<br>\
 When it is time to eat, we put all the food on the table. Everyone sits down. We each say what we are thankful for before we eat. Some of us are thankful for our health, and others are thankful for their jobs. Everyone is thankful for something different.<br>\
 There is a lot of activity after the meal. My aunt and uncle clean off the table. My sister-in-law helps me wash the dishes. The teenagers wash and put away the silverware. The children help to tidy the dining room. My brothers take out the garbage. Then they go play football in the backyard. The rest of us sit down and relax. We are thankful for the food and our blessings. Most of all, we are thankful to have each other."
 	,vi:"Bài 24 Thực phẩm, Gia đình và Vui chơi<br>Lễ Tạ ơn là một ngày lễ gia đình đặc biệt ở Mỹ. Các gia đình tụ họp lại để cảm ơn tất cả những gì họ có. Mặc dù mỗi gia đình ăn mừng theo những cách hơi khác nhau, nhưng một Lễ Tạ ơn điển hình luôn tràn ngập đồ ăn, gia đình và niềm vui. Gia đình tôi cũng ăn mừng Lễ Tạ ơn.<br>\
@@ -558,15 +554,15 @@ Có rất nhiều hoạt động sau bữa ăn. Cô và chú tôi dọn dẹp b�
 {
 	title:"Unit 25 The Project",
 	en:"Unit 25 The Project<br>\
-B: Hey Dad! Do you think you can help me out? I’ve just been assigned this enormous project at school, and I really don’t know where to begin.<br>\
-M: Sure Jason, I’ll give it my best shot. <br>\
+B: Hey Dad! Do you think you can help me out? I've just been assigned this enormous project at school, and I really don't know where to begin.<br>\
+M: Sure Jason, I'll give it my best shot. <br>\
 B: Oh, Dad, I know you will be a great help and inspiration to me.<br>\
-M: OK, OK. That’s enough flattery from you for one day. What’s this project about?<br>\
+M: OK, OK. That's enough flattery from you for one day. What's this project about?<br>\
 B: Well, I have two choices. I can research a profession, or I can interview someone that I admire about their profession. If I do the second option, I must also add my own opinion about their profession.<br>\
 M: Well, I am an expert when it comes to my profession. Accounting is a noble profession and one that I am always happy to talk about.<br>\
-B: Dad, I know how much you love your career. It isn’t that I don’t admire you. But what I was hoping actually, was that you could speak to Mr. Chang, your diving friend, and see if he would agree to an interview. Diving for a living sounds cool!<br>\
-M: I see. That’s a great idea! You know how I really dislike talking about myself for too long. Let me give David Chang a call right now and find out.<br>\
-B: Thanks, Dad! You’re the best! I know this will be an awesome project!"
+B: Dad, I know how much you love your career. It isn't that I don't admire you. But what I was hoping actually, was that you could speak to Mr. Chang, your diving friend, and see if he would agree to an interview. Diving for a living sounds cool!<br>\
+M: I see. That's a great idea! You know how I really dislike talking about myself for too long. Let me give David Chang a call right now and find out.<br>\
+B: Thanks, Dad! You're the best! I know this will be an awesome project!"
 	,vi:"Bài 25 Dự án<br>\
 B: Này bố! Bố có thể giúp con không? Con vừa được giao một dự án lớn ở trường, và con thực sự không biết phải bắt đầu từ đâu.<br>\
 M: Được thôi Jason, con sẽ cố gắng hết sức. <br>\
@@ -591,9 +587,9 @@ G: Well, one time he needed to break down a door. He was carrying a little girl 
 B: Was everyone all right?<br>\
 G: All five people living there escaped safely, but the house burned to the ground.<br>\
 B: Your dad is incredibly brave, a real hero. What does he do at the fire station?<br>\
-G: He resides there for a few days when he works. All of the firefighters cook, eat, and clean together. When there’s a fire, they slide down a pole into the fire station’s garage to get their fire-fighting equipment. They quickly put on their gear and then jump onto the fire trucks. My dad loves to drive the fire trucks.<br>\
+G: He resides there for a few days when he works. All of the firefighters cook, eat, and clean together. When there's a fire, they slide down a pole into the fire station's garage to get their fire-fighting equipment. They quickly put on their gear and then jump onto the fire trucks. My dad loves to drive the fire trucks.<br>\
 B:Wow! Maybe I should be a firefighter someday.<br>\
-G: I’m definitely going to be a firefighter, Ian. I want to be just like my dad."
+G: I'm definitely going to be a firefighter, Ian. I want to be just like my dad."
 	,vi:"Bài tập số 26<br>\
 B: Xin chào Wendy! Bạn đã làm bài tập về nhà về ai?<br>\
 G: Tôi viết về bố tôi vì ông ấy là lính cứu hỏa.<br>\
@@ -612,11 +608,11 @@ G: Tôi chắc chắn sẽ trở thành lính cứu hỏa, Ian. Tôi muốn tr�
 {
 	title:"Unit 27 CoCo Lee",
 	en:"Unit 27 CoCo Lee<br>\
-G: Ferren Lee’s mother hoped her daughter would follow in her footsteps and become a doctor. However, Ferren always knew she wanted to sing.<br>\
+G: Ferren Lee's mother hoped her daughter would follow in her footsteps and become a doctor. However, Ferren always knew she wanted to sing.<br>\
 In her spare time, Ferren sang along with pop songs. Ferren also entered singing contests. She won many competitions. Her big break came after high school. She was on vacation in Hong Kong and took second place in an important singing competition. She got a recording contract with Fancy Pie Records, and, a few years later, Sony.<br>\
-Today, CoCo Lee, as she is now known, is one of the most famous pop singers in the world. She was born in Hong Kong on January 17, 1975, but she was raised in San Francisco. She has made records in English and Chinese. Her 1998 album, DiDaDi, won the MTV Asia music award for best album and best music video. CoCo’s next album was in English. It was called Just No Other Way. It introduced her to American audiences.<br>\
+Today, CoCo Lee, as she is now known, is one of the most famous pop singers in the world. She was born in Hong Kong on January 17, 1975, but she was raised in San Francisco. She has made records in English and Chinese. Her 1998 album, DiDaDi, won the MTV Asia music award for best album and best music video. CoCo's next album was in English. It was called Just No Other Way. It introduced her to American audiences.<br>\
 Apart from her beautiful voice and stunning looks, CoCo Lee is intelligent. She had a 3.8 grade-point average in college. She also earned a double major in bio-chemistry and bio-science. One of her dreams, she says, is to help find a cure for cancer.<br>\
-Who knows? CoCo’s mother may yet get her wish."
+Who knows? CoCo's mother may yet get her wish."
 	,vi:"Unit 27 CoCo Lee<br>\
 G: Mẹ của Ferren Lee hy vọng con gái bà sẽ theo bước chân của bà và trở thành bác sĩ. Tuy nhiên, Ferren luôn biết rằng cô bé muốn ca hát.<br>\
 Vào thời gian rảnh rỗi, Ferren hát theo các bài hát nhạc pop. Ferren cũng tham gia các cuộc thi ca hát. Cô đã giành chiến thắng trong nhiều cuộc thi. Bước đột phá lớn của cô đến sau khi học xong trung học. Cô đang đi nghỉ ở Hồng Kông và giành giải nhì trong một cuộc thi ca hát quan trọng. Cô đã ký hợp đồng thu âm với Fancy Pie Records và vài năm sau là Sony.<br>\
@@ -628,19 +624,19 @@ Ai mà biết được? Mẹ của CoCo có thể đạt được ước nguyệ
 {
 	title:"Unit 28 A Blind Date",
 	en:"Unit 28 A Blind Date<br>\
-W: What’s wrong, Mike? You appear to be depressed.<br>\
-M: I haven’t slept in days, and I feel awful. My fiancée and I broke up just before I went to Madrid for the concert.<br>\
-W: Why didn’t you say something? No wonder your playing sounded so bad. Oh dear, I’m really sorry.<br>\
+W: What's wrong, Mike? You appear to be depressed.<br>\
+M: I haven't slept in days, and I feel awful. My fiancée and I broke up just before I went to Madrid for the concert.<br>\
+W: Why didn't you say something? No wonder your playing sounded so bad. Oh dear, I'm really sorry.<br>\
 M: It was an appalling performance, I agree. I was miserable and unhappy, but I had to perform, anyway.<br>\
 W: Have you been seeing anyone else since you broke up with her?<br>\
-M: No, I have been working overtime instead. The conductor was not pleased with my last performance. Besides, don’t you think it’s too soon?<br>\
-W: Not at all. You might just need to get out and socialize. Hey, I’ve got a fabulous idea!<br>\
+M: No, I have been working overtime instead. The conductor was not pleased with my last performance. Besides, don't you think it's too soon?<br>\
+W: Not at all. You might just need to get out and socialize. Hey, I've got a fabulous idea!<br>\
 M: Oh no, not another one of your ideas. What is it this time?<br>\
 W: Do you remember me telling you about Julia, a friend from work?<br>\
 M: I think so. Why?<br>\
 W: Well, she is single. I could set up the two of you. <br>\
 M: A blind date? I tried that when I was younger, and it was a disaster.<br>\
-W: Come on, Mike. I’d be helping two friends who will, of course, have a great time together. She has a charming personality, and she also plays the oboe. You can go to the concert in the park on Saturday afternoon. Maybe you can have coffee afterwards.<br>\
+W: Come on, Mike. I'd be helping two friends who will, of course, have a great time together. She has a charming personality, and she also plays the oboe. You can go to the concert in the park on Saturday afternoon. Maybe you can have coffee afterwards.<br>\
 M: She plays the oboe? OK. Let me know when and where to meet her."
 	,vi:"Bài 28 Một cuộc hẹn hò giấu mặt<br>\
 W: Có chuyện gì vậy, Mike? Có vẻ như anh đang bị trầm cảm.<br>\
@@ -800,8 +796,8 @@ W: Tôi rất cảm kích sự quan tâm của bạn. Tôi đang nghĩ đến vi
 	en:"Unit 35 Soccer Rules<br>\
 Soccer is one of the most popular sports in the world. Although the main idea of the game is easy to understand, there are many rules to be followed.<br>\
 A player gets a yellow card for not following the rules. A yellow card is a warning. If a player keeps breaking the rules, he gets a red card. When this happens, he cannot play anymore. He is ejected from the game.<br>\
-Another rule is about 'handling.' 'Handling' is when another player touches the ball with his hands on purpose. Players cannot handle the ball. A player may not do anything that is dangerous to another player. He cannot kick an opponent’s legs to get the ball.<br>\
-There are also some lesser-known rules. A player is not allowed to impede an opponent. This means that a player cannot purposely slow down another player on the field. A penalty can be called if this occurs. There is a rule about blocking a goalkeeper, too. A yellow card or an indirect kick can be given to the opponent’s team if a player tries this. Yes, soccer is full of rules!"
+Another rule is about 'handling.' 'Handling' is when another player touches the ball with his hands on purpose. Players cannot handle the ball. A player may not do anything that is dangerous to another player. He cannot kick an opponent's legs to get the ball.<br>\
+There are also some lesser-known rules. A player is not allowed to impede an opponent. This means that a player cannot purposely slow down another player on the field. A penalty can be called if this occurs. There is a rule about blocking a goalkeeper, too. A yellow card or an indirect kick can be given to the opponent's team if a player tries this. Yes, soccer is full of rules!"
 	,vi:"Bài 35 Luật bóng đá<br>\
 Bóng đá là một trong những môn thể thao phổ biến nhất trên thế giới. Mặc dù ý tưởng chính của trò chơi rất dễ hiểu, nhưng có rất nhiều luật cần tuân thủ.<br>\
 Một cầu thủ sẽ nhận thẻ vàng vì không tuân thủ luật. Thẻ vàng là một lời cảnh cáo. Nếu một cầu thủ tiếp tục vi phạm luật, anh ta sẽ nhận thẻ đỏ. Khi điều này xảy ra, anh ta không được chơi nữa. Anh ta sẽ bị đuổi khỏi trò chơi.<br>\

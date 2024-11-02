@@ -331,6 +331,7 @@ habitat (n) /ˈhæbɪtæt/ môi trường sống<br>\
 extend (v) /ɪkˈstend/ mở rộng<br>\
 terrestrial (a) /təˈrestriəl/ loài trên cạn<br>\
 aquatic (a) /əˈkwɑːtɪk/ loài sống ở nước<br>\
+restore (v) /rɪˈstɔːr/ khôi phục<br>\
 felling (n) /felling/ đốn ngã<br>\
 pollutant (n) /pəˈluːtənt/ chất gây ô nhiễm<br>\
 sanctuary (n) /ˈsæŋktʃueri/ khu bảo tồn<br>\
@@ -343,6 +344,7 @@ Decompose (v) /diː.kəmˈpəʊz/ Phân hủy<br>\
 Balance (n) /ˈbæl.əns/ Sự cân bằng<br>\
 Global warming (n) /ɡləʊ.bəl ˈwɔː.mɪŋ/ Nóng lên toàn cầu<br>\
 Oil slick (n) /ˈɔɪl slɪk/ Dầu loang<br>\
+Oil (n) /ɔɪl/ Dầu<br>\
 Ozone layer (n) /ˈəʊ.zəʊn leɪ.ər/ Tầng ozon<br>\
 Biodiversity (n) /baɪ.əʊ.daɪˈvɜː.sə.t i/ Đa dạng sinh học<br>\
 Ecology (n) /iˈkɒl.ə.dʒi/ Sinh thái học<br>\
@@ -892,7 +894,6 @@ Speed limit (n) /spiːd ˈlɪmɪt/ Giới hạn tốc độ<br>\
 Speeding fine (n) /ˈspiːdɪŋ faɪn/ Phạt tốc độ<br>\
 Level crossing (n) /ˈlevl ˈkrɔːsɪŋ/ Chỗ chắn tàu<br>\
 Jump leads (n) /dʒʌmp liːdz/ Dây sạc điện<br>\
-Oil (n) /ɔɪl/ Dầu<br>\
 Diesel (n) /ˈdiːzl/ Dầu diesel<br>\
 Petrol (n) /ˈpetrəl/ Xăng<br>\
 Unleaded (a) /ʌnˈledɪd/ Không chì<br>\
@@ -997,7 +998,7 @@ straightforward (a) /strert'f:wad/ thẳng thắn<br>\
 selfish (a) /'sεlfif/ ích kỷ<br>\
 stupid /'stju:pid/ đần độn<br>\
 loving /ˈlʌvɪŋ/ đáng yêu<br>\
-reliable /ri'laiǝbl/ đáng tin cậy <br>\
+reliable (n) /ri'laiǝbl/ đáng tin cậy <br>\
 scared /skeǝd/ sợ hãi<br>\
 conscientious /konfr'anJas/ tận tâm<br>\
 good-tempered /god'tampad/ hòa nhã<br>\

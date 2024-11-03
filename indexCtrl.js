@@ -7,17 +7,19 @@ var VocaToUI = WORDS_3K_DATA
 var VocaForSearch = VocaToUI
     .concat(IELTS_SYN)
     .concat(GRAMMER_DATA)
+    .concat(NATIONS)
 
 // for notedEbookCtrl
 var kAllStories = lptd_cd1_stories
   .concat(lptd_cd2_stories)
   .concat(lptd_cd3_stories)
+  .concat(lptd_cd4_stories)
   .concat(BOOK4K_1)
-  .concat(bridge_cd1)
+ // .concat(bridge_cd1)
   .concat(bridge_read_data)
-  .concat(complete_cd1)
+//  .concat(complete_cd1)
   .concat(complete_read_data)
-  .concat(listen_tracks)
+//  .concat(listen_tracks)
 
 var saveFromToastrVal = ''
 var searchData = [];

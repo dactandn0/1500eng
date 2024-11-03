@@ -456,5 +456,315 @@ Giáo viên tuyệt vời nhất mà tôi từng có là thầy Lambert, giáo v
 Có lần, thầy phải truyền đạt từ “above” mà không nói bằng tiếng Anh. Đầu tiên, thầy kéo một chiếc bàn gần bảng đen, sau đó đặt một thùng rác giữa bàn và bảng đen. Tiếp theo, thầy đặt chân lên mép bảng đen và đặt tay lên bàn sao cho thầy ở trên thùng rác. Tôi không bao giờ quên màn minh họa đó. Thật khó để không thích môn học này khi thầy ấy quá hào hứng khi được dạy môn đó.<br>\
 Lý do quan trọng nhất khiến thầy Lambert trở thành giáo viên tuyệt vời nhất mà tôi từng có là thầy yêu thương tất cả học sinh của mình, ngay cả khi chúng tôi làm thầy tức giận vì nói tiếng Anh trong lớp. Bất cứ khi nào điều đó xảy ra, học sinh luôn cảm thấy tội lỗi vì họ rất tôn trọng thầy. Bây giờ tôi đã là một giáo viên, tôi cố gắng hết sức để giống như thầy Lambert. Thầy là hình mẫu của tôi."
 	,voca:"",
+},
+{
+	title:"Unit 26 Meet Debra",
+	en:"Unit 26 Meet Debra<br>\
+Hi! My name is Debra Garrel.  I'm a 20 year-old communications major at New York University. I love being at university. I'm enjoying my courses and I meet many new people every day. It seems like a new adventure, and I love adventures!<br>\
+I spent my childhood traveling all over the world and learning about different cultures. You see, my father works for the World Bank, so our family has always moved around a lot. I've lived in Mongolia, East Timor, Brazil, Nigeria, the Netherlands, and the United States. The hardest part of growing up was saying goodbye each time we had to move. But I would always remind myself that I would make new friends soon, and I always did. I've learned not to be shy!<br>\
+After leaving one place, I would always email or call my old friends. I would tell them about the new adventures I was having, and ask them about new things in their lives. That is probably the reason I chose to major in communications. I like to keep in touch.<br>\
+It's obvious that I love to travel, isn't it? But I also enjoy dancing, reading, going to the theater, and riding horses. If you share any of these interests and would like to learn more about me, please let me know. And if you have different interests, I'll remind you: I'm always looking for a new adventure!"
+	,vi:"Bài 26 Gặp gỡ Debra<br>\
+Xin chào! Tôi tên là Debra Garrel. Tôi là sinh viên chuyên ngành truyền thông 20 tuổi tại Đại học New York. Tôi thích được học ở trường đại học. Tôi thích các khóa học của mình và gặp gỡ nhiều người mới mỗi ngày. Có vẻ như đây là một cuộc phiêu lưu mới và tôi thích phiêu lưu!<br>\
+Tôi đã dành thời thơ ấu của mình để đi du lịch khắp thế giới và tìm hiểu về các nền văn hóa khác nhau. Bạn thấy đấy, bố tôi làm việc cho Ngân hàng Thế giới, vì vậy gia đình tôi luôn phải di chuyển rất nhiều. Tôi đã từng sống ở Mông Cổ, Đông Timor, Brazil, Nigeria, Hà Lan và Hoa Kỳ. Phần khó khăn nhất khi trưởng thành là phải nói lời tạm biệt mỗi khi chúng tôi phải chuyển đi. Nhưng tôi luôn tự nhắc nhở mình rằng tôi sẽ sớm có những người bạn mới, và tôi luôn làm được như vậy. Tôi đã học được cách không ngại ngùng!<br>\
+Sau khi rời khỏi một nơi nào đó, tôi luôn gửi email hoặc gọi điện cho những người bạn cũ. Tôi sẽ kể cho họ nghe về những cuộc phiêu lưu mới mà tôi đang có và hỏi họ về những điều mới mẻ trong cuộc sống của họ. Đó có lẽ là lý do tôi chọn chuyên ngành truyền thông. Tôi thích giữ liên lạc.<br>\
+Rõ ràng là tôi thích đi du lịch, phải không? Nhưng tôi cũng thích khiêu vũ, đọc sách, đi xem kịch và cưỡi ngựa. Nếu bạn chia sẻ bất kỳ sở thích nào trong số này và muốn tìm hiểu thêm về tôi, vui lòng cho tôi biết. Và nếu bạn có sở thích khác, tôi sẽ nhắc bạn: Tôi luôn tìm kiếm một cuộc phiêu lưu mới!"
+	,voca:"",
+},
+{
+	title:"Unit 27 What’s in a Name?",
+	en:"Unit 27 What’s in a Name?<br>\
+W:  Sy, do you have a local driver’s license that we can rent the car with for our trip this weekend?<br>\
+M: Sure, Jen, here you are.<br>\
+W:  It says here that your name is Sarang Patel, but I thought your first name was Sy!<br>\
+M: Sy is my nickname, and Sarang is my given name. It means 'navigator' in Hindi. At the time I was born, things were confusing and difficult for my family in India. My parents wanted a son who could lead and guide our family to success.<br>\
+W: Well, I just hope you can lead and guide all of us to the beach this weekend.<br>\
+M: Ha ha, very funny! So, your nickname is Jen, and your given name’s Jennifer. Do you know how you got that name?<br>\
+W: Actually, I was named after my father’s grandmother, Guinevere.<br>\
+M:Wasn’t Guinevere the wife of King Arthur in that old story from England?<br>\
+W: Yes she was, and her name means 'pure'.<br>\
+M: It’s interesting how people get their names. In India, we don’t name children after their relatives like they do in America. To me, it’s strange to see names like Jack Johnson Junior and George Bush Senior.<br>\
+W: Usually it’s a way to show respect for a person, but some people make it ridiculous. You’ve heard about George Foreman, the famous boxer, haven’t you?<br>\
+M: No.<br>\
+W: Well, he had five boys, and he named each one of them George, after himself.<br>\
+M: It must be confusing when the phone rings at his house!"
+	,vi:"Bài 27 Tên có ý nghĩa gì?<br>\
+W: Sy, bạn có bằng lái xe địa phương để chúng ta có thể thuê xe cho chuyến đi cuối tuần này không?<br>\
+M: Chắc chắn rồi, Jen, đây rồi.<br>\
+W: Ở đây ghi tên bạn là Sarang Patel, nhưng tôi nghĩ tên bạn là Sy!<br>\
+M: Sy là biệt danh của tôi, còn Sarang là tên khai sinh của tôi. Nó có nghĩa là 'hoa tiêu' trong tiếng Hindi. Vào thời điểm tôi sinh ra, mọi thứ rất khó khăn và phức tạp đối với gia đình tôi ở Ấn Độ. Bố mẹ tôi muốn một người con trai có thể dẫn dắt và chỉ dẫn gia đình chúng tôi đến thành công.<br>\
+W: Vâng, tôi chỉ hy vọng bạn có thể dẫn dắt và chỉ dẫn tất cả chúng tôi đến bãi biển vào cuối tuần này.<br>\
+M: Ha ha, buồn cười quá! Vậy biệt danh của bạn là Jen, còn tên khai sinh của bạn là Jennifer. Bạn có biết bạn lấy tên đó từ đâu không?<br>\
+W: Thực ra, tôi được đặt tên theo bà của cha tôi, Guinevere.<br>\
+M: Guinevere không phải là vợ của Vua Arthur trong câu chuyện cổ tích của Anh sao?<br>\
+W: Đúng vậy, và tên của bà có nghĩa là 'trong sáng'.<br>\
+M: Thật thú vị khi mọi người lấy tên của họ. Ở Ấn Độ, chúng tôi không đặt tên con theo tên họ hàng như ở Mỹ. Đối với tôi, thật lạ khi thấy những cái tên như Jack Johnson Junior và George Bush Senior.<br>\
+W: Thông thường đó là cách thể hiện sự tôn trọng đối với một người, nhưng một số người lại coi đó là điều nực cười. Bạn đã nghe về George Foreman, một võ sĩ quyền Anh nổi tiếng, phải không?<br>\
+M: Không.<br>\
+W: Vâng, ông ấy có năm người con trai, và ông ấy đặt tên cho từng người trong số họ là George, theo tên của chính mình.<br>\
+M: Chắc hẳn rất khó hiểu khi điện thoại reo ở nhà ông ấy!"
+	,voca:"",
+},
+{
+	title:"Unit 28 The Right Career",
+	en:"Unit 28 The Right Career<br>\
+People need to consider important factors when choosing a career. In my opinion, the most important factor is to choose a job that goes well with your personality. Are you an outgoing person who loves meeting new people and talking to them? Perhaps you should become a tour guide or a teacher. Are you shy? Maybe you should be an accountant or a scientist.<br>\
+Remember, you will do your job almost every day. If you have to change your personality when you work, you probably won’t be very happy. And neither will the people you work with. Nobody wants an unfriendly tour guide or an impatient teacher. Are you a moody person? In most jobs, you will be expected to control your emotions. That’s hard to do if your mood changes often. In that case, you might want to work alone. Perhaps you could be a writer or an artist.<br>\
+There are other factors to consider, such as salary and status. However, what good is a large salary or high status if you don’t like your job? You should consider your personality, find out what you are very good at doing, and then find the right career to go with all this. Too many people choose a career because it pays well. Too often, they find they don’t like their jobs. But by then they feel like they’re in a trap, and they can’t escape. Finding a good career is important. Think about it and choose carefully."
+	,vi:"Bài 28 Nghề nghiệp phù hợp<br>\
+Mọi người cần cân nhắc các yếu tố quan trọng khi lựa chọn nghề nghiệp. Theo tôi, yếu tố quan trọng nhất là chọn công việc phù hợp với tính cách của bạn. Bạn có phải là người hướng ngoại, thích gặp gỡ và trò chuyện với mọi người không? Có lẽ bạn nên trở thành hướng dẫn viên du lịch hoặc giáo viên. Bạn có nhút nhát không? Có lẽ bạn nên trở thành kế toán hoặc nhà khoa học.<br>\
+Hãy nhớ rằng, bạn sẽ làm công việc của mình hầu như mỗi ngày. Nếu bạn phải thay đổi tính cách khi làm việc, có lẽ bạn sẽ không vui lắm. Và những người bạn làm việc cùng cũng vậy. Không ai muốn một hướng dẫn viên du lịch không thân thiện hoặc một giáo viên thiếu kiên nhẫn. Bạn có phải là người hay thay đổi tâm trạng không? Trong hầu hết các công việc, bạn sẽ được yêu cầu kiểm soát cảm xúc của mình. Điều đó khó thực hiện nếu tâm trạng của bạn thay đổi thường xuyên. Trong trường hợp đó, bạn có thể muốn làm việc một mình. Có lẽ bạn có thể trở thành một nhà văn hoặc một nghệ sĩ.<br>\
+Có những yếu tố khác cần cân nhắc, chẳng hạn như mức lương và địa vị. Tuy nhiên, mức lương cao hay địa vị cao có ích gì nếu bạn không thích công việc của mình? Bạn nên cân nhắc tính cách của mình, tìm ra điều bạn thực sự giỏi, và sau đó tìm đúng nghề nghiệp để đi cùng với tất cả những điều này. Quá nhiều người chọn nghề nghiệp vì nó trả lương cao. Quá thường xuyên, họ thấy rằng họ không thích công việc của mình. Nhưng đến lúc đó, họ cảm thấy như mình đang ở trong một cái bẫy và họ không thể thoát ra được. Tìm một nghề nghiệp tốt là điều quan trọng. Hãy suy nghĩ về điều đó và lựa chọn cẩn thận."
+	,voca:"",
+},
+{
+	title:"Unit 29 Body Language",
+	en:"Unit 29 Body Language<br>\
+Did you know that words are not the only thing we use to communicate? Most of our messages are sent through body language. Only about 10 percent of communication is done through the actual words of a conversation. Isn’t that strange? If we understand body language well, we can learn a lot more about what other people really think. We can also use body language to send the right message to others. Have you ever felt dislike for someone without knowing why? Well, he or she might have been sending out a negative message through body language.<br>\
+What kind of things should you look for if you want to understand body language? First, look at people’s eyes. If people are lying, they may not look directly at the person they are talking to, and the pupils of their eyes may shrink. Next, look at people’s arms. Arms crossed in front of the body might mean a person is unfriendly or afraid. He or she might be trying to say, 'Stay away'. If the arms are by the side or at the back of the body, the person might be saying, 'Come closer. I won’t hurt you'. But keep in mind that there is no accurate way to interpret body language all the time. Sometimes, talking is still the best way to communicate. However, knowing about body language will improve the way you communicate and help you understand other people better."
+	,vi:"Bài 29 Ngôn ngữ cơ thể<br>\
+Bạn có biết rằng lời nói không phải là thứ duy nhất chúng ta sử dụng để giao tiếp không? Hầu hết các thông điệp của chúng ta được truyền tải thông qua ngôn ngữ cơ thể. Chỉ có khoảng 10 phần trăm giao tiếp được thực hiện thông qua các từ ngữ thực tế trong một cuộc trò chuyện. Thật kỳ lạ phải không? Nếu chúng ta hiểu rõ ngôn ngữ cơ thể, chúng ta có thể học được nhiều hơn về những gì người khác thực sự nghĩ. Chúng ta cũng có thể sử dụng ngôn ngữ cơ thể để gửi đúng thông điệp đến người khác. Bạn đã bao giờ cảm thấy không thích ai đó mà không biết tại sao chưa? Vâng, có thể người đó đã gửi một thông điệp tiêu cực thông qua ngôn ngữ cơ thể.<br>\
+Bạn nên chú ý đến những điều gì nếu muốn hiểu ngôn ngữ cơ thể? Trước tiên, hãy nhìn vào mắt mọi người. Nếu mọi người đang nói dối, họ có thể không nhìn trực tiếp vào người mà họ đang nói chuyện và đồng tử mắt của họ có thể co lại. Tiếp theo, hãy nhìn vào cánh tay của mọi người. Khoanh tay trước cơ thể có thể có nghĩa là một người không thân thiện hoặc sợ hãi. Người đó có thể đang cố nói rằng, 'Tránh xa ra'. Nếu cánh tay ở bên cạnh hoặc ở phía sau cơ thể, người đó có thể đang nói, 'Đến gần hơn. Tôi sẽ không làm bạn đau'. Nhưng hãy nhớ rằng không có cách nào chính xác để diễn giải ngôn ngữ cơ thể mọi lúc. Đôi khi, nói chuyện vẫn là cách giao tiếp tốt nhất. Tuy nhiên, biết về ngôn ngữ cơ thể sẽ cải thiện cách bạn giao tiếp và giúp bạn hiểu người khác tốt hơn."
+	,voca:"",
+},
+{
+	title:"Unit 30 Veterinarians",
+	en:"Unit 30 Veterinarians<br>\
+If you like animals and science, you might want to be a veterinarian. Veterinarians are animal doctors. They take care of sick and injured animals. Like doctors, vets perform surgery and give medicine. <br>\
+When an animal is sick, vets examine it to find out why. They look for clues in the way an animal looks and acts. For example, if a dog is walking in a strange way, it might have injured its leg. Vets need to observe animals carefully, since animals cannot speak to tell anyone what is wrong.<br>\
+Vets prevent health problems in animals by giving vaccinations and check-ups and fixing teeth. They also teach owners how to feed and train their animals. Vets use special tools to perform surgery. They fix broken bones, take out tumors, take X-rays, and treat wounds.<br>\
+Most vets treat small pets, including dogs and cats. A few vets focus on large animals, such as sheep, cows, and horses. Large-animal vets usually drive to ranches and stables where their patients live. Often, they help when the animals give birth. Vets who work with large animals often work outside in all kinds of weather.<br>\
+A few vets work in zoos and aquariums. They care for zebras, sharks, and other wild creatures. Because animals can get sick at any time, vets often work long hours. Many vets like their work because they can be with animals every day, even though sick animals can sometimes bite or kick their vets."
+	,vi:"Đơn vị 30 Bác sĩ thú y<br>\
+Nếu bạn thích động vật và khoa học, bạn có thể muốn trở thành bác sĩ thú y. Bác sĩ thú y là bác sĩ thú y. Họ chăm sóc động vật bị bệnh và bị thương. Giống như bác sĩ, bác sĩ thú y thực hiện phẫu thuật và cho thuốc. <br>\
+Khi một con vật bị bệnh, bác sĩ thú y sẽ kiểm tra để tìm ra nguyên nhân. Họ tìm kiếm manh mối trong cách con vật trông và hành động. Ví dụ, nếu một con chó đi theo cách kỳ lạ, có thể nó đã bị thương ở chân. Bác sĩ thú y cần quan sát động vật cẩn thận, vì động vật không thể nói để cho bất kỳ ai biết điều gì không ổn.<br>\
+Bác sĩ thú y ngăn ngừa các vấn đề sức khỏe ở động vật bằng cách tiêm vắc-xin, kiểm tra và sửa răng. Họ cũng hướng dẫn chủ sở hữu cách cho ăn và huấn luyện động vật của mình. Bác sĩ thú y sử dụng các công cụ đặc biệt để thực hiện phẫu thuật. Họ sửa xương gãy, cắt bỏ khối u, chụp X-quang và điều trị vết thương.<br>\
+Hầu hết các bác sĩ thú y đều điều trị cho vật nuôi nhỏ, bao gồm chó và mèo. Một số bác sĩ thú y tập trung vào các động vật lớn, chẳng hạn như cừu, bò và ngựa. Bác sĩ thú y chuyên về động vật lớn thường lái xe đến các trang trại và chuồng trại nơi bệnh nhân của họ sinh sống. Họ thường giúp đỡ khi động vật sinh con. Bác sĩ thú y làm việc với động vật lớn thường làm việc ngoài trời trong mọi điều kiện thời tiết.<br>\
+Một số bác sĩ thú y làm việc trong sở thú và thủy cung. Họ chăm sóc ngựa vằn, cá mập và các loài động vật hoang dã khác. Vì động vật có thể bị bệnh bất cứ lúc nào, nên bác sĩ thú y thường làm việc nhiều giờ. Nhiều bác sĩ thú y thích công việc của họ vì họ có thể ở bên động vật mỗi ngày, mặc dù đôi khi động vật bị bệnh có thể cắn hoặc đá bác sĩ thú y của họ."
+	,voca:"",
+},
+{
+	title:"Unit 31 I Feel Awful!",
+	en:"Unit 31 I Feel Awful!<br>\
+B: Mom, I feel awful, I think I'd better stay home from school today.<br>\
+W: I'm sorry you're not feeling well. What's the problem?<br>\
+B: I have a stomachache, my head hurts, and I have a sore throat.<br>\
+W: Well, we'd better take your temperature and make sure you don't have a fever. Keep this thermometer under your tongue for a minute or two. Remind me to call your teacher and tell her you're sick later on today. All right, let's check. Oh dear, you've got a fever. Your temperature is 103, so I think we need to give Dr Thompson a call.<br>\
+B: I don't understand how my head can be so hot when my body feels so cold.<br>\
+W: That's called the chills, and they often come along with fever. You've certainly got a fever.<br>\
+B: But what about my stomachache, and my sore throat?<br>\
+W: Well, that's another reason we need to go see Dr Thompson, because when you have a stomachache, fever, chills, and a sore throat, it usually means that you have something more serious than a common cold. I think you've probably got the flu.<br>\
+B: I hope it's not too serious, because we've got a basketball game Thursday, and the coach told me that I'll probably start.<br>\
+W: If you want to recover from the flu in time for your game, you'd better get plenty of rest, take the medicine the doctor gives you, and drink plenty of water.<br>\
+B: I promise I will, Mom. Let's go and see Dr Thompson now."
+	,vi:"Bài 31 Con thấy tệ quá!<br>\
+B: Mẹ ơi, con thấy tệ quá, con nghĩ hôm nay con nên nghỉ học ở nhà.<br>\
+W: Con xin lỗi vì con không khỏe. Có vấn đề gì vậy?<br>\
+B: Con đau bụng, đau đầu và đau họng.<br>\
+W: Tốt hơn là chúng ta nên đo nhiệt độ và đảm bảo con không bị sốt. Đặt nhiệt kế này dưới lưỡi trong một hoặc hai phút. Nhắc mẹ gọi điện cho giáo viên và nói với cô ấy rằng con bị ốm vào cuối ngày hôm nay. Được rồi, chúng ta hãy kiểm tra. Ôi trời, con bị sốt. Nhiệt độ của con là 103 độ, vì vậy mẹ nghĩ chúng ta cần gọi cho Bác sĩ Thompson.<br>\
+B: Con không hiểu tại sao đầu con lại nóng như vậy khi cơ thể con lại lạnh như vậy.<br>\
+W: Đó gọi là ớn lạnh, và chúng thường đi kèm với sốt. Chắc chắn là con bị sốt rồi.<br>\
+B: Nhưng còn cơn đau bụng và đau họng của con thì sao?<br>\
+W: Vâng, đó là một lý do nữa khiến chúng ta cần đi khám Bác sĩ Thompson, vì khi bạn bị đau bụng, sốt, ớn lạnh và đau họng, thì thường có nghĩa là bạn bị thứ gì đó nghiêm trọng hơn cảm lạnh thông thường. Con nghĩ có lẽ con bị cúm.<br>\
+B: Con hy vọng là không quá nghiêm trọng, vì chúng ta có một trận bóng rổ vào thứ năm, và huấn luyện viên nói với con rằng có lẽ con sẽ bắt đầu.<br>\
+W: Nếu con muốn khỏi cúm kịp cho trận đấu, con nên nghỉ ngơi thật nhiều, uống thuốc bác sĩ đưa và uống thật nhiều nước.<br>\
+B: Con hứa là con sẽ làm vậy, mẹ ạ. Giờ chúng ta đi gặp Bác sĩ Thompson."
+	,voca:"",
+},
+{
+	title:"Unit 32 Why Do We Sneeze?",
+	en:"Unit 32 Why Do We Sneeze? <br>\
+A sneeze is a very interesting thing. We use many different muscles when we sneeze. These include stomach muscles, throat muscles, and eye muscles. Remember, our eyes always close during a sneeze.<br>\
+A sneeze begins when something gets inside your nose, like a tiny particle of dust. Your nose sends a message to your brain. Your brain sends messages to the muscles, getting them to work together in the correct order. When you sneeze, the dust that was in your nose flies out as fast as 100 miles an hour! Usually something like dust or cold air makes us sneeze, but some people sneeze whenever they look at the sun. Some people think that your heart stops when you sneeze. Actually, it really doesn’t, but sometimes it might feel like it does.<br>\
+After someone sneezes, people often say 'Bless you,' or 'God bless you'. To bless someone means to wish them good and special things. Why do people say this? Long ago, people believed that this saying kept bad things from flying down your throat. Another story is that people thought this saying would help keep the person who sneezed from getting a very serious disease called the plague. At that time, the plague was killing thousands of people. It was thought that saying 'God bless you' would protect people from getting this awful disease. Today, the saying is simply a nice way to wish someone well."
+	,vi:"Bài 32 Tại sao chúng ta hắt hơi? <br>\
+Hắt hơi là một điều rất thú vị. Chúng ta sử dụng nhiều cơ khác nhau khi hắt hơi. Bao gồm cơ bụng, cơ họng và cơ mắt. Hãy nhớ rằng, mắt chúng ta luôn nhắm lại khi hắt hơi.<br>\
+Hắt hơi bắt đầu khi có thứ gì đó lọt vào mũi bạn, chẳng hạn như một hạt bụi nhỏ. Mũi bạn gửi một thông điệp đến não. Não bạn gửi thông điệp đến các cơ, khiến chúng hoạt động cùng nhau theo đúng thứ tự. Khi bạn hắt hơi, bụi trong mũi bạn bay ra ngoài với tốc độ lên tới 100 dặm một giờ! Thông thường, thứ gì đó như bụi hoặc không khí lạnh khiến chúng ta hắt hơi, nhưng một số người hắt hơi bất cứ khi nào họ nhìn vào mặt trời. Một số người nghĩ rằng tim bạn ngừng đập khi bạn hắt hơi. Thực ra, không phải vậy, nhưng đôi khi bạn có thể cảm thấy như vậy.<br>\
+Sau khi ai đó hắt hơi, mọi người thường nói 'Chúa phù hộ bạn' hoặc 'Chúa phù hộ bạn'. Chúc phúc cho ai đó có nghĩa là chúc họ những điều tốt đẹp và đặc biệt. Tại sao mọi người lại nói thế? Từ lâu, mọi người tin rằng câu nói này sẽ ngăn những điều xấu bay xuống cổ họng bạn. Một câu chuyện khác là mọi người nghĩ rằng câu nói này sẽ giúp người hắt hơi không mắc phải một căn bệnh rất nghiêm trọng gọi là bệnh dịch hạch. Vào thời điểm đó, bệnh dịch hạch đã giết chết hàng ngàn người. Người ta nghĩ rằng nói 'Chúa phù hộ bạn' sẽ bảo vệ mọi người khỏi căn bệnh khủng khiếp này. Ngày nay, câu nói này chỉ đơn giản là một cách hay để chúc ai đó khỏe mạnh."
+	,voca:"",
+},
+{
+	title:"Unit 33 Skiing and Snowboarding",
+	en:"Unit 33 Skiing and Snowboarding<br>\
+My name is Michael Bryce, and I love to ski and snowboard. I am 16 years old, and I have been skiing since I was five, and snowboarding since I was eight. Both my parents like skiing, and my older brother likes snowboarding.<br>\
+In my opinion, snowboarding is more fun and exciting than skiing. When I ski, it feels really easy to control where I go and how I move. The ski poles make it very simple to change my direction. There are no poles in snowboarding, however, so when you snowboard, you have to understand the snow very well to make sure you don't fall. The feeling I get while I'm snowboarding is more exciting than when I'm skiing, because I like having less control. I enjoy the challenge. I never know what's going to happen. This makes it more exciting!<br>\
+Some people think that the reduced amount of control in snowboarding makes the sport more dangerous. But in my opinion, snowboarding is actually safer than skiing, because when you ski, you are standing on two skis. If you fall while on skis, it is very easy to break your bones by getting your skis stuck in the snow. On a snowboard, your legs stay together even when you fall. While I still love to ski, I like snowboarding much better. It is more fun and exciting, and maybe even safer, than skiing."
+	,vi:"Bài 33 Trượt tuyết và trượt ván trên tuyết<br>\
+Tôi tên là Michael Bryce, và tôi thích trượt tuyết và trượt ván trên tuyết. Tôi 16 tuổi, và tôi đã trượt tuyết từ năm năm tuổi, và trượt ván trên tuyết từ năm tám tuổi. Cả bố mẹ tôi đều thích trượt tuyết, và anh trai tôi thích trượt ván trên tuyết.<br>\
+Theo tôi, trượt ván trên tuyết vui hơn và thú vị hơn trượt tuyết. Khi trượt tuyết, tôi cảm thấy rất dễ kiểm soát hướng đi và cách di chuyển. Gậy trượt tuyết giúp tôi dễ dàng thay đổi hướng đi. Tuy nhiên, trượt ván trên tuyết không có gậy, vì vậy khi trượt ván trên tuyết, bạn phải hiểu rõ về tuyết để đảm bảo không bị ngã. Cảm giác khi trượt ván trên tuyết thú vị hơn khi trượt tuyết, vì tôi thích ít kiểm soát hơn. Tôi thích thử thách. Tôi không bao giờ biết điều gì sẽ xảy ra. Điều này khiến nó thú vị hơn!<br>\
+Một số người cho rằng việc giảm khả năng kiểm soát khi trượt ván trên tuyết khiến môn thể thao này trở nên nguy hiểm hơn. Nhưng theo tôi, trượt ván trên tuyết thực sự an toàn hơn trượt tuyết, vì khi bạn trượt tuyết, bạn đang đứng trên hai ván trượt. Nếu bạn ngã khi đang trượt tuyết, rất dễ gãy xương do ván trượt của bạn bị kẹt trong tuyết. Trên ván trượt tuyết, hai chân của bạn vẫn khép lại với nhau ngay cả khi bạn ngã. Mặc dù tôi vẫn thích trượt tuyết, nhưng tôi thích trượt ván trên tuyết hơn nhiều. Nó vui hơn và thú vị hơn, và thậm chí có thể an toàn hơn, so với trượt tuyết."
+	,voca:"",
+},
+{
+	title:"Unit 34 A Nice Cup of Tea",
+	en:"Unit 34 A Nice Cup of Tea<br>\
+M: Could I offer you a cup of tea?<br>\
+W: Yes, thank you very much. What kind do you have?<br>\
+M: I have Earl Grey, English Breakfast, Irish Breakfast, and Darjeeling.<br>\
+W: Those are all black teas. Do you have any green tea?<br>\
+M: I'm sorry, I don't really like green tea.<br>\
+W: How could you not like green tea? It's so much easier to drink than black tea.<br>\
+M: I just don't think green tea tastes as good as black tea. Green tea has a simple flavor, but black tea has many kinds of flavors.<br>\
+W: Well I don't taste many flavors when I drink black tea. It just tastes bitter to me. M: Then you should drink more black tea, because after drinking it for a while, you begin to appreciate its flavor.<br>\
+W: Whatever its flavor, black tea can't be nearly as healthy as green tea. I read about a study last week that showed people who drink green tea are less likely to get serious diseases, like cancer<br>\
+or heart disease.<br>\
+M: Well, history tells us that in the past, good black tea has been considered more valuable than gold. Wars have been started over it.<br>\
+W:Really? Which wars?<br>\
+M: The American Revolution.<br>\
+W: The American Revolution had nothing to do with tea!<br>\
+M: One of the things that started the Revolutionary War was an incident where a group of Americans dumped a British shipment of tea into the ocean in Boston. This was called the Boston Tea Party, and it had nothing to do with green tea!"
+	,vi:"Bài 34 Một tách trà ngon<br>\
+M: Tôi có thể mời bạn một tách trà không?<br>\
+W: Vâng, cảm ơn bạn rất nhiều. Bạn có loại nào?<br>\
+M: Tôi có Earl Grey, English Breakfast, Irish Breakfast và Darjeeling.<br>\
+W: Tất cả đều là trà đen. Bạn có trà xanh không?<br>\
+M: Xin lỗi, tôi không thực sự thích trà xanh.<br>\
+W: Làm sao bạn có thể không thích trà xanh? Nó dễ uống hơn nhiều so với trà đen.<br>\
+M: Tôi chỉ không nghĩ trà xanh có vị ngon bằng trà đen. Trà xanh có hương vị đơn giản, nhưng trà đen có nhiều loại hương vị.<br>\
+W: Ồ, tôi không cảm nhận được nhiều hương vị khi uống trà đen. Đối với tôi, nó chỉ có vị đắng. M: Vậy thì bạn nên uống nhiều trà đen hơn, vì sau khi uống một thời gian, bạn sẽ bắt đầu cảm nhận được hương vị của nó.<br>\
+W: Dù hương vị của nó là gì, trà đen cũng không thể lành mạnh bằng trà xanh. Tôi đã đọc về một nghiên cứu tuần trước cho thấy những người uống trà xanh ít có khả năng mắc các bệnh nghiêm trọng hơn, như ung thư<br>\
+hoặc bệnh tim.<br>\
+M: Vâng, lịch sử cho chúng ta biết rằng trong quá khứ, trà đen ngon được coi là có giá trị hơn vàng. Chiến tranh đã nổ ra vì nó.<br>\
+W: Thật vậy sao? Những cuộc chiến nào?<br>\
+M: Cách mạng Hoa Kỳ.<br>\
+W: Cách mạng Hoa Kỳ không liên quan gì đến trà!<br>\
+M: Một trong những sự kiện khởi đầu cho Chiến tranh Cách mạng là một sự cố mà một nhóm người Mỹ đã đổ một lô hàng trà của Anh xuống biển ở Boston. Sự kiện này được gọi là Tiệc trà Boston và nó không liên quan gì đến trà xanh!"
+	,voca:"",
 }
+,{
+	title:"Unit 35 The Injury",
+	en:"Unit 35 The Injury<br>\
+I've just returned from the doctor's office, and he told me that because of my injury I will have to miss the next two weeks of basketball. I'm really disappointed! Last night, I hurt my ankle during a very exciting game against West High School. It was five minutes before the end of the game, the score was 60-60, I had the ball, and I heard my coach shouting at me to shoot.<br>\
+So I started to jump, but suddenly I found myself lying flat on my back on the court! A West High player had accidentally knocked me down. I tried to stand up, but my ankle hurt so much that I was unable to walk. Two of my teammates had to help me leave the court. My ankle started to swell up, so the team doctor brought me a bag of ice to put on it. The ice was cold, but it felt good on my ankle.<br>\
+When the swelling on my ankle reduced a little, my coach asked the doctor if he thought I would be able to play any more. But the doctor replied that I would have to sit out the rest of the game and come to see him the next day. Not only did I receive an injury, but we also lost the game by a score of 68-66. What a disappointing night!"
+	,vi:"Bài 35 Chấn thương<br>\
+Tôi vừa trở về từ phòng khám bác sĩ, và bác sĩ nói rằng vì chấn thương nên tôi sẽ phải nghỉ hai tuần chơi bóng rổ tiếp theo. Tôi thực sự thất vọng! Tối qua, tôi bị thương ở mắt cá chân trong một trận đấu rất thú vị với trường West High. Còn năm phút nữa là kết thúc trận đấu, tỷ số là 60-60, tôi có bóng và nghe thấy huấn luyện viên hét bảo tôi ném.<br>\
+Vì vậy, tôi bắt đầu nhảy, nhưng đột nhiên tôi thấy mình nằm ngửa trên sân! Một cầu thủ của trường West High đã vô tình đánh tôi ngã. Tôi cố gắng đứng dậy, nhưng mắt cá chân của tôi đau đến mức không thể đi lại được. Hai đồng đội của tôi phải giúp tôi rời khỏi sân. Mắt cá chân của tôi bắt đầu sưng lên, vì vậy bác sĩ của đội đã mang cho tôi một túi đá để chườm. Đá lạnh, nhưng cảm giác dễ chịu ở mắt cá chân của tôi.<br>\
+Khi vết sưng ở mắt cá chân của tôi giảm bớt một chút, huấn luyện viên của tôi đã hỏi bác sĩ rằng ông ấy nghĩ tôi có thể chơi được nữa không. Nhưng bác sĩ trả lời rằng tôi sẽ phải ngồi ngoài trong phần còn lại của trận đấu và đến gặp ông ấy vào ngày hôm sau. Tôi không chỉ bị thương mà chúng tôi còn thua trận với tỷ số 68-66. Thật là một đêm đáng thất vọng!"
+	,voca:"",
+},{
+	title:"Unit 36 Moving",
+	en:"Unit 36 Moving<br>\
+M: Hey, Sheena! I haven't seen you for ages. What's new? Where are you going with all those suitcases? <br>\
+W: Hi Mark, it's been a while since the last time we ran into each other! I'm bringing these suitcases home to pack because my family is preparing to move across the bay to Port Anderson.<br>\
+M: Really? How are you going to transport all your furniture?<br>\
+W: I'm not sure. I considered hiring a moving van, but someone told me it might be more convenient to rent a huge container and ship everything across. The details are a bit complicated because we've got so many boxes!<br>\
+M: Well, when my sister and brother-in-law moved to Dallas last year, they sent all their furniture and heavy items by cargo flight. They hauled it there on a massive cargo plane, then rented a truck and picked it up at the airport after they arrived.<br>\
+W: That's interesting, but the problem is that we have so much junk, we might need two cargo planes!<br>\
+M: Well, however you get it there, it sounds like you'll need help once you get it to the other side. I've got a friend there who owns a self-serve truck company. He can rent you a truck at a discount rate. Which day are you moving?<br>\
+W: Next Saturday.<br>\
+M: I'm free that day, so I'll help you out! I've still got my small truck, so I can haul some stuff for you, too.<br>\
+W: Thanks, Mark. That would be great!"
+	,vi:"Đơn vị 36 Chuyển nhà <br>\
+M: Này, Sheena! Lâu lắm rồi tôi không gặp bạn. Có chuyện gì thế? Bạn định mang mấy cái vali đó đi đâu thế? <br>\
+W: Chào Mark, lâu lắm rồi chúng ta mới gặp lại nhau! Tôi mang mấy cái vali này về nhà để đóng gói vì gia đình tôi đang chuẩn bị chuyển qua vịnh đến Port Anderson.<br>\
+M: Thật sao? Bạn định vận chuyển hết đồ đạc của mình bằng cách nào?<br>\
+W: Tôi không chắc. Tôi đã cân nhắc đến việc thuê xe tải chuyển nhà, nhưng có người bảo tôi rằng thuê một container lớn và chuyển mọi thứ qua đó có thể tiện hơn. Chi tiết hơi phức tạp vì chúng tôi có quá nhiều hộp!<br>\
+M: À, khi chị gái và anh rể tôi chuyển đến Dallas năm ngoái, họ đã gửi hết đồ đạc và đồ nặng của họ bằng máy bay chở hàng. Họ kéo nó đến đó bằng một chiếc máy bay chở hàng lớn, sau đó thuê một chiếc xe tải và lấy nó ở sân bay sau khi họ đến nơi.<br>\
+W: Thật thú vị, nhưng vấn đề là chúng ta có quá nhiều đồ đạc, chúng ta có thể cần đến hai chiếc máy bay chở hàng!<br>\
+M: Vâng, dù bạn mang nó đến đó bằng cách nào, có vẻ như bạn sẽ cần sự giúp đỡ khi bạn mang nó đến bờ bên kia. Tôi có một người bạn ở đó sở hữu một công ty xe tải tự phục vụ. Anh ấy có thể cho bạn thuê một chiếc xe tải với mức giá chiết khấu. Bạn sẽ chuyển đi vào ngày nào?<br>\
+W: Thứ Bảy tuần tới.<br>\
+M: Tôi rảnh vào ngày đó, vì vậy tôi sẽ giúp bạn! Tôi vẫn còn chiếc xe tải nhỏ của mình, vì vậy tôi cũng có thể chở một số thứ cho bạn.<br>\
+W: Cảm ơn, Mark. Điều đó thật tuyệt!"
+	,voca:"",
+},{
+	title:"Unit 37 Wear Your Seat Belt!",
+	en:"Unit 37 Wear Your Seat Belt!<br>\
+Some people think the government should require passengers by law to wear seat belts in cars and taxis. They say that seat belts save lives and money. Statistics show that 60 percent of people killed in car accidents were not wearing seat belts. Statistics also show that most people who wear seat belts survive. In the past 30 years, seat belts have saved almost $600 billion in medical costs. The average car accident costs $820 for each person in the United States. Some states require people to wear seat belts. In those states, about 80 percent of the passengers follow the law.<br>\
+However, other people think it's wrong to require seat belt use by law. They say that passengers should decide for themselves. Many of these people agree that seat belts save lives, but they don't think the government has the right to force people to wear them. They point out that smoking cigarettes is also unhealthy. But the government lets adults smoke if they want to. Leaders cannot force people to do what's good, they argue. It's better to educate people so they will want to wear seat belts.<br>\
+Those who want seat belt laws say that the right to public safety is more important than the individual's right to free choice. But their opponents say people must be careful to protect their individual rights. They should decide how to live their lives, not the government. What is your opinion on this?"
+	,vi:"Bài 37 Thắt dây an toàn!<br>\
+Một số người cho rằng chính phủ nên yêu cầu hành khách thắt dây an toàn theo luật trên ô tô và taxi. Họ nói rằng thắt dây an toàn cứu mạng người và tiền bạc. Thống kê cho thấy 60 phần trăm số người tử vong trong các vụ tai nạn ô tô không thắt dây an toàn. Thống kê cũng cho thấy hầu hết những người thắt dây an toàn đều sống sót. Trong 30 năm qua, thắt dây an toàn đã tiết kiệm được gần 600 tỷ đô la chi phí y tế. Tai nạn ô tô trung bình gây thiệt hại 820 đô la cho mỗi người ở Hoa Kỳ. Một số tiểu bang yêu cầu mọi người phải thắt dây an toàn. Ở những tiểu bang đó, khoảng 80 phần trăm hành khách tuân thủ luật.<br>\
+Tuy nhiên, những người khác cho rằng việc yêu cầu thắt dây an toàn theo luật là sai. Họ cho rằng hành khách nên tự quyết định. Nhiều người trong số họ đồng ý rằng thắt dây an toàn cứu mạng người, nhưng họ không nghĩ rằng chính phủ có quyền buộc mọi người phải thắt dây an toàn. Họ chỉ ra rằng hút thuốc lá cũng không tốt cho sức khỏe. Nhưng chính phủ cho phép người lớn hút thuốc nếu họ muốn. Họ lập luận rằng các nhà lãnh đạo không thể ép buộc mọi người làm điều tốt. Tốt hơn là giáo dục mọi người để họ muốn thắt dây an toàn.<br>\
+Những người muốn có luật thắt dây an toàn cho rằng quyền an toàn công cộng quan trọng hơn quyền tự do lựa chọn của cá nhân. Nhưng những người phản đối họ cho rằng mọi người phải cẩn thận để bảo vệ quyền cá nhân của họ. Họ nên quyết định cách sống của mình, chứ không phải chính phủ. Bạn nghĩ gì về điều này?"
+	,voca:"",
+},
+{
+	title:"Unit 38 Going on Vacation",
+	en:"Unit 38 Going on Vacation<br>\
+W: Hey, Carl, I’m surprised to see you here! Jeremy told me that you were on vacation.<br>\
+M: Hi, Shelly. We were visiting some relatives in Sydney, but we returned last night.<br>\
+W: Oh, I’ve wanted to go to Australia ever since I<br>\
+was little! Tell me what it was like.<br>\
+M: It was fantastic! We fed kangaroos, walked through rainforests, and swam in the ocean. What was really great was when we took a train to Brisbane to see the Great Barrier Reef.<br>\
+W: I’ve heard that flights to Australia are pretty<br>\
+expensive.<br>\
+M: My dad knows someone who works for Qantas Airlines, so we were able to get a good deal. The tickets were only $800 per person for a round trip.<br>\
+W: Wow, that is a good deal! When we went on vacation to Bangkok last year, it cost $1,000 for a round trip ticket, and Thailand’s closer than<br>\
+Australia.<br>\
+M: What did you like best about Thailand?<br>\
+W: Well, the food was delicious, and riding elephants was exciting, but I’d have to say that the beach was the best part. The only unpleasant part of the trip was after we got home, when we found out that the airline had lost some of our luggage. My father’s suitcase and my sister’s backpack<br>\
+were missing.<br>\
+M: So, the airline lost two pieces of luggage? How long did it take you to get them back?<br>\
+W: Three days, but the good news is that when they finally found them, they delivered them right to our front door."
+	,vi:"Bài 38 Đi nghỉ mát<br>\
+W: Này, Carl, tôi ngạc nhiên khi thấy bạn ở đây! Jeremy nói với tôi rằng bạn đang đi nghỉ mát.<br>\
+M: Chào, Shelly. Chúng tôi đã đến thăm một số người họ hàng ở Sydney, nhưng chúng tôi đã trở về vào tối qua.<br>\
+W: Ồ, tôi đã muốn đến Úc từ khi tôi<br>\
+còn nhỏ! Kể cho tôi nghe nơi đó như thế nào.<br>\
+M: Thật tuyệt vời! Chúng tôi đã cho kangaroo ăn, đi bộ qua các khu rừng nhiệt đới và bơi ở biển. Điều thực sự tuyệt vời là khi chúng tôi đi tàu đến Brisbane để ngắm Rạn san hô Great Barrier.<br>\
+W: Tôi nghe nói rằng các chuyến bay đến Úc khá<br>\
+đắt.<br>\
+M: Bố tôi biết một người làm việc cho Hãng hàng không Qantas, vì vậy chúng tôi đã có thể mua được một mức giá hời. Giá vé chỉ 800 đô la một người cho một chuyến khứ hồi.<br>\
+W: Chà, đó là một mức giá hời! Khi chúng tôi đi nghỉ ở Bangkok năm ngoái, giá vé khứ hồi là 1.000 đô la, và Thái Lan gần hơn<br>\
+Úc.<br>\
+M: Bạn thích nhất điều gì ở Thái Lan?<br>\
+W: Vâng, đồ ăn rất ngon, và cưỡi voi thì rất thú vị, nhưng tôi phải nói rằng bãi biển là phần tuyệt nhất. Phần khó chịu duy nhất của chuyến đi là sau khi chúng tôi về nhà, khi chúng tôi phát hiện ra rằng hãng hàng không đã làm mất một số hành lý của chúng tôi. Vali của bố tôi và ba lô của chị gái tôi<br>\
+đã bị mất.<br>\
+M: Vậy là hãng hàng không đã làm mất hai kiện hành lý? Bạn mất bao lâu để lấy lại chúng?<br>\
+W: Ba ngày, nhưng tin tốt là khi cuối cùng họ tìm thấy chúng, họ đã giao chúng ngay đến cửa trước nhà chúng tôi."
+	,voca:"",
+},
+{
+	title:"Unit 39 Traveling by Airplane",
+	en:"Unit 39 Traveling by Airplane<br>\
+Airplane travelers can choose between three kinds of tickets: first class, business class, and economy class. Most people buy economy class tickets. They are cheaper, so travelers can go to more places more often. Business class is more expensive, with good seats and good service. First class is very expensive, but offers very comfortable seats and excellent service.<br>\
+In economy class, the seats are small and close together. There is not much leg room. In first class, the seats are huge and wider apart. There is lots of room for passengers to stretch their legs. Economy class passengers usually must all watch the same movie. First class passengers have their own TVs, and each person can watch different movies. Economy class passengers eat cheaper food. First class passengers are served delicious, fresh food. It is difficult to sleep in economy class because of the small seats and all the noise. In first class, the large seats can be pushed back to make a comfortable bed. There is a curtain between sections, so it is nice and quiet.<br>\
+Economy class is a good choice for short flights within the same country. Business class or first class is a good choice for business travelers taking an international flight across an ocean. These people often have to get off the plane and go right to work. For them, it is important to arrive fresh, rested, and ready for a full, exciting day."
+	,vi:"Bài 39 Du lịch bằng máy bay<br>\
+Hành khách đi máy bay có thể lựa chọn giữa ba loại vé: hạng nhất, hạng thương gia và hạng phổ thông. Hầu hết mọi người đều mua vé hạng phổ thông. Chúng rẻ hơn, vì vậy hành khách có thể đến nhiều nơi hơn thường xuyên hơn. Hạng thương gia đắt hơn, có ghế ngồi tốt và dịch vụ tốt. Hạng nhất rất đắt, nhưng có ghế ngồi rất thoải mái và dịch vụ tuyệt vời.<br>\
+Ở hạng phổ thông, ghế ngồi nhỏ và gần nhau. Không có nhiều chỗ để chân. Ở hạng nhất, ghế ngồi rất lớn và rộng hơn. Có nhiều chỗ để hành khách duỗi chân. Hành khách hạng phổ thông thường phải xem cùng một bộ phim. Hành khách hạng nhất có TV riêng và mỗi người có thể xem các bộ phim khác nhau. Hành khách hạng phổ thông được ăn đồ ăn rẻ hơn. Hành khách hạng nhất được phục vụ đồ ăn ngon, tươi. Rất khó để ngủ ở hạng phổ thông vì ghế ngồi nhỏ và quá ồn ào. Ở hạng nhất, những chiếc ghế lớn có thể được đẩy ra sau để tạo thành một chiếc giường thoải mái. Có một tấm rèm giữa các khoang, vì vậy rất đẹp và yên tĩnh.<br>\
+Hạng phổ thông là lựa chọn tốt cho các chuyến bay ngắn trong cùng một quốc gia. Hạng thương gia hoặc hạng nhất là lựa chọn tốt cho những du khách đi công tác thực hiện chuyến bay quốc tế qua đại dương. Những người này thường phải xuống máy bay và đi thẳng đến nơi làm việc. Đối với họ, điều quan trọng là phải đến nơi trong trạng thái tươi tỉnh, nghỉ ngơi và sẵn sàng cho một ngày trọn vẹn, thú vị."
+	,voca:"",
+},
+{
+	title:"Unit 40 A Family Cruise",
+	en:"Unit 40 A Family Cruise<br>\
+Family Cruise Line is offering a new, exciting cruise that the whole family can enjoy! We have a special deal for families all year round on our Family Caribbean Cruise. This special one-week cruise leaves from Miami, Florida and stops at six fantastic Caribbean islands. There is so much for the entire family to see and do! <br>\
+On board, we have a variety of great food for breakfast, lunch, and dinner. We also have lots of interesting and fun activities. There are music and dance shows every evening. We have a movie theater and a KTV bar. For kids, we have shows each day with their favorite TV friends like Mickey Mouse, Goofy, and Elmo. Playing with television characters isn’t the only activity children will enjoy. They can play volleyball, swim in one of our three huge pools, or take dancing and art classes. There’s so much variety, the kids can try a new activity each day. Mom and Dad can join them, or rest in lounge chairs on our wide ship deck.<br>\
+On shore, you can shop, swim, and enjoy fresh food while you learn all about island life. With four to seven hours on shore each day, you’ll have plenty of time to explore each island. Does this sound exciting? It is! So, when it’s time to plan your next vacation, remember Family Cruise Line. It will be a trip your family will never forget!"
+	,vi:"Đơn vị 40 Du thuyền gia đình<br>\
+Family Cruise Line đang cung cấp một chuyến du ngoạn mới, thú vị mà cả gia đình có thể tận hưởng! Chúng tôi có một ưu đãi đặc biệt cho các gia đình quanh năm trên Du thuyền gia đình vùng Caribe. Chuyến du ngoạn đặc biệt kéo dài một tuần này khởi hành từ Miami, Florida và dừng tại sáu hòn đảo Caribe tuyệt đẹp. Có rất nhiều thứ để cả gia đình xem và làm! <br>\
+Trên tàu, chúng tôi có nhiều món ăn tuyệt vời cho bữa sáng, bữa trưa và bữa tối. Chúng tôi cũng có nhiều hoạt động thú vị và vui nhộn. Có chương trình ca nhạc và khiêu vũ vào mỗi buổi tối. Chúng tôi có rạp chiếu phim và quầy bar KTV. Đối với trẻ em, chúng tôi có các chương trình biểu diễn mỗi ngày với những người bạn truyền hình yêu thích của chúng như Mickey Mouse, Goofy và Elmo. Chơi với các nhân vật truyền hình không phải là hoạt động duy nhất mà trẻ em thích. Chúng có thể chơi bóng chuyền, bơi trong một trong ba hồ bơi lớn của chúng tôi hoặc tham gia các lớp học khiêu vũ và nghệ thuật. Có rất nhiều hoạt động đa dạng, trẻ em có thể thử một hoạt động mới mỗi ngày. Bố mẹ có thể tham gia cùng họ hoặc nghỉ ngơi trên ghế dài trên boong tàu rộng của chúng tôi.<br>\
+Trên bờ, bạn có thể mua sắm, bơi lội và thưởng thức đồ ăn tươi ngon trong khi tìm hiểu mọi thứ về cuộc sống trên đảo. Với bốn đến bảy giờ trên bờ mỗi ngày, bạn sẽ có nhiều thời gian để khám phá từng hòn đảo. Nghe có vẻ thú vị không? Thực sự là thú vị! Vì vậy, khi đến lúc lên kế hoạch cho kỳ nghỉ tiếp theo của bạn, hãy nhớ đến Family Cruise Line. Đó sẽ là chuyến đi mà gia đình bạn sẽ không bao giờ quên!"
+	,voca:"",
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]

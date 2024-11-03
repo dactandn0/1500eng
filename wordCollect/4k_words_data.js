@@ -21,6 +21,8 @@ pleased (a) vui lòng<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
+darken (v) /ˈdɑːrkən/ trở nên tối, làm tối<br>\
+poison (n,v) /ˈpɔɪzn/ chất độc, bỏ độc, bị nhiễm độc<br>\
 mammal (n) /ˈmæml/ động vật có vú<br>\
 platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
 kangaroo (n) /kæŋɡəˈruː/ chuột túi<br>\
@@ -418,7 +420,8 @@ earn kiếm được<br>\
 gate cổng<br>\
 include (v) /ɪnˈkluːd/ bao gồm<br>\
 manage quản lý<br>\
-mystery bí ẩn<br>\
+mystery (n) /ˈmɪstəri/ bí ẩn<br>\
+mystic (a) /ˈmɪstɪk/ bí ẩn<br>\
 occur xảy ra<br>\
 opposite đối diện<br>\
 plate tấm<br>\
@@ -776,7 +779,8 @@ trial xét xử<br>\
 violent  admission bạo lực nhập học<br>\
 astronomy thiên văn học<br>\
 despite mặc dù<br>\
-dinosaur khủng long<br>\
+dinosaur (n) /ˈdaɪnəsɔːr/ khủng long<br>\
+meteor (n) /ˈmiːtiər/ thiên thạch<br>\
 exhibit triển lãm<br>\
 fame danh tiếng<br>\
 forecast,genius dự báo, thiên tài<br>\

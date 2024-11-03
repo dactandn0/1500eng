@@ -843,7 +843,23 @@ Yêu cầu viết: Động vật và thực vật đang biến mất.<br>\
 - Chúng ta cần làm 3 việc để giải quyết tình trạng này. Đầu tiên, chúng ta nên viết thư cho các chính trị gia vì họ có thể ngăn chặn thợ săn giết thêm động vật. Thứ hai, chúng ta cần ngăn chặn các nhà máy thải hóa chất độc hại vào nước để cá có thể sống lâu hơn. Thứ ba, chúng ta có thể khôi phục môi trường sống tự nhiên của động vật bằng cách trồng cây để chúng có môi trường sống tự nhiên."
 	,voca:"Chemical,Threat,endangered",
 }
-
+,{
+	date:"01/11/2024",
+	title:"[S]Animals && Place see them",
+	en:"Which are your favorite animals?<br>\
+– Well, my favorite animals are _ _ Because they are _ _ [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
+2. Which animals don’t you like?<br>\
+- Well I don’t really like _ _/ I’m afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
+3. Where are the best places in your country to see wildlife?<br>\
+– In Vietnam, I think the best places to see wildlife are _ _ (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of _ _"
+	,vi:"Which are your favorite animals?<br>\
+– Well, my favorite animals are _ _ Because they are _ _ [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
+2. Which animals don’t you like?<br>\
+- Well I don’t really like _ _/ I’m afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
+3. Where are the best places in your country to see wildlife?<br>\
+– In Vietnam, I think the best places to see wildlife are _ _ (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of _ _"
+	,voca:"",
+}
 
 
 

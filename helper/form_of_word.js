@@ -1,6 +1,6 @@
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
 
-const NOUN_SAME_VERBS = "access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
+const NOUN_SAME_VERBS = "poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\
 excuse,mind,ski,bail,exhibit,mine,slice,balance,experience,miss,slide,balloon,eye,mistake,slip,ban,face,moor,smell,bandage,fall,move,smile,bank,favor,\
 mug,smirk,bare,fax,nail,smoke,bargain,fear,name,snack,battle,feel,need,snow,beam,fight,nest,sound,bear,file,notch,span,beat,fill,note,spot,bend,film,\
@@ -91,6 +91,35 @@ function Helper_N_V_Add_S_ES(words) {
 	return word +'s' + rest
 }
 
+function Helper_Add_ED(words) {
+	words = words.trim();
+	var word = words;
+	var rest = "";
+	// word is combine of 2,3...
+	if (words.indexOf(" ") >= 0)
+	{
+		word = words.split(" ")[0]
+		rest = words.substring(word.length)
+	}
+	// local (a) # locals (n)
+	var excepts = ['']
+ 	for (var i = 0; i < excepts.length; i++) {
+		if (word===excepts[i]) return word + rest
+	}
+
+	var r = /^\w+.*(e)+$/gi.test(word)  // ending with -e
+	if (r) return word +'d' + rest
+
+	r = /^\.*[^ueoai][ueoai][^ueoaiyw]$/gi.test(word)   	// phụ âm + nguyên âm + phụ âm (not y&w)
+	if (r) return word + word[word.length-1] + 'ed' + rest
+
+	r = /^\w+.*[^ueoai]y$/gi.test(word)
+	if (r) return word.substring(0, word.length-1) + 'ied' + rest
+
+	return word +'ed' + rest
+}
+
+
 
 function Helper_N_V_Add_ING(words) {
 
@@ -134,11 +163,13 @@ function Helper_IsFormOfWord (word, wordFormed) {
 	var add_Ly = Helper_A_Add_LY(word).toLowerCase();
 	var add_ER = Helper_A_Add_ER(word).toLowerCase();
 	var add_EST = Helper_A_Add_EST(word).toLowerCase();
+	var add_ED = Helper_Add_ED(word).toLowerCase();
 	return wordFormed === add_E_ES 
 			|| wordFormed === add_ING 
 			|| wordFormed === add_Ly
 			|| wordFormed === add_ER
 			|| wordFormed === add_EST
+			|| wordFormed === add_ED
 }
 
 function xxx () {
@@ -259,6 +290,10 @@ function Helper_A_Add_EST(words) {
 
 
 
+function testED(word) {
+	console.log(Helper_Add_ED(word))
+}
+
 function testEST(word) {
 	console.log(Helper_A_Add_EST(word))
 }
@@ -275,6 +310,11 @@ function testIng(word) {
 	console.log(Helper_N_V_Add_ING(word))
 }
 
+// testED('poison')
+// testED('darken')
+// testED('cook')
+// testED('help')
+// testED('watch')
 
 // testLy('incredible')
 // testEST('small')

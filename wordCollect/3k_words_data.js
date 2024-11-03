@@ -1487,11 +1487,13 @@ Thesis (n) /ˈθiː.sɪs/ Luận văn, luận án<br>\
 Lecture (n) /ˈlɛk.tʃər/ Bài giảng, bài thuyết trình<br>\
 Debate (n) /dɪˈbeɪt/ Cuộc tranh luận<br>\
 Higher education (n) /ˈhaɪ.ər ɛdʒ.əˈkeɪ.ʃən/ Giáo dục đại học<br>\
+educational (a) /edʒuˈkeɪʃənl/ giáo dục<br>\
 Semester (n) /sɪˈmɛs.tər/ Học kỳ<br>\
 Student (n) /ˈstjuː.dənt/ Sinh viên, học sinh<br>\
 Student union (n) /ˈstjuː.dənt ˈjuː.njən/ Hội sinh viên<br>\
 Tuition fee (n) /tjuːˈɪʃ.ən fiː/ Học phí<br>\
 Exam (n) /ɪɡˈzæm/ Bài thi, kì thi<br>\
+theory (n) /ˈθɪri/ lý thuyết<br>\
 Learn (v) /lɜːrn/ Học<br>\
 Curriculum (n) /kəˈrɪk.jə.ləm/ Chương trình giảng dạy<br>\
 Course (n) /kɔːrs/ Khóa học<br>\

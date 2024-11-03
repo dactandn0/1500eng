@@ -199,8 +199,8 @@ function Helper_A_Add_ER(words) {
 	for (var i = 0; i < excepts.length; i++) {
 		if (word===excepts[i]) return word + rest
 	}
-	if (word==='good' || word==='well') return 'better' + rest
-	if (word==='bad' || word==='badly') return 'worse' + rest
+//	if (word==='good' || word==='well') return 'better' + rest
+//	if (word==='bad' || word==='badly') return 'worse' + rest
 	if (word==='little') return 'less' + rest
 	if (word==='near') return 'nearer' + rest
 
@@ -236,8 +236,8 @@ function Helper_A_Add_EST(words) {
 	for (var i = 0; i < excepts.length; i++) {
 		if (word===excepts[i]) return word + rest
 	}
-	if (word==='good' || word==='well') return 'best' + rest
-	if (word==='bad' || word==='badly') return 'worst' + rest
+//	if (word==='good' || word==='well') return 'best' + rest
+//	if (word==='bad' || word==='badly') return 'worst' + rest
 	if (word==='little') return 'least' + rest
 	if (word==='near') return 'nearest' + rest
 

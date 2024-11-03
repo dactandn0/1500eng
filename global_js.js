@@ -12,11 +12,11 @@ var Helper_Voices
 var UtterEnd = true;		// prevent a word from constantly double-click
 
 var kReplaceWords = [
-	{ src: 'ms\\.', desc: 'Ms'},
-	{ src: 'mr\\.', desc: 'Mr'},
-	{ src: 'p\\.m\\.', desc: 'pm'},
-	{ src: 'a\\.m\\.', desc: 'am'},
-	{ src: 'mrs\\.', desc: 'Mrs'},
+	{ src: 'ms\\.*', desc: 'Ms'},
+	{ src: 'mr\\.*', desc: 'Mr'},
+	{ src: 'p\\.m\\.*', desc: 'pm'},
+	{ src: 'a\\.m\\.*', desc: 'am'},
+	{ src: 'mrs\\.*', desc: 'Mrs'},
 ]
 
 function IsRegexMatch(rg, txt) {
@@ -24,18 +24,22 @@ function IsRegexMatch(rg, txt) {
 	return mmm && mmm.length > 1
 }
 
-function dotToComma(txt) {
+function fixDots(txt) {
 	txt = txt.replace(/\.{2,}/gi, "_ _");
 	txt = txt.replace(".'", "'.");
 	txt = txt.replaceAll("v.v", "vv");
-	var rg = /\d+\.\d+/g;
-	var num = '';
+	
+	var rg = /\d+[\.]\d+/g;
 	var mat = txt.match(rg)
 	if (mat) {
-		num = mat[0]
-		num = num.replace(/[\.,]/gi, ',')
-		return txt.replace(rg, num)
+		for (var i = 0; i < mat.length; i++) {
+			var num = mat[i]
+			var numRe = num.replace(/[\.]/gi, ',')
+			txt = txt.replace(num, numRe)
+		}
+		
 	}
+	
 	return txt;
 }
 
@@ -125,8 +129,8 @@ function processStory (story) {
 	let enShow = story.enShow
 	let viShow = story.vi
 	enShow = doReplaceWords(enShow)
-	enShow = dotToComma(enShow)
-	viShow = dotToComma(viShow)
+	enShow = fixDots(enShow)
+	viShow = fixDots(viShow)
 
 	if (story.voca) {
 		var vocas = story.voca.split(',');

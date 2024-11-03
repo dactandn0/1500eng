@@ -41,6 +41,10 @@ laboratory phòng thí nghiệm<br>\
 laugh cười<br>\
 loud lớn<br>\
 noise (n) tiếng ồn<br>\
+better (adj) ss>(good, well)<br>\
+best (adj) super.(good, well)<br>\
+worse (adj) ss>(bad, badly)<br>\
+worst (adj) super.(bad, badly)<br>\
 project dự án<br>\
 scare sợ hãi<br>\
 secret bí mật<br>\
@@ -85,6 +89,7 @@ stroll (n,v) đi dạo<br>\
 aware (a)  /əˈwer/ nhận thức<br>\
 little (a,adv) /ˈlɪtl/ chút ít (less)<br>\
 badly (adv) tệ, bậy bạ<br>\
+socialize (v) /ˈsəʊʃəlaɪz/ giao lưu (+ with)<br>\
 belong thuộc về<br>\
 continue tiếp tục<br>\
 far (adv) xa<br>\
@@ -167,7 +172,6 @@ require yêu cầu<br>\
 single đơn lẻ<br>\
 success (n) /səkˈses/ thành công<br>\
 tear xé<br>\
-theory (n) /ˈθɪri/ lý thuyết<br>\
 against chống lại<br>\
 beach bãi biển<br>\
 damage thiệt hại<br>\

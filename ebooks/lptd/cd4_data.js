@@ -472,19 +472,19 @@ Rõ ràng là tôi thích đi du lịch, phải không? Nhưng tôi cũng thích
 	,voca:"",
 },
 {
-	title:"Unit 27 What’s in a Name?",
-	en:"Unit 27 What’s in a Name?<br>\
-W:  Sy, do you have a local driver’s license that we can rent the car with for our trip this weekend?<br>\
+	title:"Unit 27 What's in a Name?",
+	en:"Unit 27 What's in a Name?<br>\
+W:  Sy, do you have a local driver's license that we can rent the car with for our trip this weekend?<br>\
 M: Sure, Jen, here you are.<br>\
 W:  It says here that your name is Sarang Patel, but I thought your first name was Sy!<br>\
 M: Sy is my nickname, and Sarang is my given name. It means 'navigator' in Hindi. At the time I was born, things were confusing and difficult for my family in India. My parents wanted a son who could lead and guide our family to success.<br>\
 W: Well, I just hope you can lead and guide all of us to the beach this weekend.<br>\
-M: Ha ha, very funny! So, your nickname is Jen, and your given name’s Jennifer. Do you know how you got that name?<br>\
-W: Actually, I was named after my father’s grandmother, Guinevere.<br>\
-M:Wasn’t Guinevere the wife of King Arthur in that old story from England?<br>\
+M: Ha ha, very funny! So, your nickname is Jen, and your given name's Jennifer. Do you know how you got that name?<br>\
+W: Actually, I was named after my father's grandmother, Guinevere.<br>\
+M:Wasn't Guinevere the wife of King Arthur in that old story from England?<br>\
 W: Yes she was, and her name means 'pure'.<br>\
-M: It’s interesting how people get their names. In India, we don’t name children after their relatives like they do in America. To me, it’s strange to see names like Jack Johnson Junior and George Bush Senior.<br>\
-W: Usually it’s a way to show respect for a person, but some people make it ridiculous. You’ve heard about George Foreman, the famous boxer, haven’t you?<br>\
+M: It's interesting how people get their names. In India, we don't name children after their relatives like they do in America. To me, it's strange to see names like Jack Johnson Junior and George Bush Senior.<br>\
+W: Usually it's a way to show respect for a person, but some people make it ridiculous. You've heard about George Foreman, the famous boxer, haven't you?<br>\
 M: No.<br>\
 W: Well, he had five boys, and he named each one of them George, after himself.<br>\
 M: It must be confusing when the phone rings at his house!"
@@ -509,8 +509,8 @@ M: Chắc hẳn rất khó hiểu khi điện thoại reo ở nhà ông ấy!"
 	title:"Unit 28 The Right Career",
 	en:"Unit 28 The Right Career<br>\
 People need to consider important factors when choosing a career. In my opinion, the most important factor is to choose a job that goes well with your personality. Are you an outgoing person who loves meeting new people and talking to them? Perhaps you should become a tour guide or a teacher. Are you shy? Maybe you should be an accountant or a scientist.<br>\
-Remember, you will do your job almost every day. If you have to change your personality when you work, you probably won’t be very happy. And neither will the people you work with. Nobody wants an unfriendly tour guide or an impatient teacher. Are you a moody person? In most jobs, you will be expected to control your emotions. That’s hard to do if your mood changes often. In that case, you might want to work alone. Perhaps you could be a writer or an artist.<br>\
-There are other factors to consider, such as salary and status. However, what good is a large salary or high status if you don’t like your job? You should consider your personality, find out what you are very good at doing, and then find the right career to go with all this. Too many people choose a career because it pays well. Too often, they find they don’t like their jobs. But by then they feel like they’re in a trap, and they can’t escape. Finding a good career is important. Think about it and choose carefully."
+Remember, you will do your job almost every day. If you have to change your personality when you work, you probably won't be very happy. And neither will the people you work with. Nobody wants an unfriendly tour guide or an impatient teacher. Are you a moody person? In most jobs, you will be expected to control your emotions. That's hard to do if your mood changes often. In that case, you might want to work alone. Perhaps you could be a writer or an artist.<br>\
+There are other factors to consider, such as salary and status. However, what good is a large salary or high status if you don't like your job? You should consider your personality, find out what you are very good at doing, and then find the right career to go with all this. Too many people choose a career because it pays well. Too often, they find they don't like their jobs. But by then they feel like they're in a trap, and they can't escape. Finding a good career is important. Think about it and choose carefully."
 	,vi:"Bài 28 Nghề nghiệp phù hợp<br>\
 Mọi người cần cân nhắc các yếu tố quan trọng khi lựa chọn nghề nghiệp. Theo tôi, yếu tố quan trọng nhất là chọn công việc phù hợp với tính cách của bạn. Bạn có phải là người hướng ngoại, thích gặp gỡ và trò chuyện với mọi người không? Có lẽ bạn nên trở thành hướng dẫn viên du lịch hoặc giáo viên. Bạn có nhút nhát không? Có lẽ bạn nên trở thành kế toán hoặc nhà khoa học.<br>\
 Hãy nhớ rằng, bạn sẽ làm công việc của mình hầu như mỗi ngày. Nếu bạn phải thay đổi tính cách khi làm việc, có lẽ bạn sẽ không vui lắm. Và những người bạn làm việc cùng cũng vậy. Không ai muốn một hướng dẫn viên du lịch không thân thiện hoặc một giáo viên thiếu kiên nhẫn. Bạn có phải là người hay thay đổi tâm trạng không? Trong hầu hết các công việc, bạn sẽ được yêu cầu kiểm soát cảm xúc của mình. Điều đó khó thực hiện nếu tâm trạng của bạn thay đổi thường xuyên. Trong trường hợp đó, bạn có thể muốn làm việc một mình. Có lẽ bạn có thể trở thành một nhà văn hoặc một nghệ sĩ.<br>\
@@ -520,8 +520,8 @@ Có những yếu tố khác cần cân nhắc, chẳng hạn như mức lương
 {
 	title:"Unit 29 Body Language",
 	en:"Unit 29 Body Language<br>\
-Did you know that words are not the only thing we use to communicate? Most of our messages are sent through body language. Only about 10 percent of communication is done through the actual words of a conversation. Isn’t that strange? If we understand body language well, we can learn a lot more about what other people really think. We can also use body language to send the right message to others. Have you ever felt dislike for someone without knowing why? Well, he or she might have been sending out a negative message through body language.<br>\
-What kind of things should you look for if you want to understand body language? First, look at people’s eyes. If people are lying, they may not look directly at the person they are talking to, and the pupils of their eyes may shrink. Next, look at people’s arms. Arms crossed in front of the body might mean a person is unfriendly or afraid. He or she might be trying to say, 'Stay away'. If the arms are by the side or at the back of the body, the person might be saying, 'Come closer. I won’t hurt you'. But keep in mind that there is no accurate way to interpret body language all the time. Sometimes, talking is still the best way to communicate. However, knowing about body language will improve the way you communicate and help you understand other people better."
+Did you know that words are not the only thing we use to communicate? Most of our messages are sent through body language. Only about 10 percent of communication is done through the actual words of a conversation. Isn't that strange? If we understand body language well, we can learn a lot more about what other people really think. We can also use body language to send the right message to others. Have you ever felt dislike for someone without knowing why? Well, he or she might have been sending out a negative message through body language.<br>\
+What kind of things should you look for if you want to understand body language? First, look at people's eyes. If people are lying, they may not look directly at the person they are talking to, and the pupils of their eyes may shrink. Next, look at people's arms. Arms crossed in front of the body might mean a person is unfriendly or afraid. He or she might be trying to say, 'Stay away'. If the arms are by the side or at the back of the body, the person might be saying, 'Come closer. I won't hurt you'. But keep in mind that there is no accurate way to interpret body language all the time. Sometimes, talking is still the best way to communicate. However, knowing about body language will improve the way you communicate and help you understand other people better."
 	,vi:"Bài 29 Ngôn ngữ cơ thể<br>\
 Bạn có biết rằng lời nói không phải là thứ duy nhất chúng ta sử dụng để giao tiếp không? Hầu hết các thông điệp của chúng ta được truyền tải thông qua ngôn ngữ cơ thể. Chỉ có khoảng 10 phần trăm giao tiếp được thực hiện thông qua các từ ngữ thực tế trong một cuộc trò chuyện. Thật kỳ lạ phải không? Nếu chúng ta hiểu rõ ngôn ngữ cơ thể, chúng ta có thể học được nhiều hơn về những gì người khác thực sự nghĩ. Chúng ta cũng có thể sử dụng ngôn ngữ cơ thể để gửi đúng thông điệp đến người khác. Bạn đã bao giờ cảm thấy không thích ai đó mà không biết tại sao chưa? Vâng, có thể người đó đã gửi một thông điệp tiêu cực thông qua ngôn ngữ cơ thể.<br>\
 Bạn nên chú ý đến những điều gì nếu muốn hiểu ngôn ngữ cơ thể? Trước tiên, hãy nhìn vào mắt mọi người. Nếu mọi người đang nói dối, họ có thể không nhìn trực tiếp vào người mà họ đang nói chuyện và đồng tử mắt của họ có thể co lại. Tiếp theo, hãy nhìn vào cánh tay của mọi người. Khoanh tay trước cơ thể có thể có nghĩa là một người không thân thiện hoặc sợ hãi. Người đó có thể đang cố nói rằng, 'Tránh xa ra'. Nếu cánh tay ở bên cạnh hoặc ở phía sau cơ thể, người đó có thể đang nói, 'Đến gần hơn. Tôi sẽ không làm bạn đau'. Nhưng hãy nhớ rằng không có cách nào chính xác để diễn giải ngôn ngữ cơ thể mọi lúc. Đôi khi, nói chuyện vẫn là cách giao tiếp tốt nhất. Tuy nhiên, biết về ngôn ngữ cơ thể sẽ cải thiện cách bạn giao tiếp và giúp bạn hiểu người khác tốt hơn."
@@ -575,7 +575,7 @@ B: Con hứa là con sẽ làm vậy, mẹ ạ. Giờ chúng ta đi gặp Bác s
 	title:"Unit 32 Why Do We Sneeze?",
 	en:"Unit 32 Why Do We Sneeze? <br>\
 A sneeze is a very interesting thing. We use many different muscles when we sneeze. These include stomach muscles, throat muscles, and eye muscles. Remember, our eyes always close during a sneeze.<br>\
-A sneeze begins when something gets inside your nose, like a tiny particle of dust. Your nose sends a message to your brain. Your brain sends messages to the muscles, getting them to work together in the correct order. When you sneeze, the dust that was in your nose flies out as fast as 100 miles an hour! Usually something like dust or cold air makes us sneeze, but some people sneeze whenever they look at the sun. Some people think that your heart stops when you sneeze. Actually, it really doesn’t, but sometimes it might feel like it does.<br>\
+A sneeze begins when something gets inside your nose, like a tiny particle of dust. Your nose sends a message to your brain. Your brain sends messages to the muscles, getting them to work together in the correct order. When you sneeze, the dust that was in your nose flies out as fast as 100 miles an hour! Usually something like dust or cold air makes us sneeze, but some people sneeze whenever they look at the sun. Some people think that your heart stops when you sneeze. Actually, it really doesn't, but sometimes it might feel like it does.<br>\
 After someone sneezes, people often say 'Bless you,' or 'God bless you'. To bless someone means to wish them good and special things. Why do people say this? Long ago, people believed that this saying kept bad things from flying down your throat. Another story is that people thought this saying would help keep the person who sneezed from getting a very serious disease called the plague. At that time, the plague was killing thousands of people. It was thought that saying 'God bless you' would protect people from getting this awful disease. Today, the saying is simply a nice way to wish someone well."
 	,vi:"Bài 32 Tại sao chúng ta hắt hơi? <br>\
 Hắt hơi là một điều rất thú vị. Chúng ta sử dụng nhiều cơ khác nhau khi hắt hơi. Bao gồm cơ bụng, cơ họng và cơ mắt. Hãy nhớ rằng, mắt chúng ta luôn nhắm lại khi hắt hơi.<br>\
@@ -682,35 +682,27 @@ Những người muốn có luật thắt dây an toàn cho rằng quyền an to
 {
 	title:"Unit 38 Going on Vacation",
 	en:"Unit 38 Going on Vacation<br>\
-W: Hey, Carl, I’m surprised to see you here! Jeremy told me that you were on vacation.<br>\
+W: Hey, Carl, I'm surprised to see you here! Jeremy told me that you were on vacation.<br>\
 M: Hi, Shelly. We were visiting some relatives in Sydney, but we returned last night.<br>\
-W: Oh, I’ve wanted to go to Australia ever since I<br>\
-was little! Tell me what it was like.<br>\
+W: Oh, I've wanted to go to Australia ever since I was little! Tell me what it was like.<br>\
 M: It was fantastic! We fed kangaroos, walked through rainforests, and swam in the ocean. What was really great was when we took a train to Brisbane to see the Great Barrier Reef.<br>\
-W: I’ve heard that flights to Australia are pretty<br>\
-expensive.<br>\
+W: I've heard that flights to Australia are pretty expensive.<br>\
 M: My dad knows someone who works for Qantas Airlines, so we were able to get a good deal. The tickets were only $800 per person for a round trip.<br>\
-W: Wow, that is a good deal! When we went on vacation to Bangkok last year, it cost $1,000 for a round trip ticket, and Thailand’s closer than<br>\
-Australia.<br>\
+W: Wow, that is a good deal! When we went on vacation to Bangkok last year, it cost $1,000 for a round trip ticket, and Thailand's closer than Australia.<br>\
 M: What did you like best about Thailand?<br>\
-W: Well, the food was delicious, and riding elephants was exciting, but I’d have to say that the beach was the best part. The only unpleasant part of the trip was after we got home, when we found out that the airline had lost some of our luggage. My father’s suitcase and my sister’s backpack<br>\
-were missing.<br>\
+W: Well, the food was delicious, and riding elephants was exciting, but I'd have to say that the beach was the best part. The only unpleasant part of the trip was after we got home, when we found out that the airline had lost some of our luggage. My father's suitcase and my sister's backpack were missing.<br>\
 M: So, the airline lost two pieces of luggage? How long did it take you to get them back?<br>\
 W: Three days, but the good news is that when they finally found them, they delivered them right to our front door."
 	,vi:"Bài 38 Đi nghỉ mát<br>\
 W: Này, Carl, tôi ngạc nhiên khi thấy bạn ở đây! Jeremy nói với tôi rằng bạn đang đi nghỉ mát.<br>\
 M: Chào, Shelly. Chúng tôi đã đến thăm một số người họ hàng ở Sydney, nhưng chúng tôi đã trở về vào tối qua.<br>\
-W: Ồ, tôi đã muốn đến Úc từ khi tôi<br>\
-còn nhỏ! Kể cho tôi nghe nơi đó như thế nào.<br>\
+W: Ồ, tôi đã muốn đến Úc từ khi tôi còn nhỏ! Kể cho tôi nghe nơi đó như thế nào.<br>\
 M: Thật tuyệt vời! Chúng tôi đã cho kangaroo ăn, đi bộ qua các khu rừng nhiệt đới và bơi ở biển. Điều thực sự tuyệt vời là khi chúng tôi đi tàu đến Brisbane để ngắm Rạn san hô Great Barrier.<br>\
-W: Tôi nghe nói rằng các chuyến bay đến Úc khá<br>\
-đắt.<br>\
+W: Tôi nghe nói rằng các chuyến bay đến Úc khá đắt.<br>\
 M: Bố tôi biết một người làm việc cho Hãng hàng không Qantas, vì vậy chúng tôi đã có thể mua được một mức giá hời. Giá vé chỉ 800 đô la một người cho một chuyến khứ hồi.<br>\
-W: Chà, đó là một mức giá hời! Khi chúng tôi đi nghỉ ở Bangkok năm ngoái, giá vé khứ hồi là 1.000 đô la, và Thái Lan gần hơn<br>\
-Úc.<br>\
+W: Chà, đó là một mức giá hời! Khi chúng tôi đi nghỉ ở Bangkok năm ngoái, giá vé khứ hồi là 1.000 đô la, và Thái Lan gần hơn Úc.<br>\
 M: Bạn thích nhất điều gì ở Thái Lan?<br>\
-W: Vâng, đồ ăn rất ngon, và cưỡi voi thì rất thú vị, nhưng tôi phải nói rằng bãi biển là phần tuyệt nhất. Phần khó chịu duy nhất của chuyến đi là sau khi chúng tôi về nhà, khi chúng tôi phát hiện ra rằng hãng hàng không đã làm mất một số hành lý của chúng tôi. Vali của bố tôi và ba lô của chị gái tôi<br>\
-đã bị mất.<br>\
+W: Vâng, đồ ăn rất ngon, và cưỡi voi thì rất thú vị, nhưng tôi phải nói rằng bãi biển là phần tuyệt nhất. Phần khó chịu duy nhất của chuyến đi là sau khi chúng tôi về nhà, khi chúng tôi phát hiện ra rằng hãng hàng không đã làm mất một số hành lý của chúng tôi. Vali của bố tôi và ba lô của chị gái tôi đã bị mất.<br>\
 M: Vậy là hãng hàng không đã làm mất hai kiện hành lý? Bạn mất bao lâu để lấy lại chúng?<br>\
 W: Ba ngày, nhưng tin tốt là khi cuối cùng họ tìm thấy chúng, họ đã giao chúng ngay đến cửa trước nhà chúng tôi."
 	,voca:"",
@@ -731,8 +723,8 @@ Hạng phổ thông là lựa chọn tốt cho các chuyến bay ngắn trong c�
 	title:"Unit 40 A Family Cruise",
 	en:"Unit 40 A Family Cruise<br>\
 Family Cruise Line is offering a new, exciting cruise that the whole family can enjoy! We have a special deal for families all year round on our Family Caribbean Cruise. This special one-week cruise leaves from Miami, Florida and stops at six fantastic Caribbean islands. There is so much for the entire family to see and do! <br>\
-On board, we have a variety of great food for breakfast, lunch, and dinner. We also have lots of interesting and fun activities. There are music and dance shows every evening. We have a movie theater and a KTV bar. For kids, we have shows each day with their favorite TV friends like Mickey Mouse, Goofy, and Elmo. Playing with television characters isn’t the only activity children will enjoy. They can play volleyball, swim in one of our three huge pools, or take dancing and art classes. There’s so much variety, the kids can try a new activity each day. Mom and Dad can join them, or rest in lounge chairs on our wide ship deck.<br>\
-On shore, you can shop, swim, and enjoy fresh food while you learn all about island life. With four to seven hours on shore each day, you’ll have plenty of time to explore each island. Does this sound exciting? It is! So, when it’s time to plan your next vacation, remember Family Cruise Line. It will be a trip your family will never forget!"
+On board, we have a variety of great food for breakfast, lunch, and dinner. We also have lots of interesting and fun activities. There are music and dance shows every evening. We have a movie theater and a KTV bar. For kids, we have shows each day with their favorite TV friends like Mickey Mouse, Goofy, and Elmo. Playing with television characters isn't the only activity children will enjoy. They can play volleyball, swim in one of our three huge pools, or take dancing and art classes. There's so much variety, the kids can try a new activity each day. Mom and Dad can join them, or rest in lounge chairs on our wide ship deck.<br>\
+On shore, you can shop, swim, and enjoy fresh food while you learn all about island life. With four to seven hours on shore each day, you'll have plenty of time to explore each island. Does this sound exciting? It is! So, when it's time to plan your next vacation, remember Family Cruise Line. It will be a trip your family will never forget!"
 	,vi:"Đơn vị 40 Du thuyền gia đình<br>\
 Family Cruise Line đang cung cấp một chuyến du ngoạn mới, thú vị mà cả gia đình có thể tận hưởng! Chúng tôi có một ưu đãi đặc biệt cho các gia đình quanh năm trên Du thuyền gia đình vùng Caribe. Chuyến du ngoạn đặc biệt kéo dài một tuần này khởi hành từ Miami, Florida và dừng tại sáu hòn đảo Caribe tuyệt đẹp. Có rất nhiều thứ để cả gia đình xem và làm! <br>\
 Trên tàu, chúng tôi có nhiều món ăn tuyệt vời cho bữa sáng, bữa trưa và bữa tối. Chúng tôi cũng có nhiều hoạt động thú vị và vui nhộn. Có chương trình ca nhạc và khiêu vũ vào mỗi buổi tối. Chúng tôi có rạp chiếu phim và quầy bar KTV. Đối với trẻ em, chúng tôi có các chương trình biểu diễn mỗi ngày với những người bạn truyền hình yêu thích của chúng như Mickey Mouse, Goofy và Elmo. Chơi với các nhân vật truyền hình không phải là hoạt động duy nhất mà trẻ em thích. Chúng có thể chơi bóng chuyền, bơi trong một trong ba hồ bơi lớn của chúng tôi hoặc tham gia các lớp học khiêu vũ và nghệ thuật. Có rất nhiều hoạt động đa dạng, trẻ em có thể thử một hoạt động mới mỗi ngày. Bố mẹ có thể tham gia cùng họ hoặc nghỉ ngơi trên ghế dài trên boong tàu rộng của chúng tôi.<br>\

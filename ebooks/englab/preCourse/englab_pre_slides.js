@@ -4,34 +4,58 @@ const ENGLAB_PRE_SLIDES = [
 	unit:"Lesson 2.pptx",
 	title:"Holiday",
 	date:"",
-	en:"1. Yes, it's on September 2nd - also known as the Independence Day.<br>\
+	en:"1) Yes, it's on September 2nd - also known as the Independence Day.<br>\
 - How: people celebrate this day with flags, fireworks, v.v <br>\
-watch parades (diễu hành), eat good food, hang out,...<br>\
-2. Yes of course, i think National days are important because:<br>\
-honor (tôn vinh) and preserve (giữ gìn) the country's history and culture<br>\
-create a sense of community (tạo cảm giác cộng đồng)<br>\
-pass down (truyền lại) values and customs to future generations.<br><br>\
-parade (n) buổi diễu hành<br>\
-lion dance (n) múa lân/rồng<br>\
-celebrate (v) ăn mừng. We celebrated our 25th wedding anniversary in Florence<br>\
-preserve (v) giữ gìn, bảo tồn. He was anxious to preserve his reputation<br>\
+watch parades, eat good food, hang out,vv <br>\
+2) Yes of course, i think National days are important because:<br>\
+honor and preserve the country's history and culture<br>\
+create a sense of community<br>\
+pass down values and customs to future generations.<br>\
+parade (n)<br>\
+lion dance (n)<br>\
+We celebrated our 25th wedding anniversary in Florence<br>\
+He was anxious to preserve his reputation<br>\
 culture(n) văn hóa<br>\
-value (n) giá trị → cultural value (n) giá trị văn hóa<br><br>\
+value (n), cultural value (n)<br>\
 - What it is – Let me tell you about a special day/event in my country and it is ....<br>\
-- When it is  – It's held on / It takes place on + date…<br>\
+- When it is  – It's held on / It takes place on + date...<br>\
 - What you do  – I hang out with my ... , watch ..., eat ..., go ...<br>\
 - Why it is special for you – This day is special for me because ....<br>\
 - can have fun, be happy<br>\
 - gather with loved ones<br>\
 - unwind, recharge my battery after nerve-racking time<br>\
-- celebrate + N (history, culture, victory,...)<br><br>\
-Homeword<br>\
+- celebrate + N (history, culture, victory,...)<br>\
 * Describe a traditional festival in your country<br>\
 - What it is?<br>\
 - When it takes place?<br>\
 - What people do during this holiday?<br>\
 - What you feel about this holiday?"
-,vi:""
+,vi:"1) Vâng, đó là ngày 2 tháng 9 - còn được gọi là Ngày Độc lập.<br>\
+- Làm thế nào: mọi người ăn mừng ngày này bằng cờ, pháo hoa, v.v <br>\
+xem diễu hành, ăn đồ ăn ngon, đi chơi, vv <br>\
+2) Vâng tất nhiên rồi, tôi nghĩ rằng Ngày Quốc khánh rất quan trọng vì:<br>\
+tôn vinh và bảo tồn lịch sử và văn hóa của đất nước<br>\
+tạo ra ý thức cộng đồng<br>\
+truyền lại các giá trị và phong tục cho các thế hệ tương lai.<br>\
+diễu hành (danh từ) buổi diễu hành<br>\
+múa lân múa lân/rồng<br>\
+Chúng tôi đã kỷ niệm 25 năm ngày cưới tại Florence<br>\
+Anh ấy lo lắng để giữ gìn danh tiếng của mình<br>\
+culture(n) văn hóa<br>\
+value (n), cultural value (n)<br>\
+- Nó là gì – Hãy để tôi kể cho bạn nghe về một ngày/sự kiện đặc biệt ở đất nước tôi và đó là ....<br>\
+- Khi nào – Nó được tổ chức vào / Nó diễn ra vào + ngày...<br>\
+- Bạn làm gì – Tôi đi chơi với ... , xem ..., ăn ..., đi ...<br>\
+- Tại sao nó lại đặc biệt với bạn – Ngày này đặc biệt với tôi vì ....<br>\
+- có thể vui vẻ, hạnh phúc<br>\
+- tụ tập với những người thân yêu<br>\
+- thư giãn, nạp lại năng lượng sau thời gian căng thẳng<br>\
+- ăn mừng + N (lịch sử, văn hóa, chiến thắng,...)<br>\
+* Mô tả một lễ hội truyền thống ở đất nước bạn<br>\
+- Nó là gì?<br>\
+- Diễn ra khi nào?<br>\
+- Mọi người làm gì trong ngày lễ?<br>\
+- Bạn cảm thấy thế nào về ngày lễ này?"
 ,voca:""
 },
 {
@@ -101,7 +125,7 @@ Students give gifts to teachers- hangout together<br>\
 Students send best wishes to their teachers<br>\
 This holiday is Special for me because vn's teachers day reminds(nhac nho) me to remember and be grateful + to the contributions of teachers.<br>\
 MID-AUTUMN FESTIVAL<br>\
-It's the Mid-Autumn Festival - it's one of the most…<br>\
+It's the Mid-Autumn Festival - it's one of the most...<br>\
 Takes place on the 15 th of August according to the lunar calendar<br>\
 Other East Asian countries also celebrate this..<br>\
 How it is celebrated:<br>\
@@ -123,7 +147,7 @@ This festival is a special occasion for family gatherings.<br>\
 To strengthen / tighten family bonds<br>\
 Allows us to be more close-knit<br>\
 Let me introduce about the Vietnamese women's day<br>\
-It takes place on…<br>\
+It takes place on...<br>\
 On this day, S + V<br>\
 This day is special for me because I can show my love for my loved ones.",
 vi:"",
@@ -237,7 +261,7 @@ Yes, of course. FE: Landmark 81 located in HCM city, DN Administrative center in
 <br>\
 2. What do people think about them?<br>\
 - (be) proud of them - because FE, Landmark 81 represents (đại diện) the modernity and growth of the country. Or Hoi An ancient buildings are a symbol of cultural heritage (di sản văn hóa)<br>\
-- admire (v)<br><br>\
+- admire (v)<br>\
 3. Do you think it's important to protect special buildings?<br>\
 Yes. Because they:<br>\
 - attract tourists, visitors<br>\
@@ -383,12 +407,12 @@ plot (n): cốt truyện, nội dung phim = storyline (n)<br>\
 character development (n): sự phát triển nhân vật<br>\
 protagonist (n): nhân vật chính<br>\
 gripping = compelling (a): hấp dẫn<br>\
-can’t put it down: không thể đặt nó xuống<br>\
+can't put it down: không thể đặt nó xuống<br>\
 (be) on the edge of my seat: rất hồi hộp<br>\
 moving/ touching (a): cảm động – bring me to tears (v)<br>\
 readable (a) >< heavy-going (a)<br>\
 burst into tears (v) bật khóc<br>\
-(to) live up to sb’s expectations: giống như mong đợi của ai đó<br>\
+(to) live up to sb's expectations: giống như mong đợi của ai đó<br>\
 <br>\
 <b>Practice</b><br>\
 Do you like reading?<br>\
@@ -422,7 +446,7 @@ In short, my phone has offered me a range of great benefits in my daily life. If
 Pitch: a field where outdoor competitive sports are played that use a ball, for example football, baseball, cricket, rugby, etc.<br>\
 The match between Barcelona and Betis was cancelled because the pitch was flooded with water.<br>\
 Court: an area marked with lines where sports are played (often indoors), such as basketball, squash, tennis, etc.<br>\
-The best tennis players prefer to play on grass courts rather than clay courts.<br><br>\
+The best tennis players prefer to play on grass courts rather than clay courts.<br>\
 <i>golf course, basketball court, badminton court, volleyball court, football pitch</i>"
 	,voca:"Moreover,In short,As a result,For instance,pitch,court,course,precious,broaden,relieve,range,In addition,entertainment",
 },
@@ -507,7 +531,7 @@ Ví dụ: <br>\
 For example, S + V / <br>\
 For instance, S + V/ <br>\
 In reality, S + V, / <br>\
-In + X (in Vietnam, people are very friendly…..)<br>\
+In + X (in Vietnam, people are very friendly.....)<br>\
 Indeed, (thật vậy)<br>\
 <br>\
 Giải thích: <br>\
@@ -533,18 +557,18 @@ So"
 {
 	date:"18/10/2024",
 	title:"[S] Sport && Area of Natural beauty ",
-	en:"<u>Sport</u><br>I would like to talk about my favorite sport, which is football, the king of sport to everyone in Vietnam. It’s absolutely great!<br>\
+	en:"<u>Sport</u><br>I would like to talk about my favorite sport, which is football, the king of sport to everyone in Vietnam. It's absolutely great!<br>\
 You can play it in so many places, inside, in a pitch or a stadium, or outside, in a park.<br>\
-The rules of football are really easy/simple. You play in teams of … people. You have to kick the ball into the opponent's net (lưới của đối thủ).<br>\
-Players can use any part of their body except(ngoại trừ) their hands and arms, although the goalkeeper is an exception as they can use their hands within the penalty area. The team with the most goals at the end of the match wins.<br>\
-I love this sport for several reasons: First, ... Second,... Last but not least, ...<br><br>\
+The rules of football are really easy/simple. You play in teams of ... people. You have to kick the ball into the opponent's net.<br>\
+Players can use any part of their body except their hands and arms, although the goalkeeper is an exception as they can use their hands within the penalty area. The team with the most goals at the end of the match wins.<br>\
+I love this sport for several reasons: First, ... Second,... Last but not least, ...<br>\
 <u>Area of natural beauty</u><br>\
 One special place of natural beauty that I would like to talk about is Ha Long Bay. Ha Long Bay is located in the northern part of Vietnam, in Quang Ninh province. It is famous for its stunning limestone islands that rise out of the emerald-green water. The bay has thousands of small islands, some with caves and beaches, and the scenery is really breathtaking.<br>\
 <br>\
 I have been to Ha Long Bay once, during a family trip. We took a boat tour around the bay and stopped at some of the islands to explore the caves. The water was calm, and the atmosphere was peaceful. I remember how quiet and beautiful it was, with the sun setting behind the rocks, making everything glow.<br>\
 <br>\
-Ha Long Bay is special to me because of its natural beauty and how peaceful it felt. It’s also a place where I felt really connected to nature. Being there made me feel relaxed and happy.\
-It’s a perfect place to escape from the busy city life and enjoy something truly unique.<br><br>\
+Ha Long Bay is special to me because of its natural beauty and how peaceful it felt. It's also a place where I felt really connected to nature. Being there made me feel relaxed and happy.\
+ It's a perfect place to escape from the busy city life and enjoy something truly unique.<br>\
 <b>Voca</b><br>\
 spectacular<br>\
 majestic<br>\
@@ -558,19 +582,19 @@ stunning<br>\
 breathtaking"
 ,vi:"<u>Thể thao</u><br>Tôi muốn nói về môn thể thao yêu thích của tôi, đó là bóng đá, môn thể thao vua đối với mọi người ở Việt Nam. Nó thực sự tuyệt vời!<br>\
 Bạn có thể chơi ở rất nhiều nơi, trong nhà, trên sân cỏ hoặc sân vận động, hoặc ngoài trời, trong công viên.<br>\
-Luật chơi bóng đá thực sự dễ dàng/đơn giản. Bạn chơi theo đội gồm… người. Bạn phải đá bóng vào lưới của đối thủ (lưới của đối thủ).<br>\
-Cầu thủ có thể sử dụng bất kỳ bộ phận nào trên cơ thể ngoại trừ (trừ) tay và cánh tay, mặc dù thủ môn là một ngoại lệ vì họ có thể sử dụng tay trong vòng cấm. Đội ghi được nhiều bàn thắng nhất vào cuối trận sẽ giành chiến thắng.<br>\
-Tôi thích môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ...<br><br>\
+Luật chơi bóng đá thực sự dễ dàng/đơn giản. Bạn chơi theo đội gồm... người. Bạn phải đá bóng vào lưới của đối phương.<br>\
+Cầu thủ có thể sử dụng bất kỳ bộ phận nào trên cơ thể ngoại trừ bàn tay và cánh tay, mặc dù thủ môn là một ngoại lệ vì họ có thể sử dụng tay trong vòng cấm. Đội ghi được nhiều bàn thắng nhất vào cuối trận đấu sẽ giành chiến thắng.<br>\
+Tôi yêu môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ...<br>\
 <u>Khu vực có vẻ đẹp thiên nhiên</u><br>\
-Một địa điểm có vẻ đẹp thiên nhiên đặc biệt mà tôi muốn nói đến là Vịnh Hạ Long. Vịnh Hạ Long nằm ở phía bắc Việt Nam, thuộc tỉnh Quảng Ninh. Nơi đây nổi tiếng với những hòn đảo đá vôi tuyệt đẹp nhô lên khỏi mặt nước xanh ngọc lục bảo. Vịnh có hàng ngàn hòn đảo nhỏ, một số có hang động và bãi biển, và cảnh quan thực sự ngoạn mục.<br>\
+Một địa điểm có vẻ đẹp thiên nhiên đặc biệt mà tôi muốn nói đến là Vịnh Hạ Long. Vịnh Hạ Long nằm ở phía bắc Việt Nam, thuộc tỉnh Quảng Ninh. Nơi đây nổi tiếng với những hòn đảo đá vôi tuyệt đẹp nhô lên từ mặt nước xanh ngọc lục bảo. Vịnh có hàng ngàn hòn đảo nhỏ, một số có hang động và bãi biển, và phong cảnh thực sự ngoạn mục.<br>\
 <br>\
-Tôi đã đến Vịnh Hạ Long một lần, trong một chuyến đi gia đình. Chúng tôi đi thuyền quanh vịnh và dừng lại ở một số hòn đảo để khám phá các hang động. Mặt nước phẳng lặng và bầu không khí yên bình. Tôi nhớ nơi đây yên tĩnh và đẹp như thế nào, với cảnh mặt trời lặn sau những tảng đá, làm mọi thứ trở nên rực rỡ.<br>\
+Tôi đã đến Vịnh Hạ Long một lần, trong một chuyến đi gia đình. Chúng tôi đi thuyền quanh vịnh và dừng lại ở một số hòn đảo để khám phá các hang động. Mặt nước êm đềm và bầu không khí trong lành. Tôi nhớ nơi đây yên tĩnh và đẹp như thế nào, với cảnh mặt trời lặn sau những tảng đá, làm mọi thứ trở nên rực rỡ.<br>\
 <br>\
 Vịnh Hạ Long đặc biệt đối với tôi vì vẻ đẹp tự nhiên và cảm giác yên bình. Đây cũng là nơi tôi cảm thấy thực sự gắn kết với thiên nhiên. Ở đó khiến tôi cảm thấy thư giãn và vui vẻ.\
-Đây là nơi hoàn hảo để thoát khỏi cuộc sống bận rộn của thành phố và tận hưởng điều gì đó thực sự độc đáo.<br><br>\
+ Đây là nơi hoàn hảo để thoát khỏi cuộc sống bận rộn của thành phố và tận hưởng điều gì đó thực sự độc đáo.<br>\
 <b>Voca</b><br>\
 ngoạn mục<br>\
-hùng vĩ<br>\
+vĩ đại<br>\
 thanh thản<br>\
 incrediblec<br>\
 tuyệt vời<br>\
@@ -739,13 +763,13 @@ Miêu tả chung về nhân vật: My recollection of the first time we met is v
 But if my memory serves me right, we were classmates at ...<br>\
 Mô tả thêm về tính cách: Everyone around him/her knows that he/she is ... Plus, another special thing about him/her is that ...<br>\
 Mô tả ngoại hình: She was a good-looking girl, with dark eyes and ... hair.<br>\
-Kể về một kỷ niệm chung giữa bạn và người ấy: We’ve had so many unforgettable memories together, but to tell you about one, it would have to be ...<br>\
+Kể về một kỷ niệm chung giữa bạn và người ấy: We've had so many unforgettable memories together, but to tell you about one, it would have to be ...<br>\
 <br>\
 3. FEELINGS (Cảm nhận cá nhân)<br>\
 It has been a while since I last met him/ her. And I definitely miss him/ her every day<br>\
 I hope I could meet him/ her in person in the near future<br>\
 It is going to be the best day of my life!<br>\
-He/ she is a role model for me. That’s why I am striving for the best to become a person like her/ him.<br>\
+He/ she is a role model for me. That's why I am striving for the best to become a person like her/ him.<br>\
 <br>\
 4. Ending <br>\
 Suggestion<br>\
@@ -848,14 +872,14 @@ Yêu cầu viết: Động vật và thực vật đang biến mất.<br>\
 	title:"[S]Animals && Place see them",
 	en:"Which are your favorite animals?<br>\
 – Well, my favorite animals are _ _ Because they are _ _ [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
-2. Which animals don’t you like?<br>\
-- Well I don’t really like _ _/ I’m afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
+2. Which animals don't you like?<br>\
+- Well I don't really like _ _/ I'm afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
 3. Where are the best places in your country to see wildlife?<br>\
 – In Vietnam, I think the best places to see wildlife are _ _ (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of _ _"
 	,vi:"Which are your favorite animals?<br>\
 – Well, my favorite animals are _ _ Because they are _ _ [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
-2. Which animals don’t you like?<br>\
-- Well I don’t really like _ _/ I’m afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
+2. Which animals don't you like?<br>\
+- Well I don't really like _ _/ I'm afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
 3. Where are the best places in your country to see wildlife?<br>\
 – In Vietnam, I think the best places to see wildlife are _ _ (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of _ _"
 	,voca:"",

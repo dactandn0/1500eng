@@ -21,7 +21,7 @@ $scope.acc_click = function (id) {
 	if($scope.acc===id) $scope.acc=-1;
 	else {
 		$scope.acc=id;
-		$scope.story = processStory(kSTORIES[id]);
+		$scope.story = processStory(kSTORIES[id], false);
 	}
 };
 
@@ -34,7 +34,6 @@ $scope.fetchStory = function () {
 		if (date) ele += ' (' + date + ')'
 		$scope.fullTitles.push(ele);
 	}
-
 }
 
 $scope.loadData = function () {

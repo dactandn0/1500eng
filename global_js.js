@@ -25,9 +25,8 @@ function IsRegexMatch(rg, txt) {
 }
 
 function fixDots(txt) {
-	txt = txt.replace(/\.{2,}/gi, "_ _");
+	//txt = txt.replace(/\.{2,}/gi, "_ _");
 	txt = txt.replace(".'", "'.");
-	txt = txt.replaceAll("v.v", "vv");
 	
 	var rg = /\d+[\.]\d+/g;
 	var mat = txt.match(rg)
@@ -39,8 +38,7 @@ function fixDots(txt) {
 		}
 		
 	}
-	
-	return txt;
+	return txt.replaceAll("v.v", "vv");
 }
 
 function doReplaceWords(txt) {
@@ -122,7 +120,7 @@ function ngClickOnWord(word, graph) {
 	return graph
 }
 
-function processStory (story) {
+function processStory (story, isAlert = true) {
 	if (!story || !story.en || story.en.trim().length == 0) return story;
 	
 	story.enShow = story.en;
@@ -130,7 +128,7 @@ function processStory (story) {
 	let viShow = story.vi
 	enShow = doReplaceWords(enShow)
 	enShow = fixDots(enShow)
-	viShow = fixDots(viShow)
+	if (viShow) viShow= fixDots(viShow)
 
 	if (story.voca) {
 		var vocas = story.voca.split(',');
@@ -158,7 +156,7 @@ function processStory (story) {
 
 
 	var kBrTag = '<br>'
-	var rgSen = /.*?((\.*\s*<br>)|(\!*\s*<br>)|(\?*\s*<br>)|('*\s*<br>)|("*\s*<br>)|\.|\!|\?'")/gi
+	var rgSen = /.*?((\.*\s*<br>)|(\!*\s*<br>)|(\?*\s*<br>)|('*\s*<br>)|("*\s*<br>)|[\.]+|\!|\?'")/gi
 	var enAndVi = ''
 	var viii = ''
 	var sentencesEn = enShow.match(rgSen);
@@ -166,8 +164,8 @@ function processStory (story) {
 	if (viShow) sentencesVi = viShow.match(rgSen);
 	if (sentencesEn.length === sentencesVi.length) {
 	
-	} else alert('sentencesEn.length !== sentencesVi.length')
-			for (var i = 0; i < sentencesEn.length; i++) {
+	} else if (isAlert) alert('sentencesEn.length !== sentencesVi.length')
+		for (var i = 0; i < sentencesEn.length; i++) {
 			var enSen = sentencesEn[i]
 			var viSen = sentencesVi[i]
 			if (viSen && viSen.trim()!=='<br>') {

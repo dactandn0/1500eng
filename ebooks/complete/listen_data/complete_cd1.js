@@ -185,5 +185,89 @@ M: Đây là một anh chàng người Mỹ gốc Phi làm đầu bếp vào nh�
 W: Ông ấy có làm món ăn nổi tiếng nào không?<br>\
 M: Không hẳn vậy - nhưng nếu không có ông ấy, chúng ta sẽ không có khoai tây chiên. Hay khoai tây chiên giòn, như người Anh gọi."
 	,voca:"",
+},
+{
+	track:"9.T21",
+	en:"T: So, Fahad, let's talk about your presentation. Um, you've done a rough outline, so, er, let's go over it and then you can go away and write it all up.<br>\
+F: Sure.<br>\
+T: I asked you to choose a topic related to water, and you've chosen desalination - removing salt from seawater. Now, why did you choose that?<br>\
+F: Well, I come from the United Arab Emirates, and we have the world's largest desalination plant.<br>\
+T: Right, that's very relevant, and I think you should include that you know, your personal, er, reasons - at the start.<br>\
+F: Say why I decided on this topic?<br>\
+T: Yes - just give a sentence or two, that'll do.<br>\
+F: OK - I mean, I thought I should keep the introduction brief...<br>\
+T: Yes, but you can say why you like the topic... it's a good choice of topic - very interesting - and then I can follow the introduction easily.<br>\
+F: OK.<br>\
+T: Now, let's go on to the historical background.<br>\
+F: Mm, I want to make it clear that seawater purification isn't a new idea.<br>\
+T: No indeed, that's a good point to make.<br>\
+F: So I'm going to describe some of the 'older' methods from the past.<br>\
+T: Mmm. I got a bit lost reading your notes here.<br>\
+F: Ah-ha. Is it too long?<br>\
+T: Well, I think the real problem is that the information isn't in any logical order.<br>\
+F: I see... well, it is just notes.<br>\
+T: Well, you start in the 18th century, then move to the present day, then go back to the 20th century.<br>\
+F: So it needs reorganising.<br>\
+T: Yes, that would help.<br>\
+F: OK - I'll make it clearer. What about the description of the process?<br>\
+T: Ah, yes, that looks pretty good to me, but we'll go over it in more detail in a moment.<br>\
+F: OK. I may need to cut it down.<br>\
+T: Yes, definitely it goes on for a long time and gets a bit technical.<br>\
+F: Sure, er... OK. After the process, I want to talk about the pros and cons of desalination, because that seems to be the big debate.<br>\
+T: I totally agree. But you need to sort this section out.<br>\
+F: Yes, it is a bit confusing.<br>\
+T: I think you should present the main points one at a time. F OK what, er, the advantages and disadvantages?<br>\
+T: Yes, and talk about each one individually.<br>\
+F: OK - rather than presenting them all together?<br>\
+T: Mmm - it's hard for your listeners to take in like that. It's all a bit unclear at the moment.<br>\
+F: I see.<br>\
+T: So, lastly, you conclude that we need to look for alternative ways to remove salt from sea water.<br>\
+F: Well, yes. Do you think that's the wrong conclusion?<br>\
+T: No, no- not at all. However, you should tell your audience exactly why you think this.<br>\
+F: I will in the previous section.<br>\
+T: Mmm, but you need to summarise the reasons again in the final part of your presentation.<br>\
+F: Oh, I see. Right... I'll mention them briefly, then.<br>\
+T: Just a list will do. That'll make the conclusion a better length as well."
+	,vi:"T: Vậy, Fahad, chúng ta hãy nói về bài thuyết trình của bạn. Ừm, bạn đã phác thảo sơ bộ, vậy thì, ừm, chúng ta hãy xem qua và sau đó bạn có thể đi và viết tất cả lên.<br>\
+F: Chắc chắn rồi.<br>\
+T: Tôi đã yêu cầu bạn chọn một chủ đề liên quan đến nước, và bạn đã chọn khử muối - loại bỏ muối khỏi nước biển. Bây giờ, tại sao bạn lại chọn chủ đề đó?<br>\
+F: Vâng, tôi đến từ Các Tiểu vương quốc Ả Rập Thống nhất và chúng tôi có nhà máy khử muối lớn nhất thế giới.<br>\
+T: Đúng, điều đó rất có liên quan và tôi nghĩ bạn nên đưa vào lý do cá nhân của mình - ngay từ đầu.<br>\
+F: Hãy nói lý do tại sao tôi quyết định chọn chủ đề này?<br>\
+T: Vâng - chỉ cần đưa ra một hoặc hai câu, thế là đủ.<br>\
+F: OK - Ý tôi là, tôi nghĩ mình nên giới thiệu ngắn gọn...<br>\
+T: Vâng, nhưng bạn có thể nói lý do tại sao bạn thích chủ đề này... đó là một lựa chọn chủ đề hay - rất thú vị - và sau đó tôi có thể dễ dàng theo dõi phần giới thiệu.<br>\
+F: OK.<br>\
+T: Bây giờ, chúng ta hãy chuyển sang bối cảnh lịch sử.<br>\
+F: Ừm, tôi muốn làm rõ rằng việc lọc nước biển không phải là một ý tưởng mới.<br>\
+T: Không thực sự, đó là một điểm tốt để make.<br>\
+F: Vậy thì tôi sẽ mô tả một số phương pháp 'cũ' hơn trong quá khứ.<br>\
+T: Ừm. Tôi hơi lạc đề khi đọc ghi chú của bạn ở đây.<br>\
+F: À ha. Có quá dài không?<br>\
+T: Vâng, tôi nghĩ vấn đề thực sự là thông tin không theo thứ tự logic nào cả.<br>\
+F: Tôi hiểu rồi... ừ thì, đó chỉ là ghi chú thôi.<br>\
+T: Vâng, bạn bắt đầu từ thế kỷ 18, sau đó chuyển đến thời điểm hiện tại, rồi quay lại thế kỷ 20.<br>\
+F: Vậy thì cần phải sắp xếp lại.<br>\
+T: Vâng, điều đó sẽ giúp ích.<br>\
+F: OK - Tôi sẽ làm rõ hơn. Còn phần mô tả quy trình thì sao?<br>\
+T: À, vâng, với tôi thì có vẻ khá ổn, nhưng chúng ta sẽ xem xét chi tiết hơn sau.<br>\
+F: OK. Tôi có thể cần phải cắt nó xuống.<br>\
+T: Vâng, chắc chắn là nó kéo dài trong một thời gian dài và trở nên hơi kỹ thuật.<br>\
+F: Chắc chắn, ừm... OK. Sau quá trình này, tôi muốn nói về ưu và nhược điểm của quá trình khử muối, vì đó có vẻ là cuộc tranh luận lớn.<br>\
+T: Tôi hoàn toàn đồng ý. Nhưng bạn cần sắp xếp phần này lại.<br>\
+F: Vâng, nó hơi khó hiểu.<br>\
+T: Tôi nghĩ bạn nên trình bày từng điểm chính một. F OK, ừm, ưu điểm và nhược điểm là gì?<br>\
+T: Vâng, và nói về từng điểm riêng lẻ.<br>\
+F: OK - thay vì trình bày tất cả cùng một lúc?<br>\
+T: Ừm - người nghe của bạn khó có thể tiếp thu như vậy. Hiện tại, mọi thứ vẫn chưa rõ ràng.<br>\
+F: Tôi hiểu rồi.<br>\
+T: Vậy cuối cùng, anh kết luận rằng chúng ta cần tìm những cách thay thế để loại bỏ muối khỏi nước biển.<br>\
+F: Vâng, đúng vậy. Anh có nghĩ đó là kết luận sai không?<br>\
+T: Không, không - hoàn toàn không. Tuy nhiên, anh nên nói cho khán giả biết chính xác lý do tại sao anh nghĩ như vậy.<br>\
+F: Tôi sẽ nói ở phần trước.<br>\
+T: Ừm, nhưng anh cần tóm tắt lại các lý do một lần nữa ở phần cuối bài thuyết trình của mình.<br>\
+F: À, tôi hiểu rồi. Đúng rồi... Vậy thì tôi sẽ đề cập ngắn gọn về chúng.<br>\
+T: Chỉ cần liệt kê là được. Như vậy thì phần kết luận cũng sẽ dài hơn."
+	,voca:"",
 }
 ]

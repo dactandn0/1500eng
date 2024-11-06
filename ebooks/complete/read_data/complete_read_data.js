@@ -331,7 +331,7 @@ Tóm lại, tôi không nghĩ bạn có thể làm tốt một việc gì đó m
 [F] Một người đọc giỏi sẽ đọc rất nhiều từ trong mỗi khối. Người đó sẽ chỉ nhìn vào mỗi khối trong một khoảnh khắc rồi chuyển sang khối khác. Rất hiếm khi mắt người đọc quay lại khối từ trước đó. Điều này làm giảm lượng công việc mà mắt người đọc phải làm. Nó cũng làm tăng lượng thông tin có thể tiếp nhận trong một khoảng thời gian nhất định.<br>\
 [G] Mặt khác, một người đọc chậm sẽ dành nhiều thời gian để đọc các khối từ nhỏ. Người đó sẽ thường xuyên quay lại, làm mất đi sự trôi chảy và cấu trúc của văn bản, và làm rối loạn sự hiểu biết chung của họ về chủ đề. Chuyển động mắt không đều này nhanh chóng khiến người đọc mệt mỏi. Những người đọc kém có xu hướng không thích đọc vì họ cảm thấy khó tập trung và hiểu thông tin đã viết.<br>\
 [H] Lời khuyên tốt nhất mà bất kỳ ai cũng có thể có để cải thiện tốc độ đọc của mình là luyện tập. Để làm được điều này một cách hiệu quả, một người phải tham gia vào tài liệu và muốn biết thêm. Nếu bạn thấy mình liên tục phải đọc lại cùng một đoạn văn, bạn có thể muốn chuyển sang tài liệu đọc thu hút sự chú ý của bạn. Nếu bạn thích những gì bạn đang đọc, bạn sẽ tiến bộ nhanh hơn."
-	,voca:"",
+	,voca:"concentrate,comprehend,grabs your attention,effectively",
 },
 {
 	unit:8,

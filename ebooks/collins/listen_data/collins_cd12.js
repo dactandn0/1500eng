@@ -1,6 +1,8 @@
 const collins_cd12 = [
 {
-	idx: "1.T01",
+	track: "1.T01",
+	unit: "1",
+	title: "People & relationships",
 	en: 
 	"[1] The person I'm closest to in my family is definitely my mum, Kate. We've always got on and we hardly ever fall out. I know that's unusual! She's really outgoing and sociable - she's always going out with friends and colleagues. Everyone thinks she's good fun. I look up to her because she's so hard working - she never sits still and she works long hours. She can be a bit impatient, though - she gets annoyed when her colleagues aren't as efficient as her. I take after her in that - I'm impatient, too. And she's over-sensitive, often getting offended for seemingly no reason.<br>\
 [2] My cousin Kieran and I grew up together. We were inseparable. He was so creative - he'd always think of new games we could play and make up these stories to make me laugh. I was constantly amazed by his open-mindedness as well - he was never judgemental. I wish I could be like that. Unfortunately, we grew apart, slowly but surely, and by the time we went to uni we weren't in touch any more. I haven't seen him for years. It's really sad. I would blame it partly on the fact that he's not very reliable, so for example, if I email him he won't respond. I'm not sure what he's up to these days. <br>\
@@ -13,13 +15,8 @@ const collins_cd12 = [
 ,note:"be good fun"
 },
 {
-	idx:"1.T02",
-	en:"Tell me something about your family. <br>\
-What do you like doing most with your family? <br>\
-Who are you close to in your family? <br>\
-In what way is your family important to you? <br>\
-Sample answers: <br>\
-Examiner: Tell me something about your family. <br>\
+	track: "1.T02",
+	en:"Examiner: Tell me something about your family. <br>\
 Candidate: Although I live abroad now, my mum's family is from Paris and my dad's family is from Toulouse. So I'm from a very French family. I would say I come from quite a small family, really. For example, I just have one older sister and four cousins, but it's true that my extended family is fairly big.<br>\
 Examiner: What do you like doing most with your family? <br>\
 Candidate: I like having nice long meals with good food and good wine, and a few jokes for dessert! <br>\
@@ -27,12 +24,7 @@ Examiner: Who are you close to in your family? <br>\
 Candidate: In my family? Well, I'm close to my Uncle Jacques. He's a chef. He's hilarious, always telling jokes, and he's very enthusiastic about everything he does. We spent a lot of time together when I was growing up. In fact he helped to bring me up.<br>\
 Examiner: In what way is your family important to you? <br>\
 Candidate: My family is everything to me. They are my best friends, they support me when things aren't going well and when things are going well. I know they'll always be there for me, no matter what."
-	,vi:"Hãy kể cho tôi nghe đôi điều về gia đình bạn. <br>\
-Bạn thích làm gì nhất với gia đình mình? <br>\
-Bạn thân với ai trong gia đình? <br>\
-Gia đình quan trọng với bạn theo cách nào? <br>\
-Câu trả lời mẫu: <br>\
-Giám khảo: Hãy kể cho tôi nghe đôi điều về gia đình bạn. <br>\
+	,vi:"Giám khảo: Hãy kể cho tôi nghe đôi điều về gia đình bạn. <br>\
 Ứng viên: Mặc dù hiện tại tôi đang sống ở nước ngoài, nhưng gia đình mẹ tôi đến từ Paris và gia đình bố tôi đến từ Toulouse. Vì vậy, tôi xuất thân từ một gia đình rất Pháp. Tôi muốn nói rằng tôi đến từ một gia đình khá nhỏ, thực sự. Ví dụ, tôi chỉ có một chị gái và bốn anh chị em họ, nhưng đúng là gia đình mở rộng của tôi khá lớn.<br>\
 Giám khảo: Bạn thích làm gì nhất với gia đình mình? <br>\
 Ứng viên: Tôi thích có những bữa ăn dài ngon miệng với đồ ăn ngon và rượu ngon, và một vài câu chuyện cười cho món tráng miệng! <br>\
@@ -43,7 +35,7 @@ Giám khảo: Gia đình quan trọng với bạn theo cách nào? <br>\
 	,voca:"",
 },
 {
-	idx:"1.T03",
+	track: "1.T03",
 	en:"Candidate: One of my best friends is a guy called Raul. I met him at uni in Barcelona where we were in the same study group. When was that? I suppose it was over 10 years ago now, so, yes, we've known each other for a good decade. We got to know each other on the tennis courts because the first few days of our course were so boring that we both decided we'd be better off outside playing tennis.<br>\
 What kind of person is he? He's very active, a sporty type, involved in hiking and mountain biking - a bit of an adrenalin junky. He's also a very determined person. When he gets into something, he gives one hundred per cent. And he changes passions often. That makes him a bit of a self-absorbed person actually, which I'd say is a drawback. And I think he comes across as full of himself sometimes; I mean a bit too sure of his own opinions! As for why I like him, well, he's actually quite different from me. At uni, he'd often suggest doing something and I'd go along with it, and because I'm laid back I never felt overwhelmed by him. We've never fallen out or anything.<br>\
 Examiner: How often do you see your friend? <br>\
@@ -55,17 +47,8 @@ Giám khảo: Bạn gặp bạn mình thường xuyên như thế nào? <br>\
 	,voca:"",
 },
 {
-	idx:"1.T07",
-	en:"Modern families <br>\
-In what ways have families changed in the last hundred years? <br>\
-Should we rely heavily on our families or is it better to try to be independent? <br>\
-The elderly are sometimes considered the wisest members of society. What do you think we can learn from them?<br>\
-Friendship <br>\
-What do you expect from a good friend? <br>\
-Are friends as important to you as family? <br>\
-Do you think friendships change as we get older? How?<br>\
-Sample answers:  <br>\
-Examiner: In what ways have families changed in the last hundred years?<br>\
+	track: "1.T07",
+	en:"Examiner: In what ways have families changed in the last hundred years?<br>\
 Candidate: In Western countries, I would say families have become more widely dispersed and less close. People travel more, and then end up living far from their families. I think this is a shame because it means there is a breakdown of communities. I also think that because families are spread over a wider geographical area, elderly people tend to be forgotten and usually live on their own.<br>\
 Examiner: Should we rely heavily on our families or is it better to try to be independent? <br>\
 Candidate: People seem to like living independently from each other these days, but I do wonder if that's the best way. Relying on people is seen as a weakness by some, I think. However, having family nearby is invaluable when you have children, in my opinion. Who else can be called on to babysit at a moment's notice?<br>\
@@ -77,16 +60,7 @@ Examiner: Are friends as important to you as family? <br>\
 Candidate: No, I wouldn't say so. Friends come and go, but family are always there, whether you like it or not. You can even be rude to your family -not that it's advisable, of course! -and they will forgive you. But sometimes you've known a friend for so long they can become like a family member -you can really be yourself with them and you may even argue quite often, like siblings do.<br>\
 Examiner: Do you think friendships change as we get older? <br>\
 Candidate: Well, I definitely find that I have less in common with some friends than I used to. I sometimes wonder what we used to find to talk about. And so you often grow apart from old school friends or old colleagues. The people I feel I have most in common with are friends I met at university. I'm not sure why but we somehow always have lots to talk about."
-	,vi:"Gia đình hiện đại <br>\
-Gia đình đã thay đổi theo những cách nào trong một trăm năm qua? <br>\
-Chúng ta có nên phụ thuộc quá nhiều vào gia đình hay cố gắng tự lập hơn? <br>\
-Người già đôi khi được coi là thành viên khôn ngoan nhất của xã hội. Bạn nghĩ chúng ta có thể học được gì từ họ?<br>\
-Tình bạn <br>\
-Bạn mong đợi gì ở một người bạn tốt? <br>\
-Bạn bè có quan trọng với bạn như gia đình không? <br>\
-Bạn có nghĩ tình bạn thay đổi khi chúng ta già đi không? Thay đổi như thế nào?<br>\
-Câu trả lời mẫu: <br>\
-Giám khảo: Gia đình đã thay đổi theo những cách nào trong một trăm năm qua?<br>\
+	,vi:"Giám khảo: Gia đình đã thay đổi theo những cách nào trong một trăm năm qua?<br>\
 Thí sinh: Ở các nước phương Tây, tôi cho rằng các gia đình đã trở nên phân tán rộng rãi hơn và ít gần gũi hơn. Mọi người đi du lịch nhiều hơn, rồi cuối cùng lại sống xa gia đình. Tôi nghĩ đây là điều đáng tiếc vì điều đó có nghĩa là có sự tan vỡ của các cộng đồng. Tôi cũng nghĩ rằng vì các gia đình phân tán trên một khu vực địa lý rộng lớn hơn, nên người già có xu hướng bị lãng quên và thường sống tự lập.<br>\
 Giám khảo: Chúng ta có nên phụ thuộc nhiều vào gia đình hay cố gắng tự lập hơn? <br>\
 Ứng viên: Mọi người dường như thích sống độc lập với nhau ngày nay, nhưng tôi tự hỏi liệu đó có phải là cách tốt nhất không. Tôi nghĩ rằng một số người coi việc dựa dẫm vào mọi người là điểm yếu. Tuy nhiên, theo tôi, việc có gia đình ở gần là vô giá khi bạn có con. Ai khác có thể được gọi đến để trông trẻ bất cứ lúc nào?<br>\
@@ -101,7 +75,9 @@ Giám khảo: Bạn có nghĩ rằng tình bạn thay đổi khi chúng ta già 
 	,voca:"",
 },
 {
-	idx:"1.T08",
+	track: "1.T08",
+	unit: "2",
+	title: "A healthy body",
 	en:"It's by far my favourite sport to watch. I love the excitement that builds up as the match progresses, with the fans cheering and chanting. There's always an amazing atmosphere.<br>\
 My team usually loses, it has to be said, although last week they drew. When they play away I always try to go and support them. And I've got the latest kit, but they're getting more and more expensive so I may have to stop buying them. I think the clubs take advantage of fans' loyalty to push up the prices.<br>\
 Team sports are a fantastic way for young people to improve their fitness. I coach a junior team at the weekend. We don't train in a stadium, of course, just on a pitch in our local park. I was really delighted last week when our youngest player scored the winning goal with a beautiful header. I think he might prove to be a real up-and-coming talent."
@@ -111,13 +87,8 @@ Các môn thể thao đồng đội là một cách tuyệt vời để những 
 	,voca:"",
 },
 {
-	idx:"1.T09",
-	en:"What do you do to keep fit? <br>\
-Are you good at sport? <br>\
-What sports do you play? <br>\
-What is the most popular sport in your country?<br>\
-Sample answers: <br>\
-Examiner: What do you do to keep fit? <br>\
+	track: "1.T09",
+	en:"Examiner: What do you do to keep fit? <br>\
 Candidate: I go to the gym twice a week. I don't really enjoy it, to be honest, but it's an easy way to keep fit. I mainly do cardiovascular exercises, rather than muscle building,<br>\
 Examiner: Are you good at sport? <br>\
 Candidate: Not really, but I try my best. I prefer individual sports to team sports because if I do badly in a team game I always feel I'm letting everyone down.<br>\
@@ -125,12 +96,7 @@ Examiner: What sports do you play?<br>\
 Candidate:I go kite-surfing sometimes. I enjoy it because it's so exhilarating. I can't go often, though, because there's rarely enough wind where I live. I might take up another water sport instead. <br>\
 Examiner: What is the most popular sport in your country?<br>\
 Candidate: I'd say the most popular sport is football, as in most countries. Most people have a favourite team who they support through thick and thin. The teams are often English ones, and Manchester United is the most well-known."
-	,vi:"Bạn làm gì để giữ dáng? <br>\
-Bạn có giỏi thể thao không? <br>\
-Bạn chơi những môn thể thao nào? <br>\
-Môn thể thao phổ biến nhất ở quốc gia của bạn là gì?<br>\
-Câu trả lời mẫu: <br>\
-Giám khảo: Bạn làm gì để giữ dáng? <br>\
+	,vi:"Giám khảo: Bạn làm gì để giữ dáng? <br>\
 Ứng viên: Tôi đến phòng tập thể dục hai lần một tuần. Thực ra, tôi không thích lắm, nhưng đó là cách dễ dàng để giữ dáng. Tôi chủ yếu tập các bài tập tim mạch, thay vì tập cơ,<br>\
 Giám khảo: Bạn có giỏi thể thao không? <br>\
 Ứng viên: Không giỏi lắm, nhưng tôi cố gắng hết sức. Tôi thích các môn thể thao cá nhân hơn các môn thể thao đồng đội vì nếu tôi chơi tệ trong một trò chơi đồng đội, tôi luôn cảm thấy mình đang làm mọi người thất vọng.<br>\
@@ -141,7 +107,7 @@ Giám khảo: Môn thể thao phổ biến nhất ở quốc gia của bạn là
 	,voca:"",
 },
 {
-	idx:"1.T13",
+	track: "1.T13",
 	en:"Candidate: I'd like to talk about the most exciting tennis match I've ever seen. It wa s about six years ago just outside Bordeaux in France, and it was the boys' final of a junior championship. My favourite player, a rising star, had got to the final so I wanted to see him. At the time, I didn't know anyone else who was interested in tennis - all my friends preferred football - so I went on my own. I set off really early to make sure got there on time, but I ended up being too early and I had to wait for two hours for the match to start. It didn 't matter, though, because this meant I got one of the best seats, right at the front in the middle of the court - I was delighted about that. <br>\
 Other people gradually started arriving, the seats filled up, and we waited expectantly for the players. When the match started, it soon became clear that I was practically the only person supporting Jean Martin. Most people were there to support the other guy who had won the previous two years and was the favourite to win this year, too. Every time Paul Fernandez won a point, the crowd erupted into applause but I sat silently, getting more and more anxious. Martin lost the first set, but then there was a dramatic turnaround. He suddenly seemed to find some self-belief and he started to win. That's what I love about tennis - it's a battle of the mind as much as the body. I find it interesting to see how some players may be highly skilled but don't have the mental strength to win. Martin obviously did have this strength, and Fernandez was slowly falling apart. The atmosphere was electric. Martin showed off his amazing skills, hitting ball after ball straight down the line. Martin served for the match - you could have heard a pin drop. When he served an ace, the crowd went wild! Although they had begun by supporting his opponent, they had grown to respect him for his cool head and control of the ball. When he was presented with the trophy, he cried with joy. <br>\
 Examiner: Do you play tennis yourself?<br>\
@@ -153,17 +119,8 @@ Giám khảo: Bản thân anh có chơi quần vợt không?<br>\
 	,voca:"",
 },
 {
-	idx:"1.T14",
-	en:"Keeping fit<br>\
-What are the best ways to keep fit? <br>\
-Do you think most people consider exercise a chore or do they find it fun? <br>\
-What is the most popular form of exercise in your country?<br>\
-Healthy lifestyles <br>\
-Do you think people in your country are less healthy than they used to be? <br>\
-How can we encourage young people to stay healthy? <br>\
-Should governments intervene to force people to be healthier?<br>\
-Sample answers: <br>\
-Keeping fit <br>\
+	track: "1.T14",
+	en:"Keeping fit <br>\
 Examiner: What are the best ways to keep fit? <br>\
 Candidate: The best way to keep fit is to do exercise that raises your heart rate. The heart is a muscle and has to be worked like any other muscle. So golf, in my opinion, is not the best form of exercise. Something like jogging or swimming or surfing is much more beneficial.<br>\
 Examiner: Do you think most people consider exercise a chore or do they find it fun? <br>\
@@ -176,16 +133,7 @@ Examiner: How can we encourage young people to stay healthy? <br>\
 Candidate: Parents should set a good example. But I strongly believe that schools have a crucial role to play. Not only can they offer a wide range of sports for children to play, they can teach them about eating a balanced diet, and the negative effects of eating junk food and not exercising. If children don't hear all this from home, they have to hear it from somewhere, and I would argue that it's the schools' responsibility. Once they get a taste for playing sports, they will love the sense of achievement it can give you and the feeling of camaraderie with your team mates, and then hopefully they won't ever want to stop playing sports.<br>\
 Examiner: Should governments intervene to force people to be healthier? <br>\
 Candidate: Hmm, I'm highly sceptical of the idea that governments should force their citizens to be healthy. People ought to be encouraged to lead healthy lives, but not forced to. They could, for example, run an ad campaign showing people how to eat a balanced diet that you need to eat some carbohydrates, some vegetables and fruit, some meat and so on. I think most people don't know that. But I'm unconvinced that trying to force people into healthy habits would work because when bullied like that people tend to resent it and react by sticking even more firmly with their unhealthy lifestyles. The one area where I strongly believe legislation is necessary is with smoking. Smokers can harm others through passive smoking so they should not be allowed to smoke in public places. In fact, this has just recently been outlawed in my country."
-	,vi:"Giữ gìn vóc dáng<br>\
-Những cách tốt nhất để giữ gìn vóc dáng là gì? <br>\
-Bạn có nghĩ rằng hầu hết mọi người coi việc tập thể dục là một việc vặt hay họ thấy nó thú vị? <br>\
-Hình thức tập thể dục phổ biến nhất ở quốc gia của bạn là gì?<br>\
-Lối sống lành mạnh <br>\
-Bạn có nghĩ rằng người dân ở quốc gia của bạn không còn khỏe mạnh như trước đây không? <br>\
-Làm thế nào chúng ta có thể khuyến khích những người trẻ tuổi giữ gìn sức khỏe? <br>\
-Chính phủ có nên can thiệp để buộc mọi người phải khỏe mạnh hơn không?<br>\
-Câu trả lời mẫu: <br>\
-Giữ gìn vóc dáng <br>\
+	,vi:"Giữ gìn vóc dáng <br>\
 Giám khảo: Những cách tốt nhất để giữ gìn vóc dáng là gì? <br>\
 Thí sinh: Cách tốt nhất để giữ gìn vóc dáng là tập các bài tập làm tăng nhịp tim. Tim là một cơ và phải được vận động như bất kỳ cơ nào khác. Vì vậy, theo tôi, chơi golf không phải là hình thức tập thể dục tốt nhất. Một hoạt động như chạy bộ, bơi lội hay lướt sóng có lợi hơn nhiều.<br>\
 Giám khảo: Bạn có nghĩ rằng hầu hết mọi người coi việc tập thể dục là một việc vặt hay họ thấy nó thú vị? <br>\
@@ -201,7 +149,9 @@ Giám khảo: Chính phủ có nên can thiệp để buộc mọi người ph�
 	,voca:"",
 },
 {
-	idx:"1.T15",
+	track: "1.T15",
+	unit: "3",
+	title: "Studies & work",
 	en:"My name's Mubarak and I'm from the United Arab Emirates. My favourite subject at school was Maths. I really loved it, I think primarily because I liked being able to use logic to work out answers, rather than having to speculate and theorise, as you often do in arts subjects.<br>\
 I went on to study for Bachelor's and Master's degrees, both in Mechanical Engineering at Leeds University in England. I chose that subject because, although I was more keen on Maths, engineering is more practical. My decision to study in Britain was motivated by the high prestige of British qualifications back in my home country. The tuition fees are very high for foreign students but my family paid them for me.<br>\
 I found the course very challenging. English is, of course, not my mother tongue so I found some of the lectures and seminars hard to follow. As a result, I failed my first year exams. I had to retake them all, but then, thankfully, I passed. I always did well in my coursework because I could take time to research the topic and check my English.<br>\
@@ -213,22 +163,14 @@ Công việc mơ ước của tôi là làm kỹ sư cơ khí cho Quân đội C
 	,voca:"",
 },
 {
-	idx:"1.T16",
-	en:"Do you work or are you a student? <br>\
-Why did you choose that course or job? <br>\
-What is the most difficult thing about your studies or job?<br>\
-Sample answers: <br>\
-Examiner: Do you work or are you a student? <br>\
+	track: "1.T16",
+	en:"Examiner: Do you work or are you a student? <br>\
 Candidate: I've just finished secondary school. I got the best results in my year so I'm hoping to get a scholarship to study English Literature.<br>\
 Examiner: Why did you choose that course? <br>\
 Candidate: Because I love literature. I love getting lost in a book; I mean, it's a form of escapism for me. But I also enjoy learning about the historical and cultural contexts that influenced a work and I'll have ample opportunity to learn about these things at university.<br>\
 Examiner: What was the most difficult thing about your studies? <br>\
 Candidate: At secondary school, the most difficult subject for me was Chemistry. I can't stand Science, and I would dread every lesson! I struggled in Chemistry lessons, and I had to work really hard to pass my exam. For some reason, I just couldn't remember all those chemical symbols and equations no matter how long I spent revising."
-	,vi:"Bạn đang đi làm hay đang là sinh viên? <br>\
-Tại sao bạn chọn khóa học hoặc công việc đó? <br>\
-Điều khó khăn nhất trong việc học hoặc công việc của bạn là gì?<br>\
-Câu trả lời mẫu: <br>\
-Giám khảo: Bạn đang đi làm hay đang là sinh viên? <br>\
+	,vi:"Giám khảo: Bạn đang đi làm hay đang là sinh viên? <br>\
 Ứng viên: Tôi vừa mới tốt nghiệp trung học. Tôi đạt kết quả tốt nhất trong năm nên tôi hy vọng sẽ nhận được học bổng để học Văn học Anh.<br>\
 Giám khảo: Tại sao bạn chọn khóa học đó? <br>\
 Ứng viên: Bởi vì tôi yêu văn học. Tôi thích đắm chìm trong một cuốn sách; ý tôi là, đó là một hình thức thoát ly đối với tôi. Nhưng tôi cũng thích tìm hiểu về bối cảnh lịch sử và văn hóa ảnh hưởng đến một tác phẩm và tôi sẽ có nhiều cơ hội để tìm hiểu về những điều này tại trường đại học.<br>\
@@ -237,7 +179,7 @@ Giám khảo: Điều khó khăn nhất trong việc học của bạn là gì? 
 	,voca:"",
 },
 {
-	idx:"1.T17",
+	track: "1.T17",
 	en:"Candidate: My dream job would be to teach children to sail.\
 	 I have some qualifications, in skippering, for example, but it's very likely I would need more, such as a teaching certificate from the Yachting Association.\
 	  I have some of the right experience in that I've been sailing a long time - I'm confident in handling a yacht and I've dealt with many minor crises in my time,\
@@ -255,17 +197,8 @@ Giám khảo: Bạn học chèo thuyền khi nào?<br>\
 	,voca:"",
 },
 {
-	idx:"1.T18",
-	en:"Education <br>\
-Do you think science subjects are more useful than arts subjects? <br>\
-Are students mature enough to choose what to study themselves or should their parents decide for them? <br>\
-In your country, does having a university education help you into a better career? <br>\
-Motivation <br>\
-Do you think older or younger workers are more motivated? <br>\
-How can managers increase motivation among their workforce? <br>\
-Are people more motivated if their job involves helping others?<br>\
-Sample answers: <br>\
-Education  <br>\
+	track: "1.T18",
+	en:"Education<br>\
 Examiner: Do you think science subjects are more useful than arts subjects? <br>\
 Candidate: I think they are more useful because they are primarily concerned with practical matters. If you study science, you might, for example, go on to have some kind of technical role in the production of a device, like a computer or a car. However, all great leaders have studied more arty subjects, such as philosophy, history and economics. This makes them better leaders because they have an understanding of human nature.<br>\
 Examiner: Are young people mature enough to choose what to study themselves or should their parents decide for them? I think success in studying comes from being highly motivated to study a specific subject area. Therefore the student should choose which subject they're interested in. By way of an example, I had a friend who studied science A levels because his parents pushed him down that route, but he hated it and so didn't get very good results. He still graduated and managed to get a place at university where he studied law, and he became a top student because law was what he was interested in.<br>\
@@ -276,16 +209,7 @@ Candidate: Younger workers should be more motivated because everything in their 
 Examiner: How can managers increase motivation among their workforce? <br>\
 Candidate: Allocating the right tasks to the person with the right skills, but making every task slightly different so that they learn every time. That can lead to an increase in motivation. It's about making the job interesting, but without drowning staff in too much new information each time. If they see that they can progress steadily and meet the challenges set, then they'll stay motivated.<br>\
 Examiner: Are people more motivated if their job involves helping others? Although my job doesn't really involve helping people, just training them, I'd hazard a guess that youth workers, for example, find it very rewarding helping a young person to achieve their personal goals or overcome a personal challenge. I can imagine, too, that it gives a counsellor tremendous job satisfaction to know that if they weren't there to listen to their patients' problems, things would probably not turn out as well for them. So, yes, although it's impossible for me to know for sure, I'd say people with those kinds of jobs take more pleasure from their work and are motivated by something more profound than just money."
-	,vi:"Giáo dục <br>\
-Bạn có nghĩ các môn khoa học hữu ích hơn các môn nghệ thuật không? <br>\
-Học sinh đã đủ trưởng thành để tự chọn ngành học hay cha mẹ quyết định thay? <br>\
-Ở quốc gia của bạn, việc học đại học có giúp bạn có sự nghiệp tốt hơn không? <br>\
-Động lực <br>\
-Bạn nghĩ những người lao động lớn tuổi hay trẻ tuổi có động lực hơn? <br>\
-Làm thế nào để các nhà quản lý có thể tăng động lực cho lực lượng lao động của mình? <br>\
-Mọi người có động lực hơn nếu công việc của họ liên quan đến việc giúp đỡ người khác không?<br>\
-Câu trả lời mẫu: <br>\
-Giáo dục <br>\
+	,vi:"Giáo dục<br>\
 Giám khảo: Bạn có nghĩ các môn khoa học hữu ích hơn các môn nghệ thuật không? <br>\
 Thí sinh: Tôi nghĩ chúng hữu ích hơn vì chúng chủ yếu liên quan đến các vấn đề thực tế. Nếu bạn học khoa học, chẳng hạn, bạn có thể tiếp tục đảm nhiệm một số vai trò kỹ thuật trong quá trình sản xuất thiết bị, chẳng hạn như máy tính hoặc ô tô. Tuy nhiên, tất cả các nhà lãnh đạo vĩ đại đều học các môn nghệ thuật hơn, chẳng hạn như triết học, lịch sử và kinh tế. Điều này giúp họ trở thành những nhà lãnh đạo tốt hơn vì họ hiểu được bản chất con người.<br>\
 Giám khảo: Những người trẻ tuổi đã đủ trưởng thành để tự chọn ngành học hay cha mẹ họ quyết định thay họ? Tôi nghĩ rằng thành công trong học tập đến từ việc có động lực cao để học một lĩnh vực cụ thể. Do đó, học sinh nên chọn ngành mà họ quan tâm. Ví dụ, tôi có một người bạn học khoa học A level vì cha mẹ anh ấy thúc đẩy anh ấy theo con đường đó, nhưng anh ấy ghét nó và do đó không đạt được kết quả tốt. Anh ấy vẫn tốt nghiệp và cố gắng vào được trường đại học nơi anh ấy học luật, và anh ấy đã trở thành một sinh viên giỏi vì luật là ngành anh ấy quan tâm.<br>\
@@ -299,7 +223,9 @@ Giám khảo: Mọi người có động lực hơn nếu công việc của h�
 	,voca:"",
 },
 {
-	idx:"1.T21",
+	track: "1.T21",
+	unit: "4",
+	title: "The world around us",
 	en:"[1] Where I come from it's almost always sweltering. Ours is an arid climate, and in most parts of the country precipitation is very low. Can you believe that in the summer, the temperature can exceed 50°C?<br>\
 [2] Sometimes I feel like it's constantly drizzling here and it generally feels damp. In fact, right now it's pouring down. That does mean we have the most beautiful lush, green countryside, though. And the climate is temperate, so we don't suffer from any extreme weather, thank goodness.<br>\
 [3] The weather here is notoriously changeable. People often think our country is very, very cold all the time, but ocean currents keep our climate fairly mild, considering the latitude. I don't mind our winters, which are bearable as long as you wrap up warm, but I don't like our summers because it never gets above 25°C."
@@ -309,7 +235,7 @@ Giám khảo: Mọi người có động lực hơn nếu công việc của h�
 	,voca:"",
 },
 {
-	idx:"1.T23",
+	track: "1.T23",
 	en:"Examiner: Tell me about your country's climate.<br>\
 Candidate: We have an extreme climate. Our winters are absolutely freezing, and our summers are boiling hot. That means that the people, the houses, the transport system, everything needs to be prepared to cope with every kind of weather.<br>\
 Examiner: What's your favourite kind of weather? <br>\
@@ -329,7 +255,7 @@ Giám khảo: Cảm thấy quá nóng hay quá lạnh tệ hơn? <br>\
 	,voca:"",
 },
 {
-	idx:"1.T24",
+	track: "1.T24",
 	en:"Candidate: My favourite season is most certainly the summer, which is officially from June to September. I say 'officially' because the reality is that we generally get a very short summer, in that the weather is only really 'summery' for a few weeks a year. The rest of the season merges with the others, being rather cold and rainy. The highest the temperature gets is about 3D, and when it gets that high, people start complaining because they're not used to such heat. This irritates me, to be honest, because my view is that we so rarely have hot weather that we should just appreciate it and enjoy it when we do. In this country, and especially in my region, you can't rely on good weather in the summer. I've been to many outdoor events, like weddings, concerts, barbecues and so on, where the organisers were optimistic about the weather, but where it rained non stop. Of course, you can't blame them - if you can 't organise an outdoor event in August, when can you?<br>\
 In the summer, I typically go abroad on holiday to places where scorching sunshine is practically guaranteed. This is because I am a sun worshipper and like to get a good tan. Having sun on my skin makes me feel healthy, though I am fully aware of all the dangers associated with too much exposure to the sun. When I am at home, I like to have friends over for barbecues, and we stay out in the garden all evening until it gets too chilly or until it's time for them to go home.<br>\
 The reason summer is my favourite season is that sunshine makes me happy. It's a scientific fact that it releases endorphins. In fact, during the winter many people in my country use light boxes, which recreate the light of the sun. You have to sit and stare into the light and it is intended to lift your mood. In the summer, though, you don't need such gadgets; you can just go outside, sit in the sun and get a natural energy boost. It's wonderful. <br>\

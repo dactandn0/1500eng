@@ -10,7 +10,7 @@ $scope.stories = kSTORIES;
 $scope.storyIdx = 0;
 
 $scope.createAudioSrc = function() {
-	return "./ebooks/collins/listen_data/cd12/" + $scope.story.idx + '.mp3';
+	return "./ebooks/collins/listen_data/cd12/" + $scope.story.track + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {

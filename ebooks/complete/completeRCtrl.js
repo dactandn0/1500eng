@@ -6,7 +6,6 @@ app.controller("completeRCtrl", function($scope, $timeout) {
 
 var kSTORIES = complete_read_data;
 
-$scope.fullTitles = [];
 $scope.story = '';
 $scope.bShowVi = 0;
 $scope.acc=-1;
@@ -24,17 +23,12 @@ $scope.acc_click = function (id) {
 	Helper_saveDB("completeR_unit", id)
 };
 
-$scope.fetchStory = function () {
-	for (var k = 0; k < kSTORIES.length; k++) {
-		var unit = kSTORIES[k].unit;
-		var title = kSTORIES[k].title;
-		$scope.fullTitles.push('U' + unit + ": " + title);
-	}
+$scope.storyTitles = function () {
+	return showStoryTitles(kSTORIES)
 }
 
 $scope.loadData = function () {
 	$scope.acc_click( Helper_loadInt('completeR_unit', -1));
-	$scope.fetchStory();
 };
 
 $scope.$on('$viewContentLoaded', function(){

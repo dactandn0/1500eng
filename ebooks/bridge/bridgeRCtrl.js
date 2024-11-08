@@ -7,8 +7,7 @@ app.controller("bridgeRCtrl", function($scope, $timeout) {
 var kSTORIES = bridge_read_data;
 
 $scope.story = '';
-$scope.fullTitles = [];
-$scope.acc=-1;
+$scope.acc= -1;
 $scope.bShowVi = 0;
 
 $scope.acc_isShow = function (id) {
@@ -24,19 +23,12 @@ $scope.acc_click = function (id) {
 	localStorage.setItem("bridgeR_unit", id)
 };
 
-$scope.fetchStory = function () {
-	for (var k = 0; k < kSTORIES.length; k++) {
-		var unit = kSTORIES[k].unit;
-		var title = kSTORIES[k].title;
-		$scope.fullTitles.push('Unit ' + unit + ": " + title);
-	}
+$scope.storyTitles = function () {
+	return showStoryTitles(kSTORIES)
 }
 
 $scope.loadData = function () {
-	if (localStorage.hasOwnProperty("bridgeR_unit")) {
-		$scope.acc_click( parseInt(localStorage.bridgeR_unit) );
-	}
-	$scope.fetchStory();
+	$scope.acc_click( Helper_loadInt('bridgeR_unit', -1));
 };
 
 $scope.$on('$viewContentLoaded', function(){

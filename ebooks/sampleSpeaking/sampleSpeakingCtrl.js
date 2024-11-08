@@ -54,6 +54,10 @@ $scope.whenAudioEnded = function()
     }
 }
 
+$scope.storyTitles = function () {
+	return showStoryTitles(kSTORIES)
+}
+
 $scope.init = function () {
 	for (var i = 0; i < $scope.stories.length; i++) {
 		var title = $scope.stories[i].title;
@@ -73,7 +77,6 @@ $scope.process = function () {
 }
 
 $scope.loadData = function () {
-	$scope.init();
 };
 
 $scope.loadData();

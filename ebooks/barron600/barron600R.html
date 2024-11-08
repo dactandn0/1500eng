@@ -1,21 +1,6 @@
 
-    <h5 class="mb-4">Barron 600 Reading</h5>
+<h5 class="mb-4">Barron 600 Reading</h5>
+<a href="#!barron600L">Listening</a>
+<hr>
 
-      <a href="#!barron600L">Listening</a>
-    	<hr>
-    	<div ng-repeat="fTitle in fullTitles track by $index" class="mb-2" >
-		  <h6 class="accordion" >
-		    <a href ng-click="acc_click($index)">{{$index+1}}. {{fTitle}}</a>
-		  </h6>
-		  <div class="accordion-content" ng-if="acc_isShow($index)">
-		     <p compile="story.enShow" ng-if="!bShowVi"></p>
-		     <p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
-
-		      <div ng-include="'./includes/html_note.html'"></div>
-		      
-		  </div>
-		</div>
-
-    	<span class="btnShowVi opa">
-        	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-    	</span>
+<div ng-include="'./includes/storyR.html'" ></div>

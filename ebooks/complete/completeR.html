@@ -3,22 +3,5 @@
 
 <a href="#!completeL">Listening</a>
 <hr>
-<div ng-repeat="fTitle in fullTitles track by $index" class="mb-2" >
-  <h6 class="accordion" >
-    <a href ng-click="acc_click($index)">{{$index+1}}. {{fTitle}}</a>
-  </h6>
-  <div class="accordion-content" ng-if="acc_isShow($index)">
-     <p compile="story.enShow" ng-if="!bShowVi"></p>
-     <p ng-bind-html="story.viShow" ng-if="bShowVi"></p>
-     <div class="mt-1" ng-if="story.vocaNotes">
-       	<hr/>
-    		<p  class="mb-1" ng-repeat="note in story.vocaNotes">
-      			{{note}}
-      		</p>
-      	</div>
-  </div>
-</div>
 
-<span class="btnShowVi opa">
-	<button class="btn btn-sm btn-success" ng-click="bShowVi=!bShowVi">{{bShowVi == 0 ? '->Vi' : '->En' }}</button>
-</span>
+<div ng-include="'./includes/storyR.html'" ></div>

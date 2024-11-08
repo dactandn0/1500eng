@@ -18,7 +18,7 @@ Họ đã tiến hành một nghiên cứu về cách người dân địa phư�
 Nghiên cứu kết luận rằng mọi người sẽ hữu ích hơn ở những thành phố có lối sống thoải mái hơn như Rio. Trong thời gian họ ở đó, các nhà nghiên cứu đã nhận được sự giúp đỡ trong 93 phần trăm các trường hợp, và tỷ lệ ở Lilongwe chỉ thấp hơn một chút. Tuy nhiên, các thành phố giàu có hơn như Amsterdam và New York được coi là kém thân thiện nhất. Người dân Amsterdam đã giúp các nhà nghiên cứu trong 53 phần trăm các trường hợp và ở New York chỉ 44 phần trăm. Các nhà tâm lý học phát hiện ra rằng, ở những thành phố này, mọi người có xu hướng thiếu thời gian, vì vậy họ vội vã và thường phớt lờ người lạ.<br>\
 <br>\
 chuyển thể từ bài viết của Victoria Harrison, BBC News"
-	,voca:"",
+	,voca:""
 },
 {
 	unit:1,

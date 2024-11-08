@@ -120,6 +120,17 @@ function ngClickOnWord(word, graph) {
 	return graph
 }
 
+// for Reading fullTitles
+function showStoryTitles(data) {
+	var r = []
+	for (var k = 0; k < data.length; k++) {
+		var unit = data[k].unit ? ('U' + data[k].unit) : '';
+		var title = data[k].title ? (' - ' + data[k].title ) : '';
+		r.push(unit + title);
+	}
+	return r
+}
+
 function processStory (story, isAlert = true) {
 	if (!story || !story.en || story.en.trim().length == 0) return story;
 	
@@ -185,6 +196,13 @@ function processStory (story, isAlert = true) {
 		}
 	story.viShow = enAndVi
 	story.enShow = enShow
+
+	var UI_FullTitle = ''
+	var deter = ' - '
+	if (story.track || story.idx) UI_FullTitle += (story.track || story.idx)
+	if (story.unit) UI_FullTitle += deter + 'U' + story.unit
+	if (story.title) UI_FullTitle += deter + story.title
+	story.UI_FullTitle = UI_FullTitle
 
 	return story;
 }

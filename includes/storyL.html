@@ -7,7 +7,7 @@
 	  <div class="card-text my-2">
 	  	
 	  	<h6 class="accordion toggleClick" ng-click="showText=!showText">
-		    <a href>{{story.title || story.idx || story.track}}</a>
+		    <a href>{{story.UI_FullTitle}}</a>
 		 </h6>
 	  	 <div class="accordion-content toggleShow">
 	  		<p compile="story.enShow" ng-if="!$root.bShowVi && showText"></p>

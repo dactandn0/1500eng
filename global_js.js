@@ -20,12 +20,26 @@ var kReplaceWords = [
 ]
 
 function IsRegexMatch(rg, txt) {
-	var mmm = txt.match(rg);
-	return mmm && mmm.length > 1
+	var matches = getRegexMatch(rg, txt)
+	return matches && matches.length > 0
+}
+
+function getRegexMatch(rg, txt) {
+	return txt.match(rg);
 }
 
 function fixDots(txt) {
-	//txt = txt.replace(/\.{2,}/gi, "_ _");
+	// 1. 2. -> 1) 2)
+	var matches = txt.match(/\b\d+\./gi);
+	if (matches) {
+		for (var i = 0; i < matches.length; i++) {
+			var src = matches[i]
+			var desc  = src.replace('.',')');
+			var regex = new RegExp(`\\b${src}`,'gi')
+//			txt = txt.replace(regex, desc)
+		}	
+	}
+
 	txt = txt.replace(".'", "'.");
 	
 	var rg = /\d+[\.]\d+/g;

@@ -37,7 +37,7 @@ xem diễu hành, ăn đồ ăn ngon, đi chơi, vv <br>\
 tôn vinh và bảo tồn lịch sử và văn hóa của đất nước<br>\
 tạo ra ý thức cộng đồng<br>\
 truyền lại các giá trị và phong tục cho các thế hệ tương lai.<br>\
-diễu hành (danh từ) buổi diễu hành<br>\
+diễu hành buổi diễu hành<br>\
 múa lân múa lân/rồng<br>\
 Chúng tôi đã kỷ niệm 25 năm ngày cưới tại Florence<br>\
 Anh ấy lo lắng để giữ gìn danh tiếng của mình<br>\
@@ -62,46 +62,72 @@ value (n), cultural value (n)<br>\
 	unit:1,
 	title:"Listening Bridge",
 	date:"",
-	en:"Canoe (n) xuồng /kəˈnuː/<br>\
-- Palace (n) cung điện<br>\
-- Carnival (n) lễ hội<br>\
-- Race (n) cuộc đua<br>\
+	en:"Canoe (n)<br>\
+Palace (n)<br>\
+Carnival (n) <br>\
+Race (n)<br>\
 <br>\
-READING<br>\
-COMPLETE (p. 11)<br>\
-THE HAPPIEST COUNTRY IN THE WORLD<br>\
+Reading Complete (p.11)<br>\
+The happiest country in the world<br>\
 <br>\
-Reading passage vocab:<br>\
-- Preserve (n) bảo tồn<br>\
-- Tropical rainforest (n) rừng mưa nhiệt đới<br>\
-- Government (n) chính phủ<br>\
-- Release (v) ra mắt<br>\
-- Index (n) chỉ số<br>\
-- Impact (n) tầm ảnh hưởng = Effect (n)<br>\
-- Mid-income (adj) thu nhập trung bình<br>\
-- Citizen (n) công dân<br>\
-- Satisfy (v) thỏa mãn<br>\
-- Rank (v) xếp hạng<br>\
-- Population (n) dân số<br>\
-- Consume (v) tiêu thụ, sử dụng<br>\
-- Quantity (n) số lượng<br>\
--<br>\
-- Economics (n) kinh tế học → economic (a) thuộc về kinh tế<br>\
-- Professor (n) giáo sư<br>\
-- Use = consume (v) tiêu thụ, sử dụng<br>\
-- Reflect (v) phản ánh<br>\
-1. 2008<br>\
-2. 143<br>\
-3. Environment<br>\
-4. Resources (n) tài nguyên<br>\
-5. Health<br>\
-6. citizens",
+Preserve (n) bảo tồn<br>\
+Tropical rainforest (n)<br>\
+Government (n) chính phủ<br>\
+Release (v) ra mắt<br>\
+Index (n) chỉ số<br>\
+Impact (n) = Effect (n)<br>\
+Mid-income (adj)<br>\
+Citizen (n)<br>\
+Satisfy (v)<br>\
+Rank (v)<br>\
+Population (n)<br>\
+Consume (v)<br>\
+Quantity (n)<br>\
+<br>\
+Economics (n)<br>\
+economic (a)<br>\
+Professor (n) giáo sư<br>\
+Use = consume (v)<br>\
+Reflect (v)<br>\
+Environment<br>\
+Resources (n)<br>\
+Health (n,v)"
+,vi:"Canoe (n)<br>\
+Cung điện (n)<br>\
+Lễ hội (n) <br>\
+Chủng tộc (n)<br>\
+<br>\
+Đọc sách Complete (p.11)<br>\
+Quốc gia hạnh phúc nhất thế giới<br>\
+<br>\
+Bảo tồn (n) bảo tồn<br>\
+Rừng mưa nhiệt đới (n)<br>\
+Chính phủ (n) chính phủ<br>\
+Giải phóng (v) ra mắt<br>\
+Chỉ số (n) chỉ số<br>\
+Tác động (n) = Hiệu ứng (n)<br>\
+Thu nhập trung bình (adj)<br>\
+Công dân (n)<br>\
+Thỏa mãn (v)<br>\
+Xếp hạng (v)<br>\
+Dân số (n)<br>\
+Tiêu dùng (v)<br>\
+Số lượng (n)<br>\
+<br>\
+Kinh tế (n)<br>\
+kinh tế (a)<br>\
+Giáo sư (n) giáo sư<br>\
+Sử dụng = tiêu thụ (v)<br>\
+Phản ánh (v)<br>\
+Môi trường<br>\
+Tài nguyên (n)<br>\
+Sức khỏe"
 },
 {
 	title:"Traditional festival",
 	unit:"2",
 	date:"",
-	en:"PART 2: Traditional festival<br>\
+	en:"Traditional festival<br>\
 Describe a traditional festival in your country<br>\
 + Lemme spill the beans/tea on a traditional event in my country that everyone is crazy about.<br>\
 + It's called Tet holiday or Lunar New Year, which is the longest holiday in Vietnam,<br>\
@@ -110,9 +136,10 @@ When it is often celebrated:<br>\
 How it is celebrated:<br>\
 + a vast array of activities in Tet holiday<br>\
 + before Tet holiday<br>\
-→ go shopping to buy new clothes, flowers (cherry blossoms or apricots [hoa anh đào hoặc mơ]), traditional food<br>\
+→ go shopping to buy new clothes, flowers cherry blossoms or apricots , traditional food<br>\
 → clean the house from top to bottom → we believe this will bring good luck in the new year<br>\
-+ during tet holiday → visit our relatives(ng thân) → exchange wishes + children receive lucky money in red envelopes which represent good fortune/luck<br>\And explain what you feel about this festival:<br>\
++ during tet holiday → visit our relatives → exchange wishes + children receive lucky money in red envelopes which represent good fortune/luck<br>\
+And explain what you feel about this festival:<br>\
 + I can't wait to enjoy Tet holiday → can escape from schoolwork/heavy<br>\
 workload and spend more quality time with family and friends → have a whale of a time together.<br>\
 This festival is a special occasion for family gatherings.<br>\
@@ -120,10 +147,10 @@ To strengthen/tighten family bonds<br>\
 Allows us to be more close-knit<br>\
 <br>\
 This is a holiday ...  <br>\
-When - It's held on(diễn ra) 20th of November<br>\
+When - It's held on 20th of November<br>\
 Students give gifts to teachers- hangout together<br>\
 Students send best wishes to their teachers<br>\
-This holiday is Special for me because vn's teachers day reminds(nhac nho) me to remember and be grateful + to the contributions of teachers.<br>\
+This holiday is Special for me because vn's teachers day reminds me to remember and be grateful + to the contributions of teachers.<br>\
 MID-AUTUMN FESTIVAL<br>\
 It's the Mid-Autumn Festival - it's one of the most...<br>\
 Takes place on the 15 th of August according to the lunar calendar<br>\
@@ -131,31 +158,83 @@ Other East Asian countries also celebrate this..<br>\
 How it is celebrated:<br>\
 + Before the festival<br>\
 → Adults prepare the ingredients to make moon cakes<br>\
-Moon cake represents happiness, prosperity (sự thịnh vượng) and longevity<br>\
+Moon cake represents happiness, prosperity and longevity<br>\
 → Children go to the store to buy ...<br>\
-Carp-shaped lantern: đèn cá chép<br>\
-Star-shaped lantern: đèn ông sao<br>\
+Carp-shaped lantern / Star-shaped lantern<br>\
 + During the festival<br>\
 Children will carry candle lanterns and parade on the streets<br>\
 There will be people performing Lion Dances to every house in the neighborhood with the hope that it will bring fortune to the households.<br>\
-→ Tất cả các hđ đó tạo nên 1 cảnh tượng tuyệt đẹp và bầu không khí vui nhộn, nhộn nhịp.<br>\
 And explain what you feel about this festival:<br>\
 <br>\
-I still vividly remember how I felt about this festival when i was a kid // How i felt about this festival when i was a kid is still fresh in my mind.<br>\
+I still vividly remember how I felt about this festival when i was a kid<br>\
+How i felt about this festival when i was a kid is still fresh in my mind.<br>\
 + I couldn't wait to enjoy Tet holiday → can escape from schoolwork, eat a lot of candies and sweets, have fun with friends, → have a whale of a time together<br>\
 This festival is a special occasion for family gatherings.<br>\
 To strengthen / tighten family bonds<br>\
 Allows us to be more close-knit<br>\
 Let me introduce about the Vietnamese women's day<br>\
-It takes place on...<br>\
+It takes place on/in/next ...<br>\
+The story takes place in the 18th century.<br>\
+The concert takes place next Thursday.<br>\
+The annual festival takes place  during the first week of July.<br>\
 On this day, S + V<br>\
 This day is special for me because I can show my love for my loved ones.",
-vi:"",
-voca:"vividly[sống động],Lion Dance,neighborhood,longevity[tuổi thọ],prosperity,represent,feel about,ingredient,Star-shaped,Carp-shaped,lantern,lunar,calendar,cherry blossoms,apricots,wish,\
-represent,vast,array,receive,occasion,close-knit,whale,strengthen,tighten,take,place on,On this day,loved one,"
+vi:"Lễ hội truyền thống<br>\
+Mô tả một lễ hội truyền thống ở quốc gia của bạn<br>\
++ Để tôi kể cho bạn nghe về một sự kiện truyền thống ở quốc gia của tôi mà mọi người đều phát cuồng.<br>\
++ Nó được gọi là Tết Nguyên đán, là ngày lễ dài nhất ở Việt Nam,<br>\
+Thời gian thường được tổ chức:<br>\
++ chúng tôi tổ chức Tết vào đầu năm âm lịch<br>\
+Cách tổ chức:<br>\
++ rất nhiều hoạt động trong ngày Tết<br>\
++ trước Tết<br>\
+→ đi mua sắm quần áo mới, hoa anh đào hoặc mơ, đồ ăn truyền thống<br>\
+→ dọn dẹp nhà cửa từ trên xuống dưới → chúng tôi tin rằng điều này sẽ mang lại may mắn trong năm mới<br>\
++ trong ngày Tết → thăm họ hàng → trao đổi lời chúc + trẻ em nhận được tiền mừng tuổi trong phong bao lì xì tượng trưng cho sự may mắn/may mắn<br>\
+Và giải thích cảm nhận của bạn về điều này lễ hội:<br>\
++ Tôi không thể chờ đợi để tận hưởng kỳ nghỉ Tết → có thể thoát khỏi việc học/bài tập nặng<br>\
+bố trí thời gian và dành nhiều thời gian chất lượng hơn cho gia đình và bạn bè → có một khoảng thời gian tuyệt vời bên nhau.<br>\
+Lễ hội này là một dịp đặc biệt để tụ họp gia đình.<br>\
+Để củng cố/thắt chặt mối quan hệ gia đình<br>\
+Cho phép chúng ta gắn kết hơn<br>\
+<br>\
+Đây là một ngày lễ ... <br>\
+Khi nào - Được tổ chức vào ngày 20 tháng 11<br>\
+Học sinh tặng quà cho giáo viên - tụ tập cùng nhau<br>\
+Học sinh gửi lời chúc tốt đẹp nhất đến giáo viên của mình<br>\
+Ngày lễ này rất đặc biệt đối với tôi vì ngày nhà giáo của Việt Nam nhắc nhở tôi phải ghi nhớ và biết ơn + những đóng góp của giáo viên.<br>\
+LỄ TRUNG THU<br>\
+Đó là Tết Trung thu - một trong những hầu hết...<br>\
+Diễn ra vào ngày 15 tháng 8 theo âm lịch<br>\
+Các quốc gia Đông Á khác cũng kỷ niệm ngày này..<br>\
+Cách tổ chức:<br>\
++ Trước lễ hội<br>\
+→ Người lớn chuẩn bị nguyên liệu để làm bánh trung thu<br>\
+Bánh trung thu tượng trưng cho hạnh phúc, thịnh vượng và trường thọ<br>\
+→ Trẻ em đến cửa hàng để mua ...<br>\
+Đèn lồng hình cá chép/đèn lồng hình ngôi sao<br>\
++ Trong lễ hội<br>\
+Trẻ em sẽ mang đèn lồng nến và diễu hành trên phố<br>\
+Sẽ có người biểu diễn múa lân đến từng nhà trong khu phố với hy vọng mang lại may mắn cho các hộ gia đình.<br>\
+Và hãy chia sẻ cảm nhận của bạn về lễ hội này:<br>\
+<br>\
+Tôi vẫn nhớ rất rõ cảm giác của mình về lễ hội này khi còn nhỏ<br>\
+Cảm giác của tôi về lễ hội này khi còn nhỏ vẫn còn in đậm trong tâm trí tôi.<br>\
++ Tôi không thể chờ đợi để tận hưởng kỳ nghỉ Tết → có thể trốn tránh việc học, ăn thật nhiều kẹo và đồ ngọt, vui chơi với bạn bè, → có một khoảng thời gian tuyệt vời bên nhau<br>\
+Lễ hội này là một dịp đặc biệt để gia đình tụ họp.<br>\
+Để củng cố/thắt chặt mối quan hệ gia đình<br>\
+Cho phép chúng ta gắn bó hơn<br>\
+Xin giới thiệu về ngày phụ nữ Việt Nam<br>\
+Diễn ra vào/trong/tiếp theo ...<br>\
+Câu chuyện diễn ra vào thế kỷ 18.<br>\
+Buổi hòa nhạc diễn ra vào thứ năm tuần tới.<br>\
+Lễ hội thường niên diễn ra vào tuần đầu tiên của tháng 7.<br>\
+Vào ngày này, S + V<br>\
+Ngày này rất đặc biệt đối với tôi vì tôi có thể thể hiện tình yêu của mình với những người thân yêu.",
+voca:"take place"
 },
 {
-title:"Thank of a famous person you admire",
+title:"[S]Family / A famous person you admire",
 unit:"Lesson 3.pptx",
 date:"",
 en:"Do you come from a large family or a small family?<br>\
@@ -168,17 +247,16 @@ en:"Do you come from a large family or a small family?<br>\
 - What did you enjoy most about school? <br>\
 -> Well, as I remember, my favorite thing about school was ... <br>\
 <br>\
-02. BRIDGE page 30 (Describe a famous person you admire)<br>\
-Vocabulary<br>\
-actor (n) diễn viên<br>\
-political leader (n) lãnh đạo chính trị<br>\
-business leader (n) lãnh đạo doanh nghiệp<br>\
-sportsman/ sportswoman (n) vđv thể thao nam/nữ<br>\
-honest (a) thành thật<br>\
-generous (a) rộng lượng<br>\
-intelligent (a) thông minh<br>\
-calm (a) bình tĩnh<br>\
-kind (a) tử tế<br>\
+02) BRIDGE page 30 (Describe a famous person you admire)<br>\
+actor (n)<br>\
+political leader (n)<br>\
+business leader (n)<br>\
+sportsman/ sportswoman (n)<br>\
+honest (a)<br>\
+generous (a)<br>\
+intelligent (a)<br>\
+calm (a)<br>\
+kind (a)<br>\
 <br>\
 5, Think of a famous person you admire. Make notes about them. Use the questions in activity 4.<br>\
 6, Work in pairs. Take turns to talk about the topic card. Use the notes you made in activity 5 to help you.<br>\
@@ -188,8 +266,42 @@ You should say:<br>\
 - what they do<br>\
 - what you admire about them and explain the reasons you admire them.<br>\
 Sample<br>\
-I really admire Leonardo DiCaprio. He's an actor, and he makes really good films. He's hardworking and funny - he makes me laugh. I really admire him because he is 2 generous - he's rich and he uses his money to help people. He's also 3 intelligent; he has a website about the environment and he wants to change the world.",
-voca:"traditional,nuclear,extended,admire"
+I really admire Leonardo DiCaprio. He's an actor, and he makes really good films. He's hardworking and funny - he makes me laugh.<br>\
+ I really admire him because he is 2 generous - he's rich and he uses his money to help people. He's also 3 intelligent;<br>\
+  he has a website about the environment and he wants to change the world."
+ ,vi:"Bạn đến từ một gia đình lớn hay một gia đình nhỏ?<br>\
+– Vâng, tôi đến từ một gia đình nhỏ/lớn, tức là một gia đình hạt nhân/mở rộng. Có ... những người trong gia đình tôi bao gồm ... <br>\
+<br>\
+- Khi còn nhỏ, bạn dành nhiều thời gian hơn với ai: gia đình hay bạn bè? Tại sao? <br>\
+-> Tôi dành nhiều thời gian hơn với ... khi còn nhỏ, bởi vì ... <br>\
+- Khi còn nhỏ, bạn đã dành những ngày cuối tuần của mình như thế nào?<br>\
+-> Nếu trí nhớ của tôi không sai, khi còn nhỏ, tôi thường + V.<br>\
+- Bạn thích nhất điều gì ở trường? <br>\
+-> Vâng, theo như tôi nhớ, điều tôi thích nhất ở trường là ... <br>\
+<br>\
+02) BRIDGE trang 30 (Mô tả một người nổi tiếng mà bạn ngưỡng mộ)<br>\
+diễn viên<br>\
+lãnh đạo chính trị<br>\
+lãnh đạo doanh nghiệp<br>\
+vận động viên/nữ vận động viên<br>\
+trung thực (a)<br>\
+hào phóng (a)<br>\
+thông minh (a)<br>\
+bình tĩnh (a)<br>\
+tốt bụng (a)<br>\
+<br>\
+5, Nghĩ về một người nổi tiếng mà bạn ngưỡng mộ. Ghi chú về họ. Sử dụng các câu hỏi trong hoạt động 4.<br>\
+6, Làm việc theo cặp. Lần lượt thảo luận về thẻ chủ đề. Sử dụng các ghi chú bạn đã thực hiện trong hoạt động 5 để giúp bạn.<br>\
+Mô tả một người nổi tiếng mà bạn ngưỡng mộ.<br>\
+Bạn nên nói:<br>\
+- Họ là ai<br>\
+- Họ làm gì<br>\
+- Bạn ngưỡng mộ điều gì ở họ và giải thích lý do bạn ngưỡng mộ họ.<br>\
+Mẫu<br>\
+Tôi thực sự ngưỡng mộ Leonardo DiCaprio. Anh ấy là một diễn viên và anh ấy làm những bộ phim thực sự hay. Anh ấy chăm chỉ và hài hước - anh ấy làm tôi cười.<br>\
+Tôi thực sự ngưỡng mộ anh ấy vì anh ấy 2 hào phóng - anh ấy giàu có và anh ấy dùng tiền của mình để giúp đỡ mọi người. Anh ấy cũng 3 thông minh;<br>\
+anh ấy có một trang web về môi trường và anh ấy muốn thay đổi thế giới."
+,voca:"traditional,nuclear,extended,admire"
 },
 {
 	date:"T4.18/09/2024",
@@ -199,59 +311,105 @@ voca:"traditional,nuclear,extended,admire"
 It was bought by my parents. I travelled with my friends, we went thru Tam ky and reached NT.<br>\
 We went to the beach and swam in the clear water, we ate seafood it was delicious but expensive,<br>\
 The good thing about the journey was that we had fun and happy moments. The bad thing was this trip was not safe, it took us about 2 hours to travel from my home to NT.<br>\
-I remember this trip because at the time, i met the girl who later became my girlfriend.",
+I remember this trip because at the time, i met the girl who later became my girlfriend.<br>\
+Sample:<br>\
+There are many heritage and splendid sights in Vietnam. Especially, Da Nang is one of the most popular places for both Vietnamese and foreign tourists.<br>\
+ Da Nang includes sea, Son Tra island, mountains, and beautiful landscape. <br>\
+ There are many interesting places such as Asia entertainment park, Ba Na hill, Hoi An ancient town, My Khe beach, museum of art, and famous bridges.<br>\
+ The city is well known for its fresh atmosphere, friendly people, and security.<br>\
+  The weather is glorious all the year, and it brings this city many delicacies from the sea and perfect living conditions for people, specifically the elder.<br>\
+   Visiting Da Nang, I am impressed by Ba Na hill containing the longest cable car from land to the top of the mountain.<br>\
+    It is an unforgettable experience for visitors to observe breathtaking sights and picturesque scenes.<br>\
+     Besides, the beaches have long golden sand, and a deep blue sea in addition to huge bunches of fresh coconut.<br>\
+      Tourist has a chance to relax, enjoy the peace and nature, and play aquatic sport.<br>\
+       Moreover, the city has many big bridges like the Dragon bridge, Quay bridge, and a large outdoor entertainment named Asia park.<br>\
+        Additionally, there are a lot of typical delicious dishes such as Quang noodles, Xeo cake, Pork pan-cake, and others.<br>\
+         Da Nang is preserved for its natural beauty; therefore, many tourists come here every year.<br>\
+          Consequently, it leads to a polluted environment, natural damage, and other social problem. However, the city’s security is good and there is no street robbery. <br>\
+Hence, Da Nang is voted to be one of the most worth-living cities in Vietnam. In the future, I hope Da Nang will develop and become more popular worldwide."
+,vi:"Tôi đã đến Núi Thành<br>\
+Nó được bố mẹ tôi mua. Tôi đi du lịch với bạn bè, chúng tôi đi qua Tam Kỳ và đến NT.<br>\
+Chúng tôi đã đến bãi biển và bơi trong làn nước trong vắt, chúng tôi đã ăn hải sản rất ngon nhưng đắt,<br>\
+Điểm tốt của chuyến đi là chúng tôi đã có những khoảnh khắc vui vẻ và hạnh phúc. Điểm xấu là chuyến đi này không an toàn, chúng tôi mất khoảng 2 giờ để đi từ nhà tôi đến NT.<br>\
+Tôi nhớ chuyến đi này vì lúc đó, tôi đã gặp cô gái sau này trở thành bạn gái của tôi.<br>\
+Ví dụ:<br>\
+Có nhiều di sản và cảnh đẹp tuyệt vời ở Việt Nam. Đặc biệt, Đà Nẵng là một trong những địa điểm được cả khách du lịch Việt Nam và nước ngoài yêu thích nhất.<br>\
+Đà Nẵng bao gồm biển, đảo Sơn Trà, núi non và cảnh quan tuyệt đẹp. <br>\
+Có rất nhiều địa điểm thú vị như công viên giải trí Châu Á, đồi Bà Nà, phố cổ Hội An, bãi biển Mỹ Khê, bảo tàng nghệ thuật và những cây cầu nổi tiếng.<br>\
+Thành phố này nổi tiếng với bầu không khí trong lành, người dân thân thiện và an ninh.<br>\
+Thời tiết tuyệt đẹp quanh năm, mang đến cho thành phố này nhiều món ngon từ biển và điều kiện sống hoàn hảo cho người dân, đặc biệt là người cao tuổi.<br>\
+Đến thăm Đà Nẵng, tôi ấn tượng với đồi Bà Nà có tuyến cáp treo dài nhất từ ​​đất liền lên đỉnh núi.<br>\
+Đây là trải nghiệm khó quên cho du khách khi được ngắm nhìn những cảnh đẹp ngoạn mục và cảnh đẹp như tranh vẽ.<br>\
+Bên cạnh đó, bãi biển có bãi cát vàng dài, biển xanh thẳm cùng những rặng dừa tươi khổng lồ.<br>\
+Du khách có cơ hội thư giãn, tận hưởng sự yên bình và thiên nhiên, và chơi các môn thể thao dưới nước.<br>\
+Hơn nữa, thành phố có nhiều cây cầu lớn như cầu Rồng, cầu Quay và một khu vui chơi giải trí ngoài trời lớn mang tên Asia Park.<br>\
+Ngoài ra, còn có rất nhiều món ăn ngon đặc trưng các món ăn như mì Quảng, bánh xèo, bánh xèo thịt heo, v.v.<br>\
+Đà Nẵng được bảo tồn vì vẻ đẹp tự nhiên của nó; do đó, rất nhiều khách du lịch đến đây hàng năm.<br>\
+Do đó, nó dẫn đến ô nhiễm môi trường, thiệt hại tự nhiên và các vấn đề xã hội khác. Tuy nhiên, an ninh của thành phố rất tốt và không có nạn cướp giật trên đường phố. <br>\
+Do đó, Đà Nẵng được bình chọn là một trong những thành phố đáng sống nhất tại Việt Nam. Trong tương lai, tôi hy vọng Đà Nẵng sẽ phát triển và trở nên phổ biến hơn trên toàn thế giới."
 },
 {
 	date:"T6.20/09/2024",
 	unit:"3",
 	title:"Complete[Freya Stark], Bridge [Meerkat - Teamwork]",
-	en:"Occupation (n) nghề nghiệp<br>\
-Flight (n) chuyến bay<br>\
-Expedition (n) chuyến thám hiểm<br>\
-Media (n) truyền thông<br>\
-Office worker (n) nhân viên văn phòng<br>\
-Africa (n) châu Phi<br>\
-Explorer (n) nhà thám hiểm<br>\
-n<br>\
-Nurse corps (n) đội ngũ y tá<br>\
-Distant area (n) vùng xa xôi, hẻo lánh<br>\
-Attend (v) tham gia, tham dự<br>\
-Fluent (a) trôi chảy<br>\
-Donkey (n) con lừa<br>\
-Mountainous area (n) vùng núi<br>\
-Career (n) sự nghiệp<br>\
-Establish (v) thiết lập, thành lập<br>\
-Personal commentary (n) bình luận cá nhân<br>\
-<br>\
-Meerkat (v) con cầy mangut<br>\
-Eagle (n) đại bàng<br>\
-Snake (n) rắn<br>\
-<br>\
-Desert (n) sa mạc<br>\
-Survive (v) sống sót, sinh tồn<br>\
-Preparation (n) sự chuẩn bị<br>\
-Decision (n) quyết định",
+	en:"Occupation (n) <br>\
+Flight (n), Expedition (n), Media (n)<br>\
+Office worker (n), Africa (n), Explorer (n)<br>\
+Nurse corps (n), Distant area (n), Attend (v)<br>\
+Fluent (a), Donkey (n), Mountainous area (n), Career (n)<br>\
+Establish (v), Personal commentary (n), Meerkat (v), Eagle (n)<br>\
+Snake (n), Desert (n), Survive (v), Preparation (n), Decision (n)"
+,vi:"Nghề nghiệp (n) <br>\
+Chuyến bay (n), Chuyến thám hiểm (n), Phương tiện truyền thông (n)<br>\
+Nhân viên văn phòng (n), Châu Phi (n), Nhà thám hiểm (n)<br>\
+Đội y tá (n), Khu vực xa xôi (n), Tham dự (v)<br>\
+Thông thạo (a), Lừa (n), Khu vực miền núi (n), Nghề nghiệp (n)<br>\
+Thiết lập (v), Bình luận cá nhân (n), Meerkat (v), Đại bàng (n)<br>\
+Rắn (n), Sa mạc (n), Sống sót (v), Chuẩn bị (n), Quyết định (n)"
 },
 {
 	date:"T4.25/09/2024",
-	title:"Listening Complete (p.30)",
-	en:"- Deck (n) boong tàu<br>\
-- Reception (n) khu vực lễ tân<br>\
-- Lounge (n) phòng chờ, lounge<br>\
-- Steward (n) người quản lý<br>\
-- Reclining seat (n) ghế ngả<br>\
+	title:"[L][R] Complete [Ocean navigator] .TRUE/FALSE/NOT-GIVEN",
+	en:"- Deck (n), Reception (n), Lounge (n), Steward (n), Reclining seat (n)<br>\
+- Ocean navigator (n)<br>\ Mau Piailug, ocean navigator, Sailor (n), Voyage (n), Navigational skill (n)<br>\
+- Compass (n) , Chart (n), Inhabitant (n), Memorise (v), Position (n)<br>\
 <br>\
-Ocean navigator (n) hoa tiêu đại đương/ người định hướng dẫn đường<br>\
+FORM T/F/NG OR Y/N/NG<br>\
+True – If the information given in the question is in the article, matches the information in the article then it is true, you choose True.<br>\
+False – If the information given in the question is contrary to the information in the article, then it is false, you choose False.<br>\
+Not Given: If the information given is not in the article or cannot be determined true or false, choose Not given.<br>\
 <br>\
-Mau Piailug, ocean navigator<br>\
-- Sailor (n) thủy thủ<br>\
-- Voyage (n) chuyến hành trình (dài)<br>\
-- Navigational skill (n) kĩ năng định hướng<br>\
-- Compass (n) la bàn<br>\
-- Chart (n) biểu đồ<br>\
-- Inhabitant (n) cư dân<br>\
-- Memorise (v) ghi nhớ<br>\
-- Position (n) vị trí"
+Not given<br>\
+1. The information is not mentioned in the reading<br>\
+2. The information is mentioned in a different tense than the statement<br>\
+FE: Text: ... there would be an additional demand for oil of some 80 million barrels a day<br>\
+Statement: At present the world uses 80 million barrels of oil a day<br>\
+3. Two objects are compared in the statement. The text mentions two objects but there is no comparison<br>\
+FE: Text: The most important of these engineers was Isamsbard Kingdom Brunel, whose work in shipping, bridge building, and railway construction to name just a three fields, both challenged and motivated his colleagues<br>\
+Statement: Brunel was less involved in railway construction than other engineering fields.<br>\
+4. The statement contains unclear/wrong quantitative adverbs or adjectives (like just, above, only, little, not many, sometimes, usually, largely, always,...) <br>\
+FE: Text: United Nations surveys show that over 70 per cent of the dry land in agricultural use in Africa has deteriorated /dɪˈtɪəriəreɪt/ (become worse) over the last 30 years <br>\
+Statement: Just over 70 per cent of the dry land in agricultural use in Africa has deteriorated over the last 30 years."
+,vi:"- Boong tàu (n), Quầy lễ tân (n), Phòng chờ (n), Người quản lý (n), Ghế ngả (n)<br>\
+- Hoa tiêu đại dương (n)<br>\ Mau Piailug, hoa tiêu đại dương, Thủy thủ (n), Chuyến đi (n), Kỹ năng hàng hải (n)<br>\
+- La bàn (n), Biểu đồ (n), Người cư trú (n), Ghi nhớ (v), Vị trí (n)<br>\
+<br>\
+MẪU ĐỀ T/F/NG HOẶC CÓ/KHÔNG/NG<br>\
+Đúng – Nếu thông tin đưa ra trong câu hỏi có trong bài viết, khớp với thông tin trong bài viết thì đúng, bạn chọn Đúng.<br>\
+Sai – Nếu thông tin đưa ra trong câu hỏi trái ngược với thông tin trong bài viết, thì sai, bạn chọn Sai.<br>\
+Không có thông tin: Nếu thông tin đưa ra không có trong bài viết hoặc không thể xác định được đúng hay sai, hãy chọn Không có thông tin.<br>\
+<br>\
+Không có thông tin<br>\
+1. Thông tin không được đề cập trong bài đọc<br>\
+2. Thông tin được đề cập ở thì khác với câu phát biểu<br>\
+FE: Văn bản: ... sẽ có nhu cầu bổ sung về dầu khoảng 80 triệu thùng một ngày<br>\
+Câu phát biểu: Hiện tại thế giới sử dụng 80 triệu thùng dầu một ngày<br>\
+3. Hai đối tượng được so sánh trong câu phát biểu. Văn bản đề cập đến hai đối tượng nhưng không có sự so sánh<br>\
+FE: Văn bản: Người quan trọng nhất trong số những kỹ sư này là Isamsbard Kingdom Brunel, người có công trình trong lĩnh vực vận chuyển, xây dựng cầu và xây dựng đường sắt, chỉ kể tên ba lĩnh vực, vừa thách thức vừa thúc đẩy các đồng nghiệp của ông<br>\
+Phát biểu: Brunel ít tham gia vào xây dựng đường sắt hơn các lĩnh vực kỹ thuật khác.<br>\
+4. Phát biểu có chứa các trạng từ hoặc tính từ định lượng không rõ ràng/sai (như just, above, only, little, not many, sometimes, often, mostly, always,...) <br>\
+FE: Văn bản: Các cuộc khảo sát của Liên hợp quốc cho thấy hơn 70 phần trăm đất khô được sử dụng cho mục đích nông nghiệp ở Châu Phi đã bị suy thoái /dɪˈtɪəriəreɪt/ (trở nên tồi tệ hơn) trong 30 năm qua <br>\
+Phát biểu: Hơn 70 phần trăm đất khô được sử dụng cho mục đích nông nghiệp ở Châu Phi đã bị suy thoái trong 30 năm qua.s"
 },
 {
 	date:"T6 27/09/2024",
@@ -259,10 +417,10 @@ Mau Piailug, ocean navigator<br>\
 	en:"Are there any special buildings in your country?<br>\
 Yes, of course. FE: Landmark 81 located in HCM city, DN Administrative center in Danang. In addition, Hoi An has many well-preserved traditional buildings that are special because of their historical & cultural value.<br>\
 <br>\
-2. What do people think about them?<br>\
+2) What do people think about them?<br>\
 - (be) proud of them - because FE, Landmark 81 represents (đại diện) the modernity and growth of the country. Or Hoi An ancient buildings are a symbol of cultural heritage (di sản văn hóa)<br>\
 - admire (v)<br>\
-3. Do you think it's important to protect special buildings?<br>\
+3) Do you think it's important to protect special buildings?<br>\
 Yes. Because they:<br>\
 - attract tourists, visitors<br>\
 - boost economy<br>\
@@ -279,69 +437,95 @@ There are three main benefits of working as a volunteer at DIFF 2024. Firstly, y
 },
 {
 	date: "T6 04/10/2024",
-	title: "Accommodation",
-	en:"Studio apartment (n)<br>\
-Terraced house (n) nhà theo dãy, sát vách<br>\
-Detached house (n) nhà biệt lập<br>\
-Condominium (n) chung cư<br>\
-Semi-detached house (n) bán biệt lập<br>\
-Villa (n)<br>\
+	title: "Accommodation && A favorite room",
+	en:"Studio apartment (n), Terraced house (n), Detached house (n), Condominium (n), Semi-detached house (n), Villa (n)<br>\
 <br>\
 <b>City</b><br>\
-Buildings<br>\
-Traffic<br>\
-Busy<br>\
-Colorful<br>\
-Lively<br>\
-Houses<br>\
+Buildings, Traffic, Busy, Colorful, Lively, Houses<br>\
 <br>\
 <b>River</b><br>\
-Bridge<br>\
-Sunset<br>\
-Stunning<br>\
-Atmosphere<br>\
+Bridge, Sunset, Stunning, Atmosphere<br>\
 <br>\
 <b>Suburban area</b><br>\
 On the outskirts = In the suburbs<br>\
-Neighborhood<br>\
-Security<br>\
-Quiet<br>\
-Residential area<br>\
-<br>\
+Neighborhood, Security, Quiet, Residential area, <br>\
 <b>Countryside</b><br>\
-Hills<br>\
-Fresh<br>\
-Peaceful<br>\
-Grass<br>\
-Breezy<br>\
-Beautiful<br>\
-1. Do you live in a house or an apartment? Could you describe it?<br>\
-2. What do you like about living there?<br>\
-3. What is your favorite room in your home? Why?<br>\
-4. Would you like to move to a different home in the future? If yes, what kind of house would you like to live in?<br>\
+Hills, Fresh, Peaceful, Grass, Breezy, Beautiful<br>\
+1) Do you live in a house or an apartment? Could you describe it?<br>\
+2) What do you like about living there?<br>\
+3) What is your favorite room in your home? Why?<br>\
+4) Would you like to move to a different home in the future? If yes, what kind of house would you like to live in?<br>\
 <br>\
 Practice<br>\
-1. Do you live in a house or an apartment?<br>\
-I live in a two-storey terraced house with my family which is located in the city centre./ on the outskirts of the city (vùng ngoại ô tpho).<br>\
+1) Do you live in a house or an apartment?<br>\
+I live in a two-storey terraced house with my family which is located in the city centre/ on the outskirts of the city.<br>\
 <br>\
-2. What do you like about living there?<br>\
+2) What do you like about living there?<br>\
 I like that most of the rooms face south, which means we get a lot of natural light. And the location is very convenient as all the facilities and services are within walking distance, which means I can easily grab anything I need in just a few minutes.<br>\
 <br>\
-3. What is your favorite room?<br>\
-I would say that it's the living room because it's the most spacious room in the house, with a comfy sofa and a big, round table where we eat dinner every night. That's the room where the whole family gathers together and shares ups and downs in our lives.<br>\
+3) What is your favorite room?<br>\
+[1] I would say that it's the living room because it's the most spacious room in the house, with a comfy sofa and a big, round table where we eat dinner every night. That's the room where the whole family gathers together and shares ups and downs in our lives.<br>\
+[2]I think that the living room is my favorite room in my home because we are six members.<br>\
+ We spend a lot of time all day working and studying.<br>\
+  So I think that the living room is the place where my family members can get close to each other, and we can spend time together watching TV shows or movies.<br>\
+   This is a really fun time after a long day of terrible work or studying.<br>\
 <br>\
 Vocabulary<br>\
-(to) immerse myself in my own world: đắm chìm vào tg riêng của tôi<br>\
+(to) immerse myself in my own world<br>\
 (to) recharge my battery = blow off some steam = unwind<br>\
-do sth + without being disturbed: làm gì đó mà k bị làm phiền<br>\
+do sth + without being disturbed<br>\
 <br>\
-Ups and downs (n): thăng trầm<br>\
-Delicacy (n): món ngon<br>\
-(to) immerse in ...: đắm chìm vào ...<br>\
-(be) engrossed in + books, movies: chăm chú say mê ....<br>\
-(to) binge-watch + Netflix series: cày phim<br>\
-(to) savor/ enjoy my privacy: tận hưởng sự riêng tư<br>\
-(to) sleep in: ngủ nướng"
+Ups and downs (n)<br>\
+Delicacy (n)<br>\
+(to) immerse in ...<br>\
+(be) engrossed in + books, movies ...<br>\
+(to) binge-watch + Netflix series<br>\
+(to) savor/ enjoy my privacy<br>\
+(to) sleep in"
+,vi:"Căn hộ studio (danh từ), Nhà liền kề (danh từ), Nhà biệt lập (danh từ), Nhà chung cư (danh từ), Nhà song lập (danh từ), Biệt thự (danh từ)<br>\
+<br>\
+<b>Thành phố</b><br>\
+Tòa nhà, Giao thông, Bận rộn, Đầy màu sắc, Sôi động, Nhà ở<br>\
+<br>\
+<b>Sông</b><br>\
+Cầu, Hoàng hôn, Tuyệt đẹp, Không khí<br>\
+<br>\
+<b>Khu vực ngoại ô</b><br>\
+Ở vùng ngoại ô = Ở vùng ngoại ô<br>\
+Khu phố, An ninh, Yên tĩnh, Khu dân cư, <br>\
+<b>Nông thôn</b><br>\
+Đồi, Trong lành, Yên bình, Cỏ, Gió mát, Đẹp<br>\
+1) Bạn sống trong nhà hay căn hộ? Bạn có thể mô tả nó không?<br>\
+2) Bạn thích điều gì khi sống ở đó?<br>\
+3) Bạn thích căn phòng nào nhất trong nhà mình? Tại sao?<br>\
+4) Bạn có muốn chuyển đến một ngôi nhà khác trong tương lai không? Nếu có, bạn muốn sống ở loại nhà nào?<br>\
+<br>\
+Thực hành<br>\
+1) Bạn sống trong nhà riêng hay căn hộ?<br>\
+Tôi sống trong một ngôi nhà hai tầng với gia đình ở trung tâm thành phố/ngoại ô thành phố.<br>\
+<br>\
+2) Bạn thích điều gì khi sống ở đó?<br>\
+Tôi thích hầu hết các phòng đều hướng về phía nam, có nghĩa là chúng tôi có nhiều ánh sáng tự nhiên. Và vị trí rất thuận tiện vì tất cả các tiện nghi và dịch vụ đều chỉ cách vài phút đi bộ, có nghĩa là tôi có thể dễ dàng lấy bất cứ thứ gì mình cần chỉ trong vài phút.<br>\
+<br>\
+3) Phòng nào bạn thích nhất?<br>\
+[1] Tôi sẽ nói rằng đó là phòng khách vì đó là căn phòng rộng rãi nhất trong nhà, có một chiếc ghế sofa thoải mái và một chiếc bàn tròn lớn, nơi chúng tôi ăn tối mỗi tối. Đó là căn phòng mà cả gia đình tụ họp lại và chia sẻ những thăng trầm trong cuộc sống.<br>\
+[2]Tôi nghĩ rằng phòng khách là căn phòng yêu thích nhất trong nhà tôi vì chúng tôi có sáu thành viên.<br>\
+Chúng tôi dành nhiều thời gian cả ngày để làm việc và học tập.<br>\
+Vì vậy, tôi nghĩ rằng phòng khách là nơi các thành viên trong gia đình tôi có thể gần gũi nhau hơn và chúng tôi có thể dành thời gian cùng nhau xem chương trình truyền hình hoặc phim ảnh.<br>\
+Đây thực sự là khoảng thời gian vui vẻ sau một ngày dài làm việc hoặc học tập tồi tệ.<br>\
+<br>\
+Từ vựng<br>\
+(để) đắm mình vào thế giới của riêng mình<br>\
+(để) nạp lại năng lượng = xả hơi = thư giãn<br>\
+làm gì đó + mà không bị làm phiền<br>\
+<br>\
+Những thăng trầm (danh từ)<br>\
+Sự tinh tế (danh từ)<br>\
+(để) đắm chìm trong ...<br>\
+(bị) đắm chìm trong + sách, phim ...<br>\
+(để) xem liên tục + loạt phim Netflix<br>\
+(để) thưởng thức/ tận hưởng sự riêng tư của tôi<br>\
+(để) ngủ nướng"
 },
 {
 	date:"T2 07/10/2024",
@@ -628,15 +812,15 @@ Quality - low-quality food<br>\
 <br>\
 What are the advantages and disadvantages of students using technology in free time. <br>\
 <b>Pros:</b><br>\
-1. easy to find information (google)<br>\
-2. learn English while using technology (duolingo/ games)<br>\
-3. (facebook) connects with friends<br>\
+1) easy to find information (google)<br>\
+2) learn English while using technology (duolingo/ games)<br>\
+3) (facebook) connects with friends<br>\
 <b>Cons</b>:<br>\
-1. Risk of getting addicted to using technology (playing games) -> can cause depression<br>\
-2. Decrease the ability to concentrate -> research -> neurons/ brain ('TikTok rewires our brains')<br>\
-3. Fewer opportunities to develop communication skills (how to talk and eye contact)/ too much screen time decreases face-to-face interaction<br>\
-4. May affect eye health -> can cause myopia (short-sightedness)<br>\
-5. May contribute to a sedentary lifestyle (inactive lifestyle) -> cause obesity / overweight"
+1) Risk of getting addicted to using technology (playing games) -> can cause depression<br>\
+2) Decrease the ability to concentrate -> research -> neurons/ brain ('TikTok rewires our brains')<br>\
+3) Fewer opportunities to develop communication skills (how to talk and eye contact)/ too much screen time decreases face-to-face interaction<br>\
+4) May affect eye health -> can cause myopia (short-sightedness)<br>\
+5) May contribute to a sedentary lifestyle (inactive lifestyle) -> cause obesity / overweight"
 ,vi:"Có ba lợi ích của việc ăn đồ ăn nhanh trong cuộc sống hàng ngày của chúng ta. Trước hết, ăn đồ ăn nhanh giúp tâm trạng của chúng ta tốt hơn. Có rất nhiều loại món ăn có sẵn, ngay cả trên vỉa hè. Do đó, mọi người có thể dễ dàng tìm thấy thức ăn trong những ngày làm việc bận rộn và hối hả. Bên cạnh đó, chúng ta luôn có thể thử những bữa ăn mới và có thể bạn sẽ không thấy chán vì có rất nhiều lựa chọn đồ ăn nhanh, đặc biệt là nếu bạn sống ở thành phố lớn. Thứ hai, ăn đồ ăn nhanh giúp chúng ta tránh lãng phí thực phẩm. Thường có thức ăn thừa khi bạn chuẩn bị bữa ăn ở nhà. Chúng có thể được để trong tủ lạnh với ý định tốt nhất, nhưng thức ăn thường bị lãng phí. Khi bạn gọi đồ ăn nhanh, bạn sẽ nhận được những gì bạn cần cho bữa ăn cụ thể đó, vì vậy không còn gì để lưu trữ trong tủ lạnh và không có gì bị lãng phí. Cuối cùng, đồ ăn nhanh cũng rất tiện lợi khi đi du lịch. Khi đi du lịch, bạn sẽ không có thời gian để chuẩn bị cho bữa ăn của mình, vì vậy bạn cũng có thể mua một ít đồ ăn nhanh. Bạn sẽ không chỉ bỏ qua việc nấu nướng mà còn thoát khỏi việc phải rửa bát đĩa sau đó. Do đó, khi đi du lịch, đồ ăn nhanh là một lựa chọn thay thế tuyệt vời cho việc nấu ăn vì bạn có thể dành thêm thời gian cho các chuyến đi và tìm hiểu về văn hóa địa phương.<br>\
 Tuy nhiên, cũng có ba nhược điểm khi tiêu thụ đồ ăn nhanh. Thứ nhất, nó có nhiều thành phần không lành mạnh và thường thiếu các loại vitamin và khoáng chất thiết yếu. Mặc dù có một số loại thực phẩm bổ dưỡng, nhưng các món ăn phổ biến nhất tại các nhà hàng thức ăn nhanh thường khá có hại. Do đó, theo thời gian, mức độ thể lực cũng như chất lượng cuộc sống nói chung của bạn có thể giảm đáng kể. Thứ hai, nó chứa calo và khiến mọi người béo phì. Bên cạnh đó, đồ ăn nhanh không phải là lựa chọn thông minh để giảm cân vì nó chứa nhiều calo. Cuối cùng, có rất nhiều loại thực phẩm chất lượng thấp nhưng đắt tiền không rõ nguồn gốc. Vì vậy, việc nấu ăn vui vẻ cùng gia đình tại nhà vẫn có thể ít tốn kém và an toàn hơn.<br>\
 Tóm lại, bạn nên tự nấu ăn vì nấu ăn đảm bảo bạn tiêu thụ thực phẩm bổ dưỡng, đốt cháy calo và tốn ít tiền hơn so với việc mua đồ ăn nhanh. Nếu bạn thực sự thích đồ ăn nhanh, đôi khi bạn nên mua để bảo vệ bản thân khỏi các thành phần không tốt và giảm cân.<br>\
@@ -656,15 +840,15 @@ Chất lượng - thực phẩm chất lượng thấp<br>\
 <br>\
 Ưu điểm và nhược điểm của việc học sinh sử dụng công nghệ trong thời gian rảnh rỗi là gì. <br>\
 <b>Ưu điểm:</b><br>\
-1. dễ tìm thông tin (google)<br>\
-2. học tiếng Anh trong khi sử dụng công nghệ (duolingo/ trò chơi)<br>\
-3. (facebook) kết nối với bạn bè<br>\
+1) dễ tìm thông tin (google)<br>\
+2) học tiếng Anh trong khi sử dụng công nghệ (duolingo/ trò chơi)<br>\
+3) (facebook) kết nối với bạn bè<br>\
 <b>Nhược điểm</b>:<br>\
-1. Nguy cơ nghiện sử dụng công nghệ (chơi trò chơi) -> có thể gây trầm cảm<br>\
-2. Giảm khả năng tập trung -> nghiên cứu -> tế bào thần kinh/ não ('TikTok kết nối lại não của chúng ta')<br>\
-3. Ít cơ hội phát triển kỹ năng giao tiếp (cách nói chuyện và giao tiếp bằng mắt)/ quá nhiều thời gian sử dụng màn hình làm giảm tương tác trực tiếp<br>\
-4. Có thể ảnh hưởng đến sức khỏe của mắt -> có thể gây cận thị (tầm nhìn ngắn)<br>\
-5. Có thể góp phần vào lối sống ít vận động (lối sống không hoạt động) -> gây béo phì/thừa cân"
+1) Nguy cơ nghiện sử dụng công nghệ (chơi trò chơi) -> có thể gây trầm cảm<br>\
+2) Giảm khả năng tập trung -> nghiên cứu -> tế bào thần kinh/ não ('TikTok kết nối lại não của chúng ta')<br>\
+3) Ít cơ hội phát triển kỹ năng giao tiếp (cách nói chuyện và giao tiếp bằng mắt)/ quá nhiều thời gian sử dụng màn hình làm giảm tương tác trực tiếp<br>\
+4) Có thể ảnh hưởng đến sức khỏe của mắt -> có thể gây cận thị (tầm nhìn ngắn)<br>\
+5) Có thể góp phần vào lối sống ít vận động (lối sống không hoạt động) -> gây béo phì/thừa cân"
 		,voca:"",
 	}	
 ,{
@@ -737,7 +921,7 @@ Main ideas (ý chính)<br>\
 Feelings (cảm nhận)<br>\
 Ending (phần kết)<br>\
 <br>\
-1. INTRODUCTION<br>\
+1) INTRODUCTION<br>\
 I am going to talk about ... / I would like to tell you about ...<br>\
 <br>\
 When it comes to ...<br>\
@@ -748,7 +932,7 @@ my mom, who is an inspiring person to me<br>\
 my mom, who inspires me<br>\
 my mom, whom I admire the most<br>\
 <br>\
-2. PERSONAL INFORMATION + MAIN IDEAS<br>\
+2) PERSONAL INFORMATION + MAIN IDEAS<br>\
 Age<br>\
 She/he is in her 20s/30s/teens<br>\
 She/ he is a middle-aged/ 40-year-old + N<br>\
@@ -765,13 +949,13 @@ Mô tả thêm về tính cách: Everyone around him/her knows that he/she is ..
 Mô tả ngoại hình: She was a good-looking girl, with dark eyes and ... hair.<br>\
 Kể về một kỷ niệm chung giữa bạn và người ấy: We've had so many unforgettable memories together, but to tell you about one, it would have to be ...<br>\
 <br>\
-3. FEELINGS (Cảm nhận cá nhân)<br>\
+3) FEELINGS (Cảm nhận cá nhân)<br>\
 It has been a while since I last met him/ her. And I definitely miss him/ her every day<br>\
 I hope I could meet him/ her in person in the near future<br>\
 It is going to be the best day of my life!<br>\
 He/ she is a role model for me. That's why I am striving for the best to become a person like her/ him.<br>\
 <br>\
-4. Ending <br>\
+4) Ending <br>\
 Suggestion<br>\
 So well, if anyone asks me about the person ...<br>\
 I would tell them without any hesitation (không chút ngần ngại) about ..."
@@ -871,21 +1055,108 @@ Yêu cầu viết: Động vật và thực vật đang biến mất.<br>\
 	date:"01/11/2024",
 	title:"[S]Animals && Place see them",
 	en:"Which are your favorite animals?<br>\
-– Well, my favorite animals are _ _ Because they are _ _ [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
-2. Which animals don't you like?<br>\
-- Well I don't really like _ _/ I'm afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
-3. Where are the best places in your country to see wildlife?<br>\
-– In Vietnam, I think the best places to see wildlife are _ _ (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of _ _"
+– Well, my favorite animals are ... Because they are ... [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
+2) Which animals don't you like?<br>\
+- Well I don't really like .../ I'm afraid of ... - because they are ... (FE: scary, dangerous, poisonous,...)<br>\
+3) Where are the best places in your country to see wildlife?<br>\
+– In Vietnam, I think the best places to see wildlife are ... (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of ..."
 	,vi:"Which are your favorite animals?<br>\
-– Well, my favorite animals are _ _ Because they are _ _ [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
-2. Which animals don't you like?<br>\
-- Well I don't really like _ _/ I'm afraid of _ _ - because they are _ _ (FE: scary, dangerous, poisonous,...)<br>\
-3. Where are the best places in your country to see wildlife?<br>\
-– In Vietnam, I think the best places to see wildlife are _ _ (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of _ _"
+– Well, my favorite animals are ... Because they are ... [Adj] (FE: loyal, cute, smart, helpful,...)<br>\
+2) Which animals don't you like?<br>\
+- Well I don't really like .../ I'm afraid of ... - because they are ... (FE: scary, dangerous, poisonous,...)<br>\
+3) Where are the best places in your country to see wildlife?<br>\
+– In Vietnam, I think the best places to see wildlife are ... (National parks: Cuc Phuong or Cat Tien,...). In these places, you can see a lot of ..."
 	,voca:"",
 }
-
-
+,{
+	date:"08/11/2024",
+	title:"[S]Review [Lesson11.pptx]",
+	en:"Keep going<br>\
+1) - modern (a) <br>\
+- industrial (a)<br>\
+I come from ..., in Russia. It's a very modern, industrial city.<br>\
+Beautiful monuments <br>\
+2) - What else?<br>\
+- Let me think<br>\
+- How do I say this<br>\
+- Well, to be honest<br>\
+<br>\
+1) Can you describe your town or village?<br>\
+If i have to describe it, i will tell you that this is a big city with a lot of apartments,<br>\
+supermarkets and smart infrastructure.<br>\
+→ I come from ... which is located in the ...<br>\
+NgheAn: a big province with many beautiful sceneries<br>\
+Uncle Ho - Former leader of VN<br>\
+<br>\
+Where: Egypt which was<br>\
+The Red Sea was clear and impressive, you can see everything<br>\
+It has amazing sea life<br>\
+I'm a person who's scared of things, putting a mask on my face<br>\
+See the corals- wonderful<br>\
+Couldn't believe- absolutely breathtaking(a)<br>\
+We also went to see ancient pyramids - impressive<br>\
+I enjoyed it so much because I had my best friend with me.<br>\
+<br>\
+REVIEW:<br>\
+Obligatory:<br>\
+1) Introduce yourself (Name + Work/Study)<br>\
+2) Hometown<br>\
+3) Hobbies<br>\
+Extra:<br>\
+- Another Part 1 topic questions<br>\
+- Part 2<br>\
+Part 2: Describe an ideal room → Part 1: Colors (Lesson 9)<br>\
+Part 2: Describe a special day/festival in your country → Part 1: holiday<br>\
+Part 2: Describe a famous person you admire → part 1: Family (Lesson 3)<br>\
+Part 2: Describe a journey you made in the past that you remember well → Part 1: holidays<br>\
+Part 2: Describe a special building in your country → Part 1: special buildings<br>\
+(Lesson 5)<br>\
+Part 2: Describe a favorite sport → Part 1: sports (Lesson 7)<br>\
+Part 1: Accommodation (Lesson 6)"
+	,vi:"Tiếp tục<br>\
+1) - hiện đại (a) <br>\
+- công nghiệp (a)<br>\
+Tôi đến từ ..., ở Nga. Đây là một thành phố công nghiệp hiện đại.<br>\
+Những di tích tuyệt đẹp<br>\
+2) - Còn gì nữa?<br>\
+- Để tôi nghĩ xem<br>\
+- Tôi nói thế nào nhỉ<br>\
+- Ờ, thành thật mà nói<br>\
+<br>\
+1) Bạn có thể mô tả thị trấn hoặc làng của bạn không?<br>\
+Nếu phải mô tả, tôi sẽ nói rằng đây là một thành phố lớn với nhiều căn hộ,<br>\
+siêu thị và cơ sở hạ tầng thông minh.<br>\
+→ Tôi đến từ ... nằm ở ...<br>\
+Nghệ An: một tỉnh lớn với nhiều cảnh đẹp<br>\
+Bác Hồ - Cựu lãnh đạo của Việt Nam<br>\
+<br>\
+Nơi nào: Ai Cập<br>\
+Biển Đỏ trong vắt và ấn tượng, bạn có thể nhìn thấy mọi thứ<br>\
+Nơi đây có hệ sinh thái biển tuyệt vời<br>\
+Tôi là người sợ hãi mọi thứ, phải đeo mặt nạ<br>\
+Xem san hô- tuyệt vời<br>\
+Không thể tin được- thật ngoạn mục(a)<br>\
+Chúng tôi cũng đã đi xem kim tự tháp cổ đại - thật ấn tượng<br>\
+Tôi rất thích vì tôi có người bạn thân nhất đi cùng.<br>\
+<br>\
+ĐÁNH GIÁ:<br>\
+Bắt buộc:<br>\
+1) Giới thiệu bản thân (Tên + Công việc/Học tập)<br>\
+2) Quê quán<br>\
+3) Sở thích<br>\
+Thêm:<br>\
+- Một câu hỏi chủ đề khác của Phần 1<br>\
+- Phần 2<br>\
+Phần 2: Mô tả một căn phòng lý tưởng → Phần 1: Màu sắc (Bài 9)<br>\
+Phần 2: Mô tả một ngày/lễ hội đặc biệt ở quốc gia của bạn → Phần 1: ngày lễ<br>\
+Phần 2: Mô tả một người nổi tiếng mà bạn ngưỡng mộ → phần 1: Gia đình (Bài 3)<br>\
+Phần 2: Mô tả một chuyến đi mà bạn đã thực hiện trong quá khứ bạn nhớ rõ → Phần 1: ngày lễ<br>\
+Phần 2: Miêu tả một công trình đặc biệt ở đất nước bạn → Phần 1: công trình đặc biệt<br>\
+(Bài 5)<br>\
+Phần 2: Miêu tả một môn thể thao yêu thích → Phần 1: thể thao (Bài 7)<br>\
+Phần 1: Chỗ ở (Bài 6)"
+	,voca:"",
+}
 
 
 

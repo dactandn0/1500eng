@@ -17,7 +17,7 @@ $scope.acc_isShow = function (id) {
 $scope.acc_click = function (id) {
 	if($scope.acc===id) $scope.acc=-1;
 	else {
-		$scope.acc=id;
+		$scope.acc = id;
 		$scope.story = processStory(kSTORIES[id]);
 	}
 	Helper_saveDB("completeR_unit", id)

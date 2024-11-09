@@ -1112,7 +1112,7 @@ Part 2: Describe a journey you made in the past that you remember well → Part 
 Part 2: Describe a special building in your country → Part 1: special buildings<br>\
 (Lesson 5)<br>\
 Part 2: Describe a favorite sport → Part 1: sports (Lesson 7)<br>\
-Part 1: Accommodation (Lesson 6)"
+Part 1: Accommodation (Lesson 6)."
 	,vi:"Tiếp tục<br>\
 1) - hiện đại (a) <br>\
 - công nghiệp (a)<br>\
@@ -1154,7 +1154,7 @@ Phần 2: Mô tả một chuyến đi mà bạn đã thực hiện trong quá kh
 Phần 2: Miêu tả một công trình đặc biệt ở đất nước bạn → Phần 1: công trình đặc biệt<br>\
 (Bài 5)<br>\
 Phần 2: Miêu tả một môn thể thao yêu thích → Phần 1: thể thao (Bài 7)<br>\
-Phần 1: Chỗ ở (Bài 6)"
+Phần 1: Chỗ ở (Bài 6)."
 	,voca:"",
 }
 

@@ -7,39 +7,32 @@ app.controller("preCourseCtrl", function($scope, $timeout) {
 
 var kSTORIES = ENGLAB_PRE_SLIDES;
 
-$scope.fullTitles = [];
 $scope.story = '';
 $scope.bShowVi = 0;
 $scope.acc = -1;
 
 $scope.acc_isShow = function (id) {
-	return $scope.acc===id;
+	return $scope.acc === id;
 };
-
 
 $scope.acc_click = function (id) {
 	if($scope.acc===id) $scope.acc=-1;
 	else {
-		$scope.acc=id;
+		$scope.acc = id;
 		$scope.story = processStory(kSTORIES[id], false);
 	}
+	Helper_saveDB("englabPre_unit", id)
 };
 
-$scope.fetchStory = function () {
-	for (var k = 0; k < kSTORIES.length; k++) {
-		var unit = kSTORIES[k].unit;
-		var title = kSTORIES[k].title;
-		var date = kSTORIES[k].date;
-		var ele = title
-		if (date) ele += ' (' + date + ')'
-		$scope.fullTitles.push(ele);
-	}
+$scope.storyTitles = function () {
+	return showStoryTitles(kSTORIES)
 }
 
 $scope.loadData = function () {
-	$scope.fetchStory();
+	$scope.acc_click( Helper_loadInt('englabPre_unit', -1));
 };
 
-$scope.loadData();
-
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
 });

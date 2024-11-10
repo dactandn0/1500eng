@@ -94,7 +94,7 @@ $scope.clearSearch = function () {
   document.getElementById("searchTyping").focus();
 };
 
-$scope.saveNoted = function(word) {
+$scope.saveNoted = function(word, isFromToastr) {
   word = word.trim();
   var kDatabase = Helper_NoteFetchDB();
 
@@ -107,7 +107,7 @@ $scope.saveNoted = function(word) {
       VocaNotedCtrl.appendDataToUI(word);
     }
     toastr.success("Saved: " + word);
-    $scope.clearSearch()
+    if (!isFromToastr) $scope.clearSearch()
   } else {
     toastr.error("Existed. Save failed")
   }
@@ -149,7 +149,7 @@ $scope.findSameWord = function() {
 
 saveFromToastr = function () {
   if (saveFromToastrVal.trim().length > 0)
-    $scope.saveNoted(saveFromToastrVal)
+    $scope.saveNoted(saveFromToastrVal, true)
 }
 
 $scope.Index_Speak = function (event, word) {

@@ -1,7 +1,7 @@
 
 const ENGLAB_PRE_SLIDES = [
 {
-	title:"[S]Holidays",
+	title:"[S]Holidays- Lunar New Year",
 	date:"",
 	en:"1) Yes, it's on September 2nd - also known as the Independence Day.<br>\
 - How: people celebrate this day with flags, fireworks, v.v <br>\
@@ -28,7 +28,13 @@ value (n), cultural value (n)<br>\
 - What it is?<br>\
 - When it takes place?<br>\
 - What people do during this holiday?<br>\
-- What you feel about this holiday?"
+- What you feel about this holiday?<br>\
+<hr>\
+Sample:<br>\
+In Vietnam, Tet, the Lunar New Year, usually takes place in late January or early February. It's a time when families come together to celebrate and welcome the upcoming year. Tet has been celebrated for generations, and it holds cultural and traditional significance for the Vietnamese people.<br>\
+The festival takes place to mark the beginning of the new lunar calendar year. During Tet, families clean and decorate their homes, and there's a strong emphasis on traditional customs. People visit temples and pagodas to pray for good luck and prosperity. Traditional foods like Vietnamese square sticky rice cake and Pork paste are commonly prepared and shared among family members.<br>\
+People do various things during Tet, such as spending time with family, enjoying festive meals, and participating in community events. Fireworks are also a common part of the celebrations.<br>\
+Tet is somewhat important to me because it's a time when I get to reunite with my family. However, I don't follow all the traditional customs very closely. For me, it's more about enjoying a break and the festive atmosphere."
 ,vi:"1) Vâng, đó là ngày 2 tháng 9 - còn được gọi là Ngày Độc lập.<br>\
 - Làm thế nào: mọi người ăn mừng ngày này bằng cờ, pháo hoa, v.v <br>\
 xem diễu hành, ăn đồ ăn ngon, đi chơi, vv <br>\
@@ -54,7 +60,13 @@ value (n), cultural value (n)<br>\
 - Nó là gì?<br>\
 - Diễn ra khi nào?<br>\
 - Mọi người làm gì trong ngày lễ?<br>\
-- Bạn cảm thấy thế nào về ngày lễ này?"
+- Bạn cảm thấy thế nào về ngày lễ này?<br>\
+<hr>\
+Sample:<br>\
+Ở Việt Nam, Tết, Tết Nguyên đán, thường diễn ra vào cuối tháng 1 hoặc đầu tháng 2. Đây là thời điểm các gia đình sum họp để ăn mừng và chào đón năm mới. Tết đã được tổ chức qua nhiều thế hệ và có ý nghĩa văn hóa và truyền thống đối với người Việt Nam.<br>\
+Lễ hội diễn ra để đánh dấu sự khởi đầu của năm âm lịch mới. Trong dịp Tết, các gia đình dọn dẹp và trang trí nhà cửa, và có sự nhấn mạnh mạnh mẽ vào các phong tục truyền thống. Mọi người đến thăm các đền chùa để cầu may mắn và thịnh vượng. Các món ăn truyền thống như bánh chưng Việt Nam và chả giò thường được chuẩn bị và chia sẻ giữa các thành viên trong gia đình.<br>\
+Mọi người làm nhiều việc khác nhau trong dịp Tết, chẳng hạn như dành thời gian cho gia đình, thưởng thức các bữa ăn lễ hội và tham gia các sự kiện cộng đồng. Pháo hoa cũng là một phần phổ biến của lễ kỷ niệm.<br>\
+Với tôi, Tết có phần quan trọng vì đây là thời điểm tôi được đoàn tụ với gia đình. Tuy nhiên, tôi không tuân thủ chặt chẽ tất cả các phong tục truyền thống. Đối với tôi, đó là để tận hưởng kỳ nghỉ và không khí lễ hội."
 ,voca:""
 },
 {
@@ -69,11 +81,11 @@ Race (n)<br>\
 Reading Complete (p.11)<br>\
 The happiest country in the world<br>\
 <br>\
-Preserve (n) bảo tồn<br>\
+Preserve (n)<br>\
 Tropical rainforest (n)<br>\
-Government (n) chính phủ<br>\
-Release (v) ra mắt<br>\
-Index (n) chỉ số<br>\
+Government (n)<br>\
+Release (v)<br>\
+Index (n)<br>\
 Impact (n) = Effect (n)<br>\
 Mid-income (adj)<br>\
 Citizen (n)<br>\
@@ -85,7 +97,7 @@ Quantity (n)<br>\
 <br>\
 Economics (n)<br>\
 economic (a)<br>\
-Professor (n) giáo sư<br>\
+Professor (n)<br>\
 Use = consume (v)<br>\
 Reflect (v)<br>\
 Environment<br>\
@@ -124,7 +136,6 @@ Sức khỏe"
 },
 {
 	title:"Traditional festival",
-	unit:"2",
 	date:"",
 	en:"Traditional festival<br>\
 Describe a traditional festival in your country<br>\
@@ -410,22 +421,41 @@ Phát biểu: Hơn 70 phần trăm đất khô được sử dụng cho mục đ
 },
 {
 	date:"T6 27/09/2024",
-	title:"Speaking about a special building",
+	title:"Speaking about a special building [Dragon Bridge]",
 	en:"Are there any special buildings in your country?<br>\
 Yes, of course. FE: Landmark 81 located in HCM city, DN Administrative center in Danang. In addition, Hoi An has many well-preserved traditional buildings that are special because of their historical & cultural value.<br>\
 <br>\
 2) What do people think about them?<br>\
-- (be) proud of them - because FE, Landmark 81 represents (đại diện) the modernity and growth of the country. Or Hoi An ancient buildings are a symbol of cultural heritage (di sản văn hóa)<br>\
+- (be) proud of them - because FE, Landmark 81 represents the modernity and growth of the country. Or Hoi An ancient buildings are a symbol of cultural heritage.<br>\
 - admire (v)<br>\
 3) Do you think it's important to protect special buildings?<br>\
 Yes. Because they:<br>\
 - attract tourists, visitors<br>\
 - boost economy<br>\
-- represent the country's identity (bản sắc) and culture.",
+- represent the country's identity (bản sắc) and culture.<br>\
+<hr>\
+One of some special buildings is Dragon Bridge, which is located at the heart of the biggest city in Central Vietnam - Da Nang, the Dragon Bridge shines bright under the dark night sky. With a quick research in advance, one can easily find a good spot to enjoy the spectacular water and fire performances. As the shortest way to reach the city center from Da Nang International Airport. Dragon Bridge holds a spectacular position in the vibrant Da Nang city, Vietnam. This iconic bridge gracefully spans across the mighty Han River.<br>\
+The Dragon Bridge of Da Nang, Vietnam is the world's largest dragon-shaped steel bridge. With an installation cost of $85 million, it has 6 lanes and 666 meters of undulating steel shaped into a Ly-Dynasty dragon figure - the symbol of prosperity in Vietnamese culture. This gorgeous one-of-a-kind metal dragon also 'breathes' fire and water weekly. The deliberate integration of lighting technology, with more than 2,500 LED lights, exquisitely shows the dragon's body and its vivid fire-breathing head.<br>\
+Dragon Bridge Da Nang has attracted worldwide attention as a shining example for innovation in architecture. Its unusual arch support system has gained widespread regard in the designing industry and global media."
+,vi:"Có bất kỳ công trình kiến ​​trúc đặc biệt nào ở đất nước bạn không?<br>\
+Tất nhiên là có. FE: Landmark 81 tọa lạc tại TP HCM, trung tâm hành chính DN tại Đà Nẵng. Ngoài ra, Hội An còn có nhiều công trình kiến ​​trúc truyền thống được bảo tồn tốt, đặc biệt vì giá trị lịch sử và văn hóa của chúng.<br>\
+<br>\
+2) Mọi người nghĩ gì về chúng?<br>\
+- (be) proud of them - because FE, Landmark 81 represents the modernity and growth of the country. Or Hoi An ancient buildings are a symbol of cultural heritage.<br>\
+- admire (v)<br>\
+3) Do you think it's important to protect special buildings?<br>\
+Yes. Because they:<br>\
+- attract tourists, visitors<br>\
+- boost economy<br>\
+- represent the country's identity (bản sắc) and culture.<br>\
+<hr>\
+Một trong những công trình đặc biệt là Cầu Rồng, nằm ở trung tâm của thành phố lớn nhất miền Trung Việt Nam - Đà Nẵng, Cầu Rồng tỏa sáng rực rỡ dưới bầu trời đêm tối. Chỉ cần tìm hiểu trước một chút, bạn có thể dễ dàng tìm được một vị trí đẹp để thưởng thức màn trình diễn nước và lửa ngoạn mục. Là con đường ngắn nhất để đến trung tâm thành phố từ Sân bay quốc tế Đà Nẵng. Cầu Rồng giữ một vị trí ngoạn mục tại thành phố Đà Nẵng sôi động, Việt Nam. Cây cầu mang tính biểu tượng này duyên dáng bắc qua Sông Hàn hùng vĩ.<br>\
+Cầu Rồng Đà Nẵng, Việt Nam là cây cầu thép hình rồng lớn nhất thế giới. Với chi phí lắp đặt là 85 triệu đô la, cầu có 6 làn xe và 666 mét thép uốn lượn tạo hình rồng thời Lý - biểu tượng thịnh vượng trong văn hóa Việt Nam. Con rồng kim loại độc đáo tuyệt đẹp này cũng 'thở' ra lửa và nước hàng tuần. Sự tích hợp có chủ đích của công nghệ chiếu sáng, với hơn 2.500 đèn LED, thể hiện một cách tinh tế thân rồng và đầu phun lửa sống động của nó.<br>\
+Cầu Rồng Đà Nẵng đã thu hút sự chú ý của toàn thế giới như một ví dụ điển hình cho sự đổi mới trong kiến ​​trúc. Hệ thống hỗ trợ vòm khác thường của nó đã nhận được sự đánh giá rộng rãi trong ngành thiết kế và phương tiện truyền thông toàn cầu."
 },
 {
 	date:"T2 30/09/2024",
-	title:"Job",
+	title:"Festival in your country [DIFF]",
 	en:"Benefits of volunteering at DIFF<br>\
 There are three main benefits of working as a volunteer at DIFF 2024. Firstly, you can practice your English. I worked as a volunteer,\
  so it gave me the opportunity to speak English with a lot of foreigners. Secondly, you can make many friends when you work. I met and\
@@ -601,7 +631,7 @@ The academic textbook was heavy-going because it requires lots of concentration 
 },
 {
 	date:"T6 11/10/2024",
-	title:"Describe a DEVICE && SPORT",
+	title:"Describe a Device && Sport [Gym/Exercise]",
 	en:"I'm going to talk about my smartphone which is one of the most important gadgets in my life.<br>\
 Last year, on the occasion of my 16th birthday, my mother gave me a very precious gift, which is an iPhone 6s. I have used it both in study and entertainment every day.<br>\
 My smartphone is considered as one of my modern educational tools. Only with the phone connected to the Internet, I can access and surf webs to broaden my knowledge. For example, when there are lessons that I don't understand in class, I can use it to search for lectures and videos online, which is really helpful.<br>\
@@ -617,7 +647,12 @@ The best tennis players prefer to play on grass courts rather than clay courts.<
 You can play it in so many places, inside, in a pitch or a stadium, or outside, in a park.<br>\
 The rules of football are really easy/simple. You play in teams of ... people. You have to kick the ball into the opponent's net.<br>\
 Players can use any part of their body except their hands and arms, although the goalkeeper is an exception as they can use their hands within the penalty area. The team with the most goals at the end of the match wins.<br>\
-I love this sport for several reasons: First, ... Second,... Last but not least, ..."
+I love this sport for several reasons: First, ... Second,... Last but not least, ...<br>\
+<hr>\
+Sample:<br>\
+A lot of people feel the best way to stay in shape is to regularly go to the gym while others think there are more effective methods. Although I would readily admit that the health benefits of gyms are self-evident, the best way to stay fit over the long-term is to join a sport or similar activity.<br>\
+Those who swear by gyms often point out the bulk of research on the benefits of working out. People going to the gym can broadly be divided into those doing cardivascular exercise and weight-lifting (or partaking in both). Cardio workouts have been proven in various studies to increase circulation, strengthen the heart muscles and reduce risks of heart disease later in life. Weight-lifting is also a scientifically supported method of combating bone density deterioration, especially important for women, and improving muscular health. No reasonable person would doubt both the vast anecdotal and scientific support for regular trips to the gym.<br>\
+To conclude, going to the gym has indisputable benefits but it is not motivating enough to become habitual for most gym-goers. Instead, parents and teachers should encourage children to experiment with a wide range of activities in the hopes that they can develop a lifelong passion for one of them."
 ,vi:"Tôi sẽ nói về chiếc điện thoại thông minh của mình, một trong những tiện ích quan trọng nhất trong cuộc sống của tôi.<br>\
 Năm ngoái, vào dịp sinh nhật lần thứ 16 của tôi, mẹ tôi đã tặng tôi một món quà rất quý giá, đó là một chiếc iPhone 6s. Tôi đã sử dụng nó cho cả mục đích học tập và giải trí hàng ngày.<br>\
 Điện thoại thông minh của tôi được coi là một trong những công cụ giáo dục hiện đại của tôi. Chỉ cần điện thoại được kết nối với Internet, tôi có thể truy cập và lướt web để mở rộng kiến ​​thức của mình. Ví dụ, khi có những bài học mà tôi không hiểu trong lớp, tôi có thể sử dụng nó để tìm kiếm các bài giảng và video trực tuyến, điều này thực sự hữu ích.<br>\
@@ -633,7 +668,12 @@ Những người chơi quần vợt giỏi nhất thích chơi trên sân cỏ h
 Bạn có thể chơi ở rất nhiều nơi, trong nhà, trên sân bóng chày hoặc sân vận động, hoặc ngoài trời, trong một park.<br>\
 Luật chơi bóng đá thực sự dễ/đơn giản. Bạn chơi theo đội gồm... người. Bạn phải đá bóng vào lưới của đối phương.<br>\
 Cầu thủ có thể sử dụng bất kỳ bộ phận nào trên cơ thể ngoại trừ tay và cánh tay, mặc dù thủ môn là một ngoại lệ vì họ có thể sử dụng tay trong vòng cấm. Đội ghi được nhiều bàn thắng nhất vào cuối trận sẽ thắng.<br>\
-Tôi thích môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ..."
+Tôi thích môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ...<br>\
+<hr>\
+Sample:<br>\
+Nhiều người cho rằng cách tốt nhất để giữ dáng là thường xuyên đến phòng tập trong khi những người khác lại cho rằng có những phương pháp hiệu quả hơn. Mặc dù tôi sẵn sàng thừa nhận rằng lợi ích sức khỏe của phòng tập là hiển nhiên, nhưng cách tốt nhất để giữ dáng lâu dài là tham gia một môn thể thao hoặc hoạt động tương tự.<br>\
+Những người thề sống chết với phòng tập thường chỉ ra phần lớn các nghiên cứu về lợi ích của việc tập luyện. Những người đến phòng tập có thể được chia thành những người tập tim mạch và nâng tạ (hoặc tham gia cả hai). Các bài tập tim mạch đã được chứng minh trong nhiều nghiên cứu khác nhau là có thể tăng cường lưu thông máu, tăng cường cơ tim và giảm nguy cơ mắc bệnh tim khi về già. Nâng tạ cũng là một phương pháp được khoa học chứng minh là có thể chống lại tình trạng suy giảm mật độ xương, đặc biệt quan trọng đối với phụ nữ và cải thiện sức khỏe cơ bắp. Không một người lý trí nào lại nghi ngờ cả sự ủng hộ rộng rãi về mặt giai thoại và khoa học đối với những chuyến đi đến phòng tập thường xuyên.<br>\
+Tóm lại, việc đến phòng tập có những lợi ích không thể phủ nhận nhưng không đủ động lực để trở thành thói quen đối với hầu hết những người đến phòng tập. Thay vào đó, cha mẹ và giáo viên nên khuyến khích trẻ em thử nghiệm nhiều hoạt động khác nhau với hy vọng rằng chúng có thể phát triển niềm đam mê suốt đời với một trong số những hoạt động đó."
 	,voca:"Moreover,In short,As a result,For instance,pitch,court,course,precious,broaden,relieve,range,In addition,entertainment",
 },
 {
@@ -754,6 +794,7 @@ Ha Long Bay is special to me because of its natural beauty and how peaceful it f
 spectacular, breathtaking<br>\
 majestic<br>\
 serene<br>\
+extravagant<br>\
 incrediblec<br>\
 fantastic, mavelous, wonderful, magnificent, stunning<br>\
 "
@@ -768,10 +809,9 @@ Vịnh Hạ Long đặc biệt đối với tôi vì vẻ đẹp tự nhiên và
 ngoạn mục<br>\
 vĩ đại<br>\
 thanh thản<br>\
+xa hoa<br>\
 đáng kinh ngạc<br>\
-tuyệt vời<br>\
-mavelous<br>\
-tuyệt đẹp"
+tuyệt vời"
 ,voca:"",
 },
 {
@@ -877,14 +917,14 @@ Monotones, Neutral colors, Pastel colors<br>\
 Minimalism(n), minimalist (n)<br>\
 Shade (n)<br>\
 Instill (v) a sense of serenity/tranquility:<br>\
-Bring me closer to the naturenature lover/enthusiast (n)<br>\
+Bring me closer to the nature lover/enthusiast (n)<br>\
 Aesthetic (a), a sense of aesthetics<br>\
 Aesthetically pleasing (a)\
 <br>\
 soothe my mind (v) = ease/ calm my mind<br>\
 (to) hurt my eyesight >< (be) pleasing to the eye<br>\
 (to) get on my nerves = annoy me<br>\
-play a crucial/indispensable part/role in...<br>\
+play a/an [crucial/indispensable] [part/role] in...<br>\
 consider = take into account<br>\
 <br>\
 <b>My favorite colors:</b><br>\
@@ -896,7 +936,7 @@ consider = take into account<br>\
 The bedroom of my dreams is large and light. It is coloured blue and white, because they are my favourite. I have a lot of things in my ideal bedroom. There is a dark wooden bed with drawers. The bed linen is white and blue too. Above the bed there are some shelves for books, flowers and tiny statuettes.<br>\
 In the centre of the room there is a blue carpet. Also I have a wardrobe and two chests of drawers. One of them is between the bed and wardrobe. It is for school stuff. Another one is opposite the wardrobe. There is my art stuff in it.<br>\
 Beside my bed there is a pink bean bag chair. I usually sit in the chair when I watch TV. I also have another chair in the bedroom. It is orange. There are a lot of cute toys all over it. I like to create something with my hands that's why I have a special table for handicrafts.\
-Also there is a music corner near the window. There is a guitar there and I want to learn how to play it. I have got two desks in my ideal room. One is for school and the other one is for art. I would really like to have a bedroom like that.<br>\
+ Also there is a music corner near the window. There is a guitar there and I want to learn how to play it. I have got two desks in my ideal room. One is for school and the other one is for art. I would really like to have a bedroom like that.<br>\
 <br>\
 <b>Describe about my mother</b><br>\
 My mother is one of the most important people in my life. She has been there for me since the day I was born, always loving, supporting, and caring for me.<br>\
@@ -975,7 +1015,7 @@ Màu đơn sắc, màu trung tính, màu phấn<br>\
 Chủ nghĩa tối giản(n), tối giản (n)<br>\
 Bóng râm (n)<br>\
 Truyền cảm giác thanh thản/yên bình (v):<br>\
-Mang đến cho tôi gần gũi hơn với thiên nhiênngười yêu/người đam mê thiên nhiên (danh từ)<br>\
+Mang đến cho tôi gần gũi hơn với người yêu thiên nhiên /người đam mê (danh từ)<br>\
 Thẩm mỹ (a), cảm nhận về thẩm mỹ<br>\
 Có tính thẩm mỹ (a)\
 <br>\
@@ -994,7 +1034,7 @@ xem xét = tính đến<br>\
 Căn phòng trong mơ của tôi rộng rãi và sáng sủa. Phòng có màu tím và trắng, vì đó là màu tôi thích nhất. Tôi có rất nhiều đồ trong căn phòng lý tưởng của mình. Có một chiếc giường gỗ sẫm màu có ngăn kéo. Ga trải giường cũng màu trắng và tím. Phía trên giường có một số giá để sách, hoa và tượng nhỏ.<br>\
 Ở giữa phòng có một tấm thảm màu tím. Tôi cũng có một tủ quần áo và hai tủ ngăn kéo. Một cái ở giữa giường và tủ quần áo. Nó để đựng đồ dùng học tập. Một cái khác ở đối diện tủ quần áo. Có đồ dùng nghệ thuật của tôi trong đó.<br>\
 Bên cạnh giường tôi có một chiếc ghế lười màu hồng. Tôi thường ngồi trên ghế khi xem TV. Tôi cũng có một chiếc ghế khác trong phòng ngủ. Nó màu cam. Có rất nhiều đồ chơi dễ thương trên đó. Tôi thích tạo ra thứ gì đó bằng tay của mình, đó là lý do tại sao tôi có một chiếc bàn đặc biệt để làm đồ thủ công.\
-Ngoài ra còn có một góc âm nhạc gần cửa sổ. Có một cây đàn ghi-ta ở đó và tôi muốn học cách chơi đàn. Tôi có hai chiếc bàn trong căn phòng lý tưởng của mình. Một cái để học và một cái để làm đồ nghệ thuật. Tôi thực sự muốn có một phòng ngủ như vậy.<br>\
+ Ngoài ra còn có một góc âm nhạc gần cửa sổ. Có một cây đàn ghi-ta ở đó và tôi muốn học cách chơi đàn. Tôi có hai chiếc bàn trong căn phòng lý tưởng của mình. Một cái để học và một cái để làm đồ nghệ thuật. Tôi thực sự muốn có một phòng ngủ như vậy.<br>\
 <br>\
 <b>Mô tả về mẹ</b><br>\
 Mẹ tôi là một trong những người quan trọng nhất trong cuộc đời tôi. Mẹ đã ở bên tôi kể từ ngày tôi chào đời, luôn yêu thương, ủng hộ và chăm sóc tôi.<br>\

@@ -19,6 +19,7 @@ addict (n) /ˈædɪkt/ người ghiện<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 pleased (a) vui lòng<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
+indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 darken (v) /ˈdɑːrkən/ trở nên tối, làm tối<br>\
@@ -231,15 +232,17 @@ article bài viết<br>\
 artist nghệ sĩ<br>\
 attitude (n) /ˈætɪtuːd/ thái độ<br>\
 compare so sánh<br>\
-judge phán xét<br>\
 magazine (n) /ˈmæɡəziːn/ tạp chí<br>\
 material (n) /məˈtɪriəl/ vật liệu<br>\
 meal bữa ăn<br>\
+favorite (n,a) /ˈfeɪvərɪt/ (sự)yêu thích<br>\
 method (n) /ˈmeθəd/ phương pháp<br>\
 neighbor hàng xóm<br>\
-regularity (n) /ˌreɡjuˈlærəti/ sự chuyên nghiệp, chánh thức, hợp pháp<br>\
+regularity (n) /reɡjuˈlærəti/ sự chuyên nghiệp, chánh thức, hợp pháp<br>\
 professional (a) /prəˈfeʃənl/ chuyên nghiệp<br>\
 profit lợi nhuận<br>\
+emphasis (n) /ˈemfəsɪs/ sự nhấn mạnh<br>\
+emphasize (v) /ˈemfəsaɪz/ nhấn mạnh<br>\
 quality (n) /ˈkwɑːləti/ chất lượng<br>\
 shape (n) /ʃeɪp/ hình dạng<br>\
 space không gian<br>\
@@ -251,7 +254,7 @@ burn bỏng<br>\
 cell tế bào<br>\
 contain chứa<br>\
 correct đúng<br>\
-crop cây trồng<br>\
+crop (n,v) /krɑːp/ v.cắt, vật giặt hái, mùa giặt<br>\
 demand nhu cầu<br>\
 feed thức ăn<br>\
 hole lỗ<br>\
@@ -261,6 +264,7 @@ owe nợ<br>\
 position vị trí<br>\
 raise nâng cao<br>\
 responsible có trách nhiệm<br>\
+significance (n) /sɪɡˈnɪfɪkəns/ sự quan trọng, ý nghĩa<br>\
 sight tầm nhìn<br>\
 structure (n) /ˈstrʌktʃər/ cấu trúc<br>\
 whole toàn bộ<br>\
@@ -622,7 +626,8 @@ meteor sao băng<br>\
 monster,northern quái vật,phía bắc<br>\
 remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
 southern phía nam<br>\
-statue tượng<br>\
+statue (n) /ˈstætʃuː/ tượng<br>\
+statuette (n) /stætʃuˈet/ tượng nhỏ<br>\
 steam hơi nước<br>\
 submit nộp<br>\
 temple đền thờ<br>\
@@ -644,6 +649,8 @@ obey tuân theo<br>\
 secure an toàn<br>\
 steady ổn định<br>\
 trust tin tưởng<br>\
+purity (n) /ˈpjʊrəti/ nguyên chất, tinh khiết<br>\
+resonate (v) /ˈrezəneɪt/ cộng hưởng<br>\
 twist (v) /twɪst/ xoắn<br>\
 unless trừ khi<br>\
 confidence tự tin<br>\
@@ -652,6 +659,7 @@ disaster thảm họa<br>\
 disturb làm phiền<br>\
 estimate ước tính<br>\
 honor vinh dự<br>\
+royalty (n) /ˈrɔɪəlti/ hoàng gia, vương quyền<br>\
 impress gây ấn tượng<br>\
 marathon (a) /ˈmærəθɑːn/ marathon<br>\
 narrow (a) /ˈnærəʊ/ hẹp<br>\
@@ -659,7 +667,7 @@ pale nhợt nhạt<br>\
 rough thô<br>\
 satisfy thỏa mãn<br>\
 scream la hét<br>\
-aesthetic (a) tính thẩm mỹ<br>\
+aesthetic (a) /esˈθetɪk/ tính thẩm mỹ<br>\
 Aesthetically pleasing (a) thẩm mỹ dễ chịu<br>\
 shade (n) bóng râm, tông màu<br>\
 supplement bổ sung<br>\
@@ -1063,7 +1071,7 @@ fuel nhiên liệu<br>\
 grand lớn<br>\
 hurricane bão<br>\
 loss mất mát<br>\
-misinformation (n) /ˌmɪsɪnfərˈmeɪʃn/ thông tin sai lệch<br>\
+misinformation (n) /mɪsɪnfərˈmeɪʃn/ thông tin sai lệch<br>\
 plain đồng bằng<br>\
 reef rạn san hô<br>\
 shut đóng cửa<br>\

@@ -16,6 +16,16 @@ const SynonymData = [
 	mean:"dồi dào"
 },
 {
+	words:"vivid /ˈvɪvɪd/| Vibrant /ˈvaɪbrənt/| lively  /ˈlaɪvli/",
+	type:"a",
+	mean:"sống (sôi) động"
+},
+{
+	words:"various /ˈveriəs/| different /ˈdɪfrənt/| several /ˈsevrəl/",
+	type:"a",
+	mean:"khác nhau"
+},
+{
 	words:"neglect /nɪˈɡlekt/| ignore /ɪɡˈnɔːr/",
 	type:"v",
 	mean:"không quan tâm, bỏ bê"

@@ -110,6 +110,7 @@ Fisherman (n)/ˈfɪʃəmən/ Ngư dân<br>\
 Lifeguard (n)/ˈlaɪfɡɑːd/ Người cứu hộ<br>\
 Seashore (n)/ˈsiːʃɔːr/ Bờ biển<br>\
 Beach (n)/biːtʃ/ Bãi biển<br>\
+horizon (n) /həˈraɪzn/ chân trời, kinh nghiệm<br>\
 Coast (n)/kəʊst/ Bờ (biển)<br>\
 Seagull (n)/ˈsiː.ɡʌl/ Mòng biển<br>\
 Whale (n)/weɪl/ Cá voi<br>\
@@ -949,6 +950,7 @@ nice (a) /nais/ tốt bụng<br>\
 emotional (a) /I'mǝufǝnl/ đa cảm<br>\
 emotion (n) cảm xúc<br>\
 bad-tempered (a) /'bæd temped/ nóng tính<br>\
+resilient (a) /rɪˈzɪliənt/ kiên cường<br>\
 nervous (a) /'nз:vǝs/ lo lắng<br>\
 distracted (a) /dis'træktrd/ bị phân tâm<br>\
 dishonest (a) /dis'onist/ không trung thực<br>\
@@ -985,6 +987,7 @@ blunt (a) /blʌnt/ cùn (dao), nói thẳng thắn.<br>\
 open-minded (a)  /əʊpən ˈmaɪndɪd/ cởi mở<br>\
 unfriendly (a) /n'frendli/ khó gần<br>\
 judgemental (a) /dʒʌdʒˈmentl/ tính phán xét<br>\
+judge (n) /dʒʌdʒ/ phán xét<br>\
 nosy (a)  /ˈnəʊzi/ tính tò mò, tọc mạch<br>\
 generous (a) /ˈdʒenərəs/ hào phóng<br>\
 compassionate (a) /kamipæfant/ giàu lòng trắc ẩn<br>\
@@ -1324,6 +1327,7 @@ Check-in (n) /ˈtʃɛk.ɪn/ Việc nhận phòng<br>\
 Desk clerk (n) /dɛsk klɜːrk/ Nhân viên lễ tân<br>\
 Double bed (n) /ˈdʌb.əl bɛd/ Giường đôi<br>\
 Single bed (n) /ˈsɪŋ.ɡəl bɛd/ Giường đơn<br>\
+linen (n) /ˈlɪnɪn/ vải lụa, vải sợi<br>\
 Doorman (n) /ˈdɔːr.mən/ Nhân viên gác cửa<br>\
 Reception (n) /rɪˈsɛp.ʃən/ Quầy lễ tân<br>\
 Elevator (n) /ˈɛl.ɪveɪ.tər/ Thang máy<br>\
@@ -1511,6 +1515,7 @@ Right (a) /raɪt/ Đúng<br>\
 Wrong (a) /rɒŋ/ Sai<br>\
 Register (n) /ˈrɛdʒ.ɪ.stər/ Sổ sách<br>\
 Assembly (n) /əˈsɛm.bli/ Cuộc họp<br>\
+parade (n) /pəˈreɪd/ cuộc diễu hành<br>\
 Holiday (n) /ˈhɒl.ɪ.deɪ/ Kỳ nghỉ<br>\
 Carnival (n) /ˈkɑːrnɪvl/ Lễ hội<br>\
 Mascot (n) /ˈmæskɑːt/ Linh vật<br>\
@@ -1937,7 +1942,6 @@ Cosmopolitan (a) /kɑːzməˈpɑːlɪtən/ Quốc tế<br>\
 Hectic (a) /ˈhektɪk/ bận rộn<br>\
 Urban (a) /ˈɜːrbən/ thuộc thành phố, tính chất đô thị<br>\
 Bustling (a) /ˈbʌslɪŋ/ nhộn nhịp<br>\
-Vibrant (a) /ˈvaɪbrənt/ Sôi động<br>\
 Metropolis (n) /məˈtrɑːpəlɪs/ Đô thị<br>\
 Sprawling (a) /ˈsprɔːlɪŋ/ lan rộng<br>\
 Suburbs (n) /ˈsʌbɜːrb/ Ngoại ô (= Outskirts)<br>\

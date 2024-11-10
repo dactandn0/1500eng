@@ -322,40 +322,14 @@ We went to the beach and swam in the clear water, we ate seafood it was deliciou
 The good thing about the journey was that we had fun and happy moments. The bad thing was this trip was not safe, it took us about 2 hours to travel from my home to NT.<br>\
 I remember this trip because at the time, i met the girl who later became my girlfriend.<br>\
 <hr>\
-There are many heritage and splendid sights in Vietnam. Especially, Da Nang is one of the most popular places for both Vietnamese and foreign tourists.<br>\
- Da Nang includes sea, Son Tra island, mountains, and beautiful landscape. <br>\
- There are many interesting places such as Asia entertainment park, Ba Na hill, Hoi An ancient town, My Khe beach, museum of art, and famous bridges.<br>\
- The city is well known for its fresh atmosphere, friendly people, and security.<br>\
-  The weather is glorious all the year, and it brings this city many delicacies from the sea and perfect living conditions for people, specifically the elder.<br>\
-   Visiting Da Nang, I am impressed by Ba Na hill containing the longest cable car from land to the top of the mountain.<br>\
-    It is an unforgettable experience for visitors to observe breathtaking sights and picturesque scenes.<br>\
-     Besides, the beaches have long golden sand, and a deep blue sea in addition to huge bunches of fresh coconut.<br>\
-      Tourist has a chance to relax, enjoy the peace and nature, and play aquatic sport.<br>\
-       Moreover, the city has many big bridges like the Dragon bridge, Quay bridge, and a large outdoor entertainment named Asia park.<br>\
-        Additionally, there are a lot of typical delicious dishes such as Quang noodles, Xeo cake, Pork pan-cake, and others.<br>\
-         Da Nang is preserved for its natural beauty; therefore, many tourists come here every year.<br>\
-          Consequently, it leads to a polluted environment, natural damage, and other social problem. However, the city's security is good and there is no street robbery. <br>\
-Hence, Da Nang is voted to be one of the most worth-living cities in Vietnam. In the future, I hope Da Nang will develop and become more popular worldwide."
+"
 ,vi:"Tôi đã đến Núi Thành<br>\
 Nó được bố mẹ tôi mua. Tôi đi du lịch với bạn bè, chúng tôi đi qua Tam Kỳ và đến NT.<br>\
 Chúng tôi đã đến bãi biển và bơi trong làn nước trong vắt, chúng tôi đã ăn hải sản rất ngon nhưng đắt,<br>\
 Điểm tốt của chuyến đi là chúng tôi đã có những khoảnh khắc vui vẻ và hạnh phúc. Điểm xấu là chuyến đi này không an toàn, chúng tôi mất khoảng 2 giờ để đi từ nhà tôi đến NT.<br>\
 Tôi nhớ chuyến đi này vì lúc đó, tôi đã gặp cô gái sau này trở thành bạn gái của tôi.<br>\
 <hr>\
-Có nhiều di sản và cảnh đẹp tuyệt vời ở Việt Nam. Đặc biệt, Đà Nẵng là một trong những địa điểm được cả khách du lịch Việt Nam và nước ngoài yêu thích nhất.<br>\
-Đà Nẵng bao gồm biển, đảo Sơn Trà, núi non và cảnh quan tuyệt đẹp. <br>\
-Có rất nhiều địa điểm thú vị như công viên giải trí Châu Á, đồi Bà Nà, phố cổ Hội An, bãi biển Mỹ Khê, bảo tàng nghệ thuật và những cây cầu nổi tiếng.<br>\
-Thành phố này nổi tiếng với bầu không khí trong lành, người dân thân thiện và an ninh.<br>\
-Thời tiết tuyệt đẹp quanh năm, mang đến cho thành phố này nhiều món ngon từ biển và điều kiện sống hoàn hảo cho người dân, đặc biệt là người cao tuổi.<br>\
-Đến thăm Đà Nẵng, tôi ấn tượng với đồi Bà Nà có tuyến cáp treo dài nhất từ ​​đất liền lên đỉnh núi.<br>\
-Đây là trải nghiệm khó quên cho du khách khi được ngắm nhìn những cảnh đẹp ngoạn mục và cảnh đẹp như tranh vẽ.<br>\
-Bên cạnh đó, bãi biển có bãi cát vàng dài, biển xanh thẳm cùng những rặng dừa tươi khổng lồ.<br>\
-Du khách có cơ hội thư giãn, tận hưởng sự yên bình và thiên nhiên, và chơi các môn thể thao dưới nước.<br>\
-Hơn nữa, thành phố có nhiều cây cầu lớn như cầu Rồng, cầu Quay và một khu vui chơi giải trí ngoài trời lớn mang tên Asia Park.<br>\
-Ngoài ra, còn có rất nhiều món ăn ngon đặc trưng các món ăn như mì Quảng, bánh xèo, bánh xèo thịt heo, v.v.<br>\
-Đà Nẵng được bảo tồn vì vẻ đẹp tự nhiên của nó; do đó, rất nhiều khách du lịch đến đây hàng năm.<br>\
-Do đó, nó dẫn đến ô nhiễm môi trường, thiệt hại tự nhiên và các vấn đề xã hội khác. Tuy nhiên, an ninh của thành phố rất tốt và không có nạn cướp giật trên đường phố. <br>\
-Do đó, Đà Nẵng được bình chọn là một trong những thành phố đáng sống nhất tại Việt Nam. Trong tương lai, tôi hy vọng Đà Nẵng sẽ phát triển và trở nên phổ biến hơn trên toàn thế giới."
+"
 },
 {
 	date:"T6.20/09/2024",
@@ -421,7 +395,7 @@ Phát biểu: Hơn 70 phần trăm đất khô được sử dụng cho mục đ
 },
 {
 	date:"T6 27/09/2024",
-	title:"Speaking about a special building [Dragon Bridge]",
+	title:"Speaking about a special building [Citadel of the Nguyen Dynasty]",
 	en:"Are there any special buildings in your country?<br>\
 Yes, of course. FE: Landmark 81 located in HCM city, DN Administrative center in Danang. In addition, Hoi An has many well-preserved traditional buildings that are special because of their historical & cultural value.<br>\
 <br>\
@@ -434,9 +408,10 @@ Yes. Because they:<br>\
 - boost economy<br>\
 - represent the country's identity (bản sắc) and culture.<br>\
 <hr>\
-One of some special buildings is Dragon Bridge, which is located at the heart of the biggest city in Central Vietnam - Da Nang, the Dragon Bridge shines bright under the dark night sky. With a quick research in advance, one can easily find a good spot to enjoy the spectacular water and fire performances. As the shortest way to reach the city center from Da Nang International Airport. Dragon Bridge holds a spectacular position in the vibrant Da Nang city, Vietnam. This iconic bridge gracefully spans across the mighty Han River.<br>\
-The Dragon Bridge of Da Nang, Vietnam is the world's largest dragon-shaped steel bridge. With an installation cost of $85 million, it has 6 lanes and 666 meters of undulating steel shaped into a Ly-Dynasty dragon figure - the symbol of prosperity in Vietnamese culture. This gorgeous one-of-a-kind metal dragon also 'breathes' fire and water weekly. The deliberate integration of lighting technology, with more than 2,500 LED lights, exquisitely shows the dragon's body and its vivid fire-breathing head.<br>\
-Dragon Bridge Da Nang has attracted worldwide attention as a shining example for innovation in architecture. Its unusual arch support system has gained widespread regard in the designing industry and global media."
+I'm going to talk about the Citadel of the Nguyen Dynasty, which is a very famous historical site and tourist destination in Vietnam. In summer of 2018, my family decided to take a trip to escape from the daily routine and learn some new things about our country's history and culture. The place is located in Hue city, which is more than 1000 km away from Ho Chi Minh City. I went to Hue by plane, which took me just about 2 hours to get to the destination.<br>\
+Looking from the outside, the place was surrounded by an old wall and was filled with many green trees and beautiful flowers. There was a big main gate which used to be for the king only and it is now closed. Tourists and staff must enter the place by two side gates on the left and the right of the building. Above the gate, there was an impressive pavilion that offered a breathtaking view. Walking inside the place, I was impressed by how enormous the place was. I guess it was about 1000 square meters and was divided into various parts with different functions. There were buildings for courts, worshipping, entertaining, working and sleeping. I even saw the real golden throne which was once seated by the emperor in the past.<br>\
+It's a tourist destination so most of the people there were tourists. And since it was a well-known and beautiful place with great historical and cultural values, it attracted hundreds of tourists visiting every day. At the time I explored the place, it was really crowded and I couldn't take a good photo of the landscape because there were too many people around and they kept jumping into my photos. The good thing was the place was really large, so it didn't give me a breathless feeling.<br>\
+The place was really stunning and after the trip, I did learn a lot about the history and culture of my country. I really wish to pay a visit to the place again in the future."
 ,vi:"Có bất kỳ công trình kiến ​​trúc đặc biệt nào ở đất nước bạn không?<br>\
 Tất nhiên là có. FE: Landmark 81 tọa lạc tại TP HCM, trung tâm hành chính DN tại Đà Nẵng. Ngoài ra, Hội An còn có nhiều công trình kiến ​​trúc truyền thống được bảo tồn tốt, đặc biệt vì giá trị lịch sử và văn hóa của chúng.<br>\
 <br>\
@@ -449,9 +424,10 @@ Yes. Because they:<br>\
 - boost economy<br>\
 - represent the country's identity (bản sắc) and culture.<br>\
 <hr>\
-Một trong những công trình đặc biệt là Cầu Rồng, nằm ở trung tâm của thành phố lớn nhất miền Trung Việt Nam - Đà Nẵng, Cầu Rồng tỏa sáng rực rỡ dưới bầu trời đêm tối. Chỉ cần tìm hiểu trước một chút, bạn có thể dễ dàng tìm được một vị trí đẹp để thưởng thức màn trình diễn nước và lửa ngoạn mục. Là con đường ngắn nhất để đến trung tâm thành phố từ Sân bay quốc tế Đà Nẵng. Cầu Rồng giữ một vị trí ngoạn mục tại thành phố Đà Nẵng sôi động, Việt Nam. Cây cầu mang tính biểu tượng này duyên dáng bắc qua Sông Hàn hùng vĩ.<br>\
-Cầu Rồng Đà Nẵng, Việt Nam là cây cầu thép hình rồng lớn nhất thế giới. Với chi phí lắp đặt là 85 triệu đô la, cầu có 6 làn xe và 666 mét thép uốn lượn tạo hình rồng thời Lý - biểu tượng thịnh vượng trong văn hóa Việt Nam. Con rồng kim loại độc đáo tuyệt đẹp này cũng 'thở' ra lửa và nước hàng tuần. Sự tích hợp có chủ đích của công nghệ chiếu sáng, với hơn 2.500 đèn LED, thể hiện một cách tinh tế thân rồng và đầu phun lửa sống động của nó.<br>\
-Cầu Rồng Đà Nẵng đã thu hút sự chú ý của toàn thế giới như một ví dụ điển hình cho sự đổi mới trong kiến ​​trúc. Hệ thống hỗ trợ vòm khác thường của nó đã nhận được sự đánh giá rộng rãi trong ngành thiết kế và phương tiện truyền thông toàn cầu."
+Tôi sẽ nói về Kinh thành triều Nguyễn, một di tích lịch sử và điểm du lịch rất nổi tiếng ở Việt Nam. Vào mùa hè năm 2018, gia đình tôi quyết định đi du lịch để thoát khỏi cuộc sống thường nhật và tìm hiểu một số điều mới về lịch sử và văn hóa của đất nước chúng tôi. Nơi này nằm ở thành phố Huế, cách thành phố Hồ Chí Minh hơn 1000 km. Tôi đến Huế bằng máy bay, mất khoảng 2 giờ để đến nơi.<br>\
+Nhìn từ bên ngoài, nơi này được bao quanh bởi một bức tường cũ và tràn ngập nhiều cây xanh và hoa đẹp. Có một cổng chính lớn trước đây chỉ dành cho vua và hiện đã đóng. Du khách và nhân viên phải vào nơi này bằng hai cổng phụ bên trái và bên phải của tòa nhà. Phía trên cổng, có một gian hàng ấn tượng mang đến tầm nhìn ngoạn mục. Khi đi bộ vào bên trong, tôi đã rất ấn tượng về sự rộng lớn của nơi này. Tôi đoán nó rộng khoảng 1000 mét vuông và được chia thành nhiều phần với các chức năng khác nhau. Có những tòa nhà dành cho cung điện, nơi thờ cúng, giải trí, làm việc và ngủ. Tôi thậm chí còn nhìn thấy ngai vàng thật mà hoàng đế từng ngồi trong quá khứ.<br>\
+Đây là một điểm đến du lịch nên hầu hết mọi người ở đó đều là khách du lịch. Và vì đây là một nơi nổi tiếng và xinh đẹp với những giá trị lịch sử và văn hóa to lớn, nên nơi này thu hút hàng trăm du khách đến thăm mỗi ngày. Vào thời điểm tôi khám phá nơi này, nơi này thực sự đông đúc và tôi không thể chụp được một bức ảnh đẹp về phong cảnh vì có quá nhiều người xung quanh và họ cứ nhảy vào ảnh của tôi. Điều tốt là nơi này thực sự rộng lớn, vì vậy tôi không cảm thấy nghẹt thở.<br>\
+Nơi này thực sự tuyệt đẹp và sau chuyến đi, tôi đã học được rất nhiều về lịch sử và văn hóa của đất nước mình. Tôi thực sự muốn đến thăm nơi này một lần nữa trong tương lai."
 },
 {
 	date:"T2 30/09/2024",

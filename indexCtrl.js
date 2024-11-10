@@ -50,56 +50,24 @@ var app = angular.module("myApp", [
   ]);
 app.config(function($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl'
-      }) 
-      .when('/configUI', {
-        templateUrl: 'vocaNoted/configUI.html', controller: 'configUICtrl'
-      }) 
-      .when('/vocaNoted', {
-        templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'
-      }) 
-      .when('/ebookNoted', {
-        templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'
-      })        
-      .when('/book4k', {
-        templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'
-      })
-      .when('/lptd', {
-        templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'
-      }) 
-      .when('/grammer', {
-        templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'
-      }) 
-      .when('/collinsL', {
-        templateUrl: 'templates/non_cd_listening.html', controller: 'collinsLCtrl'
-      })
-      .when('/bridgeL', {
-        templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'
-      })
-       .when('/bridgeR', {
-       templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'
-      }) 
-       .when('/completeL', {
-       templateUrl: 'ebooks/complete/completeL.html', controller: 'completeLCtrl'
-      })    
-       .when('/completeR', {
-       templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'
-      })    
-       .when('/barron600R', {
-       templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'
-      })        
-       .when('/barron600L', {
-       templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'
-      })    
-      .when('/sampleSpeaking', {
-       templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'
-      })      
-      .when('/preCourse', {
-       templateUrl: 'ebooks/englab/preCourse/preCourse.html', controller: 'preCourseCtrl'
-      })
-      .otherwise({
-         redirectTo: '/'
+	//	.when('/', { templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl' }) 
+		.when('/configUI', {templateUrl: 'vocaNoted/configUI.html', controller: 'configUICtrl'})
+		.when('/vocaNoted', {templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'})
+		.when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
+		.when('/book4k', {templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'})
+		//    .when('/lptd', {
+		.when('/', {templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'})
+		.when('/grammer', {templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'})
+		.when('/collinsL', {templateUrl: 'templates/non_cd_listening.html', controller: 'collinsLCtrl'})
+		.when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
+		.when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})
+		.when('/completeL', {templateUrl: 'ebooks/complete/completeL.html', controller: 'completeLCtrl'})
+		.when('/completeR', {templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'})
+		.when('/barron600R', {templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'})
+		.when('/barron600L', {templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'})
+		.when('/sampleSpeaking', {templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'})
+		.when('/preCourse', {templateUrl: 'ebooks/englab/preCourse/preCourse.html', controller: 'preCourseCtrl'})
+		.otherwise({redirectTo: '/'
       });
  }); // route
 

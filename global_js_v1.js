@@ -188,7 +188,7 @@ function processStory (story, isAlert = true) {
 
 
 	var kBrTag = '<br>'
-	var rgSen = /.*?((\.*\s*<br>)|(\!*\s*<br>)|(\?*\s*<br>)|('*\s*<br>)|("*\s*<br>)|[\.]+|\!|\?'")/gi
+	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*<br>)|(\?*\s*<br>)|('*\s*<br>)|("*\s*<br>)|[\.]+|\!|\?'")/gi
 	var enAndVi = ''
 	var viii = ''
 	var sentencesEn = enShow.match(rgSen);
@@ -200,7 +200,7 @@ function processStory (story, isAlert = true) {
 		for (var i = 0; i < sentencesEn.length; i++) {
 			var enSen = sentencesEn[i]
 			var viSen = sentencesVi[i]
-			if (viSen && viSen.trim()!=='<br>') {
+			if (viSen && viSen.trim()!=='<br>' && viSen.trim()!=='<hr>') {
 				var rep = viSen.trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '')
 				if (rep.length > 1 ) {
 					viii = '(' + rep + ')'

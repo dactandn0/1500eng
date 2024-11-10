@@ -325,7 +325,7 @@ There are many heritage and splendid sights in Vietnam. Especially, Da Nang is o
        Moreover, the city has many big bridges like the Dragon bridge, Quay bridge, and a large outdoor entertainment named Asia park.<br>\
         Additionally, there are a lot of typical delicious dishes such as Quang noodles, Xeo cake, Pork pan-cake, and others.<br>\
          Da Nang is preserved for its natural beauty; therefore, many tourists come here every year.<br>\
-          Consequently, it leads to a polluted environment, natural damage, and other social problem. However, the city’s security is good and there is no street robbery. <br>\
+          Consequently, it leads to a polluted environment, natural damage, and other social problem. However, the city's security is good and there is no street robbery. <br>\
 Hence, Da Nang is voted to be one of the most worth-living cities in Vietnam. In the future, I hope Da Nang will develop and become more popular worldwide."
 ,vi:"Tôi đã đến Núi Thành<br>\
 Nó được bố mẹ tôi mua. Tôi đi du lịch với bạn bè, chúng tôi đi qua Tam Kỳ và đến NT.<br>\
@@ -439,36 +439,28 @@ There are three main benefits of working as a volunteer at DIFF 2024. Firstly, y
 	date: "T6 04/10/2024",
 	title: "Accommodation && A favorite room",
 	en:"Studio apartment (n), Terraced house (n), Detached house (n), Condominium (n), Semi-detached house (n), Villa (n)<br>\
-<br>\
 <b>City</b><br>\
 Buildings, Traffic, Busy, Colorful, Lively, Houses<br>\
-<br>\
 <b>River</b><br>\
 Bridge, Sunset, Stunning, Atmosphere<br>\
-<br>\
 <b>Suburban area</b><br>\
-On the outskirts = In the suburbs<br>\
-Neighborhood, Security, Quiet, Residential area, <br>\
+on the outskirts = in the suburbs<br>\
+neighborhood, security, quiet, residential area<br>\
 <b>Countryside</b><br>\
-Hills, Fresh, Peaceful, Grass, Breezy, Beautiful<br>\
-1) Do you live in a house or an apartment? Could you describe it?<br>\
-2) What do you like about living there?<br>\
-3) What is your favorite room in your home? Why?<br>\
-4) Would you like to move to a different home in the future? If yes, what kind of house would you like to live in?<br>\
+hills, fresh, peaceful, grass, breezy, beautiful.<br>\
 <br>\
-Practice<br>\
 1) Do you live in a house or an apartment?<br>\
 I live in a two-storey terraced house with my family which is located in the city centre/ on the outskirts of the city.<br>\
-<br>\
 2) What do you like about living there?<br>\
 I like that most of the rooms face south, which means we get a lot of natural light. And the location is very convenient as all the facilities and services are within walking distance, which means I can easily grab anything I need in just a few minutes.<br>\
-<br>\
 3) What is your favorite room?<br>\
 [1] I would say that it's the living room because it's the most spacious room in the house, with a comfy sofa and a big, round table where we eat dinner every night. That's the room where the whole family gathers together and shares ups and downs in our lives.<br>\
 [2]I think that the living room is my favorite room in my home because we are six members.<br>\
  We spend a lot of time all day working and studying.<br>\
   So I think that the living room is the place where my family members can get close to each other, and we can spend time together watching TV shows or movies.<br>\
    This is a really fun time after a long day of terrible work or studying.<br>\
+4) Would you like to move to a different home in the future?<br>\
+No, I don't want to move to a different house in the future because I really like living at my current house. We have a lot of memories in this house, too.<br>\
 <br>\
 Vocabulary<br>\
 (to) immerse myself in my own world<br>\
@@ -483,36 +475,28 @@ Delicacy (n)<br>\
 (to) savor/ enjoy my privacy<br>\
 (to) sleep in"
 ,vi:"Căn hộ studio (danh từ), Nhà liền kề (danh từ), Nhà biệt lập (danh từ), Nhà chung cư (danh từ), Nhà song lập (danh từ), Biệt thự (danh từ)<br>\
-<br>\
 <b>Thành phố</b><br>\
 Tòa nhà, Giao thông, Bận rộn, Đầy màu sắc, Sôi động, Nhà ở<br>\
-<br>\
 <b>Sông</b><br>\
 Cầu, Hoàng hôn, Tuyệt đẹp, Không khí<br>\
-<br>\
 <b>Khu vực ngoại ô</b><br>\
-Ở vùng ngoại ô = Ở vùng ngoại ô<br>\
-Khu phố, An ninh, Yên tĩnh, Khu dân cư, <br>\
+ở vùng ngoại ô = ở vùng ngoại ô<br>\
+khu phố, an ninh, yên tĩnh, khu dân cư<br>\
 <b>Nông thôn</b><br>\
-Đồi, Trong lành, Yên bình, Cỏ, Gió mát, Đẹp<br>\
-1) Bạn sống trong nhà hay căn hộ? Bạn có thể mô tả nó không?<br>\
-2) Bạn thích điều gì khi sống ở đó?<br>\
-3) Bạn thích căn phòng nào nhất trong nhà mình? Tại sao?<br>\
-4) Bạn có muốn chuyển đến một ngôi nhà khác trong tương lai không? Nếu có, bạn muốn sống ở loại nhà nào?<br>\
+đồi, trong lành, yên bình, cỏ, gió mát, đẹp.<br>\
 <br>\
-Thực hành<br>\
 1) Bạn sống trong nhà riêng hay căn hộ?<br>\
 Tôi sống trong một ngôi nhà hai tầng với gia đình ở trung tâm thành phố/ngoại ô thành phố.<br>\
-<br>\
 2) Bạn thích điều gì khi sống ở đó?<br>\
 Tôi thích hầu hết các phòng đều hướng về phía nam, có nghĩa là chúng tôi có nhiều ánh sáng tự nhiên. Và vị trí rất thuận tiện vì tất cả các tiện nghi và dịch vụ đều chỉ cách vài phút đi bộ, có nghĩa là tôi có thể dễ dàng lấy bất cứ thứ gì mình cần chỉ trong vài phút.<br>\
-<br>\
 3) Phòng nào bạn thích nhất?<br>\
 [1] Tôi sẽ nói rằng đó là phòng khách vì đó là căn phòng rộng rãi nhất trong nhà, có một chiếc ghế sofa thoải mái và một chiếc bàn tròn lớn, nơi chúng tôi ăn tối mỗi tối. Đó là căn phòng mà cả gia đình tụ họp lại và chia sẻ những thăng trầm trong cuộc sống.<br>\
 [2]Tôi nghĩ rằng phòng khách là căn phòng yêu thích nhất trong nhà tôi vì chúng tôi có sáu thành viên.<br>\
 Chúng tôi dành nhiều thời gian cả ngày để làm việc và học tập.<br>\
 Vì vậy, tôi nghĩ rằng phòng khách là nơi các thành viên trong gia đình tôi có thể gần gũi nhau hơn và chúng tôi có thể dành thời gian cùng nhau xem chương trình truyền hình hoặc phim ảnh.<br>\
 Đây thực sự là khoảng thời gian vui vẻ sau một ngày dài làm việc hoặc học tập tồi tệ.<br>\
+4) Bạn có muốn chuyển đến một ngôi nhà khác trong tương lai không?<br>\
+Không, tôi không muốn chuyển đến một ngôi nhà khác trong tương lai vì tôi thực sự thích sống ở ngôi nhà hiện tại của mình. Chúng tôi cũng có rất nhiều kỷ niệm trong ngôi nhà này.<br>\
 <br>\
 Từ vựng<br>\
 (để) đắm mình vào thế giới của riêng mình<br>\
@@ -529,7 +513,7 @@ Sự tinh tế (danh từ)<br>\
 },
 {
 	date:"T2 07/10/2024",
-	title:"Pros and cons of tourism",
+	title:"Pros and Cons of tourism",
 	en:"Animals and plants<br>\
 - the ecosystem will be destroyed by tearing down mountains to build houses and<br>\
 roads<br>\
@@ -872,18 +856,10 @@ bác sĩ phẫu thuật"
 },
 {
 	date:"25/10/2024",
-	title:"[S] Color/Admired person",
-	en:"Describe a famous person you would like to meet.<br>\
-A celebrity that I'd be honored to meet is Taylor Swift. Swift is an acclaimed musician who has acquired a global reputation for numerous hits over the past 20 years. She is also widely known for her exceptional song-writing ability.<br>\
-I started listening to Taylor Swift's music since middle school. I've been a huge fan of hers ever since. I find her tunes incredibly catchy and have always admired her lyrical skills. Also, through watching numerous interviews and talk shows featuring Taylor, I've come to adore her calm and collected personality, which is why I'd love to be able to interact with her in person.<br>\
-Furthermore, Taylor Swift has long been my role model for many reasons.\
- She's not only a talented musician but also an independent and headstrong woman, who works hard to achieve her goals and fight for what she believes in.\
-  She never lets backlash and criticism get in the way of her success. It would be wonderful if I could simply chat with her over coffee about how she has overcome drawbacks in her career.\
-   I could learn a lot from that.<br>\
-<br><b>Hobbies: Like Sth</b><br>\
-I am keen on travelling<br>\
+	title:"[S] Color/Ideal room/Admired person",
+	en:"<b>Hobbies: Like Sth</b><br>\
+I am keen on/ fond of travelling<br>\
 I have a soft spot for travelling<br>\
-I am fond of travelling<br>\
 I am into travelling<br>\
 Travelling is my cup of tea<br>\
 <br>\
@@ -891,37 +867,53 @@ Travelling is my cup of tea<br>\
 Expand circle of friends<br>\
 Strengthen the family bonds<br>\
 Expand my horizons = broaden my knowledge<br>\
-Escape the hustle and bustle(n) trốn khỏi sự xô bồ<br>\
+Escape the hustle and bustle(n)<br>\
 Relax = unwind = blow off some steam<br>\
 reduce stress<br>\
 release stress<br>\
 <br>\
 <b>Colors vocabulary</b><br>\
-Monotones: đơn sắc<br>\
-Neutral colors: màu trung tính<br>\
-Pastel colors: màu phấn<br>\
-Minimalism(n): chủ nghĩa tối giản, minimalist (n)<br>\
-Shade (n): tông màu<br>\
-Instill (v) a sense of serenity/tranquility: mang lại cảm giác yên bình<br>\
+Monotones, Neutral colors, Pastel colors<br>\
+Minimalism(n), minimalist (n)<br>\
+Shade (n)<br>\
+Instill (v) a sense of serenity/tranquility:<br>\
 Bring me closer to the naturenature lover/enthusiast (n)<br>\
-Aesthetic (adj): thẩm mỹ 🡪 Sense of aesthetics: sự/khiếu thẩm mỹ<br>\
-Aesthetically pleasing (adj) thẩm mỹ dễ nhìn<br>\
+Aesthetic (a), a sense of aesthetics<br>\
+Aesthetically pleasing (a)\
 <br>\
-<br>\
-soothe my mind (v) = ease/ calm my mind: làm dịu tâm trí<br>\
+soothe my mind (v) = ease/ calm my mind<br>\
 (to) hurt my eyesight >< (be) pleasing to the eye<br>\
-(to) get on my nerves = annoy me: làm tôi khó chịu<br>\
-play a crucial/indispensable part/role in... : đóng một vai trò ko thể thiếu trog ...<br>\
-consider = take into account: xem xét<br>\
+(to) get on my nerves = annoy me<br>\
+play a crucial/indispensable part/role in...<br>\
+consider = take into account<br>\
 <br>\
-<b>STRUCTURE OF A 'DESCRIBE A PERSON' TOPIC</b><br>\
-Introduction (phần mở đầu)<br>\
-Personal information (thông tin cơ bản)<br>\
-Main ideas (ý chính)<br>\
-Feelings (cảm nhận)<br>\
-Ending (phần kết)<br>\
+<b>My ideal room:</b><br>\
+The bedroom of my dreams is large and light. It is coloured purple and white, because they are my favourite. I have a lot of things in my ideal bedroom. There is a dark wooden bed with drawers. The bed linen is white and purple too. Above the bed there are some shelves for books, flowers and tiny statuettes.<br>\
+In the centre of the room there is a purple carpet. Also I have a wardrobe and two chests of drawers. One of them is between the bed and wardrobe. It is for school stuff. Another one is opposite the wardrobe. There is my art stuff in it.<br>\
+Beside my bed there is a pink bean bag chair. I usually sit in the chair when I watch TV. I also have another chair in the bedroom. It is orange. There are a lot of cute toys all over it. I like to create something with my hands that's why I have a special table for handicrafts.\
+Also there is a music corner near the window. There is a guitar there and I want to learn how to play it. I have got two desks in my ideal room. One is for school and the other one is for art. I would really like to have a bedroom like that.<br>\
 <br>\
-1) INTRODUCTION<br>\
+<b>Describe about my mother</b><br>\
+My mother is one of the most important people in my life. She has been there for me since the day I was born, always loving, supporting, and caring for me.<br>\
+ My mother is a kind and compassionate person who always puts others before herself. She is a hard worker, and has always done everything she can to provide for our family.<br>\
+  Despite any obstacles that come her way, she always manages to keep a positive attitude and never gives up. One of the things I admire most about my mother is her strength.<br>\
+   She has faced many challenges in her life, but she always manages to come out stronger and more resilient.<br>\
+    She has taught me to never give up, and to always keep pushing forward, no matter what. My mother is also a wonderful role model.<br>\
+     She has always taught me the importance of honesty, kindness, and respect for others.<br>\
+      She is always willing to lend a helping hand, and has instilled in me a sense of responsibility to give back to the community.<br>\
+       I am so grateful to have such an amazing mother in my life. She has been my rock through thick and thin, and I know I can always count on her.<br>\
+ I hope to one day be able to show her just how much she means to me, and how much I appreciate all that she has done for me.<br>\
+ <br>\
+<b>Describe a famous person you would like to meet.</b><br>\
+A celebrity that I'd be honored to meet is Taylor Swift. Swift is an acclaimed musician who has acquired a global reputation for numerous hits over the past 20 years. She is also widely known for her exceptional song-writing ability.<br>\
+I started listening to Taylor Swift's music since middle school. I've been a huge fan of hers ever since. I find her tunes incredibly catchy and have always admired her lyrical skills. Also, through watching numerous interviews and talk shows featuring Taylor, I've come to adore her calm and collected personality, which is why I'd love to be able to interact with her in person.<br>\
+Furthermore, Taylor Swift has long been my role model for many reasons.<br>\
+ She's not only a talented musician but also an independent and headstrong woman, who works hard to achieve her goals and fight for what she believes in.<br>\
+  She never lets backlash and criticism get in the way of her success. It would be wonderful if I could simply chat with her over coffee about how she has overcome drawbacks in her career.<br>\
+   I could learn a lot from that.<br>\
+<b>Structure of a 'describe a person' topic</b><br>\
+Introduction, Personal information, Main ideas, Feelings, Ending<br>\
+1) Introduction<br>\
 I am going to talk about ... / I would like to tell you about ...<br>\
 <br>\
 When it comes to ...<br>\
@@ -932,7 +924,7 @@ my mom, who is an inspiring person to me<br>\
 my mom, who inspires me<br>\
 my mom, whom I admire the most<br>\
 <br>\
-2) PERSONAL INFORMATION + MAIN IDEAS<br>\
+2) Personal information + main ideas<br>\
 Age<br>\
 She/he is in her 20s/30s/teens<br>\
 She/ he is a middle-aged/ 40-year-old + N<br>\
@@ -940,29 +932,117 @@ Tips làm dài câu<br>\
 She is now in her mid 40s and she will turn 46 next year.<br>\
 Job<br>\
 He/ she is working as a/an ... at ...<br>\
-Tips làm dài câu<br>\
-Currently, she is working as a teacher at a secondary school near my house. Therefore, she has great discipline (kỷ luật).<br>\
+Tips for lengthening sentences<br>\
+Currently, she is working as a teacher at a secondary school near my house. Therefore, she has great discipline.<br>\
 <br>\
-Miêu tả chung về nhân vật: My recollection of the first time we met is very hazy (mơ hồ).<br>\
+General description of the character: My recollection of the first time we met is very hazy.<br>\
 But if my memory serves me right, we were classmates at ...<br>\
-Mô tả thêm về tính cách: Everyone around him/her knows that he/she is ... Plus, another special thing about him/her is that ...<br>\
-Mô tả ngoại hình: She was a good-looking girl, with dark eyes and ... hair.<br>\
-Kể về một kỷ niệm chung giữa bạn và người ấy: We've had so many unforgettable memories together, but to tell you about one, it would have to be ...<br>\
+More about personality: Everyone around him/her knows that he/she is ... Plus, another special thing about him/her is that ...<br>\
+Physical description: She was a good-looking girl, with dark eyes and ... hair.<br>\
+Tell about a shared memory between you and your partner: We've had so many unforgettable memories together, but to tell you about one, it would have to be ...<br>\
 <br>\
-3) FEELINGS (Cảm nhận cá nhân)<br>\
+3) Feelings<br>\
 It has been a while since I last met him/ her. And I definitely miss him/ her every day<br>\
 I hope I could meet him/ her in person in the near future<br>\
 It is going to be the best day of my life!<br>\
 He/ she is a role model for me. That's why I am striving for the best to become a person like her/ him.<br>\
 <br>\
 4) Ending <br>\
-Suggestion<br>\
 So well, if anyone asks me about the person ...<br>\
-I would tell them without any hesitation (không chút ngần ngại) about ..."
-,vi:"Mô tả một người nổi tiếng mà bạn muốn gặp.<br>\
-Một người nổi tiếng mà tôi rất vinh dự được gặp là Taylor Swift. Swift là một nhạc sĩ được ca ngợi, người đã đạt được danh tiếng toàn cầu với nhiều bản hit trong 20 năm qua. Cô cũng được biết đến rộng rãi với khả năng sáng tác nhạc đặc biệt của mình.<br>\
-Tôi bắt đầu nghe nhạc của Taylor Swift từ khi còn học trung học. Tôi đã là một người hâm mộ lớn của cô ấy kể từ đó. Tôi thấy giai điệu của cô ấy vô cùng hấp dẫn và luôn ngưỡng mộ kỹ năng viết lời của cô ấy. Ngoài ra, thông qua việc xem nhiều cuộc phỏng vấn và chương trình trò chuyện có sự góp mặt của Taylor, tôi đã trở nên ngưỡng mộ tính cách điềm tĩnh và điềm đạm của cô ấy, đó là lý do tại sao tôi rất muốn được tương tác trực tiếp với cô ấy.<br>\
-Hơn nữa, Taylor Swift từ lâu đã là hình mẫu của tôi vì nhiều lý do. Cô ấy không chỉ là một nhạc sĩ tài năng mà còn là một người phụ nữ độc lập và bướng bỉnh, người làm việc chăm chỉ để đạt được mục tiêu của mình và đấu tranh cho những gì cô ấy tin tưởng. Cô ấy không bao giờ để phản ứng dữ dội và chỉ trích cản trở thành công của mình. Sẽ thật tuyệt nếu tôi có thể trò chuyện với cô ấy qua tách cà phê về cách cô ấy vượt qua những bất lợi trong sự nghiệp của mình. Tôi có thể học được nhiều điều từ đó."
+I would tell them without any hesitation about ..."
+,vi:"<b>Sở thích: Giống như Sth</b><br>\
+Tôi thích/thích du lịch<br>\
+Tôi có sở thích du lịch<br>\
+Tôi thích du lịch<br>\
+Du lịch là sở thích của tôi<br>\
+<br>\
+<b>Lợi ích của sở thích</b><br>\
+Mở rộng vòng tròn bạn bè<br>\
+Củng cố mối quan hệ gia đình<br>\
+Mở rộng tầm nhìn = mở rộng kiến ​​thức<br>\
+Thoát khỏi sự hối hả và nhộn nhịp(n)<br>\
+Thư giãn = xả hơi = xả bớt căng thẳng<br>\
+giảm căng thẳng<br>\
+giải tỏa căng thẳng\
+<br>\
+<b>Từ vựng màu sắc</b><br>\
+Màu đơn sắc, màu trung tính, màu phấn<br>\
+Chủ nghĩa tối giản(n), tối giản (n)<br>\
+Bóng râm (n)<br>\
+Truyền cảm giác thanh thản/yên bình (v):<br>\
+Mang đến cho tôi gần gũi hơn với thiên nhiênngười yêu/người đam mê thiên nhiên (danh từ)<br>\
+Thẩm mỹ (a), cảm nhận về thẩm mỹ<br>\
+Có tính thẩm mỹ (a)\
+<br>\
+làm dịu tâm trí tôi (v) = làm dịu/làm dịu tâm trí tôi<br>\
+(làm) tổn thương thị lực của tôi >< (làm) dễ chịu cho mắt<br>\
+(làm) bực mình = làm phiền tôi<br>\
+đóng vai trò/phần quan trọng/không thể thiếu trong...<br>\
+xem xét = tính đến<br>\
+<br>\
+<b>Căn phòng lý tưởng:</b><br>\
+Căn phòng trong mơ của tôi rộng rãi và sáng sủa. Phòng có màu tím và trắng, vì đó là màu tôi thích nhất. Tôi có rất nhiều đồ trong căn phòng lý tưởng của mình. Có một chiếc giường gỗ sẫm màu có ngăn kéo. Ga trải giường cũng màu trắng và tím. Phía trên giường có một số giá để sách, hoa và tượng nhỏ.<br>\
+Ở giữa phòng có một tấm thảm màu tím. Tôi cũng có một tủ quần áo và hai tủ ngăn kéo. Một cái ở giữa giường và tủ quần áo. Nó để đựng đồ dùng học tập. Một cái khác ở đối diện tủ quần áo. Có đồ dùng nghệ thuật của tôi trong đó.<br>\
+Bên cạnh giường tôi có một chiếc ghế lười màu hồng. Tôi thường ngồi trên ghế khi xem TV. Tôi cũng có một chiếc ghế khác trong phòng ngủ. Nó màu cam. Có rất nhiều đồ chơi dễ thương trên đó. Tôi thích tạo ra thứ gì đó bằng tay của mình, đó là lý do tại sao tôi có một chiếc bàn đặc biệt để làm đồ thủ công.\
+Ngoài ra còn có một góc âm nhạc gần cửa sổ. Có một cây đàn ghi-ta ở đó và tôi muốn học cách chơi đàn. Tôi có hai chiếc bàn trong căn phòng lý tưởng của mình. Một cái để học và một cái để làm đồ nghệ thuật. Tôi thực sự muốn có một phòng ngủ như vậy.<br>\
+<br>\
+<b>Mô tả về mẹ</b><br>\
+Mẹ tôi là một trong những người quan trọng nhất trong cuộc đời tôi. Mẹ đã ở bên tôi kể từ ngày tôi chào đời, luôn yêu thương, ủng hộ và chăm sóc tôi.<br>\
+Mẹ tôi là một người tốt bụng và giàu lòng trắc ẩn, luôn đặt người khác lên trên bản thân mình. Mẹ là một người chăm chỉ và luôn làm mọi thứ có thể để chu cấp cho gia đình chúng tôi.<br>\
+Bất chấp mọi trở ngại, mẹ luôn cố gắng giữ thái độ tích cực và không bao giờ bỏ cuộc. Một trong những điều tôi ngưỡng mộ nhất ở mẹ là sức mạnh của mẹ.<br>\
+Mẹ đã phải đối mặt với nhiều thử thách trong cuộc sống, nhưng mẹ luôn cố gắng trở nên mạnh mẽ và kiên cường hơn.<br>\
+Mẹ đã dạy tôi không bao giờ bỏ cuộc và luôn tiến về phía trước, bất kể điều gì xảy ra. Mẹ tôi cũng là một hình mẫu tuyệt vời.<br>\
+Bà luôn dạy tôi tầm quan trọng của sự trung thực, lòng tốt và sự tôn trọng người khác.<br>\
+Bà luôn sẵn lòng giúp đỡ và truyền cho tôi ý thức trách nhiệm phải đền đáp cộng đồng.<br>\
+Tôi rất biết ơn khi có một người mẹ tuyệt vời như vậy trong cuộc đời mình. Bà luôn là chỗ dựa vững chắc của tôi trong mọi hoàn cảnh, và tôi biết mình luôn có thể tin tưởng vào bà.<br>\
+Tôi hy vọng một ngày nào đó có thể cho bà thấy bà có ý nghĩa như thế nào đối với tôi và tôi trân trọng tất cả những gì bà đã làm cho tôi.<br>\
+<br>\
+<b>Hãy mô tả một người nổi tiếng mà bạn muốn gặp.</b><br>\
+Một người nổi tiếng mà tôi rất vinh dự được gặp là Taylor Swift. Swift là một nhạc sĩ được ca ngợi và đã đạt được danh tiếng toàn cầu với nhiều bản hit trong 20 năm qua. Cô ấy cũng được biết đến rộng rãi với khả năng sáng tác nhạc đặc biệt của mình.<br>\
+Tôi bắt đầu nghe nhạc của Taylor Swift từ hồi trung học. Tôi đã là một người hâm mộ lớn của cô ấy kể từ đó. Tôi thấy giai điệu của cô ấy vô cùng hấp dẫn và luôn ngưỡng mộ kỹ năng viết lời của cô ấy. Ngoài ra, thông qua việc xem nhiều cuộc phỏng vấn và chương trình trò chuyện có sự góp mặt của Taylor, tôi đã trở nên ngưỡng mộ tính cách điềm tĩnh và điềm đạm của cô ấy, đó là lý do tại sao tôi rất muốn có thể tương tác trực tiếp với cô ấy.<br>\
+Hơn nữa, Taylor Swift từ lâu đã là hình mẫu của tôi vì nhiều lý do.<br>\
+Cô ấy không chỉ là một nhạc sĩ tài năng mà còn là một người phụ nữ độc lập và bướng bỉnh, người làm việc chăm chỉ để đạt được mục tiêu của mình và đấu tranh cho những gì cô ấy tin tưởng.<br>\
+Cô ấy không bao giờ để phản ứng dữ dội và chỉ trích cản trở thành công của mình. Sẽ thật tuyệt nếu tôi có thể trò chuyện với cô ấy qua tách cà phê về cách cô ấy vượt qua những trở ngại trong sự nghiệp của mình.<br>\
+Tôi có thể học được rất nhiều điều từ đó.<br>\
+<b>Cấu trúc của chủ đề 'mô tả một người'</b><br>\
+Introduction, Personal information, Main ideas, Feelings, Ending<br>\
+1) Giới thiệu<br>\
+Tôi sẽ nói về ... / Tôi muốn kể cho bạn nghe về ...<br>\
+<br>\
+Khi nói đến ...<br>\
+Nói về + N ... <br>\
+người đầu tiên xuất hiện trong tâm trí tôi là ...<br>\
+người đầu tiên xuất hiện trong tâm trí tôi là ...<br>\
+mẹ tôi, người truyền cảm hứng cho tôi<br>\
+mẹ tôi, người truyền cảm hứng cho tôi<br>\
+mẹ tôi, người mà tôi ngưỡng mộ nhất<br>\
+<br>\
+2) Thông tin cá nhân + ý chính<br>\
+Tuổi<br>\
+Cô ấy/anh ấy ở độ tuổi 20/30/thiếu niên<br>\
+Cô ấy/anh ấy ở độ tuổi trung niên/40 + N<br>\
+Mẹo làm dài câu<br>\
+Cô ấy hiện đang ở độ tuổi giữa 40 và sẽ bước sang tuổi 46 vào năm.<br>\
+Nghề nghiệp<br>\
+Anh ấy/cô ấy đang làm việc với tư cách là một/một ... tại ...<br>\
+Mẹo để kéo dài câu<br>\
+Hiện tại, cô ấy đang làm giáo viên tại một trường trung học gần nhà tôi. Do đó, cô ấy rất có kỷ luật.<br>\
+<br>\
+Mô tả chung về nhân vật: Ký ức của tôi về lần đầu tiên chúng tôi gặp nhau rất mơ hồ.<br>\
+Nhưng nếu trí nhớ của tôi không nhầm thì chúng tôi là bạn học cùng lớp tại ...<br>\
+Thông tin thêm về tính cách: Mọi người xung quanh anh ấy/cô ấy đều biết rằng anh ấy/cô ấy là ... Thêm vào đó, một điều đặc biệt nữa về anh ấy/cô ấy là ...<br>\
+Mô tả ngoại hình: Cô ấy là một cô gái xinh đẹp, có đôi mắt đen và ... mái tóc.<br>\
+Kể về một kỷ niệm chung giữa bạn và đối tác của bạn: Chúng tôi đã có rất nhiều kỷ niệm khó quên bên nhau, nhưng để kể cho bạn nghe về một kỷ niệm, thì đó phải là ...<br>\
+<br>\
+3) Cảm xúc<br>\
+Đã lâu rồi tôi không gặp anh ấy/cô ấy. Và tôi chắc chắn nhớ anh ấy/cô ấy mỗi ngày<br>\
+Tôi hy vọng tôi có thể gặp anh ấy/cô ấy ngoài đời trong tương lai gần<br>\
+Đó sẽ là ngày tuyệt vời nhất trong cuộc đời tôi!<br>\
+Anh ấy/cô ấy là hình mẫu của tôi. Đó là lý do tại sao tôi đang phấn đấu hết mình để trở thành một người như anh ấy/cô ấy.<br>\
+<br>\
+4) Kết thúc <br>\
+Được rồi, nếu ai hỏi tôi về người đó ...<br>\
+Tôi sẽ nói với họ mà không chút do dự về ..."
 	,voca:""
 }
 ,
@@ -1076,7 +1156,8 @@ Yêu cầu viết: Động vật và thực vật đang biến mất.<br>\
 - industrial (a)<br>\
 I come from ..., in Russia. It's a very modern, industrial city.<br>\
 Beautiful monuments <br>\
-2) - What else?<br>\
+2) Tips for lengthening sentences:<br>\
+- What else?<br>\
 - Let me think<br>\
 - How do I say this<br>\
 - Well, to be honest<br>\
@@ -1118,7 +1199,8 @@ Part 1: Accommodation (Lesson 6)."
 - công nghiệp (a)<br>\
 Tôi đến từ ..., ở Nga. Đây là một thành phố công nghiệp hiện đại.<br>\
 Những di tích tuyệt đẹp<br>\
-2) - Còn gì nữa?<br>\
+2) Tips làm dài câu<br>\
+- Còn gì nữa?<br>\
 - Để tôi nghĩ xem<br>\
 - Tôi nói thế nào nhỉ<br>\
 - Ờ, thành thật mà nói<br>\

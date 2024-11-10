@@ -1,8 +1,7 @@
 
 const ENGLAB_PRE_SLIDES = [
 {
-	unit:"Lesson 2.pptx",
-	title:"Holiday",
+	title:"[S]Holidays",
 	date:"",
 	en:"1) Yes, it's on September 2nd - also known as the Independence Day.<br>\
 - How: people celebrate this day with flags, fireworks, v.v <br>\
@@ -305,14 +304,13 @@ anh ấy có một trang web về môi trường và anh ấy muốn thay đổi
 },
 {
 	date:"T4.18/09/2024",
-	title:"Complete [3.Track19] & Describe a trip [Speaking]",
-	unit:"3",
+	title:"[S]Describe a journey you made in the past that you remember well",
 	en:"I went to Nui Thanh<br>\
 It was bought by my parents. I travelled with my friends, we went thru Tam ky and reached NT.<br>\
 We went to the beach and swam in the clear water, we ate seafood it was delicious but expensive,<br>\
 The good thing about the journey was that we had fun and happy moments. The bad thing was this trip was not safe, it took us about 2 hours to travel from my home to NT.<br>\
 I remember this trip because at the time, i met the girl who later became my girlfriend.<br>\
-Sample:<br>\
+<hr>\
 There are many heritage and splendid sights in Vietnam. Especially, Da Nang is one of the most popular places for both Vietnamese and foreign tourists.<br>\
  Da Nang includes sea, Son Tra island, mountains, and beautiful landscape. <br>\
  There are many interesting places such as Asia entertainment park, Ba Na hill, Hoi An ancient town, My Khe beach, museum of art, and famous bridges.<br>\
@@ -332,7 +330,7 @@ Nó được bố mẹ tôi mua. Tôi đi du lịch với bạn bè, chúng tôi
 Chúng tôi đã đến bãi biển và bơi trong làn nước trong vắt, chúng tôi đã ăn hải sản rất ngon nhưng đắt,<br>\
 Điểm tốt của chuyến đi là chúng tôi đã có những khoảnh khắc vui vẻ và hạnh phúc. Điểm xấu là chuyến đi này không an toàn, chúng tôi mất khoảng 2 giờ để đi từ nhà tôi đến NT.<br>\
 Tôi nhớ chuyến đi này vì lúc đó, tôi đã gặp cô gái sau này trở thành bạn gái của tôi.<br>\
-Ví dụ:<br>\
+<hr>\
 Có nhiều di sản và cảnh đẹp tuyệt vời ở Việt Nam. Đặc biệt, Đà Nẵng là một trong những địa điểm được cả khách du lịch Việt Nam và nước ngoài yêu thích nhất.<br>\
 Đà Nẵng bao gồm biển, đảo Sơn Trà, núi non và cảnh quan tuyệt đẹp. <br>\
 Có rất nhiều địa điểm thú vị như công viên giải trí Châu Á, đồi Bà Nà, phố cổ Hội An, bãi biển Mỹ Khê, bảo tàng nghệ thuật và những cây cầu nổi tiếng.<br>\
@@ -350,7 +348,6 @@ Do đó, Đà Nẵng được bình chọn là một trong những thành phố 
 },
 {
 	date:"T6.20/09/2024",
-	unit:"3",
 	title:"Complete[Freya Stark], Bridge [Meerkat - Teamwork]",
 	en:"Occupation (n) <br>\
 Flight (n), Expedition (n), Media (n)<br>\
@@ -448,7 +445,7 @@ on the outskirts = in the suburbs<br>\
 neighborhood, security, quiet, residential area<br>\
 <b>Countryside</b><br>\
 hills, fresh, peaceful, grass, breezy, beautiful.<br>\
-<br>\
+<hr>\
 1) Do you live in a house or an apartment?<br>\
 I live in a two-storey terraced house with my family which is located in the city centre/ on the outskirts of the city.<br>\
 2) What do you like about living there?<br>\
@@ -484,7 +481,7 @@ Cầu, Hoàng hôn, Tuyệt đẹp, Không khí<br>\
 khu phố, an ninh, yên tĩnh, khu dân cư<br>\
 <b>Nông thôn</b><br>\
 đồi, trong lành, yên bình, cỏ, gió mát, đẹp.<br>\
-<br>\
+<hr>\
 1) Bạn sống trong nhà riêng hay căn hộ?<br>\
 Tôi sống trong một ngôi nhà hai tầng với gia đình ở trung tâm thành phố/ngoại ô thành phố.<br>\
 2) Bạn thích điều gì khi sống ở đó?<br>\
@@ -604,18 +601,39 @@ The academic textbook was heavy-going because it requires lots of concentration 
 },
 {
 	date:"T6 11/10/2024",
-	title:"Describe a device you own which has improved your life",
+	title:"Describe a DEVICE && SPORT",
 	en:"I'm going to talk about my smartphone which is one of the most important gadgets in my life.<br>\
 Last year, on the occasion of my 16th birthday, my mother gave me a very precious gift, which is an iPhone 6s. I have used it both in study and entertainment every day.<br>\
 My smartphone is considered as one of my modern educational tools. Only with the phone connected to the Internet, I can access and surf webs to broaden my knowledge. For example, when there are lessons that I don't understand in class, I can use it to search for lectures and videos online, which is really helpful.<br>\
 Moreover, I can download a lot of games or books, music, movies and they are free. As a result, after tiring lessons, this will be a good way to relieve stress and get back my energy. For instance, when I do the housework with my mother, I regularly listen to my favorite songs. In addition, it helps me to keep in touch with my family and my friends. When I want to make contact with my classmates, I can text messages or make video calls and we can easily see each other's faces.<br>\
 In short, my phone has offered me a range of great benefits in my daily life. If I didn't have it, it would be difficult for me to contact my near and dear friends and family members.<br>\
-<br>Sport: pitch court course<br>\
+<hr>Sport: pitch court course<br>\
 Pitch: a field where outdoor competitive sports are played that use a ball, for example football, baseball, cricket, rugby, etc.<br>\
 The match between Barcelona and Betis was cancelled because the pitch was flooded with water.<br>\
 Court: an area marked with lines where sports are played (often indoors), such as basketball, squash, tennis, etc.<br>\
 The best tennis players prefer to play on grass courts rather than clay courts.<br>\
-<i>golf course, basketball court, badminton court, volleyball court, football pitch</i>"
+<i>golf course, basketball court, badminton court, volleyball court, football pitch</i><br>\
+<u>Sport</u><br>I would like to talk about my favorite sport, which is football, the king of sport to everyone in Vietnam. It's absolutely great!<br>\
+You can play it in so many places, inside, in a pitch or a stadium, or outside, in a park.<br>\
+The rules of football are really easy/simple. You play in teams of ... people. You have to kick the ball into the opponent's net.<br>\
+Players can use any part of their body except their hands and arms, although the goalkeeper is an exception as they can use their hands within the penalty area. The team with the most goals at the end of the match wins.<br>\
+I love this sport for several reasons: First, ... Second,... Last but not least, ..."
+,vi:"Tôi sẽ nói về chiếc điện thoại thông minh của mình, một trong những tiện ích quan trọng nhất trong cuộc sống của tôi.<br>\
+Năm ngoái, vào dịp sinh nhật lần thứ 16 của tôi, mẹ tôi đã tặng tôi một món quà rất quý giá, đó là một chiếc iPhone 6s. Tôi đã sử dụng nó cho cả mục đích học tập và giải trí hàng ngày.<br>\
+Điện thoại thông minh của tôi được coi là một trong những công cụ giáo dục hiện đại của tôi. Chỉ cần điện thoại được kết nối với Internet, tôi có thể truy cập và lướt web để mở rộng kiến ​​thức của mình. Ví dụ, khi có những bài học mà tôi không hiểu trong lớp, tôi có thể sử dụng nó để tìm kiếm các bài giảng và video trực tuyến, điều này thực sự hữu ích.<br>\
+Hơn nữa, tôi có thể tải xuống rất nhiều trò chơi hoặc sách, nhạc, phim và chúng hoàn toàn miễn phí. Do đó, sau những giờ học mệt mỏi, đây sẽ là một cách tốt để giải tỏa căng thẳng và lấy lại năng lượng. Ví dụ, khi tôi làm việc nhà với mẹ, tôi thường xuyên nghe những bài hát yêu thích của mình. Ngoài ra, nó giúp tôi giữ liên lạc với gia đình và bạn bè. Khi tôi muốn liên lạc với các bạn cùng lớp, tôi có thể nhắn tin hoặc gọi video và chúng tôi có thể dễ dàng nhìn thấy khuôn mặt của nhau.<br>\
+Tóm lại, điện thoại đã mang lại cho tôi nhiều lợi ích tuyệt vời trong cuộc sống hàng ngày. Nếu không có nó, tôi sẽ khó có thể liên lạc với những người bạn thân thiết và gia đình.<br>\
+<hr>Thể thao: sân bóng chày<br>\
+Sân bóng chày: sân chơi các môn thể thao ngoài trời có sử dụng bóng, ví dụ như bóng đá, bóng chày, cricket, bóng bầu dục, v.v.<br>\
+Trận đấu giữa Barcelona và Betis đã bị hủy vì sân bị ngập nước.<br>\
+Sân bóng chày: khu vực được đánh dấu bằng các đường kẻ nơi diễn ra các môn thể thao (thường là trong nhà), chẳng hạn như bóng rổ, bóng quần, quần vợt, v.v.<br>\
+Những người chơi quần vợt giỏi nhất thích chơi trên sân cỏ hơn là sân đất nện.<br>\
+<i>sân golf, sân bóng rổ, sân cầu lông, sân bóng chuyền, sân bóng đá</i><br>\
+<u>Thể thao</u><br>Tôi muốn nói về môn thể thao yêu thích của mình, đó là bóng đá, môn thể thao vua đối với mọi người ở Việt Nam. Nó thực sự tuyệt vời!<br>\
+Bạn có thể chơi ở rất nhiều nơi, trong nhà, trên sân bóng chày hoặc sân vận động, hoặc ngoài trời, trong một park.<br>\
+Luật chơi bóng đá thực sự dễ/đơn giản. Bạn chơi theo đội gồm... người. Bạn phải đá bóng vào lưới của đối phương.<br>\
+Cầu thủ có thể sử dụng bất kỳ bộ phận nào trên cơ thể ngoại trừ tay và cánh tay, mặc dù thủ môn là một ngoại lệ vì họ có thể sử dụng tay trong vòng cấm. Đội ghi được nhiều bàn thắng nhất vào cuối trận sẽ thắng.<br>\
+Tôi thích môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ..."
 	,voca:"Moreover,In short,As a result,For instance,pitch,court,course,precious,broaden,relieve,range,In addition,entertainment",
 },
 {
@@ -724,13 +742,8 @@ So"
 },
 {
 	date:"18/10/2024",
-	title:"[S] Sport && Area of Natural beauty ",
-	en:"<u>Sport</u><br>I would like to talk about my favorite sport, which is football, the king of sport to everyone in Vietnam. It's absolutely great!<br>\
-You can play it in so many places, inside, in a pitch or a stadium, or outside, in a park.<br>\
-The rules of football are really easy/simple. You play in teams of ... people. You have to kick the ball into the opponent's net.<br>\
-Players can use any part of their body except their hands and arms, although the goalkeeper is an exception as they can use their hands within the penalty area. The team with the most goals at the end of the match wins.<br>\
-I love this sport for several reasons: First, ... Second,... Last but not least, ...<br>\
-<u>Area of natural beauty</u><br>\
+	title:"[S]Area of Natural beauty ",
+	en:"<u>Area of natural beauty</u><br>\
 One special place of natural beauty that I would like to talk about is Ha Long Bay. Ha Long Bay is located in the northern part of Vietnam, in Quang Ninh province. It is famous for its stunning limestone islands that rise out of the emerald-green water. The bay has thousands of small islands, some with caves and beaches, and the scenery is really breathtaking.<br>\
 <br>\
 I have been to Ha Long Bay once, during a family trip. We took a boat tour around the bay and stopped at some of the islands to explore the caves. The water was calm, and the atmosphere was peaceful. I remember how quiet and beautiful it was, with the sun setting behind the rocks, making everything glow.<br>\
@@ -738,22 +751,13 @@ I have been to Ha Long Bay once, during a family trip. We took a boat tour aroun
 Ha Long Bay is special to me because of its natural beauty and how peaceful it felt. It's also a place where I felt really connected to nature. Being there made me feel relaxed and happy.\
  It's a perfect place to escape from the busy city life and enjoy something truly unique.<br>\
 <b>Voca</b><br>\
-spectacular<br>\
+spectacular, breathtaking<br>\
 majestic<br>\
 serene<br>\
 incrediblec<br>\
-fantastic<br>\
-mavelous<br>\
-wonderful<br>\
-magnificent <br>\
-stunning<br>\
-breathtaking"
-,vi:"<u>Thể thao</u><br>Tôi muốn nói về môn thể thao yêu thích của tôi, đó là bóng đá, môn thể thao vua đối với mọi người ở Việt Nam. Nó thực sự tuyệt vời!<br>\
-Bạn có thể chơi ở rất nhiều nơi, trong nhà, trên sân cỏ hoặc sân vận động, hoặc ngoài trời, trong công viên.<br>\
-Luật chơi bóng đá thực sự dễ dàng/đơn giản. Bạn chơi theo đội gồm... người. Bạn phải đá bóng vào lưới của đối phương.<br>\
-Cầu thủ có thể sử dụng bất kỳ bộ phận nào trên cơ thể ngoại trừ bàn tay và cánh tay, mặc dù thủ môn là một ngoại lệ vì họ có thể sử dụng tay trong vòng cấm. Đội ghi được nhiều bàn thắng nhất vào cuối trận đấu sẽ giành chiến thắng.<br>\
-Tôi yêu môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ...<br>\
-<u>Khu vực có vẻ đẹp thiên nhiên</u><br>\
+fantastic, mavelous, wonderful, magnificent, stunning<br>\
+"
+,vi:"<u>Khu vực có vẻ đẹp thiên nhiên</u><br>\
 Một địa điểm có vẻ đẹp thiên nhiên đặc biệt mà tôi muốn nói đến là Vịnh Hạ Long. Vịnh Hạ Long nằm ở phía bắc Việt Nam, thuộc tỉnh Quảng Ninh. Nơi đây nổi tiếng với những hòn đảo đá vôi tuyệt đẹp nhô lên từ mặt nước xanh ngọc lục bảo. Vịnh có hàng ngàn hòn đảo nhỏ, một số có hang động và bãi biển, và phong cảnh thực sự ngoạn mục.<br>\
 <br>\
 Tôi đã đến Vịnh Hạ Long một lần, trong một chuyến đi gia đình. Chúng tôi đi thuyền quanh vịnh và dừng lại ở một số hòn đảo để khám phá các hang động. Mặt nước êm đềm và bầu không khí trong lành. Tôi nhớ nơi đây yên tĩnh và đẹp như thế nào, với cảnh mặt trời lặn sau những tảng đá, làm mọi thứ trở nên rực rỡ.<br>\
@@ -764,14 +768,10 @@ Vịnh Hạ Long đặc biệt đối với tôi vì vẻ đẹp tự nhiên và
 ngoạn mục<br>\
 vĩ đại<br>\
 thanh thản<br>\
-incrediblec<br>\
+đáng kinh ngạc<br>\
 tuyệt vời<br>\
 mavelous<br>\
-tuyệt vời<br>\
-tuyệt vời<br>\
-tuyệt vời<br>\
-tuyệt đẹp<br>\
-ngoạn mục"
+tuyệt đẹp"
 ,voca:"",
 },
 {
@@ -871,7 +871,7 @@ Escape the hustle and bustle(n)<br>\
 Relax = unwind = blow off some steam<br>\
 reduce stress<br>\
 release stress<br>\
-<br>\
+<hr>\
 <b>Colors vocabulary</b><br>\
 Monotones, Neutral colors, Pastel colors<br>\
 Minimalism(n), minimalist (n)<br>\
@@ -887,9 +887,14 @@ soothe my mind (v) = ease/ calm my mind<br>\
 play a crucial/indispensable part/role in...<br>\
 consider = take into account<br>\
 <br>\
+<b>My favorite colors:</b><br>\
+- My favorite color is blue. There's just something calming and serene about it. Whether it's the sky or the ocean, blue always resonates with me. Plus, it pairs well with many other colors, making it versatile and appealing in various contexts<br>\
+- Oh, yes! Blue happens to be my favorite color, so I often find myself wearing clothes in various shades of blue. Whether it's a shirt, dress, or accessory, I'm drawn to this color. It just feels right and resonates with my personal style<br>\
+- In our country, certain colors indeed hold special significance. For instance, red symbolizes luck and happiness, often worn during celebrations. Yellow represents royalty and prosperity, while white is associated with purity and mourning. These colors play a meaningful role in our traditions, festivities, and cultural expressions.<br>\
+ <hr>\
 <b>My ideal room:</b><br>\
-The bedroom of my dreams is large and light. It is coloured purple and white, because they are my favourite. I have a lot of things in my ideal bedroom. There is a dark wooden bed with drawers. The bed linen is white and purple too. Above the bed there are some shelves for books, flowers and tiny statuettes.<br>\
-In the centre of the room there is a purple carpet. Also I have a wardrobe and two chests of drawers. One of them is between the bed and wardrobe. It is for school stuff. Another one is opposite the wardrobe. There is my art stuff in it.<br>\
+The bedroom of my dreams is large and light. It is coloured blue and white, because they are my favourite. I have a lot of things in my ideal bedroom. There is a dark wooden bed with drawers. The bed linen is white and blue too. Above the bed there are some shelves for books, flowers and tiny statuettes.<br>\
+In the centre of the room there is a blue carpet. Also I have a wardrobe and two chests of drawers. One of them is between the bed and wardrobe. It is for school stuff. Another one is opposite the wardrobe. There is my art stuff in it.<br>\
 Beside my bed there is a pink bean bag chair. I usually sit in the chair when I watch TV. I also have another chair in the bedroom. It is orange. There are a lot of cute toys all over it. I like to create something with my hands that's why I have a special table for handicrafts.\
 Also there is a music corner near the window. There is a guitar there and I want to learn how to play it. I have got two desks in my ideal room. One is for school and the other one is for art. I would really like to have a bedroom like that.<br>\
 <br>\
@@ -904,7 +909,7 @@ My mother is one of the most important people in my life. She has been there for
        I am so grateful to have such an amazing mother in my life. She has been my rock through thick and thin, and I know I can always count on her.<br>\
  I hope to one day be able to show her just how much she means to me, and how much I appreciate all that she has done for me.<br>\
  <br>\
-<b>Describe a famous person you would like to meet.</b><br>\
+<b>Describe a famous person you would like to meet</b><br>\
 A celebrity that I'd be honored to meet is Taylor Swift. Swift is an acclaimed musician who has acquired a global reputation for numerous hits over the past 20 years. She is also widely known for her exceptional song-writing ability.<br>\
 I started listening to Taylor Swift's music since middle school. I've been a huge fan of hers ever since. I find her tunes incredibly catchy and have always admired her lyrical skills. Also, through watching numerous interviews and talk shows featuring Taylor, I've come to adore her calm and collected personality, which is why I'd love to be able to interact with her in person.<br>\
 Furthermore, Taylor Swift has long been my role model for many reasons.<br>\
@@ -927,7 +932,7 @@ my mom, whom I admire the most<br>\
 2) Personal information + main ideas<br>\
 Age<br>\
 She/he is in her 20s/30s/teens<br>\
-She/ he is a middle-aged/ 40-year-old + N<br>\
+She/he is a middle-aged/ 40-year-old + N<br>\
 Tips làm dài câu<br>\
 She is now in her mid 40s and she will turn 46 next year.<br>\
 Job<br>\
@@ -963,8 +968,8 @@ Mở rộng tầm nhìn = mở rộng kiến ​​thức<br>\
 Thoát khỏi sự hối hả và nhộn nhịp(n)<br>\
 Thư giãn = xả hơi = xả bớt căng thẳng<br>\
 giảm căng thẳng<br>\
-giải tỏa căng thẳng\
-<br>\
+giải tỏa căng thẳng<br>\
+<hr>\
 <b>Từ vựng màu sắc</b><br>\
 Màu đơn sắc, màu trung tính, màu phấn<br>\
 Chủ nghĩa tối giản(n), tối giản (n)<br>\
@@ -980,6 +985,11 @@ làm dịu tâm trí tôi (v) = làm dịu/làm dịu tâm trí tôi<br>\
 đóng vai trò/phần quan trọng/không thể thiếu trong...<br>\
 xem xét = tính đến<br>\
 <br>\
+<b>Màu sắc yêu thích của tôi:</b><br>\
+- Màu sắc yêu thích của tôi là màu xanh lam. Nó có chút gì đó bình yên và thanh thản. Dù là bầu trời hay đại dương, màu xanh lam luôn cộng hưởng với tôi. Thêm vào đó, nó kết hợp tốt với nhiều màu sắc khác, khiến nó trở nên linh hoạt và hấp dẫn trong nhiều bối cảnh khác nhau<br>\
+- Ồ, vâng! Màu xanh lam tình cờ là màu yêu thích của tôi, vì vậy tôi thường thấy mình mặc quần áo có nhiều sắc thái xanh lam khác nhau. Cho dù đó là áo sơ mi, váy hay phụ kiện, tôi đều bị thu hút bởi màu này. Nó chỉ cảm thấy phù hợp và cộng hưởng với phong cách cá nhân của tôi<br>\
+- Ở đất nước chúng tôi, một số màu sắc thực sự có ý nghĩa đặc biệt. Ví dụ, màu đỏ tượng trưng cho may mắn và hạnh phúc, thường được mặc trong các lễ kỷ niệm. Màu vàng tượng trưng cho hoàng gia và thịnh vượng, trong khi màu trắng gắn liền với sự trong trắng và tang tóc. Những màu sắc này đóng vai trò có ý nghĩa trong các truyền thống, lễ hội và biểu hiện văn hóa của chúng tôi<br>\
+<hr>\
 <b>Căn phòng lý tưởng:</b><br>\
 Căn phòng trong mơ của tôi rộng rãi và sáng sủa. Phòng có màu tím và trắng, vì đó là màu tôi thích nhất. Tôi có rất nhiều đồ trong căn phòng lý tưởng của mình. Có một chiếc giường gỗ sẫm màu có ngăn kéo. Ga trải giường cũng màu trắng và tím. Phía trên giường có một số giá để sách, hoa và tượng nhỏ.<br>\
 Ở giữa phòng có một tấm thảm màu tím. Tôi cũng có một tủ quần áo và hai tủ ngăn kéo. Một cái ở giữa giường và tủ quần áo. Nó để đựng đồ dùng học tập. Một cái khác ở đối diện tủ quần áo. Có đồ dùng nghệ thuật của tôi trong đó.<br>\
@@ -997,7 +1007,7 @@ Bà luôn sẵn lòng giúp đỡ và truyền cho tôi ý thức trách nhiệm
 Tôi rất biết ơn khi có một người mẹ tuyệt vời như vậy trong cuộc đời mình. Bà luôn là chỗ dựa vững chắc của tôi trong mọi hoàn cảnh, và tôi biết mình luôn có thể tin tưởng vào bà.<br>\
 Tôi hy vọng một ngày nào đó có thể cho bà thấy bà có ý nghĩa như thế nào đối với tôi và tôi trân trọng tất cả những gì bà đã làm cho tôi.<br>\
 <br>\
-<b>Hãy mô tả một người nổi tiếng mà bạn muốn gặp.</b><br>\
+<b>Hãy mô tả một người nổi tiếng mà bạn muốn gặp</b><br>\
 Một người nổi tiếng mà tôi rất vinh dự được gặp là Taylor Swift. Swift là một nhạc sĩ được ca ngợi và đã đạt được danh tiếng toàn cầu với nhiều bản hit trong 20 năm qua. Cô ấy cũng được biết đến rộng rãi với khả năng sáng tác nhạc đặc biệt của mình.<br>\
 Tôi bắt đầu nghe nhạc của Taylor Swift từ hồi trung học. Tôi đã là một người hâm mộ lớn của cô ấy kể từ đó. Tôi thấy giai điệu của cô ấy vô cùng hấp dẫn và luôn ngưỡng mộ kỹ năng viết lời của cô ấy. Ngoài ra, thông qua việc xem nhiều cuộc phỏng vấn và chương trình trò chuyện có sự góp mặt của Taylor, tôi đã trở nên ngưỡng mộ tính cách điềm tĩnh và điềm đạm của cô ấy, đó là lý do tại sao tôi rất muốn có thể tương tác trực tiếp với cô ấy.<br>\
 Hơn nữa, Taylor Swift từ lâu đã là hình mẫu của tôi vì nhiều lý do.<br>\

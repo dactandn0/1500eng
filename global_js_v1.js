@@ -188,7 +188,7 @@ function processStory (story, isAlert = true) {
 
 
 	var kBrTag = '<br>'
-	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*<br>)|(\?*\s*<br>)|('*\s*<br>)|("*\s*<br>)|[\.]+|\!|\?'")/gi
+	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
 	var enAndVi = ''
 	var viii = ''
 	var sentencesEn = enShow.match(rgSen);
@@ -200,15 +200,19 @@ function processStory (story, isAlert = true) {
 		for (var i = 0; i < sentencesEn.length; i++) {
 			var enSen = sentencesEn[i]
 			var viSen = sentencesVi[i]
-			if (viSen && viSen.trim()!=='<br>' && viSen.trim()!=='<hr>') {
+			if (viSen)
+			{
 				var rep = viSen.trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '')
-				if (rep.length > 1 ) {
+				{
+					rep = rep.replace(/<\/*(b>)/,'');  // don't bold text in Vietnamese
 					viii = '(' + rep + ')'
 					if (viii.indexOf(kBrTag)!==-1) {
 						viii = viii.replace(kBrTag,'');
 						viii += kBrTag
 					}
 				}
+				if (viii.indexOf('()')!==-1) viii=viii.replace('()','')
+				if (viii.indexOf('(<hr>)')!==-1) viii=''
 				if (enSen.indexOf(kBrTag)!==-1) {
 					enSen = enSen.replace(kBrTag,'');
 				}

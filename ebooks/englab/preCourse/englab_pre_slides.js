@@ -29,8 +29,12 @@ const ENGLAB_PRE_SLIDES = [
 	- When it takes place?<br>\
 	- What people do during this holiday?<br>\
 	- What you feel about this holiday?<br>\
+	<hr>\<b>Does your country celebrate a national day? If so, when and how?</b><br>\
+September 2 is known as the National Day in Vietnam, which is a significant annual holiday commemorating the day that President Ho Chi Minh read the Declaration of Independence at Ba Dinh Square, Hanoi. There are many activities that take place on 2nd September, such as pParades and ceremonies, fireworks displays, family gatherings and traveling.<br>\
+<b>Do you think that national days are important? Why?/Why not?</b><br>\
+Vietnam National Day September 2, 1945 is the birth day of Vietnam. This is considered a great national festival, marking a great turning point and success in Vietnamese history.<br>\
 	<hr>\
-	Sample:<br>\
+	[Lunar New Year]:<br>\
 	In Vietnam, Tet, the Lunar New Year, usually takes place in late January or early February. It's a time when families come together to celebrate and welcome the upcoming year. Tet has been celebrated for generations, and it holds cultural and traditional significance for the Vietnamese people.<br>\
 	The festival takes place to mark the beginning of the new lunar calendar year. During Tet, families clean and decorate their homes, and there's a strong emphasis on traditional customs. People visit temples and pagodas to pray for good luck and prosperity. Traditional foods like Vietnamese square sticky rice cake and Pork paste are commonly prepared and shared among family members.<br>\
 	People do various things during Tet, such as spending time with family, enjoying festive meals, and participating in community events. Fireworks are also a common part of the celebrations.<br>\
@@ -62,7 +66,12 @@ const ENGLAB_PRE_SLIDES = [
 	- Mọi người làm gì trong ngày lễ?<br>\
 	- Bạn cảm thấy thế nào về ngày lễ này?<br>\
 	<hr>\
-	Sample:<br>\
+	<b>Quốc gia của bạn có tổ chức ngày quốc khánh không? Nếu có, khi nào và như thế nào?</b><br>\
+Ngày 2 tháng 9 được gọi là Ngày Quốc khánh ở Việt Nam, là ngày lễ quan trọng hàng năm kỷ niệm ngày Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội. Có rất nhiều hoạt động diễn ra vào ngày 2 tháng 9, chẳng hạn như diễu hành và nghi lễ, bắn pháo hoa, họp mặt gia đình và du lịch.<br>\
+<b>Bạn có nghĩ rằng ngày quốc khánh là quan trọng không? Tại sao?/Tại sao không?</b><br>\
+Ngày Quốc khánh Việt Nam 2 tháng 9 năm 1945 là ngày khai sinh của Việt Nam. Đây được coi là ngày lễ lớn của quốc gia, đánh dấu bước ngoặt và thành công to lớn trong lịch sử Việt Nam.<br>\
+	<hr>\
+	[Tết Nguyên đán]:<br>\
 	Ở Việt Nam, Tết, Tết Nguyên đán, thường diễn ra vào cuối tháng 1 hoặc đầu tháng 2. Đây là thời điểm các gia đình sum họp để ăn mừng và chào đón năm mới. Tết đã được tổ chức qua nhiều thế hệ và có ý nghĩa văn hóa và truyền thống đối với người Việt Nam.<br>\
 	Lễ hội diễn ra để đánh dấu sự khởi đầu của năm âm lịch mới. Trong dịp Tết, các gia đình dọn dẹp và trang trí nhà cửa, và có sự nhấn mạnh mạnh mẽ vào các phong tục truyền thống. Mọi người đến thăm các đền chùa để cầu may mắn và thịnh vượng. Các món ăn truyền thống như bánh chưng Việt Nam và chả giò thường được chuẩn bị và chia sẻ giữa các thành viên trong gia đình.<br>\
 	Mọi người làm nhiều việc khác nhau trong dịp Tết, chẳng hạn như dành thời gian cho gia đình, thưởng thức các bữa ăn lễ hội và tham gia các sự kiện cộng đồng. Pháo hoa cũng là một phần phổ biến của lễ kỷ niệm.<br>\
@@ -902,11 +911,24 @@ const ENGLAB_PRE_SLIDES = [
 	(to) get on my nerves = annoy me<br>\
 	play a/an [crucial/indispensable] [part/role] in...<br>\
 	consider = take into account<br>\
-	<br>\
+	<hr>\
+	<b>1. Do you come from a large family or a small family?</b><br>\
+- Well, I come from a small/large family which is a nuclear/extended one. There are... people in my family including...<br>\
+<b>2. As a child, who did you spend more time with: your family or your friends? Why? </b><br>\
+- I spent more time with... as a child, because...<br>\
+<b>3. When you were a child, how did you spend your weekends? </b><br>\
+- If my memories serve me right, when I was a kid, I used to + V.<br>\
+<br>\
 	<b>My favorite colors:</b><br>\
 	- My favorite color is blue. There's just something calming and serene about it. Whether it's the sky or the ocean, blue always resonates with me. Plus, it pairs well with many other colors, making it versatile and appealing in various contexts<br>\
 	- Oh, yes! Blue happens to be my favorite color, so I often find myself wearing clothes in various shades of blue. Whether it's a shirt, dress, or accessory, I'm drawn to this color. It just feels right and resonates with my personal style<br>\
 	- In our country, certain colors indeed hold special significance. For instance, red symbolizes luck and happiness, often worn during celebrations. Yellow represents royalty and prosperity, while white is associated with purity and mourning. These colors play a meaningful role in our traditions, festivities, and cultural expressions.<br>\
+	<b>What color would you like to paint your bedroom? Why?</b><br>\
+I would have my future house painted with white as it may make my house a lot larger. This color also brings me coziness and a sense of security as well. Also, blue is definitely not a bad choice as who doesn’t want their living space to be close to nature?<br>\
+<b>What color do you dislike?</b><br>\
+I'm not fond of yellow and red. because they are too flashy and gaudy. In terms of fashion, it is really hard to put on red or yellow items, unless you are extremely gorgeous.<br>\
+<b>Is color very important to you when you are buying something?</b><br>\
+Yes. I do think that color is one of the influential factors whenever I make a purchase. For instance, every single time I go shopping for some clothes, I tend to go for light-colored ones because they make me look younger.<br>\
 	<hr>\
 	<b>My ideal room:</b><br>\
 	The bedroom of my dreams is large and light. It is coloured blue and white, because they are my favourite. I have a lot of things in my ideal bedroom. There is a dark wooden bed with drawers. The bed linen is white and blue too. Above the bed there are some shelves for books, flowers and tiny statuettes.<br>\
@@ -1000,11 +1022,24 @@ const ENGLAB_PRE_SLIDES = [
 	(làm) bực mình = làm phiền tôi<br>\
 	đóng vai trò/phần quan trọng/không thể thiếu trong...<br>\
 	xem xét = tính đến<br>\
-	<br>\
+	<hr>\
+	<b>1. Bạn xuất thân từ một gia đình lớn hay nhỏ?</b><br>\
+- Vâng, tôi xuất thân từ một gia đình nhỏ/lớn, tức là một gia đình hạt nhân/mở rộng. Có... những người trong gia đình tôi bao gồm...<br>\
+<b>2. Khi còn nhỏ, bạn dành nhiều thời gian hơn với ai: gia đình hay bạn bè? Tại sao? </b><br>\
+- Tôi dành nhiều thời gian hơn với... khi còn nhỏ, bởi vì...<br>\
+<b>3. Khi còn nhỏ, bạn đã dành những ngày cuối tuần của mình như thế nào? </b><br>\
+- Nếu trí nhớ của tôi không nhầm thì khi còn nhỏ, tôi thường + V.<br>\
+<br>\
 	<b>Màu sắc yêu thích của tôi:</b><br>\
 	- Màu sắc yêu thích của tôi là màu xanh lam. Nó có chút gì đó bình yên và thanh thản. Dù là bầu trời hay đại dương, màu xanh lam luôn cộng hưởng với tôi. Thêm vào đó, nó kết hợp tốt với nhiều màu sắc khác, khiến nó trở nên linh hoạt và hấp dẫn trong nhiều bối cảnh khác nhau<br>\
 	- Ồ, vâng! Màu xanh lam tình cờ là màu yêu thích của tôi, vì vậy tôi thường thấy mình mặc quần áo có nhiều sắc thái xanh lam khác nhau. Cho dù đó là áo sơ mi, váy hay phụ kiện, tôi đều bị thu hút bởi màu này. Nó chỉ cảm thấy phù hợp và cộng hưởng với phong cách cá nhân của tôi<br>\
 	- Ở đất nước chúng tôi, một số màu sắc thực sự có ý nghĩa đặc biệt. Ví dụ, màu đỏ tượng trưng cho may mắn và hạnh phúc, thường được mặc trong các lễ kỷ niệm. Màu vàng tượng trưng cho hoàng gia và thịnh vượng, trong khi màu trắng gắn liền với sự trong trắng và tang tóc. Những màu sắc này đóng vai trò có ý nghĩa trong các truyền thống, lễ hội và biểu hiện văn hóa của chúng tôi<br>\
+	<b>Bạn muốn sơn phòng ngủ của mình màu gì? Tại sao?</b><br>\
+Tôi muốn sơn ngôi nhà tương lai của mình màu trắng vì nó có thể khiến ngôi nhà của tôi rộng hơn nhiều. Màu này cũng mang lại cho tôi sự ấm cúng và cảm giác an toàn. Ngoài ra, màu xanh chắc chắn không phải là lựa chọn tồi vì ai lại không muốn không gian sống của mình gần gũi với thiên nhiên chứ?<br>\
+<b>Bạn không thích màu gì?</b><br>\
+Tôi không thích màu vàng và đỏ vì chúng quá lòe loẹt và lòe loẹt. Về mặt thời trang, thực sự rất khó để mặc đồ màu đỏ hoặc vàng, trừ khi bạn cực kỳ xinh đẹp.<br>\
+<b>Màu sắc có thực sự quan trọng với bạn khi mua thứ gì đó không?</b><br>\
+Có. Tôi nghĩ rằng màu sắc là một trong những yếu tố ảnh hưởng đến quyết định mua hàng của tôi. Ví dụ, mỗi lần đi mua quần áo, tôi thường chọn những bộ quần áo sáng màu vì chúng khiến tôi trông trẻ hơn.<br>\
 	<hr>\
 	<b>Căn phòng lý tưởng:</b><br>\
 	Căn phòng trong mơ của tôi rộng rãi và sáng sủa. Phòng có màu tím và trắng, vì đó là màu tôi thích nhất. Tôi có rất nhiều đồ trong căn phòng lý tưởng của mình. Có một chiếc giường gỗ sẫm màu có ngăn kéo. Ga trải giường cũng màu trắng và tím. Phía trên giường có một số giá để sách, hoa và tượng nhỏ.<br>\

@@ -216,7 +216,8 @@ T: Yes, definitely it goes on for a long time and gets a bit technical.<br>\
 F: Sure, er... OK. After the process, I want to talk about the pros and cons of desalination, because that seems to be the big debate.<br>\
 T: I totally agree. But you need to sort this section out.<br>\
 F: Yes, it is a bit confusing.<br>\
-T: I think you should present the main points one at a time. F OK what, er, the advantages and disadvantages?<br>\
+T: I think you should present the main points one at a time.<br>\
+F: OK what, er, the advantages and disadvantages?<br>\
 T: Yes, and talk about each one individually.<br>\
 F: OK - rather than presenting them all together?<br>\
 T: Mmm - it's hard for your listeners to take in like that. It's all a bit unclear at the moment.<br>\
@@ -228,7 +229,7 @@ F: I will in the previous section.<br>\
 T: Mmm, but you need to summarise the reasons again in the final part of your presentation.<br>\
 F: Oh, I see. Right... I'll mention them briefly, then.<br>\
 T: Just a list will do. That'll make the conclusion a better length as well."
-	,vi:"T: Vậy, Fahad, chúng ta hãy nói về bài thuyết trình của bạn. Ừm, bạn đã phác thảo sơ bộ, vậy thì, ừm, chúng ta hãy xem qua và sau đó bạn có thể đi và viết tất cả lên.<br>\
+,vi:"T: Vậy, Fahad, chúng ta hãy nói về bài thuyết trình của bạn. Ừm, bạn đã phác thảo sơ bộ, vậy thì, ừm, chúng ta hãy xem qua và sau đó bạn có thể đi và viết tất cả lên.<br>\
 F: Chắc chắn rồi.<br>\
 T: Tôi đã yêu cầu bạn chọn một chủ đề liên quan đến nước, và bạn đã chọn khử muối - loại bỏ muối khỏi nước biển. Bây giờ, tại sao bạn lại chọn chủ đề đó?<br>\
 F: Vâng, tôi đến từ Các Tiểu vương quốc Ả Rập Thống nhất và chúng tôi có nhà máy khử muối lớn nhất thế giới.<br>\
@@ -256,7 +257,8 @@ T: Vâng, chắc chắn là nó kéo dài trong một thời gian dài và trở
 F: Chắc chắn, ừm... OK. Sau quá trình này, tôi muốn nói về ưu và nhược điểm của quá trình khử muối, vì đó có vẻ là cuộc tranh luận lớn.<br>\
 T: Tôi hoàn toàn đồng ý. Nhưng bạn cần sắp xếp phần này lại.<br>\
 F: Vâng, nó hơi khó hiểu.<br>\
-T: Tôi nghĩ bạn nên trình bày từng điểm chính một. F OK, ừm, ưu điểm và nhược điểm là gì?<br>\
+T: Tôi nghĩ bạn nên trình bày từng điểm chính một.<br>\
+F: OK, ừm, ưu điểm và nhược điểm là gì?<br>\
 T: Vâng, và nói về từng điểm riêng lẻ.<br>\
 F: OK - thay vì trình bày tất cả cùng một lúc?<br>\
 T: Ừm - người nghe của bạn khó có thể tiếp thu như vậy. Hiện tại, mọi thứ vẫn chưa rõ ràng.<br>\
@@ -268,6 +270,70 @@ F: Tôi sẽ nói ở phần trước.<br>\
 T: Ừm, nhưng anh cần tóm tắt lại các lý do một lần nữa ở phần cuối bài thuyết trình của mình.<br>\
 F: À, tôi hiểu rồi. Đúng rồi... Vậy thì tôi sẽ đề cập ngắn gọn về chúng.<br>\
 T: Chỉ cần liệt kê là được. Như vậy thì phần kết luận cũng sẽ dài hơn."
+,voca:"",
+},
+{
+	track:"9.T22",
+	en:"T: OK, so let's have a closer look at the section on the process of desalination.<br>\
+F: Well, I just need to outline the principle of the process, don't I?<br>\
+T: Uh-huh. Yes, yes. You need to explain first what desalination means.<br>\
+F: Well, I want to start by referring to a natural form of desalination... Um, and to say that a sea bird filters salt out of sea water in its throat.<br>\
+T: OK, that's interesting... so they just spit the salt out, do they?<br>\
+F: Yes.<br>\
+T: Right, that's a good introduction. Then you can go on to describe the mechanical process.<br>\
+F: Yes - well, the first stage is the collection... um it involves a large plant that collects the water - actually, it goes through a canal and that passes the water into the plant, which treats it, you know...<br>\
+T: Removes all the rubbish.<br>\
+F: Yes.<br>\
+T: So the treatment's the second stage. What happens next?<br>\
+F: Well, the next stage is that it goes through a lot of pipes<br>\
+T: until it reaches the point where the salt is removed. OK so that's the next point on your chart...<br>\
+F: Yes - I can talk about this quite a lot... the salt's separated from fresh water.<br>\
+T: Right... the water passes through a membrane....<br>\
+F: Mmm - not exactly. That's the whole thing. The sea water has to be forced... er, pumped... and a lot of pressure is involved.<br>\
+T: Mmm - you need to make that point - explain that the water doesn't go freely.<br>\
+F: No, because the salt is heavy. This is the really expensive part of the process.<br>\
+T: OK... so after that, what happens?<br>\
+F: Well, there's some more treatment after the high-pressure filtering process, but eventually the system produces fresh water.<br>\
+T: OK - it might be good to mention what's left over.<br>\
+F: Salt, and that's a really big problem...<br>\
+T: Where does it go?<br>\
+F: After the desalination process, the substance that remains - it's called brine - it's a very salty substance and it goes back - usually into the sea.<br>\
+T: Mmm.<br>\
+F: It's not good for fish, though... it damages marine life. T Well - you can discuss that in the next section of your presentation.<br>\
+F: Yup. So anyway... a lot of the fresh water that's produced is used for human consumption.<br>\
+T: Uh-huh, yes, and...<br>\
+F: It's also used for irrigation... for watering farmland.<br>\
+T: Great! Well, you've mentioned some of the disadvantages..."
+	,vi:"T: Được rồi, vậy chúng ta hãy xem xét kỹ hơn phần về quy trình khử muối.<br>\
+F: Vâng, tôi chỉ cần phác thảo nguyên lý của quy trình, phải không?<br>\
+T: Ừ-hử. Vâng, vâng. Trước tiên, bạn cần giải thích khử muối có nghĩa là gì.<br>\
+F: Vâng, tôi muốn bắt đầu bằng cách đề cập đến một hình thức khử muối tự nhiên... Ừm, và nói rằng một con chim biển lọc muối ra khỏi nước biển trong cổ họng của nó.<br>\
+T: Được rồi, điều đó thật thú vị... vì vậy chúng chỉ nhổ muối ra, phải không?<br>\
+F: Vâng.<br>\
+T: Đúng vậy, đó là một phần giới thiệu hay. Sau đó, bạn có thể tiếp tục mô tả quá trình cơ học.<br>\
+F: Vâng - vâng, giai đoạn đầu tiên là thu thập... ừm, nó liên quan đến một nhà máy lớn thu thập nước - thực tế, nó đi qua một kênh và dẫn nước vào nhà máy, nơi xử lý nước, bạn biết đấy...<br>\
+T: Loại bỏ tất cả rác.<br>\
+F: Vâng.<br>\
+T: Vậy thì xử lý là giai đoạn thứ hai. Tiếp theo là gì?<br>\
+F: Vâng, giai đoạn tiếp theo là nó đi qua rất nhiều đường ống<br>\
+T: cho đến khi đạt đến điểm mà muối được loại bỏ. Được rồi, đó là điểm tiếp theo trên biểu đồ của bạn...<br>\
+F: Vâng - Tôi có thể nói về điều này khá nhiều... muối được tách ra khỏi nước ngọt.<br>\
+T: Đúng vậy... nước đi qua một màng....<br>\
+F: Ừm - không hẳn vậy. Đó là toàn bộ vấn đề. Nước biển phải được ép... ừm, được bơm... và có rất nhiều áp lực liên quan.<br>\
+T: Ừm - bạn cần nêu rõ quan điểm đó - giải thích rằng nước không chảy tự do.<br>\
+F: Không, vì muối rất nặng. Đây là phần thực sự tốn kém của quy trình.<br>\
+T: OK... vậy sau đó, điều gì xảy ra?<br>\
+F: Vâng, có một số xử lý nữa sau quá trình lọc áp suất cao, nhưng cuối cùng hệ thống sẽ tạo ra nước ngọt.<br>\
+T: OK - có lẽ nên đề cập đến những gì còn sót lại.<br>\
+F: Muối, và đó thực sự là một vấn đề lớn...<br>\
+T: Nó đi đâu?<br>\
+F: Sau quá trình khử muối, chất còn lại - được gọi là nước muối - là một chất rất mặn và nó quay trở lại - thường là vào biển.<br>\
+T: Ừm.<br>\
+F: Tuy nhiên, nó không tốt cho cá... nó gây hại cho sinh vật biển. T Vâng - bạn có thể thảo luận về điều đó trong phần tiếp theo của bài thuyết trình của mình.<br>\
+F: Vâng. Vậy thì dù sao đi nữa... rất nhiều nước ngọt được tạo ra được sử dụng để con người tiêu thụ. <br>\
+T: Ừ, đúng rồi, và...<br>\
+F: Nó cũng được dùng để tưới tiêu... để tưới cho đất nông nghiệp.<br>\
+T: Tuyệt! Vâng, bạn đã đề cập đến một số nhược điểm..."
 	,voca:"",
 }
 ]

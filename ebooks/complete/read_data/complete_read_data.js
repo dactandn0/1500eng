@@ -348,8 +348,7 @@ The global economic downturn may have affected the annual 20.6 percent rate of i
 <br>\
 In addition, it seems that a high number of visitors return to the poles. 'Looking at six years' worth of data, of the people who have been to the polar regions, roughly 25 percent go for a second time,' says Louisa Richardson, a senior marketing executive at tour operator Exodus. <br>\
 <br>\
-In the same period that tourism has exploded, the 'health' of the poles has 'deteriorated'. 'The biggest changes taking place in the Antarctic are related to climate change,' says<br>\
-Rod Downie, Environmental Manager with the British Antarctic Survey (BAS). Large numbers of visitors increase these problems.<br>\
+In the same period that tourism has exploded, the 'health' of the poles has 'deteriorated'. 'The biggest changes taking place in the Antarctic are related to climate change,' says Rod Downie, Environmental Manager with the British Antarctic Survey (BAS). Large numbers of visitors increase these problems.<br>\
 <br>\
 Although polar tourism is widely accepted, there have been few regulations up until recently. At the meeting of the Antarctic Treaty in Baltimore, the 28 member nations adopted proposals for limits to tourist numbers. These included safety codes for tourist vessels in Antarctic waters, and improved environmental protection for the continent. They agreed to prevent ships with more than 500 passengers from landing in Antarctica, as well as limit the number of passengers going ashore to a maximum of 100 at any one time, with a minimum of one guide for every 20 tourists. 'Tourism in Antarctica is not without its risks,' says Downie. 'After all, Antarctica doesn't have a coastguard rescue service.'<br>\
 <br>\
@@ -362,7 +361,7 @@ Du lịch ở Bắc Cực và Nam Cực đã trở thành một hoạt động g
 <br>\
 Số liệu hàng năm về Bắc Cực, nơi du lịch đã tồn tại từ thế kỷ 19, đã tăng từ khoảng một triệu vào đầu những năm 1990 lên hơn 1,5 triệu ngày nay. Một phần là do mùa hè kéo dài do biến đổi khí hậu. <br>\
 <br>\
-Hầu hết du khách đến bằng tàu. Năm 2007, 370.000 hành khách du lịch đã đến Na Uy, gấp đôi số lượng đến vào năm 2000. Iceland, một quốc gia có ngành du lịch là ngành công nghiệp lớn thứ hai, đã đạt được tốc độ tăng trưởng hàng năm là chín phần trăm kể từ năm 1990. Trong khi đó, Alaska đã đón khoảng 1.029.800 hành khách, tăng 7,3 phần trăm so với năm 2006. Greenland đã chứng kiến ​​sự tăng trưởng nhanh nhất về du lịch biển, với sự gia tăng mạnh mẽ về lượng du khách đến Nam Cực là 250 phần trăm kể từ năm 2004. <br>\
+Hầu hết du khách đến bằng tàu. Năm 2007, 370.000 hành khách du lịch đã đến Na Uy, gấp đôi số lượng đến vào năm 2000. Iceland, một quốc gia có ngành du lịch là ngành công nghiệp lớn thứ hai, đã đạt được tốc độ tăng trưởng hàng năm là chín phần trăm kể từ năm 1990. Trong khi đó, Alaska đã đón khoảng 1,029,800 hành khách, tăng 7,3 phần trăm so với năm 2006. Greenland đã chứng kiến ​​sự tăng trưởng nhanh nhất về du lịch biển, với sự gia tăng mạnh mẽ về lượng du khách đến Nam Cực là 250 phần trăm kể từ năm 2004. <br>\
 <br>\
 Suy thoái kinh tế toàn cầu có thể đã ảnh hưởng đến tỷ lệ tăng trưởng hàng năm là 20,6 phần trăm của du khách đến Nam Cực - mùa trước đã giảm 17 phần trăm xuống còn 38.200 - nhưng đã có sự gia tăng 760 phần trăm của du lịch trên đất liền ở đó kể từ năm 1997. Nhiều người hơn bao giờ hết đang hạ cánh tại các địa điểm dễ vỡ, với máy bay hạng nhẹ, trực thăng và xe địa hình ngày càng được sử dụng để tiếp cận nhiều hơn, trong khi trong hai mùa qua, Các hoạt động 'bay buồm' đã bắt đầu. Những hoạt động này đưa khách du lịch bằng đường hàng không đến tàu, cho đến nay nhiều nhóm có thể tận hưởng chuyến du ngoạn trong một mùa; các tàu du lịch lớn có khả năng chở tới 800 hành khách không phải là hiếm.<br>\
 <br>\
@@ -377,7 +376,6 @@ Mặc dù du lịch vùng cực được chấp nhận rộng rãi, nhưng cho �
 Ngày nay, hiếm có tuần nào trôi qua mà không có tiêu đề tiêu cực trên báo. Chú gấu Bắc Cực đau khổ đã trở thành biểu tượng của thế giới đang nóng lên, hoàn cảnh khốn khổ của nó là lời cảnh báo rằng thời gian đang trôi qua. Có vẻ như chiếc đồng hồ tích tắc này là một yếu tố nhỏ nhưng đang phát triển đối với một số khách du lịch. Có một yếu tố 'hãy làm ngay bây giờ', Prisca Campbell, Giám đốc Tiếp thị của Quark Expeditions, công ty đưa 7.000 người đến các cực hàng năm thừa nhận. Việc trì hoãn chuyến đi đến muộn hơn, có vẻ như, có nghĩa là để quá muộn."
 	,voca:"",
 }
-
 
 
 

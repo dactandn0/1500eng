@@ -17,6 +17,7 @@ middle giữa<br>\
 moment (n) khoảnh khắc<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
+marine (a) /məˈriːn/ hàng hải<br>\
 pleased (a) vui lòng<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\

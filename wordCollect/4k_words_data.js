@@ -15,7 +15,10 @@ finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
 moment (n) khoảnh khắc<br>\
+coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
+versatile  (a) /ˈvɜːrsətl/ linh hoạt<br>\
+appealing  (a)  /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 pleased (a) vui lòng<br>\
@@ -121,9 +124,9 @@ since kể từ<br>\
 visible (a) dễ thấy<br>\
 wild (a) /waɪld/ hoang dã<br>\
 advantage lợi thế<br>\
-cause nguyên nhân<br>\
-choice lựa chọn<br>\
-community cộng đồng<br>\
+cause (n) /kɔːz/ nguyên nhân<br>\
+choice (n) /tʃɔɪs/ lựa chọn<br>\
+community (n) /kəˈmjuːnəti/ cộng đồng<br>\
 dead chết<br>\
 distance (n,v) khoảng cách<br>\
 escape thoát<br>\
@@ -259,7 +262,7 @@ crop (n,v) /krɑːp/ v.cắt, vật giặt hái, mùa giặt<br>\
 demand nhu cầu<br>\
 feed thức ăn<br>\
 hole lỗ<br>\
-increase tăng<br>\
+increase (v) /ɪnˈkriːs/ tăng<br>\
 lord chúa<br>\
 owe nợ<br>\
 position vị trí<br>\
@@ -267,15 +270,16 @@ raise nâng cao<br>\
 responsible có trách nhiệm<br>\
 significance (n) /sɪɡˈnɪfɪkəns/ sự quan trọng, ý nghĩa<br>\
 sight tầm nhìn<br>\
-structure (n) /ˈstrʌktʃər/ cấu trúc<br>\
+structure (n) /ˈstrʌktʃər/ cấu trúc, vật kiến trúc<br>\
 whole toàn bộ<br>\
 coach huấn luyện viên<br>\
 control kiểm soát<br>\
-description mô tả<br>\
+recollection (n) /ˌrekəˈlekʃn/ ký ức [of + N/Ving]<br>\
+description (n) /dɪˈskrɪpʃn/ mô tả<br>\
 direct trực tiếp<br>\
 exam kiểm tra<br>\
 example ví dụ<br>\
-limit giới hạn<br>\
+limit (n) /ˈlɪmɪt/ giới hạn<br>\
 local (a) /ˈləʊkl/ cục bộ, locals người dân địa phương<br>\
 magical ma thuật<br>\
 mail thư<br>\
@@ -324,6 +328,7 @@ pound pound<br>\
 process quy trình<br>\
 publish xuất bản<br>\
 theater sân khấu<br>\
+wealthy (a) /'welθi/ giàu có<br>\
 wealth (n) /welθ/ sự giàu có<br>\
 appreciate đánh giá cao<br>\
 available có sẵn<br>\
@@ -470,8 +475,11 @@ probable có thể<br>\
 public công cộng<br>\
 strike (n,v) /straɪk/ đánh đập, đình công<br>\
 striking (a) /ˈstraɪkɪŋ/ làm nổi bật<br>\
+flashy  (a) /ˈflæʃi/ xa hoa, lòe loẹt<br>\
+gaudy (a) /ˈɡɔːdi/ xa hoa, lòe loẹt<br>\
 support (v) /səˈpɔːrt/ hỗ trợ<br>\
 task nhiệm vụ<br>\
+responsibility (n) /rɪˌspɑːnsəˈbɪləti/ (sự chịu) trách nhiệm<br>\
 term thuật ngữ<br>\
 unite  đoàn kết<br>\
 associate liên kết<br>\
@@ -485,12 +493,13 @@ mix pha trộn<br>\
 organize tổ chức<br>\
 period thời kỳ<br>\
 populate dân cư<br>\
+provide (v) /prəˈvaɪd/ cung cấp<br>\
 produce sản xuất<br>\
 range phạm vi<br>\
 recognize nhận ra<br>\
 regular thường xuyên<br>\
 sign dấu hiệu<br>\
-tradition truyền thống<br>\
+tradition (n) /trəˈdɪʃn/ truyền thống<br>\
 trash rác<br>\
 wide (a,adv) rộng<br>\
 widely (a,adv) rộng rãi, xa (cách)<br>\

@@ -1,7 +1,7 @@
 
 const ENGLAB_PRE_SLIDES = [
 {
-title:"[S]Holidays- Lunar New Year",
+title:"[S]Holidays - Lunar New Year",
 date:"",
 en:"1) Yes, it's on September 2nd - also known as the Independence Day.<br>\
 - How: people celebrate this day with flags, fireworks, v.v <br>\
@@ -79,16 +79,13 @@ Với tôi, Tết có phần quan trọng vì đây là thời điểm tôi đư
 ,voca:""
 },
 {
-unit:1,
-title:"Listening Bridge",
-date:"",
+title:"[R]The happiest country in the world",
 en:"Canoe (n)<br>\
 Palace (n)<br>\
 Carnival (n) <br>\
 Race (n)<br>\
 <br>\
-Reading Complete (p.11)<br>\
-The happiest country in the world<br>\
+Reading Complete (p11): The happiest country in the world<br>\
 <br>\
 Preserve (n)<br>\
 Tropical rainforest (n)<br>\
@@ -112,35 +109,34 @@ Reflect (v)<br>\
 Environment<br>\
 Resources (n)<br>\
 Health (n,v)"
-,vi:"Canoe (n)<br>\
-Cung điện (n)<br>\
-Lễ hội (n) <br>\
-Chủng tộc (n)<br>\
+,vi:"Xuồng<br>\
+Cung điện<br>\
+Lễ hội <br>\
+Chủng tộc<br>\
 <br>\
-Đọc sách Complete (p.11)<br>\
-Quốc gia hạnh phúc nhất thế giới<br>\
+Đọc sách Complete (p11): Quốc gia hạnh phúc nhất thế giới<br>\
 <br>\
-Bảo tồn (n) bảo tồn<br>\
-Rừng mưa nhiệt đới (n)<br>\
-Chính phủ (n) chính phủ<br>\
-Giải phóng (v) ra mắt<br>\
-Chỉ số (n) chỉ số<br>\
-Tác động (n) = Hiệu ứng (n)<br>\
-Thu nhập trung bình (adj)<br>\
-Công dân (n)<br>\
-Thỏa mãn (v)<br>\
-Xếp hạng (v)<br>\
-Dân số (n)<br>\
-Tiêu dùng (v)<br>\
-Số lượng (n)<br>\
+Bảo tồn<br>\
+Rừng mưa nhiệt đới<br>\
+Chính phủ chính phủ<br>\
+Giải phóng, ra mắt<br>\
+Chỉ số chỉ số<br>\
+Tác động = Hiệu ứng<br>\
+Thu nhập trung bình<br>\
+Công dân<br>\
+Thỏa mãn<br>\
+Xếp hạng<br>\
+Dân số<br>\
+Tiêu dùng<br>\
+Số lượng<br>\
 <br>\
-Kinh tế (n)<br>\
-kinh tế (a)<br>\
-Giáo sư (n) giáo sư<br>\
-Sử dụng = tiêu thụ (v)<br>\
-Phản ánh (v)<br>\
+Kinh tế<br>\
+kinh tế<br>\
+Giáo sư giáo sư<br>\
+Sử dụng = tiêu thụ<br>\
+Phản ánh<br>\
 Môi trường<br>\
-Tài nguyên (n)<br>\
+Tài nguyên<br>\
 Sức khỏe"
 },
 {
@@ -254,7 +250,6 @@ voca:"take place"
 },
 {
 title:"[S]Family / A famous person you admire",
-unit:"Lesson 3.pptx",
 date:"",
 en:"Do you come from a large family or a small family?<br>\
 – Well, I come from a small/large family which is a nuclear/extended one. There are ...  people in my family including ... <br>\
@@ -331,14 +326,28 @@ We went to the beach and swam in the clear water, we ate seafood it was deliciou
 The good thing about the journey was that we had fun and happy moments. The bad thing was this trip was not safe, it took us about 2 hours to travel from my home to NT.<br>\
 I remember this trip because at the time, i met the girl who later became my girlfriend.<br>\
 <hr>\
-"
+One year ago, I took a trip with my family to Da Nang by coach, a coastal city in central Vietnam, which has been widely considered one of the most livable places in the country.\
+ Da Nang boasts a diverse collection of attractions with various landscape and architectural styles, notably including the Dragon Bridge, which rises across the Han River,\
+  and the Marble Mountains, and so on. Since it would be impossible to describe everything in just a few minutes, I will just focus on my personal favorites, starting with Ba Na Hills.\
+   The first thing we did when we reached Ba Na Hills was to stop by the Linh Ung Pagoda and take in the breathtaking views from the top.\
+    Then, the scenery blew us away on the top of Ba Na Hill. There's a whole cable car complex, offering a wide range of activities for pretty much everyone.\
+     Of course, Da Nang is a coastal city, so it would be remiss of me not to mention its beautiful beaches and top-notch seafood. The seafood there is simply amazing.\
+      It's all incredibly cheap for its quality. Perhaps the most lasting impression I have about Da Nang is that it offers pretty much everything you could possibly ask for in a vacation destination.\
+       That's why, although I spent a few days here, there are still lots of things I didn't have time to explore. Hopefully, I will soon have a chance to visit this beautiful city again."
 ,vi:"Tôi đã đến Núi Thành<br>\
 Nó được bố mẹ tôi mua. Tôi đi du lịch với bạn bè, chúng tôi đi qua Tam Kỳ và đến NT.<br>\
 Chúng tôi đã đến bãi biển và bơi trong làn nước trong vắt, chúng tôi đã ăn hải sản rất ngon nhưng đắt,<br>\
 Điểm tốt của chuyến đi là chúng tôi đã có những khoảnh khắc vui vẻ và hạnh phúc. Điểm xấu là chuyến đi này không an toàn, chúng tôi mất khoảng 2 giờ để đi từ nhà tôi đến NT.<br>\
 Tôi nhớ chuyến đi này vì lúc đó, tôi đã gặp cô gái sau này trở thành bạn gái của tôi.<br>\
 <hr>\
-"
+Một năm trước, tôi đã cùng gia đình đi du lịch Đà Nẵng bằng xe khách, một thành phố ven biển ở miền Trung Việt Nam, được coi là một trong những nơi đáng sống nhất cả nước.\
+Đà Nẵng tự hào có nhiều điểm tham quan đa dạng với nhiều phong cách kiến ​​trúc và cảnh quan khác nhau, đáng chú ý là Cầu Rồng bắc qua Sông Hàn,\
+và Ngũ Hành Sơn, v.v. Vì không thể mô tả hết mọi thứ chỉ trong vài phút, nên tôi sẽ chỉ tập trung vào những địa điểm yêu thích của mình, bắt đầu với Bà Nà Hills.\
+Điều đầu tiên chúng tôi làm khi đến Bà Nà Hills là dừng chân ở Chùa Linh Ứng và ngắm nhìn quang cảnh ngoạn mục từ trên đỉnh.\
+Sau đó, quang cảnh khiến chúng tôi choáng ngợp trên đỉnh Bà Nà Hill. Có cả một khu phức hợp cáp treo, cung cấp nhiều hoạt động cho hầu hết mọi người.\
+Tất nhiên, Đà Nẵng là một thành phố ven biển, vì vậy sẽ thật thiếu sót nếu tôi không đề cập đến những bãi biển xinh đẹp và hải sản hảo hạng. Hải sản ở đó thực sự tuyệt vời.\
+Tất cả đều cực kỳ rẻ so với chất lượng. Có lẽ ấn tượng sâu sắc nhất của tôi về Đà Nẵng là nơi đây cung cấp hầu như mọi thứ bạn có thể yêu cầu ở một điểm đến nghỉ dưỡng.\
+Đó là lý do tại sao, mặc dù tôi đã dành một vài ngày ở đây, vẫn còn rất nhiều thứ tôi chưa có thời gian khám phá. Hy vọng rằng, tôi sẽ sớm có cơ hội ghé thăm thành phố xinh đẹp này một lần nữa."
 },
 {
 date:"T6.20/09/2024",
@@ -634,7 +643,7 @@ The rules of football are really easy/simple. You play in teams of ... people. Y
 Players can use any part of their body except their hands and arms, although the goalkeeper is an exception as they can use their hands within the penalty area. The team with the most goals at the end of the match wins.<br>\
 I love this sport for several reasons: First, ... Second,... Last but not least, ...<br>\
 <hr>\
-Sample:<br>\
+[Gym/Exercise]:<br>\
 A lot of people feel the best way to stay in shape is to regularly go to the gym while others think there are more effective methods. Although I would readily admit that the health benefits of gyms are self-evident, the best way to stay fit over the long-term is to join a sport or similar activity.<br>\
 Those who swear by gyms often point out the bulk of research on the benefits of working out. People going to the gym can broadly be divided into those doing cardivascular exercise and weight-lifting (or partaking in both). Cardio workouts have been proven in various studies to increase circulation, strengthen the heart muscles and reduce risks of heart disease later in life. Weight-lifting is also a scientifically supported method of combating bone density deterioration, especially important for women, and improving muscular health. No reasonable person would doubt both the vast anecdotal and scientific support for regular trips to the gym.<br>\
 To conclude, going to the gym has indisputable benefits but it is not motivating enough to become habitual for most gym-goers. Instead, parents and teachers should encourage children to experiment with a wide range of activities in the hopes that they can develop a lifelong passion for one of them."
@@ -655,7 +664,7 @@ Luật chơi bóng đá thực sự dễ/đơn giản. Bạn chơi theo đội g
 Cầu thủ có thể sử dụng bất kỳ bộ phận nào trên cơ thể ngoại trừ tay và cánh tay, mặc dù thủ môn là một ngoại lệ vì họ có thể sử dụng tay trong vòng cấm. Đội ghi được nhiều bàn thắng nhất vào cuối trận sẽ thắng.<br>\
 Tôi thích môn thể thao này vì một số lý do: Thứ nhất, ... Thứ hai,... Cuối cùng nhưng không kém phần quan trọng, ...<br>\
 <hr>\
-Sample:<br>\
+[Gym/Exercise]:<br>\
 Nhiều người cho rằng cách tốt nhất để giữ dáng là thường xuyên đến phòng tập trong khi những người khác lại cho rằng có những phương pháp hiệu quả hơn. Mặc dù tôi sẵn sàng thừa nhận rằng lợi ích sức khỏe của phòng tập là hiển nhiên, nhưng cách tốt nhất để giữ dáng lâu dài là tham gia một môn thể thao hoặc hoạt động tương tự.<br>\
 Những người thề sống chết với phòng tập thường chỉ ra phần lớn các nghiên cứu về lợi ích của việc tập luyện. Những người đến phòng tập có thể được chia thành những người tập tim mạch và nâng tạ (hoặc tham gia cả hai). Các bài tập tim mạch đã được chứng minh trong nhiều nghiên cứu khác nhau là có thể tăng cường lưu thông máu, tăng cường cơ tim và giảm nguy cơ mắc bệnh tim khi về già. Nâng tạ cũng là một phương pháp được khoa học chứng minh là có thể chống lại tình trạng suy giảm mật độ xương, đặc biệt quan trọng đối với phụ nữ và cải thiện sức khỏe cơ bắp. Không một người lý trí nào lại nghi ngờ cả sự ủng hộ rộng rãi về mặt giai thoại và khoa học đối với những chuyến đi đến phòng tập thường xuyên.<br>\
 Tóm lại, việc đến phòng tập có những lợi ích không thể phủ nhận nhưng không đủ động lực để trở thành thói quen đối với hầu hết những người đến phòng tập. Thay vào đó, cha mẹ và giáo viên nên khuyến khích trẻ em thử nghiệm nhiều hoạt động khác nhau với hy vọng rằng chúng có thể phát triển niềm đam mê suốt đời với một trong số những hoạt động đó."
@@ -677,22 +686,14 @@ If you're a big city person, you might get a little bored of Da Nang. There's a 
 This one might not be a huge issue, but I've found compared to Thailand, there seems to be more tourist scams in Vietnam in general. Lots of Japanese restaurants that will pad the bill assuming you won't check or even care as a foreigner. I've had some pretty bad luck on Airbnb so far, and most of the time hosts will do the usual tricks, like refuse to give a refund, ask me to cancel first, offer to take you to one of their 'other' places which is usually far worse, etc. In general it feels like Vietnamese are more focused on making money off of you in any way they can compared to Thais. I think this is amplified in Da Nang because it's such a popular tourist destination. Not a huge dealbreaker but something to be aware of imo."
 ,vi:"Ưu điểm:<br>\
 Bãi biển dài tuyệt đẹp. Có thể đi bộ dạo bộ bên cạnh bãi biển. Tôi đi bộ ở đây mỗi ngày.<br>\
-<br>\
 Thành phố ven biển rẻ nhất mà tôi từng đến. Chỗ ở có thể thay đổi tùy theo nhu cầu của bạn và thời gian bạn đặt phòng, nhưng theo tôi thì rẻ hơn nhiều so với Thái Lan.<br>\
-<br>\
 Đồ ăn tuyệt vời. Bánh mì có giá dưới 2 đô la. Có rất nhiều món ăn tuyệt vời với giá cực rẻ. Giống như mọi người, tôi đã nghe nói về Bánh mì và Phở nhưng tôi đã yêu thích các món ăn Việt Nam khác như Bánh Xèo và bánh ngọt Việt Nam. Tất cả đều có giá dưới 2-3 đô la.<br>\
-<br>\
 Theo tôi thì văn hóa quán cà phê ở Việt Nam tốt hơn bất kỳ nơi nào khác trên Trái đất. Bạn không bao giờ cách một quán cà phê quá một dãy nhà. Đi bộ 10 phút và bạn sẽ thấy ít nhất 5 quán. Cà phê có giá từ 0,50 - 2 đô la và rất ngon. Hãy thử cà phê trứng nhé!<br>\
-<br>\
 Tôi mới chỉ ở đây 2-3 tuần và chưa có cơ hội khám phá những ngọn núi, nhưng tôi có thể quay lại sau khi họ khám phá. Cho đến nay, ít nhất thì cảnh đẹp ở đây cũng tuyệt vời!<br>\
-<br>\
 Nhược điểm:<br>\
 Nhược điểm số một là chính sách thị thực của Việt Nam. Hiện tại, bạn vẫn chỉ có thể ở lại 30 ngày với thị thực du lịch, mặc dù tuần trước chính phủ đã chỉ ra rằng họ đang xem xét thay đổi chính sách này. Nếu họ đưa thị thực du lịch 3 tháng trở lại, tôi sẽ ở lại DN ít nhất 3 tháng nữa. Hiện tại, chi phí đi xe buýt đến Lào để xin thị thực là khoảng 110 đô la Mỹ cho người Mỹ. Vì vậy, ở lại đây để xin thị thực khá đắt.<br>\
-<br>\
 Điều này phổ biến ở khắp Việt Nam, nhưng Đà Nẵng chắc chắn phải chịu ô nhiễm tiếng ồn. Tôi chưa bao giờ nghĩ mình là người sẽ bận tâm đến điều này, nhưng nó chắc chắn đã ảnh hưởng đến tôi kể từ khi tôi đến đây. Tôi đã ở 2 Airbnb và một khách sạn kể từ khi đến đây, và ở mỗi nơi, tôi đều thức trắng đêm vì karaoke, quán bar hoặc những nhóm người đông đúc ngồi trên phố ăn uống đến tận khuya. Người Việt Nam rất hòa đồng và theo tôi, ồn ào hơn nhiều so với Thái Lan.<br>\
-<br>\
 Nếu bạn là người thành phố lớn, bạn có thể sẽ thấy hơi chán Đà Nẵng. Có rất nhiều thứ để xem và làm, nhưng không thể sánh bằng Bangkok hay TP.HCM. Đối với tôi, thực ra tôi không thích các thành phố lớn, tôi thấy chúng hơi quá sức đối với một kỳ nghỉ kéo dài 1-3 tháng, vì vậy Đà Nẵng là nơi tuyệt vời đối với tôi.<br>\
-<br>\
 Điều này có thể không phải là vấn đề lớn, nhưng tôi thấy rằng so với Thái Lan, có vẻ như có nhiều vụ lừa đảo khách du lịch hơn ở Việt Nam nói chung. Rất nhiều nhà hàng Nhật Bản sẽ tính thêm tiền nếu bạn là người nước ngoài và không kiểm tra hoặc thậm chí không quan tâm. Tôi đã gặp một số điều không may trên Airbnb cho đến nay, và hầu hết thời gian, chủ nhà sẽ làm những trò thông thường, như từ chối hoàn lại tiền, yêu cầu tôi hủy trước, đề nghị đưa bạn đến một trong những nơi 'khác' của họ, thường tệ hơn nhiều, v.v. Nhìn chung, có vẻ như người Việt Nam tập trung nhiều hơn vào việc kiếm tiền từ bạn theo bất kỳ cách nào họ có thể so với người Thái. Tôi nghĩ điều này được khuếch đại ở Đà Nẵng vì đây là một điểm đến du lịch rất nổi tiếng. Không phải là một sự phá vỡ thỏa thuận lớn nhưng theo tôi, đây là điều cần lưu ý."
 ,voca:"incredibly cheap,throughout,in general,promenade,beachside",
 },
@@ -1359,7 +1360,6 @@ The drinking water has become contaminated with lead.<br>\
 The river has been polluted with toxic waste from local factories.<br>\
 Fruit juices can be harmful to children's teeth.<br>\
 Air/Soil/Water pollution<br>\
-pollution<br>\
 Greenhouse gases<br>\
 The hostages were released unharmed.<br>\
 Many pesticides are highly toxic.<br>\
@@ -1442,7 +1442,6 @@ Nước uống đã bị nhiễm chì.<br>\
 Sông đã bị ô nhiễm bởi chất thải độc hại từ các nhà máy địa phương.<br>\
 Nước ép trái cây có thể gây hại cho răng của trẻ em.<br>\
 Ô nhiễm không khí/đất/nước<br>\
-ô nhiễm<br>\
 Khí nhà kính<br>\
 Các con tin đã được thả mà không bị thương.<br>\
 Nhiều loại thuốc trừ sâu có độc tính cao.<br>\

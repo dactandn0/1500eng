@@ -262,6 +262,7 @@ crop (n,v) /krɑːp/ v.cắt, vật giặt hái, mùa giặt<br>\
 demand nhu cầu<br>\
 feed thức ăn<br>\
 hole lỗ<br>\
+unwind (v) /ˌʌnˈwaɪnd/ thư giãn<br>\
 increase (v) /ɪnˈkriːs/ tăng<br>\
 lord chúa<br>\
 owe nợ<br>\
@@ -283,6 +284,7 @@ limit (n) /ˈlɪmɪt/ giới hạn<br>\
 local (a) /ˈləʊkl/ cục bộ, locals người dân địa phương<br>\
 magical ma thuật<br>\
 mail thư<br>\
+dragon (n) /ˈdræɡən/ rồng<br>\
 novel tiểu thuyết<br>\
 outline (n) /ˈaʊtlaɪn/ phác thảo<br>\
 poet nhà thơ<br>\
@@ -291,12 +293,14 @@ scene (n) /siːn/ cảnh<br>\
 sheet tờ<br>\
 store cửa hàng<br>\
 suffer chịu đựng<br>\
+marble (n) /ˈmɑːrbl/ đá cẩm thạch<br>\
 technology (n) /tekˈnɑːlədʒi/ công nghệ<br>\
 vividly (adv) /ˈvɪvɪdli/ sống động<br>\
 across xuyên<br>\
 breathe hít thở<br>\
 characteristic (n) /kærəktəˈrɪstɪk/ đặc điểm(tính)<br>\
 consume tiêu thụ<br>\
+pagoda (n) /pəˈɡəʊdə/ Chùa<br>\
 excite kích thích<br>\
 extreme cực đoan<br>\
 fear sợ hãi<br>\
@@ -304,6 +308,7 @@ fortunate may mắn<br>\
 happen xảy ra<br>\
 length chiều dài<br>\
 mistake sai lầm<br>\
+livable (a) /ˈlɪvəbl/ có thể sống<br>\
 observe (v) /əbˈzɜːrv/ quan sát<br>\
 opportunity cơ hội<br>\
 prize (n) /praɪz/ giải thưởng<br>\

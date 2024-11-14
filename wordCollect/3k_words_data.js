@@ -636,6 +636,7 @@ River (n) /ˈrɪv.ər/ Sông<br>\
 Pond (n) /pɒnd/ Ao<br>\
 Farm (n) /fɑːm/ Trang trại<br>\
 Plow (v) /plaʊ/ Cày<br>\
+cultural (a) /ˈkʌltʃərəl/ thuộc văn hóa<br>\
 Agriculture (n) /ˈæɡ.rɪ.kʌl.tʃər/ Nông nghiệp<br>\
 Peaceful (a) /ˈpiːs.fəl/ Yên bình<br>\
 Bay (n) /beɪ/ Vịnh<br>\
@@ -1516,6 +1517,7 @@ Wrong (a) /rɒŋ/ Sai<br>\
 Register (n) /ˈrɛdʒ.ɪ.stər/ Sổ sách<br>\
 Assembly (n) /əˈsɛm.bli/ Cuộc họp<br>\
 parade (n) /pəˈreɪd/ cuộc diễu hành<br>\
+festive (a) /ˈfestɪv/ thuộc về ngày lể<br>\
 Holiday (n) /ˈhɒl.ɪ.deɪ/ Kỳ nghỉ<br>\
 Carnival (n) /ˈkɑːrnɪvl/ Lễ hội<br>\
 Mascot (n) /ˈmæskɑːt/ Linh vật<br>\

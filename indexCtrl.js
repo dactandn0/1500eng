@@ -5,6 +5,7 @@ var VocaToUI = WORDS_3K_DATA
     .concat(VOCA_SPECIAL)
 
 var VocaForSearch = VocaToUI
+    .concat(PHRASAL_VERB)
     .concat(IELTS_SYN)
     .concat(GRAMMER_DATA)
     .concat(NATIONS)
@@ -158,6 +159,7 @@ $scope.Index_Speak = function (event, word) {
 
 // click word to speech
 $scope.Idx_n_L_WSp_ = function (event) {
+  event.stopPropagation()
   Helper_ngClickWordSpeak(event);
 
   var wordFormed = event.target.innerText.toLowerCase();

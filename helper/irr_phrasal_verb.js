@@ -1,16 +1,41 @@
+var PHRASAL_VERB = [{title:"Phrasal verbs",en:""}];
 
 const BAT_QUI_TAC = [
+	'call|called|called|gọi',
+	'get|got|got|lấy',
+	'look|looked|looked|nhìn, trông',
+	'fall|fell|fallen|ngã, rơi',
 	'tear|tore|torn|xé, rách',
 	'take|took|taken|cầm, lấy',
-	'get|got|got|lấy',
-	'call|called|called|gọi',
 ]
 
 const PHRASAL_VERB_DATA = [
 	{word: 'call', prep: 'for', mean: 'yêu cầu'},
 	{word: 'take', prep: 'after', mean: 'giống với'},
+	{word: 'look', prep: 'up',  mean: 'ngưỡng mộ'},
 	{word: 'get', prep: 'on',  mean: 'thòa thuận với'},
+	{word: 'fall', prep: 'out',  mean: 'cãi nhau'},
 ]
+
+function progress() {
+	var en = ''
+	for (var i = 0; i < PHRASAL_VERB_DATA.length; i++) {
+		var data = PHRASAL_VERB_DATA[i]
+		var Vbare = data.word
+		var V2 = getVerb_Irr(Vbare)
+		var V3 = getVerb_Irr(Vbare , 3)
+		var meaning = ' ' + data.prep + ' (v) ' + data.mean
+		var fullW = data.word + meaning
+		var fullW2 = V2 + meaning
+		var fullW3 = V3 + meaning
+		en += fullW + "<br>"
+		en += fullW2 + "<br>"
+		en += fullW3 + "<br>"
+	}
+	PHRASAL_VERB[0].en = en.replace(/\s\s/gi, " ")
+}
+
+progress()
 
 // qua khu col = cot2 or cot 3 [V2 or Vpp]
 function getVerb_Irr(verb_bare, col=2) {	
@@ -50,14 +75,22 @@ function IRR_FindPhraVerb(story) {
 		regexStr += ele + "|"
 	}
 	regexStr = regexStr.substring(0, regexStr.length - 1)   //remove last '|'
-	regexStr = '' + regexStr + ''
-	var regex = new RegExp(`\\b(${regexStr}|\\w+'*\\w+)\\b` , 'gi')
+	if (regexStr!=='') regexStr = regexStr + '|'
+	var regex = new RegExp(`\\b(${regexStr}\\w+'*\\w*)\\b` , 'g')
 //	console.log(regex)
 	var words = story.match(regex);
 	words = Helper_ArrRemoveDup(words)
-	words.sort((a, b) => b.length - a.length);
-	console.log(words)
-	return words
+//	words.sort((a, b) => b.length - a.length);
+//	console.log(words)
+	var r = []
+	for (var i = 0; i < PhraVerbs.length; i++) {
+		var www = PhraVerbs[i].split(' ')
+		var word = www[0]
+		var prep = www[1]
+		words = words.filter(function(ele) { return ele !== word && ele !== prep})
+	}
+
+	return {'words':words,'PhraVerbs':PhraVerbs}
 }
 
  // console.log( getVerb_Irr('call')  )

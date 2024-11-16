@@ -5,6 +5,7 @@ const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
 
 var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
+var kNgClickTagClose = '</kkk>';
 var Helper_AudioPitchKey = 'AudioPitch';
 var Helper_AudioRateKey = 'AudioRate';
 var Helper_AdjAudioTimeKey = 'AdjAudioTime';
@@ -144,7 +145,7 @@ function ngClickOnWord(word, graph) {
 		) 
 	{
 		regex = new RegExp(`\\b${word}\\b` , 'g')
-		return graph.replace(regex, kNgClickTagOpen + word + '</kkk>');
+		return graph.replace(regex, kNgClickTagOpen + word + kNgClickTagClose);
 	} // else  console.log("ngClickOnWord ignore: " + word)
 	return graph
 }
@@ -181,10 +182,9 @@ function processStory (story, isAlert = true) {
 				enShow = enShow.replace(regex, '<b>' + voca + '</b>');
 		}
 	}
-
-	var words = story.en.match(/\b(\w+'*\w*)\b/g);
-	words = Helper_ArrRemoveDup(words)
-	words.sort((a, b) => b.length - a.length);
+//.match(/\b(\w+'*\w*)\b/g);
+	var words = IRR_FindPhraVerb(story.en).words
+	var PhraVerbs = IRR_FindPhraVerb(story.en).PhraVerbs
 	var dones = []
 	for (var i = 0; i < words.length; i++) {
 		var word = words[i];
@@ -196,10 +196,6 @@ function processStory (story, isAlert = true) {
 			dones.push(word);
 		}
 	}
-
-//	var rg = /\s<k.+>.+<\/kkk>(.+?)<\/kkk>\s/gi
-//	var mmm  = enShow.match(rg)
-//	console.log(mmm)
 
 	var kBrTag = '<br>'
 	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi

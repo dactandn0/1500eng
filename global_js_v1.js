@@ -4,7 +4,7 @@ const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
 
-var kNgClickTagOpen = '<span ng-click="Idx_n_L_WSp_($event)">';
+var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
 var Helper_AudioPitchKey = 'AudioPitch';
 var Helper_AudioRateKey = 'AudioRate';
 var Helper_AdjAudioTimeKey = 'AdjAudioTime';
@@ -99,6 +99,7 @@ var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
 
 function Helper_ArrRemoveDup(arr) {
+	if (!arr) return arr;
 	var result = [];
     for(i=0;i<arr.length;i++){
     	var ele = arr[i] // .toLowerCase()
@@ -142,8 +143,8 @@ function ngClickOnWord(word, graph) {
 		&& kNgClickTagOpen.indexOf(word) === -1
 		) 
 	{
-		var regex = new RegExp(`\\b${word}\\b` , 'g')
-		return graph.replace(regex, kNgClickTagOpen + word + '</span>');
+		regex = new RegExp(`\\b${word}\\b` , 'g')
+		return graph.replace(regex, kNgClickTagOpen + word + '</kkk>');
 	} // else  console.log("ngClickOnWord ignore: " + word)
 	return graph
 }
@@ -181,7 +182,9 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
-	var words = IRR_FindPhraVerb(story.en)
+	var words = story.en.match(/\b(\w+'*\w*)\b/g);
+	words = Helper_ArrRemoveDup(words)
+	words.sort((a, b) => b.length - a.length);
 	var dones = []
 	for (var i = 0; i < words.length; i++) {
 		var word = words[i];
@@ -194,18 +197,9 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
-	var regex = new RegExp(`\\b<span ng-click=\.+>\.+?</span>\\b` , 'g')
-//	enShow = enShow.replace(regex, kNgClickTagOpen)
-	var matches = enShow.match(/<span ng-click=.+>.+?<\/span>/g)
-	console.log(matches)
-	if (matches) {
-		for (var i = 0; i < matches.length; i++) {
-		var match = matches[i]
-		var abc  = match.replace(/<.+?>/ ,'')
-	//	enShow = enShow.replace(match, abc)
-		}
-		
-	}
+//	var rg = /\s<k.+>.+<\/kkk>(.+?)<\/kkk>\s/gi
+//	var mmm  = enShow.match(rg)
+//	console.log(mmm)
 
 	var kBrTag = '<br>'
 	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi

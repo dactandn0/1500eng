@@ -3,9 +3,11 @@ const BAT_QUI_TAC = [
 	'tear|tore|torn|xé, rách',
 	'take|took|taken|cầm, lấy',
 	'get|got|got|lấy',
+	'call|called|called|gọi',
 ]
 
 const PHRASAL_VERB_DATA = [
+	{word: 'call', prep: 'for', mean: 'yêu cầu'},
 	{word: 'take', prep: 'after', mean: 'giống với'},
 	{word: 'get', prep: 'on',  mean: 'thòa thuận với'},
 ]
@@ -52,11 +54,11 @@ function IRR_FindPhraVerb(story) {
 	var regex = new RegExp(`\\b(${regexStr}|\\w+'*\\w+)\\b` , 'gi')
 //	console.log(regex)
 	var words = story.match(regex);
-	console.log(words)
 	words = Helper_ArrRemoveDup(words)
-//	console.log(words)
+	words.sort((a, b) => b.length - a.length);
+	console.log(words)
 	return words
 }
 
-// console.log( getVerb_Irr('tear')  )
- console.log( Helper_N_V_Add_S_ES('tear')  )
+ // console.log( getVerb_Irr('call')  )
+ // console.log( Helper_N_V_Add_S_ES('call')  )

@@ -94,7 +94,7 @@ function shuffle(array) {
 
 function isAsciiString(text) {
 	var tiengViet = ['giao','vui','trong', 'bao', 'kinh', 'tinh']
-	var r = /^[\x00-\x7F]+$/g.test(text) && !isInArr(r, tiengViet);
+	var r = /[\x00-\x7F]+/g.test(text) && !isInArr(r, tiengViet);
 	return r;
 } 
 

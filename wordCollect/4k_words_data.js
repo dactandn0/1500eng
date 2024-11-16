@@ -1,6 +1,4 @@
-
-
-const word_4000_data = [
+ const word_4000_data = [
 {
 title:"4k Book1",
 en:"afraid (a) /əˈfreɪd/ sợ<br>\
@@ -17,8 +15,8 @@ middle giữa<br>\
 moment (n) khoảnh khắc<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
-versatile  (a) /ˈvɜːrsətl/ linh hoạt<br>\
-appealing  (a)  /əˈpiːlɪŋ/ hấp dẫn<br>\
+versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
+appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 pleased (a) vui lòng<br>\
@@ -41,7 +39,7 @@ approach tiếp cận<br>\
 carefully cẩn thận<br>\
 chemical hóa học<br>\
 evil ác<br>\
-obesity (n)  /əʊˈbiːsəti/ béo phì<br>\
+obesity (n) /əʊˈbiːsəti/ béo phì<br>\
 experiment (n) /ɪkˈsperɪmənt/ thí nghiệm<br>\
 kill giết<br>\
 laboratory phòng thí nghiệm<br>\
@@ -58,7 +56,7 @@ secret bí mật<br>\
 shout /ʃaʊt/ la hét (at/for)<br>\
 smell mùi<br>\
 terrible (a) khủng khiếp<br>\
-worse  tệ hơn<br>\
+worse tệ hơn<br>\
 alien (n) /ˈeɪliən/ người ngoài HT<br>\
 among (prep) trong<br>\
 chart biểu đồ<br>\
@@ -93,7 +91,8 @@ represent đại diện<br>\
 shake lắc<br>\
 spread (v) /spred/ lan truyền<br>\
 stroll (n,v) đi dạo<br>\
-aware (a)  /əˈwer/ nhận thức<br>\
+aware (a) /əˈwer/ nhận thức<br>\
+awareness (n) /əˈwernəs/ nhận thức<br>\
 little (a,adv) /ˈlɪtl/ chút ít (less)<br>\
 badly (adv) tệ, bậy bạ<br>\
 socialize (v) /ˈsəʊʃəlaɪz/ giao lưu (+ with)<br>\
@@ -205,13 +204,13 @@ image hình ảnh<br>\
 immediate ngay lập tức<br>\
 primary chính<br>\
 remain vẫn<br>\
-uncommon (a)  /ʌnˈkɑːmən/ không phổ biến<br>\
+uncommon (a) /ʌnˈkɑːmən/ không phổ biến<br>\
 rare (a) /rer/ hiếm, không phổ biến<br>\
 unusual (a) /ʌnˈjuːʒəl/ hiếm có, không thông dụng<br>\
 separate (a) /ˈseprət/ tách biệt<br>\
 site trang web<br>\
 tail đuôi<br>\
-trouble  rắc rối<br>\
+trouble rắc rối<br>\
 anymore nữa<br>\
 asleep (a) /əˈsliːp/ ngủ<br>\
 berry quả mọng<br>\
@@ -230,7 +229,7 @@ serious nghiêm túc<br>\
 spend chi tiêu<br>\
 strange lạ<br>\
 truth sự thật<br>\
-wake  thức dậy<br>\
+wake thức dậy<br>\
 apartment căn hộ<br>\
 article bài viết<br>\
 artist nghệ sĩ<br>\
@@ -252,7 +251,7 @@ shape (n) /ʃeɪp/ hình dạng<br>\
 space không gian<br>\
 stair cầu thang<br>\
 symbol biểu tượng<br>\
-thin  mỏng<br>\
+thin mỏng<br>\
 blood (n) /blʌd/ máu<br>\
 burn bỏng<br>\
 cell tế bào<br>\
@@ -281,7 +280,7 @@ direct trực tiếp<br>\
 exam kiểm tra<br>\
 example ví dụ<br>\
 limit (n) /ˈlɪmɪt/ giới hạn<br>\
-local (a) /ˈləʊkl/ cục bộ, locals người dân địa phương<br>\
+local (a) /ˈləʊkl/ cục bộ, dân địa phương<br>\
 magical ma thuật<br>\
 mail thư<br>\
 dragon (n) /ˈdræɡən/ rồng<br>\
@@ -302,7 +301,7 @@ characteristic (n) /kærəktəˈrɪstɪk/ đặc điểm(tính)<br>\
 consume tiêu thụ<br>\
 pagoda (n) /pəˈɡəʊdə/ Chùa<br>\
 excite kích thích<br>\
-extreme cực đoan<br>\
+extreme (a) /ɪkˈstriːm/ cực kỳ<br>\
 fear sợ hãi<br>\
 fortunate may mắn<br>\
 happen xảy ra<br>\
@@ -354,7 +353,7 @@ response phản ứng<br>\
 season mùa<br>\
 solution giải pháp<br>\
 waste chất thải<br>\
-whether  cho dù<br>\
+whether cho dù<br>\
 argue (v) /ˈɑːrɡjuː/ tranh luận<br>\
 crowd đám đông<br>\
 depend phụ thuộc<br>\
@@ -370,7 +369,7 @@ purchase mua<br>\
 recommend khuyến nghị<br>\
 select lựa chọn<br>\
 tool công cụ<br>\
-treat  điều trị<br>\
+treat điều trị<br>\
 alive sống<br>\
 bone xương<br>\
 bother làm phiền<br>\
@@ -424,7 +423,7 @@ operation phẫu thuật<br>\
 pain đau<br>\
 refuse từ chối<br>\
 though mặc dù<br>\
-various  khác nhau<br>\
+various khác nhau<br>\
 actual thực tế<br>\
 amaze (v) /əˈmeɪz/ kinh ngạc<br>\
 charge tính phí<br>\
@@ -456,14 +455,14 @@ behind đằng sau<br>\
 course khóa học<br>\
 lower thấp hơn<br>\
 member thành viên<br>\
-mental (a)  /ˈmentl/ tinh thần<br>\
+mental (a) /ˈmentl/ tinh thần<br>\
 passenger hành khách<br>\
 personality tính cách<br>\
 poem bài thơ<br>\
 pole cột<br>\
 safety (n) /ˈseɪfti/ (nơi) an toàn<br>\
 shoot bắn<br>\
-web  web<br>\
+web web<br>\
 block block<br>\
 cheer cổ vũ<br>\
 complex phức tạp<br>\
@@ -480,13 +479,13 @@ probable có thể<br>\
 public công cộng<br>\
 strike (n,v) /straɪk/ đánh đập, đình công<br>\
 striking (a) /ˈstraɪkɪŋ/ làm nổi bật<br>\
-flashy  (a) /ˈflæʃi/ xa hoa, lòe loẹt<br>\
+flashy (a) /ˈflæʃi/ xa hoa, lòe loẹt<br>\
 gaudy (a) /ˈɡɔːdi/ xa hoa, lòe loẹt<br>\
 support (v) /səˈpɔːrt/ hỗ trợ<br>\
 task nhiệm vụ<br>\
 responsibility (n) /rɪˌspɑːnsəˈbɪləti/ (sự chịu) trách nhiệm<br>\
 term thuật ngữ<br>\
-unite  đoàn kết<br>\
+unite đoàn kết<br>\
 associate liên kết<br>\
 environment (n) /ɪnˈvaɪrənmənt/ môi trường<br>\
 factory nhà máy<br>\
@@ -592,7 +591,7 @@ rich giàu<br>\
 skill kỹ năng<br>\
 somehow bằng cách nào đó<br>\
 strength sức mạnh<br>\
-vote  bỏ phiếu<br>\
+vote bỏ phiếu<br>\
 above trên<br>\
 ahead trước<br>\
 amount số lượng<br>\
@@ -612,9 +611,7 @@ scan quét<br>\
 section phần<br>\
 surface bề mặt",
 },
-{
-	title:"4k Book2",
-	en: "awful (a) tệ hại(very bad)<br>\
+{ title:"4k Book2", en: "awful (a) tệ hại(very bad)<br>\
 consist có<br>\
 desire mong muốn<br>\
 eager háo hức<br>\
@@ -799,7 +796,7 @@ sword thanh kiếm<br>\
 tale câu chuyện<br>\
 trap bẫy<br>\
 trial xét xử<br>\
-violent  admission bạo lực nhập học<br>\
+violent admission bạo lực nhập học<br>\
 astronomy thiên văn học<br>\
 despite mặc dù<br>\
 dinosaur (n) /ˈdaɪnəsɔːr/ khủng long<br>\
@@ -815,7 +812,7 @@ row hàng<br>\
 shelf kệ<br>\
 spite mặc dù<br>\
 super (a) /ˈsuːpər/ siêu<br>\
-wet  abuse ướt lạm dụng<br>\
+wet abuse ướt lạm dụng<br>\
 afford có khả năng<br>\
 bake nướng<br>\
 bean đậu<br>\
@@ -849,7 +846,7 @@ proof bằng chứng<br>\
 quit bỏ cuộc<br>\
 spin quay<br>\
 tiny nhỏ<br>\
-tutor  apparent gia sư rõ ràng<br>\
+tutor apparent gia sư rõ ràng<br>\
 blind mù<br>\
 calculate tính toán<br>\
 chat trò chuyện<br>\
@@ -867,7 +864,7 @@ severe nghiêm trọng<br>\
 talent tài năng<br>\
 thesis luận án<br>\
 uniform đồng phục<br>\
-vision  absorb tầm nhìn hấp thụ<br>\
+vision absorb tầm nhìn hấp thụ<br>\
 boss ông chủ<br>\
 committee ủy ban<br>\
 crew phi hành đoàn<br>\
@@ -877,7 +874,7 @@ dine ăn tối<br>\
 donate quyên góp<br>\
 double gấp đôi<br>\
 elevate,flavor nâng cao,hương vị<br>\
-foundation  nền tảng <br>\
+foundation nền tảng <br>\
 generation thế hệ<br>\
 handle xử lý<br>\
 layer lớp<br>\
@@ -892,7 +889,7 @@ emphasize nhấn mạnh<br>\
 flu cúm<br>\
 gesture cử chỉ<br>\
 interrupt ngắt<br>\
-likeness  giống<br>\
+likeness giống<br>\
 moreover hơn nữa<br>\
 recover phục hồi<br>\
 rely dựa vào<br>\
@@ -938,7 +935,7 @@ monk tu sĩ<br>\
 odd lạ<br>\
 pause tạm dừng<br>\
 priest linh mục<br>\
-profession  nghề nghiệp <br>\
+profession nghề nghiệp <br>\
 adopt adopt<br>\
 beg (v) ăn xin, khẩn cầu<br>\
 beyond (prep) /bɪˈjɑːnd/ vượt trên<br>\
@@ -958,7 +955,7 @@ origin origin<br>\
 reject reject<br>\
 silence silence<br>\
 stream (n) /striːm/ suối<br>\
-tone  tone <br>\
+tone tone <br>\
 accomplish hoàn thành<br>\
 approve phê duyệt<br>\
 approximate xấp xỉ<br>\
@@ -978,7 +975,7 @@ recognition công nhận<br>\
 refrigerate làm lạnh<br>\
 rent thuê<br>\
 retire nghỉ hưu<br>\
-statistic  thống kê <br>\
+statistic thống kê <br>\
 astronaut phi hành gia<br>\
 awake thức tỉnh<br>\
 courage lòng can đảm<br>\
@@ -998,7 +995,7 @@ scale tỷ lệ<br>\
 skip bỏ qua<br>\
 stretch kéo dài<br>\
 telescope kính viễn vọng<br>\
-underground  dưới lòng đất <br>\
+underground dưới lòng đất <br>\
 alarm báo động<br>\
 apart (adv) /əˈpɑːrt/ tách<br>\
 arrest bắt giữ<br>\
@@ -1017,7 +1014,7 @@ rob cướp<br>\
 slip trượt<br>\
 somewhat hơi<br>\
 tissue mô<br>\
-yard  sân <br>\
+yard sân <br>\
 alike giống nhau<br>\
 get on my nerves (v) /əˈnɔɪ/ làm phiền<br>\
 architecture kiến trúc<br>\
@@ -1037,7 +1034,7 @@ solid rắn chắc<br>\
 stock cổ phiếu<br>\
 substance chất<br>\
 tomb ngôi mộ<br>\
-wound  vết thương <br>\
+wound vết thương <br>\
 bath tắm<br>\
 bend uốn cong<br>\
 chew nhai<br>\
@@ -1073,7 +1070,7 @@ occasion (n) /əˈkeɪʒn/ dịp, thời cơ<br>\
 penalty hình phạt<br>\
 settle (v) giải quyết vấn đề<br>\
 wallet ví<br>\
-yell  la hét <br>\
+yell la hét <br>\
 accuse tố cáo<br>\
 adjust điều chỉnh<br>\
 amuse vui<br>\
@@ -1092,7 +1089,7 @@ reef rạn san hô<br>\
 shut đóng cửa<br>\
 strict nghiêm ngặt<br>\
 surf (n,v) /sɜːrf/ bọt biển, lướt sóng(website)<br>\
-zone  khu vực <br>\
+zone khu vực <br>\
 apology xin lỗi<br>\
 bold táo bạo<br>\
 capture bắt giữ<br>\
@@ -1112,7 +1109,7 @@ resemble giống<br>\
 symptom triệu chứng<br>\
 tobacco thuốc lá<br>\
 twin (n) con sinh đôi, (v) sinh đôi<br>\
-witch  phù thủy <br>\
+witch phù thủy <br>\
 accompany đi cùng (+to) (+by: passive)<br>\
 bare (a) trần truồng<br>\
 branch nhánh<br>\
@@ -1160,15 +1157,13 @@ found tìm thấy<br>\
 invest đầu tư<br>\
 practical thực tế<br>\
 quarter (n) /ˈkwɔːrtər/ quý<br>\
-scholarship  (n) /ˈskɑːlərʃɪp/ học bổng<br>\
+scholarship (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
 treasure (n) /ˈtreʒər/ kho báu<br>\
 urge (v) /ɜːrdʒ/ thúc giục<br>\
 masquerade (n,v) /mæskəˈreɪd/ (n. dạ hội) hóa trang"
 },
-{
-	title:"4k Book3",
-	en:"arise phát sinh<br>\
+{ title:"4k Book3", en:"arise phát sinh<br>\
 broaden (v) /ˈbrɔːdn/ Mở rộng<br>\
 expand (v) /ɪkˈspænd/ Mở rộng<br>\
 strengthen (v) /ˈstreŋkθn/ tăng cường<br>\
@@ -1225,5 +1220,4 @@ sled (n) /sled/ xe trượt tuyết<br>\
 tease (n,v) /tiːz/ (n)người hay chọc, trêu chọc(tức)<br>\
 valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
 }
-]
-
+] 

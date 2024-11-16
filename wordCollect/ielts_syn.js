@@ -134,7 +134,7 @@ function IELTS_SYN_IsIn(wordFormed) {
 	var arr = IELTS_SYN[0].en.split('<br>')
 	for (var i = 0; i < arr.length; i++) {
 		var wordFullData = arr[i]
-		var regex = new RegExp(`\\b${wordFormed}\\b` , 'g')
+		var regex = new RegExp(`^${wordFormed}\\b` , 'g')   // wordphai đầu dòng
 		var matches = wordFullData.match(regex)
 		if (matches && matches.length > 0 ) {
 			return wordFullData

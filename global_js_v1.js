@@ -4,6 +4,7 @@ const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
 
+var kNgClickTagOpen = '<span ng-click="Idx_n_L_WSp_($event)">';
 var Helper_AudioPitchKey = 'AudioPitch';
 var Helper_AudioRateKey = 'AudioRate';
 var Helper_AdjAudioTimeKey = 'AdjAudioTime';
@@ -98,8 +99,16 @@ var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
 
 function Helper_ArrRemoveDup(arr) {
-	return arr.filter((item, index) => arr.indexOf(item.toLowerCase()) === index); // remove dup
+	var result = [];
+    for(i=0;i<arr.length;i++){
+    	var ele = arr[i] // .toLowerCase()
+      if(result.indexOf(ele) == -1){
+        result.push(ele)
+      }
+    }
+    return result
 }
+
 function longStrToArray(long_txt, deter = ',') {
 	var arr  = long_txt.replace(/\s*\,\s*/g, ",");
 	arr = arr.split(deter);
@@ -126,18 +135,16 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 
 function ngClickOnWord(word, graph) {
 	if (word.trim().length == 0) return graph // safe
-		const tagOpen = '<span ng-click="Idx_n_L_WSp_($event)">'
 	if (ValidateWord(word) 
 		&& word !=='br'
 		&& word !=='hr'
 		&& UNCOUNT_TAG_BEGIN.indexOf(word) === -1
-		&& tagOpen.indexOf(word) === -1
+		&& kNgClickTagOpen.indexOf(word) === -1
 		) 
 	{
-		const tagClose = '</span>'
 		var regex = new RegExp(`\\b${word}\\b` , 'g')
-		return graph.replace(regex, tagOpen + word + tagClose);
-	} else // console.log("ngClickOnWord ignore: " + word)
+		return graph.replace(regex, kNgClickTagOpen + word + '</span>');
+	} // else  console.log("ngClickOnWord ignore: " + word)
 	return graph
 }
 
@@ -174,11 +181,12 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
-	var words = story.en.match(/\b(\w+)('ll)*\b/g);
+	var words = IRR_FindPhraVerb(story.en)
 	var dones = []
 	for (var i = 0; i < words.length; i++) {
 		var word = words[i];
-		if (!isInArr(word, dones)) {
+		if (!isInArr(word, dones)) 
+		{
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
 			enShow = ngClickOnWord(word, enShow);
@@ -186,6 +194,18 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
+	var regex = new RegExp(`\\b<span ng-click=\.+>\.+?</span>\\b` , 'g')
+//	enShow = enShow.replace(regex, kNgClickTagOpen)
+	var matches = enShow.match(/<span ng-click=.+>.+?<\/span>/g)
+	console.log(matches)
+	if (matches) {
+		for (var i = 0; i < matches.length; i++) {
+		var match = matches[i]
+		var abc  = match.replace(/<.+?>/ ,'')
+	//	enShow = enShow.replace(match, abc)
+		}
+		
+	}
 
 	var kBrTag = '<br>'
 	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi

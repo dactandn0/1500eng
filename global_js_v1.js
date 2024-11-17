@@ -6,6 +6,7 @@ const SAME_N_V_TAG_END = '</y1>'
 
 var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
 var kNgClickTagClose = '</kkk>';
+var kNgClickTagClose2 = '<\/kkk>';
 var Helper_AudioPitchKey = 'AudioPitch';
 var Helper_AudioRateKey = 'AudioRate';
 var Helper_AdjAudioTimeKey = 'AdjAudioTime';
@@ -182,9 +183,8 @@ function processStory (story, isAlert = true) {
 				enShow = enShow.replace(regex, '<b>' + voca + '</b>');
 		}
 	}
-//.match(/\b(\w+'*\w*)\b/g);
+
 	var words = IRR_FindPhraVerb(story.en).words
-	var PhraVerbs = IRR_FindPhraVerb(story.en).PhraVerbs
 	var dones = []
 	for (var i = 0; i < words.length; i++) {
 		var word = words[i];
@@ -196,6 +196,7 @@ function processStory (story, isAlert = true) {
 			dones.push(word);
 		}
 	}
+
 
 	var kBrTag = '<br>'
 	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi

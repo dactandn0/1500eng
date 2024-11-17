@@ -157,7 +157,7 @@ Những đứa trẻ chạy một quãng đường dài. Con ma đi theo chúng 
 	en:"The Starfish<br>\
 Last summer I took a trip to an island. I had a lot of fun. I sat and watched the waves and listened to the ocean. I learned to identify birds. I discovered pretty things and enjoyed the taste of new foods. It was a very nice time. <br>\
 <br>\
-One evening I took a pleasant walk by the ocean. When the waves came in, many starfish* fell on the beach. Some starfish went back into the water, and they were safe. But other starfish were still on the sand. They would die if they did not get into the water. There were many starfish on the beach that night. It made me sad, but I knew I could not fix the problem. I stepped very carefully so I did not damage them.<br>\
+One evening I took a pleasant walk by the ocean. When the waves came in, many starfish fell on the beach. Some starfish went back into the water, and they were safe. But other starfish were still on the sand. They would die if they did not get into the water. There were many starfish on the beach that night. It made me sad, but I knew I could not fix the problem. I stepped very carefully so I did not damage them.<br>\
 <br>\
 Then I saw a little girl. She was also sad about the starfish. She wanted to prevent all of them from dying. She asked me if I could perhaps help her. 'To be frank, I don’t think we can do anything,' I said.<br>\
 <br>\
@@ -169,7 +169,7 @@ She stopped to look at me. 'No, I cannot save them all,' she replied. Then she p
 	,vi:"Sao biển<br>\
 Mùa hè năm ngoái, tôi đã đi du lịch đến một hòn đảo. Tôi đã có rất nhiều niềm vui. Tôi ngồi ngắm sóng biển và lắng nghe đại dương. Tôi học cách nhận dạng các loài chim. Tôi đã khám phá ra những điều đẹp đẽ và thưởng thức hương vị của những món ăn mới. Đó là một khoảng thời gian rất tuyệt. <br>\
 <br>\
-Một buổi tối, tôi đi dạo thư giãn bên bờ biển. Khi sóng biển ập vào, nhiều sao biển* đã rơi xuống bãi biển. Một số sao biển đã trở lại nước và chúng đã an toàn. Nhưng những con sao biển khác vẫn còn trên cát. Chúng sẽ chết nếu không xuống nước. Có rất nhiều sao biển trên bãi biển đêm đó. Điều đó khiến tôi buồn, nhưng tôi biết mình không thể giải quyết vấn đề. Tôi bước rất cẩn thận để không làm hỏng chúng.<br>\
+Một buổi tối, tôi đi dạo thư giãn bên bờ biển. Khi sóng biển ập vào, nhiều sao biển đã rơi xuống bãi biển. Một số sao biển đã trở lại nước và chúng đã an toàn. Nhưng những con sao biển khác vẫn còn trên cát. Chúng sẽ chết nếu không xuống nước. Có rất nhiều sao biển trên bãi biển đêm đó. Điều đó khiến tôi buồn, nhưng tôi biết mình không thể giải quyết vấn đề. Tôi bước rất cẩn thận để không làm hỏng chúng.<br>\
 <br>\
 Sau đó, tôi nhìn thấy một bé gái. Cô bé cũng buồn về những con sao biển. Cô bé muốn ngăn không cho tất cả chúng chết. Cô bé hỏi tôi liệu tôi có thể giúp cô bé không. 'Thành thật mà nói, tôi không nghĩ chúng ta có thể làm gì được,' tôi nói.<br>\
 <br>\

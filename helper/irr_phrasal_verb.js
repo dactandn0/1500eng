@@ -69,19 +69,17 @@ function IRR_FindPhraVerb(story) {
 		if (matches)
 		PhraVerbs = PhraVerbs.concat(matches)
 	}
-	var regexStr = ''
+	var phraRegex = ''
 	for (var i = 0; i < PhraVerbs.length; i++) {
 		var ele = PhraVerbs[i]
-		regexStr += ele + "|"
+		phraRegex += ele + "|"
 	}
-	regexStr = regexStr.substring(0, regexStr.length - 1)   //remove last '|'
-	if (regexStr!=='') regexStr = regexStr + '|'
-	var regex = new RegExp(`\\b(${regexStr}\\w+'*\\w*)\\b` , 'g')
+	phraRegex = phraRegex.substring(0, phraRegex.length - 1)   //remove last '|'
+	if (phraRegex!=='') phraRegex = phraRegex + '|'
+	var regex = new RegExp(`\\b(${phraRegex}\\w+'*\\w*)\\b` , 'g')
 //	console.log(regex)
 	var words = story.match(regex);
 	words = Helper_ArrRemoveDup(words)
-//	words.sort((a, b) => b.length - a.length);
-//	console.log(words)
 	var r = []
 	for (var i = 0; i < PhraVerbs.length; i++) {
 		var www = PhraVerbs[i].split(' ')
@@ -90,7 +88,23 @@ function IRR_FindPhraVerb(story) {
 		words = words.filter(function(ele) { return ele !== word && ele !== prep})
 	}
 
-	return {'words':words,'PhraVerbs':PhraVerbs}
+	// dont ngClick with she,he,it if grahp has: she's, he's...
+	wordRutgons = words.filter(function(ele) { return ele.indexOf("'") !== -1 })
+	var re = []
+	var flat = false
+	for (var i = 0; i < words.length; i++) {
+		var ele = words[i]
+		flat = false
+		for (var j = 0; j < wordRutgons.length; j++) {
+			var rutgon = wordRutgons[j]
+			if (rutgon.indexOf(ele) !== -1) {
+				flat = true
+			}
+		}
+		if (!flat) re.push(ele)
+	}
+	re = re.concat(wordRutgons)
+	return {'words':re,'PhraVerbs':PhraVerbs}
 }
 
  // console.log( getVerb_Irr('call')  )

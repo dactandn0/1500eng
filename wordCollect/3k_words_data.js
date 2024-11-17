@@ -949,7 +949,7 @@ impatient (a) /Imipenfant/ thiếu kiên nhẫn<br>\
 sensitive (a) /'sensitiv/ nhạy cảm<br>\
 nice (a) /nais/ tốt bụng<br>\
 emotional (a) /I'mǝufǝnl/ đa cảm<br>\
-emotion (n) cảm xúc<br>\
+emotion (n) /ɪˈməʊʃn/ cảm xúc<br>\
 bad-tempered (a) /'bæd temped/ nóng tính<br>\
 resilient (a) /rɪˈzɪliənt/ kiên cường<br>\
 nervous (a) /'nз:vǝs/ lo lắng<br>\
@@ -1042,12 +1042,14 @@ blackguardly /'blæga:dli/ đều cảng<br>\
 silly (a) /'sili/ ngớ ngẩn<br>\
 in a silly way (adv) ngớ ngẩn<br>\
 shy /Jai/ nhút nhát<br>\
-determined /di'tз:mind/ kiên định<br>\
+determined (a) /di'tз:mind/ kiên định<br>\
 sociable (a) /'sǝufǝbl/ hòa đồng<br>\
 worried /'wɅrid/ lo lắng<br>\
 thoughtful /0:tful/ chu đáo<br>\
 humble /'hɅmbl/ khiêm tốn<br>\
 frank /frænk/ thẳng thắn<br>\
+junky (n) /ˈdʒʌŋki/ kẻ nghiện ngập<br>\
+drawback (n) /ˈdrɔːbæk/ nhược điểm, không giử lời<br>\
 obedient /ǝ'bi:diǝnt/ vâng lời",
 },
 {

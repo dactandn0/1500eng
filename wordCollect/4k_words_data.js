@@ -9,6 +9,7 @@ attack tấn công<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 clever (a) thông minh<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
+although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
@@ -18,7 +19,11 @@ addict (n) /ˈædɪkt/ người ghiện<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
+custom (n) /ˈkʌstəm/ phong tục<br>\
+sticky (a) /ˈstɪki/ dính<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
+square (n,a) /skwer/ quảng trường (a) vuông<br>\
+declaration (n) /dekləˈreɪʃn/ Tuyên ngôn<br>\
 pleased (a) vui lòng<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
@@ -137,28 +142,30 @@ individual cá nhân<br>\
 pet thú cưng<br>\
 reach với tới<br>\
 return trở về<br>\
-survive sống sót<br>\
+survive (v) /sərˈvaɪv/ sống sót<br>\
 voice giọng nói<br>\
 wise (a) /waɪz/ khôn ngoan<br>\
 allow cho phép<br>\
-announce thông báo<br>\
+announce (v) /əˈnaʊns/ thông báo, nhắc<br>\
 beside bên cạnh<br>\
-challenge thách thức<br>\
+taste (n,v) /teɪst/ mùi vị, (v.)thưởng thức<br>\
+challenge (n) /ˈtʃælɪndʒ/ thách thức<br>\
 claim yêu cầu<br>\
-condition điều kiện<br>\
-contribute góp phần<br>\
+condition (n) /kənˈdɪʃn/ điều kiện<br>\
+contribute (v) /kənˈtrɪbjuːt/ góp phần<br>\
 difference khác biệt<br>\
 divide chia rẽ<br>\
 expert chuyên gia<br>\
 famous nổi tiếng<br>\
 force lực lượng<br>\
 harm gây hại<br>\
+against (prep, adv) /əˈɡenst/ chống lại<br>\
 lay đặt<br>\
 peace hòa bình<br>\
 prince hoàng tử<br>\
 keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
 protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
-sense (n) /sens/ cảm giác, giác quan [sense of direction/rhythm/timing/rhythm/timing/fun/adventure<br>\
+sense (n) /sens/ cảm giác, giác quan [sense of timing/fun/serenity<br>\
 sudden đột ngột<br>\
 therefore (adv) /ˈðerfɔːr/ do đó<br>\
 accept chấp nhận<br>\
@@ -261,7 +268,7 @@ crop (n,v) /krɑːp/ v.cắt, vật giặt hái, mùa giặt<br>\
 demand nhu cầu<br>\
 feed thức ăn<br>\
 hole lỗ<br>\
-unwind (v) /ˌʌnˈwaɪnd/ thư giãn<br>\
+unwind (v) /ʌnˈwaɪnd/ thư giãn<br>\
 increase (v) /ɪnˈkriːs/ tăng<br>\
 lord chúa<br>\
 owe nợ<br>\
@@ -274,7 +281,7 @@ structure (n) /ˈstrʌktʃər/ cấu trúc, vật kiến trúc<br>\
 whole toàn bộ<br>\
 coach huấn luyện viên<br>\
 control kiểm soát<br>\
-recollection (n) /ˌrekəˈlekʃn/ ký ức [of + N/Ving]<br>\
+recollection (n) /rekəˈlekʃn/ ký ức [of + N/Ving]<br>\
 description (n) /dɪˈskrɪpʃn/ mô tả<br>\
 direct trực tiếp<br>\
 exam kiểm tra<br>\
@@ -365,7 +372,7 @@ item mục<br>\
 offer cung cấp<br>\
 product sản phẩm<br>\
 property tài sản<br>\
-purchase mua<br>\
+purchase (n,v) /ˈpɜːrtʃəs/ việc mua, mua<br>\
 recommend khuyến nghị<br>\
 select lựa chọn<br>\
 tool công cụ<br>\
@@ -936,11 +943,12 @@ odd lạ<br>\
 pause tạm dừng<br>\
 priest linh mục<br>\
 profession nghề nghiệp <br>\
-adopt adopt<br>\
+whether (conj) /ˈweðər/ liệu, dù là<br>\
+adopt (v) /əˈdɑːpt/ nhận nuôi<br>\
 beg (v) ăn xin, khẩn cầu<br>\
 beyond (prep) /bɪˈjɑːnd/ vượt trên<br>\
 clearly (adv) /ˈklɪrli/ rõ ràng<br>\
-costume costume<br>\
+costume (n) /ˈkɑːstuːm/ trang phục<br>\
 exclaim exclaim<br>\
 extend extend<br>\
 fool fool<br>\

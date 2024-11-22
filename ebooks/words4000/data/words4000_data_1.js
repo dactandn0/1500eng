@@ -180,4 +180,75 @@ Cô bé bắt đầu khóc. Cô bé ngồi dựa vào một tảng đá và suy 
 Cô bé dừng lại nhìn tôi. 'Không, con không thể cứu tất cả chúng được,' cô bé trả lời. Sau đó, cô bé nhặt một con sao biển rất lớn và nói, 'Nhưng con có thể cứu con này.' Và rồi cô bé mỉm cười và ném con sao biển xa nhất có thể xuống biển."
 	,voca:"against,beach,damage,discover,emotion,fix,frank,identify,island,ocean,perhaps,pleasant,still,taste,wave",
 }
+,{
+	idx:"1.7",
+	en:"The Best Prince<br>King Minos was very sick. His condition was getting worse. He had three sons. He loved them all. He had to announce who would become king.<br>\
+Two of the princes stood waiting outside the king's room. Theseus was the oldest and strongest. He thought his father would make him king. Pelias, the second son, thought differently. He was an expert with weapons. He thought the king would choose him.<br>\
+'When I'm king,' Theseus told Pelias, 'I'll let you contribute to the defense of our country. You can lead the army.'<br>\
+Pelias became angry. 'Father knows I'm famous for my sword skills. He'll make me king.'<br>\
+'You?' Theseus yelled. 'He won't choose you!'<br>\
+'The kingdom is mine!' Pelias claimed. 'Father will give it to me—or I'll use force to take it!'<br>\
+Theseus made a sudden move to take out his sword. Then Pelias did the same. 'Beating me will be a challenge,' Theseus said. 'Fight me now. The winner gets the kingdom!'<br>\
+Pelias agreed.<br>\
+King Minos could hear his sons fighting. The youngest son, Jason, stood beside him. He sensed his father's sadness. The king laid his hand flat on Jason's arm.<br>\
+'Your brothers fight too much,' the king told him. 'I must protect my kingdom from all harm. They'll divide it between them. The people won't know what to do. There'll be war. I can't allow either of them to be king. Therefore, I'm making you king. Your kindness has always made you special. It's the difference between you and your brothers. You can bring peace. They can't.'<br>\
+Then the king died. Theseus and Pelias heard that their youngest brother was king. They were surprised. They realized that their fighting was wrong. It had kept them from saying goodbye to their father. They agreed to have Jason as their king. He was the best choice."
+	,vi:"Hoàng tử tuyệt vời nhất<br>Vua Minos đang rất ốm. Tình trạng của ông ngày càng tệ hơn. Ông có ba người con trai. Ông yêu thương tất cả. Ông phải công bố ai sẽ lên ngôi vua.<br>\
+Hai hoàng tử đứng đợi bên ngoài phòng vua. Theseus là người lớn tuổi nhất và khỏe mạnh nhất. Ông nghĩ cha mình sẽ phong mình làm vua. Pelias, người con trai thứ hai, lại nghĩ khác. Anh là một chuyên gia về vũ khí. Anh nghĩ nhà vua sẽ chọn mình.<br>\
+'Khi ta lên ngôi,' Theseus nói với Pelias, 'ta sẽ để ngươi đóng góp vào việc bảo vệ đất nước. Ngươi có thể chỉ huy quân đội.'<br>\
+Pelias nổi giận. 'Cha biết ta nổi tiếng với kiếm thuật. Người sẽ phong ta làm vua.'<br>\
+'Ngươi ư?' Theseus hét lên. 'Người sẽ không chọn ngươi đâu!'<br>\
+'Vương quốc là của ta!' Pelias tuyên bố. 'Cha sẽ trao nó cho ta—hoặc ta sẽ dùng vũ lực để giành lấy nó!'<br>\
+Theseus đột nhiên rút kiếm ra. Sau đó Pelias cũng làm như vậy. 'Đánh bại ta sẽ là một thử thách,' Theseus nói. 'Hãy chiến đấu với ta ngay bây giờ. Người chiến thắng sẽ giành được vương quốc!'<br>\
+Pelias đồng ý.<br>\
+Vua Minos có thể nghe thấy tiếng các con trai mình chiến đấu. Người con trai út, Jason, đứng cạnh ông. Anh cảm nhận được nỗi buồn của cha mình. Nhà vua đặt tay lên cánh tay Jason.<br>\
+'Các anh trai của con chiến đấu quá nhiều,' nhà vua nói với anh ta. 'Ta phải bảo vệ vương quốc của mình khỏi mọi nguy hiểm. Họ sẽ chia nhau nó. Người dân sẽ không biết phải làm gì. Sẽ có chiến tranh. Ta không thể để bất kỳ ai trong số họ lên ngôi vua. Vì vậy, ta sẽ phong con làm vua. Lòng tốt của con luôn khiến con trở nên đặc biệt. Đó là sự khác biệt giữa con và những người anh em của con. Con có thể mang lại hòa bình. Họ thì không.'<br>\
+Sau đó, nhà vua băng hà. Theseus và Pelias nghe tin người em trai út của họ đã lên ngôi vua. Họ rất ngạc nhiên. Họ nhận ra rằng cuộc chiến của họ là sai trái. Điều đó đã khiến họ không thể nói lời tạm biệt với cha mình. Họ đồng ý để Jason làm vua. Anh ấy là sự lựa chọn tốt nhất."
+	,voca:"",
+},
+{
+	idx:"1.8",
+	en:"How the Sun and the Moon Were Made<br>\
+Do you ever wonder where the moon and the sun came from? The Inuit people of Alaska have a theory.<br>\
+They tell a story about a beautiful girl. She was very nice. In contrast, her brother was a mean little boy. One day he proposed something. 'We should go to a party,' he said. The girl accepted. First, it was necessary for her to prepare. She arranged her hair and put on nice clothes. This required a lot of time. But the girl worked hard, and soon she had success. She looked perfect.<br>\
+They attended the party together. The girl was having fun. Later, she walked into the bathroom. Suddenly, the lights were turned off! Someone grabbed her hair and tore her clothes. She ran out of the bathroom. She wanted to know who did this to her.<br>\
+Then she had an idea. She fixed her hair again. This time it was even more beautiful. She even balanced beautiful jewels in it. She wanted to encourage the person to grab it again. She put black dirt in her hair. The purpose of this was to catch the person.<br>\
+She went to the bathroom again, and it was the same pattern. The lights went off, and someone grabbed her hair.<br>\
+When he released it, his hand was black. The girl returned to the party. She knew there was only a single person with a black hand.<br>\
+When she saw that person, he was very familiar. It was her brother!<br>\
+He ran into the woods.<br>\
+The girl ran after him. They both carried fire so they could see in the dark. The smoke went into the air. As they ran, they grew. They became huge.<br>\
+Then they went into space. When the girl’s fire went out, she hung in the sky. She became the moon, and her brother became the sun. They chase each other forever."
+	,vi:"Mặt trời và Mặt trăng được tạo ra như thế nào<br>\
+Bạn có bao giờ tự hỏi mặt trăng và mặt trời đến từ đâu không? Người Inuit ở Alaska có một giả thuyết.<br>\
+Họ kể một câu chuyện về một cô gái xinh đẹp. Cô ấy rất tốt bụng. Ngược lại, anh trai cô ấy là một cậu bé xấu tính. Một ngày nọ, anh ấy đề xuất một điều gì đó. 'Chúng ta nên đi dự tiệc', anh ấy nói. Cô gái đồng ý. Trước tiên, cô ấy cần phải chuẩn bị. Cô ấy chải tóc và mặc quần áo đẹp. Việc này tốn rất nhiều thời gian. Nhưng cô gái đã làm việc chăm chỉ và chẳng mấy chốc cô đã thành công. Cô ấy trông thật hoàn hảo.<br>\
+Họ cùng nhau dự tiệc. Cô gái đang vui vẻ. Sau đó, cô bước vào phòng tắm. Đột nhiên, đèn tắt! Có ai đó túm tóc cô và xé quần áo cô. Cô chạy ra khỏi phòng tắm. Cô muốn biết ai đã làm điều này với mình.<br>\
+Sau đó, cô ấy nảy ra một ý tưởng. Cô ấy lại chải tóc. Lần này, tóc cô ấy còn đẹp hơn nữa. Cô ấy thậm chí còn gắn những viên ngọc tuyệt đẹp vào đó. Cô ấy muốn khuyến khích người đó túm tóc cô ấy lần nữa. Cô ấy bôi đất đen lên tóc. Mục đích của việc này là để bắt được người đó.<br>\
+Cô ấy lại vào phòng tắm, và mọi chuyện vẫn diễn ra như vậy. Đèn tắt, và có ai đó túm tóc cô.<br>\
+Khi anh ta thả tay ra, bàn tay anh ta chuyển sang màu đen. Cô gái quay lại bữa tiệc. Cô biết chỉ có một người duy nhất có bàn tay đen.<br>\
+Khi cô nhìn thấy người đó, anh ta rất quen thuộc. Đó là anh trai cô!<br>\
+Anh ta chạy vào rừng.<br>\
+Cô gái chạy theo anh ta. Cả hai đều mang theo lửa để có thể nhìn trong bóng tối. Khói bốc lên không trung. Khi họ chạy, họ lớn dần. Họ trở nên to lớn.<br>\
+Sau đó, họ bay vào không gian. Khi ngọn lửa của cô gái tắt, cô lơ lửng trên bầu trời. Cô trở thành mặt trăng, và anh trai cô trở thành mặt trời. Họ đuổi theo nhau mãi mãi."
+	,voca:"",
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];

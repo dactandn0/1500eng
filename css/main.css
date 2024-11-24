@@ -123,8 +123,12 @@ background-color: #a55;
 	color:red;
 	font-style: italic;
 }
+/*SAME_N_V_TAG_BEGIN*/
 ._y_1z {
 	text-decoration: underline;
+}
+._y_2z {
+  color: #FFBF00;
 }
 
 #toast-container .toast.toast-info  {

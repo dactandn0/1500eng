@@ -3,6 +3,8 @@ const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
+const PHRA_VERB_TAG_BEGIN = '<y1a class="_y_2z">'
+const PHRA_VERB_TAG_END = '</y1a>'
 
 var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
 var kNgClickTagClose = '</kkk>';
@@ -92,6 +94,7 @@ RANGE = function(min, max, step) {
 
 document.write('<small class="note">\
 	' + UNCOUNT_TAG_BEGIN + 'uncount.n' + UNCOUNT_TAG_END + ' <br>\
+	' + PHRA_VERB_TAG_BEGIN + 'phraVerb' + PHRA_VERB_TAG_END + ' <br>\
 	<u>u:</u> n = v<br>\
 	</small>'
 	);
@@ -184,12 +187,15 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
-	var words = IRR_FindPhraVerb(story.en).words
+	var foundWords = IRR_ExtractWords(story.en)
+	var words = foundWords.words
+	var phraVerbs = foundWords.phraVerbs
 	var dones = []
 	for (var i = 0; i < words.length; i++) {
 		var word = words[i];
 		if (!isInArr(word, dones)) 
 		{
+			enShow = hLightWord(word, phraVerbs, enShow , PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END );
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
 			enShow = ngClickOnWord(word, enShow);

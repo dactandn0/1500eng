@@ -187,7 +187,7 @@ Two of the princes stood waiting outside the king's room. Theseus was the oldest
 'When I'm king,' Theseus told Pelias, 'I'll let you contribute to the defense of our country. You can lead the army.'<br>\
 Pelias became angry. 'Father knows I'm famous for my sword skills. He'll make me king.'<br>\
 'You?' Theseus yelled. 'He won't choose you!'<br>\
-'The kingdom is mine!' Pelias claimed. 'Father will give it to me—or I'll use force to take it!'<br>\
+'The kingdom is mine!' Pelias claimed. 'Father will give it to me or I'll use force to take it!'<br>\
 Theseus made a sudden move to take out his sword. Then Pelias did the same. 'Beating me will be a challenge,' Theseus said. 'Fight me now. The winner gets the kingdom!'<br>\
 Pelias agreed.<br>\
 King Minos could hear his sons fighting. The youngest son, Jason, stood beside him. He sensed his father's sadness. The king laid his hand flat on Jason's arm.<br>\
@@ -198,7 +198,7 @@ Hai hoàng tử đứng đợi bên ngoài phòng vua. Theseus là người lớ
 'Khi ta lên ngôi,' Theseus nói với Pelias, 'ta sẽ để ngươi đóng góp vào việc bảo vệ đất nước. Ngươi có thể chỉ huy quân đội.'<br>\
 Pelias nổi giận. 'Cha biết ta nổi tiếng với kiếm thuật. Người sẽ phong ta làm vua.'<br>\
 'Ngươi ư?' Theseus hét lên. 'Người sẽ không chọn ngươi đâu!'<br>\
-'Vương quốc là của ta!' Pelias tuyên bố. 'Cha sẽ trao nó cho ta—hoặc ta sẽ dùng vũ lực để giành lấy nó!'<br>\
+'Vương quốc là của ta!' Pelias tuyên bố. 'Cha sẽ trao nó cho ta hoặc ta sẽ dùng vũ lực để giành lấy nó!'<br>\
 Theseus đột nhiên rút kiếm ra. Sau đó Pelias cũng làm như vậy. 'Đánh bại ta sẽ là một thử thách,' Theseus nói. 'Hãy chiến đấu với ta ngay bây giờ. Người chiến thắng sẽ giành được vương quốc!'<br>\
 Pelias đồng ý.<br>\
 Vua Minos có thể nghe thấy tiếng các con trai mình chiến đấu. Người con trai út, Jason, đứng cạnh ông. Anh cảm nhận được nỗi buồn của cha mình. Nhà vua đặt tay lên cánh tay Jason.<br>\

@@ -147,9 +147,9 @@ function Text2Speech(word) {
 	utter.rate  = Helper_loadFloat(Helper_AudioRateKey, 1);
 	utter.volume  = 1;
 	utter.lang='en-US';
-	var selectedVoice = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
-	if (selectedVoice !== -1)
-	utter.voice= Helper_Voices[selectedVoice];
+	// var selectedVoice = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
+	// if (selectedVoice !== -1)
+	// utter.voice= Helper_Voices[selectedVoice];
 
 	utter.addEventListener('end', (evt) => {
 		const { charIndex, utterance } = evt
@@ -188,7 +188,7 @@ Helper_SliceHalfString = function (str) {
 	return { p1:partOne, p2:partTwo, full:str }
 }
 
-
+/*
 function setSpeech() {
     return new Promise(
         function (resolve, reject) {
@@ -207,3 +207,4 @@ function setSpeech() {
 
 let s = setSpeech();
 s.then((voices) => Helper_Voices = voices); 
+*/

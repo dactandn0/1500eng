@@ -11,6 +11,9 @@ const BAT_QUI_TAC = [
 
 const PHRASAL_VERB_DATA = [
 	{word: 'call', prep: 'for', mean: 'yêu cầu'},
+	{word: 'take', prep: 'off', mean: 'cất cánh, bắt đầu thành công'},
+	{word: 'take', prep: 'over', mean: 'kiểm soát'},
+	{word: 'take', prep: 'up', mean: 'học/thực hành'},
 	{word: 'take', prep: 'after', mean: 'giống với'},
 	{word: 'look', prep: 'up',  mean: 'ngưỡng mộ'},
 	{word: 'get', prep: 'on',  mean: 'thòa thuận với'},

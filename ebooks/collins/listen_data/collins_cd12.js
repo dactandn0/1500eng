@@ -267,5 +267,23 @@ Lý do mùa hè là mùa tôi yêu thích nhất là vì ánh nắng mặt trờ
 Giám khảo: Bạn có ghét mùa đông không?<br>\
 Ứng viên: Không, tôi không. Mọi mùa đều có điều gì đó để cống hiến. Vào mùa đông, thật tuyệt khi được cuộn tròn trong nhà, với một cốc sô cô la nóng."
 	,voca:"",
+},
+{
+	track:"",
+	en:""
+	,vi:""
+	,voca:"",
 }
+
+
+
+
+
+
+
+
+
+
+
+
 ]

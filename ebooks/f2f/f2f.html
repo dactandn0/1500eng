@@ -1,0 +1,18 @@
+
+<h5 class="mb-4">Face 2 face</h5>
+
+<form name="f2f_bForm" class="my-3" role="group">
+	<input type="radio" name="book" value="1" onchange="bookChange(1)" checked/><span class="mr-3">1</span>
+</form>
+
+<div class="my-1 mb-4">
+     <a ng-repeat="story in stories"
+         ng-click="fetchStory($index);" 
+         ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
+         href="" class="p-2 mr-1"> {{story.track}}
+    </a>
+ </div>
+
+
+<div ng-include="'./includes/storyL.html'" ></div>
+

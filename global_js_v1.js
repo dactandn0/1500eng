@@ -3,8 +3,8 @@ const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
-const PHRA_VERB_TAG_BEGIN = '<y1a class="_y_2z">'
-const PHRA_VERB_TAG_END = '</y1a>'
+const PHRA_VERB_TAG_BEGIN = '<z1a class="_y_2z">'
+const PHRA_VERB_TAG_END = '</z1a>'
 
 var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
 var kNgClickTagClose = '</kkk>';
@@ -138,7 +138,6 @@ function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	return graph;
 }
 
-
 function ngClickOnWord(word, graph) {
 	if (word.trim().length == 0) return graph // safe
 	if (ValidateWord(word) 
@@ -148,9 +147,10 @@ function ngClickOnWord(word, graph) {
 		&& kNgClickTagOpen.indexOf(word) === -1
 		) 
 	{
+	//	console.log(word)
 		regex = new RegExp(`\\b${word}\\b` , 'g')
 		return graph.replace(regex, kNgClickTagOpen + word + kNgClickTagClose);
-	} // else  console.log("ngClickOnWord ignore: " + word)
+	}  else //  console.log("ngClickOnWord ignore: " + word)
 	return graph
 }
 
@@ -202,7 +202,6 @@ function processStory (story, isAlert = true) {
 			dones.push(word);
 		}
 	}
-
 
 	var kBrTag = '<br>'
 	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi

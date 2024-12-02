@@ -15,7 +15,7 @@ const PHRASAL_VERB_DATA = [
 	{word: 'take', prep: 'over', mean: 'kiểm soát'},
 	{word: 'take', prep: 'up', mean: 'học/thực hành'},
 	{word: 'take', prep: 'after', mean: 'giống với'},
-	{word: 'look', prep: 'up',  mean: 'ngưỡng mộ'},
+	{word: 'look', prep: 'up to',  mean: 'ngưỡng mộ'},
 	{word: 'get', prep: 'on',  mean: 'thòa thuận với'},
 	{word: 'fall', prep: 'out',  mean: 'cãi nhau'},
 ]
@@ -88,8 +88,10 @@ function IRR_ExtractWords(story) {
 		var www = phraVerbs[i].split(' ')
 		var word = www[0]
 		var prep = www[1]
-		words = words.filter(function(ele) { return ele !== word && ele !== prep})
+		var prep2 = www[2]
+		words = words.filter(function(ele) { return ele !== word && ele !== prep && ele !== prep2})
 	}
+
 
 	// dont ngClick with she,he,it if graph has: she's, he's...
 	wordRutgons = words.filter(function(ele) { return ele.indexOf("'") !== -1 })

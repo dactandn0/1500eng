@@ -264,6 +264,130 @@ Our children, Anne and Kevin, well, they like eggs, and they eat a lot of pasta.
 	,vi:"FIONA Gia đình tôi thích đồ ăn và đồ uống nào? Vâng, chồng tôi Nick và tôi thích rất nhiều thứ giống nhau. Chúng tôi thích cà phê, nhưng chúng tôi thích cà phê đen, không thích cà phê trắng. Và chúng tôi uống rất nhiều trà, họ nói rằng trà rất tốt cho sức khỏe. Và đồ ăn, chúng tôi không ăn thịt, nhưng chúng tôi ăn rất nhiều cá.<br>\
 Các con của chúng tôi, Anne và Kevin, thích trứng và ăn rất nhiều mì ống. Và chúng là trẻ con, vì vậy tất nhiên chúng thích sô cô la!"
 	,voca:"",
+},
+{
+	track:"04.14",
+	en:"Excuse me.<br>\
+Do you have any maps of London? Yes, they're over there.<br>\
+How much is this map?<br>\
+It's £4.75.<br>\
+How much are these postcards?<br>\
+They're 50p each.<br>\
+Can I have that box of chocolates, please?<br>\
+Sure. Anything else?<br>\
+Yes, this birthday card, please.<br>\
+No, that's all, thanks.<br>\
+OK, that's £10.65.<br>\
+Here you are.<br>\
+Thanks a lot.<br>\
+Thanks very much."
+	,vi:"Xin lỗi.<br>\
+Bạn có bản đồ London nào không? Có, chúng ở đằng kia.<br>\
+Bản đồ này giá bao nhiêu?<br>\
+4,75 bảng Anh.<br>\
+Những tấm bưu thiếp này giá bao nhiêu?<br>\
+Mỗi tấm 50 xu.<br>\
+Tôi có thể lấy hộp sô cô la đó không?<br>\
+Được. Còn gì nữa không?<br>\
+Vâng, tấm thiệp mừng sinh nhật này, làm ơn.<br>\
+Không, thế thôi, cảm ơn.<br>\
+Được rồi, 10,65 bảng Anh.<br>\
+Đây rồi.<br>\
+Cảm ơn rất nhiều.<br>\
+Cảm ơn rất nhiều."
+	,voca:"",
+},
+{
+	track:"05.02",
+	en:"ANSWERS b) 7.45 c) 8.15 d) 9.00 e) 12.45 f) 5.30 g) 6.15 h) 7.30"
+	,vi:"TRẢ LỜI b) 7.45 c) 8.15 d) 9.00 e) 12.45 f) 5.30 g) 6.15 h) 7.30"
+	,voca:"",
+},
+{
+	track:"05.06",
+	en:"TOM Here you are, Carol. A cheese sandwich and a cappuccino.<br>\
+CAROL Thanks a lot, Tom. Oh look, there's Nadine!<br>\
+T Who's Nadine?<br>\
+C She works in the mobile phone shop with me. Nadine! Hi!<br>\
+NADINE Hello, Carol! How are you? <br>\
+C I'm fine, thanks. Nadine, this is my brother Tom.<br>\
+N Nice to meet you, Tom.<br>\
+T You too. So, um, you work in the mobile phone shop with Carol.<br>\
+N Yes, that's right. But I don't work in the week, only at the weekend.<br>\
+T What do you do in the week?<br>\
+N I'm a student at the university. I study English and Italian.<br>\
+T Oh, OK. Where are you from?<br>\
+N I'm from Germany. From Frankfurt.<br>\
+T And where do you live in Manchester? N I live near the university with two other students.<br>\
+C Do you like Manchester?<br>\
+N Yes, I do. The people are nice and there are a lot of things to do here.<br>\
+T What do you do in your free time?<br>\
+N I play tennis and, er, I go to the cinema a lot. And what about you, Tom? Are you a student?<br>\
+T No, I'm a waiter. I work in a restaurant called the New Moon.<br>\
+N Oh yes, I know it. It's in Cross Street, isn't it?"
+	,vi:"TOM Đây rồi, Carol. Một chiếc bánh sandwich phô mai và một cốc cappuccino.<br>\
+CAROL Cảm ơn rất nhiều, Tom. Ồ nhìn kìa, Nadine kìa!<br>\
+T Nadine là ai thế?<br>\
+C Cô ấy làm việc ở cửa hàng điện thoại di động với tôi. Nadine! Xin chào!<br>\
+NADINE Xin chào, Carol! Bạn khỏe không? <br>\
+C Tôi khỏe, cảm ơn. Nadine, đây là anh trai tôi, Tom.<br>\
+N Rất vui được gặp bạn, Tom.<br>\
+T Bạn cũng vậy. Vậy, ừm, bạn làm việc ở cửa hàng điện thoại di động với Carol.<br>\
+N Vâng, đúng rồi. Nhưng tôi không làm việc vào các ngày trong tuần, chỉ làm vào cuối tuần.<br>\
+T Bạn làm gì vào các ngày trong tuần?<br>\
+N Tôi là sinh viên tại trường đại học. Tôi học tiếng Anh và tiếng Ý.<br>\
+T Ồ, được rồi. Bạn đến từ đâu?<br>\
+N Tôi đến từ Đức. Từ Frankfurt.<br>\
+T Và bạn sống ở đâu tại Manchester? N Tôi sống gần trường đại học với hai sinh viên khác.<br>\
+C Bạn có thích Manchester không?<br>\
+N Có, tôi thích. Mọi người ở đó rất tốt và có rất nhiều thứ để làm ở đây.<br>\
+T Bạn làm gì vào thời gian rảnh rỗi?<br>\
+N Tôi chơi quần vợt và, ừm, tôi thường đi xem phim. Còn bạn thì sao, Tom? Bạn là sinh viên à?<br>\
+T Không, tôi là bồi bàn. Tôi làm việc tại một nhà hàng tên là New Moon.<br>\
+N À vâng, tôi biết mà. Nó ở phố Cross, phải không?"
+	,voca:"",
+},
+{
+	track:"05.09",
+	en:"chicken salad | vegetable lasagne | burger and chips | mushroom pizza | apple pie and cream | fruit salad | chocolate ice cream | strawberry ice cream | vanilla ice cream | a bottle of mineral water | still sparkling | a Coke | an orange juice | a coffee | a tea"
+	,vi:"salad gà | lasagna rau | burger và khoai tây chiên | pizza nấm | bánh táo và kem | salad trái cây | kem sô cô la | kem dâu tây | kem vani | một chai nước khoáng | vẫn có ga | một cốc Coke | một cốc nước cam | một tách cà phê | một tách trà"
+	,voca:"",
+},
+{
+	track:"06.05",
+	en:"SUSAN Well, here we are, Isabel. Come in. Welcome to my home.<br>\
+ISABEL Thanks, Susan. Oh, what a beautiful flat!<br>\
+S Thanks a lot.<br>\
+I Do you like living here?<br>\
+S Yes, I do. It's a nice road and the people are very friendly.<br>\
+I That's good. Are there any shops near here?<br>\
+S Yes, there are. In this road there's, um, a small supermarket, a chemist's and a post office.<br>\
+I Is there a bank?<br>\
+S No, there isn't. But there's a cashpoint at the post office. And there are a lot of banks in the centre of Bath, of course. OK. Are we near the city centre?<br>\
+S Yes, it's only two miles from here.<br>\
+I Oh, right. And can I get to the centre by train?<br>\
+S No, there isn't a station near here, but, um, there are buses to the city centre every ten minutes. The bus stop's near the post office.<br>\
+I That's good to know. And what about places to eat?<br>\
+S Well, there aren't any good restaurants near here, but, um, there are some very nice restaurants in the centre.<br>\
+I Great! Maybe we can go out for dinner this evening.<br>\
+S Yes, that's a good idea. Right, this is your room..."
+	,vi:"SUSAN Vâng, chúng ta đây rồi, Isabel. Vào đi. Chào mừng đến nhà tôi.<br>\
+ISABEL Cảm ơn, Susan. Ôi, căn hộ đẹp quá!<br>\
+S Cảm ơn rất nhiều.<br>\
+Tôi có thích sống ở đây không?<br>\
+S Có, tôi thích. Đường đẹp và mọi người rất thân thiện.<br>\
+Tôi Tốt lắm. Có cửa hàng nào gần đây không?<br>\
+S Có, có. Trên đường này có, ừm, một siêu thị nhỏ, một hiệu thuốc và một bưu điện.<br>\
+I Có ngân hàng không?<br>\
+S Không, không có. Nhưng có một máy rút tiền mặt tại bưu điện. Và tất nhiên là có rất nhiều ngân hàng ở trung tâm Bath. Được rồi. Chúng ta có gần trung tâm thành phố không?<br>\
+S Có, chỉ cách đây hai dặm.<br>\
+I Ồ, đúng rồi. Và tôi có thể đến trung tâm bằng tàu hỏa không?<br>\
+S Không, không có nhà ga nào gần đây, nhưng, ừm, có xe buýt đến trung tâm thành phố cứ mười phút một chuyến. Trạm xe buýt ở gần bưu điện.<br>\
+Tôi biết thế thì tốt. Còn những nơi để ăn thì sao?<br>\
+S Ồ, không có nhà hàng nào ngon gần đây, nhưng, ừm, có một số nhà hàng rất đẹp ở trung tâm.<br>\
+Tôi Tuyệt! Có lẽ chúng ta có thể đi ăn tối tối nay.<br>\
+S Vâng, đó là một ý kiến ​​hay. Đúng rồi, đây là phòng của bạn..."
+	,voca:"",
 }
 
 

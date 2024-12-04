@@ -190,6 +190,80 @@ T Vậy thì, ừm, amy.foley@hotmail.co.uk.<br>\
 A Vâng, đúng rồi.<br>\
 T OK, cảm ơn rất nhiều. Đúng rồi, ừm, bạn muốn làm công việc gì?"
 	,voca:"",
+},
+{
+	track:"03.09",
+	en:"Mary I'm Mary and this is Sid, my husband. I'm 65 and Sid is 64 - like the Beatles song! This is a photo of our daughter Fiona and her family. Fiona's a teacher at a big school in Manchester. She's 43 now. or is it 44?<br>\
+No, she's 43. Her husbands name is \ick and he's a doctor. And I think hes a ven good father.<br>\
+And these are their two children - our grandchildren. This is Anne, our granddaughter. She's 14, and she's a ven good musician. And this is our grandson Kevin. He's 11 - oh no, he's 12 now. lts a very nice photo, I think."
+	,vi:"Tôi là Mary và đây là Sid, chồng tôi. Tôi 65 tuổi và Sid 64 tuổi - giống như bài hát của Beatles! Đây là ảnh chụp con gái chúng tôi Fiona và gia đình cô ấy. Fiona là giáo viên tại một trường lớn ở Manchester. Cô ấy hiện 43 tuổi. hay là 44 tuổi?<br>\
+Không, cô ấy 43 tuổi. Tên chồng cô ấy là \ick và anh ấy là bác sĩ. Và tôi nghĩ anh ấy là một người cha rất tốt.<br>\
+Và đây là hai đứa con của họ - những đứa cháu của chúng tôi. Đây là Anne, cháu gái của chúng tôi. Cô ấy 14 tuổi và là một nhạc sĩ rất giỏi. Và đây là cháu trai của chúng tôi Kevin. Nó 11 tuổi - ôi không, giờ nó 12 tuổi rồi. Tôi nghĩ đó là một bức ảnh rất đẹp."
+	,voca:"",
+},
+{
+	track:"03.15",
+	en:"1<br>\
+ASSISTANT Can I help you?<br>\
+CUSTOMER 1 Yes, two cappuccinos, please. A Sure. Anything else?<br>\
+C1 Yes. A croissant, please.<br>\
+A Eat in or take away?<br>\
+C1 Eat in, please.<br>\
+A OK, that's... five pounds eighty-five, please.<br>\
+C1 Thank you very much.<br>\
+A You're welcome.<br>\
+2<br>\
+ASSISTANT Hi, can I help you?<br>\
+CUSTOMER 2 Er, yes, an espresso and an egg sandwich, please.<br>\
+A Sure. Anything else?<br>\
+c2 No, that's all, thanks. A Eat in or take away? c2 Take away, please.<br>\
+A OK, that's, um, three pounds seventy-five, please.<br>\
+c2 Thanks a lot.<br>\
+A You're welcome."
+	,vi:"1<br>\
+TRỢ LÝ Tôi có thể giúp gì cho bạn?<br>\
+KHÁCH HÀNG 1 Vâng, hai tách cappuccino, làm ơn. A Chắc chắn rồi. Còn gì nữa không?<br>\
+C1 Vâng. Một chiếc bánh sừng bò, làm ơn.<br>\
+A Ăn tại chỗ hay mang về?<br>\
+C1 Ăn tại chỗ, làm ơn.<br>\
+A Được rồi, vậy là... năm pound tám mươi lăm, làm ơn.<br>\
+C1 Cảm ơn bạn rất nhiều.<br>\
+A Không có gì.<br>\
+2<br>\
+TRỢ LÝ Xin chào, tôi có thể giúp gì cho bạn?<br>\
+KHÁCH HÀNG 2 À, vâng, một tách espresso và một chiếc bánh sandwich trứng, làm ơn.<br>\
+A Chắc chắn rồi. Còn gì nữa không?<br>\
+c2 Không, thế thôi, cảm ơn bạn. A Ăn tại chỗ hay mang về? c2 Vui lòng mang đi.<br>\
+A Được rồi, ừm, ba pound bảy mươi lăm, vui lòng.<br>\
+c2 Cảm ơn rất nhiều.<br>\
+A Không có gì."
+	,voca:"",
+},
+{
+	track:"03.16",
+	en:"Can I help you?<br>\
+Yes, two cappuccinos, please.<br>\
+Sure. Anything else?<br>\
+Yes, a croissant, please.<br>\
+No, that's all, thanks.<br>\
+Eat in or take away?<br>\
+Eat in, please. Take away, please. OK, that's £5.85, please. Thank you very much. Thanks a lot. You're welcome."
+	,vi:"Tôi có thể giúp gì cho bạn không?<br>\
+Vâng, hai cốc cappuccino, làm ơn.<br>\
+Được. Còn gì nữa không?<br>\
+Vâng, một chiếc bánh sừng bò, làm ơn.<br>\
+Không, thế thôi, cảm ơn.<br>\
+Ăn tại chỗ hay mang về?<br>\
+Ăn tại chỗ, làm ơn. Mang về, làm ơn. Được rồi, giá là 5,85 bảng Anh, làm ơn. Cảm ơn bạn rất nhiều. Cảm ơn rất nhiều. Không có gì."
+	,voca:"",
+},
+{
+	track:"03.19",
+	en:"FIONA What food and drink does my family like? Well, my husband Nick and I like a lot of the same things. We love coffee, but we like it black, not white. And we drink a lot of tea it's very good for you, they say. And food, well, we don't eat meat, but we eat a lot of fish.<br>\
+Our children, Anne and Kevin, well, they like eggs, and they eat a lot of pasta. And they're children, so they love chocolate, of course!"
+	,vi:"FIONA Gia đình tôi thích đồ ăn và đồ uống nào? Vâng, chồng tôi Nick và tôi thích rất nhiều thứ giống nhau. Chúng tôi thích cà phê, nhưng chúng tôi thích cà phê đen, không thích cà phê trắng. Và chúng tôi uống rất nhiều trà, họ nói rằng trà rất tốt cho sức khỏe. Và đồ ăn, chúng tôi không ăn thịt, nhưng chúng tôi ăn rất nhiều cá.<br>\
+Các con của chúng tôi, Anne và Kevin, thích trứng và ăn rất nhiều mì ống. Và chúng là trẻ con, vì vậy tất nhiên chúng thích sô cô la!"
+	,voca:"",
 }
 
 

@@ -388,6 +388,148 @@ S Ồ, không có nhà hàng nào ngon gần đây, nhưng, ừm, có một số
 Tôi Tuyệt! Có lẽ chúng ta có thể đi ăn tối tối nay.<br>\
 S Vâng, đó là một ý kiến ​​hay. Đúng rồi, đây là phòng của bạn..."
 	,voca:"",
+},
+{
+	title:"Linking sound",
+	track:"06.07",
+	en:"There's an expensive market. <br>\
+There are some old buildings. <br>\
+There isn't an airport. <br>\
+There aren't any museums. <br>\
+Is there a post office? Yes, there is.<br>\
+No, there isn't.<br>\
+Are there any nice old cafés?<br>\
+Yes, there are.<br>\
+No, there aren't."
+	,vi:"Có một khu chợ đắt_đắt. <br>\
+Có một số tòa nhà cũ. <br>\
+Không có sân bay. <br>\
+Không có bảo tàng nào. <br>\
+Có bưu điện không? Có, có.<br>\
+Không, không có.<br>\
+Có quán cà phê cũ đẹp nào không?<br>\
+Có, có.<br>\
+Không, không có."
+	,voca:"",
+},
+{
+	track:"06.14",
+	en:"LISA My favourite colour is pink and this is my favourite dress. I love this coat too, and these shoes. I have about... about thirty pairs of shoes at home, but I never wear trainers. I don't think they look good on girls.<br>\
+BRAD I usually wear jeans, a T-shirt and, um, these trainers. My clothes are usually blue or black, and I never wear brown. Oh, and this is my favourite jacket, this black one. It's about five years old and I love it!<br>\
+WAYNE I love shopping for clothes and I have about ten suits at home. I always wear a suit and tie for work, and, er, this is my favourite shirt, this blue one. But I never wear jeans. They don't look good on me.<br>\
+MONICA I usually wear a skirt for work, like today, and I love wearing jumpers when it's cold. And these are my favourite boots. I wear them all the time. But, um, but I never wear dresses. I don't like them."
+	,vi:"LISA Màu yêu thích của tôi là màu hồng và đây là chiếc váy yêu thích của tôi. Tôi cũng thích chiếc áo khoác này và đôi giày này. Tôi có khoảng... khoảng ba mươi đôi giày ở nhà, nhưng tôi không bao giờ đi giày thể thao. Tôi không nghĩ chúng hợp với con gái.<br>\
+BRAD Tôi thường mặc quần jean, áo phông và, ừm, đôi giày thể thao này. Quần áo của tôi thường là màu xanh hoặc đen, và tôi không bao giờ đi màu nâu. À, và đây là chiếc áo khoác yêu thích của tôi, chiếc màu đen này. Nó đã khoảng năm năm tuổi và tôi rất thích nó!<br>\
+WAYNE Tôi thích mua sắm quần áo và tôi có khoảng mười bộ vest ở nhà. Tôi luôn mặc vest và cà vạt khi đi làm, và, ừm, đây là chiếc áo sơ mi yêu thích của tôi, chiếc áo màu xanh này. Nhưng tôi không bao giờ mặc quần jean. Chúng không hợp với tôi.<br>\
+MONICA Tôi thường mặc váy khi đi làm, như hôm nay, và tôi thích mặc áo len khi trời lạnh. Và đây là đôi bốt yêu thích của tôi. Tôi luôn đi chúng. Nhưng, ừm, nhưng tôi không bao giờ mặc váy. Tôi không thích chúng."
+	,voca:"",
+},
+{
+	track:"07.07",
+	en:"MRS JONES Hello, Maria. My name's Patricia Jones. Nice to meet you.<br>\
+MARIA You too.<br>\
+MRS J Right, we want an au pair to help us with our two children, Ella and Daniel. <br>\
+M OK. How old are they?<br>\
+MRS J Ella's eleven and Daniel's nine.<br>\
+M Right.<br>\
+MRS J So, I have some questions if that's OK.<br>\
+M Of course.<br>\
+MRS J Can you cook?<br>\
+M Yes, I can. I love cooking. I often cook dinner for my family at home.<br>\
+MRS J That's good. Can you drive?<br>\
+M Yes, I can.<br>\
+MRSJ OK, great. And can you speak German<br>\
+or French?<br>\
+M Um, I can't speak German but I can speak French well.<br>\
+MRS J Oh, great. The children both study French. And what about free time activities? Can you swim?<br>\
+M Yes, I can.<br>\
+MRS J And can you play tennis?<br>\
+M No, I can't. Sorry. I don't like sport very much.<br>\
+MRS J That's OK. What about music? Can you play the piano?<br>\
+M No, I can't. But I can sing and I can play the guitar.<br>\
+MRS J Oh, that's good. Daniel plays the guitar too. Maybe you can help him. <br>\
+M Yes, of course.<br>\
+MRS J OK, one last question.<br>\
+M Yes, Mrs Jones?<br>\
+MRS J When can you start?"
+	,vi:"BÀ JONES Xin chào, Maria. Tôi tên là Patricia Jones. Rất vui được gặp bạn.<br>\
+MARIA Bạn cũng vậy.<br>\
+BÀ J Đúng rồi, chúng tôi muốn một người trông trẻ giúp chúng tôi trông hai đứa con, Ella và Daniel. <br>\
+M Được rồi. Chúng bao nhiêu tuổi?<br>\
+BÀ J Ella mười một tuổi và Daniel chín tuổi.<br>\
+M Được rồi.<br>\
+BÀ J Vậy, tôi có một số câu hỏi không biết có được không.<br>\
+M Tất nhiên rồi.<br>\
+BÀ J Bạn có thể nấu ăn không?<br>\
+M Có, tôi có thể. Tôi thích nấu ăn. Tôi thường nấu bữa tối cho gia đình ở nhà.<br>\
+BÀ J Tốt lắm. Bạn có thể lái xe không?<br>\
+M Có, tôi có thể.<br>\
+BÀ J Được rồi, tuyệt. Và bạn có thể nói tiếng Đức<br>\
+hoặc tiếng Pháp không?<br>\
+M Ừm, tôi không thể nói tiếng Đức nhưng tôi có thể nói tiếng Pháp tốt.<br>\
+BÀ J Ồ, tuyệt. Cả hai đứa trẻ đều học tiếng Pháp. Và các hoạt động giải trí thì sao? Bạn có thể bơi không?<br>\
+M Có, tôi có thể.<br>\
+BÀ J Và bạn có thể chơi quần vợt không?<br>\
+M Không, tôi không thể. Xin lỗi. Tôi không thích thể thao lắm.<br>\
+BÀ J Không sao. Còn âm nhạc thì sao? Bạn có thể chơi piano không?<br>\
+M Không, tôi không thể. Nhưng tôi có thể hát và tôi có thể chơi guitar.<br>\
+BÀ J Ồ, tốt quá. Daniel cũng chơi guitar. Có lẽ bạn có thể giúp cậu ấy. <br>\
+M Vâng, tất nhiên rồi.<br>\
+BÀ J Được rồi, một câu hỏi cuối cùng.<br>\
+M Vâng, bà Jones?<br>\
+BÀ J Khi nào bạn có thể bắt đầu?"
+	,voca:"",
+},
+{
+	track:"07.11",
+	en:"Excuse me. Where's the museum? <br>\
+Excuse me. Is there a bank near here? <br>\
+Go along this road and turn left. <br>\
+Go along this road and turn right. <br>\
+That's Park Street.<br>\
+The museum is on the right, next to the theatre. <br>\
+The bank is on the left, opposite the station. <br>\
+It's over there, near the cinema."
+	,vi:"Xin lỗi. Bảo tàng ở đâu? <br>\
+Xin lỗi. Có ngân hàng nào gần đây không? <br>\
+Đi dọc theo con đường này và rẽ trái. <br>\
+Đi dọc theo con đường này và rẽ phải. <br>\
+Đó là phố Park.<br>\
+Bảo tàng ở bên phải, cạnh nhà hát. <br>\
+Ngân hàng ở bên trái, đối diện nhà ga. <br>\
+Nó ở đằng kia, gần rạp chiếu phim."
+	,voca:"",
+},{
+	track:"07.13",
+	en:"send emails <br>\
+receive emails<br>\
+buy concert tickets <br>\
+buy theatre tickets<br>\
+watch videos<br>\
+watch TV programmes<br>\
+listen to the radio <br>\
+chat to friends <br>\
+chat to family<br>\
+buy things <br>\
+sell things <br>\
+book flights<br>\
+book holidays<br>\
+download music"
+	,vi:"gửi email <br>\
+nhận email<br>\
+mua vé hòa nhạc <br>\
+mua vé xem kịch<br>\
+xem video<br>\
+xem chương trình truyền hình<br>\
+nghe radio <br>\
+trò chuyện với bạn bè <br>\
+trò chuyện với gia đình<br>\
+mua đồ <br>\
+bán đồ <br>\
+đặt chuyến bay<br>\
+đặt kỳ nghỉ<br>\
+tải nhạc"
+	,voca:"",
 }
 
 

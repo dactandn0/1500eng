@@ -530,6 +530,261 @@ bán đồ <br>\
 đặt kỳ nghỉ<br>\
 tải nhạc"
 	,voca:"",
+},
+{
+	track:"07.14",
+	en:"INTERVIEWER Excuse me?<br>\
+ALICE Yes?<br>\
+I Can I ask you some questions about the Internet?<br>\
+A Yes, sure.<br>\
+I Thanks very much. OK, do you send and receive emails?<br>\
+A Yes, of course. I get a hundred emails a day at work!<br>\
+Right. And do you buy concert or theatre tickets online?<br>\
+A Yes, I do.<br>\
+I OK. Do you watch videos or TV programmes on the Internet?<br>\
+A Yes, all the time. I love YouTube. It's my favourite website.<br>\
+I OK, thanks. And what about the radio? Do you listen to the radio online?<br>\
+A Er, no, I don't.<br>\
+I Do you chat to friends or family online? <br>\
+A Yes, sometimes. My sister lives in New York and we chat online every week. <br>\
+I OK. Do you buy and sell things online? <br>\
+A Yes, I buy DVDs on Amazon and sell them again on eBay.<br>\
+I And do you book flights or holidays online?<br>\
+A No, I don't. My husband always does that. OK, the last question. Do you download music from the Internet?<br>\
+A No, I don't. I don't have an iPod.<br>\
+I OK, thanks very much, that's great.<br>\
+A No problem. Bye."
+	,vi:"NGƯỜI PHỎNG VẤN Xin lỗi?<br>\
+ALICE Vâng?<br>\
+Tôi có thể hỏi bạn một số câu hỏi về Internet không?<br>\
+A Vâng, chắc chắn rồi.<br>\
+Tôi Cảm ơn bạn rất nhiều. Được rồi, bạn có gửi và nhận email không?<br>\
+A Vâng, tất nhiên rồi. Tôi nhận được một trăm email mỗi ngày tại nơi làm việc!<br>\
+Đúng rồi. Và bạn có mua vé hòa nhạc hoặc vé xem kịch trực tuyến không?<br>\
+A Có, tôi có.<br>\
+Tôi OK. Bạn có xem video hoặc chương trình truyền hình trên Internet không?<br>\
+A Có, mọi lúc. Tôi thích YouTube. Đó là trang web yêu thích của tôi.<br>\
+Tôi OK, cảm ơn. Còn radio thì sao? Bạn có nghe radio trực tuyến không?<br>\
+A Ờ, không, tôi không nghe.<br>\
+Tôi Bạn có trò chuyện với bạn bè hoặc gia đình trực tuyến không? <br>\
+A Có, đôi khi. Chị gái tôi sống ở New York và chúng tôi trò chuyện trực tuyến hàng tuần. <br>\
+Tôi OK. Bạn có mua và bán đồ trực tuyến không? <br>\
+A Có, tôi mua DVD trên Amazon và bán lại trên eBay.<br>\
+I Và bạn có đặt vé máy bay hoặc kỳ nghỉ trực tuyến không?<br>\
+A Không, tôi không. Chồng tôi luôn làm thế. Được rồi, câu hỏi cuối cùng. Bạn có tải nhạc từ Internet không?<br>\
+A Không, tôi không. Tôi không có iPod.<br>\
+I OK, cảm ơn bạn rất nhiều, tuyệt lắm.<br>\
+A Không vấn đề gì. Tạm biệt."
+	,voca:"",
+},{
+	track:"08.03",
+	en:"I was at the World Cup Final. <br>\
+We were near the Opera House.<br>\
+The stadium wasn't full.<br>\
+They weren't very happy.<br>\
+I was very young at the time. <br>\
+It was a great match!<br>\
+It was a fantastic New Year! <br>\
+There were some amazing fireworks! <br>\
+The concert wasn't very long."
+	,vi:"Tôi đã ở trận chung kết World Cup.<br>\
+Chúng tôi ở gần Nhà hát Opera.<br>\
+Sân vận động không đông người.<br>\
+Họ không vui lắm.<br>\
+Lúc đó tôi còn rất trẻ. <br>\
+Đó là một trận đấu tuyệt vời!<br>\
+Đó là một năm mới tuyệt vời! <br>\
+Có một số màn bắn pháo hoa tuyệt đẹp! <br>\
+Buổi hòa nhạc không kéo dài quá lâu."
+	,voca:"",
+},
+{
+	track:"08.06",
+	en:"FRIEND Rajeet, are you busy on Saturday? <br>\
+RAJEET Yes, I am, sorry. It's my wedding anniversary.<br>\
+F Oh, happy anniversary!<br>\
+R Thanks a lot. It's amazing that my wedding was ten years ago.<br>\
+F Was it in London?<br>\
+R No, it wasn't. It was in Mumbai, in India. <br>\
+F Really?<br>\
+R Yes. Gita was born in the UK, but her father's parents live in Mumbai.<br>\
+F And how old were you on your wedding day?<br>\
+R I was 34 and Gita was 27.<br>\
+F Oh. Was it a big wedding?<br>\
+R Yes, it was. There were three hundred people there.<br>\
+F Oh, wow! Were all your family at the wedding?<br>\
+R No, they weren't. My brother was in Australia, so he wasn't there. (Oh.) But my parents and my two sisters were there. <br>\
+F And was there a party after the wedding? R Yes, there was - for three days!<br>\
+F Three days?! That's amazing!<br>\
+R Yes, there was fantastic Indian food and a lot of dancing. I was very tired at the end! <br>\
+F I'm sure you were. So what are your plans for Saturday?"
+	,vi:"BẠN Rajeet, bạn có bận vào thứ Bảy không? <br>\
+RAJEET Vâng, tôi bận, xin lỗi. Hôm nay là kỷ niệm ngày cưới của tôi.<br>\
+F Ồ, kỷ niệm vui vẻ!<br>\
+R Cảm ơn bạn rất nhiều. Thật tuyệt khi đám cưới của tôi diễn ra cách đây mười năm.<br>\
+F Có phải ở London không?<br>\
+R Không, không phải. Mà là ở Mumbai, Ấn Độ. <br>\
+F Thật sao?<br>\
+R Vâng. Gita sinh ra ở Anh, nhưng ông bà nội cô ấy sống ở Mumbai.<br>\
+F Và bạn bao nhiêu tuổi vào ngày cưới của mình?<br>\
+R Tôi 34 tuổi và Gita 27 tuổi.<br>\
+F Ồ. Đó có phải là một đám cưới lớn không?<br>\
+R Vâng, có. Có ba trăm người ở đó.<br>\
+F Ồ, thật tuyệt! Cả gia đình bạn đều có mặt tại đám cưới không?<br>\
+R Không, họ không có mặt. Anh trai tôi ở Úc nên không có ở đó. (Ồ.) Nhưng bố mẹ và hai chị gái tôi đều ở đó. <br>\
+F Và có tiệc sau đám cưới không? R Có chứ - trong ba ngày!<br>\
+F Ba ngày?! Thật tuyệt!<br>\
+R Có, có đồ ăn Ấn Độ tuyệt vời và rất nhiều điệu nhảy. Tôi rất mệt vào cuối buổi! <br>\
+F Tôi chắc là bạn cũng vậy. Vậy bạn có kế hoạch gì cho thứ Bảy?"
+	,voca:"",
+},
+{
+	track:"08.13",
+	en:"SAM Happy birthday! Twenty-one again! <br>\
+HELEN Thanks a lot.<br>\
+S Here's a present for you.<br>\
+H Ooh, thank you. Oh, what_an_amazing dress! It's a beautiful colour too. Oh, thanks, Sam. I love it.<br>\
+S I'm pleased you like it. So, what shall we do this evening?<br>\
+H Oh, I don't know. Do you have any good ideas?<br>\
+S Let's have dinner at your favourite restaurant.<br>\
+H You mean Antonio's? No, I don't think so. We were there a week ago.<br>\
+S Yes, OK. Why don't we go to the cinema?<br>\
+H Maybe, but we go to the cinema every week.<br>\
+S Hmm. I know! Let's go to the theatre. We never do that.<br>\
+H Yes, that's a good idea. Do you know what's on?<br>\
+S Well, there's a new play on at the Grand Theatre. People say that it's very good. <br>\
+H Great! Let's go to that. Where shall we meet?<br>\
+S Let's meet at the theatre. It's_in_Old Street, near the museum.<br>\
+H Oh yes, I know where it is. What time shall we meet?<br>\
+S About seven o'clock. Then we can have a drink first.<br>\
+H Yes, good idea.<br>\
+S Right, time to go. See you this evening, birthday girl!<br>\
+H Bye. Have a good day."
+	,vi:"SAM Chúc mừng sinh nhật! Lại hai mươi mốt tuổi! <br>\
+HELEN Cảm ơn rất nhiều.<br>\
+S Đây là quà tặng cho bạn.<br>\
+H Ồ, cảm ơn bạn. Ồ, chiếc váy thật tuyệt! Màu sắc cũng đẹp nữa. Ồ, cảm ơn bạn, Sam. Mình thích nó.<br>\
+S Mình vui vì bạn thích nó. Vậy, tối nay chúng ta sẽ làm gì?<br>\
+H Ồ, mình không biết nữa. Bạn có ý tưởng nào hay không?<br>\
+S Chúng ta hãy ăn tối tại nhà hàng yêu thích của bạn nhé.<br>\
+H Ý bạn là Antonio à? Không, mình không nghĩ vậy. Chúng ta đã ở đó một tuần trước.<br>\
+S Được, được. Tại sao chúng ta không đi xem phim nhỉ?<br>\
+H Có thể, nhưng chúng ta đi xem phim mỗi tuần.<br>\
+S Ừm. Mình biết rồi! Chúng ta hãy đi xem kịch. Chúng ta không bao giờ làm thế.<br>\
+H Vâng, đó là một ý kiến ​​hay. Bạn có biết chương trình gì không?<br>\
+S À, có một vở kịch mới đang được trình diễn tại Nhà hát lớn. Mọi người nói rằng vở kịch rất hay. <br>\
+H Tuyệt! Chúng ta đến đó nhé. Chúng ta sẽ gặp nhau ở đâu?<br>\
+S Chúng ta sẽ gặp nhau tại nhà hát. Ở Phố Old, gần bảo tàng.<br>\
+H Ồ vâng, tôi biết ở đâu. Chúng ta sẽ gặp nhau lúc mấy giờ?<br>\
+S Khoảng bảy giờ. Sau đó chúng ta có thể uống một ly trước.<br>\
+H Vâng, ý kiến ​​hay.<br>\
+S Được rồi, đến giờ đi thôi. Hẹn gặp lại bạn vào tối nay, cô gái sinh nhật!<br>\
+H Tạm biệt. Chúc bạn một ngày tốt lành."
+	,voca:"",
+},
+{
+	track:"08.17",
+	en:"a) three hundred and sixty-five <br>\
+b) nine hundred and ninety-nine <br>\
+c) seventeen thousand <br>\
+d) sixty-two thousand, four hundred <br>\
+e) two hundred and fifty thousand <br>\
+f) one million, two hundred thousand <br>\
+g) eighteen million"
+	,vi:"a) ba trăm sáu mươi lăm <br>\
+b) chín trăm chín mươi chín <br>\
+c) mười bảy nghìn <br>\
+d) sáu mươi hai nghìn, bốn trăm <br>\
+e) hai trăm năm mươi nghìn <br>\
+f) một triệu, hai trăm nghìn <br>\
+g) mười tám triệu"
+	,voca:"",
+},
+{
+	track:"08.18",
+	en:"a) 30,000 <br>\
+b) 125,000 <br>\
+c) 150,000 <br>\
+d) 1,500 <br>\
+e) 177,500 <br>\
+f) 70,000,000"
+	,vi:"a) 30,000 <br>\
+b) 125,000 <br>\
+c) 150,000 <br>\
+d) 1,500 <br>\
+e) 177,500 <br>\
+f) 70,000,000"
+	,voca:"",
+},
+{
+	track:"09.05",
+	en:"1 I liked your photos. I like your photos. <br>\
+2 We live in Spain. We lived in Spain. <br>\
+3 They arrived at ten. They arrive at ten. <br>\
+4 We talk every day. We talked every day. <br>\
+5 I want to go home. I wanted to go home. <br>\
+6 They played football a lot. They play football a lot."
+	,vi:"1 Tôi thích ảnh của bạn. Tôi thích ảnh của bạn. <br>\
+2 Chúng tôi sống ở Tây Ban Nha. Chúng tôi đã sống ở Tây Ban Nha. <br>\
+3 Họ đến lúc mười giờ. Họ đến lúc mười giờ. <br>\
+4 Chúng tôi nói chuyện hàng ngày. Chúng tôi nói chuyện hàng ngày. <br>\
+5 Tôi muốn về nhà. Tôi muốn về nhà. <br>\
+6 Họ chơi bóng đá rất nhiều. Họ chơi bóng đá rất nhiều."
+	,voca:"",
+},
+{
+	track:"10.06",
+	en:"1 What are you going to do next weekend? <br>\
+2 What are you going to do after class? <br>\
+3 When are you going to do your homework?<br>\
+4 What time are you going to get up tomorrow?<br>\
+5 Where are you going to have dinner tomorrow evening?<br>\
+6 Where are you going to go on holiday next year?"
+	,vi:"1 Bạn sẽ làm gì vào cuối tuần tới? <br>\
+2 Bạn sẽ làm gì sau giờ học? <br>\
+3 Khi nào bạn sẽ làm bài tập về nhà?<br>\
+4 Ngày mai bạn sẽ dậy lúc mấy giờ?<br>\
+5 Tối mai bạn sẽ ăn tối ở đâu?<br>\
+6 Năm sau bạn sẽ đi nghỉ ở đâu?"
+	,voca:"",
+},
+{
+	track:"10.09",
+	en:"Have a good holiday! <br>\
+Thanks a lot.<br>\
+Have a good journey! <br>\
+Have a good day!<br>\
+Have a good weekend! <br>\
+Have a good birthday! <br>\
+Have a good time! <br>\
+See you in September. <br>\
+Yes, see you.<br>\
+See you in two weeks. <br>\
+See you next month. <br>\
+See you on Monday.<br>\
+Good luck with your exam. <br>\
+Thanks very much.<br>\
+Good luck with your new job. <br>\
+Good luck with your English test. <br>\
+Good luck with your new school."
+	,vi:"Chúc bạn có một kỳ nghỉ vui vẻ! <br>\
+Cảm ơn rất nhiều.<br>\
+Chúc bạn có một chuyến đi tốt đẹp! <br>\
+Chúc bạn một ngày tốt lành!<br>\
+Chúc bạn có một kỳ nghỉ cuối tuần vui vẻ! <br>\
+Chúc bạn có một sinh nhật vui vẻ! <br>\
+Chúc bạn có một khoảng thời gian vui vẻ! <br>\
+Hẹn gặp lại bạn vào tháng 9. <br>\
+Vâng, hẹn gặp lại bạn.<br>\
+Hẹn gặp lại bạn sau hai tuần nữa. <br>\
+Hẹn gặp lại bạn vào tháng sau. <br>\
+Hẹn gặp lại bạn vào thứ Hai.<br>\
+Chúc bạn may mắn với kỳ thi của mình. <br>\
+Cảm ơn bạn rất nhiều.<br>\
+Chúc bạn may mắn với công việc mới. <br>\
+Chúc bạn may mắn với bài kiểm tra tiếng Anh của mình. <br>\
+Chúc bạn may mắn với ngôi trường mới của mình."
+	,voca:"",
 }
 
 

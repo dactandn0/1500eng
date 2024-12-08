@@ -1,6 +1,7 @@
 // include other *.js
 
 document.write('<script src="./ebooks/f2f/f2f_b1_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/f2f/f2f_b2_data.js" type="text/javascript"></script>');
 
 var app = angular.module("f2fApp", []);
 app.controller("f2fCtrl", function($scope, $rootScope, $timeout ) {
@@ -13,12 +14,12 @@ $scope.storyIdx = 0;
 bookChange = function (book) {
 	switch (book) {
 		case 1: kSTORIES = f2f_b1_stories; break;
+		case 2: kSTORIES = f2f_b2_stories; break;
 	}
 	Helper_saveDB("f2f_b", book);
 	$scope.book = book;
 	$scope.fetchStory($scope.storyIdx, true);
 }
-
 
 $scope.createAudioSrc = function() {
 	return "./ebooks/f2f/f2f_b" + $scope.book + "/" + $scope.story.track + '.mp3';
@@ -54,6 +55,8 @@ $scope.fetchStory = function (idx, reset=true)
 	}
 
 	$scope.stories = kSTORIES;
+
+	if (idx > kSTORIES.length-1) { idx = 0 }; 
 	$scope.storyIdx = idx;
 	$scope.story = $scope.stories[idx];
 

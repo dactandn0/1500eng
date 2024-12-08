@@ -170,10 +170,11 @@ function processStory (story, isAlert = true) {
 	
 	story.enShow = story.en;
 	let enShow = story.enShow
-	let viShow = story.vi
+	let viShow = !story.vi ? "" : story.vi.trim()
 	enShow = doReplaceWords(enShow)
 	enShow = fixDots(enShow)
-	if (viShow) viShow= fixDots(viShow)
+	let bHasVi = viShow.length > 0
+	if (bHasVi) viShow= fixDots(viShow)
 
 	if (story.voca) {
 		var vocas = story.voca.split(',');
@@ -202,16 +203,17 @@ function processStory (story, isAlert = true) {
 			dones.push(word);
 		}
 	}
-
+	var enAndVi = ''
+	if (bHasVi) 
+	{
 	var kBrTag = '<br>'
 	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
-	var enAndVi = ''
 	var viii = ''
 	var sentencesEn = enShow.match(rgSen);
 	var sentencesVi = '';
 	if (viShow) sentencesVi = viShow.match(rgSen);
-	if (sentencesEn.length === sentencesVi.length) {
-	
+	if (sentencesEn.length === sentencesVi.length) 
+	{
 	} else if (isAlert) alert('sentencesEn.length !== sentencesVi.length')
 		for (var i = 0; i < sentencesEn.length; i++) {
 			var enSen = sentencesEn[i]
@@ -235,6 +237,9 @@ function processStory (story, isAlert = true) {
 				enAndVi += enSen + ' <i class="text-primary">' + viii  + '</i>'
 			}
 		}
+	} // end (bHasVi)
+	else enAndVi = enShow
+		
 	story.viShow = enAndVi
 	story.enShow = enShow
 

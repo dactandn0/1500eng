@@ -299,8 +299,10 @@ Cảm ơn rất nhiều."
 },
 {
 	track:"05.02",
-	en:"ANSWERS b) 7.45 c) 8.15 d) 9.00 e) 12.45 f) 5.30 g) 6.15 h) 7.30"
-	,vi:"TRẢ LỜI b) 7.45 c) 8.15 d) 9.00 e) 12.45 f) 5.30 g) 6.15 h) 7.30"
+	en:"Carol and her brother Tom live in Manchester. Carol gets up at a) 7.00, but she doesn't like mornings! She has breakfast at about b)...... and she leaves home at c)......... works in a mobile phone shop and she starts work at d).......... She has lunch at e) .......... in a cafe near the shop. She finishes work at f)..............and get home at g).......... She has dinner at h)...............She doesn't watch TV after dinner, she goes out with friends. She goes to bed at midnight and sleeps for about seven hours.<br>\
+ANSWERS b) 7.45 c) 8.15 d) 9.00 e) 12.45 f) 5.30 g) 6.15 h) 7.30"
+	,vi:"Carol và anh trai Tom sống ở Manchester. Carol thức dậy lúc a) 7 giờ sáng, nhưng cô ấy không thích buổi sáng! Cô ấy ăn sáng vào khoảng b)...... và cô ấy rời nhà lúc c)......... làm việc tại một cửa hàng điện thoại di động và cô ấy bắt đầu làm việc lúc d).......... Cô ấy ăn trưa lúc e) .......... tại một quán cà phê gần cửa hàng. Cô ấy tan làm lúc f)..............và về nhà lúc g).......... Cô ấy ăn tối lúc h)...............Cô ấy không xem TV sau bữa tối, cô ấy đi chơi với bạn bè. Cô ấy đi ngủ lúc nửa đêm và ngủ khoảng bảy tiếng.<br>\
+TRẢ LỜI b) 7.45 c) 8.15 d) 9.00 e) 12.45 f) 5.30 g) 6.15 h) 7.30"
 	,voca:"",
 },
 {
@@ -355,8 +357,8 @@ N À vâng, tôi biết mà. Nó ở phố Cross, phải không?"
 },
 {
 	track:"06.05",
-	en:"SUSAN Well, here we are, Isabel. Come in. Welcome to my home.<br>\
-ISABEL Thanks, Susan. Oh, what a beautiful flat!<br>\
+	en:"Susan Well, here we are, Isabel. Come in. Welcome to my home.<br>\
+Isabel Thanks, Susan. Oh, what a beautiful flat!<br>\
 S Thanks a lot.<br>\
 I Do you like living here?<br>\
 S Yes, I do. It's a nice road and the people are very friendly.<br>\
@@ -371,8 +373,8 @@ I That's good to know. And what about places to eat?<br>\
 S Well, there aren't any good restaurants near here, but, um, there are some very nice restaurants in the centre.<br>\
 I Great! Maybe we can go out for dinner this evening.<br>\
 S Yes, that's a good idea. Right, this is your room..."
-	,vi:"SUSAN Vâng, chúng ta đây rồi, Isabel. Vào đi. Chào mừng đến nhà tôi.<br>\
-ISABEL Cảm ơn, Susan. Ôi, căn hộ đẹp quá!<br>\
+	,vi:"Susan Vâng, chúng ta đây rồi, Isabel. Vào đi. Chào mừng đến nhà tôi.<br>\
+Isabel Cảm ơn, Susan. Ôi, căn hộ đẹp quá!<br>\
 S Cảm ơn rất nhiều.<br>\
 Tôi có thích sống ở đây không?<br>\
 S Có, tôi thích. Đường đẹp và mọi người rất thân thiện.<br>\
@@ -596,6 +598,15 @@ Lúc đó tôi còn rất trẻ. <br>\
 Đó là một năm mới tuyệt vời! <br>\
 Có một số màn bắn pháo hoa tuyệt đẹp! <br>\
 Buổi hòa nhạc không kéo dài quá lâu."
+	,voca:"",
+},{
+	track:"08.04",
+	en:"1887 : eighteen eighty-seven<br>\
+1900 : nineteen hundred <br>\
+1980 : nineteen eighty <br>\
+2000 : two thousand<br>\
+2009 : two thousand and nine<br>\
+2010 : twenty ten"
 	,voca:"",
 },
 {

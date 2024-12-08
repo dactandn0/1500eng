@@ -10,6 +10,7 @@ $scope.radioLoopChange = function (val) {
 
 $scope.finishLoading = function(){
     $scope.radioVal = Helper_loadAudioLoop()
+    Helper_saveAudioLoop($scope.radioVal)
 }
 
 $scope.$on('$includeContentLoaded', function(){

@@ -124,6 +124,113 @@ R Ồ?<br>\
 T Tôi đã kết hôn! Và tôi có 2 đứa con! <br>\
 R Ồ..."
 	,voca:"",
+},
+{
+	track:"03.13",
+	en:"1<br>\
+A When do you start your English course? <br>\
+B September the fifth.<br>\
+2<br>\
+A When's your birthday?<br>\
+B The thirteenth of December. <br>\
+A Oh, that's on Tuesday!<br>\
+3<br>\
+A When's Mother's Day?<br>\
+B This year it's on March the fourteenth. <br>\
+A Oh, that's next week.<br>\
+4<br>\
+A When do your courses finish? <br>\
+B They all finish on the second of July.<br>\
+5<br>\
+A Excuse me. What's the date today? <br>\
+B It's, er, October the twentieth. <br>\
+A Thanks a lot.<br>\
+6<br>\
+A When's Jim and Mary's wedding day? <br>\
+B I think it's the first of February.<br>\
+A Oh no! That's today!"
+	,vi:""
+	,voca:"",
+},
+{
+	track:"03.17",
+	en:"TANYA Do you think I'm a happy person in the morning?<br>\
+SIMON Sometimes. Why?<br>\
+T It's a questionnaire. 'Are you an early bird or a night owl?' But I don't have a lot of energy... so that's b).<br>\
+S What are the other questions?<br>\
+T Here, look. Question 2, well, that's easy. I hardly ever get up before 9 at the weekend.<br>\
+S Yes, that's true.<br>\
+T Right, question 3. Yes, I often watch films late at night.<br>\
+S But you never see the end!<br>\
+T Yes, that's true! So that's c). Next question - parties.<br>\
+S Oh that's easy. You never stay to the end. <br>\
+T True, I never stay to the end, so it's c). Question 5... well, I usually see friends in the afternoon, I think. Right, the last one. Yes, I'm always happy to talk to friends when they phone before 8. <br>\
+S What! I always answer the phone. <br>\
+T Yes, you answer the phone, then I talk to my friends. So, it's a). Right, what's my score then?"
+	,vi:"TANYA Bạn có nghĩ tôi là người vui vẻ vào buổi sáng không?<br>\
+SIMON Đôi khi. Tại sao?<br>\
+T Đây là một bảng câu hỏi. 'Bạn là người dậy sớm hay cú đêm?' Nhưng tôi không có nhiều năng lượng... vì vậy đó là b).<br>\
+S Những câu hỏi khác là gì?<br>\
+T Đây, nhìn này. Câu hỏi 2, ừ thì dễ. Tôi hiếm khi dậy trước 9 giờ vào cuối tuần.<br>\
+S Đúng vậy.<br>\
+T Đúng vậy, câu hỏi 3. Đúng vậy, tôi thường xem phim vào đêm khuya.<br>\
+S Nhưng bạn không bao giờ thấy hồi kết!<br>\
+T Đúng vậy, đúng vậy! Vì vậy đó là c). Câu hỏi tiếp theo - tiệc tùng.<br>\
+S Ồ, dễ lắm. Bạn không bao giờ ở lại đến cuối. <br>\
+T Đúng vậy, tôi không bao giờ ở lại đến cuối, vì vậy đó là c). Câu hỏi 5... ừ thì, tôi thường gặp bạn bè vào buổi chiều, tôi nghĩ vậy. Đúng rồi, câu cuối cùng. Vâng, tôi luôn vui vẻ nói chuyện với bạn bè khi họ gọi điện trước 8 giờ. <br>\
+S Cái gì! Tôi luôn trả lời điện thoại. <br>\
+T Vâng, bạn trả lời điện thoại, sau đó tôi nói chuyện với bạn bè. Vậy thì, a). Đúng rồi, vậy thì điểm của tôi là bao nhiêu?"
+	,voca:"",
+},
+{
+	track:"04.01",
+	en:"VICKY Hi, Alison. How are you? <br>\
+ALISON Hello, Vicky. I'm fine, and you?<br>\
+V Fine, thanks. Is Paul here?<br>\
+A Paul? Oh no, he's got a new job. He works in Antarctica now.<br>\
+V No!<br>\
+A Yes, he works at a weather station there.<br>\
+He's got a job as an engineer.<br>\
+V Wow! Does he like it?<br>\
+A Yes and no. He doesn't like the job very much. The people on the weather station all work 6 days a week, but then they have 3 months off a year and the money's good."
+	,vi:"VICKY Xin chào, Alison. Bạn khỏe không? <br>\
+ALISON Xin chào, Vicky. Tôi khỏe, còn bạn thì sao?<br>\
+V Khỏe, cảm ơn. Paul có ở đây không?<br>\
+A Paul à? Ồ không, anh ấy có việc mới. Anh ấy hiện đang làm việc ở Nam Cực.<br>\
+V Không!<br>\
+A Có, anh ấy làm việc tại một trạm thời tiết ở đó.<br>\
+Anh ấy có công việc là kỹ sư.<br>\
+V Chà! Anh ấy có thích không?<br>\
+A Có và không. Anh ấy không thích công việc này lắm. Những người ở trạm thời tiết đều làm việc 6 ngày một tuần, nhưng sau đó họ được nghỉ 3 tháng một năm và tiền lương thì ổn."
+	,voca:"",
+},
+{
+	track:"04.02",
+	en:"ALISON The people at the weather station all work 6 days a week, but then they have 3 months off a year and the money's good. <br>\
+VICKY Hmm, that's good. What about his free time?<br>\
+A Well, you know Paul. He's usually quite active. He doesn't read a lot and he doesn't listen to the radio. So it's a bit difficult for him.<br>\
+V So what does he do?<br>\
+A Well, they have a TV there, so he watches a lot of sport. And he goes skiing and running. Oh, and he takes a lot of photos. They're very good!<br>\
+V Right.<br>\
+A And he goes swimming.<br>\
+V In Antarctica?!<br>\
+A Well, only on New Year's Day. Everyone goes swimming then - but only for about a minute! <br>\
+V Hmm. Do you talk to him a lot? <br>\
+A No, he doesn't phone much, it's expensive. But he emails a lot.<br>\
+V And what do you think about his job?"
+	,vi:"ALISON Mọi người ở trạm thời tiết đều làm việc 6 ngày một tuần, nhưng sau đó họ được nghỉ 3 tháng một năm và tiền thì rất ổn. <br>\
+VICKY Ừm, thế thì tốt. Còn thời gian rảnh của anh ấy thì sao?<br>\
+A À, bạn biết Paul mà. Anh ấy thường khá năng động. Anh ấy không đọc nhiều và không nghe radio. Vì vậy, anh ấy hơi khó khăn.<br>\
+V Vậy anh ấy làm gì?<br>\
+A À, họ có TV ở đó, vì vậy anh ấy xem rất nhiều môn thể thao. Và anh ấy đi trượt tuyết và chạy bộ. À, và anh ấy chụp rất nhiều ảnh. Chúng rất đẹp!<br>\
+V Đúng rồi.<br>\
+A Và anh ấy đi bơi.<br>\
+V Ở Nam Cực?!<br>\
+A À, chỉ vào Ngày đầu năm mới thôi. Khi đó mọi người đều đi bơi - nhưng chỉ trong khoảng một phút thôi! <br>\
+V Ừm. Bạn có nói chuyện với anh ấy nhiều không? <br>\
+A Không, anh ấy không gọi điện nhiều, vì nó đắt. Nhưng anh ấy gửi email rất nhiều.<br>\
+V Và bạn nghĩ gì về công việc của anh ấy?"
+	,voca:"",
 }
 
 

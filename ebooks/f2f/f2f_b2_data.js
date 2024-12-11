@@ -1,4 +1,62 @@
 const f2f_b2_stories = [
+{
+	track:"00.06",
+	en:"Open your book. Look at page ten.<br>\
+Match the words to the pictures.<br>\
+Read the article. Answer the questions.<br>\
+Check your answers.<br>\
+Listen and practise.<br>\
+Work in pairs.<br>\
+Work in groups. Fill in the gaps.<br>\
+Don't write. Close your book."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"00.07",
+	en:"PABLO Hello. Sorry I'm late.<br>\
+TEACHER No problem. What's your first name?<br>\
+P It's Pablo.<br>\
+T What's your surname?<br>\
+P Ruano.<br>\
+T How do you spell that?<br>\
+P PR-U-A-N-O.<br>\
+T Welcome to the class, Pablo. P Thank you."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"00.08",
+	en:"A<br>\
+ISABEL Hello, is this the English class? <br>\
+TEACHER Yes, it is.<br>\
+I Oh, good. I'm sorry I'm late!<br>\
+T No problem. What's your first name? <br>\
+I Isabel.<br>\
+T How do you spell that?<br>\
+I I-S-A-B-E-L.<br>\
+T And what's your surname?<br>\
+I It's Boutron.<br>\
+T And how do you spell that? <br>\
+I B-O-U-T-R-O-N.<br>\
+T Thanks, Isabel. Welcome to the class.<br>\
+B<br>\
+PAVEL Hello, sorry I'm late.<br>\
+TEACHER No problem. What's your name? <br>\
+P My name's Pavel.<br>\
+T Is that your first name?<br>\
+P Er, yes.<br>\
+T How do you spell that, please? <br>\
+P P-A-V-E-L.<br>\
+T And what's your surname, Pavel? <br>\
+P Stepanov.<br>\
+T OK... and how do you spell that? <br>\
+P S-T-E-P-A-N-O-V.<br>\
+T S-T-E-P-A-N-O-V. Thanks. Welcome to the class, Pavel.<br>\
+P Thank you."
+	,vi:""
+	,voca:"",
+},	
 	{
 		track:"02.03",
 		en:"INTERVIEWER Hello. <br>\

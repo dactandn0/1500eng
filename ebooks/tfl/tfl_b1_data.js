@@ -263,44 +263,32 @@ thường lệ.<br>\
 },
 {
 	track:"03.03",
-	en:" How are the pants, sir?<br>\
- I think they're too short. What do you think?<br>\
- Yes. I think you're right. They certainly are too short.<br>\
- Can you get me a longer pair?<br>\
- Do you like this blouse?<br>\
- Well, I think it's a little too big.<br>\
- I guess so. Yes, it is pretty big.<br>\
- You definitely need a smaller one.<br>\
- Are the sneakers comfortable?<br>\
- Well, I think they're a little small for me.<br>\
- Too small? Let me find a bigger pair.<br>\
- Are those jeans all right?<br>\
- I'm afraid they're too big for me.<br>\
- Okay, then let's find a smaller pair.<br>\
- How does the T-shirt fit? Is it too tight?<br>\
- Do you have a looser one?<br>\
- How do you like the sandals?<br>\
- Too big, I'm afraid.<br>\
- Too big? Let me find a smaller size."
-	,vi:"Quần thế nào, thưa ông?<br>\
-Tôi nghĩ là chúng quá ngắn. Ông nghĩ sao?<br>\
-Vâng. Tôi nghĩ là ông đúng. Chúng chắc chắn là quá ngắn.<br>\
-Ông có thể lấy cho tôi một chiếc dài hơn không?<br>\
-Ông có thích chiếc áo cánh này không?<br>\
-Vâng, tôi nghĩ là nó hơi rộng một chút.<br>\
-Tôi đoán là vậy. Vâng, nó khá rộng.<br>\
-Ông chắc chắn cần một chiếc nhỏ hơn.<br>\
-Đôi giày thể thao này có thoải mái không?<br>\
-Vâng, tôi nghĩ là chúng hơi nhỏ đối với tôi.<br>\
-Quá nhỏ? Để tôi tìm một chiếc lớn hơn.<br>\
-Những chiếc quần jean đó có ổn không?<br>\
-Tôi e là chúng quá rộng đối với tôi.<br>\
-Được rồi, vậy thì chúng ta hãy tìm một chiếc nhỏ hơn.<br>\
-Chiếc áo phông này vừa không? Có quá chật không?<br>\
-Bạn có đôi nào rộng hơn không?<br>\
-Bạn thấy đôi dép này thế nào?<br>\
-Tôi sợ là nó quá rộng.<br>\
-Quá rộng? Để tôi tìm đôi nhỏ hơn nhé."
+	en:"1<br>\
+How are the pants, sir?<br>\
+I think they're too short. What do you think?<br>\
+Yes. I think you're right. They certainly are too short.<br>\
+Can you get me a longer pair?<br>\
+2<br>\
+Do you like this blouse?<br>\
+Well, I think it's a little too big.<br>\
+I guess so. Yes, it is pretty big.<br>\
+You definitely need a smaller one.<br>\
+3<br>\
+Are the sneakers comfortable?<br>\
+Well, I think they're a little small for me.<br>\
+Too small? Let me find a bigger pair.<br>\
+4<br>\
+Are those jeans all right?<br>\
+I'm afraid they're too big for me.<br>\
+Okay, then let's find a smaller pair.<br>\
+5<br>\
+How does the T-shirt fit? Is it too tight?<br>\
+Do you have a looser one?<br>\
+6<br>\
+How do you like the sandals?<br>\
+Too big, I'm afraid.<br>\
+Too big? Let me find a smaller size."
+	,vi:""
 	,voca:"",
 },
 {
@@ -389,6 +377,7 @@ In Cinema D, we are showing The Alien from Saturn. Show times are 3:20, 5:10, 7:
 	,voca:"",
 },
 {
+	title:"Dates",
 	track:"05.02",
 	en:"1<br>\
 Have you been here long?<br>\
@@ -470,6 +459,7 @@ Oh, that sounds nice."
 	,voca:"",
 },
 {
+	title:"Jobs",
 	track:"06.02",
 	en:" 1.<br>\
  I'm a salesperson. I sell computers. I like my job. It's really interesting. And I meet lots of interesting people.<br>\
@@ -625,6 +615,194 @@ Hơn năm năm rồi.<br>\
 Ồ không, tôi không thích chút nào! Công việc này vất vả và cũng khá mệt mỏi. Tôi phải đứng suốt đêm.<br>\
 Ồ, tôi hiểu rồi.<br>\
 Nhưng tiền boa thì tuyệt. Nhưng thực ra tôi nên sớm tìm một công việc tốt hơn."
+	,voca:"",
+},
+{
+	title:"Sports and Exercise",
+	track:"07.02",
+	en:"1<br>\
+Do you play sports on the weekend, Rita?<br>\
+No, I hate sports.<br>\
+Really? So what do you do on the weekend?<br>\
+Uh, I watch my favorite programs on TV.<br>\
+Well, that's not too tiring!<br>\
+2<br>\
+Do you like sports, Rod?<br>\
+Sure. I play a lot of sports.<br>\
+So, what sports do you play?<br>\
+Well, everything. Baseball, volleyball, swimming—but my favorite sport is tennis.<br>\
+Oh, yeah?<br>\
+Yeah, I play every day after work.<br>\
+3<br>\
+You're in great shape, Martha.<br>\
+Thanks.<br>\
+So, how do you do it?<br>\
+Well, I go to the pool about three times a week, and I swim for about two hours.<br>\
+Two hours? Are you practicing for the Olympic Games or something?<br>\
+4<br>\
+How do you keep in shape, Ron?<br>\
+Me? I travel.<br>\
+What do you mean, you travel?<br>\
+Well, I ride my bike about 20 miles every weekend.<br>\
+5<br>\
+Wow! What happened?<br>\
+I went skiing.<br>\
+Gee. That looks pretty bad.<br>\
+Yeah.<br>\
+Do you often go skiing?<br>\
+No. It was my first time.<br>\
+Do you get much exercise, Joe?<br>\
+Yes, I do. I walk a lot.<br>\
+Where?<br>\
+To McDonald's. Yeah, I walk there about four times a week to get a hamburger and fries."
+	,vi:"1<br>\
+Bạn có chơi thể thao vào cuối tuần không, Rita?<br>\
+Không, tôi ghét thể thao.<br>\
+Thật sao? Vậy bạn làm gì vào cuối tuần?<br>\
+Ờ, tôi xem chương trình yêu thích của mình trên TV.<br>\
+Ờ, không mệt lắm đâu!<br>\
+2<br>\
+Bạn có thích thể thao không, Rod?<br>\
+Tất nhiên rồi. Tôi chơi rất nhiều môn thể thao.<br>\
+Vậy, bạn chơi môn thể thao nào?<br>\
+Ờ, tất cả mọi thứ. Bóng chày, bóng chuyền, bơi lội—nhưng môn thể thao yêu thích của tôi là quần vợt.<br>\
+Ồ, vậy à?<br>\
+Ừ, tôi chơi mỗi ngày sau giờ làm việc.<br>\
+3<br>\
+Bạn có vóc dáng tuyệt vời, Martha.<br>\
+Cảm ơn.<br>\
+Vậy, bạn làm thế nào?<br>\
+Ờ, tôi đi bơi khoảng ba lần một tuần và bơi khoảng hai giờ.<br>\
+Hai giờ? Bạn đang luyện tập cho Thế vận hội Olympic hay gì đó à?<br>\
+4<br>\
+Bạn giữ dáng bằng cách nào vậy, Ron?<br>\
+Tôi á? Tôi đi du lịch.<br>\
+Ý bạn là bạn đi du lịch à?<br>\
+À, tôi đạp xe khoảng 20 dặm mỗi cuối tuần.<br>\
+5<br>\
+Ồ! Chuyện gì đã xảy ra vậy?<br>\
+Tôi đã đi trượt tuyết.<br>\
+Trời ạ. Trông tệ quá.<br>\
+Ừ.<br>\
+Bạn có thường xuyên đi trượt tuyết không?<br>\
+Không. Đó là lần đầu tiên của tôi.<br>\
+Bạn có tập thể dục nhiều không, Joe?<br>\
+Có chứ. Tôi đi bộ rất nhiều.<br>\
+Ở đâu?<br>\
+Đến McDonald's. Ừ, tôi đi bộ đến đó khoảng bốn lần một tuần để mua một chiếc hamburger và khoai tây chiên."
+	,voca:"",
+},
+{
+	track:"07.03",
+	en:"1<br>\
+Your muscles are so big, Dave. What do you do to get them so big?<br>\
+Well, I go to the gym every day after work, and on Saturdays, too. I love it. Do you work out?<br>\
+2<br>\
+Do you play a lot of sports?<br>\
+Yes, I do.<br>\
+Do you like volleyball?<br>\
+Yeah, I play volleyball during the week.<br>\
+Want to play with me and my friends tonight?<br>\
+3<br>\
+You're in good shape, Ken. Do you play a lot of sports?<br>\
+Yes, I do. I love sports. I play volleyball on Thursdays, and on Saturdays and Sundays I play tennis.<br>\
+Which one do you like the best?<br>\
+4<br>\
+Do you like playing sports?<br>\
+Nah, not really. I don't like exercising at all. But I do watch a lot of baseball on TV!<br>\
+You really should get some exercise.<br>\
+5<br>\
+What kinds of sports do you play?<br>\
+Let's see. Well, in the summer I enjoy windsurfing. But I don't do anything in the winter.<br>\
+Why not?<br>\
+6<br>\
+So, do you get any exercise?<br>\
+Well, not much. I don't have a lot of free time, but about once a week I walk for an hour.<br>\
+Oh. Where do you walk?"
+	,vi:""
+	,voca:"",
+},
+{
+	track:"07.04",
+	en:"1.<br>\
+I think exercise is so important to good health. There is a really good sports club near my school. During the week, I play tennis there for an hour before school starts. On weekends, I usually work out at the gym near my house for a few hours. I also play baseball with some friends from school. It's so much fun!<br>\
+2.<br>\
+I don't like jogging or doing anything too energetic. I prefer taking walks. I like to take a short walk every day through the park across from my house. Sometimes my boyfriend goes with me. It's nice to talk and look at the flowers and trees. On Sunday, I like to swim, but for only about a half hour. I sleep the rest of the weekend.<br>\
+3.<br>\
+I am a big football fan, but I only watch it on TV. I can't stand playing it! There are great games to watch on the weekend. I also enjoy watching tennis. I'd like to learn someday, but I don't like to sweat. I love chess and often play with my younger sister. She's really good at it and usually wins. On the weekends, I love to play video games with some of my friends.<br>\
+4.<br>\
+I just love to exercise! I like many different sports. Let's see…. I like swimming a lot. I get up very early, around 5 a.m., and swim for two hours from Monday to Friday. I also enjoy basketball and play with a group of friends from work every Tuesday night. And I've also started playing golf this year. Before playing, I go jogging to warm up.<br>\
+5.<br>\
+I enjoy exercise, but I don't do it as much as I should. I meet a friend every Wednesday and we play tennis. I'm not a very good player, but it's fun and we usually play for an hour. On weekends, I like to bicycle in our neighborhood. I guess I spend an hour or two doing that. Oh, and I love baseball, but only watching it while sitting on the couch eating popcorn!"
+	,vi:"1.<br>\
+Tôi nghĩ tập thể dục rất quan trọng đối với sức khỏe. Có một câu lạc bộ thể thao thực sự tốt gần trường tôi. Trong tuần, tôi chơi quần vợt ở đó một giờ trước khi vào học. Vào cuối tuần, tôi thường tập thể dục tại phòng tập thể dục gần nhà trong vài giờ. Tôi cũng chơi bóng chày với một số người bạn ở trường. Thật vui!<br>\
+2.<br>\
+Tôi không thích chạy bộ hoặc làm bất cứ điều gì quá năng động. Tôi thích đi bộ. Tôi thích đi bộ một đoạn ngắn mỗi ngày qua công viên đối diện nhà tôi. Đôi khi bạn trai tôi đi cùng tôi. Thật tuyệt khi được nói chuyện và ngắm hoa và cây cối. Vào Chủ Nhật, tôi thích bơi, nhưng chỉ trong khoảng nửa giờ. Tôi ngủ suốt phần còn lại của cuối tuần.<br>\
+3.<br>\
+Tôi là một người hâm mộ bóng đá lớn, nhưng tôi chỉ xem bóng đá trên TV. Tôi không thể chịu được việc chơi bóng đá! Có những trận đấu tuyệt vời để xem vào cuối tuần. Tôi cũng thích xem quần vợt. Tôi muốn học một ngày nào đó, nhưng tôi không thích đổ mồ hôi. Tôi thích cờ vua và thường chơi với em gái mình. Em ấy chơi rất giỏi và thường thắng. Vào cuối tuần, tôi thích chơi trò chơi điện tử với một số người bạn của mình.<br>\
+4.<br>\
+Tôi chỉ thích tập thể dục! Tôi thích nhiều môn thể thao khác nhau. Hãy xem nào…. Tôi rất thích bơi lội. Tôi dậy rất sớm, khoảng 5 giờ sáng, và bơi trong hai giờ từ thứ Hai đến thứ Sáu. Tôi cũng thích bóng rổ và chơi với một nhóm bạn từ nơi làm việc vào mỗi tối thứ Ba. Và tôi cũng bắt đầu chơi golf trong năm nay. Trước khi chơi, tôi chạy bộ để khởi động.<br>\
+5.<br>\
+Tôi thích tập thể dục, nhưng tôi không tập nhiều như tôi nên làm. Tôi gặp một người bạn vào mỗi thứ Tư và chúng tôi chơi quần vợt. Tôi không phải là một người chơi giỏi, nhưng nó rất vui và chúng tôi thường chơi trong một giờ. Vào cuối tuần, tôi thích đạp xe quanh khu phố của mình. Tôi đoán tôi dành một hoặc hai giờ để làm điều đó. À, và tôi thích bóng chày, nhưng chỉ xem nó trong khi ngồi trên ghế dài ăn bỏng ngô!"
+	,voca:"",
+},
+{
+	title:"Locations",
+	track:"08.02",
+	en:"1<br>\
+Mom, have you seen my magazine?<br>\
+I think it's in the living room on top of the TV.<br>\
+2<br>\
+Now where's today's newspaper? I can't find it anywhere.<br>\
+Oh, I was reading it. It's on the sofa, between the cushions.<br>\
+3<br>\
+Do you know where the remote control is?<br>\
+Look in the living room. I think I saw it in front of the TV.<br>\
+Oh, yeah.<br>\
+4<br>\
+Where's my tennis racket? Did Dad borrow it again? I wish he'd ask me.<br>\
+I saw it in your bedroom, under your bed.<br>\
+Oh, yeah. That's right."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"08.03",
+	en:"1<br>\
+Do you think I should put the magazine rack next to the window?<br>\
+No. Not next to the window. I'd put it in the corner next to the sofa. It will look nice<br>\
+there.<br>\
+2<br>\
+Where do you think I should put the coffee table? Should I put it next to the sofa?<br>\
+I think it will be better in front of the sofa. It'll be more useful there, I think.<br>\
+3<br>\
+What about the plant stand? It might be nice next to the window.<br>\
+Yes, next to the window, either on the left or on the right.<br>\
+I think I'll put it on the right.<br>\
+4<br>\
+Now what about the bookshelf? It's so big!<br>\
+Hmm. What do you think?<br>\
+How about next to the door, against the wall?<br>\
+To the left of the door?<br>\
+5<br>\
+Now I need to find a place for this old chair that my mom gave me.<br>\
+How about over there?<br>\
+You mean in front of the window?<br>\
+6<br>\
+We still have to find a place for this end table.<br>\
+Yes, where can we put it?<br>\
+How about next to the sofa, in the corner near the door?<br>\
+Yes, good. Is that okay now?<br>\
+7<br>\
+Where is a good place for the TV?<br>\
+How about in the far left corner, to the left of the window?<br>\
+Yeah, that sounds good. I'll put it there. There. How does it look?<br>\
+8<br>\
+What about the dinner table?<br>\
+Maybe we can put the dinner table against the wall, across from the sofa. In the middle of<br>\
+the wall.<br>\
+Across from the sofa, against the wall. Is that what you mean?"
+	,vi:""
 	,voca:"",
 }
 

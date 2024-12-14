@@ -24,6 +24,7 @@ sticky (a) /ˈstɪki/ dính<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 square (n,a) /skwer/ quảng trường (a) vuông<br>\
 declaration (n) /dekləˈreɪʃn/ Tuyên ngôn<br>\
+department (n) /dɪˈpɑːrtmənt/ gian hàng, chi nhánh, ban, bộ<br>\
 pleased (a) vui lòng<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\

@@ -799,12 +799,335 @@ How about in the far left corner, to the left of the window?<br>\
 Yeah, that sounds good. I'll put it there. There. How does it look?<br>\
 8<br>\
 What about the dinner table?<br>\
-Maybe we can put the dinner table against the wall, across from the sofa. In the middle of<br>\
-the wall.<br>\
+Maybe we can put the dinner table against the wall, across from the sofa. In the middle of the wall.<br>\
 Across from the sofa, against the wall. Is that what you mean?"
 	,vi:""
 	,voca:"",
+},
+{
+	track:"08.04",
+	en:"1<br>\
+Do these magazines go on the bookshelf?<br>\
+Yes. Put them on the bookshelf, please. On the top is fine.<br>\
+Should I put them beside the dictionary?<br>\
+Yes, next to the dictionary will be fine.<br>\
+I'd like to read these magazines later. They look interesting.<br>\
+2<br>\
+What about the remote control for the TV?<br>\
+Put it beside the TV.<br>\
+There's a magazine there, the TV program guide. Should I put it on the TV program guide?<br>\
+That's fine. And remind me to get a new battery for the remote when we go downtown.<br>\
+Okay.<br>\
+3<br>\
+These look like your car keys. Where do you usually keep them?<br>\
+They're my extra apartment keys, actually. Just put them in one of the drawers in the<br>\
+desk.<br>\
+The top two drawers are already full of stuff, so I'll put them in the bottom drawer for<br>\
+you. They'll be inside an empty box.<br>\
+Okay.<br>\
+4<br>\
+Do you want me to put this baseball cap away?<br>\
+Yeah. Just put it behind the door.<br>\
+Where? Should I hang it on the doorknob?<br>\
+No, on the hook behind the door. It will be fine there, thanks.<br>\
+I didn't know you wore a baseball cap.<br>\
+It's not mine. It's my brother's.<br>\
+5<br>\
+Do you need these glasses?<br>\
+Not right now. I only use them for reading. Do you see the case they go in?<br>\
+I don't see it.<br>\
+Oh, never mind. Leave them on the coffee table, next to those sheets of paper.<br>\
+Okay.<br>\
+6<br>\
+There's a belt lying on the floor here.<br>\
+Oh, yes, that's my brother's. He leaves his clothes everywhere. It drives me crazy!<br>\
+Should I put it somewhere?<br>\
+Leave it on the chair. He always sits there.<br>\
+Okay. The chair next to the window?<br>\
+That's right."
+	,vi:"1<br>\
+Những tạp chí này có để trên giá sách không?<br>\
+Có. Đặt chúng lên giá sách nhé. Đặt ở trên cùng là được.<br>\
+Tôi có nên đặt chúng cạnh từ điển không?<br>\
+Có, đặt cạnh từ điển là được.<br>\
+Tôi muốn đọc những tạp chí này sau. Trông chúng có vẻ thú vị.<br>\
+2<br>\
+Thế còn điều khiển từ xa của TV thì sao?<br>\
+Đặt nó cạnh TV.<br>\
+Có một tạp chí ở đó, hướng dẫn chương trình TV. Tôi có nên đặt nó lên hướng dẫn chương trình TV không?<br>\
+Được thôi. Và nhắc tôi mua pin mới cho điều khiển từ xa khi chúng ta vào trung tâm thành phố nhé.<br>\
+Được.<br>\
+3<br>\
+Những thứ này trông giống chìa khóa xe của bạn. Bạn thường để chúng ở đâu?<br>\
+Thực ra chúng là chìa khóa dự phòng của căn hộ tôi. Chỉ cần cất chúng vào một trong những ngăn kéo ở<br>\
+bàn làm việc.<br>\
+Hai ngăn kéo trên cùng đã đầy đồ rồi, nên tôi sẽ cất chúng vào ngăn kéo dưới cùng cho<br>\
+bạn. Chúng sẽ ở trong một chiếc hộp rỗng.<br>\
+Được.<br>\
+4<br>\
+Bạn có muốn tôi cất chiếc mũ bóng chày này đi không?<br>\
+Được. Cứ để nó sau cánh cửa đi.<br>\
+Ở đâu? Tôi có nên treo nó lên tay nắm cửa không?<br>\
+Không, trên móc sau cánh cửa. Nó sẽ ổn thôi, cảm ơn.<br>\
+Tôi không biết là bạn đội mũ bóng chày.<br>\
+Nó không phải của tôi. Nó là của anh trai tôi.<br>\
+5<br>\
+Bạn có cần những chiếc kính này không?<br>\
+Không cần ngay bây giờ. Tôi chỉ dùng chúng để đọc sách. Bạn có thấy hộp đựng chúng không?<br>\
+Tôi không thấy.<br>\
+Ồ, thôi bỏ đi. Để chúng trên bàn cà phê, bên cạnh những tờ giấy đó.<br>\
+Được rồi.<br>\
+6<br>\
+Có một chiếc thắt lưng nằm trên sàn ở đây.<br>\
+Ồ, đúng rồi, đó là của anh trai tôi. Anh ấy vứt quần áo khắp nơi. Điều đó khiến tôi phát điên!<br>\
+Tôi có nên để nó ở đâu đó không?<br>\
+Để nó trên ghế. Anh ấy luôn ngồi ở đó.<br>\
+Được rồi. Chiếc ghế cạnh cửa sổ?<br>\
+Đúng rồi."
+	,voca:"",
+},
+{
+	title:"The Family",
+	track:"09.02",
+	en:"1<br>\
+That's me in the middle. That's my oldest niece, Betsy, on the left. She's in her second year of college. And that's my nephew, on the right. He's just finished high school.<br>\
+Oh, he's handsome.<br>\
+2<br>\
+That's me on the left.<br>\
+Who are the other two?<br>\
+Those are my sister and brother, Maria and Jose. They're twins.<br>\
+How old are they?<br>\
+They're ten.<br>\
+3<br>\
+That's me and my parents.<br>\
+Boy! You look just like your dad.<br>\
+No, I don't!<br>\
+4<br>\
+This is a picture of my son and daughter.<br>\
+Is your daughter older than your son?<br>\
+Yes, much older. She's 26.<br>\
+How old is your son?<br>\
+He's 17.<br>\
+That's a big difference.<br>\
+5<br>\
+These are my parents and that's my grandmother on the left.<br>\
+How old is she?<br>\
+She's 60.<br>\
+She looks young for 60.<br>\
+6<br>\
+This is my father with my uncle and aunt and two cousins.<br>\
+Which one is your father?<br>\
+The one on the left.<br>\
+Oh, yes."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"09.03",
+	en:"1<br>\
+Do you have any brothers and sisters, Stephanie?<br>\
+No brothers. I wish I did. But I've got three sisters.<br>\
+Really!<br>\
+Yeah. And I'm the youngest.<br>\
+Poor you!<br>\
+2<br>\
+Tell me about your family, Donna.<br>\
+Well, I've got one brother—he's older than me.<br>\
+What does he do?<br>\
+He's a student. And I've got two younger sisters.<br>\
+Wow. You have a big family.<br>\
+3<br>\
+Do you have any brothers or sisters, Bob?<br>\
+Just one—my sister, Anna.<br>\
+Is she older than you?<br>\
+Yes, she is. She always bosses me around!<br>\
+4<br>\
+Tell me about your family, Rosie.<br>\
+Well, I come from quite a big family. I've got two brothers, both of them younger than me.<br>\
+Really. Do you have any sisters?<br>\
+Yeah. I have one older and one younger sister.<br>\
+You're lucky. I wish I came from a big family.<br>\
+5<br>\
+Do you come from a big family, Tina?<br>\
+No, I'm an only child. It's just me and my parents."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"09.04",
+	en:"1.<br>\
+Both of my parents are taller than me. My dad is pretty tall, but my brother is even taller than my dad. Together they look like a basketball team! My sister and I are the short ones in the family.<br>\
+2.<br>\
+My brother isn't interested in music at all. He's into cars, like my dad. But I'm not interested in cars. I play the guitar and the piano. I guess I love music because of my mom. She sings beautifully. She plays the piano really well, too.<br>\
+3.<br>\
+I love animals. I have a dog and I keep a couple of parrots in a big cage in my room. I love taking photographs of wild birds when I'm in the countryside. My dad and I often go away for the weekend and we have a great time birdwatching. My sister thinks I'm crazy. When my sister has free time, she loves to play cards. I can't stand card games.<br>\
+4.<br>\
+I enjoy reading. I read a lot of books and I love going to the library. My dad likes outdoor things. He's really into sports and swimming, and he always tells me I should get more interested in sports. But Mom tells me that reading is the best way to learn. She always gives me books that she's been reading.<br>\
+5.<br>\
+I'm very interested in computers. I'm always teaching myself new computer programs and I have a lot of great software. My brother and I spend all our free time in computer stores and on the Internet. My sister is more interested in the arts. She likes music and she loves to read. She hates computers!<br>\
+6.<br>\
+I love traveling. My mother and I go to a different place every year. Both of us love to learn new things about cultures. My father never goes with us because he hates flying. My older sister is in college, so she stays home and studies while we're away. Sometimes I wish my sister and my father would travel with us because I miss them."
+	,vi:"1.<br>\
+Cả bố và mẹ tôi đều cao hơn tôi. Bố tôi khá cao, nhưng anh trai tôi thậm chí còn cao hơn bố tôi. Họ trông giống như một đội bóng rổ vậy! Chị gái tôi và tôi là những người thấp bé nhất trong gia đình.<br>\
+2.<br>\
+Anh trai tôi không hề hứng thú với âm nhạc. Anh ấy thích ô tô, giống như bố tôi. Nhưng tôi không hứng thú với ô tô. Tôi chơi guitar và piano. Tôi đoán tôi thích âm nhạc vì mẹ tôi. Bà ấy hát rất hay. Bà ấy chơi piano cũng rất giỏi.<br>\
+3.<br>\
+Tôi thích động vật. Tôi có một con chó và tôi nuôi một vài con vẹt trong một cái lồng lớn trong phòng. Tôi thích chụp ảnh những chú chim hoang dã khi ở vùng nông thôn. Bố tôi và tôi thường đi chơi xa vào cuối tuần và chúng tôi có khoảng thời gian tuyệt vời khi ngắm chim. Chị gái tôi nghĩ tôi bị điên. Khi chị gái tôi có thời gian rảnh, chị ấy thích chơi bài. Tôi không thích chơi bài.<br>\
+4.<br>\
+Tôi thích đọc sách. Tôi đọc rất nhiều sách và tôi thích đến thư viện. Bố tôi thích những thứ ngoài trời. Ông ấy thực sự thích thể thao và bơi lội, và ông ấy luôn bảo tôi nên quan tâm đến thể thao hơn. Nhưng mẹ tôi nói rằng đọc sách là cách học tốt nhất. Bà ấy luôn đưa cho tôi những cuốn sách mà bà ấy đã đọc.<br>\
+5.<br>\
+Tôi rất thích máy tính. Tôi luôn tự học các chương trình máy tính mới và tôi có rất nhiều phần mềm tuyệt vời. Anh trai tôi và tôi dành toàn bộ thời gian rảnh rỗi của mình ở các cửa hàng máy tính và trên Internet. Chị gái tôi quan tâm đến nghệ thuật hơn. Chị ấy thích âm nhạc và thích đọc sách. Chị ấy ghét máy tính!<br>\
+6.<br>\
+Tôi thích đi du lịch. Mẹ tôi và tôi đến một nơi khác nhau mỗi năm. Cả hai chúng tôi đều thích tìm hiểu những điều mới mẻ về các nền văn hóa. Bố tôi không bao giờ đi cùng chúng tôi vì ông ấy ghét bay. Chị gái tôi đang học đại học, vì vậy chị ấy ở nhà và học khi chúng tôi đi xa. Đôi khi tôi muốn chị gái và bố tôi đi du lịch cùng chúng tôi vì tôi nhớ họ."
+	,voca:"",
+},
+{
+	title:"Entertainment",
+	track:"10.02",
+	en:"1<br>\
+So do you think we should go and see it?<br>\
+Yes, I think so. I hear it's very good. My friend said the story is great. And I love Arnold Schwarzenegger.<br>\
+So do I. His movies are always full of action.<br>\
+2<br>\
+What's the weather going to be like on Saturday?<br>\
+Hot and sunny.<br>\
+Oh, good, so let's go then. It'll be perfect for swimming.<br>\
+Yeah. But I just want to lie on the sand and sleep.<br>\
+3<br>\
+What time is the game?<br>\
+It's at two o'clock.<br>\
+Great. Are you playing?<br>\
+Sure.<br>\
+4<br>\
+What do you want to do this weekend?<br>\
+I don't know. What do you want to do?<br>\
+I don't know.<br>\
+Hey, I know. Let's get the guys and go rollerblading.<br>\
+Okay.<br>\
+5<br>\
+What do you need to buy?<br>\
+Well, I need some new jeans.<br>\
+And I need some shirts.<br>\
+Okay. Let's go on Saturday afternoon.<br>\
+6<br>\
+Want to come with me on Saturday? I don't think it'll be too hot. It's great exercise.<br>\
+Okay. I'll pack a lunch. Maybe we can ride to a park and have a picnic.<br>\
+Great idea."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"10.03",
+	en:"1<br>\
+Hello.<br>\
+Hi, Penny. This is Bob.<br>\
+Hi, Bob. How are things?<br>\
+Fine. Say, would you like to go to a movie on Friday night?<br>\
+movie? Sure. I think I'm free Friday night. What movie do you want to see?<br>\
+2<br>\
+Hello.<br>\
+Hi, Anne. This is Mary.<br>\
+Oh, hi, Mary. How are you?<br>\
+Great. Look, I'm calling about the weekend. I'm having a party.<br>\
+A party. That sounds fun. When?<br>\
+On Saturday night.<br>\
+Saturday night is fine with me.<br>\
+Great.<br>\
+3<br>\
+Hello.<br>\
+Hello, Nancy. This is Ken.<br>\
+Oh, hi, Ken.<br>\
+I'm calling about Friday night. Are you doing anything?<br>\
+I don't think so.<br>\
+Great. How about going to a disco with me?<br>\
+A disco. Sure. Thanks. You know I love to dance. What time?<br>\
+4<br>\
+Hello.<br>\
+Hi, Anne. This is Mike.<br>\
+Hi, Mike. What's up?<br>\
+There's a football game on Sunday afternoon.<br>\
+A football game?<br>\
+Yeah. Would you like to go?<br>\
+Oh, sorry. I'm not free on Sunday.<br>\
+Oh, well, some other time, maybe.<br>\
+5<br>\
+Hello.<br>\
+Hi, Wendy. This is Jack.<br>\
+Oh, hi.<br>\
+Say, there's a good movie on TV tonight. Do you want to come over and watch it with me?<br>\
+Oh, I'd love to, but I can't tonight. I have too much work to do."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"10.04",
+	en:"1<br>\
+Bobby, would you like to go out for dinner Thursday?<br>\
+Thursday? Oh, I’d love to, but I have to meet my sister for dinner.<br>\
+Oh, well, some other time, then.<br>\
+Sure.<br>\
+2<br>\
+Melissa, would you like to see a movie on Saturday?<br>\
+That sounds great. What time?<br>\
+At 9:30?<br>\
+All right.<br>\
+3<br>\
+Hey, Jack, let’s go for coffee after class on Monday.<br>\
+Oh, sorry. I have to go downtown. I have an appointment.<br>\
+Oh, okay.<br>\
+4<br>\
+Betty, do you want to come over to my house for dinner Wednesday?<br>\
+Thanks. I’d love to. What time?<br>\
+Around 6:30.<br>\
+Okay. See you then.<br>\
+5<br>\
+Hey, Ralph, let’s play tennis on Sunday afternoon.<br>\
+Sunday afternoon? I can’t. I’m going away for the weekend. Maybe some other time?<br>\
+Sure.<br>\
+6<br>\
+Say, Jill. I’m going shopping Friday night. I need a new dress. Want to come?<br>\
+Friday night? Okay, I’m not doing anything special.<br>\
+Good. Let’s go after work.<br>\
+Fine."
+	,vi:""
+	,voca:"",
+},{
+	title:"Prices",
+	track:"11.02",
+	en:"1<br>\
+Can I help you?<br>\
+Yes, how much are these shoes?<br>\
+They’re on sale. Let’s see… They’re $45.<br>\
+Uh-huh<br>\
+Do you want to try them on?<br>\
+No, thanks.<br>\
+2<br>\
+How much is this computer?<br>\
+It’s on sale for $4,099.<br>\
+$4,099!<br>\
+Do you want to buy it?<br>\
+That’s okay. I’m just looking.<br>\
+3<br>\
+This tie isn’t bad. How much is it?<br>\
+It’s $36.95.<br>\
+$36.95. Well, maybe I don’t really need a tie. Thanks, anyway.<br>\
+4<br>\
+These shorts are nice, aren’t they?<br>\
+Yes, and they’re only $26.95. Do you want to take them?<br>\
+Yeah, I think I will.<br>\
+5<br>\
+How much are these earrings?<br>\
+They’re only $12.25.<br>\
+They’re nice. I’ll take them.<br>\
+Okay.<br>\
+6<br>\
+That camera looks interesting. How much is it?<br>\
+It’s on sale. It was $145, but now it’s only $125.<br>\
+Hmm. Well, I’ll think about it."
+	,vi:""
+	,voca:"",
 }
+
 
 
 

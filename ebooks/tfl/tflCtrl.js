@@ -23,6 +23,13 @@ bookChange = function (book) {
 	$scope.fetchStory($scope.storyIdx, true);
 }
 
+$scope.styleTrack = function(trackId) {
+	trackId = trackId.split('.')[0]
+	var num = Number(trackId)
+	if (num%2===0) return {color : 'green'}
+		return {color : 'red'}
+}
+
 $scope.createAudioSrc = function() {
 	return "./ebooks/tfl/tfl_b" + KBook + "/" + $scope.story.track + '.mp3';
 }

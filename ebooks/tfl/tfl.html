@@ -7,11 +7,11 @@
 	<input type="radio" name="book" value="3" onchange="bookChange(3)" checked/><span class="mr-3">3</span> -->
 </form>
 
-<div class="my-1 mb-4">
+<div class="my-1 mb-4" style="overflow-y: scroll; max-height:200px;">
      <a ng-repeat="story in stories"
          ng-click="fetchStory($index);" 
          ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal' "
-         href="" class="p-2 mr-1"> {{story.track}}
+         href="" class="p-2 mr-1"> <span ng-style="styleTrack(story.track)"> {{story.track}} </span>	
     </a>
  </div>
 

@@ -88,6 +88,37 @@ B It's okay. I'll call back."
 	,voca:"",
 },
 {
+	track:"01.04",
+	en:"1<br>\
+I'd like you to meet my friend, David Wilson.<br>\
+Hi, David. Nice to meet you.<br>\
+2<br>\
+Hi, let me introduce you. This is your new boss, Susan Jackson.<br>\
+Good morning, Ms. Jackson.<br>\
+3<br>\
+Hello?<br>\
+Hello. This is Bob Cruise calling.<br>\
+Good evening, Bob. How are you?<br>\
+4<br>\
+Hello? Do you remember me? I'm Michelle Bolton.<br>\
+Hi, Michelle. How's everything?<br>\
+5<br>\
+Good afternoon. I'm Charles Smith. I have an appointment at two o'clock.<br>\
+Hello, Mr. Smith. Nice to see you again.<br>\
+6<br>\
+Good afternoon, I'm John Carter, your new student.<br>\
+Hello, John.<br>\
+7<br>\
+Hello?<br>\
+Hi. This is Brian Abrams. I'm returning your call.<br>\
+Hi, Professor Abrams. Thanks for calling. Did you get my homework assignment?<br>\
+8<br>\
+Let me introduce you. This is your grandmother's doctor, Ruth Steinberg.<br>\
+Hello, Dr. Steinberg. I'm glad to meet you. I've heard great things about you."
+	,vi:""
+	,voca:"",
+},
+{
 	title:"Describing People",
 	track:"02.02",
 	en:"1<br>\
@@ -1063,7 +1094,7 @@ Oh, I'd love to, but I can't tonight. I have too much work to do."
 	track:"10.04",
 	en:"1<br>\
 Bobby, would you like to go out for dinner Thursday?<br>\
-Thursday? Oh, I’d love to, but I have to meet my sister for dinner.<br>\
+Thursday? Oh, I'd love to, but I have to meet my sister for dinner.<br>\
 Oh, well, some other time, then.<br>\
 Sure.<br>\
 2<br>\
@@ -1072,22 +1103,22 @@ That sounds great. What time?<br>\
 At 9:30?<br>\
 All right.<br>\
 3<br>\
-Hey, Jack, let’s go for coffee after class on Monday.<br>\
+Hey, Jack, let's go for coffee after class on Monday.<br>\
 Oh, sorry. I have to go downtown. I have an appointment.<br>\
 Oh, okay.<br>\
 4<br>\
 Betty, do you want to come over to my house for dinner Wednesday?<br>\
-Thanks. I’d love to. What time?<br>\
+Thanks. I'd love to. What time?<br>\
 Around 6:30.<br>\
 Okay. See you then.<br>\
 5<br>\
-Hey, Ralph, let’s play tennis on Sunday afternoon.<br>\
-Sunday afternoon? I can’t. I’m going away for the weekend. Maybe some other time?<br>\
+Hey, Ralph, let's play tennis on Sunday afternoon.<br>\
+Sunday afternoon? I can't. I'm going away for the weekend. Maybe some other time?<br>\
 Sure.<br>\
 6<br>\
-Say, Jill. I’m going shopping Friday night. I need a new dress. Want to come?<br>\
-Friday night? Okay, I’m not doing anything special.<br>\
-Good. Let’s go after work.<br>\
+Say, Jill. I'm going shopping Friday night. I need a new dress. Want to come?<br>\
+Friday night? Okay, I'm not doing anything special.<br>\
+Good. Let's go after work.<br>\
 Fine."
 	,vi:""
 	,voca:"",
@@ -1097,34 +1128,78 @@ Fine."
 	en:"1<br>\
 Can I help you?<br>\
 Yes, how much are these shoes?<br>\
-They’re on sale. Let’s see… They’re $45.<br>\
+They're on sale. Let's see… They're $45.<br>\
 Uh-huh<br>\
 Do you want to try them on?<br>\
 No, thanks.<br>\
 2<br>\
 How much is this computer?<br>\
-It’s on sale for $4,099.<br>\
+It's on sale for $4,099.<br>\
 $4,099!<br>\
 Do you want to buy it?<br>\
-That’s okay. I’m just looking.<br>\
+That's okay. I'm just looking.<br>\
 3<br>\
-This tie isn’t bad. How much is it?<br>\
-It’s $36.95.<br>\
-$36.95. Well, maybe I don’t really need a tie. Thanks, anyway.<br>\
+This tie isn't bad. How much is it?<br>\
+It's $36.95.<br>\
+$36.95. Well, maybe I don't really need a tie. Thanks, anyway.<br>\
 4<br>\
-These shorts are nice, aren’t they?<br>\
-Yes, and they’re only $26.95. Do you want to take them?<br>\
+These shorts are nice, aren't they?<br>\
+Yes, and they're only $26.95. Do you want to take them?<br>\
 Yeah, I think I will.<br>\
 5<br>\
 How much are these earrings?<br>\
-They’re only $12.25.<br>\
-They’re nice. I’ll take them.<br>\
+They're only $12.25.<br>\
+They're nice. I'll take them.<br>\
 Okay.<br>\
 6<br>\
 That camera looks interesting. How much is it?<br>\
-It’s on sale. It was $145, but now it’s only $125.<br>\
-Hmm. Well, I’ll think about it."
+It's on sale. It was $145, but now it's only $125.<br>\
+Hmm. Well, I'll think about it."
 	,vi:""
+	,voca:"",
+},{
+	track:"11.03",
+	en:"1.<br>\
+Lets see. Soup. Thats two for a dollar. And a bottle of shampoo—$6.50. So that comes to $7.50 and your change is $12.50.<br>\
+2.<br>\
+Okay, now—let me see what youve got. The CD is $14.95, and the cassette—oh, a good one, my favorite group—its on sale for $4.95. So, let me see…. That comes to $19.90. So heres your change, ten cents.<br>\
+3.<br>\
+Yes, can I help you? Okay. Lets see. The newspapers are $1.50, and the magazines will cost another…$8.15. Yes, so thats, let me see, $9.65, right? Heres your change, $10.35.<br>\
+4.<br>\
+So youre taking the T-shirt—nice choice. The color suits you. Okay, thats $4.95, then the socks. Theyre another $3.20, so thats $8.15, and heres your change, $11.85.<br>\
+5.<br>\
+Mmm, I like chocolates, too. Okay, thats $9.50 for the chocolates. And chocolate chip cookies, too. Mmm. You really do like chocolate. The cookies are $2.99. So thats $12.49. And heres your change, $7.51.<br>\
+6.<br>\
+Is this all? Okay. Lets see. Now the magazines are $6.25. And youre taking the book? Thats $12.00. So that comes to $18.25 altogether. And heres your change. Thats a dollar seventy-five."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"11.04",
+	en:"1.<br>\
+I could never buy a car at home because we pay a very high tax on cars. Only rich people can really afford to buy a car at home. Here in the US, I drive a nice new car and I can easily afford it. You don’t have to be rich to own a car, which is great.<br>\
+2.<br>\
+At home it only costs about $200 a month to rent a nice apartment. That’s what I used to pay for a four-room apartment in a good neighborhood. Here in the US, I pay about twice that for a much smaller apartment, and it’s not in a very nice neighborhood.<br>\
+3.<br>\
+I bought a lot of clothes in my country before I moved to the US because everyone told me how expensive American clothing is. I was kind of surprised that I could get nice clothes here for very reasonable prices. In fact, it costs me less for clothes here than it used to cost me at home.<br>\
+4.<br>\
+I come from a small country and not a lot of people travel by plane because it costs more than most people can afford. But the US is such a big country and the population is large, so you have a lot of people traveling by plane. That’s what keeps the prices down. That means I can afford to fly here and I do it all the time. I couldn’t do that at home.<br>\
+5.<br>\
+Most people send their children to private schools at home because the public schools are not very good. You have to pay a lot to do that, so it’s a big expense for many people. Public schools are better here, and cheaper than in my country. People don’t have to spend a lot on tuition, so most people send their children to public schools. <br>\
+6.<br>\
+Here in the US you need to have health insurance because it costs a lot to see a doctor or to enter a hospital. At home, you don’t have to pay much to see a doctor or go to a hospital because most of the clinics and hospitals are run by the government."
+	,vi:"1.<br>\
+Tôi không bao giờ có thể mua ô tô ở nhà vì chúng tôi phải trả thuế ô tô rất cao. Chỉ những người giàu mới có thể thực sự đủ khả năng mua ô tô ở nhà. Ở Hoa Kỳ, tôi lái một chiếc ô tô mới đẹp và tôi có thể dễ dàng mua được. Bạn không cần phải giàu có để sở hữu một chiếc ô tô, điều đó thật tuyệt.<br>\
+2.<br>\
+Ở nhà, chỉ mất khoảng 200 đô la một tháng để thuê một căn hộ đẹp. Đó là số tiền tôi từng trả cho một căn hộ bốn phòng ở một khu phố tốt. Ở Hoa Kỳ, tôi phải trả gấp đôi số tiền đó cho một căn hộ nhỏ hơn nhiều và nó không ở một khu phố đẹp.<br>\
+3.<br>\
+Tôi đã mua rất nhiều quần áo ở đất nước của mình trước khi chuyển đến Hoa Kỳ vì mọi người đều nói với tôi rằng quần áo của Mỹ đắt như thế nào. Tôi hơi ngạc nhiên khi tôi có thể mua được quần áo đẹp ở đây với giá rất phải chăng. Trên thực tế, tôi mua quần áo ở đây ít tốn kém hơn so với ở nhà.<br>\
+4.<br>\
+Tôi đến từ một quốc gia nhỏ và không nhiều người đi máy bay vì chi phí cao hơn khả năng chi trả của hầu hết mọi người. Nhưng Hoa Kỳ là một quốc gia lớn và dân số đông, vì vậy có rất nhiều người đi máy bay. Đó là lý do khiến giá cả ở đây thấp. Điều đó có nghĩa là tôi có đủ khả năng chi trả để bay đến đây và tôi làm điều đó mọi lúc. Tôi không thể làm như vậy ở nhà.<br>\
+5.<br>\
+Hầu hết mọi người gửi con đến trường tư ở nhà vì trường công không tốt lắm. Bạn phải trả nhiều tiền để làm như vậy, vì vậy đây là khoản chi lớn đối với nhiều người. Trường công ở đây tốt hơn và rẻ hơn ở đất nước tôi. Mọi người không phải chi nhiều tiền cho học phí, vì vậy hầu hết mọi người gửi con đến trường công. <br>\
+6.<br>\
+Ở Hoa Kỳ, bạn cần phải có bảo hiểm y tế vì chi phí khám bác sĩ hoặc nhập viện rất cao. Ở trong nước, bạn không phải trả nhiều tiền để gặp bác sĩ hoặc đến bệnh viện vì hầu hết các phòng khám và bệnh viện đều do chính phủ điều hành."
 	,voca:"",
 }
 

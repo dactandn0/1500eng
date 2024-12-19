@@ -1,12 +1,16 @@
-var PHRASAL_VERB = [{title:"Phrasal verbs",en:""}];
+var kVERB_3_COL = '(verb)'
 
-const BAT_QUI_TAC = [
+var PHRASAL_VERB = [{title:"Phrasal verbs",en:""}];
+var BAT_QUI_TAC = [{title:"Bat qui tac",en:""}];
+
+const BAT_QUI_TAC_DATA = [
 	'call|called|called|gọi',
 	'get|got|got|lấy',
 	'look|looked|looked|nhìn, trông',
 	'fall|fell|fallen|ngã, rơi',
 	'tear|tore|torn|xé, rách',
 	'take|took|taken|cầm, lấy',
+	'wear|wore|worn|mặc',
 ]
 
 const PHRASAL_VERB_DATA = [
@@ -36,6 +40,18 @@ function progress() {
 		en += fullW3 + "<br>"
 	}
 	PHRASAL_VERB[0].en = en.replace(/\s\s/gi, " ")
+
+	en = ''
+	for (var i = 0; i < BAT_QUI_TAC_DATA.length; i++) {
+		var datas = BAT_QUI_TAC_DATA[i].split('|')
+		var VerbSeq = datas[0] + ' - ' + datas[1] + ' - ' + datas[2]
+		var TYPE = ' ' + kVERB_3_COL + ' '
+		var meaning = datas[3]
+		var fullW = VerbSeq + TYPE + meaning
+		en += fullW + "<br>"
+	}
+//	console.log(en)
+	BAT_QUI_TAC[0].en = en.replace(/\s\s/gi, " ")
 }
 
 progress()
@@ -46,17 +62,18 @@ function getVerb_Irr(verb_bare, col=2) {
 		console.log('getVerb_Irr: col = ' + col + ' must [2,3]')
 		col = 2
 	}	
-	for (var i = 0; i < BAT_QUI_TAC.length; i++) {
-		var families = BAT_QUI_TAC[i].split('|')
+	for (var i = 0; i < BAT_QUI_TAC_DATA.length; i++) {
+		var families = BAT_QUI_TAC_DATA[i].split('|')
 		if (verb_bare === families[0]) 
 			return families[col-1]
 	}
-	console.log('getVerb_Irr: ' + verb_bare + ' not in BAT_QUI_TAC')
+	console.log('getVerb_Irr: ' + verb_bare + ' not in BAT_QUI_TAC_DATA')
 	return '!'
 }
 
 function IRR_ExtractWords(story) {
 	var phraVerbs = []
+
 	for (var i = 0; i < PHRASAL_VERB_DATA.length; i++) {
 		var ele = PHRASAL_VERB_DATA[i]
 		var bare = ele.word
@@ -77,6 +94,7 @@ function IRR_ExtractWords(story) {
 		var ele = phraVerbs[i]
 		phraRegex += ele + "|"
 	}
+
 	phraRegex = phraRegex.substring(0, phraRegex.length - 1)   //remove last '|'
 	if (phraRegex!=='') phraRegex = phraRegex + '|'
 	var regex = new RegExp(`\\b(${phraRegex}\\w+'*\\w*)\\b` , 'g')

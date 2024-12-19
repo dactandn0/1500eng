@@ -100,6 +100,13 @@ function isAsciiString(text) {
 
 function Helper_GetVocaFromWordFull(wordFull) {
 	wordFull = Helper_RemoveHTMLtag(wordFull);
+
+	//get verb-ed, Vpp
+	if( wordFull.indexOf(kVERB_3_COL) !== -1 ) 
+	{
+		return wordFull.split(kVERB_3_COL)[0];
+	}
+
 	var splitW = wordFull.trim().split(" ");
 	var result = "";
 	for (var i = 0; i < splitW.length; i++) {
@@ -115,7 +122,6 @@ function Helper_GetVocaFromWordFull(wordFull) {
 topFunction = function() {
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
 
 function ArrayRemove(arr, eleName) {
 	return arr.filter((item) => {

@@ -682,6 +682,7 @@ Gee. That looks pretty bad.<br>\
 Yeah.<br>\
 Do you often go skiing?<br>\
 No. It was my first time.<br>\
+6<br>\
 Do you get much exercise, Joe?<br>\
 Yes, I do. I walk a lot.<br>\
 Where?<br>\
@@ -717,6 +718,7 @@ Trời ạ. Trông tệ quá.<br>\
 Ừ.<br>\
 Bạn có thường xuyên đi trượt tuyết không?<br>\
 Không. Đó là lần đầu tiên của tôi.<br>\
+6<br>\
 Bạn có tập thể dục nhiều không, Joe?<br>\
 Có chứ. Tôi đi bộ rất nhiều.<br>\
 Ở đâu?<br>\
@@ -750,7 +752,31 @@ Why not?<br>\
 So, do you get any exercise?<br>\
 Well, not much. I don't have a lot of free time, but about once a week I walk for an hour.<br>\
 Oh. Where do you walk?"
-	,vi:""
+	,vi:"1<br>\
+Cơ bắp của anh to quá, Dave. Anh làm gì để chúng to thế?<br>\
+Ờ, tôi đến phòng tập thể dục mỗi ngày sau giờ làm việc, và cả thứ Bảy nữa. Tôi thích điều đó. Anh có tập thể dục không?<br>\
+2<br>\
+Anh có chơi nhiều môn thể thao không?<br>\
+Có, tôi có.<br>\
+Anh có thích bóng chuyền không?<br>\
+Ừ, tôi chơi bóng chuyền vào các ngày trong tuần.<br>\
+Anh có muốn chơi với tôi và bạn bè tôi tối nay không?<br>\
+3<br>\
+Anh có vóc dáng đẹp không, Ken. Anh có chơi nhiều môn thể thao không?<br>\
+Có, tôi có. Tôi thích thể thao. Tôi chơi bóng chuyền vào thứ Năm, và vào thứ Bảy và Chủ Nhật, tôi chơi quần vợt.<br>\
+Anh thích môn nào nhất?<br>\
+4<br>\
+Anh có thích chơi thể thao không?<br>\
+Không, thực ra là không. Tôi không thích tập thể dục chút nào. Nhưng tôi xem rất nhiều bóng chày trên TV!<br>\
+Bạn thực sự nên tập thể dục.<br>\
+5<br>\
+Bạn chơi những môn thể thao nào?<br>\
+Để xem nào. À, vào mùa hè, tôi thích lướt ván buồm. Nhưng tôi không làm gì vào mùa đông.<br>\
+Tại sao không?<br>\
+6<br>\
+Vậy, bạn có tập thể dục không?<br>\
+Ồ, không nhiều lắm. Tôi không có nhiều thời gian rảnh, nhưng khoảng một lần một tuần, tôi đi bộ một giờ.<br>\
+Ồ. Bạn đi bộ ở đâu?"
 	,voca:"",
 },
 {
@@ -775,7 +801,7 @@ Tôi là một người hâm mộ bóng đá lớn, nhưng tôi chỉ xem bóng 
 Tôi chỉ thích tập thể dục! Tôi thích nhiều môn thể thao khác nhau. Hãy xem nào…. Tôi rất thích bơi lội. Tôi dậy rất sớm, khoảng 5 giờ sáng, và bơi trong hai giờ từ thứ Hai đến thứ Sáu. Tôi cũng thích bóng rổ và chơi với một nhóm bạn từ nơi làm việc vào mỗi tối thứ Ba. Và tôi cũng bắt đầu chơi golf trong năm nay. Trước khi chơi, tôi chạy bộ để khởi động.<br>\
 5.<br>\
 Tôi thích tập thể dục, nhưng tôi không tập nhiều như tôi nên làm. Tôi gặp một người bạn vào mỗi thứ Tư và chúng tôi chơi quần vợt. Tôi không phải là một người chơi giỏi, nhưng nó rất vui và chúng tôi thường chơi trong một giờ. Vào cuối tuần, tôi thích đạp xe quanh khu phố của mình. Tôi đoán tôi dành một hoặc hai giờ để làm điều đó. À, và tôi thích bóng chày, nhưng chỉ xem nó trong khi ngồi trên ghế dài ăn bỏng ngô!"
-	,voca:"",
+	,voca:"popcorn,neighborhood",
 },
 {
 	title:"Locations",
@@ -801,8 +827,7 @@ Oh, yeah. That's right."
 	track:"08.03",
 	en:"1<br>\
 Do you think I should put the magazine rack next to the window?<br>\
-No. Not next to the window. I'd put it in the corner next to the sofa. It will look nice<br>\
-there.<br>\
+No. Not next to the window. I'd put it in the corner next to the sofa. It will look nice there.<br>\
 2<br>\
 Where do you think I should put the coffee table? Should I put it next to the sofa?<br>\
 I think it will be better in front of the sofa. It'll be more useful there, I think.<br>\
@@ -832,8 +857,39 @@ Yeah, that sounds good. I'll put it there. There. How does it look?<br>\
 What about the dinner table?<br>\
 Maybe we can put the dinner table against the wall, across from the sofa. In the middle of the wall.<br>\
 Across from the sofa, against the wall. Is that what you mean?"
-	,vi:""
-	,voca:"",
+	,vi:"1<br>\
+Bạn có nghĩ mình nên đặt giá để tạp chí cạnh cửa sổ không?<br>\
+Không. Không phải cạnh cửa sổ. Mình sẽ đặt nó ở góc cạnh ghế sofa. Trông sẽ đẹp ở đó.<br>\
+2<br>\
+Bạn nghĩ mình nên đặt bàn trà ở đâu? Mình có nên đặt nó cạnh ghế sofa không?<br>\
+Mình nghĩ là đặt trước ghế sofa thì tốt hơn. Mình nghĩ là sẽ hữu ích hơn ở đó.<br>\
+3<br>\
+Còn giá để cây thì sao? Có lẽ đặt cạnh cửa sổ thì đẹp.<br>\
+Đúng rồi, cạnh cửa sổ, bên trái hoặc bên phải.<br>\
+Mình nghĩ mình sẽ đặt nó bên phải.<br>\
+4<br>\
+Vậy còn giá sách thì sao? Nó to quá!<br>\
+Hmm. Bạn nghĩ sao?<br>\
+Bên cạnh cửa ra vào, dựa vào tường thì sao?<br>\
+Bên trái cửa ra vào thì sao?<br>\
+5<br>\
+Bây giờ mình cần tìm một chỗ cho chiếc ghế cũ mà mẹ tặng mình.<br>\
+Bên kia thì sao?<br>\
+Ý bạn là trước cửa sổ à?<br>\
+6<br>\
+Chúng ta vẫn phải tìm một chỗ cho chiếc bàn cuối này.<br>\
+Được, chúng ta có thể đặt nó ở đâu?<br>\
+Bên cạnh ghế sofa, ở góc gần cửa ra vào thì sao?<br>\
+Được, tốt. Bây giờ thì ổn chưa?<br>\
+7<br>\
+Nơi nào là chỗ tốt để đặt TV?<br>\
+Ở góc xa bên trái, bên trái cửa sổ thì sao?<br>\
+Vâng, nghe có vẻ ổn. Mình sẽ đặt nó ở đó. Ở đó. Trông thế nào?<br>\
+8<br>\
+Còn bàn ăn thì sao?<br>\
+Có lẽ chúng ta có thể đặt bàn ăn dựa vào tường, đối diện với ghế sofa. Ở giữa bức tường.<br>\
+Đối diện với ghế sofa, dựa vào tường. Ý bạn là vậy à?"
+	,voca:"against,plant stand,next to,in front of,across from,in the corner,in the far left corner",
 },
 {
 	track:"08.04",
@@ -851,10 +907,8 @@ That's fine. And remind me to get a new battery for the remote when we go downto
 Okay.<br>\
 3<br>\
 These look like your car keys. Where do you usually keep them?<br>\
-They're my extra apartment keys, actually. Just put them in one of the drawers in the<br>\
-desk.<br>\
-The top two drawers are already full of stuff, so I'll put them in the bottom drawer for<br>\
-you. They'll be inside an empty box.<br>\
+They're my extra apartment keys, actually. Just put them in one of the drawers in the desk.<br>\
+The top two drawers are already full of stuff, so I'll put them in the bottom drawer for you. They'll be inside an empty box.<br>\
 Okay.<br>\
 4<br>\
 Do you want me to put this baseball cap away?<br>\
@@ -890,10 +944,8 @@ Có một tạp chí ở đó, hướng dẫn chương trình TV. Tôi có nên 
 Được.<br>\
 3<br>\
 Những thứ này trông giống chìa khóa xe của bạn. Bạn thường để chúng ở đâu?<br>\
-Thực ra chúng là chìa khóa dự phòng của căn hộ tôi. Chỉ cần cất chúng vào một trong những ngăn kéo ở<br>\
-bàn làm việc.<br>\
-Hai ngăn kéo trên cùng đã đầy đồ rồi, nên tôi sẽ cất chúng vào ngăn kéo dưới cùng cho<br>\
-bạn. Chúng sẽ ở trong một chiếc hộp rỗng.<br>\
+Thực ra chúng là chìa khóa dự phòng của căn hộ tôi. Chỉ cần cất chúng vào một trong những ngăn kéo ở bàn làm việc.<br>\
+Hai ngăn kéo trên cùng đã đầy đồ rồi, nên tôi sẽ cất chúng vào ngăn kéo dưới cùng cho bạn. Chúng sẽ ở trong một chiếc hộp rỗng.<br>\
 Được.<br>\
 4<br>\
 Bạn có muốn tôi cất chiếc mũ bóng chày này đi không?<br>\
@@ -915,7 +967,7 @@ Tôi có nên để nó ở đâu đó không?<br>\
 Để nó trên ghế. Anh ấy luôn ngồi ở đó.<br>\
 Được rồi. Chiếc ghế cạnh cửa sổ?<br>\
 Đúng rồi."
-	,voca:"",
+	,voca:"On the top,beside,inside,next to",
 },
 {
 	title:"The Family",
@@ -950,7 +1002,36 @@ This is my father with my uncle and aunt and two cousins.<br>\
 Which one is your father?<br>\
 The one on the left.<br>\
 Oh, yes."
-	,vi:""
+	,vi:"1<br>\
+Đó là tôi ở giữa. Đó là cháu gái lớn nhất của tôi, Betsy, bên trái. Cháu đang học năm thứ hai đại học. Và đó là cháu trai tôi, bên phải. Cháu vừa tốt nghiệp trung học.<br>\
+Ồ, cháu đẹp trai quá.<br>\
+2<br>\
+Đó là tôi ở bên trái.<br>\
+Hai người còn lại là ai?<br>\
+Đó là chị gái và em trai tôi, Maria và Jose. Họ là cặp song sinh.<br>\
+Họ bao nhiêu tuổi?<br>\
+Họ mười tuổi.<br>\
+3<br>\
+Đó là tôi và bố mẹ tôi.<br>\
+Cậu bé! Trông cháu giống hệt bố cháu.<br>\
+Không, tôi không giống!<br>\
+4<br>\
+Đây là ảnh chụp con trai và con gái tôi.<br>\
+Con gái của bạn có lớn tuổi hơn con trai bạn không?<br>\
+Vâng, lớn tuổi hơn nhiều. Cô ấy 26 tuổi.<br>\
+Con trai bạn bao nhiêu tuổi?<br>\
+Nó 17 tuổi.<br>\
+Thật là khác biệt lớn.<br>\
+5<br>\
+Đây là bố mẹ tôi và bà tôi bên trái.<br>\
+Bà ấy bao nhiêu tuổi?<br>\
+Bà ấy 60 tuổi.<br>\
+Bà ấy trông trẻ hơn so với tuổi 60.<br>\
+6<br>\
+Đây là bố tôi với chú, dì và hai anh em họ.<br>\
+Bố bạn là ai?<br>\
+Bố bên trái.<br>\
+Ồ, đúng rồi."
 	,voca:"",
 },
 {
@@ -1200,6 +1281,230 @@ Tôi đến từ một quốc gia nhỏ và không nhiều người đi máy bay
 Hầu hết mọi người gửi con đến trường tư ở nhà vì trường công không tốt lắm. Bạn phải trả nhiều tiền để làm như vậy, vì vậy đây là khoản chi lớn đối với nhiều người. Trường công ở đây tốt hơn và rẻ hơn ở đất nước tôi. Mọi người không phải chi nhiều tiền cho học phí, vì vậy hầu hết mọi người gửi con đến trường công. <br>\
 6.<br>\
 Ở Hoa Kỳ, bạn cần phải có bảo hiểm y tế vì chi phí khám bác sĩ hoặc nhập viện rất cao. Ở trong nước, bạn không phải trả nhiều tiền để gặp bác sĩ hoặc đến bệnh viện vì hầu hết các phòng khám và bệnh viện đều do chính phủ điều hành."
+	,voca:"",
+},{
+	title:"Restaurants",
+	track:"12.02",
+	en:"1<br>\
+Are you ready to order?<br>\
+Yes, I'd like to start with the salad, please.<br>\
+Okay. And what would you like for your main dish?<br>\
+Hmm. I'll have the spaghetti. Is it good?<br>\
+I've never tried it. Anything to drink?<br>\
+Tea, please.<br>\
+And how about dessert?<br>\
+Not today, thanks.<br>\
+2<br>\
+Hi there. What can I get you today?<br>\
+Well, let me see. I'll just have some soup and a salad.<br>\
+Sure. Soup and salad. Our special today is grilled fish, and that comes with broccoli or peas.<br>\
+No, thanks. Not today. I'm not very hungry. But I would like some chocolate ice cream for dessert.<br>\
+Sure. Anything to drink?<br>\
+Coffee, and some water, please.<br>\
+3<br>\
+Hi! Have you decided yet?<br>\
+Is the beef stir-fry very spicy?<br>\
+Yes, it's pretty hot.<br>\
+Hmm. I think I'll have a hamburger and fries, then. And a glass of milk.<br>\
+Anything for dessert? The cheesecake is excellent.<br>\
+No, thanks."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"12.03",
+	en:"1<br>\
+There you are, sir. Two slices of pizza and a large cola.<br>\
+Thank you. Hmm.<br>\
+How does it look?<br>\
+Okay, I guess, but I think I should have ordered three or four slices. These slices are<br>\
+much smaller than I expected.<br>\
+2<br>\
+And here's your order. Steak with french fries and coffee.<br>\
+Thanks. I can't wait to eat. I'm starving.<br>\
+It looks okay. How is it?<br>\
+Let me try. Oh, just perfect.<br>\
+3<br>\
+Sorry to keep you waiting. One order of fried chicken with broccoli.<br>\
+Thanks. Oh my! This chicken looks pretty dry.<br>\
+Really. How does it taste?<br>\
+I'm afraid it's not very fresh. I think it must have been frozen.<br>\
+Let's send it back.<br>\
+4<br>\
+There's your order, ma'am. Fish, salad, and peas.<br>\
+Oh. But you told me today's vegetable was broccoli.<br>\
+You don't like peas, do you?<br>\
+No, I don't. I hate peas!<br>\
+5<br>\
+And here's your dessert. Chocolate cake, with two scoops of ice cream and a large cola.<br>\
+Great.<br>\
+Wow. That cake looks good. I wish I had ordered it.<br>\
+Do you want to try it? It's delicious.<br>\
+Just a taste. Mmm. Fabulous.<br>\
+6<br>\
+Did you order the spaghetti?<br>\
+That's right.<br>\
+Good. Here you are. And here's your cola.<br>\
+Thanks. I don't think I made a very good choice.<br>\
+Really?<br>\
+Yeah. I think I can make better spaghetti than this."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"12.04",
+	en:"1<br>\
+I went to a new steak restaurant last night that opened near my house. I love trying new places. To start the meal, I had an interesting appetizer. It was some kind of seafood with a spicy sauce on it… Mmm! The main dish, of course, was steak. It was very small and a little tough, though.<br>\
+However, the vegetables were great—nice and fresh, but not too oily. The final thing was the best—the dessert! It was apple pie with a lot of ice cream on it. I know that I shouldn't eat so many sweets, but it was delicious!<br>\
+2<br>\
+Have you ever tried that seafood restaurant on Main Street? You should—it's great! I go there often. In fact, I went there last weekend. To begin, I had a salad. It was nice and fresh with a great house dressing. My main dish was a fish that I had never tried. I really enjoyed the spices it was cooked in. The vegetables were good—very fresh and tasty. For dessert, I had chocolate cake. It's usually very delicious, but this time, it was much too sweet. I couldn't eat more than two bites! That's okay, though, because I am on a diet.<br>\
+3<br>\
+My new girlfriend took me to a Chinese restaurant in her neighborhood the other night. It was pretty good. First we had some egg rolls. They were the best I had ever tasted. Then we ordered the beef and pepper stir-fry. It came in a very interesting sauce—spicy, but not too spicy. We also ordered the steamed vegetables, but they were awful. They were really too soft. The dessert was a big bowl of fresh fruit. Some of the fruit I had never seen. It was fantastic—and so was my date!<br>\
+4 <br>\
+For lunch, my co-worker and I went to a nice little French restaurant near our office. He didn't feel like eating much, so he just had a small salad. I had a large meal, though. First, I had the onion soup, but it was much too salty. For my main dish, I had a piece of pork. It was too dry and had no taste. The vegetables were perfect, though—broccoli and peas. Those are my favorites.<br>\
+Finally, I had a large bowl of chocolate mousse. It was just like the chocolate mousse I had in France during my last vacation—very creamy and delicious. I think I'll have it next time, too."
+	,vi:"1<br>\
+Tôi đã đến một nhà hàng bít tết mới mở gần nhà tôi tối qua. Tôi thích thử những nơi mới. Để bắt đầu bữa ăn, tôi đã có một món khai vị thú vị. Đó là một loại hải sản với nước sốt cay… Mmm! Món chính, tất nhiên, là bít tết. Nó rất nhỏ và hơi dai.<br>\
+Tuy nhiên, rau thì tuyệt vời—ngon và tươi, nhưng không quá nhiều dầu mỡ. Món cuối cùng là tuyệt nhất—món tráng miệng! Đó là bánh táo với rất nhiều kem trên đó. Tôi biết rằng tôi không nên ăn nhiều đồ ngọt như vậy, nhưng nó rất ngon!<br>\
+2<br>\
+Bạn đã bao giờ thử nhà hàng hải sản trên Phố Chính chưa? Bạn nên thử—nó tuyệt lắm! Tôi thường đến đó. Thực tế là tôi đã đến đó vào cuối tuần trước. Để bắt đầu, tôi đã ăn một đĩa salad. Nó ngon và tươi với nước sốt đặc biệt của nhà hàng. Món chính của tôi là một loại cá mà tôi chưa bao giờ thử. Tôi thực sự thích các loại gia vị được sử dụng để nấu nó. Các loại rau thì ngon—rất tươi và ngon. Đối với món tráng miệng, tôi đã ăn bánh sô cô la. Thường thì rất ngon, nhưng lần này thì quá ngọt. Tôi không thể ăn quá hai miếng! Nhưng không sao, vì tôi đang ăn kiêng.<br>\
+3<br>\
+Bạn gái mới của tôi đã đưa tôi đến một nhà hàng Trung Quốc ở khu phố của cô ấy vào đêm hôm trước. Nhà hàng khá ngon. Đầu tiên chúng tôi ăn một ít chả giò. Đó là món ngon nhất mà tôi từng nếm. Sau đó, chúng tôi gọi món thịt bò xào tiêu. Nó được phục vụ trong một loại nước sốt rất thú vị—cay, nhưng không quá cay. Chúng tôi cũng gọi món rau hấp, nhưng chúng rất tệ. Chúng thực sự quá mềm. Món tráng miệng là một bát lớn trái cây tươi. Một số loại trái cây mà tôi chưa từng thấy. Thật tuyệt vời—và bạn hẹn hò của tôi cũng vậy!<br>\
+4 <br>\
+Vào bữa trưa, đồng nghiệp của tôi và tôi đã đến một nhà hàng Pháp nhỏ xinh gần văn phòng của chúng tôi. Anh ấy không muốn ăn nhiều, vì vậy anh ấy chỉ ăn một ít salad. Tuy nhiên, tôi đã ăn một bữa ăn lớn. Đầu tiên, tôi gọi súp hành tây, nhưng nó quá mặn. Đối với món chính, tôi gọi một miếng thịt lợn. Nó quá khô và không có mùi vị gì. Tuy nhiên, rau thì hoàn hảo—bông cải xanh và đậu Hà Lan. Đó là những món tôi thích nhất.<br>\
+Cuối cùng, tôi gọi một bát lớn sô cô la mousse. Nó giống hệt như sô cô la mousse tôi đã ăn ở Pháp trong kỳ nghỉ trước—rất béo và ngon. Tôi nghĩ mình cũng sẽ ăn nó vào lần tới."
+	,voca:"",
+},{
+	title:"Small Talk",
+	track:"13.02",
+	en:"1<br>\
+Oh, hello, Bob. I haven't seen you in ages. How is everything with you these days?<br>\
+2<br>\
+It's been great seeing you again. Gee, look at the time. I've got to run. Talk to you later.<br>\
+3<br>\
+How are you, anyway? It's so nice to see you. What have you been doing lately?<br>\
+4<br>\
+It's been really nice talking to you. Let's get together again soon, okay?<br>\
+5<br>\
+Oh, hi. I've been thinking about you. I haven't seen you in such a long time. How's everything?<br>\
+6<br>\
+Where have you been? It's been ages. How's it going with you?<br>\
+7<br>\
+Listen. I hope to see you again soon. Let's have lunch sometime, okay?<br>\
+8<br>\
+How have you been? And how's your family? It's so nice to see you again."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"13.03",
+	en:"1<br>\
+Hey, how's it going? Are you enjoying the party?<br>\
+Yes, I am. The people here are really nice.<br>\
+Really. Everyone is so friendly.<br>\
+2<br>\
+Hi, Jim. How's everything?<br>\
+Everything's fine, thanks.<br>\
+Hey, hear that? That's Whitney Hudson. Isn't she great?<br>\
+Yes, she's really good.<br>\
+3<br>\
+Who's that over there? Have you met her?<br>\
+No, I haven't met her before. But I think I will now. Nice talking to you.<br>\
+4<br>\
+So, how are you, anyway?<br>\
+Okay. Not too bad.<br>\
+How's everything at work?<br>\
+Fine, but I'm very busy. I have to work late nearly every night.<br>\
+5<br>\
+I think I'll get something to eat. The food looks good. Can I get you something?<br>\
+No, I'm not hungry right now, thanks.<br>\
+Okay, talk to you later.<br>\
+6<br>\
+Hey, hi. I've been thinking about you. I haven't seen you in ages. Did you have a good trip?<br>\
+Yeah, it was great. I took a train across Canada. Then I drove to Disneyland.<br>\
+Wow! That's great.<br>\
+7<br>\
+Hey, great to see you. How have you been?<br>\
+Fine, thanks.<br>\
+How are your parents?<br>\
+Oh, Mom and Dad are fine, thanks. Mom's just started a new job.<br>\
+Oh, really?<br>\
+8<br>\
+Hi. How have you been?<br>\
+Oh, fine, thanks.<br>\
+Do you know everyone here?<br>\
+Yeah, almost everyone."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"13.04",
+	en:"1<br>\
+Hey, I was just talking to Cindy. Did you know she’s had a really good job in a computer company for a long time?<br>\
+Really?<br>\
+Yeah, but she’s decided to change jobs. She wants to become an elementary school teacher.<br>\
+Wow. That’s a surprise.<br>\
+2<br>\
+I’m really excited about the rock concert next week. I’m glad I got my tickets early, because I heard that all the tickets had been sold.<br>\
+I heard that, too. I’m looking forward to the concert. It should be great!<br>\
+3<br>\
+I got a really cool present for my birthday.<br>\
+Oh, yeah? What is it?<br>\
+My parents gave me a dog—a little puppy. She’s so cute. I’ve always wanted a dog.<br>\
+That’s awesome. So what are you going to call her?<br>\
+Spot.<br>\
+4<br>\
+Terry’s not here tonight. I hear she’s sick.<br>\
+Yeah. I spoke to her dad this morning, and he said she has a really bad case of the flu.<br>\
+She’s had it for about a week.<br>\
+Sometimes it takes a long time to get over the flu. Terry has been sick a couple of times<br>\
+this year.<br>\
+I know. It’s too bad.<br>\
+5<br>\
+That guy over there has just moved here from Canada. I was talking to him a while ago.<br>\
+He’s really interesting. He’s an actor and he’s already appeared in a couple of movies.<br>\
+Yeah, so he was telling me. He mentioned the names of his movies, but I haven’t seen<br>\
+any of them.<br>\
+Maybe one day he’ll be a big star.<br>\
+6<br>\
+There’s a really interesting exhibition at the museum this month. It’s all about Walt<br>\
+Disney and the story of how he started making cartoons.<br>\
+Is that right? I haven’t been to the museum for a long time.<br>\
+You should go and take a look at it. I’m sure you’ll find it really interesting.<br>\
+I think I will. Thanks for letting me know."
+	,vi:"1<br>\
+Này, tôi vừa nói chuyện với Cindy. Bạn có biết cô ấy đã có một công việc thực sự tốt trong một công ty máy tính trong một thời gian dài không?<br>\
+Thật sao?<br>\
+Vâng, nhưng cô ấy đã quyết định đổi việc. Cô ấy muốn trở thành giáo viên tiểu học.<br>\
+Ồ. Thật bất ngờ.<br>\
+2<br>\
+Tôi thực sự hào hứng về buổi hòa nhạc rock vào tuần tới. Tôi mừng vì đã mua được vé sớm, vì tôi nghe nói rằng tất cả vé đã được bán hết.<br>\
+Tôi cũng nghe nói vậy. Tôi đang mong chờ buổi hòa nhạc. Nó sẽ tuyệt lắm!<br>\
+3<br>\
+Tôi nhận được một món quà thực sự tuyệt vời cho ngày sinh nhật của mình.<br>\
+Ồ, vậy à? Đó là gì vậy?<br>\
+Bố mẹ tôi đã tặng tôi một con chó—một chú cún con. Nó rất dễ thương. Tôi luôn muốn có một con chó.<br>\
+Thật tuyệt. Vậy bạn sẽ gọi cô ấy là gì?<br>\
+Spot.<br>\
+4<br>\
+Terry không ở đây tối nay. Tôi nghe nói cô ấy bị ốm.<br>\
+Ừ. Tôi đã nói chuyện với bố cô ấy sáng nay và ông ấy nói rằng cô ấy bị cúm rất nặng.<br>\
+Cô ấy đã bị khoảng một tuần.<br>\
+Đôi khi phải mất một thời gian dài để vượt qua cơn cúm. Terry đã bị ốm một vài lần<br>\
+năm nay.<br>\
+Tôi biết. Thật tệ.<br>\
+5<br>\
+Anh chàng kia vừa chuyển đến đây từ Canada. Tôi đã nói chuyện với anh ấy một thời gian trước.<br>\
+Anh ấy thực sự thú vị. Anh ấy là một diễn viên và đã xuất hiện trong một vài bộ phim.<br>\
+Ừ, anh ấy đã kể với tôi như vậy. Anh ấy có nhắc đến tên những bộ phim của mình, nhưng tôi chưa xem<br>\
+bất kỳ bộ phim nào.<br>\
+Có lẽ một ngày nào đó anh ấy sẽ trở thành một ngôi sao lớn.<br>\
+6<br>\
+Có một cuộc triển lãm thực sự thú vị tại bảo tàng vào tháng này. Tất cả đều là về Walt<br>\
+Disney và câu chuyện về cách ông bắt đầu làm phim hoạt hình.<br>\
+Đúng không? Tôi đã không đến bảo tàng trong một thời gian dài.<br>\
+Bạn nên đến đó và xem thử. Tôi chắc rằng bạn sẽ thấy nó thực sự thú vị.<br>\
+Tôi nghĩ là tôi sẽ thấy vậy. Cảm ơn bạn đã cho tôi biết."
 	,voca:"",
 }
 

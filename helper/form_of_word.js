@@ -1,6 +1,6 @@
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
 
-const NOUN_SAME_VERBS = "poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
+const NOUN_SAME_VERBS = "exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\
 excuse,mind,ski,bail,exhibit,mine,slice,balance,experience,miss,slide,balloon,eye,mistake,slip,ban,face,moor,smell,bandage,fall,move,smile,bank,favor,\
 mug,smirk,bare,fax,nail,smoke,bargain,fear,name,snack,battle,feel,need,snow,beam,fight,nest,sound,bear,file,notch,span,beat,fill,note,spot,bend,film,\
@@ -119,8 +119,6 @@ function Helper_Add_ED(words) {
 	return word +'ed' + rest
 }
 
-
-
 function Helper_N_V_Add_ING(words) {
 
 	words = words.trim();
@@ -157,19 +155,32 @@ function Helper_N_V_Add_ING(words) {
 	return word +'ing' + rest
 }
 
-function Helper_IsFormOfWord (word, wordFormed) {
+function IsVerbInData(SeqWord, word) {
+	if( SeqWord.indexOf(' - ') !== -1 ) 
+	{
+		return SeqWord.indexOf(word) !== -1
+	}
+	return false;
+}
+
+// word = bare in Data
+// touchedWord = touched in web
+function Helper_IsFormOfWord (word, touchedWord) {
+	var isVerb = IsVerbInData(word, touchedWord);
+	if (isVerb) return true;
+
 	var add_E_ES = Helper_N_V_Add_S_ES(word).toLowerCase(); 
 	var add_ING = Helper_N_V_Add_ING(word).toLowerCase();
 	var add_Ly = Helper_A_Add_LY(word).toLowerCase();
 	var add_ER = Helper_A_Add_ER(word).toLowerCase();
 	var add_EST = Helper_A_Add_EST(word).toLowerCase();
 	var add_ED = Helper_Add_ED(word).toLowerCase();
-	return wordFormed === add_E_ES 
-			|| wordFormed === add_ING 
-			|| wordFormed === add_Ly
-			|| wordFormed === add_ER
-			|| wordFormed === add_EST
-			|| wordFormed === add_ED
+	return touchedWord === add_E_ES 
+			|| touchedWord === add_ING 
+			|| touchedWord === add_Ly
+			|| touchedWord === add_ER
+			|| touchedWord === add_EST
+			|| touchedWord === add_ED
 }
 
 function xxx () {

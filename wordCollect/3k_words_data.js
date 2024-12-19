@@ -604,6 +604,7 @@ Badminton (n) /ˈbæd.mɪn.tən/ Cầu lông<br>\
 Tennis (n) /ˈtɛn.ɪs/ Quần vợt<br>\
 Table tennis (n) /ˈteɪ.bəl ˈtɛn.ɪs/ Bóng bàn<br>\
 Baseball (n) /ˈbeɪs.bɔːl/ Bóng chày<br>\
+Volleyball (n) /ˈvɑːlibɔːl/ Bóng chuyền<br>\
 Cycling (n) /ˈsaɪ.klɪŋ/ Đua xe đạp, đạp xe<br>\
 Golf (n) /ɡɑːlf/ Đánh gôn<br>\
 Contact sport (n) /ˈkɒn.tækt spɔːrt/ Thể thao tiếp xúc<br>\

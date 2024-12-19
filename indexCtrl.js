@@ -6,6 +6,7 @@ var VocaToUI = WORDS_3K_DATA
 
 var VocaForSearch = VocaToUI
     .concat(PHRASAL_VERB)
+    .concat(BAT_QUI_TAC)
     .concat(IELTS_SYN)
     .concat(GRAMMER_DATA)
     .concat(NATIONS)
@@ -166,8 +167,8 @@ $scope.Idx_n_L_WSp_ = function (event) {
   event.stopPropagation()
   Helper_ngClickWordSpeak(event);
 
-  var wordFormed = event.target.innerText.toLowerCase();
-  var result = IELTS_SYN_IsIn(wordFormed)
+  var touchedWord = event.target.innerText.toLowerCase();
+  var result = IELTS_SYN_IsIn(touchedWord)
   if (result !== '') {
      doShowToast(result, true);
      return;
@@ -176,7 +177,7 @@ $scope.Idx_n_L_WSp_ = function (event) {
   for (var i = 0; i < searchData.length; i++) {
     var wordFull = searchData[i]
     var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
-    if (word === wordFormed || Helper_IsFormOfWord(word, wordFormed)) {
+    if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) {
         doShowToast(wordFull, true);
         found = true;
         break;
@@ -185,7 +186,7 @@ $scope.Idx_n_L_WSp_ = function (event) {
   }
   // not in DB
   if (!found) {
-    doShowToast(wordFormed, false)
+    doShowToast(touchedWord, false)
   }
   
 }

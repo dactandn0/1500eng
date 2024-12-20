@@ -788,7 +788,7 @@ I don't like jogging or doing anything too energetic. I prefer taking walks. I l
 3.<br>\
 I am a big football fan, but I only watch it on TV. I can't stand playing it! There are great games to watch on the weekend. I also enjoy watching tennis. I'd like to learn someday, but I don't like to sweat. I love chess and often play with my younger sister. She's really good at it and usually wins. On the weekends, I love to play video games with some of my friends.<br>\
 4.<br>\
-I just love to exercise! I like many different sports. Let's see…. I like swimming a lot. I get up very early, around 5 a.m., and swim for two hours from Monday to Friday. I also enjoy basketball and play with a group of friends from work every Tuesday night. And I've also started playing golf this year. Before playing, I go jogging to warm up.<br>\
+I just love to exercise! I like many different sports. Let's see... I like swimming a lot. I get up very early, around 5 a.m., and swim for two hours from Monday to Friday. I also enjoy basketball and play with a group of friends from work every Tuesday night. And I've also started playing golf this year. Before playing, I go jogging to warm up.<br>\
 5.<br>\
 I enjoy exercise, but I don't do it as much as I should. I meet a friend every Wednesday and we play tennis. I'm not a very good player, but it's fun and we usually play for an hour. On weekends, I like to bicycle in our neighborhood. I guess I spend an hour or two doing that. Oh, and I love baseball, but only watching it while sitting on the couch eating popcorn!"
 	,vi:"1.<br>\
@@ -798,7 +798,7 @@ Tôi không thích chạy bộ hoặc làm bất cứ điều gì quá năng đ�
 3.<br>\
 Tôi là một người hâm mộ bóng đá lớn, nhưng tôi chỉ xem bóng đá trên TV. Tôi không thể chịu được việc chơi bóng đá! Có những trận đấu tuyệt vời để xem vào cuối tuần. Tôi cũng thích xem quần vợt. Tôi muốn học một ngày nào đó, nhưng tôi không thích đổ mồ hôi. Tôi thích cờ vua và thường chơi với em gái mình. Em ấy chơi rất giỏi và thường thắng. Vào cuối tuần, tôi thích chơi trò chơi điện tử với một số người bạn của mình.<br>\
 4.<br>\
-Tôi chỉ thích tập thể dục! Tôi thích nhiều môn thể thao khác nhau. Hãy xem nào…. Tôi rất thích bơi lội. Tôi dậy rất sớm, khoảng 5 giờ sáng, và bơi trong hai giờ từ thứ Hai đến thứ Sáu. Tôi cũng thích bóng rổ và chơi với một nhóm bạn từ nơi làm việc vào mỗi tối thứ Ba. Và tôi cũng bắt đầu chơi golf trong năm nay. Trước khi chơi, tôi chạy bộ để khởi động.<br>\
+Tôi chỉ thích tập thể dục! Tôi thích nhiều môn thể thao khác nhau. Hãy xem nào... Tôi rất thích bơi lội. Tôi dậy rất sớm, khoảng 5 giờ sáng, và bơi trong hai giờ từ thứ Hai đến thứ Sáu. Tôi cũng thích bóng rổ và chơi với một nhóm bạn từ nơi làm việc vào mỗi tối thứ Ba. Và tôi cũng bắt đầu chơi golf trong năm nay. Trước khi chơi, tôi chạy bộ để khởi động.<br>\
 5.<br>\
 Tôi thích tập thể dục, nhưng tôi không tập nhiều như tôi nên làm. Tôi gặp một người bạn vào mỗi thứ Tư và chúng tôi chơi quần vợt. Tôi không phải là một người chơi giỏi, nhưng nó rất vui và chúng tôi thường chơi trong một giờ. Vào cuối tuần, tôi thích đạp xe quanh khu phố của mình. Tôi đoán tôi dành một hoặc hai giờ để làm điều đó. À, và tôi thích bóng chày, nhưng chỉ xem nó trong khi ngồi trên ghế dài ăn bỏng ngô!"
 	,voca:"popcorn,neighborhood",
@@ -817,7 +817,7 @@ Do you know where the remote control is?<br>\
 Look in the living room. I think I saw it in front of the TV.<br>\
 Oh, yeah.<br>\
 4<br>\
-Where's my tennis racket? Did Dad borrow it again? I wish he'd ask me.<br>\
+Where's my tennis racket? Did dad borrow it again? I wish he'd ask me.<br>\
 I saw it in your bedroom, under your bed.<br>\
 Oh, yeah. That's right."
 	,vi:""
@@ -1201,7 +1201,34 @@ Say, Jill. I'm going shopping Friday night. I need a new dress. Want to come?<br
 Friday night? Okay, I'm not doing anything special.<br>\
 Good. Let's go after work.<br>\
 Fine."
-	,vi:""
+	,vi:"1<br>\
+Bobby, bạn có muốn ra ngoài ăn tối vào thứ năm không?<br>\
+Thứ năm? Ồ, tôi rất muốn, nhưng tôi phải gặp chị gái tôi để ăn tối.<br>\
+Ồ, vậy thì lúc khác vậy.<br>\
+Tất nhiên rồi.<br>\
+2<br>\
+Melissa, bạn có muốn xem phim vào thứ bảy không?<br>\
+Nghe tuyệt quá. Mấy giờ?<br>\
+Lúc 9:30?<br>\
+Được.<br>\
+3<br>\
+Này, Jack, chúng ta đi uống cà phê sau giờ học vào thứ hai nhé.<br>\
+Ồ, xin lỗi. Tôi phải xuống trung tâm thành phố. Tôi có cuộc hẹn.<br>\
+Ồ, được thôi.<br>\
+4<br>\
+Betty, bạn có muốn đến nhà tôi ăn tối vào thứ tư không?<br>\
+Cảm ơn. Tôi rất muốn. Mấy giờ?<br>\
+Khoảng 6:30.<br>\
+Được. Gặp lại sau nhé.<br>\
+5<br>\
+Này, Ralph, chúng ta chơi quần vợt vào chiều Chủ Nhật nhé.<br>\
+Chiều Chủ Nhật à? Tôi không thể. Tôi sẽ đi chơi xa vào cuối tuần. Có lẽ để lúc khác?<br>\
+Được thôi.<br>\
+6<br>\
+Này, Jill. Tôi sẽ đi mua sắm vào tối thứ Sáu. Tôi cần một chiếc váy mới. Bạn có muốn đi cùng không?<br>\
+Tối thứ Sáu à? Được thôi, tôi không làm gì đặc biệt cả.<br>\
+Tốt. Chúng ta đi sau giờ làm nhé.<br>\
+Được thôi."
 	,voca:"",
 },{
 	title:"Prices",
@@ -1243,7 +1270,7 @@ Hmm. Well, I'll think about it."
 	en:"1.<br>\
 Lets see. Soup. Thats two for a dollar. And a bottle of shampoo—$6.50. So that comes to $7.50 and your change is $12.50.<br>\
 2.<br>\
-Okay, now—let me see what youve got. The CD is $14.95, and the cassette—oh, a good one, my favorite group—its on sale for $4.95. So, let me see…. That comes to $19.90. So heres your change, ten cents.<br>\
+Okay, now—let me see what youve got. The CD is $14.95, and the cassette—oh, a good one, my favorite group—its on sale for $4.95. So, let me see... That comes to $19.90. So heres your change, ten cents.<br>\
 3.<br>\
 Yes, can I help you? Okay. Lets see. The newspapers are $1.50, and the magazines will cost another…$8.15. Yes, so thats, let me see, $9.65, right? Heres your change, $10.35.<br>\
 4.<br>\
@@ -1505,6 +1532,200 @@ Disney và câu chuyện về cách ông bắt đầu làm phim hoạt hình.<br
 Đúng không? Tôi đã không đến bảo tàng trong một thời gian dài.<br>\
 Bạn nên đến đó và xem thử. Tôi chắc rằng bạn sẽ thấy nó thực sự thú vị.<br>\
 Tôi nghĩ là tôi sẽ thấy vậy. Cảm ơn bạn đã cho tôi biết."
+	,voca:"",
+},
+{
+	title:"Vacations",
+	track:"14.02",
+	en:"1<br>\
+Did you have a good vacation?<br>\
+Not bad. I decided not to go away. I just stayed home and watched TV.<br>\
+You call that a vacation?<br>\
+2<br>\
+How was your vacation?<br>\
+So-so.<br>\
+Where did you go?<br>\
+I went to Hawaii.<br>\
+And?<br>\
+Well, I went for the sunshine, but it rained every day! So I couldn't get a tan.<br>\
+Hey. That's tough!<br>\
+3<br>\
+How was your vacation?<br>\
+Very disappointing.<br>\
+Oh, what did you do?<br>\
+Nothing. I stayed home and helped my father fix his car.<br>\
+Oh, no!<br>\
+4<br>\
+Did you do anything interesting on your vacation?<br>\
+Mmm. Well, I went out of town for a few days. I visited my brother and his family.<br>\
+Did you have a nice time?<br>\
+It was terrible. The kids were fighting all the time.<br>\
+5<br>\
+When did you get back from your trip?<br>\
+Last week.<br>\
+So did you go to the beach?<br>\
+Not this time. I rented a house in the country. It was really quiet and peaceful. And really<br>\
+boring! And the birds woke me up at six o'clock every morning.<br>\
+6<br>\
+What did you do on your vacation? Did you stay home?<br>\
+No, I went skiing.<br>\
+Really. Did you have a good time?<br>\
+It was great—until I broke my leg!<br>\
+7<br>\
+How was your vacation?<br>\
+Vacation? Oh, that!<br>\
+Did you go to the beach?<br>\
+No, I had to stay home and study for my exam.<br>\
+Sounds awful.<br>\
+It was. And I failed the exam!<br>\
+8<br>\
+Did you go to California for your vacation?<br>\
+No, I went to Nevada.<br>\
+To Las Vegas?<br>\
+Yeah, Las Vegas.<br>\
+That's great. How was it?<br>\
+It was all right until I lost all my money!"
+	,vi:""
+	,voca:"",
+},
+{
+	track:"14.03",
+	en:"1<br>\
+Did you have a nice vacation?<br>\
+It was nothing special. The weather was terrible.<br>\
+That's too bad.<br>\
+2<br>\
+Did you enjoy your trip to Vancouver?<br>\
+Yeah, it was fantastic. The people are so nice.<br>\
+3<br>\
+How was your ski trip?<br>\
+Awful.<br>\
+Why?<br>\
+There was no snow!<br>\
+4<br>\
+So how was your trip to France?<br>\
+Very disappointing. It was so crowded everywhere. We couldn't even get a hotel room.<br>\
+That's too bad. You should never go in July.<br>\
+Now you tell me!<br>\
+5<br>\
+When did you get back from the beach?<br>\
+Last weekend. I had a terrific time. I swam every day and I learned how to windsurf.<br>\
+Great!<br>\
+6<br>\
+Did you have a nice vacation?<br>\
+It was terrible. The food was awful. And the hotel wasn't clean at all.<br>\
+Oh, that's too bad.<br>\
+7<br>\
+So how was your trip to Thailand?<br>\
+I had a wonderful time. The shopping was fantastic. And the people were great.<br>\
+Sounds like you had fun.<br>\
+I did.<br>\
+8<br>\
+Did you have a great vacation?<br>\
+Really great! But it was too short.<br>\
+Really. How long was it?<br>\
+Only a month.<br>\
+A month! You're lucky!"
+	,vi:""
+	,voca:"",
+},
+{
+	track:"14.04",
+	en:"1<br>\
+Is this you?<br>\
+Yes, it is.<br>\
+Wow! It looks really fun, but hard. How do you stay on them?<br>\
+In the beginning, you don't. You fall off all the time. But you learn pretty quickly. I had a wonderful time.<br>\
+2<br>\
+What are you doing here?<br>\
+My friends and I went camping. It was really great. But it got very cold at night. This is how we kept warm.<br>\
+3<br>\
+What did you do?<br>\
+Oh, I went sightseeing and visited all the museums.<br>\
+Oh, that sounds interesting.<br>\
+Actually, it was pretty boring. I hate museums.<br>\
+4<br>\
+Oh, this must have been a wonderful vacation.<br>\
+Yes, it was fantastic. The weather was perfect. And the water was so clear.<br>\
+Wow. Look at you. You're all red.<br>\
+Yes, I got a terrible sunburn.<br>\
+5<br>\
+What are you doing here?<br>\
+Oh, I took a cooking course in Italy.<br>\
+Terrific. So what can you make now?<br>\
+Spaghetti and meatballs!<br>\
+6<br>\
+Did you go all the way in this?<br>\
+Yes, we did. It was really very comfortable to travel in. We slept in it, too."
+	,vi:""
+	,voca:"",
+},
+{
+	title:"Apartment Living",
+	track:"15.02",
+	en:"1<br>\
+What's your apartment like, Ken?<br>\
+It's comfortable, but it's pretty small. It's only got one room.<br>\
+Really? Don't you have a bedroom?<br>\
+No, I sleep in the living room.<br>\
+What about your dog?<br>\
+She sleeps in the living room, too! Right next to me.<br>\
+2<br>\
+What's your new apartment like, Celia?<br>\
+It's really big. I love it.<br>\
+How many rooms does it have?<br>\
+Lots. It's got two bedrooms, a living room, and a huge kitchen and bathroom.<br>\
+Sounds great. So, when can I come and stay with you?<br>\
+3<br>\
+Do you like your apartment, Joe?<br>\
+Not really. It's very small.<br>\
+Really?<br>\
+Yeah, just one bedroom and a living room.<br>\
+That isn't so small. How many people live with you?<br>\
+Seven!<br>\
+Seven! Wow!<br>\
+4<br>\
+Do you live with your sister, Ellen?<br>\
+Yes, I do.<br>\
+What's your place like?<br>\
+It's nice. It's got two bedrooms, a big one and a small one.<br>\
+That's great.<br>\
+Yes, but I've got the small one.<br>\
+Oh."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"15.03",
+	en:"1<br>\
+Does the kitchen have everything you need, like a stove and a refrigerator?<br>\
+It's got a stove but it doesn't have a refrigerator. I need to buy one.<br>\
+2<br>\
+You don't have a bed in your bedroom?<br>\
+No bed. Just a TV. I sleep on a mattress on the floor.<br>\
+Really?<br>\
+3<br>\
+We don't have much furniture yet. We don't even have a sofa in the living room.<br>\
+Hey. I've got one I can sell you.<br>\
+Really? Great.<br>\
+4<br>\
+The bathroom is very small. Just a shower and a toilet.<br>\
+You can come and take a bath at my place any time.<br>\
+Thanks, I probably will."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"15.04",
+	en:"1<br>\
+The bookshelf looks really good in the living room. And the TV is just fine. When I find a stereo, I'm going to put it in the bookshelf. I don't have a stereo now because I want to find a cheap one. I'm going to check out the sales next week. I've got a dinner table, but I still need a sofa. Now I have to sit at the dinner table to watch TV. My living room is small, so I want a small sofa.<br>\
+2.<br>\
+If you have an old bookshelf you aren't using, I'd be really happy to buy it! I haven't been able to find one that is the right size. All the ones I looked at were too big. Right now there are books all over the floor. But I managed to pick up a really good TV and stereo at a yard sale last weekend. I still need to find a dinner table. All the ones I looked at in the stores were too expensive.<br>\
+3.<br>\
+I was thinking about getting a bookshelf, but I don't have many books yet, so I guess I can wait. I was lucky. I got a really cheap used TV the other day. It only cost $50 and it works really well. It's nice to have something to watch. Right now I don't have enough money to buy a stereo. The dinner table is very nice and big enough for six people. I bought a cheap sofa, too. It's really comfortable.<br>\
+4.<br>\
+The bookshelf is good, though it's probably a little too big for the living room. I need a TV, but I'm waiting for the new models. I have a good stereo. So that's good. However, I still haven't bought a dinner table. I saw a great one last week. The sales clerk said that they're having a big sale next week, so I'm waiting for that. For now, I'm eating my meals while sitting on the sofa."
+	,vi:""
 	,voca:"",
 }
 

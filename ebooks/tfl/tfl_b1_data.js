@@ -2393,6 +2393,297 @@ They're very comfortable for jogging or walking. That's good because I jog and w
  I thought it was in my briefcase. I usually put it there when I get one from the newsstand and then read it when I get home. Now I remember! I was on the subway! I took it out to read the sports section. I'm sure I left it there."
 	,vi:""
 	,voca:"",
+},{
+	title:"Directions",
+	track:"21.02",
+	en:"1<br>\
+Excuse me. Where's the post office?<br>\
+The post office? Go straight for two blocks and then turn left. It's on the left.<br>\
+Up this street two blocks and left?<br>\
+That's correct.<br>\
+2<br>\
+Can I help you?<br>\
+I'm looking for the bank.<br>\
+Well, take a right at the first corner, and it's on your right.<br>\
+Okay, thanks.<br>\
+3<br>\
+Can you help me? I'm looking for a hotel.<br>\
+Okay. Go straight up two blocks and turn right at the light. You'll see a hotel on your right.<br>\
+Thanks.<br>\
+You're welcome.<br>\
+4<br>\
+Excuse me. Is there a bookstore around here?<br>\
+Yes. Take the first street on the left. Go through the next intersection. You'll see the bookstore on the right. You can't miss it."
+	,vi:"1<br>\
+Xin lỗi. Bưu điện ở đâu?<br>\
+Bưu điện à? Đi thẳng hai dãy nhà rồi rẽ trái. Nó ở bên trái.<br>\
+Đi lên phố này hai dãy nhà rồi rẽ trái?<br>\
+Đúng rồi.<br>\
+2<br>\
+Tôi có thể giúp gì cho anh?<br>\
+Tôi đang tìm ngân hàng.<br>\
+Được rồi, rẽ phải ở góc đầu tiên, nó ở bên phải anh.<br>\
+Được rồi, cảm ơn.<br>\
+3<br>\
+Anh có thể giúp gì cho tôi? Tôi đang tìm khách sạn.<br>\
+Được rồi. Đi thẳng hai dãy nhà rồi rẽ phải ở đèn giao thông. Anh sẽ thấy một khách sạn ở bên phải.<br>\
+Cảm ơn.<br>\
+Không có gì.<br>\
+4<br>\
+Xin lỗi. Có hiệu sách nào quanh đây không?<br>\
+Có. Đi phố đầu tiên bên trái. Đi qua ngã tư tiếp theo. Bạn sẽ thấy hiệu sách bên phải. Bạn không thể bỏ lỡ nó."
+	,voca:"",
+},
+{
+	track:"21.03",
+	en:"1<br>\
+Excuse me. Is there a bank near here?<br>\
+Yes, there is. Go straight up Third Street for two blocks and turn right on Pine Street. The bank is on the right.<br>\
+2<br>\
+Excuse me, I'm looking for the Peking Restaurant.<br>\
+Oh, sure. I know where it is. It's one of my favorite restaurants. Go left here on King Street. Then turn right onto Second Street. Walk up Second Street for a block. It's on your left, on the corner of Ford and Second.<br>\
+3<br>\
+I'm trying to find a supermarket.<br>\
+A supermarket? Okay. Go left down King and then go up Second Street for two blocks. It's on the left, on the corner of Pine and Second.<br>\
+Thanks.<br>\
+4<br>\
+How can I get to the post office?<br>\
+Oh, it's not far from here. Go up Third Street and turn right on Ford. Walk down Ford and you'll see it on your right, on the corner of Ford and Fourth.<br>\
+5<br>\
+I'm looking for the Tourist Office.<br>\
+Okay. Go up Third Street and turn left on Ford. It's in the first big building you see on your left.<br>\
+6<br>\
+Can you tell me how to get to the Art Museum?<br>\
+The Art Museum? Sure. Go up Third Street for two blocks and then turn left on Pine Street. Go to the end of the block. The museum is on your left, on the corner of Second and Pine Street."
+	,vi:"1<br>\
+Xin lỗi. Có ngân hàng nào gần đây không?<br>\
+Có, có. Đi thẳng lên Phố Third hai dãy nhà và rẽ phải vào Phố Pine. Ngân hàng ở bên phải.<br>\
+2<br>\
+Xin lỗi, tôi đang tìm Nhà hàng Peking.<br>\
+Ồ, tất nhiên rồi. Tôi biết nó ở đâu. Đó là một trong những nhà hàng yêu thích của tôi. Rẽ trái ở đây trên Phố King. Sau đó rẽ phải vào Phố Second. Đi bộ lên Phố Second một dãy nhà. Nó ở bên trái của bạn, góc đường Ford và Second.<br>\
+3<br>\
+Tôi đang cố tìm một siêu thị.<br>\
+Siêu thị à? Được rồi. Rẽ trái xuống Phố King rồi đi lên Phố Second hai dãy nhà. Nó ở bên trái, góc đường Pine và Second.<br>\
+Cảm ơn.<br>\
+4<br>\
+Tôi có thể đến bưu điện bằng cách nào?<br>\
+Ồ, không xa đây lắm. Đi lên Đường Third và rẽ phải vào Ford. Đi bộ xuống Ford và bạn sẽ thấy nó ở bên phải, góc đường Ford và Fourth.<br>\
+5<br>\
+Tôi đang tìm Văn phòng Du lịch.<br>\
+Được rồi. Đi lên Đường Third và rẽ trái vào Ford. Nó nằm trong tòa nhà lớn đầu tiên bạn nhìn thấy bên trái.<br>\
+6<br>\
+Bạn có thể chỉ cho tôi cách đến Bảo tàng Nghệ thuật không?<br>\
+Bảo tàng Nghệ thuật? Tất nhiên rồi. Đi lên Đường Third hai dãy nhà rồi rẽ trái vào Đường Pine. Đi đến cuối dãy nhà. Bảo tàng ở bên trái bạn, góc đường Second và Đường Pine."
+	,voca:"",
+},{
+	track:"21.04",
+	en:"1.<br>\
+So when you come out of the subway, look for a tall glass building. That's a hotel. Walk past that for two blocks and you'll see a small street on the right. That's my street. There's a grocery store on the corner. Go down the street and my place is the fourth house on the left. Maybe bring some CDs with you, because I don't have any dance music for the party.<br>\
+2<br>\
+My place is fairly easy to find. Get off the bus across from the supermarket. When you get to the supermarket, could you pick up some snacks? Then walk north for two blocks. You'll see a footbridge. Cross that footbridge and you'll see a small street when you get to the other side. Go down the street, and on the corner you'll see an apartment building. That's my place.<br>\
+3<br>\
+My apartment building is near the river. When you come out of the subway, walk towards the river and you'll see an intersection. Go through the intersection and take the first street on the left. Go down the street until you see a supermarket. My house is right next to it. If you can, could you bring some fruit to go with dinner?<br>\
+4<br>\
+I live in an apartment building close to the high school. Get off the bus across from the school and walk north for about four blocks. You'll see a gas station on your left. Turn right just past the gas station and go down the street until you see a church. My building is across from the church. Don't forget to bring your tennis racket."
+	,vi:"1.<br>\
+Vì vậy, khi bạn ra khỏi tàu điện ngầm, hãy tìm một tòa nhà kính cao. Đó là một khách sạn. Đi qua đó hai dãy nhà và bạn sẽ thấy một con phố nhỏ bên phải. Đó là phố của tôi. Có một cửa hàng tạp hóa ở góc phố. Đi xuống phố và nhà tôi ở ngôi nhà thứ tư bên trái. Có thể mang theo một số đĩa CD, vì tôi không có nhạc khiêu vũ cho bữa tiệc.<br>\
+2<br>\
+Nhà tôi khá dễ tìm. Xuống xe buýt đối diện siêu thị. Khi bạn đến siêu thị, bạn có thể mua một ít đồ ăn nhẹ không? Sau đó đi bộ về phía bắc hai dãy nhà. Bạn sẽ thấy một cầu đi bộ. Đi qua cầu đi bộ đó và bạn sẽ thấy một con phố nhỏ khi bạn đến phía bên kia. Đi xuống phố và ở góc phố, bạn sẽ thấy một tòa nhà chung cư. Đó là nhà tôi.<br>\
+3<br>\
+Tòa nhà chung cư của tôi ở gần sông. Khi bạn ra khỏi tàu điện ngầm, hãy đi về phía sông và bạn sẽ thấy một ngã tư. Đi qua ngã tư và rẽ vào con phố đầu tiên bên trái. Đi xuống phố cho đến khi bạn nhìn thấy một siêu thị. Nhà tôi ở ngay cạnh đó. Nếu được, bạn có thể mang theo một ít trái cây để ăn tối không?<br>\
+4<br>\
+Tôi sống trong một tòa nhà chung cư gần trường trung học. Xuống xe buýt đối diện trường và đi bộ về phía bắc khoảng bốn dãy nhà. Bạn sẽ thấy một trạm xăng bên trái. Rẽ phải ngay sau trạm xăng và đi xuống phố cho đến khi bạn nhìn thấy một nhà thờ. Tòa nhà của tôi ở đối diện nhà thờ. Đừng quên mang theo vợt tennis."
+	,voca:"",
+},{
+	title:"People We Know",
+	track:"22.02",
+	en:"1<br>\
+So tell me about your new friend, Cindy. What's she like?<br>\
+She's really neat. She's great to be with because she makes me laugh all the time.<br>\
+Oh, yeah?<br>\
+Yeah, she's always telling jokes.<br>\
+2<br>\
+What's your friend Pauline like?<br>\
+She's nice.<br>\
+Is she shy?<br>\
+Shy? You must be kidding. She tells her whole life story to everyone she meets.<br>\
+3<br>\
+Do you know Tom Brown?<br>\
+Oh, sure. I like Tom.<br>\
+Yeah, me, too. He makes me laugh. He's always doing crazy things.<br>\
+Yeah, I know.<br>\
+4<br>\
+Have you spoken to the new guy in our class, Paul?<br>\
+Yes, I have.<br>\
+What's he like?<br>\
+Boy, he's really interesting. He speaks six languages and was the top student at his last school.<br>\
+Oh, great!<br>\
+No, you'll like him. He's really friendly and easy to talk to.<br>\
+5<br>\
+Do you and your boyfriend go out a lot, Suzanne?<br>\
+Oh sure, he loves going out and meeting people. We go to parties all the time.<br>\
+He sounds like a lot of fun.<br>\
+Of course. That's why he's my boyfriend.<br>\
+6<br>\
+Look what my friend Mary gave me for my birthday. Isn't this a beautiful blouse?<br>\
+That's really nice. And she gave me a great present for my birthday, too. She loves giving things to people.<br>\
+Yeah, she does. And she doesn't expect anything in return."
+	,vi:"1<br>\
+Vậy hãy kể cho tôi nghe về người bạn mới của bạn, Cindy. Cô ấy như thế nào?<br>\
+Cô ấy thực sự gọn gàng. Thật tuyệt khi ở bên cô ấy vì cô ấy luôn làm tôi cười.<br>\
+Ồ, vậy sao?<br>\
+Ừ, cô ấy luôn kể chuyện cười.<br>\
+2<br>\
+Người bạn Pauline của bạn như thế nào?<br>\
+Cô ấy tốt bụng.<br>\
+Cô ấy có nhút nhát không?<br>\
+Nhút nhát? Chắc bạn đang đùa. Cô ấy kể toàn bộ câu chuyện cuộc đời mình cho mọi người cô ấy gặp.<br>\
+3<br>\
+Bạn có biết Tom Brown không?<br>\
+Ồ, tất nhiên rồi. Tôi thích Tom.<br>\
+Ừ, tôi cũng vậy. Anh ấy làm tôi cười. Anh ấy lúc nào cũng làm những điều điên rồ.<br>\
+Ừ, mình biết mà.<br>\
+4<br>\
+Bạn đã nói chuyện với anh chàng mới trong lớp mình chưa, Paul?<br>\
+Có, mình đã nói rồi.<br>\
+Anh ấy thế nào?<br>\
+Trời ạ, anh ấy thực sự thú vị. Anh ấy nói được sáu thứ tiếng và là học sinh giỏi nhất ở trường cũ.<br>\
+Ồ, tuyệt quá!<br>\
+Không, bạn sẽ thích anh ấy thôi. Anh ấy thực sự thân thiện và dễ nói chuyện.<br>\
+5<br>\
+Bạn và bạn trai có hay đi chơi không, Suzanne?<br>\
+Ồ chắc chắn rồi, anh ấy thích đi chơi và gặp gỡ mọi người. Chúng mình đi dự tiệc suốt.<br>\
+Anh ấy có vẻ rất vui tính.<br>\
+Tất nhiên rồi. Đó là lý do tại sao anh ấy là bạn trai mình.<br>\
+6<br>\
+Nhìn xem bạn Mary tặng mình cái gì nhân ngày sinh nhật này. Đây có phải là một chiếc áo cánh đẹp không?<br>\
+Thật tuyệt. Và cô ấy cũng tặng tôi một món quà tuyệt vời vào ngày sinh nhật. Cô ấy thích tặng quà cho mọi người.<br>\
+Đúng vậy. Và cô ấy không mong đợi bất cứ điều gì đáp lại."
+	,voca:"",
+},
+{
+	track:"22.03",
+	en:"1<br>\
+Mr. Grant is really funny, isn't he? He loves telling jokes. And he's so easygoing.<br>\
+I know. Then there's Mrs. Grant. She never seems to smile. I wonder why she's so serious all the time.<br>\
+2<br>\
+Where are Bobby and his brother today?<br>\
+I think they've skipped class again.<br>\
+Really? They're always doing that.<br>\
+Yeah. They aren't serious about studying, that's for sure. All they like to do is sit at home and play computer games.<br>\
+3<br>\
+What are your new neighbors like?<br>\
+Mr. and Mrs. Roberts? Well, they seem nice. I've spoken to Mrs. Roberts several times. She's very easy to talk to. But I haven't spoken much to her husband. He's kind of shy and not very talkative.<br>\
+4<br>\
+Have you met Wendy's new boyfriend?<br>\
+Yeah, I like him.<br>\
+Me, too. I think he's perfect for Wendy.<br>\
+He sure is. They're so sociable. They both love partying and they're both a little crazy at times.<br>\
+That's for sure.<br>\
+5<br>\
+How do you like the new teachers?<br>\
+Well, Mr. Williams is very easygoing, and he's really smart, too.<br>\
+Yeah, I know. And what about Miss Vaughn?<br>\
+She's not as easy to get to know. She's not as easygoing as Mr. Williams. She seems very serious.<br>\
+Yeah. I think so, too.<br>\
+6<br>\
+What's your brother's wife like?<br>\
+She's just like my brother—serious and hardworking. She's at the office every night until around 9:00. And so is he.<br>\
+They sound like the perfect couple."
+	,vi:"1<br>\
+Ông Grant thực sự hài hước, phải không? Ông ấy thích kể chuyện cười. Và ông ấy rất dễ tính.<br>\
+Tôi biết. Rồi còn bà Grant nữa. Bà ấy có vẻ không bao giờ cười. Tôi tự hỏi tại sao bà ấy lúc nào cũng nghiêm túc như vậy.<br>\
+2<br>\
+Hôm nay Bobby và em trai cậu ấy ở đâu?<br>\
+Tôi nghĩ là chúng lại trốn học rồi.<br>\
+Thật sao? Chúng lúc nào cũng làm thế.<br>\
+Ừ. Chúng không nghiêm túc học hành, chắc chắn rồi. Chúng chỉ thích ngồi ở nhà và chơi trò chơi điện tử.<br>\
+3<br>\
+Những người hàng xóm mới của bạn thế nào?<br>\
+Ông và bà Roberts? Vâng, họ có vẻ tốt bụng. Tôi đã nói chuyện với bà Roberts nhiều lần. Bà ấy rất dễ nói chuyện. Nhưng tôi chưa nói chuyện nhiều với chồng bà ấy. Anh ấy hơi nhút nhát và không nói nhiều.<br>\
+4<br>\
+Bạn đã gặp bạn trai mới của Wendy chưa?<br>\
+Ừ, mình thích anh ấy.<br>\
+Mình cũng vậy. Mình nghĩ anh ấy hoàn hảo với Wendy.<br>\
+Anh ấy chắc chắn là vậy. Họ rất hòa đồng. Cả hai đều thích tiệc tùng và đôi khi cả hai đều hơi điên rồ.<br>\
+Chắc chắn rồi.<br>\
+5<br>\
+Bạn thích những giáo viên mới như thế nào?<br>\
+Ờ, thầy Williams rất dễ tính và thầy ấy cũng rất thông minh nữa.<br>\
+Ừ, mình biết mà. Còn cô Vaughn thì sao?<br>\
+Cô ấy không dễ làm quen. Cô ấy không dễ tính như thầy Williams. Cô ấy có vẻ rất nghiêm túc.<br>\
+Ờ. Tôi cũng nghĩ vậy.<br>\
+6<br>\
+Vợ của anh trai bạn thế nào?<br>\
+Cô ấy cũng giống như anh trai tôi—nghiêm túc và chăm chỉ. Cô ấy ở văn phòng vào mỗi tối cho đến khoảng 9:00. Và anh ấy cũng vậy.<br>\
+Họ có vẻ là cặp đôi hoàn hảo."
+	,voca:"",
+},
+{
+	track:"22.04",
+	en:"1<br>\
+Hey, Anne, there's a guy in my Spanish class who's really cool. He's really friendly and easy to talk to. He just always seems happy.<br>\
+Oh, really? He must have a lot of friends.<br>\
+Yes, I think he does. He tells really funny jokes all the time, too. I'm always laughing in class.<br>\
+Man! He sounds great!<br>\
+Well, he is, but he forgets his book every day. Then he asks to share mine. I hate that!<br>\
+Sounds like we have a lot in common. I always forget my book, too. I'd love to meet him. Why don't you introduce us some time?<br>\
+2<br>\
+There's this new girl in class named Rosie. She always looks like she's in a bad mood. I don't know if she's just very shy or what.<br>\
+Really?<br>\
+Yeah, when someone tells a really funny joke, we all laugh, but she doesn't seem to think it's funny.<br>\
+No way!<br>\
+But she is very good at music. She always practices the piano after school.<br>\
+That's nice. But I don't think I could get along with her, because laughing and having fun are important to me.<br>\
+3<br>\
+There's this guy who sits in front of me on the bus sometimes. He never talks to anyone.<br>\
+He just sits there and talks to himself. It's kind of weird.<br>\
+Oh, man! Really?<br>\
+Yeah. He likes to make people laugh, though. He's always making funny faces and making animal noises and things like that. Sometimes he's really funny.<br>\
+That does sound funny.<br>\
+But you know, he always chews gum really loudly. I really hate that!<br>\
+Me, too!<br>\
+4<br>\
+There's a really cute guy from Canada on the basketball team!<br>\
+Oh, yeah?<br>\
+Yeah. And he's really outgoing. Very friendly, too.<br>\
+Tell me more.<br>\
+Well, it's difficult to get him to laugh. He doesn't seem to enjoy any jokes. I guess he's pretty serious. But he's very good-looking.<br>\
+Hmm. Sounds cute. Do you know if he has a girlfriend?<br>\
+I'm sure he has many. He always asks a new girl out on a date every weekend. I don't like guys like that.<br>\
+Yeah, but as long as he's cute, I don't mind."
+	,vi:"1<br>\
+Này, Anne, có một anh chàng trong lớp tiếng Tây Ban Nha của tôi rất tuyệt. Anh ấy rất thân thiện và dễ nói chuyện. Anh ấy luôn có vẻ vui vẻ.<br>\
+Ồ, thật sao? Anh ấy hẳn phải có rất nhiều bạn.<br>\
+Vâng, tôi nghĩ là anh ấy có. Anh ấy cũng kể những câu chuyện cười rất buồn cười mọi lúc. Tôi luôn cười trong lớp.<br>\
+Trời ạ! Anh ấy nghe có vẻ tuyệt!<br>\
+Ồ, anh ấy thực sự tuyệt, nhưng anh ấy quên sách của mình mỗi ngày. Sau đó, anh ấy lại xin chia sẻ sách của mình. Tôi ghét điều đó!<br>\
+Nghe có vẻ như chúng ta có nhiều điểm chung. Tôi cũng luôn quên sách của mình. Tôi rất muốn gặp anh ấy. Tại sao bạn không giới thiệu chúng ta với nhau vào lúc nào đó?<br>\
+2<br>\
+Có một cô gái mới trong lớp tên là Rosie. Cô ấy lúc nào cũng trông như đang trong tâm trạng tồi tệ. Tôi không biết cô ấy chỉ rất nhút nhát hay sao nữa.<br>\
+Thật sao?<br>\
+Ừ, khi ai đó kể một câu chuyện cười thực sự buồn cười, tất cả chúng tôi đều cười, nhưng cô ấy có vẻ không thấy buồn cười.<br>\
+Không đời nào!<br>\
+Nhưng cô ấy rất giỏi âm nhạc. Cô ấy luôn tập đàn piano sau giờ học.<br>\
+Thật tuyệt. Nhưng tôi không nghĩ mình có thể hòa hợp với cô ấy, vì cười và vui vẻ là điều quan trọng với tôi.<br>\
+3<br>\
+Có một anh chàng đôi khi ngồi trước tôi trên xe buýt. Anh ấy không bao giờ nói chuyện với bất kỳ ai.<br>\
+Anh ấy chỉ ngồi đó và nói chuyện một mình. Thật kỳ lạ.<br>\
+Ôi trời! Thật sao?<br>\
+Ừ. Nhưng anh ấy thích làm mọi người cười. Anh ấy luôn làm những khuôn mặt buồn cười và phát ra tiếng động vật và những thứ tương tự như vậy. Đôi khi anh ấy thực sự hài hước.<br>\
+Nghe có vẻ buồn cười.<br>\
+Nhưng bạn biết đấy, anh ấy luôn nhai kẹo cao su rất to. Tôi thực sự ghét điều đó!<br>\
+Tôi cũng vậy!<br>\
+4<br>\
+Có một anh chàng thực sự dễ thương đến từ Canada trong đội bóng rổ!<br>\
+Ồ, vậy à?<br>\
+Ừ. Và anh ấy thực sự hướng ngoại. Rất thân thiện nữa.<br>\
+Kể cho tôi thêm đi.<br>\
+Ồ, thật khó để khiến anh ấy cười. Anh ấy có vẻ không thích bất kỳ trò đùa nào. Tôi đoán là anh ấy khá nghiêm túc. Nhưng anh ấy rất đẹp trai.<br>\
+Ừm. Nghe dễ thương. Bạn có biết anh ấy có bạn gái không?<br>\
+Tôi chắc là anh ấy có nhiều bạn gái. Anh ấy luôn rủ một cô gái mới đi hẹn hò vào mỗi cuối tuần. Tôi không thích những anh chàng như vậy.<br>\
+Ừ, nhưng miễn là anh ấy dễ thương, tôi không bận tâm."
+	,voca:"",
 }
 
 

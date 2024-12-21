@@ -781,25 +781,25 @@ Vậy, bạn có tập thể dục không?<br>\
 },
 {
 	track:"07.04",
-	en:"1.<br>\
+	en:"1<br>\
 I think exercise is so important to good health. There is a really good sports club near my school. During the week, I play tennis there for an hour before school starts. On weekends, I usually work out at the gym near my house for a few hours. I also play baseball with some friends from school. It's so much fun!<br>\
-2.<br>\
+2<br>\
 I don't like jogging or doing anything too energetic. I prefer taking walks. I like to take a short walk every day through the park across from my house. Sometimes my boyfriend goes with me. It's nice to talk and look at the flowers and trees. On Sunday, I like to swim, but for only about a half hour. I sleep the rest of the weekend.<br>\
-3.<br>\
+3<br>\
 I am a big football fan, but I only watch it on TV. I can't stand playing it! There are great games to watch on the weekend. I also enjoy watching tennis. I'd like to learn someday, but I don't like to sweat. I love chess and often play with my younger sister. She's really good at it and usually wins. On the weekends, I love to play video games with some of my friends.<br>\
-4.<br>\
+4<br>\
 I just love to exercise! I like many different sports. Let's see... I like swimming a lot. I get up very early, around 5 a.m., and swim for two hours from Monday to Friday. I also enjoy basketball and play with a group of friends from work every Tuesday night. And I've also started playing golf this year. Before playing, I go jogging to warm up.<br>\
-5.<br>\
+5<br>\
 I enjoy exercise, but I don't do it as much as I should. I meet a friend every Wednesday and we play tennis. I'm not a very good player, but it's fun and we usually play for an hour. On weekends, I like to bicycle in our neighborhood. I guess I spend an hour or two doing that. Oh, and I love baseball, but only watching it while sitting on the couch eating popcorn!"
-	,vi:"1.<br>\
+	,vi:"1<br>\
 Tôi nghĩ tập thể dục rất quan trọng đối với sức khỏe. Có một câu lạc bộ thể thao thực sự tốt gần trường tôi. Trong tuần, tôi chơi quần vợt ở đó một giờ trước khi vào học. Vào cuối tuần, tôi thường tập thể dục tại phòng tập thể dục gần nhà trong vài giờ. Tôi cũng chơi bóng chày với một số người bạn ở trường. Thật vui!<br>\
-2.<br>\
+2<br>\
 Tôi không thích chạy bộ hoặc làm bất cứ điều gì quá năng động. Tôi thích đi bộ. Tôi thích đi bộ một đoạn ngắn mỗi ngày qua công viên đối diện nhà tôi. Đôi khi bạn trai tôi đi cùng tôi. Thật tuyệt khi được nói chuyện và ngắm hoa và cây cối. Vào Chủ Nhật, tôi thích bơi, nhưng chỉ trong khoảng nửa giờ. Tôi ngủ suốt phần còn lại của cuối tuần.<br>\
-3.<br>\
+3<br>\
 Tôi là một người hâm mộ bóng đá lớn, nhưng tôi chỉ xem bóng đá trên TV. Tôi không thể chịu được việc chơi bóng đá! Có những trận đấu tuyệt vời để xem vào cuối tuần. Tôi cũng thích xem quần vợt. Tôi muốn học một ngày nào đó, nhưng tôi không thích đổ mồ hôi. Tôi thích cờ vua và thường chơi với em gái mình. Em ấy chơi rất giỏi và thường thắng. Vào cuối tuần, tôi thích chơi trò chơi điện tử với một số người bạn của mình.<br>\
-4.<br>\
+4<br>\
 Tôi chỉ thích tập thể dục! Tôi thích nhiều môn thể thao khác nhau. Hãy xem nào... Tôi rất thích bơi lội. Tôi dậy rất sớm, khoảng 5 giờ sáng, và bơi trong hai giờ từ thứ Hai đến thứ Sáu. Tôi cũng thích bóng rổ và chơi với một nhóm bạn từ nơi làm việc vào mỗi tối thứ Ba. Và tôi cũng bắt đầu chơi golf trong năm nay. Trước khi chơi, tôi chạy bộ để khởi động.<br>\
-5.<br>\
+5<br>\
 Tôi thích tập thể dục, nhưng tôi không tập nhiều như tôi nên làm. Tôi gặp một người bạn vào mỗi thứ Tư và chúng tôi chơi quần vợt. Tôi không phải là một người chơi giỏi, nhưng nó rất vui và chúng tôi thường chơi trong một giờ. Vào cuối tuần, tôi thích đạp xe quanh khu phố của mình. Tôi đoán tôi dành một hoặc hai giờ để làm điều đó. À, và tôi thích bóng chày, nhưng chỉ xem nó trong khi ngồi trên ghế dài ăn bỏng ngô!"
 	,voca:"popcorn,neighborhood",
 },
@@ -1727,8 +1727,480 @@ I was thinking about getting a bookshelf, but I don't have many books yet, so I 
 The bookshelf is good, though it's probably a little too big for the living room. I need a TV, but I'm waiting for the new models. I have a good stereo. So that's good. However, I still haven't bought a dinner table. I saw a great one last week. The sales clerk said that they're having a big sale next week, so I'm waiting for that. For now, I'm eating my meals while sitting on the sofa."
 	,vi:""
 	,voca:"",
+},
+{
+	title:"Movies",
+	track:"16.02",
+	en:"1<br>\
+What kind of movies do you like, Sue?<br>\
+Let me see. Well, I really like science-fiction and action movies.<br>\
+Do you? How about horror movies?<br>\
+Oh, I can't stand them. They're usually really dumb!<br>\
+2<br>\
+Do you like movies, Bob?<br>\
+Sure.<br>\
+What kind?<br>\
+Well, I like horror movies the best. I don't know why, but I really enjoy them.<br>\
+Hmm. Do you like Westerns, too?<br>\
+Not really.<br>\
+3<br>\
+What kind of movies do you like, Andrew?<br>\
+My favorite movies are action movies. I also like science fiction.<br>\
+Do you like comedies?<br>\
+Yeah, I like comedies, too.<br>\
+4<br>\
+What kind of movies do you like, Tina?<br>\
+Mmm. I love westerns. But they don't make many good ones these days.<br>\
+That's true. How about horror movies?<br>\
+I don't like them very much.<br>\
+Me, neither."
+	,vi:"1<br>\
+Bạn thích thể loại phim nào, Sue?<br>\
+Để tôi xem nào. Tôi thực sự thích phim khoa học viễn tưởng và phim hành động.<br>\
+Bạn thì sao? Còn phim kinh dị thì sao?<br>\
+Ồ, tôi không thể chịu nổi. Chúng thường rất ngớ ngẩn!<br>\
+2<br>\
+Bạn có thích phim không, Bob?<br>\
+Tất nhiên rồi.<br>\
+Thể loại nào?<br>\
+Ồ, tôi thích phim kinh dị nhất. Tôi không biết tại sao, nhưng tôi thực sự thích chúng.<br>\
+Ừm. Bạn cũng thích phim Viễn Tây à?<br>\
+Không thực sự thích.<br>\
+3<br>\
+Bạn thích thể loại phim nào, Andrew?<br>\
+Phim yêu thích của tôi là phim hành động. Tôi cũng thích khoa học viễn tưởng.<br>\
+Bạn có thích phim hài không?<br>\
+Ừ, tôi cũng thích phim hài.<br>\
+4<br>\
+Bạn thích thể loại phim nào, Tina?<br>\
+Mmm. Tôi thích phim miền Tây. Nhưng dạo này không có nhiều phim hay.<br>\
+Đúng vậy. Còn phim kinh dị thì sao?<br>\
+Tôi không thích phim này lắm.<br>\
+Tôi cũng vậy."
+	,voca:"",
+},
+{
+	track:"16.03",
+	en:"1<br>\
+It's one of the funniest movies I've seen. It's about this weird family that goes on a European vacation. But it's a vacation where everything goes wrong. First, they lose all their luggage, then they end up in the wrong city by mistake. After that, someone thinks they are bank robbers and there's this crazy car chase. If you want a good laugh, you should see it.<br>\
+Yeah, I've had a busy week. It sounds like the kind of movie I need to see.<br>\
+2<br>\
+Oh, it's one of those movies that's full of car chases and fights and people jumping out of airplanes and stuff. The special effects are pretty good, and it's really exciting, especially when these two guys fight it out standing on the roof of a 50-story building. Of course, the bad guy falls off the roof in the end.<br>\
+Sounds good. I like those kinds of movies.<br>\
+3<br>\
+If you like Julia Roberts, you'll love this movie. She's a nurse who works in a big hospital. She meets this patient she's looking after, and slowly, they fall in love, and finally get married.<br>\
+Hmm. Actually, I'm not a big fan of romances, so I don't think it's something I would like.<br>\
+4<br>\
+Hey, let me tell you about the movie. It's about this guy who goes into the hospital for an operation, and by mistake, they give him the wrong kind of medicine. Every night, when it gets dark, he turns into a kind of half man, half animal and starts killing people.<br>\
+Yuck. I hate those kinds of movies. I don't think I'll bother seeing it. Thanks, anyway.<br>\
+5<br>\
+It's kind of interesting. It's about people who travel in a time machine. They can choose which century they want to visit. So, they decide to visit some famous times in history. They also see what the future is going to be like.<br>\
+Hey, that sounds interesting. I like movies like that."
+	,vi:"1<br>\
+Đây là một trong những bộ phim hài hước nhất mà tôi từng xem. Phim kể về một gia đình kỳ lạ đi nghỉ ở châu Âu. Nhưng đó là một kỳ nghỉ mà mọi thứ đều trở nên tồi tệ. Đầu tiên, họ làm mất hết hành lý, sau đó họ vô tình đến nhầm thành phố. Sau đó, có người nghĩ họ là cướp ngân hàng và có một cảnh rượt đuổi bằng ô tô điên rồ. Nếu bạn muốn cười thoải mái, bạn nên xem phim này.<br>\
+Vâng, tôi đã có một tuần bận rộn. Nghe có vẻ như đây là loại phim tôi cần xem.<br>\
+2<br>\
+Ồ, đây là một trong những bộ phim đầy rẫy cảnh rượt đuổi bằng ô tô, đánh nhau và mọi người nhảy ra khỏi máy bay và những thứ tương tự. Hiệu ứng đặc biệt khá tốt và thực sự thú vị, đặc biệt là khi hai anh chàng này chiến đấu với nhau trên nóc tòa nhà cao 50 tầng. Tất nhiên, cuối cùng, kẻ xấu đã rơi khỏi mái nhà.<br>\
+Nghe có vẻ hay. Tôi thích những thể loại phim như vậy.<br>\
+3<br>\
+Nếu bạn thích Julia Roberts, bạn sẽ thích bộ phim này. Cô ấy là một y tá làm việc trong một bệnh viện lớn. Cô ấy gặp một bệnh nhân mà cô ấy đang chăm sóc, và dần dần, họ yêu nhau, và cuối cùng kết hôn.<br>\
+Hmm. Thực ra, tôi không phải là người hâm mộ lớn của tình yêu lãng mạn, vì vậy tôi không nghĩ đó là điều tôi thích.<br>\
+4<br>\
+Này, để tôi kể cho bạn nghe về bộ phim. Phim kể về một anh chàng vào bệnh viện để phẫu thuật, và do nhầm lẫn, họ đã đưa cho anh ta loại thuốc sai. Mỗi đêm, khi trời tối, anh ta biến thành một loại nửa người, nửa thú và bắt đầu giết người.<br>\
+Ghê quá. Tôi ghét những thể loại phim như vậy. Tôi không nghĩ mình sẽ bận tâm xem nó. Dù sao thì cũng cảm ơn bạn.<br>\
+5<br>\
+Phim khá thú vị. Phim kể về những người du hành trên cỗ máy thời gian. Họ có thể chọn thế kỷ mà họ muốn đến thăm. Vì vậy, họ quyết định ghé thăm một số thời điểm nổi tiếng trong lịch sử. Họ cũng thấy tương lai sẽ như thế nào.<br>\
+Này, nghe có vẻ thú vị. Tôi thích những bộ phim như vậy."
+	,voca:"",
+},
+{
+	track:"16.04",
+	en:"1<br>\
+What's that new movie like? Is it a drama?<br>\
+Kind of. This volcano suddenly comes up out of the ocean in San Francisco, so this family is trying to get away from it. It's a good story, though. Pretty scary and very realistic.<br>\
+Are the special effects any good?<br>\
+They're great!<br>\
+Does it have any famous actors in it?<br>\
+Not really. They really should have had better actors. The two stars are pretty bad. But the music is great.<br>\
+2<br>\
+So tell me about that new movie you went to on Saturday. What's it all about?<br>\
+It's about these bank robbers in Kansas and how the police are trying to hunt them down.<br>\
+It's pretty exciting from the moment the movie starts right ‘til the end.<br>\
+Are there a lot of special effects?<br>\
+Yeah, there are a lot of big explosions. They were terrific.<br>\
+Who's in the movie?<br>\
+A couple of new actors that I've never seen before. They were both pretty good, especially the guy.<br>\
+Sounds like a great movie.<br>\
+Yeah. The only thing I didn't like was the music. They have this very loud, funky music all the way through. It was pretty annoying.<br>\
+3<br>\
+What was the movie like?<br>\
+Well, it's supposed to be an adventure story. Some explorers in Africa discover this new kind of animal. A really huge ape that they want to bring back to America.<br>\
+Sounds interesting.<br>\
+Yeah, the story was good, but the special effects were awful. The ape didn't look very realistic at all. It looked like a toy or something. And the two main actors were pretty awful.<br>\
+So it's not worth seeing?<br>\
+No. But buy the soundtrack. The music was excellent.<br>\
+4<br>\
+Is that movie you saw any good?<br>\
+Yeah, fantastic.<br>\
+It's about a robbery, right?<br>\
+Yeah, it's a great story about these art thieves in London who want to steal some famous paintings from a museum. It ends with a fantastic helicopter chase all over London. There are some unbelievable special effects.<br>\
+Really. I should see it. Who's in it?<br>\
+A couple of British actors I never saw before. They're fantastic. There are some nice songs in the movie, too.<br>\
+Great."
+	,vi:"1<br>\
+Phim mới đó thế nào? Có phải là phim chính kịch không?<br>\
+Cũng được. Ngọn núi lửa này đột nhiên phun trào từ đại dương ở San Francisco, nên gia đình này đang cố gắng thoát khỏi nó. Tuy nhiên, đó là một câu chuyện hay. Khá đáng sợ và rất thực tế.<br>\
+Các hiệu ứng đặc biệt có hay không?<br>\
+Tuyệt lắm!<br>\
+Phim có diễn viên nổi tiếng nào không?<br>\
+Không hẳn vậy. Họ thực sự nên có những diễn viên giỏi hơn. Hai ngôi sao khá tệ. Nhưng nhạc thì tuyệt.<br>\
+2<br>\
+Vậy hãy kể cho tôi nghe về bộ phim mới mà bạn đã xem vào thứ Bảy. Phim nói về điều gì?<br>\
+Phim nói về những tên cướp ngân hàng ở Kansas và cách cảnh sát cố gắng truy đuổi chúng.<br>\
+Phim khá thú vị từ lúc bắt đầu cho đến khi kết thúc.<br>\
+Có nhiều hiệu ứng đặc biệt không?<br>\
+Đúng vậy, có rất nhiều vụ nổ lớn. Họ thật tuyệt vời.<br>\
+Ai trong phim vậy?<br>\
+Một vài diễn viên mới mà tôi chưa từng thấy trước đây. Cả hai đều khá tốt, đặc biệt là anh chàng.<br>\
+Nghe có vẻ là một bộ phim tuyệt vời.<br>\
+Đúng vậy. Điều duy nhất tôi không thích là nhạc phim. Họ có nhạc rất to và sôi động trong suốt bộ phim. Thật khó chịu.<br>\
+3<br>\
+Bộ phim như thế nào?<br>\
+Ờ, nó được cho là một câu chuyện phiêu lưu. Một số nhà thám hiểm ở Châu Phi đã phát hiện ra loài động vật mới này. Một con vượn thực sự to lớn mà họ muốn mang về Mỹ.<br>\
+Nghe có vẻ thú vị.<br>\
+Đúng vậy, cốt truyện thì hay, nhưng hiệu ứng đặc biệt thì tệ. Con vượn trông không thực tế chút nào. Nó trông giống như một món đồ chơi hay gì đó. Và hai diễn viên chính thì khá tệ.<br>\
+Vậy thì không đáng xem sao?<br>\
+Không. Nhưng hãy mua nhạc phim. Nhạc phim tuyệt vời.<br>\
+4<br>\
+Bộ phim bạn xem có hay không?<br>\
+Ừ, tuyệt lắm.<br>\
+Phim nói về một vụ cướp, đúng không?<br>\
+Ừ, đó là câu chuyện tuyệt vời về những tên trộm nghệ thuật ở London muốn đánh cắp một số bức tranh nổi tiếng từ một viện bảo tàng. Phim kết thúc bằng một cuộc rượt đuổi bằng trực thăng tuyệt vời trên khắp London. Có một số hiệu ứng đặc biệt không thể tin được.<br>\
+Thật đấy. Tôi nên xem phim này. Có ai trong phim vậy?<br>\
+Một vài diễn viên người Anh mà tôi chưa từng thấy trước đây. Họ thật tuyệt. Phim cũng có một số bài hát hay.<br>\
+Tuyệt."
+	,voca:"",
+},{
+	title:"The Weather",
+	track:"17.02",
+	en:"1<br>\
+And here is today's weather forecast for the international traveler. Let's start with Beijing. It will be a cold day in Beijing today, and windy. The low will be zero and the high will be 6 degrees.<br>\
+2<br>\
+Mexico City will be warm and wet, with a low of 23 degrees Centigrade and a high of 28.<br>\
+3<br>\
+Tokyo is expecting cloudy weather with heavy rain. The low will be 4 degrees and the high 12.<br>\
+4<br>\
+New York is going to have a windy day. It will be very cold with a low of minus 10 and a high of zero.<br>\
+5<br>\
+In Taipei it will be cloudy, wet, and hot today. The low will be 20 degrees and the high will be 30."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"17.03",
+	en:"1<br>\
+Are you going out?<br>\
+Yes. Later. What's the weather like outside?<br>\
+Not very nice. Cloudy and windy. I think it's going to rain later.<br>\
+Oh, really? It was sunny this morning.<br>\
+2<br>\
+Let's go out for a walk. It's so nice and sunny.<br>\
+Yes, it is. Not a cloud in the sky. Just let me put this on.<br>\
+3<br>\
+Are you going out in this snow?<br>\
+Yes, I have to go downtown.<br>\
+Well, wear something warm. It's really cold outside.<br>\
+4<br>\
+Is it cold outside?<br>\
+Not really. It's raining a little, but it's still nice.<br>\
+5<br>\
+It's really hot and humid today.<br>\
+It sure is. It must be at least 95 degrees out there!<br>\
+I think I'll go to the pool for a swim.<br>\
+6<br>\
+Oh, look. It's snowing.<br>\
+Great. Let's get our things and have a snowball fight.<br>\
+No way! It's too cold for me.<br>\
+Come on. There's no wind. It'll be nice."
+	,vi:"1<br>\
+Bạn có ra ngoài không?<br>\
+Có. Sau đó. Thời tiết bên ngoài thế nào?<br>\
+Không đẹp lắm. Có mây và gió. Tôi nghĩ trời sẽ mưa sau.<br>\
+Ồ, thật sao? Sáng nay trời nắng.<br>\
+2<br>\
+Chúng ta ra ngoài đi dạo nhé. Trời đẹp và nắng lắm.<br>\
+Đúng vậy. Không một gợn mây trên bầu trời. Để tôi mặc cái này nhé.<br>\
+3<br>\
+Bạn có ra ngoài trong trận tuyết này không?<br>\
+Có, tôi phải xuống trung tâm thành phố.<br>\
+Được thôi, mặc đồ ấm vào. Bên ngoài lạnh lắm.<br>\
+4<br>\
+Bên ngoài lạnh lắm phải không?<br>\
+Không lạnh lắm. Trời hơi mưa, nhưng vẫn đẹp.<br>\
+5<br>\
+Hôm nay thực sự nóng và ẩm.<br>\
+Đúng là vậy. Trời phải ít nhất là 95 độ ngoài kia!<br>\
+Tôi nghĩ mình sẽ đi bơi ở hồ bơi.<br>\
+6<br>\
+Ồ, nhìn kìa. Tuyết đang rơi.<br>\
+Tuyệt. Chúng ta hãy lấy đồ đạc và chơi trò ném tuyết.<br>\
+Không đời nào! Trời quá lạnh đối với tôi.<br>\
+Đi nào. Không có gió. Sẽ tuyệt lắm."
+	,voca:"",
+},
+{
+	track:"16.04",
+	en:"1<br>\
+How's the weather?<br>\
+The temperature is going down, and it's turned very windy. I think it's going to rain a lot<br>\
+tonight.<br>\
+2<br>\
+How's the weather now?<br>\
+It's much warmer now than it was this morning. And the wind has stopped, too. I think<br>\
+I'll go out for a walk.<br>\
+3<br>\
+Is it nice outside?<br>\
+It was nice when I got up this morning, but now the sky is very dark. I think it's going to<br>\
+rain.<br>\
+4<br>\
+What's it like outside?<br>\
+It's getting very windy now. I don't think it's a good idea to go out. I think we're going<br>\
+to have a bad storm.<br>\
+5<br>\
+Is it a nice day today?<br>\
+It's much nicer now. It was so cold and windy this morning, but it's really nice outside<br>\
+now. And it's getting warmer, too.<br>\
+6<br>\
+What's it like outside today?<br>\
+It was cold and wet earlier, but now it's stopped raining and the sun is coming out.<br>\
+7<br>\
+What's the weather like?<br>\
+It was terrible this morning when I woke up—very hot and humid. I'm glad it's getting<br>\
+cooler now.<br>\
+8<br>\
+Is it still snowing?<br>\
+It sure is. We're going to have a really bad snowstorm. Let's not go out today."
+	,vi:"1<br>\
+Thời tiết thế nào?<br>\
+Nhiệt độ đang giảm và gió rất mạnh. Tôi nghĩ trời sẽ mưa rất to<br>\
+tối nay.<br>\
+2<br>\
+Thời tiết bây giờ thế nào?<br>\
+Giờ ấm hơn nhiều so với sáng nay. Và gió cũng đã ngừng. Tôi nghĩ<br>\
+Tôi sẽ ra ngoài đi dạo.<br>\
+3<br>\
+Bên ngoài có đẹp không?<br>\
+Sáng nay khi tôi thức dậy trời đẹp, nhưng bây giờ trời rất tối. Tôi nghĩ trời sẽ<br>\
+mưa.<br>\
+4<br>\
+Bên ngoài thế nào?<br>\
+Gió đang rất mạnh. Tôi không nghĩ ra ngoài là ý hay. Tôi nghĩ chúng ta sắp có một cơn bão tồi tệ.<br>\
+5<br>\
+Hôm nay có phải là một ngày đẹp trời không?<br>\
+Bây giờ đẹp hơn nhiều rồi. Sáng nay trời lạnh và gió, nhưng bên ngoài thực sự rất đẹp<br>\
+bây giờ. Và trời cũng ấm hơn.<br>\
+6<br>\
+Hôm nay bên ngoài thế nào?<br>\
+Trước đó trời lạnh và ẩm ướt, nhưng giờ đã ngừng mưa và trời nắng.<br>\
+7<br>\
+Thời tiết thế nào?<br>\
+Sáng nay khi tôi thức dậy, thời tiết thật kinh khủng—rất nóng và ẩm ướt. Tôi mừng là trời đang trở nên<br>\
+mát mẻ hơn.<br>\
+8<br>\
+Trời vẫn còn tuyết rơi chứ?<br>\
+Chắc chắn là có. Chúng ta sẽ có một trận bão tuyết thực sự tồi tệ. Hôm nay chúng ta không nên ra ngoài."
+	,voca:"",
+},
+{
+	title:"Shopping",
+	track:"18.02",
+	en:"1<br>\
+I think these are too big. Do you have a smaller pair?<br>\
+Yes, we do. What size are those?<br>\
+These are 9 1/2.<br>\
+Let me find a smaller pair. Um—much smaller.<br>\
+2<br>\
+How much is this?<br>\
+It's $399.<br>\
+$399. That's very expensive.<br>\
+It does look very nice on you.<br>\
+Bob, what do you think?<br>\
+Very nice. But how much?<br>\
+It's only $399.<br>\
+$399! You must be kidding!<br>\
+3<br>\
+Oh, I haven't read this. Is it good?<br>\
+I think so.<br>\
+Is it a mystery?<br>\
+Well, actually I haven't read it, but I think so.<br>\
+Just what I need. I'll take it.<br>\
+4<br>\
+Are these fresh?<br>\
+Yes, they are.<br>\
+They look delicious.<br>\
+Why don't you try one?<br>\
+Really? Okay. Mmm. These are good.<br>\
+5<br>\
+I think these are fine. They'll be great for the beach. What do you think?<br>\
+Yes, but don't you think they're a little small?<br>\
+6<br>\
+Can I play this one? I'd like to listen to it before I buy it.<br>\
+Yes, let me play that for you. I think you'll like it."
+	,vi:"1<br>\
+Tôi nghĩ là chúng quá lớn. Bạn có đôi nào nhỏ hơn không?<br>\
+Có, chúng tôi có. Chúng có cỡ nào?<br>\
+Chúng là cỡ 9 1/2.<br>\
+Để tôi tìm một đôi nhỏ hơn. Ừm—nhỏ hơn nhiều.<br>\
+2<br>\
+Cái này giá bao nhiêu?<br>\
+399 đô la.<br>\
+399 đô la. Đắt lắm.<br>\
+Nó trông rất đẹp trên người bạn.<br>\
+Bob, bạn nghĩ sao?<br>\
+Rất đẹp. Nhưng giá bao nhiêu?<br>\
+Chỉ có 399 đô la thôi.<br>\
+399 đô la! Bạn đùa à!<br>\
+3<br>\
+Ồ, tôi chưa đọc cái này. Có tốt không?<br>\
+Tôi nghĩ vậy.<br>\
+Có phải là một bí ẩn không?<br>\
+Ồ, thực ra tôi chưa đọc, nhưng tôi nghĩ vậy.<br>\
+Đúng là thứ tôi cần. Tôi sẽ lấy nó.<br>\
+4<br>\
+Những thứ này có tươi không?<br>\
+Vâng, chúng tươi.<br>\
+Chúng trông ngon quá.<br>\
+Sao bạn không thử một cái?<br>\
+Thật sao? Được thôi. Ừm. Những thứ này ngon.<br>\
+5<br>\
+Tôi nghĩ chúng ổn. Chúng sẽ tuyệt vời khi đi biển. Bạn nghĩ sao?<br>\
+Được, nhưng bạn không thấy chúng hơi nhỏ sao?<br>\
+6<br>\
+Tôi có thể chơi bản này không? Tôi muốn nghe trước khi mua.<br>\
+Được, để tôi chơi cho bạn nghe. Tôi nghĩ bạn sẽ thích."
+	,voca:"",
+},
+{
+	track:"18.03",
+	en:"1<br>\
+Could I help you with anything today, ma'am?<br>\
+Well, I really like this blouse. Do you have it in another design?<br>\
+Yes, we do.<br>\
+Great! I'll take it, then.<br>\
+2<br>\
+Do you need any help, sir?<br>\
+Yes, actually, I do. These are a small and they're too tight. Do you have a medium?<br>\
+Yes.<br>\
+Great! I'll take them.<br>\
+3<br>\
+These are the most beautiful watches in the store.<br>\
+They really are nice. How much is this one?<br>\
+It's $2,500. Would you like to buy it?<br>\
+No, thanks. It's too expensive for me<br>\
+4<br>\
+Need any help this morning?<br>\
+No, I'm just looking around for some gift ideas, thanks.<br>\
+5<br>\
+Those are really nice dresses.<br>\
+Yes, they certainly are. I love the design. Do you have one in a size 12?<br>\
+Yes, we do. Would you like to take it?<br>\
+Yes, please.<br>\
+6<br>\
+Do you need any help?<br>\
+Yes. I want to buy a shirt for my husband. Do you have anything in cotton?<br>\
+Yes, we do. Look at these.<br>\
+They're perfect! I'll buy the gray one.<br>\
+7<br>\
+Good afternoon, ma'am. Can I help you find anything?<br>\
+Oh, I'm not sure what I want. I'll just look around for a while, thanks.<br>\
+8<br>\
+May I help you with anything, or are you just looking?<br>\
+I'd like these green gym shorts, please. Do you have them in a large?<br>\
+I'm afraid we don't.<br>\
+Oh, that's too bad."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"18.04",
+	en:"1<br>\
+Can I try on that shirt, please?<br>\
+This one?<br>\
+No, not the one with the short sleeves. The other one.<br>\
+Here you are.<br>\
+Thanks. Can this be machine-washed, by the way?<br>\
+No, it's silk, so you should dry-clean it. It's not a good idea to wash it by hand or machine-wash it.<br>\
+2<br>\
+I'd like to buy some envelopes.<br>\
+Which ones? These big ones?<br>\
+No, those are too big. Do you have any smaller ones?<br>\
+How about these?<br>\
+Yes, they look like a better size. Can they be used for air mail letters?<br>\
+No. These are meant for regular mail.<br>\
+3<br>\
+Can I see that watch, please?<br>\
+The one with the narrow band?<br>\
+No. The one with the wide band. Is this a man's watch? I'm looking for a gift for my girlfriend.<br>\
+Actually, anyone can wear it. It's not just for a man.<br>\
+Hmm. It's nice.<br>\
+4<br>\
+I love that tie.<br>\
+I'm not crazy about stripes myself.<br>\
+No, no—the blue and orange one.<br>\
+Oh. I don't like that, either.<br>\
+It's kind of fun. It's for my brother's birthday. He likes things that are a little different.<br>\
+5<br>\
+Can I see that blouse?<br>\
+The one without the pockets?<br>\
+No, the other one.<br>\
+Here you are.<br>\
+What fabric is this? Is it cotton?<br>\
+I think it's a linen and cotton blend.<br>\
+6<br>\
+I'd like to get some apples.<br>\
+How about these big ones?<br>\
+I don't think they are very sweet. The smaller ones are usually sweeter.<br>\
+Okay. Let's get some of these small ones."
+	,vi:"1<br>\
+Tôi có thể thử chiếc áo đó được không?<br>\
+Cái này à?<br>\
+Không, không phải cái tay ngắn đâu. Cái kia.<br>\
+Đây rồi.<br>\
+Cảm ơn bạn. Nhân tiện, cái này có thể giặt bằng máy được không?<br>\
+Không, nó là lụa, vì vậy bạn nên giặt khô. Không nên giặt bằng tay hoặc giặt máy.<br>\
+2<br>\
+Tôi muốn mua một số phong bì.<br>\
+Cái nào? Những cái to này à?<br>\
+Không, chúng quá to. Bạn có cái nào nhỏ hơn không?<br>\
+Thế còn những cái này thì sao?<br>\
+Vâng, chúng có vẻ là cỡ lớn hơn. Chúng có thể dùng để gửi thư bằng đường hàng không không?<br>\
+Không. Chúng dùng để gửi thư thường.<br>\
+3<br>\
+Tôi có thể xem chiếc đồng hồ đó không?<br>\
+Cái có dây đeo hẹp?<br>\
+Không. Cái có dây đeo rộng. Đây có phải đồng hồ nam không? Tôi đang tìm quà tặng cho bạn gái mình.<br>\
+Thực ra, ai cũng có thể đeo được. Không chỉ dành cho nam giới.<br>\
+Ừm. Đẹp đấy.<br>\
+4<br>\
+Tôi thích chiếc cà vạt đó.<br>\
+Bản thân tôi không thích sọc.<br>\
+Không, không—cái màu xanh và cam ấy.<br>\
+Ồ. Tôi cũng không thích.<br>\
+Cũng vui. Quà tặng sinh nhật cho anh trai tôi. Anh ấy thích những thứ hơi khác biệt một chút.<br>\
+5<br>\
+Tôi có thể xem chiếc áo cánh đó không?<br>\
+Chiếc không có túi à?<br>\
+Không, chiếc kia.<br>\
+Đây rồi.<br>\
+Vải này là gì? Có phải cotton không?<br>\
+Tôi nghĩ đó là vải pha giữa vải lanh và cotton.<br>\
+6<br>\
+Tôi muốn mua một ít táo.<br>\
+Thế còn những quả to này thì sao?<br>\
+Tôi không nghĩ chúng ngọt lắm. Những quả nhỏ hơn thường ngọt hơn.<br>\
+Được rồi. Chúng ta hãy mua một ít quả nhỏ này nhé."
+	,voca:"",
 }
-
 
 
 

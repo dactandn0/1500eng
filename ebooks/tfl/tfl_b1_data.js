@@ -1712,7 +1712,21 @@ Really? Great.<br>\
 The bathroom is very small. Just a shower and a toilet.<br>\
 You can come and take a bath at my place any time.<br>\
 Thanks, I probably will."
-	,vi:""
+	,vi:"1<br>\
+Bếp có đủ mọi thứ bạn cần không, như bếp và tủ lạnh?<br>\
+Có bếp nhưng không có tủ lạnh. Tôi cần mua một cái.<br>\
+2<br>\
+Bạn không có giường trong phòng ngủ à?<br>\
+Không có giường. Chỉ có TV. Tôi ngủ trên nệm trên sàn.<br>\
+Thật sao?<br>\
+3<br>\
+Chúng tôi chưa có nhiều đồ đạc. Chúng tôi thậm chí còn không có ghế sofa trong phòng khách.<br>\
+Này. Tôi có một cái mà tôi có thể bán cho bạn.<br>\
+Thật sao? Tuyệt.<br>\
+4<br>\
+Phòng tắm rất nhỏ. Chỉ có vòi sen và bồn cầu.<br>\
+Bạn có thể đến tắm ở nhà tôi bất cứ lúc nào.<br>\
+Cảm ơn, có lẽ tôi sẽ đến."
 	,voca:"",
 },
 {
@@ -1949,66 +1963,34 @@ Không đời nào! Trời quá lạnh đối với tôi.<br>\
 	,voca:"",
 },
 {
-	track:"16.04",
+	track:"17.04",
 	en:"1<br>\
 How's the weather?<br>\
-The temperature is going down, and it's turned very windy. I think it's going to rain a lot<br>\
-tonight.<br>\
+The temperature is going down, and it's turned very windy. I think it's going to rain a lot tonight.<br>\
 2<br>\
 How's the weather now?<br>\
 It's much warmer now than it was this morning. And the wind has stopped, too. I think<br>\
 I'll go out for a walk.<br>\
 3<br>\
 Is it nice outside?<br>\
-It was nice when I got up this morning, but now the sky is very dark. I think it's going to<br>\
-rain.<br>\
+It was nice when I got up this morning, but now the sky is very dark. I think it's going to rain.<br>\
 4<br>\
 What's it like outside?<br>\
 It's getting very windy now. I don't think it's a good idea to go out. I think we're going<br>\
 to have a bad storm.<br>\
 5<br>\
 Is it a nice day today?<br>\
-It's much nicer now. It was so cold and windy this morning, but it's really nice outside<br>\
-now. And it's getting warmer, too.<br>\
+It's much nicer now. It was so cold and windy this morning, but it's really nice outside now. And it's getting warmer, too.<br>\
 6<br>\
 What's it like outside today?<br>\
 It was cold and wet earlier, but now it's stopped raining and the sun is coming out.<br>\
 7<br>\
 What's the weather like?<br>\
-It was terrible this morning when I woke up—very hot and humid. I'm glad it's getting<br>\
-cooler now.<br>\
+It was terrible this morning when I woke up—very hot and humid. I'm glad it's getting cooler now.<br>\
 8<br>\
 Is it still snowing?<br>\
 It sure is. We're going to have a really bad snowstorm. Let's not go out today."
-	,vi:"1<br>\
-Thời tiết thế nào?<br>\
-Nhiệt độ đang giảm và gió rất mạnh. Tôi nghĩ trời sẽ mưa rất to<br>\
-tối nay.<br>\
-2<br>\
-Thời tiết bây giờ thế nào?<br>\
-Giờ ấm hơn nhiều so với sáng nay. Và gió cũng đã ngừng. Tôi nghĩ<br>\
-Tôi sẽ ra ngoài đi dạo.<br>\
-3<br>\
-Bên ngoài có đẹp không?<br>\
-Sáng nay khi tôi thức dậy trời đẹp, nhưng bây giờ trời rất tối. Tôi nghĩ trời sẽ<br>\
-mưa.<br>\
-4<br>\
-Bên ngoài thế nào?<br>\
-Gió đang rất mạnh. Tôi không nghĩ ra ngoài là ý hay. Tôi nghĩ chúng ta sắp có một cơn bão tồi tệ.<br>\
-5<br>\
-Hôm nay có phải là một ngày đẹp trời không?<br>\
-Bây giờ đẹp hơn nhiều rồi. Sáng nay trời lạnh và gió, nhưng bên ngoài thực sự rất đẹp<br>\
-bây giờ. Và trời cũng ấm hơn.<br>\
-6<br>\
-Hôm nay bên ngoài thế nào?<br>\
-Trước đó trời lạnh và ẩm ướt, nhưng giờ đã ngừng mưa và trời nắng.<br>\
-7<br>\
-Thời tiết thế nào?<br>\
-Sáng nay khi tôi thức dậy, thời tiết thật kinh khủng—rất nóng và ẩm ướt. Tôi mừng là trời đang trở nên<br>\
-mát mẻ hơn.<br>\
-8<br>\
-Trời vẫn còn tuyết rơi chứ?<br>\
-Chắc chắn là có. Chúng ta sẽ có một trận bão tuyết thực sự tồi tệ. Hôm nay chúng ta không nên ra ngoài."
+	,vi:""
 	,voca:"",
 },
 {
@@ -2199,6 +2181,217 @@ Tôi muốn mua một ít táo.<br>\
 Thế còn những quả to này thì sao?<br>\
 Tôi không nghĩ chúng ngọt lắm. Những quả nhỏ hơn thường ngọt hơn.<br>\
 Được rồi. Chúng ta hãy mua một ít quả nhỏ này nhé."
+	,voca:"",
+},
+{
+	title:"Using the Telephone",
+	track:"19.02",
+	en:"1<br>\
+Hello.<br>\
+Hello, Joe?<br>\
+No.<br>\
+Is this 793-5141?<br>\
+No, it isn't. I think you have the wrong number.<br>\
+Oh, sorry.<br>\
+2<br>\
+Hello.<br>\
+Hello. Can I speak to Sandy, please?<br>\
+She's busy right now. Can you call back?<br>\
+Oh, sure.<br>\
+3<br>\
+Hello.<br>\
+Hello. Can I speak to Brian?<br>\
+Sorry. Who?<br>\
+Brian.<br>\
+What number did you want?<br>\
+321-9645.<br>\
+This is 321-6949.<br>\
+Oh, sorry.<br>\
+4<br>\
+Hello.<br>\
+Hello. Is Sylvia there?<br>\
+Sorry. She's not in right now.<br>\
+Oh, well, this is Rod. Can I leave a message?<br>\
+Okay.<br>\
+5<br>\
+Hello.<br>\
+Hello. Is Mrs. Brown there, please?<br>\
+Yes, may I ask who's calling?<br>\
+Yes, this is Donna Simpson.<br>\
+Just a moment, please.<br>\
+6<br>\
+Hello.<br>\
+Hello. Can I speak to Tony, please?<br>\
+Sure. Hold on and I'll get him."
+	,vi:""
+	,voca:"",
+},
+{
+	track:"19.03",
+	en:"1<br>\
+Hello.<br>\
+Hello, can I speak to Anne, please?<br>\
+Sorry. She’s not in right now. Would you like to leave a message?<br>\
+Yes, please. My name’s Mary Brown.<br>\
+Mary Brown?<br>\
+Yes, and my number is 914-6520.<br>\
+Did you say 6520?<br>\
+That’s right. Could you ask Anne to call me back tonight?<br>\
+Okay, I’ll give her the message.<br>\
+Thanks.<br>\
+You’re welcome.<br>\
+2<br>\
+Hello.<br>\
+Hello. I’d like to speak to John, please.<br>\
+Oh, John’s not back from school yet. Can I take a message?<br>\
+Um, yes, please. My name is Ellen.<br>\
+E-L-L-E-N?<br>\
+That’s right. And my number is 614-5533.<br>\
+614-5533.<br>\
+Please tell John I’ll meet him tomorrow at 12 o’clock at the bookstore.<br>\
+At the bookstore. Okay. I’ll tell him.<br>\
+3<br>\
+Hello.<br>\
+Hello. Is Peter there, please?<br>\
+He’s gone out for the evening. Can I take a message?<br>\
+Yes, please. This is Joan calling.<br>\
+Yes, Jean. What’s the message?<br>\
+No, it’s Joan. J-O-A-N. Please tell him the English exam will be on Tuesday in Room 214.<br>\
+English exam... Tuesday... Room 214. I’ll tell him.<br>\
+Thank you.<br>\
+4<br>\
+Hello.<br>\
+Hello. This is John.<br>\
+Oh, hi, John!<br>\
+Is Patrick there?<br>\
+He’s here, but he’s sleeping. He won’t get up until morning. Can I take a message?<br>\
+Yes, please. Tell him that tomorrow’s party is at 7:30 at the Plaza Hotel.<br>\
+Okay, let’s see... John called...  Oh, John, how do you spell your name again? Is it J-O-N?<br>\
+No, it’s J-O-H-N.<br>\
+Okay... John called. Tomorrow’s party... 7:30... Plaza Hotel. Got it! He’ll be there.<br>\
+Thanks. Talk to you later.<br>\
+Bye!"
+	,vi:""
+	,voca:"",
+},
+{
+	track:"19.04",
+	en:"1<br>\
+Hello.<br>\
+Hi, Jenny. This is David. How are things?<br>\
+Pretty good, thanks.<br>\
+Listen. I was wondering if you're doing anything on Sunday.<br>\
+No, I don't think so.<br>\
+Great. Would you like to see a movie with me?<br>\
+Oh, yeah. That sounds great. Thanks.<br>\
+2<br>\
+Hello.<br>\
+Hi, Tony. This is Bob.<br>\
+Hi, Bob. What's up?<br>\
+Oh, nothing much. But I have a favor to ask. Would it be okay for me to borrow your<br>\
+stereo on Sunday? Mine isn't working very well, and I have some new CDs I'd like to listen to.<br>\
+Um. Well, okay. I guess that's all right.<br>\
+Thanks. See you tomorrow.<br>\
+Yeah. Bye.<br>\
+Who was that?<br>\
+Oh, it was Bob. He wants to borrow my stereo again!<br>\
+Not again!<br>\
+3<br>\
+Hello.<br>\
+Hi, John. This is Rita.<br>\
+Hi. How's it going?<br>\
+Well, okay, but I'm afraid I have to cancel our date. Remember? We were going to see a<br>\
+play together.<br>\
+Yeah, I've already bought the tickets.<br>\
+Oh, I'm so sorry, but I have to drive my dad to the airport.<br>\
+Oh, well. I'll see if I can get someone else to go with me.<br>\
+Yeah. Sorry about that.<br>\
+4<br>\
+Hello.<br>\
+Hello, David. This is Paul.<br>\
+Oh, hi.<br>\
+Listen, you know we're supposed to meet at six tonight for dinner?<br>\
+Yeah, is there a problem?<br>\
+No, but can we meet at seven o'clock instead? I think I'm going to be late.<br>\
+No problem. Actually, that's better for me, too.<br>\
+Great. See you at seven o'clock.<br>\
+5<br>\
+Hi, Joan. I know it's late, but I wanted to call and apologize to you.<br>\
+Well, I was wondering why you didn't meet me for dinner.<br>\
+I am so sorry, but my husband called me at work and told me that he was not feeling<br>\
+well. So, I had to go home and take care of him. I was so busy, I forgot to call you.<br>\
+Well, I understand your problem, but you really should have called.<br>\
+6<br>\
+Hi, Howard! How are you doing?<br>\
+Oh, Becky! I'm doing pretty good. I'm leaving for my big vacation to Europe this Saturday.<br>\
+What? You are?<br>\
+Yeah, why?<br>\
+Well, you promised me that you would help me move into my new apartment this<br>\
+Saturday.<br>\
+Oh, that's right. I forgot. Well, don't worry. My plane leaves at night. I can still help you<br>\
+in the morning, I guess.<br>\
+Oh, good. Thanks!<br>\
+Sure."
+	,vi:""
+	,voca:"",
+},{
+	title:"Describing Things",
+	track:"20.02",
+	en:"1<br>\
+Hello. City Taxi.<br>\
+Yes, I left a briefcase in a taxi coming back from the airport.<br>\
+Can you describe it?<br>\
+Yes, it's black leather, with the initials PWD on it.<br>\
+2<br>\
+Hello. City Taxi.<br>\
+Hello, has anyone turned in a lady's handbag? I left one in a taxi about an hour ago.<br>\
+Can you describe it?<br>\
+Yes, it's a small blue and white striped bag with a long red strap.<br>\
+3<br>\
+Hello.<br>\
+Is this City Taxi?<br>\
+Yes, it is.<br>\
+I'm calling about a wallet. I think I left it in a taxi this morning. It's a black wallet. It had all my credit cards in it.<br>\
+Oh, dear.<br>\
+4<br>\
+Hello. City Taxi.<br>\
+Hello. I left a pair of glasses in a taxi this morning.<br>\
+Sunglasses? Black frames with initials on them?<br>\
+No. No, they're regular glasses. They were in a brown leather case. I can't see a thing without them.<br>\
+Sorry. They're not here."
+	,vi:""
+	,voca:"",
+},{
+	track:"20.03",
+	en:"1<br>\
+ I wear it instead of sunglasses because sunglasses make me look so stupid. I always wear it when it's sunny outside. If I don't wear it, the sun hurts my eyes. It's not too good on windy days, though.<br>\
+ 2<br>\
+ It's excellent for work because it's pretty big and I can get all my business papers in it. It's not one of those cheap-looking plastic ones. It's made of real leather.<br>\
+ 3<br>\
+ I use it to put my things in when I play sports. It's pretty big, so I can get all my clothes and my running shoes into it.<br>\
+ 4<br>\
+ It's an expensive one, but I use it a lot because it's very wet here in the fall. I love the colors, too. People can easily find me in a crowd when I'm using it.<br>\
+ 5<br>\
+ It's great when you're on a trip somewhere, especially when you're taking a flight, because you can take it on board the aircraft. It's not so big, so you can put it in the overhead compartment or under the seat in front of you. It's also got wheels and a handle that you can pull out.<br>\
+ 6<br>\
+They're very comfortable for jogging or walking. That's good because I jog and walk a lot. But they're really old. I've had them for about three years. I hate the color. But I'll use them until I can afford a new pair."
+	,vi:""
+	,voca:"",
+},{
+	track:"20.04",
+	en:" 1.<br>\
+ It's a brown leather one. I keep all my money and my credit cards in it. I usually keep it in my back pocket. It probably fell out when I was getting off the bus. I hope I get it back because it also has my ID card in it, and that's very important.<br>\
+ 2.<br>\
+ I'm always losing them or putting them down and forgetting where I put them. I think I was wearing them when I was on the bus. Then I stopped for a cup of coffee at a coffee shop. I think I took them off then because I don't need them when I read, and I was reading a magazine. Yes, maybe that's where they are. <br>\
+ 3.<br>\
+ I'm sure I had them when I left school because I remember putting them in my purse. I'm sure I had them when I came home or I couldn't have driven the car or opened the front door. So that means they're somewhere inside the house.<br>\
+ 4.<br>\
+ I'm sure I used it to pay the bill at the restaurant when I had lunch there. After that I went to the department store, and I think I used it when I bought my jacket. I'm sure that's the last time I used it, so it's probably there.<br>\
+  5.<br>\
+ I usually keep it at home in a drawer in my desk because I only use it when I travel abroad. But it's not there, so I wonder where I put it. Oh, maybe I left it at the office when I came back from my trip to France. I think that's where it is, because I went straight from the airport to my office. <br>\
+ 6.<br>\
+ I thought it was in my briefcase. I usually put it there when I get one from the newsstand and then read it when I get home. Now I remember! I was on the subway! I took it out to read the sports section. I'm sure I left it there."
+	,vi:""
 	,voca:"",
 }
 

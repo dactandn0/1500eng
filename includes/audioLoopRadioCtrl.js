@@ -21,5 +21,10 @@ $scope.$on('$viewContentLoaded', function(){
 	$scope.finishLoading();
 });
 
+
+function axxx() {
+	console.log('loooppp')
+}
+
 });
 

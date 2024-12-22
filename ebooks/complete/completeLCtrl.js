@@ -5,9 +5,7 @@ document.write('<script src="./ebooks/complete/listen_data/complete_cd2.js" type
 var app = angular.module("completeLApp", ['ngSanitize']);
 app.controller("completeLCtrl", function($scope, $rootScope, $timeout) {
 
-var kSTORIES = complete_cd1; // 1
-
-$scope.stories = kSTORIES; //1
+$scope.stories = complete_cd1;
 $scope.storyIdx = 0;
 
 $scope.createAudioSrc = function() {
@@ -15,33 +13,12 @@ $scope.createAudioSrc = function() {
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
-	$scope.whenAudioEnded();
+	Helper_AudioLoop($scope);
 });
-
-$scope.whenAudioEnded = function()
-{
-	Helper_AudioLoop($scope, kSTORIES);
-}
 
 $scope.fetchStory = function (idx, reset=true) 
 {
-	if (reset==true) 
-	{
-		$scope.$broadcast("child_stopSound");
-	}
-
-	$scope.stories = kSTORIES;
-	$scope.storyIdx = idx;
-	$scope.story = kSTORIES[idx];
-
-	$rootScope.audioSrc = $scope.createAudioSrc();
-
-	// save DB
-	Helper_saveDB("completeL_unit", idx);
-	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
-	
-	$scope.story = processStory($scope.story);
-
+	Helper_FetchStory (idx, $scope, $rootScope, "completeL_unit", reset) 
 }
 
 $scope.loadData = function () {
@@ -52,4 +29,5 @@ $scope.loadData = function () {
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 });
+
 });

@@ -28,35 +28,12 @@ $scope.createAudioSrc = function() {
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
-	$scope.whenAudioEnded();
+	Helper_AudioLoop($scope);
 });
-
-$scope.whenAudioEnded = function()
-{
-	Helper_AudioLoop($scope, kSTORIES);
-}
 
 $scope.fetchStory = function (idx, reset=true) 
 {
-	if (reset==true) 
-	{
-		$scope.$broadcast("child_stopSound");
-	}
-
-	$scope.stories = kSTORIES;
-
-	if (idx > kSTORIES.length-1) { idx = 0 }; 
-	$scope.storyIdx = idx;
-	$scope.story = $scope.stories[idx];
-
-	$rootScope.audioSrc = $scope.createAudioSrc();
-
-	// save DB
-	Helper_saveDB("f2f_unit", idx);
-	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
-	
-	$scope.story = processStory($scope.story);
-
+	Helper_FetchStory (idx, $scope, $rootScope, "f2f_unit", reset);
 }
 
 $scope.loadData = function () {

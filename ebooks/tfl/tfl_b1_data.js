@@ -373,21 +373,21 @@ Class starts at eight. I've only got ten minutes!"
 },
 {
 	track:"04.03",
-	en:"1.<br>\
+	en:"1<br>\
 You are listening to Star Radio at 90.9 on your FM dial. The station with the best classic rock in town. The time is 7:15. Time for more classic rock...<br>\
-2.<br>\
+2<br>\
 This is WBYZ 105.1 FM and the time is coming up to 10:05. And we've got more music for you, so stay tuned.<br>\
-3.<br>\
+3<br>\
 You are listening to X98.5 on your FM dial—the jazz station. The time now is just a minute away from two o'clock.<br>\
-4.<br>\
+4<br>\
 This is your AM station, Talk Radio WXYZ. Time now is 11:02. Don't touch that dial!<br>\
-5.<br>\
+5<br>\
 This is the BBC. The time is six fifteen.<br>\
-6.<br>\
+6<br>\
 You are tuned to WQXR, your classical music station. And the time is exactly 1:40. Time for the Ninth Symphony by...<br>\
-7.<br>\
+7<br>\
 This is 1010 News Radio. The station with all the news, all the time. Time now is 9:30.<br>\
-8.<br>\
+8<br>\
 This is your station for easy listening, KABC. The time right now is going on 5:05."
 	,vi:""
 	,voca:"",
@@ -1733,13 +1733,20 @@ Cảm ơn, có lẽ tôi sẽ đến."
 	track:"15.04",
 	en:"1<br>\
 The bookshelf looks really good in the living room. And the TV is just fine. When I find a stereo, I'm going to put it in the bookshelf. I don't have a stereo now because I want to find a cheap one. I'm going to check out the sales next week. I've got a dinner table, but I still need a sofa. Now I have to sit at the dinner table to watch TV. My living room is small, so I want a small sofa.<br>\
-2.<br>\
+2<br>\
 If you have an old bookshelf you aren't using, I'd be really happy to buy it! I haven't been able to find one that is the right size. All the ones I looked at were too big. Right now there are books all over the floor. But I managed to pick up a really good TV and stereo at a yard sale last weekend. I still need to find a dinner table. All the ones I looked at in the stores were too expensive.<br>\
-3.<br>\
+3<br>\
 I was thinking about getting a bookshelf, but I don't have many books yet, so I guess I can wait. I was lucky. I got a really cheap used TV the other day. It only cost $50 and it works really well. It's nice to have something to watch. Right now I don't have enough money to buy a stereo. The dinner table is very nice and big enough for six people. I bought a cheap sofa, too. It's really comfortable.<br>\
-4.<br>\
+4<br>\
 The bookshelf is good, though it's probably a little too big for the living room. I need a TV, but I'm waiting for the new models. I have a good stereo. So that's good. However, I still haven't bought a dinner table. I saw a great one last week. The sales clerk said that they're having a big sale next week, so I'm waiting for that. For now, I'm eating my meals while sitting on the sofa."
-	,vi:""
+	,vi:"1<br>\
+Giá sách trông rất đẹp trong phòng khách. Và TV thì ổn. Khi nào tìm được dàn âm thanh, tôi sẽ đặt nó vào giá sách. Tôi không có dàn âm thanh vì tôi muốn tìm một cái rẻ. Tôi sẽ xem xét các đợt giảm giá vào tuần tới. Tôi có một bàn ăn, nhưng tôi vẫn cần một chiếc ghế sofa. Bây giờ tôi phải ngồi ở bàn ăn để xem TV. Phòng khách của tôi nhỏ, vì vậy tôi muốn một chiếc ghế sofa nhỏ.<br>\
+2<br>\
+Nếu bạn có một giá sách cũ mà bạn không sử dụng, tôi sẽ rất vui khi mua nó! Tôi vẫn chưa tìm được một chiếc có kích thước phù hợp. Tất cả những chiếc tôi xem đều quá lớn. Hiện tại, sách nằm khắp sàn nhà. Nhưng tôi đã mua được một chiếc TV và dàn âm thanh thực sự tốt tại một buổi bán đồ cũ vào cuối tuần trước. Tôi vẫn cần tìm một chiếc bàn ăn. Tất cả những thứ tôi xem trong cửa hàng đều quá đắt.<br>\
+3<br>\
+Tôi đang nghĩ đến việc mua một giá sách, nhưng tôi chưa có nhiều sách, nên tôi đoán là tôi có thể đợi. Tôi đã may mắn. Tôi đã mua được một chiếc TV cũ rất rẻ vào hôm kia. Nó chỉ có giá 50 đô la và hoạt động rất tốt. Thật tuyệt khi có thứ gì đó để xem. Hiện tại tôi không có đủ tiền để mua dàn âm thanh. Bàn ăn rất đẹp và đủ lớn cho sáu người. Tôi cũng đã mua một chiếc ghế sofa rẻ tiền. Nó thực sự thoải mái.<br>\
+4<br>\
+Giá sách thì tốt, mặc dù có lẽ hơi lớn so với phòng khách. Tôi cần một chiếc TV, nhưng tôi đang đợi những mẫu mới. Tôi có một dàn âm thanh tốt. Vậy là tốt rồi. Tuy nhiên, tôi vẫn chưa mua bàn ăn. Tôi đã thấy một chiếc tuyệt vời vào tuần trước. Nhân viên bán hàng nói rằng họ đang có chương trình giảm giá lớn vào tuần tới, nên tôi đang đợi. Hiện tại, tôi đang ăn trong khi ngồi trên ghế sofa."
 	,voca:"",
 },
 {
@@ -2379,19 +2386,30 @@ They're very comfortable for jogging or walking. That's good because I jog and w
 	,voca:"",
 },{
 	track:"20.04",
-	en:" 1.<br>\
+	en:"1<br>\
  It's a brown leather one. I keep all my money and my credit cards in it. I usually keep it in my back pocket. It probably fell out when I was getting off the bus. I hope I get it back because it also has my ID card in it, and that's very important.<br>\
- 2.<br>\
+ 2<br>\
  I'm always losing them or putting them down and forgetting where I put them. I think I was wearing them when I was on the bus. Then I stopped for a cup of coffee at a coffee shop. I think I took them off then because I don't need them when I read, and I was reading a magazine. Yes, maybe that's where they are. <br>\
- 3.<br>\
+ 3<br>\
  I'm sure I had them when I left school because I remember putting them in my purse. I'm sure I had them when I came home or I couldn't have driven the car or opened the front door. So that means they're somewhere inside the house.<br>\
- 4.<br>\
+ 4<br>\
  I'm sure I used it to pay the bill at the restaurant when I had lunch there. After that I went to the department store, and I think I used it when I bought my jacket. I'm sure that's the last time I used it, so it's probably there.<br>\
-  5.<br>\
+ 5<br>\
  I usually keep it at home in a drawer in my desk because I only use it when I travel abroad. But it's not there, so I wonder where I put it. Oh, maybe I left it at the office when I came back from my trip to France. I think that's where it is, because I went straight from the airport to my office. <br>\
- 6.<br>\
+ 6<br>\
  I thought it was in my briefcase. I usually put it there when I get one from the newsstand and then read it when I get home. Now I remember! I was on the subway! I took it out to read the sports section. I'm sure I left it there."
-	,vi:""
+	,vi:"1<br>\
+Đó là một chiếc ví da màu nâu. Tôi để tất cả tiền và thẻ tín dụng của mình trong đó. Tôi thường để nó ở túi sau. Có lẽ nó đã rơi ra khi tôi xuống xe buýt. Tôi hy vọng tôi sẽ lấy lại được vì nó cũng có thẻ căn cước của tôi, và điều đó rất quan trọng.<br>\
+2<br>\
+Tôi luôn làm mất chúng hoặc để chúng xuống và quên mất mình đã để chúng ở đâu. Tôi nghĩ rằng tôi đã đeo chúng khi ở trên xe buýt. Sau đó, tôi dừng lại để uống một tách cà phê ở một quán cà phê. Tôi nghĩ rằng tôi đã tháo chúng ra vì tôi không cần chúng khi đọc sách và tôi đang đọc tạp chí. Vâng, có lẽ đó là nơi chúng ở. <br>\
+3<br>\
+Tôi chắc chắn rằng tôi đã có chúng khi rời trường vì tôi nhớ rằng mình đã để chúng trong ví. Tôi chắc chắn rằng tôi đã có chúng khi về nhà hoặc tôi không thể lái xe hoặc mở cửa trước. Vậy nghĩa là chúng ở đâu đó trong nhà.<br>\
+4<br>\
+Tôi chắc chắn mình đã dùng nó để thanh toán hóa đơn tại nhà hàng khi tôi ăn trưa ở đó. Sau đó, tôi đến cửa hàng bách hóa và tôi nghĩ mình đã dùng nó khi mua áo khoác. Tôi chắc chắn đó là lần cuối tôi dùng nó, vì vậy có lẽ nó vẫn ở đó.<br>\
+5<br>\
+Tôi thường cất nó ở nhà trong ngăn kéo bàn làm việc vì tôi chỉ dùng nó khi đi du lịch nước ngoài. Nhưng nó không ở đó, vì vậy tôi tự hỏi mình đã để nó ở đâu. Ồ, có lẽ tôi đã để nó ở văn phòng khi tôi trở về sau chuyến đi đến Pháp. Tôi nghĩ đó là nơi nó ở, vì tôi đi thẳng từ sân bay đến văn phòng. <br>\
+6<br>\
+Tôi nghĩ nó ở trong cặp của tôi. Tôi thường để nó ở đó khi tôi mua một tờ báo từ sạp báo và sau đó đọc nó khi tôi về nhà. Bây giờ thì tôi nhớ ra rồi! Tôi đang đi tàu điện ngầm! Tôi lấy nó ra để đọc mục thể thao. Tôi chắc chắn mình đã để nó ở đó."
 	,voca:"",
 },{
 	title:"Directions",

@@ -5,25 +5,21 @@ document.write('<script src="./ebooks/words4000/data/words4000_data_1.js" type="
 var app = angular.module("words4000App", []);
 app.controller("words4000Ctrl", function($scope, $rootScope, $timeout) {
 
-var kSTORIES = BOOK4K_1;
+$scope.cd = 1;
+$scope.stories = BOOK4K_1; //1
+$scope.storyIdx = 0;
 
 radioCDChange = function (cd) {
 	if (cd===1) {
-		kSTORIES = BOOK4K_1;
+		$scope.stories = BOOK4K_1;
 	}
 	Helper_saveDB("book_4k_cd", cd);
 	$scope.cd = cd;
 }
 
-$scope.cd = 1;
-$scope.stories = kSTORIES; //1
-
-
-$scope.storyIdx = 0;
-$scope.bShowVi = 0;
 
 $scope.fetchAudio = function() {
-	return kSTORIES[$scope.storyIdx].idx;
+	return $scope.stories[$scope.storyIdx].idx;
 }
 
 $scope.createAudioScr = function() {
@@ -32,30 +28,12 @@ $scope.createAudioScr = function() {
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
-	$scope.whenAudioEnded();
+  	Helper_AudioLoop($scope);
 });
 
-$scope.whenAudioEnded = function(isVoca)
+$scope.fetchStory = function (idx, reset=true) 
 {
-  	Helper_AudioLoop($scope, kSTORIES);
-}
-
-
-$scope.fetchStory = function (idx, reset=true) {
-	if (reset==true) 
-	{
-		$scope.$broadcast("child_stopSound");
-	}
-	$scope.stories = kSTORIES;
-	$scope.storyIdx = idx;
-	$scope.story = $scope.stories[idx];
-
-	$rootScope.audioSrc = $scope.createAudioScr();
-
-	Helper_saveDB("book_4k_unit", idx);
-	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
-	
-	$scope.story = processStory($scope.story);
+	Helper_FetchStory (idx, $scope, $rootScope, "book_4k_unit", reset);
 }
 
 $scope.loadData = function () {

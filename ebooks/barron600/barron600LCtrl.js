@@ -4,9 +4,8 @@ document.write('<script src="./ebooks/barron600/listen_data/barron600_listen_dat
 var app = angular.module("barron600LApp", []);
 app.controller("barron600LCtrl", function($scope, $rootScope, $timeout) {
 
-var kSTORIES = barron600_listen_data;
 $scope.cd = 1;
-$scope.stories = kSTORIES;
+$scope.stories = barron600_listen_data;
 $scope.storyIdx = 0;
 
 radioLoopChange = function (val) {
@@ -18,31 +17,12 @@ $scope.createAudioSrc = function() {
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
-    $scope.whenAudioEnded();
+   Helper_AudioLoop($scope);
 });
 
-$scope.whenAudioEnded = function()
+$scope.fetchStory = function (idx, reset=true) 
 {
-    Helper_AudioLoop($scope, kSTORIES);
-}
-
-$scope.fetchStory = function (idx, reset=true) {
-	if (reset==true) 
-    {
-        $scope.$broadcast("child_stopSound");
-    }
-
-    $scope.stories = kSTORIES;
-    $scope.storyIdx = idx;
-    $scope.story = $scope.stories[idx];
-
-    $rootScope.audioSrc = $scope.createAudioSrc();
-
-    // save DB
-    Helper_saveDB("barron600L_idx", idx);
-    if (!$scope.story) {MYLOG('Dont have Unit'); return;}
-    
-    $scope.story = processStory($scope.story);
+    Helper_FetchStory (idx, $scope, $rootScope, "barron600L_idx", reset) 
 }
 
 $scope.loadData = function () {

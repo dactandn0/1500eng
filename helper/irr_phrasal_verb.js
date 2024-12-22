@@ -11,6 +11,7 @@ const BAT_QUI_TAC_DATA = [
 	'tear|tore|torn|xé, rách',
 	'take|took|taken|cầm, lấy',
 	'wear|wore|worn|mặc',
+	'leave|left|left|đặt, để',
 ]
 
 const PHRASAL_VERB_DATA = [

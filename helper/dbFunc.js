@@ -1,8 +1,4 @@
 
-const HELPER_AUDIOLOOP_SAME = 1
-const HELPER_AUDIOLOOP_NEXT = 2
-const HELPER_AUDIOLOOP_RANDOM = 0
-
 Helper_saveDB = function(key, val = 0) {
 	localStorage.setItem(key, val);
 }
@@ -48,28 +44,4 @@ Helper_IsWordSavedBefore = function(word) {
 
 Helper_NoteSaveDB = function(data) {
 	Helper_saveDB("vocaNotedSeq", data.trim());
-}
-
-
-Helper_AudioLoop = function (scope, stories) {
-	var nextStoryIdx = scope.storyIdx;
-	var num = stories.length;
-
-    var loopRadio = Helper_loadAudioLoop();
-
-    if (loopRadio === HELPER_AUDIOLOOP_RANDOM) // play next
-    {
-    	nextStoryIdx = Math.floor(Math.random() * num);
-    }
-    if (loopRadio === HELPER_AUDIOLOOP_NEXT) // play next
-    {
-    	nextStoryIdx = scope.storyIdx + 1;
-    	if (nextStoryIdx > num - 1) { nextStoryIdx = 0 }; 
-    }
-    if (loopRadio !== HELPER_AUDIOLOOP_SAME) // loop
-    {
-    	scope.storyIdx = nextStoryIdx;
-    	scope.fetchStory(scope.storyIdx, true);
-    }
-    scope.$broadcast('child_playFullSound')  
 }

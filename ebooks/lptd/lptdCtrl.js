@@ -8,17 +8,16 @@ document.write('<script src="./ebooks/lptd/cd4_data.js" type="text/javascript"><
 var app = angular.module("lptdApp", []);
 app.controller("lptdCtrl", function($scope, $rootScope, $timeout ) {
 
-var kSTORIES = lptd_cd1_stories;
 $scope.cd = 1;
-$scope.stories = kSTORIES; //1
+$scope.stories = lptd_cd1_stories; //1
 $scope.storyIdx = 0;
 
 radioCDChange = function (cd) {
 	switch (cd) {
-		case 1: kSTORIES = lptd_cd1_stories; break;
-		case 2: kSTORIES = lptd_cd2_stories; break;
-		case 3: kSTORIES = lptd_cd3_stories; break;
-		case 4: kSTORIES = lptd_cd4_stories; break;
+		case 1: $scope.stories = lptd_cd1_stories; break;
+		case 2: $scope.stories = lptd_cd2_stories; break;
+		case 3: $scope.stories = lptd_cd3_stories; break;
+		case 4: $scope.stories = lptd_cd4_stories; break;
 	}
 	Helper_saveDB("lptd_cd", cd);
 	$scope.cd = cd;
@@ -29,14 +28,13 @@ $scope.range = function(min, max, step) {
     return RANGE(min, max, step);
 };
 
-
 $scope.createAudioSrc = function() {
 	if (HELPER_FOR_TEST) return "./ebooks/lptd/cd1/test/0b.mp3"
 	return "./ebooks/lptd/cd" + $scope.cd + "/" + $scope.storyIdx + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
-	$scope.whenAudioEnded();
+	Helper_AudioLoop($scope);
 });
 
 $scope.units = [
@@ -50,30 +48,9 @@ $scope.units = [
 	{'title':"Travel", 'num':36},
 ];
 
-$scope.whenAudioEnded = function()
-{
-	Helper_AudioLoop($scope, kSTORIES);
-}
-
 $scope.fetchStory = function (idx, reset=true) 
 {
-	if (reset==true) 
-	{
-		$scope.$broadcast("child_stopSound");
-	}
-
-	$scope.stories = kSTORIES;
-	$scope.storyIdx = idx;
-	$scope.story = $scope.stories[idx];
-
-	$rootScope.audioSrc = $scope.createAudioSrc();
-
-	// save DB
-	Helper_saveDB("lptd_unit", idx);
-	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
-	
-	$scope.story = processStory($scope.story);
-
+	Helper_FetchStory (idx, $scope, $rootScope, "lptd_unit", reset);
 }
 
 $scope.loadData = function () {

@@ -7,19 +7,18 @@ document.write('<script src="./ebooks/tfl/tfl_b3_data.js" type="text/javascript"
 var app = angular.module("tflApp", []);
 app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
 
-var kSTORIES = tfl_b1_stories;
 var KBook = 1;
-$scope.stories = kSTORIES; //1
+$scope.stories = tfl_b1_stories; //1
 $scope.storyIdx = 0;
 
-bookChange = function (book) {
-	switch (book) {
-		case 1: kSTORIES = tfl_b1_stories; break;
-		case 2: kSTORIES = tfl_b2_stories; break;
-		case 3: kSTORIES = tfl_b3_stories; break;
+bookChange = function (num) {
+	switch (num) {
+		case 1: $scope.stories = tfl_b1_stories; break;
+		case 2: $scope.stories = tfl_b2_stories; break;
+		case 3: $scope.stories = tfl_b3_stories; break;
 	}
-	Helper_saveDB("tfl_b", book);
-	KBook = book;
+	Helper_saveDB("tfl_b", num);
+	KBook = num;
 	$scope.fetchStory($scope.storyIdx, true);
 }
 
@@ -35,35 +34,12 @@ $scope.createAudioSrc = function() {
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
-	$scope.whenAudioEnded();
+	Helper_AudioLoop($scope);
 });
-
-$scope.whenAudioEnded = function()
-{
-	Helper_AudioLoop($scope, kSTORIES);
-}
 
 $scope.fetchStory = function (idx, reset=true) 
 {
-	if (reset==true) 
-	{
-		$scope.$broadcast("child_stopSound");
-	}
-
-	$scope.stories = kSTORIES;
-
-	if (idx > kSTORIES.length-1) { idx = 0 }; 
-	$scope.storyIdx = idx;
-	$scope.story = $scope.stories[idx];
-
-	$rootScope.audioSrc = $scope.createAudioSrc();
-
-	// save DB
-	Helper_saveDB("tfl_unit", idx);
-	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
-	
-	$scope.story = processStory($scope.story);
-
+	Helper_FetchStory (idx, $scope, $rootScope, "tfl_unit", reset) 
 }
 
 $scope.loadData = function () {

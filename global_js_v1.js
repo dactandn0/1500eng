@@ -253,3 +253,48 @@ function processStory (story, isAlert = true) {
 	return story;
 }
 
+
+Helper_AudioLoop = function (scope) {
+	var nextStoryIdx = scope.storyIdx;
+	var num = scope.stories.length;
+
+    var loopRadio = Helper_loadAudioLoop();
+
+    if (loopRadio === 0) // play next
+    {
+    	nextStoryIdx = Math.floor(Math.random() * num);
+    }
+    if (loopRadio === 2) // play next
+    {
+    	nextStoryIdx = scope.storyIdx + 1;
+    	if (nextStoryIdx > num - 1) { nextStoryIdx = 0 }; 
+    }
+    if (loopRadio !== 1) // loop
+    {
+    	scope.storyIdx = nextStoryIdx;
+    	scope.fetchStory(scope.storyIdx, true);
+    }
+    scope.$broadcast('child_playFullSound')  
+}
+
+Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, reset) 
+{
+	if (reset==true) 
+	{
+		scope.$broadcast("child_stopSound");
+	}
+
+	if (idx > scope.stories.length - 1) { idx = 0 }; 
+	scope.storyIdx = idx;
+	scope.story = scope.stories[idx];
+
+	rootScope.audioSrc = scope.createAudioSrc();
+
+	// save DB
+	Helper_saveDB(keySaveDb, idx);
+	if (!scope.story) {MYLOG('Dont have Unit'); return;}
+
+	var story = scope.story;
+	rootScope.storyHasVi = story.vi && story.vi.trim().length > 0;
+	scope.story = processStory(story);
+}

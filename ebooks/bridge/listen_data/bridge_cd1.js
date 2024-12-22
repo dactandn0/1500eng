@@ -382,7 +382,8 @@ Lee: The main library?<br>\
 Pilar: Yes.<br>\
 Lee: OK. Look over there at that huge, tall, concrete building. That's the library. It's next to the art gallery.<br>\
 Pilar: Yes, I can see it.<br>\
-Lee: The information desk is at the front door. Pilar: Thanks.",
+Lee: The information desk is at the front door.<br>\
+Pilar: Thanks.",
 vi:"Tao: Xin lỗi, bạn có thể giúp tôi không?<br>\
 Karen: Chắc chắn rồi.<br>\
 Tao: Tôi đang cố tìm Trường Kinh doanh.<br>\
@@ -399,7 +400,8 @@ Lee: Thư viện chính à?<br>\
 Pilar: Vâng.<br>\
 Lee: Được rồi. Nhìn tòa nhà bê tông cao, đồ sộ kia kìa. Đó là thư viện. Nó nằm cạnh phòng trưng bày nghệ thuật.<br>\
 Pilar: Vâng, tôi có thể nhìn thấy nó.<br>\
-Lee: Quầy thông tin ở ngay cửa trước. Pilar: Cảm ơn.",
+Lee: Quầy thông tin ở ngay cửa trước.<br>\
+Pilar: Cảm ơn.",
 voca:""
 },
 {

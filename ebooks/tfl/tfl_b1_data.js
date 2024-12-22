@@ -2684,6 +2684,274 @@ Kể cho tôi thêm đi.<br>\
 Tôi chắc là anh ấy có nhiều bạn gái. Anh ấy luôn rủ một cô gái mới đi hẹn hò vào mỗi cuối tuần. Tôi không thích những anh chàng như vậy.<br>\
 Ừ, nhưng miễn là anh ấy dễ thương, tôi không bận tâm."
 	,voca:"",
+},{
+	title:"Places",
+	track:"23.02",
+	en:"1<br>\
+How do you like where you're living?<br>\
+Oh, I love it. There's so much to do here. And I have a lot of friends here, too.<br>\
+2<br>\
+What's your city like?<br>\
+Well, the good thing is there are a lot of things to do here. There are good theaters and restaurants. The trouble is it's getting very polluted, so it's not as nice as it used to be.<br>\
+3<br>\
+Do you enjoy where you're living?<br>\
+Well, I enjoy a lot about it. The city has a very nice climate. It's never too hot or too cold. And it's a safe place to live.<br>\
+4<br>\
+What's it like to live in this city?<br>\
+Well, it's very noisy and crowded. And the pollution is getting really bad. And I think we have one of the worst transportation systems in the world. I'd love to live somewhere else.<br>\
+5<br>\
+How is it here, anyway? Is this a nice place to live?<br>\
+Oh, I'm really glad we moved here. The air is fresh and the people are very friendly. Rents are pretty reasonable, and it's a very safe city, too. That's so important. Also, it's close to the sea, so it's great in the summer.<br>\
+6<br>\
+Do you enjoy living here?<br>\
+Some things are okay. The restaurants are pretty good, and the subway system is pretty good, too, but it's very old and not very clean. The weather also isn't that great. It's very hot and humid in the summer and pretty cold in the winter. But in general, it's not too bad."
+	,vi:"1<br>\
+Bạn thích nơi bạn đang sống thế nào?<br>\
+Ồ, tôi thích lắm. Có rất nhiều thứ để làm ở đây. Và tôi cũng có rất nhiều bạn ở đây nữa.<br>\
+2<br>\
+Thành phố của bạn thế nào?<br>\
+Ồ, điều tốt là có rất nhiều thứ để làm ở đây. Có nhiều nhà hát và nhà hàng tuyệt vời. Vấn đề là nơi đây đang bị ô nhiễm rất nhiều, nên không còn đẹp như trước nữa.<br>\
+3<br>\
+Bạn có thích nơi bạn đang sống không?<br>\
+Ồ, tôi rất thích nơi này. Thành phố có khí hậu rất dễ chịu. Không bao giờ quá nóng hoặc quá lạnh. Và đây là nơi an toàn để sống.<br>\
+4<br>\
+Cuộc sống ở thành phố này thế nào?<br>\
+Ồ, rất ồn ào và đông đúc. Và tình trạng ô nhiễm đang trở nên thực sự tồi tệ. Và tôi nghĩ chúng ta có một trong những hệ thống giao thông tệ nhất thế giới. Tôi rất muốn sống ở nơi khác.<br>\
+5<br>\
+Dù sao thì ở đây thế nào? Đây có phải là nơi tốt để sống không?<br>\
+Ồ, tôi thực sự vui vì chúng tôi đã chuyển đến đây. Không khí trong lành và mọi người rất thân thiện. Giá thuê khá phải chăng và đây cũng là một thành phố rất an toàn. Điều đó rất quan trọng. Ngoài ra, nơi này gần biển nên rất tuyệt vào mùa hè.<br>\
+6<br>\
+Bạn có thích sống ở đây không?<br>\
+Một số thứ thì ổn. Các nhà hàng khá ngon và hệ thống tàu điện ngầm cũng khá tốt, nhưng rất cũ và không được sạch sẽ. Thời tiết cũng không được tốt lắm. Rất nóng và ẩm vào mùa hè và khá lạnh vào mùa đông. Nhưng nhìn chung thì không quá tệ."
+	,voca:"",
+},
+{
+	track:"23.03",
+	en:"1<br>\
+So tell me about Tokyo. What's it like?<br>\
+I love it. There are so many great things to do. I'm busy all the time.<br>\
+2<br>\
+Do you like living here?<br>\
+Well, it's okay. One thing I do like is that there's very little noise. People don't walk down the street with loud radios or anything. It's pretty nice.<br>\
+3<br>\
+Do you like it here?<br>\
+It's okay. But it's awfully crowded and the air is so dirty. To tell you the truth, I'm thinking about moving.<br>\
+4<br>\
+What's it like living in New York?<br>\
+Oh, it's really a great city, but you have to pay a fortune for everything.<br>\
+5<br>\
+Is Auckland a very big city? Is it crowded?<br>\
+Not really. It's really quite small. It's never very crowded or noisy. In fact, it's like a small town in many ways.<br>\
+6<br>\
+So what's San Francisco like? I hear it's very scenic.<br>\
+Yes, it is. The Golden Gate Bridge is great any time of year. The parks and the ocean are beautiful, too. It really is a very lovely city.<br>\
+7<br>\
+What's your hometown like? Is it a nice place to live?<br>\
+It's great, especially for families with children. It's pretty and quiet and it isn't dangerous at all.<br>\
+8<br>\
+Is Osaka a big place?<br>\
+Sure. That's why I like it. Lots of people. Lots of nightclubs and discos. I don't like small cities."
+	,vi:"1<br>\
+Vậy hãy kể cho tôi nghe về Tokyo. Nó như thế nào?<br>\
+Tôi thích nơi này. Có rất nhiều điều tuyệt vời để làm. Tôi luôn bận rộn.<br>\
+2<br>\
+Bạn có thích sống ở đây không?<br>\
+Ồ, ổn thôi. Một điều tôi thích là ở đây rất ít tiếng ồn. Mọi người không đi bộ trên phố với chiếc radio lớn hay bất cứ thứ gì. Nơi này khá đẹp.<br>\
+3<br>\
+Bạn có thích ở đây không?<br>\
+Ổn thôi. Nhưng ở đây đông đúc khủng khiếp và không khí thì rất bẩn. Nói thật với bạn, tôi đang nghĩ đến chuyện chuyển đi.<br>\
+4<br>\
+Sống ở New York như thế nào?<br>\
+Ồ, đó thực sự là một thành phố tuyệt vời, nhưng bạn phải trả một khoản tiền lớn cho mọi thứ.<br>\
+5<br>\
+Auckland có phải là một thành phố rất lớn không? Có đông đúc không?<br>\
+Không hẳn vậy. Nó thực sự khá nhỏ. Không bao giờ quá đông đúc hay ồn ào. Trên thực tế, nó giống như một thị trấn nhỏ theo nhiều cách.<br>\
+6<br>\
+Vậy San Francisco như thế nào? Tôi nghe nói rằng nó rất đẹp.<br>\
+Đúng vậy. Cầu Cổng Vàng tuyệt vời vào bất kỳ thời điểm nào trong năm. Các công viên và đại dương cũng rất đẹp. Đây thực sự là một thành phố rất đáng yêu.<br>\
+7<br>\
+Quê hương của bạn như thế nào? Đó có phải là một nơi tốt để sống không?<br>\
+Thật tuyệt, đặc biệt là đối với các gia đình có trẻ em. Nó đẹp và yên tĩnh và hoàn toàn không nguy hiểm.<br>\
+8<br>\
+Osaka có phải là một nơi lớn không?<br>\
+Chắc chắn rồi. Đó là lý do tại sao tôi thích nó. Rất nhiều người. Rất nhiều hộp đêm và vũ trường. Tôi không thích những thành phố nhỏ."
+	,voca:"",
+},
+{
+	track:"23.04",
+	en:"1<br>\
+New York has great museums, and so does Washington. But Washington feels more serious because the government is there, so it isn’t as exciting as New York. Washington is more beautiful for sure, and the restaurants are cheaper there. But you know, I love theater, and New York has the best! Washington is okay, but I love New York!<br>\
+2<br>\
+Los Angeles is a huge place. You need a car to get around. San Francisco is more beautiful and it’s a great place for a weekend, but I get bored there after a few days. I enjoy the fact that in Los Angeles everything moves really fast. I love living here.<br>\
+3<br>\
+Hong Kong may be more beautiful than Singapore because it’s got that fantastic harbor, but I like Singapore better. It’s smaller, so I think it’s more comfortable. It’s easy to get around and everything is very clean. Hong Kong is pretty polluted and it’s always very crowded. <br>\
+4<br>\
+Melbourne is smaller than Sydney. It has a lot of lovely old buildings and great restaurants. Sydney is more exciting and probably more beautiful, but I think it’s too busy and too expensive. Melbourne prices are better and it’s a more relaxing place. That’s why I prefer Melbourne."
+	,vi:"1<br>\
+New York có nhiều bảo tàng tuyệt vời, và Washington cũng vậy. Nhưng Washington có vẻ nghiêm túc hơn vì có chính phủ ở đó, nên không thú vị bằng New York. Washington chắc chắn đẹp hơn, và nhà hàng ở đó rẻ hơn. Nhưng bạn biết đấy, tôi thích nhà hát, và New York có những nhà hát tuyệt nhất! Washington thì ổn, nhưng tôi thích New York!<br>\
+2<br>\
+Los Angeles là một nơi rộng lớn. Bạn cần một chiếc ô tô để đi lại. San Francisco đẹp hơn và là nơi tuyệt vời cho một kỳ nghỉ cuối tuần, nhưng tôi thấy chán ở đó sau vài ngày. Tôi thích thực tế là ở Los Angeles mọi thứ diễn ra rất nhanh. Tôi thích sống ở đây.<br>\
+3<br>\
+Hồng Kông có thể đẹp hơn Singapore vì có bến cảng tuyệt đẹp, nhưng tôi thích Singapore hơn. Nó nhỏ hơn, nên tôi nghĩ là thoải mái hơn. Dễ dàng đi lại và mọi thứ đều rất sạch sẽ. Hồng Kông khá ô nhiễm và luôn rất đông đúc. <br>\
+4<br>\
+Melbourne nhỏ hơn Sydney. Nơi đây có nhiều tòa nhà cổ kính đáng yêu và nhà hàng tuyệt vời. Sydney thú vị hơn và có lẽ đẹp hơn, nhưng tôi nghĩ nơi này quá đông đúc và đắt đỏ. Giá cả ở Melbourne tốt hơn và nơi này thư giãn hơn. Đó là lý do tại sao tôi thích Melbourne hơn."
+	,voca:"",
+},{
+	title:"Health",
+	track:"24.02",
+	en:"1<br>\
+What happened to your foot, Joanne?<br>\
+Oh, I hurt it when I was playing soccer.<br>\
+Wow. Can you walk on it?<br>\
+Yes, but it's really difficult.<br>\
+2<br>\
+What happened to you?<br>\
+Oh, I didn't have my glasses on so I walked into a door.<br>\
+No!<br>\
+It's true. Isn't it crazy? Now I have a splitting headache.<br>\
+3<br>\
+Did you cut yourself?<br>\
+Yes, I was cooking and I cut myself with a knife.<br>\
+You should be more careful.<br>\
+I know, and now it's difficult for me to eat, because I'm left-handed.<br>\
+4<br>\
+How did you do that?<br>\
+I fell down playing basketball. I put out my arm to stop myself, and this is what happened.<br>\
+Is it broken?<br>\
+Yes.<br>\
+5<br>\
+How's your back?<br>\
+Terrible.<br>\
+Why don't you lie down and rest? Would you like a massage?<br>\
+Great idea. Thanks.<br>\
+6<br>\
+Hey, what happened to your ear?<br>\
+Huh?<br>\
+What's wrong with your ear?<br>\
+Sorry, I can't hear you. I hurt my ear at the gym."
+	,vi:"1<br>\
+Chân bạn bị sao vậy, Joanne?<br>\
+Ồ, tôi bị thương khi chơi bóng đá.<br>\
+Ồ. Bạn có thể đi lại bằng chân không?<br>\
+Được, nhưng thực sự rất khó.<br>\
+2<br>\
+Bạn bị sao vậy?<br>\
+Ồ, tôi không đeo kính nên đã đâm vào cửa.<br>\
+Không!<br>\
+Đúng vậy. Có điên không? Giờ thì đầu tôi đau như búa bổ.<br>\
+3<br>\
+Bạn có cắt phải không?<br>\
+Vâng, tôi đang nấu ăn và tự cắt mình bằng dao.<br>\
+Bạn nên cẩn thận hơn.<br>\
+Tôi biết, và giờ tôi khó ăn, vì tôi thuận tay trái.<br>\
+4<br>\
+Bạn đã làm thế nào?<br>\
+Tôi bị ngã khi chơi bóng rổ. Tôi đưa tay ra để dừng lại, và đây là những gì đã xảy ra.<br>\
+Nó có bị gãy không?<br>\
+Có.<br>\
+5<br>\
+Lưng bạn thế nào rồi?<br>\
+Thật kinh khủng.<br>\
+Sao bạn không nằm xuống và nghỉ ngơi? Bạn có muốn được mát-xa không?<br>\
+Ý tưởng tuyệt vời. Cảm ơn.<br>\
+6<br>\
+Này, tai bạn sao thế?<br>\
+Hả?<br>\
+Tai bạn sao thế?<br>\
+Xin lỗi, tôi không nghe thấy bạn nói gì. Tôi bị đau tai khi tập thể dục."
+	,voca:"",
+},
+{
+	track:"24.03",
+	en:"1<br>\
+I have an awful backache. I was lifting heavy weights at the gym yesterday and I think I must have pulled a muscle. If it doesn't get better soon, I'll have to see the doctor.<br>\
+2<br>\
+I was hiking up a mountain yesterday and I slipped and twisted my ankle as we were going down a steep path. It's so painful I can hardly walk. I bandaged it, but it still hurts. If it isn't better tomorrow, I'll go to the doctor.<br>\
+3<br>\
+I flew back from Australia last week and I think I caught the flu from someone on the plane. The only time I get the flu is after a long flight. I've been taking pills for it, but I still feel sick.<br>\
+4<br>\
+I went out to dinner a few days ago with a friend. We went to a very good seafood restaurant, but I think there was something wrong with the fish because my stomach really started hurting. I had to go to the hospital to get some medicine for it because it hurt so much. It's much better now.<br>\
+5<br>\
+I was working in the garden last week and I cut my leg. It was a pretty deep cut, so I had to go to the doctor. She put some stitches in it. They'll be in for another week."
+	,vi:"1<br>\
+Tôi bị đau lưng kinh khủng. Hôm qua tôi đã nâng tạ nặng ở phòng tập thể dục và tôi nghĩ mình đã bị căng cơ. Nếu tình trạng không sớm cải thiện, tôi sẽ phải đi khám bác sĩ.<br>\
+2<br>\
+Hôm qua tôi đã leo núi và bị trượt chân và trẹo mắt cá chân khi chúng tôi đang đi xuống một con đường dốc. Đau đến mức tôi gần như không thể đi được. Tôi đã băng bó nhưng vẫn đau. Nếu ngày mai không đỡ, tôi sẽ đi khám bác sĩ.<br>\
+3<br>\
+Tuần trước tôi đã bay về từ Úc và tôi nghĩ mình đã bị cúm từ ai đó trên máy bay. Lần duy nhất tôi bị cúm là sau một chuyến bay dài. Tôi đã uống thuốc nhưng vẫn thấy khó chịu.<br>\
+4<br>\
+Tôi đã đi ăn tối với một người bạn cách đây vài ngày. Chúng tôi đã đến một nhà hàng hải sản rất ngon, nhưng tôi nghĩ có vấn đề gì đó với món cá vì bụng tôi thực sự bắt đầu đau. Tôi phải đến bệnh viện để lấy thuốc vì nó đau quá. Bây giờ thì đỡ hơn nhiều rồi.<br>\
+5<br>\
+Tuần trước tôi làm vườn và bị đứt chân. Vết cắt khá sâu nên tôi phải đi khám bác sĩ. Bác sĩ khâu vài mũi. Họ sẽ phải nằm viện thêm một tuần nữa."
+	,voca:"",
+},
+{
+	track:"24.04",
+	en:"1<br>\
+I've really been having trouble sleeping lately.<br>\
+That's too bad.<br>\
+Yeah, I go to bed, but I often can't fall asleep. Do you ever have that problem?<br>\
+Yeah, I sometimes do, too, especially if I'm feeling very worried or stressed out.<br>\
+So what do you do for it? Do you take sleeping pills?<br>\
+I don't like the idea of sleeping pills, so I usually get up and watch TV or read until I feel tired. Then I go back to bed. Why don't you try it?<br>\
+Yeah, I will.<br>\
+2<br>\
+I've been feeling very tired lately, like I have no energy.<br>\
+Really? I used to have that problem.<br>\
+Oh, yeah? Do you think I should see the doctor?<br>\
+It may not be anything serious. Have you tried taking vitamins?<br>\
+No, I haven't.<br>\
+Taking vitamins always helps me when I'm tired.<br>\
+3<br>\
+I've been getting really bad backaches.<br>\
+Is that right?<br>\
+Yeah. Sometimes the pain is so bad I can hardly move.<br>\
+Do you spend a lot of time in front of a computer?<br>\
+Yes, I do.<br>\
+That's probably causing it. I used to get that problem, too.<br>\
+So did you stop using the computer?<br>\
+No, I didn't need to. But I changed the way I sat, and that made a difference. Here. Let me show you.<br>\
+4<br>\
+I'm getting a lot of colds this year.<br>\
+Really?<br>\
+Yeah! About once a month.<br>\
+That's too bad.<br>\
+I've been taking vitamin C, but it doesn't help.<br>\
+Well, maybe you should go to the doctor.<br>\
+Maybe you're right. Can you recommend a good one?"
+	,vi:"1<br>\
+Gần đây tôi thực sự gặp vấn đề về giấc ngủ.<br>\
+Thật tệ.<br>\
+Vâng, tôi đi ngủ, nhưng tôi thường không thể ngủ được. Bạn có bao giờ gặp vấn đề đó không?<br>\
+Vâng, đôi khi tôi cũng gặp, đặc biệt là khi tôi cảm thấy rất lo lắng hoặc căng thẳng.<br>\
+Vậy bạn làm gì để khắc phục? Bạn có uống thuốc ngủ không?<br>\
+Tôi không thích ý tưởng dùng thuốc ngủ, vì vậy tôi thường thức dậy và xem TV hoặc đọc sách cho đến khi cảm thấy mệt mỏi. Sau đó, tôi lại đi ngủ. Tại sao bạn không thử?<br>\
+Vâng, tôi sẽ thử.<br>\
+2<br>\
+Gần đây tôi cảm thấy rất mệt mỏi, như thể tôi không có năng lượng.<br>\
+Thật sao? Tôi từng gặp vấn đề đó.<br>\
+Ồ, vậy sao? Bạn có nghĩ tôi nên đi khám bác sĩ không?<br>\
+Có thể không có gì nghiêm trọng. Bạn đã thử uống vitamin chưa?<br>\
+Không, tôi chưa uống.<br>\
+Uống vitamin luôn giúp tôi khi tôi mệt mỏi.<br>\
+3<br>\
+Tôi bị đau lưng rất nặng.<br>\
+Đúng vậy không?<br>\
+Vâng. Đôi khi cơn đau tệ đến mức tôi hầu như không thể cử động.<br>\
+Bạn có dành nhiều thời gian trước máy tính không?<br>\
+Có, tôi có.<br>\
+Có lẽ đó là nguyên nhân. Tôi cũng từng gặp vấn đề đó.<br>\
+Vậy bạn đã ngừng sử dụng máy tính chưa?<br>\
+Không, tôi không cần phải làm vậy. Nhưng tôi đã thay đổi cách ngồi của mình và điều đó đã tạo nên sự khác biệt. Đây. Để tôi chỉ cho bạn.<br>\
+4<br>\
+Năm nay tôi bị cảm lạnh rất nhiều.<br>\
+Thật sao?<br>\
+Vâng! Khoảng một lần một tháng.<br>\
+Thật tệ.<br>\
+Tôi đã uống vitamin C, nhưng không có tác dụng.<br>\
+Được rồi, có lẽ bạn nên đi khám bác sĩ.<br>\
+Có lẽ bạn đúng. Bạn có thể giới thiệu cho tôi loại nào tốt không?"
+	,voca:"",
 }
 
 

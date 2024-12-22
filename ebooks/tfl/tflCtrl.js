@@ -27,7 +27,7 @@ $scope.styleTrack = function(trackId) {
 	trackId = trackId.split('.')[0]
 	var num = Number(trackId)
 	if (num%2===0) return {color : 'green'}
-		return {color : 'red'}
+		return {color : 'orange'}
 }
 
 $scope.createAudioSrc = function() {

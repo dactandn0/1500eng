@@ -19,19 +19,7 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 
 $scope.whenAudioEnded = function()
 {
-	var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = Helper_loadAudioLoop();
-    if (loopRadio === 2) // play next
-    {
-    	nextStoryIdx = $scope.storyIdx + 1;
-    	if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
-    	$scope.storyIdx = nextStoryIdx;
-    	$scope.fetchStory($scope.storyIdx, true);
-    }
-    if (loopRadio !== 0) // loop
-    {
-    	$scope.$broadcast('child_playFullSound')  
-    }
+	Helper_AudioLoop($scope, kSTORIES);
 }
 
 $scope.fetchStory = function (idx, reset=true) 
@@ -51,14 +39,6 @@ $scope.fetchStory = function (idx, reset=true)
 	Helper_saveDB("collinsL_unit", idx);
 	if (!$scope.story) {MYLOG('Dont have Unit'); return;}
 	$scope.story = processStory($scope.story);
-	
-	/*
-	var story = $scope.story
-	story.enShow = story.enShow.replaceAll('Candidate', '<b>Candidate</b>');
-	story.viShow = story.viShow.replaceAll('Ứng viên', '<b>Ứng viên</b>');
-	story.enShow = story.enShow.replaceAll('Examiner', '<b>Examiner</b>');
-	story.viShow = story.viShow.replaceAll('Giám khảo', '<b>Giám khảo</b>');
-	*/
 }
 
 $scope.loadData = function () {

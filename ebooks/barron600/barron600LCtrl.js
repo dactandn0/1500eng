@@ -23,19 +23,7 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 
 $scope.whenAudioEnded = function()
 {
-    var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = $rootScope[kAudioLoopSaveKey];
-    if (loopRadio === 2) // play next
-    {
-        nextStoryIdx = $scope.storyIdx + 1;
-        if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
-        $scope.storyIdx = nextStoryIdx;
-        $scope.fetchStory($scope.storyIdx, true);
-    }
-    if (loopRadio !== 0) // loop
-    {
-        $scope.$broadcast('child_playFullSound')  
-    }
+    Helper_AudioLoop($scope, kSTORIES);
 }
 
 $scope.fetchStory = function (idx, reset=true) {

@@ -35,25 +35,9 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 	$scope.whenAudioEnded();
 });
 
-
 $scope.whenAudioEnded = function(isVoca)
 {
-   var nextStoryIdx = $scope.storyIdx;
-    var loopRadio = Helper_loadAudioLoop();
-    if (loopRadio==='1') // loop
-    {
-    	$scope.$broadcast('child_playFullSound')  
-    } else if (loopRadio==='2') // play next
-    {
-    	nextStoryIdx = $scope.storyIdx + 1;
-    	if (nextStoryIdx > kSTORIES.length-1) { nextStoryIdx = 0 }; 
-    	$scope.fetchStory(nextStoryIdx, true);
-
-    	$scope.storyIdx = nextStoryIdx;
-    	$scope.$broadcast('child_playFullSound')
-    }
-
-    $scope.$apply();
+  	Helper_AudioLoop($scope, kSTORIES);
 }
 
 

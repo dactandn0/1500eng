@@ -13,12 +13,11 @@ var VocaForSearch = VocaToUI
 
 // for notedEbookCtrl
 var kAllStories = lptd_cd1_stories
-  .concat(lptd_cd2_stories)
-  .concat(lptd_cd3_stories)
-  .concat(lptd_cd4_stories)
-  .concat(BOOK4K_1)
+//  .concat(lptd_cd2_stories)
+//  .concat(lptd_cd3_stories)
+//  .concat(BOOK4K_1)
  // .concat(bridge_cd1)
-  .concat(bridge_read_data)
+//  .concat(bridge_read_data)
 //  .concat(complete_cd1)
   .concat(complete_read_data)
 //  .concat(listen_tracks)
@@ -97,7 +96,7 @@ $scope.clearSearch = function () {
   $scope.search = '';
   $scope.searchDataResult = [];
   $scope.sentenceSearches = [];
-  document.getElementById("searchTyping").focus();
+ // document.getElementById("searchTyping").focus();
 };
 
 $scope.saveNoted = function(word, isFromToastr) {

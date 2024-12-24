@@ -1856,7 +1856,7 @@ Well-trained (a) /wɛl treɪnd/ Được đào tạo bài bản",
 Retire (v) /rɪˈtaɪər/ Nghỉ hưu<br>\
 Dismiss (v) /dɪsˈmɪs/ Sa thải<br>\
 Finance (n) /ˈfaɪnæns/ Tài chính<br>\
-Appointment (n) /əˈpɔɪntmənt/ Sự bổ nhiệm<br>\
+Appointment (n) /əˈpɔɪntmənt/ Sự bổ nhiệm, cuộc hẹn<br>\
 Multinational (a) /mʌltɪˈnæʃənəl/ Đa quốc gia<br>\
 Investor (n) /ɪnˈvɛstər/ Nhà đầu tư<br>\
 Inherit (v) /ɪnˈhɛrɪt/ Thừa kế<br>\

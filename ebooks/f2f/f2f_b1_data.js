@@ -320,7 +320,8 @@ T What do you do in the week?<br>\
 N I'm a student at the university. I study English and Italian.<br>\
 T Oh, OK. Where are you from?<br>\
 N I'm from Germany. From Frankfurt.<br>\
-T And where do you live in Manchester? N I live near the university with two other students.<br>\
+T And where do you live in Manchester?<br>\
+N I live near the university with two other students.<br>\
 C Do you like Manchester?<br>\
 N Yes, I do. The people are nice and there are a lot of things to do here.<br>\
 T What do you do in your free time?<br>\
@@ -340,7 +341,8 @@ T Bạn làm gì vào các ngày trong tuần?<br>\
 N Tôi là sinh viên tại trường đại học. Tôi học tiếng Anh và tiếng Ý.<br>\
 T Ồ, được rồi. Bạn đến từ đâu?<br>\
 N Tôi đến từ Đức. Từ Frankfurt.<br>\
-T Và bạn sống ở đâu tại Manchester? N Tôi sống gần trường đại học với hai sinh viên khác.<br>\
+T Và bạn sống ở đâu tại Manchester?<br>\
+N Tôi sống gần trường đại học với hai sinh viên khác.<br>\
 C Bạn có thích Manchester không?<br>\
 N Có, tôi thích. Mọi người ở đó rất tốt và có rất nhiều thứ để làm ở đây.<br>\
 T Bạn làm gì vào thời gian rảnh rỗi?<br>\
@@ -665,7 +667,7 @@ S Hmm. I know! Let's go to the theatre. We never do that.<br>\
 H Yes, that's a good idea. Do you know what's on?<br>\
 S Well, there's a new play on at the Grand Theatre. People say that it's very good. <br>\
 H Great! Let's go to that. Where shall we meet?<br>\
-S Let's meet at the theatre. It's_in_Old Street, near the museum.<br>\
+S Let's meet at the theatre. It's in Old Street, near the museum.<br>\
 H Oh yes, I know where it is. What time shall we meet?<br>\
 S About seven o'clock. Then we can have a drink first.<br>\
 H Yes, good idea.<br>\

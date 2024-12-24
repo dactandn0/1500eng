@@ -250,8 +250,7 @@ Jeans and a green shirt.<br>\
 Yes, and she's wearing a funny hat.<br>\
 Where's Ken?<br>\
 8<br>\
-Oh, the bodybuilder. He's here somewhere. He's wearing shorts and a tight shirt, as<br>\
-usual.<br>\
+Oh, the bodybuilder. He's here somewhere. He's wearing shorts and a tight shirt, as usual.<br>\
 Tight shirt?<br>\
 Yeah, he likes to show off his muscles!"
 	,vi:"1<br>\
@@ -286,8 +285,7 @@ Quần jean và áo sơ mi xanh lá cây.<br>\
 Vâng, và cô ấy đội một chiếc mũ buồn cười.<br>\
 Ken đâu rồi?<br>\
 8<br>\
-Ồ, anh chàng thể hình. Anh ấy ở đâu đó quanh đây. Anh ấy mặc quần short và áo bó, như<br>\
-thường lệ.<br>\
+Ồ, anh chàng thể hình. Anh ấy ở đâu đó quanh đây. Anh ấy mặc quần short và áo bó, như thường lệ.<br>\
 Áo bó?<br>\
 Đúng vậy, anh ấy thích khoe cơ bắp!"
 	,voca:"",
@@ -324,21 +322,21 @@ Too big? Let me find a smaller size."
 },
 {
 	track:"03.04",
-	en:"1.<br>\
+	en:"1<br>\
 Sonia was very well dressed. She had on a jacket and a long, dark blue skirt. She was also wearing a yellow blouse. She wasn't carrying a bag, but she did have a small wallet with her. Oh, and I remember she had nice gold earrings. I also remember her shoes. She was wearing black shoes with very high heels.<br>\
-2.<br>\
+2<br>\
 Brian was very casually dressed. He was wearing some really old jeans—you know, the ones with holes in them—with a new wide leather belt and a white T-shirt. He had on some boots, high brown ones. They looked really nice. He also had a red scarf. He usually wears a couple of big rings, but he wasn't wearing any at the party. He was wearing an interesting silver watch, though.<br>\
-3.<br>\
+3<br>\
 Kevin was wearing a yellow shirt and a green tie. I didn't like the tie, but I liked the shirt. He also had on brown pants. He was wearing sneakers with long white socks—kind of cute, actually. And he had a leather bag over one shoulder.<br>\
-4.<br>\
+4<br>\
 Mrs. Graham looked really good. She had on an interesting long red skirt and a beautiful gold and black jacket. And she had some lovely earrings and a nice necklace. She also had a long pink scarf over one shoulder. She didn't have a bag. She was wearing sandals."
-	,vi:"1.<br>\
+	,vi:"1<br>\
 Sonia ăn mặc rất đẹp. Cô ấy mặc một chiếc áo khoác và một chiếc váy dài màu xanh đậm. Cô ấy cũng mặc một chiếc áo cánh màu vàng. Cô ấy không mang theo túi xách, nhưng cô ấy có một chiếc ví nhỏ bên mình. À, và tôi nhớ cô ấy có đôi bông tai vàng đẹp. Tôi cũng nhớ đôi giày của cô ấy. Cô ấy đi giày đen với gót rất cao.<br>\
-2.<br>\
+2<br>\
 Brian ăn mặc rất giản dị. Anh ấy mặc một chiếc quần jean rất cũ—bạn biết đấy, loại có lỗ thủng—với một chiếc thắt lưng da bản rộng mới và một chiếc áo phông trắng. Anh ấy đi một đôi bốt cao màu nâu. Chúng trông thực sự đẹp. Anh ấy cũng có một chiếc khăn quàng cổ màu đỏ. Anh ấy thường đeo một vài chiếc nhẫn lớn, nhưng anh ấy không đeo chiếc nào trong bữa tiệc. Tuy nhiên, anh ấy đeo một chiếc đồng hồ bạc khá thú vị.<br>\
-3.<br>\
+3<br>\
 Kevin mặc một chiếc áo sơ mi màu vàng và cà vạt màu xanh lá cây. Tôi không thích chiếc cà vạt, nhưng tôi thích chiếc áo sơ mi. Anh ấy cũng mặc quần nâu. Anh ấy đi giày thể thao với tất dài màu trắng—thực ra thì khá dễ thương. Và anh ấy đeo một chiếc túi da trên một vai.<br>\
-4.<br>\
+4<br>\
 Bà Graham trông thực sự ổn. Bà mặc một chiếc váy dài màu đỏ thú vị và một chiếc áo khoác vàng và đen tuyệt đẹp. Bà đeo một số đôi bông tai đáng yêu và một chiếc vòng cổ đẹp. Bà cũng đeo một chiếc khăn dài màu hồng trên một vai. Bà không có túi. Bà đi dép xăng đan."
 	,voca:"",
 },

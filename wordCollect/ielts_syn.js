@@ -1,7 +1,7 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 const SynonymData = [
 {
-	words:"important /ɪmˈpɔːrtnt/| crucial /ˈkruːʃl/| significant /sɪɡˈnɪfɪkənt/",
+	words:"important /ɪmˈpɔːrtnt/|crucial /ˈkruːʃl/|significant /sɪɡˈnɪfɪkənt/",
 	type:"a",
 	mean:"quan trọng"
 },
@@ -11,22 +11,72 @@ const SynonymData = [
 	mean:"phổ biến"
 },
 {
-	words:"abundant /əˈbʌndənt/| ample /ˈæmpl/| plentiful /ˈplentɪfl/",
+	words:"abundant /əˈbʌndənt/|ample /ˈæmpl/|plentiful /ˈplentɪfl/",
 	type:"a",
 	mean:"dồi dào"
 },
 {
-	words:"vivid /ˈvɪvɪd/| Vibrant /ˈvaɪbrənt/| lively  /ˈlaɪvli/",
+	words:"happy|joyful|cheerful |content (n. nội dung)",
+	type:"a",
+	mean:"hạnh phúc"
+},
+{
+	words:"sad|unhappy|sorrowful |dejected ",
+	type:"a",
+	mean:"buồn, chán"
+},
+{
+	words:"tiny|petite|small|little (adv. less. chút ít)",
+	type:"a",
+	mean:"bé, nhỏ"
+},
+{
+	words:"quick|speedy|rapid|fast (adv)",
+	type:"a",
+	mean:"nhanh"
+},
+{
+	words:"slow|sluggish|leisurely|unhurried",
+	type:"a",
+	mean:"chậm rãi"
+},{
+	words:"smart|intelligent|clever|bright",
+	type:"a",
+	mean:"thông minh"
+},{
+	words:"dumb|stupid|foolish|ignorant",
+	type:"a",
+	mean:"khờ, đần, dốt, vô học"
+},{
+	words:"rich|wealthy|affluent|prosperous (thịnh vượng)",
+	type:"a",
+	mean:"giàu có"
+},{
+	words:"poor|needy|destitute|impoverished",
+	type:"a",
+	mean:"nghèo nàn"
+},{
+	words:"beautiful|gorgeous|stunning(kinh ngạc, tuyệt vời)|attractive",
+	type:"a",
+	mean:"xinh đẹp"
+},
+{
+	words:"friend|buddy (thân)|pal|impoverished",
+	type:"n",
+	mean:"bạn bè"
+},
+{
+	words:"vivid /ˈvɪvɪd/|Vibrant /ˈvaɪbrənt/|lively  /ˈlaɪvli/",
 	type:"a",
 	mean:"sống (sôi) động"
 },
 {
-	words:"various /ˈveriəs/| different /ˈdɪfrənt/| several /ˈsevrəl/",
+	words:"various /ˈveriəs/|different /ˈdɪfrənt/|several /ˈsevrəl/",
 	type:"a",
 	mean:"khác nhau"
 },
 {
-	words:"neglect /nɪˈɡlekt/| ignore /ɪɡˈnɔːr/",
+	words:"neglect /nɪˈɡlekt/|ignore /ɪɡˈnɔːr/",
 	type:"v",
 	mean:"không quan tâm, bỏ bê"
 },
@@ -144,11 +194,11 @@ function IELTS_SYN_IsIn(wordFormed) {
 }
 
 function addMean(txt) {
-	if (!txt || txt.trim().length===0) return ' '
+	if (!txt ||txt.trim().length===0) return ' '
 	return txt
 }
 function addType(txt) {
-	if (!txt || txt.trim().length===0) return ' '
+	if (!txt ||txt.trim().length===0) return ' '
 	return " (" + txt + ") "
 }
 

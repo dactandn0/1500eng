@@ -19,7 +19,7 @@ var kAllStories = lptd_cd1_stories
  // .concat(bridge_cd1)
 //  .concat(bridge_read_data)
 //  .concat(complete_cd1)
-  .concat(complete_read_data)
+//  .concat(complete_read_data)
 //  .concat(listen_tracks)
 
 var saveFromToastrVal = ''
@@ -36,16 +36,21 @@ preProcess = function () {
 preProcess();
 
 var app = angular.module("myApp", [
-  'vocaNotedApp', 'ebookNotedApp',
+  'vocaNotedApp', 
+  'ebookNotedApp',
   'configUIApp',
   'f2fApp',
   'tflApp',
+  'lfilApp',
   'preCourseApp',
+  'beginnerCourseApp',
+  /*
   'sampleSpeakingApp',
   'collinsLApp',
   'completeLApp','completeRApp',
   'bridgeRApp','bridgeLApp',
   'barron600RApp','barron600LApp',
+  */
   'grammerApp','lptdApp',
   'wordCollectApp','words4000App', 
   'modalApp', 'audioApp', 'audioLoopRadioApp',
@@ -59,6 +64,7 @@ app.config(function($routeProvider) {
 		.when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
     .when('/f2f', {templateUrl: 'ebooks/f2f/f2f.html', controller: 'f2fCtrl'})
     .when('/tfl', {templateUrl: 'ebooks/tfl/tfl.html', controller: 'tflCtrl'})
+    .when('/lfil', {templateUrl: 'ebooks/lfil/lfil.html', controller: 'lfilCtrl'})
 		.when('/book4k', {templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'})
 		//    .when('/lptd', {
 		.when('/', {templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'})
@@ -71,7 +77,8 @@ app.config(function($routeProvider) {
 		.when('/barron600R', {templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'})
 		.when('/barron600L', {templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'})
 		.when('/sampleSpeaking', {templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'})
-		.when('/preCourse', {templateUrl: 'ebooks/englab/preCourse/preCourse.html', controller: 'preCourseCtrl'})
+    .when('/preCourse', {templateUrl: 'ebooks/englab/preCourse/preCourse.html', controller: 'preCourseCtrl'})
+		.when('/beginnerCourse', {templateUrl: 'ebooks/englab/beginnerCourse/beginnerCourse.html', controller: 'beginnerCourseCtrl'})
 		.otherwise({redirectTo: '/'
       });
  }); // route

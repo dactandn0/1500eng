@@ -84,7 +84,6 @@ appropriate thích hợp<br>\
 avoid tránh<br>\
 behave hành xử<br>\
 concern (v) /kənˈsɜːrn/ quan tâm<br>\
-content nội dung<br>\
 expect (v) /ɪkˈspekt/ mong đợi<br>\
 frequently thường xuyên<br>\
 habit thói quen<br>\
@@ -99,7 +98,6 @@ spread (v) /spred/ lan truyền<br>\
 stroll (n,v) đi dạo<br>\
 aware (a) /əˈwer/ nhận thức<br>\
 awareness (n) /əˈwernəs/ nhận thức<br>\
-little (a,adv) /ˈlɪtl/ chút ít (less)<br>\
 badly (adv) tệ, bậy bạ<br>\
 socialize (v) /ˈsəʊʃəlaɪz/ giao lưu (+ with)<br>\
 belong thuộc về<br>\
@@ -340,7 +338,6 @@ pound pound<br>\
 process quy trình<br>\
 publish xuất bản<br>\
 theater sân khấu<br>\
-wealthy (a) /'welθi/ giàu có<br>\
 wealth (n) /welθ/ sự giàu có<br>\
 appreciate đánh giá cao<br>\
 available có sẵn<br>\
@@ -573,7 +570,6 @@ advertise (v) /ˈædvərtaɪz/ quảng cáo<br>\
 assign (v) /əˈsaɪn/ giao<br>\
 audience (n) /ˈɔːdiəns/ khán giả<br>\
 breakfast bữa sáng<br>\
-fast (a,adv) nhanh<br>\
 hardly (adv) hầu(gần) như không<br>\
 hard (a,adv) chăm chỉ, khó tánh<br>\
 free (a,adv) miễn phí, rãnh<br>\
@@ -595,7 +591,6 @@ prefer ưa thích<br>\
 president chủ tịch<br>\
 progress tiến triển<br>\
 respect tôn trọng<br>\
-rich giàu<br>\
 skill kỹ năng<br>\
 somehow bằng cách nào đó<br>\
 strength sức mạnh<br>\
@@ -631,7 +626,6 @@ load,lung tải,phổi<br>\
 motion chuyển động<br>\
 pace nhịp<br>\
 possess sở hữu<br>\
-rapidly nhanh chóng<br>\
 remark nhận xét<br>\
 seek tìm kiếm<br>\
 shine tỏa sáng<br>\
@@ -789,7 +783,6 @@ slave nô lệ<br>\
 struggle đấu tranh<br>\
 council hội đồng<br>\
 declare tuyên bố<br>\
-enormous to lớn<br>\
 extraordinary phi thường<br>\
 fog sương mù<br>\
 funeral tang<br>\
@@ -853,7 +846,6 @@ pride tự hào<br>\
 proof bằng chứng<br>\
 quit bỏ cuộc<br>\
 spin quay<br>\
-tiny nhỏ<br>\
 tutor apparent gia sư rõ ràng<br>\
 blind mù<br>\
 calculate tính toán<br>\

@@ -229,7 +229,6 @@ Soulmate (n) /ˈsəʊl.meɪt/ Tri kỷ<br>\
 Comradeship (n) /ˈkɒm.reɪd.ʃɪp/ Tình bạn, tình đồng chí<br>\
 Partner (n) /ˈpɑːt.nər/ Cộng sự<br>\
 Associate (n) /əˈsəʊ.si.eɪt/ Bạn đồng liêu, đồng minh<br>\
-Buddy (n) /ˈbʌd.i/ Bạn thân<br>\
 Ally (n) /ˈæl.aɪ/ Đồng minh<br>\
 Companion (n) /kəmˈpæn.jən/ Bạn đồng hành<br>\
 Pal (n) /pæl/ Bạn (từ lóng)<br>\
@@ -375,7 +374,6 @@ fantastic (a) /fænˈtæstɪk/ tuyệt vời<br>\
 mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
 wonderful (a) /ˈwʌndərfl/ tuyệt vời, phi thường<br>\
 magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
-stunning (a) /ˈstʌnɪŋ/ kinh ngạc, tuyệt vời<br>\
 breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt<br>\
 Sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
 Extinction (n) /Ik'stinkfn/ sự tuyệt chủng<br>\
@@ -960,7 +958,6 @@ rude (a) /ru:d/ thô lỗ<br>\
 discreet (a) /dis'kri:t/ kín đáo<br>\
 crazy (a) /'kreizi/ khùng<br>\
 cheeky (a) /'tfi:ki/ trơ tráo<br>\
-cheerful (a) /'tfiǝful/ vui tươi<br>\
 energetic (a) / Ena'd3etik/ đầy năng lượng<br>\
 tidy /'taidi/ gọn gàng<br>\
 untidy (a) /Ʌn'tardi/ luộm thuộm<br>\
@@ -998,7 +995,6 @@ impolite (a) / Impalart/ bất lịch sự <br>\
 disobedient (a) /dɪsəˈbiːdiənt/ không vâng lời<br>\
 straightforward (a) /strert'f:wad/ thẳng thắn<br>\
 selfish (a) /'sεlfif/ ích kỷ<br>\
-stupid /'stju:pid/ đần độn<br>\
 loving /ˈlʌvɪŋ/ đáng yêu<br>\
 reliable (n) /ri'laiǝbl/ đáng tin cậy <br>\
 scared /skeǝd/ sợ hãi<br>\
@@ -1011,7 +1007,6 @@ enthusiast (n) /ɪnˈθuːziæst/ người đam mê, nhiệt tâm<br>\
 dull /dɅl/ đần độn<br>\
 faithful /'fereful/ chung thủy <br>\
 kind /kaind/ tốt bụng<br>\
-attractive (a) /əˈtræktɪv/ hấp dẫn<br>\
 courageous /kǝ'reidzǝs/ can đảm<br>\
 loyal /'bial/ trung thành<br>\
 imperative (a) /ɪmˈperətɪv/ bắt buộc<br>\
@@ -1025,7 +1020,7 @@ imaginative /'mædginativ/ giàu trí tưởng tượng<br>\
 plucky /'plɅki/ dũng cảm<br>\
 easy-going /'i:zi gǝvin/ dễ dãi<br>\
 careless /'keǝlis/ cẩu thả<br>\
-messy /'mεsi/ bừa bộn<br>\
+messy (a) /'mεsi/ bừa bộn<br>\
 hard-working /'ha:d w3:kin/ chăm chỉ<br>\
 polite /pǝ'lart/ lịch sự<br>\
 creative /kri(:)'eitiv/ sáng tạo<br>\
@@ -1062,10 +1057,8 @@ Grateful (a) /ˈɡreɪtfl/ Biết ơn<br>\
 Scared (a) /skeəd/ - /skerd/ Sợ hãi<br>\
 Embarrassed (a) /ɪmˈbærəst/ Bối rối, xấu hổ<br>\
 Confused (a) /kənˈfjuːzd/ Lúng túng, bối rối<br>\
-Sad (a) /sæd/ Buồn rầu<br>\
 Hungry (a) /ˈhʌŋɡri/ Đói bụng<br>\
 Full (a) /fʊl/ No<br>\
-Happy (a) /ˈhæpi/ Vui, hạnh phúc<br>\
 Jealous (a) /ˈdʒeləs/ Ghen, ghen tuông<br>\
 Nervous (a) /ˈnɜːvəs/ Bồn chồn, lo lắng<br>\
 Thirsty (a) /ˈθɜːrsti/ Khát nước<br>\
@@ -1840,7 +1833,6 @@ Recipient (n) rɪˈsɪpiənt/ Người nhận<br>\
 Secure (a) /sɪˈkjʊr/ (cảm giác) yên tâm, an toàn<br>\
 Service (n) /ˈsɜːrvɪs/ Dịch vụ<br>\
 Spacious (a) /ˈspeɪʃəs/ Rộng rãi<br>\
-Speedy (a) /ˈspiːdi/ Nhanh chóng<br>\
 Staff (n) /stæf/ Nhân viên<br>\
 Subscribe (v) /səbˈskraɪb/ Đặt mua<br>\
 Surface mail (n) /ˈsɜːrfɪs meɪl/ Thư gửi bằng đường bộ <br>\
@@ -1961,7 +1953,7 @@ Condominium (n) chung cư<br>\
 Semi-detached house (n) bán biệt lập<br>\
 Villa (n) /ˈvɪlə/<br>\
 Apartment (n) /əˈpɑːrtmənt/ Căn hộ<br>\
-Flat (a) phẳng, n. căn hộ<br>\
+Flat (a) phẳng, n. căn hộ, lốp xe xẹp<br>\
 Convenient (a) /kənˈviːniənt/ thuận tiện,<br>\
 Natural light (n) Ánh sáng tự nhiên"
 }

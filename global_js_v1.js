@@ -288,7 +288,7 @@ Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, reset)
 	scope.storyIdx = idx;
 	scope.story = scope.stories[idx];
 
-	rootScope.audioSrc = scope.createAudioSrc();
+	if (scope.createAudioSrc) rootScope.audioSrc = scope.createAudioSrc();
 
 	// save DB
 	Helper_saveDB(keySaveDb, idx);

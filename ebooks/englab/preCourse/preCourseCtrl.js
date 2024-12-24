@@ -2,13 +2,9 @@
 document.write('<script src="./ebooks/englab/preCourse/englab_pre_slides.js" type="text/javascript"></script>');
 
 var app = angular.module("preCourseApp", []);
-app.controller("preCourseCtrl", function($scope, $timeout) {
+app.controller("preCourseCtrl", function($scope, $rootScope, $timeout) {
 
-
-var kSTORIES = ENGLAB_PRE_SLIDES;
-
-$scope.story = '';
-$scope.bShowVi = 0;
+$scope.stories = ENGLAB_PRE_SLIDES;
 $scope.acc = -1;
 
 $scope.acc_isShow = function (id) {
@@ -19,13 +15,12 @@ $scope.acc_click = function (id) {
 	if($scope.acc===id) $scope.acc=-1;
 	else {
 		$scope.acc = id;
-		$scope.story = processStory(kSTORIES[id], false);
+		Helper_FetchStory(id, $scope, $rootScope, 'englabPre_unit', false) 
 	}
-	Helper_saveDB("englabPre_unit", id)
 };
 
 $scope.storyTitles = function () {
-	return showStoryTitles(kSTORIES)
+	return showStoryTitles(ENGLAB_PRE_SLIDES)
 }
 
 $scope.loadData = function () {

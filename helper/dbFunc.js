@@ -1,5 +1,6 @@
 
 Helper_saveDB = function(key, val = 0) {
+	if (!key || key.trim().length===0) return
 	localStorage.setItem(key, val);
 }
 

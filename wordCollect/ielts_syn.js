@@ -4,11 +4,47 @@ const SynonymData = [
 	words:"important /ɪmˈpɔːrtnt/|crucial /ˈkruːʃl/|significant /sɪɡˈnɪfɪkənt/",
 	type:"a",
 	mean:"quan trọng"
+},{
+	words:"good|great",
+	type:"a",
+	mean:"tốt, tuyệt"
+},
+{
+	words:"overweight|obese",
+	type:"a",
+	mean:"béo phì"
+},{
+	words:"raw|uncooked",
+	type:"a",
+	mean:"thô, chưa chế biến"
+},
+{
+	words:"recommend|suggest /səɡˈdʒest/",
+	type:"v",
+	mean:"gợi ý, đề xuất"
+},
+{
+	words:"principal|headmaster",
+	type:"n",
+	mean:"hiệu trưởng"
+},{
+	words:"publicity|advertistments",
+	type:"n",
+	mean:"quảng cáo"
+},
+{
+	words:"expert|specialist",
+	type:"n",
+	mean:"nhà chuyên gia (môn)"
+},{
+	words:"portion|serving",
+	type:"n",
+	mean:"phần, khẩu phần"
 },
 {
 	words:"common /ˈkɑːmən/|universal /juːnɪˈvɜːrsl/|ubiquitous /juːˈbɪkwɪtəs/",
 	type:"a",
-	mean:"phổ biến"
+	mean:"phổ biến, toàn thể"
 },
 {
 	words:"abundant /əˈbʌndənt/|ample /ˈæmpl/|plentiful /ˈplentɪfl/",

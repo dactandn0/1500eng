@@ -1214,11 +1214,13 @@ Lunch (n) /lʌntʃ/ Bữa ăn trưa<br>\
 Mint (n) /mɪnt/ Bạc hà<br>\
 Vanilla (n) /vəˈnɪl.ə/ Vani<br>\
 Candy (n) /ˈkæn.di/ Kẹo<br>\
+tuck shop (n) cửa hàng bán đồ ăn vặt<br>\
+food kiosk (n) ki-ốt bán đồ ăn<br>\
 Popcorn (n) /ˈpɒp.kɔːrn/ Bỏng ngô<br>\
 Snack (n) /snæk/ Bữa ăn nhẹ<br>\
 Barbecue (n) /ˈbɑːr.bɪ.kjuː/ Tiệc nướng ngoài trời [BBQ]<br>\
 Fast food (n) /fæst ˈfuːd/ Thức ăn nhanh<br>\
-Junk food (n) /ˈdʒʌŋk fuːd/ Đồ ăn vặt<br>\
+Junk food (n) /ˈdʒʌŋk fuːd/ Đồ ăn vặt, thức ăn nhanh<br>\
 Frozen food (n) /ˈfroʊ.zən fuːd/ Thực phẩm đông lạnh<br>\
 Health food (n) /ˈhɛlθ fuːd/ Thực phẩm tự nhiên<br>\
 Distinctive (a) /dɪˈstɪŋk.tɪv/ Đặc trưng, khác biệt<br>\
@@ -1303,7 +1305,7 @@ Wine (n) /waɪn/ Rượu vang<br>\
 Combo (n) /ˈkɒm.boʊ/ Gói, bộ<br>\
 Side dish (n) /saɪd dɪʃ/ Đồ ăn kèm<br>\
 Meal (n) /miːl/ Bữa ăn<br>\
-Order (v) /ˈɔːr.dər/ Gọi món<br>\
+Order (v) /ˈɔːr.dər/ Gọi món, thu xếp, ban hành<br>\
 Speciality (n) /speʃ.iˈæl.ə.ti/ Đặc sản<br>\
 Dessert (n) /dɪˈzɜːrt/ Món tráng miệng<br>\
 Salad (n) /ˈsæl.əd/ Rau trộn<br>\
@@ -1343,7 +1345,6 @@ Calculator (n) /ˈkæl.kjʊ.leɪ.tər/ Máy tính cầm tay<br>\
 High school (n) /haɪ skuːl/ Trường trung học phổ thông<br>\
 Vocational school (n) /voʊˈkeɪ.ʃən.əl skuːl/ Trường dạy nghề<br>\
 College (n) /ˈkɒl.ɪdʒ/ Trường đại học, cao đẳng<br>\
-Principal (n) /ˈprɪn.sɪ.pəl/ Hiệu trưởng<br>\
 Blackboard (n) /ˈblæk.bɔːd/ Bảng đen<br>\
 History (n) /ˈhɪs.tər.i/ Môn lịch sử<br>\
 Economics (n) /iː.kəˈnɒm.ɪks/ Kinh tế học<br>\
@@ -1370,7 +1371,7 @@ Temperature (n) /ˈtɛm.prə.tʃər/ Nhiệt độ<br>\
 Weather forecast (n) /ˈwɛð.ər ˈfɔːr.kæst/ Bản tin dự báo thời tiết<br>\
 Sunny (n) /ˈsʌn.i/ Có nắng<br>\
 Sunshine (n) /ˈsʌn.ʃaɪn/ Ánh nắng mặt trời<br>\
-Icy (n) /ˈaɪ.si/ Lạnh lẽo<br>\
+Icy (a) /ˈaɪ.si/ Lạnh lẽo<br>\
 Dry (a) /draɪ/ Khô<br>\
 Cloud (n) /klaʊd/ Đám mây<br>\
 Fog (n) /fɔːɡ/ Sương mù<br>\
@@ -1791,7 +1792,6 @@ Body (n) /ˈbɒdi/ Cơ thể<br>\
 Thin (a) /θɪn/ Gầy, ốm<br>\
 Dietary (a) /ˈdaɪətɛri/ (thuộc) chế độ ăn uống<br>\
 Fat (a) /fæt/ Mập<br>\
-Overweight (a) /oʊvərˈweɪt/ Béo, thừa cân<br>\
 Eating disorder (n) /ˈiːtɪŋ dɪsˈɔːrdər/ Rối loạn ăn uống<br>\
 Nutrient (n) /ˈnuːtriənt/ Chất dinh dưỡng<br>\
 Ingredient (n) /ɪnˈɡriːdiənt/ Thành phần, nguyên liệu<br>\

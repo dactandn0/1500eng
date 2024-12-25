@@ -20,6 +20,7 @@ versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
+solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 square (n,a) /skwer/ quảng trường (a) vuông<br>\
@@ -371,7 +372,6 @@ offer cung cấp<br>\
 product sản phẩm<br>\
 property tài sản<br>\
 purchase (n,v) /ˈpɜːrtʃəs/ việc mua, mua<br>\
-recommend khuyến nghị<br>\
 select lựa chọn<br>\
 tool công cụ<br>\
 treat điều trị<br>\
@@ -531,7 +531,6 @@ ride đi xe<br>\
 situated ở vị trí<br>\
 society xã hội<br>\
 standard tiêu chuẩn<br>\
-suggest (v) /səɡˈdʒest/ gợi ý<br>\
 percent (a,adv) /pər ˈsent/ %<br>\
 actually thực sự<br>\
 bite cắn<br>\
@@ -857,7 +856,6 @@ exhaust khí thải<br>\
 greenhouse,ignore nhà kính,bỏ qua<br>\
 obvious rõ ràng<br>\
 physics vật lý<br>\
-portion phần<br>\
 remind nhắc nhở<br>\
 secretary thư ký<br>\
 severe nghiêm trọng<br>\

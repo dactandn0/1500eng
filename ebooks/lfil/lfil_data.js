@@ -46,8 +46,8 @@ Irene: Bạn có thể cho tôi biết ba bản nhạc bạn sẽ chơi không? 
 John: Vâng... Từ Danh sách A... Tôi sẽ chơi bản nhạc đầu tiên... của Bach. Từ Danh sách B... Tôi sẽ chơi Glazunov... đó là số 13.... Và từ Danh sách C... Tôi sẽ chơi số 6... đó là tác phẩm của Minsky.<br>\
 Irene: Vậy là... Danh sách A, số 1... Danh sách B, số năm... xin lỗi... số 13, và từ Danh sách C... số 6.<br>\
 John: Đúng vậy.<br>\
-Irene: Và John, tôi cho rằng bạn biết bạn sẽ được yêu cầu chơi năm gam trong danh sách 14 gam...<br>\
-John: Vâng, tôi phải chơi năm gam.<br>\
+Irene: Và John, tôi cho rằng bạn biết bạn sẽ được yêu cầu chơi 5 thang âm trong danh sách 14 thang âm...<br>\
+John: Vâng, tôi phải chơi năm thang.<br>\
 Irene: Chúc may mắn. Tôi sẽ ở bàn làm việc vào thứ Bảy, vậy chúng ta gặp lại nhau lúc đó.<br>\
 John: Cảm ơn bạn rất nhiều. Tạm biệt.<br>\
 Irene: Tạm biệt."

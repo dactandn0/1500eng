@@ -105,6 +105,26 @@ Gia sư: Nếu em vượt qua Lớp 7, em có thể tiếp tục làm bài kiể
 John: Vâng, đó là mục tiêu của tôi. Cảm ơn cô Richardson. Tạm biệt nhé.<br>\
 Gia sư: Tạm biệt, John, và chúc em may mắn!"
 	,voca:"",
+},{
+	track:"02.ex07",
+	en:"a. great<br>\
+b. headmaster<br>\
+c. more<br>\
+d. sleepy<br>\
+e. publicity <br>\
+j. physical education<br>\
+f. obese<br>\
+g. to select<br>\
+h. food kiosk<br>\
+i. junk food <br>\
+k. wholesome<br>\
+l. encourage<br>\
+m. to recommend<br>\
+n. raw<br>\
+o. expert<br>\
+p. portion"
+	,vi:""
+	,voca:"",
 }
 
 

@@ -13,6 +13,7 @@ although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
+prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 moment (n) khoảnh khắc<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\

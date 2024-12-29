@@ -1,0 +1,27 @@
+<div ng-include="'./includes/showVi.html'" ></div>
+
+<h4 class="mb-4">Ielt Writing Preview Vol5</h4>
+<hr>
+
+<div ng-repeat="fTitle in titles track by $index" class="mb-2" >
+  <h6 class="accordion">
+    <a href 
+    	ng-click="acc_click($index)">
+    		{{$index+1}}. {{fTitle}}
+	</a>
+  </h6>
+  <div class="accordion-content" ng-if="acc_isShow($index)">
+  	<img src="{{img_root}}/{{story.image}}" class="img-fluid mb-2" ng-if="story.image">
+	<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
+	<p compile="story.viShow" ng-if="$root.bShowVi"></p>
+
+	<hr ng-if="story.note.split('|').length">	
+	<div class="px-2 mb-1" ng-if="story.note.length">
+	<p class="mb-1" ng-repeat="sen in story.note.split('|') track by $index">
+		{{sen}}
+	</p>
+	</div>
+
+  </div>
+</div> <!-- repeat -->
+

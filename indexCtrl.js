@@ -45,6 +45,7 @@ var app = angular.module("myApp", [
   'preCourseApp',
   'beginnerCourseApp',
   'collinsLApp',
+  'writingvol5App',
   /*
   'sampleSpeakingApp',
   'completeLApp','completeRApp',
@@ -66,7 +67,8 @@ app.config(function($routeProvider) {
     .when('/f2f', {templateUrl: 'ebooks/f2f/f2f.html', controller: 'f2fCtrl'})
     .when('/tfl', {templateUrl: 'ebooks/tfl/tfl.html', controller: 'tflCtrl'})
     .when('/lfil', {templateUrl: 'ebooks/lfil/lfil.html', controller: 'lfilCtrl'})
-		.when('/book4k', {templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'})
+    .when('/book4k', {templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'})
+		.when('/writingvol5', {templateUrl: 'ebooks/writingvol5/writingvol5.html', controller: 'writingvol5Ctrl'})
 		//    .when('/lptd', {
 		.when('/', {templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'})
 		.when('/grammer', {templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'})

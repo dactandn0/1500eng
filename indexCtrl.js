@@ -8,8 +8,8 @@ var VocaForSearch = VocaToUI
     .concat(PHRASAL_VERB)
     .concat(BAT_QUI_TAC)
     .concat(IELTS_SYN)
-    .concat(GRAMMER_DATA)
-    .concat(NATIONS)
+    // .concat(GRAMMER_DATA)
+    // .concat(NATIONS)
 
 // for notedEbookCtrl
 var kAllStories = lptd_cd1_stories
@@ -44,14 +44,15 @@ var app = angular.module("myApp", [
   'lfilApp',
   'preCourseApp',
   'beginnerCourseApp',
+  'collinsLApp',
   /*
   'sampleSpeakingApp',
-  'collinsLApp',
   'completeLApp','completeRApp',
   'bridgeRApp','bridgeLApp',
   'barron600RApp','barron600LApp',
+  'grammerApp',
   */
-  'grammerApp','lptdApp',
+  'lptdApp',
   'wordCollectApp','words4000App', 
   'modalApp', 'audioApp', 'audioLoopRadioApp',
   'ngSanitize','ngRoute','toastr'

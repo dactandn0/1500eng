@@ -45,12 +45,12 @@ adventure phiêu lưu<br>\
 approach tiếp cận<br>\
 carefully cẩn thận<br>\
 chemical hóa học<br>\
-evil ác<br>\
+evil (a) /ˈiːvl/ ác<br>\
 obesity (n) /əʊˈbiːsəti/ béo phì<br>\
 experiment (n) /ɪkˈsperɪmənt/ thí nghiệm<br>\
 kill giết<br>\
 laboratory phòng thí nghiệm<br>\
-laugh cười<br>\
+laugh (v) /læf/ cười<br>\
 loud lớn<br>\
 noise (n) tiếng ồn<br>\
 better (adj) ss>(good, well)<br>\
@@ -66,7 +66,7 @@ terrible (a) khủng khiếp<br>\
 worse tệ hơn<br>\
 alien (n) /ˈeɪliən/ người ngoài HT<br>\
 among (prep) trong<br>\
-chart biểu đồ<br>\
+chart (n) /tʃɑːrt/ biểu đồ<br>\
 comprehend hiểu<br>\
 describe (v) /dɪˈskraɪb/ mô tả<br>\
 ever bao giờ<br>\
@@ -77,19 +77,22 @@ library thư viện<br>\
 planet hành tinh<br>\
 report (v) /rɪˈpɔːrt/ báo cáo<br>\
 several nhiều<br>\
-solve giải quyết<br>\
-suddenly đột nhiên<br>\
-suppose giả sử<br>\
+resolve (v) /rɪˈzɑːlv/ giải quyết<br>\
+solve (v) /sɑːlv/ giải quyết<br>\
+suddenly (adv) /ˈsʌdənli/ đột nhiên<br>\
+suppose (v) /səˈpəʊz/ giả sử<br>\
 universe vũ trụ<br>\
+reason (n,v) lý do, v. suy đoán<br>\
 appropriate thích hợp<br>\
 avoid tránh<br>\
 behave hành xử<br>\
 concern (v) /kənˈsɜːrn/ quan tâm<br>\
 expect (v) /ɪkˈspekt/ mong đợi<br>\
+particularly (adv) /pərˈtɪkjələrli/ cụ thể<br>\
 frequently thường xuyên<br>\
 habit thói quen<br>\
-instruct hướng dẫn<br>\
-issue vấn đề<br>\
+instruct (v) /ɪnˈstrʌkt/ hướng dẫn<br>\
+issue (n) /ˈɪʃuː/ vấn đề<br>\
 none không có<br>\
 positive tích cực<br>\
 punish trừng phạt<br>\

@@ -12,6 +12,7 @@ const BAT_QUI_TAC_DATA = [
 	'take|took|taken|cầm, lấy',
 	'wear|wore|worn|mặc',
 	'leave|left|left|đặt, để',
+	'put|put|put|đặt, để',
 ]
 
 const PHRASAL_VERB_DATA = [
@@ -23,6 +24,7 @@ const PHRASAL_VERB_DATA = [
 	{word: 'look', prep: 'up to',  mean: 'ngưỡng mộ'},
 	{word: 'get', prep: 'on',  mean: 'thòa thuận với'},
 	{word: 'fall', prep: 'out',  mean: 'cãi nhau'},
+	{word: 'put', prep: 'aside',  mean: 'bỏ qua'},
 ]
 
 function progress() {

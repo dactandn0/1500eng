@@ -45,10 +45,10 @@ $scope.fetchStory = function (idx, reset=true)
 $scope.loadData = function () {
 	$scope.storyIdx = Helper_loadInt('tfl_unit', 0);
 	
-	var cd = Helper_loadInt('tfl_b', 1);
-	bookChange(cd);
-	document.tfl_bForm.book.value = cd;
-	KBook=cd;
+	var bookData = Helper_loadInt('tfl_b', 1);
+	bookChange(bookData);
+	document.tfl_bForm.book.value = bookData;
+	KBook=bookData;
 
 	$scope.fetchStory($scope.storyIdx, false);
 };

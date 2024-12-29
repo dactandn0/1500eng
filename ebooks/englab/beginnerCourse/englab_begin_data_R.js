@@ -1,5 +1,5 @@
 
-const ENGLAB_BEGIN_DATA = [
+const ENGLAB_BEGIN_DATA_R = [
 {
 	title:"[R]Basic Reading P.11",
 	en:"The main elements required for survival are food, fire, shelter and water. Their order of importance will depend upon where you happen to be. In the desert water will head the list; in polar regions shelter and fire will be the main concerns. Ordering your priorities is the first step to survival.<br>\

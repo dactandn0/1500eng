@@ -5,14 +5,14 @@
 
 const ENGLAB_BEGIN_DATA_W = [
 {
-	examType:"0",
-	en:"Việc tập luyện thể thao đầy đặn là quan trọng để có một cơ thể khỏe mạnh và thúc đẩy tuổi thọ."
-	,vi:"Regular exercise is instrumental in a healthy body and promotes longevity."
+	examType:0
+	,title:"Việc tập luyện thể thao đầy đặn là quan trọng để có một cơ thể khỏe mạnh và thúc đẩy tuổi thọ."
+	,en:"Regular exercise is instrumental in a healthy body and promotes longevity."
 	,voca:"",
 },{
-	examType:"0",
-	en:"Sức khỏe là tài sản quí giá của con người và mọi người cần phải bảo vệ nó bằng mọi giá."
-	,vi:"Health is a precious human asset and everyone needs to protect it at all costs."
+	examType:0
+	,title:"Sức khỏe là tài sản quí giá của con người và mọi người cần phải bảo vệ nó bằng mọi giá."
+	,en:"Health is a precious human asset and everyone needs to protect it at all costs."
 	,voca:"",
 },
 {
@@ -25,7 +25,7 @@ const ENGLAB_BEGIN_DATA_W = [
 },{
 	examType:0
 	,title:"Lối sống ít vận động và chế độ ăn không tốt là nguyên nhân chính gây việc gia tăng béo phì ở trẻ em."
-	,en:"A sedentary lifestyle and unbalanced dite are main causes of increasing obesity in children."
+	,en:"A sedentary lifestyle and unbalanced diet are main causes of increasing obesity in children."
 	,vi:""
 	,voca:"A sedentary lifestyle"
 },{
@@ -43,26 +43,26 @@ const ENGLAB_BEGIN_DATA_W = [
 	,note:"THE + N + of + N (luôn có THE)"
 },
 {
-	examType:"0",
-	en:"Văn hóa là nét đặc trưng của một quốc gia, nó phản ánh những giá trị và truyền thống lâu đời của dân tộc."
-	,vi:"Culture is a characteristic of a country, reflecting values and long-standing traditions of a nation."
+	examType:0,
+	title:"Văn hóa là nét đặc trưng của một quốc gia, nó phản ánh những giá trị và truyền thống lâu đời của dân tộc."
+	,en:"Culture is a characteristic of a country, reflecting values and long-standing traditions of a nation."
 	,voca:""
 	,note:"S+V + [AND/BUT/OR/WHICH...] + S+V"
 },{
-	examType:"0",
-	en:"Sự đa dạng văn hóa giữa các quốc gia là điều cần được tôn trọng và đánh giá cao để xây dựng một thế giới hòa bình và phát triển."
-	,vi:"Cultural diversity among countries needs to be respected and appreciated to build a peaceful and prosperous world."
+	examType:0,
+	title:"Sự đa dạng văn hóa giữa các quốc gia là điều cần được tôn trọng và đánh giá cao để xây dựng một thế giới hòa bình và phát triển."
+	,en:"Cultural diversity among countries needs to be respected and appreciated to build a peaceful and prosperous world."
 	,voca:"",
 },{
 	examType:"0",
-	en:"Du lịch là hoạt động giúp con người khám phá, tìm hiểu và trải nghiệm những nét đẹp thiên nhiên và văn hóa địa phương."
-	,vi:"Tourism í an activity for people to explore and expericence the beauty of nature and local culture."
+	title:"Du lịch là hoạt động giúp con người khám phá, tìm hiểu và trải nghiệm những nét đẹp thiên nhiên và văn hóa địa phương."
+	,en:"Tourism is an activity for people to explore and expericence the beauty of nature and local culture."
 	,voca:"",
 },
 {
 	examType:"0",
-	en:"Việc đầu tư vào sự theo đuổi về việc học có thể đặt nền móng cho viễn cảnh việc làm tốt hơn và mức sống cao hơn sau này."
-	,vi:"Investment in academic pursuits can be conducive to better occupational prospects and higher living standards later."
+	title:"Việc đầu tư vào sự theo đuổi về việc học có thể đặt nền móng cho viễn cảnh việc làm tốt hơn và mức sống cao hơn sau này."
+	,en:"Investment in academic pursuits can be conducive to better occupational prospects and higher living standards later."
 	,voca:"",
 }
 

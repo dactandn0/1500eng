@@ -41,7 +41,7 @@ $scope.acc_click = function (id) {
 $scope.examTypeCss = function (idx) {
 	if ($scope.ielt_form !== 1) return;
 	var story = ENGLAB_BEGIN_DATA_W[idx]
-	var type = story.examType;
+	var type = Number(story.examType);
 	if (type===0) return {color: 'red'}
 }
 

@@ -20,6 +20,8 @@
   <div class="accordion-content" ng-if="acc_isShow($index)">
 	<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
 	<p compile="story.viShow" ng-if="$root.bShowVi"></p>
+	
+	<div ng-include="'./includes/true_f_notG.html'" ></div>
 
 	<hr ng-if="story.note.split('|').length">	
 	<div class="px-2 mb-1" ng-if="story.note.length">

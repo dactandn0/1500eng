@@ -106,6 +106,39 @@ Các quốc gia công nghiệp đều trải qua thời kỳ tăng trưởng nha
 <br>\
 Các quốc gia công nghiệp đang bắt đầu tìm cách sản xuất hàng hóa mà không gây ô nhiễm, một trong những tác hại của tình trạng quá tải dân số. Các nước đang phát triển cũng sẽ sử dụng những phương pháp như vậy nếu họ muốn chăm sóc người dân của mình. Giáo dục trẻ em ở khắp mọi nơi đều tốn kém, nhưng chi phí này là xứng đáng vì trẻ em sẽ đóng góp vào sự phát triển của đất nước khi chúng lớn lên. Có lẽ những đứa trẻ hiện đang đi học sẽ phát minh ra những cách giúp mọi người sống hòa bình với trái đất."
 	,voca:"",
+},{
+	title:"[R]Basic Reading P.45 - Out of the Wild, into Our Homes",
+	en:"Many of the earth's creatures die because of choices humans make. These choices have nothing to do with food or shelter or anything else that helps humans survive. What kills these millions of animals from all over the world is human greed - the desire for money.<br>\
+<br>\
+People use parts of animals for everything from hats to handbags, from ornamental jew- ellery and ashtrays to powders that supposedly improve a person's life. Declaring a species endangered and protecting it by laws is not always enough. Poachers, people who kill wildlife illegally, rarely get caught.<br>\
+During the late 1980s, saving elephants became a popular cause. Wildlife protection groups made sure everyone saw pictures or films of elephants with their faces sawed off for their ivory tusks. These groups also proved that certain populations of elephants were dwindling.<br>\
+<br>\
+As a result, most people stopped buying objects made of ivory. Laws against poaching were strengthened. Many countries made bringing ivory in from other countries illegal. Killing elephants for their ivory became more risky and less profitable.<br>\
+<br>\
+However, concern for a certain species tends to fade after a while. In the late 1970s, people protested against the slaughter of seal pups. Everyone was shocked at the sight of pups being clubbed to death in their icy habitat. The brutality came to a halt. But ten years later, the number of seal pups killed was higher than ever.<br>\
+Other animal protection movements have come and gone, such as saving the whales and protecting dolphins from the tuna fishermen. The whale population appears to have increased for now. And the laws are finally changing in the United States to protect the dol- phins that swim with tuna fish in parts of the Pacific Ocean.<br>\
+<br>\
+In the 2010s, the protests and the publicity will probably turn to some other endangered species. Plenty of them urgently need attention. During this time, will the elephants be forgotten?"
+	,vi:"Nhiều loài sinh vật trên trái đất chết vì những lựa chọn của con người. Những lựa chọn này không liên quan gì đến thức ăn, nơi trú ẩn hay bất cứ thứ gì khác giúp con người sống sót. Thứ giết chết hàng triệu loài động vật này trên khắp thế giới chính là lòng tham của con người - ham muốn tiền bạc.<br>\
+<br>\
+Con người sử dụng các bộ phận của động vật cho mọi thứ, từ mũ đến túi xách, từ đồ trang sức trang trí và gạt tàn đến bột được cho là cải thiện cuộc sống của một người. Việc tuyên bố một loài có nguy cơ tuyệt chủng và bảo vệ chúng bằng luật pháp không phải lúc nào cũng đủ. Những kẻ săn trộm, những kẻ giết động vật hoang dã bất hợp pháp, hiếm khi bị bắt.<br>\
+Vào cuối những năm 1980, việc cứu voi đã trở thành một mục tiêu phổ biến. Các nhóm bảo vệ động vật hoang dã đảm bảo rằng mọi người đều nhìn thấy hình ảnh hoặc phim về những chú voi bị cưa mất khuôn mặt để lấy ngà. Những nhóm này cũng chứng minh rằng một số quần thể voi đang suy giảm.<br>\
+<br>\
+Kết quả là, hầu hết mọi người đã ngừng mua các đồ vật làm từ ngà voi. Luật chống săn trộm đã được tăng cường. Nhiều quốc gia đã đưa việc mang ngà voi từ các quốc gia khác vào là bất hợp pháp. Việc giết voi để lấy ngà trở nên nguy hiểm hơn và ít lợi nhuận hơn.<br>\
+<br>\
+Tuy nhiên, mối quan tâm đối với một số loài nhất định có xu hướng giảm dần sau một thời gian. Vào cuối những năm 1970, mọi người đã phản đối việc giết hải cẩu con. Mọi người đều sốc khi chứng kiến ​​cảnh những chú hải cẩu con bị đánh chết trong môi trường sống băng giá của chúng. Sự tàn bạo đã dừng lại. Nhưng mười năm sau, số lượng hải cẩu con bị giết cao hơn bao giờ hết.<br>\
+Các phong trào bảo vệ động vật khác đã xuất hiện rồi biến mất, chẳng hạn như cứu cá voi và bảo vệ cá heo khỏi những người đánh bắt cá ngừ. Hiện tại, quần thể cá voi dường như đã tăng lên. Và luật pháp cuối cùng cũng đang thay đổi ở Hoa Kỳ để bảo vệ những chú cá heo bơi cùng cá ngừ ở một số vùng của Thái Bình Dương.<br>\
+<br>\
+Vào những năm 2010, các cuộc biểu tình và hoạt động công khai có thể sẽ chuyển sang một số loài có nguy cơ tuyệt chủng khác. Rất nhiều loài trong số chúng cần được quan tâm khẩn cấp. Trong thời gian này, liệu loài voi có bị lãng quên không?"
+	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamentalr"
+	,true_f_notG: "09. Many of the animals on Earth die because humans have to survive.<br>\
+10. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
+11. People who kill animals illegally often get away without being caught.<br>\
+12. Wildlife protection groups proved that the number of some elephant species is decreasing.<br>\
+13. Poachers are severely punished if they kill the endangered species such as elephants. <br>\
+14. In the late 1980s, people killed more seal pups than they did in the late 1970s.<br>\
+15. The whale population is finally increasing because of stricter laws.<br>\
+16. In the 2010s, people may not be so concerned about elephants as before."
 }
 
 

@@ -21,7 +21,7 @@ Khoảng 98% lục địa này bị đóng băng. Phần còn lại được t�
 Có bao nhiêu người sống trên lục địa của bạn? Không ai sống ở Nam Cực. Chỉ có động vật, như chim cánh cụt, sống ở đó. Các nhà khoa học và khách du lịch đến thăm nơi này,\
  nhưng họ không ở lại lâu. Bạn có muốn đến thăm Nam Cực không? Đây là nơi lạnh nhất và khô nhất trên Trái Đất!',
 voca:'Dinosaur,went,south,South Pole,500 million years,Scientist,equator,tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of',
-note:['87% = 87 percent']
+note:'87% = 87 percent'
 },
 {
 	en: 
@@ -94,7 +94,7 @@ Có rất nhiều loài chim để ngắm. Thật thú vị khi đi vào rừng 
 Nhìn thấy những chú chim qua ống nhòm khiến chúng có vẻ gần hơn nhiều so với thực tế. Bạn có thể viết ra tất cả các loài mà bạn nhìn thấy. Trước tiên, bạn nên tìm hiểu về tiếng kêu của chúng. Nghĩa là âm thanh mà mỗi loài chim tạo ra. Đôi khi rất khó để nhìn thấy những chú chim. Tuy nhiên, bạn có thể nhận dạng chúng nếu tình cờ nghe thấy chúng.<br>\
 Tôi muốn quay lại Iran một lần nữa vào một ngày nào đó. Nó đẹp đến nỗi tôi muốn được nhìn thấy và khám phá nhiều hơn nữa!',
 voca:"recommend,desert,happen,species,identify,binoculars,owl,definitely,actually,explore,Middle East,much more of",
-note:['much more of = a lof of']
+note:'much more of = a lof of'
 },
 {
 en:'Unit 5 Jane Goodall<br>\
@@ -523,7 +523,7 @@ B: Cảm ơn mẹ.<br>\
 W: Con đã bao giờ kể cho mẹ nghe về những bài hát con thích ở độ tuổi của mẹ chưa? Mọi người nghe nhạc thực sự vào thời đó.<br>\
 G: Ôi, mẹ! Rap cũng là nhạc thực sự!",
 voca:"promise,headache,volume,scenery,nonsense,suppose,loud,waste,behave",
-note:['promise, oath, vow, pledge, swearword, plight','scenery, scene, view, spectacle']
+note:'promise, oath, vow, pledge, swearword, plight, scenery, scene, view, spectacle'
 },
 {
 	en:"Unit 23 The Report<br>\
@@ -905,7 +905,7 @@ G: Phần tôi thích nhất là đến thăm Hang động Carlsbad. Có 30 dặ
 B: Bạn không sợ sao?<br>\
 G: Không, rất vui! Tôi sẽ đến thăm anh họ tôi lần nữa vào năm sau. Bạn nên đi cùng tôi!",
 voca:"state,cave,tunnel,license,plate,crawl,confused,prisoner,dig,narrow,knee,cousin,southwestern,Texas,Arizona,funny",
-note:['southwestern (adj)']
+note:'southwestern (adj)'
 },
 {
 	en:"Unit 39 A Good Way to Travel<br>\

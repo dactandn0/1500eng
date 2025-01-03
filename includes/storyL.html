@@ -1,13 +1,13 @@
 
-<div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-3"></div>
+<div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-1"></div>
 <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
 
-<div class="card mt-1" ng-init=showText=1>
+<div class="card mt-2" ng-init=showText=1>
 	<div class="card-body">
 	  <div class="card-text my-2">
 	  	
 	  	<h6 class="accordion toggleClick" ng-click="showText=!showText">
-		    <a href>{{story.UI_FullTitle}}</a>
+		    <a href>{{story.fTitle}}</a>
 		 </h6>
 	  	 <div class="accordion-content toggleShow">
 	  		<p compile="story.enShow" ng-if="!$root.bShowVi && showText"></p>

@@ -81,6 +81,7 @@ W: Không có gì!",
 voca: "bush,problem,leaf,liquid,recover,ferilizer,produce,quite,cost,at all"
 },
 {
+title: "Unit 4 Bird Watching",
 en: "Unit 4 Bird Watching<br>\
 B: I want to go bird watching tomorrow. Do you know a good area for birds?<br>\
 G: There is a quiet park near here. There are always many beautiful birds there. <br>\
@@ -153,6 +154,7 @@ G: Không, bạn phải thanh toán trực tuyến bằng thẻ tín dụng.",
 voca:"website,item,button,easy,electronics,hard,faster,credit card"
 },
 {
+title: "Unit 7 Cell Phone Messages",
 en: "Unit 7 Cell Phone Messages<br>\
 W: I need to check my messages.<br>\
 M: How are you going to do that? We are in the middle of the freeway!<br>\

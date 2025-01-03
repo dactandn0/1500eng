@@ -1,28 +1,55 @@
 
 
-<div>
-		<div ng-include="'./includes/showVi.html'" ></div>
-		
-		<span class="btnPlay opa">
-			<button class="btn btn-sm btn-info" ng-click="playFullSound()">{{bPlaying ? 'Stop' : 'Play'}}</button>
-		</span>
+<!-- <div>
+	<div ng-include="'./includes/showVi.html'" ></div>
+	
+	<span class="btnPlay opa">
+		<button class="btn btn-sm btn-info" ng-click="playFullSound()">{{bPlaying ? 'Stop' : 'Play'}}</button>
+	</span>
 
-    	<span ng-show="bPlaying" class="btnSound opa">
-    		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-{{audioAdjTime}}s</button></p>
-    		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+{{audioAdjTime}}s</button></p>
+	<span ng-show="bPlaying" class="btnSound opa">
+		<p><button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button></p>
+		<p><button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-{{audioAdjTime}}s</button></p>
+		<p><button class="btn btn-sm btn-danger" ng-click="backSound(1)">+{{audioAdjTime}}s</button></p>
 
-    		<input 
-				ng-show="bPlaying"
-				type="range" 
-				id="slider"
-				class="form-range"
-				min="0" 
-				max="100" 
-				step="1"
-				value='0'
-				oninput="setAudioTime()"
-			>
-    	</span>
+		<input 
+			ng-show="bPlaying"
+			type="range" 
+			id="slider"
+			class="form-range"
+			min="0" 
+			max="100" 
+			step="1"
+			value='0'
+			oninput="setAudioTime()"
+		>
+	</span>
 </div>
+ -->
 
+	<div ng-include="'./includes/showVi.html'" ></div>
+
+ <div class="text-center">
+	
+	<span class="">
+		<button class="btn btn-sm btn-info" ng-click="playFullSound()">{{bPlaying ? 'Stop' : 'Play'}}</button>
+	</span>
+
+	<span ng-show="bPlaying" class="">
+		<button class="btn btn-sm btn-danger mx-2" ng-click="backSound(-1)">-{{audioAdjTime}}s</button>
+		<button class="btn btn-sm btn-danger" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button>
+		<button class="btn btn-sm btn-danger mx-2" ng-click="backSound(1)">+{{audioAdjTime}}s</button>
+
+		<input 
+			ng-show="bPlaying"
+			type="range" 
+			id="slider"
+			class="form-range"
+			min="0" 
+			max="100" 
+			step="1"
+			value='0'
+			oninput="setAudioTime()"
+		>
+	</span>
+</div>

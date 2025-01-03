@@ -41,7 +41,7 @@ font-size: 1rem ;
 }
 .btnShowVi {
   position: fixed; 
-  bottom: 180px; 
+  top: 300px; 
   right: 10px; 
   z-index: 30; 
 }
@@ -182,7 +182,7 @@ input[type="range"]:focus {
 input[type="range"]::-webkit-slider-runnable-track {
    background-color: #A020F0;
    /*border-radius: 0.25rem;*/
-   height: 0.45rem;  
+   height: 0.25rem;  
 }
 
 /* slider thumb */

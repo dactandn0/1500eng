@@ -4,6 +4,7 @@ var PHRASAL_VERB = [{title:"Phrasal verbs",en:""}];
 var BAT_QUI_TAC = [{title:"Bat qui tac",en:""}];
 
 const BAT_QUI_TAC_DATA = [
+	'carry|carried|carried|mang, vác',
 	'call|called|called|gọi',
 	'get|got|got|lấy',
 	'look|looked|looked|nhìn, trông',
@@ -16,6 +17,7 @@ const BAT_QUI_TAC_DATA = [
 ]
 
 const PHRASAL_VERB_DATA = [
+	{word: 'carry', prep: 'out', mean: 'tiến hành'},
 	{word: 'call', prep: 'for', mean: 'yêu cầu'},
 	{word: 'take', prep: 'off', mean: 'cất cánh, bắt đầu thành công'},
 	{word: 'take', prep: 'over', mean: 'kiểm soát'},

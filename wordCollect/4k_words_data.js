@@ -17,12 +17,15 @@ prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 moment (n) khoảnh khắc<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
+investors  (n) nhà đầu tư<br>\
+investment (n) sự đầu tư<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
+accumulation  (n) sự tích tụ<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 square (n,a) /skwer/ quảng trường (a) vuông<br>\
 declaration (n) /dekləˈreɪʃn/ Tuyên ngôn<br>\
@@ -182,7 +185,7 @@ grab chộp lấy<br>\
 hang treo<br>\
 necessary (a) /ˈnesəseri/ cần thiết<br>\
 pattern mẫu<br>\
-propose đề xuất<br>\
+propose (v) /prəˈpoʊz/ đề xuất, cầu hôn<br>\
 purpose (n) /ˈpɜːrpəs/ mục đích<br>\
 release giải phóng<br>\
 require yêu cầu<br>\
@@ -232,7 +235,7 @@ creature sinh vật<br>\
 decision (n) /dɪˈsɪʒn/ quyết định<br>\
 either hoặc<br>\
 ground mặt đất<br>\
-introduce giới thiệu<br>\
+introduce (v) giới thiệu, đưa ra<br>\
 marry (v) kết hôn<br>\
 prepare chuẩn bị<br>\
 sail (n,v) buồm, lái thuyền<br>\

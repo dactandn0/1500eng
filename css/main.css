@@ -231,3 +231,9 @@ input[type="range"]:focus::-moz-range-thumb {
 .fontSize95 {
   font-size: 95%;
 }
+
+.storyHasNote {
+  color: red;
+  content: 'note';
+  float: right;
+}

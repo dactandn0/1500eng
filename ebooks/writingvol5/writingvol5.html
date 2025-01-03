@@ -3,11 +3,12 @@
 <h4 class="mb-4">Ielt Writing Preview Vol5</h4>
 <hr>
 
-<div ng-repeat="fTitle in titles track by $index" class="mb-2" >
+<div ng-repeat="obj in titles track by $index" class="mb-2" >
   <h6 class="accordion">
-    <a href 
+    <a href
+    	ng-class="obj.storyCss"
     	ng-click="acc_click($index)">
-    		{{$index+1}}. {{fTitle}}
+    		{{$index+1}}. {{obj.title}}
 	</a>
   </h6>
   <div class="accordion-content" ng-if="acc_isShow($index)">

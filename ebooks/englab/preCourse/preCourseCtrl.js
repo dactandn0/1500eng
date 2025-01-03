@@ -6,6 +6,7 @@ app.controller("preCourseCtrl", function($scope, $rootScope, $timeout) {
 
 $scope.stories = ENGLAB_PRE_SLIDES;
 $scope.acc = -1;
+$scope.titles = showStoryTitles(ENGLAB_PRE_SLIDES);  // def
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc === id;
@@ -18,10 +19,6 @@ $scope.acc_click = function (id) {
 		Helper_FetchStory(id, $scope, $rootScope, 'englabPre_unit', false) 
 	}
 };
-
-$scope.storyTitles = function () {
-	return showStoryTitles(ENGLAB_PRE_SLIDES)
-}
 
 $scope.loadData = function () {
 	$scope.acc_click( Helper_loadInt('englabPre_unit', -1));

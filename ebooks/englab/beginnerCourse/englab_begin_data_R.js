@@ -1,7 +1,7 @@
 
 const ENGLAB_BEGIN_DATA_R = [
 {
-	title:"[R]Basic Reading P.11",
+	title:"Basic Reading P.11",
 	en:"The main elements required for survival are food, fire, shelter and water. Their order of importance will depend upon where you happen to be. In the desert water will head the list; in polar regions shelter and fire will be the main concerns. Ordering your priorities is the first step to survival.<br>\
 It takes a healthy person quite a long time to die of starvation, for the body can use up its stored resources, but exposure to wind, rain and cold can be fatal even in mild climates and death comes in only minutes in the icy waters of the poles. Food is rarely the first prior- ity. Even in those places where it is difficult to find, there are usually other problems to face first. Shelter will often be the prime necessity in extremes of climate or temperatures such as in the frozen polar regions or in the baking deserts. The need for fire is closely linked.<br>\
 Water is something that most people in the modern world take for granted. They are so used to turning on a tap that until an extreme drought causes water rationing they seldom think about it. Yet the survivor at sea, or after a flood, though surrounded by water, may be desperate for drinkable water. And there are many places where, unless it rains, no obvious water is available. Although there could be other survival necessities to deal with, water is always universally important."
@@ -10,7 +10,7 @@ Một người khỏe mạnh mất khá nhiều thời gian để chết đói, 
 Nước là thứ mà hầu hết mọi người trong thế giới hiện đại coi là điều hiển nhiên. Họ quá quen với việc mở vòi nước đến nỗi cho đến khi hạn hán nghiêm trọng khiến nước bị hạn chế, họ hiếm khi nghĩ đến điều đó. Tuy nhiên, người sống sót trên biển hoặc sau trận lụt, mặc dù được bao quanh bởi nước, có thể rất cần nước uống. Và có nhiều nơi, trừ khi trời mưa, không có nước rõ ràng. Mặc dù có thể có những nhu cầu sinh tồn khác cần giải quyết, nước luôn luôn quan trọng đối với mọi người."
 	,voca:"survival, survivor,icy,frozen",
 },{
-	title:"[R]Basic Reading P.12 - The Peace Corps",
+	title:"Basic Reading P.12 - The Peace Corps",
 	en:"On March 1, 1961, President John F. Kennedy issued an order creating the Peace Corps. Its mission was to promote world peace and friendship by providing qualified volunteers to interested countries. Today it sends an average of 6,000 US citizens abroad each year.<br>\
 Volunteers live at a local level in their host countries. They are paid in local currency. Each month they receive a small sum of money that covers basic living expenses, and varies with the local economy. ·For example, volunteers in Micronesia make the equivalent of $300 per month, while those in Turkmenistan make $75. Most volunteers live with host families. This is a great chance to learn the language and the culture.<br>\
 For each month that they spend overseas, volunteers receive a sum of about $200. This money helps them to get back on their feet in the United States.<br>\
@@ -22,7 +22,7 @@ Phục vụ các quốc gia trên toàn thế giới, Đoàn Hòa bình thực h
 	,voca:"",
 },
 {
-	title:"[R]Basic Reading P.14 - Solar Collector",
+	title:"Basic Reading P.14 - Solar Collector",
 	en:"Solar collectors absorb heat from the sun's rays. They can be used to effectively heat and cool buildings. The most common type of collector for space heating is a flat plate designed to absorb both radiation falling directly on it, as well as radiation scattered by the atmosphere.<br>\
 Collectors are usually panels of aluminium, copper, or steel. The panels are usually painted black. The black colouring inhibits reflection and encourages absorption. Insula- tion is placed behind the collector to prevent heat loss.<br>\
 The collector is covered with glass or plastic. This layer allows short-wave radiation - or light - to enter the collector. A.5 the radiation passes through the glass or plastic, it is transformed from short-wave radiation to long-wave radiation- or heat. Long-wave radiation cannot pass through the glass or plastic back into the atmosphere. Therefore, the heat is trapped within the collector. Collectors are usually placed at an angle to maximise the amount of radiation falling on them.<br>\
@@ -34,7 +34,7 @@ Một tác nhân truyền (không khí hoặc nước) được lưu thông qua 
 	,voca:"",
 },
 {
-	title:"[R]Basic Reading P.15 - How to Borrow Books",
+	title:"Basic Reading P.15 - How to Borrow Books",
 	en:"Most libraries require you to register before you are allowed to borrow any of their materials. This means you will probably be asked to fill out and sign a registration card. When you do this, you are not only giving the library your name and address for their files, you are also signing an agreement. The agreement says, basically, that you will obey the rules of the library. A parent or guardian is sometimes also required to sign the card.<br>\
 <br>\
 To be entitled to use your school library, you probably must only be enrolled in that school. Once you are registered, you will be issued a library or borrower's card. On this card will be your name and a number. Each time you check out, that is, officially borrow something from the library, you will have to present this card to the librarian.<br>\
@@ -56,7 +56,7 @@ Một số thư viện tính tiền phạt cho mỗi ngày trả sách quá hạ
 	,voca:"",
 },
 {
-	title:"[R]Basic Reading P.16 - The Cancer-Prone Personality",
+	title:"Basic Reading P.16 - The Cancer-Prone Personality",
 	en:"[A] One of the reasons scientists think that there is a link between stress and cancer is the idea that there may be a cancer-prone personality. The cancer-prone personality consists of a set of personality traits that are found more frequently in people who have cancer than in those who do not.<br>\
 <br>\
 [B] What personality traits make up the cancer-prone personality? Most often, people who are polite, unaggressive, and agreeable are said to have this type of personality. They seem to have trouble showing when they are angry. Even in situations in which they should be angry, they appear to be calm and happy.<br>\
@@ -74,7 +74,7 @@ Một số thư viện tính tiền phạt cho mỗi ngày trả sách quá hạ
 	,voca:"",
 },
 {
-	title:"[R]Basic Reading P.18 - Friends of the Earth Trust",
+	title:"Basic Reading P.18 - Friends of the Earth Trust",
 	en:"Friends of the Earth Trust is an educational charity set up to help people of all ages become aware of the threats to our environment. Pollution is just one of these. The destruction of wildlife and wasting our natural resources are others.<br>\
 In Britain, the countryside is disappearing or being destroyed- modern farming, mining, mototways and power stations are all adding to this destruction. By the year 2010, about half the world's animal and plant species could be extinct.<br>\
 Every year a forest the size-ofWales is cut down to make paper for use in Britain. If more people used recycled paper, fewer trees would be cut down, and there would be less waste to dispose of. Another important benefit would be the new jobs created in the collection of waste paper.<br>\
@@ -90,7 +90,7 @@ Các mối đe dọa đối với môi trường của chúng ta đều có liê
 	,voca:"",
 },
 {
-	title:"[R]Basic Reading P.21 - Crowding Human Life",
+	title:"Basic Reading P.21 - Crowding Human Life",
 	en:"In 1950, there were only 2.5 billion people in the world. Now there are 5.3 billion. Human population may reach 8.5 billion by the year 2025. Experts disagree about how serious a problem this very fast growth is. And they disagree about what should be done about it.<br>\
 <br>\
 It could be said that growth is slowing down. Most industrial countries- Japan, Canada, the United States, and the nations of Europe- are hardly growing at all. In Asia, Mrica, and Latin America, growth is somewhat slower than it was twenty years ago.<br>\
@@ -107,7 +107,7 @@ Các quốc gia công nghiệp đều trải qua thời kỳ tăng trưởng nha
 Các quốc gia công nghiệp đang bắt đầu tìm cách sản xuất hàng hóa mà không gây ô nhiễm, một trong những tác hại của tình trạng quá tải dân số. Các nước đang phát triển cũng sẽ sử dụng những phương pháp như vậy nếu họ muốn chăm sóc người dân của mình. Giáo dục trẻ em ở khắp mọi nơi đều tốn kém, nhưng chi phí này là xứng đáng vì trẻ em sẽ đóng góp vào sự phát triển của đất nước khi chúng lớn lên. Có lẽ những đứa trẻ hiện đang đi học sẽ phát minh ra những cách giúp mọi người sống hòa bình với trái đất."
 	,voca:"",
 },{
-	title:"[R]Basic Reading P.45 - Out of the Wild, into Our Homes",
+	title:"Basic Reading P.45 - Out of the Wild, into Our Homes",
 	en:"Many of the earth's creatures die because of choices humans make. These choices have nothing to do with food or shelter or anything else that helps humans survive. What kills these millions of animals from all over the world is human greed - the desire for money.<br>\
 <br>\
 People use parts of animals for everything from hats to handbags, from ornamental jew- ellery and ashtrays to powders that supposedly improve a person's life. Declaring a species endangered and protecting it by laws is not always enough. Poachers, people who kill wildlife illegally, rarely get caught.<br>\
@@ -139,6 +139,7 @@ Vào những năm 2010, các cuộc biểu tình và hoạt động công khai c
 14. In the late 1980s, people killed more seal pups than they did in the late 1970s.<br>\
 15. The whale population is finally increasing because of stricter laws.<br>\
 16. In the 2010s, people may not be so concerned about elephants as before."
+	,note:"have nothing to do = không liên quan"
 }
 
 

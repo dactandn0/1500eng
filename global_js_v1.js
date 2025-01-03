@@ -158,11 +158,22 @@ function ngClickOnWord(word, graph) {
 function showStoryTitles(data) {
 	var r = []
 	for (var k = 0; k < data.length; k++) {
-		var unit = data[k].unit ? ('U' + data[k].unit) : '';
-		var title = data[k].title ? (' - ' + data[k].title ) : '';
-		r.push(unit + title);
+		var obj = data[k]
+		var fTilte = getFullTile(obj)
+		r.push(
+			{ title: fTilte,
+			}
+		);
 	}
-	return r
+	return r;
+}
+
+function getFullTile(obj) {
+	var unit = obj.unit ? ('U' + obj.unit) : '';
+	var track  = (obj.track) ? (' - ' + obj.track) : '';
+	var title  = (obj.title) ? (' - ' + obj.title) : '';
+	var hasNote = (obj.note && obj.note.trim().length > 0) ? ' [note]' : ''
+	return  unit + title + track + hasNote
 }
 
 function processStory (story, isAlert = true) {
@@ -242,13 +253,7 @@ function processStory (story, isAlert = true) {
 		
 	story.viShow = enAndVi
 	story.enShow = enShow
-
-	var UI_FullTitle = ''
-	var deter = ' - '
-	if (story.track || story.idx) UI_FullTitle += (story.track || story.idx)
-	if (story.unit) UI_FullTitle += deter + 'U' + story.unit
-	if (story.title) UI_FullTitle += deter + story.title
-	story.UI_FullTitle = UI_FullTitle
+	story.fTitle = getFullTile(story)
 
 	return story;
 }

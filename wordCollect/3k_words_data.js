@@ -1290,7 +1290,6 @@ Girlfriend (n) /ˈɡɜːl.frɛnd/ Bạn gái<br>\
 Kiss (v) /kɪs/ Hôn<br>\
 Heart (n) /hɑːrt/ Trái tim<br>\
 Hug (v) /hʌɡ/ Ôm<br>\
-Propose (v) /prəˈpoʊz/ Cầu hôn<br>\
 Chocolate (n) /ˈtʃɒk.lɪt/ Sô-cô-la<br>\
 Wedding (n) /ˈwɛd.ɪŋ/ Đám cưới<br>\
 Anniversary (n) /æn.ɪˈvɜː.sər.i/ Ngày kỷ niệm<br>\
@@ -1347,6 +1346,8 @@ Vocational school (n) /voʊˈkeɪ.ʃən.əl skuːl/ Trường dạy nghề<br>\
 College (n) /ˈkɒl.ɪdʒ/ Trường đại học, cao đẳng<br>\
 Blackboard (n) /ˈblæk.bɔːd/ Bảng đen<br>\
 History (n) /ˈhɪs.tər.i/ Môn lịch sử<br>\
+Economic (a) /iː.kəˈnɒm.ɪk/ thuộc kinh tế<br>\
+Economy (n) nền kinh tế <br>\
 Economics (n) /iː.kəˈnɒm.ɪks/ Kinh tế học<br>\
 Chemistry (n) /ˈkɛm.ɪ.stri/ Hóa học<br>\
 Biology (n) /baɪˈɒl.ə.dʒi/ Sinh học<br>\

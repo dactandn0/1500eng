@@ -42,7 +42,7 @@ $scope.examTypeCss = function (idx) {
 	if ($scope.ielt_form !== 1) return;
 	var story = ENGLAB_BEGIN_DATA_W[idx]
 	var type = Number(story.examType);
-	if (type===0) return {color: 'red'}
+	if (type===0) return {color: 'red'}  //vi 2 En
 }
 
 $scope.loadData = function () {

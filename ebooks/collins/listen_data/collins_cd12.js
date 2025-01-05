@@ -241,7 +241,7 @@ Candidate: We have an extreme climate. Our winters are absolutely freezing, and 
 Examiner: What's your favourite kind of weather? <br>\
 Candidate: What I like most is hot, dry weather. I love being able to sit outside on a balmy evening with a drink, rather than cooped up inside like you are in the winter. <br>\
 Examiner: Does the weather influence your mood? <br>\
-Candidate: Yes, it certainly does. It's the rain that influences my mood the most. I hate it when it's raining - it makes me feel so down. Irs hard to go out, without getting soaked to the skin, anyway. And the sky is so dismal and overcast. It's miserable!<br>\
+Candidate: Yes, it certainly does. It's the rain that influences my mood the most. I hate it when it's raining - it makes me feel so down. It's hard to go out, without getting soaked to the skin, anyway. And the sky is so dismal and overcast. It's miserable!<br>\
 Examiner: Is it worse to feel too hot or too cold? <br>\
 Candidate: Well, I suppose if it's too cold you can just wear more layers, but nevertheless I prefer to ,be too hot. At least it means the weather is good, and you can always go for a swim to cool down. What I really can't stand is being cold and wet. That's the worst combination and it makes me worry that I'm going to catch a cold."
 	,vi:"Giám khảo: Hãy kể cho tôi nghe về khí hậu ở đất nước bạn.<br>\

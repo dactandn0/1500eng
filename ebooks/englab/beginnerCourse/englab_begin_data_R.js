@@ -130,7 +130,7 @@ Tuy nhiên, mối quan tâm đối với một số loài nhất định có xu 
 Các phong trào bảo vệ động vật khác đã xuất hiện rồi biến mất, chẳng hạn như cứu cá voi và bảo vệ cá heo khỏi những người đánh bắt cá ngừ. Hiện tại, quần thể cá voi dường như đã tăng lên. Và luật pháp cuối cùng cũng đang thay đổi ở Hoa Kỳ để bảo vệ những chú cá heo bơi cùng cá ngừ ở một số vùng của Thái Bình Dương.<br>\
 <br>\
 Vào những năm 2010, các cuộc biểu tình và hoạt động công khai có thể sẽ chuyển sang một số loài có nguy cơ tuyệt chủng khác. Rất nhiều loài trong số chúng cần được quan tâm khẩn cấp. Trong thời gian này, liệu loài voi có bị lãng quên không?"
-	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamentalr"
+	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamental"
 	,true_f_notG: "09. Many of the animals on Earth die because humans have to survive.<br>\
 10. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
 11. People who kill animals illegally often get away without being caught.<br>\

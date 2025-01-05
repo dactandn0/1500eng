@@ -1345,10 +1345,11 @@ High school (n) /haɪ skuːl/ Trường trung học phổ thông<br>\
 Vocational school (n) /voʊˈkeɪ.ʃən.əl skuːl/ Trường dạy nghề<br>\
 College (n) /ˈkɒl.ɪdʒ/ Trường đại học, cao đẳng<br>\
 Blackboard (n) /ˈblæk.bɔːd/ Bảng đen<br>\
+Physics (n) môn Vật lý<br>\
 History (n) /ˈhɪs.tər.i/ Môn lịch sử<br>\
 Economic (a) /iː.kəˈnɒm.ɪk/ thuộc kinh tế<br>\
 Economy (n) nền kinh tế <br>\
-Economics (n) /iː.kəˈnɒm.ɪks/ Kinh tế học<br>\
+Economics (n) /iː.kəˈnɒm.ɪks/ (môn)Kinh tế học<br>\
 Chemistry (n) /ˈkɛm.ɪ.stri/ Hóa học<br>\
 Biology (n) /baɪˈɒl.ə.dʒi/ Sinh học<br>\
 Geography (n) /dʒɪˈɒɡ.rə.fi/ Địa lý<br>\

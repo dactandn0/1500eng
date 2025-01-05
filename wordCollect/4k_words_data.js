@@ -22,6 +22,7 @@ investment (n) sự đầu tư<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
+peace (n) sự hòa bình<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\

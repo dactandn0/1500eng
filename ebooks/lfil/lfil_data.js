@@ -106,25 +106,33 @@ John: Vâng, đó là mục tiêu của tôi. Cảm ơn cô Richardson. Tạm bi
 Gia sư: Tạm biệt, John, và chúc em may mắn!"
 	,voca:"",
 },{
-	track:"02.ex07",
-	en:"a. great<br>\
-b. headmaster<br>\
-c. more<br>\
-d. sleepy<br>\
-e. publicity <br>\
-j. physical education<br>\
-f. obese<br>\
-g. to select<br>\
-h. food kiosk<br>\
-i. junk food <br>\
-k. wholesome<br>\
-l. encourage<br>\
-m. to recommend<br>\
-n. raw<br>\
-o. expert<br>\
-p. portion"
-	,vi:""
-	,voca:"",
+	track:"01.ex02",
+	en:"practical<br>\
+exam<br>\
+sit an exam<br>\
+surname<br>\
+primary school<br>\
+prefer<br>\
+reception<br>\
+fee<br>\
+assume<br>\
+practice<br>\
+mistake<br>\
+examiner"
+},
+{ track:"01.ex03", en:""},
+{
+	track:"01.ex04",
+	en:"12/twelve <br>\
+16/sixteen <br>\
+30/thirty<br>\
+67/ sixty-seven<br>\
+90/ninety<br>\
+189/ one hundred and eighty-nine<br>\
+1,345/one thousand, three hundred and forty-five <br>\
+7,894/seven thousand, eight hundred and ninety-four <br>\
+520,000/five hundred and twenty thousand<br>\
+1,000,000/ a million"
 },
 {
 	track:"02.01",
@@ -153,7 +161,29 @@ Ví dụ, bạn có thể cân nhắc cắt một quả chuối vào ngũ cốc 
 Để tiếp tục với thực đơn của chúng tôi, bữa trà buổi sáng có thể là một miếng trái cây, chẳng hạn như táo, lê hoặc kiwi, hoặc một loại rau - chẳng hạn như cà rốt hoặc cần tây - cắt thành từng thanh. Đối với bữa trưa, bạn có thể ăn một chiếc bánh sandwich salad trên bánh mì nguyên cám hoặc một loại ngũ cốc nấu chín nào đó, như cơm, với rau hấp hoặc luộc. Vào bữa tối, hãy đảm bảo bao gồm một số khẩu phần rau khác nhau. Cố gắng tận dụng những gì đang theo mùa và chọn nhiều màu sắc - xanh lá cây, cam và trắng. Một lần nữa, hãy đảm bảo rằng bạn sử dụng phương pháp nấu ăn ít chất béo - hấp, luộc, nướng hoặc xào với một lượng nhỏ dầu. Ngoài ra, vào mùa hè, rau tươi có thể được rửa sạch và ăn sống trong món salad với nước sốt ít béo. Bạn cũng sẽ biết rằng như một phần của lối sống lành mạnh, bạn cần phải năng động và đưa một số loại bài tập thể dục vào chương trình hàng ngày của mình. Đối với trẻ em và thanh thiếu niên, chúng tôi khuyên bạn nên tập thể dục ít nhất 30 phút mỗi ngày. Ví dụ, điều này có thể có nghĩa là đi bộ hoặc đạp xe đến trường thay vì đi ô tô hoặc bắt xe buýt hoặc tàu hỏa. Nếu không thể, bạn có thể dành buổi tối để đá bóng trong sân sau nhà hoặc chơi bóng rổ hoặc quần vợt với bạn bè tại sân địa phương. Bạn cũng có thể cân nhắc tham gia câu lạc bộ thể thao hoặc tham gia một loại hoạt động thể chất khác, chẳng hạn như khiêu vũ hoặc cưỡi ngựa.<br>\
 Và lần tới khi bạn đến cửa hàng bán đồ ăn nhẹ ở trường, hãy chọn một trong những loại thực phẩm lành mạnh hơn được bày bán. Bạn sẽ ngạc nhiên về việc nó khiến bạn cảm thấy tốt hơn bao nhiêu."
 	,voca:"",
-}
+},
+{ track:"02.ex02", en:""},
+{ track:"02.ex03", en:""},
+{ track:"02.ex04", en:""},
+{
+	track:"02.ex07",
+	en:"a. great<br>\
+b. headmaster<br>\
+c. more<br>\
+d. sleepy<br>\
+e. publicity <br>\
+j. physical education<br>\
+f. obese<br>\
+g. to select<br>\
+h. food kiosk<br>\
+i. junk food <br>\
+k. wholesome<br>\
+l. encourage<br>\
+m. to recommend<br>\
+n. raw<br>\
+o. expert<br>\
+p. portion"
+},
 
 
 

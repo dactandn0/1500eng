@@ -69,6 +69,12 @@ font-size: 1rem ;
   right: 2%;
   z-index: 31; 
 }
+.btnShowVocaOfEbook {
+  position: fixed; 
+  top: 40%;
+  right: 2%;
+  z-index: 32; 
+}
 
 
 /*override BS*/

@@ -177,14 +177,17 @@ function getFullTile(obj) {
 }
 
 function processStory (story, isAlert = true) {
-	if (!story || !story.en || story.en.trim().length == 0) return story;
+	if (!story) return story;
+	if (!story.en || story.en.trim().length == 0) 
+		story.enShow = "Blank"
+	else
+		story.enShow = story.en;
 	
-	story.enShow = story.en;
-	let enShow = story.enShow
-	let viShow = !story.vi ? "" : story.vi.trim()
+	var enShow = story.enShow
+	var viShow = !story.vi ? "" : story.vi.trim()
 	enShow = doReplaceWords(enShow)
 	enShow = fixDots(enShow)
-	let bHasVi = viShow.length > 0
+	var bHasVi = viShow.length > 0
 	if (bHasVi) viShow= fixDots(viShow)
 
 	if (story.voca) {

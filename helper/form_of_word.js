@@ -70,7 +70,7 @@ function Helper_N_V_Add_S_ES(words) {
 		rest = words.substring(word.length)
 	}
 	// local (a) # locals (n)
-	var excepts = ['local']
+	var excepts = ['local','economic']
  	for (var i = 0; i < excepts.length; i++) {
 		if (word===excepts[i]) return word + rest
 	}

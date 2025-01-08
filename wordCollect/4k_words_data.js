@@ -13,16 +13,21 @@ although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
+brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
+low-budget (a) ngân sách thấp<br>\
 moment (n) khoảnh khắc<br>\
+established (a) uy tín, chứng thật<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
 investors  (n) nhà đầu tư<br>\
 investment (n) sự đầu tư<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
+undeniable (a) /ˌʌndɪˈnaɪəbl/ không thế chối cãi<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 peace (n) sự hòa bình<br>\
+dressing (n) mặc quần áo, nước xốt, gia vị, cách ăn mặc<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
@@ -38,11 +43,15 @@ harmful (a) /ˈhɑːrmfl/ có hại<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 darken (v) /ˈdɑːrkən/ trở nên tối, làm tối<br>\
 poison (n,v) /ˈpɔɪzn/ chất độc, bỏ độc, bị nhiễm độc<br>\
+publicity (n) sự công khai<br>\
 mammal (n) /ˈmæml/ động vật có vú<br>\
+protest (n) /ˈprəʊtest/ cuộc biểu tình, sự chống lại<br>\
 platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
 kangaroo (n) /kæŋɡəˈruː/ chuột túi<br>\
 relevant (a) /ˈreləvənt/ liên quan<br>\
 promise hứa<br>\
+dwindling (a) giảm<br>\
+declare (v) tuyên bố<br>\
 reply trả lời<br>\
 safe an toàn<br>\
 trick mẹo<br>\
@@ -1011,27 +1020,32 @@ breed giống<br>\
 bucket thùng<br>\
 contest cuộc thi<br>\
 convict tội phạm<br>\
-garage gara<br>\
-journalist nhà báo<br>\
+garage (n) /ɡəˈrɑːdʒ/ gara<br>\
+journalist (n) /ˈdʒɜːrnəlɪst/ nhà báo<br>\
 pup chó con<br>\
-qualify đủ điều kiện<br>\
+qualify (v) /ˈkwɑːlɪfaɪ/ đủ điều kiện<br>\
 repair sửa chữa<br>\
+exercise (n,v) thể dục<br>\
 resume (n,v) /rɪˈzuːm/ sơ yếu lý lịch (v) bắt đầu lại<br>\
 rob cướp<br>\
 slip trượt<br>\
 somewhat hơi<br>\
 tissue mô<br>\
 yard sân <br>\
+favourite (n,a) ưu thích<br>\
+majority (n) /məˈdʒɔːrəti/ phần lớn<br>\
 alike giống nhau<br>\
 get on my nerves (v) /əˈnɔɪ/ làm phiền<br>\
 architecture kiến trúc<br>\
 artificial nhân tạo<br>\
 chain chuỗi<br>\
 distinct riêng biệt<br>\
-distinguish phân biệt<br>\
+distinguish (v) /dɪˈstɪŋɡwɪʃ/ phân biệt<br>\
 dust bụi<br>\
 excitement sự phấn khích<br>\
+wholesome (a) = healthy<br>\
 heal chữa lành<br>\
+<br>\
 inherit thừa hưởng<br>\
 manner cách thức<br>\
 mount gắn kết<br>\

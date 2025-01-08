@@ -6,6 +6,7 @@ app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, 
 $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
 	$rootScope.audioSrc = ''
+	$rootScope.vocaEbook = []
 	$scope.audio = null;
 });
 

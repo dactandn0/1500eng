@@ -36,6 +36,9 @@ $scope.loadData = function () {
 
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
+	makeVocaEbook($rootScope, 
+				lfil_stories,
+		)
 });
 
 });

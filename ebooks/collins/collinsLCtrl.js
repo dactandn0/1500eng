@@ -28,6 +28,9 @@ $scope.loadData = function () {
 
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
+	makeVocaEbook($rootScope, 
+		collins_cd12,
+	)
 });
 
 });

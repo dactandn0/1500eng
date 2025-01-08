@@ -17,6 +17,10 @@ const SynonymData = [
 	words:"raw|uncooked",
 	type:"a",
 	mean:"thô, chưa chế biến"
+},{
+	words:"teenager|youth /juːθ/",
+	type:"n",
+	mean:"thanh thiếu niên"
 },
 {
 	words:"recommend|suggest /səɡˈdʒest/",

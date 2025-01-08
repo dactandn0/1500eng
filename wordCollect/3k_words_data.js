@@ -1186,6 +1186,7 @@ Chimney (n) /ˈtʃɪm.ni/ Ống khói<br>\
 Gift (n) /ɡɪft/ Quà tặng<br>\
 Christmas (n) /ˈkrɪs.məs/ Lễ Giáng Sinh<br>\
 Ornament (n) /ˈɔːr.nə.mənt/ Đồ trang trí<br>\
+ornamental (a) /ˈɔːr.nə.məntal/ trang trí<br>\
 Pine tree (n) /paɪn triː/ Cây thông<br>\
 Sled (v) /slɛd/ Xe trượt tuyết<br>\
 Bell (n) /bɛl/ Chuông<br>\

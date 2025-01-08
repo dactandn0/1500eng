@@ -14,8 +14,6 @@ $scope.story = '';
 $scope.acc = -1;
 $scope.titles = showStoryTitles($scope.stories);  // def
 
-$rootScope.vocaEbook = []
-
 ielt_formChange = function (num) {
 	$scope.ielt_form = num;
 	Helper_saveDB("englabbegin_form", num);
@@ -48,10 +46,11 @@ $scope.examTypeCss = function (idx) {
 }
 
 $scope.loadData = function () {
-	$rootScope.vocaEbook = $rootScope.vocaEbook
-							.concat(ENGLAB_BEGIN_DATA_R)
-							.concat(ENGLAB_BEGIN_DATA_W)
-							.concat(ENGLAB_BEGIN_DATA_S)
+	makeVocaEbook($rootScope, 
+		ENGLAB_BEGIN_DATA_R,
+		ENGLAB_BEGIN_DATA_W,
+		ENGLAB_BEGIN_DATA_S
+		)
 };
 
 $scope.$on('$viewContentLoaded', function(){

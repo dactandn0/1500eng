@@ -130,7 +130,7 @@ function Helper_N_V_Add_ING(words) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-	var excepts = ['strike']
+	var excepts = ['strike','dress']    // dressing = nước sốt
  	for (var i = 0; i < excepts.length; i++) {
 		if (word===excepts[i]) return word + rest
 	}

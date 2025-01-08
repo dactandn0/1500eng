@@ -66,6 +66,12 @@ $scope.loadData = function () {
 
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
+	makeVocaEbook($rootScope, 
+		lptd_cd1_stories,
+		lptd_cd2_stories,
+		lptd_cd3_stories,
+		lptd_cd4_stories
+	)
 });
 
 });

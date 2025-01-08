@@ -180,8 +180,12 @@
 
         <br>
       </div>
-
-      <div class="my-3" ng-view></div>
+      
+      <div ng-include="'./includes/showVi.html'" ></div>
+      <div ng-include="'./includes/vocaOfEbook.html'" ></div>
+      <div ng-show="!$root.bVocaOfEbook">
+        <div class="my-3" ng-view></div>
+      </div>
 
     <button
         onclick="topFunction()" 

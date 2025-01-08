@@ -194,23 +194,10 @@ Helper_SliceHalfString = function (str) {
 	return { p1:partOne, p2:partTwo, full:str }
 }
 
-/*
-function setSpeech() {
-    return new Promise(
-        function (resolve, reject) {
-            let synth = window.speechSynthesis;
-            let id;
-
-            id = setInterval(() => {
-                if (synth.getVoices().length !== 0) {
-                    resolve(synth.getVoices());
-                    clearInterval(id);
-                }
-            }, 10);
-        }
-    )
+function makeVocaEbook(rtScrope, ...args)
+{
+	rtScrope.vocaEbook = []
+	for (var i = 0; i < args.length; i++)
+    rtScrope.vocaEbook = rtScrope.vocaEbook.concat(args[i])
+	
 }
-
-let s = setSpeech();
-s.then((voices) => Helper_Voices = voices); 
-*/

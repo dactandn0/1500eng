@@ -87,6 +87,13 @@ app.config(function($routeProvider) {
  }); // route
 
 app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope', function($scope, appAlert, $location, toastr, $rootScope ) {
+
+$rootScope.$on('$routeChangeStart', function () {
+  $rootScope.bVocaOfEbook = false
+  $rootScope.vocaEbook = []
+});
+
+
 IndexCtrlScope = $scope;
 
 // for word3000Ctrl

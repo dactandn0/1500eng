@@ -8,7 +8,7 @@ Water is something that most people in the modern world take for granted. They a
 	,vi:"Các yếu tố chính cần thiết để sinh tồn là thức ăn, lửa, nơi trú ẩn và nước. Thứ tự quan trọng của chúng sẽ phụ thuộc vào nơi bạn tình cờ ở. Ở sa mạc, nước sẽ đứng đầu danh sách; ở vùng cực, nơi trú ẩn và lửa sẽ là mối quan tâm chính. Sắp xếp thứ tự ưu tiên của bạn là bước đầu tiên để sinh tồn.<br>\
 Một người khỏe mạnh mất khá nhiều thời gian để chết đói, vì cơ thể có thể sử dụng hết các nguồn dự trữ của mình, nhưng tiếp xúc với gió, mưa và lạnh có thể gây tử vong ngay cả ở vùng khí hậu ôn hòa và cái chết chỉ đến trong vài phút ở vùng nước băng giá của hai cực. Thức ăn hiếm khi là ưu tiên hàng đầu. Ngay cả ở những nơi khó tìm thấy thức ăn, thường có những vấn đề khác cần phải đối mặt trước. Nơi trú ẩn thường là nhu cầu thiết yếu hàng đầu trong điều kiện khí hậu hoặc nhiệt độ khắc nghiệt như ở vùng cực đóng băng hoặc ở các sa mạc nóng như thiêu đốt. Nhu cầu về lửa có liên quan chặt chẽ với nhau.<br>\
 Nước là thứ mà hầu hết mọi người trong thế giới hiện đại coi là điều hiển nhiên. Họ quá quen với việc mở vòi nước đến nỗi cho đến khi hạn hán nghiêm trọng khiến nước bị hạn chế, họ hiếm khi nghĩ đến điều đó. Tuy nhiên, người sống sót trên biển hoặc sau trận lụt, mặc dù được bao quanh bởi nước, có thể rất cần nước uống. Và có nhiều nơi, trừ khi trời mưa, không có nước rõ ràng. Mặc dù có thể có những nhu cầu sinh tồn khác cần giải quyết, nước luôn luôn quan trọng đối với mọi người."
-	,voca:"survival, survivor,icy,frozen",
+	,voca:"survival, survivor,icy,frozen,exposure to",
 },{
 	title:"Basic Reading P.12 - The Peace Corps",
 	en:"On March 1, 1961, President John F. Kennedy issued an order creating the Peace Corps. Its mission was to promote world peace and friendship by providing qualified volunteers to interested countries. Today it sends an average of 6,000 US citizens abroad each year.<br>\
@@ -19,7 +19,7 @@ Serving countries all over the world, the Peace Corps lives up to its promise as
 Các tình nguyện viên sống ở cấp địa phương tại quốc gia chủ nhà của họ. Họ được trả lương bằng tiền tệ địa phương. Mỗi tháng, họ nhận được một khoản tiền nhỏ để trang trải các chi phí sinh hoạt cơ bản và thay đổi tùy theo nền kinh tế địa phương. · Ví dụ, các tình nguyện viên ở Micronesia kiếm được tương đương 300 đô la mỗi tháng, trong khi những người ở Turkmenistan kiếm được 75 đô la. Hầu hết các tình nguyện viên sống với các gia đình chủ nhà. Đây là cơ hội tuyệt vời để học ngôn ngữ và văn hóa.<br>\
 Mỗi tháng họ ở nước ngoài, các tình nguyện viên nhận được một khoản tiền khoảng 200 đô la. Số tiền này giúp họ ổn định cuộc sống tại Hoa Kỳ.<br>\
 Phục vụ các quốc gia trên toàn thế giới, Đoàn Hòa bình thực hiện đúng lời hứa của mình là 'công việc khó khăn nhất mà bạn từng yêu thích'. Các tình nguyện viên làm mọi thứ từ dạy tiếng Anh đến chia sẻ mẹo trồng trọt thực phẩm đến cung cấp dịch vụ chăm sóc sức khỏe phòng ngừa. Tuy nhiên, quy trình nộp đơn để trở thành tình nguyện viên của Đoàn Hòa bình rất cạnh tranh. Bạn phải là công dân Hoa Kỳ, ít nhất mười tám tuổi, có sức khỏe tốt và sẵn sàng phục vụ trong hai năm. Hầu như tất cả các tình nguyện viên đều có bằng cử nhân trong lĩnh vực họ đã chọn và khoảng 18 phần trăm có bằng thạc sĩ hoặc tiến sĩ. Biết một ngôn ngữ, đặc biệt là tiếng Pháp và tiếng Tây Ban Nha, sẽ hữu ích."
-	,voca:"",
+	,voca:"living expenses, qualified",
 },
 {
 	title:"Basic Reading P.14 - Solar Collector",
@@ -31,7 +31,7 @@ A transfer agent (air or water) is circulated through the collector and becomes 
 Bộ thu nhiệt thường là các tấm nhôm, đồng hoặc thép. Các tấm này thường được sơn đen. Màu đen giúp ngăn cản sự phản xạ và thúc đẩy sự hấp thụ. Lớp cách nhiệt được đặt phía sau bộ thu nhiệt để ngăn ngừa mất nhiệt.<br>\
 Bộ thu nhiệt được phủ bằng kính hoặc nhựa. Lớp này cho phép bức xạ sóng ngắn - hoặc ánh sáng - đi vào bộ thu nhiệt. A5 bức xạ đi qua kính hoặc nhựa, nó được chuyển đổi từ bức xạ sóng ngắn thành bức xạ sóng dài - hoặc nhiệt. Bức xạ sóng dài không thể đi qua kính hoặc nhựa trở lại khí quyển. Do đó, nhiệt bị giữ lại bên trong bộ thu nhiệt. Bộ thu nhiệt thường được đặt ở một góc để tối đa hóa lượng bức xạ chiếu vào chúng.<br>\
 Một tác nhân truyền (không khí hoặc nước) được lưu thông qua bộ thu nhiệt và trở nên nóng. A5 nó rời khỏi bộ thu nhiệt và đi qua các ống dẫn nhiệt của ngôi nhà, nó làm ấm không khí bên trong ngôi nhà hoặc mang nước nóng đến bồn rửa, bồn tắm và các thiết bị. Với bộ thu nhiệt mặt trời, lưu trữ là một vấn đề: phải lưu trữ một lượng nhiệt lớn để sử dụng vào ban đêm và sử dụng vào những ngày nhiều mây."
-	,voca:"",
+	,voca:"inhibits, reflection,encourages, absorb, effectively",
 },
 {
 	title:"Basic Reading P.15 - How to Borrow Books",
@@ -71,7 +71,7 @@ Một số thư viện tính tiền phạt cho mỗi ngày trả sách quá hạ
 [C] Khi đối mặt với một sự kiện căng thẳng, những người có tính cách dễ mắc ung thư không thể hiện sự căng thẳng ra bên ngoài. Thay vào đó, họ giữ cảm xúc của mình bên trong. Họ kìm nén hoặc che giấu cảm xúc của mình, thậm chí với chính bản thân họ.<br>\
 <br>\
 [D] Tính cách dễ mắc ung thư có liên quan đến khả năng mắc ung thư và những đặc điểm tính cách tương tự dường như giúp ảnh hưởng đến quá trình phục hồi của nạn nhân ung thư. Ví dụ, một số nghiên cứu đã xem xét những bệnh nhân ung thư chấp nhận căn bệnh ung thư mà không tức giận. Những bệnh nhân này bị bệnh nhanh hơn và họ chết sớm hơn những người tức giận với căn bệnh ung thư của mình và chống lại căn bệnh."
-	,voca:"",
+	,voca:"personality, prone, unaggressive, agreeable, polite",
 },
 {
 	title:"Basic Reading P.18 - Friends of the Earth Trust",
@@ -173,7 +173,7 @@ Tóm lại, cách mọi người diễn giải một sự kiện khiến sự ki
 Cụ thể, điều gì khiến mọi người đánh giá một tình huống là căng thẳng? Câu trả lời phụ thuộc vào mức độ đe dọa hoặc thách thức mà nó có vẻ như vậy. Những hoàn cảnh đe dọa hoặc thách thức cảm giác hạnh phúc của một người sẽ tạo ra căng thẳng. Những hoàn cảnh không đe dọa hoặc thách thức chúng ta thì không gây căng thẳng.<br>\
 Nhìn nhận căng thẳng theo cách này giúp chúng ta có định nghĩa chung về khái niệm căng thẳng: Căng thẳng là phản ứng với những hoàn cảnh có vẻ đe dọa hoặc thách thức.<br>\
 Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất cả phụ thuộc vào cách chúng ta đánh giá hoàn cảnh. Ngoài ra, những điều khiến chúng ta căng thẳng ngày hôm nay có thể không gây căng thẳng cho chúng ta vào thời điểm khác. Và điều ngược lại mới đúng: những thứ trước đây không gây căng thẳng thì giờ đây có thể gây căng thẳng."
-	,voca:"",
+	,voca:"interpret",
 }
 
 

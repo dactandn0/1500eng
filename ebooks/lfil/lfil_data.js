@@ -183,7 +183,73 @@ m. to recommend<br>\
 n. raw<br>\
 o. expert<br>\
 p. portion"
-},
+},{
+	track:"03.01",
+	en:"Andy: Hi, Dave. <br>\
+Dave: Hi, Andy.<br>\
+Andy: Are you ready for the 400-metre relay, Dave? You're running first. We need your speed at the start! I'll be running third. I like third.<br>\
+Dave: Who's running fourth for us? Is it Pete? Is he OK? He had a sore ankle, didn't he?<br>\
+Andy: Pete's fine now. So, he'll be fourth as usual. Robbie will run second. So, I'll take the baton from Robbie and pass it on to Pete.<br>\
+Narrator: Listen to section 2 of the audio.<br>\
+Dave: I hear that we're going to wear white today. Is that right?<br>\
+Andy: Yes, that's right.<br>\
+Dave: Who are the favourites for this race?<br>\
+Andy: I think we are! Go, Lancaster College! <br>\
+Dave: Who are the team in the green?<br>\
+Andy: That's Ashgrove College.<br>\
+Dave: And the runners in red? Where are they from?<br>\
+Andy: They're from Highland Park.<br>\
+Narrator: Listen to section 3 of the audio.<br>\
+Dave: We should do well. What time's our relay?<br>\
+Andy: Let me see. I've got the schedule here. Um... the 400- metre relay is at 1:30 pm.<br>\
+Dave: I'm also in the long jump and the hurdles. What time are they? They're later in the afternoon, aren't they? <br>\
+Andy: Yes, the long jump's at 3 pm. and the hurdles are at 4:30 pm. It's a big day for you!<br>\
+Dave: Yes, it's fun, though. You're in other events yourself, aren't you?<br>\
+Andy: Yes, I'm in the high jump. That's at 1 pm. And I'm in the 100-metre sprint at 5 pm.<br>\
+Dave: Good luck, Andy!<br>\
+Andy: Thanks, Dave. See you at the relay. Go, Lancaster College!"
+	,vi:"Andy: Chào Dave. <br>\
+Dave: Chào Andy.<br>\
+Andy: Anh đã sẵn sàng cho cuộc chạy tiếp sức 400 mét chưa, Dave? Anh chạy đầu tiên. Chúng tôi cần tốc độ của anh khi bắt đầu! Tôi sẽ chạy thứ ba. Tôi thích thứ ba.<br>\
+Dave: Ai sẽ chạy thứ tư cho chúng ta? Có phải Pete không? Anh ấy ổn chứ? Anh ấy bị đau mắt cá chân, phải không?<br>\
+Andy: Pete giờ ổn rồi. Vậy nên, anh ấy sẽ chạy thứ tư như thường lệ. Robbie sẽ chạy thứ hai. Vậy nên, tôi sẽ lấy gậy từ Robbie và chuyển cho Pete.<br>\
+Người dẫn chuyện: Nghe phần 2 của đoạn ghi âm.<br>\
+Dave: Tôi nghe nói hôm nay chúng ta sẽ mặc đồ trắng. Đúng không?<br>\
+Andy: Vâng, đúng vậy.<br>\
+Dave: Ai là ứng cử viên sáng giá nhất cho cuộc đua này?<br>\
+Andy: Tôi nghĩ là chúng ta! Tiến lên, Lancaster College! <br>\
+Dave: Đội áo xanh là đội nào?<br>\
+Andy: Đó là Cao đẳng Ashgrove.<br>\
+Dave: Còn những vận động viên áo đỏ? Họ đến từ đâu?<br>\
+Andy: Họ đến từ Highland Park.<br>\
+Người dẫn chuyện: Nghe phần 3 của đoạn ghi âm.<br>\
+Dave: Chúng ta sẽ làm tốt. Tiếp sức của chúng ta diễn ra lúc mấy giờ?<br>\
+Andy: Để tôi xem nào. Tôi có lịch trình ở đây. Ừm... tiếp sức 400 mét diễn ra lúc 1:30 chiều.<br>\
+Dave: Tôi cũng tham gia nhảy xa và vượt rào. Chúng diễn ra lúc mấy giờ? Chúng diễn ra vào cuối buổi chiều, đúng không? <br>\
+Andy: Vâng, nhảy xa diễn ra lúc 3 giờ chiều. và vượt rào diễn ra lúc 4:30 chiều. Hôm nay là một ngày trọng đại của bạn!<br>\
+Dave: Vâng, nhưng mà vui lắm. Bản thân anh cũng tham gia các sự kiện khác, đúng không?<br>\
+Andy: Vâng, tôi tham gia nhảy cao. Lúc đó là 1 giờ chiều. Và tôi tham gia chạy nước rút 100 mét lúc 5 giờ chiều.<br>\
+Dave: Chúc may mắn, Andy!<br>\
+Andy: Cảm ơn, Dave. Gặp lại anh ở cuộc chạy tiếp sức. Tiến lên, Lancaster College!"
+	,voca:"",
+},{
+	track:"03.02",
+	en:"Penny: Hello, everyone. Thank you for getting here early. I'm sure the cross-country race today will be very successful. John and I have organised a challenging course. We expect runners to start turning up in about 30 minutes, so we need to work fast. I'll hand you over to John to describe the course and the different jobs we have to do.<br>\
+John: OK, listen everyone, please. We need people at different points on the course.<br>\
+Felicity, we need you on the start line. I'll wave when we're all ready and you can fire the starting gun. Now, Thomas, would you please stand beside the first jump? That's the fence in front of the pine trees over there. Oh, by the way, we need someone at the registration table right here. Who can do that? You can, Matt? That's great. So, we've got Felicity at the start line, Thomas at the fence, and Matt on the registration table. What else? Oh, yes, a timekeeper? We thought you would be good at that, Jeremy! Great, thanks. You've done that before, so you know what to do, don't you? You can sit in the timekeeper's tent over there when you're not too busy. Who else do we need?<br>\
+Penny: Tony, would you please stand beside the water jump? Just keep an eye on people. Help anyone who falls over. If someone gets injured, we've always got Catherine, who's done First Aid training. She's got a First Aid tent over near the finish line. So, if you see anyone get hurt, get them to Catherine as quickly as you can.<br>\
+John: Thanks, Penny, OK everyone. Any questions? No. OK then. Penny and I will be walking around the whole time. Let's know if you need anything.<br>\
+Narrator: Listen to section 2 of the audio.<br>\
+Gather round, everyone. This won't take long. First of all, I would like to congratulate Mick and Sarah, who won the Open Men's and Open Women's Races respectively. What an extraordinary effort and personal best times for them both! A round of applause for them, please. Actually, looking at the results board, I can see that you've all done well. There have been quite a few really good times posted today. Now... the shower block's over near the car park, so feel free to freshen up but don't take too long. Our team of volunteers has been working hard in the kitchen, and they've produced a very nice spread in the club rooms. They've made tea and coffee, as well as several cold drinks, and there's a lot to eat sandwiches, savouries, fruit, biscuits, and I'm sure I saw some chocolate cake. So, just come on over back to the club rooms as soon as you can. At this stage, I would like to thank all of those who have helped make today's events a success. Please give them a hand! I'm sure the organising committee would like to see you all - athletes and helpers - again at next year's cross-country championships."
+	,vi:"Penny: Xin chào mọi người. Cảm ơn mọi người đã đến sớm. Tôi chắc chắn cuộc đua việt dã hôm nay sẽ rất thành công. John và tôi đã tổ chức một đường đua đầy thử thách. Chúng tôi mong đợi những người chạy sẽ bắt đầu xuất hiện trong khoảng 30 phút nữa, vì vậy chúng tôi cần phải làm việc nhanh chóng. Tôi sẽ chuyển giao cho John để mô tả đường đua và những công việc khác nhau mà chúng tôi phải làm.<br>\
+John: Được rồi, mọi người hãy lắng nghe nhé. Chúng tôi cần mọi người ở các điểm khác nhau trên đường đua.<br>\
+Felicity, chúng tôi cần bạn ở vạch xuất phát. Tôi sẽ vẫy tay khi chúng ta đã sẵn sàng và bạn có thể bắn phát súng xuất phát. Bây giờ, Thomas, bạn vui lòng đứng cạnh cú nhảy đầu tiên? Đó là hàng rào trước những cây thông ở đằng kia. À, nhân tiện, chúng tôi cần một người ở bàn đăng ký ngay đây. Ai có thể làm điều đó? Bạn có thể, Matt? Tuyệt lắm. Vậy, chúng ta có Felicity ở vạch xuất phát, Thomas ở hàng rào và Matt ở bàn đăng ký. Còn gì nữa? À, vâng, một người bấm giờ? Chúng tôi nghĩ là anh sẽ giỏi việc đó, Jeremy! Tuyệt, cảm ơn. Anh đã từng làm rồi, nên anh biết phải làm gì, đúng không? Anh có thể ngồi trong lều của người bấm giờ ở đằng kia khi anh không quá bận rộn. Chúng ta còn cần ai nữa?<br>\
+Penny: Tony, anh vui lòng đứng cạnh cầu nhảy nước nhé? Chỉ cần để mắt đến mọi người thôi. Giúp bất kỳ ai bị ngã. Nếu có ai bị thương, chúng ta luôn có Catherine, người đã được đào tạo sơ cứu. Cô ấy có một lều sơ cứu gần vạch đích. Vì vậy, nếu anh thấy ai bị thương, hãy đưa họ đến Catherine càng nhanh càng tốt.<br>\
+John: Cảm ơn, Penny, OK mọi người. Có câu hỏi nào không? Không. Được thôi. Penny và tôi sẽ đi bộ xung quanh trong suốt thời gian. Hãy cho chúng tôi biết nếu anh cần bất cứ điều gì.<br>\
+Người dẫn chuyện: Hãy nghe phần 2 của âm thanh.<br>\
+Mọi người hãy tập hợp lại. Sẽ không mất nhiều thời gian đâu. Trước hết, tôi muốn chúc mừng Mick và Sarah, những người đã giành chiến thắng ở Giải Đua Mở dành cho Nam và Giải Đua Mở dành cho Nữ. Thật là một nỗ lực phi thường và thành tích cá nhân tốt nhất của cả hai người! Xin hãy dành một tràng pháo tay cho họ. Thực ra, khi nhìn vào bảng kết quả, tôi thấy rằng tất cả các bạn đều làm tốt. Có khá nhiều thành tích thực sự tốt được đăng tải hôm nay. Bây giờ... khu vực tắm rửa gần bãi đậu xe, vì vậy hãy thoải mái tắm rửa nhưng đừng mất quá nhiều thời gian. Đội tình nguyện viên của chúng tôi đã làm việc chăm chỉ trong bếp và họ đã chuẩn bị một bữa ăn rất ngon trong các phòng câu lạc bộ. Họ đã pha trà và cà phê, cũng như một số đồ uống lạnh, và có rất nhiều đồ ăn nhẹ như bánh sandwich, đồ ăn mặn, trái cây, bánh quy và tôi chắc rằng tôi đã thấy một số bánh sô cô la. Vì vậy, hãy quay lại phòng câu lạc bộ ngay khi bạn có thể. Vào thời điểm này, tôi muốn cảm ơn tất cả những người đã giúp sự kiện hôm nay thành công. Hãy giúp họ một tay! Tôi chắc chắn rằng ban tổ chức muốn gặp lại tất cả các bạn - các vận động viên và người hỗ trợ - tại giải vô địch chạy việt dã vào năm sau."
+	,voca:"",
+}
 
 
 

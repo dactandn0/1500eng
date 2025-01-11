@@ -126,8 +126,92 @@ const ENGLAB_BEGIN_DATA_W = [
 	title:"Dịch đoạn",
 	en:"Today, obesity in children is becoming popular and concerning for many reasons. Firstly, it is due to unhealthy eating habits. With the convenience of fast food, fried food, baking and sweets, children easily approach and consume them, instead of healthy food such as vegetables, fruits, beans and lean meats. Secondly, the lack of physical activities in children is also a crucial cause of obesity. Spending too much time on electronic devices such as phones, tablets and games causes children not to have enough time and motivation to take part in outdoor or physical activities. This leads to the accumulation of excess fat and weight gain in children."
 	,vi:"Ngày nay, tình trạng béo phì ở trẻ em đang trở nên phổ biến và đáng lo ngại vì nhiều lý do. Thứ nhất, đó là do thói quen ăn uống không lành mạnh. Với sự tiện lợi của đồ ăn nhanh, đồ chiên, đồ nướng và đồ ngọt, trẻ em dễ dàng tiếp cận và tiêu thụ chúng, thay vì các thực phẩm lành mạnh như rau, trái cây, đậu và thịt nạc. Thứ hai, việc trẻ em thiếu hoạt động thể chất cũng là nguyên nhân quan trọng gây ra tình trạng béo phì. Việc dành quá nhiều thời gian cho các thiết bị điện tử như điện thoại, máy tính bảng và trò chơi khiến trẻ em không có đủ thời gian và động lực để tham gia các hoạt động ngoài trời hoặc thể chất. Điều này dẫn đến tình trạng tích tụ mỡ thừa và tăng cân ở trẻ em."
-	,voca:""
+	,voca:"eating habits, concerning,sweets,lean meats, physical activity, the accumulation of, weight gain"
 	,note:"Cause (v,n), có thể dùng a cause of + Noun|Cause sb to do sth|Nếu muốn đề cập đến hành động/chủ đề vừa thảo luận phía trước thì dùng this (leads)"
+},{
+	examType:"0",
+	title:"Chính phủ cần tăng cường đầu tư vào giáo dục để nâng cao chất lượng cuộc sống của người dân."
+	,en:"The government needs to improve its investment in education to raise the quality of people's lives."
+	,voca:""
+	,note:"lives = phural of life"
+},{
+	examType:"0",
+	title:"Trách nhiệm của mỗi công dân là giữ gìn văn hóa truyền thống của quê hương."
+	,en:"The responsibility of each citizen is to preserve the traditional cuture of their homeland."
+	,voca:"responsibility"
+	,note:"responsibility = obligation"
+},{
+	examType:"0",
+	title:"Tình trạng thất nghiệp đang gia tăng, chính phủ cần đưa ra những giải pháp để giải quyết vấn đề này."
+	,en:"Unemployment is increasing, so the government needs to introduce solutions to solve this problem."
+	,voca:"problem, solutions"
+	,note:"problem = issue, solution = approach"
+},{
+	examType:"0",
+	title:"Du lịch nông thôn đang trở thành xu hướng mới trong ngành du lịch."
+	,en:"Countryside tourism is becoming a new trend in tourism"
+	,voca:"Countryside tourism"
+	,note:""
+},{
+	examType:"0",
+	title:"Các biện pháp phòng chống dịch bệnh đang được triển khai mạnh mẽ nhằm đảm bảo sức khỏe cộng đồng."
+	,en:"Measures to prevent epidemics are rigorously being implemented to ensure public health."
+	,voca:""
+	,note:""
+},{
+	examType:"0",
+	title:"Sự ô nhiễm môi trường ngày càng đáng báo động, đòi hỏi chính phủ phải đưa ra các chính sách và giải pháp để giảm thiểu tác động tiêu cực lên môi trường."
+	,en:""
+	,voca:""
+	,note:""
+},{
+	examType:"0",
+	title:"Các hoạt động sản xuất và khai thác tài nguyên đang gây ra nhiều tác động xấu đến môi trường, cần có sự quản lý chặt chẽ để giảm thiểu tác động này."
+	,en:"Production and resource exploitation activities are causing various detrimental impacts on the environment, so strict control / management is required to reduce / mitigate / alleviate these effects."
+	,voca:""
+	,note:""
+},{
+	examType:"0",
+	title:"Bố mẹ không nên quá bảo bọc con của họ, việc này có thể khiến trẻ con phát triển thói quen phụ thuộc vào người khác hoặc trở nên hư hỏng."
+	,en:"Parents shouldn’t be overly protective of their children because this can make them develop a habit of depending on others or become spoiled."
+	,voca:""
+	,note:"Quá bảo bọc: be overly protective of| thói quen phục thuộc: a habit of depending on...| trở nên hư hỏng: be/become spoiled/pampered"
+},{
+	examType:"0",
+	title:"Việc quá phụ thuộc vào nguồn nhiên liệu hoá thạch có thể dẫn tới gia tăng lượng khí carbon và nóng lên toàn cầu, cái mà có thể ảnh hưởng tới tất cả sinh vật trên trái đất."
+	,en:""
+	,voca:""
+	,note:"Nhiên liệu hoá thạch: fossil|Carbon: carbon footprints"
+},{
+	examType:"0",
+	title:"Việc có một ngôn ngữ quốc tế có thể giúp mọi người từ nhiều văn hoá khác nhau vượt quá được rào cản ngôn ngữ, từ đó thúc đẩy sự liên kết toàn cầu."
+	,en:""
+	,voca:""
+	,note:"Ngôn ngữ quốc tế: Lingua franca | Rào cản ngôn ngữ: language barriers"
+},{
+	examType:"0",
+	title:"Việc phát triển thói quen đọc sách ở trẻ con có thể tạo điều kiện cho sự phát triển về khả năng sáng tạo thông qua việc tưởng tượng ra các nhân vật khác nhau dựa trên những gì được tả trong sách."
+	,en:""
+	,voca:""
+	,note:""
+},{
+	examType:"0",
+	title:"Án phạt nặng hơn như là phạt tiền hoặc phạt tù nên được đưa ra cho những người phạm tội lặp đi lặp lại."
+	,en:""
+	,voca:""
+	,note:""
+},{
+	examType:"0",
+	title:"Tắt đường hay tai nạn giao thông có thể được giải quyết hiệu quả thông qua việc cải thiện cơ sở hạ tầng giao thông như là mở rộng đường, xây thêm cầu vượt, tự ưu hoá hệ thống đèn vs biển báo."
+	,en:""
+	,voca:""
+	,note:""
+},{
+	title:"Dịch đoạn"
+	,en:""
+	,vi:"Có hai lý do chính vì sao trẻ con nên đi du học. Đầu tiên, khi đi du học, trẻ có thể học được nhiều kiến thức mới về văn hóa, lịch sử, và học thuật. Việc tiếp xúc với một môi trường học tập khác, kết hợp với những trải nghiệm và hoạt động ngoại khóa có thể giúp trẻ phát triển kỹ năng xã hội, tăng cường sự tự tin, và mở rộng tầm nhìn về thế giới. Thứ hai, đi du học có thể giúp trẻ học được nhiều kỹ năng sống như tự lập, quản lý tài chính, và trở nên độc lập hơn trong cuộc sống. Khi sống xa gia đình và đối mặt với những thách thức mới, trẻ sẽ học cách giải quyết vấn đề, tìm kiếm giải pháp và trở nên mạnh mẽ hơn để vượt qua những khó khăn trong cuộc sống."
+	,voca:""
+	,note:""
 }
 
 

@@ -32,9 +32,9 @@ const SynonymData = [
 	type:"n",
 	mean:"hiệu trưởng"
 },{
-	words:"publicity|advertistments",
+	words:"personnel /,p3:sa'nel/|staff /sta:f/",
 	type:"n",
-	mean:"quảng cáo"
+	mean:"nhân viên"
 },
 {
 	words:"expert|specialist",

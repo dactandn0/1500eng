@@ -107,7 +107,32 @@ Các quốc gia công nghiệp đều trải qua thời kỳ tăng trưởng nha
 Các quốc gia công nghiệp đang bắt đầu tìm cách sản xuất hàng hóa mà không gây ô nhiễm, một trong những tác hại của tình trạng quá tải dân số. Các nước đang phát triển cũng sẽ sử dụng những phương pháp như vậy nếu họ muốn chăm sóc người dân của mình. Giáo dục trẻ em ở khắp mọi nơi đều tốn kém, nhưng chi phí này là xứng đáng vì trẻ em sẽ đóng góp vào sự phát triển của đất nước khi chúng lớn lên. Có lẽ những đứa trẻ hiện đang đi học sẽ phát minh ra những cách giúp mọi người sống hòa bình với trái đất."
 	,voca:"",
 },{
-	title:"Basic Reading P.45 - Out of the Wild, into Our Homes",
+	unit:"4",
+	title:"Emergency Fire Procedures"
+	,en:"If you detect a fire, call emergency, 1999, and the Fire Department, 9+911. Engage the fire alarm, alert other guests, and exit the building.<br>\
+If a fire is detected inside the room, exit the room immediately, close the door, and activate the nearest emergency alarm. Notify in-house personnel by dialling 1999 and the Fire Department at 911.<br>\
+If you are alerted to fire in the building, make sure it is safe to leave your room. Check for heavy smoke. Once you have determined it is safe, take your room key and proceed to the exit nearest to you.<br>\
+If it is not safe to leave your room, fill your bathtub and other containers with water. <br>\
+Block all openings, such as vents and under the door, with wet towels. This will prevent fumes from entering your room. Call the hotel staff, informing them of your location.<br>\
+If smoke already exists in your room, hold a wet towel over your mouth and stay low. <br>\
+Do not break any windows unless absolutely necessary. This will only worsen the situation.<br>\
+Do not try to exit by use of the elevators. <br>\
+It is important to remember t1wt in any emergency situations your ability to STAY CALM during the evacuation process is the key to success."
+	,vi:"If you detect a fire, call emergency, 1999, and the Fire Department, 9+911. Engage the fire alarm, alert other guests, and exit the building.<br>\
+If a fire is detected inside the room, exit the room immediately, close the door, and activate the nearest emergency alarm. Notify in-house personnel by dialling 1999 and the Fire Department at 911.<br>\
+If you are alerted to fire in the building, make sure it is safe to leave your room. Check for heavy smoke. Once you have determined it is safe, take your room key and proceed to the exit nearest to you.<br>\
+If it is not safe to leave your room, fill your bathtub and other containers with water. <br>\
+Block all openings, such as vents and under the door, with wet towels. This will prevent fumes from entering your room. Call the hotel staff, informing them of your location.<br>\
+If smoke already exists in your room, hold a wet towel over your mouth and stay low. <br>\
+Do not break any windows unless absolutely necessary. This will only worsen the situation.<br>\
+Do not try to exit by use of the elevators. <br>\
+It is important to remember t1wt in any emergency situations your ability to STAY CALM during the evacuation process is the key to success."
+	,voca:""
+	,note:""
+},
+{
+	title:"Out of the Wild, into Our Homes",
+	unit:4,
 	en:"Many of the earth's creatures die because of choices humans make. These choices have nothing to do with food or shelter or anything else that helps humans survive. What kills these millions of animals from all over the world is human greed - the desire for money.<br>\
 <br>\
 People use parts of animals for everything from hats to handbags, from ornamental jewellery and ashtrays to powders that supposedly improve a person's life. Declaring a species endangered and protecting it by laws is not always enough. Poachers, people who kill wildlife illegally, rarely get caught.<br>\
@@ -130,7 +155,7 @@ Tuy nhiên, mối quan tâm đối với một số loài nhất định có xu 
 Các phong trào bảo vệ động vật khác đã xuất hiện rồi biến mất, chẳng hạn như cứu cá voi và bảo vệ cá heo khỏi những người đánh bắt cá ngừ. Hiện tại, quần thể cá voi dường như đã tăng lên. Và luật pháp cuối cùng cũng đang thay đổi ở Hoa Kỳ để bảo vệ những chú cá heo bơi cùng cá ngừ ở một số vùng của Thái Bình Dương.<br>\
 <br>\
 Vào những năm 2010, các cuộc biểu tình và hoạt động công khai có thể sẽ chuyển sang một số loài có nguy cơ tuyệt chủng khác. Rất nhiều loài trong số chúng cần được quan tâm khẩn cấp. Trong thời gian này, liệu loài voi có bị lãng quên không?"
-	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamental"
+	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamental,endangered,fade,profitable,publicity,shelter,pup,slaughter,supposedly,survive,tuna,tusk,urgently"
 	,true_f_notG: "09. Many of the animals on Earth die because humans have to survive.<br>\
 10. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
 11. People who kill animals illegally often get away without being caught.<br>\
@@ -141,7 +166,8 @@ Vào những năm 2010, các cuộc biểu tình và hoạt động công khai c
 16. In the 2010s, people may not be so concerned about elephants as before."
 	,note:"have nothing to do = không liên quan"
 },{
-	title:"Basic Reading P.52 - What Is Happening to Our Planet?",
+	title:"What Is Happening to Our Planet?",
+	unit:5,
 	en:"Sometimes humans kill animals indirectly. Few places on the planet are untouched by humans. The ever-increasing human population needs more space. Industries use more and more of the Earth's natural resources. The result: in less than one hundred years, as many as two hundred known species of birds and mammals have vanished.<br>\
 How? Many natural habitats are disappearing. The Earth's rainforests are being destroyed, along with their inhabitants. Toxic wastes, air pollution, and radiation take terrible tolls on wildlife. Changes in the planet's ozone layer and in its climate threaten all animals, including humans.<br>\
 In 1977, President Jimmy Carter asked for an official study of the environment. What, he asked, would our planet be like in the year 2000 if present trends continue? This study was done by several US government departments at the direction of Dr Gerald Barney. Published in 1980, the Global 2000 Report to the President provided startling warnings and predictions about the fate of the Earth if we do not make changes in the way we treat it.<br>\
@@ -156,7 +182,8 @@ Báo cáo này thúc giục chính phủ hành động ngay lập tức. Báo c�
 Những năm 1980 không phải là thập kỷ tốt cho môi trường. Có khả năng một báo cáo toàn cầu hiện nay thậm chí còn ảm đạm hơn báo cáo được công bố sau những năm 1970. Nhiều nhà môi trường tự hỏi liệu chúng ta có thể ngăn chặn sự hủy diệt hành tinh của mình trước khi quá muộn hay không. Họ tự hỏi, khi nào thì con người mới nhận ra rằng họ không phải là chủ nhân của Trái Đất mà chỉ là một trong những vị khách của nó?"
 	,voca:"vanished,threaten,warnings,ignored,destruction,hardship,extinguished,starvation",
 },{
-	title:"Basic Reading P.56 - What Is Stress? ",
+	title:"What Is Stress?",
+	unit:6,
 	en:"Most people would say they know what stress is. But for scientists who study stress, it has been surprisingly hard to define. This is because there are so many ways of looking at stress. <br>\
 Some researchers have studied how our bodies react to stress. You know how your heart beats faster, you perspire more heavily, and your words do not come out right when you are placed in a stressful situation. But knowing how we feel when we experience stress does not explain it; nor does it tell us what causes it.<br>\
 Other scientists have looked at stressors: events or situations that produce stress. A dead line, a poor test performance, or bothersome noises all may be thought of as stressors. Even ~ pleasant events can be stressors. Planning a party or starting a new job can be just as stressful as being called to the principal's office.<br>\

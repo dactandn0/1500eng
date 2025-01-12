@@ -20,7 +20,7 @@ moment (n) khoảnh khắc<br>\
 established (a) uy tín, chứng thật<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
-investors  (n) nhà đầu tư<br>\
+investors (n) nhà đầu tư<br>\
 investment (n) sự đầu tư<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 undeniable (a) /ˌʌndɪˈnaɪəbl/ không thế chối cãi<br>\
@@ -31,7 +31,7 @@ dressing (n) mặc quần áo, nước xốt, gia vị, cách ăn mặc<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
-accumulation  (n) sự tích tụ<br>\
+accumulation (n) sự tích tụ<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 square (n,a) /skwer/ quảng trường (a) vuông<br>\
 declaration (n) /dekləˈreɪʃn/ Tuyên ngôn<br>\
@@ -40,10 +40,12 @@ pleased (a) vui lòng<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
+advertise (v) làm quảng cáo<br>\
+advertistment (n) /ˌædvərˈtaɪzmənt/ quảng cáo<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 darken (v) /ˈdɑːrkən/ trở nên tối, làm tối<br>\
 poison (n,v) /ˈpɔɪzn/ chất độc, bỏ độc, bị nhiễm độc<br>\
-publicity (n) sự công khai<br>\
+publicity (n) sự công khai, quảng cáo<br>\
 mammal (n) /ˈmæml/ động vật có vú<br>\
 protest (n) /ˈprəʊtest/ cuộc biểu tình, sự chống lại<br>\
 platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
@@ -96,7 +98,7 @@ solve (v) /sɑːlv/ giải quyết<br>\
 suddenly (adv) /ˈsʌdənli/ đột nhiên<br>\
 suppose (v) /səˈpəʊz/ giả sử<br>\
 universe vũ trụ<br>\
-reason (n,v) lý do, v. suy đoán<br>\
+reason (n,v) lý do, (v) suy đoán<br>\
 appropriate thích hợp<br>\
 avoid tránh<br>\
 behave hành xử<br>\
@@ -165,7 +167,7 @@ wise (a) /waɪz/ khôn ngoan<br>\
 allow cho phép<br>\
 announce (v) /əˈnaʊns/ thông báo, nhắc<br>\
 beside bên cạnh<br>\
-taste (n,v) /teɪst/ mùi vị, (v.)thưởng thức<br>\
+taste (n,v) /teɪst/ mùi vị, ((v) )thưởng thức<br>\
 challenge (n) /ˈtʃælɪndʒ/ thách thức<br>\
 claim yêu cầu<br>\
 condition (n) /kənˈdɪʃn/ điều kiện<br>\
@@ -281,7 +283,7 @@ burn bỏng<br>\
 cell tế bào<br>\
 contain chứa<br>\
 correct đúng<br>\
-crop (n,v) /krɑːp/ v.cắt, vật giặt hái, mùa giặt<br>\
+crop (n,v) /krɑːp/ (v) cắt, vật giặt hái, mùa giặt<br>\
 demand nhu cầu<br>\
 feed thức ăn<br>\
 hole lỗ<br>\
@@ -361,9 +363,12 @@ appreciate đánh giá cao<br>\
 available có sẵn<br>\
 beat đánh bại<br>\
 bright sáng<br>\
+fumes /fju:mz/ (n) khói<br>\
 celebrate ăn mừng<br>\
-determine xác định<br>\
-disappear biến mất<br>\
+activate /ˈæktɪveɪt/ (v) kích hoạt<br>\
+determine /di't3:min/ (v) xác định<br>\
+bathtub /ˈbæθtʌb/ (n) <br>\
+disappear (v) /ˌdɪsəˈpɪr/ biến mất<br>\
 else nếu không<br>\
 fair công bằng<br>\
 flow dòng chảy<br>\
@@ -406,9 +411,9 @@ international quốc tế<br>\
 lawyer luật sư<br>\
 mention (n,v) /ˈmenʃn/ đề cập<br>\
 policy chính sách<br>\
+dial (v,n) quay số, mặt đồng hồ, la bàn<br>\
 social xã hội<br>\
 speech bài phát biểu<br>\
-staff nhân viên<br>\
 toward hướng tới<br>\
 wood gỗ<br>\
 achieve đạt được<br>\
@@ -850,7 +855,8 @@ army quân đội<br>\
 billion tỷ<br>\
 carve khắc<br>\
 consult tham vấn<br>\
-emergency khẩn cấp<br>\
+emergency /i'm3:d3ansi/ (n) khẩn cấp<br>\
+procedure /pra'si:d3a/ (n) thủ tục<br>\
 fortune may mắn<br>\
 guarantee bảo đảm<br>\
 hike tăng<br>\
@@ -1022,7 +1028,6 @@ contest cuộc thi<br>\
 convict tội phạm<br>\
 garage (n) /ɡəˈrɑːdʒ/ gara<br>\
 journalist (n) /ˈdʒɜːrnəlɪst/ nhà báo<br>\
-pup chó con<br>\
 qualify (v) /ˈkwɑːlɪfaɪ/ đủ điều kiện<br>\
 repair sửa chữa<br>\
 exercise (n,v) thể dục<br>\
@@ -1098,7 +1103,8 @@ amuse vui<br>\
 cotton bông<br>\
 crash sụp đổ<br>\
 deck boong<br>\
-engage tham gia<br>\
+engage /in'geid3/ (v) tham gia<br>\
+vent /vent/ (n) lỗ thông hơi<br>\
 firm (a) chắc chắn, kiên cố<br>\
 fuel nhiên liệu<br>\
 grand lớn<br>\
@@ -1182,7 +1188,7 @@ scholarship (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
 treasure (n) /ˈtreʒər/ kho báu<br>\
 urge (v) /ɜːrdʒ/ thúc giục<br>\
-masquerade (n,v) /mæskəˈreɪd/ (n. dạ hội) hóa trang"
+masquerade (n,v) /mæskəˈreɪd/ ((n) dạ hội) hóa trang"
 },
 { title:"4k Book3", en:"arise phát sinh<br>\
 broaden (v) /ˈbrɔːdn/ Mở rộng<br>\
@@ -1238,6 +1244,26 @@ persist (v) /pərˈsɪst/ kiên trì<br>\
 scar (n) /skɑːr/ vết sẹo<br>\
 sensation (n) /senˈseɪʃn/ cảm giác, sự kích động<br>\
 sled (n) /sled/ xe trượt tuyết<br>\
+club /klab/ (v) đánh đập(bằng tay)<br>\
+dwindle /dwindl/ (v) giảm bớt, suy yếu<br>\
+endanger /in'deindzǝ/(v) gây nguy hiểm<br>\
+fade /feid/ (v) làm phai<br>\
+greed /gri:d/ (n) lòng tham<br>\
+halt /ho:lt/ (n) = the end <br>\
+illegally /i'li:gǝli/ (adv) bất hợp pháp<br>\
+ivory /'aivǝri/ (n) ngà voi<br>\
+ornamental /,o:nǝ'mentl/(a) thuộc trang sức<br>\
+poacher /pautfǝ/ (n) thợ săn trộm <br>\
+poach /pautfǝ/ (n) săn trộm <br>\
+profitable /profitabl/ (a) có lợi nhuận<br>\
+pup /pɅp/ (n) con của số loài đ/vật<br>\
+saw /sɔ:/ (v)<br>\
+slaughter /'slǝ:tǝ/ (n) sự giết chóc <br>\
+species /'spi:fi:z/ (n) giống loài<br>\
+supposedly /sǝ'pauzidli/ (adv) được cho là<br>\
+tuna /'tju:nǝ/ (n) cá ngừ<br>\
+tusk /task/ (n) răng nanh, ngà voi<br>\
+urgently /3:dzǝntli/ (adv) khẩn cấp, gấp<br>\
 tease (n,v) /tiːz/ (n)người hay chọc, trêu chọc(tức)<br>\
 valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
 }

@@ -26,6 +26,10 @@ const SynonymData = [
 	words:"recommend|suggest /səɡˈdʒest/",
 	type:"v",
 	mean:"gợi ý, đề xuất"
+},{
+	words:"disappear /dɪsəˈpɪr/|vanish",
+	type:"v",
+	mean:"biến mất"
 },
 {
 	words:"principal|headmaster",

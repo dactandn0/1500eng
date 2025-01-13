@@ -10,12 +10,12 @@ bottom (n) /ˈbɑːtəm/ dưới<br>\
 clever (a) thông minh<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
-finally cuối cùng<br>\
 hunt săn<br>\
 middle giữa<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 low-budget (a) ngân sách thấp<br>\
+unaggressive (a) không hung hăng<br>\
 moment (n) khoảnh khắc<br>\
 established (a) uy tín, chứng thật<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
@@ -23,7 +23,7 @@ addict (n) /ˈædɪkt/ người ghiện<br>\
 investors (n) nhà đầu tư<br>\
 investment (n) sự đầu tư<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
-undeniable (a) /ˌʌndɪˈnaɪəbl/ không thế chối cãi<br>\
+undeniable (a) /ʌndɪˈnaɪəbl/ không thế chối cãi<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 peace (n) sự hòa bình<br>\
@@ -41,7 +41,7 @@ rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
 advertise (v) làm quảng cáo<br>\
-advertistment (n) /ˌædvərˈtaɪzmənt/ quảng cáo<br>\
+advertistment (n) /ædvərˈtaɪzmənt/ quảng cáo<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 darken (v) /ˈdɑːrkən/ trở nên tối, làm tối<br>\
 poison (n,v) /ˈpɔɪzn/ chất độc, bỏ độc, bị nhiễm độc<br>\
@@ -52,8 +52,9 @@ platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
 kangaroo (n) /kæŋɡəˈruː/ chuột túi<br>\
 relevant (a) /ˈreləvənt/ liên quan<br>\
 promise hứa<br>\
-dwindling (a) giảm<br>\
-declare (v) tuyên bố<br>\
+dwindle (v) làm giảm, suy yếu<br>\
+dwindling (a) giảm, suy yếu<br>\
+declare (v) /dɪˈkler/ tuyên bố, tuyên ngôn<br>\
 reply trả lời<br>\
 safe an toàn<br>\
 trick mẹo<br>\
@@ -73,7 +74,7 @@ better (adj) ss>(good, well)<br>\
 best (adj) super.(good, well)<br>\
 worse (adj) ss>(bad, badly)<br>\
 worst (adj) super.(bad, badly)<br>\
-project dự án<br>\
+project (n) /ˈprɑːdʒekt/ dự án<br>\
 scare sợ hãi<br>\
 secret bí mật<br>\
 shout /ʃaʊt/ la hét (at/for)<br>\
@@ -367,8 +368,7 @@ fumes /fju:mz/ (n) khói<br>\
 celebrate ăn mừng<br>\
 activate /ˈæktɪveɪt/ (v) kích hoạt<br>\
 determine /di't3:min/ (v) xác định<br>\
-bathtub /ˈbæθtʌb/ (n) <br>\
-disappear (v) /ˌdɪsəˈpɪr/ biến mất<br>\
+bathtub /ˈbæθtʌb/ (n)  bồn tắm<br>\
 else nếu không<br>\
 fair công bằng<br>\
 flow dòng chảy<br>\
@@ -843,7 +843,7 @@ convert chuyển đổi<br>\
 decrease giảm<br>\
 fault lỗi<br>\
 fund quỹ<br>\
-insist kiên trì<br>\
+insist (v) /ɪnˈsɪst/ kiên trì<br>\
 mess lộn xộn<br>\
 metal kim loại<br>\
 monitor giám sát<br>\
@@ -852,13 +852,13 @@ passive thụ động<br>\
 quantity số lượng<br>\
 sue (v) /suː/ kiện tụng<br>\
 army quân đội<br>\
-billion tỷ<br>\
+billion /ˈbɪljən/ tỷ<br>\
 carve khắc<br>\
 consult tham vấn<br>\
-emergency /i'm3:d3ansi/ (n) khẩn cấp<br>\
+emergency /i'm3:d3ansi/ (n) sự khẩn cấp<br>\
 procedure /pra'si:d3a/ (n) thủ tục<br>\
 fortune may mắn<br>\
-guarantee bảo đảm<br>\
+guarantee (v) /ɡærənˈtiː/ bảo đảm<br>\
 hike tăng<br>\
 initial,intense ban đầu,mạnh mẽ<br>\
 lend cho vay<br>\
@@ -1214,6 +1214,9 @@ province (n) /ˈprɑːvɪns/ tỉnh<br>\
 satisfaction hài lòng<br>\
 sustain duy trì<br>\
 acquire thu thập<br>\
+threaten (v) /ˈθretn/ mối de dọa<br>\
+compliment (n,v) khen ngợi<br>\
+complimentary (a) khen ngợi (+about)<br>\
 awkward (a) /ˈɔːkwərd/ ngượng ngùng<br>\
 caretaker (n) /ˈkerteɪkər/ người chăm sóc<br>\
 deceive (v) /dɪˈsiːv/ lừa dối, ngoại tình, lừa phỉnh<br>\
@@ -1238,6 +1241,8 @@ bunch (n,v) /bʌntʃ/ bó, chùm, xâu<br>\
 chore (n) /tʃɔːr/ việc lặt vặt<br>\
 decent (a) /ˈdiːsnt/ tử tế<br>\
 disgrace (n) /dɪsˈɡreɪs/ sự ô nhục<br>\
+absorb (v) hấp thụ, thấm<br>\
+personality (n) tính cách<br>\
 loose (a) /luːs/ lỏng lẻo<br>\
 offend (v) /əˈfend/ xúc phạm, phạm tội<br>\
 persist (v) /pərˈsɪst/ kiên trì<br>\

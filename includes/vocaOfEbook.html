@@ -1,6 +1,6 @@
 
 <div ng-show="$root.bVocaOfEbook===true" class="mt-4">
-	<div ng-repeat="ebook in $root.vocaEbook track by $index">
-		<span compile="ebook.voca"></span>
+	<div ng-repeat="voca in $root.vocaEbook track by $index">
+		<span>{{voca}}</span>
 	</div>
 </div>

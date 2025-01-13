@@ -127,7 +127,7 @@ If smoke already exists in your room, hold a wet towel over your mouth and stay 
 Do not break any windows unless absolutely necessary. This will only worsen the situation.<br>\
 Do not try to exit by use of the elevators. <br>\
 It is important to remember t1wt in any emergency situations your ability to STAY CALM during the evacuation process is the key to success."
-	,voca:""
+	,voca:"activate,alarm,evacuation,fumes,alert,bathtub,determine,dial,elevator,personnel,procedure,proceed,staff,towel,emergency,engage"
 	,note:""
 },
 {

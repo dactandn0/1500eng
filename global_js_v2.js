@@ -198,6 +198,17 @@ function makeVocaEbook(rtScrope, ...args)
 {
 	rtScrope.vocaEbook = []
 	for (var i = 0; i < args.length; i++)
-    rtScrope.vocaEbook = rtScrope.vocaEbook.concat(args[i])
+	{
+		var book = args[i];
+		for (var k = 0; k < book.length; k++) 
+		{
+			var unit = book[k]
+			if (unit.voca && unit.voca.trim().length > 0)
+			{
+				var vocas = unit.voca.split(',')
+				rtScrope.vocaEbook = rtScrope.vocaEbook.concat(vocas)
+			}
+		}
+	}
 	
 }

@@ -118,15 +118,15 @@ If smoke already exists in your room, hold a wet towel over your mouth and stay 
 Do not break any windows unless absolutely necessary. This will only worsen the situation.<br>\
 Do not try to exit by use of the elevators. <br>\
 It is important to remember t1wt in any emergency situations your ability to STAY CALM during the evacuation process is the key to success."
-	,vi:"If you detect a fire, call emergency, 1999, and the Fire Department, 9+911. Engage the fire alarm, alert other guests, and exit the building.<br>\
-If a fire is detected inside the room, exit the room immediately, close the door, and activate the nearest emergency alarm. Notify in-house personnel by dialling 1999 and the Fire Department at 911.<br>\
-If you are alerted to fire in the building, make sure it is safe to leave your room. Check for heavy smoke. Once you have determined it is safe, take your room key and proceed to the exit nearest to you.<br>\
-If it is not safe to leave your room, fill your bathtub and other containers with water. <br>\
-Block all openings, such as vents and under the door, with wet towels. This will prevent fumes from entering your room. Call the hotel staff, informing them of your location.<br>\
-If smoke already exists in your room, hold a wet towel over your mouth and stay low. <br>\
-Do not break any windows unless absolutely necessary. This will only worsen the situation.<br>\
-Do not try to exit by use of the elevators. <br>\
-It is important to remember t1wt in any emergency situations your ability to STAY CALM during the evacuation process is the key to success."
+	,vi:"Nếu phát hiện có hỏa hoạn, hãy gọi cấp cứu, 1999 và Sở cứu hỏa, 9+911. Bật báo cháy, cảnh báo những khách khác và rời khỏi tòa nhà.<br>\
+Nếu phát hiện có hỏa hoạn bên trong phòng, hãy rời khỏi phòng ngay lập tức, đóng cửa và kích hoạt báo động khẩn cấp gần nhất. Thông báo cho nhân viên trong phòng bằng cách quay số 1999 và Sở cứu hỏa theo số 911.<br>\
+Nếu được cảnh báo có hỏa hoạn trong tòa nhà, hãy đảm bảo rằng bạn có thể rời khỏi phòng một cách an toàn. Kiểm tra xem có khói dày không. Sau khi xác định rằng phòng an toàn, hãy lấy chìa khóa phòng và đi đến lối thoát gần nhất.<br>\
+Nếu không thể rời khỏi phòng, hãy đổ đầy nước vào bồn tắm và các vật chứa khác. <br>\
+Chặn tất cả các lỗ hổng, chẳng hạn như lỗ thông hơi và gầm cửa, bằng khăn ướt. Điều này sẽ ngăn không cho khói xâm nhập vào phòng. Gọi cho nhân viên khách sạn, thông báo cho họ vị trí của bạn.<br>\
+Nếu đã có khói trong phòng, hãy che khăn ướt lên miệng và cúi thấp người. <br>\
+Không được đập vỡ bất kỳ cửa sổ nào trừ khi thực sự cần thiết. Điều này sẽ chỉ làm tình hình trở nên tồi tệ hơn.<br>\
+Không được cố gắng thoát ra bằng cách sử dụng thang máy. <br>\
+Điều quan trọng cần nhớ là trong bất kỳ tình huống khẩn cấp nào, khả năng GIỮ BÌNH TĨNH trong quá trình sơ tán chính là chìa khóa thành công."
 	,voca:"activate,alarm,evacuation,fumes,alert,bathtub,determine,dial,elevator,personnel,procedure,proceed,staff,towel,emergency,engage"
 	,note:""
 },
@@ -200,7 +200,23 @@ Tóm lại, cách mọi người diễn giải một sự kiện khiến sự ki
 Cụ thể, điều gì khiến mọi người đánh giá một tình huống là căng thẳng? Câu trả lời phụ thuộc vào mức độ đe dọa hoặc thách thức mà nó có vẻ như vậy. Những hoàn cảnh đe dọa hoặc thách thức cảm giác hạnh phúc của một người sẽ tạo ra căng thẳng. Những hoàn cảnh không đe dọa hoặc thách thức chúng ta thì không gây căng thẳng.<br>\
 Nhìn nhận căng thẳng theo cách này giúp chúng ta có định nghĩa chung về khái niệm căng thẳng: Căng thẳng là phản ứng với những hoàn cảnh có vẻ đe dọa hoặc thách thức.<br>\
 Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất cả phụ thuộc vào cách chúng ta đánh giá hoàn cảnh. Ngoài ra, những điều khiến chúng ta căng thẳng ngày hôm nay có thể không gây căng thẳng cho chúng ta vào thời điểm khác. Và điều ngược lại mới đúng: những thứ trước đây không gây căng thẳng thì giờ đây có thể gây căng thẳng."
-	,voca:"interpret",
+	,voca:"interpret,stressor,circumstance,appraise,surprisingly",
+},{
+	title:"Hot Days, Hot Nights ",
+	unit:6,
+	en:"[A] Here is what global warming could do in a few years: in Dallas, a doubled level of carbon dioxide would increase the number of days a year with temperatures above 100 degrees from nineteen to seventy-eight. On sixty-eight days, as opposed to the current four, the temperature wouldn't fall below 80 degrees at night. One hundred and sixty-two days a year, the temperature would top 90 degrees.<br>\
+[B] Although most scientists agree that increasing levels of carbon dioxide and other greenhouse gases will inevitably lead to global warming, no one is certain how fast and how much tempera tures will rise and what the effects will be in any geographical areas. This gives policymakers an excuse for delaying action. Some experts predict that within two centuries glaciers in the North and South Poles will melt, ocean levels will rise, and much of what is now the coast of the United States will be under water. They also predict great droughts and hurricanes, as a result of climate changes.<br>\
+[C] Other scientists think the changes will be much more gradual, even beneficial. After all, Canada would not complain if the productive corn-growing lands - now located in the US Midwest - were shifted north across the border.<br>\
+[D] While many nations could end up with milder climates, the change - perhaps 100 times faster than at any time in human history- could be so drastic that many of the benefits would be lost. There could be crowds of environmental refugees, as well, making the tragedy of the Dust Bowl era seem mild in comparison.<br>\
+[E] What can we do? Humanity's contribution to the greenhouse effect comes from so many basic activities that we can't hope to eliminate it completely. Some steps have already been taken. Since the 1970s, the use of CFCs as aerosol-can propellants has been banned in the United States.<br>\
+[F] Another strategy is to burn as much methane as possible. This adds C02 to the air, but since methane traps twenty times as much heat as C02 , the net result is worthwhile. The gas in many garbage landfills is already being used in a number of places around the United States. It is being used to heat thousands of homes."
+	,vi:"[A] Đây là những gì sự nóng lên toàn cầu có thể gây ra trong vài năm tới: ở Dallas, mức carbon dioxide tăng gấp đôi sẽ làm tăng số ngày trong năm có nhiệt độ trên 100 độ từ mười chín lên bảy mươi tám. Trong sáu mươi tám ngày, trái ngược với bốn ngày hiện tại, nhiệt độ sẽ không giảm xuống dưới 80 độ vào ban đêm. Một trăm sáu mươi hai ngày trong năm, nhiệt độ sẽ lên tới 90 độ.<br>\
+[B] Mặc dù hầu hết các nhà khoa học đều đồng ý rằng mức độ carbon dioxide và các khí nhà kính khác tăng lên chắc chắn sẽ dẫn đến sự nóng lên toàn cầu, nhưng không ai chắc chắn nhiệt độ sẽ tăng nhanh như thế nào và tăng bao nhiêu cũng như tác động sẽ ra sao ở bất kỳ khu vực địa lý nào. Điều này tạo cho các nhà hoạch định chính sách một cái cớ để trì hoãn hành động. Một số chuyên gia dự đoán rằng trong vòng hai thế kỷ, các sông băng ở Bắc Cực và Nam Cực sẽ tan chảy, mực nước biển sẽ dâng cao và phần lớn những gì hiện là bờ biển của Hoa Kỳ sẽ chìm dưới nước. Họ cũng dự đoán hạn hán và bão lớn do biến đổi khí hậu.<br>\
+[C] Các nhà khoa học khác cho rằng những thay đổi sẽ diễn ra dần dần hơn nhiều, thậm chí có lợi. Xét cho cùng, Canada sẽ không phàn nàn nếu những vùng đất trồng ngô năng suất cao - hiện nằm ở Trung Tây Hoa Kỳ - được chuyển về phía bắc qua biên giới.<br>\
+[D] Trong khi nhiều quốc gia có thể có khí hậu ôn hòa hơn, thì sự thay đổi - có lẽ nhanh hơn 100 lần so với bất kỳ thời điểm nào trong lịch sử loài người - có thể quá lớn đến mức nhiều lợi ích sẽ bị mất đi. Cũng có thể có rất nhiều người tị nạn môi trường, khiến thảm kịch của kỷ nguyên Dust Bowl có vẻ nhẹ nhàng hơn khi so sánh.<br>\
+[E] Chúng ta có thể làm gì? Đóng góp của nhân loại vào hiệu ứng nhà kính đến từ rất nhiều hoạt động cơ bản mà chúng ta không thể hy vọng loại bỏ hoàn toàn. Một số bước đã được thực hiện. Kể từ những năm 1970, việc sử dụng CFC làm chất đẩy bình xịt đã bị cấm ở Hoa Kỳ.<br>\
+[F] Một chiến lược khác là đốt càng nhiều mê-tan càng tốt. Điều này làm tăng C02 trong không khí, nhưng vì mêtan giữ nhiệt gấp 20 lần C02 nên kết quả cuối cùng là xứng đáng. Khí trong nhiều bãi chôn lấp rác đã được sử dụng ở một số nơi trên khắp Hoa Kỳ. Nó đang được sử dụng để sưởi ấm cho hàng nghìn ngôi nhà."
+	,voca:"",
 }
 
 

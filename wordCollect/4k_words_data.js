@@ -10,13 +10,14 @@ bottom (n) /ˈbɑːtəm/ dưới<br>\
 clever (a) thông minh<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
-hunt săn<br>\
+hunt (v) săn<br>\
 middle giữa<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 low-budget (a) ngân sách thấp<br>\
 unaggressive (a) không hung hăng<br>\
 moment (n) khoảnh khắc<br>\
+worsen (v) /ˈwɜːrsn/ trở nên xấu/tệ hơn<br>\
 established (a) uy tín, chứng thật<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
@@ -32,11 +33,14 @@ custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
 accumulation (n) sự tích tụ<br>\
+exposured to (v) /məˈriːn/ tiếp xúc với<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 square (n,a) /skwer/ quảng trường (a) vuông<br>\
 declaration (n) /dekləˈreɪʃn/ Tuyên ngôn<br>\
 department (n) /dɪˈpɑːrtmənt/ gian hàng, chi nhánh, ban, bộ<br>\
+exposure (n) phơi bày<br>\
 pleased (a) vui lòng<br>\
+vary (v) /ˈværi/ làm cho khác, làm thay đổi<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
@@ -358,9 +362,9 @@ original bản gốc<br>\
 pound pound<br>\
 process quy trình<br>\
 publish xuất bản<br>\
+appraise (v) /əˈpreɪz/ đánh giá<br>\
 theater sân khấu<br>\
 wealth (n) /welθ/ sự giàu có<br>\
-appreciate đánh giá cao<br>\
 available có sẵn<br>\
 beat đánh bại<br>\
 bright sáng<br>\
@@ -969,7 +973,7 @@ fool fool<br>\
 forbid forbid<br>\
 illustrate illustrate<br>\
 indeed indeed<br>\
-interpret interpret<br>\
+interpret (v) hiểu cặn kẽ<br>\
 kindly kindly<br>\
 motive motive<br>\
 nest nest<br>\

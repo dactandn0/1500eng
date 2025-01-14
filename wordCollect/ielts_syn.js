@@ -23,13 +23,21 @@ const SynonymData = [
 	mean:"thanh thiếu niên"
 },
 {
-	words:"recommend|suggest /səɡˈdʒest/",
+	words:"recommend /rekəˈmend/|suggest /səɡˈdʒest/",
 	type:"v",
 	mean:"gợi ý, đề xuất"
+},{
+	words:"appraise /əˈpreɪz/|judge /dʒʌdʒ/|appreciate /əˈpriːʃieɪt/",
+	type:"v",
+	mean:"đánh giá"
 },{
 	words:"disappear /dɪsəˈpɪr/|vanish",
 	type:"v",
 	mean:"biến mất"
+},{
+	words:"get rid of|eliminate",
+	type:"v",
+	mean:"loại bỏ"
 },
 {
 	words:"principal|headmaster",

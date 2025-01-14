@@ -975,6 +975,7 @@ stingy (a) /ˈstɪnʤi/ keo kiệt <br>\
 liar (n) /laɪər/ người nói dối<br>\
 ambitious (a) /æmˈbɪʃəs/ tham vọng<br>\
 extrovert (n) /ˈɛk.strə.vɜːt/ người hướng ngoại<br>\
+circumstance (n) /ˈɪn.trə.vɜːt/ hoàn cảnh, tình huống<br>\
 introvert (n) /ˈɪn.trə.vɜːt/ người hướng nội<br>\
 anxiety (n) /æŋˈzaɪəti/ lo lắng<br>\
 funny (a) /'fʌni/ vui tính<br>\
@@ -986,7 +987,6 @@ blunt (a) /blʌnt/ cùn (dao), nói thẳng thắn.<br>\
 open-minded (a)  /əʊpən ˈmaɪndɪd/ cởi mở<br>\
 unfriendly (a) /n'frendli/ khó gần<br>\
 judgemental (a) /dʒʌdʒˈmentl/ tính phán xét<br>\
-judge (n) /dʒʌdʒ/ phán xét<br>\
 nosy (a)  /ˈnəʊzi/ tính tò mò, tọc mạch<br>\
 generous (a) /ˈdʒenərəs/ hào phóng<br>\
 compassionate (a) /kamipæfant/ giàu lòng trắc ẩn<br>\

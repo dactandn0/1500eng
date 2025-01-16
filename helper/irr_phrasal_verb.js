@@ -14,9 +14,12 @@ const BAT_QUI_TAC_DATA = [
 	'wear|wore|worn|mặc',
 	'leave|left|left|đặt, để',
 	'put|put|put|đặt, để',
+	'pass|passed|passed|qua',
 ]
 
 const PHRASAL_VERB_DATA = [
+	{word: 'pass', prep: 'away', mean: 'chết'},
+	{word: 'put', prep: 'aside', mean: 'bỏ qua'},
 	{word: 'carry', prep: 'out', mean: 'tiến hành'},
 	{word: 'call', prep: 'for', mean: 'yêu cầu'},
 	{word: 'take', prep: 'off', mean: 'cất cánh, bắt đầu thành công'},

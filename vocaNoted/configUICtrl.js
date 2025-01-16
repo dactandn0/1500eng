@@ -1,3 +1,7 @@
+var Helper_AudioPitchKey = 'AudioPitch';
+var Helper_AudioRateKey = 'AudioRate';
+var Helper_RepeatNumKey = 'RepeatNum';
+var Helper_AdjAudioTimeKey = 'AdjAudioTime';
 
 // https://codepen.io/lonekorean/pen/PozMjgO
 var app = angular.module("configUIApp", 
@@ -5,8 +9,9 @@ var app = angular.module("configUIApp",
 ]);
 app.controller("configUICtrl", function($scope) {
 
-$scope.audioPitch = 1
+$scope.audioPitch = 1.5
 $scope.audioRate = 0.8
+$scope.repeatNum = 1
 $scope.adjAudioTime = 8
 $scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
@@ -20,6 +25,10 @@ $scope.setAudioRate = function () {
 	Helper_saveDB(Helper_AudioRateKey, $scope.audioRate);
 }
 
+$scope.setRepeatNum = function () {
+	Helper_saveDB(Helper_RepeatNumKey, $scope.repeatNum);
+}
+
 $scope.setAdjAudioTime = function () {
 	Helper_saveDB(Helper_AdjAudioTimeKey, $scope.adjAudioTime);
 }
@@ -30,8 +39,9 @@ $scope.saveSelectedVoiceIdx = function () {
 
 $scope.loadDB = function () {
 	$scope.VOICES = Helper_Voices
-	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1)
+	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
+	$scope.repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
 	$scope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
 };

@@ -123,7 +123,6 @@ coral (n)/ˈkɒrəl/ san hô<br>\
 coral reef (n)/kɒr.əl ˈriːf/ rạn san hô<br>\
 shellfish (n)/ˈʃel.fɪʃ/ động vật có vỏ<br>\
 starfish (n)/ˈstɑːrfɪʃ/ sao biển<br>\
-seal (n)/siːl/ hải cẩu<br>\
 turtle (n)/ˈtɜːtl/ rùa biển<br>\
 crab (n)/kræb/ cua",
 },
@@ -147,7 +146,6 @@ zero (n) /ˈzɪə.rəʊ/ số không<br>\
 hundred (n) /ˈhʌn.drəd/ một trăm<br>\
 thousand (n) /ˈθaʊ.zənd/ một nghìn<br>\
 million (n) /ˈmɪl.jən/ một triệu<br>\
-billion (n) /ˈbɪl.jən/ một tỷ<br>\
 half (n) /hɑːf/ một nửa",
 },
 {
@@ -321,8 +319,6 @@ precious stone (n) /preʃ.əs ˈstəʊn/ đá quý",
 ,{
 title:"environment",
 en:"land (n) /lænd/ đất, đất đai<br>\
-vanish (v) /ˈvænɪʃ/ biến mất<br>\
-pollute (v) /pəˈluːt/ làm ô nhiễm<br>\
 logging (n) /ˈlɔːɡɪŋ/ phá rừng<br>\
 diurnal (a) /daɪˈɜːrnl/ loài sống ban ngày<br>\
 nocturnal (a) /nɑːkˈtɜːrnl/ loài sống về đêm<br>\
@@ -375,7 +371,6 @@ mavelous (a) /ˈmɑːrvələs/ tuyệt vời<br>\
 wonderful (a) /ˈwʌndərfl/ tuyệt vời, phi thường<br>\
 magnificent (a) /mæɡˈnɪfɪsnt/ tráng lệ, lộng lẫy<br>\
 breathtaking (a) /ˈbreθteɪkɪŋ/ ngoạn mục, choáng ngợt<br>\
-sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
 extinction (n) /ik'stinkfn/ sự tuyệt chủng<br>\
 extinct (a) /ik'stink/ bị tuyệt chủng"
 },
@@ -436,7 +431,6 @@ paramedic (n) /pær.əˈmed.ɪk/ nhân viên y tế<br>\
 stretcher (n) /ˈstretʃ.ər/ cáng cứu thương<br>\
 rush (n) /rʌʃ/ đưa đi, chuyển đi (nhanh)<br>\
 treat (v) /triːt/ điều trị, chữa trị<br>\
-condition (n) /kənˈdɪʃ.ən/ tình trạng<br>\
 recovery (n) /rɪˈkʌv.ər.i/ sự bình phục<br>\
 suffer (v) /ˈsʌf.ər/ chịu đựng<br>\
 deteriorate (v) /dɪˈtɪə.ri.ə.reɪt/ xấu đi, tệ hơn<br>\
@@ -522,7 +516,6 @@ store (n) /stɔːr/ cửa hàng<br>\
 gift shop (n) /ˈɡɪft ʃɒp/ cửa hàng đồ lưu niệm<br>\
 shop (n) /ʃɒp/ cửa hàng<br>\
 food stall (n) /fuːd stɔːl/ quán ăn fast food<br>\
-restaurant (n) /fɑːst ˈfuːd res.trɒnt/ cửa hàng thức ăn nhanh<br>\
 dry cleaner (n) /draɪˈkliː.nə/ tiệm giặt ủi<br>\
 shoe store (n) /ʃuːstɔːr/ tiệm giày<br>\
 barbershop (n) /ˈbɑː.bə.ʃɒp/ tiệm cắt tóc nam<br>\
@@ -646,7 +639,7 @@ mountain (n) /ˈmaʊn.tɪn/ núi<br>\
 port (n) /pɔːt/ bến cảng<br>\
 lake (n) /leɪk/ hồ<br>\
 sand (n) /sænd/ cát<br>\
-valley (n) /ˈvæl.i/ thung lũng<br>\
+valley (n) /ˈvæl.i/ thung lũng<br>\party
 waterfall (n) /ˈwɔː.tə.fɔːl/ thác nước<br>\
 barn (n) /bɑːn/ kho thóc<br>\
 harvest (n) /ˈhɑː.vɪst/ vụ gặt<br>\
@@ -663,7 +656,6 @@ vow (n) /vaʊ/ lời thề<br>\
 groomsman (n) /ˈɡruːmz.mən/ phù rể<br>\
 groom (n) /ɡruːm/ chú rể<br>\
 tuxedo (n) /tʌkˈsiː.dəʊ/ áo ximôckinh<br>\
-party (n) /ˈpɑː.ti/ bữa tiệc<br>\
 wedding card (n) /ˈwed.ɪŋ kɑːd/ thiệp mời đám cưới<br>\
 bouquet (n) /buˈkeɪ/ bó hoa<br>\
 married (a) /ˈmær.id/ đã kết hôn<br>\
@@ -951,7 +943,6 @@ emotional (a) /i'mǝufǝnl/ đa cảm<br>\
 emotion (n) /ɪˈməʊʃn/ cảm xúc<br>\
 bad-tempered (a) /'bæd temped/ nóng tính<br>\
 resilient (a) /rɪˈzɪliənt/ kiên cường<br>\
-nervous (a) /'nз:vǝs/ lo lắng<br>\
 distracted (a) /dis'træktrd/ bị phân tâm<br>\
 dishonest (a) /dis'onist/ không trung thực<br>\
 rude (a) /ru:d/ thô lỗ<br>\
@@ -1004,7 +995,7 @@ careful /'keaful/ cẩn thận<br>\
 gentle /'dzεntl/ lịch lãm<br>\
 enthusiastic (a) /n0ju:z'æstik/ nhiệt tình<br>\
 enthusiast (n) /ɪnˈθuːziæst/ người đam mê, nhiệt tâm<br>\
-dull /dʌl/ đần độn<br>\
+dull /dʌl/ đần độn, u ám<br>\
 faithful /'fereful/ chung thủy <br>\
 kind /kaind/ tốt bụng<br>\
 courageous /kǝ'reidzǝs/ can đảm<br>\
@@ -1026,7 +1017,6 @@ polite /pǝ'lart/ lịch sự<br>\
 creative /kri(:)'eitiv/ sáng tạo<br>\
 broad-minded /bb:d-'mandid/ nghĩ rộng<br>\
 placid /'plæsid/ điềm tĩnh<br>\
-jealous /'dzεlǝs/ ghen tuông<br>\
 helpful /'helpful/ hữu ích <br>\
 persistent /pǝ'sistant/ kiên trì<br>\
 sensible /'sɛnsǝbl/ lý trí<br>\
@@ -1041,7 +1031,6 @@ shy /jai/ nhút nhát<br>\
 determined (a) /di'tз:mind/ kiên định<br>\
 sociable (a) /'sǝufǝbl/ hòa đồng<br>\
 worried /'wʌrid/ lo lắng<br>\
-thoughtful /0:tful/ chu đáo<br>\
 humble /'hʌmbl/ khiêm tốn<br>\
 frank /frænk/ thẳng thắn<br>\
 junky (n) /ˈdʒʌŋki/ kẻ nghiện ngập<br>\
@@ -1054,7 +1043,6 @@ obedient /ǝ'bi:diǝnt/ vâng lời",
 sleepy (a) /ˈsliːpi/ buồn ngủ<br>\
 surprised (a) /səˈpraɪzd/ ngạc nhiên, bất ngờ<br>\
 grateful (a) /ˈɡreɪtfl/ biết ơn<br>\
-scared (a) /skeəd/ - /skerd/ sợ hãi<br>\
 embarrassed (a) /ɪmˈbærəst/ bối rối, xấu hổ<br>\
 confused (a) /kənˈfjuːzd/ lúng túng, bối rối<br>\
 hungry (a) /ˈhʌŋɡri/ đói bụng<br>\
@@ -1078,7 +1066,6 @@ cider (n) /ˈsaɪdər/ rượu táo<br>\
 rum (n) /rʌm/ rượu rum<br>\
 ginger ale (n) /ˈʤɪnʤər eɪl/ nước gừng<br>\
 champagne (n) /ʃæmˈpeɪn/ rượu sâm panh<br>\
-bitter (a) /ˈbɪtər/ đắng<br>\
 malt (n) /mɔːlt/ mạch nha<br>\
 barley (n) /ˈbɑːr.li/ lúa mạch<br>\
 distillery (n) /dɪˈstɪləri/ nhà máy rượu<br>\
@@ -1119,7 +1106,6 @@ peach blossom (n) /piːtʃ ˈblɒs.əm/ hoa đào",
 	en:"movie (n) /ˈmuː.vi/ phim<br>\
 famous (a) /ˈfeɪməs/ nổi tiếng<br>\
 comedy (n) /ˈkɑmədi/ hài kịch<br>\
-audience (n) /ˈɔː.di.əns/ khán giả<br>\
 film festival (n) /fɪlm ˈfɛstɪvəl/ liên hoan phim<br>\
 trailer (n) /ˈtreɪlər/ đoạn phim quảng cáo<br>\
 movie star (n) /ˈmuː.vi stɑːr/ ngôi sao điện ảnh<br>\
@@ -1255,7 +1241,6 @@ song (n) /sɔːŋ/ bài hát<br>\
 sing (v) /sɪŋ/ hát, ca hát<br>\
 piano (n) /piˈæn.oʊ/ đàn piano<br>\
 guitar (n) /ɡɪˈtɑːr/ đàn ghi-ta<br>\
-instrument (n) /ˈɪn.strə.mənt/ nhạc cụ<br>\
 harmony (n) /ˈhɑːr.mə.ni/ hoà hợp, hòa âm<br>\
 melody (n) /ˈmɛl.ə.di/ giai điệu<br>\
 string (n) /strɪŋ/ dây đàn<br>\
@@ -1395,7 +1380,6 @@ snowflake (n) /ˈsnoʊ.fleɪk/ bông tuyết<br>\
 puddle (n) /ˈpʌd.əl/ vũng nước mưa<br>\
 lightning (n) /ˈlaɪt.nɪŋ/ tia chớp<br>\
 mild (a) /maɪld/ ôn hoà<br>\
-dull (a) /dʌl/ u ám<br>\
 shelter (n) /ˈʃɛl.tər/ chỗ trú ẩn<br>\
 celsius (a) /ˈsɛl.si.əs/ (thuộc) độ c",
 },
@@ -1489,7 +1473,7 @@ graduate (v) /ˈɡrædʒ.u.eɪt/ tốt nghiệp<br>\
 degree (n) /dɪˈɡriː/ bằng cấp<br>\
 thesis (n) /ˈθiː.sɪs/ luận văn, luận án<br>\
 lecture (n) /ˈlɛk.tʃər/ bài giảng, bài thuyết trình<br>\
-debate (n) /dɪˈbeɪt/ cuộc tranh luận<br>\
+debate (n,v) /dɪˈbeɪt/ cuộc tranh luận<br>\
 higher education (n) /ˈhaɪ.ər ɛdʒ.əˈkeɪ.ʃən/ giáo dục đại học<br>\
 educational (a) /edʒuˈkeɪʃənl/ giáo dục<br>\
 semester (n) /sɪˈmɛs.tər/ học kỳ<br>\
@@ -1645,7 +1629,6 @@ elephant (n) /ˈɛl.ɪ.fənt/ voi<br>\
 panther (n) /ˈpæn.θər/ báo đen<br>\
 leopard (n) /ˈlɛp.ərd/ báo<br>\
 fox (n) /fɒks/ cáo<br>\
-dinosaur (n) /ˈdaɪ.nəsɔːr/ khủng long<br>\
 snail (n) /sneɪl/ ốc sên<br>\
 crow (n) /kroʊ/ quạ<br>\
 migration (n) /maɪˈɡreɪʃn/ di cư<br>\
@@ -1835,10 +1818,8 @@ recipient (n) rɪˈsɪpiənt/ người nhận<br>\
 secure (a) /sɪˈkjʊr/ (cảm giác) yên tâm, an toàn<br>\
 service (n) /ˈsɜːrvɪs/ dịch vụ<br>\
 spacious (a) /ˈspeɪʃəs/ rộng rãi<br>\
-staff (n) /stæf/ nhân viên<br>\
 subscribe (v) /səbˈskraɪb/ đặt mua<br>\
 surface mail (n) /ˈsɜːrfɪs meɪl/ thư gửi bằng đường bộ <br>\
-technology (n) /tɛkˈnɒlədʒi/ công nghệ<br>\
 thoughtful (a) /ˈθɔːtfəl/ ân cần, chu đáo<br>\
 transfer (v) /trænsˈfɜːr/ chuyển<br>\
 transmit (v) /trænzˈmɪt/ truyền<br>\
@@ -1860,7 +1841,6 @@ borrow (v) /ˈbɒroʊ/ vay, mượn<br>\
 rent (v) /rɛnt/ thuê<br>\
 distribution (n) /dɪstrɪˈbjuːʃən/ sự phân phối, phân phát<br>\
 co-ordinate (v) /koʊˈɔrdəneɪt/ phối hợp, sắp xếp<br>\
-purchase (v) /ˈpɜrʧəs/ mua<br>\
 adapt (v) /əˈdæpt/ thích nghi<br>\
 accumulate (v) /əˈkjuːmjəleɪt/ tích lũy<br>\
 stock exchange (n) /stɒk ɪksˈʧeɪndʒ/ sàn giao dịch chứng khoán<br>\
@@ -1904,7 +1884,6 @@ compensation (n) /kɒmpənˈseɪʃən/ sự đền bù, bồi thường<br>\
 commit (v) /kəˈmɪt/ cam kết<br>\
 short-term cost (n) /ˈʃɔrttɜrm kɒst/ chi phí ngắn hạn<br>\
 long-term gain (n) /ˈlɒŋtɜrm ɡeɪn/ tiền kiếm được dài hạn<br>\
-expense (n) /ɪkˈspɛns/ phí tổn<br>\
 invoice (n) /ˈɪnvɔɪs/ hóa đơn<br>\
 bribery (n) /ˈbraɪbəri/ sự đút lót, hối lộ<br>\
 corrupt (v) /kəˈrʌpt/ tham nhũng<br>\

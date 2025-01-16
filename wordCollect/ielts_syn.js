@@ -23,6 +23,10 @@ const SynonymData = [
 	mean:"thanh thiếu niên"
 },
 {
+	words:"ignore|put aside",
+	type:"v",
+	mean:"bỏ qua"
+},{
 	words:"recommend /rekəˈmend/|suggest /səɡˈdʒest/",
 	type:"v",
 	mean:"gợi ý, đề xuất"

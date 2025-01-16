@@ -1,9 +1,12 @@
 
 <div>
 	<form name="audioLoopForm" role="group">
-		<input id="aa" type="radio" name="radioLoop" ng-model="radioVal" ng-value="1" ng-change="radioLoopChange(1)" /><label for="aa" class="mr-3">Rpeat</label>
-		<input id="bb" type="radio" name="radioLoop" ng-model="radioVal" ng-value="2" ng-change="radioLoopChange(2)" /><label for="bb" class="mr-3">Next</label>
-		<input id="cc" type="radio" name="radioLoop" ng-model="radioVal" ng-value="0" ng-change="radioLoopChange(0)" /><label for="cc" class="mr-3">Rdom</label>
+		<input id="aa" type="radio" name="radioLoop" ng-model="radioVal" ng-value="1" ng-change="radioLoopChange(1)" />
+		<label for="aa" class="mr-3">Forever</label>
+		<input id="bb" type="radio" name="radioLoop" ng-model="radioVal" ng-value="2" ng-change="radioLoopChange(2)" />
+		<label for="bb" class="mr-3">R{{repeatNum}}_Next</label>
+		<input id="cc" type="radio" name="radioLoop" ng-model="radioVal" ng-value="0" ng-change="radioLoopChange(0)" />
+		<label for="cc" class="mr-3">R{{repeatNum}}_Rdom</label>
 	</form>
 </div>
 

@@ -26,6 +26,18 @@
 
 	<br>
 
+<label>Repeat num:</label>
+<input 
+	type="range" 
+	class="form-range mt-3 mx-3"
+	min="1" 
+	max="20" 
+	step="1"
+	ng-model="repeatNum" 
+	ng-change="setRepeatNum()"> {{repeatNum}}
+
+	<br>
+
 <!-- <select class="my-3" ng-model="selectedVoiceIdx" ng-change="saveSelectedVoiceIdx()">
 		  <option ng-value="-1">Nope</option>
           <option ng-value="$index" ng-repeat="voice in VOICES">

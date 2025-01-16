@@ -9,12 +9,12 @@ const PHRA_VERB_TAG_END = '</z1a>'
 var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
 var kNgClickTagClose = '</kkk>';
 var kNgClickTagClose2 = '<\/kkk>';
-var Helper_AudioPitchKey = 'AudioPitch';
-var Helper_AudioRateKey = 'AudioRate';
-var Helper_AdjAudioTimeKey = 'AdjAudioTime';
+
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
 var UtterEnd = true;		// prevent a word from constantly double-click
+
+var Helper_AudioRepeatCurVal = 0;
 
 var kReplaceWords = [
 	{ src: 'ms\\.*', desc: 'Ms'},
@@ -267,17 +267,36 @@ Helper_AudioLoop = function (scope) {
 	var num = scope.stories.length;
 
     var loopRadio = Helper_loadAudioLoop();
+    var repeatNumConfig = Helper_loadFloat(Helper_RepeatNumKey, 1)
 
-    if (loopRadio === 0) // play next
+    if (loopRadio === 0) // play random
     {
-    	nextStoryIdx = Math.floor(Math.random() * num);
+    	if (Helper_AudioRepeatCurVal >= repeatNumConfig - 1) 
+    	{
+    		nextStoryIdx = Math.floor(Math.random() * num);
+    		Helper_AudioRepeatCurVal = 0;
+    	}
+    	else
+    	{
+    		Helper_AudioRepeatCurVal = Helper_AudioRepeatCurVal + 1
+    	}
+    	console.log(Helper_AudioRepeatCurVal)
     }
     if (loopRadio === 2) // play next
     {
-    	nextStoryIdx = scope.storyIdx + 1;
-    	if (nextStoryIdx > num - 1) { nextStoryIdx = 0 }; 
+    	if (Helper_AudioRepeatCurVal >= repeatNumConfig - 1) 
+    	{
+    		nextStoryIdx = scope.storyIdx + 1;
+    		if (nextStoryIdx > num - 1) { nextStoryIdx = 0 }; 
+    		Helper_AudioRepeatCurVal = 0;
+    	} 
+    	else
+    	{
+    		Helper_AudioRepeatCurVal = Helper_AudioRepeatCurVal + 1
+    	}
+    	console.log(Helper_AudioRepeatCurVal)
     }
-    if (loopRadio !== 1) // loop
+    if (loopRadio !== 1) // loop forever
     {
     	scope.storyIdx = nextStoryIdx;
     	scope.fetchStory(scope.storyIdx, true);

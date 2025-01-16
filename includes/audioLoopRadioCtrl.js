@@ -3,9 +3,12 @@ var app = angular.module('audioLoopRadioApp', []);
 app.controller('audioLoopRadioCtrl', function($scope, $rootScope,  $timeout) {
 
 $scope.radioVal = 1
+$scope.repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
 
 $scope.radioLoopChange = function (val) {
 	Helper_saveAudioLoop(val)
+	Helper_AudioRepeatCurVal = 0
+	console.log("Helper_AudioRepeatCurVal :" + Helper_AudioRepeatCurVal)
 }
 
 $scope.finishLoading = function(){
@@ -20,11 +23,6 @@ $scope.$on('$includeContentLoaded', function(){
 $scope.$on('$viewContentLoaded', function(){
 	$scope.finishLoading();
 });
-
-
-function axxx() {
-	console.log('loooppp')
-}
 
 });
 

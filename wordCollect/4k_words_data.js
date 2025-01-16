@@ -7,7 +7,6 @@ angry giận dữ<br>\
 arrive /əˈraɪv/ đến<br>\
 attack tấn công<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
-clever (a) thông minh<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 hunt (v) săn<br>\
@@ -175,7 +174,6 @@ beside bên cạnh<br>\
 taste (n,v) /teɪst/ mùi vị, ((v) )thưởng thức<br>\
 challenge (n) /ˈtʃælɪndʒ/ thách thức<br>\
 claim yêu cầu<br>\
-condition (n) /kənˈdɪʃn/ điều kiện<br>\
 contribute (v) /kənˈtrɪbjuːt/ góp phần<br>\
 difference khác biệt<br>\
 divide chia rẽ<br>\
@@ -751,7 +749,6 @@ biology sinh học<br>\
 cage lồng<br>\
 colleague đồng nghiệp<br>\
 colony thuộc địa<br>\
-debate (v) /dɪˈbeɪt/ tranh luận<br>\
 depart khởi hành<br>\
 depress ức chế<br>\
 factual thực tế<br>\
@@ -880,7 +877,7 @@ commit cam kết<br>\
 compose soạn<br>\
 dormitory ký túc xá<br>\
 exhaust khí thải<br>\
-greenhouse,ignore nhà kính,bỏ qua<br>\
+greenhouse nhà kính<br>\
 obvious rõ ràng<br>\
 physics vật lý<br>\
 remind nhắc nhở<br>\
@@ -928,7 +925,7 @@ commute (n) trao đổi<br>\
 confirm confirm<br>\
 criticize chỉ trích<br>\
 differ (v) khác biệt<br>\
-expense chi phí<br>\
+expense (n) /ɪkˈspens/ chi phí<br>\
 formal (a) chính thức<br>\
 invent (v) phát minh<br>\
 junior junior<br>\
@@ -1031,7 +1028,6 @@ bucket thùng<br>\
 contest cuộc thi<br>\
 convict tội phạm<br>\
 garage (n) /ɡəˈrɑːdʒ/ gara<br>\
-journalist (n) /ˈdʒɜːrnəlɪst/ nhà báo<br>\
 qualify (v) /ˈkwɑːlɪfaɪ/ đủ điều kiện<br>\
 repair sửa chữa<br>\
 exercise (n,v) thể dục<br>\

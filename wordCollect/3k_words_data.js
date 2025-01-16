@@ -639,7 +639,7 @@ mountain (n) /ˈmaʊn.tɪn/ núi<br>\
 port (n) /pɔːt/ bến cảng<br>\
 lake (n) /leɪk/ hồ<br>\
 sand (n) /sænd/ cát<br>\
-valley (n) /ˈvæl.i/ thung lũng<br>\party
+valley (n) /ˈvæl.i/ thung lũng<br>\
 waterfall (n) /ˈwɔː.tə.fɔːl/ thác nước<br>\
 barn (n) /bɑːn/ kho thóc<br>\
 harvest (n) /ˈhɑː.vɪst/ vụ gặt<br>\

@@ -65,6 +65,8 @@ $scope.stopSound = function () {
 $scope.playFullSound = function () {
 	$scope.audioAdjTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
 	
+	Helper_AudioRepeatCurVal = 0
+
 	if ($scope.bPlaying)
 	{
 		$scope.stopSound();

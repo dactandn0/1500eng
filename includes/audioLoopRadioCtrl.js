@@ -7,8 +7,7 @@ $scope.repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
 
 $scope.radioLoopChange = function (val) {
 	Helper_saveAudioLoop(val)
-	Helper_AudioRepeatCurVal = 0
-	console.log("Helper_AudioRepeatCurVal :" + Helper_AudioRepeatCurVal)
+//	console.log("Helper_AudioRepeatCurVal :" + Helper_AudioRepeatCurVal)
 }
 
 $scope.finishLoading = function(){

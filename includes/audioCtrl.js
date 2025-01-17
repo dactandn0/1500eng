@@ -3,6 +3,9 @@ var app = angular.module('audioApp', []);
 
 app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, $rootScope, toastr) {
 
+$rootScope.audio_repeatCur = 0;
+$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
+
 $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
 	$rootScope.audioSrc = ''
@@ -57,7 +60,7 @@ $scope.stopSound = function () {
 	}
 	$scope.curTime = 0;
 	$scope.bPlaying = false;
-	$scope.bPause=false;
+	$scope.bPause = false;
 
 	$scope.$evalAsync();
 };
@@ -65,8 +68,6 @@ $scope.stopSound = function () {
 $scope.playFullSound = function () {
 	$scope.audioAdjTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
 	
-	Helper_AudioRepeatCurVal = 0
-
 	if ($scope.bPlaying)
 	{
 		$scope.stopSound();

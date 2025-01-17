@@ -1,4 +1,4 @@
-const HELPER_FOR_TEST = false
+const HELPER_FOR_TEST = true
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
@@ -13,8 +13,6 @@ var kNgClickTagClose2 = '<\/kkk>';
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
 var UtterEnd = true;		// prevent a word from constantly double-click
-
-var Helper_AudioRepeatCurVal = 0;
 
 var kReplaceWords = [
 	{ src: 'ms\\.*', desc: 'Ms'},
@@ -262,41 +260,29 @@ function processStory (story, isAlert = true) {
 }
 
 
-Helper_AudioLoop = function (scope) {
+Helper_AudioLoop = function (scope, rootScope) {
 	var nextStoryIdx = scope.storyIdx;
 	var num = scope.stories.length;
 
     var loopRadio = Helper_loadAudioLoop();
-    var repeatNumConfig = Helper_loadFloat(Helper_RepeatNumKey, 1)
-
+    if (loopRadio !== 1) // jump when audio done
+    {
+    	rootScope.audio_repeatCur += 1
+    	if (rootScope.audio_repeatCur >= rootScope.audio_repeatNum) 
+    	{
+    		rootScope.audio_repeatCur = 0;
+    	}
+    }
     if (loopRadio === 0) // play random
     {
-    	if (Helper_AudioRepeatCurVal >= repeatNumConfig - 1) 
-    	{
-    		nextStoryIdx = Math.floor(Math.random() * num);
-    		Helper_AudioRepeatCurVal = 0;
-    	}
-    	else
-    	{
-    		Helper_AudioRepeatCurVal = Helper_AudioRepeatCurVal + 1
-    	}
-    	console.log(Helper_AudioRepeatCurVal)
+    	nextStoryIdx = Math.floor(Math.random() * num);
     }
     if (loopRadio === 2) // play next
     {
-    	if (Helper_AudioRepeatCurVal >= repeatNumConfig - 1) 
-    	{
-    		nextStoryIdx = scope.storyIdx + 1;
-    		if (nextStoryIdx > num - 1) { nextStoryIdx = 0 }; 
-    		Helper_AudioRepeatCurVal = 0;
-    	} 
-    	else
-    	{
-    		Helper_AudioRepeatCurVal = Helper_AudioRepeatCurVal + 1
-    	}
-    	console.log(Helper_AudioRepeatCurVal)
+    	nextStoryIdx += 1;
+    	if (nextStoryIdx > num - 1) { nextStoryIdx = 0 }; 
     }
-    if (loopRadio !== 1) // loop forever
+    if (loopRadio !== 1 && rootScope.audio_repeatCur === 0) // jump when audio done
     {
     	scope.storyIdx = nextStoryIdx;
     	scope.fetchStory(scope.storyIdx, true);
@@ -306,6 +292,8 @@ Helper_AudioLoop = function (scope) {
 
 Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, reset) 
 {
+	rootScope.audio_repeatCur = 0;
+
 	if (reset==true) 
 	{
 		scope.$broadcast("child_stopSound");

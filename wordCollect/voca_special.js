@@ -13,7 +13,6 @@ safe (a.) an toàn | (n) cái két<br>\
 train (n) tàu hỏa |(v) huấn luyện<br>\
 patient (a.) kiên nhẫn | (n) bệnh nhân<br>\
 play (v) chơi | (n) vở kịch<br>\
-order (v) yêu cầu | (n) trật tự<br>\
 park (v) đỗ xe | (n) công viên<br>\
 fine (a) ổn thỏa | (v) phạt tiền s.o + money<br>\
 lie (v) nằm | (n,v) (lời) nói dối [lie + to + sb + about + sth]<br>\

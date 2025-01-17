@@ -23,7 +23,7 @@ const SynonymData = [
 	mean:"thanh thiếu niên"
 },
 {
-	words:"ignore|put aside",
+	words:"ignore|put aside|neglect /nɪˈɡlekt/",
 	type:"v",
 	mean:"bỏ qua"
 },{
@@ -117,7 +117,7 @@ const SynonymData = [
 	mean:"xinh đẹp"
 },
 {
-	words:"friend|buddy (thân)|pal|impoverished",
+	words:"friend|buddy (thân)|pal",
 	type:"n",
 	mean:"bạn bè"
 },
@@ -130,11 +130,6 @@ const SynonymData = [
 	words:"various /ˈveriəs/|different /ˈdɪfrənt/|several /ˈsevrəl/",
 	type:"a",
 	mean:"khác nhau"
-},
-{
-	words:"neglect /nɪˈɡlekt/|ignore /ɪɡˈnɔːr/",
-	type:"v",
-	mean:"không quan tâm, bỏ bê"
 },
 {
 	words:"pursue /pərˈsuː/|woo /wuː/",

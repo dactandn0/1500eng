@@ -34,7 +34,7 @@ $scope.createAudioSrc = function() {
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
-	Helper_AudioLoop($scope);
+	Helper_AudioLoop($scope, $rootScope);
 });
 
 $scope.units = [

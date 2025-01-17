@@ -7,11 +7,10 @@ var Helper_AdjAudioTimeKey = 'AdjAudioTime';
 var app = angular.module("configUIApp", 
 [
 ]);
-app.controller("configUICtrl", function($scope) {
+app.controller("configUICtrl", function($scope, $rootScope) {
 
 $scope.audioPitch = 1.5
 $scope.audioRate = 0.8
-$scope.repeatNum = 1
 $scope.adjAudioTime = 8
 $scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
@@ -26,7 +25,7 @@ $scope.setAudioRate = function () {
 }
 
 $scope.setRepeatNum = function () {
-	Helper_saveDB(Helper_RepeatNumKey, $scope.repeatNum);
+	Helper_saveDB(Helper_RepeatNumKey, $rootScope.audio_repeatNum);
 }
 
 $scope.setAdjAudioTime = function () {
@@ -41,7 +40,10 @@ $scope.loadDB = function () {
 	$scope.VOICES = Helper_Voices
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
-	$scope.repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
+
+	// LoadDb in audioCtrl.js
+	// $rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
+
 	$scope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
 };

@@ -43,7 +43,6 @@ vary (v) /ˈværi/ làm cho khác, làm thay đổi<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
-advertise (v) làm quảng cáo<br>\
 advertistment (n) /ædvərˈtaɪzmənt/ quảng cáo<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 darken (v) /ˈdɑːrkən/ trở nên tối, làm tối<br>\
@@ -55,7 +54,6 @@ platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
 kangaroo (n) /kæŋɡəˈruː/ chuột túi<br>\
 relevant (a) /ˈreləvənt/ liên quan<br>\
 promise hứa<br>\
-dwindle (v) làm giảm, suy yếu<br>\
 dwindling (a) giảm, suy yếu<br>\
 declare (v) /dɪˈkler/ tuyên bố, tuyên ngôn<br>\
 reply trả lời<br>\
@@ -317,7 +315,6 @@ novel tiểu thuyết<br>\
 outline (n) /ˈaʊtlaɪn/ phác thảo<br>\
 poet nhà thơ<br>\
 print in<br>\
-scene (n) /siːn/ cảnh<br>\
 sheet tờ<br>\
 store cửa hàng<br>\
 suffer chịu đựng<br>\
@@ -360,7 +357,6 @@ original bản gốc<br>\
 pound pound<br>\
 process quy trình<br>\
 publish xuất bản<br>\
-appraise (v) /əˈpreɪz/ đánh giá<br>\
 theater sân khấu<br>\
 wealth (n) /welθ/ sự giàu có<br>\
 available có sẵn<br>\
@@ -959,7 +955,6 @@ pause tạm dừng<br>\
 priest linh mục<br>\
 profession nghề nghiệp <br>\
 whether (conj) /ˈweðər/ liệu, dù là<br>\
-adopt (v) /əˈdɑːpt/ nhận nuôi<br>\
 beg (v) ăn xin, khẩn cầu<br>\
 beyond (prep) /bɪˈjɑːnd/ vượt trên<br>\
 clearly (adv) /ˈklɪrli/ rõ ràng<br>\
@@ -1234,7 +1229,6 @@ ridiculous (a) /rɪˈdɪkjələs/ vô lý, tức cười<br>\
 satisfactory thỏa đáng<br>\
 shepherd người chăn cừu<br>\
 venture (n) /ˈventʃər/ mạo hiểm<br>\
-wheat (n) /wiːt/ lúa mì<br>\
 alley (n) /ˈæli/ hẻm, đường(ngỏ) hẹp<br>\
 ax (n) /æks/ cây rùi<br>\
 bunch (n,v) /bʌntʃ/ bó, chùm, xâu<br>\

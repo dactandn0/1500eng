@@ -296,15 +296,15 @@ casserole (n) /ˈkæsəroʊl dɪʃ/ nồi hầm món ăn, thịt hầm",
 }
 ,
 {
-title:"jewelry",
+title:"jewellery",
 en:"earring (n) /ˈɪə.rɪŋ/ bông tai<br>\
 necklace (n) /ˈnek.ləs/ dây chuyền<br>\
 bracelet (n) /ˈbreɪ.slət/ vòng tay<br>\
 brooch (n) /brəʊtʃ/ trâm cài<br>\
 hair clip (n) /ˈheə klɪp/ kẹp tóc<br>\
 wedding ring (n) /ˈwed.ɪŋ rɪŋ/ nhẫn cưới<br>\
-jeweler (n) /ˈdʒuː.ə.lɚ/ thợ kim hoàn<br>\
-jewelry store (n) /ˈdʒuː.əl.ri stɔː r/ cửa hàng trang sức<br>\
+jeweller (n) /ˈdʒuː.ə.lɚ/ thợ kim hoàn<br>\
+jewellery store (n) /ˈdʒuː.əl.ri stɔː r/ cửa hàng trang sức<br>\
 anklet (n) /ˈæŋ.klət/ vòng chân<br>\
 noble (a) /ˈnəʊ.bəl/ quý<br>\
 luxurious (a) /lʌɡˈʒʊə.ri.əs/ sang trọng, xa hoa<br>\
@@ -527,7 +527,7 @@ display (n,v) /dɪˈspleɪ/ trưng bày"
 {
 title:"entertainment",
 en:"circus (n) /ˈsɜː.kəs/ rạp xiếc<br>\
-scene (n) /siːn/ phân cảnh<br>\
+scene (n) /siːn/ cảnh, phân cảnh<br>\
 applaud (v) /əˈplɔːd/ vỗ tay (tán thưởng)<br>\
 perform (v) /pəˈfɔːm/ trình diễn, biểu diễn<br>\
 exhibit (n) /ɪɡˈzɪb.ɪt/ vật triển lãm<br>\
@@ -555,7 +555,6 @@ seasick (a,n) /ˈsiːsɪk/ bị say sóng<br>\
 journey (n) /ˈdʒɜː.ni/ chuyến đi<br>\
 peak season (n) /piːk ˈsiː.zən/ mùa cao điểm<br>\
 route (n) /ruːt/ tuyến đường<br>\
-trip (n) /trɪp/ chuyến đi (ngắn ngày)<br>\
 excursion (n) /ɪkˈskɜː.ʃən/ chuyến tham quan<br>\
 luggage (n) /ˈlʌɡ.ɪdʒ/ hành lý<br>\
 tourist (n) /ˈtʊə.rɪst/ du khách<br>\
@@ -965,7 +964,6 @@ lazy (a) /'lerzi/ lười biếng <br>\
 stingy (a) /ˈstɪnʤi/ keo kiệt <br>\
 liar (n) /laɪər/ người nói dối<br>\
 ambitious (a) /æmˈbɪʃəs/ tham vọng<br>\
-extrovert (n) /ˈɛk.strə.vɜːt/ người hướng ngoại<br>\
 circumstance (n) /ˈɪn.trə.vɜːt/ hoàn cảnh, tình huống<br>\
 introvert (n) /ˈɪn.trə.vɜːt/ người hướng nội<br>\
 anxiety (n) /æŋˈzaɪəti/ lo lắng<br>\
@@ -1213,7 +1211,6 @@ distinctive (a) /dɪˈstɪŋk.tɪv/ đặc trưng, khác biệt<br>\
 flavor (n) /ˈfleɪ.vər/ hương vị<br>\
 balanced diet (n) /ˈbæl.ənst ˈdaɪ.ət/ chế độ ăn uống cân bằng<br>\
 stale (a) /steɪl/ ôi, thiu<br>\
-sour (a) /ˈsaʊ.ər/ chua<br>\
 burnt (a) /bɜːrnt/ cháy, khét<br>\
 overdone (a) /oʊ.vərˈdʌn/ quá chín, rục<br>\
 underdone (a) /ʌn.dərˈdʌn/ chưa chín, tái<br>\
@@ -1268,7 +1265,6 @@ classical music (n) /ˈklæs.ɪ.kəl mjuː.zɪk/ nhạc cổ điển",
 engagement (n) /ɪnˈɡeɪdʒ.mənt/ đính hôn<br>\
 ring (n) /rɪŋ/ nhẫn<br>\
 romantic (a) /roʊˈmæn.tɪk/ lãng mạn<br>\
-sweet (a) /swiːt/ ngọt ngào<br>\
 alone (a) /əˈloʊn/ một mình<br>\
 boyfriend (n) /ˈbɔɪ.frɛnd/ bạn trai<br>\
 girlfriend (n) /ˈɡɜːl.frɛnd/ bạn gái<br>\
@@ -1289,7 +1285,7 @@ wine (n) /waɪn/ rượu vang<br>\
 combo (n) /ˈkɒm.boʊ/ gói, bộ<br>\
 side dish (n) /saɪd dɪʃ/ đồ ăn kèm<br>\
 meal (n) /miːl/ bữa ăn<br>\
-order (v) /ˈɔːr.dər/ gọi món, thu xếp, ban hành<br>\
+order (n,v) /ˈɔːr.dər/ gọi món, thu xếp, ban hành (n) trật tự<br>\
 speciality (n) /speʃ.iˈæl.ə.ti/ đặc sản<br>\
 dessert (n) /dɪˈzɜːrt/ món tráng miệng<br>\
 salad (n) /ˈsæl.əd/ rau trộn<br>\
@@ -1428,8 +1424,7 @@ size (n) /saɪz/ kích cỡ",
 }
 ,{
 	title:"body parts",
-	en:"head (n) /hɛd/ đầu<br>\
-face (n) /feɪs/ khuôn mặt<br>\
+	en:"face (n) /feɪs/ khuôn mặt<br>\
 hair (n) /hɛr/ tóc<br>\
 ear (n) /ɪr/ tai<br>\
 neck (n) /nɛk/ cổ<br>\

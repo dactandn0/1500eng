@@ -27,7 +27,7 @@ undeniable (a) /ʌndɪˈnaɪəbl/ không thế chối cãi<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 peace (n) sự hòa bình<br>\
-dressing (n) mặc quần áo, nước xốt, gia vị, cách ăn mặc<br>\
+dressing (n) mặc quần áo, nước xốt, gia vị, cách ăn mặc, băng vết thương<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
@@ -461,7 +461,7 @@ include (v) /ɪnˈkluːd/ bao gồm<br>\
 manage quản lý<br>\
 mystery (n) /ˈmɪstəri/ bí ẩn<br>\
 mystic (a) /ˈmɪstɪk/ bí ẩn<br>\
-occur xảy ra<br>\
+occur (v) xảy ra<br>\
 opposite đối diện<br>\
 plate tấm<br>\
 receive nhận<br>\
@@ -878,7 +878,7 @@ obvious rõ ràng<br>\
 physics vật lý<br>\
 remind nhắc nhở<br>\
 secretary thư ký<br>\
-severe nghiêm trọng<br>\
+severe (a) /sɪˈvɪr/ nghiêm trọng<br>\
 talent tài năng<br>\
 thesis luận án<br>\
 uniform đồng phục<br>\
@@ -943,6 +943,23 @@ curious tò mò<br>\
 delay trì hoãn<br>\
 diary nhật ký<br>\
 element yếu tố<br>\
+adequately (adv) một cách đầy đủ<br>\
+aspirin (n) thuốc giảm sốt aspirin<br>\
+compress (v) đè ép<br>\
+consult (v) tham khảo, thảo luận<br>\
+ease (n,v) xoa dịu<br>\
+germ (n) mầm bệnh, (v) vi trùng<br>\
+graze (v) làm trầy (n) vết bầm<br>\
+injection (n) sự tiêm<br>\
+itchy (n) ngứa<br>\
+knit (v) đan len (chỉ)<br>\
+plaster (n) thạch cao, miếng dán<br>\
+relieve (v) /rɪˈliːv/ làm dịu<br>\
+rough (a) gồ ghề, thô<br>\
+rubbery (n) cao su<br>\
+scald (v,n) /skɔːld/ làm phỏng, chỗ phỏng<br>\
+stiff (v) /stɪf/ cứng nhắc, cứng đầu, bướng<br>\
+unconscious (a) /ʌnˈkɑːnʃəs/ vô thức, không còn tri giác<br>\
 faith đức tin<br>\
 grain hạt<br>\
 greet chào mừng<br>\
@@ -1005,7 +1022,7 @@ miner thợ mỏ<br>\
 mineral khoáng sản<br>\
 participate tham gia<br>\
 permission quyền<br>\
-pour đổ<br>\
+pour (v) /pɔːr/ đổ<br>\
 presence sự hiện diện<br>\
 raw thô<br>\
 satellite vệ tinh<br>\

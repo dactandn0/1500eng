@@ -216,7 +216,52 @@ Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất c�
 [D] Trong khi nhiều quốc gia có thể có khí hậu ôn hòa hơn, thì sự thay đổi - có lẽ nhanh hơn 100 lần so với bất kỳ thời điểm nào trong lịch sử loài người - có thể quá lớn đến mức nhiều lợi ích sẽ bị mất đi. Cũng có thể có rất nhiều người tị nạn môi trường, khiến thảm kịch của kỷ nguyên Dust Bowl có vẻ nhẹ nhàng hơn khi so sánh.<br>\
 [E] Chúng ta có thể làm gì? Đóng góp của nhân loại vào hiệu ứng nhà kính đến từ rất nhiều hoạt động cơ bản mà chúng ta không thể hy vọng loại bỏ hoàn toàn. Một số bước đã được thực hiện. Kể từ những năm 1970, việc sử dụng CFC làm chất đẩy bình xịt đã bị cấm ở Hoa Kỳ.<br>\
 [F] Một chiến lược khác là đốt càng nhiều mê-tan càng tốt. Điều này làm tăng C02 trong không khí, nhưng vì mêtan giữ nhiệt gấp 20 lần C02 nên kết quả cuối cùng là xứng đáng. Khí trong nhiều bãi chôn lấp rác đã được sử dụng ở một số nơi trên khắp Hoa Kỳ. Nó đang được sử dụng để sưởi ấm cho hàng nghìn ngôi nhà."
-	,voca:"",
+	,voca:"ban,beneficial,benefits,border,carbon dioxide,comparison,complain,delay,drastic,droughts,eliminate,era,geographical,glaciers,greenhouse,Humanity,hurricanes,inevitably,landfills,methane,mild,policymakers,refugees,tragedy,trap,worthwhile",
+},{
+	title:"Passage One",
+	unit:7
+	,en:"Cuts <br>\
+Bleeding can usually be stopped by applying pressure to the cut for 2 or 3 minutes. The cut can then be carefully inspected. If it has bled freely, any germs will normally have been washed away by the blood.<br>\
+Apply a plaster dressing firmly, bringing the edges of the cut together so that it knits quickly. Keep dry for 1 to 3 days.<br>\
+If the cut is deep and the edges cannot be pulled together with a dressing, consult the doctor or practice nurse. A tetanus injection may be needed.<br>\
+Grazes <br>\
+Dirt will often enter a graze caused by falling on a hard or rough surface. It must be cleaned out carefully.<br>\
+After cleaning, leave the graze uncovered. Exposure to the air will cause a scab to form. This will gradually dry and fall off. It is not a good idea to apply a dressing. This may stick to the graze or make it infected.<br>\
+Bruises <br>\
+Bruises are very common in children. They normally get better in 7 to 10 days. Parents some times worry that a bone may be broken. Children's bones are rubbery and rarely break, but if in doubt consult the doctor.<br>\
+If a child gets up at once after a fall and moves about normally, it is unlikely that a bone has been broken. But the child may be stiff the next day because of the bruising which has occurred.·<br>\
+Severe bruising can be treated by rest for 24 to 48 hours. In the case of a badly bruised leg, the limb should be raised. Lying in bed is the easiest way to do this.<br>\
+A cold compress may ease a bad bruise if applied at once. This is made by soaking some material in water and applying it to the bruise.<br>\
+Bruises on the head may cause anxiety. If the patient was not 'knocked out' and can remember the accident, it is unlikely that serious injury has resulted.<br>\
+But if the patient was knocked unconscious and cannot remember what happened, he or she should be taken to a hospital Casualty Department.<br>\
+Insect Bites <br>\
+These are common in the summer. They look like spots about 5mm across. They are very itchy and usually appear on exposed parts, eg: arms and legs.<br>\
+The itching can be relieved by calamine lotion. <br>\
+Burns and Scalds <br>\
+Minor burns and scalds cause redness of the skin. Immediate treatment by pouring cold water over a burn is often helpful. If burns cause severe blistering or break the skin, the doctor should be consulted.<br>\
+Sunburn should, if possible, be prevented by avoiding long exposure and covering exposed areas adequately. It may be treated by calamine lotion and soluble aspirin to relieve the pain."
+	,vi:"Vết cắt <br>\
+Chảy máu thường có thể được cầm bằng cách ấn vào vết cắt trong 2 hoặc 3 phút. Sau đó, có thể kiểm tra cẩn thận vết cắt. Nếu vết cắt chảy máu tự do, thông thường mọi vi khuẩn sẽ bị máu cuốn trôi.<br>\
+Băng bó chặt bằng băng thạch cao, khép các mép vết cắt lại với nhau để chúng liền lại nhanh chóng. Giữ khô trong 1 đến 3 ngày.<br>\
+Nếu vết cắt sâu và không thể kéo các mép lại với nhau bằng băng, hãy tham khảo ý kiến ​​bác sĩ hoặc y tá thực hành. Có thể cần tiêm phòng uốn ván.<br>\
+Vết trầy xước <br>\
+Bụi bẩn thường xâm nhập vào vết trầy xước do rơi xuống bề mặt cứng hoặc gồ ghề. Phải vệ sinh cẩn thận.<br>\
+Sau khi vệ sinh, hãy để vết trầy xước không bị che phủ. Tiếp xúc với không khí sẽ khiến vảy hình thành. Vảy sẽ khô dần và bong ra. Không nên băng bó. Điều này có thể dính vào vết trầy xước hoặc làm vết trầy xước bị nhiễm trùng.<br>\
+Bầm tím <br>\
+Bầm tím rất phổ biến ở trẻ em. Chúng thường sẽ khỏi sau 7 đến 10 ngày. Đôi khi cha mẹ lo lắng rằng xương có thể bị gãy. Xương của trẻ em mềm dẻo và hiếm khi bị gãy, nhưng nếu nghi ngờ, hãy tham khảo ý kiến ​​bác sĩ.<br>\
+Nếu trẻ đứng dậy ngay sau khi bị ngã và di chuyển bình thường, thì khả năng xương bị gãy là rất thấp. Nhưng trẻ có thể bị cứng vào ngày hôm sau do vết bầm tím đã xảy ra.·<br>\
+Vết bầm tím nghiêm trọng có thể được điều trị bằng cách nghỉ ngơi trong 24 đến 48 giờ. Trong trường hợp chân bị bầm tím nặng, cần phải nâng cao chân. Nằm trên giường là cách dễ nhất để thực hiện điều này.<br>\
+Đắp gạc lạnh có thể làm dịu vết bầm tím nặng nếu đắp ngay lập tức. Cách thực hiện là ngâm một số vật liệu trong nước và đắp lên vết bầm tím.<br>\
+Vết bầm tím trên đầu có thể gây lo lắng. Nếu bệnh nhân không bị 'đánh bất tỉnh' và có thể nhớ vụ tai nạn, thì khả năng chấn thương nghiêm trọng là không cao.<br>\
+Nhưng nếu bệnh nhân bị bất tỉnh và không nhớ chuyện gì đã xảy ra, thì nên đưa bệnh nhân đến Khoa Cấp cứu của bệnh viện.<br>\
+Cắn côn trùng <br>\
+Những vết này thường gặp vào mùa hè. Chúng trông giống như những đốm có đường kính khoảng 5mm. Chúng rất ngứa và thường xuất hiện ở những vùng hở, ví dụ như cánh tay và chân.<br>\
+Có thể làm dịu cơn ngứa bằng kem calamine. <br>\
+Bỏng và bỏng nước <br>\
+Bỏng nước nhẹ và bỏng nước gây đỏ da. Việc điều trị ngay bằng cách dội nước lạnh lên vết bỏng thường có hiệu quả. Nếu vết bỏng gây phồng rộp nghiêm trọng hoặc rách da, thì nên tham khảo ý kiến ​​bác sĩ.<br>\
+Nếu có thể, nên ngăn ngừa cháy nắng bằng cách tránh tiếp xúc lâu với ánh nắng mặt trời và che chắn các vùng hở một cách đầy đủ. Có thể điều trị bằng kem calamine và aspirin hòa tan để giảm đau."
+	,voca:"adequately,aspirin,bruise,compress,consult,dressing,ease,germ,graze,injection,itchy,knit,occurred,patient,plaster,pour,relieve,rough,rubbery,scalds,scab,severe,stiff,unconscious"
+	,note:""
 }
 
 

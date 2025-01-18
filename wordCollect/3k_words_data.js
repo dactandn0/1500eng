@@ -747,6 +747,7 @@ sprain (n) /spreɪn/ bong gân<br>\
 burn (n) /bɜːn/ bỏng<br>\
 malaria (n) /məˈleriə/ sốt rét<br>\
 scabies (n) /ˈskeɪbiːz/ bệnh ghẻ<br>\
+scab (n) /ˈskeɪb/ bệnh ghẻ<br>\
 smallpox (n) /ˈsmɔːlpɑːks/ bệnh đậu mùa<br>\
 heart attack (n) /hɑːrt əˈtæk/ nhồi máu cơ tim<br>\
 tuberculosis (n) /tuːbɜːrkjəˈloʊsɪs/ bệnh lao<br>\

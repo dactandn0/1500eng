@@ -202,13 +202,22 @@ function makeVocaEbook(rtScrope, ...args)
 		var book = args[i];
 		for (var k = 0; k < book.length; k++) 
 		{
-			var unit = book[k]
-			if (unit.voca && unit.voca.trim().length > 0)
+			var lesson = book[k]
+			if (lesson.voca && lesson.voca.trim().length > 0)
 			{
-				var vocas = unit.voca.split(',')
-				rtScrope.vocaEbook = rtScrope.vocaEbook.concat(vocas)
+				var vocas = lesson.voca.split(',');
+				var color = "blue";
+				if (k % 2=== 0) color = 'green'
+				var jsonEle = {
+					unit: lesson.unit ? lesson.unit : '#',
+					title:lesson.title ? lesson.title : '#',
+					color: color,
+					vocas: vocas
+				}
+				rtScrope.vocaEbook.push(jsonEle)
 			}
 		}
 	}
+	console.log(rtScrope.vocaEbook)
 	
 }

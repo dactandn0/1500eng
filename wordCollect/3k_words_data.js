@@ -965,7 +965,6 @@ lazy (a) /'lerzi/ lười biếng <br>\
 stingy (a) /ˈstɪnʤi/ keo kiệt <br>\
 liar (n) /laɪər/ người nói dối<br>\
 ambitious (a) /æmˈbɪʃəs/ tham vọng<br>\
-circumstance (n) /ˈɪn.trə.vɜːt/ hoàn cảnh, tình huống<br>\
 introvert (n) /ˈɪn.trə.vɜːt/ người hướng nội<br>\
 anxiety (n) /æŋˈzaɪəti/ lo lắng<br>\
 funny (a) /'fʌni/ vui tính<br>\

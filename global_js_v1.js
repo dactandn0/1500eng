@@ -261,6 +261,11 @@ function processStory (story, isAlert = true) {
 
 
 Helper_AudioLoop = function (scope, rootScope) {
+	if (!rootScope) 
+	{
+		alert('Helper_AudioLoop :: rootScope = undefined!')
+		return;
+	}
 	var nextStoryIdx = scope.storyIdx;
 	var num = scope.stories.length;
 

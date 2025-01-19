@@ -5,6 +5,7 @@ document.write('<script src="./wordCollect/voca_special.js" type="text/javascrip
 document.write('<script src="./wordCollect/3k_words_data.js" type="text/javascript"></script>');
 document.write('<script src="./wordCollect/5k_ielt_words.js" type="text/javascript"></script>');
 document.write('<script src="./wordCollect/4k_words_data.js" type="text/javascript"></script>');
+document.write('<script src="./wordCollect/beginner_reading_voca.js" type="text/javascript"></script>');
 // document.write('<script src="./wordCollect/4k_words_data_make.js" type="text/javascript"></script>');
 
 

@@ -2,6 +2,7 @@
 var VocaToUI = WORDS_3K_DATA
   //  .concat(IELTS_5K_DATA)
     .concat(word_4000_data)
+    .concat(BEGINNER_READING_VOCA)
     .concat(VOCA_SPECIAL)
 
 var VocaForSearch = VocaToUI
@@ -204,7 +205,6 @@ $scope.Idx_n_L_WSp_ = function (event) {
   if (!found) {
     doShowToast(touchedWord, false)
   }
-  
 }
 
 function doShowToast(wordFull, isInDB) {

@@ -219,7 +219,6 @@ step bước<br>\
 still vẫn<br>\
 taste nếm ​​thử<br>\
 throw ném<br>\
-benefit lợi ích<br>\
 certain chắc chắn<br>\
 chance cơ hội<br>\
 effect hiệu ứng<br>\
@@ -709,7 +708,6 @@ threat mối đe dọa<br>\
 victim ancestor nạn nhân tổ tiên<br>\
 angle góc<br>\
 boot khởi động<br>\
-border viền<br>\
 congratulate chúc mừng<br>\
 frame khung<br>\
 heaven thiên đường<br>\
@@ -943,23 +941,6 @@ curious tò mò<br>\
 delay trì hoãn<br>\
 diary nhật ký<br>\
 element yếu tố<br>\
-adequately (adv) một cách đầy đủ<br>\
-aspirin (n) thuốc giảm sốt aspirin<br>\
-compress (v) đè ép<br>\
-consult (v) tham khảo, thảo luận<br>\
-ease (n,v) xoa dịu<br>\
-germ (n) mầm bệnh, (v) vi trùng<br>\
-graze (v) làm trầy (n) vết bầm<br>\
-injection (n) sự tiêm<br>\
-itchy (n) ngứa<br>\
-knit (v) đan len (chỉ)<br>\
-plaster (n) thạch cao, miếng dán<br>\
-relieve (v) /rɪˈliːv/ làm dịu<br>\
-rough (a) gồ ghề, thô<br>\
-rubbery (n) cao su<br>\
-scald (v,n) /skɔːld/ làm phỏng, chỗ phỏng<br>\
-stiff (v) /stɪf/ cứng nhắc, cứng đầu, bướng<br>\
-unconscious (a) /ʌnˈkɑːnʃəs/ vô thức, không còn tri giác<br>\
 faith đức tin<br>\
 grain hạt<br>\
 greet chào mừng<br>\
@@ -1120,7 +1101,6 @@ vent /vent/ (n) lỗ thông hơi<br>\
 firm (a) chắc chắn, kiên cố<br>\
 fuel nhiên liệu<br>\
 grand lớn<br>\
-hurricane bão<br>\
 loss mất mát<br>\
 misinformation (n) /mɪsɪnfərˈmeɪʃn/ thông tin sai lệch<br>\
 plain đồng bằng<br>\

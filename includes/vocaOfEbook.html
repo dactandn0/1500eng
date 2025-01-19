@@ -1,6 +1,9 @@
 
 <div ng-show="$root.bVocaOfEbook===true" class="mt-4">
-	<div ng-repeat="voca in $root.vocaEbook track by $index">
-		<span ng-click="Idx_n_L_WSp_($event)">{{voca}}</span>
+	<div ng-repeat="($index,jsonEle) in $root.vocaEbook track by $index">
+		<span>Unit: {{jsonEle.unit}}. {{jsonEle.title}}</span>
+		<div ng-repeat="($indexB, voca) in jsonEle.vocas track by $indexB" ng-style="{color: jsonEle.color}">
+			<span ng-click="Idx_n_L_WSp_($event)">{{voca}}</span>
+		</div>
 	</div>
 </div>

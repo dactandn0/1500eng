@@ -106,6 +106,118 @@ Release lots of energy<br>\
 Improve hand-eye coordination"
 	,vi:""
 	,voca:"",
-}
+},{
+	title:"Buoi2",
+	en:"DO YOU PREFER X TO Y?<br>\
++ Do you prefer writing letters to sending emails?<br>\
++ Do you prefer talking on the phone to chatting online?<br>\
++ Do you prefer to travel by bike or on foot?<br>\
+Model answer<br>\
+Interview: Do you prefer chatting online or talking on the phone?<br>\
+Candidate: Generally, I prefer chatting online. I nearly always find that chatting online can be more sociable as you can speak to more than one person at the same time. Also, chatting online is often much more fun because you can send smiles, photos, and even videos!<br>\
+FIND + N + ADJ<br>\
+Gợi ý trả lời <br>\
+Lựa chọn<br>\
+Giải thích kèm công thức so sánh <br>\
+Ví dụ để giải thích rõ hơn, bám vào 4W: What, When, Where, Who.<br>\
+BƯỚC 1: Đưa ra lựa chọn ->  <br>\
+Cách 1: dùng cấu trúc PREFER<br>\
+Cách 2: I enjoy both, but if I had to choose, I’d go for<br>\
+BƯỚC 2: GIẢI THÍCH KÈM SO SÁNH<br>\
+NGỮ PHÁP VỀ SO SÁNH (CÔNG THỨC)<br>\
+Đuôi -er: 1 âm tiết 	<br>\
+hot -> hotter, short -> shorter<br>\
+Đuôi -ier: 2 âm tiết và kết thúc đuôi -y<br>\
+easy -> easier, lazy -> lazier<br>\
+more: từ 2 âm tiết trở lên<br>\
+<br>\
+Tính từ bất quy tắc<br>\
+good – better (– best) ; bad – worse (– worst)<br>\
+simple – simpler (-- simplest)<br>\
+far – farther/further (– farthest/furthest). Example: His house is far from town, but her house is even farther.<br>\
+My health is better/worse than hers<br>\
+Khi so sánh X và Y, nên sử dụng một trong các cấu trúc so sánh sau:<br>\
+X + BE + COMPARATIVE + THAN + Y <br>\
+Watching TV is more interesting than listening to the radio.<br>\
+Cars are prettier than buses.<br>\
+X + BE + NOT AS + ADJECTIVE + AS + Y.<br>\
+Listening to the radio is not as interesting as watching TV.<br>\
+Buses are not as pretty as cars.<br>\
+Khi muốn nhấn mạnh sự so sánh, dùng MUCH<br>\
+→ FE: Living in the city is much more convenient than in the countryside<br>\
+→ FE: Driving a motorbike is much faster than walking.<br>\
+<br>\
+Compared to A, B is…. (dùng cấu trúc so sánh hơn)<br>\
+Compared to watching movies at the cinema, watching movies at home is more comfortable.<br>\
+Unlike A, B is…<br>\
+Unlike coffee, tea is really good for health.<br>\
+A…, while B <br>\
+I prefer sending emails to writing letters because sending emails is much faster, while writing letters is more time-consuming (tốn thời gian hơn)<br>\
+<br>\
+* DISCOURSE MARKERS.<br>\
+ACTUALLY/ IN FACT.<br>\
+Actually và in fact: rất thường được người bản xứ sử dụng để giới thiệu điều gì gây ngạc nhiên hoặc thay đổi những gì đã nói trước đó.<br>\
+It is actually a lot cheaper to go to that supermarket.<br>\
+In fact, public buses are a lot more environmentally friendly than many people think.<br>\
+NEEDLESS TO SAY<br>\
+Needless to say:  dùng để giới thiệu hoặc nhấn mạnh rằng điều bạn nói là hiển nhiên hoặc mọi người điều biết<br>\
+I like eating lots of cakes, but needless to say, that will make me fat.<br>\
+He’s done very badly in his exams, so needless to say, He won’t get into university this year.<br>\
+ALSO, ON TOP OF THAT/PLUS/WHAT’S MORE: được sử dụng để bổ sung thêm thông tin. <br>\
+I prefer cycling rather than driving a car because it helps me keep fit. Also, it’s better for the environment and it’s also cheaper!<br>\
+<br>\
+PRACTICE<br>\
+DO YOU PREFER TALKING ON THE PHONE OR CHATTING ONLINE?<br>\
+TALKING ON THE PHONE<br>\
+CHATTING ONLINE<br>\
+<br>\
+-to make a phone call : gọi điện thoại<br>\
+-immediate (adj) : ngay lập tức, immediately (adv)<br>\
+-get immediate responses<br>\
+-personal (adj): cá nhân, riêng tư<br>\
+-hear the other person’s tone of voice: nghe được giọng điệu của người khác<br>\
+-have a quicker exchange of ideas: trao đổi ý tưởng nhanh hơn<br>\
+-focused (adj): tập trung<br>\
+-have meaningful conversations: có những cuộc trò chuyện có ý nghĩa<br>\
+-social media platforms : các nền tảng mạng xã hội<br>\
+-messaging apps: ứng dụng nhắn tin<br>\
+-to message several people at once: nhắn tin cho nhiều người cùng một lúc<br>\
+-to stay in touch with a group: giữ liên lạc với 1 nhóm<br>\
+-sociable (adj) : dễ gần, thoải mái<br>\
+- flexible (adj): linh hoạt<br>\
+-convenient (adj) in public or noisy places: thuận tiện ở nơi công cộng hoặc nơi ồn ào<br>\
+- x annoy people<br>\
+<br>\
+To be honest, I prefer chatting online rather than talking on the phone. This is because it is easy to message several people at once and to stay in touch with my friends. Also, I find chatting online convenient and flexible because I can chat with my friends anytime without the fear of disturbing them<br>\
+DO YOU PREFER WRITING LETTERS OR SENDING EMAILS?<br>\
+WRITING LETTERS<br>\
+SENDING EMAILS<br>\
+-to write by hand : viết bằng tay<br>\
+-handwritten letter: thư viết tay<br>\
+-a birthday card : thiệp sinh nhật<br>\
+-a love letter : thư tình<br>\
+-an invitation : thư mời<br>\
+-heartfelt (adj): chân thành<br>\
+-sentimental (adj): tình cảm<br>\
+-to email someone : gửi thư điện tử cho ai<br>\
+-to get a reply back within minutes: nhận được phản hồi<br>\
+-communicate across different time zones: giao tiếp qua các múi giờ khác nhau<br>\
+-versatile (adj): linh hoạt, đa năng<br>\
+<br>\
+Do you prefer to read news online or in the newspaper?<br>\
+I enjoy both, but if I had to choose, I would go for online news. This is because the Internet allows me much faster access to news in real time and whenever we are. Also, I can share articles or write my own comments on social media, which cannot be done if I read newspapers.<br>\
+<br>\
+Do you prefer public transportation or private transportation?<br>\
+Public transportation<br>\
+Bus, coach, train, plane, ferry, cruise ship, taxi, cab, bicycles for rent, tuk tuk, tram, subway<br>\
+Private transportation <br>\
+Car, motorbike, bicycle, jet, yacht, boat, van, scooter<br>\
+I would opt for public transportation. This is because I find it more environmentally friendly and often less stressful than driving through traffic. Plus, it allows me to relax, read, or catch up on work during the commute, making the most of my time.<br>\
+"
+	,voca:"",
+}	
+
+
+
 
 ]

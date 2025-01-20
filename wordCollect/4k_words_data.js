@@ -11,16 +11,21 @@ cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 hunt (v) săn<br>\
 middle giữa<br>\
+extraordinary (a) đặc biệt, phi thường, lạ lùng<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 low-budget (a) ngân sách thấp<br>\
+scientific  (a) có tính khoa học<br>\
 unaggressive (a) không hung hăng<br>\
 moment (n) khoảnh khắc<br>\
 worsen (v) /ˈwɜːrsn/ trở nên xấu/tệ hơn<br>\
 established (a) uy tín, chứng thật<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
+worshipper (n) người sùng bái<br>\
+applause  (n) tiếng vỗ tay<br>\
 investors (n) nhà đầu tư<br>\
+organise (v) tổ chức<br>\
 investment (n) sự đầu tư<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 undeniable (a) /ʌndɪˈnaɪəbl/ không thế chối cãi<br>\

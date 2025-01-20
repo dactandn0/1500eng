@@ -48,7 +48,7 @@ $scope.examTypeCss = function (idx) {
 $scope.loadData = function () {
 	makeVocaEbook($rootScope, 
 		ENGLAB_BEGIN_DATA_R,
-		ENGLAB_BEGIN_DATA_W,
+	//	ENGLAB_BEGIN_DATA_W,
 		ENGLAB_BEGIN_DATA_S
 		)
 };

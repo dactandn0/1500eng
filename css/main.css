@@ -267,3 +267,14 @@ input[type="range"]:focus::-moz-range-thumb {
   content: 'note';
   float: right;
 }
+
+
+.color-anim {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}

@@ -43,6 +43,7 @@ $scope.loadDB = function () {
 
 	// LoadDb in audioCtrl.js
 	// $rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
+	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 2)
 
 	$scope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)

@@ -245,6 +245,7 @@ colander (n) /ˈkɒl.ən.dər/ rây lọc dạng rổ<br>\
 lid (n) /lɪd/ nắp, vung<br>\
 blender (n) /ˈblen.dər/ máy xay sinh tố<br>\
 pot (n) /pɒt/ nồi<br>\
+toast (n) /ˈtəʊ.stər/ bánh nướng<br>\
 toaster (n) /ˈtəʊ.stər/ lò nướng bánh<br>\
 dishtowel (n) /ˈdɪʃ.taʊəl/ khăn lau chén<br>\
 refrigerator (n) /rɪˈfrɪdʒ.ər.eɪ.tər/ tủ lạnh<br>\

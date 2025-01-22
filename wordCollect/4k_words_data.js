@@ -205,7 +205,6 @@ necessary (a) /ˈnesəseri/ cần thiết<br>\
 pattern mẫu<br>\
 propose (v) /prəˈpoʊz/ đề xuất, cầu hôn<br>\
 purpose (n) /ˈpɜːrpəs/ mục đích<br>\
-release giải phóng<br>\
 require yêu cầu<br>\
 single đơn lẻ<br>\
 success (n) /səkˈses/ thành công<br>\
@@ -286,7 +285,6 @@ thin mỏng<br>\
 blood (n) /blʌd/ máu<br>\
 burn bỏng<br>\
 cell tế bào<br>\
-contain chứa<br>\
 correct đúng<br>\
 crop (n,v) /krɑːp/ (v) cắt, vật giặt hái, mùa giặt<br>\
 demand nhu cầu<br>\
@@ -513,7 +511,6 @@ gaudy (a) /ˈɡɔːdi/ xa hoa, lòe loẹt<br>\
 support (v) /səˈpɔːrt/ hỗ trợ<br>\
 task nhiệm vụ<br>\
 responsibility (n) /rɪˌspɑːnsəˈbɪləti/ (sự chịu) trách nhiệm<br>\
-term thuật ngữ<br>\
 unite đoàn kết<br>\
 associate liên kết<br>\
 environment (n) /ɪnˈvaɪrənmənt/ môi trường<br>\
@@ -870,7 +867,6 @@ quit bỏ cuộc<br>\
 spin quay<br>\
 tutor apparent gia sư rõ ràng<br>\
 blind mù<br>\
-calculate tính toán<br>\
 chat trò chuyện<br>\
 commit cam kết<br>\
 compose soạn<br>\
@@ -1015,7 +1011,6 @@ satellite vệ tinh<br>\
 scale tỷ lệ<br>\
 skip bỏ qua<br>\
 stretch kéo dài<br>\
-telescope kính viễn vọng<br>\
 underground dưới lòng đất <br>\
 alarm báo động<br>\
 apart (adv) /əˈpɑːrt/ tách<br>\
@@ -1104,7 +1099,6 @@ deck boong<br>\
 engage /in'geid3/ (v) tham gia<br>\
 vent /vent/ (n) lỗ thông hơi<br>\
 firm (a) chắc chắn, kiên cố<br>\
-fuel nhiên liệu<br>\
 grand lớn<br>\
 loss mất mát<br>\
 misinformation (n) /mɪsɪnfərˈmeɪʃn/ thông tin sai lệch<br>\

@@ -14,10 +14,11 @@
 	    <a href
 	    	ng-style="examTypeCss($index)"
 	    	ng-click="acc_click($index)">
-	    		{{$index+1}}. {{obj.title}}
+	    		{{$index+1}}. {{obj.title}} 
+	    		<span ng-if="obj.hasNote" class="text-danger">[Noted]</span>
+				<span ng-if="obj.blankEn" class="text-warning">[Blank]</span>
 		</a>
-		<span ng-if="obj.hasNote" class="text-danger">[Noted]</span>
-		<span ng-if="obj.blankEn" class="text-warning">[Blank]</span>
+		
 	  </h6>
 	  <div class="accordion-content" ng-if="acc_isShow($index)">
 		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>

@@ -19,6 +19,7 @@ Nghiên cứu kết luận rằng mọi người sẽ hữu ích hơn ở nhữn
 <br>\
 chuyển thể từ bài viết của Victoria Harrison, BBC News"
 	,voca:""
+	,note:""
 },
 {
 	unit:1,

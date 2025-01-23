@@ -4,10 +4,13 @@
 <div ng-repeat="obj in titles track by $index" class="mb-2" >
   <h6 class="accordion" >
     <a href 
-    ng-class="obj.storyCss"
-    ng-click="acc_click($index)">
-    {{$index+1}}. {{obj.title}}
-</a>
+      ng-class="obj.storyCss"
+      ng-click="acc_click($index)">
+      {{$index+1}}. {{obj.title}}
+      <span ng-if="obj.hasNote" class="text-danger">[Noted]</span>
+      <span ng-if="obj.blankEn" class="text-warning">[Blank]</span>
+    </a>
+    
   </h6>
   <div class="accordion-content" ng-if="acc_isShow($index)">
   	

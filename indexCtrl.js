@@ -47,9 +47,9 @@ var app = angular.module("myApp", [
   'beginnerCourseApp',
   'collinsLApp',
   'writingvol5App',
+  'completeApp',
   /*
   'sampleSpeakingApp',
-  'completeLApp','completeRApp',
   'bridgeRApp','bridgeLApp',
   'barron600RApp','barron600LApp',
   'grammerApp',
@@ -76,8 +76,8 @@ app.config(function($routeProvider) {
 		.when('/collinsL', {templateUrl: 'templates/non_cd_listening.html', controller: 'collinsLCtrl'})
 		.when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
 		.when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})
-		.when('/completeL', {templateUrl: 'ebooks/complete/completeL.html', controller: 'completeLCtrl'})
-		.when('/completeR', {templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'})
+		.when('/completeL', {templateUrl: 'ebooks/complete/complete.html', controller: 'completeCtrl'})
+		// .when('/completeR', {templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'})
 		.when('/barron600R', {templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'})
 		.when('/barron600L', {templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'})
 		.when('/sampleSpeaking', {templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'})

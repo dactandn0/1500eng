@@ -218,6 +218,6 @@ function makeVocaEbook(rtScrope, ...args)
 			}
 		}
 	}
-	console.log(rtScrope.vocaEbook)
+//	console.log('makeVocaEbook::: ' + rtScrope.vocaEbook)
 	
 }

@@ -1,0 +1,29 @@
+
+<h5 class="mb-2">Complete</h5>
+
+<form name="beg_ielt_bForm" class="my-3" role="group">
+	<input id="111" type="radio" name="ielt_form" value="0" onchange="ielt_formChange(0)" checked/><label class="mr-3" for="111">Listen</label>
+	<input id="222" type="radio" name="ielt_form" value="1" onchange="ielt_formChange(1)" /><label class="mr-3" for="222">Read</label>
+</form>
+
+<div ng-show = "ielt_form===0"> <!-- Listen -->
+	<div class="mt-3">
+		<div class="col-md-12">
+			 <a ng-repeat="story in stories track by $index"  
+			 ng-click="fetchStory($index);" 
+			 href="" 
+			 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
+			 class="pr-2 mr-1"> [{{story.track}}]
+			</a>
+		</div>
+
+	</div>
+
+	<br>
+
+	<div ng-include="'./includes/storyL.html'" ></div>
+</div>
+
+<div ng-show = "ielt_form===1">
+	<div ng-include="'./includes/storyR.html'" ></div>
+</div>

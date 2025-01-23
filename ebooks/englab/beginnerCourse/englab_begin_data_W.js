@@ -1,4 +1,3 @@
-
 /*
 	vi2en : 0
 */
@@ -212,6 +211,24 @@ const ENGLAB_BEGIN_DATA_W = [
 	,vi:"Có hai lý do chính vì sao trẻ con nên đi du học. Đầu tiên, khi đi du học, trẻ có thể học được nhiều kiến thức mới về văn hóa, lịch sử, và học thuật. Việc tiếp xúc với một môi trường học tập khác, kết hợp với những trải nghiệm và hoạt động ngoại khóa có thể giúp trẻ phát triển kỹ năng xã hội, tăng cường sự tự tin, và mở rộng tầm nhìn về thế giới. Thứ hai, đi du học có thể giúp trẻ học được nhiều kỹ năng sống như tự lập, quản lý tài chính, và trở nên độc lập hơn trong cuộc sống. Khi sống xa gia đình và đối mặt với những thách thức mới, trẻ sẽ học cách giải quyết vấn đề, tìm kiếm giải pháp và trở nên mạnh mẽ hơn để vượt qua những khó khăn trong cuộc sống."
 	,voca:""
 	,note:""
+},{
+	examType:"0",
+	title:"Việc nghiện game là nguyên nhân chính dẫn tới kết quả học tập kém của nhiều trẻ con ngày nay."
+	,en:"Game addiction is the main reason that leads to unsatisfactory academic performance of children."
+	,voca:""
+	,note:"reason = factor = culpit | dẫn tới (dùng MĐQH vì ko phải mục đích)"
+},{
+	examType:"0",
+	title:"Việc dành quá nhiều thời gian vào thế giới ảo có thể ảnh hưởng xấu tới mối quan hệ xã hội của mọi người vì mọi người thích nhắn tin hơn là nói chuyện ngoài đời."
+	,en:"Spending excessive time on the virtual world can badly affect people's social relationships because/as they prefer texting to face-to-face communication."
+	,voca:"the virtual world"
+	,note:"relationships (có 's')| affect STH (ko giới từ) | excessive = too much"
+},{
+	examType:"0",
+	title:"Sự đầu tư vào việc học có thể tạo điều kiện cho một viễn cảnh việc làm tốt hơn cho những bạn trẻ."
+	,en:""
+	,voca:""
+	,note:"academic pursuits|facilitate|occupational prospects"
 }
 
 

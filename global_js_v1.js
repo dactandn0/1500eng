@@ -157,11 +157,8 @@ function showStoryTitles(data) {
 	var r = []
 	for (var k = 0; k < data.length; k++) {
 		var obj = data[k]
-		var fTilte = getFullTile(obj)
-		r.push(
-			{ title: fTilte,
-			}
-		);
+		var json_result = getFullTile(obj)
+		r.push(json_result);
 	}
 	return r;
 }
@@ -171,7 +168,15 @@ function getFullTile(obj) {
 	var track  = (obj.track) ? (' - ' + obj.track) : '';
 	var title  = (obj.title) ? (' - ' + obj.title) : '';
 	var hasNote = (obj.note && obj.note.trim().length > 0) ? ' [note]' : ''
-	return  unit + title + track + hasNote
+//	return  unit + title + track + hasNote
+	return {
+		unit : unit,
+		track : track,
+		title : title,
+		blankEn : !obj.en || obj.en.trim().length == 0,
+		hasNote : hasNote,
+		full : unit + title + track
+	}
 }
 
 function processStory (story, isAlert = true) {
@@ -254,7 +259,7 @@ function processStory (story, isAlert = true) {
 		
 	story.viShow = enAndVi
 	story.enShow = enShow
-	story.fTitle = getFullTile(story)
+	story.fTitle = getFullTile(story).full
 
 	story.enShow = story.enShow.replace(/Examiner/gi,'<b class="color-anim">Examiner</b>')
 	story.enShow = story.enShow.replace(/Candidate/gi,'<u class="color-anim">Candidate</u>')

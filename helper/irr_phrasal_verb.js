@@ -79,7 +79,9 @@ function getVerb_Irr(verb_bare, col=2) {
 	return '!'
 }
 
-function IRR_ExtractWords(story) {
+function IRR_ExtractWords(story) 
+{
+	if (!story.en || story.en.trim().length === 0) return {'words':'','phraVerbs':''}
 	var phraVerbs = []
 
 	for (var i = 0; i < PHRASAL_VERB_DATA.length; i++) {

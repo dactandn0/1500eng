@@ -1,4 +1,4 @@
-const lfil_stories = [
+const ENGLAB_BEGIN_DATA_L = [
 {
 	track:"01.01",
 	en:"Irene: Hello, this is the Woodlands School of Music. Irene speaking.<br>\
@@ -248,6 +248,42 @@ Penny: Tony, anh vui lòng đứng cạnh cầu nhảy nước nhé? Chỉ cần
 John: Cảm ơn, Penny, OK mọi người. Có câu hỏi nào không? Không. Được thôi. Penny và tôi sẽ đi bộ xung quanh trong suốt thời gian. Hãy cho chúng tôi biết nếu anh cần bất cứ điều gì.<br>\
 Người dẫn chuyện: Hãy nghe phần 2 của âm thanh.<br>\
 Mọi người hãy tập hợp lại. Sẽ không mất nhiều thời gian đâu. Trước hết, tôi muốn chúc mừng Mick và Sarah, những người đã giành chiến thắng ở Giải Đua Mở dành cho Nam và Giải Đua Mở dành cho Nữ. Thật là một nỗ lực phi thường và thành tích cá nhân tốt nhất của cả hai người! Xin hãy dành một tràng pháo tay cho họ. Thực ra, khi nhìn vào bảng kết quả, tôi thấy rằng tất cả các bạn đều làm tốt. Có khá nhiều thành tích thực sự tốt được đăng tải hôm nay. Bây giờ... khu vực tắm rửa gần bãi đậu xe, vì vậy hãy thoải mái tắm rửa nhưng đừng mất quá nhiều thời gian. Đội tình nguyện viên của chúng tôi đã làm việc chăm chỉ trong bếp và họ đã chuẩn bị một bữa ăn rất ngon trong các phòng câu lạc bộ. Họ đã pha trà và cà phê, cũng như một số đồ uống lạnh, và có rất nhiều đồ ăn nhẹ như bánh sandwich, đồ ăn mặn, trái cây, bánh quy và tôi chắc rằng tôi đã thấy một số bánh sô cô la. Vì vậy, hãy quay lại phòng câu lạc bộ ngay khi bạn có thể. Vào thời điểm này, tôi muốn cảm ơn tất cả những người đã giúp sự kiện hôm nay thành công. Hãy giúp họ một tay! Tôi chắc chắn rằng ban tổ chức muốn gặp lại tất cả các bạn - các vận động viên và người hỗ trợ - tại giải vô địch chạy việt dã vào năm sau."
+	,voca:"",
+},{
+	track:"04.01",
+	en:"Narrator: You are going to hear a description of the parts of a video camera and an explanation of the way it works.<br>\
+Hello, everyone! Welcome to our first class in movie-making. The essence of making movies is in your own creativity. But the camera itself is important, so I'll start by describing the camera and how it works. Of course, movie cameras vary, but basically they have the same parts.<br>\
+This is my camera. It's designed for ease of use. Look carefully, and I'll describe three of the parts of the camera. One of the most important parts is the lens, on the front here. Nearly all cameras today are fitted with a zoom lens, so you can zoom in and out easily if you want to.<br>\
+In the manual that came with your camera, you can read about how to clean the lens, how to change it, and how to protect it by buying a protective glass that fits on the front of the lens when you're not using the camera.<br>\
+You must look after the lens carefully. It can be damaged easily.<br>\
+Now, underneath the camera is the hand grip. It's designed for easy handling, so you can hold the camera steady while you're filming. When you're not using the camera, you can fold the grip up, and then the camera can be packed away neatly into the carry bag.<br>\
+If you're right-handed like me, you probably hold the camera in your right hand and use your left hand for turning the camera on and for manual focusing.<br>\
+The last thing I want to point out just now is the microphone. That's this thing here, on top of the camera. It means you have audio as well as video, or moving pictures. The microphone is quite sensitive, so be careful with it. It comes right off easily, so you can pack it away in the bag.<br>\
+You need to turn the mic towards the person who is talking. Generally, the person will be straight ahead, but sometimes you'll want to move it. So - lens, hand grip, and microphone. And the last thing I'll mention at this point is the rubber cup... that's where you put the camera up against your eye... Well, that's enough for now. Next, I'd like you to pick up your own cameras."
+	,vi:"Người dẫn chuyện: Bạn sẽ được nghe mô tả về các bộ phận của máy quay video và giải thích về cách thức hoạt động của nó.<br>\
+Xin chào mọi người! Chào mừng đến với lớp học đầu tiên của chúng tôi về làm phim. Bản chất của việc làm phim nằm ở sự sáng tạo của chính bạn. Nhưng bản thân máy quay rất quan trọng, vì vậy tôi sẽ bắt đầu bằng cách mô tả máy quay và cách thức hoạt động của nó. Tất nhiên, máy quay phim khác nhau, nhưng về cơ bản chúng có các bộ phận giống nhau.<br>\
+Đây là máy ảnh của tôi. Nó được thiết kế để dễ sử dụng. Hãy nhìn kỹ, và tôi sẽ mô tả ba bộ phận của máy ảnh. Một trong những bộ phận quan trọng nhất là ống kính, ở mặt trước này. Hầu như tất cả các máy ảnh ngày nay đều được trang bị ống kính zoom, vì vậy bạn có thể dễ dàng phóng to và thu nhỏ nếu muốn.<br>\
+Trong hướng dẫn đi kèm với máy ảnh, bạn có thể đọc về cách vệ sinh ống kính, cách thay ống kính và cách bảo vệ ống kính bằng cách mua kính bảo vệ vừa với mặt trước của ống kính khi bạn không sử dụng máy ảnh.<br>\
+Bạn phải chăm sóc ống kính cẩn thận. Nó có thể dễ bị hỏng.<br>\
+Bây giờ, bên dưới máy ảnh là tay cầm. Nó được thiết kế để dễ dàng cầm nắm, vì vậy bạn có thể giữ máy ảnh ổn định trong khi quay phim. Khi bạn không sử dụng máy ảnh, bạn có thể gập tay cầm lên, sau đó có thể cất máy ảnh gọn gàng vào túi đựng.<br>\
+Nếu bạn thuận tay phải như tôi, bạn có thể cầm máy ảnh bằng tay phải và dùng tay trái để bật máy ảnh và lấy nét thủ công.<br>\
+Điều cuối cùng tôi muốn chỉ ra ngay bây giờ là micrô. Đó là thứ này ở đây, trên đầu máy ảnh. Nó có nghĩa là bạn có cả âm thanh và video hoặc hình ảnh chuyển động. Micrô khá nhạy, vì vậy hãy cẩn thận với nó. Nó có thể dễ dàng tháo ra, vì vậy bạn có thể cất vào túi.<br>\
+Bạn cần xoay micrô về phía người đang nói. Nhìn chung, người đó sẽ đi thẳng về phía trước, nhưng đôi khi bạn sẽ muốn di chuyển nó. Vì vậy - ống kính, tay cầm và micrô. Và điều cuối cùng tôi sẽ đề cập đến ở đây là cốc cao su... đó là nơi bạn đặt máy ảnh lên mắt... Vâng, vậy là đủ rồi. Tiếp theo, tôi muốn bạn tự cầm máy ảnh của mình."
+	,voca:"",
+},{
+	track:"04.02",
+	en:"Hello, everyone. You all did very well last week! You seem to be getting used to your cameras, and I think you now know all the parts of the camera and what they do.<br>\
+This week, I'll talk about caring for your camera. Most cameras will last you a long time if you look after them.<br>\
+Make sure you have a strong carry case. Let's look at mine. You can see that the different parts fit in neatly. This part shaped like a circle in the top left-hand corner is for the cord that con- nects the camera with the electrical supply when you need to charge the battery.<br>\
+On the top right-hand side, you can store the microphone. It has to fit neatly, so it doesn't move around and get damaged. I keep it there all the time, except when I'm actually going to do some audio recording.<br>\
+Now, on the bottom left-hand side, I can store the battery. It's a good idea to take the battery out if you're not using the camera for a long time... I always do. Batteries today stay charged up for a long time, but they are better out of the camera. Most cameras today, like this, come with a rechargeable battery. Finally, you can see where I store the camera itself, here in the bottom right. The camera can't move, and the case is made of hard material, so you can knock the case or even drop it, and the camera won't be damaged.<br>\
+If you haven't got a camera case, I recommend that you buy one as soon as you can... Well, that's about all I have to say on storage. Now, let's move on to some practical work."
+	,vi:"Xin chào mọi người. Tuần trước mọi người đều làm rất tốt! Có vẻ như các bạn đã quen với máy ảnh của mình và tôi nghĩ bây giờ các bạn đã biết tất cả các bộ phận của máy ảnh và chức năng của chúng.<br>\
+Tuần này, tôi sẽ nói về cách chăm sóc máy ảnh của bạn. Hầu hết các máy ảnh sẽ sử dụng được lâu nếu bạn chăm sóc chúng.<br>\
+Đảm bảo bạn có một hộp đựng chắc chắn. Hãy xem hộp đựng của tôi. Bạn có thể thấy các bộ phận khác nhau vừa khít nhau. Bộ phận có hình tròn ở góc trên bên trái này là để nối dây kết nối máy ảnh với nguồn điện khi bạn cần sạc pin.<br>\
+Ở phía trên bên phải, bạn có thể cất micrô. Nó phải vừa khít để không bị xê dịch và bị hỏng. Tôi luôn để micrô ở đó, trừ khi tôi thực sự cần ghi âm.<br>\
+Bây giờ, ở phía dưới bên trái, tôi có thể cất pin. Tốt nhất là tháo pin ra nếu bạn không sử dụng máy ảnh trong thời gian dài... Tôi luôn làm vậy. Pin ngày nay có thể sạc trong thời gian dài, nhưng tốt hơn là để pin ngoài máy ảnh. Hầu hết các máy ảnh ngày nay, như thế này, đều có pin sạc. Cuối cùng, bạn có thể thấy nơi tôi cất máy ảnh, ở đây, góc dưới bên phải. Máy ảnh không thể di chuyển, và hộp đựng được làm bằng vật liệu cứng, vì vậy bạn có thể làm rơi hộp đựng hoặc thậm chí làm rơi nó, và máy ảnh sẽ không bị hư hỏng.<br>\
+Nếu bạn chưa có hộp đựng máy ảnh, tôi khuyên bạn nên mua một cái ngay khi có thể... Vâng, đó là tất cả những gì tôi muốn nói về việc cất giữ. Bây giờ, chúng ta hãy chuyển sang một số công việc thực tế."
 	,voca:"",
 }
 

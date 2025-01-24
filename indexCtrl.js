@@ -42,7 +42,6 @@ var app = angular.module("myApp", [
   'configUIApp',
   'f2fApp',
   'tflApp',
-  'lfilApp',
   'preCourseApp',
   'beginnerCourseApp',
   'collinsLApp',
@@ -67,7 +66,6 @@ app.config(function($routeProvider) {
 		.when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
     .when('/f2f', {templateUrl: 'ebooks/f2f/f2f.html', controller: 'f2fCtrl'})
     .when('/tfl', {templateUrl: 'ebooks/tfl/tfl.html', controller: 'tflCtrl'})
-    .when('/lfil', {templateUrl: 'ebooks/lfil/lfil.html', controller: 'lfilCtrl'})
     .when('/book4k', {templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'})
 		.when('/writingvol5', {templateUrl: 'ebooks/writingvol5/writingvol5.html', controller: 'writingvol5Ctrl'})
 		//    .when('/lptd', {

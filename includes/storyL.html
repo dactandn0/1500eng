@@ -8,11 +8,15 @@
 	  	
 	  	<h6 class="accordion toggleClick" ng-click="showText=!showText">
 		    <a href>{{story.fTitle}}</a>
+		    <span ng-if="story.hasExercise" class="text-danger">[Exercise]</span>
 		 </h6>
+		 
 	  	 <div class="accordion-content toggleShow">
 	  		<p compile="story.enShow" ng-if="!$root.bShowVi && showText"></p>
 	  		<p compile="story.viShow" ng-if="$root.bShowVi && showText"></p>
 	  	</div>
+
+	  	<div ng-include="'./includes/exercise.html'" ></div>
 
 	  	<hr ng-if="story.note.split('|').length">	
 

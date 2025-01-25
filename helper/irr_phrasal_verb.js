@@ -79,9 +79,9 @@ function getVerb_Irr(verb_bare, col=2) {
 	return '!'
 }
 
-function IRR_ExtractWords(story) 
+function IRR_ExtractWords(english) 
 {
-	if (!story.en || story.en.trim().length === 0) return {'words':'','phraVerbs':''}
+	if (!english || english.trim().length === 0) return {'words':'','phraVerbs':''}
 	var phraVerbs = []
 
 	for (var i = 0; i < PHRASAL_VERB_DATA.length; i++) {
@@ -95,7 +95,7 @@ function IRR_ExtractWords(story)
 		if (Vpp==='!') Vpp = Helper_Add_ED(bare)
 
 		var regex = new RegExp(`\\b(${bare}|${Vs_es}|${V2}|${Vpp})\\s+(${prep})\\b` , 'gi')	
-		var matches = story.match(regex);
+		var matches = english.match(regex);
 		if (matches)
 		phraVerbs = phraVerbs.concat(matches)
 	}
@@ -109,7 +109,7 @@ function IRR_ExtractWords(story)
 	if (phraRegex!=='') phraRegex = phraRegex + '|'
 	var regex = new RegExp(`\\b(${phraRegex}\\w+'*\\w*)\\b` , 'g')
 //	console.log(regex)
-	var words = story.match(regex);
+	var words = english.match(regex);
 	words = Helper_ArrRemoveDup(words)
 	var r = []
 	for (var i = 0; i < phraVerbs.length; i++) {
@@ -119,7 +119,6 @@ function IRR_ExtractWords(story)
 		var prep2 = www[2]
 		words = words.filter(function(ele) { return ele !== word && ele !== prep && ele !== prep2})
 	}
-
 
 	// dont ngClick with she,he,it if graph has: she's, he's...
 	wordRutgons = words.filter(function(ele) { return ele.indexOf("'") !== -1 })

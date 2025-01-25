@@ -1,14 +1,15 @@
 
-<div ng-include="'./includes/showVi.html'" ></div>
-
 <div ng-repeat="obj in titles track by $index" class="mb-2" >
   <h6 class="accordion" >
     <a href 
       ng-class="obj.storyCss"
       ng-click="acc_click($index)">
-      {{$index+1}}. {{obj.title}}
-      <span ng-if="obj.hasNote" class="text-danger">[Noted]</span>
-      <span ng-if="obj.blankEn" class="text-warning">[Blank]</span>
+      {{$index+1}}. {{obj.fTitle}}
+      <label class="text-danger">
+      <span ng-if="obj.hasNote">[Noted]</span>
+      <span ng-if="obj.blankEn">[Blank]</span>
+      <span ng-if="obj.hasExercise">[Exercise]</span>
+      </label>
     </a>
     
   </h6>
@@ -16,6 +17,8 @@
   	
 	<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
 	<p compile="story.viShow" ng-if="$root.bShowVi"></p>
+
+  <div ng-include="'./includes/exercise.html'" ></div>
 
 	<hr ng-if="story.note.split('|').length">	
 	<div class="px-2 mb-3" ng-if="story.note.length">

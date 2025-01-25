@@ -3,6 +3,7 @@ document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_R.
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_W.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_S.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_L.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_S_Vol5.js" type="text/javascript"></script>');
 
 var app = angular.module("beginnerCourseApp", []);
 app.controller("beginnerCourseCtrl", function($scope, $rootScope, $timeout) {
@@ -26,6 +27,7 @@ ielt_formChange = function (num) {
 	if (num===1) $scope.stories = ENGLAB_BEGIN_DATA_W;
 	if (num===2) $scope.stories = ENGLAB_BEGIN_DATA_S;
 	if (num===3) $scope.stories = ENGLAB_BEGIN_DATA_L;
+	if (num===4) $scope.stories = ENGLAB_BEGIN_DATA_S_Vol5;
 
 	$scope.acc = -1;
 	$scope.titles = showStoryTitles($scope.stories);
@@ -71,7 +73,10 @@ $scope.$on('$viewContentLoaded', function(){
 });
 
 $scope.createAudioSrc = function() {
-	return "./ebooks/englab/beginnerCourse/L_mp3/" + $scope.story.track + '.mp3';
+	if ($scope.ielt_form === 3)
+		return "./ebooks/englab/beginnerCourse/L_mp3/" + $scope.story.track + '.mp3';
+	else if ($scope.ielt_form === 4)
+		return "./ebooks/englab/beginnerCourse/S_Vol5_mp3/" + $scope.story.track + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {

@@ -2,46 +2,19 @@
 <h4 class="mb-4">Englab Beginner</h4>
 <hr>
 
-
 <form name="beg_ielt_bForm" class="my-1" role="group">
-	<input id="444" type="radio" name="ielt_form" value="3" onchange="ielt_formChange(3)"><label class="mr-3" for="444">Listen</label>
-	<input id="111" type="radio" name="ielt_form" value="0" onchange="ielt_formChange(0)" checked/><label class="mr-3" for="111">Read</label>
-	<input id="222" type="radio" name="ielt_form" value="1" onchange="ielt_formChange(1)" /><label class="mr-3" for="222">Write</label>
-	<input id="333" type="radio" name="ielt_form" value="2" onchange="ielt_formChange(2)" /><label class="mr-3" for="333">Speak</label>
+	<input id="111" type="radio" name="ielt_form" onchange="ielt_formChange(0)" checked/><label class="mr-3" for="111">Read</label>
+	<input id="222" type="radio" name="ielt_form" onchange="ielt_formChange(1)" /><label class="mr-3" for="222">Write</label>
+	<input id="333" type="radio" name="ielt_form" onchange="ielt_formChange(2)" /><label class="mr-3" for="333">Speak</label>
+	<input id="444" type="radio" name="ielt_form" onchange="ielt_formChange(3)"><label class="mr-3" for="444">Listen</label>
+	<input id="555" type="radio" name="ielt_form" onchange="ielt_formChange(4)"><label class="mr-3" for="555">Speak-Vol5</label>
 </form>
 
-<div ng-show="ielt_form!==3">
-
-	<div ng-repeat="obj in titles track by $index" class="mb-2" >
-		<h6 class="accordion">
-			<a href
-			ng-style="examTypeCss($index)"
-			ng-click="acc_click($index)">
-			{{$index+1}}. {{obj.title}} 
-			<span ng-if="obj.hasNote" class="text-danger">[Noted]</span>
-			<span ng-if="obj.blankEn" class="text-warning">[Blank]</span>
-		</a>
-		
-	</h6>
-	<div class="accordion-content" ng-if="acc_isShow($index)">
-		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
-		<p compile="story.viShow" ng-if="$root.bShowVi"></p>
-		
-		<div ng-include="'./includes/true_f_notG.html'" ></div>
-
-		<hr ng-if="story.note.split('|').length">	
-		<div class="px-2 mb-1" ng-if="story.note.length">
-			<p class="mb-1" ng-repeat="sen in story.note.split('|') track by $index">
-				{{sen}}
-			</p>
-		</div>
-
-	</div>
-</div> <!-- repeat -->
+<div ng-show="ielt_form!==3 && ielt_form!==4">
+	<div ng-include="'./includes/storyR.html'" ></div>
 </div> <!-- ielt_form -->
 
-<div ng-show="ielt_form===3">
-	<p class="mb-2">Lessons for IELTS Listening</p>
+<div ng-show="ielt_form===3 || ielt_form===4">
 	<div class="my-1 mb-4" style="overflow-y: scroll; max-height:200px;">
 		<a ng-repeat="story in stories"
 		ng-click="fetchStory($index);" 

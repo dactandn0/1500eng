@@ -168,14 +168,15 @@ function getFullTile(obj) {
 	var track  = (obj.track) ? (' - ' + obj.track) : '';
 	var title  = (obj.title) ? (' - ' + obj.title) : '';
 	var hasNote = (obj.note && obj.note.trim().length > 0) ? ' [note]' : ''
-//	return  unit + title + track + hasNote
+	var hasExercise = obj.T_F_NG && obj.T_F_NG.trim().length > 0
 	return {
 		unit : unit,
 		track : track,
 		title : title,
 		blankEn : !obj.en || obj.en.trim().length == 0,
 		hasNote : hasNote,
-		full : unit + title + track
+		hasExercise : hasExercise,
+		fTitle : unit + title + track
 	}
 }
 
@@ -259,7 +260,7 @@ function processStory (story, isAlert = true) {
 		
 	story.viShow = enAndVi
 	story.enShow = enShow
-	story.fTitle = getFullTile(story).full
+	story.fTitle = getFullTile(story).fTitle
 
 	story.enShow = story.enShow.replace(/Examiner/gi,'<b class="color-anim">Examiner</b>')
 	story.enShow = story.enShow.replace(/Candidate/gi,'<u class="color-anim">Candidate</u>')

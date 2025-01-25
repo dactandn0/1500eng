@@ -156,7 +156,7 @@ Các phong trào bảo vệ động vật khác đã xuất hiện rồi biến 
 <br>\
 Vào những năm 2010, các cuộc biểu tình và hoạt động công khai có thể sẽ chuyển sang một số loài có nguy cơ tuyệt chủng khác. Rất nhiều loài trong số chúng cần được quan tâm khẩn cấp. Trong thời gian này, liệu loài voi có bị lãng quên không?"
 	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamental,endangered,fade,profitable,publicity,shelter,pup,slaughter,supposedly,survive,tuna,tusk,urgently"
-	,true_f_notG: "09. Many of the animals on Earth die because humans have to survive.<br>\
+	,T_F_NG: "09. Many of the animals on Earth die because humans have to survive.<br>\
 10. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
 11. People who kill animals illegally often get away without being caught.<br>\
 12. Wildlife protection groups proved that the number of some elephant species is decreasing.<br>\

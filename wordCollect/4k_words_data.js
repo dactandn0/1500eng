@@ -3,14 +3,14 @@
 title:"4k Book1",
 en:"afraid (a) /əˈfreɪd/ sợ<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
-angry giận dữ<br>\
+angry (a)/ˈæŋɡri/ giận dữ<br>\
 arrive /əˈraɪv/ đến<br>\
 attack tấn công<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 hunt (v) săn<br>\
-middle giữa<br>\
+middle (prep) giữa<br>\
 extraordinary (a) đặc biệt, phi thường, lạ lùng<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
@@ -25,8 +25,9 @@ addict (n) /ˈædɪkt/ người ghiện<br>\
 worshipper (n) người sùng bái<br>\
 applause  (n) tiếng vỗ tay<br>\
 investors (n) nhà đầu tư<br>\
-organise (v) tổ chức<br>\
-investment (n) sự đầu tư<br>\
+organise (v) /ˈɔːrɡənaɪz/ tổ chức<br>\
+investment (n) /ɪnˈvestmənt/ sự đầu tư<br>\
+approachable (a) /əˈprəʊtʃəbl/ dễ tiếp cận<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 undeniable (a) /ʌndɪˈnaɪəbl/ không thế chối cãi<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
@@ -58,7 +59,8 @@ protest (n) /ˈprəʊtest/ cuộc biểu tình, sự chống lại<br>\
 platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
 kangaroo (n) /kæŋɡəˈruː/ chuột túi<br>\
 relevant (a) /ˈreləvənt/ liên quan<br>\
-promise hứa<br>\
+impression (n) /ɪmˈpreʃn/ ấn tượng<br>\
+promise (v) /ˈprɑːmɪs/ hứa<br>\
 dwindling (a) giảm, suy yếu<br>\
 declare (v) /dɪˈkler/ tuyên bố, tuyên ngôn<br>\
 reply trả lời<br>\

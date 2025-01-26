@@ -91,10 +91,9 @@ function shuffle(array) {
 		return .5 - Math.random();
 	});
 }
-
 function isAsciiString(text) {
 	var tiengViet = ['giao','vui','trong', 'bao', 'kinh', 'tinh']
-	var r = /[\x00-\x7F]+/g.test(text) && !isInArr(r, tiengViet);
+	var r = /(?:[\u0000-\u007F]+|[\u0370-\u03FF]+)/g.test(text) && !isInArr(text, tiengViet);
 	return r;
 } 
 
@@ -108,11 +107,12 @@ function Helper_GetVocaFromWordFull(wordFull) {
 	}
 
 	var splitW = wordFull.trim().split(" ");
+
 	var result = "";
 	for (var i = 0; i < splitW.length; i++) {
 		var part = splitW[i].trim();
 		if (ValidateWord(part)) 
-			result = result + " " + part;
+			result +=  " " + part;
 		else break;
 	}
 	return result.trim();

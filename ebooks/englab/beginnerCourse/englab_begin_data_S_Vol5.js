@@ -109,11 +109,11 @@ Không còn nghi ngờ gì nữa. HCM đang phát triển rất nhanh nhưng đ�
 	track:"1.7",
 	title:"Picnics",
 	en:"1) When you were a child, did you ever go on picnics?<br>\
-No, I didn’t. Back then, my parents were so busy with their farm work and so I remember that during my childhood, I just studied hard on weekdays and played hide and seek with some other kids living next door after school. <br>\
+No, I didn't. Back then, my parents were so busy with their farm work and so I remember that during my childhood, I just studied hard on weekdays and played hide and seek with some other kids living next door after school. <br>\
 2) How often do you go on picnics now?<br>\
-Rarely. To tell you the truth, I am not really interested in picnicking now. What’s more, my hectic schedule doesn’t allow me to enjoy it. If I have some days off, I just wanna sleep, you know, to unwind a bit before getting back to work.<br>\
+Rarely. To tell you the truth, I am not really interested in picnicking now. What's more, my hectic schedule doesn't allow me to enjoy it. If I have some days off, I just wanna sleep, you know, to unwind a bit before getting back to work.<br>\
 3) Where would people go for a picnic in your country?<br>\
-Well, I don’t even care about it. Let me see, maybe on a park or on the outskirts of the city. I just can only think of these two places which may be nice spots for a picnic. People can also have a chance to unwind and enjoy some fresh air."
+Well, I don't even care about it. Let me see, maybe on a park or on the outskirts of the city. I just can only think of these two places which may be nice spots for a picnic. People can also have a chance to unwind and enjoy some fresh air."
 	,vi:"1) Khi còn nhỏ, bạn đã bao giờ đi dã ngoại chưa?<br>\
 Không, tôi chưa từng. Hồi đó, bố mẹ tôi rất bận rộn với công việc đồng áng nên tôi nhớ rằng hồi nhỏ, tôi chỉ học hành chăm chỉ vào các ngày trong tuần và chơi trốn tìm với một số đứa trẻ khác sống cạnh nhà sau giờ học. <br>\
 2) Bây giờ bạn đi dã ngoại thường xuyên như thế nào?<br>\
@@ -137,6 +137,38 @@ Tôi không nghĩ vậy. Tôi phải thừa nhận rằng tôi đã gặp rắc 
 3) Bạn có thấy khó để làm mọi việc nhanh chóng không? <br>\
 Vâng, ý tôi là ai mà không thấy khó chứ? Thật khó để làm một việc gì đó vừa cẩn thận vừa nhanh chóng, phải không? Nếu tôi ở trong hoàn cảnh này, chắc chắn tôi sẽ làm những sai lầm."
 	,voca:"hurriedly,put on makeup,in a rush, sleep in, do personal hygiene",
+},{
+	track:"1.9",
+	title:"Clothes",
+	en:"1) What kinds of clothes do you usually wear?<br>\
+Casual clothes like jeans and T-shirts are my best choice in the wardrobe. Putting on these clothes makes me comfortable. It's also easy to mix and match and I still look very stylish.<br>\
+2) Are there any colors you do not like to wear?<br>\
+I try to avoid wearing white clothes since they tend to get dirty easily, even a small stain can also be easily recognizable. Washing it up and removing the dirt is much harder too.<br>\
+3) Do you wear the same kind of clothes on weekends and weekdays?<br>\
+Not really. During weekdays when being at work, I have to wear a uniform which is a white shirt and a black skirt. It fits me too closely so I feel a bit uncomfortable. Well, weekends are the time for me to put off my boring uniform and dress casually."
+	,vi:"1) Bạn thường mặc những loại quần áo nào?<br>\
+Quần áo thường ngày như quần jeans và áo phông là lựa chọn tốt nhất trong tủ đồ của tôi. Mặc những bộ quần áo này khiến tôi cảm thấy thoải mái. Chúng cũng dễ phối đồ và tôi vẫn trông rất phong cách.<br>\
+2) Bạn có không thích mặc màu nào không?<br>\
+Tôi cố gắng tránh mặc quần áo màu trắng vì chúng dễ bị bẩn, ngay cả một vết bẩn nhỏ cũng có thể dễ dàng nhận ra. Giặt và loại bỏ bụi bẩn cũng khó hơn nhiều.<br>\
+3) Bạn có mặc cùng một loại quần áo vào cuối tuần và ngày thường không?<br>\
+Không hẳn vậy. Vào ngày thường khi đi làm, tôi phải mặc đồng phục là áo sơ mi trắng và váy đen. Chúng quá bó nên tôi cảm thấy hơi khó chịu. Vâng, cuối tuần là thời gian để tôi cởi bỏ bộ đồng phục nhàm chán và ăn mặc giản dị."
+	,voca:"wardrobe,mix and match,stylish,recognizable,stain",
+},{
+	track:"1.10",
+	title:"Trying new activities",
+	en:"1) Do you like to try new activities that you haven't done before?<br>\
+Actually, it depends on which activity that is. For me, most of the time I'm willing to give it a go. I would say I'm kind of curious and eager to learn new things or get new experiences from doing things that I have never done before.<br>\
+2) Did you enjoy trying new activities when you were younger?<br>\
+I tend to hesitate a bit back then. I think I had much more fear of failure at that time but now I just try things without thinking about it so much. Even if it's something difficult and I don't succeed in the first attempt , I still have a sense of achievement at the end.<br>\
+3) Do you prefer to try a new activity alone or with your friends?<br>\
+Yes, I mean who doesn't? It's hard to do something both carefully and quickly, isn't it? If I am in this position, surely I will make mistakes."
+	,vi:"1) Bạn có thích thử những hoạt động mới mà bạn chưa từng làm trước đây không?<br>\
+Thực ra, điều đó phụ thuộc vào hoạt động đó là gì. Đối với tôi, hầu hết thời gian tôi đều sẵn sàng thử. Tôi muốn nói rằng tôi khá tò mò và háo hức học hỏi những điều mới hoặc có được những trải nghiệm mới từ việc làm những việc mà tôi chưa từng làm trước đây.<br>\
+2) Bạn có thích thử những hoạt động mới khi còn trẻ không?<br>\
+Tôi có xu hướng do dự một chút khi đó. Tôi nghĩ rằng tôi sợ thất bại hơn nhiều vào thời điểm đó nhưng bây giờ tôi chỉ thử mọi thứ mà không nghĩ nhiều về nó. Ngay cả khi đó là điều gì đó khó khăn và tôi không thành công ngay từ lần thử đầu tiên, tôi vẫn có cảm giác thành tựu khi kết thúc.<br>\
+3) Bạn thích thử một hoạt động mới một mình hay với bạn bè?<br>\
+Vâng, ý tôi là ai mà không thích chứ? Thật khó để làm một việc gì đó vừa cẩn thận vừa nhanh chóng, phải không? Nếu tôi ở trong hoàn cảnh này, chắc chắn tôi sẽ mắc lỗi."
+	,voca:"hesitate,attempt,curious,eager",
 }
 
 

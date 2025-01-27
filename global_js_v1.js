@@ -262,8 +262,8 @@ function processStory (story, isAlert = true) {
 	story.enShow = enShow
 	story.fTitle = getFullTile(story).fTitle
 
-	story.enShow = story.enShow.replace(/Examiner/gi,'<b class="color-anim">Examiner</b>')
-	story.enShow = story.enShow.replace(/Candidate/gi,'<u class="color-anim">Candidate</u>')
+	story.enShow = story.enShow.replace(/Examiner/gi,'<i class="color-anim">Examiner</i>')
+	story.enShow = story.enShow.replace(/Candidate/gi,'<i class="color-anim">Candidate</i>')
 
 	return story;
 }

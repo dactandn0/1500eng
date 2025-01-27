@@ -27,7 +27,9 @@ ielt_formChange = function (num) {
 	if (num===1) $scope.stories = ENGLAB_BEGIN_DATA_W;
 	if (num===2) $scope.stories = ENGLAB_BEGIN_DATA_S;
 	if (num===3) $scope.stories = ENGLAB_BEGIN_DATA_L;
-	if (num===4) $scope.stories = ENGLAB_BEGIN_DATA_S_Vol5;
+	if (num===4) {
+		$scope.stories = doMenu().concat(ENGLAB_BEGIN_DATA_S_Vol5);
+	}
 
 	$scope.acc = -1;
 	$scope.titles = showStoryTitles($scope.stories);
@@ -61,7 +63,8 @@ $scope.examTypeCss = function (idx) {
 $scope.loadData = function () {
 	makeVocaEbook($rootScope, 
 		ENGLAB_BEGIN_DATA_R,
-		ENGLAB_BEGIN_DATA_S
+		ENGLAB_BEGIN_DATA_S,
+		ENGLAB_BEGIN_DATA_S_Vol5,
 		)
 
 	loadListenIdx = Helper_loadInt('lfil_unit', 0);
@@ -89,6 +92,26 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 
-
+function doMenu()
+{
+	var en = ""
+	var rgSen = /\d+\).*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
+	for (var i = 0; i < ENGLAB_BEGIN_DATA_S_Vol5.length; i++) {
+		var lesson = ENGLAB_BEGIN_DATA_S_Vol5[i].en
+		var questions = lesson.match(rgSen);
+		en += (i+1) + '<br>'
+		for (var j = 0; j < questions.length; j++) {
+			en += questions[j]
+		}
+	}
+	var menu = {
+		track: 'Menu',
+		title: 'Questions',
+		en:en
+	}
+	var r = []
+	r.push(menu)
+	return r
+}
 
 });

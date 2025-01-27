@@ -4,34 +4,42 @@ var PHRASAL_VERB = [{title:"Phrasal verbs",en:""}];
 var BAT_QUI_TAC = [{title:"Bat qui tac",en:""}];
 
 const BAT_QUI_TAC_DATA = [
+	'catch|catched|catched|bắt',
 	'come|came|come|đến',
 	'carry|carried|carried|mang, vác',
 	'call|called|called|gọi',
 	'get|got|got|lấy',
 	'look|looked|looked|nhìn, trông',
 	'fall|fell|fallen|ngã, rơi',
+	'hang|hang|hang|treo',
 	'tear|tore|torn|xé, rách',
 	'take|took|taken|cầm, lấy',
 	'wear|wore|worn|mặc',
 	'leave|left|left|đặt, để',
 	'put|put|put|đặt, để',
 	'pass|passed|passed|qua',
+	'give|gave|given|qua',
 ]
 
 const PHRASAL_VERB_DATA = [
-	{word: 'pass', prep: 'away', mean: 'chết'},
-	{word: 'put', prep: 'aside', mean: 'bỏ qua'},
+	{word: 'catch', prep: 'up on', mean: 'bắt kịp, theo kịp'},
+	{word: 'carry', prep: 'on', mean: 'continue'},
 	{word: 'carry', prep: 'out', mean: 'tiến hành'},
 	{word: 'call', prep: 'for', mean: 'yêu cầu'},
 	{word: 'come', prep: 'up with', mean: 'nghĩ ra (ý tưởng)'},
+	{word: 'hang', prep: 'out', mean: 'đi chơi'},
+	{word: 'fall', prep: 'out',  mean: 'cãi nhau'},
+	{word: 'pass', prep: 'away', mean: 'chết'},
 	{word: 'take', prep: 'off', mean: 'cất cánh, bắt đầu thành công'},
 	{word: 'take', prep: 'over', mean: 'kiểm soát'},
 	{word: 'take', prep: 'up', mean: 'học/thực hành'},
 	{word: 'take', prep: 'after', mean: 'giống với'},
 	{word: 'look', prep: 'up to',  mean: 'ngưỡng mộ'},
 	{word: 'get', prep: 'on',  mean: 'thòa thuận với'},
-	{word: 'fall', prep: 'out',  mean: 'cãi nhau'},
+	{word: 'put', prep: 'on',  mean: ' mặc (quần áo)'},
+	{word: 'put', prep: 'off',  mean: 'cởi bỏ (quần áo)'},
 	{word: 'put', prep: 'aside',  mean: 'bỏ qua'},
+	{word: 'give', prep: 'it a go',  mean: 'thử'},
 ]
 
 function progress() {

@@ -68,7 +68,7 @@ Thời điểm lý tưởng để học là khi mọi người bước sang tu�
 Sẽ là nói dối nếu tôi nói rằng tôi không buồn về điều đó. Thực ra, không có gì tôi có thể làm để ngăn chặn việc già đi, vì vậy hãy để nó như vậy. Tốt hơn hết là tôi nên tận hưởng từng giây phút của cuộc sống, sống hạnh phúc và làm những điều có ý nghĩa để tôi có thể có một cuộc sống không hối tiếc.<br>\
 3) Chúng ta có nên đối xử với những người ở độ tuổi khác nhau theo cùng một cách không? <br>\
 Không, tôi không nghĩ vậy. Bạn không thể đối xử với một đứa trẻ 5 tuổi giống như cách bạn cư xử khi gặp ông bà của mình, đúng không? Người lớn tuổi luôn cần được tôn trọng."
-	,voca:"acquire new skills,mature,driving ages",
+	,voca:"acquire new skills,mature,driving ages,without regretting",
 },{
 	track:"1.5",
 	title:"Public Transportation",
@@ -88,7 +88,7 @@ Tôi sử dụng xe buýt hầu như hàng ngày vì như tôi đã nói, đó l
 Tôi nghĩ phương tiện cá nhân là lựa chọn tốt hơn đối với tôi. Thành thật mà nói, tôi dễ bị say xe. Nếu tôi đi xa bằng xe buýt hoặc xe khách, tôi sẽ bị đau đầu khủng khiếp và thậm chí nôn mửa.<br>\
 4) Bạn có nghĩ mọi người sẽ lái xe nhiều hơn trong tương lai không?<br>\
 Thật khó để nói về tương lai nhưng tôi hy vọng mọi người sẽ sử dụng nhiều phương tiện giao thông công cộng hơn thay vì ô tô và xe máy. Lái xe nhiều hơn chỉ làm chất lượng không khí xấu đi, ảnh hưởng tiêu cực đến sức khỏe của mọi người."
-	,voca:"punctual,deteriorate,carsick,tight,daily basis.vomit",
+	,voca:"punctual,deteriorate,carsick,tight,daily basis,vomit,means of transportation,acquiring",
 },{
 	track:"1.6",
 	title:"Changes",
@@ -169,6 +169,94 @@ Tôi có xu hướng do dự một chút khi đó. Tôi nghĩ rằng tôi sợ t
 3) Bạn thích thử một hoạt động mới một mình hay với bạn bè?<br>\
 Vâng, ý tôi là ai mà không thích chứ? Thật khó để làm một việc gì đó vừa cẩn thận vừa nhanh chóng, phải không? Nếu tôi ở trong hoàn cảnh này, chắc chắn tôi sẽ mắc lỗi."
 	,voca:"hesitate,attempt,curious,eager",
+},{
+	track:"1.11",
+	title:"Weekends",
+	en:"1) Do you like to go to the cinema on weekends?<br>\
+Yes, for sure. I'm a bit of an avid movie-goer. Every weekend, after hanging out, my friends and I often choose the cinema as our last destination to enjoy days off and catch up on the latest movies.<br>\
+2) What do you enjoy doing most on weekends?<br>\
+Like I said, I prefer going out with friends on Saturday and Sunday. We mostly do things like gossiping while drinking tea, then taking selfies. It is literally the best way to unwind and relieve stress.<br>\
+3) Do you think there are enough interesting things to do in your city at weekends?<br>\
+Undoubtedly Yes. In HCMC, there is a wide range of recreational options and places for people to choose, ranging from shopping malls, cinemas to night markets, bars and so on."
+	,vi:"1) Bạn có thích đi xem phim vào cuối tuần không?<br>\
+Có chứ. Tôi là một người thích xem phim. Mỗi cuối tuần, sau khi đi chơi, tôi và bạn bè thường chọn rạp chiếu phim là điểm đến cuối cùng để tận hưởng ngày nghỉ và xem những bộ phim mới nhất.<br>\
+2) Bạn thích làm gì nhất vào cuối tuần?<br>\
+Như tôi đã nói, tôi thích đi chơi với bạn bè vào thứ Bảy và Chủ Nhật. Chúng tôi chủ yếu làm những việc như tán gẫu trong khi uống trà, sau đó chụp ảnh tự sướng. Đó thực sự là cách tốt nhất để thư giãn và giải tỏa căng thẳng.<br>\
+3) Bạn có nghĩ rằng có đủ những điều thú vị để làm ở thành phố của bạn vào cuối tuần không?<br>\
+Chắc chắn là có. Ở HCM, có rất nhiều lựa chọn giải trí và địa điểm để mọi người lựa chọn, từ trung tâm mua sắm, rạp chiếu phim đến chợ đêm, quán bar, vvv"
+	,voca:"an avid movie-goer,gossip,recreational options",
+},{
+	track:"1.12",
+	title:"Age/Different stages in life",
+	en:"1) Are you happy with the age you are now?<br>\
+Yes, I'm enjoying the best time of my life, at the age of twenty four. I have everything I need: a well-paid job, a boyfriend and a house to return. It can be considered as a sense of satisfaction.<br>\
+2) What is the most important thing you've done in your life so far?<br>\
+Up until now, the most crucial thing is that I have got a decent job to earn money and relieve the financial burden on my family. I could also buy my dad a new tie and buy my mom a new dress with the amount of money I earn by myself.<br>\
+3) What do you hope you'll be doing in five years time?<br>\
+I haven't had any clear plan yet but I think at this time 5 years later, I will be studying overseas for a master's degree. You know, pursuing further education is always my dream."
+	,vi:"1) Bạn có hài lòng với độ tuổi hiện tại của mình không?<br>\
+Có, tôi đang tận hưởng khoảng thời gian đẹp nhất trong cuộc đời mình, ở tuổi hai mươi bốn. Tôi có mọi thứ mình cần: một công việc được trả lương cao, một người bạn trai và một ngôi nhà để trở về. Có thể coi đó là cảm giác thỏa mãn.<br>\
+2) Điều quan trọng nhất bạn đã làm trong cuộc sống cho đến nay là gì?<br>\
+Cho đến bây giờ, điều quan trọng nhất là tôi đã có một công việc tử tế để kiếm tiền và giảm bớt gánh nặng tài chính cho gia đình. Tôi cũng có thể mua cho bố một chiếc cà vạt mới và mua cho mẹ một chiếc váy mới bằng số tiền tôi tự kiếm được.<br>\
+3) Bạn hy vọng mình sẽ làm gì trong năm năm tới?<br>\
+Tôi vẫn chưa có kế hoạch rõ ràng nào nhưng tôi nghĩ tại thời điểm này 5 năm sau, tôi sẽ đi du học để lấy bằng thạc sĩ. Bạn biết đấy, theo đuổi con đường học vấn cao hơn luôn là ước mơ của tôi."
+	,voca:"a well-paid job,a sense of satisfaction,a decent job,relieve the financial burden,master's degree,pursue,further",
+},{
+	track:"1.13",
+	title:"Discussion",
+	en:"1) What kinds of things do you enjoy discussing with your friends?<br>\
+Well, all sorts of things from films, idols, shopping to food can be a topic of our talk. We also like to catch up on what each of us has been up to recently. Well, I don't really know whether it's a stereotype but women tend to have many more things to discuss than men, right?<br>\
+2) In a discussion, do you prefer to talk more or listen more?<br>\
+Well, I would say I'm more into listening. Honestly,  I'm not a talkative person but when needed, I'm ready to raise my voice and share my opinions.<br>\
+3) Do you often change your opinion during a discussion?<br>\
+In case I find that my point's no longer appropriate, I will adapt to make my idea better. Being determined and sticking with an opinion is good but not all the time. Sometimes, change is for the better."
+	,vi:"1) Bạn thích thảo luận về những chủ đề gì với bạn bè?<br>\
+Vâng, đủ mọi thứ từ phim ảnh, thần tượng, mua sắm đến đồ ăn đều có thể là chủ đề trò chuyện của chúng tôi. Chúng tôi cũng thích cập nhật những gì mỗi người đã làm gần đây. Tôi không biết liệu đó có phải là một khuôn mẫu hay không nhưng phụ nữ có xu hướng có nhiều thứ để thảo luận hơn nam giới, đúng không?<br>\
+2) Trong một cuộc thảo luận, bạn thích nói nhiều hơn hay lắng nghe nhiều hơn?<br>\
+Vâng, tôi sẽ nói rằng tôi thích lắng nghe hơn. Thành thật mà nói, tôi không phải là người hay nói nhưng khi cần, tôi sẵn sàng lên tiếng và chia sẻ ý kiến ​​của mình.<br>\
+3) Bạn có thường xuyên thay đổi ý kiến ​​trong khi thảo luận không?<br>\
+Trong trường hợp tôi thấy quan điểm của mình không còn phù hợp nữa, tôi sẽ điều chỉnh để làm cho ý tưởng của mình tốt hơn. Quyết tâm và kiên định với một ý kiến ​​là điều tốt nhưng không phải lúc nào cũng vậy. Đôi khi, thay đổi là để tốt hơn."
+	,voca:"catch up on,being determined",
+},{
+	track:"1.14",
+	title:"Recycle",
+	en:"1) Do you recycle now? Why?<br>\
+Yes, I do recycle but not too often. Instead, I reuse things like glass jars and bottles, paper bags or plastic bags to reduce the amount of waste thrown out. If I have no idea about how to reuse it, I will sort things out and send them to the recycling centre.<br>\
+2) Did you recycle when you were a kid?<br>\
+No, I'm afraid. Recycling wasn't common at that time, especially in the place where I lived which was a rural area. That's why my memory went blank for a second after hearing your question.<br>\
+3) Will you recycle in the future? <br>\
+Of course yes. Recycling is environmentally friendly. As I said, it helps to limit the amount of harmful pollutants that need to be disposed of. Besides, I will also encourage my friends and family to recycle and reuse so as to keep our environment clean.<br>\
+4) What kind of things do you recycle? <br>\
+Things made from non-biodegradable materials like plastic, glass, metal,... can be recycled."
+	,vi:"1) Bạn có tái chế không? Tại sao?<br>\
+Có, tôi có tái chế nhưng không thường xuyên. Thay vào đó, tôi tái sử dụng những thứ như lọ thủy tinh và chai, túi giấy hoặc túi nhựa để giảm lượng rác thải ra ngoài. Nếu tôi không biết cách tái sử dụng, tôi sẽ phân loại và gửi chúng đến trung tâm tái chế.<br>\
+2) Bạn có tái chế khi còn nhỏ không?<br>\
+Không, tôi sợ là vậy. Tái chế không phổ biến vào thời điểm đó, đặc biệt là ở nơi tôi sống, một vùng nông thôn. Đó là lý do tại sao trí nhớ của tôi trở nên trống rỗng trong một giây sau khi nghe câu hỏi của bạn.<br>\
+3) Bạn có tái chế trong tương lai không? <br>\
+Tất nhiên là có. Tái chế thân thiện với môi trường. Như tôi đã nói, nó giúp hạn chế lượng chất gây ô nhiễm có hại cần phải thải bỏ. Bên cạnh đó, tôi cũng sẽ khuyến khích bạn bè và gia đình tái chế và tái sử dụng để giữ cho môi trường của chúng ta sạch sẽ.<br>\
+4) Bạn tái chế những loại đồ vật nào? <br>\
+Những thứ làm từ vật liệu không phân hủy sinh học như nhựa, thủy tinh, kim loại,... có thể được tái chế."
+	,voca:"non-biodegradable,environmentally,my memory went blank,pollutants,disposed of",
+},{
+	track:"1.15",
+	title:"Sport",
+	en:"1) What sports did you do when you were a kid?<br>\
+Actually I didn't play any sports when I was a little girl. Instead, I just spent all my childhood playing traditional games such as hide and seek, bag jumping,...<br>\
+2) What's your favorite sport? Why?<br>\
+Now, I'm still not a sporty person so I don't have a passion for any particular kinds of sport. But if I have to choose one, I would love to take up swimming. Well, I think it's kinda exhilarating and good fun to relax during a boiling hot weather.<br>\
+3) Do you watch sports? Why? <br>\
+No. Watching sports is not my cup of tea. I find it so tedious. In fact, I'm more into watching comedies or TV series which make me laugh hysterically to relieve my stress.<br>\
+4) Are you a fan of any sport teams? Why? <br>\
+Honestly, I don't have my favorite team because like I said, I'm not fond of watching these matches. Having said that, I do admire the Vietnamese national football team. You know, all players are skillful despite their young age."
+	,vi:"1) Bạn đã chơi môn thể thao nào khi còn nhỏ?<br>\
+Thực ra hồi nhỏ tôi không chơi môn thể thao nào cả. Thay vào đó, tôi chỉ dành cả tuổi thơ để chơi những trò chơi truyền thống như trốn tìm, nhảy bao bố,...<br>\
+2) Môn thể thao yêu thích của bạn là gì? Tại sao?<br>\
+Giờ tôi vẫn không phải là người thích thể thao nên không đam mê bất kỳ môn thể thao nào. Nhưng nếu phải chọn một môn, tôi rất muốn học bơi. Tôi nghĩ bơi lội khá thú vị và vui vẻ để thư giãn trong thời tiết nóng nực.<br>\
+3) Bạn có xem thể thao không? Tại sao? <br>\
+Không. Tôi không thích xem thể thao. Tôi thấy nó rất nhàm chán. Thực ra, tôi thích xem phim hài hoặc phim truyền hình hơn vì chúng khiến tôi cười ngặt nghẽo để giải tỏa căng thẳng.<br>\
+4) Bạn có hâm mộ đội thể thao nào không? Tại sao? <br>\
+Thành thật mà nói, tôi không có đội bóng yêu thích vì như tôi đã nói, tôi không thích xem những trận đấu này. Tuy nhiên, tôi rất ngưỡng mộ đội tuyển bóng đá quốc gia Việt Nam. Bạn biết đấy, tất cả các cầu thủ đều có kỹ năng mặc dù họ còn trẻ."
+	,voca:"cup of tea,exhilarating,have a passion for,sporty",
 }
 
 

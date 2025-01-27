@@ -2,18 +2,22 @@
 {
 title:"4k Book1",
 en:"afraid (a) /əˈfreɪd/ sợ<br>\
+actually (adv) /ˈæktʃuəli/ thực ra<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 angry (a)/ˈæŋɡri/ giận dữ<br>\
 arrive /əˈraɪv/ đến<br>\
+regret (v) /rɪˈɡret/ hối tiếc<br>\
 attack tấn công<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
+sporty (a) /ˈspɔːrti/ thích thể thao<br>\
 hunt (v) săn<br>\
 middle (prep) giữa<br>\
 extraordinary (a) đặc biệt, phi thường, lạ lùng<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
+acquire (v) /əˈkwaɪər/ có được<br>\
 low-budget (a) ngân sách thấp<br>\
 scientific  (a) có tính khoa học<br>\
 unaggressive (a) không hung hăng<br>\
@@ -379,27 +383,27 @@ hill đồi<br>\
 level mức độ<br>\
 lone đơn độc<br>\
 puddle vũng nước<br>\
-response phản ứng<br>\
-season mùa<br>\
-solution giải pháp<br>\
+response (n) /rɪˈspɑːns/ phản ứng<br>\
+season (n) /ˈsiːzn/ mùa<br>\
+solution (n) /səˈluːʃn/ giải pháp<br>\
 waste chất thải<br>\
 whether cho dù<br>\
 argue (v) /ˈɑːrɡjuː/ tranh luận<br>\
-crowd đám đông<br>\
-depend phụ thuộc<br>\
-empty trống rỗng<br>\
-exact chính xác<br>\
-gather tập hợp<br>\
-indicate chỉ ra<br>\
-item mục<br>\
+crowd (n) /kraʊd/ đám đông<br>\
+depend (v) /dɪˈpend/ phụ thuộc<br>\
+vomit (v) /ˈvɑːmɪt/ nôn mửa<br>\
+empty (a) /ˈempti/ trống rỗng<br>\
+exact (a) /ɪɡˈzækt/ chính xác<br>\
+gather (v) /ˈɡæðər/ tập hợp<br>\
+indicate (v) /ˈɪndɪkeɪt/ chỉ ra<br>\
+item (n) /ˈaɪtəm/ đồ dùng, món đồ, mục<br>\
 offer cung cấp<br>\
 product sản phẩm<br>\
 property tài sản<br>\
 purchase (n,v) /ˈpɜːrtʃəs/ việc mua, mua<br>\
 select lựa chọn<br>\
 tool công cụ<br>\
-treat điều trị<br>\
-alive sống<br>\
+alive (a) /əˈlaɪv/ sống<br>\
 bone xương<br>\
 bother làm phiền<br>\
 conclusion kết luận<br>\

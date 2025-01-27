@@ -431,7 +431,7 @@ wheelchair (n) /ˈwiːl.tʃeər/ xe lăn<br>\
 paramedic (n) /pær.əˈmed.ɪk/ nhân viên y tế<br>\
 stretcher (n) /ˈstretʃ.ər/ cáng cứu thương<br>\
 rush (n) /rʌʃ/ đưa đi, chuyển đi (nhanh)<br>\
-treat (v) /triːt/ điều trị, chữa trị<br>\
+treat (v) /triːt/ điều trị, chữa trị, đối xử<br>\
 recovery (n) /rɪˈkʌv.ər.i/ sự bình phục<br>\
 suffer (v) /ˈsʌf.ər/ chịu đựng<br>\
 deteriorate (v) /dɪˈtɪə.ri.ə.reɪt/ xấu đi, tệ hơn<br>\

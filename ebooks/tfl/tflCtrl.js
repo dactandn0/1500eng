@@ -10,6 +10,7 @@ app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
 var KBook = 1;
 $scope.stories = tfl_b1_stories; //1
 $scope.storyIdx = 0;
+$scope.titles = showStoryTitles($scope.stories);  // def
 
 bookChange = function (num) {
 	switch (num) {
@@ -17,6 +18,7 @@ bookChange = function (num) {
 		case 2: $scope.stories = tfl_b2_stories; break;
 		case 3: $scope.stories = tfl_b3_stories; break;
 	}
+	$scope.titles = showStoryTitles($scope.stories);
 	Helper_saveDB("tfl_b", num);
 	KBook = num;
 	$scope.fetchStory($scope.storyIdx, true);

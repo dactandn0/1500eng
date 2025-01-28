@@ -1,10 +1,10 @@
 
 const lptd_cd1_stories = [
 {
-title: 'Unit 1 A Picnic by the River',
+unit:1,
+title: 'A Picnic by the River',
 en: 
-"Unit 1 A Picnic by the River<br>\
-W: This is a good spot. Let's stop and have our picnic next to the river. <br>\
+"W: This is a good spot. Let's stop and have our picnic next to the river. <br>\
 M: Good idea. Walking always makes me hungry. I'm ready for lunch.<br>\
 W: We can sit here on the grass. Oh no! Someone forgot to throw these empty paper bags away. There is litter everywhere!<br>\
 M: Why do people always leave litter around? It's not a nice thing to do. It spoils other people's picnics.<br>\
@@ -14,8 +14,7 @@ W: That's right. Well, after our picnic, let's pick up all the litter we can and
 M: OK! And next week, let's come back with friends and pick up some more.<br>\
 W: Good idea!",
 vi: 
-'Bài 1 Dã ngoại bên bờ sông<br>\
-W: Đây là một địa điểm tốt. Chúng ta hãy dừng lại và dã ngoại bên bờ sông.<br>\
+"W: Đây là một địa điểm tốt. Chúng ta hãy dừng lại và dã ngoại bên bờ sông.<br>\
 M: Ý tưởng hay. Đi bộ luôn khiến tôi đói. Tôi đã sẵn sàng cho bữa trưa.<br>\
 W: Chúng ta có thể ngồi đây trên bãi cỏ. Ôi không! Có người quên vứt những chiếc túi giấy rỗng này đi. Rác ở khắp mọi nơi!<br>\
 M: Tại sao mọi người luôn vứt rác khắp nơi? Đó không phải là một điều tốt đẹp. Nó làm hỏng buổi dã ngoại của người khác.<br>\
@@ -23,14 +22,14 @@ W: Tôi nghĩ họ lười biếng. Hoặc có thể họ chỉ không quan tâm
 M: Mọi người nên dọn dẹp trước khi rời đi, và không để rác nằm xung quanh.<br>\
 W: Đúng vậy. Vâng, sau buổi dã ngoại của chúng ta, chúng ta hãy nhặt hết rác có thể và mang chúng ra khỏi đây.<br>\
 M: Được! Và tuần tới, chúng ta hãy quay lại với bạn bè và nhặt thêm một số.<br>\
-W: Ý tưởng hay!',
-voca:'lunch,litter,hungry,empty,picnic,throw,spot,spoil,lie,pick up'
+W: Ý tưởng hay!"
+,voca:'lunch,litter,hungry,empty,picnic,throw,spot,spoil,lie,pick up'
 },
 {
-title: "Unit 2 Let's Recycle!",
+	unit:2,
+title: "Let's Recycle!",
 en: 
-"Unit 2 Let's Recycle!<br>\
-M: Hi, Jane! Have you heard about the new laws to help people recycle?<br>\
+"M: Hi, Jane! Have you heard about the new laws to help people recycle?<br>\
 W: I heard about them on the news last night. I don't think I like them.<br>\
 M: The government wants to keep the environment clean by recycling paper, metal, and glass instead of throwing these things away. <br>\
 W: But who wants to pay an extra 50 cents each time you buy a cup of coffee? That's a lot of money!<br>\
@@ -40,8 +39,7 @@ M: No, it's only five cents. Don't worry. And you can get your money back when y
 W: That's fair. Well, maybe the government is right, after all. I'll return all the paper coffee cups I use from now on.<br>\
 M: Good! We all need to recycle. It helps to keep the environment clean.",
 vi: 
-'Bài 2 Hãy tái chế!<br>\
-M: Chào Jane! Bạn đã nghe về luật mới để giúp mọi người tái chế chưa?<br>\
+"M: Chào Jane! Bạn đã nghe về luật mới để giúp mọi người tái chế chưa?<br>\
 W: Tôi nghe về chúng trên bản tin tối qua. Tôi không nghĩ là tôi thích chúng.<br>\
 M: Chính phủ muốn giữ cho môi trường sạch sẽ bằng cách tái chế giấy, kim loại và thủy tinh thay vì vứt những thứ này đi.<br>\
 W: Nhưng ai muốn trả thêm 50 xu mỗi lần mua một cốc cà phê? Thật là nhiều tiền!<br>\
@@ -49,14 +47,14 @@ M: 50 xu? Chỉ mất thêm năm xu cho một cốc giấy.<br>\
 W: Tôi nghĩ là 50 xu!<br>\
 M: Không, chỉ năm xu thôi. Đừng lo. Và bạn có thể lấy lại tiền khi trả lại cốc.<br>\
 W: Công bằng mà. Vâng, có lẽ chính phủ đúng, sau cùng. Tôi sẽ trả lại tất cả các cốc cà phê giấy mà tôi sử dụng từ bây giờ.<br>\
-M: Tốt! Tất cả chúng ta đều cần tái chế. Điều đó giúp giữ môi trường sạch.',
-voca:'recycle,environment,government,extra,return,law,fair,instead of,after all'
+M: Tốt! Tất cả chúng ta đều cần tái chế. Điều đó giúp giữ môi trường sạch."
+,voca:'recycle,environment,government,extra,return,law,fair,instead of,after all'
 },
 {
-title:"Unit 3 Growing Roses",
+	unit:3,
+title:"Growing Roses",
 en:
-"Unit 3 Growing Roses<br>\
-M: Excuse me, ma'am. I have a problem with my rose bush. It used to produce a lot of pink roses. But now it doesn't produce any flowers at all.<br>\
+"M: Excuse me, ma'am. I have a problem with my rose bush. It used to produce a lot of pink roses. But now it doesn't produce any flowers at all.<br>\
 W: I see. That does seem like a problem. Do the leaves on the plant look healthy? <br>\
 M: Not really. The leaves used to be very green. Now, most of them have turned brown.<br>\
 W: Well, I think your rose bush needs some fertilizer.<br>\
@@ -67,8 +65,7 @@ W: About two weeks, I think. <br>\
 M: Great. I'll take it. Thank you so much for your help.<br>\
 W: You're welcome!",
 vi:
-"Bài 3 Trồng hoa hồng<br>\
-M: Xin lỗi, thưa bà. Tôi có vấn đề với cây hoa hồng của tôi. Trước đây nó từng ra rất nhiều hoa hồng màu hồng. Nhưng bây giờ nó không ra hoa nữa.<br>\
+"M: Xin lỗi, thưa bà. Tôi có vấn đề với cây hoa hồng của tôi. Trước đây nó từng ra rất nhiều hoa hồng màu hồng. Nhưng bây giờ nó không ra hoa nữa.<br>\
 W: Tôi hiểu rồi. Có vẻ như đó là vấn đề. Lá trên cây có khỏe không?<br>\
 M: Không hẳn. Lá trước đây rất xanh. Bây giờ, hầu hết đã chuyển sang màu nâu.<br>\
 W: Vâng, tôi nghĩ bụi hoa hồng của bà cần một ít phân bón.<br>\
@@ -81,9 +78,9 @@ W: Không có gì!",
 voca: "bush,problem,leaf,liquid,recover,ferilizer,produce,quite,cost,at all"
 },
 {
-title: "Unit 4 Bird Watching",
-en: "Unit 4 Bird Watching<br>\
-B: I want to go bird watching tomorrow. Do you know a good area for birds?<br>\
+unit:4,
+title: "Bird Watching",
+en: "B: I want to go bird watching tomorrow. Do you know a good area for birds?<br>\
 G: There is a quiet park near here. There are always many beautiful birds there. <br>\
 B: Will I be able to see different types of birds in this area?<br>\
 G: Yes, I think so. If you use binoculars, you can see the birds, even if they are far away.<br>\
@@ -94,8 +91,7 @@ G: No, thank you. I think bird watching is boring.<br>\
 B: That's not true! Birds are very interesting. Some birds have colorful feathers. Some birds sing beautiful songs. Some birds make special nests to lay eggs in.<br>\
 G: Really? Maybe I will go bird watching one day after all!",
 vi:
-"Bài 4 Ngắm chim<br>\
-B: Ngày mai tôi muốn đi ngắm chim. Bạn có biết khu vực nào thích hợp để ngắm chim không?<br>\
+"B: Ngày mai tôi muốn đi ngắm chim. Bạn có biết khu vực nào thích hợp để ngắm chim không?<br>\
 G: Có một công viên yên tĩnh gần đây. Luôn có nhiều loài chim đẹp ở đó.<br>\
 B: Tôi có thể nhìn thấy nhiều loài chim khác nhau ở khu vực này không?<br>\
 G: Có, tôi nghĩ là có. Nếu bạn sử dụng ống nhòm, bạn có thể nhìn thấy những chú chim, ngay cả khi chúng ở rất xa.<br>\
@@ -108,17 +104,16 @@ G: Thật sao? Có lẽ một ngày nào đó tôi sẽ đi ngắm chim sau tấ
 voca:"area,feathers,tomorrow,park,boring,binoculars,as if,nest,lay"
 },
 {
-title:"Unit 5 Trees in the Forest",
-en:"Unit 5 Trees in the Forest<br>\
-There are many forests in North America. There are many trees in these forests. Some of these trees are more than two hundred feet tall.<br>\
+	unit:5,
+title:"Trees in the Forest",
+en:"There are many forests in North America. There are many trees in these forests. Some of these trees are more than two hundred feet tall.<br>\
 Some are over five hundred years old. Several kinds of trees grow in these forests. Fir, cedar, and pine are three. These trees grow in different areas.\
 Some grow in forests. Some grow on the mountains. People who lived in this place long ago used these trees to make things out of wood.\
  Many of these trees are now in special areas. These areas are called forest reserves or national parks. Some parks charge a small entrance fee.\
   Visitors must pay the fee to enter the parks. Then they can walk among the beautiful old trees.\
    They must take care not to damage the trees. We should all take care of forests."
 ,
-vi:"Bài 5 Cây trong rừng<br>\
-Có nhiều khu rừng ở Bắc Mỹ. Có nhiều cây trong những khu rừng này. Một số cây này cao hơn hai trăm feet.<br>\
+vi:"Có nhiều khu rừng ở Bắc Mỹ. Có nhiều cây trong những khu rừng này. Một số cây này cao hơn hai trăm feet.<br>\
 Một số cây đã hơn năm trăm năm tuổi. Có một số loại cây mọc trong những khu rừng này. Linh sam, tuyết tùng và thông là ba loại. Những loại cây này mọc ở những khu vực khác nhau.\
 Một số mọc trong rừng. Một số mọc trên núi. Những người sống ở nơi này từ lâu đã sử dụng những cây này để làm đồ vật từ gỗ.\
 Nhiều loại cây này hiện nằm ở những khu vực đặc biệt. Những khu vực này được gọi là khu bảo tồn rừng hoặc công viên quốc gia. Một số công viên thu một khoản phí vào cửa nhỏ.\
@@ -126,12 +121,10 @@ Du khách phải trả phí để vào công viên. Sau đó, họ có thể đi
 Họ phải cẩn thận không làm hỏng cây. Tất cả chúng ta nên chăm sóc rừng.",
 voca:"forest,several,visitor,hundred,feet,fee,damage,reserve,national,entrance,take care of,make things out of",
 note: "make out of: làm ra từ|make up of: tạo nên từ"
-}
-,
-{
-title:"Unit 6 An Easy Way to Shop",
-en:"Unit 6 An Easy Way to Shop<br>\
-G: Hey, Steve. Look at my new MP3 player!<br>\
+},
+{unit:6,
+title:"An Easy Way to Shop",
+en:"G: Hey, Steve. Look at my new MP3 player!<br>\
 B: Wow! It looks cool! Where did you buy it?<br>\
 G: I bought it online at an electronics website. <br>\
 B: I'm not very good at using a computer. Is it hard to buy things online?<br>\
@@ -141,8 +134,7 @@ B: That does seem easy!<br>\
 G: Yes, it is. It only takes about a week for your item to come. Of course, if you are in a hurry, you can pay more to get it sent faster.<br>\
 B: Do you pay for the item when it comes?<br>\
 G: No, you have to pay for it online with a credit card.",
-vi: "Bài 6 Một cách mua sắm dễ dàng<br>\
-G: Này, Steve. Nhìn máy nghe nhạc MP3 mới của tôi này!<br>\
+vi: "G: Này, Steve. Nhìn máy nghe nhạc MP3 mới của tôi này!<br>\
 B: Chà! Trông tuyệt quá! Bạn mua ở đâu thế?<br>\
 G: Tôi mua trực tuyến trên một trang web điện tử.<br>\
 B: Tôi không giỏi sử dụng máy tính lắm. Mua hàng trực tuyến có khó không?<br>\
@@ -154,9 +146,9 @@ G: Không, bạn phải thanh toán trực tuyến bằng thẻ tín dụng.",
 voca:"website,item,button,easy,electronics,hard,faster,credit card"
 },
 {
-title: "Unit 7 Cell Phone Messages",
-en: "Unit 7 Cell Phone Messages<br>\
-W: I need to check my messages.<br>\
+	unit:7,
+title: "Cell Phone Messages",
+en: "W: I need to check my messages.<br>\
 M: How are you going to do that? We are in the middle of the freeway!<br>\
 W: I'm going to use my cell phone. Haven't you ever done that?<br>\
 M: No. I just use my cell phone to talk to other people.<br>\
@@ -168,8 +160,7 @@ W: Right. All my friends usually send me text messages now. <br>\
 M: Thanks for telling me about this. I'll have to try it!<br>\
 W: You're welcome. I think you'll find it useful.",
 vi:
-"Bài 7 Tin nhắn trên điện thoại di động<br>\
-W: Tôi cần kiểm tra tin nhắn của mình.<br>\
+"W: Tôi cần kiểm tra tin nhắn của mình.<br>\
 M: Bạn định làm thế nào? Chúng ta đang ở giữa đường cao tốc!<br>\
 W: Tôi sẽ sử dụng điện thoại di động của mình. Bạn chưa bao giờ làm thế sao?<br>\
 M: Không. Tôi chỉ sử dụng điện thoại di động của mình để nói chuyện với những người khác.<br>\
@@ -183,22 +174,23 @@ W: Không có gì. Tôi nghĩ bạn sẽ thấy nó hữu ích."
 ,voca:"message,cell phone,useful,middle,receive,check,freeway,press,cheaper"
 },
 {
-en:"Unit 8 Bubbles in Boiling Water<br>\
-G: Where do the bubbles come from when you boil water? Water is a liquid. When it is heated, it moves around faster and faster.\
+	unit:8,
+title:"Bubbles in Boiling Water",
+en:"G: Where do the bubbles come from when you boil water? Water is a liquid. When it is heated, it moves around faster and faster.\
 When it starts to boil, the liquid turns into a gas. This gas is called water vapor. This gas is lighter than the water around it.\
 It rises to the top. Then it disappears into the air. turning into gas very quickly. A lot of bubbles form at the same time.\
 All these bubbles try to escape at once. The bubbles push the water out of the way and 'jump' out. This is what we call 'boiling water.' More and more water turns into gas. More of it disappears into the air. After a while, every drop of the water will be gone. Try it and see!"
 ,
-vi:"Bài 8 Bong bóng trong nước sôi<br>\
-G: Bong bóng xuất hiện từ đâu khi bạn đun sôi nước? Nước là chất lỏng. Khi được đun nóng, nó di chuyển xung quanh ngày càng nhanh hơn.\
+vi:"G: Bong bóng xuất hiện từ đâu khi bạn đun sôi nước? Nước là chất lỏng. Khi được đun nóng, nó di chuyển xung quanh ngày càng nhanh hơn.\
 Khi bắt đầu sôi, chất lỏng chuyển thành khí. Khí này được gọi là hơi nước. Khí này nhẹ hơn nước xung quanh nó.\
 Nó nổi lên trên. Sau đó, nó biến mất vào không khí. Khi nước ngày càng nóng hơn, nó bắt đầu biến thành khí rất nhanh.\
 Rất nhiều bong bóng hình thành cùng một lúc. Tất cả những bong bóng này đều cố gắng thoát ra cùng một lúc. Các bong bóng đẩy nước ra và 'nhảy' ra ngoài. Đây là những gì chúng ta gọi là 'nước sôi'.Càng ngày càng nhiều nước chuyển thành khí. Càng nhiều nước biến mất vào không khí. Sau một thời gian, từng< giọt nước sẽ biến mất. Hãy thử và xem!",
 voca:"gas,disappear,escape,boil,bubble(s),drop,vapor,quick,push,turn into"
 },
 {
-en:"Unit 9 The Blue Sky<br>\
-B: Joe asked me something about science just now. But I didn't know the answer.<br>\
+unit:9,
+title:"The Blue Sky",
+en:"B: Joe asked me something about science just now. But I didn't know the answer.<br>\
 G: I'm good at science. Ask me.<br>\
 B: OK. Why is the sky blue?<br>\
 G: I'll explain it in a simple way. Light comes through the air from the sun in waves.<br>\
@@ -210,8 +202,7 @@ B: So that is what makes the sky blue! What happens to the other colors?<br>\
 G: They reflect off the things that they hit. Your shirt is red because our eyes see the red light reflected from it.<br>\
 B: Now I understand why the sky is blue!"
 ,
-vi: "Bài 9 Bầu trời xanh<br>\
-B: Joe vừa hỏi mình một điều về khoa học. Nhưng mình không biết câu trả lời.<br>\
+vi: "B: Joe vừa hỏi mình một điều về khoa học. Nhưng mình không biết câu trả lời.<br>\
 G: Mình giỏi khoa học. Hỏi mình đi.<br>\
 B: Được. Tại sao bầu trời lại xanh?<br>\
 G: Mình sẽ giải thích một cách đơn giản. Ánh sáng đi qua không khí từ mặt trời theo từng đợt.<br>\
@@ -224,8 +215,9 @@ G: Chúng phản chiếu từ những thứ mà chúng chiếu vào. Áo sơ mi 
 B: Bây giờ mình hiểu tại sao bầu trời lại có màu xanh rồi!",
 voca:"science,light,absorb,answer,reflect,understand,explain,above,molecule,scatter"
 },{
-en: "Unit 10 A New Camera<br>\
-M: I just bought a digital camera!<br>\
+	unit:10,
+	title:" A New Camera",
+en: "M: I just bought a digital camera!<br>\
 W: What is wrong with your old camera?<br>\
 M: Nothing. I bought this one because I want to store my pictures on my computer.<br>\
 W: I see.<br>\
@@ -237,8 +229,7 @@ M: Yes. You can even buy a good printer and do it from home.<br>\
 W: That seems easy! How do you store these digital pictures?<br>\
 M: You can store the pictures on your computer. But you might run out of space. I save all the pictures I like on compact discs. You can store more than seven hundred photos on one CD!<br>\
 W: Great! Maybe I should get a digital camera, too.",
-vi: "Bài 10 Máy ảnh mới<br>\
-M: Tôi vừa mua một chiếc máy ảnh kỹ thuật số!<br>\
+vi: "M: Tôi vừa mua một chiếc máy ảnh kỹ thuật số!<br>\
 W: Máy ảnh cũ của bạn có vấn đề gì vậy?<br>\
 M: Không có gì. Tôi mua chiếc này vì tôi muốn lưu trữ ảnh trên máy tính.<br>\
 W: Tôi hiểu rồi.<br>\
@@ -251,21 +242,19 @@ W: Có vẻ dễ! Bạn lưu trữ những bức ảnh kỹ thuật số này nh
 M: Bạn có thể lưu trữ ảnh trên máy tính. Nhưng bạn có thể hết dung lượng. Tôi lưu tất cả những bức ảnh tôi thích trên đĩa CD. Bạn có thể lưu trữ hơn bảy trăm bức ảnh trên một đĩa CD!<br>\
 W: Tuyệt! Có lẽ tBàiôi cũng nên mua một chiếc máy ảnh kỹ thuật số.",
 voca:"digital,delete,camera,print,compact disc,store,save,run out of space"
-}
-,
-{
-title:"Unit 11 Gold",
-en:"Unit 11 Gold<br>\
-Gold has been a part of many cultures for hundreds of years. People made coins and jewelry with gold. Gold is a soft metal. It is easy to shape into sheets, long wires, or rings. People sometimes mix gold with other metals. This makes the gold harder. Then it can be made into beautiful jewelry. Why do we value gold so much? It has a special color. No other metal is a bright yellow.<br>We also value gold because it is rare. A rare thing is hard to find. Even after hundreds of years, gold is still a precious metal now. It is still valued for its beauty. It is still rare. Today, banks store gold in the form of bars.<br>\
+},{
+unit:11,
+title:"Gold",
+en:"Gold has been a part of many cultures for hundreds of years. People made coins and jewelry with gold. Gold is a soft metal. It is easy to shape into sheets, long wires, or rings. People sometimes mix gold with other metals. This makes the gold harder. Then it can be made into beautiful jewelry. Why do we value gold so much? It has a special color. No other metal is a bright yellow.<br>We also value gold because it is rare. A rare thing is hard to find. Even after hundreds of years, gold is still a precious metal now. It is still valued for its beauty. It is still rare. Today, banks store gold in the form of bars.<br>\
 Its value is more than $600 per ounce. Gold is more useful now than ever before."
-,vi:"Bài 11 Vàng<br>\
-Vàng đã là một phần của nhiều nền văn hóa trong hàng trăm năm. Người ta làm tiền xu và đồ trang sức bằng vàng. Vàng là một kim loại mềm. Dễ dàng tạo hình thành các tấm, sợi dài hoặc nhẫn. Đôi khi người ta trộn vàng với các kim loại khác. Điều này làm cho vàng cứng hơn. Sau đó, nó có thể được chế tác thành đồ trang sức đẹp. Tại sao chúng ta lại coi trọng vàng như vậy? Vàng có màu sắc đặc biệt. Không có kim loại nào khác có màu vàng tươi.<br>Chúng ta cũng coi trọng vàng vì nó hiếm. Một thứ hiếm rất khó tìm. Ngay cả sau hàng trăm năm, vàng vẫn là một kim loại quý hiện nay. Nó vẫn được coi trọng vì vẻ đẹp của nó. Nó vẫn hiếm. Ngày nay, các ngân hàng lưu trữ vàng dưới dạng thỏi.<br>\
+,vi:"Vàng đã là một phần của nhiều nền văn hóa trong hàng trăm năm. Người ta làm tiền xu và đồ trang sức bằng vàng. Vàng là một kim loại mềm. Dễ dàng tạo hình thành các tấm, sợi dài hoặc nhẫn. Đôi khi người ta trộn vàng với các kim loại khác. Điều này làm cho vàng cứng hơn. Sau đó, nó có thể được chế tác thành đồ trang sức đẹp. Tại sao chúng ta lại coi trọng vàng như vậy? Vàng có màu sắc đặc biệt. Không có kim loại nào khác có màu vàng tươi.<br>Chúng ta cũng coi trọng vàng vì nó hiếm. Một thứ hiếm rất khó tìm. Ngay cả sau hàng trăm năm, vàng vẫn là một kim loại quý hiện nay. Nó vẫn được coi trọng vì vẻ đẹp của nó. Nó vẫn hiếm. Ngày nay, các ngân hàng lưu trữ vàng dưới dạng thỏi.<br>\
 Giá trị của nó là hơn 600 đô la một ounce. Vàng hiện hữu ích hơn bao giờ hết.",
 voca:"gold,value,beauty,metal,jewelry,rare,shape,precious,form,bar"
 },
 {
-en:"Unit 12 The Summer Music Festival<br>\
-W: Have you heard about the music festival next summer? I read that it is going to have about 20 different bands playing in it.<br>\
+	unit:12,
+	title:"The Summer Music Festival",
+en:"W: Have you heard about the music festival next summer? I read that it is going to have about 20 different bands playing in it.<br>\
 M: I think I did hear someone talking about it. Are you planning on going?<br>\
 W: I'll go if I can get tickets. I heard that people are going to line up overnight to get tickets. I might line up overnight, too.<br>\
 M: I don't think I want to line up all night long!<br>\
@@ -273,8 +262,7 @@ W: Well, I'm going to do it. I think it is going to be a great music festival th
 M: Maybe. Do you know how much the tickets are going to cost?<br>\
 W: I'm not sure, but I think each ticket will be about $75.<br>\
 M: That's a lot of money! I don't think I want to spend that much on a ticket. Good luck, anyway!",
-vi: "Bài 12 Lễ hội âm nhạc mùa hè<br>\
-W: Bạn đã nghe về lễ hội âm nhạc vào mùa hè năm sau chưa? Tôi đọc rằng sẽ có khoảng 20 ban nhạc khác nhau chơi nhạc ở đó.<br>\
+vi: "W: Bạn đã nghe về lễ hội âm nhạc vào mùa hè năm sau chưa? Tôi đọc rằng sẽ có khoảng 20 ban nhạc khác nhau chơi nhạc ở đó.<br>\
 M: Tôi nghĩ là tôi đã nghe ai đó nói về nó. Bạn có định đi không?<br>\
 W: Tôi sẽ đi nếu tôi có thể mua được vé. Tôi nghe nói rằng mọi người sẽ xếp hàng qua đêm để mua vé. Tôi cũng có thể xếp hàng qua đêm.<br>\
 M: Tôi không nghĩ là tôi muốn xếp hàng suốt đêm!<br>\

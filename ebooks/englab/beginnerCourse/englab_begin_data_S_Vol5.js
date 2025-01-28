@@ -15,7 +15,7 @@ Không, thành thật mà nói, với tôi thì không vấn đề gì. Bạn bi
 Vâng, tùy thuộc vào bạn. Ý tôi là, nếu người đó dễ gần và có thể để lại ấn tượng tốt với tôi, thì tôi chắc chắn sẽ dành nhiều thời gian hơn để nói chuyện. Nếu không, sẽ rất ngại khi nói chuyện với một anh chàng không muốn để mọi người tìm hiểu về mình.<br>\
 3) Bạn có sợ bị đánh giá khi gặp ai đó lần đầu không?<br>\
 Thành thật mà nói, tôi không thực sự bận tâm. Tôi cố gắng không nghĩ nhiều về điều đó vì thực ra, cách người khác nhìn nhận tôi không quan trọng bằng cách tôi coi trọng bản thân mình."
-	,voca:"extrovert,breaks to the ice, approachable,impression,awkward,get to know,leave a good impression on,strikes up a conversation"
+	,voca:"extrovert,breaks to the ice, approachable,impression,awkward,get to know,leave a good impression on,strikes up a conversation,perceive"
 	,note:"leave a good impression on someone|To strike up a conversation"
 },{
 	track:"1.2",
@@ -57,13 +57,13 @@ Mặc dù tôi thích cà phê hơn, nhưng tôi chỉ mời khách uống trà 
 	track:"1.4",
 	title:"Age",
 	en:"1) What do you think is the best age to learn to drive?<br>\
-The ideal time to learn is when people turn 16. Well, this is the legal minimum driving ages in my country. At this age, people are mature enough to be responsible for everything they do. Besides, acquiring new skills at a young age is also much faster and easier.<br>\
+The ideal time to learn is when people turn 16) Well, this is the legal minimum driving ages in my country. At this age, people are mature enough to be responsible for everything they do. Besides, acquiring new skills at a young age is also much faster and easier.<br>\
 2) How do you feel about getting older? <br>\
-It would be a lie if I say I'm not sad about it. Actually, there is nothing I can do to stop being older, so just let it be. I'd better enjoy every second of my life, live happily and do meaningful things so that I can have a life without regretting.<br>\
+It would be a lie if I say I'm not sad about it. Actually, there is nothing I can do to stop being older, so just let it be. I'd better enjoy every second of my life, live happily and do meaningful things so that I can have a life without any regret.<br>\
 3) Should we treat people of different ages in the same way? <br>\
 No, I don't think so. You cannot treat a 5-year-old kid just like the way you behave when meeting your grandparents, right? Older people always need to be respected."
 	,vi:"1) Bạn nghĩ độ tuổi nào là tốt nhất để học lái xe?<br>\
-Thời điểm lý tưởng để học là khi mọi người bước sang tuổi 16. Vâng, đây là độ tuổi lái xe tối thiểu hợp pháp ở quốc gia của tôi. Ở độ tuổi này, mọi người đã đủ trưởng thành để chịu trách nhiệm cho mọi việc họ làm. Bên cạnh đó, việc học các kỹ năng mới khi còn trẻ cũng nhanh hơn và dễ dàng hơn nhiều.<br>\
+Thời điểm lý tưởng để học là khi mọi người bước sang tuổi 16) Vâng, đây là độ tuổi lái xe tối thiểu hợp pháp ở quốc gia của tôi. Ở độ tuổi này, mọi người đã đủ trưởng thành để chịu trách nhiệm cho mọi việc họ làm. Bên cạnh đó, việc học các kỹ năng mới khi còn trẻ cũng nhanh hơn và dễ dàng hơn nhiều.<br>\
 2) Bạn cảm thấy thế nào khi già đi? <br>\
 Sẽ là nói dối nếu tôi nói rằng tôi không buồn về điều đó. Thực ra, không có gì tôi có thể làm để ngăn chặn việc già đi, vì vậy hãy để nó như vậy. Tốt hơn hết là tôi nên tận hưởng từng giây phút của cuộc sống, sống hạnh phúc và làm những điều có ý nghĩa để tôi có thể có một cuộc sống không hối tiếc.<br>\
 3) Chúng ta có nên đối xử với những người ở độ tuổi khác nhau theo cùng một cách không? <br>\
@@ -257,6 +257,123 @@ Không. Tôi không thích xem thể thao. Tôi thấy nó rất nhàm chán. Th
 4) Bạn có hâm mộ đội thể thao nào không? Tại sao? <br>\
 Thành thật mà nói, tôi không có đội bóng yêu thích vì như tôi đã nói, tôi không thích xem những trận đấu này. Tuy nhiên, tôi rất ngưỡng mộ đội tuyển bóng đá quốc gia Việt Nam. Bạn biết đấy, tất cả các cầu thủ đều có kỹ năng mặc dù họ còn trẻ."
 	,voca:"cup of tea,exhilarating,have a passion for,sporty",
+},{
+	track:"1.16",
+	title:"Borrowing / Lending",
+	en:"1) Have you ever borrowed money from others?<br>\
+Yes, occasionally, in unexpected cases. Like, yesterday, I did borrow some money from my roommates to buy some food since I forgot my wallet at school. But most of the time, I try to manage my money carefully so that I won't get into debt some days.<br>\
+2) Do you like lending things to others?<br>\
+I don't mind lending things as long as the borrower promises to return it back to me on time and on top of that, they must be a responsible person because I don't like to see any damage to my stuff.<br>\
+3) How do you feel when people don't return the things they borrowed from you?<br>\
+Basically, those people will leave a bad impression on me. They have betrayed my trust. Well, it's not that serious actually but I won't lend them anything after that."
+	,vi:"1) Bạn đã từng vay tiền người khác chưa?<br>\
+Có, thỉnh thoảng, trong những trường hợp bất ngờ. Ví dụ, hôm qua, tôi đã vay tiền bạn cùng phòng để mua đồ ăn vì tôi quên ví ở trường. Nhưng hầu hết thời gian, tôi cố gắng quản lý tiền của mình cẩn thận để không phải mắc nợ vào một số ngày.<br>\
+2) Bạn có thích cho người khác mượn đồ không?<br>\
+Tôi không ngại cho mượn đồ miễn là người mượn hứa sẽ trả lại cho tôi đúng hạn và trên hết, họ phải là người có trách nhiệm vì tôi không muốn thấy đồ đạc của mình bị hư hỏng.<br>\
+3) Bạn cảm thấy thế nào khi mọi người không trả lại đồ họ mượn của bạn?<br>\
+Về cơ bản, những người đó sẽ để lại ấn tượng xấu với tôi. Họ đã phản bội lòng tin của tôi. Thực ra thì cũng không nghiêm trọng lắm nhưng sau chuyện đó, tôi sẽ không cho họ mượn bất cứ thứ gì nữa."
+	,voca:"get into debt,betrayed my trust",
+},{
+	track:"1.17",
+	title:"Voice",
+	en:"1) Is your voice similar to that of a family member?<br>\
+I don't think so. My parents have heavy local accents from central Vietnam while I don't. I guess it's because I was born and raised in the south. Not to mention that my parents' voices are much thicker than mine.<br>\
+2) Do you enjoy recording your voice and listening to it?<br>\
+I used to feel quite awkward when recording and listening to my own voice, but now, I really enjoy it. Actually, it's the thing I do every day to become more fluent at speaking English. By listening to my voice, I can easily check my pronunciation, fluency and intonation.<br>\
+3) Was your voice different when you were young?<br>\
+I'm not sure but I don't think there have been any significant changes in my voice. I've always had this high-pitched voice. To be honest, I don't really like my voice because it doesn't sound “mature” at all.<br>\
+4) Does everyone have the same voice? <br>\
+I guess not since I have never met two people with the same voice, let alone everyone. Voices vary from person to person and it either will be different in pitch, volume or tone.<br>\
+5) Are you using the same voice all the time? <br>\
+Probably no. Whenever I am in a heated discussion, I often raise the tone and volume of my voice in order to place more emphasis on the message I am delivering."
+	,vi:"1) Giọng nói của bạn có giống giọng của một thành viên trong gia đình không?<br>\
+Tôi không nghĩ vậy. Bố mẹ tôi có giọng địa phương rất nặng từ miền Trung Việt Nam trong khi tôi thì không. Tôi đoán là vì tôi sinh ra và lớn lên ở miền Nam. Chưa kể giọng của bố mẹ tôi còn đặc hơn giọng của tôi rất nhiều.<br>\
+2) Bạn có thích thu âm giọng nói của mình và nghe lại không?<br>\
+Tôi từng cảm thấy khá ngượng ngùng khi thu âm và nghe lại giọng nói của chính mình, nhưng giờ thì tôi thực sự thích điều đó. Thực ra, đó là việc tôi làm hàng ngày để nói tiếng Anh trôi chảy hơn. Bằng cách lắng nghe giọng nói của mình, tôi có thể dễ dàng kiểm tra cách phát âm, độ trôi chảy và ngữ điệu của mình.<br>\
+3) Giọng nói của bạn có khác khi bạn còn nhỏ không?<br>\
+Tôi không chắc nhưng tôi không nghĩ là có bất kỳ thay đổi đáng kể nào trong giọng nói của tôi. Tôi luôn có giọng nói cao vút này. Thành thật mà nói, tôi không thực sự thích giọng nói của mình vì nó nghe không hề “trưởng thành” chút nào.<br>\
+4) Mọi người đều có cùng một giọng nói sao? <br>\
+Tôi đoán là không vì tôi chưa bao giờ gặp hai người có cùng một giọng nói, chứ đừng nói là tất cả mọi người. Giọng nói của mỗi người khác nhau và nó sẽ khác nhau về cao độ, âm lượng hoặc tông giọng.<br>\
+5) Bạn có sử dụng cùng một giọng nói mọi lúc không? <br>\
+Có lẽ là không. Bất cứ khi nào tôi đang trong một cuộc thảo luận căng thẳng, tôi thường tăng âm lượng và tông giọng để nhấn mạnh hơn vào thông điệp mà tôi đang truyền tải."
+	,voca:"let alone,vary from person to person,awkward,fluent at,a heated discussion,raise the tone and volume",
+},{
+	track:"1.18",
+	title:"Haircut",
+	en:"1) What's your favorite hairstyle?<br>\
+I don't actually have a favorite hairstyle these days. But in the past, I used to be crazy about the undercut style which was really compatible with my face shape. However, now I just let the barber do whatever he wants as long as I look neat and tidy.<br>\
+2) How often do you have your hair cut?<br>\
+Once a month or once every two months I suppose. Because my hair grows quite fast so I have to go to a barbershop to have it cut and sometimes dyed if I want to refresh myself.<br>\
+3) How much money do you usually spend on your hair cut? How often do you change your hair cut?<br>\
+As I mentioned, I do multiple things at the same time like having my hair cut and dyed, so the cost of my haircut is quite high. Every now and then, I often get a facial massage and shampoo also, so the cost can sometimes amount to a hundred VND in total.<br>\
+4) Have you ever kept a hairstyle you don't like? <br>\
+Everyone must have, at least once in their life, and I am no exception. When I was in grade 6, undercut style was a megatrend so I decided to give it a try. It turned out that the style made me look quite rebellious, which gained a lot unnecessary attention  from my teachers.<br>\
+5) What was the last time you had your hair cut? <br>\
+If I'm not mistaken, it has been a month since the last time I had my hair done. I'm planning to go to the barber's next week to have my hair cut and styled for my birthday.<br>\
+6) On what occasions do Vietnamese people usually have their hair cut? <br>\
+Well, people in my country usually have their haircut and also styled before important occasions like their birthdays, Tet holidays and so on; or simply when it has reached a certain length."
+	,vi:"1) Kiểu tóc yêu thích của bạn là gì?<br>\
+Tôi thực sự không có kiểu tóc yêu thích nào trong những ngày này. Nhưng trước đây, tôi từng phát cuồng vì kiểu tóc undercut thực sự hợp với hình dạng khuôn mặt của mình. Tuy nhiên, bây giờ tôi chỉ để thợ cắt tóc làm bất cứ điều gì anh ấy muốn miễn là tôi trông gọn gàng và ngăn nắp.<br>\
+2) Bạn cắt tóc bao lâu một lần?<br>\
+Một tháng một lần hoặc hai tháng một lần tôi cho là vậy. Vì tóc tôi mọc khá nhanh nên tôi phải đến tiệm cắt tóc để cắt và đôi khi nhuộm nếu tôi muốn làm mới bản thân.<br>\
+3) Bạn thường chi bao nhiêu tiền cho việc cắt tóc? Bạn thay đổi kiểu tóc bao lâu một lần?<br>\
+Như tôi đã đề cập, tôi làm nhiều việc cùng một lúc như cắt tóc và nhuộm tóc, vì vậy chi phí cắt tóc của tôi khá cao. Thỉnh thoảng, tôi cũng thường đi mát-xa mặt và gội đầu, vì vậy chi phí đôi khi có thể lên tới cả trăm đồng.<br>\
+4) Bạn đã bao giờ giữ một kiểu tóc mà bạn không thích chưa? <br>\
+Ai cũng phải có, ít nhất một lần trong đời, và tôi cũng không ngoại lệ. Khi tôi học lớp 6, kiểu tóc undercut là một xu hướng lớn nên tôi quyết định thử. Hóa ra kiểu tóc này khiến tôi trông khá nổi loạn, điều này đã thu hút rất nhiều sự chú ý không cần thiết từ các giáo viên của tôi.<br>\
+5) Lần cuối cùng bạn cắt tóc là khi nào? <br>\
+Nếu tôi không nhầm thì đã một tháng kể từ lần cuối cùng tôi làm tóc. Tôi đang định đến tiệm cắt tóc vào tuần tới để cắt tóc và tạo kiểu cho sinh nhật của mình.<br>\
+6) Người Việt Nam thường cắt tóc vào những dịp nào? <br>\
+Vâng, mọi người ở đất nước tôi thường cắt tóc và tạo kiểu trước những dịp quan trọng như sinh nhật, lễ Tết, vv; hoặc đơn giản là khi nó đạt đến một độ dài nhất định."
+	,voca:"undercut,compatible with, barber,have it cut,facial massage, amount to,attention,megatrend",
+},{
+	track:"1.19",
+	title:"Friend",
+	en:"1) What kind of people do you like to make friends with? / What do you think make good friends?<br>\
+Honestly speaking, I would say those who take responsibility for their actions would make great friends because they must be very trustworthy. On the other hand, I would never, not even in a million years, be friends with a stingy person.<br>\
+2) Do you think you are a good friend for others?<br>\
+Like everyone else, I do make mistakes once in a while but I believe that I have tried my best to be a supportive and trustworthy friend who they can always confide in.<br>\
+3)  Do you have any far friends? How close are you to them? /Why are they close to you?<br>\
+I have a few friends who are studying and working abroad. We try to catch up with each other once in a while but it isn't easy. We used to be much closer but now we are slowly growing apart.<br>\
+4) Have you ever contacted your friends from primary school?/ How important childhood friends are?<br>\
+Honestly the thought of reaching out to my childhood friends never occurs to me. Simply because I think we no longer share any similar interest. To me, childhood friends are like good old memories that we look back on occasionally.<br>\
+5) What is the most important thing about friendship?<br>\
+For me, it would be trust because without trust, there will be no friendship. As friends, we must always have each other's back, even in the toughest time. It is hard for people to go back to being friends again once losing trust in each other.<br>\
+6) Which do you think would be more important at school: friends or teachers?<br>\
+Well, having great teachers can provide one with good learning experience and influence, while friends are those who stay through thick and thin and create valuable memories together with you. I would say both are inseparable parts of a student's study at school."
+	,vi:"1) Bạn thích kết bạn với kiểu người nào? / Bạn nghĩ thế nào là bạn tốt?<br>\
+Thành thật mà nói, tôi sẽ nói rằng những người chịu trách nhiệm về hành động của mình sẽ là những người bạn tuyệt vời vì họ phải rất đáng tin cậy. Mặt khác, tôi sẽ không bao giờ, thậm chí trong một triệu năm, kết bạn với một người keo kiệt.<br>\
+2) Bạn có nghĩ mình là một người bạn tốt với người khác không?<br>\
+Giống như mọi người khác, tôi cũng mắc lỗi đôi khi nhưng tôi tin rằng mình đã cố gắng hết sức để trở thành một người bạn đáng tin cậy và luôn ủng hộ, người mà họ luôn có thể tâm sự.<br>\
+3) Bạn có bạn xa nào không? Bạn thân với họ đến mức nào? /Tại sao họ lại thân với bạn?<br>\
+Tôi có một vài người bạn đang học tập và làm việc ở nước ngoài. Chúng tôi cố gắng liên lạc với nhau thỉnh thoảng nhưng không dễ dàng. Chúng tôi từng rất thân thiết nhưng giờ thì chúng tôi đang dần xa cách.<br>\
+4) Bạn đã bao giờ liên lạc với bạn bè thời tiểu học chưa?/ Bạn bè thời thơ ấu quan trọng như thế nào?<br>\
+Thành thật mà nói, tôi chưa bao giờ nghĩ đến việc liên lạc với những người bạn thời thơ ấu của mình. Đơn giản là vì tôi nghĩ chúng tôi không còn chia sẻ bất kỳ sở thích chung nào nữa. Với tôi, bạn bè thời thơ ấu giống như những kỷ niệm đẹp mà chúng ta thỉnh thoảng nhớ lại.<br>\
+5) Điều quan trọng nhất về tình bạn là gì?<br>\
+Với tôi, đó là sự tin tưởng vì nếu không có sự tin tưởng, sẽ không có tình bạn. Là bạn bè, chúng ta phải luôn ủng hộ nhau, ngay cả trong thời điểm khó khăn nhất. Thật khó để mọi người quay lại làm bạn một lần nữa khi đã mất lòng tin vào nhau.<br>\
+6) Bạn nghĩ điều nào quan trọng hơn ở trường: bạn bè hay giáo viên?<br>\
+Vâng, có những giáo viên tuyệt vời có thể mang lại cho bạn trải nghiệm học tập tốt và ảnh hưởng, trong khi bạn bè là những người luôn ở bên bạn trong mọi hoàn cảnh và cùng bạn tạo ra những kỷ niệm quý giá. Tôi cho rằng cả hai đều là những phần không thể tách rời trong quá trình học tập của học sinh tại trường."
+	,voca:"",
+},{
+	track:"1.20",
+	title:"Jeans",
+	en:"1) Do you wear jeans? / Do you like wearing jeans, why?<br>\
+Of course, they are my all-time favorite items.  I have many pairs of jeans in my wardrobe because they are very durable. Like the one I am wearing, they haven't yet stretched out although I have washed them many times.<br>\
+2) Is there any jeans brand you prefer?<br>\
+I must admit that I would go for any brand whose products make me feel comfortable in my own skin. However, my friend recently gave me a pair of Calvin Klein jeans, which really compliment my body shape.<br>\
+3) How often do you wear jeans?<br>\
+On a daily basis I guess. I mean, I am sick of formal attire like shirts and trousers that I have to wear at work. That's why I always choose a pair of jeans and mix and match with a funky T-shirt to match my personality when I go out.<br>\
+4) Why do you think jeans are popular in Vietnam? <br>\
+The reason why jeans are popular among the majority of Vietnamese people is because they are very easy to mix and match. Furthermore, they are also very comfortable to wear and suitable for the weather in my country."
+	,vi:"1) Bạn có mặc quần jeans không? / Bạn có thích mặc quần jeans không, tại sao?<br>\
+Tất nhiên, đó là món đồ yêu thích nhất mọi thời đại của tôi. Tôi có rất nhiều quần jeans trong tủ quần áo của mình vì chúng rất bền. Giống như chiếc quần tôi đang mặc, chúng vẫn chưa bị giãn mặc dù tôi đã giặt chúng nhiều lần.<br>\
+2) Bạn thích thương hiệu quần jeans nào?<br>\
+Tôi phải thừa nhận rằng tôi sẽ chọn bất kỳ thương hiệu nào có sản phẩm khiến tôi cảm thấy thoải mái với chính mình. Tuy nhiên, gần đây bạn tôi đã tặng tôi một chiếc quần jeans Calvin Klein, nó thực sự tôn lên vóc dáng của tôi.<br>\
+3) Bạn mặc quần jeans thường xuyên như thế nào?<br>\
+Tôi đoán là hàng ngày. Ý tôi là, tôi phát ngán với những bộ trang phục trang trọng như áo sơ mi và quần dài mà tôi phải mặc khi đi làm. Đó là lý do tại sao tôi luôn chọn một chiếc quần jeans và kết hợp với một chiếc áo phông sành điệu để phù hợp với tính cách của mình khi ra ngoài.<br>\
+4) Bạn nghĩ tại sao quần jeans lại phổ biến ở Việt Nam? <br>\
+Lý do quần jeans được ưa chuộng trong số đông người Việt Nam là vì chúng rất dễ phối đồ. Hơn nữa, chúng cũng rất thoải mái khi mặc và phù hợp với thời tiết ở đất nước tôi."
+	,voca:"On a daily basis,feel comfortable in my own skin,compliment my body shape,formal attire,mix and match, personality"
+	,note:"On a daily basis = everyday"
 }
 
 

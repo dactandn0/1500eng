@@ -8,6 +8,8 @@ app.controller("collinsLCtrl", function($scope, $rootScope, $timeout) {
 $scope.stories = collins_cd12;
 $scope.storyIdx = 0;
 
+$scope.titles = showStoryTitles($scope.stories);  // def
+
 $scope.createAudioSrc = function() {
 	return "./ebooks/collins/listen_data/cd12/" + $scope.story.track + '.mp3';
 }

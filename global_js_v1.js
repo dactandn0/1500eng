@@ -165,7 +165,7 @@ function showStoryTitles(data) {
 
 function getFullTile(obj) {
 	var unit = obj.unit ? ('U' + obj.unit) : '';
-	var track  = (obj.track) ? (' - ' + obj.track) : '';
+	var track  = (obj.track) ? (obj.track) : '';
 	var title  = (obj.title) ? (' - ' + obj.title) : '';
 	var hasNote = (obj.note && obj.note.trim().length > 0) ? ' [note]' : ''
 	var hasExercise = obj.T_F_NG && obj.T_F_NG.trim().length > 0
@@ -260,7 +260,9 @@ function processStory (story, isAlert = true) {
 		
 	story.viShow = enAndVi
 	story.enShow = enShow
-	story.fTitle = getFullTile(story).fTitle
+	var json = getFullTile(story)
+	story.fTitle = json.fTitle
+	story.hasNote = json.hasNote
 
 	story.enShow = story.enShow.replace(/Examiner/gi,'<i class="color-anim">Examiner</i>')
 	story.enShow = story.enShow.replace(/Candidate/gi,'<i class="color-anim">Candidate</i>')

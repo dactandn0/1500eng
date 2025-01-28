@@ -10,34 +10,45 @@ app.controller("beginnerCourseCtrl", function($scope, $rootScope, $timeout) {
 
 $scope.img_root = './ebooks/englab/beginnerCourse/images' ; 						
 $scope.ielt_form = 0 ; 						//Reading
-$scope.stories = ENGLAB_BEGIN_DATA_R;		// def
 
 $scope.story = '';
 $scope.acc = -1;
+
+$scope.stories = ENGLAB_BEGIN_DATA_R;		// def
 $scope.titles = showStoryTitles($scope.stories);  // def
-var loadListenIdx = 0
+makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R) // def
 
 ielt_formChange = function (num) {
 	$scope.$broadcast("child_stopSound");
-
+	$rootScope.vocaEbook = null;
 	$scope.ielt_form = num;
-	Helper_saveDB("englabbegin_form", num);
-
-	if (num===0) $scope.stories = ENGLAB_BEGIN_DATA_R;
+	if (num===0) 
+	{
+		$scope.stories = ENGLAB_BEGIN_DATA_R;
+		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R)
+	}
 	if (num===1) $scope.stories = ENGLAB_BEGIN_DATA_W;
 	if (num===2) $scope.stories = ENGLAB_BEGIN_DATA_S;
-	if (num===3) $scope.stories = ENGLAB_BEGIN_DATA_L;
-	if (num===4) {
+	if (num===3)
+	{
+		$scope.stories = ENGLAB_BEGIN_DATA_L;
+		var loadListenIdx = Helper_loadInt('lessonFor_unit', 0);
+		$scope.fetchStory(loadListenIdx, false);
+		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_L)
+	}
+
+	if (num===4) 
+	{
 		$scope.stories = doMenu().concat(ENGLAB_BEGIN_DATA_S_Vol5);
+		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_S_Vol5)
+		var loadListenIdx = Helper_loadInt('speakSameVol5_unit', 0);
+		$scope.fetchStory(loadListenIdx, false);
+
 	}
 
 	$scope.acc = -1;
 	$scope.titles = showStoryTitles($scope.stories);
-
-	loadListenIdx = Helper_loadInt('lfil_unit', 0);
-	$scope.fetchStory(loadListenIdx, false);
-
-	$scope.$digest();
+	$scope.$apply();
 }
 
 $scope.acc_isShow = function (id) {
@@ -46,7 +57,8 @@ $scope.acc_isShow = function (id) {
 
 $scope.acc_click = function (id) {
 	if($scope.acc===id) $scope.acc=-1;
-	else {
+	else 
+	{
 		$scope.acc = id;
 		Helper_FetchStory(id, $scope, $rootScope, 'englabbegin_idx', false) 
 	}
@@ -61,14 +73,7 @@ $scope.examTypeCss = function (idx) {
 }
 
 $scope.loadData = function () {
-	makeVocaEbook($rootScope, 
-		ENGLAB_BEGIN_DATA_R,
-		ENGLAB_BEGIN_DATA_S,
-		ENGLAB_BEGIN_DATA_S_Vol5,
-		)
 
-	loadListenIdx = Helper_loadInt('lfil_unit', 0);
-	$scope.fetchStory(loadListenIdx, false);
 };
 
 $scope.$on('$viewContentLoaded', function(){
@@ -88,9 +93,10 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 
 $scope.fetchStory = function (idx, reset=true) 
 {
-	Helper_FetchStory (idx, $scope, $rootScope, "lfil_unit", reset) 
+	var key = 'speakSameVol5_unit'
+	if ($scope.ielt_form === 3) key = 'lessonFor_unit'
+	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
 }
-
 
 function doMenu()
 {

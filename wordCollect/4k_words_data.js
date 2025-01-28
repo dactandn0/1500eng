@@ -9,6 +9,7 @@ arrive /əˈraɪv/ đến<br>\
 regret (v) /rɪˈɡret/ hối tiếc<br>\
 attack tấn công<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
+perceive (v) /pərˈsiːv/ nhận thức<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 sporty (a) /ˈspɔːrti/ thích thể thao<br>\

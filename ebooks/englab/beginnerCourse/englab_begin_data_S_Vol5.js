@@ -59,13 +59,13 @@ Mặc dù tôi thích cà phê hơn, nhưng tôi chỉ mời khách uống trà 
 	track:"1.4",
 	title:"Age",
 	en:"1) What do you think is the best age to learn to drive?<br>\
-The ideal time to learn is when people turn 16) Well, this is the legal minimum driving ages in my country. At this age, people are mature enough to be responsible for everything they do. Besides, acquiring new skills at a young age is also much faster and easier.<br>\
+The ideal time to learn is when people turn 16. Well, this is the legal minimum driving ages in my country. At this age, people are mature enough to be responsible for everything they do. Besides, acquiring new skills at a young age is also much faster and easier.<br>\
 2) How do you feel about getting older? <br>\
 It would be a lie if I say I'm not sad about it. Actually, there is nothing I can do to stop being older, so just let it be. I'd better enjoy every second of my life, live happily and do meaningful things so that I can have a life without any regret.<br>\
 3) Should we treat people of different ages in the same way? <br>\
 No, I don't think so. You cannot treat a 5-year-old kid just like the way you behave when meeting your grandparents, right? Older people always need to be respected."
 	,vi:"1) Bạn nghĩ độ tuổi nào là tốt nhất để học lái xe?<br>\
-Thời điểm lý tưởng để học là khi mọi người bước sang tuổi 16) Vâng, đây là độ tuổi lái xe tối thiểu hợp pháp ở quốc gia của tôi. Ở độ tuổi này, mọi người đã đủ trưởng thành để chịu trách nhiệm cho mọi việc họ làm. Bên cạnh đó, việc học các kỹ năng mới khi còn trẻ cũng nhanh hơn và dễ dàng hơn nhiều.<br>\
+Thời điểm lý tưởng để học là khi mọi người bước sang tuổi 16. Vâng, đây là độ tuổi lái xe tối thiểu hợp pháp ở quốc gia của tôi. Ở độ tuổi này, mọi người đã đủ trưởng thành để chịu trách nhiệm cho mọi việc họ làm. Bên cạnh đó, việc học các kỹ năng mới khi còn trẻ cũng nhanh hơn và dễ dàng hơn nhiều.<br>\
 2) Bạn cảm thấy thế nào khi già đi? <br>\
 Sẽ là nói dối nếu tôi nói rằng tôi không buồn về điều đó. Thực ra, không có gì tôi có thể làm để ngăn chặn việc già đi, vì vậy hãy để nó như vậy. Tốt hơn hết là tôi nên tận hưởng từng giây phút của cuộc sống, sống hạnh phúc và làm những điều có ý nghĩa để tôi có thể có một cuộc sống không hối tiếc.<br>\
 3) Chúng ta có nên đối xử với những người ở độ tuổi khác nhau theo cùng một cách không? <br>\
@@ -286,7 +286,7 @@ I don't think so. My parents have heavy local accents from central Vietnam while
 2) Do you enjoy recording your voice and listening to it?<br>\
 I used to feel quite awkward when recording and listening to my own voice, but now, I really enjoy it. Actually, it's the thing I do every day to become more fluent at speaking English. By listening to my voice, I can easily check my pronunciation, fluency and intonation.<br>\
 3) Was your voice different when you were young?<br>\
-I'm not sure but I don't think there have been any significant changes in my voice. I've always had this high-pitched voice. To be honest, I don't really like my voice because it doesn't sound “mature” at all.<br>\
+I'm not sure but I don't think there have been any significant changes in my voice. I've always had this high-pitched voice. To be honest, I don't really like my voice because it doesn't sound 'mature' at all.<br>\
 4) Does everyone have the same voice? <br>\
 I guess not since I have never met two people with the same voice, let alone everyone. Voices vary from person to person and it either will be different in pitch, volume or tone.<br>\
 5) Are you using the same voice all the time? <br>\
@@ -296,7 +296,7 @@ Tôi không nghĩ vậy. Bố mẹ tôi có giọng địa phương rất nặng
 2) Bạn có thích thu âm giọng nói của mình và nghe lại không?<br>\
 Tôi từng cảm thấy khá ngượng ngùng khi thu âm và nghe lại giọng nói của chính mình, nhưng giờ thì tôi thực sự thích điều đó. Thực ra, đó là việc tôi làm hàng ngày để nói tiếng Anh trôi chảy hơn. Bằng cách lắng nghe giọng nói của mình, tôi có thể dễ dàng kiểm tra cách phát âm, độ trôi chảy và ngữ điệu của mình.<br>\
 3) Giọng nói của bạn có khác khi bạn còn nhỏ không?<br>\
-Tôi không chắc nhưng tôi không nghĩ là có bất kỳ thay đổi đáng kể nào trong giọng nói của tôi. Tôi luôn có giọng nói cao vút này. Thành thật mà nói, tôi không thực sự thích giọng nói của mình vì nó nghe không hề “trưởng thành” chút nào.<br>\
+Tôi không chắc nhưng tôi không nghĩ là có bất kỳ thay đổi đáng kể nào trong giọng nói của tôi. Tôi luôn có giọng nói cao vút này. Thành thật mà nói, tôi không thực sự thích giọng nói của mình vì nó nghe không hề 'trưởng thành' chút nào.<br>\
 4) Mọi người đều có cùng một giọng nói sao? <br>\
 Tôi đoán là không vì tôi chưa bao giờ gặp hai người có cùng một giọng nói, chứ đừng nói là tất cả mọi người. Giọng nói của mỗi người khác nhau và nó sẽ khác nhau về cao độ, âm lượng hoặc tông giọng.<br>\
 5) Bạn có sử dụng cùng một giọng nói mọi lúc không? <br>\
@@ -443,14 +443,14 @@ I must admit I'm a travel lover and travelling to a new country is always on top
 Probably 6. Last year, during my winter break, I had a chance to travel with a group of my best friends and visited the Northern region of my country. We are also planning to travel overseas next month.<br>\
 3) What kind of cities do you like to travel to?<br>\
 Since HCMC is usually hot and humid all year round, I would love to visit cities that have cool weather like Da Lat or Sa Pa. Additionally, I also want to get away from the hustle and bustle of the city life, so anywhere which gives me a sense of tranquility would be my kind of city to visit.<br>\
-4. What is the place that left you the deepest impression when travelling? → Honestly speaking, it is Sapa. The city has its unique charm and picturesque scenery that takes my breath away just by looking at the photos I took during the trip. This place is definitely worth visiting and words alone are not enough to describe its beauty."
+4. What is the place that left you the deepest impression when travelling? Honestly speaking, it is Sapa. The city has its unique charm and picturesque scenery that takes my breath away just by looking at the photos I took during the trip. This place is definitely worth visiting and words alone are not enough to describe its beauty."
 	,vi:"1) Bạn có thích du lịch không?<br>\
 Tôi phải thừa nhận rằng tôi là người yêu thích du lịch và việc đi du lịch đến một quốc gia mới luôn nằm trong danh sách việc cần làm hàng đầu của tôi mỗi năm. Du lịch giúp tôi mở rộng tầm nhìn và giải tỏa căng thẳng sau những ngày làm việc mệt mỏi.<br>\
 2) Bạn đã đi du lịch bao nhiêu thành phố?<br>\
 Có lẽ là 6. Năm ngoái, trong kỳ nghỉ đông, tôi đã có cơ hội đi du lịch với một nhóm bạn thân và đến thăm miền Bắc đất nước tôi. Chúng tôi cũng đang có kế hoạch đi du lịch nước ngoài vào tháng tới.<br>\
 3) Bạn thích du lịch đến những thành phố nào?<br>\
 Vì TPHCM thường nóng và ẩm quanh năm nên tôi rất muốn đến thăm những thành phố có thời tiết mát mẻ như Đà Lạt hoặc Sa Pa. Ngoài ra, tôi cũng muốn tránh xa sự hối hả và nhộn nhịp của cuộc sống thành thị, vì vậy bất kỳ nơi nào mang lại cho tôi cảm giác yên bình sẽ là loại thành phố tôi muốn đến thăm.<br>\
-4. Nơi nào để lại cho bạn ấn tượng sâu sắc nhất khi đi du lịch? → Nói thật thì đó là Sapa. Thành phố này có nét quyến rũ riêng và cảnh đẹp như tranh vẽ khiến tôi phải nín thở khi nhìn vào những bức ảnh tôi chụp trong chuyến đi. Nơi này chắc chắn đáng để ghé thăm và chỉ dùng lời nói thôi thì không đủ để diễn tả vẻ đẹp của nó."
+4. Nơi nào để lại cho bạn ấn tượng sâu sắc nhất khi đi du lịch? Nói thật thì đó là Sapa. Thành phố này có nét quyến rũ riêng và cảnh đẹp như tranh vẽ khiến tôi phải nín thở khi nhìn vào những bức ảnh tôi chụp trong chuyến đi. Nơi này chắc chắn đáng để ghé thăm và chỉ dùng lời nói thôi thì không đủ để diễn tả vẻ đẹp của nó."
 	,voca:"a travel lover,broaden my horizons,blow off some steam,be strenuous,all year round,get away from the hustle and bustle,a sense of tranquility,picturesque scenery,take my breath away, worth visiting",
 	note:"A travel lover /ˈtræv.əl ˈlʌv.ər/ : người yêu thích du lịch Ví dụ:  Travel-lovers need to keep living fully |To broaden my horizons /ˈbrɔː.dən maɪ həˈraɪ.zən/ : mở rộng tầm hiểu biết Ví dụ: When I went to university I wanted to broaden my horizons.|To blow off some steam /bləʊ ɒf sʌm  stiːm/ : thư giãn Ví dụ: To blow off some steam, they took archery lessons together.|To be strenuous /ˈstren.ju.əs/ : kiệt quệ về thể chất lẫn tinh thần Ví dụ: His doctor advised him not to do any strenuous exercise |All year round /ɔːl jɪər raʊnd/: quanh năm Ví dụ:  The venue shows movies all year round.|To get away from the hustle and bustle: rời xa khỏi sự ồn ào và tấp nập Hustle /ˈhʌs.əl/ : Hối hả Bustle /ˈbʌs.əl/ : Nhộn nhịp Ví dụ: We both have busy lives and it's good to get away from the hustle and bustle.|A sense of tranquility: cảm giác yên bình Sense /sens/ : cảm giác Tranquility /træŋˈkwɪl.ə.ti/ : Sự yên bình Ví dụ: I love the sense of tranquility in my hometown.|Picturesque scenery ˈsiˈ.nˈr.i/: phong cảnh đẹp như tranh vẽ Scenery /ˈsiː.nər.i/ : phong cảnh Picturesque /pɪk.tʃərˈesk/: đẹp như tranh vẽ Ví dụ: The countryside in this region is very picturesque scenery.|To take my breath away (idiom): làm tôi choáng ngợp Ví dụ: The beauty of the Taj Mahal took my breath away |To be worth visiting: đáng tham quan Visit /ˈvɪz.ɪt/ : Tham quan Worth /wɜːθ/: đáng giá Ví dụ:  Two other sites are eminently worth visiting"
 },{

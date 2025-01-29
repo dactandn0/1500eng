@@ -161,6 +161,10 @@ background-color: #a55;
   color: #FFBF00;
 }
 
+.advHL_123 {
+  color: #11BF00;
+}
+
 #toast-container .toast.toast-info  {
   background-image: none !important;
   padding:  1rem !important;

@@ -8,7 +8,6 @@ const PHRA_VERB_TAG_END = '</z1a>'
 
 var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
 var kNgClickTagClose = '</kkk>';
-var kNgClickTagClose2 = '<\/kkk>';
 
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
@@ -100,6 +99,7 @@ document.write('<small class="note">\
 var arrBOTH_COUNT_UNCOUNT = [];
 var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
+var arrADV = [];
 
 function Helper_ArrRemoveDup(arr) {
 	if (!arr) return arr;
@@ -122,16 +122,26 @@ function longStrToArray(long_txt, deter = ',') {
 function preprocess() {
 	arrUNCOUNT_NOUNS = longStrToArray(UNCOUNT_NOUNS);
 	arrNOUN_SAME_VERBS = longStrToArray(NOUN_SAME_VERBS);
+	arrADV = longStrToArray(ADV);
 };
 
 function isInArr(ele, arr) {
-	return arr.includes(ele);
+	return arr.includes(ele.toLowerCase());
 };
+
+function capitalizeFirstLetter(val) {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
 
 function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	if (isInArr(word, arr)) {
-		var regex = new RegExp(`\\b${word}\\b` , 'g')
-		return graph.replace(regex, tagOpen + word + tagClose);
+		var title = capitalizeFirstLetter(word)
+		console.log(title)
+		var regex = new RegExp(`\\b(${word})\\b` , 'g')
+		graph =  graph.replace(regex, tagOpen + word + tagClose);
+		regex = new RegExp(`\\b(${title})\\b` , 'g')
+		graph =  graph.replace(regex, tagOpen + title + tagClose);
+		return graph;
 	}
 	return graph;
 }
@@ -145,7 +155,6 @@ function ngClickOnWord(word, graph) {
 		&& kNgClickTagOpen.indexOf(word) === -1
 		) 
 	{
-	//	console.log(word)
 		regex = new RegExp(`\\b${word}\\b` , 'g')
 		return graph.replace(regex, kNgClickTagOpen + word + kNgClickTagClose);
 	}  else //  console.log("ngClickOnWord ignore: " + word)
@@ -217,6 +226,7 @@ function processStory (story, isAlert = true) {
 			enShow = hLightWord(word, phraVerbs, enShow , PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END );
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
+			enShow = hLightWord(word, arrADV, enShow , '<advHL class="advHL_123">', '</advHL>' );
 			enShow = ngClickOnWord(word, enShow);
 			dones.push(word);
 		}

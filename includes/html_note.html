@@ -1,3 +1,8 @@
 
+	<hr ng-if="story.note.split('|').length">	
+	<div class="px-2 mb-3" ng-if="story.note.length">
+	<p class="mb-1" ng-repeat="sen in story.note.split('|') track by $index">
+		<span ng-click="Index_NoteVoca_Speak(sen)">{{sen}}</span>
+	</p>
 
 

@@ -38,7 +38,7 @@ preProcess();
 
 var app = angular.module("myApp", [
   'vocaNotedApp', 
-  'ebookNotedApp',
+  // 'ebookNotedApp',
   'configUIApp',
   'f2fApp',
   'tflApp',
@@ -63,7 +63,7 @@ app.config(function($routeProvider) {
 	//	.when('/', { templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl' }) 
 		.when('/configUI', {templateUrl: 'vocaNoted/configUI.html', controller: 'configUICtrl'})
 		.when('/vocaNoted', {templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'})
-		.when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
+		// .when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
     .when('/f2f', {templateUrl: 'ebooks/f2f/f2f.html', controller: 'f2fCtrl'})
     .when('/tfl', {templateUrl: 'ebooks/tfl/tfl.html', controller: 'tflCtrl'})
     .when('/book4k', {templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'})
@@ -175,6 +175,11 @@ saveFromToastr = function () {
 
 $scope.Index_Speak = function (event, word) {
   Helper_Speak(event, word);
+}
+
+$scope.Index_NoteVoca_Speak = function (word) {
+  word = word.replace(/\/.*\//gi, '').replace(/\:.*\:/gi, '.')
+  Text2Speech(word);
 }
 
 // click word to speech

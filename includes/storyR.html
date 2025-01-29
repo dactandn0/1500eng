@@ -13,19 +13,14 @@
     </a>
     
   </h6>
+  
   <div class="accordion-content" ng-if="acc_isShow($index)">
-  	
-	<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
-	<p compile="story.viShow" ng-if="$root.bShowVi"></p>
+    	<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
+    	<p compile="story.viShow" ng-if="$root.bShowVi"></p>
 
-  <div ng-include="'./includes/exercise.html'" ></div>
-
-	<hr ng-if="story.note.split('|').length">	
-	<div class="px-2 mb-3" ng-if="story.note.length">
-	<p class="mb-1" ng-repeat="sen in story.note.split('|') track by $index">
-		{{sen}}
-	</p>
-	</div>
+      <div ng-include="'./includes/exercise.html'" ></div>
+      <div ng-include="'./includes/html_note.html'" ></div>
+	</div> <!-- accordion -->
 
   </div>
 </div>

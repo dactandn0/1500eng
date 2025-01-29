@@ -1,3 +1,4 @@
-
-<p ng-if="story.T_F_NG" class="text-primary">Exercise: True/False/Not Given</p>
-<p compile="story.T_F_NG"></p>
+<div ng-if="story.T_F_NG && story.T_F_NG.trim().length>0" >
+	<p class="text-primary">Exercise: True/False/Not Given</p>
+	<p compile="story.T_F_NG"></p>
+</div>

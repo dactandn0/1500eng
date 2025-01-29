@@ -11,7 +11,8 @@ const BAT_QUI_TAC_DATA = [
 	'get|got|got|lấy',
 	'look|looked|looked|nhìn, trông',
 	'fall|fell|fallen|ngã, rơi',
-	'hang|hang|hang|treo',
+	'hang|hung|hung|treo',
+	'sleep|slept|slept|ngủ',
 	'tear|tore|torn|xé, rách',
 	'take|took|taken|cầm, lấy',
 	'wear|wore|worn|mặc',
@@ -30,6 +31,7 @@ const PHRASAL_VERB_DATA = [
 	{word: 'hang', prep: 'out', mean: 'đi chơi'},
 	{word: 'fall', prep: 'out',  mean: 'cãi nhau'},
 	{word: 'pass', prep: 'away', mean: 'chết'},
+	{word: 'sleep', prep: 'in', mean: 'ngủ nướng'},
 	{word: 'take', prep: 'off', mean: 'cất cánh, bắt đầu thành công'},
 	{word: 'take', prep: 'over', mean: 'kiểm soát'},
 	{word: 'take', prep: 'up', mean: 'học/thực hành'},
@@ -39,6 +41,7 @@ const PHRASAL_VERB_DATA = [
 	{word: 'put', prep: 'on',  mean: ' mặc (quần áo)'},
 	{word: 'put', prep: 'off',  mean: 'cởi bỏ (quần áo)'},
 	{word: 'put', prep: 'aside',  mean: 'bỏ qua'},
+	{word: 'put', prep: 'up with',  mean: 'chịu đựng'},
 	{word: 'give', prep: 'it a go',  mean: 'thử'},
 ]
 
@@ -99,12 +102,13 @@ function IRR_ExtractWords(english)
 		var bare = ele.word
 		var prep = ele.prep
 		var Vs_es = Helper_N_V_Add_S_ES(bare)
+		var Ving = Helper_N_V_Add_ING(bare)
 		var V2 = getVerb_Irr(bare, 2)
 		if (V2==='!') V2 = Helper_Add_ED(bare)
 		var Vpp = getVerb_Irr(bare, 3) 
 		if (Vpp==='!') Vpp = Helper_Add_ED(bare)
 
-		var regex = new RegExp(`\\b(${bare}|${Vs_es}|${V2}|${Vpp})\\s+(${prep})\\b` , 'gi')	
+		var regex = new RegExp(`\\b(${bare}|${Vs_es}|${Ving}|${V2}|${Vpp})\\s+(${prep})\\b` , 'gi')	
 		var matches = english.match(regex);
 		if (matches)
 		phraVerbs = phraVerbs.concat(matches)

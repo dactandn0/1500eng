@@ -84,7 +84,6 @@ read books (v) /riːd bʊks/ đọc sách<br>\
 read newspapers (v) /ri:d’nju:z,peipəz/ đọc báo<br>\
 set the alarm (v) /set ðə ə’lɑ:m/ đặt chuông báo thức<br>\
 shave (v) /∫eiv/ cạo râu<br>\
-sleep (v) /sliːp/ ngủ<br>\
 study (v) /ˈstʌd.i/ học tập, nghiên cứu<br>\
 surf the internet (v) /sɜːf ðiː ˈɪn.tə.net/ lướt mạng<br>\
 take the rubbish out (v) /teik ðə ‘rʌbiʃ aut/ đi đổ rác<br>\
@@ -1716,7 +1715,7 @@ nuclear reactor (n) /ˈnjuː.kliər riˈæktər/ lò phản ứng hạt nhân<br
 dam (n) /dæm/ đập (thủy điện)<br>\
 power plant (n) /ˈpaʊər plænt/ nhà máy điện<br>\
 transformer (n) /trænsˈfɔːrmər/ máy biến thế<br>\
-heat (v) /hiːt/ sưởi ấm, làm nóng<br>\
+heat (n,v) /hiːt/ nhiệt, sức nóng (v)sưởi ấm, làm nóng<br>\
 natural gas (n) /ˈnætʃrəl ɡæs/ khí tự nhiên<br>\
 solar power (n) /ˈsoʊlər ˈpaʊər/ năng lượng mặt trời",
 },

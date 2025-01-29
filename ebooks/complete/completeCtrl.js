@@ -1,6 +1,6 @@
 // include other *.js
 document.write('<script src="./ebooks/complete/listen_data/complete_cd1.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/complete/listen_data/complete_cd2.js" type="text/javascript"></script>');
+// document.write('<script src="./ebooks/complete/listen_data/complete_cd2.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/complete/read_data/complete_read_data.js" type="text/javascript"></script>');
 
 var app = angular.module("completeApp", ['ngSanitize']);
@@ -9,6 +9,8 @@ app.controller("completeCtrl", function($scope, $rootScope, $timeout) {
 $scope.stories = complete_cd1;
 $scope.storyIdx = 0;
 $scope.ielt_form = 0
+
+makeVocaEbook($rootScope, complete_cd1, complete_read_data) // def
 
 // read
 $scope.acc = -1;

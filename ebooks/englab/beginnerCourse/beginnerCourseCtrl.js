@@ -9,14 +9,14 @@ var app = angular.module("beginnerCourseApp", []);
 app.controller("beginnerCourseCtrl", function($scope, $rootScope, $timeout) {
 
 $scope.img_root = './ebooks/englab/beginnerCourse/images' ; 						
-$scope.ielt_form = 0 ; 						//Reading
+$scope.ielt_form = 0 ; 								//Reading
 
 $scope.story = '';
 $scope.acc = -1;
 
-$scope.stories = ENGLAB_BEGIN_DATA_R;		// def
-$scope.titles = showStoryTitles($scope.stories);  // def
-makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R) // def
+$scope.stories = ENGLAB_BEGIN_DATA_R;				// def
+$scope.titles = showStoryTitles($scope.stories);  	// def
+makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R) 		// def
 
 ielt_formChange = function (num) {
 	$scope.$broadcast("child_stopSound");
@@ -103,9 +103,9 @@ function doMenu()
 	var en = ""
 	var rgSen = /\d+\).*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
 	for (var i = 0; i < ENGLAB_BEGIN_DATA_S_Vol5.length; i++) {
-		var lesson = ENGLAB_BEGIN_DATA_S_Vol5[i].en
-		var questions = lesson.match(rgSen);
-		en += '<b>' + (i+1) + '</b><br>'
+		var lesson = ENGLAB_BEGIN_DATA_S_Vol5[i]
+		var questions = lesson.en.match(rgSen);
+		en += '<b>' + (i+1) + ') ' + lesson.title + '</b><br>'
 		for (var j = 0; j < questions.length; j++) {
 			en += questions[j]
 		}

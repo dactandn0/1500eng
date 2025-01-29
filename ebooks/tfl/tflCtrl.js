@@ -8,9 +8,10 @@ var app = angular.module("tflApp", []);
 app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
 
 var KBook = 1;
-$scope.stories = tfl_b1_stories; //1
+$scope.stories = tfl_b1_stories; 					//def
 $scope.storyIdx = 0;
 $scope.titles = showStoryTitles($scope.stories);  // def
+makeVocaEbook($rootScope, tfl_b1_stories,tfl_b2_stories,tfl_b3_stories) 			// def
 
 bookChange = function (num) {
 	switch (num) {

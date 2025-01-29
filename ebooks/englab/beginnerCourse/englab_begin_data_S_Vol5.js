@@ -16,7 +16,7 @@ Vâng, tùy thuộc vào bạn. Ý tôi là, nếu người đó dễ gần và 
 3) Bạn có sợ bị đánh giá khi gặp ai đó lần đầu không?<br>\
 Thành thật mà nói, tôi không thực sự bận tâm. Tôi cố gắng không nghĩ nhiều về điều đó vì thực ra, cách người khác nhìn nhận tôi không quan trọng bằng cách tôi coi trọng bản thân mình."
 	,voca:"extrovert,breaks to the ice, approachable,impression,awkward,get to know,leave a good impression on,strikes up a conversation,perceive"
-	,note:"leave a good impression on someone|To strike up a conversation"
+	,note:"An extrovert /ˈek.strə.vɜːt/: một người hướng ngoại Ví dụ: Most sales people are extroverts.|To break the ice: nói chuyện một cách thoải mái, cởi mở với người mới gặp lần đầu tiên Break /breɪk/: Phá vỡ Ice /aɪs/: băng đá Ví dụ: Someone suggested that we play a party game to break the ice.|To strike up a conversation: bắt chuyện Conversation /ˌkɒn.vəˈseɪ.ʃən/: cuộc hội thoại Ví dụ: It’s easy to strike up a conversation with some one when you’re traveling.|Approachable /ˈprəʊ.tʃə.bəl/: thân thiện và dễ bắt chuyện Ví dụ: Graham’s always very approachable.|To leave a good impression on someone: để lại một ấn tượng tốt cho ai đó Impression  /ɪmˈpreʃ.ən/: Ấn tượng Ví dụ: She leave a good impression on us.|Awkward /ˈɔː.kwəd/: cảm giác ngượng nghịu Ví dụ: Some of the questions were rather awkward.|Get to know someone: làm quen và tìm hiểu về ai đó Ví dụ: The first couple of meetings are for the doctor and patient to get to know each other."
 },{
 	track:"1.2",
 	title:"Opinions/ideas",
@@ -36,7 +36,8 @@ Một lợi thế rõ ràng là trẻ em sẽ trở nên độc lập hơn. Đú
 Câu hỏi khá khó vì tôi không thường dành thời gian cho trẻ em hoặc thực sự không dạy chúng. Nhưng tôi đoán cách tốt nhất là đặt câu hỏi và đưa ra gợi ý hoặc ví dụ để chúng có thể tự nảy sinh ý tưởng. Trên hết, giáo viên cũng cần khuyến khích trẻ em và để chúng sáng tạo.<br>\
 4) Bạn có nghĩ rằng trẻ em được dạy để có cùng ý tưởng với cha mẹ chúng không?<br>\
 Thành thật mà nói, tôi không đồng ý với điều đó. Bạn biết đấy, luôn có sự khác biệt giữa các thế hệ. Ý tôi là, trẻ em chịu ảnh hưởng của người khác chứ không chỉ của cha mẹ chúng và chúng chắc chắn sẽ có quan điểm riêng về cuộc sống. Đôi khi, chúng có thể đưa ra ý tưởng khác với cha mẹ chúng, vì vậy việc ép trẻ em suy nghĩ như người lớn chỉ hạn chế trí tưởng tượng và sự sáng tạo của chúng."
-	,voca:"be reliant on, give prompts, spark idea, perspective,come up with",
+	,voca:"be reliant on, give prompts, spark idea, perspective,come up with"
+	,note:"To be reliant on someone/ something: phụ thuộc vào ai/ cái gì Reliant /rɪˈlaɪ.ənt/: dựa dẫm Ví dụ: The project is reliant on volunteers.|To give prompts /ɡɪv prɒmpts/: đưa ra gợi ý Ví dụ: Adults give prompts or hints to enable children to respond.|To spark idea /spɑːk aɪˈdɪə/ : nảy ra ý tưởng Ví dụ:  They spark ideas for stories.|Perspective /pəˈspek.tɪv/: Góc nhìn, quan điểm Ví dụ: Her attitude lends a fresh perspective to the subject |To come up with: nghĩ ra (ý tưởng) Ví dụ: She’s come up with some amazing scheme to double her income."
 },{
 	track:"1.3",
 	title:"Tea or Coffee",
@@ -52,7 +53,8 @@ Tôi nghĩ cà phê phổ biến hơn. Bạn thấy đấy, uống một tách c
 Mặc dù tôi thích cà phê hơn, nhưng tôi chỉ mời khách uống trà vì nhiều người trong số họ không chịu được vị đắng của cà phê. Ngoài ra, cà phê chứa nhiều caffeine, có thể khiến mọi người mất ngủ vào ban đêm. Tôi không muốn làm hỏng giấc ngủ của họ.<br>\
 3) Lần cuối cùng bạn uống trà hoặc cà phê là khi nào?<br>\
 Để tôi xem, có lẽ là vào cuối tuần trước khi tôi đi chơi với một số người bạn của mình. Sau khi mua sắm, chúng tôi đã đến một quán cà phê nhỏ. Bạn biết đấy, trời đang mưa vào thời điểm đó, vì vậy thưởng thức một tách cà phê nóng trong khi trò chuyện là lựa chọn tốt nhất."
-	,voca:"have a chat,can't stand the bitterness,a daily habit,preference,chit-chat",
+	,voca:"have a chat,can't stand the bitterness,a daily habit,preference,chit-chat"
+	,note:"A daily habit: một thói quen hằng ngày. Daily /ˈdeɪ.li/: hằng ngày Habit /ˈhæb.ɪt/: thói quen |Preference /ˈpref.ər.əns/: sở thích, sự ưa thích |Can’t stand the bitterness /ˈbɪt.ə.nəs/: không thể chịu được vị đắng |To ruin /ˈruː.ɪn/: phá hủy |To have a chat /hæv ə tʃæt/: trò chuyện phiếm, tán gẫu|Chủ đề tương tự: weekends, visiting relatives, travelling/ holidays |Những chủ đề trên thường có cùng dạng câu hỏi về hoạt động bạn hay làm, do đó có thể dùng cách diễn đạt chung là đi trò chuyện và thưởng thức trà/ cà phê.|Ví dụ: |What do you do when you visit your relatives? |What do you often do on the weekends? |Trả lời: Well, we tend to have a chat while sipping a hot cup of tea.|Nhóm chủ đề khác cũng có thể vận dụng ý tưởng là: concentration, sleep, staying up late |Ví dụ: |What can help you concentrate better? |What can affect your sleep? |Trả lời: Having a cup of coffee which contains a lot of caffeine can help me stay mentally alert / keep awake all night."
 },{
 	track:"1.4",
 	title:"Age",
@@ -68,7 +70,8 @@ Thời điểm lý tưởng để học là khi mọi người bước sang tu�
 Sẽ là nói dối nếu tôi nói rằng tôi không buồn về điều đó. Thực ra, không có gì tôi có thể làm để ngăn chặn việc già đi, vì vậy hãy để nó như vậy. Tốt hơn hết là tôi nên tận hưởng từng giây phút của cuộc sống, sống hạnh phúc và làm những điều có ý nghĩa để tôi có thể có một cuộc sống không hối tiếc.<br>\
 3) Chúng ta có nên đối xử với những người ở độ tuổi khác nhau theo cùng một cách không? <br>\
 Không, tôi không nghĩ vậy. Bạn không thể đối xử với một đứa trẻ 5 tuổi giống như cách bạn cư xử khi gặp ông bà của mình, đúng không? Người lớn tuổi luôn cần được tôn trọng."
-	,voca:"acquire new skills,mature,driving ages,without regretting",
+	,voca:"acquire new skills,mature,driving ages,without regretting"
+	,note:"Driving ages: Độ tuổi được phép lái xe Driving  /ˈdraɪ.vɪŋ/: lái xe Ages /ˈeɪ·dʒɪz/: độ tuối Ví dụ:  The article also misstated the position taken by another researcher on voting and driving ages.|To be mature /məˈtʃʊər/: trưởng thành Ví dụ: He’s very mature for his age.|To acquire new skills: tiếp thu các kỹ năng mới Acquire /əˈkwaɪər/: tiếp thu Ví dụ: The nagging sense of needing to acquire new skills, all the time, is palpable."
 },{
 	track:"1.5",
 	title:"Public Transportation",
@@ -88,7 +91,8 @@ Tôi sử dụng xe buýt hầu như hàng ngày vì như tôi đã nói, đó l
 Tôi nghĩ phương tiện cá nhân là lựa chọn tốt hơn đối với tôi. Thành thật mà nói, tôi dễ bị say xe. Nếu tôi đi xa bằng xe buýt hoặc xe khách, tôi sẽ bị đau đầu khủng khiếp và thậm chí nôn mửa.<br>\
 4) Bạn có nghĩ mọi người sẽ lái xe nhiều hơn trong tương lai không?<br>\
 Thật khó để nói về tương lai nhưng tôi hy vọng mọi người sẽ sử dụng nhiều phương tiện giao thông công cộng hơn thay vì ô tô và xe máy. Lái xe nhiều hơn chỉ làm chất lượng không khí xấu đi, ảnh hưởng tiêu cực đến sức khỏe của mọi người."
-	,voca:"punctual,deteriorate,carsick,tight,daily basis,vomit,means of transportation,acquiring",
+	,voca:"punctual,deteriorate,carsick,tight,daily basis,vomit,means of transportation,acquiring"
+	,note:"On a daily basis: hằng ngày Ví dụ: On a daily basis, I operated au naturel.| Affordable price /əˈfɔː.də.bəl praɪs/: mức giá phải chăng, có thể chi trả được Ví dụ: They are meeting consumer demand for fashionable products at affordable prices.|A tight budget: ngân sách hạn hẹp Tight  /taɪt/: eo hẹp Budget /ˈbʌdʒ.ɪt/: ngân sách Ví dụ:  I am on a tight budget.|To be overcrowded  /ˌəʊ.vəˈkraʊ.dɪd/: đông nghịt, chật ních Ví dụ: The prisons are overcrowded | To be punctual /ˈpʌŋk.tʃu.əl/: đúng giờ Ví dụ: He’s fairly punctual |To get carsick /ɡet ˈkɑː.sɪk/: bị say xe Ví dụ: If you know you are likely to get carsick, there are several ways you can prevent it.|To travel a far distance: di chuyển khoảng cách xa Travel /ˈtræv.əl/: di chuyển Far /fɑːr/: xa Distance /ˈdɪs.təns/: khoảng cách Ví dụ:  Notably, men who travelled far distances for a job obligation mainly stated travel for work.|To vomit /ˈvɒm.ɪt/: Nôn, buồn nôn Ví dụ: He came home drunk and vomited all over the kitchen floor.|To deteriorate /dɪˈtɪə.ri.ə.reɪt/: Trở nên xấu hơn, tồi tệ hơn Ví dụ: The political situation in the region has deterio rated rapidly.|Chủ đề tương tự: Travelling, holidays, driving|Nhóm chủ đề này thông thường có đề cập đến những câu hỏi về phương thức đi lại và do đó có thể dùng chung ý tưởng về phương tiện giao thông."
 },{
 	track:"1.6",
 	title:"Changes",
@@ -104,7 +108,8 @@ Tất nhiên là có, chưa kể đến những thay đổi về ngoại hình, 
 Vâng, tôi không thể nói bất cứ điều gì bây giờ nhưng tôi hy vọng nó sẽ liên quan đến con đường sự nghiệp của tôi. Bạn biết đấy, tôi mới bắt đầu công việc của mình được vài tháng. Hiện tại, tôi đang cố gắng học hỏi và tích lũy kinh nghiệm để có thể được cung cấp một vị trí cao hơn với mức lương tốt hơn trong tương lai gần.<br>\
 3) Có nhiều thay đổi ở thị trấn/thành phố của bạn không?<br>\
 Không còn nghi ngờ gì nữa. HCM đang phát triển rất nhanh nhưng đồng thời, nó cũng dần trở thành một khu rừng bê tông. Ý tôi là ngày càng có nhiều tòa nhà chọc trời được xây dựng và thành phố này ít cây xanh hơn. Thật không may, đó là mặt tiêu cực."
-	,voca:"mention,concrete jungle,skyscrapers",
+	,voca:"mention,concrete jungle,skyscrapers"
+	,note:"Not to mention: không kể đến Mention /ˈmen.ʃən/: đề cập Ví dụ: I promised never to mention the incident again.|Physical look /ˈfɪz.ɪ.kəl lʊk/: bề ngoài, ngoại hình Ví dụ: The physical look of the movie is a revelation of a lost past.|Career path: con đường sự nghiệp Career /kəˈrɪər/: sự nghiệp Path /pɑːθ/: con đường Ví dụ: Ortiz’s career path seemed equally unorthodox.|A concrete jungle: một 'khu rừng bê tông' (ám chỉ một khu vực với nhiều tòa nhà cao tầng, không gian trống và cây xanh khá ít) Concrete /ˈkɒŋ.kriːt/: bê tông Jungle /ˈdʒʌŋ.ɡəl/: rừng Ví dụ:  New York may be a concrete jungle, but it does have some soil and sky |Skyscraper /ˈskaɪˌskreɪ.pər/: Tòa nhà chọc trời Ví dụ: The restaurant is at the top of one of the big downtown skyscrapers."
 },{
 	track:"1.7",
 	title:"Picnics",
@@ -120,23 +125,23 @@ Không, tôi chưa từng. Hồi đó, bố mẹ tôi rất bận rộn với c�
 Hiếm khi. Nói thật với bạn, tôi không thực sự hứng thú với việc đi dã ngoại. Hơn nữa, lịch trình bận rộn của tôi không cho phép tôi tận hưởng điều đó. Nếu có một vài ngày nghỉ, tôi chỉ muốn ngủ, bạn biết đấy, để thư giãn một chút trước khi quay lại làm việc.<br>\
 3) Mọi người sẽ đi dã ngoại ở đâu ở đất nước bạn?<br>\
 Ồ, tôi thậm chí còn không quan tâm đến điều đó. Để tôi xem, có thể là ở công viên hoặc ngoại ô thành phố. Tôi chỉ có thể nghĩ đến hai địa điểm này có thể là những địa điểm tuyệt vời để dã ngoại. Mọi người cũng có cơ hội thư giãn và tận hưởng không khí trong lành."
-	,voca:"",
+	,voca:"play hide and seek,hectic schedule,unwind a bit",
 },{
 	track:"1.8",
 	title:"Being in a hurry",
 	en:"1) What do you often have to do very quickly?<br>\
-Frankly, I always have to eat breakfast in a rush(. Well, sleeping in is my bad habit, so every morning I just have a short period of time to be ready for heading to work. You know, things like doing personal hygiene, putting on makeup and getting dressed all take me lots of time so I have to eat quickly.<br>\
+Frankly, I always have to eat breakfast in a rush. Well, sleeping in is my bad habit, so every morning I just have a short period of time to be ready for heading to work. You know, things like doing personal hygiene, putting on makeup and getting dressed all take me lots of time so I have to eat quickly.<br>\
 2) Do you think you do things well when you're in a hurry?<br>\
 I don't think so. I have to admit that I've got into trouble a thousand times because I was in a hurry. Once I broke a vase on the table while hurriedly moving around to find my phone and get to work. I just left the mess and went out so that I could catch the bus on time.<br>\
 3) Do you find it difficult to do things quickly? <br>\
 Yes, I mean who doesn't? It's hard to do something both carefully and quickly, isn't it? If I am in this position, surely I will make mistakes."
 	,vi:"1) Bạn thường phải làm gì rất nhanh?<br>\
-Thành thật mà nói, tôi luôn phải ăn sáng vội vã (. Ờ thì, ngủ nướng là thói quen xấu của tôi, vì vậy mỗi sáng tôi chỉ có một khoảng thời gian ngắn để chuẩn bị đi làm. Bạn biết đấy, những việc như vệ sinh cá nhân, trang điểm và mặc quần áo đều tốn rất nhiều thời gian của tôi nên tôi phải ăn nhanh.<br>\
+Thành thật mà nói, tôi luôn phải ăn sáng vội vã. Ờ thì, ngủ nướng là thói quen xấu của tôi, vì vậy mỗi sáng tôi chỉ có một khoảng thời gian ngắn để chuẩn bị đi làm. Bạn biết đấy, những việc như vệ sinh cá nhân, trang điểm và mặc quần áo đều tốn rất nhiều thời gian của tôi nên tôi phải ăn nhanh.<br>\
 2) Bạn có nghĩ rằng mình làm tốt mọi việc khi đang vội không?<br>\
 Tôi không nghĩ vậy. Tôi phải thừa nhận rằng tôi đã gặp rắc rối hàng ngàn lần vì tôi đang vội. Có lần tôi làm vỡ một chiếc bình trên bàn khi vội vã di chuyển xung quanh để tìm điện thoại và đi làm. Tôi chỉ để lại đống bừa bộn và ra ngoài để kịp bắt xe buýt đúng giờ.<br>\
 3) Bạn có thấy khó để làm mọi việc nhanh chóng không? <br>\
 Vâng, ý tôi là ai mà không thấy khó chứ? Thật khó để làm một việc gì đó vừa cẩn thận vừa nhanh chóng, phải không? Nếu tôi ở trong hoàn cảnh này, chắc chắn tôi sẽ làm những sai lầm."
-	,voca:"hurriedly,put on makeup,in a rush, sleep in, do personal hygiene",
+	,voca:"hurriedly,put on makeup,in a rush, do personal hygiene,sleeping in",
 },{
 	track:"1.9",
 	title:"Clothes",
@@ -374,6 +379,97 @@ Tôi đoán là hàng ngày. Ý tôi là, tôi phát ngán với những bộ tr
 Lý do quần jeans được ưa chuộng trong số đông người Việt Nam là vì chúng rất dễ phối đồ. Hơn nữa, chúng cũng rất thoải mái khi mặc và phù hợp với thời tiết ở đất nước tôi."
 	,voca:"On a daily basis,feel comfortable in my own skin,compliment my body shape,formal attire,mix and match, personality"
 	,note:"On a daily basis = everyday"
+},{
+	track:"1.21",
+	title:"Sunshine",
+	en:"1) Do you like sunshine?<br>\
+No, I don't. I can get sunburnt very easily if I am exposed to the sun for long periods of time. I prefer rainy or windy days when the temperature is much cooler, as I can't put up with the terrible heat from the sun.<br>\
+2) What do you do on sunny days?<br>\
+I usually stay indoors because sunny days in Vietnam or other tropical countries are often very hot. I try not to go out on such days; otherwise, I'll sweat like a pig.<br>\
+3) Have you ever used sunscreen?<br>\
+I certainly do, on a daily basis. Scientifically speaking, ultraviolet rays from the sun can speed up skin aging, which makes us look less attractive or even makes us more prone to skin cancer. That's why I wouldn't leave the house without putting on sunscreen."
+	,vi:"1) Bạn có thích ánh nắng mặt trời không?<br>\
+Không, tôi không thích. Tôi có thể bị cháy nắng rất dễ dàng nếu tôi tiếp xúc với ánh nắng mặt trời trong thời gian dài. Tôi thích những ngày mưa hoặc gió khi nhiệt độ mát hơn nhiều, vì tôi không thể chịu được sức nóng khủng khiếp từ mặt trời.<br>\
+2) Bạn làm gì vào những ngày nắng?<br>\
+Tôi thường ở trong nhà vì những ngày nắng ở Việt Nam hoặc các nước nhiệt đới khác thường rất nóng. Tôi cố gắng không ra ngoài vào những ngày như vậy; nếu không, tôi sẽ đổ mồ hôi như lợn.<br>\
+3) Bạn đã bao giờ sử dụng kem chống nắng chưa?<br>\
+Tôi chắc chắn có, hàng ngày. Theo khoa học, tia cực tím từ mặt trời có thể đẩy nhanh quá trình lão hóa da, khiến chúng ta trông kém hấp dẫn hơn hoặc thậm chí khiến chúng ta dễ bị ung thư da hơn. Đó là lý do tại sao tôi sẽ không ra khỏi nhà mà không thoa kem chống nắng."
+	,voca:"sunburnt,put up with,exposed to,speed up skin aging,prone to skin cancer"
+	,note:"To get sunburnt /ˈsʌn.bɜːnt/: bị cháy nắng Ví dụ: When you go out in the hot sun, you should always put sunscreen on your skin to avoid getting sunburnt.|To be exposed to /ɪkˈspəʊzd/ /tuː/: tiếp xúc với Ví dụ: About 800,000 children are exposed to poisons each year.|To put up with /pʊt ʌp wɪð/: chịu đựng Ví dụ: He’s so moody - I don’t know why she puts up with him.|To speed up skin aging: tăng nhanh quá trình lão hóa da Speed up /ˈspiːd.ʌp/: tăng tốc Skin /skɪn/: da Aging /ˈeɪ.dʒɪŋ/: sự lão hóa Ví dụ: Try to avoid foods high in saturated fats since these foods can speed up your skin aging.| To be prone to skin cancer: dễ bị ung thư da Prone /prəʊn/ to: dễ bị bệnh Cancer /ˈkæn.sər/: ưng thư Ví dụ: If my doctor says I am prone to skin cancer, I lather in sunblock and enjoy the beach from the shade of an umbrella."
+},{
+	track:"1.22",
+	title:"Trust",
+	en:"1) Who do you trust the most?<br>\
+The one that springs to mind is my mother. She was my very first best friend in life and always had my back. Throughout the ups and downs of my life, my mother has always stood by my side, and given me support whenever I needed.<br>\
+2) Have you ever lost trust in someone?<br>\
+Yes, my best friend Jack, who used to be my closest confidant until I saw him getting intimate with my crush, even though he knew that had deep affection for her. Then, we drifted apart and our friendship came to a halt. After that, I find it really hard to open up and confide in anybody.<br>\
+3)  What kind of people do you trust?<br>\
+I guess only our family members are trustworthy and willing to help us wholeheartedly. You know, after being betrayed by my best friend, I kind of lose faith in humanity. I am always afraid that when I confide in some, he or she may go behind my back.<br>\
+4) Do you trust Artificial Intelligence (AI)?<br>\
+For now, it would be a yes. As long as there are regulations to limit AI to a certain capacity, I believe that AI would contribute greatly to the development of every society."
+	,vi:"1) Bạn tin tưởng ai nhất?<br>\
+Người đầu tiên hiện lên trong tâm trí tôi là mẹ tôi. Bà là người bạn thân đầu tiên của tôi trong cuộc đời và luôn ủng hộ tôi. Trong suốt những thăng trầm của cuộc đời, mẹ tôi luôn ở bên cạnh tôi và hỗ trợ tôi bất cứ khi nào tôi cần.<br>\
+2) Bạn đã bao giờ mất lòng tin vào ai đó chưa?<br>\
+Có, người bạn thân nhất của tôi là Jack, người từng là người bạn tâm giao thân thiết nhất của tôi cho đến khi tôi thấy anh ấy thân mật với người tôi thích, mặc dù anh ấy biết rằng tôi rất yêu cô ấy. Sau đó, chúng tôi dần xa cách và tình bạn của chúng tôi dừng lại. Sau đó, tôi thấy thực sự khó để mở lòng và tâm sự với bất kỳ ai.<br>\
+3) Bạn tin tưởng những người nào?<br>\
+Tôi đoán chỉ có những thành viên trong gia đình chúng tôi mới đáng tin cậy và sẵn sàng giúp đỡ chúng tôi hết lòng. Bạn biết đấy, sau khi bị bạn thân phản bội, tôi mất niềm tin vào nhân loại. Tôi luôn lo sợ rằng khi tôi tâm sự với ai đó, họ có thể sẽ nói xấu sau lưng tôi.<br>\
+4) Bạn có tin vào Trí tuệ nhân tạo (AI) không?<br>\
+Hiện tại, câu trả lời là có. Miễn là có những quy định hạn chế AI ở một mức độ nhất định, tôi tin rằng AI sẽ đóng góp rất lớn vào sự phát triển của mọi xã hội."
+	,voca:"come to a halt,confide in,spring to mind,go behind my back,lose faith in humanity,trustworthy,closest confidant,get intimate with,drift apart,have deep affection,ups and downs"
+	,note:"to spring to mind /sprɪŋ tə maɪnd/: hiện lên đầu tiên trong đầu| to have my back /hæv maɪ bæk/: ở bên cạnh giúp đỡ| ups and downs /ʌps ən ˈdaʊnz/: thăng trầm trong cuộc sống| to come to a halt: đi đến kết thúc| confide in: tâm sự| lose faith in humanity: mất niềm tin vào con người| go behind my back /ɡəʊ bɪˈhaɪnd maɪ bæk/: làm chuyện lén sau lưng"
+},{
+	track:"1.23",
+	title:"Movies",
+	en:"1) Which movies do you like?<br>\
+I am a huge fan of romance and The Notebook is definitely my number one choice when it comes to classic romance movies. Although the motif of a tragic love story isn't new, the movie is still a masterpiece to me.<br>\
+2) Do your friends like this movie?<br>\
+Unlike me, most of my friends say this is such a cliché movie and therefore, would rather spend their time watching horror movies, which gives them real thrills.<br>\
+3) Do you want to be a movie star?<br>\
+Not at all. Becoming a celebrity means you have to expose your private life to the rest of the world, and sharing has never been my thing. Besides, I have a fear of cameras, which means I could never become an actor/ actress."
+	,vi:"1) Bạn thích phim nào?<br>\
+Tôi là một fan hâm mộ lớn của thể loại lãng mạn và The Notebook chắc chắn là lựa chọn số một của tôi khi nói đến những bộ phim lãng mạn kinh điển. Mặc dù chủ đề về một câu chuyện tình bi thảm không phải là mới, nhưng bộ phim vẫn là một kiệt tác đối với tôi.<br>\
+2) Bạn bè của bạn có thích bộ phim này không?<br>\
+Không giống như tôi, hầu hết bạn bè tôi đều nói rằng đây là một bộ phim sáo rỗng và do đó, họ thích dành thời gian xem phim kinh dị hơn, vì phim này mang lại cho họ cảm giác hồi hộp thực sự.<br>\
+3) Bạn có muốn trở thành một ngôi sao điện ảnh không?<br>\
+Không hề. Trở thành người nổi tiếng có nghĩa là bạn phải phơi bày cuộc sống riêng tư của mình với phần còn lại của thế giới, và việc chia sẻ chưa bao giờ là sở thích của tôi. Bên cạnh đó, tôi sợ máy quay, điều đó có nghĩa là tôi không bao giờ có thể trở thành một diễn viên/nữ diễn viên."
+	,voca:"masterpiece,motif,cliché,expose your private life,give them real thrills,share has never been my thing,number one choice,a fear of cameras"
+	,note:"give them real thrills / ɡɪv ðem rɪəl θrɪls/: cho họ sự phấn khởi|number one choice: lựa chọn hàng đầu|A fear of cameras: nỗi sợ đứng trước máy ảnh|share has never been my thing: chia sẻ không phải việc tôi thường làm"
+},{
+	track:"1.24",
+	title:"Travelling",
+	en:"1) Do you like travelling?<br>\
+I must admit I’m a travel lover and travelling to a new country is always on top of my to do list every year. Travelling helps me broaden my horizons and blow off some steam after strenuous working days.<br>\
+2) How many cities have you travelled to?<br>\
+Probably 6. Last year, during my winter break, I had a chance to travel with a group of my best friends and visited the Northern region of my country. We are also planning to travel overseas next month.<br>\
+3) What kind of cities do you like to travel to?<br>\
+Since HCMC is usually hot and humid all year round, I would love to visit cities that have cool weather like Da Lat or Sa Pa. Additionally, I also want to get away from the hustle and bustle of the city life, so anywhere which gives me a sense of tranquility would be my kind of city to visit.<br>\
+4. What is the place that left you the deepest impression when travelling? → Honestly speaking, it is Sapa. The city has its unique charm and picturesque scenery that takes my breath away just by looking at the photos I took during the trip. This place is definitely worth visiting and words alone are not enough to describe its beauty."
+	,vi:"1) Bạn có thích du lịch không?<br>\
+Tôi phải thừa nhận rằng tôi là người yêu thích du lịch và việc đi du lịch đến một quốc gia mới luôn nằm trong danh sách việc cần làm hàng đầu của tôi mỗi năm. Du lịch giúp tôi mở rộng tầm nhìn và giải tỏa căng thẳng sau những ngày làm việc mệt mỏi.<br>\
+2) Bạn đã đi du lịch bao nhiêu thành phố?<br>\
+Có lẽ là 6. Năm ngoái, trong kỳ nghỉ đông, tôi đã có cơ hội đi du lịch với một nhóm bạn thân và đến thăm miền Bắc đất nước tôi. Chúng tôi cũng đang có kế hoạch đi du lịch nước ngoài vào tháng tới.<br>\
+3) Bạn thích du lịch đến những thành phố nào?<br>\
+Vì TPHCM thường nóng và ẩm quanh năm nên tôi rất muốn đến thăm những thành phố có thời tiết mát mẻ như Đà Lạt hoặc Sa Pa. Ngoài ra, tôi cũng muốn tránh xa sự hối hả và nhộn nhịp của cuộc sống thành thị, vì vậy bất kỳ nơi nào mang lại cho tôi cảm giác yên bình sẽ là loại thành phố tôi muốn đến thăm.<br>\
+4. Nơi nào để lại cho bạn ấn tượng sâu sắc nhất khi đi du lịch? → Nói thật thì đó là Sapa. Thành phố này có nét quyến rũ riêng và cảnh đẹp như tranh vẽ khiến tôi phải nín thở khi nhìn vào những bức ảnh tôi chụp trong chuyến đi. Nơi này chắc chắn đáng để ghé thăm và chỉ dùng lời nói thôi thì không đủ để diễn tả vẻ đẹp của nó."
+	,voca:"a travel lover,broaden my horizons,blow off some steam,be strenuous,all year round,get away from the hustle and bustle,a sense of tranquility,picturesque scenery,take my breath away, worth visiting",
+	note:"|A travel lover /ˈtræv.əl ˈlʌv.ər/ : người yêu thích du lịch Ví dụ:  Travel-lovers need to keep living fully |To broaden my horizons /ˈbrɔː.dən maɪ həˈraɪ.zən/ : mở rộng tầm hiểu biết Ví dụ: When I went to university I wanted to broaden my horizons.|To blow off some steam /bləʊ ɒf sʌm  stiːm/ : thư giãn Ví dụ: To blow off some steam, they took archery lessons together.|To be strenuous /ˈstren.ju.əs/ : kiệt quệ về thể chất lẫn tinh thần Ví dụ: His doctor advised him not to do any strenuous exercise |All year round /ɔːl jɪər raʊnd/: quanh năm Ví dụ:  The venue shows movies all year round.|To get away from the hustle and bustle: rời xa khỏi sự ồn ào và tấp nập Hustle /ˈhʌs.əl/ : Hối hả Bustle /ˈbʌs.əl/ : Nhộn nhịp Ví dụ:   We both have busy lives and it’s good to get away from the hustle and bustle.|A sense of tranquility: cảm giác yên bình Sense /sens/ : cảm giác Tranquility /træŋˈkwɪl.ə.ti/ : Sự yên bình Ví dụ: I love the sense of tranquility in my hometown.|Picturesque scenery ˈsiˈ.nˈr.i/: phong cảnh đẹp như tranh vẽ Scenery /ˈsiː.nər.i/ : phong cảnh Picturesque /ˌpɪk.tʃərˈesk/: đẹp như tranh vẽ Ví dụ: The countryside in this region is very picturesque scenery.|To take my breath away (idiom): làm tôi choáng ngợp Ví dụ: The beauty of the Taj Mahal took my breath away |To be worth visiting: đáng tham quan Visit /ˈvɪz.ɪt/ : Tham quan Worth /wɜːθ/: đáng giá Ví dụ:  Two other sites are eminently worth visiting"
+},{
+	track:"1.25",
+	title:"Music",
+	en:"1) Do you like music? What kinds of music do you like to listen to?<br>\
+Definitely. I always listen to music in my leisure time to relax and let myself loose. Pop music is my top choice when I need to recharge my energy and my all-time favorite album is Red by Taylor Swift.<br>\
+2) When do you listen to music?<br>\
+Like I have mentioned, pretty much whenever I need to chill out after strenuous working hours. Besides, I love to indulge in a soothing ballad on my way to work.<br>\
+3) Have you ever been to a concert before?<br>\
+As much as I love music, I haven’t had a chance to attend a concert because the tickets to my favorite singer’s concert usually cost a fortune. Since I am a student and always on a tight budget, I certainly cannot afford a ticket."
+	,vi:"1) Bạn có thích âm nhạc không? Bạn thích nghe thể loại nhạc nào?<br>\
+Chắc chắn rồi. Tôi luôn nghe nhạc vào thời gian rảnh rỗi để thư giãn và thả lỏng bản thân. Nhạc pop là lựa chọn hàng đầu của tôi khi tôi cần nạp lại năng lượng và album yêu thích nhất mọi thời đại của tôi là Red của Taylor Swift.<br>\
+2) Bạn nghe nhạc khi nào?<br>\
+Như tôi đã đề cập, hầu như bất cứ khi nào tôi cần thư giãn sau những giờ làm việc căng thẳng. Bên cạnh đó, tôi thích đắm mình trong một bản ballad nhẹ nhàng trên đường đi làm.<br>\
+3) Bạn đã từng đến một buổi hòa nhạc nào chưa?<br>\
+Mặc dù tôi rất thích âm nhạc, nhưng tôi chưa có cơ hội tham dự một buổi hòa nhạc nào vì vé xem buổi hòa nhạc của ca sĩ yêu thích của tôi thường rất đắt. Vì tôi là sinh viên và luôn eo hẹp về ngân sách nên chắc chắn tôi không đủ khả năng mua vé."
+	,voca:"strenuous,let myself loose,all-time favorite,indulge in a soothing ballad,cost a fortune,on a tight budget"
+	,note:"To let myself loose: thư giãn cơ thể Loose /luːs/ : thả lỏng Ví dụ:  I couldn’t let myself loose.|All-time favorite: thích nhất mọi thời đại Favorite /ˈfeɪ.vər.ɪt/ : yêu thích Ví dụ: It’s my all-time favorite guitar.|To be strenuous /ˈstren.ju.əs/: kiệt quệ về thể chất lẫn tinh thần Ví dụ: His doctor advised him not to do any strenuous exercise |To indulge in a soothing ballad: đắm chìm vào bản nhạc ballad êm dịu Indulge /ɪnˈdʌldʒ/ : Thưởng thức Soothing /ˈsuː.ðɪŋ/ : Êm dịu Ví dụ: I usually indulge in a soothing ballad in evening.|to cost a fortune /kɒst ə ˈfɔː.tʃuːn/: tốn nhiều tiền Ví dụ: The movie cost a fortune and flopped.|To be on a tight budget: ngân sách eo hẹp Tight /taɪt/ : eo hẹp Budget /ˈbʌdʒ.ɪt/: ngân sách Ví dụ: I’m on a tight budget, no wiggle room"
 }
 
 

@@ -15,9 +15,9 @@ makeVocaEbook($rootScope, tfl_b1_stories,tfl_b2_stories,tfl_b3_stories) 			// de
 
 bookChange = function (num) {
 	switch (num) {
-		case 1: $scope.stories = tfl_b1_stories; break;
-		case 2: $scope.stories = tfl_b2_stories; break;
-		case 3: $scope.stories = tfl_b3_stories; break;
+		case 1: $scope.stories = doMenu(tfl_b1_stories); break;
+		case 2: $scope.stories = doMenu(tfl_b2_stories); break;
+		case 3: $scope.stories = doMenu(tfl_b3_stories); break;
 	}
 	$scope.titles = showStoryTitles($scope.stories);
 	Helper_saveDB("tfl_b", num);
@@ -59,6 +59,37 @@ $scope.loadData = function () {
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 });
+
+function doMenu(kStories)
+{
+	var en = ""
+	for (var i = 0; i < kStories.length; i++) {
+		var lesson = kStories[i]
+		if (lesson.title)
+		{
+			// 01.01 -> 01
+			var order = (lesson.track + '').replace(/\..*/gi, '')
+			en += order + ') ' + lesson.title + '<br>'
+		}
+	}
+	var menu = {
+		track: 'Menu',
+		title: 'Lesson',
+		en:en
+	}
+	var r = []
+	r.push(menu)
+	return r.concat(kStories)
+}
+
+
+
+
+
+
+
+
+
 
 });
 

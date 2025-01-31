@@ -45,7 +45,6 @@ B Yes, it is. I hate it!"
 	,voca:"",
 },
 {
-	title:"Names and Titles",
 	track:"01.03",
 	en:"1<br>\
 A Hello.<br>\

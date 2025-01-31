@@ -31,7 +31,7 @@ ielt_formChange = function (num) {
 	if (num===2) $scope.stories = ENGLAB_BEGIN_DATA_S;
 	if (num===3)
 	{
-		$scope.stories = ENGLAB_BEGIN_DATA_L;
+		$scope.stories = doMenu_Listening().concat(ENGLAB_BEGIN_DATA_L);
 		var loadListenIdx = Helper_loadInt('lessonFor_unit', 0);
 		$scope.fetchStory(loadListenIdx, false);
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_L)
@@ -39,7 +39,7 @@ ielt_formChange = function (num) {
 
 	if (num===4) 
 	{
-		$scope.stories = doMenu().concat(ENGLAB_BEGIN_DATA_S_Vol5);
+		$scope.stories = doMenu_S_VOL5().concat(ENGLAB_BEGIN_DATA_S_Vol5);
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_S_Vol5)
 		var loadListenIdx = Helper_loadInt('speakSameVol5_unit', 0);
 		$scope.fetchStory(loadListenIdx, false);
@@ -98,7 +98,7 @@ $scope.fetchStory = function (idx, reset=true)
 	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
 }
 
-function doMenu()
+function doMenu_S_VOL5()
 {
 	var en = ""
 	var rgSen = /\d+\).*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
@@ -119,5 +119,30 @@ function doMenu()
 	r.push(menu)
 	return r
 }
+
+function doMenu_Listening()
+{
+	var en = ""
+	for (var i = 0; i < ENGLAB_BEGIN_DATA_L.length; i++) {
+		var lesson = ENGLAB_BEGIN_DATA_L[i]
+		if (lesson.title)
+		{
+			// 01.01 -> 01
+			var order = (lesson.track + '').replace(/\..*/gi, '')
+			en += order + ') ' + lesson.title + '<br>'
+		}
+	}
+	var menu = {
+		track: 'Menu',
+		title: 'Lesson',
+		en:en
+	}
+	var r = []
+	r.push(menu)
+	return r
+}
+
+
+
 
 });

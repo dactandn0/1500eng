@@ -133,7 +133,7 @@ function preprocess() {
 };
 
 function isInArr(ele, arr) {
-	return arr.includes(ele);
+	return arr && arr.includes(ele);
 };
 
 function hLightWord(word, arr, graph, tagOpen, tagClose) {
@@ -153,6 +153,7 @@ function ngClickOnWord(word, graph) {
 	if (ValidateWord(word) 
 		&& word !=='br'
 		&& word !=='hr'
+		&& word !=='b'
 		&& UNCOUNT_TAG_BEGIN.indexOf(word) === -1
 		&& kNgClickTagOpen.indexOf(word) === -1
 		) 

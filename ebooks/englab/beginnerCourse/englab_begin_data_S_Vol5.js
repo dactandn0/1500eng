@@ -157,7 +157,8 @@ Quần áo thường ngày như quần jeans và áo phông là lựa chọn t�
 Tôi cố gắng tránh mặc quần áo màu trắng vì chúng dễ bị bẩn, ngay cả một vết bẩn nhỏ cũng có thể dễ dàng nhận ra. Giặt và loại bỏ bụi bẩn cũng khó hơn nhiều.<br>\
 3) Bạn có mặc cùng một loại quần áo vào cuối tuần và ngày thường không?<br>\
 Không hẳn vậy. Vào ngày thường khi đi làm, tôi phải mặc đồng phục là áo sơ mi trắng và váy đen. Chúng quá bó nên tôi cảm thấy hơi khó chịu. Vâng, cuối tuần là thời gian để tôi cởi bỏ bộ đồng phục nhàm chán và ăn mặc giản dị."
-	,voca:"wardrobe,mix and match,stylish,recognizable,stain",
+	,voca:"wardrobe,mix and match,stylish,recognizable,stain"
+	,note:"Wardrobe /ˈwɔː.drəʊb/: tủ quần áo Ví dụ: He hung his suit in the wardrobe. |Mix and match /mɪks ænd mætʃ/: phối đồ, quần áo Ví dụ: Alice learned to mix and match her skirts, blous es, and sweaters |To be stylish /ˈstaɪ.lɪʃ/: kiểu cách, hợp thời trang Ví dụ: The film’s direction is subtle and stylish. |Stain /steɪn/: Vết bẩn, vết ố Ví dụ: You can remove a red wine stain from a carpet by sprinkling salt over it. |To be recognizable /ˈrek.əɡ.naɪ.zə.bəl/ : có thể nhận ra được Ví dụ: The cartoon character was instantly recogniz able to millions of children. |To put on: mặc (quần áo) Ví dụ: If I’m having a bad hair day, I just put on a hat. |Put off: cởi bỏ (quần áo) Ví dụ: Mr. Nirenberg was put off."
 },{
 	track:"1.10",
 	title:"Trying new activities",
@@ -173,7 +174,8 @@ Thực ra, điều đó phụ thuộc vào hoạt động đó là gì. Đối v
 Tôi có xu hướng do dự một chút khi đó. Tôi nghĩ rằng tôi sợ thất bại hơn nhiều vào thời điểm đó nhưng bây giờ tôi chỉ thử mọi thứ mà không nghĩ nhiều về nó. Ngay cả khi đó là điều gì đó khó khăn và tôi không thành công ngay từ lần thử đầu tiên, tôi vẫn có cảm giác thành tựu khi kết thúc.<br>\
 3) Bạn thích thử một hoạt động mới một mình hay với bạn bè?<br>\
 Vâng, ý tôi là ai mà không thích chứ? Thật khó để làm một việc gì đó vừa cẩn thận vừa nhanh chóng, phải không? Nếu tôi ở trong hoàn cảnh này, chắc chắn tôi sẽ mắc lỗi."
-	,voca:"hesitate,attempt,curious,eager",
+	,voca:"hesitate,attempt,curious,eager"
+	,note:"To give it a go: thử Ví dụ: I might give it a go |To be curious /ˈkjʊə.ri.əs/: tò mò, muốn tìm hiểu Ví dụ: I was curious to know what would happen next. |To be eager  /ˈiː.ɡər/ (to do something): háo hức, mong muốn làm một việc gì đó Ví dụ: She was eager to help. |To hesitate /ˈhez.ɪ.teɪt/: chần chừ, do dự Ví dụ: She hesitated slightly before answering the detective’s question. |Attempt /əˈtempt/: sự cố gắng, thử làm một việc gì đó Ví dụ: He attempted a joke, but no one laughed. |A sense of achievement: Cảm giác bản thân đạt được điều gì đó Sense /sens/ : Cảm giác Achievement /əˈtʃiːv.mənt/ : thành tựu Ví dụ: It gives you a sense of achievement if you actual ly make it to the end of a very long book."
 },{
 	track:"1.11",
 	title:"Weekends",
@@ -189,7 +191,8 @@ Có chứ. Tôi là một người thích xem phim. Mỗi cuối tuần, sau khi
 Như tôi đã nói, tôi thích đi chơi với bạn bè vào thứ Bảy và Chủ Nhật. Chúng tôi chủ yếu làm những việc như tán gẫu trong khi uống trà, sau đó chụp ảnh tự sướng. Đó thực sự là cách tốt nhất để thư giãn và giải tỏa căng thẳng.<br>\
 3) Bạn có nghĩ rằng có đủ những điều thú vị để làm ở thành phố của bạn vào cuối tuần không?<br>\
 Chắc chắn là có. Ở HCM, có rất nhiều lựa chọn giải trí và địa điểm để mọi người lựa chọn, từ trung tâm mua sắm, rạp chiếu phim đến chợ đêm, quán bar, vvv"
-	,voca:"an avid movie-goer,gossip,recreational options",
+	,voca:"an avid movie-goer,gossip,recreational options"
+	,note:"An avid movie-goer: một người thích đi xem phim Avid /ˈæv.ɪd/ : Ham mê Movie-goer /ˈmuː.viˌɡəʊ.ər/ : Người xem phim Ví dụ: His mother was a chemist and an avid movie goer. |To gossip /ˈɡɒs.ɪp/ : Nói chuyện phiếm Ví dụ: Jane and Lyn sat in the kitchen having a good gossip about their friends. |Recreational options: Lựa chọn để giải trí Recreational /ˌrek.riˈeɪ.ʃən.əl/ : giải trí Options /ˈɒp.ʃən/ : Lựa chọn Ví dụ: Recreational options are available in Garrison itself."
 },{
 	track:"1.12",
 	title:"Age/Different stages in life",

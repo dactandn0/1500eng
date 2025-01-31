@@ -1,3 +1,5 @@
+var kAudioLoopSaveKey = "audioLoop";
+
 const HELPER_FOR_TEST = false
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
@@ -5,6 +7,8 @@ const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
 const SAME_N_V_TAG_END = '</y1>'
 const PHRA_VERB_TAG_BEGIN = '<z1a class="_y_2z">'
 const PHRA_VERB_TAG_END = '</z1a>'
+const ADV_Degree_HL_TAG_BEGIN = '<advHL class="advHL_123">'
+const ADV_Degree_HL_TAG_END = '</advHL>'
 
 var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
 var kNgClickTagClose = '</kkk>';
@@ -74,7 +78,6 @@ function doReplaceWords(txt) {
 	return rrr;
 }
 
-var kAudioLoopSaveKey = "audioLoop";
 
 function MYLOG(msg) {
 	console.log(msg);
@@ -92,6 +95,7 @@ RANGE = function(min, max, step) {
 document.write('<small class="note">\
 	' + UNCOUNT_TAG_BEGIN + 'uncount.n' + UNCOUNT_TAG_END + ' <br>\
 	' + PHRA_VERB_TAG_BEGIN + 'phraVerb' + PHRA_VERB_TAG_END + ' <br>\
+	' + ADV_Degree_HL_TAG_BEGIN + '(AdvDegree)' + ADV_Degree_HL_TAG_END + ' <br>\
 	<u>u:</u> n = v<br>\
 	</small>'
 	);
@@ -99,7 +103,6 @@ document.write('<small class="note">\
 var arrBOTH_COUNT_UNCOUNT = [];
 var arrUNCOUNT_NOUNS = [];
 var arrNOUN_SAME_VERBS = [];
-var arrADV = [];
 
 function Helper_ArrRemoveDup(arr) {
 	if (!arr) return arr;
@@ -113,6 +116,11 @@ function Helper_ArrRemoveDup(arr) {
     return result
 }
 
+
+function titleCase(val) {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
+
 function longStrToArray(long_txt, deter = ',') {
 	var arr  = long_txt.replace(/\s*\,\s*/g, ",");
 	arr = arr.split(deter);
@@ -122,25 +130,19 @@ function longStrToArray(long_txt, deter = ',') {
 function preprocess() {
 	arrUNCOUNT_NOUNS = longStrToArray(UNCOUNT_NOUNS);
 	arrNOUN_SAME_VERBS = longStrToArray(NOUN_SAME_VERBS);
-	arrADV = longStrToArray(ADV);
 };
 
 function isInArr(ele, arr) {
-	return arr.includes(ele.toLowerCase());
+	return arr.includes(ele);
 };
-
-function capitalizeFirstLetter(val) {
-    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
-}
 
 function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	if (isInArr(word, arr)) {
-		var title = capitalizeFirstLetter(word)
-		console.log(title)
+		var tCase = titleCase(word)
 		var regex = new RegExp(`\\b(${word})\\b` , 'g')
 		graph =  graph.replace(regex, tagOpen + word + tagClose);
-		regex = new RegExp(`\\b(${title})\\b` , 'g')
-		graph =  graph.replace(regex, tagOpen + title + tagClose);
+		regex = new RegExp(`\\b(${tCase})\\b` , 'g')
+		graph =  graph.replace(regex, tagOpen + tCase + tagClose);
 		return graph;
 	}
 	return graph;
@@ -218,6 +220,7 @@ function processStory (story, isAlert = true) {
 	var foundWords = IRR_ExtractWords(story.en)
 	var words = foundWords.words
 	var phraVerbs = foundWords.phraVerbs
+	var aodWords = foundWords.aodWords
 	var dones = []
 	for (var i = 0; i < words.length; i++) {
 		var word = words[i];
@@ -226,7 +229,7 @@ function processStory (story, isAlert = true) {
 			enShow = hLightWord(word, phraVerbs, enShow , PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END );
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
-			enShow = hLightWord(word, arrADV, enShow , '<advHL class="advHL_123">', '</advHL>' );
+			enShow = hLightWord(word, aodWords, enShow , ADV_Degree_HL_TAG_BEGIN, ADV_Degree_HL_TAG_END );
 			enShow = ngClickOnWord(word, enShow);
 			dones.push(word);
 		}

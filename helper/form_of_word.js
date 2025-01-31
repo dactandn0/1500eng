@@ -1,6 +1,12 @@
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
-const ADV = "also,just,only,always,absolutely,quite,sometimes,own,even,\
-probably,currently,unfortunately,hardly,rarely,much,more,really,recently,absolutely,actually"
+
+const ADV_OF_DEGREE = "definitely,also,just,only,always,absolutely,quite,sometimes,own,even,certainly,of course\
+,probably,currently,unfortunately,hardly,rarely,much,more,really,recently\
+,absolutely,actually,completely,really,totally,thoroughly,entirely\
+,pretty,quite,rather,fairly\
+,slightly,hardly,a bit,a little\
+,since,as,in fact,on top of that,what's more,plus,as much as\
+,incredibly,considerably,particularly,significantly"
 
 const NOUN_SAME_VERBS = "compliment,cause,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\

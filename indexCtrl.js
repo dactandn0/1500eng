@@ -173,6 +173,7 @@ saveFromToastr = function () {
     $scope.saveNoted(saveFromToastrVal, true)
 }
 
+// search
 $scope.Index_Speak = function (event, word) {
   Helper_Speak(event, word);
 }

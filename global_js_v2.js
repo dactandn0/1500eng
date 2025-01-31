@@ -40,13 +40,8 @@ function deleteLastWord(splitChar, string) {
 }
 
 function ValidateWord(word, minL = 2) {	
-	var reg = /^[^\d]$/;   // length = 1 but not digit
-	if (word.match(reg)) return false
-	var exceptTag = 'bui'   // allow <B><u><i> in story.en Data
 	var result = true;
 	word = word.trim().toLowerCase();
-
-	if (exceptTag.indexOf(word) !== -1) return false;
 	if (!isAsciiString(word)) result = false;
 
 	let arr = ['<br>','</br>','<b>','</b>', '/','(',')', '[',']','<u>','</u>'];

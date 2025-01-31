@@ -9,14 +9,14 @@ const ENGLAB_BEGIN_DATA_S = [
 4. Do you like living in the country?<br>\
 Lesson 1. Do you like X?<br>\
 <br>\
-Yes, definitely/absolutely/certainly/of course / I couldn’t agree more<br>\
+Yes, definitely/absolutely/certainly/of course / I couldn't agree more<br>\
 I like = I am really/quite/particularly into + N/Ving = I am fond of = I am keen on = I have a thing for = Ving/N is my cup of tea = I am a huge fan of<br>\
 <br>\
 An avid traveler<br>\
 Avid + runner/swimmer/ reader [bookworm]<br>\
 N + lover/buff: movie buff/lover<br>\
 <br>\
-No/ not really/I have to say no/ I don’t think so No, definitely/ absolutely not<br>\
+No/ not really/I have to say no/ I don't think so No, definitely/ absolutely not<br>\
 C1:<br>\
 I cannot stand<br>\
 I detest + N/ving<br>\
@@ -39,7 +39,7 @@ The reason for this is that + S + v...<br>\
 because = since = as...<br>\
 <br>\
 I. Một số lý do thích và công thức<br>\
-1.It’s/They are + adj (dùng 2 adj)<br>\
+1.It's/They are + adj (dùng 2 adj)<br>\
 Very -> really, incredibly, considerably, particularly, significantly<br>\
 Quite, fairly, pretty<br>\
 <br>\
@@ -122,7 +122,7 @@ Giải thích kèm công thức so sánh <br>\
 Ví dụ để giải thích rõ hơn, bám vào 4W: What, When, Where, Who.<br>\
 BƯỚC 1: Đưa ra lựa chọn ->  <br>\
 Cách 1: dùng cấu trúc PREFER<br>\
-Cách 2: I enjoy both, but if I had to choose, I’d go for<br>\
+Cách 2: I enjoy both, but if I had to choose, I'd go for<br>\
 BƯỚC 2: GIẢI THÍCH KÈM SO SÁNH<br>\
 NGỮ PHÁP VỀ SO SÁNH (CÔNG THỨC)<br>\
 Đuôi -er: 1 âm tiết 	<br>\
@@ -162,9 +162,9 @@ In fact, public buses are a lot more environmentally friendly than many people t
 NEEDLESS TO SAY<br>\
 Needless to say:  dùng để giới thiệu hoặc nhấn mạnh rằng điều bạn nói là hiển nhiên hoặc mọi người điều biết<br>\
 I like eating lots of cakes, but needless to say, that will make me fat.<br>\
-He’s done very badly in his exams, so needless to say, He won’t get into university this year.<br>\
-ALSO, ON TOP OF THAT/PLUS/WHAT’S MORE: được sử dụng để bổ sung thêm thông tin. <br>\
-I prefer cycling rather than driving a car because it helps me keep fit. Also, it’s better for the environment and it’s also cheaper!<br>\
+He's done very badly in his exams, so needless to say, He won't get into university this year.<br>\
+ALSO, ON TOP OF THAT/PLUS/WHAT'S MORE: được sử dụng để bổ sung thêm thông tin. <br>\
+I prefer cycling rather than driving a car because it helps me keep fit. Also, it's better for the environment and it's also cheaper!<br>\
 <br>\
 PRACTICE<br>\
 DO YOU PREFER TALKING ON THE PHONE OR CHATTING ONLINE?<br>\
@@ -175,7 +175,7 @@ CHATTING ONLINE<br>\
 -immediate (adj) : ngay lập tức, immediately (adv)<br>\
 -get immediate responses<br>\
 -personal (adj): cá nhân, riêng tư<br>\
--hear the other person’s tone of voice: nghe được giọng điệu của người khác<br>\
+-hear the other person's tone of voice: nghe được giọng điệu của người khác<br>\
 -have a quicker exchange of ideas: trao đổi ý tưởng nhanh hơn<br>\
 -focused (adj): tập trung<br>\
 -have meaningful conversations: có những cuộc trò chuyện có ý nghĩa<br>\

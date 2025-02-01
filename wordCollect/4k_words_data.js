@@ -5,19 +5,25 @@ en:"afraid (a) /əˈfreɪd/ sợ<br>\
 actually (adv) /ˈæktʃuəli/ thực ra<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 angry (a)/ˈæŋɡri/ giận dữ<br>\
+daily (a) /ˈdeɪli/ hằng ngày<br>\
 arrive /əˈraɪv/ đến<br>\
 regret (v) /rɪˈɡret/ hối tiếc<br>\
-transportation  (n) /ˌtrænspərˈteɪʃn/ vận tải<br>\
+transportation (n) /trænspərˈteɪʃn/ vận tải<br>\
 stylish (a) /ˈstaɪlɪʃ/ sành điệu<br>\
 recognizable (a) /ˈrekəɡnaɪzəbl/ có thể nhận ra<br>\
 strenuous (a) /ˈstren.ju.əs/ kiệt quệ thể chất + tinh thần<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 capacity (n) /kəˈpæsəti/ dung tích<br>\
 perceive (v) /pərˈsiːv/ nhận thức<br>\
+hygiene (n) /ˈhaɪdʒiːn/ vệ sinh<br>\
+hygienic (a) /haɪˈdʒiːnɪk/ vệ sinh<br>\
+uncomfortable (a) /ʌnˈkʌmfərtəbl/ không thoải mái<br>\
+casually (adv) /ˈkæʒuəli/ ngẫu nhiên (informal way)<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 sporty (a) /ˈspɔːrti/ thích thể thao<br>\
-hunt (v) săn<br>\
+weekdays (adv) /ˈwiːkdeɪz/<br>\
+hunt (v) /hʌnt/ săn<br>\
 middle (prep) giữa<br>\
 extraordinary (a) đặc biệt, phi thường, lạ lùng<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
@@ -31,7 +37,7 @@ worsen (v) /ˈwɜːrsn/ trở nên xấu/tệ hơn<br>\
 established (a) uy tín, chứng thật<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
-worshipper (n) người sùng bái<br>\
+worshipper (n) /ˈwɜːrʃɪpər/ người sùng bái<br>\
 applause (n) tiếng vỗ tay<br>\
 investors (n) nhà đầu tư<br>\
 organise (v) /ˈɔːrɡənaɪz/ tổ chức<br>\
@@ -41,12 +47,12 @@ versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
 undeniable (a) /ʌndɪˈnaɪəbl/ không thế chối cãi<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
-peace (n) sự hòa bình<br>\
-dressing (n) mặc quần áo, nước xốt, gia vị, cách ăn mặc, băng vết thương<br>\
+peace (n) /piːs/ sự hòa bình<br>\
+dressing (n) /ˈdresɪŋ/ mặc quần áo, nước xốt, gia vị, cách ăn mặc, băng vết thương<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
-accumulation (n) sự tích tụ<br>\
+accumulation (n) /əˌkjuːmjəˈleɪʃn/ sự tích tụ<br>\
 exposured to (v) /məˈriːn/ tiếp xúc với<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 square (n,a) /skwer/ quảng trường (a) vuông<br>\
@@ -90,32 +96,30 @@ best (adj) super.(good, well)<br>\
 worse (adj) ss>(bad, badly)<br>\
 worst (adj) super.(bad, badly)<br>\
 project (n) /ˈprɑːdʒekt/ dự án<br>\
-scare sợ hãi<br>\
-secret bí mật<br>\
+scare (n,v) /sker/ sợ hãi<br>\
 shout /ʃaʊt/ la hét (at/for)<br>\
-smell mùi<br>\
+smell (n,v) /smel/ mùi<br>\
 terrible (a) khủng khiếp<br>\
-worse tệ hơn<br>\
+worse (a) /wɜːrs/ tệ hơn (comparative of bad)<br>\
 alien (n) /ˈeɪliən/ người ngoài HT<br>\
 chart (n) /tʃɑːrt/ biểu đồ<br>\
-comprehend hiểu<br>\
+comprehend (v) /kɑːmprɪˈhend/ hiểu<br>\
 describe (v) /dɪˈskraɪb/ mô tả<br>\
 fail (v) /feɪl/ thất bại<br>\
-grade cấp<br>\
+grade (n) /ɡreɪd/ cấp<br>\
 instead (adv) /ɪnˈsted/ thay thế<br>\
-library thư viện<br>\
-planet hành tinh<br>\
+planet (n) /ˈplænɪt/ hành tinh<br>\
 report (v) /rɪˈpɔːrt/ báo cáo<br>\
-several nhiều<br>\
+several (deter. pron) /ˈsevrəl/ >2 nhưng ko nhiều lắm<br>\
 resolve (v) /rɪˈzɑːlv/ giải quyết<br>\
 solve (v) /sɑːlv/ giải quyết<br>\
 suddenly (adv) /ˈsʌdənli/ đột nhiên<br>\
 suppose (v) /səˈpəʊz/ giả sử<br>\
-universe vũ trụ<br>\
+universe (n) /ˈjuːnɪvɜːrs/ vũ trụ<br>\
 reason (n,v) lý do, (v) suy đoán<br>\
 appropriate thích hợp<br>\
-avoid tránh<br>\
-behave hành xử<br>\
+avoid (v) /əˈvɔɪd/ tránh (+doing Sth)<br>\
+behave (v) /bɪˈheɪv/ hành xử<br>\
 concern (v) /kənˈsɜːrn/ quan tâm<br>\
 expect (v) /ɪkˈspekt/ mong đợi<br>\
 particularly (adv) /pərˈtɪkjələrli/ cụ thể<br>\
@@ -124,9 +128,9 @@ habit (n) /ˈhæbɪt/ thói quen<br>\
 instruct (v) /ɪnˈstrʌkt/ hướng dẫn<br>\
 issue (n) /ˈɪʃuː/ vấn đề<br>\
 none (pron) /nʌn/ không có<br>\
-positive tích cực<br>\
-punish trừng phạt<br>\
-represent đại diện<br>\
+positive (a) /ˈpɑːzətɪv/ tích cực<br>\
+punish (v) /ˈpʌnɪʃ/ trừng phạt<br>\
+represent (v) /ˌreprɪˈzent/ đại diện<br>\
 shake lắc<br>\
 spread (v) /spred/ lan truyền<br>\
 stroll (n,v) đi dạo<br>\
@@ -174,7 +178,7 @@ reach (v) /riːtʃ/ với tới<br>\
 survive (v) /sərˈvaɪv/ sống sót<br>\
 voice (n) /vɔɪs/ giọng nói<br>\
 wise (a) /waɪz/ khôn ngoan<br>\
-allow cho phép<br>\
+allow (v) /əˈlaʊ/ cho phép<br>\
 announce (v) /əˈnaʊns/ thông báo, nhắc<br>\
 beside bên cạnh<br>\
 taste (n,v) /teɪst/ mùi vị, ((v) )thưởng thức<br>\
@@ -182,8 +186,8 @@ challenge (n) /ˈtʃælɪndʒ/ thách thức<br>\
 claim yêu cầu<br>\
 contribute (v) /kənˈtrɪbjuːt/ góp phần<br>\
 divide (v) /dɪˈvaɪd/ phân chia/ra, chia rẽ<br>\
-expert chuyên gia<br>\
-famous nổi tiếng<br>\
+expert (n) /ˈekspɜːrt/ chuyên gia<br>\
+famous (n) /ˈfeɪməs/ nổi tiếng [big name]<br>\
 force (n,v) /fɔːrs/ lực lượng (v) đẩy, bắt ép<br>\
 harm (n) /hɑːrm/ gây hại<br>\
 against (prep, adv) /əˈɡenst/ chống lại<br>\
@@ -193,7 +197,7 @@ prince (n) /prɪns/ hoàng tử<br>\
 keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
 protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
 sense (n) /sens/ cảm giác, giác quan [sense of timing/fun/serenity<br>\
-sudden đột ngột<br>\
+sudden (a) /ˈsʌdn/ đột ngột<br>\
 therefore (adv) /ˈðerfɔːr/ do đó<br>\
 accept (v) /əkˈsept/ chấp nhận<br>\
 arrange (v) /əˈreɪndʒ/ sắp xếp<br>\
@@ -208,7 +212,7 @@ pattern (n) /ˈpætərn/ mẫu<br>\
 propose (v) /prəˈpoʊz/ đề xuất, cầu hôn<br>\
 purpose (n) /ˈpɜːrpəs/ mục đích<br>\
 require (v) /rɪˈkwaɪər/ yêu cầu<br>\
-single đơn lẻ<br>\
+single (a) /ˈsɪŋɡl/ đơn lẻ<br>\
 success (n) /səkˈses/ thành công<br>\
 tear xé<br>\
 against (prep) /əˈɡeɪnst/ chống lại<br>\
@@ -222,7 +226,6 @@ prevent (v) /prɪˈvent/ ngăn chặn [s.th/s.o from + N/V_ing]<br>\
 rock (n) /rɑːk/ đá<br>\
 save (v) lưu, tiết kiệm<br>\
 step bước<br>\
-still vẫn<br>\
 taste (n,v) /teɪst/ mùi vị, nếm , thưởng thức<br>\
 certain (a) /ˈsɜːrtn/ chắc chắn<br>\
 chance cơ hội<br>\
@@ -231,10 +234,11 @@ essential thiết yếu<br>\
 focus (v) /ˈfəʊkəs/ tập trung<br>\
 function (n) /ˈfʌŋkʃn/ chức năng<br>\
 sweat (n,v) /swet/ (đổ)mồ hôi, công việc vất vả<br>\
-guard bảo vệ<br>\
-image hình ảnh<br>\
-immediate ngay lập tức<br>\
-primary chính<br>\
+guard (n) /ɡɑːrd/ bảo vệ<br>\
+image (n) /ˈɪmɪdʒ/ hình ảnh<br>\
+imagination (n) /ɪˌmædʒɪˈneɪʃn/ trí tưởng tượng<br>\
+immediate (a) /ɪˈmiːdiət/ ngay lập tức<br>\
+primary (a) /ˈpraɪmeri/ chính<br>\
 remain vẫn<br>\
 uncommon (a) /ʌnˈkɑːmən/ không phổ biến<br>\
 rare (a) /rer/ hiếm, không phổ biến<br>\
@@ -342,44 +346,42 @@ observe (v) /əbˈzɜːrv/ quan sát<br>\
 opportunity cơ hội<br>\
 prize (n) /praɪz/ giải thưởng<br>\
 realize (v) /ˈriːəlaɪz/ nhận ra<br>\
-respond phản ứng<br>\
-risk rủi ro<br>\
-wonder tự hỏi<br>\
-academy học viện<br>\
+respond (v) /rɪˈspɑːnd/ phản ứng<br>\
+risk (n) /rɪsk/ rủi ro<br>\
+wonder (v) /ˈwʌndər/ tự hỏi<br>\
+academy (n) /əˈkædəmi/ học viện<br>\
 ancient cổ đại<br>\
-century thế kỷ<br>\
-clue manh mối<br>\
-concert buổi hòa nhạc<br>\
-county quận<br>\
+century (n) /ˈsentʃəri/ thế kỷ<br>\
+clue (n) /kluː/ manh mối<br>\
+concert (n) /ˈkɑːnsərt/  buổi hòa nhạc<br>\
+county (n) /ˈkaʊnti/ quận<br>\
 dictionary (n) /ˈdɪkʃəneri/ từ điển<br>\
-exist tồn tại<br>\
+exist (v) /ɪɡˈzɪst/ tồn tại<br>\
 flat phẳng<br>\
-gentleman quý ông<br>\
-maybe có thể<br>\
-officer sĩ quan<br>\
-original bản gốc<br>\
-pound pound<br>\
-process quy trình<br>\
-publish xuất bản<br>\
+gentleman (n) /ˈdʒentlmən/ quý ông<br>\
+officer (n) /ˈɑːfɪsər/ sĩ quan<br>\
+original /əˈrɪdʒənl/ bản gốc<br>\
+pound /paʊnd/ pound<br>\
+process (n) /ˈprɑːses/ quy trình<br>\
+publish (v) /ˈpʌblɪʃ/ xuất bản<br>\
 theater sân khấu<br>\
 wealth (n) /welθ/ sự giàu có<br>\
-available có sẵn<br>\
+available (a) /əˈveɪləbl/ có sẵn<br>\
 beat đánh bại<br>\
-bright sáng<br>\
 fumes /fju:mz/ (n) khói<br>\
-celebrate ăn mừng<br>\
+celebrate (v) /ˈselɪbreɪt/ ăn mừng<br>\
 activate /ˈæktɪveɪt/ (v) kích hoạt<br>\
 determine /di't3:min/ (v) xác định<br>\
 bathtub /ˈbæθtʌb/ (n) bồn tắm<br>\
 fair (a) /feə(r)/ công bằng<br>\
 flow (n) /fləʊ/ dòng chảy<br>\
-forward tiến lên<br>\
+forward (adv) /ˈfɔːrwərd/ tiến lên<br>\
 puddle (n) /ˈpʌdl/ vũng nước<br>\
 response (n) /rɪˈspɑːns/ phản ứng<br>\
 season (n) /ˈsiːzn/ mùa<br>\
 solution (n) /səˈluːʃn/ giải pháp<br>\
-waste chất thải<br>\
-whether cho dù<br>\
+waste (n) /weɪst/ chất thải<br>\
+whether (conj) /ˈweðər/ cho dù<br>\
 argue (v) /ˈɑːrɡjuː/ tranh luận<br>\
 crowd (n) /kraʊd/ đám đông<br>\
 depend (v) /dɪˈpend/ phụ thuộc<br>\
@@ -389,32 +391,29 @@ exact (a) /ɪɡˈzækt/ chính xác<br>\
 gather (v) /ˈɡæðər/ tập hợp<br>\
 indicate (v) /ˈɪndɪkeɪt/ chỉ ra<br>\
 item (n) /ˈaɪtəm/ đồ dùng, món đồ, mục<br>\
-offer cung cấp<br>\
-product sản phẩm<br>\
-property tài sản<br>\
+offer (v) /ˈɔːfər/ cung cấp<br>\
+product (n) /ˈprɑːdʌkt/ sản phẩm<br>\
+property (n) /ˈprɑːpərti/ tài sản (= asset)<br>\
 purchase (n,v) /ˈpɜːrtʃəs/ việc mua, mua<br>\
-select lựa chọn<br>\
-tool công cụ<br>\
+tool (n) /tuːl/ công cụ<br>\
 alive (a) /əˈlaɪv/ sống<br>\
-bone xương<br>\
-bother làm phiền<br>\
-conclusion kết luận<br>\
-doubt nghi ngờ<br>\
+bone (n) /bəʊn/ xương<br>\
+bother (v) /ˈbɑːðər/ làm phiền<br>\
+conclusion (n) /kənˈkluːʒn/ kết luận<br>\
+doubt (n) /daʊt/ nghi ngờ<br>\
 explore khám phá<br>\
-foreign nước ngoài<br>\
-glad vui mừng<br>\
+foreign (a) /ˈfɔːrən/ nước ngoài<br>\
 however tuy nhiên<br>\
 injustice bất công<br>\
-international quốc tế<br>\
-lawyer luật sư<br>\
+international (a) /ɪntərˈnæʃnəl/ quốc tế<br>\
+lawyer (n) /ˈlɔɪər/ luật sư<br>\
 mention (n,v) /ˈmenʃn/ đề cập<br>\
-policy chính sách<br>\
+failure (n) /ˈfeɪljər/ sự thất bại,người bất tài<br>\
+policy (n) /ˈpɑːləsi/ chính sách<br>\
 dial (v,n) quay số, mặt đồng hồ, la bàn<br>\
-social xã hội<br>\
-speech bài phát biểu<br>\
+social (a) /ˈsəʊʃl/ xã hội<br>\
+speech (n) /spiːtʃ/ bài phát biểu<br>\
 toward hướng tới<br>\
-wood gỗ<br>\
-achieve đạt được<br>\
 advise khuyên bảo<br>\
 already đã<br>\
 basic cơ bản<br>\
@@ -758,10 +757,11 @@ volcano broad núi lửa rộng<br>\
 bush bụi<br>\
 capable có khả năng<br>\
 cheat gian lận<br>\
-concentrate tập trung<br>\
+concentrate (v) /ˈkɑːnsntreɪt/ tập trung (+on)<br>\
 conclude kết luận<br>\
 considerable đáng kể<br>\
 definite (a) /ˈdefɪnət/ xác định<br>\
+mean (n,a,v) v. nghĩa là<br>\
 convey truyền đạt<br>\
 delight thích thú<br>\
 destination điểm đến<br>\
@@ -773,11 +773,11 @@ shadow bóng tối<br>\
 succeed thành công<br>\
 suspect nghi ngờ<br>\
 valley admire thung lũng ngưỡng mộ<br>\
+achievement (n) /əˈtʃiːvmənt/ thành tích<br>\
 aid trợ giúp<br>\
-attempt cố gắng<br>\
 authority quyền lực<br>\
-capital vốn<br>\
-cooperate hợp tác<br>\
+capital (n) /ˈkæpɪtl/ thủ đô, vốn, chữ hoa<br>\
+cooperate (v) /kəʊˈɑːpəreɪt/ hợp tác<br>\
 cliche (n) /kliːˈʃeɪ/ sáo rỗng<br>\
 inhibit (v) /ɪnˈhɪbɪt/ ngăn cản<br>\
 defend (v) bảo vệ<br>\

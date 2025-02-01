@@ -38,7 +38,7 @@ stiff (v) /stɪf/ cứng nhắc, cứng đầu, bướng<br>\
 unconscious (a) /ʌnˈkɑːnʃəs/ vô thức, không còn tri giác<br>\
 achieve /a'tJi:v/ (v) đạt được<br>\
 annual /'renjual/ (a) hàng năm<br>\
-attempt /a'tempt/ (v) cố gắng<br>\
+attempt (n,v) /a'tempt/ cố gắng<br>\
 booklet /'buklit/ (n) tập sách<br>\
 campus /'krempas/ (n) khuôn viên trường<br>\
 charge /tJa:d3/ (n,v) điện tích<br>\

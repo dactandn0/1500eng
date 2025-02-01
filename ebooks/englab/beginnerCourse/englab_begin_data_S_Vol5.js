@@ -148,7 +148,7 @@ Vâng, ý tôi là ai mà không thấy khó chứ? Thật khó để làm một
 	en:"1) What kinds of clothes do you usually wear?<br>\
 Casual clothes like jeans and T-shirts are my best choice in the wardrobe. Putting on these clothes makes me comfortable. It's also easy to mix and match and I still look very stylish.<br>\
 2) Are there any colors you do not like to wear?<br>\
-I try to avoid wearing white clothes since they tend to get dirty easily, even a small stain can also be easily recognizable. Washing it up and removing the dirt is much harder too.<br>\
+I try to avoid wearing white clothes since they tend to get dirty easily, even a small stain can also be easily recognizable. Washing it up and removing the dirt is much harder.<br>\
 3) Do you wear the same kind of clothes on weekends and weekdays?<br>\
 Not really. During weekdays when being at work, I have to wear a uniform which is a white shirt and a black skirt. It fits me too closely so I feel a bit uncomfortable. Well, weekends are the time for me to put off my boring uniform and dress casually."
 	,vi:"1) Bạn thường mặc những loại quần áo nào?<br>\
@@ -158,7 +158,7 @@ Tôi cố gắng tránh mặc quần áo màu trắng vì chúng dễ bị bẩn
 3) Bạn có mặc cùng một loại quần áo vào cuối tuần và ngày thường không?<br>\
 Không hẳn vậy. Vào ngày thường khi đi làm, tôi phải mặc đồng phục là áo sơ mi trắng và váy đen. Chúng quá bó nên tôi cảm thấy hơi khó chịu. Vâng, cuối tuần là thời gian để tôi cởi bỏ bộ đồng phục nhàm chán và ăn mặc giản dị."
 	,voca:"wardrobe,mix and match,stylish,recognizable,stain"
-	,note:"Wardrobe /ˈwɔː.drəʊb/: tủ quần áo Ví dụ: He hung his suit in the wardrobe. |Mix and match /mɪks ænd mætʃ/: phối đồ, quần áo Ví dụ: Alice learned to mix and match her skirts, blous es, and sweaters |To be stylish /ˈstaɪ.lɪʃ/: kiểu cách, hợp thời trang Ví dụ: The film's direction is subtle and stylish. |Stain /steɪn/: Vết bẩn, vết ố Ví dụ: You can remove a red wine stain from a carpet by sprinkling salt over it. |To be recognizable /ˈrek.əɡ.naɪ.zə.bəl/ : có thể nhận ra được Ví dụ: The cartoon character was instantly recogniz able to millions of children. |To put on: mặc (quần áo) Ví dụ: If I'm having a bad hair day, I just put on a hat. |Put off: cởi bỏ (quần áo) Ví dụ: Mr. Nirenberg was put off."
+	,note:"Wardrobe /ˈwɔː.drəʊb/: tủ quần áo Ví dụ: He hung his suit in the wardrobe.|Mix and match /mɪks ænd mætʃ/: phối đồ, quần áo Ví dụ: Alice learned to mix and match her skirts, blous es, and sweaters |To be stylish /ˈstaɪ.lɪʃ/: kiểu cách, hợp thời trang Ví dụ: The film's direction is subtle and stylish.|Stain /steɪn/: Vết bẩn, vết ố Ví dụ: You can remove a red wine stain from a carpet by sprinkling salt over it.|To be recognizable /ˈrek.əɡ.naɪ.zə.bəl/ : có thể nhận ra được Ví dụ: The cartoon character was instantly recogniz able to millions of children.|To put on: mặc (quần áo) Ví dụ: If I'm having a bad hair day, I just put on a hat.|Put off: cởi bỏ (quần áo) Ví dụ: Mr. Nirenberg was put off."
 },{
 	track:"1.10",
 	title:"Trying new activities",
@@ -175,7 +175,7 @@ Tôi có xu hướng do dự một chút khi đó. Tôi nghĩ rằng tôi sợ t
 3) Bạn thích thử một hoạt động mới một mình hay với bạn bè?<br>\
 Vâng, ý tôi là ai mà không thích chứ? Thật khó để làm một việc gì đó vừa cẩn thận vừa nhanh chóng, phải không? Nếu tôi ở trong hoàn cảnh này, chắc chắn tôi sẽ mắc lỗi."
 	,voca:"hesitate,attempt,curious,eager"
-	,note:"To give it a go: thử Ví dụ: I might give it a go |To be curious /ˈkjʊə.ri.əs/: tò mò, muốn tìm hiểu Ví dụ: I was curious to know what would happen next. |To be eager  /ˈiː.ɡər/ (to do something): háo hức, mong muốn làm một việc gì đó Ví dụ: She was eager to help. |To hesitate /ˈhez.ɪ.teɪt/: chần chừ, do dự Ví dụ: She hesitated slightly before answering the detective's question. |Attempt /əˈtempt/: sự cố gắng, thử làm một việc gì đó Ví dụ: He attempted a joke, but no one laughed. |A sense of achievement: Cảm giác bản thân đạt được điều gì đó Sense /sens/ : Cảm giác Achievement /əˈtʃiːv.mənt/ : thành tựu Ví dụ: It gives you a sense of achievement if you actual ly make it to the end of a very long book."
+	,note:"To give it a go: thử Ví dụ: I might give it a go |To be curious /ˈkjʊə.ri.əs/: tò mò, muốn tìm hiểu Ví dụ: I was curious to know what would happen next.|To be eager  /ˈiː.ɡər/ (to do something): háo hức, mong muốn làm một việc gì đó Ví dụ: She was eager to help.|To hesitate /ˈhez.ɪ.teɪt/: chần chừ, do dự Ví dụ: She hesitated slightly before answering the detective's question.|Attempt /əˈtempt/: sự cố gắng, thử làm một việc gì đó Ví dụ: He attempted a joke, but no one laughed.|A sense of achievement: Cảm giác bản thân đạt được điều gì đó Sense /sens/ : Cảm giác Achievement /əˈtʃiːv.mənt/ : thành tựu Ví dụ: It gives you a sense of achievement if you actual ly make it to the end of a very long book."
 },{
 	track:"1.11",
 	title:"Weekends",
@@ -192,7 +192,7 @@ Như tôi đã nói, tôi thích đi chơi với bạn bè vào thứ Bảy và 
 3) Bạn có nghĩ rằng có đủ những điều thú vị để làm ở thành phố của bạn vào cuối tuần không?<br>\
 Chắc chắn là có. Ở HCM, có rất nhiều lựa chọn giải trí và địa điểm để mọi người lựa chọn, từ trung tâm mua sắm, rạp chiếu phim đến chợ đêm, quán bar, vvv"
 	,voca:"an avid movie-goer,gossip,recreational options"
-	,note:"An avid movie-goer: một người thích đi xem phim Avid /ˈæv.ɪd/ : Ham mê Movie-goer /ˈmuː.viˌɡəʊ.ər/ : Người xem phim Ví dụ: His mother was a chemist and an avid movie goer. |To gossip /ˈɡɒs.ɪp/ : Nói chuyện phiếm Ví dụ: Jane and Lyn sat in the kitchen having a good gossip about their friends. |Recreational options: Lựa chọn để giải trí Recreational /ˌrek.riˈeɪ.ʃən.əl/ : giải trí Options /ˈɒp.ʃən/ : Lựa chọn Ví dụ: Recreational options are available in Garrison itself."
+	,note:"An avid movie-goer: một người thích đi xem phim Avid /ˈæv.ɪd/ : Ham mê Movie-goer /ˈmuː.viˌɡəʊ.ər/ : Người xem phim Ví dụ: His mother was a chemist and an avid movie goer.|To gossip /ˈɡɒs.ɪp/ : Nói chuyện phiếm Ví dụ: Jane and Lyn sat in the kitchen having a good gossip about their friends.|Recreational options: Lựa chọn để giải trí Recreational /ˌrek.riˈeɪ.ʃən.əl/ : giải trí Options /ˈɒp.ʃən/ : Lựa chọn Ví dụ: Recreational options are available in Garrison itself."
 },{
 	track:"1.12",
 	title:"Age/Different stages in life",
@@ -489,7 +489,7 @@ I don't think so. There are tons of different means of transport to assist peopl
 3) Do you think people will take a walk more often or not?<br>\
 Probably no. Like I have said, unless people learn to balance between work and life, it would be hard for them to spare any time for walking. Besides, people nowadays would prefer staying indoors and going to the gym than going for a walk."
 	,voca:"means of transport,balance between work and life,spare any time"
-	,note:"Means of transport /miːnz əv ˈtræn.spɔːt/: phương tiện giao thông Ví dụ: The means of transport was oddly appropriate |A tight schedule: lịch trình dày đặc Schedule /ˈʃedʒ.uːl/ : lịch trình Tight /taɪt/ : eo hẹp Ví dụ: We had a tight schedule. |To balance between work and life: cân bằng giữa công việc và cuộc sống Balance  /ˈbæl.əns/ : Cân bằng Work /wɜːk/ : công việc Life /laɪf/ : cuộc sống Ví dụ: the balance between work and life has become central to progressive family policy. |To spare any time /speər ˈen.i  taɪm/ : dành thời gian làm việc gì Ví dụ: I could not spare any time for work."
+	,note:"Means of transport /miːnz əv ˈtræn.spɔːt/: phương tiện giao thông Ví dụ: The means of transport was oddly appropriate |A tight schedule: lịch trình dày đặc Schedule /ˈʃedʒ.uːl/ : lịch trình Tight /taɪt/ : eo hẹp Ví dụ: We had a tight schedule.|To balance between work and life: cân bằng giữa công việc và cuộc sống Balance  /ˈbæl.əns/ : Cân bằng Work /wɜːk/ : công việc Life /laɪf/ : cuộc sống Ví dụ: the balance between work and life has become central to progressive family policy.|To spare any time /speər ˈen.i  taɪm/ : dành thời gian làm việc gì Ví dụ: I could not spare any time for work."
 },{
 	track:"1.27",
 	title:"Sleep",
@@ -510,7 +510,7 @@ Tôi sẽ trả lời là không. Tôi thường cảm thấy kiệt sức vào 
 4. Thói quen ngủ của bạn đã thay đổi như thế nào kể từ khi bạn còn nhỏ?<br>\
 Vâng, khi tôi còn nhỏ, tôi ngủ như một khúc gỗ. Bố mẹ tôi luôn gặp khó khăn khi đánh thức tôi dậy. Tuy nhiên, do căng thẳng, tôi bị mất ngủ và hầu như không thể ngủ vào ban đêm."
 	,voca:"overwhelming workload,recharge your batteries,refresh my mind, hit the restart button,exhausted,sleep like a log,insomnia"
-	,note:"overwhelming workload: quá tải công việc Ví dụ: There’d be so much work, an overwhelming workload, but we liked it when it was busy. |To recharge your batteries (idiom) /ˌriːˈtʃɑːdʒ/ /jɔːr/ / ˈbæt.ər.i/: nạp năng lượng Ví dụ: She took a trip to the South of France to recharge her batteries. |To refresh my mind: thư giãn đầu óc Refresh  /rɪˈfreʃ/ : thư giãn Mind /maɪnd/ : tâm trí, đầu óc Ví dụ:  I will take a couple weeks off to refresh my mind and body |To hit the restart button: khởi động lại đầu óc Ví dụ: Hit the restart button and find your thing that gives you joy every day |To be exhausted /ɪɡˈzɔː.stɪd/: kiệt sức Ví dụ: By the time they reached the summit they were exhausted. |To sleep like a log: ngủ rất say Log /lɒɡ/ : Khúc gỗ Ví dụ: I went to bed early and slept like a log. |Insomnia /ɪnˈsɒm.ni.ə/: mất ngủ Ví dụ: Holly suffered from insomnia caused by stress at work."
+	,note:"overwhelming workload: quá tải công việc Ví dụ: There’d be so much work, an overwhelming workload, but we liked it when it was busy.|To recharge your batteries (idiom) /ˌriːˈtʃɑːdʒ/ /jɔːr/ / ˈbæt.ər.i/: nạp năng lượng Ví dụ: She took a trip to the South of France to recharge her batteries.|To refresh my mind: thư giãn đầu óc Refresh  /rɪˈfreʃ/ : thư giãn Mind /maɪnd/ : tâm trí, đầu óc Ví dụ:  I will take a couple weeks off to refresh my mind and body |To hit the restart button: khởi động lại đầu óc Ví dụ: Hit the restart button and find your thing that gives you joy every day |To be exhausted /ɪɡˈzɔː.stɪd/: kiệt sức Ví dụ: By the time they reached the summit they were exhausted.|To sleep like a log: ngủ rất say Log /lɒɡ/ : Khúc gỗ Ví dụ: I went to bed early and slept like a log.|Insomnia /ɪnˈsɒm.ni.ə/: mất ngủ Ví dụ: Holly suffered from insomnia caused by stress at work."
 },{
 	track:"1.28",
 	title:"Cooking",
@@ -531,7 +531,7 @@ chắc chắn rồi, vì nấu ăn được coi là kỹ năng sinh tồn mà m�
 4. Bạn có học nấu ăn khi còn nhỏ không? / Ai đã dạy bạn nấu ăn?<br>\
 Thực ra là không. Bố mẹ tôi luôn bận rộn với công việc, nên việc nấu ăn, chứ đừng nói đến việc dạy tôi nấu ăn, gần như là điều không thể đối với họ. Tuy nhiên, tôi thường dành nhiều thời gian ở nhà ông bà vào mùa hè nên tôi đã học được cách tự nấu một số bữa ăn đơn giản từ bà."
 	,voca:"have a passion for,home-cooked food,processed food,season,kitchen equipment,a survival skill,occupied with work,greasy,hygienic,a nice change of atmosphere"
-	,note:"To have a passion for: có niềm đam mê với cái gì đó Ví dụ: Anton has a passion for science fiction. |Home-cooked food: đồ ăn tự nấu Cook /kʊk/ : nấu ăn Ví dụ: At university you have no home-cooked food. |Processed food: đồ ăn đã qua chế biến Processed /ˈprəʊ.sest/ : được chế biến Food /fuːd/ : thức ăn Ví dụ: He didn’t smoke or drink or eat processed food |Season (verb) /ˈsiː.zən/: nêm gia vị Ví dụ: Offer seasonings on the side, so that each person can season the meal to taste. |Kitchen equipment: dụng cụ nhà bếp |A survival skill: kỹ năng sống còn Survival  /səˈvaɪ.vəl/ : Sự sống con Skill  /skɪl/ : kỹ năng Ví dụ: It’s a survival skill they’ve developed over millennia. |To be occupied with work: bận rộn với công việc Occupied /ˈɑk·jəˌpɑɪd/ : bận rộn Ví dụ: Organized sports can keep teenagers occupied. |To be greasy /ˈɡriː.si/ : có nhiều dầu mỡ Ví dụ: These French fries are too greasy. |To be hygienic /haɪˈdʒiː.nɪk/ : vệ sinh Ví dụ: It isn’t hygienic to let animals sit on the dining table. |A nice change of atmosphere: đổi gió Change /tʃeɪndʒ/ : thay đổi Atmosphere /ˈæt.mə.sfɪər/ : Không khí Ví dụ:  All we want is a nice change of atmosphere."
+	,note:"To have a passion for: có niềm đam mê với cái gì đó Ví dụ: Anton has a passion for science fiction.|Home-cooked food: đồ ăn tự nấu Cook /kʊk/ : nấu ăn Ví dụ: At university you have no home-cooked food.|Processed food: đồ ăn đã qua chế biến Processed /ˈprəʊ.sest/ : được chế biến Food /fuːd/ : thức ăn Ví dụ: He didn’t smoke or drink or eat processed food |Season (verb) /ˈsiː.zən/: nêm gia vị Ví dụ: Offer seasonings on the side, so that each person can season the meal to taste.|Kitchen equipment: dụng cụ nhà bếp |A survival skill: kỹ năng sống còn Survival  /səˈvaɪ.vəl/ : Sự sống con Skill  /skɪl/ : kỹ năng Ví dụ: It’s a survival skill they’ve developed over millennia.|To be occupied with work: bận rộn với công việc Occupied /ˈɑk·jəˌpɑɪd/ : bận rộn Ví dụ: Organized sports can keep teenagers occupied.|To be greasy /ˈɡriː.si/ : có nhiều dầu mỡ Ví dụ: These French fries are too greasy.|To be hygienic /haɪˈdʒiː.nɪk/ : vệ sinh Ví dụ: It isn’t hygienic to let animals sit on the dining table.|A nice change of atmosphere: đổi gió Change /tʃeɪndʒ/ : thay đổi Atmosphere /ˈæt.mə.sfɪər/ : Không khí Ví dụ:  All we want is a nice change of atmosphere."
 },{
 	track:"1.29",
 	title:"Drink water",
@@ -543,7 +543,7 @@ As a matter of fact, unfortunately tap water is full of chemicals that are harmf
 Tôi uống rất nhiều nước mỗi ngày. Có lẽ khoảng 2-3 lít một ngày, tùy thuộc vào thời tiết nóng như thế nào hoặc tôi đã tập thể dục nhiều như thế nào vào ngày hôm đó.<br>\
 2) Bạn uống nước đóng chai hay nước từ máy lọc nước? / Bạn thích uống loại nước nào?<br>\
 Thật ra, thật không may, nước máy chứa đầy hóa chất có hại cho sức khỏe, vì vậy tôi không bao giờ uống nước máy. Tôi chỉ uống nước lọc đựng trong các thùng nhựa lớn, đã được làm sạch nên hợp vệ sinh hơn nhiều."
-	,voca:"harmful to your health"
+	,voca:"harmful to your health,tap water"
 	,note:"To be harmful to your health: gây hại cho sức khỏe. Ví dụ: Some diets that may help you lose weight may be harmful to your health over time."
 },{
 	track:"1.30",
@@ -551,7 +551,7 @@ Thật ra, thật không may, nước máy chứa đầy hóa chất có hại c
 	en:"1) Why do people go fishing?<br>\
 Well, the reason that springs to mind is that people could blow off some steam and get away from the hustle and bustle of the city by going fishing in the countryside.<br>\
 2) Do you like eating fish?<br>\
-Certainly yes! It is a nutrient-rich food for a healthy diet. One of the best ways to cook fish is to braise it with chilly.<br>\
+Certainly yes! It is a nutrient-rich food for a healthy diet. One of the best ways to cook fish is to braise it with chilli.<br>\
 3) Where can you see fish?<br>\
 Pretty much at every river, lake in parks or the ocean. Besides, fish are sold in most markets and supermarkets in the city."
 	,vi:"1) Tại sao mọi người đi câu cá?<br>\
@@ -560,7 +560,7 @@ Vâng, lý do xuất hiện trong đầu tôi là mọi người có thể xả 
 Chắc chắn là có! Đây là thực phẩm giàu dinh dưỡng cho chế độ ăn uống lành mạnh. Một trong những cách nấu cá tốt nhất là om với ớt.<br>\
 3) Bạn có thể nhìn thấy cá ở đâu?<br>\
 Hầu như ở mọi con sông, hồ trong công viên hoặc đại dương. Bên cạnh đó, cá được bán ở hầu hết các chợ và siêu thị trong thành phố."
-	,voca:"nutrient-rich,healthy diet"
+	,voca:"nutrient-rich,healthy diet,hustle and bustle"
 	,note:"To be nutrient-rich /ˈnjuː.tri.ənt/ /rɪtʃ/ : giàu dinh dưỡng Ví dụ: Pregnant women especially need nutrient-rich food|A healthy diet: chế độ ăn lành mạnh Healthy /ˈhel.θi/ : lành mạnh Diet /ˈdaɪ.ət/ : chế độ ăn Ví dụ:  We discussed a healthy diet and exercise."
 }
 

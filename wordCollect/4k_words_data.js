@@ -6,7 +6,11 @@ actually (adv) /ˈæktʃuəli/ thực ra<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 angry (a)/ˈæŋɡri/ giận dữ<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
-arrive /əˈraɪv/ đến<br>\
+despite (prep) /dɪˈspaɪt/ cho dù<br>\
+On top of that (idiom) hơn thế<br>\
+adult (n) /ˈædʌlt/ người lớn<br>\
+arrive (v) /əˈraɪv/ đến<br>\
+rebellious (a) /rɪˈbeljəs/ nổi loạn, bạo động<br>\
 regret (v) /rɪˈɡret/ hối tiếc<br>\
 transportation (n) /trænspərˈteɪʃn/ vận tải<br>\
 stylish (a) /ˈstaɪlɪʃ/ sành điệu<br>\
@@ -418,7 +422,7 @@ advise khuyên bảo<br>\
 already đã<br>\
 basic cơ bản<br>\
 bit một chút<br>\
-consider (v) /kənˈsɪdər/ cân nhắc [take into account]<br>\
+consider (v) /kənˈsɪdər/ cân nhắc, được xem [take into account]<br>\
 destroy phá hủy<br>\
 entertain giải trí<br>\
 extra thêm<br>\

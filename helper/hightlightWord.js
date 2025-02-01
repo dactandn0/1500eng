@@ -47,6 +47,23 @@ function IRR_ExtractWords(english)
 		// remove phraVerbs in Words
 		words = words.filter(function(ele) { return ele !== word && ele !== prep && ele !== prep2})
 	}
+
+	// adv of degree + special
+	regex = new RegExp(`\\b(${aod_Regex})\\b` , 'gi')
+	var aodWords = english.match(regex);
+	aodWords = Helper_ArrRemoveDup(aodWords)
+	if (aodWords)
+	{
+		for (var i = 0; i < aodWords.length; i++) 
+		{
+			var aodArr = aodWords[i].split(' ');
+			words = words.filter(function(ele) 
+			{ 
+				return aodArr.length == 1 || !aodArr.includes(ele)
+			})
+		}
+	}
+
 	// dont ngClick with she,he,it if graph has: she's, he's...
 	wordRutgons = words.filter(function(ele) { return ele.indexOf("'") !== -1 })
 	var re = []
@@ -67,14 +84,8 @@ function IRR_ExtractWords(english)
 	//console.log(phraVerbs)
 	//console.log(re)
 
-	// adv of degree
-	regex = new RegExp(`\\b(${aod_Regex})\\b` , 'gi')
-	var aodWords = english.match(regex);
-	aodWords = Helper_ArrRemoveDup(aodWords)
-//	console.log(aodWords)
-
 	return  {
-		'aodWords':aodWords,
+		'specialWords':aodWords,
 		'words':re,
 		'phraVerbs':phraVerbs
 	}

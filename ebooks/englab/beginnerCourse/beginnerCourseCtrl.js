@@ -18,7 +18,7 @@ $scope.stories = ENGLAB_BEGIN_DATA_R;				// def
 $scope.titles = showStoryTitles($scope.stories);  	// def
 makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R) 		// def
 
-ielt_formChange = function (num) {
+ielt_formChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
 	$rootScope.vocaEbook = null;
 	$scope.ielt_form = num;
@@ -36,19 +36,20 @@ ielt_formChange = function (num) {
 		$scope.fetchStory(loadListenIdx, false);
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_L)
 	}
-
 	if (num===4) 
 	{
 		$scope.stories = doMenu_S_VOL5().concat(ENGLAB_BEGIN_DATA_S_Vol5);
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_S_Vol5)
 		var loadListenIdx = Helper_loadInt('speakSameVol5_unit', 0);
 		$scope.fetchStory(loadListenIdx, false);
-
 	}
 
 	$scope.acc = -1;
 	$scope.titles = showStoryTitles($scope.stories);
-	$scope.$apply();
+
+	if (!isLoadData) $scope.$apply();
+
+	Helper_saveDB("ENGLAB_BEGIN_type", num);
 }
 
 $scope.acc_isShow = function (id) {
@@ -71,14 +72,6 @@ $scope.examTypeCss = function (idx) {
 	var type = Number(story.examType);
 	if (type===0) return {color: 'purple'}  //vi 2 En
 }
-
-$scope.loadData = function () {
-
-};
-
-$scope.$on('$viewContentLoaded', function(){
-	$scope.loadData();
-});
 
 $scope.createAudioSrc = function() {
 	if ($scope.ielt_form === 3)
@@ -142,7 +135,17 @@ function doMenu_Listening()
 	return r
 }
 
+$scope.loadData = function () {
+	var cd = Helper_loadInt('ENGLAB_BEGIN_type', 0);
+	console.log(cd)
+	ielt_formChange(cd, true);
+	$scope.ielt_form = cd;
+	document.beg_ielt_bForm.ielt_form.value = cd;
+};
 
+$scope.$on('$viewContentLoaded', function(){
+	$scope.loadData();
+});
 
 
 });

@@ -18,6 +18,10 @@ const SynonymData = [
 	type:"a",
 	mean:"thô, chưa chế biến"
 },{
+	words:"abroad (adv)|overseas",
+	type:"a",
+	mean:"ở nước ngoài"
+},{
 	words:"teenager|youth /juːθ/",
 	type:"n",
 	mean:"thanh thiếu niên"
@@ -172,7 +176,7 @@ const SynonymData = [
 	mean:"đổ lỗi"
 },
 {
-	words:"opinion /əˈpɪnjən/|perspective /pərˈspektɪv/|standpoint /ˈstændpɔɪnt/",
+	words:"opinion /əˈpɪnjən/|perspective /pərˈspektɪv/|standpoint /ˈstændpɔɪnt/|view",
 	type:"n",
 	mean:"quan điểm"
 },

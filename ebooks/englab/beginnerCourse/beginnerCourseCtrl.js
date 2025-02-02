@@ -137,7 +137,6 @@ function doMenu_Listening()
 
 $scope.loadData = function () {
 	var cd = Helper_loadInt('ENGLAB_BEGIN_type', 0);
-	console.log(cd)
 	ielt_formChange(cd, true);
 	$scope.ielt_form = cd;
 	document.beg_ielt_bForm.ielt_form.value = cd;

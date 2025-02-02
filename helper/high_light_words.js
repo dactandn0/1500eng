@@ -1,8 +1,16 @@
 
 
-function IRR_ExtractWords(english) 
-{
-	if (!english || english.trim().length === 0) return {'words':'','phraVerbs':''}
+function IRR_ExtractWords(story) 
+{	
+	var english = story.en
+	var voca = story.voca
+
+	if (!english || english.trim().length === 0) return {
+		words:''
+		,phraVerbs:''
+		,specialWords:''
+	}
+
 	var phraVerbs = []
 
 	for (var i = 0; i < PHRASAL_VERB_DATA.length; i++) {
@@ -21,6 +29,7 @@ function IRR_ExtractWords(english)
 		if (matches)
 		phraVerbs = phraVerbs.concat(matches)
 	}
+
 	var phraRegex = ''
 	for (var i = 0; i < phraVerbs.length; i++) {
 		var ele = phraVerbs[i]
@@ -30,13 +39,17 @@ function IRR_ExtractWords(english)
 	phraRegex = phraRegex.substring(0, phraRegex.length - 1)   //remove last '|'
 	if (phraRegex!=='') phraRegex = phraRegex + '|'
 
-	var aod_Regex = ADV_OF_DEGREE.replaceAll(',', '|')
+	// SPECIAL_WORDS is decared in form_of_word.js
+	var specialWord_Regex = SPECIAL_WORDS.replaceAll(',', '|')
 
-	var regex = new RegExp(`\\b(${phraRegex}${aod_Regex}|\\w+'*\\w*)\\b` , 'gi')
+	// Speech all long voca_note
+	var voca_Regex = voca.replaceAll(',', '|')
+
+	var regex = new RegExp(`\\b(${phraRegex}${specialWord_Regex}|${voca_Regex}|\\w+'*\\w*)\\b` , 'gi')
 	var words = english.match(regex);   // include phraVerbs and other
 
 	words = Helper_ArrRemoveDup(words)
-//	console.log(words)
+	//console.log(words)
 
 	for (var i = 0; i < phraVerbs.length; i++) {
 		var www = phraVerbs[i].split(' ')
@@ -49,24 +62,51 @@ function IRR_ExtractWords(english)
 	}
 
 	// adv of degree + special
-	regex = new RegExp(`\\b(${aod_Regex})\\b` , 'gi')
-	var aodWords = english.match(regex);
-	aodWords = Helper_ArrRemoveDup(aodWords)
-	if (aodWords)
+	regex = new RegExp(`\\b(${specialWord_Regex})\\b` , 'gi')
+	var specialWords = english.match(regex);
+	specialWords = Helper_ArrRemoveDup(specialWords)
+
+	// remove out of words
+	if (specialWords)
 	{
-		for (var i = 0; i < aodWords.length; i++) 
+		for (var i = 0; i < specialWords.length; i++) 
 		{
-			var aodArr = aodWords[i].split(' ');
+			var specialWordArr = specialWords[i].split(' ');
 			words = words.filter(function(ele) 
 			{ 
-				return aodArr.length == 1 || !aodArr.includes(ele)
+				return specialWordArr.length == 1 
+						|| !specialWordArr.includes(ele)
 			})
 		}
 	}
 
+	// remove voca out of words
+	var vocas = voca.split(',')
+	if (vocas)
+	{
+		for (var i = 0; i < vocas.length; i++) 
+		{
+			var vocaParts = vocas[i].split(' ');
+			words = words.filter(function(ele) 
+			{ 
+				return vocaParts.length == 1 
+				|| !vocaParts.includes(ele)
+			});
+
+			// need high_light uncount_nouns inside woca
+			if (vocaParts.length > 1)
+			{
+				vocaParts.forEach(ele => {
+					if (arrUNCOUNT_NOUNS.includes(ele)) words.push(ele)
+				})
+			}
+		}
+		
+	}
+
 	// dont ngClick with she,he,it if graph has: she's, he's...
 	wordRutgons = words.filter(function(ele) { return ele.indexOf("'") !== -1 })
-	var re = []
+	var finalWords = []
 	var flat = false
 	for (var i = 0; i < words.length; i++) {
 		var ele = words[i]
@@ -77,16 +117,16 @@ function IRR_ExtractWords(english)
 				flat = true
 			}
 		}
-		if (!flat) re.push(ele)
+		if (!flat) finalWords.push(ele)
 	}
-	re = re.concat(wordRutgons)
+	finalWords = finalWords.concat(wordRutgons)
 
 	//console.log(phraVerbs)
-	//console.log(re)
+	//console.log(finalWords)
 
 	return  {
-		'specialWords':aodWords,
-		'words':re,
-		'phraVerbs':phraVerbs
+		specialWords:specialWords
+		,words:finalWords
+		,phraVerbs:phraVerbs
 	}
 }

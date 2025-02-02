@@ -1,3 +1,5 @@
+var TIENGVIET_ARR = ['giao','vui','trong', 'bao', 'kinh', 'tinh', 'quen']
+
 function removeVietnameseTones(str) {
 	str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
 	str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
@@ -87,8 +89,7 @@ function shuffle(array) {
 	});
 }
 function isAsciiString(text) {
-	var tiengViet = ['giao','vui','trong', 'bao', 'kinh', 'tinh']
-	var r = /(?:[\u0000-\u007F]+|[\u0370-\u03FF]+)/g.test(text) && !isInArr(text, tiengViet);
+	var r = /(?:[\u0000-\u007F]+|[\u0370-\u03FF]+)/g.test(text) && !isInArr(text, TIENGVIET_ARR);
 	return r;
 } 
 

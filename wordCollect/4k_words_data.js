@@ -565,8 +565,6 @@ hunger đói<br>\
 imagine tưởng tượng<br>\
 journey hành trình<br>\
 puzzle (n) /ˈpʌzl/ câu đố<br>\
-quite khá<br>\
-rather khá<br>\
 specific cụ thể<br>\
 band dải<br>\
 barely adv /ˈberli/ vừa đủ<br>\

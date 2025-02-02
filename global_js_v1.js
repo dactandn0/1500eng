@@ -218,7 +218,7 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
-	var foundWords = IRR_ExtractWords(story.en)
+	var foundWords = IRR_ExtractWords(story)
 	var words = foundWords.words
 	var phraVerbs = foundWords.phraVerbs
 	var specialWords = foundWords.specialWords

@@ -18,6 +18,10 @@ const SynonymData = [
 	type:"a",
 	mean:"thô, chưa chế biến"
 },{
+	words:"quite /kwaɪt/|pretty|fairly /ˈferli/|a bit of|rather",
+	type:"adv",
+	mean:"khá (not very) (+ nouns, adj, adv)"
+},{
 	words:"abroad (adv)|overseas",
 	type:"a",
 	mean:"ở nước ngoài"

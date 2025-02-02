@@ -15,7 +15,7 @@ Không, thành thật mà nói, với tôi thì không vấn đề gì. Bạn bi
 Vâng, tùy thuộc vào bạn. Ý tôi là, nếu người đó dễ gần và có thể để lại ấn tượng tốt với tôi, thì tôi chắc chắn sẽ dành nhiều thời gian hơn để nói chuyện. Nếu không, sẽ rất ngại khi nói chuyện với một anh chàng không muốn để mọi người tìm hiểu về mình.<br>\
 3) Bạn có sợ bị đánh giá khi gặp ai đó lần đầu không?<br>\
 Thành thật mà nói, tôi không thực sự bận tâm. Tôi cố gắng không nghĩ nhiều về điều đó vì thực ra, cách người khác nhìn nhận tôi không quan trọng bằng cách tôi coi trọng bản thân mình."
-	,voca:"extrovert,breaks the ice,approachable,impression,awkward,get to know,leave a good impression on,strikes up a conversation,perceive"
+	,voca:"extrovert,breaks the ice,approachable,awkward,get to know,impression,strikes up a conversation,perceive"
 	,note:"An extrovert /ˈek.strə.vɜːt/: một người hướng ngoại Ví dụ: Most sales people are extroverts.|To break the ice: nói chuyện một cách thoải mái, cởi mở với người mới gặp lần đầu tiên Break /breɪk/: Phá vỡ Ice /aɪs/: băng đá Ví dụ: Someone suggested that we play a party game to break the ice.|To strike up a conversation: bắt chuyện Conversation /kɒn.vəˈseɪ.ʃən/: cuộc hội thoại Ví dụ: It's easy to strike up a conversation with some one when you're traveling.|Approachable /ˈprəʊ.tʃə.bəl/: thân thiện và dễ bắt chuyện Ví dụ: Graham's always very approachable.|To leave a good impression on someone: để lại một ấn tượng tốt cho ai đó Impression  /ɪmˈpreʃ.ən/: Ấn tượng Ví dụ: She leave a good impression on us.|Awkward /ˈɔː.kwəd/: cảm giác ngượng nghịu Ví dụ: Some of the questions were rather awkward.|Get to know someone: làm quen và tìm hiểu về ai đó Ví dụ: The first couple of meetings are for the doctor and patient to get to know each other."
 },{
 	track:"1.2",
@@ -428,16 +428,16 @@ Hiện tại, câu trả lời là có. Miễn là có những quy định hạn
 	en:"1) Which movies do you like?<br>\
 I am a huge fan of romance and The Notebook is definitely my number one choice when it comes to classic romance movies. Although the motif of a tragic love story isn't new, the movie is still a masterpiece to me.<br>\
 2) Do your friends like this movie?<br>\
-Unlike me, most of my friends say this is such a cliché movie and therefore, would rather spend their time watching horror movies, which gives them real thrills.<br>\
+Unlike me, most of my friends say this is such a cliche movie and therefore, would rather spend their time watching horror movies, which gives them real thrills.<br>\
 3) Do you want to be a movie star?<br>\
-Not at all. Becoming a celebrity means you have to expose your private life to the rest of the world, and sharing has never been my thing. Besides, I have a fear of cameras, which means I could never become an actor/ actress."
+Not at all. Becoming a celebrity means you have to expose your private life to the rest of the world, and sharing has never been my thing. Besides, I have a fear of cameras, which means I could never become an actor/actress."
 	,vi:"1) Bạn thích phim nào?<br>\
 Tôi là một fan hâm mộ lớn của thể loại lãng mạn và The Notebook chắc chắn là lựa chọn số một của tôi khi nói đến những bộ phim lãng mạn kinh điển. Mặc dù chủ đề về một câu chuyện tình bi thảm không phải là mới, nhưng bộ phim vẫn là một kiệt tác đối với tôi.<br>\
 2) Bạn bè của bạn có thích bộ phim này không?<br>\
 Không giống như tôi, hầu hết bạn bè tôi đều nói rằng đây là một bộ phim sáo rỗng và do đó, họ thích dành thời gian xem phim kinh dị hơn, vì phim này mang lại cho họ cảm giác hồi hộp thực sự.<br>\
 3) Bạn có muốn trở thành một ngôi sao điện ảnh không?<br>\
 Không hề. Trở thành người nổi tiếng có nghĩa là bạn phải phơi bày cuộc sống riêng tư của mình với phần còn lại của thế giới, và việc chia sẻ chưa bao giờ là sở thích của tôi. Bên cạnh đó, tôi sợ máy quay, điều đó có nghĩa là tôi không bao giờ có thể trở thành một diễn viên/nữ diễn viên."
-	,voca:"masterpiece,motif,cliché,expose your private life,give them real thrills,share has never been my thing,number one choice,a fear of cameras"
+	,voca:"masterpiece,motif,cliché,expose,thrills,share has never been my thing,number one choice,a fear of cameras,cliche"
 	,note:"give them real thrills / ɡɪv ðem rɪəl θrɪls/: cho họ sự phấn khởi|number one choice: lựa chọn hàng đầu|A fear of cameras: nỗi sợ đứng trước máy ảnh|share has never been my thing: chia sẻ không phải việc tôi thường làm"
 },{
 	track:"1.24",

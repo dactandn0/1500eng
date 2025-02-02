@@ -1,12 +1,25 @@
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
 
-const SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes,own,even if,even,though,although,despite,certainly,of course,so on\
-,probably,currently,unfortunately,hardly,rarely,much,more into,more,really,recently,ever,never\
+var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes,own,even if,even,though,although,despite,certainly,of course,so on\
+,probably,currently,unfortunately,hardly,rarely,much,more,more into,really,recently,ever,never\
 ,absolutely,actually,completely,really,totally,thoroughly,entirely,simply\
 ,pretty,quite,rather,fairly,basically,honestly\
 ,since,as,in fact,on top of that,what's more,besides,plus,as much as\
 ,incredibly,considerably,particularly,significantly\
 ,a bit of,a sense of,a bit,a lot"
+
+function soft_words ()
+{
+	SPECIAL_WORDS = SPECIAL_WORDS.split(',')
+	SPECIAL_WORDS.sort((a,b) =>
+	{
+		aArr = a.split(' ')
+		bArr = b.split(' ')
+		return bArr.length - aArr.length
+	})
+	SPECIAL_WORDS = SPECIAL_WORDS.toString();
+}
+soft_words();
 
 const NOUN_SAME_VERBS = "attempt,compliment,cause,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\

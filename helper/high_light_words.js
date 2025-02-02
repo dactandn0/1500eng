@@ -1,6 +1,16 @@
+function softArrStr(arrInput, giamDan = true)
+{
+	arrInput.sort((a,b) =>
+	{
+		if (giamDan) return b.length - a.length
+		if (!giamDan) return a.length - b.length
+	})
+	return arrInput
+}
 
 function arrRemoveZeroLenghthEle (arr) 
 {
+	if (arr)
 	return arr.filter(function(ele) 
 	{ 
 		return ele.trim().length > 0 
@@ -46,7 +56,7 @@ function IRR_ExtractWords(story)
 	phraRegex = phraRegex.substring(0, phraRegex.length - 1)   //remove last '|'
 	if (phraRegex!=='') phraRegex = phraRegex + '|'
 
-	// SPECIAL_WORDS is decared in form_of_word.js
+	// SPECIAL_WORDS declared in form_of_word.js
 	var specialWord_Regex = SPECIAL_WORDS.replaceAll(',', '|')
 
 	// Speech all long voca_note
@@ -64,7 +74,6 @@ function IRR_ExtractWords(story)
 	var words = english.match(regex);   // include phraVerbs and other
 	words = Helper_ArrRemoveDup(words)
 	
-
 	for (var i = 0; i < phraVerbs.length; i++) {
 		var www = phraVerbs[i].split(' ')
 		var word = www[0]
@@ -79,6 +88,7 @@ function IRR_ExtractWords(story)
 	regex = new RegExp(`\\b(${specialWord_Regex})\\b` , 'gi')
 	var specialWords = english.match(regex);
 	specialWords = Helper_ArrRemoveDup(specialWords)
+	specialWords.sort((a, b) => b.length - a.length);
 
 	// remove out of words
 	if (specialWords)
@@ -109,7 +119,7 @@ function IRR_ExtractWords(story)
 				|| !vocaParts.includes(ele)
 			});
 
-			// need high_light uncount_nouns inside group of voca
+			// needs to high_light uncount_nouns
 			if (vocaParts.length > 1)
 			{
 				vocaParts.forEach(ele => {
@@ -117,7 +127,6 @@ function IRR_ExtractWords(story)
 				})
 			}
 		}
-		
 	}
 
 	// dont ngClick with she,he,it if graph has: she's, he's...
@@ -139,10 +148,9 @@ function IRR_ExtractWords(story)
 	//console.log(finalWords)
 	//console.log(phraVerbs)
 	//console.log(finalWords)
-
 	return  {
-		specialWords:specialWords
-		,words:finalWords
-		,phraVerbs:phraVerbs
+		specialWords: specialWords
+		,words: finalWords
+		,phraVerbs: phraVerbs
 	}
 }

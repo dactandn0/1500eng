@@ -37,7 +37,7 @@ function getRegexMatch(rg, txt) {
 function fixDots(txt) {
 	txt = txt.trim()
 	// 1. 2. -> 1) 2)
-	var matches = txt.match(/\b\d+\./gi);
+	var matches = txt.match(/^\b\d+\./gi);
 	if (matches) {
 		for (var i = 0; i < matches.length; i++) {
 			var src = matches[i]
@@ -216,18 +216,25 @@ function processStory (story, isAlert = true) {
 	var phraVerbs = foundWords.phraVerbs
 	var specialWords = foundWords.specialWords
 	var dones = []
-	for (var i = 0; i < words.length; i++) {
+	for (var i = 0; i < words.length; i++) 
+	{
 		var word = words[i];
 		if (!isInArr(word, dones)) 
 		{
 			enShow = hLightWord(word, phraVerbs, enShow , PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END );
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
-			enShow = hLightWord(word, specialWords, enShow , SPECIAL_WORDS_HL_TAG_BEGIN, SPECIAL_WORDS_HL_TAG_END );
 			enShow = ngClickOnWord(word, enShow);
 			dones.push(word);
 		}
 	}
+	for (var i = 0; i < specialWords.length; i++) 
+	{
+		var word = specialWords[i]
+		enShow = hLightWord(word, specialWords, enShow , SPECIAL_WORDS_HL_TAG_BEGIN, SPECIAL_WORDS_HL_TAG_END );
+		enShow = ngClickOnWord(word, enShow);
+	}
+
 	var enAndVi = ''
 	if (bHasVi) 
 	{

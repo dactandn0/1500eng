@@ -9,16 +9,21 @@ daily (a) /ˈdeɪli/ hằng ngày<br>\
 despite (prep) /dɪˈspaɪt/ cho dù<br>\
 On top of that (idiom) hơn thế<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
+cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
 arrive (v) /əˈraɪv/ đến<br>\
 rebellious (a) /rɪˈbeljəs/ nổi loạn, bạo động<br>\
+romance (a) /ˈrəʊmæns/ lãng mạn<br>\
 regret (v) /rɪˈɡret/ hối tiếc<br>\
 transportation (n) /trænspərˈteɪʃn/ vận tải<br>\
+horror (a) /ˈhɔːrər/ kinh dị<br>\
+masterpiece (a) /ˈstaɪlɪʃ/ kiệt tác<br>\
 stylish (a) /ˈstaɪlɪʃ/ sành điệu<br>\
 recognizable (a) /ˈrekəɡnaɪzəbl/ có thể nhận ra<br>\
 strenuous (a) /ˈstren.ju.əs/ kiệt quệ thể chất + tinh thần<br>\
-preference (n) /ˈprefrəns/ sự ưa thích<br>\
+preference (n) /ˈmæstərpiːs/ sự ưa thích<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 capacity (n) /kəˈpæsəti/ dung tích<br>\
+expose (v) /ɪkˈspəʊz/ phơi ra<br>\
 perceive (v) /pərˈsiːv/ nhận thức<br>\
 hygiene (n) /ˈhaɪdʒiːn/ vệ sinh<br>\
 hygienic (a) /haɪˈdʒiːnɪk/ vệ sinh<br>\

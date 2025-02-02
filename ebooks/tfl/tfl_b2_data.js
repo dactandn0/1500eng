@@ -169,9 +169,9 @@ I had a really great weekend. I didn't have anything to do on Saturday afternoon
 2<br>\
 Saturday morning, I got a phone call from an old school friend. I haven't seen her for a long time. She was one of my closest friends in high school, but she moved to Los Angeles to work. She was in town for four days so she invited me to a restaurant for lunch. We had such a pleasant time together. She was telling me about her job in Los Angeles. It sounds really interesting. She works for a movie company and she has to find places where they can film movies-you know, places like restaurants, hotel lobbies, parks, and streets.<br>\
 3<br>\
-My brother and I wanted some exercise on Sunday so we decided to go on a nature walk. There's a big park near the town where there are supposed to be wonderful wild birds and butterflies. We took a bus there and walked along a forest trail for about four hours. It was pretty tiring because it was a really hot day. The worst thing was, we never saw any wild birds or butterflies! I don't think we'll go there again.<br>\
+My brother and I wanted some exercise on Sunday so we decided to go on a nature walk. There's a big park near the town where there are supposed to be wonderful wild birds and butterflies. We took a bus there and walked along a forest trail for about four hours. It was pretty tiring because it was a really hot day. The worst thing was we never saw any wild birds or butterflies! I don't think we'll go there again.<br>\
 4<br>\
-I went to my friend's birthday party on Saturday night. I don't always enjoy going to birthday parties because you often have to play stupid games and things. Well we did have to play all sorts of stupid games, but I really enjoyed myself. I guess it was because the people at the party were all interesting. And there was good music, too. Somebody brought along some dance music and everyone had a great time dancing. I didn't get home until after 2 a.m."
+I went to my friend's birthday party on Saturday night. I don't always enjoy going to birthday parties because you often have to play stupid games and things. Well we did have to play all sorts of stupid games, but I really enjoyed myself. I guess it was because the people at the party were all interesting. And there was good music, too. Somebody brought along some dance music and everyone had a great time dancing. I didn't get home until after 2 am."
 	,vi:"1<br>\
 Tôi đã có một kỳ nghỉ cuối tuần thực sự tuyệt vời. Tôi không có việc gì để làm vào chiều thứ Bảy nên tôi đã đến trung tâm thương mại. Tôi vào một cửa hàng bách hóa để xem xung quanh. Họ đang tổ chức một cuộc thi. Tất cả những gì bạn phải làm là viết câu trả lời cho một số câu hỏi dễ về nhạc pop và bỏ câu trả lời của bạn vào một hộp. Sau đó, họ rút ra ba cái tên để trao giải. Và đoán xem? Tên của tôi là cái tên đầu tiên họ rút ra. Tôi không thể tin được. Và đó là một giải thưởng tuyệt vời. Một kỳ nghỉ cuối tuần cho hai người ở Las Vegas!<br>\
 2<br>\
@@ -191,7 +191,8 @@ A: Wow!<br>\
 2<br>\
 A: How much is the fare?<br>\
 B: It's $1.25. Just put your money in the box right there.<br>\
-A: Oh, do you have change? B: No, you need the exact change.<br>\
+A: Oh, do you have change? br>\
+B: No, you need the exact change.<br>\
 3<br>\
 A: Are you free?<br>\
 B: Sure. Hop in. Where to?<br>\
@@ -199,7 +200,8 @@ A: The Central Hotel. Do you know where that is?<br>\
 A: Yeah. It's not far from here. About a 10-minute ride.<br>\
 B: Okay.<br>\
 4<br>\
-A: One ticket to Chicago, please. B: Yeah. Okay. That's $24.<br>\
+A: One ticket to Chicago, please. <br>\
+B: Yeah. Okay. That's $24.<br>\
 A: Does this one have a dining car?<br>\
 B: Yeah, there's a dining car and a snack bar. Here's your change.<br>\
 A: Thanks.<br>\
@@ -208,7 +210,8 @@ A: What time is the next shuttle flight to Boston?<br>\
 B: It leaves in 30 minutes.<br>\
 A: Is it too late to get a ticket?<br>\
 B: No, you still have plenty of time to make it.<br>\
-A: Great. And how long is the flight? B: It's about 45 minutes.<br>\
+A: Great. And how long is the flight? <br>\
+B: It's about 45 minutes.<br>\
 6<br>\
 A: Is that our ferry?<br>\
 B: I think so.<br>\
@@ -216,12 +219,13 @@ A: It looks a little rough out there today. I think I'm going to get sick.<br>\
 B: Oh, dear."
 	,vi:"1<br>\
 A: Tàu điện ngầm lúc nào cũng đông thế này à?<br>\
-B: Ừ, sáng nào cũng thế và giờ cao điểm buổi tối.<br>\
+B: Vâng, mỗi sáng và tối vào giờ cao điểm.<br>\
 A: Wow!<br>\
 2<br>\
 A: Giá vé là bao nhiêu?<br>\
-B: 1,25 đô. Cứ bỏ tiền vào hộp ngay đó.<br>\
-A: À, bạn có tiền lẻ không? B: Không, bạn cần đúng số tiền lẻ đó.<br>\
+B: 1,25 đô la. Cứ bỏ tiền vào hộp ngay đó.<br>\
+A: À, bạn có tiền lẻ không? br>\
+B: Không, bạn cần đúng số tiền lẻ đó.<br>\
 3<br>\
 A: Bạn rảnh không?<br>\
 B: Chắc chắn rồi. Lên xe đi. Đi đâu?<br>\
@@ -229,8 +233,9 @@ A: Khách sạn Central. Bạn có biết đó là đâu không?<br>\
 A: Ừ. Không xa đây đâu. Đi khoảng 10 phút.<br>\
 B: Được.<br>\
 4<br>\
-A: Một vé đi Chicago, làm ơn. B: Ừ. Được. 24 đô la.<br>\
-A: Chiếc này có toa ăn không?<br>\
+A: Một vé đi Chicago, làm ơn. <br>\
+B: Ừ. Được. 24 đô la.<br>\
+A: Chuyến này có toa ăn không?<br>\
 B: Có, có toa ăn và quầy đồ ăn nhẹ. Đây là tiền thừa của anh.<br>\
 A: Cảm ơn.<br>\
 5<br>\
@@ -238,10 +243,11 @@ A: Chuyến bay đưa đón tiếp theo đến Boston là mấy giờ?<br>\
 B: Chuyến bay khởi hành trong 30 phút nữa.<br>\
 A: Có quá muộn để mua vé không?<br>\
 B: Không, anh vẫn còn nhiều thời gian để đến đó.<br>\
-A: Tuyệt. Và chuyến bay kéo dài bao lâu? B: Khoảng 45 phút.<br>\
+A: Tuyệt. Và chuyến bay kéo dài bao lâu? <br>\
+B: Khoảng 45 phút.<br>\
 6<br>\
 A: Đó có phải là phà của chúng tôi không?<br>\
-B: Tôi nghĩ vậy.<br>\
+B: Tôi nghĩ là vậy.<br>\
 A: Hôm nay trời có vẻ hơi xấu. Tôi nghĩ mình sẽ bị ốm mất.<br>\
 B: Ôi trời."
 	,voca:"",

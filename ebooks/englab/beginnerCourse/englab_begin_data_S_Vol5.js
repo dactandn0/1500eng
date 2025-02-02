@@ -169,13 +169,13 @@ Actually, it depends on which activity that is. For me, most of the time I'm wil
 2) Did you enjoy trying new activities when you were younger?<br>\
 I tend to hesitate a bit back then. I think I had much more fear of failure at that time but now I just try things without thinking about it so much. Even if it's something difficult and I don't succeed in the first attempt , I still have a sense of achievement at the end.<br>\
 3) Do you prefer to try a new activity alone or with your friends?<br>\
-Yes, I mean who doesn't? It's hard to do something both carefully and quickly, isn't it? If I am in this position, surely I will make mistakes."
+I don't really mind, doing new things on my own is okay, but if my friends are interested in trying it too, we can support each other to deal with difficulties and make quicker progress."
 	,vi:"1) Bạn có thích thử những hoạt động mới mà bạn chưa từng làm trước đây không?<br>\
 Thực ra, điều đó phụ thuộc vào hoạt động đó là gì. Đối với tôi, hầu hết thời gian tôi đều sẵn sàng thử. Tôi muốn nói rằng tôi khá tò mò và háo hức học hỏi những điều mới hoặc có được những trải nghiệm mới từ việc làm những việc mà tôi chưa từng làm trước đây.<br>\
 2) Bạn có thích thử những hoạt động mới khi còn trẻ không?<br>\
 Tôi có xu hướng do dự một chút khi đó. Tôi nghĩ rằng tôi sợ thất bại hơn nhiều vào thời điểm đó nhưng bây giờ tôi chỉ thử mọi thứ mà không nghĩ nhiều về nó. Ngay cả khi đó là điều gì đó khó khăn và tôi không thành công ngay từ lần thử đầu tiên, tôi vẫn có cảm giác thành tựu khi kết thúc.<br>\
 3) Bạn thích thử một hoạt động mới một mình hay với bạn bè?<br>\
-Vâng, ý tôi là ai mà không thích chứ? Thật khó để làm một việc gì đó vừa cẩn thận vừa nhanh chóng, phải không? Nếu tôi ở trong hoàn cảnh này, chắc chắn tôi sẽ mắc lỗi."
+Tôi không bận tâm lắm, tự mình làm những điều mới thì không sao, nhưng nếu bạn bè tôi cũng muốn thử thì chúng tôi có thể hỗ trợ nhau để cùng vượt qua khó khăn và tiến bộ nhanh hơn."
 	,voca:"hesitate,attempt,curious,eager"
 	,note:"To give it a go: thử Ví dụ: I might give it a go |To be curious /ˈkjʊə.ri.əs/: tò mò, muốn tìm hiểu Ví dụ: I was curious to know what would happen next.|To be eager  /ˈiː.ɡər/ (to do something): háo hức, mong muốn làm một việc gì đó Ví dụ: She was eager to help.|To hesitate /ˈhez.ɪ.teɪt/: chần chừ, do dự Ví dụ: She hesitated slightly before answering the detective's question.|Attempt /əˈtempt/: sự cố gắng, thử làm một việc gì đó Ví dụ: He attempted a joke, but no one laughed.|A sense of achievement: Cảm giác bản thân đạt được điều gì đó Sense /sens/ : Cảm giác Achievement /əˈtʃiːv.mənt/ : thành tựu Ví dụ: It gives you a sense of achievement if you actual ly make it to the end of a very long book."
 },{

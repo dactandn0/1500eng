@@ -575,7 +575,7 @@ instrument (n) /ˈɪnstrəmənt/ nhạc cụ<br>\
 list danh sách<br>\
 magic ma thuật<br>\
 message tin nhắn<br>\
-own (a,v) /əʊn/ (a)làm chủ,(v),thú nhận, sở hữu<br>\
+own (a,v) /əʊn/ (a) làm chủ,( v) thú nhận, sở hữu<br>\
 predict dự đoán<br>\
 professor giáo sư<br>\
 chaotic (a) /keɪˈɑːtɪk/ hỗn loạn, lộn xộn<br>\

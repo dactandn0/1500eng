@@ -13,9 +13,13 @@ var VocaForSearch = VocaToUI
     // .concat(NATIONS)
 
 // for notedEbookCtrl
-var kAllStories = lptd_cd1_stories
-//  .concat(lptd_cd2_stories)
-//  .concat(lptd_cd3_stories)
+var kAllStories = ENGLAB_BEGIN_DATA_S_Vol5
+  .concat(ENGLAB_BEGIN_DATA_W)
+  .concat(collins_cd12)
+  .concat(lptd_cd1_stories)
+  .concat(lptd_cd2_stories)
+  .concat(lptd_cd3_stories)
+  .concat(lptd_cd4_stories)
 //  .concat(BOOK4K_1)
  // .concat(bridge_cd1)
 //  .concat(bridge_read_data)
@@ -51,8 +55,8 @@ var app = angular.module("myApp", [
   'sampleSpeakingApp',
   'bridgeRApp','bridgeLApp',
   'barron600RApp','barron600LApp',
-  'grammerApp',
   */
+  'grammerApp',
   'lptdApp',
   'wordCollectApp','words4000App', 
   'modalApp', 'audioApp', 'audioLoopRadioApp',
@@ -195,9 +199,10 @@ $scope.Index_NoteVoca_Speak = function (word) {
 // click word to speech
 $scope.Idx_n_L_WSp_ = function (event) {
   event.stopPropagation()
-  Helper_ngClickWordSpeak(event);
 
-  var touchedWord = event.target.innerText.toLowerCase();
+  var touchedWord = Helper_getTouchTextEvent(event)
+  Helper_ngClickWordSpeak(touchedWord);
+  
   var result = IELTS_SYN_IsIn(touchedWord)
   if (result !== '') {
      doShowToast(result, true);

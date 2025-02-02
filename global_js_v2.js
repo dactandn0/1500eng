@@ -135,9 +135,8 @@ Helper_Speak = function (event, txt) {
 	Text2Speech(target)
 }
 
-Helper_ngClickWordSpeak = function (event) {
-	var target = event.target.innerText;
-	Text2Speech(target)
+Helper_ngClickWordSpeak = function (txt) {
+	Text2Speech(txt)
 }
 
 function Text2Speech(word) {
@@ -216,4 +215,30 @@ function makeVocaEbook(rtScrope, ...args)
 	}
 //	console.log('makeVocaEbook::: ' + rtScrope.vocaEbook)
 	
+}
+
+function Helper_getTouchTextEvent(ev)
+{
+  var KKK = kNgClickTagName.toUpperCase()
+
+  var target = ev.target
+
+   if (target.nodeName == KKK
+  	&& target.parentNode.nodeName == KKK
+  	) 
+  	return target.parentNode.innerText
+
+  if (target.nodeName == KKK
+  	&& target.parentNode.parentNode.nodeName !== KKK
+  	) 
+  	return target.innerText
+
+  while (target.parentElement) {
+    target = target.parentNode;
+    if (target.nodeName == KKK)
+     {
+      return target.innerText
+     }
+  }
+  return;
 }

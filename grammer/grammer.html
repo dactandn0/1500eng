@@ -1,18 +1,4 @@
 
-    	<div ng-repeat="story in stories track by $index" class="my-2" >
-		  <h6 class="accordion scroll">
-		    <a href ng-click="acc_click($index)"><span ng-if="$index<9">0</span>{{$index+1}}. {{story.title}} &nbsp&nbsp&nbsp&nbsp[{{story.numOfWords}}: words]</a>
-		  </h6>
-		  <div class="accordion-content" ng-if="acc_isShow($index)">
-		     <p ng-bind-html="story.en"></p>
-		     <p ng-bind-html="story.vi"></p>
-		     <div class="mt-1" ng-if="story.vocaNotes">
-	           	<hr/>
-	        		<p  class="mb-1" ng-repeat="note in story.vocaNotes">
-	          			{{note}}
-	          		</p>
-	          	</div>
-		  </div>
-		</div>
 
 
+<div ng-include="'./includes/storyR.html'" ></div>

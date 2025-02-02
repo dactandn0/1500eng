@@ -10,8 +10,9 @@ const PHRA_VERB_TAG_END = '</z1a>'
 const SPECIAL_WORDS_HL_TAG_BEGIN = '<advHL class="advHL_123">'
 const SPECIAL_WORDS_HL_TAG_END = '</advHL>'
 
-var kNgClickTagOpen = '<kkk ng-click="Idx_n_L_WSp_($event)">';
-var kNgClickTagClose = '</kkk>';
+var kNgClickTagName = 'kkk'
+var kNgClickTagOpen = '<' +kNgClickTagName+' ng-click="Idx_n_L_WSp_($event)">';
+var kNgClickTagClose = '</'+kNgClickTagName+'>';
 
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
@@ -194,16 +195,22 @@ function processStory (story, isAlert = true) {
 	
 	var enShow = story.enShow
 	var viShow = !story.vi ? "" : story.vi.trim()
+
 	enShow = doReplaceWords(enShow)
 	enShow = fixDots(enShow)
+
 	var bHasVi = viShow.length > 0
 	if (bHasVi) viShow= fixDots(viShow)
 
+	var foundWords = IRR_ExtractWords(story)
+	
 	if (story.voca) {
 		var vocas = story.voca.split(',');
 		for (var i = 0; i < vocas.length; i++) {
 			voca = vocas[i].trim();
-			if (voca.length===0) continue;
+
+			if (IsIgnoreVocaBold(voca, foundWords)) continue;
+
 			voca = voca.replace(/\[.*\]/g, '').trim();
 			var regex = new RegExp(`\\b${voca}\\b` , 'g')
 			if (voca!='event')
@@ -211,11 +218,11 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
-	var foundWords = IRR_ExtractWords(story)
 	var words = foundWords.words
 	var phraVerbs = foundWords.phraVerbs
 	var specialWords = foundWords.specialWords
 	var dones = []
+
 	for (var i = 0; i < words.length; i++) 
 	{
 		var word = words[i];
@@ -342,4 +349,36 @@ Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, reset)
 	var story = scope.story;
 	rootScope.storyHasVi = story.vi && story.vi.trim().length > 0;
 	scope.story = processStory(story);
+}
+
+function IsIgnoreVocaBold(boldWord, hightlightWord)
+{	
+	boldWord = boldWord.trim()
+	if (boldWord.length == 0) return true
+
+	var rrr = false;
+
+	var phraVerbArr = hightlightWord.phraVerbs
+	var specialWordArr= hightlightWord.specialWords
+
+	var parts = boldWord.split(' ')
+	for (var i = 0; i < parts.length; i++) {
+		var part = parts[i]
+		if (
+			phraVerbArr.includes(part) 
+		||	phraVerbArr.includes(boldWord) 
+		|| specialWordArr.includes(part)
+		|| specialWordArr.includes(boldWord)
+		|| arrUNCOUNT_NOUNS.includes(part)
+		|| arrUNCOUNT_NOUNS.includes(boldWord)
+		|| arrNOUN_SAME_VERBS.includes(part)
+		|| arrNOUN_SAME_VERBS.includes(boldWord)
+		) 
+		{
+			rrr = true;
+			break;
+		}
+	}
+	
+	return rrr;
 }

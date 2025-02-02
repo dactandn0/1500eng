@@ -545,7 +545,7 @@ As a matter of fact, unfortunately tap water is full of chemicals that are harmf
 Tôi uống rất nhiều nước mỗi ngày. Có lẽ khoảng 2-3 lít một ngày, tùy thuộc vào thời tiết nóng như thế nào hoặc tôi đã tập thể dục nhiều như thế nào vào ngày hôm đó.<br>\
 2) Bạn uống nước đóng chai hay nước từ máy lọc nước? / Bạn thích uống loại nước nào?<br>\
 Thật ra, thật không may, nước máy chứa đầy hóa chất có hại cho sức khỏe, vì vậy tôi không bao giờ uống nước máy. Tôi chỉ uống nước lọc đựng trong các thùng nhựa lớn, đã được làm sạch nên hợp vệ sinh hơn nhiều."
-	,voca:"harmful to your health,tap water"
+	,voca:"harmful to your health,tap water,As a matter of fact"
 	,note:"To be harmful to your health: gây hại cho sức khỏe. Ví dụ: Some diets that may help you lose weight may be harmful to your health over time."
 },{
 	track:"1.30",

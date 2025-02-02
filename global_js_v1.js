@@ -36,20 +36,13 @@ function getRegexMatch(rg, txt) {
 
 function fixDots(txt) {
 	txt = txt.trim()
-	var endCharOfSentences = ['.',',','?','!']
-	let lastChar = txt.charAt(txt.length - 1); 
-	if (!endCharOfSentences.includes(lastChar)) {
-		txt += '.'
-	}
-
 	// 1. 2. -> 1) 2)
 	var matches = txt.match(/\b\d+\./gi);
 	if (matches) {
 		for (var i = 0; i < matches.length; i++) {
 			var src = matches[i]
-			var desc  = src.replace('.',')');
-			var regex = new RegExp(`\\b${src}`,'gi')
-//			txt = txt.replace(regex, desc)
+			var desc  = src.replace('.' , ')');
+			txt = txt.replaceAll(src , desc);
 		}	
 	}
 

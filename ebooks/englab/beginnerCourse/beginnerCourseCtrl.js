@@ -105,8 +105,8 @@ function doMenu_S_VOL5()
 	}
 	var menu = {
 		track: 'Menu',
-		title: 'Questions',
-		en:en
+		title: 'Lessons',
+		en: en
 	}
 	var r = []
 	r.push(menu)
@@ -118,7 +118,7 @@ function doMenu_Listening()
 	var en = ""
 	for (var i = 0; i < ENGLAB_BEGIN_DATA_L.length; i++) {
 		var lesson = ENGLAB_BEGIN_DATA_L[i]
-		if (lesson.title)
+		if (lesson.title && lesson.title.trim().length > 0)
 		{
 			// 01.01 -> 01
 			var order = (lesson.track + '').replace(/\..*/gi, '')
@@ -127,11 +127,13 @@ function doMenu_Listening()
 	}
 	var menu = {
 		track: 'Menu',
-		title: 'Lesson',
-		en:en
+		title: 'Lessons',
+		en: en
 	}
 	var r = []
 	r.push(menu)
+	console.log(r)
+
 	return r
 }
 

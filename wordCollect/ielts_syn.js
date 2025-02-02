@@ -50,6 +50,10 @@ const SynonymData = [
 	words:"get rid of|eliminate",
 	type:"v",
 	mean:"loại bỏ"
+},{
+	words:"favorite (a,n) /ˈfeɪvərɪt/ |preference /ˈprefrəns/|first choice",
+	type:"n",
+	mean:"ưu thích"
 },
 {
 	words:"principal|headmaster",

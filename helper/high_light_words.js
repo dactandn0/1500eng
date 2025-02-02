@@ -1,4 +1,11 @@
 
+function arrRemoveZeroLenghthEle (arr) 
+{
+	return arr.filter(function(ele) 
+	{ 
+		return ele.trim().length > 0 
+	});
+}
 
 function IRR_ExtractWords(story) 
 {	
@@ -43,13 +50,20 @@ function IRR_ExtractWords(story)
 	var specialWord_Regex = SPECIAL_WORDS.replaceAll(',', '|')
 
 	// Speech all long voca_note
-	var voca_Regex = voca.replaceAll(',', '|')
+	var voca_Regex = ''
+	if (voca) 
+	{	
+		// sort by length
+		vocaArr = voca.split(',')
+		vocaArr.sort((a, b) => b.length - a.length);
+		voca = vocaArr.toString();
+		voca_Regex = voca.replaceAll(',' , '|') + '|'
+	}
 
-	var regex = new RegExp(`\\b(${phraRegex}${specialWord_Regex}|${voca_Regex}|\\w+'*\\w*)\\b` , 'gi')
+	var regex = new RegExp(`\\b(${voca_Regex}${phraRegex}${specialWord_Regex}|\\w+'*\\w*)\\b` , 'gi')
 	var words = english.match(regex);   // include phraVerbs and other
-
 	words = Helper_ArrRemoveDup(words)
-	//console.log(words)
+	
 
 	for (var i = 0; i < phraVerbs.length; i++) {
 		var www = phraVerbs[i].split(' ')
@@ -57,7 +71,7 @@ function IRR_ExtractWords(story)
 		var prep = www[1]
 		var prep2 = www[2]
 
-		// remove phraVerbs in Words
+		// remove phraVerbs out of words
 		words = words.filter(function(ele) { return ele !== word && ele !== prep && ele !== prep2})
 	}
 
@@ -81,7 +95,9 @@ function IRR_ExtractWords(story)
 	}
 
 	// remove voca out of words
-	var vocas = voca.split(',')
+	var vocas = null
+	if (voca) vocas = voca.split(',')
+	vocas = arrRemoveZeroLenghthEle(vocas)
 	if (vocas)
 	{
 		for (var i = 0; i < vocas.length; i++) 
@@ -93,7 +109,7 @@ function IRR_ExtractWords(story)
 				|| !vocaParts.includes(ele)
 			});
 
-			// need high_light uncount_nouns inside woca
+			// need high_light uncount_nouns inside group of voca
 			if (vocaParts.length > 1)
 			{
 				vocaParts.forEach(ele => {
@@ -120,7 +136,7 @@ function IRR_ExtractWords(story)
 		if (!flat) finalWords.push(ele)
 	}
 	finalWords = finalWords.concat(wordRutgons)
-
+	//console.log(finalWords)
 	//console.log(phraVerbs)
 	//console.log(finalWords)
 

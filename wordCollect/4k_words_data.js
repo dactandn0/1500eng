@@ -16,6 +16,7 @@ transportation (n) /trænspərˈteɪʃn/ vận tải<br>\
 stylish (a) /ˈstaɪlɪʃ/ sành điệu<br>\
 recognizable (a) /ˈrekəɡnaɪzəbl/ có thể nhận ra<br>\
 strenuous (a) /ˈstren.ju.əs/ kiệt quệ thể chất + tinh thần<br>\
+preference (n) /ˈprefrəns/ sự ưa thích<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 capacity (n) /kəˈpæsəti/ dung tích<br>\
 perceive (v) /pərˈsiːv/ nhận thức<br>\
@@ -278,7 +279,6 @@ compare so sánh<br>\
 magazine (n) /ˈmæɡəziːn/ tạp chí<br>\
 material (n) /məˈtɪriəl/ vật liệu<br>\
 meal bữa ăn<br>\
-favorite (n,a) /ˈfeɪvərɪt/ (sự)yêu thích<br>\
 method (n) /ˈmeθəd/ phương pháp<br>\
 neighbor hàng xóm<br>\
 regularity (n) /reɡjuˈlærəti/ sự chuyên nghiệp, chánh thức, hợp pháp<br>\
@@ -1030,7 +1030,6 @@ slip trượt<br>\
 somewhat hơi<br>\
 tissue mô<br>\
 yard sân <br>\
-favourite (n,a) ưu thích<br>\
 majority (n) /məˈdʒɔːrəti/ phần lớn<br>\
 alike giống nhau<br>\
 get on my nerves (v) /əˈnɔɪ/ làm phiền<br>\

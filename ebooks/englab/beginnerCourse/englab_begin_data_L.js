@@ -286,7 +286,7 @@ Tuần này, tôi sẽ nói về cách chăm sóc máy ảnh của bạn. Hầu 
 Ở phía trên bên phải, bạn có thể cất micrô. Nó phải vừa khít để không bị xê dịch và bị hỏng. Tôi luôn để micrô ở đó, trừ khi tôi thực sự cần ghi âm.<br>\
 Bây giờ, ở phía dưới bên trái, tôi có thể cất pin. Tốt nhất là tháo pin ra nếu bạn không sử dụng máy ảnh trong thời gian dài... Tôi luôn làm vậy. Pin ngày nay có thể sạc trong thời gian dài, nhưng tốt hơn là để pin ngoài máy ảnh. Hầu hết các máy ảnh ngày nay, như thế này, đều có pin sạc. Cuối cùng, bạn có thể thấy nơi tôi cất máy ảnh, ở đây, góc dưới bên phải. Máy ảnh không thể di chuyển, và hộp đựng được làm bằng vật liệu cứng, vì vậy bạn có thể làm rơi hộp đựng hoặc thậm chí làm rơi nó, và máy ảnh sẽ không bị hư hỏng.<br>\
 Nếu bạn chưa có hộp đựng máy ảnh, tôi khuyên bạn nên mua một cái ngay khi có thể... Vâng, đó là tất cả những gì tôi muốn nói về việc cất giữ. Bây giờ, chúng ta hãy chuyển sang một số công việc thực tế."
-	,voca:"",
+	,voca:""
 }
 
 

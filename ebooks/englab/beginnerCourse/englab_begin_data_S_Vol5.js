@@ -188,11 +188,11 @@ Like I said, I prefer going out with friends on Saturday and Sunday. We mostly d
 3) Do you think there are enough interesting things to do in your city at weekends?<br>\
 Undoubtedly Yes. In HCMC, there is a wide range of recreational options and places for people to choose, ranging from shopping malls, cinemas to night markets, bars and so on."
 	,vi:"1) Bạn có thích đi xem phim vào cuối tuần không?<br>\
-Có chứ. Tôi là một người thích xem phim. Mỗi cuối tuần, sau khi đi chơi, tôi và bạn bè thường chọn rạp chiếu phim là điểm đến cuối cùng để tận hưởng ngày nghỉ và xem những bộ phim mới nhất.<br>\
+Có chứ, chắc chắn rồi. Tôi là một người thích xem phim. Mỗi cuối tuần, sau khi đi chơi, tôi và bạn bè thường chọn rạp chiếu phim là điểm đến cuối cùng để tận hưởng ngày nghỉ và xem những bộ phim mới nhất.<br>\
 2) Bạn thích làm gì nhất vào cuối tuần?<br>\
 Như tôi đã nói, tôi thích đi chơi với bạn bè vào thứ Bảy và Chủ Nhật. Chúng tôi chủ yếu làm những việc như tán gẫu trong khi uống trà, sau đó chụp ảnh tự sướng. Đó thực sự là cách tốt nhất để thư giãn và giải tỏa căng thẳng.<br>\
 3) Bạn có nghĩ rằng có đủ những điều thú vị để làm ở thành phố của bạn vào cuối tuần không?<br>\
-Chắc chắn là có. Ở HCM, có rất nhiều lựa chọn giải trí và địa điểm để mọi người lựa chọn, từ trung tâm mua sắm, rạp chiếu phim đến chợ đêm, quán bar, vvv"
+Chắc chắn là có. Ở TPHCM, có rất nhiều lựa chọn giải trí và địa điểm để mọi người lựa chọn, từ trung tâm mua sắm, rạp chiếu phim đến chợ đêm, quán bar, vv."
 	,voca:"an avid movie-goer,gossip,recreational options"
 	,note:"An avid movie-goer: một người thích đi xem phim Avid /ˈæv.ɪd/ : Ham mê Movie-goer /ˈmuː.viˌɡəʊ.ər/ : Người xem phim Ví dụ: His mother was a chemist and an avid movie goer.|To gossip /ˈɡɒs.ɪp/ : Nói chuyện phiếm Ví dụ: Jane and Lyn sat in the kitchen having a good gossip about their friends.|Recreational options: Lựa chọn để giải trí Recreational /ˌrek.riˈeɪ.ʃən.əl/ : giải trí Options /ˈɒp.ʃən/ : Lựa chọn Ví dụ: Recreational options are available in Garrison itself."
 },{

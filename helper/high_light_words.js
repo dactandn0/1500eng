@@ -83,13 +83,15 @@ function IRR_ExtractWords(story)
 		// remove phraVerbs out of words
 		words = words.filter(function(ele) { return ele !== word && ele !== prep && ele !== prep2})
 	}
-	words.sort((a, b) => b.length - a.length);
+	words = Helper_ArrSortEleLength(words)
 
 	// adv of degree + special
 	regex = new RegExp(`\\b(${specialWord_Regex})\\b` , 'gi')
+	
 	var specialWords = english.match(regex);
 	specialWords = Helper_ArrRemoveDup(specialWords)
-	specialWords.sort((a, b) => b.length - a.length);
+
+	specialWords = Helper_ArrSortEleLength(specialWords)
 
 	// remove out of words
 	if (specialWords)
@@ -129,25 +131,8 @@ function IRR_ExtractWords(story)
 			}
 		}
 	}
-	console.log(words)
-	/*
-	// dont ngClick with she,he,it if graph has: she's, he's...
-	wordRutgons = words.filter(function(ele) { return ele.indexOf("'") !== -1 })
-	var finalWords = []
-	var flat = false
-	for (var i = 0; i < words.length; i++) {
-		var ele = words[i]
-		flat = false
-		for (var j = 0; j < wordRutgons.length; j++) {
-			var rutgon = wordRutgons[j]
-			if (rutgon.indexOf(ele) !== -1) {
-				flat = true
-			}
-		}
-		if (!flat) finalWords.push(ele)
-	}
-	finalWords = finalWords.concat(wordRutgons)
-	*/
+//	console.log(words)
+
 
 	//console.log(finalWords)
 	//console.log(phraVerbs)

@@ -8,18 +8,7 @@ var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes
 ,incredibly,considerably,particularly,significantly\
 ,a bit of,a sense of,a bit,a lot"
 
-function soft_words ()
-{
-	SPECIAL_WORDS = SPECIAL_WORDS.split(',')
-	SPECIAL_WORDS.sort((a,b) =>
-	{
-		aArr = a.split(' ')
-		bArr = b.split(' ')
-		return bArr.length - aArr.length
-	})
-	SPECIAL_WORDS = SPECIAL_WORDS.toString();
-}
-soft_words();
+SPECIAL_WORDS = Helper_SoftStringData(SPECIAL_WORDS)
 
 const NOUN_SAME_VERBS = "attempt,compliment,cause,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\
@@ -341,33 +330,3 @@ function testS(word) {
 function testIng(word) {
 	console.log(Helper_N_V_Add_ING(word))
 }
-
-// testED('poison')
-// testED('darken')
-// testED('cook')
-// testED('help')
-// testED('watch')
-
-// testLy('incredible')
-// testEST('small')
-// testEST('bad')
-// testEST('near')
-// testEST('bad')
-// testEST('slowly')
-// testEST('slowly')
-// testEST('narrow')
-
-
-//testS('Nutrient')
-/*
- testIng("Fix")
- testIng("Snow")
- testIng("Sleep")
- testIng("Prefer")
- testIng("Lie")
- testIng("Die")
- testIng("Arrive")
- testIng("agree")
- testIng("live")
-*/
-

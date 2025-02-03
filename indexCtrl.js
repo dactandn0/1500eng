@@ -196,13 +196,23 @@ $scope.Index_NoteVoca_Speak = function (word) {
   Text2Speech(concatWord.trim());
 }
 
-// click word to speech
+// vocaEbook Touch
+$scope.vocaEbookSpeech = function (event) {
+  event.stopPropagation()
+  ngClickSpeechShowToast(event.target.innerText)
+}
+
+// ng-click word to speech
 $scope.Idx_n_L_WSp_ = function (event) {
   event.stopPropagation()
-
   var touchedWord = Helper_getTouchTextEvent(event)
-  Helper_ngClickWordSpeak(touchedWord);
-  
+  ngClickSpeechShowToast(touchedWord)
+}
+
+ngClickSpeechShowToast = function (touchedWord) 
+{
+  Text2Speech(touchedWord);
+
   var result = IELTS_SYN_IsIn(touchedWord)
   if (result !== '') {
      doShowToast(result, true);

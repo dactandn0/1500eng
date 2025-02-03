@@ -135,10 +135,6 @@ Helper_Speak = function (event, txt) {
 	Text2Speech(target)
 }
 
-Helper_ngClickWordSpeak = function (txt) {
-	Text2Speech(txt)
-}
-
 function Text2Speech(word) {
 	if (!UtterEnd) return;
 	speechSynthesis.getVoices();
@@ -148,9 +144,6 @@ function Text2Speech(word) {
 	utter.rate  = Helper_loadFloat(Helper_AudioRateKey, 1);
 	utter.volume  = 1;
 	utter.lang='en-US';
-	// var selectedVoice = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
-	// if (selectedVoice !== -1)
-	// utter.voice= Helper_Voices[selectedVoice];
 
 	utter.addEventListener('end', (evt) => {
 		const { charIndex, utterance } = evt
@@ -189,56 +182,3 @@ Helper_SliceHalfString = function (str) {
 	return { p1:partOne, p2:partTwo, full:str }
 }
 
-function makeVocaEbook(rtScrope, ...args)
-{
-	rtScrope.vocaEbook = []
-	for (var i = 0; i < args.length; i++)
-	{
-		var book = args[i];
-		for (var k = 0; k < book.length; k++) 
-		{
-			var lesson = book[k]
-			if (lesson.voca && lesson.voca.trim().length > 0)
-			{
-				var vocas = lesson.voca.split(',');
-				var color = "blue";
-				if (k % 2=== 0) color = 'green'
-				var jsonEle = {
-					unit: lesson.unit ? lesson.unit : '#',
-					title:lesson.title ? lesson.title : '#',
-					color: color,
-					vocas: vocas
-				}
-				rtScrope.vocaEbook.push(jsonEle)
-			}
-		}
-	}
-//	console.log('makeVocaEbook::: ' + rtScrope.vocaEbook)
-	
-}
-
-function Helper_getTouchTextEvent(ev)
-{
-  var KKK = kNgClickTagName.toUpperCase()
-
-  var target = ev.target
-
-   if (target.nodeName == KKK
-  	&& target.parentNode.nodeName == KKK
-  	) 
-  	return target.parentNode.innerText
-
-  if (target.nodeName == KKK
-  	&& target.parentNode.parentNode.nodeName !== KKK
-  	) 
-  	return target.innerText
-
-  while (target.parentElement) {
-    target = target.parentNode;
-    if (target.nodeName == KKK)
-     {
-      return target.innerText
-     }
-  }
-  return;
-}

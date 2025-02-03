@@ -200,7 +200,7 @@ Tóm lại, cách mọi người diễn giải một sự kiện khiến sự ki
 Cụ thể, điều gì khiến mọi người đánh giá một tình huống là căng thẳng? Câu trả lời phụ thuộc vào mức độ đe dọa hoặc thách thức mà nó có vẻ như vậy. Những hoàn cảnh đe dọa hoặc thách thức cảm giác hạnh phúc của một người sẽ tạo ra căng thẳng. Những hoàn cảnh không đe dọa hoặc thách thức chúng ta thì không gây căng thẳng.<br>\
 Nhìn nhận căng thẳng theo cách này giúp chúng ta có định nghĩa chung về khái niệm căng thẳng: Căng thẳng là phản ứng với những hoàn cảnh có vẻ đe dọa hoặc thách thức.<br>\
 Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất cả phụ thuộc vào cách chúng ta đánh giá hoàn cảnh. Ngoài ra, những điều khiến chúng ta căng thẳng ngày hôm nay có thể không gây căng thẳng cho chúng ta vào thời điểm khác. Và điều ngược lại mới đúng: những thứ trước đây không gây căng thẳng thì giờ đây có thể gây căng thẳng."
-	,voca:"interpret,stressor,circumstance,appraise,surprisingly",
+	,voca:"bothersome,appraise,challenge,concept,define,interpretation,vary,react,interpret,stressor,circumstance,appraise,surprisingly",
 },{
 	title:"Hot Days, Hot Nights ",
 	unit:6,

@@ -251,7 +251,7 @@ Những thứ làm từ vật liệu không phân hủy sinh học như nhựa, 
 	track:"1.15",
 	title:"Sport",
 	en:"1) What sports did you do when you were a kid?<br>\
-Actually I didn't play any sports when I was a little girl. Instead, I just spent all my childhood playing traditional games such as hide and seek, bag jumping,...<br>\
+Actually I didn't play any sports when I was a little boy. Instead, I just spent all my childhood playing traditional games such as hide and seek, bag jumping,...<br>\
 2) What's your favorite sport? Why?<br>\
 Now, I'm still not a sporty person so I don't have a passion for any particular kinds of sport. But if I have to choose one, I would love to take up swimming. Well, I think it's kinda exhilarating and good fun to relax during a boiling hot weather.<br>\
 3) Do you watch sports? Why? <br>\
@@ -266,7 +266,8 @@ Giờ tôi vẫn không phải là người thích thể thao nên không đam m
 Không. Tôi không thích xem thể thao. Tôi thấy nó rất nhàm chán. Thực ra, tôi thích xem phim hài hoặc phim truyền hình hơn vì chúng khiến tôi cười ngặt nghẽo để giải tỏa căng thẳng.<br>\
 4) Bạn có hâm mộ đội thể thao nào không? Tại sao? <br>\
 Thành thật mà nói, tôi không có đội bóng yêu thích vì như tôi đã nói, tôi không thích xem những trận đấu này. Tuy nhiên, tôi rất ngưỡng mộ đội tuyển bóng đá quốc gia Việt Nam. Bạn biết đấy, tất cả các cầu thủ đều có kỹ năng mặc dù họ còn trẻ."
-	,voca:"cup of tea,exhilarating,have a passion for,sporty",
+	,voca:"cup of tea,exhilarating,have a passion for,sporty,Vietnamese national football,comedies"
+	,note:"A sporty /ˈspɔː.ti/: một người yêu thích và giỏi thể thao Ví dụ: Guy wasn’t really the sporty type. |To have a passion for something: có niềm đam mê, yêu thích về một cái gì đó Passion /ˈpæʃ.ən/ : đam mê Ví dụ:  I have a passion for history. |To be exhilarating and good fun: hứng khởi và vui vẻ Exhilarating /ɪɡˈzɪl.ə.reɪ.tɪŋ/ : Hứng khởi Ví dụ: His work is exhilarating and good fun |A boiling hot weather: thời tiết nóng sôi (nóng như nước sôi) Boiling  /ˈbɔɪ.lɪŋ/: sôi Hot /hɒt/ : nóng Weather /ˈweð.ər/ :thời tiết Ví dụ: We don’t usually have such boiling hot weather. |My cup of tea (idiom): sở thích của tôi Ví dụ: Opera is not my cup of tea. |To be tedious /ˈtiː.di.əs/ : buồn chán Ví dụ:  The problem is I find most forms of exercise so tedious. |Laugh hysterically: cười một cách điên cuồng Hysterically  /hɪˈster.ɪ.kəl.i/ : điên cuồng, cuồng loạn Laugh /lɑːf/ : Cười Ví dụ: She started laughing hysterically. |To be fond of: thích Ví dụ: She was very fond of horses |Having said that: mặc dù vậy Ví dụ: He forgets most things, but having said that, he always remembers my birthday."
 },{
 	track:"1.16",
 	title:"Borrowing / Lending",
@@ -282,7 +283,8 @@ Có, thỉnh thoảng, trong những trường hợp bất ngờ. Ví dụ, hôm
 Tôi không ngại cho mượn đồ miễn là người mượn hứa sẽ trả lại cho tôi đúng hạn và trên hết, họ phải là người có trách nhiệm vì tôi không muốn thấy đồ đạc của mình bị hư hỏng.<br>\
 3) Bạn cảm thấy thế nào khi mọi người không trả lại đồ họ mượn của bạn?<br>\
 Về cơ bản, những người đó sẽ để lại ấn tượng xấu với tôi. Họ đã phản bội lòng tin của tôi. Thực ra thì cũng không nghiêm trọng lắm nhưng sau chuyện đó, tôi sẽ không cho họ mượn bất cứ thứ gì nữa."
-	,voca:"get into debt,betrayed my trust",
+	,voca:"get into debt,betrayed my trust"
+	,note:"To get into debt: nợ nần Debt  /det/ : nợ Ví dụ: He got into debt after he lost his job. |On top of that: trên hết là Ví dụ: On top of that, it was funny. |To leave a bad impression on somebody: để lại ấn tượng xấu cho ai đó Impression  /ɪmˈpreʃ.ən/ : ấn tượng Ví dụ: Remember, bad hygiene will leave a bad impression on everyone | To be betrayed my trust: phản bội lòng tin Betray /bɪˈtreɪ/: phản bội Trust /trʌst/: lòng tin Ví dụ:  My girlfriend betrayed my trust"
 },{
 	track:"1.17",
 	title:"Voice",
@@ -306,7 +308,8 @@ Tôi không chắc nhưng tôi không nghĩ là có bất kỳ thay đổi đán
 Tôi đoán là không vì tôi chưa bao giờ gặp hai người có cùng một giọng nói, chứ đừng nói là tất cả mọi người. Giọng nói của mỗi người khác nhau và nó sẽ khác nhau về cao độ, âm lượng hoặc tông giọng.<br>\
 5) Bạn có sử dụng cùng một giọng nói mọi lúc không? <br>\
 Có lẽ là không. Bất cứ khi nào tôi đang trong một cuộc thảo luận căng thẳng, tôi thường tăng âm lượng và tông giọng để nhấn mạnh hơn vào thông điệp mà tôi đang truyền tải."
-	,voca:"let alone,vary from person to person,awkward,fluent at,a heated discussion,raise the tone and volume",
+	,voca:"let alone,vary from person to person,awkward,fluent at,a heated discussion,raise the tone and volume"
+	,note:" A local accents: giọng địa phương Local /ˈləʊ.kəl/: địa phương Accents /ˈæk.sənt/: giọng Ví dụ: He speaks with a local accent. |To be thicker /θɪk/: trầm hơn Ví dụ: Closed-circuit security cameras are probably thicker on the ground in Britain than in any other country. |To be awkward /ˈɔː.kwəd/: kỳ quặc, ngượng ngùng Ví dụ: He seemed a little awkward when I first met him. | To be fluent at /ˈfluː.ənt/: trôi chảy, lưu loát Ví dụ: There was not anything fluent at all about our offense |High-pitched /ˌhaɪˈpɪtʃt/: giọng cao Ví dụ: He talks to his dog in the most ridiculous high pitched voice. |Let alone /let əˈləʊn/: huống chi, huống hồ Ví dụ: Some people never even read a newspaper, let alone a book. |To vary from person to person: khác biệt giữa người này với người khác Vary /ˈveə.ri/: thay đổi. Person /ˈpɜː.sən/: người Ví dụ: The effects will vary from person to person. |A heated discussion: cuộc tranh luận nảy lửa Heated /ˈhiː.tɪd/: nổi nóng Discussion /dɪˈskʌʃ.ən/: cuộc tranh luận Ví dụ: Her remarks on the employment question led to a heated discussion. |To raise the tone and volume: lên tông giọng và lớn tiếng Raise /reɪz/: làm cho thứ gì đó tăng lên Tone /təʊn/: tông giọng volume /ˈvɒl.juːm/: độ lớn của âm thanh Ví dụ: My boss raise the tone and volume to me"
 },{
 	track:"1.18",
 	title:"Haircut",
@@ -334,7 +337,8 @@ Ai cũng phải có, ít nhất một lần trong đời, và tôi cũng không 
 Nếu tôi không nhầm thì đã một tháng kể từ lần cuối cùng tôi làm tóc. Tôi đang định đến tiệm cắt tóc vào tuần tới để cắt tóc và tạo kiểu cho sinh nhật của mình.<br>\
 6) Người Việt Nam thường cắt tóc vào những dịp nào? <br>\
 Vâng, mọi người ở đất nước tôi thường cắt tóc và tạo kiểu trước những dịp quan trọng như sinh nhật, lễ Tết, vv; hoặc đơn giản là khi nó đạt đến một độ dài nhất định."
-	,voca:"undercut,compatible with, barber,have it cut,facial massage, amount to,attention,megatrend",
+	,voca:"undercut,compatible with, barber,have it cut,facial massage, amount to,attention,megatrend"
+	,note:"Undercut /ˌʌn.dəˈkʌt/: kiểu tóc undercut Ví dụ: My favorite hairstyle is the undercut style |To be compatible with /kəmˈpæt.ə.bəl/: thích hợp với Ví dụ: Such policies are not compatible with democratic government. |Barber /ˈbɑː.bər/: thợ cắt tóc Ví dụ: He used to work as a barber. |To have it cut and dyed: cắt và nhuộm tóc cut /kʌt/: cắt dyed /daɪ/: thay đổi màu sắc của vật bằng chất lỏng, trong trường hợp này là nhuộm tóc. Ví dụ: My girl friend will have it cut and dyed before TET holiday |To refresh /rɪˈfreʃ/: làm mới Ví dụ: A good night’s sleep will refresh you. |To do multiple things at the same time: làm nhiều việc cùng lúc Ví dụ: The Congress and its members can do multiple things at the same time |To get a facial massage: mát-xa mặt facial /ˈfeɪ.ʃəl/: thuộc hoặc nằm trên khuôn mặt massage /ˈmæs.ɑːʒ/: mát-xa Ví dụ:  I get a facial massage in every day |To amount to /əˈmaʊnt/: lên đến Federal and state costs for building and operating prisons amounted to $25 billion. |Megatrend: xu hướng lớn (toàn cầu) Ví dụ:  The advance of technology constitutes a development megatrend with megatrend with huge potential. | To give it a try: thử Ví dụ:  You can give it a try here. | Unnecessary attention: sự chú ý không cần thiết Unnecessary /ʌnˈnes.ə.ser.i/: không cần thiết attention /əˈten.ʃən/: sự chú ý Ví dụ: It would create unnecessary attention."
 },{
 	track:"1.19",
 	title:"Friend",

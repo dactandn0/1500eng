@@ -132,8 +132,6 @@ function doMenu_Listening()
 	}
 	var r = []
 	r.push(menu)
-	console.log(r)
-
 	return r
 }
 

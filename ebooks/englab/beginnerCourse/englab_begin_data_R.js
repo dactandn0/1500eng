@@ -156,14 +156,14 @@ Các phong trào bảo vệ động vật khác đã xuất hiện rồi biến 
 <br>\
 Vào những năm 2010, các cuộc biểu tình và hoạt động công khai có thể sẽ chuyển sang một số loài có nguy cơ tuyệt chủng khác. Rất nhiều loài trong số chúng cần được quan tâm khẩn cấp. Trong thời gian này, liệu loài voi có bị lãng quên không?"
 	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamental,endangered,fade,profitable,publicity,shelter,pup,slaughter,supposedly,survive,tuna,tusk,urgently"
-	,T_F_NG: "09. Many of the animals on Earth die because humans have to survive.<br>\
-10. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
-11. People who kill animals illegally often get away without being caught.<br>\
-12. Wildlife protection groups proved that the number of some elephant species is decreasing.<br>\
+	,T_F_NG: "09F. Many of the animals on Earth die because humans have to survive.<br>\
+10F. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
+11T. People who kill animals illegally often get away without being caught.<br>\
+12T. Wildlife protection groups proved that the number of some elephant species is decreasing.<br>\
 13. Poachers are severely punished if they kill the endangered species such as elephants. <br>\
-14. In the late 1980s, people killed more seal pups than they did in the late 1970s.<br>\
+14T. In the late 1980s, people killed more seal pups than they did in the late 1970s.<br>\
 15. The whale population is finally increasing because of stricter laws.<br>\
-16. In the 2010s, people may not be so concerned about elephants as before."
+16T. In the 2010s, people may not be so concerned about elephants as before."
 	,note:"have nothing to do = không liên quan"
 },{
 	title:"What Is Happening to Our Planet?",
@@ -277,7 +277,15 @@ Bạn đốt nhiên liệu hóa thạch khi nào? Khi bạn bật đèn, hoặc 
 Nhưng làm sao carbon dioxide có thể có hại khi con người thở ra nó mỗi khi hít thở? Thực vật cần carbon dioxide; chúng sử dụng nó để phát triển. Đại dương hấp thụ nó. Và rừng hấp thụ nó. Nếu không có carbon dioxide, nhiệt độ bề mặt trung bình trên Trái đất sẽ là 0 độ F, thay vì 59 độ F. Trong tự nhiên, carbon dioxide là cần thiết và vô hại. Vấn đề ở đây là: trong nỗ lực biến thế giới thành một nơi dễ chịu hơn, con người đã tạo ra quá nhiều carbon dioxide.<br>\
 Bằng cách khoan lỗ vào các sông băng và kiểm tra các bong bóng khí bị mắc kẹt trong băng cổ đại, bằng cách quan sát các mô thực vật hóa thạch, thậm chí bằng cách quan sát không khí bị bịt kín trong các kính viễn vọng cũ, các nhà khoa học đã tính toán rằng bầu khí quyển trước Cách mạng Công nghiệp chứa khoảng 280 phần triệu carbon dioxide - mức cao nhất được ghi nhận trong 160.000 năm qua. Chỉ số hiện tại là gần 360 phần triệu. Trong 140 năm tới, mức carbon dioxide sẽ đạt ít nhất 560 phần triệu.<br>\
 Chúng ta đã tăng lượng carbon dioxide trong không khí lên 25 phần trăm trong thế kỷ qua. Tuy nhiên, carbon dioxide không phải là nguyên nhân duy nhất gây ra vấn đề nhà kính. Các loại khí nhà kính khác bao gồm chlorofluorocarbon, nitơ oxit và mêtan."
-	,voca:"absorb,bubble,by-product,calculated,catchphrases,civilised,contained,contribute,current,drill,exclusively,exhale,Fahrenheit,fossil,fuel,Industrial Revolution,release,telescopes,term,toast",
+	,voca:"absorb,bubble,by-product,calculated,catchphrases,civilised,contained,contribute,current,drill,exclusively\
+	,exhale,Fahrenheit,fossil,fuel,Industrial Revolution,release,telescopes,term,toast"
+	,T_F_NG:"10Y. People usually do not understand what catchphrases really mean. <br>\
+11N. Most of the growth in industrial production in the past 100 years came before 1950. <br>\
+12Y. Carbon dioxide allows heat to be trapped in the Earth's atmosphere. <br>\
+13. People burn more fossil fuels when they take a hot shower than when they make toast. <br>\
+14Y. People who use electricity help to produce the greenhouse effect. <br>\
+15Y. The carbon dioxide level in the next 140 years will increase at least by two times what it was before the Industrial Revolution.<br>\
+16. Carbon dioxide causes more problems than the other greenhouse gases do."
 },{
 	unit:"8",
 	title:"University of Western Sydney Macarthur"
@@ -308,6 +316,71 @@ Yêu cầu tuyển sinh đối với các khóa học cấp bằng Cử nhân <b
 Yêu cầu về tiếng Anh<br>\
 Người nộp đơn phải chứng minh rõ ràng trình độ tiếng Anh của mình bằng cách đạt được, ví dụ, 570 điểm TOEFL hoặc 6.0 điểm IELTS hoặc cung cấp bằng chứng về việc học tiếng Anh tại một trường học hoặc trường đại học có ngôn ngữ giảng dạy là tiếng Anh và được UWS Macarthur coi là đạt yêu cầu. Một số chương trình yêu cầu trình độ tiếng Anh cao hơn. Các khóa học tiếng Anh có sẵn thông qua Trung tâm tiếng Anh Macarthur tại cơ sở Campbelltown."
 	,voca:"achieve,annual,attempting,booklet,campus,charge,constant,deem,demonstrated,duration,enrolment,equivalent,evidence,exceed,Honours degrees,instruction,mature,merits,metropolitan,proficiency,qualifications,secondary,tuition"
+},{
+	unit:9
+	,title:"All about Renting"
+	,en:"To make your move into an apartment as smooth as possible, we would like to make you aware of what will take place before you are settled. Being prepared and avoiding problems can make it an easier and happier experience.<br>\
+The first thing you must decide is how much of your income can be spent for your monthly rental. Besides the rent, the coverage of the monthly electric bill and your phone charges should also be considered. Heat and water costs are almost always included in your rent. Some rental units contain an individual heating system, in which case you will have heating costs.<br>\
+APPLICATION-When you make application to rent an apartment, it has always been com mon practice to check your credit and references. You may now be required to pay a fee to have your application professionally checked.<br>\
+If you do not want to hold up the process of confirming your rental, you should be prepared for the costs of application, security and pet deposits.<br>\
+DEPOSITS - You must expect to pay a deposit which can come under the name of security, damage or cleaning deposit. They can range from a fee of $50 and up, or equal to a full month's rent. This is insurance for the building owner against damage or unusual cleaning after you have left, which means part or all of the deposit could be retained; otherwise, it is refunded to you. The exact requirements for the deposit should be in writing so that you know what the money is for and under what circumstances it can be retained or returned to you. You must also expect to pay an additional deposit if you have a pet.<br>\
+Many buildings may have a form available to check off items in the apartment and indicate their condition. If there is a tear in the carpet or a scratch on an appliance, it will be a matter of record and you cannot be charged for that later. If such a form is not available, you can walk through the apartment with the manager making your own list, having it signed by the manager and yourself.<br>\
+All of this is a protection for you as well as the building owner and note that under a law enacted in 1973, your deposit will earn interest at an annual rate of 3%. The deposit must also be returned to you within 3 weeks after you have vacated, or the owner must provide you a written notice about the specific reason for withholding the deposit. You are required to provide your building owner with a mailing address in order to receive your deposit within 3 weeks.<br>\
+COMPLAINT - It is not unusual that something may not function properly in your apart ment. It certainly has happened wherever you have lived before. If an appliance is not working, a faucet is leaking, and so on, put the problem in writing and give it to your manager or caretaker.<br>\
+If you have any serious complaints, you should call the building manager. If some action is not following, you can call the Minnesota Multi-Housing Association 'Hot Line' at 858-8222 between 2:00 and 5:00 pm. during weekdays for help or service."
+	,vi:"Để việc chuyển đến căn hộ của bạn diễn ra suôn sẻ nhất có thể, chúng tôi muốn bạn biết những gì sẽ diễn ra trước khi bạn ổn định. Việc chuẩn bị và tránh các vấn đề có thể giúp bạn có trải nghiệm dễ dàng và vui vẻ hơn.<br>\
+Điều đầu tiên bạn phải quyết định là bạn có thể chi bao nhiêu tiền thu nhập cho tiền thuê nhà hàng tháng. Bên cạnh tiền thuê nhà, bạn cũng nên cân nhắc đến hóa đơn tiền điện hàng tháng và cước phí điện thoại. Chi phí sưởi ấm và nước hầu như luôn được bao gồm trong tiền thuê nhà của bạn. Một số căn hộ cho thuê có hệ thống sưởi ấm riêng, trong trường hợp đó, bạn sẽ phải trả chi phí sưởi ấm.<br>\
+ĐƠN XIN-Khi bạn nộp đơn xin thuê căn hộ, bạn thường kiểm tra tín dụng và thông tin tham khảo của mình. Bây giờ, bạn có thể được yêu cầu trả một khoản phí để đơn xin thuê của bạn được kiểm tra chuyên nghiệp.<br>\
+Nếu bạn không muốn trì hoãn quá trình xác nhận việc thuê nhà, bạn nên chuẩn bị chi phí nộp đơn, tiền đặt cọc an ninh và tiền đặt cọc cho vật nuôi.<br>\
+TIỀN ĐẶT CỌC - Bạn phải trả một khoản tiền đặt cọc có thể được gọi là tiền đặt cọc an ninh, tiền đặt cọc thiệt hại hoặc tiền đặt cọc vệ sinh. Phí có thể dao động từ 50 đô la trở lên hoặc bằng tiền thuê nhà cả tháng. Đây là bảo hiểm cho chủ tòa nhà chống lại thiệt hại hoặc việc dọn dẹp bất thường sau khi bạn rời đi, nghĩa là một phần hoặc toàn bộ tiền đặt cọc có thể bị giữ lại; nếu không, bạn sẽ được hoàn lại tiền. Các yêu cầu chính xác về tiền đặt cọc phải được ghi lại bằng văn bản để bạn biết số tiền đó dùng để làm gì và trong trường hợp nào số tiền đó có thể bị giữ lại hoặc trả lại cho bạn. Bạn cũng phải trả thêm tiền đặt cọc nếu bạn nuôi thú cưng.<br>\
+Nhiều tòa nhà có thể có biểu mẫu để kiểm tra các vật dụng trong căn hộ và ghi rõ tình trạng của chúng. Nếu thảm bị rách hoặc thiết bị bị xước, đó sẽ là vấn đề ghi chép và bạn không thể bị tính phí sau này. Nếu không có biểu mẫu như vậy, bạn có thể đi bộ quanh căn hộ cùng với người quản lý để lập danh sách của riêng bạn, có chữ ký của người quản lý và bạn.<br>\
+Tất cả những điều này là để bảo vệ bạn cũng như chủ tòa nhà và lưu ý rằng theo luật được ban hành năm 1973, tiền đặt cọc của bạn sẽ được hưởng lãi suất hàng năm là 3%. Tiền đặt cọc cũng phải được trả lại cho bạn trong vòng 3 tuần sau khi bạn đã chuyển đi, hoặc chủ nhà phải cung cấp cho bạn thông báo bằng văn bản về lý do cụ thể để giữ lại tiền đặt cọc. Bạn phải cung cấp cho chủ tòa nhà của mình địa chỉ gửi thư để nhận được tiền đặt cọc trong vòng 3 tuần.<br>\
+Khiếu nại - Không có gì lạ khi một thứ gì đó có thể không hoạt động bình thường trong căn hộ của bạn. Chắc chắn điều đó đã xảy ra ở bất cứ nơi nào bạn từng sống trước đây. Nếu một thiết bị không hoạt động, vòi nước bị rò rỉ, v.v., hãy nêu vấn đề bằng văn bản và gửi cho người quản lý hoặc người trông coi của bạn.<br>\
+Nếu bạn có bất kỳ khiếu nại nghiêm trọng nào, bạn nên gọi cho người quản lý tòa nhà. Nếu một số hành động không được thực hiện, bạn có thể gọi đến 'Đường dây nóng' của Hiệp hội Nhà ở Đa năng Minnesota theo số 858-8222 từ 2:00 đến 5:00 chiều trong các ngày trong tuần để được trợ giúp hoặc dịch vụ."
+	,voca:"appliance,application,bill,caretaker,confirming,coverage,credit,damage,deposit,enacted,faucet,function\
+	,income,indicate,individual,insurance,item,leak,pet,process,references,refunded,rental,retained,scratch,security,smooth,tear,vacated,withholding"
+	,note:""
+	,T_F_NG:"10Y. The electric and telephone bills are probably excluded in the monthly rental. <br>\
+11. When you apply for renting an apartment, professionals hired by the building owner will check your application.<br>\
+12Y. If you want to have a pet in the rented apartment, you should pay the deposit for the pet. <br>\
+13. Making your own list of the items in the apartment is better than using the form provided by the buildings.<br>\
+14N. The building owner is not supposed to send the deposit to you after you have left. <br>\
+15Y. It is quite common that something in the apartment may not be working properly. <br>\
+16N. You are advised to call the manager if the TV set in your apartment is not working properly. <br>\
+17N. The Minnesota Multi-Housing Association 'Hot Line' offers help and service seven days a week."
+},{
+	unit:"9"
+	,title:"All about Renting"
+	,en:"SAFEIY - It is important to all of us to feel safe and secure in our homes. First of all, your neighbours and the building manager begin to know about your schedule, and any irregularity would make them question any activity that was out of pattern. It is better for you to notify your neighbours or the manager that you will be gone for a few days and ask them to pick up your mail or paper.<br>\
+A building with controlled entry systems seems the ultimate in safety, but not when residents carelessly let anyone through the door as they enter, or let anyone in who rings with a particular reason to enter the building.<br>\
+Fire protection in the form of alarm systems and many neighbours to warn you if there is a fire in the building is extra security in an apartment building.<br>\
+In addition, you should know that apartment owners carry extensive insurance on the apartment building and property within the building or the rental unit, but not on the ~· property belonging to you. Burglary, damage from fire, smoke, windstorm, explosion, or other misfortunes must be covered by you. It is recommended that you contact your insur ance agent regarding a Renter's Insurance Policy.<br>\
+LEASE - A lease or rental agreement becomes your next task and could be your most important consideration. A lease term could be for month to month, 6 months or one year. Your rent may be more per month on a short-term lease, typically if for under 6 months. Some buildings will require a one-year lease and some will accept or only give a 6-month lease.<br>\
+When it comes to terminating your lease, you must remember that Minnesota State Law requires that you give the building owner 30 days notice of your intent to vacate. You should present this notice in writing and deliver it the day before your rent is due. If the owner needs to evict a resident, he is also required to give 30 days notice in writing and deliver it the day before the rent is due. However, the owner may require 60 days notice of termination of a lease as stated in the rental agreement. It is important that you read your lease and understand it before signing. It is for your protection as well as the owner and here are some of the reasons:<br>\
+1) It specifies in writing what the building owner's responsibilities are and what yours are. <br>\
+2) It protects you against rent increases for the term of your lease and against being evicted without any proper reasons.<br>\
+3) It describes policies and procedures to avoid misunderstanding and problems in the future.<br>\
+4) It explains procedures for terminating your lease if the necessity arises. If there is any part of your lease or rental agreement that you do not understand, be sure to que~tion it before signing. The management prefers to clear up any confusion at the start than have an unhappy resident at some later date."
+	,vi:"AN TOÀN - Điều quan trọng đối với tất cả chúng ta là cảm thấy an toàn và bảo mật trong ngôi nhà của mình. Trước hết, hàng xóm và người quản lý tòa nhà sẽ bắt đầu biết về lịch trình của bạn và bất kỳ sự bất thường nào cũng sẽ khiến họ nghi ngờ bất kỳ hoạt động nào không theo quy trình. Tốt hơn hết là bạn nên thông báo cho hàng xóm hoặc người quản lý rằng bạn sẽ đi vắng trong vài ngày và yêu cầu họ lấy thư hoặc báo của bạn.<br>\
+Một tòa nhà có hệ thống kiểm soát ra vào có vẻ là sự an toàn tối ưu, nhưng không phải khi cư dân bất cẩn để bất kỳ ai qua cửa khi họ vào hoặc để bất kỳ ai gọi điện thoại với lý do cụ thể nào đó vào tòa nhà.<br>\
+Bảo vệ cháy nổ dưới dạng hệ thống báo động và nhiều hàng xóm cảnh báo bạn nếu có hỏa hoạn trong tòa nhà là biện pháp an ninh bổ sung trong một tòa nhà chung cư.<br>\
+Ngoài ra, bạn nên biết rằng chủ sở hữu căn hộ có bảo hiểm mở rộng cho tòa nhà chung cư và tài sản trong tòa nhà hoặc đơn vị cho thuê, nhưng không phải cho tài sản ~· thuộc về bạn. Trộm cắp, thiệt hại do hỏa hoạn, khói, gió bão, nổ hoặc những điều không may khác phải do bạn chi trả. Bạn nên liên hệ với đại lý bảo hiểm của mình về Chính sách bảo hiểm người thuê nhà.<br>\
+THUÊ - Hợp đồng thuê hoặc cho thuê sẽ là nhiệm vụ tiếp theo của bạn và có thể là cân nhắc quan trọng nhất của bạn. Thời hạn thuê có thể là theo tháng, 6 tháng hoặc một năm. Tiền thuê nhà của bạn có thể cao hơn theo tháng đối với hợp đồng thuê ngắn hạn, thường là dưới 6 tháng. Một số tòa nhà sẽ yêu cầu hợp đồng thuê một năm và một số sẽ chấp nhận hoặc chỉ cho hợp đồng thuê 6 tháng.<br>\
+Khi chấm dứt hợp đồng thuê, bạn phải nhớ rằng Luật của Tiểu bang Minnesota yêu cầu bạn phải thông báo cho chủ sở hữu tòa nhà trước 30 ngày về ý định dọn đi của mình. Bạn nên trình bày thông báo này bằng văn bản và gửi vào ngày trước khi đến hạn trả tiền thuê nhà. Nếu chủ sở hữu cần trục xuất cư dân, họ cũng phải thông báo trước 30 ngày bằng văn bản và gửi vào ngày trước khi đến hạn trả tiền thuê nhà. Tuy nhiên, chủ sở hữu có thể yêu cầu thông báo trước 60 ngày về việc chấm dứt hợp đồng thuê như đã nêu trong hợp đồng cho thuê. Điều quan trọng là bạn phải đọc và hiểu hợp đồng thuê trước khi ký. Nó nhằm bảo vệ bạn cũng như chủ sở hữu và sau đây là một số lý do:<br>\
+1) Nó nêu rõ bằng văn bản trách nhiệm của chủ sở hữu tòa nhà và trách nhiệm của bạn. <br>\
+2) Nó bảo vệ bạn khỏi việc tăng tiền thuê nhà trong thời hạn thuê và khỏi bị đuổi ra ngoài mà không có lý do chính đáng.<br>\
+3) Nó mô tả các chính sách và thủ tục để tránh hiểu lầm và các vấn đề trong tương lai.<br>\
+4) Nó giải thích các thủ tục chấm dứt hợp đồng thuê của bạn nếu cần thiết. Nếu có bất kỳ phần nào trong hợp đồng thuê hoặc thỏa thuận cho thuê mà bạn không hiểu, hãy chắc chắn đặt câu hỏi trước khi ký. Ban quản lý thích giải quyết mọi sự nhầm lẫn ngay từ đầu hơn là để cư dân không hài lòng vào một thời điểm nào đó sau này."
+	,voca:"agent,agreement,Burglary,confusion,deliver,due,evict,intent,lease,mail,pattern,properly,resident,specify,task,termination,ultimate"
+	,note:""
+	,T_F_NG:"11. Your neighbours and the building manager will ask you about your schedule when you move in.<br>\
+12T. According to the passage, the longest term for the lease could be one year. <br>\
+13. The building owner will charged you double if the lease term is only for two months. <br>\
+14F. You can either phone to inform the building owner of your plan to move out or give him a written notice.<br>\
+15F. The building owner is required by law to give the resident 60 days notice if he wants to end the lease.<br>\
+16T. You can find in the rental agreement the building owner's responsibilities as well as yours. <br>\
+17T. According to the rental agreement, the building owner cannot evict the residents without any proper reasons.<br>\
+18T. You should ask before signing about any part of the lease which you do not understand. "
 }
 
 

@@ -220,7 +220,6 @@ familiar (a) /fəˈmɪliər quen thuộc<br>\
 grab chộp lấy<br>\
 hang (v) /hæŋ/ treo<br>\
 necessary (a) /ˈnesəseri/ cần thiết<br>\
-pattern (n) /ˈpætərn/ mẫu<br>\
 propose (v) /prəˈpoʊz/ đề xuất, cầu hôn<br>\
 purpose (n) /ˈpɜːrpəs/ mục đích<br>\
 require (v) /rɪˈkwaɪər/ yêu cầu<br>\
@@ -328,7 +327,6 @@ example ví dụ<br>\
 limit (n) /ˈlɪmɪt/ giới hạn<br>\
 local (a) /ˈləʊkl/ cục bộ, dân địa phương<br>\
 magical ma thuật<br>\
-mail thư<br>\
 dragon (n) /ˈdræɡən/ rồng<br>\
 novel tiểu thuyết<br>\
 outline (n) /ˈaʊtlaɪn/ phác thảo<br>\
@@ -464,7 +462,6 @@ amaze (v) /əˈmeɪz/ kinh ngạc<br>\
 charge tính phí<br>\
 comfort thoải mái<br>\
 contact liên hệ<br>\
-deliver (v) /dɪˈlɪvər/ giao hàng<br>\
 earn kiếm được<br>\
 gate cổng<br>\
 include (v) /ɪnˈkluːd/ bao gồm<br>\
@@ -517,7 +514,6 @@ striking (a) /ˈstraɪkɪŋ/ làm nổi bật<br>\
 flashy (a) /ˈflæʃi/ xa hoa, lòe loẹt<br>\
 gaudy (a) /ˈɡɔːdi/ xa hoa, lòe loẹt<br>\
 support (v) /səˈpɔːrt/ hỗ trợ<br>\
-task nhiệm vụ<br>\
 responsibility (n) /rɪˌspɑːnsəˈbɪləti/ (sự chịu) trách nhiệm<br>\
 unite đoàn kết<br>\
 associate liên kết<br>\
@@ -645,7 +641,6 @@ consist có<br>\
 desire mong muốn<br>\
 eager háo hức<br>\
 household hộ gia đình<br>\
-intent ý định<br>\
 landscape cảnh quan<br>\
 lift nâng<br>\
 load,lung tải,phổi<br>\

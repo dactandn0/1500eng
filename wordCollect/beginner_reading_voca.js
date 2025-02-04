@@ -1,12 +1,12 @@
  const BEGINNER_READING_VOCA = [
 {
-	title: "Beginner_reading_voca",
-	en: "interpret (v) hiểu cặn kẽ<br>\
-	circumstance (n) /ˈɪn.trə.vɜːt/ hoàn cảnh, tình huống<br>\
-	surprisingly (adv) /ˈɪn.trə.vɜːt/ kinh ngạc, ngạc nhiên<br>\
-	stressor (n) nhân tố gây stress<br>\
-	stressor (n) nhân tố gây stress<br>\
-	beneficial (n) có lợi<br>\
+ title: "Beginner_reading_voca",
+ en: "interpret (v) hiểu cặn kẽ<br>\
+ circumstance (n) /ˈɪn.trə.vɜːt/ hoàn cảnh, tình huống<br>\
+ surprisingly (adv) /ˈɪn.trə.vɜːt/ kinh ngạc, ngạc nhiên<br>\
+ stressor (n) nhân tố gây stress<br>\
+ stressor (n) nhân tố gây stress<br>\
+ beneficial (n) có lợi<br>\
 benefit (v) lợi ích /ˈbenɪfɪt/ <br>\
 border (n) /ˈbɔːrdər/ viền <br>\
 drastic (a) /ˈdræstɪk/ quyết liệt <br>\
@@ -67,11 +67,11 @@ catchphrase /'kretffreiz/ (n) câu cửa miệng<br>\
 civilise /'sivilaiz/ (v) <br>\
 contain /kan'tein/ (v) văn minh<br>\
 contribute /kan'tribju:t/ (v) <br>\
-current /'kArant/ adj. <br>\
+current /'kArant/ (a) <br>\
 drill / dril/ (v) máy khoan, khoan<br>\
-exclusively /ik'sklu:sivli/ (adv) <br>\
+exclusively (adv) /ik'sklu:sivli/ độc quyền<br>\
 exhale /eks'heil/ (v) thở ra, bay ra<br>\
-Fahrenheit /'freranhait/ adj. <br>\
+Fahrenheit /'freranhait/ (a) <br>\
 fossil /'fosl/ (n,a) (vật) hóa thạch<br>\
 fossilise /'fosilaiz/ (v) <br>\
 fuel /'fju:al/ (n) nhiên liệu<br>\
@@ -79,6 +79,53 @@ Industrial Revolution (n) Cách mạng công nghiệp<br>\
 release /ri'li:s/ (n,v) giải phóng, sự thả ra<br>\
 telescope /'teliskaup/ (n) kính thiên văn<br>\
 term /t3:m/ (n) thuật ngữ<br>\
+appliance (n) thiết bị<br>\
+application (n) ứng dụng<br>\
+bill (n) hóa đơn<br>\
+caretaker (n) người chăm sóc<br>\
+confirm (v) xác nhận<br>\
+coverage (n) phạm vi bảo hiểm<br>\
+credit (n) tín dụng<br>\
+damage (n) thiệt hại<br>\
+deposit (n) tiền gửi<br>\
+enact (v) đã ban hành<br>\
+faucet (n) vòi nước<br>\
+function (v) chức năng<br>\
+income (n) thu nhập<br>\
+indicate (v) chỉ ra<br>\
+individual (a) cá nhân<br>\
+insurance (n) bảo hiểm<br>\
+item (n) mục<br>\
+leak (v) rò rỉ<br>\
+pet (n) thú cưng<br>\
+process (n) quy trình<br>\
+reference (n) tham chiếu<br>\
+refund (v) hoàn trả<br>\
+rental (n) cho thuê<br>\
+retain (v) giữ lại<br>\
+scratch (n) trầy xước<br>\
+security (n) bảo mật<br>\
+smooth (a) mịn<br>\
+tear (n) rách<br>\
+vacated (v) bỏ trống<br>\
+withholding (v) giữ lại<br>\
+agent (n) đại lý<br>\
+agreement (n) thỏa thuận<br>\
+burglary (n) trộm cắp<br>\
+confusion (n) lẫn lộn<br>\
+deliver (v) /dɪˈlɪvər/ giao hàng<br>\
+due (a) đến hạn<br>\
+evict (v) trục ​​xuất<br>\
+intent (n) ý định<br>\
+lease (n,v) cho thuê<br>\
+mail (n) thư<br>\
+pattern (n) /ˈpætərn/ mẫu<br>\
+properly (n) đúng cách<br>\
+resident (n) cư dân<br>\
+specify (v) chỉ định<br>\
+task (n) nhiệm vụ<br>\
+termination (n) chấm dứt<br>\
+ultimate (n) tối thượng<br>\
 "
 }
 ]

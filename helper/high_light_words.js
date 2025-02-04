@@ -1,21 +1,3 @@
-function softArrStr(arrInput, giamDan = true)
-{
-	arrInput.sort((a,b) =>
-	{
-		if (giamDan) return b.length - a.length
-		if (!giamDan) return a.length - b.length
-	})
-	return arrInput
-}
-
-function arrRemoveZeroLenghthEle (arr) 
-{
-	if (arr)
-	return arr.filter(function(ele) 
-	{ 
-		return ele.trim().length > 0 
-	});
-}
 
 function IRR_ExtractWords(story) 
 {	
@@ -118,7 +100,7 @@ function IRR_ExtractWords(story)
 			var vocaParts = vocas[i].split(' ');
 			words = words.filter(function(ele) 
 			{ 
-				// return vocaParts.length == 1 || !vocaParts.includes(ele)
+				//return vocaParts.length == 1 || !vocaParts.includes(ele)
 				return true
 			});
 
@@ -131,12 +113,11 @@ function IRR_ExtractWords(story)
 			}
 		}
 	}
-//	console.log(words)
 
 
-	//console.log(finalWords)
+	//console.log(words)
 	//console.log(phraVerbs)
-	//console.log(finalWords)
+	//console.log(specialWords)
 
 	return  {
 		specialWords: specialWords

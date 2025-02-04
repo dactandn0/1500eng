@@ -209,7 +209,7 @@ function processStory (story, isAlert = true) {
 		for (var i = 0; i < vocas.length; i++) {
 			voca = vocas[i].trim();
 
-			if (IsIgnoreVocaBold(voca, foundWords)) continue;
+	//		if (IsIgnoreVocaBold(voca, foundWords)) continue;
 
 			voca = voca.replace(/\[.*\]/g, '').trim();
 			var regex = new RegExp(`\\b${voca}\\b` , 'g')
@@ -219,8 +219,8 @@ function processStory (story, isAlert = true) {
 	}
 
 	var words = foundWords.words
-	var phraVerbs = foundWords.phraVerbs
-	var specialWords = foundWords.specialWords
+	var phraVerbs = foundWords.phraVerbs || []
+	var specialWords = foundWords.specialWords || []
 	var dones = []
 
 	for (var i = 0; i < words.length; i++) 
@@ -369,10 +369,7 @@ function IsIgnoreVocaBold(boldWord, hightlightWord)
 		||	phraVerbArr.includes(boldWord) 
 		|| specialWordArr.includes(part)
 		|| specialWordArr.includes(boldWord)
-		|| arrUNCOUNT_NOUNS.includes(part)
-		|| arrUNCOUNT_NOUNS.includes(boldWord)
-		|| arrNOUN_SAME_VERBS.includes(part)
-		|| arrNOUN_SAME_VERBS.includes(boldWord)
+	
 		) 
 		{
 			rrr = true;

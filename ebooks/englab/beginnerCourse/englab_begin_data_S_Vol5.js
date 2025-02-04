@@ -165,9 +165,9 @@ Không hẳn vậy. Vào ngày thường khi đi làm, tôi phải mặc đồng
 	track:"1.10",
 	title:"Trying new activities",
 	en:"1) Do you like to try new activities that you haven't done before?<br>\
-Actually, it depends on which activity that is. For me, most of the time I'm willing to give it a go. I would say I'm kind of curious and eager to learn new things or get new experiences from doing things that I have never done before.<br>\
+Actually, it depends on which activity that is. For me, most of the time I'm willing to give it a go. I would say I'm kind of curious and eager to learn new things or get new experiences from doing things that I've never done before.<br>\
 2) Did you enjoy trying new activities when you were younger?<br>\
-I tend to hesitate a bit back then. I think I had much more fear of failure at that time but now I just try things without thinking about it so much. Even if it's something difficult and I don't succeed in the first attempt , I still have a sense of achievement at the end.<br>\
+I tended to hesitate a bit back then. I think I had much more fear of failure at that time but now I just try things without thinking about it so much. Even if it's something difficult and I don't succeed in the first attempt , I still have a sense of achievement at the end.<br>\
 3) Do you prefer to try a new activity alone or with your friends?<br>\
 I don't really mind, doing new things on my own is okay, but if my friends are interested in trying it too, we can support each other to deal with difficulties and make quicker progress."
 	,vi:"1) Bạn có thích thử những hoạt động mới mà bạn chưa từng làm trước đây không?<br>\
@@ -266,7 +266,7 @@ Giờ tôi vẫn không phải là người thích thể thao nên không đam m
 Không. Tôi không thích xem thể thao. Tôi thấy nó rất nhàm chán. Thực ra, tôi thích xem phim hài hoặc phim truyền hình hơn vì chúng khiến tôi cười ngặt nghẽo để giải tỏa căng thẳng.<br>\
 4) Bạn có hâm mộ đội thể thao nào không? Tại sao? <br>\
 Thành thật mà nói, tôi không có đội bóng yêu thích vì như tôi đã nói, tôi không thích xem những trận đấu này. Tuy nhiên, tôi rất ngưỡng mộ đội tuyển bóng đá quốc gia Việt Nam. Bạn biết đấy, tất cả các cầu thủ đều có kỹ năng mặc dù họ còn trẻ."
-	,voca:"cup of tea,exhilarating,have a passion for,sporty,Vietnamese national football,comedies"
+	,voca:"cup of tea,exhilarating,have a passion for,sporty,national,comedies,laugh hysterically"
 	,note:"A sporty /ˈspɔː.ti/: một người yêu thích và giỏi thể thao Ví dụ: Guy wasn’t really the sporty type. |To have a passion for something: có niềm đam mê, yêu thích về một cái gì đó Passion /ˈpæʃ.ən/ : đam mê Ví dụ:  I have a passion for history. |To be exhilarating and good fun: hứng khởi và vui vẻ Exhilarating /ɪɡˈzɪl.ə.reɪ.tɪŋ/ : Hứng khởi Ví dụ: His work is exhilarating and good fun |A boiling hot weather: thời tiết nóng sôi (nóng như nước sôi) Boiling  /ˈbɔɪ.lɪŋ/: sôi Hot /hɒt/ : nóng Weather /ˈweð.ər/ :thời tiết Ví dụ: We don’t usually have such boiling hot weather. |My cup of tea (idiom): sở thích của tôi Ví dụ: Opera is not my cup of tea. |To be tedious /ˈtiː.di.əs/ : buồn chán Ví dụ:  The problem is I find most forms of exercise so tedious. |Laugh hysterically: cười một cách điên cuồng Hysterically  /hɪˈster.ɪ.kəl.i/ : điên cuồng, cuồng loạn Laugh /lɑːf/ : Cười Ví dụ: She started laughing hysterically. |To be fond of: thích Ví dụ: She was very fond of horses |Having said that: mặc dù vậy Ví dụ: He forgets most things, but having said that, he always remembers my birthday."
 },{
 	track:"1.16",

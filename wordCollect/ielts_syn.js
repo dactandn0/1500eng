@@ -8,8 +8,11 @@ const SynonymData = [
 	words:"good|great",
 	type:"a",
 	mean:"tốt, tuyệt"
-},
-{
+},{
+	words:"exciting /ɪkˈsaɪtɪŋ/|dramatic /drəˈmætɪk/|heady /ˈhedi/|thrilling /ˈθrɪlɪŋ/|exhilarating /ɪɡˈzɪləreɪtɪŋ/",
+	type:"a",
+	mean:"phấn khởi, thú vị"
+},{
 	words:"overweight|obese",
 	type:"a",
 	mean:"béo phì"

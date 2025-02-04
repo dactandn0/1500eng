@@ -15,12 +15,14 @@ rebellious (a) /rɪˈbeljəs/ nổi loạn, bạo động<br>\
 romance (a) /ˈrəʊmæns/ lãng mạn<br>\
 regret (v) /rɪˈɡret/ hối tiếc<br>\
 transportation (n) /trænspərˈteɪʃn/ vận tải<br>\
+particular (a) /pərˈtɪkjələr/ cụ thể<br>\
 horror (a) /ˈhɔːrər/ kinh dị<br>\
 masterpiece (a) /ˈstaɪlɪʃ/ kiệt tác<br>\
 stylish (a) /ˈstaɪlɪʃ/ sành điệu<br>\
 recognizable (a) /ˈrekəɡnaɪzəbl/ có thể nhận ra<br>\
 strenuous (a) /ˈstren.ju.əs/ kiệt quệ thể chất + tinh thần<br>\
 preference (n) /ˈmæstərpiːs/ sự ưa thích<br>\
+gossip (v) /ˈɡɑːsɪp/ chuyện phiếm<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 capacity (n) /kəˈpæsəti/ dung tích<br>\
 expose (v) /ɪkˈspəʊz/ phơi ra<br>\
@@ -35,7 +37,7 @@ sporty (a) /ˈspɔːrti/ thích thể thao<br>\
 weekdays (adv) /ˈwiːkdeɪz/<br>\
 hunt (v) /hʌnt/ săn<br>\
 middle (prep) giữa<br>\
-extraordinary (a) đặc biệt, phi thường, lạ lùng<br>\
+extraordinary (a) /ɪkˈstrɔːrdəneri/ đặc biệt, phi thường, lạ lùng<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 acquire (v) /əˈkwaɪər/ có được<br>\
@@ -49,7 +51,7 @@ coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
 worshipper (n) /ˈwɜːrʃɪpər/ người sùng bái<br>\
 applause (n) tiếng vỗ tay<br>\
-investors (n) nhà đầu tư<br>\
+investor (n)  /ɪnˈvestər/ nhà đầu tư<br>\
 organise (v) /ˈɔːrɡənaɪz/ tổ chức<br>\
 investment (n) /ɪnˈvestmənt/ sự đầu tư<br>\
 approachable (a) /əˈprəʊtʃəbl/ dễ tiếp cận<br>\
@@ -70,7 +72,7 @@ declaration (n) /dekləˈreɪʃn/ Tuyên ngôn<br>\
 department (n) /dɪˈpɑːrtmənt/ gian hàng, chi nhánh, ban, bộ<br>\
 exposure (n) phơi bày<br>\
 pleased (a) vui lòng<br>\
-vary (v) /ˈværi/ làm cho khác, làm thay đổi<br>\
+vary (v) /ˈværi/ làm cho khác, làm thay đổi (differ)<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
@@ -191,7 +193,7 @@ wise (a) /waɪz/ khôn ngoan<br>\
 allow (v) /əˈlaʊ/ cho phép<br>\
 announce (v) /əˈnaʊns/ thông báo, nhắc<br>\
 beside bên cạnh<br>\
-taste (n,v) /teɪst/ mùi vị, ((v) )thưởng thức<br>\
+taste (n,v) /teɪst/ mùi vị, (v) thưởng thức<br>\
 challenge (n) /ˈtʃælɪndʒ/ thách thức<br>\
 claim yêu cầu<br>\
 contribute (v) /kənˈtrɪbjuːt/ góp phần<br>\

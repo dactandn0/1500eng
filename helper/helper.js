@@ -1,3 +1,22 @@
+function softArrStr(arrInput, giamDan = true)
+{
+	arrInput.sort((a,b) =>
+	{
+		if (giamDan) return b.length - a.length
+		if (!giamDan) return a.length - b.length
+	})
+	return arrInput
+}
+
+function arrRemoveZeroLenghthEle (arr) 
+{
+	if (arr)
+	return arr.filter(function(ele) 
+	{ 
+		return ele.trim().length > 0 
+	});
+}
+
 function Helper_ArrSortEleLength (arr)
 {
 	if (!arr) return arr

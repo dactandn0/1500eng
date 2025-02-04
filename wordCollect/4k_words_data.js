@@ -377,11 +377,7 @@ theater sân khấu<br>\
 wealth (n) /welθ/ sự giàu có<br>\
 available (a) /əˈveɪləbl/ có sẵn<br>\
 beat đánh bại<br>\
-fumes /fju:mz/ (n) khói<br>\
 celebrate (v) /ˈselɪbreɪt/ ăn mừng<br>\
-activate /ˈæktɪveɪt/ (v) kích hoạt<br>\
-determine /di't3:min/ (v) xác định<br>\
-bathtub /ˈbæθtʌb/ (n) bồn tắm<br>\
 fair (a) /feə(r)/ công bằng<br>\
 flow (n) /fləʊ/ dòng chảy<br>\
 forward (adv) /ˈfɔːrwərd/ tiến lên<br>\
@@ -419,7 +415,6 @@ lawyer (n) /ˈlɔɪər/ luật sư<br>\
 mention (n,v) /ˈmenʃn/ đề cập<br>\
 failure (n) /ˈfeɪljər/ sự thất bại,người bất tài<br>\
 policy (n) /ˈpɑːləsi/ chính sách<br>\
-dial (v,n) quay số, mặt đồng hồ, la bàn<br>\
 social (a) /ˈsəʊʃl/ xã hội<br>\
 speech (n) /spiːtʃ/ bài phát biểu<br>\
 toward hướng tới<br>\
@@ -715,7 +710,6 @@ congratulate chúc mừng<br>\
 frame khung<br>\
 heaven thiên đường<br>\
 legend huyền thoại<br>\
-praise,proceed ca ngợi,tiến hành<br>\
 pure thuần khiết<br>\
 relative tương đối<br>\
 senior cấp cao<br>\
@@ -854,8 +848,6 @@ army quân đội<br>\
 billion /ˈbɪljən/ tỷ<br>\
 carve khắc<br>\
 consult tham vấn<br>\
-emergency /i'm3:d3ansi/ (n) sự khẩn cấp<br>\
-procedure /pra'si:d3a/ (n) thủ tục<br>\
 fortune may mắn<br>\
 guarantee (v) /ɡærənˈtiː/ bảo đảm<br>\
 hike tăng<br>\
@@ -979,7 +971,6 @@ accomplish hoàn thành<br>\
 approve phê duyệt<br>\
 approximate xấp xỉ<br>\
 barrier rào cản<br>\
-detect phát hiện<br>\
 duty nhiệm vụ<br>\
 elementary cơ bản<br>\
 failure thất bại<br>\
@@ -992,7 +983,6 @@ pretend giả vờ<br>\
 rank xếp hạng<br>\
 recognition công nhận<br>\
 refrigerate làm lạnh<br>\
-rent thuê<br>\
 retire nghỉ hưu<br>\
 statistic thống kê <br>\
 astronaut phi hành gia<br>\
@@ -1014,7 +1004,6 @@ scale tỷ lệ<br>\
 skip bỏ qua<br>\
 stretch kéo dài<br>\
 underground dưới lòng đất <br>\
-alarm báo động<br>\
 apart (adv) /əˈpɑːrt/ tách<br>\
 arrest bắt giữ<br>\
 award giải thưởng<br>\
@@ -1097,7 +1086,6 @@ amuse vui<br>\
 cotton bông<br>\
 crash sụp đổ<br>\
 deck boong<br>\
-engage /in'geid3/ (v) tham gia<br>\
 vent /vent/ (n) lỗ thông hơi<br>\
 firm (a) chắc chắn, kiên cố<br>\
 grand lớn<br>\

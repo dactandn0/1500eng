@@ -925,7 +925,6 @@ tornado (n) /tɔrˈneɪdoʊ/ lốc xoáy<br>\
 forest fire (n) /ˈfɔːrɪst faɪər/ cháy rừng<br>\
 hurricane (n) /ˈhɜːrɪkeɪn/ bão<br>\
 storm (n) /stɔːrm/ bão<br>\
-evacuation (n) /ɪvækjuˈeɪʃən/ sự sơ tán<br>\
 evacuate (v) /ɪˈvækjueɪt/ sơ tán<br>\
 catastrophic (a) /kætəˈstrɒfɪk/ thảm khốc<br>\
 nationwide (a) /neɪʃənˈwaɪd/ toàn quốc<br>\
@@ -1309,7 +1308,6 @@ single bed (n) /ˈsɪŋ.ɡəl bɛd/ giường đơn<br>\
 linen (n) /ˈlɪnɪn/ vải lụa, vải sợi<br>\
 doorman (n) /ˈdɔːr.mən/ nhân viên gác cửa<br>\
 reception (n) /rɪˈsɛp.ʃən/ quầy lễ tân<br>\
-elevator (n) /ˈɛl.ɪveɪ.tər/ thang máy<br>\
 reservation (n) /rɛz.ərˈveɪ.ʃən/ sự đặt chỗ trước<br>\
 bellboy (n) /ˈbɛl.bɔɪ/ người trực tầng<br>\
 check out (v) /ˈtʃɛk aʊt/ trả phòng",
@@ -1757,7 +1755,6 @@ interpreter (n) /ɪnˈtɜː.prɪ.tər/ phiên dịch viên<br>\
 sanitation worker (n) /sænɪˈteɪ.ʃən ˈwɜːrkər/ lao công<br>\
 business manager (n) /ˈbɪznɪs ˈmæn.ɪ.dʒər/ giám đốc kinh doanh<br>\
 police officer (n) /pəˈliːs ˈɒfɪ.sər/ cảnh sát<br>\
-personnel manager (n) /pɜːrsəˈnɛl ˈmæn.ɪ.dʒər/ giám đốc nhân sự<br>\
 doctor (n) /ˈdɒk.tər/ bác sĩ<br>\
 farmer (n) /ˈfɑː.mər/ nông dân",
 },
@@ -1805,7 +1802,6 @@ equip (v) /ɪˈkwɪp/ trang bị<br>\
 express mail (n) /ɪkˈsprɛs meɪl/ thư chuyển phát nhanh<br>\
 graphic (a) /ˈɡræfɪk/ thuộc đồ họa<br>\
 messenger call service (n) /ˈmɛsɪndʒər kɔːl ˈsɜːrvɪs/ dịch vụ điện thoại<br>\
-notify (v) /ˈnoʊtɪfaɪ/ thông báo<br>\
 parcel (n) /ˈpɑːrsəl/ bưu kiện, bưu phẩm<br>\
 press (n) /prɛs/ báo chí<br>\
 receive (v) /rɪˈsiːv/ nhận<br>\
@@ -1833,7 +1829,6 @@ inherit (v) /ɪnˈhɛrɪt/ thừa kế<br>\
 accountant (n) /əˈkaʊntənt/ nhân viên kế toán<br>\
 lend (v) /lɛnd/ cho vay<br>\
 borrow (v) /ˈbɒroʊ/ vay, mượn<br>\
-rent (v) /rɛnt/ thuê<br>\
 distribution (n) /dɪstrɪˈbjuːʃən/ sự phân phối, phân phát<br>\
 co-ordinate (v) /koʊˈɔrdəneɪt/ phối hợp, sắp xếp<br>\
 adapt (v) /əˈdæpt/ thích nghi<br>\
@@ -1856,7 +1851,6 @@ cash machine (n) /kæʃ məˈʃiːn/ máy rút tiền<br>\
 online account (n) /ˈɒnlaɪn əˈkaʊnt/ tài khoản trực tuyến<br>\
 insurance policy (n) /ɪnˈʃʊrəns ˈpɒlɪsi/ hợp đồng bảo hiểm<br>\
 debit card (n) /ˈdɛbɪt kɑrd/ thẻ ghi nợ<br>\
-rental contract (n) /ˈrɛntəl ˈkɒntrækt/ hợp đồng cho thuê<br>\
 discount (n) /ˈdɪskaʊnt/ sự giảm giá, chiết khấu<br>\
 credit limit (n) /ˈkrɛdɪt ˈlɪmɪt/ hạn mức tín dụng<br>\
 survey (n) /ˈsɜːrveɪ/ khảo sát<br>\
@@ -1867,7 +1861,6 @@ charge (n) /ʧɑrdʒ/ phí, tiền phải trả<br>\
 outsource (v) /ˈaʊtsɔrs/ thuê ngoài<br>\
 grant (n) /ɡrænt/ trợ cấp, công nhận<br>\
 warehouse (n) /ˈwɛrhaʊs/ kho hàng<br>\
-lease (v) /liːs/ cho thuê<br>\
 in-house (a) /ˈɪnhaʊs/ tiến hành trong một tổ chức<br>\
 potential a/n /pəˈtɛnʃəl/ tiềm lực , tiềm tàng<br>\
 back-office (n) /bæk ˈɒfɪs/ văn phòng hành chính<br>\

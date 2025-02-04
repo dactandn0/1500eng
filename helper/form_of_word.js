@@ -2,7 +2,7 @@ const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water
 
 var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes,own,even if,even,though,although,despite,certainly,of course,so on\
 ,probably,currently,unfortunately,hardly,rarely,much,more,more into,really,recently,ever,never,still,usually\
-,absolutely,actually,completely,really,totally,thoroughly,entirely,simply,undoubtedly,literally,gradually\
+,absolutely,actually,completely,really,totally,thoroughly,entirely,simply,undoubtedly,literally,gradually,unusual\
 ,pretty,quite,rather,fairly,basically,honestly\
 ,since,as,in fact,on top of that,what's more,besides,plus,as much as\
 ,incredibly,considerably,particularly,significantly\

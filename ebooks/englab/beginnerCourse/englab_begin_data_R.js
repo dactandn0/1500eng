@@ -134,26 +134,18 @@ Không được cố gắng thoát ra bằng cách sử dụng thang máy. <br>\
 	title:"Out of the Wild, into Our Homes",
 	unit:4,
 	en:"Many of the earth's creatures die because of choices humans make. These choices have nothing to do with food or shelter or anything else that helps humans survive. What kills these millions of animals from all over the world is human greed - the desire for money.<br>\
-<br>\
 People use parts of animals for everything from hats to handbags, from ornamental jewellery and ashtrays to powders that supposedly improve a person's life. Declaring a species endangered and protecting it by laws is not always enough. Poachers, people who kill wildlife illegally, rarely get caught.<br>\
 During the late 1980s, saving elephants became a popular cause. Wildlife protection groups made sure everyone saw pictures or films of elephants with their faces sawed off for their ivory tusks. These groups also proved that certain populations of elephants were dwindling.<br>\
-<br>\
 As a result, most people stopped buying objects made of ivory. Laws against poaching were strengthened. Many countries made bringing ivory in from other countries illegal. Killing elephants for their ivory became more risky and less profitable.<br>\
-<br>\
 However, concern for a certain species tends to fade after a while. In the late 1970s, people protested against the slaughter of seal pups. Everyone was shocked at the sight of pups being clubbed to death in their icy habitat. The brutality came to a halt. But ten years later, the number of seal pups killed was higher than ever.<br>\
 Other animal protection movements have come and gone, such as saving the whales and protecting dolphins from the tuna fishermen. The whale population appears to have increased for now. And the laws are finally changing in the United States to protect the dolphins that swim with tuna fish in parts of the Pacific Ocean.<br>\
-<br>\
 In the 2010s, the protests and the publicity will probably turn to some other endangered species. Plenty of them urgently need attention. During this time, will the elephants be forgotten?"
 	,vi:"Nhiều loài sinh vật trên trái đất chết vì những lựa chọn của con người. Những lựa chọn này không liên quan gì đến thức ăn, nơi trú ẩn hay bất cứ thứ gì khác giúp con người sống sót. Thứ giết chết hàng triệu loài động vật này trên khắp thế giới chính là lòng tham của con người - ham muốn tiền bạc.<br>\
-<br>\
 Con người sử dụng các bộ phận của động vật cho mọi thứ, từ mũ đến túi xách, từ đồ trang sức trang trí và gạt tàn đến bột được cho là cải thiện cuộc sống của một người. Việc tuyên bố một loài có nguy cơ tuyệt chủng và bảo vệ chúng bằng luật pháp không phải lúc nào cũng đủ. Những kẻ săn trộm, những kẻ giết động vật hoang dã bất hợp pháp, hiếm khi bị bắt.<br>\
 Vào cuối những năm 1980, việc cứu voi đã trở thành một mục tiêu phổ biến. Các nhóm bảo vệ động vật hoang dã đảm bảo rằng mọi người đều nhìn thấy hình ảnh hoặc phim về những chú voi bị cưa mất khuôn mặt để lấy ngà. Những nhóm này cũng chứng minh rằng một số quần thể voi đang suy giảm.<br>\
-<br>\
 Kết quả là, hầu hết mọi người đã ngừng mua các đồ vật làm từ ngà voi. Luật chống săn trộm đã được tăng cường. Nhiều quốc gia đã đưa việc mang ngà voi từ các quốc gia khác vào là bất hợp pháp. Việc giết voi để lấy ngà trở nên nguy hiểm hơn và ít lợi nhuận hơn.<br>\
-<br>\
 Tuy nhiên, mối quan tâm đối với một số loài nhất định có xu hướng giảm dần sau một thời gian. Vào cuối những năm 1970, mọi người đã phản đối việc giết hải cẩu con. Mọi người đều sốc khi chứng kiến ​​cảnh những chú hải cẩu con bị đánh chết trong môi trường sống băng giá của chúng. Sự tàn bạo đã dừng lại. Nhưng mười năm sau, số lượng hải cẩu con bị giết cao hơn bao giờ hết.<br>\
 Các phong trào bảo vệ động vật khác đã xuất hiện rồi biến mất, chẳng hạn như cứu cá voi và bảo vệ cá heo khỏi những người đánh bắt cá ngừ. Hiện tại, quần thể cá voi dường như đã tăng lên. Và luật pháp cuối cùng cũng đang thay đổi ở Hoa Kỳ để bảo vệ những chú cá heo bơi cùng cá ngừ ở một số vùng của Thái Bình Dương.<br>\
-<br>\
 Vào những năm 2010, các cuộc biểu tình và hoạt động công khai có thể sẽ chuyển sang một số loài có nguy cơ tuyệt chủng khác. Rất nhiều loài trong số chúng cần được quan tâm khẩn cấp. Trong thời gian này, liệu loài voi có bị lãng quên không?"
 	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamental,endangered,fade,profitable,publicity,shelter,pup,slaughter,supposedly,survive,tuna,tusk,urgently"
 	,T_F_NG: "09F. Many of the animals on Earth die because humans have to survive.<br>\
@@ -180,7 +172,14 @@ Năm 1977, Tổng thống Jimmy Carter đã yêu cầu một nghiên cứu chín
 Báo cáo dự đoán, trong số những điều khác, rằng 'từ nửa triệu đến 2 triệu loài - 15 đến 20 phần trăm tất cả các loài trên trái đất - có thể bị tuyệt chủng vào năm 2000'. Báo cáo cảnh báo về nhiều khó khăn hơn cho cư dân loài người trên Trái đất cũng như nhiều nạn đói hơn, ví dụ.<br>\
 Báo cáo này thúc giục chính phủ hành động ngay lập tức. Báo cáo đưa ra các khuyến nghị để thay đổi. Nhưng vào thời điểm nghiên cứu hoàn thành, Ronald Reagan đã được bầu làm tổng thống và chính quyền của ông đã bỏ qua báo cáo.<br>\
 Những năm 1980 không phải là thập kỷ tốt cho môi trường. Có khả năng một báo cáo toàn cầu hiện nay thậm chí còn ảm đạm hơn báo cáo được công bố sau những năm 1970. Nhiều nhà môi trường tự hỏi liệu chúng ta có thể ngăn chặn sự hủy diệt hành tinh của mình trước khi quá muộn hay không. Họ tự hỏi, khi nào thì con người mới nhận ra rằng họ không phải là chủ nhân của Trái Đất mà chỉ là một trong những vị khách của nó?"
-	,voca:"vanished,threaten,warnings,ignored,destruction,hardship,extinguished,starvation",
+	,voca:"vanished,threaten,warnings,ignored,destruction,hardship,extinguished,starvation"
+	,T_F_NG:"10T. The increase ofhuman population and the needs of industries result in the death of lots of birds and mammals.<br>\
+11. In 1977, President Jimmy Carter believed that the present trends would continue. <br>\
+12F. According to the report, more than 2 million species on earth would disappear by 2000. <br>\
+13F. Ronald Reagan was elected president after the study was completed. <br>\
+14. Ronald Reagan's administration didn't think that the report was necessary. <br>\
+15T. It is possible that it will be too late when we stop the destruction of the Earth. <br>\
+16T. The environmentalists don't think that humans are masters of the Earth."
 },{
 	title:"What Is Stress?",
 	unit:6,
@@ -200,7 +199,14 @@ Tóm lại, cách mọi người diễn giải một sự kiện khiến sự ki
 Cụ thể, điều gì khiến mọi người đánh giá một tình huống là căng thẳng? Câu trả lời phụ thuộc vào mức độ đe dọa hoặc thách thức mà nó có vẻ như vậy. Những hoàn cảnh đe dọa hoặc thách thức cảm giác hạnh phúc của một người sẽ tạo ra căng thẳng. Những hoàn cảnh không đe dọa hoặc thách thức chúng ta thì không gây căng thẳng.<br>\
 Nhìn nhận căng thẳng theo cách này giúp chúng ta có định nghĩa chung về khái niệm căng thẳng: Căng thẳng là phản ứng với những hoàn cảnh có vẻ đe dọa hoặc thách thức.<br>\
 Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất cả phụ thuộc vào cách chúng ta đánh giá hoàn cảnh. Ngoài ra, những điều khiến chúng ta căng thẳng ngày hôm nay có thể không gây căng thẳng cho chúng ta vào thời điểm khác. Và điều ngược lại mới đúng: những thứ trước đây không gây căng thẳng thì giờ đây có thể gây căng thẳng."
-	,voca:"bothersome,appraise,challenge,concept,define,interpretation,vary,react,interpret,stressor,circumstance,appraise,surprisingly",
+	,voca:"bothersome,appraise,challenge,concept,define,interpretation,vary,react,interpret,stressor,circumstance,appraise,surprisingly"
+	,T_F_NG:"10F. Knowing our feelings about stress can explain what causes the stress. <br>\
+11. Bothersome noises are more likely to cause stress than a poor test performance. <br>\
+12. Negative events cause more stress than positive ones do. <br>\
+13T. Sometimes whether an event is negative or not is based on a personal decision. <br>\
+14T. Whether an event is considered stressful may be determined by the way people interpret it. <br>\
+15F. Sometimes those circumstances that are not threatening to us are also stressful. <br>\
+16T. An event or situation may not always be a stressor."
 },{
 	title:"Hot Days, Hot Nights ",
 	unit:6,
@@ -216,7 +222,16 @@ Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất c�
 [D] Trong khi nhiều quốc gia có thể có khí hậu ôn hòa hơn, thì sự thay đổi - có lẽ nhanh hơn 100 lần so với bất kỳ thời điểm nào trong lịch sử loài người - có thể quá lớn đến mức nhiều lợi ích sẽ bị mất đi. Cũng có thể có rất nhiều người tị nạn môi trường, khiến thảm kịch của kỷ nguyên Dust Bowl có vẻ nhẹ nhàng hơn khi so sánh.<br>\
 [E] Chúng ta có thể làm gì? Đóng góp của nhân loại vào hiệu ứng nhà kính đến từ rất nhiều hoạt động cơ bản mà chúng ta không thể hy vọng loại bỏ hoàn toàn. Một số bước đã được thực hiện. Kể từ những năm 1970, việc sử dụng CFC làm chất đẩy bình xịt đã bị cấm ở Hoa Kỳ.<br>\
 [F] Một chiến lược khác là đốt càng nhiều mê-tan càng tốt. Điều này làm tăng C02 trong không khí, nhưng vì mêtan giữ nhiệt gấp 20 lần C02 nên kết quả cuối cùng là xứng đáng. Khí trong nhiều bãi chôn lấp rác đã được sử dụng ở một số nơi trên khắp Hoa Kỳ. Nó đang được sử dụng để sưởi ấm cho hàng nghìn ngôi nhà."
-	,voca:"ban,beneficial,benefits,border,carbon dioxide,comparison,complain,delay,drastic,droughts,eliminate,era,geographical,glaciers,greenhouse,Humanity,hurricanes,inevitably,landfills,methane,mild,policymakers,refugees,tragedy,trap,worthwhile",
+	,voca:"ban,beneficial,benefits,border,carbon dioxide,comparison,complain,delay,drastic,droughts,eliminate,era,geographical,\
+	glaciers,greenhouse,Humanity,hurricanes,inevitably,landfills,methane,mild,policymakers,refugees,tragedy,trap,worthwhile"
+	,T_F_NG:"13Y. The number of days in Dallas with temperatures above 100 degrees would increase.<br>\
+14N. Currently in Dallas, there are only four days when the temperature falls below 80 degrees at night.<br>\
+15N. Some scientists are sure how fast the temperature will rise due to global warming.<br>\
+16. Policymakers are not at all interested in taking any action to solve the environmental problem.<br>\
+17Y. Some scientists think that the climate changes may even bring benefits.<br>\
+18Y. Humans contribute to the greenhouse effect through many basic activities.<br>\
+19N. Burning too much methane worsens the problem of greenhouse effect.<br>\
+20. In the United States, people prefer to bum methane gas for heating the homes. "
 },{
 	title:"Passage One",
 	unit:7
@@ -321,12 +336,12 @@ Người nộp đơn phải chứng minh rõ ràng trình độ tiếng Anh củ
 	,title:"All about Renting"
 	,en:"To make your move into an apartment as smooth as possible, we would like to make you aware of what will take place before you are settled. Being prepared and avoiding problems can make it an easier and happier experience.<br>\
 The first thing you must decide is how much of your income can be spent for your monthly rental. Besides the rent, the coverage of the monthly electric bill and your phone charges should also be considered. Heat and water costs are almost always included in your rent. Some rental units contain an individual heating system, in which case you will have heating costs.<br>\
-APPLICATION-When you make application to rent an apartment, it has always been com mon practice to check your credit and references. You may now be required to pay a fee to have your application professionally checked.<br>\
+APPLICATION-When you make application to rent an apartment, it has always been common practice to check your credit and references. You may now be required to pay a fee to have your application professionally checked.<br>\
 If you do not want to hold up the process of confirming your rental, you should be prepared for the costs of application, security and pet deposits.<br>\
 DEPOSITS - You must expect to pay a deposit which can come under the name of security, damage or cleaning deposit. They can range from a fee of $50 and up, or equal to a full month's rent. This is insurance for the building owner against damage or unusual cleaning after you have left, which means part or all of the deposit could be retained; otherwise, it is refunded to you. The exact requirements for the deposit should be in writing so that you know what the money is for and under what circumstances it can be retained or returned to you. You must also expect to pay an additional deposit if you have a pet.<br>\
 Many buildings may have a form available to check off items in the apartment and indicate their condition. If there is a tear in the carpet or a scratch on an appliance, it will be a matter of record and you cannot be charged for that later. If such a form is not available, you can walk through the apartment with the manager making your own list, having it signed by the manager and yourself.<br>\
 All of this is a protection for you as well as the building owner and note that under a law enacted in 1973, your deposit will earn interest at an annual rate of 3%. The deposit must also be returned to you within 3 weeks after you have vacated, or the owner must provide you a written notice about the specific reason for withholding the deposit. You are required to provide your building owner with a mailing address in order to receive your deposit within 3 weeks.<br>\
-COMPLAINT - It is not unusual that something may not function properly in your apart ment. It certainly has happened wherever you have lived before. If an appliance is not working, a faucet is leaking, and so on, put the problem in writing and give it to your manager or caretaker.<br>\
+COMPLAINT - It is not unusual that something may not function properly in your apartment. It certainly has happened wherever you have lived before. If an appliance is not working, a faucet is leaking, and so on, put the problem in writing and give it to your manager or caretaker.<br>\
 If you have any serious complaints, you should call the building manager. If some action is not following, you can call the Minnesota Multi-Housing Association 'Hot Line' at 858-8222 between 2:00 and 5:00 pm. during weekdays for help or service."
 	,vi:"Để việc chuyển đến căn hộ của bạn diễn ra suôn sẻ nhất có thể, chúng tôi muốn bạn biết những gì sẽ diễn ra trước khi bạn ổn định. Việc chuẩn bị và tránh các vấn đề có thể giúp bạn có trải nghiệm dễ dàng và vui vẻ hơn.<br>\
 Điều đầu tiên bạn phải quyết định là bạn có thể chi bao nhiêu tiền thu nhập cho tiền thuê nhà hàng tháng. Bên cạnh tiền thuê nhà, bạn cũng nên cân nhắc đến hóa đơn tiền điện hàng tháng và cước phí điện thoại. Chi phí sưởi ấm và nước hầu như luôn được bao gồm trong tiền thuê nhà của bạn. Một số căn hộ cho thuê có hệ thống sưởi ấm riêng, trong trường hợp đó, bạn sẽ phải trả chi phí sưởi ấm.<br>\
@@ -354,7 +369,7 @@ Nếu bạn có bất kỳ khiếu nại nghiêm trọng nào, bạn nên gọi 
 	,en:"SAFEIY - It is important to all of us to feel safe and secure in our homes. First of all, your neighbours and the building manager begin to know about your schedule, and any irregularity would make them question any activity that was out of pattern. It is better for you to notify your neighbours or the manager that you will be gone for a few days and ask them to pick up your mail or paper.<br>\
 A building with controlled entry systems seems the ultimate in safety, but not when residents carelessly let anyone through the door as they enter, or let anyone in who rings with a particular reason to enter the building.<br>\
 Fire protection in the form of alarm systems and many neighbours to warn you if there is a fire in the building is extra security in an apartment building.<br>\
-In addition, you should know that apartment owners carry extensive insurance on the apartment building and property within the building or the rental unit, but not on the ~· property belonging to you. Burglary, damage from fire, smoke, windstorm, explosion, or other misfortunes must be covered by you. It is recommended that you contact your insur ance agent regarding a Renter's Insurance Policy.<br>\
+In addition, you should know that apartment owners carry extensive insurance on the apartment building and property within the building or the rental unit, but not on the property belonging to you. Burglary, damage from fire, smoke, windstorm, explosion, or other misfortunes must be covered by you. It is recommended that you contact your insurance agent regarding a Renter's Insurance Policy.<br>\
 LEASE - A lease or rental agreement becomes your next task and could be your most important consideration. A lease term could be for month to month, 6 months or one year. Your rent may be more per month on a short-term lease, typically if for under 6 months. Some buildings will require a one-year lease and some will accept or only give a 6-month lease.<br>\
 When it comes to terminating your lease, you must remember that Minnesota State Law requires that you give the building owner 30 days notice of your intent to vacate. You should present this notice in writing and deliver it the day before your rent is due. If the owner needs to evict a resident, he is also required to give 30 days notice in writing and deliver it the day before the rent is due. However, the owner may require 60 days notice of termination of a lease as stated in the rental agreement. It is important that you read your lease and understand it before signing. It is for your protection as well as the owner and here are some of the reasons:<br>\
 1) It specifies in writing what the building owner's responsibilities are and what yours are. <br>\

@@ -1,12 +1,33 @@
- const BEGINNER_READING_VOCA = [
+const BEGINNER_READING_VOCA = [
 {
- title: "Beginner_reading_voca",
- en: "interpret (v) hiểu cặn kẽ<br>\
- circumstance (n) /ˈɪn.trə.vɜːt/ hoàn cảnh, tình huống<br>\
- surprisingly (adv) /ˈɪn.trə.vɜːt/ kinh ngạc, ngạc nhiên<br>\
- stressor (n) nhân tố gây stress<br>\
- stressor (n) nhân tố gây stress<br>\
- beneficial (n) có lợi<br>\
+title: "Beginner_reading_voca",
+en: "\
+activate (v) /ˈæktɪveɪt/ kích hoạt<br>\
+alarm (n) báo động<br>\
+evacuation (n) /ɪvækjuˈeɪʃən/ sự sơ tán<br>\
+fumes /fju:mz/ (n) khói<br>\
+alert (v) cảnh báo<br>\
+bathtub /ˈbæθtʌb/ (n) bồn tắm<br>\
+container (n) thùng chứa<br>\
+detect (v) phát hiện<br>\
+determine /di't3:min/ (v) xác định<br>\
+dial (v,n) quay số, mặt đồng hồ, la bàn<br>\
+elevator (n) /ˈɛl.ɪveɪ.tər/ thang máy<br>\
+location (n) vị trí<br>\
+notify (v) /ˈnoʊtɪfaɪ/ thông báo<br>\
+personnel manager (n) /pɜːrsəˈnɛl ˈmæn.ɪ.dʒər/ giám đốc nhân sự<br>\
+personnel (n) /pɜːrsəˈnɛl/ nhân sự<br>\
+procedure /pra'si:d3a/ (n) thủ tục, quy trình<br>\
+proceed (v) tiến hành<br>\
+staff (n) nhân viên<br>\
+towel (n) khăn<br>\
+emergency /i'm3:d3ansi/ (n) sự khẩn cấp<br>\
+engage /in'geid3/ (v) tham gia<br>\
+interpret (v) hiểu cặn kẽ<br>\
+circumstance (n) /ˈɪn.trə.vɜːt/ hoàn cảnh, tình huống<br>\
+surprisingly (adv) /ˈɪn.trə.vɜːt/ kinh ngạc, ngạc nhiên<br>\
+stressor (n) nhân tố gây stress<br>\
+beneficial (n) có lợi<br>\
 benefit (v) lợi ích /ˈbenɪfɪt/ <br>\
 border (n) /ˈbɔːrdər/ viền <br>\
 drastic (a) /ˈdræstɪk/ quyết liệt <br>\
@@ -87,7 +108,7 @@ confirm (v) xác nhận<br>\
 coverage (n) phạm vi bảo hiểm<br>\
 credit (n) tín dụng<br>\
 damage (n) thiệt hại<br>\
-deposit (n) tiền gửi<br>\
+deposit (n,v) tiền gửi, tiền đặt cọc, (v) gửi tiền<br>\
 enact (v) đã ban hành<br>\
 faucet (n) vòi nước<br>\
 function (v) chức năng<br>\
@@ -101,13 +122,15 @@ pet (n) thú cưng<br>\
 process (n) quy trình<br>\
 reference (n) tham chiếu<br>\
 refund (v) hoàn trả<br>\
-rental (n) cho thuê<br>\
+rental contract (n) /ˈrɛntəl ˈkɒntrækt/ hợp đồng cho thuê<br>\
+rent (n,v) /rɛnt/ thuê, sự cho mướn, tiền thuê nhà<br>\
+rental (n) tiền thuê nhà thuê<br>\
 retain (v) giữ lại<br>\
 scratch (n) trầy xước<br>\
 security (n) bảo mật<br>\
-smooth (a) mịn<br>\
+smooth (a) trơn tru<br>\
 tear (n) rách<br>\
-vacated (v) bỏ trống<br>\
+vacate (v) bỏ đi, rời đi<br>\
 withholding (v) giữ lại<br>\
 agent (n) đại lý<br>\
 agreement (n) thỏa thuận<br>\
@@ -120,7 +143,7 @@ intent (n) ý định<br>\
 lease (n,v) cho thuê<br>\
 mail (n) thư<br>\
 pattern (n) /ˈpætərn/ mẫu<br>\
-properly (n) đúng cách<br>\
+properly (adv) đúng cách<br>\
 resident (n) cư dân<br>\
 specify (v) chỉ định<br>\
 task (n) nhiệm vụ<br>\

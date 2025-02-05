@@ -2,3 +2,9 @@
 	<p class="text-primary">Exercise: True/False/Not Given</p>
 	<p compile="story.T_F_NG"></p>
 </div>
+
+<div ng-if="story.images && story.images.length > 0" >
+	<div ng-repeat="img in story.images track by $index">
+		<img src="{{img_root}}/{{img}}" class="img-fluid mb-2">
+	</div>
+</div>

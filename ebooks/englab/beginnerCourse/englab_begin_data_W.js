@@ -295,6 +295,12 @@ const ENGLAB_BEGIN_DATA_W = [
 	,en:""
 	,voca:""
 	,note:"academic pursuits|facilitate|occupational prospects"
+},{
+	title:"Dịch đoạn"
+	,en:"The main problem for anyone moving to a big city is that the living expenses are often much higher than in a small town or village. Inhabitants must pay higher prices for housing, transportation and even food. Another problem is that urban areas often suffer from social problems, such as higher crime and poverty rates than rural areas. What's more, the quality of the air in cities is often polluted by traffic and the streets which accompany public transport systems are often overloaded. As a result, city life could be unhealthy and stressful."
+	,vi:"Vấn đề chính đối với bất kỳ ai muốn di cư đến một thành phố lớn là giá cả sinh hoạt thường cao hơn nhiều so với ở một thị trấn nhỏ hoặc làng quê. Cư dân thành phố phải trả giá cao hơn cho nhà ở, giao thông và thậm chí là thức ăn. Vấn đề khác là các khu vực đô thị thường gặp phải các vấn đề xã hội như tỷ lệ tội phạm và nghèo đói cao hơn so với khu vực nông thôn. Hơn nữa, chất lượng không khí ở thành phố thường xuyên bị ô nhiễm từ giao thông và đường phố cùng hệ thống phương tiện công cộng thườn quá tải. Kết quả là cuộc sống ở thành phố có thể không lành mạnh và gây căng thẳng."
+	,voca:""
+	,note:""
 }
 
 

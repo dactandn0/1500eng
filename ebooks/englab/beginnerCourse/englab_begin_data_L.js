@@ -294,8 +294,6 @@ Nếu bạn chưa có hộp đựng máy ảnh, tôi khuyên bạn nên mua mộ
 Remember, for all these products, you get fantastic sales and service. Look out for discounts next week on all these products."
 	,vi:"Chào buổi chiều, thính giả. Geoff Beck từ Luna Mobiles ở đây với mục 'Công nghệ và Bạn' vào chiều nay. Đây là chương trình quảng cáo trên radio mà tôi sẽ cập nhật cho bạn những sản phẩm mua tốt nhất trong thế giới công nghệ. Hôm nay - điện thoại di động! Chúng ta sẽ ra sao nếu không có chúng? Tôi sẽ cho bạn biết về những cải tiến mới nhất, những tính năng tốt nhất và giá trị tốt nhất trong thế giới điện thoại di động thú vị. Hãy để tôi giới thiệu cho bạn về bốn sản phẩm mới. Đầu tiên là Luna 500. Đây là một trong những sản phẩm yêu thích của tôi! Sản phẩm nhỏ xinh này có một số trò chơi tuyệt vời, một máy ảnh, Internet và một máy ghi âm. Nó cũng rất thời trang! Nó có màu đỏ, xanh lá cây, xanh lam và hồng. Giá của sản phẩm tuyệt đẹp này là 849 đô la. Không hề rẻ, nhưng bạn sẽ thích nó. Nó rất đáng giá. Thứ hai là Aquila 50. Con gái tôi rất thích sản phẩm này. Không có nhiều tính năng như Luna, nhưng nó mỏng hơn và nhẹ hơn. Nó có những trò chơi tuyệt vời và một camera 5 megapixel, vì vậy bạn có thể chụp được những bức ảnh thực sự sắc nét. Aquila có giá 749 đô la. Không rẻ nhưng đáng giá, đặc biệt là với chiếc camera đó. Bây giờ, tiếp tục, nếu bạn không muốn trả nhiều tiền nhưng bạn cần một chiếc điện thoại tốt, Hermes 580 có thể là chiếc điện thoại dành cho bạn. Viên ngọc nhỏ này nằm thoải mái trong lòng bàn tay của bạn. Nó có một số trò chơi hay và một camera. Bạn có thể mua chiếc này chỉ với giá 395 đô la. So sánh nó với chiếc bạn đang có bây giờ. Không phải đã đến lúc bạn nên mua một chiếc mới sao? Với mức giá đó, bạn không thể thua lỗ. Một chiếc điện thoại tương tự, nhưng thậm chí còn rẻ hơn, là Riva A65. Bạn sẽ thích chiếc này. Đây là chiếc điện thoại dành cho những người nói với tôi rằng, 'Nếu tôi muốn có một chiếc máy ảnh, tôi sẽ mua một chiếc máy ảnh! Tôi muốn một chiếc điện thoại di động!' Đây là chiếc điện thoại dành cho bạn. Nó không có những tính năng đắt tiền. Nhưng với tư cách là một chiếc điện thoại, nó thật tuyệt. Mỏng. Thời trang. Tiện lợi. Chất lượng tốt. Nó có một số trò chơi nhưng thế là hết.<br>\
 Hãy nhớ rằng, với tất cả những sản phẩm này, bạn sẽ nhận được doanh số và dịch vụ tuyệt vời. Hãy chú ý đến các chương trình giảm giá vào tuần tới cho tất cả các sản phẩm này."
-	,voca:""
-	,note:""
 	,images:['l_u6_1-min.png']
 },{
 	track:"06.02"
@@ -306,9 +304,63 @@ OK. Let's go back to Sandy Little for the 4 o'clock news."
 	,vi:"Chào buổi chiều, các thính giả. Linda Harris từ Luna Mobiles ở đây với vị trí 'Công nghệ và Bạn' vào chiều nay, thay thế Geoff Beck, người đang đi nghỉ tuần này. Hôm nay, chúng ta sẽ xem xét các công ty điện thoại di động của bạn. May mắn thay, chúng ta có một sự lựa chọn! Tôi sẽ xem trước năm công ty lớn trên thị trường. Giả sử bạn đã mua điện thoại của mình và bây giờ bạn có thể tự do tham gia với một công ty. Bạn sẽ muốn tìm một công ty và sau đó quyết định gói tốt nhất. Chúng ta hãy nói về giá cả. Chúng ta sẽ xem xét năm công ty hàng đầu trên thị trường - Commix, Phontic, Pluto, World và Dialog. Đối với dịch vụ cơ bản, Commix tính phí 24 đô la một tháng, Phontic là 27 đô la và Pluto cũng vậy. World đắt hơn một chút ở mức 28 đô la và Dialog có giá 29,50 đô la. Đắt hơn một chút, nhưng họ khẳng định bạn sẽ nhận được giá trị tương xứng với số tiền bỏ ra! Phí vào giờ cao điểm cũng rất giống nhau. Commix, Phontic và Pluto đều tính phí 26 xu một giờ, World tính phí 28 xu, và Dialog vẫn là dịch vụ đắt nhất, ở mức 32 xu một giờ. Phí ngoài giờ cao điểm có thể khiến bạn quan tâm. Đây là những giờ ban đêm từ 8 giờ tối đến 8 giờ sáng. Thời gian tốt để gọi điện cho người thân ở các quốc gia khác. Commix, Phontic và Pluto tính cùng một mức phí cho các dịch vụ ngoài giờ cao điểm, chỉ 20 xu một giờ, trong khi World và Dialog đắt hơn, cả hai đều ở mức 27 xu một giờ. Bây giờ, vùng phủ sóng rất quan trọng. Vùng phủ sóng có nghĩa là tín hiệu điện thoại có thể phủ sóng xa đến đâu. Nói cách khác, đó là những khu vực mà bạn thực sự có thể sử dụng điện thoại của mình. Hiện tại, Commix có vùng phủ sóng tốt trên toàn quốc, nhưng Phontic chỉ phủ sóng tất cả các thành phố chính. Pluto và World phủ sóng trên toàn quốc. Không có vấn đề gì ở đó. Và vùng phủ sóng của Dialog là trên toàn quốc và các đảo. Đó là lý do tại sao nó đắt hơn. 'Nationwide and Islands' có nghĩa là bạn có thể sử dụng Dialog trên khắp đất nước chúng tôi và trên tất cả các đảo phía Tây và phía Bắc, nơi có tháp điện thoại và quyền truy cập.<br>\
 Vâng, bạn có thể thấy bạn có rất nhiều lựa chọn. Đừng quên lấy một bản sao của 'Mobile Memorandum', bản tin của công ty chúng tôi, để xem lại những con số này và đưa ra lựa chọn của bạn. Bạn cũng có thể đọc các khuyến nghị của chúng tôi.<br>\
 OK. Chúng ta hãy quay lại với Sandy Little để xem bản tin lúc 4 giờ."
-	,voca:""
-	,note:""
 	,images:['l_u6_2-min.png','l_u6_2b-min.png']
+},{
+	track:"07.01"
+	,title:"Education"
+	,en:"Bill: Hi, Sarah. How are you?<br>\
+Sarah: Oh, okay. But I'm having trouble deciding which classes to take this term.<br>\
+Bill: Well, I'm guessing you already know that maths, science, geography, and English are compulsory? <br>\
+Sarah: Yeah, I know. It's just that I'm not really sure which of the electives to do. Last term, I had a really horrible teacher for art history - Ms Taylor. I want to make sure I end up with someone a bit nicer this time.<br>\
+Bill: Yeah, Ms. Taylor can be a bit grumpy sometimes, and she always sets a lot of homework... I know! If you like art history, why don't you do art? Mr Harris teaches that, and he's really easy-going.<br>\
+Sarah: Yeah, but I'm hopeless at drawing and painting. I like looking at it more than actually doing it... Maybe a foreign language? I've always wanted to learn French. Bill: Well, there's a new teacher for French this term - Mrs Brown. I can't tell you what she's like, but she looks okay.<br>\
+Sarah: I don't really want to risk it... How about Miss Williams? I've had her for geography before, and she's really interesting. She's been all over the world, and she always used to talk to us about the different countries she's visited.<br>\
+Bill: Yeah, but that's the thing she only teaches geography; none of the elective subjects.<br>\
+Sarah: Oh, well then, I guess that really just leaves German.<br>\
+Doesn't Mr Smith teach that? He seems friendly enough. <br>\
+Bill: Yeah, he's okay. But he only teaches the upper classes. If you wanted to do level one German, you'd end up with Mr Jones, and he's usually away sick.<br>\
+Sarah: Oh dear. I guess I'll just stick with art history. At least, the subject's okay."
+	,vi:"Bill: Chào Sarah. Bạn khỏe không?<br>\
+Sarah: Ồ, ổn. Nhưng mình đang gặp rắc rối khi quyết định học lớp nào trong học kỳ này.<br>\
+Bill: À, mình đoán là bạn đã biết toán, khoa học, địa lý và tiếng Anh là bắt buộc rồi phải không? <br>\
+Sarah: Ừ, mình biết. Chỉ là mình không chắc nên học lớp tự chọn nào. Học kỳ trước, mình có một giáo viên lịch sử nghệ thuật thực sự tệ - cô Taylor. Mình muốn chắc chắn rằng lần này mình sẽ học với một người tốt bụng hơn một chút.<br>\
+Bill: Ừ, cô Taylor đôi khi có thể hơi cáu kỉnh, và cô ấy luôn giao rất nhiều bài tập về nhà... Mình biết mà! Nếu bạn thích lịch sử nghệ thuật, tại sao bạn không học nghệ thuật? Thầy Harris dạy môn đó, và thầy ấy thực sự dễ tính.<br>\
+Sarah: Ừ, nhưng mình không có hứng thú với việc vẽ và tô màu. Mình thích ngắm nhìn hơn là thực sự làm... Có lẽ là một ngoại ngữ? Mình luôn muốn học tiếng Pháp. Bill: Vâng, học kỳ này có một giáo viên tiếng Pháp mới - cô Brown. Tôi không thể nói cho bạn biết cô ấy như thế nào, nhưng cô ấy trông ổn.<br>\
+Sarah: Tôi không thực sự muốn mạo hiểm... Còn cô Williams thì sao? Tôi đã học cô ấy môn địa lý trước đây và cô ấy thực sự thú vị. Cô ấy đã đi khắp thế giới và cô ấy luôn nói chuyện với chúng tôi về những quốc gia khác nhau mà cô ấy đã đến thăm.<br>\
+Bill: Vâng, nhưng đó là điều cô ấy chỉ dạy địa lý; không có môn tự chọn nào.<br>\
+Sarah: Ồ, vậy thì, tôi đoán là chỉ còn lại tiếng Đức.<br>\
+Thầy Smith không dạy môn đó sao? Thầy ấy có vẻ khá thân thiện. <br>\
+Bill: Vâng, thầy ấy ổn. Nhưng thầy ấy chỉ dạy cho các lớp trên. Nếu bạn muốn học tiếng Đức trình độ một, bạn sẽ phải học với thầy Jones, và thầy ấy thường xuyên bị ốm.<br>\
+Sarah: Ôi trời. Tôi đoán là tôi sẽ chỉ học lịch sử nghệ thuật. Ít nhất thì chủ đề cũng ổn."
+,images:['l_u7_1-min.png']
+},{
+	track:"07.02"
+	,title:"Education"
+	,en:"Mary: Hi, Fred. Have you decided which electives you're going to do this term?<br>\
+Fred: Well, I'm definitely doing German again, with Mr Green. I want to travel to Europe at the end of the year, and maybe try and work in Germany. I'm not sure about my second subject, though.<br>\
+Mary: What about art? I'm starting art classes this term with that new teacher... What's her name?<br>\
+Fred: Oh, that'll be Ms. Palmer. I think she's going to be teaching art history too now that Dr Reed's left.<br>\
+Mary: Oh, has he? What a shame! He was a really good teacher. Where's he gone?<br>\
+Fred: I think he's gone to lecture up at the university. Anyway, art's not really my thing. I've never been into drawing and painting in a big way.<br>\
+Mary: Oh... Well, you could do another language. If you do French, you'll be well prepared for going to Europe. <br>\
+Fred: French? No way! That's Mrs. Fisher's class, and she's really strict. If you don't do your homework, she makes you stay after school and copy out French verb tables. <br>\
+Mary: Oh. Does she? Well, what about something a bit different? I know they're starting drama classes this term. That could be fun. I'm half thinking about doing that one myself.<br>\
+Fred: Oh, really? Who's teaching those? I've always wanted to have a try at acting.<br>\
+Mary: It's Mr. Turner. I think he spent a bit of time working as an actor in London, so the classes should be quite good. <br>\
+Fred: Oh, well, in that case, I think I'll have a go at drama."
+	,vi:"Mary: Chào Fred. Học kỳ này bạn đã quyết định sẽ học môn tự chọn nào chưa?<br>\
+Fred: Ồ, chắc chắn là mình sẽ học lại tiếng Đức với thầy Green. Mình muốn đi du lịch châu Âu vào cuối năm và có thể thử làm việc ở Đức. Nhưng mình vẫn chưa chắc về môn thứ hai.<br>\
+Mary: Còn nghệ thuật thì sao? Học kỳ này mình sẽ bắt đầu học nghệ thuật với cô giáo mới... Cô ấy tên gì vậy?<br>\
+Fred: Ồ, đó là cô Palmer. Mình nghĩ cô ấy cũng sẽ dạy lịch sử nghệ thuật sau khi Tiến sĩ Reed nghỉ việc.<br>\
+Mary: Ồ, vậy sao? Thật đáng tiếc! Ông ấy là một giáo viên rất giỏi. Ông ấy đi đâu rồi?<br>\
+Fred: Mình nghĩ ông ấy đã đi giảng bài ở trường đại học rồi. Dù sao thì, nghệ thuật không phải là sở thích của mình. Tôi chưa bao giờ thích vẽ và tô màu nhiều.<br>\
+Mary: Ồ... À, bạn có thể học một ngôn ngữ khác. Nếu bạn học tiếng Pháp, bạn sẽ chuẩn bị tốt cho việc đi châu Âu. <br>\
+Fred: Tiếng Pháp ư? Không đời nào! Đó là lớp của cô Fisher, và cô ấy thực sự nghiêm khắc. Nếu bạn không làm bài tập về nhà, cô ấy sẽ bắt bạn ở lại sau giờ học và chép lại bảng động từ tiếng Pháp. <br>\
+Mary: Ồ. Cô ấy có sao không? Ồ, hay là một điều gì đó khác biệt một chút? Tôi biết họ sẽ mở lớp kịch vào học kỳ này. Có thể sẽ rất vui. Tôi cũng đang cân nhắc đến việc tự mình học lớp đó.<br>\
+Fred: Ồ, thật sao? Ai dạy những lớp đó vậy? Tôi luôn muốn thử sức với diễn xuất.<br>\
+Mary: Là thầy Turner. Tôi nghĩ ông ấy đã dành một thời gian làm diễn viên ở London, vì vậy các lớp học sẽ khá tốt. <br>\
+Fred: Ồ, vậy thì, trong trường hợp đó, tôi nghĩ mình sẽ thử học kịch."
+,images:['l_u7_2-min.png']
 }
 
 

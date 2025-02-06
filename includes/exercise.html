@@ -1,10 +1,10 @@
 <div ng-if="story.T_F_NG && story.T_F_NG.trim().length>0" >
-	<p class="text-primary">Exercise: True/False/Not Given</p>
-	<p compile="story.T_F_NG"></p>
+	<p class="text-primary">True/False/Not Given</p>
+	<p class="mb-1" ng-repeat="sen in story.T_F_NG.split('<br>') track by $index">
+		<span ng-click="Index_NoteVoca_Speak(sen)">{{sen}}</span>
+	</p>
 </div>
 
-<div ng-if="story.images && story.images.length > 0" >
-	<div ng-repeat="img in story.images track by $index">
-		<img src="{{img_root}}/{{img}}" class="img-fluid mb-2">
-	</div>
+<div ng-repeat="img in story.images track by $index">
+	<img src="{{img_root}}/{{img}}" class="img-fluid mb-2">
 </div>

@@ -173,8 +173,10 @@ function getFullTile(obj) {
 	var unit = obj.unit ? ('U' + obj.unit) : '';
 	var track  = (obj.track) ? (obj.track) : '';
 	var title  = (obj.title) ? (' - ' + obj.title) : '';
-	var hasNote = (obj.note && obj.note.trim().length > 0) ? ' [note]' : ''
-	var hasExercise = obj.T_F_NG && obj.T_F_NG.trim().length > 0
+	var hasNote = obj.note && obj.note.trim().length > 0
+	var hasExercise = (obj.T_F_NG && obj.T_F_NG.trim().length > 0)
+						|| (obj.images && obj.images.length > 0)
+
 	return {
 		unit : unit,
 		track : track,

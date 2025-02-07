@@ -55,7 +55,7 @@ function IRR_ExtractWords(story)
 	var regex = new RegExp(`\\b(${voca_Regex}${phraRegex}${specialWord_Regex}|\\w+'*\\w*)\\b` , 'gi')
 	var words = english.match(regex);   // include phraVerbs and other
 	words = Helper_ArrRemoveDup(words)
-	
+
 	for (var i = 0; i < phraVerbs.length; i++) {
 		var www = phraVerbs[i].split(' ')
 		var word = www[0]

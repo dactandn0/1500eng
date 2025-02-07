@@ -47,8 +47,9 @@ function Helper_getTouchTextEvent(ev)
 
   var target = ev.target
 
+
    if (target.nodeName == KKK
-  	&& target.parentNode.nodeName == KKK
+  	&& (target.parentNode.nodeName == KKK || target.parentNode.nodeName == 'B')
   	) 
   	return target.parentNode.innerText
 

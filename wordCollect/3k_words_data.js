@@ -823,7 +823,7 @@ moped (n) /ˈməʊped/ xe máy có bàn đạp<br>\
 bus (n) xe buýt<br>\
 taxi (n) /ˈtæksi/ xe taxi<br>\
 tube (n) /tuːb/ tàu điện ngầm ở london<br>\
-underground (n) /ʌndərˈɡraʊnd/ tàu điện ngầm<br>\
+underground (n) /ʌndərˈɡraʊnd/ tàu điện ngầm, dưới lòng đất<br>\
 subway (n) /ˈsʌbweɪ/ tàu điện ngầm<br>\
 high-speed train (n) tàu cao tốc<br>\
 railway train (n) /ˈreɪlweɪ/ tàu hỏa<br>\

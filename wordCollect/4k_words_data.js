@@ -1003,7 +1003,6 @@ satellite vệ tinh<br>\
 scale tỷ lệ<br>\
 skip bỏ qua<br>\
 stretch kéo dài<br>\
-underground dưới lòng đất <br>\
 apart (adv) /əˈpɑːrt/ tách<br>\
 arrest bắt giữ<br>\
 award giải thưởng<br>\
@@ -1215,6 +1214,7 @@ satisfactory thỏa đáng<br>\
 shepherd người chăn cừu<br>\
 venture (n) /ˈventʃər/ mạo hiểm<br>\
 alley (n) /ˈæli/ hẻm, đường(ngỏ) hẹp<br>\
+hibernate (v) /ˈhaɪbərneɪt/ ngủ đông<br>\
 ax (n) /æks/ cây rùi<br>\
 bunch (n,v) /bʌntʃ/ bó, chùm, xâu<br>\
 chore (n) /tʃɔːr/ việc lặt vặt<br>\

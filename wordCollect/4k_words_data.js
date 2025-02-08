@@ -8,8 +8,13 @@ angry (a)/ˈæŋɡri/ giận dữ<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
 despite (prep) /dɪˈspaɪt/ cho dù<br>\
 On top of that (idiom) hơn thế<br>\
+closest confidant (n) /ˈkɑːnfɪdænt/ người bạn tâm giao gần gũi nhất<br>\
+intimate (a) /ˈɪntɪmət/ thân mật<br>\
+ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
+betray (v) /bɪˈtreɪ/ phản bội<br>\
+affordable (a) /əˈfɔːrdəbl/ có thể chi trả<br>\
 arrive (v) /əˈraɪv/ đến<br>\
 rebellious (a) /rɪˈbeljəs/ nổi loạn, bạo động<br>\
 romance (a) /ˈrəʊmæns/ lãng mạn<br>\

@@ -3,12 +3,14 @@ document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_R.
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_W.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_S.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_L.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_S_Vol5.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/englab/beginnerCourse/speaking_sample_vol5.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/englab/beginnerCourse/sheep_or_ship.js" type="text/javascript"></script>');
 
 var app = angular.module("beginnerCourseApp", []);
 app.controller("beginnerCourseCtrl", function($scope, $rootScope, $timeout) {
 
-$scope.img_root = './ebooks/englab/beginnerCourse/images' ; 						
+var imgRootPath = './ebooks/englab/beginnerCourse/images/' ; 						
+$scope.img_root = imgRootPath + 'lessons/'						
 $scope.ielt_form = 0 ; 								//Reading
 
 $scope.story = '';
@@ -31,17 +33,27 @@ ielt_formChange = function (num, isLoadData = false) {
 	if (num===2) $scope.stories = ENGLAB_BEGIN_DATA_S;
 	if (num===3)
 	{
-		$scope.stories = doMenu_Listening().concat(ENGLAB_BEGIN_DATA_L);
-		var loadListenIdx = Helper_loadInt('lessonFor_unit', 0);
-		$scope.fetchStory(loadListenIdx, false);
+		$scope.img_root = imgRootPath + 'lessons/'	
+		$scope.stories = doMenu_book(ENGLAB_BEGIN_DATA_L);
+		var idx = Helper_loadInt('lessonFor_unit', 0);
+		$scope.fetchStory(idx, false);
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_L)
 	}
 	if (num===4) 
 	{
-		$scope.stories = doMenu_S_VOL5().concat(ENGLAB_BEGIN_DATA_S_Vol5);
+		$scope.stories = doMenu_S_VOL5();
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_S_Vol5)
-		var loadListenIdx = Helper_loadInt('speakSameVol5_unit', 0);
-		$scope.fetchStory(loadListenIdx, false);
+		var idx = Helper_loadInt('speakSameVol5_unit', 0);
+		$scope.fetchStory(idx, false);
+	}
+
+	if (num===5) 
+	{
+		$scope.img_root = imgRootPath + 'sos/'	
+		$scope.stories = doMenu_book(ENGLAB_BEGIN_DATA_Sheep_or_ship);
+		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_Sheep_or_ship)
+		var idx = Helper_loadInt('sheep_or_ship_unit', 0);
+		$scope.fetchStory(idx, false);
 	}
 
 	$scope.acc = -1;
@@ -74,10 +86,14 @@ $scope.examTypeCss = function (idx) {
 }
 
 $scope.createAudioSrc = function() {
+	var mp3File = $scope.story.track + '.mp3';
+	var rootPath = "./ebooks/englab/beginnerCourse/"
 	if ($scope.ielt_form === 3)
-		return "./ebooks/englab/beginnerCourse/L_mp3/" + $scope.story.track + '.mp3';
+		return rootPath + "L_mp3/" + mp3File
 	else if ($scope.ielt_form === 4)
-		return "./ebooks/englab/beginnerCourse/S_Vol5_mp3/" + $scope.story.track + '.mp3';
+		return rootPath + "S_Vol5_mp3/" + mp3File
+	else if ($scope.ielt_form === 5)
+		return rootPath + "s_o_s_mp3/" + mp3File
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -88,6 +104,7 @@ $scope.fetchStory = function (idx, reset=true)
 {
 	var key = 'speakSameVol5_unit'
 	if ($scope.ielt_form === 3) key = 'lessonFor_unit'
+	if ($scope.ielt_form === 5) key = 'sheep_or_ship_unit'
 	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
 }
 
@@ -110,19 +127,21 @@ function doMenu_S_VOL5()
 	}
 	var r = []
 	r.push(menu)
-	return r
+	return r.concat(ENGLAB_BEGIN_DATA_S_Vol5)
 }
 
-function doMenu_Listening()
+function doMenu_book(bookData)
 {
 	var en = ""
-	for (var i = 0; i < ENGLAB_BEGIN_DATA_L.length; i++) {
-		var lesson = ENGLAB_BEGIN_DATA_L[i]
-		if (lesson.title && lesson.title.trim().length > 0)
+	for (var i = 0; i < bookData.length; i++) {
+		var lesson = bookData[i]
+		var lTitle = lesson.title
+		if (lTitle && lTitle.trim().length > 0)
 		{
+			if (en.indexOf(lTitle) >= 0) continue;
 			// 01.01 -> 01
-			var order = (lesson.track + '').replace(/\..*/gi, '')
-			en += order + ') ' + lesson.title + '<br>'
+			var order = lesson.unit || ( (lesson.track + '').replace(/\..*/gi, '') )
+			en += order + ') ' + lTitle + '<br>'
 		}
 	}
 	var menu = {
@@ -132,8 +151,9 @@ function doMenu_Listening()
 	}
 	var r = []
 	r.push(menu)
-	return r
+	return r.concat(bookData)
 }
+
 
 $scope.loadData = function () {
 	var cd = Helper_loadInt('ENGLAB_BEGIN_type', 0);

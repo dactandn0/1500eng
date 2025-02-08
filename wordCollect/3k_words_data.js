@@ -1328,10 +1328,12 @@ physics (n) môn vật lý<br>\
 history (n) /ˈhɪs.tər.i/ môn lịch sử<br>\
 economic (a) /iː.kəˈnɒm.ɪk/ thuộc kinh tế<br>\
 economy (n) nền kinh tế <br>\
+grumpy (a) cáu kỉnh <br>\
+compulsory (a) bắt buộc <br>\
 economics (n) /iː.kəˈnɒm.ɪks/ (môn)kinh tế học<br>\
 chemistry (n) /ˈkɛm.ɪ.stri/ hóa học<br>\
 biology (n) /baɪˈɒl.ə.dʒi/ sinh học<br>\
-geography (n) /dʒɪˈɒɡ.rə.fi/ địa lý<br>\
+geography (n) /dʒɪˈɒɡ.rə.fi/ môn địa lý<br>\
 art (n) /ɑːrt/ mỹ thuật<br>\
 fail (v) /feɪl/ rớt; đánh rớt<br>\
 pass (v) /pɑːs/ đậu, đỗ (kỳ thi)<br>\

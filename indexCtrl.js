@@ -92,8 +92,8 @@ app.config(function($routeProvider) {
 app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope', function($scope, appAlert, $location, toastr, $rootScope ) {
 
 $rootScope.$on('$routeChangeStart', function () {
-  $rootScope.bVocaOfEbook = false
-  $rootScope.vocaEbook = []
+  $rootScope.bVocaOfEbook = false;
+  $rootScope.vocaEbook = [];
 });
 
 
@@ -188,7 +188,7 @@ $scope.Index_NoteVoca_Speak = function (word) {
   var concatWord = ''
   parts.forEach(ele => {
     if (TIENGVIET_ARR.includes(ele)) return; // ~ continue
-    if (/^[A-Za-z\.,!\?']+$/gi.test(ele))  // keep we'd, he's, Mr.Vas
+    if (/^[A-Za-z\.,!\?'\-]+$/gi.test(ele))  // keep we'd, he's, Mr.Vas
     {
       concatWord += ' ' + ele
     }

@@ -99,7 +99,7 @@ fuel /'fju:al/ (n) nhiên liệu<br>\
 Industrial Revolution (n) Cách mạng công nghiệp<br>\
 release /ri'li:s/ (n,v) giải phóng, sự thả ra<br>\
 telescope /'teliskaup/ (n) kính thiên văn<br>\
-term /t3:m/ (n) thuật ngữ<br>\
+term /t3:m/ (n) thuật ngữ, thời gian, kỳ hạn<br>\
 appliance (n) thiết bị<br>\
 application (n) ứng dụng<br>\
 bill (n) hóa đơn<br>\

@@ -1,4 +1,4 @@
-var TIENGVIET_ARR = ['giao','vui','trong', 'bao', 'kinh', 'tinh', 'quen']
+var TIENGVIET_ARR = ['giao','vui','trong', 'bao', 'kinh', 'tinh', 'quen', 'con', 'lui', 'thui', 'tui', 'tin', 'sau']
 
 function removeVietnameseTones(str) {
 	str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
@@ -135,24 +135,7 @@ Helper_Speak = function (event, txt) {
 	Text2Speech(target)
 }
 
-function Text2Speech(word) {
-	if (!UtterEnd) return;
-	speechSynthesis.getVoices();
-	const utter = new SpeechSynthesisUtterance(word);
-	utter.text = word;
-	utter.pitch  = Helper_loadFloat(Helper_AudioPitchKey, 1);
-	utter.rate  = Helper_loadFloat(Helper_AudioRateKey, 1);
-	utter.volume  = 1;
-	utter.lang='en-US';
 
-	utter.addEventListener('end', (evt) => {
-		const { charIndex, utterance } = evt
-		UtterEnd = true;
-	})
-
-	speechSynthesis.speak(utter);
-	UtterEnd = false;
-}
 
 Helper_SliceHalfString = function (str) {
 	var partOne = ""

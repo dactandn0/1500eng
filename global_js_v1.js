@@ -16,7 +16,6 @@ var kNgClickTagClose = '</'+kNgClickTagName+'>';
 
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
-var UtterEnd = true;		// prevent a word from constantly double-click
 
 var kReplaceWords = [
 	{ src: 'ms\\.*', desc: 'Ms'},
@@ -170,7 +169,7 @@ function showStoryTitles(data) {
 }
 
 function getFullTile(obj) {
-	var unit = obj.unit ? ('U' + obj.unit) : '';
+	var unit = obj.unit ? (' -U' + obj.unit) : '';
 	var track  = (obj.track) ? (obj.track) : '';
 	var title  = (obj.title) ? (' - ' + obj.title) : '';
 	var hasNote = obj.note && obj.note.trim().length > 0

@@ -187,7 +187,7 @@ const SynonymData = [
 	mean:"đổ lỗi"
 },
 {
-	words:"opinion /əˈpɪnjən/|perspective /pərˈspektɪv/|standpoint /ˈstændpɔɪnt/|view",
+	words:"opinion /əˈpɪnjən/|perspective /pərˈspektɪv/|standpoint /ˈstændpɔɪnt/|view ( = scenery)",
 	type:"n",
 	mean:"quan điểm"
 },

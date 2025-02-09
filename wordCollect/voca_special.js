@@ -33,7 +33,7 @@ bank (n) bờ sông | (n) ngân hàng<br>\
 board (n) cái bảng | (v) lên tàu, máy bay<br>\
 book (n) sách | (v) đặt trước (vé)<br>\
 jam (n) mứt | (n) sự ùn tắc<br>\
-fly (n) còn ruồi | (v) bay<br>\
+fly (n) con ruồi | (v) bay<br>\
 fall (n) mùa thu | (v) ngã, rơi<br>\
 clip (n) đoạn film ngắn | (v) cắt xén<br>\
 check (n) séc | (v) kiểm tra<br>\

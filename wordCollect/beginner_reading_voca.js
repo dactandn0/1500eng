@@ -15,11 +15,8 @@ dial (v,n) quay số, mặt đồng hồ, la bàn<br>\
 elevator (n) /ˈɛl.ɪveɪ.tər/ thang máy<br>\
 location (n) vị trí<br>\
 notify (v) /ˈnoʊtɪfaɪ/ thông báo<br>\
-personnel manager (n) /pɜːrsəˈnɛl ˈmæn.ɪ.dʒər/ giám đốc nhân sự<br>\
-personnel (n) /pɜːrsəˈnɛl/ nhân sự<br>\
 procedure /pra'si:d3a/ (n) thủ tục, quy trình<br>\
 proceed (v) tiến hành<br>\
-staff (n) nhân viên<br>\
 towel (n) khăn<br>\
 emergency /i'm3:d3ansi/ (n) sự khẩn cấp<br>\
 engage /in'geid3/ (v) tham gia<br>\
@@ -35,7 +32,7 @@ geographical (a) /dʒiːəˈɡræfɪkl/ thuộc địa lý <br>\
 glacier (n) /ˈɡleɪʃər/ sông băng, đá băng <br>\
 humanity (n) /hjuːˈmænəti/ nhân loại <br>\
 inevitably (adv) /ɪnˈevɪtəbli/ chắc chắn<br>\
-mild (a) /maɪld/ nhẹ<br>\
+mild (a) /maɪld/ nhẹ nhàng, ấm áp, êm ái<br>\
 policymaker (n) nhà hoạch định chính sách<br>\
 refug (n) nơi trú ẩn<br>\
 refugee (n) người tị nạn<br>\
@@ -47,7 +44,7 @@ consult (v) tham khảo, thảo luận<br>\
 ease (n,v) xoa dịu<br>\
 germ (n) mầm bệnh, (v) vi trùng<br>\
 graze (v) làm trầy (n) vết bầm<br>\
-injection (n) sự tiêm<br>\
+injection (n) /ɪnˈdʒek.ʃən/ việc tiêm thuốc<br>\
 itchy (n) ngứa<br>\
 knit (v) đan len (chỉ)<br>\
 plaster (n) thạch cao, miếng dán<br>\
@@ -78,7 +75,7 @@ mature /ma'tjua/ (a) trưởng thành<br>\
 merit /'merit/ (n) công trạng<br>\
 metropolitan /,metra'politan/ (a) đô thị<br>\
 proficiency /pra'fifansi/ (n) sự thành thạo<br>\
-qualification /,kwolifi'keiJan/ (n) trình độ<br>\
+qualification /kwolifi'keiJan/ (n) trình độ<br>\
 secondary /'sekandari/ (a) thứ cấp<br>\
 tuition /tju'ifan/ (n) học phí<br>\
 bubble /'bAbl/ (n) bong bóng<br>\
@@ -87,7 +84,7 @@ calculate /'krelkjuleit/ (v) <br>\
 catchphrase /'kretffreiz/ (n) câu cửa miệng<br>\
 civilise /'sivilaiz/ (v) <br>\
 contain /kan'tein/ (v) văn minh<br>\
-contribute /kan'tribju:t/ (v) <br>\
+contribute (v) /kənˈtrɪbjuːt/ góp phần<br>\
 current /'kArant/ (a) <br>\
 drill / dril/ (v) máy khoan, khoan<br>\
 exclusively (adv) /ik'sklu:sivli/ độc quyền<br>\
@@ -103,7 +100,7 @@ term /t3:m/ (n) thuật ngữ, thời gian, kỳ hạn<br>\
 appliance (n) thiết bị<br>\
 application (n) ứng dụng<br>\
 bill (n) hóa đơn<br>\
-caretaker (n) người chăm sóc<br>\
+caretaker (n) /ˈkerteɪkər/ người chăm sóc<br>\
 confirm (v) xác nhận<br>\
 coverage (n) phạm vi bảo hiểm<br>\
 credit (n) tín dụng<br>\
@@ -111,23 +108,22 @@ damage (n) thiệt hại<br>\
 deposit (n,v) tiền gửi, tiền đặt cọc, (v) gửi tiền<br>\
 enact (v) đã ban hành<br>\
 faucet (n) vòi nước<br>\
-function (v) chức năng<br>\
 income (n) thu nhập<br>\
-indicate (v) chỉ ra<br>\
-individual (a) cá nhân<br>\
+indicate (v) /ˈɪndɪkeɪt/ chỉ ra<br>\
+individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
 insurance (n) bảo hiểm<br>\
 item (n) mục<br>\
 leak (v) rò rỉ<br>\
 pet (n) thú cưng<br>\
 process (n) quy trình<br>\
 reference (n) tham chiếu<br>\
-refund (v) hoàn trả<br>\
+refund (n,v) /ˈriːfʌnd/ hoàn lại, trả lại<br>\
 rental contract (n) /ˈrɛntəl ˈkɒntrækt/ hợp đồng cho thuê<br>\
 rent (n,v) /rɛnt/ thuê, sự cho mướn, tiền thuê nhà<br>\
 rental (n) tiền thuê nhà thuê<br>\
 retain (v) giữ lại<br>\
 scratch (n) trầy xước<br>\
-security (n) bảo mật<br>\
+security (n) /sɪˈkjʊrɪti/ bảo vệ, bảo mật, giám hộ<br>\
 smooth (a) trơn tru<br>\
 tear (n) rách<br>\
 vacate (v) bỏ đi, rời đi<br>\

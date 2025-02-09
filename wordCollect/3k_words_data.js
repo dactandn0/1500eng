@@ -42,7 +42,6 @@ compass (n) /ˈkʌm.pəs/ com-pa<br>\
 coloured pencil (n) /ˈkʌl.əd ˈpen.səl/ bút chì màu<br>\
 clamp (n) klæmp/ kẹp<br>\
 carbon paper (n) /ˈkɑː.bən peɪ.pər/ giấy than<br>\
-book (n) /bʊk/ sách<br>\
 binder (n) /ˈbaɪn.dər/ bìa rời (báo, tạp chí)<br>\
 beaker (n) /ˈbiː.kər/ cốc bêse<br>\
 backpack (n) /ˈbækpækər/ ba lô<br>\
@@ -79,9 +78,6 @@ meditation (n) /,medi’teiʃn/ thiền<br>\
 play an instrument (v) /pleɪ ænˈɪn.strə.mənt/ chơi nhạc cụ<br>\
 play outside (v) /pleɪ aʊtˈsaɪd/ đi ra ngoài chơi<br>\
 play sports (v) /pleɪ spɔːts/ chơi thể thao<br>\
-play video games (v) /pleɪ ˈvɪd.i.əʊ ɡeɪmz/ chơi trò chơi điện tử<br>\
-read books (v) /riːd bʊks/ đọc sách<br>\
-read newspapers (v) /ri:d’nju:z,peipəz/ đọc báo<br>\
 set the alarm (v) /set ðə ə’lɑ:m/ đặt chuông báo thức<br>\
 shave (v) /∫eiv/ cạo râu<br>\
 study (v) /ˈstʌd.i/ học tập, nghiên cứu<br>\
@@ -89,12 +85,11 @@ surf the internet (v) /sɜːf ðiː ˈɪn.tə.net/ lướt mạng<br>\
 take the rubbish out (v) /teik ðə ‘rʌbiʃ aut/ đi đổ rác<br>\
 drink (v) /driɳk/ uống(v), đồ uống (n)<br>\
 turn off (v) /tɜrn ɒf/ tắt<br>\
-visit your friend (v) /ˈvɪz.ɪt jɔːr frend/ thăm bạn bè<br>\
 wake up (v) /weik λp/ tỉnh giấc<br>\
-wash your face (v) /wɒʃ jɔːr feɪs/ rửa mặt<br>\
-wash the dishes (v) /wɔʃ ðə dɪʃ/ rửa chén<br>\
-watch television (v) /wɔtʃ ‘teli,viʤn/ xem tivi<br>\
-work (v) /wə:k/ làm việc"
+dish (v) /dɪʃ/  chén<br>\
+sword (n) /sɔːrd/ gươm, quân quyền<br>\
+word (n) /wɜːrd/<br>\
+work (v) /wɜːrk/ làm việc"
 },
 {
 title:"sea",
@@ -133,7 +128,6 @@ decimal (n) /ˈdes.ɪ.məl/ số thập phân<br>\
 fraction (n) /ˈfræk.ʃən/ phân số<br>\
 percentage (n) /pəˈsen.tɪdʒ/ phần trăm<br>\
 arithmetic adj/n /əˈrɪθ.mə.tɪk/ số học<br>\
-divide (v) /dɪˈvaɪd/ chia<br>\
 plus (prep)  /plʌs/ cộng<br>\
 minus (prep)  /ˈmaɪ.nəs/ trừ<br>\
 multiply (v) /ˈmʌl.tɪ.plaɪ/ nhân<br>\
@@ -176,7 +170,6 @@ toy store (n) /tɔɪ stɔːr/ cửa hàng đồ chơi<br>\
 grocery store (n) /ˈɡrəʊ.sər.i stɔːr/ cửa hàng tạp hóa<br>\
 convenience store (n) /kənˈviː.ni.əns stɔːr/ cửa hàng tiện lợi<br>\
 bargain (n) /ˈbɑː.ɡɪn/ mặc cả<br>\
-refund (n,v) /ˈriː.fʌnd/ hoàn lại, trả lại<br>\
 brochure (n) /ˈbrəʊ.ʃər/ tập quảng cáo<br>\
 liquor store (n) /ˈlɪk.ə stɔːr/ quán rượu<br>\
 drugstore (n) /ˈdrʌɡ.stɔːr/ tiệm thuốc<br>\
@@ -228,7 +221,6 @@ partner (n) /ˈpɑːt.nər/ cộng sự<br>\
 associate (n) /əˈsəʊ.si.eɪt/ bạn đồng liêu, đồng minh<br>\
 ally (n) /ˈæl.aɪ/ đồng minh<br>\
 companion (n) /kəmˈpæn.jən/ bạn đồng hành<br>\
-pal (n) /pæl/ bạn (từ lóng)<br>\
 friendship (n) /ˈfrend.ʃɪp/ tình bạn<br>\
 closer (a) /kləʊzest/ thân thiết hơn, nhìn gần(kỹ) hơn<br>\
 closest (a) /kləʊzer/ superlative close<br>\
@@ -412,7 +404,6 @@ emergency room (n) /ɪˈmɜː.dʒən.si ruːm/ phòng cấp cứu<br>\
 obstetrician (n) /ɒb.stəˈtrɪʃ.ən/ bác sĩ sản khoa<br>\
 operating room (n) /ˈɒp.ər.eɪ.tɪŋ ruːm/ phòng phẫu thuật<br>\
 needle (n) /ˈniː.dəl/ kim tiêm<br>\
-laboratory (n) /ləˈbɒr.ə.tər.i/ phòng thí nghiệm<br>\
 pharmacy (n) /ˈfɑː.mə.si/ tiệm thuốc<br>\
 hospital bed (n) /ˈhɒs.pɪ.təl bed/ giường bệnh<br>\
 call button (n) /kɔːl ˈbʌt.ən/ chuông gọi (y tá)<br>\
@@ -422,7 +413,6 @@ waiting room (n) /ˈweɪ.tɪŋ ruːm/ phòng chờ<br>\
 surgeon (n) /ˈsɜː.dʒən/ bác sĩ phẫu thuật<br>\
 surgery (n) /ˈsɜːrdʒəri/ ca phẫu thuật<br>\
 midwife (n) /ˈmɪd.waɪf/ bà đỡ<br>\
-injection (n) /ɪnˈdʒek.ʃən/ việc tiêm thuốc<br>\
 calcium (n) /ˈkæl.si.əm/ canxi<br>\
 hospital (n) /ˈhɒs.pɪ.təl/ bệnh viện<br>\
 crutch (n) /krʌtʃ/ cái nạng<br>\
@@ -455,7 +445,6 @@ cd-rom (n) /siː.diːˈrɒm/ đĩa cd dữ liệu<br>\
 toolbar (n) /ˈtuːl.bɑːr/ thanh công cụ<br>\
 database (n) /ˈdeɪ.tə.beɪs/ cơ sở dữ liệu<br>\
 hacker (n) /ˈhæk.ər/ tin tặc<br>\
-save (v) /seɪv æz/ lưu<br>\
 select (v) /sɪˈlekt/ chọn<br>\
 copy (v) /ˈkɒp.i/ sao chép<br>\
 computer (n) /kəmˈpjuː.tər/ máy vi tính<br>\
@@ -573,7 +562,7 @@ mask (n) /mɑːsk/ mặt nạ<br>\
 banyan (n) /ˈbæn.jæn/ cây đa<br>\
 lantern (n) /ˈlæn.tən/ lồng đèn<br>\
 bamboo (n) /bæmˈbuː/ tre<br>\
-celebrate (v) /ˈselɪbreɪt/ kỷ niệm, làm lễ<br>\
+celebrate (v) /ˈselɪbreɪt/ làm kỷ niệm, làm lễ<br>\
 celebration (n) /selɪˈbreɪʃn/ lễ kỷ niệm<br>\
 family reunion (n) /ˈfæm.əl.i riːˈjuː.njən/ họp mặt gia đình<br>\
 lion dance (n) /ˈlaɪən dæns/",
@@ -645,8 +634,7 @@ harvest (n) /ˈhɑː.vɪst/ vụ gặt<br>\
 cattle (n) /ˈkæt.əl/ gia súc<br>\
 rural (a) /ˈrʊə.rəl/ (thuộc) nông thôn<br>\
 cliff (n) /klɪf/ vách đá<br>\
-landscape (n) /ˈlænd.skeɪp/ phong cảnh<br>\
-view (n) /vjuː/ khung cảnh, quang cảnh"
+landscape (n) /ˈlænd.skeɪp/ phong cảnh"
 },
 {
 title:"wedding",
@@ -711,7 +699,6 @@ cough (n) /kɔf/ ho<br>\
 hurt (v) /hɜːt/ đau<br>\
 swollen (a) /ˈswoʊlən/ bị sưng<br>\
 pus (n) /pʌs/ mủ<br>\
-graze (v) /greiz/ trầy xước (da)<br>\
 myopia  (n) /maɪˈəʊpiə/ cận thị<br>\
 headache (n) /ˈhɛdeɪk/ đau đầu<br>\
 insomnia (n) /ɪnˈsɑːmniə/ chứng mất ngủ<br>\
@@ -796,7 +783,6 @@ minute (n) /ˈmɪn.ɪt/ phút<br>\
 hour (n) /aʊr/ tiếng<br>\
 week (n) /wiːk/ tuần<br>\
 decade (n) /dekˈeɪd/ thập niên<br>\
-century (n) /ˈsen.tʃər.i/ thế kỷ<br>\
 weekend (n) /ˈwiːend/ cuối tuần<br>\
 month (n) /mʌnθ/ tháng<br>\
 year (n) /jɪr/ năm<br>\
@@ -914,7 +900,6 @@ typhoon (n) /taɪˈfuːn/ bão<br>\
 tsunami (n) /tsuːˈnɑːmi/ sóng thần<br>\
 landslide (n) /ˈlændslaɪd/ sạt lở đất<br>\
 volcanic eruption (n) /vɑːlˈkænɪk ɪˈrʌpʃn/ núi lửa phun<br>\
-earthquake (n) /ˈɜːrθkweɪk/ động đất<br>\
 aftershock (n) /ˈæftərʃɒk/ dư chấn<br>\
 flood (n) /flʌd/ lũ lụt<br>\
 drought (n) draʊt/ hạn hán<br>\
@@ -1101,7 +1086,6 @@ peach blossom (n) /piːtʃ ˈblɒs.əm/ hoa đào",
 {
 	title:"movie",
 	en:"movie (n) /ˈmuː.vi/ phim<br>\
-famous (a) /ˈfeɪməs/ nổi tiếng<br>\
 comedy (n) /ˈkɑmədi/ hài kịch<br>\
 film festival (n) /fɪlm ˈfɛstɪvəl/ liên hoan phim<br>\
 trailer (n) /ˈtreɪlər/ đoạn phim quảng cáo<br>\
@@ -1273,8 +1257,7 @@ hug (v) /hʌɡ/ ôm<br>\
 chocolate (n) /ˈtʃɒk.lɪt/ sô-cô-la<br>\
 wedding (n) /ˈwɛd.ɪŋ/ đám cưới<br>\
 anniversary (n) /æn.ɪˈvɜː.sər.i/ ngày kỷ niệm<br>\
-darling (n) /ˈdɑːr.lɪŋ/ em yêu, anh yêu<br>\
-single (a) /ˈsɪŋ.ɡəl/ độc thân",
+darling (n) /ˈdɑːr.lɪŋ/ em yêu, anh yêu"
 },
 {
 	title:"restaurant, hotel",
@@ -1335,10 +1318,9 @@ chemistry (n) /ˈkɛm.ɪ.stri/ hóa học<br>\
 biology (n) /baɪˈɒl.ə.dʒi/ sinh học<br>\
 geography (n) /dʒɪˈɒɡ.rə.fi/ môn địa lý<br>\
 art (n) /ɑːrt/ mỹ thuật<br>\
-fail (v) /feɪl/ rớt; đánh rớt<br>\
+fail (v) /feɪl/ rớt; đánh rớt, thất bại<br>\
 pass (v) /pɑːs/ đậu, đỗ (kỳ thi)<br>\
 uniform (n) /ˈjuː.nɪ.fɔːm/ đồng phục<br>\
-grade (n) /ɡreɪd/ điểm số<br>\
 form teacher (n) /fɔːm ˈtiː.tʃər/ giáo viên chủ nhiệm<br>\
 proctor (n) /ˈprɒk.tər/ giám thị<br>\
 school bag (n) /skuːl bæg/ cặp<br>\
@@ -1373,9 +1355,7 @@ dew (n) /djuː/ sương<br>\
 sleet (n) /sliːt/ mưa tuyết<br>\
 stormy (a) /ˈstɔːr.mi/ có bão<br>\
 snowflake (n) /ˈsnoʊ.fleɪk/ bông tuyết<br>\
-puddle (n) /ˈpʌd.əl/ vũng nước mưa<br>\
 lightning (n) /ˈlaɪt.nɪŋ/ tia chớp<br>\
-mild (a) /maɪld/ ôn hoà<br>\
 shelter (n) /ˈʃɛl.tər/ chỗ trú ẩn<br>\
 celsius (a) /ˈsɛl.si.əs/ (thuộc) độ c",
 },
@@ -1424,8 +1404,7 @@ size (n) /saɪz/ kích cỡ",
 }
 ,{
 	title:"body parts",
-	en:"face (n) /feɪs/ khuôn mặt<br>\
-hair (n) /hɛr/ tóc<br>\
+	en:"hair (n) /hɛr/ tóc<br>\
 ear (n) /ɪr/ tai<br>\
 neck (n) /nɛk/ cổ<br>\
 forehead (n) /ˈfɔːrhɛd/ trán<br>\
@@ -1482,7 +1461,6 @@ curriculum (n) /kəˈrɪk.jə.ləm/ chương trình giảng dạy<br>\
 course (n) /kɔːrs/ khóa học<br>\
 subject (n) /ˈsʌb.dʒɪkt/ môn học<br>\
 mark (n) /mɑːrk/ điểm số<br>\
-qualification (n) /kwɒl.ɪ.fɪˈkeɪ.ʃən/ trình độ chuyên môn<br>\
 attendance (n) /əˈtɛn.dəns/ sự có mặt<br>\
 absence (n) /ˈæb.səns/ sự vắng mặt<br>\
 projector (n) /prəˈdʒɛk.tər/ máy chiếu<br>\
@@ -1646,7 +1624,6 @@ mosquito (n) /məˈskiː.toʊ/ muỗi<br>\
 ladybug (n) /ˈleɪ.dibʌɡ/ bọ rùa<br>\
 spider (n) /ˈspaɪ.dər/ nhện<br>\
 firefly (n) /ˈfaɪrflaɪ/ đom đóm<br>\
-fly (n) /flaɪ/ ruồi<br>\
 bee (n) /biː/ ong<br>\
 wasp (n) /wɒsp/ ong bắp cày<br>\
 centipede (n) /ˈsɛn.tɪpiːd/ rết",
@@ -1659,7 +1636,6 @@ workbook (n) /ˈwɜːkbʊk/ sách bài tập<br>\
 reference book (n) /ˈrɛf.ər.əns bʊk/ sách tham khảo<br>\
 notepad (n) /ˈnoʊtpæd/ sổ ghi chép<br>\
 crayon (n) /ˈkreɪ.ɒn/ bút chì màu<br>\
-pencil sharpener (n) /ˈpɛn.səl ʃɑːp.nər/ đồ gọt bút chì<br>\
 eraser (n) /ɪˈreɪ.zər/ cục tẩy<br>\
 ballpoint pen (n) /ˈbɔːl.pɔɪnt pɛn/ bút bi<br>\
 map (n) /mæp/ bản đồ<br>\
@@ -1826,7 +1802,6 @@ dismiss (v) /dɪsˈmɪs/ sa thải<br>\
 finance (n) /ˈfaɪnæns/ tài chính<br>\
 appointment (n) /əˈpɔɪntmənt/ sự bổ nhiệm, cuộc hẹn<br>\
 multinational (a) /mʌltɪˈnæʃənəl/ đa quốc gia<br>\
-investor (n) /ɪnˈvɛstər/ nhà đầu tư<br>\
 inherit (v) /ɪnˈhɛrɪt/ thừa kế<br>\
 accountant (n) /əˈkaʊntənt/ nhân viên kế toán<br>\
 lend (v) /lɛnd/ cho vay<br>\
@@ -1845,10 +1820,8 @@ commerce (n) /ˈkɑːmɜrs/ thương mại<br>\
 costly (a) /ˈkɒstli/ tốn kém<br>\
 responsible (a) /rɪˈspɒnsəbl/ chịu trách nhiệm<br>\
 communicate (v) /kəˈmjuːnɪkeɪt/ giao tiếp<br>\
-abroad (adv) /əˈbrɔd/ ở nước ngoài<br>\
 inheritance (n) /ɪnˈhɛrɪtəns/ sự thừa kế<br>\
 fortune (n) /ˈfɔrʧən/ tài sản, vận may<br>\
-property (n) /ˈprɒpərti/ tài sản<br>\
 cash machine (n) /kæʃ məˈʃiːn/ máy rút tiền<br>\
 online account (n) /ˈɒnlaɪn əˈkaʊnt/ tài khoản trực tuyến<br>\
 insurance policy (n) /ɪnˈʃʊrəns ˈpɒlɪsi/ hợp đồng bảo hiểm<br>\
@@ -1859,7 +1832,7 @@ survey (n) /ˈsɜːrveɪ/ khảo sát<br>\
 possession (n) /pəˈzɛʃən/ sự sở hữu<br>\
 equality (n) /ɪˈkwɒlɪti/ sự ngang bằng nhau<br>\
 poverty (n) /ˈpɒvərti/ sự nghèo<br>\
-charge (n) /ʧɑrdʒ/ phí, tiền phải trả<br>\
+charge (n,v) /ʧɑrdʒ/ phí, tiền phải trả (v) phạt<br>\
 outsource (v) /ˈaʊtsɔrs/ thuê ngoài<br>\
 grant (n) /ɡrænt/ trợ cấp, công nhận<br>\
 warehouse (n) /ˈwɛrhaʊs/ kho hàng<br>\
@@ -1867,7 +1840,6 @@ in-house (a) /ˈɪnhaʊs/ tiến hành trong một tổ chức<br>\
 potential a/n /pəˈtɛnʃəl/ tiềm lực , tiềm tàng<br>\
 back-office (n) /bæk ˈɒfɪs/ văn phòng hành chính<br>\
 campaign (n) /kæmˈpeɪn/ chiến dịch<br>\
-security (n) /sɪˈkjʊrɪti/ bảo vệ, che chở, giám hộ<br>\
 insecurity (n) /ɪnsɪˈkjʊrɪti/ an ninh, sự oan toàn<br>\
 insurance provider (n) /ɪnˈʃʊrəns prəˈvaɪdər/ nhà cung cấp bảo hiểm<br>\
 compensation (n) /kɒmpənˈseɪʃən/ sự đền bù, bồi thường<br>\
@@ -1894,7 +1866,6 @@ reply (v) / /rɪˈplaɪ/ hồi đáp",
 	title:"accommodation",
 	en:"building (n) /ˈbɪldɪŋ/ building<br>\
 colorful (a) /ˈkʌlərfl/ đầy màu sắc<br>\
-lively (a) /ˈlaɪvli/ sống động<br>\
 bridge (n) /brɪdʒ/ cây cầu<br>\
 sunset (n) /ˈsʌnset/ hoàng hôn, lúc già yếu<br>\
 atmosphere (n) /ˈætməsfɪr bầu không khí<br>\

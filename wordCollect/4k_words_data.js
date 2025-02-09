@@ -4,7 +4,6 @@ title:"4k Book1",
 en:"afraid (a) /əˈfreɪd/ sợ<br>\
 actually (adv) /ˈæktʃuəli/ thực ra<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
-angry (a)/ˈæŋɡri/ giận dữ<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
 despite (prep) /dɪˈspaɪt/ cho dù<br>\
 On top of that (idiom) hơn thế<br>\
@@ -26,7 +25,6 @@ masterpiece (a) /ˈstaɪlɪʃ/ kiệt tác<br>\
 stylish (a) /ˈstaɪlɪʃ/ sành điệu<br>\
 recognizable (a) /ˈrekəɡnaɪzəbl/ có thể nhận ra<br>\
 strenuous (a) /ˈstren.ju.əs/ kiệt quệ thể chất + tinh thần<br>\
-preference (n) /ˈmæstərpiːs/ sự ưa thích<br>\
 gossip (v) /ˈɡɑːsɪp/ chuyện phiếm<br>\
 bottom (n) /ˈbɑːtəm/ dưới<br>\
 capacity (n) /kəˈpæsəti/ dung tích<br>\
@@ -56,7 +54,7 @@ coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
 worshipper (n) /ˈwɜːrʃɪpər/ người sùng bái<br>\
 applause (n) tiếng vỗ tay<br>\
-investor (n)  /ɪnˈvestər/ nhà đầu tư<br>\
+investor (n) /ɪnˈvestər/ nhà đầu tư<br>\
 organise (v) /ˈɔːrɡənaɪz/ tổ chức<br>\
 investment (n) /ɪnˈvestmənt/ sự đầu tư<br>\
 approachable (a) /əˈprəʊtʃəbl/ dễ tiếp cận<br>\
@@ -96,7 +94,6 @@ promise (v) /ˈprɑːmɪs/ hứa<br>\
 dwindling (a) giảm, suy yếu<br>\
 declare (v) /dɪˈkler/ tuyên bố, tuyên ngôn<br>\
 reply (v) /rɪˈplaɪ/ trả lời<br>\
-safe (a) /seɪf/ an toàn<br>\
 trick (n) /trɪk/ mẹo<br>\
 adventure (n) /ədˈventʃər/ phiêu lưu<br>\
 approach (n) /əˈprəʊtʃ/ tiếp cận<br>\
@@ -110,7 +107,6 @@ loud (a) /laʊd/ lớn<br>\
 noise (n) tiếng ồn<br>\
 better (adj) ss>(good, well)<br>\
 best (adj) super.(good, well)<br>\
-worse (adj) ss>(bad, badly)<br>\
 worst (adj) super.(bad, badly)<br>\
 project (n) /ˈprɑːdʒekt/ dự án<br>\
 scare (n,v) /sker/ sợ hãi<br>\
@@ -122,12 +118,10 @@ alien (n) /ˈeɪliən/ người ngoài HT<br>\
 chart (n) /tʃɑːrt/ biểu đồ<br>\
 comprehend (v) /kɑːmprɪˈhend/ hiểu<br>\
 describe (v) /dɪˈskraɪb/ mô tả<br>\
-fail (v) /feɪl/ thất bại<br>\
-grade (n) /ɡreɪd/ cấp<br>\
+grade (n) /ɡreɪd/ cấp, hạng<br>\
 instead (adv) /ɪnˈsted/ thay thế<br>\
 planet (n) /ˈplænɪt/ hành tinh<br>\
 report (v) /rɪˈpɔːrt/ báo cáo<br>\
-several (deter. pron) /ˈsevrəl/ >2 nhưng ko nhiều lắm<br>\
 resolve (v) /rɪˈzɑːlv/ giải quyết<br>\
 solve (v) /sɑːlv/ giải quyết<br>\
 suddenly (adv) /ˈsʌdənli/ đột nhiên<br>\
@@ -189,19 +183,15 @@ escape thoát<br>\
 face (n) /feɪs/ mặt<br>\
 follow (v) /ˈfɑːləʊ/ theo<br>\
 fright (n) /fraɪt/ sợ hãi | She cried out in fright.<br>\
-ghost ma<br>\
-individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
+ghost (n) ma<br>\
 reach (v) /riːtʃ/ với tới<br>\
 survive (v) /sərˈvaɪv/ sống sót<br>\
-voice (n) /vɔɪs/ giọng nói<br>\
 wise (a) /waɪz/ khôn ngoan<br>\
 allow (v) /əˈlaʊ/ cho phép<br>\
 announce (v) /əˈnaʊns/ thông báo, nhắc<br>\
 beside bên cạnh<br>\
 taste (n,v) /teɪst/ mùi vị, (v) thưởng thức<br>\
-challenge (n) /ˈtʃælɪndʒ/ thách thức<br>\
 claim yêu cầu<br>\
-contribute (v) /kənˈtrɪbjuːt/ góp phần<br>\
 divide (v) /dɪˈvaɪd/ phân chia/ra, chia rẽ<br>\
 expert (n) /ˈekspɜːrt/ chuyên gia<br>\
 famous (n) /ˈfeɪməs/ nổi tiếng [big name]<br>\
@@ -209,7 +199,6 @@ force (n,v) /fɔːrs/ lực lượng (v) đẩy, bắt ép<br>\
 harm (n) /hɑːrm/ gây hại<br>\
 against (prep, adv) /əˈɡenst/ chống lại<br>\
 lay (v) /leɪ/ đặt<br>\
-peace (n) /piːs/ hòa bình<br>\
 prince (n) /prɪns/ hoàng tử<br>\
 keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
 protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
@@ -228,7 +217,7 @@ necessary (a) /ˈnesəseri/ cần thiết<br>\
 propose (v) /prəˈpoʊz/ đề xuất, cầu hôn<br>\
 purpose (n) /ˈpɜːrpəs/ mục đích<br>\
 require (v) /rɪˈkwaɪər/ yêu cầu<br>\
-single (a) /ˈsɪŋɡl/ đơn lẻ<br>\
+single (a) /ˈsɪŋɡl/ đơn lẻ, độc thân<br>\
 success (n) /səkˈses/ thành công<br>\
 tear xé<br>\
 against (prep) /əˈɡeɪnst/ chống lại<br>\
@@ -369,7 +358,6 @@ century (n) /ˈsentʃəri/ thế kỷ<br>\
 clue (n) /kluː/ manh mối<br>\
 concert (n) /ˈkɑːnsərt/  buổi hòa nhạc<br>\
 county (n) /ˈkaʊnti/ quận<br>\
-dictionary (n) /ˈdɪkʃəneri/ từ điển<br>\
 exist (v) /ɪɡˈzɪst/ tồn tại<br>\
 flat phẳng<br>\
 gentleman (n) /ˈdʒentlmən/ quý ông<br>\
@@ -382,7 +370,6 @@ theater sân khấu<br>\
 wealth (n) /welθ/ sự giàu có<br>\
 available (a) /əˈveɪləbl/ có sẵn<br>\
 beat đánh bại<br>\
-celebrate (v) /ˈselɪbreɪt/ ăn mừng<br>\
 fair (a) /feə(r)/ công bằng<br>\
 flow (n) /fləʊ/ dòng chảy<br>\
 forward (adv) /ˈfɔːrwərd/ tiến lên<br>\
@@ -397,9 +384,7 @@ crowd (n) /kraʊd/ đám đông<br>\
 depend (v) /dɪˈpend/ phụ thuộc<br>\
 vomit (v) /ˈvɑːmɪt/ nôn mửa<br>\
 empty (a) /ˈempti/ trống rỗng<br>\
-exact (a) /ɪɡˈzækt/ chính xác<br>\
 gather (v) /ˈɡæðər/ tập hợp<br>\
-indicate (v) /ˈɪndɪkeɪt/ chỉ ra<br>\
 item (n) /ˈaɪtəm/ đồ dùng, món đồ, mục<br>\
 offer (v) /ˈɔːfər/ cung cấp<br>\
 product (n) /ˈprɑːdʌkt/ sản phẩm<br>\
@@ -459,7 +444,6 @@ though mặc dù<br>\
 various khác nhau<br>\
 actual thực tế<br>\
 amaze (v) /əˈmeɪz/ kinh ngạc<br>\
-charge tính phí<br>\
 comfort thoải mái<br>\
 contact liên hệ<br>\
 earn kiếm được<br>\
@@ -560,7 +544,7 @@ percent (a,adv) /pər ˈsent/ %<br>\
 actually thực sự<br>\
 bite cắn<br>\
 deal thỏa thuận<br>\
-earthquake động đất<br>\
+earthquake /ˈɜːrθkweɪk/ động đất<br>\
 effective hiệu quả<br>\
 examine kiểm tra<br>\
 false sai<br>\
@@ -578,7 +562,7 @@ instrument (n) /ˈɪnstrəmənt/ nhạc cụ<br>\
 list danh sách<br>\
 magic ma thuật<br>\
 message tin nhắn<br>\
-own (a,v) /əʊn/ (a) làm chủ,( v) thú nhận, sở hữu<br>\
+own (a,v) /əʊn/ (a) làm chủ (v) thú nhận, sở hữu<br>\
 predict dự đoán<br>\
 professor giáo sư<br>\
 chaotic (a) /keɪˈɑːtɪk/ hỗn loạn, lộn xộn<br>\
@@ -656,8 +640,7 @@ command lệnh<br>\
 counsel tư vấn<br>\
 ensure đảm bảo<br>\
 explosion vụ nổ<br>\
-jewelry đồ trang sức<br>\
-meteor sao băng<br>\
+meteor (n) sao băng<br>\
 monster,northern quái vật,phía bắc<br>\
 remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
 southern phía nam<br>\
@@ -781,7 +764,6 @@ aid trợ giúp<br>\
 authority quyền lực<br>\
 capital (n) /ˈkæpɪtl/ thủ đô, vốn, chữ hoa<br>\
 cooperate (v) /kəʊˈɑːpəreɪt/ hợp tác<br>\
-cliche (n) /kliːˈʃeɪ/ sáo rỗng<br>\
 inhibit (v) /ɪnˈhɪbɪt/ ngăn cản<br>\
 defend (v) bảo vệ<br>\
 defense (n) /dɪˈfens/ sự che chở, phòng thủ, bảo vệ<br>\
@@ -812,7 +794,6 @@ ought nên<br>\
 resist chống lại<br>\
 reveal tiết lộ<br>\
 rid loại bỏ<br>\
-sword thanh kiếm<br>\
 tale câu chuyện<br>\
 trap bẫy<br>\
 trial xét xử<br>\
@@ -959,12 +940,11 @@ clearly (adv) /ˈklɪrli/ rõ ràng<br>\
 costume (n) /ˈkɑːstuːm/ trang phục<br>\
 exclaim exclaim<br>\
 extend extend<br>\
-fool fool<br>\
+fool (n,v) ngu xuẩn, kẻ dại, kẻ đần<br>\
 forbid forbid<br>\
-illustrate illustrate<br>\
+illustrate (v) chú giải, minh họa<br>\
 indeed indeed<br>\
-interpret (v) hiểu cặn kẽ<br>\
-kindly kindly<br>\
+kindly (a,adv) vui lòng<br>\
 motive motive<br>\
 nest nest<br>\
 origin origin<br>\
@@ -1139,7 +1119,6 @@ virtual thực sự, virtual focus: tiêu điểm ảo [vật lí]<br>\
 weigh (v) cân nặng<br>\
 whisper whisper<br>\
 abstract abstract<br>\
-annual (a) /ˈænjuəl/ hàng năm<br>\
 clay đất sét<br>\
 cloth (n) vải<br>\
 deserve (v) đáng thưởng<br>\
@@ -1202,7 +1181,6 @@ threaten (v) /ˈθretn/ mối de dọa<br>\
 compliment (n,v) khen ngợi<br>\
 complimentary (a) khen ngợi (+about)<br>\
 awkward (a) /ˈɔːkwərd/ ngượng ngùng<br>\
-caretaker (n) /ˈkerteɪkər/ người chăm sóc<br>\
 deceive (v) /dɪˈsiːv/ lừa dối, ngoại tình, lừa phỉnh<br>\
 discourage (v) /dɪsˈkɜːrɪdʒ/ không khuyến khích, làm nản lòng<br>\
 fake giả<br>\
@@ -1232,7 +1210,6 @@ offend (v) /əˈfend/ xúc phạm, phạm tội<br>\
 persist (v) /pərˈsɪst/ kiên trì<br>\
 scar (n) /skɑːr/ vết sẹo<br>\
 sensation (n) /senˈseɪʃn/ cảm giác, sự kích động<br>\
-sled (n) /sled/ xe trượt tuyết<br>\
 club /klab/ (v) đánh đập(bằng tay)<br>\
 dwindle /dwindl/ (v) giảm bớt, suy yếu<br>\
 endanger /in'deindzǝ/(v) gây nguy hiểm<br>\

@@ -1,5 +1,5 @@
 <div ng-if="story.T_F_NG && story.T_F_NG.trim().length>0" >
-	<p class="text-primary">True/False/Not Given</p>
+	<mark class="text-primary">True/False/Not Given</mark>
 	<p class="mb-1" ng-repeat="sen in story.T_F_NG.split('<br>') track by $index">
 		<span ng-click="Index_NoteVoca_Speak(sen)">{{sen}}</span>
 	</p>

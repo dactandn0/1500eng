@@ -52,7 +52,8 @@ John: Vâng, tôi phải chơi năm thang.<br>\
 Irene: Chúc may mắn. Tôi sẽ ở bàn làm việc vào thứ Bảy, vậy chúng ta gặp lại nhau lúc đó.<br>\
 John: Cảm ơn bạn rất nhiều. Tạm biệt.<br>\
 Irene: Tạm biệt."
-	,voca:"",
+	,voca:""
+	,images:["l_u1_1-min.png"]
 },{
 	track:"01.02",
 	en:"Tutor: Hello John.<br>\
@@ -105,36 +106,9 @@ John: À, đúng rồi. Tôi nhớ điều đó từ năm ngoái.<br>\
 Gia sư: Nếu em vượt qua Lớp 7, em có thể tiếp tục làm bài kiểm tra cuối kỳ, Lớp 8, vào năm 2009.<br>\
 John: Vâng, đó là mục tiêu của tôi. Cảm ơn cô Richardson. Tạm biệt nhé.<br>\
 Gia sư: Tạm biệt, John, và chúc em may mắn!"
-	,voca:"",
-},{
-	track:"01.ex02",
-	en:"practical<br>\
-exam<br>\
-sit an exam<br>\
-surname<br>\
-primary school<br>\
-prefer<br>\
-reception<br>\
-fee<br>\
-assume<br>\
-practice<br>\
-mistake<br>\
-examiner"
-},
-{ track:"01.ex03", en:""},
-{
-	track:"01.ex04",
-	en:"12/twelve <br>\
-16/sixteen <br>\
-30/thirty<br>\
-67/ sixty-seven<br>\
-90/ninety<br>\
-189/ one hundred and eighty-nine<br>\
-1,345/one thousand, three hundred and forty-five <br>\
-7,894/seven thousand, eight hundred and ninety-four <br>\
-520,000/five hundred and twenty thousand<br>\
-1,000,000/ a million"
-},
+	,voca:""
+	,images:["l_u1_2-min.png"]
+},//{track:"01.ex02", en:"practical<br>\ exam<br>\ sit an exam<br>\ surname<br>\ primary school<br>\ prefer<br>\ reception<br>\ fee<br>\ assume<br>\ practice<br>\ mistake<br>\ examiner"}, { track:"01.ex03", en:""}, {track:"01.ex04", en:"12/twelve <br>\ 16/sixteen <br>\ 30/thirty<br>\ 67/ sixty-seven<br>\ 90/ninety<br>\ 189/ one hundred and eighty-nine<br>\ 1,345/one thousand, three hundred and forty-five <br>\ 7,894/seven thousand, eight hundred and ninety-four <br>\ 520,000/five hundred and twenty thousand<br>\ 1,000,000/ a million"},
 {
 	track:"02.01"
 	,title:"Eating Healthily"
@@ -146,7 +120,8 @@ As with many of these types of issues, education and moderation are probably a g
 Nhưng quan điểm của công chúng nói chung và phụ huynh của trẻ em và thanh thiếu niên trong độ tuổi đi học về vấn đề này là gì? Nhiều người cho rằng đây là một ý tưởng tuyệt vời, nói rằng trường học sẽ khuyến khích trẻ em phát triển thói quen ăn uống lành mạnh bằng cách cung cấp các lựa chọn thực phẩm lành mạnh. Tuy nhiên, một số người cho rằng trường học không nên ra lệnh cho trẻ em những gì chúng có thể và không thể ăn, và trẻ em nên được tự do lựa chọn cho bản thân. Những người khác cho rằng lý do khiến tỷ lệ béo phì ở thanh thiếu niên ngày càng tăng là do không tập thể dục đủ. Những người này đề xuất rằng trường học nên dành nhiều thời gian hơn cho việc dạy thể dục. Cuối cùng, có những người tin rằng cha mẹ, chứ không phải nhà trường, có trách nhiệm dạy cho trẻ em thái độ lành mạnh đối với thực phẩm và việc ăn uống. Người ta cho rằng trẻ em thừa cân đến từ những gia đình thừa cân.<br>\
 Còn bản thân trẻ em thì sao? Các em nghĩ gì về cuộc tranh luận này? Một số em nói rằng nếu trường không có đồ ăn nhẹ yêu thích, các em sẽ chỉ dừng lại ở cửa hàng góc phố trên đường đi để mua. Những em khác nói rằng các lựa chọn đồ ăn vặt vẫn có sẵn ở trường - chẳng hạn như khoai tây chiên và gà rán rẻ hơn các lựa chọn lành mạnh hơn, do đó, các em có nhiều khả năng chọn những món này hơn. Ví dụ, tại một cửa hàng đồ ăn nhẹ ở trường mà chúng tôi đã ghé thăm, một phần khoai tây chiên giòn và gà có giá 2,50 đô la, trong khi một ổ bánh mì tròn và một hộp sữa chua ít béo có giá 4 đô la.<br>\
 Cũng như nhiều vấn đề tương tự như vậy, giáo dục và điều độ có lẽ là một khởi đầu tốt. Trước tiên, cha mẹ cần đảm bảo rằng mình hiểu biết đủ về các phương pháp ăn uống lành mạnh để có thể dạy con mình. Điều này có thể bao gồm quảng cáo trên truyền hình, tờ rơi và tờ rơi gửi đến hộp thư. Thứ hai, trường học có thể khuyến khích trẻ em ăn nhiều trái cây và rau quả hơn, ít bánh nướng và hông hơn bằng cách đảm bảo rằng phần lớn đồ ăn nhẹ và các loại thực phẩm khác được bán đều lành mạnh, trong khi vẫn cho phép giữ lại một số món ưa thích không lành mạnh."
-	,voca:"fried chicken,chip, school-aged children, youth, ensure, healthy eating",
+	,voca:"fried chicken,chip, school-aged children, youth, ensure, healthy eating"
+	,images:['l_u2_1-min.png']
 },
 {
 	track:"02.02",
@@ -162,30 +137,12 @@ Bạn có thể biết hoặc không biết rằng các chuyên gia sức khỏe
 Ví dụ, bạn có thể cân nhắc cắt một quả chuối vào ngũ cốc ăn sáng. Hãy nhớ rằng bữa sáng là bữa ăn quan trọng nhất trong ngày. Những người quyết định bỏ bữa sáng thường rất đói vào cuối buổi sáng và thường tìm đến đồ ăn nhẹ không lành mạnh, nhiều đường. Bỏ bữa sáng cũng có thể khiến bạn buồn ngủ và không thể tập trung trong lớp học, vì vậy hãy đảm bảo rằng bạn luôn ăn sáng đầy đủ.<br>\
 Để tiếp tục với thực đơn của chúng tôi, bữa trà buổi sáng có thể là một miếng trái cây, chẳng hạn như táo, lê hoặc kiwi, hoặc một loại rau - chẳng hạn như cà rốt hoặc cần tây - cắt thành từng thanh. Đối với bữa trưa, bạn có thể ăn một chiếc bánh sandwich salad trên bánh mì nguyên cám hoặc một loại ngũ cốc nấu chín nào đó, như cơm, với rau hấp hoặc luộc. Vào bữa tối, hãy đảm bảo bao gồm một số khẩu phần rau khác nhau. Cố gắng tận dụng những gì đang theo mùa và chọn nhiều màu sắc - xanh lá cây, cam và trắng. Một lần nữa, hãy đảm bảo rằng bạn sử dụng phương pháp nấu ăn ít chất béo - hấp, luộc, nướng hoặc xào với một lượng nhỏ dầu. Ngoài ra, vào mùa hè, rau tươi có thể được rửa sạch và ăn sống trong món salad với nước sốt ít béo. Bạn cũng sẽ biết rằng như một phần của lối sống lành mạnh, bạn cần phải năng động và đưa một số loại bài tập thể dục vào chương trình hàng ngày của mình. Đối với trẻ em và thanh thiếu niên, chúng tôi khuyên bạn nên tập thể dục ít nhất 30 phút mỗi ngày. Ví dụ, điều này có thể có nghĩa là đi bộ hoặc đạp xe đến trường thay vì đi ô tô hoặc bắt xe buýt hoặc tàu hỏa. Nếu không thể, bạn có thể dành buổi tối để đá bóng trong sân sau nhà hoặc chơi bóng rổ hoặc quần vợt với bạn bè tại sân địa phương. Bạn cũng có thể cân nhắc tham gia câu lạc bộ thể thao hoặc tham gia một loại hoạt động thể chất khác, chẳng hạn như khiêu vũ hoặc cưỡi ngựa.<br>\
 Và lần tới khi bạn đến cửa hàng bán đồ ăn nhẹ ở trường, hãy chọn một trong những loại thực phẩm lành mạnh hơn được bày bán. Bạn sẽ ngạc nhiên về việc nó khiến bạn cảm thấy tốt hơn bao nhiêu."
-	,voca:"",
+	,voca:""
+	,images:['l_u2_2-min.png']
 },
-{ track:"02.ex02", en:""},
-{ track:"02.ex03", en:""},
-{ track:"02.ex04", en:""},
+//{ track:"02.ex02", en:""}, { track:"02.ex03", en:""}, { track:"02.ex04", en:""}, 
+//{track:"02.ex07", en:"a. great<br>\ b. headmaster<br>\ c. more<br>\ d. sleepy<br>\ e. publicity <br>\ j. physical education<br>\ f. obese<br>\ g. to select<br>\ h. food kiosk<br>\ i. junk food <br>\ k. wholesome<br>\ l. encourage<br>\ m. to recommend<br>\ n. raw<br>\ o. expert<br>\ p. portion"},
 {
-	track:"02.ex07",
-	en:"a. great<br>\
-b. headmaster<br>\
-c. more<br>\
-d. sleepy<br>\
-e. publicity <br>\
-j. physical education<br>\
-f. obese<br>\
-g. to select<br>\
-h. food kiosk<br>\
-i. junk food <br>\
-k. wholesome<br>\
-l. encourage<br>\
-m. to recommend<br>\
-n. raw<br>\
-o. expert<br>\
-p. portion"
-},{
 	track:"03.01"
 	,title:"Sport"
 	,en:"Andy: Hi, Dave. <br>\
@@ -234,7 +191,8 @@ Dave: Vâng, nhưng mà vui lắm. Bản thân anh cũng tham gia các sự ki�
 Andy: Vâng, tôi tham gia nhảy cao. Lúc đó là 1 giờ chiều. Và tôi tham gia chạy nước rút 100 mét lúc 5 giờ chiều.<br>\
 Dave: Chúc may mắn, Andy!<br>\
 Andy: Cảm ơn, Dave. Gặp lại anh ở cuộc chạy tiếp sức. Tiến lên, Lancaster College!"
-	,voca:"",
+	,voca:""
+	,images:['l_u3_1-min.png']
 },{
 	track:"03.02",
 	en:"Penny: Hello, everyone. Thank you for getting here early. I'm sure the cross-country race today will be very successful. John and I have organised a challenging course. We expect runners to start turning up in about 30 minutes, so we need to work fast. I'll hand you over to John to describe the course and the different jobs we have to do.<br>\
@@ -251,7 +209,8 @@ Penny: Tony, anh vui lòng đứng cạnh cầu nhảy nước nhé? Chỉ cần
 John: Cảm ơn, Penny, OK mọi người. Có câu hỏi nào không? Không. Được thôi. Penny và tôi sẽ đi bộ xung quanh trong suốt thời gian. Hãy cho chúng tôi biết nếu anh cần bất cứ điều gì.<br>\
 Người dẫn chuyện: Hãy nghe phần 2 của âm thanh.<br>\
 Mọi người hãy tập hợp lại. Sẽ không mất nhiều thời gian đâu. Trước hết, tôi muốn chúc mừng Mick và Sarah, những người đã giành chiến thắng ở Giải Đua Mở dành cho Nam và Giải Đua Mở dành cho Nữ. Thật là một nỗ lực phi thường và thành tích cá nhân tốt nhất của cả hai người! Xin hãy dành một tràng pháo tay cho họ. Thực ra, khi nhìn vào bảng kết quả, tôi thấy rằng tất cả các bạn đều làm tốt. Có khá nhiều thành tích thực sự tốt được đăng tải hôm nay. Bây giờ... khu vực tắm rửa gần bãi đậu xe, vì vậy hãy thoải mái tắm rửa nhưng đừng mất quá nhiều thời gian. Đội tình nguyện viên của chúng tôi đã làm việc chăm chỉ trong bếp và họ đã chuẩn bị một bữa ăn rất ngon trong các phòng câu lạc bộ. Họ đã pha trà và cà phê, cũng như một số đồ uống lạnh, và có rất nhiều đồ ăn nhẹ như bánh sandwich, đồ ăn mặn, trái cây, bánh quy và tôi chắc rằng tôi đã thấy một số bánh sô cô la. Vì vậy, hãy quay lại phòng câu lạc bộ ngay khi bạn có thể. Vào thời điểm này, tôi muốn cảm ơn tất cả những người đã giúp sự kiện hôm nay thành công. Hãy giúp họ một tay! Tôi chắc chắn rằng ban tổ chức muốn gặp lại tất cả các bạn - các vận động viên và người hỗ trợ - tại giải vô địch chạy việt dã vào năm sau."
-	,voca:"",
+	,voca:""
+	,images:['l_u3_2-min.png']
 },{
 	track:"04.01"
 	,title:"Media"
@@ -271,7 +230,8 @@ Bây giờ, bên dưới máy ảnh là tay cầm. Nó được thiết kế đ�
 Nếu bạn thuận tay phải như tôi, bạn có thể cầm máy ảnh bằng tay phải và dùng tay trái để bật máy ảnh và lấy nét thủ công.<br>\
 Điều cuối cùng tôi muốn chỉ ra ngay bây giờ là micrô. Đó là thứ này ở đây, trên đầu máy ảnh. Nó có nghĩa là bạn có cả âm thanh và video hoặc hình ảnh chuyển động. Micrô khá nhạy, vì vậy hãy cẩn thận với nó. Nó có thể dễ dàng tháo ra, vì vậy bạn có thể cất vào túi.<br>\
 Bạn cần xoay micrô về phía người đang nói. Nhìn chung, người đó sẽ đi thẳng về phía trước, nhưng đôi khi bạn sẽ muốn di chuyển nó. Vì vậy - ống kính, tay cầm và micrô. Và điều cuối cùng tôi sẽ đề cập đến ở đây là cốc cao su... đó là nơi bạn đặt máy ảnh lên mắt... Vâng, vậy là đủ rồi. Tiếp theo, tôi muốn bạn tự cầm máy ảnh của mình."
-	,voca:"",
+	,voca:""
+	,images:['l_u4_1-min.png']
 },{
 	track:"04.02",
 	en:"Hello, everyone. You all did very well last week! You seem to be getting used to your cameras, and I think you now know all the parts of the camera and what they do.<br>\
@@ -287,7 +247,90 @@ Tuần này, tôi sẽ nói về cách chăm sóc máy ảnh của bạn. Hầu 
 Bây giờ, ở phía dưới bên trái, tôi có thể cất pin. Tốt nhất là tháo pin ra nếu bạn không sử dụng máy ảnh trong thời gian dài... Tôi luôn làm vậy. Pin ngày nay có thể sạc trong thời gian dài, nhưng tốt hơn là để pin ngoài máy ảnh. Hầu hết các máy ảnh ngày nay, như thế này, đều có pin sạc. Cuối cùng, bạn có thể thấy nơi tôi cất máy ảnh, ở đây, góc dưới bên phải. Máy ảnh không thể di chuyển, và hộp đựng được làm bằng vật liệu cứng, vì vậy bạn có thể làm rơi hộp đựng hoặc thậm chí làm rơi nó, và máy ảnh sẽ không bị hư hỏng.<br>\
 Nếu bạn chưa có hộp đựng máy ảnh, tôi khuyên bạn nên mua một cái ngay khi có thể... Vâng, đó là tất cả những gì tôi muốn nói về việc cất giữ. Bây giờ, chúng ta hãy chuyển sang một số công việc thực tế."
 	,voca:""
+	,images:['l_u4_2-min.png']
 },{
+	track:"05.01"
+	,title:"Giving Directions"
+	,en:"Katie: Hello. Katie speaking.<br>\
+Brenda: Hi, Katie. It's Brenda here. How are you? <br>\
+Katie: I'm fine, thanks.<br>\
+Brenda: Look, Katie, are you going to Helen's party tonight? I've decided to go, but I'm not sure how to get to her house.<br>\
+Katie: Oh, yes, sure. I'm not going because I have to work, but I know how to get there. Where do you live?<br>\
+Brenda: I live on the corner of Anne and Queen Streets, across the road from the corner store.<br>\
+Katie: Oh, right. Well, I live quite close to you - on the corner of Queen Street and Tramway Road, next to Bob's house.<br>\
+Brenda: Oh, really? I didn't know that.<br>\
+Katie: Anyway, to get to Helen's house, you need to go east along Queen Street, and past the intersection with Tramway Road, until you get to a service station on the corner.<br>\
+Brenda: Okay, a service station on the corner.<br>\
+Katie: Now, if you reach the public library on the opposite corner, you'll know you've gone too far. <br>\
+Brenda: Right. Got that.<br>\
+Katie: You need to turn right at the service station into Bettina Road.<br>\
+Brenda: Bettina Road?<br>\
+Katie: Yeah, that's right. And Helen's house is at the end of the road, on the opposite side to the service station. You won't miss it. It's a big white house with a purple letter box in front.<br>\
+Brenda: Okay. Well, that doesn't sound too difficult. I'm sure I'll be able to find it. Thanks, Katie. <br>\
+Katie: No worries. Enjoy the party. Bye.<br>\
+Brenda: Bye."
+	,vi:"Katie: Xin chào. Katie đang nói chuyện.<br>\
+Brenda: Xin chào, Katie. Tôi là Brenda đây. Bạn khỏe không? <br>\
+Katie: Tôi khỏe, cảm ơn.<br>\
+Brenda: Này Katie, tối nay bạn có đến dự tiệc của Helen không? Tôi đã quyết định đi, nhưng tôi không chắc làm sao để đến nhà cô ấy.<br>\
+Katie: Ồ, vâng, chắc chắn rồi. Tôi không đi vì tôi phải đi làm, nhưng tôi biết cách đến đó. Bạn sống ở đâu?<br>\
+Brenda: Tôi sống ở góc phố Anne và Queen, bên kia đường là cửa hàng góc phố.<br>\
+Katie: Ồ, đúng rồi. Tôi sống khá gần bạn - ở góc phố Queen và đường Tramway, cạnh nhà Bob.<br>\
+Brenda: Ồ, thật sao? Tôi không biết điều đó.<br>\
+Katie: Dù sao thì, để đến nhà Helen, bạn cần đi về phía đông dọc theo phố Queen, và qua ngã tư với Đường Tramway, cho đến khi bạn đến một trạm dịch vụ ở góc phố.<br>\
+Brenda: Được rồi, một trạm dịch vụ ở góc phố.<br>\
+Katie: Bây giờ, nếu bạn đến thư viện công cộng ở góc phố đối diện, bạn sẽ biết mình đã đi quá xa. <br>\
+Brenda: Đúng rồi. Như thế.<br>\
+Katie: Bạn cần rẽ phải tại trạm dịch vụ vào Đường Bettina.<br>\
+Brenda: Đường Bettina?<br>\
+Katie: Vâng, đúng rồi. Và nhà Helen ở cuối đường, ở phía đối diện với trạm dịch vụ. Bạn sẽ không bỏ lỡ nó đâu. Đó là một ngôi nhà lớn màu trắng với một hộp thư màu tím ở phía trước.<br>\
+Brenda: Được rồi. Vâng, nghe có vẻ không quá khó. Tôi chắc là mình sẽ tìm thấy nó. Cảm ơn, Katie. <br>\
+Katie: Không sao đâu. Chúc bạn vui vẻ. Tạm biệt.<br>\
+Brenda: Tạm biệt."
+	,voca:"corner,opposite"
+	,images:['l_u5_1-min.png']
+},{
+	track:"05.02"
+	,en:"Mike: Excuse me. I'm trying to get to the dance party in Bryce Street.<br>\
+Passer-by: Dance party?<br>\
+Mike: Yeah. There's a whole lot of Latin American dance bands playing tonight. I think it's in the main hall. <br>\
+Passer-by: Oh, yes. I suppose that'll be the town hall. Well, right now, as you can see, we're in the main square, at the corner of Brooklyn Road and Victoria Street. You can see the Central Bank across the road on the opposite corner. <br>\
+Mike: Okay.<br>\
+Passer-by: Now, the best way is probably for you to stay on this side of Victoria Street. You don't need to cross the road.<br>\
+Mike: Right.<br>\
+Passer-by: Go east along Victoria Street. You'll see the traffic lights where Park Road crosses Victoria Street.<br>\
+Mike: Right.<br>\
+Passer-by: Don't turn there. Go straight ahead. You'll pass a restaurant on your left, and a chemist on your right.<br>\
+Mike: Okay.<br>\
+Passer-by: The next road is Knox Street. There's a public library on the corner. Turn left at the library and go straight ahead until you see a service station on the corner on your right. You'll now be at Claudelands Street.<br>\
+Mike: Okay. Claudelands Street.<br>\
+Passer-by: Turn right at the intersection and go east. The town hall is at the end of the road on the left, just past the corner store.<br>\
+Mike: At the end of the road?<br>\
+Passer-by: Yes. That's right.<br>\
+Mike: Great. Okay, thanks for your help.<br>\
+Passer-by: No problem."
+	,vi:"Mike: Xin lỗi. Tôi đang cố đến bữa tiệc khiêu vũ ở phố Bryce.<br>\
+Người qua đường: Bữa tiệc khiêu vũ à?<br>\
+Mike: Vâng. Có rất nhiều ban nhạc khiêu vũ Mỹ Latinh đang chơi tối nay. Tôi nghĩ là ở hội trường chính. <br>\
+Người qua đường: Ồ, vâng. Tôi cho rằng đó sẽ là tòa thị chính. Vâng, ngay bây giờ, như bạn thấy đấy, chúng ta đang ở quảng trường chính, tại góc đường Brooklyn và đường Victoria. Bạn có thể nhìn thấy Ngân hàng Trung ương ở bên kia đường ở góc đối diện. <br>\
+Mike: Được.<br>\
+Người qua đường: Bây giờ, cách tốt nhất có lẽ là bạn nên ở bên này đường Victoria. Bạn không cần phải băng qua đường.<br>\
+Mike: Đúng rồi.<br>\
+Người qua đường: Đi về phía đông dọc theo đường Victoria. Bạn sẽ thấy đèn giao thông tại nơi Đường Park giao với Đường Victoria.<br>\
+Mike: Bên phải.<br>\
+Người qua đường: Đừng rẽ ở đó. Đi thẳng. Bạn sẽ đi qua một nhà hàng bên trái và một hiệu thuốc bên phải.<br>\
+Mike: Được.<br>\
+Người qua đường: Đường tiếp theo là Đường Knox. Có một thư viện công cộng ở góc đường. Rẽ trái tại thư viện và đi thẳng cho đến khi bạn nhìn thấy một trạm dịch vụ ở góc đường bên phải. Bây giờ bạn sẽ đến Đường Claudelands.<br>\
+Mike: Được. Đường Claudelands.<br>\
+Người qua đường: Rẽ phải tại ngã tư và đi về phía đông. Tòa thị chính nằm ở cuối đường bên trái, ngay sau cửa hàng góc phố.<br>\
+Mike: Ở cuối đường à?<br>\
+Người qua đường: Vâng. Đúng rồi.<br>\
+Mike: Tuyệt. Được rồi, cảm ơn sự giúp đỡ của bạn.<br>\
+Người qua đường: Không vấn đề gì."
+	,voca:"to get to,corner,service station,traffic lights"
+	,images:['l_u5_2-min.png']
+}
+,{
 	track:"06.01"
 	,title:"Advertising"
 	,en:"Good afternoon, listeners. Geoff Beck from Luna Mobiles here with the 'Technology and You' slot this afternoon. This is a radio advertising programme in which I bring you up to date with the best buys in the world of technology. Today - cell phones! Where would we be without them? I'll tell you about the latest innovations, the best features, and the best value for money in the exciting world of cell phones. Let me tell you about four new products. First, the Luna 500. It's one of my favourites! This little beauty has some great games, a camera, the Internet, and a voice recorder. It's fashionable, too! It comes in red, green, blue, and pink. The price of this beauty is $849. Now, that's not cheap, but you'll love it. It's very good value for money. Secondly, the Aquila 50. My daughter loves this one. Not so many features as the Luna, but it's slimmer and lighter. It has excellent games and a 5-megapixel camera, so you get really sharp shots. The Aquila costs $749. Not cheap but good value, especially with that camera. Now, moving on, if you don't want to pay a lot of money but you need a good phone, the Hermes 580 could be the phone for you. This little gem sits comfortably in the palm of your hand. It has some good games and a camera. You can buy this one for just $395. Compare it with the one you've got now. Isn't it time you got a new one? At that price, you can't lose. A similar phone, but even less expensive, is the Riva A65. You'll love this one. This is the one for people who say to me, 'If I want a camera, I'll buy a camera! I want a cell phone!' This is the phone for you. It doesn't have expensive features. But as a phone, it's great. Slim. Fashionable. Convenient. Good quality. It has some games but that's all.<br>\
@@ -304,7 +347,7 @@ OK. Let's go back to Sandy Little for the 4 o'clock news."
 	,vi:"Chào buổi chiều, các thính giả. Linda Harris từ Luna Mobiles ở đây với vị trí 'Công nghệ và Bạn' vào chiều nay, thay thế Geoff Beck, người đang đi nghỉ tuần này. Hôm nay, chúng ta sẽ xem xét các công ty điện thoại di động của bạn. May mắn thay, chúng ta có một sự lựa chọn! Tôi sẽ xem trước năm công ty lớn trên thị trường. Giả sử bạn đã mua điện thoại của mình và bây giờ bạn có thể tự do tham gia với một công ty. Bạn sẽ muốn tìm một công ty và sau đó quyết định gói tốt nhất. Chúng ta hãy nói về giá cả. Chúng ta sẽ xem xét năm công ty hàng đầu trên thị trường - Commix, Phontic, Pluto, World và Dialog. Đối với dịch vụ cơ bản, Commix tính phí 24 đô la một tháng, Phontic là 27 đô la và Pluto cũng vậy. World đắt hơn một chút ở mức 28 đô la và Dialog có giá 29,50 đô la. Đắt hơn một chút, nhưng họ khẳng định bạn sẽ nhận được giá trị tương xứng với số tiền bỏ ra! Phí vào giờ cao điểm cũng rất giống nhau. Commix, Phontic và Pluto đều tính phí 26 xu một giờ, World tính phí 28 xu, và Dialog vẫn là dịch vụ đắt nhất, ở mức 32 xu một giờ. Phí ngoài giờ cao điểm có thể khiến bạn quan tâm. Đây là những giờ ban đêm từ 8 giờ tối đến 8 giờ sáng. Thời gian tốt để gọi điện cho người thân ở các quốc gia khác. Commix, Phontic và Pluto tính cùng một mức phí cho các dịch vụ ngoài giờ cao điểm, chỉ 20 xu một giờ, trong khi World và Dialog đắt hơn, cả hai đều ở mức 27 xu một giờ. Bây giờ, vùng phủ sóng rất quan trọng. Vùng phủ sóng có nghĩa là tín hiệu điện thoại có thể phủ sóng xa đến đâu. Nói cách khác, đó là những khu vực mà bạn thực sự có thể sử dụng điện thoại của mình. Hiện tại, Commix có vùng phủ sóng tốt trên toàn quốc, nhưng Phontic chỉ phủ sóng tất cả các thành phố chính. Pluto và World phủ sóng trên toàn quốc. Không có vấn đề gì ở đó. Và vùng phủ sóng của Dialog là trên toàn quốc và các đảo. Đó là lý do tại sao nó đắt hơn. 'Nationwide and Islands' có nghĩa là bạn có thể sử dụng Dialog trên khắp đất nước chúng tôi và trên tất cả các đảo phía Tây và phía Bắc, nơi có tháp điện thoại và quyền truy cập.<br>\
 Vâng, bạn có thể thấy bạn có rất nhiều lựa chọn. Đừng quên lấy một bản sao của 'Mobile Memorandum', bản tin của công ty chúng tôi, để xem lại những con số này và đưa ra lựa chọn của bạn. Bạn cũng có thể đọc các khuyến nghị của chúng tôi.<br>\
 OK. Chúng ta hãy quay lại với Sandy Little để xem bản tin lúc 4 giờ."
-	,images:['l_u6_2-min.png','l_u6_2b-min.png']
+	,images:['l_u6_2-min.png']
 },{
 	track:"07.01"
 	,title:"Education"

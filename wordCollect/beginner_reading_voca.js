@@ -96,13 +96,13 @@ Industrial Revolution (n) Cách mạng công nghiệp<br>\
 release /ri'li:s/ (n,v) giải phóng, sự thả ra<br>\
 telescope /'teliskaup/ (n) kính thiên văn<br>\
 term /t3:m/ (n) thuật ngữ, thời gian, kỳ hạn<br>\
-appliance (n) thiết bị<br>\
-application (n) ứng dụng<br>\
-bill (n) hóa đơn<br>\
+appliance (n) /əˈplaɪəns/ thiết bị<br>\
+application (n) /ˌæplɪˈkeɪʃn/ ứng dụng, đơn xin<br>\
+bill (n) /bɪl/ hóa đơn<br>\
 caretaker (n) /ˈkerteɪkər/ người chăm sóc<br>\
-confirm (v) xác nhận<br>\
-coverage (n) phạm vi phủ sóng, mức bảo hiểm<br>\
-credit (n) tín dụng<br>\
+confirm (v) /kənˈfɜːrm/ xác nhận<br>\
+coverage (n)  /ˈkʌvərɪdʒ/ phạm vi phủ sóng, mức bảo hiểm<br>\
+credit (n) /ˈkredɪt/ tín dụng<br>\
 damage (n) thiệt hại<br>\
 deposit (n,v) tiền gửi, tiền đặt cọc, (v) gửi tiền<br>\
 enact (v) đã ban hành<br>\
@@ -110,8 +110,8 @@ faucet (n) vòi nước<br>\
 income (n) thu nhập<br>\
 indicate (v) /ˈɪndɪkeɪt/ chỉ ra<br>\
 individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
-insurance (n) bảo hiểm<br>\
-item (n) mục, đồ dùng, vật<br>\
+insurance (n) /ɪnˈʃʊrəns/ bảo hiểm<br>\
+item (n) /ˈaɪtəm/ mục, đồ dùng, vật<br>\
 leak (v) rò rỉ<br>\
 pet (n) thú cưng<br>\
 process (n) quy trình<br>\
@@ -119,9 +119,9 @@ reference (n) tham chiếu<br>\
 refund (n,v) /ˈriːfʌnd/ hoàn lại, trả lại<br>\
 rental contract (n) /ˈrɛntəl ˈkɒntrækt/ hợp đồng cho thuê<br>\
 rent (n,v) /rɛnt/ thuê, sự cho mướn, tiền thuê nhà<br>\
-rental (n) tiền thuê nhà thuê<br>\
-retain (v) giữ lại<br>\
-scratch (n) vết trầy xước<br>\
+rental (n) /ˈrentl/ tiền thuê, nhà thuê<br>\
+retain (v) /rɪˈteɪn/ giữ lại<br>\
+scratch (n) /skrætʃ/ vết trầy xước<br>\
 security (n) /sɪˈkjʊrɪti/ bảo vệ, bảo mật, giám hộ<br>\
 smooth (a) trơn tru<br>\
 tear (n,v) vết rách, nước mắt, (v) xé<br>\
@@ -129,21 +129,21 @@ vacate (v) bỏ đi, rời đi<br>\
 withholding (v) giữ lại<br>\
 agent (n) đại lý<br>\
 agreement (n) thỏa thuận<br>\
-burglary (n) trộm cắp<br>\
-confusion (n) lẫn lộn<br>\
+burglary (n) /ˈbɜːrɡləri/ trộm cắp<br>\
+confusion (n) /kənˈfjuːʒn/ lẫn lộn<br>\
 deliver (v) /dɪˈlɪvər/ giao hàng<br>\
 due (a) đến hạn<br>\
 evict (v) trục ​​xuất<br>\
-intent (n) ý định<br>\
-lease (n,v) cho thuê<br>\
+intent (n)  /ɪnˈtent/ ý định<br>\
+lease (n,v) /liːs/ cho thuê<br>\
 mail (n) thư<br>\
 pattern (n) /ˈpætərn/ mẫu<br>\
-properly (adv) đúng cách<br>\
-resident (n) cư dân<br>\
+properly (adv) /ˈprɑːpərli/ đúng cách<br>\
+resident (n) /ˈrezɪdənt/ cư dân<br>\
 specify (v) chỉ định<br>\
 task (n) nhiệm vụ<br>\
-termination (n) chấm dứt<br>\
-ultimate (n) tối thượng<br>\
+termination (n) /tɜːrmɪˈneɪʃn/ chấm dứt<br>\
+ultimate (n) /ˈʌltɪmət/ tối thượng<br>\
 "
 }
 ]

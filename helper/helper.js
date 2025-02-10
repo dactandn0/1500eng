@@ -81,11 +81,11 @@ function makeVocaEbook(rtScrope, ...args)
 			{
 				var vocas = lesson.voca.split(',');
 				var color = "blue";
-				if (k % 2=== 0) color = 'green'
+				
+				var unitTrack = lesson.unit ? lesson.unit : lesson.track
 				var jsonEle = {
-					unit: lesson.unit ? lesson.unit : lesson.track,
+					unit: unitTrack,
 					title:lesson.title ? lesson.title : '#',
-					color: color,
 					vocas: vocas
 				}
 				rtScrope.vocaEbook.push(jsonEle)

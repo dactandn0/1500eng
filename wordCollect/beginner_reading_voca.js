@@ -31,7 +31,6 @@ drastic (a) /ˈdræstɪk/ quyết liệt <br>\
 geographical (a) /dʒiːəˈɡræfɪkl/ thuộc địa lý <br>\
 glacier (n) /ˈɡleɪʃər/ sông băng, đá băng <br>\
 humanity (n) /hjuːˈmænəti/ nhân loại <br>\
-inevitably (adv) /ɪnˈevɪtəbli/ chắc chắn<br>\
 mild (a) /maɪld/ nhẹ nhàng, ấm áp, êm ái<br>\
 policymaker (n) nhà hoạch định chính sách<br>\
 refug (n) nơi trú ẩn<br>\
@@ -102,7 +101,7 @@ application (n) ứng dụng<br>\
 bill (n) hóa đơn<br>\
 caretaker (n) /ˈkerteɪkər/ người chăm sóc<br>\
 confirm (v) xác nhận<br>\
-coverage (n) phạm vi bảo hiểm<br>\
+coverage (n) phạm vi phủ sóng, mức bảo hiểm<br>\
 credit (n) tín dụng<br>\
 damage (n) thiệt hại<br>\
 deposit (n,v) tiền gửi, tiền đặt cọc, (v) gửi tiền<br>\
@@ -112,7 +111,7 @@ income (n) thu nhập<br>\
 indicate (v) /ˈɪndɪkeɪt/ chỉ ra<br>\
 individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
 insurance (n) bảo hiểm<br>\
-item (n) mục<br>\
+item (n) mục, đồ dùng, vật<br>\
 leak (v) rò rỉ<br>\
 pet (n) thú cưng<br>\
 process (n) quy trình<br>\
@@ -122,10 +121,10 @@ rental contract (n) /ˈrɛntəl ˈkɒntrækt/ hợp đồng cho thuê<br>\
 rent (n,v) /rɛnt/ thuê, sự cho mướn, tiền thuê nhà<br>\
 rental (n) tiền thuê nhà thuê<br>\
 retain (v) giữ lại<br>\
-scratch (n) trầy xước<br>\
+scratch (n) vết trầy xước<br>\
 security (n) /sɪˈkjʊrɪti/ bảo vệ, bảo mật, giám hộ<br>\
 smooth (a) trơn tru<br>\
-tear (n) rách<br>\
+tear (n,v) vết rách, nước mắt, (v) xé<br>\
 vacate (v) bỏ đi, rời đi<br>\
 withholding (v) giữ lại<br>\
 agent (n) đại lý<br>\

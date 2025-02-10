@@ -34,7 +34,7 @@ Some scientists say the meteor alone did not cause dinosaurs to become extinct. 
 	,vi:"Cái chết của khủng long là một bí ẩn lớn. Khoảng 65 triệu năm trước, khủng long sống trên khắp Trái đất. Chúng đã tồn tại trong gần 200 triệu năm. Đột nhiên, tất cả chúng đều tuyệt chủng.<br>\
 Nhiều nhà khoa học tin rằng khủng long đã bị giết bởi một thiên thạch lớn. Họ nghĩ rằng thiên thạch này rộng khoảng sáu đến mười hai dặm. Nó đâm vào miền nam Mexico và tạo ra một lỗ rộng khoảng 130 dặm. Vụ va chạm đã ném bụi và đất lên bầu trời. Những đám mây bụi làm tối bầu khí quyển của Trái đất. Vụ va chạm gây ra hỏa hoạn, động đất và sóng thần. Thực vật bị giết chết. Các đại dương bị đầu độc. Rất nhanh chóng, không còn thức ăn cho những con khủng long ăn thực vật. Khi chúng chết, không còn thức ăn cho những con khủng long ăn thịt. Thiên thạch đã giết chết gần 70 phần trăm tất cả thực vật và động vật trên Trái đất. Những loài động vật duy nhất có thể sống sót là những loài nhỏ có thể ăn nhiều loại thức ăn khác nhau.<br>\
 Một số nhà khoa học cho rằng thiên thạch không phải là nguyên nhân khiến khủng long tuyệt chủng. Họ nghĩ rằng khủng long đã yếu đi. Họ không chắc tại sao. Một lý do có thể là bệnh tật. Một lý do khác có thể là biến đổi khí hậu. Một phần lớn của bí ẩn là tại sao một số loài động vật lại sống sót. Nếu biến đổi khí hậu giết chết khủng long, thì nó cũng phải giết chết ếch. Nếu thiên thạch giết chết hầu hết các loài bò sát biển, thì nó phải giết chết cá sấu. Tuy nhiên, ếch và cá sấu vẫn tồn tại trên thế giới ngày nay."
-	,voca:"dinosaurs,exist,meteor,mystery,earthquakes,atmosphere,extinct,tidal wavev,reptiles,crocodiles",
+	,voca:"dinosaurs,exist,meteor,mystery,earthquakes,atmosphere,extinct,tidal wave,reptiles,crocodiles",
 },
 {
 	unit:4,
@@ -80,7 +80,7 @@ W2: Thật không thể tin được! Tôi thực sự mong được ra khỏi t
 M2: Vâng, chúng ta sẽ cần lều, túi ngủ, bếp cắm trại và tủ lạnh đựng đồ uống. Còn đồ ăn thì sao?<br>\
 W2: Chúng ta hãy dừng lại ở một cửa hàng và mua một ít đồ tạp hóa trên đường đi.<br>\
 M2: Nghe có vẻ ổn. Tốt hơn là chúng ta nên chuẩn bị đồ đạc ngay nếu muốn sẵn sàng lên đường vào lúc 5:00 chiều ngày mai."
-	,voca:"",
+	,voca:"forecast,residents,unbelievable,cancel,continue,groceries,spell,occasional,showers,degrees",
 },
 {
 	unit:6,
@@ -107,7 +107,7 @@ M: Một phát minh khác lạ nữa là cái này. Nhìn này, đó là một b
 W: Mục đích của phát minh đó là gì?<br>\
 M: Nhà phát minh nói rằng những người tham gia giao thông khác sẽ thay đổi cách cư xử của họ. Họ sẽ trở nên lịch sự hơn nếu biết một người phụ nữ đang lái xe, do đó sẽ có ít tai nạn xe hơi hơn.<br>\
 W: Ha! Bạn có thực sự nghĩ điều đó sẽ xảy ra không? Thật không thể tin được!"
-	,voca:"",
+	,voca:"invention,portable,waist,incredible,unusual,concentrate,ladder,flexible,behave,attaches",
 },
 {
 	unit:7,
@@ -120,7 +120,7 @@ My machine does this with sound. As a sound enters the microphone, the machine d
 M: Cảm ơn bạn! Trong cuộc thi khoa học năm nay, tôi đã phát minh ra một máy tạo tiếng ồn trắng. Để tôi giải thích xem đó là gì. Bạn đã bao giờ thức giấc vào ban đêm vì tiếng xe cộ, tiếng người nói chuyện hoặc tiếng nhạc lớn chưa? Những loại tiếng ồn này đôi khi được gọi là tiếng ồn tối. Tiếng ồn tối bao gồm những âm thanh làm phiền bạn đến mức bạn không thể tập trung vào việc mình đang làm.<br>\
 Tiếng ồn trắng không hẳn là tiếng ồn; thực tế là bạn không thể nghe thấy tiếng ồn trắng. Tiếng ồn trắng bao gồm những sóng âm vô hình làm giảm tác động của tiếng ồn tối bằng cách tạo ra những âm thanh có tần số ngược lại. Giống như đang ở dưới đại dương và nhìn thấy một con sóng lớn đang ập tới. Nó có thể đánh gục bạn. Nhưng nếu bạn có thể gửi một con sóng, hoặc nhiều con sóng nhỏ, về phía con sóng lớn, nó sẽ không mạnh bằng, vì những con sóng nhỏ sẽ đập vào nó và làm giảm kích thước của nó.<br>\
 Máy của tôi thực hiện điều này với âm thanh. Khi âm thanh đi vào micrô, máy sẽ xác định tần số của âm thanh. Sau đó, nó tạo ra một âm thanh ở tần số ngược lại để triệt tiêu âm thanh đầu tiên. Tôi hy vọng máy của tôi sẽ mang lại sự yên bình và tĩnh lặng cho những người sống ở những nơi ồn ào. Cảm ơn bạn."
-	,voca:"",
+	,voca:"redue,contest,frequency,microphone,powerful,invisible,knock someone down,determine,measure"
 },
 {
 	unit:8,
@@ -143,7 +143,7 @@ G: Chúng ta nhân 3,6 với 28,3, tương đương với tính bằng gam, và 
 B: Được rồi, máy nghe nhạc MP4 cao khoảng chín cm và rộng năm cm, và nặng khoảng 102 gam. Tôi nghĩ nó phải có kích thước lớn hơn để có thể chứa 5.000 bài hát, nhưng nó nhỏ và nhẹ! Bạn có nghĩ tôi nên mua nó không, Julie?<br>\
 G: Nghe có vẻ là một sản phẩm tốt, nhưng còn tùy thuộc vào giá cả.<br>\
 B: Vâng, giờ tôi lại gặp vấn đề tương tự. Bạn có thể giúp tôi tìm ra cách chuyển đổi tiền Trung Quốc sang tiền của chúng tôi không?"
-	,voca:"",
+	,voca:"measurement,calculator,width,convert,height.dimensions,figure out,multiply,weighs,equivalent",
 },
 {
 	unit:9,
@@ -200,14 +200,13 @@ Bức chân dung này nổi tiếng vì một số lý do. Lý do nổi tiếng 
 	,voca:"",
 },
 {
-	title:"Unit 13 Leonardo da Vinci",
-	en:"Unit 13 Leonardo da Vinci<br>\
-When most people hear the name Leonardo da Vinci, they think of art. But in fact, he was a man of many talents. He was a scientist, an inventor, and an artist.<br>\
+	unit:13,
+	title:"Leonardo da Vinci",
+	en:"When most people hear the name Leonardo da Vinci, they think of art. But in fact, he was a man of many talents. He was a scientist, an inventor, and an artist.<br>\
 Leonardo da Vinci was born in 1452 in Vinci, Italy. When he was 14, his father sent him to Florence to train under Andrea del Verrocchio, one of the best artists in the area. Leonardo became better than Verrocchio. By his early twenties, Leonardo was famous for his painting. He was especially good at painting colors and details. This made his paintings very lifelike. His most famous paintings are the Mona Lisa and The Last Supper.<br>\
 Leonardo was also a great scientist. He was a good observer of life and nature. He would ask himself simple questions like, 'How do birds fly?' Then he would try to find the answers. He was interested in everything. For example, he studied the inner workings of the human body. He would cut up dead bodies to examine their insides.<br>\
 Leonardo was also a talented inventor. He believed that by understanding how each part of a machine worked, the parts could be changed and combined in different ways to make new machines. Using his artistic talent, Leonardo drew pictures of many inventions. However, few of them were built and tested during his lifetime. For example, his parachute wasn't built until 1783. Also, his war tank wasn't used until World War I in 1917."
-	,vi:"Bài 13 Leonardo da Vinci<br>\
-Khi hầu hết mọi người nghe đến tên Leonardo da Vinci, họ nghĩ đến nghệ thuật. Nhưng thực tế, ông là một người có nhiều tài năng. Ông là một nhà khoa học, một nhà phát minh và một nghệ sĩ.<br>\
+	,vi:"Khi hầu hết mọi người nghe đến tên Leonardo da Vinci, họ nghĩ đến nghệ thuật. Nhưng thực tế, ông là một người có nhiều tài năng. Ông là một nhà khoa học, một nhà phát minh và một nghệ sĩ.<br>\
 Leonardo da Vinci sinh năm 1452 tại Vinci, Ý. Khi ông 14 tuổi, cha ông đã gửi ông đến Florence để học với Andrea del Verrocchio, một trong những nghệ sĩ giỏi nhất trong vùng. Leonardo đã trở nên giỏi hơn Verrocchio. Vào đầu những năm hai mươi, Leonardo đã nổi tiếng với hội họa của mình. Ông đặc biệt giỏi về màu sắc và chi tiết. Điều này làm cho các bức tranh của ông rất sống động. Những bức tranh nổi tiếng nhất của ông là Mona Lisa và Bữa Tiệc Ly.<br>\
 Leonardo cũng là một nhà khoa học vĩ đại. Ông là người quan sát tốt cuộc sống và thiên nhiên. Ông tự hỏi mình những câu hỏi đơn giản như, 'Chim bay như thế nào?' Sau đó, ông sẽ cố gắng tìm câu trả lời. Ông quan tâm đến mọi thứ. Ví dụ, ông nghiên cứu hoạt động bên trong của cơ thể con người. Ông sẽ cắt xác chết để kiểm tra bên trong.<br>\
 Leonardo cũng là một nhà phát minh tài năng. Ông tin rằng bằng cách hiểu cách thức hoạt động của từng bộ phận máy móc, các bộ phận có thể được thay đổi và kết hợp theo nhiều cách khác nhau để tạo ra những cỗ máy mới. Sử dụng tài năng nghệ thuật của mình, Leonardo đã vẽ nhiều bức tranh về những phát minh. Tuy nhiên, rất ít trong số chúng được chế tạo và thử nghiệm trong suốt cuộc đời ông. Ví dụ, chiếc dù của ông không được chế tạo cho đến năm 1783. Ngoài ra, xe tăng chiến tranh của ông không được sử dụng cho đến Thế chiến thứ nhất năm 1917."
@@ -290,15 +289,14 @@ G: Tôi không biết, nhưng nó được chơi trên khắp thế giới. Th�
 	,voca:"",
 },
 {
-	title:"Unit 18 Man's Best Friend",
-	en:"Unit 18 Man's Best Friend<br>\
-Why are dogs often called Man's best friend? Probably because dogs have many of the qualities we want in our human companions. They are loyal, friendly, never argue, and are always glad to see us. This is one reason why we have dogs and other pets. Sometimes we might even prefer the company of animals to that of fellow human beings.<br>\
+	unit:18,
+	title:"Man's Best Friend",
+	en:"Why are dogs often called Man's best friend? Probably because dogs have many of the qualities we want in our human companions. They are loyal, friendly, never argue, and are always glad to see us. This is one reason why we have dogs and other pets. Sometimes we might even prefer the company of animals to that of fellow human beings.<br>\
 Pets provide us with many other benefits as well. Studies have shown that having a pet nearby lowers the blood pressure of elderly people and raises their spirits. One study in Britain showed that people with pets recovered more quickly from heart attacks than those who didn't have a pet. The study also found that pet owners suffered from fewer common ailments, such as colds, headaches, and fevers, than people who don't own pets.<br>\
 Pets help children to learn responsibility. By learning to take care of their pets, children learn how to take care of themselves and other people. Walking dogs each day gives children regular exercise.<br>\
 Pets can also help keep us safe. Dogs, for example, guard our homes and scare away burglars. Guide dogs help blind people 'see' when they need to go outside. Cats catch mice and rats in our houses.<br>\
 Finally, pets teach us compassion. They give us a chance to show our love to other living creatures. If we can love our pets, it becomes easier to love each other. And that might be the most important benefit of all!"
-	,vi:"Bài 18 Người bạn tốt nhất của con người<br>\
-Tại sao chó thường được gọi là người bạn tốt nhất của con người? Có lẽ vì chó có nhiều phẩm chất mà chúng ta mong muốn ở người bạn đồng hành là con người. Chúng trung thành, thân thiện, không bao giờ cãi nhau và luôn vui mừng khi gặp chúng ta. Đây là một lý do tại sao chúng ta nuôi chó và các vật nuôi khác. Đôi khi chúng ta thậm chí còn thích bầu bạn với động vật hơn là với những người đồng loại.<br>\
+	,vi:"Tại sao chó thường được gọi là người bạn tốt nhất của con người? Có lẽ vì chó có nhiều phẩm chất mà chúng ta mong muốn ở người bạn đồng hành là con người. Chúng trung thành, thân thiện, không bao giờ cãi nhau và luôn vui mừng khi gặp chúng ta. Đây là một lý do tại sao chúng ta nuôi chó và các vật nuôi khác. Đôi khi chúng ta thậm chí còn thích bầu bạn với động vật hơn là với những người đồng loại.<br>\
 Vật nuôi cũng mang lại cho chúng ta nhiều lợi ích khác. Các nghiên cứu đã chỉ ra rằng việc có một vật nuôi gần đó giúp hạ huyết áp ở người cao tuổi và nâng cao tinh thần của họ. Một nghiên cứu ở Anh cho thấy những người có vật nuôi hồi phục nhanh hơn sau cơn đau tim so với những người không có vật nuôi. Nghiên cứu cũng phát hiện ra rằng những người nuôi vật nuôi ít mắc các bệnh thông thường như cảm lạnh, đau đầu và sốt hơn những người không nuôi vật nuôi.<br>\
 Vật nuôi giúp trẻ em học cách chịu trách nhiệm. Bằng cách học cách chăm sóc vật nuôi, trẻ em học cách chăm sóc bản thân và những người khác. Dắt chó đi dạo mỗi ngày giúp trẻ em tập thể dục thường xuyên.<br>\
 Vật nuôi cũng có thể giúp chúng ta được an toàn. Ví dụ, chó canh gác nhà cửa và xua đuổi trộm cắp. Chó dẫn đường giúp người mù 'nhìn thấy' khi họ cần ra ngoài. Mèo bắt chuột và chuột cống trong nhà của chúng ta.<br>\
@@ -306,16 +304,15 @@ Cuối cùng, vật nuôi dạy chúng ta lòng trắc ẩn. Chúng cho chúng t
 	,voca:"",
 },
 {
-	title:"Unit 19 The Active Leisure Center",
-	en:"Unit 19 The Active Leisure Center<br>\
-Bored with nothing to do? Come and check out the Active Leisure Center. We offer something for everyone.<br>\
+	unit:19,
+	title:"The Active Leisure Center",
+	en:"Bored with nothing to do? Come and check out the Active Leisure Center. We offer something for everyone.<br>\
 The center has a heated outdoor swimming pool with five different water slides for those who want some fun. There's also an indoor pool with lanes for more serious swimmers. Swimming lessons are available for all levels. <br>\
 The Active Leisure Center also has a fitness center for those who want to exercise. We have running machines, exercise bikes, weight machines and free weights, and daily aerobics and jazz dance classes. Our fitness experts will be happy to provide you with a fitness program to suit your needs.<br>\
 The center has a sports hall where you can play indoor soccer, badminton, basketball, and various other sports. You can join community sports groups, sign up for tournaments, or just book the hall for you and your friends to use.<br>\
 With the school holidays coming soon, why not come and find out about our special holiday programs? We have programs for all ages, from kindergarten to high school students, and if you join now, you can even get a family discount. <br>\
 So come and take advantage of all that the Active Leisure Center has to offer. We're open from six am to ten pm on weekdays, and eight am to eight pm on weekends. For more information, call 325-6188 or visit our website at www.activeleisure.com."
-	,vi:"Đơn vị 19 Trung tâm giải trí năng động<br>\
-Chán không có gì để làm? Hãy đến và xem Trung tâm giải trí năng động. Chúng tôi cung cấp mọi thứ cho mọi người.<br>\
+	,vi:"Chán không có gì để làm? Hãy đến và xem Trung tâm giải trí năng động. Chúng tôi cung cấp mọi thứ cho mọi người.<br>\
 Trung tâm có hồ bơi ngoài trời được sưởi ấm với năm đường trượt nước khác nhau dành cho những ai muốn vui chơi. Ngoài ra còn có hồ bơi trong nhà với làn dành cho những người bơi chuyên nghiệp hơn. Có các bài học bơi cho mọi cấp độ. <br>\
 Trung tâm giải trí năng động cũng có một trung tâm thể dục dành cho những người muốn tập thể dục. Chúng tôi có máy chạy bộ, xe đạp tập thể dục, máy tập tạ và tạ tự do, cũng như các lớp thể dục nhịp điệu và khiêu vũ jazz hàng ngày. Các chuyên gia thể dục của chúng tôi sẽ rất vui khi cung cấp cho bạn một chương trình thể dục phù hợp với nhu cầu của bạn.<br>\
 Trung tâm có một phòng tập thể thao, nơi bạn có thể chơi bóng đá trong nhà, cầu lông, bóng rổ và nhiều môn thể thao khác. Bạn có thể tham gia các nhóm thể thao cộng đồng, đăng ký các giải đấu hoặc chỉ cần đặt phòng tập cho bạn và bạn bè sử dụng.<br>\
@@ -324,9 +321,9 @@ Vì vậy, hãy đến và tận dụng tất cả những gì Trung tâm Giải
 	,voca:"",
 },
 {
-	title:"Unit 20 The Audition",
-	en:"Unit 20 The Audition <br>\
-B: Hi, Cindy. Are you ready for the big audition this afternoon?<br>\
+	unit:20,
+	title:"The Audition",
+	en:"B: Hi, Cindy. Are you ready for the big audition this afternoon?<br>\
 G: I don't know, Greg. I've been practicing the script all week, but the princess has so many lines that I don't know if I can remember them all!<br>\
 B: You don't have to remember all of them for the audition, just the lines for the main scene, where the pirate meets the princess and tries to kidnap her.<br>\
 G: I know, but even in that scene, the princess has quite a few lines!<br>\
@@ -337,8 +334,7 @@ G: Oh yeah, the pirate and the prince get to have that cool sword fight in the f
 B: Yeah, I remember reading that in the script. But at the audition today, we'll be practicing the scene where the pirate first sees the princess, and falls in love with her.<br>\
 G:Hey, I'll help you practice your scene if you'll help me practice mine.<br>\
 B: You've got a deal! Let's start now."
-	,vi:"Unit 20 The Audition <br>\
-B: Chào Cindy. Bạn đã sẵn sàng cho buổi thử vai lớn vào chiều nay chưa?<br>\
+	,vi:"B: Chào Cindy. Bạn đã sẵn sàng cho buổi thử vai lớn vào chiều nay chưa?<br>\
 G: Tôi không biết, Greg. Tôi đã luyện tập kịch bản cả tuần, nhưng công chúa có quá nhiều câu thoại đến nỗi tôi không biết mình có thể nhớ hết không!<br>\
 B: Bạn không cần phải nhớ hết tất cả chúng cho buổi thử vai, chỉ cần nhớ những câu thoại cho cảnh chính, khi tên cướp biển gặp công chúa và cố bắt cóc cô ấy.<br>\
 G: Tôi biết, nhưng ngay cả trong cảnh đó, công chúa cũng có khá nhiều câu thoại!<br>\
@@ -352,15 +348,14 @@ B: Bạn đã có một thỏa thuận! Chúng ta hãy bắt đầu ngay bây gi
 	,voca:"",
 },
 {
-	title:"Unit 21 Add, Subtract, Multiply, and Divide",
-	en:"Unit 21 Add, Subtract, Multiply, and Divide<br>\
-B: Hello there, Terry. How are you doing?<br>\
+	unit:21,
+	title:"Add, Subtract, Multiply, and Divide",
+	en:"B: Hello there, Terry. How are you doing?<br>\
 G: Not too well. I'm really having trouble figuring out this arithmetic assignment. I can add and subtract pretty well, but without a calculator it's difficult for me to multiply and divide. Hey, Olaf, I heard that you're excellent in math.<br>\
 B: My technique is that I try to imagine pictures in my mind, so the numbers aren't just figures on a page, but something I can apply to real life. One way I do this is to imagine the numbers as if they were money. For example, if the equation is 753 minus 236, I think about seven dollars and 53 cents minus two dollars and 36 cents. It's five dollars and 17 cents, or 517. Easy!<br>\
 G: Wow, that does seem easier, for adding and subtracting. But how do you apply this technique to multiplying and dividing?<br>\
 B: OK, suppose the equation is 200 times 30. 30 is three groups of 10. So, first I imagine 10 groups of people standing in a large field. Next to each group is a sign with the number 200 on it. At the front of the field is a huge sign with the number 2000 on it, because 200 times 10 equals 2000, right? But the problem requires 200 times 10 three times, so, I just add two more fields of people to my picture, with two more signs that say 2000. Now I have 2000 times three. The answer is 6000!"
-	,vi:"Bài 21 Cộng, Trừ, Nhân và Chia<br>\
-B: Xin chào, Terry. Bạn khỏe không?<br>\
+	,vi:"B: Xin chào, Terry. Bạn khỏe không?<br>\
 G: Không khỏe lắm. Mình thực sự gặp khó khăn khi giải bài tập số học này. Mình có thể cộng và trừ khá tốt, nhưng không có máy tính nên mình thấy khó nhân và chia. Này, Olaf, mình nghe nói bạn rất giỏi toán.<br>\
 B: Kỹ thuật của mình là mình cố gắng tưởng tượng ra các hình ảnh trong đầu, vì vậy các con số không chỉ là những con số trên một trang giấy, mà là thứ mình có thể áp dụng vào cuộc sống thực. Một cách mình làm điều này là tưởng tượng các con số như thể chúng là tiền. Ví dụ, nếu phương trình là 753 trừ 236, mình nghĩ đến bảy đô la và 53 xu trừ hai đô la và 36 xu. Tức là năm đô la và 17 xu, hoặc 517. Dễ quá!<br>\
 G: Chà, có vẻ dễ hơn, khi cộng và trừ. Nhưng làm sao bạn áp dụng kỹ thuật này vào phép nhân và phép chia?<br>\
@@ -368,9 +363,9 @@ B: Được rồi, giả sử phương trình là 200 lần 30. 30 là ba nhóm 
 	,voca:"",
 },
 {
-	title:"Unit 22 I Spy",
-	en:"Unit 22 I Spy<br>\
-B: Dad, this is so boring, just sitting back here with nothing to do!<br>\
+	unit:22,
+	title:"I Spy",
+	en:"B: Dad, this is so boring, just sitting back here with nothing to do!<br>\
 M: Playing a game is a fun way to pass time on a long car trip.<br>\
 B: OK, but what kind of game can we play when we're going 70 miles an hour in a car?<br>\
 M: Well, when I was young, we used to play a game in the car called 'I Spy.' One person decides on an object that he or she can see, and tells us its color, then the rest of us have to ask yes or no questions to try and find out what it is.<br>\
@@ -384,8 +379,7 @@ B:  Stop, Betsy! Dad said that you're only supposed to tell us its color, not it
 G: Oh no, I forgot!<br>\
 M: That's OK, honey, everybody makes mistakes. Remember the saying: 'If at first you don't succeed, try, try again'.<br>\
 G: OK, let me try again. I spy something___"
-	,vi:"Bài 22 Tôi là điệp viên<br>\
-B: Bố ơi, chán quá, chỉ ngồi đây mà chẳng có gì làm!<br>\
+	,vi:"B: Bố ơi, chán quá, chỉ ngồi đây mà chẳng có gì làm!<br>\
 M: Chơi trò chơi là một cách thú vị để giết thời gian trên chuyến đi dài bằng ô tô.<br>\
 B: Được thôi, nhưng chúng ta có thể chơi trò gì khi đang lái xe với tốc độ 70 dặm một giờ?<br>\
 M: À, hồi còn nhỏ, chúng ta thường chơi trò 'Tôi là điệp viên' trên ô tô. Một người quyết định một vật mà người đó có thể nhìn thấy và cho chúng tôi biết màu sắc của vật đó, sau đó những người còn lại phải hỏi những câu hỏi có hoặc không để cố gắng tìm ra vật đó là gì.<br>\
@@ -402,30 +396,28 @@ G: Được rồi, để tôi thử lại. Tôi thấy có thứ gì đó___"
 	,voca:"",
 },
 {
-	title:"Unit 23 American Families Today",
-	en:"Unit 23 American Families Today<br>\
-American families today are very different from what they were about a hundred years ago. The main difference is that families are now much smaller. In the past, most families lived on farms. They needed children to help them work.<br>\
+	unit:23,
+	title:"American Families Today",
+	en:"American families today are very different from what they were about a hundred years ago. The main difference is that families are now much smaller. In the past, most families lived on farms. They needed children to help them work.<br>\
 Today, most families live in cities. Parents do not expect their children to work for them. It is also becoming very expensive to raise and educate children. Many parents cannot afford to have a large family. Others think that there are already too many people in the world. If they have more than two children, it will increase the population.<br>\
 Also, the types of families are changing. Statistics show that there are more single parents than ever before. More and more unmarried couples are having children, and a growing number of couples are choosing to have no children at all. Traditional families - a married couple with children - live in less than 25 percent of all US homes.<br>\
 One reason for this trend is the greater number of working women. In the past, women depended on their husbands for money. Now, many women have jobs. They don't have to be married to have money. Another reason is divorce. This is when a husband and wife decide not to be married anymore. Almost half of all US marriages end in divorce. Many people decide not to get married at all. They prefer to be single and live without a husband or a wife."
-	,vi:"Đơn vị 23 Gia đình Mỹ ngày nay<br>\
-Các gia đình Mỹ ngày nay rất khác so với cách đây khoảng một trăm năm. Sự khác biệt chính là các gia đình hiện nay nhỏ hơn nhiều. Trước đây, hầu hết các gia đình sống ở trang trại. Họ cần con cái giúp họ làm việc.<br>\
+	,vi:"Các gia đình Mỹ ngày nay rất khác so với cách đây khoảng một trăm năm. Sự khác biệt chính là các gia đình hiện nay nhỏ hơn nhiều. Trước đây, hầu hết các gia đình sống ở trang trại. Họ cần con cái giúp họ làm việc.<br>\
 Ngày nay, hầu hết các gia đình sống ở thành phố. Cha mẹ không mong đợi con cái làm việc cho mình. Việc nuôi dạy và giáo dục trẻ em cũng trở nên rất tốn kém. Nhiều bậc cha mẹ không đủ khả năng nuôi một gia đình đông con. Những người khác nghĩ rằng thế giới đã quá đông người. Nếu họ có nhiều hơn hai đứa con, dân số sẽ tăng.<br>\
 Ngoài ra, các loại hình gia đình đang thay đổi. Thống kê cho thấy có nhiều cha mẹ đơn thân hơn bao giờ hết. Ngày càng có nhiều cặp đôi chưa kết hôn có con và ngày càng có nhiều cặp đôi chọn không có con. Các gia đình truyền thống - một cặp vợ chồng có con - sống trong chưa đầy 25 phần trăm tổng số gia đình ở Hoa Kỳ.<br>\
 Một lý do cho xu hướng này là số lượng phụ nữ đi làm nhiều hơn. Trước đây, phụ nữ phụ thuộc vào chồng về tiền bạc. Bây giờ, nhiều phụ nữ có việc làm. Họ không cần phải kết hôn để có tiền. Một lý do khác là ly hôn. Đây là khi một người chồng và người vợ quyết định không kết hôn nữa. Gần một nửa số cuộc hôn nhân ở Hoa Kỳ kết thúc bằng ly hôn. Nhiều người quyết định không kết hôn. Họ thích độc thân và sống mà không có chồng hoặc vợ."
 	,voca:"",
 },
 {
-	title:"Unit 24 Making Decisions",
-	en:"Unit 24 Making Decisions<br>\
-How does your family make important decisions? Do children have any say in making these decisions, or do parents simply tell them what to do? There are several different methods for making family decisions.<br>\
+	unit: 24,
+	title:"Making Decisions",
+	en:"How does your family make important decisions? Do children have any say in making these decisions, or do parents simply tell them what to do? There are several different methods for making family decisions.<br>\
 One method is to have a vote. Each family member writes his or her own choice on a piece of paper. With this method, each person gets equal say in the issue being decided. What if the vote is a tie? You should think of an idea to break a tie before you vote.<br>\
 A second method is to give older children special privileges. If you're moving into a new home, for instance, the oldest child might get first choice of bedrooms.<br>\
 A third method is to take turns making the decisions. Suppose a family goes on vacation together each year. One year they might let their daughter decide where they should go. The next year, the choice goes to the son. <br>\
 A fourth method is to let the head of the household decide what is best. That is the way we do it in my family. The head of our household, my father, listens to all our opinions. Then he makes a decision. We agree to follow his decision, even if we don't like it.<br>\
 Making family decisions is not always easy. The important thing is to choose a method that everyone agrees on. That could cause a problem, however. Which method should you use to decide which method to choose for making decisions?"
-	,vi:"Bài 24 Ra quyết định<br>\
-Gia đình bạn đưa ra những quyết định quan trọng như thế nào? Trẻ em có được quyền quyết định những quyết định này không, hay cha mẹ chỉ bảo chúng phải làm gì? Có một số phương pháp khác nhau để đưa ra quyết định trong gia đình.<br>\
+	,vi:"Gia đình bạn đưa ra những quyết định quan trọng như thế nào? Trẻ em có được quyền quyết định những quyết định này không, hay cha mẹ chỉ bảo chúng phải làm gì? Có một số phương pháp khác nhau để đưa ra quyết định trong gia đình.<br>\
 Một phương pháp là bỏ phiếu. Mỗi thành viên trong gia đình viết lựa chọn của riêng mình trên một tờ giấy. Với phương pháp này, mỗi người đều có tiếng nói ngang nhau trong vấn đề được quyết định. Nếu kết quả bỏ phiếu hòa thì sao? Bạn nên nghĩ ra ý tưởng để phá vỡ thế hòa trước khi bỏ phiếu.<br>\
 Phương pháp thứ hai là trao cho những đứa trẻ lớn hơn những đặc quyền. Ví dụ, nếu bạn chuyển đến một ngôi nhà mới, đứa con lớn nhất có thể được chọn phòng ngủ trước.<br>\
 Phương pháp thứ ba là thay phiên nhau đưa ra quyết định. Giả sử một gia đình đi nghỉ cùng nhau mỗi năm. Một năm, họ có thể để con gái quyết định nơi họ nên đến. Năm sau, quyền quyết định thuộc về con trai. <br>\
@@ -434,35 +426,33 @@ Việc đưa ra quyết định của gia đình không phải lúc nào cũng d
 	,voca:"",
 },
 {
-	title:"Unit 25 My Favorite Teacher",
-	en:"Unit 25 My Favorite Teacher<br>\
-The best teacher I've ever had was Mr. Lambert, my high school French teacher. He was short, with dark hair, a thick beard, and a big smile. His legs were short, too, so his arms always looked too long. He was a very good teacher because he always brought so much energy to the classroom. His classes were never boring because he was always active, trying to find new methods to communicate ideas. Because he taught French, English wasn't allowed in class, so he often had to demonstrate the meaning of new words through gestures and acting.<br>\
+	unit:25,
+	title:"My Favorite Teacher",
+	en:"The best teacher I've ever had was Mr. Lambert, my high school French teacher. He was short, with dark hair, a thick beard, and a big smile. His legs were short, too, so his arms always looked too long. He was a very good teacher because he always brought so much energy to the classroom. His classes were never boring because he was always active, trying to find new methods to communicate ideas. Because he taught French, English wasn't allowed in class, so he often had to demonstrate the meaning of new words through gestures and acting.<br>\
 Once, he had to communicate the word “above” without saying it in English. First, he pulled a desk near the blackboard, and then put a wastebasket between the desk and the blackboard. Next, he put his feet on the edge of the blackboard and his hands on the desk so that he was above the wastebasket. I've never forgotten that demonstration. It was difficult not to enjoy the subject when he was so excited about teaching it.<br>\
 The most important reason that Mr. Lambert is the best teacher I've ever had is that he loved all his students, even when we made him angry by speaking English in class. Whenever that happened, the students always felt guilty because they had so much respect for him. Now that I'm a teacher, I try my best to be like Mr. Lambert. He is my role model."
-	,vi:"Bài 25 Giáo viên yêu thích của tôi<br>\
-Giáo viên tuyệt vời nhất mà tôi từng có là thầy Lambert, giáo viên tiếng Pháp cấp 3 của tôi. Thầy thấp, tóc đen, râu rậm và nụ cười tươi. Chân thầy cũng ngắn, nên cánh tay thầy luôn trông quá dài. Thầy là một giáo viên rất giỏi vì thầy luôn mang đến rất nhiều năng lượng cho lớp học. Các lớp học của thầy không bao giờ nhàm chán vì thầy luôn năng nổ, cố gắng tìm ra những phương pháp mới để truyền đạt ý tưởng. Vì thầy dạy tiếng Pháp nên tiếng Anh không được phép sử dụng trong lớp, nên thầy thường phải minh họa ý nghĩa của các từ mới thông qua cử chỉ và hành động.<br>\
+	,vi:"Giáo viên tuyệt vời nhất mà tôi từng có là thầy Lambert, giáo viên tiếng Pháp cấp 3 của tôi. Thầy thấp, tóc đen, râu rậm và nụ cười tươi. Chân thầy cũng ngắn, nên cánh tay thầy luôn trông quá dài. Thầy là một giáo viên rất giỏi vì thầy luôn mang đến rất nhiều năng lượng cho lớp học. Các lớp học của thầy không bao giờ nhàm chán vì thầy luôn năng nổ, cố gắng tìm ra những phương pháp mới để truyền đạt ý tưởng. Vì thầy dạy tiếng Pháp nên tiếng Anh không được phép sử dụng trong lớp, nên thầy thường phải minh họa ý nghĩa của các từ mới thông qua cử chỉ và hành động.<br>\
 Có lần, thầy phải truyền đạt từ “above” mà không nói bằng tiếng Anh. Đầu tiên, thầy kéo một chiếc bàn gần bảng đen, sau đó đặt một thùng rác giữa bàn và bảng đen. Tiếp theo, thầy đặt chân lên mép bảng đen và đặt tay lên bàn sao cho thầy ở trên thùng rác. Tôi không bao giờ quên màn minh họa đó. Thật khó để không thích môn học này khi thầy ấy quá hào hứng khi được dạy môn đó.<br>\
 Lý do quan trọng nhất khiến thầy Lambert trở thành giáo viên tuyệt vời nhất mà tôi từng có là thầy yêu thương tất cả học sinh của mình, ngay cả khi chúng tôi làm thầy tức giận vì nói tiếng Anh trong lớp. Bất cứ khi nào điều đó xảy ra, học sinh luôn cảm thấy tội lỗi vì họ rất tôn trọng thầy. Bây giờ tôi đã là một giáo viên, tôi cố gắng hết sức để giống như thầy Lambert. Thầy là hình mẫu của tôi."
 	,voca:"",
 },
 {
-	title:"Unit 26 Meet Debra",
-	en:"Unit 26 Meet Debra<br>\
-Hi! My name is Debra Garrel.  I'm a 20 year-old communications major at New York University. I love being at university. I'm enjoying my courses and I meet many new people every day. It seems like a new adventure, and I love adventures!<br>\
+	unit:26,
+	title:"Meet Debra",
+	en:"Hi! My name is Debra Garrel.  I'm a 20 year-old communications major at New York University. I love being at university. I'm enjoying my courses and I meet many new people every day. It seems like a new adventure, and I love adventures!<br>\
 I spent my childhood traveling all over the world and learning about different cultures. You see, my father works for the World Bank, so our family has always moved around a lot. I've lived in Mongolia, East Timor, Brazil, Nigeria, the Netherlands, and the United States. The hardest part of growing up was saying goodbye each time we had to move. But I would always remind myself that I would make new friends soon, and I always did. I've learned not to be shy!<br>\
 After leaving one place, I would always email or call my old friends. I would tell them about the new adventures I was having, and ask them about new things in their lives. That is probably the reason I chose to major in communications. I like to keep in touch.<br>\
 It's obvious that I love to travel, isn't it? But I also enjoy dancing, reading, going to the theater, and riding horses. If you share any of these interests and would like to learn more about me, please let me know. And if you have different interests, I'll remind you: I'm always looking for a new adventure!"
-	,vi:"Bài 26 Gặp gỡ Debra<br>\
-Xin chào! Tôi tên là Debra Garrel. Tôi là sinh viên chuyên ngành truyền thông 20 tuổi tại Đại học New York. Tôi thích được học ở trường đại học. Tôi thích các khóa học của mình và gặp gỡ nhiều người mới mỗi ngày. Có vẻ như đây là một cuộc phiêu lưu mới và tôi thích phiêu lưu!<br>\
+	,vi:"Xin chào! Tôi tên là Debra Garrel. Tôi là sinh viên chuyên ngành truyền thông 20 tuổi tại Đại học New York. Tôi thích được học ở trường đại học. Tôi thích các khóa học của mình và gặp gỡ nhiều người mới mỗi ngày. Có vẻ như đây là một cuộc phiêu lưu mới và tôi thích phiêu lưu!<br>\
 Tôi đã dành thời thơ ấu của mình để đi du lịch khắp thế giới và tìm hiểu về các nền văn hóa khác nhau. Bạn thấy đấy, bố tôi làm việc cho Ngân hàng Thế giới, vì vậy gia đình tôi luôn phải di chuyển rất nhiều. Tôi đã từng sống ở Mông Cổ, Đông Timor, Brazil, Nigeria, Hà Lan và Hoa Kỳ. Phần khó khăn nhất khi trưởng thành là phải nói lời tạm biệt mỗi khi chúng tôi phải chuyển đi. Nhưng tôi luôn tự nhắc nhở mình rằng tôi sẽ sớm có những người bạn mới, và tôi luôn làm được như vậy. Tôi đã học được cách không ngại ngùng!<br>\
 Sau khi rời khỏi một nơi nào đó, tôi luôn gửi email hoặc gọi điện cho những người bạn cũ. Tôi sẽ kể cho họ nghe về những cuộc phiêu lưu mới mà tôi đang có và hỏi họ về những điều mới mẻ trong cuộc sống của họ. Đó có lẽ là lý do tôi chọn chuyên ngành truyền thông. Tôi thích giữ liên lạc.<br>\
 Rõ ràng là tôi thích đi du lịch, phải không? Nhưng tôi cũng thích khiêu vũ, đọc sách, đi xem kịch và cưỡi ngựa. Nếu bạn chia sẻ bất kỳ sở thích nào trong số này và muốn tìm hiểu thêm về tôi, vui lòng cho tôi biết. Và nếu bạn có sở thích khác, tôi sẽ nhắc bạn: Tôi luôn tìm kiếm một cuộc phiêu lưu mới!"
 	,voca:"",
 },
 {
-	title:"Unit 27 What's in a Name?",
-	en:"Unit 27 What's in a Name?<br>\
-W:  Sy, do you have a local driver's license that we can rent the car with for our trip this weekend?<br>\
+	unit:27,
+	title:"What's in a Name?",
+	en:"W:  Sy, do you have a local driver's license that we can rent the car with for our trip this weekend?<br>\
 M: Sure, Jen, here you are.<br>\
 W:  It says here that your name is Sarang Patel, but I thought your first name was Sy!<br>\
 M: Sy is my nickname, and Sarang is my given name. It means 'navigator' in Hindi. At the time I was born, things were confusing and difficult for my family in India. My parents wanted a son who could lead and guide our family to success.<br>\
@@ -476,8 +466,7 @@ W: Usually it's a way to show respect for a person, but some people make it ridi
 M: No.<br>\
 W: Well, he had five boys, and he named each one of them George, after himself.<br>\
 M: It must be confusing when the phone rings at his house!"
-	,vi:"Bài 27 Tên có ý nghĩa gì?<br>\
-W: Sy, bạn có bằng lái xe địa phương để chúng ta có thể thuê xe cho chuyến đi cuối tuần này không?<br>\
+	,vi:"W: Sy, bạn có bằng lái xe địa phương để chúng ta có thể thuê xe cho chuyến đi cuối tuần này không?<br>\
 M: Chắc chắn rồi, Jen, đây rồi.<br>\
 W: Ở đây ghi tên bạn là Sarang Patel, nhưng tôi nghĩ tên bạn là Sy!<br>\
 M: Sy là biệt danh của tôi, còn Sarang là tên khai sinh của tôi. Nó có nghĩa là 'hoa tiêu' trong tiếng Hindi. Vào thời điểm tôi sinh ra, mọi thứ rất khó khăn và phức tạp đối với gia đình tôi ở Ấn Độ. Bố mẹ tôi muốn một người con trai có thể dẫn dắt và chỉ dẫn gia đình chúng tôi đến thành công.<br>\
@@ -506,25 +495,23 @@ Có những yếu tố khác cần cân nhắc, chẳng hạn như mức lương
 	,voca:"",
 },
 {
-	title:"Unit 29 Body Language",
-	en:"Unit 29 Body Language<br>\
-Did you know that words are not the only thing we use to communicate? Most of our messages are sent through body language. Only about 10 percent of communication is done through the actual words of a conversation. Isn't that strange? If we understand body language well, we can learn a lot more about what other people really think. We can also use body language to send the right message to others. Have you ever felt dislike for someone without knowing why? Well, he or she might have been sending out a negative message through body language.<br>\
+	unit:29,
+	title:"Body Language",
+	en:"Did you know that words are not the only thing we use to communicate? Most of our messages are sent through body language. Only about 10 percent of communication is done through the actual words of a conversation. Isn't that strange? If we understand body language well, we can learn a lot more about what other people really think. We can also use body language to send the right message to others. Have you ever felt dislike for someone without knowing why? Well, he or she might have been sending out a negative message through body language.<br>\
 What kind of things should you look for if you want to understand body language? First, look at people's eyes. If people are lying, they may not look directly at the person they are talking to, and the pupils of their eyes may shrink. Next, look at people's arms. Arms crossed in front of the body might mean a person is unfriendly or afraid. He or she might be trying to say, 'Stay away'. If the arms are by the side or at the back of the body, the person might be saying, 'Come closer. I won't hurt you'. But keep in mind that there is no accurate way to interpret body language all the time. Sometimes, talking is still the best way to communicate. However, knowing about body language will improve the way you communicate and help you understand other people better."
-	,vi:"Bài 29 Ngôn ngữ cơ thể<br>\
-Bạn có biết rằng lời nói không phải là thứ duy nhất chúng ta sử dụng để giao tiếp không? Hầu hết các thông điệp của chúng ta được truyền tải thông qua ngôn ngữ cơ thể. Chỉ có khoảng 10 phần trăm giao tiếp được thực hiện thông qua các từ ngữ thực tế trong một cuộc trò chuyện. Thật kỳ lạ phải không? Nếu chúng ta hiểu rõ ngôn ngữ cơ thể, chúng ta có thể học được nhiều hơn về những gì người khác thực sự nghĩ. Chúng ta cũng có thể sử dụng ngôn ngữ cơ thể để gửi đúng thông điệp đến người khác. Bạn đã bao giờ cảm thấy không thích ai đó mà không biết tại sao chưa? Vâng, có thể người đó đã gửi một thông điệp tiêu cực thông qua ngôn ngữ cơ thể.<br>\
+	,vi:"Bạn có biết rằng lời nói không phải là thứ duy nhất chúng ta sử dụng để giao tiếp không? Hầu hết các thông điệp của chúng ta được truyền tải thông qua ngôn ngữ cơ thể. Chỉ có khoảng 10 phần trăm giao tiếp được thực hiện thông qua các từ ngữ thực tế trong một cuộc trò chuyện. Thật kỳ lạ phải không? Nếu chúng ta hiểu rõ ngôn ngữ cơ thể, chúng ta có thể học được nhiều hơn về những gì người khác thực sự nghĩ. Chúng ta cũng có thể sử dụng ngôn ngữ cơ thể để gửi đúng thông điệp đến người khác. Bạn đã bao giờ cảm thấy không thích ai đó mà không biết tại sao chưa? Vâng, có thể người đó đã gửi một thông điệp tiêu cực thông qua ngôn ngữ cơ thể.<br>\
 Bạn nên chú ý đến những điều gì nếu muốn hiểu ngôn ngữ cơ thể? Trước tiên, hãy nhìn vào mắt mọi người. Nếu mọi người đang nói dối, họ có thể không nhìn trực tiếp vào người mà họ đang nói chuyện và đồng tử mắt của họ có thể co lại. Tiếp theo, hãy nhìn vào cánh tay của mọi người. Khoanh tay trước cơ thể có thể có nghĩa là một người không thân thiện hoặc sợ hãi. Người đó có thể đang cố nói rằng, 'Tránh xa ra'. Nếu cánh tay ở bên cạnh hoặc ở phía sau cơ thể, người đó có thể đang nói, 'Đến gần hơn. Tôi sẽ không làm bạn đau'. Nhưng hãy nhớ rằng không có cách nào chính xác để diễn giải ngôn ngữ cơ thể mọi lúc. Đôi khi, nói chuyện vẫn là cách giao tiếp tốt nhất. Tuy nhiên, biết về ngôn ngữ cơ thể sẽ cải thiện cách bạn giao tiếp và giúp bạn hiểu người khác tốt hơn."
 	,voca:"",
 },
 {
-	title:"Unit 30 Veterinarians",
-	en:"Unit 30 Veterinarians<br>\
-If you like animals and science, you might want to be a veterinarian. Veterinarians are animal doctors. They take care of sick and injured animals. Like doctors, vets perform surgery and give medicine. <br>\
+	unit:30,
+	title:"Veterinarians",
+	en:"If you like animals and science, you might want to be a veterinarian. Veterinarians are animal doctors. They take care of sick and injured animals. Like doctors, vets perform surgery and give medicine. <br>\
 When an animal is sick, vets examine it to find out why. They look for clues in the way an animal looks and acts. For example, if a dog is walking in a strange way, it might have injured its leg. Vets need to observe animals carefully, since animals cannot speak to tell anyone what is wrong.<br>\
 Vets prevent health problems in animals by giving vaccinations and check-ups and fixing teeth. They also teach owners how to feed and train their animals. Vets use special tools to perform surgery. They fix broken bones, take out tumors, take X-rays, and treat wounds.<br>\
 Most vets treat small pets, including dogs and cats. A few vets focus on large animals, such as sheep, cows, and horses. Large-animal vets usually drive to ranches and stables where their patients live. Often, they help when the animals give birth. Vets who work with large animals often work outside in all kinds of weather.<br>\
 A few vets work in zoos and aquariums. They care for zebras, sharks, and other wild creatures. Because animals can get sick at any time, vets often work long hours. Many vets like their work because they can be with animals every day, even though sick animals can sometimes bite or kick their vets."
-	,vi:"Đơn vị 30 Bác sĩ thú y<br>\
-Nếu bạn thích động vật và khoa học, bạn có thể muốn trở thành bác sĩ thú y. Bác sĩ thú y là bác sĩ thú y. Họ chăm sóc động vật bị bệnh và bị thương. Giống như bác sĩ, bác sĩ thú y thực hiện phẫu thuật và cho thuốc. <br>\
+	,vi:"Nếu bạn thích động vật và khoa học, bạn có thể muốn trở thành bác sĩ thú y. Bác sĩ thú y là bác sĩ thú y. Họ chăm sóc động vật bị bệnh và bị thương. Giống như bác sĩ, bác sĩ thú y thực hiện phẫu thuật và cho thuốc. <br>\
 Khi một con vật bị bệnh, bác sĩ thú y sẽ kiểm tra để tìm ra nguyên nhân. Họ tìm kiếm manh mối trong cách con vật trông và hành động. Ví dụ, nếu một con chó đi theo cách kỳ lạ, có thể nó đã bị thương ở chân. Bác sĩ thú y cần quan sát động vật cẩn thận, vì động vật không thể nói để cho bất kỳ ai biết điều gì không ổn.<br>\
 Bác sĩ thú y ngăn ngừa các vấn đề sức khỏe ở động vật bằng cách tiêm vắc-xin, kiểm tra và sửa răng. Họ cũng hướng dẫn chủ sở hữu cách cho ăn và huấn luyện động vật của mình. Bác sĩ thú y sử dụng các công cụ đặc biệt để thực hiện phẫu thuật. Họ sửa xương gãy, cắt bỏ khối u, chụp X-quang và điều trị vết thương.<br>\
 Hầu hết các bác sĩ thú y đều điều trị cho vật nuôi nhỏ, bao gồm chó và mèo. Một số bác sĩ thú y tập trung vào các động vật lớn, chẳng hạn như cừu, bò và ngựa. Bác sĩ thú y chuyên về động vật lớn thường lái xe đến các trang trại và chuồng trại nơi bệnh nhân của họ sinh sống. Họ thường giúp đỡ khi động vật sinh con. Bác sĩ thú y làm việc với động vật lớn thường làm việc ngoài trời trong mọi điều kiện thời tiết.<br>\
@@ -532,9 +519,9 @@ Một số bác sĩ thú y làm việc trong sở thú và thủy cung. Họ ch�
 	,voca:"",
 },
 {
-	title:"Unit 31 I Feel Awful!",
-	en:"Unit 31 I Feel Awful!<br>\
-B: Mom, I feel awful, I think I'd better stay home from school today.<br>\
+	unit:31,
+	title:"I Feel Awful!",
+	en:"B: Mom, I feel awful, I think I'd better stay home from school today.<br>\
 W: I'm sorry you're not feeling well. What's the problem?<br>\
 B: I have a stomachache, my head hurts, and I have a sore throat.<br>\
 W: Well, we'd better take your temperature and make sure you don't have a fever. Keep this thermometer under your tongue for a minute or two. Remind me to call your teacher and tell her you're sick later on today. All right, let's check. Oh dear, you've got a fever. Your temperature is 103, so I think we need to give Dr Thompson a call.<br>\
@@ -545,8 +532,7 @@ W: Well, that's another reason we need to go see Dr Thompson, because when you h
 B: I hope it's not too serious, because we've got a basketball game Thursday, and the coach told me that I'll probably start.<br>\
 W: If you want to recover from the flu in time for your game, you'd better get plenty of rest, take the medicine the doctor gives you, and drink plenty of water.<br>\
 B: I promise I will, Mom. Let's go and see Dr Thompson now."
-	,vi:"Bài 31 Con thấy tệ quá!<br>\
-B: Mẹ ơi, con thấy tệ quá, con nghĩ hôm nay con nên nghỉ học ở nhà.<br>\
+	,vi:"B: Mẹ ơi, con thấy tệ quá, con nghĩ hôm nay con nên nghỉ học ở nhà.<br>\
 W: Con xin lỗi vì con không khỏe. Có vấn đề gì vậy?<br>\
 B: Con đau bụng, đau đầu và đau họng.<br>\
 W: Tốt hơn là chúng ta nên đo nhiệt độ và đảm bảo con không bị sốt. Đặt nhiệt kế này dưới lưỡi trong một hoặc hai phút. Nhắc mẹ gọi điện cho giáo viên và nói với cô ấy rằng con bị ốm vào cuối ngày hôm nay. Được rồi, chúng ta hãy kiểm tra. Ôi trời, con bị sốt. Nhiệt độ của con là 103 độ, vì vậy mẹ nghĩ chúng ta cần gọi cho Bác sĩ Thompson.<br>\
@@ -560,33 +546,31 @@ B: Con hứa là con sẽ làm vậy, mẹ ạ. Giờ chúng ta đi gặp Bác s
 	,voca:"",
 },
 {
-	title:"Unit 32 Why Do We Sneeze?",
-	en:"Unit 32 Why Do We Sneeze? <br>\
-A sneeze is a very interesting thing. We use many different muscles when we sneeze. These include stomach muscles, throat muscles, and eye muscles. Remember, our eyes always close during a sneeze.<br>\
+	unit:32,
+	title:"Why Do We Sneeze?",
+	en:"A sneeze is a very interesting thing. We use many different muscles when we sneeze. These include stomach muscles, throat muscles, and eye muscles. Remember, our eyes always close during a sneeze.<br>\
 A sneeze begins when something gets inside your nose, like a tiny particle of dust. Your nose sends a message to your brain. Your brain sends messages to the muscles, getting them to work together in the correct order. When you sneeze, the dust that was in your nose flies out as fast as 100 miles an hour! Usually something like dust or cold air makes us sneeze, but some people sneeze whenever they look at the sun. Some people think that your heart stops when you sneeze. Actually, it really doesn't, but sometimes it might feel like it does.<br>\
 After someone sneezes, people often say 'Bless you,' or 'God bless you'. To bless someone means to wish them good and special things. Why do people say this? Long ago, people believed that this saying kept bad things from flying down your throat. Another story is that people thought this saying would help keep the person who sneezed from getting a very serious disease called the plague. At that time, the plague was killing thousands of people. It was thought that saying 'God bless you' would protect people from getting this awful disease. Today, the saying is simply a nice way to wish someone well."
-	,vi:"Bài 32 Tại sao chúng ta hắt hơi? <br>\
-Hắt hơi là một điều rất thú vị. Chúng ta sử dụng nhiều cơ khác nhau khi hắt hơi. Bao gồm cơ bụng, cơ họng và cơ mắt. Hãy nhớ rằng, mắt chúng ta luôn nhắm lại khi hắt hơi.<br>\
+	,vi:"Hắt hơi là một điều rất thú vị. Chúng ta sử dụng nhiều cơ khác nhau khi hắt hơi. Bao gồm cơ bụng, cơ họng và cơ mắt. Hãy nhớ rằng, mắt chúng ta luôn nhắm lại khi hắt hơi.<br>\
 Hắt hơi bắt đầu khi có thứ gì đó lọt vào mũi bạn, chẳng hạn như một hạt bụi nhỏ. Mũi bạn gửi một thông điệp đến não. Não bạn gửi thông điệp đến các cơ, khiến chúng hoạt động cùng nhau theo đúng thứ tự. Khi bạn hắt hơi, bụi trong mũi bạn bay ra ngoài với tốc độ lên tới 100 dặm một giờ! Thông thường, thứ gì đó như bụi hoặc không khí lạnh khiến chúng ta hắt hơi, nhưng một số người hắt hơi bất cứ khi nào họ nhìn vào mặt trời. Một số người nghĩ rằng tim bạn ngừng đập khi bạn hắt hơi. Thực ra, không phải vậy, nhưng đôi khi bạn có thể cảm thấy như vậy.<br>\
 Sau khi ai đó hắt hơi, mọi người thường nói 'Chúa phù hộ bạn' hoặc 'Chúa phù hộ bạn'. Chúc phúc cho ai đó có nghĩa là chúc họ những điều tốt đẹp và đặc biệt. Tại sao mọi người lại nói thế? Từ lâu, mọi người tin rằng câu nói này sẽ ngăn những điều xấu bay xuống cổ họng bạn. Một câu chuyện khác là mọi người nghĩ rằng câu nói này sẽ giúp người hắt hơi không mắc phải một căn bệnh rất nghiêm trọng gọi là bệnh dịch hạch. Vào thời điểm đó, bệnh dịch hạch đã giết chết hàng ngàn người. Người ta nghĩ rằng nói 'Chúa phù hộ bạn' sẽ bảo vệ mọi người khỏi căn bệnh khủng khiếp này. Ngày nay, câu nói này chỉ đơn giản là một cách hay để chúc ai đó khỏe mạnh."
 	,voca:"",
 },
 {
-	title:"Unit 33 Skiing and Snowboarding",
-	en:"Unit 33 Skiing and Snowboarding<br>\
-My name is Michael Bryce, and I love to ski and snowboard. I am 16 years old, and I have been skiing since I was five, and snowboarding since I was eight. Both my parents like skiing, and my older brother likes snowboarding.<br>\
+	unit:33,
+	title:"Skiing and Snowboarding",
+	en:"My name is Michael Bryce, and I love to ski and snowboard. I am 16 years old, and I have been skiing since I was five, and snowboarding since I was eight. Both my parents like skiing, and my older brother likes snowboarding.<br>\
 In my opinion, snowboarding is more fun and exciting than skiing. When I ski, it feels really easy to control where I go and how I move. The ski poles make it very simple to change my direction. There are no poles in snowboarding, however, so when you snowboard, you have to understand the snow very well to make sure you don't fall. The feeling I get while I'm snowboarding is more exciting than when I'm skiing, because I like having less control. I enjoy the challenge. I never know what's going to happen. This makes it more exciting!<br>\
 Some people think that the reduced amount of control in snowboarding makes the sport more dangerous. But in my opinion, snowboarding is actually safer than skiing, because when you ski, you are standing on two skis. If you fall while on skis, it is very easy to break your bones by getting your skis stuck in the snow. On a snowboard, your legs stay together even when you fall. While I still love to ski, I like snowboarding much better. It is more fun and exciting, and maybe even safer, than skiing."
-	,vi:"Bài 33 Trượt tuyết và trượt ván trên tuyết<br>\
-Tôi tên là Michael Bryce, và tôi thích trượt tuyết và trượt ván trên tuyết. Tôi 16 tuổi, và tôi đã trượt tuyết từ năm năm tuổi, và trượt ván trên tuyết từ năm tám tuổi. Cả bố mẹ tôi đều thích trượt tuyết, và anh trai tôi thích trượt ván trên tuyết.<br>\
+	,vi:"Tôi tên là Michael Bryce, và tôi thích trượt tuyết và trượt ván trên tuyết. Tôi 16 tuổi, và tôi đã trượt tuyết từ năm năm tuổi, và trượt ván trên tuyết từ năm tám tuổi. Cả bố mẹ tôi đều thích trượt tuyết, và anh trai tôi thích trượt ván trên tuyết.<br>\
 Theo tôi, trượt ván trên tuyết vui hơn và thú vị hơn trượt tuyết. Khi trượt tuyết, tôi cảm thấy rất dễ kiểm soát hướng đi và cách di chuyển. Gậy trượt tuyết giúp tôi dễ dàng thay đổi hướng đi. Tuy nhiên, trượt ván trên tuyết không có gậy, vì vậy khi trượt ván trên tuyết, bạn phải hiểu rõ về tuyết để đảm bảo không bị ngã. Cảm giác khi trượt ván trên tuyết thú vị hơn khi trượt tuyết, vì tôi thích ít kiểm soát hơn. Tôi thích thử thách. Tôi không bao giờ biết điều gì sẽ xảy ra. Điều này khiến nó thú vị hơn!<br>\
 Một số người cho rằng việc giảm khả năng kiểm soát khi trượt ván trên tuyết khiến môn thể thao này trở nên nguy hiểm hơn. Nhưng theo tôi, trượt ván trên tuyết thực sự an toàn hơn trượt tuyết, vì khi bạn trượt tuyết, bạn đang đứng trên hai ván trượt. Nếu bạn ngã khi đang trượt tuyết, rất dễ gãy xương do ván trượt của bạn bị kẹt trong tuyết. Trên ván trượt tuyết, hai chân của bạn vẫn khép lại với nhau ngay cả khi bạn ngã. Mặc dù tôi vẫn thích trượt tuyết, nhưng tôi thích trượt ván trên tuyết hơn nhiều. Nó vui hơn và thú vị hơn, và thậm chí có thể an toàn hơn, so với trượt tuyết."
 	,voca:"",
 },
 {
-	title:"Unit 34 A Nice Cup of Tea",
-	en:"Unit 34 A Nice Cup of Tea<br>\
-M: Could I offer you a cup of tea?<br>\
+	unit:34,
+	title:"A Nice Cup of Tea",
+	en:"M: Could I offer you a cup of tea?<br>\
 W: Yes, thank you very much. What kind do you have?<br>\
 M: I have Earl Grey, English Breakfast, Irish Breakfast, and Darjeeling.<br>\
 W: Those are all black teas. Do you have any green tea?<br>\
@@ -601,8 +585,7 @@ W:Really? Which wars?<br>\
 M: The American Revolution.<br>\
 W: The American Revolution had nothing to do with tea!<br>\
 M: One of the things that started the Revolutionary War was an incident where a group of Americans dumped a British shipment of tea into the ocean in Boston. This was called the Boston Tea Party, and it had nothing to do with green tea!"
-	,vi:"Bài 34 Một tách trà ngon<br>\
-M: Tôi có thể mời bạn một tách trà không?<br>\
+	,vi:"M: Tôi có thể mời bạn một tách trà không?<br>\
 W: Vâng, cảm ơn bạn rất nhiều. Bạn có loại nào?<br>\
 M: Tôi có Earl Grey, English Breakfast, Irish Breakfast và Darjeeling.<br>\
 W: Tất cả đều là trà đen. Bạn có trà xanh không?<br>\
@@ -620,20 +603,19 @@ M: Một trong những sự kiện khởi đầu cho Chiến tranh Cách mạng 
 	,voca:"",
 }
 ,{
-	title:"Unit 35 The Injury",
-	en:"Unit 35 The Injury<br>\
-I've just returned from the doctor's office, and he told me that because of my injury I will have to miss the next two weeks of basketball. I'm really disappointed! Last night, I hurt my ankle during a very exciting game against West High School. It was five minutes before the end of the game, the score was 60-60, I had the ball, and I heard my coach shouting at me to shoot.<br>\
+	unit:35,
+	title:"The Injury",
+	en:"I've just returned from the doctor's office, and he told me that because of my injury I will have to miss the next two weeks of basketball. I'm really disappointed! Last night, I hurt my ankle during a very exciting game against West High School. It was five minutes before the end of the game, the score was 60-60, I had the ball, and I heard my coach shouting at me to shoot.<br>\
 So I started to jump, but suddenly I found myself lying flat on my back on the court! A West High player had accidentally knocked me down. I tried to stand up, but my ankle hurt so much that I was unable to walk. Two of my teammates had to help me leave the court. My ankle started to swell up, so the team doctor brought me a bag of ice to put on it. The ice was cold, but it felt good on my ankle.<br>\
 When the swelling on my ankle reduced a little, my coach asked the doctor if he thought I would be able to play any more. But the doctor replied that I would have to sit out the rest of the game and come to see him the next day. Not only did I receive an injury, but we also lost the game by a score of 68-66. What a disappointing night!"
-	,vi:"Bài 35 Chấn thương<br>\
-Tôi vừa trở về từ phòng khám bác sĩ, và bác sĩ nói rằng vì chấn thương nên tôi sẽ phải nghỉ hai tuần chơi bóng rổ tiếp theo. Tôi thực sự thất vọng! Tối qua, tôi bị thương ở mắt cá chân trong một trận đấu rất thú vị với trường West High. Còn năm phút nữa là kết thúc trận đấu, tỷ số là 60-60, tôi có bóng và nghe thấy huấn luyện viên hét bảo tôi ném.<br>\
+	,vi:"Tôi vừa trở về từ phòng khám bác sĩ, và bác sĩ nói rằng vì chấn thương nên tôi sẽ phải nghỉ hai tuần chơi bóng rổ tiếp theo. Tôi thực sự thất vọng! Tối qua, tôi bị thương ở mắt cá chân trong một trận đấu rất thú vị với trường West High. Còn năm phút nữa là kết thúc trận đấu, tỷ số là 60-60, tôi có bóng và nghe thấy huấn luyện viên hét bảo tôi ném.<br>\
 Vì vậy, tôi bắt đầu nhảy, nhưng đột nhiên tôi thấy mình nằm ngửa trên sân! Một cầu thủ của trường West High đã vô tình đánh tôi ngã. Tôi cố gắng đứng dậy, nhưng mắt cá chân của tôi đau đến mức không thể đi lại được. Hai đồng đội của tôi phải giúp tôi rời khỏi sân. Mắt cá chân của tôi bắt đầu sưng lên, vì vậy bác sĩ của đội đã mang cho tôi một túi đá để chườm. Đá lạnh, nhưng cảm giác dễ chịu ở mắt cá chân của tôi.<br>\
 Khi vết sưng ở mắt cá chân của tôi giảm bớt một chút, huấn luyện viên của tôi đã hỏi bác sĩ rằng ông ấy nghĩ tôi có thể chơi được nữa không. Nhưng bác sĩ trả lời rằng tôi sẽ phải ngồi ngoài trong phần còn lại của trận đấu và đến gặp ông ấy vào ngày hôm sau. Tôi không chỉ bị thương mà chúng tôi còn thua trận với tỷ số 68-66. Thật là một đêm đáng thất vọng!"
 	,voca:"",
 },{
-	title:"Unit 36 Moving",
-	en:"Unit 36 Moving<br>\
-M: Hey, Sheena! I haven't seen you for ages. What's new? Where are you going with all those suitcases? <br>\
+	unit:36,
+	title:"Moving",
+	en:"M: Hey, Sheena! I haven't seen you for ages. What's new? Where are you going with all those suitcases? <br>\
 W: Hi Mark, it's been a while since the last time we ran into each other! I'm bringing these suitcases home to pack because my family is preparing to move across the bay to Port Anderson.<br>\
 M: Really? How are you going to transport all your furniture?<br>\
 W: I'm not sure. I considered hiring a moving van, but someone told me it might be more convenient to rent a huge container and ship everything across. The details are a bit complicated because we've got so many boxes!<br>\
@@ -643,8 +625,7 @@ M: Well, however you get it there, it sounds like you'll need help once you get 
 W: Next Saturday.<br>\
 M: I'm free that day, so I'll help you out! I've still got my small truck, so I can haul some stuff for you, too.<br>\
 W: Thanks, Mark. That would be great!"
-	,vi:"Đơn vị 36 Chuyển nhà <br>\
-M: Này, Sheena! Lâu lắm rồi tôi không gặp bạn. Có chuyện gì thế? Bạn định mang mấy cái vali đó đi đâu thế? <br>\
+	,vi:"M: Này, Sheena! Lâu lắm rồi tôi không gặp bạn. Có chuyện gì thế? Bạn định mang mấy cái vali đó đi đâu thế? <br>\
 W: Chào Mark, lâu lắm rồi chúng ta mới gặp lại nhau! Tôi mang mấy cái vali này về nhà để đóng gói vì gia đình tôi đang chuẩn bị chuyển qua vịnh đến Port Anderson.<br>\
 M: Thật sao? Bạn định vận chuyển hết đồ đạc của mình bằng cách nào?<br>\
 W: Tôi không chắc. Tôi đã cân nhắc đến việc thuê xe tải chuyển nhà, nhưng có người bảo tôi rằng thuê một container lớn và chuyển mọi thứ qua đó có thể tiện hơn. Chi tiết hơi phức tạp vì chúng tôi có quá nhiều hộp!<br>\
@@ -656,21 +637,20 @@ M: Tôi rảnh vào ngày đó, vì vậy tôi sẽ giúp bạn! Tôi vẫn còn
 W: Cảm ơn, Mark. Điều đó thật tuyệt!"
 	,voca:"",
 },{
-	title:"Unit 37 Wear Your Seat Belt!",
-	en:"Unit 37 Wear Your Seat Belt!<br>\
-Some people think the government should require passengers by law to wear seat belts in cars and taxis. They say that seat belts save lives and money. Statistics show that 60 percent of people killed in car accidents were not wearing seat belts. Statistics also show that most people who wear seat belts survive. In the past 30 years, seat belts have saved almost $600 billion in medical costs. The average car accident costs $820 for each person in the United States. Some states require people to wear seat belts. In those states, about 80 percent of the passengers follow the law.<br>\
+	unit:37,
+	title:"Wear Your Seat Belt!",
+	en:"Some people think the government should require passengers by law to wear seat belts in cars and taxis. They say that seat belts save lives and money. Statistics show that 60 percent of people killed in car accidents were not wearing seat belts. Statistics also show that most people who wear seat belts survive. In the past 30 years, seat belts have saved almost $600 billion in medical costs. The average car accident costs $820 for each person in the United States. Some states require people to wear seat belts. In those states, about 80 percent of the passengers follow the law.<br>\
 However, other people think it's wrong to require seat belt use by law. They say that passengers should decide for themselves. Many of these people agree that seat belts save lives, but they don't think the government has the right to force people to wear them. They point out that smoking cigarettes is also unhealthy. But the government lets adults smoke if they want to. Leaders cannot force people to do what's good, they argue. It's better to educate people so they will want to wear seat belts.<br>\
 Those who want seat belt laws say that the right to public safety is more important than the individual's right to free choice. But their opponents say people must be careful to protect their individual rights. They should decide how to live their lives, not the government. What is your opinion on this?"
-	,vi:"Bài 37 Thắt dây an toàn!<br>\
-Một số người cho rằng chính phủ nên yêu cầu hành khách thắt dây an toàn theo luật trên ô tô và taxi. Họ nói rằng thắt dây an toàn cứu mạng người và tiền bạc. Thống kê cho thấy 60 phần trăm số người tử vong trong các vụ tai nạn ô tô không thắt dây an toàn. Thống kê cũng cho thấy hầu hết những người thắt dây an toàn đều sống sót. Trong 30 năm qua, thắt dây an toàn đã tiết kiệm được gần 600 tỷ đô la chi phí y tế. Tai nạn ô tô trung bình gây thiệt hại 820 đô la cho mỗi người ở Hoa Kỳ. Một số tiểu bang yêu cầu mọi người phải thắt dây an toàn. Ở những tiểu bang đó, khoảng 80 phần trăm hành khách tuân thủ luật.<br>\
+	,vi:"Một số người cho rằng chính phủ nên yêu cầu hành khách thắt dây an toàn theo luật trên ô tô và taxi. Họ nói rằng thắt dây an toàn cứu mạng người và tiền bạc. Thống kê cho thấy 60 phần trăm số người tử vong trong các vụ tai nạn ô tô không thắt dây an toàn. Thống kê cũng cho thấy hầu hết những người thắt dây an toàn đều sống sót. Trong 30 năm qua, thắt dây an toàn đã tiết kiệm được gần 600 tỷ đô la chi phí y tế. Tai nạn ô tô trung bình gây thiệt hại 820 đô la cho mỗi người ở Hoa Kỳ. Một số tiểu bang yêu cầu mọi người phải thắt dây an toàn. Ở những tiểu bang đó, khoảng 80 phần trăm hành khách tuân thủ luật.<br>\
 Tuy nhiên, những người khác cho rằng việc yêu cầu thắt dây an toàn theo luật là sai. Họ cho rằng hành khách nên tự quyết định. Nhiều người trong số họ đồng ý rằng thắt dây an toàn cứu mạng người, nhưng họ không nghĩ rằng chính phủ có quyền buộc mọi người phải thắt dây an toàn. Họ chỉ ra rằng hút thuốc lá cũng không tốt cho sức khỏe. Nhưng chính phủ cho phép người lớn hút thuốc nếu họ muốn. Họ lập luận rằng các nhà lãnh đạo không thể ép buộc mọi người làm điều tốt. Tốt hơn là giáo dục mọi người để họ muốn thắt dây an toàn.<br>\
 Những người muốn có luật thắt dây an toàn cho rằng quyền an toàn công cộng quan trọng hơn quyền tự do lựa chọn của cá nhân. Nhưng những người phản đối họ cho rằng mọi người phải cẩn thận để bảo vệ quyền cá nhân của họ. Họ nên quyết định cách sống của mình, chứ không phải chính phủ. Bạn nghĩ gì về điều này?"
 	,voca:"",
 },
 {
-	title:"Unit 38 Going on Vacation",
-	en:"Unit 38 Going on Vacation<br>\
-W: Hey, Carl, I'm surprised to see you here! Jeremy told me that you were on vacation.<br>\
+	unit:38,
+	title:"Going on Vacation",
+	en:"W: Hey, Carl, I'm surprised to see you here! Jeremy told me that you were on vacation.<br>\
 M: Hi, Shelly. We were visiting some relatives in Sydney, but we returned last night.<br>\
 W: Oh, I've wanted to go to Australia ever since I was little! Tell me what it was like.<br>\
 M: It was fantastic! We fed kangaroos, walked through rainforests, and swam in the ocean. What was really great was when we took a train to Brisbane to see the Great Barrier Reef.<br>\
@@ -681,8 +661,7 @@ M: What did you like best about Thailand?<br>\
 W: Well, the food was delicious, and riding elephants was exciting, but I'd have to say that the beach was the best part. The only unpleasant part of the trip was after we got home, when we found out that the airline had lost some of our luggage. My father's suitcase and my sister's backpack were missing.<br>\
 M: So, the airline lost two pieces of luggage? How long did it take you to get them back?<br>\
 W: Three days, but the good news is that when they finally found them, they delivered them right to our front door."
-	,vi:"Bài 38 Đi nghỉ mát<br>\
-W: Này, Carl, tôi ngạc nhiên khi thấy bạn ở đây! Jeremy nói với tôi rằng bạn đang đi nghỉ mát.<br>\
+	,vi:"W: Này, Carl, tôi ngạc nhiên khi thấy bạn ở đây! Jeremy nói với tôi rằng bạn đang đi nghỉ mát.<br>\
 M: Chào, Shelly. Chúng tôi đã đến thăm một số người họ hàng ở Sydney, nhưng chúng tôi đã trở về vào tối qua.<br>\
 W: Ồ, tôi đã muốn đến Úc từ khi tôi còn nhỏ! Kể cho tôi nghe nơi đó như thế nào.<br>\
 M: Thật tuyệt vời! Chúng tôi đã cho kangaroo ăn, đi bộ qua các khu rừng nhiệt đới và bơi ở biển. Điều thực sự tuyệt vời là khi chúng tôi đi tàu đến Brisbane để ngắm Rạn san hô Great Barrier.<br>\
@@ -696,25 +675,23 @@ W: Ba ngày, nhưng tin tốt là khi cuối cùng họ tìm thấy chúng, họ
 	,voca:"",
 },
 {
-	title:"Unit 39 Traveling by Airplane",
-	en:"Unit 39 Traveling by Airplane<br>\
-Airplane travelers can choose between three kinds of tickets: first class, business class, and economy class. Most people buy economy class tickets. They are cheaper, so travelers can go to more places more often. Business class is more expensive, with good seats and good service. First class is very expensive, but offers very comfortable seats and excellent service.<br>\
+	unit:39,
+	title:"Traveling by Airplane",
+	en:"Airplane travelers can choose between three kinds of tickets: first class, business class, and economy class. Most people buy economy class tickets. They are cheaper, so travelers can go to more places more often. Business class is more expensive, with good seats and good service. First class is very expensive, but offers very comfortable seats and excellent service.<br>\
 In economy class, the seats are small and close together. There is not much leg room. In first class, the seats are huge and wider apart. There is lots of room for passengers to stretch their legs. Economy class passengers usually must all watch the same movie. First class passengers have their own TVs, and each person can watch different movies. Economy class passengers eat cheaper food. First class passengers are served delicious, fresh food. It is difficult to sleep in economy class because of the small seats and all the noise. In first class, the large seats can be pushed back to make a comfortable bed. There is a curtain between sections, so it is nice and quiet.<br>\
 Economy class is a good choice for short flights within the same country. Business class or first class is a good choice for business travelers taking an international flight across an ocean. These people often have to get off the plane and go right to work. For them, it is important to arrive fresh, rested, and ready for a full, exciting day."
-	,vi:"Bài 39 Du lịch bằng máy bay<br>\
-Hành khách đi máy bay có thể lựa chọn giữa ba loại vé: hạng nhất, hạng thương gia và hạng phổ thông. Hầu hết mọi người đều mua vé hạng phổ thông. Chúng rẻ hơn, vì vậy hành khách có thể đến nhiều nơi hơn thường xuyên hơn. Hạng thương gia đắt hơn, có ghế ngồi tốt và dịch vụ tốt. Hạng nhất rất đắt, nhưng có ghế ngồi rất thoải mái và dịch vụ tuyệt vời.<br>\
+	,vi:"Hành khách đi máy bay có thể lựa chọn giữa ba loại vé: hạng nhất, hạng thương gia và hạng phổ thông. Hầu hết mọi người đều mua vé hạng phổ thông. Chúng rẻ hơn, vì vậy hành khách có thể đến nhiều nơi hơn thường xuyên hơn. Hạng thương gia đắt hơn, có ghế ngồi tốt và dịch vụ tốt. Hạng nhất rất đắt, nhưng có ghế ngồi rất thoải mái và dịch vụ tuyệt vời.<br>\
 Ở hạng phổ thông, ghế ngồi nhỏ và gần nhau. Không có nhiều chỗ để chân. Ở hạng nhất, ghế ngồi rất lớn và rộng hơn. Có nhiều chỗ để hành khách duỗi chân. Hành khách hạng phổ thông thường phải xem cùng một bộ phim. Hành khách hạng nhất có TV riêng và mỗi người có thể xem các bộ phim khác nhau. Hành khách hạng phổ thông được ăn đồ ăn rẻ hơn. Hành khách hạng nhất được phục vụ đồ ăn ngon, tươi. Rất khó để ngủ ở hạng phổ thông vì ghế ngồi nhỏ và quá ồn ào. Ở hạng nhất, những chiếc ghế lớn có thể được đẩy ra sau để tạo thành một chiếc giường thoải mái. Có một tấm rèm giữa các khoang, vì vậy rất đẹp và yên tĩnh.<br>\
 Hạng phổ thông là lựa chọn tốt cho các chuyến bay ngắn trong cùng một quốc gia. Hạng thương gia hoặc hạng nhất là lựa chọn tốt cho những du khách đi công tác thực hiện chuyến bay quốc tế qua đại dương. Những người này thường phải xuống máy bay và đi thẳng đến nơi làm việc. Đối với họ, điều quan trọng là phải đến nơi trong trạng thái tươi tỉnh, nghỉ ngơi và sẵn sàng cho một ngày trọn vẹn, thú vị."
 	,voca:"",
 },
 {
-	title:"Unit 40 A Family Cruise",
-	en:"Unit 40 A Family Cruise<br>\
-Family Cruise Line is offering a new, exciting cruise that the whole family can enjoy! We have a special deal for families all year round on our Family Caribbean Cruise. This special one-week cruise leaves from Miami, Florida and stops at six fantastic Caribbean islands. There is so much for the entire family to see and do! <br>\
+	unit:40,
+	title:"A Family Cruise",
+	en:"Family Cruise Line is offering a new, exciting cruise that the whole family can enjoy! We have a special deal for families all year round on our Family Caribbean Cruise. This special one-week cruise leaves from Miami, Florida and stops at six fantastic Caribbean islands. There is so much for the entire family to see and do! <br>\
 On board, we have a variety of great food for breakfast, lunch, and dinner. We also have lots of interesting and fun activities. There are music and dance shows every evening. We have a movie theater and a KTV bar. For kids, we have shows each day with their favorite TV friends like Mickey Mouse, Goofy, and Elmo. Playing with television characters isn't the only activity children will enjoy. They can play volleyball, swim in one of our three huge pools, or take dancing and art classes. There's so much variety, the kids can try a new activity each day. Mom and Dad can join them, or rest in lounge chairs on our wide ship deck.<br>\
 On shore, you can shop, swim, and enjoy fresh food while you learn all about island life. With four to seven hours on shore each day, you'll have plenty of time to explore each island. Does this sound exciting? It is! So, when it's time to plan your next vacation, remember Family Cruise Line. It will be a trip your family will never forget!"
-	,vi:"Đơn vị 40 Du thuyền gia đình<br>\
-Family Cruise Line đang cung cấp một chuyến du ngoạn mới, thú vị mà cả gia đình có thể tận hưởng! Chúng tôi có một ưu đãi đặc biệt cho các gia đình quanh năm trên Du thuyền gia đình vùng Caribe. Chuyến du ngoạn đặc biệt kéo dài một tuần này khởi hành từ Miami, Florida và dừng tại sáu hòn đảo Caribe tuyệt đẹp. Có rất nhiều thứ để cả gia đình xem và làm! <br>\
+	,vi:"Family Cruise Line đang cung cấp một chuyến du ngoạn mới, thú vị mà cả gia đình có thể tận hưởng! Chúng tôi có một ưu đãi đặc biệt cho các gia đình quanh năm trên Du thuyền gia đình vùng Caribe. Chuyến du ngoạn đặc biệt kéo dài một tuần này khởi hành từ Miami, Florida và dừng tại sáu hòn đảo Caribe tuyệt đẹp. Có rất nhiều thứ để cả gia đình xem và làm! <br>\
 Trên tàu, chúng tôi có nhiều món ăn tuyệt vời cho bữa sáng, bữa trưa và bữa tối. Chúng tôi cũng có nhiều hoạt động thú vị và vui nhộn. Có chương trình ca nhạc và khiêu vũ vào mỗi buổi tối. Chúng tôi có rạp chiếu phim và quầy bar KTV. Đối với trẻ em, chúng tôi có các chương trình biểu diễn mỗi ngày với những người bạn truyền hình yêu thích của chúng như Mickey Mouse, Goofy và Elmo. Chơi với các nhân vật truyền hình không phải là hoạt động duy nhất mà trẻ em thích. Chúng có thể chơi bóng chuyền, bơi trong một trong ba hồ bơi lớn của chúng tôi hoặc tham gia các lớp học khiêu vũ và nghệ thuật. Có rất nhiều hoạt động đa dạng, trẻ em có thể thử một hoạt động mới mỗi ngày. Bố mẹ có thể tham gia cùng họ hoặc nghỉ ngơi trên ghế dài trên boong tàu rộng của chúng tôi.<br>\
 Trên bờ, bạn có thể mua sắm, bơi lội và thưởng thức đồ ăn tươi ngon trong khi tìm hiểu mọi thứ về cuộc sống trên đảo. Với bốn đến bảy giờ trên bờ mỗi ngày, bạn sẽ có nhiều thời gian để khám phá từng hòn đảo. Nghe có vẻ thú vị không? Thực sự là thú vị! Vì vậy, khi đến lúc lên kế hoạch cho kỳ nghỉ tiếp theo của bạn, hãy nhớ đến Family Cruise Line. Đó sẽ là chuyến đi mà gia đình bạn sẽ không bao giờ quên!"
 	,voca:"",

@@ -12,8 +12,10 @@ intimate (a) /ˈɪntɪmət/ thân mật<br>\
 ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
+burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
 betray (v) /bɪˈtreɪ/ phản bội<br>\
 affordable (a) /əˈfɔːrdəbl/ có thể chi trả<br>\
+landfill (n) /ˈlændfɪl/ bãi rác<br>\
 arrive (v) /əˈraɪv/ đến<br>\
 rebellious (a) /rɪˈbeljəs/ nổi loạn, bạo động<br>\
 romance (a) /ˈrəʊmæns/ lãng mạn<br>\
@@ -21,6 +23,7 @@ regret (v) /rɪˈɡret/ hối tiếc<br>\
 transportation (n) /trænspərˈteɪʃn/ vận tải<br>\
 particular (a) /pərˈtɪkjələr/ cụ thể<br>\
 horror (a) /ˈhɔːrər/ kinh dị<br>\
+cruise (n,v)  /kruːz/ a journey by ship or boat<br>\
 masterpiece (a) /ˈstaɪlɪʃ/ kiệt tác<br>\
 stylish (a) /ˈstaɪlɪʃ/ sành điệu<br>\
 recognizable (a) /ˈrekəɡnaɪzəbl/ có thể nhận ra<br>\

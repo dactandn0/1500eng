@@ -199,7 +199,7 @@ $scope.Index_NoteVoca_Speak = function (word) {
 // vocaEbook Touch
 $scope.vocaEbookSpeech = function (event) {
   event.stopPropagation()
-  ngClickSpeechShowToast(event.target.innerText)
+  ngClickSpeechShowToast(event.target.innerText.toLowerCase())
 }
 
 // ng-click word to speech

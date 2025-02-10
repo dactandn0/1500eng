@@ -365,7 +365,7 @@ Nếu bạn có bất kỳ khiếu nại nghiêm trọng nào, bạn nên gọi 
 17N. The Minnesota Multi-Housing Association 'Hot Line' offers help and service seven days a week."
 },{
 	unit:"9"
-	,title:"All about Renting"
+	,title:"All about Renting 2"
 	,en:"SAFEIY - It is important to all of us to feel safe and secure in our homes. First of all, your neighbours and the building manager begin to know about your schedule, and any irregularity would make them question any activity that was out of pattern. It is better for you to notify your neighbours or the manager that you will be gone for a few days and ask them to pick up your mail or paper.<br>\
 A building with controlled entry systems seems the ultimate in safety, but not when residents carelessly let anyone through the door as they enter, or let anyone in who rings with a particular reason to enter the building.<br>\
 Fire protection in the form of alarm systems and many neighbours to warn you if there is a fire in the building is extra security in an apartment building.<br>\

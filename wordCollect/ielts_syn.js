@@ -221,7 +221,7 @@ const SynonymData = [
 	mean:"từ đó trở đi"
 },
 {
-	words:"definitely /ˈdefɪnətli/|certainly /ˈsɜːrtnli/|surely /ˈʃʊrli/",
+	words:"definitely /ˈdefɪnətli/|certainly /ˈsɜːrtnli/ | surely /ˈʃʊrli/ | inevitably /ɪnˈevɪtəbli/",
 	type:"adv",
 	mean:"chắc chắn"
 },

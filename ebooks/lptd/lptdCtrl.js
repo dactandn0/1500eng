@@ -14,10 +14,18 @@ $scope.storyIdx = 0;
 
 radioCDChange = function (cd) {
 	switch (cd) {
-		case 1: $scope.stories = lptd_cd1_stories; break;
-		case 2: $scope.stories = lptd_cd2_stories; break;
-		case 3: $scope.stories = lptd_cd3_stories; break;
-		case 4: $scope.stories = lptd_cd4_stories; break;
+		case 1: $scope.stories = lptd_cd1_stories; 
+		makeVocaEbook($rootScope, lptd_cd1_stories)
+		break;
+		case 2: $scope.stories = lptd_cd2_stories;
+		makeVocaEbook($rootScope, lptd_cd2_stories)
+		break;
+		case 3: $scope.stories = lptd_cd3_stories; 
+		makeVocaEbook($rootScope, lptd_cd3_stories)
+		break;
+		case 4: $scope.stories = lptd_cd4_stories;
+		makeVocaEbook($rootScope, lptd_cd4_stories)
+		break;
 	}
 	Helper_saveDB("lptd_cd", cd);
 	$scope.cd = cd;
@@ -68,9 +76,6 @@ $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 	makeVocaEbook($rootScope, 
 		lptd_cd1_stories,
-		lptd_cd2_stories,
-		lptd_cd3_stories,
-		lptd_cd4_stories
 	)
 });
 

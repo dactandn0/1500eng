@@ -253,7 +253,42 @@ any + N đếm được số nhiều (nhiều hơn một)<br>\
 - A large number of: một số lượng lớn<br>\
 - A multitude of: rất nhiều<br>\
 - A great deal of: rất nhiều (uncountable)",
-},
+},{
+	title:"HOW TO WRITE A PARAGRAPH"
+	,en:"Topic: The benefits of learning online at universities I believe that online university courses are a positive development for various reasons. Firstly, they allow learners to study in a flexible way. This means they can work whenever and wherever they feel convenient and cover their materials at their own pace. Secondly, online learning offers open access to anybody who is willing to (sẵn sàng) study, regardless of (bất kể) age, location, ability and background. For example, my uncle, who is 65 years old, has recently enrolled in an online MBA course in a different country, which would have been impossible in the days before Internet-based education.<br>\
+<br>\
+TOPIC SENTENCE:<br>\
++ Câu chủ đề - thông báo cho người đọc biết ý chính của đoạn<br>\
++ Cần thoả mãn 2 yếu tố ở câu chủ đề:<br>\
+- Nhắc lại topic<br>\
+- Main idea<br>\
+<br>\
+SUPPORTING SENTENCE:<br>\
+Reason: <br>\
+This is because<br>\
+One reason for this is that/<br>\
+Noun is due to<br>\
+because of + Noun<br>\
+Result: <br>\
+Đứng đầu câu: As a result, Consequently , + CLAUSE<br>\
+Đứng giữa câu: S + V + O, thereby/thus + V-ing,<br>\
+so S + V<br>\
+hence + Noun<br>\
+He studies hard, so he can have a better job in the future.<br>\
+He studies hard, thereby/ thus possibly having a better job in the future<br>\
+He studies hard, hence a better job in the future .<br>\
+He studied hard. As a result, he can have a better job in the future<br>\
+->Students should study hard, which helps them to have a better job in the future .<br>\
+->Students should study hard, possibly helping them to have a better job in the future<br>\
+<br>\
+Example: <br>\
+Đứng đầu câu: For example, For instance <br>\
+Đứng giữa câu: ,such as A and B/ such as A,B, and C.<br>\
+such as + N/V-ing<br>\
+<br>\
+Add ideas: Moreover, Furthermore, In addition, Beside that"
+	,note:""
+}
 
 
 

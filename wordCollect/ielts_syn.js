@@ -32,6 +32,10 @@ const SynonymData = [
 	words:"teenager|youth /juːθ/",
 	type:"n",
 	mean:"thanh thiếu niên"
+},{
+	words:"responsibility /rɪˌspɑːnsəˈbɪləti/ |obligation",
+	type:"n",
+	mean:"(sự chịu) trách nhiệm"
 },
 {
 	words:"ignore|put aside|neglect /nɪˈɡlekt/",

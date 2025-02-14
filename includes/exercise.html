@@ -5,6 +5,11 @@
 	</p>
 </div>
 
+<div ng-if="story.transExercise && story.transExercise.trim().length>0" >
+	<mark class="text-primary">Translate</mark>
+	<span>{{story.transExercise}}</span>
+</div>
+
 <div ng-repeat="img in story.images track by $index">
 	<img src="{{img_root}}/{{img}}" class="img-fluid mb-2">
 </div>

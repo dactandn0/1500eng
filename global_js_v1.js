@@ -89,7 +89,7 @@ document.write('<small class="note">\
 	' + UNCOUNT_TAG_BEGIN + 'uncount.n' + UNCOUNT_TAG_END + ' <br>\
 	' + PHRA_VERB_TAG_BEGIN + 'phraVerb' + PHRA_VERB_TAG_END + ' <br>\
 	' + SPECIAL_WORDS_HL_TAG_BEGIN + '(Special)' + SPECIAL_WORDS_HL_TAG_END + ' <br>\
-	<u>u:</u> n = v<br>\
+	' + SAME_N_V_TAG_BEGIN + 'n = v' + SAME_N_V_TAG_END + ' <br>\
 	</small>'
 	);
 
@@ -189,10 +189,11 @@ function getFullTile(obj) {
 
 function processStory (story, isAlert = true) {
 	if (!story) return story;
-	if (!story.en || story.en.trim().length == 0) 
-		story.enShow = "Blank"
-	else
-		story.enShow = story.en;
+
+	var isBlank = !story.en || story.en.trim().length == 0;
+
+	if (isBlank)  story.enShow = "Blank"
+	else story.enShow = story.en;
 	
 	var enShow = story.enShow
 	var viShow = !story.vi ? "" : story.vi.trim()
@@ -244,17 +245,20 @@ function processStory (story, isAlert = true) {
 	}
 
 	var enAndVi = ''
-	if (bHasVi) 
+	if (!isBlank && bHasVi) 
 	{
-	var kBrTag = '<br>'
-	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
-	var viii = ''
-	var sentencesEn = enShow.match(rgSen);
-	var sentencesVi = '';
-	if (viShow) sentencesVi = viShow.match(rgSen);
-	if (sentencesEn.length === sentencesVi.length) 
-	{
-	} else if (isAlert) alert('sentencesEn.length !== sentencesVi.length')
+		var kBrTag = '<br>'
+		var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
+		var viii = ''
+		var sentencesEn = enShow.match(rgSen);
+		var sentencesVi = '';
+
+		if (viShow) sentencesVi = viShow.match(rgSen);
+
+		if (sentencesEn.length === sentencesVi.length) 
+		{
+		} else if (isAlert) alert('sentencesEn.length !== sentencesVi.length')
+
 		for (var i = 0; i < sentencesEn.length; i++) {
 			var enSen = sentencesEn[i]
 			var viSen = sentencesVi[i]
@@ -277,6 +281,7 @@ function processStory (story, isAlert = true) {
 				enAndVi += enSen + ' <i class="text-primary">' + viii  + '</i>'
 			}
 		}
+
 	} // end (bHasVi)
 	else enAndVi = enShow
 		

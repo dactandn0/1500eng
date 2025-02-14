@@ -13,6 +13,7 @@ ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
 burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
+addiction (n) /əˈdɪkʃn/ nghiện ngập<br>\
 betray (v) /bɪˈtreɪ/ phản bội<br>\
 affordable (a) /əˈfɔːrdəbl/ có thể chi trả<br>\
 landfill (n) /ˈlændfɪl/ bãi rác<br>\
@@ -501,7 +502,6 @@ striking (a) /ˈstraɪkɪŋ/ làm nổi bật<br>\
 flashy (a) /ˈflæʃi/ xa hoa, lòe loẹt<br>\
 gaudy (a) /ˈɡɔːdi/ xa hoa, lòe loẹt<br>\
 support (v) /səˈpɔːrt/ hỗ trợ<br>\
-responsibility (n) /rɪˌspɑːnsəˈbɪləti/ (sự chịu) trách nhiệm<br>\
 unite đoàn kết<br>\
 associate liên kết<br>\
 environment (n) /ɪnˈvaɪrənmənt/ môi trường<br>\

@@ -155,7 +155,8 @@ background-color: #a55;
 }
 /*SAME_N_V_TAG_BEGIN*/
 ._y_1z {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+  text-decoration-line: line-through;
 }
 ._y_2z {
   color: #FFBF00;

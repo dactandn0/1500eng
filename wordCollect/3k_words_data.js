@@ -1192,6 +1192,7 @@ frozen food (n) /ˈfroʊ.zən fuːd/ thực phẩm đông lạnh<br>\
 health food (n) /ˈhɛlθ fuːd/ thực phẩm tự nhiên<br>\
 distinctive (a) /dɪˈstɪŋk.tɪv/ đặc trưng, khác biệt<br>\
 flavor (n) /ˈfleɪ.vər/ hương vị<br>\
+diet (n) /'daɪ.ət/ chế độ ăn uống<br>\
 balanced diet (n) /ˈbæl.ənst ˈdaɪ.ət/ chế độ ăn uống cân bằng<br>\
 stale (a) /steɪl/ ôi, thiu<br>\
 burnt (a) /bɜːrnt/ cháy, khét<br>\

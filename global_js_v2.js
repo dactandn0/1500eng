@@ -102,16 +102,10 @@ function Helper_GetVocaFromWordFull(wordFull) {
 		return wordFull.split(kVERB_3_COL)[0];
 	}
 
-	var splitW = wordFull.trim().split(" ");
-
 	var result = "";
-	for (var i = 0; i < splitW.length; i++) {
-		var part = splitW[i].trim();
-		if (ValidateWord(part)) 
-			result +=  " " + part;
-		else break;
-	}
-	return result.trim();
+	result = wordFull.substring(0, wordFull.lastIndexOf(" "));
+	result = result.replace (/[\(\/].+/gi, '')
+	return result.trim()
 }
 
 // arrow up scroll

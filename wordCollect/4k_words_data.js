@@ -10,6 +10,7 @@ On top of that (idiom) hơn thế<br>\
 closest confidant (n) /ˈkɑːnfɪdænt/ người bạn tâm giao gần gũi nhất<br>\
 intimate (a) /ˈɪntɪmət/ thân mật<br>\
 ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
+growth (n) /ɡrəʊθ/ sự phát triển, sự tăng, phát dục<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
 burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
@@ -261,7 +262,7 @@ asleep (a) /əˈsliːp/ ngủ<br>\
 berry quả mọng<br>\
 collect thu thập<br>\
 compete cạnh tranh<br>\
-conversation cuộc trò chuyện<br>\
+conversation (n) /ˌkɑːnvərˈseɪʃn/ cuộc trò chuyện<br>\
 creature sinh vật<br>\
 decision (n) /dɪˈsɪʒn/ quyết định<br>\
 either hoặc<br>\
@@ -1017,9 +1018,8 @@ chain chuỗi<br>\
 distinct riêng biệt<br>\
 distinguish (v) /dɪˈstɪŋɡwɪʃ/ phân biệt<br>\
 dust bụi<br>\
-excitement sự phấn khích<br>\
-wholesome (a) = healthy<br>\
-heal chữa lành<br>\
+excitement (n) /ɪkˈsaɪtmənt/ sự phấn khích<br>\
+heal (v) /hiːl/ chữa lành<br>\
 <br>\
 inherit thừa hưởng<br>\
 manner cách thức<br>\

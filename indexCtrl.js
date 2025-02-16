@@ -209,39 +209,53 @@ $scope.Idx_n_L_WSp_ = function (event) {
   ngClickSpeechShowToast(touchedWord)
 }
 
-ngClickSpeechShowToast = function (touchedWord) 
+getToastMsg = function(txt)
 {
-  Text2Speech(touchedWord);
-
-  var result = IELTS_SYN_IsIn(touchedWord)
+  var result = IELTS_SYN_IsIn(txt)
   if (result !== '') {
-     doShowToast(result, true);
-     return;
+     return result;
   }
-  var found = false;
-  for (var i = 0; i < searchData.length; i++) {
-    var wordFull = searchData[i]
-    var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
-    if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) {
-        doShowToast(wordFull, true);
-        found = true;
-        break;
-    } else {  
-    }
+  for (var i = 0; i < searchData.length; i++) 
+    {
+      var wordFull = searchData[i]
+      var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
+
+      if (word === txt || Helper_IsFormOfWord(word, txt)) {
+          return wordFull;
+      }
   }
-  // not in DB
-  if (!found) {
-    doShowToast(touchedWord, false)
-  }
+  return txt
 }
 
-function doShowToast(wordFull, isInDB) {
-  if (Helper_IsWordSavedBefore(wordFull)) {
-       toastr.info(wordFull);
+ngClickSpeechShowToast = function (touchedWord) 
+{
+  var ignores = ['the','those', 'this','that']
+  var tWords = touchedWord.split(' ')
+  tWords = tWords.filter(function(ele) { 
+    return ele.length > 2  && !ignores.includes(ele)
+  });
+
+  var msg = getToastMsg(touchedWord)
+  if (msg == touchedWord && tWords.length > 1)
+  {
+    msg = ''
+    for (var i = 0; i < tWords.length; i++) {
+      msg += getToastMsg(tWords[i]) + '<br>'
+    }
+    
+  }
+  Text2Speech(touchedWord);
+  doShowToast(msg)
+}
+
+function doShowToast(content) 
+{
+  if (Helper_IsWordSavedBefore(content)) {
+       toastr.info(content);
        return;
   } 
-  saveFromToastrVal = wordFull;
-  toastr.info('<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>', wordFull, {
+  saveFromToastrVal = content;
+  toastr.info('<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>', content, {
     allowHtml: true
   });
 }

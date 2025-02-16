@@ -156,7 +156,9 @@ background-color: #a55;
 /*SAME_N_V_TAG_BEGIN*/
 ._y_1z {
 	/*text-decoration: underline;*/
-  text-decoration-line: line-through;
+ 	/*background: linear-gradient(180deg,rgba(255,255,255,0) 85%, #AAD0AE 50%);*/
+  color:#AAD113;
+  font-style: italic;
 }
 ._y_2z {
   color: #FFBF00;
@@ -275,7 +277,8 @@ input[type="range"]:focus::-moz-range-thumb {
 
 
 .color-anim {
-  animation: color-change 1s infinite;
+  /*animation: color-change 1s infinite;*/
+  background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #AAD0AE 50%);
 }
 
 @keyframes color-change {

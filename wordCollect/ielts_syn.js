@@ -67,6 +67,10 @@ const SynonymData = [
 	type:"n",
 	mean:"hiệu trưởng"
 },{
+	words:"wholesome|healthy|​salubrious",
+	type:"a",
+	mean:"lành mạnh"
+},{
 	words:"personnel /,p3:sa'nel/|staff /sta:f/",
 	type:"n",
 	mean:"nhân viên"
@@ -253,11 +257,10 @@ function progress() {
 function IELTS_SYN_IsIn(wordFormed) {
 	var arr = IELTS_SYN[0].en.split('<br>')
 	for (var i = 0; i < arr.length; i++) {
-		var wordFullData = arr[i]
-		var regex = new RegExp(`^${wordFormed}\\b` , 'g')   // wordphai đầu dòng
-		var matches = wordFullData.match(regex)
-		if (matches && matches.length > 0 ) {
-			return wordFullData
+		var data = arr[i]
+		var fistEle = data.split('|')[0]
+		if (fistEle===wordFormed) {
+			return data
 		}
 	}
 	return ''

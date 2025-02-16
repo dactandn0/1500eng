@@ -1,10 +1,12 @@
 
+const HELPER_REPEAT_NUM_DEF = 3
+
 var app = angular.module('audioApp', []);
 
 app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, $rootScope, toastr) {
 
 $rootScope.audio_repeatCur = 0;
-$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 2)
+$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 
 $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
@@ -118,7 +120,6 @@ $scope.setupSeekbar = function() {
 }
 
 $scope.loadData = function() {
-	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 2)
 }
 
 $scope.$on('$viewContentLoaded', function(){

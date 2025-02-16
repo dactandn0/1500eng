@@ -1,6 +1,7 @@
 var kAudioLoopSaveKey = "audioLoop";
 
 const HELPER_FOR_TEST = false
+
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'
@@ -169,9 +170,9 @@ function showStoryTitles(data) {
 }
 
 function getFullTile(obj) {
-	var unit = obj.unit ? (' -U' + obj.unit) : '';
-	var track  = (obj.track) ? (obj.track) : '';
-	var title  = (obj.title) ? (' - ' + obj.title) : '';
+	var unit = obj.unit ? ('U' + obj.unit + ' ') : '';
+	var track  = (obj.track) ? (obj.track + ' ') : '';
+	var title  = (obj.title) ? (obj.title) : '';
 	var hasNote = obj.note && obj.note.trim().length > 0
 	var hasExercise = (obj.T_F_NG && obj.T_F_NG.trim().length > 0)
 						|| (obj.images && obj.images.length > 0)
@@ -293,6 +294,7 @@ function processStory (story, isAlert = true) {
 
 	story.enShow = story.enShow.replace(/Examiner/gi,'<i class="color-anim">Examiner</i>')
 	story.enShow = story.enShow.replace(/Candidate/gi,'<i class="color-anim">Candidate</i>')
+	story.enShow = story.enShow.replace(/FE\:/gi,'<i class="color-anim">FE:</i>')
 
 	return story;
 }

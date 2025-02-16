@@ -5,7 +5,7 @@ var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes
 ,absolutely,actually,completely,really,totally,thoroughly,entirely,simply,undoubtedly,literally,gradually,unusual\
 ,pretty,quite,rather,fairly,basically,honestly\
 ,since,as,in fact,on top of that,what's more,besides,plus,as much as,as well as,as long as\
-,as a result,consequently,thereby,thus,hence,such as\
+,as a result,consequently,thereby,thus,hence,such as,needless to say\
 ,incredibly,considerably,particularly,significantly\
 ,a bit of,a sense of,a bit,a lot,a wide range of"
 

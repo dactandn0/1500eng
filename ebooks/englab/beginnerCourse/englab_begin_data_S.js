@@ -1,16 +1,16 @@
 
 const ENGLAB_BEGIN_DATA_S = [
 {
-	title:"1 - Do you like X?",
+	title:"Do you like X?",
 	en:"Homework: HỌC THUỘC TOÀN BỘ CỤM TỪ + MẪU CÂU ĐÃ HỌC VÀ CHUẨN BỊ 4 CÂU HỎI<br>\
 1. Do you like listening to music?<br>\
 2. Do you like reading books?<br>\
 3. Do you like drawing?<br>\
-4. Do you like living in the country?<br>\
+4. Do you like liV_ING in the country?<br>\
 Lesson 1. Do you like X?<br>\
 <br>\
 Yes, definitely/absolutely/certainly/of course / I couldn't agree more<br>\
-I like = I am really/quite/particularly into + N/Ving = I am fond of = I am keen on = I have a thing for = Ving/N is my cup of tea = I am a huge fan of<br>\
+I like = I am really/quite/particularly into + N/V_ING = I am fond of = I am keen on = I have a thing for = V_ING/N is my cup of tea = I am a huge fan of<br>\
 <br>\
 An avid traveler<br>\
 Avid + runner/swimmer/ reader [bookworm]<br>\
@@ -19,9 +19,9 @@ N + lover/buff: movie buff/lover<br>\
 No/ not really/I have to say no/ I don't think so No, definitely/ absolutely not<br>\
 C1:<br>\
 I cannot stand<br>\
-I detest + N/ving<br>\
+I detest + N/V_ING<br>\
 C2: <br>\
-I'm not really/quite into + N/Ving = <br>\
+I'm not really/quite into + N/V_ING = <br>\
 I'm not a huge fan of = <br>\
 I'm not fond of = <br>\
 I'm not keen on = <br>\
@@ -34,7 +34,7 @@ game/drug addict<br>\
 <br>\
 Show reasons:<br>\
 Because/this is because + S + V<br>\
-Because of + N/Ving<br>\
+Because of + N/V_ING<br>\
 The reason for this is that + S + v...<br>\
 because = since = as...<br>\
 <br>\
@@ -73,7 +73,7 @@ Mang tính giáo dục<br>\
 1. Học kĩ năng<br>\
 Learn various skills such as N<br>\
 Learn how to + V<br>\
-problem-solving skills <br>\
+problem-solV_ING skills <br>\
 deal with difficult situations more effectively<br>\
 money management skills <br>\
 Manage my money/budget better<br>\
@@ -119,8 +119,8 @@ I have to + memorize long lists of [new words] and grammatical points [languages
 It doesn’t give me the chance to <br>\
 Also, on top of that, plus…<br>\
 1. Do you like traveling?<br>\
-C1: Yes, definitely. I am really into traveling/ I am an avid traveler because it’s exciting and relaxing. Also, it gives me the chance to  learn various skills such as problem-solving or money management skills<br>\
-C2: Yes, definitely. I am really into traveling/ I am an avid traveler because it gives me the chance to meet different people, and explore different cultures and traditions. I also get the opportunity to learn various skills such as problem-solving or money management skills<br>\
+C1: Yes, definitely. I am really into traveling/ I am an avid traveler because it’s exciting and relaxing. Also, it gives me the chance to  learn various skills such as problem-solV_ING or money management skills<br>\
+C2: Yes, definitely. I am really into traveling/ I am an avid traveler because it gives me the chance to meet different people, and explore different cultures and traditions. I also get the opportunity to learn various skills such as problem-solV_ING or money management skills<br>\
 2. Do you like fast food?<br>\
 ->	No, definitely not. I am not into eating fast food because it’s not good for my health/unhealthy [because of its harmful effects on my health]. Consuming (tiêu thụ) too much fast food can //make me suffer from various health problems such as diabetes: tiểu đường, obesity, heart attack, high blood pressure or even cancer<br>\
 // lead to various health problems such as diabetes, heart attack, high blood pressure or even cancer.<br>\
@@ -131,8 +131,8 @@ do exercise = exercise - engage in physical exercise<br>\
 "
 	,voca:"",
 },{
-	title:"2 - Do you prefer x to y?",
-	en:"DO YOU PREFER X TO Y?<br>\
+	title:"Do you prefer x to y?",
+	en:"Do you prefer x to y?<br>\
 + Do you prefer writing letters to sending emails?<br>\
 + Do you prefer talking on the phone to chatting online?<br>\
 + Do you prefer to travel by bike or on foot?<br>\
@@ -168,8 +168,8 @@ X + BE + NOT AS + ADJECTIVE + AS + Y.<br>\
 Listening to the radio is not as interesting as watching TV.<br>\
 Buses are not as pretty as cars.<br>\
 Khi muốn nhấn mạnh sự so sánh, dùng MUCH<br>\
-→ FE: Living in the city is much more convenient than in the countryside<br>\
-→ FE: Driving a motorbike is much faster than walking.<br>\
+→ FE: LiV_ING in the city is much more convenient than in the countryside<br>\
+→ FE: DriV_ING a motorbike is much faster than walking.<br>\
 <br>\
 Compared to A, B is…. (dùng cấu trúc so sánh hơn)<br>\
 Compared to watching movies at the cinema, watching movies at home is more comfortable.<br>\
@@ -188,7 +188,7 @@ Needless to say:  dùng để giới thiệu hoặc nhấn mạnh rằng điều
 I like eating lots of cakes, but needless to say, that will make me fat.<br>\
 He's done very badly in his exams, so needless to say, He won't get into university this year.<br>\
 ALSO, ON TOP OF THAT/PLUS/WHAT'S MORE: được sử dụng để bổ sung thêm thông tin. <br>\
-I prefer cycling rather than driving a car because it helps me keep fit. Also, it's better for the environment and it's also cheaper!<br>\
+I prefer cycling rather than driV_ING a car because it helps me keep fit. Also, it's better for the environment and it's also cheaper!<br>\
 <br>\
 PRACTICE<br>\
 DO YOU PREFER TALKING ON THE PHONE OR CHATTING ONLINE?<br>\
@@ -238,13 +238,13 @@ Public transportation<br>\
 Bus, coach, train, plane, ferry, cruise ship, taxi, cab, bicycles for rent, tuk tuk, tram, subway<br>\
 Private transportation <br>\
 Car, motorbike, bicycle, jet, yacht, boat, van, scooter<br>\
-I would opt for public transportation. This is because I find it more environmentally friendly and often less stressful than driving through traffic.\
+I would opt for public transportation. This is because I find it more environmentally friendly and often less stressful than driV_ING through traffic.\
  Plus, it allows me to relax, read, or catch up on work during the commute, making the most of my time.<br>\
 "
 	,voca:"",
 },{
-	title:"3 - How often do you do x? | What was the first/last time to do x?"
-	,en:"ADVERBS OF FREQUENCY<br>\
+	title:"How often do you do X?"
+	,en:"Adverbs of frequency<br>\
 - Always/ all the time/ every day<br>\
 - Usually/ frequently/ regularly/ quite often<br>\
 FE: I frequently go shopping with my friends.<br>\
@@ -259,7 +259,7 @@ FE: I don't go to expensive restaurants with friends all the time, just occasion
 FE: I don't always go to the university canteen to eat.<br>\
 FE: She doesn't usually have guests for dinner.<br>\
 - Never<br>\
-B2: LÝ DO/ NÊU THÔNG TIN CHI TIẾT<br>\
+B2: Lý do/ nêu thông tin chi tiết<br>\
 Nếu tần suất thực hiện cao -> nêu lợi ích<br>\
 Nếu tần suất thực hiện không cao -> đưa lý do ngụy biện<br>\
 I am busy with work/study<br>\
@@ -270,8 +270,8 @@ I am snowed under with<br>\
 Don't have money<br>\
 I am short of cash<br>\
 I am drowning in debt (det) <br>\
-PRACTICE<br>\
-HOW OFTEN DO YOU READ BOOKS?<br>\
+Practice<br>\
+How often do you read books?<br>\
 - a bookworm : mọt sách<br>\
 - an avid reader: người thích đọc sách<br>\
 - a fantasy novel : tiểu thuyết giả tưởng<br>\
@@ -285,7 +285,7 @@ HOW OFTEN DO YOU READ BOOKS?<br>\
 FE1: Well, I'm a complete bookworm so I read books all the time. Reading is a great way to recharge my battery after long days at work. It also allows me to develop my imagination and creativity.<br>\
 FE2: Unfortunately, I only read books once in a blue moon. Even though I know reading can broaden my horizons and boost my imagination, I'm usually too exhausted after long days at work so I rarely read books.<br>\
 <br>\
-HOW OFTEN DO YOU GO TRAVELING?<br>\
+How often do you go traveling?<br>\
 - to travel to… = go on a trip to = pay a visit to…: đi du lịch đến<br>\
 - To set food in …: đặt chân tới<br>\
 - To travel abroad: du lịch nước ngoài<br>\
@@ -295,16 +295,17 @@ HOW OFTEN DO YOU GO TRAVELING?<br>\
 - Exciting (adj): hứng thú, lý thú<br>\
 [xem lại phần lợi ích]<br>\
 <br>\
-HOW OFTEN DO YOU EXERCISE?<br>\
+How often do you exercise?<br>\
 - exercise = go exercise = work out = engage in physical activities = do regular exercise<br>\
 a fitness enthusiast (n): người yêu thể dục thể thao<br>\
 - to lead an active lifestyle: sống lối sống chủ động<br>\
 - health-conscious (adj): có ý thức về sức khỏe<br>\
 - to hit the gym = go to the gym<br>\
-- to practice yoga: tập yoga<br>\
-<br>\
-WHAT WAS THE FIRST/LAST TIME TO DO X?<br>\
-C1: Nói rõ thời gian<br>\
+- to practice yoga: tập yoga"
+	,note:""
+},{
+	title:"What was the first/last time to do X?"
+	,en:"C1: Nói rõ thời gian<br>\
 As far as I can remember/recall<br>\
 If my memory serves me right<br>\
 the first/last time I did X was  <br>\
@@ -331,13 +332,13 @@ FE: When was the first time you used a computer?<br>\
 Well, as far as I can recall, my first time using a computer was about 10 years ago. It was a birthday present from my father, and I was thrilled to receive it because it was the latest model available then. I eagerly started learning how to use it right away, and it marked the beginning of my fascination in technology.<br>\
 <br>\
 HOMEWORK<br>\
-When was the last time you went on holiday?<br>\
-"
-	,note:""
-},{
-	title:"4 - What kind of x do you like most?"
+When was the last time you went on holiday?"
+},
+
+{
+	title:"What kind of x do you like most?"
 	,en:"1. Thích 2 loại<br>\
-Examiner: What kind of music do you like?<br>\
+Examiner: What kind of movie do you like?<br>\
 Candidate: (Loại thứ nhất) There are many kinds of movies that I enjoy, one of which is action movies. (Giải thích) This is simply because I enjoy watching characters face dangerous situations and battle against others to survive. (Cái thứ hai) Beside that, I am also a real sucker for superhero movies like Batman or The Avengers .(Giải thích) What I like about them is that the visual effects are eye-pleasing and they generally star a lot of  handsome actors.<br>\
 2. Chỉ thích 1 loại<br>\
 C1<br>\
@@ -378,7 +379,7 @@ I find casual clothing to be comfortable and versatile for everyday wear. Howeve
 I love shorts and T-shirts most because they are comfortable and easy to wear. I wear them whenever I hang out with my friends. I think they will never be out of fashion. We can see that they are always trendy and stylish.<br>\
 "
 },{
-	title:"5 - Is X popular in your country?"
+	title:"Is X popular in your country?"
 	,en:"Is football popular in your country?<br>\
 Are bikes popular in your country?<br>\
 Is chocolate popular in your country?<br>\
@@ -448,10 +449,10 @@ capital cities/coastal cities/mountain towns<br>\
 PRACTICE<br>\
 Is playing sports popular in your country?<br>\
 Is going to the cinema popular in VN? <br>\
-Is going by bus popular in VN? <br>\
-<br>\
-DID YOU LEARN TO DO X?<br>\
-POSITIVE ANSWER<br>\
+Is going by bus popular in VN?"
+},{
+	title:"Did you learn to do X?"
+	,en:"Positive answer<br>\
 B1: Say you did learn to do X<br>\
 -> Yes, I did learn how to X (swim)<br>\
 - When I was ... years old<br>\
@@ -475,12 +476,13 @@ NEGATIVE ANSWER<br>\
 B1: Say you have not learned to X yet<br>\
 -> Unfortunately, I haven’t learned to do X yet, which is a pity: thật đáng tiếc<br>\
 B2: Why haven’t you learned and did you regret?<br>\
-Actually, I had my first crack at X (Ving) when I was a child but then it’s a shame (it’s a pity) I didn’t have enough time to learn X . I was always snowed under: bận homework and assignments at school and gave up after some weeks. I wish I had more ambition (tham vọng) and patience when I was younger, then I might have learned to X<br>\
+Actually, I had my first crack at X (V_ING) when I was a child but then it’s a shame (it’s a pity) I didn’t have enough time to learn X . I was always snowed under: bận homework and assignments at school and gave up after some weeks. I wish I had more ambition (tham vọng) and patience when I was younger, then I might have learned to X.<br>\
 <br>\
 FE: Did you learn how to play any musical instrument when you were young?<br>\
 Unfortunately, I haven’t learned to play any musical instrument yet, which is a pity. I had the first crack at playing the piano when I was a child but then it’s a shame I didn’t have enough time to do X. I was always snowed under homework and assignments at school and gave up after some weeks. I wish I had more ambition and patience when I was younger, then I might have learned to play the piano."
-},{
-	title:"6 - What is the best time to do x?"
+},
+{
+	title:"What is the best time to do X?"
 	,en:"FE: What is the best time of day to study?<br>\
 FE: What is the best time of year to find jobs in your country?<br>\
 FE: What is the best time of day to travel?<br>\
@@ -493,10 +495,10 @@ I think/suppose/reckon/believe<br>\
 - ... my favorite time for/to ... is<br>\
 You should/can do X + thời điểm<br>\
 FE: What is the best time for traveling in your country?<br>\
--> I think summer months are the greatest time to travel around my country. This is because the weather during these months is hot and sunny, which is very suitable for outdoor activities, such as mountain climbing, camping, fishing or sightseeing <br>\
+-> I think summer months are the greatest time to travel around my country. This is because the weather during these months is hot and sunny, which is very suitable for outdoor activities, such as mountain climbing, camping, fishing or sightseeing.<br>\
 C2: Tùy trường hợp (It depends./It depends on) + Lý do/ chi tiết<br>\
 FE: What is the best time of day to study? <br>\
-I reckon it really depends on people's preferences. For me, for example, morning is the best time of day to study because I feel that my brain functions most effectively from 8am to 11am. However, some people think that evening is the greatest time to study because they find themselves more focused on their work during this time<br>\
+I reckon it really depends on people's preferences. For me, for example, morning is the best time of day to study because I feel that my brain functions most effectively from 8am to 11am. However, some people think that evening is the greatest time to study because they find themselves more focused on their work during this time.<br>\
 last: kéo dài bao lâu<br>\
 find + myself/yourself/themselves/ourselves + adj: cảm thấy...  như thế nào<br>\
 <br>\
@@ -505,7 +507,7 @@ be great for/ be ideal for/ be suitable for<br>\
 provide the perfect conditions for <br>\
 Tips<br>\
 1. Nên dùng giới từ chỉ thời gian 1 cách chính xác<br>\
-At + giờ trong ngày, sự kiện lễ hội và với ‘dawn (bình minh), noon, night, midnight, dusk (hoàng hôn), Christmas'<br>\
+At + giờ trong ngày, sự kiện lễ hội và với 'dawn' (bình minh), noon, night, midnight, dusk (hoàng hôn), Christmas<br>\
 - The train will arrive at 9 p.m.<br>\
 - The streets are always busy at Christmas.<br>\
 On + được sử dụng với thứ, ngày cụ thể<br>\
@@ -517,17 +519,17 @@ In + được sử dụng với năm, mùa, tháng và các phần trong ngày<b
 By được sử dụng để chỉ ra rằng hoạt động được hoàn thành hoặc kết thúc bằng một điểm thời gian nào đó.<br>\
 - I usually start to feel tired by 10 p.m<br>\
 - All the leaves on the trees will have fallen by November.<br>\
-During: được dùng để nói về một điều gì đó diễn ra trong một khoảng thời gian nhất định và có thể sử dụng với các buổi trong ngày, mùa và các lễ hội ( không phải một điểm thời gian như ‘noon')<br>\
+During: được dùng để nói về một điều gì đó diễn ra trong một khoảng thời gian nhất định và có thể sử dụng với các buổi trong ngày, mùa và các lễ hội ( không phải một điểm thời gian như 'noon')<br>\
 - The best time to do exercise is during the morning break.<br>\
 - Not many people like to visit Quang Tri during the summer months.<br>\
 Until : được sử dụng để nói về việc mà vẫn tiếp tục xảy ra đến một khoảng thời gian nhất định hoặc một sự kiện nào đó.<br>\
 - The park is a really quiet place to study until about 5 o'clock, when everybody finishes work. <br>\
 - I like swimming in the sea until late September, after that it gets cold.<br>\
 <br>\
-PRACTICE<br>\
-What is the best time of day to work out? <br>\
-1. It depends on people's schedules and preferences. I feel that evening is the best time to work out because I find myself most energetic during this time. However, some people think early morning is the ideal time to exercise because this is when they find themselves most relaxed. They don't have to worry about work or anything like that.<br>\
-2. What is the best time to find a good job in your country ?<br>\
+Practice<br>\
+1) What is the best time of day to work out? <br>\
+It depends on people's schedules and preferences. I feel that evening is the best time to work out because I find myself most energetic during this time. However, some people think early morning is the ideal time to exercise because this is when they find themselves most relaxed. They don't have to worry about work or anything like that.<br>\
+2) What is the best time to find a good job in your country?<br>\
 It depends on the type of job you are talking about. You can easily find a well-paid job in restaurants, hotels or bars during the summer months because of the dramatic increase in the number of tourists. However, generally speaking, you can find jobs all year round as long as you have the relevant degrees or something to show that you're qualified for the job you're applying for.<br>\
 Is X easy/difficult to do X?<br>\
 C1: Dễ + Lý do/ chi tiết<br>\
@@ -540,21 +542,18 @@ C2: Khó + Lý do/ chi tiết<br>\
 - It's not really simple  to V<br>\
 + [PHẦN KHÓ NHẤT]<br>\
 Ex: Is it easy to learn to swim?<br>\
-No, actually, it's quite challenging, especially for people who are afraid of water like me<br>\
-I believe the hardest part is learning to breathe properly underwater, which took me nearly two weeks to get the hang of it.<br>\
+No, actually, it's quite challenging, especially for people who are afraid of water like me. I believe the hardest part is learning to breathe properly underwater, which took me nearly two weeks to get the hang of it.<br>\
 C3: Ban đầu khó – Lúc sau dễ hơn<br>\
 It's always quite challenging at the beginning when you try something new and X is no exception<br>\
 At first, ... <br>\
 But after a while, things begin to a bit easier<br>\
 Ex: Is it difficult to learn to play the guitar?<br>\
-It's always quite challenging at the beginning when you try something new and learning to play the guitar is no exception<br>\
-At first, your fingers can hurt a lot<br>\
-But after a while, with practice, things gradually become easier<br>\
+It's always quite challenging at the beginning when you try something new and learning to play the guitar is no exception. At first, your fingers can hurt a lot. But after a while, with practice, things gradually become easier.<br>\
 <br>\
 1. Is it difficult to learn another language?<br>\
 "
 },{
-	title:"7 - How has x changed + khoảng thời gian?"
+	title:"How has x changed + khoảng thời gian?"
 	,en:"C1: Thay đổi nhiều + Sự thay đổi<br>\
 It has changed/<br>\
 transformed<br>\
@@ -587,7 +586,7 @@ Well, families have undergone significant changes over the past decades. In the 
 Traditionally, fathers took on the role of the family breadwinner, while mothers stayed at home and took on childcare responsibilities. Nowadays, however, more men are choosing to stay at home and take care of the children, while women pursue careers outside the home.<br>\
 "
 },{
-	title:"8 - Is X suitable for...?"
+	title:"Is X suitable for... ?"
 	,en:"C1: Có + Lý do/ chi tiết<br>\
 - Yes, I think so<br>\
 - Yes, it’s very suitable for/ appropriate for<br>\
@@ -601,7 +600,7 @@ C2: Không + Lý do/ chi tiết<br>\
 - No, it’s not really suitable<br>\
 - No, I don’t think it’s a good idea<br>\
 2.  Is your hometown suitable for young people to live in?<br>\
-No, I don't think so because there are not many job opportunities in my town. That's why many young people leave for major cities in search of better jobs and career growth<br>\
+No, I don't think so because there are not many job opportunities in my town. That's why many young people leave for major cities in search of better jobs and career growth.<br>\
 C3: Tùy<br>\
 - It depends.<br>\
 - It depends on...<br>\
@@ -618,7 +617,7 @@ adults: commuting or exercise<br>\
 older people: electric or three-wheeled bicycles<br>\
 <br>\
 Absolutely! Bicycles work for everyone, no matter their age. Whether you're a kid or a grandparent, hopping on a bike is a great way to unwind and stay healthy<br>\
-Yes, I think bicycles are suitable for people of all ages because they offer a convenient and eco-friendly way to travel. Children can enjoy cycling as a fun outdoor activity, while adults often use bikes for commuting or exercise. Even older people can ride, especially if they choose models with extra support, like electric or three-wheeled bicycles<br>\
+Yes, I think bicycles are suitable for people of all ages because they offer a convenient and eco-friendly way to travel. Children can enjoy cycling as a fun outdoor activity, while adults often use bikes for commuting or exercise. Even older people can ride, especially if they choose models with extra support, like electric or three-wheeled bicycles.<br>\
 <br>\
 2. Is working from home suitable for all jobs?<br>\
 IT, writing, or customer service<br>\

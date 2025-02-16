@@ -2,18 +2,15 @@
 
 const lptd_cd2_stories = [
 {
-	en: 
-	'Unit 1 Antarctica<br>\
-Antarctica is another name for the South Pole. It is also a continent. A long time ago, the South Pole was close to the equator.\
+unit:1,	title:'Antarctica'
+	,en:"Antarctica is another name for the South Pole. It is also a continent. A long time ago, the South Pole was close to the equator.\
  That was 500 million years ago. It was once joined to Australia. Then, all the land on Earth started to move. Antarctica moved away from Australia and went south. <br>\
 Dinosaur bones were once found at the South Pole. Do you know why? Dinosaurs lived there millions of years ago. This was before it moved away from the equator. <br>\
 About 98% of this continent is frozen. The rest is made up of rock. The South Pole has 87% of the world’s ice. \
 But did you know that it gets very little snow? Only about two inches of snow falls each year.<br>\
 How many people live on your continent? No one lives in the South Pole. Only animals, like penguins, live there.\
- Scientists and tourists visit there, but they don’t stay long. Do you want to visit Antarctica? It is the coldest, driest place on Earth!',
-	vi: 
-	'Bài 1 Nam Cực<br>\
-Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục địa. Cách đây rất lâu, Nam Cực nằm gần đường xích đạo. Đó là 500 triệu năm trước. Nó từng được nối với Úc.\
+ Scientists and tourists visit there, but they don’t stay long. Do you want to visit Antarctica? It is the coldest, driest place on Earth!",
+	vi: 'Nam Cực là tên gọi khác của Nam Cực. Đây cũng là một lục địa. Cách đây rất lâu, Nam Cực nằm gần đường xích đạo. Đó là 500 triệu năm trước. Nó từng được nối với Úc.\
  Sau đó, toàn bộ đất liền trên Trái Đất bắt đầu di chuyển. Nam Cực rời xa Úc và di chuyển về phía nam. <br>\
 Xương khủng long từng được tìm thấy ở Nam Cực. Bạn có biết tại sao không? Khủng long đã sống ở đó hàng triệu năm trước. Trước khi nó di chuyển ra khỏi đường xích đạo. <br>\
 Khoảng 98% lục địa này bị đóng băng. Phần còn lại được tạo thành từ đá. Nam Cực có 87% băng trên thế giới. Nhưng bạn có biết rằng nơi này có rất ít tuyết không?\
@@ -23,10 +20,8 @@ Có bao nhiêu người sống trên lục địa của bạn? Không ai sống 
 voca:'Dinosaur,went,south,South Pole,500 million years,Scientist,equator,tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of',
 note:'87% = 87 percent'
 },
-{
-	en: 
-	'Unit 2 A Hiking Trip<br>\
-M: Hi, Anne! Did you sign up for the trip on Saturday?<br>\
+{unit:2,title:"'A Hiking Trip"
+	,en:"M: Hi, Anne! Did you sign up for the trip on Saturday?<br>\
 W: What trip is that? I didn’t know there was a trip on Saturday.<br>\
 M: The hiking club is going to Bear Mountain. The bus drops us off at the bottom, and we’re going to hike until we get to a cabin halfway up the mountain.<br>\
 W: That sounds really great! Where can I sign up?<br>\
@@ -35,10 +30,8 @@ W: What activity will we do when we get to the cabin on the mountain?<br>\
 M: Well, it takes seven hours to hike to the cabin, so it will be late by the time we arrive. After we unpack, we’ll start a campfire.\
  Then we can sing, eat, and tell stories around the fire. The following day we’ll leave at dawn and hike to the top of the mountain.\
   After we take pictures, we’ll hike back down. If we have time, we might go swimming in the lake on the mountain!<br>\
-W: Those sound like really fun activities, and I can’t wait to go!',
-	vi: 
-	'Bài 2 Một chuyến đi bộ đường dài<br>\
-M: Chào Anne! Bạn đã đăng ký chuyến đi vào thứ Bảy chưa?<br>\
+W: Those sound like really fun activities, and I can’t wait to go!",
+	vi: "M: Chào Anne! Bạn đã đăng ký chuyến đi vào thứ Bảy chưa?<br>\
 W: Chuyến đi nào vậy? Tôi không biết là có chuyến đi vào thứ Bảy.<br>\
 M: Câu lạc bộ đi bộ đường dài sẽ đến Bear Mountain. Xe buýt sẽ thả chúng ta xuống chân núi và chúng ta sẽ đi bộ cho đến khi đến một cabin ở giữa núi.<br>\
 W: Nghe có vẻ tuyệt đấy! Tôi có thể đăng ký ở đâu?<br>\
@@ -47,13 +40,13 @@ W: Chúng ta sẽ tham gia hoạt động gì khi đến cabin trên núi?<br>\
 M: À, phải mất bảy giờ để đi bộ đến cabin, vì vậy sẽ muộn khi chúng ta đến nơi. Sau khi dỡ đồ, chúng ta sẽ đốt lửa trại.\
  Sau đó, chúng ta có thể hát, ăn và kể chuyện quanh đống lửa. Ngày hôm sau, chúng ta sẽ khởi hành lúc rạng sáng và đi bộ lên đỉnh núi.\
   Sau khi chụp ảnh, chúng ta sẽ đi bộ xuống. Nếu có thời gian, chúng ta có thể đi bơi ở hồ trên núi!<br>\
-W: Nghe có vẻ là những hoạt động thực sự thú vị, và tôi rất mong được đi!',
+W: Nghe có vẻ là những hoạt động thực sự thú vị, và tôi rất mong được đi!",
 	voca:'trip,cabin,sign,up,activity,hike,club,receive,announcement,president,rent,halfway up,campfire'
 },
 {
-	en:
-	'Unit 3 Save the Turtles<br>\
-M: Have you heard about the plan to save turtles in Mexico?<br>\
+	unit:3,
+	title:"Save the Turtles",
+	en:"M: Have you heard about the plan to save turtles in Mexico?<br>\
 W: No. What is the story? <br>\
 M: Turtles are in danger of becoming extinct around the world. Every year, thousands of turtles lay eggs on the beach.\
  After the turtles lay their eggs in the sand, people come along and take them.<br>\
@@ -63,10 +56,8 @@ M: Exactly. Turtles are beginning to stay away from certain places, now. There a
 W: Is there anything we can do to help?<br>\
 M: I’m going to call the Environmental Protection hotline. They might have some information about the project to help save turtles in Mexico.<br>\
 W: They might even have a brochure. Let’s find the website on my computer. Oh, here it is. The address is www.enviro.com. There’s plenty of information here.<br>\
-M: Great! Let’s see what we can do to help save turtles in Mexico.',
-	vi:
-	'Bài 3 Cứu rùa biển<br>\
-M: Bạn đã nghe về kế hoạch cứu rùa biển ở Mexico chưa?<br>\
+M: Great! Let’s see what we can do to help save turtles in Mexico.",
+	vi:'M: Bạn đã nghe về kế hoạch cứu rùa biển ở Mexico chưa?<br>\
 W: Chưa. Câu chuyện là gì? <br>\
 M: Rùa biển đang có nguy cơ tuyệt chủng trên toàn thế giới. Hàng năm, có hàng nghìn con rùa đẻ trứng trên bãi biển. Sau khi rùa đẻ trứng trên cát, mọi người đến và lấy chúng.<br>\
 W: Tôi cho rằng mọi người thích ăn trứng rùa.<br>\
@@ -77,42 +68,38 @@ W: Họ thậm chí có thể có một tờ rơi. Chúng ta hãy tìm trang web
 M: Tuyệt! Hãy xem chúng ta có thể làm gì để cứu rùa ở Mexico.',
 voca: 'save,extinct,information,project,brochure,hotline,available,nearly,colorful,plenty'
 },
-{
-	en: 'Unit 4 Hiking in Iran<br>\
-G: Most people think that the Middle East is only a desert. This is far from true. Last year, I went hiking in Iran.\
+{ unit:4,title: 'Hiking in Iran'
+	,en: 'G: Most people think that the Middle East is only a desert. This is far from true. Last year, I went hiking in Iran.\
  Iran has many mountains. You can find trees that lose their leaves in winter.<br>\
 If you’re lucky, you may see a yellow deer or a brown bear, two species that live there. The air is fresh, and you can swim in clear, clean lakes. I definitely recommend it.<br>\
 There are so many birds to see. It is fun to go into the forest with binoculars to look at birds.\
  Seeing the birds through binoculars makes them seem much nearer than they actually are. You can write down all of the species that you see. You should learn about their calls first. That means the sounds that each bird makes. Sometimes it’s hard to see the birds. However, you can identify them if you happen to hear them.<br>\
 I want to go back to Iran again someday. It’s so beautiful that I want to see and explore much more of it!',
-	vi:
-	'Bài 4 Đi bộ đường dài ở Iran<br>\
-G: Hầu hết mọi người nghĩ rằng Trung Đông chỉ là sa mạc. Điều này không đúng chút nào. Năm ngoái, tôi đã đi bộ đường dài ở Iran.\
+	vi:"G: Hầu hết mọi người nghĩ rằng Trung Đông chỉ là sa mạc. Điều này không đúng chút nào. Năm ngoái, tôi đã đi bộ đường dài ở Iran.\
  Iran có nhiều núi. Bạn có thể tìm thấy những cái cây rụng lá vào mùa đông.<br>\
 Nếu may mắn, bạn có thể nhìn thấy một con hươu vàng hoặc một con gấu nâu, hai loài sống ở đó. Không khí trong lành và bạn có thể bơi trong những hồ nước trong vắt. Tôi thực sự khuyên bạn nên thử.<br>\
 Có rất nhiều loài chim để ngắm. Thật thú vị khi đi vào rừng với ống nhòm để ngắm chim. \
 Nhìn thấy những chú chim qua ống nhòm khiến chúng có vẻ gần hơn nhiều so với thực tế. Bạn có thể viết ra tất cả các loài mà bạn nhìn thấy. Trước tiên, bạn nên tìm hiểu về tiếng kêu của chúng. Nghĩa là âm thanh mà mỗi loài chim tạo ra. Đôi khi rất khó để nhìn thấy những chú chim. Tuy nhiên, bạn có thể nhận dạng chúng nếu tình cờ nghe thấy chúng.<br>\
-Tôi muốn quay lại Iran một lần nữa vào một ngày nào đó. Nó đẹp đến nỗi tôi muốn được nhìn thấy và khám phá nhiều hơn nữa!',
+Tôi muốn quay lại Iran một lần nữa vào một ngày nào đó. Nó đẹp đến nỗi tôi muốn được nhìn thấy và khám phá nhiều hơn nữa!",
 voca:"recommend,desert,happen,species,identify,binoculars,owl,definitely,actually,explore,Middle East,much more of",
 note:'much more of = a lof of'
 },
-{
-en:'Unit 5 Jane Goodall<br>\
-G: Jane Goodall went to Africa when she was 26 years old. She went there to research chimpanzees. At that time, no other women scientists worked there alone.<br>\
+{unit:5,
+title:"Jane Goodall",
+en:'G: Jane Goodall went to Africa when she was 26 years old. She went there to research chimpanzees. At that time, no other women scientists worked there alone.<br>\
 At first, Jane studied the chimps from far away. The chimps were afraid of her. They ran away if she came close to them. After some time, the chimps saw that she was not going to hurt them. They let her walk near them. Soon, she was living among them. She wanted to learn more and more about them. Jane did a lot of research on chimps. She discovered many new things about them. She learned that each chimp has its own personality. She saw that they have feelings.<br>\
 Jane discovered that chimps have very close families. Mothers and fathers take good care of baby chimps. An adult female chimp will sometimes adopt an orphan.<br>\
 In 1977, Jane started an institute to help protect animals. She wanted to help animals all around the world. Today, this institute runs programs in over 70 countries.',
-vi:'Bài 5 Jane Goodall<br>\
-G: Jane Goodall đã đến Châu Phi khi cô 26 tuổi. Cô đến đó để nghiên cứu về tinh tinh. Vào thời điểm đó, không có nhà khoa học nữ nào làm việc một mình ở đó.<br>\
+vi:'G: Jane Goodall đã đến Châu Phi khi cô 26 tuổi. Cô đến đó để nghiên cứu về tinh tinh. Vào thời điểm đó, không có nhà khoa học nữ nào làm việc một mình ở đó.<br>\
 Lúc đầu, Jane nghiên cứu tinh tinh từ xa. Những con tinh tinh sợ cô. Chúng chạy trốn nếu cô đến gần chúng. Sau một thời gian, những con tinh tinh thấy rằng cô sẽ không làm hại chúng. Chúng để cô đi gần chúng. Chẳng mấy chốc, cô đã sống giữa chúng. Cô muốn tìm hiểu thêm về chúng. Jane đã nghiên cứu rất nhiều về tinh tinh. Cô đã khám phá ra nhiều điều mới mẻ về chúng. Cô biết rằng mỗi con tinh tinh đều có tính cách riêng. Cô thấy rằng chúng có cảm xúc.<br>\
 Jane phát hiện ra rằng tinh tinh có gia đình rất gắn bó. Những người mẹ và người cha chăm sóc rất tốt cho những con tinh tinh con. Một con tinh tinh cái trưởng thành đôi khi sẽ nhận nuôi một đứa trẻ mồ côi.<br>\
 Vào năm 1977, Jane đã thành lập một viện để giúp bảo vệ động vật. Cô muốn giúp đỡ các loài động vật trên khắp thế giới. Ngày nay, viện này triển khai chương trình ở hơn 70 quốc gia.',
 voca:"research,personality,adult,discover,institute,orphan,cave,afraid,chimpanzees,chimp,adopt"
 },
 {
-title:"Unit 6 Flying Cars",
-en:'Unit 6 Flying Cars<br>\
-M: Listen to this! This newspaper article says that some scientists are working on a new kind of airplane. People can use these "flying cars" for short trips.<br>\
+	unit:6,
+title:"Flying Cars",
+en:'M: Listen to this! This newspaper article says that some scientists are working on a new kind of airplane. People can use these "flying cars" for short trips.<br>\
 W: How interesting! <br>\
 M: The article says the first flying car might be ready within the next few years.<br>\
 W: That’s quite soon! How would this flying car work? Can anybody use one, or is it only for people who know how to fly airplanes?<br>\
@@ -120,8 +107,7 @@ M: You don’t need to be an airplane pilot to use a flying car. The article say
 W: Does the article say how much a flying car would cost? It will probably cost too much money! We would not be able to afford one.<br>\
 M: True, but wouldn’t it be nice to fly over traffic jams, instead of sitting in the middle of them?<br>\
 W: Yes. But then we might end up with traffic jams in the sky.',
-vi: 'Bài 6 Xe bay<br>\
-M: Nghe này! Bài báo này nói rằng một số nhà khoa học đang nghiên cứu một loại máy bay mới. Mọi người có thể sử dụng những "chiếc xe bay" này cho những chuyến đi ngắn.<br>\
+vi: 'M: Nghe này! Bài báo này nói rằng một số nhà khoa học đang nghiên cứu một loại máy bay mới. Mọi người có thể sử dụng những "chiếc xe bay" này cho những chuyến đi ngắn.<br>\
 W: Thật thú vị! <br>\
 M: Bài báo nói rằng chiếc xe bay đầu tiên có thể sẽ sẵn sàng trong vài năm tới.<br>\
 W: Sớm thôi! Chiếc xe bay này hoạt động như thế nào? Ai cũng có thể sử dụng được hay chỉ dành cho những người biết lái máy bay?<br>\
@@ -131,9 +117,8 @@ M: Đúng vậy, nhưng liệu có tuyệt vời không khi bay qua các điểm
 W: Đúng vậy. Nhưng sau đó chúng ta có thể sẽ phải đối mặt với tình trạng tắc đường trên bầu trời.',
 voca:"article,interesting,cost,airplane,control,traffic,jam,author,pilot,probably,end up"
 },
-{
-en: 'Unit 7 The Perfect Gift<br>\
-W: Hello, and welcome to Robuck’s. How may I help you?<br>\
+{unit:7,title:"The Perfect Gift",
+en: 'W: Hello, and welcome to Robuck’s. How may I help you?<br>\
 M: I would like to buy my wife a home appliance for her birthday.<br>\
 W: What sort of appliance are you looking for, sir?<br>\
 M: I think a dishwasher might be the perfect gift because it will help with the housework.<br>\
@@ -143,8 +128,7 @@ W: It’s very simple. First, collect your dirty dishes and scrape off the lefto
 M: That sounds easy to use. I think my wife will really like it. How much does it cost?<br>\
 W: You’re lucky, sir! It’s on sale this week for $400. <br>\
 M: Great, I’ll take it!',
- vi:'Bài 7 Món quà hoàn hảo<br>\
-W: Xin chào và chào mừng bạn đến với Robuck. Tôi có thể giúp gì cho bạn?<br>\
+ vi:'W: Xin chào và chào mừng bạn đến với Robuck. Tôi có thể giúp gì cho bạn?<br>\
 M: Tôi muốn mua tặng vợ tôi một thiết bị gia dụng nhân ngày sinh nhật của cô ấy.<br>\
 W: Ông đang tìm loại thiết bị nào vậy?<br>\
 M: Tôi nghĩ máy rửa chén có thể là món quà hoàn hảo vì nó sẽ giúp ích cho công việc nhà.<br>\
@@ -156,9 +140,8 @@ W: Ông thật may mắn, thưa ông! Nó đang được bán với giá 400 đ�
 M: Tuyệt, tôi sẽ mua nó!',
 voca:"appliance,dishwasher,garbage,housework,simple,perfect,vacuum,cleaner,scrape,detergent,leftover,cutlery,compartment,rinse,sparkling,popular,wash cycle,on sale,for"
 },
-{
-en:'Unit 8 Acupuncture<br>\
-B: Acupuncture began in China thousands of years ago. It is a special way to treat sick people. There are many acupuncture spots on the human body.\
+{unit:8,title:"Acupuncture",
+en:'B: Acupuncture began in China thousands of years ago. It is a special way to treat sick people. There are many acupuncture spots on the human body.\
  Small metal needles are put into spots on the body. Each spot is connected to a special body part or system. There are many spots for each part.<br>\
 An expert puts the needles into these spots in a person’s body. These spots connect to the body system that has a problem. The needles do not go deep.\
  People say that the needles do not hurt.<br>\
@@ -166,9 +149,7 @@ We are not sure why acupuncture works. But studies have shown that it works very
  Some doctors use acupuncture to treat people who cannot take medicine.<br>\
 People in Asia have been using this special method for a long time. At first, people outside Asia did not trust this method. They did not think that it would help them.\
  Now, it has become very popular around the world.'
-,
-vi:'Bài 8 Châm cứu<br>\
-B: Châm cứu bắt đầu ở Trung Quốc từ hàng ngàn năm trước. Đây là một phương pháp đặc biệt để điều trị bệnh. Có nhiều huyệt châm cứu trên cơ thể con người.\
+,vi:'B: Châm cứu bắt đầu ở Trung Quốc từ hàng ngàn năm trước. Đây là một phương pháp đặc biệt để điều trị bệnh. Có nhiều huyệt châm cứu trên cơ thể con người.\
  Những chiếc kim kim loại nhỏ được châm vào các huyệt trên cơ thể. Mỗi huyệt được kết nối với một bộ phận hoặc hệ thống cơ thể đặc biệt. Mỗi bộ phận có nhiều huyệt.<br>\
 Một chuyên gia châm kim vào những huyệt này trên cơ thể một người. Những huyệt này kết nối với hệ thống cơ thể có vấn đề. Các kim không đi sâu.\
  Mọi người nói rằng các kim không gây đau.<br>\
@@ -178,9 +159,8 @@ Người dân ở Châu Á đã sử dụng phương pháp đặc biệt này tr
  Họ không nghĩ rằng nó sẽ giúp ích cho họ. Bây giờ, nó đã trở nên rất phổ biến trên toàn thế giới.'
 ,voca:"treat,spot,nerves,needle,system,special,digestive,thread,acupuncture,connect,popular,Asia,expert"
 },
-{
-en:'Unit 9 Albert Einstein<br>\
-B: Albert Einstein is famous around the world. He is famous for his work in science. Many people think that he was the greatest scientist of the 20th century.<br>\
+{unit:9,title:"Albert Einstein",
+en:'B: Albert Einstein is famous around the world. He is famous for his work in science. Many people think that he was the greatest scientist of the 20th century.<br>\
 Einstein was born in Germany in 1879. His interest in science began when he was very young. Someone gave him a compass in 1884.\
  Young Einstein was interested in how it worked. He wanted to learn science. He wanted to become a scientist.<br>\
 Einstein tried to enter a top Swiss university. At first, he met with failure. He did not get a place. But Einstein did not give up easily.\
@@ -188,9 +168,7 @@ Einstein tried to enter a top Swiss university. At first, he met with failure. H
   He graduated from this famous university in 1896.<br>\
 As a scientist, Einstein did important work in the field of physics. His work was very good. He received the Nobel Prize for physics in 1921.\
  In 1933, he went to live in the United States with his wife.'
-,
-vi: 'Bài 9 Albert Einstein<br>\
-B: Albert Einstein nổi tiếng khắp thế giới. Ông nổi tiếng với công trình khoa học của mình. Nhiều người cho rằng ông là nhà khoa học vĩ đại nhất của thế kỷ 20.<br>\
+,vi: 'B: Albert Einstein nổi tiếng khắp thế giới. Ông nổi tiếng với công trình khoa học của mình. Nhiều người cho rằng ông là nhà khoa học vĩ đại nhất của thế kỷ 20.<br>\
 Einstein sinh ra tại Đức vào năm 1879. Ông bắt đầu quan tâm đến khoa học từ khi còn rất nhỏ. Có người tặng ông một chiếc la bàn vào năm 1884.\
  Einstein thời trẻ rất thích tìm hiểu cách thức hoạt động của la bàn. Ông muốn học khoa học. Ông muốn trở thành một nhà khoa học.<br>\
 Einstein đã cố gắng vào một trường đại học hàng đầu của Thụy Sĩ. Lúc đầu, ông đã thất bại. Ông không được nhận vào học.\
@@ -201,8 +179,8 @@ Là một nhà khoa học, Einstein đã có những công trình quan trọng t
 ,voca:"successful,university,failure,field,century,young,chemistry,Switzerland,graduate,physics,famous around,for,in science,Swiss,from,As a scientist,Nobel,Prize"
 },
 {
-en: 'Unit 10 The Telescope<br>\
-G: Come and look at the telescope I got for my birthday.<br>\
+unit: 10,title:"The Telescope",
+en: 'G: Come and look at the telescope I got for my birthday.<br>\
 B: That’s neat!<br>\
 G: Yeah, now we can look at the moon. Did you know that the moon is the Earth’s only natural satellite?<br>\
 B: No, I didn’t know that. I thought the moon was a planet.<br>\
@@ -216,8 +194,7 @@ G: The other planet near Earth is Venus, but Venus has no moons.<br>\
 B: Do you think people will ever be able to visit Mars or Venus?<br>\
 G: Maybe someday people will be able to visit Mars, but not Venus because it’s too hot.<br>\
 B: Well, at least we can see them with your new telescope!',
-vi: 'Bài 10 Kính thiên văn<br>\
-G: Đến xem chiếc kính thiên văn mà tớ được tặng vào ngày sinh nhật nhé.<br>\
+vi: 'G: Đến xem chiếc kính thiên văn mà tớ được tặng vào ngày sinh nhật nhé.<br>\
 B: Tuyệt quá!<br>\
 G: Đúng rồi, giờ chúng ta có thể ngắm mặt trăng rồi. Cậu có biết mặt trăng là vệ tinh tự nhiên duy nhất của Trái đất không?<br>\
 B: Không, tớ không biết điều đó. Tớ nghĩ mặt trăng là một hành tinh.<br>\
@@ -232,11 +209,9 @@ B: Bạn có nghĩ con người sẽ có thể đến thăm Sao Hỏa hoặc Sao
 G: Có thể một ngày nào đó con người sẽ có thể đến thăm Sao Hỏa, nhưng không phải Sao Kim vì ở đó quá nóng.<br>\
 B: Vâng, ít nhất chúng ta có thể nhìn thấy chúng bằng kính thiên văn mới của bạn!',
 voca:"telescope,planet,moon,satellite,near,closest,lifeguard,Venus,Mars,Jupiter"
-}
-,
-{
-en:'Unit 11 The Mona Lisa<br>\
-G: What are you looking at, Billy?<br>\
+},{
+	unit:11,title:"The Mona Lisa",
+en:'G: What are you looking at, Billy?<br>\
 B: This is a copy of my favorite painting. It’s the Mona Lisa by Leonardo da Vinci.<br>\
 G: Why is that your favorite painting?<br>\
 B: Well, there are a few things that make the Mona Lisa great. First, she has no eyebrows. Second, she has a really beautiful smile. Most of all, I like the soft colors of the painting. Have you seen the Mona Lisa before? It is a very famous painting!<br>\
@@ -246,8 +221,7 @@ G: Wow! That’s really interesting! In what year was the Mona Lisa painted?<br>
 B: I think it was painted sometime between 1503 and 1505.<br>\
 G: I wonder what a modern Mona Lisa would look like.<br>\
 B: She might have purple hair!',
-vi:'Bài 11 Mona Lisa<br>\
-G: Cậu đang nhìn gì thế, Billy?<br>\
+vi:'G: Cậu đang nhìn gì thế, Billy?<br>\
 B: Đây là bản sao bức tranh yêu thích của tớ. Đó là bức Mona Lisa của Leonardo da Vinci.<br>\
 G: Tại sao đó lại là bức tranh yêu thích của cậu?<br>\
 B: Vâng, có một vài điều khiến bức Mona Lisa trở nên tuyệt vời. Đầu tiên, cô ấy không có lông mày. Thứ hai, cô ấy có một nụ cười thực sự đẹp. Trên hết, tớ thích những màu sắc nhẹ nhàng của bức tranh. Cậu đã từng thấy bức Mona Lisa chưa? Đó là một bức tranh rất nổi tiếng!<br>\
@@ -258,35 +232,28 @@ B: Tôi nghĩ bức tranh được vẽ vào khoảng năm 1503 đến 1505.<br>
 G: Tôi tự hỏi bức tranh Mona Lisa thời hiện đại sẽ trông như thế nào.<br>\
 B: Cô ấy có thể có mái tóc màu tím!',
 voca:"painting,shave,fashionable,missing,eyebrows,modern,forehead,high-heeled,notice,purple"
-},
-{
-	en:'Unit 12 Bang Yi<br>\
-G: Once upon a time, there was a poor, kind man named Bang Yi. He had a rich but greedy brother. One day, Bang Yi asked his brother to give him some grain seeds to grow. His greedy brother gave Bang Yi some poisoned seeds.<br>\
+},{unit:12,title:"Bang Yi",
+	en:'G: Once upon a time, there was a poor, kind man named Bang Yi. He had a rich but greedy brother. One day, Bang Yi asked his brother to give him some grain seeds to grow. His greedy brother gave Bang Yi some poisoned seeds.<br>\
 Only one plant grew from the poisoned seeds, but Bang Yi was very happy. He took good care of the plant. Then, one afternoon, a bird came and stole the plant. Bang Yi chased the bird into the forest. In the forest, he saw two monsters using a magic stick to turn rocks into food. Bang Yi hid behind a big rock and watched the monsters. The monsters ate a lot of food. Soon, they became very sleepy. When the monsters had fallen asleep, Bang Yi took their magic stick. He became very rich!<br>\
 Bang Yi’s greedy brother went to the forest to find a magic stick for himself. The angry monsters saw him. They chased him deep into the forest. The greedy brother was never seen again.',
-vi: 'Bài 12 Bang Yi<br>\
-G: Ngày xửa ngày xưa, có một người đàn ông nghèo nhưng tốt bụng tên là Bang Yi. Anh ta có một người anh trai giàu có nhưng tham lam. Một ngày nọ, Bang Yi nhờ anh trai cho một ít hạt giống ngũ cốc để trồng. Người anh trai tham lam đã đưa cho Bang Yi một ít hạt giống có tẩm độc.<br>\
+vi: 'G: Ngày xửa ngày xưa, có một người đàn ông nghèo nhưng tốt bụng tên là Bang Yi. Anh ta có một người anh trai giàu có nhưng tham lam. Một ngày nọ, Bang Yi nhờ anh trai cho một ít hạt giống ngũ cốc để trồng. Người anh trai tham lam đã đưa cho Bang Yi một ít hạt giống có tẩm độc.<br>\
 Chỉ có một cây mọc lên từ những hạt giống có tẩm độc, nhưng Bang Yi rất vui. Anh ta chăm sóc cây rất chu đáo. Sau đó, một buổi chiều, một con chim bay đến và ăn trộm cây. Bang Yi đuổi con chim vào rừng. Trong rừng, anh ta thấy hai con quái vật sử dụng một cây gậy phép thuật để biến đá thành thức ăn. Bang Yi ẩn sau một tảng đá lớn và theo dõi những con quái vật. Những con quái vật ăn rất nhiều thức ăn. Chẳng mấy chốc, chúng trở nên rất buồn ngủ. Khi những con quái vật đã ngủ, Bang Yi đã lấy cây gậy phép thuật của chúng. Anh ta trở nên rất giàu có!<br>\
 Người anh trai tham lam của Bang Yi đã vào rừng để tìm một cây gậy phép thuật cho mình. Những con quái vật tức giận đã nhìn thấy anh ta. Chúng đuổi anh ta vào sâu trong rừng. Không bao giờ nhìn thấy người anh trai tham lam nữa.'
 ,voca:"greedy,magic,kind,poison,angry,monster,chase,pollution,seed,fall asleep"
 },
-{
-	en:'Unit 13 Friendship Day<br>\
-W: Friends are an important part of our lives. They help us in many ways. Do you tell your friends that you are glad they are your friends? Everyone should tell their friends that they are special.<br>\
+{unit:13,title:"Friendship Day",
+	en:'W: Friends are an important part of our lives. They help us in many ways. Do you tell your friends that you are glad they are your friends? Everyone should tell their friends that they are special.<br>\
 Did you know that there is now a special day just for friends? This day is called National Friendship Day. The first Sunday in August was chosen to be National Friendship Day in 1935. This holiday is not as big as Christmas or New Year’s Day. However, it is still a special day.<br>\
 People are usually too busy to visit their friends often. But this day is different. On this day, people take time to tell their friends how much they care. They write cards or send emails to their friends. They may also call their friends, no matter how busy they are. People hug their friends or spend time with them.<br>\
 There are many ways to show you care. You need not wait for a special day. Call your friends right now!'
-, 
-vi:'Bài 13 Ngày tình bạn<br>\
-W: Bạn bè là một phần quan trọng trong cuộc sống của chúng ta. Họ giúp chúng ta theo nhiều cách. Bạn có nói với bạn bè rằng bạn rất vui vì họ là bạn của mình không? Mọi người nên nói với bạn bè rằng họ đặc biệt.<br>\
+,vi:'W: Bạn bè là một phần quan trọng trong cuộc sống của chúng ta. Họ giúp chúng ta theo nhiều cách. Bạn có nói với bạn bè rằng bạn rất vui vì họ là bạn của mình không? Mọi người nên nói với bạn bè rằng họ đặc biệt.<br>\
 Bạn có biết rằng hiện nay có một ngày đặc biệt chỉ dành cho bạn bè không? Ngày này được gọi là Ngày tình bạn quốc gia. Chủ Nhật đầu tiên của tháng 8 được chọn là Ngày tình bạn quốc gia vào năm 1935. Ngày lễ này không lớn như Giáng sinh hay Ngày đầu năm mới. Tuy nhiên, đây vẫn là một ngày đặc biệt.<br>\
 Mọi người thường quá bận rộn để thường xuyên đến thăm bạn bè. Nhưng ngày này thì khác. Vào ngày này, mọi người dành thời gian để nói với bạn bè rằng họ quan tâm đến bạn bè như thế nào. Họ viết thiệp hoặc gửi email cho bạn bè. Họ cũng có thể gọi điện cho bạn bè, bất kể họ bận rộn đến mức nào. Mọi người ôm bạn bè hoặc dành thời gian cho họ.<br>\
 Có nhiều cách để thể hiện sự quan tâm của bạn. Bạn không cần phải đợi đến một ngày đặc biệt. Hãy gọi điện cho bạn bè ngay bây giờ!',
 voca:"friendship,card,email,care,important,holiday,hug,deeply,education,Thanksgiving"
-},
-{
-	en:'Unit 14 An Outdoor Exhibit<br>\
-M: Do you like photographs?<br>\
+},{
+	unit:14,title:"An Outdoor Exhibit",
+	en:'M: Do you like photographs?<br>\
 W: What kind of photos?<br>\
 M: Photos of plants and animals, for example. Or mountains and oceans.<br>\
 W: The sort of photographs a nature magazine would publish.<br>\
@@ -305,8 +272,7 @@ W: That sounds great! I would love to see it.<br>\
 M: Me, too. Would you like to go with me?<br>\
 W: Sure. How about Sunday morning?<br>\
 M: OK! It will be fun to see all those photos!',
- vi:'Bài 14 Triển lãm ngoài trời<br>\
-M: Bạn có thích chụp ảnh không?<br>\
+ vi:'M: Bạn có thích chụp ảnh không?<br>\
 W: Loại ảnh nào?<br>\
 M: Ví dụ như ảnh về thực vật và động vật. Hoặc ảnh về núi và đại dương.<br>\
 W: Loại ảnh mà một tạp chí thiên nhiên sẽ xuất bản.<br>\
@@ -328,23 +294,21 @@ M: Được! Sẽ rất vui khi được xem tất cả những bức ảnh đó
 voca:"exhibit,outdoor,talent,magazine,publish,photograph,suddenly,enjoyable,display,how about"
 },
 {
-	en:'Unit 15 People Are Different!<br>\
-W: There are more than six billion human beings in the world. Each one is different from all the others. No two people look exactly alike. People from one country may look the same in general. But they are not totally alike.<br>\
+	unit:15,title:"People Are Different!"
+	,en:'W: There are more than six billion human beings in the world. Each one is different from all the others. No two people look exactly alike. People from one country may look the same in general. But they are not totally alike.<br>\
 Most people in Vietnam have straight black hair and black eyes. But they all look different. People in America have straight hair, curly hair, or wavy hair. Their hair may be black, brown, yellow, or red. Some people have brown or gray eyes. Some have blue or green eyes. Even people in the same family look different from each other!<br>\
 We all think differently. We all like different things. We like different kinds of food and different kinds of music. We also like different styles of clothing.<br>\
 Wherever you are, you are different from everyone else. Nobody else looks just like you. Nobody has your thoughts or your talents. There are more than six billion people on Earth, but none of them are exactly like you. You are one of a kind!'
-, 
- vi: 'Bài 15 Con người khác nhau!<br>\
-W: Có hơn sáu tỷ người trên thế giới. Mỗi người đều khác biệt với những người khác. Không có hai người nào trông giống hệt nhau. Người dân ở một quốc gia có thể trông giống nhau nhìn chung. Nhưng họ không hoàn toàn giống nhau.<br>\
+, vi: 'W: Có hơn sáu tỷ người trên thế giới. Mỗi người đều khác biệt với những người khác. Không có hai người nào trông giống hệt nhau. Người dân ở một quốc gia có thể trông giống nhau nhìn chung. Nhưng họ không hoàn toàn giống nhau.<br>\
 Hầu hết người dân Việt Nam đều có mái tóc đen thẳng và đôi mắt đen. Nhưng tất cả đều trông khác nhau. Người dân ở Mỹ có mái tóc thẳng, tóc xoăn hoặc tóc gợn sóng. Tóc của họ có thể là màu đen, nâu, vàng hoặc đỏ. Một số người có đôi mắt nâu hoặc xám. Một số người có đôi mắt xanh hoặc xanh lá cây. Ngay cả những người trong cùng một gia đình cũng trông khác nhau!<br>\
 Tất cả chúng ta đều suy nghĩ khác nhau. Tất cả chúng ta đều thích những thứ khác nhau. Chúng ta thích những loại thực phẩm khác nhau và những loại nhạc khác nhau. Chúng ta cũng thích những phong cách quần áo khác nhau.<br>\
 Dù bạn ở đâu, bạn cũng khác biệt với mọi người. Không ai khác trông giống hệt bạn. Không ai có suy nghĩ hoặc tài năng của bạn. Có hơn sáu tỷ người trên Trái đất, nhưng không ai trong số họ giống hệt bạn. Bạn là duy nhất!'
 ,voca:"nobody,exactly,differently,straight,world,alike,billion,totally,flavor,fingerprint,curly,wavy"
 },
 {
-title:"Unit 16 Karaoke",
-en:"Unit 16 Karaoke<br>\
-M: It's nice to see you, Karen. How have you been?<br>\
+	unit:16,
+title:"Karaoke",
+en:"M: It's nice to see you, Karen. How have you been?<br>\
 W: I've been very well, thank you. How are you, Dan?<br>\
 M: I'm fine, thanks. I went to the movies Saturday night. I wanted to invite you, but you weren't home.<br>\
 W: That's right, I went karaoke singing with some friends on Saturday night.<br>\
@@ -355,8 +319,7 @@ W: No, the place we went to rented out small private rooms. Nobody else could he
 M: Cool! What kind of music did they have?<br>\
 W: They had hundreds of different songs to choose from. They had both new songs and old songs. They had songs in English and songs in several other languages, too. It was really fun!<br>\
 M: I think I'll go karaoke singing next weekend!",
-vi:"Bài 16 Karaoke<br>\
-M: Rất vui được gặp bạn, Karen. Bạn thế nào?<br>\
+vi:"M: Rất vui được gặp bạn, Karen. Bạn thế nào?<br>\
 W: Tôi rất khỏe, cảm ơn bạn. Bạn thế nào, Dan?<br>\
 M: Tôi khỏe, cảm ơn bạn. Tôi đã đi xem phim vào tối thứ bảy. Tôi muốn mời bạn, nhưng bạn không ở nhà.<br>\
 W: Đúng vậy, tôi đã đi hát karaoke với một số người bạn vào tối thứ bảy.<br>\
@@ -369,8 +332,9 @@ W: Họ có hàng trăm bài hát khác nhau để lựa chọn. Họ có cả b
 M: Tôi nghĩ mình sẽ đi hát karaoke vào cuối tuần tới!",
 voca:"language,invite,private,rented,stranger,karaoke,experience,choose,soda"
 },
-{en:"Unit 17 Watching TV<br>\
-W: Did you watch the latest episode of that new reality show last night?<br>\
+{
+	unit:17,title:" Watching TV",
+	en:"W: Did you watch the latest episode of that new reality show last night?<br>\
 M: There are so many of those reality shows these days. Which one are you talking about?<br>\
 W: It's called 'Good Fences,' and it's all about neighbors. This reality show is the only one I like, because you're right, the others are just silly.<br>\
 M: I never watch reality shows at all. I prefer to watch shows that teach me about something, like science and nature programs, and travel shows.<br>\
@@ -380,8 +344,7 @@ W: Let's watch it together this week. It's on Thursday at eight o'clock, right?<
 M: That's right, but where shall we watch it?<br>\
 W: Well, I have a big-screen TV and a comfortable sofa.<br>\
 M: OK, we'll watch it at your place then, and I'll bring some snacks. See you then!",
-vi:"Bài 17 Xem TV<br>\
-W: Bạn đã xem tập mới nhất của chương trình truyền hình thực tế mới tối qua chưa?<br>\
+vi:"W: Bạn đã xem tập mới nhất của chương trình truyền hình thực tế mới tối qua chưa?<br>\
 M: Có rất nhiều chương trình truyền hình thực tế như vậy ngày nay. Bạn đang nói đến chương trình nào?<br>\
 W: Chương trình có tên là 'Good Fences' và toàn là về những người hàng xóm. Đây là chương trình truyền hình thực tế duy nhất tôi thích, vì bạn nói đúng, những chương trình khác chỉ toàn là ngớ ngẩn.<br>\
 M: Tôi không bao giờ xem chương trình truyền hình thực tế. Tôi thích xem những chương trình dạy tôi về một điều gì đó, như các chương trình khoa học và thiên nhiên, và các chương trình du lịch.<br>\

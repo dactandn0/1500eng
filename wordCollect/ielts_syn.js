@@ -21,6 +21,10 @@ const SynonymData = [
 	type:"a",
 	mean:"thô, chưa chế biến"
 },{
+	words:"clothes|clothing|apparel|garment|outfit",
+	type:"n",
+	mean:"quần áo, trang phục"
+},{
 	words:"quite /kwaɪt/|pretty|fairly /ˈferli/|a bit of|rather",
 	type:"adv",
 	mean:"khá (not very) (+ nouns, adj, adv)"

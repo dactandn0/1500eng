@@ -1,6 +1,49 @@
 
 const ENGLAB_BEGIN_DATA_S_Vol5 = [
 {
+	track:'1.01'
+	,title:"Formulas Speaking"
+	,en:"1) Do you prefer public transportation or private transportation?<br>\
+I would opt for public transportation. This is because I find it more environmentally friendly and often less stressful than driving through traffic. Plus, it allows me to relax, read, or catch up on work during the commute, making the most of my time.<br>\
+2) Do you prefer to read news online or in the newspaper?<br>\
+I enjoy both, but if I had to choose, I would go for online news. This is because the Internet allows me much faster access to news in real time and whenever we are. Also, I can share articles or write my own comments on social media, which cannot be done if I read newspapers.<br>\
+3) Do you prefer talking on the phone or chatting online?<br>\
+To be honest, I prefer chatting online rather than talking on the phone. This is because it is easy to message several people at once and to stay in touch with my friends. Also, I find chatting online convenient and flexible because I can chat with my friends anytime without the fear of disturbing them.<br>\
+4) Do you like working out?<br>\
+Yes, certainly. I am keen on doing exercise because it is relaxing and healthy. On top of that, doing exercise helps me improve hand-eye coordination and maintain a great figure. It also prevents various health problems such as high blood pressure, stroke, and lung cancer."
+,vi:"1) Bạn thích phương tiện công cộng hay phương tiện cá nhân hơn?<br>\
+Tôi sẽ chọn phương tiện công cộng. Lý do là vì tôi thấy phương tiện này thân thiện với môi trường hơn và thường ít căng thẳng hơn so với việc lái xe trong dòng xe cộ đông đúc. Thêm vào đó, phương tiện này cho phép tôi thư giãn, đọc sách hoặc làm việc trong khi đi làm, tận dụng tối đa thời gian của mình.<br>\
+2) Bạn thích đọc tin tức trực tuyến hay trên báo?<br>\
+Tôi thích cả hai, nhưng nếu phải lựa chọn, tôi sẽ chọn tin tức trực tuyến. Lý do là vì Internet cho phép tôi truy cập tin tức nhanh hơn nhiều theo thời gian thực và bất cứ khi nào chúng ta có thể. Ngoài ra, tôi có thể chia sẻ các bài viết hoặc viết bình luận của riêng mình trên phương tiện truyền thông xã hội, điều mà tôi không thể làm được nếu đọc báo.<br>\
+3) Bạn thích nói chuyện qua điện thoại hay trò chuyện trực tuyến?<br>\
+Thành thật mà nói, tôi thích trò chuyện trực tuyến hơn là nói chuyện qua điện thoại. Lý do là vì tôi có thể dễ dàng nhắn tin cho nhiều người cùng một lúc và giữ liên lạc với bạn bè. Ngoài ra, tôi thấy trò chuyện trực tuyến tiện lợi và linh hoạt vì tôi có thể trò chuyện với bạn bè bất cứ lúc nào mà không sợ làm phiền họ.<br>\
+4) Bạn có thích tập thể dục không?<br>\
+Có, chắc chắn rồi. Tôi thích tập thể dục vì nó thư giãn và lành mạnh. Trên hết, tập thể dục giúp tôi cải thiện sự phối hợp tay mắt và duy trì vóc dáng tuyệt vời. Nó cũng ngăn ngừa nhiều vấn đề sức khỏe khác nhau như huyết áp cao, đột quỵ và ung thư phổi."
+},{
+	track:"1.02"
+	,title:"Formulas Speaking"
+	,en:"1) When was the first time you used a computer?<br>\
+Well, as far as I can recall, my first time using a computer was about 10 years ago. It was a birthday present from my father, and I was thrilled to receive it because it was the latest model available then. I eagerly started learning how to use it right away, and it marked the beginning of my fascination in technology.<br>\
+2) What kind of music do you like?<br>\
+There are many kinds of movies that I enjoy, one of which is action movies. This is simply because I enjoy watching characters face dangerous situations and battle against others to survive. Beside that, I am also a real sucker for superhero movies like Batman or The Avengers. What I like about them is that the visual effects are eye-pleasing and they generally star a lot of handsome actors.<br>\
+3) What kinds of books do you like to read most?<br>\
+I love all kinds of books, but if I had to choose one, I would go for business books because by reading business books, I can learn how to deal with difficult situations more effectively, how to work as a team and how to think more independently.<br>\
+4) What kinds of foods do you like to eat most?<br>\
+I love all kinds of foods, but if I had to choose one, I would go for home-cooked food. This is because I believe that home-cooked food/they tend// tends to be healthier and more budget-friendly compared to restaurant meals. That’s why I make an effort to limit how often I eat out.<br>\
+5) What types of clothes do you like to wear most?<br>\
+I find casual clothing to be comfortable and versatile for everyday wear. However, I also enjoy dressing up for special occasions when the opportunity arises. I love shorts and T-shirts most because they are comfortable and easy to wear. I wear them whenever I hang out with my friends. I think they will never be out of fashion. We can see that they are always trendy and stylish."
+,vi:"1) Lần đầu tiên bạn sử dụng máy tính là khi nào?<br>\
+Theo như tôi nhớ, lần đầu tiên tôi sử dụng máy tính là khoảng 10 năm trước. Đó là món quà sinh nhật của bố tôi, và tôi rất vui khi nhận được nó vì đó là mẫu máy mới nhất có sẵn vào thời điểm đó. Tôi háo hức bắt đầu học cách sử dụng nó ngay lập tức, và nó đánh dấu sự khởi đầu cho sự say mê công nghệ của tôi.<br>\
+2) Bạn thích thể loại nhạc nào?<br>\
+Tôi thích nhiều thể loại phim, một trong số đó là phim hành động. Đơn giản là vì tôi thích xem các nhân vật đối mặt với những tình huống nguy hiểm và chiến đấu với những người khác để sinh tồn. Bên cạnh đó, tôi cũng rất thích những bộ phim siêu anh hùng như Batman hay The Avengers. Điều tôi thích ở chúng là hiệu ứng hình ảnh rất đẹp mắt và chúng thường có sự tham gia của nhiều diễn viên đẹp trai.<br>\
+3) Bạn thích đọc loại sách nào nhất?<br>\
+Tôi thích tất cả các loại sách, nhưng nếu phải chọn một, tôi sẽ chọn sách kinh doanh vì khi đọc sách kinh doanh, tôi có thể học cách giải quyết các tình huống khó khăn hiệu quả hơn, cách làm việc nhóm và cách suy nghĩ độc lập hơn.<br>\
+4) Bạn thích ăn loại thực phẩm nào nhất?<br>\
+Tôi thích tất cả các loại thực phẩm, nhưng nếu phải chọn một, tôi sẽ chọn đồ ăn nấu tại nhà. Lý do là vì tôi tin rằng đồ ăn nấu tại nhà/chúng có xu hướng// có xu hướng lành mạnh hơn và tiết kiệm hơn so với các bữa ăn ở nhà hàng. Đó là lý do tại sao tôi cố gắng hạn chế tần suất ăn ngoài.<br>\
+5) Bạn thích mặc loại trang phục nào nhất?<br>\
+Tôi thấy quần áo thường ngày thoải mái và đa năng để mặc hàng ngày. Tuy nhiên, tôi cũng thích diện đồ đẹp cho những dịp đặc biệt khi có cơ hội. Tôi thích quần short và áo phông nhất vì chúng thoải mái và dễ mặc. Tôi mặc chúng bất cứ khi nào đi chơi với bạn bè. Tôi nghĩ chúng sẽ không bao giờ lỗi mốt. Chúng ta có thể thấy rằng chúng luôn hợp thời trang và sành điệu."
+},
+{
 	track:1.1
 	,title:"Conversation With A Stranger"
 	,en:"1) Is it hard to start a conversation with a stranger?<br>\

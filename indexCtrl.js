@@ -188,7 +188,7 @@ $scope.Index_NoteVoca_Speak = function (word) {
   var concatWord = ''
   parts.forEach(ele => {
     if (TIENGVIET_ARR.includes(ele)) return; // ~ continue
-    if (/^[A-Za-z\.,!\?'\-]+$/gi.test(ele))  // keep we'd, he's, Mr.Vas
+    if (/^[A-Za-z\.,!\?'\-\:]+$/gi.test(ele))  // keep we'd, he's, Mr.Vas
     {
       concatWord += ' ' + ele
     }

@@ -15,9 +15,11 @@ adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
 burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
 addiction (n) /əˈdɪkʃn/ nghiện ngập<br>\
+confide (v) /kənˈfaɪd/ tâm sự<br>\
 betray (v) /bɪˈtreɪ/ phản bội<br>\
 affordable (a) /əˈfɔːrdəbl/ có thể chi trả<br>\
 landfill (n) /ˈlændfɪl/ bãi rác<br>\
+drift (n,v) /drɪft/ trôi dạt, xa cách<br>\
 arrive (v) /əˈraɪv/ đến<br>\
 rebellious (a) /rɪˈbeljəs/ nổi loạn, bạo động<br>\
 romance (a) /ˈrəʊmæns/ lãng mạn<br>\
@@ -50,6 +52,7 @@ brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 acquire (v) /əˈkwaɪər/ có được<br>\
 low-budget (a) ngân sách thấp<br>\
+science (n) khoa học<br>\
 scientific (a) có tính khoa học<br>\
 unaggressive (a) không hung hăng<br>\
 moment (n) khoảnh khắc<br>\
@@ -307,8 +310,8 @@ feed thức ăn<br>\
 hole lỗ<br>\
 unwind (v) /ʌnˈwaɪnd/ thư giãn<br>\
 increase (v) /ɪnˈkriːs/ tăng<br>\
-lord chúa<br>\
-owe nợ<br>\
+lord (n) /lɔːrd/ chúa<br>\
+owe (v) /əʊ/ nợ<br>\
 position vị trí<br>\
 raise nâng cao<br>\
 responsible có trách nhiệm<br>\

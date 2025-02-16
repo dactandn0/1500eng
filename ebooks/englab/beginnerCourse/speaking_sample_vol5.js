@@ -488,12 +488,12 @@ I'm afraid not. I normally travel around by my motorbike since my workplace and 
 I don't think so. There are tons of different means of transport to assist people in travelling these days, so there is no point in walking anywhere. That's not to mention people nowadays have such a tight schedule that they hardly have any leisure time for such physical activity.<br>\
 3) Do you think people will take a walk more often or not?<br>\
 Probably no. Like I have said, unless people learn to balance between work and life, it would be hard for them to spare any time for walking. Besides, people nowadays would prefer staying indoors and going to the gym than going for a walk."
-	,vi:"1) Do you walk a lot?<br>\
-I'm afraid not. I normally travel around by my motorbike since my workplace and my school are not really near my house. Though I know walking regularly can do wonders for our health, I am still too lazy to step out of my house and go for a walk.<br>\
-2) Do you think people often take more than in the past?<br>\
-I don't think so. There are tons of different means of transport to assist people in travelling these days, so there is no point in walking anywhere. That's not to mention people nowadays have such a tight schedule that they hardly have any leisure time for such physical activity.<br>\
-3) Do you think people will take a walk more often or not?<br>\
-Probably no. Like I have said, unless people learn to balance between work and life, it would be hard for them to spare any time for walking. Besides, people nowadays would prefer staying indoors and going to the gym than going for a walk."
+	,vi:"1) Bạn có đi bộ nhiều không?<br>\
+Tôi e là không. Tôi thường đi xe máy vì nơi làm việc và trường học của tôi không thực sự gần nhà. Mặc dù tôi biết đi bộ thường xuyên có thể mang lại điều kỳ diệu cho sức khỏe của chúng ta, nhưng tôi vẫn quá lười để bước ra khỏi nhà và đi dạo.<br>\
+2) Bạn có nghĩ mọi người thường đi nhiều hơn trước không?<br>\
+Tôi không nghĩ vậy. Ngày nay, có rất nhiều phương tiện giao thông khác nhau hỗ trợ mọi người đi lại, vì vậy không có lý do gì để đi bộ ở bất cứ đâu. Đó là chưa kể mọi người ngày nay có lịch trình rất bận rộn đến nỗi họ hầu như không có thời gian rảnh rỗi cho các hoạt động thể chất như vậy.<br>\
+3) Bạn có nghĩ mọi người sẽ đi bộ thường xuyên hơn hay không?<br>\
+Có lẽ là không. Như tôi đã nói, trừ khi mọi người học cách cân bằng giữa công việc và cuộc sống, nếu không họ sẽ khó có thời gian để đi bộ. Bên cạnh đó, mọi người ngày nay thích ở trong nhà và đến phòng tập thể dục hơn là đi bộ."
 	,voca:"means of transport,balance between work and life,spare any time"
 	,note:"Means of transport /miːnz əv ˈtræn.spɔːt/: phương tiện giao thông Ví dụ: The means of transport was oddly appropriate |A tight schedule: lịch trình dày đặc Schedule /ˈʃedʒ.uːl/ : lịch trình Tight /taɪt/ : eo hẹp Ví dụ: We had a tight schedule.|To balance between work and life: cân bằng giữa công việc và cuộc sống Balance  /ˈbæl.əns/ : Cân bằng Work /wɜːk/ : công việc Life /laɪf/ : cuộc sống Ví dụ: the balance between work and life has become central to progressive family policy.|To spare any time /speər ˈen.i  taɪm/ : dành thời gian làm việc gì Ví dụ: I could not spare any time for work."
 },{

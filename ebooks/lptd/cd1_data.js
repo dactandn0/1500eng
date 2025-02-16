@@ -304,6 +304,7 @@ voca:"play,guess,early,hope"
 },
 {
 	unit:14,
+	title:"Ballet Class",
 en:"W: Hi Cindy, where are you going?<br>\
 G: Good afternoon, Mrs. White, I'm going to ballet class.<br>\
 W: Ballet class? I didn't know you were studying ballet. How long have you been studying ballet?<br>\
@@ -326,8 +327,8 @@ voca:"ballet,practice,learn,dance,street,graceful,age,step,course,enjoy"
 },
 {
 	unit:15,
-en:"Monet's Garden<br>\
-W: Claude Monet was a great artist. He was the first of a group of artists called the Impressionists. This group of artists thought about how things in the world made them feel. They tried to show this in their work. This way of painting shows how light can change shapes and colors. Monet did a lot of his work outdoors. He wanted to show how daylight made things look.<br>\
+title:"Monet's Garden",
+en:"W: Claude Monet was a great artist. He was the first of a group of artists called the Impressionists. This group of artists thought about how things in the world made them feel. They tried to show this in their work. This way of painting shows how light can change shapes and colors. Monet did a lot of his work outdoors. He wanted to show how daylight made things look.<br>\
 Many of his paintings are of gardens. He liked to paint flowers and trees. He loved to paint in his own garden. His garden was in a village. He lived there for many years.<br>\
 Today, many visitors come each year to this garden. They come from all over the world. Most of them are art lovers or artists. They come to see the place that Monet loved so much."
 , vi: "W: Claude Monet là một nghệ sĩ vĩ đại. Ông là người đầu tiên trong nhóm nghệ sĩ được gọi là Trường phái Ấn tượng. Nhóm nghệ sĩ này nghĩ về cách mọi thứ trên thế giới khiến họ cảm thấy.<br>\
@@ -687,7 +688,8 @@ M: That's right. My friend is a runner, so I went there to watch her run. We tra
 W: You are so lucky! Which part of the marathon did you see?<br>\
 M: I watched the entire race, from start to finish.<br>\
 W: I don't know how the runners can finish the whole race! It's so long and difficult! I could never do something like that.<br>\
-M: I tried to run a marathon once. It was really difficult. I just can't run like my friend can. W: Yes, running a marathon is not an easy thing to do. By the way, how did your friend do in the race?<br>\
+M: I tried to run a marathon once. It was really difficult. I just can't run like my friend can.<br>\
+W: Yes, running a marathon is not an easy thing to do. By the way, how did your friend do in the race?<br>\
 M: She did quite well! She was not the fastest runner, but she was in the top 50."
 , vi: "W: Bạn có xem giải marathon Boston không?<br>\
 M: Có, tôi đã đến Boston để xem.<br>\
@@ -696,8 +698,9 @@ M: Đúng rồi. Bạn tôi là một vận động viên chạy bộ, vì vậy
 W: Bạn thật may mắn! Bạn đã xem phần nào của giải marathon?<br>\
 M: Tôi đã xem toàn bộ cuộc đua, từ đầu đến cuối.<br>\
 W: Tôi không biết làm thế nào mà những người chạy bộ có thể hoàn thành toàn bộ cuộc đua! Nó dài và khó khăn quá! Tôi không bao giờ có thể làm được điều gì như vậy.<br>\
-M: Tôi đã từng thử chạy marathon một lần. Thực sự rất khó. Tôi không thể chạy như bạn tôi được. W: Đúng vậy, chạy marathon không phải là một việc dễ dàng. Nhân tiện, bạn của bạn đã làm thế nào trong cuộc đua?<br>\
-M: Cô ấy đã làm khá tốt! Cô ấy không phải là người chạy nhanh nhất, nhưng cô ấy nằm trong top 50",
+M: Tôi đã từng thử chạy marathon một lần. Thực sự rất khó. Tôi không thể chạy như bạn tôi được.<br>\
+W: Đúng vậy, chạy marathon không phải là một việc dễ dàng. Nhân tiện, bạn của bạn đã làm thế nào trong cuộc đua?<br>\
+M: Cô ấy đã làm khá tốt! Cô ấy không phải là người chạy nhanh nhất, nhưng cô ấy nằm trong top 50.",
 voca:"marathon,runners,difficult,fifty,race,lucky,entire,in the top 50,by the way,take part"
 },
 {

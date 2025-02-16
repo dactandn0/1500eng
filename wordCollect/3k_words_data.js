@@ -1372,7 +1372,7 @@ bow tie (n) /ˈboʊ taɪ/ nơ con bướm<br>\
 tie (n) /taɪ/ cà vạt<br>\
 tunic (n) /ˈtuː.nɪk/ áo trùm hông<br>\
 vest (n) /vɛst/ áo gi-lê<br>\
-t-shirt (n) /ˈtiː.ʃɜːrt/ áo thun<br>\
+t-shirt (n) /ˈtiː.ʃɜːrt/ áo thun (phông)<br>\
 shirt (n) /ʃɜːrt/ áo sơ mi<br>\
 jeans (n) /dʒiːnz/ quần jean<br>\
 dress (n) /drɛs/ áo đầm<br>\

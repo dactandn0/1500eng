@@ -396,6 +396,124 @@ Khi chấm dứt hợp đồng thuê, bạn phải nhớ rằng Luật của Ti�
 16T. You can find in the rental agreement the building owner's responsibilities as well as yours. <br>\
 17T. According to the rental agreement, the building owner cannot evict the residents without any proper reasons.<br>\
 18T. You should ask before signing about any part of the lease which you do not understand. "
+},{
+	unit:10
+	,title:"How New York Became America's Largest City "
+	,en:"Section 1 <br>\
+In the 18th century New York was smaller than Philadelphia and Boston. Today it is the largest city in America. How can the change in its size and importance be explained? To answer this question we must consider certain facts about geography, history, and economics. Together these three will explain the huge growth of America's most famous city.<br>\
+Section 2<br>\
+The map of the Northeast shows that four of the most heavily populated areas in this region are around seaports. At these points materials from across the sea enter the United States, and the products of the land are sent there for export across the sea.<br>\
+Section 3 <br>\
+Economists know that places where transportation lines meet are good places for making raw materials into finished goods. That is why seaports often have cities nearby. But cities like New York needed more than their geographical location in order to become great industrial centres. Their development did not happen simply by chance.<br>\
+Section 4 <br>\
+About 1815, when many Americans from the east coast had already moved toward the west, trade routes from the ports to the central regions of the country began to be a serious problem. The slow wagons of that time, drawn by horses or oxen, were too expensive for moving heavy freight very far. Americans had long admired Europe's canals. In New York State, a canal seemed the best solution to the transportation problem. Fr~m the eastern end of Lake Erie all the way across the state to the Hudson River, there is a long strip of low land. Here the Erie Canal was constructed. After several years of work, it was completed in 1825.<br>\
+Section 5 <br>\
+The canal produced an immediate effect. Freight costs were cut to about one tenth of what they had been. New York City, which had been smaller than Philadelphia and Boston, quickly became the leading city of the coast. In the years that followed, transportation routes on the Great Lakes were joined to routes on the Mississippi River. Then New York City became the end point of a great inland shipping system that extended from the Atlantic Ocean far up the western branches of the Mississippi.<br>\
+Section 6 <br>\
+The coming of the railroads made canal shipping less important, but it tied New York even more closely to the central regions of the country. It was easier for people in the central states to ship their goods to New York for export overseas.<br>\
+Section 7 <br>\
+Exports from New York were greater than imports. Consequently, shipping companies were eager to fill their ships with passengers on the return trip from Europe. Passengers could come from Europe very cheaply as a result.<br>\
+Section 8 <br>\
+Thus New York became the greatest port for receiving people from European countries. Many of these people remained in the city. Others stayed in New York for a few weeks, months, or years, and then moved to other parts of the United States. For these great numbers of new Americans, New York had to provide homes, goods, and services. Their labour helped the city become great."
+	,vi:"Phần 1 <br>\
+Vào thế kỷ 18, New York nhỏ hơn Philadelphia và Boston. Ngày nay, đây là thành phố lớn nhất nước Mỹ. Làm sao có thể giải thích được sự thay đổi về quy mô và tầm quan trọng của thành phố này? Để trả lời câu hỏi này, chúng ta phải xem xét một số sự kiện về địa lý, lịch sử và kinh tế. Cả ba yếu tố này sẽ cùng nhau giải thích sự phát triển mạnh mẽ của thành phố nổi tiếng nhất nước Mỹ.<br>\
+Phần 2<br>\
+Bản đồ vùng Đông Bắc cho thấy bốn khu vực đông dân nhất trong vùng này nằm xung quanh các cảng biển. Tại những điểm này, vật liệu từ bên kia biển đi vào Hoa Kỳ và các sản phẩm của vùng đất này được chuyển đến đó để xuất khẩu qua biển.<br>\
+Phần 3 <br>\
+Các nhà kinh tế biết rằng những nơi giao nhau của các tuyến giao thông là nơi tốt để chế biến nguyên liệu thô thành hàng hóa thành phẩm. Đó là lý do tại sao các cảng biển thường có các thành phố gần đó. Nhưng những thành phố như New York cần nhiều hơn vị trí địa lý của họ để trở thành các trung tâm công nghiệp lớn. Sự phát triển của chúng không phải diễn ra một cách ngẫu nhiên.<br>\
+Phần 4 <br>\
+Khoảng năm 1815, khi nhiều người Mỹ từ bờ biển phía đông đã di chuyển về phía tây, các tuyến đường thương mại từ các cảng đến các vùng trung tâm của đất nước bắt đầu trở thành một vấn đề nghiêm trọng. Những chiếc xe ngựa chậm chạp thời đó, được kéo bởi ngựa hoặc bò, quá đắt để vận chuyển hàng hóa nặng đi rất xa. Người Mỹ từ lâu đã ngưỡng mộ các kênh đào của châu Âu. Ở tiểu bang New York, một kênh đào dường như là giải pháp tốt nhất cho vấn đề vận chuyển. Từ đầu phía đông của Hồ Erie cho đến tận bên kia tiểu bang đến Sông Hudson, có một dải đất thấp dài. Kênh đào Erie đã được xây dựng tại đây. Sau nhiều năm thi công, nó đã hoàn thành vào năm 1825.<br>\
+Phần 5 <br>\
+Kênh đào đã tạo ra hiệu ứng ngay lập tức. Chi phí vận chuyển hàng hóa đã giảm xuống còn khoảng một phần mười so với trước đây. Thành phố New York, vốn nhỏ hơn Philadelphia và Boston, đã nhanh chóng trở thành thành phố hàng đầu của bờ biển. Trong những năm tiếp theo, các tuyến đường vận chuyển trên Hồ Lớn đã được nối với các tuyến đường trên Sông Mississippi. Sau đó, Thành phố New York trở thành điểm cuối của một hệ thống vận chuyển nội địa lớn kéo dài từ Đại Tây Dương đến tận các nhánh phía tây của Sông Mississippi.<br>\
+Mục 6 <br>\
+Sự ra đời của đường sắt khiến vận chuyển qua kênh đào trở nên ít quan trọng hơn, nhưng nó lại gắn kết chặt chẽ hơn New York với các vùng trung tâm của đất nước. Người dân ở các tiểu bang miền trung dễ dàng vận chuyển hàng hóa của họ đến New York để xuất khẩu ra nước ngoài hơn.<br>\
+Mục 7 <br>\
+Xuất khẩu từ New York lớn hơn nhập khẩu. Do đó, các công ty vận chuyển rất muốn lấp đầy tàu của họ bằng hành khách trên chuyến trở về từ Châu Âu. Do đó, hành khách có thể đến từ Châu Âu với giá rất rẻ.<br>\
+Mục 8 <br>\
+Do đó, New York đã trở thành cảng lớn nhất để tiếp nhận người dân từ các nước Châu Âu. Nhiều người trong số họ vẫn ở lại thành phố. Những người khác ở lại New York trong vài tuần, vài tháng hoặc vài năm, rồi chuyển đến các vùng khác của Hoa Kỳ. Đối với số lượng lớn người Mỹ mới này, New York phải cung cấp nhà ở, hàng hóa và dịch vụ. Sức lao động của họ đã giúp thành phố trở nên vĩ đại."
+	,voca:"branches,labour,port,region,inland,wagons,Economists,populated"
+	,T_F_NG:"13F. New York is typical of cities that became industrial centres simply because of their geo graphical locations.<br>\
+14T. In 1815, people moved to the central regions of the country in wagons drawn by horses. <br>\
+15. All Americans agreed that they should build a canal for transportation. <br>\
+16T. The Erie Canal was constructed between Lake Erie and the Hudson River. <br>\
+17F. The Erie Canal was not successful in bringing the freight costs down immediately. <br>\
+18T. Canal transportation was affected by the coming of the railroads. <br>\
+19T. The labour of people whom shipping companies brought back from Europe helped New York become great."
+,Match_Heading:"S6. Then came the train<br>\
+S8. Cheap fares from Europe<br>\
+S2. Seaports<br>\
+S1. Three factors<br>\
+S3. Not just because of where it is<br>\
+S7. Most popular place to arrive<br>\
+S4. Beginning of canal shipping<br>\
+S5. Further development of water transport"
+},{
+	title:"The Importance Of Children's Play"
+	,en:"Brick by brick, six-year-old Alice is building a magical kingdom. Imagining fairy-tale turrets and fire-breathing dragons, wicked witches and gallant heroes, she's creating an enchanting world. Although she isn't aware of it, this fantasy is helping her take her first steps towards her capacity for creativity and so it will have important repercussions in her adult life.<br>\
+<br>\
+Minutes later, Alice has abandoned the kingdom in favour of playing schools with her younger brother. When she bosses him around as his 'teacher', she's practising how to regulate her emotions through pretence. Later on, when they tire of this and settle down with a board game, she's learning about the need to follow rules and take turns with a partner.<br>\
+<br>\
+'Play in all its rich variety is one of the highest achievements of the human species,' says Dr David Whitebread from the Faculty of Education at the University of Cambridge, UK. 'It underpins how we develop as intellectual, problem-solving adults and is crucial to our success as a highly adaptable species.'<br>\
+<br>\
+Recognising the importance of play is not new: over two millennia ago, the Greek philosopher Plato extolled its virtues as a means of developing skills for adult life, and ideas about play-based learning have been developing since the 19th century.<br>\
+<br>\
+But we live in changing times, and Whitebread is mindful of a worldwide decline in play, pointing out that over half the people in the world now live in cities. 'The opportunities for free play, which I experienced almost every day of my childhood, are becoming increasingly scarce,' he says. Outdoor play is curtailed by perceptions of risk to do with traffic, as well as parents' increased wish to protect their children from being the victims of crime, and by the emphasis on 'earlier is better' which is leading to greater competition in academic learning and schools.<br>\
+<br>\
+International bodies like the United Nations and the European Union have begun to develop policies concerned with children's right to play, and to consider implications for leisure facilities and educational programmes. But what they often lack is the evidence to base policies on.<br>\
+<br>\
+Dr Jenny Gibson agrees, pointing out that although some of the steps in the puzzle of how and why play is important have been looked at, there is very little data on the impact it has on the child's later life.<br>\
+<br>\
+Now, thanks to the university's new Centre for Research on Play in Education, Development and Learning (PEDAL), Whitebread, Baker, Gibson and a team of researchers hope to provide evidence on the role played by play in how a child develops.<br>\
+<br>\
+'A strong possibility is that play supports the early development of children's self-control,' explains Baker. 'This is our ability to develop awareness of our own thinking processes - it influences how effectively we go about undertaking challenging activities.'<br>\
+<br>\
+In a study carried out by Baker with toddlers and young pre-schoolers, she found that children with greater self-control solved problems more quickly when exploring an unfamiliar set-up requiring scientific reasoning. 'This sort of evidence makes us think that giving children the chance to play will make them more successful problem-solvers in the long run.'<br>\
+<br>\
+If playful experiences do facilitate this aspect of development, say the researchers, it could be extremely significant for educational practices, because the ability to self-regulate has been shown to be a key predictor of academic performance.<br>\
+<br>\
+Gibson adds: 'Playful behaviour is also an important indicator of healthy social and emotional development. In my previous research, I investigated how observing children at play can give us important clues about their well-being and can even be useful in the diagnosis of neurodevelopmental disorders like autism.'<br>\
+<br>\
+Whitebread's recent research has involved developing a play-based approach to supporting children's writing. 'Many primary school children find writing difficult, but we showed in a previous study that a playful stimulus was far more effective than an instructional one.' Children wrote longer and better-structured stories when they first played with dolls representing characters in the story. In the latest study, children first created their story with Lego*, with similar results. 'Many teachers commented that they had always previously had children saying they didn't know what to write about. With the Lego building, however, not a single child said this through the whole year of the project.'<br>\
+<br>\
+Whitebread, who directs PEDAL, trained as a primary school teacher in the early 1970s, when, as he describes, 'the teaching of young children was largely a quiet backwater, untroubled by any serious intellectual debate or controversy.' Now, the landscape is very different, with hotly debated topics such as school starting age.<br>\
+<br>\
+'Somehow the importance of play has been lost in recent decades. It's regarded as something trivial, or even as something negative that contrasts with 'work'. Let's not lose sight of its benefits, and the fundamental contributions it makes to human achievements in the arts, sciences and technology. Let's make sure children have a rich diet of play experiences.'"
+	,vi:"Từng viên gạch một, Alice sáu tuổi đang xây dựng một vương quốc kỳ diệu. Tưởng tượng ra những tòa tháp trong truyện cổ tích và những con rồng phun lửa, những phù thủy độc ác và những anh hùng dũng cảm, cô bé đang tạo ra một thế giới đầy mê hoặc. Mặc dù cô bé không nhận ra điều đó, nhưng tưởng tượng này đang giúp cô bé thực hiện những bước đầu tiên hướng tới khả năng sáng tạo của mình và do đó, nó sẽ có những tác động quan trọng trong cuộc sống trưởng thành của cô bé.<br>\
+<br>\
+Vài phút sau, Alice đã từ bỏ vương quốc để chơi trò trường học với em trai mình. Khi cô bé ra lệnh cho em trai mình như một 'giáo viên', cô bé đang thực hành cách điều chỉnh cảm xúc của mình thông qua sự giả vờ. Sau đó, khi họ chán trò chơi này và ngồi xuống với một trò chơi cờ bàn, cô bé học được về nhu cầu tuân theo các quy tắc và chơi theo lượt với một người bạn.<br>\
+<br>\
+'Chơi với tất cả sự đa dạng phong phú của nó là một trong những thành tựu cao nhất của loài người,' Tiến sĩ David Whitebread từ Khoa Giáo dục tại Đại học Cambridge, Vương quốc Anh cho biết. 'Nó củng cố cách chúng ta phát triển như những người trưởng thành có trí tuệ, biết giải quyết vấn đề và đóng vai trò quan trọng đối với thành công của chúng ta như một loài có khả năng thích nghi cao.'<br>\
+<br>\
+Nhận ra tầm quan trọng của trò chơi không phải là điều mới mẻ: hơn hai thiên niên kỷ trước, triết gia Hy Lạp Plato đã ca ngợi những đức tính của trò chơi như một phương tiện phát triển các kỹ năng cho cuộc sống trưởng thành và những ý tưởng về việc học thông qua trò chơi đã phát triển từ thế kỷ 19.<br>\
+<br>\
+Nhưng chúng ta đang sống trong thời đại thay đổi và Whitebread nhận thức được sự suy giảm trò chơi trên toàn thế giới, chỉ ra rằng hơn một nửa dân số thế giới hiện đang sống ở các thành phố. 'Những cơ hội được chơi tự do, điều mà tôi đã trải qua hầu như mỗi ngày trong thời thơ ấu của mình, đang ngày càng trở nên khan hiếm', ông nói. Trò chơi ngoài trời bị hạn chế do nhận thức về rủi ro liên quan đến giao thông, cũng như mong muốn ngày càng tăng của cha mẹ trong việc bảo vệ con cái họ khỏi trở thành nạn nhân của tội phạm và do sự nhấn mạnh vào 'sớm hơn là tốt hơn' đang dẫn đến sự cạnh tranh lớn hơn trong học tập và trường học.<br>\
+<br>\
+Các tổ chức quốc tế như Liên hợp quốc và Liên minh châu Âu đã bắt đầu xây dựng các chính sách liên quan đến quyền vui chơi của trẻ em và xem xét các tác động đối với các cơ sở giải trí và chương trình giáo dục. Nhưng điều mà họ thường thiếu là bằng chứng để xây dựng chính sách.<br>\
+<br>\
+Tiến sĩ Jenny Gibson đồng ý, chỉ ra rằng mặc dù một số bước trong câu đố về cách thức và lý do tại sao chơi đùa lại quan trọng đã được xem xét, nhưng có rất ít dữ liệu về tác động của nó đối với cuộc sống sau này của trẻ.<br>\
+<br>\
+Giờ đây, nhờ có Trung tâm Nghiên cứu về Chơi đùa trong Giáo dục, Phát triển và Học tập (PEDAL) mới của trường đại học, Whitebread, Baker, Gibson và một nhóm các nhà nghiên cứu hy vọng sẽ cung cấp bằng chứng về vai trò của trò chơi đối với sự phát triển của trẻ.<br>\
+<br>\
+Baker giải thích rằng 'Có khả năng lớn là trò chơi hỗ trợ sự phát triển sớm khả năng tự chủ của trẻ em'. 'Đây là khả năng phát triển nhận thức về quá trình suy nghĩ của chính chúng ta - nó ảnh hưởng đến hiệu quả của chúng ta khi thực hiện các hoạt động đầy thử thách.'<br>\
+<br>\
+Trong một nghiên cứu do Baker thực hiện với trẻ mới biết đi và trẻ mẫu giáo, bà phát hiện ra rằng trẻ em có khả năng tự chủ cao hơn giải quyết vấn đề nhanh hơn khi khám phá một bối cảnh xa lạ đòi hỏi phải có lý luận khoa học. 'Loại bằng chứng này khiến chúng ta nghĩ rằng việc cho trẻ em cơ hội chơi sẽ giúp chúng trở thành người giải quyết vấn đề thành công hơn về lâu dài.'<br>\
+<br>\
+Các nhà nghiên cứu cho biết nếu những trải nghiệm vui chơi thực sự tạo điều kiện thuận lợi cho khía cạnh phát triển này, thì điều đó có thể cực kỳ quan trọng đối với các hoạt động giáo dục, vì khả năng tự điều chỉnh đã được chứng minh là một yếu tố dự báo chính về thành tích học tập.<br>\
+<br>\
+Gibson nói thêm: 'Hành vi vui chơi cũng là một chỉ báo quan trọng về sự phát triển xã hội và cảm xúc lành mạnh. Trong nghiên cứu trước đây của mình, tôi đã tìm hiểu cách quan sát trẻ em chơi đùa có thể cung cấp cho chúng ta những manh mối quan trọng về sức khỏe của chúng và thậm chí có thể hữu ích trong việc chẩn đoán các rối loạn phát triển thần kinh như chứng tự kỷ.'<br>\
+<br>\
+Nghiên cứu gần đây của Whitebread liên quan đến việc phát triển một phương pháp tiếp cận dựa trên trò chơi để hỗ trợ trẻ em viết. 'Nhiều trẻ em tiểu học thấy viết khó, nhưng chúng tôi đã chỉ ra trong một nghiên cứu trước đó rằng một kích thích vui tươi hiệu quả hơn nhiều so với kích thích hướng dẫn.' Trẻ em viết những câu chuyện dài hơn và có cấu trúc tốt hơn khi lần đầu tiên chơi với búp bê đại diện cho các nhân vật trong câu chuyện. Trong nghiên cứu mới nhất, trẻ em lần đầu tiên tạo ra câu chuyện của mình bằng Lego*, với kết quả tương tự. 'Nhiều giáo viên nhận xét rằng trước đây họ luôn có những đứa trẻ nói rằng chúng không biết phải viết về điều gì. Tuy nhiên, với tòa nhà Lego, không một đứa trẻ nào nói điều này trong suốt cả năm của dự án.'<br>\
+<br>\
+Whitebread, người chỉ đạo PEDAL, được đào tạo làm giáo viên tiểu học vào đầu những năm 1970, khi mà, như ông mô tả, 'việc giảng dạy trẻ nhỏ phần lớn là một vùng nước lặng, không bị ảnh hưởng bởi bất kỳ cuộc tranh luận hay tranh cãi trí tuệ nghiêm túc nào.' Bây giờ, bối cảnh đã rất khác, với các chủ đề được tranh luận sôi nổi như độ tuổi bắt đầu đi học.<br>\
+<br>\
+'Bằng cách nào đó, tầm quan trọng của trò chơi đã bị mất đi trong những thập kỷ gần đây. Nó được coi là một thứ tầm thường, hoặc thậm chí là một thứ tiêu cực trái ngược với 'công việc'. Chúng ta đừng quên những lợi ích của nó và những đóng góp cơ bản mà nó mang lại cho những thành tựu của con người trong nghệ thuật, khoa học và công nghệ. Hãy đảm bảo rằng trẻ em có một chế độ ăn uống phong phú về các trải nghiệm chơi.'"
+	,voca:"disorders,well-being,predictor,steps towards,scarce,self-regulate"
+	,T_F_NG:"T. Children with good self-control are known to be likely to do well at school later on.<br>\
+T. The way a child plays may provide information about possible medical problems.<br>\
+NG. Playing with dolls was found to benefit girls' writing more than boys' writing.<br>\
+F. Children had problems thinking up ideas when they first created the story with Lego.<br>\
+T. People nowadays regard children's play as less significant than they did in the past."
+	,note:"increased = greater|disorder = problem|well-being = mental healthy|self-regulate = self-control"
 }
 
 

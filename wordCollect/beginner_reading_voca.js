@@ -144,6 +144,20 @@ specify (v) chỉ định<br>\
 task (n) nhiệm vụ<br>\
 termination (n) /tɜːrmɪˈneɪʃn/ chấm dứt<br>\
 ultimate (n) /ˈʌltɪmət/ tối thượng<br>\
+branch (n) nhánh<br>\
+labour /'Ieiba/ (n) lao động<br>\
+consequently /'konsikwantli/ (adv.) do đó<br>\
+construct /kan'strAkt/ (v) xây dựng<br>\
+ox /oks/ (n) con bò đực<br>\
+populate /'popjuleit/ (v) dân cư<br>\
+port /po:t/ (n) cảng<br>\
+region /'ri:d3an/ (n) khu vực<br>\
+economist /i'konamist/ (n) nhà kinh tế<br>\
+seaport /'si:po:t/ (n) cảng biển <br>\
+shipping /jipi!J/ (n) vận chuyển <br>\
+freight /freit/ (n) hàng hóa<br>\
+inland /'inland/ (a) nội địa<br>\
+wagon /'wregan/ (n) toa xe<br>\
 "
 }
 ]

@@ -517,7 +517,6 @@ medicine thuốc<br>\
 mix pha trộn<br>\
 organize tổ chức<br>\
 period thời kỳ<br>\
-populate dân cư<br>\
 provide (v) /prəˈvaɪd/ cung cấp<br>\
 produce sản xuất<br>\
 range phạm vi<br>\
@@ -630,7 +629,6 @@ surface bề mặt",
 { title:"4k Book2", en: "awful (a) tệ hại(very bad)<br>\
 consist có<br>\
 desire mong muốn<br>\
-eager háo hức<br>\
 household hộ gia đình<br>\
 landscape cảnh quan<br>\
 lift nâng<br>\
@@ -743,7 +741,6 @@ mission,nevertheless sứ mệnh,tuy nhiên<br>\
 occupation nghề nghiệp<br>\
 overseas nước ngoài<br>\
 persuade thuyết phục<br>\
-route tuyến đường<br>\
 ruins tàn tích<br>\
 scholar học giả<br>\
 volcano broad núi lửa rộng<br>\
@@ -946,7 +943,6 @@ beyond (prep) /bɪˈjɑːnd/ vượt trên<br>\
 clearly (adv) /ˈklɪrli/ rõ ràng<br>\
 costume (n) /ˈkɑːstuːm/ trang phục<br>\
 exclaim exclaim<br>\
-extend extend<br>\
 fool (n,v) ngu xuẩn, kẻ dại, kẻ đần<br>\
 forbid forbid<br>\
 illustrate (v) chú giải, minh họa<br>\
@@ -1109,7 +1105,6 @@ twin (n) con sinh đôi, (v) sinh đôi<br>\
 witch phù thủy <br>\
 accompany đi cùng (+to) (+by: passive)<br>\
 bare (a) trần truồng<br>\
-branch nhánh<br>\
 cast cast<br>\
 dare dám liều mao hiểm<br>\
 electronic (a) thuộc điện tử<br>\

@@ -5,6 +5,13 @@
 	</p>
 </div>
 
+<div ng-if="story.Match_Heading && story.Match_Heading.trim().length>0" >
+	<mark class="text-primary">Matching the Headings</mark>
+	<p class="mb-1" ng-repeat="sen in story.Match_Heading.split('<br>') track by $index">
+		<span ng-click="Index_NoteVoca_Speak(sen)">{{sen}}</span>
+	</p>
+</div>
+
 <div ng-if="story.transExercise && story.transExercise.trim().length>0" >
 	<mark class="text-primary">Translate</mark>
 	<span>{{story.transExercise}}</span>

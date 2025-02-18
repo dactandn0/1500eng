@@ -244,7 +244,7 @@ Candidate: What I like most is hot, dry weather. I love being able to sit outsid
 Examiner: Does the weather influence your mood? <br>\
 Candidate: Yes, it certainly does. It's the rain that influences my mood the most. I hate it when it's raining - it makes me feel so down. It's hard to go out, without getting soaked to the skin, anyway. And the sky is so dismal and overcast. It's miserable!<br>\
 Examiner: Is it worse to feel too hot or too cold? <br>\
-Candidate: Well, I suppose if it's too cold you can just wear more layers, but nevertheless I prefer to ,be too hot. At least it means the weather is good, and you can always go for a swim to cool down. What I really can't stand is being cold and wet. That's the worst combination and it makes me worry that I'm going to catch a cold."
+Candidate: Well, I suppose if it's too cold you can just wear more layers, but nevertheless I prefer to be too hot. At least it means the weather is good, and you can always go for a swim to cool down. What I really can't stand is being cold and wet. That's the worst combination and it makes me worry that I'm going to catch a cold."
 	,vi:"Giám khảo: Hãy kể cho tôi nghe về khí hậu ở đất nước bạn.<br>\
 Ứng viên: Chúng ta có khí hậu khắc nghiệt. Mùa đông của chúng ta lạnh cóng, còn mùa hè thì nóng như thiêu đốt. Điều đó có nghĩa là con người, nhà cửa, hệ thống giao thông, mọi thứ đều cần được chuẩn bị để ứng phó với mọi loại thời tiết.<br>\
 Giám khảo: Bạn thích loại thời tiết nào nhất? <br>\
@@ -252,8 +252,8 @@ Giám khảo: Bạn thích loại thời tiết nào nhất? <br>\
 Giám khảo: Thời tiết có ảnh hưởng đến tâm trạng của bạn không? <br>\
 Ứng viên: Có chứ, chắc chắn là có. Mưa ảnh hưởng đến tâm trạng của tôi nhiều nhất. Tôi ghét khi trời mưa - nó khiến tôi cảm thấy rất chán nản. Dù sao thì cũng khó mà ra ngoài mà không bị ướt như chuột lột. Và bầu trời thì u ám và u ám. Thật khốn khổ!<br>\
 Giám khảo: Cảm thấy quá nóng hay quá lạnh tệ hơn? <br>\
-Ứng viên: Vâng, tôi cho rằng nếu trời quá lạnh, bạn có thể mặc thêm nhiều lớp, nhưng dù sao thì tôi vẫn thích, quá nóng. Ít nhất thì điều đó có nghĩa là thời tiết tốt, và bạn luôn có thể đi bơi để hạ nhiệt. Điều tôi thực sự không thể chịu được là lạnh và ướt. Đó là sự kết hợp tệ nhất và nó khiến tôi lo lắng rằng mình sẽ bị cảm lạnh."
-	,voca:"",
+Ứng viên: Vâng, tôi cho rằng nếu trời quá lạnh, bạn có thể mặc thêm nhiều lớp, nhưng dù sao thì tôi vẫn thích nóng. Ít nhất thì điều đó có nghĩa là thời tiết tốt, và bạn luôn có thể đi bơi để hạ nhiệt. Điều tôi thực sự không thể chịu được là lạnh và ướt. Đó là sự kết hợp tệ nhất và nó khiến tôi lo lắng rằng mình sẽ bị cảm lạnh."
+	,voca:"miserable,extreme,dismal,overcast,balmy,rather than,soaked to the skin",
 },
 {
 	track: "1.T24",

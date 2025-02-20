@@ -29,7 +29,11 @@ ielt_formChange = function (num, isLoadData = false) {
 		$scope.stories = ENGLAB_BEGIN_DATA_R;
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R)
 	}
-	if (num===1) $scope.stories = ENGLAB_BEGIN_DATA_W;
+	if (num===1)
+	{
+		$scope.stories = ENGLAB_BEGIN_DATA_W;
+		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_W)
+	}
 	if (num===2) $scope.stories = ENGLAB_BEGIN_DATA_S;
 	if (num===3)
 	{

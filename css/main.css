@@ -151,14 +151,11 @@ background-color: #a55;
 /*UNCOUNT_TAG_BEGIN*/
 ._y_z {
 	color:red;
-	font-style: italic;
 }
 /*SAME_N_V_TAG_BEGIN*/
 ._y_1z {
 	/*text-decoration: underline;*/
- 	/*background: linear-gradient(180deg,rgba(255,255,255,0) 85%, #AAD0AE 50%);*/
-  color:#AAD113;
-  font-style: italic;
+  color:#0AE;
 }
 ._y_2z {
   color: #FFBF00;
@@ -278,7 +275,7 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .color-anim {
   /*animation: color-change 1s infinite;*/
-  background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #AAD0AE 50%);
+  background: linear-gradient(-90deg,rgba(255,255,255,0) 0%, #AAD0AE 0%)
 }
 
 @keyframes color-change {

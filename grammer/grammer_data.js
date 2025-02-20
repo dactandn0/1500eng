@@ -254,7 +254,7 @@ any + N đếm được số nhiều (nhiều hơn một)<br>\
 - A multitude of: rất nhiều<br>\
 - A great deal of: rất nhiều (uncountable)",
 },{
-	title:"HOW TO WRITE A PARAGRAPH"
+	title:"How to write a paragraph (6.0)"
 	,en:"Topic: The benefits of learning online at universities I believe that online university courses are a positive development for various reasons. Firstly, they allow learners to study in a flexible way. This means they can work whenever and wherever they feel convenient and cover their materials at their own pace. Secondly, online learning offers open access to anybody who is willing to (sẵn sàng) study, regardless of (bất kể) age, location, ability and background. For example, my uncle, who is 65 years old, has recently enrolled in an online MBA course in a different country, which would have been impossible in the days before Internet-based education.<br>\
 <br>\
 TOPIC SENTENCE:<br>\
@@ -286,7 +286,55 @@ Example: <br>\
 Đứng giữa câu: ,such as A and B/ such as A,B, and C.<br>\
 such as + N/V-ing<br>\
 <br>\
-Add ideas: Moreover, Furthermore, In addition, Beside that"
+Add ideas: Moreover, Furthermore, In addition, Beside that<br>\
+C. PRACTICE:<br>\
+Topic: Do you agree that we should teach foreign languages to primary school children?<br>\
+TOPIC SENTENCE<br>\
+Paraphrase: foreign languages - primary school children<br>\
+teach: Other languages/ new languages<br>\
+primary school children: Young children <br>\
+Main idea: Several reasons<br>\
+we should teach foreign languages to primary school children for several reasons<br>\
+-> YOUR TURN:<br>\
+Young children should be taught other languages beside their mother tongues for several reasons<br>\
+There are several reasons why young children should be taught other languages.<br>\
+The introduction of foreign languages to young children should be conducted for several reasons<br>\
+<br>\
+IDEA 1: <br>\
+Việc học ngôn ngữ từ lứa tuổi nhỏ có thể sẽ đem lại kết quả tốt hơn so với khi ở tuổi vị thành niên hoặc trưởng thành<br>\
+Việc học ngôn ngữ: The acquisition of...<br>\
+            Tuổi vị thành niên: adolescence, Trưởng thành: adulthood<br>\
+-> YOUR TURN:<br>\
+The acquisition of new languages from young age can bring about better performance than in adolescence or adulthood<br>\
+<br>\
+SUPPORTING IDEA 1:<br>\
+Điều này là bởi vì trẻ em thường không phải lo lắng về kiếm sống, do đó có nhiều thời gian để tập trung vào việc học.<br>\
+Kiếm sống: make a living<br>\
+-> YOUR TURN:<br>\
+This is because children often don't have to worry about making a living, thereby having more time to focus on their study<br>\
+<br>\
+SUPPORTING IDEA 1:<br>\
+Ngoài ra, chứng cứ khoa học đã chứng minh rằng chức năng não ở trẻ em cũng có khả năng tiếp nhận và ghi nhớ những kiến thức mới tốt hơn những người học lớn tuổi hơn vì chúng gần như không chịu ảnh hưởng của việc quá tải chú ý và quá tải thông tin.<br>\
+ghi nhớ thông tin: retain + noun - retain competent employees<br>\
+quá tải: overload (n)<br>\
+-> YOUR TURN:<br>\
+Beside that, scientific evidence has proven that brain functions in young children also are capable of internalising and retaining new information better than older learners, for they are almost/ virtually unaffected by attention and information overload.<br>\
+<br>\
+IDEA 2:<br>\
+Thêm vào đó, việc tiếp xúc sớm với ngôn ngữ mới giúp trẻ nhận thức được về sự đa dạng văn hóa toàn cầu<br>\
+-> YOUR TURN:<br>\
+<br>\
+SUPPORTING IDEA 2:<br>\
+Chẳng hạn như khi trẻ học tiếng Nhật, chúng sẽ biết sự khiêm tốn và tôn trọng là sự ưu tiên hàng đầu trong giao tiếp, trong khi đó người phương Tây có xu hướng cởi mở và thẳng thắn.<br>\
+            Sự khiêm tốn: humility<br>\
+            Sự ưu tiên: Priorities<br>\
+			Cởi mở: be open<br>\
+-> YOUR TURN:<br>\
+<br>\
+SUPPORTING IDEA 2:<br>\
+Việc có nhận thức về văn hóa giúp trẻ em chuẩn bị cho việc đi du học hoặc cơ hội việc làm tốt hơn đặc biệt trong thời đại toàn cầu hóa khi mà sự hợp tác giữa các quốc gia và các nền văn hóa ngày càng trở nên phổ biến.<br>\
+Thời đại toàn cầu hóa: globalisation era<br>\
+-> YOUR TURN:"
 	,note:""
 }
 

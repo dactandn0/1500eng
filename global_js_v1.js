@@ -105,7 +105,7 @@ function Helper_ArrRemoveDup(arr) {
     	var ele = arr[i] // .toLowerCase()
       if(result.indexOf(ele) == -1){
         result.push(ele)
-      }
+      } else
     }
     return result
 }

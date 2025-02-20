@@ -4,9 +4,13 @@ title:"4k Book1",
 en:"afraid (a) /əˈfreɪd/ sợ<br>\
 actually (adv) /ˈæktʃuəli/ thực ra<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
+longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
+globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
+conducive (a) /kənˈduːsɪv/ có lợi<br>\
+sedentary (a) /ˈsednteri/ ít vận động<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
 despite (prep) /dɪˈspaɪt/ cho dù<br>\
-On top of that (idiom) hơn thế<br>\
+on top of that (idiom) hơn thế<br>\
 closest confidant (n) /ˈkɑːnfɪdænt/ người bạn tâm giao gần gũi nhất<br>\
 intimate (a) /ˈɪntɪmət/ thân mật<br>\
 ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
@@ -41,6 +45,7 @@ hygiene (n) /ˈhaɪdʒiːn/ vệ sinh<br>\
 hygienic (a) /haɪˈdʒiːnɪk/ vệ sinh<br>\
 uncomfortable (a) /ʌnˈkʌmfərtəbl/ không thoải mái<br>\
 casually (adv) /ˈkæʒuəli/ ngẫu nhiên (informal way)<br>\
+competitiveness (n) /kəmˈpetətɪvnəs/ tính cạnh tranh<br>\
 cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 sporty (a) /ˈspɔːrti/ thích thể thao<br>\
@@ -182,7 +187,7 @@ since (prep) /sɪns/ kể từ<br>\
 visible (a) dễ thấy<br>\
 wild (a) /waɪld/ hoang dã<br>\
 advantage (n) /ədˈvæntɪdʒ/ lợi thế<br>\
-cause (n) /kɔːz/ nguyên nhân<br>\
+cause (n,v) /kɔːz/ nguyên nhân<br>\
 choice (n) /tʃɔɪs/ lựa chọn<br>\
 community (n) /kəˈmjuːnəti/ cộng đồng<br>\
 dead (a) /ded/ chết<br>\
@@ -1157,7 +1162,6 @@ masquerade (n,v) /mæskəˈreɪd/ ((n) dạ hội) hóa trang"
 { title:"4k Book3", en:"arise phát sinh<br>\
 broaden (v) /ˈbrɔːdn/ Mở rộng<br>\
 expand (v) /ɪkˈspænd/ Mở rộng<br>\
-strengthen (v) /ˈstreŋkθn/ tăng cường<br>\
 hustle (n) /ˈhʌsl/ chen lấn, xô bồ<br>\
 bustle (n) /ˈbʌsl/ sự nhộn nhịp<br>\
 benefactor (n) /ˈbenɪfæktər/ người làm ơn<br>\

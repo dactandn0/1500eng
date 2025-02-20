@@ -7,7 +7,7 @@ const ENGLAB_BEGIN_DATA_W = [
 	unit:1
 	,title:"Việc tập luyện thể thao đầy đặn là quan trọng để có một cơ thể khỏe mạnh và thúc đẩy tuổi thọ."
 	,en:"Regular exercise is instrumental in a healthy body and promotes longevity."
-	,voca:"",
+	,note:"be instrumental in = crucial",
 },{
 	unit:1
 	,title:"Sức khỏe là tài sản quí giá của con người và mọi người cần phải bảo vệ nó bằng mọi giá."
@@ -25,7 +25,7 @@ const ENGLAB_BEGIN_DATA_W = [
 	unit:1
 	,title:"Lối sống ít vận động và chế độ ăn không tốt là nguyên nhân chính gây việc gia tăng béo phì ở trẻ em."
 	,en:"A sedentary lifestyle and unbalanced diet are main causes of increasing obesity in children."
-	,vi:""
+	,note:"causes (n,v) of"
 	,voca:"A sedentary lifestyle"
 },{
 	unit:1
@@ -47,7 +47,7 @@ const ENGLAB_BEGIN_DATA_W = [
 	unit:1
 	,title:"Sự đa dạng văn hóa giữa các quốc gia là điều cần được tôn trọng và đánh giá cao để xây dựng một thế giới hòa bình và phát triển."
 	,en:"Cultural diversity among countries needs to be respected and appreciated to build a peaceful and prosperous world."
-	,voca:"",
+	,voca:"prosperous,Cultural diversity",
 },{
 	unit:1
 	,title:"Du lịch là hoạt động giúp con người khám phá, tìm hiểu và trải nghiệm những nét đẹp thiên nhiên và văn hóa địa phương."
@@ -58,7 +58,7 @@ const ENGLAB_BEGIN_DATA_W = [
 	unit:1
 	,title:"Việc đầu tư vào sự theo đuổi về việc học có thể đặt nền móng cho viễn cảnh việc làm tốt hơn và mức sống cao hơn sau này."
 	,en:"Investment in academic pursuits can be conducive to better occupational prospects and higher living standards later."
-	,voca:"",
+	,voca:"occupational prospects,higher living standards",
 },
 {
 	unit:2
@@ -69,7 +69,7 @@ const ENGLAB_BEGIN_DATA_W = [
 	unit:2
 	,title:"Chính phủ đang tăng cường đầu tư vào cơ sở hạ tầng để nâng cao năng lực cạnh tranh của đất nước."
 	,en:"The government is strengthening/ boosting/ enhancing investment in infrastructure to improve the country’s competitiveness."
-	,note:"strengthen không được tự nhiên lắm|khi nói danh từ khái niệm chung thì không dùng the (infrastructure)"
+	,note:"strengthening/ boosting/ enhancing; strengthen không được tự nhiên lắm|khi nói danh từ khái niệm chung thì không dùng the (infrastructure)"
 },{
 	unit:2
 	,title:"Tỷ giá ngoại tệ giữ đà ổn định trong những tuần qua, tạo điều kiện thuận lợi cho hoạt động xuất nhập khẩu của doanh nghiệp."
@@ -112,9 +112,9 @@ const ENGLAB_BEGIN_DATA_W = [
 },{
 	unit:2
 	,title:"Chính sách đầu tư vào giáo dục và đào tạo có vai trò quan trọng trong việc nâng cao chất lượng nguồn nhân lực cho nền kinh tế Việt Nam."
-	,en:"Investment policy in education and training plays a crucial role in for improving the quality of human resources in the Vietnam economy."
+	,en:"Investment policy in education and training plays a crucial role in improving the quality of human resources in the Vietnam economy."
 	,voca:""
-	,note:""
+	,note:"Play a crucial role in + V-ing/N|Tránh nhầm lẫn từ loại: economic (adj) - economy (n)"
 },{
 	title:"Dịch đoạn",
 	en:"Today, obesity in children is becoming popular and concerning for many reasons. Firstly, it is due to unhealthy eating habits. With the convenience of fast food, fried food, baking and sweets, children easily approach and consume them, instead of healthy food such as vegetables, fruits, beans and lean meats. Secondly, the lack of physical activities in children is also a crucial cause of obesity. Spending too much time on electronic devices such as phones, tablets and games causes children not to have enough time and motivation to take part in outdoor or physical activities. This leads to the accumulation of excess fat and weight gain in children."
@@ -167,13 +167,13 @@ const ENGLAB_BEGIN_DATA_W = [
 	unit:3
 	,title:"Các chương trình chăm sóc sức khỏe tâm thần đang trở nên ngày càng phổ biến và cần thiết."
 	,en:"Mental healthcare programs are becoming popular and necessary."
-	,voca:""
+	,voca:"healthcare programs"
 	,note:"healthcare programs"
 },{
 	unit:3
 	,title:"Chính sách giảm giá điện năng lượng tái tạo được đang được áp dụng để thúc đẩy sử dụng nguồn năng lượng sạch và bảo vệ môi trường"
 	,en:"Price reduction policies on renewable energy sources are being applied to promote clean energy usage and protect the environment."
-	,voca:""
+	,voca:"renewable energy sources"
 	,note:""
 },{
 	unit:3
@@ -182,14 +182,18 @@ const ENGLAB_BEGIN_DATA_W = [
 	,transExercise:"Có một số lý do khiến nhiều người thấy phim nước ngoài thú vị hơn phim sản xuất tại quốc gia của họ. Đầu tiên, các ngành công nghiệp điện ảnh đã thành lập ở một số quốc gia có ngân sách lớn cho các cảnh hành động, hiệu ứng đặc biệt và quay những cảnh ngoạn mục. Các bộ phim bom tấn của Hollywood như 'Avatar' hay phim James Bond là những ví dụ về những tác phẩm như vậy và sức hấp dẫn toàn cầu của chúng là không thể phủ nhận. Một lý do khác khiến những bộ phim kinh phí lớn này thành công như vậy là vì chúng thường có sự tham gia của những diễn viên và nữ diễn viên nổi tiếng nhất, và được sản xuất bởi những nhà sản xuất và đạo diễn tài năng nhất. Do đó, những bộ phim chất lượng thấp và kinh phí thấp được sản xuất tại nhiều quốc gia thường được xếp hạng thấp hơn."
 	,voca:""
 	,note:"tránh lặp từ many, countries"
-}
-
-,{
+},{
+	unit:4
+	,title:"Sự gắn kết toàn cầu thông qua giao thoa văn hóa, chính trị, và du lịch có thể tạo ra nhiều việc làm cho người dân và thúc đẩy sự phát triển kinh tế của đất nước."
+	,en:""
+	,voca:""
+	,note:"global intertwinement|the integration of: giao thoa"
+},{
 	unit:4
 	,title:"Sự ô nhiễm môi trường ngày càng đáng báo động, đòi hỏi chính phủ phải đưa ra các chính sách và giải pháp để giảm thiểu tác động tiêu cực lên môi trường."
 	,en:""
 	,voca:""
-	,note:""
+	,note:"alarming (a)|mitigate,alleviate (v): giảm thiểu"
 },{
 	unit:4
 	,title:"Các hoạt động sản xuất và khai thác tài nguyên đang gây ra nhiều tác động xấu đến môi trường, cần có sự quản lý chặt chẽ để giảm thiểu tác động này."
@@ -229,20 +233,16 @@ const ENGLAB_BEGIN_DATA_W = [
 },{
 	unit:4
 	,title:"Tắt đường hay tai nạn giao thông có thể được giải quyết hiệu quả thông qua việc cải thiện cơ sở hạ tầng giao thông như là mở rộng đường, xây thêm cầu vượt, tự ưu hoá hệ thống đèn vs biển báo."
-	,en:""
-	,voca:""
 	,note:"traffic infrastructure|bypasses|optimize"
 },{
 	title:"Dịch đoạn"
 	,en:"There are two main reasons why children should study abroad. First, when pursuing overseas educational programs, they can learn a lot of new knowledge about culture, history, and academics. Exposure to a different learning environment, combined with extracurricular experiences and activities, can help children develop social skills, increase self-confidence, and broaden their worldview. Second, studying abroad can help children learn many life skills, such as independence, financial management, and being more self-sufficient in life. When living away from home and facing new challenges, children will learn how to solve problems, find solutions, and become stronger to overcome difficulties in life."
 	,transExercise:"Có hai lý do chính vì sao trẻ con nên đi du học. Đầu tiên, khi đi du học, trẻ có thể học được nhiều kiến thức mới về văn hóa, lịch sử, và học thuật. Việc tiếp xúc với một môi trường học tập khác, kết hợp với những trải nghiệm và hoạt động ngoại khóa có thể giúp trẻ phát triển kỹ năng xã hội, tăng cường sự tự tin, và mở rộng tầm nhìn về thế giới. Thứ hai, đi du học có thể giúp trẻ học được nhiều kỹ năng sống như tự lập, quản lý tài chính, và trở nên độc lập hơn trong cuộc sống. Khi sống xa gia đình và đối mặt với những thách thức mới, trẻ sẽ học cách giải quyết vấn đề, tìm kiếm giải pháp và trở nên mạnh mẽ hơn để vượt qua những khó khăn trong cuộc sống."
-	,voca:""
 	,note:"Tránh lặp từ bằng cách dùng những từ tương đương và dùng they/ it/ this/ those/ these.|Trước Such as PHẢI CÓ DẤU PHẨY, phẩy xong phải nhớ đóng phẩy."
 },{
 	unit:5
 	,title:"Việc nghiện game là nguyên nhân chính dẫn tới kết quả học tập kém của nhiều trẻ con ngày nay."
 	,en:"Game addiction is the main reason that leads to unsatisfactory academic performance of children."
-	,voca:""
 	,note:"reason = factor = culpit | dẫn tới (dùng MĐQH vì ko phải mục đích)"
 },{
 	unit:5
@@ -253,9 +253,40 @@ const ENGLAB_BEGIN_DATA_W = [
 },{
 	unit:5
 	,title:"Sự đầu tư vào việc học có thể tạo điều kiện cho một viễn cảnh việc làm tốt hơn cho những bạn trẻ."
-	,en:""
-	,voca:""
 	,note:"academic pursuits|facilitate|occupational prospects"
+},{
+	unit:5
+	,title:"Phát triển kinh tế mới và nâng cao nâng lực cạnh tranh sẽ giúp tăng trưởng kinh tế."
+	,note:"competitiveness"
+},{
+	unit:5
+	,title:"Du lịch là ngành có tiềm năng phát triển, có thể mang lại lợi ích về kinh tế cho người dân thông qua việc tạo ra cơ hội việc làm."
+	,note:"potential (a,n): đuôi -ial nhưng là Adj và N"
+},{
+	unit:5
+	,title:"Văn hóa đóng vai trò quan trọng trong phát triển du lịch bền vững."
+	,en:"Culture plays a crucial role in the development of sustainable tourism."
+	,note:"sustainable tourism"
+},{
+	unit:5
+	,title:"Chăm sóc sức khỏe của người dân là nhiệm vụ quan trọng của chính phủ."
+	,en:"Taking care of people’s health is the important mission of the government."
+	,note:""
+},{
+	unit:5
+	,title:"Trẻ con là tương lai của đất nước, nên được đầu tư một cách nghiêm túc."
+	,en:"Children are the future of a nation, so they need to be invested seriously."
+	,note:""
+},{
+	unit:5
+	,title:"Các nước lớn phải bỏ qua căng thẳng về chính trị để tìm ra lợi ích chung và giải quyết vấn đề toàn cầu như là nóng lên toàn cầu hoặc vi phạm quyền con người."
+	,en:"Developed countries should ignore political tensions to find out shared interests and solve global issues, such as global warning or the violation of human rights."
+	,note:"shared interests|the violation of human rights"
+},{
+	unit:5
+	,title:"Việc áp dụng hình phạt đánh đập có thể gây ra ám ảnh tinh thần cho trẻ con, cái mà có thể dẫn đến nhiều hành vi chống đối xã hội như là hung hăng, sử dụng chất kích thích, hoặc bắt nạt."
+	,en:" Applying corporal punishments could cause mental trauma in children, which may result in anti-social behaviors, such as aggression, usage of stimulants, or even bullying"
+	,note:"corpotal punishments|anti-social behavior|aggression: hung hăng"
 },{
 	title:"Dịch đoạn"
 	,en:"The main problem for anyone moving to a big city is that living expenses are often much higher than in a small town or village. City inhabitants often pay higher prices for housing, transportation and even food. Another problem is that urban areas often suffer from social problems, such as higher crime and poverty rates than rural areas. What's more, the quality of the air in cities is often polluted by traffic and the streets along with public transport systems are often overloaded. As a result, city life could be unhealthy and stressful."

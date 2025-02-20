@@ -1,9 +1,17 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 const SynonymData = [
 {
-	words:"important /ɪmˈpɔːrtnt/|crucial /ˈkruːʃl/|significant /sɪɡˈnɪfɪkənt/",
+	words:"important /ɪmˈpɔːrtnt/|crucial /ˈkruːʃl/|significant /sɪɡˈnɪfɪkənt/ | be instrumental in",
 	type:"a",
 	mean:"quan trọng"
+},{
+	words:"obtain /əbˈteɪn/|acquire /əˈkwaɪər/|have",
+	type:"v",
+	mean:"đạt được"
+},{
+	words:"strengthen /ˈstreŋkθn/|boost  /buːst/|enhance /ɪnˈhæns/",
+	type:"v",
+	mean:"gia cố, tăng cường"
 },{
 	words:"good|great",
 	type:"a",
@@ -16,6 +24,10 @@ const SynonymData = [
 	words:"overweight|obese",
 	type:"a",
 	mean:"béo phì"
+},{
+	words:"increasingly|more and more",
+	type:"adv",
+	mean:"ngày càng tăng"
 },{
 	words:"raw|uncooked",
 	type:"a",

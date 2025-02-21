@@ -29,7 +29,7 @@ There are many kinds of movies that I enjoy, one of which is action movies. This
 3) What kinds of books do you like to read most?<br>\
 I love all kinds of books, but if I had to choose one, I would go for business books because by reading business books, I can learn how to deal with difficult situations more effectively, how to work as a team and how to think more independently.<br>\
 4) What kinds of foods do you like to eat most?<br>\
-I love all kinds of foods, but if I had to choose one, I would go for home-cooked food. This is because I believe that they tend to be healthier and more budget-friendly compared to restaurant meals. That’s why I make an effort to limit how often I eat out.<br>\
+I love all kinds of foods, but if I had to choose one, I would go for home-cooked food. This is because I believe that they tend to be healthier and more budget-friendly compared to restaurant meals. That's why I make an effort to limit how often I eat out.<br>\
 5) What types of clothes do you like to wear most?<br>\
 I find casual clothing to be comfortable and versatile for everyday wear. However, I also enjoy dressing up for special occasions when the opportunity arises. I love shorts and T-shirts most because they are comfortable and easy to wear. I wear them whenever I hang out with my friends. I think they will never be out of fashion. We can see that they are always trendy and stylish."
 ,vi:"1) Lần đầu tiên bạn sử dụng máy tính là khi nào?<br>\
@@ -46,9 +46,9 @@ Tôi thấy quần áo thường ngày thoải mái và đa năng để mặc h�
 	track:"1.03"
 	,title:"Formulas Speaking"
 	,en:"1) Are bikes popular in your country?<br>\
-Well, I think it depends on which group of people you are talking about. As for poor people, I believe cycling gains more popularity simply because they don’t have money to buy other more convenient means of transport like motorbikes or cars. However, when we consider the rich, bike is a not a common choice since it does not show their wealth and is inconvenient and unsafe.<br>\
+Well, I think it depends on which group of people you are talking about. As for poor people, I believe cycling gains more popularity simply because they don't have money to buy other more convenient means of transport like motorbikes or cars. However, when we consider the rich, bike is a not a common choice since it does not show their wealth and is inconvenient and unsafe.<br>\
 2) Did you learn how to play any musical instrument when you were young?<br>\
-Unfortunately, I haven’t learned to play any musical instrument yet, which is a pity. I had the first crack at playing the piano when I was a child but then it’s a shame I didn’t have enough time to do X. I was always snowed under homework and assignments at school and gave up after some weeks. I wish I had more ambition and patience when I was younger, then I might have learned to play the piano.<br>\
+Unfortunately, I haven't learned to play any musical instrument yet, which is a pity. I had the first crack at playing the piano when I was a child but then it's a shame I didn't have enough time to do X. I was always snowed under homework and assignments at school and gave up after some weeks. I wish I had more ambition and patience when I was younger, then I might have learned to play the piano.<br>\
 3) What is the best time for traveling in your country?<br>\
 I think summer months are the greatest time to travel around my country. This is because the weather during these months is hot and sunny, which is very suitable for outdoor activities, such as mountain climbing, camping, fishing or sightseeing.<br>\
 4) What is the best time of day to study?<br>\
@@ -76,7 +76,7 @@ Traditionally, fathers took on the role of the family breadwinner, while mothers
 },{
 	track:"1.04"
 	,title:"Formulas Speaking"
-	,en:"1) Do you think it’s appropriate for museums to sell things to visitors?<br>\
+	,en:"1) Do you think it's appropriate for museums to sell things to visitors?<br>\
 Yes, it would be a great idea because museums need money for operation (vận hành) and maintenance. Plus, many people like to buy something at the places they visit to give to their loved ones as a gift.<br>\
 2) Is your hometown suitable for young people to live in?<br>\
 No, I don't think so because there are not many job opportunities in my town. That's why many young people leave for major cities in search of better jobs and career growth.<br>\
@@ -84,7 +84,7 @@ No, I don't think so because there are not many job opportunities in my town. Th
 Absolutely! Bicycles work for everyone, no matter their age. Whether you're a kid or a grandparent, hopping on a bike is a great way to unwind and stay healthy<br>\
 Yes, I think bicycles are suitable for people of all ages because they offer a convenient and eco-friendly way to travel. Children can enjoy cycling as a fun outdoor activity, while adults often use bikes for commuting or exercise. Even older people can ride, especially if they choose models with extra support, like electric or three-wheeled bicycles.<br>\
 4) Is working from home suitable for all jobs?<br>\
-No, not really. Working from home works well for some jobs, like IT, writing, or customer service, but not for everything. Jobs like doctors, construction workers, or factory employees need to be done in person. Plus, some people find it hard to stay focused or miss the teamwork that comes with an office. So yeah, it’s great for some, but definitely not for all jobs.<br>\
+No, not really. Working from home works well for some jobs, like IT, writing, or customer service, but not for everything. Jobs like doctors, construction workers, or factory employees need to be done in person. Plus, some people find it hard to stay focused or miss the teamwork that comes with an office. So yeah, it's great for some, but definitely not for all jobs.<br>\
 5) Is studying abroad suitable for everyone?<br>\
 No, studying abroad is not suitable for everyone; factors like personal adaptability, financial stability, language proficiency, cultural awareness, and academic preparedness should be considered before deciding to study abroad, meaning some individuals may not be well-suited for the experience despite their interest in it."
 	,vi:"1) Bạn có nghĩ rằng bảo tàng nên bán đồ cho du khách không?<br>\
@@ -366,7 +366,7 @@ Không. Tôi không thích xem thể thao. Tôi thấy nó rất nhàm chán. Th
 4) Bạn có hâm mộ đội thể thao nào không? Tại sao? <br>\
 Thành thật mà nói, tôi không có đội bóng yêu thích vì như tôi đã nói, tôi không thích xem những trận đấu này. Tuy nhiên, tôi rất ngưỡng mộ đội tuyển bóng đá quốc gia Việt Nam. Bạn biết đấy, tất cả các cầu thủ đều có kỹ năng mặc dù họ còn trẻ."
 	,voca:"cup of tea,exhilarating,have a passion for,sporty,national,comedies,laugh hysterically"
-	,note:"A sporty /ˈspɔː.ti/: một người yêu thích và giỏi thể thao Ví dụ: Guy wasn’t really the sporty type. |To have a passion for something: có niềm đam mê, yêu thích về một cái gì đó Passion /ˈpæʃ.ən/ : đam mê Ví dụ:  I have a passion for history. |To be exhilarating and good fun: hứng khởi và vui vẻ Exhilarating /ɪɡˈzɪl.ə.reɪ.tɪŋ/ : Hứng khởi Ví dụ: His work is exhilarating and good fun |A boiling hot weather: thời tiết nóng sôi (nóng như nước sôi) Boiling  /ˈbɔɪ.lɪŋ/: sôi Hot /hɒt/ : nóng Weather /ˈweð.ər/ :thời tiết Ví dụ: We don’t usually have such boiling hot weather. |My cup of tea (idiom): sở thích của tôi Ví dụ: Opera is not my cup of tea. |To be tedious /ˈtiː.di.əs/ : buồn chán Ví dụ:  The problem is I find most forms of exercise so tedious. |Laugh hysterically: cười một cách điên cuồng Hysterically  /hɪˈster.ɪ.kəl.i/ : điên cuồng, cuồng loạn Laugh /lɑːf/ : Cười Ví dụ: She started laughing hysterically. |To be fond of: thích Ví dụ: She was very fond of horses |Having said that: mặc dù vậy Ví dụ: He forgets most things, but having said that, he always remembers my birthday."
+	,note:"A sporty /ˈspɔː.ti/: một người yêu thích và giỏi thể thao Ví dụ: Guy wasn't really the sporty type. |To have a passion for something: có niềm đam mê, yêu thích về một cái gì đó Passion /ˈpæʃ.ən/ : đam mê Ví dụ:  I have a passion for history. |To be exhilarating and good fun: hứng khởi và vui vẻ Exhilarating /ɪɡˈzɪl.ə.reɪ.tɪŋ/ : Hứng khởi Ví dụ: His work is exhilarating and good fun |A boiling hot weather: thời tiết nóng sôi (nóng như nước sôi) Boiling  /ˈbɔɪ.lɪŋ/: sôi Hot /hɒt/ : nóng Weather /ˈweð.ər/ :thời tiết Ví dụ: We don't usually have such boiling hot weather. |My cup of tea (idiom): sở thích của tôi Ví dụ: Opera is not my cup of tea. |To be tedious /ˈtiː.di.əs/ : buồn chán Ví dụ:  The problem is I find most forms of exercise so tedious. |Laugh hysterically: cười một cách điên cuồng Hysterically  /hɪˈster.ɪ.kəl.i/ : điên cuồng, cuồng loạn Laugh /lɑːf/ : Cười Ví dụ: She started laughing hysterically. |To be fond of: thích Ví dụ: She was very fond of horses |Having said that: mặc dù vậy Ví dụ: He forgets most things, but having said that, he always remembers my birthday."
 },{
 	track:"1.16",
 	title:"Borrowing / Lending",
@@ -437,7 +437,7 @@ Nếu tôi không nhầm thì đã một tháng kể từ lần cuối cùng tô
 6) Người Việt Nam thường cắt tóc vào những dịp nào? <br>\
 Vâng, mọi người ở đất nước tôi thường cắt tóc và tạo kiểu trước những dịp quan trọng như sinh nhật, lễ Tết, vv; hoặc đơn giản là khi nó đạt đến một độ dài nhất định."
 	,voca:"undercut,compatible with, barber,have it cut,facial massage, amount to,attention,megatrend"
-	,note:"Undercut /ˌʌn.dəˈkʌt/: kiểu tóc undercut Ví dụ: My favorite hairstyle is the undercut style |To be compatible with /kəmˈpæt.ə.bəl/: thích hợp với Ví dụ: Such policies are not compatible with democratic government. |Barber /ˈbɑː.bər/: thợ cắt tóc Ví dụ: He used to work as a barber. |To have it cut and dyed: cắt và nhuộm tóc cut /kʌt/: cắt dyed /daɪ/: thay đổi màu sắc của vật bằng chất lỏng, trong trường hợp này là nhuộm tóc. Ví dụ: My girl friend will have it cut and dyed before TET holiday |To refresh /rɪˈfreʃ/: làm mới Ví dụ: A good night’s sleep will refresh you. |To do multiple things at the same time: làm nhiều việc cùng lúc Ví dụ: The Congress and its members can do multiple things at the same time |To get a facial massage: mát-xa mặt facial /ˈfeɪ.ʃəl/: thuộc hoặc nằm trên khuôn mặt massage /ˈmæs.ɑːʒ/: mát-xa Ví dụ:  I get a facial massage in every day |To amount to /əˈmaʊnt/: lên đến Federal and state costs for building and operating prisons amounted to $25 billion. |Megatrend: xu hướng lớn (toàn cầu) Ví dụ:  The advance of technology constitutes a development megatrend with megatrend with huge potential. | To give it a try: thử Ví dụ:  You can give it a try here. | Unnecessary attention: sự chú ý không cần thiết Unnecessary /ʌnˈnes.ə.ser.i/: không cần thiết attention /əˈten.ʃən/: sự chú ý Ví dụ: It would create unnecessary attention."
+	,note:"Undercut /ˌʌn.dəˈkʌt/: kiểu tóc undercut Ví dụ: My favorite hairstyle is the undercut style |To be compatible with /kəmˈpæt.ə.bəl/: thích hợp với Ví dụ: Such policies are not compatible with democratic government. |Barber /ˈbɑː.bər/: thợ cắt tóc Ví dụ: He used to work as a barber. |To have it cut and dyed: cắt và nhuộm tóc cut /kʌt/: cắt dyed /daɪ/: thay đổi màu sắc của vật bằng chất lỏng, trong trường hợp này là nhuộm tóc. Ví dụ: My girl friend will have it cut and dyed before TET holiday |To refresh /rɪˈfreʃ/: làm mới Ví dụ: A good night's sleep will refresh you. |To do multiple things at the same time: làm nhiều việc cùng lúc Ví dụ: The Congress and its members can do multiple things at the same time |To get a facial massage: mát-xa mặt facial /ˈfeɪ.ʃəl/: thuộc hoặc nằm trên khuôn mặt massage /ˈmæs.ɑːʒ/: mát-xa Ví dụ:  I get a facial massage in every day |To amount to /əˈmaʊnt/: lên đến Federal and state costs for building and operating prisons amounted to $25 billion. |Megatrend: xu hướng lớn (toàn cầu) Ví dụ:  The advance of technology constitutes a development megatrend with megatrend with huge potential. | To give it a try: thử Ví dụ:  You can give it a try here. | Unnecessary attention: sự chú ý không cần thiết Unnecessary /ʌnˈnes.ə.ser.i/: không cần thiết attention /əˈten.ʃən/: sự chú ý Ví dụ: It would create unnecessary attention."
 },{
 	track:"1.19",
 	title:"Friend",
@@ -667,6 +667,102 @@ Chắc chắn là có! Đây là thực phẩm giàu dinh dưỡng cho chế đ�
 Hầu như ở mọi con sông, hồ trong công viên hoặc đại dương. Bên cạnh đó, cá được bán ở hầu hết các chợ và siêu thị trong thành phố."
 	,voca:"nutrient-rich,healthy diet,hustle and bustle"
 	,note:"To be nutrient-rich /ˈnjuː.tri.ənt/ /rɪtʃ/ : giàu dinh dưỡng Ví dụ: Pregnant women especially need nutrient-rich food|A healthy diet: chế độ ăn lành mạnh Healthy /ˈhel.θi/ : lành mạnh Diet /ˈdaɪ.ət/ : chế độ ăn Ví dụ:  We discussed a healthy diet and exercise."
+},{
+	track:"1.31"
+	,title:"Perfume"
+	,en:"1) Do you use perfume?<br>\
+I used to hate it a lot when I was younger as I could not stand strong fragrance. But as I grew older, I realised that a girl should have something called a 'signature scent'. That's the reason why I started to use perfume on a daily basis.<br>\
+2) What kind of perfume do you like?<br>\
+I'm the type that prefers a light fragrance than a strong scent. I really love the delicate and sweet fragrance of flowers, especially roses and lilies.<br>\
+3) What does perfume mean to you?<br>\
+You know, whenever I put on some perfume, the pleasant fragrance makes me feel really good and more attractive. Besides, using perfume that suits your personality can leave a deep impression on the people around you.<br>\
+4) Do you give perfume as a gift?<br>\
+I do, but only to my closed ones because a bottle of perfume can be quite pricey so I do not want to waste my money on such an expensive gift for someone who I barely understand. On top of that, choosing the right scent for the receiver can be a very challenging task."
+	,vi:"1) Bạn có sử dụng nước hoa không?<br>\
+Tôi từng rất ghét nước hoa khi còn trẻ vì tôi không chịu được mùi hương nồng. Nhưng khi lớn lên, tôi nhận ra rằng một cô gái nên có thứ gọi là 'mùi hương đặc trưng'. Đó là lý do tại sao tôi bắt đầu sử dụng nước hoa hàng ngày.<br>\
+2) Bạn thích loại nước hoa nào?<br>\
+Tôi là kiểu người thích mùi hương nhẹ hơn là mùi hương nồng. Tôi thực sự thích mùi hương tinh tế và ngọt ngào của hoa, đặc biệt là hoa hồng và hoa loa kèn.<br>\
+3) Nước hoa có ý nghĩa gì với bạn?<br>\
+Bạn biết đấy, bất cứ khi nào tôi xịt nước hoa, mùi hương dễ chịu khiến tôi cảm thấy thực sự thoải mái và hấp dẫn hơn. Bên cạnh đó, sử dụng loại nước hoa phù hợp với tính cách của bạn có thể để lại ấn tượng sâu sắc cho những người xung quanh.<br>\
+4) Bạn có tặng nước hoa không?<br>\
+Tôi có tặng, nhưng chỉ tặng cho những người thân thiết của tôi vì một chai nước hoa có thể khá đắt nên tôi không muốn lãng phí tiền vào một món quà đắt tiền như vậy cho một người mà tôi hầu như không hiểu. Hơn nữa, việc lựa chọn mùi hương phù hợp cho người nhận có thể là một nhiệm vụ rất khó khăn."
+	,voca:"a light fragrance,signature scent"
+	,note:"Strong fragrance /strɒŋ/ /ˈfreɪ.ɡrəns/ : mùi hương nồng/ mãnh liệt Ví dụ: These doses were chosen because of the strong fragrance of the essential oil. |Signature scent: mùi thơm đặc trưng Signature  /ˈsɪɡ.nə.tʃər/ : đặc trưng Scent /sent/ : mùi thơm Ví dụ: Each suite has its own signature scent |A light fragrance : mùi thơm nhẹ nhàng Fragrance /ˈfreɪ.ɡrəns/: mùi hương, mùi thơm Ví dụ: The delicate fragrance of roses |To leave a deep impression on: để lại ấn tượng sâu sắc Deep /diːp/ : Sâu Impression /ɪmˈpreʃ.ən/: ấn tượng Ví dụ:  I ended up going to one Friday protest, which left a deep impression on me. |Pricey /ˈpraɪ.si/: mắc tiền Ví dụ: It's a bit pricey but the food is wonderful."
+},{
+	track:"1.32"
+	,title:"Photos/Pictures"
+	,en:"1) Do you like to take photos?<br>\
+All the time, actually. I have a lifelong passion for photography, not like selfies but pictures of different scenery. I guess it can really help enhance my creativity. I take pictures of almost everywhere I go and whenever I feel like it.<br>\
+2) Do you prefer to take photos yourself or to have other people take photos for you?<br>\
+Both I think. I am usually the one behind the camera on every trip I have with my friends and my family because I enjoy capturing moments of my loved ones. But I also like modelling in front of cameras and can strike great poses!"
+	,vi:"1) Bạn có thích chụp ảnh không?<br>\
+Thực ra là lúc nào cũng vậy. Tôi có niềm đam mê nhiếp ảnh suốt đời, không phải như ảnh tự sướng mà là ảnh chụp nhiều phong cảnh khác nhau. Tôi đoán là nhiếp ảnh thực sự có thể giúp tăng cường khả năng sáng tạo của tôi. Tôi chụp ảnh hầu như mọi nơi tôi đến và bất cứ khi nào tôi muốn.<br>\
+2) Bạn thích tự chụp ảnh hay để người khác chụp ảnh cho bạn?<br>\
+Tôi nghĩ là cả hai. Tôi thường là người đứng sau máy ảnh trong mọi chuyến đi với bạn bè và gia đình vì tôi thích ghi lại những khoảnh khắc của những người thân yêu. Nhưng tôi cũng thích làm người mẫu trước ống kính và có thể tạo dáng rất đẹp!"
+	,voca:" have a lifelong passion, enhance my creativity,behind the camera,strike great poses,evoke"
+	,note:" To have a lifelong passion: đam mê dài lâu Lifelong /ˈlaɪf.lɒŋ/ : suốt đời Passion /ˈpæʃ.ən/ : đam mê Ví dụ: John also had a lifelong passion for the outdoors |To enhance my creativity: nâng cao sức sáng tạo Enhance /ɪnˈhɑːns/ : nâng cao Creativity /ˌkriː.eɪˈtɪv.ə.ti/ : Sự sáng tạo Ví dụ: Different people find different strategies to enhance their creativity |Behind the camera: đứng đằng sau camera ( người chụp hình) Behind /bɪˈhaɪnd/: đằng sau Ví dụ:  My brother sitting behind the camera. |To capture moments: chụp lại các khoảnh khắc Capture  /ˈkæp.tʃər/ : bắt lấy Moments /ˈməʊ.mənt/ : Khoảnh khắc Ví dụ: The app allows you to capture moments in video. |Modelling /ˈmɒd.əl.ɪŋ/: làm người mẫu/ làm mẫu Ví dụ: Ashley's always wanted to go into modelling. |To strike great poses: tạo dáng đẹp ( để chụp hình) Poses  /pəʊz/ : tư thế Ví dụ:  The cute Beckham boys strike great poses. |To be framed /freɪmd/: đóng khung Ví dụ:  All the screens will be framed in dark wood. |To evoke /ɪˈvəʊk/ : gợi nhớ Ví dụ: That smell always evokes memories of my old school."
+},{
+	track:"1.33"
+	,title:"Colours"
+	,en:"1) Do you like dark colours?<br>\
+Absolutely! I always go for dark-colored items, from the clothes I wear to the phone I use. There isn't any particular reason why I'm into dark colours, especially black; they simply catch my attention whenever I go shopping. <br>\
+2) What's your favorite colour?<br>\
+When I was growing up, I guess blue was my favourite colour. I don't know why, but I always really liked things that were dark blue. These days though, I tend to have a preference for things that are green. So I suppose green and blue are the colours that I like most <br>\
+3) Do you usually wear clothes in your favorite colour?<br>\
+I surely do because wearing them would boost my confidence and lift my mood up. I wouldn't put on anything that isn't in my favourite colour despite how gorgeous the items are.<br>\
+4) Are there any colours you dislike?<br>\
+I would never, not even in a million years, put on any pink item. The color pink is too feminine and unappealing to me and I would definitely feel uncomfortable wearing pink clothes when going out."
+	,vi:"1) Bạn có thích màu tối không?<br>\
+Chắc chắn rồi! Tôi luôn chọn những món đồ tối màu, từ quần áo tôi mặc đến điện thoại tôi dùng. Không có lý do cụ thể nào khiến tôi thích màu tối, đặc biệt là màu đen; chúng chỉ đơn giản là thu hút sự chú ý của tôi mỗi khi tôi đi mua sắm. <br>\
+2) Màu sắc yêu thích của bạn là gì?<br>\
+Khi tôi lớn lên, tôi đoán màu xanh lam là màu tôi thích nhất. Tôi không biết tại sao, nhưng tôi luôn thực sự thích những thứ có màu xanh lam đậm. Tuy nhiên, hiện nay, tôi có xu hướng thích những thứ có màu xanh lá cây. Vì vậy, tôi cho rằng màu xanh lá cây và xanh lam là những màu tôi thích nhất <br>\
+3) Bạn có thường mặc quần áo có màu yêu thích của mình không?<br>\
+Tôi chắc chắn là có vì mặc chúng sẽ giúp tôi tự tin hơn và cải thiện tâm trạng. Tôi sẽ không mặc bất cứ thứ gì không phải màu tôi yêu thích mặc dù những món đồ đó đẹp đến mức nào.<br>\
+4) Bạn có không thích màu nào không?<br>\
+Tôi sẽ không bao giờ, thậm chí trong cả triệu năm, mặc bất kỳ món đồ màu hồng nào. Màu hồng trông quá nữ tính và không hấp dẫn với tôi và tôi chắc chắn sẽ cảm thấy không thoải mái khi mặc quần áo màu hồng khi ra ngoài."
+	,voca:"feminine,preference"
+	,note:"go for: chọn Ví dụ: I'd go for bread.|To catch my attention: thu hút sự chú ý của tôi Attention /əˈten.ʃən/: sự chú ý Ví dụ: Two of the specimens catch my attention. |To have a preference for: yêu thích ...hơn Preference  /ˈpref.ər.əns/: sự yêu thích Ví dụ: We have a preference for a comprehensive, mar ket-based approach to addressing climate change. |To boost my confidence: nâng cao sự tự tin Boost  /buːst/: thúc đẩy Confidence /ˈkɒn.fɪ.dəns/: sự tự tin Ví dụ: I did not need the goal to boost my confidence, my confidence was already there |To lift my mood up: làm tâm trạng tôi tốt lên Mood /muːd/: tâm trạng Ví dụ: The memories have suddenly lifted my mood. |To be feminine /ˈfem.ɪ.nɪn/: nữ tính Ví dụ: Her clothes are always very feminine |To be unappealing /ˌʌn.əˈpiː.lɪŋ/: kém hấp dẫn Ví dụ: Life for people working late, irregular hours is expensive, difficult and unappealing."
+},{
+	track:"1.34"
+	,title:"Laughter"
+	,en:"1) Do you usually make your friends laugh?<br>\
+I do try to make my friends laugh at times when we are talking. However, I don't think I have a very good sense of humor. There have been many times when I tried to make some jokes but failed miserably.<br>\
+2) Are you the kind of person who makes people laugh?<br>\
+Definitely not! As I mentioned, I'm not naturally funny, so I'm not confident enough to crack jokes and tell funny stories in front of other people apart from my friends.<br>\
+3) Do you think it is important to laugh with friends?<br>\
+Sure! I think laughter is really important, as it can bring friends closer together and strengthen their friendship. Besides, having a good laugh with our best friends is a good way to relieve stress after a stressful day."
+	,vi:"1) Bạn có thường làm bạn bè cười không?<br>\
+Tôi cố gắng làm bạn bè cười khi chúng tôi nói chuyện. Tuy nhiên, tôi không nghĩ mình có khiếu hài hước. Đã có nhiều lần tôi cố gắng kể một số câu chuyện cười nhưng thất bại thảm hại.<br>\
+2) Bạn có phải là kiểu người làm mọi người cười không?<br>\
+Chắc chắn là không! Như tôi đã đề cập, tôi không phải là người hài hước bẩm sinh, vì vậy tôi không đủ tự tin để kể chuyện cười và kể những câu chuyện vui trước mặt người khác ngoài bạn bè của mình.<br>\
+3) Bạn có nghĩ rằng việc cười với bạn bè là quan trọng không?<br>\
+Chắc chắn rồi! Tôi nghĩ rằng tiếng cười thực sự quan trọng, vì nó có thể giúp bạn bè xích lại gần nhau hơn và củng cố tình bạn của họ. Bên cạnh đó, việc cười đùa vui vẻ với những người bạn thân nhất của chúng ta là một cách tốt để giải tỏa căng thẳng sau một ngày căng thẳng."
+	,note:" To have a good sense of humor: có khiếu hài hước Good /ɡʊd/: Tốt Sense /sens/: Giác quan Humor /ˈhjuː.mər/: Hài hước Ví dụ: You'd better have a good sense of humor |To be naturally funny: vui tính bẩm sinh Naturally  /ˈnætʃ.ər.əl.i/: Tự nhiên Funny /ˈfʌn.i/: vui tính Ví dụ: I'm not a naturally funny person. |To crack a joke (idiom)/kræk/ /ə/  /dʒəʊk/ : nói đùa Ví dụ: I cracked a few jokes to try to cheer everyone up. |To strengthen a friendship: củng cố mối quan hệ bạn bè Strengthen /ˈstreŋ.θən/ : củng cố Friendship /ˈfrend.ʃɪp/: tình bạn Ví dụ: Any passionate area of interest can strengthen the friendship. |To bring friends closer together: đem bạn bè đến gần nhau hơn Bring /brɪŋ/ : mang Friends /frends/ : bạn bè Closer /kləʊz/ : gần  hơn Together /təˈɡeð.ər/: cùng nhau Ví dụ: We wanted to bring friends closer together"
+},{
+	track:"1.35"
+	,title:"Running"
+	,en:"1) Do you like running?<br>\
+I love it. Running is a good full body workout that helps me to keep fit and maintain good health. Also, while running, I can easily get rid of the negative thoughts in my mind.<br>\
+2) How often do you do running exercise?<br>\
+I run on a daily basis. Every morning, I go out for a short run in a park near my house. This activity helps me prepare for a productive day at work.<br>\
+3) Where do you usually go for running?<br>\
+As I mentioned, I often do a short run every morning in a park near my house. It is an airy and lovely park with a lake, large old trees and pleasant pathways lined with flowers.<br>\
+4) Do you have long-distance running?<br>\
+No, I have never due to my low stamina. The longest distance I've ever run is around 3 miles, and I don't think I can endure more than that.<br>\
+5) Do you like watching a running race on TV? Why?<br>\
+To be honest, I don't even know that such programs exist. Besides, I don't have much time for watching TV these days, so my answer is no."
+	,vi:"1) Bạn có thích chạy không?<br>\
+Tôi thích chạy. Chạy là bài tập toàn thân tốt giúp tôi giữ dáng và duy trì sức khỏe tốt. Ngoài ra, khi chạy, tôi có thể dễ dàng loại bỏ những suy nghĩ tiêu cực trong đầu.<br>\
+2) Bạn tập chạy thường xuyên như thế nào?<br>\
+Tôi chạy hàng ngày. Mỗi sáng, tôi chạy bộ ngắn trong công viên gần nhà. Hoạt động này giúp tôi chuẩn bị cho một ngày làm việc hiệu quả.<br>\
+3) Bạn thường chạy ở đâu?<br>\
+Như tôi đã đề cập, tôi thường chạy bộ ngắn mỗi sáng trong công viên gần nhà. Đó là một công viên thoáng mát và xinh đẹp với hồ nước, những cây cổ thụ lớn và những con đường dễ chịu có nhiều hoa.<br>\
+4) Bạn có chạy đường dài không?<br>\
+Không, tôi chưa bao giờ chạy vì sức bền của tôi kém. Quãng đường dài nhất mà tôi từng chạy là khoảng 3 dặm, và tôi không nghĩ mình có thể chịu đựng được lâu hơn thế.<br>\
+5) Bạn có thích xem cuộc đua chạy trên TV không? Tại sao?<br>\
+Thành thật mà nói, tôi thậm chí còn không biết có chương trình như vậy. Hơn nữa, dạo này tôi không có nhiều thời gian để xem TV, nên câu trả lời của tôi là không."
+	,voca:"maintain good health"
+	,note:"To maintain good health: duy trì sức khỏe tốt Maintain /meɪnˈteɪn/: duy trì Good /ɡʊd/: Tốt Health /helθ/: khỏe tốt Ví dụ: I try to do everything I can possibly do to main tain good health |Full body workout: bài tập thể dục toàn thân Full body /fʊl/ /ˈbɒd.i/ : Toàn thân Workout  /ˈwɜː.kaʊt/: Bài thể dục Ví dụ: We encompass a full body workout in every class |To get rid of the negative thoughts: loại bỏ những suy nghĩ tiêu cực Rid /rɪd/: thoát khỏi Negative /ˈneɡ.ə.tɪv/: tiêu cực Thought /θɔːt/: suy nghĩ Ví dụ: We have to get rid of the negative thoughts and go again."
 }
 
 

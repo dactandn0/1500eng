@@ -20,6 +20,7 @@ const BAT_QUI_TAC_DATA = [
 	'leave|left|left|đặt, để',
 	'put|put|put|đặt, để',
 	'pass|passed|passed|qua',
+	'go|went|gone|đi',
 	'give|gave|given|qua',
 ]
 
@@ -45,6 +46,7 @@ const PHRASAL_VERB_DATA = [
 	{word: 'put', prep: 'off',  mean: 'cởi bỏ (quần áo)'},
 	{word: 'put', prep: 'aside',  mean: 'bỏ qua'},
 	{word: 'put', prep: 'up with',  mean: 'chịu đựng'},
+	{word: 'go', prep: 'for',  mean: 'chọn'},
 	{word: 'give', prep: 'it a go',  mean: 'thử'},
 ]
 

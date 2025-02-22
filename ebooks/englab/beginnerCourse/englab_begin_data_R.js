@@ -450,64 +450,36 @@ S5. Further development of water transport"
 },{
 	title:"The Importance Of Children's Play"
 	,en:"Brick by brick, six-year-old Alice is building a magical kingdom. Imagining fairy-tale turrets and fire-breathing dragons, wicked witches and gallant heroes, she's creating an enchanting world. Although she isn't aware of it, this fantasy is helping her take her first steps towards her capacity for creativity and so it will have important repercussions in her adult life.<br>\
-<br>\
 Minutes later, Alice has abandoned the kingdom in favour of playing schools with her younger brother. When she bosses him around as his 'teacher', she's practising how to regulate her emotions through pretence. Later on, when they tire of this and settle down with a board game, she's learning about the need to follow rules and take turns with a partner.<br>\
-<br>\
 'Play in all its rich variety is one of the highest achievements of the human species,' says Dr David Whitebread from the Faculty of Education at the University of Cambridge, UK. 'It underpins how we develop as intellectual, problem-solving adults and is crucial to our success as a highly adaptable species.'<br>\
-<br>\
 Recognising the importance of play is not new: over two millennia ago, the Greek philosopher Plato extolled its virtues as a means of developing skills for adult life, and ideas about play-based learning have been developing since the 19th century.<br>\
-<br>\
 But we live in changing times, and Whitebread is mindful of a worldwide decline in play, pointing out that over half the people in the world now live in cities. 'The opportunities for free play, which I experienced almost every day of my childhood, are becoming increasingly scarce,' he says. Outdoor play is curtailed by perceptions of risk to do with traffic, as well as parents' increased wish to protect their children from being the victims of crime, and by the emphasis on 'earlier is better' which is leading to greater competition in academic learning and schools.<br>\
-<br>\
 International bodies like the United Nations and the European Union have begun to develop policies concerned with children's right to play, and to consider implications for leisure facilities and educational programmes. But what they often lack is the evidence to base policies on.<br>\
-<br>\
 Dr Jenny Gibson agrees, pointing out that although some of the steps in the puzzle of how and why play is important have been looked at, there is very little data on the impact it has on the child's later life.<br>\
-<br>\
 Now, thanks to the university's new Centre for Research on Play in Education, Development and Learning (PEDAL), Whitebread, Baker, Gibson and a team of researchers hope to provide evidence on the role played by play in how a child develops.<br>\
-<br>\
 'A strong possibility is that play supports the early development of children's self-control,' explains Baker. 'This is our ability to develop awareness of our own thinking processes - it influences how effectively we go about undertaking challenging activities.'<br>\
-<br>\
 In a study carried out by Baker with toddlers and young pre-schoolers, she found that children with greater self-control solved problems more quickly when exploring an unfamiliar set-up requiring scientific reasoning. 'This sort of evidence makes us think that giving children the chance to play will make them more successful problem-solvers in the long run.'<br>\
-<br>\
 If playful experiences do facilitate this aspect of development, say the researchers, it could be extremely significant for educational practices, because the ability to self-regulate has been shown to be a key predictor of academic performance.<br>\
-<br>\
 Gibson adds: 'Playful behaviour is also an important indicator of healthy social and emotional development. In my previous research, I investigated how observing children at play can give us important clues about their well-being and can even be useful in the diagnosis of neurodevelopmental disorders like autism.'<br>\
-<br>\
 Whitebread's recent research has involved developing a play-based approach to supporting children's writing. 'Many primary school children find writing difficult, but we showed in a previous study that a playful stimulus was far more effective than an instructional one.' Children wrote longer and better-structured stories when they first played with dolls representing characters in the story. In the latest study, children first created their story with Lego*, with similar results. 'Many teachers commented that they had always previously had children saying they didn't know what to write about. With the Lego building, however, not a single child said this through the whole year of the project.'<br>\
-<br>\
 Whitebread, who directs PEDAL, trained as a primary school teacher in the early 1970s, when, as he describes, 'the teaching of young children was largely a quiet backwater, untroubled by any serious intellectual debate or controversy.' Now, the landscape is very different, with hotly debated topics such as school starting age.<br>\
-<br>\
 'Somehow the importance of play has been lost in recent decades. It's regarded as something trivial, or even as something negative that contrasts with 'work'. Let's not lose sight of its benefits, and the fundamental contributions it makes to human achievements in the arts, sciences and technology. Let's make sure children have a rich diet of play experiences.'"
 	,vi:"Từng viên gạch một, Alice sáu tuổi đang xây dựng một vương quốc kỳ diệu. Tưởng tượng ra những tòa tháp trong truyện cổ tích và những con rồng phun lửa, những phù thủy độc ác và những anh hùng dũng cảm, cô bé đang tạo ra một thế giới đầy mê hoặc. Mặc dù cô bé không nhận ra điều đó, nhưng tưởng tượng này đang giúp cô bé thực hiện những bước đầu tiên hướng tới khả năng sáng tạo của mình và do đó, nó sẽ có những tác động quan trọng trong cuộc sống trưởng thành của cô bé.<br>\
-<br>\
 Vài phút sau, Alice đã từ bỏ vương quốc để chơi trò trường học với em trai mình. Khi cô bé ra lệnh cho em trai mình như một 'giáo viên', cô bé đang thực hành cách điều chỉnh cảm xúc của mình thông qua sự giả vờ. Sau đó, khi họ chán trò chơi này và ngồi xuống với một trò chơi cờ bàn, cô bé học được về nhu cầu tuân theo các quy tắc và chơi theo lượt với một người bạn.<br>\
-<br>\
 'Chơi với tất cả sự đa dạng phong phú của nó là một trong những thành tựu cao nhất của loài người,' Tiến sĩ David Whitebread từ Khoa Giáo dục tại Đại học Cambridge, Vương quốc Anh cho biết. 'Nó củng cố cách chúng ta phát triển như những người trưởng thành có trí tuệ, biết giải quyết vấn đề và đóng vai trò quan trọng đối với thành công của chúng ta như một loài có khả năng thích nghi cao.'<br>\
-<br>\
 Nhận ra tầm quan trọng của trò chơi không phải là điều mới mẻ: hơn hai thiên niên kỷ trước, triết gia Hy Lạp Plato đã ca ngợi những đức tính của trò chơi như một phương tiện phát triển các kỹ năng cho cuộc sống trưởng thành và những ý tưởng về việc học thông qua trò chơi đã phát triển từ thế kỷ 19.<br>\
-<br>\
 Nhưng chúng ta đang sống trong thời đại thay đổi và Whitebread nhận thức được sự suy giảm trò chơi trên toàn thế giới, chỉ ra rằng hơn một nửa dân số thế giới hiện đang sống ở các thành phố. 'Những cơ hội được chơi tự do, điều mà tôi đã trải qua hầu như mỗi ngày trong thời thơ ấu của mình, đang ngày càng trở nên khan hiếm', ông nói. Trò chơi ngoài trời bị hạn chế do nhận thức về rủi ro liên quan đến giao thông, cũng như mong muốn ngày càng tăng của cha mẹ trong việc bảo vệ con cái họ khỏi trở thành nạn nhân của tội phạm và do sự nhấn mạnh vào 'sớm hơn là tốt hơn' đang dẫn đến sự cạnh tranh lớn hơn trong học tập và trường học.<br>\
-<br>\
 Các tổ chức quốc tế như Liên hợp quốc và Liên minh châu Âu đã bắt đầu xây dựng các chính sách liên quan đến quyền vui chơi của trẻ em và xem xét các tác động đối với các cơ sở giải trí và chương trình giáo dục. Nhưng điều mà họ thường thiếu là bằng chứng để xây dựng chính sách.<br>\
-<br>\
 Tiến sĩ Jenny Gibson đồng ý, chỉ ra rằng mặc dù một số bước trong câu đố về cách thức và lý do tại sao chơi đùa lại quan trọng đã được xem xét, nhưng có rất ít dữ liệu về tác động của nó đối với cuộc sống sau này của trẻ.<br>\
-<br>\
 Giờ đây, nhờ có Trung tâm Nghiên cứu về Chơi đùa trong Giáo dục, Phát triển và Học tập (PEDAL) mới của trường đại học, Whitebread, Baker, Gibson và một nhóm các nhà nghiên cứu hy vọng sẽ cung cấp bằng chứng về vai trò của trò chơi đối với sự phát triển của trẻ.<br>\
-<br>\
 Baker giải thích rằng 'Có khả năng lớn là trò chơi hỗ trợ sự phát triển sớm khả năng tự chủ của trẻ em'. 'Đây là khả năng phát triển nhận thức về quá trình suy nghĩ của chính chúng ta - nó ảnh hưởng đến hiệu quả của chúng ta khi thực hiện các hoạt động đầy thử thách.'<br>\
-<br>\
 Trong một nghiên cứu do Baker thực hiện với trẻ mới biết đi và trẻ mẫu giáo, bà phát hiện ra rằng trẻ em có khả năng tự chủ cao hơn giải quyết vấn đề nhanh hơn khi khám phá một bối cảnh xa lạ đòi hỏi phải có lý luận khoa học. 'Loại bằng chứng này khiến chúng ta nghĩ rằng việc cho trẻ em cơ hội chơi sẽ giúp chúng trở thành người giải quyết vấn đề thành công hơn về lâu dài.'<br>\
-<br>\
 Các nhà nghiên cứu cho biết nếu những trải nghiệm vui chơi thực sự tạo điều kiện thuận lợi cho khía cạnh phát triển này, thì điều đó có thể cực kỳ quan trọng đối với các hoạt động giáo dục, vì khả năng tự điều chỉnh đã được chứng minh là một yếu tố dự báo chính về thành tích học tập.<br>\
-<br>\
 Gibson nói thêm: 'Hành vi vui chơi cũng là một chỉ báo quan trọng về sự phát triển xã hội và cảm xúc lành mạnh. Trong nghiên cứu trước đây của mình, tôi đã tìm hiểu cách quan sát trẻ em chơi đùa có thể cung cấp cho chúng ta những manh mối quan trọng về sức khỏe của chúng và thậm chí có thể hữu ích trong việc chẩn đoán các rối loạn phát triển thần kinh như chứng tự kỷ.'<br>\
-<br>\
 Nghiên cứu gần đây của Whitebread liên quan đến việc phát triển một phương pháp tiếp cận dựa trên trò chơi để hỗ trợ trẻ em viết. 'Nhiều trẻ em tiểu học thấy viết khó, nhưng chúng tôi đã chỉ ra trong một nghiên cứu trước đó rằng một kích thích vui tươi hiệu quả hơn nhiều so với kích thích hướng dẫn.' Trẻ em viết những câu chuyện dài hơn và có cấu trúc tốt hơn khi lần đầu tiên chơi với búp bê đại diện cho các nhân vật trong câu chuyện. Trong nghiên cứu mới nhất, trẻ em lần đầu tiên tạo ra câu chuyện của mình bằng Lego*, với kết quả tương tự. 'Nhiều giáo viên nhận xét rằng trước đây họ luôn có những đứa trẻ nói rằng chúng không biết phải viết về điều gì. Tuy nhiên, với tòa nhà Lego, không một đứa trẻ nào nói điều này trong suốt cả năm của dự án.'<br>\
-<br>\
 Whitebread, người chỉ đạo PEDAL, được đào tạo làm giáo viên tiểu học vào đầu những năm 1970, khi mà, như ông mô tả, 'việc giảng dạy trẻ nhỏ phần lớn là một vùng nước lặng, không bị ảnh hưởng bởi bất kỳ cuộc tranh luận hay tranh cãi trí tuệ nghiêm túc nào.' Bây giờ, bối cảnh đã rất khác, với các chủ đề được tranh luận sôi nổi như độ tuổi bắt đầu đi học.<br>\
-<br>\
 'Bằng cách nào đó, tầm quan trọng của trò chơi đã bị mất đi trong những thập kỷ gần đây. Nó được coi là một thứ tầm thường, hoặc thậm chí là một thứ tiêu cực trái ngược với 'công việc'. Chúng ta đừng quên những lợi ích của nó và những đóng góp cơ bản mà nó mang lại cho những thành tựu của con người trong nghệ thuật, khoa học và công nghệ. Hãy đảm bảo rằng trẻ em có một chế độ ăn uống phong phú về các trải nghiệm chơi.'"
-	,voca:"disorders,well-being,predictor,steps towards,scarce,self-regulate"
+	,voca:"fairy-tale,turrets,isorders,well-being,predictor,steps towards,scarce,self-regulate,extolled,repercussions,fantasy,settle,regulate,pretence,self-control,autism,scarce,undertaking"
 	,T_F_NG:"T. Children with good self-control are known to be likely to do well at school later on.<br>\
 T. The way a child plays may provide information about possible medical problems.<br>\
 NG. Playing with dolls was found to benefit girls' writing more than boys' writing.<br>\

@@ -404,6 +404,71 @@ Fred: Ồ, thật sao? Ai dạy những lớp đó vậy? Tôi luôn muốn th�
 Mary: Là thầy Turner. Tôi nghĩ ông ấy đã dành một thời gian làm diễn viên ở London, vì vậy các lớp học sẽ khá tốt. <br>\
 Fred: Ồ, vậy thì, trong trường hợp đó, tôi nghĩ mình sẽ thử học kịch."
 ,images:['l_u7_2-min.png']
+},{
+	track:"Cam49"
+	,title:"The Official Cambridge Guide to IELTS - TEST 03"
+	,en:"Alan: Hi Melanie - what did you think of the assignment that we got today? It looks interesting, doesn't it?<br>\
+Melanie: Yes Alan, I've always been interested in recycling but there's a lot of research to do.<br>\
+Alan: Yes - there are a lot of things I'm unsure of so it's going to be good working with you.<br>\
+Melanie: OK - well why don't we start by making a flow- chart from the notes our tutor gave us?<br>\
+Alan: Yes, um, so... on one side we could have the paper production cycle - here on the left-and on the other side the recycling.<br>\
+Melanie: Good idea. Let's start at the top with the production. The first step in the process is to get the raw materials.<br>\
+Alan: Yes - and they tend to come from pine forests.<br>\
+Melanie: OK - and then the bark is removed from the outside of the tree and after that the wood is chopped up - that's the first three stages.<br>\
+Alan: It sounds a bit complicated after that. Um, it says water is added and then the mixture is heated and made into pulp. This will be the thick paste that is used to make paper.<br>\
+Melanie: Yes - you're right because after that they use a machine to make the paper and we can put that right in the centre of the flow.chart because it's also where the recycled paper joins the process.<br>\
+Alan: Yes. So once the paper has been produced in the machine, what happens then?<br>\
+Melanie: Well, I think we should write 'print' as the next step because this is when newspapers, magazines, etc are produced. And we could also add that they have to be distributed to stores and people's homes.<br>\
+Alan: Right, then the recycling bit starts. The old paper's collected and then it says it's taken somewhere so that someone or something can sort it. I imagine there are different kinds of paper - or things like paper clips that need to be removed.<br>\
+Melanie: Yes. Let's have a step after that. Now, how did our tutor say they do this? Oh yes - it involves chemicals, so - how is your chemistry?<br>\
+Alan: Well - not very good I'm afraid. But this is how they remove ink so - this is definitely going to need a bit of research<br>\
+Melanie: Right - the last step in the recycling section is similar to the last step in the production process with heating and pulping - before the cycle begins again.<br>\
+Alan: So I think going through the processes helped. Now we need to decide how we're going to do this assignment.<br>\
+Melanie: Yes. I guess what we need to do is take the processes and divide them up between us. But we could start thinking about an introduction.<br>\
+Alan: Yes, OK ... well I can start doing that. I think I have enough to go on already.<br>\
+Melanie: Good. And there are a few areas where we need a lot more information. I think I'll start with something easy - let's say the paper collection. I could go to the resource centre to do some research.<br>\
+Alan: Well I think a better idea would be to approach someone who's involved in the process. What about contacting the council?<br>\
+Melanie: Oh - good idea. Yes - I'll do that instead. They're bound to have some information. And I know just the thing to add to our work to make it even more interesting.<br>\
+Alan: And what's that?<br>\
+Melanie: Well - in my last assignment, I added a few pictures and the feedback I got was that this wasn't academic enough. So what might really bring it to life would be to include some data - provided we can find some.<br>\
+Alan: Yes - that sounds excellent. Well - we certainly have a lot to do and not much time to do it in.<br>\
+Melanie: You're right. I think we have about five weeks so I suggest we create a plan of work today. The end of the month is nearly three weeks away and then we have a few days' holiday<br>\
+Alan: Yes - so let's see if we can get the first draft done by then so we can take a short break.<br>\
+Melanie: OK - then after the break we'll have just over a week to complete it. I wonder if we could get someone to review our work for us a few days before the deadline so we can make some final changes. What about your friend Henry?<br>\
+Alan: Well - the best person would be our tutor. Henry's very good but he's taking a whole week's holiday and there won't be enough time when he returns.<br>\
+Melanie: OK, then. That's fine."
+	,vi:"Alan: Chào Melanie - bạn nghĩ gì về bài tập chúng ta được giao hôm nay? Trông có vẻ thú vị phải không?<br>\
+Melanie: Đúng vậy Alan, tôi luôn quan tâm đến việc tái chế nhưng còn rất nhiều nghiên cứu phải làm.<br>\
+Alan: Đúng vậy - có rất nhiều điều tôi không chắc chắn nên sẽ rất tuyệt nếu được làm việc với bạn.<br>\
+Melanie: Được rồi - vậy thì chúng ta hãy bắt đầu bằng cách lập sơ đồ luồng công việc từ những ghi chú mà người hướng dẫn đã đưa cho chúng ta nhé?<br>\
+Alan: Vâng, ừm, vậy thì... một bên chúng ta có thể có chu trình sản xuất giấy - ở đây bên trái - và bên kia là chu trình tái chế.<br>\
+Melanie: Ý tưởng hay đấy. Chúng ta hãy bắt đầu từ đầu với sản xuất. Bước đầu tiên trong quy trình là lấy nguyên liệu thô.<br>\
+Alan: Đúng vậy - và chúng thường đến từ rừng thông.<br>\
+Melanie: OK - và sau đó, vỏ cây được tách ra khỏi bên ngoài cây và sau đó gỗ được chặt nhỏ - đó là ba giai đoạn đầu tiên.<br>\
+Alan: Nghe có vẻ hơi phức tạp sau đó. Ừm, nó nói rằng nước được thêm vào và sau đó hỗn hợp được đun nóng và tạo thành bột giấy. Đây sẽ là hỗn hợp sệt được sử dụng để làm giấy.<br>\
+Melanie: Đúng vậy - bạn nói đúng vì sau đó, họ sử dụng máy để làm giấy và chúng ta có thể đặt nó ngay giữa sơ đồ quy trình vì đó cũng là nơi giấy tái chế tham gia vào quy trình.<br>\
+Alan: Đúng vậy. Vậy sau khi giấy được sản xuất trong máy, điều gì sẽ xảy ra tiếp theo?<br>\
+Melanie: Vâng, tôi nghĩ chúng ta nên viết 'in' là bước tiếp theo vì đây là lúc báo, tạp chí, v.v. được sản xuất. Và chúng ta cũng có thể thêm rằng chúng phải được phân phối đến các cửa hàng và nhà của mọi người.<br>\
+Alan: Đúng rồi, sau đó là phần tái chế. Giấy cũ được thu thập và sau đó được chuyển đến một nơi nào đó để ai đó hoặc thứ gì đó có thể phân loại. Tôi hình dung có nhiều loại giấy khác nhau - hoặc những thứ như kẹp giấy cần được tháo ra.<br>\
+Melanie: Vâng. Chúng ta hãy cùng xem một bước sau đó. Bây giờ, người hướng dẫn của chúng ta nói rằng họ đã làm điều này như thế nào? Ồ vâng - nó liên quan đến hóa chất, vậy - hóa học của bạn thế nào?<br>\
+Alan: Vâng - tôi e là không tốt lắm. Nhưng đây là cách họ loại bỏ mực nên - điều này chắc chắn sẽ cần một chút nghiên cứu<br>\
+Melanie: Đúng rồi - bước cuối cùng trong phần tái chế tương tự như bước cuối cùng trong quy trình sản xuất với quá trình gia nhiệt và nghiền bột giấy - trước khi chu trình bắt đầu lại.<br>\
+Alan: Vì vậy, tôi nghĩ rằng việc xem xét các quy trình đã giúp ích. Bây giờ chúng ta cần quyết định cách chúng ta sẽ thực hiện bài tập này.<br>\
+Melanie: Đúng rồi. Tôi đoán là chúng ta cần phải thực hiện các quy trình và chia chúng ra. Nhưng chúng ta có thể bắt đầu nghĩ về phần giới thiệu.<br>\
+Alan: Vâng, OK ... tôi có thể bắt đầu làm điều đó. Tôi nghĩ là tôi đã có đủ thông tin để tiếp tục rồi.<br>\
+Melanie: Tốt. Và có một vài lĩnh vực mà chúng ta cần nhiều thông tin hơn nữa. Tôi nghĩ là tôi sẽ bắt đầu với một cái gì đó dễ dàng - chẳng hạn như bộ sưu tập giấy tờ. Tôi có thể đến trung tâm tài nguyên để nghiên cứu một chút.<br>\
+Alan: Vâng, tôi nghĩ ý tưởng hay hơn là tiếp cận một người nào đó tham gia vào quy trình. Còn việc liên hệ với hội đồng thì sao?<br>\
+Melanie: Ồ - ý tưởng hay đấy. Vâng - tôi sẽ làm thế thay. Họ nhất định sẽ có một số thông tin. Và tôi biết chính xác điều gì đó để thêm vào công việc của chúng ta để làm cho nó thậm chí còn thú vị hơn.<br>\
+Alan: Và đó là gì?<br>\
+Melanie: Vâng - trong bài tập cuối cùng của tôi, tôi đã thêm một vài hình ảnh và phản hồi mà tôi nhận được là điều này không đủ tính học thuật. Vậy thì điều thực sự có thể làm cho nó trở nên sống động là đưa vào một số dữ liệu - miễn là chúng ta có thể tìm thấy một số dữ liệu.<br>\
+Alan: Vâng - nghe có vẻ tuyệt. Vâng - chúng ta chắc chắn có rất nhiều việc phải làm và không có nhiều thời gian để thực hiện.<br>\
+Melanie: Bạn nói đúng. Tôi nghĩ chúng ta có khoảng năm tuần nên tôi đề xuất chúng ta lập kế hoạch làm việc ngay hôm nay. Cuối tháng còn gần ba tuần nữa và sau đó chúng ta có một vài ngày nghỉ<br>\
+Alan: Vâng - vậy hãy xem chúng ta có thể hoàn thành bản thảo đầu tiên trước thời hạn để chúng ta có thể nghỉ ngơi một chút không.<br>\
+Melanie: Được - sau kỳ nghỉ, chúng ta sẽ có hơn một tuần để hoàn thành nó. Tôi tự hỏi liệu chúng ta có thể nhờ ai đó xem lại công việc của chúng ta trước thời hạn vài ngày để chúng ta có thể thực hiện một số thay đổi cuối cùng không. Còn bạn Henry của bạn thì sao?<br>\
+Alan: Vâng - người giỏi nhất sẽ là gia sư của chúng ta. Henry rất giỏi nhưng anh ấy sẽ nghỉ cả tuần và sẽ không có đủ thời gian khi anh ấy trở về.<br>\
+Melanie: Được thôi. Không sao đâu."
+	,voca:""
+	,images:['l_Cam49-min.png']
 }
 
 

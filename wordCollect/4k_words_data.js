@@ -8,6 +8,7 @@ longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
 conducive (a) /kənˈduːsɪv/ có lợi<br>\
 sedentary (a) /ˈsednteri/ ít vận động<br>\
+facility (n) /fəˈsɪləti/ cơ sở<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
 despite (prep) /dɪˈspaɪt/ cho dù<br>\
 on top of that (idiom) hơn thế<br>\

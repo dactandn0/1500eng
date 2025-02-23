@@ -63,6 +63,7 @@ Yes, of course. It's really simple to get around my city by catching a bus, taki
 It's always quite challenging at the beginning when you try something new and learning to play the guitar is no exception. At first, your fingers can hurt a lot. But after a while, with practice, things gradually become easier."
 },{
 	track:"1.03c"
+	,title:"How has x changed"
 	,en:"9) How has your hometown changed in recent years?<br>\
 I have to say it has changed a great deal over the past few years. 10 years ago, the streets were often narrow, and tall buildings were few and far between. However, in recent years, there has been a noticeable transformation. Nowadays, main streets have been significantly widened, and numerous (=many) shopping malls and high-rise buildings have been constructed.<br>\
 10) How have shops changed in your town in the last five years?<br>\
@@ -76,6 +77,7 @@ Well, families have undergone significant changes over the past decades. In the 
 Traditionally, fathers took on the role of the family breadwinner, while mothers stayed at home and took on childcare responsibilities. Nowadays, however, more men are choosing to stay at home and take care of the children, while women pursue careers outside the home."
 },{
 	track:"1.04"
+	,title:"Is X suitable for...?"
 	,en:"1) Do you think it's appropriate for museums to sell things to visitors?<br>\
 Yes, it would be a great idea because museums need money for operation (vận hành) and maintenance. Plus, many people like to buy something at the places they visit to give to their loved ones as a gift.<br>\
 2) Is your hometown suitable for young people to live in?<br>\
@@ -86,17 +88,25 @@ Yes, I think bicycles are suitable for people of all ages because they offer a c
 4) Is working from home suitable for all jobs?<br>\
 No, not really. Working from home works well for some jobs, like IT, writing, or customer service, but not for everything. Jobs like doctors, construction workers, or factory employees need to be done in person. Plus, some people find it hard to stay focused or miss the teamwork that comes with an office. So yeah, it's great for some, but definitely not for all jobs.<br>\
 5) Is studying abroad suitable for everyone?<br>\
-No, studying abroad is not suitable for everyone; factors like personal adaptability, financial stability, language proficiency, cultural awareness, and academic preparedness should be considered before deciding to study abroad, meaning some individuals may not be well-suited for the experience despite their interest in it."
+No, studying abroad is not suitable for everyone; factors like personal adaptability, financial stability, language proficiency, cultural awareness, and academic preparedness should be considered before deciding to study abroad, meaning some individuals may not be well-suited for the experience despite their interest in it.<br>\
+6) Is studying abroad suitable for everyone?<br>\
+Not really. Studying abroad can be a great experience, but it's not ideal for everyone. First, it can be very expensive, and not all families can afford the high tuition fees and living costs in another country. Second, some people may struggle with cultural differences and homesickness, which can affect their studies and mental health. So, while studying abroad has many benefits, it depends on a person's financial situation and adaptability.<br>\
+7) Is online shopping suitable for elderly people?<br>\
+Not really. While online shopping is convenient, it’s not always a great idea for elderly people. Many seniors are not very tech-savvy, so they might struggle with navigating websites or placing orders. Also, they can be more vulnerable to online scams or fake products. However, for those who are familiar with technology, it can be a useful way to shop without leaving home."
 	,vi:"1) Bạn có nghĩ rằng bảo tàng nên bán đồ cho du khách không?<br>\
 Có, đó là một ý tưởng tuyệt vời vì bảo tàng cần tiền để vận hành và bảo trì. Thêm vào đó, nhiều người thích mua một thứ gì đó ở những nơi họ đến thăm để tặng cho người thân yêu của họ như một món quà.<br>\
 2) Quê hương của bạn có phù hợp với những người trẻ tuổi không?<br>\
-Không, tôi không nghĩ vậy vì không có nhiều cơ hội việc làm ở thị trấn của tôi. Đó là lý do tại sao nhiều người trẻ tuổi rời đi đến các thành phố lớn để tìm kiếm công việc tốt hơn và phát triển sự nghiệp.<br>\
+Không, tôi không nghĩ vậy vì không có nhiều cơ hội việc làm ở thị trấn của tôi. Đó là lý do tại sao nhiều người trẻ tuổi rời đến các thành phố lớn để tìm kiếm công việc tốt hơn và phát triển sự nghiệp.<br>\
 3) Bạn có nghĩ rằng xe đạp phù hợp với mọi lứa tuổi không?<br>\
 Hoàn toàn đúng! Xe đạp phù hợp với mọi người, bất kể tuổi tác. Cho dù bạn là trẻ em hay ông bà, việc đạp xe là một cách tuyệt vời để thư giãn và giữ gìn sức khỏe<br>\
 Có, tôi nghĩ rằng xe đạp phù hợp với mọi lứa tuổi vì chúng cung cấp một cách di chuyển thuận tiện và thân thiện với môi trường. Trẻ em có thể thích đạp xe như một hoạt động ngoài trời thú vị, trong khi người lớn thường sử dụng xe đạp để đi làm hoặc tập thể dục. Ngay cả người lớn tuổi cũng có thể đạp xe, đặc biệt là nếu họ chọn những mẫu xe có thêm hỗ trợ, như xe đạp điện hoặc xe đạp ba bánh.<br>\
 4) Làm việc tại nhà có phù hợp với mọi công việc không?<br>\
-Không, không hẳn vậy. Làm việc tại nhà hiệu quả với một số công việc, như CNTT, viết lách hoặc dịch vụ khách hàng, nhưng không phải với mọi công việc. Những công việc như bác sĩ, công nhân xây dựng hoặc nhân viên nhà máy cần phải được thực hiện trực tiếp. Thêm vào đó, một số người thấy khó tập trung hoặc nhớ tinh thần làm việc nhóm khi làm việc tại văn phòng. Vậy nên, đúng là tuyệt vời với một số người, nhưng chắc chắn không phải với mọi công việc.<br>\
+Không, thực sự không phải vậy. Làm việc tại nhà hiệu quả với một số công việc, như CNTT, viết lách hoặc dịch vụ khách hàng, nhưng không phải với mọi công việc. Những công việc như bác sĩ, công nhân xây dựng hoặc nhân viên nhà máy cần phải được thực hiện trực tiếp. Thêm vào đó, một số người thấy khó tập trung hoặc nhớ tinh thần làm việc nhóm khi làm việc tại văn phòng. Vậy nên, đúng là tuyệt vời với một số người, nhưng chắc chắn không phải với mọi công việc.<br>\
 5) Du học có phù hợp với tất cả mọi người không?<br>\
-Không, du học không phù hợp với tất cả mọi người; các yếu tố như khả năng thích nghi cá nhân, ổn định tài chính, trình độ ngôn ngữ, nhận thức văn hóa và sự chuẩn bị về mặt học thuật cần được cân nhắc trước khi quyết định du học, nghĩa là một số cá nhân có thể không phù hợp với trải nghiệm này mặc dù họ có hứng thú với nó."
+Không, du học không phù hợp với tất cả mọi người; Các yếu tố như khả năng thích nghi cá nhân, sự ổn định về tài chính, trình độ ngôn ngữ, nhận thức về văn hóa và sự chuẩn bị về mặt học thuật nên được cân nhắc trước khi quyết định du học, nghĩa là một số cá nhân có thể không phù hợp với trải nghiệm này mặc dù họ quan tâm đến nó.<br>\
+6) Du học có phù hợp với tất cả mọi người không?<br>\
+Không hẳn vậy. Du học có thể là một trải nghiệm tuyệt vời, nhưng không phải ai cũng lý tưởng. Đầu tiên, nó có thể rất tốn kém và không phải gia đình nào cũng đủ khả năng chi trả học phí và chi phí sinh hoạt cao ở một quốc gia khác. Thứ hai, một số người có thể gặp khó khăn với sự khác biệt về văn hóa và nỗi nhớ nhà, điều này có thể ảnh hưởng đến việc học và sức khỏe tinh thần của họ. Vì vậy, mặc dù du học có nhiều lợi ích, nhưng nó phụ thuộc vào tình hình tài chính và khả năng thích nghi của một người.<br>\
+7) Mua sắm trực tuyến có phù hợp với người cao tuổi không?<br>\
+Không hẳn vậy. Mặc dù mua sắm trực tuyến rất tiện lợi, nhưng không phải lúc nào nó cũng là một ý tưởng tuyệt vời đối với người cao tuổi. Nhiều người cao tuổi không rành về công nghệ, vì vậy họ có thể gặp khó khăn khi điều hướng các trang web hoặc đặt hàng. Ngoài ra, họ có thể dễ bị lừa đảo trực tuyến hoặc sản phẩm giả hơn. Tuy nhiên, đối với những người quen thuộc với công nghệ, đây có thể là một cách hữu ích để mua sắm mà không cần ra khỏi nhà."
 },
 ]

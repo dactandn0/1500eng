@@ -153,7 +153,7 @@ const SynonymData = [
 },{
 	words:"rich|wealthy|affluent|prosperous (thịnh vượng)",
 	type:"a",
-	mean:"giàu có"
+	mean:"giàu có, phong phú"
 },{
 	words:"poor|needy|destitute|impoverished",
 	type:"a",

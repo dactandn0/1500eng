@@ -1,7 +1,7 @@
 
 const ENGLAB_BEGIN_DATA_S = [
 {
-	title:"Do you like X?",
+	title:"DO YOU LIKE X?",
 	en:"Homework: HỌC THUỘC TOÀN BỘ CỤM TỪ + MẪU CÂU ĐÃ HỌC VÀ CHUẨN BỊ 4 CÂU HỎI<br>\
 1. Do you like listening to music?<br>\
 2. Do you like reading books?<br>\
@@ -131,7 +131,7 @@ do exercise = exercise - engage in physical exercise<br>\
 "
 	,voca:"",
 },{
-	title:"Do you prefer x to y?",
+	title:"DO YOU PREFER X TO Y?",
 	en:"Do you prefer x to y?<br>\
 + Do you prefer writing letters to sending emails?<br>\
 + Do you prefer talking on the phone to chatting online?<br>\
@@ -243,7 +243,7 @@ I would opt for public transportation. This is because I find it more environmen
 "
 	,voca:"",
 },{
-	title:"How often do you do X?"
+	title:"HOW OFTEN DO YOU DO X?"
 	,en:"Adverbs of frequency<br>\
 - Always/ all the time/ every day<br>\
 - Usually/ frequently/ regularly/ quite often<br>\
@@ -304,7 +304,7 @@ a fitness enthusiast (n): người yêu thể dục thể thao<br>\
 - to practice yoga: tập yoga"
 	,note:""
 },{
-	title:"What was the first/last time to do X?"
+	title:"WHAT WAS THE FIRST/LAST TIME TO DO X?"
 	,en:"C1: Nói rõ thời gian<br>\
 As far as I can remember/recall<br>\
 If my memory serves me right<br>\
@@ -336,7 +336,7 @@ When was the last time you went on holiday?"
 },
 
 {
-	title:"What kind of x do you like most?"
+	title:"WHAT KIND OF X DO YOU LIKE MOST?"
 	,en:"1. Thích 2 loại<br>\
 Examiner: What kind of movie do you like?<br>\
 Candidate: (Loại thứ nhất) There are many kinds of movies that I enjoy, one of which is action movies. (Giải thích) This is simply because I enjoy watching characters face dangerous situations and battle against others to survive. (Cái thứ hai) Beside that, I am also a real sucker for superhero movies like Batman or The Avengers .(Giải thích) What I like about them is that the visual effects are eye-pleasing and they generally star a lot of  handsome actors.<br>\
@@ -379,7 +379,7 @@ I find casual clothing to be comfortable and versatile for everyday wear. Howeve
 I love shorts and T-shirts most because they are comfortable and easy to wear. I wear them whenever I hang out with my friends. I think they will never be out of fashion. We can see that they are always trendy and stylish.<br>\
 "
 },{
-	title:"Is X popular in your country?"
+	title:"IS X POPULAR IN YOUR COUNTRY?"
 	,en:"Is football popular in your country?<br>\
 Are bikes popular in your country?<br>\
 Is chocolate popular in your country?<br>\
@@ -451,7 +451,7 @@ Is playing sports popular in your country?<br>\
 Is going to the cinema popular in VN? <br>\
 Is going by bus popular in VN?"
 },{
-	title:"Did you learn to do X?"
+	title:"DID YOU LEARN TO DO X?"
 	,en:"Positive answer<br>\
 B1: Say you did learn to do X<br>\
 -> Yes, I did learn how to X (swim)<br>\
@@ -482,7 +482,7 @@ FE: Did you learn how to play any musical instrument when you were young?<br>\
 Unfortunately, I haven’t learned to play any musical instrument yet, which is a pity. I had the first crack at playing the piano when I was a child but then it’s a shame I didn’t have enough time to do X. I was always snowed under homework and assignments at school and gave up after some weeks. I wish I had more ambition and patience when I was younger, then I might have learned to play the piano."
 },
 {
-	title:"What is the best time to do X?"
+	title:"WHAT IS THE BEST TIME TO DO X?"
 	,en:"FE: What is the best time of day to study?<br>\
 FE: What is the best time of year to find jobs in your country?<br>\
 FE: What is the best time of day to travel?<br>\
@@ -553,7 +553,7 @@ It's always quite challenging at the beginning when you try something new and le
 1. Is it difficult to learn another language?<br>\
 "
 },{
-	title:"How has x changed + khoảng thời gian?"
+	title:"HOW HAS X CHANGED + KHOẢNG THỜI GIAN?"
 	,en:"C1: Thay đổi nhiều + Sự thay đổi<br>\
 It has changed/<br>\
 transformed<br>\
@@ -586,7 +586,7 @@ Well, families have undergone significant changes over the past decades. In the 
 Traditionally, fathers took on the role of the family breadwinner, while mothers stayed at home and took on childcare responsibilities. Nowadays, however, more men are choosing to stay at home and take care of the children, while women pursue careers outside the home.<br>\
 "
 },{
-	title:"Is X suitable for... ?"
+	title:"IS X SUITABLE FOR... ?"
 	,en:"C1: Có + Lý do/ chi tiết<br>\
 - Yes, I think so<br>\
 - Yes, it’s very suitable for/ appropriate for<br>\
@@ -628,7 +628,86 @@ creative jobs, like filmmaking or product design, rely on face-to-face collabora
 have stable  internet connection + right equipment  <br>\
 No, not really. Working from home works well for some jobs, like IT, writing, or customer service, but not for everything. Jobs like doctors, construction workers, or factory employees need to be done in person. Plus, some people find it hard to stay focused or miss the teamwork that comes with an office. So yeah, it’s great for some, but definitely not for all jobs…<br>\
 <br>\
-3. Is studying abroad suitable for everyone?<br>\
+3. Is studying abroad suitable for everyone?"
+},{
+	title:"HOW CAN PEOPLE FIND OUT ABOUT X?"
+	,en:"How can people obtain information about local events in your city?<br>\
+How can you stay up to date with the national news?<br>\
+update = stay up to date with = stay informed about = keep abreast of/ stay on top of<br>\
+current/international/local  affairs<br>\
+the latest/sports... news<br>\
+objective: khách quan (adj) = unbiased  /ʌnˈbaɪəst/: không thiên vị = impartial >< biased = unreliable = untrustworthy = considerably one -sided + source of information<br>\
+Ex: It’s an objective source of information<br>\
+<br>\
+Surf the Internet/ Social media platforms (Fb, Instagram...): have event pages and local groups that share what's happening around town. <br>\
+Watch news reports: highlight upcoming events<br>\
+Read local newspapers and magazines: have segments dedicated to upcoming community events<br>\
+Find out by word of mouth: talk to friends, family, and coworkers -> give you the inside scoop<br>\
+Read public bulletin /ˈbʊl.ə.tɪn/ boards in places like libraries, cafes, and community centers are traditional yet reliable sources for local event information.<br>\
+Listen to the radio broadcasts<br>\
+<br>\
+PRACTICE<br>\
+How can people obtain information about local events in your city?<br>\
+Well, there are many ways that people can update current affairs in my city<br>\
+People can find out about local news in my city through a variety of channels. <br>\
+local newspapers and magazines: spill the beans about upcoming events. <br>\
+Social media platforms and community groups: great for staying in the loop. <br>\
+For example, I found out about last weekend’s food festival through a Facebook group, and it turned out to be a fantastic experience!<br>\
+dedicated websites or apps: keep you posted with comprehensive event calendars. <br>\
+Word of mouth is another tried-and-true method<br>\
+<br>\
+How can you stay up to date with the national news?<br>\
+Staying up to date with national news is a piece of cake for me because I use a mix of traditional and modern methods<br>\
+tune into TV news broadcasts and radio for my daily dose of information<br>\
+rely heavily on online news websites and mobile apps for real-time updates and personalized news feeds. <br>\
+For instance, every morning while sipping my coffee, I check a reputable news app to catch up on the latest headlines.<br>\
+listen to news podcasts during my commute"
+},{
+	title:"SHOULD PEOPLE BE GIVEN X"
+	,en:"Should people be given more holidays?<br>\
+Should people be paid more if they work overtime?<br>\
+Should children be required to wear a uniform to school?<br>\
+B1: Choose yes / no<br>\
+Yes, definitely/absolutely/certainly/of course / I couldn’t agree more<br>\
+No/ not really/I have to say no/ I don’t think so<br>\
+No, definitely/ absolutely not<br>\
+I think/believe/suppose/ In my opinion/ From my perspective/ I am convinced that/ For me...<br>\
+[] should be/ought to be/ deserve to be + Ved/V3<br>\
+I think/believe/suppose/ In my opinion/ From my perspective/ I am convinced that/ For me...<br>\
+<br>\
+[] should not be/ought to be/ don’t deserve to be + Ved/V3<br>\
+One reason is that X can help people with [benefit]. For example, if people have X, they can [specific advantage]<br>\
+One reason is that X can lead to [problem]. For example, if people are given X, they might [negative effect]<br>\
+Another reason is that X promotes [convenience/equality/safety/etc.]. For instance, it allows people to [specific effect]<br>\
+Another reason is that it could be [unfair/inefficient/unnecessary]. For instance, not everyone needs X, so providing it to everyone would be a waste of resources<br>\
+That’s why I believe...<br>\
+<br>\
+B2: Explain + If loại 1 (optional)<br>\
+Should students be given free textbooks?<br>\
+promote fairness, ensuring that every student receives the same learning materials and opportunities<br>\
+Yes definitely, I think students should receive free textbooks . One reason is that textbooks can be expensive, and not all families can afford them. For example, free books can help low-income students study without financial stress. Another reason is that it ensures (đảm bảo) all students have the same learning materials (tài liệu). If everyone gets the same resources (nguồn), it creates a fairer (fair: công bằng) learning environment. That’s why I believe free textbooks are important for students<br>\
+<br>\
+Should students be given free laptops?<br>\
+No, I don’t think students should receive free laptops. One reason is that it could be a waste of resources as not everyone needs one. For example, some students already have personal laptops, so giving them another one would be unnecessary. Another reason is that it might make students too dependent on technology. If they always rely on digital devices, they may lose important skills like handwriting or problem-solving without the internet. That’s why I believe free laptops shouldn’t be given to all students.<br>\
+<br>\
+Should people be given more holidays?<br>\
+Yes, definitely! I am convinced that people ought to have additional time off.<br>\
+allow people to relax and recharge their batteries -> maintain good mental and physical health<br>\
+spend quality time with their families and friends, pursue hobbies + engage in leisure activities -> a better work-life balance.<br>\
+boost productivity -> return to their jobs with renewed energy and motivation -> enhance overall job performance and satisfaction.<br>\
+<br>\
+Should people be paid more if they work overtime?<br>\
+Yes, certainly! I firmly believe that when employees go the extra mile by working overtime, they deserve to be fairly rewarded for their time and effort<br>\
+overtime often means sacrificing personal time and flexibility -> paying them extra -> employers show they value their dedication and hard work<br>\
+serve as a motivator -> encourage employees to be more productive and efficient during additional hours -> benefit the company by increasing output + maintaining employee satisfaction<br>\
+promotes fairness and equity in the workplace -> ensure that employees feel valued for their hard work and commitment.<br>\
+<br>\
+Should students wear uniforms to school?<br>\
+Yes, of course! In my view, there are several upsides to having school uniforms. <br>\
+level the playing field among students -> cut down on any fashion competition or pressure based on what everyone's wearing <br>\
+create a more focused learning environment because they take away the distractions that can come with different outfits. <br>\
+teach kids about discipline and being part of a community<br>\
+makes mornings easier for everyone—less fuss over what to wear.<br>\
 "
 }
 

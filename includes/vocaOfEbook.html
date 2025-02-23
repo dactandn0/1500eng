@@ -1,9 +1,15 @@
 
 <div ng-show="$root.bVocaOfEbook===true" class="mt-4">
 	<div ng-repeat="($index,jsonEle) in $root.vocaEbook track by $index">
-		<i class="color-anim">Unit: {{jsonEle.unit}}. {{jsonEle.title}}</i>
+		<i class="color-anim">{{jsonEle.unit}} {{jsonEle.title}}</i>
 		<div ng-repeat="($indexB, voca) in jsonEle.vocas track by $indexB">
-			<span ng-click="vocaEbookSpeech($event)">{{voca}}</span>
+			<span ng-click="vocaEbookSpeech($event, voca, jsonEle.lesson, $indexB, $parent.$index)">{{voca}} 
+				<span 
+					ng-if="$indexB==vocaIdx && $parent.$index==lessonIdx" 
+					ng-bind-html="sentenceForVoca">
+					
+				</span>
+			</span>
 		</div>
 	</div>
 </div>

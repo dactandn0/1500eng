@@ -97,12 +97,12 @@ function Helper_GetVocaFromWordFull(wordFull) {
 	wordFull = Helper_RemoveHTMLtag(wordFull);
 
 	//get verb-ed, Vpp
-	if( wordFull.indexOf(kVERB_3_COL) !== -1 ) 
-	{
-		return wordFull.split(kVERB_3_COL)[0];
-	}
+	if( wordFull.indexOf(kVERB_3_COL) !== -1 )  return wordFull.split(kVERB_3_COL)[0];
 
 	var result = "";
+	var lastSpaceIdx = wordFull.lastIndexOf(" ");
+	if (lastSpaceIdx == -1) return wordFull
+
 	result = wordFull.substring(0, wordFull.lastIndexOf(" "));
 	result = result.replace (/[\(\/].+/gi, '')
 	return result.trim()

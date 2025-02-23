@@ -603,11 +603,22 @@ Tôi có tặng, nhưng chỉ tặng cho những người thân thiết của t�
 	,en:"1) Do you like to take photos?<br>\
 All the time, actually. I have a lifelong passion for photography, not like selfies but pictures of different scenery. I guess it can really help enhance my creativity. I take pictures of almost everywhere I go and whenever I feel like it.<br>\
 2) Do you prefer to take photos yourself or to have other people take photos for you?<br>\
-Both I think. I am usually the one behind the camera on every trip I have with my friends and my family because I enjoy capturing moments of my loved ones. But I also like modelling in front of cameras and can strike great poses!"
+Both I think. I am usually the one behind the camera on every trip I have with my friends and my family\
+ because I enjoy capturing moments of my loved ones. But I also like modelling in front of cameras and can strike great poses!<br>\
+ 3) How do you keep your photos?<br>\
+I keep most of them on Google Photos, a cloud-based image storage service, so I could take a look at them whenever I want.\
+ I have also printed and framed a few of my favorite photos and hung them in my bedroom. Well, they aren’t masterpieces or\
+  anything but they really evoke good memories when I look at them."
 	,vi:"1) Bạn có thích chụp ảnh không?<br>\
-Thực ra là lúc nào cũng vậy. Tôi có niềm đam mê nhiếp ảnh suốt đời, không phải như ảnh tự sướng mà là ảnh chụp nhiều phong cảnh khác nhau. Tôi đoán là nhiếp ảnh thực sự có thể giúp tăng cường khả năng sáng tạo của tôi. Tôi chụp ảnh hầu như mọi nơi tôi đến và bất cứ khi nào tôi muốn.<br>\
+Thực ra là lúc nào cũng vậy. Tôi có niềm đam mê nhiếp ảnh suốt đời, không phải như ảnh tự sướng mà là ảnh chụp nhiều phong cảnh khác nhau.\
+ Tôi đoán là nhiếp ảnh thực sự có thể giúp tăng cường khả năng sáng tạo của tôi. Tôi chụp ảnh hầu như mọi nơi tôi đến và bất cứ khi nào tôi muốn.<br>\
 2) Bạn thích tự chụp ảnh hay để người khác chụp ảnh cho bạn?<br>\
-Tôi nghĩ là cả hai. Tôi thường là người đứng sau máy ảnh trong mọi chuyến đi với bạn bè và gia đình vì tôi thích ghi lại những khoảnh khắc của những người thân yêu. Nhưng tôi cũng thích làm người mẫu trước ống kính và có thể tạo dáng rất đẹp!"
+Tôi nghĩ là cả hai. Tôi thường là người đứng sau máy ảnh trong mọi chuyến đi với bạn bè và gia đình vì tôi thích ghi lại\
+ những khoảnh khắc của những người thân yêu. Nhưng tôi cũng thích làm người mẫu trước ống kính và có thể tạo dáng rất đẹp!<br>\
+3) Bạn lưu giữ ảnh của mình như thế nào?<br>\
+Tôi lưu trữ hầu hết ảnh trên Google Photos, một dịch vụ lưu trữ ảnh trên đám mây, để tôi có thể xem lại bất cứ khi nào tôi muốn.\
+ Tôi cũng đã in và đóng khung một số bức ảnh yêu thích của mình và treo chúng trong phòng ngủ. Vâng, chúng không phải là kiệt tác hay gì cả nhưng chúng\
+  thực sự gợi lại những kỷ niệm đẹp khi tôi xem chúng."
 	,voca:" have a lifelong passion, enhance my creativity,behind the camera,strike great poses,evoke"
 	,note:" To have a lifelong passion: đam mê dài lâu Lifelong /ˈlaɪf.lɒŋ/ : suốt đời Passion /ˈpæʃ.ən/ : đam mê Ví dụ: John also had a lifelong passion for the outdoors |To enhance my creativity: nâng cao sức sáng tạo Enhance /ɪnˈhɑːns/ : nâng cao Creativity /ˌkriː.eɪˈtɪv.ə.ti/ : Sự sáng tạo Ví dụ: Different people find different strategies to enhance their creativity |Behind the camera: đứng đằng sau camera ( người chụp hình) Behind /bɪˈhaɪnd/: đằng sau Ví dụ:  My brother sitting behind the camera. |To capture moments: chụp lại các khoảnh khắc Capture  /ˈkæp.tʃər/ : bắt lấy Moments /ˈməʊ.mənt/ : Khoảnh khắc Ví dụ: The app allows you to capture moments in video. |Modelling /ˈmɒd.əl.ɪŋ/: làm người mẫu/ làm mẫu Ví dụ: Ashley's always wanted to go into modelling. |To strike great poses: tạo dáng đẹp ( để chụp hình) Poses  /pəʊz/ : tư thế Ví dụ:  The cute Beckham boys strike great poses. |To be framed /freɪmd/: đóng khung Ví dụ:  All the screens will be framed in dark wood. |To evoke /ɪˈvəʊk/ : gợi nhớ Ví dụ: That smell always evokes memories of my old school."
 },{

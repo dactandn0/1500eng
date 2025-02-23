@@ -39,6 +39,7 @@ Tôi thích tất cả các loại sách, nhưng nếu phải chọn một, tôi
 Tôi thích tất cả các loại thực phẩm, nhưng nếu phải chọn một, tôi sẽ chọn đồ ăn nấu tại nhà. Lý do là vì tôi tin rằng chúng có xu hướng lành mạnh hơn và tiết kiệm hơn so với các bữa ăn ở nhà hàng. Đó là lý do tại sao tôi cố gắng hạn chế tần suất ăn ngoài.<br>\
 5) Bạn thích mặc loại trang phục nào nhất?<br>\
 Tôi thấy quần áo thường ngày thoải mái và đa năng để mặc hàng ngày. Tuy nhiên, tôi cũng thích diện đồ đẹp cho những dịp đặc biệt khi có cơ hội. Tôi thích quần short và áo phông nhất vì chúng thoải mái và dễ mặc. Tôi mặc chúng bất cứ khi nào đi chơi với bạn bè. Tôi nghĩ chúng sẽ không bao giờ lỗi mốt. Chúng ta có thể thấy rằng chúng luôn hợp thời trang và sành điệu."
+,voca:"casual"
 },{
 	track:"1.03"
 	,en:"1) Are bikes popular in your country?<br>\

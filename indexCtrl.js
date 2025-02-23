@@ -15,6 +15,7 @@ var VocaForSearch = VocaToUI
 // for notedEbookCtrl
 var kAllStories = ENGLAB_BEGIN_DATA_S_Vol5
   .concat(ENGLAB_BEGIN_DATA_W)
+  .concat(ENGLAB_BEGIN_DATA_R)
   .concat(collins_cd12)
   .concat(lptd_cd1_stories)
   .concat(lptd_cd2_stories)
@@ -197,9 +198,15 @@ $scope.Index_NoteVoca_Speak = function (word) {
 }
 
 // vocaEbook Touch
-$scope.vocaEbookSpeech = function (event) {
+$scope.vocaEbookSpeech = function (event, txt, lesson, idx, idxParent) {
   event.stopPropagation()
-  ngClickSpeechShowToast(event.target.innerText.toLowerCase())
+  var sentences = doFetchSentences(txt, [lesson])
+  if (sentences) {
+    $scope.sentenceForVoca = ' - ' + sentences[0]
+    $scope.vocaIdx = idx
+    $scope.lessonIdx = idxParent
+  }
+  ngClickSpeechShowToast(txt)
 }
 
 // ng-click word to speech
@@ -294,11 +301,7 @@ $scope.showConfirmModal = function(wordFull, event) {
     });
 };
 
-
-// wordFull like:  Sea n /siː/ Biển
-$scope.fetchSentences = function(wordFull) {
-  var word = Helper_GetVocaFromWordFull(wordFull);
-
+doFetchSentences = function(word, StoriesData) {
   if (word==='') return 0;
 
   var word_s_es = Helper_N_V_Add_S_ES(word);
@@ -306,9 +309,10 @@ $scope.fetchSentences = function(wordFull) {
 
   var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b(${word}|${word_s_es}|${word_ing})\b.*?[\?|\.|!"]+?`, 'gi');
   
-  var shuffleStories = shuffle(kAllStories);
+  var shuffleStories = shuffle(StoriesData);
   
   for (var i = 0; i < shuffleStories.length; i++) {
+    if (!shuffleStories[i].en) continue;
     var para = shuffleStories[i].en.replaceAll("<br>", '.');
     var results = para.match(ptrn);  // array
 
@@ -316,6 +320,7 @@ $scope.fetchSentences = function(wordFull) {
       var regex = new RegExp(`\\b(${word}|${word_s_es})` , 'gi')
       for (var i = 0; i < results.length; i++) {
         var nn = results[i];
+        if (!nn.match(regex)) continue
         var match = nn.match(regex)[0];
         results[i] = nn.replaceAll(match , "<b>" + match +"</b>");
       }
@@ -323,6 +328,12 @@ $scope.fetchSentences = function(wordFull) {
     }
   }
   return 0;
+}
+
+// wordFull like:  Sea n /siː/ Biển
+$scope.fetchSentences = function(wordFull) {
+  var word = Helper_GetVocaFromWordFull(wordFull);
+  return doFetchSentences(word, kAllStories)
 }
 
 $scope.fetchSentenceSearch = function() {

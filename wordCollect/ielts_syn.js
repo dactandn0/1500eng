@@ -17,9 +17,17 @@ const SynonymData = [
 	type:"a",
 	mean:"tốt, tuyệt"
 },{
+	words:"evil /ˈiːvl/|wicked /ˈwɪkɪd/|cruel /ˈkruːəl/",
+	type:"a",
+	mean:"độc ác"
+},{
 	words:"exciting /ɪkˈsaɪtɪŋ/|dramatic /drəˈmætɪk/|heady /ˈhedi/|thrilling /ˈθrɪlɪŋ/|exhilarating /ɪɡˈzɪləreɪtɪŋ/",
 	type:"a",
 	mean:"phấn khởi, thú vị"
+},{
+	words:"adjust  /əˈdʒʌst/|regulate /ˈreɡjuleɪt/",
+	type:"v",
+	mean:"điều chỉnh"
 },{
 	words:"overweight|obese",
 	type:"a",

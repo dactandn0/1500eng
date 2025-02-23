@@ -18,7 +18,9 @@ growth (n) /ɡrəʊθ/ sự phát triển, sự tăng, phát dục<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
 burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
+fragrance (n) /ˈfreɪɡrəns/ hương thơm<br>\
 addiction (n) /əˈdɪkʃn/ nghiện ngập<br>\
+passion (v) /ˈpæʃn/ niềm đam mê<br>\
 confide (v) /kənˈfaɪd/ tâm sự<br>\
 betray (v) /bɪˈtreɪ/ phản bội<br>\
 affordable (a) /əˈfɔːrdəbl/ có thể chi trả<br>\
@@ -41,12 +43,12 @@ bottom (n) /ˈbɑːtəm/ dưới<br>\
 capacity (n) /kəˈpæsəti/ dung tích<br>\
 expose (v) /ɪkˈspəʊz/ phơi ra<br>\
 perceive (v) /pərˈsiːv/ nhận thức<br>\
+pretence (n) /ˈpriːtens/ sự giả vờ<br>\
 hygiene (n) /ˈhaɪdʒiːn/ vệ sinh<br>\
 hygienic (a) /haɪˈdʒiːnɪk/ vệ sinh<br>\
 uncomfortable (a) /ʌnˈkʌmfərtəbl/ không thoải mái<br>\
 casually (adv) /ˈkæʒuəli/ ngẫu nhiên (informal way)<br>\
 competitiveness (n) /kəmˈpetətɪvnəs/ tính cạnh tranh<br>\
-cruel (a) /ˈkruːəl/ tàn ác<br>\
 although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 sporty (a) /ˈspɔːrti/ thích thể thao<br>\
 weekdays (adv) /ˈwiːkdeɪz/<br>\
@@ -110,8 +112,9 @@ reply (v) /rɪˈplaɪ/ trả lời<br>\
 trick (n) /trɪk/ mẹo<br>\
 adventure (n) /ədˈventʃər/ phiêu lưu<br>\
 approach (n) /əˈprəʊtʃ/ tiếp cận<br>\
-chemical hóa học<br>\
-evil (a) /ˈiːvl/ ác<br>\
+chemical (a) thuộc hóa học<br>\
+chemicals (n) hóa chất<br>\
+chemistry (n) ngành (môn) hóa chất (học)<br>\
 obesity (n) /əʊˈbiːsəti/ béo phì<br>\
 experiment (n) /ɪkˈsperɪmənt/ thí nghiệm<br>\
 laboratory (n) /ˈlæbrətɔːri/ phòng thí nghiệm<br>\
@@ -1049,7 +1052,6 @@ marvel kỳ diệu<br>\
 nutrient chất dinh dưỡng<br>\
 overcome vượt qua<br>\
 recall nhớ lại<br>\
-regret hối tiếc<br>\
 soul linh hồn<br>\
 sufficient đủ<br>\
 tough khó khăn<br>\
@@ -1068,11 +1070,10 @@ mere chỉ là, không đáng để tâm<br>\
 neat gọn gàng<br>\
 occasion (n) /əˈkeɪʒn/ dịp, thời cơ<br>\
 penalty hình phạt<br>\
-settle (v) giải quyết vấn đề<br>\
-wallet ví<br>\
-yell la hét <br>\
-accuse tố cáo<br>\
-adjust điều chỉnh<br>\
+settle (v) giải quyết vấn đề, dịu dần, trầm tỉnh<br>\
+wallet (n) /ˈwɑːlɪt/ ví<br>\
+yell (v) /jel/ la hét <br>\
+accuse (v)  /əˈkjuːz/ tố cáo [+Sbody of Ving/N]<br>\
 amuse vui<br>\
 cotton bông<br>\
 crash sụp đổ<br>\
@@ -1126,6 +1127,7 @@ weigh (v) cân nặng<br>\
 whisper whisper<br>\
 abstract abstract<br>\
 clay đất sét<br>\
+ferilizer (n) /ˈfɜːrtəlaɪzər/ phân bón<br>\
 cloth (n) vải<br>\
 deserve (v) đáng thưởng<br>\
 feather lông vũ<br>\

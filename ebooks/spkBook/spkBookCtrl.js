@@ -2,6 +2,7 @@
 
 document.write('<script src="./ebooks/spkBook/data/collins/collins_cd12.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/formula/formula.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/spkBook/data/speakSameVol5/speakSameVol5.js" type="text/javascript"></script>');
 
 var app = angular.module("spkBookApp", ['ngSanitize']);
 app.controller("spkBookCtrl", function($scope, $rootScope, $timeout) {
@@ -18,6 +19,7 @@ makeVocaEbook($rootScope, collins_cd12) 		// def
 
 var key0 = 'collins_unit'
 var key1 = 'formula_unit'
+var key2 = 'sSVol5_unit'
 
 bookRadioChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
@@ -40,6 +42,13 @@ bookRadioChange = function (num, isLoadData = false) {
 		makeVocaEbook($rootScope, FORMULA_DATA)
 		key = key1
 	}
+	if (num===2)
+	{
+		$scope.img_root = imgRootPath + 'speakSameVol5/img/'	
+		$scope.stories = SPEAKING_SAME_VOL5;
+		makeVocaEbook($rootScope, SPEAKING_SAME_VOL5)
+		key = key2
+	}
 
 	$scope.titles = showStoryTitles($scope.stories);
 
@@ -55,10 +64,9 @@ $scope.createAudioSrc = function()
 {
 	var mp3File = $scope.story.track + '.mp3';
 	var rootPath = "./ebooks/spkBook/data/"
-	if ($scope.bookRadio === 0)
-		return rootPath + "collins/mp3/" + mp3File
-	else 
-		return rootPath + "formula/mp3/" + mp3File
+	if ($scope.bookRadio === 0) return rootPath + "collins/mp3/" + mp3File
+	else if ($scope.bookRadio === 1) return rootPath + "formula/mp3/" + mp3File
+	else if ($scope.bookRadio === 2) return rootPath + "speakSameVol5/mp3/" + mp3File
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -81,5 +89,28 @@ $scope.loadData = function () {
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 });
+
+function doMenu_S_VOL5()
+{
+	var en = ""
+	var rgSen = /\d+\).*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
+	for (var i = 0; i < SPEAKING_SAME_VOL5.length; i++) {
+		var lesson = SPEAKING_SAME_VOL5[i]
+		var questions = lesson.en.match(rgSen);
+		en += '<b>' + (i+1) + ') ' + lesson.title + '</b><br>'
+		for (var j = 0; j < questions.length; j++) {
+			en += questions[j]
+		}
+	}
+	var menu = {
+		track: 'Menu',
+		title: 'Lessons',
+		en: en
+	}
+	var r = []
+	r.push(menu)
+	return r.concat(SPEAKING_SAME_VOL5)
+}
+
 
 });

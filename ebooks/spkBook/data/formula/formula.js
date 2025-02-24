@@ -52,7 +52,7 @@ I think summer months are the greatest time to travel around my country. This is
 I reckon it really depends on people's preferences. For me, for example, morning is the best time of day to study because I feel that my brain functions most effectively from 8am to 11am. However, some people think that evening is the greatest time to study because they find themselves more focused on their work during this time."
 	,vi:""
 },{
-	track:"1.03b"
+	track:"1.04"
 	,en:"5) What is the best time of day to work out?<br>\
 It depends on people's schedules and preferences. I feel that evening is the best time to work out because I find myself most energetic during this time. However, some people think early morning is the ideal time to exercise because this is when they find themselves most relaxed. They don't have to worry about work or anything like that.<br>\
 6) What is the best time to find a good job in your country?<br>\
@@ -62,28 +62,29 @@ Yes, of course. It's really simple to get around my city by catching a bus, taki
 8) Is it difficult to learn to play the guitar?<br>\
 It's always quite challenging at the beginning when you try something new and learning to play the guitar is no exception. At first, your fingers can hurt a lot. But after a while, with practice, things gradually become easier."
 },{
-	track:"1.03c"
+	track:"1.05"
 	,title:"How has x changed"
-	,en:"9) How has your hometown changed in recent years?<br>\
-I have to say it has changed a great deal over the past few years. 10 years ago, the streets were often narrow, and tall buildings were few and far between. However, in recent years, there has been a noticeable transformation. Nowadays, main streets have been significantly widened, and numerous (=many) shopping malls and high-rise buildings have been constructed.<br>\
-10) How have shops changed in your town in the last five years?<br>\
+	,en:"1) How has your hometown changed in recent years?<br>\
+I have to say it has changed a great deal over the past few years. 10 years ago, the streets were often narrow, and tall buildings were few and far between. However, in recent years, there has been a noticeable transformation. Nowadays, main streets have been significantly widened, and numerous shopping malls and high-rise buildings have been constructed.<br>\
+2) How have shops changed in your town in the last five years?<br>\
 They haven't changed much; most of them are still small and family-run. The only notable change is that several years ago, they didn't accept credit or debit cards, so I had to pay in cash. However, recently, some shops have started accepting electronic transactions, making it easier to make purchases.<br>\
-11) How has education changed in the past 10 years?<br>\
+3) How has education changed in the past 10 years?<br>\
 I believe education has undergone significant changes over the past 10 years. A decade ago, students primarily relied on textbooks and attended classes regularly, as e-learning wasn't as prevalent. However, in recent years, an increasing number of students have decided to take online courses rather than traditional classes. It is much easier for them to access all study materials to meet their learning needs.<br>\
-12) How have TV shows in your country changed over the years?<br>\
+4) How have TV shows in your country changed over the years?<br>\
 Well, there have been significant changes over time. In the past, TV shows were mostly locally produced, with few international programs. However, in recent years, international TV shows and movies have come to dominate our television screens. I believe this shift is largely due to globalization and the growing influence of Western cultures.<br>\
-13) In what ways have families in your country change in recent years?<br>\
+5) In what ways have families in your country change in recent years?<br>\
 Well, families have undergone significant changes over the past decades. In the past, it was common for three or four generations to live under the same roof. However, nowadays, nuclear and single-parent families have become more popular.<br>\
-Traditionally, fathers took on the role of the family breadwinner, while mothers stayed at home and took on childcare responsibilities. Nowadays, however, more men are choosing to stay at home and take care of the children, while women pursue careers outside the home."
+Traditionally, fathers took on the role of the family breadwinner, while mothers stayed at home and took on childcare responsibilities. Nowadays, more men are choosing to stay at home and take care of the children, while women pursue careers outside the home."
+,voca:"family-run,notable,e-learning,undergone,breadwinner,primarily"
 },{
-	track:"1.04"
+	track:"1.06"
 	,title:"Is X suitable for...?"
 	,en:"1) Do you think it's appropriate for museums to sell things to visitors?<br>\
-Yes, it would be a great idea because museums need money for operation (vận hành) and maintenance. Plus, many people like to buy something at the places they visit to give to their loved ones as a gift.<br>\
+Yes, it would be a great idea because museums need money for operation and maintenance. Plus, many people like to buy something at the places they visit to give to their loved ones as a gift.<br>\
 2) Is your hometown suitable for young people to live in?<br>\
 No, I don't think so because there are not many job opportunities in my town. That's why many young people leave for major cities in search of better jobs and career growth.<br>\
 3) Do you think bicycles are suitable for people of all ages?<br>\
-Absolutely! Bicycles work for everyone, no matter their age. Whether you're a kid or a grandparent, hopping on a bike is a great way to unwind and stay healthy<br>\
+Absolutely! Bicycles work for everyone, no matter their age. Whether you're a kid or a grandparent, hopping on a bike is a great way to unwind and stay healthy.<br>\
 Yes, I think bicycles are suitable for people of all ages because they offer a convenient and eco-friendly way to travel. Children can enjoy cycling as a fun outdoor activity, while adults often use bikes for commuting or exercise. Even older people can ride, especially if they choose models with extra support, like electric or three-wheeled bicycles.<br>\
 4) Is working from home suitable for all jobs?<br>\
 No, not really. Working from home works well for some jobs, like IT, writing, or customer service, but not for everything. Jobs like doctors, construction workers, or factory employees need to be done in person. Plus, some people find it hard to stay focused or miss the teamwork that comes with an office. So yeah, it's great for some, but definitely not for all jobs.<br>\
@@ -108,5 +109,6 @@ Không, du học không phù hợp với tất cả mọi người; Các yếu t
 Không hẳn vậy. Du học có thể là một trải nghiệm tuyệt vời, nhưng không phải ai cũng lý tưởng. Đầu tiên, nó có thể rất tốn kém và không phải gia đình nào cũng đủ khả năng chi trả học phí và chi phí sinh hoạt cao ở một quốc gia khác. Thứ hai, một số người có thể gặp khó khăn với sự khác biệt về văn hóa và nỗi nhớ nhà, điều này có thể ảnh hưởng đến việc học và sức khỏe tinh thần của họ. Vì vậy, mặc dù du học có nhiều lợi ích, nhưng nó phụ thuộc vào tình hình tài chính và khả năng thích nghi của một người.<br>\
 7) Mua sắm trực tuyến có phù hợp với người cao tuổi không?<br>\
 Không hẳn vậy. Mặc dù mua sắm trực tuyến rất tiện lợi, nhưng không phải lúc nào nó cũng là một ý tưởng tuyệt vời đối với người cao tuổi. Nhiều người cao tuổi không rành về công nghệ, vì vậy họ có thể gặp khó khăn khi điều hướng các trang web hoặc đặt hàng. Ngoài ra, họ có thể dễ bị lừa đảo trực tuyến hoặc sản phẩm giả hơn. Tuy nhiên, đối với những người quen thuộc với công nghệ, đây có thể là một cách hữu ích để mua sắm mà không cần ra khỏi nhà."
+,voca:"appropriate,maintenance,operation,opportunities,major,commuting,in person,stay focused,construction,living costs,eco-friendly,struggle,tech-savvy,vulnerable,three-wheeled,adaptability,financial,stability,proficiency,preparedness,well-suited"
 },
 ]

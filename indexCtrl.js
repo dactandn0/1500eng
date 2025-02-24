@@ -13,7 +13,7 @@ var VocaForSearch = VocaToUI
     // .concat(NATIONS)
 
 // for notedEbookCtrl
-var kAllStories = ENGLAB_BEGIN_DATA_S_Vol5
+var kAllStories = SPEAKING_SAME_VOL5
   .concat(ENGLAB_BEGIN_DATA_W)
   .concat(ENGLAB_BEGIN_DATA_R)
   .concat(collins_cd12)

@@ -9,6 +9,8 @@ globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
 conducive (a) /kənˈduːsɪv/ có lợi<br>\
 sedentary (a) /ˈsednteri/ ít vận động<br>\
 facility (n) /fəˈsɪləti/ cơ sở<br>\
+commute (v)  /kəˈmjuːt/ đi lại (bus, train, car)<br>\
+eco-friendly (n) thân thiện với môi trường<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
 despite (prep) /dɪˈspaɪt/ cho dù<br>\
 on top of that (idiom) hơn thế<br>\
@@ -159,7 +161,7 @@ none (pron) /nʌn/ không có<br>\
 positive (a) /ˈpɑːzətɪv/ tích cực<br>\
 punish (v) /ˈpʌnɪʃ/ trừng phạt<br>\
 represent (v) /ˌreprɪˈzent/ đại diện<br>\
-shake lắc<br>\
+shake (v) /ʃeɪk/ lắc<br>\
 spread (v) /spred/ lan truyền<br>\
 stroll (n,v) đi dạo<br>\
 aware (a) /əˈwer/ nhận thức<br>\
@@ -177,10 +179,11 @@ old (a) xưa, cũ, cổ, già<br>\
 older (a) ss hơn của Old (về tuổi tác)<br>\
 oldest (a) ss nhất của Old (về tuổi tác)<br>\
 elder (a) ss hơn của Old (về cấp bậc)<br>\
+elderly (a) /ˈeldərli/ người già<br>\
 eldest (a) ss nhất của Old (về cấp bậc)<br>\
 experience (n) /ɪkˈspɪriəns/ kinh nghiệm<br>\
-field lĩnh vực<br>\
-hurt tổn thương<br>\
+field (n) lĩnh vực<br>\
+hurt (n,v) tổn thương<br>\
 judgment (n) /ˈdʒʌdʒmənt/ phán đoán<br>\
 likely (a) /ˈlaɪkli/ khả năng, rất có thể<br>\
 request (n) /rɪˈkwest/ yêu cầu<br>\
@@ -196,7 +199,7 @@ choice (n) /tʃɔɪs/ lựa chọn<br>\
 community (n) /kəˈmjuːnəti/ cộng đồng<br>\
 dead (a) /ded/ chết<br>\
 distance (n,v) khoảng cách<br>\
-escape thoát<br>\
+escape (n,v) thoát<br>\
 face (n) /feɪs/ mặt<br>\
 follow (v) /ˈfɑːləʊ/ theo<br>\
 fright (n) /fraɪt/ sợ hãi | She cried out in fright.<br>\

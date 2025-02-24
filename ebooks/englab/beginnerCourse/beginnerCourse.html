@@ -7,18 +7,16 @@
 	<input id="222" type="radio" name="ielt_form" value='1' onchange="ielt_formChange(1)" /><label class="mr-3" for="222">W</label>
 	<input id="333" type="radio" name="ielt_form" value='2' onchange="ielt_formChange(2)" /><label class="mr-3" for="333">S</label>
 	<input id="444" type="radio" name="ielt_form" value='3' onchange="ielt_formChange(3)"><label class="mr-3" for="444">L</label>
-	<input id="555" type="radio" name="ielt_form" value='4' onchange="ielt_formChange(4)"><label class="mr-3" for="555">S-Vol5</label>
-	<input id="666" type="radio" name="ielt_form" value='5' onchange="ielt_formChange(5)"><label class="mr-3" for="666">SoS</label>
+	<input id="555" type="radio" name="ielt_form" value='4' onchange="ielt_formChange(4)"><label class="mr-3" for="555">SoS</label>
 </form>
 
 <div ng-show="ielt_form!==3 && ielt_form!==4 && ielt_form!==5">
 	<div ng-include="'./includes/storyR.html'" ></div>
 </div> <!-- ielt_form -->
 
-<div ng-show="ielt_form===3 || ielt_form===4 || ielt_form===5">
+<div ng-show="ielt_form===3 || ielt_form===4">
 	<mark class="font-sm" ng-show="ielt_form===3">Lessons for IELTS Listening</mark>
-	<mark class="font-sm" ng-show="ielt_form===4">Speaking Sample Vol5</mark>
-	<mark class="font-sm" ng-show="ielt_form===5">Sheep or ship</mark>
+	<mark class="font-sm" ng-show="ielt_form===4">Sheep or ship</mark>
 	<div class="my-1 mb-4" style="overflow-y: scroll; max-height:200px;">
 		<a ng-repeat="story in titles"
 		ng-click="fetchStory($index);" 

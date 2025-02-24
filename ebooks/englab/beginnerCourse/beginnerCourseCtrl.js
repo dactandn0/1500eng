@@ -3,7 +3,6 @@ document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_R.
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_W.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_S.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_L.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/englab/beginnerCourse/speaking_sample_vol5.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/sheep_or_ship.js" type="text/javascript"></script>');
 
 var app = angular.module("beginnerCourseApp", []);
@@ -45,14 +44,6 @@ ielt_formChange = function (num, isLoadData = false) {
 	}
 	if (num===4) 
 	{
-		$scope.stories = doMenu_S_VOL5();
-		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_S_Vol5)
-		var idx = Helper_loadInt('speakSameVol5_unit', 0);
-		$scope.fetchStory(idx, false);
-	}
-
-	if (num===5) 
-	{
 		$scope.img_root = imgRootPath + 'sos/'	
 		$scope.stories = doMenu_book(ENGLAB_BEGIN_DATA_Sheep_or_ship);
 		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_Sheep_or_ship)
@@ -92,12 +83,8 @@ $scope.examTypeCss = function (idx) {
 $scope.createAudioSrc = function() {
 	var mp3File = $scope.story.track + '.mp3';
 	var rootPath = "./ebooks/englab/beginnerCourse/"
-	if ($scope.ielt_form === 3)
-		return rootPath + "L_mp3/" + mp3File
-	else if ($scope.ielt_form === 4)
-		return rootPath + "S_Vol5_mp3/" + mp3File
-	else if ($scope.ielt_form === 5)
-		return rootPath + "s_o_s_mp3/" + mp3File
+	if ($scope.ielt_form === 3) return rootPath + "L_mp3/" + mp3File
+	else if ($scope.ielt_form === 4) return rootPath + "s_o_s_mp3/" + mp3File
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -112,27 +99,6 @@ $scope.fetchStory = function (idx, reset=true)
 	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
 }
 
-function doMenu_S_VOL5()
-{
-	var en = ""
-	var rgSen = /\d+\).*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
-	for (var i = 0; i < ENGLAB_BEGIN_DATA_S_Vol5.length; i++) {
-		var lesson = ENGLAB_BEGIN_DATA_S_Vol5[i]
-		var questions = lesson.en.match(rgSen);
-		en += '<b>' + (i+1) + ') ' + lesson.title + '</b><br>'
-		for (var j = 0; j < questions.length; j++) {
-			en += questions[j]
-		}
-	}
-	var menu = {
-		track: 'Menu',
-		title: 'Lessons',
-		en: en
-	}
-	var r = []
-	r.push(menu)
-	return r.concat(ENGLAB_BEGIN_DATA_S_Vol5)
-}
 
 function doMenu_book(bookData)
 {

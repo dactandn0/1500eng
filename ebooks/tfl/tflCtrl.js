@@ -1,23 +1,23 @@
 // include other *.js
 
-document.write('<script src="./ebooks/tfl/tfl_b1_data.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/tfl/tfl_b2_data.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/tfl/tfl_b3_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/tfl/data/tfl_b1_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/tfl/data/tfl_b2_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/tfl/data/SPELL_DATA.js" type="text/javascript"></script>');
 
 var app = angular.module("tflApp", []);
 app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
 
-var KBook = 1;
+KBook = 1;
 $scope.stories = tfl_b1_stories; 					//def
 $scope.storyIdx = 0;
 $scope.titles = showStoryTitles($scope.stories);  // def
-makeVocaEbook($rootScope, tfl_b1_stories,tfl_b2_stories,tfl_b3_stories) 			// def
+makeVocaEbook($rootScope, tfl_b1_stories) 			// def
 
 bookChange = function (num) {
 	switch (num) {
+		case 0: $scope.stories = doMenu(SPELL_DATA); break;
 		case 1: $scope.stories = doMenu(tfl_b1_stories); break;
 		case 2: $scope.stories = doMenu(tfl_b2_stories); break;
-		case 3: $scope.stories = doMenu(tfl_b3_stories); break;
 	}
 	$scope.titles = showStoryTitles($scope.stories);
 	Helper_saveDB("tfl_b", num);
@@ -33,7 +33,7 @@ $scope.styleTrack = function(trackId) {
 }
 
 $scope.createAudioSrc = function() {
-	return "./ebooks/tfl/tfl_b" + KBook + "/" + $scope.story.track + '.mp3';
+	return "./ebooks/tfl/data/mp3/tfl_b" + KBook + "/" + $scope.story.track + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -83,12 +83,11 @@ function doMenu(kStories)
 }
 
 
-
-
-
-
-
-
+$scope.spellAZ = function	()
+{
+	var a_z = 'a.b.c.d.e.f.g.h.i.j.k.l.m.n'
+	Text2Speech(a_z)
+}
 
 
 });

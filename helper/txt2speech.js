@@ -5,9 +5,8 @@
 const utter = new SpeechSynthesisUtterance();
 
 
-function Text2Speech(word) {
-//	if (!UtterEnd) return;
-	
+function Text2Speech(word) 
+{
 	if (speechSynthesis.speaking)
 	{
 		speechSynthesis.cancel()

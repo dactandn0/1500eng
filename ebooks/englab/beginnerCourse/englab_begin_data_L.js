@@ -19,7 +19,7 @@ John: Did you say $205?<br>\
 Irene: That's correct, yes. Your exam room will be Room 26. Room 26 is in D Block.<br>\
 John: OK, thanks.<br>\
 Irene: Can you tell me the three pieces you'll be playing? If you tell me now, it'll save time on Saturday.<br>\
-John: Yes... From List A... I'll play the first piece... by Bach. From List B... I'll play the Glazunov... that's number 13.... And from List C... I'll play number 6... that's the piece by Minsky.<br>\
+John: Yes... From List A... I'll play the first piece... by Bach. From List B... I'll play the Glazunov... that's number 13... And from List C... I'll play number 6... that's the piece by Minsky.<br>\
 Irene: So that's... List A, number 1... List B, number fif... sorry... number 13, and from List C... number 6.<br>\
 John: That's right.<br>\
 Irene: And John, I assume you know you'll be asked to play five scales from the list of 14 scales...<br>\
@@ -416,7 +416,7 @@ Melanie: Good idea. Let's start at the top with the production. The first step i
 Alan: Yes - and they tend to come from pine forests.<br>\
 Melanie: OK - and then the bark is removed from the outside of the tree and after that the wood is chopped up - that's the first three stages.<br>\
 Alan: It sounds a bit complicated after that. Um, it says water is added and then the mixture is heated and made into pulp. This will be the thick paste that is used to make paper.<br>\
-Melanie: Yes - you're right because after that they use a machine to make the paper and we can put that right in the centre of the flow.chart because it's also where the recycled paper joins the process.<br>\
+Melanie: Yes - you're right because after that they use a machine to make the paper and we can put that right in the centre of the flow-chart because it's also where the recycled paper joins the process.<br>\
 Alan: Yes. So once the paper has been produced in the machine, what happens then?<br>\
 Melanie: Well, I think we should write 'print' as the next step because this is when newspapers, magazines, etc are produced. And we could also add that they have to be distributed to stores and people's homes.<br>\
 Alan: Right, then the recycling bit starts. The old paper's collected and then it says it's taken somewhere so that someone or something can sort it. I imagine there are different kinds of paper - or things like paper clips that need to be removed.<br>\
@@ -448,7 +448,7 @@ Melanie: OK - và sau đó, vỏ cây được tách ra khỏi bên ngoài cây 
 Alan: Nghe có vẻ hơi phức tạp sau đó. Ừm, nó nói rằng nước được thêm vào và sau đó hỗn hợp được đun nóng và tạo thành bột giấy. Đây sẽ là hỗn hợp sệt được sử dụng để làm giấy.<br>\
 Melanie: Đúng vậy - bạn nói đúng vì sau đó, họ sử dụng máy để làm giấy và chúng ta có thể đặt nó ngay giữa sơ đồ quy trình vì đó cũng là nơi giấy tái chế tham gia vào quy trình.<br>\
 Alan: Đúng vậy. Vậy sau khi giấy được sản xuất trong máy, điều gì sẽ xảy ra tiếp theo?<br>\
-Melanie: Vâng, tôi nghĩ chúng ta nên viết 'in' là bước tiếp theo vì đây là lúc báo, tạp chí, v.v. được sản xuất. Và chúng ta cũng có thể thêm rằng chúng phải được phân phối đến các cửa hàng và nhà của mọi người.<br>\
+Melanie: Vâng, tôi nghĩ chúng ta nên viết 'in' là bước tiếp theo vì đây là lúc báo, tạp chí, vvv được sản xuất. Và chúng ta cũng có thể thêm rằng chúng phải được phân phối đến các cửa hàng và nhà của mọi người.<br>\
 Alan: Đúng rồi, sau đó là phần tái chế. Giấy cũ được thu thập và sau đó được chuyển đến một nơi nào đó để ai đó hoặc thứ gì đó có thể phân loại. Tôi hình dung có nhiều loại giấy khác nhau - hoặc những thứ như kẹp giấy cần được tháo ra.<br>\
 Melanie: Vâng. Chúng ta hãy cùng xem một bước sau đó. Bây giờ, người hướng dẫn của chúng ta nói rằng họ đã làm điều này như thế nào? Ồ vâng - nó liên quan đến hóa chất, vậy - hóa học của bạn thế nào?<br>\
 Alan: Vâng - tôi e là không tốt lắm. Nhưng đây là cách họ loại bỏ mực nên - điều này chắc chắn sẽ cần một chút nghiên cứu<br>\

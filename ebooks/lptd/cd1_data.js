@@ -899,6 +899,6 @@ vi:"M: Bạn có thấy chán những chuyến đi dài trên ô tô không? B�
 Bạn có thích ngắm nhìn những kỳ quan nhân tạo không?<br>\
 Đi du ngoạn đến Kênh đào Panama! Bạn có muốn ngắm những tảng băng trôi không? Bạn có muốn ngắm hải cẩu và cá voi không? Hãy đi du ngoạn đến Alaska!<br>\
 Dù bạn chọn đi đâu, du ngoạn là một cách tuyệt vời để đi du lịch. Đặt chuyến đi trên du thuyền ngay hôm nay! Bạn sẽ thích!",
-voca:"cruise,whale,man-made,autumn,northeast,wherever,compass,mammal,wonder,the Panama Canal,Go late in the year,sight"
+voca:"cruise,whale,autumn,northeast,wherever,compass,mammal,wonder,the Panama Canal,Go late in the year,sight,man-made wonders"
 },
 ];

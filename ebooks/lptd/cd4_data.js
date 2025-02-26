@@ -130,7 +130,7 @@ G: Well, according to my math book, one inch equals 2,54 centimeters, so to conv
 B: Great!<br>\
 G: According to the calculator, that would make it 9,1 centimeters tall and, let's see, about five centimeters wide.<br>\
 B: So, its height is about nine centimeters and its width is about five centimeters, but what about its weight? The website says that it weighs 3,6 ounces.<br>\
-G: We multiply 3.6 by 28.3, which is the equivalent in grams, and that converts to about 102 grams.<br>\
+G: We multiply 3,6 by 28,3, which is the equivalent in grams, and that converts to about 102 grams.<br>\
 B: All right then, the MP4 player is about nine centimeters tall and five centimeters wide, and weighs about 102 grams. I thought it would have to have larger dimensions to be able to hold 5000 songs, but it's small and light! Do you think I should buy it, Julie?<br>\
 G: It sounds like a good product, but it depends on the price.<br>\
 B: Well, now I have the same sort of problem again. Could you help me figure out how to convert Chinese currency to our currency?"
@@ -140,7 +140,7 @@ B: Tuyệt!<br>\
 G: Theo máy tính, điều đó sẽ làm cho nó cao 9,1 centimet và, chúng ta hãy xem, rộng khoảng năm centimet.<br>\
 B: Vậy, chiều cao của nó khoảng chín centimet và chiều rộng khoảng năm centimet, nhưng còn trọng lượng của nó thì sao? Trang web nói rằng nó nặng 3,6 ounce.<br>\
 G: Chúng ta nhân 3,6 với 28,3, tương đương với tính bằng gam, và chuyển đổi thành khoảng 102 gam.<br>\
-B: Được rồi, máy nghe nhạc MP4 cao khoảng chín cm và rộng năm cm, và nặng khoảng 102 gam. Tôi nghĩ nó phải có kích thước lớn hơn để có thể chứa 5.000 bài hát, nhưng nó nhỏ và nhẹ! Bạn có nghĩ tôi nên mua nó không, Julie?<br>\
+B: Được rồi, máy nghe nhạc MP4 cao khoảng chín cm và rộng năm cm, và nặng khoảng 102 gam. Tôi nghĩ nó phải có kích thước lớn hơn để có thể chứa 5000 bài hát, nhưng nó nhỏ và nhẹ! Bạn có nghĩ tôi nên mua nó không, Julie?<br>\
 G: Nghe có vẻ là một sản phẩm tốt, nhưng còn tùy thuộc vào giá cả.<br>\
 B: Vâng, giờ tôi lại gặp vấn đề tương tự. Bạn có thể giúp tôi tìm ra cách chuyển đổi tiền Trung Quốc sang tiền của chúng tôi không?"
 	,voca:"measurement,calculator,width,convert,height.dimensions,figure out,multiply,weighs,equivalent",
@@ -667,7 +667,7 @@ W: Ồ, tôi đã muốn đến Úc từ khi tôi còn nhỏ! Kể cho tôi nghe
 M: Thật tuyệt vời! Chúng tôi đã cho kangaroo ăn, đi bộ qua các khu rừng nhiệt đới và bơi ở biển. Điều thực sự tuyệt vời là khi chúng tôi đi tàu đến Brisbane để ngắm Rạn san hô Great Barrier.<br>\
 W: Tôi nghe nói rằng các chuyến bay đến Úc khá đắt.<br>\
 M: Bố tôi biết một người làm việc cho Hãng hàng không Qantas, vì vậy chúng tôi đã có thể mua được một mức giá hời. Giá vé chỉ 800 đô la một người cho một chuyến khứ hồi.<br>\
-W: Chà, đó là một mức giá hời! Khi chúng tôi đi nghỉ ở Bangkok năm ngoái, giá vé khứ hồi là 1.000 đô la, và Thái Lan gần hơn Úc.<br>\
+W: Chà, đó là một mức giá hời! Khi chúng tôi đi nghỉ ở Bangkok năm ngoái, giá vé khứ hồi là 1000 đô la, và Thái Lan gần hơn Úc.<br>\
 M: Bạn thích nhất điều gì ở Thái Lan?<br>\
 W: Vâng, đồ ăn rất ngon, và cưỡi voi thì rất thú vị, nhưng tôi phải nói rằng bãi biển là phần tuyệt nhất. Phần khó chịu duy nhất của chuyến đi là sau khi chúng tôi về nhà, khi chúng tôi phát hiện ra rằng hãng hàng không đã làm mất một số hành lý của chúng tôi. Vali của bố tôi và ba lô của chị gái tôi đã bị mất.<br>\
 M: Vậy là hãng hàng không đã làm mất hai kiện hành lý? Bạn mất bao lâu để lấy lại chúng?<br>\

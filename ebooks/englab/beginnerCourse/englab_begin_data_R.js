@@ -448,6 +448,39 @@ S7. Most popular place to arrive<br>\
 S4. Beginning of canal shipping<br>\
 S5. Further development of water transport"
 },{
+	unit:10
+	,title:"Public Libraries"
+	,en:"Paragraph A <br>\
+The word public comes from a Latin word, publicus, meaning people. A public library is for all the people in a community to use. It charges no fee for its services. The public library will have available, within the limits of its budget, a wide variety of books and other materials. These books or other materials may be borrowed, or taken out for a specific time, by anyone in the community. The library loans its materials.<br>\
+Paragraph B <br>\
+Public libraries are usually tax-supported. There are a few that are instead supported from money that has been donated. And there are some that receive part of their money from taxes and part from gifts.<br>\
+Paragraph C <br>\
+Few public libraries are exactly alike. Not only ate the shapes and sizes of the buildings differ ent, but so are the number of books and other materials in each. Your nearest library may be like the Los Angeles Public Library, which has over 4538458 books and bound periodicals (magazines and journals) in its collection. Or it may be like the Cherokee County Public Library, which has only about 3800 books in its collection.<br>\
+Paragraph D <br>\
+Libraries vary in other ways, too, for instance, in the number of hours (or days) they are open or in the number of people who work there. Most public libraries, however, arrange their books and other materials in similar ways. They divide their collections into two basic age groups, children and adult. Adult books are in one place; children's books are in another. Then the books are further separated by the kind of book. Storybooks -works of fiction -are separated from infor mation, or fact books -nonfiction.<br>\
+Paragraph E <br>\
+People often want to refer to, that is, look something up in a certain basic information book. Thus reference books, which are rarely read cover to cover, are put in a special place in the li brary, a reference section or perhaps a reference room. Reference books are never to be taken out of the library building.<br>\
+Paragraph F <br>\
+Each library decides for itself how it should further arrange its books and other materials. In a large city library, certain nonfiction materials may be put into a special area or separate room. For instance, there may be a separate room just for all the materials a library has on music. In another large city, the music materials might not be kept so separate. It would depend on what the people in that city had indicated they found useful. <br>\
+Paragraph G<br>\
+A library's holdings are everything the library has in its collection. These holdings almost alwars reflect the community's special interests. Suppose, for example, there were a town where Morgan horses were widely raised and trained. That town's library would most likely have a great deal of material_ about Morgan horses. Since the people who were interested in Morgan horses would probably be less interested in other breeds of horses, the library might have only a small amount of material on Mustangs or Appaloosas."
+	,vi:"Đoạn A <br>\
+Từ public bắt nguồn từ tiếng Latin, publicus, có nghĩa là mọi người. Thư viện công cộng dành cho tất cả mọi người trong cộng đồng sử dụng. Thư viện không tính phí cho các dịch vụ của mình. Thư viện công cộng sẽ cung cấp, trong phạm vi ngân sách của mình, nhiều loại sách và tài liệu khác nhau. Bất kỳ ai trong cộng đồng cũng có thể mượn hoặc mượn những cuốn sách hoặc tài liệu này trong một khoảng thời gian cụ thể. Thư viện cho mượn tài liệu của mình.<br>\
+Đoạn B <br>\
+Thư viện công cộng thường được hỗ trợ bằng thuế. Có một số thư viện được hỗ trợ bằng tiền quyên góp. Và có một số thư viện nhận được một phần tiền từ thuế và một phần từ quà tặng.<br>\
+Đoạn C <br>\
+Rất ít thư viện công cộng nào giống hệt nhau. Không chỉ hình dạng và kích thước của các tòa nhà khác nhau mà số lượng sách và tài liệu khác trong mỗi thư viện cũng khác nhau. Thư viện gần nhất của bạn có thể giống như Thư viện Công cộng Los Angeles, nơi có hơn 4538458 đầu sách và tạp chí đóng bìa (tạp chí và nhật ký) trong bộ sưu tập của mình. Hoặc có thể giống như Thư viện Công cộng Quận Cherokee, nơi chỉ có khoảng 3800 đầu sách trong bộ sưu tập của mình.<br>\
+Đoạn D <br>\
+Các thư viện cũng khác nhau ở nhiều khía cạnh khác, ví dụ như số giờ (hoặc ngày) mở cửa hoặc số lượng người làm việc ở đó. Tuy nhiên, hầu hết các thư viện công cộng đều sắp xếp sách và các tài liệu khác theo những cách tương tự nhau. Họ chia bộ sưu tập của mình thành hai nhóm tuổi cơ bản, trẻ em và người lớn. Sách dành cho người lớn ở một nơi; sách dành cho trẻ em ở một nơi khác. Sau đó, các cuốn sách được phân tách thêm theo loại sách. Sách truyện - tác phẩm hư cấu - được phân tách khỏi sách thông tin, hoặc sách sự kiện - phi hư cấu.<br>\
+Đoạn E <br>\
+Mọi người thường muốn tham khảo, tức là tra cứu thông tin cơ bản trong một cuốn sách nào đó. Do đó, sách tham khảo, vốn hiếm khi được đọc từ đầu đến cuối, được đặt ở một vị trí đặc biệt trong thư viện, một phần tham khảo hoặc có thể là một phòng tham khảo. Sách tham khảo không bao giờ được mang ra khỏi tòa nhà thư viện.<br>\
+Đoạn F <br>\
+Mỗi thư viện tự quyết định cách sắp xếp sách và các tài liệu khác của mình. Trong một thư viện thành phố lớn, một số tài liệu phi hư cấu có thể được đưa vào một khu vực đặc biệt hoặc phòng riêng. Ví dụ, có thể có một phòng riêng chỉ dành cho tất cả các tài liệu mà thư viện có về âm nhạc. Ở một thành phố lớn khác, các tài liệu âm nhạc có thể không được giữ riêng biệt như vậy. Điều này sẽ phụ thuộc vào những gì người dân trong thành phố đó cho biết họ thấy hữu ích. <br>\
+Đoạn G<br>\
+Tài sản của thư viện là tất cả những gì thư viện có trong bộ sưu tập của mình. Những tài sản này hầu như luôn phản ánh sở thích đặc biệt của cộng đồng. Ví dụ, giả sử có một thị trấn nơi ngựa Morgan được nuôi và huấn luyện rộng rãi. Thư viện của thị trấn đó rất có thể sẽ có rất nhiều tài liệu về ngựa Morgan. Vì những người quan tâm đến ngựa Morgan có thể ít quan tâm đến các giống ngựa khác nên thư viện có thể chỉ có một lượng nhỏ tài liệu về ngựa Mustang hoặc ngựa Appaloosa."
+	,voca:""
+	,note:""
+},{
 	title:"The Importance Of Children's Play"
 	,en:"Brick by brick, six-year-old Alice is building a magical kingdom. Imagining fairy-tale turrets and fire-breathing dragons, wicked witches and gallant heroes, she's creating an enchanting world. Although she isn't aware of it, this fantasy is helping her take her first steps towards her capacity for creativity and so it will have important repercussions in her adult life.<br>\
 Minutes later, Alice has abandoned the kingdom in favour of playing schools with her younger brother. When she bosses him around as his 'teacher', she's practising how to regulate her emotions through pretence. Later on, when they tire of this and settle down with a board game, she's learning about the need to follow rules and take turns with a partner.<br>\

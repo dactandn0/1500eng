@@ -14,9 +14,6 @@ $scope.stories = collins_cd12;
 $scope.storyIdx = 0;
 $scope.bookRadio = 0 ; 	
 
-$scope.titles = showStoryTitles($scope.stories);  // def
-makeVocaEbook($rootScope, collins_cd12) 		// def
-
 var key0 = 'collins_unit'
 var key1 = 'formula_unit'
 var key2 = 'sSVol5_unit'
@@ -33,31 +30,26 @@ bookRadioChange = function (num, isLoadData = false) {
 	{
 		$scope.img_root = imgRootPath + 'collins/img/'
 		$scope.stories = collins_cd12;
-		makeVocaEbook($rootScope, collins_cd12)
 	}
 	if (num===1)
 	{
 		$scope.img_root = imgRootPath + 'formula/img/'	
 		$scope.stories = FORMULA_DATA;
-		makeVocaEbook($rootScope, FORMULA_DATA)
 		key = key1
 	}
 	if (num===2)
 	{
 		$scope.img_root = imgRootPath + 'speakSameVol5/img/'	
 		$scope.stories = SPEAKING_SAME_VOL5;
-		makeVocaEbook($rootScope, SPEAKING_SAME_VOL5)
 		key = key2
 	}
 
-	$scope.titles = showStoryTitles($scope.stories);
 
 	var idx = Helper_loadInt(key, 0);
 	$scope.fetchStory(idx, false);
 
-	if (!isLoadData) $scope.$apply();
-
 	Helper_saveDB("Speaking_Ebook", num);
+	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 }
 
 $scope.createAudioSrc = function() 
@@ -89,28 +81,5 @@ $scope.loadData = function () {
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 });
-
-function doMenu_S_VOL5()
-{
-	var en = ""
-	var rgSen = /\d+\).*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
-	for (var i = 0; i < SPEAKING_SAME_VOL5.length; i++) {
-		var lesson = SPEAKING_SAME_VOL5[i]
-		var questions = lesson.en.match(rgSen);
-		en += '<b>' + (i+1) + ') ' + lesson.title + '</b><br>'
-		for (var j = 0; j < questions.length; j++) {
-			en += questions[j]
-		}
-	}
-	var menu = {
-		track: 'Menu',
-		title: 'Lessons',
-		en: en
-	}
-	var r = []
-	r.push(menu)
-	return r.concat(SPEAKING_SAME_VOL5)
-}
-
 
 });

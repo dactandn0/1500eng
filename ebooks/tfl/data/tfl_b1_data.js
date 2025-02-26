@@ -1245,15 +1245,15 @@ Do you want to buy it?<br>\
 That's okay. I'm just looking.<br>\
 3<br>\
 This tie isn't bad. How much is it?<br>\
-It's $36.95.<br>\
-$36.95. Well, maybe I don't really need a tie. Thanks, anyway.<br>\
+It's $36,95.<br>\
+$36,95. Well, maybe I don't really need a tie. Thanks, anyway.<br>\
 4<br>\
 These shorts are nice, aren't they?<br>\
-Yes, and they're only $26.95. Do you want to take them?<br>\
+Yes, and they're only $26,95. Do you want to take them?<br>\
 Yeah, I think I will.<br>\
 5<br>\
 How much are these earrings?<br>\
-They're only $12.25.<br>\
+They're only $12,25.<br>\
 They're nice. I'll take them.<br>\
 Okay.<br>\
 6<br>\
@@ -1265,17 +1265,17 @@ Hmm. Well, I'll think about it."
 },{
 	track:"11.03",
 	en:"1.<br>\
-Lets see. Soup. Thats two for a dollar. And a bottle of shampoo—$6.50. So that comes to $7.50 and your change is $12.50.<br>\
+Lets see. Soup. Thats two for a dollar. And a bottle of shampoo—$6,50. So that comes to $7,50 and your change is $12,50.<br>\
 2.<br>\
-Okay, now—let me see what youve got. The CD is $14.95, and the cassette—oh, a good one, my favorite group—its on sale for $4.95. So, let me see... That comes to $19.90. So heres your change, ten cents.<br>\
+Okay, now—let me see what youve got. The CD is $14,95, and the cassette—oh, a good one, my favorite group—its on sale for $4,95. So, let me see... That comes to $19,90. So heres your change, ten cents.<br>\
 3.<br>\
-Yes, can I help you? Okay. Lets see. The newspapers are $1.50, and the magazines will cost another…$8.15. Yes, so thats, let me see, $9.65, right? Heres your change, $10.35.<br>\
+Yes, can I help you? Okay. Lets see. The newspapers are $1,50, and the magazines will cost another…$8,15. Yes, so thats, let me see, $9,65, right? Heres your change, $10,35.<br>\
 4.<br>\
-So youre taking the T-shirt—nice choice. The color suits you. Okay, thats $4.95, then the socks. Theyre another $3.20, so thats $8.15, and heres your change, $11.85.<br>\
+So youre taking the T-shirt—nice choice. The color suits you. Okay, thats $4,95, then the socks. Theyre another $3,20, so thats $8,15, and heres your change, $11,85.<br>\
 5.<br>\
-Mmm, I like chocolates, too. Okay, thats $9.50 for the chocolates. And chocolate chip cookies, too. Mmm. You really do like chocolate. The cookies are $2.99. So thats $12.49. And heres your change, $7.51.<br>\
+Mmm, I like chocolates, too. Okay, thats $9,50 for the chocolates. And chocolate chip cookies, too. Mmm. You really do like chocolate. The cookies are $2,99. So thats $12,49. And heres your change, $7,51.<br>\
 6.<br>\
-Is this all? Okay. Lets see. Now the magazines are $6.25. And youre taking the book? Thats $12.00. So that comes to $18.25 altogether. And heres your change. Thats a dollar seventy-five."
+Is this all? Okay. Lets see. Now the magazines are $6,25. And youre taking the book? Thats $12,00. So that comes to $18,25 altogether. And heres your change. Thats a dollar seventy-five."
 	,vi:""
 	,voca:"",
 },

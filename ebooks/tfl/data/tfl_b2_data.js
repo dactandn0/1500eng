@@ -2,7 +2,7 @@
 const tfl_b2_stories = [
 {
 	title:"The Weekend",
-	track:"01.02",
+	track:"1.2",
 	en:"1<br>\
 A: So how was your weekend, Don? <br>\
 B: Well, I wanted to go dancing with my girlfriend but she was too tired to go out.<br>\
@@ -90,7 +90,7 @@ A: Bạn đùa đấy! Bạn đã bỏ lỡ một trận đấu thực sự tuy�
 	,voca:"",
 },
 {
-	track:"01.03",
+	track:"1.3",
 	en:"1<br>\
 A: So how was your weekend?<br>\
 B: Oh, I went to see that new science fiction movie downtown.<br>\
@@ -163,7 +163,7 @@ B: Vâng, tôi đã có một kỳ nghỉ cuối tuần tuyệt vời. Tôi đã
 A: Thật tệ. Tôi đã định rủ bạn đi chơi vào cuối tuần tới. Ồ, được thôi."
 	,voca:"",
 },{
-	track:"01.04",
+	track:"1.4",
 	en:"1<br>\
 I had a really great weekend. I didn't have anything to do on Saturday afternoon so I went to the mall. I went into a department store to look around. They were having a contest. All you had to do was write answers to some easy questions about pop music and put your answers in a box. Then they pulled out three names for a prize. And guess what? Mine was the first name they pulled out. I couldn't believe it. And it's a terrific prize. A weekend for two in Las Vegas!<br>\
 2<br>\
@@ -183,14 +183,14 @@ Tôi đã đến dự tiệc sinh nhật của bạn tôi vào tối thứ Bảy
 	,voca:"",
 },{
 	title:"City Transportation",
-	track:"02.02",
+	track:"2.2",
 	en:"1<br>\
 A: Are the subways always this crowded?<br>\
 B: Yep, every morning and in the evening at rush hour.<br>\
 A: Wow!<br>\
 2<br>\
 A: How much is the fare?<br>\
-B: It's $1.25. Just put your money in the box right there.<br>\
+B: It's $1,25. Just put your money in the box right there.<br>\
 A: Oh, do you have change? br>\
 B: No, you need the exact change.<br>\
 3<br>\
@@ -252,7 +252,7 @@ A: Hôm nay trời có vẻ hơi xấu. Tôi nghĩ mình sẽ bị ốm mất.<b
 B: Ôi trời."
 	,voca:"",
 },{
-	track:"02.03",
+	track:"2.3",
 	en:"1<br>\
 A: City Cabs.<br>\
 B: Yes, I'd like a taxi to the airport, please. I'm at 421 Evergreen Street.<br>\
@@ -350,7 +350,7 @@ B: Cảm ơn."
 	,voca:"",
 },
 {
-	track:"02.04",
+	track:"2.4",
 	en:"1<br>\
 I hate using taxis here. The drivers drive too fast and really dangerously. And they're often rude. The cars are mostly in pretty poor condition. But what I hate the most is that they aren't air conditioned. It's so hot here. They really need air-conditioned taxis. By the time I arrive somewhere, I feel really hot and uncomfortable.<br>\
 2<br>\
@@ -370,7 +370,7 @@ Tôi đoán là taxi ở đây ổn. Giá rất rẻ, vì vậy đó là điều
 	,voca:"",
 },{
 	title:"Renting a Car",
-	track:"03.02",
+	track:"3.2",
 	en:"1<br>\
 A: Let me show you this two-door car. <br>\
 B: You mean the blue one?<br>\
@@ -431,7 +431,7 @@ A: Vâng. Làm sao anh biết vậy?<br>\
 Tôi sẽ chuyển nhà vào cuối tuần này, vì vậy tôi đã thuê một chiếc xe tải lớn màu vàng. Tôi thực sự vui vì đã làm vậy. Nó không tốn kém lắm, và có rất nhiều chỗ cho đồ đạc của tôi. Và điều đó thật tốt, anh biết đấy, bởi vì khi tôi bắt đầu chuyển những chiếc hộp ra khỏi nhà, tôi nhận ra rằng mình có rất nhiều đồ đạc. Và ý tôi là rất nhiều. Phải mất cả ngày để di chuyển nó bằng chiếc xe nhỏ bé của tôi."
 	,voca:"",
 },{
-	track:"03.03",
+	track:"3.3",
 	en:"1<br>\
 A: Hi. I'm in town on business and I need a car.<br>\
 B: Sure. How long do you need it for? <br>\

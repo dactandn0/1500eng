@@ -16,8 +16,6 @@ $scope.story = '';
 $scope.acc = -1;
 
 $scope.stories = ENGLAB_BEGIN_DATA_R;				// def
-$scope.titles = showStoryTitles($scope.stories);  	// def
-makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R) 		// def
 
 ielt_formChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
@@ -26,37 +24,32 @@ ielt_formChange = function (num, isLoadData = false) {
 	if (num===0) 
 	{
 		$scope.stories = ENGLAB_BEGIN_DATA_R;
-		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_R)
 	}
 	if (num===1)
 	{
 		$scope.stories = ENGLAB_BEGIN_DATA_W;
-		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_W)
 	}
 	if (num===2) $scope.stories = ENGLAB_BEGIN_DATA_S;
 	if (num===3)
 	{
 		$scope.img_root = imgRootPath + 'lessons/'	
-		$scope.stories = doMenu_book(ENGLAB_BEGIN_DATA_L);
+		$scope.stories = ENGLAB_BEGIN_DATA_L
 		var idx = Helper_loadInt('lessonFor_unit', 0);
 		$scope.fetchStory(idx, false);
-		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_L)
 	}
 	if (num===4) 
 	{
 		$scope.img_root = imgRootPath + 'sos/'	
-		$scope.stories = doMenu_book(ENGLAB_BEGIN_DATA_Sheep_or_ship);
-		makeVocaEbook($rootScope, ENGLAB_BEGIN_DATA_Sheep_or_ship)
+		$scope.stories = ENGLAB_BEGIN_DATA_Sheep_or_ship
 		var idx = Helper_loadInt('sheep_or_ship_unit', 0);
 		$scope.fetchStory(idx, false);
 	}
 
 	$scope.acc = -1;
-	$scope.titles = showStoryTitles($scope.stories);
-
-	if (!isLoadData) $scope.$apply();
 
 	Helper_saveDB("ENGLAB_BEGIN_type", num);
+	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
+
 }
 
 $scope.acc_isShow = function (id) {
@@ -98,32 +91,6 @@ $scope.fetchStory = function (idx, reset=true)
 	if ($scope.ielt_form === 5) key = 'sheep_or_ship_unit'
 	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
 }
-
-
-function doMenu_book(bookData)
-{
-	var en = ""
-	for (var i = 0; i < bookData.length; i++) {
-		var lesson = bookData[i]
-		var lTitle = lesson.title
-		if (lTitle && lTitle.trim().length > 0)
-		{
-			if (en.indexOf(lTitle) >= 0) continue;
-			// 01.01 -> 01
-			var order = lesson.unit || ( (lesson.track + '').replace(/\..*/gi, '') )
-			en += order + ') ' + lTitle + '<br>'
-		}
-	}
-	var menu = {
-		track: 'Menu',
-		title: 'Lessons',
-		en: en
-	}
-	var r = []
-	r.push(menu)
-	return r.concat(bookData)
-}
-
 
 $scope.loadData = function () {
 	var cd = Helper_loadInt('ENGLAB_BEGIN_type', 0);

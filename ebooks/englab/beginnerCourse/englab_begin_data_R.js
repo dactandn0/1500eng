@@ -107,7 +107,7 @@ Các quốc gia công nghiệp đều trải qua thời kỳ tăng trưởng nha
 Các quốc gia công nghiệp đang bắt đầu tìm cách sản xuất hàng hóa mà không gây ô nhiễm, một trong những tác hại của tình trạng quá tải dân số. Các nước đang phát triển cũng sẽ sử dụng những phương pháp như vậy nếu họ muốn chăm sóc người dân của mình. Giáo dục trẻ em ở khắp mọi nơi đều tốn kém, nhưng chi phí này là xứng đáng vì trẻ em sẽ đóng góp vào sự phát triển của đất nước khi chúng lớn lên. Có lẽ những đứa trẻ hiện đang đi học sẽ phát minh ra những cách giúp mọi người sống hòa bình với trái đất."
 	,voca:"",
 },{
-	unit:"4",
+	unit:4,
 	title:"Emergency Fire Procedures"
 	,en:"If you detect a fire, call emergency, 1999, and the Fire Department, 9+911. Engage the fire alarm, alert other guests, and exit the building.<br>\
 If a fire is detected inside the room, exit the room immediately, close the door, and activate the nearest emergency alarm. Notify in-house personnel by dialling 1999 and the Fire Department at 911.<br>\

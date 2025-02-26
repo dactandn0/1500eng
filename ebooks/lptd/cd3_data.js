@@ -313,9 +313,9 @@ M: Ồ, tuyệt! Đi nào!"
 B: How can I earn some extra money this summer? <br>\
 G: Why don't we start a lemonade stand, Will? <br>\
 B: That's a great idea, Mary, but do you think we will make any money?<br>\
-G: If we set up in an area with a lot of traffic on a hot day, we will get plenty of customers. We can charge $1.50 per cup.<br>\
+G: If we set up in an area with a lot of traffic on a hot day, we will get plenty of customers. We can charge $1,50 per cup.<br>\
 B: That sounds a little expensive.<br>\
-G: But we need to charge that much to cover our expenses. By charging $1.50 per cup, we can make good money with our lemonade stand. <br>\
+G: But we need to charge that much to cover our expenses. By charging $1,50 per cup, we can make good money with our lemonade stand. <br>\
 B: OK. What do we need to get started? <br>\
 G: We need the ingredients to make lemonade, so we need lemons, sugar, and water. We need something to keep our money in, a sign to advertise the lemonade, paper cups, and a cardboard box to use as a stand.<br>\
 B: Should we sell food to go with the lemonade? <br>\

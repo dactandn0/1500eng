@@ -159,35 +159,6 @@ function ngClickOnWord(word, graph) {
 	return graph
 }
 
-// for Reading fullTitles
-function showStoryTitles(data) {
-	var r = []
-	for (var k = 0; k < data.length; k++) {
-		var obj = data[k]
-		var json_result = getFullTile(obj)
-		r.push(json_result);
-	}
-	return r;
-}
-
-function getFullTile(obj) {
-	var unit = obj.unit ? ('U' + obj.unit + ' ') : '';
-	var track  = (obj.track) ? (obj.track + ' ') : '';
-	var title  = (obj.title) ? (obj.title) : '';
-	var hasNote = obj.note && obj.note.trim().length > 0
-	var hasExercise = (obj.T_F_NG && obj.T_F_NG.trim().length > 0)
-						|| (obj.images && obj.images.length > 0)
-
-	return {
-		unit : unit,
-		track : track,
-		title : title,
-		blankEn : !obj.en || obj.en.trim().length == 0,
-		hasNote : hasNote,
-		hasExercise : hasExercise,
-		fTitle : track + unit + title 
-	}
-}
 
 function processStory (story, isAlert = true) {
 	if (!story) return story;
@@ -201,10 +172,10 @@ function processStory (story, isAlert = true) {
 	var viShow = !story.vi ? "" : story.vi.trim()
 
 	enShow = doReplaceWords(enShow)
-	enShow = fixDots(enShow)
+//	enShow = fixDots(enShow)
 
 	var bHasVi = viShow.length > 0
-	if (bHasVi) viShow= fixDots(viShow)
+//	if (bHasVi) viShow= fixDots(viShow)
 
 	var foundWords = IRR_ExtractWords(story)
 	
@@ -250,7 +221,8 @@ function processStory (story, isAlert = true) {
 	if (!isBlank && bHasVi) 
 	{
 		var kBrTag = '<br>'
-		var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|\!|\?'")/gi
+	//	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|[\!\?]['"])/gi
+		var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|(\d\.+\d+.+[\.\!\?])|[\.]+|[\!\?])/gi
 		var viii = ''
 		var sentencesEn = enShow.match(rgSen);
 		var sentencesVi = '';
@@ -289,6 +261,8 @@ function processStory (story, isAlert = true) {
 		
 	story.viShow = enAndVi
 	story.enShow = enShow
+	
+	// show title con acc_click
 	var json = getFullTile(story)
 	story.fTitle = json.fTitle
 	story.hasNote = json.hasNote

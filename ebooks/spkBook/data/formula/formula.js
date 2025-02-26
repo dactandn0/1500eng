@@ -1,6 +1,7 @@
 const FORMULA_DATA = [
 {
 	track:'1.01'
+	,title:"Do you prefer"
 	,en:"1) Do you prefer public transportation or private transportation?<br>\
 I would opt for public transportation. This is because I find it more environmentally friendly and often less stressful than driving through traffic. Plus, it allows me to relax, read, or catch up on work during the commute, making the most of my time.<br>\
 2) Do you prefer to read news online or in the newspaper?<br>\
@@ -19,6 +20,7 @@ Thành thật mà nói, tôi thích trò chuyện trực tuyến hơn là nói c
 Có, chắc chắn rồi. Tôi thích tập thể dục vì nó thư giãn và lành mạnh. Trên hết, tập thể dục giúp tôi cải thiện sự phối hợp tay mắt và duy trì vóc dáng tuyệt vời. Nó cũng ngăn ngừa nhiều vấn đề sức khỏe khác nhau như huyết áp cao, đột quỵ và ung thư phổi."
 },{
 	track:"1.02"
+	,title:"When was the first time"
 	,en:"1) When was the first time you used a computer?<br>\
 Well, as far as I can recall, my first time using a computer was about 10 years ago. It was a birthday present from my father, and I was thrilled to receive it because it was the latest model available then. I eagerly started learning how to use it right away, and it marked the beginning of my fascination in technology.<br>\
 2) What kind of movies do you like?<br>\

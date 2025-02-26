@@ -2,7 +2,7 @@
 
 document.write('<script src="./ebooks/tfl/data/tfl_b1_data.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/tfl/data/tfl_b2_data.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/tfl/data/SPELL_DATA.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/tfl/data/spell_data.js" type="text/javascript"></script>');
 
 var app = angular.module("tflApp", []);
 app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
@@ -10,19 +10,19 @@ app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
 KBook = 1;
 $scope.stories = tfl_b1_stories; 					//def
 $scope.storyIdx = 0;
-$scope.titles = showStoryTitles($scope.stories);  // def
-makeVocaEbook($rootScope, tfl_b1_stories) 			// def
 
 bookChange = function (num) {
 	switch (num) {
-		case 0: $scope.stories = doMenu(SPELL_DATA); break;
-		case 1: $scope.stories = doMenu(tfl_b1_stories); break;
-		case 2: $scope.stories = doMenu(tfl_b2_stories); break;
+		case 0: $scope.stories = SPELL_DATA; break;
+		case 1: $scope.stories = tfl_b1_stories; break;
+		case 2: $scope.stories = tfl_b2_stories; break;
 	}
-	$scope.titles = showStoryTitles($scope.stories);
 	Helper_saveDB("tfl_b", num);
 	KBook = num;
 	$scope.fetchStory($scope.storyIdx, true);
+
+	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
+
 }
 
 $scope.styleTrack = function(trackId) {
@@ -59,35 +59,6 @@ $scope.loadData = function () {
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadData();
 });
-
-function doMenu(kStories)
-{
-	var en = ""
-	for (var i = 0; i < kStories.length; i++) {
-		var lesson = kStories[i]
-		if (lesson.title)
-		{
-			// 01.01 -> 01
-			var order = (lesson.track + '').replace(/\..*/gi, '')
-			en += order + ') ' + lesson.title + '<br>'
-		}
-	}
-	var menu = {
-		track: 'Menu',
-		title: 'Lesson',
-		en:en
-	}
-	var r = []
-	r.push(menu)
-	return r.concat(kStories)
-}
-
-
-$scope.spellAZ = function	()
-{
-	var a_z = 'a.b.c.d.e.f.g.h.i.j.k.l.m.n'
-	Text2Speech(a_z)
-}
 
 
 });

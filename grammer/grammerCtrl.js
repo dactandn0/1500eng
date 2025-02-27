@@ -10,7 +10,7 @@ $scope.stories = kDATA;
 $scope.storyId = -1;
 $scope.acc = -1;
 
-$scope.titles = showStoryTitles(kDATA);  	// def
+Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc === id;

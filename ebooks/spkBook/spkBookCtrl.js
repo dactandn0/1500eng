@@ -43,13 +43,12 @@ bookRadioChange = function (num, isLoadData = false) {
 		$scope.stories = SPEAKING_SAME_VOL5;
 		key = key2
 	}
-
+	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 
 	var idx = Helper_loadInt(key, 0);
 	$scope.fetchStory(idx, false);
 
 	Helper_saveDB("Speaking_Ebook", num);
-	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 }
 
 $scope.createAudioSrc = function() 
@@ -69,6 +68,7 @@ $scope.fetchStory = function (idx, reset=true)
 {
 	var key = key0
 	if ($scope.bookRadio === 1) key = key1
+	else if ($scope.bookRadio === 2) key = key2
 	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
 }
 

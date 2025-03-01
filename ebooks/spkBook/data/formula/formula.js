@@ -18,6 +18,7 @@ Tôi thích cả hai, nhưng nếu phải lựa chọn, tôi sẽ chọn tin t�
 Thành thật mà nói, tôi thích trò chuyện trực tuyến hơn là nói chuyện qua điện thoại. Lý do là vì tôi có thể dễ dàng nhắn tin cho nhiều người cùng một lúc và giữ liên lạc với bạn bè. Ngoài ra, tôi thấy trò chuyện trực tuyến tiện lợi và linh hoạt vì tôi có thể trò chuyện với bạn bè bất cứ lúc nào mà không sợ làm phiền họ.<br>\
 4) Bạn có thích tập thể dục không?<br>\
 Có, chắc chắn rồi. Tôi thích tập thể dục vì nó thư giãn và lành mạnh. Trên hết, tập thể dục giúp tôi cải thiện sự phối hợp tay mắt và duy trì vóc dáng tuyệt vời. Nó cũng ngăn ngừa nhiều vấn đề sức khỏe khác nhau như huyết áp cao, đột quỵ và ung thư phổi."
+,voca:"opt for, les"
 },{
 	track:"1.02"
 	,title:"When was the first time"
@@ -41,7 +42,7 @@ Tôi thích tất cả các loại sách, nhưng nếu phải chọn một, tôi
 Tôi thích tất cả các loại thực phẩm, nhưng nếu phải chọn một, tôi sẽ chọn đồ ăn nấu tại nhà. Lý do là vì tôi tin rằng chúng có xu hướng lành mạnh hơn và tiết kiệm hơn so với các bữa ăn ở nhà hàng. Đó là lý do tại sao tôi cố gắng hạn chế tần suất ăn ngoài.<br>\
 5) Bạn thích mặc loại trang phục nào nhất?<br>\
 Tôi thấy quần áo thường ngày thoải mái và đa năng để mặc hàng ngày. Tuy nhiên, tôi cũng thích diện đồ đẹp cho những dịp đặc biệt khi có cơ hội. Tôi thích quần short và áo phông nhất vì chúng thoải mái và dễ mặc. Tôi mặc chúng bất cứ khi nào đi chơi với bạn bè. Tôi nghĩ chúng sẽ không bao giờ lỗi mốt. Chúng ta có thể thấy rằng chúng luôn hợp thời trang và sành điệu."
-,voca:"casual"
+,voca:"casual,as far as I can recall,thrilled,fascination,eagerly,real sucker,eye-pleasing,budget-friendly,versatile,occasions,trendy"
 },{
 	track:"1.03"
 	,en:"1) Are bikes popular in your country?<br>\

@@ -1,7 +1,79 @@
 const BEGINNER_READING_VOCA = [
 {
 title: "Beginner_reading_voca",
-en: "\
+en: "definitely () chắc chắn<br>\
+also () cũng<br>\
+just () chỉ<br>\
+only () chỉ<br>\
+always () luôn luôn<br>\
+absolutely () hoàn toàn<br>\
+quite () khá<br>\
+sometimes () thỉnh thoảng<br>\
+own () sở hữu<br>\
+even if () thậm chí nếu<br>\
+even () thậm chí<br>\
+though () mặc dù<br>\
+although () mặc dù<br>\
+despite () mặc dù<br>\
+certainly () chắc chắn<br>\
+of course () tất nhiên<br>\
+so on () vân vân<br>\
+whenever () bất cứ khi nào<br>\
+probably () có lẽ<br>\
+currently () hiện tại<br>\
+unfortunately () thật không may<br>\
+hardly () hầu như không<br>\
+rarely () hiếm khi<br>\
+much () nhiều<br>\
+more () nhiều hơn<br>\
+really () thực sự<br>\
+recently () gần đây<br>\
+ever () bao giờ<br>\
+never () không bao giờ<br>\
+still () vẫn<br>\
+usually () thường<br>\
+absolutely () hoàn toàn<br>\
+actually () thực sự<br>\
+completely () hoàn toàn<br>\
+really () thực sự<br>\
+totally () hoàn toàn<br>\
+thoroughly () riệt để<br>\
+entirely () toàn bộ<br>\
+simply () đơn giản<br>\
+undoubtedly () không nghi ngờ gì nữa<br>\
+literally () theo đúng nghĩa đen<br>\
+gradually () dần dần<br>\
+unusual () khá<br>\
+pretty () khá<br>\
+quite () khá<br>\
+rather () hơn là<br>\
+fairly () khá<br>\
+basically () về cơ bản<br>\
+honestly () trung thực<br>\
+in fact () trên thực tế<br>\
+on top of that () trên hết<br>\
+what's more () còn gì nữa<br>\
+besides () ngoài ra<br>\
+plus () cộng với<br>\
+as much as () nhiều như<br>\
+as well as () cũng như<br>\
+as long as () miễn là<br>\
+as a result () kết quả là<br>\
+consequently () do đó<br>\
+thereby () do đó<br>\
+thus () do đó<br>\
+hence () như vậy<br>\
+such as () chẳng hạn như<br>\
+needless to say () không cần phải nói<br>\
+incredibly () vô cùng<br>\
+considerably () đáng kể<br>\
+particularly () đặc biệt<br>\
+significantly () đáng kể<br>\
+a bit of () một chút<br>\
+a sense of () cảm giác<br>\
+a bit () một chút<br>\
+a lot () rất nhiều<br>\
+a wide range of () một phạm vi rộng<br>\
 activate (v) /ˈæktɪveɪt/ kích hoạt<br>\
 alarm (n) báo động<br>\
 evacuation (n) /ɪvækjuˈeɪʃən/ sự sơ tán<br>\

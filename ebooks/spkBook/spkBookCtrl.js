@@ -14,17 +14,14 @@ $scope.stories = collins_cd12;
 $scope.storyIdx = 0;
 $scope.bookRadio = 0 ; 	
 
-var key0 = 'collins_unit'
-var key1 = 'formula_unit'
-var key2 = 'sSVol5_unit'
+var keyU = 'spkBook_u_'
 
 bookRadioChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
 
-	$rootScope.vocaEbook = null;
 	$scope.bookRadio = num;
 
-	var key = key0
+	keyU = removeStrDigit(keyU) + num
 
 	if (num===0) 
 	{
@@ -35,20 +32,17 @@ bookRadioChange = function (num, isLoadData = false) {
 	{
 		$scope.img_root = imgRootPath + 'formula/img/'	
 		$scope.stories = FORMULA_DATA;
-		key = key1
 	}
 	if (num===2)
 	{
 		$scope.img_root = imgRootPath + 'speakSameVol5/img/'	
 		$scope.stories = SPEAKING_SAME_VOL5;
-		key = key2
 	}
+
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
-
-	var idx = Helper_loadInt(key, 0);
-	$scope.fetchStory(idx, false);
-
 	Helper_saveDB("Speaking_Ebook", num);
+
+	$scope.fetchStory(Helper_loadInt(keyU, 0));
 }
 
 $scope.createAudioSrc = function() 
@@ -64,12 +58,9 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 	Helper_AudioLoop($scope, $rootScope);
 });
 
-$scope.fetchStory = function (idx, reset=true) 
+$scope.fetchStory = function (idx) 
 {
-	var key = key0
-	if ($scope.bookRadio === 1) key = key1
-	else if ($scope.bookRadio === 2) key = key2
-	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
+	Helper_FetchStory (idx, $scope, $rootScope, keyU) 
 }
 
 $scope.loadData = function () {

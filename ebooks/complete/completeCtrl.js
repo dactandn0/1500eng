@@ -10,21 +10,20 @@ $scope.stories = complete_cd1;
 $scope.storyIdx = 0;
 $scope.ielt_form = 0
 
-makeVocaEbook($rootScope, complete_cd1, complete_read_data) // def
-
-// read
 $scope.acc = -1;
-$scope.acc_isShow = function (id) {
+
+$scope.acc_isShow = function (id) 
+{
 	return $scope.acc===id;
-};
+}
 
 $scope.acc_click = function (id) {
-	if($scope.acc===id) $scope.acc = -1;
+	if($scope.acc === id) $scope.acc = -1;
 	else {
 		$scope.acc = id;
 		$scope.story = processStory($scope.stories[id]);
 	}
-};
+}
 
 $scope.storyTitles = function () {
 	return showStoryTitles($scope.stories)
@@ -39,8 +38,12 @@ ielt_formChange = function (num) {
 	if (num===1) $scope.stories = complete_read_data;
 	
 	$scope.acc = -1;
-	$scope.titles = showStoryTitles($scope.stories);
-	$scope.$digest();
+
+	Helper_saveDB("comple_form", num);
+	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
+
+	$scope.storyIdx = Helper_loadInt('comp_u');
+	$scope.fetchStory($scope.storyIdx);
 }
 
 $scope.createAudioSrc = function() {
@@ -51,14 +54,17 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 	Helper_AudioLoop($scope, $rootScope);
 });
 
-$scope.fetchStory = function (idx, reset=true) 
+$scope.fetchStory = function (idx) 
 {
-	Helper_FetchStory (idx, $scope, $rootScope, "completeL_unit", reset) 
+	Helper_FetchStory (idx, $scope, $rootScope, "comp_u") 
 }
 
-$scope.loadData = function () {
-	$scope.storyIdx = Helper_loadInt('completeL_unit');
-	$scope.fetchStory($scope.storyIdx, false);
+$scope.loadData = function () 
+{
+	var formIelts = Helper_loadInt('comple_form', 0);
+	ielt_formChange(formIelts);
+	document.complete_ielt_bForm._form.value = formIelts;
+	$scope.ielt_form = formIelts;
 };
 
 $scope.$on('$viewContentLoaded', function(){

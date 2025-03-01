@@ -20,7 +20,7 @@ Có bao nhiêu người sống trên lục địa của bạn? Không ai sống 
  ,voca:'Dinosaur,went,south,South Pole,500 million years,Scientist,equator,tourist,frozen,continent,Antarctica,pole,dinosaur,penguin,two inches of snow falls,made up of'
  ,note:'87% = 87 percent'
 },
-{unit:2,title:"'A Hiking Trip"
+{unit:2,title:"A Hiking Trip"
 	,en:"M: Hi, Anne! Did you sign up for the trip on Saturday?<br>\
 W: What trip is that? I didn't know there was a trip on Saturday.<br>\
 M: The hiking club is going to Bear Mountain. The bus drops us off at the bottom, and we're going to hike until we get to a cabin halfway up the mountain.<br>\

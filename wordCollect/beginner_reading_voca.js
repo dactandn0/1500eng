@@ -1,74 +1,74 @@
 const BEGINNER_READING_VOCA = [
 {
 title: "Beginner_reading_voca",
-en: "definitely () chắc chắn<br>\
-also () cũng<br>\
-just () chỉ<br>\
-only () chỉ<br>\
-always () luôn luôn<br>\
-absolutely () hoàn toàn<br>\
-quite () khá<br>\
-sometimes () thỉnh thoảng<br>\
-own () sở hữu<br>\
-even if () thậm chí nếu<br>\
-even () thậm chí<br>\
-though () mặc dù<br>\
-although () mặc dù<br>\
-despite () mặc dù<br>\
-certainly () chắc chắn<br>\
-of course () tất nhiên<br>\
-so on () vân vân<br>\
-whenever () bất cứ khi nào<br>\
-probably () có lẽ<br>\
-currently () hiện tại<br>\
-unfortunately () thật không may<br>\
-hardly () hầu như không<br>\
-rarely () hiếm khi<br>\
-much () nhiều<br>\
-more () nhiều hơn<br>\
-really () thực sự<br>\
-recently () gần đây<br>\
-ever () bao giờ<br>\
-never () không bao giờ<br>\
-still () vẫn<br>\
-usually () thường<br>\
-absolutely () hoàn toàn<br>\
-actually () thực sự<br>\
-completely () hoàn toàn<br>\
-really () thực sự<br>\
-totally () hoàn toàn<br>\
-thoroughly () riệt để<br>\
-entirely () toàn bộ<br>\
-simply () đơn giản<br>\
-undoubtedly () không nghi ngờ gì nữa<br>\
-literally () theo đúng nghĩa đen<br>\
-gradually () dần dần<br>\
-unusual () khá<br>\
-pretty () khá<br>\
-quite () khá<br>\
-rather () hơn là<br>\
-fairly () khá<br>\
-basically () về cơ bản<br>\
-honestly () trung thực<br>\
-in fact () trên thực tế<br>\
-on top of that () trên hết<br>\
-what's more () còn gì nữa<br>\
-besides () ngoài ra<br>\
-plus () cộng với<br>\
-as much as () nhiều như<br>\
-as well as () cũng như<br>\
-as long as () miễn là<br>\
-as a result () kết quả là<br>\
-consequently () do đó<br>\
-thereby () do đó<br>\
-thus () do đó<br>\
-hence () như vậy<br>\
-such as () chẳng hạn như<br>\
-needless to say () không cần phải nói<br>\
-incredibly () vô cùng<br>\
-considerably () đáng kể<br>\
-particularly () đặc biệt<br>\
-significantly () đáng kể<br>\
+en: "definitely (adv) chắc chắn<br>\
+also (adv) cũng<br>\
+just (adv) chỉ<br>\
+only (adv) chỉ<br>\
+always (adv) luôn luôn<br>\
+absolutely (adv) hoàn toàn<br>\
+quite (adv) khá<br>\
+sometimes (adv) thỉnh thoảng<br>\
+own (adv) sở hữu<br>\
+even if (adv) thậm chí nếu<br>\
+even (adv) thậm chí<br>\
+though (conj) mặc dù<br>\
+although (conj) mặc dù<br>\
+despite (conj) mặc dù<br>\
+certainly (adv) chắc chắn<br>\
+of course (adv) tất nhiên<br>\
+so on (adv) vân vân<br>\
+whenever (conj) bất cứ khi nào<br>\
+probably (adv) có lẽ<br>\
+currently (conj) hiện tại<br>\
+unfortunately (adv) thật không may<br>\
+hardly (adv) hầu như không<br>\
+rarely (adv) hiếm khi<br>\
+much (adv) nhiều<br>\
+more (adv) nhiều hơn<br>\
+really (adv) thực sự<br>\
+recently (adv) gần đây<br>\
+ever (adv) bao giờ<br>\
+never (adv) không bao giờ<br>\
+still (adv) vẫn<br>\
+usually (adv) thường<br>\
+absolutely (adv) hoàn toàn<br>\
+actually (adv) thực sự<br>\
+completely (adv) hoàn toàn<br>\
+really (adv) thực sự<br>\
+totally (adv) hoàn toàn<br>\
+thoroughly (adv) riệt để<br>\
+entirely (adv) toàn bộ<br>\
+simply (adv) đơn giản<br>\
+undoubtedly (adv) không nghi ngờ gì nữa<br>\
+literally (adv) theo đúng nghĩa đen<br>\
+gradually (adv) dần dần<br>\
+unusual (adv) khá<br>\
+pretty (adv) khá<br>\
+quite (adv) khá<br>\
+rather than (conj) hơn là<br>\
+fairly (adv) khá<br>\
+basically (adv) về cơ bản<br>\
+honestly (adv) trung thực<br>\
+in fact (conj) trên thực tế<br>\
+on top of that (conj) trên hết<br>\
+what's more (conj) còn gì nữa<br>\
+besides (adv) ngoài ra<br>\
+plus (adv) cộng với<br>\
+as much as (conj) nhiều như<br>\
+as well as (conj) cũng như<br>\
+as long as (conj) miễn là<br>\
+as a result (conj) kết quả là<br>\
+consequently (adv) do đó<br>\
+thereby (conj) do đó<br>\
+thus (conj) do đó<br>\
+hence (conj) như vậy<br>\
+such as (adv) chẳng hạn như<br>\
+needless to say (conj) không cần phải nói<br>\
+incredibly (adv) vô cùng<br>\
+considerably (adv) đáng kể<br>\
+particularly (adv) đặc biệt<br>\
+significantly (adv) đáng kể<br>\
 a bit of () một chút<br>\
 a sense of () cảm giác<br>\
 a bit () một chút<br>\

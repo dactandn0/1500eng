@@ -6,25 +6,33 @@ app.controller("preCourseCtrl", function($scope, $rootScope, $timeout) {
 
 $scope.stories = ENGLAB_PRE_SLIDES;
 $scope.acc = -1;
-$scope.titles = showStoryTitles(ENGLAB_PRE_SLIDES);  // def
 
-$scope.acc_isShow = function (id) {
+Helper_MakeVoca_Menu_Titles($rootScope, $scope)
+
+$scope.acc_isShow = function (id) 
+{
 	return $scope.acc === id;
-};
+}
 
-$scope.acc_click = function (id) {
+$scope.acc_click = function (id) 
+{
 	if($scope.acc===id) $scope.acc=-1;
 	else {
 		$scope.acc = id;
-		Helper_FetchStory(id, $scope, $rootScope, 'englabPre_unit', false) 
+		Helper_FetchStory(id, $scope, $rootScope, 'englabPre_unit') 
 	}
-};
+}
 
-$scope.loadData = function () {
+$scope.loadData = function () 
+{
 	$scope.acc_click( Helper_loadInt('englabPre_unit', -1));
-};
+}
 
-$scope.$on('$viewContentLoaded', function(){
+$scope.$on('$viewContentLoaded', function()
+{
 	$scope.loadData();
-});
+})
+
+
+
 });

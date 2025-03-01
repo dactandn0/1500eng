@@ -11,24 +11,29 @@ KBook = 1;
 $scope.stories = tfl_b1_stories; 					//def
 $scope.storyIdx = 0;
 
+var keyU = 'tfl_u_'
+
 bookChange = function (num) {
 	switch (num) {
 		case 0: $scope.stories = SPELL_DATA; break;
 		case 1: $scope.stories = tfl_b1_stories; break;
 		case 2: $scope.stories = tfl_b2_stories; break;
 	}
+	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
+
+	keyU = removeStrDigit(keyU) + num
+	var idx = Helper_loadInt(keyU, 0);
+
 	Helper_saveDB("tfl_b", num);
 	KBook = num;
-	$scope.fetchStory($scope.storyIdx, true);
-
-	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
+	$scope.fetchStory(idx);
 
 }
 
 $scope.styleTrack = function(trackId) {
 	trackId = trackId.split('.')[0]
 	var num = Number(trackId)
-	if (num%2===0) return {color : 'green'}
+	if (num % 2 === 0) return {color : 'green'}
 		return {color : 'orange'}
 }
 
@@ -40,20 +45,17 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 	Helper_AudioLoop($scope, $rootScope);
 });
 
-$scope.fetchStory = function (idx, reset=true) 
+$scope.fetchStory = function (idx) 
 {
-	Helper_FetchStory (idx, $scope, $rootScope, "tfl_unit", reset) 
+	Helper_FetchStory (idx, $scope, $rootScope, keyU) 
 }
 
 $scope.loadData = function () {
-	$scope.storyIdx = Helper_loadInt('tfl_unit', 0);
-	
 	var bookData = Helper_loadInt('tfl_b', 1);
+	KBook = bookData;
+
 	bookChange(bookData);
 	document.tfl_bForm.book.value = bookData;
-	KBook=bookData;
-
-	$scope.fetchStory($scope.storyIdx, false);
 };
 
 $scope.$on('$viewContentLoaded', function(){

@@ -5,40 +5,31 @@ var app = angular.module("writingvol5App", []);
 app.controller("writingvol5Ctrl", function($scope, $rootScope, $timeout) {
 
 $scope.img_root = './ebooks/writingvol5/images'; 						
-$scope.ielt_form = 0 ; 						//Reading
-$scope.stories = WRITINGVOL5_DATA;			// def
-
-$scope.story = '';
+$scope.stories = WRITINGVOL5_DATA;	
 $scope.acc = -1;
-$scope.titles = showStoryTitles($scope.stories);  // def
+
+Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 
 $scope.acc_isShow = function (id) {
 	return $scope.acc === id;
 }
 
 $scope.acc_click = function (id) {
-	if($scope.acc===id) $scope.acc=-1;
+	if($scope.acc===id) $scope.acc = -1;
 	else {
 		$scope.acc = id;
-		Helper_FetchStory(id, $scope, $rootScope, 'englabbegin_idx', false) 
+		Helper_FetchStory(id, $scope, $rootScope, 'writing_vol5', false) // alertViEn = false 
 	}
-};
-
-// for writing
-$scope.examTypeCss = function (idx) {
-	if ($scope.ielt_form !== 1) return;
-	var story = WRITINGVOL5_DATA[idx]
-	var type = story.examType;
-	if (type===0) return {color: 'red'}
 }
 
 $scope.loadData = function () {
 
-};
+}
 
-$scope.$on('$viewContentLoaded', function(){
-	$scope.loadData();
-});
+$scope.$on('$viewContentLoaded', function()
+{
+
+})
 
 
 

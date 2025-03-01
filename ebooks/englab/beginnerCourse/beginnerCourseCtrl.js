@@ -10,17 +10,21 @@ app.controller("beginnerCourseCtrl", function($scope, $rootScope, $timeout) {
 
 var imgRootPath = './ebooks/englab/beginnerCourse/images/' ; 						
 $scope.img_root = imgRootPath + 'lessons/'						
-$scope.ielt_form = 0 ; 								//Reading
-
+$scope.ielt_form = 0 ; 								
 $scope.story = '';
 $scope.acc = -1;
 
-$scope.stories = ENGLAB_BEGIN_DATA_R;				// def
+$scope.stories = ENGLAB_BEGIN_DATA_R;			
+
+var keyU = "beg_u_"	
 
 ielt_formChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
-	$rootScope.vocaEbook = null;
 	$scope.ielt_form = num;
+
+	keyU = removeStrDigit(keyU) + num
+	Helper_saveDB("beg_form", num);
+
 	if (num===0) 
 	{
 		$scope.stories = ENGLAB_BEGIN_DATA_R;
@@ -34,21 +38,16 @@ ielt_formChange = function (num, isLoadData = false) {
 	{
 		$scope.img_root = imgRootPath + 'lessons/'	
 		$scope.stories = ENGLAB_BEGIN_DATA_L
-		var idx = Helper_loadInt('lessonFor_unit', 0);
-		$scope.fetchStory(idx, false);
+		$scope.fetchStory(Helper_loadInt(keyU, 0));
 	}
 	if (num===4) 
 	{
 		$scope.img_root = imgRootPath + 'sos/'	
 		$scope.stories = ENGLAB_BEGIN_DATA_Sheep_or_ship
-		var idx = Helper_loadInt('sheep_or_ship_unit', 0);
-		$scope.fetchStory(idx, false);
+		$scope.fetchStory(Helper_loadInt(keyU, 0));
 	}
-
-	$scope.acc = -1;
-
-	Helper_saveDB("ENGLAB_BEGIN_type", num);
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
+	$scope.acc = -1;
 
 }
 
@@ -61,7 +60,7 @@ $scope.acc_click = function (id) {
 	else 
 	{
 		$scope.acc = id;
-		Helper_FetchStory(id, $scope, $rootScope, 'englabbegin_idx', false) 
+		Helper_FetchStory(id, $scope, $rootScope, keyU) 
 	}
 };
 
@@ -84,16 +83,13 @@ $scope.$on('parent_whenAudioEnded', function(event, message) {
 	Helper_AudioLoop($scope, $rootScope);
 });
 
-$scope.fetchStory = function (idx, reset=true) 
+$scope.fetchStory = function (idx) 
 {
-	var key = 'speakSameVol5_unit'
-	if ($scope.ielt_form === 3) key = 'lessonFor_unit'
-	if ($scope.ielt_form === 5) key = 'sheep_or_ship_unit'
-	Helper_FetchStory (idx, $scope, $rootScope, key, reset) 
+	Helper_FetchStory (idx, $scope, $rootScope, keyU) 
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt('ENGLAB_BEGIN_type', 0);
+	var cd = Helper_loadInt('beg_form', 0);
 	ielt_formChange(cd, true);
 	$scope.ielt_form = cd;
 	document.beg_ielt_bForm.ielt_form.value = cd;

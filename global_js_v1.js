@@ -310,14 +310,11 @@ Helper_AudioLoop = function (scope, rootScope) {
     scope.$broadcast('child_playFullSound')  
 }
 
-Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, reset) 
+Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, isAlert = true) 
 {
 	rootScope.audio_repeatCur = 0;
 
-	if (reset==true) 
-	{
-		scope.$broadcast("child_stopSound");
-	}
+	scope.$broadcast("child_stopSound");
 
 	if (idx > scope.stories.length - 1) { idx = 0 }; 
 	scope.storyIdx = idx;
@@ -331,7 +328,7 @@ Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, reset)
 
 	var story = scope.story;
 	rootScope.storyHasVi = story.vi && story.vi.trim().length > 0;
-	scope.story = processStory(story);
+	scope.story = processStory(story, isAlert);
 }
 
 function IsIgnoreVocaBold(boldWord, hightlightWord)
@@ -361,4 +358,10 @@ function IsIgnoreVocaBold(boldWord, hightlightWord)
 	}
 	
 	return rrr;
+}
+
+
+function removeStrDigit(input)
+{
+	return input.replace(/\d+/g, '')
 }

@@ -264,23 +264,21 @@ M: Tuyệt! Chúng ta hãy trả tiền cho tất cả những vật dụng này
 	,voca:"prestigious,locate,recognize,noticed,supplies,commonly,reputation,enormous,charcoal,fountain pen",
 },
 {
-	title:"Unit 16 Family Camping",
-	en:"Unit 16 Family Camping<br>\
-There are many popular leisure time activities, but one of the most enjoyable is family time. Most people enjoy being with their families. There are many things to do with your family, too. Families can go to the movies, travel, visit museums, and play sports together. The most common family activity is probably camping.<br>\
+	unit:16,
+	title:"Family Camping",
+	en:"There are many popular leisure time activities, but one of the most enjoyable is family time. Most people enjoy being with their families. There are many things to do with your family, too. Families can go to the movies, travel, visit museums, and play sports together. The most common family activity is probably camping.<br>\
 Many families like camping. It is a chance for the whole family to work together. They can stay in the wild. Children gather dry wood for the fire. Their parents set up the tents. Then the whole family gathers around the fire. They enjoy a special meal together. Then, they set off into the woods with a compass and a map. After hiking the trails, everyone gets a fishing pole. Each person casts the fishing line out into the river. Who gets the biggest fish? It's a great contest.<br>\
 Later, the children clean the fish by the river. They take the scales off the fish. Mom fries the fish over the campfire. Dad cleans up when everyone is finished. You don't want wild animals coming to eat your leftovers! Then everyone goes into their tents for a restful night.<br>\
 While there are many things that families can do together, camping is probably the most exciting."
-	,vi:"Bài 16 Cắm trại gia đình<br>\
-Có nhiều hoạt động giải trí phổ biến, nhưng một trong những hoạt động thú vị nhất là thời gian dành cho gia đình. Hầu hết mọi người đều thích ở bên gia đình. Cũng có nhiều việc để làm với gia đình bạn. Các gia đình có thể đi xem phim, du lịch, tham quan bảo tàng và chơi thể thao cùng nhau. Hoạt động gia đình phổ biến nhất có lẽ là cắm trại.<br>\
+	,vi:"Có nhiều hoạt động giải trí phổ biến, nhưng một trong những hoạt động thú vị nhất là thời gian dành cho gia đình. Hầu hết mọi người đều thích ở bên gia đình. Cũng có nhiều việc để làm với gia đình bạn. Các gia đình có thể đi xem phim, du lịch, tham quan bảo tàng và chơi thể thao cùng nhau. Hoạt động gia đình phổ biến nhất có lẽ là cắm trại.<br>\
 Nhiều gia đình thích cắm trại. Đây là cơ hội để cả gia đình cùng nhau làm việc. Họ có thể ở ngoài thiên nhiên. Trẻ em thu thập củi khô để nhóm lửa. Cha mẹ dựng lều. Sau đó, cả gia đình quây quần bên đống lửa. Họ cùng nhau thưởng thức bữa ăn đặc biệt. Sau đó, họ vào rừng với một chiếc la bàn và một bản đồ. Sau khi đi bộ đường dài trên những con đường mòn, mọi người đều nhận được một cần câu. Mỗi người ném dây câu xuống sông. Ai bắt được con cá lớn nhất? Đó là một cuộc thi tuyệt vời.<br>\
 Sau đó, trẻ em làm sạch cá bên bờ sông. Chúng gỡ vảy cá. Mẹ chiên cá trên lửa trại. Bố dọn dẹp khi mọi người đã hoàn thành. Bạn không muốn động vật hoang dã đến ăn đồ ăn thừa của bạn! Sau đó, mọi người sẽ vào lều của mình để nghỉ ngơi qua đêm.<br>\
 Mặc dù có nhiều hoạt động mà các gia đình có thể cùng nhau làm, nhưng cắm trại có lẽ là hoạt động thú vị nhất."
 	,voca:"wild,leisure,casts,chance,compass,leftovers,gather,scale,troupe,retire",
 },
-{
-	title:"Unit 17 The Amusement Park",
-	en:"Unit 17 The Amusement Park<br>\
-M: I love this amusement park, Fran! Thanks for suggesting it. I am having a fantastic time. There's that new ride! It's called, 'The Volcano' and it's supposed to be amazing.<br>\
+{unit:17,
+	title:"The Amusement Park",
+	en:"M: I love this amusement park, Fran! Thanks for suggesting it. I am having a fantastic time. There's that new ride! It's called, 'The Volcano' and it's supposed to be amazing.<br>\
 W: That looks awfully high. Do you really want to try it? We've experienced 'The Rocket', the giant Ferris Wheel, and those bumper boats. Don't you think that's enough? Besides, I am absolutely starving.<br>\
 M: If you come on 'The Volcano' with me, I'll buy you a pizza with whatever toppings you want. <br>\
 W: Do you really mean any topping, even mushrooms, which you don't like?<br>\
@@ -292,8 +290,7 @@ W: I'm sorry, but I don't think I can do this, even for pizza. How would you fee
 M: I don't want to force you to do something you really don't want to do. And I am hungry. Sure, let's get some lunch.<br>\
 W: I want to try this new restaurant called Skylight. The top of the restaurant spins while you eat!<br>\
 M: Oh, wow! Let's go!"
-	,vi:"Bài 17 Công viên giải trí<br>\
-M: Tôi thích công viên giải trí này, Fran! Cảm ơn vì đã gợi ý. Tôi đang có một khoảng thời gian tuyệt vời. Có một trò chơi mới! Nó được gọi là 'The Volcano' và được cho là tuyệt vời.<br>\
+	,vi:"M: Tôi thích công viên giải trí này, Fran! Cảm ơn vì đã gợi ý. Tôi đang có một khoảng thời gian tuyệt vời. Có một trò chơi mới! Nó được gọi là 'The Volcano' và được cho là tuyệt vời.<br>\
 W: Trông cao quá. Bạn có thực sự muốn thử không? Chúng ta đã trải nghiệm 'The Rocket', Vòng đu quay khổng lồ và những chiếc thuyền đụng nhau. Bạn không nghĩ thế là đủ sao? Hơn nữa, tôi đang đói ngấu đây.<br>\
 M: Nếu bạn đi 'The Volcano' với tôi, tôi sẽ mua cho bạn một chiếc pizza với bất kỳ loại topping nào bạn muốn. <br>\
 W: Bạn thực sự muốn nói đến bất kỳ loại topping nào, ngay cả nấm, mà bạn không thích sao?<br>\
@@ -307,10 +304,9 @@ W: Tôi muốn thử nhà hàng mới có tên là Skylight. Phần trên của 
 M: Ồ, tuyệt! Đi nào!"
 	,voca:"",
 },
-{
-	title:"Unit 18 Fresh Lemonade",
-	en:"Unit 18 Fresh Lemonade<br>\
-B: How can I earn some extra money this summer? <br>\
+{unit:18,
+	title:"Fresh Lemonade",
+	en:"B: How can I earn some extra money this summer? <br>\
 G: Why don't we start a lemonade stand, Will? <br>\
 B: That's a great idea, Mary, but do you think we will make any money?<br>\
 G: If we set up in an area with a lot of traffic on a hot day, we will get plenty of customers. We can charge $1,50 per cup.<br>\
@@ -324,8 +320,7 @@ B: You're right, let's just keep it simple. <br>\
 G: OK, let's get set up and think of a plan to get some customers and make some sales!<br>\
 B: Why don't I attract the customers and you serve the lemonade?<br>\
 G: Sounds good to me."
-	,vi:"Bài 18 Nước chanh tươi<br>\
-B: Làm sao để kiếm thêm tiền vào mùa hè này? <br>\
+	,vi:"B: Làm sao để kiếm thêm tiền vào mùa hè này? <br>\
 G: Tại sao chúng ta không mở một quầy nước chanh nhỉ, Will? <br>\
 B: Ý tưởng tuyệt vời đấy, Mary, nhưng bạn nghĩ chúng ta có kiếm được tiền không?<br>\
 G: Nếu chúng ta mở ở một khu vực có nhiều phương tiện giao thông vào một ngày nóng nực, chúng ta sẽ có rất nhiều khách hàng. Chúng ta có thể tính 1,50 đô la cho một cốc.<br>\
@@ -341,10 +336,9 @@ B: Tại sao tôi không thu hút khách hàng và bạn phục vụ nước cha
 G: Nghe có vẻ ổn đấy."
 	,voca:"",
 },
-{
-	title:"Unit 19 At the Movies",
-	en:"Unit 19 At the Movies<br>\
-M: Ticket prices have certainly gone up!<br>\
+{unit:19,
+	title:"At the Movies",
+	en:"M: Ticket prices have certainly gone up!<br>\
 W: Yes, but I really needed a break, so if the price is a bit higher, it doesn't matter. Besides, I really want to see this movie on the big screen.<br>\
 M: Would you like something to snack on while we watch the movie?<br>\
 W: Sure. What do they have?<br>\
@@ -362,8 +356,7 @@ M: I insist. Did you want cream and sugar in your coffee?<br>\
 W: Well, thank you very much. No cream in the coffee, please.<br>\
 M: So, you probably don't want sugar, either?<br>\
 W: No, I think there is enough sugar in the brownies. I'll find us some seats near the aisle."
-	,vi:"Unit 19 At the Movies<br>\
-M: Giá vé chắc chắn đã tăng!<br>\
+	,vi:"M: Giá vé chắc chắn đã tăng!<br>\
 W: Vâng, nhưng tôi thực sự cần nghỉ ngơi, vì vậy nếu giá cao hơn một chút, thì cũng không sao. Hơn nữa, tôi thực sự muốn xem bộ phim này trên màn hình lớn.<br>\
 M: Bạn có muốn ăn nhẹ gì đó trong khi chúng ta xem phim không?<br>\
 W: Chắc chắn rồi. Họ có gì?<br>\
@@ -383,26 +376,23 @@ M: Vậy, có lẽ bạn cũng không muốn thêm đường?<br>\
 W: Không, tôi nghĩ là có đủ đường trong bánh brownie. Tôi sẽ tìm cho chúng ta một số chỗ ngồi gần lối đi."
 	,voca:"",
 },
-{
-	title:"Unit 20 Hobbies",
-	en:"Unit 20 Hobbies<br>\
-When someone does an activity that is not a part of his or her job and is done for fun, it is called a hobby. Most people enjoy hobbies during their free time. Some people spend a lot of time on their hobbies. There are nearly as many kinds of hobbies, as there are people. A hobby can be about making or collecting things, or enjoying an experience. <br>\
+{unit:20,
+	title:"Hobbies",
+	en:"When someone does an activity that is not a part of his or her job and is done for fun, it is called a hobby. Most people enjoy hobbies during their free time. Some people spend a lot of time on their hobbies. There are nearly as many kinds of hobbies, as there are people. A hobby can be about making or collecting things, or enjoying an experience. <br>\
 Creative hobbies are popular. Some creative hobbies are writing, drawing, and making pottery. A lot of people like making jewelry or clothes. People who do these kinds of hobbies sometimes become writers or artists when they retire.<br>\
 Collecting is also popular. Most collectors used to buy coins, stamps, or baseball cards. Today, toys, games, and model cars are trendy. Collectors buy and sell things on the Internet. They also shop online in stores all around the world.<br>\
 Enjoying an experience is a hobby, too. Some people listen to music. Others watch movies or read books. Many people travel or play sports. Helping people is a hobby. There are places you can help build houses for poor families. You can help feed the homeless at soup kitchens. You can also tutor children or help the elderly.<br>\
 A hobby is something that is done for fun. With so many choices, there is no reason not to enjoy a hobby."
-	,vi:"Bài 20 Sở thích<br>\
-Khi ai đó làm một hoạt động không phải là một phần công việc của họ và được thực hiện để giải trí, thì đó được gọi là sở thích. Hầu hết mọi người đều thích sở thích trong thời gian rảnh rỗi. Một số người dành nhiều thời gian cho sở thích của họ. Có rất nhiều loại sở thích, cũng như có nhiều người. Sở thích có thể là về việc tạo ra hoặc sưu tầm đồ vật, hoặc tận hưởng một trải nghiệm. <br>\
+	,vi:"Khi ai đó làm một hoạt động không phải là một phần công việc của họ và được thực hiện để giải trí, thì đó được gọi là sở thích. Hầu hết mọi người đều thích sở thích trong thời gian rảnh rỗi. Một số người dành nhiều thời gian cho sở thích của họ. Có rất nhiều loại sở thích, cũng như có nhiều người. Sở thích có thể là về việc tạo ra hoặc sưu tầm đồ vật, hoặc tận hưởng một trải nghiệm. <br>\
 Sở thích sáng tạo rất phổ biến. Một số sở thích sáng tạo là viết lách, vẽ và làm đồ gốm. Nhiều người thích làm đồ trang sức hoặc quần áo. Những người làm những sở thích này đôi khi trở thành nhà văn hoặc nghệ sĩ khi họ nghỉ hưu.<br>\
 Sưu tầm cũng rất phổ biến. Hầu hết những người sưu tầm trước đây thường mua tiền xu, tem hoặc thẻ bóng chày. Ngày nay, đồ chơi, trò chơi và mô hình xe hơi đang là xu hướng. Những người sưu tầm mua và bán đồ trên Internet. Họ cũng mua sắm trực tuyến tại các cửa hàng trên khắp thế giới.<br>\
 Tận hưởng một trải nghiệm cũng là một sở thích. Một số người nghe nhạc. Những người khác xem phim hoặc đọc sách. Nhiều người đi du lịch hoặc chơi thể thao. Giúp đỡ mọi người là một sở thích. Có những nơi bạn có thể giúp xây nhà cho các gia đình nghèo. Bạn có thể giúp nuôi người vô gia cư tại các bếp ăn từ thiện. Bạn cũng có thể dạy kèm trẻ em hoặc giúp đỡ người già.<br>\
 Sở thích là thứ được thực hiện vì mục đích vui vẻ. Với rất nhiều lựa chọn, không có lý do gì để không tận hưởng sở thích."
 	,voca:"",
 },
-{
-	title:"Unit 21 Defense!",
-	en:"Unit 21 Defense!<br>\
-M: Stay low and bend your knees! Come over here.<br>\
+{unit:21,
+	title:"Defense",
+	en:"M: Stay low and bend your knees! Come over here.<br>\
 B: Yes, Coach?<br>\
 M: Jackson, when you're playing defense, keep your knees bent and your body low. It helps you keep your balance. And it allows you to move more quickly in every direction.<br>\
 B: Like this?<br>\
@@ -415,8 +405,7 @@ B: Coach, how do I move forward and backward on defense? I feel like my stance i
 M: When you move forward, put your right foot in front of you, with your toes pointing in the direction you want to go. When you move backward, just reverse it: follow the direction of your left foot. How are you feeling?<br>\
 B: My legs are tired and my back aches. <br>\
 M: Playing defense is hard work. Take a break, then we'll try it again."
-	,vi:"Bài 21 Phòng thủ!<br>\
-M: Giữ tư thế thấp và cong đầu gối! Đến đây nào.<br>\
+	,vi:"M: Giữ tư thế thấp và cong đầu gối! Đến đây nào.<br>\
 B: Vâng, Huấn luyện viên?<br>\
 M: Jackson, khi chơi phòng thủ, hãy giữ đầu gối cong và cơ thể thấp. Điều này giúp bạn giữ thăng bằng. Và cho phép bạn di chuyển nhanh hơn theo mọi hướng.<br>\
 B: Như thế này à?<br>\
@@ -431,10 +420,9 @@ B: Chân tôi mỏi và lưng tôi đau. <br>\
 M: Chơi phòng thủ rất vất vả. Nghỉ ngơi một lát, sau đó chúng ta sẽ thử lại."
 	,voca:"",
 },
-{
-	title:"Unit 22 The Importance of Writing",
-	en:"Unit 22 The Importance of Writing<br>\
-B: This is terrible! I hate this assignment. <br>\
+{unit:22,
+	title:"The Importance of Writing",
+	en:"B: This is terrible! I hate this assignment. <br>\
 W: What's wrong, Timmy?<br>\
 B: I am frustrated because I need to write a book report, and I can't get started.<br>\
 W: May I see your paper? There's nothing here!<br>\
@@ -447,8 +435,7 @@ W: That's the right attitude. Let's try to organize some of your thoughts by bra
 B: The book? I've only watched the movie! Does that count?<br>\
 W: Oh, goodness! What kind of child am I raising?<br>\
 B: One that probably won't be a famous writer!"
-	,vi:"Bài 22 Tầm quan trọng của việc viết<br>\
-B: Bài này tệ quá! Mình ghét bài tập này. <br>\
+	,vi:"B: Bài này tệ quá! Mình ghét bài tập này. <br>\
 W: Có chuyện gì vậy, Timmy?<br>\
 B: Mình bực mình vì mình cần viết một bài báo cáo sách, và mình không thể bắt đầu.<br>\
 W: Mình có thể xem bài của bạn không? Không có gì ở đây cả!<br>\
@@ -463,10 +450,9 @@ W: Ôi trời! Con đang nuôi dạy đứa trẻ như thế nào?<br>\
 B: Một đứa trẻ có lẽ sẽ không trở thành nhà văn nổi tiếng!"
 	,voca:"",
 },
-{
-	title:"Unit 23 The Course Schedule",
-	en:"Unit 23 The Course Schedule<br>\
-W: It's so difficult to choose what courses to take this semester. Henry, have you chosen all of your courses yet?<br>\
+{unit:23,
+	title:"The Course Schedule",
+	en:"W: It's so difficult to choose what courses to take this semester. Henry, have you chosen all of your courses yet?<br>\
 M: No, Sue. I'm having a hard time making up my mind, and I still need to select two more. Do you have any ideas? Do you know anything about the professors?<br>\
 W: I heard that the psychology professor is tough but fair. If you work hard, you can get a good grade.<br>\
 M: Psychology sounds interesting.<br>\
@@ -479,8 +465,7 @@ M: I like going to the movies, but I don't want to study them.<br>\
 W: I know someone who took that course last year, and she said it's very easy. Almost everyone gets an 'A' or a 'B'. And there is no homework.<br>\
 M:That is tempting, but I want to learn something useful.<br>\
 W: Fine, but don't complain to me if you get a 'C'."
-	,vi:"Bài 23 Lịch học<br>\
-W: Thật khó để chọn khóa học nào cho học kỳ này. Henry, bạn đã chọn tất cả các khóa học của mình chưa?<br>\
+	,vi:"W: Thật khó để chọn khóa học nào cho học kỳ này. Henry, bạn đã chọn tất cả các khóa học của mình chưa?<br>\
 M: Chưa, Sue. Mình đang gặp khó khăn trong việc quyết định, và mình vẫn cần chọn thêm hai khóa nữa. Bạn có ý tưởng nào không? Bạn có biết gì về các giáo sư không?<br>\
 W: Mình nghe nói giáo sư tâm lý học rất nghiêm khắc nhưng công bằng. Nếu bạn học chăm chỉ, bạn có thể đạt điểm cao.<br>\
 M: Tâm lý học nghe có vẻ thú vị.<br>\
@@ -495,22 +480,21 @@ M: Nghe hấp dẫn đấy, nhưng tôi muốn học một cái gì đó hữu �
 W: Được thôi, nhưng đừng phàn nàn với tôi nếu bạn được điểm 'C'."
 	,voca:"",
 },
-{
-	title:" Unit 24 Food, Family, and Fun",
-	en:"Unit 24 Food, Family, and Fun<br>Thanksgiving is a special family holiday in America. Families come together to give thanks for all they have. Although every family celebrates in slightly different ways, a typical Thanksgiving is full of food, family, and fun. My family celebrates Thanksgiving, too.<br>\
+{unit:24,
+	title:"Food, Family, and Fun",
+	en:"Thanksgiving is a special family holiday in America. Families come together to give thanks for all they have. Although every family celebrates in slightly different ways, a typical Thanksgiving is full of food, family, and fun. My family celebrates Thanksgiving, too.<br>\
 Everyone in my family goes to my parents' place for Thanksgiving. We have a large meal. Everyone helps on Thanksgiving. The children set the table. My mother cooks the turkey using her own secret ingredients. My father makes the side dishes. He makes potatoes, beans, carrots, stuffing, oysters, and beets. My mom makes cranberry sauce. My sister-in-law brings a pumpkin pie. I come early to help my parents cook.<br>\
 When it is time to eat, we put all the food on the table. Everyone sits down. We each say what we are thankful for before we eat. Some of us are thankful for our health, and others are thankful for their jobs. Everyone is thankful for something different.<br>\
 There is a lot of activity after the meal. My aunt and uncle clean off the table. My sister-in-law helps me wash the dishes. The teenagers wash and put away the silverware. The children help to tidy the dining room. My brothers take out the garbage. Then they go play football in the backyard. The rest of us sit down and relax. We are thankful for the food and our blessings. Most of all, we are thankful to have each other."
-	,vi:"Bài 24 Thực phẩm, Gia đình và Vui chơi<br>Lễ Tạ ơn là một ngày lễ gia đình đặc biệt ở Mỹ. Các gia đình tụ họp lại để cảm ơn tất cả những gì họ có. Mặc dù mỗi gia đình ăn mừng theo những cách hơi khác nhau, nhưng một Lễ Tạ ơn điển hình luôn tràn ngập đồ ăn, gia đình và niềm vui. Gia đình tôi cũng ăn mừng Lễ Tạ ơn.<br>\
+	,vi:"Lễ Tạ ơn là một ngày lễ gia đình đặc biệt ở Mỹ. Các gia đình tụ họp lại để cảm ơn tất cả những gì họ có. Mặc dù mỗi gia đình ăn mừng theo những cách hơi khác nhau, nhưng một Lễ Tạ ơn điển hình luôn tràn ngập đồ ăn, gia đình và niềm vui. Gia đình tôi cũng ăn mừng Lễ Tạ ơn.<br>\
 Mọi người trong gia đình tôi đều đến nhà bố mẹ tôi để ăn Lễ Tạ ơn. Chúng tôi ăn một bữa thịnh soạn. Mọi người đều giúp đỡ nhau vào Lễ Tạ ơn. Trẻ em dọn bàn. Mẹ tôi nấu gà tây bằng những nguyên liệu bí mật của riêng bà. Bố tôi làm các món ăn kèm. Ông làm khoai tây, đậu, cà rốt, nhân nhồi, hàu và củ cải đường. Mẹ tôi làm nước sốt nam việt quất. Chị dâu tôi mang một chiếc bánh bí ngô. Tôi đến sớm để giúp bố mẹ nấu ăn.<br>\
 Khi đến giờ ăn, chúng tôi bày hết đồ ăn lên bàn. Mọi người ngồi xuống. Mỗi người chúng tôi nói điều mình biết ơn trước khi ăn. Một số người trong chúng tôi biết ơn sức khỏe của mình, những người khác biết ơn công việc của mình. Mọi người đều biết ơn vì một điều gì đó khác nhau.<br>\
 Có rất nhiều hoạt động sau bữa ăn. Cô và chú tôi dọn dẹp bàn ăn. Chị dâu tôi giúp tôi rửa bát. Các thiếu niên rửa và cất đồ bạc. Trẻ em giúp dọn dẹp phòng ăn. Anh em trai tôi đổ rác. Sau đó, họ đi chơi bóng đá ở sân sau. Những người còn lại trong chúng tôi ngồi xuống và thư giãn. Chúng tôi biết ơn vì thức ăn và phước lành của mình. Trên hết, chúng tôi biết ơn vì có nhau."
 	,voca:"",
 },
-{
-	title:"Unit 25 The Project",
-	en:"Unit 25 The Project<br>\
-B: Hey Dad! Do you think you can help me out? I've just been assigned this enormous project at school, and I really don't know where to begin.<br>\
+{unit:25,
+	title:"The Project",
+	en:"B: Hey Dad! Do you think you can help me out? I've just been assigned this enormous project at school, and I really don't know where to begin.<br>\
 M: Sure Jason, I'll give it my best shot. <br>\
 B: Oh, Dad, I know you will be a great help and inspiration to me.<br>\
 M: OK, OK. That's enough flattery from you for one day. What's this project about?<br>\
@@ -519,8 +503,7 @@ M: Well, I am an expert when it comes to my profession. Accounting is a noble pr
 B: Dad, I know how much you love your career. It isn't that I don't admire you. But what I was hoping actually, was that you could speak to Mr. Chang, your diving friend, and see if he would agree to an interview. Diving for a living sounds cool!<br>\
 M: I see. That's a great idea! You know how I really dislike talking about myself for too long. Let me give David Chang a call right now and find out.<br>\
 B: Thanks, Dad! You're the best! I know this will be an awesome project!"
-	,vi:"Bài 25 Dự án<br>\
-B: Này bố! Bố có thể giúp con không? Con vừa được giao một dự án lớn ở trường, và con thực sự không biết phải bắt đầu từ đâu.<br>\
+	,vi:"B: Này bố! Bố có thể giúp con không? Con vừa được giao một dự án lớn ở trường, và con thực sự không biết phải bắt đầu từ đâu.<br>\
 M: Được thôi Jason, con sẽ cố gắng hết sức. <br>\
 B: Ồ, bố, con biết bố sẽ giúp đỡ và truyền cảm hứng cho con rất nhiều.<br>\
 M: Được, được. Bợ đỡ thế là đủ cho một ngày rồi. Dự án này là về cái gì?<br>\
@@ -531,10 +514,9 @@ M: Tôi hiểu rồi. Đó là một ý tưởng tuyệt vời! Bạn biết đ�
 B: Cảm ơn bố! Bố là người giỏi nhất! Tôi biết đây sẽ là một dự án tuyệt vời!"
 	,voca:"",
 },
-{
-	title:"Unit 26 The Assignment",
-	en:"Unit 26 The Assignment<br>\
-B: Hello Wendy! Who did you do your homework about?<br>\
+{unit:26,
+	title:"The Assignment",
+	en:"B: Hello Wendy! Who did you do your homework about?<br>\
 G: I wrote about my dad because he is a firefighter.<br>\
 B: Really? Does he actually go into burning buildings?<br>\
 G: Yes, and he sometimes has to crawl into tight places to rescue people.<br>\
@@ -546,8 +528,7 @@ B: Your dad is incredibly brave, a real hero. What does he do at the fire statio
 G: He resides there for a few days when he works. All of the firefighters cook, eat, and clean together. When there's a fire, they slide down a pole into the fire station's garage to get their fire-fighting equipment. They quickly put on their gear and then jump onto the fire trucks. My dad loves to drive the fire trucks.<br>\
 B:Wow! Maybe I should be a firefighter someday.<br>\
 G: I'm definitely going to be a firefighter, Ian. I want to be just like my dad."
-	,vi:"Bài tập số 26<br>\
-B: Xin chào Wendy! Bạn đã làm bài tập về nhà về ai?<br>\
+	,vi:"B: Xin chào Wendy! Bạn đã làm bài tập về nhà về ai?<br>\
 G: Tôi viết về bố tôi vì ông ấy là lính cứu hỏa.<br>\
 B: Thật sao? Ông ấy có thực sự vào những tòa nhà đang cháy không?<br>\
 G: Có, và đôi khi ông ấy phải bò vào những nơi chật hẹp để cứu người.<br>\
@@ -561,26 +542,23 @@ B: Wow! Có lẽ một ngày nào đó tôi nên trở thành lính cứu hỏa.
 G: Tôi chắc chắn sẽ trở thành lính cứu hỏa, Ian. Tôi muốn trở thành người giống như bố tôi."
 	,voca:"",
 },
-{
-	title:"Unit 27 CoCo Lee",
-	en:"Unit 27 CoCo Lee<br>\
-G: Ferren Lee's mother hoped her daughter would follow in her footsteps and become a doctor. However, Ferren always knew she wanted to sing.<br>\
+{unit:27,
+	title:"CoCo Lee",
+	en:"G: Ferren Lee's mother hoped her daughter would follow in her footsteps and become a doctor. However, Ferren always knew she wanted to sing.<br>\
 In her spare time, Ferren sang along with pop songs. Ferren also entered singing contests. She won many competitions. Her big break came after high school. She was on vacation in Hong Kong and took second place in an important singing competition. She got a recording contract with Fancy Pie Records, and, a few years later, Sony.<br>\
 Today, CoCo Lee, as she is now known, is one of the most famous pop singers in the world. She was born in Hong Kong on January 17, 1975, but she was raised in San Francisco. She has made records in English and Chinese. Her 1998 album, DiDaDi, won the MTV Asia music award for best album and best music video. CoCo's next album was in English. It was called Just No Other Way. It introduced her to American audiences.<br>\
 Apart from her beautiful voice and stunning looks, CoCo Lee is intelligent. She had a 3,8 grade-point average in college. She also earned a double major in bio-chemistry and bio-science. One of her dreams, she says, is to help find a cure for cancer.<br>\
 Who knows? CoCo's mother may yet get her wish."
-	,vi:"Unit 27 CoCo Lee<br>\
-G: Mẹ của Ferren Lee hy vọng con gái bà sẽ theo bước chân của bà và trở thành bác sĩ. Tuy nhiên, Ferren luôn biết rằng cô bé muốn ca hát.<br>\
+	,vi:"G: Mẹ của Ferren Lee hy vọng con gái bà sẽ theo bước chân của bà và trở thành bác sĩ. Tuy nhiên, Ferren luôn biết rằng cô bé muốn ca hát.<br>\
 Vào thời gian rảnh rỗi, Ferren hát theo các bài hát nhạc pop. Ferren cũng tham gia các cuộc thi ca hát. Cô đã giành chiến thắng trong nhiều cuộc thi. Bước đột phá lớn của cô đến sau khi học xong trung học. Cô đang đi nghỉ ở Hồng Kông và giành giải nhì trong một cuộc thi ca hát quan trọng. Cô đã ký hợp đồng thu âm với Fancy Pie Records và vài năm sau là Sony.<br>\
 Ngày nay, CoCo Lee, tên cô hiện được biết đến, là một trong những ca sĩ nhạc pop nổi tiếng nhất thế giới. Cô sinh ra tại Hồng Kông vào ngày 17 tháng 1 năm 1975, nhưng cô lớn lên ở San Francisco. Cô đã thực hiện các bản thu âm bằng tiếng Anh và tiếng Trung. Album năm 1998 của cô, DiDaDi, đã giành giải thưởng âm nhạc MTV Châu Á cho album hay nhất và video ca nhạc hay nhất. Album tiếp theo của CoCo là bằng tiếng Anh. Nó có tên là Just No Other Way. Nó đã giới thiệu cô với khán giả Mỹ.<br>\
 Ngoài giọng hát tuyệt vời và vẻ ngoài ấn tượng, CoCo Lee còn rất thông minh. Cô có điểm trung bình 3,8 ở trường đại học. Cô cũng lấy bằng kép về hóa sinh và khoa học sinh học. Một trong những ước mơ của cô, cô nói, là giúp tìm ra phương pháp chữa bệnh ung thư.<br>\
 Ai mà biết được? Mẹ của CoCo có thể đạt được ước nguyện của cô."
 	,voca:"",
 },
-{
-	title:"Unit 28 A Blind Date",
-	en:"Unit 28 A Blind Date<br>\
-W: What's wrong, Mike? You appear to be depressed.<br>\
+{unit:28,
+	title:"A Blind Date",
+	en:"W: What's wrong, Mike? You appear to be depressed.<br>\
 M: I haven't slept in days, and I feel awful. My fiancée and I broke up just before I went to Madrid for the concert.<br>\
 W: Why didn't you say something? No wonder your playing sounded so bad. Oh dear, I'm really sorry.<br>\
 M: It was an appalling performance, I agree. I was miserable and unhappy, but I had to perform, anyway.<br>\
@@ -594,8 +572,7 @@ W: Well, she is single. I could set up the two of you. <br>\
 M: A blind date? I tried that when I was younger, and it was a disaster.<br>\
 W: Come on, Mike. I'd be helping two friends who will, of course, have a great time together. She has a charming personality, and she also plays the oboe. You can go to the concert in the park on Saturday afternoon. Maybe you can have coffee afterwards.<br>\
 M: She plays the oboe? OK. Let me know when and where to meet her."
-	,vi:"Bài 28 Một cuộc hẹn hò giấu mặt<br>\
-W: Có chuyện gì vậy, Mike? Có vẻ như anh đang bị trầm cảm.<br>\
+	,vi:"W: Có chuyện gì vậy, Mike? Có vẻ như anh đang bị trầm cảm.<br>\
 M: Tôi đã không ngủ trong nhiều ngày và tôi cảm thấy rất tệ. Tôi và hôn thê đã chia tay ngay trước khi tôi đến Madrid để tham dự buổi hòa nhạc.<br>\
 W: Tại sao anh không nói gì cả? Chẳng trách anh chơi tệ đến vậy. Ôi trời, tôi thực sự xin lỗi.<br>\
 M: Đó là một buổi biểu diễn tệ hại, tôi đồng ý. Tôi rất đau khổ và không vui, nhưng dù sao thì tôi cũng phải biểu diễn.<br>\
@@ -612,23 +589,21 @@ M: Cô ấy chơi ô-boa? Được thôi. Hãy cho tôi biết khi nào và ở 
 	,voca:"fiancee,appalling,charming,performance,concert,depressed,miserable,conductor,fabulous,afterwards",
 },
 {
-	title:"Unit 29 Crime Does Not Pay",
-	en:"Unit 29 Crime Does Not Pay<br>\
-Have you ever thought about committing a crime? Have you ever dreamed about holding up a bank and driving away in a fast car? Or, have you ever thought about taking a famous painting from a big museum?<br>\
+	unit:29,
+	title:"Crime Does Not Pay",
+	en:"Have you ever thought about committing a crime? Have you ever dreamed about holding up a bank and driving away in a fast car? Or, have you ever thought about taking a famous painting from a big museum?<br>\
 There are many stories in movies and on TV of criminals who make a lot of money. They go on to live a life of luxury. However, for every successful criminal, there are many, many more who fail. These crooks soon regret their crimes.<br>\
 Take the example of a man in Winnipeg who tried to break into cars in a police academy parking lot. The man was found by the police in the parking lot. They saw him trying to open the doors of all the cars. The man was hoping to find some loose change, or maybe take some good car stereos.<br>\
 However, he did not know that he was being watched by police officers. He chose the parking lot because it was in a very quiet area. He thought that no one would see him. He was soon arrested by the police. A foolish criminal like this man shows us that crime does not pay."
-	,vi:"Đơn vị 29 Tội ác không được đền đáp<br>\
-Bạn đã bao giờ nghĩ đến việc phạm tội chưa? Bạn đã bao giờ mơ về việc cướp ngân hàng và lái xe đi mất bằng một chiếc xe hơi nhanh chưa? Hay, bạn đã bao giờ nghĩ đến việc lấy một bức tranh nổi tiếng từ một bảo tàng lớn chưa?<br>\
+	,vi:"Bạn đã bao giờ nghĩ đến việc phạm tội chưa? Bạn đã bao giờ mơ về việc cướp ngân hàng và lái xe đi mất bằng một chiếc xe hơi nhanh chưa? Hay, bạn đã bao giờ nghĩ đến việc lấy một bức tranh nổi tiếng từ một bảo tàng lớn chưa?<br>\
 Có rất nhiều câu chuyện trong phim và trên TV về những tên tội phạm kiếm được rất nhiều tiền. Chúng tiếp tục sống một cuộc sống xa hoa. Tuy nhiên, cứ mỗi tên tội phạm thành công thì lại có rất nhiều tên khác thất bại. Những tên tội phạm này sớm hối hận về tội ác của mình.<br>\
 Lấy ví dụ về một người đàn ông ở Winnipeg đã cố đột nhập vào những chiếc ô tô trong bãi đậu xe của học viện cảnh sát. Cảnh sát đã tìm thấy người đàn ông đó trong bãi đậu xe. Họ thấy anh ta cố mở cửa tất cả các xe. Người đàn ông đó hy vọng tìm thấy một ít tiền lẻ, hoặc có thể lấy một số dàn âm thanh nổi tốt trên ô tô.<br>\
 Tuy nhiên, anh ta không biết rằng mình đang bị cảnh sát theo dõi. Anh ta chọn bãi đậu xe vì đó là một khu vực rất yên tĩnh. Anh ta nghĩ rằng sẽ không có ai nhìn thấy mình. Anh ta đã sớm bị cảnh sát bắt giữ. Một tên tội phạm ngu ngốc như người đàn ông này cho chúng ta thấy rằng tội ác không mang lại lợi ích gì."
 	,voca:"committing,fail,arrested,criminal,luxury,regret,crook,guilty,gourmet,effort",
 },
-{
-	title:"Unit 30 A Job Interview",
-	en:"Unit 30 A Job Interview<br>\
-M: Hello, Ms. Jones? Please, come in and sit down.<br>\
+{unit:30,
+	title:"A Job Interview",
+	en:"M: Hello, Ms. Jones? Please, come in and sit down.<br>\
 W: Thank you.<br>\
 M: So, you're applying for the position of computer technician. <br>\
 W: Yes, that's right.<br>\
@@ -642,8 +617,7 @@ M: That's a good way to manage your time. Just one more question. Why do you wan
 W: Your company is well-known, and is respected in the computer industry. I would really like a chance to be part of your company.<br>\
 M: OK. Thank you for coming in. I'll be in touch.<br>\
 W: Thank you. Goodbye."
-	,vi:"Bài 30 Phỏng vấn xin việc<br>\
-M: Xin chào, cô Jones? Mời cô vào và ngồi xuống.<br>\
+	,vi:"M: Xin chào, cô Jones? Mời cô vào và ngồi xuống.<br>\
 W: Cảm ơn cô.<br>\
 M: Vậy là cô đang ứng tuyển vào vị trí kỹ thuật viên máy tính. <br>\
 W: Vâng, đúng rồi.<br>\
@@ -659,10 +633,9 @@ M: Được thôi. Cảm ơn bạn đã đến. Tôi sẽ liên lạc lại.<br>
 W: Cảm ơn bạn. Tạm biệt."
 	,voca:"",
 },
-{
-title:"Unit 31 An Ounce of Prevention",
-en:"Unit 31 An Ounce of Prevention<br>\
-M: Hi, Sandy. I have a question for you.<br>\
+{unit:31,
+title:"An Ounce of Prevention",
+en:"M: Hi, Sandy. I have a question for you.<br>\
 W: Sure, Joe. <br>\
 M: I need to have a physical examination, and there is a new clinic on Elm Street. Have you heard anything about it?<br>\
 W: One of my friends went there recently. She said it was very hygienic and well-run. It is great to have a new clinic close by, since there is a shortage of doctors around here. Why are you going?<br>\
@@ -671,8 +644,7 @@ W: What kind of tests do they want you to have?<br>\
 M: They want to know my blood pressure, how much I weigh, and results from a blood test to check for any possible diseases. I feel terrific, so I'm not worried.<br>\
 W: I had a routine check-up last month, and the doctor discovered that my blood pressure is a little high. It's not serious, but I am glad that I found out about it. I am walking every day, and I have cut down on my salt intake. I would rather not take medication if I don't have to. The change in diet has really made me feel better. You know the saying, 'An ounce of prevention is worth a pound of cure'<br>\
 M: I think you are right. Prevention is very important. I'm going to call right now and set up an appointment."
-,vi:"Bài 31 Một ounce phòng ngừa<br>\
-M: Chào Sandy. Tôi có một câu hỏi cho bạn.<br>\
+,vi:"M: Chào Sandy. Tôi có một câu hỏi cho bạn.<br>\
 W: Chắc chắn rồi, Joe. <br>\
 M: Tôi cần khám sức khỏe và có một phòng khám mới trên phố Elm. Bạn đã nghe nói gì về nó chưa?<br>\
 W: Một người bạn của tôi đã đến đó gần đây. Cô ấy nói rằng phòng khám rất vệ sinh và được quản lý tốt. Thật tuyệt khi có một phòng khám mới gần đây, vì ở đây đang thiếu bác sĩ. Tại sao bạn lại đến đó?<br>\
@@ -683,40 +655,31 @@ W: Tôi đã kiểm tra sức khỏe định kỳ vào tháng trước và bác 
 M: Tôi nghĩ bạn nói đúng. Phòng bệnh rất quan trọng. Tôi sẽ gọi điện ngay bây giờ và đặt lịch hẹn."
 	,voca:"",
 },
-{
-	title:"Unit 32 Herbal Medicine",
-	en:"Unit 32 Herbal Medicine<br>\
-Everyone wants to be healthy. People see doctors. They take pills to stay healthy. However, plants have been used to heal for thousands of years. More and more people are trying herbs to stay healthy. Plants used to heal are called 'herbal medicine'.<br>\
+{unit:32,
+	title:"Herbal Medicine",
+	en:"Everyone wants to be healthy. People see doctors. They take pills to stay healthy. However, plants have been used to heal for thousands of years. More and more people are trying herbs to stay healthy. Plants used to heal are called 'herbal medicine'.<br>\
 There are many plants used in herbal medicine. Each plant is used in a certain way. Herbal medicine works more slowly than most pills. Many people think plants are gentle on the body. There are a lot of examples of helpful plants. Ginger can help your body. Eating ginger often may help you stay healthy. Another helpful plant is parsley. It can stop bad breath.<br>\
 Herbs may be gentler than some pills. However, this does not mean that anyone can take them in any way. You should always be careful. Some herbs can be harmful, too. Too much rosemary can be very bad for your stomach. It can make you sick. Foxglove is a very pretty flower. It also has poison in it.<br>\
 Nevertheless, if you are afraid of using herbs, you may be surprised. You have probably already used some kind of herbal medicine. Coffee, garlic, ginseng, and peppermint are all used in herbal medicine. Herbal medicine is becoming popular again, as people become more interested in their health."
-	,vi:"Bài 32 Thuốc thảo dược<br>\
-Mọi người đều muốn khỏe mạnh. Mọi người đi khám bác sĩ. Họ uống thuốc để duy trì sức khỏe. Tuy nhiên, thực vật đã được sử dụng để chữa bệnh trong hàng ngàn năm. Ngày càng có nhiều người thử dùng thảo dược để duy trì sức khỏe. Thực vật được sử dụng để chữa bệnh được gọi là 'thuốc thảo dược'.<br>\
+	,vi:"Mọi người đều muốn khỏe mạnh. Mọi người đi khám bác sĩ. Họ uống thuốc để duy trì sức khỏe. Tuy nhiên, thực vật đã được sử dụng để chữa bệnh trong hàng ngàn năm. Ngày càng có nhiều người thử dùng thảo dược để duy trì sức khỏe. Thực vật được sử dụng để chữa bệnh được gọi là 'thuốc thảo dược'.<br>\
 Có nhiều loại thực vật được sử dụng trong thuốc thảo dược. Mỗi loại thực vật được sử dụng theo một cách nhất định. Thuốc thảo dược có tác dụng chậm hơn hầu hết các loại thuốc viên. Nhiều người nghĩ rằng thực vật nhẹ nhàng với cơ thể. Có rất nhiều ví dụ về các loại thực vật có ích. Gừng có thể giúp cơ thể bạn. Ăn gừng thường xuyên có thể giúp bạn duy trì sức khỏe. Một loại thực vật có ích khác là rau mùi tây. Nó có thể ngăn ngừa hôi miệng.<br>\
 Các loại thảo mộc có thể nhẹ nhàng hơn một số loại thuốc. Tuy nhiên, điều này không có nghĩa là bất kỳ ai cũng có thể dùng chúng theo bất kỳ cách nào. Bạn nên luôn cẩn thận. Một số loại thảo mộc cũng có thể gây hại. Quá nhiều hương thảo có thể rất có hại cho dạ dày của bạn. Nó có thể khiến bạn bị ốm. Hoa mao địa hoàng là một loài hoa rất đẹp. Nó cũng có chất độc.<br>\
 Tuy nhiên, nếu bạn sợ sử dụng thảo mộc, bạn có thể ngạc nhiên. Có lẽ bạn đã sử dụng một số loại thuốc thảo dược. Cà phê, tỏi, nhân sâm và bạc hà đều được sử dụng trong thuốc thảo dược. Thuốc thảo dược đang trở nên phổ biến trở lại, vì mọi người ngày càng quan tâm đến sức khỏe của mình."
 	,voca:"",
 },
-{
-	title:"Unit 33 Home Remedies ",
-	en:"Unit 33 Home Remedies <br>\
-Everyone gets a cold now and then. Doctors cannot cure colds. Sleep and rest are good for taking care of a cold. However, in almost every culture, most families have a home remedy for colds. These remedies are passed down from parents to children. They have changed very little over time.<br>\
-<br>\
+{unit:33,
+	title:"Home Remedies",
+	en:"Everyone gets a cold now and then. Doctors cannot cure colds. Sleep and rest are good for taking care of a cold. However, in almost every culture, most families have a home remedy for colds. These remedies are passed down from parents to children. They have changed very little over time.<br>\
 Different cultures use different ingredients. In Mexico, cinnamon, raisins, oregano, and hot water are used to make a special tea. Honey is sometimes added. A fruit called genipap is used as a cold remedy in Puerto Rico. The fruit is cut up. It is then soaked in water. Sugar can be added to make it sweet. Chicken soup is popular in America. A large chicken is boiled in a pot. Carrots, onions, garlic, and other vegetables are usually added. Ginger tea is used to help a cold in China. A ginger root is peeled. It is then crushed. The ginger is boiled for about thirty minutes. Some honey can be added after it is done.<br>\
-<br>\
 Each family usually has a home remedy for a cold. Some remedies work. Some do not. Some taste good. Others do not. No matter what, home remedies are sure to be around for a long time."
-	,vi:"Bài 33 Biện pháp khắc phục tại nhà <br>\
-Mọi người thỉnh thoảng đều bị cảm lạnh. Bác sĩ không thể chữa khỏi cảm lạnh. Ngủ và nghỉ ngơi là cách tốt để chăm sóc cảm lạnh. Tuy nhiên, ở hầu hết mọi nền văn hóa, hầu hết các gia đình đều có biện pháp khắc phục cảm lạnh tại nhà. Những biện pháp khắc phục này được truyền từ cha mẹ sang con cái. Chúng hầu như không thay đổi theo thời gian.<br>\
-<br>\
+	,vi:"Mọi người thỉnh thoảng đều bị cảm lạnh. Bác sĩ không thể chữa khỏi cảm lạnh. Ngủ và nghỉ ngơi là cách tốt để chăm sóc cảm lạnh. Tuy nhiên, ở hầu hết mọi nền văn hóa, hầu hết các gia đình đều có biện pháp khắc phục cảm lạnh tại nhà. Những biện pháp khắc phục này được truyền từ cha mẹ sang con cái. Chúng hầu như không thay đổi theo thời gian.<br>\
 Các nền văn hóa khác nhau sử dụng các thành phần khác nhau. Ở Mexico, quế, nho khô, kinh giới và nước nóng được sử dụng để pha một loại trà đặc biệt. Đôi khi người ta thêm mật ong. Một loại quả gọi là genipap được sử dụng làm thuốc chữa cảm lạnh ở Puerto Rico. Quả được cắt nhỏ. Sau đó ngâm trong nước. Có thể thêm đường để làm ngọt. Súp gà rất phổ biến ở Mỹ. Một con gà lớn được luộc trong nồi. Cà rốt, hành tây, tỏi và các loại rau khác thường được thêm vào. Trà gừng được sử dụng để chữa cảm lạnh ở Trung Quốc. Gọt vỏ một củ gừng. Sau đó, nghiền nát. Đun sôi gừng trong khoảng ba mươi phút. Có thể thêm một ít mật ong sau khi làm xong.<br>\
-<br>\
 Mỗi gia đình thường có một bài thuốc dân gian chữa cảm lạnh. Một số bài thuốc có tác dụng. Một số thì không. Một số có vị ngon. Một số thì không. Dù thế nào đi nữa, các bài thuốc dân gian chắc chắn sẽ tồn tại trong một thời gian dài."
 	,voca:"",
 },
-{
-	title:"Unit 34 Too Much of a Good Thing? ",
-	en:"Unit 34 Too Much of a Good Thing? <br>\
-M: Hi, Jenny. Are you drinking coffee again?<br>\
+{unit:34,
+	title:"Too Much of a Good Thing?",
+	en:"M: Hi, Jenny. Are you drinking coffee again?<br>\
 W: Hi, Sam. This is my third cup.<br>\
 M: Are you sure it's all right to drink so much? Don't you think all that caffeine is bad for you?<br>\
 W: No, that's a misconception. Everyone thinks coffee is bad for you, but it's not.<br>\
@@ -730,8 +693,7 @@ M: I know that some coffee can be good sometimes, but drinking too much is not b
 W: The doctor did admit that it is not for everyone, and that you shouldn't drink more than three cups a day.<br>\
 M: You seem nervous when you drink a lot. And remember when you told me that you are not sleeping well? Do you think that maybe you should cut back?<br>\
 W: I appreciate your concern. I was thinking of cutting back. Would you like a cup of green tea?"
-	,vi:"Bài 34 Quá nhiều thứ tốt? <br>\
-M: Chào Jenny. Bạn lại uống cà phê à?<br>\
+	,vi:"M: Chào Jenny. Bạn lại uống cà phê à?<br>\
 W: Chào Sam. Đây là cốc thứ ba của tôi.<br>\
 M: Bạn có chắc là uống nhiều như vậy là ổn không? Bạn không nghĩ rằng lượng caffeine đó có hại cho bạn sao? <br>\
 W: Không, đó là một quan niệm sai lầm. Mọi người đều nghĩ rằng cà phê có hại cho bạn, nhưng không phải vậy.<br>\
@@ -747,70 +709,61 @@ M: Bạn có vẻ lo lắng khi uống nhiều. Và bạn còn nhớ khi bạn n
 W: Tôi rất cảm kích sự quan tâm của bạn. Tôi đang nghĩ đến việc cắt giảm. Bạn có muốn một tách trà xanh không?"
 	,voca:"",
 },
-{
-	title:"Unit 35 Soccer Rules",
-	en:"Unit 35 Soccer Rules<br>\
-Soccer is one of the most popular sports in the world. Although the main idea of the game is easy to understand, there are many rules to be followed.<br>\
+{unit:35,
+	title:"Soccer Rules",
+	en:"Soccer is one of the most popular sports in the world. Although the main idea of the game is easy to understand, there are many rules to be followed.<br>\
 A player gets a yellow card for not following the rules. A yellow card is a warning. If a player keeps breaking the rules, he gets a red card. When this happens, he cannot play anymore. He is ejected from the game.<br>\
 Another rule is about 'handling.' 'Handling' is when another player touches the ball with his hands on purpose. Players cannot handle the ball. A player may not do anything that is dangerous to another player. He cannot kick an opponent's legs to get the ball.<br>\
 There are also some lesser-known rules. A player is not allowed to impede an opponent. This means that a player cannot purposely slow down another player on the field. A penalty can be called if this occurs. There is a rule about blocking a goalkeeper, too. A yellow card or an indirect kick can be given to the opponent's team if a player tries this. Yes, soccer is full of rules!"
-	,vi:"Bài 35 Luật bóng đá<br>\
-Bóng đá là một trong những môn thể thao phổ biến nhất trên thế giới. Mặc dù ý tưởng chính của trò chơi rất dễ hiểu, nhưng có rất nhiều luật cần tuân thủ.<br>\
+	,vi:"Bóng đá là một trong những môn thể thao phổ biến nhất trên thế giới. Mặc dù ý tưởng chính của trò chơi rất dễ hiểu, nhưng có rất nhiều luật cần tuân thủ.<br>\
 Một cầu thủ sẽ nhận thẻ vàng vì không tuân thủ luật. Thẻ vàng là một lời cảnh cáo. Nếu một cầu thủ tiếp tục vi phạm luật, anh ta sẽ nhận thẻ đỏ. Khi điều này xảy ra, anh ta không được chơi nữa. Anh ta sẽ bị đuổi khỏi trò chơi.<br>\
 Một luật khác là về 'xử lý'. 'Xử lý' là khi một cầu thủ khác cố tình chạm bóng bằng tay. Các cầu thủ không được xử lý bóng. Một cầu thủ không được làm bất cứ điều gì gây nguy hiểm cho một cầu thủ khác. Anh ta không được đá vào chân đối thủ để lấy bóng.<br>\
 Ngoài ra còn có một số luật ít được biết đến hơn. Một cầu thủ không được phép cản trở đối thủ. Điều này có nghĩa là một cầu thủ không được cố tình làm chậm một cầu thủ khác trên sân. Có thể thổi phạt nếu điều này xảy ra. Cũng có một luật về việc chặn thủ môn. Đội đối phương có thể bị phạt thẻ vàng hoặc đá phạt gián tiếp nếu cầu thủ cố tình làm vậy. Đúng vậy, bóng đá đầy rẫy luật lệ!"
 	,voca:"",
 },
-{
-	title:"Unit 36 Visit Frisco City!",
-	en:"Unit 36 Visit Frisco City!<br>\
-Frisco City is the place for your next vacation. The city has lots of shopping, food, and fun. There are so many things to do! The River Walk is a must-see. Take a city bus to any of the three downtown stops. There, you will find stairs. The stairs go down to the riverside.<br>\
+{unit:36,
+	title:"Visit Frisco City!",
+	en:"Frisco City is the place for your next vacation. The city has lots of shopping, food, and fun. There are so many things to do! The River Walk is a must-see. Take a city bus to any of the three downtown stops. There, you will find stairs. The stairs go down to the riverside.<br>\
 There are about five kilometers of sidewalk on either side of the river. Palm trees and cypress trees decorate the area. There are also tropical plants. You will see many unique shops, casual cafés, and upscale restaurants. Every shop is different. You can ride one of the riverboats and hear a guide talk about the history of the River Walk.<br>\
 However, the River Walk is only one of the attractions of Frisco City. There are also two amusement parks just outside Frisco City. You can enjoy a day of fun in the sun at Water World Park. You can also spend the day enjoying the roller coasters and other rides at Sun Land.<br>\
 Visit Frisco City! You will have a great time."
-	,vi:"Đơn vị 36 Tham quan Frisco City!<br>\
-Frisco City là nơi lý tưởng cho kỳ nghỉ tiếp theo của bạn. Thành phố có rất nhiều cửa hàng mua sắm, ẩm thực và vui chơi. Có rất nhiều thứ để làm! River Walk là điểm đến không thể bỏ qua. Đi xe buýt thành phố đến bất kỳ điểm dừng nào trong ba điểm dừng ở trung tâm thành phố. Ở đó, bạn sẽ tìm thấy cầu thang. Cầu thang dẫn xuống bờ sông.<br>\
+	,vi:"Frisco City là nơi lý tưởng cho kỳ nghỉ tiếp theo của bạn. Thành phố có rất nhiều cửa hàng mua sắm, ẩm thực và vui chơi. Có rất nhiều thứ để làm! River Walk là điểm đến không thể bỏ qua. Đi xe buýt thành phố đến bất kỳ điểm dừng nào trong ba điểm dừng ở trung tâm thành phố. Ở đó, bạn sẽ tìm thấy cầu thang. Cầu thang dẫn xuống bờ sông.<br>\
 Có khoảng năm km vỉa hè ở mỗi bên bờ sông. Cây cọ và cây bách trang trí cho khu vực này. Ngoài ra còn có các loại cây nhiệt đới. Bạn sẽ thấy nhiều cửa hàng độc đáo, quán cà phê bình dân và nhà hàng cao cấp. Mỗi cửa hàng đều khác nhau. Bạn có thể đi thuyền trên sông và nghe hướng dẫn viên kể về lịch sử của River Walk.<br>\
 Tuy nhiên, River Walk chỉ là một trong những điểm tham quan của Frisco City. Ngoài ra còn có hai công viên giải trí ngay bên ngoài Frisco City. Bạn có thể tận hưởng một ngày vui chơi dưới ánh nắng mặt trời tại Công viên Water World. Bạn cũng có thể dành cả ngày để tận hưởng tàu lượn siêu tốc và các trò chơi khác tại Sun Land.<br>\
 Ghé thăm Frisco City! Bạn sẽ có khoảng thời gian tuyệt vời."
 	,voca:"",
 },
-{
-	title:"Unit 37 Asking for Directions",
-	en:"Unit 37 Asking for Directions<br>\
-Asking for directions can be risky. I realized exactly how risky it could be when I needed to meet one of my friends one day.<br>\
+{unit:37,
+	title:"Asking for Directions",
+	en:"Asking for directions can be risky. I realized exactly how risky it could be when I needed to meet one of my friends one day.<br>\
 A while ago, I arranged to meet my friend at a new mall. My friend had been there before and indicated that we should shop there together. We planned to meet at 3:00 pm at Burger Palace in the mall.<br>\
 When I arrived at the mall, I realized I did not know where Burger Palace was, so I asked a woman for directions. She advised me to go straight past the bank, and turn right before the food court. She mentioned that I would walk for a few minutes, passing a shoe store until I reached Burger Palace, which was next to the bookstore. I followed her directions and arrived just in time.<br>\
 Twenty minutes later, I was beginning to wonder where my friend was. Thirty minutes later, I was worried. I did not know what to do, so I just kept waiting. At around 3:40 pm, I saw my friend walking quickly toward me. I rushed to him and demanded to know what happened. 'I was at the other Burger Palace!' he cried. We had not realized there were two Burger Palaces in the mall.<br>\
 Since then, I have made sure that I get the directions from my friends before I go to meet them. It saves me a lot of trouble!"
-	,vi:"Bài 37 Hỏi đường<br>\
-Hỏi đường có thể rất nguy hiểm. Tôi nhận ra rằng việc đó có thể nguy hiểm như thế nào khi một ngày nào đó tôi cần gặp một người bạn của mình.<br>\
+	,vi:"Hỏi đường có thể rất nguy hiểm. Tôi nhận ra rằng việc đó có thể nguy hiểm như thế nào khi một ngày nào đó tôi cần gặp một người bạn của mình.<br>\
 Cách đây một thời gian, tôi đã sắp xếp để gặp bạn mình tại một trung tâm thương mại mới. Bạn tôi đã từng đến đó trước đó và bảo chúng tôi nên cùng nhau mua sắm ở đó. Chúng tôi đã lên kế hoạch gặp nhau lúc 3:00 chiều tại Burger Palace trong trung tâm thương mại.<br>\
 Khi đến trung tâm thương mại, tôi nhận ra mình không biết Burger Palace ở đâu, vì vậy tôi đã hỏi một người phụ nữ chỉ đường. Cô ấy khuyên tôi đi thẳng qua ngân hàng và rẽ phải trước khu ẩm thực. Cô ấy nói rằng tôi sẽ đi bộ vài phút, đi qua một cửa hàng giày cho đến khi tôi đến Burger Palace, nằm cạnh hiệu sách. Tôi làm theo chỉ dẫn của cô ấy và đến nơi vừa kịp lúc.<br>\
 Hai mươi phút sau, tôi bắt đầu tự hỏi bạn mình đang ở đâu. Ba mươi phút sau, tôi lo lắng. Tôi không biết phải làm gì, vì vậy tôi chỉ tiếp tục chờ. Vào khoảng 3:40 chiều, tôi thấy bạn tôi đang đi nhanh về phía tôi. Tôi chạy đến chỗ bạn tôi và yêu cầu biết chuyện gì đã xảy ra. 'Tôi đã ở Burger Palace kia!' anh ấy hét lên. Chúng tôi đã không biết rằng có hai Burger Palace trong trung tâm thương mại.<br>\
 Kể từ đó, tôi đã đảm bảo rằng mình nhận được chỉ dẫn từ bạn bè trước khi đến gặp họ. Điều đó giúp tôi tiết kiệm được rất nhiều rắc rối!"
 	,voca:"",
 },
-{
-	title:"Unit 38 Fixing a Flat",
-	en:"Unit 38 Fixing a Flat<br>\
-When your car gets a flat tire, do not panic. First, apply your brakes and pull over. Inside the trunk, you will find a spare tire and a toolbox.<br>\
+{unit:38,
+	title:"Fixing a Flat",
+	en:"When your car gets a flat tire, do not panic. First, apply your brakes and pull over. Inside the trunk, you will find a spare tire and a toolbox.<br>\
 One of these tools is a jack, which is a tool you use to raise the car. This makes the tire easy to remove. Position the jack beneath the car, behind the tire that is flat. Insert the jack handle and turn it clockwise. Continue turning the handle until the car rises high enough, so that the flat tire is well off the ground and spins freely. Make sure that the jack is securely supporting the vehicle. If the car is unsteady or the jack is unstable, lower the car. Reposition the jack and begin again.<br>\
 Next, use a crowbar to pry off the hubcap (the metal cover on the side of the tire). Inside the hubcap are four bolts that hold the tire in place. Loosen these, using the long L-shaped tool. Push firmly on the tool to get the bolts to turn. It may be difficult.<br>\
 Once the bolts are loose, the flat tire can be pulled off easily. Now you can put on the new tire. Once it is in place, replace the four bolts and tighten them. Place the flat tire and the toolbox back in the trunk.<br>\
 Finally, drive to the nearest service station and get your flat tire fixed!"
-	,vi:"Bài 38 Sửa lốp xe bị xẹp<br>\
-Khi xe bạn bị xẹp lốp, đừng hoảng sợ. Trước tiên, hãy phanh và dừng lại. Bên trong cốp xe, bạn sẽ thấy một lốp dự phòng và một hộp đựng đồ nghề.<br>\
+	,vi:"Khi xe bạn bị xẹp lốp, đừng hoảng sợ. Trước tiên, hãy phanh và dừng lại. Bên trong cốp xe, bạn sẽ thấy một lốp dự phòng và một hộp đựng đồ nghề.<br>\
 Một trong những dụng cụ này là kích, đây là dụng cụ bạn dùng để nâng xe lên. Nhờ đó, bạn có thể dễ dàng tháo lốp. Đặt kích bên dưới xe, phía sau lốp xe bị xẹp. Lắp tay cầm kích và xoay theo chiều kim đồng hồ. Tiếp tục xoay tay cầm cho đến khi xe nâng lên đủ cao, sao cho lốp xe xẹp cách xa mặt đất và quay tự do. Đảm bảo kích nâng đỡ xe một cách an toàn. Nếu xe không ổn định hoặc kích không ổn định, hãy hạ xe xuống. Đặt lại vị trí kích và bắt đầu lại.<br>\
 Tiếp theo, dùng xà beng để nạy nắp chụp vành (nắp kim loại ở bên hông lốp). Bên trong nắp chụp vành có bốn bu lông giữ lốp cố định tại chỗ. Nới lỏng chúng bằng dụng cụ hình chữ L dài. Đẩy mạnh dụng cụ để vặn bu lông. Có thể khó.<br>\
 Khi các bu lông đã lỏng, bạn có thể dễ dàng tháo lốp xe bị xẹp. Bây giờ bạn có thể lắp lốp mới. Khi đã lắp xong, hãy lắp lại bốn bu lông và siết chặt chúng. Đặt lốp xe bị xẹp và hộp đựng đồ nghề trở lại cốp xe.<br>\
 Cuối cùng, hãy lái xe đến trạm dịch vụ gần nhất và sửa lốp xe bị xẹp!"
 	,voca:"",
 },
-{
-	title:"Unit 39 The Exchange Rate",
-	en:"Unit 39 The Exchange Rate<br>\
-M: Welcome to the Atlanta International Airport, ma'am. How may I help you?<br>\
+{unit:39,
+	title:"The Exchange Rate",
+	en:"M: Welcome to the Atlanta International Airport, ma'am. How may I help you?<br>\
 W: I am traveling to Venezuela. Can you tell me what the exchange rate is for the dollar?<br>\
 M: One moment, please, and I will look it up. The currency in Venezuela is the bolivar. The exchange rate is 200 bolivars per dollar.<br>\
 W: That seems rather low. Are you certain that that is all the dollar is worth?<br>\
@@ -824,8 +777,7 @@ want to find a reliable exchange.<br>\
 M: The best place to exchange money is at a large bank. They will always give you the official rate. You can also find money exchange stores in most large cities.<br>\
 W: Wonderful. I will look for a bank. I appreciate your advice.<br>\
 M: My pleasure. I hope you enjoy Venezuela."
-	,vi:"Bài 39 Tỷ giá hối đoái<br>\
-M: Chào mừng đến Sân bay quốc tế Atlanta, thưa bà. Tôi có thể giúp gì cho bà?<br>\
+	,vi:"M: Chào mừng đến Sân bay quốc tế Atlanta, thưa bà. Tôi có thể giúp gì cho bà?<br>\
 W: Tôi sắp đi Venezuela. Bà có thể cho tôi biết tỷ giá hối đoái của đô la là bao nhiêu không?<br>\
 M: Xin vui lòng đợi một lát, tôi sẽ tra cứu. Tiền tệ ở Venezuela là bolivar. Tỷ giá hối đoái là 200 bolivar cho một đô la.<br>\
 W: Có vẻ hơi thấp. Bà có chắc rằng đó là tất cả giá trị của đô la không?<br>\
@@ -841,17 +793,15 @@ W: Tuyệt vời. Tôi sẽ tìm một ngân hàng. Tôi đánh giá cao lời k
 M: Rất vui được giúp bạn. Tôi hy vọng bạn thích Venezuela."
 	,voca:"",
 },
-{
-	title:"Unit 40 The First Nations",
-	en:"Unit 40 The First Nations<br>\
-The First Nations are the people who lived in North America before Europeans migrated there.<br>\
+{unit:40,
+	title:"The First Nations",
+	en:"The First Nations are the people who lived in North America before Europeans migrated there.<br>\
 There is a place in Canada where you can learn about the culture of the First Nations. It is where the First Nations people used to live. Now, a Visitors' Center is there. There is also an archeology lab and walking trails. You can learn about the culture through the displays in the Center. The displays show everyday activities. They show how the people lived.<br>\
 The gift shop in the Visitors' Center sells crafts made by the First Nations people. There are jewelry, paintings, and pottery. You can also eat at the restaurant. Bison meat is in many dishes.<br>\
 There are also wild rice dishes, fruit pies, and traditional bread. All of the food is tasty. <br>\
 The archeology lab is run by the local university. A big window lets you see the archeologists working. They found a very old spearhead. They also found ancient human bones.<br>\
 The First Nations Visitors' Center is a great place. You can learn about the First Nations' culture. You can also see archeologists at work. You can walk on the trails, or enjoy a traditional meal. It is an experience to remember."
-	,vi:"Bài 40 Các quốc gia đầu tiên<br>\
-Các quốc gia đầu tiên là những người đã sống ở Bắc Mỹ trước khi người châu Âu di cư đến đó.<br>\
+	,vi:"Các quốc gia đầu tiên là những người đã sống ở Bắc Mỹ trước khi người châu Âu di cư đến đó.<br>\
 Có một nơi ở Canada mà bạn có thể tìm hiểu về văn hóa của các quốc gia đầu tiên. Đó là nơi mà người dân các quốc gia đầu tiên từng sinh sống. Hiện tại, có một Trung tâm du khách ở đó. Ngoài ra còn có một phòng thí nghiệm khảo cổ học và những con đường mòn đi bộ. Bạn có thể tìm hiểu về văn hóa thông qua các màn hình trong Trung tâm. Các màn hình hiển thị các hoạt động hàng ngày. Chúng cho thấy cách người dân sống.<br>\
 Cửa hàng quà tặng trong Trung tâm du khách bán đồ thủ công do người dân các quốc gia đầu tiên làm ra. Có đồ trang sức, tranh vẽ và đồ gốm. Bạn cũng có thể ăn tại nhà hàng. Thịt bò rừng có trong nhiều món ăn.<br>\
 Ngoài ra còn có các món cơm hoang, bánh trái cây và bánh mì truyền thống. Tất cả các món ăn đều ngon. <br>\

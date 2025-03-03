@@ -3,7 +3,6 @@
 document.write('<script src="./ebooks/tfl/data/tfl_b1_data.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/tfl/data/tfl_b2_data.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/tfl/data/spell_data.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/tfl/data/ocg_data.js" type="text/javascript"></script>');
 
 var app = angular.module("tflApp", []);
 app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
@@ -21,7 +20,6 @@ bookChange = function (num) {
 		case 0: $scope.stories = SPELL_DATA; break;
 		case 1: $scope.stories = tfl_b1_stories; break;
 		case 2: $scope.stories = tfl_b2_stories; break;
-		case 3: $scope.stories = OCG_DATA; break;
 	}
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 
@@ -47,7 +45,6 @@ $scope.createAudioSrc = function() {
 	if ($scope.KBook==0) { book = 'spell'; track = $scope.story.track }
 	if ($scope.KBook==1) { book = 'tfl_b1'; track = $scope.story.track }
 	if ($scope.KBook==2) { book = 'tfl_b2'; track = $scope.story.track }
-	if ($scope.KBook==3) { book = 'ocg'; track = $scope.story.track }
 
 	return "./ebooks/tfl/data/mp3/" + book + "/" + track + '.mp3';
 }

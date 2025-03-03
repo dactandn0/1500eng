@@ -1,0 +1,16 @@
+
+<mark class="mb-4">The Official Cambridge Guide to IELTS</mark>
+<hr>
+
+<form name="tocg_ielt_bForm" class="my-1" role="group">
+	<input id="000" type="radio" name="ielt_form" value='0' onchange="ielt_formChange(0)" checked/><label class="mr-3" for="000">Listening</label>
+	<input id="111" type="radio" name="ielt_form" value='1' onchange="ielt_formChange(1)" /><label class="mr-3" for="111">Reading</label>
+</form>
+
+<div ng-show="ielt_form==1">
+	<div ng-include="'./includes/storyR.html'" ></div>
+</div> <!-- ielt_form -->
+
+<div ng-show="ielt_form==0">
+	<div ng-include="'./includes/storyL.html'" ></div>
+</div>

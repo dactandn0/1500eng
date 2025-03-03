@@ -52,7 +52,7 @@ var app = angular.module("myApp", [
   'spkBookApp',
   'writingvol5App',
   'completeApp',
-  'ielts_testApp',
+  'tocgApp',
   /*
   'sampleSpeakingApp',
   'bridgeRApp','bridgeLApp',
@@ -80,7 +80,7 @@ app.config(function($routeProvider) {
 		.when('/spkBook', {templateUrl: 'ebooks/spkBook/spkBook.html', controller: 'spkBookCtrl'})
 		.when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
 		.when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})
-		.when('/ielts_test', {templateUrl: 'ebooks/ielts_test/ielts_test.html', controller: 'ielts_testCtrl'})
+		.when('/tocg', {templateUrl: 'ebooks/tocg/tocg.html', controller: 'tocgCtrl'})
 		.when('/completeL', {templateUrl: 'ebooks/complete/complete.html', controller: 'completeCtrl'})
 		// .when('/completeR', {templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'})
 		.when('/barron600R', {templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'})

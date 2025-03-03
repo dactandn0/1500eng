@@ -1,26 +1,12 @@
 
-<h5 class="mb-2">Complete</h5>
+<mark class="mb-2">Complete for Ielts 4-5</mark>
 
 <form name="complete_ielt_bForm" class="my-3" role="group">
 	<input id="111" type="radio" name="_form" value="0" onchange="ielt_formChange(0)" checked/><label class="mr-3" for="111">Listen</label>
 	<input id="222" type="radio" name="_form" value="1" onchange="ielt_formChange(1)" /><label class="mr-3" for="222">Read</label>
 </form>
 
-<div ng-show = "ielt_form===0"> <!-- Listen -->
-	<div class="mt-3">
-		<div class="col-md-12">
-			 <a ng-repeat="story in stories track by $index"  
-			 ng-click="fetchStory($index);" 
-			 href="" 
-			 ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal'"
-			 class="pr-2 mr-1"> [{{story.track}}]
-			</a>
-		</div>
-
-	</div>
-
-	<br>
-
+<div ng-show = "ielt_form===0">
 	<div ng-include="'./includes/storyL.html'" ></div>
 </div>
 

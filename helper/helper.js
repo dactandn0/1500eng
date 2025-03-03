@@ -91,7 +91,7 @@ function Helper_DoMenu(_scope)
 	_scope.stories = r.concat(kStories)
 }
 
-function Helper_MakeVoca_Menu_Titles(rScope, _scope)
+function Helper_MakeVoca_Menu_Titles(rScope, _scope , isDoMenu = true)
 {
 	var book = _scope.stories;
 
@@ -116,7 +116,7 @@ function Helper_MakeVoca_Menu_Titles(rScope, _scope)
 		}
 	}
 
-	Helper_DoMenu(_scope)
+	if (isDoMenu) Helper_DoMenu(_scope, isDoMenu)
 	showStoryTitles(_scope);
 
 }

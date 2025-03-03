@@ -1,0 +1,26 @@
+
+<mark class="mb-4">Ielts test</mark>
+<hr>
+
+<div class="my-1 mb-4" style="overflow-y: scroll; max-height:250px; min-height: 30px">
+    <a ng-repeat="story in titles"
+    ng-click="fetchStory($index);" 
+    ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal' "
+    href="" class="p-2 mr-1"> <span ng-class="story.hasNote ? 'text-danger' : '' "> {{story.track || $index}} </span> 
+    </a>
+</div>
+
+<!-- listen -->
+<h6 class="accordion" ng-init="showL=0">
+	<a href ng-click="showL=!showL"> Listening </a>
+</h6>
+
+<div class="accordion-content" ng-if="showL==1">
+	<div ng-repeat="img in story.L_images track by $index">
+		<img src="{{img_root}}/{{img}}-min.png" class="img-fluid mb-2">
+		<button class="btn-primary" ng-click="playSound($index)">Play {{$index+1}}</button>
+		<button class="mx-3 btn-primary" ng-click="pauseSound($index)">Pause</button>
+		<label class="mp3PlayStatus" ng-if="currMp3==$index">{{playStatus}}</label>
+	</div>
+</div>
+<!-- end listen -->

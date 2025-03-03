@@ -274,12 +274,17 @@ input[type="range"]:focus::-moz-range-thumb {
 
 
 .color-anim {
-  /*animation: color-change 1s infinite;*/
+  /*animation: color_change 1s infinite;*/
   background: linear-gradient(-90deg,rgba(255,255,255,0) 0%, #AAD0AE 0%)
 }
 
-@keyframes color-change {
+@keyframes color_change {
   0% { color: red; }
   50% { color: blue; }
   100% { color: red; }
+}
+
+.mp3PlayStatus {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e);
+  animation: color_change 1s infinite;
 }

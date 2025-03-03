@@ -1,5 +1,5 @@
 
-const HELPER_REPEAT_NUM_DEF = 3
+const HELPER_REPEAT_NUM_DEF = 2
 
 var app = angular.module('audioApp', []);
 

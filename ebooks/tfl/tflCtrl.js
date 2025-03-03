@@ -3,13 +3,16 @@
 document.write('<script src="./ebooks/tfl/data/tfl_b1_data.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/tfl/data/tfl_b2_data.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/tfl/data/spell_data.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/tfl/data/ocg_data.js" type="text/javascript"></script>');
 
 var app = angular.module("tflApp", []);
 app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
 
-KBook = 1;
+$scope.KBook = 1;
 $scope.stories = tfl_b1_stories; 					//def
 $scope.storyIdx = 0;
+
+$scope.img_root = './ebooks/tfl/data/images/ocg' ; 	
 
 var keyU = 'tfl_u_'
 
@@ -18,6 +21,7 @@ bookChange = function (num) {
 		case 0: $scope.stories = SPELL_DATA; break;
 		case 1: $scope.stories = tfl_b1_stories; break;
 		case 2: $scope.stories = tfl_b2_stories; break;
+		case 3: $scope.stories = OCG_DATA; break;
 	}
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 
@@ -25,7 +29,7 @@ bookChange = function (num) {
 	var idx = Helper_loadInt(keyU, 0);
 
 	Helper_saveDB("tfl_b", num);
-	KBook = num;
+	$scope.KBook = num;
 	$scope.fetchStory(idx);
 
 }
@@ -38,7 +42,14 @@ $scope.styleTrack = function(trackId) {
 }
 
 $scope.createAudioSrc = function() {
-	return "./ebooks/tfl/data/mp3/tfl_b" + KBook + "/" + $scope.story.track + '.mp3';
+	var book
+	var track
+	if ($scope.KBook==0) { book = 'spell'; track = $scope.story.track }
+	if ($scope.KBook==1) { book = 'tfl_b1'; track = $scope.story.track }
+	if ($scope.KBook==2) { book = 'tfl_b2'; track = $scope.story.track }
+	if ($scope.KBook==3) { book = 'ocg'; track = $scope.story.track }
+
+	return "./ebooks/tfl/data/mp3/" + book + "/" + track + '.mp3';
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -52,7 +63,7 @@ $scope.fetchStory = function (idx)
 
 $scope.loadData = function () {
 	var bookData = Helper_loadInt('tfl_b', 1);
-	KBook = bookData;
+	$scope.KBook = bookData;
 
 	bookChange(bookData);
 	document.tfl_bForm.book.value = bookData;

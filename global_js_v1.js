@@ -228,33 +228,37 @@ function processStory (story, isAlert = true) {
 		var sentencesVi = '';
 
 		if (viShow) sentencesVi = viShow.match(rgSen);
-
-		if (sentencesEn.length === sentencesVi.length) 
+		if (sentencesEn)
 		{
-		} else if (isAlert) alert('sentencesEn.length !== sentencesVi.length')
-
-		for (var i = 0; i < sentencesEn.length; i++) {
-			var enSen = sentencesEn[i]
-			var viSen = sentencesVi[i]
-			if (viSen)
+			if (sentencesEn.length === sentencesVi.length) 
 			{
-				var rep = viSen.trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '')
+			} else if (isAlert) alert('sentencesEn.length !== sentencesVi.length')
+
+				for (var i = 0; i < sentencesEn.length; i++) 
 				{
-					rep = rep.replace(/<\/*(b>)/,'');  // don't bold text in Vietnamese
-					viii = '(' + rep + ')'
-					if (viii.indexOf(kBrTag)!==-1) {
-						viii = viii.replace(kBrTag,'');
-						viii += kBrTag
-					}
-				}
-				if (viii.indexOf('()')!==-1) viii=viii.replace('()','')
-				if (viii.indexOf('(<hr>)')!==-1) viii=''
-				if (enSen.indexOf(kBrTag)!==-1) {
-					enSen = enSen.replace(kBrTag,'');
-				}
-				enAndVi += enSen + ' <i class="text-primary">' + viii  + '</i>'
-			}
-		}
+					var enSen = sentencesEn[i]
+					var viSen = sentencesVi[i]
+					if (viSen)
+					{
+						var rep = viSen.trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '')
+						{
+							rep = rep.replace(/<\/*(b>)/,'');  // don't bold text in Vietnamese
+							viii = '(' + rep + ')'
+							if (viii.indexOf(kBrTag)!==-1) {
+								viii = viii.replace(kBrTag,'');
+								viii += kBrTag
+							}
+						}
+						if (viii.indexOf('()')!==-1) viii=viii.replace('()','')
+						if (viii.indexOf('(<hr>)')!==-1) viii=''
+						if (enSen.indexOf(kBrTag)!==-1) {
+							enSen = enSen.replace(kBrTag,'');
+						}
+						enAndVi += enSen + ' <i class="text-primary">' + viii  + '</i>'
+					} // viSen
+				} // for
+		} // sentencesEn
+		
 
 	} // end (bHasVi)
 	else enAndVi = enShow

@@ -10,18 +10,22 @@
 <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-1"></div>
 <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
 
-<div class="card mt-2" ng-init=showText=1>
+<div class="card mt-2" ng-init="showLession=1;showScript=1">
 	<div class="card-body">
 	  <div class="card-text my-2">
 	  	
-	  	<h6 class="accordion toggleClick" ng-click="showText=!showText">
+	  	<h6 class="accordion toggleClick" ng-click="showLession=!showLession">
 		    <a href>{{story.fTitle}}</a>
 		    <span ng-if="story.hasExercise" class="text-danger">[Ex.]</span>
 		 </h6>
+
+		 <button class="mb-2 btn-sm btn-success" ng-click="showScript=!showScript">{{!showScript ? 'Show' : 'Hide'}}</button>
 		 
-	  	 <div class="accordion-content toggleShow" ng-show="showText">
-	  		<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
-	  		<p compile="story.viShow" ng-if="$root.bShowVi"></p>
+	  	 <div class="accordion-content toggleShow" ng-show="showLession">
+	  	 	<div ng-show="showScript">
+	  			<p compile="story.enShow" ng-if="!$root.bShowVi"></p>
+	  			<p compile="story.viShow" ng-if="$root.bShowVi"></p>
+	  	 	</div>
 
 		  	<div ng-include="'./includes/exercise.html'" ></div>
 			<div ng-include="'./includes/html_note.html'" ></div>

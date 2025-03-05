@@ -111,8 +111,83 @@ B: Ý tưởng tuyệt vời."
 B: Well, this year we wanted to focus on computer skills. So, as well as representatives from 400 small businesses, we've invited over 250 specialists in that area.<br>\
 A: Oh, that should be interesting."
 	,note:"One word and/or a number = 1word or 1num or 1word + 1num"
+},{
+	track:"Cam13"
+	,en:"1<br>\
+A: Right, so, you need to book some flights, is that right?<br>\
+B: Yes, for me and my family. We're going to Scotland for my sister's wedding.<br>\
+A: Oh, lovely! When's the wedding?<br>\
+B: It's on 21st July.<br>\
+A: That should be wonderful, but I assume you'll want to fly in earlier? What about the 20th or even the 19th?<br>\
+B: It will have to be the 18th, I've actually got to attend a special dinner on the 19th.<br>\
+2<br>\
+Welcome aboard, everyone! I hope you'll enjoy your stay with us and get a lovely glimpse of country life. We're going to a wonderful market on Tuesday morning, I'm sure you'll love that with all the local farm produce on sale. Then on the Wednesday you'll get to see where all that lovely produce comes from as John Smith, a local farmer, has invited us to see him at work. On Thursday, you'll have a day to relax before we leave on Friday.<br>\
+3<br>\
+A: So, what topic are we going to choose for our project? It's due in three weeks.<br>\
+B: I know, it's not a lot of time. I was going to suggest we do one on the environment.<br>\
+A: But that's so broad a topic. We should try to narrow it down. What about recycling?<br>\
+B: That's a good idea, there's a lot of information and I think the other groups are concentrating on pollution. So this would be nice and different.<br>\
+4<br>\
+We encountered quite a few problems during our research. Firstly, the weather was horrendous and made our work conditions very difficult indeed. Luckily, we had the right equipment to deal with that, and could carry on regardless. Unfortunately though, in spite of having so many volunteers, we did run out of funds halfway through the project. So, we were forced to postpone the second half of our trip."
+},{
+	track:"Cam14"
+	,en:"1<br>\
+A: We really need to organise our trip, you know.<br>\
+B: I know, I was thinking the same. We need to arrange<br>\
+accommodation and flights.<br>\
+A: And we'll need transport while we're there we could hire a car?<br>\
+B: My dad said we could borrow his.<br>\
+A: Well, that's one less thing to worry about.<br>\
+B: I'm a bit worried that hotels will all get booked up.<br>\
+A: OK, let's sort that out straight away.<br>\
+B: Yes, then I can contact the travel agent and book our flights in the morning.<br>\
+A: Great.<br>\
+2<br>\
+I just wanted to tell you about some of the recent changes we've made to the garden at the back of the complex, which we all have access to. As you know, there are some attractive and well-established plants in there and we didn't want to take any of these out. But many of these are struggling in the harsh sun, which falls directly on that area. To solve this we're going to plant trees along the western edge of the garden, just near the pond. This should also become a very pleasant place to sit and watch the ducks in the water.<br>\
+3<br>\
+A: It's nearly there. I think we've found plenty of information. <br>\
+B: Yes, lots, in fact do you think we need to reduce any of it? <br>\
+A: Not at all, in fact I was thinking we could try and include some of those nice graphics you found.<br>\
+B: OK, it would certainly make it look a bit more interesting.<br>\
+4<br>\
+Studying ice cores in the South Pole can tell us a lot about the past climate, which, in turn, can help us understand how today's climate is changing. My particular area of study is snow. While we scientists understand the process of how snow is created, very little is known about how snow interacts with the atmosphere and influences our weather patterns. One of the things we're trying to do is to link what we already know about meteorology and clouds and determine the impact that snow has on that."
+},
+{
+	track:"Cam15"
+	,en:"In today's show I'm going to be looking at what's new in technology this week. And I'd like to start by looking at the much-awaited OP56 mobile phone from technology giants Optiware. It has some amazing features. The first thing you notice is how much slimmer and lighter it is compared to the heavier older models. It's incredible considering that they have actually increased the screen size on this one, though it still fits neatly into your pocket. They've also improved the camera and you'll find you can take much better quality photos on this model. This has an impact on the battery though, as it takes a lot of power and I found it didn't run for very long before needing to be recharged. Despite all its amazing features, it's extremely easy to use, but I do have to say that it is overpriced, and will be beyond the budget of most people shopping for a new phone."
+},{
+	track:"Cam16"
+	,en:"1<br>\
+A: Excuse me, can you tell me where the gift shop is?<br>\
+B: Yes, you need to go into the shopping centre, the entrance is over there on your left.<br>\
+A: Yes, I see it.<br>\
+B: Well, you go in there, then go straight ahead. The shop you want is opposite the toilets. Next to the lifts.<br>\
+A: Thanks very much!<br>\
+2<br>\
+Welcome to the resort! I'll just tell you about some of our facilities. We've got a lovely little pond, where guests are welcome to sit and have a picnic. You'll see it as you come in the entrance. In the middle of the resort, you'll see a circular courtyard, it has some lovely cool places to sit as well. You can see our famous fig tree from there, it's enormous! To the right of the courtyard, you'll find a small shop where you can pick up things like postcards and stamps. It's just behind the tree.<br>\
+3<br>\
+A: Hello, Professor Jones, would you be able to help me with my assignment?<br>\
+B: Of course. Are you having problems with choosing a good location for the new bridge?<br>\
+A: Yes. I was thinking of putting it right in the middle as the river is at its narrowest there.<br>\
+B: Well, that would save costs.<br>\
+A: Exactly, but I realised that it would create costs in other<br>\
+areas as it would mean some important buildings being knocked down. So I think it would be better if it's at the eastern end of the motorway.<br>\
+B: That's a good idea, it would be a lot more useful than if it was at the western end.<br>\
+4<br>\
+The Traviston Frog is different to many other species of frog. It is very small and so, unlike other species, it is unable to live in the area of a pond, though it does need to live in fairly close proximity to water so that it can feed. Rather than choosing the safety of a tree, which would be too tall and may actually increase the threat from predators, it elects to live in a tiny burrow surrounded by bushes."
+},{
+	track:"Cam17"
+	,en:"A: Can you tell me how to get to the supermarket?<br>\
+B: Sure, let me have a think. We're in Bridge Street now and it's in Queens Road.<br>\
+A: Oh, the only street I know is Riverside Street, I know my hotel's on the corner there.<br>\
+B: That's right. You need to go up Bridge Street as far as the traffic lights, then turn right. That's Riverside Street.<br>\
+A: I see.<br>\
+B: Then you walk along there to the next set of traffic lights and you'll be at Queens Road. You turn left there and it's the second shop on your left.<br>\
+A: Thanks very much!"
+},{
+	track:"Cam18"
+	,en:"Morning everyone, thanks for coming. Now, from next week there'll be a rota for all of you to help out at the information stand here at Brookside Market. So, I just wanted to give you a briefing about what you can find where. The information booth is to the right of the entrance and I've given you all a plan to mark important places on. One of the most common enquiries is where can I pay for my parking? People are amazed when we tell them that it's free now. We used to charge for it and there was a ticket booth to the left of the entrance, but now that it's been turned into a small stage, we hold cookery demonstrations there. Local chefs come in and show people how to prepare dishes. It's really popular and you get a nice view of the fountain there. We have over 50 stalls at the markets, selling everything from fresh fruit and vegetables to locally made crafts. Which unfortunately means people won't find things like books or anything second-hand. We have a famous baker at the market and many people get here really early just to buy his produce. His stall is located at the back of the markets next to the barbecue. We sell burgers and sausages there but a lot of people like to bring their own lunch to eat and they're welcome to go to the special area near the tree in the middle of the markets where they can do just that. It's handy for the toilets too. The markets are located next to a circus school that holds classes for children at the weekend, so we often get a lot of family groups in. There's a playground on the right-hand side that's popular with them, and just in front of that is where the farmers bring along chickens, rabbits and lambs for the children to pet. That's always a very popular feature so you'll definitely be asked about that. Just let people know there is a small fee if the children want to feed them. Well, that's everything for now..."
 }
-
 
 
 

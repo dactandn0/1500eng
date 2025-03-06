@@ -199,6 +199,114 @@ A: Thanks very much!"
 
 
 
+,{
+	track:"Cam39"
+	,en:"A: Good morning - Dave Smith speaking.<br>\
+B: Hi- could I speak to the organiser of the Preston Park Run? <br>\
+A: Yes that's me.<br>\
+B: Great-um - I was talking to some friends of mine about the run and they suggested I contact you to get some more details.<br>\
+A: Sure - what would you like to know?<br>\
+B: Well - they said it takes place every Saturday, is that right? <br>\
+A: Yes it does.<br>\
+B: OK - great!<br>\
+A: Do you know where the park is?<br>\
+B: Oh yes - I've been there before. But it's quite big and I'm not sure where to go.<br>\
+A: Well there's a circular track that goes right around the park. The run starts at the café, goes past the tennis courts then twice around the lake and finishes back where it started.<br>\
+B: OK and what time is the run?<br>\
+A: Well the actual run begins at 9 am but the runners start arriving at about 8,45.<br>\
+B: OK so I need to get up early Saturday morning then. And how long is the run?<br>\
+A: Well it used to be three kilometres but most people wanted to do a bit more than that so we lengthened it to five kilometres - we now go round the lake twice and that adds an extra two kilometres.<br>\
+B: Right not sure I've ever run that far so I'd better start doing a bit of training.<br>\
+A: That's a good idea. But it's not a race, it's really just for fun and the best thing would be to take it easy the first few times you do it and then see if you can gradually improve your time.<br>\
+B: Is the run timed then? How do I know how well I've done?<br>\
+A: When you cross the finish line you'll be given a bar code and you take this to one of the run volunteers, who will scan it. Then you can get your time online when you go home.<br>\
+B: Oh I see. You collect all the results.<br>\
+A: Exactly.<br>\
+B: I see that's great. So how do I register?<br>\
+A: Well there are several ways. I could take your details over the phone but it's much easier if you do it using the website.<br>\
+B: OK - good. Um, I think that's probably all I need to know for now. Oh yes - does it cost anything to register or do you collect money each week?<br>\
+A: Well it doesn't cost anything to register but we do charge for the run. In fact we have just increased the charge to £1,50. It used to be a pound but because we were making a bit of a loss we have had to increase it by 50p.<br>\
+B: OK thanks. I think I have enough information on taking part in the run.<br>\
+[pause]<br>\
+B: Um - you mentioned volunteers. I have a friend who is interested in helping out. Can you give me some details so I can pass them on to her?<br>\
+A: Sure well you need to ask your friend to contact Pete Maughan. He manages all the volunteers.<br>\
+B: OK-I didn't quite catch his surname - was it Morn - M-O-R-N?<br>\
+A: No - just a bit more complicated - it's M-A-U-G-H-A-N. <br>\
+B: Right- thanks. And could you give me his phone number? <br>\
+A: Yes - just a moment. It's here somewhere - let me just find it. Ah I've two numbers for him. I think the one that begins 0-1-2-7-3 is an old one so use this one: it's 0-1-4- double 4-7-3-2-2-double zero.<br>\
+B: OK - got that. Can you tell me anything about the volunteering? Like what kind of activities it involves?<br>\
+A: Sure well we need volunteers for basic stuff like setting up the course. We have to do that before all the runners arrive.<br>\
+B: OK - so that's a really early start!<br>\
+A: Yes that's right. But if your friend would prefer to arrive a bit later she can also help with guiding the runners so they don't go the wrong way.<br>\
+B: I see. I believe you do a report on some of the races.<br>\
+A: Yes that's right. In fact we do a weekly report on each race and we always try to illustrate it.<br>\
+B: OK - well my friend really likes taking photographs. She's just bought a new camera.<br>\
+A: Actually that would be great. I don't know whether Pete has anyone to take photographs this week.<br>\
+B: Oh, I'll let her know.<br>\
+A: OK good. Could you ask your friend to phone Pete and let him know?<br>\
+B: Yes I will.<br>\
+A: OK thanks. Goodbye.<br>\
+B: Goodbye."
+,vi:"A: Chào buổi sáng - Dave Smith đang nói chuyện.<br>\
+B: Xin chào - tôi có thể nói chuyện với người tổ chức Giải chạy Preston Park không? <br>\
+A: Vâng, là tôi đây.<br>\
+B: Tuyệt - ừm - Tôi đã nói chuyện với một số người bạn của tôi về giải chạy và họ gợi ý tôi liên hệ với bạn để biết thêm thông tin chi tiết.<br>\
+A: Chắc chắn rồi - bạn muốn biết điều gì?<br>\
+B: Vâng - họ nói rằng giải chạy diễn ra vào mỗi thứ Bảy, đúng không? <br>\
+A: Vâng, đúng vậy.<br>\
+B: Được - tuyệt!<br>\
+A: Bạn có biết công viên ở đâu không?<br>\
+B: Ồ vâng - tôi đã từng đến đó rồi. Nhưng công viên khá lớn và tôi không biết nên đi đâu.<br>\
+A: Vâng, có một đường chạy vòng tròn chạy quanh công viên. Cuộc chạy bắt đầu tại quán cà phê, đi qua sân tennis rồi chạy hai vòng quanh hồ và kết thúc tại nơi bắt đầu.<br>\
+B: Được rồi, cuộc chạy diễn ra lúc mấy giờ?<br>\
+A: Vâng, cuộc chạy thực tế bắt đầu lúc 9 giờ sáng nhưng những người chạy bắt đầu đến vào khoảng 8 giờ 45.<br>\
+B: Được rồi, vậy thì tôi cần dậy sớm vào sáng thứ Bảy. Và cuộc chạy kéo dài bao lâu?<br>\
+A: Vâng, trước đây là ba km nhưng hầu hết mọi người muốn chạy xa hơn một chút nên chúng tôi kéo dài thành năm km - bây giờ chúng tôi chạy vòng quanh hồ hai lần và điều đó tăng thêm hai km.<br>\
+B: Đúng rồi, tôi không chắc mình đã từng chạy xa như vậy chưa nên tôi nên bắt đầu tập luyện một chút.<br>\
+A: Ý kiến ​​hay đấy. Nhưng đây không phải là cuộc đua, thực ra chỉ để giải trí và điều tốt nhất là hãy chạy chậm lại trong vài lần đầu tiên và sau đó xem bạn có thể cải thiện thời gian của mình dần dần không.<br>\
+B: Vậy thì cuộc chạy có được tính giờ không? Làm sao tôi biết mình đã làm tốt đến mức nào?<br>\
+A: Khi bạn về đích, bạn sẽ được cấp một mã vạch và bạn mang mã này đến một trong những tình nguyện viên chạy, người sẽ quét mã. Sau đó, bạn có thể xem thời gian trực tuyến khi về nhà.<br>\
+B: À, tôi hiểu rồi. Bạn thu thập tất cả kết quả.<br>\
+A: Chính xác.<br>\
+B: Tôi thấy tuyệt. Vậy tôi đăng ký như thế nào?<br>\
+A: Vâng, có một số cách. Tôi có thể lấy thông tin chi tiết của bạn qua điện thoại nhưng sẽ dễ hơn nhiều nếu bạn thực hiện trên trang web.<br>\
+B: OK - tốt. Ừm, tôi nghĩ rằng đó có lẽ là tất cả những gì tôi cần biết ngay bây giờ. À vâng - đăng ký có mất phí không hay bạn có thu tiền mỗi tuần không?<br>\
+A: Vâng, đăng ký không mất phí nhưng chúng tôi có tính phí chạy. Trên thực tế, chúng tôi vừa tăng phí lên 1,50 bảng Anh. Trước đây là một pound nhưng vì chúng tôi đang thua lỗ nên chúng tôi phải tăng thêm 50 xu.<br>\
+B: OK, cảm ơn. Tôi nghĩ là tôi đã có đủ thông tin về việc tham gia cuộc chạy.<br>\
+[tạm dừng]<br>\
+B: Ừm - anh đã đề cập đến tình nguyện viên. Tôi có một người bạn muốn giúp đỡ. Anh có thể cho tôi biết một số thông tin chi tiết để tôi có thể chuyển cho cô ấy không?<br>\
+A: Chắc chắn rồi, anh cần nhờ bạn mình liên hệ với Pete Maughan. Anh ấy quản lý tất cả các tình nguyện viên.<br>\
+B: OK-tôi không nhớ rõ họ của anh ấy - có phải là Morn - M-O-R-N không?<br>\
+A: Không - chỉ hơi phức tạp hơn một chút - là M-A-U-G-H-A-N. <br>\
+B: Đúng rồi- cảm ơn. Và anh có thể cho tôi số điện thoại của anh ấy không? <br>\
+A: Vâng - đợi một lát. Nó ở đâu đó ở đây - để tôi tìm xem. À, tôi có hai số của anh ấy. Tôi nghĩ cái bắt đầu bằng 0-1-2-7-3 là cái cũ rồi nên dùng cái này: 0-1-4- double 4-7-3-2-2-double zero.<br>\
+B: OK - hiểu rồi. Bạn có thể cho tôi biết đôi điều về hoạt động tình nguyện không? Ví dụ như hoạt động này bao gồm những gì?<br>\
+A: Chắc chắn rồi, chúng tôi cần tình nguyện viên cho những việc cơ bản như thiết lập đường đua. Chúng tôi phải làm điều đó trước khi tất cả người chạy đến.<br>\
+B: OK - vậy là bắt đầu sớm thật!<br>\
+A: Đúng rồi. Nhưng nếu bạn của bạn muốn đến muộn hơn một chút, cô ấy cũng có thể giúp hướng dẫn người chạy để họ không đi sai đường.<br>\
+B: Tôi hiểu rồi. Tôi tin là bạn có báo cáo về một số cuộc đua.<br>\
+A: Đúng rồi. Trên thực tế, chúng tôi có báo cáo hàng tuần về mỗi cuộc đua và chúng tôi luôn cố gắng minh họa báo cáo đó.<br>\
+B: OK - bạn tôi thực sự thích chụp ảnh. Cô ấy vừa mới mua một chiếc máy ảnh mới.<br>\
+A: Thực ra thì tuyệt lắm. Tôi không biết Pete có ai chụp ảnh tuần này không.<br>\
+B: Ồ, tôi sẽ cho cô ấy biết.<br>\
+A: Được rồi. Bạn có thể nhờ bạn của bạn gọi điện cho Pete và báo cho anh ấy biết không?<br>\
+B: Được, tôi sẽ làm vậy.<br>\
+A: Được rồi, cảm ơn. Tạm biệt.<br>\
+B: Tạm biệt."
+	,isTest: true
+},{
+	track:"Cam40"
+	,isTest: true
+},{
+	track:"Cam41"
+	,isTest: true
+},{
+	track:"Cam42"
+	,isTest: true
+}
+
+
+
 
 ]
 
@@ -231,13 +339,13 @@ A: Thanks very much!"
 function makeOCG_DATA () 
 {
 	let rrr = []
-	for (var i = 3; i <= 38; i++) 
+	for (var i = 3; i <= 70; i++) 
 	{
 		const trackName = 'Cam' + (i < 10 ? ('0'+ i) : i )
 
 		var json = {
 			track: trackName,
-			en: trackName,
+			en: '',
 			images: [trackName],
 		}
 
@@ -249,6 +357,7 @@ function makeOCG_DATA ()
 			json.vi = findObj.vi || ''
 			json.voca = findObj.voca || ''
 			json.note = findObj.note || ''
+			json.isTest = findObj.isTest || false
 
 		}
 

@@ -168,16 +168,24 @@ function getFullTile(obj) {
 	var track  = (obj.track) ? (obj.track + ' ') : '';
 	var title  = (obj.title) ? (obj.title) : '';
 	var hasNote = obj.note && obj.note.trim().length > 0
+	var isBlankEn = !obj.en || obj.en.trim().length == 0
 	var hasExercise = (obj.T_F_NG && obj.T_F_NG.trim().length > 0)
 						|| (obj.images && obj.images.length > 0)
 
+	// story.L					
+	var ngStyle = {}
+	if (hasNote) ngStyle.color = 'red'
+	if (isBlankEn) ngStyle['color'] = 'gray'
+	if (obj.isTest) ngStyle['animation'] = 'color-change 1s infinite'
+		
 	return {
 		unit : unit,
 		track : track,
 		title : title,
-		blankEn : !obj.en || obj.en.trim().length == 0,
+		blankEn : isBlankEn,
 		hasNote : hasNote,
 		hasExercise : hasExercise,
+		ngStyle: ngStyle,
 		fTitle : track + unit + title 
 	}
 }

@@ -284,7 +284,14 @@ input[type="range"]:focus::-moz-range-thumb {
   100% { color: red; }
 }
 
-.mp3PlayStatus {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e);
-  animation: color_change 1s infinite;
+.mp3PlayStatus
+{
+  animation: color-change 17s infinite;
+}
+
+@keyframes color-change {
+  0% { color: green; }
+  25% { color: blue; }
+  50% { color: yellow; }
+  100% { color: gray; }
 }

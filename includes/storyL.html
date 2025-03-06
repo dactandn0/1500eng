@@ -3,7 +3,10 @@
 	<a ng-repeat="title in titles"
 	ng-click="fetchStory($index);" 
 	ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal' "
-	href="" class="p-2 mr-1"> <span ng-class="title.hasNote ? 'text-danger' : '' "> {{title.trackRutgon || title.track || $index}} </span>	
+	href="" class="p-2 mr-1">
+		<span ng-style="title.ngStyle">
+			{{title.trackRutgon || title.track || $index}} 
+		</span>
 	</a>
 </div>
 

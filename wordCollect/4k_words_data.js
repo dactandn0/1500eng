@@ -18,9 +18,12 @@ closest confidant (n) /ˈkɑːnfɪdænt/ người bạn tâm giao gần gũi nh�
 intimate (a) /ˈɪntɪmət/ thân mật<br>\
 ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
 growth (n) /ɡrəʊθ/ sự phát triển, sự tăng, phát dục<br>\
+disease  (n) /dɪˈziːz/ bệnh<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
 burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
+factor (n) /ˈfæktər/ nhân tố<br>\
+influence  (n) /ˈɪnfluəns/ ảnh hưởng<br>\
 fragrance (n) /ˈfreɪɡrəns/ hương thơm<br>\
 addiction (n) /əˈdɪkʃn/ nghiện ngập<br>\
 passion (v) /ˈpæʃn/ niềm đam mê<br>\

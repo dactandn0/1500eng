@@ -11,7 +11,7 @@ app.controller("configUICtrl", function($scope, $rootScope) {
 
 $scope.audioPitch = 1.5
 $scope.audioRate = 0.8
-$scope.adjAudioTime = 8
+$scope.adjAudioTime = 5
 $scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
 

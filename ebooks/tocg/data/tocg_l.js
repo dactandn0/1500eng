@@ -187,6 +187,20 @@ A: Thanks very much!"
 },{
 	track:"Cam18"
 	,en:"Morning everyone, thanks for coming. Now, from next week there'll be a rota for all of you to help out at the information stand here at Brookside Market. So, I just wanted to give you a briefing about what you can find where. The information booth is to the right of the entrance and I've given you all a plan to mark important places on. One of the most common enquiries is where can I pay for my parking? People are amazed when we tell them that it's free now. We used to charge for it and there was a ticket booth to the left of the entrance, but now that it's been turned into a small stage, we hold cookery demonstrations there. Local chefs come in and show people how to prepare dishes. It's really popular and you get a nice view of the fountain there. We have over 50 stalls at the markets, selling everything from fresh fruit and vegetables to locally made crafts. Which unfortunately means people won't find things like books or anything second-hand. We have a famous baker at the market and many people get here really early just to buy his produce. His stall is located at the back of the markets next to the barbecue. We sell burgers and sausages there but a lot of people like to bring their own lunch to eat and they're welcome to go to the special area near the tree in the middle of the markets where they can do just that. It's handy for the toilets too. The markets are located next to a circus school that holds classes for children at the weekend, so we often get a lot of family groups in. There's a playground on the right-hand side that's popular with them, and just in front of that is where the farmers bring along chickens, rabbits and lambs for the children to pet. That's always a very popular feature so you'll definitely be asked about that. Just let people know there is a small fee if the children want to feed them. Well, that's everything for now..."
+},{
+	track:"Cam19"
+	,en:"A<br>\
+At the bottom of the system, there is a storage tank, which can hold up to 500 litres of rainwater. The water stored in the tank can be used for general gardening and cleaning.<br>\
+B<br>\
+A small spring in the centre causes the toy inside to bounce out with a twisting movement. The spring coils back down easily enough so that the toy can fit back into the box.<br>\
+C<br>\
+The water passes through the pipe and, as it travels along, it carries the weeds with it.<br>\
+D<br>\
+The water in the pool was becoming quite polluted so a pump was used to pump the water out of the pool and force it through a filter.<br>\
+E<br>\
+There is a very fine grille at different points along the pipe. These filter out any large rocks or stones. So the water is very finely strained by the time it reaches the dam.<br>\
+F<br>\
+There is a wheel on the side, which is attached to a small motor that turns the wheel. As it spins, a long chain passes around the outside of it and ..."
 }
 
 
@@ -306,9 +320,49 @@ Thank you for calling the Pacton-on-Sea phoneline and we look forward to seeing 
 	,isTest: true
 },{
 	track:"Cam41"
+	,en:"Randhir: Hello - I'm Randhir Ghotra from the technologies department.<br>\
+Dave: Ah yes. Good. I'm Dave Hadley. Thanks for coming to see me.<br>\
+Randhir: That's OK. I believe you want us to do some work for you?<br>\
+Dave: Yes that's right. Um, I'm responsible for student admissions to the college and I use a computer system to help process student enrolments and to do the timetabling. But it really doesn't suit the way we work these days. It's over ten years old and although it was fine when it was first introduced, it is just not good enough now.<br>\
+Randhir: OK - what problems are you experiencing? Dave: Well, 20 years ago, the college was quite small and we didn't have the numbers of students or tutors that we have now. Randhir: So the system can't handle the increasing volumes... Dave: Well, there's a lot more data now and it sometimes seems the system has crashed but, in fact, it just takes ages to go from one screen to the next.<br>\
+Randhir: Right. Is that the only problem?<br>\
+Dave: Well that's the main one, but there are others. In the past, doing the timetabling was quite simple but now we have a lot more courses and what's made it complicated is that many of them have options.<br>\
+Randhir: Right - but the system should allow you to include those.<br>\
+Dave: Well no, it doesn't. It was supposed to - and a few years ago we did ask someone from the technologies department to fix it, but they never seemed to have the time. Randhir: Hmm... are there any other issues with the system? Dave: Well - I've been given extra responsibilities and so I have even less time to do the timetabling. If there was anything you could do, Randhir, to make the process more efficient, that would be really helpful.<br>\
+Randhir: Well it sounds like you could do with an assistant but that's obviously not possible, so what about having an online system that students can use to do their scheduling? Dave: How would that work?<br>\
+Randhir: Well - it may mean less choice for students but we could create a fixed schedule of all the courses and options and they could then view what was available ...<br>\
+Dave:... and work it out for themselves that sounds great. <br>\
+Randhir: OK, so... um... we'll need to decide whether or not to improve the existing system or to build a<br>\
+completely new system.<br>\
+Dave: Well I'd much prefer to have a new system. Quite frankly, I've had enough of the old one.<br>\
+Randhir: OK - that'll probably take longer although it may save you money in the long run. When were you hoping to have this in place?<br>\
+Dave: Well it's January now and the new intake of students will be in September. We need to start processing admissions in the next few weeks really.<br>\
+Randhir: Well it will take more than a few weeks, I'm afraid. As an initial estimate I think we'll be looking at April or May to improve the existing system but for a new system it would take at least nine months. That would be October at the earliest. <br>\
+[pause]<br>\
+Dave: What are the next steps if we are to have a new system? Randhir: Well, the first question is - do you have support from your senior management?<br>\
+Dave: Yes, I've already discussed it with them and they're also keen to get this work done.<br>\
+Randhir: OK, because I was going to say, that's the first thing you need to do and without that we can't go ahead. Dave: Yes, I've done that.<br>\
+Randhir: That's good.<br>\
+Dave: Actually, they mentioned that there's probably a form I need to complete to formally start the project.<br>\
+Randhir: Yes - that's the next thing you need to do. I'll send you an email with a link so you can fill it in online. It's called a 'project request form'.<br>\
+Dave: OK, great. And then what happens?<br>\
+Randhir: Well, I have a list of things but I think the third thing you should do is see Samir. He's our analyst who will look at the system and identify what needs to be done.<br>\
+Dave: OK - can you send me his contact details and I'll set up a meeting with him.<br>\
+Randhir: OK that's good, so we should soon be able to get a team together to start the work. Some members of our team work in different locations so it's not easy to have face-to-face meetings.<br>\
+Dave: That's OK - I'm used to having conference calls providing they are not late at night.<br>\
+Randhir: Right - so I'll send you details of the team and if you could set up a call that would be great.<br>\
+Dave: OK, I'll do that.<br>\
+Randhir: Thanks."
 	,isTest: true
 },{
 	track:"Cam42"
+	,en:"Hi everyone today I'm going to be talking about the origins of ceramics. So, first of all, let's start off with - what is a ceramic? Well, generally speaking, ceramics are what you get when you apply heat to certain inorganic, non-metallic solids and then allow them to cool. And examples of ceramics are everyday things like earthenware pots, crockery, glassware and even concrete. <br>\
+So how did it all begin? Well it all started around 29,000 years ago when humans discovered that if you dig up some soft clay from the ground, mould it into a shape and then heat it up to a very high temperature, when it cools the clay has been transformed into something hard and rigid. And so what did those first humans do with their discovery? Well - they created figurines which were small statues and which depicted animals or gods or any shape that the clay could be moulded into. And all this activity was centred around southern Europe where there is also evidence of ceramics that were created much later. The early humans also found a practical use for their discovery, such as storing things like grain - although there were drawbacks. The pots were porous so that, although they could carry water in them, it wasn't possible to store it over a long period. And also, they were quite brittle and shattered very easily if they were dropped.<br>\
+But despite these problems, it was many thousands of years before there were any improvements. In China at around 200 BC, they discovered that by adding minerals to the clay they could improve both the appearance and the strength of the ceramics. But it took nearly a thousand years before they perfected the process to produce high-quality ceramics known as porcelain. And once they had perfected the process, they kept it a secret for another thousand years! Compared to the first ceramics, porcelain was lighter, finer, harder and whiter and became an important commodity in China's trading with the rest of the world for hundreds of years. In fact, it became so valuable that it was known as white gold and spies were sent to China to discover what they did to the clay to produce such high-quality merchandise.<br>\
+It wasn't until the eighteenth century that the secret began to unravel. A German alchemist called Johann Friedrich Bottger was asked by the king to make gold out of lead. Unfortunately, Bottger failed to achieve this and soon gave up, but in order to please the king he attempted to make high-quality porcelain. And after many years of experimentation, he discovered that by adding quartz and a material called china stone to very high-quality clay he managed to get the same results that the Chinese had been achieving for the last 1000 years.<br>\
+We'll now look at another ceramic which is made from mixing sand with minerals and heating to over 600 degrees Celsius. When this mixture cools the result is of course glass. The main difference between ceramics made from clay and glass is that clay is made up of crystalline plates which become locked together in the cooling process whereas glass cools too quickly for crystals to form. Apart from that, the process of heating up naturally occurring materials to transform them is the same. The origins of glass date back to 3500 BC but it wasn't until the Roman Empire, 2,000 years ago, that the art of glass-blowing and the practical uses of glass became more widespread. One of the more innovative uses was to use it in windows as, up until then, they had just been holes in walls. It must have been very draughty in those days!<br>\
+The Romans were also responsible for inventing concrete. And although the origins are uncertain, experts think that this is largely due to the high level of volcanic activity in the area. The Romans observed that, when volcanic ash mixes with water and then cools, it gets extremely hard and almost impossible to break up. The chemical reaction that follows is very complex and continues for many years, and the concrete just keeps getting harder. Evidence of this is the numerous Roman remains that are still standing, many of which are almost completely intact.<br>\
+One of the most important facts about concrete for the Romans was that it can be created underwater. As the Roman Empire grew, the Romans needed to take control of the seas and for this they needed to build harbours capable of holding a fleet of ships. Pouring concrete mixture into the sea immediately started the hardening process and rather than just dissolving in the mass of water, the substance was tough and long-lasting. This strange characteristic of concrete made a significant contribution to the success of the Roman Empire."
 	,isTest: true
 }
 

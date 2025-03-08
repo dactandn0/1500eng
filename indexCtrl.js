@@ -383,4 +383,3 @@ app.config(function(toastrConfig) {
     tapToDismiss: true,
   });
 });
-

@@ -133,8 +133,7 @@ We encountered quite a few problems during our research. Firstly, the weather wa
 	track:"Cam14"
 	,en:"1<br>\
 A: We really need to organise our trip, you know.<br>\
-B: I know, I was thinking the same. We need to arrange<br>\
-accommodation and flights.<br>\
+B: I know, I was thinking the same. We need to arrange accommodation and flights.<br>\
 A: And we'll need transport while we're there we could hire a car?<br>\
 B: My dad said we could borrow his.<br>\
 A: Well, that's one less thing to worry about.<br>\
@@ -151,6 +150,7 @@ A: Not at all, in fact I was thinking we could try and include some of those nic
 B: OK, it would certainly make it look a bit more interesting.<br>\
 4<br>\
 Studying ice cores in the South Pole can tell us a lot about the past climate, which, in turn, can help us understand how today's climate is changing. My particular area of study is snow. While we scientists understand the process of how snow is created, very little is known about how snow interacts with the atmosphere and influences our weather patterns. One of the things we're trying to do is to link what we already know about meteorology and clouds and determine the impact that snow has on that."
+,voca:"well-established,harsh"
 },
 {
 	track:"Cam15"
@@ -201,7 +201,18 @@ E<br>\
 There is a very fine grille at different points along the pipe. These filter out any large rocks or stones. So the water is very finely strained by the time it reaches the dam.<br>\
 F<br>\
 There is a wheel on the side, which is attached to a small motor that turns the wheel. As it spins, a long chain passes around the outside of it and ..."
+},{
+	track:"Cam20"
+	,en:""
 }
+
+
+
+
+
+
+
+
 
 
 

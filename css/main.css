@@ -291,7 +291,6 @@ input[type="range"]:focus::-moz-range-thumb {
 
 @keyframes color-change {
   0% { color: green; }
-  25% { color: blue; }
   50% { color: yellow; }
-  100% { color: gray; }
+  70% { color: red; }
 }

@@ -11,6 +11,7 @@ sedentary (a) /ˈsednteri/ ít vận động<br>\
 facility (n) /fəˈsɪləti/ cơ sở<br>\
 commute (v)  /kəˈmjuːt/ đi lại (bus, train, car)<br>\
 eco-friendly (n) thân thiện với môi trường<br>\
+struggle (v) /ˈstrʌɡl/ đấu tranh<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
 despite (prep) /dɪˈspaɪt/ cho dù<br>\
 on top of that (idiom) hơn thế<br>\
@@ -29,7 +30,9 @@ addiction (n) /əˈdɪkʃn/ nghiện ngập<br>\
 passion (v) /ˈpæʃn/ niềm đam mê<br>\
 confide (v) /kənˈfaɪd/ tâm sự<br>\
 betray (v) /bɪˈtreɪ/ phản bội<br>\
+well-established (a) // được thiết lập tốt<br>\
 affordable (a) /əˈfɔːrdəbl/ có thể chi trả<br>\
+harsh (a) /hɑːrʃ/ khắc nghiệt, chói gắt<br>\
 landfill (n) /ˈlændfɪl/ bãi rác<br>\
 drift (n,v) /drɪft/ trôi dạt, xa cách<br>\
 arrive (v) /əˈraɪv/ đến<br>\

@@ -7,13 +7,15 @@ agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
 conducive (a) /kənˈduːsɪv/ có lợi<br>\
+globalised (a) /ˈɡləʊbəlaɪz/ toàn cầu hóa<br>\
 sedentary (a) /ˈsednteri/ ít vận động<br>\
 facility (n) /fəˈsɪləti/ cơ sở, thuận tiện<br>\
 commute (v)  /kəˈmjuːt/ đi lại (bus, train, car)<br>\
 user-friendly (a) = easy to use <br>\
 eco-friendly (a) thân thiện với môi trường<br>\
-operation (n) hoạt động<br>\
-maintenance (n) bảo trì<br>\
+eradicate (v) /ɪˈrædɪkeɪt/ xóa bỏ, tiêu diệt<br>\
+operation (n) /ɑːpəˈreɪʃn/ hoạt động<br>\
+maintenance (n) /ˈmeɪntənəns/ bảo trì<br>\
 struggle (v) /ˈstrʌɡl/ đấu tranh<br>\
 circular (a) /ˈsɜːrkjələr/ thuộc hình tròn, xoay vòng<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
@@ -33,7 +35,7 @@ adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
 burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
 factor (n) /ˈfæktər/ nhân tố<br>\
-influence  (n) /ˈɪnfluəns/ ảnh hưởng<br>\
+influence  (n,v) /ˈɪnfluəns/ ảnh hưởng<br>\
 fragrance (n) /ˈfreɪɡrəns/ hương thơm<br>\
 addiction (n) /əˈdɪkʃn/ nghiện ngập<br>\
 passion (v) /ˈpæʃn/ niềm đam mê<br>\
@@ -161,6 +163,7 @@ instead (adv) /ɪnˈsted/ thay thế<br>\
 planet (n) /ˈplænɪt/ hành tinh<br>\
 report (v) /rɪˈpɔːrt/ báo cáo<br>\
 resolve (v) /rɪˈzɑːlv/ giải quyết<br>\
+vaccination (n) /ˌvæksɪˈneɪʃn/ tiêm chủng<br>\
 solve (v) /sɑːlv/ giải quyết<br>\
 suddenly (adv) /ˈsʌdənli/ đột nhiên<br>\
 stability (n) /səˈpəʊz/ sự ổn định<br>\
@@ -169,7 +172,7 @@ universe (n) /ˈjuːnɪvɜːrs/ vũ trụ<br>\
 reason (n,v) lý do, (v) suy đoán<br>\
 avoid (v) /əˈvɔɪd/ tránh (+doing Sth)<br>\
 behave (v) /bɪˈheɪv/ hành xử<br>\
-concern (v) /kənˈsɜːrn/ quan tâm<br>\
+concern (n,v) /kənˈsɜːrn/ quan tâm<br>\
 expect (v) /ɪkˈspekt/ mong đợi<br>\
 particularly (adv) /pərˈtɪkjələrli/ cụ thể<br>\
 frequently (adv) /ˈfriːkwəntli/ thường xuyên<br>\
@@ -840,7 +843,7 @@ meteor (n) /ˈmiːtiər/ thiên thạch<br>\
 exhibit triển lãm<br>\
 fame danh tiếng<br>\
 forecast,genius dự báo, thiên tài<br>\
-geography địa lý<br>\
+geography (n) địa lý<br>\
 interfere can thiệp<br>\
 lightly nhẹ nhàng<br>\
 principal chính<br>\

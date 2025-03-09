@@ -2,6 +2,7 @@
 var VocaToUI = WORDS_3K_DATA
   //  .concat(IELTS_5K_DATA)
     .concat(word_4000_data)
+    .concat(word_4000_data_2)
     .concat(BEGINNER_READING_VOCA)
     .concat(VOCA_SPECIAL)
 

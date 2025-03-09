@@ -78,6 +78,10 @@ const SynonymData = [
 	type:"v",
 	mean:"đánh giá"
 },{
+	words:"appearance |emergence /ɪˈmɜːrdʒəns/ | protrusion",
+	type:"n",
+	mean:"sự xuất hiện"
+},{
 	words:"disappear /dɪsəˈpɪr/|vanish",
 	type:"v",
 	mean:"biến mất"
@@ -102,18 +106,25 @@ const SynonymData = [
 	words:"personnel /,p3:sa'nel/|staff /sta:f/",
 	type:"n",
 	mean:"nhân viên"
-},
-{
+},{
+	words:"disease /dɪˈziːz/| illness /ˈɪlnəs/",
+	type:"n",
+	mean:"bệnh"
+},{
 	words:"expert|specialist",
 	type:"n",
 	mean:"nhà chuyên gia (môn)"
+},{
+	words:"obvious |apparent | clear",
+	type:"a",
+	mean:"rõ ràng"
 },{
 	words:"portion|serving",
 	type:"n",
 	mean:"phần, khẩu phần"
 },
 {
-	words:"common /ˈkɑːmən/|universal /juːnɪˈvɜːrsl/|ubiquitous /juːˈbɪkwɪtəs/",
+	words:"common /ˈkɑːmən/|universal /juːnɪˈvɜːrsl/|ubiquitous /juːˈbɪkwɪtəs/ | prevalent /ˈprevələnt/",
 	type:"a",
 	mean:"phổ biến, toàn thể"
 },

@@ -553,7 +553,7 @@ G <br>\
 Phân loại phụ thứ hai của địa lý y tế là địa lý cung cấp dịch vụ chăm sóc sức khỏe. Nhóm này nghiên cứu tính khả dụng (hoặc thiếu hụt) của các nguồn lực chăm sóc sức khỏe cho các cá nhân và nhóm dân số trên toàn thế giới. Ở cả các quốc gia phát triển và đang phát triển, thường có sự khác biệt rất lớn giữa các lựa chọn dành cho những người ở các tầng lớp xã hội, nhóm thu nhập và trình độ học vấn khác nhau. Các cá nhân làm việc trong lĩnh vực địa lý cung cấp dịch vụ chăm sóc sức khỏe cố gắng đánh giá mức độ chăm sóc sức khỏe trong khu vực (ví dụ, mọi người có thể rất khó khăn để được chăm sóc y tế vì có một ngọn núi giữa làng của họ và bệnh viện gần nhất). Những nhà nghiên cứu này là những người đi đầu trong việc đưa ra các khuyến nghị về chính sách cho các tổ chức quốc tế, các cơ quan chính quyền địa phương và các bên khác.<br>\
 H <br>\
 Lĩnh vực địa lý sức khỏe thường bị bỏ qua, nhưng nó lại là một lĩnh vực rất cần thiết trong lĩnh vực địa lý và chăm sóc sức khỏe. Nếu chúng ta có thể hiểu được địa lý ảnh hưởng đến sức khỏe của chúng ta như thế nào bất kể chúng ta ở đâu trên thế giới, chúng ta có thể điều trị bệnh tốt hơn, ngăn ngừa bệnh tật và giữ cho mọi người an toàn và khỏe mạnh."
-	,voca:"provision,improvements,eradicated,prevalent,asthma,industrialisation,damp,re-emergence,polio,hybrid,discrepancy"
+	,voca:"provision,improvements,eradicated,prevalent,asthma,industrialisation,damp,re-emergence,polio,hybrid,discrepancy,vaccination,availability"
 	,note:""
 }
 

@@ -170,8 +170,7 @@ A: Hello, Professor Jones, would you be able to help me with my assignment?<br>\
 B: Of course. Are you having problems with choosing a good location for the new bridge?<br>\
 A: Yes. I was thinking of putting it right in the middle as the river is at its narrowest there.<br>\
 B: Well, that would save costs.<br>\
-A: Exactly, but I realised that it would create costs in other<br>\
-areas as it would mean some important buildings being knocked down. So I think it would be better if it's at the eastern end of the motorway.<br>\
+A: Exactly, but I realised that it would create costs in other areas as it would mean some important buildings being knocked down. So I think it would be better if it's at the eastern end of the motorway.<br>\
 B: That's a good idea, it would be a lot more useful than if it was at the western end.<br>\
 4<br>\
 The Traviston Frog is different to many other species of frog. It is very small and so, unlike other species, it is unable to live in the area of a pond, though it does need to live in fairly close proximity to water so that it can feed. Rather than choosing the safety of a tree, which would be too tall and may actually increase the threat from predators, it elects to live in a tiny burrow surrounded by bushes."
@@ -201,9 +200,87 @@ E<br>\
 There is a very fine grille at different points along the pipe. These filter out any large rocks or stones. So the water is very finely strained by the time it reaches the dam.<br>\
 F<br>\
 There is a wheel on the side, which is attached to a small motor that turns the wheel. As it spins, a long chain passes around the outside of it and ..."
+,voca:"hold up to"
 },{
 	track:"Cam20"
-	,en:""
+	,en:"Hello, I've come along to tell you about an invention of mine called the Party Popper Machine. Here is a diagram of the machine and I'll just explain how it works. It's basically a set of interconnected cogs and wheels that rotate in turn and cause a party popper to pop! The process begins with what I like to call the party starter! It's located on the top of the base at the front. I was very fond of wind-up toys when I was young, but sadly I couldn't find a way to attach a winder to this contraption, but I think this big round button looks nice and dramatic and my children fight over getting to push it! The button activates a small motor that's housed directly under the box at the front. It generates enough power to get everything going but not so much that it overheats and needs a cooling fan! The legs elevate the base and help with that. The base also has another use as it can also hold up to 10 spare party poppers! So you never need to worry about running out. Once the motor is running, it turns the spiky wheel that is attached to the loaded party popper. I call this the detonator! As it turns, the string of the party popper slowly wraps around it and is pulled tighter and tighter until it explodes! So much fun!"
+	,vi:"Xin chào, tôi đến đây để kể cho bạn nghe về một phát minh của tôi có tên là Máy Party Popper. Đây là sơ đồ của máy và tôi sẽ giải thích cách thức hoạt động của nó. Về cơ bản, nó là một bộ bánh răng và bánh xe được kết nối với nhau, quay theo lượt và khiến một party popper nổ tung! Quá trình bắt đầu bằng thứ mà tôi thích gọi là bộ khởi động tiệc! Nó nằm ở phía trên cùng của đế ở phía trước. Tôi rất thích đồ chơi lên dây cót khi còn nhỏ, nhưng thật đáng buồn là tôi không thể tìm ra cách gắn một bộ lên dây cót vào đồ chơi này, nhưng tôi nghĩ nút tròn lớn này trông đẹp và ấn tượng và các con tôi tranh nhau để được ấn nó! Nút này kích hoạt một động cơ nhỏ được đặt ngay dưới hộp ở phía trước. Nó tạo ra đủ năng lượng để mọi thứ hoạt động nhưng không quá nhiều đến mức quá nhiệt và cần quạt làm mát! Các chân nâng đế lên và giúp làm điều đó. Đế cũng có một công dụng khác là nó cũng có thể chứa tới 10 party popper dự phòng! Vì vậy, bạn không bao giờ phải lo lắng về việc hết điện. Khi động cơ chạy, nó sẽ quay bánh xe nhọn gắn vào party popper đã nạp đạn. Tôi gọi đây là kíp nổ! Khi nó quay, sợi dây của party popper sẽ từ từ quấn quanh nó và được kéo chặt hơn cho đến khi nó phát nổ! Thật vui!"
+},{
+	track:"Cam21"
+	,en:"A The thermometer on the end of the device allows us to measure changes in temperature.<br>\
+B I had to use my calculator to work out the final figure and calculate how much profit we'd made.<br>\
+C We put the animals on to the scales to weigh them, and recorded their weight at the beginning and end of the experiment.<br>\
+D We attached a speedometer so that we could measure our speed and adjust it if necessary."
+},{
+	track:"Cam22"
+	,en:"Here's how to wrap a present. First, gather together all of the things you need: wrapping paper, sticky tape, scissors, some ribbon and, of course, a present. Then, place your present on the opened wrapping paper and cut a suitable amount using the scissors. Next, wrap the paper around the present and stick it down with sticky tape. Then, neatly fold up each of the ends of the paper and stick them down. Finally, tie the ribbon around your present. It's now ready to present!"
+},{
+	track:"Cam23"
+	,en:"1 Well, I agree up to a point. <br>\
+2 I think that's a really valid point. <br>\
+3 Well, I'm not so sure about that. <br>\
+4 I think you're absolutely right. <br>\
+5 Hmm, that's a bit hard to believe. <br>\
+6 I think that's highly unlikely.<br>\
+7 That seems doubtful to me.<br>\
+8 I have to admit I don't like the sound of that at all."
+},{
+	track:"Cam24"
+	,en:"A: So what did you think about the research?<br>\
+B: I thought it was well thought out, although it did take three years to produce any results.<br>\
+A: Yes, but that's to be expected given the age of the participants. I mean, they had to chart their progress over several years.<br>\
+B: I suppose so.<br>\
+A: But didn't you think the results were astonishing? I know I did.<br>\
+B: Yeah, me too. It's amazing to think that watching TV can have such a clearly demonstrated effect on children's obesity problems. It's quite alarming really.<br>\
+A: I agree.<br>\
+B: People were generally unimpressed by the findings though, which is typical when there's a suggestion that we change our behaviour."
+},{
+	track:"Cam25"
+	,en:"A: Right, let's organise our presentation on the new science equipment, shall we?<br>\
+B: Yes, I'm a bit worried it's overly long - we only have 10 minutes.<br>\
+A: Why don't we go through each section then.<br>\
+B: OK, what about the introduction? I think that's OK. A: Hmm. It's not very exciting.<br>\
+B: I don't think we should cut any of it though.<br>\
+A: Of course, and we can still do it the same way, but maybe we should bring along some actual equipment?<br>\
+B: Great idea, that would help grab their attention. Now, next we look at the benefits of this technology. We've got plenty about that.<br>\
+A: I agree. In fact, some of the ones we've chosen are pretty obvious, I think, perhaps we could leave some out?<br>\
+B: Agreed. And that would save some time.<br>\
+A: Yes, now, when it comes to the negatives, I'd like to propose something a little different.<br>\
+B: I like that section, it's always enjoyable hearing about technology going wrong!<br>\
+A: Well, we've got a few thought-provoking quotes from people who've encountered specific problems. And we were planning on just reading them out but I think we should video them and play the recording instead.<br>\
+B: Oh, that would be better. And if we use a variety of media, I think we'll get a higher mark.<br>\
+A: Yes. That's what I was thinking,<br>\
+B: OK, let's give it a try. Now, what about the conclusion? Should we include something else? It's pretty short at the moment.<br>\
+A: Yes, but I think that's OK. There's not much more to say, really. We've already verified all our sources, so I don't think there's anything else left to do.<br>\
+B: Well, I think I'll do an Internet search anyway, just to be sure we haven't missed anything.<br>\
+A: OK, it would be good to be able to state that we have included all the very latest information.<br>\
+B: Absolutely."
+},{
+	track:"Cam26"
+	,en:"Section 1<br>\
+A: How are we going to get to the airport on Monday? Shall we get a taxi?<br>\
+B: It would be nice and convenient but the fare is so expensive. A: That's true. Well, if you want to save money, we could<br>\
+always take the bus.<br>\
+B: It might be cheaper but the bus doesn't start running until 7 o'clock and we need to be at the airport by 6. I'll ask my sister if she can give us a lift.<br>\
+A: That would be great if she could drive us.<br>\
+B: Yes. I'm sure she won't mind.<br>\
+Section 3<br>\
+A: So, what else have we got to do?<br>\
+B: Well, we've gathered enough information. I don't think we need to find out any more.<br>\
+A: You're right. Should we go and see Professor Smith, then? We could ask his advice.<br>\
+B: Well, he could check it for us and make sure we've done enough. But I'd rather do that after we've put it all together. At the moment, we only have a lot of handwritten notes. I don't want to show him that. A: OK. Let's divide the material up and each put it on to a disc so that we can print off a nicely presented copy."
+,vi:"Mục 1<br>\
+A: Chúng ta sẽ đến sân bay bằng cách nào vào thứ Hai? Chúng ta sẽ đi taxi chứ?<br>\
+B: Sẽ rất tuyệt và tiện lợi nhưng giá vé lại đắt quá. A: Đúng vậy. Vâng, nếu bạn muốn tiết kiệm tiền, chúng ta có thể<br>\
+luôn đi xe buýt.<br>\
+B: Có thể rẻ hơn nhưng xe buýt không bắt đầu chạy cho đến 7 giờ tối và chúng ta cần có mặt tại sân bay trước 6 giờ. Tôi sẽ hỏi chị gái tôi xem cô ấy có thể chở chúng ta đi không.<br>\
+A: Sẽ thật tuyệt nếu cô ấy có thể lái xe đưa chúng ta đi.<br>\
+B: Vâng. Tôi chắc là cô ấy sẽ không phiền đâu.<br>\
+Mục 3<br>\
+A: Vậy, chúng ta còn phải làm gì nữa?<br>\
+B: Vâng, chúng ta đã thu thập đủ thông tin rồi. Tôi không nghĩ chúng ta cần phải tìm hiểu thêm nữa.<br>\
+A: Bạn nói đúng. Vậy chúng ta có nên đi gặp Giáo sư Smith không? Chúng ta có thể hỏi ý kiến ​​của anh ấy.<br>\
+B: Vâng, anh ấy có thể kiểm tra giúp chúng ta và đảm bảo rằng chúng ta đã làm đủ. Nhưng tôi muốn làm điều đó sau khi chúng ta đã tổng hợp tất cả lại. Hiện tại, chúng ta chỉ có rất nhiều ghi chú viết tay. Tôi không muốn cho anh ấy xem. A: Được. Chúng ta hãy chia tài liệu ra và mỗi người ghi vào một đĩa để chúng ta có thể in ra một bản sao được trình bày đẹp mắt."
 }
 
 

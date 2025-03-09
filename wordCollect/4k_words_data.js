@@ -8,17 +8,26 @@ longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
 conducive (a) /kənˈduːsɪv/ có lợi<br>\
 sedentary (a) /ˈsednteri/ ít vận động<br>\
-facility (n) /fəˈsɪləti/ cơ sở<br>\
+facility (n) /fəˈsɪləti/ cơ sở, thuận tiện<br>\
 commute (v)  /kəˈmjuːt/ đi lại (bus, train, car)<br>\
-eco-friendly (n) thân thiện với môi trường<br>\
+user-friendly (a) = easy to use <br>\
+eco-friendly (a) thân thiện với môi trường<br>\
+operation (n) hoạt động<br>\
+maintenance (n) bảo trì<br>\
 struggle (v) /ˈstrʌɡl/ đấu tranh<br>\
+circular (a) /ˈsɜːrkjələr/ thuộc hình tròn, xoay vòng<br>\
 daily (a) /ˈdeɪli/ hằng ngày<br>\
-despite (prep) /dɪˈspaɪt/ cho dù<br>\
+tank (n) /tæŋk/ xe tăng, bồn (thùng) chứa<br>\
+courtyard (n) /ˈkɔːrtjɑːrd/ sân, khu đất trống<br>\
+predator (n) /ˈpredətər/ động vật ăn thịt<br>\
+fig (n) /ˈdeɪli/ cây sung<br>\
+despite (prep) /dɪˈspaɪt/ cho dù [+ N/Ving]<br>\
 on top of that (idiom) hơn thế<br>\
 closest confidant (n) /ˈkɑːnfɪdænt/ người bạn tâm giao gần gũi nhất<br>\
 intimate (a) /ˈɪntɪmət/ thân mật<br>\
 ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
 growth (n) /ɡrəʊθ/ sự phát triển, sự tăng, phát dục<br>\
+assignment (n) /əˈsaɪnmənt/ công việc, phân công<br>\
 disease  (n) /dɪˈziːz/ bệnh<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
@@ -28,6 +37,7 @@ influence  (n) /ˈɪnfluəns/ ảnh hưởng<br>\
 fragrance (n) /ˈfreɪɡrəns/ hương thơm<br>\
 addiction (n) /əˈdɪkʃn/ nghiện ngập<br>\
 passion (v) /ˈpæʃn/ niềm đam mê<br>\
+psychology  (n) /saɪˈkɑːlədʒi/ tâm lý học<br>\
 confide (v) /kənˈfaɪd/ tâm sự<br>\
 betray (v) /bɪˈtreɪ/ phản bội<br>\
 well-established (a) // được thiết lập tốt<br>\
@@ -37,6 +47,9 @@ landfill (n) /ˈlændfɪl/ bãi rác<br>\
 drift (n,v) /drɪft/ trôi dạt, xa cách<br>\
 arrive (v) /əˈraɪv/ đến<br>\
 rebellious (a) /rɪˈbeljəs/ nổi loạn, bạo động<br>\
+overpriced (a) /ˌəʊvərˈpraɪst/ giá quá cao<br>\
+much-awaited (a) // được mong đợi nhiều<br>\
+slim (a) /slɪm/ mảnh khảnh<br>\
 romance (a) /ˈrəʊmæns/ lãng mạn<br>\
 regret (v) /rɪˈɡret/ hối tiếc<br>\
 transportation (n) /trænspərˈteɪʃn/ vận tải<br>\
@@ -150,10 +163,10 @@ report (v) /rɪˈpɔːrt/ báo cáo<br>\
 resolve (v) /rɪˈzɑːlv/ giải quyết<br>\
 solve (v) /sɑːlv/ giải quyết<br>\
 suddenly (adv) /ˈsʌdənli/ đột nhiên<br>\
+stability (n) /səˈpəʊz/ sự ổn định<br>\
 suppose (v) /səˈpəʊz/ giả sử<br>\
 universe (n) /ˈjuːnɪvɜːrs/ vũ trụ<br>\
 reason (n,v) lý do, (v) suy đoán<br>\
-appropriate thích hợp<br>\
 avoid (v) /əˈvɔɪd/ tránh (+doing Sth)<br>\
 behave (v) /bɪˈheɪv/ hành xử<br>\
 concern (v) /kənˈsɜːrn/ quan tâm<br>\
@@ -854,7 +867,7 @@ quantity số lượng<br>\
 sue (v) /suː/ kiện tụng<br>\
 army quân đội<br>\
 billion /ˈbɪljən/ tỷ<br>\
-carve khắc<br>\
+carve (v) /kɑːrv/ khắc<br>\
 consult tham vấn<br>\
 fortune may mắn<br>\
 guarantee (v) /ɡærənˈtiː/ bảo đảm<br>\
@@ -863,11 +876,14 @@ initial,intense ban đầu,mạnh mẽ<br>\
 lend cho vay<br>\
 peak đỉnh<br>\
 potential tiềm năng<br>\
-pride tự hào<br>\
-proof bằng chứng<br>\
-quit bỏ cuộc<br>\
-spin quay<br>\
-tutor apparent gia sư rõ ràng<br>\
+pride (n,v) tự cao, kiêu ngạo<br>\
+scientist (n) nhà khoa học<br>\
+proof (n) bằng chứng<br>\
+quit (v) bỏ cuộc<br>\
+spin (v) quay<br>\
+tutor (n) gia sư<br>\
+appropriate (a) /əˈprəʊpriət/ rõ ràng<br>\
+apparent (a) rõ ràng<br>\
 blind mù<br>\
 chat trò chuyện<br>\
 commit cam kết<br>\
@@ -881,6 +897,7 @@ remind nhắc nhở<br>\
 secretary thư ký<br>\
 severe (a) /sɪˈvɪr/ nghiêm trọng<br>\
 talent tài năng<br>\
+motivator (n) người thúc đẩy<br>\
 thesis luận án<br>\
 uniform đồng phục<br>\
 vision absorb tầm nhìn hấp thụ<br>\

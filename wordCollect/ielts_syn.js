@@ -21,6 +21,10 @@ const SynonymData = [
 	type:"a",
 	mean:"độc ác"
 },{
+	words:"appropriate |suitable",
+	type:"a",
+	mean:"thích hợp"
+},{
 	words:"exciting /ɪkˈsaɪtɪŋ/|dramatic /drəˈmætɪk/|heady /ˈhedi/|thrilling /ˈθrɪlɪŋ/|exhilarating /ɪɡˈzɪləreɪtɪŋ/",
 	type:"a",
 	mean:"phấn khởi, thú vị"

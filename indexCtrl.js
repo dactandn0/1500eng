@@ -93,7 +93,7 @@ app.config(function($routeProvider) {
       });
  }); // route
 
-app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope', function($scope, appAlert, $location, toastr, $rootScope ) {
+app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope' , '$http', function($scope, appAlert, $location, toastr, $rootScope, $http ) {
 
 $rootScope.$on('$routeChangeStart', function () {
   $rootScope.bVocaOfEbook = false;
@@ -252,10 +252,33 @@ ngClickSpeechShowToast = function (touchedWord)
     for (var i = 0; i < tWords.length; i++) {
       msg += getToastMsg(tWords[i]) + '<br>'
     }
-    
   }
-  Text2Speech(touchedWord);
-  doShowToast(msg)
+
+  // not in database, so using GOOGLE TRANS API
+  if (msg == touchedWord)
+  {
+    let input = touchedWord
+    let url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=vi&dt=t&q=" + input
+    $http({
+      method: 'GET',
+      url: url
+    }).then( res => {
+        var out = res.data[0][0][0]
+        doShowToast(touchedWord + ' /(trans)/ ' + out)
+        Text2Speech(touchedWord);
+      }, err => {
+        doShowToast(touchedWord + ' /trans error!')
+        Text2Speech(touchedWord);
+      });
+  }
+  else
+  {
+    doShowToast(msg)
+    Text2Speech(touchedWord);
+  }
+
+ 
+
 }
 
 function doShowToast(content) 
@@ -347,11 +370,12 @@ $scope.loadData = function () {
   if (HELPER_FOR_TEST) $scope.findSameWord();
 };
 
-$scope.loadData();
+
 
 $scope.$on('$viewContentLoaded', function () {
-});
+  $scope.loadData();
 
+}) // viewContentLoaded
 }]);  //end of ctrl
 
 app.directive('compile', ['$compile', function ($compile) {

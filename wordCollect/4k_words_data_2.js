@@ -18,6 +18,7 @@ affect (v) /əˈfekt/ ảnh hưởng [without prep]<br>\
 frequency (n) /ˈfriːkwənsi/ tính lặp lại, tần số<br>\
 frontline (n) /ˈfrʌntlaɪn/ tiền tuyến<br>\
 geographer (n) nhà địa lý<br>\
+palaeontologist (n) /ˌpeɪliɑːnˈtɑːlədʒɪst/ nhà cổ sinh vật học<br>\
 coal (n) /kəʊl/ than<br>\
 "
 

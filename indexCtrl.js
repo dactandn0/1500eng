@@ -1,3 +1,5 @@
+var GOOGLE_TRANS_API = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=vi&dt=t&q="
+
 // for list_noted_voca USE
 var VocaToUI = WORDS_3K_DATA
   //  .concat(IELTS_5K_DATA)
@@ -239,6 +241,7 @@ getToastMsg = function(txt)
 
 ngClickSpeechShowToast = function (touchedWord) 
 {
+  /*
   var ignores = ['the','those', 'this','that']
   var tWords = touchedWord.split(' ')
   tWords = tWords.filter(function(ele) { 
@@ -246,6 +249,7 @@ ngClickSpeechShowToast = function (touchedWord)
   });
 
   var msg = getToastMsg(touchedWord)
+  
   if (msg == touchedWord && tWords.length > 1)
   {
     msg = ''
@@ -253,12 +257,15 @@ ngClickSpeechShowToast = function (touchedWord)
       msg += getToastMsg(tWords[i]) + '<br>'
     }
   }
+  */
+
+  var msg = getToastMsg(touchedWord)
 
   // not in database, so using GOOGLE TRANS API
   if (msg == touchedWord)
   {
     let input = touchedWord
-    let url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=vi&dt=t&q=" + input
+    let url = GOOGLE_TRANS_API + input
     $http({
       method: 'GET',
       url: url

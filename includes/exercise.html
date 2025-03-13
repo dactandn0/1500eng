@@ -24,13 +24,26 @@
 	</div>
 
 	<button class="btn btn-sm btn-success mb-1" 
-	ng-init="show_img_ans=0" 
-	ng-click="show_img_ans=!show_img_ans">{{!show_img_ans ? 'Show anwser' : 'Hide anwser'}}</button>
+			ng-init="show_answer = 0" 
+			ng-click="show_answer = !show_answer">
+			{{!show_answer ? 'Show anwser' : 'Hide anwser'}}
+	</button>
 
-	<div ng-show="show_img_ans==1">
-		<div ng-repeat="img in story.images track by $index">
-			<img src="{{img_root}}/{{img}}_ans-min.png" class="img-fluid mb-2">
-			<img src="{{img_root}}/{{img}}_ans.png" class="img-fluid mb-2">
-		</div>	
+	<div ng-show="show_answer == 1">
+
+		<div class="mt-2" ng-show="story.en_ans">
+			<p class="mb-1" ng-repeat="_ans in story.en_ans.split('|') track by $index"> {{_ans}}
+			</p>
+		</div>
+
+		<div class="mt-2" ng-show="!story.en_ans">
+
+			<div ng-repeat="img in story.images track by $index">
+				<img src="{{img_root}}/{{img}}_ans-min.png" class="img-fluid mb-2">
+				<img src="{{img_root}}/{{img}}_ans.png" class="img-fluid mb-2">
+			</div>
+
+		</div>
+
 	</div>
 </div>

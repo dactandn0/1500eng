@@ -27,7 +27,7 @@ WOMAN: Like what?<br>\
 CLERK: Oh, I don't know... Things like dishes maybe. Not to be rude, but you look like a lady who likes to eat.<br>\
 WOMAN: Ahhh! Yes, I need my dishes and things where I can find them quickly.<br>\
 CLERK: Great. We'll put those dishes and cutlery in what we call the emergency pack. Can you think of anything else?<br>\
-WOMAN: Ummm, I do have an antique tea kettle my great-grand- mother gave my mother. I wouldn't want to lose that. So I guess you'd better put that in storage with the furniture. <br>\
+WOMAN: Ummm, I do have an antique tea kettle my great grandmother gave my mother. I wouldn't want to lose that. So I guess you'd better put that in storage with the furniture. <br>\
 CLERK: Grandma's tea kettle with the furniture, got it! Say, how about things like your alarm clock? You don't want to miss your plane on the big day, right?<br>\
 WOMAN: Well, you certainly think of everything! Yes, that's right. I'll 110 also need my alarm clock where I can find it.<br>\
 CLERK: Fine, we'll put that in your personal package. And of course, we'll give you a list of where we pack everything. So, all you'll have to do on Thursday, the 14th is grab your luggage on your way out the door. Um, I couldn't help noticing the new CD player you're carrying. Is that a Samsung?<br>\
@@ -36,6 +36,7 @@ CLERK: Do you want to take special care of it? I mean it's brand new.<br>\
 WOMAN: Take care of it, but nothing special. You can just put it in storage with the furniture.<br>\
 CLERK: That looks like everything we need here. I guess you're all set.<br>\
 WOMAN: That was certainly quick. Thank you, young man. This has been a most moving experience!"
+,en_ans:"1 94635550 |2 Clark House |3 University Drive |4 Monday |5 Thursday |6 a month |7A |8C |9B |10C"
 }
 ]
 
@@ -65,11 +66,10 @@ function make_DATA ()
 			if (idx >= 0)
 			{
 				var findObj = LRAT_DATA_L_1[idx]
-				json.en = findObj.en
-				json.vi = findObj.vi || ''
-				json.voca = findObj.voca || ''
-				json.note = findObj.note || ''
-				json.isTest = findObj.isTest || false
+				const entries = Object.entries(findObj);
+				for (let [key,value] of entries) {
+				   json[key] = value || '' || false
+				}
 
 			}
 

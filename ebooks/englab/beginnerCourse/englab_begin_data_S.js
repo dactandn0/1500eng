@@ -709,6 +709,99 @@ create a more focused learning environment because they take away the distractio
 teach kids about discipline and being part of a community<br>\
 makes mornings easier for everyone—less fuss over what to wear.<br>\
 "
+},{
+	title:"Describe a family member"
+	,en:"Topic 1: Describe a family member who you spend the most time with<br>\
+You should say:<br>\
+- Who this person is?<br>\
+- What kind of person he/she is?<br>\
+- What you usually do together?<br>\
+- And explain why you spend most time with him/her?<br>\
+When it comes to a member in my family that I love being with, it will be my ...<br>\
+1. Who this person is my father / my mother / my elder brother (anh trai) / my elder sister >< my younger brother/ my younger sister / my grandfather / my grandmother / my uncle / my aunt<br>\
+Age?<br>\
++ appearance (n):<br>\
+He/she looks very ...<br>\
+She has long straight black hair so she looks really elegant (thanh lịch)<br>\
+He plays sports a lot so he looks slim (mảnh mai) and fit (cân đối)<br>\
+Một số từ nâng cao chỉ ngoại hình<br>\
+→ beautiful (adj) = good – looking, gorgeous /ˈɡɔː.dʒəs/ , elegant, charming(duyên dáng), attractive (thu hút), has an angelic /ænˈdʒel.ɪk/ face, adorable<br>\
+Physical appearance:<br>\
+++ cherry lips (môi đỏ mọng)/ bright (sáng) eyes/ silky/ smooth hair (tóc mềm mượt)<br>\
+++ blue eyes - distinctive from others: khác biệt với những người khác - stands out: nổi bật when<br>\
+++ dark eyebrows (lông mày đậm), fair skin = be light-skinned (da sáng) >< tanned: da ngăm (adj) - often goes sunbathing (tắm nắng)<br>\
+++ tall, muscular (vạm vỡ, cơ bắp), in good shape/ full of beans/energy (tràn đầy năng lượng)<br>\
++++ play sports often<br>\
++++ takes good care of himself/ herself<br>\
++++ clear skin - does skin care often<br>\
++++ makes sure to look decent /ˈdiː.sənt/- luôn chắc chắn mình trông chỉnh chu<br>\
+<br>\
+puts on formal outfits: mặc đồ trang trọng - wears<br>\
+makeup (N)<br>\
+asked to be the model for a campaign/ photoshoot<br>\
+get asked out everytime she/ he goes out<br>\
+<br>\
++ job (n):<br>\
+At the moment/ Currently, he/she works at ...<br>\
+He/she is a ... at ...<br>\
+a science teacher at a secondary school → has taught me a lot of things → push out my horizon of knowledge; a housewife / a<br>\
+freelancer: người làm tự do / an office worker<br>\
++ hobbies (sở thích):<br>\
+In her free time, Playing .... is his/her hobby<br>\
+He/she is a big fan of doing ...<br>\
+outdoor activities<br>\
+<br>\
+2. What kind of person he/she is<br>\
+For me, He/she is very ... because ...<br>\
+In my eyes, he/she is a ............. person because...<br>\
+About his characteristics (tính cách, đặc điểm)<br>\
++ personality (n, tính cách) : funny (adj)<br>\
+<br>\
+- make everyone laugh at her stories<br>\
+- make a lot of hilarious/ funny jokes<br>\
+- cheer (v) someone up - cheerful (adj) / she knows how to cheer me up<br>\
+- kind (adj) - nice (adj) –<br>\
+-help people who have difficulties - problems - struggles / are in difficult conditions/ situations<br>\
+- has a golden heart, generous: hào phóng - generosity(n)<br>\
+-actively participate in voluntary work, charity work (pandemic, donate money.....)<br>\
+-provide scholarships for poor children/for children living under the poverty line<br>\
+- with a strong will (ý chí mạnh mẽ) + perseverance (n, sự kiên trì) + determination (n, sự quyết tâm)<br>\
+<br>\
+→ hard – working (adj) to achieve her goals/to make dreams come true<br>\
+→ my role model (in, hình mẫu lý tưởng) + my source of inspiration<br>\
+→ burn the midnight oil: thức khuya học bài/ làm việc<br>\
+<br>\
+- a good listener / brainy (adj) thông minh / knowledgeable (adj) / wise (adj) thông thái (wisdom (n) trí khôn, sự thông thái)<br>\
+→ understand/ sympathize (v, cảm thông) and listen to our/ my problems → give us/me some advice<br>\
+→ when i am in need<br>\
+3. What you usually do together<br>\
++ Normally, we love doing + STH / watching news together<br>\
++ cooking & baking (to bake (v) nướng bánh; to cook (v) nấu ăn)<br>\
+→ cook dinner for our family members + make a cake when we have free time or on special occasions (dịp đặc biệt)<br>\
+→ a master chef / a cooking lover / be good at cooking → learn a lot of skills/ recipes (công thức) from her<br>\
+to experiment (thử nghiệm) new recipes /ˈresəpi/<br>\
+<br>\
+→ delicious (adj) / tasty (adj) / yummy (adj) dishes / Asian or Western food<br>\
++ talking about our career plans for future (học sinh)<br>\
+- my dream job → in the future, i would like to be a teacher ... → she/he is 3 years older than me → experience → give me useful advice / orientation / direction / guidance (sự hướng dẫn)<br>\
+- targets / travel (v) ... / study abroad ...<br>\
+<br>\
++ watch TV and play games<br>\
+<br>\
+- action movies / cartoons / animation<br>\
+films<br>\
+- play video games in my freetime or<br>\
+on weekends<br>\
+<br>\
++ in my leisure time → watch movies about outer space or fiction movies like Avatar<br>\
++ have some chit chat about our school time<br>\
++ gossip some toxic stories at school<br>\
++ we always talk together while having meals<br>\
+<br>\
+4. why you spend most time/ How you feel<br>\
+- friendly (adj) / interesting (adj) thú vị => can relax and have a lot of fun/ joy<br>\
+- I really admire/ adore/ look up to ..."
+
 }
 
 

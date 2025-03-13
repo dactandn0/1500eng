@@ -45,7 +45,7 @@ $scope.loadDB = function () {
 	// $rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 
-	$scope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
+	$scope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, 5)
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
 };
 
@@ -64,6 +64,7 @@ $scope.speechTest = function () {
 
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadDB();
+	topFunction();
 });
 
 

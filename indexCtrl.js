@@ -56,6 +56,7 @@ var app = angular.module("myApp", [
   'writingvol5App',
   'completeApp',
   'tocgApp',
+  'lratApp',
   /*
   'sampleSpeakingApp',
   'bridgeRApp','bridgeLApp',
@@ -83,7 +84,8 @@ app.config(function($routeProvider) {
 		.when('/spkBook', {templateUrl: 'ebooks/spkBook/spkBook.html', controller: 'spkBookCtrl'})
 		.when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
 		.when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})
-		.when('/tocg', {templateUrl: 'ebooks/tocg/tocg.html', controller: 'tocgCtrl'})
+    .when('/tocg', {templateUrl: 'ebooks/tocg/tocg.html', controller: 'tocgCtrl'})
+		.when('/lrat', {templateUrl: 'ebooks/lrat/lrat.html', controller: 'lratCtrl'})
 		.when('/completeL', {templateUrl: 'ebooks/complete/complete.html', controller: 'completeCtrl'})
 		// .when('/completeR', {templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'})
 		.when('/barron600R', {templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'})
@@ -137,7 +139,7 @@ $scope.saveNoted = function(word, isFromToastr) {
     if ($location.path().indexOf('vocaNoted') >=0 ) {
       VocaNotedCtrl.appendDataToUI(word);
     }
-    toastr.success("Saved: " + word);
+    toastr.success("Saved: " + word, {allowHtml:true });
     if (!isFromToastr) $scope.clearSearch()
   } else {
     toastr.error("Existed. Save failed")
@@ -241,23 +243,6 @@ getToastMsg = function(txt)
 
 ngClickSpeechShowToast = function (touchedWord) 
 {
-  /*
-  var ignores = ['the','those', 'this','that']
-  var tWords = touchedWord.split(' ')
-  tWords = tWords.filter(function(ele) { 
-    return ele.length > 2  && !ignores.includes(ele)
-  });
-
-  var msg = getToastMsg(touchedWord)
-  
-  if (msg == touchedWord && tWords.length > 1)
-  {
-    msg = ''
-    for (var i = 0; i < tWords.length; i++) {
-      msg += getToastMsg(tWords[i]) + '<br>'
-    }
-  }
-  */
 
   var msg = getToastMsg(touchedWord)
 
@@ -271,7 +256,7 @@ ngClickSpeechShowToast = function (touchedWord)
       url: url
     }).then( res => {
         var out = res.data[0][0][0]
-        doShowToast(touchedWord + ' /(trans)/ ' + out)
+        doShowToast(touchedWord + ' <b class="_y_2z">/(trans)/</b> ' + out)
         Text2Speech(touchedWord);
       }, err => {
         doShowToast(touchedWord + ' /trans error!')
@@ -290,14 +275,15 @@ ngClickSpeechShowToast = function (touchedWord)
 
 function doShowToast(content) 
 {
+  let htmlTxt  = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
   if (Helper_IsWordSavedBefore(content)) {
-       toastr.info(content);
-       return;
-  } 
-  saveFromToastrVal = content;
-  toastr.info('<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>', content, {
+     htmlTxt = ''
+  } else saveFromToastrVal = content;
+  
+  toastr.info(htmlTxt, content, {
     allowHtml: true
   });
+
 }
 
 

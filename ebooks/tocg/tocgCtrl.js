@@ -7,7 +7,7 @@ var app = angular.module("tocgApp", []);
 app.controller("tocgCtrl", function($scope, $rootScope, $timeout) {
 
 var imgRootPath = './ebooks/tocg/data/images/' ; 						
-$scope.img_root = imgRootPath + 'lessons/'						
+$scope.img_root = imgRootPath + 'listening/'						
 $scope.ielt_form = 0 ; 								
 $scope.story = '';
 $scope.acc = -1;

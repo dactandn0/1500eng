@@ -35,9 +35,9 @@
 	</span>
 
 	<span ng-show="bPlaying">
-		<button class="btn btn-audio-adj" ng-click="backSound(-1)">-{{audioAdjTime}}s</button>
-		<button class="btn btn-audio-adj  mx-4" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button>
-		<button class="btn btn-audio-adj" ng-click="backSound(1)">+{{audioAdjTime}}s</button>
+		<button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-{{$root.adjAudioTime}}s</button>
+		<button class="btn btn-sm btn-danger mx-4" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button>
+		<button class="btn btn-sm btn-danger" ng-click="backSound(1)">+{{$root.adjAudioTime}}s</button>
 		<br>
 		<input 
 			ng-show="bPlaying"

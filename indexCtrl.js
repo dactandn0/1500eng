@@ -1,4 +1,3 @@
-var GOOGLE_TRANS_API = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=vi&dt=t&q="
 
 // for list_noted_voca USE
 var VocaToUI = WORDS_3K_DATA

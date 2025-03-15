@@ -1,7 +1,5 @@
 var kAudioLoopSaveKey = "audioLoop";
 
-const HELPER_FOR_TEST = false
-
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
 const SAME_N_V_TAG_BEGIN = '<y1 class="_y_1z">'

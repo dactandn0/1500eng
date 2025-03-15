@@ -1,5 +1,4 @@
 
-const HELPER_REPEAT_NUM_DEF = 2
 
 var app = angular.module('audioApp', []);
 
@@ -7,6 +6,7 @@ app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, 
 
 $rootScope.audio_repeatCur = 0;
 $rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
+$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)
 
 $rootScope.$on('$routeChangeStart', function () {
 	$scope.stopSound();
@@ -16,15 +16,14 @@ $rootScope.$on('$routeChangeStart', function () {
 });
 
 var audioDuration  = 0;
-$scope.audioAdjTime = 8 //8s
 
 $scope.bPlaying = false;
 $scope.bPause = false;
 $scope.audio;
-$scope.curTime = 0; // for pause()
+kCurrTime = 0; // for pause()
 
 $scope.backSound = function (mul) {
-	$scope.audio.currentTime += $scope.audioAdjTime * mul;
+	$scope.audio.currentTime += $rootScope.adjAudioTime * mul;
 }
 
 $scope.$on("child_stopSound", function (event, data) {
@@ -36,40 +35,40 @@ $scope.$on("child_playFullSound", function (event, data) {
 });
 
 
-$scope.pauseSound = function () {
-
+$scope.pauseSound = function () 
+{
 	if (!$scope.audio) return;
 	$scope.bPause = !$scope.bPause;
 
 	if ($scope.bPause===true)
     {
     	$scope.audio.pause();
-    	$scope.curTime = $scope.audio.currentTime;
+    	kCurrTime = $scope.audio.currentTime;
     }
     else
     {
-    	$scope.audio.currentTime = $scope.curTime;
+    	$scope.audio.currentTime = kCurrTime;
     	$scope.audio.play();
     }
 }
 
-$scope.stopSound = function () {
+$scope.stopSound = function () 
+{
 	if ($scope.audio) 
 	{
 		$scope.audio.pause();
 		$scope.audio.currentTime = 0;
 		$scope.audio = null;
 	}
-	$scope.curTime = 0;
+	kCurrTime = 0;
 	$scope.bPlaying = false;
 	$scope.bPause = false;
 
 	$scope.$evalAsync();
 };
 
-$scope.playFullSound = function () {
-	$scope.audioAdjTime = Helper_loadInt(Helper_AdjAudioTimeKey, 8)
-	
+$scope.playFullSound = function () 
+{	
 	if ($scope.bPlaying)
 	{
 		$scope.stopSound();
@@ -119,7 +118,8 @@ $scope.setupSeekbar = function() {
 	$scope.calAudioBarUI()
 }
 
-$scope.loadData = function() {
+$scope.loadData = function() 
+{
 }
 
 $scope.$on('$viewContentLoaded', function(){

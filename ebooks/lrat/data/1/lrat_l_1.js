@@ -37,6 +37,7 @@ CLERK: Do you want to take special care of it? I mean it's brand new.<br>\
 WOMAN: Take care of it, but nothing special. You can just put it in storage with the furniture.<br>\
 CLERK: That looks like everything we need here. I guess you're all set.<br>\
 WOMAN: That was certainly quick. Thank you, young man. This has been a most moving experience!"
+,voca:"up in the air"
 ,en_ans:"1 94635550 |2 Clark House |3 University Drive |4 Monday |5 Thursday |6 a/one month |7A |8C |9B |10C"
 },{
 	track:"1.2"

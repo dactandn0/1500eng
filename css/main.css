@@ -63,18 +63,26 @@ body {
   z-index: 30; 
 }*/
 
-.btnShowVi {
-  position: fixed; 
-  top: 50%;
-  right: 2%;
-  z-index: 31; 
-}
-.btnShowVocaOfEbook {
+
+.fixed-right {
   position: fixed; 
   top: 40%;
   right: 2%;
-  z-index: 32; 
+  z-index: 31; 
 }
+
+.top40 {
+  top: 40%;
+}
+
+.top50 {
+  top: 50%;
+}
+
+.top60 {
+  top: 60%;
+}
+
 
 
 /*override BS*/

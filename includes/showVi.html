@@ -1,11 +1,18 @@
 <div ng-init="$root.bVocaOfEbook=false" ng-if="$root.vocaEbook.length>0">
-	<span class="btnShowVocaOfEbook opa">
-    	<button class="btn btn-danger" ng-click="$root.bVocaOfEbook=!$root.bVocaOfEbook">{{$root.bVocaOfEbook == 0 ? '->V' : '->L' }}</button>
+	<span class="fixed-right top40 opa">
+    	<button class="btn btn-sm btn-success" ng-click="$root.bVocaOfEbook=!$root.bVocaOfEbook">->{{$root.bVocaOfEbook == 0 ? 'V' : 'L' }}</button>
 	</span>
 </div>
 
 <div ng-init="$root.bShowVi=0">
-	<span class="btnShowVi opa" ng-show="$root.storyHasVi">
-    	<button class="btn btn-danger" ng-click="$root.bShowVi=!$root.bShowVi">{{$root.bShowVi == 0 ? '->Vi' : '->En' }}</button>
+	<span class="fixed-right top50 opa" ng-show="$root.storyHasVi">
+    	<button class="btn btn-sm btn-danger" ng-click="$root.bShowVi=!$root.bShowVi">->{{$root.bShowVi == 0 ? 'VI' : 'En' }}</button>
 	</span>
 </div>
+
+<div>
+	<span class="fixed-right top60 opa" id="transSentenClick">
+    	<button class="btn btn-sm btn-warning" ng-click="toggleTransSenten()">->{{bTransSentenOnClick == 0 ? 'On' : 'Off' }}</button>
+	</span>
+</div>
+

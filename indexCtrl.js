@@ -114,6 +114,8 @@ $scope.searchDataResult = [];
 $scope.search = "";
 $scope.sentenceSearches = [];
 
+$scope.bTransSentenOnClick = 0;
+
 // clear Search data when routed
 $scope.$on('$routeChangeSuccess', function($event, next, current) { 
     $scope.clearSearch();
@@ -215,11 +217,36 @@ $scope.vocaEbookSpeech = function (event, txt, lesson, idx, idxParent) {
   ngClickSpeechShowToast(txt)
 }
 
+
+$scope.toggleTransSenten = function () {
+  $scope.bTransSentenOnClick = !$scope.bTransSentenOnClick
+}
+
 // ng-click word to speech
+
 $scope.Idx_n_L_WSp_ = function (event) {
   event.stopPropagation()
-  var touchedWord = Helper_getTouchTextEvent(event)
-  ngClickSpeechShowToast(touchedWord)
+  var touchedWord = ''
+  var justShowVi = false
+  var isSpeech = true
+  if ($scope.bTransSentenOnClick && !$rootScope.bShowVi)  // not in showVi MODE
+  {
+      var pNode = event.target
+      do {
+        pNode = pNode.parentNode
+      }
+      while (pNode.nodeName != 'ZUI');
+      touchedWord = pNode.innerText.replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '') // remove W: M:
+      // too long to show on toast and speech
+      justShowVi = true
+      isSpeech = false
+  }
+  else 
+  {
+    touchedWord = Helper_getTouchTextEvent(event)
+  }
+  
+  ngClickSpeechShowToast(touchedWord, justShowVi, isSpeech)
 }
 
 getToastMsg = function(txt)
@@ -240,11 +267,9 @@ getToastMsg = function(txt)
   return txt
 }
 
-ngClickSpeechShowToast = function (touchedWord) 
+ngClickSpeechShowToast = function (touchedWord, justShowVi, isSpeech) 
 {
-
   var msg = getToastMsg(touchedWord)
-
   // not in database, so using GOOGLE TRANS API
   if (msg == touchedWord)
   {
@@ -255,27 +280,27 @@ ngClickSpeechShowToast = function (touchedWord)
       url: url
     }).then( res => {
         var out = res.data[0][0][0]
-        doShowToast(touchedWord + ' <b class="_y_2z">/(trans)/</b> ' + out)
-        Text2Speech(touchedWord);
+
+        doShowToast((justShowVi ? '' : touchedWord) + ' <b class="_y_2z">/(trans)/</b> ' + out, !justShowVi)
+        if (isSpeech) Text2Speech(touchedWord);
+
       }, err => {
-        doShowToast(touchedWord + ' /trans error!')
-        Text2Speech(touchedWord);
       });
   }
   else
   {
-    doShowToast(msg)
-    Text2Speech(touchedWord);
+    doShowToast(msg , !justShowVi)
+    if (isSpeech) Text2Speech(touchedWord);
   }
 
  
 
 }
 
-function doShowToast(content) 
+function doShowToast(content, allowSaveNote) 
 {
   let htmlTxt  = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
-  if (Helper_IsWordSavedBefore(content)) {
+  if (!allowSaveNote || Helper_IsWordSavedBefore(content)) {
      htmlTxt = ''
   } else saveFromToastrVal = content;
   

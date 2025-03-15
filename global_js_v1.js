@@ -1,3 +1,5 @@
+var kRgexSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|(\d\.+\d+.+[\.\!\?])|[\.]+|[\!\?])/gi
+
 var kAudioLoopSaveKey = "audioLoop";
 
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
@@ -214,18 +216,27 @@ function processStory (story, isAlert = true) {
 		enShow = hLightWord(word, specialWords, enShow , SPECIAL_WORDS_HL_TAG_BEGIN, SPECIAL_WORDS_HL_TAG_END );
 		enShow = ngClickOnWord(word, enShow);
 	}
+	var rr = ''
+	var sentencesEn = enShow.match(kRgexSen);
+	if (sentencesEn)
+	{
+		for (var i = 0; i < sentencesEn.length; i++) 
+		{
+			var enSen = sentencesEn[i]
+			rr += '<zui>' + enSen + '</zui>'
+		}
+		enShow = rr
+	}
 
 	var enAndVi = ''
 	if (!isBlank && bHasVi) 
 	{
 		var kBrTag = '<br>'
-	//	var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|[\.]+|[\!\?]['"])/gi
-		var rgSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|(\d\.+\d+.+[\.\!\?])|[\.]+|[\!\?])/gi
+		
 		var viii = ''
-		var sentencesEn = enShow.match(rgSen);
 		var sentencesVi = '';
 
-		if (viShow) sentencesVi = viShow.match(rgSen);
+		if (viShow) sentencesVi = viShow.match(kRgexSen);
 		if (sentencesEn)
 		{
 			if (sentencesEn.length === sentencesVi.length) 

@@ -35,10 +35,7 @@ $scope.removeAllNoted = function () {
 }
 
 $scope.loadArray = function () {
-	var kDatabase = Helper_NoteFetchDB();
-	dataWords = kDatabase.trim().split("@");
-	//remove element that length = 0
-	dataWords = dataWords.filter(String);
+	dataWords = Helper_NoteFetchDB();
 	createWordShow();
 };
 

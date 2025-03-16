@@ -11,6 +11,9 @@ const PHRA_VERB_TAG_END = '</z1a>'
 const SPECIAL_WORDS_HL_TAG_BEGIN = '<advHL class="advHL_123">'
 const SPECIAL_WORDS_HL_TAG_END = '</advHL>'
 
+const NOTED_WORD_TAG_BEGIN = '<NOTED_WORD_HL class="_noted_word_hl">'
+const NOTED_WORD_TAG_END = '</NOTED_WORD_HL>'
+
 var kNgClickTagName = 'kkk'
 var kNgClickTagOpen = '<' +kNgClickTagName+' ng-click="Idx_n_L_WSp_($event)">';
 var kNgClickTagClose = '</'+kNgClickTagName+'>';
@@ -91,6 +94,7 @@ document.write('<small class="note">\
 	' + PHRA_VERB_TAG_BEGIN + 'phraVerb' + PHRA_VERB_TAG_END + ' <br>\
 	' + SPECIAL_WORDS_HL_TAG_BEGIN + '(Special)' + SPECIAL_WORDS_HL_TAG_END + ' <br>\
 	' + SAME_N_V_TAG_BEGIN + 'n = v' + SAME_N_V_TAG_END + ' <br>\
+	' + NOTED_WORD_TAG_BEGIN + 'Noted' + NOTED_WORD_TAG_END + ' <br>\
 	</small>'
 	);
 
@@ -197,7 +201,7 @@ function processStory (story, isAlert = true) {
 	var phraVerbs = foundWords.phraVerbs || []
 	var specialWords = foundWords.specialWords || []
 	var dones = []
-
+	var notedDBArr = Helper_NoteFetchDB(false)
 	for (var i = 0; i < words.length; i++) 
 	{
 		var word = words[i];
@@ -206,6 +210,7 @@ function processStory (story, isAlert = true) {
 			enShow = hLightWord(word, phraVerbs, enShow , PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END );
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
+			enShow = hLightWord(word, notedDBArr, enShow , NOTED_WORD_TAG_BEGIN, NOTED_WORD_TAG_END );
 			enShow = ngClickOnWord(word, enShow);
 			dones.push(word);
 		}

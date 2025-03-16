@@ -151,6 +151,11 @@ function makeVocaEbook(rtScrope, ...args)
 	
 }
 
+function removeHtmlTags(txt)
+{
+	return txt.trim().replace(/<[^>]*>?/gm, '')
+}
+
 // for Reading fullTitles
 function showStoryTitles(_scope) {
 	var data = _scope.stories

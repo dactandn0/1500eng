@@ -30,7 +30,7 @@ var kAllStories = SPEAKING_SAME_VOL5
 //  .concat(complete_read_data)
 //  .concat(listen_tracks)
 
-var saveFromToastrVal = ''
+var saveFromToastVal = ''
 var searchData = [];
 preProcess = function () {
   for (var k = 0; k < VocaForSearch.length; k++) {
@@ -129,10 +129,10 @@ $scope.clearSearch = function () {
 };
 
 $scope.saveNoted = function(word, isFromToastr) {
-  word = word.trim();
-  var kDatabase = Helper_NoteFetchDB();
+  word = removeHtmlTags(word)
+  var kDatabase = Helper_SeqNoteFetchDB();
 
-  if (word.length >= 2 && !Helper_IsWordSavedBefore(word)) {
+  if (word.length >= 2) {
 
     kDatabase = kDatabase + "@" + word;
     Helper_NoteSaveDB(kDatabase);
@@ -182,8 +182,8 @@ $scope.findSameWord = function() {
 }
 
 saveFromToastr = function () {
-  if (saveFromToastrVal.trim().length > 0)
-    $scope.saveNoted(saveFromToastrVal, true)
+  if (saveFromToastVal.trim().length > 0)
+    $scope.saveNoted(saveFromToastVal, true)
 }
 
 // search
@@ -271,7 +271,7 @@ ngClickSpeechShowToast = function (touchedWord, isLongText)
   // not in database, so using GOOGLE TRANS API
   if (msg == touchedWord)
   {
-    let input = touchedWord
+    let input = touchedWord.toLowerCase()
     let url = GOOGLE_TRANS_API + input
     $http({
       method: 'GET',
@@ -306,13 +306,13 @@ ngClickSpeechShowToastUseNode = function (pNode)
 
 function doShowToast(content, isLongText) 
 {
-  let htmlTxt  = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
+  let btnSave  = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
   let toasterTimeout = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000 // s
   if (isLongText || Helper_IsWordSavedBefore(content)) {
-     htmlTxt = ''
-  } else saveFromToastrVal = content;
+     btnSave = ''
+  } else saveFromToastVal = content;
   
-  toastr.info(htmlTxt, content, {
+  toastr.info(btnSave, content, {
     allowHtml: true,
     timeOut :  toasterTimeout * (isLongText ? 1.5 : 1)
   });

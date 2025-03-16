@@ -33,13 +33,33 @@ Helper_saveAudioLoop = function(val) {
 }
 
 
-Helper_NoteFetchDB = function() {
+// include '@'
+Helper_SeqNoteFetchDB = function() {
 	return Helper_loadStr("vocaNotedSeq", "")
 }
 
+// isFull for highlight noted word
+Helper_NoteFetchDB = function(isFull = true) {
+	const kDatabase = Helper_SeqNoteFetchDB()
+	dataWords = kDatabase.trim().split("@");
+
+	//remove element that length = 0
+	dataWords = dataWords.filter(String)
+	if (!isFull)
+	{
+		for (var i = 0; i < dataWords.length; i++) {
+			const firstEnVoca = dataWords[i].split(' ')[0]
+			dataWords[i] = firstEnVoca
+		}
+	}
+	return dataWords;
+}
 
 Helper_IsWordSavedBefore = function(word) {
-  return Helper_NoteFetchDB().split("@").includes(word);
+  const words = word.split(' ');
+  if (words && words.length > 1) word = words[0].toLowerCase()
+  var el = Helper_NoteFetchDB().find(ele => ele.toLowerCase().includes(word));
+  return el != undefined
 } 
 
 

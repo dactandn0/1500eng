@@ -8,6 +8,9 @@ app.controller("configUICtrl", function($scope, $rootScope) {
 
 $scope.audioPitch = 1.5
 $scope.audioRate = 0.8
+
+$scope.toastTimeOut = HELPER_TOASTER_TIMEOUT_DEF
+
 $scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
 
@@ -28,6 +31,10 @@ $scope.setAdjAudioTime = function () {
 	Helper_saveDB(Helper_AdjAudioTimeKey, $scope.adjAudioTime);
 }
 
+$scope.setToastTimeOut = function () {
+	Helper_saveDB(Helper_ToastTimeOutKey, $scope.toastTimeOut);
+}
+
 $scope.saveSelectedVoiceIdx = function () {
 	Helper_saveDB(Helper_SelectedVoiceIdx, $scope.selectedVoiceIdx);
 }
@@ -41,6 +48,7 @@ $scope.loadDB = function () {
 	// $rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 	$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)
+	$scope.toastTimeOut = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF)
 
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
 };

@@ -54,9 +54,21 @@
 	type="range" 
 	class="form-range mt-3 mx-3"
 	min="1" 
-	max="30" 
+	max="20" 
 	step="1"
 	ng-model="$root.adjAudioTime" 
 	ng-change="setAdjAudioTime()"> {{$root.adjAudioTime}}(s)
+
+<hr>
+<label>[-/+] Toaster timeOut:</label>
+<mark>Duplicate Toaster timeout when touching long sentences.</mark>
+<input 
+	type="range" 
+	class="form-range mt-3 mx-3"
+	min="1" 
+	max="10" 
+	step="1"
+	ng-model="toastTimeOut" 
+	ng-change="setToastTimeOut()"> {{toastTimeOut}}(s)
 
 	<br>

@@ -224,29 +224,27 @@ $scope.toggleTransSenten = function () {
 
 // ng-click word to speech
 
-$scope.Idx_n_L_WSp_ = function (event) {
+$scope.Idx_n_L_WSp_ = function (event) 
+{
   event.stopPropagation()
-  var touchedWord = ''
-  var justShowVi = false
-  var isSpeech = true
-  if ($scope.bTransSentenOnClick && !$rootScope.bShowVi)  // not in showVi MODE
+
+  if ($scope.bTransSentenOnClick && !$rootScope.bShowVi)  // dont active in showVi-mode
   {
       var pNode = event.target
-      do {
+      do 
+      {
         pNode = pNode.parentNode
       }
       while (pNode.nodeName != 'ZUI');
-      touchedWord = pNode.innerText.replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '') // remove W: M:
-      // too long to show on toast and speech
-      justShowVi = true
-      isSpeech = false
+      // long text needn't show
+      ngClickSpeechShowToastUseNode(pNode)
   }
   else 
   {
-    touchedWord = Helper_getTouchTextEvent(event)
+      const touchedWord = Helper_getTouchTextEvent(event);
+      ngClickSpeechShowToast(touchedWord)
   }
-  
-  ngClickSpeechShowToast(touchedWord, justShowVi, isSpeech)
+
 }
 
 getToastMsg = function(txt)
@@ -267,7 +265,7 @@ getToastMsg = function(txt)
   return txt
 }
 
-ngClickSpeechShowToast = function (touchedWord, justShowVi, isSpeech) 
+ngClickSpeechShowToast = function (touchedWord, isLongText) 
 {
   var msg = getToastMsg(touchedWord)
   // not in database, so using GOOGLE TRANS API
@@ -281,31 +279,42 @@ ngClickSpeechShowToast = function (touchedWord, justShowVi, isSpeech)
     }).then( res => {
         var out = res.data[0][0][0]
 
-        doShowToast((justShowVi ? '' : touchedWord) + ' <b class="_y_2z">/(trans)/</b> ' + out, !justShowVi)
-        if (isSpeech) Text2Speech(touchedWord);
-
+        doShowToast(( isLongText ? '' : touchedWord) + ' <b class="_y_2z">/(trans)/</b> ' + out, isLongText)
       }, err => {
       });
   }
   else
   {
-    doShowToast(msg , !justShowVi)
-    if (isSpeech) Text2Speech(touchedWord);
+    doShowToast(msg , isLongText)
   }
-
- 
-
+  Text2Speech(touchedWord);
 }
 
-function doShowToast(content, allowSaveNote) 
+ngClickSpeechShowToastUseNode = function (pNode) 
+{
+  let touched = pNode.innerText;
+  touched = touched.replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '') // remove W: M:
+
+  ngClickSpeechShowToast(touched, true);
+
+  pNode.style.textDecoration = 'underline'
+  setTimeout(()=> {
+    pNode.style.textDecoration = ''
+  }, Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000   // s
+  );
+}
+
+function doShowToast(content, isLongText) 
 {
   let htmlTxt  = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
-  if (!allowSaveNote || Helper_IsWordSavedBefore(content)) {
+  let toasterTimeout = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000 // s
+  if (isLongText || Helper_IsWordSavedBefore(content)) {
      htmlTxt = ''
   } else saveFromToastrVal = content;
   
   toastr.info(htmlTxt, content, {
-    allowHtml: true
+    allowHtml: true,
+    timeOut :  toasterTimeout * (isLongText ? 1.5 : 1)
   });
 
 }

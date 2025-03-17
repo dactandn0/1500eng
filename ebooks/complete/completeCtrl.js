@@ -1,6 +1,5 @@
 // include other *.js
 document.write('<script src="./ebooks/complete/listen_data/complete_cd1.js" type="text/javascript"></script>');
-// document.write('<script src="./ebooks/complete/listen_data/complete_cd2.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/complete/read_data/complete_read_data.js" type="text/javascript"></script>');
 
 var app = angular.module("completeApp", ['ngSanitize']);

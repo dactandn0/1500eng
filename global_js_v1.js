@@ -201,7 +201,7 @@ function processStory (story, isAlert = true) {
 	var phraVerbs = foundWords.phraVerbs || []
 	var specialWords = foundWords.specialWords || []
 	var dones = []
-	var notedDBArr = Helper_NoteFetchDB(false)
+	//var notedDBArr = Helper_NoteFetchDB(false)
 	for (var i = 0; i < words.length; i++) 
 	{
 		var word = words[i];
@@ -210,7 +210,7 @@ function processStory (story, isAlert = true) {
 			enShow = hLightWord(word, phraVerbs, enShow , PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END );
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
-			enShow = hLightWord(word, notedDBArr, enShow , NOTED_WORD_TAG_BEGIN, NOTED_WORD_TAG_END );
+		//	enShow = hLightWord(word, notedDBArr, enShow , NOTED_WORD_TAG_BEGIN, NOTED_WORD_TAG_END );
 			enShow = ngClickOnWord(word, enShow);
 			dones.push(word);
 		}

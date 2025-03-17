@@ -210,7 +210,7 @@ $scope.vocaEbookSpeech = function (event, txt, lesson, idx, idxParent) {
   event.stopPropagation()
   var sentences = doFetchSentences(txt, [lesson])
   if (sentences) {
-    $scope.sentenceForVoca = ' - ' + sentences[0]
+    $scope.sentenceForVoca = ' - ' + '<b>' + sentences[0] + '</b>'
     $scope.vocaIdx = idx
     $scope.lessonIdx = idxParent
   }
@@ -271,7 +271,7 @@ ngClickSpeechShowToast = function (touchedWord, isLongText)
   // not in database, so using GOOGLE TRANS API
   if (msg == touchedWord)
   {
-    let input = touchedWord.toLowerCase()
+    let input = touchedWord
     let url = GOOGLE_TRANS_API + input
     $http({
       method: 'GET',
@@ -279,7 +279,7 @@ ngClickSpeechShowToast = function (touchedWord, isLongText)
     }).then( res => {
         var out = res.data[0][0][0]
 
-        doShowToast(( isLongText ? '' : touchedWord) + ' <b class="_y_2z">/(trans)/</b> ' + out, isLongText)
+        doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(trans)/</b> ' + out, isLongText)
       }, err => {
       });
   }

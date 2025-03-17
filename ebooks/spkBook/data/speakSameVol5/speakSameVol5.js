@@ -607,7 +607,7 @@ Both I think. I am usually the one behind the camera on every trip I have with m
  because I enjoy capturing moments of my loved ones. But I also like modelling in front of cameras and can strike great poses!<br>\
  3) How do you keep your photos?<br>\
 I keep most of them on Google Photos, a cloud-based image storage service, so I could take a look at them whenever I want.\
- I have also printed and framed a few of my favorite photos and hung them in my bedroom. Well, they aren’t masterpieces or\
+ I have also printed and framed a few of my favorite photos and hung them in my bedroom. Well, they aren't masterpieces or\
   anything but they really evoke good memories when I look at them."
 	,vi:"1) Bạn có thích chụp ảnh không?<br>\
 Thực ra là lúc nào cũng vậy. Tôi có niềm đam mê nhiếp ảnh suốt đời, không phải như ảnh tự sướng mà là ảnh chụp nhiều phong cảnh khác nhau.\
@@ -683,6 +683,29 @@ Không, tôi chưa bao giờ chạy vì sức bền của tôi kém. Quãng đư
 Thành thật mà nói, tôi thậm chí còn không biết có chương trình như vậy. Hơn nữa, dạo này tôi không có nhiều thời gian để xem TV, nên câu trả lời của tôi là không."
 	,voca:"maintain good health"
 	,note:"To maintain good health: duy trì sức khỏe tốt Maintain /meɪnˈteɪn/: duy trì Good /ɡʊd/: Tốt Health /helθ/: khỏe tốt Ví dụ: I try to do everything I can possibly do to main tain good health |Full body workout: bài tập thể dục toàn thân Full body /fʊl/ /ˈbɒd.i/ : Toàn thân Workout  /ˈwɜː.kaʊt/: Bài thể dục Ví dụ: We encompass a full body workout in every class |To get rid of the negative thoughts: loại bỏ những suy nghĩ tiêu cực Rid /rɪd/: thoát khỏi Negative /ˈneɡ.ə.tɪv/: tiêu cực Thought /θɔːt/: suy nghĩ Ví dụ: We have to get rid of the negative thoughts and go again."
+},{
+	track:"1.36"
+	,title:"Pen and Penci"
+	,en:"1) Do you usually use a pen or pencil for writing?<br>\
+I use them both. I often use pencils to take notes or to draft my essays and then use pens to correct my mistakes and highlight important points.<br>\
+2) Which do you prefer to use, pen or pencils?<br>\
+I prefer using pencils to pens because with pencils, I can easily erase the mistakes I've made. Besides, pencils are much cheaper than pens. In Vietnam, the price of a pen is usually double that of a pencil.<br>\
+3) If someone gave you some pens or pencils, how would you feel?<br>\
+I would be really happy if someone gave me either pens or pencils. Of course we all feel delighted when receiving presents from others. Also, I just keep losing my pens and pencils all the time, so I always need new ones.<br>\
+4) When was the last time you bought some pens or pencils?<br>\
+I just bought a new pencil last week. I really like pencils, and I have a collection of Japanese pencils which are really well-made. Last week, my favorite brand released a new pencil, and I bought it without hesitation."
+	,vi:""
+	,voca:"well-made,delighted,hesitation"
+	,note:""
+},{
+	track:"1.37"
+	,title:"Break"
+	,en:"1) How often do you take a break when you are studying or working?<br>\
+When Im working, I often take a short break every 90 minutes. During my 10-minute breaks, I often take my eyes off the screen, walk around my office and drink water.<br>\
+2) Do you prefer to have a long or short break? I think short breaks work better for me. While short breaks refresh me, long breaks sometimes make me more procrastinate and therefore reduce productivity.<br>\
+3) Do you think having a break is important for you?<br>\
+Of course it is. Taking a break helps me to unwind, which is key to having a higher level of concentration and productivity when I get back to work. Without a break, I will have a hard time being productive."
+,voca:"take my eyes off,procrastinate,have a hard time"
 }
 
 

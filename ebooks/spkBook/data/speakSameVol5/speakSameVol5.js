@@ -685,7 +685,7 @@ Thành thật mà nói, tôi thậm chí còn không biết có chương trình 
 	,note:"To maintain good health: duy trì sức khỏe tốt Maintain /meɪnˈteɪn/: duy trì Good /ɡʊd/: Tốt Health /helθ/: khỏe tốt Ví dụ: I try to do everything I can possibly do to main tain good health |Full body workout: bài tập thể dục toàn thân Full body /fʊl/ /ˈbɒd.i/ : Toàn thân Workout  /ˈwɜː.kaʊt/: Bài thể dục Ví dụ: We encompass a full body workout in every class |To get rid of the negative thoughts: loại bỏ những suy nghĩ tiêu cực Rid /rɪd/: thoát khỏi Negative /ˈneɡ.ə.tɪv/: tiêu cực Thought /θɔːt/: suy nghĩ Ví dụ: We have to get rid of the negative thoughts and go again."
 },{
 	track:"1.36"
-	,title:"Pen and Penci"
+	,title:"Pen and Pencil"
 	,en:"1) Do you usually use a pen or pencil for writing?<br>\
 I use them both. I often use pencils to take notes or to draft my essays and then use pens to correct my mistakes and highlight important points.<br>\
 2) Which do you prefer to use, pen or pencils?<br>\
@@ -706,6 +706,115 @@ When Im working, I often take a short break every 90 minutes. During my 10-minut
 3) Do you think having a break is important for you?<br>\
 Of course it is. Taking a break helps me to unwind, which is key to having a higher level of concentration and productivity when I get back to work. Without a break, I will have a hard time being productive."
 ,voca:"take my eyes off,procrastinate,have a hard time"
+},{
+	track:"1.38"
+	,title:"Scenery"
+	,en:"1. Is there good scenery in your hometown?<br>\
+There are a lot of beautiful views in Ho Chi Minh city, but my favorite one is the breathtaking view of the whole city from the observation sky desk on the 49th floor of Bitexco Tower. From this skydeck, we can enjoy the panoramic view of Ho Chi Minh city.<br>\
+2. Do you think people enjoy taking pictures of beautiful scenery? Why?<br>\
+I think a lot of people love doing so because they don't often have the opportunity to enjoy it. Besides, there are some rare occasions, for example a big cloud shaped like a phoenix. And people take photos to capture these moments  so that they can enjoy them later.<br>\
+3. When you travel, do you like to stay in hotels with scenic views?<br>\
+Yes, I do. One of the main purposes of travelling is to enjoy the beautiful scenery of different places, and it's great if you can enjoy, for example, a breathtaking sea view right from your room."
+},{
+	track:"1.39"
+	,title:"Being alone"
+	,en:"1. Do you like to spend time by yourself? Why?<br>\
+Yes, and to be more accurate, I need to be alone. Being an introvert, every day, I need to be on my own for a while. This gives my brain, body and emotions a break from the constant engagement with other people and therefore helps me to recharge my energy.<br>\
+2. What do you usually do when you spend time by yourself?<br>\
+When I am on my own, I often listen to music or read books. Besides, there are times when I do nothing, only enjoy my solitude while contemplating different issues in life.<br>\
+3. Do you prefer spending time alone or with friends?<br>\
+I prefer spending time alone. Even though being with friends is fun, it can drain my energy really quickly. Besides, when I need to concentrate, being alone prevents me from being distracted and therefore improves my productivity.<br>\
+4. Is it bad to spend a lot of time alone?<br>\
+I don't think so. Being alone allows people to temporarily disconnect from others so that they can have time for themselves. Such time can be considered as a self-care practice."
+	,voca:"self-care,solitude,productivity,distracted"
+	,note:"To enjoy my solitude: tận hưởng sự cô đơn Solitude /ˈsɒl.ɪ.tʃuːd/: Cô đơn Ví dụ: After months of solitude at sea it felt strange to be in company. |To contemplate /ˈkɒn.təm.pleɪt/ : suy ngẫm Ví dụ: The owner of the team contemplated moving his football club to another city. |To drain my energy: rút cạn năng lượng Drain /dreɪn/: rút cạn Ví dụ: The long journey completely drained me."
+},{
+	track:"1.40"
+	,title:"Water Sports"
+	,en:"1. What kind of water sports do you like to play?<br>\
+The only water sport that I know is swimming. I don't practice swimming very often, just once in a while in the summer. This sport helps me not only to relax but also to maintain good health.<br>\
+2. What water sports would you like to do in the future?<br>\
+If I had a chance, I would try scuba diving. From what I learn from the Internet, it is a great experience when we can enjoy the beautiful scenery under the sea and learn more about the life of marine animal species.<br>\
+3. Are water sports popular in Vietnam?<br>\
+To be honest, it's quite the opposite. In Vietnam, there aren't many facilities for water sports. The most popular one is swimming, yet not many people are into it due to the poor condition of the swimming pools here.<br>\
+4. Do you think water sports are dangerous to play?<br>\
+Definitely! We can't breathe underwater. If we aren't careful and equipped with proper tools, swimming or diving may be life-threatening."
+	,voca:"life-threatening"
+	,note:"To be equipped with|To be life-threatening|Poor condition"
+},{
+	track:"1.41"
+	,title:"Science class"
+	,en:"1. Do you like science class?<br>\
+Even though science classes are really intriguing̣, I can't say that I like them. When I was in high school, I didn't have a knack for science subjects like Chemistry or Physics. All I did was to try to study as hard as I could so I wouldn't fail the exams.<br>\
+2. Did you have a science class in primary school or high school?<br>\
+When I was in primary school, I had only one science class in which I learn some basic knowledge in different fields of science. As I went to high school, I had different classes focusing on Chemistry, Physics and Biology. I was never good at them, though.<br>\
+3. Do you think science classes are important?<br>\
+Yes. Science surrounds us. For example, there is science in cooking. When we melt butter, a solid becomes a liquid – that's science. Therefore, I think picking up some bite-sized chunks of science knowledge is really interesting and useful for our daily life.<br>\
+4. What kind of science did you do at school?<br>\
+When I was in primary school, the knowledge I learned was pretty simple. For example, water boils at 100 degrees Celsius. However, in high school, things became more complicated. One example that I can remember is that molecules move faster when temperatures increase."
+},{
+	track:"1.42"
+	,title:"Numbers"
+	,en:"1. Do you usually use numbers?<br>\
+I don't use numbers for my work. I'm an HR executive, so I mostly work with people, not numbers. However, in my everyday life, I have to do some calculations when paying my bills and managing my expenses.<br>\
+2. Are you good at remembering phone numbers?<br>\
+Well, to be honest, I have a terrible memory for numbers. Besides, I don't think it's necessary to learn them by heart. Whenever I need to memorize numbers, I can simply save them on my phone.<br>\
+3. What is your favourite number?<br>\
+Well, I'm not interested in numbers enough to decide my favorite number. If I have to pick one, I'd say 25. It's my date of birth."
+},{
+	track:"1.43"
+	,title:"Art"
+	,en:"1. Do you like art?<br>\
+No, art is not my cup of tea. Like other peo ple, I sometimes doodle in my notebooks, but I'm neither good at drawing nor interested in enjoy ing paintings.<br>\
+2. Have you ever visited an art gallery?<br>\
+As I mentioned, I'm not into art, so I have never visited an art gallery voluntarily. The only time I visited a gallery was during a field trip in high school.<br>\
+3. Is there any artwork on the wall in your room?<br>\
+No, there isn't. I don't feel like decorating my room with artworks.  Instead, I use some photos of myself, my close friends and my family. I like looking at the faces of the people I love for my own peace of mind.<br>\
+4. Have you ever had art classes?<br>\
+I only attended art classes that were involved in school curriculums. To be honest, I always found those classes boring and took advantage of them to do my homework for other classes."
+	,vi:""
+	,voca:"peace of mind,voluntarily,"
+	,note:"peace of mind|Not someone’s cup of tea"
+},{
+	track:"1.44"
+	,title:"Sweets"
+	,en:"1. Do you like to eat sweets?<br>\
+Yes, I have a sweet tooth. My most favorite sweet is chocolate. A chocolate bar is a great stress reliever for me, and it has never failed to uplift my mood.<br>\
+2. Do you like sweets compared to when you were a child?<br>\
+I'm less into sweets now than when I was a child. I used to be a chocoholic and couldn't go a day without a bar of chocolate. However, a few years ago, I started to go on a diet, and I have been cutting down on my consumption of sweets ever since.<br>\
+3. Have you ever tried to make sweets?<br>\
+No, I haven't. I once thought of making chocolate, yet I realized that it would be better for such a clumsy person like me to stay away from the kitchen.<br>\
+4. Why do people like sweets?<br>\
+The first reason is that sweets are tasty, and many kinds of sweets are really cheap. Also, sweets are good for our moods, as they cause our brains to release endorphins, chemicals that make us feel good."
+	,voca:"stress reliever,sweet tooth,uplift my mood,chocoholic"
+	,note:"Stress reliever|To be chocoholic"
+},{
+	track:"1.45"
+	,title:"Cake"
+	,en:"1. Do you like dessert?<br>\
+I love it. A slice of cheesecake or a scoop of chocolate ice cream is a perfect dessert for me. However, I'm on a diet now, so I don't eat desserts very often.<br>\
+2. Do you like eating cakes?<br>\
+Yes, I have a sweet tooth. I love everything about cakes, from the soft texture to the aroma of freshly baked cakes. And a delicious cake complemented by a cup of coffee is the most wonderful thing ever.<br>\
+3. What desserts do people in your country like?<br>\
+I think 'Che', which is Vietnamese sweet soup, is the most popular dessert in Vietnam. Recently, due to the influence of Western culture, many people, especially the youth, often have cheesecakes or ice cream for dessert.<br>\
+4. Have you ever made cakes?<br>\
+No, I haven't. I don't have a talent for baking. I'm quite clumsy actually, so I don't wanna try and mess up my entire kitchen."
+},{
+	track:"1.46"
+	,title:"History"
+	,en:"1. Have you ever been to a historical museum?<br>\
+I'm not a big fan of history, so I have never visited a historical museum voluntarily. The only time I visited a museum was during a field trip in high school, which happened a few years ago.<br>\
+2. Do you like history?<br>\
+No, I don't. History lessons at school in Vietnam are boring. Therefore, when I was at school, like many other students, I never paid any attention in history classes, and gradually, I lost all my interest in history.<br>\
+3. Have you ever watched history films?<br>\
+Yes, I have, but the movies I've watched are about Chinese history, not Vietnamese. My most favorite movie is 'Romance of the Three kingdoms', which is based on a novel from La Quan Trung.<br>\
+4. Do you like history when you were young?<br>\
+As I mentioned, I've always found history classes at school boring. When I was a student, I only tried to remember the historical events mentioned in my textbooks to pass my exams.<br>\
+5. When was the last time you read about history?<br>\
+I don't remember, though. I sometimes come across some posts about history when scrolling through my Facebook newsfeed. I do read some of them, but I can't remember their content clearly, let alone the time when I read them."
+	,vi:""
+	,voca:""
+	,note:"To lose interest in something|To find something + adj|Let alone: huống chi là"
 }
 
 

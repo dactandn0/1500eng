@@ -6,6 +6,8 @@ app.controller("grammerCtrl", function($scope, $rootScope, $timeout) {
 
 var kDATA = GRAMMER_DATA;
 
+$scope.img_root = './grammer/images' ; 
+
 $scope.stories = kDATA; 
 $scope.storyId = -1;
 $scope.acc = -1;

@@ -524,6 +524,10 @@ FE: It is increasingly common for people to travel overseas due to low-fare airl
 <br>\
 Homework:<br>\
 What do you think are the possible solutions? More and more people in developing countries are purchasing cars for the first time. What problems does this cause?"
+},{
+	title:"Englab - Writing - Homework"
+	,en:""
+	,images:["hw-lesson1","hw-lesson2","hw-lesson3","hw-lesson4","hw-lesson5","hw-lesson6","hw-lesson7","hw-lesson8"]
 }
 
 

@@ -29,6 +29,7 @@ const PHRASAL_VERB_DATA = [
 	{word: 'carry', prep: 'on', mean: 'continue'},
 	{word: 'carry', prep: 'out', mean: 'tiến hành'},
 	{word: 'call', prep: 'for', mean: 'yêu cầu'},
+	{word: 'come', prep: 'across', mean: 'gặp phải'},
 	{word: 'come', prep: 'up with', mean: 'nghĩ ra (ý tưởng)'},
 	{word: 'hang', prep: 'out', mean: 'đi chơi'},
 	{word: 'fall', prep: 'out',  mean: 'cãi nhau'},

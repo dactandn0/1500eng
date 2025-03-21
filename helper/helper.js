@@ -104,8 +104,8 @@ function Helper_MakeVoca_Menu_Titles(rScope, _scope , isDoMenu = true)
 			var vocas = lesson.voca.split(',');
 			var color = "blue";
 			
-			var unitTrack = lesson.unit | lesson.track
-			if (unitTrack) unitTrack = 'Unit: ' + unitTrack + '.'
+			var unitTrack = lesson.unit || lesson.track
+			if (unitTrack) unitTrack = 'Unit/Track: ' + unitTrack + '.'
 			var jsonEle = {
 				unit: unitTrack,
 				title:lesson.title ? lesson.title : '#',

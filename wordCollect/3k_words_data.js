@@ -354,7 +354,7 @@ endangered (a) /in'deindzǝd/ gặp nguy hiểm<br>\
 sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
 spectacular (a) /spekˈtækjələr/ hùng vĩ, đẹp mắt<br>\
 majestic (a) /məˈdʒestɪk/ hùng vĩ, đẹp mắt<br>\
-serene (a) /səˈriːn/ êm đềm, thanh thản<br>\
+serene (a) /səˈriːn/ êm đềm, thanh thản (very calm)<br>\
 serenity (n) /səˈrenəti/ êm đềm, thanh thản<br>\
 tranquility (n) /səˈrenəti/ sự yên tĩnh, yên ổn<br>\
 incredible (a) /ɪnˈkredəbl/ đáng khinh ngạc<br>\
@@ -1879,7 +1879,6 @@ modern (a) /ˈmɑːdərn/ hiện đại<br>\
 breezy (a) /ˈbriːzi/ gió nhẹ<br>\
 windy (a) /ˈwɪndi/ có gió<br>\
 cosmopolitan (a) /kɑːzməˈpɑːlɪtən/ quốc tế<br>\
-hectic (a) /ˈhektɪk/ bận rộn<br>\
 urban (a) /ˈɜːrbən/ thuộc thành phố, tính chất đô thị<br>\
 bustling (a) /ˈbʌslɪŋ/ nhộn nhịp<br>\
 metropolis (n) /məˈtrɑːpəlɪs/ đô thị<br>\

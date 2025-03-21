@@ -1,13 +1,13 @@
 
 .modal-backdrop {
-opacity: 0.7;
+  opacity: 0.7;
 }
 .modal-backdrop.fade {
-opacity: 0.7;
+  opacity: 0.7;
 }
 
 b, strong {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }
 
 body {
@@ -22,9 +22,9 @@ body {
 }
 
 .btnAudioPanel {
-  width: 100%;
+  /*width: 100%;*/
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
@@ -32,8 +32,9 @@ body {
 
 .btnAudioPlayStop {
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 2%;
+  z-index: 31;
 }
 
 .btn-audio-adj {
@@ -61,70 +62,70 @@ body {
   bottom: 70px; 
   right: 10px;
   z-index: 30; 
-}*/
+  }*/
 
 
-.fixed-right {
-  position: fixed; 
-  top: 40%;
-  right: 2%;
-  z-index: 31; 
-}
+  .fixed-right {
+    position: fixed; 
+    top: 40%;
+    right: 2%;
+    z-index: 31; 
+  }
 
-.top40 {
-  top: 40%;
-}
+  .top40 {
+    top: 40%;
+  }
 
-.top50 {
-  top: 50%;
-}
+  .top50 {
+    top: 50%;
+  }
 
-.top60 {
-  top: 60%;
-}
+  .top60 {
+    top: 60%;
+  }
 
 
 
-/*override BS*/
-.card-body{
-padding: 0.35rem !important;
-}
+  /*override BS*/
+  .card-body{
+    padding: 0.35rem !important;
+  }
 
-/* accordion */
-h3.accordion{
-margin: 0;
-}
-.accordion a{
-padding: 10px;
-background: #ddd;
-color: #333;
-text-decoration: none;
-/*font-weight: bold;*/
-display: block;
-margin-bottom: 1px;
-}
-.accordion-content{
-/*border: 1px solid #ddd;*/
-/*padding: 6px;*/
-margin: 1px 0;
-}
+  /* accordion */
+  h3.accordion{
+    margin: 0;
+  }
+  .accordion a{
+    padding: 10px;
+    background: #ddd;
+    color: #333;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    display: block;
+    margin-bottom: 1px;
+  }
+  .accordion-content{
+    /*border: 1px solid #ddd;*/
+    /*padding: 6px;*/
+    margin: 1px 0;
+  }
 
-.syn {
-  font-style: italic;
-  color: green;
-}
+  .syn {
+    font-style: italic;
+    color: green;
+  }
 
-.note{
-	font-size: 11px;
-	 position: fixed; 
-	 bottom: 10px; 
-	 right: 10px; 
-	 z-index: 30;
-	 opacity: 0.74;
-}
+  .note{
+   font-size: 11px;
+   position: fixed; 
+   bottom: 10px; 
+   right: 10px; 
+   z-index: 30;
+   opacity: 0.74;
+ }
 
-.font-14 {
-/*font-size: 15px;*/
+ .font-14 {
+  /*font-size: 15px;*/
 }
 
 
@@ -144,11 +145,11 @@ margin: 1px 0;
 }
 
 #btn_back_to_top:hover {
-background-color: #a55;
+  background-color: #a55;
 }
 
 .vocaNoteBtn:before {
-/*padding: 1px 3px;*/
+  /*padding: 1px 3px;*/
 }
 
 
@@ -184,7 +185,7 @@ background-color: #a55;
 }
 
 .toast  {
-	 opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .toast-title {
@@ -212,11 +213,11 @@ background-color: #a55;
 /********** Range Input Styles **********/
 /*Range Reset*/
 input[type="range"] {
-   -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    cursor: pointer;
-    width: 10rem;
+ -webkit-appearance: none;
+ appearance: none;
+ background: transparent;
+ cursor: pointer;
+ width: 10rem;
 }
 
 /* Removes default focus */
@@ -227,21 +228,21 @@ input[type="range"]:focus {
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
-   background-color: #A020F0;
-   /*border-radius: 0.25rem;*/
-   height: 0.25rem;  
+ background-color: #A020F0;
+ /*border-radius: 0.25rem;*/
+ height: 0.25rem;  
 }
 
 /* slider thumb */
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
-   appearance: none;
-   margin-top: -9px; /* Centers thumb on the track */
+  appearance: none;
+  margin-top: -9px; /* Centers thumb on the track */
 
-   /*custom styles*/
-   background-color: #FFA500;
-   height: 1.5rem;
-   width: 0.75rem;
+  /*custom styles*/
+  background-color: #FFA500;
+  height: 1.5rem;
+  width: 0.75rem;
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {   
@@ -253,20 +254,20 @@ input[type="range"]:focus::-webkit-slider-thumb {
 /******** Firefox styles ********/
 /* slider track */
 input[type="range"]::-moz-range-track {
-   background-color: #053a5f;
-   border-radius: 0.5rem;
-   height: 0.5rem;
+ background-color: #053a5f;
+ border-radius: 0.5rem;
+ height: 0.5rem;
 }
 
 /* slider thumb */
 input[type="range"]::-moz-range-thumb {
-   border: none; /*Removes extra border that FF applies*/
-   border-radius: 0; /*Removes default border-radius that FF applies*/
+ border: none; /*Removes extra border that FF applies*/
+ border-radius: 0; /*Removes default border-radius that FF applies*/
 
-   /*custom styles*/
-   background-color: #5cd5eb;
-   height: 2rem;
-   width: 1rem;
+ /*custom styles*/
+ background-color: #5cd5eb;
+ height: 2rem;
+ width: 1rem;
 }
 
 input[type="range"]:focus::-moz-range-thumb {

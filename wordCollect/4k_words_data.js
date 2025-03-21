@@ -395,7 +395,6 @@ respond (v) /rɪˈspɑːnd/ phản ứng<br>\
 risk (n) /rɪsk/ rủi ro<br>\
 wonder (v) /ˈwʌndər/ tự hỏi<br>\
 academy (n) /əˈkædəmi/ học viện<br>\
-ancient cổ đại<br>\
 century (n) /ˈsentʃəri/ thế kỷ<br>\
 clue (n) /kluː/ manh mối<br>\
 concert (n) /ˈkɑːnsərt/  buổi hòa nhạc<br>\
@@ -508,7 +507,7 @@ athlete (n) /ˈæθliːt/ vận động viên<br>\
 weightlifter (n) /ˈweɪtlɪftər/ người cử tạ<br>\
 average trung bình<br>\
 behavior hành vi<br>\
-brilliant (a) /ˈbrɪliənt/ xuất sắc<br>\
+brilliant (a) /ˈbrɪliənt/ xuất sắc (very smart)<br>\
 behind đằng sau<br>\
 course khóa học<br>\
 lower thấp hơn<br>\
@@ -920,7 +919,7 @@ layer lớp<br>\
 mud bùn<br>\
 smooth mịn<br>\
 soil (n) /sɔɪl/ đất<br>\
-unique duy nhất<br>\
+unique (a) duy nhất (very special)<br>\
 chamber buồng<br>\
 deny phủ nhận<br>\
 document tài liệu<br>\

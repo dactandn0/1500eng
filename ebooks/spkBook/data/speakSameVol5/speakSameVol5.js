@@ -765,15 +765,15 @@ Well, I'm not interested in numbers enough to decide my favorite number. If I ha
 	track:"1.43"
 	,title:"Art"
 	,en:"1. Do you like art?<br>\
-No, art is not my cup of tea. Like other peo ple, I sometimes doodle in my notebooks, but I'm neither good at drawing nor interested in enjoy ing paintings.<br>\
+No, art is not my cup of tea. Like other people, I sometimes doodle in my notebooks, but I'm neither good at drawing nor interested in enjoying paintings.<br>\
 2. Have you ever visited an art gallery?<br>\
 As I mentioned, I'm not into art, so I have never visited an art gallery voluntarily. The only time I visited a gallery was during a field trip in high school.<br>\
 3. Is there any artwork on the wall in your room?<br>\
-No, there isn't. I don't feel like decorating my room with artworks.  Instead, I use some photos of myself, my close friends and my family. I like looking at the faces of the people I love for my own peace of mind.<br>\
+No, there isn't. I don't feel like decorating my room with artworks. Instead, I use some photos of myself, my close friends and my family. I like looking at the faces of the people I love for my own peace of mind.<br>\
 4. Have you ever had art classes?<br>\
 I only attended art classes that were involved in school curriculums. To be honest, I always found those classes boring and took advantage of them to do my homework for other classes."
 	,vi:""
-	,voca:"peace of mind,voluntarily,"
+	,voca:"peace of mind,voluntarily,curriculums"
 	,note:"peace of mind|Not someone’s cup of tea"
 },{
 	track:"1.44"
@@ -786,7 +786,7 @@ I'm less into sweets now than when I was a child. I used to be a chocoholic and 
 No, I haven't. I once thought of making chocolate, yet I realized that it would be better for such a clumsy person like me to stay away from the kitchen.<br>\
 4. Why do people like sweets?<br>\
 The first reason is that sweets are tasty, and many kinds of sweets are really cheap. Also, sweets are good for our moods, as they cause our brains to release endorphins, chemicals that make us feel good."
-	,voca:"stress reliever,sweet tooth,uplift my mood,chocoholic"
+	,voca:"stress reliever,sweet tooth,uplift my mood,chocoholic,consumption,cutting down,clumsy"
 	,note:"Stress reliever|To be chocoholic"
 },{
 	track:"1.45"
@@ -799,6 +799,7 @@ Yes, I have a sweet tooth. I love everything about cakes, from the soft texture 
 I think 'Che', which is Vietnamese sweet soup, is the most popular dessert in Vietnam. Recently, due to the influence of Western culture, many people, especially the youth, often have cheesecakes or ice cream for dessert.<br>\
 4. Have you ever made cakes?<br>\
 No, I haven't. I don't have a talent for baking. I'm quite clumsy actually, so I don't wanna try and mess up my entire kitchen."
+,voca:"clumsy,aroma,texture,talent"
 },{
 	track:"1.46"
 	,title:"History"
@@ -813,9 +814,21 @@ As I mentioned, I've always found history classes at school boring. When I was a
 5. When was the last time you read about history?<br>\
 I don't remember, though. I sometimes come across some posts about history when scrolling through my Facebook newsfeed. I do read some of them, but I can't remember their content clearly, let alone the time when I read them."
 	,vi:""
-	,voca:""
+	,voca:"historical,big fan of,voluntarily,field trip,Romance of the Three kingdoms,textbooks"
 	,note:"To lose interest in something|To find something + adj|Let alone: huống chi là"
 }
+, {track:"1.47",title:"Park",en:""}
+, {track:"1.48",title:"Makeup",en:""}
+, {track:"1.49",title:"Concentration",en:""}
+, {track:"1.50",title:"The countryside",en:""}
+, {track:"1.51",title:"Street market",en:""}
+, {track:"1.52",title:"Plants",en:""}
+, {track:"1.53",title:"Sky",en:""}
+, {track:"1.54",title:"Animals",en:""}
+, {track:"1.55",title:"Insects",en:""}
+, {track:"1.56",title:"Handwriting",en:""}
+, {track:"1.57",title:"Patience",en:""}
+, {track:"1.58",title:"Tidy",en:""}
 
 
 

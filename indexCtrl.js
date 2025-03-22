@@ -223,11 +223,9 @@ $scope.toggleTransSenten = function () {
 }
 
 // ng-click word to speech
-
 $scope.Idx_n_L_WSp_ = function (event) 
 {
   event.stopPropagation()
-
   if ($scope.bTransSentenOnClick && !$rootScope.bShowVi)  // dont active in showVi-mode
   {
       var pNode = event.target
@@ -247,27 +245,22 @@ $scope.Idx_n_L_WSp_ = function (event)
 
 }
 
-getToastMsg = function(txt)
+getVocaFromDB = function(txt)
 {
   var result = IELTS_SYN_IsIn(txt)
-  if (result !== '') {
-     return result;
-  }
+  if (result !== '')  return result;
   for (var i = 0; i < searchData.length; i++) 
-    {
+  {
       var wordFull = searchData[i]
       var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
-
-      if (word === txt || Helper_IsFormOfWord(word, txt)) {
-          return wordFull;
-      }
+      if (word === txt || Helper_IsFormOfWord(word, txt)) return wordFull;
   }
   return txt
 }
 
 ngClickSpeechShowToast = function (touchedWord, isLongText) 
 {
-  var msg = getToastMsg(touchedWord)
+  var msg = getVocaFromDB(touchedWord)
   // not in database, so using GOOGLE TRANS API
   if (msg == touchedWord)
   {
@@ -278,8 +271,7 @@ ngClickSpeechShowToast = function (touchedWord, isLongText)
       url: url
     }).then( res => {
         var out = res.data[0][0][0]
-
-        doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(trans)/</b> ' + out, isLongText)
+        doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + out, isLongText)
       }, err => {
       });
   }

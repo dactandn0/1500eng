@@ -2,7 +2,6 @@
 {
 title:"4k Book1",
 en:"afraid (a) /əˈfreɪd/ sợ<br>\
-actually (adv) /ˈæktʃuəli/ thực ra<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
@@ -24,16 +23,13 @@ courtyard (n) /ˈkɔːrtjɑːrd/ sân, khu đất trống<br>\
 predator (n) /ˈpredətər/ động vật ăn thịt<br>\
 fig (n) /ˈdeɪli/ cây sung<br>\
 despite (prep) /dɪˈspaɪt/ cho dù [+ N/Ving]<br>\
-on top of that (idiom) hơn thế<br>\
 closest confidant (n) /ˈkɑːnfɪdænt/ người bạn tâm giao gần gũi nhất<br>\
 intimate (a) /ˈɪntɪmət/ thân mật<br>\
 ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
 growth (n) /ɡrəʊθ/ sự phát triển, sự tăng, phát dục<br>\
 assignment (n) /əˈsaɪnmənt/ công việc, phân công<br>\
-disease  (n) /dɪˈziːz/ bệnh<br>\
 adult (n) /ˈædʌlt/ người lớn<br>\
 cliche (n) /kliːˈʃeɪ/ (cliché) sáo rỗng<br>\
-burglary (v) /ˈbɜːrɡləri/ trộm cắp<br>\
 factor (n) /ˈfæktər/ nhân tố<br>\
 influence  (n,v) /ˈɪnfluəns/ ảnh hưởng<br>\
 fragrance (n) /ˈfreɪɡrəns/ hương thơm<br>\
@@ -226,14 +222,13 @@ fright (n) /fraɪt/ sợ hãi | She cried out in fright.<br>\
 ghost (n) ma<br>\
 reach (v) /riːtʃ/ với tới<br>\
 survive (v) /sərˈvaɪv/ sống sót<br>\
+survival (n) sự sống sót<br>\
 wise (a) /waɪz/ khôn ngoan<br>\
 allow (v) /əˈlaʊ/ cho phép<br>\
 announce (v) /əˈnaʊns/ thông báo, nhắc<br>\
-beside bên cạnh<br>\
 taste (n,v) /teɪst/ mùi vị, (v) thưởng thức<br>\
 claim yêu cầu<br>\
 divide (v) /dɪˈvaɪd/ phân chia/ra, chia rẽ<br>\
-expert (n) /ˈekspɜːrt/ chuyên gia<br>\
 famous (n) /ˈfeɪməs/ nổi tiếng [big name]<br>\
 force (n,v) /fɔːrs/ lực lượng (v) đẩy, bắt ép<br>\
 harm (n) /hɑːrm/ gây hại<br>\
@@ -242,7 +237,7 @@ lay (v) /leɪ/ đặt<br>\
 prince (n) /prɪns/ hoàng tử<br>\
 keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
 protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
-sense (n) /sens/ cảm giác, giác quan [sense of timing/fun/serenity<br>\
+sense (n,v) (= feel) /sens/ cảm giác, giác quan [sense of timing/fun/serenity<br>\
 sudden (a) /ˈsʌdn/ đột ngột<br>\
 therefore (adv) /ˈðerfɔːr/ do đó<br>\
 accept (v) /əkˈsept/ chấp nhận<br>\
@@ -271,7 +266,6 @@ prevent (v) /prɪˈvent/ ngăn chặn [s.th/s.o from + N/V_ing]<br>\
 rock (n) /rɑːk/ đá<br>\
 save (v) lưu, tiết kiệm<br>\
 step bước<br>\
-taste (n,v) /teɪst/ mùi vị, nếm , thưởng thức<br>\
 certain (a) /ˈsɜːrtn/ chắc chắn<br>\
 chance cơ hội<br>\
 effect (n) /ɪˈfekt/ hiệu ứng<br>\
@@ -398,7 +392,6 @@ clue (n) /kluː/ manh mối<br>\
 concert (n) /ˈkɑːnsərt/  buổi hòa nhạc<br>\
 county (n) /ˈkaʊnti/ quận<br>\
 exist (v) /ɪɡˈzɪst/ tồn tại<br>\
-flat phẳng<br>\
 gentleman (n) /ˈdʒentlmən/ quý ông<br>\
 officer (n) /ˈɑːfɪsər/ sĩ quan<br>\
 original /əˈrɪdʒənl/ bản gốc<br>\
@@ -462,9 +455,8 @@ regard (v) /rɪˈɡɑːrd/ xem xét<br>\
 vegetable rau<br>\
 war chiến tranh<br>\
 worth đáng giá<br>\
-appear xuất hiện<br>\
-base cơ sở<br>\
-brain não<br>\
+appear (v) /əˈpɪr/ xuất hiện, giống như (= look)<br>\
+brain (n) /breɪn/ não<br>\
 career nghề nghiệp<br>\
 clerk nhân viên<br>\
 effort nỗ lực<br>\
@@ -613,14 +605,11 @@ advertise (v) /ˈædvərtaɪz/ quảng cáo<br>\
 assign (v) /əˈsaɪn/ giao<br>\
 audience (n) /ˈɔːdiəns/ khán giả<br>\
 breakfast bữa sáng<br>\
-hardly (adv) hầu(gần) như không<br>\
-hard (a,adv) chăm chỉ, khó tánh<br>\
 free (a,adv) miễn phí, rãnh<br>\
 freely (adv) tự do, khỏi trả tiền<br>\
 late (a,adv) trễ, muộn<br>\
 later (a,adv) trễ, muộn hơn (so sánh hơn của Late)<br>\
 latest (a) muộn nhất, mới nhất, gần nhất (so sánh nhất của Late)<br>\
-last (v,a) kéo dài, cuối cùng<br>\
 recently (adv) gần đây<br>\
 lately (adv) gần đây<br>\
 competition cuộc thi<br>\
@@ -676,7 +665,6 @@ command lệnh<br>\
 counsel tư vấn<br>\
 ensure đảm bảo<br>\
 explosion vụ nổ<br>\
-meteor (n) sao băng<br>\
 monster,northern quái vật,phía bắc<br>\
 remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
 southern phía nam<br>\
@@ -717,7 +705,6 @@ impress gây ấn tượng<br>\
 marathon (a) /ˈmærəθɑːn/ marathon<br>\
 narrow (a) /ˈnærəʊ/ hẹp<br>\
 pale nhợt nhạt<br>\
-rough thô<br>\
 satisfy thỏa mãn<br>\
 scream la hét<br>\
 aesthetic (a) /esˈθetɪk/ tính thẩm mỹ<br>\
@@ -736,46 +723,44 @@ legend huyền thoại<br>\
 pure thuần khiết<br>\
 relative tương đối<br>\
 senior cấp cao<br>\
-silent im lặng<br>\
+silent (a) /ˈsaɪlənt/ im lặng<br>\
 sink chìm<br>\
-superior cao cấp<br>\
-surround vòm<br>\
-thick dày<br>\
-wrap abroad bao bọc ở nước ngoài<br>\
+superior (a) /suːˈpɪriər/ cao cấp<br>\
+surround (v) /səˈraʊnd/ vòm<br>\
+thick (a) /θɪk/ dày<br>\
+wrap (v) /ræp/ bao bọc<br>\
 anger giận dữ<br>\
 bride cô dâu<br>\
 brief ngắn gọn<br>\
 chase đuổi theo<br>\
-disappoint thất vọng<br>\
-dive lặn<br>\
+disappoint (v) /ˌdɪsəˈpɔɪnt/ thất vọng<br>\
+dive (v) /daɪv/ lặn<br>\
 exchange trao đổi<br>\
-favor ủng hộ<br>\
+favor (n) /ˈfeɪvər/ ủng hộ<br>\
 lovely (a) đáng yêu<br>\
 in a lovely way (adv) đáng yêu<br>\
-mood tâm trạng<br>\
+mood (n) /muːd/ tâm trạng<br>\
 palace cung điện<br>\
 permit giấy phép<br>\
 protest phản đối<br>\
-sculpture tác phẩm điêu khắc<br>\
-tribe bộ lạc<br>\
-youth basis thanh niên cơ sở<br>\
-biology sinh học<br>\
-cage lồng<br>\
-colleague đồng nghiệp<br>\
+sculpture (n) /ˈskʌlptʃər/ tác phẩm điêu khắc<br>\
+tribe (n) /traɪb/ bộ lạc<br>\
+biology (n) /baɪˈɑːlədʒi/ sinh học<br>\
+cage (n) /keɪdʒ/ lồng<br>\
+colleague (n) /ˈkɑːliːɡ/ đồng nghiệp<br>\
 colony thuộc địa<br>\
 depart khởi hành<br>\
-depress ức chế<br>\
-factual thực tế<br>\
+depress (v) làm/giảm/kéo<br>\
+factual (a) thực tế<br>\
 fascinate hấp dẫn<br>\
-occupation nghề nghiệp<br>\
-overseas nước ngoài<br>\
-persuade thuyết phục<br>\
-ruins tàn tích<br>\
-scholar học giả<br>\
-volcano broad núi lửa rộng<br>\
-bush bụi<br>\
-capable có khả năng<br>\
-cheat gian lận<br>\
+occupation (n) /ɑːkjuˈpeɪʃn/ nghề nghiệp, việc làm<br>\
+persuade (v) /pərˈsweɪd/ thuyết phục<br>\
+ruin (n,v) /ˈruːɪn/ sự đổ nát, tàn tích (v) phá hủy<br>\
+scholar (n) /ˈskɑːlər/ học giả, học học trò<br>\
+volcano (n) /vɑːlˈkeɪnəʊ/ núi lửa<br>\
+bush (n) /bʊʃ/ bụi cây, bụi rậm<br>\
+capable (a) có khả năng<br>\
+cheat (n,v) gian lận<br>\
 concentrate (v) /ˈkɑːnsntreɪt/ tập trung (+on)<br>\
 conclude kết luận<br>\
 considerable đáng kể<br>\
@@ -832,7 +817,6 @@ trap bẫy<br>\
 trial xét xử<br>\
 violent admission bạo lực nhập học<br>\
 astronomy thiên văn học<br>\
-despite mặc dù<br>\
 dinosaur (n) /ˈdaɪnəsɔːr/ khủng long<br>\
 meteor (n) /ˈmiːtiər/ thiên thạch<br>\
 exhibit triển lãm<br>\
@@ -841,7 +825,6 @@ forecast,genius dự báo, thiên tài<br>\
 geography (n) địa lý<br>\
 interfere can thiệp<br>\
 lightly nhẹ nhàng<br>\
-principal chính<br>\
 row hàng<br>\
 shelf kệ<br>\
 spite mặc dù<br>\
@@ -854,7 +837,6 @@ candle nến<br>\
 convert chuyển đổi<br>\
 decrease giảm<br>\
 fault lỗi<br>\
-fund quỹ<br>\
 insist (v) /ɪnˈsɪst/ kiên trì<br>\
 mess lộn xộn<br>\
 metal kim loại<br>\
@@ -872,7 +854,6 @@ guarantee (v) /ɡærənˈtiː/ bảo đảm<br>\
 hike tăng<br>\
 initial,intense ban đầu,mạnh mẽ<br>\
 lend cho vay<br>\
-peak đỉnh<br>\
 potential tiềm năng<br>\
 pride (n,v) tự cao, kiêu ngạo<br>\
 scientist (n) nhà khoa học<br>\
@@ -880,16 +861,12 @@ proof (n) bằng chứng<br>\
 quit (v) bỏ cuộc<br>\
 spin (v) quay<br>\
 tutor (n) gia sư<br>\
-appropriate (a) /əˈprəʊpriət/ rõ ràng<br>\
-apparent (a) rõ ràng<br>\
 blind mù<br>\
 chat trò chuyện<br>\
 commit cam kết<br>\
-compose soạn<br>\
 dormitory ký túc xá<br>\
 exhaust khí thải<br>\
 greenhouse nhà kính<br>\
-obvious rõ ràng<br>\
 physics vật lý<br>\
 remind nhắc nhở<br>\
 secretary thư ký<br>\
@@ -913,7 +890,6 @@ generation thế hệ<br>\
 handle xử lý<br>\
 layer lớp<br>\
 mud bùn<br>\
-smooth mịn<br>\
 soil (n) /sɔɪl/ đất<br>\
 unique (a) duy nhất (very special)<br>\
 chamber buồng<br>\
@@ -933,8 +909,6 @@ thus adv do đó <br>\
 aim aim<br>\
 bet bet<br>\
 carriage xe<br>\
-commute (n) trao đổi<br>\
-confirm confirm<br>\
 criticize chỉ trích<br>\
 differ (v) khác biệt<br>\
 expense (n) /ɪkˈspens/ chi phí<br>\
@@ -981,7 +955,6 @@ forbid forbid<br>\
 illustrate (v) chú giải, minh họa<br>\
 indeed indeed<br>\
 kindly (a,adv) vui lòng<br>\
-motive motive<br>\
 nest nest<br>\
 origin origin<br>\
 reject reject<br>\
@@ -1010,7 +983,6 @@ astronaut phi hành gia<br>\
 awake thức tỉnh<br>\
 courage lòng can đảm<br>\
 float trôi nổi<br>\
-grant cấp<br>\
 gravity trọng lực<br>\
 jewel đồ trang sức<br>\
 miner thợ mỏ<br>\
@@ -1019,7 +991,6 @@ participate tham gia<br>\
 permission quyền<br>\
 pour (v) /pɔːr/ đổ<br>\
 presence sự hiện diện<br>\
-raw thô<br>\
 satellite vệ tinh<br>\
 scale tỷ lệ<br>\
 skip bỏ qua<br>\
@@ -1027,7 +998,6 @@ stretch kéo dài<br>\
 apart (adv) /əˈpɑːrt/ tách<br>\
 arrest bắt giữ<br>\
 award giải thưởng<br>\
-breed giống<br>\
 bucket thùng<br>\
 contest cuộc thi<br>\
 convict tội phạm<br>\
@@ -1078,7 +1048,6 @@ nutrient chất dinh dưỡng<br>\
 overcome vượt qua<br>\
 recall nhớ lại<br>\
 soul linh hồn<br>\
-sufficient đủ<br>\
 tough khó khăn<br>\
 tube ống<br>\
 admit thừa nhận<br>\
@@ -1096,7 +1065,6 @@ neat gọn gàng<br>\
 occasion (n) /əˈkeɪʒn/ dịp, thời cơ<br>\
 penalty hình phạt<br>\
 settle (v) giải quyết vấn đề, dịu dần, trầm tỉnh<br>\
-wallet (n) /ˈwɑːlɪt/ ví<br>\
 yell (v) /jel/ la hét <br>\
 accuse (v)  /əˈkjuːz/ tố cáo [+Sbody of Ving/N]<br>\
 amuse vui<br>\
@@ -1138,8 +1106,8 @@ accompany đi cùng (+to) (+by: passive)<br>\
 bare (a) trần truồng<br>\
 cast cast<br>\
 dare dám liều mao hiểm<br>\
-electronic (a) thuộc điện tử<br>\
-electronics (n) thiết bị điện tử<br>\
+electronic (a) /i,lek'tronik/ thuộc điện tử<br>\
+electronics (n)  thiết bị điện tử<br>\
 inn inn<br>\
 net mạng lưới<br>\
 philosophy triết lí<br>\

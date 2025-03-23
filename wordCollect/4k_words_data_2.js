@@ -10,7 +10,6 @@ fewer (a) chút ít (so sánh hơn của a few) + N_số nhiều <br>\
 damp (a) /dæmp/ ẩm ướt<br>\
 polio (n) /ˈpəʊliəʊ/ bệnh bại liệt <br>\
 individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
-provide (v) /prəˈvaɪd/ cung cấp<br>\
 provision (n) /prəˈvɪʒn/ sự cung cấp<br>\
 novel (n) /ˈnɑːvl/ cuốn tiểu thuyết<br>\
 epidemic (n) /epɪˈdemɪk/ dịch bệnh<br>\

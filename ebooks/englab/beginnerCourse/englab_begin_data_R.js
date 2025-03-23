@@ -173,13 +173,14 @@ Báo cáo dự đoán, trong số những điều khác, rằng 'từ nửa tri�
 Báo cáo này thúc giục chính phủ hành động ngay lập tức. Báo cáo đưa ra các khuyến nghị để thay đổi. Nhưng vào thời điểm nghiên cứu hoàn thành, Ronald Reagan đã được bầu làm tổng thống và chính quyền của ông đã bỏ qua báo cáo.<br>\
 Những năm 1980 không phải là thập kỷ tốt cho môi trường. Có khả năng một báo cáo toàn cầu hiện nay thậm chí còn ảm đạm hơn báo cáo được công bố sau những năm 1970. Nhiều nhà môi trường tự hỏi liệu chúng ta có thể ngăn chặn sự hủy diệt hành tinh của mình trước khi quá muộn hay không. Họ tự hỏi, khi nào thì con người mới nhận ra rằng họ không phải là chủ nhân của Trái Đất mà chỉ là một trong những vị khách của nó?"
 	,voca:"vanished,threaten,warnings,ignored,destruction,hardship,extinguished,starvation"
-	,T_F_NG:"10T. The increase ofhuman population and the needs of industries result in the death of lots of birds and mammals.<br>\
+	,T_F_NG:"10. The increase ofhuman population and the needs of industries result in the death of lots of birds and mammals.<br>\
 11. In 1977, President Jimmy Carter believed that the present trends would continue. <br>\
-12F. According to the report, more than 2 million species on earth would disappear by 2000. <br>\
-13F. Ronald Reagan was elected president after the study was completed. <br>\
+12. According to the report, more than 2 million species on earth would disappear by 2000. <br>\
+13. Ronald Reagan was elected president after the study was completed. <br>\
 14. Ronald Reagan's administration didn't think that the report was necessary. <br>\
-15T. It is possible that it will be too late when we stop the destruction of the Earth. <br>\
-16T. The environmentalists don't think that humans are masters of the Earth."
+15. It is possible that it will be too late when we stop the destruction of the Earth. <br>\
+16. The environmentalists don't think that humans are masters of the Earth."
+,en_ans:"10T 11NG 12F 13F 14NG 15T 16T"
 },{
 	title:"What Is Stress?",
 	unit:6,
@@ -200,13 +201,14 @@ Cụ thể, điều gì khiến mọi người đánh giá một tình huống l
 Nhìn nhận căng thẳng theo cách này giúp chúng ta có định nghĩa chung về khái niệm căng thẳng: Căng thẳng là phản ứng với những hoàn cảnh có vẻ đe dọa hoặc thách thức.<br>\
 Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất cả phụ thuộc vào cách chúng ta đánh giá hoàn cảnh. Ngoài ra, những điều khiến chúng ta căng thẳng ngày hôm nay có thể không gây căng thẳng cho chúng ta vào thời điểm khác. Và điều ngược lại mới đúng: những thứ trước đây không gây căng thẳng thì giờ đây có thể gây căng thẳng."
 	,voca:"bothersome,appraise,challenge,concept,define,interpretation,vary,react,interpret,stressor,circumstance,appraise,surprisingly"
-	,T_F_NG:"10F. Knowing our feelings about stress can explain what causes the stress. <br>\
+	,T_F_NG:"10. Knowing our feelings about stress can explain what causes the stress. <br>\
 11. Bothersome noises are more likely to cause stress than a poor test performance. <br>\
 12. Negative events cause more stress than positive ones do. <br>\
-13T. Sometimes whether an event is negative or not is based on a personal decision. <br>\
-14T. Whether an event is considered stressful may be determined by the way people interpret it. <br>\
-15F. Sometimes those circumstances that are not threatening to us are also stressful. <br>\
-16T. An event or situation may not always be a stressor."
+13. Sometimes whether an event is negative or not is based on a personal decision. <br>\
+14. Whether an event is considered stressful may be determined by the way people interpret it. <br>\
+15. Sometimes those circumstances that are not threatening to us are also stressful. <br>\
+16. An event or situation may not always be a stressor."
+,en_ans:"10F 11NG 12NG 13T 14T 15F 16T"
 },{
 	title:"Hot Days, Hot Nights ",
 	unit:6,
@@ -224,14 +226,15 @@ Những hoàn cảnh gây căng thẳng khác nhau ở mỗi người. Tất c�
 [F] Một chiến lược khác là đốt càng nhiều mê-tan càng tốt. Điều này làm tăng C02 trong không khí, nhưng vì mêtan giữ nhiệt gấp 20 lần C02 nên kết quả cuối cùng là xứng đáng. Khí trong nhiều bãi chôn lấp rác đã được sử dụng ở một số nơi trên khắp Hoa Kỳ. Nó đang được sử dụng để sưởi ấm cho hàng nghìn ngôi nhà."
 	,voca:"ban,beneficial,benefits,border,carbon dioxide,comparison,complain,delay,drastic,droughts,eliminate,era,geographical,\
 	glaciers,greenhouse,Humanity,hurricanes,inevitably,landfills,methane,mild,policymakers,refugees,tragedy,trap,worthwhile"
-	,T_F_NG:"13Y. The number of days in Dallas with temperatures above 100 degrees would increase.<br>\
-14N. Currently in Dallas, there are only four days when the temperature falls below 80 degrees at night.<br>\
-15N. Some scientists are sure how fast the temperature will rise due to global warming.<br>\
+	,T_F_NG:"13. The number of days in Dallas with temperatures above 100 degrees would increase.<br>\
+14. Currently in Dallas, there are only four days when the temperature falls below 80 degrees at night.<br>\
+15. Some scientists are sure how fast the temperature will rise due to global warming.<br>\
 16. Policymakers are not at all interested in taking any action to solve the environmental problem.<br>\
-17Y. Some scientists think that the climate changes may even bring benefits.<br>\
-18Y. Humans contribute to the greenhouse effect through many basic activities.<br>\
-19N. Burning too much methane worsens the problem of greenhouse effect.<br>\
-20. In the United States, people prefer to bum methane gas for heating the homes. "
+17. Some scientists think that the climate changes may even bring benefits.<br>\
+18. Humans contribute to the greenhouse effect through many basic activities.<br>\
+19. Burning too much methane worsens the problem of greenhouse effect.<br>\
+20. In the United States, people prefer to bum methane gas for heating the homes."
+,en_ans:"13Y 14N 15N 16NG 17Y 18Y 19N 20NG"
 },{
 	title:"Passage One",
 	unit:7
@@ -255,26 +258,7 @@ The itching can be relieved by calamine lotion. <br>\
 Burns and Scalds <br>\
 Minor burns and scalds cause redness of the skin. Immediate treatment by pouring cold water over a burn is often helpful. If burns cause severe blistering or break the skin, the doctor should be consulted.<br>\
 Sunburn should, if possible, be prevented by avoiding long exposure and covering exposed areas adequately. It may be treated by calamine lotion and soluble aspirin to relieve the pain."
-	,vi:"Vết cắt <br>\
-Chảy máu thường có thể được cầm bằng cách ấn vào vết cắt trong 2 hoặc 3 phút. Sau đó, có thể kiểm tra cẩn thận vết cắt. Nếu vết cắt chảy máu tự do, thông thường mọi vi khuẩn sẽ bị máu cuốn trôi.<br>\
-Băng bó chặt bằng băng thạch cao, khép các mép vết cắt lại với nhau để chúng liền lại nhanh chóng. Giữ khô trong 1 đến 3 ngày.<br>\
-Nếu vết cắt sâu và không thể kéo các mép lại với nhau bằng băng, hãy tham khảo ý kiến ​​bác sĩ hoặc y tá thực hành. Có thể cần tiêm phòng uốn ván.<br>\
-Vết trầy xước <br>\
-Bụi bẩn thường xâm nhập vào vết trầy xước do rơi xuống bề mặt cứng hoặc gồ ghề. Phải vệ sinh cẩn thận.<br>\
-Sau khi vệ sinh, hãy để vết trầy xước không bị che phủ. Tiếp xúc với không khí sẽ khiến vảy hình thành. Vảy sẽ khô dần và bong ra. Không nên băng bó. Điều này có thể dính vào vết trầy xước hoặc làm vết trầy xước bị nhiễm trùng.<br>\
-Bầm tím <br>\
-Bầm tím rất phổ biến ở trẻ em. Chúng thường sẽ khỏi sau 7 đến 10 ngày. Đôi khi cha mẹ lo lắng rằng xương có thể bị gãy. Xương của trẻ em mềm dẻo và hiếm khi bị gãy, nhưng nếu nghi ngờ, hãy tham khảo ý kiến ​​bác sĩ.<br>\
-Nếu trẻ đứng dậy ngay sau khi bị ngã và di chuyển bình thường, thì khả năng xương bị gãy là rất thấp. Nhưng trẻ có thể bị cứng vào ngày hôm sau do vết bầm tím đã xảy ra.·<br>\
-Vết bầm tím nghiêm trọng có thể được điều trị bằng cách nghỉ ngơi trong 24 đến 48 giờ. Trong trường hợp chân bị bầm tím nặng, cần phải nâng cao chân. Nằm trên giường là cách dễ nhất để thực hiện điều này.<br>\
-Đắp gạc lạnh có thể làm dịu vết bầm tím nặng nếu đắp ngay lập tức. Cách thực hiện là ngâm một số vật liệu trong nước và đắp lên vết bầm tím.<br>\
-Vết bầm tím trên đầu có thể gây lo lắng. Nếu bệnh nhân không bị 'đánh bất tỉnh' và có thể nhớ vụ tai nạn, thì khả năng chấn thương nghiêm trọng là không cao.<br>\
-Nhưng nếu bệnh nhân bị bất tỉnh và không nhớ chuyện gì đã xảy ra, thì nên đưa bệnh nhân đến Khoa Cấp cứu của bệnh viện.<br>\
-Cắn côn trùng <br>\
-Những vết này thường gặp vào mùa hè. Chúng trông giống như những đốm có đường kính khoảng 5mm. Chúng rất ngứa và thường xuất hiện ở những vùng hở, ví dụ như cánh tay và chân.<br>\
-Có thể làm dịu cơn ngứa bằng kem calamine. <br>\
-Bỏng và bỏng nước <br>\
-Bỏng nước nhẹ và bỏng nước gây đỏ da. Việc điều trị ngay bằng cách dội nước lạnh lên vết bỏng thường có hiệu quả. Nếu vết bỏng gây phồng rộp nghiêm trọng hoặc rách da, thì nên tham khảo ý kiến ​​bác sĩ.<br>\
-Nếu có thể, nên ngăn ngừa cháy nắng bằng cách tránh tiếp xúc lâu với ánh nắng mặt trời và che chắn các vùng hở một cách đầy đủ. Có thể điều trị bằng kem calamine và aspirin hòa tan để giảm đau."
+	,vi:""
 	,voca:"adequately,aspirin,bruise,compress,consult,dressing,ease,germ,graze,injection,itchy,knit,occurred,patient,plaster,pour,relieve,rough,rubbery,scalds,scab,severe,stiff,unconscious"
 	,note:""
 },{
@@ -286,21 +270,17 @@ When do you burn fossil fuels? When you turn on a light, or run an air condition
 But how can carbon dioxide be bad when human beings exhale it every time they breathe? Plants need carbon dioxide; they use it to grow. Oceans absorb it. And forests drink it in. Without carbon dioxide, the average surface temperature on Earth would be 0 degrees Fahrenheit, instead of 59 degrees Fahrenheit. In nature, carbon dioxide is necessary and harmless. Here is the problem: in our effort to make the world a more comfortable place, people have produced far too much of it.<br>\
 By drilling holes into glaciers and testing the air bubbles trapped in ancient ice, by look ing at the fossilised plant tissues, even by looking at the air sealed in old telescopes, scientists have calculated that the atmosphere before the Industrial Revolution contained about 280 parts per million of carbon dioxide -the highest level recorded in the past 160,000 years. The current reading is near 360 parts per million. In the next 140 years, the carbon dioxide level should reach at least 560 parts per million.<br>\
 We have increased the amount of carbon dioxide in the air by 25 percent in the past century. Carbon dioxide is not exclusively responsible for the greenhouse problem, however. Other greenhouse gases include chlorofluorocarbons, nitrogen oxides and methane."
-	,vi:"Có vẻ như mỗi lần bạn bật tin tức trên tivi, bạn sẽ nghe thấy một hoặc nhiều câu cửa miệng sau đây của những năm 1990: sự nóng lên toàn cầu, hiệu ứng nhà kính, biến đổi khí hậu. Như thường lệ với các câu cửa miệng, hầu như không ai biết những thuật ngữ này thực sự có nghĩa là gì hoặc chúng liên quan đến nhau như thế nào.<br>\
-Trong 100 năm qua, trong nỗ lực biến Trái đất thành một nơi văn minh hơn, sản lượng công nghiệp đã tăng gấp năm mươi lần. Bốn phần năm mức tăng trưởng đó diễn ra kể từ năm 1950. Sản lượng này - phần lớn dựa trên việc đốt gỗ và nhiên liệu hóa thạch như than, dầu và khí đốt tự nhiên - đã làm tăng đáng kể lượng carbon dioxide trong khí quyển. Khi đốt nhiên liệu hóa thạch, chúng giải phóng carbon vào không khí dưới dạng carbon dioxide. Carbon dioxide cho phép nhiệt vốn thường thoát ra khỏi khí quyển của Trái đất bị giữ lại, giống như trong nhà kính - do đó có hiệu ứng nhà kính.<br>\
-Bạn đốt nhiên liệu hóa thạch khi nào? Khi bạn bật đèn, hoặc bật máy điều hòa, hoặc tắm nước nóng, hoặc nướng bánh mì, bạn đang góp phần tạo nên hiệu ứng nhà kính. Đây là sản phẩm phụ của việc sử dụng năng lượng - điện, xăng hoặc dầu.<br>\
-Nhưng làm sao carbon dioxide có thể có hại khi con người thở ra nó mỗi khi hít thở? Thực vật cần carbon dioxide; chúng sử dụng nó để phát triển. Đại dương hấp thụ nó. Và rừng hấp thụ nó. Nếu không có carbon dioxide, nhiệt độ bề mặt trung bình trên Trái đất sẽ là 0 độ F, thay vì 59 độ F. Trong tự nhiên, carbon dioxide là cần thiết và vô hại. Vấn đề ở đây là: trong nỗ lực biến thế giới thành một nơi dễ chịu hơn, con người đã tạo ra quá nhiều carbon dioxide.<br>\
-Bằng cách khoan lỗ vào các sông băng và kiểm tra các bong bóng khí bị mắc kẹt trong băng cổ đại, bằng cách quan sát các mô thực vật hóa thạch, thậm chí bằng cách quan sát không khí bị bịt kín trong các kính viễn vọng cũ, các nhà khoa học đã tính toán rằng bầu khí quyển trước Cách mạng Công nghiệp chứa khoảng 280 phần triệu carbon dioxide - mức cao nhất được ghi nhận trong 160000 năm qua. Chỉ số hiện tại là gần 360 phần triệu. Trong 140 năm tới, mức carbon dioxide sẽ đạt ít nhất 560 phần triệu.<br>\
-Chúng ta đã tăng lượng carbon dioxide trong không khí lên 25 phần trăm trong thế kỷ qua. Tuy nhiên, carbon dioxide không phải là nguyên nhân duy nhất gây ra vấn đề nhà kính. Các loại khí nhà kính khác bao gồm chlorofluorocarbon, nitơ oxit và mêtan."
+	,vi:""
 	,voca:"absorb,bubble,by-product,calculated,catchphrases,civilised,contained,contribute,current,drill,exclusively\
 	,exhale,Fahrenheit,fossil,fuel,Industrial Revolution,release,telescopes,term,toast"
-	,T_F_NG:"10Y. People usually do not understand what catchphrases really mean. <br>\
-11N. Most of the growth in industrial production in the past 100 years came before 1950. <br>\
-12Y. Carbon dioxide allows heat to be trapped in the Earth's atmosphere. <br>\
+	,T_F_NG:"10. People usually do not understand what catchphrases really mean. <br>\
+11. Most of the growth in industrial production in the past 100 years came before 1950. <br>\
+12. Carbon dioxide allows heat to be trapped in the Earth's atmosphere. <br>\
 13. People burn more fossil fuels when they take a hot shower than when they make toast. <br>\
-14Y. People who use electricity help to produce the greenhouse effect. <br>\
-15Y. The carbon dioxide level in the next 140 years will increase at least by two times what it was before the Industrial Revolution.<br>\
+14. People who use electricity help to produce the greenhouse effect. <br>\
+15. The carbon dioxide level in the next 140 years will increase at least by two times what it was before the Industrial Revolution.<br>\
 16. Carbon dioxide causes more problems than the other greenhouse gases do."
+,en_ans:"10Y 11N 12Y 13NG 14Y 15Y 16NG"
 },{
 	unit:"8",
 	title:"University of Western Sydney Macarthur"
@@ -354,15 +334,15 @@ Khiếu nại - Không có gì lạ khi một thứ gì đó có thể không ho
 Nếu bạn có bất kỳ khiếu nại nghiêm trọng nào, bạn nên gọi cho người quản lý tòa nhà. Nếu một số hành động không được thực hiện, bạn có thể gọi đến 'Đường dây nóng' của Hiệp hội Nhà ở Đa năng Minnesota theo số 858-8222 từ 2:00 đến 5:00 chiều trong các ngày trong tuần để được trợ giúp hoặc dịch vụ."
 	,voca:"appliance,application,bill,caretaker,confirming,coverage,credit,damage,deposit,enacted,faucet,function\
 	,income,indicate,individual,insurance,item,leak,pet,process,references,refunded,rental,retained,scratch,security,smooth,tear,vacated,withholding"
-	,note:""
-	,T_F_NG:"10Y. The electric and telephone bills are probably excluded in the monthly rental. <br>\
+	,T_F_NG:"10. The electric and telephone bills are probably excluded in the monthly rental. <br>\
 11. When you apply for renting an apartment, professionals hired by the building owner will check your application.<br>\
-12Y. If you want to have a pet in the rented apartment, you should pay the deposit for the pet. <br>\
+12. If you want to have a pet in the rented apartment, you should pay the deposit for the pet. <br>\
 13. Making your own list of the items in the apartment is better than using the form provided by the buildings.<br>\
-14N. The building owner is not supposed to send the deposit to you after you have left. <br>\
-15Y. It is quite common that something in the apartment may not be working properly. <br>\
-16N. You are advised to call the manager if the TV set in your apartment is not working properly. <br>\
-17N. The Minnesota Multi-Housing Association 'Hot Line' offers help and service seven days a week."
+14. The building owner is not supposed to send the deposit to you after you have left. <br>\
+15. It is quite common that something in the apartment may not be working properly. <br>\
+16. You are advised to call the manager if the TV set in your apartment is not working properly. <br>\
+17. The Minnesota Multi-Housing Association 'Hot Line' offers help and service seven days a week."
+,en_ans:"10Y 11NG 12Y 13NG 14N 15Y 16N 17N"
 },{
 	unit:"9"
 	,title:"All about Renting 2"
@@ -389,13 +369,14 @@ Khi chấm dứt hợp đồng thuê, bạn phải nhớ rằng Luật của Ti�
 	,voca:"agent,agreement,Burglary,confusion,deliver,due,evict,intent,lease,mail,pattern,properly,resident,specify,task,termination,ultimate"
 	,note:""
 	,T_F_NG:"11. Your neighbours and the building manager will ask you about your schedule when you move in.<br>\
-12T. According to the passage, the longest term for the lease could be one year. <br>\
+12. According to the passage, the longest term for the lease could be one year. <br>\
 13. The building owner will charged you double if the lease term is only for two months. <br>\
-14F. You can either phone to inform the building owner of your plan to move out or give him a written notice.<br>\
-15F. The building owner is required by law to give the resident 60 days notice if he wants to end the lease.<br>\
-16T. You can find in the rental agreement the building owner's responsibilities as well as yours. <br>\
-17T. According to the rental agreement, the building owner cannot evict the residents without any proper reasons.<br>\
-18T. You should ask before signing about any part of the lease which you do not understand. "
+14. You can either phone to inform the building owner of your plan to move out or give him a written notice.<br>\
+15. The building owner is required by law to give the resident 60 days notice if he wants to end the lease.<br>\
+16. You can find in the rental agreement the building owner's responsibilities as well as yours. <br>\
+17. According to the rental agreement, the building owner cannot evict the residents without any proper reasons.<br>\
+18. You should ask before signing about any part of the lease which you do not understand."
+,en_ans:"11NG 12T 13NG 14F 15F 16T 17T 18T"
 },{
 	unit:10
 	,title:"How New York Became America's Largest City "
@@ -415,30 +396,15 @@ Section 7 <br>\
 Exports from New York were greater than imports. Consequently, shipping companies were eager to fill their ships with passengers on the return trip from Europe. Passengers could come from Europe very cheaply as a result.<br>\
 Section 8 <br>\
 Thus New York became the greatest port for receiving people from European countries. Many of these people remained in the city. Others stayed in New York for a few weeks, months, or years, and then moved to other parts of the United States. For these great numbers of new Americans, New York had to provide homes, goods, and services. Their labour helped the city become great."
-	,vi:"Phần 1 <br>\
-Vào thế kỷ 18, New York nhỏ hơn Philadelphia và Boston. Ngày nay, đây là thành phố lớn nhất nước Mỹ. Làm sao có thể giải thích được sự thay đổi về quy mô và tầm quan trọng của thành phố này? Để trả lời câu hỏi này, chúng ta phải xem xét một số sự kiện về địa lý, lịch sử và kinh tế. Cả ba yếu tố này sẽ cùng nhau giải thích sự phát triển mạnh mẽ của thành phố nổi tiếng nhất nước Mỹ.<br>\
-Phần 2<br>\
-Bản đồ vùng Đông Bắc cho thấy bốn khu vực đông dân nhất trong vùng này nằm xung quanh các cảng biển. Tại những điểm này, vật liệu từ bên kia biển đi vào Hoa Kỳ và các sản phẩm của vùng đất này được chuyển đến đó để xuất khẩu qua biển.<br>\
-Phần 3 <br>\
-Các nhà kinh tế biết rằng những nơi giao nhau của các tuyến giao thông là nơi tốt để chế biến nguyên liệu thô thành hàng hóa thành phẩm. Đó là lý do tại sao các cảng biển thường có các thành phố gần đó. Nhưng những thành phố như New York cần nhiều hơn vị trí địa lý của họ để trở thành các trung tâm công nghiệp lớn. Sự phát triển của chúng không phải diễn ra một cách ngẫu nhiên.<br>\
-Phần 4 <br>\
-Khoảng năm 1815, khi nhiều người Mỹ từ bờ biển phía đông đã di chuyển về phía tây, các tuyến đường thương mại từ các cảng đến các vùng trung tâm của đất nước bắt đầu trở thành một vấn đề nghiêm trọng. Những chiếc xe ngựa chậm chạp thời đó, được kéo bởi ngựa hoặc bò, quá đắt để vận chuyển hàng hóa nặng đi rất xa. Người Mỹ từ lâu đã ngưỡng mộ các kênh đào của châu Âu. Ở tiểu bang New York, một kênh đào dường như là giải pháp tốt nhất cho vấn đề vận chuyển. Từ đầu phía đông của Hồ Erie cho đến tận bên kia tiểu bang đến Sông Hudson, có một dải đất thấp dài. Kênh đào Erie đã được xây dựng tại đây. Sau nhiều năm thi công, nó đã hoàn thành vào năm 1825.<br>\
-Phần 5 <br>\
-Kênh đào đã tạo ra hiệu ứng ngay lập tức. Chi phí vận chuyển hàng hóa đã giảm xuống còn khoảng một phần mười so với trước đây. Thành phố New York, vốn nhỏ hơn Philadelphia và Boston, đã nhanh chóng trở thành thành phố hàng đầu của bờ biển. Trong những năm tiếp theo, các tuyến đường vận chuyển trên Hồ Lớn đã được nối với các tuyến đường trên Sông Mississippi. Sau đó, Thành phố New York trở thành điểm cuối của một hệ thống vận chuyển nội địa lớn kéo dài từ Đại Tây Dương đến tận các nhánh phía tây của Sông Mississippi.<br>\
-Mục 6 <br>\
-Sự ra đời của đường sắt khiến vận chuyển qua kênh đào trở nên ít quan trọng hơn, nhưng nó lại gắn kết chặt chẽ hơn New York với các vùng trung tâm của đất nước. Người dân ở các tiểu bang miền trung dễ dàng vận chuyển hàng hóa của họ đến New York để xuất khẩu ra nước ngoài hơn.<br>\
-Mục 7 <br>\
-Xuất khẩu từ New York lớn hơn nhập khẩu. Do đó, các công ty vận chuyển rất muốn lấp đầy tàu của họ bằng hành khách trên chuyến trở về từ Châu Âu. Do đó, hành khách có thể đến từ Châu Âu với giá rất rẻ.<br>\
-Mục 8 <br>\
-Do đó, New York đã trở thành cảng lớn nhất để tiếp nhận người dân từ các nước Châu Âu. Nhiều người trong số họ vẫn ở lại thành phố. Những người khác ở lại New York trong vài tuần, vài tháng hoặc vài năm, rồi chuyển đến các vùng khác của Hoa Kỳ. Đối với số lượng lớn người Mỹ mới này, New York phải cung cấp nhà ở, hàng hóa và dịch vụ. Sức lao động của họ đã giúp thành phố trở nên vĩ đại."
 	,voca:"branches,labour,port,region,inland,wagons,Economists,populated"
-	,T_F_NG:"13F. New York is typical of cities that became industrial centres simply because of their geo graphical locations.<br>\
-14T. In 1815, people moved to the central regions of the country in wagons drawn by horses. <br>\
+	,T_F_NG:"13. New York is typical of cities that became industrial centres simply because of their geo graphical locations.<br>\
+14. In 1815, people moved to the central regions of the country in wagons drawn by horses. <br>\
 15. All Americans agreed that they should build a canal for transportation. <br>\
-16T. The Erie Canal was constructed between Lake Erie and the Hudson River. <br>\
-17F. The Erie Canal was not successful in bringing the freight costs down immediately. <br>\
-18T. Canal transportation was affected by the coming of the railroads. <br>\
-19T. The labour of people whom shipping companies brought back from Europe helped New York become great."
+16. The Erie Canal was constructed between Lake Erie and the Hudson River. <br>\
+17. The Erie Canal was not successful in bringing the freight costs down immediately. <br>\
+18. Canal transportation was affected by the coming of the railroads. <br>\
+19. The labour of people whom shipping companies brought back from Europe helped New York become great."
+,en_ans:"13F 14T 15NG 16T 17F 18T 19T"
 ,Match_Heading:"S6. Then came the train<br>\
 S8. Cheap fares from Europe<br>\
 S2. Seaports<br>\
@@ -464,22 +430,6 @@ Paragraph F <br>\
 Each library decides for itself how it should further arrange its books and other materials. In a large city library, certain nonfiction materials may be put into a special area or separate room. For instance, there may be a separate room just for all the materials a library has on music. In another large city, the music materials might not be kept so separate. It would depend on what the people in that city had indicated they found useful. <br>\
 Paragraph G<br>\
 A library's holdings are everything the library has in its collection. These holdings almost alwars reflect the community's special interests. Suppose, for example, there were a town where Morgan horses were widely raised and trained. That town's library would most likely have a great deal of material_ about Morgan horses. Since the people who were interested in Morgan horses would probably be less interested in other breeds of horses, the library might have only a small amount of material on Mustangs or Appaloosas."
-	,vi:"Đoạn A <br>\
-Từ public bắt nguồn từ tiếng Latin, publicus, có nghĩa là mọi người. Thư viện công cộng dành cho tất cả mọi người trong cộng đồng sử dụng. Thư viện không tính phí cho các dịch vụ của mình. Thư viện công cộng sẽ cung cấp, trong phạm vi ngân sách của mình, nhiều loại sách và tài liệu khác nhau. Bất kỳ ai trong cộng đồng cũng có thể mượn hoặc mượn những cuốn sách hoặc tài liệu này trong một khoảng thời gian cụ thể. Thư viện cho mượn tài liệu của mình.<br>\
-Đoạn B <br>\
-Thư viện công cộng thường được hỗ trợ bằng thuế. Có một số thư viện được hỗ trợ bằng tiền quyên góp. Và có một số thư viện nhận được một phần tiền từ thuế và một phần từ quà tặng.<br>\
-Đoạn C <br>\
-Rất ít thư viện công cộng nào giống hệt nhau. Không chỉ hình dạng và kích thước của các tòa nhà khác nhau mà số lượng sách và tài liệu khác trong mỗi thư viện cũng khác nhau. Thư viện gần nhất của bạn có thể giống như Thư viện Công cộng Los Angeles, nơi có hơn 4538458 đầu sách và tạp chí đóng bìa (tạp chí và nhật ký) trong bộ sưu tập của mình. Hoặc có thể giống như Thư viện Công cộng Quận Cherokee, nơi chỉ có khoảng 3800 đầu sách trong bộ sưu tập của mình.<br>\
-Đoạn D <br>\
-Các thư viện cũng khác nhau ở nhiều khía cạnh khác, ví dụ như số giờ (hoặc ngày) mở cửa hoặc số lượng người làm việc ở đó. Tuy nhiên, hầu hết các thư viện công cộng đều sắp xếp sách và các tài liệu khác theo những cách tương tự nhau. Họ chia bộ sưu tập của mình thành hai nhóm tuổi cơ bản, trẻ em và người lớn. Sách dành cho người lớn ở một nơi; sách dành cho trẻ em ở một nơi khác. Sau đó, các cuốn sách được phân tách thêm theo loại sách. Sách truyện - tác phẩm hư cấu - được phân tách khỏi sách thông tin, hoặc sách sự kiện - phi hư cấu.<br>\
-Đoạn E <br>\
-Mọi người thường muốn tham khảo, tức là tra cứu thông tin cơ bản trong một cuốn sách nào đó. Do đó, sách tham khảo, vốn hiếm khi được đọc từ đầu đến cuối, được đặt ở một vị trí đặc biệt trong thư viện, một phần tham khảo hoặc có thể là một phòng tham khảo. Sách tham khảo không bao giờ được mang ra khỏi tòa nhà thư viện.<br>\
-Đoạn F <br>\
-Mỗi thư viện tự quyết định cách sắp xếp sách và các tài liệu khác của mình. Trong một thư viện thành phố lớn, một số tài liệu phi hư cấu có thể được đưa vào một khu vực đặc biệt hoặc phòng riêng. Ví dụ, có thể có một phòng riêng chỉ dành cho tất cả các tài liệu mà thư viện có về âm nhạc. Ở một thành phố lớn khác, các tài liệu âm nhạc có thể không được giữ riêng biệt như vậy. Điều này sẽ phụ thuộc vào những gì người dân trong thành phố đó cho biết họ thấy hữu ích. <br>\
-Đoạn G<br>\
-Tài sản của thư viện là tất cả những gì thư viện có trong bộ sưu tập của mình. Những tài sản này hầu như luôn phản ánh sở thích đặc biệt của cộng đồng. Ví dụ, giả sử có một thị trấn nơi ngựa Morgan được nuôi và huấn luyện rộng rãi. Thư viện của thị trấn đó rất có thể sẽ có rất nhiều tài liệu về ngựa Morgan. Vì những người quan tâm đến ngựa Morgan có thể ít quan tâm đến các giống ngựa khác nên thư viện có thể chỉ có một lượng nhỏ tài liệu về ngựa Mustang hoặc ngựa Appaloosa."
-	,voca:""
-	,note:""
 }
 
 

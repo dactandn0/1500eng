@@ -2,7 +2,7 @@ const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water
 
 var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes,own,even if,even,though,although,despite,certainly,of course,so on,whenever\
 ,probably,currently,unfortunately,hardly,rarely,much,more,more into,really,recently,ever,never,still,usually\
-,absolutely,actually,completely,really,totally,thoroughly,entirely,simply,undoubtedly,literally,gradually,unusual,nevertheless\
+,absolutely,actually,completely,really,totally,thoroughly,entirely,simply,undoubtedly,literally,gradually,unusual,nevertheless,less,fewer\
 ,pretty,quite,rather,fairly,basically,honestly\
 ,since,as,in fact,on top of that,what's more,besides,plus,as much as,as well as,as long as,more and more,one another,through\
 ,as a result,consequently,thereby,thus,hence,such as,needless to say,less of\
@@ -11,7 +11,7 @@ var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes
 
 SPECIAL_WORDS = Helper_SoftStringData(SPECIAL_WORDS)
 
-const NOUN_SAME_VERBS = "influence,concern,drift,lease,attempt,compliment,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
+const NOUN_SAME_VERBS = "attempt,influence,concern,drift,lease,attempt,compliment,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\
 excuse,mind,ski,bail,exhibit,mine,slice,balance,experience,miss,slide,balloon,eye,mistake,slip,ban,face,moor,smell,bandage,fall,move,smile,bank,favor,\
 mug,smirk,bare,fax,nail,smoke,bargain,fear,name,snack,battle,feel,need,snow,beam,fight,nest,sound,bear,file,notch,span,beat,fill,note,spot,bend,film,\

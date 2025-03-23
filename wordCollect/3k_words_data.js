@@ -632,7 +632,6 @@ waterfall (n) /ˈwɔː.tə.fɔːl/ thác nước<br>\
 barn (n) /bɑːn/ kho thóc<br>\
 harvest (n) /ˈhɑː.vɪst/ vụ gặt<br>\
 cattle (n) /ˈkæt.əl/ gia súc<br>\
-rural (a) /ˈrʊə.rəl/ (thuộc) nông thôn<br>\
 cliff (n) /klɪf/ vách đá<br>\
 landscape (n) /ˈlænd.skeɪp/ phong cảnh"
 },
@@ -878,7 +877,6 @@ driver (n) /ˈdraɪvər/ tài xế<br>\
 drive (n) /draɪv/ lái xe<br>\
 change gear (n) /tʃeɪndʒ ɡɪr/ chuyển số<br>\
 jack (n) /dʒæk/ đòn bẩy, palăng<br>\
-flat tyre (n) /flæt ˈtaɪər/ lốp xì hơi<br>\
 puncture (n) /ˈpʌŋktʃər/ sự thủng xăm",
 },
 {

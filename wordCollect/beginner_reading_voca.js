@@ -2,9 +2,6 @@ const BEGINNER_READING_VOCA = [
 {
 title: "Beginner_reading_voca",
 en: "definitely (adv) chắc chắn<br>\
-also (adv) cũng<br>\
-just (adv) chỉ<br>\
-only (adv) chỉ<br>\
 always (adv) luôn luôn<br>\
 absolutely (adv) hoàn toàn<br>\
 quite (adv) khá<br>\
@@ -15,7 +12,6 @@ even (adv) thậm chí<br>\
 though (conj) mặc dù<br>\
 although (conj) mặc dù<br>\
 despite (conj) mặc dù<br>\
-certainly (adv) chắc chắn<br>\
 of course (adv) tất nhiên<br>\
 so on (adv) vân vân<br>\
 whenever (conj) bất cứ khi nào<br>\
@@ -24,10 +20,10 @@ currently (conj) hiện tại<br>\
 unfortunately (adv) thật không may<br>\
 hardly (adv) hầu như không<br>\
 rarely (adv) hiếm khi<br>\
+devote (v) cống hiến<br>\
 much (adv) nhiều<br>\
 more (adv) nhiều hơn<br>\
 really (adv) thực sự<br>\
-recently (adv) gần đây<br>\
 ever (adv) bao giờ<br>\
 never (adv) không bao giờ<br>\
 still (adv) vẫn<br>\
@@ -35,7 +31,6 @@ usually (adv) thường<br>\
 absolutely (adv) hoàn toàn<br>\
 actually (adv) thực sự<br>\
 completely (adv) hoàn toàn<br>\
-really (adv) thực sự<br>\
 totally (adv) hoàn toàn<br>\
 thoroughly (adv) riệt để<br>\
 entirely (adv) toàn bộ<br>\
@@ -44,10 +39,7 @@ undoubtedly (adv) không nghi ngờ gì nữa<br>\
 literally (adv) theo đúng nghĩa đen<br>\
 gradually (adv) dần dần<br>\
 unusual (adv) khá<br>\
-pretty (adv) khá<br>\
-quite (adv) khá<br>\
 rather than (conj) hơn là<br>\
-fairly (adv) khá<br>\
 basically (adv) về cơ bản<br>\
 honestly (adv) trung thực<br>\
 in fact (conj) trên thực tế<br>\
@@ -59,7 +51,6 @@ as much as (conj) nhiều như<br>\
 as well as (conj) cũng như<br>\
 as long as (conj) miễn là<br>\
 as a result (conj) kết quả là<br>\
-consequently (adv) do đó<br>\
 thereby (conj) do đó<br>\
 thus (conj) do đó<br>\
 hence (conj) như vậy<br>\
@@ -68,7 +59,6 @@ needless to say (conj) không cần phải nói<br>\
 incredibly (adv) vô cùng<br>\
 considerably (adv) đáng kể<br>\
 particularly (adv) đặc biệt<br>\
-significantly (adv) đáng kể<br>\
 a bit of () một chút<br>\
 a sense of () cảm giác<br>\
 a bit () một chút<br>\
@@ -127,7 +117,7 @@ stiff (v) /stɪf/ cứng nhắc, cứng đầu, bướng<br>\
 unconscious (a) /ʌnˈkɑːnʃəs/ vô thức, không còn tri giác<br>\
 achieve /a'tJi:v/ (v) đạt được<br>\
 annual /'renjual/ (a) hàng năm<br>\
-attempt (n,v) /a'tempt/ cố gắng<br>\
+attempt (n,v) /a'tempt/ sự cố gắng, sự nỗ lực<br>\
 booklet /'buklit/ (n) tập sách<br>\
 campus /'krempas/ (n) khuôn viên trường<br>\
 charge /tJa:d3/ (n,v) điện tích<br>\
@@ -186,7 +176,6 @@ insurance (n) /ɪnˈʃʊrəns/ bảo hiểm<br>\
 item (n) /ˈaɪtəm/ mục, đồ dùng, vật<br>\
 leak (v) rò rỉ<br>\
 pet (n) thú cưng<br>\
-process (n) quy trình<br>\
 reference (n) tham chiếu<br>\
 refund (n,v) /ˈriːfʌnd/ hoàn lại, trả lại<br>\
 rental contract (n) /ˈrɛntəl ˈkɒntrækt/ hợp đồng cho thuê<br>\
@@ -235,30 +224,27 @@ assault /a'so:lt/ (n) tấn công<br>\
 bystander /'bai,strenda/ (n) người ngoài cuộc<br>\
 conservative /kan's3:vativ /(a) bảo thủ<br>\
 cop /kop/ (n) cảnh sát<br>\
-criminal /'kriminl/ (n) tội phạm<br>\
 crisis /'kraisis/ (n) khủng hoảng<br>\
 crossfire /'krosfaia/ (n) đấu súng<br>\
 desensitise /di:'sensitaiz/ (v) làm mất cảm giác<br>\
 drug /drAg/ (n) ma túy<br>\
-fund /fAnd/ (n) quỹ<br>\
+fund /fʌnd/ (n) quỹ<br>\
 insult /'insAlt/ (n) lăng mạ<br>\
-issue /'ifu:/ (n) vấn đề<br>\
 juvenile /'d3u:vanail/ (n) vị thành niên<br>\
 motive /'mautiv / (n) động cơ<br>\
-neglect /ni'glekt/ (v) bỏ bê<br>\
 non-profit /non'profit/ (a) phi lợi nhuận<br>\
 racism /'reisizam/ (n) chủ nghĩa phân biệt chủng tộc<br>\
-rural /'ruaral/ (a) nông thôn<br>\
+rural (a) /ˈrʊə.rəl/ (thuộc) nông thôn<br>\
 sneaker /'sni:ka/ (n) giày thể thao<br>\
-spill /spil/ (v) tràn<br>\
 state /steit/ (v) tiểu bang<br>\
-suburban /sa'b3:ban/ (a) ngoại ô<br>\
-sufficient / a'fifant/ (a) đủ<br>\
+sufficient /a'fifant/ (a) đủ<br>\
 suicide /'sju:isaid/ (n) tự tử<br>\
 torturer /'b:tfara/ (n) kẻ tra tấn<br>\
 victim /'viktim/ (n) nạn nhân<br>\
-violence /'vaialans/ (n)bạo lực<br>\
+violence /'vaialans/ (n) bạo lực<br>\
 analysis /a'nrelasis/ (n) phân tích<br>\
+overcome (v) /ˌəʊvərˈkʌm/ vượt qua<br>\
+committee (n) /kəˈmɪti/ ủy ban<br>\
 comment /'koment/ (n) bình luận<br>\
 communicative /ka'mju:nikativ /(a) giao tiếp<br>\
 compose /kam'pauz/ (v) soạn<br>\
@@ -266,19 +252,17 @@ conduct /kan'dAkt/ (v) hành xử<br>\
 confident /'konfidant/ (a) tự tin<br>\
 context /'kontekst/ (n) bối cảnh<br>\
 conversational /konva'seij'anl/ (a) đối thoại<br>\
-electronic /i,lek'tronik/ (a) điện tử<br>\
 linguist /'liDgwist/ (n) ngôn ngữ học<br>\
 network /'netw3:k/ (n) mạng<br>\
 obvious /'obvias/ (a) rõ ràng<br>\
 oral /'o:ral/ (a) nói<br>\
 participate /pa:'tisipeit/ (v) tham gia<br>\
-process /'prauses/ (n) quy trình<br>\
 sample /'sa:mpl/ (n) mẫu<br>\
 semester /si'mesta/ (n) học kỳ<br>\
 significantly /sig'nifikantli/ (adv) đáng kể<br>\
 syllabus /'silabas/ (n) giáo trình<br>\
 traditional /tra'dij'anl/ (a) truyền thống<br>\
-transcript /'trrenskript/ (n) bảng điểm<br>\
+transcript /'trrenskript/ (n) bản ghi chép<br>\
 virtually /'v3:tfuali/ (adv) hầu như<br>\
 whereas /wear'rez/ (conj) trong khi<br>\
 "

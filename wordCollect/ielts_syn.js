@@ -9,7 +9,7 @@ const SynonymData = [
 	type:"v",
 	mean:"đạt được"
 },{
-	words:"strengthen /ˈstreŋkθn/|boost  /buːst/|enhance /ɪnˈhæns/",
+	words:"strengthen /ˈstreŋkθn/|boost /buːst/|enhance /ɪnˈhæns/",
 	type:"v",
 	mean:"gia cố, tăng cường"
 },{
@@ -21,19 +21,23 @@ const SynonymData = [
 	type:"a",
 	mean:"độc ác"
 },{
-	words:"appropriate |suitable",
+	words:"appropriate /əˈprəʊpriət/|suitable",
 	type:"a",
 	mean:"thích hợp"
+},{
+	words:"problem /ˈprɑːbləm/|issue /ˈɪʃuː/",
+	type:"n",
+	mean:"vấn đề, sự khó khăn"
 },{
 	words:"exciting /ɪkˈsaɪtɪŋ/|dramatic /drəˈmætɪk/|heady /ˈhedi/|thrilling /ˈθrɪlɪŋ/|exhilarating /ɪɡˈzɪləreɪtɪŋ/",
 	type:"a",
 	mean:"phấn khởi, thú vị"
 },{
-	words:"adjust  /əˈdʒʌst/|regulate /ˈreɡjuleɪt/",
+	words:"adjust /əˈdʒʌst/|regulate /ˈreɡjuleɪt/",
 	type:"v",
 	mean:"điều chỉnh"
 },{
-	words:"solve  /sɑːlv/|resolve  /rɪˈzɑːlv/|tackle /ˈtækl/",
+	words:"solve /sɑːlv/|resolve /rɪˈzɑːlv/|tackle /ˈtækl/",
 	type:"v",
 	mean:"gỡ rối, gỡ rối"
 },{
@@ -57,8 +61,7 @@ const SynonymData = [
 	type:"adv",
 	mean:"khá (not very) (+ nouns, adj, adv)"
 },{
-	words:"abroad (adv)|overseas",
-	type:"a",
+	words:"abroad (adv)|overseas (a)",
 	mean:"ở nước ngoài"
 },{
 	words:"teenager|youth /juːθ/",
@@ -188,7 +191,7 @@ const SynonymData = [
 	mean:"bạn bè"
 },
 {
-	words:"vivid /ˈvɪvɪd/|Vibrant /ˈvaɪbrənt/|lively  /ˈlaɪvli/",
+	words:"vivid /ˈvɪvɪd/|Vibrant /ˈvaɪbrənt/|lively /ˈlaɪvli/",
 	type:"a",
 	mean:"sống (sôi) động"
 },
@@ -323,7 +326,7 @@ function showAttachWords(word, wordArr) {
 	for (var i = 0; i < wordArr.length; i++) {
 		var ele = wordArr[i]
 		
-		var rrr=  /\/.+\//gi.test(ele)
+		var rrr= /\/.+\//gi.test(ele)
 	//	if (!rrr) console.log('showAttachWords::' + ele)
 
 		if ( ele.indexOf(word) == -1 ) {

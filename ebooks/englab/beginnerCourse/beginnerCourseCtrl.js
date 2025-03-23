@@ -1,5 +1,6 @@
 
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_R.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_R2.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_W.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_S.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_L.js" type="text/javascript"></script>');
@@ -27,7 +28,7 @@ ielt_formChange = function (num, isLoadData = false) {
 
 	if (num===0) 
 	{
-		$scope.stories = ENGLAB_BEGIN_DATA_R;
+		$scope.stories = ENGLAB_BEGIN_DATA_R.concat(ENGLAB_BEGIN_DATA_R2);
 	}
 	if (num===1)
 	{

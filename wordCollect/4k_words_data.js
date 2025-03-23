@@ -162,9 +162,7 @@ grade (n) /ɡreɪd/ cấp, hạng<br>\
 instead (adv) /ɪnˈsted/ thay thế<br>\
 planet (n) /ˈplænɪt/ hành tinh<br>\
 report (v) /rɪˈpɔːrt/ báo cáo<br>\
-resolve (v) /rɪˈzɑːlv/ giải quyết<br>\
 vaccination (n) /ˌvæksɪˈneɪʃn/ tiêm chủng<br>\
-solve (v) /sɑːlv/ giải quyết<br>\
 suddenly (adv) /ˈsʌdənli/ đột nhiên<br>\
 stability (n) /səˈpəʊz/ sự ổn định<br>\
 suppose (v) /səˈpəʊz/ giả sử<br>\
@@ -708,7 +706,6 @@ trust tin tưởng<br>\
 purity (n) /ˈpjʊrəti/ nguyên chất, tinh khiết<br>\
 resonate (v) /ˈrezəneɪt/ cộng hưởng<br>\
 twist (v) /twɪst/ xoắn<br>\
-unless trừ khi<br>\
 confidence tự tin<br>\
 consequence hậu quả<br>\
 disaster thảm họa<br>\
@@ -770,7 +767,6 @@ depart khởi hành<br>\
 depress ức chế<br>\
 factual thực tế<br>\
 fascinate hấp dẫn<br>\
-mission,nevertheless sứ mệnh,tuy nhiên<br>\
 occupation nghề nghiệp<br>\
 overseas nước ngoài<br>\
 persuade thuyết phục<br>\

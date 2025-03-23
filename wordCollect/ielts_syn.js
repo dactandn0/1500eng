@@ -33,6 +33,10 @@ const SynonymData = [
 	type:"v",
 	mean:"điều chỉnh"
 },{
+	words:"solve  /sɑːlv/|resolve  /rɪˈzɑːlv/|tackle /ˈtækl/",
+	type:"v",
+	mean:"gỡ rối, gỡ rối"
+},{
 	words:"overweight|obese",
 	type:"a",
 	mean:"béo phì"
@@ -144,7 +148,7 @@ const SynonymData = [
 	mean:"buồn, chán"
 },
 {
-	words:"tiny|petite|small|little (adv. less. chút ít)",
+	words:"tiny|petite|small|little",
 	type:"a",
 	mean:"bé, nhỏ"
 },

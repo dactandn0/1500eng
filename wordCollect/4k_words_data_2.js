@@ -5,6 +5,8 @@ en:"healthcare (n) /ˈhelθ ker/ chăm sóc sức khỏe <br>\
 population (n)  /pɑːpjuˈleɪʃn/ dân số (số nhiều = nhóm dân số) <br>\
 industrialisation (n) /ɪnˌdʌstriələˈzeɪʃn/ công nghiệp hóa <br>\
 historical (a) /hɪˈstɔːrəkl/ lịch sử<br>\
+less (a) chút ít (so sánh hơn của a little) + uncount.N/Adj <br>\
+fewer (a) chút ít (so sánh hơn của a few) + N_số nhiều <br>\
 damp (a) /dæmp/ ẩm ướt<br>\
 polio (n) /ˈpəʊliəʊ/ bệnh bại liệt <br>\
 individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\

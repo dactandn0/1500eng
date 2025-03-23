@@ -1,7 +1,4 @@
 
-<mark class="mb-4">Englab Beginner</mark>
-<hr>
-
 <form name="beg_ielt_bForm" class="my-1" role="group">
 	<input id="111" type="radio" name="ielt_form" value='0' onchange="ielt_formChange(0)" checked/><label class="mr-3" for="111">R</label>
 	<input id="222" type="radio" name="ielt_form" value='1' onchange="ielt_formChange(1)" /><label class="mr-3" for="222">W</label>
@@ -11,6 +8,9 @@
 </form>
 
 <div ng-show="ielt_form!==3 && ielt_form!==4 && ielt_form!==5">
+	<div class= "mb-2" ng-show="ielt_form==0">
+		<mark class="mb-1">Basic Ielts Reading</mark>
+	</div>
 	<div ng-include="'./includes/storyR.html'" ></div>
 </div> <!-- ielt_form -->
 

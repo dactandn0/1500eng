@@ -131,7 +131,7 @@ attempt (n,v) /a'tempt/ cố gắng<br>\
 booklet /'buklit/ (n) tập sách<br>\
 campus /'krempas/ (n) khuôn viên trường<br>\
 charge /tJa:d3/ (n,v) điện tích<br>\
-confirmation /,konfa'meifan/ (n) <br>\
+confirmation /konfa'meifan/ (n) <br>\
 constant /'konstant/ (a) hằng số<br>\
 deem /di:m/ (v) cho rằng<br>\
 demonstrate /'demanstreit/ (v) thể hiện<br>\
@@ -141,10 +141,10 @@ equivalent /i'kwivalant/ (n,a) tương đương<br>\
 evidence /'evidans/ (n) bằng chứng<br>\
 exceed /ik'si:d/ (v) vượt quá<br>\
 Honours degree /'onaz di,gri:/ Bằng danh dự<br>\
-institution /,insti'tjuJan/ (n) tổ chức<br>\
+institution /insti'tjuJan/ (n) tổ chức<br>\
 mature /ma'tjua/ (a) trưởng thành<br>\
 merit /'merit/ (n) công trạng<br>\
-metropolitan /,metra'politan/ (a) đô thị<br>\
+metropolitan /metra'politan/ (a) đô thị<br>\
 proficiency /pra'fifansi/ (n) sự thành thạo<br>\
 qualification /kwolifi'keiJan/ (n) trình độ<br>\
 secondary /'sekandari/ (a) thứ cấp<br>\
@@ -230,6 +230,57 @@ shipping /jipi!J/ (n) vận chuyển <br>\
 freight /freit/ (n) hàng hóa<br>\
 inland /'inland/ (a) nội địa<br>\
 wagon /'wregan/ (n) toa xe<br>\
+abuse /a'bju:z/ (v) lạm dụng<br>\
+assault /a'so:lt/ (n) tấn công<br>\
+bystander /'bai,strenda/ (n) người ngoài cuộc<br>\
+conservative /kan's3:vativ /(a) bảo thủ<br>\
+cop /kop/ (n) cảnh sát<br>\
+criminal /'kriminl/ (n) tội phạm<br>\
+crisis /'kraisis/ (n) khủng hoảng<br>\
+crossfire /'krosfaia/ (n) đấu súng<br>\
+desensitise /di:'sensitaiz/ (v) làm mất cảm giác<br>\
+drug /drAg/ (n) ma túy<br>\
+fund /fAnd/ (n) quỹ<br>\
+insult /'insAlt/ (n) lăng mạ<br>\
+issue /'ifu:/ (n) vấn đề<br>\
+juvenile /'d3u:vanail/ (n) vị thành niên<br>\
+motive /'mautiv / (n) động cơ<br>\
+neglect /ni'glekt/ (v) bỏ bê<br>\
+non-profit /non'profit/ (a) phi lợi nhuận<br>\
+racism /'reisizam/ (n) chủ nghĩa phân biệt chủng tộc<br>\
+rural /'ruaral/ (a) nông thôn<br>\
+sneaker /'sni:ka/ (n) giày thể thao<br>\
+spill /spil/ (v) tràn<br>\
+state /steit/ (v) tiểu bang<br>\
+suburban /sa'b3:ban/ (a) ngoại ô<br>\
+sufficient / a'fifant/ (a) đủ<br>\
+suicide /'sju:isaid/ (n) tự tử<br>\
+torturer /'b:tfara/ (n) kẻ tra tấn<br>\
+victim /'viktim/ (n) nạn nhân<br>\
+violence /'vaialans/ (n)bạo lực<br>\
+analysis /a'nrelasis/ (n) phân tích<br>\
+comment /'koment/ (n) bình luận<br>\
+communicative /ka'mju:nikativ /(a) giao tiếp<br>\
+compose /kam'pauz/ (v) soạn<br>\
+conduct /kan'dAkt/ (v) hành xử<br>\
+confident /'konfidant/ (a) tự tin<br>\
+context /'kontekst/ (n) bối cảnh<br>\
+conversational /konva'seij'anl/ (a) đối thoại<br>\
+electronic /i,lek'tronik/ (a) điện tử<br>\
+linguist /'liDgwist/ (n) ngôn ngữ học<br>\
+network /'netw3:k/ (n) mạng<br>\
+obvious /'obvias/ (a) rõ ràng<br>\
+oral /'o:ral/ (a) nói<br>\
+participate /pa:'tisipeit/ (v) tham gia<br>\
+process /'prauses/ (n) quy trình<br>\
+sample /'sa:mpl/ (n) mẫu<br>\
+semester /si'mesta/ (n) học kỳ<br>\
+significantly /sig'nifikantli/ (adv) đáng kể<br>\
+syllabus /'silabas/ (n) giáo trình<br>\
+traditional /tra'dij'anl/ (a) truyền thống<br>\
+transcript /'trrenskript/ (n) bảng điểm<br>\
+virtually /'v3:tfuali/ (adv) hầu như<br>\
+whereas /wear'rez/ (conj) trong khi<br>\
 "
 }
 ]

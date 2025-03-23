@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<style type="text/css">
+.my-1 { margin-top: 1rem;margin-bottom: 1rem }
+</style>
+
+<body>
+<div ng-app="myApp" ng-controller="myCtrl"> 
+ 
+	<p>Input something in [A] [B] [C]:</p>
+
+	<textarea ng-model="inputA" rows="34" cols="40" ng-trim="false"></textarea>
+	<textarea ng-model="inputB" rows="34" cols="40" ng-trim="false"></textarea>
+	<textarea ng-model="inputC" rows="34" cols="40" ng-trim="false"></textarea>
+
+    <div class="my-1">
+        Replace (regex) : <input type="text" ng-model="regexA" placeholder="From"> => <input type="text" ng-model="replaceBy" placeholder="To" ng-trim="false">
+        <button ng-click="replaceRg()">B=A.Replace('From', 'To')</button>
+    </div>
+	
+	
+	<button ng-click="combineA_B()">C=A+B</button>
+
+    <div class="my-1">
+       <label for="cars">Box </label>
+       <select ng-model="selectedBox">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+
+        <button ng-click="boxAppendBr()">Append 'br' tag</button>     
+    </div>
+
+	<ul ng-repeat="x in records">{{x}}</ul>
+
+	</div> <!-- controller -->
+</body>
+</html>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) 
+{
+    const KBr = '<br>\\\n'
+    $scope.selectedBox = "C"
+	 $scope.boxAppendBr = function()
+    {
+    	let result = ''
+
+        let inputBox = $scope.inputC
+        if ($scope.selectedBox=='A') inputBox = $scope.inputA
+        else if ($scope.selectedBox=='B') inputBox = $scope.inputB
+
+        if (!inputBox) return
+        else inputBox = inputBox.replace(/(<br>\\)/gm, '').trim()
+
+    	let splBox = inputBox.split('\n')
+    	for (var i = 0; i < splBox.length; i++) 
+    	{
+    		const ele = splBox[i]
+    		result += ele + KBr
+    	}
+        if ($scope.selectedBox==='A')  $scope.inputA = result
+        else if ($scope.selectedBox==='B')  $scope.inputB = result
+    	else $scope.inputC = result
+
+    	saveAll() 
+    }
+
+    $scope.combineA_B = function()
+    {
+    	let resultA_B = ''
+    	let splA = $scope.inputA.split('\n')
+    	let splB = $scope.inputB.split('\n')
+    	for (var i = 0; i < splA.length; i++) 
+    	{
+    		const eleA = splA[i]
+    		let eleB = splB[i] || ''
+    		resultA_B += eleA + eleB + '\n'
+    	}
+    	$scope.inputC = resultA_B
+
+    	saveAll()
+    }
+
+    $scope.replaceRg = function()
+    {   
+    	let rgA =  new RegExp ($scope.regexA, 'gi')
+    	let reBy = $scope.replaceBy || ''
+
+    	$scope.inputB = $scope.inputA.replace(rgA, reBy)
+
+    	saveAll()
+    }
+
+
+
+ $scope.records = [
+        "\\d",
+        "adj\\.",
+        "n\\.",
+        "v\\.",
+    ]
+
+function saveDB(key,val )
+{
+	localStorage.setItem(key, val);
+}
+
+
+function loadData()
+{
+    $scope.inputA = localStorage['inputA'].trim()
+    $scope.inputB = localStorage['inputB'].trim()
+    $scope.inputC = localStorage['inputC'].trim()
+}
+
+function saveAll()
+{
+	saveDB('inputA', $scope.inputA)
+    saveDB('inputB', $scope.inputB)
+    saveDB('inputC', $scope.inputC)
+}
+function saveC() 
+{
+	saveDB('inputC', $scope.inputC)
+}
+
+loadData();
+
+});
+</script>

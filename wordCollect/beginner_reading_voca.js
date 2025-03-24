@@ -109,7 +109,7 @@ injection (n) /ɪnˈdʒek.ʃən/ việc tiêm thuốc<br>\
 itchy (n) ngứa<br>\
 knit (v) đan len (chỉ)<br>\
 plaster (n) thạch cao, miếng dán<br>\
-relieve (v) /rɪˈliːv/ làm dịu<br>\
+relieve (v) /rɪˈliːv/ làm dịu, giải vây, viện trợ<br>\
 rough (a) gồ ghề, thô<br>\
 rubbery (n) cao su<br>\
 scald (v,n) /skɔːld/ làm phỏng, chỗ phỏng<br>\
@@ -117,14 +117,14 @@ stiff (v) /stɪf/ cứng nhắc, cứng đầu, bướng<br>\
 unconscious (a) /ʌnˈkɑːnʃəs/ vô thức, không còn tri giác<br>\
 achieve /a'tJi:v/ (v) đạt được<br>\
 annual /'renjual/ (a) hàng năm<br>\
-attempt (n,v) /a'tempt/ sự cố gắng, sự nỗ lực<br>\
+attempt (n,v) /a'tempt/ cố gắng, nỗ lực (without prep)<br>\
 booklet /'buklit/ (n) tập sách<br>\
 campus /'krempas/ (n) khuôn viên trường<br>\
 charge /tJa:d3/ (n,v) điện tích<br>\
 confirmation /konfa'meifan/ (n) <br>\
 constant /'konstant/ (a) hằng số<br>\
 deem /di:m/ (v) cho rằng<br>\
-demonstrate /'demanstreit/ (v) thể hiện<br>\
+demonstrate /'demanstreit/ (v) chứng tỏ, chứng minh<br>\
 duration/ dju'reifan/ (n) thời gian<br>\
 enrolment /in'raulmant/ (n) ghi danh<br>\
 equivalent /i'kwivalant/ (n,a) tương đương<br>\
@@ -265,6 +265,24 @@ traditional /tra'dij'anl/ (a) truyền thống<br>\
 transcript /'trrenskript/ (n) bản ghi chép<br>\
 virtually /'v3:tfuali/ (adv) hầu như<br>\
 whereas /wear'rez/ (conj) trong khi<br>\
+abridge /ǝ'bridg/ (v)tóm tắt<br>\
+appreciate /ǝ'pri:fieit/ (v)đánh giá cao<br>\
+assign /ǝ'sain/ (v)giao<br>\
+clinic /'klinik/(n)phòng khám<br>\
+commit /kǝ'mit/ (v)cam kết<br>\
+drop-in /'dropin/ (n)thả vào<br>\
+frame /freim/ (n)khung<br>\
+handle /'hændl/ (v)xử lý<br>\
+ideally /ai'di:ǝli/ ad(v)lý tưởng<br>\
+intercultural /intǝ'kaltfǝrǝl/ (a)liên văn hóa<br>\
+interview /'intǝvju:/ (n,v)phỏng vấn<br>\
+parking lot /'pa:kin lot/ (n) bãi đậu xe<br>\
+patio /'pætiǝu/ (n)sân<br>\
+questionnaire /kwestfa'nea/ (n) bảng câu hỏi<br>\
+self-access /self'ækses/ (n) tự truy cập<br>\
+sub-part /'sɅbpa:t/(n) phần phụ<br>\
+tutorial /tju:'to:rial/ (a,n) hướng dẫn<br>\
+volunteer /volǝn'tiǝ/ (n)tình nguyện<br>\
 "
 }
 ]

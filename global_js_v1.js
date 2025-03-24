@@ -94,7 +94,6 @@ document.write('<small class="note">\
 	' + PHRA_VERB_TAG_BEGIN + 'phraVerb' + PHRA_VERB_TAG_END + ' <br>\
 	' + SPECIAL_WORDS_HL_TAG_BEGIN + '(Special)' + SPECIAL_WORDS_HL_TAG_END + ' <br>\
 	' + SAME_N_V_TAG_BEGIN + 'n = v' + SAME_N_V_TAG_END + ' <br>\
-	' + NOTED_WORD_TAG_BEGIN + 'Noted' + NOTED_WORD_TAG_END + ' <br>\
 	</small>'
 	);
 

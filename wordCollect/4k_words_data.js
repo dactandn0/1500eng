@@ -460,13 +460,14 @@ brain (n) /breɪn/ não<br>\
 career nghề nghiệp<br>\
 clerk nhân viên<br>\
 effort nỗ lực<br>\
-enter vào<br>\
-excellent xuất sắc<br>\
-hero anh hùng<br>\
-hurry vội vã<br>\
-inform thông báo<br>\
+enter (v) /ˈentər/ vào<br>\
+excellent (a) /ˈeksələnt/ xuất sắc<br>\
+hero (v) /ˈhɪrəʊ/ anh hùng<br>\
+hurry (v) /ˈhɜːri/ vội vã<br>\
+inform (v) /ɪnˈfɔːrm/ thông báo<br>\
 leaves (n) lá (plural of leaf) <br>\
-leave (v) /liːv/ để lại, rời đi<br>\
+leave (v) /liːv/ để lại, rời đi (vacate)<br>\
+vacate (v) /ˈveɪkeɪt/ để lại, rời đi (leave)<br>\
 locate xác định vị trí<br>\
 operation phẫu thuật<br>\
 pain đau<br>\

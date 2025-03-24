@@ -113,9 +113,12 @@ function saveDB(key,val )
 
 function loadData()
 {
-    $scope.inputA = localStorage['inputA'].trim()
-    $scope.inputB = localStorage['inputB'].trim()
-    $scope.inputC = localStorage['inputC'].trim()
+    if (localStorage.hasOwnProperty('inputA')) 
+        $scope.inputA = localStorage['inputA'].trim()
+    if (localStorage.hasOwnProperty('inputB')) 
+        $scope.inputB = localStorage['inputB'].trim()
+    if (localStorage.hasOwnProperty('inputC')) 
+        $scope.inputC = localStorage['inputC'].trim()
 }
 
 function saveAll()

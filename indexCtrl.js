@@ -202,7 +202,7 @@ $scope.Index_NoteVoca_Speak = function (word) {
       concatWord += ' ' + ele
     }
   })
-  Text2Speech(concatWord.trim());
+  ngClickSpeechShowToast(concatWord, true)
 }
 
 // vocaEbook Touch
@@ -214,7 +214,7 @@ $scope.vocaEbookSpeech = function (event, txt, lesson, idx, idxParent) {
     $scope.vocaIdx = idx
     $scope.lessonIdx = idxParent
   }
-  ngClickSpeechShowToast(txt)
+  ngClickSpeechShowToast(sentences[0], true)
 }
 
 
@@ -264,16 +264,12 @@ ngClickSpeechShowToast = function (touchedWord, isLongText)
   // not in database, so using GOOGLE TRANS API
   if (msg == touchedWord)
   {
-    let input = touchedWord
-    let url = GOOGLE_TRANS_API + input
-    $http({
-      method: 'GET',
-      url: url
-    }).then( res => {
-        var out = res.data[0][0][0]
-        doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + out, isLongText)
-      }, err => {
-      });
+    Helper_GG_API($http, msg).then (res => {
+      const result = res.data[0][0][0];
+      doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + result, isLongText);
+    }, err => {
+      alert(err)
+    });
   }
   else
   {
@@ -306,7 +302,7 @@ function doShowToast(content, isLongText)
   
   toastr.info(btnSave, content, {
     allowHtml: true,
-    timeOut :  toasterTimeout * (isLongText ? 1.5 : 1)
+    timeOut :  toasterTimeout * (isLongText ? 2.5 : 1)
   });
 
 }

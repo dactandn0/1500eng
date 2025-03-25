@@ -248,7 +248,6 @@ committee (n) /kəˈmɪti/ ủy ban<br>\
 comment /'koment/ (n) bình luận<br>\
 communicative /ka'mju:nikativ /(a) giao tiếp<br>\
 compose /kam'pauz/ (v) soạn<br>\
-conduct /kan'dAkt/ (v) hành xử<br>\
 confident /'konfidant/ (a) tự tin<br>\
 context /'kontekst/ (n) bối cảnh<br>\
 conversational /konva'seij'anl/ (a) đối thoại<br>\

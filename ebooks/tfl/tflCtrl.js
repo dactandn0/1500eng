@@ -11,7 +11,7 @@ $scope.KBook = 1;
 $scope.stories = tfl_b1_stories; 					//def
 $scope.storyIdx = 0;
 
-$scope.img_root = './ebooks/tfl/data/images/ocg' ; 	
+$scope.img_root = './ebooks/tfl/data/images/' ; 	
 
 var keyU = 'tfl_u_'
 

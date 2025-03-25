@@ -9,13 +9,21 @@ const SynonymData = [
 	type:"v",
 	mean:"đạt được"
 },{
+	words:"conduct /kənˈdʌkt/|carry out|perform /pərˈfɔːrm/",
+	type:"v",
+	mean:"thực hiện"
+},{
 	words:"strengthen /ˈstreŋkθn/|boost /buːst/|enhance /ɪnˈhæns/",
 	type:"v",
 	mean:"gia cố, tăng cường"
 },{
-	words:"good|great",
+	words:"good|great|fine|favorable /ˈfeɪvərəbl/|fair /fer/",
 	type:"a",
 	mean:"tốt, tuyệt"
+},{
+	words:"car|automobile /ˈɔːtəməbiːl/|motorcar",
+	type:"n",
+	mean:"ô tô"
 },{
 	words:"evil /ˈiːvl/|wicked /ˈwɪkɪd/|cruel /ˈkruːəl/",
 	type:"a",

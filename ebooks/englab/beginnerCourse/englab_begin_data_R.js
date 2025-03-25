@@ -148,14 +148,15 @@ Tuy nhiên, mối quan tâm đối với một số loài nhất định có xu 
 Các phong trào bảo vệ động vật khác đã xuất hiện rồi biến mất, chẳng hạn như cứu cá voi và bảo vệ cá heo khỏi những người đánh bắt cá ngừ. Hiện tại, quần thể cá voi dường như đã tăng lên. Và luật pháp cuối cùng cũng đang thay đổi ở Hoa Kỳ để bảo vệ những chú cá heo bơi cùng cá ngừ ở một số vùng của Thái Bình Dương.<br>\
 Vào những năm 2010, các cuộc biểu tình và hoạt động công khai có thể sẽ chuyển sang một số loài có nguy cơ tuyệt chủng khác. Rất nhiều loài trong số chúng cần được quan tâm khẩn cấp. Trong thời gian này, liệu loài voi có bị lãng quên không?"
 	,voca:"ashtray,brutality,club,dolphins,dwindling,endangered,greed,halt,habitat,illegally,ornamental,endangered,fade,profitable,publicity,shelter,pup,slaughter,supposedly,survive,tuna,tusk,urgently"
-	,T_F_NG: "09F. Many of the animals on Earth die because humans have to survive.<br>\
-10F. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
-11T. People who kill animals illegally often get away without being caught.<br>\
-12T. Wildlife protection groups proved that the number of some elephant species is decreasing.<br>\
+	,T_F_NG: "09. Many of the animals on Earth die because humans have to survive.<br>\
+10. It is normally enough when an animal species is declared endangered and protected by laws.<br>\
+11. People who kill animals illegally often get away without being caught.<br>\
+12. Wildlife protection groups proved that the number of some elephant species is decreasing.<br>\
 13. Poachers are severely punished if they kill the endangered species such as elephants. <br>\
-14T. In the late 1980s, people killed more seal pups than they did in the late 1970s.<br>\
+14. In the late 1980s, people killed more seal pups than they did in the late 1970s.<br>\
 15. The whale population is finally increasing because of stricter laws.<br>\
-16T. In the 2010s, people may not be so concerned about elephants as before."
+16. In the 2010s, people may not be so concerned about elephants as before."
+	,en_ans:"9F 10F 11T 12T 13NG 14T 15NG 16T"
 	,note:"have nothing to do = không liên quan"
 },{
 	title:"What Is Happening to Our Planet?",
@@ -423,7 +424,7 @@ Public libraries are usually tax-supported. There are a few that are instead sup
 Paragraph C <br>\
 Few public libraries are exactly alike. Not only ate the shapes and sizes of the buildings differ ent, but so are the number of books and other materials in each. Your nearest library may be like the Los Angeles Public Library, which has over 4538458 books and bound periodicals (magazines and journals) in its collection. Or it may be like the Cherokee County Public Library, which has only about 3800 books in its collection.<br>\
 Paragraph D <br>\
-Libraries vary in other ways, too, for instance, in the number of hours (or days) they are open or in the number of people who work there. Most public libraries, however, arrange their books and other materials in similar ways. They divide their collections into two basic age groups, children and adult. Adult books are in one place; children's books are in another. Then the books are further separated by the kind of book. Storybooks -works of fiction -are separated from infor mation, or fact books -nonfiction.<br>\
+Libraries vary in other ways, too, for instance, in the number of hours (or days) they are open or in the number of people who work there. Most public libraries, however, arrange their books and other materials in similar ways. They divide their collections into two basic age groups, children and adult. Adult books are in one place; children's books are in another. Then the books are further separated by the kind of book. Storybooks works of fiction are separated from information, or fact books nonfiction.<br>\
 Paragraph E <br>\
 People often want to refer to, that is, look something up in a certain basic information book. Thus reference books, which are rarely read cover to cover, are put in a special place in the li brary, a reference section or perhaps a reference room. Reference books are never to be taken out of the library building.<br>\
 Paragraph F <br>\

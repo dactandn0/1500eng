@@ -12,7 +12,7 @@ Nhìn chung, số liệu cho tất cả các loại xe đều tăng, trong đó 
 Năm 2010, số lượng xe chở khách đã đăng ký là 11 triệu, so với xe thương mại và xe máy lần lượt là 2,3 triệu và 570.000 (1). Đến năm 2014, số lượng xe chở khách tăng 18,2% lên 13 triệu, trong khi số lượng xe thương mại tăng 17,4% lên 2,7 triệu (2). Trong khi đó, số lượng xe máy đã đăng ký tăng trưởng mạnh nhất, ở mức 30,7%, tăng từ 570.000 lên 745.000.<br>\
 Số liệu về xe tải nhẹ và nặng cũng tăng trong giai đoạn đo lường, với xe tải nặng tăng 10,2%, từ 384.000 lên 423.000 và xe tải nhẹ tăng 23,5%, từ 106.000 lên 131.000."
 	,voca:""
-	,images:["01.png"],
+	,images:["01"],
 },
 {
 	title:"02",

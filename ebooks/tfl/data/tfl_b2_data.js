@@ -87,7 +87,7 @@ B: Cái gì cơ?<br>\
 A: Trận bóng chày.<br>\
 B: Ồ. Không, tôi quá mệt. Tôi ngủ gần như cả ngày.<br>\
 A: Bạn đùa đấy! Bạn đã bỏ lỡ một trận đấu thực sự tuyệt vời."
-	,voca:"",
+	,images:["book2_1.2"],
 },
 {
 	track:"1.3",
@@ -161,7 +161,7 @@ B: Cảm ơn. Tôi sẽ cần nó.<br>\
 A: Bạn có một kỳ nghỉ cuối tuần vui vẻ không?<br>\
 B: Vâng, tôi đã có một kỳ nghỉ cuối tuần tuyệt vời. Tôi đã ra ngoài cả tối thứ sáu và thứ bảy với bạn bè nhưng bây giờ tôi rất mệt. Tôi sẽ không làm điều đó nữa trong một thời gian. <br>\
 A: Thật tệ. Tôi đã định rủ bạn đi chơi vào cuối tuần tới. Ồ, được thôi."
-	,voca:"",
+	,images:["book2_1.3"],
 },{
 	track:"1.4",
 	en:"1<br>\

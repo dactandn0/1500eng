@@ -1,3 +1,5 @@
+
+
 function softArrStr(arrInput, giamDan = true)
 {
 	arrInput.sort((a,b) =>
@@ -194,3 +196,19 @@ function getFullTile(obj) {
 		fTitle : track + unit + title 
 	}
 }
+
+async function Helper_GG_API($http, input)
+{
+    let url = GOOGLE_TRANS_API + input
+    return $http({
+      method: 'GET',
+      url: url
+    })
+}
+
+
+// .then( res => {
+//         return res.data[0][0][0]
+//       }, err => {
+//       	return '!'
+//       });

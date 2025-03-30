@@ -282,6 +282,34 @@ self-access /self'ækses/ (n) tự truy cập<br>\
 sub-part /'sɅbpa:t/(n) phần phụ<br>\
 tutorial /tju:'to:rial/ (a,n) hướng dẫn<br>\
 volunteer /volǝn'tiǝ/ (n)tình nguyện<br>\
+abundant /ǝ'bandǝnt/(a) nhiều<br>\
+aggressive /ǝ'gresiv/ (a) hung hăng<br>\
+brushy /'brafi/ (a) bụi rậm<br>\
+cattle /'kætl/ (n) gia súc<br>\
+cavity /'kæviti/ (n) khoang<br>\
+clear /kliǝ/ (v) trong<br>\
+conservation /konsǝ'veifǝn/ (n) bảo tồn<br>\
+decline/di'klain/ (v,n) suy giảm<br>\
+insecticide /in'sektisaid/ (n) thuốc trừ sâu<br>\
+isolate /'aisǝleit/ (v) cô lập<br>\
+log /log/ (v) gỗ<br>\
+nest /nest/ (n,v) tổ<br>\
+nesting site /'nestin,sait/ nơi làm tổ<br>\
+post /paust/ (n) bài đăng<br>\
+scatter /'skætǝ/ (v) phân tán<br>\
+settler /'setlǝ/ (n) người định cư<br>\
+slightly /'slaitli/ad (v) hơi<br>\
+advertise /'redvataiz/ (v) quảng cáo<br>\
+agricultural /regri'kAltfaral/ (a)nông nghiệp<br>\
+disease /di'zi:z/ (n) bệnh tật<br>\
+economic /i:ka'nomik/ (a)kinh tế<br>\
+increase /'inkri:s/ (n) /in'kri:s/ (v) tăng<br>\
+irrigation /iri'geifan/ (n) thủy lợi<br>\
+overpopulation /'auva,popju'leifan/ (n) quá tải dân số<br>\
+religion /ri'lid3an/ (n) tôn giáo<br>\
+solution /sa'luJan/ (n) giải pháp<br>\
+transport /trren'spo:t/ (v) giao thông<br>\
+welfare /'welfea/ (n) phúc lợi<br>\
 "
 }
 ]

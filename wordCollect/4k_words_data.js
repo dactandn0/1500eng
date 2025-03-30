@@ -90,7 +90,7 @@ addict (n) /ˈædɪkt/ người ghiện<br>\
 worshipper (n) /ˈwɜːrʃɪpər/ người sùng bái<br>\
 applause (n) tiếng vỗ tay<br>\
 investor (n) /ɪnˈvestər/ nhà đầu tư<br>\
-organise (v) /ˈɔːrɡənaɪz/ tổ chức<br>\
+organise (organize) (v) /ˈɔːrɡənaɪz/ tổ chức<br>\
 investment (n) /ɪnˈvestmənt/ sự đầu tư<br>\
 approachable (a) /əˈprəʊtʃəbl/ dễ tiếp cận<br>\
 versatile (a) /ˈvɜːrsətl/ linh hoạt<br>\
@@ -539,7 +539,6 @@ instance trường hợp<br>\
 involve liên quan<br>\
 medicine thuốc<br>\
 mix pha trộn<br>\
-organize tổ chức<br>\
 period thời kỳ<br>\
 provide (v) /prəˈvaɪd/ cung cấp<br>\
 produce sản xuất<br>\

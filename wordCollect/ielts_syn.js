@@ -9,6 +9,10 @@ const SynonymData = [
 	type:"v",
 	mean:"đạt được"
 },{
+	words:"discrepancy  /dɪˈskrepənsi/|difference",
+	type:"n",
+	mean:"khác nhau"
+},{
 	words:"conduct /kənˈdʌkt/|carry out|perform /pərˈfɔːrm/",
 	type:"v",
 	mean:"thực hiện"
@@ -204,7 +208,7 @@ const SynonymData = [
 	mean:"sống (sôi) động"
 },
 {
-	words:"various /ˈveriəs/|different /ˈdɪfrənt/|several /ˈsevrəl/",
+	words:"various /ˈveriəs/|different /ˈdɪfrənt/|several /ˈsevrəl/|discrepant",
 	type:"a",
 	mean:"khác nhau"
 },

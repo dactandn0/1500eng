@@ -63,7 +63,7 @@ const ENGLAB_BEGIN_DATA_R2 = [
 	unit:"12"
 	,title:"Modern Examinations "
 	,en:"In ancient times the most important examinations were spoken, not written. In the schools of ancient Greece and Rome, testing usually consisted of saying poetry aloud or giving speeches.<br>\
-	In the European universities of the Middle Ages, students who were working for advanced degrees had to discuss questions in their field of study with people who had made a special study of the subject. This custom exists . today as a part of the process of testing candidates for the doctor's degree.<br>\
+	In the European universities of the Middle Ages, students who were working for advanced degrees had to discuss questions in their field of study with people who had made a special study of the subject. This custom exists today as a part of the process of testing candidates for the doctor's degree.<br>\
 	Generally, however, modern examinations are written. The written examination, where all students are tested on the same questions, was probably not known until the nineteenth century. Perhaps it came into existence with the great increase in population and the develop ment of modern industry. A room full of candidates for a state examination, timed exactly by electric clocks and carefully watched over by managers, resembles a group of workers at an automobile factory. Certainly, during examinations teachers and students are expected to act like machines. There is nothing very human about the examination process.<br>\
 	Two types of tests are commonly used in modern schools. The first type is sometimes called an 'objective' test. It is intended to deal with facts, not personal opinions. To make up an objective test, the teacher writes a series of questions, each of which has only one correct answer. Along with each question, the teacher writes the correct answer and also three state ments that look like answers to students who have not learned the material properly.<br>\
 	In objective tests the student has just one task: he must recognise the correct answer and copy its letter (or number) on his examination paper. Sometimes there is an answer sheet on which the four letters or numbers are printed. Then the student has only to circle the one that goes with the correct answer.<br>\
@@ -84,6 +84,45 @@ const ENGLAB_BEGIN_DATA_R2 = [
 	19. Students who have problems writing essays are those who do not know the material. <br>\
 	20. Both teachers and students are quite satisfied when objective and essay questions are used at the same time."
 	,en_ans:"12T 13T 14NG 15T 16F 17T 18NG 19F 20NG"
+},{
+	unit:"13"
+	,title:"More Cavities Needed"
+	,en:"Bluebirds live in cavities, but they can't make their own cavities. Like woodpeckers, bluebirds prefer trees in open areas. The best habitat for bluebirds is an open area with scattered trees such as an old garden. By clearing sections of forest to create more fields, early settlers happened to improve bluebird habitat. Bluebirds feed on insects on the ground, and insects were abundant in the fields.<br>\
+In the early 1900s, eastern bluebirds were one of the most common songbirds, but by 1969 fewer than 100 bluebirds nested in Minnesota. Other states also reported severe declines in the populations of all three bluebird species.<br>\
+Why did the populations decline? One factor may have been the widespread use of insecticides, but the most important factor was probably the loss of habitat. At first, fences were built with wooden posts, and wooden posts develop cavities. While bluebirds like fence posts with cavities, farmers do not. Cavities make the fence posts weak, and cattle escape through weak fences. After World War II, most farmers replaced wooden posts with new posts made of steel.<br>\
+With less suitable habitat, the bluebirds were forced to compete with other birds for the few remaining nesting sites. More aggressive birds such as the tree swallow and the house wren often drive the bluebirds from their nests. Starlings and house sparrows - both introduced to this country from Europe - also compete with the bluebirds for nesting sites.<br>\
+All three bluebird populations - eastern, western, and mountain- declined nearly 90 percent between 1935 and 1985. The North American Bluebird Society and others are working to increase the number of bluebirds. The most successful method is to improve the habitat by providing the bluebirds with boxes as living places. Thousands of boxes are placed and being managed by individuals interested in helping the little bird.<br>\
+If placed in the right environment, the boxes do attract bluebirds. Bluebirds prefer boxes placed next to open areas. If placed near a brushy area, the boxes are more likely to attract house wrens. Tree swallows would compete for isolated sites in open areas. Competition from tree swallows will decrease if the boxes are placed in pairs, less than three feet apart. Boxes for mountain and western bluebirds must have slightly larger holes than those for eastern bluebirds, but if the holes are too large, starlings will take the boxes.<br>\
+Another cavity programme helped the wood duck population. When seeking for houses, the female wood duck looks for a cavity in a tree that is in or near the water. Often she chooses a cavity with a hole too small for a raccoon to enter. Human activities -logging mature trees and hunting - threaten the wood duck population. In 1918, the United States and Canadian governments banned the hunting of this species. Groups of citizens and conservation organisations built living boxes and placed them on poles or in trees that are in or near the water. Today the wood duck population is greater than one million, and hunting is once again permitted."
+	,voca:"abundant,aggressive,brushy,cattle,cavity,clear,conservation,decline insecticide,isolate,log,nest,nesting,site,post,scatter,settler,slightly"
+	,note:""
+},{
+	unit:"13"
+	,title:"Our Exploding Population: Problems and Solutions"
+	,en:"Section I<br>\
+Almost everyone thinks about the future. We try to imagine life in thirty, forty, or fifty years. What will life on the earth be like? According to many people, it will not be very pleasant. These people are very worried about the future. One of the main problems which worries them is overpopulation. In 1975 there were about four billion people in the world, and the population was increasing by about 2% every year. At the end of the twentieth century, the population of the world reached six billion people.<br>\
+Section II<br>\
+Why is this increase in population a problem? First, a large part of the growth is taking place in countries that do not always have enough food for their present population. Without a great deal of money, food, and medical assistance from other nations, these countries will not be able to support their growing population. Many of their people, perhaps mil- lions of them, will die of starvation or disease. But overpopulation is not only a problem for developing countries. It is also a serious problem for the countries of the world which do not usually have food problems. In wealthy, industrial nations, large increases in the population will have negative effects on life. We will have to heat and cool more houses, apartment buildings, schools and hospitals. We will have to transport more people to and from work. For all this, we will have to use more of the world's natural resources. Perhaps the world will not have enough oil, water, coal, and wood for all our needs.<br>\
+Section III<br>\
+One solution which many people suggest is to limit the number of children who are born. There are now a number of safe, modern methods of birth control. A married couple who use birth control can choose the size of their family. A number of countries with large populations have government programmes for birth control. India, for example, advertises birth control on the radio and television. Teams of workers go out into the countryside and teach the people about the benefits of family planning. In China, couples who only have one child or no child get apartments before couples with three children or more. In many other countries, birth control is a subject that school students study in special classes.<br>\
+Section IV<br>\
+But how successful are these birth control programmes? Some are very successful. In countries like Sweden, Germany, Denmark, Switzerland and Great Britain, families are quite small, and the population is increasing very slowly; in some of these countries, it is not growing at all. But these are wealthy, developed countries, which can feed their people without difficulty. In developing countries, many of the birth control programmes are not successful.<br>\
+Section V<br>\
+There are a number of possible reasons for the failure of birth control programmes in developing countries. One reason is religion. Many people belong to religions which do not accept modern method of birth control. For them, birth control is wrong, and they naturally refuse to listen to family planning workers. Another reason for the failure of birth control programmes is economics. Often a large number of children are necessary for very poor families in developing countries. Children can work and help support the family. Also, without a welfare system, people have to depend on their children for food, clothing, and shelter in their old age. In these countries, people just cannot see any reason for small families.<br>\
+Section VI<br>\
+For other people, birth control is definitely not the solution the world needs for the problem of overpopulation. In their opinion, government should not decide family size. It is not right. The solution which these people suggest is to increase world food produc- tion. They draw our attention to the progress that agricultural scientists are making. With irrigation, for example, we can now produce food in many parts of the world which did not produce anything fifteen or twenty years ago. We can even grow plants in water without soil. Scientists are also doing research into plants which grow quickly and into new farm- ing techniques. The governments of rich countries will have to help the poor countries. Without economic assistance from the wealthy nations, poor countries will not be able to use the new products and farming techniques that scientists are developing.<br>\
+Section VII<br>\
+Birth control and an increase in food production are two possible solutions to the problem of overpopulation. Perhaps there are other solutions. Almost certainly there is no one easy answer to the problem: we will have to use a number of solutions. Then perhaps we will be able to solve the problem of the population explosion."
+	,Match_Heading:"A. Another solution to the problem of overpopulation <br>\
+B. The rapid increase of the world's population <br>\
+C. Success and failure of birth control programmes <br>\
+D. Disagreement about different solutions<br>\
+E. Reasons for the failure of birth control programmes<br>\
+F. Birth control as one possible solution<br>\
+G. Link between poverty and overpopulation <br>\
+H. The problems of overpopulation<br>\
+I. More solutions needed to solve the problem"
+	,voca:"advertise,agricultural,disease,economic,increase,irrigation,overpopulation,religion,solution,transport,welfare"
 }
 
 
@@ -147,13 +186,13 @@ const ENGLAB_BEGIN_DATA_R2 = [
 	Whitebread, who directs PEDAL, trained as a primary school teacher in the early 1970s, when, as he describes, 'the teaching of young children was largely a quiet backwater, untroubled by any serious intellectual debate or controversy.' Now, the landscape is very different, with hotly debated topics such as school starting age.<br>\
 	'Somehow the importance of play has been lost in recent decades. It's regarded as something trivial, or even as something negative that contrasts with 'work'. Let's not lose sight of its benefits, and the fundamental contributions it makes to human achievements in the arts, sciences and technology. Let's make sure children have a rich diet of play experiences.'"
 	,vi:""
-	,voca:"fairy-tale,turrets,isorders,well-being,predictor,steps towards,scarce,self-regulate,extolled,repercussions,fantasy,settle,regulate,pretence,self-control,autism,scarce,undertaking"
+	,voca:"intellectual,implications,fairy-tale,turrets,isorders,well-being,predictor,steps towards,scarce,self-regulate,extolled,repercussions,fantasy,settle,regulate,pretence,self-control,autism,scarce,undertaking"
 	,T_F_NG:"T. Children with good self-control are known to be likely to do well at school later on.<br>\
 	T. The way a child plays may provide information about possible medical problems.<br>\
 	NG. Playing with dolls was found to benefit girls' writing more than boys' writing.<br>\
 	F. Children had problems thinking up ideas when they first created the story with Lego.<br>\
 	T. People nowadays regard children's play as less significant than they did in the past."
-	,note:"increased = greater|disorder = problem|well-being = mental healthy|self-regulate = self-control"
+	,note:"increased = greater|disorder = problem|well-being|self-regulate = self-control"
 },{
 	title:"The Intersection of Health Sciences and Geography"
 	,en:"A <br>\
@@ -173,7 +212,7 @@ const ENGLAB_BEGIN_DATA_R2 = [
 	H <br>\
 	The field of health geography is often overlooked, but it constitutes a huge area of need in the fields of geography and healthcare. If we can understand how geography affects our health no matter where in the world we are located, we can better treat disease, prevent illness, and keep people safe and well."
 	,vi:""
-	,voca:"provision,improvements,eradicated,prevalent,asthma,industrialisation,damp,re-emergence,polio,hybrid,discrepancy,vaccination,availability"
+	,voca:"vulnerable,antibiotics,foster,infections,eyesight,re-emerging,analyse,epidemiology,vaccinations,correlation,eradication,provision,respiratory,mosquitos,improvements,Malaria,eradicated,prevalent,asthma,industrialisation,damp,re-emergence,polio,hybrid,discrepancy,vaccination,availability"
 	,note:""
 }
 

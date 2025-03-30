@@ -635,7 +635,7 @@ M: Vâng, dù bạn mang nó đến đó bằng cách nào, có vẻ như bạn 
 W: Thứ Bảy tuần tới.<br>\
 M: Tôi rảnh vào ngày đó, vì vậy tôi sẽ giúp bạn! Tôi vẫn còn chiếc xe tải nhỏ của mình, vì vậy tôi cũng có thể chở một số thứ cho bạn.<br>\
 W: Cảm ơn, Mark. Điều đó thật tuyệt!"
-	,voca:"",
+	,voca:"suitcases,self-serve,massive",
 },{
 	unit:37,
 	title:"Wear Your Seat Belt!",

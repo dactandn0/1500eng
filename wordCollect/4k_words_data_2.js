@@ -7,11 +7,14 @@ industrialisation (n) /ɪnˌdʌstriələˈzeɪʃn/ công nghiệp hóa <br>\
 historical (a) /hɪˈstɔːrəkl/ lịch sử<br>\
 less (a) chút ít (so sánh hơn của a little) + uncount.N/Adj <br>\
 fewer (a) chút ít (so sánh hơn của a few) + N_số nhiều <br>\
+intellectual (a,n) /dæmp/ trí tuệ, tinh thần, lý trí, (n) người tri thức, học giả<br>\
 damp (a) /dæmp/ ẩm ướt<br>\
 polio (n) /ˈpəʊliəʊ/ bệnh bại liệt <br>\
+scarce (a) /skers/ khan hiếm <br>\
 individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
 provision (n) /prəˈvɪʒn/ sự cung cấp<br>\
 novel (n) /ˈnɑːvl/ cuốn tiểu thuyết<br>\
+well-being (n) sự khỏe mạnh, hạnh phúc,sự thịnh vượng<br>\
 epidemic (n) /epɪˈdemɪk/ dịch bệnh<br>\
 improvement (n) sự cải tiến<br>\
 prevention (n) /prɪˈvenʃn/ phòng ngừa<br>\

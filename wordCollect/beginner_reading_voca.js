@@ -101,7 +101,6 @@ worthwhile (a) /wɜːrθˈwaɪl/ đáng giá<br>\
 adequately (adv) một cách đầy đủ<br>\
 aspirin (n) thuốc giảm sốt aspirin<br>\
 compress (v) đè ép<br>\
-consult (v) tham khảo, thảo luận<br>\
 ease (n,v) xoa dịu<br>\
 germ (n) mầm bệnh, (v) vi trùng<br>\
 graze (v) làm trầy (n) vết bầm<br>\

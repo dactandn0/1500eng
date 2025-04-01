@@ -98,7 +98,6 @@ undeniable (a) /ʌndɪˈnaɪəbl/ không thế chối cãi<br>\
 appealing (a) /əˈpiːlɪŋ/ hấp dẫn<br>\
 addictive (a) /əˈdɪktɪv/ gây nghiện<br>\
 peace (n) /piːs/ sự hòa bình<br>\
-dressing (n) /ˈdresɪŋ/ mặc quần áo, nước xốt, gia vị, cách ăn mặc, băng vết thương<br>\
 custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
@@ -525,7 +524,6 @@ passage đoạn văn<br>\
 pressure áp lực<br>\
 probable có thể<br>\
 public công cộng<br>\
-strike (n,v) /straɪk/ đánh đập, đình công<br>\
 striking (a) /ˈstraɪkɪŋ/ làm nổi bật<br>\
 flashy (a) /ˈflæʃi/ xa hoa, lòe loẹt<br>\
 gaudy (a) /ˈɡɔːdi/ xa hoa, lòe loẹt<br>\
@@ -835,7 +833,7 @@ bake nướng<br>\
 bean đậu<br>\
 candle nến<br>\
 convert chuyển đổi<br>\
-decrease giảm<br>\
+decrease (n,v) /dɪˈkriːs/ giảm<br>\
 fault lỗi<br>\
 insist (v) /ɪnˈsɪst/ kiên trì<br>\
 mess lộn xộn<br>\
@@ -848,7 +846,6 @@ sue (v) /suː/ kiện tụng<br>\
 army quân đội<br>\
 billion /ˈbɪljən/ tỷ<br>\
 carve (v) /kɑːrv/ khắc<br>\
-consult tham vấn<br>\
 fortune may mắn<br>\
 guarantee (v) /ɡærənˈtiː/ bảo đảm<br>\
 hike tăng<br>\
@@ -989,7 +986,6 @@ miner thợ mỏ<br>\
 mineral khoáng sản<br>\
 participate tham gia<br>\
 permission quyền<br>\
-pour (v) /pɔːr/ đổ<br>\
 presence sự hiện diện<br>\
 satellite vệ tinh<br>\
 scale tỷ lệ<br>\
@@ -1234,3 +1230,54 @@ tease (n,v) /tiːz/ (n)người hay chọc, trêu chọc(tức)<br>\
 valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
 }
 ] 
+
+ const word_4000_data_2 = [
+{
+title:"4k Book1",
+en:"healthcare (n) /ˈhelθ ker/ chăm sóc sức khỏe <br>\
+population (n)  /pɑːpjuˈleɪʃn/ dân số (số nhiều = nhóm dân số) <br>\
+industrialisation (n) /ɪnˌdʌstriələˈzeɪʃn/ công nghiệp hóa <br>\
+historical (a) /hɪˈstɔːrəkl/ lịch sử<br>\
+less (a) chút ít (so sánh hơn của a little) + uncount.N/Adj <br>\
+fewer (a) chút ít (so sánh hơn của a few) + N_số nhiều <br>\
+intellectual (a,n) /dæmp/ trí tuệ, tinh thần, lý trí, (n) người tri thức, học giả<br>\
+damp (a) /dæmp/ ẩm ướt<br>\
+polio (n) /ˈpəʊliəʊ/ bệnh bại liệt <br>\
+scarce (a) /skers/ khan hiếm <br>\
+individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
+provision (n) /prəˈvɪʒn/ sự cung cấp<br>\
+novel (n) /ˈnɑːvl/ cuốn tiểu thuyết<br>\
+well-being (n) sự khỏe mạnh, hạnh phúc,sự thịnh vượng<br>\
+epidemic (n) /epɪˈdemɪk/ dịch bệnh<br>\
+improvement (n) sự cải tiến<br>\
+prevention (n) /prɪˈvenʃn/ phòng ngừa<br>\
+correlation (n) /kɔːrəˈleɪʃn/ tương quan<br>\
+factory (n) /ˈfæktəri/ nhà máybr>\
+affect (v) /əˈfekt/ ảnh hưởng [without prep]<br>\
+frequency (n) /ˈfriːkwənsi/ tính lặp lại, tần số<br>\
+frontline (n) /ˈfrʌntlaɪn/ tiền tuyến<br>\
+newsfeed (n) nguồn cấp tin tức<br>\
+geographer (n) nhà địa lý<br>\
+palaeontologist (n) /ˌpeɪliɑːnˈtɑːlədʒɪst/ nhà cổ sinh vật học<br>\
+coal (n) /kəʊl/ than<br>\
+arid (a) /ˈærɪd/ khô cằn (very dry)<br>\
+ancient (a) /ˈærɪd/ khô cằn (very old)<br>\
+hectic (a) /ˈhektɪk/ bận rộn (very busy)<br>\
+critical (a) /ˈkrɪtɪkl/ cấp bách (very urgent)<br>\
+fragile (a) /ˈfrædʒl/ dễ vỡ (very delicate)<br>\
+blustery (a) /ˈblʌstəri/ gió mạnh (very windy)<br>\
+overcast (a) /əʊvərˈkæst/ u ám (very cloudy)<br>\
+scorching (a) /ˈskɔːrtʃɪŋ/ nóng như thiêu (very hot)<br>\
+freezing (a) /ˈfriːzɪŋ/ nóng như thiêu (very cold)<br>\
+starving (a) /stɑːrv/ đói khát (very hungry)<br>\
+perilous (a) /ˈperələs/ nguy hiểm (very dangerous)<br>\
+costly (a) /ˈperələs/ đắt đỏ (very expensive)<br>\
+exhausted (a) /ɪɡˈzɔːstɪd/ kiệt sức (very tired)<br>\
+heartbroken (a) /ˈhɑːrtbrəʊkən/ kiệt sức (very sad)<br>\
+misty (a) /ˈmɪsti/ mù sương (very foggy)<br>\
+phenomenon (n) /fəˈnɑːmɪnən/ hiện tượng<br>\
+starve (v) /stɑːrv/ đói khát<br>\
+"
+
+}
+]

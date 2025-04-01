@@ -1,5 +1,5 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
-const SynonymData = [
+let SynonymData = [
 {
 	words:"important /ɪmˈpɔːrtnt/|crucial /ˈkruːʃl/|significant /sɪɡˈnɪfɪkənt/ | be instrumental in",
 	type:"a",
@@ -17,6 +17,18 @@ const SynonymData = [
 	type:"v",
 	mean:"thực hiện"
 },{
+	words:"refer /rɪˈfɜːr/|consult /kənˈsʌlt/",
+	type:"v",
+	mean:"tham khảo, tư vấn"
+},{
+	words:"eastern|western|southern|northern",
+	type:"a,adv,n",
+	mean:"đông tây nam bắc"
+},{
+	words:"southeast|southwest|northeast|northwest",
+	type:"a",
+	mean:"đông nam - tây nam - đông bắc - tây bắc"
+},{
 	words:"strengthen /ˈstreŋkθn/|boost /buːst/|enhance /ɪnˈhæns/",
 	type:"v",
 	mean:"gia cố, tăng cường"
@@ -28,6 +40,10 @@ const SynonymData = [
 	words:"car|automobile /ˈɔːtəməbiːl/|motorcar",
 	type:"n",
 	mean:"ô tô"
+},{
+	words:"abundant /əˈbʌndənt/|large /lɑːrdʒ/|numerous /ˈnuːmərəs/",
+	type:"a",
+	mean:"nhiều"
 },{
 	words:"evil /ˈiːvl/|wicked /ˈwɪkɪd/|cruel /ˈkruːəl/",
 	type:"a",
@@ -297,7 +313,14 @@ const SynonymData = [
 },
 ]
 
+const SPECIAL_ADD_ING_DATA = [
+{words:"pour (v) /pɔːr/ đổ (rót,trút) vào, mưa nặng hạt|pouring (a) mưa (chảy) tầm tả"},
+{words:"dress (n,v) trang phục, (v. mặc) áo quần |dressing (n) băng vết thương, nước sốt, cách ăn mặc"},
+{words:"strike (n,v) /straɪk/ đánh đập, đình công|striking (n) sự bãi công, việc đánh người"},
+]
+
 function progress() {
+	SynonymData = SynonymData.concat(SPECIAL_ADD_ING_DATA)
 	var en = ''
 	for (var i = 0; i < SynonymData.length; i++) {
 		var data = SynonymData[i]

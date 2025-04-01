@@ -11,7 +11,7 @@ var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes
 
 SPECIAL_WORDS = Helper_SoftStringData(SPECIAL_WORDS)
 
-const NOUN_SAME_VERBS = "attempt,influence,concern,drift,lease,compliment,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
+const NOUN_SAME_VERBS = "attempt,decrease,influence,concern,drift,lease,compliment,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\
 excuse,mind,ski,bail,exhibit,mine,slice,balance,experience,miss,slide,balloon,eye,mistake,slip,ban,face,moor,smell,bandage,fall,move,smile,bank,favor,\
 mug,smirk,bare,fax,nail,smoke,bargain,fear,name,snack,battle,feel,need,snow,beam,fight,nest,sound,bear,file,notch,span,beat,fill,note,spot,bend,film,\
@@ -141,7 +141,7 @@ function Helper_N_V_Add_ING(words) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-	var excepts = ['strike','dress']    // dressing = nước sốt
+	var excepts = []    // dressing = nước sốt
  	for (var i = 0; i < excepts.length; i++) {
 		if (word===excepts[i]) return word + rest
 	}

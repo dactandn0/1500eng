@@ -1373,7 +1373,6 @@ vest (n) /vɛst/ áo gi-lê<br>\
 t-shirt (n) /ˈtiː.ʃɜːrt/ áo thun (phông)<br>\
 shirt (n) /ʃɜːrt/ áo sơ mi<br>\
 jeans (n) /dʒiːnz/ quần jean<br>\
-dress (n) /drɛs/ áo đầm<br>\
 coat (n) /koʊt/ áo khoác<br>\
 jacket (n) /ˈdʒæk.ɪt/ áo khoác<br>\
 sweater (n) /ˈswɛt.ər/ áo len<br>\

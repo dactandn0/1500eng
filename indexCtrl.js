@@ -245,17 +245,17 @@ $scope.Idx_n_L_WSp_ = function (event)
 
 }
 
-getVocaFromDB = function(txt)
+getVocaFromDB = function(touchedWord)
 {
-  var result = IELTS_SYN_IsIn(txt)
+  var result = IELTS_SYN_IsIn(touchedWord)
   if (result !== '')  return result;
   for (var i = 0; i < searchData.length; i++) 
   {
       var wordFull = searchData[i]
       var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
-      if (word === txt || Helper_IsFormOfWord(word, txt)) return wordFull;
+      if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) return wordFull;
   }
-  return txt
+  return touchedWord
 }
 
 ngClickSpeechShowToast = function (touchedWord, isLongText) 

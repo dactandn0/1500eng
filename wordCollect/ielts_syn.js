@@ -99,8 +99,7 @@ let SynonymData = [
 	words:"responsibility /rɪˌspɑːnsəˈbɪləti/ |obligation",
 	type:"n",
 	mean:"(sự chịu) trách nhiệm"
-},
-{
+}, {
 	words:"ignore|put aside|neglect /nɪˈɡlekt/",
 	type:"v",
 	mean:"bỏ qua"
@@ -128,8 +127,7 @@ let SynonymData = [
 	words:"favorite (a,n) /ˈfeɪvərɪt/ |preference /ˈprefrəns/|first choice",
 	type:"n",
 	mean:"ưu thích"
-},
-{
+}, {
 	words:"principal|headmaster",
 	type:"n",
 	mean:"hiệu trưởng"
@@ -157,38 +155,31 @@ let SynonymData = [
 	words:"portion|serving",
 	type:"n",
 	mean:"phần, khẩu phần"
-},
-{
+}, {
 	words:"common /ˈkɑːmən/|universal /juːnɪˈvɜːrsl/|ubiquitous /juːˈbɪkwɪtəs/ | prevalent /ˈprevələnt/",
 	type:"a",
 	mean:"phổ biến, toàn thể"
-},
-{
+}, {
 	words:"abundant /əˈbʌndənt/|ample /ˈæmpl/|plentiful /ˈplentɪfl/",
 	type:"a",
 	mean:"dồi dào"
-},
-{
+}, {
 	words:"happy|joyful|cheerful |content (n. nội dung)",
 	type:"a",
 	mean:"hạnh phúc"
-},
-{
+}, {
 	words:"sad|unhappy|sorrowful |dejected ",
 	type:"a",
 	mean:"buồn, chán"
-},
-{
+}, {
 	words:"tiny|petite|small|little",
 	type:"a",
 	mean:"bé, nhỏ"
-},
-{
+}, {
 	words:"quick|speedy|rapid|fast (adv)",
 	type:"a",
 	mean:"nhanh"
-},
-{
+}, {
 	words:"slow|sluggish|leisurely|unhurried",
 	type:"a",
 	mean:"chậm rãi"
@@ -212,102 +203,82 @@ let SynonymData = [
 	words:"beautiful|gorgeous|stunning(kinh ngạc, tuyệt vời)|attractive",
 	type:"a",
 	mean:"xinh đẹp"
-},
-{
+}, {
 	words:"friend|buddy (thân)|pal",
 	type:"n",
 	mean:"bạn bè"
-},
-{
+}, {
 	words:"vivid /ˈvɪvɪd/|Vibrant /ˈvaɪbrənt/|lively /ˈlaɪvli/",
 	type:"a",
 	mean:"sống (sôi) động"
-},
-{
+}, {
 	words:"various /ˈveriəs/|different /ˈdɪfrənt/|several /ˈsevrəl/|discrepant",
 	type:"a",
 	mean:"khác nhau"
-},
-{
+}, {
 	words:"pursue /pərˈsuː/|woo /wuː/",
 	type:"v",
 	mean:"theo đuổi"
-},
-{
+}, {
 	words:"find /faɪnd/|seek /siːk/ |look for",
 	type:"v",
 	mean:"tìm kiếm"
-},
-{
+}, {
 	words:"accurate /ˈækjərət/|precise /prɪˈsaɪs/|exact /ɪɡˈzækt/",
 	type:"a",
 	mean:"chính xác"
-},
-{
+}, {
 	words:"vague /veɪɡ/|obscure /əbˈskjʊr/|hazy /ˈheɪzi/",
 	type:"a",
 	mean:"không rõ ràng, mơ hồ"
-},
-{
+}, {
 	words:"top /tɑːp/|peak /piːk/|summit /ˈsʌmɪt/",
 	type:"n",
 	mean:"đỉnh, đạt đỉnh"
-},
-{
+}, {
 	words:"conservation /konsǝ'vein/|preservation /prezərˈveɪʃn/",
 	type:"n",
-	mean:"sự bảo tồn"
-},
-{
+	mean:"sự bảo tồn",
+}, {
 	words:"competitor /kəmˈpetɪtər/|rival /ˈraɪvl/|opponent /əˈpəʊnənt/",
 	type:"n",
 	mean:"đối thủ"
-},
-{
+}, {
 	words:"blame/bleɪm/|condemn/kənˈdem/",
 	type:"v",
 	mean:"đổ lỗi"
-},
-{
+}, {
 	words:"opinion /əˈpɪnjən/|perspective /pərˈspektɪv/|standpoint /ˈstændpɔɪnt/|view ( = scenery)",
 	type:"n",
 	mean:"quan điểm"
-},
-{
+}, {
 	words:"fame /feɪm/|prestige /preˈstiːʒ/|reputation /repjuˈteɪʃn/",
 	type:"n",
 	mean:"danh tiếng"
-},
-{
+}, {
 	words:"build /bɪld/|erect /ɪˈrekt/|establish /ɪˈstæblɪʃ/",
 	type:"v",
 	mean:"xây dựng"
-},
-{
+}, {
 	words:"big|massive|colossal /kəˈlɑːsl/|tremendous /trəˈmendəs/|huge",
 	type:"a",
 	mean:"to lớn"
-},
-{
+}, {
 	words:"forever (adv) /fɔːrˈɛv.ər/|perpetual (a) /pərˈpetʃuəl/|immutable (a) /ɪˈmjuːtəbl/",
 	mean:"mãi mãi"
-},
-{
+}, {
 	words:"irritate /ˈɪrɪteɪt/|annoy /əˈnɔɪ/|upset /ʌpˈset/",
 	type:"v",
 	mean:"làm phiền, làm khó chịu"
-},
-{
+}, {
 	words:"ever since //|Since then //|Since that time //",
 	type:"adv",
 	mean:"từ đó trở đi"
-},
-{
+}, {
 	words:"definitely /ˈdefɪnətli/|certainly /ˈsɜːrtnli/ | surely /ˈʃʊrli/ | inevitably /ɪnˈevɪtəbli/",
 	type:"adv",
 	mean:"chắc chắn"
-},
-{
+}, {
 	words:"outgoing (a) /ˈɪrɪteɪt/|extrovert (n) /ˈekstrəvɜːrt/",
 	mean:"hướng ngoại"
 },
@@ -319,14 +290,23 @@ const SPECIAL_ADD_ING_DATA = [
 {words:"strike (n,v) /straɪk/ đánh đập, đình công|striking (n) sự bãi công, việc đánh người"},
 ]
 
-function progress() {
+
+
+
+
+
+
+
+
+function progress() 
+{
 	SynonymData = SynonymData.concat(SPECIAL_ADD_ING_DATA)
 	var en = ''
 	for (var i = 0; i < SynonymData.length; i++) {
-		var data = SynonymData[i]
-		var type = data.type
-		var mean = data.mean
-		var words = data.words.split('|')
+			var data = SynonymData[i]
+			var type = data.type
+			var mean = data.mean
+			var words = data.words.split('|')
 		for (var k = 0; k < words.length; k++) {
 			var fullW = words[k].trim() + addType(type) + addMean(mean) + " [" + showAttachWords(words[k],words) + "] "
 			en += fullW + "<br>"
@@ -369,6 +349,11 @@ function showAttachWords(word, wordArr) {
 		}
 	}
 	return resultTxt.trim().substring(0, resultTxt.length-2);
+}
+
+function keepWord(w)
+{
+	return w.replace(/\/.*\//gi, '').replace(/\(.*\)/gi, '')
 }
 
 progress();

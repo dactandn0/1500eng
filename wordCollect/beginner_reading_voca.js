@@ -287,7 +287,6 @@ brushy /'brafi/ (a) bụi rậm<br>\
 cattle /'kætl/ (n) gia súc<br>\
 cavity /'kæviti/ (n) khoang<br>\
 clear /kliǝ/ (v) trong<br>\
-conservation /konsǝ'veifǝn/ (n) bảo tồn<br>\
 decline/di'klain/ (v,n) suy giảm<br>\
 insecticide /in'sektisaid/ (n) thuốc trừ sâu<br>\
 isolate /'aisǝleit/ (v) cô lập<br>\

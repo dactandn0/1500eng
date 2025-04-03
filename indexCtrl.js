@@ -247,32 +247,50 @@ $scope.Idx_n_L_WSp_ = function (event)
 
 getVocaFromDB = function(touchedWord)
 {
+  var json_full = ''
+  var found = false
   for (var i = 0; i < searchData.length; i++) 
   {
       var wordFull = searchData[i]
       var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
       var wordFamily = getWordFamily(word)
-      if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) return wordFull + ' -- ' + wordFamily;
+      if (wordFamily.length > 0) wordFamily = ' -- ' + wordFamily
+      if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) 
+      {
+          json_full = wordFull +  wordFamily
+          found = true
+          break
+      }
   }
-  return touchedWord
+  if (!found)
+  {
+    var wordFamily = getWordFamily(touchedWord)
+    if (wordFamily.length > 0) wordFamily = ' -- ' + wordFamily
+    json_full =  wordFamily
+  }
+ 
+  return {
+    full : json_full,
+    found : found
+  }
 }
 
 ngClickSpeechShowToast = function (touchedWord, isLongText) 
 {
-  var msg = getVocaFromDB(touchedWord)
+  var result = getVocaFromDB(touchedWord)
   // not in database, so using GOOGLE TRANS API
-  if (msg == touchedWord)
+  if (!result.found)
   {
-    Helper_GG_API($http, msg).then (res => {
-      const result = res.data[0][0][0];
-      doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + result, isLongText);
+    Helper_GG_API($http, touchedWord).then (res => {
+      const vietnamese = res.data[0][0][0];
+      doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + vietnamese + result.full, isLongText);
     }, err => {
       alert(err)
     });
   }
   else
   {
-    doShowToast(msg , isLongText)
+    doShowToast(result.full , isLongText)
   }
   Text2Speech(touchedWord);
 }

@@ -18,6 +18,7 @@
     <div class="my-1">
         Replace (regex) : <input type="text" ng-model="regexA" placeholder="From"> => <input type="text" ng-model="replaceBy" placeholder="To" ng-trim="false">
         <button ng-click="replaceRg()">B=A.Replace('From', 'To')</button>
+        <button ng-click="synonyms()">B=A.synonyms</button>
     </div>
 	
 	
@@ -94,6 +95,22 @@ app.controller('myCtrl', function($scope)
     	$scope.inputB = $scope.inputA.replace(rgA, reBy)
 
     	saveAll()
+    }
+
+    $scope.synonyms = function()
+    {   
+        let splA = $scope.inputA.split(' ')
+        let r = '{\n'
+        let _words = 'words: "'
+        for (var i = 0; i < splA.length; i++) {
+           var ele = splA[i]
+           _words += ele
+           if ( i < splA.length - 1 ) _words += ' | '
+        }
+        r += _words + ' "\n' + ', type:""' + '\n' + ', mean: "" ' + '\n}'
+
+        $scope.inputB = r
+        saveAll()
     }
 
 

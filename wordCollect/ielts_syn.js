@@ -1,6 +1,18 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
+words: "vision | look | outlook | contemplation | regard "
+, type:"n"
+, mean: "sự nhìn" 
+}, {
+words: "appeal | attraction | attractiveness "
+, type:"n"
+, mean: "sự hấp dẫn" 
+}, {
+words: "​classify | digest | distribute "
+, type:"v"
+, mean: "phân loại" 
+}, {
 	words:"important /ɪmˈpɔːrtnt/|crucial /ˈkruːʃl/|significant /sɪɡˈnɪfɪkənt/ | be instrumental in",
 	type:"a",
 	mean:"quan trọng"
@@ -8,6 +20,10 @@ let SynonymData = [
 	words:"obtain /əbˈteɪn/|acquire /əˈkwaɪər/|have",
 	type:"v",
 	mean:"đạt được"
+},{
+	words:"deliberation|consideration",
+	type:"n",
+	mean:"sự cân nhắc, sự đắn đo"
 },{
 	words:"discrepancy  /dɪˈskrepənsi/|difference",
 	type:"n",

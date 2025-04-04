@@ -254,6 +254,77 @@ any + N đếm được số nhiều (nhiều hơn một)<br>\
 - A multitude of: rất nhiều<br>\
 - A great deal of: rất nhiều (uncountable)",
 },{
+	title:"[Englab] so/ such/ enough/ too"
+	,images:["englab-so-much"]
+},{
+	title:"[Englab] Conditional sentences"
+	,images:["englab-conditional"]
+},{
+	title:"[Englab] Lượng từ"
+	,en:"1. Lượng từ:<br>\
+- One/two/three .. + Noun ( nếu số nhiều thì thêm s/es)<br>\
+- Each/ every + Noun ( số ít) + V ( số ít)<br>\
+- A few/ few/ several/ a number of/ some/ a lot of + Noun (số nhiều) + V<br>\
+FE: A number of students have chosen to study English instead of Japanese<br>\
+- A little/little/ a lot of/ a large amount of + Noun (không đếm được) + V (s/es)<br>\
+FE: A large amount of money has been invested in education in Vietnam.<br>\
+- Some: Thường dùng trong câu khẳng định<br>\
+FE: I have some friends in Japan<br>\
+Any: Thường dùng trong câu nghi vấn hoặc phủ định<br>\
+FE: I don’t have any friends in Japan. Do you have any friends in Japan?<br>\
+- No + noun = none<br>\
+Theo sau 'no' là danh từ số nhiều hay số ít đều được và động từ chia phụ thuộc vào danh từ<br>\
+FE: No students like studying Chinese, and none love Chemistry<br>\
+None có thể đóng vai trò là đại từ làm chủ ngữ và có thể kết hợp với of ' none of..'<br>\
+FE: None of the students came to class late<br>\
+<br>\
+2. Mạo từ ( a/an/the)<br>\
+- a/an + danh từ số ít, đếm được /ju/a european man<br>\
+- The + danh từ số ít/ số nhiều/ đếm được/ không đếm được: the people/ the hair/ the air/ the person<br>\
+- Các trường hợp dùng the:<br>\
++ The + noun + of : The university of Danang<br>\
++ Danh từ chỉ vật duy nhất và vài từ đặc biệt: The Moon, the Earth, the Sun, the environment, the US, the UK, the Internet<br>\
++ Tên đại dương, sông, biển: The Han River<br>\
++ Các nước nhiều tiểu bang: The UK, the US, The Netherlands<br>\
++ Tên nhạc cụ: the piano<br>\
++ Tên cuộc chiến (ngoại trừ chiến tranh thể giới - World war one): The Civil War<br>\
++ Dùng cho các danh từ đã nhắc phía trước:<br>\
+FE: I bought a new T Shirt last week. I wore the shirt to a party last Monday. The party was so fun.<br>\
+<br>\
+3. Không dùng the:<br>\
++ Các ngày lễ lớn: Christmas, Tet holiday, Lunar new year<br>\
++ Các môn thể thao: football, badminton<br>\
++ Tên lục địa: Asia, Europe<br>\
++ Tên có danh từ riêng: Da Nang University, Danang Downtown<br>\
++ Danh từ chung chung: I love flowers - Prices have gone up considerably these days - Children love cartoons<br>\
+3. Danh từ bổ nghĩa danh từ:<br>\
+- Thường dùng để phân loại:<br>\
+FE: Car key - History Departure - Tourism Faculty<br>\
+- Danh từ dùng để bổ nghĩa thường ở dạng số ít. (Lưu ý, riêng sports nếu bổ nghĩa luôn ở dạng số nhiều - sports centre)<br>\
+4. Tính từ bổ nghĩa danh từ:<br>\
+- Thường dùng mô tả tính chất, cảm xúc người nói dành cho sự vật/ sự việc<br>\
+FE: A beautiful old house<br>\
+<br>\
+4. Trật tự tính từ:<br>\
++ CẢM XÚC - MIÊU TẢ<br>\
++ MIÊU TẢ: KÍCH THƯỚC - TUỔI TÁC - HÌNH DÁNG - MÀU SẮC - XUẤT XỨ - CHẤT LIỆU - CÔNG DỤNG<br>\
+FE: A perfect big old round black Chinese wooden working table.<br>\
+<br>\
+ADJ - ED: Bị tác động gây cảm xúc<br>\
+ADJ - ING: Gây tác động lên đối tượng khác<br>\
+FE: This subject is boring, so I get bored<br>\
+<br>\
+- The + adj = Noun : The young/ the rich/ the poor : chỉ nhóm người"
+},{
+	title:"[Englab] noun phrases: cụm danh từ"
+	,en:"FE: Many rich real estate companies want to buy many lands as possible.<br>\
+Cụm danh từ: Many rich real estate companies<br>\
+Lượng từ: Many<br>\
+Tính từ bổ nghĩa: rich<br>\
+Danh từ bổ nghĩa: real estate<br>\
+Danh từ chính: Companies<br>\
+-> Chia động từ theo danh từ chính"
+},{
 	title:"Lesson 7 - How to write a paragraph (6.0)"
 	,en:"Topic: The benefits of learning online at universities<br>\
 	 I believe that online university courses are a positive development for various reasons. Firstly, they allow learners to study in a flexible way. This means they can work whenever and wherever they feel convenient and cover their materials at their own pace. Secondly, online learning offers open access to anybody who is willing to (sẵn sàng) study, regardless of (bất kể) age, location, ability and background. For example, my uncle, who is 65 years old, has recently enrolled in an online MBA course in a different country, which would have been impossible in the days before Internet-based education.<br>\
@@ -525,9 +596,12 @@ FE: It is increasingly common for people to travel overseas due to low-fare airl
 Homework:<br>\
 What do you think are the possible solutions? More and more people in developing countries are purchasing cars for the first time. What problems does this cause?"
 },{
-	title:"Englab - Writing - Homework"
+	title:"[Englab] Writing - Homework"
 	,en:""
 	,images:["hw-lesson1","hw-lesson2","hw-lesson3","hw-lesson4","hw-lesson5","hw-lesson6","hw-lesson7","hw-lesson8"]
+},{
+	title:"[Barron] Word Family"
+	,en: WORD_FAMILY_DATA.join('<br>')
 }
 
 

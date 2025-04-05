@@ -7,7 +7,7 @@ var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,sometimes
 ,since,as,in fact,on top of that,what's more,besides,plus,as much as,as well as,as long as,more and more,one another,through\
 ,as a result,consequently,thereby,thus,hence,such as,needless to say,less of\
 ,incredibly,considerably,particularly,significantly\
-,a bit of,a sense of,a bit,a lot,a wide range of"
+,a bit of,a sense of,a bit,a lot,a wide range of,that"
 
 SPECIAL_WORDS = Helper_SoftStringData(SPECIAL_WORDS)
 

@@ -1,14 +1,22 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
+words: "intricate | complicated "
+, type:"a"
+, mean: "phức tap" 
+},{
+words: "​wide | broad | large | extensive | vast "
+, type:"a"
+, mean: "rộng rãi" 
+},{
 words: "vision | look | outlook | contemplation | regard "
 , type:"n"
 , mean: "sự nhìn" 
-}, {
+},{
 words: "appeal | attraction | attractiveness "
 , type:"n"
 , mean: "sự hấp dẫn" 
-}, {
+},{
 words: "​classify | digest | distribute "
 , type:"v"
 , mean: "phân loại" 
@@ -57,7 +65,7 @@ words: "​classify | digest | distribute "
 	type:"n",
 	mean:"ô tô"
 },{
-	words:"abundant /əˈbʌndənt/|large /lɑːrdʒ/|numerous /ˈnuːmərəs/",
+	words:"many | multiple |numerous /ˈnuːmərəs/",
 	type:"a",
 	mean:"nhiều"
 },{

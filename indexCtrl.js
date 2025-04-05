@@ -298,7 +298,7 @@ ngClickSpeechShowToast = function (touchedWord, isLongText)
 ngClickSpeechShowToastUseNode = function (pNode) 
 {
   let touched = pNode.innerText;
-  touched = touched.replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '') // remove W: M:
+  touched = touched.replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '').replace(/;/gi, ',').replace(/&/gi, 'and') // remove W: M:
 
   ngClickSpeechShowToast(touched, true);
 

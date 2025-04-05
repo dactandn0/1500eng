@@ -1,6 +1,14 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
+words: "commodity | merchandise | stock | ware | influx "
+, type:"n"
+, mean: "hàng hóa" 
+},{
+words: "downturn | decline "
+, type:"n"
+, mean: "sự suy thoái" 
+},{
 words: "intricate | complicated "
 , type:"a"
 , mean: "phức tap" 

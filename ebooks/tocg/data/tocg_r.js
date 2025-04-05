@@ -21,9 +21,7 @@ Meanwhile, the exhibition was being prepared ready for opening in July 2012 at t
 }
 ,{
 	title:"1.2 The changing role of airports"
-	,en:"<br>\
-<br>\
-Airports continue to diversify their role in an effort to generate income. Are business meeting facilities the next step? Nigel Halpern, Anne Graham and Rob Davidson investigate.<br>\
+	,en:"Airports continue to diversify their role in an effort to generate income. Are business meeting facilities the next step? Nigel Halpern, Anne Graham and Rob Davidson investigate.<br>\
 A<br>\
 In recent times developing commercial revenues has become more challenging for airports due to a combination of factors, such as increased competition from Internet shopping, restrictions on certain sales, such as tobacco, and new security procedures that have had an impact on the dwell time of passengers. Moreover, the global economic downturn has caused a reduction in passenger numbers while those that are travelling generally have less money to spend. This has meant that the share of revenue from non-aeronautical revenues actually peaked at 54% at the turn of the century and has subsequently declined slightly. Meanwhile, the pressures to control the level of aeronautical revenues are as strong as ever due to the poor financial health of many airlines and the rapid rise of the low-cost carrier sector.<br>\
 B<br>\
@@ -40,7 +38,7 @@ G<br>\
 The survey asked respondents with meeting facilities to estimate how much revenue their airport earned from its meeting facilities during the last financial year. Average revenue per airport was just $12,959. Meeting facilities are effectively a non-aeronautical source of airport revenue. Only 1% of respondents generated more than 20% non-aeronautical revenue from their meetings facilities; none generated more than 40%. Given the focus on local demand, it is not surprising that less than a third of respondents agreed that their meeting facilities support business and tourism development in their home region or country.<br>\
 H<br>\
 The findings of this study suggest that few airports provide meetings facilities as a serious commercial venture. It may be that, as owners of large property, space is available for meeting facilities at airports and could play an important role in serving the needs of the airport, its partners, and stakeholders such as government and the local community. Thus, while the local orientation means that competition with other airports is likely to be minimal, competition with local providers of meetings facilities is likely to be much greater."
-	,voca:""
+	,voca:"diversify,restrictions,facilities,investigate,competition,tobacco,procedures,dwell time,aeronautical"
 	,images:["test1.2"]
 }
 ]

@@ -1,4 +1,5 @@
 let WORD_FAMILY_DATA = [
+	"investigation (n)| investigate (v) | investigative (a) | investigatory (a)",
 	"conservation (n)| conserve (v)",
 	"defense (n)| defender (n)| defend (n)",
 	"environment (n)| environmental (a)| environmentally (adv)",
@@ -66,18 +67,21 @@ let WORD_FAMILY_DATA = [
 function getWordFamily(word)
 {
 	word = word.toLowerCase()
+	var regex = new RegExp(`\\b(${word})` , 'gi')
 	var arr = []
 	for (var i = 0; i < WORD_FAMILY_DATA.length; i++) 
 	{
 		var group = WORD_FAMILY_DATA[i]
-		if (group.indexOf(word) != -1)
+		if (group.match(regex))
 		{
 			arr = group.split('|')
 			arr = arr.filter(e => e.indexOf(word) == -1)
 			break
 		}
 	}
-	return arr.join()
+	var r = arr.join()
+	// console.log(r)
+	return r
 }
 
-// getWordFamily('conservation')
+ getWordFamily('rate')

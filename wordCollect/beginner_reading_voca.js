@@ -6,15 +6,18 @@ always (adv) luôn luôn<br>\
 absolutely (adv) hoàn toàn<br>\
 quite (adv) khá<br>\
 sometimes (adv) thỉnh thoảng<br>\
+combination (n) /ˌkɑːmbɪˈneɪʃn/ sự kết (tổ ) hợp, chất hóa hợp<br>\
 own (adv) sở hữu<br>\
 even if (adv) thậm chí nếu<br>\
 even (adv) thậm chí<br>\
+decline (n,v) sự suy thoái, sự suy sụp, suy giảm, làm giảm<br>\
 though (conj) mặc dù<br>\
 although (conj) mặc dù<br>\
 despite (conj) mặc dù<br>\
 of course (adv) tất nhiên<br>\
 so on (adv) vân vân<br>\
 whenever (conj) bất cứ khi nào<br>\
+investigate (v) khảo sát, nghiên cứu<br>\
 probably (adv) có lẽ<br>\
 currently (conj) hiện tại<br>\
 unfortunately (adv) thật không may<br>\

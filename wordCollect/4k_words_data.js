@@ -1111,7 +1111,6 @@ seed hạt giống<br>\
 sharp (a) sắc nhọn<br>\
 subtract (v) trừ đi<br>\
 tight tight<br>\
-virtual thực sự, virtual focus: tiêu điểm ảo [vật lí]<br>\
 weigh (v) cân nặng<br>\
 whisper whisper<br>\
 abstract abstract<br>\

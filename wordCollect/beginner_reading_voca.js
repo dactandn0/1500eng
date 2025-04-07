@@ -3,12 +3,14 @@ const BEGINNER_READING_VOCA = [
 title: "Beginner_reading_voca",
 en: "always (adv) luôn luôn<br>\
 absolutely (adv) hoàn toàn<br>\
+extinguish (v) /ɪkˈstɪŋɡwɪʃ/ dập tắt<br>\
 operator (n) toán tử (IT), người điều hành, thợ, tổng đài viên<br>\
 operand (n) toán hạng (A+B=C, so A,B is operand)<br>\
 concatenation (n) /kənˌkætəˈneɪʃn/ sự nối tiếp<br>\
 exponentiation (n) sự lũy thừa (IT) <br>\
 sometimes (adv) thỉnh thoảng<br>\
 combination (n) /ˌkɑːmbɪˈneɪʃn/ sự kết (tổ ) hợp, chất hóa hợp<br>\
+urge (n,v) /ɜːrdʒ/ thúc giục<br>\
 own (adv) sở hữu<br>\
 even if (adv) thậm chí nếu<br>\
 decline (n,v) sự suy thoái, sự suy sụp, suy giảm, làm giảm<br>\
@@ -25,13 +27,8 @@ unfortunately (adv) thật không may<br>\
 hardly (adv) hầu như không<br>\
 rarely (adv) hiếm khi<br>\
 devote (v) cống hiến<br>\
-much (adv) nhiều<br>\
-more (adv) nhiều hơn<br>\
-really (adv) thực sự<br>\
 ever (adv) bao giờ<br>\
 never (adv) không bao giờ<br>\
-still (adv) vẫn<br>\
-usually (adv) thường<br>\
 absolutely (adv) hoàn toàn<br>\
 actually (adv) thực sự<br>\
 completely (adv) hoàn toàn<br>\
@@ -50,6 +47,8 @@ in fact (conj) trên thực tế<br>\
 on top of that (conj) trên hết<br>\
 what's more (conj) còn gì nữa<br>\
 besides (adv) ngoài ra<br>\
+citizen (n) cư dân thành phố<br>\
+inhabitant (n) cư dân<br>\
 plus (adv) cộng với<br>\
 as much as (conj) nhiều như<br>\
 as well as (conj) cũng như<br>\
@@ -109,7 +108,7 @@ ease (n,v) xoa dịu<br>\
 germ (n) mầm bệnh, (v) vi trùng<br>\
 graze (v) làm trầy (n) vết bầm<br>\
 injection (n) /ɪnˈdʒek.ʃən/ việc tiêm thuốc<br>\
-itchy (n) ngứa<br>\
+itchy (a) ngứa<br>\
 knit (v) đan len (chỉ)<br>\
 plaster (n) thạch cao, miếng dán<br>\
 relieve (v) /rɪˈliːv/ làm dịu, giải vây, viện trợ<br>\

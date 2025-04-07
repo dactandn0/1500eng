@@ -355,7 +355,6 @@ limit (n) /ˈlɪmɪt/ giới hạn<br>\
 local (a) /ˈləʊkl/ cục bộ, dân địa phương<br>\
 magical ma thuật<br>\
 dragon (n) /ˈdræɡən/ rồng<br>\
-novel tiểu thuyết<br>\
 outline (n) /ˈaʊtlaɪn/ phác thảo<br>\
 poet nhà thơ<br>\
 print in<br>\
@@ -995,16 +994,16 @@ apart (adv) /əˈpɑːrt/ tách<br>\
 arrest bắt giữ<br>\
 award giải thưởng<br>\
 comfort (n,v) sự yên thân, (làm) thoải mái<br>\
-bucket thùng<br>\
+bucket (n) /ˈbʌkɪt/ xô<br>\
 contest cuộc thi<br>\
 convict tội phạm<br>\
 garage (n) /ɡəˈrɑːdʒ/ gara<br>\
 qualify (v) /ˈkwɑːlɪfaɪ/ đủ điều kiện<br>\
 exercise (n,v) thể dục<br>\
 resume (n,v) /rɪˈzuːm/ sơ yếu lý lịch (v) bắt đầu lại<br>\
-rob cướp<br>\
+rob (v) /rɑːb/ bóc lột, cướp<br>\
 slip trượt<br>\
-somewhat (adv) hơi, một phần nào đó<br>\
+somewhat (adv) hơi chút, một phần nào đó<br>\
 tissue mô<br>\
 yard sân <br>\
 majority (n) /məˈdʒɔːrəti/ phần lớn<br>\
@@ -1018,24 +1017,21 @@ distinguish (v) /dɪˈstɪŋɡwɪʃ/ phân biệt<br>\
 dust bụi<br>\
 excitement (n) /ɪkˈsaɪtmənt/ sự phấn khích<br>\
 heal (v) /hiːl/ chữa lành<br>\
-<br>\
 inherit thừa hưởng<br>\
 manner cách thức<br>\
 mount gắn kết<br>\
 roof mái nhà<br>\
 shortage thiếu hụt<br>\
-solid rắn chắc<br>\
-stock cổ phiếu<br>\
+solid (a) rắn chắc<br>\
+stock (n) cổ phiếu, hàng hóa<br>\
 substance chất<br>\
 tomb ngôi mộ<br>\
-wound vết thương <br>\
-bath tắm<br>\
+wound (n) /wuːnd/ vết thương <br>\
 bend uốn cong<br>\
 chew nhai<br>\
 disabled tàn tật<br>\
 fantastic tuyệt vời<br>\
 fiction tiểu thuyết<br>\
-flag cờ<br>\
 inspect kiểm tra<br>\
 journal nhật ký<br>\
 liquid chất lỏng<br>\
@@ -1146,7 +1142,6 @@ quarter (n) /ˈkwɔːrtər/ quý<br>\
 scholarship (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 temporary tạm thời<br>\
 treasure (n) /ˈtreʒər/ kho báu<br>\
-urge (v) /ɜːrdʒ/ thúc giục<br>\
 masquerade (n,v) /mæskəˈreɪd/ ((n) dạ hội) hóa trang"
 },
 { title:"4k Book3", en:"arise phát sinh<br>\
@@ -1245,7 +1240,7 @@ polio (n) /ˈpəʊliəʊ/ bệnh bại liệt <br>\
 scarce (a) /skers/ khan hiếm <br>\
 individual (n) /ɪndɪˈvɪdʒuəl/ cá nhân<br>\
 provision (n) /prəˈvɪʒn/ sự cung cấp<br>\
-novel (n) /ˈnɑːvl/ cuốn tiểu thuyết<br>\
+novel (n) /ˈnɑːvl/ (cuốn) tiểu thuyết, truyện ngắn<br>\
 well-being (n) sự khỏe mạnh, hạnh phúc,sự thịnh vượng<br>\
 epidemic (n) /epɪˈdemɪk/ dịch bệnh<br>\
 improvement (n) sự cải tiến<br>\

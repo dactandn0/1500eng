@@ -1,4 +1,5 @@
 let WORD_FAMILY_DATA = [
+	"itching (n)| itchy (a)",
 	"invent (v)| inventor (n) | invention (n)",
 	"investigation (n)| investigate (v) | investigative (a) | investigatory (a)",
 	"define (v)| redefine (v)",

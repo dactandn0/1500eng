@@ -1,11 +1,15 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
+words: "supply | offer | provide"
+, type:"v"
+, mean: "cung cấp" 
+}, {
 words: "cost | expense "
 , type:"n"
 , mean: "chi phí" 
 },{
-words: "deliberately | on purpose "
+words: "deliberately | on purpose"
 , type:"adv"
 , mean: "cố ý" 
 }, {
@@ -29,19 +33,19 @@ words: "intricate | complicated "
 , type:"a"
 , mean: "phức tap" 
 },{
-words: "​wide | broad | large | extensive | vast "
+words: "​wide | broad | large | extensive | vast"
 , type:"a"
 , mean: "rộng rãi" 
 },{
-words: "vision | look | outlook | contemplation | regard "
+words: "vision | look | outlook | contemplation | regard"
 , type:"n"
 , mean: "sự nhìn" 
 },{
-words: "appeal | attraction | attractiveness "
+words: "appeal | attraction | attractiveness"
 , type:"n"
 , mean: "sự hấp dẫn" 
 },{
-words: "​classify | digest | distribute "
+words: "​classify | digest | distribute"
 , type:"v"
 , mean: "phân loại" 
 }, {
@@ -101,9 +105,9 @@ words: "​classify | digest | distribute "
 	type:"a",
 	mean:"thích hợp"
 },{
-	words:"problem /ˈprɑːbləm/|issue /ˈɪʃuː/",
+	words:"problem /ˈprɑːbləm/|issue /ˈɪʃuː/ | matter /ˈmætər/",
 	type:"n",
-	mean:"vấn đề, sự khó khăn"
+	mean:"vấn đề"
 },{
 	words:"exciting /ɪkˈsaɪtɪŋ/|dramatic /drəˈmætɪk/|heady /ˈhedi/|thrilling /ˈθrɪlɪŋ/|exhilarating /ɪɡˈzɪləreɪtɪŋ/",
 	type:"a",

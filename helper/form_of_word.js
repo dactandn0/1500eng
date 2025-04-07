@@ -1,17 +1,17 @@
 const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water,beer,tea,soda,chocolate,light,gear,art,science"
 
-var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,as ever,sometimes,own,even if,even,though,although,despite,certainly,of course,so on,whenever\
+var SPECIAL_WORDS = "eventually,definitely,supposedly,only,absolutely,quite,as ever,sometimes,own,even if,even,though,although,despite,certainly,of course,so on,whenever\
 ,probably,currently,unfortunately,hardly,rarely,much,more,more into,really,recently,ever,never,still,usually,for a while\
 ,absolutely,actually,completely,really,totally,thoroughly,entirely,simply,undoubtedly,literally,gradually,unusual,nevertheless,less,fewer\
 ,pretty,quite,rather,fairly,basically,honestly,eventually \
-,since,as,in fact,on top of that,what's more,besides,plus,as much as,as well as,as long as,more and more,one another,through\
+,by the time,at the time,at that time,at this time,since,in fact,on top of that,what's more,besides,plus,as much as,as well as,as long as,more and more,one another,through\
 ,as a result,consequently,thereby,thus,hence,such as,needless to say,less of\
 ,incredibly,considerably,particularly,significantly,meanwhile,somewhat\
 ,a bit of,a sense of,a bit,a lot,a wide range of,that"
 
 SPECIAL_WORDS = Helper_SoftStringData(SPECIAL_WORDS)
 
-const NOUN_SAME_VERBS = "decline,attempt,decrease,influence,concern,drift,lease,compliment,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
+const NOUN_SAME_VERBS = "urge,decline,attempt,decrease,influence,concern,drift,lease,compliment,exercise,poison,access,dump,mail,shelter,ache,dust,make,shock,act,dye,man,shop,address,echo,march,show,aim,email,mark,sign,alert,end,match,\
 signal,answer,escape,mate,silence,arrest,escort,matter,sin,attack,esteem,mean,sip,attribute,estimate,measure,skate,auction,exchange,milk,sketch,back,\
 excuse,mind,ski,bail,exhibit,mine,slice,balance,experience,miss,slide,balloon,eye,mistake,slip,ban,face,moor,smell,bandage,fall,move,smile,bank,favor,\
 mug,smirk,bare,fax,nail,smoke,bargain,fear,name,snack,battle,feel,need,snow,beam,fight,nest,sound,bear,file,notch,span,beat,fill,note,spot,bend,film,\

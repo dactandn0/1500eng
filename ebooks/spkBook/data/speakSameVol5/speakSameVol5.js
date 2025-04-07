@@ -1,5 +1,5 @@
 
-const SPEAKING_SAME_VOL5 = [
+let SPEAKING_SAME_VOL5 = [
 {
 	track:1.1
 	,title:"Conversation With A Stranger"
@@ -828,16 +828,53 @@ I don't remember, though. I sometimes come across some posts about history when 
 , {track:"1.55",title:"Insects",en:""}
 , {track:"1.56",title:"Handwriting",en:""}
 , {track:"1.57",title:"Patience",en:""}
-, {track:"1.58",title:"Tidy",en:""}
-
-
-
-
-
-
+, {track:"1.58",title:"Tidiness",en:""}
+, {track:"1.59",title:"Plan",en:""}
+, {track:"1.60",title:"Celebrity",en:""}
+, {track:"1.61",title:"Social Network",en:""}
+, {track:"1.62",title:"Languages",en:""}
 
 
 
 
 
 ]
+
+
+
+function makeSpkVol5Data () 
+{
+	let rrr = []
+	for (var k = 1; k <= 2; k++) 
+	{
+		for (var i = 1; i <= 62; i++) 
+		{
+			if (k==2 && i==10) break
+
+			const trackName = k + '.' + i
+
+			var json = {
+				track: trackName,
+				en: '',
+			}
+
+			let idx = SPEAKING_SAME_VOL5.findIndex(ele => ele && ele.track == trackName);
+			if (idx >= 0)
+			{
+				var findObj = SPEAKING_SAME_VOL5[idx]
+				json.en = findObj.en
+				json.title = findObj.title
+				json.vi = findObj.vi || ''
+				json.voca = findObj.voca || ''
+				json.note = findObj.note || ''
+			}
+
+			rrr.push(json)
+		}
+	}
+
+	SPEAKING_SAME_VOL5 = rrr;
+}
+
+
+makeSpkVol5Data ()

@@ -53,7 +53,7 @@ Irene: Chúc may mắn. Tôi sẽ ở bàn làm việc vào thứ Bảy, vậy c
 John: Cảm ơn bạn rất nhiều. Tạm biệt.<br>\
 Irene: Tạm biệt."
 	,voca:""
-	,images:["l_u1_1-min.png"]
+	,images:["l_u1_1"]
 },{
 	track:"01.02",
 	en:"Tutor: Hello John.<br>\
@@ -107,7 +107,7 @@ Gia sư: Nếu em vượt qua Lớp 7, em có thể tiếp tục làm bài kiể
 John: Vâng, đó là mục tiêu của tôi. Cảm ơn cô Richardson. Tạm biệt nhé.<br>\
 Gia sư: Tạm biệt, John, và chúc em may mắn!"
 	,voca:""
-	,images:["l_u1_2-min.png"]
+	,images:["l_u1_2"]
 },//{track:"01.ex02", en:"practical<br>\ exam<br>\ sit an exam<br>\ surname<br>\ primary school<br>\ prefer<br>\ reception<br>\ fee<br>\ assume<br>\ practice<br>\ mistake<br>\ examiner"}, { track:"01.ex03", en:""}, {track:"01.ex04", en:"12/twelve <br>\ 16/sixteen <br>\ 30/thirty<br>\ 67/ sixty-seven<br>\ 90/ninety<br>\ 189/ one hundred and eighty-nine<br>\ 1,345/one thousand, three hundred and forty-five <br>\ 7,894/seven thousand, eight hundred and ninety-four <br>\ 520,000/five hundred and twenty thousand<br>\ 1,000,000/ a million"},
 {
 	track:"02.01"
@@ -121,7 +121,7 @@ Nhưng quan điểm của công chúng nói chung và phụ huynh của trẻ em
 Còn bản thân trẻ em thì sao? Các em nghĩ gì về cuộc tranh luận này? Một số em nói rằng nếu trường không có đồ ăn nhẹ yêu thích, các em sẽ chỉ dừng lại ở cửa hàng góc phố trên đường đi để mua. Những em khác nói rằng các lựa chọn đồ ăn vặt vẫn có sẵn ở trường - chẳng hạn như khoai tây chiên và gà rán rẻ hơn các lựa chọn lành mạnh hơn, do đó, các em có nhiều khả năng chọn những món này hơn. Ví dụ, tại một cửa hàng đồ ăn nhẹ ở trường mà chúng tôi đã ghé thăm, một phần khoai tây chiên giòn và gà có giá 2,50 đô la, trong khi một ổ bánh mì tròn và một hộp sữa chua ít béo có giá 4 đô la.<br>\
 Cũng như nhiều vấn đề tương tự như vậy, giáo dục và điều độ có lẽ là một khởi đầu tốt. Trước tiên, cha mẹ cần đảm bảo rằng mình hiểu biết đủ về các phương pháp ăn uống lành mạnh để có thể dạy con mình. Điều này có thể bao gồm quảng cáo trên truyền hình, tờ rơi và tờ rơi gửi đến hộp thư. Thứ hai, trường học có thể khuyến khích trẻ em ăn nhiều trái cây và rau quả hơn, ít bánh nướng và hông hơn bằng cách đảm bảo rằng phần lớn đồ ăn nhẹ và các loại thực phẩm khác được bán đều lành mạnh, trong khi vẫn cho phép giữ lại một số món ưa thích không lành mạnh."
 	,voca:"fried chicken,chip, school-aged children, youth, ensure, healthy eating"
-	,images:['l_u2_1-min.png']
+	,images:['l_u2_1']
 },
 {
 	track:"02.02",
@@ -138,7 +138,7 @@ Ví dụ, bạn có thể cân nhắc cắt một quả chuối vào ngũ cốc 
 Để tiếp tục với thực đơn của chúng tôi, bữa trà buổi sáng có thể là một miếng trái cây, chẳng hạn như táo, lê hoặc kiwi, hoặc một loại rau - chẳng hạn như cà rốt hoặc cần tây - cắt thành từng thanh. Đối với bữa trưa, bạn có thể ăn một chiếc bánh sandwich salad trên bánh mì nguyên cám hoặc một loại ngũ cốc nấu chín nào đó, như cơm, với rau hấp hoặc luộc. Vào bữa tối, hãy đảm bảo bao gồm một số khẩu phần rau khác nhau. Cố gắng tận dụng những gì đang theo mùa và chọn nhiều màu sắc - xanh lá cây, cam và trắng. Một lần nữa, hãy đảm bảo rằng bạn sử dụng phương pháp nấu ăn ít chất béo - hấp, luộc, nướng hoặc xào với một lượng nhỏ dầu. Ngoài ra, vào mùa hè, rau tươi có thể được rửa sạch và ăn sống trong món salad với nước sốt ít béo. Bạn cũng sẽ biết rằng như một phần của lối sống lành mạnh, bạn cần phải năng động và đưa một số loại bài tập thể dục vào chương trình hàng ngày của mình. Đối với trẻ em và thanh thiếu niên, chúng tôi khuyên bạn nên tập thể dục ít nhất 30 phút mỗi ngày. Ví dụ, điều này có thể có nghĩa là đi bộ hoặc đạp xe đến trường thay vì đi ô tô hoặc bắt xe buýt hoặc tàu hỏa. Nếu không thể, bạn có thể dành buổi tối để đá bóng trong sân sau nhà hoặc chơi bóng rổ hoặc quần vợt với bạn bè tại sân địa phương. Bạn cũng có thể cân nhắc tham gia câu lạc bộ thể thao hoặc tham gia một loại hoạt động thể chất khác, chẳng hạn như khiêu vũ hoặc cưỡi ngựa.<br>\
 Và lần tới khi bạn đến cửa hàng bán đồ ăn nhẹ ở trường, hãy chọn một trong những loại thực phẩm lành mạnh hơn được bày bán. Bạn sẽ ngạc nhiên về việc nó khiến bạn cảm thấy tốt hơn bao nhiêu."
 	,voca:""
-	,images:['l_u2_2-min.png']
+	,images:['l_u2_2']
 },
 //{ track:"02.ex02", en:""}, { track:"02.ex03", en:""}, { track:"02.ex04", en:""}, 
 //{track:"02.ex07", en:"a. great<br>\ b. headmaster<br>\ c. more<br>\ d. sleepy<br>\ e. publicity <br>\ j. physical education<br>\ f. obese<br>\ g. to select<br>\ h. food kiosk<br>\ i. junk food <br>\ k. wholesome<br>\ l. encourage<br>\ m. to recommend<br>\ n. raw<br>\ o. expert<br>\ p. portion"},
@@ -192,7 +192,7 @@ Andy: Vâng, tôi tham gia nhảy cao. Lúc đó là 1 giờ chiều. Và tôi t
 Dave: Chúc may mắn, Andy!<br>\
 Andy: Cảm ơn, Dave. Gặp lại anh ở cuộc chạy tiếp sức. Tiến lên, Lancaster College!"
 	,voca:""
-	,images:['l_u3_1-min.png']
+	,images:['l_u3_1']
 },{
 	track:"03.02",
 	en:"Penny: Hello, everyone. Thank you for getting here early. I'm sure the cross-country race today will be very successful. John and I have organised a challenging course. We expect runners to start turning up in about 30 minutes, so we need to work fast. I'll hand you over to John to describe the course and the different jobs we have to do.<br>\
@@ -210,7 +210,7 @@ John: Cảm ơn, Penny, OK mọi người. Có câu hỏi nào không? Không. �
 Người dẫn chuyện: Hãy nghe phần 2 của âm thanh.<br>\
 Mọi người hãy tập hợp lại. Sẽ không mất nhiều thời gian đâu. Trước hết, tôi muốn chúc mừng Mick và Sarah, những người đã giành chiến thắng ở Giải Đua Mở dành cho Nam và Giải Đua Mở dành cho Nữ. Thật là một nỗ lực phi thường và thành tích cá nhân tốt nhất của cả hai người! Xin hãy dành một tràng pháo tay cho họ. Thực ra, khi nhìn vào bảng kết quả, tôi thấy rằng tất cả các bạn đều làm tốt. Có khá nhiều thành tích thực sự tốt được đăng tải hôm nay. Bây giờ... khu vực tắm rửa gần bãi đậu xe, vì vậy hãy thoải mái tắm rửa nhưng đừng mất quá nhiều thời gian. Đội tình nguyện viên của chúng tôi đã làm việc chăm chỉ trong bếp và họ đã chuẩn bị một bữa ăn rất ngon trong các phòng câu lạc bộ. Họ đã pha trà và cà phê, cũng như một số đồ uống lạnh, và có rất nhiều đồ ăn nhẹ như bánh sandwich, đồ ăn mặn, trái cây, bánh quy và tôi chắc rằng tôi đã thấy một số bánh sô cô la. Vì vậy, hãy quay lại phòng câu lạc bộ ngay khi bạn có thể. Vào thời điểm này, tôi muốn cảm ơn tất cả những người đã giúp sự kiện hôm nay thành công. Hãy giúp họ một tay! Tôi chắc chắn rằng ban tổ chức muốn gặp lại tất cả các bạn - các vận động viên và người hỗ trợ - tại giải vô địch chạy việt dã vào năm sau."
 	,voca:""
-	,images:['l_u3_2-min.png']
+	,images:['l_u3_2']
 },{
 	track:"04.01"
 	,title:"Media"
@@ -231,7 +231,7 @@ Nếu bạn thuận tay phải như tôi, bạn có thể cầm máy ảnh bằn
 Điều cuối cùng tôi muốn chỉ ra ngay bây giờ là micrô. Đó là thứ này ở đây, trên đầu máy ảnh. Nó có nghĩa là bạn có cả âm thanh và video hoặc hình ảnh chuyển động. Micrô khá nhạy, vì vậy hãy cẩn thận với nó. Nó có thể dễ dàng tháo ra, vì vậy bạn có thể cất vào túi.<br>\
 Bạn cần xoay micrô về phía người đang nói. Nhìn chung, người đó sẽ đi thẳng về phía trước, nhưng đôi khi bạn sẽ muốn di chuyển nó. Vì vậy - ống kính, tay cầm và micrô. Và điều cuối cùng tôi sẽ đề cập đến ở đây là cốc cao su... đó là nơi bạn đặt máy ảnh lên mắt... Vâng, vậy là đủ rồi. Tiếp theo, tôi muốn bạn tự cầm máy ảnh của mình."
 	,voca:""
-	,images:['l_u4_1-min.png']
+	,images:['l_u4_1']
 },{
 	track:"04.02",
 	en:"Hello, everyone. You all did very well last week! You seem to be getting used to your cameras, and I think you now know all the parts of the camera and what they do.<br>\
@@ -247,7 +247,7 @@ Tuần này, tôi sẽ nói về cách chăm sóc máy ảnh của bạn. Hầu 
 Bây giờ, ở phía dưới bên trái, tôi có thể cất pin. Tốt nhất là tháo pin ra nếu bạn không sử dụng máy ảnh trong thời gian dài... Tôi luôn làm vậy. Pin ngày nay có thể sạc trong thời gian dài, nhưng tốt hơn là để pin ngoài máy ảnh. Hầu hết các máy ảnh ngày nay, như thế này, đều có pin sạc. Cuối cùng, bạn có thể thấy nơi tôi cất máy ảnh, ở đây, góc dưới bên phải. Máy ảnh không thể di chuyển, và hộp đựng được làm bằng vật liệu cứng, vì vậy bạn có thể làm rơi hộp đựng hoặc thậm chí làm rơi nó, và máy ảnh sẽ không bị hư hỏng.<br>\
 Nếu bạn chưa có hộp đựng máy ảnh, tôi khuyên bạn nên mua một cái ngay khi có thể... Vâng, đó là tất cả những gì tôi muốn nói về việc cất giữ. Bây giờ, chúng ta hãy chuyển sang một số công việc thực tế."
 	,voca:""
-	,images:['l_u4_2-min.png']
+	,images:['l_u4_2']
 },{
 	track:"05.01"
 	,title:"Giving Directions"
@@ -288,7 +288,7 @@ Brenda: Được rồi. Vâng, nghe có vẻ không quá khó. Tôi chắc là m
 Katie: Không sao đâu. Chúc bạn vui vẻ. Tạm biệt.<br>\
 Brenda: Tạm biệt."
 	,voca:"corner,opposite"
-	,images:['l_u5_1-min.png']
+	,images:['l_u5_1']
 },{
 	track:"05.02"
 	,en:"Mike: Excuse me. I'm trying to get to the dance party in Bryce Street.<br>\
@@ -328,7 +328,7 @@ Người qua đường: Vâng. Đúng rồi.<br>\
 Mike: Tuyệt. Được rồi, cảm ơn sự giúp đỡ của bạn.<br>\
 Người qua đường: Không vấn đề gì."
 	,voca:"to get to,corner,service station,traffic lights"
-	,images:['l_u5_2-min.png']
+	,images:['l_u5_2']
 }
 ,{
 	track:"06.01"
@@ -337,7 +337,7 @@ Người qua đường: Không vấn đề gì."
 Remember, for all these products, you get fantastic sales and service. Look out for discounts next week on all these products."
 	,vi:"Chào buổi chiều, thính giả. Geoff Beck từ Luna Mobiles ở đây với mục 'Công nghệ và Bạn' vào chiều nay. Đây là chương trình quảng cáo trên radio mà tôi sẽ cập nhật cho bạn những sản phẩm mua tốt nhất trong thế giới công nghệ. Hôm nay - điện thoại di động! Chúng ta sẽ ra sao nếu không có chúng? Tôi sẽ cho bạn biết về những cải tiến mới nhất, những tính năng tốt nhất và giá trị tốt nhất trong thế giới điện thoại di động thú vị. Hãy để tôi giới thiệu cho bạn về bốn sản phẩm mới. Đầu tiên là Luna 500. Đây là một trong những sản phẩm yêu thích của tôi! Sản phẩm nhỏ xinh này có một số trò chơi tuyệt vời, một máy ảnh, Internet và một máy ghi âm. Nó cũng rất thời trang! Nó có màu đỏ, xanh lá cây, xanh lam và hồng. Giá của sản phẩm tuyệt đẹp này là 849 đô la. Không hề rẻ, nhưng bạn sẽ thích nó. Nó rất đáng giá. Thứ hai là Aquila 50. Con gái tôi rất thích sản phẩm này. Không có nhiều tính năng như Luna, nhưng nó mỏng hơn và nhẹ hơn. Nó có những trò chơi tuyệt vời và một camera 5 megapixel, vì vậy bạn có thể chụp được những bức ảnh thực sự sắc nét. Aquila có giá 749 đô la. Không rẻ nhưng đáng giá, đặc biệt là với chiếc camera đó. Bây giờ, tiếp tục, nếu bạn không muốn trả nhiều tiền nhưng bạn cần một chiếc điện thoại tốt, Hermes 580 có thể là chiếc điện thoại dành cho bạn. Viên ngọc nhỏ này nằm thoải mái trong lòng bàn tay của bạn. Nó có một số trò chơi hay và một camera. Bạn có thể mua chiếc này chỉ với giá 395 đô la. So sánh nó với chiếc bạn đang có bây giờ. Không phải đã đến lúc bạn nên mua một chiếc mới sao? Với mức giá đó, bạn không thể thua lỗ. Một chiếc điện thoại tương tự, nhưng thậm chí còn rẻ hơn, là Riva A65. Bạn sẽ thích chiếc này. Đây là chiếc điện thoại dành cho những người nói với tôi rằng, 'Nếu tôi muốn có một chiếc máy ảnh, tôi sẽ mua một chiếc máy ảnh! Tôi muốn một chiếc điện thoại di động!' Đây là chiếc điện thoại dành cho bạn. Nó không có những tính năng đắt tiền. Nhưng với tư cách là một chiếc điện thoại, nó thật tuyệt. Mỏng. Thời trang. Tiện lợi. Chất lượng tốt. Nó có một số trò chơi nhưng thế là hết.<br>\
 Hãy nhớ rằng, với tất cả những sản phẩm này, bạn sẽ nhận được doanh số và dịch vụ tuyệt vời. Hãy chú ý đến các chương trình giảm giá vào tuần tới cho tất cả các sản phẩm này."
-	,images:['l_u6_1-min.png']
+	,images:['l_u6_1']
 },{
 	track:"06.02"
 	,title:"Advertising"
@@ -347,7 +347,7 @@ OK. Let's go back to Sandy Little for the 4 o'clock news."
 	,vi:"Chào buổi chiều, các thính giả. Linda Harris từ Luna Mobiles ở đây với vị trí 'Công nghệ và Bạn' vào chiều nay, thay thế Geoff Beck, người đang đi nghỉ tuần này. Hôm nay, chúng ta sẽ xem xét các công ty điện thoại di động của bạn. May mắn thay, chúng ta có một sự lựa chọn! Tôi sẽ xem trước năm công ty lớn trên thị trường. Giả sử bạn đã mua điện thoại của mình và bây giờ bạn có thể tự do tham gia với một công ty. Bạn sẽ muốn tìm một công ty và sau đó quyết định gói tốt nhất. Chúng ta hãy nói về giá cả. Chúng ta sẽ xem xét năm công ty hàng đầu trên thị trường - Commix, Phontic, Pluto, World và Dialog. Đối với dịch vụ cơ bản, Commix tính phí 24 đô la một tháng, Phontic là 27 đô la và Pluto cũng vậy. World đắt hơn một chút ở mức 28 đô la và Dialog có giá 29,50 đô la. Đắt hơn một chút, nhưng họ khẳng định bạn sẽ nhận được giá trị tương xứng với số tiền bỏ ra! Phí vào giờ cao điểm cũng rất giống nhau. Commix, Phontic và Pluto đều tính phí 26 xu một giờ, World tính phí 28 xu, và Dialog vẫn là dịch vụ đắt nhất, ở mức 32 xu một giờ. Phí ngoài giờ cao điểm có thể khiến bạn quan tâm. Đây là những giờ ban đêm từ 8 giờ tối đến 8 giờ sáng. Thời gian tốt để gọi điện cho người thân ở các quốc gia khác. Commix, Phontic và Pluto tính cùng một mức phí cho các dịch vụ ngoài giờ cao điểm, chỉ 20 xu một giờ, trong khi World và Dialog đắt hơn, cả hai đều ở mức 27 xu một giờ. Bây giờ, vùng phủ sóng rất quan trọng. Vùng phủ sóng có nghĩa là tín hiệu điện thoại có thể phủ sóng xa đến đâu. Nói cách khác, đó là những khu vực mà bạn thực sự có thể sử dụng điện thoại của mình. Hiện tại, Commix có vùng phủ sóng tốt trên toàn quốc, nhưng Phontic chỉ phủ sóng tất cả các thành phố chính. Pluto và World phủ sóng trên toàn quốc. Không có vấn đề gì ở đó. Và vùng phủ sóng của Dialog là trên toàn quốc và các đảo. Đó là lý do tại sao nó đắt hơn. 'Nationwide and Islands' có nghĩa là bạn có thể sử dụng Dialog trên khắp đất nước chúng tôi và trên tất cả các đảo phía Tây và phía Bắc, nơi có tháp điện thoại và quyền truy cập.<br>\
 Vâng, bạn có thể thấy bạn có rất nhiều lựa chọn. Đừng quên lấy một bản sao của 'Mobile Memorandum', bản tin của công ty chúng tôi, để xem lại những con số này và đưa ra lựa chọn của bạn. Bạn cũng có thể đọc các khuyến nghị của chúng tôi.<br>\
 OK. Chúng ta hãy quay lại với Sandy Little để xem bản tin lúc 4 giờ."
-	,images:['l_u6_2-min.png']
+	,images:['l_u6_2-min']
 },{
 	track:"07.01"
 	,title:"Education"
@@ -375,7 +375,7 @@ Sarah: Ồ, vậy thì, tôi đoán là chỉ còn lại tiếng Đức.<br>\
 Thầy Smith không dạy môn đó sao? Thầy ấy có vẻ khá thân thiện. <br>\
 Bill: Vâng, thầy ấy ổn. Nhưng thầy ấy chỉ dạy cho các lớp trên. Nếu bạn muốn học tiếng Đức trình độ một, bạn sẽ phải học với thầy Jones, và thầy ấy thường xuyên bị ốm.<br>\
 Sarah: Ôi trời. Tôi đoán là tôi sẽ chỉ học lịch sử nghệ thuật. Ít nhất thì chủ đề cũng ổn."
-,images:['l_u7_1-min.png']
+,images:['l_u7_1-min']
 },{
 	track:"07.02"
 	,title:"Education"
@@ -403,78 +403,8 @@ Mary: Ồ. Cô ấy có sao không? Ồ, hay là một điều gì đó khác bi
 Fred: Ồ, thật sao? Ai dạy những lớp đó vậy? Tôi luôn muốn thử sức với diễn xuất.<br>\
 Mary: Là thầy Turner. Tôi nghĩ ông ấy đã dành một thời gian làm diễn viên ở London, vì vậy các lớp học sẽ khá tốt. <br>\
 Fred: Ồ, vậy thì, trong trường hợp đó, tôi nghĩ mình sẽ thử học kịch."
-,images:['l_u7_2-min.png']
-},{
-	track:"Cam49"
-	,title:"The Official Cambridge Guide to IELTS - TEST 03"
-	,en:"Alan: Hi Melanie - what did you think of the assignment that we got today? It looks interesting, doesn't it?<br>\
-Melanie: Yes Alan, I've always been interested in recycling but there's a lot of research to do.<br>\
-Alan: Yes - there are a lot of things I'm unsure of so it's going to be good working with you.<br>\
-Melanie: OK - well why don't we start by making a flow- chart from the notes our tutor gave us?<br>\
-Alan: Yes, um, so... on one side we could have the paper production cycle - here on the left-and on the other side the recycling.<br>\
-Melanie: Good idea. Let's start at the top with the production. The first step in the process is to get the raw materials.<br>\
-Alan: Yes - and they tend to come from pine forests.<br>\
-Melanie: OK - and then the bark is removed from the outside of the tree and after that the wood is chopped up - that's the first three stages.<br>\
-Alan: It sounds a bit complicated after that. Um, it says water is added and then the mixture is heated and made into pulp. This will be the thick paste that is used to make paper.<br>\
-Melanie: Yes - you're right because after that they use a machine to make the paper and we can put that right in the centre of the flow-chart because it's also where the recycled paper joins the process.<br>\
-Alan: Yes. So once the paper has been produced in the machine, what happens then?<br>\
-Melanie: Well, I think we should write 'print' as the next step because this is when newspapers, magazines, etc are produced. And we could also add that they have to be distributed to stores and people's homes.<br>\
-Alan: Right, then the recycling bit starts. The old paper's collected and then it says it's taken somewhere so that someone or something can sort it. I imagine there are different kinds of paper - or things like paper clips that need to be removed.<br>\
-Melanie: Yes. Let's have a step after that. Now, how did our tutor say they do this? Oh yes - it involves chemicals, so - how is your chemistry?<br>\
-Alan: Well - not very good I'm afraid. But this is how they remove ink so - this is definitely going to need a bit of research<br>\
-Melanie: Right - the last step in the recycling section is similar to the last step in the production process with heating and pulping - before the cycle begins again.<br>\
-Alan: So I think going through the processes helped. Now we need to decide how we're going to do this assignment.<br>\
-Melanie: Yes. I guess what we need to do is take the processes and divide them up between us. But we could start thinking about an introduction.<br>\
-Alan: Yes, OK ... well I can start doing that. I think I have enough to go on already.<br>\
-Melanie: Good. And there are a few areas where we need a lot more information. I think I'll start with something easy - let's say the paper collection. I could go to the resource centre to do some research.<br>\
-Alan: Well I think a better idea would be to approach someone who's involved in the process. What about contacting the council?<br>\
-Melanie: Oh - good idea. Yes - I'll do that instead. They're bound to have some information. And I know just the thing to add to our work to make it even more interesting.<br>\
-Alan: And what's that?<br>\
-Melanie: Well - in my last assignment, I added a few pictures and the feedback I got was that this wasn't academic enough. So what might really bring it to life would be to include some data - provided we can find some.<br>\
-Alan: Yes - that sounds excellent. Well - we certainly have a lot to do and not much time to do it in.<br>\
-Melanie: You're right. I think we have about five weeks so I suggest we create a plan of work today. The end of the month is nearly three weeks away and then we have a few days' holiday<br>\
-Alan: Yes - so let's see if we can get the first draft done by then so we can take a short break.<br>\
-Melanie: OK - then after the break we'll have just over a week to complete it. I wonder if we could get someone to review our work for us a few days before the deadline so we can make some final changes. What about your friend Henry?<br>\
-Alan: Well - the best person would be our tutor. Henry's very good but he's taking a whole week's holiday and there won't be enough time when he returns.<br>\
-Melanie: OK, then. That's fine."
-	,vi:"Alan: Chào Melanie - bạn nghĩ gì về bài tập chúng ta được giao hôm nay? Trông có vẻ thú vị phải không?<br>\
-Melanie: Đúng vậy Alan, tôi luôn quan tâm đến việc tái chế nhưng còn rất nhiều nghiên cứu phải làm.<br>\
-Alan: Đúng vậy - có rất nhiều điều tôi không chắc chắn nên sẽ rất tuyệt nếu được làm việc với bạn.<br>\
-Melanie: Được rồi - vậy thì chúng ta hãy bắt đầu bằng cách lập sơ đồ luồng công việc từ những ghi chú mà người hướng dẫn đã đưa cho chúng ta nhé?<br>\
-Alan: Vâng, ừm, vậy thì... một bên chúng ta có thể có chu trình sản xuất giấy - ở đây bên trái - và bên kia là chu trình tái chế.<br>\
-Melanie: Ý tưởng hay đấy. Chúng ta hãy bắt đầu từ đầu với sản xuất. Bước đầu tiên trong quy trình là lấy nguyên liệu thô.<br>\
-Alan: Đúng vậy - và chúng thường đến từ rừng thông.<br>\
-Melanie: OK - và sau đó, vỏ cây được tách ra khỏi bên ngoài cây và sau đó gỗ được chặt nhỏ - đó là ba giai đoạn đầu tiên.<br>\
-Alan: Nghe có vẻ hơi phức tạp sau đó. Ừm, nó nói rằng nước được thêm vào và sau đó hỗn hợp được đun nóng và tạo thành bột giấy. Đây sẽ là hỗn hợp sệt được sử dụng để làm giấy.<br>\
-Melanie: Đúng vậy - bạn nói đúng vì sau đó, họ sử dụng máy để làm giấy và chúng ta có thể đặt nó ngay giữa sơ đồ quy trình vì đó cũng là nơi giấy tái chế tham gia vào quy trình.<br>\
-Alan: Đúng vậy. Vậy sau khi giấy được sản xuất trong máy, điều gì sẽ xảy ra tiếp theo?<br>\
-Melanie: Vâng, tôi nghĩ chúng ta nên viết 'in' là bước tiếp theo vì đây là lúc báo, tạp chí, vvv được sản xuất. Và chúng ta cũng có thể thêm rằng chúng phải được phân phối đến các cửa hàng và nhà của mọi người.<br>\
-Alan: Đúng rồi, sau đó là phần tái chế. Giấy cũ được thu thập và sau đó được chuyển đến một nơi nào đó để ai đó hoặc thứ gì đó có thể phân loại. Tôi hình dung có nhiều loại giấy khác nhau - hoặc những thứ như kẹp giấy cần được tháo ra.<br>\
-Melanie: Vâng. Chúng ta hãy cùng xem một bước sau đó. Bây giờ, người hướng dẫn của chúng ta nói rằng họ đã làm điều này như thế nào? Ồ vâng - nó liên quan đến hóa chất, vậy - hóa học của bạn thế nào?<br>\
-Alan: Vâng - tôi e là không tốt lắm. Nhưng đây là cách họ loại bỏ mực nên - điều này chắc chắn sẽ cần một chút nghiên cứu<br>\
-Melanie: Đúng rồi - bước cuối cùng trong phần tái chế tương tự như bước cuối cùng trong quy trình sản xuất với quá trình gia nhiệt và nghiền bột giấy - trước khi chu trình bắt đầu lại.<br>\
-Alan: Vì vậy, tôi nghĩ rằng việc xem xét các quy trình đã giúp ích. Bây giờ chúng ta cần quyết định cách chúng ta sẽ thực hiện bài tập này.<br>\
-Melanie: Đúng rồi. Tôi đoán là chúng ta cần phải thực hiện các quy trình và chia chúng ra. Nhưng chúng ta có thể bắt đầu nghĩ về phần giới thiệu.<br>\
-Alan: Vâng, OK ... tôi có thể bắt đầu làm điều đó. Tôi nghĩ là tôi đã có đủ thông tin để tiếp tục rồi.<br>\
-Melanie: Tốt. Và có một vài lĩnh vực mà chúng ta cần nhiều thông tin hơn nữa. Tôi nghĩ là tôi sẽ bắt đầu với một cái gì đó dễ dàng - chẳng hạn như bộ sưu tập giấy tờ. Tôi có thể đến trung tâm tài nguyên để nghiên cứu một chút.<br>\
-Alan: Vâng, tôi nghĩ ý tưởng hay hơn là tiếp cận một người nào đó tham gia vào quy trình. Còn việc liên hệ với hội đồng thì sao?<br>\
-Melanie: Ồ - ý tưởng hay đấy. Vâng - tôi sẽ làm thế thay. Họ nhất định sẽ có một số thông tin. Và tôi biết chính xác điều gì đó để thêm vào công việc của chúng ta để làm cho nó thậm chí còn thú vị hơn.<br>\
-Alan: Và đó là gì?<br>\
-Melanie: Vâng - trong bài tập cuối cùng của tôi, tôi đã thêm một vài hình ảnh và phản hồi mà tôi nhận được là điều này không đủ tính học thuật. Vậy thì điều thực sự có thể làm cho nó trở nên sống động là đưa vào một số dữ liệu - miễn là chúng ta có thể tìm thấy một số dữ liệu.<br>\
-Alan: Vâng - nghe có vẻ tuyệt. Vâng - chúng ta chắc chắn có rất nhiều việc phải làm và không có nhiều thời gian để thực hiện.<br>\
-Melanie: Bạn nói đúng. Tôi nghĩ chúng ta có khoảng năm tuần nên tôi đề xuất chúng ta lập kế hoạch làm việc ngay hôm nay. Cuối tháng còn gần ba tuần nữa và sau đó chúng ta có một vài ngày nghỉ<br>\
-Alan: Vâng - vậy hãy xem chúng ta có thể hoàn thành bản thảo đầu tiên trước thời hạn để chúng ta có thể nghỉ ngơi một chút không.<br>\
-Melanie: Được - sau kỳ nghỉ, chúng ta sẽ có hơn một tuần để hoàn thành nó. Tôi tự hỏi liệu chúng ta có thể nhờ ai đó xem lại công việc của chúng ta trước thời hạn vài ngày để chúng ta có thể thực hiện một số thay đổi cuối cùng không. Còn bạn Henry của bạn thì sao?<br>\
-Alan: Vâng - người giỏi nhất sẽ là gia sư của chúng ta. Henry rất giỏi nhưng anh ấy sẽ nghỉ cả tuần và sẽ không có đủ thời gian khi anh ấy trở về.<br>\
-Melanie: Được thôi. Không sao đâu."
-	,voca:""
-	,images:['l_Cam49-min.png']
-}
-
-
-
-
-
+,images:['l_u7_2-min']
+},
 
 
 ]

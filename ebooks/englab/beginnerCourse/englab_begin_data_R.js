@@ -71,13 +71,13 @@ Một số thư viện tính tiền phạt cho mỗi ngày trả sách quá hạ
 [C] Khi đối mặt với một sự kiện căng thẳng, những người có tính cách dễ mắc ung thư không thể hiện sự căng thẳng ra bên ngoài. Thay vào đó, họ giữ cảm xúc của mình bên trong. Họ kìm nén hoặc che giấu cảm xúc của mình, thậm chí với chính bản thân họ.<br>\
 <br>\
 [D] Tính cách dễ mắc ung thư có liên quan đến khả năng mắc ung thư và những đặc điểm tính cách tương tự dường như giúp ảnh hưởng đến quá trình phục hồi của nạn nhân ung thư. Ví dụ, một số nghiên cứu đã xem xét những bệnh nhân ung thư chấp nhận căn bệnh ung thư mà không tức giận. Những bệnh nhân này bị bệnh nhanh hơn và họ chết sớm hơn những người tức giận với căn bệnh ung thư của mình và chống lại căn bệnh."
-	,voca:"personality, prone, unaggressive, agreeable, polite",
+	,voca:"personality,cancer-prone,unaggressive,agreeable polite,repress",
 },
 {
 	title:"Basic Reading P.18 - Friends of the Earth Trust",
 	en:"Friends of the Earth Trust is an educational charity set up to help people of all ages become aware of the threats to our environment. Pollution is just one of these. The destruction of wildlife and wasting our natural resources are others.<br>\
 In Britain, the countryside is disappearing or being destroyed- modern farming, mining, mototways and power stations are all adding to this destruction. By the year 2010, about half the world's animal and plant species could be extinct.<br>\
-Every year a forest the size-ofWales is cut down to make paper for use in Britain. If more people used recycled paper, fewer trees would be cut down, and there would be less waste to dispose of. Another important benefit would be the new jobs created in the collection of waste paper.<br>\
+Every year a forest the size-of Wales is cut down to make paper for use in Britain. If more people used recycled paper, fewer trees would be cut down, and there would be less waste to dispose of. Another important benefit would be the new jobs created in the collection of waste paper.<br>\
 New jobs would also be created if there was a large programme to save energy in buildings. It is cheaper to save energy than to produce electricity, but vast amounts of money are spent on nuclear power. From the mining of uranium to the disposal of radioactive waste, there are a number of threats to the environment. In addition, there are close connections between nuclear power and nuclear weapons. There are safer sources of energy.<br>\
 Energy could also be saved if more short journeys were made by bicycle. This would reduce pollution and traffic congestion. Cycleways should be built to make cycling safer.<br>\
 The threats to our environment are all related. For instance, building cycleways instead of unnecessary new roads would save energy and reduce pollution and the destruction of our wildlife."
@@ -87,25 +87,25 @@ Mỗi năm, một khu rừng có kích thước bằng xứ Wales bị chặt ph
 Việc làm mới cũng sẽ được tạo ra nếu có một chương trình lớn để tiết kiệm năng lượng trong các tòa nhà. Tiết kiệm năng lượng rẻ hơn so với sản xuất điện, nhưng lại phải chi rất nhiều tiền cho năng lượng hạt nhân. Từ việc khai thác uranium đến xử lý chất thải phóng xạ, có một số mối đe dọa đối với môi trường. Ngoài ra, có những mối liên hệ chặt chẽ giữa năng lượng hạt nhân và vũ khí hạt nhân. Có những nguồn năng lượng an toàn hơn.<br>\
 Năng lượng cũng có thể được tiết kiệm nếu có nhiều hành trình ngắn hơn bằng xe đạp. Điều này sẽ làm giảm ô nhiễm và tắc nghẽn giao thông. Nên xây dựng đường dành cho xe đạp để việc đạp xe an toàn hơn.<br>\
 Các mối đe dọa đối với môi trường của chúng ta đều có liên quan. Ví dụ, xây dựng đường dành cho xe đạp thay vì những con đường mới không cần thiết sẽ tiết kiệm năng lượng và giảm ô nhiễm cũng như sự hủy diệt của động vật hoang dã."
-	,voca:"",
+	,voca:"mototways,cycleways,charity,disposal,",
 },
 {
 	title:"Basic Reading P.21 - Crowding Human Life",
 	en:"In 1950, there were only 2,5 billion people in the world. Now there are 5,3 billion. Human population may reach 8,5 billion by the year 2025. Experts disagree about how serious a problem this very fast growth is. And they disagree about what should be done about it.<br>\
 <br>\
-It could be said that growth is slowing down. Most industrial countries- Japan, Canada, the United States, and the nations of Europe- are hardly growing at all. In Asia, Mrica, and Latin America, growth is somewhat slower than it was twenty years ago.<br>\
+It could be said that growth is slowing down. Most industrial countries - Japan, Canada, the United States, and the nations of Europe - are hardly growing at all. In Asia, Africa, and Latin America, growth is somewhat slower than it was twenty years ago.<br>\
 <br>\
-Industrial nations all went through a time of fast growth when their industry was developing. When they reached the point where most people could live in comfort, population growth slowed. Many experts believe that today' s developing nations will go through a similar change. The best way to control population, they say, is to raise the standard of living.<br>\
+Industrial nations all went through a time of fast growth when their industry was developing. When they reached the point where most people could live in comfort, population growth slowed. Many experts believe that today's developing nations will go through a similar change. The best way to control population, they say, is to raise the standard of living.<br>\
 <br>\
 Industrial nations are beginning to look for ways to produce goods without the pollution that is one of the harmful effects of overcrowding. Developing countries will also use such methods if they are to take care of their people. Educating children everywhere is expensive, but the cost is worthwhile because children will contribute to their country's development when they are grown. Perhaps children now in school will invent ways to help people live at peace with the earth."
 	,vi:"Năm 1950, thế giới chỉ có 2,5 tỷ người. Bây giờ là 5,3 tỷ. Dân số thế giới có thể đạt 8,5 tỷ vào năm 2025. Các chuyên gia không đồng ý về mức độ nghiêm trọng của vấn đề tăng trưởng rất nhanh này. Và họ không đồng ý về việc nên làm gì về vấn đề này.<br>\
 <br>\
-Có thể nói rằng tăng trưởng đang chậm lại. Hầu hết các nước công nghiệp - Nhật Bản, Canada, Hoa Kỳ và các quốc gia châu Âu - hầu như không tăng trưởng. Ở châu Á, Mrica và Mỹ Latinh, tăng trưởng chậm hơn một chút so với hai mươi năm trước.<br>\
+Có thể nói rằng tăng trưởng đang chậm lại. Hầu hết các nước công nghiệp - Nhật Bản, Canada, Hoa Kỳ và các quốc gia châu Âu - hầu như không tăng trưởng. Ở châu Á, Phi và Mỹ Latinh, tăng trưởng chậm hơn một chút so với hai mươi năm trước.<br>\
 <br>\
 Các quốc gia công nghiệp đều trải qua thời kỳ tăng trưởng nhanh khi ngành công nghiệp của họ đang phát triển. Khi họ đạt đến điểm mà hầu hết mọi người có thể sống thoải mái, tốc độ tăng trưởng dân số chậm lại. Nhiều chuyên gia tin rằng các quốc gia đang phát triển ngày nay sẽ trải qua một sự thay đổi tương tự. Họ nói rằng cách tốt nhất để kiểm soát dân số là nâng cao mức sống.<br>\
 <br>\
 Các quốc gia công nghiệp đang bắt đầu tìm cách sản xuất hàng hóa mà không gây ô nhiễm, một trong những tác hại của tình trạng quá tải dân số. Các nước đang phát triển cũng sẽ sử dụng những phương pháp như vậy nếu họ muốn chăm sóc người dân của mình. Giáo dục trẻ em ở khắp mọi nơi đều tốn kém, nhưng chi phí này là xứng đáng vì trẻ em sẽ đóng góp vào sự phát triển của đất nước khi chúng lớn lên. Có lẽ những đứa trẻ hiện đang đi học sẽ phát minh ra những cách giúp mọi người sống hòa bình với trái đất."
-	,voca:"",
+	,voca:"worthwhile",
 },{
 	unit:4,
 	title:"Emergency Fire Procedures"

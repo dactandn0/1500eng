@@ -1,6 +1,12 @@
 const GRAMMER_DATA =
 [
 {
+	title:"Đọc -ult - au"
+	,en:"-ult đọc là ao FE: result, sultan<br>\
+	-au đọc là a FE: automatic, pause, fault<br>\
+	"
+},
+{
 title:"Sentence Examples",
 en:"1. S + V + too + adj/adv + (for S.O) + to do S.TH: (quá....để cho ai làm gì...)<br>\
 - This structure is too easy for you to remember.<br>\

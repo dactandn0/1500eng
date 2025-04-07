@@ -1,5 +1,11 @@
 let WORD_FAMILY_DATA = [
+	"invent (v)| inventor (n) | invention (n)",
 	"investigation (n)| investigate (v) | investigative (a) | investigatory (a)",
+	"define (v)| redefine (v)",
+	"construction (n)| reconstruction (n)",
+	"secure (a)| security (n)",
+	"flexibility (n)| flexible (v)",
+	"reservation (n)| reserve (v)",
 	"conservation (n)| conserve (v)",
 	"defense (n)| defender (n)| defend (n)",
 	"environment (n)| environmental (a)| environmentally (adv)",
@@ -55,13 +61,24 @@ let WORD_FAMILY_DATA = [
 	"consumer (n)| consumption (n) | consumer (v)",
 	"mark (n)| mark (v) | marked (a) | markedly (adv)",
 	"money (n)| monetary (a) | monetarily (adv)",
-	"agriculture (n)| agricultural (a) | agriculturally (adv)",   // unit 4
-	"creator (n)| creation (n) | create (v) | creative (a) | creatively (adv)",   
-	"excavation (n)| excavator (n) | excavate (v)",   
-	"literacy (n)| illiteracy (n) | literate (a) | illiterate (a)",   
-	"mythology (n)| myth (n) | mythological (a)",   
-	"specialty (n)| specialization (n) | specialize (v) | specialized (a)",   
+	"agriculture (n)| agricultural (a) | agriculturally (adv)",// unit 4
+	"creator (n)| creation (n) | create (v) | creative (a) | creatively (adv)",
+	"excavation (n)| excavator (n) | excavate (v)",
+	"literacy (n)| illiteracy (n) | literate (a) | illiterate (a)",
+	"mythology (n)| myth (n) | mythological (a)",
+	"specialty (n)| specialization (n) | specialize (v) | specialized (a)",
 ]
+
+
+
+
+
+
+
+
+
+
+
 
 
 function getWordFamily(word)

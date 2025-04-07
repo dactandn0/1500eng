@@ -3,6 +3,7 @@
 document.write('<script src="./ebooks/spkBook/data/collins/collins_cd12.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/formula/formula.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/speakSameVol5/speakSameVol5.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/spkBook/data/sos/sos.js" type="text/javascript"></script>');
 
 var app = angular.module("spkBookApp", ['ngSanitize']);
 app.controller("spkBookCtrl", function($scope, $rootScope, $timeout) {
@@ -38,6 +39,11 @@ bookRadioChange = function (num, isLoadData = false) {
 		$scope.img_root = imgRootPath + 'speakSameVol5/img/'	
 		$scope.stories = SPEAKING_SAME_VOL5;
 	}
+	if (num===3)
+	{
+		$scope.img_root = imgRootPath + 'sos/img/'	
+		$scope.stories = SHEEP_OR_SHIP_DATA;
+	}
 
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 	Helper_saveDB("Speaking_Ebook", num);
@@ -52,6 +58,7 @@ $scope.createAudioSrc = function()
 	if ($scope.bookRadio === 0) return rootPath + "collins/mp3/" + mp3File
 	else if ($scope.bookRadio === 1) return rootPath + "formula/mp3/" + mp3File
 	else if ($scope.bookRadio === 2) return rootPath + "speakSameVol5/mp3/" + mp3File
+	else if ($scope.bookRadio === 3) return rootPath + "sos/mp3/" + mp3File
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {

@@ -4,7 +4,6 @@ document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_R2
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_W.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_S.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_L.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/englab/beginnerCourse/sheep_or_ship.js" type="text/javascript"></script>');
 
 var app = angular.module("beginnerCourseApp", []);
 app.controller("beginnerCourseCtrl", function($scope, $rootScope, $timeout) {
@@ -41,12 +40,7 @@ ielt_formChange = function (num, isLoadData = false) {
 		$scope.stories = ENGLAB_BEGIN_DATA_L
 		$scope.fetchStory(Helper_loadInt(keyU, 0));
 	}
-	if (num===4) 
-	{
-		$scope.img_root = imgRootPath + 'sos/'	
-		$scope.stories = ENGLAB_BEGIN_DATA_Sheep_or_ship
-		$scope.fetchStory(Helper_loadInt(keyU, 0));
-	}
+
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 	$scope.acc = -1;
 

@@ -1,15 +1,16 @@
 const BEGINNER_READING_VOCA = [
 {
 title: "Beginner_reading_voca",
-en: "definitely (adv) chắc chắn<br>\
-always (adv) luôn luôn<br>\
+en: "always (adv) luôn luôn<br>\
 absolutely (adv) hoàn toàn<br>\
-quite (adv) khá<br>\
+operator (n) toán tử (IT), người điều hành, thợ, tổng đài viên<br>\
+operand (n) toán hạng (A+B=C, so A,B is operand)<br>\
+concatenation (n) /kənˌkætəˈneɪʃn/ sự nối tiếp<br>\
+exponentiation (n) sự lũy thừa (IT) <br>\
 sometimes (adv) thỉnh thoảng<br>\
 combination (n) /ˌkɑːmbɪˈneɪʃn/ sự kết (tổ ) hợp, chất hóa hợp<br>\
 own (adv) sở hữu<br>\
 even if (adv) thậm chí nếu<br>\
-even (adv) thậm chí<br>\
 decline (n,v) sự suy thoái, sự suy sụp, suy giảm, làm giảm<br>\
 though (conj) mặc dù<br>\
 although (conj) mặc dù<br>\
@@ -299,7 +300,7 @@ nesting site /'nestin,sait/ nơi làm tổ<br>\
 post /paust/ (n) bài đăng<br>\
 scatter /'skætǝ/ (v) phân tán<br>\
 settler /'setlǝ/ (n) người định cư<br>\
-slightly /'slaitli/ad (v) hơi<br>\
+slightly (adv) /'slaitli/ hơi, nhẹ nhàng<br>\
 advertise /'redvataiz/ (v) quảng cáo<br>\
 agricultural /regri'kAltfaral/ (a)nông nghiệp<br>\
 disease /di'zi:z/ (n) bệnh tật<br>\

@@ -3,10 +3,10 @@ const BOTH_COUNT_AND_UNCOUNT = "chicken,paper,time,hair,room,memory,coffee,water
 var SPECIAL_WORDS = "definitely,also,just,only,always,absolutely,quite,as ever,sometimes,own,even if,even,though,although,despite,certainly,of course,so on,whenever\
 ,probably,currently,unfortunately,hardly,rarely,much,more,more into,really,recently,ever,never,still,usually,for a while\
 ,absolutely,actually,completely,really,totally,thoroughly,entirely,simply,undoubtedly,literally,gradually,unusual,nevertheless,less,fewer\
-,pretty,quite,rather,fairly,basically,honestly\
+,pretty,quite,rather,fairly,basically,honestly,eventually \
 ,since,as,in fact,on top of that,what's more,besides,plus,as much as,as well as,as long as,more and more,one another,through\
 ,as a result,consequently,thereby,thus,hence,such as,needless to say,less of\
-,incredibly,considerably,particularly,significantly,meanwhile\
+,incredibly,considerably,particularly,significantly,meanwhile,somewhat\
 ,a bit of,a sense of,a bit,a lot,a wide range of,that"
 
 SPECIAL_WORDS = Helper_SoftStringData(SPECIAL_WORDS)

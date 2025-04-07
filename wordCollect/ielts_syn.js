@@ -1,7 +1,23 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
-words: "commodity | merchandise | stock | ware | influx "
+words: "cost | expense "
+, type:"n"
+, mean: "chi phí" 
+},{
+words: "deliberately | on purpose "
+, type:"adv"
+, mean: "cố ý" 
+}, {
+words: "anonymous /əˈnɑːnɪməs/| unnamed | nameless /ˈneɪmləs/"
+, type:"a"
+, mean: "vô danh" 
+}, {
+words: "reserve | book "
+, type:"v"
+, mean: "đặt trước" 
+}, {
+words: "commodity | merchandise | stock | ware | influx | goods"
 , type:"n"
 , mean: "hàng hóa" 
 },{
@@ -37,9 +53,9 @@ words: "​classify | digest | distribute "
 	type:"v",
 	mean:"đạt được"
 },{
-	words:"deliberation|consideration",
+	words:"deliberation | consideration",
 	type:"n",
-	mean:"sự cân nhắc, sự đắn đo"
+	mean:"sự cân nhắc, sự đắn đo, thận trọng"
 },{
 	words:"discrepancy  /dɪˈskrepənsi/|difference",
 	type:"n",

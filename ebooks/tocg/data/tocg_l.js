@@ -1,6 +1,6 @@
 let TOCG_DATA_L = [
 {
-track:"Cam07"
+track:"07"
 ,en:"1) We had a good response to our survey and we found that, while 80% of our students drink coffee, only 15% drink tea, with the rest preferring water.<br>\
 2) Over 800000 people in the US are estimated to have tried skiing. This may seem a large number but it represents just over 0,26% of the total population of 300 million. So, per capita, it is surprisingly small.<br>\
 3) It's estimated that India is home to between 38000 and<br>\
@@ -8,7 +8,7 @@ track:"Cam07"
 4) An elephant can weigh between 2,5 and 5 tonnes. This is comparable to the tongue of the blue whale, which alone can weigh 2,7 tonnes. In fact, a blue whale can weigh 15 times more than an elephant, and can grow to about 10 times the size of a standard bus."
 },
 {
-	track:"Cam08"
+	track:"08"
 	,en:"1)<br>\
 A: Good morning, Harrisons Travel Agency, how can I help you?<br>\
 B: Oh, good morning, I'm thinking of going on a skiing trip. Can you tell me about any good offers on at the moment?<br>\
@@ -21,7 +21,7 @@ A: Well, I don't think I have any more questions. Is there anything you'd like t
 B: Yes, I was wondering if it involves a lot of travel, and what the working hours are."
 },
 {
-	track:"Cam09"
+	track:"09"
 	,en:"1)<br>\
 A: This one's a good deal. It costs £150 and airfares are included in that price. Once you land, you still need to get to the ski slopes. It's a two-hour journey.<br>\
 B: Yes, I know, I have a friend there who's going to meet me and we'll travel together.<br>\
@@ -44,7 +44,7 @@ A: Right. And you've worked briefly in accounts but in sales, mostly... Is that 
 B: Actually, I'm hoping to move into the area of marketing. I've always been interested in it, and it was my major at university.<br>\
 A: I see. Well, with your references I'm sure we can discuss it."
 },{
-	track:"Cam11"
+	track:"11"
 	,en:"Section 1<br>\
 A: Hi Sam, we'd better start planning the party, it's in less than two weeks, isn't it?<br>\
 B: Yeah, I guess it is. There isn't much to do, is there? <br>\
@@ -106,13 +106,13 @@ B: Thực ra, tôi nghĩ chúng ta nên tìm kiếm trực tuyến. Các nguồn
 A: Bạn nói đúng. Chúng ta cần đảm bảo rằng không phải tất cả chúng ta đều làm cùng một việc. Hãy hỏi họ vào chiều nay trong buổi hướng dẫn.<br>\
 B: Ý tưởng tuyệt vời."
 },{
-	track:"Cam12"
+	track:"12"
 	,en:"A: Hi, I'm interested in buying a ticket for the small business expo next week, but I'm not sure it will be useful for me. <br>\
 B: Well, this year we wanted to focus on computer skills. So, as well as representatives from 400 small businesses, we've invited over 250 specialists in that area.<br>\
 A: Oh, that should be interesting."
 	,note:"One word and/or a number = 1word or 1num or 1word + 1num"
 },{
-	track:"Cam13"
+	track:"13"
 	,en:"1<br>\
 A: Right, so, you need to book some flights, is that right?<br>\
 B: Yes, for me and my family. We're going to Scotland for my sister's wedding.<br>\
@@ -130,7 +130,7 @@ B: That's a good idea, there's a lot of information and I think the other groups
 4<br>\
 We encountered quite a few problems during our research. Firstly, the weather was horrendous and made our work conditions very difficult indeed. Luckily, we had the right equipment to deal with that, and could carry on regardless. Unfortunately though, in spite of having so many volunteers, we did run out of funds halfway through the project. So, we were forced to postpone the second half of our trip."
 },{
-	track:"Cam14"
+	track:"14"
 	,en:"1<br>\
 A: We really need to organise our trip, you know.<br>\
 B: I know, I was thinking the same. We need to arrange accommodation and flights.<br>\
@@ -153,10 +153,10 @@ Studying ice cores in the South Pole can tell us a lot about the past climate, w
 ,voca:"well-established,harsh"
 },
 {
-	track:"Cam15"
+	track:"15"
 	,en:"In today's show I'm going to be looking at what's new in technology this week. And I'd like to start by looking at the much-awaited OP56 mobile phone from technology giants Optiware. It has some amazing features. The first thing you notice is how much slimmer and lighter it is compared to the heavier older models. It's incredible considering that they have actually increased the screen size on this one, though it still fits neatly into your pocket. They've also improved the camera and you'll find you can take much better quality photos on this model. This has an impact on the battery though, as it takes a lot of power and I found it didn't run for very long before needing to be recharged. Despite all its amazing features, it's extremely easy to use, but I do have to say that it is overpriced, and will be beyond the budget of most people shopping for a new phone."
 },{
-	track:"Cam16"
+	track:"16"
 	,en:"1<br>\
 A: Excuse me, can you tell me where the gift shop is?<br>\
 B: Yes, you need to go into the shopping centre, the entrance is over there on your left.<br>\
@@ -175,7 +175,7 @@ B: That's a good idea, it would be a lot more useful than if it was at the weste
 4<br>\
 The Traviston Frog is different to many other species of frog. It is very small and so, unlike other species, it is unable to live in the area of a pond, though it does need to live in fairly close proximity to water so that it can feed. Rather than choosing the safety of a tree, which would be too tall and may actually increase the threat from predators, it elects to live in a tiny burrow surrounded by bushes."
 },{
-	track:"Cam17"
+	track:"17"
 	,en:"A: Can you tell me how to get to the supermarket?<br>\
 B: Sure, let me have a think. We're in Bridge Street now and it's in Queens Road.<br>\
 A: Oh, the only street I know is Riverside Street, I know my hotel's on the corner there.<br>\
@@ -184,10 +184,10 @@ A: I see.<br>\
 B: Then you walk along there to the next set of traffic lights and you'll be at Queens Road. You turn left there and it's the second shop on your left.<br>\
 A: Thanks very much!"
 },{
-	track:"Cam18"
+	track:"18"
 	,en:"Morning everyone, thanks for coming. Now, from next week there'll be a rota for all of you to help out at the information stand here at Brookside Market. So, I just wanted to give you a briefing about what you can find where. The information booth is to the right of the entrance and I've given you all a plan to mark important places on. One of the most common enquiries is where can I pay for my parking? People are amazed when we tell them that it's free now. We used to charge for it and there was a ticket booth to the left of the entrance, but now that it's been turned into a small stage, we hold cookery demonstrations there. Local chefs come in and show people how to prepare dishes. It's really popular and you get a nice view of the fountain there. We have over 50 stalls at the markets, selling everything from fresh fruit and vegetables to locally made crafts. Which unfortunately means people won't find things like books or anything second-hand. We have a famous baker at the market and many people get here really early just to buy his produce. His stall is located at the back of the markets next to the barbecue. We sell burgers and sausages there but a lot of people like to bring their own lunch to eat and they're welcome to go to the special area near the tree in the middle of the markets where they can do just that. It's handy for the toilets too. The markets are located next to a circus school that holds classes for children at the weekend, so we often get a lot of family groups in. There's a playground on the right-hand side that's popular with them, and just in front of that is where the farmers bring along chickens, rabbits and lambs for the children to pet. That's always a very popular feature so you'll definitely be asked about that. Just let people know there is a small fee if the children want to feed them. Well, that's everything for now..."
 },{
-	track:"Cam19"
+	track:"19"
 	,en:"A<br>\
 At the bottom of the system, there is a storage tank, which can hold up to 500 litres of rainwater. The water stored in the tank can be used for general gardening and cleaning.<br>\
 B<br>\
@@ -202,20 +202,20 @@ F<br>\
 There is a wheel on the side, which is attached to a small motor that turns the wheel. As it spins, a long chain passes around the outside of it and ..."
 ,voca:"hold up to"
 },{
-	track:"Cam20"
+	track:"20"
 	,en:"Hello, I've come along to tell you about an invention of mine called the Party Popper Machine. Here is a diagram of the machine and I'll just explain how it works. It's basically a set of interconnected cogs and wheels that rotate in turn and cause a party popper to pop! The process begins with what I like to call the party starter! It's located on the top of the base at the front. I was very fond of wind-up toys when I was young, but sadly I couldn't find a way to attach a winder to this contraption, but I think this big round button looks nice and dramatic and my children fight over getting to push it! The button activates a small motor that's housed directly under the box at the front. It generates enough power to get everything going but not so much that it overheats and needs a cooling fan! The legs elevate the base and help with that. The base also has another use as it can also hold up to 10 spare party poppers! So you never need to worry about running out. Once the motor is running, it turns the spiky wheel that is attached to the loaded party popper. I call this the detonator! As it turns, the string of the party popper slowly wraps around it and is pulled tighter and tighter until it explodes! So much fun!"
 	,vi:"Xin chào, tôi đến đây để kể cho bạn nghe về một phát minh của tôi có tên là Máy Party Popper. Đây là sơ đồ của máy và tôi sẽ giải thích cách thức hoạt động của nó. Về cơ bản, nó là một bộ bánh răng và bánh xe được kết nối với nhau, quay theo lượt và khiến một party popper nổ tung! Quá trình bắt đầu bằng thứ mà tôi thích gọi là bộ khởi động tiệc! Nó nằm ở phía trên cùng của đế ở phía trước. Tôi rất thích đồ chơi lên dây cót khi còn nhỏ, nhưng thật đáng buồn là tôi không thể tìm ra cách gắn một bộ lên dây cót vào đồ chơi này, nhưng tôi nghĩ nút tròn lớn này trông đẹp và ấn tượng và các con tôi tranh nhau để được ấn nó! Nút này kích hoạt một động cơ nhỏ được đặt ngay dưới hộp ở phía trước. Nó tạo ra đủ năng lượng để mọi thứ hoạt động nhưng không quá nhiều đến mức quá nhiệt và cần quạt làm mát! Các chân nâng đế lên và giúp làm điều đó. Đế cũng có một công dụng khác là nó cũng có thể chứa tới 10 party popper dự phòng! Vì vậy, bạn không bao giờ phải lo lắng về việc hết điện. Khi động cơ chạy, nó sẽ quay bánh xe nhọn gắn vào party popper đã nạp đạn. Tôi gọi đây là kíp nổ! Khi nó quay, sợi dây của party popper sẽ từ từ quấn quanh nó và được kéo chặt hơn cho đến khi nó phát nổ! Thật vui!"
 },{
-	track:"Cam21"
+	track:"21"
 	,en:"A The thermometer on the end of the device allows us to measure changes in temperature.<br>\
 B I had to use my calculator to work out the final figure and calculate how much profit we'd made.<br>\
 C We put the animals on to the scales to weigh them, and recorded their weight at the beginning and end of the experiment.<br>\
 D We attached a speedometer so that we could measure our speed and adjust it if necessary."
 },{
-	track:"Cam22"
+	track:"22"
 	,en:"Here's how to wrap a present. First, gather together all of the things you need: wrapping paper, sticky tape, scissors, some ribbon and, of course, a present. Then, place your present on the opened wrapping paper and cut a suitable amount using the scissors. Next, wrap the paper around the present and stick it down with sticky tape. Then, neatly fold up each of the ends of the paper and stick them down. Finally, tie the ribbon around your present. It's now ready to present!"
 },{
-	track:"Cam23"
+	track:"23"
 	,en:"1 Well, I agree up to a point. <br>\
 2 I think that's a really valid point. <br>\
 3 Well, I'm not so sure about that. <br>\
@@ -225,7 +225,7 @@ D We attached a speedometer so that we could measure our speed and adjust it if 
 7 That seems doubtful to me.<br>\
 8 I have to admit I don't like the sound of that at all."
 },{
-	track:"Cam24"
+	track:"24"
 	,en:"A: So what did you think about the research?<br>\
 B: I thought it was well thought out, although it did take three years to produce any results.<br>\
 A: Yes, but that's to be expected given the age of the participants. I mean, they had to chart their progress over several years.<br>\
@@ -235,7 +235,7 @@ B: Yeah, me too. It's amazing to think that watching TV can have such a clearly 
 A: I agree.<br>\
 B: People were generally unimpressed by the findings though, which is typical when there's a suggestion that we change our behaviour."
 },{
-	track:"Cam25"
+	track:"25"
 	,en:"A: Right, let's organise our presentation on the new science equipment, shall we?<br>\
 B: Yes, I'm a bit worried it's overly long - we only have 10 minutes.<br>\
 A: Why don't we go through each section then.<br>\
@@ -256,7 +256,7 @@ B: Well, I think I'll do an Internet search anyway, just to be sure we haven't m
 A: OK, it would be good to be able to state that we have included all the very latest information.<br>\
 B: Absolutely."
 },{
-	track:"Cam26"
+	track:"26"
 	,en:"Section 1<br>\
 A: How are we going to get to the airport on Monday? Shall we get a taxi?<br>\
 B: It would be nice and convenient but the fare is so expensive. A: That's true. Well, if you want to save money, we could<br>\
@@ -282,12 +282,12 @@ B: Vâng, chúng ta đã thu thập đủ thông tin rồi. Tôi không nghĩ ch
 A: Bạn nói đúng. Vậy chúng ta có nên đi gặp Giáo sư Smith không? Chúng ta có thể hỏi ý kiến ​​của anh ấy.<br>\
 B: Vâng, anh ấy có thể kiểm tra giúp chúng ta và đảm bảo rằng chúng ta đã làm đủ. Nhưng tôi muốn làm điều đó sau khi chúng ta đã tổng hợp tất cả lại. Hiện tại, chúng ta chỉ có rất nhiều ghi chú viết tay. Tôi không muốn cho anh ấy xem. A: Được. Chúng ta hãy chia tài liệu ra và mỗi người ghi vào một đĩa để chúng ta có thể in ra một bản sao được trình bày đẹp mắt."
 },{
-	track:"Cam27"
+	track:"27"
 	,en:"Good morning, everyone. My name is Paul and I'm a palaeontologist. Now, when most people hear that, they immediately get an image of an old professor studying dried-up dinosaur bones or else they think of a great adventurer from the movies! Well, I'm neither. But I would like to talk to you today about how I came to be a palaeontologist and the reason I believe it is an important job. All my life, my main interest has been the environment. So, I actually started out as an ecology student. As a part of my degree course, I had to do a compulsory unit on extinction and a lecturer visiting from another university gave us a talk on Australia's extinct animals. One of the animals he talked about was called the Diprotodon. It's an ancestor of the modern Australian wombat. He described this enormous animal crossing ancient lakes, getting stuck in the mud and becoming part of the fossil record, which is what we call the preserved remains of animals and plants that we find. And I was fascinated. So fascinated that I immediately changed courses. But palaeontology isn't all easy going. The very first field trip I went on was pretty awful and we didn't find anything! We went to an outback fossil site and we were digging in extreme conditions. I've learned since then that that's pretty standard for work like this. But to make matters worse, after five days, I'd found nothing. I was getting really disheartened and I was starting to regret my decision, when on the last day of the trip, I was digging into the bank of an ancient dried-up riverbed and I found a funny-looking piece of rock. Inside it was a tooth from a giant kangaroo. Finding that one fossil made me realise that this was a field I really wanted to continue working in."
 	,vi:"Chào buổi sáng, mọi người. Tôi tên là Paul và tôi là một nhà cổ sinh vật học. Khi nghe đến điều đó, hầu hết mọi người sẽ nghĩ ngay đến một giáo sư già đang nghiên cứu xương khủng long khô hoặc họ nghĩ đến một nhà thám hiểm vĩ đại trong phim! Vâng, tôi không phải là cả hai. Nhưng hôm nay tôi muốn nói chuyện với các bạn về cách tôi trở thành một nhà cổ sinh vật học và lý do tôi tin rằng đó là một công việc quan trọng. Trong suốt cuộc đời mình, mối quan tâm chính của tôi là môi trường. Vì vậy, thực ra tôi đã bắt đầu là một sinh viên ngành sinh thái học. Là một phần của khóa học cấp bằng, tôi phải học một đơn vị bắt buộc về sự tuyệt chủng và một giảng viên đến từ một trường đại học khác đã có bài nói chuyện về các loài động vật đã tuyệt chủng của Úc. Một trong những loài động vật mà ông ấy nói đến được gọi là Diprotodon. Đây là tổ tiên của loài wombat Úc hiện đại. Ông ấy đã mô tả loài động vật khổng lồ này băng qua các hồ nước cổ đại, bị mắc kẹt trong bùn và trở thành một phần của hồ sơ hóa thạch, đó là những gì chúng ta gọi là di tích được bảo tồn của động vật và thực vật mà chúng ta tìm thấy. Và tôi đã bị cuốn hút. Quá cuốn hút đến nỗi tôi đã ngay lập tức đổi hướng. Nhưng cổ sinh vật học không phải là tất cả dễ dàng. Chuyến đi thực tế đầu tiên của tôi khá tệ và chúng tôi không tìm thấy bất cứ thứ gì! Chúng tôi đã đến một địa điểm hóa thạch ở vùng hẻo lánh và chúng tôi đã đào trong điều kiện khắc nghiệt. Kể từ đó, tôi đã học được rằng đó là điều khá bình thường đối với công việc như thế này. Nhưng tệ hơn nữa, sau năm ngày, tôi không tìm thấy gì cả. Tôi thực sự nản lòng và bắt đầu hối hận về quyết định của mình, khi vào ngày cuối cùng của chuyến đi, tôi đang đào vào bờ của một lòng sông khô cạn cổ đại và tôi tìm thấy một mảnh đá trông kỳ lạ. Bên trong nó là một chiếc răng của một con kangaroo khổng lồ. Việc tìm thấy hóa thạch đó khiến tôi nhận ra rằng đây là một lĩnh vực mà tôi thực sự muốn tiếp tục làm việc."
 	,voca:"funny-looking"
 },{
-	track:"Cam28"
+	track:"28"
 	,en:"1<br>\
 A: I don't really understand why you contacted Professor Higgins. He has nothing to do with our faculty.<br>\
 B: Well, we wanted to understand what impact an invention like this would have on the environment. And that's his area of expertise.<br>\
@@ -301,18 +301,18 @@ After gathering all of our data, we looked at the results. We realised that the 
 A: So, what does that all show?<br>\
 B: Well, I think we can deduce from this that any development in this area should be halted until the animals have all been safely removed."
 },{
-	track:"Cam29"
+	track:"29"
 	,en:"What I appreciate most about my work is the fact that I can turn the fossils I find into information we can actually use. So, how do we extract that information? Well, first we need to run the fossil through a special machine. That gives me a date for the fossil. From then on, I begin to work out what type of animal it was, what it ate and how it interacted with the landscape.<br>\
 Earlier this year, I was lucky enough to be awarded a grant from a government-funding body. Palaeontology isn't only about the past. It can help with current issues too. For example, I plan to use these funds to excavate new areas and try to find out how ancient creatures evolved during their own period of climate change, just as animals today have to.<br>\
 In another project, I'm going to study fossil collections that are housed in museums around Australia. I'm doing that to try to find out when Australia's mega-fauna became extinct - that is, all the giant mammals, lizards and birds. That will help us to finally find out what caused these extinctions. Was it nature or was it humans?"
 },{
-	track:"Cam30"
+	track:"30"
 	,en:"1<br>\
 We've recently been doing some research involving mice. We were trying to find out what causes the cells in our body to age. Is it linked to diet or exercise? What we found was that if we allowed the mice no exercise, their cells deteriorated fairly rapidly, giving them a prematurely old body. The mice that did exercise, showed less change in their cell structure and so seemed younger.<br>\
 2<br>\
 We've known for decades that pigeons can navigate using the Earth's magnetic field as a sort of compass. What we don't know is how this works. In our research, we discovered that the pigeon's brain receives a signal from its middle ear that the brain then processes to determine both their direction and the strength of the magnetic field. Previously, it had been thought that it was the bird's beak that held the answer. But this has since been proven false."
 },{
-	track:"Cam31"
+	track:"31"
 	,en:"1 OK, let's move on to the late 19th century, when a great deal of changes were taking place.<br>\
 2 Now, first of all, I wanted to give you some background information.<br>\
 3 So, let's have a look at some possible reasons for this. <br>\
@@ -320,7 +320,7 @@ We've known for decades that pigeons can navigate using the Earth's magnetic fie
 5 So, what conclusions did we reach?<br>\
 6 I'll begin by explaining what this machine can do."
 },{
-	track:"Cam32"
+	track:"32"
 	,en:"In my talk today, I'm going to be looking at plants that have had an impact on our world and our history. Let's start with the potato. It was originally one of the staple foods of Central and South America and when Spanish explorers travelled to the Americas some time in the 16th century the potato found its way into Europe. This had several important consequences. In particular, it almost totally altered people's diet in many European countries. The potato is also believed to have been responsible for the start of a new trend - that of migrating to America. So you could say that the humble potato actually allowed many people to change their lives.<br>\
 However, there were also problems associated with this crop. Largely in Ireland, where the poor were very much reliant on the success of the crops. Sadly, a disease in the crop spread rapidly across the country and led to widespread potato crop failures in the mid-1800s. This meant that millions died from starvation as a result.<br>\
 Let's move on to look at another plant from the same part of the world, the tobacco plant. This originated in the Americas and had an enormous influence on the way North America developed in the 1800s. It's famed for being the original cash crop there and for funding a great deal of the development that occurred during this time.<br>\
@@ -328,7 +328,7 @@ On the downside, the success of this crop resulted in a greater demand for slave
 Now, the next plant I'd like to mention is one known and used all around the world. Tea. It originated in China and in terms of its historical significance, it played a large part in the US independence from Great Britain. This came about because the British government declared that the colonies had to pay a tax on the produce brought into America. It was because of the protest against these taxes that the American Revolution came about.<br>\
 The final plant I'll look at today is the White Mulberry. Again it originated in China and had an enormous influence on development in this part of the world, in particular in establishing trade between the East and the West. Sadly, the increase in trade brought with it the spread of disease and weapons."
 },{
-	track:"Cam33"
+	track:"33"
 	,en:"In today's lecture, I'm going to talk about the part that plants have played in our history, something most of us probably never give any thought to. Flowers began changing the way the world looked almost as soon as they appeared on Earth about 130 million years ago. That's relatively recent in geologic time - if all Earth's history were compressed into an hour, flowering plants would exist for only the last 90 seconds. Without those flowering plants, it's likely we wouldn't be here. They are fundamental to our existence, forming a vital part of our food supplies.<br>\
 If we look further on in time, to the year 2737 BC, we arrive at the discovery of tea by a Chinese emperor, when a leaf fell into a cup of hot water. This discovery eventually played a very important part in the history of China, the USA and the UK. For Britain, where demand for tea was high, there were financial implications when a Chinese emperor declared that it could only be bought with silver, which they were then forced to find overseas.<br>\
 A second influential plant emerged around 202 BC in the form of the White Mulberry. It became extremely sought after and it remained so until 220 AD because white mulberries provide food for the worm that creates silk. This luxurious material was responsible for establishing extremely valuable trade routes. And it was along these same routes that different religions made their way around the world. But, unfortunately, they also caused the spread of previously unknown diseases, as well as weapons of war such as gunpowder.<br>\
@@ -338,7 +338,7 @@ Nếu chúng ta nhìn xa hơn về mặt thời gian, đến năm 2737 trước 
 Một loại cây có ảnh hưởng thứ hai xuất hiện vào khoảng năm 202 trước Công nguyên dưới dạng Dâu tằm trắng. Nó trở nên cực kỳ được săn đón và vẫn như vậy cho đến năm 220 sau Công nguyên vì dâu tằm trắng cung cấp thức ăn cho loài sâu tạo ra tơ. Loại vật liệu xa xỉ này chịu trách nhiệm thiết lập các tuyến đường thương mại cực kỳ có giá trị. Và chính trên những tuyến đường này, nhiều tôn giáo khác nhau đã du nhập vào thế giới. Nhưng thật không may, chúng cũng gây ra sự lây lan của các căn bệnh chưa từng biết đến trước đây, cũng như các loại vũ khí chiến tranh như thuốc súng.<br>\
 Cuối cùng, chuyển sang lịch sử gần đây hơn, chúng ta đến với thế kỷ 16 và khoai tây. Nó có nguồn gốc từ Trung Mỹ nhưng chính người Tây Ban Nha đã giới thiệu nó vào chế độ ăn uống của người châu Âu. Ở đó, nó nhanh chóng trở nên phổ biến vì không chỉ tốn ít chi phí để trồng mà còn là nguồn thực phẩm giàu vitamin. Nhiều đến mức sự xuất hiện của nó được cho là đã giúp Anh thoát khỏi căn bệnh được gọi là bệnh scorbut. Tuy nhiên, có lẽ nó nổi tiếng hơn hiện nay vì nạn đói khoai tây vào giữa những năm 1800 ở Ireland. Người dân Ireland phụ thuộc vào vụ mùa đến nỗi sự thất bại lan rộng của nó trong giai đoạn này đã gây ra cái chết của hơn một triệu người và khiến một triệu người khác phải di cư đến Anh, Canada và Hoa Kỳ."
 },{
-	track:"Cam35"
+	track:"35"
 	,title:""
 	,en:"1 it / eat <br>\
 	2 look / luck<br>\
@@ -375,7 +375,7 @@ Cuối cùng, chuyển sang lịch sử gần đây hơn, chúng ta đến với
 
 
 ,{
-	track:"Cam39"
+	track:"39"
 	,en:"A: Good morning - Dave Smith speaking.<br>\
 B: Hi- could I speak to the organiser of the Preston Park Run? <br>\
 A: Yes that's me.<br>\
@@ -470,7 +470,7 @@ A: Được rồi, cảm ơn. Tạm biệt.<br>\
 B: Tạm biệt."
 	,isTest: true
 },{
-	track:"Cam40"
+	track:"40"
 	,en:"Thank you for calling the phoneline for the Pacton-on-Sea bus tour. This is a recorded message lasting approximately four minutes and it provides general information on the town bus tour. <br>\
 Pacton-on-Sea is a beautiful west coast town and has attracted tourists for many years. One of the best ways of getting to know the town is to take the bus tour, which provides a wonderful viewing experience from one of our open-top buses. The tour is a round-trip of the town and there are a total of 4 stops where passengers can get on and off the bus. A lot of people start at the first stop which is at the train station as this is where many tourists arrive in the town. The next stop after the station is the aquarium which is famous for its dolphin show and which has recently expanded to include sharks. This is well worth a visit and is very reasonably priced. Leaving the aquarium, the bus tour goes along the coast road and after a few kilometres comes to the Old Fishing Village where you can get off to stroll along the waterfront. There are some original buildings here but most of the area has been modernised and is now used as a harbour for all kinds of sea craft including yachts and some amazing power boats. The tour then heads off to the last stop and this is where most of the shops are. So for those of you keen to do a bit of shopping this is the place for you. Our advice is to go to this part of the town in the morning when it is relatively quiet. It does get very busy in the afternoons, especially at the height of the season. This area of the town includes an ancient water fountain where many people like to have their photograph taken - so do look out for this.<br>\
 [pause]<br>\
@@ -480,7 +480,7 @@ At the height of the summer the tours can get very busy so you are advised to bo
 Thank you for calling the Pacton-on-Sea phoneline and we look forward to seeing you soon on one of our tour buses."
 	,isTest: true
 },{
-	track:"Cam41"
+	track:"41"
 	,en:"Randhir: Hello - I'm Randhir Ghotra from the technologies department.<br>\
 Dave: Ah yes. Good. I'm Dave Hadley. Thanks for coming to see me.<br>\
 Randhir: That's OK. I believe you want us to do some work for you?<br>\
@@ -516,7 +516,7 @@ Dave: OK, I'll do that.<br>\
 Randhir: Thanks."
 	,isTest: true
 },{
-	track:"Cam42"
+	track:"42"
 	,en:"Hi everyone today I'm going to be talking about the origins of ceramics. So, first of all, let's start off with - what is a ceramic? Well, generally speaking, ceramics are what you get when you apply heat to certain inorganic, non-metallic solids and then allow them to cool. And examples of ceramics are everyday things like earthenware pots, crockery, glassware and even concrete. <br>\
 So how did it all begin? Well it all started around 29,000 years ago when humans discovered that if you dig up some soft clay from the ground, mould it into a shape and then heat it up to a very high temperature, when it cools the clay has been transformed into something hard and rigid. And so what did those first humans do with their discovery? Well - they created figurines which were small statues and which depicted animals or gods or any shape that the clay could be moulded into. And all this activity was centred around southern Europe where there is also evidence of ceramics that were created much later. The early humans also found a practical use for their discovery, such as storing things like grain - although there were drawbacks. The pots were porous so that, although they could carry water in them, it wasn't possible to store it over a long period. And also, they were quite brittle and shattered very easily if they were dropped.<br>\
 But despite these problems, it was many thousands of years before there were any improvements. In China at around 200 BC, they discovered that by adding minerals to the clay they could improve both the appearance and the strength of the ceramics. But it took nearly a thousand years before they perfected the process to produce high-quality ceramics known as porcelain. And once they had perfected the process, they kept it a secret for another thousand years! Compared to the first ceramics, porcelain was lighter, finer, harder and whiter and became an important commodity in China's trading with the rest of the world for hundreds of years. In fact, it became so valuable that it was known as white gold and spies were sent to China to discover what they did to the clay to produce such high-quality merchandise.<br>\
@@ -563,7 +563,7 @@ function makeOCG_DATA ()
 	let rrr = []
 	for (var i = 3; i <= 70; i++) 
 	{
-		const trackName = 'Cam' + (i < 10 ? ('0'+ i) : i )
+		const trackName = (i < 10 ? ('0'+ i) : i )
 
 		var json = {
 			track: trackName,

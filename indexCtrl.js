@@ -222,6 +222,18 @@ $scope.toggleTransSenten = function () {
   $scope.bTransSentenOnClick = !$scope.bTransSentenOnClick
 }
 
+$scope.searchGG = function () 
+{
+  const input =  $scope.search
+  Helper_GG_API($http, input).then (res => {
+      const vietnamese = res.data[0][0][0];
+      doShowToast(input + ' <b style="color:orange">/(gg)/</b> ' + vietnamese, false);  // longtext = false
+    }, err => {
+      alert(err)
+    });
+}
+
+
 // ng-click word to speech
 $scope.Idx_n_L_WSp_ = function (event) 
 {

@@ -57,7 +57,7 @@ $scope.acc_click = function (id) {
 
 $scope.createAudioSrc = function() {
 	if (!$scope.story || !$scope.story.track) return ''
-	var mp3File = $scope.story.track + '.mp3';
+	var mp3File = 'Cam' + $scope.story.track + '.mp3';
 	var rootPath = "./ebooks/tocg/data/mp3/"
 	return rootPath + mp3File
 }

@@ -47,6 +47,7 @@ const PHRASAL_VERB_DATA = [
 	{word: 'put', prep: 'aside',  mean: 'bỏ qua'},
 	{word: 'put', prep: 'up with',  mean: 'chịu đựng'},
 	{word: 'go', prep: 'for',  mean: 'chọn'},
+	{word: 'go', prep: 'through',  mean: 'đi (trải) qua (spend)'},
 	{word: 'give', prep: 'it a go',  mean: 'thử'},
 ]
 

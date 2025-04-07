@@ -265,7 +265,7 @@ prevent (v) /prɪˈvent/ ngăn chặn [s.th/s.o from + N/V_ing]<br>\
 rock (n) /rɑːk/ đá<br>\
 save (v) lưu, tiết kiệm<br>\
 step bước<br>\
-certain (a) /ˈsɜːrtn/ chắc chắn<br>\
+certain (a) /ˈsɜːrtn/ chắc chắn, nhất định<br>\
 chance cơ hội<br>\
 effect (n) /ɪˈfekt/ hiệu ứng<br>\
 essential thiết yếu<br>\
@@ -988,23 +988,23 @@ participate tham gia<br>\
 permission quyền<br>\
 presence sự hiện diện<br>\
 satellite vệ tinh<br>\
-scale tỷ lệ<br>\
+scale (n,v) (chia) tỷ lệ, vảy (cá), đĩa cân<br>\
 skip bỏ qua<br>\
 stretch kéo dài<br>\
 apart (adv) /əˈpɑːrt/ tách<br>\
 arrest bắt giữ<br>\
 award giải thưởng<br>\
+comfort (n,v) sự yên thân, (làm) thoải mái<br>\
 bucket thùng<br>\
 contest cuộc thi<br>\
 convict tội phạm<br>\
 garage (n) /ɡəˈrɑːdʒ/ gara<br>\
 qualify (v) /ˈkwɑːlɪfaɪ/ đủ điều kiện<br>\
-repair sửa chữa<br>\
 exercise (n,v) thể dục<br>\
 resume (n,v) /rɪˈzuːm/ sơ yếu lý lịch (v) bắt đầu lại<br>\
 rob cướp<br>\
 slip trượt<br>\
-somewhat hơi<br>\
+somewhat (adv) hơi, một phần nào đó<br>\
 tissue mô<br>\
 yard sân <br>\
 majority (n) /məˈdʒɔːrəti/ phần lớn<br>\

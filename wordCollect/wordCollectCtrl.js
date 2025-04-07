@@ -1,5 +1,5 @@
 
-document.write('<script src="./wordCollect/nation.js" type="text/javascript"></script>');
+// document.write('<script src="./wordCollect/nation.js" type="text/javascript"></script>');
 document.write('<script src="./wordCollect/ielts_syn.js" type="text/javascript"></script>');
 document.write('<script src="./wordCollect/word_family.js" type="text/javascript"></script>');
 document.write('<script src="./wordCollect/voca_special.js" type="text/javascript"></script>');

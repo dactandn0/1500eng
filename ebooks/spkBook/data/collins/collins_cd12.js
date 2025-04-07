@@ -1,6 +1,6 @@
-const collins_cd12 = [
+let collins_cd12 = [
 {
-	track: "1.T01",
+	track: "1.1",
 	unit: "1",
 	title: "People & relationships",
 	en: 
@@ -16,7 +16,7 @@ self-assured,hard-working ,good fun,over-sensitive,fall out,think of,inseparable
 ,note:"be good fun"
 },
 {
-	track: "1.T02",
+	track: "1.2",
 	en:"Examiner: Tell me something about your family. <br>\
 Candidate: Although I live abroad now, my mum's family is from Paris and my dad's family is from Toulouse. So I'm from a very French family. I would say I come from quite a small family, really. For example, I just have one older sister and four cousins, but it's true that my extended family is fairly big.<br>\
 Examiner: What do you like doing most with your family? <br>\
@@ -36,7 +36,7 @@ Giám khảo: Gia đình quan trọng với bạn theo cách nào? <br>\
 	,voca:"",
 },
 {
-	track: "1.T03",
+	track: "1.3",
 	en:"Candidate: One of my best friends is a guy called Raul. I met him at uni in Barcelona where we were in the same study group. When was that? I suppose it was over 10 years ago now, so, yes, we've known each other for a good decade. We got to know each other on the tennis courts because the first few days of our course were so boring that we both decided we'd be better off outside playing tennis.<br>\
 What kind of person is he? He's very active, a sporty type, involved in hiking and mountain biking - a bit of an adrenalin junky. He's also a very determined person. When he gets into something, he gives one hundred per cent. And he changes passions often. That makes him a bit of a self-absorbed person actually, which I'd say is a drawback. And I think he comes across as full of himself sometimes; I mean a bit too sure of his own opinions! As for why I like him, well, he's actually quite different from me. At uni, he'd often suggest doing something and I'd go along with it, and because I'm laid back I never felt overwhelmed by him. We've never fallen out or anything.<br>\
 Examiner: How often do you see your friend? <br>\
@@ -48,7 +48,7 @@ Giám khảo: Bạn gặp bạn mình thường xuyên như thế nào? <br>\
 	,voca:"",
 },
 {
-	track: "1.T07",
+	track: "1.7",
 	en:"Examiner: In what ways have families changed in the last hundred years?<br>\
 Candidate: In Western countries, I would say families have become more widely dispersed and less close. People travel more, and then end up living far from their families. I think this is a shame because it means there is a breakdown of communities. I also think that because families are spread over a wider geographical area, elderly people tend to be forgotten and usually live on their own.<br>\
 Examiner: Should we rely heavily on our families or is it better to try to be independent? <br>\
@@ -76,7 +76,7 @@ Giám khảo: Bạn có nghĩ rằng tình bạn thay đổi khi chúng ta già 
 	,voca:"",
 },
 {
-	track: "1.T08",
+	track: "1.8",
 	unit: "2",
 	title: "A healthy body",
 	en:"It's by far my favourite sport to watch. I love the excitement that builds up as the match progresses, with the fans cheering and chanting. There's always an amazing atmosphere.<br>\
@@ -88,7 +88,7 @@ Các môn thể thao đồng đội là một cách tuyệt vời để những 
 	,voca:"",
 },
 {
-	track: "1.T09",
+	track: "1.9",
 	en:"Examiner: What do you do to keep fit? <br>\
 Candidate: I go to the gym twice a week. I don't really enjoy it, to be honest, but it's an easy way to keep fit. I mainly do cardiovascular exercises, rather than muscle building,<br>\
 Examiner: Are you good at sport? <br>\
@@ -108,7 +108,7 @@ Giám khảo: Môn thể thao phổ biến nhất ở quốc gia của bạn là
 	,voca:"",
 },
 {
-	track: "1.T13",
+	track: "1.13",
 	en:"Candidate: I'd like to talk about the most exciting tennis match I've ever seen. It wa s about six years ago just outside Bordeaux in France, and it was the boys' final of a junior championship. My favourite player, a rising star, had got to the final so I wanted to see him. At the time, I didn't know anyone else who was interested in tennis - all my friends preferred football - so I went on my own. I set off really early to make sure got there on time, but I ended up being too early and I had to wait for two hours for the match to start. It didn't matter, though, because this meant I got one of the best seats, right at the front in the middle of the court - I was delighted about that. <br>\
 Other people gradually started arriving, the seats filled up, and we waited expectantly for the players. When the match started, it soon became clear that I was practically the only person supporting Jean Martin. Most people were there to support the other guy who had won the previous two years and was the favourite to win this year, too. Every time Paul Fernandez won a point, the crowd erupted into applause but I sat silently, getting more and more anxious. Martin lost the first set, but then there was a dramatic turnaround. He suddenly seemed to find some self-belief and he started to win. That's what I love about tennis - it's a battle of the mind as much as the body. I find it interesting to see how some players may be highly skilled but don't have the mental strength to win. Martin obviously did have this strength, and Fernandez was slowly falling apart. The atmosphere was electric. Martin showed off his amazing skills, hitting ball after ball straight down the line. Martin served for the match - you could have heard a pin drop. When he served an ace, the crowd went wild! Although they had begun by supporting his opponent, they had grown to respect him for his cool head and control of the ball. When he was presented with the trophy, he cried with joy. <br>\
 Examiner: Do you play tennis yourself?<br>\
@@ -120,7 +120,7 @@ Giám khảo: Bản thân anh có chơi quần vợt không?<br>\
 	,voca:"",
 },
 {
-	track: "1.T14",
+	track: "1.14",
 	en:"Keeping fit <br>\
 Examiner: What are the best ways to keep fit? <br>\
 Candidate: The best way to keep fit is to do exercise that raises your heart rate. The heart is a muscle and has to be worked like any other muscle. So golf, in my opinion, is not the best form of exercise. Something like jogging or swimming or surfing is much more beneficial.<br>\
@@ -150,7 +150,7 @@ Giám khảo: Chính phủ có nên can thiệp để buộc mọi người ph�
 	,voca:"",
 },
 {
-	track: "1.T15",
+	track: "1.15",
 	unit: "3",
 	title: "Studies & work",
 	en:"My name's Mubarak and I'm from the United Arab Emirates. My favourite subject at school was Maths. I really loved it, I think primarily because I liked being able to use logic to work out answers, rather than having to speculate and theorise, as you often do in arts subjects.<br>\
@@ -164,7 +164,7 @@ Công việc mơ ước của tôi là làm kỹ sư cơ khí cho Quân đội C
 	,voca:"",
 },
 {
-	track: "1.T16",
+	track: "1.16",
 	en:"Examiner: Do you work or are you a student? <br>\
 Candidate: I've just finished secondary school. I got the best results in my year so I'm hoping to get a scholarship to study English Literature.<br>\
 Examiner: Why did you choose that course? <br>\
@@ -180,7 +180,7 @@ Giám khảo: Điều khó khăn nhất trong việc học của bạn là gì? 
 	,voca:"",
 },
 {
-	track: "1.T17",
+	track: "1.17",
 	en:"Candidate: My dream job would be to teach children to sail.\
 	 I have some qualifications, in skippering, for example, but it's very likely I would need more, such as a teaching certificate from the Yachting Association.\
 	  I have some of the right experience in that I've been sailing a long time - I'm confident in handling a yacht and I've dealt with many minor crises in my time,\
@@ -198,7 +198,7 @@ Giám khảo: Bạn học chèo thuyền khi nào?<br>\
 	,voca:"",
 },
 {
-	track: "1.T18",
+	track: "1.18",
 	en:"Education<br>\
 Examiner: Do you think science subjects are more useful than arts subjects? <br>\
 Candidate: I think they are more useful because they are primarily concerned with practical matters. If you study science, you might, for example, go on to have some kind of technical role in the production of a device, like a computer or a car. However, all great leaders have studied more arty subjects, such as philosophy, history and economics. This makes them better leaders because they have an understanding of human nature.<br>\
@@ -224,7 +224,7 @@ Giám khảo: Mọi người có động lực hơn nếu công việc của h�
 	,voca:"",
 },
 {
-	track: "1.T21",
+	track: "1.21",
 	unit: "4",
 	title: "The world around us",
 	en:"[1] Where I come from it's almost always sweltering. Ours is an arid climate, and in most parts of the country precipitation is very low. Can you believe that in the summer, the temperature can exceed 50°C?<br>\
@@ -236,7 +236,7 @@ Giám khảo: Mọi người có động lực hơn nếu công việc của h�
 	,voca:"",
 },
 {
-	track: "1.T23",
+	track: "1.23",
 	en:"Examiner: Tell me about your country's climate.<br>\
 Candidate: We have an extreme climate. Our winters are absolutely freezing, and our summers are boiling hot. That means that the people, the houses, the transport system, everything needs to be prepared to cope with every kind of weather.<br>\
 Examiner: What's your favourite kind of weather? <br>\
@@ -256,7 +256,7 @@ Giám khảo: Cảm thấy quá nóng hay quá lạnh tệ hơn? <br>\
 	,voca:"miserable,extreme,dismal,overcast,balmy,rather than,soaked to the skin",
 },
 {
-	track: "1.T24",
+	track: "1.24",
 	en:"Candidate: My favourite season is most certainly the summer, which is officially from June to September. I say 'officially' because the reality is that we generally get a very short summer, in that the weather is only really 'summery' for a few weeks a year. The rest of the season merges with the others, being rather cold and rainy. The highest the temperature gets is about 3D, and when it gets that high, people start complaining because they're not used to such heat. This irritates me, to be honest, because my view is that we so rarely have hot weather that we should just appreciate it and enjoy it when we do. In this country, and especially in my region, you can't rely on good weather in the summer. I've been to many outdoor events, like weddings, concerts, barbecues and so on, where the organisers were optimistic about the weather, but where it rained non stop. Of course, you can't blame them - if you can 't organise an outdoor event in August, when can you?<br>\
 In the summer, I typically go abroad on holiday to places where scorching sunshine is practically guaranteed. This is because I am a sun worshipper and like to get a good tan. Having sun on my skin makes me feel healthy, though I am fully aware of all the dangers associated with too much exposure to the sun. When I am at home, I like to have friends over for barbecues, and we stay out in the garden all evening until it gets too chilly or until it's time for them to go home.<br>\
 The reason summer is my favourite season is that sunshine makes me happy. It's a scientific fact that it releases endorphins. In fact, during the winter many people in my country use light boxes, which recreate the light of the sun. You have to sit and stare into the light and it is intended to lift your mood. In the summer, though, you don't need such gadgets; you can just go outside, sit in the sun and get a natural energy boost. It's wonderful. <br>\
@@ -268,23 +268,47 @@ Lý do mùa hè là mùa tôi yêu thích nhất là vì ánh nắng mặt trờ
 Giám khảo: Bạn có ghét mùa đông không?<br>\
 Ứng viên: Không, tôi không. Mọi mùa đều có điều gì đó để cống hiến. Vào mùa đông, thật tuyệt khi được cuộn tròn trong nhà, với một cốc sô cô la nóng."
 	,voca:"",
-},
+}
+
+]
+
+
+
+function makeColinIeltsData () 
 {
-	track:"",
-	en:""
-	,vi:""
-	,voca:"",
+	let rrr = []
+	for (var k = 1; k <= 1; k++) 
+	{
+		for (var i = 1; i <= 40; i++) 
+		{
+			const trackName = k + '.' + i
+
+			var json = {
+				track: trackName,
+				en: '',
+			}
+
+			let idx = collins_cd12.findIndex(ele => ele && ele.track == trackName);
+			if (idx >= 0)
+			{
+				var findObj = collins_cd12[idx]
+				json.en = findObj.en
+				json.title = findObj.title
+				json.vi = findObj.vi || ''
+				json.voca = findObj.voca || ''
+				json.note = findObj.note || ''
+			}
+
+			rrr.push(json)
+		}
+	}
+
+	collins_cd12 = rrr;
 }
 
 
+makeColinIeltsData ()
 
 
 
 
-
-
-
-
-
-
-]

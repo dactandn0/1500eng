@@ -4,6 +4,7 @@ const GRAMMER_DATA =
 	title:"Đọc -ult - au"
 	,en:"-ult đọc là ao FE: result, sultan<br>\
 	-au đọc là a FE: automatic, pause, fault<br>\
+	ci, ce, cy đọc là /s/ (special, cello), còn lại là /k/<br>\
 	"
 },
 {

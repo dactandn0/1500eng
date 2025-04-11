@@ -130,7 +130,7 @@ declare (v) /dɪˈkler/ tuyên bố, tuyên ngôn<br>\
 reply (v) /rɪˈplaɪ/ trả lời<br>\
 trick (n) /trɪk/ mẹo<br>\
 adventure (n) /ədˈventʃər/ phiêu lưu<br>\
-approach (n) /əˈprəʊtʃ/ tiếp cận<br>\
+approach (n,v) /əˈprəʊtʃ/ tiếp cận<br>\
 chemical (a) thuộc hóa học<br>\
 chemicals (n) hóa chất<br>\
 chemistry (n) ngành (môn) hóa chất (học)<br>\
@@ -269,7 +269,6 @@ certain (a) /ˈsɜːrtn/ chắc chắn, nhất định<br>\
 chance cơ hội<br>\
 effect (n) /ɪˈfekt/ hiệu ứng<br>\
 essential thiết yếu<br>\
-focus (v) /ˈfəʊkəs/ tập trung<br>\
 function (n) /ˈfʌŋkʃn/ chức năng<br>\
 sweat (n,v) /swet/ (đổ)mồ hôi, công việc vất vả<br>\
 guard (n) /ɡɑːrd/ bảo vệ<br>\
@@ -277,21 +276,20 @@ image (n) /ˈɪmɪdʒ/ hình ảnh<br>\
 imagination (n) /ɪˌmædʒɪˈneɪʃn/ trí tưởng tượng<br>\
 immediate (a) /ɪˈmiːdiət/ ngay lập tức<br>\
 primary (a) /ˈpraɪmeri/ chính<br>\
-remain vẫn<br>\
+remain (n,v) thừa lại, số dư, còn lại<br>\
 uncommon (a) /ʌnˈkɑːmən/ không phổ biến<br>\
 rare (a) /rer/ hiếm, không phổ biến<br>\
 unusual (a) /ʌnˈjuːʒəl/ hiếm có, không thông dụng<br>\
 separate (a) /ˈseprət/ tách biệt<br>\
 site trang web<br>\
-tail đuôi<br>\
+tail (v) đuôi<br>\
 trouble rắc rối<br>\
 anymore nữa<br>\
 asleep (a) /əˈsliːp/ ngủ<br>\
 berry quả mọng<br>\
 collect thu thập<br>\
-compete cạnh tranh<br>\
+compete (v) cạnh tranh<br>\
 conversation (n) /ˌkɑːnvərˈseɪʃn/ cuộc trò chuyện<br>\
-creature sinh vật<br>\
 decision (n) /dɪˈsɪʒn/ quyết định<br>\
 either hoặc<br>\
 ground mặt đất<br>\
@@ -299,7 +297,7 @@ introduce (v) giới thiệu, đưa ra<br>\
 marry (v) kết hôn<br>\
 prepare chuẩn bị<br>\
 sail (n,v) buồm, lái thuyền<br>\
-serious nghiêm túc<br>\
+serious (a) nghiêm túc<br>\
 spend chi tiêu<br>\
 strange lạ<br>\
 truth sự thật<br>\
@@ -581,16 +579,14 @@ puzzle (n) /ˈpʌzl/ câu đố<br>\
 specific cụ thể<br>\
 band dải<br>\
 barely adv /ˈberli/ vừa đủ<br>\
-cancel hủy<br>\
 driveway lối đi xe<br>\
 garbage rác<br>\
 instrument (n) /ˈɪnstrəmənt/ nhạc cụ<br>\
+congestion (n) /kənˈdʒestʃən/ sự tắc nghẽn<br>\
 list danh sách<br>\
 magic ma thuật<br>\
-message tin nhắn<br>\
-own (a,v) /əʊn/ (a) làm chủ (v) thú nhận, sở hữu<br>\
-predict dự đoán<br>\
-professor giáo sư<br>\
+predict (n) dự đoán<br>\
+professor (n) giáo sư<br>\
 chaotic (a) /keɪˈɑːtɪk/ hỗn loạn, lộn xộn<br>\
 rush vội vã<br>\
 schedule (n) /ˈskedʒuːl/ lịch trình<br>\
@@ -609,8 +605,8 @@ later (a,adv) trễ, muộn hơn (so sánh hơn của Late)<br>\
 latest (a) muộn nhất, mới nhất, gần nhất (so sánh nhất của Late)<br>\
 recently (adv) gần đây<br>\
 lately (adv) gần đây<br>\
-competition cuộc thi<br>\
-cool mát mẻ<br>\
+competition (n) cuộc thi, cạnh tranh<br>\
+cool (a) mát mẻ<br>\
 gain tăng<br>\
 importance (n) /ɪmˈpɔːrtns/ tầm quan trọng<br>\
 knowledge kiến thức<br>\
@@ -734,12 +730,10 @@ disappoint (v) /ˌdɪsəˈpɔɪnt/ thất vọng<br>\
 dive (v) /daɪv/ lặn<br>\
 exchange trao đổi<br>\
 favor (n) /ˈfeɪvər/ ủng hộ<br>\
-lovely (a) đáng yêu<br>\
 in a lovely way (adv) đáng yêu<br>\
 mood (n) /muːd/ tâm trạng<br>\
 palace cung điện<br>\
 permit giấy phép<br>\
-protest phản đối<br>\
 sculpture (n) /ˈskʌlptʃər/ tác phẩm điêu khắc<br>\
 tribe (n) /traɪb/ bộ lạc<br>\
 biology (n) /baɪˈɑːlədʒi/ sinh học<br>\
@@ -758,7 +752,6 @@ volcano (n) /vɑːlˈkeɪnəʊ/ núi lửa<br>\
 bush (n) /bʊʃ/ bụi cây, bụi rậm<br>\
 capable (a) có khả năng<br>\
 cheat (n,v) gian lận<br>\
-concentrate (v) /ˈkɑːnsntreɪt/ tập trung (+on)<br>\
 conclude kết luận<br>\
 considerable đáng kể<br>\
 definite (a) /ˈdefɪnət/ xác định<br>\
@@ -1271,6 +1264,13 @@ heartbroken (a) /ˈhɑːrtbrəʊkən/ kiệt sức (very sad)<br>\
 misty (a) /ˈmɪsti/ mù sương (very foggy)<br>\
 phenomenon (n) /fəˈnɑːmɪnən/ hiện tượng<br>\
 starve (v) /stɑːrv/ đói khát<br>\
+nuclear family	(n)	gia đình hạt nhân (bố, mẹ, con)<br>\
+extended family	(n)	đại gia đình (bao gồm ông bà, cô dì chú bác)<br>\
+breadwinner	(n)	trụ cột gia đình<br>\
+close-knit	(a)	gắn bó khăng khít<br>\
+sibling rivalry	(n)	sự ganh đua giữa anh chị em	<br>\
+upbringing	(n)	sự nuôi dưỡng, giáo dục<br>\
+authoritarian	(a)	độc đoán<br>\
 "
 
 }

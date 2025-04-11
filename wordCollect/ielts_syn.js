@@ -1,6 +1,14 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
+words: "convenient | comfortable | advantageous | available | comfy | practical "
+, type:"a"
+, mean: "tiện lợi" 
+}, {
+words: "focus | concentrate /ˈkɑːnsntreɪt/"
+, type:"v"
+, mean: "tập trung" 
+},{
 words: "supply | offer | provide"
 , type:"v"
 , mean: "cung cấp" 

@@ -817,10 +817,38 @@ I don't remember, though. I sometimes come across some posts about history when 
 	,voca:"historical,big fan of,voluntarily,field trip,Romance of the Three kingdoms,textbooks"
 	,note:"To lose interest in something|To find something + adj|Let alone: huống chi là"
 }
-, {track:"1.47",title:"Park",en:""}
-, {track:"1.48",title:"Makeup",en:""}
-, {track:"1.49",title:"Concentration",en:""}
-, {track:"1.50",title:"The countryside",en:""}
+, {track:"1.47",title:"Park",en:"1. Do you like going to parks?<br>\
+Of course! I love doing so. Parks are a great place for us to do physical activities while escaping from the hustle and bustle of cities and enjoying some fresh air. Personally, I prefer visiting parks to going to shopping malls.<br>\
+2. What can you do if you go to a park?<br>\
+When I go to a park, I usually do a short run. If I do not feel well that day, I may just enjoy a walk along some pathways lined with trees and flowers. Besides, I sometimes go to a park to participate in social events such as a concert or a sporting event.<br>\
+3. Do you think people in Vietnam like going to parks?<br>\
+I guess so. A lot of Vietnamese people go to parks to do physical activities and just simply enjoy some fresh air and the scenery. Besides, some large parks can act as public gathering areas where people hold social events.<br>\
+4. Do you prefer natural parks or amusement parks?<br>\
+While I love natural parks, I dislike amusement parks. Being a nature lover, I find it really comfortable and relaxing when visiting a natural park. On the other hand, amusement parks are often too noisy and crowded for my liking."}
+, {track:"1.48",title:"Makeup",en:"1. Do you often wear makeup?<br>\
+Not really, but every day when I go to work or school, I just put on some lipstick to make me look fresh because, to be honest, my natural lip color is just so dark. Apart from that, I hardly use any other kinds of beauty products.<br>\
+2. What does wearing makeup mean to you?<br>\
+I think it’s all about self-confidence. Putting on makeup can really boost my confidence and make me feel more in control. I only wear lipstick, as I said, but even the slightest bit of makeup can help create a more 'perfect' version of myself.<br>\
+3. Do you give makeup as gifts?<br>\
+Not at all. You know, as cosmetics are normally very expensive, I don’t think it’s suitable to give as gifts, especially for a student living on a shoestring like me. That’s not to mention that everyone has different tastes in makeup, so it’s hard to decide what to give.<br>\
+4. What do you think when you see a man wearing makeup?<br>\
+I think there’s nothing wrong with that. Everyone has the right to make themselves look good. That’s why if men want to wear makeup, they should do so."}
+, {track:"1.49",title:"Concentration",en:"1. When do you need to be focused?<br>\
+→ At all times, I guess. I find it necessary to stay focused while driving, doing assignments and so on, but I consider myself as an easily distracted individual. I mean, my mind often wanders while I am driving or doing homework.<br>\
+2. What may distract you when you're trying to stay focused?<br>\
+There are many distractions around me, like the ringing sound of Facebook notifications. Yeah, it's embarrassing to say that I am a Facebook addict, so I can hardly concentrate while using it. Besides, I can also lose my concentration when other people gossip near my desk at work.<br>\
+3. What do you do to help you concentrate?<br>\
+The best way to improve my concentration is by doing yoga. I've just participated in this activity for a few weeks, and I can feel that I have a healthier mind day by day. One of my friends advised me to take up mediation next summer as this also helps me focus better on my work, so I think I will give it a shot.<br>\
+4. Do you think concentration is important?<br>\
+I think concentration plays an important role in our work and study. When we concentrate, we focus our energy on the tasks at hand, which improves our productivity and creativity. Therefore, we can finish our tasks much faster and more efficiently."}
+, {track:"1.50",title:"The countryside",en:"1. What do people living in the countryside like to do?<br>\
+Actually, there are not many entertainment facilities in rural areas, so I think they often enjoy doing physical exercise or watching television with their family after dinners.<br>\
+2. What are the benefits of living in rural areas? <br>\
+I believe the most important thing is air quality. There are not many factories or vehicles in the countryside so the environment is likely to be fresher and cleaner. Besides, the living cost is low so people don't have much financial pressure when staying in small towns.<br>\
+3. Do you spend much time in the countryside?<br>\
+Yes, I do. Actually I was born and brought up in a small village so I spent my childhood in a rural area. Even though I am living in Ho Chi Minh City now, I come back home twice or three times a year for family reunions.<br>\
+4. Do you consider living in the countryside in the future?<br>\
+Well, that's an interesting question. I think I will live there when I retire because the clean air and low pace of life might be good for old people. But now I will just stay in the city because there are more opportunities to earn money here."}
 , {track:"1.51",title:"Street market",en:""}
 , {track:"1.52",title:"Plants",en:""}
 , {track:"1.53",title:"Sky",en:""}

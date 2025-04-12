@@ -833,7 +833,7 @@ note:'southwestern (adj)'
 - Du khách ba lô đi xe buýt hoặc tàu hỏa để tiết kiệm tiền. Họ cắm trại ngoài trời để ngủ. Nếu họ ở trong thành phố, họ có thể đến nhà trọ. Nhà trọ giống như khách sạn. Khách sạn không rẻ. Nhà trọ rất rẻ. Du khách thường chia sẻ phòng tại nhà trọ. Chỉ có một vài nhà vệ sinh và phòng tắm. Mọi người cũng chia sẻ chúng.<br>\
 - Nhà trọ là nơi tốt để gặp gỡ những du khách khác. Bạn có thể kết bạn. Họ có thể kể cho bạn nghe về những điều thú vị để làm trong khu vực. Nhiều nhà trọ có bếp. Những nhà bếp này có bếp lò. Một số có máy nướng bánh mì. Bạn có thể mua đồ ăn từ cửa hàng. Sau đó, bạn có thể nấu ăn tại nhà trọ. Điều này rẻ hơn so với việc ăn ngoài. Chỉ cần nhớ dọn dẹp sạch sẽ khi bạn làm xong nhé!",
 	voca:"backpack,traveler,toilet,belongings,hostel,kitchen,prepare,aisle,stove,toaster"
-},{unit:40,title:"A Train Announcement"
+},{unit:40,title:"A Train Announcement",end:true
 	,en:"W: Welcome on board the TGV 740. We are now leaving Paris. We will arrive in Marseilles at 3:00 pm.<br>\
 We offer free beverages in each car. Please have as much coffee, tea, or soft drinks as you wish. There is a restaurant on the train. You may purchase a meal there during the trip. The restaurant is in car 11.<br>\
 We will make two stops on this trip. We will pick up passengers in Provence and Dijon. Passengers changing trains can ask the attendant for a free timetable. This will help you with your onward trip.<br>\

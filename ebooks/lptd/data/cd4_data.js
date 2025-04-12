@@ -687,7 +687,7 @@ Hạng phổ thông là lựa chọn tốt cho các chuyến bay ngắn trong c�
 },
 {
 	unit:40,
-	title:"A Family Cruise",
+	title:"A Family Cruise",end:true,
 	en:"Family Cruise Line is offering a new, exciting cruise that the whole family can enjoy! We have a special deal for families all year round on our Family Caribbean Cruise. This special one-week cruise leaves from Miami, Florida and stops at six fantastic Caribbean islands. There is so much for the entire family to see and do! <br>\
 On board, we have a variety of great food for breakfast, lunch, and dinner. We also have lots of interesting and fun activities. There are music and dance shows every evening. We have a movie theater and a KTV bar. For kids, we have shows each day with their favorite TV friends like Mickey Mouse, Goofy, and Elmo. Playing with television characters isn't the only activity children will enjoy. They can play volleyball, swim in one of our three huge pools, or take dancing and art classes. There's so much variety, the kids can try a new activity each day. Mom and Dad can join them, or rest in lounge chairs on our wide ship deck.<br>\
 On shore, you can shop, swim, and enjoy fresh food while you learn all about island life. With four to seven hours on shore each day, you'll have plenty of time to explore each island. Does this sound exciting? It is! So, when it's time to plan your next vacation, remember Family Cruise Line. It will be a trip your family will never forget!"

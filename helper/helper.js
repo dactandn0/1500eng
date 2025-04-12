@@ -185,6 +185,7 @@ function getFullTile(obj) {
 	if (hasNote) ngStyle.color = 'red'
 	if (isBlankEn) ngStyle['color'] = 'gray'
 	if (obj.isTest) ngStyle['animation'] = 'color-change 1s infinite'
+	if (obj.end) ngStyle['text-decoration'] = 'underline'
 		
 	return {
 		unit : unit,

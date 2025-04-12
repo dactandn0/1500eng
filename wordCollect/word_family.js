@@ -4,6 +4,7 @@ let WORD_FAMILY_DATA = [
 	"investigation (n)| investigate (v) | investigative (a) | investigatory (a)",
 	"approach (n,v)| approachable (a)",
 	"define (v)| redefine (v)",
+	"motivational (a)| motivation (n) | motivate (v)",
 	"construction (n)| reconstruction (n)",
 	"secure (a)| security (n)",
 	"competition (n)| compete (v) | competitor (n)",
@@ -80,10 +81,6 @@ let WORD_FAMILY_DATA = [
 
 
 
-
-
-
-
 function getWordFamily(word)
 {
 	word = word.toLowerCase()
@@ -99,9 +96,10 @@ function getWordFamily(word)
 			break
 		}
 	}
-	var r = arr.join()
-	// console.log(r)
-	return r
+	var rr = arr.join()
+	// console.log(rr)
+	if (rr.length > 0) rr = ' [f. ' + rr + ']'
+	return rr
 }
 
- getWordFamily('rate')
+// getWordFamily('rate')

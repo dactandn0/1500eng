@@ -300,7 +300,7 @@ B: Đó là The Sound of Music.<br>\
 G: Thật sao? Tôi đã xem The Sound of Music trên TV vào tháng trước! Nó rất hay! Bạn có chắc không?<br>\
 B: Tất nhiên là tôi chắc rồi, đó là những gì cô Martin nói. Bạn muốn xem vở kịch với tôi vào tối thứ bảy không?<br>\
 G: Tuyệt! Chúng ta đi sớm để có chỗ ngồi tốt nhé!",
-voca:"play,guess,early,hope"
+voca:""
 },
 {
 	unit:14,
@@ -889,6 +889,7 @@ voca:"destination,suggest,question,fare,matter,depend,travel agent"
 {
 	unit:40,
 title:"Go on a Cruise!",
+end:true,
 en:"M: Are you sick of long road trips in a car? Do you find long trips in an airplane boring? Do you want to travel in a special way? You should take a cruise to all the places you would like to see!<br>\
 Go by cruise ship to the northeast part of the US! Go late in the year. Then, you can enjoy the colors of the autumn leaves on the trees. It is a beautiful sight.<br>\
 Do you like to look at man-made wonders?<br>\

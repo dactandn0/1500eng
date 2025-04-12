@@ -4,6 +4,11 @@ title:"4k Book1",
 en:"afraid (a) /əˈfreɪd/ sợ<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
+focus (v) /ˈfəʊkəs/ tập trung<br>\
+concentrate (v) /ˈkɑːnsntreɪt/ tập trung<br>\
+health (n) sức khỏe<br>\
+fitness (n) sự thích hợp, tài năng, tư cách, sức khỏe tốt<br>\
+comfortable (a) tiện lợi<br>\
 globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
 conducive (a) /kənˈduːsɪv/ có lợi<br>\
 globalised (a) /ˈɡləʊbəlaɪz/ toàn cầu hóa<br>\

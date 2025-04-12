@@ -10,7 +10,7 @@ var VocaToUI = WORDS_3K_DATA
 var VocaForSearch = VocaToUI
     .concat(PHRASAL_VERB)
     .concat(BAT_QUI_TAC)
-    .concat(IELTS_SYN)
+    // .concat(IELTS_SYN)
     // .concat(GRAMMER_DATA)
     // .concat(NATIONS)
 
@@ -226,8 +226,8 @@ $scope.searchGG = function ()
 {
   const input =  $scope.search
   Helper_GG_API($http, input).then (res => {
-      const vietnamese = res.data[0][0][0];
-      doShowToast(input + ' <b style="color:orange">/(gg)/</b> ' + vietnamese, false);  // longtext = false
+      const VN = res.data[0][0][0];
+      doShowToast(input + ' <b style="color:orange">/(gg)/</b> ' + VN, false);  // longtext = false
     }, err => {
       alert(err)
     });
@@ -265,11 +265,13 @@ getVocaFromDB = function(touchedWord)
   {
       var wordFull = searchData[i]
       var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
+
       var wordFamily = getWordFamily(word)
-      if (wordFamily.length > 0) wordFamily = ' -- ' + wordFamily
+      var wordSynonyms = getWordSynonym(word)
+
       if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) 
       {
-          json_full = wordFull +  wordFamily
+          json_full = wordFull +  wordFamily + wordSynonyms
           found = true
           break
       }
@@ -277,8 +279,8 @@ getVocaFromDB = function(touchedWord)
   if (!found)
   {
     var wordFamily = getWordFamily(touchedWord)
-    if (wordFamily.length > 0) wordFamily = ' -- ' + wordFamily
-    json_full =  wordFamily
+    var wordSynonyms = getWordSynonym(touchedWord)
+    json_full =  wordFamily + wordSynonyms
   }
  
   return {

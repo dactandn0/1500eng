@@ -1893,7 +1893,7 @@ semi-detached house (n) bán biệt lập<br>\
 villa (n) /ˈvɪlə/<br>\
 apartment (n) /əˈpɑːrtmənt/ căn hộ<br>\
 flat (a) phẳng, n. căn hộ, lốp xe xẹp<br>\
-convenient (a) /kənˈviːniənt/ thuận tiện,<br>\
+convenient (a) /kənˈviːniənt/ thuận tiện<br>\
 natural light (n) ánh sáng tự nhiên"
 }
 

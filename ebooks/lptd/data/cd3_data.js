@@ -794,7 +794,7 @@ M: Rất vui được giúp bạn. Tôi hy vọng bạn thích Venezuela."
 	,voca:"",
 },
 {unit:40,
-	title:"The First Nations",
+	title:"The First Nations",end:true,
 	en:"The First Nations are the people who lived in North America before Europeans migrated there.<br>\
 There is a place in Canada where you can learn about the culture of the First Nations. It is where the First Nations people used to live. Now, a Visitors' Center is there. There is also an archeology lab and walking trails. You can learn about the culture through the displays in the Center. The displays show everyday activities. They show how the people lived.<br>\
 The gift shop in the Visitors' Center sells crafts made by the First Nations people. There are jewelry, paintings, and pottery. You can also eat at the restaurant. Bison meat is in many dishes.<br>\

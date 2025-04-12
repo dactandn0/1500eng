@@ -1,11 +1,15 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
-words: "convenient | comfortable | advantageous | available | comfy | practical "
+words: "good health | fitness"
+, type:"n"
+, mean: "sức khỏe tốt" 
+},{
+words: "convenient | comfortable | advantageous | available | comfy | practical"
 , type:"a"
 , mean: "tiện lợi" 
 }, {
-words: "focus | concentrate /ˈkɑːnsntreɪt/"
+words: "focus | concentrate"
 , type:"v"
 , mean: "tập trung" 
 },{
@@ -351,13 +355,32 @@ const SPECIAL_ADD_ING_DATA = [
 ]
 
 
+function getWordSynonym(word)
+{
+	word = word.toLowerCase()
+	var regex = new RegExp(`\\b(${word})` , 'gi')
+	var arr = []
+	for (var i = 0; i < SynonymData.length; i++) 
+	{
+		var group = SynonymData[i].words
+		if (group.match(regex))
+		{
+			arr = group.split('|')
+			arr = arr.filter(e => e.indexOf(word) == -1)
+			break
+		}
+	}
+	var rr = arr.join()
+	// console.log(rr)
+	if (rr.length > 0) rr = ' [s. ' + rr + ']'
+	return rr
+}
+
+// getWordSynonym('convenient')
 
 
-
-
-
-
-
+/*
+// into search DB array
 function progress() 
 {
 	SynonymData = SynonymData.concat(SPECIAL_ADD_ING_DATA)
@@ -416,4 +439,5 @@ function keepWord(w)
 	return w.replace(/\/.*\//gi, '').replace(/\(.*\)/gi, '')
 }
 
-progress();
+ progress();
+*/

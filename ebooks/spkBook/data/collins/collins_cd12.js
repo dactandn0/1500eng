@@ -268,7 +268,53 @@ Lý do mùa hè là mùa tôi yêu thích nhất là vì ánh nắng mặt trờ
 Giám khảo: Bạn có ghét mùa đông không?<br>\
 Ứng viên: Không, tôi không. Mọi mùa đều có điều gì đó để cống hiến. Vào mùa đông, thật tuyệt khi được cuộn tròn trong nhà, với một cốc sô cô la nóng."
 	,voca:"",
+},{
+	track:"1.29"
+	,en:"The environment <br>\
+Examiner: Are people in your country concerned about protecting the environment? <br>\
+To be honest, no. I think the middle and upper classes are more interested in earning as much money as they can in order to buy as much stuff as they can. And there are many people in my country who live below the poverty line and they quite literally can't afford to worry about the environment when they're struggling to put food on the table and just survive.<br>\
+Examiner: Does the responsibility for protecting the environment lie with governments or with individuals?<br>\
+In my view, the responsibility lies with all of us. However, individuals, at least in my country, aren't taking action of their own accord, and nor are businesses; they're just out to make a profit. Therefore, it falls to governments to force people to be more green, for example by fining companies that release toxic waste into our rivers, or incentivising us to recycle.<br>\
+Examiner: Does it help to educate young people on being green? <br>\
+Almost certainly it does, because it is the next generation wllo will have to take on the huge burden of saving the planet. This generation isn't doing enough and is too worried about money, so I pray that the next one will see the urgency of the situation, and the way to get them to see is to teach them about the repercussions of a polluting lifestyle such as ours.<br>\
+Pollution<br>\
+Examiner: What effects does pollution have on the environment? <br>\
+Oh, I hardly know where to start! Pollution in the oceans kills fish and so unbalances the ecosystem, Pollution on land means that whole areas become unfit to live on or to farm. Habitats are destroyed, which leads to the extinction of hundreds of animal and plant species.<br>\
+Examiner: Do you think we pollute more now than we did fifty years ago? <br>\
+Well, yes, overall. I'd say, though, that richer countries pollute less themselves but export their pollution elsewhere, by which I mean that they consume foreign products that have a large carbon footprint. It has become fashionable to be green in wealthier nations, especially Western ones, so people make an effort to cycle to work and recycle their waste. However, it's quite a shallow attempt at being green, in my opinion, because they still live in big houses using lots of energy and go on holidays abroad, leaving a trail of pollution in their wake.<br>\
+Examiner: What do you think will happen if we don't reduce current levels of pollution? <br>\
+I read an article recently that claimed if we don't change our ways, we will need a second planet to meet our needs as early as 2030. It's frightening to think that we're that greedy, and I'm sure I'm just as guilty as the next person. I do hold out some hope that things will get so bad that we will realise we really must act, and we will completely change our destructive habits just in the nick of time. If not, the planet will surely become uninhabitable."
+},{
+	track:"1.30"
+	,en:"My mother tongue is Hungarian. It is spoken in Hungary and it is a minority language in the surrounding countries, especially Romania. It is not part of the same language family as European languages like English, French, German or Russian. It is a Uralic language, distantly related to Finnish and Estonian. Because Hungarian is not a widely spoken language, if you want to get on, you have to speak a foreign language. Unsurprisingly, the most popular second language among Hungarians is English, the global language. Like most of my friends, I am multilingual - as well as Hungarian, I am fluent in English and German. I can also get by in Italian and I did an evening course in Spanish a few years back, but I'm a bit rusty now. I seem to pick up languages quite easily, helped, I'm sure, by the fact that language teaching in Hungary is so good - it has to be, given that no-one speaks our language but us!"
+},{
+	track:"1.31"
+	,en:"Examiner: What's your mother tongue? <br>\
+My mother tongue is Portuguese. Irs predominantly spoken in Brazil but also in other parts of the world, such as Portugal and Africa. Examiner: What other languages do you speak?<br>\
+Although I grew up in Brazil, I can also speak Italian because my mother and one set of grandparents are Italian and I grew up hearing the language all around me. I'm really proud to be bilingual and I'd like my children to be bilingual too.<br>\
+Examiner: What do you think is the best way to keep in touch with friends? <br>\
+It depends how far you are from your friends. If you are geographically close, you should meet up face-to-face. Long-distance communication can cause misunderstandings and resentments to build up - when you write, you only have the words on the page, not body language or tone of voice.<br>\
+Examiner: Do people keep in touch differently now compared to fifty years ago? <br>\
+Well, of course, people use the Internet now and mobile phones. I'm quite young but even when I was a teenager nobody in my friendship circle had a mobile. Now it's seen as indispensible and you would feel left out if you didn't have one. But as I said before, I think it's better to meet up with friends than to communicate using technology. There's much to be said for communicating in so-called old-fashioned ways."
+},{
+	track:"1.32"
+	,en:"Candidate: A language I would like to learn is Spanish. It's used not only in Spain but also in many other countries, and I believe it's one of the most widely-spoken languages in the world. So it's a language that is definitely worth knowing. It would be useful to me for business purposes. Also, Spanish culture is becoming more and more influential internationally. It is, for example, overtaking English as the most widely-spoken language in certain parts of the USA. It is influencing music and art. So, all in all, I think it's a handy language to know. I doubt it would be too challenging for me to learn Spanish because it is a Latin language, just like my mother tongue, French. I think Spanish vocabulary would be easier for me to acquire than Spanish grammar. I understand the grammar is one of the most difficult things about the Spanish language.<br>\
+I would use Spanish primarily when going on holiday. I've been to Spain many times, and I always find that if you go off the beaten track irs difficult to find people who speak English. You get very good at speaking with your hands! And irs difficult to really engage with people and understand the culture if you don't speak the language. Speaking Spanish would. undoubtedly make my holidays a lot easier and more enjoyable. On top of that, the company I work for has an office in Madrid and it would also be very interesting to be able to work there. I would enjoy the challenge and the exposure to a new culture. It would be such an exciting opportunity. To make the move, though, I'd obviously need to be able to speak Spanish. Luckily, my company would most likely sponsor me to have Spanish lessons.<br>\
+Examiner: Where have you been in Spain? <br>\
+Candidate: I've been to Spain many times and each time I did a road trip. One trip was in the north of Spain, travelling from France across the Pyrenees, through the Basque country and all the way down to Madrid."
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 ]
 
@@ -279,7 +325,7 @@ function makeColinIeltsData ()
 	let rrr = []
 	for (var k = 1; k <= 1; k++) 
 	{
-		for (var i = 1; i <= 40; i++) 
+		for (var i = 1; i <= 52; i++) 
 		{
 			const trackName = k + '.' + i
 

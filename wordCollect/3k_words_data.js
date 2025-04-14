@@ -1672,7 +1672,7 @@ jellyfish (n) /ˈdʒɛlifɪʃ/ sứa",
 	en:"charcoal (n) /ˈtʃɑːrkoʊl/ than củi<br>\
 gasoline (n) /ˈɡæsəliːn/ xăng<br>\
 turbine (n) /ˈtɜr.baɪn/ tua-bin<br>\
-sun (n) /sʌn/ mặt trời<br>\
+sun (n) /sʌn/ mặt trời, ánh sáng MT<br>\
 refinery (n) /rɪˈfaɪnəri/ nhà máy lọc<br>\
 nuclear reactor (n) /ˈnjuː.kliər riˈæktər/ lò phản ứng hạt nhân<br>\
 dam (n) /dæm/ đập (thủy điện)<br>\

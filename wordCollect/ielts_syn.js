@@ -364,7 +364,7 @@ function getWordSynonym(word)
 	for (var i = 0; i < SynonymData.length; i++) 
 	{
 		let words = SynonymData[i].words;
-		if (IsExisted(words, word) != -1)
+		if (IsExisted(words, word))
 		{
 			arr = words.split('|')
 			arr = arr.filter(e => e.indexOf(word) == -1)
@@ -379,9 +379,9 @@ function getWordSynonym(word)
 
 function IsExisted(seq, word)
 {
-	var seq = seq.replace(/\(.*\)/,'').replace(/\/.*\//, '').trim()
 	let seqs = seq.split('|')
-	return seqs.findIndex(ele => ele.trim() == word)
+	const idx = seqs.findIndex(ele => ele.replace(/\(.*\)/,'').replace(/\/.*\//, '').trim() == word)
+	return idx >= 0
 }
 
  getWordSynonym('convenient')

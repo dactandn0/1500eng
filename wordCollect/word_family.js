@@ -1,8 +1,9 @@
 let WORD_FAMILY_DATA = [
+	"archaeological (a) | archaeology (n) | archaeologist (n)",
+	"approach (n,v) | approachable (a)",
 	"itching (n)| itchy (a)",
 	"invent (v)| inventor (n) | invention (n)",
 	"investigation (n)| investigate (v) | investigative (a) | investigatory (a)",
-	"approach (n,v)| approachable (a)",
 	"define (v)| redefine (v)",
 	"motivational (a)| motivation (n) | motivate (v)",
 	"construction (n)| reconstruction (n)",
@@ -39,7 +40,7 @@ let WORD_FAMILY_DATA = [
 	"entertainment (n)| entertainer (n)| entertain (v)| entertaining (a)",
 	"permanence (n)| permanent (a)| permanently (adv)",
 	"popularity (n)| popularize (v)| popular (a) | popularly (adv)",
-	"survival (n)| survivor (n)| popular (a)",
+	"survival (n)| survivor (n)",
 	"trainer (n)| train (v)| trained (a)",
 	"authority (n)| authorize (v)| authoritative (a)| authoritatively (adv)",
 	"deliberation (n)| deliberate (v)| deliberate (a)| deliberately (adv)",
@@ -88,7 +89,7 @@ function getWordFamily(word)
 	for (var i = 0; i < WORD_FAMILY_DATA.length; i++) 
 	{
 		let words = WORD_FAMILY_DATA[i];
-		if (IsExisted(words, word) != -1)
+		if (IsExisted(words, word))
 		{
 			arr = words.split('|')
 			arr = arr.filter(e => e.indexOf(word) == -1)
@@ -101,12 +102,5 @@ function getWordFamily(word)
 	return rr
 }
 
-// ielts_syn
-function IsExisted(seq, word)
-{
-	var seq = seq.replace(/\(.*\)/,'').replace(/\/.*\//, '').trim()
-	let seqs = seq.split('|')
-	return seqs.findIndex(ele => ele.trim() == word)
-}
 
 // getWordFamily('rate')

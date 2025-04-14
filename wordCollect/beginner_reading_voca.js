@@ -2,6 +2,7 @@ const BEGINNER_READING_VOCA = [
 {
 title: "Beginner_reading_voca",
 en: "always (adv) luôn luôn<br>\
+consistent (a) nhất quán, đều đặn (with sth, in doing sth)<br>\
 absolutely (adv) hoàn toàn<br>\
 extinguish (v) /ɪkˈstɪŋɡwɪʃ/ dập tắt<br>\
 operator (n) toán tử (IT), người điều hành, thợ, tổng đài viên<br>\

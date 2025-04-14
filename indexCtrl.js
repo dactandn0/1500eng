@@ -261,6 +261,7 @@ $scope.Idx_n_L_WSp_ = function (event)
   getVocaFromDB = function(touchedWord)
   {
     var wordSynonyms = getWordSynonym(touchedWord)
+    var wordFamily = getWordFamily(touchedWord)
 
     var json_full = ''
     var found = false
@@ -268,8 +269,6 @@ $scope.Idx_n_L_WSp_ = function (event)
     {
       var wordFull = searchData[i]
       var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
-
-      var wordFamily = getWordFamily(word)
 
       if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) 
       {
@@ -280,7 +279,6 @@ $scope.Idx_n_L_WSp_ = function (event)
     }
     if (!found)
     {
-      var wordFamily = getWordFamily(touchedWord)
       json_full =  wordFamily + wordSynonyms
     }
     

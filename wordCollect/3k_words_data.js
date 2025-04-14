@@ -149,7 +149,6 @@ attendant (n) /əˈten.dənt/ người phục vụ<br>\
 manager (n) /ˈmæn.ɪ.dʒər/ giám đốc, quản lý<br>\
 wallet (n) /ˈwɒl.ɪt/ ví tiền<br>\
 purse (n) /pɜːs/ ví tiền (nữ)<br>\
-scale (n) /skeɪl/ cái cân<br>\
 counter (n) /ˈkaʊn.tər/ quầy hàng<br>\
 barcode reader (n) /ˈbɑːkəʊdˈriː.dər/ máy đọc mã vạch<br>\
 receipt (n) /rɪˈsiːt/ biên lai<br>\
@@ -610,7 +609,7 @@ cottage (n) /ˈkɒt.ɪdʒ/ nhà tranh<br>\
 winding (a) /ˈwaɪn.dɪŋ/ quanh co, uốn khúc<br>\
 well (n) /wel/ giếng<br>\
 buffalo (n) /ˈbʌf.ə.ləʊ/ con trâu<br>\
-field (n) /fiːld/ cánh đồng<br>\
+field (n) /fiːld/ cánh đồng, lĩnh vực<br>\
 canal (n) /kəˈnæl/ kênh<br>\
 river (n) /ˈrɪv.ər/ sông<br>\
 pond (n) /pɒnd/ ao<br>\
@@ -695,7 +694,6 @@ tip (n) /tɪp/ tiền boa, mẹo",
 	title:"heath",
 	en:"fever (n) /ˈfiːvɚ/ sốt<br>\
 cough (n) /kɔf/ ho<br>\
-hurt (v) /hɜːt/ đau<br>\
 swollen (a) /ˈswoʊlən/ bị sưng<br>\
 pus (n) /pʌs/ mủ<br>\
 myopia  (n) /maɪˈəʊpiə/ cận thị<br>\
@@ -730,7 +728,6 @@ high blood pressure (n) // cao huyết áp<br>\
 low blood pressure (n) // huyết áp thấp<br>\
 sore throat (n) /sɔːr ˈθrəʊt/ viêm họng<br>\
 sprain (n) /spreɪn/ bong gân<br>\
-burn (n) /bɜːn/ bỏng<br>\
 malaria (n) /məˈleriə/ sốt rét<br>\
 scabies (n) /ˈskeɪbiːz/ bệnh ghẻ<br>\
 scab (n) /ˈskeɪb/ bệnh ghẻ<br>\
@@ -790,6 +787,7 @@ morning (n) /ˈmɔːnɪŋ/ buổi sáng<br>\
 afternoon (n) /æf.tɚˈnuːn/ buổi chiều<br>\
 evening (n) /ˈiːnɪŋ/ buổi tối<br>\
 midnight (n) /ˈmɪd.naɪt/ nửa đêm<br>\
+aestivation (n) sự ngủ hè<br>\
 dusk (n) /dʌsk/ hoàng hôn<br>\
 dawn (n) /dɑːn/ bình minh",
 },
@@ -807,8 +805,8 @@ caravan (n) /ˈkærəvæn/ xe nhà di động<br>\
 moped (n) /ˈməʊped/ xe máy có bàn đạp<br>\
 bus (n) xe buýt<br>\
 taxi (n) /ˈtæksi/ xe taxi<br>\
-tube (n) /tuːb/ tàu điện ngầm ở london<br>\
-underground (n) /ʌndərˈɡraʊnd/ tàu điện ngầm, dưới lòng đất<br>\
+tube (n) /tuːb/ ống, tàu điện ngầm ở london<br>\
+underground (a,adv,n) /ʌndərˈɡraʊnd/ tàu điện ngầm, dưới lòng đất<br>\
 subway (n) /ˈsʌbweɪ/ tàu điện ngầm<br>\
 high-speed train (n) tàu cao tốc<br>\
 railway train (n) /ˈreɪlweɪ/ tàu hỏa<br>\
@@ -907,7 +905,6 @@ blizzard (n) /ˈblɪzərd/ bão tuyết<br>\
 tornado (n) /tɔrˈneɪdoʊ/ lốc xoáy<br>\
 forest fire (n) /ˈfɔːrɪst faɪər/ cháy rừng<br>\
 hurricane (n) /ˈhɜːrɪkeɪn/ bão<br>\
-storm (n) /stɔːrm/ bão<br>\
 evacuate (v) /ɪˈvækjueɪt/ sơ tán<br>\
 catastrophic (a) /kætəˈstrɒfɪk/ thảm khốc<br>\
 nationwide (a) /neɪʃənˈwaɪd/ toàn quốc<br>\
@@ -984,7 +981,6 @@ imperative (a) /ɪmˈperətɪv/ bắt buộc<br>\
 endure (v) /ɪnˈdʊr/ việc làm, hành vi (a)<br>\
 feat (n,a) /fiːt/ một thành tựu kỳ tích<br>\
 modest /'mpdist/ khiêm tốn<br>\
-confident /'konfidǝnt/ tự tin<br>\
 unmerciful /ʌn'mз:siful/ nhẫn tâm<br>\
 attentive /ǝ'tεntiv/ ân cần <br>\
 imaginative /'mædginativ/ giàu trí tưởng tượng<br>\
@@ -1030,7 +1026,6 @@ full (a) /fʊl/ no<br>\
 jealous (a) /ˈdʒeləs/ ghen, ghen tuông<br>\
 nervous (a) /ˈnɜːvəs/ bồn chồn, lo lắng<br>\
 thirsty (a) /ˈθɜːrsti/ khát nước<br>\
-comfortable (a) /ˈkʌmftəbl/ thoải mái<br>\
 tense (a) /tens/ căng thẳng<br>\
 tired (a) /ˈtaɪəd/ - /ˈtaɪərd/ mệt mỏi<br>\
 bored (v) /bɔːd/ chán nản<br>\
@@ -1115,11 +1110,9 @@ indirect free kick (n) /ɪn.daɪˈrɛkt friː ˈkɪk/ đá phạt gián tiế
 kick off (v) /ˈkɪk .ɔːf/ bắt đầu, lăn bóng<br>\
 offside (n) /ɒfˈsaɪd/ việt vị<br>\
 corner flag (n) /ˈkɔːr.nər flæɡ/ cờ cắm tại góc sân bóng đá<br>\
-bet (v) /bɛt/ cá độ<br>\
 the bench (n) /ðə bɛnʧ/ băng ghế dự bị<br>\
 foul (n) /faʊl/ lỗi, pha phạm lỗi<br>\
 goal line (n) /ˈɡoʊl laɪn/ vạch kẻ (khung thành)<br>\
-shoot (v) /ʃuːt/ ném, sút<br>\
 goalkeeper (n) /ˈɡoʊlkiː.pər/ thủ môn<br>\
 defender (n) /dɪˈfɛn.dər/ hậu vệ<br>\
 centre back (n) /ˈsɛn.tər bæk/ trung vệ<br>\
@@ -1143,7 +1136,6 @@ striker (n) /ˈstraɪ.kər/ tiền đạo",
 {
 	title:"christmas",
 	en:"winter (n) /ˈwɪn.tər/ mùa đông<br>\
-candle (n) /ˈkæn.dəl/ nến<br>\
 sack (n) /sæk/ bao, túi<br>\
 card (n) /kɑːrd/ tấm thiệp<br>\
 fireplace (n) /ˈfaɪərpleɪs/ lò sưởi<br>\
@@ -1308,7 +1300,6 @@ college (n) /ˈkɒl.ɪdʒ/ trường đại học, cao đẳng<br>\
 blackboard (n) /ˈblæk.bɔːd/ bảng đen<br>\
 physics (n) môn vật lý<br>\
 history (n) /ˈhɪs.tər.i/ môn lịch sử<br>\
-economic (a) /iː.kəˈnɒm.ɪk/ thuộc kinh tế<br>\
 economy (n) nền kinh tế <br>\
 grumpy (a) cáu kỉnh <br>\
 compulsory (a) bắt buộc <br>\
@@ -1346,7 +1337,6 @@ wet (a) /wɛt/ ẩm ướt<br>\
 erratic (a) /ɪˈræt.ɪk/ thất thường<br>\
 thunder (n) /ˈθʌn.dər/ sấm<br>\
 hailstone (n) /ˈheɪl.stoʊn/ viên mưa đá<br>\
-blustery (a) /ˈblʌs.tər.i/ có gió lớn<br>\
 downpour (n) /ˈdaʊn.pɔːr/ mưa lớn<br>\
 raincoat (n) /ˈreɪn.koʊt/ áo mưa<br>\
 rainbow (n) /ˈreɪn.boʊ/ cầu vồng<br>\
@@ -1448,7 +1438,6 @@ lecture (n) /ˈlɛk.tʃər/ bài giảng, bài thuyết trình<br>\
 debate (n,v) /dɪˈbeɪt/ cuộc tranh luận<br>\
 higher education (n) /ˈhaɪ.ər ɛdʒ.əˈkeɪ.ʃən/ giáo dục đại học<br>\
 educational (a) /edʒuˈkeɪʃənl/ giáo dục<br>\
-semester (n) /sɪˈmɛs.tər/ học kỳ<br>\
 student (n) /ˈstjuː.dənt/ sinh viên, học sinh<br>\
 student union (n) /ˈstjuː.dənt ˈjuː.njən/ hội sinh viên<br>\
 tuition fee (n) /tjuːˈɪʃ.ən fiː/ học phí<br>\
@@ -1742,7 +1731,6 @@ diabetes (n) /daɪəˈbiːtiːz/ bệnh tiểu đường<br>\
 dietitian (n) /daɪɪˈtɪʃən/ chuyên gia về dinh dưỡng<br>\
 goiter (n) /ˈɡɔɪtər/ bướu cổ<br>\
 body (n) /ˈbɒdi/ cơ thể<br>\
-thin (a) /θɪn/ gầy, ốm<br>\
 dietary (a) /ˈdaɪətɛri/ (thuộc) chế độ ăn uống<br>\
 fat (a) /fæt/ mập<br>\
 eating disorder (n) /ˈiːtɪŋ dɪsˈɔːrdər/ rối loạn ăn uống<br>\
@@ -1780,7 +1768,6 @@ graphic (a) /ˈɡræfɪk/ thuộc đồ họa<br>\
 messenger call service (n) /ˈmɛsɪndʒər kɔːl ˈsɜːrvɪs/ dịch vụ điện thoại<br>\
 parcel (n) /ˈpɑːrsəl/ bưu kiện, bưu phẩm<br>\
 press (n) /prɛs/ báo chí<br>\
-receive (v) /rɪˈsiːv/ nhận<br>\
 recipient (n) rɪˈsɪpiənt/ người nhận<br>\
 secure (a) /sɪˈkjʊr/ (cảm giác) yên tâm, an toàn<br>\
 service (n) /ˈsɜːrvɪs/ dịch vụ<br>\
@@ -1815,7 +1802,6 @@ challenge (n) /ˈʧæləndʒ/ thử thách<br>\
 career (n) /kəˈrɪər/ nghề nghiệp, sự nghiệp<br>\
 intensive course (n) /ɪnˈtɛnsɪv kɔrs/ khóa học cấp tốc<br>\
 commerce (n) /ˈkɑːmɜrs/ thương mại<br>\
-costly (a) /ˈkɒstli/ tốn kém<br>\
 responsible (a) /rɪˈspɒnsəbl/ chịu trách nhiệm<br>\
 communicate (v) /kəˈmjuːnɪkeɪt/ giao tiếp<br>\
 inheritance (n) /ɪnˈhɛrɪtəns/ sự thừa kế<br>\

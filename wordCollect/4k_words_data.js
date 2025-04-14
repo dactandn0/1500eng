@@ -138,7 +138,6 @@ adventure (n) /ədˈventʃər/ phiêu lưu<br>\
 approach (n,v) /əˈprəʊtʃ/ tiếp cận<br>\
 chemical (a) thuộc hóa học<br>\
 chemicals (n) hóa chất<br>\
-chemistry (n) ngành (môn) hóa chất (học)<br>\
 obesity (n) /əʊˈbiːsəti/ béo phì<br>\
 experiment (n) /ɪkˈsperɪmənt/ thí nghiệm<br>\
 laboratory (n) /ˈlæbrətɔːri/ phòng thí nghiệm<br>\
@@ -202,7 +201,6 @@ elder (a) ss hơn của Old (về cấp bậc)<br>\
 elderly (a) /ˈeldərli/ người già<br>\
 eldest (a) ss nhất của Old (về cấp bậc)<br>\
 experience (n) /ɪkˈspɪriəns/ kinh nghiệm<br>\
-field (n) lĩnh vực<br>\
 hurt (n,v) tổn thương<br>\
 judgment (n) /ˈdʒʌdʒmənt/ phán đoán<br>\
 likely (a) /ˈlaɪkli/ khả năng, rất có thể<br>\
@@ -237,11 +235,12 @@ famous (n) /ˈfeɪməs/ nổi tiếng [big name]<br>\
 force (n,v) /fɔːrs/ lực lượng (v) đẩy, bắt ép<br>\
 harm (n) /hɑːrm/ gây hại<br>\
 against (prep, adv) /əˈɡenst/ chống lại<br>\
+reveal (v) /rɪˈviːl/ tiết lộ<br>\
 lay (v) /leɪ/ đặt<br>\
 prince (n) /prɪns/ hoàng tử<br>\
 keep (v) /kiːp/ giữ [s.th/s.o from + N/V_ing]<br>\
 protect (v) /prəˈtekt/ bảo vệ [s.th/s.o from + N/V_ing]<br>\
-sense (n,v) (= feel) /sens/ cảm giác, giác quan [sense of timing/fun/serenity<br>\
+sense (n,v) /sens/ cảm giác, giác quan [sense of timing/fun/serenity]<br>\
 sudden (a) /ˈsʌdn/ đột ngột<br>\
 therefore (adv) /ˈðerfɔːr/ do đó<br>\
 accept (v) /əkˈsept/ chấp nhận<br>\
@@ -269,7 +268,6 @@ pleasant (a) /ˈpleznt/ dễ chịu<br>\
 prevent (v) /prɪˈvent/ ngăn chặn [s.th/s.o from + N/V_ing]<br>\
 rock (n) /rɑːk/ đá<br>\
 save (v) lưu, tiết kiệm<br>\
-step bước<br>\
 certain (a) /ˈsɜːrtn/ chắc chắn, nhất định<br>\
 chance cơ hội<br>\
 effect (n) /ɪˈfekt/ hiệu ứng<br>\
@@ -424,6 +422,7 @@ product (n) /ˈprɑːdʌkt/ sản phẩm<br>\
 property (n) /ˈprɑːpərti/ tài sản (= asset)<br>\
 purchase (n,v) /ˈpɜːrtʃəs/ việc mua, mua<br>\
 tool (n) /tuːl/ công cụ<br>\
+little (a) nhỏ bé<br>\
 alive (a) /əˈlaɪv/ sống<br>\
 bone (n) /bəʊn/ xương<br>\
 bother (v) /ˈbɑːðər/ làm phiền<br>\
@@ -582,7 +581,6 @@ imagine tưởng tượng<br>\
 journey hành trình<br>\
 puzzle (n) /ˈpʌzl/ câu đố<br>\
 specific cụ thể<br>\
-band dải<br>\
 barely adv /ˈberli/ vừa đủ<br>\
 driveway lối đi xe<br>\
 garbage rác<br>\
@@ -591,7 +589,6 @@ congestion (n) /kənˈdʒestʃən/ sự tắc nghẽn<br>\
 list danh sách<br>\
 magic ma thuật<br>\
 predict (n) dự đoán<br>\
-professor (n) giáo sư<br>\
 chaotic (a) /keɪˈɑːtɪk/ hỗn loạn, lộn xộn<br>\
 rush vội vã<br>\
 schedule (n) /ˈskedʒuːl/ lịch trình<br>\
@@ -611,7 +608,6 @@ latest (a) muộn nhất, mới nhất, gần nhất (so sánh nhất của Late
 recently (adv) gần đây<br>\
 lately (adv) gần đây<br>\
 competition (n) cuộc thi, cạnh tranh<br>\
-cool (a) mát mẻ<br>\
 gain tăng<br>\
 importance (n) /ɪmˈpɔːrtns/ tầm quan trọng<br>\
 knowledge kiến thức<br>\
@@ -715,14 +711,12 @@ victim ancestor nạn nhân tổ tiên<br>\
 angle góc<br>\
 boot khởi động<br>\
 congratulate chúc mừng<br>\
-frame khung<br>\
 heaven thiên đường<br>\
 legend huyền thoại<br>\
 pure thuần khiết<br>\
 relative tương đối<br>\
 senior cấp cao<br>\
 silent (a) /ˈsaɪlənt/ im lặng<br>\
-sink chìm<br>\
 superior (a) /suːˈpɪriər/ cao cấp<br>\
 surround (v) /səˈraʊnd/ vòm<br>\
 thick (a) /θɪk/ dày<br>\
@@ -741,7 +735,6 @@ palace cung điện<br>\
 permit giấy phép<br>\
 sculpture (n) /ˈskʌlptʃər/ tác phẩm điêu khắc<br>\
 tribe (n) /traɪb/ bộ lạc<br>\
-biology (n) /baɪˈɑːlədʒi/ sinh học<br>\
 cage (n) /keɪdʒ/ lồng<br>\
 colleague (n) /ˈkɑːliːɡ/ đồng nghiệp<br>\
 colony thuộc địa<br>\
@@ -817,7 +810,6 @@ meteor (n) /ˈmiːtiər/ thiên thạch<br>\
 exhibit triển lãm<br>\
 fame danh tiếng<br>\
 forecast,genius dự báo, thiên tài<br>\
-geography (n) địa lý<br>\
 interfere can thiệp<br>\
 lightly nhẹ nhàng<br>\
 row hàng<br>\
@@ -855,7 +847,6 @@ proof (n) bằng chứng<br>\
 quit (v) bỏ cuộc<br>\
 spin (v) quay<br>\
 tutor (n) gia sư<br>\
-blind mù<br>\
 chat trò chuyện<br>\
 commit cam kết<br>\
 dormitory ký túc xá<br>\
@@ -964,7 +955,6 @@ elementary cơ bản<br>\
 failure thất bại<br>\
 gradual dần dần<br>\
 immigrant người nhập cư<br>\
-insert chèn<br>\
 instant tức thời<br>\
 poverty nghèo đói<br>\
 pretend giả vờ<br>\
@@ -1039,10 +1029,8 @@ overcome vượt qua<br>\
 recall nhớ lại<br>\
 soul linh hồn<br>\
 tough khó khăn<br>\
-tube ống<br>\
 admit thừa nhận<br>\
 bin thùng<br>\
-bowl bát<br>\
 cabin cabin<br>\
 criminal (a) tội phạm, hình sự, có trọng tội<br>\
 dozens of hàng chục<br>\

@@ -14,7 +14,7 @@ en:"1. S + V + too + adj/adv + (for S.O) + to do S.TH: (quá....để cho ai là
 - He ran too fast for me to follow.<br>\
 2. S + V + so + adj/ adv + that + S + V: (quá... đến nỗi mà...)<br>\
 - This box is so heavy that I cannot take it.<br>\
-- He speaks so soft that we can’t hear anything.<br>\
+- He speaks so soft that we can't hear anything.<br>\
 3. It + V + such + (a/an) + N(s) + that + S + V: (quá... đến nỗi mà...)<br>\
 - It's such a heavy box that I cannot take it.<br>\
 - It's such interesting books that I cannot ignore them at all.<br>\
@@ -23,11 +23,11 @@ en:"1. S + V + too + adj/adv + (for S.O) + to do S.TH: (quá....để cho ai là
 - They're intelligent enough for me to teach them English.<br>\
 5. Have/ get + S.TH + done (P.P): (nhờ ai hoặc thuê ai làm gì...)<br>\
 - I had my hair cut yesterday.<br>\
-- I’d like to have my shoes repaired.<br>\
+- I'd like to have my shoes repaired.<br>\
 6. <br>\
 It's time + S + V (-ed, cột 2)<br>\
-It’s time +for S.O +to do S.TH : (đã đến lúc ai đó phải làm gì...)<br>\
-It’s time + to do S.TH<br>\
+It's time +for S.O +to do S.TH : (đã đến lúc ai đó phải làm gì...)<br>\
+It's time + to do S.TH<br>\
 - It's time to go.<br>\
 - It's time you had a shower.<br>\
 - It's time for me to ask all of you for this question.<br>\
@@ -44,7 +44,7 @@ It’s time + to do S.TH<br>\
 - I prefer reading books to watching TV.<br>\
 11. Would rather ('d rather) + V (infinitive) + than + V (infinitive: (thích làm gì hơn làm gì)<br>\
 - She would play games than read books.<br>\
-- I’d rather learn English than learn Biology.<br>\
+- I'd rather learn English than learn Biology.<br>\
 12. To be/get used to + V-ing: (quen làm gì)<br>\
 - I'm used to eating with chopsticks.<br>\
 13. Used to + V (infinitive): (Thường làm gì trong qk và bây giờ không làm nữa)<br>\
@@ -61,7 +61,7 @@ It’s time + to do S.TH<br>\
 - I met her in Paris by chance last week.<br>\
 18. to be/get tired of + N/V-ing: mệt mỏi về...<br>\
 - My mother was tired of doing too much housework everyday.<br>\
-19. can’t stand/ help/ bear/ resist + V-ing: Không chịu nỗi/không nhịn được làm gì...<br>\
+19. can't stand/ help/ bear/ resist + V-ing: Không chịu nỗi/không nhịn được làm gì...<br>\
 - She can't stand laughing at her little dog.<br>\
 20. Like doing s.th<br>\
 to be keen on<br>\
@@ -100,22 +100,22 @@ N/V+ing + be + my cup of tea<br>\
 - We're interested in reading books on history.<br>\
 33. To be bored with ( Chán làm cái gì )<br>\
 - We're bored with doing the same things everyday.<br>\
-34. It’s the first time S.B have ( has ) + P2 S.TH ( Đây là lần đầu tiên ai làm cái gì )<br>\
-- It’s the first time we have visited this place. ( Đây là lần đầu tiên chúng tôi tới thăm nơi này )<br>\
+34. It's the first time S.B have ( has ) + P2 S.TH ( Đây là lần đầu tiên ai làm cái gì )<br>\
+- It's the first time we have visited this place. ( Đây là lần đầu tiên chúng tôi tới thăm nơi này )<br>\
 35. enough + N ( đủ cái gì ) + ( to do S.TH )<br>\
-- I don’t have enough time to study. ( Tôi không có đủ thời gian để học )<br>\
+- I don't have enough time to study. ( Tôi không có đủ thời gian để học )<br>\
 36. a + enough (đủ làm sao ) + ( to do S.TH )<br>\
-- I’m not rich enough to buy a car. ( Tôi không đủ giàu để mua ôtô )<br>\
+- I'm not rich enough to buy a car. ( Tôi không đủ giàu để mua ôtô )<br>\
 37. too + a + to do S.TH ( Quá làm sao để làm cái gì )<br>\
-- I’m to young to get married. ( Tôi còn quá trẻ để kết hôn )<br>\
+- I'm to young to get married. ( Tôi còn quá trẻ để kết hôn )<br>\
 38. To want S.B to do S.TH = To want to have S.TH + Vp.p<br>\
 ( Muốn ai làm gì ) ( Muốn có cái gì được làm )<br>\
 - She wants someone to make her a dress. ( Cô ấy muốn ai đó may cho cô ấy một chiếc váy )<br>\
 She wants to have a dress made. ( Cô ấy muốn có một chiếc váy được may )<br>\
-39. It’s time S.B did S.TH ( Đã đến lúc ai phải làm gì )<br>\
-- It’s time we went home. ( Đã đến lúc tôi phải về nhà )<br>\
-40. It’s not necessary for S.B to do S.TH = S.B don’t need to do S.TH<br>\
-( Ai không cần thiết phải làm gì ) doesn’t have to do S.TH<br>\
+39. It's time S.B did S.TH ( Đã đến lúc ai phải làm gì )<br>\
+- It's time we went home. ( Đã đến lúc tôi phải về nhà )<br>\
+40. It's not necessary for S.B to do S.TH = S.B don't need to do S.TH<br>\
+( Ai không cần thiết phải làm gì ) doesn't have to do S.TH<br>\
 - It's not necessary for you to do this exercise.<br>\
 41. To look forward to V_ing ( Mong chờ, mong đợi làm gì )<br>\
 - We're looking forward to going on holiday.<br>\
@@ -137,7 +137,7 @@ She wants to have a dress made. ( Cô ấy muốn có một chiếc váy đượ
 S + be + so + a + that + S + V. ( Đến mức mà )<br>\
 S + V + so + Adv<br>\
 1. The exercise is so difficult that no one can do it.<br>\
-2. He spoke so quickly that I couldn’t understand him.<br>\
+2. He spoke so quickly that I couldn't understand him.<br>\
 50. S + be + such + ( a ) + N + that + S + V.<br>\
 - It's such a difficult exercise that noone can do it.<br>\
 51. It's ( very ) kind of S.B to do S.TH ( Ai thật tốt bụng / tử tế khi làm gì)<br>\
@@ -147,13 +147,13 @@ S + V + so + Adv<br>\
 53. To make sure of S.TH ( Bảo đảm điều gì )<br>\
 To make sure that + S + V<br>\
 1. I have to make sure of that information.<br>\
-2. You have to make sure that you’ll pass the exam.<br>\
+2. You have to make sure that you'll pass the exam.<br>\
 54. It takes ( S.B ) + Time + to do S.TH ( Mất ( của ai ) bao nhiêu Time để làm gì)<br>\
 - It took me an hour to do this exercise.<br>\
 55. To spend + time/money + on N/V_ing ( Dành thời gian / tiền bạc vào cái gì<br>\
 - We spend a lot of time on TV/watching TV.<br>\
-56. To have no idea of S.TH = don’t know about S.TH ( Không biết về cái gì )<br>\
-- I have no idea of this word = I don’t know this word.<br>\
+56. To have no idea of S.TH = don't know about S.TH ( Không biết về cái gì )<br>\
+- I have no idea of this word = I don't know this word.<br>\
 57. To advise S.B to do S.TH ( Khuyên ai làm gì<br>\
 not to do S.TH không làm gì )<br>\
 - Our teacher advises us to study hard.<br>\
@@ -169,7 +169,7 @@ not to do S.TH không làm gì )<br>\
 62. To keep promise ( Gĩư lời hứa )<br>\
 - He always keeps promises.<br>\
 63. To be able to do S.TH = To be capable of + V_ing ( Có khả năng làm gì )<br>\
-- I’m able to speak English = I'm capable of speaking English.<br>\
+- I'm able to speak English = I'm capable of speaking English.<br>\
 64. <br>\
 65. To prefer S.TH to S.TH  (Thích cái gì hơn cái gì )<br>\
 doing S.TH to doing S.TH làm gì hơn làm gì<br>\
@@ -183,9 +183,9 @@ Had ('d )not do S.TH ( Không nên làm gì )<br>\
 68. <br>\
 Would ('d ) rather do S.TH  (Thà làm gì)<br>\
 Would ('d ) rather not do S.TH đừng làm gì<br>\
-- I’d rather (not) stay at home.<br>\
+- I'd rather (not) stay at home.<br>\
 69. Would ( ‘d ) rather S.B did S.TH ( Muốn ai làm gì )<br>\
-- I’d rather you ( he / she ) stayed at home today.<br>\
+- I'd rather you ( he / she ) stayed at home today.<br>\
 70. To suggest S.B ( should ) do S.TH ( Gợi ý ai làm gì )<br>\
 - I suggested she ( should ) buy this house.<br>\
 71. To suggest doing S.TH ( Gợi ý làm gì )<br>\
@@ -204,9 +204,9 @@ Would ('d ) rather not do S.TH đừng làm gì<br>\
 - Remember to do your homework.<br>\
 78. To have S.TH + Vp.p ( Có cái gì được làm )<br>\
 = To have S.B do S.TH ( Thuê ai làm gì )<br>\
-- I’m going to have my house repainted. (thuê người sơn nhà)<br>\
-- I’m going to have the garage repair my car.<br>\
-- I’m going to have my car repaired.<br>\
+- I'm going to have my house repainted. (thuê người sơn nhà)<br>\
+- I'm going to have the garage repair my car.<br>\
+- I'm going to have my car repaired.<br>\
 79. To be busy doing S.TH ( Bận rộn làm gì )<br>\
 - We're busy preparing for our exam.<br>\
 80. To mind doing S.TH ( Phiền làm gì )<br>\
@@ -225,12 +225,13 @@ Would ('d ) rather not do S.TH đừng làm gì<br>\
 {
 	title:"Many/much/some/no most",
 	en:"many + N đếm số nhiều<br>\
-much + N ko đếm<br>\
+much + un.N<br>\
 <br>\
 (a) few +  N đếm số nhiều<br>\
-(a) little +  N ko đếm<br>\
+little +  un.N (không đủ)<br>\
+a little +  un.N (có ít để xài)<br>\
 <br>\
-a great deal of +  N ko đếm<br>\
+a great deal of +  un.N<br>\
 a large number of + N đếm số nhiều<br>\
 <br>\
 every + N đếm số ít  + V_số ít<br>\
@@ -243,7 +244,7 @@ each đứng 1 mình<br>\
 <br>\
 both + the/these/those. + N số nhiều<br>\
 both + us/you/them <br>\
-both ....  + V_số nhiều<br>\
+both ... + V_số nhiều<br>\
 <br>\
 all/most/some/any/no + N đếm | ko đếm<br>\
 a lot of / lots of + N đếm | ko đếm<br>\
@@ -278,7 +279,7 @@ FE: A large amount of money has been invested in education in Vietnam.<br>\
 - Some: Thường dùng trong câu khẳng định<br>\
 FE: I have some friends in Japan<br>\
 Any: Thường dùng trong câu nghi vấn hoặc phủ định<br>\
-FE: I don’t have any friends in Japan. Do you have any friends in Japan?<br>\
+FE: I don't have any friends in Japan. Do you have any friends in Japan?<br>\
 - No + noun = none<br>\
 Theo sau 'no' là danh từ số nhiều hay số ít đều được và động từ chia phụ thuộc vào danh từ<br>\
 FE: No students like studying Chinese, and none love Chemistry<br>\
@@ -467,8 +468,8 @@ SAMPLE 9.0 CC<br>\
 Different colours have different meanings in Vietnam. For example, red is often associated with luck, as seen in the way Vietnamese people often hang red lanterns and decorate their houses with peach blossoms during Tet holiday to have good luck. Also during this holiday, lucky money, often put inside a red envelope, is given to children to wish them good luck. Black, on the other hand, is often associated with luxury, and so shops selling high-end products often have their walls painted in black for this very reason.<br>\
 <br>\
 WHY ... CC?<br>\
-Some people think living in big cities is bad for people’s health. To what extent do you agree or disagree?<br>\
-Granted, one might argue that big cities have negative effects on habitants’ health. This is because traffic jams happen more frequently in big cities due to its higher population compared to others, thus negatively affecting travellers’ health. However, this line of reasoning is not sound because this ignores a number of developed cities solving this issue efficiently. For example, despite being one of the most populated cities, Tokyo is not often influenced badly. This is because citizens tend to use the metro, and the popularity of the metro reduces significantly traffic problems and the amount of carbon dioxide in Tokyo.<br>\
+Some people think living in big cities is bad for people's health. To what extent do you agree or disagree?<br>\
+Granted, one might argue that big cities have negative effects on habitants' health. This is because traffic jams happen more frequently in big cities due to its higher population compared to others, thus negatively affecting travellers' health. However, this line of reasoning is not sound because this ignores a number of developed cities solving this issue efficiently. For example, despite being one of the most populated cities, Tokyo is not often influenced badly. This is because citizens tend to use the metro, and the popularity of the metro reduces significantly traffic problems and the amount of carbon dioxide in Tokyo.<br>\
 When +S +V , S + V => WHEN + V-ING, S + V KHI CÙNG CHỦ NGỮ<br>\
 <br>\
 REFERENCING PRACTICE:<br>\

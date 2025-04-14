@@ -87,7 +87,7 @@ Mỗi năm, một khu rừng có kích thước bằng xứ Wales bị chặt ph
 Việc làm mới cũng sẽ được tạo ra nếu có một chương trình lớn để tiết kiệm năng lượng trong các tòa nhà. Tiết kiệm năng lượng rẻ hơn so với sản xuất điện, nhưng lại phải chi rất nhiều tiền cho năng lượng hạt nhân. Từ việc khai thác uranium đến xử lý chất thải phóng xạ, có một số mối đe dọa đối với môi trường. Ngoài ra, có những mối liên hệ chặt chẽ giữa năng lượng hạt nhân và vũ khí hạt nhân. Có những nguồn năng lượng an toàn hơn.<br>\
 Năng lượng cũng có thể được tiết kiệm nếu có nhiều hành trình ngắn hơn bằng xe đạp. Điều này sẽ làm giảm ô nhiễm và tắc nghẽn giao thông. Nên xây dựng đường dành cho xe đạp để việc đạp xe an toàn hơn.<br>\
 Các mối đe dọa đối với môi trường của chúng ta đều có liên quan. Ví dụ, xây dựng đường dành cho xe đạp thay vì những con đường mới không cần thiết sẽ tiết kiệm năng lượng và giảm ô nhiễm cũng như sự hủy diệt của động vật hoang dã."
-	,voca:"mototways,cycleways,charity,disposal,",
+	,voca:"mototways,cycleways,charity,disposal",
 },
 {
 	title:"Basic Reading P.21 - Crowding Human Life",

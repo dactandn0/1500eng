@@ -49,7 +49,6 @@ what's more (conj) còn gì nữa<br>\
 besides (adv) ngoài ra<br>\
 citizen (n) cư dân thành phố<br>\
 inhabitant (n) cư dân<br>\
-plus (adv) cộng với<br>\
 as much as (conj) nhiều như<br>\
 as well as (conj) cũng như<br>\
 as long as (conj) miễn là<br>\
@@ -122,7 +121,6 @@ annual /'renjual/ (a) hàng năm<br>\
 attempt (n,v) /a'tempt/ cố gắng, nỗ lực (without prep)<br>\
 booklet /'buklit/ (n) tập sách<br>\
 campus /'krempas/ (n) khuôn viên trường<br>\
-charge /tJa:d3/ (n,v) điện tích<br>\
 confirmation /konfa'meifan/ (n) <br>\
 constant /'konstant/ (a) hằng số<br>\
 deem /di:m/ (v) cho rằng<br>\
@@ -213,7 +211,6 @@ consequently /'konsikwantli/ (adv.) do đó<br>\
 construct /kan'strAkt/ (v) xây dựng<br>\
 ox /oks/ (n) con bò đực<br>\
 populate /'popjuleit/ (v) dân cư<br>\
-port /po:t/ (n) cảng<br>\
 region /'ri:d3an/ (n) khu vực<br>\
 economist /i'konamist/ (n) nhà kinh tế<br>\
 seaport /'si:po:t/ (n) cảng biển <br>\
@@ -287,7 +284,6 @@ volunteer /volǝn'tiǝ/ (n)tình nguyện<br>\
 abundant /ǝ'bandǝnt/(a) nhiều<br>\
 aggressive /ǝ'gresiv/ (a) hung hăng<br>\
 brushy /'brafi/ (a) bụi rậm<br>\
-cattle /'kætl/ (n) gia súc<br>\
 cavity /'kæviti/ (n) khoang<br>\
 clear /kliǝ/ (v) trong<br>\
 decline/di'klain/ (v,n) suy giảm<br>\

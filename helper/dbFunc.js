@@ -63,6 +63,9 @@ Helper_IsWordSavedBefore = function(word) {
 } 
 
 
-Helper_NoteSaveDB = function(data) {
-	Helper_saveDB("vocaNotedSeq", data.trim());
+Helper_NoteSaveDB = function(word) 
+{
+	let prev = Helper_SeqNoteFetchDB()
+	prev += '@' + word
+	Helper_saveDB("vocaNotedSeq", prev);
 }

@@ -84,14 +84,13 @@ let WORD_FAMILY_DATA = [
 function getWordFamily(word)
 {
 	word = word.toLowerCase()
-	var regex = new RegExp(`\\b(${word})` , 'gi')
 	var arr = []
 	for (var i = 0; i < WORD_FAMILY_DATA.length; i++) 
 	{
-		var group = WORD_FAMILY_DATA[i]
-		if (group.match(regex))
+		let words = WORD_FAMILY_DATA[i];
+		if (IsExisted(words, word) != -1)
 		{
-			arr = group.split('|')
+			arr = words.split('|')
 			arr = arr.filter(e => e.indexOf(word) == -1)
 			break
 		}
@@ -100,6 +99,14 @@ function getWordFamily(word)
 	// console.log(rr)
 	if (rr.length > 0) rr = ' [f. ' + rr + ']'
 	return rr
+}
+
+// ielts_syn
+function IsExisted(seq, word)
+{
+	var seq = seq.replace(/\(.*\)/,'').replace(/\/.*\//, '').trim()
+	let seqs = seq.split('|')
+	return seqs.findIndex(ele => ele.trim() == word)
 }
 
 // getWordFamily('rate')

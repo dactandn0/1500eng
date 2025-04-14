@@ -2,27 +2,27 @@
 // for list_noted_voca USE
 var VocaToUI = WORDS_3K_DATA
   //  .concat(IELTS_5K_DATA)
-    .concat(word_4000_data)
-    .concat(word_4000_data_2)
-    .concat(BEGINNER_READING_VOCA)
-    .concat(VOCA_SPECIAL)
+  .concat(word_4000_data)
+  .concat(word_4000_data_2)
+  .concat(BEGINNER_READING_VOCA)
+  .concat(VOCA_SPECIAL)
 
-var VocaForSearch = VocaToUI
-    .concat(PHRASAL_VERB)
-    .concat(BAT_QUI_TAC)
+  var VocaForSearch = VocaToUI
+  .concat(PHRASAL_VERB)
+  .concat(BAT_QUI_TAC)
     // .concat(IELTS_SYN)
     // .concat(GRAMMER_DATA)
     // .concat(NATIONS)
 
 // for notedEbookCtrl
 var kAllStories = SPEAKING_SAME_VOL5
-  .concat(ENGLAB_BEGIN_DATA_W)
-  .concat(ENGLAB_BEGIN_DATA_R)
-  .concat(collins_cd12)
-  .concat(lptd_cd1_stories)
-  .concat(lptd_cd2_stories)
-  .concat(lptd_cd3_stories)
-  .concat(lptd_cd4_stories)
+.concat(ENGLAB_BEGIN_DATA_W)
+.concat(ENGLAB_BEGIN_DATA_R)
+.concat(collins_cd12)
+.concat(lptd_cd1_stories)
+.concat(lptd_cd2_stories)
+.concat(lptd_cd3_stories)
+.concat(lptd_cd4_stories)
 //  .concat(BOOK4K_1)
  // .concat(bridge_cd1)
 //  .concat(bridge_read_data)
@@ -68,43 +68,43 @@ var app = angular.module("myApp", [
   'ngSanitize','ngRoute','toastr'
   ]);
 app.config(function($routeProvider) {
-    $routeProvider
+  $routeProvider
 	//	.when('/', { templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl' }) 
-		.when('/configUI', {templateUrl: 'vocaNoted/configUI.html', controller: 'configUICtrl'})
-		.when('/vocaNoted', {templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'})
+  .when('/configUI', {templateUrl: 'vocaNoted/configUI.html', controller: 'configUICtrl'})
+  .when('/vocaNoted', {templateUrl: 'vocaNoted/vocaNoted.html', controller: 'vocaNotedCtrl'})
 		// .when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
     .when('/f2f', {templateUrl: 'ebooks/f2f/f2f.html', controller: 'f2fCtrl'})
     .when('/tfl', {templateUrl: 'ebooks/tfl/tfl.html', controller: 'tflCtrl'})
     .when('/book4k', {templateUrl: 'ebooks/words4000/words4000.html', controller: 'words4000Ctrl'})
-		.when('/writingvol5', {templateUrl: 'ebooks/writingvol5/writingvol5.html', controller: 'writingvol5Ctrl'})
+    .when('/writingvol5', {templateUrl: 'ebooks/writingvol5/writingvol5.html', controller: 'writingvol5Ctrl'})
 		//    .when('/lptd', {
-		.when('/', {templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'})
-		.when('/grammer', {templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'})
-		.when('/spkBook', {templateUrl: 'ebooks/spkBook/spkBook.html', controller: 'spkBookCtrl'})
-		.when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
-		.when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})
-    .when('/tocg', {templateUrl: 'ebooks/tocg/tocg.html', controller: 'tocgCtrl'})
-		.when('/lrat', {templateUrl: 'ebooks/lrat/lrat.html', controller: 'lratCtrl'})
-		.when('/completeL', {templateUrl: 'ebooks/complete/complete.html', controller: 'completeCtrl'})
+      .when('/', {templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'})
+      .when('/grammer', {templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'})
+      .when('/spkBook', {templateUrl: 'ebooks/spkBook/spkBook.html', controller: 'spkBookCtrl'})
+      .when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
+      .when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})
+      .when('/tocg', {templateUrl: 'ebooks/tocg/tocg.html', controller: 'tocgCtrl'})
+      .when('/lrat', {templateUrl: 'ebooks/lrat/lrat.html', controller: 'lratCtrl'})
+      .when('/completeL', {templateUrl: 'ebooks/complete/complete.html', controller: 'completeCtrl'})
 		// .when('/completeR', {templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'})
 		.when('/barron600R', {templateUrl: 'ebooks/barron600/barron600R.html', controller: 'barron600RCtrl'})
 		.when('/barron600L', {templateUrl: 'ebooks/barron600/barron600L.html', controller: 'barron600LCtrl'})
 		.when('/sampleSpeaking', {templateUrl: 'ebooks/sampleSpeaking/sampleSpeaking.html', controller: 'sampleSpeakingCtrl'})
     .when('/preCourse', {templateUrl: 'ebooks/englab/preCourse/preCourse.html', controller: 'preCourseCtrl'})
-		.when('/beginnerCourse', {templateUrl: 'ebooks/englab/beginnerCourse/beginnerCourse.html', controller: 'beginnerCourseCtrl'})
-		.otherwise({redirectTo: '/'
-      });
+    .when('/beginnerCourse', {templateUrl: 'ebooks/englab/beginnerCourse/beginnerCourse.html', controller: 'beginnerCourseCtrl'})
+    .otherwise({redirectTo: '/'
+  });
  }); // route
 
 app.controller("indexCtrl",  ['$scope', 'appAlert','$location', 'toastr', '$rootScope' , '$http', function($scope, appAlert, $location, toastr, $rootScope, $http ) {
 
-$rootScope.$on('$routeChangeStart', function () {
-  $rootScope.bVocaOfEbook = false;
-  $rootScope.vocaEbook = [];
-});
+  $rootScope.$on('$routeChangeStart', function () {
+    $rootScope.bVocaOfEbook = false;
+    $rootScope.vocaEbook = [];
+  });
 
 
-IndexCtrlScope = $scope;
+  IndexCtrlScope = $scope;
 
 // for word3000Ctrl
 $rootScope.VocaToUI = VocaToUI
@@ -118,8 +118,8 @@ $scope.bTransSentenOnClick = 0;
 
 // clear Search data when routed
 $scope.$on('$routeChangeSuccess', function($event, next, current) { 
-    $scope.clearSearch();
- });
+  $scope.clearSearch();
+});
 
 $scope.clearSearch = function () {
   $scope.search = '';
@@ -130,21 +130,22 @@ $scope.clearSearch = function () {
 
 $scope.saveNoted = function(word, isFromToastr) {
   word = removeHtmlTags(word)
-  var kDatabase = Helper_SeqNoteFetchDB();
+  if (word.length >= 2) 
+  {
+    Helper_NoteSaveDB(word);
 
-  if (word.length >= 2) {
-
-    kDatabase = kDatabase + "@" + word;
-    Helper_NoteSaveDB(kDatabase);
-
-    if ($location.path().indexOf('vocaNoted') >=0 ) {
+    if ($location.path().indexOf('vocaNoted') >=0 ) 
+    {
       VocaNotedCtrl.appendDataToUI(word);
     }
+
     toastr.success("Saved: " + word, {allowHtml:true });
+
     if (!isFromToastr) $scope.clearSearch()
-  } else {
-    toastr.error("Existed. Save failed")
-  }
+  } else 
+{
+  toastr.error("Existed. Save failed")
+}
 }
 
 $scope.IsWordSavedBefore = function(word) {
@@ -154,17 +155,17 @@ $scope.IsWordSavedBefore = function(word) {
 $scope.searchTyping = function() {
   $scope.sentenceSearches = [];
   if (searchData.length==0) return true;       
-	$scope.searchDataResult = [];
-	if ($scope.search.length <= 2) return;
-    var search = removeVietnameseTones($scope.search.toLowerCase());
-    for (var i = 0; i < searchData.length; i++) {
-    	var dataVN = searchData[i];
-    	data = removeVietnameseTones(dataVN.toLowerCase());
-    	if (data.includes(search)) {
-        dataVN = Helper_IsUncountNoun(dataVN)
-    		$scope.searchDataResult.push(Helper_SliceHalfString(dataVN));
-    	}
-    }
+  $scope.searchDataResult = [];
+  if ($scope.search.length <= 2) return;
+  var search = removeVietnameseTones($scope.search.toLowerCase());
+  for (var i = 0; i < searchData.length; i++) {
+   var dataVN = searchData[i];
+   data = removeVietnameseTones(dataVN.toLowerCase());
+   if (data.includes(search)) {
+    dataVN = Helper_IsUncountNoun(dataVN)
+    $scope.searchDataResult.push(Helper_SliceHalfString(dataVN));
+  }
+}
 }
 
 $scope.findSameWord = function() {
@@ -226,7 +227,7 @@ $scope.searchGG = function ()
 {
   const input =  $scope.search
   Helper_GG_API($http, input).then (res => {
-      const VN = res.data[0][0][0];
+    const VN = res.data[0][0][0];
       doShowToast(input + ' <b style="color:orange">/(gg)/</b> ' + VN, false);  // longtext = false
     }, err => {
       alert(err)
@@ -240,58 +241,58 @@ $scope.Idx_n_L_WSp_ = function (event)
   event.stopPropagation()
   if ($scope.bTransSentenOnClick && !$rootScope.bShowVi)  // dont active in showVi-mode
   {
-      var pNode = event.target
-      do 
-      {
-        pNode = pNode.parentNode
-      }
-      while (pNode.nodeName != 'ZUI');
+    var pNode = event.target
+    do 
+    {
+      pNode = pNode.parentNode
+    }
+    while (pNode.nodeName != 'ZUI');
       // long text needn't show
       ngClickSpeechShowToastUseNode(pNode)
-  }
-  else 
-  {
+    }
+    else 
+    {
       const touchedWord = Helper_getTouchTextEvent(event);
       ngClickSpeechShowToast(touchedWord)
+    }
+
   }
 
-}
-
-getVocaFromDB = function(touchedWord)
-{
-  var json_full = ''
-  var found = false
-  for (var i = 0; i < searchData.length; i++) 
+  getVocaFromDB = function(touchedWord)
   {
+    var wordSynonyms = getWordSynonym(touchedWord)
+
+    var json_full = ''
+    var found = false
+    for (var i = 0; i < searchData.length; i++) 
+    {
       var wordFull = searchData[i]
       var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
 
       var wordFamily = getWordFamily(word)
-      var wordSynonyms = getWordSynonym(word)
 
       if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) 
       {
-          json_full = wordFull +  wordFamily + wordSynonyms
-          found = true
-          break
+        json_full = wordFull +  wordFamily + wordSynonyms
+        found = true
+        break
       }
+    }
+    if (!found)
+    {
+      var wordFamily = getWordFamily(touchedWord)
+      json_full =  wordFamily + wordSynonyms
+    }
+    
+    return {
+      full : json_full,
+      found : found
+    }
   }
-  if (!found)
-  {
-    var wordFamily = getWordFamily(touchedWord)
-    var wordSynonyms = getWordSynonym(touchedWord)
-    json_full =  wordFamily + wordSynonyms
-  }
- 
-  return {
-    full : json_full,
-    found : found
-  }
-}
 
-ngClickSpeechShowToast = function (touchedWord, isLongText) 
-{
-  var result = getVocaFromDB(touchedWord)
+  ngClickSpeechShowToast = function (touchedWord, isLongText) 
+  {
+    var result = getVocaFromDB(touchedWord)
   // not in database, so using GOOGLE TRANS API
   if (!result.found)
   {
@@ -328,48 +329,48 @@ function doShowToast(content, isLongText)
   let btnSave  = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
   let toasterTimeout = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000 // s
   if (isLongText || Helper_IsWordSavedBefore(content)) {
-     btnSave = ''
-  } else saveFromToastVal = content;
-  
-  toastr.info(btnSave, content, {
-    allowHtml: true,
-    timeOut :  toasterTimeout * (isLongText ? 2.5 : 1)
-  });
+   btnSave = ''
+ } else saveFromToastVal = content;
+ 
+ toastr.info(btnSave, content, {
+  allowHtml: true,
+  timeOut :  toasterTimeout * (isLongText ? 2.5 : 1)
+});
 
 }
 
 
 $scope.showExampleModal = function(wordFull, event) {
-      var sentences = $scope.fetchSentences(wordFull);
-      if (!sentences) {
-        event.target.style.color = 'red';
-        return;
-      }
-      event.target.style.color = 'green';
+  var sentences = $scope.fetchSentences(wordFull);
+  if (!sentences) {
+    event.target.style.color = 'red';
+    return;
+  }
+  event.target.style.color = 'green';
 
-      appAlert.alert({
-          title: 'Title',
-          message: 'This is alert message!',
-          type: 'danger',
-          dataSent: sentences,
-          wordFull: Helper_RemoveHTMLtag(wordFull)
-      });
-    
-  };
+  appAlert.alert({
+    title: 'Title',
+    message: 'This is alert message!',
+    type: 'danger',
+    dataSent: sentences,
+    wordFull: Helper_RemoveHTMLtag(wordFull)
+  });
+  
+};
 
 $scope.showConfirmModal = function(wordFull, event) {    
-    appAlert.confirm({
-        title: 'Confirm delete!',
-        message: 'Do you want to delete this record ?',
-        dataSent: wordFull,
-    }, function(isOk) {
-        if (isOk) {
-          if (wordFull.indexOf("all") >=0) 
-            VocaNotedCtrl.removeAllNoted();
-          else
-            VocaNotedCtrl.removeNote(wordFull, event)
-        }
-    });
+  appAlert.confirm({
+    title: 'Confirm delete!',
+    message: 'Do you want to delete this record ?',
+    dataSent: wordFull,
+  }, function(isOk) {
+    if (isOk) {
+      if (wordFull.indexOf("all") >=0) 
+        VocaNotedCtrl.removeAllNoted();
+      else
+        VocaNotedCtrl.removeNote(wordFull, event)
+    }
+  });
 };
 
 doFetchSentences = function(word, StoriesData) {
@@ -392,7 +393,7 @@ doFetchSentences = function(word, StoriesData) {
       for (var i = 0; i < results.length; i++) {
         var nn = results[i];
         if (!nn.match(regex)) continue
-        var match = nn.match(regex)[0];
+          var match = nn.match(regex)[0];
         results[i] = nn.replaceAll(match , "<b>" + match +"</b>");
       }
       return (results);
@@ -408,7 +409,7 @@ $scope.fetchSentences = function(wordFull) {
 }
 
 $scope.fetchSentenceSearch = function() {
-    $scope.sentenceSearches = $scope.fetchSentences($scope.search);
+  $scope.sentenceSearches = $scope.fetchSentences($scope.search);
 }
 
 $scope.loadData = function () {
@@ -424,17 +425,17 @@ $scope.$on('$viewContentLoaded', function () {
 }]);  //end of ctrl
 
 app.directive('compile', ['$compile', function ($compile) {
-    return function(scope, element, attrs) {
-        scope.$watch(
-            function(scope) {
-                return scope.$eval(attrs.compile);
-            },
-            function(value) {
-                element.html(value);
-                $compile(element.contents())(scope);
-            }
-        );
-    };
+  return function(scope, element, attrs) {
+    scope.$watch(
+      function(scope) {
+        return scope.$eval(attrs.compile);
+      },
+      function(value) {
+        element.html(value);
+        $compile(element.contents())(scope);
+      }
+      );
+  };
 }])
 
 

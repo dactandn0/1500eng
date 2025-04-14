@@ -849,9 +849,28 @@ I believe the most important thing is air quality. There are not many factories 
 Yes, I do. Actually I was born and brought up in a small village so I spent my childhood in a rural area. Even though I am living in Ho Chi Minh City now, I come back home twice or three times a year for family reunions.<br>\
 4. Do you consider living in the countryside in the future?<br>\
 Well, that's an interesting question. I think I will live there when I retire because the clean air and low pace of life might be good for old people. But now I will just stay in the city because there are more opportunities to earn money here."}
-, {track:"1.51",title:"Street market",en:""}
-, {track:"1.52",title:"Plants",en:""}
-, {track:"1.53",title:"Sky",en:""}
+, {track:"1.51",title:"Street market",en:"1. What do street markets sell?<br>\
+In Vietnam, there are many different products sold in the street markets but I think the most common items are fresh fruits, vegetables and meat. Sometimes I even see people sell flowers and bonsais during holidays.<br>\
+2. Are there many street markets in Vietnam?<br>\
+Well, street markets are a Vietnamese 'thing' and can be found on every corner of both villages and cities across the country, especially in the northern regions.<br>\
+3. What are the differences between street mar kets and supermarkets?<br>\
+There are some noticeable differences be tween open-air markets and supermarkets. First, the prices in street markets are often flexible. I mean buyers can haggle over the price to get a bargain while goods are always sold at a f ixed price in a supermarket. In addition, sellers in a supermarket are often more friendly and helpful to their customers."}
+, {track:"1.52",title:"Plants",en:"1. Do you keep plants at home?<br>\
+I do. My apartment has a small balcony where I hang some pots to plant vegetables and flowers. Having such a green and lovely corner in the city center truly helps boost my mood and reduce stress after a hard day at work.<br>\
+2. What plant did you grow when you were young?<br>\
+It was bok choy. My mom had a small garden so every winter, she started to plant some bok choy because it was our favorite veggie and I helped her do the gardening and watering.<br>\
+3. Do you know anything about growing a plant?<br>\
+Certainly! Years of helping my mom with her garden turn me into a true farmer. I know every step and technique in planting and it's like a piece of cake for me to grow common vegetables.<br>\
+4. Do Vietnamese people send plants as gifts?<br>\
+I think yes but it is not very common. When talking about gifts, people prefer giving some useful things such as clothes, household equipment or cosmetics. I think they send plants as gifts to each other only on such occasions as Lunar New Year or birthdays."}
+, {track:"1.53",title:"Sky",en:"1. How often do you look at the sky?<br>\
+Well, I just gaze at the sky when I think it's going to rain or when it's too sunny. Anyways, I live in a city and the sky is covered by tall buildings most of the time so I have no reasons to look at it.<br>\
+2. Do you prefer the sky in the morning or the sky at night?<br>\
+At night, definitely. While the daytime sky is rather boring, the starry night sky, especially in the countryside, is so amazing that I was entranced the first time I saw it many years ago. It isn't like anything you can find in cities nowadays.<br>\
+3. Can you see the moon and stars at night where you live?<br>\
+Due to light pollution, the stars are too faint to be seen in Ho Chi Minh City, but we can easily catch sight of the moon. Once a month, from here we can see the full moon which is incredibly beautiful.<br>\
+4. Is there a good place to look at the sky where you live?<br>\
+Probably not. Actually looking at the sky is not my thing so I've never tried finding a good location to do so. But I think it will be great to stand on the terrace of a skyscraper, such as the Landmark 81, to look at the sky and think about the future."}
 , {track:"1.54",title:"Animals",en:""}
 , {track:"1.55",title:"Insects",en:""}
 , {track:"1.56",title:"Handwriting",en:""}

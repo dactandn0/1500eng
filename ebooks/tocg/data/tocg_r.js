@@ -52,6 +52,7 @@ Eugene Delacroix was the most prominent of the French artists who welcomed photo
 The question of whether the photograph was document or art aroused interest in England also. The most important statement on this matter was an unsigned article that concluded that while photography had a role to play, it should not be 'constrained' into 'competition' with art; a more stringent viewpoint led critic Philip Gilbert Hamerton to dismiss camera images as 'narrow in range, emphatic in assertion, telling one truth for ten falsehoods'.<br>\
 These writers reflected the opposition of a section of the cultural elite in England and France to the 'cheapening of art' which the growing acceptance and purchase of camera pictures by the middle class represented. Technology made photographic images a common sight in the shop windows of Regent Street and Piccadilly in London and the commercial boulevards of Paris. In London, for example, there were at the time some 130 commercial establishments where portraits, landscapes, and photographic reproductions of works of art could be bought. This appeal to the middle class convinced the elite that photographs would foster a desire for realism instead of idealism, even though some critics recognized that the work of individual photographers might display an uplifting style and substance that was consistent with the defining characteristics of art."
 ,images:["test1.3"]
+,voca:"granted,enrichment"
 },
 {
 	title:"2.1 The Flavor of Pleasure"

@@ -40,18 +40,20 @@ Helper_SeqNoteFetchDB = function()
 
 Helper_NoteFetchDB = function() 
 {
-	dataWords = []
+	let dataWords = []
 	const kDatabase = Helper_SeqNoteFetchDB()
 	if (!kDatabase) return []
 
-	let wordsOfDates = kDatabase.trim().split("|").filter(String);
-	for (var i = 0; i < wordsOfDates.length; i++) 
+	let dates = kDatabase.trim().split("|").filter(String);
+	for (var i = 0; i < dates.length; i++) 
 	{
-		let dateData = wordsOfDates[i]
+		let dateData = dates[i]
 		const spt =  dateData.split('#')
+		const words = spt[1].split('@').filter(String)
+		if ( words.length	== 0 ) continue;
 		const json = {
 			date: spt[0],
-			words: spt[1].split('@').filter(String)
+			words: words
 		}
 		dataWords.push(json)
 	}
@@ -66,12 +68,39 @@ Helper_IsWordSavedBefore = function(word)
   return rs
 } 
 
+Helper_NoteRemoveWord = function(word, date) 
+{
+	let prev = Helper_SeqNoteFetchDB()
+	let arr = prev.split('|').filter(String)
+	const idx = arr.findIndex(ele => ele.includes(date))
+	if (idx >= 0 ) // edit
+	{
+		let words = arr[idx].split('#')[1].split('@').filter(String)
+		words = words.filter(ele => ele !== word)
+
+		if (words.length > 0 ) 
+		{
+			const editedDate = '|' + date + '#' + words.join('@')
+			// re-init 
+			arr[idx] = editedDate
+		} else
+		{
+			//remove date due to blank data
+			arr.splice(idx, 1)
+		}
+
+		arr = arr.join('|')
+		Helper_saveDB("vocaNotedSeq", arr);
+	}
+}
+
 Helper_NoteClearDB = function() 
 {
 	Helper_saveDB("vocaNotedSeq", '');
 }
 
-Helper_NoteSaveDB = function(word) 
+// add
+Helper_NoteAddWordToDB = function(word) 
 {
 	let prev = Helper_SeqNoteFetchDB()
 	let arr = prev.split('|').filter(String)
@@ -80,7 +109,6 @@ Helper_NoteSaveDB = function(word)
 	if (idx >= 0 ) // edit
 	{
 		let obj = arr[idx]
-		console.log(obj)
 		obj += '@' + word
 		arr[idx] = obj
 

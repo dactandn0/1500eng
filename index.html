@@ -152,13 +152,7 @@
             ng-click="fetchSentenceSearch()">
           [SE]</button>
         </div>
-
-        <div class="input-group-append">
-          <button class="btn-sm btn-outline-secondary" 
-            ng-click="searchGG()">
-          <i class="fa fa-language"></i></button>
-        </div>
-
+        
         <div class="input-group-append">
           <button class="btn-sm btn-outline-secondary" 
             ng-click="clearSearch()">
@@ -212,7 +206,16 @@
         id="btn_back_to_top"
         >
         ^
-	</button>
+	 </button>
+
+       <button
+        ng-click="Export2Doc()" 
+        type="button"
+        class="btn btn-danger btn-floating btn-md"
+        id="btn_export_word"
+        >
+        Word
+   </button>
 
     </div> <!-- container -->
     
@@ -228,6 +231,8 @@
   $(".navbar-brand").click(function() {
     $("#navbarSupportedContent").collapse("hide");
   });
+
+
 </script>
 
 <!-- <script type="text/javascript" src="helper/list_noted_voca_stories.js"></script> -->

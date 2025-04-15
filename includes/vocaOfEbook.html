@@ -1,5 +1,5 @@
 
-<div ng-show="$root.bVocaOfEbook===true" class="mt-4">
+<div ng-show="$root.bVocaOfEbook===true" class="mt-4" id = 'VocaOfEbook'>
 	<div ng-repeat="($index,jsonEle) in $root.vocaEbook track by $index">
 		<i class="color-anim">{{jsonEle.unit}} {{jsonEle.title}}</i>
 		<div ng-repeat="($indexB, voca) in jsonEle.vocas track by $indexB">

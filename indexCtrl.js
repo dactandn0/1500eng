@@ -132,11 +132,10 @@ $scope.saveNoted = function(word, isFromToastr) {
   word = removeHtmlTags(word)
   if (word.length >= 2) 
   {
-    Helper_NoteSaveDB(word);
-
+    Helper_NoteAddWordToDB(word);
     if ($location.path().indexOf('vocaNoted') >=0 ) 
     {
-      VocaNotedCtrl.appendDataToUI(word);
+      VocaNotedCtrl.loadArray();
     }
 
     toastr.success("Saved: " + word, {allowHtml:true });
@@ -189,7 +188,7 @@ saveFromToastr = function () {
 
 // search
 $scope.Index_Speak = function (event, word) {
-  Helper_Speak(event, word);
+  ngClickSpeechShowToast(word, false)
 }
 
 $scope.Index_NoteVoca_Speak = function (word) {
@@ -207,33 +206,21 @@ $scope.Index_NoteVoca_Speak = function (word) {
 }
 
 // vocaEbook Touch
-$scope.vocaEbookSpeech = function (event, txt, lesson, idx, idxParent) {
+$scope.vocaEbookSpeech = function (event, voca, lesson, idx, idxParent) {
   event.stopPropagation()
-  var sentences = doFetchSentences(txt, [lesson])
+  var sentences = doFetchSentences(voca, [lesson])
   if (sentences) {
-    $scope.sentenceForVoca = ' - ' + '<b>' + sentences[0] + '</b>'
+    $scope.sentenceForVoca = ' - ' + sentences[0]
     $scope.vocaIdx = idx
     $scope.lessonIdx = idxParent
   }
-  ngClickSpeechShowToast(sentences[0], true)
+  ngClickSpeechShowToast(voca, false)
 }
 
 
 $scope.toggleTransSenten = function () {
   $scope.bTransSentenOnClick = !$scope.bTransSentenOnClick
 }
-
-$scope.searchGG = function () 
-{
-  const input =  $scope.search
-  Helper_GG_API($http, input).then (res => {
-    const VN = res.data[0][0][0];
-      doShowToast(input + ' <b style="color:orange">/(gg)/</b> ' + VN, false, input);  // longtext = false
-    }, err => {
-      alert(err)
-    });
-}
-
 
 // ng-click word to speech
 $scope.Idx_n_L_WSp_ = function (event) 
@@ -329,7 +316,7 @@ function doShowToast(content, isLongText, touchedWord)
   if (isLongText || Helper_IsWordSavedBefore(touchedWord)) 
   {
    btnSave = ''
-  } else saveFromToastVal = content;
+  } else saveFromToastVal = touchedWord;
  
  toastr.info(btnSave, content, {
   allowHtml: true,
@@ -421,6 +408,58 @@ $scope.$on('$viewContentLoaded', function () {
   $scope.loadData();
 
 }) // viewContentLoaded
+
+
+$scope.Export2Doc = function()
+{
+  var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+  var postHtml = "</body></html>";
+
+  let html = ''
+
+  // if in ShowVoca mode
+  if ($rootScope.bVocaOfEbook == true ) 
+  {
+      html = preHtml + document.getElementById('VocaOfEbook').innerHTML + postHtml;
+  }
+  else
+  {
+    html = preHtml + document.getElementById('content-to-word').innerHTML + postHtml;
+  }
+
+  var blob = new Blob(['\ufeff', html], {
+      type: 'application/msword'
+  });
+  
+  // Specify link url
+  var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+  console.log($location.path())
+  // Specify file name
+  let path = $location.path().replace('/', '')
+  filename = path.length > 0 ? path : 'index'
+  filename += '.doc'
+
+  // Create download link element
+  var downloadLink = document.createElement("a");
+
+  document.body.appendChild(downloadLink);
+  
+  if(navigator.msSaveOrOpenBlob ){
+      navigator.msSaveOrOpenBlob(blob, filename);
+  }else{
+      // Create a link to the file
+      downloadLink.href = url;
+      
+      // Setting the file name
+      downloadLink.download = filename;
+      
+      //triggering the function
+      downloadLink.click();
+  }
+  
+  document.body.removeChild(downloadLink);
+}
+
 }]);  //end of ctrl
 
 app.directive('compile', ['$compile', function ($compile) {

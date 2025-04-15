@@ -9,14 +9,10 @@ var kDatabase = []
 $scope.dataWords = []
 $scope.wordsShow = []
 
-$scope.appendDataToUI = function (word) 
-{
-	Helper_NoteSaveDB(word)
-}
-
 $scope.removeNote = function (word, date) 
 {
-	alert(word + ' of ' + date)
+	Helper_NoteRemoveWord(word, date);
+	$scope.loadArray();
 }
 
 $scope.removeAllNoted = function () 

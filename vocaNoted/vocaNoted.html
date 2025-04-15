@@ -11,21 +11,22 @@
 </div>
 
 <div class="text-sm my-2" 
+     id="content-to-word"
 	   ng-repeat="dateJson in dataWords track by $index">
        <p>{{dateJson.date}}</p>
        <div class="text-sm my-2" 
-          ng-repeat="word in dateJson.words">
+          ng-repeat="($indexB, word) in dateJson.words track by $indexB">
 
          <button class="btn-sm btn-primary mr-2"
               ng-click="showConfirmModal(word, dateJson.date)"
               > X
         </button> 
 
-        <span
+        <span 
           ng-click="Index_Speak($event, word)">{{word}}
         </span>
 
-        <button class="btn-sm btn-primary"
+        <button class="btn-sm btn-primary ml-4"
           ng-click="showExampleModal(word,  $event)">Ex.
         </button>
       </div> <!--  nested -->

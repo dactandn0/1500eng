@@ -416,28 +416,20 @@ $scope.Export2Doc = function()
   var postHtml = "</body></html>";
 
   let html = ''
+  let id = $rootScope.bVocaOfEbook ? 'VocaOfEbook' : 'content-to-word'
+  const _DOM = document.getElementById(id)
+  const title = _DOM.getAttribute("title");
 
-  // if in ShowVoca mode
-  if ($rootScope.bVocaOfEbook == true ) 
-  {
-      html = preHtml + document.getElementById('VocaOfEbook').innerHTML + postHtml;
-  }
-  else
-  {
-    html = preHtml + document.getElementById('content-to-word').innerHTML + postHtml;
-  }
+  html = title + '<hr>' + _DOM.innerHTML.replaceAll('[X]', '').replaceAll('[Ex]', '');
 
-  var blob = new Blob(['\ufeff', html], {
-      type: 'application/msword'
-  });
-  
-  // Specify link url
+  html = preHtml + html + postHtml;
+
+  var blob = new Blob(['\ufeff', html], {type: 'application/msword' });
   var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
-  console.log($location.path())
+
   // Specify file name
-  let path = $location.path().replace('/', '')
-  filename = path.length > 0 ? path : 'index'
-  filename += '.doc'
+  // let path = $location.path().replace('/', '')
+  const filename = title + '.doc'
 
   // Create download link element
   var downloadLink = document.createElement("a");
@@ -449,10 +441,8 @@ $scope.Export2Doc = function()
   }else{
       // Create a link to the file
       downloadLink.href = url;
-      
       // Setting the file name
       downloadLink.download = filename;
-      
       //triggering the function
       downloadLink.click();
   }

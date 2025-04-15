@@ -1,6 +1,19 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
+words: "denial  /dɪˈnaɪəl/ | refusal  /rɪˈfjuːzl/ | rejection | rebuff | repudiation  /rɪˌpjuːdiˈeɪʃn/ "
+, type:"n"
+, mean: "sự từ chối" 
+},
+{
+words: "depiction | description | delineation"
+, type:"n"
+, mean: "miêu tả" 
+},{
+words: "intense | strong | vigorous"
+, type:"a"
+, mean: "mạnh" 
+},{
 words: "sense | feel"
 , type:"n"
 , mean: "cảm giác" 
@@ -49,7 +62,7 @@ words: "downturn | decline "
 , type:"n"
 , mean: "sự suy thoái" 
 },{
-words: "intricate | complicated "
+words: "intricate | complicated | perplexing"
 , type:"a"
 , mean: "phức tap" 
 },{
@@ -69,7 +82,7 @@ words: "​classify | digest | distribute"
 , type:"v"
 , mean: "phân loại" 
 }, {
-	words:"important /ɪmˈpɔːrtnt / | crucial /ˈkruːʃl / | significant /sɪɡˈnɪfɪkənt / | be instrumental in",
+	words:"important /ɪmˈpɔːrtnt / | crucial /ˈkruːʃl / | significant /sɪɡˈnɪfɪkənt / | be instrumental in | considerable ",
 	type:"a",
 	mean:"quan trọng"
 },{

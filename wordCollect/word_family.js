@@ -1,4 +1,6 @@
 let WORD_FAMILY_DATA = [
+	"natural (a) | nature (n) | naturalness (n)",
+	"photograph (n) | photography (n) | photographic (a)",
 	"archaeological (a) | archaeology (n) | archaeologist (n)",
 	"approach (n,v) | approachable (a)",
 	"itching (n)| itchy (a)",

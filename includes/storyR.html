@@ -15,7 +15,7 @@
   </h6>
   
   <div class="accordion-content" ng-if="acc_isShow($index)">
-    	<p id="content-to-word" compile="story.enShow" ng-if="!$root.bShowVi"></p>
+    	<p id="content-to-word" title="{{obj.fTitle}}" compile="story.enShow" ng-if="!$root.bShowVi"></p>
     	<p compile="story.viShow" ng-if="$root.bShowVi"></p>
 
       <div ng-include="'./includes/exercise.html'" ></div>

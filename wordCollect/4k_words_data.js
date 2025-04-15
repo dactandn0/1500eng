@@ -457,7 +457,6 @@ war chiến tranh<br>\
 worth đáng giá<br>\
 appear (v) /əˈpɪr/ xuất hiện, giống như (= look)<br>\
 brain (n) /breɪn/ não<br>\
-career nghề nghiệp<br>\
 clerk nhân viên<br>\
 effort nỗ lực<br>\
 enter (v) /ˈentər/ vào<br>\
@@ -468,12 +467,11 @@ inform (v) /ɪnˈfɔːrm/ thông báo<br>\
 leaves (n) lá (plural of leaf) <br>\
 leave (v) /liːv/ để lại, rời đi (vacate)<br>\
 vacate (v) /ˈveɪkeɪt/ để lại, rời đi (leave)<br>\
-locate xác định vị trí<br>\
-operation phẫu thuật<br>\
+locate (v) /ˈləʊkeɪt/ định vị trí<br>\
+operation (n) /ˌɑːpəˈreɪʃn/ phẫu thuật<br>\
 pain đau<br>\
-refuse từ chối<br>\
-though mặc dù<br>\
-various khác nhau<br>\
+refuse (n,v) /rɪˈfjuːz/ (n) đồ vô dụng, (v) từ chối, cự tuyệt<br>\
+various (a) /ˈveriəs/ khác nhau<br>\
 actual thực tế<br>\
 amaze (v) /əˈmeɪz/ kinh ngạc<br>\
 comfort thoải mái<br>\
@@ -838,29 +836,35 @@ carve (v) /kɑːrv/ khắc<br>\
 fortune may mắn<br>\
 guarantee (v) /ɡærənˈtiː/ bảo đảm<br>\
 hike tăng<br>\
-initial,intense ban đầu,mạnh mẽ<br>\
-lend cho vay<br>\
-potential tiềm năng<br>\
+initial ban đầu<br>\
+intense (a) /ɪnˈtens/ mạnh mẽ<br>\
+potential (n,a) /pəˈtenʃl/ tiềm năng<br>\
 pride (n,v) tự cao, kiêu ngạo<br>\
 scientist (n) nhà khoa học<br>\
 proof (n) bằng chứng<br>\
 quit (v) bỏ cuộc<br>\
 spin (v) quay<br>\
+phenomenon (n) hiện tượng (số nhiều: phenomena)<br>\
+phenomena (n) những hiện tượng (số ít: phenomenon)<br>\
+drain (n,v) hút, rút, tháo, làm cạn<br>\
+menial (n,a) người hầu, đầy tớ<br>\
 tutor (n) gia sư<br>\
-chat trò chuyện<br>\
-commit cam kết<br>\
+commit (v)  /kəˈmɪt/ cam kết<br>\
+miniaturist (n) nhà tiểu họa<br>\
 dormitory ký túc xá<br>\
-exhaust khí thải<br>\
-greenhouse nhà kính<br>\
+symptomatic (a) /sɪmptəˈmætɪk/ có triệu chứng<br>\
+exhaust (n)  /ɪɡˈzɔːst/ khí thải<br>\
+greenhouse (n) /ˈɡriːnhaʊs/ nhà kính<br>\
 physics vật lý<br>\
 remind nhắc nhở<br>\
 secretary thư ký<br>\
 severe (a) /sɪˈvɪr/ nghiêm trọng<br>\
-talent tài năng<br>\
+talent (n) tài năng<br>\
 motivator (n) người thúc đẩy<br>\
 thesis luận án<br>\
-uniform đồng phục<br>\
-vision absorb tầm nhìn hấp thụ<br>\
+uniform (n) đồng phục<br>\
+vision (n) tầm nhìn<br>\
+absorb (v) hấp thụ<br>\
 boss ông chủ<br>\
 committee ủy ban<br>\
 crew phi hành đoàn<br>\

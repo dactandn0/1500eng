@@ -2,33 +2,34 @@
 
 <div class="my-4">
   <button class="btn-sm btn-primary"
-  		     ng-show="wordsShow.length > 0"
+  		     ng-show="dataWords.length > 0"
           ng-click="showConfirmModal('Delete all records?', $event)"
   >[X]
   </button> 
 
-  <span><i>{{wordsShow.length}} word(s)</i></span>
+  <span><i>{{dataWords.length}} date(s)</i></span>
 </div>
 
-<div class="text-sm my-4" 
-	ng-repeat="word in wordsShow track by $index">
+<div class="text-sm my-2" 
+	   ng-repeat="dateJson in dataWords track by $index">
+       <p>{{dateJson.date}}</p>
+       <div class="text-sm my-2" 
+          ng-repeat="word in dateJson.words">
 
-       <button class="btn-sm btn-primary mr-2"
-              ng-click="showConfirmModal(word.full, $event)"
-              >
-            X
-       </button> 
+         <button class="btn-sm btn-primary mr-2"
+              ng-click="showConfirmModal(word, dateJson.date)"
+              > X
+        </button> 
 
+        <span
+          ng-click="Index_Speak($event, word)">{{word}}
+        </span>
 
-      <span ng-if="word.p1.length>0"
-        ng-click="Index_Speak($event, word.full)"
-        ng-bind-html="word.p1">
-    </span>
-    
-      <span ng-if="word.p2.length>0"
-        ng-click="showExampleModal(word.full, $event)"
-        ng-bind-html="word.p2">
-    </span>
+        <button class="btn-sm btn-primary"
+          ng-click="showExampleModal(word,  $event)">Ex.
+        </button>
+      </div> <!--  nested -->
+
 </div>
 
 

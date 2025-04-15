@@ -33,39 +33,63 @@ Helper_saveAudioLoop = function(val) {
 }
 
 
-// include '@'
-Helper_SeqNoteFetchDB = function() {
+Helper_SeqNoteFetchDB = function() 
+{
 	return Helper_loadStr("vocaNotedSeq", "")
 }
 
-// isFull for highlight noted word
-Helper_NoteFetchDB = function(isFull = true) {
+Helper_NoteFetchDB = function() 
+{
+	dataWords = []
 	const kDatabase = Helper_SeqNoteFetchDB()
-	dataWords = kDatabase.trim().split("@");
+	if (!kDatabase) return []
 
-	//remove element that length = 0
-	dataWords = dataWords.filter(String)
-	if (!isFull)
+	let wordsOfDates = kDatabase.trim().split("|").filter(String);
+	for (var i = 0; i < wordsOfDates.length; i++) 
 	{
-		for (var i = 0; i < dataWords.length; i++) {
-			const firstEnVoca = dataWords[i].split(' ')[0]
-			dataWords[i] = firstEnVoca
+		let dateData = wordsOfDates[i]
+		const spt =  dateData.split('#')
+		const json = {
+			date: spt[0],
+			words: spt[1].split('@').filter(String)
 		}
+		dataWords.push(json)
 	}
+//	console.log(dataWords)
 	return dataWords;
 }
 
-Helper_IsWordSavedBefore = function(word) {
-  const words = word.split(' ');
-  if (words && words.length > 1) word = words[0].toLowerCase()
-  var el = Helper_NoteFetchDB().find(ele => ele.toLowerCase().includes(word));
-  return el != undefined
+Helper_IsWordSavedBefore = function(word) 
+{
+  const prev = Helper_SeqNoteFetchDB().toLowerCase()
+  const rs = prev.includes(word.toLowerCase())
+  return rs
 } 
 
+Helper_NoteClearDB = function() 
+{
+	Helper_saveDB("vocaNotedSeq", '');
+}
 
 Helper_NoteSaveDB = function(word) 
 {
 	let prev = Helper_SeqNoteFetchDB()
-	prev += '@' + word
+	let arr = prev.split('|').filter(String)
+	const date = Helper_GetNow()
+	const idx = arr.findIndex(ele => ele.includes(date))
+	if (idx >= 0 ) // edit
+	{
+		let obj = arr[idx]
+		console.log(obj)
+		obj += '@' + word
+		arr[idx] = obj
+
+		prev = arr.join('|')
+	}
+	else // add new
+	{
+		prev += '|' + date + '#' + word
+	}
+
 	Helper_saveDB("vocaNotedSeq", prev);
 }

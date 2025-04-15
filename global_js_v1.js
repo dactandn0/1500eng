@@ -200,7 +200,7 @@ function processStory (story, isAlert = true) {
 	var phraVerbs = foundWords.phraVerbs || []
 	var specialWords = foundWords.specialWords || []
 	var dones = []
-	//var notedDBArr = Helper_NoteFetchDB(false)
+	
 	for (var i = 0; i < words.length; i++) 
 	{
 		var word = words[i];

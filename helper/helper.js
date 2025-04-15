@@ -1,4 +1,8 @@
 
+function Helper_GetNow()
+{
+	return new Date().toISOString().slice(0, 10);
+}
 
 function softArrStr(arrInput, giamDan = true)
 {

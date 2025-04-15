@@ -228,7 +228,7 @@ $scope.searchGG = function ()
   const input =  $scope.search
   Helper_GG_API($http, input).then (res => {
     const VN = res.data[0][0][0];
-      doShowToast(input + ' <b style="color:orange">/(gg)/</b> ' + VN, false);  // longtext = false
+      doShowToast(input + ' <b style="color:orange">/(gg)/</b> ' + VN, false, input);  // longtext = false
     }, err => {
       alert(err)
     });
@@ -296,14 +296,14 @@ $scope.Idx_n_L_WSp_ = function (event)
   {
     Helper_GG_API($http, touchedWord).then (res => {
       const vietnamese = res.data[0][0][0];
-      doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + vietnamese + result.full, isLongText);
+      doShowToast(( isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + vietnamese + result.full, isLongText, touchedWord);
     }, err => {
       alert(err)
     });
   }
   else
   {
-    doShowToast(result.full , isLongText)
+    doShowToast(result.full , isLongText, touchedWord)
   }
   Text2Speech(touchedWord);
 }
@@ -322,13 +322,14 @@ ngClickSpeechShowToastUseNode = function (pNode)
   );
 }
 
-function doShowToast(content, isLongText) 
+function doShowToast(content, isLongText, touchedWord) 
 {
   let btnSave  = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
   let toasterTimeout = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000 // s
-  if (isLongText || Helper_IsWordSavedBefore(content)) {
+  if (isLongText || Helper_IsWordSavedBefore(touchedWord)) 
+  {
    btnSave = ''
- } else saveFromToastVal = content;
+  } else saveFromToastVal = content;
  
  toastr.info(btnSave, content, {
   allowHtml: true,
@@ -356,7 +357,7 @@ $scope.showExampleModal = function(wordFull, event) {
   
 };
 
-$scope.showConfirmModal = function(wordFull, event) {    
+$scope.showConfirmModal = function(wordFull, date) {    
   appAlert.confirm({
     title: 'Confirm delete!',
     message: 'Do you want to delete this record ?',
@@ -366,7 +367,7 @@ $scope.showConfirmModal = function(wordFull, event) {
       if (wordFull.indexOf("all") >=0) 
         VocaNotedCtrl.removeAllNoted();
       else
-        VocaNotedCtrl.removeNote(wordFull, event)
+        VocaNotedCtrl.removeNote(wordFull, date)
     }
   });
 };

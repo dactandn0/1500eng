@@ -181,13 +181,19 @@ function processStory (story, isAlert = true) {
 //	if (bHasVi) viShow= fixDots(viShow)
 
 	var foundWords = IRR_ExtractWords(story)
-	
+
+	var words = foundWords.words
+	var phraVerbs = foundWords.phraVerbs || []
+	var specialWords = foundWords.specialWords || []
+
 	if (story.voca) {
 		var vocas = story.voca.split(',');
 		for (var i = 0; i < vocas.length; i++) {
 			voca = vocas[i].trim();
 
-	//		if (IsIgnoreVocaBold(voca, foundWords)) continue;
+			// dont bold specical_words
+			const idx = specialWords.findIndex(ele => ele.includes(voca) == true)
+			if (idx >= 0) continue;
 
 			voca = voca.replace(/\[.*\]/g, '').trim();
 			var regex = new RegExp(`\\b${voca}\\b` , 'g')
@@ -196,9 +202,7 @@ function processStory (story, isAlert = true) {
 		}
 	}
 
-	var words = foundWords.words
-	var phraVerbs = foundWords.phraVerbs || []
-	var specialWords = foundWords.specialWords || []
+
 	var dones = []
 	
 	for (var i = 0; i < words.length; i++) 
@@ -209,7 +213,6 @@ function processStory (story, isAlert = true) {
 			enShow = hLightWord(word, phraVerbs, enShow , PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END );
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow , UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END );
 			enShow = hLightWord(word, arrNOUN_SAME_VERBS, enShow , SAME_N_V_TAG_BEGIN, SAME_N_V_TAG_END );
-		//	enShow = hLightWord(word, notedDBArr, enShow , NOTED_WORD_TAG_BEGIN, NOTED_WORD_TAG_END );
 			enShow = ngClickOnWord(word, enShow);
 			dones.push(word);
 		}

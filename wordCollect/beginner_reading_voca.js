@@ -9,6 +9,7 @@ operator (n) toán tử (IT), người điều hành, thợ, tổng đài viên<
 operand (n) toán hạng (A+B=C, so A,B is operand)<br>\
 concatenation (n) /kənˌkætəˈneɪʃn/ sự nối tiếp<br>\
 exponentiation (n) sự lũy thừa (IT) <br>\
+present /ˈpreznt/ n. món quà, a. hiện tại | (v) /pri'zent/ thuyết trình<br>\
 sometimes (adv) thỉnh thoảng<br>\
 combination (n) /ˌkɑːmbɪˈneɪʃn/ sự kết (tổ ) hợp, chất hóa hợp<br>\
 urge (n,v) /ɜːrdʒ/ thúc giục<br>\

@@ -162,7 +162,7 @@ B: Vâng, nếu bạn có DSL, trò chuyện không tốn kém. Ngoài ra, khôn
 W: Đúng vậy. Tuy nhiên, tôi đã đọc rằng có rất nhiều người lạ trực tuyến rất nguy hiểm.<br>\
 B: Tôi sẽ cẩn thận. Bên cạnh đó, bạn luôn có thể xem những gì tôi đang viết và tôi đang viết cho ai. Theo tôi, lỗi lớn nhất khi trò chuyện trực tuyến là thời gian trễ hoặc sự chậm trễ trong hệ thống.<br>\
 W: Tôi đồng ý, tôi đã nhận thấy rằng có một số thời gian trễ khi bạn rời khỏi máy tính!",
-voca:"articles,share,mention,educational,fault,socialize,addicted,disabled,accessible,lag"
+voca:"articles,share,mention,educational,fault,socialize,addicted,disabled,accessible,lag,addict,addictive"
 },
 {unit:10,title:"The Nobel Prize"
 ,en:"One of the greatest achievements in the world is to win the Nobel Prize. It has been given to people since 1901. There are prizes for physics, chemistry, and medicine. There are also prizes for literature, economics, and peace. The Nobel Prize is named after Alfred Nobel. He was born in Stockholm, Sweden, in 1833. Alfred Nobel invented dynamite in 1866. Dynamite is used in mining, construction, and war. Before he died, he wrote that all of his money should be used to create the Nobel Prize. He died in 1896. The first prize was given in 1901.<br>\

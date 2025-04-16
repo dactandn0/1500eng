@@ -1,4 +1,6 @@
 let WORD_FAMILY_DATA = [
+	"inaccurate (a) | accurate (a)",
+	"information (n) | misinformation (n)",
 	"natural (a) | nature (n) | naturalness (n)",
 	"photograph (n) | photography (n) | photographic (a)",
 	"archaeological (a) | archaeology (n) | archaeologist (n)",

@@ -1,10 +1,11 @@
 
 document.write('<script src="./grammer/grammer_data.js" type="text/javascript"></script>');
+document.write('<script src="./grammer/grammer_data2.js" type="text/javascript"></script>');
 
 var app = angular.module("grammerApp", ['ngSanitize']);
 app.controller("grammerCtrl", function($scope, $rootScope, $timeout) {
 
-var kDATA = GRAMMER_DATA;
+var kDATA = GRAMMER_DATA.concat(GRAMMER_DATA2);
 
 $scope.img_root = './grammer/images' ; 
 

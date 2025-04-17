@@ -394,8 +394,9 @@ function IsExisted(seq, word)
 {
 	let seqs = seq.split('|')
 	const idx = seqs.findIndex(ele => ele.replace(/\(.*\)/,'').replace(/\/.*\//, '').trim() == word)
+//	console.log('IsExisted: ' + idx)
 	return idx >= 0
 }
 
- getWordSynonym('convenient')
+// getWordSynonym('convenient')
 

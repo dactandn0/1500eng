@@ -84,8 +84,6 @@ let WORD_FAMILY_DATA = [
 
 
 
-
-
 function getWordFamily(word)
 {
 	word = word.toLowerCase()
@@ -96,15 +94,15 @@ function getWordFamily(word)
 		if (IsExisted(words, word))
 		{
 			arr = words.split('|')
-			arr = arr.filter(e => e.indexOf(word) == -1)
+			arr = arr.filter(e => e != word)
 			break
 		}
 	}
 	var rr = arr.join()
-	// console.log(rr)
+//	console.log(rr)
 	if (rr.length > 0) rr = ' [f. ' + rr + ']'
 	return rr
 }
 
 
-// getWordFamily('rate')
+//	console.log( getWordFamily('information'))

@@ -48,7 +48,7 @@ $scope.acc_click = function (id) {
 		var arr = element.en.split("<br>");
 		for (var i = 0; i < arr.length; i++) {
 			var  word = arr[i];
-			word = Helper_IsUncountNoun(word)
+			word = Helper_hlUncNoun(word)
 			$scope.words.push(Helper_SliceHalfString(word))
 		}
 		_scrollIntoView(id);

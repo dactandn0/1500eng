@@ -384,15 +384,15 @@ PRACTICE FOR LESSON 8: ( PAGE 84)<br>\
 1. 'S + V. THEREFORE, S + V' : Chỉ kết quả<br>\
 	'S + V; THEREFORE, S + V'<br>\
 <br>\
-2. 'HAVE A POSITIVE/ BENEFICIAL IMPACT ON SOMETHING' : Có ảnh hưởng tốt đến cái gì<br>\
+2. 'HAVE A POSITIVE/ BENEFICIAL IMPACT ON Sth' : Có ảnh hưởng tốt đến cái gì<br>\
 <br>\
-'HAVE A NEGATIVE/ DETRIMENTAL/ HARMFUL/ ADVERSE IMPACT ON SOMETHING': Có ảnh hưởng xấu đến cái gì<br>\
-Lưu ý: S + impact(s/es/ed)/ affect (s/es/ed) + something : impact hoặc affect đóng vai trò động từ thì khi có giới từ theo sau<br>\
+'HAVE A NEGATIVE/ DETRIMENTAL/ HARMFUL/ ADVERSE IMPACT ON Sth': Có ảnh hưởng xấu đến cái gì<br>\
+Lưu ý: S + impact(s/es/ed)/ affect (s/es/ed) + Sth : impact hoặc affect đóng vai trò động từ thì khi có giới từ theo sau<br>\
 <br>\
-3. HELP SOMEBODY (TO) DO SOMETHING/ WITH DOING SOMETHING: Giúp đỡ ai làm gì<br>\
+3. HELP SOMEBODY (TO) DO Sth/ WITH DOING Sth: Giúp đỡ ai làm gì<br>\
 <br>\
-4. DETER /dɪˈtɜː(r)/ SOMEBODY FROM DOING SOMETHING<br>\
-= DISCOURAGE SOMEBODY FROM DOING SOMETHING: Ngăn ai không làm việc gì"
+4. DETER /dɪˈtɜː(r)/ SOMEBODY FROM DOING Sth<br>\
+= DISCOURAGE SOMEBODY FROM DOING Sth: Ngăn ai không làm việc gì."
 },{
 	title:"Lesson 9 - PROBLEMS - SOLUTIONS ESSAY"
 	,en:"More and more people are migrating to cities in search of a better life, but city life can be extremely difficult. Explain some of the difficulties of living in a city. How can governments make urban life better for everyone? <br>\
@@ -458,7 +458,7 @@ FE [giải mẫu]: People are not fully aware of the significance of nature. Thi
 <i>Environmental protection is the responsibility of politicians, not individuals as individuals can do too little.</i> To what extent do you agree or disagree?<br>\
 Negligible = insignificant : không đáng kể<br>\
 Contend - argue - believe<br>\
-Responsibility (n) - someone be responsible for something: ai phải chịu trách nhiệm cho việc gì<br>\
+Responsibility (n) - someone be responsible for Sth: ai phải chịu trách nhiệm cho việc gì<br>\
 Contribute (v) - contribution (n)<br>\
 Individuals = people = citizens<br>\
 Politicians - authorities/ the government<br>\

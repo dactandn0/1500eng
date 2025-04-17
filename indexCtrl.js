@@ -128,7 +128,8 @@ $scope.clearSearch = function () {
  // document.getElementById("searchTyping").focus();
 };
 
-$scope.saveNoted = function(word, isFromToastr) {
+$scope.saveNoted = function(word, isFromToastr) 
+{
   word = removeHtmlTags(word)
   if (word.length >= 2) 
   {
@@ -140,7 +141,7 @@ $scope.saveNoted = function(word, isFromToastr) {
 
     toastr.success("Saved: " + word, {allowHtml:true });
 
-    if (!isFromToastr) $scope.clearSearch()
+  //  if (!isFromToastr) $scope.clearSearch()
   } else 
 {
   toastr.error("Existed. Save failed")
@@ -160,11 +161,13 @@ $scope.searchTyping = function() {
   for (var i = 0; i < searchData.length; i++) {
    var dataVN = searchData[i];
    data = removeVietnameseTones(dataVN.toLowerCase());
-   if (data.includes(search)) {
-    dataVN = Helper_IsUncountNoun(dataVN)
-    $scope.searchDataResult.push(Helper_SliceHalfString(dataVN));
-  }
-}
+
+   if (data.includes(search)) 
+   {
+    $scope.searchDataResult.push(dataVN);
+    }
+
+  } // for
 }
 
 $scope.findSameWord = function() {
@@ -187,8 +190,10 @@ saveFromToastr = function () {
 }
 
 // search
-$scope.Index_Speak = function (event, word) {
-  ngClickSpeechShowToast(word, false)
+$scope.Index_Speak = function (event, word) 
+{
+  word = Helper_GetVocaFromWordFull(word)
+  Text2Speech(word)
 }
 
 $scope.Index_NoteVoca_Speak = function (word) {
@@ -316,7 +321,7 @@ function doShowToast(content, isLongText, touchedWord)
   if (isLongText || Helper_IsWordSavedBefore(touchedWord)) 
   {
    btnSave = ''
-  } else saveFromToastVal = touchedWord;
+  } else saveFromToastVal = content;
  
  toastr.info(btnSave, content, {
   allowHtml: true,

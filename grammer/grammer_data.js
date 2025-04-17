@@ -39,7 +39,6 @@ We have less time today.<br>\
 I drank less milk than you.<br>\
 <br>\
 * Không dùng less với plural countable noun (dùng fewer).<br>\
-<br>\
 [x] She has less books than me.<br>\
 [v] She has fewer books than me.<br>\
 <br>\
@@ -53,6 +52,16 @@ Less than = ít hơn<br>\
 <br>\
 I have more money than you.<br>\
 She is less patient than her sister."
+},{
+	title:"Special nouns"
+	,en:"jeans, pants, scissors, glasses, news, clothes, food<br>\
+a (two, three) pair of jeans / pants/ glasses / shoes<br>\
+news : uncountable noun<br>\
+a loaf of bread, some bread<br>\
+a piece of paper<br>\
+a cube/spoonful of sugar<br>\
+an item of clothing<br>\
+[x] an item of clothes (clothes is a plural noun)."
 },
 {
 	title:"Many/much/each",
@@ -86,7 +95,7 @@ any + plural countable N (nhiều hơn một)<br>\
 - Scores of: số lượng lớn<br>\
 - A large number of: một số lượng lớn<br>\
 - A multitude of: rất nhiều<br>\
-- A great deal of: rất nhiều (uncountable)",
+- A great deal of: rất nhiều (uncountable).",
 },{
 	title:"[Englab] so/ such/ enough/ too"
 	,images:["englab-so-much"]

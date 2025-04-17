@@ -54,7 +54,9 @@ youth,yeast,zoology,zinc";
 
 const NGUYEN_AM = 'ueoai'
 
-function Helper_IsUncountNoun(wordInput) {
+// highlight unc.noun
+function Helper_hlUncNoun(wordInput) 
+{
 	var word = wordInput
 	if (wordInput.indexOf(" ") >= 0)
 	{

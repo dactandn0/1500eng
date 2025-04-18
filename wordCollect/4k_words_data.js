@@ -200,7 +200,7 @@ oldest (a) ss nhất của Old (về tuổi tác)<br>\
 elder (a) ss hơn của Old (về cấp bậc)<br>\
 elderly (a) /ˈeldərli/ người già<br>\
 eldest (a) ss nhất của Old (về cấp bậc)<br>\
-experience (n) /ɪkˈspɪriəns/ kinh nghiệm<br>\
+experience (n,v) /ɪkˈspɪriəns/ kinh nghiệm, trải qua<br>\
 hurt (n,v) tổn thương<br>\
 judgment (n) /ˈdʒʌdʒmənt/ phán đoán<br>\
 likely (a) /ˈlaɪkli/ khả năng, rất có thể<br>\
@@ -446,8 +446,9 @@ basic cơ bản<br>\
 bit một chút<br>\
 consider (v) /kənˈsɪdər/ cân nhắc, được xem [take into account]<br>\
 destroy phá hủy<br>\
-entertain giải trí<br>\
-extra thêm<br>\
+entertain (v) giải trí<br>\
+entertainment (n) giải trí, vui chơi, cuộc vui<br>\
+leisure (n) /ˈliːʒər/ rảnh rỗi<br>\
 goal mục tiêu<br>\
 meat thịt<br>\
 reflect phản ánh<br>\

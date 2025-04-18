@@ -1,7 +1,7 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
-words: "denial  /dɪˈnaɪəl/ | refusal  /rɪˈfjuːzl/ | rejection | rebuff | repudiation  /rɪˌpjuːdiˈeɪʃn/ "
+words: "denial /dɪˈnaɪəl/ | refusal /rɪˈfjuːzl/ | rejection | rebuff | repudiation /rɪˌpjuːdiˈeɪʃn/ "
 , type:"n"
 , mean: "sự từ chối" 
 },
@@ -9,6 +9,10 @@ words: "denial  /dɪˈnaɪəl/ | refusal  /rɪˈfjuːzl/ | rejection | rebuff | 
 words: "depiction | description | delineation"
 , type:"n"
 , mean: "miêu tả" 
+},{
+words: "suffering (a) /ˈsʌfərɪŋ/ | distress (n) /dɪˈstres/"
+, type:"n"
+, mean: "đau khổ" 
 },{
 words: "intense | strong | vigorous"
 , type:"a"

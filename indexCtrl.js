@@ -193,7 +193,7 @@ saveFromToastr = function () {
 $scope.Index_Speak = function (event, word) 
 {
   word = Helper_GetVocaFromWordFull(word)
-  Text2Speech(word)
+  ngClickSpeechShowToast(word)
 }
 
 $scope.Index_NoteVoca_Speak = function (word) {

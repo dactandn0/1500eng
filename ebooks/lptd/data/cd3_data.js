@@ -285,7 +285,8 @@ W: Do you really mean any topping, even mushrooms, which you don't like?<br>\
 M: Yes, I will even order a pizza with mushrooms! <br>\
 W: OK, Michael. I will try this last ride.<br>\
 M: Great, Fran! I know you will enjoy this. Did you know that when the volcano erupts, our seats shake? I heard it is quite an experience.<br>\
-W: I am not sure that I want to get on this ride anymore. M: Don't worry, Fran. Look at the people getting off the ride. They look very satisfied.<br>\
+W: I am not sure that I want to get on this ride anymore.<br>\
+M: Don't worry, Fran. Look at the people getting off the ride. They look very satisfied.<br>\
 W: I'm sorry, but I don't think I can do this, even for pizza. How would you feel if I bought lunch instead?<br>\
 M: I don't want to force you to do something you really don't want to do. And I am hungry. Sure, let's get some lunch.<br>\
 W: I want to try this new restaurant called Skylight. The top of the restaurant spins while you eat!<br>\
@@ -297,7 +298,8 @@ W: Bạn thực sự muốn nói đến bất kỳ loại topping nào, ngay c�
 M: Vâng, tôi thậm chí sẽ gọi một chiếc pizza với nấm! <br>\
 W: Được thôi, Michael. Tôi sẽ thử trò chơi cuối cùng này.<br>\
 M: Tuyệt, Fran! Tôi biết bạn sẽ thích trò này. Bạn có biết rằng khi núi lửa phun trào, ghế của chúng ta rung chuyển không? Tôi nghe nói đó là một trải nghiệm khá thú vị.<br>\
-W: Tôi không chắc mình có muốn tham gia trò chơi này nữa không. M: Đừng lo, Fran. Nhìn những người xuống khỏi trò chơi này kìa. Họ trông rất thỏa mãn.<br>\
+W: Tôi không chắc mình có muốn tham gia trò chơi này nữa không.<br>\
+M: Đừng lo, Fran. Nhìn những người xuống khỏi trò chơi này kìa. Họ trông rất thỏa mãn.<br>\
 W: Tôi xin lỗi, nhưng tôi không nghĩ mình có thể làm được, ngay cả khi mua pizza. Bạn sẽ cảm thấy thế nào nếu tôi mua bữa trưa thay thế?<br>\
 M: Tôi không muốn ép bạn làm điều mà bạn thực sự không muốn làm. Và tôi đói. Được thôi, chúng ta hãy đi ăn trưa.<br>\
 W: Tôi muốn thử nhà hàng mới có tên là Skylight. Phần trên của nhà hàng sẽ quay trong khi bạn ăn!<br>\

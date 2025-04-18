@@ -454,6 +454,7 @@ battery (n) /ˈbæt.ər.i/ pin<br>\
 click (n) /klɪk/ nhấp chuột<br>\
 type (n) /taɪp/ đánh chữ, gõ chữ<br>\
 mouse (n) /maʊs/ con chuột<br>\
+mice (n) plural of mouse<br>\
 keyboard (n) /ˈkiː.bɔːd/ bàn phím<br>\
 mouse mat (n) /ˈmaʊs mæt/ miếng lót chuột<br>\
 shut down (v) /ʃʌt daʊn/ tắt máy<br>\
@@ -1416,7 +1417,10 @@ thigh (n) /θaɪ/ đùi<br>\
 knee (n) /niː/ đầu gối<br>\
 hand (n) /hænd/ bàn tay<br>\
 thumb (n) /θʌm/ ngón tay cái<br>\
+tooth (n) /tuːθ/ răng<br>\
+teeth (n) /tuːθ/ plural of tooth<br>\
 foot (n) /fʊt/ bàn chân<br>\
+feet (n) /fiːt/ plural of foot<br>\
 finger (n) /ˈfɪŋ.ɡər/ ngón tay<br>\
 toe (n) /toʊ/ ngón chân",
 },
@@ -1566,7 +1570,7 @@ horse (n) /hɔːrs/ ngựa<br>\
 goose (n) /ɡuːs/ ngỗng<br>\
 squirrel (n) /ˈskwɜːrəl/ sóc<br>\
 donkey (n) /ˈdɒŋ.ki/ lừa<br>\
-sheep (n) /ʃiːp/ cừu<br>\
+sheep (n) /ʃiːp/ cừu (plural = sheep)<br>\
 chicken (n) /ˈtʃɪk.ɪn/ gà<br>\
 rooster (n) /ˈruː.stər/ gà trống<br>\
 hen (n) /hɛn/ gà mái<br>\
@@ -1661,7 +1665,7 @@ shrimp (n) /ʃrɪmp/ tôm<br>\
 oyster (n) /ˈɔɪ.stər/ hàu<br>\
 cockle (n) /ˈkɒk.əl/ sò<br>\
 scallop (n) /ˈskɒl.əp/ sò điệp<br>\
-fish (n) /fɪʃ/ cá<br>\
+fish (n) /fɪʃ/ cá (plural = fish)<br>\
 eel (n) /iːl/ lươn<br>\
 mussel (n) /ˈmʌsəl/ vẹm<br>\
 clam (n) /klæm/ nghêu<br>\

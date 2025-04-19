@@ -354,32 +354,31 @@ exam kiểm tra<br>\
 example ví dụ<br>\
 limit (n) /ˈlɪmɪt/ giới hạn<br>\
 local (a) /ˈləʊkl/ cục bộ, dân địa phương<br>\
-magical ma thuật<br>\
+magical (a) /ˈmædʒɪkl/ ma thuật<br>\
 dragon (n) /ˈdræɡən/ rồng<br>\
 outline (n) /ˈaʊtlaɪn/ phác thảo<br>\
-poet nhà thơ<br>\
-print in<br>\
-sheet tờ<br>\
+poet (n) /ˈpəʊət/ nhà thơ<br>\
 store cửa hàng<br>\
 suffer chịu đựng<br>\
 marble (n) /ˈmɑːrbl/ đá cẩm thạch<br>\
 technology (n) /tekˈnɑːlədʒi/ công nghệ<br>\
 vividly (adv) /ˈvɪvɪdli/ sống động<br>\
-across xuyên<br>\
+across (prep) /əˈkrɔːs/ xuyên<br>\
 breathe hít thở<br>\
 characteristic (n) /kærəktəˈrɪstɪk/ đặc điểm(tính)<br>\
-consume tiêu thụ<br>\
-pagoda (n) /pəˈɡəʊdə/ Chùa<br>\
-excite kích thích<br>\
+consume (v) /kənˈsuːm/ tiêu thụ<br>\
+pagoda (n) /pəˈɡəʊdə/ chùa<br>\
+excite (v) kích thích<br>\
 extreme (a) /ɪkˈstriːm/ cực kỳ<br>\
-fear sợ hãi<br>\
-fortunate may mắn<br>\
+fear (n,v) sợ hãi<br>\
+fortunate (a) /ˈfɔːrtʃənət/ may mắn<br>\
+unfortunate (a) /ʌnˈfɔːrtʃənət/ ko may mắn<br>\
 happen xảy ra<br>\
 length (n) /leŋkθ/ chiều dài<br>\
-mistake sai lầm<br>\
+mistake (n) /mɪˈsteɪk/ sai lầm<br>\
 livable (a) /ˈlɪvəbl/ có thể sống<br>\
 observe (v) /əbˈzɜːrv/ quan sát<br>\
-opportunity cơ hội<br>\
+opportunity (n) cơ hội<br>\
 prize (n) /praɪz/ giải thưởng<br>\
 realize (v) /ˈriːəlaɪz/ nhận ra<br>\
 respond (v) /rɪˈspɑːnd/ phản ứng<br>\
@@ -560,7 +559,6 @@ imply ngụ ý<br>\
 maintain duy trì<br>\
 neither không<br>\
 otherwise nếu không<br>\
-physical vật lý<br>\
 prove (v) /pruːv/ chứng minh<br>\
 react phản ứng<br>\
 ride đi xe<br>\
@@ -836,8 +834,8 @@ billion /ˈbɪljən/ tỷ<br>\
 carve (v) /kɑːrv/ khắc<br>\
 fortune may mắn<br>\
 guarantee (v) /ɡærənˈtiː/ bảo đảm<br>\
-hike tăng<br>\
-initial ban đầu<br>\
+hike (n) /haɪk/ tăng<br>\
+initial (a) /ɪˈnɪʃl/ ban đầu<br>\
 intense (a) /ɪnˈtens/ mạnh mẽ<br>\
 potential (n,a) /pəˈtenʃl/ tiềm năng<br>\
 pride (n,v) tự cao, kiêu ngạo<br>\
@@ -850,15 +848,14 @@ phenomena (n) những hiện tượng (số ít: phenomenon)<br>\
 drain (n,v) hút, rút, tháo, làm cạn<br>\
 menial (n,a) người hầu, đầy tớ<br>\
 tutor (n) gia sư<br>\
-commit (v)  /kəˈmɪt/ cam kết<br>\
+commit (v) /kəˈmɪt/ cam kết<br>\
 miniaturist (n) nhà tiểu họa<br>\
-dormitory ký túc xá<br>\
+dormitory (n) (plural dormitories) ký túc xá<br>\
 symptomatic (a) /sɪmptəˈmætɪk/ có triệu chứng<br>\
 exhaust (n)  /ɪɡˈzɔːst/ khí thải<br>\
 greenhouse (n) /ˈɡriːnhaʊs/ nhà kính<br>\
-physics vật lý<br>\
 remind nhắc nhở<br>\
-secretary thư ký<br>\
+secretary (n) /ˈsekrəteri/ thư ký<br>\
 severe (a) /sɪˈvɪr/ nghiêm trọng<br>\
 talent (n) tài năng<br>\
 motivator (n) người thúc đẩy<br>\
@@ -867,11 +864,11 @@ uniform (n) đồng phục<br>\
 vision (n) tầm nhìn<br>\
 absorb (v) hấp thụ<br>\
 boss ông chủ<br>\
-committee ủy ban<br>\
+committee (n) /kəˈmɪti/ ủy ban<br>\
 crew phi hành đoàn<br>\
 devote cống hiến<br>\
 dig đào<br>\
-dine ăn tối<br>\
+dine (v) ăn cơm trưa<br>\
 donate quyên góp<br>\
 double gấp đôi<br>\
 elevate,flavor nâng cao,hương vị<br>\
@@ -1087,7 +1084,7 @@ twin (n) con sinh đôi, (v) sinh đôi<br>\
 witch phù thủy <br>\
 accompany đi cùng (+to) (+by: passive)<br>\
 bare (a) trần truồng<br>\
-cast cast<br>\
+cast (n,v) ném, liệng, diễn viên<br>\
 dare dám liều mao hiểm<br>\
 electronic (a) /i,lek'tronik/ thuộc điện tử<br>\
 electronics (n)  thiết bị điện tử<br>\

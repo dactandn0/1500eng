@@ -1,6 +1,10 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
+words: "fortune | luck"
+, type:"n"
+, mean: "sự từ chối" 
+},{
 words: "denial /dɪˈnaɪəl/ | refusal /rɪˈfjuːzl/ | rejection | rebuff | repudiation /rɪˌpjuːdiˈeɪʃn/ "
 , type:"n"
 , mean: "sự từ chối" 

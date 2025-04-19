@@ -1,4 +1,7 @@
 let WORD_FAMILY_DATA = [
+	"fortunate (a) | unfortunate (a)",
+	"unlucky (a) | lucky (a)",
+	"enjoyable (a) | enjoy (v)",
 	"inaccurate (a) | accurate (a)",
 	"information (n) | misinformation (n)",
 	"natural (a) | nature (n) | naturalness (n)",

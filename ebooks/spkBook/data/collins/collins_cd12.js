@@ -236,6 +236,13 @@ let collins_cd12 = [
 	,voca:"",
 },
 {
+	track:"1.22"
+	,en:"Tell me about your country's climate. <br>\
+What's your favourite kind of weather? <br>\
+Does the weather influence your mood? <br>\
+Is it worse to feel too hot or too cold? "
+},
+{
 	track: "1.23",
 	en:"Examiner: Tell me about your country's climate.<br>\
 	Candidate: We have an extreme climate. Our winters are absolutely freezing, and our summers are boiling hot. That means that the people, the houses, the transport system, everything needs to be prepared to cope with every kind of weather.<br>\
@@ -302,6 +309,22 @@ let collins_cd12 = [
 	I would use Spanish primarily when going on holiday. I've been to Spain many times, and I always find that if you go off the beaten track irs difficult to find people who speak English. You get very good at speaking with your hands! And irs difficult to really engage with people and understand the culture if you don't speak the language. Speaking Spanish would. undoubtedly make my holidays a lot easier and more enjoyable. On top of that, the company I work for has an office in Madrid and it would also be very interesting to be able to work there. I would enjoy the challenge and the exposure to a new culture. It would be such an exciting opportunity. To make the move, though, I'd obviously need to be able to speak Spanish. Luckily, my company would most likely sponsor me to have Spanish lessons.<br>\
 	Examiner: Where have you been in Spain? <br>\
 	Candidate: I've been to Spain many times and each time I did a road trip. One trip was in the north of Spain, travelling from France across the Pyrenees, through the Basque country and all the way down to Madrid."
+},{
+	track:"1.35"
+	,en:"Examiner: Is it considered important in your country to learn foreign languages? <br>\
+More than just important, it's considered essential. The English poet John Donne said 'no man is an island', and I think in this day and age that is also true of countries: we are all intricately connected. A country that wants to do business abroad and export its goods has to know how to communicate with foreigners, and that means speaking foreign languages.<br>\
+Examiner: What, in your opinion, is the best way to learn a language? <br>\
+Undoubtedly, the best way is to go and live in a country where the language is spoken as a native language. But that is not enough - I have friends who have done just that, but they stuck together with people who spoke their language and so they hardly learnt anything. You have to immerse yourself completely in the language and the culture.<br>\
+This takes courage but is well worth the effort. One of my friends went to study in England and got an English boyfriend. Her English improved dramatically in just a few months, so arguably that's the best way!<br>\
+Examiner: Why are some people seemingly better at learning languages than others? <br>\
+it's true that some people seem to pick up language really easily. Being bilingual from a young age certainly helps because the more languages you speak, the more easily you acquire a new one. Another major factor is motivation: two people can study the same materials for the same number of hours but the person who is more motivated will learn more and remember better what they've learnt. I really believe that the more you care about learning a language, the more effortlessly you will pick it up.<br>\
+Examiner: How do people in your country feel about English being the world language? <br>\
+I don't think most people feel anything exactly; they just see it as something inevitable. They don't fight it because that would just leave them trailing behind other countries that embrace English as the global lingua franca. Not learning English would leave us economically disadvantaged.<br>\
+Examiner: Do you think the culture of English-speaking countries, as well as the English language, dominate the world?<br>\
+The rise of the Internet has certainly increased the dominance of English, and therefore also the spread of English and American ways of seeing the world. I think we are all expected to conform. Also, the majority of young people in my country like to watch American films and listen to American music: it's considered trendy to do so. So, yes, I would definitely say that the culture of English-speaking countries holds much sway all<br>\
+over the world. <br>\
+Examiner: Why do you think people feel it is important to continue speaking their local languages? <br>\
+There is a backlash in some quarters against the spread of English. One way this is expressed is by the insistence on maintaining local languages. A local language is more than just words. It links a community with its past, with its heritage, and so if you stop speaking your language, you lose a part of yourself."
 }
 
 

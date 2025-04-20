@@ -1,5 +1,5 @@
 
-let GRAMMER_DATA2 =
+let SUBLESSON_DATA2 =
 [
 {
 title:"Sentence Examples",

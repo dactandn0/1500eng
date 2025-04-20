@@ -11,7 +11,7 @@ var VocaToUI = WORDS_3K_DATA
   .concat(PHRASAL_VERB)
   .concat(BAT_QUI_TAC)
     // .concat(IELTS_SYN)
-    // .concat(GRAMMER_DATA)
+    // .concat(subLesson_DATA)
     // .concat(NATIONS)
 
 // for notedEbookCtrl
@@ -61,7 +61,7 @@ var app = angular.module("myApp", [
   'bridgeRApp','bridgeLApp',
   'barron600RApp','barron600LApp',
   */
-  'grammerApp',
+  'subLessonApp',
   'lptdApp',
   'wordCollectApp','words4000App', 
   'modalApp', 'audioApp', 'audioLoopRadioApp',
@@ -79,7 +79,7 @@ app.config(function($routeProvider) {
     .when('/writingvol5', {templateUrl: 'ebooks/writingvol5/writingvol5.html', controller: 'writingvol5Ctrl'})
 		//    .when('/lptd', {
       .when('/', {templateUrl: 'ebooks/lptd/lptd.html', controller: 'lptdCtrl'})
-      .when('/grammer', {templateUrl: 'grammer/grammer.html', controller: 'grammerCtrl'})
+      .when('/subLesson', {templateUrl: 'subLesson/subLesson.html', controller: 'subLessonCtrl'})
       .when('/spkBook', {templateUrl: 'ebooks/spkBook/spkBook.html', controller: 'spkBookCtrl'})
       .when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
       .when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})

@@ -1,10 +1,13 @@
-const GRAMMER_DATA =
+const SUBLESSON_DATA =
 [
 {
-	title:"Đọc -ult - au"
+	title:"Speaking some special words -ult - au"
 	,en:"-ult đọc là ao FE: result, sultan<br>\
-	-au đọc là a FE: automatic, pause, fault<br>\
+	-au đọc là o: FE: automatic, pause, fault, audio, audition<br>\
 	ci, ce, cy đọc là /s/ (special, cello), còn lại là /k/<br>\
+	Silent Vowel<br>\
+chocolate   vegetable   business   temperature   restaurant   average   laboratory   camera\
+   separate   different   marriage   religion   guarantee   bargain   beautiful   guitar   certain   fault   suit   merely<br>\
 	"
 },
 {
@@ -13,12 +16,13 @@ const GRAMMER_DATA =
 a little +  un.N (có ít để xài)<br>\
 a little (adv) +  Verb/ Adj/ Adv<br>\
 I'm a little tired. <br>\
-Could you speak a little more slowly?"
+Could you speak a little more slowly?<br>\
+"
 },
 {
 	title:"More & Less"
 	,en:"1. More – Nhiều hơn<br>\
-a) + uncountable noun and plural countable noun<br>\
+a) + unc.Noun and plural count.Noun<br>\
 Cấu trúc: more + Noun<br>\
 <br>\
 I need more water.<br>\
@@ -32,13 +36,13 @@ Dùng để so sánh mức độ hành động.<br>\
 More quickly (nhanh hơn)<br>\
 More carefully (cẩn thận hơn)<br>\
 2. Less – Ít hơn<br>\
-a) Với uncountable noun<br>\
+a) Với unc.Noun<br>\
 Cấu trúc: less + Noun<br>\
 <br>\
 We have less time today.<br>\
 I drank less milk than you.<br>\
 <br>\
-* Không dùng less với plural countable noun (dùng fewer).<br>\
+* Không dùng less với plural count.Noun (dùng fewer).<br>\
 [x] She has less books than me.<br>\
 [v] She has fewer books than me.<br>\
 <br>\
@@ -56,7 +60,7 @@ She is less patient than her sister."
 	title:"Special nouns"
 	,en:"jeans, pants, scissors, glasses, news, clothes, food<br>\
 a (two, three) pair of jeans / pants/ glasses / shoes<br>\
-news : uncountable noun<br>\
+news : unc.Noun<br>\
 a loaf of bread, some bread<br>\
 a piece of paper<br>\
 a cube/spoonful of sugar<br>\

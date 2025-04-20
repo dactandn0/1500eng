@@ -358,25 +358,7 @@ M: I insist. Did you want cream and sugar in your coffee?<br>\
 W: Well, thank you very much. No cream in the coffee, please.<br>\
 M: So, you probably don't want sugar, either?<br>\
 W: No, I think there is enough sugar in the brownies. I'll find us some seats near the aisle."
-	,vi:"M: Giá vé chắc chắn đã tăng!<br>\
-W: Vâng, nhưng tôi thực sự cần nghỉ ngơi, vì vậy nếu giá cao hơn một chút, thì cũng không sao. Hơn nữa, tôi thực sự muốn xem bộ phim này trên màn hình lớn.<br>\
-M: Bạn có muốn ăn nhẹ gì đó trong khi chúng ta xem phim không?<br>\
-W: Chắc chắn rồi. Họ có gì?<br>\
-M: Có vẻ như là bỏng ngô và soda thông thường. Nhưng cũng có kem, xúc xích và cà phê. <br>\
-W: Tôi thèm sô cô la, nhưng tôi nên cố gắng ăn thứ gì đó lành mạnh. Tôi muốn tránh bị ốm trong năm nay. Tôi đang cố gắng thay đổi chế độ ăn uống của mình. <br>\
-M: Tôi sợ rằng món lành mạnh nhất có thể là cà phê. <br>\
-W: Họ có bánh nướng xốp không?<br>\
-M: Không, nhưng họ có bánh brownie.<br>\
-W: Tôi đã không ăn bánh brownie trong một thời gian dài. Làm ơn lấy cho tôi một chiếc bánh brownie và một cốc cà phê. Bạn muốn gì?<br>\
-M: Tôi sẽ lấy một hộp bỏng ngô lớn và một cốc cola. <br>\
-W: Đây là tiền.<br>\
-M: Tôi trả.<br>\
-W: Không, làm ơn. Giá vé cực kỳ đắt. Tôi biết bạn đang eo hẹp về ngân sách.<br>\
-M: Tôi nài nỉ. Bạn có muốn thêm kem và đường vào cà phê không?<br>\
-W: Vâng, cảm ơn bạn rất nhiều. Không có kem vào cà phê, làm ơn.<br>\
-M: Vậy, có lẽ bạn cũng không muốn thêm đường?<br>\
-W: Không, tôi nghĩ là có đủ đường trong bánh brownie. Tôi sẽ tìm cho chúng ta một số chỗ ngồi gần lối đi."
-	,voca:"",
+	,voca:"It's on me,restricted,aisle,break,insist,craving",
 },
 {unit:20,
 	title:"Hobbies",
@@ -420,7 +402,7 @@ B: Huấn luyện viên, làm sao để tôi tiến lên và lùi lại khi phò
 M: Khi anh tiến lên, hãy đặt chân phải ra trước mặt, với các ngón chân hướng về hướng anh muốn đi. Khi anh lùi lại, chỉ cần đảo ngược lại: theo hướng của chân trái. Anh cảm thấy thế nào?<br>\
 B: Chân tôi mỏi và lưng tôi đau. <br>\
 M: Chơi phòng thủ rất vất vả. Nghỉ ngơi một lát, sau đó chúng ta sẽ thử lại."
-	,voca:"",
+	,voca:"aches,Athletes",
 },
 {unit:22,
 	title:"The Importance of Writing",

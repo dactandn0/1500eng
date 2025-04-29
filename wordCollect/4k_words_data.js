@@ -6,6 +6,7 @@ agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 focus (v) /ˈfəʊkəs/ tập trung<br>\
 concentrate (v) /ˈkɑːnsntreɪt/ tập trung<br>\
+identical  (a) giống hệt nhau<br>\
 health (n) sức khỏe<br>\
 fitness (n) sự thích hợp, tài năng, tư cách, sức khỏe tốt<br>\
 comfortable (a) tiện lợi<br>\
@@ -157,7 +158,7 @@ alien (n) /ˈeɪliən/ người ngoài HT<br>\
 chart (n) /tʃɑːrt/ biểu đồ<br>\
 comprehend (v) /kɑːmprɪˈhend/ hiểu<br>\
 describe (v) /dɪˈskraɪb/ mô tả<br>\
-grade (n) /ɡreɪd/ cấp, hạng<br>\
+grade (n) /ɡreɪd/ cấp, hạng, điểm<br>\
 instead (adv) /ɪnˈsted/ thay thế<br>\
 planet (n) /ˈplænɪt/ hành tinh<br>\
 report (v) /rɪˈpɔːrt/ báo cáo<br>\

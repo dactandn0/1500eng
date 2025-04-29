@@ -83,7 +83,6 @@ words: "vision | look | outlook | contemplation | regard"
 , mean: "sự nhìn" 
 },{
 words: "appeal | attraction | attractiveness"
-, type:"n"
 , mean: "sự hấp dẫn" 
 },{
 words: "​classify | digest | distribute"
@@ -293,7 +292,7 @@ words: "​classify | digest | distribute"
 	type:"a",
 	mean:"nghèo nàn"
 },{
-	words:"beautiful | gorgeous | stunning(kinh ngạc, tuyệt vời)| attractive",
+	words:"beautiful | gorgeous | stunning(kinh ngạc, tuyệt vời)| attractive | tempting",
 	type:"a",
 	mean:"xinh đẹp"
 }, {

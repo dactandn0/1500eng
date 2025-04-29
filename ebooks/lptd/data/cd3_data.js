@@ -419,20 +419,7 @@ W: That's the right attitude. Let's try to organize some of your thoughts by bra
 B: The book? I've only watched the movie! Does that count?<br>\
 W: Oh, goodness! What kind of child am I raising?<br>\
 B: One that probably won't be a famous writer!"
-	,vi:"B: Bài này tệ quá! Mình ghét bài tập này. <br>\
-W: Có chuyện gì vậy, Timmy?<br>\
-B: Mình bực mình vì mình cần viết một bài báo cáo sách, và mình không thể bắt đầu.<br>\
-W: Mình có thể xem bài của bạn không? Không có gì ở đây cả!<br>\
-B: Mình không nghĩ ra được điều gì để viết, và ngày mai phải nộp rồi. Tệ hơn nữa, chúng ta phải thuyết trình trước cả lớp. Dù sao thì mình cũng không thấy mục đích của việc viết một bài báo cáo sách.<br>\
-W: Viết là một kỹ năng cần thiết mà bạn sẽ sử dụng trong suốt quãng đời còn lại. Bài báo cáo sách này chỉ là một cách để bắt đầu học kỹ năng đó. Đây là một hình thức giao tiếp khác và là phương tiện để bạn thể hiện suy nghĩ của mình. Bài báo cáo cho phép người khác hiểu được những gì trong trái tim và tâm trí bạn. <br>\
-B: Trước đây, mình chưa bao giờ phải viết. Tại sao tôi nên bắt đầu ngay bây giờ?<br>\
-W: Bây giờ là thời điểm tốt nhất để bắt đầu. Những nhà văn giỏi nhất đọc rất nhiều và luyện viết. Bất kỳ ai cũng có thể học cách viết tốt. Tôi biết bạn có thể làm được.<br>\
-B: Được rồi, Mẹ. Khi mẹ nói theo cách đó, con nghĩ là con có thể làm được.<br>\
-W: Đó là thái độ đúng đắn. Chúng ta hãy thử sắp xếp một số suy nghĩ của con bằng cách động não. Con có thể cho mẹ biết gì về cuốn sách không?<br>\
-B: Cuốn sách ư? Con chỉ xem phim thôi! Điều đó có được tính không?<br>\
-W: Ôi trời! Con đang nuôi dạy đứa trẻ như thế nào?<br>\
-B: Một đứa trẻ có lẽ sẽ không trở thành nhà văn nổi tiếng!"
-	,voca:"",
+	,voca:"frustrated,purpose,presentation",
 },
 {unit:23,
 	title:"The Course Schedule",
@@ -440,29 +427,16 @@ B: Một đứa trẻ có lẽ sẽ không trở thành nhà văn nổi tiếng!
 M: No, Sue. I'm having a hard time making up my mind, and I still need to select two more. Do you have any ideas? Do you know anything about the professors?<br>\
 W: I heard that the psychology professor is tough but fair. If you work hard, you can get a good grade.<br>\
 M: Psychology sounds interesting.<br>\
-W:How about we both sign up for psychology? Then we'd be in the same class, and we could help each other with assignments.<br>\
+W: How about we both sign up for psychology? Then we'd be in the same class, and we could help each other with assignments.<br>\
 M: I remember the last class we took together. I'm not so sure that's a good idea.<br>\
 W: Oh, come on. It would be fun. I promise I'll attend the classes and not just borrow your notes this time.<br>\
 M: Thanks! <br>\
 W: I was thinking about taking film studies. Why don't you take that?<br>\
 M: I like going to the movies, but I don't want to study them.<br>\
 W: I know someone who took that course last year, and she said it's very easy. Almost everyone gets an 'A' or a 'B'. And there is no homework.<br>\
-M:That is tempting, but I want to learn something useful.<br>\
+M: That is tempting, but I want to learn something useful.<br>\
 W: Fine, but don't complain to me if you get a 'C'."
-	,vi:"W: Thật khó để chọn khóa học nào cho học kỳ này. Henry, bạn đã chọn tất cả các khóa học của mình chưa?<br>\
-M: Chưa, Sue. Mình đang gặp khó khăn trong việc quyết định, và mình vẫn cần chọn thêm hai khóa nữa. Bạn có ý tưởng nào không? Bạn có biết gì về các giáo sư không?<br>\
-W: Mình nghe nói giáo sư tâm lý học rất nghiêm khắc nhưng công bằng. Nếu bạn học chăm chỉ, bạn có thể đạt điểm cao.<br>\
-M: Tâm lý học nghe có vẻ thú vị.<br>\
-W: Hay là chúng ta cùng đăng ký học tâm lý học nhé? Khi đó chúng ta sẽ học cùng lớp và có thể giúp nhau làm bài tập.<br>\
-M: Mình nhớ buổi học cuối cùng chúng ta học cùng nhau. Mình không chắc đó có phải là ý kiến ​​hay không.<br>\
-W: Thôi nào. Sẽ vui lắm. Mình hứa sẽ tham gia các lớp học và lần này không chỉ mượn vở của bạn.<br>\
-M: Cảm ơn bạn! <br>\
-W: Tôi đang nghĩ đến việc học nghiên cứu phim. Sao bạn không học ngành đó?<br>\
-M: Tôi thích đi xem phim, nhưng tôi không muốn học chúng.<br>\
-W: Tôi biết một người đã học khóa học đó vào năm ngoái và cô ấy nói rằng nó rất dễ. Hầu như ai cũng được điểm 'A' hoặc 'B. Và không có bài tập về nhà.<br>\
-M: Nghe hấp dẫn đấy, nhưng tôi muốn học một cái gì đó hữu ích.<br>\
-W: Được thôi, nhưng đừng phàn nàn với tôi nếu bạn được điểm 'C'."
-	,voca:"",
+	,voca:"semester,psychology,professor,tempting",
 },
 {unit:24,
 	title:"Food, Family, and Fun",
@@ -474,7 +448,7 @@ There is a lot of activity after the meal. My aunt and uncle clean off the table
 Mọi người trong gia đình tôi đều đến nhà bố mẹ tôi để ăn Lễ Tạ ơn. Chúng tôi ăn một bữa thịnh soạn. Mọi người đều giúp đỡ nhau vào Lễ Tạ ơn. Trẻ em dọn bàn. Mẹ tôi nấu gà tây bằng những nguyên liệu bí mật của riêng bà. Bố tôi làm các món ăn kèm. Ông làm khoai tây, đậu, cà rốt, nhân nhồi, hàu và củ cải đường. Mẹ tôi làm nước sốt nam việt quất. Chị dâu tôi mang một chiếc bánh bí ngô. Tôi đến sớm để giúp bố mẹ nấu ăn.<br>\
 Khi đến giờ ăn, chúng tôi bày hết đồ ăn lên bàn. Mọi người ngồi xuống. Mỗi người chúng tôi nói điều mình biết ơn trước khi ăn. Một số người trong chúng tôi biết ơn sức khỏe của mình, những người khác biết ơn công việc của mình. Mọi người đều biết ơn vì một điều gì đó khác nhau.<br>\
 Có rất nhiều hoạt động sau bữa ăn. Cô và chú tôi dọn dẹp bàn ăn. Chị dâu tôi giúp tôi rửa bát. Các thiếu niên rửa và cất đồ bạc. Trẻ em giúp dọn dẹp phòng ăn. Anh em trai tôi đổ rác. Sau đó, họ đi chơi bóng đá ở sân sau. Những người còn lại trong chúng tôi ngồi xuống và thư giãn. Chúng tôi biết ơn vì thức ăn và phước lành của mình. Trên hết, chúng tôi biết ơn vì có nhau."
-	,voca:"",
+	,voca:"turkey,slightly,stuffing,oysters,beets,carrots,garbage,backyard,blessings,silverware,pumpkin pie,cranberry,ingredients",
 },
 {unit:25,
 	title:"The Project",
@@ -496,7 +470,7 @@ M: Vâng, con là chuyên gia về nghề nghiệp của mình. Kế toán là m
 B: Bố, con biết bố yêu nghề nghiệp của mình đến mức nào. Không phải là con không ngưỡng mộ bố. Nhưng điều tôi thực sự hy vọng là bạn có thể nói chuyện với anh Chang, người bạn lặn của bạn, và xem anh ấy có đồng ý phỏng vấn không. Lặn để kiếm sống nghe có vẻ hay!<br>\
 M: Tôi hiểu rồi. Đó là một ý tưởng tuyệt vời! Bạn biết đấy, tôi thực sự không thích nói về bản thân mình quá lâu. Để tôi gọi cho David Chang ngay bây giờ và tìm hiểu nhé.<br>\
 B: Cảm ơn bố! Bố là người giỏi nhất! Tôi biết đây sẽ là một dự án tuyệt vời!"
-	,voca:"",
+	,voca:"enormous,flattery,profession,noble,a living",
 },
 {unit:26,
 	title:"The Assignment",
@@ -524,7 +498,7 @@ B: Bố bạn vô cùng dũng cảm, một anh hùng thực sự. Ông ấy làm
 G: Ông ấy ở đó vài ngày khi đi làm. Tất cả lính cứu hỏa cùng nhau nấu ăn, ăn uống và dọn dẹp. Khi có hỏa hoạn, họ trượt xuống một cây sào vào gara của trạm cứu hỏa để lấy thiết bị chữa cháy. Họ nhanh chóng mặc đồ vào rồi nhảy lên xe cứu hỏa. Bố tôi thích lái xe cứu hỏa.<br>\
 B: Wow! Có lẽ một ngày nào đó tôi nên trở thành lính cứu hỏa.<br>\
 G: Tôi chắc chắn sẽ trở thành lính cứu hỏa, Ian. Tôi muốn trở thành người giống như bố tôi."
-	,voca:"",
+	,voca:"firefighter,fire-fighting,tight,crawl,ground,garage,ignited,pole,gear,fire trucks",
 },
 {unit:27,
 	title:"CoCo Lee",
@@ -538,7 +512,7 @@ Vào thời gian rảnh rỗi, Ferren hát theo các bài hát nhạc pop. Ferre
 Ngày nay, CoCo Lee, tên cô hiện được biết đến, là một trong những ca sĩ nhạc pop nổi tiếng nhất thế giới. Cô sinh ra tại Hồng Kông vào ngày 17 tháng 1 năm 1975, nhưng cô lớn lên ở San Francisco. Cô đã thực hiện các bản thu âm bằng tiếng Anh và tiếng Trung. Album năm 1998 của cô, DiDaDi, đã giành giải thưởng âm nhạc MTV Châu Á cho album hay nhất và video ca nhạc hay nhất. Album tiếp theo của CoCo là bằng tiếng Anh. Nó có tên là Just No Other Way. Nó đã giới thiệu cô với khán giả Mỹ.<br>\
 Ngoài giọng hát tuyệt vời và vẻ ngoài ấn tượng, CoCo Lee còn rất thông minh. Cô có điểm trung bình 3,8 ở trường đại học. Cô cũng lấy bằng kép về hóa sinh và khoa học sinh học. Một trong những ước mơ của cô, cô nói, là giúp tìm ra phương pháp chữa bệnh ung thư.<br>\
 Ai mà biết được? Mẹ của CoCo có thể đạt được ước nguyện của cô."
-	,voca:"",
+	,voca:"footsteps,sang along with, contests, big break,singing competition, rec contract, award, audiences, bio-chemistry, bio-science, cure",
 },
 {unit:28,
 	title:"A Blind Date",
@@ -583,7 +557,7 @@ However, he did not know that he was being watched by police officers. He chose 
 Có rất nhiều câu chuyện trong phim và trên TV về những tên tội phạm kiếm được rất nhiều tiền. Chúng tiếp tục sống một cuộc sống xa hoa. Tuy nhiên, cứ mỗi tên tội phạm thành công thì lại có rất nhiều tên khác thất bại. Những tên tội phạm này sớm hối hận về tội ác của mình.<br>\
 Lấy ví dụ về một người đàn ông ở Winnipeg đã cố đột nhập vào những chiếc ô tô trong bãi đậu xe của học viện cảnh sát. Cảnh sát đã tìm thấy người đàn ông đó trong bãi đậu xe. Họ thấy anh ta cố mở cửa tất cả các xe. Người đàn ông đó hy vọng tìm thấy một ít tiền lẻ, hoặc có thể lấy một số dàn âm thanh nổi tốt trên ô tô.<br>\
 Tuy nhiên, anh ta không biết rằng mình đang bị cảnh sát theo dõi. Anh ta chọn bãi đậu xe vì đó là một khu vực rất yên tĩnh. Anh ta nghĩ rằng sẽ không có ai nhìn thấy mình. Anh ta đã sớm bị cảnh sát bắt giữ. Một tên tội phạm ngu ngốc như người đàn ông này cho chúng ta thấy rằng tội ác không mang lại lợi ích gì."
-	,voca:"committing,fail,arrested,criminal,luxury,regret,crook,guilty,gourmet,effort",
+	,voca:"committing,fail,arrested,criminal,luxury,regret,crook,guilty,gourmet,effort, being watched, police officers,crooks",
 },
 {unit:30,
 	title:"A Job Interview",

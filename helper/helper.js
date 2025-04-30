@@ -184,15 +184,22 @@ function getFullTile(obj) {
 						|| (obj.Match_Heading && obj.Match_Heading.trim().length > 0)
 						|| (obj.images && obj.images.length > 0)
 
-	var conversation = rgConversatinal.test(obj.en)
+	const counts = (obj.en.match(/B:/g) || []).length +
+	  (obj.en.match(/W:/g) || []).length +
+	  (obj.en.match(/M:/g) || []).length +
+	  (obj.en.match(/G:/g) || []).length +
+	  (obj.en.match(/Candidate:/g) || []).length +
+	  (obj.en.match(/Examiner:/g) || []).length
 
+	console.log(counts)
+	var isConversation = counts > 1
 	// story.L					
 	var ngStyle = {}
 	if (hasNote) ngStyle.color = 'red'
 	if (isBlankEn) ngStyle['color'] = 'gray'
 	if (obj.isTest) ngStyle['animation'] = 'color-change 1s infinite'
 	if (obj.end) ngStyle['text-decoration'] = 'underline'
-	if (conversation) ngStyle['text-decoration'] = 'green wavy underline'
+	if (!isConversation) ngStyle['font-style'] = 'italic'
 		
 	return {
 		unit : unit,

@@ -20,6 +20,7 @@ var kNgClickTagClose = '</'+kNgClickTagName+'>';
 
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
+
 var rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi
 
 var kReplaceWords = [
@@ -286,10 +287,6 @@ function processStory (story, isAlert = true) {
 	// show title con acc_click
 	var json = getFullTile(story)
 	story.fTitle = json.fTitle
-
-	story.enShow = story.enShow.replace(/Examiner/gi,'<i class="color-anim">Examiner</i>')
-	story.enShow = story.enShow.replace(/Candidate/gi,'<i class="color-anim">Candidate</i>')
-	story.enShow = story.enShow.replace(/FE\:/gi,'<i class="color-anim">FE:</i>')
 
 	return story;
 }

@@ -20,6 +20,7 @@ var kNgClickTagClose = '</'+kNgClickTagName+'>';
 
 var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 var Helper_Voices
+var rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi
 
 var kReplaceWords = [
 	{ src: 'ms\\.*', desc: 'Ms'},
@@ -256,7 +257,7 @@ function processStory (story, isAlert = true) {
 					var viSen = sentencesVi[i]
 					if (viSen)
 					{
-						var rep = viSen.trim().replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '')
+						var rep = viSen.trim().replace(rgConversatinal, '')
 						{
 							rep = rep.replace(/<\/*(b>)/,'');  // don't bold text in Vietnamese
 							viii = '(' + rep + ')'
@@ -285,7 +286,6 @@ function processStory (story, isAlert = true) {
 	// show title con acc_click
 	var json = getFullTile(story)
 	story.fTitle = json.fTitle
-	story.hasNote = json.hasNote
 
 	story.enShow = story.enShow.replace(/Examiner/gi,'<i class="color-anim">Examiner</i>')
 	story.enShow = story.enShow.replace(/Candidate/gi,'<i class="color-anim">Candidate</i>')
@@ -365,8 +365,8 @@ function IsIgnoreVocaBold(boldWord, hightlightWord)
 	for (var i = 0; i < parts.length; i++) {
 		var part = parts[i]
 		if (
-			phraVerbArr.includes(part) 
-		||	phraVerbArr.includes(boldWord) 
+		   phraVerbArr.includes(part) 
+		|| phraVerbArr.includes(boldWord) 
 		|| specialWordArr.includes(part)
 		|| specialWordArr.includes(boldWord)
 	

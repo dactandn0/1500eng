@@ -1024,18 +1024,20 @@ disabled tàn tật<br>\
 fantastic tuyệt vời<br>\
 fiction tiểu thuyết<br>\
 inspect kiểm tra<br>\
+pill (n,v) viên thuốc tây, (v) cướp phá<br>\
 journal nhật ký<br>\
 liquid chất lỏng<br>\
 marvel kỳ diệu<br>\
 nutrient chất dinh dưỡng<br>\
 overcome vượt qua<br>\
 recall nhớ lại<br>\
-soul linh hồn<br>\
-tough khó khăn<br>\
-admit thừa nhận<br>\
+ginger (n) /ˈdʒɪndʒər/ gừng<br>\
+soul (n) linh hồn<br>\
+tough (a) khó khăn<br>\
+admit (v) thừa nhận<br>\
 bin thùng<br>\
 cabin cabin<br>\
-criminal (a) tội phạm, hình sự, có trọng tội<br>\
+criminal (n,a) người tội phạm, có trọng tội<br>\
 dozens of hàng chục<br>\
 elder người già<br>\
 facial mặt<br>\

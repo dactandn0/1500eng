@@ -114,7 +114,7 @@ function Helper_MakeVoca_Menu_Titles(rScope, _scope , isDoMenu = true)
 			if (unitTrack) unitTrack = 'Unit/Track: ' + unitTrack + '.'
 			var jsonEle = {
 				unit: unitTrack,
-				title:lesson.title ? lesson.title : '#',
+				title: lesson.title ? lesson.title : '#',
 				vocas: vocas,
 				lesson: lesson,
 			}
@@ -184,12 +184,15 @@ function getFullTile(obj) {
 						|| (obj.Match_Heading && obj.Match_Heading.trim().length > 0)
 						|| (obj.images && obj.images.length > 0)
 
+	var conversation = rgConversatinal.test(obj.en)
+
 	// story.L					
 	var ngStyle = {}
 	if (hasNote) ngStyle.color = 'red'
 	if (isBlankEn) ngStyle['color'] = 'gray'
 	if (obj.isTest) ngStyle['animation'] = 'color-change 1s infinite'
 	if (obj.end) ngStyle['text-decoration'] = 'underline'
+	if (conversation) ngStyle['text-decoration'] = 'green wavy underline'
 		
 	return {
 		unit : unit,
@@ -199,7 +202,7 @@ function getFullTile(obj) {
 		hasNote : hasNote,
 		hasExercise : hasExercise,
 		ngStyle: ngStyle,
-		fTitle : track + unit + title 
+		fTitle : track + unit + title
 	}
 }
 

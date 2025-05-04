@@ -421,12 +421,16 @@ $scope.Export2Doc = function()
   var postHtml = "</body></html>";
 
   let html = ''
-  let id = $rootScope.bVocaOfEbook ? 'VocaOfEbook' : 'content-to-word'
-  const _DOM = document.getElementById(id)
-  const title = _DOM.getAttribute("title");
+  let _DOM = document.getElementById('VocaOfEbook')
+  let title = 'voca_of_ebook'
+  if (!$rootScope.bVocaOfEbook)
+  {
+    _DOM = document.getElementById('content-to-word')
+    title = _DOM.getAttribute("title");
+  }
+
 
   html = title + '<hr>' + _DOM.innerHTML.replaceAll('[X]', '').replaceAll('[Ex]', '');
-
   html = preHtml + html + postHtml;
 
   var blob = new Blob(['\ufeff', html], {type: 'application/msword' });

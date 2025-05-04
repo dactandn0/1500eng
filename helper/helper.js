@@ -191,7 +191,6 @@ function getFullTile(obj) {
 	  (obj.en.match(/Candidate:/g) || []).length +
 	  (obj.en.match(/Examiner:/g) || []).length
 
-	console.log(counts)
 	var isConversation = counts > 1
 	// story.L					
 	var ngStyle = {}

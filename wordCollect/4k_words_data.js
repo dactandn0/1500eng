@@ -6,7 +6,9 @@ agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 focus (v) /ˈfəʊkəs/ tập trung<br>\
 concentrate (v) /ˈkɑːnsntreɪt/ tập trung<br>\
-identical  (a) giống hệt nhau<br>\
+archeology (n) /ˌɑːrkiˈɑːlədʒi/ khảo cổ học<br>\
+identical (a) giống hệt nhau<br>\
+toward (prep) /tɔːrdz/ theo hướng<br>\
 health (n) sức khỏe<br>\
 fitness (n) sự thích hợp, tài năng, tư cách, sức khỏe tốt<br>\
 comfortable (a) tiện lợi<br>\
@@ -328,25 +330,26 @@ stair cầu thang<br>\
 symbol biểu tượng<br>\
 thin mỏng<br>\
 blood (n) /blʌd/ máu<br>\
-burn bỏng<br>\
-cell tế bào<br>\
-correct đúng<br>\
+burn (n,v) bỏng, v. đốt, phát hỏa<br>\
+cell (n) tế bào<br>\
+hubcap (n) /ˈhʌbkæp/ chụp trục bánh xe<br>\
+correct (a,v) đúng, chính xác v. trách, phạt<br>\
 crop (n,v) /krɑːp/ (v) cắt, vật giặt hái, mùa giặt<br>\
-demand nhu cầu<br>\
-feed thức ăn<br>\
-hole lỗ<br>\
+demand (n,v) nhu cầu, (v) cầu cứu, hỏi<br>\
+feed (n,v) thức ăn<br>\
+hole (n) lỗ<br>\
 unwind (v) /ʌnˈwaɪnd/ thư giãn<br>\
 increase (v) /ɪnˈkriːs/ tăng<br>\
 lord (n) /lɔːrd/ chúa<br>\
 owe (v) /əʊ/ nợ<br>\
 position vị trí<br>\
-raise nâng cao<br>\
-responsible có trách nhiệm<br>\
+raise (n,v) sự tăng, nâng cao<br>\
+responsible (a) có trách nhiệm<br>\
 significance (n) /sɪɡˈnɪfɪkəns/ sự quan trọng, ý nghĩa<br>\
 sight tầm nhìn<br>\
 structure (n) /ˈstrʌktʃər/ cấu trúc, vật kiến trúc<br>\
-whole toàn bộ<br>\
-coach huấn luyện viên<br>\
+whole (a) toàn bộ<br>\
+coach (n,v) toa xe, xe đò, huấn luyện viên v. tập dợt, đi xe ngựa<br>\
 control kiểm soát<br>\
 recollection (n) /rekəˈlekʃn/ ký ức [of + N/Ving]<br>\
 description (n) /dɪˈskrɪpʃn/ mô tả<br>\

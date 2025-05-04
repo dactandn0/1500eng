@@ -55,6 +55,7 @@ var app = angular.module("myApp", [
   'writingvol5App',
   'completeApp',
   'tocgApp',
+  'unrealApp',
   'lratApp',
   /*
   'sampleSpeakingApp',
@@ -84,6 +85,7 @@ app.config(function($routeProvider) {
       .when('/bridgeL', {templateUrl: 'ebooks/bridge/bridgeL.html', controller: 'bridgeLCtrl'})
       .when('/bridgeR', {templateUrl: 'ebooks/bridge/bridgeR.html', controller: 'bridgeRCtrl'})
       .when('/tocg', {templateUrl: 'ebooks/tocg/tocg.html', controller: 'tocgCtrl'})
+      .when('/unreal', {templateUrl: 'ebooks/unreal/unreal.html', controller: 'unrealCtrl'})
       .when('/lrat', {templateUrl: 'ebooks/lrat/lrat.html', controller: 'lratCtrl'})
       .when('/completeL', {templateUrl: 'ebooks/complete/complete.html', controller: 'completeCtrl'})
 		// .when('/completeR', {templateUrl: 'ebooks/complete/completeR.html', controller: 'completeRCtrl'})

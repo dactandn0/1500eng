@@ -1,0 +1,12 @@
+
+<mark class="mb-4">Unreal</mark>
+<hr>
+
+<form name="unreal_bForm" class="my-1" role="group">
+	<input id="000" type="radio" name="unreal_form" value='0' onchange="unreal_formChange(0)" checked/><label class="mr-3" for="000">Theory</label>
+	<input id="111" type="radio" name="unreal_form" value='1' onchange="unreal_formChange(1)" /><label class="mr-3" for="111">Other</label>
+</form>
+
+<div ng-show="unreal_form==0">
+	<div ng-include="'./includes/storyR.html'" ></div>
+</div> <!-- unreal_form -->

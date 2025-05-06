@@ -1,5 +1,6 @@
 
 document.write('<script src="./ebooks/unreal/data/unreal_r.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/unreal/data/unreal_others.js" type="text/javascript"></script>');
 
 
 var app = angular.module("unrealApp", []);
@@ -27,8 +28,14 @@ unreal_formChange = function (num, isLoadData = false) {
 	{
 		$scope.img_root = imgRootPath
 		$scope.stories = UNREAL_DATA_R
-		$scope.fetchStory(Helper_loadInt(keyU, 0));
+	} 
+	else if (num===1)
+	{
+		$scope.img_root = imgRootPath + 'others'
+		$scope.stories = UNREAL_DATA_OTHERS
 	}
+	
+	$scope.fetchStory(Helper_loadInt(keyU, 0));
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope, false)  // needn't menu
 }
 

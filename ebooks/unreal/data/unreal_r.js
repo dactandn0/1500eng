@@ -120,7 +120,170 @@ Best practices for horror:<br>\
 Set Sky Light intensity low (0.1–0.3).<br>\
 Use Lumen + local lights (flashlight, candles, etc.) for tension and control.<br>\
 Combine with Volumetric Fog, Post Process, and light blocking for strong mood."
+},{
+	title:"ParallaxOcclusionMapping"
+	,en:""
+	,images:["ParallaxOcclusionMapping-min"]
+},
+{
+	title:"Directional Light and Sky Light"
+	,en:"In Unreal Engine, Directional Light and Sky Light are two main types of lights commonly used to simulate environmental lighting, especially for outdoor scenes. However, depending on your scene and style, you can choose not to use them, but it's important to understand their roles:<br>\
+<br>\
+🔆 Directional Light<br>\
+Simulates sunlight or a distant light source.<br>\
+Creates sharp shadows, commonly used for daytime outdoor scenes.<br>\
+Supports Dynamic Shadows, Cascaded Shadow Maps, and Light Shafts (god rays).<br>\
+Can be set to Stationary, Movable, or Static depending on optimization and dynamic needs.<br>\
+<br>\
+🧠 Without Directional Light?<br>\
+Your scene will have no main light source, unless replaced with something like a Spot or Point Light.<br>\
+Not suitable for bright outdoor scenes.<br>\
+Can work well for indoor or dark environments with artificial lighting.<br>\
+<br>\
+☁️ Sky Light<br>\
+Captures light from the entire sky and evenly lights all objects, simulating ambient light.<br>\
+Helps brighten areas that are not directly lit, like the shadowed sides of objects.<br>\
+Can use an HDRI texture to simulate realistic skylight.<br>\
+<br>\
+🧠 Without Sky Light?<br>\
+Indirect areas (in shadow) will be completely dark, losing detail.<br>\
+The scene may look flat or lack depth with just a Directional Light.<br>\
+<br>\
+However, for horror or dark scenes, not having a Sky Light can make things feel gloomier and more intense — this can be an advantage.<br>\
+<br>\
+✅ In summary: Are they required?<br>\
+Not required, but:<br>\
+Use Directional Light if you need a strong sun-like source.<br>\
+Use Sky Light to enhance overall brightness and shadow detail.<br>\
+<br>\
+In horror games, you can skip Sky Light to create deeper darkness and manually control lighting with Point/Spot Lights.<br>\
+If you're working on a dark environment with a mix of indoor and outdoor areas, here's what I recommend regarding Directional Light and Sky Light:<br>\
+<br>\
+✅ Directional Light – Optional but Useful<br>\
+If your outdoor areas have a moonlight or dim sun (e.g., sunset, overcast, or post-apocalyptic), you can still use a Directional Light but:<br>\
+<br>\
+Reduce its intensity.<br>\
+Change its color to cool blue or orange hues.<br>\
+Set it to Movable if you want dynamic shadows.<br>\
+If you want full darkness outside (e.g., abandoned area at night), you can skip it entirely and use Spot/Point lights for full control.<br>\
+<br>\
+✅ Sky Light – Use Carefully<br>\
+Sky Light can fill in shadow areas and give a subtle ambient boost, but in dark environments, it can flatten the mood if not tuned right.<br>\
+<br>\
+Tips:<br>\
+Use a low-intensity Sky Light with a dark HDRI or cubemap.<br>\
+Try real-time (movable) Sky Light if your scene changes.<br>\
+Or disable it entirely and control lighting manually with smaller lights.<br>\
+<br>\
+✅ Alternative Strategy (For Horror/Atmosphere)<br>\
+Rely more on:<br>\
+<br>\
+Point Lights for localized light sources (lamps, candles, etc.).<br>\
+Spot Lights for flashlights, car headlights, etc.<br>\
+Volumetric Fog, Light Shafts, and Post Process Volumes for mood.<br>\
+Use darkness as part of gameplay (limiting vision, hiding danger)."
+},
+{
+	title:"Exponential Height Fog"
+	,en:"1. Tạo và bật Volumetric Fog:<br>\
+Vào World Settings và tìm phần Default Settings.<br>\
+Chọn Fog và bật Volumetric Fog.<br>\
+Trong Lighting Settings, chắc chắn bạn đã bật Directional Light hoặc Sky Light nếu muốn ánh sáng có sự tương tác với sương mù.<br>\
+<br>\
+2. Thêm Exponential Height Fog vào scene:<br>\
+Kéo Exponential Height Fog từ Palette vào trong World.<br>\
+Bật Volumetric Fog trong các tùy chọn của Exponential Height Fog để kích hoạt hiệu ứng sương mù.<br>\
+<br>\
+3. Điều chỉnh các thông số quan trọng:<br>\
+Fog Density: Điều chỉnh độ dày của sương mù. Tăng giá trị này sẽ làm cho sương mù dày đặc hơn.<br>\
+Fog Falloff: Điều chỉnh độ lan tỏa của sương mù. Tăng giá trị này sẽ làm sương mù mờ dần từ mặt đất lên trên.<br>\
+Start Distance: Đặt khoảng cách bắt đầu của sương mù từ camera.<br>\
+Volumetric Scattering Intensity: Điều chỉnh cường độ ánh sáng khi đi qua sương mù.<br>\
+Volumetric Fog Distance: Đặt phạm vi tối đa mà sương mù có thể ảnh hưởng.<br>\
+<br>\
+4. Điều chỉnh ánh sáng và sương mù tương tác:<br>\
+Directional Light: Thêm một Directional Light và bật tính năng Volumetric Scattering trong thuộc tính của nó để ánh sáng có thể chiếu qua sương mù.<br>\
+Sky Light: Nếu bạn sử dụng Sky Light, cũng có thể điều chỉnh độ sáng và tương tác với sương mù.<br>\
+<br>\
+Tùy chọn Unbound cho Volumetric Fog:<br>\
+Giống như Post Process Volume, Volumetric Fog cũng có thể được sử dụng một cách toàn cục trong scene, không bị hạn chế trong một vùng nhất định.<br>\
+Để làm cho Volumetric Fog ảnh hưởng trên toàn bộ cảnh, bạn cần bật Unbound.<br>\
+<br>\
+Unbound sẽ khiến Exponential Height Fog có tác dụng trên toàn bộ không gian, không bị giới hạn trong phạm vi của vùng mà nó được đặt. Điều này rất hữu ích khi bạn muốn có hiệu ứng sương mù phủ toàn bộ thế giới của game, không chỉ trong một khu vực nhỏ.<br>\
+<br>\
+Cách bật Unbound:<br>\
+Trong Exponential Height Fog, tại mục Volumetric Fog hãy bật Unbound.<br>\
+Điều này sẽ làm cho sương mù và ánh sáng volumetric không bị giới hạn ở phạm vi đặt Fog, mà sẽ áp dụng cho toàn bộ cảnh.<br>\
+<br>\
+Lưu ý khi sử dụng Volumetric Fog trong game kinh dị:<br>\
+Kết hợp với ánh sáng yếu: Sương mù volumetric tạo hiệu ứng rất đẹp khi kết hợp với ánh sáng yếu, đặc biệt là ánh sáng từ đèn pin hoặc nguồn sáng nhỏ trong không gian tối.<br>\
+Thử nghiệm với các màu sắc: Tạo cảm giác ma quái hoặc huyền bí bằng cách thay đổi màu sắc của sương mù (màu xám, nâu đỏ, hoặc xanh nhạt).<br>\
+Tạo hiệu ứng ánh sáng đặc biệt: Bạn có thể thêm Spot Lights hoặc Point Lights vào scene để tạo ra ánh sáng chiếu qua sương mù, tạo ra những tia sáng kỳ ảo."
+},{
+	title:"Material Color Baking High poly"
+	,en:"World space normal are not necessary for Unreal Engine"
+	,images:["mat_id00-min","mat_id01-min","mat_id02-min"]
+},{
+	title:"Lighting setup for a horror game in UE4"
+	,en:"Here's a proper lighting setup for a horror game scene in Unreal Engine 4, especially when you're working with mid-range hardware like a GTX 1660 Super. This setup focuses on atmosphere, tension, and performance optimization — ideal for horror.<br>\
+<br>\
+🎃 Horror Lighting Setup in UE4 (Optimized for Static/Stationary GI)<br>\
+🔧 1. Project Settings<br>\
+Go to Edit > Project Settings > Rendering:<br>\
+<br>\
+✅ Enable Ambient Occlusion<br>\
+✅ Enable Use Static Lighting<br>\
+🔲 Disable Ray Tracing<br>\
+✅ Use Forward Shading (optional, but faster for low-spec)<br>\
+✅ Set Auto Exposure to manual (see below)<br>\
+<br>\
+💡 2. Main Lighting Types to Use<br>\
+[image]<br>\
+<br>\
+⚙️ 3. Basic Setup Steps<br>\
+🌕 Moonlight / Outdoor Night Scene<br>\
+Add a Directional Light, set it to:<br>\
+<br>\
+Intensity: 0.3–0.7<br>\
+Light color: desaturated blue-gray<br>\
+Cast Shadows: On<br>\
+Mobility: Stationary<br>\
+<br>\
+Add a Sky Light, set to:<br>\
+Source: Captured Scene or HDRI<br>\
+Intensity: 0.2–0.4<br>\
+Mobility: Stationary<br>\
+<br>\
+Add Exponential Height Fog:<br>\
+Fog Density: 0.02–0.05<br>\
+Fog Inscattering Color: bluish-gray<br>\
+Add Volumetric Fog only if needed (costly)<br>\
+<br>\
+🏚️ Indoor Scene<br>\
+Use Spot Lights to simulate flickering bulbs or flashlights.<br>\
+Keep most areas in shadow or very dim — fear grows in what players can't see.<br>\
+Try non-uniform lighting: light one corner, keep the rest dark.<br>\
+Bake lighting using Build > Build Lighting Only for best performance.<br>\
+<br>\
+🎨 4. Post Process Volume Settings<br>\
+Add a Post Process Volume and make it Unbound.<br>\
+In settings:<br>\
+Auto Exposure → Min/Max Brightness: Set both to 0.6 for stable exposure.<br>\
+Color Grading:<br>\
+Shadows: cooler tones (bluish)<br>\
+Highlights: desaturated or warm (for contrast)<br>\
+Vignette Intensity: 0.4+<br>\
+Film Grain: 0.3–0.7<br>\
+Bloom: subtle or off<br>\
+Chromatic Aberration: 0.2 (optional for subtle distortion)<br>\
+<br>\
+⚠️ Tips<br>\
+Avoid too many dynamic lights — keep most lights static or stationary.<br>\
+Use light flicker blueprint for tension (can help if you want a scare).<br>\
+Combine with sound design and camera shakes for extra fear impact."
+	,images:["lighting_setup_for_a_horror_game_in_UE4-min"]
 }
+
 
 
 

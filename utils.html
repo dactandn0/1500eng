@@ -20,6 +20,7 @@
         <button ng-click="replaceRg()">B=A.Replace('From', 'To')</button>
         <button ng-click="synonyms()">B=A.synonyms</button>
         <button ng-click="boDauTiengViet()">A(ư á)->u a</button>
+        <button ng-click="add_underscore()">a b->a_b</button>
     </div>
 	
 	
@@ -95,6 +96,13 @@ app.controller('myCtrl', function($scope)
 
     	$scope.inputB = $scope.inputA.replace(rgA, reBy)
 
+    	saveAll()
+    }
+
+    $scope.add_underscore = function()
+    {
+    	let input = $scope.inputA.replace(/\s+/gi, '_')
+    	$scope.inputB = input
     	saveAll()
     }
 

@@ -15,28 +15,29 @@ $scope.acc = -1;
 $scope.stories = UNREAL_DATA_R;			
 
 var keyU = "unreal_u_"	
+var unreal_form = "unreal_form"
 
 unreal_formChange = function (num, isLoadData = false) {
 	$scope.unreal_form = num;
 
 	keyU = removeStrDigit(keyU) + num
-	Helper_saveDB("unreal_form", num);
+	Helper_saveDB(unreal_form, num);
 
 	$scope.acc = -1;
 
-	if (num===0)
+	if (num==0)
 	{
 		$scope.img_root = imgRootPath
 		$scope.stories = UNREAL_DATA_R
 	} 
-	else if (num===1)
+	else if (num==1)
 	{
 		$scope.img_root = imgRootPath + 'others'
 		$scope.stories = UNREAL_DATA_OTHERS
 	}
 	
-	$scope.fetchStory(Helper_loadInt(keyU, 0));
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope, false)  // needn't menu
+	$scope.$evalAsync();
 }
 
 $scope.acc_isShow = function (id) {
@@ -70,7 +71,7 @@ $scope.fetchStory = function (idx)
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt('unreal_form', 0);
+	var cd = Helper_loadInt(unreal_form, 0);
 	unreal_formChange(cd, true);
 	$scope.unreal_form = cd;
 	document.unreal_bForm.unreal_form.value = cd;

@@ -2,7 +2,7 @@ const UNREAL_DATA_OTHERS = [
 {
 	title:"Opacity mask"
 	,en:"Mask is Alpha chanel"
-	,images:["opacity_mask"]
+	,images:["opacity_mask-min"]
 },{
 	title:"RGB_mask_for_variation_Material"
 	,en:""
@@ -15,5 +15,9 @@ const UNREAL_DATA_OTHERS = [
 		"RGB_mask_for_variation_Material05",
 		"RGB_mask_for_variation_Material06",
 	]
+},{
+	title:"[SP] Seamless guide"
+	,en:"Plane"
+	,images:["seamless00-min"]
 }
 ]

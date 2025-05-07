@@ -96,7 +96,7 @@ In horror games, atmosphere and immersion are the most important elements. You w
 If you're working on puzzles for your horror game, I'd suggest you focus on creating puzzles that are satisfying to solve but not overly punishing — let the fear come from the environment and story, not the frustration of getting stuck!"
 },{
 	title:"Sky Light"
-	,en:"In Unreal Engine, the Sky Light simulates ambient lighting by capturing light from the sky (either from a skybox or a real sky atmosphere) and applying it as indirect light to your scene. It fills in shadows and unlit areas, helping define form even where no direct light reaches.<br>\
+	,en:"In UE, the Sky Light simulates ambient lighting by capturing light from the sky (either from a skybox or a real sky atmosphere) and applying it as indirect light to your scene. It fills in shadows and unlit areas, helping define form even where no direct light reaches.<br>\
 <br>\
 What does Sky Light do?<br>\
 Adds soft, global ambient light to all surfaces.<br>\
@@ -127,7 +127,7 @@ Combine with Volumetric Fog, Post Process, and light blocking for strong mood."
 },
 {
 	title:"Directional Light and Sky Light"
-	,en:"In Unreal Engine, Directional Light and Sky Light are two main types of lights commonly used to simulate environmental lighting, especially for outdoor scenes. However, depending on your scene and style, you can choose not to use them, but it's important to understand their roles:<br>\
+	,en:"In UE, Directional Light and Sky Light are two main types of lights commonly used to simulate environmental lighting, especially for outdoor scenes. However, depending on your scene and style, you can choose not to use them, but it's important to understand their roles:<br>\
 <br>\
 🔆 Directional Light<br>\
 Simulates sunlight or a distant light source.<br>\
@@ -221,11 +221,11 @@ Thử nghiệm với các màu sắc: Tạo cảm giác ma quái hoặc huyền 
 Tạo hiệu ứng ánh sáng đặc biệt: Bạn có thể thêm Spot Lights hoặc Point Lights vào scene để tạo ra ánh sáng chiếu qua sương mù, tạo ra những tia sáng kỳ ảo."
 },{
 	title:"Material Color Baking High poly"
-	,en:"World space normal are not necessary for Unreal Engine"
+	,en:"World space normal are not necessary for UE"
 	,images:["mat_id00-min","mat_id01-min","mat_id02-min"]
 },{
 	title:"Lighting setup for a horror game in UE4"
-	,en:"Here's a proper lighting setup for a horror game scene in Unreal Engine 4, especially when you're working with mid-range hardware like a GTX 1660 Super. This setup focuses on atmosphere, tension, and performance optimization — ideal for horror.<br>\
+	,en:"Here's a proper lighting setup for a horror game scene in UE 4, especially when you're working with mid-range hardware like a GTX 1660 Super. This setup focuses on atmosphere, tension, and performance optimization — ideal for horror.<br>\
 <br>\
 🎃 Horror Lighting Setup in UE4 (Optimized for Static/Stationary GI)<br>\
 🔧 1. Project Settings<br>\
@@ -281,7 +281,44 @@ Chromatic Aberration: 0.2 (optional for subtle distortion)<br>\
 Avoid too many dynamic lights — keep most lights static or stationary.<br>\
 Use light flicker blueprint for tension (can help if you want a scare).<br>\
 Combine with sound design and camera shakes for extra fear impact."
-	,images:["lighting_setup_for_a_horror_game_in_UE4-min"]
+	,images:["lighting_setup_for_a_horror_game_in_UE4-min","lighting_setup_for_a_horror_game_in_UE4_01-min"]
+},{
+	title:"Creating torn papers lying on the ground"
+	,en:"For creating torn papers lying on the ground in UE, there are a couple of approaches you could take, depending on the level of detail and performance you aim for:<br>\
+<br>\
+Decals:<br>\
+Pros: Simple to implement, no need to model geometry, and can add detail to the surface easily. This approach works best for flat, 2D-like torn paper textures on the ground.<br>\
+Cons: It won't give you the physical thickness or realistic depth of torn paper. It's more suitable for stylized or simple effects.<br>\
+Use this if you want something quick and lightweight, with minimal impact on performance.<br>\
+<br>\
+Model Mesh with Torn Paper Shape:<br>\
+Pros: This will give you actual 3D geometry, making it more flexible and realistic for close-up shots. You can model the torn paper shape in 3D and add textures with normal maps or displacement to enhance the appearance.<br>\
+Cons: Slightly more complex, requires more polygons than a simple decal, and may affect performance if you use many pieces of torn paper.<br>\
+Go with this if you need more realistic or dynamic torn papers, especially for scenes where the camera will get closer to the paper.<br>\
+<br>\
+Rectangle Plane with Opacity Mask:<br>\
+Pros: Using a rectangle plane with an opacity mask allows you to control the torn edges with a texture. It’s lightweight and can look good if you want to keep the paper flat and not overly detailed.<br>\
+Cons: It might look flat if viewed from certain angles, and you’ll still need to create or source an appropriate opacity mask texture.<br>\
+This is a good balance between simplicity and realism, particularly if you want some depth but don’t need complex geometry.<br>\
+<br>\
+Suggestion:<br>\
+If the torn paper will be seen from a distance or if you’re focusing on performance, decals or rectangle planes with opacity masks should be sufficient. If the paper will be in the foreground or close to the camera, then modeling the torn paper mesh would be better for realism."
+},{
+	title:"TRIS"
+	,en:"In UE 4.27, the number of triangles suitable for imported objects depends on the type of asset and its use in-game. Here's a general guideline:<br>\
+<br>\
+⚠️ Important Considerations:<br>\
+LOD (Level of Detail) is expected. Use multiple LODs for high-poly models.<br>\
+Target platform matters:<br>\
+PC/Console: Higher poly is fine.<br>\
+Mobile/VR: Keep assets much lower (≤ 10K for characters).<br>\
+Draw calls and materials often have a bigger impact than triangles alone.<br>\
+<br>\
+✔ Best Practices:<br>\
+Keep most assets under 50,000 triangles per object.<br>\
+Always generate collision and LODs.<br>\
+Optimize skeletal meshes more aggressively than static props."
+	,images:["max_tris-min"]
 }
 
 

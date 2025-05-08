@@ -254,8 +254,11 @@ $scope.Idx_n_L_WSp_ = function (event)
 
   getVocaFromDB = function(touchedWord)
   {
-    var wordSynonyms = getWordSynonym(touchedWord)
-    var wordFamily = getWordFamily(touchedWord)
+    const wordSynonyms = getWordSynonym(touchedWord)
+    const wordFamily = getWordFamily(touchedWord)
+    const wordSameSounds = getWordSameSound(touchedWord)
+
+    var total = wordFamily + wordSynonyms + wordSameSounds
 
     var json_full = ''
     var found = false
@@ -266,14 +269,14 @@ $scope.Idx_n_L_WSp_ = function (event)
 
       if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) 
       {
-        json_full = wordFull +  wordFamily + wordSynonyms
+        json_full = wordFull +  total
         found = true
         break
       }
     }
     if (!found)
     {
-      json_full =  wordFamily + wordSynonyms
+      json_full =  total
     }
     
     return {

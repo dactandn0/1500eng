@@ -265,24 +265,24 @@ traditional /tra'dij'anl/ (a) truyền thống<br>\
 transcript /'trrenskript/ (n) bản ghi chép<br>\
 virtually /'v3:tfuali/ (adv) hầu như<br>\
 whereas /wear'rez/ (conj) trong khi<br>\
-abridge /ǝ'bridg/ (v)tóm tắt<br>\
-appreciate /ǝ'pri:fieit/ (v)đánh giá cao<br>\
-assign /ǝ'sain/ (v)giao<br>\
-clinic /'klinik/(n)phòng khám<br>\
+abridge /ǝ'bridg/ (v) tóm tắt<br>\
+appreciate /ǝ'pri:fieit/ (v) đánh giá cao<br>\
+assign /ǝ'sain/ (v) giao<br>\
+clinic /'klinik/(n) phòng khám<br>\
 commit /kǝ'mit/ (v)cam kết<br>\
 drop-in /'dropin/ (n)thả vào<br>\
 frame /freim/ (n)khung<br>\
 handle /'hændl/ (v)xử lý<br>\
 ideally /ai'di:ǝli/ ad(v)lý tưởng<br>\
-intercultural /intǝ'kaltfǝrǝl/ (a)liên văn hóa<br>\
+intercultural /intǝ'kaltfǝrǝl/ (a) liên văn hóa<br>\
 interview /'intǝvju:/ (n,v)phỏng vấn<br>\
 parking lot /'pa:kin lot/ (n) bãi đậu xe<br>\
-patio /'pætiǝu/ (n)sân<br>\
+patio /'pætiǝu/ (n) sân<br>\
 questionnaire /kwestfa'nea/ (n) bảng câu hỏi<br>\
 self-access /self'ækses/ (n) tự truy cập<br>\
 sub-part /'sɅbpa:t/(n) phần phụ<br>\
 tutorial /tju:'to:rial/ (a,n) hướng dẫn<br>\
-volunteer /volǝn'tiǝ/ (n)tình nguyện<br>\
+volunteer /volǝn'tiǝ/ (n) tình nguyện<br>\
 abundant /ǝ'bandǝnt/(a) nhiều<br>\
 aggressive /ǝ'gresiv/ (a) hung hăng<br>\
 brushy /'brafi/ (a) bụi rậm<br>\
@@ -299,7 +299,7 @@ scatter /'skætǝ/ (v) phân tán<br>\
 settler /'setlǝ/ (n) người định cư<br>\
 slightly (adv) /'slaitli/ hơi, nhẹ nhàng<br>\
 advertise /'redvataiz/ (v) quảng cáo<br>\
-agricultural /regri'kAltfaral/ (a)nông nghiệp<br>\
+agricultural /regri'kAltfaral/ (a) nông nghiệp<br>\
 disease /di'zi:z/ (n) bệnh tật<br>\
 economic /i:ka'nomik/ (a)kinh tế<br>\
 increase /'inkri:s/ (n) /in'kri:s/ (v) tăng<br>\

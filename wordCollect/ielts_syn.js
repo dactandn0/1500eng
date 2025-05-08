@@ -1,93 +1,97 @@
 var IELTS_SYN = [{title:"Ielts Synonyms",en:""}];
 let SynonymData = [
 {
-words: "fortune | luck"
-, type:"n"
-, mean: "sự từ chối" 
+	words: "fortune /ˈfɔːrtʃən/ | luck"
+	, type:"n"
+	, mean: "sự từ chối" 
 },{
-words: "denial /dɪˈnaɪəl/ | refusal /rɪˈfjuːzl/ | rejection | rebuff | repudiation /rɪˌpjuːdiˈeɪʃn/ "
-, type:"n"
-, mean: "sự từ chối" 
+	words: "hazardous | perilous /ˈperələs/ | dangerous"
+	, type:"a"
+	, mean: "nguy hiểm" 
+},{
+	words: "denial /dɪˈnaɪəl/ | refusal /rɪˈfjuːzl/ | rejection | rebuff | repudiation /rɪˌpjuːdiˈeɪʃn/ "
+	, type:"n"
+	, mean: "sự từ chối" 
 },
 {
-words: "depiction | description | delineation"
-, type:"n"
-, mean: "miêu tả" 
+	words: "depiction | description | delineation"
+	, type:"n"
+	, mean: "miêu tả" 
 },{
-words: "suffering (a) /ˈsʌfərɪŋ/ | distress (n) /dɪˈstres/"
-, type:"n"
-, mean: "đau khổ" 
+	words: "suffering (a) /ˈsʌfərɪŋ/ | distress (n) /dɪˈstres/"
+	, type:"n"
+	, mean: "đau khổ" 
 },{
-words: "intense | strong | vigorous"
-, type:"a"
-, mean: "mạnh" 
+	words: "intense | strong | vigorous"
+	, type:"a"
+	, mean: "mạnh" 
 },{
-words: "sense | feel"
-, type:"n"
-, mean: "cảm giác" 
+	words: "sense | feel"
+	, type:"n"
+	, mean: "cảm giác" 
 },{
-words: "autumn | fall"
-, type:"n"
-, mean: "mùa hè" 
+	words: "autumn | fall"
+	, type:"n"
+	, mean: "mùa hè" 
 },{
-words: "good health | fitness"
-, type:"n"
-, mean: "sức khỏe tốt" 
+	words: "good health | fitness"
+	, type:"n"
+	, mean: "sức khỏe tốt" 
 },{
-words: "convenient | comfortable | advantageous | available | comfy | practical"
-, type:"a"
-, mean: "tiện lợi" 
+	words: "convenient | comfortable | advantageous | available | comfy | practical"
+	, type:"a"
+	, mean: "tiện lợi" 
 }, {
-words: "focus | concentrate"
-, type:"v"
-, mean: "tập trung" 
+	words: "focus | concentrate"
+	, type:"v"
+	, mean: "tập trung" 
 },{
-words: "supply | offer | provide"
-, type:"v"
-, mean: "cung cấp" 
+	words: "supply | offer | provide"
+	, type:"v"
+	, mean: "cung cấp" 
 }, {
-words: "cost | expense "
-, type:"n"
-, mean: "chi phí" 
+	words: "cost | expense "
+	, type:"n"
+	, mean: "chi phí" 
 },{
-words: "deliberately | on purpose"
-, type:"adv"
-, mean: "cố ý" 
+	words: "deliberately | on purpose"
+	, type:"adv"
+	, mean: "cố ý" 
 }, {
-words: "anonymous /əˈnɑːnɪməs / | unnamed | nameless /ˈneɪmləs /"
-, type:"a"
-, mean: "vô danh" 
+	words: "anonymous /əˈnɑːnɪməs / | unnamed | nameless /ˈneɪmləs /"
+	, type:"a"
+	, mean: "vô danh" 
 }, {
-words: "reserve | book "
-, type:"v"
-, mean: "đặt trước" 
+	words: "reserve | book "
+	, type:"v"
+	, mean: "đặt trước" 
 }, {
-words: "commodity | merchandise | stock | ware | influx | goods"
-, type:"n"
-, mean: "hàng hóa" 
+	words: "commodity | merchandise | stock | ware | influx | goods"
+	, type:"n"
+	, mean: "hàng hóa" 
 },{
-words: "downturn | decline "
-, type:"n"
-, mean: "sự suy thoái" 
+	words: "downturn | decline "
+	, type:"n"
+	, mean: "sự suy thoái" 
 },{
-words: "intricate | complicated | perplexing"
-, type:"a"
-, mean: "phức tap" 
+	words: "intricate | complicated | perplexing"
+	, type:"a"
+	, mean: "phức tap" 
 },{
-words: "​wide | broad | large | extensive | vast"
-, type:"a"
-, mean: "rộng rãi" 
+	words: "​wide | broad | large | extensive | vast"
+	, type:"a"
+	, mean: "rộng rãi" 
 },{
-words: "vision | look | outlook | contemplation | regard"
-, type:"n"
-, mean: "sự nhìn" 
+	words: "vision | look | outlook | contemplation | regard"
+	, type:"n"
+	, mean: "sự nhìn" 
 },{
-words: "appeal | attraction | attractiveness"
-, mean: "sự hấp dẫn" 
+	words: "appeal | attraction | attractiveness"
+	, mean: "sự hấp dẫn" 
 },{
-words: "​classify | digest | distribute"
-, type:"v"
-, mean: "phân loại" 
+	words: "​classify | digest | distribute"
+	, type:"v"
+	, mean: "phân loại" 
 }, {
 	words:"important /ɪmˈpɔːrtnt / | crucial /ˈkruːʃl / | significant /sɪɡˈnɪfɪkənt / | be instrumental in | considerable ",
 	type:"a",
@@ -392,8 +396,8 @@ function getWordSynonym(word)
 		}
 	}
 	var rr = arr.join()
-	if (rr.length > 0) rr = ' [s. ' + rr + ']'
-	return rr
+	if (rr.length > 0) rr = ' [syn. ' + rr + ']'
+		return rr
 }
 
 
@@ -401,9 +405,9 @@ function IsExisted(seq, word)
 {
 	let seqs = seq.split('|')
 	const idx = seqs.findIndex(ele => ele.replace(/\(.*\)/,'').replace(/\/.*\//, '').trim() == word)
-//	console.log('IsExisted: ' + idx)
+	//console.log('IsExisted: ' + idx)
 	return idx >= 0
 }
 
-// getWordSynonym('convenient')
+getWordSynonym('convenient')
 

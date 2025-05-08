@@ -9,6 +9,7 @@ concentrate (v) /ˈkɑːnsntreɪt/ tập trung<br>\
 archeology (n) /ˌɑːrkiˈɑːlədʒi/ khảo cổ học<br>\
 identical (a) giống hệt nhau<br>\
 toward (prep) /tɔːrdz/ theo hướng<br>\
+exterminator (n) người diệt côn trùng, người tàn sát<br>\
 health (n) sức khỏe<br>\
 fitness (n) sự thích hợp, tài năng, tư cách, sức khỏe tốt<br>\
 comfortable (a) tiện lợi<br>\
@@ -139,8 +140,7 @@ reply (v) /rɪˈplaɪ/ trả lời<br>\
 trick (n) /trɪk/ mẹo<br>\
 adventure (n) /ədˈventʃər/ phiêu lưu<br>\
 approach (n,v) /əˈprəʊtʃ/ tiếp cận<br>\
-chemical (a) thuộc hóa học<br>\
-chemicals (n) hóa chất<br>\
+chemical (a,n) thuộc hóa học, hóa chất (chemicals = chemical)<br>\
 obesity (n) /əʊˈbiːsəti/ béo phì<br>\
 experiment (n) /ɪkˈsperɪmənt/ thí nghiệm<br>\
 laboratory (n) /ˈlæbrətɔːri/ phòng thí nghiệm<br>\
@@ -1258,7 +1258,6 @@ overcast (a) /əʊvərˈkæst/ u ám (very cloudy)<br>\
 scorching (a) /ˈskɔːrtʃɪŋ/ nóng như thiêu (very hot)<br>\
 freezing (a) /ˈfriːzɪŋ/ nóng như thiêu (very cold)<br>\
 starving (a) /stɑːrv/ đói khát (very hungry)<br>\
-perilous (a) /ˈperələs/ nguy hiểm (very dangerous)<br>\
 costly (a) /ˈperələs/ đắt đỏ (very expensive)<br>\
 exhausted (a) /ɪɡˈzɔːstɪd/ kiệt sức (very tired)<br>\
 heartbroken (a) /ˈhɑːrtbrəʊkən/ kiệt sức (very sad)<br>\

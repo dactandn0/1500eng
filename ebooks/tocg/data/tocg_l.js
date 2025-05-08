@@ -568,7 +568,7 @@ function makeOCG_DATA ()
 		var json = {
 			track: trackName,
 			en: '',
-			images: [trackName],
+			images: ['Cam' + trackName + '-min'],
 		}
 
 		let idx = TOCG_DATA_L.findIndex(ele => ele && ele.track == trackName);

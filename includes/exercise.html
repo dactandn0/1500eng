@@ -19,7 +19,7 @@
 
 <div ng-if="story.images && story.images.length > 0">
 	<div ng-repeat="img in story.images track by $index">
-		<img src="{{img_root}}/{{img}}-min.png" class="img-fluid mb-2">
+		<!-- <img src="{{img_root}}/{{img}}-min.png" class="img-fluid mb-2"> -->
 		<img src="{{img_root}}/{{img}}.png" class="img-fluid mb-2">
 	</div>
 </div>
@@ -38,9 +38,8 @@
 	</div>
 
 	<div class="mt-2">
-		<div ng-repeat="img in story.images track by $index">
-			<img src="{{img_root}}/{{img}}_ans-min.png" class="img-fluid mb-2">
-			<img src="{{img_root}}/{{img}}_ans.png" class="img-fluid mb-2">
+		<div ng-repeat="img in story.ans_images track by $index">
+			<img src="{{img_root}}/{{img}}.png" class="img-fluid mb-2">
 		</div>
 	</div>
 </div> <!-- show_answer -->

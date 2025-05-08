@@ -184,14 +184,20 @@ function getFullTile(obj) {
 						|| (obj.Match_Heading && obj.Match_Heading.trim().length > 0)
 						|| (obj.images && obj.images.length > 0)
 
-	const counts = (obj.en.match(/B:/g) || []).length +
-	  (obj.en.match(/W:/g) || []).length +
-	  (obj.en.match(/M:/g) || []).length +
-	  (obj.en.match(/G:/g) || []).length +
-	  (obj.en.match(/Candidate:/g) || []).length +
-	  (obj.en.match(/Examiner:/g) || []).length
+	var isConversation = false
 
-	var isConversation = counts > 1
+	if (obj.en)
+	{
+	  const counts = (obj.en.match(/B:/g) || []).length +
+		(obj.en.match(/W:/g) || []).length +
+		(obj.en.match(/M:/g) || []).length +
+		(obj.en.match(/G:/g) || []).length +
+		(obj.en.match(/Candidate:/g) || []).length +
+		(obj.en.match(/Examiner:/g) || []).length
+
+		isConversation = counts > 1
+	}
+
 	// story.L					
 	var ngStyle = {}
 	if (hasNote) ngStyle.color = 'red'

@@ -288,6 +288,17 @@ function processStory (story, isAlert = true) {
 	var json = getFullTile(story)
 	story.fTitle = json.fTitle
 
+	_images = story.images
+	if (_images) 
+	{
+		ans_images = []
+		for (var i = 0; i < _images.length; i++) {
+			img = _images[i].replace('-min', '')
+			ans_img = img + '_ans-min'
+			ans_images.push(ans_img)
+		}
+		story.ans_images = ans_images
+	}
 	return story;
 }
 

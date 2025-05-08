@@ -81,7 +81,7 @@ function make_DATA ()
 			var json = {
 				track: trackName,
 				en: '',
-				images: [trackName],
+				images: [trackName+ '-min'],
 			}
 
 			let idx = LRAT_DATA_L_1.findIndex(ele => ele && ele.track == trackName);

@@ -16,7 +16,7 @@ programme. Discussions began early in 2005 with archaeological bodies, universit
 A small team began to make the boat at the start of 2012 on the Roman Lawn outside Dover museum. A full-scale reconstruction of a mid-section had been made in 1996, primarily to see how Bronze- Age replica tools performed. In 2012, however, the hull shape was at the centre of the work, so modern power tools were used to carve the oak planks, before turning to prehistoric tools for finishing. It was decided to make the replica half-scale for reasons of cost and time, and synthetic materials were used for the stitching, owing to doubts about the scaling and tight timetable.<br>\
 Meanwhile, the exhibition was being prepared ready for opening in July 2012 at the Castle Museum in Boulogne-sur-Mer. Entitled 'Beyond the Horizon: Societies of the Channel & North Sea 3,500 years ago', it brought together for the first time a remarkable collection of Bronze-Age objects, including many new discoveries for commercial archaeology and some of the great treasure of the past. The reconstructed boat, as a symbol of the maritime connections that bound together the communities either side of the Channel, was the centrepiece."
 	,voca:"synthetic,carve,maritime,hindsight,perceptions,perspective,dismantled,prehistoric,muddy,sediment,intricately,deliberately,insurmountable,heritage,extensive,excavation,Experimental,profound,archaeology,archaeologists,archaeological,remarkable,reconstruction,proposals,ancient,outreach,watertight,waterlogged"
-	,images:["test1.1"]
+	,images:["test1.1-min"]
 	,en_ans:"1 road 2 conference 3 proposals 4 launch 5 exhibition|6T 7F 8F 9NG| 10 six/6meters(metres,m) 11 moss 12 ( the) hull (shape) 13 cost and time/cost time/time cost"
 }
 ,{
@@ -39,7 +39,7 @@ The survey asked respondents with meeting facilities to estimate how much revenu
 H<br>\
 The findings of this study suggest that few airports provide meetings facilities as a serious commercial venture. It may be that, as owners of large property, space is available for meeting facilities at airports and could play an important role in serving the needs of the airport, its partners, and stakeholders such as government and the local community. Thus, while the local orientation means that competition with other airports is likely to be minimal, competition with local providers of meetings facilities is likely to be much greater."
 	,voca:"diversify,restrictions,facilities,investigate,competition,tobacco,procedures,dwell time,aeronautical"
-	,images:["test1.2"]
+	,images:["test1.2-min"]
 },{
 	title:"1.3 IS PHOTOGRAPHY ART?"
 	,en:"This may seem a pointless question today. Surrounded as we are by thousands of photographs, most of us take for granted that, in addition to supplying information and seducing customers, camera images also serve as decoration, afford spiritual enrichment, and provide significant insights into the passing scene. But in the decades following the discovery of photography, this question reflected the search for ways to fit the mechanical medium into the traditional schemes of artistic expression.<br>\
@@ -51,7 +51,7 @@ Wey left unstated what the incompetent artist might do as an alternative, but ac
 Eugene Delacroix was the most prominent of the French artists who welcomed photography as help-mate but recognized its limitations. Regretting that 'such a wonderful invention' had arrived so late in his lifetime, he still took lessons in daguerreotyping, and both commissioned and collected photographs. Delacroix's enthusiasm for the medium can be sensed in a journal entry noting that if photographs were used as they should be, an artist might 'raise himself to heights that we do not yet know'.<br>\
 The question of whether the photograph was document or art aroused interest in England also. The most important statement on this matter was an unsigned article that concluded that while photography had a role to play, it should not be 'constrained' into 'competition' with art; a more stringent viewpoint led critic Philip Gilbert Hamerton to dismiss camera images as 'narrow in range, emphatic in assertion, telling one truth for ten falsehoods'.<br>\
 These writers reflected the opposition of a section of the cultural elite in England and France to the 'cheapening of art' which the growing acceptance and purchase of camera pictures by the middle class represented. Technology made photographic images a common sight in the shop windows of Regent Street and Piccadilly in London and the commercial boulevards of Paris. In London, for example, there were at the time some 130 commercial establishments where portraits, landscapes, and photographic reproductions of works of art could be bought. This appeal to the middle class convinced the elite that photographs would foster a desire for realism instead of idealism, even though some critics recognized that the work of individual photographers might display an uplifting style and substance that was consistent with the defining characteristics of art."
-,images:["test1.3"]
+,images:["test1.3-min"]
 ,voca:"granted,enrichment,usefulness,perplexing,spirited,spiritual,portrait,landscape,expression,foster,assertion,naturalness,depiction,phenomena,menial,considerable"
 },
 {
@@ -68,7 +68,7 @@ Working out the role of smell in flavor interests food scientists, psychologists
 However, whereas molecular gastronomy is concerned primarily with the food or 'smell' molecules, neurogastronomy is more focused on the receptor molecules and the brain's spatial images for smell. Smell stimuli form what Shepherd terms 'odor objects', stored as memories, and these have a direct link with our emotions. The brain creates images of unfamiliar smells by relating them to other more familiar smells. Go back in history and this was part of our survival repertoire; like most animals, we drew on our sense of smell, when visual information was scarce, to single out prey.<br>\
 Thus the brain's flavor-recognition system is a highly complex perceptual mechanism that puts all five senses to work in various combinations. Visual and sound cues contribute, such as crunching, as does touch, including the texture and feel of food on our lips and in our mouths. Then there are the taste receptors, and finally, the smell, activated when we inhale. The engagement of our emotions can be readily illustrated when we picture some of the wide ranging facial expressions that are elicited by various foods many of them hard-wired into our brains at birth. Consider the response to the sharpness of a lemon and compare that with the face that is welcoming the smooth wonder of chocolate.<br>\
 The flavor-sensing system, ever receptive to new combinations, helps to keep our brains active and flexible. It also has the power to shape our desires and ultimately our bodies. On the horizon we have the positive application of neurogastronomy: manipulating flavor to curb our appetites."
-,images:["test2.1"]
+,images:["test2.1-min"]
 }
 
 

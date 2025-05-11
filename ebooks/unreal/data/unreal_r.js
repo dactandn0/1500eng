@@ -120,10 +120,6 @@ Best practices for horror:<br>\
 Set Sky Light intensity low (0.1–0.3).<br>\
 Use Lumen + local lights (flashlight, candles, etc.) for tension and control.<br>\
 Combine with Volumetric Fog, Post Process, and light blocking for strong mood."
-},{
-	title:"ParallaxOcclusionMapping"
-	,en:""
-	,images:["ParallaxOcclusionMapping-min"]
 },
 {
 	title:"Directional Light and Sky Light"
@@ -319,6 +315,93 @@ Keep most assets under 50,000 triangles per object.<br>\
 Always generate collision and LODs.<br>\
 Optimize skeletal meshes more aggressively than static props."
 	,images:["max_tris-min"]
+},{
+	title:"Build environment 1"
+	,en:"1. Dùng Modular Kit<br>\
+Thay vì dựng từng bức tường hay cột riêng lẻ, bạn nên tạo các modular pieces (các mảnh lặp lại):<br>\
+<br>\
+Loại Module	Kích thước gợi ý<br>\
+Wall/Floor		400cm x 400cm<br>\
+Door Frame		100cm x 250cm<br>\
+Window			100cm x 100cm<br>\
+<br>\
+➡️ Sau đó, ráp như lego trong Unreal → nhanh, gọn, chỉnh sửa dễ.<br>\
+<br>\
+🧱 2. Trim Sheet thay vì từng texture riêng<br>\
+Như bạn đang làm: trim sheet là tuyệt vời cho solo dev.<br>\
+Chỉ cần 1 texture 1K bạn có thể dùng cho 10+ vật thể khác nhau.<br>\
+Gắn UV chính xác vào dải trim → tiết kiệm RAM, dễ làm vật thể mới.<br>\
+<br>\
+🧩 3. Sử dụng Blueprints để tạo cụm (cluster)<br>\
+Dựng từng mesh = chậm và khó kiểm soát.<br>\
+<br>\
+➡️ Hãy dùng Blueprint Actor để nhóm:<br>\
+Một cụm bàn + ghế + đèn<br>\
+Một đoạn hành lang có 2 cửa + đèn<br>\
+→ Kéo thả một lần, chỉnh sửa một chỗ, tiết kiệm hàng giờ.<br>\
+<br>\
+🛠️ 4. Làm blockout trước<br>\
+Đừng vội dựng chi tiết. Dùng boxes đơn giản hoặc shape từ Unreal để dựng layout tổng thể:<br>\
+Cửa ở đâu?<br>\
+Góc camera nào quan trọng?<br>\
+Di chuyển như thế nào?<br>\
+<br>\
+→ Sau khi chắc chắn layout ổn, mới bắt đầu thay từng box bằng mesh chi tiết.<br>\
+<br>\
+💡 5. Làm theo tầng (pass-based workflow)<br>\
+Blockout (layout, scale)<br>\
+Modular replacement (thay box bằng mesh)<br>\
+Lighting sơ bộ<br>\
+Detail pass (đồ đạc, decals)<br>\
+Atmosphere (fog, light FX, sound)<br>\
+<br>\
+→ Mỗi bước đều rõ ràng, tránh bị sa lầy vào chi tiết quá sớm."
+},{
+	title:"Build environment 2 - Use a big plane for floor/ground tile"
+	,en:"🔶 Dùng 1 tấm plane lớn (ví dụ: 4000x4000 cm)<br>\<br>\
+✅ Ưu điểm:<br>\<br>\
+Rất nhanh: chỉ cần đặt một mesh là xong sàn.<br>\<br>\
+Không có khe hở giữa các modular pieces.<br>\<br>\
+Dễ UV mapping nếu dùng một texture tile đơn giản (dễ cho blockout giai đoạn đầu).<br>\<br>\
+<br>\<br>\
+❌ Nhược điểm:<br>\<br>\
+Không linh hoạt: khó chỉnh layout sau này.<br>\<br>\
+<br>\<br>\
+Nếu có chi tiết hỏng hóc, vết máu, rêu… → khó blend đúng vị trí (trừ khi dùng decals).<br>\<br>\
+Không cắt được lightmap hợp lý, gây lỗi đổ bóng (light bleed, shadow noise).<br>\<br>\
+Tấm lớn quá → mất batching, Unreal khó tối ưu khi tính toán draw calls.<br>\<br>\
+<br>\<br>\
+🔷 Dùng nhiều modular floor plane nhỏ (ví dụ: 400x400 cm)<br>\<br>\
+✅ Ưu điểm:<br>\<br>\
+Linh hoạt: dễ thay đổi layout, copy-paste, gắn blueprint, cắt phần nào cũng được.<br>\<br>\
+Tốt hơn cho vertex paint, decals, damage blending.<br>\<br>\
+Tối ưu tốt hơn về occlusion culling và LOD (vì từng mảnh riêng).<br>\<br>\
+Nếu dùng trim sheet, UV rất dễ căn vào đúng khu vực.<br>\<br>\
+<br>\<br>\
+❌ Nhược điểm:<br>\<br>\
+Tốn nhiều thao tác đặt hơn (nhưng có thể dùng script hoặc blueprint để ráp nhanh).<br>\<br>\
+Có thể bị lỗi khe hở nếu modular mesh không khớp 100% hoặc có floating point error.<br>\<br>\
+<br>\<br>\
+🧠 Kết luận:<br>\<br>\
+Trường hợp	Nên dùng<br>\<br>\
+Prototype, blockout, cảnh đơn giản	Plane lớn<br>\<br>\
+Cảnh game thật, cần detail, tối ưu	Modular nhỏ<br>\<br>\
+Cảnh cinematic, không di chuyển	Plane lớn có thể chấp nhận được<br>\<br>\
+<br>\<br>\
+Nếu bạn chỉ định làm cảnh 'một lần rồi thôi', thì tấm lớn có thể chấp nhận được. Nhưng nếu:<br>\<br>\
+<br>\<br>\
+Người chơi có thể di chuyển nhiều<br>\<br>\
+Cảnh có tương tác, phá hủy, máu, decal<br>\<br>\
+Bạn định reuse (dùng lại) mesh ở nơi khác<br>\<br>\
+<br>\<br>\
+→ Thì nên dùng modular, dù hơi tốn công lúc đầu."
+},{
+	title:"TRIM SHEET BÀN – GHẾ - TỦ – ĐÈN"
+	,en:"Dùng chỉ 1 texture 1024x1024<br>\
+Chứa đủ các loại vật liệu: gỗ, kim loại, vải nệm, bóng đèn<br>\
+UV dễ gán bằng tay (có khoảng cách rõ ràng)<br>\
+Có thể tile hoặc reuse được"
+	,images:["trimsheet1k-ban-ghe-den"]
 }
 
 

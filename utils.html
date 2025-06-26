@@ -11,9 +11,9 @@
  
 	<p>Input something in [A] [B] [C]:</p>
 
-	<textarea ng-model="inputA" rows="34" cols="40" ng-trim="false"></textarea>
-	<textarea ng-model="inputB" rows="34" cols="40" ng-trim="false"></textarea>
-	<textarea ng-model="inputC" rows="34" cols="40" ng-trim="false"></textarea>
+	<textarea ng-model="inputA" rows="25" cols="40" ng-trim="false"></textarea>
+	<textarea ng-model="inputB" rows="25" cols="40" ng-trim="false"></textarea>
+	<textarea ng-model="inputC" rows="25" cols="40" ng-trim="false"></textarea>
 
     <div class="my-1">
         Replace (regex) : <input type="text" ng-model="regexA" placeholder="From"> => <input type="text" ng-model="replaceBy" placeholder="To" ng-trim="false">
@@ -21,6 +21,7 @@
         <button ng-click="synonyms()">B=A.synonyms</button>
         <button ng-click="boDauTiengViet()">A(ư á)->u a</button>
         <button ng-click="add_underscore()">a b->a_b</button>
+        <button ng-click="add_underscore(false)">a_b->a b</button>
     </div>
 	
 	
@@ -37,7 +38,7 @@
         <button ng-click="boxAppendBr()">Append 'br' tag</button>     
     </div>
 
-	<ul ng-repeat="x in records">{{x}}</ul>
+	<span ng-repeat="x in records">{{x}}&nbsp;&nbsp;&nbsp;</ul>
 
 	</div> <!-- controller -->
 </body>
@@ -99,11 +100,19 @@ app.controller('myCtrl', function($scope)
     	saveAll()
     }
 
-    $scope.add_underscore = function()
-    {
-    	let input = $scope.inputA.replace(/\s+/gi, '_')
+    $scope.add_underscore = function(add=true)
+    {   
+        let input = ''
+        if (add)
+        {
+            input = $scope.inputA.replace(/[\,\-&\.]/gi, ' ').replace(/\s+/gi, '_')
+        }
+        else
+            input = $scope.inputA.replace(/[_]/gi, ' ')
+
     	$scope.inputB = input
     	saveAll()
+        copyToClipboard(input)
     }
 
     $scope.boDauTiengViet = function()
@@ -136,6 +145,17 @@ app.controller('myCtrl', function($scope)
         "n\\.",
         "v\\.",
     ]
+
+// Copies text to clipboard
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log('Copied to clipboard successfully!');
+    })
+    .catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+}
 
 function saveDB(key,val )
 {

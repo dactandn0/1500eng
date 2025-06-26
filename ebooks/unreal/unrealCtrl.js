@@ -1,6 +1,9 @@
 
 document.write('<script src="./ebooks/unreal/data/unreal_r.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/unreal/data/unreal_material.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/unreal/data/unreal_light.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/unreal/data/unreal_bp.js" type="text/javascript"></script>');
+
 
 
 var app = angular.module("unrealApp", []);
@@ -34,6 +37,16 @@ unreal_formChange = function (num, isLoadData = false) {
 	{
 		$scope.img_root = imgRootPath + 'material'
 		$scope.stories = UNREAL_DATA_MATERIAL
+	}	
+	else if (num==2)
+	{
+		$scope.img_root = imgRootPath + 'light'
+		$scope.stories = UNREAL_DATA_LIGHT
+	}
+	else if (num==3)
+	{
+		$scope.img_root = imgRootPath + 'bp'
+		$scope.stories = UNREAL_DATA_BP
 	}
 	
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope, false)  // needn't menu

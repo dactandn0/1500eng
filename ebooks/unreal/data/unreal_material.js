@@ -101,5 +101,11 @@ float Mask → radial mask (0–1) that controls where blur applies<br>\
 This script = Custom radial blur logic done in shader HLSL inside a Custom node in a Post Process Material. It's optimized and flexible — very useful in horror, hit impact, time warp, or spiritual effects.<br>\
 "
 ,images:["Radial_Blur_PP"]
+},
+{
+	title:"N Strength Ways",
+	en:"",
+	images:["Normal_Strength"]
+
 }
 ]

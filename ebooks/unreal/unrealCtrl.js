@@ -3,6 +3,7 @@ document.write('<script src="./ebooks/unreal/data/unreal_r.js" type="text/javasc
 document.write('<script src="./ebooks/unreal/data/unreal_material.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/unreal/data/unreal_light.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/unreal/data/unreal_bp.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/unreal/data/unreal_vfx.js" type="text/javascript"></script>');
 
 
 
@@ -47,6 +48,11 @@ unreal_formChange = function (num, isLoadData = false) {
 	{
 		$scope.img_root = imgRootPath + 'bp'
 		$scope.stories = UNREAL_DATA_BP
+	}
+	else if (num==4)
+	{
+		$scope.img_root = imgRootPath + 'vfx'
+		$scope.stories = UNREAL_DATA_VFX
 	}
 	
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope, false)  // needn't menu

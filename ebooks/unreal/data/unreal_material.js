@@ -103,9 +103,13 @@ This script = Custom radial blur logic done in shader HLSL inside a Custom node 
 ,images:["Radial_Blur_PP"]
 },
 {
-	title:"N Strength Ways",
+	title:"Ways for editing Normal",
 	en:"",
 	images:["Normal_Strength"]
-
+}
+, {
+	title:"",
+	en:"",
+	images:["physics_mat"]
 }
 ]

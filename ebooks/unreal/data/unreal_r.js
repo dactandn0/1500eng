@@ -125,29 +125,29 @@ Combine with Volumetric Fog, Post Process, and light blocking for strong mood."
 	title:"Directional Light and Sky Light"
 	,en:"In UE, Directional Light and Sky Light are two main types of lights commonly used to simulate environmental lighting, especially for outdoor scenes. However, depending on your scene and style, you can choose not to use them, but it's important to understand their roles:<br>\
 <br>\
-🔆 Directional Light<br>\
+Directional Light<br>\
 Simulates sunlight or a distant light source.<br>\
 Creates sharp shadows, commonly used for daytime outdoor scenes.<br>\
 Supports Dynamic Shadows, Cascaded Shadow Maps, and Light Shafts (god rays).<br>\
 Can be set to Stationary, Movable, or Static depending on optimization and dynamic needs.<br>\
 <br>\
-🧠 Without Directional Light?<br>\
+Without Directional Light?<br>\
 Your scene will have no main light source, unless replaced with something like a Spot or Point Light.<br>\
 Not suitable for bright outdoor scenes.<br>\
 Can work well for indoor or dark environments with artificial lighting.<br>\
 <br>\
-☁️ Sky Light<br>\
+Sky Light<br>\
 Captures light from the entire sky and evenly lights all objects, simulating ambient light.<br>\
 Helps brighten areas that are not directly lit, like the shadowed sides of objects.<br>\
 Can use an HDRI texture to simulate realistic skylight.<br>\
 <br>\
-🧠 Without Sky Light?<br>\
+Without Sky Light?<br>\
 Indirect areas (in shadow) will be completely dark, losing detail.<br>\
 The scene may look flat or lack depth with just a Directional Light.<br>\
 <br>\
 However, for horror or dark scenes, not having a Sky Light can make things feel gloomier and more intense — this can be an advantage.<br>\
 <br>\
-✅ In summary: Are they required?<br>\
+In summary: Are they required?<br>\
 Not required, but:<br>\
 Use Directional Light if you need a strong sun-like source.<br>\
 Use Sky Light to enhance overall brightness and shadow detail.<br>\
@@ -155,7 +155,7 @@ Use Sky Light to enhance overall brightness and shadow detail.<br>\
 In horror games, you can skip Sky Light to create deeper darkness and manually control lighting with Point/Spot Lights.<br>\
 If you're working on a dark environment with a mix of indoor and outdoor areas, here's what I recommend regarding Directional Light and Sky Light:<br>\
 <br>\
-✅ Directional Light – Optional but Useful<br>\
+Directional Light – Optional but Useful<br>\
 If your outdoor areas have a moonlight or dim sun (e.g., sunset, overcast, or post-apocalyptic), you can still use a Directional Light but:<br>\
 <br>\
 Reduce its intensity.<br>\
@@ -163,7 +163,7 @@ Change its color to cool blue or orange hues.<br>\
 Set it to Movable if you want dynamic shadows.<br>\
 If you want full darkness outside (e.g., abandoned area at night), you can skip it entirely and use Spot/Point lights for full control.<br>\
 <br>\
-✅ Sky Light – Use Carefully<br>\
+Sky Light – Use Carefully<br>\
 Sky Light can fill in shadow areas and give a subtle ambient boost, but in dark environments, it can flatten the mood if not tuned right.<br>\
 <br>\
 Tips:<br>\

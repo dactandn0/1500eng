@@ -220,64 +220,9 @@ Tạo hiệu ứng ánh sáng đặc biệt: Bạn có thể thêm Spot Lights h
 	,en:"World space normal are not necessary for UE"
 	,images:["mat_id00-min","mat_id01-min","mat_id02-min"]
 },{
-	title:"Lighting setup for a horror game in UE4"
-	,en:"Here's a proper lighting setup for a horror game scene in UE 4, especially when you're working with mid-range hardware like a GTX 1660 Super. This setup focuses on atmosphere, tension, and performance optimization — ideal for horror.<br>\
-<br>\
-🎃 Horror Lighting Setup in UE4 (Optimized for Static/Stationary GI)<br>\
-🔧 1. Project Settings<br>\
-Go to Edit > Project Settings > Rendering:<br>\
-<br>\
-✅ Enable Ambient Occlusion<br>\
-✅ Enable Use Static Lighting<br>\
-🔲 Disable Ray Tracing<br>\
-✅ Use Forward Shading (optional, but faster for low-spec)<br>\
-✅ Set Auto Exposure to manual (see below)<br>\
-<br>\
-💡 2. Main Lighting Types to Use<br>\
-[image]<br>\
-<br>\
-⚙️ 3. Basic Setup Steps<br>\
-🌕 Moonlight / Outdoor Night Scene<br>\
-Add a Directional Light, set it to:<br>\
-<br>\
-Intensity: 0.3–0.7<br>\
-Light color: desaturated blue-gray<br>\
-Cast Shadows: On<br>\
-Mobility: Stationary<br>\
-<br>\
-Add a Sky Light, set to:<br>\
-Source: Captured Scene or HDRI<br>\
-Intensity: 0.2–0.4<br>\
-Mobility: Stationary<br>\
-<br>\
-Add Exponential Height Fog:<br>\
-Fog Density: 0.02–0.05<br>\
-Fog Inscattering Color: bluish-gray<br>\
-Add Volumetric Fog only if needed (costly)<br>\
-<br>\
-🏚️ Indoor Scene<br>\
-Use Spot Lights to simulate flickering bulbs or flashlights.<br>\
-Keep most areas in shadow or very dim — fear grows in what players can't see.<br>\
-Try non-uniform lighting: light one corner, keep the rest dark.<br>\
-Bake lighting using Build > Build Lighting Only for best performance.<br>\
-<br>\
-🎨 4. Post Process Volume Settings<br>\
-Add a Post Process Volume and make it Unbound.<br>\
-In settings:<br>\
-Auto Exposure → Min/Max Brightness: Set both to 0.6 for stable exposure.<br>\
-Color Grading:<br>\
-Shadows: cooler tones (bluish)<br>\
-Highlights: desaturated or warm (for contrast)<br>\
-Vignette Intensity: 0.4+<br>\
-Film Grain: 0.3–0.7<br>\
-Bloom: subtle or off<br>\
-Chromatic Aberration: 0.2 (optional for subtle distortion)<br>\
-<br>\
-⚠️ Tips<br>\
-Avoid too many dynamic lights — keep most lights static or stationary.<br>\
-Use light flicker blueprint for tension (can help if you want a scare).<br>\
-Combine with sound design and camera shakes for extra fear impact."
-	,images:["lighting_setup_for_a_horror_game_in_UE4-min","lighting_setup_for_a_horror_game_in_UE4_01-min"]
+	title:"WASD"
+	,en:""
+	,images:["WASD"]
 },{
 	title:"Creating torn papers lying on the ground"
 	,en:"For creating torn papers lying on the ground in UE, there are a couple of approaches you could take, depending on the level of detail and performance you aim for:<br>\
@@ -395,28 +340,7 @@ Cảnh có tương tác, phá hủy, máu, decal<br>\<br>\
 Bạn định reuse (dùng lại) mesh ở nơi khác<br>\<br>\
 <br>\<br>\
 → Thì nên dùng modular, dù hơi tốn công lúc đầu."
-},{
-	title:"TRIM SHEET BÀN – GHẾ - TỦ – ĐÈN"
-	,en:"Dùng chỉ 1 texture 1024x1024<br>\
-Chứa đủ các loại vật liệu: gỗ, kim loại, vải nệm, bóng đèn<br>\
-UV dễ gán bằng tay (có khoảng cách rõ ràng)<br>\
-Có thể tile hoặc reuse được"
-	,images:["trimsheet1k-ban-ghe-den"]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

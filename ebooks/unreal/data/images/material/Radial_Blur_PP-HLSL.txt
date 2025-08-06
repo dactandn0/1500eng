@@ -1,0 +1,24 @@
+float2 uv = GetViewportUV(Parameters);
+float4 color = SceneTextureLookup(ClampSceneTextureUV(ViewportUVToSceneTextureUV(uv, 14), 14), 14, false);
+float4 sceneColor = color;
+
+float kernel[10] = {-.8, -.5, -.3, -.2, -.1, .1, .2, .3, .5, .8};
+float2 Direction = uv - Position.xy;
+
+for(int i = 0; i < 10; i++)
+{
+    //float offsetx = uv.x + kernel[i] * PixelSize.x * Radius;
+    //float offsety = uv.y;
+    float2 offsetUV = uv + Direction * kernel[i] * PixelSize * Radius;
+    offsetUV = saturate(offsetUV);
+    float4 sampleColor = SceneTextureLookup(ClampSceneTextureUV(ViewportUVToSceneTextureUV(offsetUV, 14), 14), 14, false);
+
+    color += sampleColor;
+}
+
+color /= 11;
+
+float4 blurredColor = lerp(color, sceneColor, Mask);
+
+
+return blurredColor;

@@ -1,5 +1,10 @@
 const UNREAL_DATA_R = [
 {
+	title:"Vertex Paint in 3DsMax"
+	,en:""
+	,images:["vertexPaint"]
+},
+{
 	title:"Displacement in UE4"
 	,en:"Setting Up Displacement in UE4:<br>\
 Create or Import a Displacement Map (typically a height map).<br>\

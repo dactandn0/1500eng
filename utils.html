@@ -8,49 +8,112 @@
 
 <body>
 <div ng-app="myApp" ng-controller="myCtrl"> 
- 
-	<p>Input something in [A] [B] [C]:</p>
 
-	<textarea ng-model="inputA" rows="25" cols="40" ng-trim="false"></textarea>
-	<textarea ng-model="inputB" rows="25" cols="40" ng-trim="false"></textarea>
-	<textarea ng-model="inputC" rows="25" cols="40" ng-trim="false"></textarea>
-
-    <div class="my-1">
-        Replace (regex) : <input type="text" ng-model="regexA" placeholder="From"> => <input type="text" ng-model="replaceBy" placeholder="To" ng-trim="false">
-        <button ng-click="replaceRg()">B=A.Replace('From', 'To')</button>
-        <button ng-click="synonyms()">B=A.synonyms</button>
-        <button ng-click="boDauTiengViet()">A(ư á)->u a</button>
-        <button ng-click="add_underscore()">a b->a_b</button>
-        <button ng-click="add_underscore(false)">a_b->a b</button>
+    <div class="tab" ng-init="Tab=1">
+      <button class="tablinks" ng-click="Tab=0">English</button>
+      <button class="tablinks" ng-click="Tab=1">Paris</button>
+      <button class="tablinks" ng-click="Tab=2">Tokyo</button>
     </div>
-	
-	
-	<button ng-click="combineA_B()">C=A+B</button>
+    
+      <div ng-if="Tab==0">
+    	<p>Input something in [A] [B] [C]:</p>
 
-    <div class="my-1">
-       <label for="cars">Box </label>
-       <select ng-model="selectedBox">
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-        </select>
+    	<textarea ng-model="inputA" rows="25" cols="40" ng-trim="false"></textarea>
+    	<textarea ng-model="inputB" rows="25" cols="40" ng-trim="false"></textarea>
+    	<textarea ng-model="inputC" rows="25" cols="40" ng-trim="false"></textarea>
 
-        <button ng-click="boxAppendBr()">Append 'br' tag</button>     
+        <div class="my-1">
+            Replace (regex) : <input type="text" ng-model="regexA" placeholder="From"> => <input type="text" ng-model="replaceBy" placeholder="To" ng-trim="false">
+            <button ng-click="replaceRg()">B=A.Replace('From', 'To')</button>
+            <button ng-click="synonyms()">B=A.synonyms</button>
+            <button ng-click="boDauTiengViet()">A(ư á)->u a</button>
+            <button ng-click="add_underscore()">a b->a_b</button>
+            <button ng-click="add_underscore(false)">a_b->a b</button>
+        </div>
+    	
+    	
+    	<button ng-click="combineA_B()">C=A+B</button>
+
+        <div class="my-1">
+           <label for="cars">Box </label>
+           <select ng-model="selectedBox">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+
+            <button ng-click="boxAppendBr()">Append 'br' tag</button>     
+        </div>
+
+    	<span ng-repeat="x in records">{{x}}&nbsp;&nbsp;&nbsp;</ul>
+     </div> <!--  tab0 -->
+
+    <div ng-if="Tab==1">
+        <textarea ng-model="inputA" rows="5" cols="80" ng-trim="true" autofocus></textarea>
+        <textarea ng-model="inputB" rows="5" cols="80" ng-trim="true"></textarea>
+        <textarea ng-model="inputC" rows="5" cols="80" ng-trim="true"></textarea>
+        <button ng-click="DumpText()">DumpText</button>
     </div>
 
-	<span ng-repeat="x in records">{{x}}&nbsp;&nbsp;&nbsp;</ul>
 
-	</div> <!-- controller -->
+
+
+</div> <!-- controller -->
 </body>
 </html>
 
 <script>
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) 
+app.controller('myCtrl', function($scope, $http) 
 {
+    // - dump
+    $scope.DumpText = function()
+    {
+        const url = "https://dummyjson.com/quotes/random?limit=3"
+        $http.get(url)
+        .then(function(response) {
+            $scope.inputA = response.data.quote;
+
+            var urlTransVI = "https://api.mymemory.translated.net/get?q=" +  $scope.inputA + "&langpair=en|vi"
+            $http.get(urlTransVI)
+            .then(function(res){
+               $scope.inputB  = res.data.responseData.translatedText;
+
+             var urlTransChina = "https://api.mymemory.translated.net/get?q=" +  $scope.inputA + "&langpair=en|zh-CN"
+                $http.get(urlTransChina)
+                .then(function(res){
+                   $scope.inputC  = res.data.responseData.translatedText;
+
+                   copyToClipboard("KEY_1," +  $scope.inputA + "," + $scope.inputB )
+
+                }, function(err){
+                   $scope.inputC  = "Error translating!";
+                });
+
+
+               copyToClipboard("KEY_1," +  $scope.inputA + "," + $scope.inputB )
+
+            }, function(err){
+               $scope.inputB  = "Error translating!";
+            });
+
+
+            }, function(error) {
+              $scope.inputA = "Error fetching lorem ipsum!";
+            });
+
+       
+       
+    };
+
+
+    $scope.DumpText();
+
+
+    // -- english
     const KBr = '<br>\\\n'
     $scope.selectedBox = "C"
-	 $scope.boxAppendBr = function()
+	$scope.boxAppendBr = function()
     {
     	let result = ''
 
@@ -207,6 +270,7 @@ function saveC()
 {
 	saveDB('inputC', $scope.inputC)
 }
+
 
 loadData();
 

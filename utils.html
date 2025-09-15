@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!-- Text-to-Speech -->
 
 <style type="text/css">
 .my-1 { margin-top: 1rem;margin-bottom: 1rem }
@@ -11,11 +12,11 @@
 
     <div class="tab" ng-init="Tab=1">
       <button class="tablinks" ng-click="Tab=0">English</button>
-      <button class="tablinks" ng-click="Tab=1">Paris</button>
-      <button class="tablinks" ng-click="Tab=2">Tokyo</button>
+      <button class="tablinks" ng-click="Tab=1">Dump</button>
+      <button class="tablinks" ng-click="Tab=2">UE_CSV</button>
     </div>
     
-      <div ng-if="Tab==0">
+      <div ng-show="Tab==0">
     	<p>Input something in [A] [B] [C]:</p>
 
     	<textarea ng-model="inputA" rows="25" cols="40" ng-trim="false"></textarea>
@@ -48,13 +49,38 @@
     	<span ng-repeat="x in records">{{x}}&nbsp;&nbsp;&nbsp;</ul>
      </div> <!--  tab0 -->
 
-    <div ng-if="Tab==1">
-        <textarea ng-model="inputA" rows="5" cols="80" ng-trim="true" autofocus></textarea>
-        <textarea ng-model="inputB" rows="5" cols="80" ng-trim="true"></textarea>
-        <textarea ng-model="inputC" rows="5" cols="80" ng-trim="true"></textarea>
-        <button ng-click="DumpText()">DumpText</button>
+    <div ng-show="Tab==1">
+        <textarea ng-model="inputA2" rows="5" cols="80" ng-trim="true" autofocus></textarea>
+        <textarea ng-model="inputB2" rows="5" cols="80" ng-trim="true"></textarea>
+        <textarea ng-model="inputC2" rows="5" cols="80" ng-trim="true"></textarea>
+        <button ng-click="DumpText()" ng-disabled="bDumpTextDisabled">DumpText</button>
+        <br><br>
+        <input type="text" id="lengthVowel" cols="1" placeholder="Generate length">
+        <button ng-click="genRdVowelTextByGroup()" >viVowelGen</button>
+
+        <br><br>
+        <label for="voiceSelect">Giọng: </label>
+        <select id="voiceSelect"></select>
+        <br><br>
+        <label for="rateRange">Tốc độ đọc (0.5–1.5): </label>
+        <input type="range" id="rateRange" min="0.5" max="1.5" step="0.1" value="1">
+        <span id="rateValue">1.0</span>
+
+        <br><br>
+
+        <textarea id="text-input" rows="4" cols="50">Chào bạn, đây là ví dụ về chức năng Text-to-Speech.</textarea>
+        <br><br>
+        <button id="speak-button">Nghe</button>
+        <button id="download-button">Tải về</button>
     </div>
 
+    <div ng-show="Tab==2">
+      <p>Input something in [A] [B] [C]:</p>
+
+    <textarea ng-model="inputA3" rows="25" cols="40" ng-trim="false" placeholder="Gen CSV"></textarea>
+    <textarea ng-model="inputB3" rows="25" cols="40" ng-trim="false" placeholder="Copy Text & Call genPyIconsClipboard.py to make *.png"></textarea>
+    <button ng-click="GenCSV()">GenCSV</button>
+  </div> <!-- tab3 -->
 
 
 
@@ -66,48 +92,208 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) 
 {
+    $scope.GenCSV = function()
+    {
+      var inputStr = $scope.inputA3;
+      const lines = inputStr.trim().split("\n");
+      const results = lines.map(line => {
+        const match = line.match(/Name="([^"]+)"/);
+        if (!match) return null;
+
+        const name = match[1];
+        return `${name},Texture2D'"/Game/HorrorEngine/Textures/HUD/OverlapIcon/${name}.${name}"'`;
+      }).filter(Boolean).join("\n");
+
+      //console.log(results);
+      copyToClipboard(results)
+
+      const nameOnly = inputStr
+      .split("\n")
+      .map(line => {
+        const match = line.match(/Name="([^"]+)"/);
+        return match ? match[1] : null;
+      })
+      .filter(Boolean)
+      .join("\n");
+      $scope.inputB3 = nameOnly;
+    }
+
+
+    var vowelGroups = [
+      ["a","á","à","ả","ã","ạ"],
+      ["e","é","è","ẻ","ẽ","ẹ"],
+      ["i","í","ì","ỉ","ĩ","ị"],
+      ["o","ó","ò","ỏ","õ","ọ"],
+      ["u","ú","ù","ủ","ũ","ụ"],
+      ["ê","ế","ề","ể","ễ","ệ"],
+      ["â","ấ","ầ","ẩ","ẫ","ậ"],
+      ["ă","ắ","ằ","ẳ","ẵ","ặ"],
+      ["ư","ứ","ừ","ử","ữ","ự"],
+      ["ơ","ớ","ờ","ở","ỡ","ợ"]
+    ];
+
+    let synth = window.speechSynthesis;
+    const speakButton = document.getElementById('speak-button');
+    const downloadButton = document.getElementById('download-button');
+    const textInput = document.getElementById('text-input');
+    const rateRange = document.getElementById("rateRange");
+    const rateValue = document.getElementById("rateValue");
+    const voiceSelect = document.getElementById("voiceSelect");
+
+    function populateVoices() {
+      voices = speechSynthesis.getVoices();
+
+      // Xóa giọng cũ trong select
+      if (voiceSelect)
+       voiceSelect.innerHTML = "";
+
+      voices.forEach((voice, i) => {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = `${voice.name} (${voice.lang})${voice.default ? " [default]" : ""}`;
+        if (voiceSelect) voiceSelect.appendChild(option);
+      });
+
+      // load voice đã lưu trong localStorage
+      const savedVoiceIndex = localStorage.getItem("selectedVoiceIndex");
+      if (voiceSelect && savedVoiceIndex !== null && voices[savedVoiceIndex]) {
+        voiceSelect.value = savedVoiceIndex;
+      }
+    }
+    // Một số browser (như Chrome) load voices async
+    speechSynthesis.onvoiceschanged = populateVoices;
+    populateVoices();
+
+    if (rateRange)
+    rateRange.addEventListener("input", () => {
+      rateValue.textContent = rateRange.value;
+    });
+
+  function speakText(downloadMode = false) {
+  if (synth.speaking) synth.cancel();
+
+  const text = textInput.value;
+  if (!text) return;
+
+  currentUtterance = new SpeechSynthesisUtterance(text);
+  currentUtterance.voice = voices[document.getElementById("voiceSelect").value];
+
+  // Nếu bấm download thì bật recorder
+  if (downloadMode) {
+        alert("Cannot")
+  }
+
+  synth.speak(currentUtterance);
+}
+
+
+     // Hàm tải văn bản dưới dạng tệp âm thanh
+    function downloadAudio(text) {
+      const audio = new Audio();
+      audio.src = URL.createObjectURL(new Blob([text], { type: 'audio/wav' }));
+      audio.play();
+
+      // Tạo liên kết tải về
+      const link = document.createElement('a');
+      link.href = audio.src;
+      link.download = 'audio.wav';
+      link.click();
+    }
+
+    if (speakButton) speakButton.addEventListener("click", () => speakText(false));
+
+    if (downloadButton) downloadButton.addEventListener("click", () => speakText(true));
+
+    if (voiceSelect)
+    voiceSelect.addEventListener("change", () => {
+      localStorage.setItem("selectedVoiceIndex", voiceSelect.value);
+    });
+
+    // Hàm pick 1 nhóm 3–4 ký tự từ dòng, với trọng số cho dòng ưu tiên
+    function pickGroupFromLineWeighted(vowelGroups) {
+      const weightedIndices = [
+        0,0,0,  // dòng 0 → tăng xác suất
+        1,
+        2,
+        3,3,3,  // dòng 3 → tăng xác suất
+        4,
+        5,
+        6,6,6,  // dòng 6 → tăng xác suất
+        7,7,7,  // dòng 7 → tăng xác suất
+        8,8,8,  // dòng 8 → tăng xác suất
+        9,9,9   // dòng 9 → tăng xác suất
+      ];
+
+      const randomLineIndex = weightedIndices[Math.floor(Math.random() * weightedIndices.length)];
+      const line = vowelGroups[randomLineIndex];
+
+      const groupSize = Math.floor(Math.random() * (6 - 3 + 1)) + 3;  // [3,6]
+      if (line.length <= groupSize) return line.join(" ");
+
+      const startIndex = Math.floor(Math.random() * (line.length - groupSize + 1));
+      return line.slice(startIndex, startIndex + groupSize).join(" ");
+    }
+
+    // Hàm tạo chuỗi cuối với dấu câu
+    $scope.genRdVowelTextByGroup = function () {
+      let result = "";
+      let length = document.getElementById("lengthVowel").value || 60;
+      while (result.length < length) {
+        const group = pickGroupFromLineWeighted(vowelGroups);
+        const punctuation = Math.random() < 0.75 ? "," : ".";
+        result += group + punctuation + " ";
+      }
+      
+       result = result.slice(0, length);
+       document.getElementById("text-input").textContent = result;
+       copyToClipboard(result);
+    }
+
     // - dump
+    $scope.bDumpTextDisabled = false
     $scope.DumpText = function()
     {
+        $scope.bDumpTextDisabled = true
         const url = "https://dummyjson.com/quotes/random?limit=3"
         $http.get(url)
         .then(function(response) {
-            $scope.inputA = response.data.quote;
+            $scope.inputA2 = response.data.quote;
 
-            var urlTransVI = "https://api.mymemory.translated.net/get?q=" +  $scope.inputA + "&langpair=en|vi"
+            var urlTransVI = "https://api.mymemory.translated.net/get?q=" +  $scope.inputA2 + "&langpair=en|vi"
             $http.get(urlTransVI)
             .then(function(res){
-               $scope.inputB  = res.data.responseData.translatedText;
+               $scope.inputB2  = res.data.responseData.translatedText;
 
-             var urlTransChina = "https://api.mymemory.translated.net/get?q=" +  $scope.inputA + "&langpair=en|zh-CN"
+             var urlTransChina = "https://api.mymemory.translated.net/get?q=" +  $scope.inputA2 + "&langpair=en|zh-CN"
                 $http.get(urlTransChina)
                 .then(function(res){
-                   $scope.inputC  = res.data.responseData.translatedText;
+                   $scope.inputC2  = res.data.responseData.translatedText;
 
-                   copyToClipboard("KEY_1," +  $scope.inputA + "," + $scope.inputB )
+                   copyToClipboard("KEY_1," +  $scope.inputA2 + "," + $scope.inputB2 )
 
                 }, function(err){
-                   $scope.inputC  = "Error translating!";
+                   $scope.inputC2  = "Error translating!";
                 });
 
 
-               copyToClipboard("KEY_1," +  $scope.inputA + "," + $scope.inputB )
+               copyToClipboard("KEY_1," +  $scope.inputA2 + "," + $scope.inputB2 )
+               $scope.bDumpTextDisabled = false;
 
             }, function(err){
-               $scope.inputB  = "Error translating!";
+               $scope.inputB2  = "Error translating!";
+               $scope.bDumpTextDisabled = false;
             });
 
 
             }, function(error) {
-              $scope.inputA = "Error fetching lorem ipsum!";
+              $scope.inputA2 = "Error fetching lorem ipsum!";
+              $scope.bDumpTextDisabled = false;
             });
 
-       
-       
     };
 
 
-    $scope.DumpText();
+   // $scope.DumpText();
 
 
     // -- english
@@ -175,12 +361,13 @@ app.controller('myCtrl', function($scope, $http)
 
     	$scope.inputB = input
     	saveAll()
-        copyToClipboard(input)
+      copyToClipboard(input)
     }
 
     $scope.boDauTiengViet = function()
     {
     	$scope.inputB = removeAccents($scope.inputA)
+      copyToClipboard($scope.inputB)
     	saveAll()
     }
 

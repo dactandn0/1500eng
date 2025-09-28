@@ -77,9 +77,11 @@
     <div ng-show="Tab==2">
       <p>Input something in [A] [B] [C]:</p>
 
-    <textarea ng-model="inputA3" rows="25" cols="40" ng-trim="false" placeholder="Gen CSV"></textarea>
-    <textarea ng-model="inputB3" rows="25" cols="40" ng-trim="false" placeholder="Copy Text & Call genPyIconsClipboard.py to make *.png"></textarea>
-    <button ng-click="GenCSV()">GenCSV</button>
+    <textarea ng-model="inputA3" rows="25" cols="40" ng-trim="false" placeholder="Plain Struct"></textarea>
+    <textarea ng-model="inputB3" rows="25" cols="40" ng-trim="false" placeholder="Result"></textarea>
+    <br>
+    <button ng-click="PlainStruct()">PlainStruct</button>
+    <button ng-click="SortAlpha()">SortAlpha</button>
   </div> <!-- tab3 -->
 
 
@@ -92,30 +94,48 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) 
 {
-    $scope.GenCSV = function()
+    $scope.SortAlpha = function()
     {
-      var inputStr = $scope.inputA3;
-      const lines = inputStr.trim().split("\n");
-      const results = lines.map(line => {
-        const match = line.match(/Name="([^"]+)"/);
-        if (!match) return null;
+      var lines = $scope.inputA3;
+      let arr = lines.split("\n");
 
-        const name = match[1];
-        return `${name},Texture2D'"/Game/HorrorEngine/Textures/HUD/OverlapIcon/${name}.${name}"'`;
-      }).filter(Boolean).join("\n");
+    // Sort theo key trước dấu phẩy
+    arr.sort((a, b) => {
+      let keyA = a.split(",")[0].toLowerCase();
+      let keyB = b.split(",")[0].toLowerCase();
+      return keyA.localeCompare(keyB);
+    });
 
-      //console.log(results);
-      copyToClipboard(results)
+    // Ghép lại thành chuỗi
+    let result = arr.join("\n");
+    $scope.inputB3 = result;
+    copyToClipboard(result)
 
-      const nameOnly = inputStr
-      .split("\n")
-      .map(line => {
-        const match = line.match(/Name="([^"]+)"/);
-        return match ? match[1] : null;
-      })
-      .filter(Boolean)
-      .join("\n");
-      $scope.inputB3 = nameOnly;
+    }
+    $scope.PlainStruct = function()
+    {
+      var input = $scope.inputA3;
+    // Lấy phần struct ... { ... }
+      const structMatch = input.match(/struct\s+(\w+)\s*\{([\s\S]*?)\}/);
+      if (!structMatch) return "";
+
+      const structName = structMatch[1];
+      const body = structMatch[2];
+
+      // Tách các dòng có dạng kiểu + tên biến
+      const lines = body.split("\n")
+        .map(l => l.trim())
+        .filter(l => l && !l.startsWith("UPROPERTY") && !l.startsWith("GENERATED_BODY"));
+
+      // Giữ lại phần khai báo kiểu + tên
+      const cleaned = lines.map(l => {
+        // loại bỏ dấu ; thừa + category
+        return l.replace(/;.*$/, ";");
+      });
+
+      var result =  `struct ${structName}\n{${cleaned.join("\n")}\n}`;
+      $scope.inputB3 = result;
+      copyToClipboard(result)
     }
 
 

@@ -17,7 +17,7 @@
     </div>
     
       <div ng-show="Tab==0">
-    	<p>Input something in [A] [B] [C]:</p>
+    	<p>Input something in [A]:</p>
 
     	<textarea ng-model="inputA" rows="25" cols="40" ng-trim="false"></textarea>
     	<textarea ng-model="inputB" rows="25" cols="40" ng-trim="false"></textarea>
@@ -30,6 +30,7 @@
             <button ng-click="boDauTiengViet()">A(ư á)->u a</button>
             <button ng-click="add_underscore()">a b->a_b</button>
             <button ng-click="add_underscore(false)">a_b->a b</button>
+            <button ng-click="makeEngSenForApp()">makeEngSenForApp</button>
         </div>
     	
     	
@@ -82,6 +83,7 @@
     <br>
     <button ng-click="PlainStruct()">PlainStruct</button>
     <button ng-click="SortAlpha()">SortAlpha</button>
+    <button ng-click="MakeStruct()">MakeStruct</button>
   </div> <!-- tab3 -->
 
 
@@ -94,6 +96,31 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) 
 {
+    $scope.MakeStruct = function()
+    {
+      const structName = "StructName"
+        const lines = $scope.inputA3.split("\n").map(l => l.trim()).filter(l => l.length > 0);
+
+    const category = `${structName}`;
+
+    let props = lines.map(line => {
+      // Xóa comment
+      let noComment = line.split("//")[0].trim();
+      // Xóa dấu phẩy hoặc ; cuối
+      noComment = noComment.replace(/[,;]+$/, "");
+      // Tách type + name
+      const parts = noComment.split(/\s+/);
+      const name = parts.pop();
+      const type = parts.join(" ");
+      return `\tUPROPERTY(EditAnywhere, BlueprintReadWrite, Category="${category}", meta=(DisplayName="${name}"))\n\t${type} ${name};\n`;
+    }).join("\n");
+
+
+  var result = `USTRUCT(BlueprintType)\nstruct ${structName}\n{\n\tGENERATED_BODY()\n\n${props}};`;
+  $scope.inputB3 = result;
+    copyToClipboard(result)
+    }
+
     $scope.SortAlpha = function()
     {
       var lines = $scope.inputA3;
@@ -133,11 +160,12 @@ app.controller('myCtrl', function($scope, $http)
         return l.replace(/;.*$/, ";");
       });
 
+      cleaned[0] = "\n" + cleaned[0];
+
       var result =  `struct ${structName}\n{${cleaned.join("\n")}\n}`;
       $scope.inputB3 = result;
       copyToClipboard(result)
     }
-
 
     var vowelGroups = [
       ["a","á","à","ả","ã","ạ"],
@@ -367,6 +395,36 @@ app.controller('myCtrl', function($scope, $http)
     	$scope.inputB = $scope.inputA.replace(rgA, reBy)
 
     	saveAll()
+    }
+
+    // tiktok ebook
+    $scope.makeEngSenForApp = function()
+    {
+       let text = $scope.inputA;
+       const lines = text
+        .split('\n')
+        .map(l => l.trim())
+        .filter(Boolean);
+
+      // line đầu tiên = title
+      const title = lines[0];
+
+      // lấy unit từ "PASSAGE X"
+      const unitMatch = title.match(/PASSAGE\s+(\d+)/i);
+      const unit = unitMatch ? Number(unitMatch[1]) : null;
+
+      // các dòng nội dung (a. b. c. ...)
+      const en = lines
+        .slice(1)
+        .join('<br>\\n');
+
+      $scope.inputB = `{
+          unit: ${unit},
+          title: "${title}",
+          en: "${en}"
+        }`;
+
+      copyToClipboard($scope.inputB)
     }
 
     $scope.add_underscore = function(add=true)

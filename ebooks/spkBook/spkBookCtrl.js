@@ -4,6 +4,7 @@ document.write('<script src="./ebooks/spkBook/data/collins/collins_cd12.js" type
 document.write('<script src="./ebooks/spkBook/data/formula/formula.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/speakSameVol5/speakSameVol5.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/sos/sos.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/spkBook/data/tiktok/tiktok.js" type="text/javascript"></script>');
 
 var app = angular.module("spkBookApp", ['ngSanitize']);
 app.controller("spkBookCtrl", function($scope, $rootScope, $timeout) {
@@ -43,6 +44,11 @@ bookRadioChange = function (num, isLoadData = false) {
 	{
 		$scope.img_root = imgRootPath + 'sos/img/'	
 		$scope.stories = SHEEP_OR_SHIP_DATA;
+	}
+	if (num===4)
+	{
+		$scope.img_root = imgRootPath + 'tiktok/img/'	
+		$scope.stories = TIKTOK_DATA;
 	}
 
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)

@@ -3,7 +3,7 @@
 document.write('<script src="./ebooks/spkBook/data/collins/collins_cd12.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/formula/formula.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/speakSameVol5/speakSameVol5.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/spkBook/data/sos/sos.js" type="text/javascript"></script>');
+document.write('<script src="./ebooks/spkBook/data/nail/nail.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/tiktok/tiktok.js" type="text/javascript"></script>');
 
 var app = angular.module("spkBookApp", ['ngSanitize']);
@@ -42,8 +42,8 @@ bookRadioChange = function (num, isLoadData = false) {
 	}
 	if (num===3)
 	{
-		$scope.img_root = imgRootPath + 'sos/img/'	
-		$scope.stories = SHEEP_OR_SHIP_DATA;
+		$scope.img_root = imgRootPath + 'nail/img/'	
+		$scope.stories = AMERICAN_NAIL_DATA;
 	}
 	if (num===4)
 	{

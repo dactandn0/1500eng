@@ -326,6 +326,8 @@ Go viral /tuː ɡoʊ ˈvaɪrəl/ Lan truyền nhanh chóng trên mạng<br>\
 Launch a product /tuː lɔːntʃ ə ˈprɒdʌkt/ Ra mắt sản phẩm<br>\
 Viral marketing /ˈvaɪrəl ˈmɑrkɪtɪŋ/ Tiếp thị viral<br>\
 Vulnerable populations /ˈvʌlnərəbl ˌpɒpjʊˈleɪʃənz/ Nhóm đối tượng dễ bị tổn thương<br>\
-Word of mouth /wɜːrd ʌv maʊθ/ Truyền miệng",
+Word of mouth /wɜːrd ʌv maʊθ/ Truyền miệng<br>\
+<br>\
+",
 }
 ]

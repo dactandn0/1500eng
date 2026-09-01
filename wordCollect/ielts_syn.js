@@ -377,7 +377,22 @@ let SynonymData = [
 }, {
 	words:"outgoing (a) /ˈɪrɪteɪt / | extrovert (n) /ˈekstrəvɜːrt /",
 	mean:"hướng ngoại"
-},
+}, {
+	words:"precisely | Exactly| Accurately | Correctly | Strictly",
+	mean:"hướng ngoại"
+} ,{
+	words:"completely | Totally | Absolutely | utterly | Strictly",
+	mean:"hướng ngoại"
+},{
+	words:"underneath | Under | Beneath | Below | Downstairs",
+	mean:"hướng ngoại"
+},{
+	words:"appointment  | Engagement | Meeting | Below | Downstairs",
+	mean:"hướng ngoại"
+},{
+	words:"service | Assistance | Support | Ministration | Aid",
+	mean:"hướng ngoại"
+}
 ]
 
 

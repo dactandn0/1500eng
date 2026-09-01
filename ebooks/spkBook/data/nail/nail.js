@@ -15,6 +15,8 @@ const AMERICAN_NAIL_DATA = [
 - We'll use a smooth nail buffer to make the surface super shiny.<br>\
 - Hi, welcome! Do you have an appointment today?<br>\
 - What service would you like to get today?<br>\
+- What service are you looking for today?<br>\
+- Would you like your cuticles pushed back or cut?<br>\
 - Are we doing a full set, a refill, or just a gel manicure?<br>\
 - Please pick a color from the color book while you wait.<br>\
 - Please wash your hands over there before we start.<br>\
@@ -75,6 +77,10 @@ const AMERICAN_NAIL_DATA = [
 - Instead of using a standard non-acetone nail polish remover, we'll wrap your fingertips in cotton soaked with pure acetone to break down the hardened acrylic. <br>\
 - Let me massage some cuticle oil around your fingers to hydrate your skin. <br>\
 - To finish your service and restore moisture lost during the chemical process, I'll gently massage a rich cuticle oil into your surrounding skin folds. <br>\
+- Can I have your other hand, please<br>\
+- Is the water temperature okay for you?<br>\
+- Do you want gel or regular polish?<br>\
+- Please let me know if it hurts.<br>\
 \
 	"
 	//,images:["sos_2"]

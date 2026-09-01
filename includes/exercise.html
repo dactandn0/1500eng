@@ -17,10 +17,9 @@
 	<span>{{story.transExercise}}</span>
 </div>
 
-<div ng-if="story.images && story.images.length > 0">
+<div ng-if="story.images && story.images.length > 0" class="d-flex flex-wrap gap-2">
 	<div ng-repeat="img in story.images track by $index">
-		<!-- <img src="{{img_root}}/{{img}}-min.png" class="img-fluid mb-2"> -->
-		<img src="{{img_root}}/{{img}}.png" class="img-fluid mb-2">
+		<img src="{{img_root}}/{{img}}.png" class="img-fluid" style="max-width: 250px; max-height: 250px; object-fit: contain;">
 	</div>
 </div>
 

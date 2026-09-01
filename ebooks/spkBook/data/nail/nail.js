@@ -47,7 +47,8 @@ const AMERICAN_NAIL_DATA = [
 - I'm switching to a fine-grit carbide drill bit on my nail drill so I can smoothly blend the acrylic fill into your natural nail without damaging your nail bed.<br>\
 - I recommend flash-curing this intricate design under the UV lamp for ten seconds first, then I'll use tweezers to place these delicate metallic charms precisely where you want them.<br>\
 "
-	//,images:["sos_1"]
+, voca:"Cuticle Pusher,Nail File,Nail Buffer,Cuticle Nipper,Nail Clipper,Nail Drill,LED Nail Lamp,Tweezers,Drill Bit"
+	,images:["drill-bit","nail-file", "CuticleNipper","CuticlePusher", "Tweezers"]
 }  // ,{ track:"1.07 - A7", en:""}
 ,{
 	unit:2

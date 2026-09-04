@@ -2,220 +2,297 @@
 let SUBLESSON_DATA2 =
 [
 {
-title:"Sentence Examples",
-en:"1. S + V + too + adj/adv + (for S.O) + to do S.TH: (quá....để cho ai làm gì...)<br>\
-- This structure is too easy for you to remember.<br>\
-- He ran too fast for me to follow.<br>\
-2. S + V + so + adj/ adv + that + S + V: (quá... đến nỗi mà...)<br>\
-- This box is so heavy that I cannot take it.<br>\
-- He speaks so soft that we can't hear anything.<br>\
-3. It + V + such + (a/an) + N(s) + that + S + V: (quá... đến nỗi mà...)<br>\
-- It's such a heavy box that I cannot take it.<br>\
-- It's such interesting books that I cannot ignore them at all.<br>\
-4. S + V + adj/ adv + enough + (for S.O) + to do S.TH : (Đủ... cho ai đó làm gì...)<br>\
-- She's old enough to get married.<br>\
-- They're intelligent enough for me to teach them English.<br>\
-5. Have/ get + S.TH + done (P.P): (nhờ ai hoặc thuê ai làm gì...)<br>\
-- I had my hair cut yesterday.<br>\
-- I'd like to have my shoes repaired.<br>\
-6. <br>\
-It's time + S + V (-ed, cột 2)<br>\
-It's time +for S.O +to do S.TH : (đã đến lúc ai đó phải làm gì...)<br>\
-It's time + to do S.TH<br>\
-- It's time to go.<br>\
-- It's time you had a shower.<br>\
-- It's time for me to ask all of you for this question.<br>\
-7. It + takes/took+ S.O + amount of time + to do S.TH: (làm gì... mất bao nhiêu thời gian...)<br>\
-- It takes me 5 minutes to get to school.<br>\
-- It took him 10 minutes to do this exercise yesterday.<br>\
-8. To prevent/stop + S.O/S.TH + From + V-ing: (ngăn cản ai/ cái gì... làm gì..)<br>\
-- He prevented us from parking our car here.<br>\
-9. S + find+ it+ a to do S.TH: (thấy ... để làm gì...)<br>\
-- I find it very difficult to learn about English.<br>\
-- They found it easy to overcome that problem.<br>\
-10. To prefer + Noun/ V-ing + to + N/ V-ing. (Thích cái gì/ làm gì hơn cái gì/ làm gì)<br>\
-- I prefer dog to cat.<br>\
-- I prefer reading books to watching TV.<br>\
-11. Would rather ('d rather) + V (infinitive) + than + V (infinitive: (thích làm gì hơn làm gì)<br>\
-- She would play games than read books.<br>\
-- I'd rather learn English than learn Biology.<br>\
-12. To be/get used to + V-ing: (quen làm gì)<br>\
-- I'm used to eating with chopsticks.<br>\
-13. Used to + V (infinitive): (Thường làm gì trong qk và bây giờ không làm nữa)<br>\
-- I used to go fishing with my friend when I was young.<br>\
-- She used to smoke 10 cigarettes a day.<br>\
-14. To be amazed at = to be surprised at + N/V-ing: ngạc nhiên về....<br>\
-- I was amazed at his big beautiful villa.<br>\
-15. To be angry at + N/V-ing: tức giận về<br>\
-- Her mother was very angry at her bad marks.<br>\
-16. to be good at/ bad at + N/ V-ing: giỏi về.../ kém về...<br>\
-- I'm good at swimming.<br>\
-- He's very bad at English.<br>\
-17. by chance = by accident (adv): tình cờ<br>\
-- I met her in Paris by chance last week.<br>\
-18. to be/get tired of + N/V-ing: mệt mỏi về...<br>\
-- My mother was tired of doing too much housework everyday.<br>\
-19. can't stand/ help/ bear/ resist + V-ing: Không chịu nỗi/không nhịn được làm gì...<br>\
-- She can't stand laughing at her little dog.<br>\
-20. Like doing s.th<br>\
-to be keen on<br>\
-to be fond of<br>\
-to have a soft spot of +  + N/V-ing<br>\
-be into<br>\
-N/V+ing + be + my cup of tea<br>\
-- My younger sister is fond of playing with her dolls.<br>\
-21. to be interested in + N/V-ing: quan tâm đến...<br>\
-- Mrs Brown is interested in going shopping on Sundays.<br>\
-22. to waste + time/ money + V-ing: tốn tiền hoặc thời gian làm gì<br>\
-- He always wastes time playing computer games each day.<br>\
-- Sometimes, I waste a lot of money buying clothes.<br>\
-23. To spend + amount of time/ money + V-ing: dành bao nhiêu thời gian làm gì..<br>\
-- I spend 2 hours reading books a day.<br>\
-- Mr Jim spent a lot of money traveling around the world last year.<br>\
-24. To spend + amount of time/ money + on + S.TH: dành thời gian vào việc gì...<br>\
-- My mother often spends 2 hours on housework everyday.<br>\
-- She spent all of her money on clothes.<br>\
-25. to give up + V-ing/ N: từ bỏ làm gì/ cái gì...<br>\
-- You should give up smoking as soon as possible.<br>\
-26. would like/ want/wish + to do S.TH: thích làm gì...<br>\
-- I would like to go to the cinema with you tonight.<br>\
-27. have + (S.TH) to + Verb: có cái gì đó để làm<br>\
-- I have many things to do this week.<br>\
-28. It + be + S.TH/ S.O + that/ who: chính...mà...<br>\
-- It's Tom who got the best marks in my class.<br>\
-- It's the villa that he had to spend a lot of money last year.<br>\
-29. Had better + V(infinitive): nên làm gì....<br>\
-- You had better go to see the doctor.<br>\
-30. hate/ like/ dislike/ enjoy/ avoid/ finish/ mind/ postpone/ practise/ consider/ delay/ deny/ suggest/ risk/ keep/ imagine/ fancy + V-ing<br>\
-- I always practise speaking English everyday.<br>\
-31. It's + a + ( for S.B ) + to do S.TH<br>\
-- It's difficult for old people to learn English.<br>\
-32. To be interested in + N / V_ing ( Thích cái gì / làm cái gì )<br>\
-- We're interested in reading books on history.<br>\
-33. To be bored with ( Chán làm cái gì )<br>\
-- We're bored with doing the same things everyday.<br>\
-34. It's the first time S.B have ( has ) + P2 S.TH ( Đây là lần đầu tiên ai làm cái gì )<br>\
-- It's the first time we have visited this place. ( Đây là lần đầu tiên chúng tôi tới thăm nơi này )<br>\
-35. enough + N ( đủ cái gì ) + ( to do S.TH )<br>\
-- I don't have enough time to study. ( Tôi không có đủ thời gian để học )<br>\
-36. a + enough (đủ làm sao ) + ( to do S.TH )<br>\
-- I'm not rich enough to buy a car. ( Tôi không đủ giàu để mua ôtô )<br>\
-37. too + a + to do S.TH ( Quá làm sao để làm cái gì )<br>\
-- I'm to young to get married. ( Tôi còn quá trẻ để kết hôn )<br>\
-38. To want S.B to do S.TH = To want to have S.TH + Vp.p<br>\
-( Muốn ai làm gì ) ( Muốn có cái gì được làm )<br>\
-- She wants someone to make her a dress. ( Cô ấy muốn ai đó may cho cô ấy một chiếc váy )<br>\
-She wants to have a dress made. ( Cô ấy muốn có một chiếc váy được may )<br>\
-39. It's time S.B did S.TH ( Đã đến lúc ai phải làm gì )<br>\
-- It's time we went home. ( Đã đến lúc tôi phải về nhà )<br>\
-40. It's not necessary for S.B to do S.TH = S.B don't need to do S.TH<br>\
-( Ai không cần thiết phải làm gì ) doesn't have to do S.TH<br>\
-- It's not necessary for you to do this exercise.<br>\
-41. To look forward to V_ing ( Mong chờ, mong đợi làm gì )<br>\
-- We're looking forward to going on holiday.<br>\
-42. To provide S.B from V_ing ( Cung cấp cho ai cái gì )<br>\
-- Can you provide us with some books in history?<br>\
-43. To prevent/stop S.B from V_ing (Cản trở ai làm gì )<br>\
-- The rain stopped us from going for a walk.<br>\
-44. To fail to do S.TH (Không làm được cái gì / Thất bại trong việc làm cái gì)<br>\
-- We failed to do this exercise.<br>\
-45. To be succeed in V_ing (Thành công trong việc làm cái gì)<br>\
-- We were succeed in passing the exam.<br>\
-46. To borrow S.TH from S.B (Mượn cái gì của ai)<br>\
-- She borrowed this book from the liblary.<br>\
-47. To lend S.B S.TH (Cho ai mượn cái gì)<br>\
-- Can you lend me some money?<br>\
-48. To make S.B do S.TH (Bắt ai làm gì)<br>\
-- The teacher made us do a lot of homework.<br>\
-49. <br>\
-S + be + so + a + that + S + V. ( Đến mức mà )<br>\
-S + V + so + Adv<br>\
-1. The exercise is so difficult that no one can do it.<br>\
-2. He spoke so quickly that I couldn't understand him.<br>\
-50. S + be + such + ( a ) + N + that + S + V.<br>\
-- It's such a difficult exercise that noone can do it.<br>\
-51. It's ( very ) kind of S.B to do S.TH ( Ai thật tốt bụng / tử tế khi làm gì)<br>\
-- It's very kind of you to help me.<br>\
-52. To find it + a + to do S.TH<br>\
-- We find it difficult to learn English.<br>\
-53. To make sure of S.TH ( Bảo đảm điều gì )<br>\
-To make sure that + S + V<br>\
-1. I have to make sure of that information.<br>\
-2. You have to make sure that you'll pass the exam.<br>\
-54. It takes ( S.B ) + Time + to do S.TH ( Mất ( của ai ) bao nhiêu Time để làm gì)<br>\
-- It took me an hour to do this exercise.<br>\
-55. To spend + time/money + on N/V_ing ( Dành thời gian / tiền bạc vào cái gì<br>\
-- We spend a lot of time on TV/watching TV.<br>\
-56. To have no idea of S.TH = don't know about S.TH ( Không biết về cái gì )<br>\
-- I have no idea of this word = I don't know this word.<br>\
-57. To advise S.B to do S.TH ( Khuyên ai làm gì<br>\
-not to do S.TH không làm gì )<br>\
-- Our teacher advises us to study hard.<br>\
-58. To plan to do S.TH ( Dự định / có kế hoạch làm gì ) - intend<br>\
-- We planed to go for a walk.<br>\
-59. To invite S.B to do S.TH ( Mời ai làm gì )<br>\
-- They invited me to go to the cinema.<br>\
-60. To offer S.B S.TH ( Mời / đề nghị ai cái gì )<br>\
-- He offered me a job in his company.<br>\
-( Anh ta mời tôi làm việc cho công ty anh ta )<br>\
-61. To rely on S.B ( tin cậy, dựa dẫm vào ai )<br>\
-- You can rely on him.<br>\
-62. To keep promise ( Gĩư lời hứa )<br>\
-- He always keeps promises.<br>\
-63. To be able to do S.TH = To be capable of + V_ing ( Có khả năng làm gì )<br>\
-- I'm able to speak English = I'm capable of speaking English.<br>\
-64. <br>\
-65. To prefer S.TH to S.TH  (Thích cái gì hơn cái gì )<br>\
-doing S.TH to doing S.TH làm gì hơn làm gì<br>\
-- We prefer spending money than earning money.<br>\
-66. To apologize for doing S.TH ( Xin lỗi ai vì đã làm gì )<br>\
-- I want to apologize for being rude to you.<br>\
-67. Had ('d ) better do S.TH ( Nên làm gì )<br>\
-Had ('d )not do S.TH ( Không nên làm gì )<br>\
-1. You'd better learn hard.<br>\
-2. You'd better not go out.<br>\
-68. <br>\
-Would ('d ) rather do S.TH  (Thà làm gì)<br>\
-Would ('d ) rather not do S.TH đừng làm gì<br>\
-- I'd rather (not) stay at home.<br>\
-69. Would ( ‘d ) rather S.B did S.TH ( Muốn ai làm gì )<br>\
-- I'd rather you ( he / she ) stayed at home today.<br>\
-70. To suggest S.B ( should ) do S.TH ( Gợi ý ai làm gì )<br>\
-- I suggested she ( should ) buy this house.<br>\
-71. To suggest doing S.TH ( Gợi ý làm gì )<br>\
-- I suggested going for a walk.<br>\
-72. Try to do ( Cố làm gì )<br>\
-- We tried to learn hard.<br>\
-73. Try doing S.TH ( Thử làm gì )<br>\
-- We tried cooking this food.<br>\
-74. To need to do S.TH ( Cần làm gì )<br>\
-- You need to work harder.<br>\
-75. To need doing ( Cần được làm )<br>\
-- This car needs repairing.<br>\
-76. To remember doing ( Nhớ đã làm gì )<br>\
-- I remember seeing this film.<br>\
-77. To remember to do ( Nhớ làm gì ) ( chưa làm cái này )<br>\
-- Remember to do your homework.<br>\
-78. To have S.TH + Vp.p ( Có cái gì được làm )<br>\
-= To have S.B do S.TH ( Thuê ai làm gì )<br>\
-- I'm going to have my house repainted. (thuê người sơn nhà)<br>\
-- I'm going to have the garage repair my car.<br>\
-- I'm going to have my car repaired.<br>\
-79. To be busy doing S.TH ( Bận rộn làm gì )<br>\
-- We're busy preparing for our exam.<br>\
-80. To mind doing S.TH ( Phiền làm gì )<br>\
-- Do / Would you mind closing the door for me?<br>\
-81. To be used to doing S.TH ( Quen với việc làm gì )<br>\
-- We're used to getting up early.<br>\
-82. To stop to do S.TH ( Dừng lại để làm gì )<br>\
-- We stopped to buy some petrol.<br>\
-83. To stop doing S.TH ( Thôi không làm gì nữa )<br>\
-- We stopped going out late.<br>\
-84. Let S.B do S.TH ( Để ai làm gì )<br>\
-- Let him come in.<br>\
-85. S + tobe + short of + sth ( Ai thiếu cái gì đó )<br>\
-- I'm short of $"
+	title:"Common Sentences"
+	, en:"\
+I. Cấu trúc Quá / Đủ (Too, So, Such, Enough)<br>\
+Lưu ý: Chỉ cần 4 cấu trúc cốt lõi này là phủ hết mọi trường hợp.<br>\
+\
+S + V + too + Adj/Adv + (for SO) + to V: Quá... đến mức ai không thể làm gì.<br>\
+Ex: This box is too heavy for me to lift.<br>\
+\
+S + V + so + Adj/Adv + that + S + V: Quá... đến nỗi mà...<br>\
+Ex: He spoke so fast that I couldn't understand him.<br>\
+\
+It + be + such + (a/an) + N + that + S + V: Là một cái gì đó quá... đến nỗi mà...<br>\
+Ex: It was such a difficult test that everyone failed.<br>\
+\
+S + V + Adj/Adv + enough + (for SO) + to V: Đủ... cho ai làm gì.<br>\
+Ex: She is old enough to drive. (Danh từ đứng sau enough: I have enough time to study).<br>\
+\
+II. Thời gian, Tiền bạc & Ngăn chặn<br>\
+Lồng ghép gọn gàng các nhóm Spend/Waste, Take, Prevent/Stop.<br>\
+\
+It + takes/took + SO + [time] + to V: Mất của ai bao nhiêu thời gian để làm gì.<br>\
+Ex: It took me an hour to finish the report.<br>\
+\
+S + spend / waste + [time/money] + (on) V-ing / N: Dành hoặc lãng phí thời gian/tiền vào việc gì.<br>\
+Ex: He spends 2 hours watching TV every day. / Don't waste money on clothes.<br>\
+\
+Stop / Prevent + SO/ST + from + V-ing: Ngăn cản ai/cái gì làm gì.<br>\
+Ex: Heavy rain prevented us from going out.<br>\
+\
+It's time + (for SO) + to V HOẶC It's time + S + V2/ed: Đã đến lúc (ai đó) phải làm gì.<br>\
+Ex: It's time to go home. / It's time we left. (Lưu ý: Quá khứ giả định khi có S).<br>\
+\
+III. Sở thích, Thói quen & So sánh<br>\
+Tóm gọn các cấu trúc Like/Prefer/Used to thành các dạng chuẩn nhất.<br>\
+\
+To be into / fond of / keen on + N/V-ing: Thích cái gì/làm gì.<br>\
+Ex: She is really into listening to music.<br>\
+\
+Prefer + V-ing/N + to + V-ing/N: Thích cái gì/làm gì hơn cái gì/làm gì.<br>\
+Ex: I prefer reading books to watching TV. (Sửa lỗi câu 65 dùng 'than').<br>\
+\
+Would rather + V (bare) + than + V (bare): Thà/Thích làm gì hơn làm gì.<br>\
+Ex: I would rather stay home than go out.<br>\
+\
+Would rather + S + V2/ed: Muốn ai đó làm gì (ở hiện tại).<br>\
+Ex: I would rather you stayed here tonight.<br>\
+\
+Used to + V (bare): Đã từng làm gì trong quá khứ (giờ không làm nữa).<br>\
+Ex: He used to smoke a pack a day.<br>\
+\
+Be / Get used to + V-ing/N: Quen với việc làm gì (ở hiện tại).<br>\
+Ex: I am used to getting up early.<br>\
+\
+IV. Nhờ vả, Bắt buộc & Cho phép<br>\
+Nhóm Sai khiến (Causative verbs) & Mệnh lệnh.<br>\
+\
+Have + ST + V3/ed hoặc Get + ST + V3/ed: Nhờ/Thuê người khác làm gì cho mình.<br>\
+Ex: I had my hair cut yesterday. / I got my car fixed.<br>\
+\
+Have SO + V (bare) = Get SO + to V: Nhờ/Bảo ai làm gì.<br>\
+Ex: I had him repair my car. = I got him to repair my car.<br>\
+\
+Make / Let + SO + V (bare): Bắt buộc / Để (cho phép) ai làm gì.<br>\
+Ex: My boss made me work late. / Let him in.<br>\
+\
+Find + it + Adj + to V: Thấy việc làm gì đó như thế nào.<br>\
+Ex: I find it hard to learn Chinese.<br>\
+\
+V. Động từ đi với V-ing hay To-V?<br>\
+Chỉ giữ lại những nhóm động từ hay gặp nhất.<br>\
+\
+Cần làm gì (Chủ động/Bị động):<br>\
+Need to V: Cần làm gì (I need to fix the car).<br>\
+Need V-ing / to be V3: Cần được làm gì (The car needs fixing / needs to be fixed).<br>\
+\
+Dừng lại (Stop):<br>\
+Stop to V: Dừng lại để làm việc khác (We stopped to eat).<br>\
+Stop V-ing: Thôi hẳn không làm việc đó nữa (He stopped smoking).<br>\
+\
+Nhớ (Remember):<br>\
+Remember to V: Nhớ phải làm gì trong tương lai (Remember to turn off the lights).<br>\
+Remember V-ing: Nhớ là đã làm gì trong quá khứ (I remember locking the door).<br>\
+\
+Thử / Cố gắng (Try):<br>\
+Try to V: Cố gắng làm gì (I tried to study hard).<br>\
+Try V-ing: Thử làm gì (Try adding some salt).<br>\
+\
+Mong chờ / Mong đợi:<br>\
+Look forward to + V-ing/N: Rất trông chờ điều gì.<br>\
+Ex: I’m looking forward to seeing you.<br>\
+\
+Nhóm V-ing bắt buộc (avoid, enjoy, mind, finish, suggest, give up, practice, delay):<br>\
+Ex: You should avoid making simple mistakes. / Do you mind opening the window?<br>\
+\
+VI. Lời khuyên, Đề nghị & Nhận xét<br>\
+Had better + V (bare): Nên làm gì (mang tính cảnh báo nhẹ).<br>\
+Ex: You had better see a doctor.<br>\
+\
+Advise + SO + (not) to V: Khuyên ai (không) làm gì.<br>\
+Ex: The doctor advised me not to eat late.<br>\
+\
+Suggest + V-ing HOẶC Suggest (that) + S + (should) + V (bare): Gợi ý làm gì.<br>\
+Ex: I suggest going for a walk. / I suggested (that) she buy this car.<br>\
+\
+It's + Adj + of SO + to V: Thật là... khi ai đó làm gì (khen ngợi/đánh giá tính cách).<br>\
+Ex: It’s very kind of you to help me.<br>\
+\
+It’s not necessary for SO to V = SO + don’t/doesn’t need to V (don't have to V): Ai đó không cần làm gì.<br>\
+Ex: It’s not necessary for you to come early.<br>\
+\
+VII. Cấu trúc Nhấn mạnh & Các Cụm Tính từ phổ biến<br>\
+It is/was + [Thành phần nhấn mạnh] + that/who...: Chính là... mà...<br>\
+Ex: It was Tom who broke the window.<br>\
+\
+It's the first time + S + have/has + V3/ed: Đây là lần đầu tiên ai làm việc gì.<br>\
+Ex: It’s the first time I have visited Paris.<br>\
+\
+Can’t stand / help / bear + V-ing: Không thể chịu nổi / không thể cưỡng lại việc gì.<br>\
+Ex: I can't stand waiting in line.<br>\
+\
+Be good at / bad at + V-ing/N: Giỏi / Dở về cái gì.<br>\
+Ex: She is good at playing the piano.<br>\
+\
+Be surprised at / amazed at + V-ing/N: Ngạc nhiên về cái gì.<br>\
+Ex: We were amazed at his performance.<br>\
+\
+Be tired of / bored with + V-ing/N: Mệt mỏi / Chán nản với cái gì.<br>\
+Ex: I am tired of doing the same thing every day.<br>\
+\
+Be succeed in + V-ing / Be successful in V-ing: Thành công trong việc gì.<br>\
+Ex: He succeeded in passing the exam.<br>\
+\
+Borrow ST from SO (Mượn) vs Lend SO ST (Cho mượn).<br>\
+Ex: Can I borrow your pen? / Can you lend me your pen?<br>\
+\
+By chance = By accident: Tình cờ, ngẫu nhiên.<br>\
+Ex: I met an old friend by chance yesterday.<br>\
+\
+Have no idea of ST = Don't know about ST: Không biết về cái gì.<br>\
+Ex: I have no idea what he means.<br>\
+\
+Be short of + N: Thiếu cái gì (tiền, thời gian, nhân lực...).<br>\
+Ex: We are short of time right now.<br>\
+	"
+},
+{
+	title:"Common American 20 Phrasal Verbs"
+	, en:"\
+1. Hang out (Đi chơi, la cà, thư giãn)<br>\
+Do you want to hang out this weekend? (Cuối tuần này muốn đi chơi không?)<br>\
+\
+We usually just hang out at my place and watch movies. (Chúng tôi thường chỉ tập trung ở nhà tôi xem phim.)<br>\
+\
+Where do teenagers hang out around here? (Giới trẻ quanh đây hay tụ tập ở đâu thế?)<br>\
+\
+2. Catch up (Gặp mặt cập nhật tình hình / Đuổi kịp)<br>\
+Let's grab coffee and catch up! (Đi cà phê nói chuyện cập nhật tình hình đi!)<br>\
+\
+I need to catch up on my sleep this weekend. (Cuối tuần này tôi cần ngủ bù.)<br>\
+\
+I've been so busy, it's nice to finally catch up with you. (Mấy nay bận quá, dạo này mới có dịp trò chuyện với bạn.)<br>\
+\
+3. Figure out (Tìm ra giải pháp, hiểu ra vấn đề)<br>\
+I'm trying to figure out how this machine works. (Tôi đang cố hiểu xem cái máy này hoạt động thế nào.)<br>\
+\
+Don't worry, we'll figure it out together. (Đừng lo, chúng ta sẽ cùng tìm cách giải quyết.)<br>\
+\
+Did you figure out what color the customer wants? (Bạn đã hiểu ra khách muốn làm màu gì chưa?)<br>\
+\
+4. End up (Rốt cuộc, kết cục lại ở/làm gì)<br>\
+We got lost and ended up at the beach. (Chúng tôi bị lạc và rốt cuộc lại đâm ra bờ biển.)<br>\
+\
+If you don't wear gloves, you'll end up damaging your skin. (Nếu không đeo găng tay, rốt cuộc bạn sẽ làm hại da đấy.)<br>\
+\
+We couldn't decide, so we ended up staying home. (Chúng tôi không quyết định được nên rốt cuộc ở nhà.)<br>\
+\
+5. Show up (Xuất hiện, đến hẹn)<br>\
+He didn't show up for his appointment. (Anh ta không xuất hiện đúng lịch hẹn.)<br>\
+\
+A lot of people showed up for the grand opening. (Rất nhiều người đã đến dự lễ khai trương.)<br>\
+\
+Sorry I'm late, I had trouble showing up on time due to traffic. (Xin lỗi tôi đến trễ, kẹt xe quá nên không tới đúng giờ được.)<br>\
+\
+6. Check out (Xem thử, kiểm tra / Thanh toán)<br>\
+You should check out this new nail design. (Bạn nên xem thử mẫu móng mới này đi.)<br>\
+\
+Can you check out my schedule for tomorrow? (Bạn kiểm tra giúp tôi lịch trình ngày mai được không?)<br>\
+\
+We need to check out of the hotel by 11 AM. (Chúng ta cần làm thủ tục trả phòng khách sạn trước 11 giờ sáng.)<br>\
+\
+7. Run out of (Hết, cạn kiệt cái gì đó)<br>\
+We ran out of paper towels at the salon. (Tiệm mình hết sạch khăn giấy rồi.)<br>\
+\
+I'm running out of time to finish this set. (Tôi đang sắp hết thời gian để làm xong bộ móng này rồi.)<br>\
+\
+Sorry, we ran out of that gel color. (Xin lỗi, bên em hết mất màu gel đó rồi.)<br>\
+\
+8. Pick up (Đón ai / Mua nhanh cái gì / Học nhanh kỹ năng)<br>\
+Can you pick up some milk on your way home? (Lúc về tiện đường mua giúp hộp sữa nhé?)<br>\
+\
+I'll pick you up at 7 PM. (Tôi sẽ qua đón bạn lúc 7 giờ tối.)<br>\
+\
+She picked up Spanish very quickly after moving to LA. (Cô ấy học tiếng Tây Ban Nha rất nhanh sau khi chuyển đến LA.)<br>\
+\
+9. Drop off (Thả/Giao cái gì hoặc ai đó xuống)<br>\
+I'll drop you off at the shopping mall. (Tôi sẽ chở bạn ra thả ở trung tâm thương mại.)<br>\
+\
+Can you drop off these clothes at the dry cleaner? (Bạn tạt qua gửi đống đồ này ở tiệm giặt khô được không?)<br>\
+\
+I just need to drop off my kids at school. (Tôi chỉ cần ghé thả mấy đứa nhỏ ở trường đã.)<br>\
+\
+10. Set up (Chuẩn bị, sắp xếp, dựng lên)<br>\
+Please set up your table before the customer arrives. (Hãy chuẩn bị bàn làm việc trước khi khách tới nhé.)<br>\
+\
+How long does it take to set up the equipment? (Mất bao lâu để lắp đặt/chỉnh sửa thiết bị này?)<br>\
+\
+My friend tried to set me up on a blind date. (Bạn tôi cố tình mai mối cho tôi một buổi hẹn hò.)<br>\
+\
+11. Work out (Tập thể dục / Giải quyết ổn thỏa)<br>\
+I try to work out three times a week. (Tôi cố gắng tập thể dục 3 lần một tuần.)<br>\
+\
+Don't worry, everything will work out in the end. (Đừng lo, mọi thứ cuối cùng rồi sẽ ổn thỏa thôi.)<br>\
+\
+Things didn't work out between them. (Mọi chuyện giữa hai người họ đã không đi đến đâu cả.)<br>\
+\
+12. Mess up (Làm hỏng, mắc sai lầm, làm rối tung)<br>\
+I'm so sorry, I completely messed up your order. (Tôi rất xin lỗi, tôi làm hỏng bét đơn hàng của bạn rồi.)<br>\
+\
+Be careful not to mess up your wet nails! (Cẩn thận kẻo làm hỏng lớp sơn móng còn ướt đấy!)<br>\
+\
+Everyone makes mistakes, don't worry if you mess up. (Ai cũng mắc sai lầm thôi, đừng lo nếu bạn lỡ làm hỏng.)<br>\
+\
+13. Give up (Từ bỏ, bỏ cuộc)<br>\
+Don't give up now, you're almost done! (Đừng bỏ cuộc lúc này, bạn sắp hoàn thành rồi!)<br>\
+\
+He gave up smoking two years ago. (Anh ấy đã bỏ thuốc lá 2 năm trước.)<br>\
+\
+I give up, I can't guess the answer. (Tôi chịu thôi/bỏ cuộc, không đoán nổi câu trả lời.)<br>\
+\
+14. Turn out (Hóa ra là, kết quả là)<br>\
+It turned out better than I expected. (Kết quả hóa ra lại tốt hơn tôi tưởng.)<br>\
+\
+The weather turned out to be nice despite the forecast. (Thời tiết hóa ra lại rất đẹp dù dự báo báo xấu.)<br>\
+\
+She thought it was hard, but it turned out to be very easy. (Cô ấy tưởng khó, nhưng hóa ra lại rất dễ.)<br>\
+\
+15. Call back (Gọi điện lại)<br>\
+I'll call you back in five minutes. (Tầm 5 phút nữa tôi gọi lại cho bạn nhé.)<br>\
+\
+Can you ask her to call me back? (Bạn bảo cô ấy gọi lại cho tôi được không?)<br>\
+\
+The salon called back to confirm my appointment. (Tiệm nail đã gọi lại để xác nhận lịch hẹn của tôi.)<br>\
+\
+16. Hold on (Chờ chút, giữ máy)<br>\
+Hold on a second, let me write this down. (Chờ một chút, để tôi ghi lại cái này đã.)<br>\
+\
+Could you hold on while I check the schedule? (Bạn chờ chút trong khi tôi kiểm tra lịch được không?)<br>\
+\
+Hold on tight, the road is bumpy! (Giữ chắc vào, đường xóc đấy!)<br>\
+\
+17. Look forward to + V-ing/N (Rất mong chờ điều gì)<br>\
+I'm looking forward to my day off. (Tôi rất hóng đến ngày nghỉ của mình.)<br>\
+\
+We are looking forward to seeing you again. (Chúng tôi rất mong được gặp lại bạn.)<br>\
+\
+She is looking forward to starting her new job. (Cô ấy đang rất háo hức bắt đầu công việc mới.)<br>\
+\
+18. Calm down (Bình tĩnh lại)<br>\
+Just calm down, everything is going to be fine. (Bình tĩnh nào, mọi chuyện sẽ ổn thôi.)<br>\
+\
+Take a deep breath and calm down. (Hít một hơi sâu và bình tĩnh lại đi.)<br>\
+\
+The manager tried to calm down the angry customer. (Quản lý đã cố gắng làm dịu vị khách đang tức giận.)<br>\
+\
+19. Clean up (Dọn dẹp sạch sẽ)<br>\
+Please clean up your station after each client. (Hãy dọn dẹp chỗ làm của bạn sau mỗi người khách.)<br>\
+\
+It took me an hour to clean up the kitchen. (Tôi mất một tiếng để dọn sạch căn bếp.)<br>\
+\
+Let's clean up before we head home. (Hãy dọn dẹp xong xuôi trước khi về nhà nhé.)<br>\
+\
+20. Deal with (Giải quyết, xử lý vấn đề/khách hàng)<br>\
+I have to deal with a difficult customer right now. (Tôi đang phải xử lý một vị khách khó tính.)<br>\
+\
+She knows how to deal with stress at work. (Cô ấy biết cách giải quyết căng thẳng trong công việc.)<br>\
+\
+We'll deal with that problem tomorrow. (Chúng ta sẽ giải quyết vấn đề đó vào ngày mai.)<br>\
+	"
 }
+
+
 ,{
 	title:"Lesson 7 - How to write a paragraph (6.0)"
 	,en:"Topic: The benefits of learning online at universities<br>\
@@ -492,7 +569,8 @@ What do you think are the possible solutions? More and more people in developing
 },{
 	title:"[Barron] Word Family"
 	,en: WORD_FAMILY_DATA.join('<br>')
-}
+},
+
 
 
 

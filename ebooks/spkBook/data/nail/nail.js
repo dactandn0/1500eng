@@ -201,6 +201,40 @@ const AMERICAN_NAIL_DATA = [
 - We can apply one more coat if you want the polish to look darker, or leave it as is if you like it lighter.<br>\
 - I can lay the acrylic a bit thinner at the edges or build it thicker in the middle for extra structure.\
 "
+},
+{
+	unit: 8
+	, title: "8. Small Talk"
+	, en: "\
+	1. Hỏi thăm chung & Thời tiết<br>\
+How's your day going so far?<br>\
+Do you have any fun plans for the weekend?<br>\
+It's getting pretty warm/cold outside, isn't it?<br>\
+2. Hỏi về Công việc & Gia đình<br>\
+Are you taking a break from work today?<br>\
+Any big plans for the upcoming holidays?<br>\
+Do you have kids?<br>\
+3. Khen ngợi khách<br>\
+I love your outfit / purse / shoes! (Tôi thích bộ đồ / cái túi / đôi giày của bạn quá!)<br>\
+This color matches your skin tone so well! (Màu sơn này rất hợp với tông da của bạn đấy!)<br>\
+You have such pretty natural nails. (Móng tự nhiên của bạn đẹp thật đấy.)<br>\
+II. Xử lý sự cố & Khiếu nại (Troubleshooting & Complaints)<br>\
+Khi gặp sự cố, quy tắc vàng ở Mỹ là: Lắng nghe -> Xin lỗi nhẹ nhàng -> Đưa ra giải pháp ngay lập tức.<br>\
+1. Khi khách phàn nàn về Mẫu/Màu (Khách không thích, muốn đổi màu)<br>\
+If you don't like this shade, we can switch to another one right now.<br>\
+Let me know if you'd like to adjust the shape before I polish.<br>\
+I can fix that for you right away. No worries!<br>\
+2. Khi làm rát/đau hoặc chảy máu (Lỡ tay do giũa/mài)<br>\
+Ouch, I'm so sorry! Did that hurt?<br>\
+Let me put some antiseptic on it to make sure it's clean.<br>\
+I'll be extra gentle around this area.<br>\
+3. Khi móng bị hỏng sau đó<br>\
+I'm sorry to hear that. Let me fix that nail for you right now.<br>\
+Since it broke within 3 days, there's no charge for the fix.<br>\
+4. Khi khách chê đắt hoặc thắc mắc về giá cả<br>\
+The base price is $40, but since you added gel polish and nail art, it's an extra $15.<br>\
+I completely understand. Here is our menu with all the prices listed. (Tôi hoàn toàn hiểu. Đây là bảng giá ghi chi tiết các dịch vụ của bên tôi.)<br>\
+	"
 }
 
 

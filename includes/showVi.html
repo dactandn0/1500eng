@@ -24,10 +24,10 @@
 	<span class="fixed-right top60 opa" id="transSentenClick">
     	<button 
     		style="font-size: 0.6rem" 
-    		class="btn btn-sm btn-warning" 
+    		class="btn btn-sm"
+    		ng-class="bTransSentenOnClick == 0 ? 'btn-danger' : 'btn-info'"
     		ng-click="toggleTransSenten()">
-    		GGTouched<br/>Sen{{bTransSentenOnClick == 0 ? '[Off]' : '[On]' }}
+    		Sentence<br/>{{bTransSentenOnClick == 0 ? '[OFF]' : '[ON]' }}
     	</button>
 	</span>
 </div>
-

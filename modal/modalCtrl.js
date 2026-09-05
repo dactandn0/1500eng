@@ -1,11 +1,9 @@
-
-
 var app = angular.module("modalApp", [
-	'ui.bootstrap','ngAnimate'
-	]);
+    'ui.bootstrap', 'ngAnimate'
+]);
 
 app.controller('modal.alert', ['$scope', '$uibModalInstance', 'data', function($scope, $uibModalInstance, data) {
-$scope.data = data;
+    $scope.data = data;
 
     $scope.ok = function() {
         $uibModalInstance.close();
@@ -19,7 +17,7 @@ $scope.data = data;
         $scope.data.dataSent = IndexCtrlScope.fetchSentences(wordFull);
     };
 
-     $scope.speak = function(sentence) {
+    $scope.speak = function(sentence) {
         IndexCtrlScope.Index_Speak(null, sentence, true);
     };
 
@@ -27,15 +25,15 @@ $scope.data = data;
 
 
 app.controller('modal.confirm', ['$scope', '$uibModalInstance', 'data', function($scope, $uibModalInstance, data) {
-$scope.data = data;
+    $scope.data = data;
 
-$scope.ok = function() {
-    $uibModalInstance.close();
-};
+    $scope.ok = function() {
+        $uibModalInstance.close();
+    };
 
-$scope.cancel = function() {
-    $uibModalInstance.dismiss('cancel');
-};
+    $scope.cancel = function() {
+        $uibModalInstance.dismiss('cancel');
+    };
 }])
 
 app.service('appAlert', ['$uibModal', function($uibModal, $http) {

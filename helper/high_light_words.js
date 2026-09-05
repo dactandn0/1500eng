@@ -1,13 +1,11 @@
-
-function IRR_ExtractWords(story) 
-{	
+function IRR_ExtractWords(story) {
 	var english = story.en
 	var voca = story.voca
 
 	if (!english || english.trim().length === 0) return {
-		words:''
-		,phraVerbs:''
-		,specialWords:''
+		words: '',
+		phraVerbs: '',
+		specialWords: ''
 	}
 
 	var phraVerbs = []
@@ -19,14 +17,14 @@ function IRR_ExtractWords(story)
 		var Vs_es = Helper_N_V_Add_S_ES(bare)
 		var Ving = Helper_N_V_Add_ING(bare)
 		var V2 = getVerb_Irr(bare, 2)
-		if (V2==='!') V2 = Helper_Add_ED(bare)
-		var Vpp = getVerb_Irr(bare, 3) 
-		if (Vpp==='!') Vpp = Helper_Add_ED(bare)
+		if (V2 === '!') V2 = Helper_Add_ED(bare)
+		var Vpp = getVerb_Irr(bare, 3)
+		if (Vpp === '!') Vpp = Helper_Add_ED(bare)
 
-		var regex = new RegExp(`\\b(${bare}|${Vs_es}|${Ving}|${V2}|${Vpp})\\s+(${prep})\\b` , 'gi')	
+		var regex = new RegExp(`\\b(${bare}|${Vs_es}|${Ving}|${V2}|${Vpp})\\s+(${prep})\\b`, 'gi')
 		var matches = english.match(regex);
 		if (matches)
-		phraVerbs = phraVerbs.concat(matches)
+			phraVerbs = phraVerbs.concat(matches)
 	}
 
 	var phraRegex = ''
@@ -35,25 +33,24 @@ function IRR_ExtractWords(story)
 		phraRegex += ele + "|"
 	}
 
-	phraRegex = phraRegex.substring(0, phraRegex.length - 1)   //remove last '|'
-	if (phraRegex!=='') phraRegex = phraRegex + '|'
+	phraRegex = phraRegex.substring(0, phraRegex.length - 1) //remove last '|'
+	if (phraRegex !== '') phraRegex = phraRegex + '|'
 
 	// SPECIAL_WORDS declared in form_of_word.js
 	var specialWord_Regex = SPECIAL_WORDS.replaceAll(',', '|')
 
 	// Speech all long voca_note
 	var voca_Regex = ''
-	if (voca) 
-	{	
+	if (voca) {
 		// sort by length
 		vocaArr = voca.split(',')
 		vocaArr.sort((a, b) => b.length - a.length);
 		voca = vocaArr.toString();
-		voca_Regex = voca.replaceAll(',' , '|') + '|'
+		voca_Regex = voca.replaceAll(',', '|') + '|'
 	}
 
-	var regex = new RegExp(`\\b(${voca_Regex}${phraRegex}${specialWord_Regex}|\\w+'*\\w*)\\b` , 'gi')
-	var words = english.match(regex);   // include phraVerbs and other
+	var regex = new RegExp(`\\b(${voca_Regex}${phraRegex}${specialWord_Regex}|\\w+'*\\w*)\\b`, 'gi')
+	var words = english.match(regex); // include phraVerbs and other
 	words = Helper_ArrRemoveDup(words)
 
 	for (var i = 0; i < phraVerbs.length; i++) {
@@ -63,28 +60,27 @@ function IRR_ExtractWords(story)
 		var prep2 = www[2]
 
 		// remove phraVerbs out of words
-		words = words.filter(function(ele) { return ele !== word && ele !== prep && ele !== prep2})
+		words = words.filter(function(ele) {
+			return ele !== word && ele !== prep && ele !== prep2
+		})
 	}
 	words = Helper_ArrSortEleLength(words)
 
 	// adv of degree + special
-	regex = new RegExp(`\\b(${specialWord_Regex})\\b` , 'gi')
-	
+	regex = new RegExp(`\\b(${specialWord_Regex})\\b`, 'gi')
+
 	var specialWords = english.match(regex);
 	specialWords = Helper_ArrRemoveDup(specialWords)
 
 	specialWords = Helper_ArrSortEleLength(specialWords)
 
 	// remove out of words
-	if (specialWords)
-	{
-		for (var i = 0; i < specialWords.length; i++) 
-		{
+	if (specialWords) {
+		for (var i = 0; i < specialWords.length; i++) {
 			var specialWordArr = specialWords[i].split(' ');
-			words = words.filter(function(ele) 
-			{ 
-				return specialWordArr.length == 1 
-						|| !specialWordArr.includes(ele)
+			words = words.filter(function(ele) {
+				return specialWordArr.length == 1 ||
+					!specialWordArr.includes(ele)
 			})
 		}
 	}
@@ -93,20 +89,16 @@ function IRR_ExtractWords(story)
 	var vocas = null
 	if (voca) vocas = voca.split(',')
 	vocas = arrRemoveZeroLenghthEle(vocas)
-	if (vocas)
-	{
-		for (var i = 0; i < vocas.length; i++) 
-		{
+	if (vocas) {
+		for (var i = 0; i < vocas.length; i++) {
 			var vocaParts = vocas[i].split(' ');
-			words = words.filter(function(ele) 
-			{ 
+			words = words.filter(function(ele) {
 				//return vocaParts.length == 1 || !vocaParts.includes(ele)
 				return true
 			});
 
 			// needs to high_light uncount_nouns
-			if (vocaParts.length > 1)
-			{
+			if (vocaParts.length > 1) {
 				vocaParts.forEach(ele => {
 					if (arrUNCOUNT_NOUNS.includes(ele)) words.push(ele)
 				})
@@ -119,9 +111,9 @@ function IRR_ExtractWords(story)
 	//console.log(phraVerbs)
 	//console.log(specialWords)
 
-	return  {
-		specialWords: specialWords
-		,words: words
-		,phraVerbs: phraVerbs
+	return {
+		specialWords: specialWords,
+		words: words,
+		phraVerbs: phraVerbs
 	}
 }

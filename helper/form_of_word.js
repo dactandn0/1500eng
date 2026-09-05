@@ -55,18 +55,16 @@ youth,yeast,zoology,zinc";
 const NGUYEN_AM = 'ueoai'
 
 // highlight unc.noun
-function Helper_hlUncNoun(wordInput) 
-{
+function Helper_hlUncNoun(wordInput) {
 	var word = wordInput
-	if (wordInput.indexOf(" ") >= 0)
-	{
+	if (wordInput.indexOf(" ") >= 0) {
 		word = wordInput.split(" ")[0]
 	}
-	var regex = new RegExp(`\\b${word}\\b` , 'gi')
+	var regex = new RegExp(`\\b${word}\\b`, 'gi')
 	var matches = UNCOUNT_NOUNS.match(regex);
 
 	if (matches && matches.length > 0) {
-		wordInput = wordInput.replace(word, UNCOUNT_TAG_BEGIN+word+UNCOUNT_TAG_END)
+		wordInput = wordInput.replace(word, UNCOUNT_TAG_BEGIN + word + UNCOUNT_TAG_END)
 	}
 	return wordInput;
 }
@@ -77,31 +75,30 @@ function Helper_N_V_Add_S_ES(words) {
 	var word = words;
 	var rest = "";
 	// word is combine of 2,3...
-	if (words.indexOf(" ") >= 0)
-	{
+	if (words.indexOf(" ") >= 0) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
 	// local (a) # locals (n)
-	var excepts = ['local','economic']
- 	for (var i = 0; i < excepts.length; i++) {
-		if (word===excepts[i]) return word + rest
+	var excepts = ['local', 'economic']
+	for (var i = 0; i < excepts.length; i++) {
+		if (word === excepts[i]) return word + rest
 	}
-	if (word==='potato') return 'potatoes' + rest
-	if (word==='tomato') return 'tomatoes' + rest
-	if (word==='do') return 'does' + rest
-	if (word==='go') return 'goes' + rest
+	if (word === 'potato') return 'potatoes' + rest
+	if (word === 'tomato') return 'tomatoes' + rest
+	if (word === 'do') return 'does' + rest
+	if (word === 'go') return 'goes' + rest
 
 	var r = /^\w+.*(s|ss|sh|ch|x)+$/gi.test(word)
-	if (r) return word+'es' + rest
+	if (r) return word + 'es' + rest
 
 	r = /^\w+.*(uy|ey|oy|ay|iy)+$/gi.test(word)
-	if (r) return word+'s' + rest
+	if (r) return word + 's' + rest
 
 	r = /^\w+.*[^ueoai]+y$/gi.test(word)
-	if (r) return word.substring(0, word.length-1) + 'ies' + rest
+	if (r) return word.substring(0, word.length - 1) + 'ies' + rest
 
-	return word +'s' + rest
+	return word + 's' + rest
 }
 
 function Helper_Add_ED(words) {
@@ -109,27 +106,26 @@ function Helper_Add_ED(words) {
 	var word = words;
 	var rest = "";
 	// word is combine of 2,3...
-	if (words.indexOf(" ") >= 0)
-	{
+	if (words.indexOf(" ") >= 0) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
 	// local (a) # locals (n)
 	var excepts = ['']
- 	for (var i = 0; i < excepts.length; i++) {
-		if (word===excepts[i]) return word + rest
+	for (var i = 0; i < excepts.length; i++) {
+		if (word === excepts[i]) return word + rest
 	}
 
-	var r = /^\w+.*(e)+$/gi.test(word)  // ending with -e
-	if (r) return word +'d' + rest
+	var r = /^\w+.*(e)+$/gi.test(word) // ending with -e
+	if (r) return word + 'd' + rest
 
-	r = /^\.*[^ueoai][ueoai][^ueoaiyw]$/gi.test(word)   	// phụ âm + nguyên âm + phụ âm (not y&w)
-	if (r) return word + word[word.length-1] + 'ed' + rest
+	r = /^\.*[^ueoai][ueoai][^ueoaiyw]$/gi.test(word) // phụ âm + nguyên âm + phụ âm (not y&w)
+	if (r) return word + word[word.length - 1] + 'ed' + rest
 
 	r = /^\w+.*[^ueoai]y$/gi.test(word)
-	if (r) return word.substring(0, word.length-1) + 'ied' + rest
+	if (r) return word.substring(0, word.length - 1) + 'ied' + rest
 
-	return word +'ed' + rest
+	return word + 'ed' + rest
 }
 
 function Helper_N_V_Add_ING(words) {
@@ -138,39 +134,37 @@ function Helper_N_V_Add_ING(words) {
 	var word = words;
 	var rest = "";
 	// word is combine of 2,3...
-	if (words.indexOf(" ") >= 0)
-	{
+	if (words.indexOf(" ") >= 0) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-	var excepts = []    // dressing = nước sốt
- 	for (var i = 0; i < excepts.length; i++) {
-		if (word===excepts[i]) return word + rest
+	var excepts = [] // dressing = nước sốt
+	for (var i = 0; i < excepts.length; i++) {
+		if (word === excepts[i]) return word + rest
 	}
-	if (word==='reward') return 'reward' + rest   // reward(n) # rewarding (a)
-	if (word==='be') return 'being' + rest
+	if (word === 'reward') return 'reward' + rest // reward(n) # rewarding (a)
+	if (word === 'be') return 'being' + rest
 
 	var r = /^\w+.*(h|w|x|y)+$/gi.test(word)
-	if (r) return word+'ing' + rest
+	if (r) return word + 'ing' + rest
 
 	r = /^\w+.*(ee){1}\w{0,1}$/gi.test(word)
-	if (r) return word+'ing' + rest
-		
+	if (r) return word + 'ing' + rest
+
 	r = /^\w+.*(ie){1}$/gi.test(word)
-	if (r) return word.substring(0, word.length-2) + 'ying' + rest
+	if (r) return word.substring(0, word.length - 2) + 'ying' + rest
 
 	r = /^\w+.*[ueoai]+[^hwxy]$/gi.test(word)
-	if (r) return word + word[word.length-1] + 'ing' + rest
+	if (r) return word + word[word.length - 1] + 'ing' + rest
 
 	r = /^\w+.*[^ei](e)+$/gi.test(word)
-	if (r) return word.substring(0, word.length-1) + 'ing' + rest
+	if (r) return word.substring(0, word.length - 1) + 'ing' + rest
 
-	return word +'ing' + rest
+	return word + 'ing' + rest
 }
 
 function IsVerbInData(SeqWord, word) {
-	if( SeqWord.indexOf(' - ') !== -1 ) 
-	{
+	if (SeqWord.indexOf(' - ') !== -1) {
 		return SeqWord.indexOf(word) !== -1
 	}
 	return false;
@@ -178,33 +172,32 @@ function IsVerbInData(SeqWord, word) {
 
 // word = bare in Data
 // touchedWord = touched in web
-function Helper_IsFormOfWord (word, touchedWord) {
+function Helper_IsFormOfWord(word, touchedWord) {
 	var isVerb = IsVerbInData(word, touchedWord);
 	if (isVerb) return true;
 
-	var add_E_ES = Helper_N_V_Add_S_ES(word).toLowerCase(); 
+	var add_E_ES = Helper_N_V_Add_S_ES(word).toLowerCase();
 	var add_ING = Helper_N_V_Add_ING(word).toLowerCase();
 	var add_Ly = Helper_A_Add_LY(word).toLowerCase();
 	var add_ER = Helper_A_Add_ER(word).toLowerCase();
 	var add_EST = Helper_A_Add_EST(word).toLowerCase();
 	var add_ED = Helper_Add_ED(word).toLowerCase();
-	return touchedWord === add_E_ES 
-			|| touchedWord === add_ING 
-			|| touchedWord === add_Ly
-			|| touchedWord === add_ER
-			|| touchedWord === add_EST
-			|| touchedWord === add_ED
+	return touchedWord === add_E_ES ||
+		touchedWord === add_ING ||
+		touchedWord === add_Ly ||
+		touchedWord === add_ER ||
+		touchedWord === add_EST ||
+		touchedWord === add_ED
 }
 
-function xxx () {
+function xxx() {
 	var word = "go to word"
 
-	if (word.indexOf(" ") >= 0)
-	{
+	if (word.indexOf(" ") >= 0) {
 		var firstW = word.split(" ")[0]
-	var rest = word.substring(firstW.length)
-	console.log(firstW)
-	console.log(rest)
+		var rest = word.substring(firstW.length)
+		console.log(firstW)
+		console.log(rest)
 	}
 }
 
@@ -214,29 +207,28 @@ function Helper_A_Add_LY(words) {
 	var word = words;
 	var rest = "";
 	// word is combine of 2,3...
-	if (words.indexOf(" ") >= 0)
-	{
+	if (words.indexOf(" ") >= 0) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-	var excepts = ['hard','late','fast', 'early','high','near','straight','wrong', 'wide', 'free'  // adv same adj
-	 			  ]
+	var excepts = ['hard', 'late', 'fast', 'early', 'high', 'near', 'straight', 'wrong', 'wide', 'free' // adv same adj
+	]
 	for (var i = 0; i < excepts.length; i++) {
-		if (word===excepts[i]) return word + rest
+		if (word === excepts[i]) return word + rest
 	}
-	if (word==='public') return 'publicly' + rest
+	if (word === 'public') return 'publicly' + rest
 
-	var r = /^\w+.*(y){1}$/gi.test(word)   			// end with y
-	if (r) return word.substring(0, word.length-1) + 'ily' + rest
+	var r = /^\w+.*(y){1}$/gi.test(word) // end with y
+	if (r) return word.substring(0, word.length - 1) + 'ily' + rest
 
-	r = /^\w+.*(able|ible|le){1}$/gi.test(word)		// remove e to add 'y'
-	if (r) return word.substring(0, word.length-1) + 'y' + rest
-		
+	r = /^\w+.*(able|ible|le){1}$/gi.test(word) // remove e to add 'y'
+	if (r) return word.substring(0, word.length - 1) + 'y' + rest
+
 	r = /^\w+.*(ic){1}$/gi.test(word)
 	if (r) return word + 'ally' + rest
 
- 	// the rest
-	return word +'ly' + rest
+	// the rest
+	return word + 'ly' + rest
 }
 
 function Helper_A_Add_ER(words) {
@@ -245,34 +237,33 @@ function Helper_A_Add_ER(words) {
 	var word = words;
 	var rest = "";
 	// word is combine of 2,3...
-	if (words.indexOf(" ") >= 0)
-	{
+	if (words.indexOf(" ") >= 0) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-	var excepts = ['old','late']		// need define ss>,ssI in data.js
+	var excepts = ['old', 'late'] // need define ss>,ssI in data.js
 	for (var i = 0; i < excepts.length; i++) {
-		if (word===excepts[i]) return word + rest
+		if (word === excepts[i]) return word + rest
 	}
-//	if (word==='good' || word==='well') return 'better' + rest
-//	if (word==='bad' || word==='badly') return 'worse' + rest
-	if (word==='little') return 'less' + rest
-	if (word==='near') return 'nearer' + rest
+	//	if (word==='good' || word==='well') return 'better' + rest
+	//	if (word==='bad' || word==='badly') return 'worse' + rest
+	if (word === 'little') return 'less' + rest
+	if (word === 'near') return 'nearer' + rest
 
-	var r = /^\w+.*(y){1}$/gi.test(word)   			// end with y
-	if (r) return word.substring(0, word.length-1) + 'ier' + rest
+	var r = /^\w+.*(y){1}$/gi.test(word) // end with y
+	if (r) return word.substring(0, word.length - 1) + 'ier' + rest
 
-	r = /^\w+.*(e){1}$/gi.test(word)	// end with e
+	r = /^\w+.*(e){1}$/gi.test(word) // end with e
 	if (r) return word + 'r' + rest
 
-	r = /^\w+.*(w|r|re|le|te|et){1}$/gi.test(word)	// end that regarded as a short or long adject
+	r = /^\w+.*(w|r|re|le|te|et){1}$/gi.test(word) // end that regarded as a short or long adject
 	if (r) return word + 'er' + rest
-		
-	r = /^\w+.*[ueoai]+[^ueoai]$/gi.test(word)
-	if (r) return word + word[word.length-1]  + 'er' + rest
 
- 	// the rest
-	return word +'er' + rest
+	r = /^\w+.*[ueoai]+[^ueoai]$/gi.test(word)
+	if (r) return word + word[word.length - 1] + 'er' + rest
+
+	// the rest
+	return word + 'er' + rest
 }
 
 // www.voca.vn/blog/so-sanh-hon-so-sanh-nhat--trong-tieng-anh-1265
@@ -282,34 +273,33 @@ function Helper_A_Add_EST(words) {
 	var word = words;
 	var rest = "";
 	// word is combine of 2,3...
-	if (words.indexOf(" ") >= 0)
-	{
+	if (words.indexOf(" ") >= 0) {
 		word = words.split(" ")[0]
 		rest = words.substring(word.length)
 	}
-	var excepts = ['old','late']   					// need define ss>,ssI in data.js
+	var excepts = ['old', 'late'] // need define ss>,ssI in data.js
 	for (var i = 0; i < excepts.length; i++) {
-		if (word===excepts[i]) return word + rest
+		if (word === excepts[i]) return word + rest
 	}
-//	if (word==='good' || word==='well') return 'best' + rest
-//	if (word==='bad' || word==='badly') return 'worst' + rest
-	if (word==='little') return 'least' + rest
-	if (word==='near') return 'nearest' + rest
+	//	if (word==='good' || word==='well') return 'best' + rest
+	//	if (word==='bad' || word==='badly') return 'worst' + rest
+	if (word === 'little') return 'least' + rest
+	if (word === 'near') return 'nearest' + rest
 
-	var r = /^\w+.*(y){1}$/gi.test(word)   			// end with y
-	if (r) return word.substring(0, word.length-1) + 'iest' + rest
+	var r = /^\w+.*(y){1}$/gi.test(word) // end with y
+	if (r) return word.substring(0, word.length - 1) + 'iest' + rest
 
-	r = /^\w+.*(e){1}$/gi.test(word)	// end with e
+	r = /^\w+.*(e){1}$/gi.test(word) // end with e
 	if (r) return word + 'st' + rest
-	
-	r = /^\w+.*(w|r|re|le|te|et){1}$/gi.test(word)	// end that regarded as a short or long adject
+
+	r = /^\w+.*(w|r|re|le|te|et){1}$/gi.test(word) // end that regarded as a short or long adject
 	if (r) return word + 'est' + rest
 
-	r = /^\w+.*[ueoai]+[^ueoai]$/gi.test(word)   // except near
-	if (r) return word + word[word.length-1]  + 'est' + rest
+	r = /^\w+.*[ueoai]+[^ueoai]$/gi.test(word) // except near
+	if (r) return word + word[word.length - 1] + 'est' + rest
 
- 	// the rest
-	return word +'est' + rest
+	// the rest
+	return word + 'est' + rest
 }
 
 

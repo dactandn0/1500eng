@@ -1,27 +1,23 @@
-const SUBLESSON_DATA =
-[
-{
-	title:"Speaking some special words -ult - au"
-	,en:"-ult đọc là ao FE: result, sultan<br>\
+const SUBLESSON_DATA = [{
+		title: "Speaking some special words -ult - au",
+		en: "-ult đọc là ao FE: result, sultan<br>\
 	-au đọc là o: FE: automatic, pause, fault, audio, audition<br>\
 	ci, ce, cy đọc là /s/ (special, cello), còn lại là /k/<br>\
 	Silent Vowel<br>\
 chocolate   vegetable   business   temperature   restaurant   average   laboratory   camera\
    separate   different   marriage   religion   guarantee   bargain   beautiful   guitar   certain   fault   suit   merely<br>\
 	"
-},
-{
-	title:"A little"
-	,en:"little +  un.N (không đủ)<br>\
+	}, {
+		title: "A little",
+		en: "little +  un.N (không đủ)<br>\
 a little +  un.N (có ít để xài)<br>\
 a little (adv) +  Verb/ Adj/ Adv<br>\
 I'm a little tired. <br>\
 Could you speak a little more slowly?<br>\
 "
-},
-{
-	title:"More & Less"
-	,en:"1. More – Nhiều hơn<br>\
+	}, {
+		title: "More & Less",
+		en: "1. More – Nhiều hơn<br>\
 a) + unc.Noun and plural count.Noun<br>\
 Cấu trúc: more + Noun<br>\
 <br>\
@@ -56,9 +52,9 @@ Less than = ít hơn<br>\
 <br>\
 I have more money than you.<br>\
 She is less patient than her sister."
-},{
-	title:"Special nouns"
-	,en:"jeans, pants, scissors, glasses, news, clothes, food<br>\
+	}, {
+		title: "Special nouns",
+		en: "jeans, pants, scissors, glasses, news, clothes, food<br>\
 a (two, three) pair of jeans / pants/ glasses / shoes<br>\
 news : unc.Noun<br>\
 a loaf of bread, some bread<br>\
@@ -66,10 +62,9 @@ a piece of paper<br>\
 a cube/spoonful of sugar<br>\
 an item of clothing<br>\
 [x] an item of clothes (clothes is a plural noun)."
-},
-{
-	title:"Many/much/each",
-	en:"many + plural countable N<br>\
+	}, {
+		title: "Many/much/each",
+		en: "many + plural countable N<br>\
 	a large number of + plural countable N<br>\
 	(a) few +  plural countable N<br>\
 much + un.N<br>\
@@ -100,15 +95,15 @@ any + plural countable N (nhiều hơn một)<br>\
 - A large number of: một số lượng lớn<br>\
 - A multitude of: rất nhiều<br>\
 - A great deal of: rất nhiều (uncountable).",
-},{
-	title:"[Englab] so/ such/ enough/ too"
-	,images:["englab-so-much"]
-},{
-	title:"[Englab] Conditional sentences"
-	,images:["englab-conditional"]
-},{
-	title:"[Englab] Lượng từ"
-	,en:"1. Lượng từ:<br>\
+	}, {
+		title: "[Englab] so/ such/ enough/ too",
+		images: ["englab-so-much"]
+	}, {
+		title: "[Englab] Conditional sentences",
+		images: ["englab-conditional"]
+	}, {
+		title: "[Englab] Lượng từ",
+		en: "1. Lượng từ:<br>\
 - One/two/three .. + Noun ( nếu số nhiều thì thêm s/es)<br>\
 - Each/ every + Noun ( số ít) + V ( số ít)<br>\
 - A few/ few/ several/ a number of/ some/ a lot of + Noun (số nhiều) + V<br>\
@@ -162,15 +157,15 @@ ADJ - ING: Gây tác động lên đối tượng khác<br>\
 FE: This subject is boring, so I get bored<br>\
 <br>\
 - The + adj = Noun : The young/ the rich/ the poor : chỉ nhóm người"
-},{
-	title:"[Englab] noun phrases: cụm danh từ"
-	,en:"FE: Many rich real estate companies want to buy many lands as possible.<br>\
+	}, {
+		title: "[Englab] noun phrases: cụm danh từ",
+		en: "FE: Many rich real estate companies want to buy many lands as possible.<br>\
 Cụm danh từ: Many rich real estate companies<br>\
 Lượng từ: Many<br>\
 Tính từ bổ nghĩa: rich<br>\
 Danh từ bổ nghĩa: real estate<br>\
 Danh từ chính: Companies<br>\
 -> Chia động từ theo danh từ chính"
-}
+	}
 
 ]

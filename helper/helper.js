@@ -69,7 +69,10 @@ function Helper_DoMenu(_scope) {
 		var lesson = kStories[i]
 		if (lesson.title) {
 			var order = lesson.track || lesson.unit || i
-			en += order + ') ' + lesson.title + '<br>'
+			// Format order: nếu < 9 (0->8) hoặc < 10 sẽ tự động thêm '0' đằng trước
+			var formattedOrder = String(order).padStart(2, '0')
+
+			en += formattedOrder + ') ' + lesson.title + '<br>'
 		}
 	}
 	var menu = {

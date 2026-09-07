@@ -1,5 +1,5 @@
 
-<div class="my-1 mb-4" style="overflow-y: scroll; max-height:200px; height: auto; min-height: 115% !important;">
+<div class="track-list my-1 mb-4" style="overflow-y: scroll; max-height:200px; height: auto; min-height: 115% !important;">
 	<a ng-repeat="title in titles"
 	ng-click="fetchStory($index);" 
 	ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal' "
@@ -13,7 +13,7 @@
 <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-1"></div>
 <div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
 
-<div class="card mt-2" ng-init="showLession=1;showScript=1">
+<div class="lesson-panel card mt-2" ng-init="showLession=1;showScript=1">
 	<div class="card-body">
 	  <div class="card-text my-2">
 	  	

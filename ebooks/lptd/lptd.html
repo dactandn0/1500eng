@@ -1,13 +1,23 @@
 
-<mark class="mb-4">Listening Practice Dictation</mark>
+<section class="study-shell lptd-page">
+	<header class="study-header">
+		<div>
+			<span class="eyebrow">LISTENING LAB</span>
+			<h1>Listening Practice Dictation</h1>
+			<p>Train your ear, one short track at a time.</p>
+		</div>
+		<div class="study-status" aria-label="Current course">LPTD <span>•</span> 4 CDs</div>
+	</header>
 
-<form name="lptd_cdForm" class="my-3" role="group">
-	<input id="11" type="radio" name="radioCD" value="1" onchange="lptdRadioCDChange(1)" checked/><label for="11" class="mr-3">1</label>
-	<input id="22" type="radio" name="radioCD" value="2" onchange="lptdRadioCDChange(2)" /><label for="22" class="mr-3">2</label>
-	<input id="33" type="radio" name="radioCD" value="3" onchange="lptdRadioCDChange(3)" /><label for="33" class="mr-3">3</label>
-	<input id="44" type="radio" name="radioCD" value="4" onchange="lptdRadioCDChange(4)" /><label for="44" class="mr-3">4</label>
+<form name="lptd_cdForm" class="cd-selector" role="group" aria-label="Choose CD">
+	<label class="cd-option" for="11"><input id="11" type="radio" name="radioCD" value="1" onchange="lptdRadioCDChange(1)" checked/><span>CD 1</span></label>
+	<label class="cd-option" for="22"><input id="22" type="radio" name="radioCD" value="2" onchange="lptdRadioCDChange(2)" /><span>CD 2</span></label>
+	<label class="cd-option" for="33"><input id="33" type="radio" name="radioCD" value="3" onchange="lptdRadioCDChange(3)" /><span>CD 3</span></label>
+	<label class="cd-option" for="44"><input id="44" type="radio" name="radioCD" value="4" onchange="lptdRadioCDChange(4)" /><span>CD 4</span></label>
 </form>
 
 <div ng-include="'./includes/storyL.html'" ></div>
+
+</section>
 
 	

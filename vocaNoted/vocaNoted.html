@@ -1,37 +1,44 @@
 
+<section class="study-shell noted-page">
+  <div ng-include="'./includes/studyHeader.html'"
+    ng-init="studyEyebrow='PERSONAL VOCABULARY'; studyTitle='Saved Words'; studyDescription='Review, listen to and revisit the words you have collected.'; studyStatus='MY LIBRARY'"></div>
 
-<div class="my-4">
-  <button class="btn-sm btn-primary"
-  		     ng-show="dataWords.length > 0"
-          ng-click="showConfirmModal('Delete all records?', $event)"
-  >[X]
-  </button> 
-
-  <span><i>{{dataWords.length}} date(s)</i></span>
-</div>
-
-<div id="content-to-word" title="Noted vocabulary">
-  <div class="text-sm my-2" 
-  	   ng-repeat="dateJson in dataWords track by $index">
-         <p>{{dateJson.date}}</p>
-         <div class="text-sm my-2" 
-            ng-repeat="($indexB, word) in dateJson.words track by $indexB">
-
-           <button class="btn-sm btn-primary mr-2"
-                ng-click="showConfirmModal(word, dateJson.date)"
-                > [X]
-          </button> 
-
-          <span 
-            ng-click="Index_Speak($event, word)">{{word}}
-          </span>
-
-          <button class="btn-sm btn-primary ml-4"
-            ng-click="showExampleModal(word,  $event)">[Ex]
-          </button>
-        </div> <!--  nested -->
-
+  <div class="noted-toolbar">
+    <div class="noted-summary">
+      <i class="fa fa-bookmark" aria-hidden="true"></i>
+      <strong>{{dataWords.length}}</strong> saved dates
+    </div>
+    <button type="button" class="btn btn-sm noted-delete-all"
+      ng-show="dataWords.length > 0"
+      ng-click="showConfirmModal('Delete all records?', $event)">
+      <i class="fa fa-trash-o" aria-hidden="true"></i> Clear library
+    </button>
   </div>
 
-
- </div>
+  <div id="content-to-word" title="Noted vocabulary" class="noted-library">
+    <div class="noted-day" ng-repeat="dateJson in dataWords track by $index">
+      <div class="noted-day-heading">
+        <span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{dateJson.date}}</span>
+        <small>{{dateJson.words.length}} words</small>
+      </div>
+      <div class="noted-word-row" ng-repeat="word in dateJson.words track by $index">
+        <button type="button" class="noted-action noted-remove"
+          ng-click="showConfirmModal(word, dateJson.date)"
+          title="Remove word" aria-label="Remove word">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </button>
+        <span class="noted-word" ng-click="Index_Speak($event, word)">{{word}}</span>
+        <button type="button" class="noted-action noted-example"
+          ng-click="showExampleModal(word, $event)"
+          title="Show examples" aria-label="Show examples">
+          <i class="fa fa-comment-o" aria-hidden="true"></i><span>Ex</span>
+        </button>
+      </div>
+    </div>
+    <div class="noted-empty" ng-if="!dataWords.length">
+      <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+      <strong>Your vocabulary library is empty</strong>
+      <span>Save a word from search results to see it here.</span>
+    </div>
+  </div>
+</section>

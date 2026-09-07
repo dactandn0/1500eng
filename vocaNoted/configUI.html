@@ -1,42 +1,27 @@
 
-<h6>Text2Speech config:</h6>
+<section class="study-shell config-page">
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='PLAYBACK SETTINGS'; studyTitle='Audio Settings'; studyDescription='Tune speech and listening controls for your study sessions.'; studyStatus='PREFERENCES'"></div>
 
-<label>Pitch:</label>
-<input 
-	type="range" 
-	class="form-range mt-3 mx-3"
-	min="0" 
-	max="2" 
-	step="0.1"
-	ng-model="audioPitch" 
-	ng-change="setAudioPitch()"> {{audioPitch}}
+	<div class="settings-grid">
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-music" aria-hidden="true"></i><span>Voice pitch</span><strong>{{audioPitch}}</strong></div>
+			<p>Adjust how high or low the voice sounds.</p>
+			<input type="range" class="setting-range" min="0" max="2" step="0.1" ng-model="audioPitch" ng-change="setAudioPitch()" aria-label="Voice pitch">
+		</div>
 
-	<br>
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-tachometer" aria-hidden="true"></i><span>Speech rate</span><strong>{{audioRate}}</strong></div>
+			<p>Make spoken examples slower or faster.</p>
+			<input type="range" class="setting-range" min="0.6" max="2" step="0.05" ng-model="audioRate" ng-change="setAudioRate()" aria-label="Speech rate">
+		</div>
 
-
-<label>Rate:</label>
-<input 
-	type="range" 
-	class="form-range mt-3 mx-3"
-	min="0.6" 
-	max="2" 
-	step="0.05"
-	ng-model="audioRate" 
-	ng-change="setAudioRate()"> {{audioRate}}
-
-	<br>
-
-<label>Repeat num:</label>
-<input 
-	type="range" 
-	class="form-range mt-3 mx-3"
-	min="1" 
-	max="20" 
-	step="1"
-	ng-model="$root.audio_repeatNum" 
-	ng-change="setRepeatNum()"> {{$root.audio_repeatNum}}
-
-	<br>
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-repeat" aria-hidden="true"></i><span>Repeat count</span><strong>{{$root.audio_repeatNum}}</strong></div>
+			<p>Choose how many times audio repeats.</p>
+			<input type="range" class="setting-range" min="1" max="20" step="1" ng-model="$root.audio_repeatNum" ng-change="setRepeatNum()" aria-label="Repeat count">
+		</div>
+	</div>
 
 <!-- <select class="my-3" ng-model="selectedVoiceIdx" ng-change="saveSelectedVoiceIdx()">
 		  <option ng-value="-1">Nope</option>
@@ -47,28 +32,17 @@
 	<br>
 <button class="btn btn-sm btn-danger" ng-click="speechTest()">Test Voice</button>
  -->
-<hr>
+	<div class="settings-grid settings-grid-secondary">
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-step-backward" aria-hidden="true"></i><span>Audio seek step</span><strong>{{$root.adjAudioTime}}s</strong></div>
+			<p>Seconds moved by the back and forward buttons.</p>
+			<input type="range" class="setting-range" min="1" max="20" step="1" ng-model="$root.adjAudioTime" ng-change="setAdjAudioTime()" aria-label="Audio seek step">
+		</div>
 
-<label>[-/+] *.mp3 time:</label>
-<input 
-	type="range" 
-	class="form-range mt-3 mx-3"
-	min="1" 
-	max="20" 
-	step="1"
-	ng-model="$root.adjAudioTime" 
-	ng-change="setAdjAudioTime()"> {{$root.adjAudioTime}}(s)
-
-<hr>
-<label>[-/+] Toaster timeOut:</label>
-<mark>Duplicate Toaster timeout when touching long sentences.</mark>
-<input 
-	type="range" 
-	class="form-range mt-3 mx-3"
-	min="1" 
-	max="10" 
-	step="1"
-	ng-model="toastTimeOut" 
-	ng-change="setToastTimeOut()"> {{toastTimeOut}}(s)
-
-	<br>
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-bell-o" aria-hidden="true"></i><span>Toast duration</span><strong>{{toastTimeOut}}s</strong></div>
+			<p>How long notifications stay visible.</p>
+			<input type="range" class="setting-range" min="1" max="10" step="1" ng-model="toastTimeOut" ng-change="setToastTimeOut()" aria-label="Toast duration">
+		</div>
+	</div>
+</section>

@@ -28,7 +28,7 @@ $scope.setRepeatNum = function () {
 }
 
 $scope.setAdjAudioTime = function () {
-	Helper_saveDB(Helper_AdjAudioTimeKey, $scope.adjAudioTime);
+	Helper_saveDB(Helper_AdjAudioTimeKey, $rootScope.adjAudioTime);
 }
 
 $scope.setToastTimeOut = function () {

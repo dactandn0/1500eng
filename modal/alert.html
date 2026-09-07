@@ -1,24 +1,29 @@
-<div class="modal-header">
-    <span class="modal-title" id="modal-title">{{data.wordFull}}</span>
+<div class="modal-header study-modal-header">
+	<div>
+		<span class="modal-eyebrow">EXAMPLE SENTENCES</span>
+		<h5 class="modal-title" id="modal-title">{{data.wordFull}}</h5>
+	</div>
+	<button type="button" class="modal-close" ng-click="close()" aria-label="Close examples">&times;</button>
 </div>
-<div class="modal-body p-1" id="modal-body">
-    <p ng-repeat="sentence in data.dataSent | limitTo: -3 track by $index" class="my-2" >
-        -<span ng-bind-html="sentence" ng-click="speak(sentence)"></span> 
-    </p> 
+<div class="modal-body study-modal-body" id="modal-body">
+	<div ng-repeat="sentence in data.dataSent | limitTo: -3 track by $index"
+		class="modal-sentence"
+		ng-click="speak(sentence)"
+		tabindex="0"
+		role="button">
+		<span class="modal-sentence-number">{{$index + 1}}</span>
+		<span ng-bind-html="sentence"></span>
+		<i class="fa fa-volume-up modal-sentence-icon" aria-hidden="true"></i>
+	</div>
 
 </div>
-<div class="modal-footer">
-    <button 
-    	class="btn btn-primary" 
+<div class="modal-footer study-modal-footer">
+	<button type="button" class="btn modal-secondary-action"
     	ng-click="shuffleFromModal(data.wordFull)"
-    	>
-    	 <i class='fa fa-rotate-left'></i>
+	 title="Load different examples">
+		<i class="fa fa-refresh" aria-hidden="true"></i> More examples
     </button>
-
-    <button 
-    	class="btn btn-primary" 
-    	ng-click="close()"
-    	>
-    	 <i class='fa fa-close'></i>
+	<button type="button" class="btn modal-primary-action" ng-click="close()">
+		<i class="fa fa-check" aria-hidden="true"></i> Done
 	</button>
 </div>

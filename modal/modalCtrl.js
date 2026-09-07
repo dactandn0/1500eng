@@ -40,7 +40,8 @@ app.service('appAlert', ['$uibModal', function($uibModal, $http) {
     this.alert = function(data, callback) {
         var modalInstance = $uibModal.open({
             animation: false,
-            windowClass: 'show',
+            windowClass: 'study-modal',
+            size: 'md',
             templateUrl: 'modal/alert.html',
             controller: 'modal.alert',
             backdrop: 'static',
@@ -55,7 +56,8 @@ app.service('appAlert', ['$uibModal', function($uibModal, $http) {
     this.confirm = function(data, callback) {
         var modalInstance = $uibModal.open({
             animation: false,
-            windowClass: 'show',
+            windowClass: 'study-modal',
+            size: 'sm',
             templateUrl: 'modal/confirm.html',
             controller: 'modal.confirm',
             backdrop: 'static',

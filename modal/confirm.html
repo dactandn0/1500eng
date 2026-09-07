@@ -1,10 +1,14 @@
-<div class="modal-header">
-    <span class="modal-title" id="modal-title">Remove?</span>
+<div class="modal-header study-modal-header confirm-modal-header">
+    <div>
+        <span class="modal-eyebrow">CONFIRM ACTION</span>
+        <h5 class="modal-title" id="modal-title">Remove this item?</h5>
+    </div>
+    <button type="button" class="modal-close" ng-click="cancel()" aria-label="Close dialog">&times;</button>
 </div>
-<div class="modal-body" id="modal-body">
+<div class="modal-body study-modal-body" id="modal-body">
 	{{data.dataSent}}
 </div>
-<div class="modal-footer">
-    <button class="btn btn-sm" type="button" ng-click="ok()">Ok</button>
-    <button class="btn btn-sm" type="button" ng-click="cancel()">Cancel</button>
+<div class="modal-footer study-modal-footer">
+    <button class="btn modal-danger-action" type="button" ng-click="ok()"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</button>
+    <button class="btn modal-secondary-action" type="button" ng-click="cancel()">Cancel</button>
 </div>

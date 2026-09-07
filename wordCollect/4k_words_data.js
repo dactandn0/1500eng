@@ -47,7 +47,7 @@ passion (v) /ˈpæʃn/ niềm đam mê<br>\
 psychology  (n) /saɪˈkɑːlədʒi/ tâm lý học<br>\
 confide (v) /kənˈfaɪd/ tâm sự<br>\
 betray (v) /bɪˈtreɪ/ phản bội<br>\
-well-established (a) // được thiết lập tốt<br>\
+well-established (a) được thiết lập tốt<br>\
 affordable (a) /əˈfɔːrdəbl/ có thể chi trả<br>\
 harsh (a) /hɑːrʃ/ khắc nghiệt, chói gắt<br>\
 landfill (n) /ˈlændfɪl/ bãi rác<br>\

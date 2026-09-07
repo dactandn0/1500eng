@@ -10,7 +10,7 @@ $scope.cd = 1;
 $scope.stories = bridge_cd1; //1
 $scope.storyIdx = 0;
 
-radioCDChange = function (cd) {
+window.bridgeLRadioCDChange = function (cd) {
 	$scope.cd = cd;
 	if (cd===1) {
 		$scope.stories = bridge_cd1;

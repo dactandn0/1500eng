@@ -1,6 +1,6 @@
-var kRgexSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|(\d\.+\d+.+[\.\!\?])|[\.]+|[\!\?])/gi
+const kRgexSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|("*\s*(<br>|<hr>))|(\d\.+\d+.+[\.\!\?])|[\.]+|[\!\?])/gi
 
-var kAudioLoopSaveKey = "audioLoop";
+const kAudioLoopSaveKey = "audioLoop";
 
 const UNCOUNT_TAG_BEGIN = '<x1x class="_y_z">'
 const UNCOUNT_TAG_END = '</x1x>'
@@ -14,16 +14,16 @@ const SPECIAL_WORDS_HL_TAG_END = '</advHL>'
 const NOTED_WORD_TAG_BEGIN = '<NOTED_WORD_HL class="_noted_word_hl">'
 const NOTED_WORD_TAG_END = '</NOTED_WORD_HL>'
 
-var kNgClickTagName = 'kkk'
-var kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="Idx_n_L_WSp_($event)">';
-var kNgClickTagClose = '</' + kNgClickTagName + '>';
+const kNgClickTagName = 'kkk'
+const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="Idx_n_L_WSp_($event)">';
+const kNgClickTagClose = '</' + kNgClickTagName + '>';
 
-var Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
-var Helper_Voices
+const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
+let Helper_Voices
 
-var rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi
+const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi
 
-var kReplaceWords = [{
+const kReplaceWords = [{
 	src: 'ms\\.*',
 	desc: 'Ms'
 }, {
@@ -52,23 +52,23 @@ function getRegexMatch(rg, txt) {
 function fixDots(txt) {
 	txt = txt.trim()
 	// 1. 2. -> 1) 2)
-	var matches = txt.match(/^\b\d+\./gi);
+	const matches = txt.match(/^\b\d+\./gi);
 	if (matches) {
-		for (var i = 0; i < matches.length; i++) {
-			var src = matches[i]
-			var desc = src.replace('.', ')');
+		for (let i = 0; i < matches.length; i++) {
+			const src = matches[i]
+			const desc = src.replace('.', ')');
 			txt = txt.replaceAll(src, desc);
 		}
 	}
 
 	txt = txt.replace(".'", "'.");
 
-	var rg = /\d+[\.]\d+/g;
-	var mat = txt.match(rg)
+	const rg = /\d+[\.]\d+/g;
+	const mat = txt.match(rg)
 	if (mat) {
-		for (var i = 0; i < mat.length; i++) {
-			var num = mat[i]
-			var numRe = num.replace(/[\.]/gi, ',')
+		for (let i = 0; i < mat.length; i++) {
+			const num = mat[i]
+			const numRe = num.replace(/[\.]/gi, ',')
 			txt = txt.replace(num, numRe)
 		}
 
@@ -77,10 +77,10 @@ function fixDots(txt) {
 }
 
 function doReplaceWords(txt) {
-	var rrr = txt
-	for (var i = 0; i < kReplaceWords.length; i++) {
-		var data = kReplaceWords[i]
-		var regex = new RegExp(`\\b(${data.src})`, 'gi')
+	let rrr = txt
+	for (let i = 0; i < kReplaceWords.length; i++) {
+		const data = kReplaceWords[i]
+		const regex = new RegExp(`\\b(${data.src})`, 'gi')
 		rrr = rrr.replace(regex, data.desc);
 	}
 	return rrr;
@@ -91,10 +91,10 @@ function MYLOG(msg) {
 	console.log(msg);
 }
 
-RANGE = function(min, max, step) {
+window.RANGE = function(min, max, step) {
 	step = step || 1;
-	var input = [];
-	for (var i = min; i <= max; i += step) {
+	const input = [];
+	for (let i = min; i <= max; i += step) {
 		input.push(i);
 	}
 	return input;
@@ -107,15 +107,15 @@ document.write('<small class="note">\
 	' + SAME_N_V_TAG_BEGIN + 'n = v' + SAME_N_V_TAG_END + ' <br>\
 	</small>');
 
-var arrBOTH_COUNT_UNCOUNT = [];
-var arrUNCOUNT_NOUNS = [];
-var arrNOUN_SAME_VERBS = [];
+let arrBOTH_COUNT_UNCOUNT = [];
+let arrUNCOUNT_NOUNS = [];
+let arrNOUN_SAME_VERBS = [];
 
 function Helper_ArrRemoveDup(arr) {
 	if (!arr) return arr;
-	var result = [];
-	for (i = 0; i < arr.length; i++) {
-		var ele = arr[i] // .toLowerCase()
+	const result = [];
+	for (let i = 0; i < arr.length; i++) {
+		const ele = arr[i] // .toLowerCase()
 		if (result.indexOf(ele) == -1) {
 			result.push(ele)
 		}
@@ -129,7 +129,7 @@ function titleCase(val) {
 }
 
 function longStrToArray(long_txt, deter = ',') {
-	var arr = long_txt.replace(/\s*\,\s*/g, ",");
+	let arr = long_txt.replace(/\s*\,\s*/g, ",");
 	arr = arr.split(deter);
 	return Helper_ArrRemoveDup(arr)
 };
@@ -145,8 +145,8 @@ function isInArr(ele, arr) {
 
 function hLightWord(word, arr, graph, tagOpen, tagClose) {
 	if (isInArr(word, arr)) {
-		var tCase = titleCase(word)
-		var regex = new RegExp(`\\b(${word})\\b`, 'g')
+		const tCase = titleCase(word)
+		let regex = new RegExp(`\\b(${word})\\b`, 'g')
 		graph = graph.replace(regex, tagOpen + word + tagClose);
 		regex = new RegExp(`\\b(${tCase})\\b`, 'g')
 		graph = graph.replace(regex, tagOpen + tCase + tagClose);
@@ -164,7 +164,7 @@ function ngClickOnWord(word, graph) {
 		UNCOUNT_TAG_BEGIN.indexOf(word) === -1 &&
 		kNgClickTagOpen.indexOf(word) === -1
 	) {
-		regex = new RegExp(`\\b${word}\\b`, 'g')
+		const regex = new RegExp(`\\b${word}\\b`, 'g')
 		return graph.replace(regex, kNgClickTagOpen + word + kNgClickTagClose);
 	} else //  console.log("ngClickOnWord ignore: " + word)
 		return graph
@@ -174,47 +174,47 @@ function ngClickOnWord(word, graph) {
 function processStory(story, isAlert = true) {
 	if (!story) return story;
 
-	var isBlank = !story.en || story.en.trim().length == 0;
+	const isBlank = !story.en || story.en.trim().length == 0;
 
 	if (isBlank) story.enShow = "Blank"
 	else story.enShow = story.en;
 
-	var enShow = story.enShow
-	var viShow = !story.vi ? "" : story.vi.trim()
+	let enShow = story.enShow
+	const viShow = !story.vi ? "" : story.vi.trim()
 
 	enShow = doReplaceWords(enShow)
 	//	enShow = fixDots(enShow)
 
-	var bHasVi = viShow.length > 0
+	const bHasVi = viShow.length > 0
 	//	if (bHasVi) viShow= fixDots(viShow)
 
-	var foundWords = IRR_ExtractWords(story)
+	const foundWords = IRR_ExtractWords(story)
 
-	var words = foundWords.words
-	var phraVerbs = foundWords.phraVerbs || []
-	var specialWords = foundWords.specialWords || []
+	const words = foundWords.words
+	const phraVerbs = foundWords.phraVerbs || []
+	const specialWords = foundWords.specialWords || []
 
 	if (story.voca) {
-		var vocas = story.voca.split(',');
-		for (var i = 0; i < vocas.length; i++) {
-			voca = vocas[i].trim();
+		const vocas = story.voca.split(',');
+		for (let i = 0; i < vocas.length; i++) {
+			let voca = vocas[i].trim();
 
 			// dont bold specical_words
 			const idx = specialWords.findIndex(ele => ele.includes(voca) == true)
 			if (idx >= 0) continue;
 
 			voca = voca.replace(/\[.*\]/g, '').trim();
-			var regex = new RegExp(`\\b${voca}\\b`, 'g')
+			const regex = new RegExp(`\\b${voca}\\b`, 'g')
 			if (voca != 'event')
 				enShow = enShow.replace(regex, '<b>' + voca + '</b>');
 		}
 	}
 
 
-	var dones = []
+	const dones = []
 
-	for (var i = 0; i < words.length; i++) {
-		var word = words[i];
+	for (let i = 0; i < words.length; i++) {
+		const word = words[i];
 		if (!isInArr(word, dones)) {
 			enShow = hLightWord(word, phraVerbs, enShow, PHRA_VERB_TAG_BEGIN, PHRA_VERB_TAG_END);
 			enShow = hLightWord(word, arrUNCOUNT_NOUNS, enShow, UNCOUNT_TAG_BEGIN, UNCOUNT_TAG_END);
@@ -223,37 +223,37 @@ function processStory(story, isAlert = true) {
 			dones.push(word);
 		}
 	}
-	for (var i = 0; i < specialWords.length; i++) {
-		var word = specialWords[i]
+	for (let i = 0; i < specialWords.length; i++) {
+		const word = specialWords[i]
 		enShow = hLightWord(word, specialWords, enShow, SPECIAL_WORDS_HL_TAG_BEGIN, SPECIAL_WORDS_HL_TAG_END);
 		enShow = ngClickOnWord(word, enShow);
 	}
-	var rr = ''
-	var sentencesEn = enShow.match(kRgexSen);
+	let rr = ''
+	const sentencesEn = enShow.match(kRgexSen);
 	if (sentencesEn) {
-		for (var i = 0; i < sentencesEn.length; i++) {
-			var enSen = sentencesEn[i]
+		for (let i = 0; i < sentencesEn.length; i++) {
+			const enSen = sentencesEn[i]
 			rr += '<zui>' + enSen + '</zui>'
 		}
 		enShow = rr
 	}
 
-	var enAndVi = ''
+	let enAndVi = ''
 	if (!isBlank && bHasVi) {
-		var kBrTag = '<br>'
+		const kBrTag = '<br>'
 
-		var viii = ''
-		var sentencesVi = '';
+		let viii = ''
+		let sentencesVi = '';
 
 		if (viShow) sentencesVi = viShow.match(kRgexSen);
 		if (sentencesEn) {
 			if (sentencesEn.length === sentencesVi.length) {} else if (isAlert) alert('sentencesEn.length !== sentencesVi.length')
 
-			for (var i = 0; i < sentencesEn.length; i++) {
-				var enSen = sentencesEn[i]
-				var viSen = sentencesVi[i]
+			for (let i = 0; i < sentencesEn.length; i++) {
+				let enSen = sentencesEn[i]
+				const viSen = sentencesVi[i]
 				if (viSen) {
-					var rep = viSen.trim().replace(rgConversatinal, '')
+					let rep = viSen.trim().replace(rgConversatinal, '')
 					rep = rep.replace(/<\/*(b>)/, ''); // don't bold text in Vietnamese
 					viii = '(' + rep + ')'
 					if (viii.indexOf(kBrTag) !== -1) {
@@ -278,18 +278,18 @@ function processStory(story, isAlert = true) {
 	story.enShow = enShow
 
 	// show title con acc_click
-	var json = getFullTile(story)
+	const json = getFullTile(story)
 	story.fTitle = json.fTitle
 
-	_images = story.images
-	if (_images) {
-		ans_images = []
-		for (var i = 0; i < _images.length; i++) {
-			img = _images[i].replace('-min', '')
-			ans_img = img + '_ans-min'
-			ans_images.push(ans_img)
+	const images = story.images
+	if (images) {
+		const answerImages = []
+		for (let i = 0; i < images.length; i++) {
+			const image = images[i].replace('-min', '')
+			const answerImage = image + '_ans-min'
+			answerImages.push(answerImage)
 		}
-		story.ans_images = ans_images
+		story.ans_images = answerImages
 	}
 	return story;
 }
@@ -300,10 +300,10 @@ Helper_AudioLoop = function(scope, rootScope) {
 		alert('Helper_AudioLoop :: rootScope = undefined!')
 		return;
 	}
-	var nextStoryIdx = scope.storyIdx;
-	var num = scope.stories.length;
+	let nextStoryIdx = scope.storyIdx;
+	const num = scope.stories.length;
 
-	var loopRadio = Helper_loadAudioLoop();
+	const loopRadio = Helper_loadAudioLoop();
 	if (loopRadio !== 1) // jump when audio done
 	{
 		rootScope.audio_repeatCur += 1
@@ -350,7 +350,7 @@ Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, isAlert = true) {
 		return;
 	}
 
-	var story = scope.story;
+	const story = scope.story;
 	rootScope.storyHasVi = story.vi && story.vi.trim().length > 0;
 	scope.story = processStory(story, isAlert);
 }
@@ -359,14 +359,14 @@ function IsIgnoreVocaBold(boldWord, hightlightWord) {
 	boldWord = boldWord.trim()
 	if (boldWord.length == 0) return true
 
-	var rrr = false;
+	let rrr = false;
 
-	var phraVerbArr = hightlightWord.phraVerbs
-	var specialWordArr = hightlightWord.specialWords
+	const phraVerbArr = hightlightWord.phraVerbs
+	const specialWordArr = hightlightWord.specialWords
 
-	var parts = boldWord.split(' ')
-	for (var i = 0; i < parts.length; i++) {
-		var part = parts[i]
+	const parts = boldWord.split(' ')
+	for (let i = 0; i < parts.length; i++) {
+		const part = parts[i]
 		if (
 			phraVerbArr.includes(part) ||
 			phraVerbArr.includes(boldWord) ||

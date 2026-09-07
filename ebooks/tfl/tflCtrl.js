@@ -14,9 +14,9 @@ $scope.storyIdx = 0;
 
 $scope.img_root = './ebooks/tfl/data/images/' ; 	
 
-var keyU = 'tfl_u_'
+let keyU = 'tfl_u_'
 
-bookChange = function (num) {
+window.tflBookChange = function (num) {
 	switch (num) {
 		case 0: $scope.stories = SPELL_DATA; break;
 		case 1: $scope.stories = tfl_b1_stories; break;
@@ -42,8 +42,8 @@ $scope.styleTrack = function(trackId) {
 }
 
 $scope.createAudioSrc = function() {
-	var book
-	var track
+	let book
+	let track
 	if ($scope.KBook==0) { book = 'spell'; track = $scope.story.track }
 	if ($scope.KBook==1) { book = 'tfl_b1'; track = $scope.story.track }
 	if ($scope.KBook==2) { book = 'tfl_b2'; track = $scope.story.track }
@@ -62,10 +62,10 @@ $scope.fetchStory = function (idx)
 }
 
 $scope.loadData = function () {
-	var bookData = Helper_loadInt('tfl_b', 1);
+	const bookData = Helper_loadInt('tfl_b', 1);
 	$scope.KBook = bookData;
 
-	bookChange(bookData);
+	window.tflBookChange(bookData);
 	document.tfl_bForm.book.value = bookData;
 };
 

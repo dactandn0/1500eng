@@ -8,13 +8,13 @@ document.write('<script src="./ebooks/lptd/data/cd4_data.js" type="text/javascri
 var app = angular.module("lptdApp", []);
 app.controller("lptdCtrl", function($scope, $rootScope, $timeout ) {
 
-radioCD = 1;
+let radioCD = 1;
 $scope.stories = lptd_cd1_stories; //1
 $scope.storyIdx = 0;
 
-var keyU = 'lptd_u_'
+let keyU = 'lptd_u_'
 
-radioCDChange = function (cd)
+window.lptdRadioCDChange = function (cd)
 {
 	keyU = removeStrDigit(keyU) + cd
 	switch (cd) {
@@ -36,7 +36,7 @@ $scope.range = function(min, max, step) {
 };
 
 $scope.createAudioSrc = function() {
-	var ROOT = "./ebooks/lptd/data/"
+	const ROOT = "./ebooks/lptd/data/"
 	if (HELPER_FOR_TEST) return ROOT + "cd1/test/0b.mp3"
 	return ROOT + "cd" + radioCD + "/" + ($scope.storyIdx - 1 ) + '.mp3';  // due to Menu
 }
@@ -51,8 +51,8 @@ $scope.fetchStory = function (idx)
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt('lptd_cd', 1);
-	radioCDChange(cd);
+	const cd = Helper_loadInt('lptd_cd', 1);
+	window.lptdRadioCDChange(cd);
 	if (document.lptd_cdForm.radioCD)
 	{
 		document.lptd_cdForm.radioCD.value = cd;

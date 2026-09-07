@@ -5,15 +5,15 @@ document.write('<script src="./ebooks/lrat/data/1/lrat_l_1.js" type="text/javasc
 var app = angular.module("lratApp", []);
 app.controller("lratCtrl", function($scope, $rootScope, $timeout) {
 
-var imgRootPath = './ebooks/lrat/data' ; 						
-var bookIdx = 0 ; 								
+const imgRootPath = './ebooks/lrat/data' ;
+let bookIdx = 0 ;
 $scope.story = '';
 
 $scope.stories = LRAT_DATA_L_1;			
 
-var keyU = "lrat_u_"	
+const keyU = "lrat_u_"
 
-bookIdxChange = function (num, isLoadData = false) {
+window.lratBookIdxChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
 	bookIdx = num;
 
@@ -37,8 +37,8 @@ bookIdxChange = function (num, isLoadData = false) {
 
 $scope.createAudioSrc = function() {
 	if (!$scope.story || !$scope.story.track) return ''
-	var mp3File = $scope.story.track + '.mp3';
-	var rootPath = `./ebooks/lrat/data/${bookIdx}/mp3/`
+	const mp3File = $scope.story.track + '.mp3';
+	const rootPath = `./ebooks/lrat/data/${bookIdx}/mp3/`
 	return rootPath + mp3File
 }
 
@@ -52,8 +52,8 @@ $scope.fetchStory = function (idx)
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt('lrat_book', 1);
-	bookIdxChange(cd, true);
+	const cd = Helper_loadInt('lrat_book', 1);
+	window.lratBookIdxChange(cd, true);
 	document.ltar_bookForm.bookIdx.value = cd;
 };
 

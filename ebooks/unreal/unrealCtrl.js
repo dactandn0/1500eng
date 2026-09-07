@@ -10,7 +10,7 @@ document.write('<script src="./ebooks/unreal/data/unreal_vfx.js" type="text/java
 var app = angular.module("unrealApp", []);
 app.controller("unrealCtrl", function($scope, $rootScope, $timeout) {
 
-var imgRootPath = './ebooks/unreal/data/images/' ; 						
+const imgRootPath = './ebooks/unreal/data/images/' ;
 $scope.img_root = imgRootPath						
 $scope.unreal_form = 0 ; 								
 $scope.story = '';
@@ -18,14 +18,14 @@ $scope.acc = -1;
 
 $scope.stories = UNREAL_DATA_R;			
 
-var keyU = "unreal_u_"	
-var unreal_form = "unreal_form"
+let keyU = "unreal_u_"
+const unrealFormKey = "unreal_form"
 
-unreal_formChange = function (num, isLoadData = false) {
+window.unrealFormChange = function (num, isLoadData = false) {
 	$scope.unreal_form = num;
 
 	keyU = removeStrDigit(keyU) + num
-	Helper_saveDB(unreal_form, num);
+	Helper_saveDB(unrealFormKey, num);
 
 	$scope.acc = -1;
 
@@ -75,8 +75,8 @@ $scope.acc_click = function (id) {
 
 $scope.createAudioSrc = function() {
 	if (!$scope.story || !$scope.story.track) return ''
-	var mp3File = 'Cam' + $scope.story.track + '.mp3';
-	var rootPath = "./ebooks/unreal/data/mp3/"
+	const mp3File = 'Cam' + $scope.story.track + '.mp3';
+	const rootPath = "./ebooks/unreal/data/mp3/"
 	return rootPath + mp3File
 }
 
@@ -90,8 +90,8 @@ $scope.fetchStory = function (idx)
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt(unreal_form, 0);
-	unreal_formChange(cd, true);
+	const cd = Helper_loadInt(unrealFormKey, 0);
+	window.unrealFormChange(cd, true);
 	$scope.unreal_form = cd;
 	document.unreal_bForm.unreal_form.value = cd;
 };

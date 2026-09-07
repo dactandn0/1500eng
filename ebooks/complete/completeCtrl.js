@@ -29,7 +29,7 @@ $scope.storyTitles = function () {
 }
 // end of Read
 
-ielt_formChange = function (num) {
+window.completeFormChange = function (num) {
 	$scope.$broadcast("child_stopSound");
 
 	$scope.ielt_form = num;
@@ -60,8 +60,8 @@ $scope.fetchStory = function (idx)
 
 $scope.loadData = function () 
 {
-	var formIelts = Helper_loadInt('comple_form', 0);
-	ielt_formChange(formIelts);
+	const formIelts = Helper_loadInt('comple_form', 0);
+	window.completeFormChange(formIelts);
 	document.complete_ielt_bForm._form.value = formIelts;
 	$scope.ielt_form = formIelts;
 };

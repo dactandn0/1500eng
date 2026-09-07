@@ -8,7 +8,7 @@ document.write('<script src="./ebooks/englab/beginnerCourse/englab_begin_data_L.
 var app = angular.module("beginnerCourseApp", []);
 app.controller("beginnerCourseCtrl", function($scope, $rootScope, $timeout) {
 
-var imgRootPath = './ebooks/englab/beginnerCourse/images/' ; 						
+const imgRootPath = './ebooks/englab/beginnerCourse/images/' ;
 $scope.img_root = imgRootPath + 'lessons/'						
 $scope.ielt_form = 0 ; 								
 $scope.story = '';
@@ -16,9 +16,9 @@ $scope.acc = -1;
 
 $scope.stories = ENGLAB_BEGIN_DATA_R;			
 
-var keyU = "beg_u_"	
+let keyU = "beg_u_"
 
-ielt_formChange = function (num, isLoadData = false) {
+window.beginnerFormChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
 	$scope.ielt_form = num;
 
@@ -62,14 +62,14 @@ $scope.acc_click = function (id) {
 // for writing
 $scope.examTypeCss = function (idx) {
 	if ($scope.ielt_form !== 1) return;
-	var story = ENGLAB_BEGIN_DATA_W[idx]
-	var type = Number(story.examType);
+	const story = ENGLAB_BEGIN_DATA_W[idx]
+	const type = Number(story.examType);
 	if (type===0) return {color: 'purple'}  //vi 2 En
 }
 
 $scope.createAudioSrc = function() {
-	var mp3File = $scope.story.track + '.mp3';
-	var rootPath = "./ebooks/englab/beginnerCourse/"
+	const mp3File = $scope.story.track + '.mp3';
+	const rootPath = "./ebooks/englab/beginnerCourse/"
 	if ($scope.ielt_form === 3) return rootPath + "L_mp3/" + mp3File
 	else if ($scope.ielt_form === 4) return rootPath + "s_o_s_mp3/" + mp3File
 }
@@ -84,8 +84,8 @@ $scope.fetchStory = function (idx)
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt('beg_form', 0);
-	ielt_formChange(cd, true);
+	const cd = Helper_loadInt('beg_form', 0);
+	window.beginnerFormChange(cd, true);
 	$scope.ielt_form = cd;
 	document.beg_ielt_bForm.ielt_form.value = cd;
 };

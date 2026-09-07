@@ -6,7 +6,7 @@ document.write('<script src="./ebooks/tocg/data/tocg_r.js" type="text/javascript
 var app = angular.module("tocgApp", []);
 app.controller("tocgCtrl", function($scope, $rootScope, $timeout) {
 
-var imgRootPath = './ebooks/tocg/data/images/' ; 						
+const imgRootPath = './ebooks/tocg/data/images/' ;
 $scope.img_root = imgRootPath + 'listening/'						
 $scope.ielt_form = 0 ; 								
 $scope.story = '';
@@ -14,9 +14,9 @@ $scope.acc = -1;
 
 $scope.stories = TOCG_DATA_L;			
 
-var keyU = "tocg_u_"	
+let keyU = "tocg_u_"
 
-ielt_formChange = function (num, isLoadData = false) {
+window.tocgFormChange = function (num, isLoadData = false) {
 	$scope.$broadcast("child_stopSound");
 	$scope.ielt_form = num;
 
@@ -57,8 +57,8 @@ $scope.acc_click = function (id) {
 
 $scope.createAudioSrc = function() {
 	if (!$scope.story || !$scope.story.track) return ''
-	var mp3File = 'Cam' + $scope.story.track + '.mp3';
-	var rootPath = "./ebooks/tocg/data/mp3/"
+	const mp3File = 'Cam' + $scope.story.track + '.mp3';
+	const rootPath = "./ebooks/tocg/data/mp3/"
 	return rootPath + mp3File
 }
 
@@ -72,8 +72,8 @@ $scope.fetchStory = function (idx)
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt('tocg_form', 0);
-	ielt_formChange(cd, true);
+	const cd = Helper_loadInt('tocg_form', 0);
+	window.tocgFormChange(cd, true);
 	$scope.ielt_form = cd;
 	document.tocg_ielt_bForm.ielt_form.value = cd;
 };

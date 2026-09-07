@@ -1,4 +1,4 @@
-var TIENGVIET_ARR = ['giao', 'vui', 'trong', 'cho', 'bao', 'kinh', 'tinh', 'quen', 'con', 'lui', 'thui', 'tui', 'tin', 'sau', 'chung', 'thanh', 'sao']
+const TIENGVIET_ARR = ['giao', 'vui', 'trong', 'cho', 'bao', 'kinh', 'tinh', 'quen', 'con', 'lui', 'thui', 'tui', 'tin', 'sau', 'chung', 'thanh', 'sao']
 
 function removeVietnameseTones(str) {
 	str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
@@ -31,24 +31,24 @@ function removeVietnameseTones(str) {
 
 
 function getLastWord(splitChar, string) {
-	var str = string.split(splitChar);
+	const str = string.split(splitChar);
 	return str[str.length - 1];
 }
 
 function deleteLastWord(splitChar, string) {
 	if (!string.includes(splitChar)) return string;
-	var lastW = getLastWord(splitChar, string)
+	const lastW = getLastWord(splitChar, string)
 	return string.replace(splitChar + lastW, "");
 }
 
 function ValidateWord(word, minL = 2) {
-	var result = true;
+	let result = true;
 	word = word.trim().toLowerCase();
 	if (!isAsciiString(word)) result = false;
 
-	let arr = ['<br>', '</br>', '<b>', '</b>', '/', '(', ')', '[', ']', '<u>', '</u>'];
-	for (var i = 0; i < arr.length; i++) {
-		var bList = arr[i];
+	const arr = ['<br>', '</br>', '<b>', '</b>', '/', '(', ')', '[', ']', '<u>', '</u>'];
+	for (let i = 0; i < arr.length; i++) {
+		const bList = arr[i];
 		if (word.indexOf(bList) >= 0) {
 			result = false;
 		}
@@ -58,7 +58,7 @@ function ValidateWord(word, minL = 2) {
 
 // for word3000.js
 function _scrollIntoView(idx) {
-	var ele = document.getElementsByClassName("scroll")[idx];
+	const ele = document.getElementsByClassName("scroll")[idx];
 	setTimeout(function() {
 		if (ele)
 			ele.scrollIntoView({
@@ -75,7 +75,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-	let mybutton = document.getElementById("btn_back_to_top");
+	const mybutton = document.getElementById("btn_back_to_top");
 
 	if (!mybutton) return;
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -93,7 +93,7 @@ function shuffle(array) {
 }
 
 function isAsciiString(text) {
-	var r = /(?:[\u0000-\u007F]+|[\u0370-\u03FF]+)/g.test(text) && !isInArr(text, TIENGVIET_ARR);
+	const r = /(?:[\u0000-\u007F]+|[\u0370-\u03FF]+)/g.test(text) && !isInArr(text, TIENGVIET_ARR);
 	return r;
 }
 
@@ -103,8 +103,8 @@ function Helper_GetVocaFromWordFull(wordFull) {
 	//get verb-ed, Vpp
 	if (wordFull.indexOf(kVERB_3_COL) !== -1) return wordFull.split(kVERB_3_COL)[0];
 
-	var result = "";
-	var lastSpaceIdx = wordFull.lastIndexOf(" ");
+	let result = "";
+	const lastSpaceIdx = wordFull.lastIndexOf(" ");
 	if (lastSpaceIdx == -1) return wordFull
 
 		result = wordFull.substring(0, wordFull.lastIndexOf(" "));
@@ -113,7 +113,7 @@ function Helper_GetVocaFromWordFull(wordFull) {
 }
 
 // arrow up scroll
-topFunction = function() {
+window.topFunction = function() {
 	window.scrollTo({
 		top: 0,
 		behavior: 'smooth'
@@ -127,22 +127,22 @@ function ArrayRemove(arr, eleName) {
 }
 
 function Helper_RemoveHTMLtag(input) {
-	var rrr = input.replace(/(<([^>]+)>)/ig, '')
+	const rrr = input.replace(/(<([^>]+)>)/ig, '')
 	return rrr;
 }
 
-Helper_Speak = function(event, txt) {
-	var target = Helper_GetVocaFromWordFull(txt);
+window.Helper_Speak = function(event, txt) {
+	const target = Helper_GetVocaFromWordFull(txt);
 	Text2Speech(target)
 }
 
 
 
-Helper_SliceHalfString = function(str) {
-	var partOne = ""
-	var partTwo = ""
+window.Helper_SliceHalfString = function(str) {
+	let partOne = ""
+	let partTwo = ""
 
-	var matchTags = str.match(/<.+>/);
+	const matchTags = str.match(/<.+>/);
 	if (matchTags && matchTags.length > 0) {
 		partOne = matchTags[0]
 		partTwo = str.substr(partOne.length)
@@ -153,13 +153,13 @@ Helper_SliceHalfString = function(str) {
 		}
 	}
 
-	var arr = str.split(" ");
+	const arr = str.split(" ");
 	if (arr.length === 1) {
 		partOne = str;
 		partTwo = ' /unknown/'
 	} else {
-		var mm = Math.floor(arr.length / 2)
-		for (var i = 0; i < mm; i++) {
+		const mm = Math.floor(arr.length / 2)
+		for (let i = 0; i < mm; i++) {
 			partOne += arr[i] + " "
 		}
 		partTwo = str.substr(partOne.length)

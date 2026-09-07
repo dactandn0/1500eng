@@ -9,7 +9,7 @@ $scope.cd = 1;
 $scope.stories = BOOK4K_1; //1
 $scope.storyIdx = 0;
 
-radioCDChange = function (cd) {
+window.words4000RadioCDChange = function (cd) {
 	if (cd===1) {
 		$scope.stories = BOOK4K_1;
 	}
@@ -23,7 +23,7 @@ $scope.fetchAudio = function() {
 }
 
 $scope.createAudioScr = function() {
-	var rr = "./ebooks/words4000/data/words4000_" + $scope.cd + "/" + $scope.fetchAudio() + '.mp3';
+	const rr = "./ebooks/words4000/data/words4000_" + $scope.cd + "/" + $scope.fetchAudio() + '.mp3';
 	return rr;
 }
 
@@ -37,8 +37,8 @@ $scope.fetchStory = function (idx, reset=true)
 }
 
 $scope.loadData = function () {
-	var cd = Helper_loadInt('book_4k_cd', 1)
-	radioCDChange(parseInt(cd));
+	const cd = Helper_loadInt('book_4k_cd', 1)
+	window.words4000RadioCDChange(parseInt(cd));
 	document.word4k_cdForm.radioCD.value=cd;
 
 	$scope.storyIdx = Helper_loadInt('book_4k_unit', 0)

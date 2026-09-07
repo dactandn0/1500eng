@@ -29,14 +29,14 @@ var kAllStories = SPEAKING_SAME_VOL5
 //  .concat(complete_read_data)
 //  .concat(listen_tracks)
 
-var saveFromToastVal = ''
-var searchData = [];
-preProcess = function() {
-	for (var k = 0; k < VocaForSearch.length; k++) {
-		story = VocaForSearch[k];
+let saveFromToastVal = '';
+const searchData = [];
+function preProcess() {
+	for (let k = 0; k < VocaForSearch.length; k++) {
+		const story = VocaForSearch[k];
 		if (story.en) {
-			var words = story.en.split('<br>');
-			searchData = searchData.concat(words);
+			const words = story.en.split('<br>');
+			searchData.push(...words);
 		}
 	}
 }
@@ -168,7 +168,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		});
 
 
-		IndexCtrlScope = $scope;
+		window.IndexCtrlScope = $scope;
 
 		// for word3000Ctrl
 		$rootScope.VocaToUI = VocaToUI
@@ -219,10 +219,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			if (searchData.length == 0) return true;
 			$scope.searchDataResult = [];
 			if ($scope.search.length <= 2) return;
-			var search = removeVietnameseTones($scope.search.toLowerCase());
-			for (var i = 0; i < searchData.length; i++) {
-				var dataVN = searchData[i];
-				data = removeVietnameseTones(dataVN.toLowerCase());
+			const search = removeVietnameseTones($scope.search.toLowerCase());
+			for (let i = 0; i < searchData.length; i++) {
+				const dataVN = searchData[i];
+				const data = removeVietnameseTones(dataVN.toLowerCase());
 
 				if (data.includes(search)) {
 					$scope.searchDataResult.push(dataVN);
@@ -232,11 +232,11 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 		$scope.findSameWord = function() {
-			for (var i = 0; i < searchData.length - 1; i++) {
-				var word1 = Helper_GetVocaFromWordFull(searchData[i]);
+			for (let i = 0; i < searchData.length - 1; i++) {
+				const word1 = Helper_GetVocaFromWordFull(searchData[i]);
 				if (word1.length == 0) continue;
-				for (var k = i + 1; k < searchData.length; k++) {
-					var word2 = Helper_GetVocaFromWordFull(searchData[k]);
+				for (let k = i + 1; k < searchData.length; k++) {
+					const word2 = Helper_GetVocaFromWordFull(searchData[k]);
 					if (word1 === word2) {
 						console.log("findSameWord: " + word1);
 						break;
@@ -245,7 +245,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		saveFromToastr = function() {
+		window.saveFromToastr = function() {
 			if (saveFromToastVal.trim().length > 0)
 				$scope.saveNoted(saveFromToastVal, true)
 		}
@@ -258,8 +258,8 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		$scope.Index_NoteVoca_Speak = function(word) {
 			word = word.replace(/\/.*\//gi, '').replace(/\:.+\:/gi, '.')
-			var parts = word.split(' ')
-			var concatWord = ''
+			const parts = word.split(' ')
+			let concatWord = ''
 			parts.forEach(ele => {
 				if (TIENGVIET_ARR.includes(ele)) return; // ~ continue
 				if (/^[A-Za-z\.,!\?'\-\:]+$/gi.test(ele)) // keep we'd, he's, Mr.Vas
@@ -273,7 +273,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		// vocaEbook Touch
 		$scope.vocaEbookSpeech = function(event, voca, lesson, idx, idxParent) {
 			event.stopPropagation()
-			var sentences = doFetchSentences(voca, [lesson])
+			const sentences = doFetchSentences(voca, [lesson])
 			if (sentences) {
 				$scope.sentenceForVoca = ' - ' + sentences[0]
 				$scope.vocaIdx = idx
@@ -292,7 +292,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			event.stopPropagation()
 			if ($scope.bTransSentenOnClick && !$rootScope.bShowVi) // dont active in showVi-mode
 			{
-				var pNode = event.target
+				let pNode = event.target
 				do {
 					pNode = pNode.parentNode
 				}
@@ -311,13 +311,13 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			const wordFamily = getWordFamily(touchedWord)
 			const wordSameSounds = getWordSameSound(touchedWord)
 
-			var total = wordFamily + wordSynonyms + wordSameSounds
+			const total = wordFamily + wordSynonyms + wordSameSounds
 
-			var json_full = ''
-			var found = false
-			for (var i = 0; i < searchData.length; i++) {
-				var wordFull = searchData[i]
-				var word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
+			let json_full = ''
+			let found = false
+			for (let i = 0; i < searchData.length; i++) {
+				const wordFull = searchData[i]
+				const word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
 
 				if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) {
 					json_full = wordFull + total
@@ -337,7 +337,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		ngClickSpeechShowToast = function(touchedWord, isLongText) {
 			navigator.clipboard.writeText(touchedWord);
-			var result = getVocaFromDB(touchedWord)
+			const result = getVocaFromDB(touchedWord)
 			// not in database, so using GOOGLE TRANS API
 			if (!result.found) {
 				Helper_GG_API($http, touchedWord).then(res => {
@@ -385,7 +385,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 
 		$scope.showExampleModal = function(wordFull, event) {
-			var sentences = $scope.fetchSentences(wordFull);
+			const sentences = $scope.fetchSentences(wordFull);
 			if (!sentences) {
 				event.target.style.color = 'red';
 				return;
@@ -420,25 +420,25 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		doFetchSentences = function(word, StoriesData) {
 			if (word === '') return 0;
 
-			var word_s_es = Helper_N_V_Add_S_ES(word);
-			var word_ing = Helper_N_V_Add_ING(word);
+			const word_s_es = Helper_N_V_Add_S_ES(word);
+			const word_ing = Helper_N_V_Add_ING(word);
 
-			var ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b(${word}|${word_s_es}|${word_ing})\b.*?[\?|\.|!"]+?`, 'gi');
+			const ptrn = new RegExp(String.raw`[^\.\?!<>:"-]*\b(${word}|${word_s_es}|${word_ing})\b.*?[\?|\.|!"]+?`, 'gi');
 
-			var shuffleStories = shuffle(StoriesData);
+			const shuffleStories = shuffle(StoriesData);
 
-			for (var i = 0; i < shuffleStories.length; i++) {
+			for (let i = 0; i < shuffleStories.length; i++) {
 				if (!shuffleStories[i].en) continue;
-				var para = shuffleStories[i].en.replaceAll("<br>", '.');
-				var results = para.match(ptrn); // array
+				const para = shuffleStories[i].en.replaceAll("<br>", '.');
+				const results = para.match(ptrn); // array
 
 				if (results) {
-					var regex = new RegExp(`\\b(${word}|${word_s_es})`, 'gi')
-					for (var i = 0; i < results.length; i++) {
-						var nn = results[i];
+					const regex = new RegExp(`\\b(${word}|${word_s_es})`, 'gi')
+					for (let j = 0; j < results.length; j++) {
+						const nn = results[j];
 						if (!nn.match(regex)) continue
-						var match = nn.match(regex)[0];
-						results[i] = nn.replaceAll(match, "<b>" + match + "</b>");
+						const match = nn.match(regex)[0];
+						results[j] = nn.replaceAll(match, "<b>" + match + "</b>");
 					}
 					return (results);
 				}
@@ -448,7 +448,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		// wordFull like:  Sea n /siː/ Biển
 		$scope.fetchSentences = function(wordFull) {
-			var word = Helper_GetVocaFromWordFull(wordFull);
+			const word = Helper_GetVocaFromWordFull(wordFull);
 			return doFetchSentences(word, kAllStories)
 		}
 
@@ -469,8 +469,8 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 
 		$scope.Export2Doc = function() {
-			var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
-			var postHtml = "</body></html>";
+			const preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+			const postHtml = "</body></html>";
 
 			let html = ''
 			let _DOM = document.getElementById('VocaOfEbook')
@@ -484,17 +484,17 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			html = title + '<hr>' + _DOM.innerHTML.replaceAll('[X]', '').replaceAll('[Ex]', '');
 			html = preHtml + html + postHtml;
 
-			var blob = new Blob(['\ufeff', html], {
+			const blob = new Blob(['\ufeff', html], {
 				type: 'application/msword'
 			});
-			var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+			const url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
 
 			// Specify file name
 			// let path = $location.path().replace('/', '')
 			const filename = title + '.doc'
 
 			// Create download link element
-			var downloadLink = document.createElement("a");
+			const downloadLink = document.createElement("a");
 
 			document.body.appendChild(downloadLink);
 

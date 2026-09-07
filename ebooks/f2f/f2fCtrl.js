@@ -7,12 +7,12 @@ document.write('<script src="./ebooks/f2f/f2f_b6_data.js" type="text/javascript"
 var app = angular.module("f2fApp", []);
 app.controller("f2fCtrl", function($scope, $rootScope, $timeout ) {
 
-var kSTORIES = f2f_b1_stories;
-var KBook = 1;
+let kSTORIES = f2f_b1_stories;
+let KBook = 1;
 $scope.stories = kSTORIES; //1
 $scope.storyIdx = 0;
 
-bookChange = function (book) {
+window.f2fBookChange = function (book) {
 	switch (book) {
 		case 1: kSTORIES = f2f_b1_stories; break;
 		case 2: kSTORIES = f2f_b2_stories; break;
@@ -40,7 +40,7 @@ $scope.loadData = function () {
 	$scope.storyIdx = Helper_loadInt('f2f_unit', 0);
 	
 	var cd = Helper_loadInt('f2f_b', 1);
-	bookChange(cd);
+	window.f2fBookChange(cd);
 	document.f2f_bForm.book.value = cd;
 	KBook=cd;
 

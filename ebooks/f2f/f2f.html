@@ -1,5 +1,7 @@
 
-<h5 class="mb-4">Face 2 face</h5>
+<section class="study-shell">
+     <div ng-include="'./includes/studyHeader.html'"
+          ng-init="studyEyebrow='CONVERSATION COURSE'; studyTitle='Face 2 Face'; studyDescription='Build natural English through guided conversations.'; studyStatus='F2F • 3 books'"></div>
 
 <form name="f2f_bForm" class="my-3" role="group">
      <input type="radio" name="book" value="1" onchange="f2fBookChange(1)" checked/><span class="mr-3">1</span>
@@ -17,4 +19,6 @@
 
 
 <div ng-include="'./includes/storyL.html'" ></div>
+
+</section>
 

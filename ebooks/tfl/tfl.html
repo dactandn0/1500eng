@@ -1,5 +1,7 @@
 
-<mark class="mb-4">Tactics for Listening</mark>
+<section class="study-shell">
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='LISTENING COURSE'; studyTitle='Tactics for Listening'; studyDescription='Sharpen listening skills with practical everyday English.'; studyStatus='TFL • 4 tracks'"></div>
 
 <form name="tfl_bForm" class="my-3" role="group">
 	<input id="00" type="radio" name="book" value="0" onchange="tflBookChange(0)" checked/><label for="00" class="mr-3">Spell</label>
@@ -9,5 +11,7 @@
 </form>
 
 <div ng-include="'./includes/storyL.html'" ></div>
+
+</section>
 
 

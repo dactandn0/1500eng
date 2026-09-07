@@ -1,13 +1,7 @@
 
 <section class="study-shell lptd-page">
-	<header class="study-header">
-		<div>
-			<span class="eyebrow">LISTENING LAB</span>
-			<h1>Listening Practice Dictation</h1>
-			<p>Train your ear, one short track at a time.</p>
-		</div>
-		<div class="study-status" aria-label="Current course">LPTD <span>•</span> 4 CDs</div>
-	</header>
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='LISTENING LAB'; studyTitle='Listening Practice Dictation'; studyDescription='Train your ear, one short track at a time.'; studyStatus='LPTD • 4 CDs'"></div>
 
 <form name="lptd_cdForm" class="cd-selector" role="group" aria-label="Choose CD">
 	<label class="cd-option" for="11"><input id="11" type="radio" name="radioCD" value="1" onchange="lptdRadioCDChange(1)" checked/><span>CD 1</span></label>

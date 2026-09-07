@@ -1,5 +1,7 @@
 
-<mark class="mb-2">Complete for Ielts 4-5</mark>
+<section class="study-shell">
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='IELTS PRACTICE'; studyTitle='Complete for IELTS 4-5'; studyDescription='Build confidence across listening and reading practice.'; studyStatus='IELTS • 2 modes'"></div>
 
 <form name="complete_ielt_bForm" class="my-3" role="group">
 	<input id="111" type="radio" name="_form" value="0" onchange="completeFormChange(0)" checked/><label class="mr-3" for="111">Listen</label>
@@ -13,3 +15,5 @@
 <div ng-show = "ielt_form===1">
 	<div ng-include="'./includes/storyR.html'" ></div>
 </div>
+
+</section>

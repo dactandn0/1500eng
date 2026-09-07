@@ -78,6 +78,10 @@ app.config(function($routeProvider) {
 			templateUrl: 'vocaNoted/vocaNoted.html',
 			controller: 'vocaNotedCtrl'
 		})
+		.when('/wordCollect', {
+			templateUrl: 'wordCollect/wordCollect.html',
+			controller: 'wordCollectCtrl'
+		})
 		// .when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
 		.when('/f2f', {
 			templateUrl: 'ebooks/f2f/f2f.html',

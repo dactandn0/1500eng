@@ -7,20 +7,20 @@ longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 focus (v) /ˈfəʊkəs/ tập trung<br>\
 concentrate (v) /ˈkɑːnsntreɪt/ tập trung<br>\
 archeology (n) /ˌɑːrkiˈɑːlədʒi/ khảo cổ học<br>\
-identical (a) giống hệt nhau<br>\
+identical (a) /aɪˈdentɪkl/ giống hệt nhau<br>\
 toward (prep) /tɔːrdz/ theo hướng<br>\
-exterminator (n) người diệt côn trùng, người tàn sát<br>\
-health (n) sức khỏe<br>\
-fitness (n) sự thích hợp, tài năng, tư cách, sức khỏe tốt<br>\
-comfortable (a) tiện lợi<br>\
+exterminator (n) /ɪkˈstɜːrmɪneɪtər/ người diệt côn trùng, người tàn sát<br>\
+health (n) /helθ/ sức khỏe<br>\
+fitness (n) /ˈfɪtnəs/ sự thích hợp, tài năng, tư cách, sức khỏe tốt<br>\
+comfortable (a) /ˈkʌmftərbəl/ tiện lợi<br>\
 globalization (a) /ˌɡləʊbələˈzeɪʃn/ toàn cầu hóa<br>\
 conducive (a) /kənˈduːsɪv/ có lợi<br>\
 globalised (a) /ˈɡləʊbəlaɪz/ toàn cầu hóa<br>\
 sedentary (a) /ˈsednteri/ ít vận động<br>\
 facility (n) /fəˈsɪləti/ cơ sở, thuận tiện<br>\
 commute (v)  /kəˈmjuːt/ đi lại (bus, train, car)<br>\
-user-friendly (a) = easy to use <br>\
-eco-friendly (a) thân thiện với môi trường<br>\
+user-friendly (a) /ˌjuːzər ˈfrendli/ = easy to use <br>\
+eco-friendly (a) /ˌiːkoʊ ˈfrendli/ thân thiện với môi trường<br>\
 eradicate (v) /ɪˈrædɪkeɪt/ xóa bỏ, tiêu diệt<br>\
 operation (n) /ɑːpəˈreɪʃn/ hoạt động<br>\
 maintenance (n) /ˈmeɪntənəns/ bảo trì<br>\
@@ -82,22 +82,22 @@ although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 sporty (a) /ˈspɔːrti/ thích thể thao<br>\
 weekdays (adv) /ˈwiːkdeɪz/<br>\
 hunt (v) /hʌnt/ săn<br>\
-middle (prep) giữa<br>\
+middle (prep) /ˈmɪdl/ giữa<br>\
 extraordinary (a) /ɪkˈstrɔːrdəneri/ đặc biệt, phi thường, lạ lùng<br>\
 brutality (n) /bruːˈtæləti/ sự tàn bạo<br>\
 prospect (n) /ˈprɑːspekt/ triển vọng<br>\
 acquire (v) /əˈkwaɪər/ có được<br>\
-low-budget (a) ngân sách thấp<br>\
-science (n) khoa học<br>\
-scientific (a) có tính khoa học<br>\
-unaggressive (a) không hung hăng<br>\
-moment (n) khoảnh khắc<br>\
+low-budget (a) /ˌloʊ ˈbʌdʒɪt/ ngân sách thấp<br>\
+science (n) /ˈsaɪəns/ khoa học<br>\
+scientific (a) /ˌsaɪənˈtɪfɪk/ có tính khoa học<br>\
+unaggressive (a) /ˌʌnəˈɡresɪv/ không hung hăng<br>\
+moment (n) /ˈmoʊmənt/ khoảnh khắc<br>\
 worsen (v) /ˈwɜːrsn/ trở nên xấu/tệ hơn<br>\
-established (a) uy tín, chứng thật<br>\
+established (a) /ɪˈstæblɪʃt/ uy tín, chứng thật<br>\
 coziness (n) /ˈkəʊzinəs/ sự ấm cúng<br>\
 addict (n) /ˈædɪkt/ người ghiện<br>\
 worshipper (n) /ˈwɜːrʃɪpər/ người sùng bái<br>\
-applause (n) tiếng vỗ tay<br>\
+applause (n) /əˈplɔːz/ tiếng vỗ tay<br>\
 investor (n) /ɪnˈvestər/ nhà đầu tư<br>\
 organise (organize) (v) /ˈɔːrɡənaɪz/ tổ chức<br>\
 investment (n) /ɪnˈvestmənt/ sự đầu tư<br>\
@@ -252,7 +252,7 @@ attend (v) /əˈtend/ tham dự<br>\
 contrast (n) /ˈkɑːntræst/ tương phản<br>\
 encourage (v) /ɪnˈkɜːrɪdʒ/ khuyến khích<br>\
 familiar (a) /fəˈmɪliər quen thuộc<br>\
-grab chộp lấy<br>\
+grab (v) /ɡræb/ chộp lấy<br>\
 hang (v) /hæŋ/ treo<br>\
 necessary (a) /ˈnesəseri/ cần thiết<br>\
 propose (v) /prəˈpoʊz/ đề xuất, cầu hôn<br>\
@@ -272,7 +272,7 @@ prevent (v) /prɪˈvent/ ngăn chặn [s.th/s.o from + N/V_ing]<br>\
 rock (n) /rɑːk/ đá<br>\
 save (v) lưu, tiết kiệm<br>\
 certain (a) /ˈsɜːrtn/ chắc chắn, nhất định<br>\
-chance cơ hội<br>\
+chance (n) /tʃæns/ cơ hội<br>\
 effect (n) /ɪˈfekt/ hiệu ứng<br>\
 essential thiết yếu<br>\
 function (n) /ˈfʌŋkʃn/ chức năng<br>\
@@ -454,11 +454,11 @@ entertainment (n) giải trí, vui chơi, cuộc vui<br>\
 leisure (n) /ˈliːʒər/ rảnh rỗi<br>\
 goal mục tiêu<br>\
 meat thịt<br>\
-reflect phản ánh<br>\
+reflect (v) /rɪˈflekt/ phản ánh<br>\
 regard (v) /rɪˈɡɑːrd/ xem xét<br>\
-vegetable rau<br>\
-war chiến tranh<br>\
-worth đáng giá<br>\
+vegetable (n) /ˈvedʒ.tə.bəl/ rau<br>\
+war (n) /wɔːr/ chiến tranh<br>\
+worth (a,n) /wɜːrθ/ đáng giá<br>\
 appear (v) /əˈpɪr/ xuất hiện, giống như (= look)<br>\
 brain (n) /breɪn/ não<br>\
 clerk nhân viên<br>\
@@ -513,8 +513,8 @@ pole cột<br>\
 safety (n) /ˈseɪfti/ (nơi) an toàn<br>\
 shoot bắn<br>\
 web web<br>\
-block block<br>\
-cheer cổ vũ<br>\
+block (n) /blɑːk/ chặn<br>\
+cheer (v,n) /tʃɪr/ cổ vũ<br>\
 complex phức tạp<br>\
 critic (n) /ˈkrɪtɪk/ phê bình<br>\
 event sự kiện<br>\

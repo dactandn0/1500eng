@@ -1,5 +1,9 @@
 
 
+<section class="study-shell">
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='SPEAKING PRACTICE'; studyTitle='Speaking Book'; studyDescription='Listen, repeat and make useful phrases your own.'; studyStatus='SPEAKING • 5 books'"></div>
+
 <form name="spk_book_bForm" class="my-1" role="group">
 	<input id="111" type="radio" name="bookRadio" value='0' onchange="bookRadioChange(0)" checked/><label class="mr-3" for="111">Collins</label>
 	<input id="222" type="radio" name="bookRadio" value='1' onchange="bookRadioChange(1)" /><label class="mr-3" for="222">Formula</label>
@@ -9,3 +13,5 @@
 </form>
 
 <div ng-include="'./includes/storyL.html'" ></div>
+
+</section>

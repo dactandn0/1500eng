@@ -80,7 +80,7 @@
 <body ng-app="myApp">
     <div ng-controller="indexCtrl" class="container mt-4" ng-cloak>
 
-   <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #33aabb;">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light app-navbar">
     <a class="navbar-brand mr-auto" ng-href="#/!"><i class="fa fa-lg fa-language"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -89,9 +89,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto flex-wrap">
         <!-- <li class="nav-item"><a class="nav-link" ng-href="#!f2f">Face</a></li> -->
-        <li class="nav-item"><a class="nav-link" ng-href="#!spkBook">[S]Book</a></li>
-        <li class="nav-item"><a class="nav-link" ng-href="#!tocg">TOCG</a></li>
-        <li class="nav-item"><a class="nav-link" ng-href="#!lrat">[L]LRAT</a></li>
+        <li class="nav-item"><a class="nav-link" ng-href="#!wordCollect">Words</a></li>
+        <li class="nav-item"><a class="nav-link" ng-href="#!tfl">Tactics-VOA</a></li>
+        <li class="nav-item"><a class="nav-link" ng-href="#!spkBook">[S]Books</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" ng-href="#!tocg">TOCG</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" ng-href="#!lrat">[L]LRAT</a></li> -->
         <li class="nav-item"><a class="nav-link" ng-href="#!beginnerCourse">EngLabBegin</a></li>
         <li class="nav-item dropdown"> 
           <a class="nav-link dropdown-toggle" id="subEbooksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -108,8 +110,8 @@
 
             <a class="dropdown-item" ng-href="#!preCourse">EngLabPre</a>
              -->
-            <a class="dropdown-item" ng-href="#!writingvol5">WritingVol5</a>
-            <a class="dropdown-item" ng-href="#!tfl">Tactics-VOA</a>
+            <!-- <a class="dropdown-item" ng-href="#!writingvol5">WritingVol5</a> -->
+            <!-- <a class="dropdown-item" ng-href="#!tfl">Tactics-VOA</a> -->
           
           </div>
         </li>
@@ -122,7 +124,7 @@
             <a class="dropdown-item" ng-href="#!vocaNoted">Words</a>
             <!-- <a class="dropdown-item" ng-href="#!ebookNoted">Ebooks</a> -->
             <a class="dropdown-item" ng-href="#!configUI">Setting</a>
-            <a class="dropdown-item" ng-href="#!unreal">UE</a>
+            <!-- <a class="dropdown-item" ng-href="#!unreal">UE</a> -->
           </div>
 
         </li>
@@ -130,69 +132,76 @@
     </div>
   </nav>
 
-        <div class="input-group">
+        <div class="app-search input-group">
         <input type="text"
           id="searchTyping"
-          class="form-control" 
+          class="form-control app-search-input"
           ng-change="searchTyping()" 
           ng-model="search" 
           placeholder="Search..."
           > 
 
         <div class="input-group-append">
-          <button class="btn-sm btn-outline-secondary" 
+          <button class="btn btn-sm search-action search-action-speak"
             ng-click="Index_Speak($event, search)">
-           <i class="fa fa-volume-up"></i></button>
+           <i class="fa fa-volume-up" aria-hidden="true"></i><span class="sr-only">Speak</span></button>
          </div> 
 
         <div class="input-group-append">
-          <button class="btn-sm btn-outline-secondary" 
+          <button class="btn btn-sm search-action search-action-save"
             ng-click="saveNoted(search)">
-           <i class="fa fa-save"></i></button>
+           <i class="fa fa-bookmark" aria-hidden="true"></i><span class="sr-only">Save word</span></button>
          </div> 
 
         <div class="input-group-append">
-          <button class="btn-sm btn-outline-secondary" 
-            ng-click="fetchSentenceSearch()">
-          [SE]</button>
+          <button class="btn btn-sm search-action search-action-sentence search-action-text"
+            ng-click="fetchSentenceSearch()" title="Find example sentences" aria-label="Find example sentences">
+          <i class="fa fa-comment-o" aria-hidden="true"></i><span>Ex</span></button>
         </div>
         
         <div class="input-group-append">
-          <button class="btn-sm btn-outline-secondary" 
+          <button class="btn btn-sm search-action search-action-clear"
             ng-click="clearSearch()">
-          <i class="fa fa-close"></i></button>
+          <i class="fa fa-times" aria-hidden="true"></i><span class="sr-only">Clear search</span></button>
         </div>
        </div> <!-- form-search -->
 
-      <div class="text-sm my-1" 
-        ng-repeat="sen in sentenceSearches | limitTo:-3 track by $index">
-        <!-- <button class="btn btn-sm border-primary" >Ex</button> -->
-        <span class="text-danger">*</span> 
-        <span 
-        	ng-bind-html="sen"
+      <section class="example-results" ng-if="sentenceSearches.length">
+        <div class="example-results-heading">
+          <span><i class="fa fa-comments-o" aria-hidden="true"></i> Example sentences</span>
+          <small>Click a sentence to listen</small>
+        </div>
+        <div class="example-sentence"
+          ng-repeat="sen in sentenceSearches | limitTo:-3 track by $index"
           ng-click="Index_Speak($event, sen, true)"
-        ></span>
-     
-        <br>
-      </div>
+          tabindex="0"
+          role="button">
+          <span class="example-number">{{$index + 1}}</span>
+          <span ng-bind-html="sen"></span>
+          <i class="fa fa-volume-up example-sentence-icon" aria-hidden="true"></i>
+        </div>
+      </section>
 
-      <div class="text-sm my-2" 
-        ng-repeat="word in searchDataResult track by $index">
-         <button 
-         	class="btn-sm btn-primary vocaNoteBtn p-1"
-            ng-show="!IsWordSavedBefore(word)"
-            ng-click="saveNoted(word)">
-            <i class="fa fa-save"></i>
-        </button>  
-        <button class="btn-sm p-0 btn-outline-secondary"
-          ng-click="showExampleModal(word, $event)"
-        >[Ex]</button>
-
-        <span
-          ng-click="Index_Speak($event, word)"
-        >{{word}}</span>
-        <br>
-      </div>
+      <section class="vocabulary-results" ng-if="searchDataResult.length">
+        <div class="vocabulary-results-heading">
+          <span><i class="fa fa-book" aria-hidden="true"></i> Matching vocabulary</span>
+          <small>{{searchDataResult.length}} results</small>
+        </div>
+        <div class="vocabulary-row" ng-repeat="word in searchDataResult track by $index">
+          <button type="button" class="vocabulary-action vocabulary-save vocaNoteBtn"
+            ng-if="!IsWordSavedBefore(word)"
+            ng-click="saveNoted(word)"
+            title="Save word" aria-label="Save word">
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="vocabulary-action vocabulary-example"
+            ng-click="showExampleModal(word, $event)"
+            title="Show examples" aria-label="Show examples">
+            <i class="fa fa-comment-o" aria-hidden="true"></i><span>Ex</span>
+          </button>
+          <span class="vocabulary-word" ng-click="Index_Speak($event, word)">{{word}}</span>
+        </div>
+      </section>
       
       <div ng-include="'./includes/showVi.html'" ></div>
       <div ng-include="'./includes/vocaOfEbook.html'" ></div>

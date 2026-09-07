@@ -802,7 +802,7 @@ resist chống lại<br>\
 reveal tiết lộ<br>\
 rid loại bỏ<br>\
 tale câu chuyện<br>\
-trap bẫy<br>\
+trap (n) // bẫy<br>\
 trial xét xử<br>\
 violent admission bạo lực nhập học<br>\
 astronomy thiên văn học<br>\

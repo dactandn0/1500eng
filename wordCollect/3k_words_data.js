@@ -346,7 +346,7 @@ fauna (n) /ˈfɔː.nə/ hệ động vật<br>\
 pollution (n) /pǝ'lu:fn/ sự ô nhiễm<br>\
 deforestation (n) /di: fori'stein/ nạn phá rừng<br>\
 climate change (n) /'klamat tfernd3/ sự biến đổi khí hậu<br>\
-natural resource (n) /'nætfral ri's :s/ tài nguyên tự nhiên<br>\
+natural resource (n) /'nætfral ri's:s/ tài nguyên tự nhiên<br>\
 desertification (n) /di z3:tifi'kexfn/ sự sa mạc hóa<br>\
 desert (n) /ˈdezərt/ sa mạc<br>\
 endangered (a) /in'deindzǝd/ gặp nguy hiểm<br>\

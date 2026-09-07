@@ -173,7 +173,7 @@
         </div>
         <div class="example-sentence"
           ng-repeat="sen in sentenceSearches | limitTo:-3 track by $index"
-          ng-click="Index_Speak($event, sen, true)"
+          ng-click="Index_Speak($event, sen)"
           tabindex="0"
           role="button">
           <span class="example-number">{{$index + 1}}</span>

@@ -97,17 +97,23 @@ function isAsciiString(text) {
 
 function Helper_GetVocaFromWordFull(wordFull) {
 	wordFull = Helper_RemoveHTMLtag(wordFull);
-
+	
 	//get verb-ed, Vpp
 	if (wordFull.indexOf(kVERB_3_COL) !== -1) return wordFull.split(kVERB_3_COL)[0];
 
 	let result = "";
 	const lastSpaceIdx = wordFull.lastIndexOf(" ");
-	if (lastSpaceIdx == -1) return wordFull
+	if (lastSpaceIdx == -1) return wordFull;
 
-		result = wordFull.substring(0, wordFull.lastIndexOf(" "));
-	result = result.replace(/[\(\/].+/gi, '')
-	return result.trim()
+	// ?
+	//result = wordFull.substring(0, wordFull.lastIndexOf(" "));
+	result = wordFull;
+	result = result.replace(/[\(\/].+/gi, '').trim();
+	
+	//console.log('wordFull: ' + wordFull);
+	//console.log(result);
+
+	return result
 }
 
 // arrow up scroll
@@ -137,35 +143,38 @@ window.Helper_Speak = function(event, txt) {
 
 
 window.Helper_SliceHalfString = function(str) {
-	let partOne = ""
-	let partTwo = ""
+    let partOne = "";
+    let partTwo = "";
 
-	const matchTags = str.match(/<.+>/);
-	if (matchTags && matchTags.length > 0) {
-		partOne = matchTags[0]
-		partTwo = str.substr(partOne.length)
-		return {
-			p1: partOne,
-			p2: partTwo,
-			full: str
-		}
-	}
+    const closeBracketIndex = str.indexOf(')');
+    const slashIndex = str.indexOf('/');
 
-	const arr = str.split(" ");
-	if (arr.length === 1) {
-		partOne = str;
-		partTwo = ' /unknown/'
-	} else {
-		const mm = Math.floor(arr.length / 2)
-		for (let i = 0; i < mm; i++) {
-			partOne += arr[i] + " "
-		}
-		partTwo = str.substr(partOne.length)
-	}
+    // 1. Ưu tiên cắt theo dấu ')' nếu có
+    if (closeBracketIndex !== -1) {
+        partOne = str.substring(0, closeBracketIndex + 1).trim();
+        partTwo = str.substring(closeBracketIndex + 1).trim();
+    } 
+    // 2. Nếu không có ')', cắt trước dấu '/' IPA đầu tiên
+    else if (slashIndex !== -1) {
+        partOne = str.substring(0, slashIndex).trim();
+        partTwo = str.substring(slashIndex).trim();
+    } 
+    // 3. Dự phòng cho chuỗi chỉ gồm mỗi từ và nghĩa (không loại từ, không IPA)
+    else {
+        const arr = str.split(" ");
+        if (arr.length === 1) {
+            partOne = str;
+            partTwo = ' /unknown/';
+        } else {
+            const mm = Math.floor(arr.length / 2);
+            partOne = arr.slice(0, mm).join(" ");
+            partTwo = arr.slice(mm).join(" ");
+        }
+    }
 
-	return {
-		p1: partOne,
-		p2: partTwo,
-		full: str
-	}
-}
+    return {
+        p1: partOne,
+        p2: partTwo,
+        full: str
+    };
+};

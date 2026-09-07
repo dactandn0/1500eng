@@ -43,7 +43,7 @@
 				<span compile="quiz.current.p2"></span>
 			</div>
 			<div class="quiz-actions" ng-if="!quiz.answerShown">
-				<button type="button" class="btn btn-sm btn-quiz" ng-click="showQuizAnswer()">Show answer</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="showQuizAnswer();Index_Speak($event, quiz.current.p1)">Show answer</button>
 			</div>
 			<div class="quiz-actions" ng-if="quiz.answerShown">
 				<button type="button" class="btn btn-sm btn-outline-secondary" ng-click="quizKnown()">I knew it</button>

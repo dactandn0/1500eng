@@ -128,17 +128,17 @@ constant /'konstant/ (a) hằng số<br>\
 deem /di:m/ (v) cho rằng<br>\
 demonstrate /'demanstreit/ (v) chứng tỏ, chứng minh<br>\
 duration/ dju'reifan/ (n) thời gian<br>\
-enrolment /in'raulmant/ (n) ghi danh<br>\
-equivalent /i'kwivalant/ (n,a) tương đương<br>\
-evidence /'evidans/ (n) bằng chứng<br>\
+enrolment (n) /in'raulmant/  ghi danh<br>\
+equivalent (n,a) /i'kwivalant/  tương đương<br>\
+evidence (n) /'evidans/  bằng chứng<br>\
 exceed /ik'si:d/ (v) vượt quá<br>\
 Honours degree /'onaz di,gri:/ Bằng danh dự<br>\
-institution /insti'tjuJan/ (n) tổ chức<br>\
-mature /ma'tjua/ (a) trưởng thành<br>\
-merit /'merit/ (n) công trạng<br>\
+institution (n) /insti'tjuJan/  tổ chức<br>\
+mature (a) /ma'tjua/  trưởng thành<br>\
+merit (n) /'merit/  công trạng<br>\
 metropolitan /metra'politan/ (a) đô thị<br>\
 proficiency /pra'fifansi/ (n) sự thành thạo<br>\
-qualification /kwolifi'keiJan/ (n) trình độ<br>\
+qualification (n) /kwolifi'keiJan/  trình độ<br>\
 secondary /'sekandari/ (a) thứ cấp<br>\
 tuition /tju'ifan/ (n) học phí<br>\
 bubble /'bAbl/ (n) bong bóng<br>\

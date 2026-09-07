@@ -72,7 +72,6 @@ Permanent /ˈpɜːr.mə.nənt/ Vĩnh viễn<br>\
 Profession /prəˈfeʃ.ən/ Chức nghiệp<br>\
 Professional growth /prəˈfɛʃənl ɡroʊθ/ Phát triển chuyên môn<br>\
 Promotion /prəˈmoʊ.ʃən/ Thăng tiến, Sự quảng bá<br>\
-Qualifications /ˌkwɑː.lə.fɪˈkeɪ.ʃənz/ Trình độ, bằng cấp<br>\
 Raise /reɪz/ Tăng lương<br>\
 Recruitment /rɪˈkruːt.mənt/ Tuyển dụng<br>\
 Redundancy /rɪˈdʌn.dən.si/ Thừa nhân lực<br>\
@@ -100,7 +99,7 @@ Work environment /wɜːrk ɪnˈvaɪər.ən.mənt/ Môi trường làm việc<br>
 Work permit /wɜːrk ˈpɜːrmɪt/ Giấy phép làm việc<br>\
 Work-life balance /work-laɪf ˈbæl.əns/ Cân bằng công việc và cuộc sống<br>\
 Work-life boundaries /wɜːrk-laɪf ˈbaʊn.dər.i/ Giới hạn giữa công việc và cuộc sống<br>\
-Work-life integration /wɜːrk-laɪf ɪntɪˈɡreɪʃən/ Hòa nhập công việc và cuộc sống<br>\
+Work-life integration (n) /wɜːrk-laɪf ɪntɪˈɡreɪʃən/ Hòa nhập công việc và cuộc sống<br>\
 Work-related injury /wɜːrk-rɪˈleɪ.tɪd ˈɪn.dʒər.i/ Chấn thương liên quan đến công việc<br>\
 Workforce /ˈwɜːrk.fɔːrs/ Lực lượng lao động<br>\
 Workforce diversity /ˈwɜːrk.fɔːrs daɪˈvɜːrs.ə.ti/ Đa dạng nhân lực<br>\

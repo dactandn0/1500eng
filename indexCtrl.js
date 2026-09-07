@@ -347,8 +347,9 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				Helper_GG_API($http, touchedWord).then(res => {
 					const vietnamese = res.data[0][0][0];
 					doShowToast((isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + vietnamese + result.full, isLongText, touchedWord);
+					GOOGLE_ERROR_SHOWN = false; // reset
 				}, err => {
-					// Chỉ alert 1 lần trong lần chạy website này
+					// Chỉ alert 1 lần đến khi API get OK
 					if (!GOOGLE_ERROR_SHOWN) {
 						GOOGLE_ERROR_SHOWN = true;
 						doShowToast('Google Translate API Error!', false, "");

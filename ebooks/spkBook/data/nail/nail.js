@@ -196,220 +196,188 @@ const AMERICAN_NAIL_DATA = [{
 		en: "\
 	Hỏi thăm chung & Thời tiết<br>\
 	<br>\
-	How's your day going so far?<br>\
-	Tech: How's your day going so far?<br>\
-	Client: Pretty good, just running a few errands before coming here.<br>\
-	Tech: How's your day going so far?<br>\
-	Client: It's been super busy at work, so I'm glad to finally sit down and relax.<br>\
+	Q: How's your day going so far?<br>\
+	A: Pretty good, just running a few errands before coming here.<br>\
+	Q: How's your day going so far?<br>\
+	A: It's been super busy at work, so I'm glad to finally sit down and relax.<br>\
 	<br>\
-	Do you have any fun plans for the weekend?<br>\
-	Tech: Do you have any fun plans for the weekend?<br>\
-	Client: Yes, we're going camping up in the mountains.<br>\
-	Tech: Do you have any fun plans for the weekend?<br>\
-	Client: Not really, just planning to catch up on sleep.<br>\
+	Q: Do you have any fun plans for the weekend?<br>\
+	A: Yes, we're going camping up in the mountains.<br>\
+	Q: Do you have any fun plans for the weekend?<br>\
+	A: Not really, just planning to catch up on sleep.<br>\
 	<br>\
-	It's getting pretty warm/cold outside, isn't it?<br>\
-	Tech: It's getting pretty warm outside, isn't it?<br>\
-	Client: I know, I had to turn the AC on in my car today!<br>\
-	Tech: It's getting pretty cold outside, isn't it?<br>\
-	Client: Yes! I heard it might rain tomorrow too.<br>\
+	Q: It's getting pretty warm outside, isn't it?<br>\
+	A: I know, I had to turn the AC on in my car today!<br>\
+	Q: It's getting pretty cold outside, isn't it?<br>\
+	A: Yes! I heard it might rain tomorrow too.<br>\
 	<br>\
 	Hỏi về Công việc & Gia đình<br>\
 	<br>\
-	Are you taking a break from work today?<br>\
-	Tech: Are you taking a break from work today?<br>\
-	Client: Yeah, I took an early lunch break to get my nails done.<br>\
-	Tech: Are you taking a break from work today?<br>\
-	Client: Actually, today is my day off!<br>\
+	Q: Are you taking a break from work today?<br>\
+	A: Yeah, I took an early lunch break to get my nails done.<br>\
+	Q: Are you taking a break from work today?<br>\
+	A: Actually, today is my day off!<br>\
 	<br>\
-	Any big plans for the upcoming holidays?<br>\
-	Tech: Any big plans for the upcoming holidays?<br>\
-	Client: We're flying out to Texas to visit family.<br>\
-	Tech: Any big plans for the upcoming holidays?<br>\
-	Client: Just hosting a small dinner party at home.<br>\
+	Q: Any big plans for the upcoming holidays?<br>\
+	A: We're flying out to Texas to visit family.<br>\
+	Q: Any big plans for the upcoming holidays?<br>\
+	A: Just hosting a small dinner party at home.<br>\
 	<br>\
-	Do you have kids?<br>\
-	Tech: Do you have kids?<br>\
-	Client: Yes, I have two boys, five and seven years old.<br>\
-	Tech: Do you have kids?<br>\
-	Client: No kids yet, just two very spoiled dogs!<br>\
+	Q: Do you have kids?<br>\
+	A: Yes, I have two boys, five and seven years old.<br>\
+	Q: Do you have kids?<br>\
+	A: No kids yet, just two very spoiled dogs!<br>\
 	<br>\
 	Khen ngợi khách<br>\
 	<br>\
-	I love your outfit / purse / shoes!<br>\
-	Tech: I love your purse! Where did you get it?<br>\
-	Client: Thank you so much! I actually found it on sale at Target.<br>\
-	Tech: I love your shoes!<br>\
-	Client: Thanks! They're super comfortable for work.<br>\
+	Outfit / Purse / Shoes<br>\
+	Q: I love your purse! Where did you get it?<br>\
+	A: Thank you so much! I actually found it on sale at Target.<br>\
+	Q: I love your shoes!<br>\
+	A: Thanks! They're super comfortable for work.<br>\
 	<br>\
-	This color matches your skin tone so well!<br>\
-	Tech: This color matches your skin tone so well!<br>\
-	Client: Really? I was worried it might look too bright!<br>\
-	Tech: This color matches your skin tone so well!<br>\
-	Client: Thank you, I'm so glad I decided to try something new.<br>\
+	Q: This color matches your skin tone so well!<br>\
+	A: Really? I was worried it might look too bright!<br>\
+	Q: This color matches your skin tone so well!<br>\
+	A: Thank you, I'm so glad I decided to try something new.<br>\
 	<br>\
-	You have such pretty natural nails.<br>\
-	Tech: You have such pretty natural nails.<br>\
-	Client: Thank you! I've been taking cuticle oil seriously lately.<br>\
-	Tech: You have such pretty natural nails.<br>\
-	Client: Thanks, they used to break all the time before I started using strengthener.<br>\
+	Q: You have such pretty natural nails.<br>\
+	A: Thank you! I've been taking cuticle oil seriously lately.<br>\
+	Q: You have such pretty natural nails.<br>\
+	A: Thanks, they used to break all the time before I started using strengthener.<br>\
 	<br>\
 	II. Xử lý sự cố & Khiếu nại<br>\
 	<br>\
 	Khi khách phàn nàn về Mẫu/Màu<br>\
 	<br>\
-	If you don't like this shade, we can switch to another one right now.<br>\
-	Tech: If you don't like this shade, we can switch to another one right now.<br>\
-	Client: Yes please, this pink looks a bit too dark on my hands.<br>\
-	Tech: If you don't like this shade, we can switch to another one right now.<br>\
-	Client: Thank you, I think I want something a bit more nude instead.<br>\
+	Q: If you don't like this shade, we can switch to another one right now.<br>\
+	A: Yes please, this pink looks a bit too dark on my hands.<br>\
+	Q: If you don't like this shade, we can switch to another one right now.<br>\
+	A: Thank you, I think I want something a bit more nude instead.<br>\
 	<br>\
-	Let me know if you'd like to adjust the shape before I polish.<br>\
-	Tech: Let me know if you'd like to adjust the shape before I polish.<br>\
-	Client: Could you make the corners a little more rounded?<br>\
-	Tech: Let me know if you'd like to adjust the shape before I polish.<br>\
-	Client: They look great just like this, thank you!<br>\
+	Q: Let me know if you'd like to adjust the shape before I polish.<br>\
+	A: Could you make the corners a little more rounded?<br>\
+	Q: Let me know if you'd like to adjust the shape before I polish.<br>\
+	A: They look great just like this, thank you!<br>\
 	<br>\
-	I can fix that for you right away. No worries!<br>\
-	Tech: I can fix that for you right away. No worries!<br>\
-	Client: Thanks, I accidentally smudged my index finger on my purse.<br>\
-	Tech: I can fix that for you right away. No worries!<br>\
-	Client: Appreciate it, I just noticed this side is a bit uneven.<br>\
+	Q: I can fix that for you right away. No worries!<br>\
+	A: Thanks, I accidentally smudged my index finger on my purse.<br>\
+	Q: I can fix that for you right away. No worries!<br>\
+	A: Appreciate it, I just noticed this side is a bit uneven.<br>\
 	<br>\
 	Khi làm rát/đau hoặc chảy máu<br>\
 	<br>\
-	Ouch, I'm so sorry! Did that hurt?<br>\
-	Tech: Ouch, I'm so sorry! Did that hurt?<br>\
-	Client: A little bit, my cuticles are really sensitive today.<br>\
-	Tech: Ouch, I'm so sorry! Did that hurt?<br>\
-	Client: It's okay, just caught me by surprise.<br>\
+	Q: Ouch, I'm so sorry! Did that hurt?<br>\
+	A: A little bit, my cuticles are really sensitive today.<br>\
+	Q: Ouch, I'm so sorry! Did that hurt?<br>\
+	A: It's okay, just caught me by surprise.<br>\
 	<br>\
-	Let me put some antiseptic on it to make sure it's clean.<br>\
-	Tech: Let me put some antiseptic on it to make sure it's clean.<br>\
-	Client: Okay, thank you for checking.<br>\
-	Tech: Let me put some antiseptic on it to make sure it's clean.<br>\
-	Client: Thanks, it doesn't sting too bad.<br>\
+	Q: Let me put some antiseptic on it to make sure it's clean.<br>\
+	A: Okay, thank you for checking.<br>\
+	Q: Let me put some antiseptic on it to make sure it's clean.<br>\
+	A: Thanks, it doesn't sting too bad.<br>\
 	<br>\
-	I'll be extra gentle around this area.<br>\
-	Tech: I'll be extra gentle around this area.<br>\
-	Client: Thank you, I appreciate that.<br>\
-	Tech: I'll be extra gentle around this area.<br>\
-	Client: Sounds good, thank you so much.<br>\
+	Q: I'll be extra gentle around this area.<br>\
+	A: Thank you, I appreciate that.<br>\
+	Q: I'll be extra gentle around this area.<br>\
+	A: Sounds good, thank you so much.<br>\
 	<br>\
 	Khi móng bị hỏng sau đó<br>\
 	<br>\
-	I'm sorry to hear that. Let me fix that nail for you right now.<br>\
-	Tech: I'm sorry to hear that. Let me fix that nail for you right now.<br>\
-	Client: Thank you, I chipped it while opening a box at work.<br>\
-	Tech: I'm sorry to hear that. Let me fix that nail for you right now.<br>\
-	Client: Awesome, I really appreciate you squeezing me in.<br>\
+	Q: I'm sorry to hear that. Let me fix that nail for you right now.<br>\
+	A: Thank you, I chipped it while opening a box at work.<br>\
+	Q: I'm sorry to hear that. Let me fix that nail for you right now.<br>\
+	A: Awesome, I really appreciate you squeezing me in.<br>\
 	<br>\
-	Since it broke within 3 days, there's no charge for the fix.<br>\
-	Tech: Since it broke within 3 days, there's no charge for the fix.<br>\
-	Client: Oh, that's so nice of you! Thank you!<br>\
-	Tech: Since it broke within 3 days, there's no charge for the fix.<br>\
-	Client: Wow, great customer service, thank you so much!<br>\
+	Q: Since it broke within 3 days, there's no charge for the fix.<br>\
+	A: Oh, that's so nice of you! Thank you!<br>\
+	Q: Since it broke within 3 days, there's no charge for the fix.<br>\
+	A: Wow, great customer service, thank you so much!<br>\
 	<br>\
 	Khi khách chê đắt hoặc thắc mắc về giá cả<br>\
 	<br>\
-	The base price is $40, but since you added gel polish and nail art, it's an extra $15.<br>\
-	Tech: The base price is $40, but since you added gel polish and nail art, it's an extra $15.<br>\
-	Client: Ah, I see! That makes sense.<br>\
-	Tech: The base price is $40, but since you added gel polish and nail art, it's an extra $15.<br>\
-	Client: Got it, thanks for explaining the breakdown!<br>\
+	Q: The base price is $40, but since you added gel polish and nail art, it's an extra $15.<br>\
+	A: Ah, I see! That makes sense.<br>\
+	Q: The base price is $40, but since you added gel polish and nail art, it's an extra $15.<br>\
+	A: Got it, thanks for explaining the breakdown!<br>\
 	<br>\
-	I completely understand. Here is our menu with all the prices listed.<br>\
-	Tech: I completely understand. Here is our menu with all the prices listed.<br>\
-	Client: Okay, let me take a look before we decide on the service.<br>\
-	Tech: I completely understand. Here is our menu with all the prices listed.<br>\
-	Client: Thanks, I just wanted to make sure I knew the total beforehand.<br>\
+	Q: I completely understand. Here is our menu with all the prices listed.<br>\
+	A: Okay, let me take a look before we decide on the service.<br>\
+	Q: I completely understand. Here is our menu with all the prices listed.<br>\
+	A: Thanks, I just wanted to make sure I knew the total beforehand.<br>\
 	"
 	}, {
 		title: "Small Talk 2",
 		en: "\
 	Du lịch & Kỳ nghỉ (Travel & Vacation)<br>\
 	<br>\
-	How do you like the weather in Da Nang City?<br>\
-	Tech: How do you like the weather in Miami?<br>\
-	Client: It's amazing! So much warmer than back home in New York.<br>\
+	Q: How do you like the weather in Miami?<br>\
+	A: It's amazing! So much warmer than back home in New York.<br>\
 	<br>\
-	Are you going anywhere nice for the holidays?<br>\
-	Tech: Are you going anywhere nice for the holidays?<br>\
-	Client: Yes, we're taking a family trip to Hawaii next week!<br>\
+	Q: Are you going anywhere nice for the holidays?<br>\
+	A: Yes, we're taking a family trip to Hawaii next week!<br>\
 	<br>\
-	Is this set for a special occasion or just self-care?<br>\
-	Tech: Is this set for a special occasion or just self-care?<br>\
-	Client: I'm getting married this Saturday, so these are my wedding nails!<br>\
+	Q: Is this set for a special occasion or just self-care?<br>\
+	A: I'm getting married this Saturday, so these are my wedding nails!<br>\
 	<br>\
 	Ăn uống & Giải trí (Food, Movies & Shows)<br>\
 	<br>\
-	Have you tried that new restaurant down the street?<br>\
-	Tech: Have you tried that new restaurant down the street?<br>\
-	Client: Not yet, but I've heard their tacos are incredible!<br>\
+	Q: Have you tried that new restaurant down the street?<br>\
+	A: Not yet, but I've heard their tacos are incredible!<br>\
 	<br>\
-	Have you watched any good shows on Netflix lately?<br>\
-	Tech: Have you watched any good shows on Netflix lately?<br>\
-	Client: Oh, I just binged the new season of Stranger Things last night!<br>\
+	Q: Have you watched any good shows on Netflix lately?<br>\
+	A: Oh, I just binged the new season of Stranger Things last night!<br>\
 	<br>\
-	Do you have any recommendations for good coffee around here?<br>\
-	Tech: Do you have any recommendations for good coffee around here?<br>\
-	Client: Definitely check out the local cafe across the block, their lattes are great.<br>\
+	Q: Do you have any recommendations for good coffee around here?<br>\
+	A: Definitely check out the local cafe across the block, their lattes are great.<br>\
 	<br>\
 	Mẫu móng & Xu hướng (Nail Trends & Inspo)<br>\
 	<br>\
-	Did you bring a reference picture or do you want to choose from our book?<br>\
-	Tech: Did you bring a reference picture or do you want to choose from our book?<br>\
-	Client: I found this cute design on Pinterest, can you do something like this?<br>\
+	Q: Did you bring a reference picture or do you want to choose from our book?<br>\
+	A: I found this cute design on Pinterest, can you do something like this?<br>\
 	<br>\
-	Have you ever tried Chrome powder / Cat-eye before?<br>\
-	Tech: Have you ever tried Chrome powder before?<br>\
-	Client: No, I haven't! How does it work?<br>\
+	Chrome powder / Cat-eye before?<br>\
+	Q: Have you ever tried Chrome powder before?<br>\
+	A: No, I haven't! How does it work?<br>\
 	<br>\
-	Are you feeling a bold color today or keeping it natural?<br>\
-	Tech: Are you feeling a bold color today or keeping it natural?<br>\
-	Client: I think I want to try a bright red this time!<br>\
+	Q: Are you feeling a bold color today or keeping it natural?<br>\
+	A: I think I want to try a bright red this time!<br>\
 	<br>\
 	Chăm sóc móng & Tư vấn (Nail Care & Advice)<br>\
 	<br>\
 	Do your nails usually grow fast?<br>\
-	Tech: Do your nails usually grow fast?<br>\
-	Client: Yes, they grow like crazy! I have to come back every two weeks.<br>\
+	Q: Do your nails usually grow fast?<br>\
+	A: Yes, they grow like crazy! I have to come back every two weeks.<br>\
 	<br>\
-	Have you ever tried Dip Powder instead of Acrylic?<br>\
-	Tech: Have you ever tried Dip Powder instead of Acrylic?<br>\
-	Client: No, what's the difference between the two?<br>\
+	Q: Have you ever tried Dip Powder instead of Acrylic?<br>\
+	A: No, what's the difference between the two?<br>\
 	<br>\
 	Do you use cuticle oil at home?<br>\
-	Tech: Do you use cuticle oil at home?<br>\
-	Client: I always forget! I should probably start using it more often.<br>\
+	Q: Do you use cuticle oil at home?<br>\
+	A: I always forget! I should probably start using it more often.<br>\
 	<br>\
 	Thói quen & Tương tác cá nhân (Personal Habits)<br>\
 	<br>\
-	Are you right-handed or left-handed?<br>\
-	Tech: Are you right-handed or left-handed?<br>\
-	Client: I'm right-handed, so this hand gets beaten up a lot more!<br>\
+	Q: Are you right-handed or left-handed?<br>\
+	A: I'm right-handed, so this hand gets beaten up a lot more!<br>\
 	<br>\
-	Do you usually get both Mani and Pedi together?<br>\
-	Tech: Do you usually get both Mani and Pedi together?<br>\
-	Client: Yeah, I love getting the combo so I can just relax for an hour.<br>\
+	Q: Do you usually get both Mani and Pedi together?<br>\
+	A: Yeah, I love getting the combo so I can just relax for an hour.<br>\
 	<br>\
 	How often do you usually get your nails done?<br>\
-	Tech: How often do you usually get your nails done?<br>\
-	Client: Every three weeks, it's my favorite way to treat myself.<br>\
+	Q: How often do you usually get your nails done?<br>\
+	A: Every three weeks, it's my favorite way to treat myself.<br>\
 	<br>\
 	Nhắc nhở an toàn & Hướng dẫn (In-process Instructions)<br>\
 	<br>\
-	Could you relax your fingers a little bit for me?<br>\
-	Tech: Could you relax your fingers a little bit for me?<br>\
-	Client: Oh, sorry! I didn't realize I was holding them so stiff.<br>\
+	Q: Could you relax your fingers a little bit for me?<br>\
+	A: Oh, sorry! I didn't realize I was holding them so stiff.<br>\
 	<br>\
-	Please keep your hand flat inside the lamp.<br>\
-	Tech: Please keep your hand flat inside the lamp.<br>\
-	Client: Got it, am I putting it in far enough?<br>\
+	Q: Please keep your hand flat inside the lamp.<br>\
+	A: Got it, am I putting it in far enough?<br>\
 	<br>\
-	Be careful with your phone while the polish is drying!<br>\
-	Tech: Be careful with your phone while the polish is drying!<br>\
-	Client: Thanks for the warning, I almost smudged it!<br>\
+	Q: Be careful with your phone while the polish is drying!<br>\
+	A: Thanks for the warning, I almost smudged it!<br>\
 	"
 	}, {
 		title: "Texas",

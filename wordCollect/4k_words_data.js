@@ -1,7 +1,6 @@
- const word_4000_data = [
-{
-title:"4k Book1",
-en:"afraid (a) /əˈfreɪd/ sợ<br>\
+ const word_4000_data = [{
+ 	title: "4k Book1",
+ 	en: "afraid (a) /əˈfreɪd/ sợ<br>\
 agree with/about/on (v) /əˈɡriː/ đồng ý<br>\
 longevity (n) /lɔːnˈdʒevəti/ tuổi thọ, sự sống lâu<br>\
 focus (v) /ˈfəʊkəs/ tập trung<br>\
@@ -641,8 +640,9 @@ major (a) /ˈmeɪdʒər/ chính<br>\
 \
 \
 "
-},
-{ title:"4k Book2", en: "awful (a) tệ hại(very bad)<br>\
+ }, {
+ 	title: "4k Book2",
+ 	en: "awful (a) tệ hại(very bad)<br>\
 \
 \
 \
@@ -1138,8 +1138,9 @@ scholarship (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 \
 treasure (n) /ˈtreʒər/ kho báu<br>\
 masquerade (n,v) /mæskəˈreɪd/ ((n) dạ hội) hóa trang"
-},
-{ title:"4k Book3", en:"arise phát sinh<br>\
+ }, {
+ 	title: "4k Book3",
+ 	en: "arise (v) phát sinh<br>\
 broaden (v) /ˈbrɔːdn/ Mở rộng<br>\
 expand (v) /ɪkˈspænd/ Mở rộng<br>\
 hustle (n) /ˈhʌsl/ chen lấn, xô bồ<br>\
@@ -1217,13 +1218,11 @@ tusk /task/ (n) răng nanh, ngà voi<br>\
 urgently /3:dzǝntli/ (adv) khẩn cấp, gấp<br>\
 tease (n,v) /tiːz/ (n)người hay chọc, trêu chọc(tức)<br>\
 valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
-}
-] 
+ }]
 
- const word_4000_data_2 = [
-{
-title:"4k Book1",
-en:"healthcare (n) /ˈhelθ ker/ chăm sóc sức khỏe <br>\
+ const word_4000_data_2 = [{
+ 	title: "4k Book4",
+ 	en: "healthcare (n) /ˈhelθ ker/ chăm sóc sức khỏe <br>\
 population (n)  /pɑːpjuˈleɪʃn/ dân số (số nhiều = nhóm dân số) <br>\
 industrialisation (n) /ɪnˌdʌstriələˈzeɪʃn/ công nghiệp hóa <br>\
 historical (a) /hɪˈstɔːrəkl/ lịch sử<br>\
@@ -1798,8 +1797,7 @@ offense (n) /əˈfens/ tội lỗi<br>\
 overlook (v) /ˌəʊ.vəˈlʊk/ bỏ qua<br>\
 repay (v) /rɪˈpeɪ/ trả lại<br>\
 satisfactory (adj) /ˌsæt.ɪsˈfæk.tər.i/ thỏa đáng<br>\
-shepherd (n) /ˈʃep.əd/ người chăn cừu<br>\
+shepherd (n) /ˈʃep.əd/ người chăn cừu\
 "
 
-}
-]
+ }]

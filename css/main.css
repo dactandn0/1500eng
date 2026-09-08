@@ -486,8 +486,7 @@ input:focus {
 }
 
 .vocabulary-row {
-  display: grid;
-  grid-template-columns: 2rem 2.8rem minmax(0, 1fr);
+  display: flex;
   align-items: center;
   gap: 0.45rem;
   min-height: 2.75rem;
@@ -499,6 +498,7 @@ input:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   min-width: 2rem;
   height: 2rem;
   padding: 0 0.45rem;
@@ -518,20 +518,8 @@ input:focus {
   border-color: #e5c96f;
 }
 
-.vocabulary-example {
-  gap: 0.25rem;
-  color: #23639a;
-  background: #edf6ff;
-  border: 1px solid #cfe3f6;
-}
-
-.vocabulary-example:hover {
-  color: #174c7b;
-  background: #dceeff;
-  border-color: #a9cfee;
-}
-
 .vocabulary-word {
+  flex: 1;
   min-width: 0;
   color: #3d4c59;
   cursor: pointer;

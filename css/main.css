@@ -688,24 +688,6 @@ input:focus {
   margin-top: 0.8rem;
 }
 
-.settings-grid-trio {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 0.8rem;
-}
-
-.setting-card-compact {
-  padding: 0.7rem 0.8rem;
-}
-
-.setting-card-compact .setting-heading {
-  font-size: 0.85rem;
-}
-
-.setting-card-compact .setting-heading strong {
-  min-width: 2.2rem;
-  font-size: 0.75rem;
-}
-
 .setting-card {
   padding: 1rem;
   background: #ffffff;
@@ -1586,6 +1568,13 @@ input:focus {
     top: 70%;
   }
 
+  .top75 {
+    top: 75%;
+  }
+  .top80 {
+    top: 80%;
+  }
+
 
 
   /*override BS*/
@@ -1781,11 +1770,11 @@ input:focus {
   border-color: #d8b84e;
 }
 
-#toast-container .toast progress-bar {
+#toast-container .toast-progress {
   top: 0;
   bottom: auto;
   height: 4px;
-  background-color: #e6c96c;
+  background-color: #00faaf;
   border-radius: 12px 12px 0 0;
   opacity: 0.9;
 }
@@ -1800,17 +1789,6 @@ input:focus {
   border-radius: 6px;
   font-size: 0.68rem;
   line-height: 1.5;
-}
-
-.gg-badge {
-  display: inline-block;
-  padding: 0.05rem 0.35rem;
-  margin: 0 0.15rem;
-  color: #ffffff;
-  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
-  border-radius: 6px;
-  font-size: 0.72rem;
-  vertical-align: baseline;
 }
 
 .tan-drop-custom {
@@ -1931,8 +1909,7 @@ input[type="range"]:focus::-moz-range-thumb {
   }
 
   .settings-grid,
-  .settings-grid-secondary,
-  .settings-grid-trio {
+  .settings-grid-secondary {
     grid-template-columns: 1fr;
   }
 

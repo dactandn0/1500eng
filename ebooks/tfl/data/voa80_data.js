@@ -63,6 +63,31 @@ Sign-off<br>\
 <br>\
 For VOA Special English, I'm Alex Villarreal. You can read and listen to our program about business and other subjects at voaspecialenglish.com. And click on the classroom for interactive exercises for English learners.\
 	"
+},
+{
+	track:"04",
+	title:"Test of Big Space Rocket Set for Late 2012",
+	en:"This is VOA Special English Technology Report.<br>\
+<br>\
+An American space company says a powerful new rocket should be ready for a test launch by the end of next year. The company is Space Exploration Technologies, or SpaceX. Its new rocket is called the Falcon Heavy.<br>\
+<br>\
+Company officials say it will be able to transport satellites or spacecraft weighing up to fifty-three metric tons into orbit. That load weight is double the capacity of NASA space shuttles. The space agency is retiring its shuttles after thirty years.<br>\
+<br>\
+Elon Musk is the chief executive officer of SpaceX. He says fifty-three metric tons is more than the weight of a fully loaded Boeing 737 with one hundred thirty-six passengers, luggage and fuel. 'It's more payload capability than any space vehicle in history,' he says, 'apart from the Saturn Five.' NASA used Saturn Five rockets during its Apollo and Skylab programs in the nineteen sixties and seventies.<br>\
+<br>\
+A Saturn Five launched the Apollo 11 mission that landed the first humans on the moon in nineteen sixty-nine. The rockets were removed from service in nineteen seventy-three. But they remain the most powerful ever built.<br>\
+<br>\
+Elon Musk says the Falcon Heavy will be the second most powerful rocket ever. He says it was designed to do more than carry satellites and other equipment into space. He says the rocket was designed to meet NASA's ratings for human flight safety. So it could someday be used to carry astronauts and other travelers into space.<br>\
+<br>\
+Mr. Musk says the Falcon Heavy could also be used for missions like carrying a robotic lander to collect samples from Mars. He says a mission like that requires a great amount of lift capability. The lander has to reach Mars and still have enough fuel to return to Earth.<br>\
+<br>\
+The first launch is planned from the company's launch site at Vandenberg Air Force Base in California. A launch from Cape Canaveral, Florida, is expected in late twenty-thirteen or fourteen.<br>\
+<br>\
+In time, SpaceX hopes to launch ten Falcon Heavy rockets a year. It says the rocket should reduce launch costs to about two thousand dollars a kilogram. That is about one-tenth the cost of carrying loads into orbit on a space shuttle.<br>\
+<br>\
+SpaceX already has a billion-and-a-half-dollar deal with NASA to use a smaller rocket to transport cargo to the International Space Station. The rocket is the Falcon 9, and the deal is for after the two last shuttles -- Endeavour and Atlantis -- are retired this year.<br>\
+<br>\
+For VOA Special English, I'm Carolyn Presutti. For more ways to learn American English and stay informed every day, go to voaspecialenglish.com from your computer or mobile device."
 }
 
 

@@ -1770,9 +1770,10 @@ input:focus {
   border-color: #d8b84e;
 }
 
-#toast-container .toast-progress {
-  top: 0;
-  bottom: auto;
+#toast-container .toast progress-bar {
+  top: 0 !important;
+  bottom: auto !important;
+  left: 0;
   height: 4px;
   background-color: #00faaf;
   border-radius: 12px 12px 0 0;
@@ -1789,6 +1790,17 @@ input:focus {
   border-radius: 6px;
   font-size: 0.68rem;
   line-height: 1.5;
+}
+
+.gg-badge {
+  display: inline-block;
+  padding: 0.05rem 0.35rem;
+  margin: 0 0.15rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+  border-radius: 6px;
+  font-size: 0.72rem;
+  vertical-align: baseline;
 }
 
 .tan-drop-custom {

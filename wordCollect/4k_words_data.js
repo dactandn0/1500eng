@@ -1089,7 +1089,7 @@ minister (n) bộ trưởng<br>\
 \
 twin (n) con sinh đôi, (v) sinh đôi<br>\
 \
-accompany đi cùng (+to) (+by: passive)<br>\
+accompany (v) (+to) (+by: passive) đi cùng<br>\
 bare (a) trần truồng<br>\
 cast (n,v) ném, liệng, diễn viên<br>\
 \

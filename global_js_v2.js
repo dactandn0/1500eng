@@ -142,12 +142,24 @@ window.Helper_Speak = function(event, txt) {
 
 
 
+// Tìm ký tự ch đầu tiên nằm NGOÀI các thẻ <...> (tránh '/' trong tag đóng </x1x> do highlight chèn vào)
+function sliceIndexOutsideTags(str, ch) {
+    let inTag = false;
+    for (let i = 0; i < str.length; i++) {
+        const c = str[i];
+        if (c === '<') inTag = true;
+        else if (c === '>') inTag = false;
+        else if (c === ch && !inTag) return i;
+    }
+    return -1;
+}
+
 window.Helper_SliceHalfString = function(str) {
     let partOne = "";
     let partTwo = "";
 
-    const closeBracketIndex = str.indexOf(')');
-    const slashIndex = str.indexOf('/');
+    const closeBracketIndex = sliceIndexOutsideTags(str, ')');
+    const slashIndex = sliceIndexOutsideTags(str, '/');
 
     // 1. Ưu tiên cắt theo dấu ')' nếu có
     if (closeBracketIndex !== -1) {

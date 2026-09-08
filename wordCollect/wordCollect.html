@@ -35,26 +35,60 @@
 		</div>
 
 		<div ng-if="!quiz.finished">
-			<div class="quiz-progress">Question {{quiz.index + 1}} / {{quiz.items.length}} <span>Score: {{quiz.score}}</span></div>
-			<div class="quiz-question">
-				<span compile="quiz.current.p1"></span>
+			<div class="quiz-progress">Question {{quiz.index + 1}} / {{quiz.items.length}} <span>Score: {{quiz.score}} &middot; Streak: {{quiz.streak}}</span></div>
+			<div class="quiz-direction" ng-if="quiz.direction === 'en-vi'">EN &rarr; VI &middot; Pick the correct meaning</div>
+			<div class="quiz-direction" ng-if="quiz.direction === 'vi-en'">VI &rarr; EN &middot; Pick the correct word</div>
+			<div class="quiz-direction" ng-if="quiz.direction === 'listen'">LISTEN &middot; Hear the word, pick the correct answer</div>
+			<div class="quiz-question" ng-if="quiz.direction !== 'listen'">
+				<span compile="quiz.current.p1" ng-if="quiz.direction === 'en-vi'"></span>
+				<span ng-if="quiz.direction === 'vi-en'">{{quiz.questionText}}</span>
+				<button type="button" class="quiz-speak" ng-if="quiz.direction === 'en-vi'" ng-click="quizSpeak($event)" title="Listen" aria-label="Listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
 			</div>
-			<div class="quiz-answer" ng-if="quiz.answerShown">
-				<span compile="quiz.current.p2"></span>
+			<div class="quiz-listen" ng-if="quiz.direction === 'listen'">
+				<button type="button" class="quiz-listen-btn" ng-click="quizSpeak($event)" title="Tap to listen" aria-label="Tap to listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+				<span>Tap to listen, then pick A&ndash;D</span>
 			</div>
-			<div class="quiz-actions" ng-if="!quiz.answerShown">
-				<button type="button" class="btn btn-sm btn-quiz" ng-click="showQuizAnswer();Index_Speak($event, quiz.current.p1)">Show answer</button>
+			<div class="quiz-options">
+				<button type="button" class="quiz-option"
+					ng-repeat="opt in quiz.options track by $index"
+					ng-click="answerQuiz($index)"
+					ng-disabled="quiz.answered"
+					ng-class="{'is-correct': quiz.answered && $index === quiz.correctIdx, 'is-wrong': quiz.answered && $index === quiz.picked && $index !== quiz.correctIdx}">
+					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
+					<span class="quiz-option-text">{{opt.display}}<span class="quiz-option-meaning" ng-if="quiz.answered && quiz.direction === 'vi-en'"> &ndash; {{opt.meaning}}</span></span>
+				</button>
 			</div>
-			<div class="quiz-actions" ng-if="quiz.answerShown">
-				<button type="button" class="btn btn-sm btn-outline-secondary" ng-click="quizKnown()">I knew it</button>
-				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextQuiz()">Next</button>
+			<div class="quiz-feedback is-good" ng-if="quiz.answered && quiz.picked === quiz.correctIdx">
+				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct! Keep the streak going.
+			</div>
+			<div class="quiz-feedback is-bad" ng-if="quiz.answered && quiz.picked !== quiz.correctIdx">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+				<span>Not quite. Correct answer: <strong>{{quiz.correctHead}}</strong><span ng-if="quiz.correctMeaning"> &ndash; {{quiz.correctMeaning}}</span></span>
+			</div>
+			<div class="quiz-actions" ng-if="quiz.answered">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextQuiz()">
+					{{quiz.index + 1 >= quiz.items.length ? 'See results' : 'Next'}}
+				</button>
 			</div>
 		</div>
 
 		<div class="quiz-finished" ng-if="quiz.finished">
-			<strong>Review complete</strong>
-			<span>You marked {{quiz.score}} of {{quiz.items.length}} words as known.</span>
-			<button type="button" class="btn btn-sm btn-quiz" ng-click="startQuiz()">Try again</button>
+			<strong>Quiz complete</strong>
+			<span>Score: {{quiz.score}} / {{quiz.items.length}} &middot; Best streak: {{quiz.bestStreak}}</span>
+			<div class="quiz-wrong-list" ng-if="quiz.wrong.length">
+				<div class="quiz-wrong-title">Review your mistakes ({{quiz.wrong.length}}):</div>
+				<div class="quiz-wrong-item" ng-repeat="w in quiz.wrong track by $index">
+					<strong>{{w.head}}</strong><span>{{w.meaning}}</span>
+				</div>
+			</div>
+			<div class="quiz-actions quiz-finished-actions">
+				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="quiz.wrong.length" ng-click="retryWrongQuiz()">Retry mistakes</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="startQuiz()">New quiz</button>
+			</div>
 		</div>
 	</div>
 

@@ -394,7 +394,7 @@ This is your station for easy listening, KABC. The time right now is going on 5:
 	en:"1.<br>\
 Thank you for calling Cinema World. Our box office opens every afternoon at 2:30. Today in Cinema A, we are showing Holiday in Rome, starring Gina Jones. Show times are 3:40, 5:45, 7:55, and 10:15.<br>\
 2.<br>\
-In Cinema B we are showing Hong Kong Warrior. Show times are 4:30, 6:40, 8:30, and 10:45. Don't forget to visit our new coffee bar located next to Cinema B. It's open every day from 2:30<br>\
+In Cinema B we are showing HongKong Warrior. Show times are 4:30, 6:40, 8:30, and 10:45. Don't forget to visit our new coffee bar located next to Cinema B. It's open every day from 2:30<br>\
 to 10:30.<br>\
 3.<br>\
 In Cinema C we are showing Ralph the Rabbit. Show times are 3:00, 4:40, 6:30, and 8:15. Also, at 10 o'clock, tonight only, a sneak preview of Crazy Cops, Hollywood's latest comedy–action<br>\
@@ -2799,7 +2799,7 @@ New York has great museums, and so does Washington. But Washington feels more se
 2<br>\
 Los Angeles is a huge place. You need a car to get around. San Francisco is more beautiful and it’s a great place for a weekend, but I get bored there after a few days. I enjoy the fact that in Los Angeles everything moves really fast. I love living here.<br>\
 3<br>\
-Hong Kong may be more beautiful than Singapore because it’s got that fantastic harbor, but I like Singapore better. It’s smaller, so I think it’s more comfortable. It’s easy to get around and everything is very clean. Hong Kong is pretty polluted and it’s always very crowded. <br>\
+HongKong may be more beautiful than Singapore because it’s got that fantastic harbor, but I like Singapore better. It’s smaller, so I think it’s more comfortable. It’s easy to get around and everything is very clean. HongKong is pretty polluted and it’s always very crowded. <br>\
 4<br>\
 Melbourne is smaller than Sydney. It has a lot of lovely old buildings and great restaurants. Sydney is more exciting and probably more beautiful, but I think it’s too busy and too expensive. Melbourne prices are better and it’s a more relaxing place. That’s why I prefer Melbourne."
 	,vi:"1<br>\

@@ -33,15 +33,12 @@ flash card (n) /ˈflæʃ kɑːd/ thẻ ghi nhớ<br>\
 file holder (n) /faɪlˈhəʊl.dər/ tập hồ sơ<br>\
 file cabinet (n) /ˈfaɪl kæb.ɪ.nət/ tủ đựng tài liệu<br>\
 felt pen (n) /felt pen/ bút dạ<br>\
-rubber (n) /ˈrʌb.ər/ cục tẩy<br>\
 duster (n) /ˈdʌs.tər/ khăn lau bảng<br>\
-dossier (n) /ˈdɒs.i.eɪ/ hồ sơ<br>\
 dictionary (n) /ˈdɪk.ʃən.ər.i/ từ điển<br>\
 desk (n) /desk/ bàn học, bàn làm việc<br>\
 compass (n) /ˈkʌm.pəs/ com-pa<br>\
 coloured pencil (n) /ˈkʌl.əd ˈpen.səl/ bút chì màu<br>\
 clamp (n) klæmp/ kẹp<br>\
-carbon paper (n) /ˈkɑː.bən peɪ.pər/ giấy than<br>\
 binder (n) /ˈbaɪn.dər/ bìa rời (báo, tạp chí)<br>\
 beaker (n) /ˈbiː.kər/ cốc bêse<br>\
 backpack (n) /ˈbækpækər/ ba lô<br>\
@@ -82,7 +79,6 @@ set the alarm (v) /set ðə ə’lɑ:m/ đặt chuông báo thức<br>\
 shave (v) /∫eiv/ cạo râu<br>\
 study (v) /ˈstʌd.i/ học tập, nghiên cứu<br>\
 surf the internet (v) /sɜːf ðiː ˈɪn.tə.net/ lướt mạng<br>\
-take the rubbish out (v) /teik ðə ‘rʌbiʃ aut/ đi đổ rác<br>\
 drink (v) /driɳk/ uống(v), đồ uống (n)<br>\
 turn off (v) /tɜrn ɒf/ tắt<br>\
 wake up (v) /weik λp/ tỉnh giấc<br>\
@@ -122,9 +118,7 @@ crab (n)/kræb/ cua",
 },
 {
 title:"number",
-en:"cardinal number (n) /ˈkɑr·dən·əl ˈnʌm·bər/ số đếm<br>\
-ordinal number (n) /ˈɔr·dən·əl ˈnʌm·bər/ số thứ tự<br>\
-decimal (n) /ˈdes.ɪ.məl/ số thập phân<br>\
+en:"decimal (n) /ˈdes.ɪ.məl/ số thập phân<br>\
 fraction (n) /ˈfræk.ʃən/ phân số<br>\
 percentage (n) /pəˈsen.tɪdʒ/ phần trăm<br>\
 arithmetic adj/n /əˈrɪθ.mə.tɪk/ số học<br>\
@@ -163,7 +157,6 @@ cash (n) /kæʃ/ tiền mặt<br>\
 money (n) /ˈmʌn.i/ tiền<br>\
 basket (n) /ˈbɑː.skɪt/ rổ, giỏ<br>\
 bag (n) /bæɡ/ túi<br>\
-greengrocer (n) /ˈɡriːŋ.ɡrəʊ.sər/ cửa hàng bán rau quả<br>\
 housewares (n) /ˈhaʊs.weəz/ đồ gia dụng<br>\
 toy store (n) /tɔɪ stɔːr/ cửa hàng đồ chơi<br>\
 grocery store (n) /ˈɡrəʊ.sər.i stɔːr/ cửa hàng tạp hóa<br>\
@@ -189,7 +182,6 @@ curtain (n) /ˈkɜː.tən/ rèm<br>\
 bed (n) /bed/ giường<br>\
 mirror (n) /ˈmɪr.ər/ gương<br>\
 cushion (n) /ˈkʊʃ.ən/ đệm<br>\
-wardrobe (n) /ˈwɔː.drəʊb/ tủ quần áo<br>\
 fitted carpet (n) /fɪt.ɪd ˈkɑː.pɪt/ thảm lót sàn<br>\
 dressing table (n) /ˈdres.ɪŋ teɪ.bəl/ bàn trang điểm<br>\
 wallpaper (n) /ˈwɔːlpeɪ.pər/ giấy dán tường<br>\
@@ -215,7 +207,6 @@ en:"classmate (n) /ˈklɑːs.meɪt/ bạn cùng lớp<br>\
 schoolmate (n) /ˈskuːl.meɪt/ bạn cùng trường<br>\
 roommate (n) /ˈruːm.meɪt/ bạn cùng phòng<br>\
 soulmate (n) /ˈsəʊl.meɪt/ tri kỷ<br>\
-comradeship (n) /ˈkɒm.reɪd.ʃɪp/ tình bạn, tình đồng chí<br>\
 partner (n) /ˈpɑːt.nər/ cộng sự<br>\
 associate (n) /əˈsəʊ.si.eɪt/ bạn đồng liêu, đồng minh<br>\
 ally (n) /ˈæl.aɪ/ đồng minh<br>\
@@ -254,7 +245,6 @@ dish rack (n) /ˈdɪʃ ræk/ khay để ráo chén đĩa<br>\
 sponge (n) /spʌndʒ/ bọt biển<br>\
 chopstick (n) /ˈtʃɒp.stɪk/ đũa<br>\
 pan (n) /pæn/ chảo<br>\
-cooker (n) /ˈkʊk.ər/ bếp, nồi nấu<br>\
 mug (n) /mʌɡ/ cốc lớn<br>\
 kettle (n) /ˈket.əl/ ấm đun nước<br>\
 glass (n) /ɡlɑːs/ ly<br>\
@@ -274,8 +264,6 @@ rolling pin (n) /ˈroʊ.lɪŋ pɪn/ <br>\
 measuring spoon (n) /ˈmɛʒərɪŋ spun/ muỗng (đo để nêm gia vị)<br>\
 wooden spoon /ˈwʊdən spun/thìa gỗ<br>\
 strainer /ˈstreɪ.nɚ/ ray lọc<br>\
-steak hammer (n) /steɪk ˈhæmər/bít tết<br>\
-mesh skimmer (n) /mɛʃ ˈskɪmər/ lưỡi skimmer<br>\
 cleaver (n) /ˈkliː.vɚ/chẻ<br>\
 ladle (n) /ˈleɪ.dəl/muôi múc canh <br>\
 kitchen shears (n) /ˈkɪʧən ʃirz/ kéo làm bếp<br>\
@@ -291,35 +279,27 @@ title:"jewellery",
 en:"earring (n) /ˈɪə.rɪŋ/ bông tai<br>\
 necklace (n) /ˈnek.ləs/ dây chuyền<br>\
 bracelet (n) /ˈbreɪ.slət/ vòng tay<br>\
-brooch (n) /brəʊtʃ/ trâm cài<br>\
 hair clip (n) /ˈheə klɪp/ kẹp tóc<br>\
 wedding ring (n) /ˈwed.ɪŋ rɪŋ/ nhẫn cưới<br>\
 jeweller (n) /ˈdʒuː.ə.lɚ/ thợ kim hoàn<br>\
 jewellery store (n) /ˈdʒuː.əl.ri stɔː r/ cửa hàng trang sức<br>\
-anklet (n) /ˈæŋ.klət/ vòng chân<br>\
 noble (a) /ˈnəʊ.bəl/ quý<br>\
 luxurious (a) /lʌɡˈʒʊə.ri.əs/ sang trọng, xa hoa<br>\
 suitable (a) /ˈsuː.tə.bəl/ phù hợp, thích hợp<br>\
 twinkle (v) /ˈtwɪŋ.kəl/ lấp lánh<br>\
 bead (n) /biːd/ hạt (của chuỗi hạt)<br>\
 hair tie (n) /ˈheə taɪ/ dây buộc tóc<br>\
-pocket watch (n) /ˈpɒk.ɪt wɒtʃ/ đồng hồ bỏ túi<br>\
-tiepin (n) /ˈtaɪ.pɪn/ ghim cà vạt<br>\
 precious stone (n) /preʃ.əs ˈstəʊn/ đá quý",
 }
 ,{
 title:"environment",
 en:"land (n) /lænd/ đất, đất đai<br>\
 logging (n) /ˈlɔːɡɪŋ/ phá rừng<br>\
-diurnal (a) /daɪˈɜːrnl/ loài sống ban ngày<br>\
 nocturnal (a) /nɑːkˈtɜːrnl/ loài sống về đêm<br>\
 migratory (a) /ˈmaɪɡrətɔːri/ di cư<br>\
 habitat (n) /ˈhæbɪtæt/ môi trường sống<br>\
 extend (v) /ɪkˈstend/ mở rộng<br>\
-terrestrial (a) /təˈrestriəl/ loài trên cạn<br>\
-aquatic (a) /əˈkwɑːtɪk/ loài sống ở nước<br>\
 restore (v) /rɪˈstɔːr/ khôi phục<br>\
-felling (n) /felling/ đốn ngã<br>\
 pollutant (n) /pəˈluːtənt/ chất gây ô nhiễm<br>\
 sanctuary (n) /ˈsæŋktʃueri/ khu bảo tồn<br>\
 erode (v) /ɪˈrəʊd/ xói mòn, ăn mòn<br>\
@@ -347,7 +327,6 @@ pollution (n) /pǝ'lu:fn/ sự ô nhiễm<br>\
 deforestation (n) /di: fori'stein/ nạn phá rừng<br>\
 climate change (n) /'klamat tfernd3/ sự biến đổi khí hậu<br>\
 natural resource (n) /'nætfral ri's:s/ tài nguyên tự nhiên<br>\
-desertification (n) /di z3:tifi'kexfn/ sự sa mạc hóa<br>\
 desert (n) /ˈdezərt/ sa mạc<br>\
 endangered (a) /in'deindzǝd/ gặp nguy hiểm<br>\
 sustainability (n) /sa steina 'bulati/ sự bền vững<br>\
@@ -376,7 +355,6 @@ ceiling (n) /ˈsiː.lɪŋ/ trần nhà<br>\
 clock (n) /klɒk/ đồng hồ treo tường<br>\
 frame (n) /freɪm/ khung (ảnh, cửa)<br>\
 lampshade (n) /ˈlæmp.ʃeɪd/ chụp đèn<br>\
-mantelpiece (n) /ˈmæn.təl.piːs/ bệ lò sưởi<br>\
 painting (n) /ˈpeɪn.tɪŋ/ bức tranh<br>\
 remote control (n) rɪməʊt kənˈtrəʊl/ điều khiển từ xa<br>\
 speaker (n) /ˈspiː.kər/ loa<br>\
@@ -385,7 +363,6 @@ stereo system (n) /ˈster.i.əʊ ˈsɪs.təm/ dàn máy hát (có loa)<br>\
 stereo (n) /ˈster.i.əʊ/ máy xtê-rê-ô<br>\
 television (n) /ˈtel.ɪ.vɪʒ.ən/ ti vi<br>\
 vase (n) /vɑːz/ cái bình, lọ<br>\
-wall unit (n) /wɔːl ˈjuː.nɪt/ tủ tường<br>\
 calendar (n) /ˈkæl.ən.dər/ lịch<br>\
 fan (n) /fæn/ cái quạt<br>\
 chair (n) /tʃeər/ cái ghế<br>\
@@ -440,7 +417,6 @@ merge (v) /mɜːdʒ/ sát nhập<br>\
 helpline (n) /ˈhelp.laɪn/ đường dây trợ giúp<br>\
 hard disk (n) /ˈhɑːd dɪsk/ ổ cứng<br>\
 software (n) /ˈsɒft.weər/ phần mềm<br>\
-cd-rom (n) /siː.diːˈrɒm/ đĩa cd dữ liệu<br>\
 toolbar (n) /ˈtuːl.bɑːr/ thanh công cụ<br>\
 database (n) /ˈdeɪ.tə.beɪs/ cơ sở dữ liệu<br>\
 hacker (n) /ˈhæk.ər/ tin tặc<br>\
@@ -449,14 +425,12 @@ copy (v) /ˈkɒp.i/ sao chép<br>\
 computer (n) /kəmˈpjuː.tər/ máy vi tính<br>\
 laptop (n) /ˈlæp.tɒp/ máy tính xách tay 28<br>\
 file (n) /faɪl/ tệp, tập tin<br>\
-disk drive (n) /ˈdɪsk draɪv/ ổ đĩa<br>\
 battery (n) /ˈbæt.ər.i/ pin<br>\
 click (n) /klɪk/ nhấp chuột<br>\
 type (n) /taɪp/ đánh chữ, gõ chữ<br>\
 mouse (n) /maʊs/ con chuột<br>\
 mice (n) plural of mouse<br>\
 keyboard (n) /ˈkiː.bɔːd/ bàn phím<br>\
-mouse mat (n) /ˈmaʊs mæt/ miếng lót chuột<br>\
 shut down (v) /ʃʌt daʊn/ tắt máy<br>\
 folder (n) /ˈfəʊl.dər/ thư mục<br>\
 program (n) /ˈprəʊ.ɡræm/ chương trình<br>\
@@ -509,7 +483,6 @@ dry cleaner (n) /draɪˈkliː.nə/ tiệm giặt ủi<br>\
 shoe store (n) /ʃuːstɔːr/ tiệm giày<br>\
 barbershop (n) /ˈbɑː.bə.ʃɒp/ tiệm cắt tóc nam<br>\
 newspaper kiosk (n) /ˈnjuːzpeɪ.pər ˈkiː.ɒsk/ sạp báo<br>\
-bookstall (n) /ˈbʊk.stɔːl/ quầy bán sách<br>\
 sports center (n) /ˈspɔːrts sentər/ trung tâm thể thao<br>\
 display (n,v) /dɪˈspleɪ/ trưng bày"
 },
@@ -521,7 +494,6 @@ applaud (v) /əˈplɔːd/ vỗ tay (tán thưởng)<br>\
 perform (v) /pəˈfɔːm/ trình diễn, biểu diễn<br>\
 exhibit (n) /ɪɡˈzɪb.ɪt/ vật triển lãm<br>\
 art gallery (n) /ˈɑːt ɡæl.ər.i/ phòng triển lãm<br>\
-chamber music (n) /ˈtʃeɪm.bə mjuː.zɪk/ nhạc thính phòng<br>\
 casino (n) /kəˈsiː.nəʊ/ sòng bạc<br>\
 pub (n) /pʌb/ quán rượu<br>\
 concert hall (n) /ˈkɒn.sət hɔːl/ phòng hoà nhạc",
@@ -533,7 +505,6 @@ traveler (n) /ˈtrævələr/ du khách<br>\
 travel agent (n) /ˈtræv.əl eɪ.dʒənt/ đại lý (công ty) du lịch<br>\
 vacation (n) /veɪˈkeɪ.ʃən/ kỳ nghỉ<br>\
 flight (n) /flaɪt/ chuyến bay<br>\
-voyage (n) /ˈvɔɪ.ɪdʒ/ chuyến hải hành<br>\
 relax (v) /rɪˈlæks/ thư giãn<br>\
 cancel (v) /ˈkæn.səl/ hủy bỏ<br>\
 homestay (n) /ˈhəʊm.steɪ/ (dịch vụ) lưu trú tại nhà dân bản địa<br>\
@@ -559,7 +530,6 @@ moon (n) /muːn/ trăng<br>\
 cake (n) /keɪk/ bánh ngọt<br>\
 toy (n) /tɔɪ/ đồ chơi<br>\
 mask (n) /mɑːsk/ mặt nạ<br>\
-banyan (n) /ˈbæn.jæn/ cây đa<br>\
 lantern (n) /ˈlæn.tən/ lồng đèn<br>\
 bamboo (n) /bæmˈbuː/ tre<br>\
 celebrate (v) /ˈselɪbreɪt/ làm kỷ niệm, làm lễ<br>\
@@ -596,7 +566,6 @@ lacrosse (n) /ləˈkrɒs/ bóng vợt<br>\
 hockey (n) /ˈhɒk.i/ khúc côn cầu<br>\
 dart (n) /dɑːrt/ ném phi tiêu<br>\
 synchronized swimming (n) /ˈsɪŋ.krə.naɪzd ˈswɪm.ɪŋ/ bơi nghệ thuật<br>\
-sea games (n) /ˈsiː ɡeɪmz/ đại hội thể thao đông nam á<br>\
 host (v) /hoʊst/ đăng cai, tổ chức<br>\
 wushu (n) /ˈwuː.ʃuː/ (môn) võ wushu<br>\
 sportsmanship (n) /ˈspɔːrts.mənʃɪp/ tinh thần thể thao<br>\
@@ -649,13 +618,11 @@ newlywed (n) /ˈnjuː.li.wed/ người mới cưới<br>\
 emblem (n) /ˈem.bləm/ biểu tượng<br>\
 congratulation (n) /kənɡrætʃ.əˈleɪ.ʃən/ lời chúc mừng<br>\
 jewelry (n) /ˈdʒuː.əl.ri/ trang sức<br>\
-dowry (n) /ˈdaʊ.ri/ của hồi môn<br>\
 honeymoon (n) /ˈhʌn.i.muːn/ tuần trăng mật<br>\
 engaged (v) /ɪnˈɡeɪdʒd/ đã đính ước, hứa hôn<br>\
 couple (n) /ˈkʌp.əl/ cặp đôi, đôi vợ chồng<br>\
 wife (n) /waɪf/ vợ<br>\
-ceremony (n) /ˈser.ɪ.mə.ni/ nghi lễ, nghi thức<br>\
-betroth (v) /bɪˈtrəʊð/ hứa hôn, đính hôn",
+ceremony (n) /ˈser.ɪ.mə.ni/ nghi lễ, nghi thức"
 }
 ,
 {
@@ -730,7 +697,6 @@ low blood pressure (n) // huyết áp thấp<br>\
 sore throat (n) /sɔːr ˈθrəʊt/ viêm họng<br>\
 sprain (n) /spreɪn/ bong gân<br>\
 malaria (n) /məˈleriə/ sốt rét<br>\
-scabies (n) /ˈskeɪbiːz/ bệnh ghẻ<br>\
 scab (n) /ˈskeɪb/ bệnh ghẻ<br>\
 smallpox (n) /ˈsmɔːlpɑːks/ bệnh đậu mùa<br>\
 heart attack (n) /hɑːrt əˈtæk/ nhồi máu cơ tim<br>\
@@ -742,14 +708,12 @@ depression (n) /dɪˈpreʃn/ trầm cảm<br>\
 hypertension (n) /haɪ.pəˈten.ʃən/ huyết áp cao<br>\
 measles (n) /ˈmiːzlz/ bệnh sởi<br>\
 migraine (n) /ˈmaɪɡreɪn/ đau nửa đầu<br>\
-mumps (n) /mʌmps/ bệnh quai bị<br>\
-rheumatism (n) /ˈruːmətɪzəm/ bệnh thấp khớp",
+mumps (n) /mʌmps/ bệnh quai bị"
 },
 {
 	title:"vegetable",
 	en:"tomato (n) /təˈmɑːtəʊ/ cà chua<br>\
 spinach (n) /ˈspɪnɪtʃ/ rau chân vịt<br>\
-water spinach (n) /ˈwɔːtə(r) ˈspɪnɪtʃ/ rau muống<br>\
 thai basil (n) /taɪ ˈbæz.əl/ húng quế<br>\
 eggplant (n) /ˈeɡplɑːnt/ cà tím<br>\
 beet (n) /biːt/ củ cải đường<br>\
@@ -757,21 +721,14 @@ pepper (n) /ˈpepə(r)/ ớt<br>\
 cauliflower (n) /’kɔliflauə/ súp lơ<br>\
 cilantro (n) /sɪˈlæn.trəʊ/ rau mùi<br>\
 marrow (n) /ˈmærəʊ/ bí ngô<br>\
-fish mint (n) /ˈfɪʃ mɪnt/ diếp cá<br>\
-rice paddy (n) /ˈraɪs pæd.i/ ngò ôm<br>\
-batata (n) /bæ’tɑ:tə/ khoai lang<br>\
 asparagus (n) /əˈspærəɡəs/ măng tây<br>\
 mustard leaves (n) /ˈmʌstəd li:vz/ cải bẹ xanh<br>\
-pumpkin buds (n) /ˈpʌmp.kɪn bʌdz/ bông bí<br>\
 pumpkin (n) /ˈpʌmpkɪn/ bí đỏ<br>\
-pepper-elder (n) /ˈpepə ˈeldə(r)/ rau càng cua<br>\
 onion (n) /’ʌniən/ củ hành<br>\
-cress (n) /kres/ rau cải xoong<br>\
 celery (n) /ˈseləri/ cần tây<br>\
 potato (n) /pəˈteɪtəʊ/ khoai tây<br>\
 carrot (n) /ˈkærət/ cà rốt<br>\
-artichoke (n) /’ɑ:tit∫ouk/ cây atiso<br>\
-beetroot (n) /’bi:tru:t/ củ dền",
+artichoke (n) /’ɑ:tit∫ouk/ cây atiso"
 },
 {
 	title:"time",
@@ -788,7 +745,6 @@ morning (n) /ˈmɔːnɪŋ/ buổi sáng<br>\
 afternoon (n) /æf.tɚˈnuːn/ buổi chiều<br>\
 evening (n) /ˈiːnɪŋ/ buổi tối<br>\
 midnight (n) /ˈmɪd.naɪt/ nửa đêm<br>\
-aestivation (n) sự ngủ hè<br>\
 dusk (n) /dʌsk/ hoàng hôn<br>\
 dawn (n) /dɑːn/ bình minh",
 },
@@ -806,13 +762,11 @@ caravan (n) /ˈkærəvæn/ xe nhà di động<br>\
 moped (n) /ˈməʊped/ xe máy có bàn đạp<br>\
 bus (n) xe buýt<br>\
 taxi (n) /ˈtæksi/ xe taxi<br>\
-tube (n) /tuːb/ ống, tàu điện ngầm ở london<br>\
 underground (a,adv,n) /ʌndərˈɡraʊnd/ tàu điện ngầm, dưới lòng đất<br>\
 subway (n) /ˈsʌbweɪ/ tàu điện ngầm<br>\
 high-speed train (n) tàu cao tốc<br>\
 railway train (n) /ˈreɪlweɪ/ tàu hỏa<br>\
 ferry (n) phà<br>\
-hovercraft (n) /ˈhʌvərkræft/ tàu đệm khí<br>\
 speedboat (n) tàu siêu tốc<br>\
 ship (n) tàu thủy<br>\
 boat (n) /bəʊt/ thuyền<br>\
@@ -823,8 +777,6 @@ rowing boat (n) thuyền có mái chèo<br>\
 airplane, plane (n) máy bay<br>\
 helicopter (n) /ˈhelɪkɑːptər/ trực thăng<br>\
 hot-air balloon (n) khinh khí cầu<br>\
-glider (n) /ˈɡlaɪdər/ tàu lượn<br>\
-propeller plane (n) /prəˈpelər pleɪn/ máy bay động cơ cánh quạt<br>\
 station (n) /ˈsteɪʃn/ ga tàu, trạm"
 },
 {
@@ -844,14 +796,12 @@ fork (n) /fɔːrk/ ngã ba, cái nĩa<br>\
 toll (n) /toʊl/ lệ phí qua đường, qua cầu<br>\
 toll road (n) /toʊl roʊd/ đường có thu phí<br>\
 motorway (n) /ˈmoʊtərweɪ/ xa lộ<br>\
-hard shoulder (n) /hɑːrd ˈʃoʊldə/ vạt đất cạnh xa lộ để dừng xe<br>\
 dual carriageway (n) /duːəl ˈkærɪdʒweɪ/ xa lộ hai chiều<br>\
 one-way street (n) /wʌn weɪ striːt/ đường một chiều<br>\
 t-junction (n) /tiːˈdʒʌŋkʃn/ ngã ba<br>\
 roundabout (n) /ˈraʊndəbaʊt/ bùng binh<br>\
 accident (n) /ˈæksɪdənt/ tai nạn<br>\
 breathalyser (n) /ˈbreθəlaɪzər/ thiết bị kiểm tra độ cồn trong hơi thở<br>\
-traffic warden (n) /ˈtræfɪk ˈwɔːrdn/ nhân viên kiểm soát đỗ xe<br>\
 parking-meter (n) /ˈpɑːrkɪŋ ˈmiːtər/ đồng hồ đỗ xe<br>\
 car park (n) /kɑːr pɑːrk/ bãi đỗ xe<br>\
 parking space (n) /ˈpɑːrkɪŋ speɪs/ chỗ đỗ xe<br>\
@@ -869,7 +819,6 @@ speeding fine (n) /ˈspiːdɪŋ faɪn/ phạt tốc độ<br>\
 level crossing (n) /ˈlevl ˈkrɔːsɪŋ/ chỗ chắn tàu<br>\
 jump leads (n) /dʒʌmp liːdz/ dây sạc điện<br>\
 diesel (n) /ˈdiːzl/ dầu diesel<br>\
-petrol (n) /ˈpetrəl/ xăng<br>\
 unleaded (a) /ʌnˈledɪd/ không chì<br>\
 petrol pump (n) /ˈpetrəl pʌmp/ bơm xăng<br>\
 driver (n) /ˈdraɪvər/ tài xế<br>\
@@ -980,12 +929,9 @@ courageous /kǝ'reidzǝs/ can đảm<br>\
 loyal /'bial/ trung thành<br>\
 imperative (a) /ɪmˈperətɪv/ bắt buộc<br>\
 endure (v) /ɪnˈdʊr/ việc làm, hành vi (a)<br>\
-feat (n,a) /fiːt/ một thành tựu kỳ tích<br>\
 modest /'mpdist/ khiêm tốn<br>\
-unmerciful /ʌn'mз:siful/ nhẫn tâm<br>\
 attentive /ǝ'tεntiv/ ân cần <br>\
 imaginative /'mædginativ/ giàu trí tưởng tượng<br>\
-plucky /'plʌki/ dũng cảm<br>\
 easy-going /'i:zi gǝvin/ dễ dãi<br>\
 careless /'keǝlis/ cẩu thả<br>\
 messy (a) /'mεsi/ bừa bộn<br>\
@@ -993,7 +939,6 @@ hard-working /'ha:d w3:kin/ chăm chỉ<br>\
 polite /pǝ'lart/ lịch sự<br>\
 creative /kri(:)'eitiv/ sáng tạo<br>\
 broad-minded /bb:d-'mandid/ nghĩ rộng<br>\
-placid /'plæsid/ điềm tĩnh<br>\
 helpful /'helpful/ hữu ích <br>\
 persistent /pǝ'sistant/ kiên trì<br>\
 sensible /'sɛnsǝbl/ lý trí<br>\
@@ -1001,7 +946,6 @@ rational /'ræfǝnl/ lý trí<br>\
 reserved /ri'zз:vd/ kín đáo<br>\
 self-confident /self-konfident/ tự tin<br>\
 bossy /'bpsi/ hống hách<br>\
-blackguardly /'blæga:dli/ đều cảng<br>\
 silly (a) /'sili/ ngớ ngẩn<br>\
 in a silly way (adv) ngớ ngẩn<br>\
 shy /jai/ nhút nhát<br>\
@@ -1060,10 +1004,6 @@ mineral water (n) /ˈmɪn.ər.əl ˈwɔː.tər/ nước khoáng",
 	en:"lotus (n) /ˈloʊtəs/ hoa sen<br>\
 lily (adv) /ˈlɪli/ hoa loa kèn<br>\
 poppy (n) /ˈpɒp.i/ hoa anh túc<br>\
-bougainvillea (n) /buː.ɡənˈvɪl.i.ə/ hoa giấy<br>\
-gerbera flower (n) /ˈɡɜːr.bər.ə ˈflaʊ.ər/ hoa đồng tiền<br>\
-tuberose (n) /ˈtuː.bəroʊz/ hoa huệ<br>\
-apricot blossom (n) /ˈeɪ.prɪ.kɒt ˈblɒs.əm/ hoa mai<br>\
 dahlia (n) /ˈdeɪ.li.ə/ hoa thược dược<br>\
 jasmine (n) /ˈʤæzmɪn/ hoa lài<br>\
 sunflower (n) /ˈsʌnflaʊ.ər/ hoa hướng dương<br>\
@@ -1073,9 +1013,7 @@ rose (n) /roʊz/ hoa hồng<br>\
 carnation (n) /kɑːrˈneɪ.ʃən/ hoa cẩm chướng<br>\
 cherry blossom (n) /ˈtʃɛr.i ˈblɒs.əm/ hoa anh đào<br>\
 poinsettia (n) /pɔɪnˈsɛtiə/ hoa trạng nguyên<br>\
-flamboyant (n) /flæmˈbɔɪənt/ hoa phượng<br>\
-hibiscus (n) /hɪˈbɪs.kəs/ hoa dâm bụt<br>\
-peach blossom (n) /piːtʃ ˈblɒs.əm/ hoa đào",
+hibiscus (n) /hɪˈbɪs.kəs/ hoa dâm bụt"
 },
 {
 	title:"movie",
@@ -1100,17 +1038,14 @@ movie ticket (n) /ˈmuː.vi ˈtɪk.ɪt/ vé xem phim",
 	title:"football",
 	en:"stadium (n) /ˈsteɪdiəm/ sân vận động<br>\
 stand (n) /stænd/ khán đài<br>\
-pitch (n) /pɪʧ/ sân<br>\
 touchline (n) /ˈtʌtʃ.laɪn/ đường biên<br>\
 penalty area (n) /ˈpɛnəlti ˈɛriə/ khu phạt đền<br>\
 goal (n) /goʊl/ khung thành<br>\
 penalty (n) /ˈpɛnəlti/ phạt đền<br>\
 corner kick (n) /ˈkɔːr.nər kɪk/ cú đá phạt góc<br>\
 free kick (n) /friː ˈkɪk/ đá phạt trực tiếp<br>\
-indirect free kick (n) /ɪn.daɪˈrɛkt friː ˈkɪk/ đá phạt gián tiếp<br>\
 kick off (v) /ˈkɪk .ɔːf/ bắt đầu, lăn bóng<br>\
 offside (n) /ɒfˈsaɪd/ việt vị<br>\
-corner flag (n) /ˈkɔːr.nər flæɡ/ cờ cắm tại góc sân bóng đá<br>\
 the bench (n) /ðə bɛnʧ/ băng ghế dự bị<br>\
 foul (n) /faʊl/ lỗi, pha phạm lỗi<br>\
 goal line (n) /ˈɡoʊl laɪn/ vạch kẻ (khung thành)<br>\
@@ -1123,14 +1058,12 @@ winger (n) /ˈwɪŋ.ər/ cầu thủ chạy biên<br>\
 referee (n) /rɛf.əˈriː/ trọng tài<br>\
 commentator (n) /ˈkɒm.ənteɪ.tər/ bình luận viên<br>\
 supporter (n) /səˈpɔːr.tər/ cổ động viên<br>\
-linesman (n) /ˈlaɪnz.mən/ trọng tài biên<br>\
 hooligan (n) /ˈhuː.lɪ.ɡən/ kẻ côn đồ, quá khích<br>\
 red card (n) /ˈrɛd kɑːrd/ thẻ đỏ<br>\
 yellow card (n) /ˈjɛl.oʊ kɑːrd/ thẻ vàng<br>\
 coach (n) /koʊtʃ/ huấn luyện viên<br>\
 reserve team (n) /rɪˈzɜːrv tiːm/ đội dự bị<br>\
 caution (n) /ˈkɔː.ʃən/ lời cảnh cáo<br>\
-stimulant (n) /ˈstɪm.jʊ.lənt/ chất kích thích<br>\
 strategy (n) /ˈstræt.ə.dʒi/ chiến lược<br>\
 striker (n) /ˈstraɪ.kər/ tiền đạo",
 },
@@ -1172,7 +1105,6 @@ lunch (n) /lʌntʃ/ bữa ăn trưa<br>\
 mint (n) /mɪnt/ bạc hà<br>\
 vanilla (n) /vəˈnɪl.ə/ vani<br>\
 candy (n) /ˈkæn.di/ kẹo<br>\
-tuck shop (n) cửa hàng bán đồ ăn vặt<br>\
 food kiosk (n) ki-ốt bán đồ ăn<br>\
 popcorn (n) /ˈpɒp.kɔːrn/ bỏng ngô<br>\
 snack (n) /snæk/ bữa ăn nhẹ<br>\
@@ -1216,7 +1148,6 @@ guitar (n) /ɡɪˈtɑːr/ đàn ghi-ta<br>\
 harmony (n) /ˈhɑːr.mə.ni/ hoà hợp, hòa âm<br>\
 melody (n) /ˈmɛl.ə.di/ giai điệu<br>\
 string (n) /strɪŋ/ dây đàn<br>\
-the brass (n) /ðə bræs/ dàn kèn đồng<br>\
 symphony (n) /ˈsɪm.fə.ni/ bản giao hưởng<br>\
 overture (n) /ˈoʊ.vər.tʃʊr/ khúc dạo đầu<br>\
 conductor (n) /kənˈdʌk.tər/ nhạc trưởng<br>\
@@ -1284,7 +1215,6 @@ linen (n) /ˈlɪnɪn/ vải lụa, vải sợi<br>\
 doorman (n) /ˈdɔːr.mən/ nhân viên gác cửa<br>\
 reception (n) /rɪˈsɛp.ʃən/ quầy lễ tân<br>\
 reservation (n) /rɛz.ərˈveɪ.ʃən/ sự đặt chỗ trước<br>\
-bellboy (n) /ˈbɛl.bɔɪ/ người trực tầng<br>\
 check out (v) /ˈtʃɛk aʊt/ trả phòng",
 },
 {
@@ -1337,7 +1267,6 @@ hot (a) /hɒt/ nóng<br>\
 wet (a) /wɛt/ ẩm ướt<br>\
 erratic (a) /ɪˈræt.ɪk/ thất thường<br>\
 thunder (n) /ˈθʌn.dər/ sấm<br>\
-hailstone (n) /ˈheɪl.stoʊn/ viên mưa đá<br>\
 downpour (n) /ˈdaʊn.pɔːr/ mưa lớn<br>\
 raincoat (n) /ˈreɪn.koʊt/ áo mưa<br>\
 rainbow (n) /ˈreɪn.boʊ/ cầu vồng<br>\
@@ -1429,7 +1358,6 @@ toe (n) /toʊ/ ngón chân",
 	en:"boarding school (n) ˈbɔːrd.ɪŋ skuːl/ trường nội trú<br>\
 public school (n) /ˈpʌb.lɪk skuːl/ trường công lập<br>\
 private school (n) /ˈpraɪ.vɪt skuːl/ trường tư thục<br>\
-secondary school (n) /ˈsɛk.əndɛr.i skuːl/ trường trung học cơ sở<br>\
 primary school (n) /ˈpraɪmɛr.i skuːl/ trường tiểu học<br>\
 university (n) /juː.nɪˈvɜːr.sə.ti/ trường đại học<br>\
 professor (n) /prəˈfɛs.ər/ giáo sư<br>\
@@ -1451,7 +1379,6 @@ learn (v) /lɜːrn/ học<br>\
 curriculum (n) /kəˈrɪk.jə.ləm/ chương trình giảng dạy<br>\
 course (n) /kɔːrs/ khóa học<br>\
 subject (n) /ˈsʌb.dʒɪkt/ môn học<br>\
-mark (n) /mɑːrk/ điểm số<br>\
 attendance (n) /əˈtɛn.dəns/ sự có mặt<br>\
 absence (n) /ˈæb.səns/ sự vắng mặt<br>\
 projector (n) /prəˈdʒɛk.tər/ máy chiếu<br>\
@@ -1470,7 +1397,6 @@ carnival (n) /ˈkɑːrnɪvl/ lễ hội<br>\
 mascot (n) /ˈmæskɑːt/ linh vật<br>\
 playground (n) /ˈpleɪ.ɡraʊnd/ sân chơi<br>\
 hall (n) /hɔːl/ hội trường, hành lang<br>\
-student hall (n) ký túc xá sinh viên<br>\
 dormitory (n) /ˈdɔːr.mɪ.tɔːr.i/ ký túc xá<br>\
 locker (n) /ˈlɒk.ər/ tủ có khoá<br>\
 lesson (n) /ˈlɛs.ən/ bài học<br>\
@@ -1536,18 +1462,13 @@ banana (n) /bəˈnæn.ə/ quả chuối<br>\
 plum (n) /plʌm/ quả mận<br>\
 papaya (n) /pəˈpaɪ.ə/ quả đu đủ<br>\
 avocado (n) /æv.əˈkɑː.doʊ/ quả bơ<br>\
-starfruit (n) /ˈstɑːrfruːt/ quả khế<br>\
 pineapple (n) /ˈpaɪnæp.əl/ quả dứa<br>\
 coconut (n) /ˈkoʊ.kənʌt/ quả dừa (+tree)<br>\
 raspberry (n) /ˈræzbɛr.i/ quả mâm xôi<br>\
 nectarine (n) /ˈnɛk.təriːn/ quả xuân đào<br>\
-mulberry (n) /ˈmʌlbɛr.i/ quả dâu tằm<br>\
 raisin (n) /ˈreɪ.zən/ nho khô<br>\
-jackfruit (n) /ˈdʒækfruːt/ quả mít<br>\
 persimmon (n) /pərˈsɪm.ən/ quả hồng<br>\
 dragon fruit (n) ˈdræɡ.ən fruːt/ quả thanh long<br>\
-custard apple (n) /ˈkʌs.tərd æp.əl/ quả na<br>\
-quince (n) /kwɪns/ quả mộc qua<br>\
 cherry (n) /ˈtʃɛr.i/ quả anh đào<br>\
 kiwi (n) /ˈkiː.wi/ quả kiwi<br>\
 pomegranate (n) /ˈpɒm.ɪɡræn.ɪt/ quả lựu<br>\
@@ -1555,14 +1476,11 @@ guava (n) /ˈɡwɑː.və/ quả ổi<br>\
 apricot (n) /ˈeɪ.prɪkɒt/ quả mơ<br>\
 blueberry (n) /ˈbluːbɛr.i/ quả việt quất<br>\
 durian (n) /ˈdʊr.i.ən/ quả sầu riêng<br>\
-lychee (n) /ˈlaɪ.tʃiː/ quả vải<br>\
-tamarind (n) /ˈtæm.ər.ɪnd/ quả me<br>\
-kumquat (n) ˈkʌm.kwɒt/ quả quất",
+lychee (n) /ˈlaɪ.tʃiː/ quả vải"
 },
 {
 	title:"animal",
 	en:"piglet (n) /ˈpɪɡ.lɪt/ lợn con<br>\
-sow (n) /saʊ/ lợn cái<br>\
 pig (n) /pɪɡ/ lợn<br>\
 duck (n) /dʌk/ vịt<br>\
 goat (n) /ɡoʊt/ dê<br>\
@@ -1581,7 +1499,6 @@ rabbit (n) /ˈræb.ɪt/ thỏ<br>\
 owl (n) /aʊl/ cú<br>\
 deer (n) /dɪr/ hươu, nai<br>\
 bat (n) bæt/ dơi<br>\
-mink (n) /mɪŋk/ chồn vizon<br>\
 monkey (n) /ˈmʌŋ.ki/ khỉ<br>\
 snake (n) /sneɪk/ rắn<br>\
 lizard (n) /ˈlɪz.ərd/ thằn lằn<br>\
@@ -1649,21 +1566,16 @@ flower (n) /ˈflaʊ.ər/ hoa<br>\
 grass (n) /ɡræs/ cỏ<br>\
 herb (n) /hɜːrb/ thảo mộc<br>\
 bush (n) /bʊʃ/ bụi cây, bụi rậm<br>\
-apple tree (n) /ˈæpəl triː/ cây táo<br>\
-shrubland (n) /ˈʃrʌblænd/ vùng cây bụi",
+apple tree (n) /ˈæpəl triː/ cây táo"
 },
 {
 	title:"seafood",
 	en:"herring (n) /ˈhɛr.ɪŋ/ cá trích<br>\
-skate (n,v) /skeɪt/ cá đuối, trượt ván<br>\
 salmon (n) /ˈsæmən/ cá hồi<br>\
-prawn (n) /prɔːn/ tôm<br>\
-cuttlefish (n) /ˈkʌtəl.fɪʃ/ mực nang<br>\
 lobster (n) /ˈlɒbstər/ tôm hùm<br>\
 squid (n) /skwɪd/ mực ống<br>\
 shrimp (n) /ʃrɪmp/ tôm<br>\
 oyster (n) /ˈɔɪ.stər/ hàu<br>\
-cockle (n) /ˈkɒk.əl/ sò<br>\
 scallop (n) /ˈskɒl.əp/ sò điệp<br>\
 fish (n) /fɪʃ/ cá (plural = fish)<br>\
 eel (n) /iːl/ lươn<br>\
@@ -1675,13 +1587,9 @@ jellyfish (n) /ˈdʒɛlifɪʃ/ sứa",
 	title:"energy",
 	en:"charcoal (n) /ˈtʃɑːrkoʊl/ than củi<br>\
 gasoline (n) /ˈɡæsəliːn/ xăng<br>\
-turbine (n) /ˈtɜr.baɪn/ tua-bin<br>\
 sun (n) /sʌn/ mặt trời, ánh sáng MT<br>\
-refinery (n) /rɪˈfaɪnəri/ nhà máy lọc<br>\
-nuclear reactor (n) /ˈnjuː.kliər riˈæktər/ lò phản ứng hạt nhân<br>\
 dam (n) /dæm/ đập (thủy điện)<br>\
 power plant (n) /ˈpaʊər plænt/ nhà máy điện<br>\
-transformer (n) /trænsˈfɔːrmər/ máy biến thế<br>\
 heat (n,v) /hiːt/ nhiệt, sức nóng (v)sưởi ấm, làm nóng<br>\
 natural gas (n) /ˈnætʃrəl ɡæs/ khí tự nhiên<br>\
 solar power (n) /ˈsoʊlər ˈpaʊər/ năng lượng mặt trời",
@@ -1701,7 +1609,6 @@ plumber (n) /ˈplʌm.ər/ thợ sửa chữa ống nước<br>\
 tailor (n) /ˈteɪ.lər/ thợ may<br>\
 copywriter (n) /ˈkɒp.iraɪ.tər/ người viết bài (quảng cáo)<br>\
 journalist (n) /ˈdʒɜː.nə.lɪst/ nhà báo<br>\
-grocer (n) /ˈɡroʊ.sər/ người bán tạp hóa<br>\
 clerk (n) /klɜrk/ người thư ký<br>\
 assistant (n) /əˈsɪs.tənt/ trợ lý<br>\
 model (n) /ˈmɒd.əl/ người mẫu<br>\
@@ -1711,14 +1618,12 @@ supervisor (n) /ˈsuː.pərvaɪ.zər/ giám sát viên<br>\
 sales manager (n) /seɪlz ˈmæn.ɪ.dʒər/ giám đốc kinh doanh<br>\
 production manager (n) /prəˈdʌk.ʃən ˈmæn.ɪ.dʒər/ giám đốc sản xuất<br>\
 mechanic (n) /məˈkæn.ɪk/ thợ cơ khí<br>\
-array (n) /əˈreɪ/ một loạt <br>\
 managing director (n) /ˈmæn.ɪ.dʒɪŋ dɪˈrɛktər/ giám đốc điều hành<br>\
 personal assistant (n) /ˈpɜː.sən.əl əˈsɪs.tənt/ trợ lý riêng<br>\
 hairdresser (n) /ˈhɛərdrɛs.ər/ thợ cắt tóc<br>\
 architect (n) /ˈɑːrkɪtɛkt/ kiến trúc sư<br>\
 engineer (n) /ɛn.dʒɪˈnɪər/ kỹ sư<br>\
 vet (n) /vɛt/ bác sĩ thú y<br>\
-shoemaker (n) /ˈʃuːmeɪ.kər/ thợ đóng giày<br>\
 translator (n) /trænzˈleɪ.tər/ biên dịch viên<br>\
 interpreter (n) /ɪnˈtɜː.prɪ.tər/ phiên dịch viên<br>\
 sanitation worker (n) /sænɪˈteɪ.ʃən ˈwɜːrkər/ lao công<br>\
@@ -1733,7 +1638,6 @@ farmer (n) /ˈfɑː.mər/ nông dân",
 regular (a) /ˈrɛɡ.jʊ.lər/ thường xuyên<br>\
 diabetes (n) /daɪəˈbiːtiːz/ bệnh tiểu đường<br>\
 dietitian (n) /daɪɪˈtɪʃən/ chuyên gia về dinh dưỡng<br>\
-goiter (n) /ˈɡɔɪtər/ bướu cổ<br>\
 body (n) /ˈbɒdi/ cơ thể<br>\
 dietary (a) /ˈdaɪətɛri/ (thuộc) chế độ ăn uống<br>\
 fat (a) /fæt/ mập<br>\
@@ -1769,7 +1673,6 @@ pavement (n) /ˈpeɪvmənt/ vỉa hè",
 equip (v) /ɪˈkwɪp/ trang bị<br>\
 express mail (n) /ɪkˈsprɛs meɪl/ thư chuyển phát nhanh<br>\
 graphic (a) /ˈɡræfɪk/ thuộc đồ họa<br>\
-messenger call service (n) /ˈmɛsɪndʒər kɔːl ˈsɜːrvɪs/ dịch vụ điện thoại<br>\
 parcel (n) /ˈpɑːrsəl/ bưu kiện, bưu phẩm<br>\
 press (n) /prɛs/ báo chí<br>\
 recipient (n) rɪˈsɪpiənt/ người nhận<br>\
@@ -1777,7 +1680,6 @@ secure (a) /sɪˈkjʊr/ (cảm giác) yên tâm, an toàn<br>\
 service (n) /ˈsɜːrvɪs/ dịch vụ<br>\
 spacious (a) /ˈspeɪʃəs/ rộng rãi<br>\
 subscribe (v) /səbˈskraɪb/ đặt mua<br>\
-surface mail (n) /ˈsɜːrfɪs meɪl/ thư gửi bằng đường bộ <br>\
 thoughtful (a) /ˈθɔːtfəl/ ân cần, chu đáo<br>\
 transfer (v) /trænsˈfɜːr/ chuyển<br>\
 transmit (v) /trænzˈmɪt/ truyền<br>\
@@ -1785,8 +1687,7 @@ well-trained (a) /wɛl treɪnd/ được đào tạo bài bản",
 },
 {
 	title:"banking",
-	en:"staff movements (n) /stæf ˈmuːvmənts/ luân chuyển nhân sự<br>\
-retire (v) /rɪˈtaɪər/ nghỉ hưu<br>\
+en:"retire (v) /rɪˈtaɪər/ nghỉ hưu<br>\
 dismiss (v) /dɪsˈmɪs/ sa thải<br>\
 finance (n) /ˈfaɪnæns/ tài chính<br>\
 appointment (n) /əˈpɔɪntmənt/ sự bổ nhiệm, cuộc hẹn<br>\
@@ -1796,7 +1697,6 @@ accountant (n) /əˈkaʊntənt/ nhân viên kế toán<br>\
 lend (v) /lɛnd/ cho vay<br>\
 borrow (v) /ˈbɒroʊ/ vay, mượn<br>\
 distribution (n) /dɪstrɪˈbjuːʃən/ sự phân phối, phân phát<br>\
-co-ordinate (v) /koʊˈɔrdəneɪt/ phối hợp, sắp xếp<br>\
 adapt (v) /əˈdæpt/ thích nghi<br>\
 accumulate (v) /əˈkjuːmjəleɪt/ tích lũy<br>\
 stock exchange (n) /stɒk ɪksˈʧeɪndʒ/ sàn giao dịch chứng khoán<br>\
@@ -1810,7 +1710,6 @@ responsible (a) /rɪˈspɒnsəbl/ chịu trách nhiệm<br>\
 communicate (v) /kəˈmjuːnɪkeɪt/ giao tiếp<br>\
 inheritance (n) /ɪnˈhɛrɪtəns/ sự thừa kế<br>\
 fortune (n) /ˈfɔrʧən/ tài sản, vận may<br>\
-cash machine (n) /kæʃ məˈʃiːn/ máy rút tiền<br>\
 online account (n) /ˈɒnlaɪn əˈkaʊnt/ tài khoản trực tuyến<br>\
 insurance policy (n) /ɪnˈʃʊrəns ˈpɒlɪsi/ hợp đồng bảo hiểm<br>\
 debit card (n) /ˈdɛbɪt kɑrd/ thẻ ghi nợ<br>\
@@ -1824,9 +1723,7 @@ charge (n,v) /ʧɑrdʒ/ phí, tiền phải trả (v) phạt<br>\
 outsource (v) /ˈaʊtsɔrs/ thuê ngoài<br>\
 grant (n) /ɡrænt/ trợ cấp, công nhận<br>\
 warehouse (n) /ˈwɛrhaʊs/ kho hàng<br>\
-in-house (a) /ˈɪnhaʊs/ tiến hành trong một tổ chức<br>\
 potential a/n /pəˈtɛnʃəl/ tiềm lực , tiềm tàng<br>\
-back-office (n) /bæk ˈɒfɪs/ văn phòng hành chính<br>\
 campaign (n) /kæmˈpeɪn/ chiến dịch<br>\
 insecurity (n) /ɪnsɪˈkjʊrɪti/ an ninh, sự oan toàn<br>\
 insurance provider (n) /ɪnˈʃʊrəns prəˈvaɪdər/ nhà cung cấp bảo hiểm<br>\
@@ -1837,16 +1734,7 @@ long-term gain (n) /ˈlɒŋtɜrm ɡeɪn/ tiền kiếm được dài hạn<br>\
 invoice (n) /ˈɪnvɔɪs/ hóa đơn<br>\
 bribery (n) /ˈbraɪbəri/ sự đút lót, hối lộ<br>\
 corrupt (v) /kəˈrʌpt/ tham nhũng<br>\
-balance of payment (n) /ˈbælɪns əv ˈpeɪmənt/ cán cân thanh toán quốc tế<br>\
-balance of trade (n) /ˈbælɪns əv treɪd/ cán cân thương mại<br>\
 budget (n) /ˈbʌdʒɪt/ ngân sách<br>\
-cost of borrowing (n) /kɒst əv ˈbɒroʊɪŋ/ chi phí vay<br>\
-consumer price index (n) /kənˈsumər praɪs ˈɪndɛks/ chỉ số giá tiêu dùng<br>\
-retail banking (n) /ˈriːteɪl ˈbæŋkɪŋ/ ngân hàng bán lẻ<br>\
-commercial bank (n) /kəˈmɜrʃəl bæŋk/ ngân hàng thương mại <br>\
-central bank (n) /ˈsɛntrəl bæŋk/ ngân hàng trung ương<br>\
-treasury (n) /ˈtrɛʒəri/ kho bạc<br>\
-investment bank (n) /ɪnˈvɛstmənt bæŋk/ ngân hàng đầu tư<br>\
 rely (v) /rɪˈlaɪ/ phụ thuộc, lệ thuộc [rely upon]<br>\
 reply (v) / /rɪˈplaɪ/ hồi đáp",
 },
@@ -1882,7 +1770,6 @@ condominium (n) chung cư<br>\
 semi-detached house (n) bán biệt lập<br>\
 villa (n) /ˈvɪlə/<br>\
 apartment (n) /əˈpɑːrtmənt/ căn hộ<br>\
-flat (a) phẳng, n. căn hộ, lốp xe xẹp<br>\
 convenient (a) /kənˈviːniənt/ thuận tiện<br>\
 natural light (n) ánh sáng tự nhiên"
 }

@@ -31,7 +31,6 @@ courtyard (n) /ˈkɔːrtjɑːrd/ sân, khu đất trống<br>\
 predator (n) /ˈpredətər/ động vật ăn thịt<br>\
 fig (n) /ˈdeɪli/ cây sung<br>\
 despite (prep) /dɪˈspaɪt/ cho dù [+ N/Ving]<br>\
-closest confidant (n) /ˈkɑːnfɪdænt/ người bạn tâm giao gần gũi nhất<br>\
 intimate (a) /ˈɪntɪmət/ thân mật<br>\
 ups and downs (n) /ʌps ən ˈdaʊnz/ thăng trầm<br>\
 growth (n) /ɡrəʊθ/ sự phát triển, sự tăng, phát dục<br>\
@@ -89,7 +88,6 @@ acquire (v) /əˈkwaɪər/ có được<br>\
 low-budget (a) /ˌloʊ ˈbʌdʒɪt/ ngân sách thấp<br>\
 science (n) /ˈsaɪəns/ khoa học<br>\
 scientific (a) /ˌsaɪənˈtɪfɪk/ có tính khoa học<br>\
-unaggressive (a) /ˌʌnəˈɡresɪv/ không hung hăng<br>\
 moment (n) /ˈmoʊmənt/ khoảnh khắc<br>\
 worsen (v) /ˈwɜːrsn/ trở nên xấu/tệ hơn<br>\
 established (a) /ɪˈstæblɪʃt/ uy tín, chứng thật<br>\
@@ -110,7 +108,6 @@ custom (n) /ˈkʌstəm/ phong tục<br>\
 solar (a) /ˈsəʊlər/ thuộc về mặt trời<br>\
 sticky (a) /ˈstɪki/ dính<br>\
 accumulation (n) /əˌkjuːmjəˈleɪʃn/ sự tích tụ<br>\
-exposured to (v) /məˈriːn/ tiếp xúc với<br>\
 marine (a) /məˈriːn/ hàng hải<br>\
 square (n,a) /skwer/ quảng trường (a) vuông<br>\
 declaration (n) /dekləˈreɪʃn/ Tuyên ngôn<br>\
@@ -121,14 +118,13 @@ vary (v) /ˈværi/ làm cho khác, làm thay đổi (differ)<br>\
 rave (v) /ˈreɪv/ cuồng nhiệt<br>\
 indispensable (a) /ɪndɪˈspensəbl/ không thể thiếu<br>\
 harmful (a) /ˈhɑːrmfl/ có hại<br>\
-advertistment (n) /ædvərˈtaɪzmənt/ quảng cáo<br>\
+advertisement (n) /ædvərˈtaɪzmənt/ quảng cáo<br>\
 environmental (a) /ɪnˌvaɪrənˈmentl/ môi trường<br>\
 darken (v) /ˈdɑːrkən/ trở nên tối, làm tối<br>\
 poison (n,v) /ˈpɔɪzn/ chất độc, bỏ độc, bị nhiễm độc<br>\
 publicity (n) sự công khai, quảng cáo<br>\
 mammal (n) /ˈmæml/ động vật có vú<br>\
 protest (n) /ˈprəʊtest/ cuộc biểu tình, sự chống lại<br>\
-platypus (n) /ˈplætɪpʊs/ thú mỏ vịt<br>\
 kangaroo (n) /kæŋɡəˈruː/ chuột túi<br>\
 relevant (a) /ˈreləvənt/ liên quan<br>\
 impression (n) /ɪmˈpreʃn/ ấn tượng<br>\
@@ -207,7 +203,6 @@ hurt (n,v) tổn thương<br>\
 judgment (n) /ˈdʒʌdʒmənt/ phán đoán<br>\
 likely (a) /ˈlaɪkli/ khả năng, rất có thể<br>\
 request (n) /rɪˈkwest/ yêu cầu<br>\
-reside (v) /rɪˈzaɪd/ cư trú<br>\
 result (n) /rɪˈzʌlt/ kết quả<br>\
 roll (v) /rəʊl/ lăn<br>\
 since (prep) /sɪns/ kể từ<br>\
@@ -233,7 +228,7 @@ announce (v) /əˈnaʊns/ thông báo, nhắc<br>\
 taste (n,v) /teɪst/ mùi vị, (v) thưởng thức<br>\
 claim (v) /kleɪm/ yêu cầu<br>\
 divide (v) /dɪˈvaɪd/ phân chia/ra, chia rẽ<br>\
-famous (n) /ˈfeɪməs/ nổi tiếng [big name]<br>\
+famous (a) /ˈfeɪməs/ nổi tiếng [big name]<br>\
 force (n,v) /fɔːrs/ lực lượng (v) đẩy, bắt ép<br>\
 harm (n) /hɑːrm/ gây hại<br>\
 against (prep, adv) /əˈɡenst/ chống lại<br>\
@@ -331,7 +326,6 @@ shape (n) /ʃeɪp/ hình dạng<br>\
 blood (n) /blʌd/ máu<br>\
 burn (n,v) bỏng, v. đốt, phát hỏa<br>\
 cell (n) tế bào<br>\
-hubcap (n) /ˈhʌbkæp/ chụp trục bánh xe<br>\
 correct (a,v) đúng, chính xác v. trách, phạt<br>\
 crop (n,v) /krɑːp/ (v) cắt, vật giặt hái, mùa giặt<br>\
 demand (n,v) nhu cầu, (v) cầu cứu, hỏi<br>\
@@ -350,7 +344,6 @@ structure (n) /ˈstrʌktʃər/ cấu trúc, vật kiến trúc<br>\
 whole (a) toàn bộ<br>\
 coach (n,v) toa xe, xe đò, huấn luyện viên v. tập dợt, đi xe ngựa<br>\
 \
-recollection (n) /rekəˈlekʃn/ ký ức [of + N/Ving]<br>\
 description (n) /dɪˈskrɪpʃn/ mô tả<br>\
 \
 \
@@ -370,7 +363,6 @@ across (prep) /əˈkrɔːs/ xuyên<br>\
 \
 characteristic (n) /kærəktəˈrɪstɪk/ đặc điểm(tính)<br>\
 consume (v) /kənˈsuːm/ tiêu thụ<br>\
-pagoda (n) /pəˈɡəʊdə/ chùa<br>\
 excite (v) kích thích<br>\
 extreme (a) /ɪkˈstriːm/ cực kỳ<br>\
 fear (n,v) sợ hãi<br>\
@@ -484,7 +476,6 @@ amaze (v) /əˈmeɪz/ kinh ngạc<br>\
 include (v) /ɪnˈkluːd/ bao gồm<br>\
 \
 mystery (n) /ˈmɪstəri/ bí ẩn<br>\
-mystic (a) /ˈmɪstɪk/ bí ẩn<br>\
 occur (v) xảy ra<br>\
 \
 \
@@ -665,7 +656,6 @@ spill (v) /spɪl/ làm tràn, làm ngập<br>\
 remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
 \
 statue (n) /ˈstætʃuː/ tượng<br>\
-statuette (n) /stætʃuˈet/ tượng nhỏ<br>\
 \
 \
 \
@@ -704,7 +694,6 @@ narrow (a) /ˈnærəʊ/ hẹp<br>\
 \
 \
 aesthetic (a) /esˈθetɪk/ tính thẩm mỹ<br>\
-Aesthetically pleasing (a) thẩm mỹ dễ chịu<br>\
 shade (n) bóng râm, tông màu<br>\
 \
 \
@@ -731,7 +720,6 @@ disappoint (v) /ˌdɪsəˈpɔɪnt/ thất vọng<br>\
 dive (v) /daɪv/ lặn<br>\
 \
 favor (n) /ˈfeɪvər/ ủng hộ<br>\
-in a lovely way (adv) đáng yêu<br>\
 mood (n) /muːd/ tâm trạng<br>\
 \
 \
@@ -772,14 +760,11 @@ achievement (n) /əˈtʃiːvmənt/ thành tích<br>\
 \
 capital (n) /ˈkæpɪtl/ thủ đô, vốn, chữ hoa<br>\
 cooperate (v) /kəʊˈɑːpəreɪt/ hợp tác<br>\
-inhibit (v) /ɪnˈhɪbɪt/ ngăn cản<br>\
 defend (v) bảo vệ<br>\
 defense (n) /dɪˈfens/ sự che chở, phòng thủ, bảo vệ<br>\
 intercept (v) /ɪntərˈsept/ chặn lại<br>\
 stabilize (v) /ˈsteɪbəlaɪz/ làm cho vững, ổn định<br>\
-intercepting (v) /ɪntərˈsept/ chặn lại<br>\
 inseparable (a) /ɪnˈseprəbl/ không thể tách rời<br>\
-myriad (n,a) /ˈmɪriəd/ vô số<br>\
 \
 \
 \
@@ -851,19 +836,15 @@ spin (v) quay<br>\
 phenomenon (n) hiện tượng (số nhiều: phenomena)<br>\
 phenomena (n) những hiện tượng (số ít: phenomenon)<br>\
 drain (n,v) hút, rút, tháo, làm cạn<br>\
-menial (n,a) người hầu, đầy tớ<br>\
 tutor (n) gia sư<br>\
 commit (v) /kəˈmɪt/ cam kết<br>\
-miniaturist (n) nhà tiểu họa<br>\
 dormitory (n) (plural dormitories) ký túc xá<br>\
-symptomatic (a) /sɪmptəˈmætɪk/ có triệu chứng<br>\
 exhaust (n)  /ɪɡˈzɔːst/ khí thải<br>\
 greenhouse (n) /ˈɡriːnhaʊs/ nhà kính<br>\
 \
 secretary (n) /ˈsekrəteri/ thư ký<br>\
 severe (a) /sɪˈvɪr/ nghiêm trọng<br>\
 talent (n) tài năng<br>\
-motivator (n) người thúc đẩy<br>\
 \
 uniform (n) đồng phục<br>\
 vision (n) tầm nhìn<br>\
@@ -912,7 +893,6 @@ labor (n,v) nhân công, làm lụng<br>\
 breed (n,v) /ˈbriːdɪŋ/ sinh sản, chăn nuôi, nòi, loại<br>\
 breeding (n) /ˈbriːdɪŋ/ sự sinh sản, chăn nuôi<br>\
 aspect (n) /ˈæspekt/ khía cạnh<br>\
-a great deal more going on (n) còn nhiều điều đang diễn ra<br>\
 hold on to (v) giữ chặt lấy<br>\
 \
 prime (a) xuất sắc,hảo hạng<br>\
@@ -1072,7 +1052,6 @@ surf (n,v) /sɜːrf/ bọt biển, lướt sóng(website)<br>\
 \
 \
 \
-cardinal (a) cốt yếu(phải làm)<br>\
 \
 \
 \
@@ -1106,7 +1085,7 @@ weigh (v) cân nặng<br>\
 \
 \
 \
-ferilizer (n) /ˈfɜːrtəlaɪzər/ phân bón<br>\
+fertilizer (n) /ˈfɜːrtəlaɪzər/ phân bón<br>\
 cloth (n) vải<br>\
 deserve (v) đáng thưởng<br>\
 \
@@ -1136,8 +1115,8 @@ former (a) /ˈfɔːrmər/ cũ, trước đây<br>\
 quarter (n) /ˈkwɔːrtər/ quý<br>\
 scholarship (n) /ˈskɑːlərʃɪp/ học bổng<br>\
 \
-treasure (n) /ˈtreʒər/ kho báu<br>\
-masquerade (n,v) /mæskəˈreɪd/ ((n) dạ hội) hóa trang"
+treasure (n) /ˈtreʒər/ kho báu"
+
  }, {
  	title: "4k Book3",
  	en: "arise (v) phát sinh<br>\
@@ -1146,38 +1125,16 @@ expand (v) /ɪkˈspænd/ Mở rộng<br>\
 hustle (n) /ˈhʌsl/ chen lấn, xô bồ<br>\
 bustle (n) /ˈbʌsl/ sự nhộn nhịp<br>\
 benefactor (n) /ˈbenɪfæktər/ người làm ơn<br>\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 preach (v) /priːtʃ/ giảng đạo<br>\
 prosper (v) /ˈprɑːspər/ phát đạt, thành công<br>\
 province (n) /ˈprɑːvɪns/ tỉnh<br>\
-\
-\
-\
 threaten (v) /ˈθretn/ mối de dọa<br>\
 compliment (n,v) khen ngợi<br>\
 complimentary (a) khen ngợi (+about)<br>\
 awkward (a) /ˈɔːkwərd/ ngượng ngùng<br>\
 deceive (v) /dɪˈsiːv/ lừa dối, ngoại tình, lừa phỉnh<br>\
 discourage (v) /dɪsˈkɜːrɪdʒ/ không khuyến khích, làm nản lòng<br>\
-\
-\
-\
-\
-\
 newcomer (n) /ˈnuːkʌmər/ người mới<br>\
-\
-\
-\
 ridiculous (a) /rɪˈdɪkjələs/ vô lý, tức cười<br>\
 \
 \
@@ -1205,7 +1162,6 @@ halt /ho:lt/ (n) = the end <br>\
 illegally /i'li:gǝli/ (adv) bất hợp pháp<br>\
 ivory /'aivǝri/ (n) ngà voi<br>\
 ornamental /,o:nǝ'mentl/(a) thuộc trang sức<br>\
-poacher /pautfǝ/ (n) thợ săn trộm <br>\
 poach /pautfǝ/ (n) săn trộm <br>\
 profitable /profitabl/ (a) có lợi nhuận<br>\
 pup /pɅp/ (n) con của số loài đ/vật<br>\
@@ -1214,7 +1170,6 @@ slaughter /'slǝ:tǝ/ (n) sự giết chóc <br>\
 species /'spi:fi:z/ (n) giống loài<br>\
 supposedly /sǝ'pauzidli/ (adv) được cho là<br>\
 tuna /'tju:nǝ/ (n) cá ngừ<br>\
-tusk /task/ (n) răng nanh, ngà voi<br>\
 urgently /3:dzǝntli/ (adv) khẩn cấp, gấp<br>\
 tease (n,v) /tiːz/ (n)người hay chọc, trêu chọc(tức)<br>\
 valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
@@ -1246,14 +1201,12 @@ frequency (n) /ˈfriːkwənsi/ tính lặp lại, tần số<br>\
 frontline (n) /ˈfrʌntlaɪn/ tiền tuyến<br>\
 newsfeed (n) nguồn cấp tin tức<br>\
 geographer (n) nhà địa lý<br>\
-palaeontologist (n) /ˌpeɪliɑːnˈtɑːlədʒɪst/ nhà cổ sinh vật học<br>\
 coal (n) /kəʊl/ than<br>\
 arid (a) /ˈærɪd/ khô cằn (very dry)<br>\
 ancient (a) /ˈærɪd/ khô cằn (very old)<br>\
 hectic (a) /ˈhektɪk/ bận rộn (very busy)<br>\
 critical (a) /ˈkrɪtɪkl/ cấp bách (very urgent)<br>\
 fragile (a) /ˈfrædʒl/ dễ vỡ (very delicate)<br>\
-blustery (a) /ˈblʌstəri/ gió mạnh (very windy)<br>\
 overcast (a) /əʊvərˈkæst/ u ám (very cloudy)<br>\
 scorching (a) /ˈskɔːrtʃɪŋ/ nóng như thiêu (very hot)<br>\
 freezing (a) /ˈfriːzɪŋ/ nóng như thiêu (very cold)<br>\
@@ -1388,7 +1341,6 @@ neither (det/pron/adv) /ˈnaɪ.ðər/ không<br>\
 otherwise (adv) /ˈʌð.ə.waɪz/ nếu không<br>\
 react (v) /riˈækt/ phản ứng<br>\
 ride (v/n) /raɪd/ đi xe<br>\
-situated (adj) /ˈsɪtʃ.u.eɪ.tɪd/ ở vị trí<br>\
 society (n) /səˈsaɪ.ə.ti/ xã hội<br>\
 standard (n/adj) /ˈstæn.dəd/ tiêu chuẩn<br>\
 actually (adv) /ˈæk.tʃu.ə.li/ thực sự<br>\
@@ -1454,7 +1406,6 @@ seek (v) /siːk/ tìm kiếm<br>\
 shine (v) /ʃaɪn/ tỏa sáng<br>\
 castle (n) /ˈkɑː.səl/ lâu đài<br>\
 command (n/v) /kəˈmɑːnd/ lệnh<br>\
-counsel (n/v) /ˈkaʊn.səl/ tư vấn<br>\
 ensure (v) /ɪnˈʃɔːr/ đảm bảo<br>\
 explosion (n) /ɪkˈspləʊ.ʒən/ vụ nổ<br>\
 monster (n) /ˈmɒn.stər/ quái vật<br>\
@@ -1607,16 +1558,12 @@ emphasize (v) /ˈem.fə.saɪz/ nhấn mạnh<br>\
 flu (n) /fluː/ cúm<br>\
 gesture (n) /ˈdʒes.tʃər/ cử chỉ<br>\
 interrupt (v) /ˌɪn.təˈrʌpt/ ngắt<br>\
-likeness (n) /ˈlaɪk.nəs/ giống<br>\
-moreover (adv) /mɔːrˈəʊ.vər/ hơn nữa<br>\
 recover (v) /rɪˈkʌv.ər/ phục hồi<br>\
 rely (v) /rɪˈlaɪ/ dựa vào<br>\
 shock (n/v) /ʃɒk/ sốc<br>\
 stare (v) /steər/ nhìn chằm chằm<br>\
-thus (adv) /ðʌs/ do đó<br>\
 aim (n/v) /eɪm/ mục tiêu<br>\
 bet (v/n) /bet/ cá cược<br>\
-carriage (n) /ˈkær.ɪdʒ/ xe kéo<br>\
 criticize (v) /ˈkrɪt.ɪ.saɪz/ chỉ trích<br>\
 junior (adj/n) /ˈdʒuː.ni.ər/ cấp dưới<br>\
 mechanic (n) /məˈkæn.ɪk/ thợ máy, cơ khí<br>\
@@ -1639,7 +1586,6 @@ odd (adj) /ɒd/ lạ<br>\
 pause (v/n) /pɔːz/ tạm dừng<br>\
 priest (n) /priːst/ linh mục<br>\
 profession (n) /prəˈfeʃ.ən/ nghề nghiệp<br>\
-exclaim (v) /ɪkˈskleɪm/ thốt lên<br>\
 forbid (v) /fəˈbɪd/ cấm<br>\
 indeed (adv) /ɪnˈdiːd/ quả thực<br>\
 nest (n) /nest/ tổ<br>\
@@ -1717,7 +1663,6 @@ elder (adj/n) /ˈel.dər/ người già<br>\
 facial (adj) /ˈfeɪ.ʃəl/ mặt<br>\
 fence (n) /fens/ hàng rào<br>\
 inspire (v) /ɪnˈspaɪər/ truyền cảm hứng<br>\
-mere (adj) /mɪər/ chỉ là, không đáng để tâm<br>\
 neat (adj) /niːt/ gọn gàng<br>\
 penalty (n) /ˈpen.əl.ti/ hình phạt<br>\
 amuse (v) /əˈmjuːz/ vui<br>\
@@ -1734,7 +1679,6 @@ zone (n) /zəʊn/ khu vực<br>\
 apology (n) /əˈpɒl.ə.dʒi/ xin lỗi<br>\
 bold (adj) /bəʊld/ táo bạo<br>\
 capture (v) /ˈkæp.tʃər/ bắt giữ<br>\
-duke (n) /dʒuːk/ công tước<br>\
 expose (v) /ɪkˈspəʊz/ phơi bày<br>\
 guilty (adj) /ˈɡɪl.ti/ có tội<br>\
 hire (v) /ˈhaɪər/ thuê<br>\
@@ -1774,13 +1718,11 @@ found (v) /faʊnd/ thành lập<br>\
 invest (v) /ɪnˈvest/ đầu tư<br>\
 practical (adj) /ˈpræk.tɪ.kəl/ thực tế<br>\
 temporary (adj) /ˈtem.pər.ər.i/ tạm thời<br>\
-blacksmith (n) /ˈblæk.smɪθ/ thợ rèn<br>\
 charitable (adj) /ˈtʃær.ə.tə.bəl/ từ thiện<br>\
 chimney (n) /ˈtʃɪm.ni/ ống khói<br>\
 compensate (v) /ˈkɒm.pən.seɪt/ bù trừ<br>\
 encounter (v/n) /ɪnˈkaʊn.tər/ gặp gỡ<br>\
 exceed (v) /ɪkˈsiːd/ vượt quá<br>\
-forge (v) /fɔːdʒ/ rèn<br>\
 iron (n) /aɪən/ sắt<br>\
 ladder (n) /ˈlæd.ər/ thang<br>\
 occupy (v) /ˈɒk.jə.paɪ/ chiếm đóng<br>\

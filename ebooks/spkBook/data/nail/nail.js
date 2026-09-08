@@ -402,7 +402,7 @@ const AMERICAN_NAIL_DATA = [{
 	Housing & Rent: Housing is generally far more affordable than the national average.<br>\
 	Renting: A nice 1-bedroom apartment ranges from $1,100 to $1,500/month depending on the neighborhood, while 2-bedroom units run around $1,400 to $1,900/month.<br>\
 	Buying: The median home price in Greater Houston sits around $320,000–$350,000, making homeownership achievable much earlier.<br>\
-	Utilities & Groceries: Electricity costs can spike during summer due to air conditioning, averaging $150–$250/month. Groceries are very reasonably priced, especially with large Asian markets (like H Mart and Hong Kong City Market) keeping competitive prices on fresh produce.<br>\
+	Utilities & Groceries: Electricity costs can spike during summer due to air conditioning, averaging $150–$250/month. Groceries are very reasonably priced, especially with large Asian markets (like H Mart and HongKong City Market) keeping competitive prices on fresh produce.<br>\
 	Essential Phrases for Driving & Getting Around Texas<br>\
 	Because Houston is massive (spanning over 600 square miles), owning a vehicle and knowing how to navigate the roads is essential.<br>\
 	\

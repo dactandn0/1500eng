@@ -732,6 +732,15 @@ input:focus {
   height: 0.35rem;
 }
 
+.setting-select {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  color: #3d4c59;
+  background: #f7fbff;
+  border: 1px solid #cfe3f6;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
 .setting-range::-webkit-slider-runnable-track {
   height: 0.35rem;
   background: #cfe3f6;

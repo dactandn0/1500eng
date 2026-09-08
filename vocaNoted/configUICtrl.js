@@ -14,6 +14,17 @@ $scope.toastTimeOut = HELPER_TOASTER_TIMEOUT_DEF
 $scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
 
+$scope.PUTER_VOICES = (typeof PUTER_VOICES !== 'undefined') ? PUTER_VOICES : [{ id: 'Joanna', desc: 'Joanna - Female US' }];
+$scope.puterVoice = 'Joanna';
+
+$scope.setPuterVoice = function () {
+	Helper_saveDB(Helper_PuterVoiceKey, $scope.puterVoice);
+}
+
+$scope.speechTest = function () {
+	try { Text2Speech('Hello, this is ' + $scope.puterVoice + '. How are you today?'); } catch (e) {}
+}
+
 
 $scope.setAudioPitch = function () {
 	Helper_saveDB(Helper_AudioPitchKey, $scope.audioPitch);
@@ -43,6 +54,7 @@ $scope.loadDB = function () {
 	$scope.VOICES = Helper_Voices
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
+	$scope.puterVoice = Helper_loadStr(Helper_PuterVoiceKey, 'Joanna')
 
 	// LoadDb in audioCtrl.js
 	// $rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)

@@ -32,6 +32,19 @@ const kNgClickTagName = 'kkk';
 const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="Idx_n_L_WSp_($event)">';
 const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
+const Helper_PuterVoiceKey = 'PuterVoice';
+const PUTER_VOICES = [
+	{ id: 'Joanna', desc: 'Joanna - Female US' },
+	{ id: 'Kendra', desc: 'Kendra - Female US' },
+	{ id: 'Salli', desc: 'Salli - Female US' },
+	{ id: 'Kimberly', desc: 'Kimberly - Female US' },
+	{ id: 'Matthew', desc: 'Matthew - Male US' },
+	// { id: 'Joey', desc: 'Joey - Male US' },
+	// { id: 'Amy', desc: 'Amy - Female UK' },
+	// { id: 'Emma', desc: 'Emma - Female UK' },
+	// { id: 'Brian', desc: 'Brian - Male UK' },
+	// { id: 'Olivia', desc: 'Olivia - Female AU' }
+];
 const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi;
 const kReplaceWords = [{
 	src: 'ms\\.*',

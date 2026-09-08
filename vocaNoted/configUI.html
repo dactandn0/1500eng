@@ -21,6 +21,14 @@
 			<p>Choose how many times audio repeats.</p>
 			<input type="range" class="setting-range" min="1" max="20" step="1" ng-model="$root.audio_repeatNum" ng-change="setRepeatNum()" aria-label="Repeat count">
 		</div>
+
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Puter voice</span><strong>{{puterVoice}}</strong></div>
+			<p>Neural voice used by Puter.js text to speech.</p>
+			<select class="setting-select" ng-model="puterVoice" ng-change="setPuterVoice()"
+				ng-options="v.id as v.desc for v in PUTER_VOICES" aria-label="Puter voice"></select>
+			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
+		</div>
 	</div>
 
 <!-- <select class="my-3" ng-model="selectedVoiceIdx" ng-change="saveSelectedVoiceIdx()">

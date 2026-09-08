@@ -32,6 +32,15 @@ function Text2SpeechClean(input) {
 	return s;
 }
 
+function Text2SpeechVoice() {
+	try {
+		if (typeof Helper_loadStr === 'function' && typeof Helper_PuterVoiceKey !== 'undefined') {
+			const v = Helper_loadStr(Helper_PuterVoiceKey, 'Joanna');
+			if (v) return v;
+		}
+	} catch (e) {}
+	return 'Joanna';
+}
 function Text2SpeechBrowser(word) {
 	try {
 		if (typeof speechSynthesis === 'undefined') return;
@@ -75,7 +84,7 @@ function Text2Speech(word) {
 	rate = Math.min(1.5, Math.max(0.7, rate));
 
 	puter.ai.txt2speech(chunk, {
-		voice: 'Joanna',
+		voice: Text2SpeechVoice(),
 		engine: 'neural',
 		language: 'en-US'
 	}).then((audio) => {

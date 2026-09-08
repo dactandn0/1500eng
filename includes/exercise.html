@@ -23,11 +23,12 @@
 	</div>
 </div>
 
-<button class="btn btn-sm btn-success my-3"
+<button type="button" class="script-toggle script-toggle-answer my-3"
 		ng-show="story.images || story.en_ans"
 		ng-init="show_answer = 0" 
 		ng-click="show_answer = !show_answer">
-		{{!show_answer ? 'Show anwser' : 'Hide anwser'}}
+		<i class="fa" ng-class="show_answer ? 'fa-eye-slash' : 'fa-eye'" aria-hidden="true"></i>
+		{{!show_answer ? 'Show answer' : 'Hide answer'}}
 </button>
 
 <div ng-show="show_answer == 1">

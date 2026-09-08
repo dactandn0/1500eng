@@ -348,7 +348,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			if (!result.found) {
 				Helper_GG_API($http, touchedWord).then(res => {
 					const vietnamese = res.data[0][0][0];
-					doShowToast((isLongText ? '' : touchedWord) + ' <b style="color:orange">/(gg)/</b> ' + vietnamese + result.full, isLongText, touchedWord);
+					doShowToast((isLongText ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + result.full, isLongText, touchedWord);
 					GOOGLE_ERROR_SHOWN = false; // reset
 				}, err => {
 					// Chỉ alert 1 lần đến khi API get OK
@@ -376,20 +376,89 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			);
 		}
 
+		let wikiImgSeq = 0;
+
+		function toastWordCount(s) {
+			let t = String(s == null ? '' : s);
+			try { t = Helper_RemoveHTMLtag(t); } catch (e) {}
+			t = t.replace(/&/g, ' ').replace(/\s+/g, ' ').trim();
+			if (!t) return 0;
+			return t.split(' ').length;
+		}
+
+		// 1-3 từ: short | 4-15 từ: medium | 16+ từ: long
+		function toastTimeoutFor(touchedWord, isLongText) {
+			const n = toastWordCount(touchedWord);
+			if (n >= 1 && n <= TOAST_SHORT_MAX_WORDS)
+				return Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF);
+			if (n >= TOAST_LONG_MIN_WORDS)
+				return Helper_loadFloat(Helper_ToastTimeOutLongKey, HELPER_TOASTER_TIMEOUT_LONG_DEF);
+			if (n > TOAST_SHORT_MAX_WORDS)
+				return Helper_loadFloat(Helper_ToastTimeOutMedKey, HELPER_TOASTER_TIMEOUT_MED_DEF);
+			return isLongText
+				? Helper_loadFloat(Helper_ToastTimeOutLongKey, HELPER_TOASTER_TIMEOUT_LONG_DEF)
+				: Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF);
+		}
+
 		function doShowToast(content, isLongText, touchedWord) {
 			let btnSave = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
-			let toasterTimeout = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000 // s
+			let toasterTimeout = toastTimeoutFor(touchedWord, isLongText);
 			if (isLongText || Helper_IsWordSavedBefore(touchedWord)) {
 				btnSave = ''
 			} else saveFromToastVal = content;
 
+			// Chế độ click one-word: nhúng sẵn placeholder ảnh, fetch xong điền đúng toast này
+			let wikiImgId = null;
+			if (!isLongText && /^[A-Za-z][A-Za-z'\-]*$/.test(touchedWord || '')) {
+				wikiImgId = 'toastWikiImg' + (++wikiImgSeq);
+				content = '<img id="' + wikiImgId + '" class="toast-wiki-img" style="display:none" alt="">' + content;
+			}
+
+			// Timer đếm ngược (tiny) + progress bar đã bật ở options
+			const totalMs = toasterTimeout * 1000; // s -> ms
+			const toastTimerId = 'toastTimer' + (++wikiImgSeq);
+			content = '<span id="' + toastTimerId + '" class="toast-timer"></span>' + content;
+
 			toastr.info(btnSave, content, {
 				allowHtml: true,
-				timeOut: toasterTimeout * (isLongText ? 2.5 : 1)
+				progressBar: true,
+				timeOut: totalMs
 			});
 
+			(function (id, total) {
+				const t0 = Date.now();
+				const iv = setInterval(function () {
+					const el = document.getElementById(id);
+					if (!el) { clearInterval(iv); return; }
+					const left = Math.max(0, total - (Date.now() - t0));
+					el.textContent = Math.ceil(left / 1000) + 's';
+					if (left <= 0) clearInterval(iv);
+				}, 250);
+			})(toastTimerId, totalMs);
+
+			if (wikiImgId) {
+				wikiThumbUrl(touchedWord).then(function (src) {
+					if (!src) return;
+					const img = document.getElementById(wikiImgId);
+					if (!img) return; // toast đã tắt
+					img.onload = function () { img.style.display = ''; };
+					img.onerror = function () { img.remove(); };
+					img.src = src;
+				});
+			}
 		}
 
+		function wikiThumbUrl(word) {
+			const url = 'https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(word);
+			return fetch(url).then(function (r) {
+				if (!r.ok) return null;
+				return r.json();
+			}).then(function (data) {
+				if (data && data.thumbnail && data.thumbnail.source) return data.thumbnail.source;
+				if (data && data.originalimage && data.originalimage.source) return data.originalimage.source;
+				return null;
+			}).catch(function () { return null; });
+		}
 
 		$scope.showExampleModal = function(wordFull, event) {
 			const sentences = $scope.fetchSentences(wordFull);

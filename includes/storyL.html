@@ -23,7 +23,10 @@
 		</h6>
 		 
 	  	<div class="accordion-content toggleShow" ng-show="showLession">
-			<button class="mb-2 btn-sm btn-success" ng-click="showScript=!showScript">{{!showScript ? 'Show' : 'Hide'}}</button>
+			<button type="button" class="script-toggle" ng-click="showScript=!showScript">
+			<i class="fa" ng-class="showScript ? 'fa-eye-slash' : 'fa-eye'" aria-hidden="true"></i>
+			{{!showScript ? 'Show script' : 'Hide script'}}
+		</button>
 	  	 	<div ng-show="showScript">
 	  			<p id="content-to-word" title="{{story.fTitle}}" compile="story.enShow" ng-if="!$root.bShowVi"></p>
 	  			<p compile="story.viShow" ng-if="$root.bShowVi"></p>

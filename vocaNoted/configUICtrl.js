@@ -10,6 +10,8 @@ $scope.audioPitch = 1.5
 $scope.audioRate = 0.8
 
 $scope.toastTimeOut = HELPER_TOASTER_TIMEOUT_DEF
+$scope.toastTimeOutMed = HELPER_TOASTER_TIMEOUT_MED_DEF
+$scope.toastTimeOutLong = HELPER_TOASTER_TIMEOUT_LONG_DEF
 
 $scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
@@ -46,6 +48,14 @@ $scope.setToastTimeOut = function () {
 	Helper_saveDB(Helper_ToastTimeOutKey, $scope.toastTimeOut);
 }
 
+$scope.setToastTimeOutLong = function () {
+	Helper_saveDB(Helper_ToastTimeOutLongKey, $scope.toastTimeOutLong);
+}
+
+$scope.setToastTimeOutMed = function () {
+	Helper_saveDB(Helper_ToastTimeOutMedKey, $scope.toastTimeOutMed);
+}
+
 $scope.saveSelectedVoiceIdx = function () {
 	Helper_saveDB(Helper_SelectedVoiceIdx, $scope.selectedVoiceIdx);
 }
@@ -61,6 +71,8 @@ $scope.loadDB = function () {
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 	$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)
 	$scope.toastTimeOut = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF)
+	$scope.toastTimeOutMed = Helper_loadFloat(Helper_ToastTimeOutMedKey, HELPER_TOASTER_TIMEOUT_MED_DEF)
+	$scope.toastTimeOutLong = Helper_loadFloat(Helper_ToastTimeOutLongKey, HELPER_TOASTER_TIMEOUT_LONG_DEF)
 
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
 };

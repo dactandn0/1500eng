@@ -6,19 +6,20 @@
 	
 	<span ng-show="bPlaying">
 		<button class="btn btn-sm btn-danger" ng-click="backSound(-1)">-{{$root.adjAudioTime}}s</button>
-		<button class="btn btn-sm btn-danger mx-4" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button>
-		<button class="btn btn-sm btn-danger" ng-click="backSound(1)">+{{$root.adjAudioTime}}s</button>
+		<button class="btn btn-sm btn-danger btn-audio-pause" ng-click="pauseSound()">{{bPause ? 'Resume' : 'Pause'}}</button>
 		<br>
-		<input 
-			ng-show="bPlaying"
-			type="range" 
-			id="slider"
-			class="form-range mt-3"
-			min="0" 
-			max="100" 
-			step="1"
-			value='0'
-			oninput="setAudioTime()"
-		>
+		<div class="slider-vertical-wrap">
+			<input 
+				ng-show="bPlaying"
+				type="range" 
+				id="slider"
+				class="form-range"
+				min="0" 
+				max="100" 
+				step="1"
+				value='0'
+				oninput="setAudioTime()"
+			>
+		</div>
 	</span>
 </div>

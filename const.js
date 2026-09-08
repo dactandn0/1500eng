@@ -9,10 +9,16 @@ const Helper_AudioRateKey = 'AudioRate';
 const Helper_RepeatNumKey = 'RepeatNum';
 const Helper_AdjAudioTimeKey = 'AdjAudioTime';
 const Helper_ToastTimeOutKey = 'ToastTimeOutKey';
+const Helper_ToastTimeOutMedKey = 'ToastTimeOutMedKey';
+const Helper_ToastTimeOutLongKey = 'ToastTimeOutLongKey';
 
 const HELPER_ADJ_AUDIO_TIME_DEF = 5 // 5s
 const HELPER_REPEAT_NUM_DEF = 2
 const HELPER_TOASTER_TIMEOUT_DEF = 3
+const HELPER_TOASTER_TIMEOUT_MED_DEF = 5
+const HELPER_TOASTER_TIMEOUT_LONG_DEF = 8
+const TOAST_SHORT_MAX_WORDS = 3
+const TOAST_LONG_MIN_WORDS = 16
 
 const kRgexSen = /.*?((\.*\s*(<br>|<hr>))|(\!*\s*(<br>|<hr>))|(\?*\s*(<br>|<hr>))|('*\s*(<br>|<hr>))|(\"*\s*(<br>|<hr>))|(\d\.+\d+.+[\.\!\?])|[\.]+|[\!\?])/gi;
 const kAudioLoopSaveKey = "audioLoop";

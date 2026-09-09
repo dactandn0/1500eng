@@ -65,7 +65,7 @@ var app = angular.module("myApp", [
 	*/
 	'subLessonApp',
 	'lptdApp',
-	'wordCollectApp', 'words4000App',
+	'wordCollectApp', 'quizApp', 'words4000App',
 	'modalApp', 'audioApp', 'audioLoopRadioApp',
 	'ngSanitize', 'ngRoute', 'toastr'
 ]);
@@ -83,6 +83,10 @@ app.config(function($routeProvider) {
 		.when('/wordCollect', {
 			templateUrl: 'wordCollect/wordCollect.html',
 			controller: 'wordCollectCtrl'
+		})
+		.when('/quiz', {
+			templateUrl: 'quiz/Quiz.html',
+			controller: 'quizCtrl'
 		})
 		// .when('/ebookNoted', {templateUrl: 'vocaNoted/ebookNoted.html', controller: 'ebookNotedCtrl'})
 		.when('/f2f', {

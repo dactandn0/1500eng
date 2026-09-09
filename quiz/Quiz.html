@@ -1,0 +1,180 @@
+<section class="study-shell quiz-page">
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='LISTENING LAB'; studyTitle='Quiz'; studyDescription='Nghe sound rồi chọn 1 trong 4 đáp án ABCD.'; studyStatus='QUIZ'"></div>
+
+	<style>
+		.quiz-tabs { display:flex; gap:.4rem; margin:1rem 0 .8rem; padding:.4rem; background:#fff; border:1px solid #eee9dc; border-radius:12px; }
+		.quiz-tab { flex:1; padding:.65rem .5rem; border:1px solid transparent; border-radius:8px; background:transparent; color:#716d65; font-size:.88rem; }
+		.quiz-tab.is-active { color:#5f470c; background:#fff0b8; border-color:#eadcae; box-shadow:0 4px 10px rgba(191,151,45,.16); }
+		.quiz-type-row { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:.8rem; }
+		.quiz-type-btn { padding:.4rem .7rem; border-radius:999px; border:1px solid #eee5c9; background:#fffdf7; color:#756d61; font-size:.8rem; }
+		.quiz-type-btn.is-active { background:linear-gradient(135deg,#fff4c9 0%,#ffe9a2 100%); border-color:#e6c96c; color:#604a0e; }
+		.quiz-kind-badge { display:inline-block; padding:.15rem .55rem; border-radius:999px; background:#edf6ff; border:1px solid #cfe3f6; color:#23639a; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
+		.quiz-transcript { margin-top:.6rem; padding:.6rem .8rem; background:#f7fbff; border:1px solid #dce8f5; border-radius:10px; color:#3d4c59; font-size:.88rem; }
+		.quiz-listen-btn:disabled, .quiz-speak:disabled { opacity:.45; cursor:wait; transform:none; }
+	</style>
+
+	<div class="quiz-tabs" role="tablist">
+		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'voca'}" ng-click="setMode('voca')">
+			<i class="fa fa-book" aria-hidden="true"></i> Vocabulary
+		</button>
+		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'detail'}" ng-click="setMode('detail')">
+			<i class="fa fa-headphones" aria-hidden="true"></i> Address / Birthday
+		</button>
+	</div>
+
+	<!-- ===== SECTION 1: VOCAB (chuyen tu wordCollect) ===== -->
+	<div class="quiz-panel" ng-if="mode === 'voca'">
+		<div class="quiz-panel-heading">
+			<div>
+				<span class="eyebrow">QUICK REVIEW</span>
+				<h2>Vocabulary quiz</h2>
+			</div>
+			<button type="button" class="btn btn-sm btn-quiz" ng-click="startQuiz()">
+				<i class="fa fa-refresh" aria-hidden="true"></i> New quiz
+			</button>
+		</div>
+
+		<div ng-if="!quiz.finished">
+			<div class="quiz-progress">Question {{quiz.index + 1}} / {{quiz.items.length}} <span>Score: {{quiz.score}} &middot; Streak: {{quiz.streak}}</span></div>
+			<div class="quiz-direction" ng-if="quiz.direction === 'en-vi'">EN &rarr; VI &middot; Pick the correct meaning</div>
+			<div class="quiz-direction" ng-if="quiz.direction === 'vi-en'">VI &rarr; EN &middot; Pick the correct word</div>
+			<div class="quiz-direction" ng-if="quiz.direction === 'listen'">LISTEN &middot; Hear the word, pick the correct answer</div>
+			<div class="quiz-question" ng-if="quiz.direction !== 'listen'">
+				<span compile="quiz.current.p1" ng-if="quiz.direction === 'en-vi'"></span>
+				<span ng-if="quiz.direction === 'vi-en'">{{quiz.questionText}}</span>
+				<button type="button" class="quiz-speak" ng-if="quiz.direction === 'en-vi'" ng-click="quizSpeak($event)" ng-disabled="ttsBusy" title="Listen" aria-label="Listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="quiz-listen" ng-if="quiz.direction === 'listen'">
+				<button type="button" class="quiz-listen-btn" ng-click="quizSpeak($event)" ng-disabled="ttsBusy" title="Tap to listen" aria-label="Tap to listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+				<span>Tap to listen, then pick A&ndash;D</span>
+			</div>
+			<div class="quiz-options">
+				<button type="button" class="quiz-option"
+					ng-repeat="opt in quiz.options track by $index"
+					ng-click="answerQuiz($index)"
+					ng-disabled="quiz.answered"
+					ng-class="{'is-correct': quiz.answered && $index === quiz.correctIdx, 'is-wrong': quiz.answered && $index === quiz.picked && $index !== quiz.correctIdx}">
+					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
+					<span class="quiz-option-text">{{opt.display}}<span class="quiz-option-meaning" ng-if="quiz.answered && quiz.direction === 'vi-en'"> &ndash; {{opt.meaning}}</span></span>
+				</button>
+			</div>
+			<div class="quiz-feedback is-good" ng-if="quiz.answered && quiz.picked === quiz.correctIdx">
+				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct! Keep the streak going.
+			</div>
+			<div class="quiz-feedback is-bad" ng-if="quiz.answered && quiz.picked !== quiz.correctIdx">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+				<span>Not quite. Correct answer: <strong>{{quiz.correctHead}}</strong><span ng-if="quiz.correctMeaning"> &ndash; {{quiz.correctMeaning}}</span></span>
+			</div>
+			<div class="quiz-actions" ng-if="quiz.answered">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextQuiz()">
+					{{quiz.index + 1 >= quiz.items.length ? 'See results' : 'Next'}}
+				</button>
+			</div>
+		</div>
+
+		<div class="quiz-finished" ng-if="quiz.finished">
+			<strong>Quiz complete</strong>
+			<span>Score: {{quiz.score}} / {{quiz.items.length}} &middot; Best streak: {{quiz.bestStreak}}</span>
+			<div class="quiz-wrong-list" ng-if="quiz.wrong.length">
+				<div class="quiz-wrong-title">Review your mistakes ({{quiz.wrong.length}}):</div>
+				<div class="quiz-wrong-item" ng-repeat="w in quiz.wrong track by $index">
+					<strong>{{w.head}}</strong><span>{{w.meaning}}</span>
+				</div>
+			</div>
+			<div class="quiz-actions quiz-finished-actions">
+				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="quiz.wrong.length" ng-click="retryWrongQuiz()">Retry mistakes</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="startQuiz()">New quiz</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== SECTION 2: LISTENING DETAIL ===== -->
+	<div class="quiz-panel" ng-if="mode === 'detail'">
+		<div class="quiz-panel-heading">
+			<div>
+				<span class="eyebrow">LISTENING DETAIL</span>
+				<h2>Address &middot; Birthday &middot; Phone &middot; Money &middot; Weight &middot; Spelling</h2>
+			</div>
+			<button type="button" class="btn btn-sm btn-quiz" ng-click="startDetail()">
+				<i class="fa fa-refresh" aria-hidden="true"></i> New round
+			</button>
+		</div>
+
+		<p style="margin:.6rem 0 .8rem; color:#8b857b; font-size:.85rem;">
+			Nghe 1 câu, chọn đúng trong 4 đáp án ABCD dễ gây nhầm. Bấm loa để nghe lại.
+		</p>
+
+		<div class="quiz-type-row">
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'all'}" ng-click="setDetailType('all')">All</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'address'}" ng-click="setDetailType('address')">Address</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'birthday'}" ng-click="setDetailType('birthday')">Birthday</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'phone'}" ng-click="setDetailType('phone')">Phone</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'money'}" ng-click="setDetailType('money')">Money</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'weight'}" ng-click="setDetailType('weight')">Weight</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'spelling'}" ng-click="setDetailType('spelling')">Spelling name</button>
+		</div>
+
+		<div ng-if="!detail.finished">
+			<div class="quiz-progress">Question {{detail.index + 1}} / {{detail.items.length}} <span>Score: {{detail.score}} &middot; Streak: {{detail.streak}}</span></div>
+			<div class="quiz-direction">
+				<span class="quiz-kind-badge">{{detailKindLabel(detail.current.kind)}}</span>
+				&nbsp;LISTEN &middot; Tap the speaker, then pick A&ndash;D
+			</div>
+			<div class="quiz-listen">
+				<button type="button" class="quiz-listen-btn" ng-click="detailSpeak($event)" ng-disabled="ttsBusy" title="Tap to listen" aria-label="Tap to listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+				<span>Nghe kỹ số / chữ</span>
+			</div>
+			<div class="quiz-options">
+				<button type="button" class="quiz-option"
+					ng-repeat="opt in detail.options track by $index"
+					ng-click="answerDetail($index)"
+					ng-disabled="detail.answered"
+					ng-class="{'is-correct': detail.answered && $index === detail.correctIdx, 'is-wrong': detail.answered && $index === detail.picked && $index !== detail.correctIdx}">
+					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
+					<span class="quiz-option-text">{{opt}}</span>
+				</button>
+			</div>
+			<div class="quiz-feedback is-good" ng-if="detail.answered && detail.picked === detail.correctIdx">
+				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct!
+			</div>
+			<div class="quiz-feedback is-bad" ng-if="detail.answered && detail.picked !== detail.correctIdx">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+				<span>Not quite. Correct answer: <strong>{{detail.current.correct}}</strong></span>
+			</div>
+			<div class="quiz-transcript" ng-if="detail.answered">
+				<i class="fa fa-file-text-o" aria-hidden="true"></i>
+				{{detail.current.transcript}}
+				<button type="button" class="quiz-speak" style="margin-left:.5rem; padding:.2rem .5rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:8px;" ng-click="detailSpeak($event)" ng-disabled="ttsBusy" title="Listen again" aria-label="Listen again">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="quiz-actions" ng-if="detail.answered">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextDetail()">
+					{{detail.index + 1 >= detail.items.length ? 'See results' : 'Next'}}
+				</button>
+			</div>
+		</div>
+
+		<div class="quiz-finished" ng-if="detail.finished">
+			<strong>Round complete</strong>
+			<span>Score: {{detail.score}} / {{detail.items.length}} &middot; Best streak: {{detail.bestStreak}}</span>
+			<div class="quiz-wrong-list" ng-if="detail.wrong.length">
+				<div class="quiz-wrong-title">Nghe lại các câu sai ({{detail.wrong.length}}):</div>
+				<div class="quiz-wrong-item" ng-repeat="w in detail.wrong track by $index">
+					<strong>[{{detailKindLabel(w.kind)}}] {{w.correct}}</strong><span>{{w.transcript}}</span>
+				</div>
+			</div>
+			<div class="quiz-actions quiz-finished-actions">
+				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="detail.wrong.length" ng-click="retryWrongDetail()">Retry mistakes</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="startDetail()">New round</button>
+			</div>
+		</div>
+	</div>
+</section>

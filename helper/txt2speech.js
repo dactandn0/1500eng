@@ -5,8 +5,23 @@ const utter = new SpeechSynthesisUtterance();
 
 let puterAudio = null;
 let puterLastText = '';
+let puterSeq = 0; // tang moi lan goi -> request cu (chua ve) bi huy, chi cau moi nhat duoc play
+
+// Co BUSY + callback play-done: chong spam click nut loa.
+// Dang phat (hoac dang cho request) -> Text2SpeechIsBusy() === true.
+// Phat xong (ended) / loi / stop -> tu clear ve false.
+let ttsBusy = false;
+function ttsSetBusy(v) { ttsBusy = !!v; }
+function Text2SpeechIsBusy() {
+	if (ttsBusy) return true;
+	try {
+		if (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) return true;
+	} catch (e) {}
+	return false;
+}
 
 function Text2SpeechStop() {
+	ttsSetBusy(false);
 	if (puterAudio) {
 		try { puterAudio.pause(); } catch (e) {}
 		try { puterAudio.currentTime = 0; } catch (e) {}
@@ -41,38 +56,47 @@ function Text2SpeechVoice() {
 	} catch (e) {}
 	return 'Joanna';
 }
-function Text2SpeechBrowser(word) {
+function Text2SpeechBrowser(word, force) {
 	try {
-		if (typeof speechSynthesis === 'undefined') return;
+		if (typeof speechSynthesis === 'undefined') { ttsSetBusy(false); return; }
 		if (speechSynthesis.speaking) {
+			// go handlers cu truoc khi cancel de event roi khong clear nham co moi
+			try { utter.onend = null; utter.onerror = null; } catch (e) {}
 			speechSynthesis.cancel();
-			if (word == utter.text) return;
+			if (!force && word == utter.text) { ttsSetBusy(false); return; }
 		}
 		utter.text = word;
+		// callback play-done: phat xong / loi -> ha co
+		utter.onend = function () { ttsSetBusy(false); };
+		utter.onerror = function () { ttsSetBusy(false); };
 		try { utter.pitch = Helper_loadFloat(Helper_AudioPitchKey, 1); } catch (e) { utter.pitch = 1; }
 		try { utter.rate = Helper_loadFloat(Helper_AudioRateKey, 1); } catch (e) { utter.rate = 1; }
 		utter.volume = 1;
 		utter.lang = 'en-US';
+		ttsSetBusy(true);
 		speechSynthesis.speak(utter);
-	} catch (e) {}
+	} catch (e) { ttsSetBusy(false); }
 }
 
-function Text2Speech(word) {
+function Text2Speech(word, force) {
 	const text = Text2SpeechClean(word);
 	if (!text) return;
 
-	// Click lại cùng 1 từ đang đọc -> dừng (giữ hành vi cũ)
-	if (text === puterLastText && puterAudio) {
+	// Click lai cung 1 tu dang doc -> dung (giu hanh vi cu).
+	// force=true (nut loa Quiz): bam lai la replay tu dau, khong toggle-stop.
+	if (!force && text === puterLastText && puterAudio) {
 		Text2SpeechStop();
 		puterLastText = '';
 		return;
 	}
 	Text2SpeechStop();
 	puterLastText = text;
+	const mySeq = ++puterSeq;
+	ttsSetBusy(true); // dung co ngay tu luc bam -> click spam ke tiep bi chan
 
-	// Chưa load được puter -> fallback ngay
+	// Chua load duoc puter -> fallback ngay
 	if (typeof puter === 'undefined' || !puter.ai || !puter.ai.txt2speech) {
-		Text2SpeechBrowser(text);
+		Text2SpeechBrowser(text, force);
 		return;
 	}
 
@@ -88,25 +112,38 @@ function Text2Speech(word) {
 		engine: 'neural',
 		language: 'en-US'
 	}).then((audio) => {
-		// Người dùng đã bấm từ khác trong lúc chờ mạng -> bỏ audio cũ
-		if (puterLastText !== text) {
+		// Co request moi hon trong luc cho mang -> bo audio cu (tranh 2 tieng chong nhau)
+		if (mySeq !== puterSeq || puterLastText !== text) {
 			try { audio.pause(); } catch (e) {}
 			return;
 		}
 		puterAudio = audio;
 		try { audio.playbackRate = rate; } catch (e) {}
 		try {
+			// callback play-done: chi ha co khi dung la audio dang phat
+			// (audio cu bi thay the thi ke moi giu co)
 			audio.addEventListener('ended', () => {
-				if (puterAudio === audio) puterAudio = null;
+				if (puterAudio === audio) { puterAudio = null; ttsSetBusy(false); }
+			});
+			audio.addEventListener('error', () => {
+				if (puterAudio === audio) { puterAudio = null; ttsSetBusy(false); }
 			});
 		} catch (e) {}
 		audio.play().catch(() => {
+			if (mySeq !== puterSeq) return;
 			puterAudio = null;
-			Text2SpeechBrowser(text);
+			Text2SpeechBrowser(text, force);
 		});
 	}).catch(() => {
-		// Rớt mạng / popup bị chặn / hết quota -> đọc tạm bằng giọng máy
+		// Rot mang / popup bi chan / het quota -> doc tam bang giong may
+		if (mySeq !== puterSeq) return;
 		puterAudio = null;
-		Text2SpeechBrowser(text);
+		ttsSetBusy(false);
+		Text2SpeechBrowser(text, force);
 	});
+}
+
+// Bam loa Quiz: moi lan bam la replay tu dau (khong toggle-stop nhu Text2Speech thuong)
+function Text2SpeechReplay(word) {
+	Text2Speech(word, true);
 }

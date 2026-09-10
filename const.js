@@ -38,18 +38,30 @@ const kNgClickTagName = 'kkk';
 const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="Idx_n_L_WSp_($event)">';
 const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
-const Helper_PuterVoiceKey = 'PuterVoice';
-const PUTER_VOICES = [
+const Helper_TTSSourceKey = 'TTSSource'; // 'edge' (neural, no login) | 'google' | 'browser' (offline)
+const Helper_EdgeVoiceKey = 'EdgeVoice';
+const EDGE_VOICES = [
+	{ id: 'en-US-AriaNeural', desc: 'Aria - Female US' },
+	{ id: 'en-US-JennyNeural', desc: 'Jenny - Female US' },
+	{ id: 'en-US-EmmaMultilingualNeural', desc: 'Emma - Female US' },
+	{ id: 'en-US-GuyNeural', desc: 'Guy - Male US' },
+	{ id: 'en-US-DavisNeural', desc: 'Davis - Male US' },
+	{ id: 'en-GB-SoniaNeural', desc: 'Sonia - Female UK' },
+	{ id: 'en-GB-RyanNeural', desc: 'Ryan - Male UK' },
+	{ id: 'en-AU-NatashaNeural', desc: 'Natasha - Female AU' }
+];
+const Helper_PuterVoiceKey = 'PuterVoice'; // giữ key cũ để không vỡ dữ liệu localStorage cũ
+const PUTER_VOICES = [ // giữ để tương thích code cũ, không dùng nữa
 	{ id: 'Joanna', desc: 'Joanna - Female US' },
 	{ id: 'Kendra', desc: 'Kendra - Female US' },
 	{ id: 'Salli', desc: 'Salli - Female US' },
 	{ id: 'Kimberly', desc: 'Kimberly - Female US' },
 	{ id: 'Matthew', desc: 'Matthew - Male US' },
-	// { id: 'Joey', desc: 'Joey - Male US' },
-	// { id: 'Amy', desc: 'Amy - Female UK' },
-	// { id: 'Emma', desc: 'Emma - Female UK' },
-	// { id: 'Brian', desc: 'Brian - Male UK' },
-	// { id: 'Olivia', desc: 'Olivia - Female AU' }
+];
+const TTS_SOURCES = [
+	{ id: 'edge', desc: 'Edge neural - hay, no login (recommended)' },
+	{ id: 'google', desc: 'Google - online, no login' },
+	{ id: 'browser', desc: 'Browser - offline, device voice' }
 ];
 const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi;
 const kReplaceWords = [{

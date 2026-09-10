@@ -242,6 +242,11 @@ body {
   box-shadow: 0 10px 24px rgba(38, 91, 139, 0.12);
 }
 
+.app-navbar .dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
 .app-navbar .dropdown-item {
   padding: 0.55rem 0.7rem;
   color: #526779;

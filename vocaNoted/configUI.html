@@ -23,10 +23,18 @@
 		</div>
 
 		<div class="setting-card">
-			<div class="setting-heading"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Puter voice</span><strong>{{puterVoice}}</strong></div>
-			<p>Neural voice used by Puter.js text to speech.</p>
-			<select class="setting-select" ng-model="puterVoice" ng-change="setPuterVoice()"
-				ng-options="v.id as v.desc for v in PUTER_VOICES" aria-label="Puter voice"></select>
+			<div class="setting-heading"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Voice source</span><strong>{{ttsSource}}</strong></div>
+			<p>Edge neural sounds best, no login. Google is backup. Browser works offline.</p>
+			<select class="setting-select" ng-model="ttsSource" ng-change="setTtsSource()"
+				ng-options="v.id as v.desc for v in TTS_SOURCES" aria-label="Voice source"></select>
+			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
+		</div>
+
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Edge voice</span></div>
+			<p>Neural voice used when source is Edge.</p>
+			<select class="setting-select" ng-model="edgeVoice" ng-change="setEdgeVoice()"
+				ng-options="v.id as v.desc for v in EDGE_VOICES" aria-label="Edge voice"></select>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
 		</div>
 	</div>

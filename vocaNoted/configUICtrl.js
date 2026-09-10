@@ -16,15 +16,21 @@ $scope.toastTimeOutLong = HELPER_TOASTER_TIMEOUT_LONG_DEF
 $scope.selectedVoiceIdx = -1
 $scope.VOICES = Helper_Voices
 
-$scope.PUTER_VOICES = (typeof PUTER_VOICES !== 'undefined') ? PUTER_VOICES : [{ id: 'Joanna', desc: 'Joanna - Female US' }];
-$scope.puterVoice = 'Joanna';
+$scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id: 'edge', desc: 'Edge' }, { id: 'google', desc: 'Google' }, { id: 'browser', desc: 'Browser' }];
+$scope.ttsSource = 'edge';
+$scope.EDGE_VOICES = (typeof EDGE_VOICES !== 'undefined') ? EDGE_VOICES : [{ id: 'en-US-AriaNeural', desc: 'Aria' }];
+$scope.edgeVoice = 'en-US-AriaNeural';
 
-$scope.setPuterVoice = function () {
-	Helper_saveDB(Helper_PuterVoiceKey, $scope.puterVoice);
+$scope.setTtsSource = function () {
+	Helper_saveDB(Helper_TTSSourceKey, $scope.ttsSource);
+}
+
+$scope.setEdgeVoice = function () {
+	Helper_saveDB(Helper_EdgeVoiceKey, $scope.edgeVoice);
 }
 
 $scope.speechTest = function () {
-	try { Text2Speech('Hello, this is ' + $scope.puterVoice + '. How are you today?'); } catch (e) {}
+	try { Text2Speech('Hello, how are you today? I love learning English.'); } catch (e) {}
 }
 
 
@@ -64,7 +70,12 @@ $scope.loadDB = function () {
 	$scope.VOICES = Helper_Voices
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
-	$scope.puterVoice = Helper_loadStr(Helper_PuterVoiceKey, 'Joanna')
+	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'edge')
+	$scope.edgeVoice = 'en-US-AriaNeural'
+	try {
+		if (typeof Helper_EdgeVoiceKey !== 'undefined')
+			$scope.edgeVoice = Helper_loadStr(Helper_EdgeVoiceKey, 'en-US-AriaNeural')
+	} catch (e) {}
 
 	// LoadDb in audioCtrl.js
 	// $rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, 1)

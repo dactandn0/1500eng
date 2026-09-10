@@ -12,6 +12,14 @@
 		.quiz-kind-badge { display:inline-block; padding:.15rem .55rem; border-radius:999px; background:#edf6ff; border:1px solid #cfe3f6; color:#23639a; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
 		.quiz-transcript { margin-top:.6rem; padding:.6rem .8rem; background:#f7fbff; border:1px solid #dce8f5; border-radius:10px; color:#3d4c59; font-size:.88rem; }
 		.quiz-listen-btn:disabled, .quiz-speak:disabled { opacity:.45; cursor:wait; transform:none; }
+		.quiz-listen.is-clickable { cursor:pointer; }
+		.quiz-listen.is-clickable:hover { border-color:#e6c96c; background:#fff8e1; }
+		.quiz-feedback.is-clickable, .quiz-transcript.is-clickable, .pic-meaning.is-clickable { cursor:pointer; }
+		.quiz-feedback.is-clickable:hover, .quiz-transcript.is-clickable:hover, .pic-meaning.is-clickable:hover { filter:brightness(.985); border-color:#e6c96c; }
+		.pic-img-wrap { display:flex; align-items:center; justify-content:center; min-height:220px; padding:1rem; background:#fffdf7; border:1px solid #f1e8d0; border-radius:10px; }
+		.pic-img { max-width:100%; max-height:300px; border-radius:10px; border:1px solid #eee5c9; object-fit:contain; background:#fff; }
+		.pic-loading { color:#8b857b; font-size:.9rem; }
+		.pic-meaning { margin-top:.6rem; padding:.6rem .8rem; background:#fff8e1; border:1px solid #f1e8d0; border-radius:10px; color:#604a0e; font-size:.92rem; display:flex; align-items:center; gap:.6rem; }
 	</style>
 
 	<div class="quiz-tabs" role="tablist">
@@ -19,7 +27,10 @@
 			<i class="fa fa-book" aria-hidden="true"></i> Vocabulary
 		</button>
 		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'detail'}" ng-click="setMode('detail')">
-			<i class="fa fa-headphones" aria-hidden="true"></i> Address / Birthday
+			<i class="fa fa-headphones" aria-hidden="true"></i> Listening Detail
+		</button>
+		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'pic'}" ng-click="setMode('pic')">
+			<i class="fa fa-picture-o" aria-hidden="true"></i> Food &amp; Bugs
 		</button>
 	</div>
 
@@ -47,7 +58,7 @@
 					<i class="fa fa-volume-up" aria-hidden="true"></i>
 				</button>
 			</div>
-			<div class="quiz-listen" ng-if="quiz.direction === 'listen'">
+			<div class="quiz-listen is-clickable" ng-if="quiz.direction === 'listen'" ng-click="quizSpeak($event)" title="Tap anywhere to listen" role="button" tabindex="0">
 				<button type="button" class="quiz-listen-btn" ng-click="quizSpeak($event)" ng-disabled="ttsBusy" title="Tap to listen" aria-label="Tap to listen">
 					<i class="fa fa-volume-up" aria-hidden="true"></i>
 				</button>
@@ -56,17 +67,17 @@
 			<div class="quiz-options">
 				<button type="button" class="quiz-option"
 					ng-repeat="opt in quiz.options track by $index"
-					ng-click="answerQuiz($index)"
-					ng-disabled="quiz.answered"
+					ng-click="clickQuizOption($event, $index)"
+					ng-attr-title="{{quiz.answered ? 'Tap to listen' : 'Choose this answer'}}"
 					ng-class="{'is-correct': quiz.answered && $index === quiz.correctIdx, 'is-wrong': quiz.answered && $index === quiz.picked && $index !== quiz.correctIdx}">
 					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
 					<span class="quiz-option-text">{{opt.display}}<span class="quiz-option-meaning" ng-if="quiz.answered && quiz.direction === 'vi-en'"> &ndash; {{opt.meaning}}</span></span>
 				</button>
 			</div>
-			<div class="quiz-feedback is-good" ng-if="quiz.answered && quiz.picked === quiz.correctIdx">
+			<div class="quiz-feedback is-good is-clickable" ng-if="quiz.answered && quiz.picked === quiz.correctIdx" ng-click="quizSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
 				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct! Keep the streak going.
 			</div>
-			<div class="quiz-feedback is-bad" ng-if="quiz.answered && quiz.picked !== quiz.correctIdx">
+			<div class="quiz-feedback is-bad is-clickable" ng-if="quiz.answered && quiz.picked !== quiz.correctIdx" ng-click="quizSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
 				<i class="fa fa-times-circle" aria-hidden="true"></i>
 				<span>Not quite. Correct answer: <strong>{{quiz.correctHead}}</strong><span ng-if="quiz.correctMeaning"> &ndash; {{quiz.correctMeaning}}</span></span>
 			</div>
@@ -98,7 +109,7 @@
 		<div class="quiz-panel-heading">
 			<div>
 				<span class="eyebrow">LISTENING DETAIL</span>
-				<h2>Address &middot; Birthday &middot; Phone &middot; Money &middot; Weight &middot; Spelling</h2>
+				<h2>Address (US) &middot; Birthday &middot; Phone (US) &middot; Money &middot; Body &middot; Name (US/UK)</h2>
 			</div>
 			<button type="button" class="btn btn-sm btn-quiz" ng-click="startDetail()">
 				<i class="fa fa-refresh" aria-hidden="true"></i> New round
@@ -111,12 +122,12 @@
 
 		<div class="quiz-type-row">
 			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'all'}" ng-click="setDetailType('all')">All</button>
-			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'address'}" ng-click="setDetailType('address')">Address</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'address'}" ng-click="setDetailType('address')">Address (US)</button>
 			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'birthday'}" ng-click="setDetailType('birthday')">Birthday</button>
-			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'phone'}" ng-click="setDetailType('phone')">Phone</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'phone'}" ng-click="setDetailType('phone')">Phone (+1)</button>
 			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'money'}" ng-click="setDetailType('money')">Money</button>
-			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'weight'}" ng-click="setDetailType('weight')">Weight</button>
-			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'spelling'}" ng-click="setDetailType('spelling')">Spelling name</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'weight'}" ng-click="setDetailType('weight')">Body (H/W/Blood)</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': detail.type === 'spelling'}" ng-click="setDetailType('spelling')">Name (US/UK)</button>
 		</div>
 
 		<div ng-if="!detail.finished">
@@ -125,30 +136,30 @@
 				<span class="quiz-kind-badge">{{detailKindLabel(detail.current.kind)}}</span>
 				&nbsp;LISTEN &middot; Tap the speaker, then pick A&ndash;D
 			</div>
-			<div class="quiz-listen">
+			<div class="quiz-listen is-clickable" ng-click="detailSpeak($event)" title="Tap anywhere to listen" role="button" tabindex="0">
 				<button type="button" class="quiz-listen-btn" ng-click="detailSpeak($event)" ng-disabled="ttsBusy" title="Tap to listen" aria-label="Tap to listen">
 					<i class="fa fa-volume-up" aria-hidden="true"></i>
 				</button>
-				<span>Nghe kỹ số / chữ</span>
+				<span>Nghe kỹ số / chữ &mdash; bấm vào panel là phát</span>
 			</div>
 			<div class="quiz-options">
 				<button type="button" class="quiz-option"
 					ng-repeat="opt in detail.options track by $index"
-					ng-click="answerDetail($index)"
-					ng-disabled="detail.answered"
+					ng-click="clickDetailOption($event, $index)"
+					ng-attr-title="{{detail.answered ? 'Tap to listen' : 'Choose this answer'}}"
 					ng-class="{'is-correct': detail.answered && $index === detail.correctIdx, 'is-wrong': detail.answered && $index === detail.picked && $index !== detail.correctIdx}">
 					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
 					<span class="quiz-option-text">{{opt}}</span>
 				</button>
 			</div>
-			<div class="quiz-feedback is-good" ng-if="detail.answered && detail.picked === detail.correctIdx">
+			<div class="quiz-feedback is-good is-clickable" ng-if="detail.answered && detail.picked === detail.correctIdx" ng-click="detailSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
 				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct!
 			</div>
-			<div class="quiz-feedback is-bad" ng-if="detail.answered && detail.picked !== detail.correctIdx">
+			<div class="quiz-feedback is-bad is-clickable" ng-if="detail.answered && detail.picked !== detail.correctIdx" ng-click="detailSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
 				<i class="fa fa-times-circle" aria-hidden="true"></i>
 				<span>Not quite. Correct answer: <strong>{{detail.current.correct}}</strong></span>
 			</div>
-			<div class="quiz-transcript" ng-if="detail.answered">
+			<div class="quiz-transcript is-clickable" ng-if="detail.answered" ng-click="detailSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
 				<i class="fa fa-file-text-o" aria-hidden="true"></i>
 				{{detail.current.transcript}}
 				<button type="button" class="quiz-speak" style="margin-left:.5rem; padding:.2rem .5rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:8px;" ng-click="detailSpeak($event)" ng-disabled="ttsBusy" title="Listen again" aria-label="Listen again">
@@ -174,6 +185,86 @@
 			<div class="quiz-actions quiz-finished-actions">
 				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="detail.wrong.length" ng-click="retryWrongDetail()">Retry mistakes</button>
 				<button type="button" class="btn btn-sm btn-quiz" ng-click="startDetail()">New round</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== SECTION 3: PICTURE - Food / Fruit / Insects (ảnh từ API free, không key) ===== -->
+	<div class="quiz-panel" ng-if="mode === 'pic'">
+		<div class="quiz-panel-heading">
+			<div>
+				<span class="eyebrow">PICTURE QUIZ</span>
+				<h2>Món ăn &middot; Trái cây &middot; Côn trùng</h2>
+			</div>
+			<button type="button" class="btn btn-sm btn-quiz" ng-click="startPic()">
+				<i class="fa fa-refresh" aria-hidden="true"></i> New round
+			</button>
+		</div>
+
+		<p style="margin:.6rem 0 .8rem; color:#8b857b; font-size:.85rem;">
+			Nhìn hình, chọn đúng từ tiếng Anh. Ảnh load từ TheMealDB + Wikipedia (free, không cần key). Trả lời xong bấm loa để nghe.
+		</p>
+
+		<div class="quiz-type-row">
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'all'}" ng-click="setPicType('all')">All</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'food'}" ng-click="setPicType('food')">Món ăn</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'fruit'}" ng-click="setPicType('fruit')">Fruits</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'insect'}" ng-click="setPicType('insect')">Insects</button>
+		</div>
+
+		<div ng-if="!pic.finished">
+			<div class="quiz-progress">Question {{pic.index + 1}} / {{pic.items.length}} <span>Score: {{pic.score}} &middot; Streak: {{pic.streak}}</span></div>
+			<div class="quiz-direction">
+				<span class="quiz-kind-badge">{{picKindLabel(pic.current.kind)}}</span>
+				&nbsp;LOOK &middot; Pick the correct word A&ndash;D
+			</div>
+			<div class="pic-img-wrap">
+				<span class="pic-loading" ng-if="pic.imgLoading"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Loading image&hellip;</span>
+				<img class="pic-img" ng-if="!pic.imgLoading && pic.imgSrc" ng-src="{{pic.imgSrc}}" alt="{{pic.current.en}}">
+				<span class="pic-loading" ng-if="!pic.imgLoading && !pic.imgSrc">No image &mdash; {{pic.current.en}}</span>
+			</div>
+			<div class="quiz-options">
+				<button type="button" class="quiz-option"
+					ng-repeat="opt in pic.options track by $index"
+					ng-click="clickPicOption($event, $index)"
+					ng-attr-title="{{pic.answered ? 'Tap to listen' : 'Choose this answer'}}"
+					ng-class="{'is-correct': pic.answered && $index === pic.correctIdx, 'is-wrong': pic.answered && $index === pic.picked && $index !== pic.correctIdx}">
+					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
+					<span class="quiz-option-text">{{opt.en}}<span class="quiz-option-meaning" ng-if="pic.answered"> &ndash; {{opt.vi}}</span></span>
+				</button>
+			</div>
+			<div class="quiz-feedback is-good is-clickable" ng-if="pic.answered && pic.picked === pic.correctIdx" ng-click="picSpeak($event, null, true)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct!
+			</div>
+			<div class="quiz-feedback is-bad is-clickable" ng-if="pic.answered && pic.picked !== pic.correctIdx" ng-click="picSpeak($event, null, true)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+				<span>Not quite. Correct answer: <strong>{{pic.current.en}}</strong> &ndash; {{pic.current.vi}}</span>
+			</div>
+			<div class="pic-meaning is-clickable" ng-if="pic.answered" ng-click="picSpeak($event, null, true)" title="Tap to listen" role="button" tabindex="0">
+				<button type="button" class="quiz-speak" ng-click="picSpeak($event)" ng-disabled="ttsBusy" title="Listen" aria-label="Listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+				<span><strong>{{pic.current.en}}</strong> &ndash; {{pic.current.vi}}</span>
+			</div>
+			<div class="quiz-actions" ng-if="pic.answered">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextPic()">
+					{{pic.index + 1 >= pic.items.length ? 'See results' : 'Next'}}
+				</button>
+			</div>
+		</div>
+
+		<div class="quiz-finished" ng-if="pic.finished">
+			<strong>Round complete</strong>
+			<span>Score: {{pic.score}} / {{pic.items.length}} &middot; Best streak: {{pic.bestStreak}}</span>
+			<div class="quiz-wrong-list" ng-if="pic.wrong.length">
+				<div class="quiz-wrong-title">Ôn lại các câu sai ({{pic.wrong.length}}):</div>
+				<div class="quiz-wrong-item" ng-repeat="w in pic.wrong track by $index">
+					<strong>[{{picKindLabel(w.kind)}}] {{w.en}}</strong><span>{{w.vi}}</span>
+				</div>
+			</div>
+			<div class="quiz-actions quiz-finished-actions">
+				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="pic.wrong.length" ng-click="retryWrongPic()">Retry mistakes</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="startPic()">New round</button>
 			</div>
 		</div>
 	</div>

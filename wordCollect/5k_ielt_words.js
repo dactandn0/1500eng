@@ -129,21 +129,21 @@ Computer age /kəmˈpjuːtər eɪdʒ/ Kỷ nguyên máy tính<br>\
 Computer programming languages /kəmˈpjuːtər ˈproʊˌgræmɪŋ ˈlæŋgwɪʤɪz] Ngôn ngữ lập trình máy tính<br>\
 Cryptocurrency /ˌkrɪptoʊˈkʌrənsi/ Tiền điện tử<br>\
 Cybercrime /ˈsaɪbərˌkraɪm/ Tội phạm mạng<br>\
-Cybernetics /ˌsaɪbərˈnɛtɪks] Cơ học điều khiển<br>\
+Cybernetics /ˌsaɪbərˈnɛtɪks/]Cơ học điều khiển<br>\
 Cybersecurity /ˈsaɪbərˌsikjʊrɪti/ An ninh mạng<br>\
 Data analysis /ˈdeɪtə əˈnæləsɪs/ Phân tích dữ liệu<br>\
-Data breach /ˈdeɪtə briːʧ] Xâm nhập dữ liệu<br>\
-Data encryption /ˈdeɪtə ɪnˈkrɪpʃən] Mã hóa dữ liệu<br>\
-Data management /ˈdeɪtə ˈmænɪʤmənt] Quản lý dữ liệu<br>\
+Data breach /ˈdeɪtə briːʧ/]Xâm nhập dữ liệu<br>\
+Data encryption /ˈdeɪtə ɪnˈkrɪpʃən/]Mã hóa dữ liệu<br>\
+Data management /ˈdeɪtə ˈmænɪʤmənt/]Quản lý dữ liệu<br>\
 Data privacy /ˈdeɪtə ˈpraɪvəsi/ Sự riêng tư dữ liệu<br>\
-Data recovery /ˈdeɪtə rɪˈkʌvəri] Khôi phục dữ liệu<br>\
+Data recovery /ˈdeɪtə rɪˈkʌvəri/]Khôi phục dữ liệu<br>\
 Data storage /ˈdeɪtə ˈstɔːrɪdʒ/ Lưu trữ dữ liệu<br>\
-Data transfer /ˈdeɪtə ˈtrænsfər] Truyền dữ liệu<br>\
-Digital advertising /ˈdɪdʒɪtl ˈædvərˌtaɪzɪŋ] Quảng cáo số<br>\
+Data transfer /ˈdeɪtə ˈtrænsfər/]Truyền dữ liệu<br>\
+Digital advertising /ˈdɪdʒɪtl ˈædvərˌtaɪzɪŋ/]Quảng cáo số<br>\
 Digital divide /ˈdɪdʒɪtl dɪˈvaɪd/ Khoảng cách kỹ thuật số<br>\
 Digital economy /ˈdɪʤɪtəl iˈkɑːnəmi/ Kinh tế số<br>\
-Digital footprint /ˈdɪdʒɪtl ˈfʊtˌprɪnt] Dấu vết số<br>\
-Digital marketing /ˈdɪdʒɪtl ˈmɑːrkɪtɪŋ] Tiếp thị số<br>\
+Digital footprint /ˈdɪdʒɪtl ˈfʊtˌprɪnt/]Dấu vết số<br>\
+Digital marketing /ˈdɪdʒɪtl ˈmɑːrkɪtɪŋ/]Tiếp thị số<br>\
 Digital transformation /ˈdɪʤɪtəl ˌtrænsfərˈmeɪʃən/ Chuyển đổi số<br>\
 Digitalization /ˌdɪdʒɪtəlaɪˈzeɪʃən/ Sự số hóa<br>\
 Drones /droʊnz/ Máy bay không người lái<br>\
@@ -154,70 +154,70 @@ Navigation /nævɪˈɡeɪʃən/ Định vị<br>\
 Hacking /ˈhækɪŋ/ Đánh cắp thông tin<br>\
 High-speed internet /haɪ spiːd ˈɪntərnɛt/ Internet tốc độ cao<br>\
 Information security /ˌɪnfərˈmeɪʃən sɪˈkjʊrəti/ An ninh thông tin<br>\
-Information sharing /ˌɪnfərˈmeɪʃən ˈʃɛrɪŋ] Chia sẻ thông tin<br>\
+Information sharing /ˌɪnfərˈmeɪʃən ˈʃɛrɪŋ/]Chia sẻ thông tin<br>\
 Information technology (IT) /ˌɪnfərˈmeɪʃən tɛkˈnɑːlədʒi/ Công nghệ thông tin<br>\
 Innovation /ˌɪnəˈveɪʃən/ Sự đổi mới, sự sáng tạo<br>\
 Innovation hub /ˌɪnəˈveɪʃən hʌb/ Trung tâm đổi mới<br>\
 Internet access /ˈɪntərnɛt ˈæksɛs/ Truy cập internet<br>\
-Internet addiction /ˈɪntərnɛt əˈdɪkʃən] Nghiện Internet<br>\
-Internet browsing /ˈɪntərnɛt ˈbraʊzɪŋ] Lướt web<br>\
+Internet addiction /ˈɪntərnɛt əˈdɪkʃən/ Nghiện Internet<br>\
+Internet browsing /ˈɪntərnɛt ˈbraʊzɪŋ/]Lướt web<br>\
 Internet censorship /ˈɪntərnɛt ˈsɛnsərʃɪp/ Kiểm duyệt Internet<br>\
-Internet connectivity /ˈɪntərnɛt kəˌnɛktɪˈvɪti] Kết nối Internet<br>\
+Internet connectivity /ˈɪntərnɛt kəˌnɛktɪˈvɪti/ Kết nối Internet<br>\
 Internet of Things (IoT) /ˈɪntərnɛt əv ˈθɪŋz/ Internet vạn vật<br>\
-Internet protocols /ˈɪntərnɛt ˈproʊtəkɒlz] Giao thức Internet<br>\
+Internet protocols /ˈɪntərnɛt ˈproʊtəkɒlz/ Giao thức Internet<br>\
 Internet security /ˈɪntərnɛt sɪˈkjʊrəti/ An ninh Internet<br>\
 Internet service provider (ISP) /ˈɪntərnɛt ˈsɜːrvɪs prəˈvaɪdər/ Nhà cung cấp dịch vụ internet<br>\
-Internet speed /ˈɪntərnɛt spiːd] Tốc độ Internet<br>\
-IT consulting /ˌaɪˈti kənˈsʌltɪŋ] Tư vấn công nghệ thông tin<br>\
-IT infrastructure /ˌaɪˈti ˈɪnfrəˌstrʌkʧər] Cơ sở hạ tầng công nghệ thông tin<br>\
-IT support /ˌaɪˈti səˈpɔːrt] Hỗ trợ công nghệ thông tin<br>\
+Internet speed /ˈɪntərnɛt spiːd/ Tốc độ Internet<br>\
+IT consulting /ˌaɪˈti kənˈsʌltɪŋ/ Tư vấn công nghệ thông tin<br>\
+IT infrastructure /ˌaɪˈti ˈɪnfrəˌstrʌkʧər/ Cơ sở hạ tầng công nghệ thông tin<br>\
+IT support /ˌaɪˈti səˈpɔːrt/ Hỗ trợ công nghệ thông tin<br>\
 Machine learning /məˈʃiːn ˈlɜːrnɪŋ/ Học máy<br>\
 Mobile application /ˈmoʊbəl ˌæplɪˈkeɪʃənz/ Ứng dụng di động<br>\
-Mobile network /ˈmoʊbəl ˈnɛtwɜːrk] Mạng di động<br>\
+Mobile network /ˈmoʊbəl ˈnɛtwɜːrk/ Mạng di động<br>\
 Mobile technology /ˈmoʊbəl tɛkˈnɑlədʒi/ Công nghệ di động<br>\
 Nanotechnology /ˌnænoʊtɛkˈnɑːlədʒi/ Công nghệ nano<br>\
-Network administration /ˈnɛtwɜːrk ədˌmɪnɪsˈtreɪʃən] Quản trị mạng<br>\
-Network congestion /ˈnɛtwɜːrk kənˈʤɛsʧən] Tắc nghẽn mạng<br>\
+Network administration /ˈnɛtwɜːrk ədˌmɪnɪsˈtreɪʃən/ Quản trị mạng<br>\
+Network congestion /ˈnɛtwɜːrk kənˈʤɛsʧən/ Tắc nghẽn mạng<br>\
 Network infrastructure /ˈnɛtˌwɜrk ˈɪnfrəˌstrʌkʧər/ Cơ sở hạ tầng mạng<br>\
-Network monitoring /ˈnɛtwɜːrk ˈmɒnɪtərɪŋ] Giám sát mạng<br>\
-Network reliability /ˈnɛtwɜːrk rɪˌlaɪəˈbɪlɪti] Đáng tin cậy mạng lưới<br>\
-Network security /ˈnɛtwɜːrk sɪˈkjʊrəti] An ninh mạng<br>\
-Online banking /ˈɒnˌlaɪn ˈbæŋkɪŋ] Ngân hàng trực tuyến<br>\
-Online collaboration /ˈɒnˌlaɪn kəˌlæbəˈreɪʃən] Cộng tác trực tuyến<br>\
+Network monitoring /ˈnɛtwɜːrk ˈmɒnɪtərɪŋ/ Giám sát mạng<br>\
+Network reliability /ˈnɛtwɜːrk rɪˌlaɪəˈbɪlɪti/ Đáng tin cậy mạng lưới<br>\
+Network security /ˈnɛtwɜːrk sɪˈkjʊrəti/ An ninh mạng<br>\
+Online banking /ˈɒnˌlaɪn ˈbæŋkɪŋ/ Ngân hàng trực tuyến<br>\
+Online collaboration /ˈɒnˌlaɪn kəˌlæbəˈreɪʃən/ Cộng tác trực tuyến<br>\
 Online education /ˈɑːnˌlaɪn ˌɛdʒʊˈkeɪʃən/ Giáo dục trực tuyến<br>\
 Online gaming /ˈɑːnˌlaɪn ˈɡeɪmɪŋ/ Trò chơi trực tuyến<br>\
-Online privacy /ˈɒnˌlaɪn ˈpraɪvəsi] Quyền riêng tư trực tuyến<br>\
+Online privacy /ˈɒnˌlaɪn ˈpraɪvəsi/ Quyền riêng tư trực tuyến<br>\
 Online shopping /ˈɑːnˌlaɪn ˈʃɑːpɪŋ/ Mua sắm trực tuyến<br>\
 Privacy concerns /ˈpraɪvəsi kənˈsɜːrnz/ Quan ngại về sự riêng tư<br>\
-Privacy settings /ˈpraɪvəsi ˈsɛtɪŋz] Thiết lập quyền riêng tư<br>\
-Programming /ˈproʊˌgræmɪŋ] Lập trình<br>\
-Remote access /rɪˈmoʊt ˈæksɛs] Truy cập từ xa<br>\
+Privacy settings /ˈpraɪvəsi ˈsɛtɪŋz/ Thiết lập quyền riêng tư<br>\
+Programming /ˈproʊˌgræmɪŋ/ Lập trình<br>\
+Remote access /rɪˈmoʊt ˈæksɛs/ Truy cập từ xa<br>\
 Renewable energy /rɪˈnuːəbl ˈɛnərdʒi/ Năng lượng tái tạo<br>\
 Renewable resource /rɪˈnuːərəbl rɪˈsɔrsɪz/ Tài nguyên tái tạo<br>\
 Robotics /rəˈbɑːtɪks/ Kỹ thuật Robot<br>\
 Smart homes /smɑːrt hoʊmz/ Nhà thông minh<br>\
 Social media /ˈsoʊʃəl ˈmidiə/ Mạng xã hội<br>\
 Software development /ˈsɔːftwɛr dɪˈvɛləpmənt/ Phát triển phần mềm<br>\
-Software engineering /ˈsɒftwɛr ˌɛnʤɪˈnɪərɪŋ] Kỹ thuật phần mềm<br>\
-Software update /ˈsɒftwɛr ʌpˌdeɪts] Cập nhật phần mềm<br>\
+Software engineering /ˈsɒftwɛr ˌɛnʤɪˈnɪərɪŋ/ Kỹ thuật phần mềm<br>\
+Software update /ˈsɒftwɛr ʌpˌdeɪts/ Cập nhật phần mềm<br>\
 Streaming service /ˈstriːmɪŋ ˈsɜːrvɪsɪz/ Dịch vụ phát trực tuyến<br>\
 Sustainable technology /səˈsteɪnəbl tɛkˈnɑːlədʒi/ Công nghệ bền vững<br>\
-System integration /ˈsɪstəm ˌɪntɪˈgreɪʃən] Tích hợp hệ thống<br>\
+System integration /ˈsɪstəm ˌɪntɪˈgreɪʃən/ Tích hợp hệ thống<br>\
 Tech startup /tɛk ˈstɑːrtʌp/ Công ty khởi nghiệp công nghệ<br>\
-Tech-savvy /tɛk-ˈsævi] Thành thạo công nghệ Technological advancements /ˌtɛknəˈlɑʤɪkəl ədˈvænsmənts/ Tiến bộ công nghệ<br>\
+Tech-savvy /tɛk-ˈsævi/ Thành thạo công nghệ Technological advancements /ˌtɛknəˈlɑʤɪkəl ədˈvænsmənts/ Tiến bộ công nghệ<br>\
 Technological revolution /ˌtɛknəˈlɑːdʒɪkəl ˌrɛvəˈluːʃən/ Cuộc cách mạng công nghệ<br>\
 Telecommunication /ˌtɛlɪkəˌmjuːnɪˈkeɪʃənz/ Viễn thông<br>\
 Telecommuting /ˈtɛlɪkəˌmjuːtɪŋ/ Làm việc từ xa<br>\
 User experience (UX) /ˈjuːzər ɪkˈspɪriəns/ Trải nghiệm người dùng<br>\
 User interface (UI) /ˈjuːzər ˈɪntərfeɪs/ Giao diện người dùng<br>\
 Video conferencing /ˈvɪdi.oʊ ˈkɑːnfərənsɪŋ/ Hội nghị trực tuyến<br>\
-Virtual private network (VPN) /ˈvɜːrtʃʊəl ˈpraɪvət ˈnɛtwɜːrk] Mạng riêng ảo<br>\
+Virtual private network (VPN) /ˈvɜːrtʃʊəl ˈpraɪvət ˈnɛtwɜːrk/ Mạng riêng ảo<br>\
 Virtual reality (VR) /ˈvɜːrtʃuəl riˈæləti/ Thực tế ảo<br>\
 Wearable device /ˈwɛrəbəl dɪˈvaɪsɪz/ Thiết bị đeo được<br>\
-Web development /wɛb dɪˈvɛləpmənt] Phát triển web<br>\
-Web hosting /wɛb ˈhoʊstɪŋ] Lưu trữ web<br>\
+Web development /wɛb dɪˈvɛləpmənt/ Phát triển web<br>\
+Web hosting /wɛb ˈhoʊstɪŋ/ Lưu trữ web<br>\
 Wireless communication /ˈwaɪərlɪs kəmjuːnɪˈkeɪʃən/ Giao tiếp không dây<br>\
-Wireless network /ˈwaɪərlɪs ˈnɛtwɜːrk] Mạng không dây",
+Wireless network /ˈwaɪərlɪs ˈnɛtwɜːrk/ Mạng không dây",
 },
 {
 	title:"Advertising (Ielts)",

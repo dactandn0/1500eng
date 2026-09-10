@@ -45,6 +45,7 @@ function Text2SpeechStop() {
 	gSeq++;
 	gQueue = [];
 	gLastText = '';
+	try { ttsClearWd(); } catch (eWd) {}
 	ttsSetBusy(false);
 	if (gAudio) {
 		try { gAudio.pause(); } catch (e) {}
@@ -94,10 +95,20 @@ function Text2SpeechRate() {
 // =====================================================
 // Google path (chinh) - Google Translate TTS, free, khong key/login.
 // Phat qua <audio> nen khong vuong CORS; chunk <=170 ky tu theo cau.
-// Chunk loi -> rot chunk do xuong browser, cac chunk sau van chay Google.
+// Safari hay chan translate.google.com (treo am tham, khong bao loi) nen:
+//  - co 2 host: googleapis.com (thoang hon) -> google.com du phong;
+//  - watchdog: chunk nao 6s khong play/error thi doi host, het host rot browser.
 // =====================================================
+const GOOGLE_TTS_HOSTS = [
+	'https://translate.googleapis.com',
+	'https://translate.google.com'
+];
+let gHostIdx = 0; // host dang dung
+let gWd = 0; // watchdog timer chong treo
+function ttsClearWd() { try { if (gWd) clearTimeout(gWd); } catch (e) {} gWd = 0; }
 function Text2SpeechGoogleURL(chunk) {
-	return 'https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(chunk);
+	const host = GOOGLE_TTS_HOSTS[gHostIdx] || GOOGLE_TTS_HOSTS[0];
+	return host + '/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(chunk);
 }
 function Text2SpeechChunk(text) {
 	const MAX = 170;
@@ -136,41 +147,51 @@ function Text2SpeechPlayQueue(mySeq) {
 	gAudio = audio;
 	try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
 	try { audio.preload = 'auto'; } catch (e) {}
-	let settled = false;
+	let settled = false, started = false;
+	function failChunk() {
+		if (settled || mySeq !== gSeq) return;
+		settled = true;
+		ttsClearWd();
+		try { if (gAudio === audio) gAudio.pause(); } catch (ePause) {}
+		if (gHostIdx < GOOGLE_TTS_HOSTS.length - 1) {
+			// doi host roi phat lai chunk nay, giu queue
+			gHostIdx++;
+			gQueue.unshift(chunk);
+			Text2SpeechPlayQueue(mySeq);
+			return;
+		}
+		// het host -> rot chunk nay xuong browser, cac chunk sau van chay Google
+		try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
+		catch (e) { Text2SpeechPlayQueue(mySeq); }
+	}
+	audio.onplaying = function () {
+		started = true;
+		try { window.__lastTtsEngine = 'google'; } catch (e) {}
+	};
 	audio.onended = function () {
 		if (settled) return;
 		settled = true;
+		ttsClearWd();
 		Text2SpeechPlayQueue(mySeq);
 	};
-	audio.onerror = function () {
-		if (settled) return;
-		settled = true;
-		try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
-		catch (e) { Text2SpeechPlayQueue(mySeq); }
-	};
+	audio.onerror = function () { failChunk(); };
 	try {
 		audio.src = Text2SpeechGoogleURL(chunk);
+		try { audio.load(); } catch (eLoad) {}
 		const p = audio.play();
+		try {
+			ttsClearWd();
+			gWd = setTimeout(function () {
+				if (!settled && mySeq === gSeq && !started) failChunk();
+			}, 6000);
+		} catch (eWd) {}
 		if (p && typeof p.catch === 'function') {
-			p.catch(function () {
-				// iOS chan play() -> rot chunk nay xuong browser, giu queue Google
-				if (settled || mySeq !== gSeq) return;
-				settled = true;
-				try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
-				catch (e) { Text2SpeechPlayQueue(mySeq); }
-			});
+			p.catch(function () { failChunk(); });
 		}
-	} catch (e) {
-		if (!settled) {
-			settled = true;
-			try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
-			catch (e2) { Text2SpeechPlayQueue(mySeq); }
-		}
-	}
+	} catch (e) { failChunk(); }
 }
 function googleSpeak(text, mySeq) {
 	if (mySeq !== gSeq) return;
-	try { window.__lastTtsEngine = 'google'; } catch (e) {}
 	const chunks = Text2SpeechChunk(text.length > 2800 ? text.slice(0, 2800) : text);
 	gQueue = chunks.slice();
 	Text2SpeechPlayQueue(mySeq);

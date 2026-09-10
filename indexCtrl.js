@@ -390,13 +390,18 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			return t.split(' ').length;
 		}
 
-		// 1-3 từ: short | 4-15 từ: medium | 16+ từ: long
+		// 1-3 từ: short | 4-15 từ: medium | 16+ từ: long (vuot 25: cu 5 tu +2s)
 		function toastTimeoutFor(touchedWord, isLongText) {
 			const n = toastWordCount(touchedWord);
 			if (n >= 1 && n <= TOAST_SHORT_MAX_WORDS)
 				return Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF);
-			if (n >= TOAST_LONG_MIN_WORDS)
-				return Helper_loadFloat(Helper_ToastTimeOutLongKey, HELPER_TOASTER_TIMEOUT_LONG_DEF);
+			if (n >= TOAST_LONG_MIN_WORDS) {
+				const base = Helper_loadFloat(Helper_ToastTimeOutLongKey, HELPER_TOASTER_TIMEOUT_LONG_DEF);
+				const max = Helper_loadInt(Helper_ToastTimeOutMaxKey, HELPER_TOASTER_TIMEOUT_MAX_DEF) || HELPER_TOASTER_TIMEOUT_MAX_DEF;
+				let t = base;
+				if (n > 25) t = base + Math.ceil((n - 25) / 5) * 2;
+				return Math.min(t, Math.max(max, 30));
+			}
 			if (n > TOAST_SHORT_MAX_WORDS)
 				return Helper_loadFloat(Helper_ToastTimeOutMedKey, HELPER_TOASTER_TIMEOUT_MED_DEF);
 			return isLongText

@@ -11,12 +11,15 @@ const Helper_AdjAudioTimeKey = 'AdjAudioTime';
 const Helper_ToastTimeOutKey = 'ToastTimeOutKey';
 const Helper_ToastTimeOutMedKey = 'ToastTimeOutMedKey';
 const Helper_ToastTimeOutLongKey = 'ToastTimeOutLongKey';
+const Helper_ToastTimeOutMaxKey = 'ToastTimeOutMaxKey';
 
 const HELPER_ADJ_AUDIO_TIME_DEF = 5 // 5s
 const HELPER_REPEAT_NUM_DEF = 2
 const HELPER_TOASTER_TIMEOUT_DEF = 3
 const HELPER_TOASTER_TIMEOUT_MED_DEF = 5
 const HELPER_TOASTER_TIMEOUT_LONG_DEF = 8
+const HELPER_TOASTER_TIMEOUT_MAX_DEF = 60
+const TOAST_MAX_OPTIONS = [30, 45, 60, 90, 120]
 const TOAST_SHORT_MAX_WORDS = 3
 const TOAST_LONG_MIN_WORDS = 16
 
@@ -52,17 +55,19 @@ const EDGE_VOICES = [
 	{ id: 'en-GB-RyanNeural', desc: 'Ryan - Male UK' },
 	{ id: 'en-AU-NatashaNeural', desc: 'Natasha - Female AU' }
 ];
-const Helper_PuterVoiceKey = 'PuterVoice'; // giữ key cũ để không vỡ dữ liệu localStorage cũ
-const PUTER_VOICES = [ // giữ để tương thích code cũ, không dùng nữa
+const Helper_PuterVoiceKey = 'PuterVoice';
+const PUTER_VOICES = [ // AWS Polly voices qua puter.ai.txt2speech (engine neural)
 	{ id: 'Joanna', desc: 'Joanna - Female US' },
 	{ id: 'Kendra', desc: 'Kendra - Female US' },
 	{ id: 'Salli', desc: 'Salli - Female US' },
 	{ id: 'Kimberly', desc: 'Kimberly - Female US' },
+	{ id: 'Ruth', desc: 'Ruth - Female US' },
+	{ id: 'Ivy', desc: 'Ivy - Female US' },
+	{ id: 'Joey', desc: 'Joey - Male US' },
 	{ id: 'Matthew', desc: 'Matthew - Male US' },
 ];
 const TTS_SOURCES = [
-	{ id: 'edge', desc: 'Edge neural - hay, no login (recommended)' },
-	{ id: 'google', desc: 'Google - online, no login' },
+	{ id: 'puter', desc: 'Puter neural - hay, can login 1 lan (recommended)' },
 	{ id: 'browser', desc: 'Browser - offline, device voice' }
 ];
 const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi;

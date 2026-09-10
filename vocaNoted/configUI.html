@@ -24,26 +24,21 @@
 
 		<div class="setting-card">
 			<div class="setting-heading"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Voice source</span><strong>{{ttsSource}}</strong></div>
-			<p>Edge neural sounds best, no login. Google is backup. Browser works offline.</p>
+			<p>Puter neural sounds best, login once. Browser works offline.</p>
 			<select class="setting-select" ng-model="ttsSource" ng-change="setTtsSource()"
 				ng-options="v.id as v.desc for v in TTS_SOURCES" aria-label="Voice source"></select>
-			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
-		</div>
-
-		<div class="setting-card">
-			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Edge voice</span><strong>{{edgeProxy === 'on' ? 'proxy on' : (edgeProxy === 'off' ? 'proxy off' : '')}}</strong></div>
-			<p>Neural voice used when source is Edge. Needs <code>python edge_proxy.py</code> running to hear the selected voice (direct browser WSS is often blocked). iPhone: open <code>http://PC-IP:8888</code> (same wifi), not localhost.</p>
-			<select class="setting-select" ng-model="edgeVoice" ng-change="setEdgeVoice()"
-				ng-options="v.id as v.desc for v in EDGE_VOICES" aria-label="Edge voice"></select>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
 			<span class="ml-2" ng-if="lastEngine">playing: <strong>{{lastEngine}}</strong></span>
 		</div>
 
 		<div class="setting-card">
-			<div class="setting-heading"><i class="fa fa-server" aria-hidden="true"></i><span>Edge proxy URL</span><strong>{{edgeProxy}}</strong></div>
-			<p>For GitHub Pages / Safari: expose your PC proxy with <code>ngrok http 8888</code> (https) and paste the URL here. Leave empty when running local.</p>
-			<input type="text" class="form-control setting-select" ng-model="edgeProxyUrl" ng-change="setEdgeProxyUrl()"
-				ng-model-options="{ debounce: 800 }" placeholder="https://xxx.ngrok-free.app" aria-label="Edge proxy URL">
+			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Puter voice</span><strong>{{puterSignedIn ? ('hi ' + (puterUser || 'you')) : 'not logged in'}}</strong></div>
+			<p>Neural voice used when source is Puter.</p>
+			<select class="setting-select" ng-model="puterVoice" ng-change="setPuterVoice()"
+				ng-options="v.id as v.desc for v in PUTER_VOICES" aria-label="Puter voice"></select>
+			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
+			<button class="btn btn-sm btn-success mt-2 ml-2" ng-if="!puterSignedIn" ng-click="puterSignIn()">Login Puter</button>
+			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-if="puterSignedIn" ng-click="puterSignOut()">Logout</button>
 		</div>
 
 		<div class="setting-card">
@@ -86,6 +81,10 @@
 		<div class="setting-card setting-card-compact">
 			<div class="setting-heading"><i class="fa fa-bell" aria-hidden="true"></i><span>Toast 16+ words</span><strong>{{toastTimeOutLong}}s</strong></div>
 			<input type="range" class="setting-range" min="1" max="20" step="1" ng-model="toastTimeOutLong" ng-change="setToastTimeOutLong()" aria-label="Toast duration for 16 or more words">
+			<div class="setting-heading mt-2"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>Max cap</span><strong>{{toastTimeOutMax}}s</strong></div>
+			<p>Over 25 words: +2s per 5 words, capped here (min 30s).</p>
+			<select class="setting-select" ng-model="toastTimeOutMax" ng-change="setToastTimeOutMax()"
+				ng-options="v as (v + 's') for v in TOAST_MAX_OPTIONS" aria-label="Max toast duration"></select>
 		</div>
 	</div>
 </section>

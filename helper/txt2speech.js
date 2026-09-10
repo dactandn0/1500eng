@@ -1,7 +1,5 @@
-// Edge neural TTS (hay, free, KHONG login/key) -> Google -> speechSynthesis fallback
-// Chay thang tu browser qua WebSocket wss://speech.platform.bing.com (Read Aloud endpoint).
-// Giữ nguyên tên hàm Text2Speech(word) nên không cần sửa chỗ gọi.
-
+// TTS simple: Puter (neural, can login) -> Browser speechSynthesis (offline).
+// Gi nguyen ten ham Text2Speech(word) nen khong can sua cho goi.
 const utter = new SpeechSynthesisUtterance();
 
 let gLastText = '';
@@ -18,44 +16,41 @@ function Text2SpeechIsBusy() {
 	return false;
 }
 
-// Google path state
-let gAudio = null;
-let gQueue = [];
-// Edge path state
-let edgeAudio = null;
-let edgeUrl = null;
-let edgeWS = null;
-let EDGE_DOWN_UNTIL = 0; // cooldown khi Edge loi -> tam dung Edge, dung Google
+// Puter path state
+let puterAudio = null;
+let puterQueue = [];
 
-function revokeEdgeUrl() {
-	if (edgeUrl) {
-		try { URL.revokeObjectURL(edgeUrl); } catch (e) {}
-		edgeUrl = null;
-	}
+// iOS Safari: audio chi duoc phat trong user-gesture -> mo khoa san.
+let ttsCtx = null;
+function ttsEnsureCtx() {
+	try {
+		if (!ttsCtx) {
+			const AC = window.AudioContext || window.webkitAudioContext;
+			if (AC) ttsCtx = new AC();
+		}
+		if (ttsCtx && ttsCtx.state === 'suspended') {
+			const p = ttsCtx.resume();
+			if (p && typeof p.catch === 'function') p.catch(function () {});
+		}
+	} catch (e) {}
+	return ttsCtx;
 }
+try {
+	['pointerdown', 'touchend', 'click', 'keydown'].forEach(function (ev) {
+		document.addEventListener(ev, ttsEnsureCtx, { passive: true });
+	});
+} catch (e) {}
 
 function Text2SpeechStop() {
 	gSeq++;
-	gQueue = [];
+	puterQueue = [];
 	gLastText = '';
 	ttsSetBusy(false);
-	try {
-		if (edgeWS) {
-			edgeWS.onopen = null; edgeWS.onclose = null;
-			edgeWS.onerror = null; edgeWS.onmessage = null;
-			edgeWS.close();
-		}
-	} catch (e) {}
-	edgeWS = null;
-	if (edgeAudio) {
-		try { edgeAudio.pause(); } catch (e) {}
-		edgeAudio = null;
-	}
-	revokeEdgeUrl();
-	if (gAudio) {
-		try { gAudio.pause(); } catch (e) {}
-		try { gAudio.currentTime = 0; } catch (e) {}
-		gAudio = null;
+	if (puterAudio) {
+		try { puterAudio.pause(); } catch (e) {}
+		try { puterAudio.currentTime = 0; } catch (e) {}
+		try { puterAudio.onended = null; puterAudio.onerror = null; } catch (e) {}
+		puterAudio = null;
 	}
 	try {
 		if (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) {
@@ -79,20 +74,14 @@ function Text2SpeechClean(input) {
 function Text2SpeechSource() {
 	try {
 		if (typeof Helper_loadStr === 'function' && typeof Helper_TTSSourceKey !== 'undefined') {
-			let v = Helper_loadStr(Helper_TTSSourceKey, 'edge');
-			// migrate 1 lan: ban Google cu nghe do -> chuyen sang Edge neural
-			try {
-				if (v === 'google' && typeof Helper_loadStr === 'function'
-					&& Helper_loadStr('TTSSourceMigrated', '') !== '1') {
-					Helper_saveDB(Helper_TTSSourceKey, 'edge');
-					Helper_saveDB('TTSSourceMigrated', '1');
-					v = 'edge';
-				}
-			} catch (e2) {}
-			if (v === 'edge' || v === 'google' || v === 'browser') return v;
+			const v = Helper_loadStr(Helper_TTSSourceKey, 'puter');
+			if (v === 'puter' || v === 'browser') return v;
+			// migrate gia tri cu (edge/google) -> puter
+			try { Helper_saveDB(Helper_TTSSourceKey, 'puter'); } catch (e2) {}
+			return 'puter';
 		}
 	} catch (e) {}
-	return 'edge';
+	return 'puter';
 }
 
 function Text2SpeechRate() {
@@ -102,193 +91,43 @@ function Text2SpeechRate() {
 	return rate;
 }
 
-// =====================================================
-// SHA-256 (sync, cho Sec-MS-GEC). Dung khi crypto.subtle khong co.
-// Chuoi hash luon ASCII (so + hex token) nen chi can ban ASCII.
-// =====================================================
-function sha256Ascii(str) {
-	function rr(v, a) { return (v >>> a) | (v << (32 - a)); }
-	const maxWord = Math.pow(2, 32);
-	let result = '';
-	const words = [];
-	const asciiBitLength = str.length * 8;
-	let hash = sha256Ascii.h = sha256Ascii.h || [];
-	const k = sha256Ascii.k = sha256Ascii.k || [];
-	let primeCounter = k.length;
-	const isComposite = {};
-	for (let candidate = 2; primeCounter < 64; candidate++) {
-		if (!isComposite[candidate]) {
-			for (let i = 0; i < 313; i += candidate) { isComposite[i] = candidate; }
-			hash[primeCounter] = (Math.pow(candidate, 0.5) * maxWord) | 0;
-			k[primeCounter++] = (Math.pow(candidate, 1 / 3) * maxWord) | 0;
-		}
-	}
-	str += '\x80';
-	while (str.length % 64 - 56) str += '\x00';
-	for (let i = 0; i < str.length; i++) {
-		const j = str.charCodeAt(i);
-		if (j >> 8) return '';
-		words[i >> 2] |= j << ((3 - i) % 4) * 8;
-	}
-	words[words.length] = (asciiBitLength / maxWord) | 0;
-	words[words.length] = asciiBitLength;
-	for (let j = 0; j < words.length;) {
-		const w = words.slice(j, j += 16);
-		const oldHash = hash;
-		hash = hash.slice(0, 8);
-		for (let i = 0; i < 64; i++) {
-			const w15 = w[i - 15], w2 = w[i - 2];
-			const a = hash[0], e = hash[4];
-			const temp1 = hash[7]
-				+ (rr(e, 6) ^ rr(e, 11) ^ rr(e, 25))
-				+ ((e & hash[5]) ^ ((~e) & hash[6]))
-				+ k[i]
-				+ (w[i] = (i < 16) ? w[i] : (
-					w[i - 16]
-					+ (rr(w15, 7) ^ rr(w15, 18) ^ (w15 >>> 3))
-					+ w[i - 7]
-					+ (rr(w2, 17) ^ rr(w2, 19) ^ (w2 >>> 10))
-				) | 0);
-			const temp2 = (rr(a, 2) ^ rr(a, 13) ^ rr(a, 22))
-				+ ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
-			hash = [(temp1 + temp2) | 0].concat(hash);
-			hash[4] = (hash[4] + temp1) | 0;
-		}
-		for (let i = 0; i < 8; i++) { hash[i] = (hash[i] + oldHash[i]) | 0; }
-	}
-	for (let i = 0; i < 8; i++) {
-		for (let j = 3; j + 1; j--) {
-			const b = (hash[i] >> (j * 8)) & 255;
-			result += ((b < 16) ? '0' : '') + b.toString(16);
-		}
-	}
-	return result;
-}
-
-// =====================================================
-// Edge TTS helpers (dulieu tu edge-tts, token public)
-// =====================================================
-const EDGE_TRUSTED_TOKEN = '6A5AA1D4EAFF4E9FB37E23D68491D6F4';
-const EDGE_GEC_VERSION = '1-143.0.3650.75';
-
-function edgeHexId() {
+function puterVoice() {
 	try {
-		const a = new Uint8Array(16);
-		crypto.getRandomValues(a);
-		a[6] = (a[6] & 0x0f) | 0x40;
-		a[8] = (a[8] & 0x3f) | 0x80;
-		return Array.from(a, function (b) { return b.toString(16).padStart(2, '0'); }).join('');
-	} catch (e) {
-		let s = '';
-		for (let i = 0; i < 32; i++) s += '0123456789abcdef'[Math.floor(Math.random() * 16)];
-		return s;
-	}
-}
-
-function edgeDateStr() {
-	const d = new Date();
-	const D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][d.getUTCDay()];
-	const M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][d.getUTCMonth()];
-	const p = function (n) { return String(n).padStart(2, '0'); };
-	return D + ' ' + M + ' ' + p(d.getUTCDate()) + ' ' + d.getUTCFullYear() + ' '
-		+ p(d.getUTCHours()) + ':' + p(d.getUTCMinutes()) + ':' + p(d.getUTCSeconds())
-		+ ' GMT+0000 (Coordinated Universal Time)';
-}
-
-function edgeVoice() {
-	try {
-		if (typeof Helper_loadStr === 'function' && typeof Helper_EdgeVoiceKey !== 'undefined') {
-			const v = Helper_loadStr(Helper_EdgeVoiceKey, 'en-US-AriaNeural');
+		if (typeof Helper_loadStr === 'function' && typeof Helper_PuterVoiceKey !== 'undefined') {
+			const v = Helper_loadStr(Helper_PuterVoiceKey, 'Joanna');
 			if (v) return v;
 		}
 	} catch (e) {}
-	return 'en-US-AriaNeural';
+	return 'Joanna';
 }
 
-// rate 0.5..2 -> "-50%".."+100%"; pitch 0..2 -> "-20Hz".."+20Hz"
-function edgeRateStr() {
-	const pct = Math.round((Text2SpeechRate() - 1) * 100);
-	return (pct >= 0 ? '+' : '') + pct + '%';
-}
-function edgePitchStr() {
-	let pitch = 1;
-	try { pitch = Helper_loadFloat(Helper_AudioPitchKey, 1); } catch (e) {}
-	if (!(pitch >= 0 && pitch <= 2)) pitch = 1;
-	const hz = Math.round((pitch - 1) * 20);
-	return (hz >= 0 ? '+' : '') + hz + 'Hz';
+// no-op giu tuong thich (truoc day dung cho Edge cooldown)
+function Text2SpeechResetEdgeCooldown() {}
+
+// =====================================================
+// Puter path (chinh)
+// Dang nhap 1 lan: puter.auth.signIn() (popup) -> token luu san.
+// =====================================================
+function puterEnsureAuth() {
+	return new Promise(function (resolve) {
+		try {
+			if (typeof puter === 'undefined' || !puter.auth) { resolve(false); return; }
+			try {
+				if (puter.auth.isSignedIn()) { resolve(true); return; }
+			} catch (e) {}
+			// Chua login -> mo popup (can chay trong user-gesture; neu bi chan -> false)
+			try {
+				puter.auth.signIn().then(function () {
+					try { resolve(!!puter.auth.isSignedIn()); }
+					catch (e) { resolve(true); }
+				}, function () { resolve(false); });
+			} catch (e) { resolve(false); }
+		} catch (e) { resolve(false); }
+	});
 }
 
-function edgeXmlEscape(s) {
-	return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-function edgeCleanText(s) {
-	// service khong chiu cac ky tu dieu khien
-	return String(s).replace(/[\x00-\x08\x0b\x0c\x0e-\x1f]/g, ' ');
-}
-function edgeSSML(voice, text) {
-	const lang = voice.split('-').slice(0, 2).join('-') || 'en-US';
-	return "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='" + lang + "'>"
-		+ "<voice name='" + voice + "'>"
-		+ "<prosody pitch='" + edgePitchStr() + "' rate='" + edgeRateStr() + "' volume='+0%'>"
-		+ edgeXmlEscape(edgeCleanText(text))
-		+ '</prosody></voice></speak>';
-}
-function edgeConfigMsg() {
-	return 'X-Timestamp:' + edgeDateStr() + '\r\n'
-		+ 'Content-Type:application/json; charset=utf-8\r\n'
-		+ 'Path:speech.config\r\n\r\n'
-		+ '{"context":{"synthesis":{"audio":{"metadataoptions":'
-		+ '{"sentenceBoundaryEnabled":"false","wordBoundaryEnabled":"false"},'
-		+ '"outputFormat":"audio-24khz-48kbitrate-mono-mp3"}}}}\r\n';
-}
-
-// Sec-MS-GEC = SHA256(<win ticks tron 5 phut> + token), uu tien crypto.subtle
-function edgeSecMsGec() {
-	const WIN_EPOCH = 11644473600;
-	let sec = Math.floor(Date.now() / 1000);
-	let ticksStr;
-	try {
-		if (typeof BigInt !== 'undefined') {
-			let t = BigInt(sec) + BigInt(WIN_EPOCH);
-			t -= t % BigInt(300);
-			t *= BigInt(10000000);
-			ticksStr = t.toString();
-		} else {
-			let t = sec + WIN_EPOCH;
-			t -= t % 300;
-			ticksStr = String(t * 10000000);
-		}
-	} catch (e) {
-		let t = sec + WIN_EPOCH;
-		t -= t % 300;
-		ticksStr = String(t * 10000000);
-	}
-	const raw = ticksStr + EDGE_TRUSTED_TOKEN;
-	try {
-		if (typeof crypto !== 'undefined' && crypto.subtle && typeof TextEncoder !== 'undefined') {
-			return crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw)).then(function (buf) {
-				return Array.from(new Uint8Array(buf), function (b) {
-					return b.toString(16).padStart(2, '0');
-				}).join('').toUpperCase();
-			});
-		}
-	} catch (e) {}
-	try {
-		const h = sha256Ascii(raw);
-		if (h) return Promise.resolve(h.toUpperCase());
-	} catch (e) {}
-	return Promise.reject(new Error('no sha256'));
-}
-function edgeWssUrl(gec) {
-	return 'wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1'
-		+ '?TrustedClientToken=' + EDGE_TRUSTED_TOKEN
-		+ '&ConnectionId=' + edgeHexId()
-		+ '&Sec-MS-GEC=' + encodeURIComponent(gec)
-		+ '&Sec-MS-GEC-Version=' + encodeURIComponent(EDGE_GEC_VERSION);
-}
-
-// Cat text dai thanh chunk (~1200 ky tu, ngat o cau/tu)
-function edgeChunk(text) {
+// Cat text dai thanh chunk (~1200 ky tu, ngat o cau/tu). Puter gioi han ~3000 ky tu.
+function puterChunk(text) {
 	const MAX = 1200;
 	const out = [];
 	const sentences = String(text).split(/(?<=[.!?])\s+|\n+/);
@@ -312,439 +151,108 @@ function edgeChunk(text) {
 	return out.length ? out : [text];
 }
 
-// 1 turn: gui SSML, gom audio bytes den khi Path:turn.end
-function edgeParseBinary(buf, parts, decoder) {
-	try {
-		if (!buf || buf.byteLength < 2) return;
-		const hlen = new DataView(buf).getUint16(0);
-		let header = '';
-		try { header = decoder ? decoder.decode(buf.slice(2, 2 + hlen)) : ''; } catch (e) {}
-		if (header.indexOf('Path:audio') >= 0) parts.push(buf.slice(2 + hlen));
-	} catch (e) {}
-}
-function edgeOneTurn(ws, ssml) {
-	return new Promise(function (resolve, reject) {
-		const reqId = edgeHexId();
-		const parts = [];
-		let done = false;
-		let resolved = false;
-		const timer = setTimeout(function () {
-			if (!done) { done = true; reject(new Error('edge timeout')); }
-		}, 15000);
-		let decoder = null;
-		try { decoder = new TextDecoder(); } catch (e) {}
-		ws.onmessage = function (ev) {
-			if (resolved) return;
-			try {
-				const data = ev.data;
-				if (typeof data === 'string') {
-					if (data.indexOf('Path:turn.end') >= 0) {
-						// Cho 1 tick de Blob async (arrayBuffer) kip push vao parts
-						done = true; clearTimeout(timer);
-						setTimeout(function () { resolved = true; resolve(parts); }, 300);
-					}
-					// turn.start / response / metadata -> bo qua
-				} else if (typeof Blob !== 'undefined' && data instanceof Blob) {
-					// Mot so browser tra binary dang Blob du da set binaryType.
-					// Truoc day code bo qua -> parts rong -> 'no audio' -> rot xuong Google
-					// nen doi edgeVoice khong nghe khac biet.
-					try {
-						if (typeof data.arrayBuffer === 'function') {
-							data.arrayBuffer().then(function (buf) {
-								if (resolved) return;
-								edgeParseBinary(buf, parts, decoder);
-							}, function () {});
-						} else {
-							const fr = new FileReader();
-							fr.onload = function () {
-								if (resolved) return;
-								try { edgeParseBinary(fr.result, parts, decoder); } catch (e2) {}
-							};
-							try { fr.readAsArrayBuffer(data); } catch (e2) {}
-						}
-					} catch (e) {}
-				} else if (data instanceof ArrayBuffer) {
-					edgeParseBinary(data, parts, decoder);
-				}
-			} catch (e) { done = true; clearTimeout(timer); reject(e); }
-		};
-		try {
-			ws.send('X-RequestId:' + reqId + '\r\n'
-				+ 'Content-Type:application/ssml+xml\r\n'
-				+ 'X-Timestamp:' + edgeDateStr() + 'Z\r\n'
-				+ 'Path:ssml\r\n\r\n' + ssml);
-		} catch (e) { done = true; clearTimeout(timer); reject(e); }
-	});
-}
-
-function edgePlayBlob(parts, mySeq, done) {
-	let finished = false;
-	const ok = function (v) { if (!finished) { finished = true; done(v); } };
-	try {
-		const blob = new Blob(parts, { type: 'audio/mpeg' });
-		revokeEdgeUrl();
-		edgeUrl = URL.createObjectURL(blob);
-		const audio = new Audio();
-		edgeAudio = audio;
-		audio.onended = function () {
-			if (audio !== edgeAudio) return;
-			edgeAudio = null; revokeEdgeUrl(); ttsSetBusy(false);
-		};
-		audio.onerror = function () {
-			if (audio !== edgeAudio) return;
-			edgeAudio = null; revokeEdgeUrl(); ttsSetBusy(false);
-		};
-		try { audio.playbackRate = 1; } catch (e) {}
-		audio.src = edgeUrl;
-		audio.onplaying = function () { try { window.__lastTtsEngine = 'edge'; } catch (e) {} ok(true); };
-		const pr = audio.play();
-		if (pr && typeof pr.catch === 'function') {
-			pr.catch(function () {
-				if (audio !== edgeAudio) return;
-				edgeAudio = null; revokeEdgeUrl(); ok(false);
-			});
-		}
-		setTimeout(function () { ok(true); }, 2000); // trinh duyet cu khong co playing/play-promise
-	} catch (e) { ok(false); }
-}
-
-// =====================================================
-// Edge via local proxy (python edge_proxy.py -> /api/edge-tts).
-// Browser truc tiep WSS hay bi server 403 (Origin localhost + UA Chrome
-// khong co Edg/...) -> loi `wss://... failed:` trong Console va rot xuong
-// Google (1 giong) nen doi edgeVoice khong nghe khac biet.
-// Proxy chay cung origin, tu set header Edg chuan -> lay dung giong da chon.
-// =====================================================
-let EDGE_PROXY_DOWN_UNTIL = 0;
-// iOS Safari: audio chi duoc phat trong user-gesture. Mo san AudioContext
-// ngay trong gesture de sau fetch() async van phat duoc (WebAudio fallback).
-let ttsCtx = null;
-function ttsEnsureCtx() {
-	try {
-		if (!ttsCtx) {
-			const AC = window.AudioContext || window.webkitAudioContext;
-			if (AC) ttsCtx = new AC();
-		}
-		if (ttsCtx && ttsCtx.state === 'suspended') {
-			const p = ttsCtx.resume();
-			if (p && typeof p.catch === 'function') p.catch(function () {});
-		}
-	} catch (e) {}
-	return ttsCtx;
-}
-try {
-	['pointerdown', 'touchend', 'click', 'keydown'].forEach(function (ev) {
-		document.addEventListener(ev, ttsEnsureCtx, { passive: true });
-	});
-} catch (e) {}
-function blobToArrayBuffer(blob) {
-	return new Promise(function (resolve, reject) {
-		try {
-			if (blob && typeof blob.arrayBuffer === 'function') {
-				blob.arrayBuffer().then(resolve, reject);
-				return;
-			}
-			const fr = new FileReader();
-			fr.onload = function () { resolve(fr.result); };
-			fr.onerror = function () { reject(new Error('blob read')); };
-			fr.readAsArrayBuffer(blob);
-		} catch (e) { reject(e); }
-	});
-}
-// Phat mp3 qua WebAudio (fallback khi Safari iOS chan <audio> sau fetch async)
-function edgePlayWebAudio(arrayBuffer, done) {
-	let finished = false;
-	const ok = function (v) { if (!finished) { finished = true; done(v); } };
-	try {
-		const ctx = ttsEnsureCtx();
-		if (!ctx || typeof ctx.decodeAudioData !== 'function') { ok(false); return; }
-		let buf = arrayBuffer;
-		try { buf = arrayBuffer.slice(0); } catch (e) {}
-		ctx.decodeAudioData(buf, function (audioBuf) {
-			try {
-				const src = ctx.createBufferSource();
-				src.buffer = audioBuf;
-				src.connect(ctx.destination);
-				src.onended = function () {
-					try { if (edgeAudio && edgeAudio._webaudio) edgeAudio = null; } catch (e2) {}
-					ttsSetBusy(false);
-				};
-				ttsSetBusy(true);
-				src.start(0);
-				// Luu de Text2SpeechStop() dung duoc
-				try {
-					edgeAudio = { _webaudio: true, pause: function () { try { src.stop(); } catch (e2) {} try { edgeAudio = null; } catch (e3) {} ttsSetBusy(false); } };
-				} catch (e2) {}
-				try { window.__lastTtsEngine = 'proxy'; } catch (e3) {}
-				ok(true);
-			} catch (e) { ok(false); }
-		}, function () { ok(false); });
-	} catch (e) { ok(false); }
-}
-function edgeProxyUrl() {
-	// Proxy tu xa (ngrok/cloudflared) khi mo app tu GitHub Pages
-	try {
-		if (typeof Helper_loadStr === 'function' && typeof Helper_EdgeProxyKey !== 'undefined') {
-			const custom = (Helper_loadStr(Helper_EdgeProxyKey, '') || '').trim().replace(/\/+$/, '');
-			if (custom) return custom + '/api/edge-tts';
-		}
-	} catch (e) {}
-	return 'api/edge-tts';
-}
-function edgeProxyStatusUrl() {
-	try {
-		if (typeof Helper_loadStr === 'function' && typeof Helper_EdgeProxyKey !== 'undefined') {
-			const custom = (Helper_loadStr(Helper_EdgeProxyKey, '') || '').trim().replace(/\/+$/, '');
-			if (custom) return custom + '/api/edge-status';
-		}
-	} catch (e) {}
-	return 'api/edge-status';
-}
-function edgeProxyEligible() {
-	try {
-		// Co proxy URL tu xa -> luon thu (ke ca mo tu github.io)
-		if (typeof Helper_loadStr === 'function' && typeof Helper_EdgeProxyKey !== 'undefined') {
-			const custom = (Helper_loadStr(Helper_EdgeProxyKey, '') || '').trim();
-			if (custom) return true;
-		}
-		if (typeof location === 'undefined' || !location.hostname) return false;
-		const h = location.hostname;
-		if (h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0') return true;
-		if (h.indexOf('192.168.') === 0 || h.indexOf('10.') === 0) return true;
-		if (/^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(h)) return true; // 172.16-31.x LAN
-	} catch (e) {}
-	return false;
-}
-// Tra ve Promise<boolean>: true = dang phat Edge (qua proxy)
-function edgeViaProxy(text, mySeq) {
-	return new Promise(function (resolve) {
-		let settled = false;
-		const finish = function (v) { if (!settled) { settled = true; resolve(v); } };
-		try {
-			if (typeof fetch === 'undefined' || typeof AbortController === 'undefined') { finish(false); return; }
-			if (!edgeProxyEligible()) { finish(false); return; }
-			if (Date.now() < EDGE_PROXY_DOWN_UNTIL) { finish(false); return; }
-		} catch (e) { finish(false); return; }
-		let ctrl = null;
-		let timer = null;
-		try {
-			ctrl = new AbortController();
-			timer = setTimeout(function () { try { ctrl.abort(); } catch (e) {} }, 12000);
-			fetch(edgeProxyUrl(), {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({
-					voice: edgeVoice(),
-					text: text.length > 6000 ? text.slice(0, 6000) : text,
-					rate: edgeRateStr(),
-					pitch: edgePitchStr()
-				}),
-				signal: ctrl.signal
-			}).then(function (resp) {
-				if (mySeq !== gSeq) { finish(false); return null; }
-				if (!resp || !resp.ok) throw new Error('proxy http ' + (resp && resp.status));
-				return resp.blob();
-			}).then(function (blob) {
-				try {
-					if (!blob) { finish(false); return; }
-					if (mySeq !== gSeq) { finish(false); return; }
-					if (!blob.size) {
-						EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000;
-						finish(false);
-						return;
-					}
-					try { clearTimeout(timer); } catch (e) {}
-					// Phat thang blob mp3 tu proxy (khong can tach Path:audio)
-					let finished = false;
-					const ok = function (v) { if (!finished) { finished = true; finish(v); } };
-					try {
-						revokeEdgeUrl();
-						edgeUrl = URL.createObjectURL(blob);
-						const audio = new Audio();
-						edgeAudio = audio;
-						audio.onended = function () {
-							if (audio !== edgeAudio) return;
-							edgeAudio = null; revokeEdgeUrl(); ttsSetBusy(false);
-						};
-						audio.onerror = function () {
-							if (audio !== edgeAudio) return;
-							edgeAudio = null; revokeEdgeUrl(); ok(false);
-						};
-					try { audio.playbackRate = 1; } catch (e) {}
-					audio.src = edgeUrl;
-					audio.onplaying = function () { try { window.__lastTtsEngine = 'proxy'; } catch (e) {} ok(true); };
-					const webFallback = function () {
-						// Safari iOS chan <audio>.play() sau fetch async -> thu WebAudio
-						blobToArrayBuffer(blob).then(function (ab) {
-							if (mySeq !== gSeq) { ok(false); return; }
-							edgePlayWebAudio(ab, ok);
-						}, function () { ok(false); });
-					};
-					try {
-						const pr = audio.play();
-						if (pr && typeof pr.catch === 'function') {
-							pr.catch(function () {
-								if (audio !== edgeAudio) return;
-								edgeAudio = null; revokeEdgeUrl();
-								webFallback();
-							});
-						}
-					} catch (e) {
-						try { edgeAudio = null; revokeEdgeUrl(); } catch (e2) {}
-						webFallback();
-					}
-					setTimeout(function () { ok(true); }, 2000);
-					} catch (e) { ok(false); }
-				} catch (e) {
-					try { clearTimeout(timer); } catch (e2) {}
-					EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000;
-					finish(false);
-				}
-			}, function () {
-				try { clearTimeout(timer); } catch (e) {}
-				if (mySeq !== gSeq) { finish(false); return; }
-				EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000; // nghi proxy 1 phut
-				finish(false);
-			});
-		} catch (e) {
-			try { if (timer) clearTimeout(timer); } catch (e2) {}
-			finish(false);
-		}
-	});
-}
-
-// Tra ve Promise<boolean>: true = dang phat Edge, false = that bai -> fallback
-function edgeSpeak(text, mySeq) {
-	return new Promise(function (resolve) {
-		let settled = false;
-		const finish = function (v) { if (!settled) { settled = true; resolve(v); } };
-		let ws = null;
-		try {
-			if (typeof WebSocket === 'undefined') { finish(false); return; }
-		} catch (e) { finish(false); return; }
-		edgeSecMsGec().then(function (gec) {
-			if (mySeq !== gSeq) { finish(false); return; }
-			try { ws = new WebSocket(edgeWssUrl(gec)); }
-			catch (e) { finish(false); return; }
-			edgeWS = ws;
-			try { ws.binaryType = 'arraybuffer'; } catch (e) {}
-			const openTimer = setTimeout(function () {
-				if (!settled) { try { ws.close(); } catch (e) {} finish(false); }
-			}, 10000);
-			ws.onerror = function () { if (!settled) { clearTimeout(openTimer); finish(false); } };
-			ws.onclose = function () { if (!settled) { clearTimeout(openTimer); finish(false); } };
-			ws.onopen = function () {
-				clearTimeout(openTimer);
-				(async function () {
-					try {
-						if (mySeq !== gSeq) throw new Error('stale');
-						ws.send(edgeConfigMsg());
-						const chunks = edgeChunk(text.length > 6000 ? text.slice(0, 6000) : text);
-						const all = [];
-						for (let i = 0; i < chunks.length; i++) {
-							if (mySeq !== gSeq) throw new Error('stale');
-						 const parts = await edgeOneTurn(ws, edgeSSML(edgeVoice(), chunks[i]));
-							for (let k = 0; k < parts.length; k++) all.push(parts[k]);
-						}
-						try { ws.close(); } catch (e) {}
-						if (edgeWS === ws) edgeWS = null;
-						if (mySeq !== gSeq) throw new Error('stale');
-						if (!all.length) throw new Error('no audio');
-						edgePlayBlob(all, mySeq, finish);
-					} catch (e) {
-						try { ws.close(); } catch (e2) {}
-						if (edgeWS === ws) edgeWS = null;
-						finish(false);
-					}
-				})();
-			};
-		}, function () { finish(false); });
-	});
-}
-
-// =====================================================
-// Google path (du phong khi Edge loi)
-// =====================================================
-function Text2SpeechGoogleURL(chunk) {
-	return 'https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(chunk);
-}
-function Text2SpeechChunk(text) {
-	const MAX = 170;
-	const parts = [];
-	let cur = '';
-	const sentences = String(text).split(/(?<=[.!?])\s+|;\s*|,\s*(?=. {20,})/);
-	sentences.forEach(function (sen) {
-		sen = (sen || '').trim();
-		if (!sen) return;
-		while (sen.length > MAX) {
-			let cut = sen.lastIndexOf(' ', MAX);
-			if (cut < 40) cut = MAX;
-			parts.push(sen.slice(0, cut));
-			sen = sen.slice(cut).trim();
-		}
-		if ((cur + ' ' + sen).trim().length <= MAX) {
-			cur = (cur + ' ' + sen).trim();
-		} else {
-			if (cur) parts.push(cur);
-			cur = sen;
-		}
-	});
-	if (cur) parts.push(cur);
-	return parts.length ? parts : [text];
-}
-function Text2SpeechPlayQueue(mySeq) {
+function puterPlayQueue(mySeq) {
 	if (mySeq !== gSeq) return;
-	const chunk = gQueue.shift();
+	const chunk = puterQueue.shift();
 	if (chunk == null) {
-		gAudio = null;
+		puterAudio = null;
 		ttsSetBusy(false);
 		return;
 	}
 	ttsSetBusy(true);
-	try { window.__lastTtsEngine = 'google'; } catch (e) {}
-	const audio = new Audio();
-	gAudio = audio;
-	try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
-	try { audio.preload = 'auto'; } catch (e) {}
-	let settled = false;
-	audio.onended = function () {
-		if (settled) return;
-		settled = true;
-		Text2SpeechPlayQueue(mySeq);
-	};
-	audio.onerror = function () {
-		if (settled) return;
-		settled = true;
-		try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
-		catch (e) { Text2SpeechPlayQueue(mySeq); }
-	};
+	let audio = null;
 	try {
-		audio.src = Text2SpeechGoogleURL(chunk);
-		const p = audio.play();
-		if (p && typeof p.catch === 'function') {
-			p.catch(function () {
-				if (settled || mySeq !== gSeq) return;
+		const pr = puter.ai.txt2speech(chunk, {
+			voice: puterVoice(),
+			engine: 'neural',
+			language: 'en-US'
+		});
+		Promise.resolve(pr).then(function (a) {
+			if (mySeq !== gSeq) return;
+			audio = a;
+			puterAudio = audio;
+			try { window.__lastTtsEngine = 'puter'; } catch (e) {}
+			try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
+			let settled = false;
+			audio.onended = function () {
+				if (settled) return;
 				settled = true;
-				try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
-				catch (e) { Text2SpeechPlayQueue(mySeq); }
-			});
-		}
+				puterPlayQueue(mySeq);
+			};
+			audio.onerror = function () {
+				if (settled) return;
+				settled = true;
+				browserFallbackQueue(mySeq);
+			};
+			try {
+				const p = audio.play();
+				if (p && typeof p.catch === 'function') {
+					p.catch(function () {
+						// iOS chan play() sau async -> rot xuong browser cho chunk nay
+						if (settled || mySeq !== gSeq) return;
+						settled = true;
+						browserFallbackQueue(mySeq);
+					});
+				}
+			} catch (e) {
+				if (!settled) {
+					settled = true;
+					browserFallbackQueue(mySeq);
+				}
+			}
+		}, function () {
+			// puter loi (chua login/bi chan) -> ca text rot xuong browser
+			if (mySeq !== gSeq) return;
+			browserFallbackText(mySeq);
+		});
 	} catch (e) {
-		if (!settled) {
-			settled = true;
-			Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); });
-		}
+		if (mySeq !== gSeq) return;
+		browserFallbackText(mySeq);
 	}
 }
-function googleSpeak(text, mySeq) {
+
+// Phat 1 chunk bang browser roi tiep tuc queue puter con lai
+function browserFallbackQueue(mySeq) {
 	if (mySeq !== gSeq) return;
-	const chunks = Text2SpeechChunk(text.length > 2800 ? text.slice(0, 2800) : text);
-	gQueue = chunks.slice();
-	Text2SpeechPlayQueue(mySeq);
+	const rest = puterQueue.slice();
+	puterQueue = [];
+	if (!rest.length) {
+		puterAudio = null;
+		ttsSetBusy(false);
+		return;
+	}
+	try { Text2SpeechBrowser(rest[0], true, function () {
+		if (mySeq !== gSeq) return;
+		puterQueue = rest.slice(1);
+		puterPlayQueue(mySeq);
+	}); } catch (e) {
+		puterQueue = rest.slice(1);
+		puterPlayQueue(mySeq);
+	}
+}
+
+// Rot ca text hien tai xuong browser
+function browserFallbackText(mySeq) {
+	if (mySeq !== gSeq) return;
+	puterQueue = [];
+	puterAudio = null;
+	try { Text2SpeechBrowser(gLastText, true); }
+	catch (e) { ttsSetBusy(false); }
+}
+
+function puterSpeak(text, mySeq) {
+	if (mySeq !== gSeq) return;
+	puterEnsureAuth().then(function (ok) {
+		if (mySeq !== gSeq) return;
+		if (!ok) { browserFallbackText(mySeq); return; }
+		const chunks = puterChunk(text.length > 6000 ? text.slice(0, 6000) : text);
+		puterQueue = chunks.slice();
+		puterPlayQueue(mySeq);
+	});
 }
 
 // =====================================================
-// Browser path (offline) - tu chon voice EN hay nhat
+// Browser path (offline) - ton trong voice da chon o Setting
 // =====================================================
 let browserVoicesCache = null;
 try {
@@ -755,10 +263,6 @@ try {
 		} catch (e) {}
 	}
 } catch (e) {}
-function Text2SpeechResetEdgeCooldown() {
-	EDGE_DOWN_UNTIL = 0;
-	try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {}
-}
 function pickBestBrowserVoice() {
 	try {
 		if (typeof speechSynthesis === 'undefined') return null;
@@ -771,8 +275,7 @@ function pickBestBrowserVoice() {
 			let s = 0;
 			if (n.indexOf('natural') >= 0) s += 5;
 			if (n.indexOf('google') >= 0) s += 4;
-			if (n.indexOf('aria') >= 0 || n.indexOf('jenny') >= 0 || n.indexOf('guy') >= 0) s += 4;
-			if (n.indexOf('microsoft') >= 0) s += 2;
+			if (n.indexOf('samantha') >= 0 || n.indexOf('aria') >= 0 || n.indexOf('jenny') >= 0) s += 4;
 			if ((v.lang || '').toLowerCase() === 'en-us') s += 2;
 			return s;
 		};
@@ -804,25 +307,17 @@ function Text2SpeechBrowser(word, force, onDone) {
 		};
 		try {
 			let bv = null;
-			// Ton trong voice nguoi dung da chon o Setting (selectedVoiceIdx).
-			// Truoc day luon pickBest -> doi voice source=browser nghe van 1 giong.
+			const vs = browserVoicesCache || (browserVoicesCache = speechSynthesis.getVoices() || []);
 			try {
-				const vs = browserVoicesCache || (browserVoicesCache = speechSynthesis.getVoices() || []);
-				try {
-					if (typeof Helper_loadStr === 'function' && typeof Helper_BrowserVoiceKey !== 'undefined') {
-						const uri = Helper_loadStr(Helper_BrowserVoiceKey, '');
-						if (uri && vs) {
-							for (let i = 0; i < vs.length; i++) {
-								if (vs[i] && vs[i].voiceURI === uri) { bv = vs[i]; break; }
-							}
+				if (typeof Helper_loadStr === 'function' && typeof Helper_BrowserVoiceKey !== 'undefined') {
+					const uri = Helper_loadStr(Helper_BrowserVoiceKey, '');
+					if (uri && vs) {
+						for (let i = 0; i < vs.length; i++) {
+							if (vs[i] && vs[i].voiceURI === uri) { bv = vs[i]; break; }
 						}
 					}
-				} catch (e2) {}
-				if (!bv && typeof Helper_loadInt === 'function' && typeof Helper_SelectedVoiceIdx !== 'undefined') {
-					const idx = Helper_loadInt(Helper_SelectedVoiceIdx, -1);
-					if (idx >= 0 && vs && vs[idx]) bv = vs[idx];
 				}
-			} catch (e) {}
+			} catch (e2) {}
 			if (!bv) bv = pickBestBrowserVoice();
 			if (bv) utter.voice = bv;
 		} catch (e) {}
@@ -849,7 +344,7 @@ function Text2Speech(word, force) {
 
 	// Click lai cung 1 cau dang doc -> dung (giu hanh vi cu).
 	// force=true (nut loa Quiz): bam lai la replay tu dau, khong toggle-stop.
-	if (!force && text === gLastText && (edgeAudio || gAudio || gQueue.length || edgeWS)) {
+	if (!force && text === gLastText && (puterAudio || puterQueue.length)) {
 		Text2SpeechStop();
 		return;
 	}
@@ -863,31 +358,7 @@ function Text2Speech(word, force) {
 		Text2SpeechBrowser(text, force);
 		return;
 	}
-	if (src === 'google') {
-		googleSpeak(text, mySeq);
-		return;
-	}
-	// Edge mac dinh: proxy local truoc (tranh Origin/UA block) -> direct WSS -> Google
-	// loi/timeout direct -> nghi Edge 3 phut, rot xuong Google
-	if (Date.now() < EDGE_DOWN_UNTIL) {
-		googleSpeak(text, mySeq);
-		return;
-	}
-	edgeViaProxy(text, mySeq).then(function (okProxy) {
-		if (mySeq !== gSeq) return; // da co request moi hon
-		if (okProxy) return; // dang phat Edge qua proxy
-		edgeSpeak(text, mySeq).then(function (ok) {
-			if (mySeq !== gSeq) return;
-			if (ok) return; // dang phat Edge direct
-			try {
-				console.warn('[TTS] Edge direct WSS that bai (thuong do Origin/UA bi chan tu browser).'
-					+ ' Chay "python edge_proxy.py" thay cho "python -m http.server" de nghe dung giong Edge.'
-					+ ' Tam dung Google fallback.');
-			} catch (e) {}
-			EDGE_DOWN_UNTIL = Date.now() + 3 * 60 * 1000;
-			googleSpeak(text, mySeq);
-		});
-	});
+	puterSpeak(text, mySeq);
 }
 
 // Bam loa Quiz: moi lan bam la replay tu dau (khong toggle-stop nhu Text2Speech thuong)

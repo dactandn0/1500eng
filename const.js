@@ -55,19 +55,8 @@ const EDGE_VOICES = [
 	{ id: 'en-GB-RyanNeural', desc: 'Ryan - Male UK' },
 	{ id: 'en-AU-NatashaNeural', desc: 'Natasha - Female AU' }
 ];
-const Helper_PuterVoiceKey = 'PuterVoice';
-const PUTER_VOICES = [ // AWS Polly voices qua puter.ai.txt2speech (engine neural)
-	{ id: 'Joanna', desc: 'Joanna - Female US' },
-	{ id: 'Kendra', desc: 'Kendra - Female US' },
-	{ id: 'Salli', desc: 'Salli - Female US' },
-	{ id: 'Kimberly', desc: 'Kimberly - Female US' },
-	{ id: 'Ruth', desc: 'Ruth - Female US' },
-	{ id: 'Ivy', desc: 'Ivy - Female US' },
-	{ id: 'Joey', desc: 'Joey - Male US' },
-	{ id: 'Matthew', desc: 'Matthew - Male US' },
-];
 const TTS_SOURCES = [
-	{ id: 'puter', desc: 'Puter neural - hay, can login 1 lan (recommended)' },
+	{ id: 'google', desc: 'Google - free, khong can login (recommended)' },
 	{ id: 'browser', desc: 'Browser - offline, device voice' }
 ];
 const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi;

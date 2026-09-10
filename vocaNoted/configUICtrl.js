@@ -15,12 +15,8 @@ $scope.toastTimeOutLong = HELPER_TOASTER_TIMEOUT_LONG_DEF
 $scope.toastTimeOutMax = HELPER_TOASTER_TIMEOUT_MAX_DEF
 $scope.TOAST_MAX_OPTIONS = (typeof TOAST_MAX_OPTIONS !== 'undefined') ? TOAST_MAX_OPTIONS : [30, 45, 60, 90, 120];
 
-$scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id: 'puter', desc: 'Puter' }, { id: 'browser', desc: 'Browser' }];
-$scope.ttsSource = 'puter';
-$scope.PUTER_VOICES = (typeof PUTER_VOICES !== 'undefined') ? PUTER_VOICES : [{ id: 'Joanna', desc: 'Joanna' }];
-$scope.puterVoice = 'Joanna';
-$scope.puterSignedIn = false;
-$scope.puterUser = '';
+$scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id: 'google', desc: 'Google' }, { id: 'browser', desc: 'Browser' }];
+$scope.ttsSource = 'google';
 $scope.lastEngine = '';
 $scope.BROWSER_VOICES = [];
 $scope.browserVoiceURI = '';
@@ -30,48 +26,10 @@ $scope.setTtsSource = function () {
 	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
 }
 
-$scope.setPuterVoice = function () {
-	Helper_saveDB(Helper_PuterVoiceKey, $scope.puterVoice);
-	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
-}
-
-$scope.puterSignIn = function () {
-	try {
-		if (typeof puter === 'undefined' || !puter.auth) return;
-		puter.auth.signIn().then(function () { $scope.refreshPuterStatus(); },
-			function () { $scope.refreshPuterStatus(); });
-	} catch (e) {}
-}
-
-$scope.puterSignOut = function () {
-	try {
-		if (typeof puter === 'undefined' || !puter.auth) return;
-		puter.auth.signOut();
-	} catch (e) {}
-	$scope.refreshPuterStatus();
-}
-
-$scope.refreshPuterStatus = function () {
-	$scope.puterSignedIn = false;
-	$scope.puterUser = '';
-	try {
-		if (typeof puter !== 'undefined' && puter.auth && puter.auth.isSignedIn()) {
-			$scope.puterSignedIn = true;
-			try {
-				const u = puter.auth.getUser();
-				if (u && u.username) $scope.puterUser = u.username;
-			} catch (e) {}
-		}
-	} catch (e) {}
-	try { $scope.$applyAsync(); } catch (e2) {}
-}
-
 $scope.speechTest = function () {
 	// force=true: nut Test cung 1 cau bam lai la replay, khong toggle-stop.
-	// Lan dau dung Puter se mo popup login (can bam trong gesture nay).
 	try { Text2Speech('Hello, how are you today? I love learning English.', true); } catch (e) {}
 	$scope.lastEngine = '...';
-	$scope.refreshPuterStatus();
 	try {
 		setTimeout(function () {
 			try { $scope.lastEngine = window.__lastTtsEngine || '?'; } catch (e) { $scope.lastEngine = '?'; }
@@ -161,14 +119,9 @@ $scope.setToastTimeOutMed = function () {
 $scope.loadDB = function () {
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
-	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'puter')
-	if ($scope.ttsSource !== 'puter' && $scope.ttsSource !== 'browser')
-		$scope.ttsSource = 'puter'; // migrate edge/google cu
-	$scope.puterVoice = 'Joanna'
-	try {
-		if (typeof Helper_PuterVoiceKey !== 'undefined')
-			$scope.puterVoice = Helper_loadStr(Helper_PuterVoiceKey, 'Joanna')
-	} catch (e) {}
+	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'google')
+	if ($scope.ttsSource !== 'google' && $scope.ttsSource !== 'browser')
+		$scope.ttsSource = 'google'; // migrate puter/edge cu
 
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 	$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)
@@ -188,7 +141,6 @@ $scope.loadDB = function () {
 			$scope.browserVoiceURI = Helper_loadStr(Helper_BrowserVoiceKey, '');
 	} catch (e) {}
 	$scope.refreshBrowserVoices();
-	$scope.refreshPuterStatus();
 };
 
 

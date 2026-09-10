@@ -32,7 +32,7 @@ function qUnique(list) {
 	return out;
 }
 
-$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic'
+$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic' | 'dir'
 $scope.setMode = function (m) {
 	$scope.mode = m;
 	try { Text2SpeechStop(); } catch (e) {}
@@ -40,6 +40,8 @@ $scope.setMode = function (m) {
 	$timeout(function () {
 		if (m === 'detail' && $scope.detail.current && !$scope.detail.answered && !$scope.detail.finished) {
 			$scope.detailSpeak(null, true);
+		} else if (m === 'dir' && $scope.dir.current && !$scope.dir.answered && !$scope.dir.finished) {
+			$scope.dirSpeak(null, true);
 		} else if (m === 'voca' && $scope.quiz.current && !$scope.quiz.answered && $scope.quiz.direction === 'listen') {
 			try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)(quizHeadword($scope.quiz.current)); } catch (e) {}
 		}
@@ -1291,10 +1293,692 @@ $scope.picSpeak = function (ev, text, force) {
 	try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)(word); } catch (e) {}
 };
 
+// =====================================================
+// SECTION 4: Directions - cau chi duong that tu OpenStreetMap (free, khong key)
+// Route that tu OSRM demo server (du lieu OSM): steps -> cau chi duong (ten duong,
+// re trai/phai, khoang cach that). Question CHI CO LOA; ABCD la 4 cau na-na nhau.
+// Mat mang / het quota -> fallback sample local. Map tinh chi hien SAU khi tra loi.
+// Ton trong server free: toi da ~1 request/giay.
+// Docs: https://router.project-osrm.org/ , https://www.openstreetmap.org/copyright
+// =====================================================
+const DIR_ROUND_SIZE = 10;
+// Trong so thanh pho: ~70% Houston, Texas; con lai chia deu Dallas / Austin / San Antonio.
+const DIR_CENTERS = [
+	{ id: 'houston', label: 'Houston, Texas', lat: 29.7604, lon: -95.3698, w: 70 },
+	{ id: 'dallas', label: 'Dallas, Texas', lat: 32.7767, lon: -96.7970, w: 10 },
+	{ id: 'austin', label: 'Austin, Texas', lat: 30.2672, lon: -97.7431, w: 10 },
+	{ id: 'sanantonio', label: 'San Antonio, Texas', lat: 29.4241, lon: -98.4936, w: 10 }
+];
+const DIR_OSM = { routes: [], nearby: [], busy: false };
+const DIR_FLIP_MOD = {
+	'left': 'right', 'right': 'left',
+	'slight left': 'slight right', 'slight right': 'slight left',
+	'sharp left': 'sharp right', 'sharp right': 'sharp left'
+};
+
+function dirCenterOf(id) {
+	for (let i = 0; i < DIR_CENTERS.length; i++) {
+		if (DIR_CENTERS[i].id === id) return DIR_CENTERS[i];
+	}
+	return DIR_CENTERS[0];
+}
+function dirPickCenter(filter) {
+	if (filter && filter !== 'all') return dirCenterOf(filter);
+	let total = 0, i;
+	for (i = 0; i < DIR_CENTERS.length; i++) total += (DIR_CENTERS[i].w || 0);
+	let r = Math.random() * total;
+	for (i = 0; i < DIR_CENTERS.length; i++) {
+		r -= (DIR_CENTERS[i].w || 0);
+		if (r <= 0) return DIR_CENTERS[i];
+	}
+	return DIR_CENTERS[0];
+}
+// diem random: c co {lat, lon} (dung duoc cho ca center lan diem start)
+function dirRandPt(c, minM, maxM) {
+	const r = minM + Math.random() * (maxM - minM);
+	const br = Math.random() * 2 * Math.PI;
+	const dLat = (r * Math.cos(br)) / 111320;
+	const dLon = (r * Math.sin(br)) / (111320 * Math.cos(c.lat * Math.PI / 180));
+	return { lat: c.lat + dLat, lon: c.lon + dLon };
+}
+function dirFmtDist(m) {
+	m = Math.round(m);
+	if (m >= 1000) return (Math.round(m / 100) / 10) + ' kilometers';
+	if (m >= 100) return (Math.round(m / 10) * 10) + ' meters';
+	if (m < 20) m = 20;
+	return m + ' meters';
+}
+// parts: [{op:'head'|'turn'|'cont'|'merge'|'rdbt', mod, road, dist}] -> 2-4 cau tieng Anh
+function dirRender(parts, side) {
+	const out = [];
+	parts.forEach(function (p) {
+		const road = p.road || 'the road';
+		if (p.op === 'head') {
+			out.push('Head ' + (p.mod ? p.mod + ' ' : '') + 'on ' + road + ' for ' + dirFmtDist(p.dist));
+		} else if (p.op === 'turn') {
+			out.push('Turn ' + (p.mod || 'left') + ' onto ' + road);
+		} else if (p.op === 'merge') {
+			out.push('Merge onto ' + road);
+		} else if (p.op === 'rdbt') {
+			out.push('At the roundabout, take the exit onto ' + road);
+		} else {
+			if (road === 'the road') out.push('Continue straight for ' + dirFmtDist(p.dist));
+			else if (!p.mod || p.mod === 'straight') out.push('Continue on ' + road + ' for ' + dirFmtDist(p.dist));
+			else out.push('Continue ' + p.mod + ' onto ' + road + ' for ' + dirFmtDist(p.dist));
+		}
+	});
+	if (side === 'left' || side === 'right') out.push('Your destination is on the ' + side);
+	else out.push('You have arrived at your destination');
+	return out.join('. ') + '.';
+}
+// OSRM steps -> {parts, side, roads, text, start, end, city} (null neu kem chat luong)
+function dirParseOsrm(json, a, b, center) {
+	try {
+		if (!json || json.code !== 'Ok' || !json.routes || !json.routes.length) return null;
+		const leg = json.routes[0].legs && json.routes[0].legs[0];
+		const steps = (leg && leg.steps) || [];
+		if (steps.length < 2) return null;
+		const parts = [];
+		let side = '';
+		const roads = [];
+		steps.forEach(function (st) {
+			const man = st.maneuver || {};
+			const type = man.type || '';
+			const mod = man.modifier || '';
+			const name = (st.name || '').trim();
+			const dist = st.distance || 0;
+			if (type === 'arrive') {
+				if (mod === 'left' || mod === 'right') side = mod;
+				return;
+			}
+			if (name && roads.indexOf(name) < 0) roads.push(name);
+			if (type === 'depart') {
+				parts.push({ op: 'head', mod: (/^(north|south|east|west)$/.test(mod) ? mod : ''), road: name, dist: dist });
+			} else if (type === 'turn') {
+				if (!mod) return;
+				parts.push({ op: 'turn', mod: mod, road: name, dist: 0 });
+			} else if (type === 'new name') {
+				parts.push({ op: 'cont', mod: mod, road: name, dist: dist });
+			} else if (type === 'continue') {
+				if (dist < 30 && !name) return;
+				parts.push({ op: 'cont', mod: (mod || 'straight'), road: name, dist: dist });
+			} else if (type === 'merge' || type === 'on ramp' || type === 'off ramp' || type === 'fork') {
+				parts.push({ op: 'merge', mod: mod, road: name, dist: 0 });
+			} else if (type.indexOf('roundabout') >= 0 || type.indexOf('rotary') >= 0) {
+				parts.push({ op: 'rdbt', mod: mod, road: name, dist: 0 });
+			} else if (dist >= 30 || name) {
+				parts.push({ op: 'cont', mod: (mod || 'straight'), road: name, dist: dist });
+			}
+		});
+		const slim = parts.slice(0, 3); // gon: toi da 3 menh de de de nghe
+		if (!slim.length || !roads.length) return null;
+		return { qtype: 'route', parts: slim, side: side, roads: roads, text: dirRender(slim, side), start: a, end: b, city: center.id };
+	} catch (e) { return null; }
+}
+function dirFetchRoute(center) {
+	const a = dirRandPt(center, 0, 700);
+	const b = dirRandPt(a, 400, 1200);
+	const url = 'https://router.project-osrm.org/route/v1/driving/' +
+		a.lon.toFixed(5) + ',' + a.lat.toFixed(5) + ';' + b.lon.toFixed(5) + ',' + b.lat.toFixed(5) +
+		'?overview=false&steps=true';
+	return fetch(url).then(function (r) {
+		if (!r.ok) throw new Error('osrm ' + r.status);
+		return r.json();
+	}).then(function (json) {
+		return dirParseOsrm(json, a, b, center);
+	});
+}
+// =====================================================
+// NEARBY: "X is next to / across from / near Y" (nha B canh/sau/doi dien nha C,
+// near lake/park/school...) - du lieu that tu Overpass API (OSM, free, khong key).
+// Quan he suy tu toa do that: <120m = next to, <400m = near, xa hon = huong
+// la ban (north of...); 2 so nha cung duong: lien ke = next to, chan/le = across from.
+// Docs: https://wiki.openstreetmap.org/wiki/Overpass_API
+// =====================================================
+const DIR_OVERPASS_EPS = [
+	'https://overpass-api.de/api/interpreter',
+	'https://overpass.kumi.systems/api/interpreter'
+];
+function dirOverpassQuery(lat, lon, r) {
+	const sel = [
+		'node["leisure"="park"]["name"]',
+		'way["leisure"="park"]["name"]',
+		'node["leisure"="playground"]["name"]',
+		'node["amenity"~"^(school|library|hospital|fire_station|college|university)$"]["name"]',
+		'way["amenity"~"^(school|library|hospital|fire_station|college|university)$"]["name"]',
+		'node["natural"="water"]["name"]',
+		'way["natural"="water"]["name"]',
+		'node["addr:housenumber"]["addr:street"]',
+		'way["addr:housenumber"]["addr:street"]'
+	];
+	return '[out:json][timeout:20];(' +
+		sel.map(function (s) { return s + '(around:' + r + ',' + lat.toFixed(5) + ',' + lon.toFixed(5) + ');'; }).join('') +
+		');out center tags;';
+}
+function dirFetchNearby(center) {
+	const p = dirRandPt(center, 0, 900);
+	const data = dirOverpassQuery(p.lat, p.lon, 800);
+	function tryEp(i) {
+		if (i >= DIR_OVERPASS_EPS.length) return Promise.reject(new Error('overpass down'));
+		return fetch(DIR_OVERPASS_EPS[i] + '?data=' + encodeURIComponent(data)).then(function (r) {
+			if (!r.ok) throw new Error('overpass ' + r.status);
+			return r.json();
+		}).catch(function () { return tryEp(i + 1); });
+	}
+	return tryEp(0).then(function (json) { return dirParseOverpass(json, center); });
+}
+function dirHavM(a, b) {
+	const R = 6371000, dLa = (b.lat - a.lat) * Math.PI / 180;
+	const dLo = (b.lon - a.lon) * Math.PI / 180;
+	const s1 = Math.sin(dLa / 2), s2 = Math.sin(dLo / 2);
+	const h = s1 * s1 + Math.cos(a.lat * Math.PI / 180) * Math.cos(b.lat * Math.PI / 180) * s2 * s2;
+	return 2 * R * Math.asin(Math.sqrt(h));
+}
+function dirBearing(a, b) {
+	const la1 = a.lat * Math.PI / 180, la2 = b.lat * Math.PI / 180;
+	const dLo = (b.lon - a.lon) * Math.PI / 180;
+	const y = Math.sin(dLo) * Math.cos(la2);
+	const x = Math.cos(la1) * Math.sin(la2) - Math.sin(la1) * Math.cos(la2) * Math.cos(dLo);
+	return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+}
+function dirCardinal(br) {
+	const dirs = ['north', 'northeast', 'east', 'southeast', 'south', 'southwest', 'west', 'northwest'];
+	return dirs[Math.round(br / 45) % 8];
+}
+// Overpass JSON -> {qtype:'nearby', a, b, rel, pa, pb, city, altNames, text}
+function dirParseOverpass(json, center) {
+	try {
+		const els = (json && json.elements) || [];
+		if (!els.length) return null;
+		const pois = [], houses = [], seen = {};
+		els.forEach(function (e) {
+			const t = e.tags || {};
+			let lat = e.lat, lon = e.lon;
+			if ((lat == null || lon == null) && e.center) { lat = e.center.lat; lon = e.center.lon; }
+			if (lat == null || lon == null) return;
+			if (t['addr:housenumber'] && t['addr:street']) {
+				const num = String(t['addr:housenumber']).trim(), street = String(t['addr:street']).trim();
+				if (!num || !street || seen['H' + num + '|' + street.toLowerCase()]) return;
+				seen['H' + num + '|' + street.toLowerCase()] = true;
+				houses.push({ num: num, street: street, lat: lat, lon: lon });
+				return;
+			}
+			const name = (t.name || '').trim();
+			if (!name || seen['P' + name.toLowerCase()]) return;
+			let cat = '';
+			if (t.leisure === 'park') cat = 'park';
+			else if (t.leisure === 'playground') cat = 'playground';
+			else if (t.amenity === 'school') cat = 'school';
+			else if (t.amenity === 'library') cat = 'library';
+			else if (t.amenity === 'hospital') cat = 'hospital';
+			else if (t.amenity === 'fire_station') cat = 'fire station';
+			else if (t.amenity === 'college' || t.amenity === 'university') cat = 'college';
+			else if (t.natural === 'water') {
+				const w = String(t.water || ''), nm = name;
+				if (/river/i.test(w) || /river/i.test(nm)) cat = 'river';
+				else if (/pond/i.test(w) || /pond/i.test(nm)) cat = 'pond';
+				else cat = 'lake';
+			} else return;
+			seen['P' + name.toLowerCase()] = true;
+			pois.push({ name: name, cat: cat, lat: lat, lon: lon });
+		});
+		// uu tien 1: 2 POI co ten gan nhau (park/school/lake...)
+		if (pois.length >= 2) {
+			const order = qShuffle(pois.slice());
+			for (let i = 0; i < order.length; i++) {
+				for (let j = 0; j < order.length; j++) {
+					if (i === j) continue;
+					const A = order[i], B = order[j];
+					const d = dirHavM(A, B);
+					if (d > 1500) continue;
+					const rel = d < 120 ? 'next to' : (d < 400 ? 'near' : dirCardinal(dirBearing(B, A)) + ' of');
+					const alts = [];
+					order.forEach(function (o) {
+						if (o.name !== A.name && o.name !== B.name && alts.indexOf(o.name) < 0) alts.push(o.name);
+					});
+					houses.forEach(function (h) {
+						const nm = h.num + ' ' + h.street;
+						if (alts.indexOf(nm) < 0) alts.push(nm);
+					});
+					DIR_LOCAL_POIS.forEach(function (o) {
+						if (o.name !== A.name && o.name !== B.name && alts.indexOf(o.name) < 0) alts.push(o.name);
+					});
+					return dirMakeNearby(A.name, B.name, rel, A, B, center.id, alts);
+				}
+			}
+		}
+		// uu tien 2: 2 so nha cung duong (nha B canh / doi dien nha C)
+		if (houses.length >= 2) {
+			const byStreet = {};
+			houses.forEach(function (h) {
+				const k = h.street.toLowerCase();
+				(byStreet[k] = byStreet[k] || []).push(h);
+			});
+			const keys = qShuffle(Object.keys(byStreet));
+			for (let k = 0; k < keys.length; k++) {
+				const list = byStreet[keys[k]];
+				if (list.length < 2) continue;
+				qShuffle(list);
+				const A = list[0], B = list[1];
+				const d = dirHavM(A, B);
+				if (d > 400) continue;
+				const na = parseInt(A.num, 10), nb = parseInt(B.num, 10);
+				let rel;
+				if (!isNaN(na) && !isNaN(nb) && Math.abs(na - nb) <= 8) rel = 'next to';
+				else if (!isNaN(na) && !isNaN(nb) && (na % 2) !== (nb % 2)) rel = 'across from';
+				else rel = d < 120 ? 'next to' : 'near';
+				const aName = A.num + ' ' + A.street, bName = B.num + ' ' + B.street;
+				const alts = [];
+				houses.forEach(function (h) {
+					const nm = h.num + ' ' + h.street;
+					if (nm !== aName && nm !== bName && alts.indexOf(nm) < 0) alts.push(nm);
+				});
+				pois.forEach(function (o) { if (alts.indexOf(o.name) < 0) alts.push(o.name); });
+				DIR_LOCAL_POIS.forEach(function (o) { if (alts.indexOf(o.name) < 0) alts.push(o.name); });
+				return dirMakeNearby(aName, bName, rel, A, B, center.id, alts);
+			}
+		}
+		return null;
+	} catch (e) { return null; }
+}
+function dirMakeNearby(a, b, rel, pa, pb, cityId, altNames) {
+	const text = a + ' is ' + rel + ' ' + b + '.';
+	return { qtype: 'nearby', a: a, b: b, rel: rel, pa: pa, pb: pb, city: cityId, altNames: altNames || [], text: text };
+}
+const DIR_FLIP_REL = {
+	'next to': ['across from', 'behind'],
+	'across from': ['next to', 'behind'],
+	'behind': ['next to', 'across from'],
+	'near': ['far from', 'next to'],
+	'far from': ['near'],
+	'north of': ['south of'], 'south of': ['north of'],
+	'east of': ['west of'], 'west of': ['east of'],
+	'northeast of': ['southwest of'], 'southwest of': ['northeast of'],
+	'northwest of': ['southeast of'], 'southeast of': ['northwest of']
+};
+// bien the gay nham: 0 = doi quan he, 1 = doi ten B, 2 = doi ten A / doi so nha
+function dirNearbyMutate(parsed, idx) {
+	for (let tries = 0; tries < 12; tries++) {
+		let a = parsed.a, b = parsed.b, rel = parsed.rel;
+		if (idx === 0) {
+			const cands = DIR_FLIP_REL[rel] || ['near'];
+			rel = qPick(cands);
+		} else if (idx === 1) {
+			if (!parsed.altNames.length) continue;
+			b = qPick(parsed.altNames);
+			if (b === parsed.b) continue;
+		} else {
+			if (parsed.altNames.length && Math.random() < 0.6) {
+				a = qPick(parsed.altNames);
+				if (a === parsed.a) continue;
+			} else {
+				// doi so nha kieu detail (1204 -> 1024)
+				const m = a.match(/^(\d+)\s+(.*)$/);
+				if (!m) continue;
+				a = swapDigitsNum(parseInt(m[1], 10)) + ' ' + m[2];
+				if (a === parsed.a) continue;
+			}
+		}
+		const t = a + ' is ' + rel + ' ' + b + '.';
+		if (t && t !== parsed.text) return t;
+	}
+	return null;
+}
+function dirBuildNearbyOptions(parsed) {
+	const opts = [parsed.text];
+	[0, 1, 2].forEach(function (k) {
+		const m = dirNearbyMutate(parsed, k);
+		if (m && opts.indexOf(m) < 0) opts.push(m);
+	});
+	let guard = 0;
+	while (opts.length < 4 && guard++ < 20) {
+		const m = dirNearbyMutate(parsed, guard % 3);
+		if (m && opts.indexOf(m) < 0) opts.push(m);
+	}
+	while (opts.length < 4) opts.push(parsed.text + ' ');
+	return qShuffle(opts.slice(0, 4));
+}
+function dirItemFromNearby(parsed) {
+	return dirWrapItem({
+		sub: 'nearby', city: parsed.city, live: true, text: parsed.text,
+		options: dirBuildNearbyOptions(parsed), start: parsed.pa, end: parsed.pb
+	});
+}
+function dirItemFromLive(live) {
+	if (live && live.qtype === 'nearby') return dirItemFromNearby(live);
+	return dirItemFromParsed(live);
+}
+// sample offline: dia danh Houston that + so nha Texas
+const DIR_LOCAL_POIS = [
+	{ name: 'Memorial Park', cat: 'park' }, { name: 'Hermann Park', cat: 'park' },
+	{ name: 'Discovery Green', cat: 'park' }, { name: 'Buffalo Bayou Park', cat: 'park' },
+	{ name: 'Lamar High School', cat: 'school' }, { name: 'Westside High School', cat: 'school' },
+	{ name: 'Houston Public Library', cat: 'library' }, { name: 'Memorial Hermann Hospital', cat: 'hospital' },
+	{ name: 'Lake Houston', cat: 'lake' }, { name: 'McGovern Lake', cat: 'lake' },
+	{ name: 'Station 8 Fire Station', cat: 'fire station' }, { name: 'Rice University', cat: 'college' }
+];
+const DIR_LOCAL_RELS = ['next to', 'near', 'north of', 'south of', 'east of', 'west of', 'across from'];
+function dirGenLocalNearby(filter) {
+	const center = dirPickCenter(filter);
+	const pool = qShuffle(DIR_LOCAL_POIS.slice());
+	const A = pool[0], B = pool[1];
+	const useHouse = Math.random() < 0.4;
+	let parsed;
+	if (useHouse) {
+		const g = qPick(STREET_GROUPS);
+		const road = qPick(g) + ' ' + qPick(STREET_TYPES);
+		const n1 = qRand(1201, 4899);
+		const rel = qPick(['next to', 'across from', 'near']);
+		const n2 = (rel === 'next to') ? n1 + 2 : (rel === 'across from' ? n1 + 1 : n1 + qRand(10, 60));
+		const alts = pool.slice(2, 6).map(function (o) { return o.name; });
+		parsed = dirMakeNearby(n1 + ' ' + road, n2 + ' ' + road, rel, null, null, center.id, alts);
+	} else {
+		const alts = pool.slice(2).map(function (o) { return o.name; });
+		parsed = dirMakeNearby(A.name, B.name, qPick(DIR_LOCAL_RELS), null, null, center.id, alts);
+	}
+	return dirWrapItem({
+		sub: 'nearby', city: center.id, live: false, text: parsed.text,
+		options: dirBuildNearbyOptions(parsed), start: null, end: null
+	});
+}
+// nap cache du lieu that (route + nearby xen ke; tuan tu, ~1.1s/cau);
+// xong thi nang cap cac cau sample chua lam toi
+function dirEnsureOsm(want) {
+	if (DIR_OSM.busy || typeof fetch !== 'function') return;
+	DIR_OSM.busy = true;
+	want = want || 6;
+	let attempts = 0;
+	const maxAttempts = want * 3;
+	function cachedCount() { return DIR_OSM.routes.length + DIR_OSM.nearby.length; }
+	function step() {
+		if (cachedCount() >= want || attempts >= maxAttempts) {
+			DIR_OSM.busy = false;
+			try { dirUpgradePending(); } catch (e) {}
+			return;
+		}
+		attempts++;
+		const center = dirPickCenter(($scope.dir && $scope.dir.type) || 'all');
+		const wantNearby = Math.random() < 0.5;
+		const p = wantNearby ? dirFetchNearby(center) : dirFetchRoute(center);
+		p.then(function (parsed) {
+			if (parsed && parsed.qtype === 'nearby') {
+				DIR_OSM.nearby.push(parsed);
+				if (DIR_OSM.nearby.length > 30) DIR_OSM.nearby.shift();
+			} else if (parsed) {
+				DIR_OSM.routes.push(parsed);
+				if (DIR_OSM.routes.length > 30) DIR_OSM.routes.shift();
+			}
+		}).catch(function () {
+			// fail -> giu sample local, khong lam gi
+		}).finally(function () {
+			$timeout(step, 1100);
+		});
+	}
+	$timeout(step, 0);
+}
+function dirTakeOsm(filter, qtype) {
+	const pool = (qtype === 'nearby') ? DIR_OSM.nearby : DIR_OSM.routes;
+	for (let i = pool.length - 1; i >= 0; i--) {
+		if (!filter || filter === 'all' || pool[i].city === filter) {
+			return pool.splice(i, 1)[0];
+		}
+	}
+	return null;
+}
+// thay cau sample (chua lam toi) bang du lieu that vua fetch ve (uu tien dung loai)
+function dirUpgradePending() {
+	const d = $scope.dir;
+	if (!d || !d.items || !d.items.length || d.finished) return;
+	for (let i = d.index + 1; i < d.items.length; i++) {
+		const it = d.items[i];
+		if (it && it.needsOsm) {
+			const live = dirTakeOsm(d.type, it.want) || dirTakeOsm(d.type, it.want === 'nearby' ? 'route' : 'nearby');
+			if (!live) break;
+			d.items[i] = dirItemFromLive(live);
+		}
+	}
+}
+function dirCloneParts(parts) {
+	return parts.map(function (p) { return { op: p.op, mod: p.mod, road: p.road, dist: p.dist }; });
+}
+function dirLocalRoad(exclude) {
+	const flat = [];
+	STREET_GROUPS.forEach(function (g) {
+		g.forEach(function (s) {
+			if (s !== exclude && flat.indexOf(s) < 0) flat.push(s);
+		});
+	});
+	return qPick(flat) + ' ' + qPick(STREET_TYPES);
+}
+// bien the gay nham: idx 0 = doi trai/phai, 1 = doi ten duong, 2 = doi khoang cach
+function dirMutate(parsed, idx) {
+	for (let tries = 0; tries < 12; tries++) {
+		const parts = dirCloneParts(parsed.parts);
+		let side = parsed.side;
+		if (idx === 0) {
+			let done = false;
+			for (let i = 0; i < parts.length; i++) {
+				if (DIR_FLIP_MOD[parts[i].mod]) { parts[i].mod = DIR_FLIP_MOD[parts[i].mod]; done = true; break; }
+			}
+			if (!done) side = (side === 'left') ? 'right' : 'left';
+		} else if (idx === 1) {
+			const cands = parts.filter(function (p) { return p.road; });
+			if (!cands.length) continue;
+			const target = qPick(cands);
+			const others = parsed.roads.filter(function (r) { return r && r !== target.road; });
+			target.road = others.length ? qPick(others) : dirLocalRoad(target.road);
+		} else {
+			const cands = parts.filter(function (p) { return p.dist >= 40; });
+			if (!cands.length) continue;
+			const target = qPick(cands);
+			let nd = Math.round(target.dist + qPick([-150, -100, -60, 60, 100, 150]));
+			if (nd < 40) nd = target.dist + 120;
+			target.dist = nd;
+		}
+		const t = dirRender(parts, side);
+		if (t && t !== parsed.text) return { text: t, side: side };
+	}
+	return null;
+}
+function dirBuildOptions(parsed) {
+	const opts = [parsed.text];
+	[0, 1, 2].forEach(function (k) {
+		const m = dirMutate(parsed, k);
+		if (m && opts.indexOf(m.text) < 0) opts.push(m.text);
+	});
+	let guard = 0;
+	while (opts.length < 4 && guard++ < 20) {
+		const m = dirMutate(parsed, guard % 3);
+		if (m && opts.indexOf(m.text) < 0) opts.push(m.text);
+	}
+	while (opts.length < 4) opts.push(parsed.text + ' ');
+	return qShuffle(opts.slice(0, 4));
+}
+function dirMapImg(a, b) {
+	if (!a || !b) return '';
+	const midLat = ((a.lat + b.lat) / 2).toFixed(5), midLon = ((a.lon + b.lon) / 2).toFixed(5);
+	return 'https://staticmap.openstreetmap.de/staticmap.php?center=' + midLat + ',' + midLon +
+		'&zoom=15&size=420x220&maptype=mapnik&markers=' +
+		a.lat.toFixed(5) + ',' + a.lon.toFixed(5) + ',green-pushpin|' +
+		b.lat.toFixed(5) + ',' + b.lon.toFixed(5) + ',red-pushpin';
+}
+function dirOsmLink(a, b) {
+	if (!a || !b) return '';
+	return 'https://www.openstreetmap.org/directions?from=' + a.lat.toFixed(5) + ',' + a.lon.toFixed(5) +
+		'&to=' + b.lat.toFixed(5) + ',' + b.lon.toFixed(5);
+}
+function dirWrapItem(o) {
+	const idx = o.options.indexOf(o.text);
+	const sub = o.sub || 'route';
+	const tag = o.live ? (' [OSM live · ' + sub + ']') : ' [sample]';
+	return {
+		kind: 'dir', city: o.city, live: o.live, sub: sub, want: sub,
+		speakText: o.text, transcript: o.text + tag,
+		correct: o.text, options: o.options, correctIdx: idx >= 0 ? idx : 0,
+		start: o.start || null, end: o.end || null,
+		mapImg: dirMapImg(o.start, o.end), osmLink: dirOsmLink(o.start, o.end),
+		needsOsm: !o.live
+	};
+}
+function dirItemFromParsed(parsed) {
+	return dirWrapItem({
+		sub: 'route', city: parsed.city, live: true, text: parsed.text,
+		options: dirBuildOptions(parsed), start: parsed.start, end: parsed.end
+	});
+}
+// fallback offline: route sample hoac nearby sample (tron 50/50)
+function dirGenLocalItem(filter, wantNearby) {
+	if (wantNearby == null) wantNearby = Math.random() < 0.5;
+	if (wantNearby) return dirGenLocalNearby(filter);
+	const center = dirPickCenter(filter);
+	const g = qPick(STREET_GROUPS);
+	const r1 = qPick(g);
+	const rest = g.filter(function (s) { return s !== r1; });
+	const r2 = rest.length ? qPick(rest) : qPick(g);
+	const t1 = qPick(STREET_TYPES);
+	let t2 = qPick(STREET_TYPES), gg = 0;
+	while (t2 === t1 && gg++ < 5) t2 = qPick(STREET_TYPES);
+	const road1 = r1 + ' ' + t1, road2 = r2 + ' ' + t2;
+	const parts = [
+		{ op: 'head', mod: '', road: road1, dist: qPick([100, 150, 200, 250, 300, 400, 500]) },
+		{ op: 'turn', mod: qPick(['left', 'right']), road: road2, dist: 0 }
+	];
+	if (Math.random() < 0.5) parts.push({ op: 'cont', mod: 'straight', road: road2, dist: qPick([100, 200, 300]) });
+	const side = qPick(['left', 'right']);
+	const parsed = { parts: parts, side: side, roads: [road1, road2], text: dirRender(parts, side) };
+	return dirWrapItem({
+		city: center.id, live: false, text: parsed.text,
+		options: dirBuildOptions(parsed), start: null, end: null
+	});
+}
+
+$scope.dir = {
+	type: 'all', // all | houston | dallas | austin | sanantonio
+	items: [],
+	index: 0,
+	current: null,
+	options: [],
+	correctIdx: -1,
+	picked: -1,
+	answered: false,
+	score: 0,
+	streak: 0,
+	bestStreak: 0,
+	wrong: [],
+	finished: false
+};
+
+$scope.setDirType = function (t) {
+	$scope.dir.type = t;
+	$scope.startDir();
+};
+
+$scope.dirCityLabel = function (id) {
+	if (!id || id === 'all') return 'All cities';
+	return dirCenterOf(id).label;
+};
+
+$scope.startDir = function (wrongOnly, noSpeak) {
+	try { Text2SpeechStop(); } catch (e) {}
+	let items = [];
+	if (wrongOnly && $scope.dir.wrong.length) {
+		items = $scope.dir.wrong.slice(0, DIR_ROUND_SIZE).map(function (w) {
+			const opts = qShuffle(w.options.slice());
+			return {
+				kind: 'dir', city: w.city, live: w.live, sub: w.sub || 'route', want: w.want || w.sub || 'route',
+				speakText: w.speakText, transcript: w.transcript,
+				correct: w.correct, options: opts, correctIdx: opts.indexOf(w.correct),
+				start: w.start || null, end: w.end || null,
+				mapImg: w.mapImg || '', osmLink: w.osmLink || '', needsOsm: false
+			};
+		});
+	} else {
+		for (let i = 0; i < DIR_ROUND_SIZE; i++) {
+			const wantNearby = Math.random() < 0.5;
+			const live = dirTakeOsm($scope.dir.type, wantNearby ? 'nearby' : 'route') ||
+				dirTakeOsm($scope.dir.type, wantNearby ? 'route' : 'nearby');
+			items.push(live ? dirItemFromLive(live) : dirGenLocalItem($scope.dir.type, wantNearby));
+		}
+		// nap them du lieu that cho cac cau sau (tuan tu, ton trong server free)
+		try { dirEnsureOsm(DIR_ROUND_SIZE); } catch (e) {}
+	}
+	$scope.dir.items = items;
+	$scope.dir.index = 0;
+	$scope.dir.score = 0;
+	$scope.dir.streak = 0;
+	$scope.dir.bestStreak = 0;
+	$scope.dir.wrong = [];
+	$scope.dir.finished = !items.length;
+	$scope.buildDirQuestion(!noSpeak);
+};
+
+$scope.buildDirQuestion = function (autoSpeak) {
+	const it = $scope.dir.items[$scope.dir.index];
+	if (!it) { $scope.dir.finished = true; return; }
+	$scope.dir.current = it;
+	$scope.dir.options = it.options;
+	$scope.dir.correctIdx = it.correctIdx;
+	$scope.dir.picked = -1;
+	$scope.dir.answered = false;
+	if (autoSpeak) {
+		$timeout(function () { $scope.dirSpeak(null, true); }, 350);
+	}
+};
+
+$scope.dirSpeak = function (ev, isAuto) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	if (!$scope.dir.current) return;
+	if (!isAuto && ttsIsBusy()) return; // spam click trong luc dang phat -> bo qua
+	try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)($scope.dir.current.speakText); } catch (e) {}
+};
+
+$scope.answerDir = function (idx) {
+	const d = $scope.dir;
+	if (d.answered || idx < 0) return;
+	d.answered = true;
+	d.picked = idx;
+	if (idx === d.correctIdx) {
+		d.score += 1;
+		d.streak += 1;
+		if (d.streak > d.bestStreak) d.bestStreak = d.streak;
+	} else {
+		d.streak = 0;
+		const it = d.items[d.index];
+		d.wrong.push({
+			kind: 'dir', city: it.city, live: it.live, sub: it.sub || 'route', want: it.want || it.sub || 'route',
+			speakText: it.speakText, transcript: it.transcript,
+			correct: it.correct, options: it.options.slice(),
+			start: it.start, end: it.end, mapImg: it.mapImg, osmLink: it.osmLink
+		});
+	}
+};
+
+$scope.nextDir = function () {
+	$scope.dir.index += 1;
+	if ($scope.dir.index >= $scope.dir.items.length) {
+		$scope.dir.current = null;
+		$scope.dir.finished = true;
+	} else {
+		$scope.buildDirQuestion(true);
+	}
+};
+// Click dòng đáp án: chưa trả lời -> chọn; đã trả lời (đúng/sai) -> phát âm đáp án đó
+$scope.clickDirOption = function (ev, idx) {
+	const d = $scope.dir;
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	if (!d.answered) { $scope.answerDir(idx); return; }
+	if (ttsIsBusy()) return;
+	const text = d.options[idx];
+	if (text) { try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)(String(text)); } catch (e) {} }
+};
+$scope.retryWrongDir = function () { $scope.startDir(true); };
+
 // init (khong tu phat tieng khi vua mo trang)
 try { quizApiPrefetch(); } catch (e) {}
 $scope.startQuiz(false, true);
 $scope.startDetail(false, true);
 $scope.startPic(false);
+$scope.startDir(false, true);
+try { dirEnsureOsm(6); } catch (e) {}
 
 });

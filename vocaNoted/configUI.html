@@ -24,7 +24,7 @@
 
 		<div class="setting-card">
 			<div class="setting-heading"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Voice source</span><strong>{{ttsSource}}</strong></div>
-			<p>Puter neural sounds best, login once. Browser works offline.</p>
+			<p>Google free, no login. Browser works offline.</p>
 			<select class="setting-select" ng-model="ttsSource" ng-change="setTtsSource()"
 				ng-options="v.id as v.desc for v in TTS_SOURCES" aria-label="Voice source"></select>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
@@ -32,13 +32,9 @@
 		</div>
 
 		<div class="setting-card">
-			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Puter voice</span><strong>{{puterSignedIn ? ('hi ' + (puterUser || 'you')) : 'not logged in'}}</strong></div>
-			<p>Neural voice used when source is Puter.</p>
-			<select class="setting-select" ng-model="puterVoice" ng-change="setPuterVoice()"
-				ng-options="v.id as v.desc for v in PUTER_VOICES" aria-label="Puter voice"></select>
+			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Google voice</span></div>
+			<p>Google Translate TTS, US English. No login needed; rate slider above still applies.</p>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
-			<button class="btn btn-sm btn-success mt-2 ml-2" ng-if="!puterSignedIn" ng-click="puterSignIn()">Login Puter</button>
-			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-if="puterSignedIn" ng-click="puterSignOut()">Logout</button>
 		</div>
 
 		<div class="setting-card">

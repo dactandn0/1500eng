@@ -20,6 +20,12 @@
 		.pic-img { max-width:100%; max-height:300px; border-radius:10px; border:1px solid #eee5c9; object-fit:contain; background:#fff; }
 		.pic-loading { color:#8b857b; font-size:.9rem; }
 		.pic-meaning { margin-top:.6rem; padding:.6rem .8rem; background:#fff8e1; border:1px solid #f1e8d0; border-radius:10px; color:#604a0e; font-size:.92rem; display:flex; align-items:center; gap:.6rem; }
+		.dir-live { display:inline-block; padding:.15rem .55rem; border-radius:999px; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; border:1px solid; }
+		.dir-live.is-live { background:#e7f7ee; border-color:#bfe6cf; color:#1e7e46; }
+		.dir-live.is-sample { background:#f4f1ea; border-color:#e3ddd0; color:#8b857b; }
+		.dir-map { margin-top:.6rem; padding:.6rem .8rem; background:#f7fbff; border:1px solid #dce8f5; border-radius:10px; }
+		.dir-map img { max-width:100%; border-radius:8px; border:1px solid #dce8f5; display:block; margin-bottom:.5rem; }
+		.dir-map a { color:#23639a; font-size:.85rem; }
 	</style>
 
 	<div class="quiz-tabs" role="tablist">
@@ -31,6 +37,9 @@
 		</button>
 		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'pic'}" ng-click="setMode('pic')">
 			<i class="fa fa-picture-o" aria-hidden="true"></i> Food &amp; Bugs
+		</button>
+		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'dir'}" ng-click="setMode('dir')">
+			<i class="fa fa-compass" aria-hidden="true"></i> Directions
 		</button>
 	</div>
 
@@ -265,6 +274,97 @@
 			<div class="quiz-actions quiz-finished-actions">
 				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="pic.wrong.length" ng-click="retryWrongPic()">Retry mistakes</button>
 				<button type="button" class="btn btn-sm btn-quiz" ng-click="startPic()">New round</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== SECTION 4: DIRECTIONS - chi duong that tu OpenStreetMap (OSRM free, khong key) ===== -->
+	<div class="quiz-panel" ng-if="mode === 'dir'">
+		<div class="quiz-panel-heading">
+			<div>
+				<span class="eyebrow">DIRECTIONS - OSM</span>
+				<h2>Nghe chỉ đường &middot; OpenStreetMap</h2>
+			</div>
+			<button type="button" class="btn btn-sm btn-quiz" ng-click="startDir()">
+				<i class="fa fa-refresh" aria-hidden="true"></i> New round
+			</button>
+		</div>
+
+		<p style="margin:.6rem 0 .8rem; color:#8b857b; font-size:.85rem;">
+			Question chỉ có loa (không hiện chữ). Nghe kỹ rẽ trái/phải, tên đường, khoảng cách &mdash; hoặc
+			<em>next to / across from / behind / near</em> (nhà B cạnh/đối diện/sau nhà C, gần lake/park/school) &mdash; rồi chọn đúng trong 4 đáp án ABCD.
+			Dữ liệu thật từ OpenStreetMap (OSRM + Overpass, free không cần key), ~70% ở Houston, Texas. Mất mạng vẫn có câu sample để luyện.
+		</p>
+
+		<div class="quiz-type-row">
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': dir.type === 'all'}" ng-click="setDirType('all')">All Texas</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': dir.type === 'houston'}" ng-click="setDirType('houston')">Houston</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': dir.type === 'dallas'}" ng-click="setDirType('dallas')">Dallas</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': dir.type === 'austin'}" ng-click="setDirType('austin')">Austin</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': dir.type === 'sanantonio'}" ng-click="setDirType('sanantonio')">San Antonio</button>
+		</div>
+
+		<div ng-if="!dir.finished">
+			<div class="quiz-progress">Question {{dir.index + 1}} / {{dir.items.length}} <span>Score: {{dir.score}} &middot; Streak: {{dir.streak}}</span></div>
+			<div class="quiz-direction">
+				<span class="quiz-kind-badge">{{dir.current.sub === 'nearby' ? 'Near / Next to' : 'Route'}}</span>
+				&nbsp;<span class="quiz-kind-badge">{{dirCityLabel(dir.current.city)}}</span>
+				&nbsp;<span class="dir-live" ng-class="{'is-live': dir.current.live, 'is-sample': !dir.current.live}">{{dir.current.live ? 'OSM live' : 'sample'}}</span>
+				&nbsp;LISTEN &middot; Tap the speaker, then pick A&ndash;D
+			</div>
+			<div class="quiz-listen is-clickable" ng-click="dirSpeak($event)" title="Tap anywhere to listen" role="button" tabindex="0">
+				<button type="button" class="quiz-listen-btn" ng-click="dirSpeak($event)" ng-disabled="ttsBusy" title="Tap to listen" aria-label="Tap to listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+				<span>Chỉ nghe, không có chữ &mdash; bấm vào panel là phát</span>
+			</div>
+			<div class="quiz-options">
+				<button type="button" class="quiz-option"
+					ng-repeat="opt in dir.options track by $index"
+					ng-click="clickDirOption($event, $index)"
+					ng-attr-title="{{dir.answered ? 'Tap to listen' : 'Choose this answer'}}"
+					ng-class="{'is-correct': dir.answered && $index === dir.correctIdx, 'is-wrong': dir.answered && $index === dir.picked && $index !== dir.correctIdx}">
+					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
+					<span class="quiz-option-text">{{opt}}</span>
+				</button>
+			</div>
+			<div class="quiz-feedback is-good is-clickable" ng-if="dir.answered && dir.picked === dir.correctIdx" ng-click="dirSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct!
+			</div>
+			<div class="quiz-feedback is-bad is-clickable" ng-if="dir.answered && dir.picked !== dir.correctIdx" ng-click="dirSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+				<span>Not quite. Listen again, then check the transcript below.</span>
+			</div>
+			<div class="quiz-transcript is-clickable" ng-if="dir.answered" ng-click="dirSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-file-text-o" aria-hidden="true"></i>
+				{{dir.current.transcript}}
+				<button type="button" class="quiz-speak" style="margin-left:.5rem; padding:.2rem .5rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:8px;" ng-click="dirSpeak($event)" ng-disabled="ttsBusy" title="Listen again" aria-label="Listen again">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="dir-map" ng-if="dir.answered && dir.current.live && dir.current.mapImg">
+				<img ng-src="{{dir.current.mapImg}}" alt="Route map (OpenStreetMap)" onerror="this.style.display='none'">
+				<div><a ng-href="{{dir.current.osmLink}}" target="_blank" rel="noopener">View route on OpenStreetMap <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="quiz-actions" ng-if="dir.answered">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextDir()">
+					{{dir.index + 1 >= dir.items.length ? 'See results' : 'Next'}}
+				</button>
+			</div>
+		</div>
+
+		<div class="quiz-finished" ng-if="dir.finished">
+			<strong>Round complete</strong>
+			<span>Score: {{dir.score}} / {{dir.items.length}} &middot; Best streak: {{dir.bestStreak}}</span>
+			<div class="quiz-wrong-list" ng-if="dir.wrong.length">
+				<div class="quiz-wrong-title">Nghe lại các câu sai ({{dir.wrong.length}}):</div>
+				<div class="quiz-wrong-item" ng-repeat="w in dir.wrong track by $index">
+					<strong>[{{w.sub === 'nearby' ? 'Near' : 'Route'}} &middot; {{dirCityLabel(w.city)}}] {{w.correct}}</strong><span>{{w.transcript}}</span>
+				</div>
+			</div>
+			<div class="quiz-actions quiz-finished-actions">
+				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="dir.wrong.length" ng-click="retryWrongDir()">Retry mistakes</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="startDir()">New round</button>
 			</div>
 		</div>
 	</div>

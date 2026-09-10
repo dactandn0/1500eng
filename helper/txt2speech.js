@@ -1,4 +1,4 @@
-// TTS simple: Puter (neural, can login) -> Browser speechSynthesis (offline).
+// TTS simple: Google Translate TTS (free, khong key/login) -> Browser speechSynthesis (offline).
 // Gi nguyen ten ham Text2Speech(word) nen khong can sua cho goi.
 const utter = new SpeechSynthesisUtterance();
 
@@ -16,9 +16,9 @@ function Text2SpeechIsBusy() {
 	return false;
 }
 
-// Puter path state
-let puterAudio = null;
-let puterQueue = [];
+// Google path state
+let gAudio = null;
+let gQueue = [];
 
 // iOS Safari: audio chi duoc phat trong user-gesture -> mo khoa san.
 let ttsCtx = null;
@@ -43,14 +43,14 @@ try {
 
 function Text2SpeechStop() {
 	gSeq++;
-	puterQueue = [];
+	gQueue = [];
 	gLastText = '';
 	ttsSetBusy(false);
-	if (puterAudio) {
-		try { puterAudio.pause(); } catch (e) {}
-		try { puterAudio.currentTime = 0; } catch (e) {}
-		try { puterAudio.onended = null; puterAudio.onerror = null; } catch (e) {}
-		puterAudio = null;
+	if (gAudio) {
+		try { gAudio.pause(); } catch (e) {}
+		try { gAudio.currentTime = 0; } catch (e) {}
+		try { gAudio.onended = null; gAudio.onerror = null; } catch (e) {}
+		gAudio = null;
 	}
 	try {
 		if (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) {
@@ -74,14 +74,14 @@ function Text2SpeechClean(input) {
 function Text2SpeechSource() {
 	try {
 		if (typeof Helper_loadStr === 'function' && typeof Helper_TTSSourceKey !== 'undefined') {
-			const v = Helper_loadStr(Helper_TTSSourceKey, 'puter');
-			if (v === 'puter' || v === 'browser') return v;
-			// migrate gia tri cu (edge/google) -> puter
-			try { Helper_saveDB(Helper_TTSSourceKey, 'puter'); } catch (e2) {}
-			return 'puter';
+			const v = Helper_loadStr(Helper_TTSSourceKey, 'google');
+			if (v === 'google' || v === 'browser') return v;
+			// migrate gia tri cu (puter/edge) -> google
+			try { Helper_saveDB(Helper_TTSSourceKey, 'google'); } catch (e2) {}
+			return 'google';
 		}
 	} catch (e) {}
-	return 'puter';
+	return 'google';
 }
 
 function Text2SpeechRate() {
@@ -91,164 +91,89 @@ function Text2SpeechRate() {
 	return rate;
 }
 
-function puterVoice() {
-	try {
-		if (typeof Helper_loadStr === 'function' && typeof Helper_PuterVoiceKey !== 'undefined') {
-			const v = Helper_loadStr(Helper_PuterVoiceKey, 'Joanna');
-			if (v) return v;
-		}
-	} catch (e) {}
-	return 'Joanna';
-}
-
-// no-op giu tuong thich (truoc day dung cho Edge cooldown)
-function Text2SpeechResetEdgeCooldown() {}
-
 // =====================================================
-// Puter path (chinh)
-// Dang nhap 1 lan: puter.auth.signIn() (popup) -> token luu san.
+// Google path (chinh) - Google Translate TTS, free, khong key/login.
+// Phat qua <audio> nen khong vuong CORS; chunk <=170 ky tu theo cau.
+// Chunk loi -> rot chunk do xuong browser, cac chunk sau van chay Google.
 // =====================================================
-function puterEnsureAuth() {
-	return new Promise(function (resolve) {
-		try {
-			if (typeof puter === 'undefined' || !puter.auth) { resolve(false); return; }
-			try {
-				if (puter.auth.isSignedIn()) { resolve(true); return; }
-			} catch (e) {}
-			// Chua login -> mo popup (can chay trong user-gesture; neu bi chan -> false)
-			try {
-				puter.auth.signIn().then(function () {
-					try { resolve(!!puter.auth.isSignedIn()); }
-					catch (e) { resolve(true); }
-				}, function () { resolve(false); });
-			} catch (e) { resolve(false); }
-		} catch (e) { resolve(false); }
-	});
+function Text2SpeechGoogleURL(chunk) {
+	return 'https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(chunk);
 }
-
-// Cat text dai thanh chunk (~1200 ky tu, ngat o cau/tu). Puter gioi han ~3000 ky tu.
-function puterChunk(text) {
-	const MAX = 1200;
-	const out = [];
-	const sentences = String(text).split(/(?<=[.!?])\s+|\n+/);
+function Text2SpeechChunk(text) {
+	const MAX = 170;
+	const parts = [];
 	let cur = '';
-	function pushCur() { if (cur.trim()) out.push(cur.trim()); cur = ''; }
+	const sentences = String(text).split(/(?<=[.!?])\s+|;\s*|,\s*(?=. {20,})/);
 	sentences.forEach(function (sen) {
 		sen = (sen || '').trim();
 		if (!sen) return;
 		while (sen.length > MAX) {
 			let cut = sen.lastIndexOf(' ', MAX);
 			if (cut < 40) cut = MAX;
-			const piece = (cur + ' ' + sen.slice(0, cut)).trim();
-			if (piece.length <= MAX + 200) { cur = piece; }
-			else { pushCur(); cur = sen.slice(0, cut); }
+			parts.push(sen.slice(0, cut));
 			sen = sen.slice(cut).trim();
 		}
-		if ((cur + ' ' + sen).trim().length <= MAX) cur = (cur + ' ' + sen).trim();
-		else { pushCur(); cur = sen; }
+		if ((cur + ' ' + sen).trim().length <= MAX) {
+			cur = (cur + ' ' + sen).trim();
+		} else {
+			if (cur) parts.push(cur);
+			cur = sen;
+		}
 	});
-	pushCur();
-	return out.length ? out : [text];
+	if (cur) parts.push(cur);
+	return parts.length ? parts : [text];
 }
-
-function puterPlayQueue(mySeq) {
+function Text2SpeechPlayQueue(mySeq) {
 	if (mySeq !== gSeq) return;
-	const chunk = puterQueue.shift();
+	const chunk = gQueue.shift();
 	if (chunk == null) {
-		puterAudio = null;
+		gAudio = null;
 		ttsSetBusy(false);
 		return;
 	}
 	ttsSetBusy(true);
-	let audio = null;
+	const audio = new Audio();
+	gAudio = audio;
+	try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
+	try { audio.preload = 'auto'; } catch (e) {}
+	let settled = false;
+	audio.onended = function () {
+		if (settled) return;
+		settled = true;
+		Text2SpeechPlayQueue(mySeq);
+	};
+	audio.onerror = function () {
+		if (settled) return;
+		settled = true;
+		try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
+		catch (e) { Text2SpeechPlayQueue(mySeq); }
+	};
 	try {
-		const pr = puter.ai.txt2speech(chunk, {
-			voice: puterVoice(),
-			engine: 'neural',
-			language: 'en-US'
-		});
-		Promise.resolve(pr).then(function (a) {
-			if (mySeq !== gSeq) return;
-			audio = a;
-			puterAudio = audio;
-			try { window.__lastTtsEngine = 'puter'; } catch (e) {}
-			try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
-			let settled = false;
-			audio.onended = function () {
-				if (settled) return;
+		audio.src = Text2SpeechGoogleURL(chunk);
+		const p = audio.play();
+		if (p && typeof p.catch === 'function') {
+			p.catch(function () {
+				// iOS chan play() -> rot chunk nay xuong browser, giu queue Google
+				if (settled || mySeq !== gSeq) return;
 				settled = true;
-				puterPlayQueue(mySeq);
-			};
-			audio.onerror = function () {
-				if (settled) return;
-				settled = true;
-				browserFallbackQueue(mySeq);
-			};
-			try {
-				const p = audio.play();
-				if (p && typeof p.catch === 'function') {
-					p.catch(function () {
-						// iOS chan play() sau async -> rot xuong browser cho chunk nay
-						if (settled || mySeq !== gSeq) return;
-						settled = true;
-						browserFallbackQueue(mySeq);
-					});
-				}
-			} catch (e) {
-				if (!settled) {
-					settled = true;
-					browserFallbackQueue(mySeq);
-				}
-			}
-		}, function () {
-			// puter loi (chua login/bi chan) -> ca text rot xuong browser
-			if (mySeq !== gSeq) return;
-			browserFallbackText(mySeq);
-		});
+				try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
+				catch (e) { Text2SpeechPlayQueue(mySeq); }
+			});
+		}
 	} catch (e) {
-		if (mySeq !== gSeq) return;
-		browserFallbackText(mySeq);
+		if (!settled) {
+			settled = true;
+			try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
+			catch (e2) { Text2SpeechPlayQueue(mySeq); }
+		}
 	}
 }
-
-// Phat 1 chunk bang browser roi tiep tuc queue puter con lai
-function browserFallbackQueue(mySeq) {
+function googleSpeak(text, mySeq) {
 	if (mySeq !== gSeq) return;
-	const rest = puterQueue.slice();
-	puterQueue = [];
-	if (!rest.length) {
-		puterAudio = null;
-		ttsSetBusy(false);
-		return;
-	}
-	try { Text2SpeechBrowser(rest[0], true, function () {
-		if (mySeq !== gSeq) return;
-		puterQueue = rest.slice(1);
-		puterPlayQueue(mySeq);
-	}); } catch (e) {
-		puterQueue = rest.slice(1);
-		puterPlayQueue(mySeq);
-	}
-}
-
-// Rot ca text hien tai xuong browser
-function browserFallbackText(mySeq) {
-	if (mySeq !== gSeq) return;
-	puterQueue = [];
-	puterAudio = null;
-	try { Text2SpeechBrowser(gLastText, true); }
-	catch (e) { ttsSetBusy(false); }
-}
-
-function puterSpeak(text, mySeq) {
-	if (mySeq !== gSeq) return;
-	puterEnsureAuth().then(function (ok) {
-		if (mySeq !== gSeq) return;
-		if (!ok) { browserFallbackText(mySeq); return; }
-		const chunks = puterChunk(text.length > 6000 ? text.slice(0, 6000) : text);
-		puterQueue = chunks.slice();
-		puterPlayQueue(mySeq);
-	});
+	try { window.__lastTtsEngine = 'google'; } catch (e) {}
+	const chunks = Text2SpeechChunk(text.length > 2800 ? text.slice(0, 2800) : text);
+	gQueue = chunks.slice();
+	Text2SpeechPlayQueue(mySeq);
 }
 
 // =====================================================
@@ -344,7 +269,7 @@ function Text2Speech(word, force) {
 
 	// Click lai cung 1 cau dang doc -> dung (giu hanh vi cu).
 	// force=true (nut loa Quiz): bam lai la replay tu dau, khong toggle-stop.
-	if (!force && text === gLastText && (puterAudio || puterQueue.length)) {
+	if (!force && text === gLastText && (gAudio || gQueue.length)) {
 		Text2SpeechStop();
 		return;
 	}
@@ -358,7 +283,7 @@ function Text2Speech(word, force) {
 		Text2SpeechBrowser(text, force);
 		return;
 	}
-	puterSpeak(text, mySeq);
+	googleSpeak(text, mySeq);
 }
 
 // Bam loa Quiz: moi lan bam la replay tu dau (khong toggle-stop nhu Text2Speech thuong)

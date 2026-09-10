@@ -416,12 +416,77 @@ function edgePlayBlob(parts, mySeq, done) {
 // Proxy chay cung origin, tu set header Edg chuan -> lay dung giong da chon.
 // =====================================================
 let EDGE_PROXY_DOWN_UNTIL = 0;
+// iOS Safari: audio chi duoc phat trong user-gesture. Mo san AudioContext
+// ngay trong gesture de sau fetch() async van phat duoc (WebAudio fallback).
+let ttsCtx = null;
+function ttsEnsureCtx() {
+	try {
+		if (!ttsCtx) {
+			const AC = window.AudioContext || window.webkitAudioContext;
+			if (AC) ttsCtx = new AC();
+		}
+		if (ttsCtx && ttsCtx.state === 'suspended') {
+			const p = ttsCtx.resume();
+			if (p && typeof p.catch === 'function') p.catch(function () {});
+		}
+	} catch (e) {}
+	return ttsCtx;
+}
+try {
+	['pointerdown', 'touchend', 'click', 'keydown'].forEach(function (ev) {
+		document.addEventListener(ev, ttsEnsureCtx, { passive: true });
+	});
+} catch (e) {}
+function blobToArrayBuffer(blob) {
+	return new Promise(function (resolve, reject) {
+		try {
+			if (blob && typeof blob.arrayBuffer === 'function') {
+				blob.arrayBuffer().then(resolve, reject);
+				return;
+			}
+			const fr = new FileReader();
+			fr.onload = function () { resolve(fr.result); };
+			fr.onerror = function () { reject(new Error('blob read')); };
+			fr.readAsArrayBuffer(blob);
+		} catch (e) { reject(e); }
+	});
+}
+// Phat mp3 qua WebAudio (fallback khi Safari iOS chan <audio> sau fetch async)
+function edgePlayWebAudio(arrayBuffer, done) {
+	let finished = false;
+	const ok = function (v) { if (!finished) { finished = true; done(v); } };
+	try {
+		const ctx = ttsEnsureCtx();
+		if (!ctx || typeof ctx.decodeAudioData !== 'function') { ok(false); return; }
+		let buf = arrayBuffer;
+		try { buf = arrayBuffer.slice(0); } catch (e) {}
+		ctx.decodeAudioData(buf, function (audioBuf) {
+			try {
+				const src = ctx.createBufferSource();
+				src.buffer = audioBuf;
+				src.connect(ctx.destination);
+				src.onended = function () {
+					try { if (edgeAudio && edgeAudio._webaudio) edgeAudio = null; } catch (e2) {}
+					ttsSetBusy(false);
+				};
+				ttsSetBusy(true);
+				src.start(0);
+				// Luu de Text2SpeechStop() dung duoc
+				try {
+					edgeAudio = { _webaudio: true, pause: function () { try { src.stop(); } catch (e2) {} try { edgeAudio = null; } catch (e3) {} ttsSetBusy(false); } };
+				} catch (e2) {}
+				ok(true);
+			} catch (e) { ok(false); }
+		}, function () { ok(false); });
+	} catch (e) { ok(false); }
+}
 function edgeProxyEligible() {
 	try {
 		if (typeof location === 'undefined' || !location.hostname) return false;
 		const h = location.hostname;
 		if (h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0') return true;
 		if (h.indexOf('192.168.') === 0 || h.indexOf('10.') === 0) return true;
+		if (/^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(h)) return true; // 172.16-31.x LAN
 	} catch (e) {}
 	return false;
 }
@@ -480,17 +545,30 @@ function edgeViaProxy(text, mySeq) {
 							if (audio !== edgeAudio) return;
 							edgeAudio = null; revokeEdgeUrl(); ok(false);
 						};
-						try { audio.playbackRate = 1; } catch (e) {}
-						audio.src = edgeUrl;
-						audio.onplaying = function () { ok(true); };
+					try { audio.playbackRate = 1; } catch (e) {}
+					audio.src = edgeUrl;
+					audio.onplaying = function () { ok(true); };
+					const webFallback = function () {
+						// Safari iOS chan <audio>.play() sau fetch async -> thu WebAudio
+						blobToArrayBuffer(blob).then(function (ab) {
+							if (mySeq !== gSeq) { ok(false); return; }
+							edgePlayWebAudio(ab, ok);
+						}, function () { ok(false); });
+					};
+					try {
 						const pr = audio.play();
 						if (pr && typeof pr.catch === 'function') {
 							pr.catch(function () {
 								if (audio !== edgeAudio) return;
-								edgeAudio = null; revokeEdgeUrl(); ok(false);
+								edgeAudio = null; revokeEdgeUrl();
+								webFallback();
 							});
 						}
-						setTimeout(function () { ok(true); }, 2000);
+					} catch (e) {
+						try { edgeAudio = null; revokeEdgeUrl(); } catch (e2) {}
+						webFallback();
+					}
+					setTimeout(function () { ok(true); }, 2000);
 					} catch (e) { ok(false); }
 				} catch (e) {
 					try { clearTimeout(timer); } catch (e2) {}
@@ -730,6 +808,7 @@ function Text2SpeechBrowser(word, force, onDone) {
 function Text2Speech(word, force) {
 	const text = Text2SpeechClean(word);
 	if (!text) return;
+	try { ttsEnsureCtx(); } catch (e) {} // iOS: mo khoa audio ngay trong gesture
 
 	// Click lai cung 1 cau dang doc -> dung (giu hanh vi cu).
 	// force=true (nut loa Quiz): bam lai la replay tu dau, khong toggle-stop.

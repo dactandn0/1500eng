@@ -31,7 +31,7 @@ import time
 import urllib.parse
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
-HOST = "127.0.0.1"
+HOST = "0.0.0.0"  # mo cho LAN (iPhone/Android) chu khong chi localhost
 TRUSTED_TOKEN = "6A5AA1D4EAFF4E9FB37E23D68491D6F4"
 EDGE_HOST = "speech.platform.bing.com"
 EDGE_PORT = 443
@@ -300,8 +300,19 @@ if __name__ == "__main__":
     import sys
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8888
     srv = ThreadingHTTPServer((HOST, port), Handler)
+    lan = None
+    try:
+        _s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        _s.connect(("8.8.8.8", 80))
+        lan = _s.getsockname()[0]
+        _s.close()
+    except OSError:
+        lan = None
     print("Serving %s at http://localhost:%d/ (Edge TTS proxy ON)" %
           (BASE_DIR, port))
+    if lan:
+        print("iPhone/Android cung wifi mo: http://%s:%d/" % (lan, port))
+        print("(Windows Firewall hoi thi chon Allow / Private network.)")
     print("Dung Ctrl+C de dung.")
     try:
         srv.serve_forever()

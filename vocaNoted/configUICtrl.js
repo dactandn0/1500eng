@@ -21,6 +21,10 @@ $scope.ttsSource = 'edge';
 $scope.EDGE_VOICES = (typeof EDGE_VOICES !== 'undefined') ? EDGE_VOICES : [{ id: 'en-US-AriaNeural', desc: 'Aria' }];
 $scope.edgeVoice = 'en-US-AriaNeural';
 $scope.edgeProxy = '?'; // on | off (chi co khi chay python edge_proxy.py)
+$scope.edgeProxyUrl = '';
+$scope.lastEngine = '';
+$scope.BROWSER_VOICES = [];
+$scope.browserVoiceURI = '';
 
 $scope.setTtsSource = function () {
 	Helper_saveDB(Helper_TTSSourceKey, $scope.ttsSource);
@@ -38,7 +42,88 @@ $scope.speechTest = function () {
 	// force=true: nut Test cung 1 cau bam lai la replay, khong toggle-stop
 	// -> doi voice/source xong bam Test luon nghe giong moi.
 	try { Text2Speech('Hello, how are you today? I love learning English.', true); } catch (e) {}
+	$scope.lastEngine = '...';
+	try {
+		setTimeout(function () {
+			try { $scope.lastEngine = window.__lastTtsEngine || '?'; } catch (e) { $scope.lastEngine = '?'; }
+			try { $scope.$applyAsync(); } catch (e2) {}
+		}, 1800);
+	} catch (e) {}
 }
+
+$scope.setEdgeProxyUrl = function () {
+	try {
+		let u = ($scope.edgeProxyUrl || '').trim().replace(/\/+$/, '');
+		// nhap IP/port don gian -> tu them http://
+		if (u && u.indexOf('://') < 0) u = 'http://' + u;
+		$scope.edgeProxyUrl = u;
+		Helper_saveDB(Helper_EdgeProxyKey, u);
+	} catch (e) {}
+	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e2) {}
+	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e3) {}
+	$scope.checkEdgeProxy();
+}
+
+$scope.checkEdgeProxy = function () {
+	$scope.edgeProxy = '?';
+	let url = 'api/edge-status';
+	try { if (typeof edgeProxyStatusUrl === 'function') url = edgeProxyStatusUrl(); } catch (e) {}
+	try {
+		if (typeof fetch !== 'undefined')
+			fetch(url, { cache: 'no-store' }).then(function (r) {
+				$scope.edgeProxy = (r && r.ok) ? 'on' : 'off';
+				try { $scope.$applyAsync(); } catch (e) {}
+			}, function () {
+				$scope.edgeProxy = 'off';
+				try { $scope.$applyAsync(); } catch (e) {}
+			});
+		else $scope.edgeProxy = '?';
+	} catch (e) { $scope.edgeProxy = '?'; }
+};
+
+$scope.setBrowserVoice = function () {
+	try { Helper_saveDB(Helper_BrowserVoiceKey, $scope.browserVoiceURI || ''); } catch (e) {}
+	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e2) {}
+};
+
+$scope.refreshBrowserVoices = function () {
+	try {
+		if (typeof speechSynthesis === 'undefined') return;
+		const vs = speechSynthesis.getVoices() || [];
+		$scope.BROWSER_VOICES = vs;
+		// giu lua chon cu neu van con
+		let keep = false;
+		for (let i = 0; i < vs.length; i++) {
+			if (vs[i] && vs[i].voiceURI === $scope.browserVoiceURI) { keep = true; break; }
+		}
+		if (!keep) {
+			// mac dinh: voice EN dau tien
+			for (let i = 0; i < vs.length; i++) {
+				const lang = ((vs[i] && vs[i].lang) || '').toLowerCase();
+				if (lang.indexOf('en') === 0) { $scope.browserVoiceURI = vs[i].voiceURI; break; }
+			}
+		}
+		try { $scope.$applyAsync(); } catch (e) {}
+	} catch (e) {}
+};
+try {
+	// Safari load voices cham (can voiceschanged) -> hook 1 lan, goi scope moi nhat
+	window.__ttsVoiceScopes = window.__ttsVoiceScopes || [];
+	if (typeof speechSynthesis !== 'undefined') {
+		try { speechSynthesis.getVoices(); } catch (e) {}
+		if (!window.__ttsVoicesHooked) {
+			window.__ttsVoicesHooked = true;
+			try {
+				speechSynthesis.onvoiceschanged = function () {
+					try {
+						(window.__ttsVoiceScopes || []).forEach(function (fn) { try { fn(); } catch (e2) {} });
+					} catch (e) {}
+				};
+			} catch (e) {}
+		}
+		window.__ttsVoiceScopes.push($scope.refreshBrowserVoices);
+	}
+} catch (e) {}
 
 
 $scope.setAudioPitch = function () {
@@ -95,16 +180,15 @@ $scope.loadDB = function () {
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
 
 	try {
-		if (typeof fetch !== 'undefined')
-			fetch('api/edge-status', { cache: 'no-store' }).then(function (r) {
-				$scope.edgeProxy = (r && r.ok) ? 'on' : 'off';
-				try { $scope.$applyAsync(); } catch (e) {}
-			}, function () {
-				$scope.edgeProxy = 'off';
-				try { $scope.$applyAsync(); } catch (e) {}
-			});
-		else $scope.edgeProxy = '?';
-	} catch (e) { $scope.edgeProxy = '?'; }
+		if (typeof Helper_EdgeProxyKey !== 'undefined')
+			$scope.edgeProxyUrl = Helper_loadStr(Helper_EdgeProxyKey, '');
+	} catch (e) {}
+	try {
+		if (typeof Helper_BrowserVoiceKey !== 'undefined')
+			$scope.browserVoiceURI = Helper_loadStr(Helper_BrowserVoiceKey, '');
+	} catch (e) {}
+	$scope.refreshBrowserVoices();
+	$scope.checkEdgeProxy();
 };
 
 

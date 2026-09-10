@@ -38,6 +38,8 @@ const kNgClickTagName = 'kkk';
 const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="Idx_n_L_WSp_($event)">';
 const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
+const Helper_BrowserVoiceKey = 'BrowserVoiceURI'; // voiceURI cua speechSynthesis (Safari/Desktop)
+const Helper_EdgeProxyKey = 'EdgeProxyURL'; // vd https://xxx.ngrok-free.app (trong khi dung GitHub Pages)
 const Helper_TTSSourceKey = 'TTSSource'; // 'edge' (neural, no login) | 'google' | 'browser' (offline)
 const Helper_EdgeVoiceKey = 'EdgeVoice';
 const EDGE_VOICES = [

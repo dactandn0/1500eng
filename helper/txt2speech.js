@@ -396,7 +396,7 @@ function edgePlayBlob(parts, mySeq, done) {
 		};
 		try { audio.playbackRate = 1; } catch (e) {}
 		audio.src = edgeUrl;
-		audio.onplaying = function () { ok(true); };
+		audio.onplaying = function () { try { window.__lastTtsEngine = 'edge'; } catch (e) {} ok(true); };
 		const pr = audio.play();
 		if (pr && typeof pr.catch === 'function') {
 			pr.catch(function () {
@@ -475,13 +475,38 @@ function edgePlayWebAudio(arrayBuffer, done) {
 				try {
 					edgeAudio = { _webaudio: true, pause: function () { try { src.stop(); } catch (e2) {} try { edgeAudio = null; } catch (e3) {} ttsSetBusy(false); } };
 				} catch (e2) {}
+				try { window.__lastTtsEngine = 'proxy'; } catch (e3) {}
 				ok(true);
 			} catch (e) { ok(false); }
 		}, function () { ok(false); });
 	} catch (e) { ok(false); }
 }
+function edgeProxyUrl() {
+	// Proxy tu xa (ngrok/cloudflared) khi mo app tu GitHub Pages
+	try {
+		if (typeof Helper_loadStr === 'function' && typeof Helper_EdgeProxyKey !== 'undefined') {
+			const custom = (Helper_loadStr(Helper_EdgeProxyKey, '') || '').trim().replace(/\/+$/, '');
+			if (custom) return custom + '/api/edge-tts';
+		}
+	} catch (e) {}
+	return 'api/edge-tts';
+}
+function edgeProxyStatusUrl() {
+	try {
+		if (typeof Helper_loadStr === 'function' && typeof Helper_EdgeProxyKey !== 'undefined') {
+			const custom = (Helper_loadStr(Helper_EdgeProxyKey, '') || '').trim().replace(/\/+$/, '');
+			if (custom) return custom + '/api/edge-status';
+		}
+	} catch (e) {}
+	return 'api/edge-status';
+}
 function edgeProxyEligible() {
 	try {
+		// Co proxy URL tu xa -> luon thu (ke ca mo tu github.io)
+		if (typeof Helper_loadStr === 'function' && typeof Helper_EdgeProxyKey !== 'undefined') {
+			const custom = (Helper_loadStr(Helper_EdgeProxyKey, '') || '').trim();
+			if (custom) return true;
+		}
 		if (typeof location === 'undefined' || !location.hostname) return false;
 		const h = location.hostname;
 		if (h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0') return true;
@@ -505,7 +530,7 @@ function edgeViaProxy(text, mySeq) {
 		try {
 			ctrl = new AbortController();
 			timer = setTimeout(function () { try { ctrl.abort(); } catch (e) {} }, 12000);
-			fetch('api/edge-tts', {
+			fetch(edgeProxyUrl(), {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({
@@ -547,7 +572,7 @@ function edgeViaProxy(text, mySeq) {
 						};
 					try { audio.playbackRate = 1; } catch (e) {}
 					audio.src = edgeUrl;
-					audio.onplaying = function () { ok(true); };
+					audio.onplaying = function () { try { window.__lastTtsEngine = 'proxy'; } catch (e) {} ok(true); };
 					const webFallback = function () {
 						// Safari iOS chan <audio>.play() sau fetch async -> thu WebAudio
 						blobToArrayBuffer(blob).then(function (ab) {
@@ -676,6 +701,7 @@ function Text2SpeechPlayQueue(mySeq) {
 		return;
 	}
 	ttsSetBusy(true);
+	try { window.__lastTtsEngine = 'google'; } catch (e) {}
 	const audio = new Audio();
 	gAudio = audio;
 	try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
@@ -781,9 +807,19 @@ function Text2SpeechBrowser(word, force, onDone) {
 			// Ton trong voice nguoi dung da chon o Setting (selectedVoiceIdx).
 			// Truoc day luon pickBest -> doi voice source=browser nghe van 1 giong.
 			try {
-				if (typeof Helper_loadInt === 'function' && typeof Helper_SelectedVoiceIdx !== 'undefined') {
+				const vs = browserVoicesCache || (browserVoicesCache = speechSynthesis.getVoices() || []);
+				try {
+					if (typeof Helper_loadStr === 'function' && typeof Helper_BrowserVoiceKey !== 'undefined') {
+						const uri = Helper_loadStr(Helper_BrowserVoiceKey, '');
+						if (uri && vs) {
+							for (let i = 0; i < vs.length; i++) {
+								if (vs[i] && vs[i].voiceURI === uri) { bv = vs[i]; break; }
+							}
+						}
+					}
+				} catch (e2) {}
+				if (!bv && typeof Helper_loadInt === 'function' && typeof Helper_SelectedVoiceIdx !== 'undefined') {
 					const idx = Helper_loadInt(Helper_SelectedVoiceIdx, -1);
-					const vs = browserVoicesCache || (browserVoicesCache = speechSynthesis.getVoices() || []);
 					if (idx >= 0 && vs && vs[idx]) bv = vs[idx];
 				}
 			} catch (e) {}
@@ -795,6 +831,7 @@ function Text2SpeechBrowser(word, force, onDone) {
 		utter.volume = 1;
 		utter.lang = 'en-US';
 		ttsSetBusy(true);
+		try { window.__lastTtsEngine = 'browser'; } catch (e) {}
 		speechSynthesis.speak(utter);
 	} catch (e) {
 		ttsSetBusy(false);

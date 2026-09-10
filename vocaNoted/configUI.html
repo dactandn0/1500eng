@@ -36,6 +36,22 @@
 			<select class="setting-select" ng-model="edgeVoice" ng-change="setEdgeVoice()"
 				ng-options="v.id as v.desc for v in EDGE_VOICES" aria-label="Edge voice"></select>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
+			<span class="ml-2" ng-if="lastEngine">playing: <strong>{{lastEngine}}</strong></span>
+		</div>
+
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-server" aria-hidden="true"></i><span>Edge proxy URL</span><strong>{{edgeProxy}}</strong></div>
+			<p>For GitHub Pages / Safari: expose your PC proxy with <code>ngrok http 8888</code> (https) and paste the URL here. Leave empty when running local.</p>
+			<input type="text" class="form-control setting-select" ng-model="edgeProxyUrl" ng-change="setEdgeProxyUrl()"
+				ng-model-options="{ debounce: 800 }" placeholder="https://xxx.ngrok-free.app" aria-label="Edge proxy URL">
+		</div>
+
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-volume-up" aria-hidden="true"></i><span>Browser voice</span></div>
+			<p>Device voice used when source is Browser (works on GitHub Pages + Safari, offline).</p>
+			<select class="setting-select" ng-model="browserVoiceURI" ng-change="setBrowserVoice()"
+				ng-options="v.voiceURI as (v.name + ' - ' + v.lang) for v in BROWSER_VOICES" aria-label="Browser voice"></select>
+			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
 		</div>
 	</div>
 

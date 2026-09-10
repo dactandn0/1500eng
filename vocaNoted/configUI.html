@@ -31,8 +31,8 @@
 		</div>
 
 		<div class="setting-card">
-			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Edge voice</span></div>
-			<p>Neural voice used when source is Edge.</p>
+			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Edge voice</span><strong>{{edgeProxy === 'on' ? 'proxy on' : (edgeProxy === 'off' ? 'proxy off' : '')}}</strong></div>
+			<p>Neural voice used when source is Edge. Needs <code>python edge_proxy.py</code> running to hear the selected voice (direct browser WSS is often blocked).</p>
 			<select class="setting-select" ng-model="edgeVoice" ng-change="setEdgeVoice()"
 				ng-options="v.id as v.desc for v in EDGE_VOICES" aria-label="Edge voice"></select>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>

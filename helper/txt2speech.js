@@ -313,31 +313,58 @@ function edgeChunk(text) {
 }
 
 // 1 turn: gui SSML, gom audio bytes den khi Path:turn.end
+function edgeParseBinary(buf, parts, decoder) {
+	try {
+		if (!buf || buf.byteLength < 2) return;
+		const hlen = new DataView(buf).getUint16(0);
+		let header = '';
+		try { header = decoder ? decoder.decode(buf.slice(2, 2 + hlen)) : ''; } catch (e) {}
+		if (header.indexOf('Path:audio') >= 0) parts.push(buf.slice(2 + hlen));
+	} catch (e) {}
+}
 function edgeOneTurn(ws, ssml) {
 	return new Promise(function (resolve, reject) {
 		const reqId = edgeHexId();
 		const parts = [];
 		let done = false;
+		let resolved = false;
 		const timer = setTimeout(function () {
 			if (!done) { done = true; reject(new Error('edge timeout')); }
 		}, 15000);
 		let decoder = null;
 		try { decoder = new TextDecoder(); } catch (e) {}
 		ws.onmessage = function (ev) {
-			if (done) return;
+			if (resolved) return;
 			try {
 				const data = ev.data;
 				if (typeof data === 'string') {
 					if (data.indexOf('Path:turn.end') >= 0) {
-						done = true; clearTimeout(timer); resolve(parts);
+						// Cho 1 tick de Blob async (arrayBuffer) kip push vao parts
+						done = true; clearTimeout(timer);
+						setTimeout(function () { resolved = true; resolve(parts); }, 300);
 					}
 					// turn.start / response / metadata -> bo qua
+				} else if (typeof Blob !== 'undefined' && data instanceof Blob) {
+					// Mot so browser tra binary dang Blob du da set binaryType.
+					// Truoc day code bo qua -> parts rong -> 'no audio' -> rot xuong Google
+					// nen doi edgeVoice khong nghe khac biet.
+					try {
+						if (typeof data.arrayBuffer === 'function') {
+							data.arrayBuffer().then(function (buf) {
+								if (resolved) return;
+								edgeParseBinary(buf, parts, decoder);
+							}, function () {});
+						} else {
+							const fr = new FileReader();
+							fr.onload = function () {
+								if (resolved) return;
+								try { edgeParseBinary(fr.result, parts, decoder); } catch (e2) {}
+							};
+							try { fr.readAsArrayBuffer(data); } catch (e2) {}
+						}
+					} catch (e) {}
 				} else if (data instanceof ArrayBuffer) {
-					if (data.byteLength < 2) return;
-					const hlen = new DataView(data).getUint16(0);
-					let header = '';
-					try { header = decoder ? decoder.decode(data.slice(2, 2 + hlen)) : ''; } catch (e) {}
-					if (header.indexOf('Path:audio') >= 0) parts.push(data.slice(2 + hlen));
+					edgeParseBinary(data, parts, decoder);
 				}
 			} catch (e) { done = true; clearTimeout(timer); reject(e); }
 		};
@@ -379,6 +406,108 @@ function edgePlayBlob(parts, mySeq, done) {
 		}
 		setTimeout(function () { ok(true); }, 2000); // trinh duyet cu khong co playing/play-promise
 	} catch (e) { ok(false); }
+}
+
+// =====================================================
+// Edge via local proxy (python edge_proxy.py -> /api/edge-tts).
+// Browser truc tiep WSS hay bi server 403 (Origin localhost + UA Chrome
+// khong co Edg/...) -> loi `wss://... failed:` trong Console va rot xuong
+// Google (1 giong) nen doi edgeVoice khong nghe khac biet.
+// Proxy chay cung origin, tu set header Edg chuan -> lay dung giong da chon.
+// =====================================================
+let EDGE_PROXY_DOWN_UNTIL = 0;
+function edgeProxyEligible() {
+	try {
+		if (typeof location === 'undefined' || !location.hostname) return false;
+		const h = location.hostname;
+		if (h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0') return true;
+		if (h.indexOf('192.168.') === 0 || h.indexOf('10.') === 0) return true;
+	} catch (e) {}
+	return false;
+}
+// Tra ve Promise<boolean>: true = dang phat Edge (qua proxy)
+function edgeViaProxy(text, mySeq) {
+	return new Promise(function (resolve) {
+		let settled = false;
+		const finish = function (v) { if (!settled) { settled = true; resolve(v); } };
+		try {
+			if (typeof fetch === 'undefined' || typeof AbortController === 'undefined') { finish(false); return; }
+			if (!edgeProxyEligible()) { finish(false); return; }
+			if (Date.now() < EDGE_PROXY_DOWN_UNTIL) { finish(false); return; }
+		} catch (e) { finish(false); return; }
+		let ctrl = null;
+		let timer = null;
+		try {
+			ctrl = new AbortController();
+			timer = setTimeout(function () { try { ctrl.abort(); } catch (e) {} }, 12000);
+			fetch('api/edge-tts', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					voice: edgeVoice(),
+					text: text.length > 6000 ? text.slice(0, 6000) : text,
+					rate: edgeRateStr(),
+					pitch: edgePitchStr()
+				}),
+				signal: ctrl.signal
+			}).then(function (resp) {
+				if (mySeq !== gSeq) { finish(false); return null; }
+				if (!resp || !resp.ok) throw new Error('proxy http ' + (resp && resp.status));
+				return resp.blob();
+			}).then(function (blob) {
+				try {
+					if (!blob) { finish(false); return; }
+					if (mySeq !== gSeq) { finish(false); return; }
+					if (!blob.size) {
+						EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000;
+						finish(false);
+						return;
+					}
+					try { clearTimeout(timer); } catch (e) {}
+					// Phat thang blob mp3 tu proxy (khong can tach Path:audio)
+					let finished = false;
+					const ok = function (v) { if (!finished) { finished = true; finish(v); } };
+					try {
+						revokeEdgeUrl();
+						edgeUrl = URL.createObjectURL(blob);
+						const audio = new Audio();
+						edgeAudio = audio;
+						audio.onended = function () {
+							if (audio !== edgeAudio) return;
+							edgeAudio = null; revokeEdgeUrl(); ttsSetBusy(false);
+						};
+						audio.onerror = function () {
+							if (audio !== edgeAudio) return;
+							edgeAudio = null; revokeEdgeUrl(); ok(false);
+						};
+						try { audio.playbackRate = 1; } catch (e) {}
+						audio.src = edgeUrl;
+						audio.onplaying = function () { ok(true); };
+						const pr = audio.play();
+						if (pr && typeof pr.catch === 'function') {
+							pr.catch(function () {
+								if (audio !== edgeAudio) return;
+								edgeAudio = null; revokeEdgeUrl(); ok(false);
+							});
+						}
+						setTimeout(function () { ok(true); }, 2000);
+					} catch (e) { ok(false); }
+				} catch (e) {
+					try { clearTimeout(timer); } catch (e2) {}
+					EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000;
+					finish(false);
+				}
+			}, function () {
+				try { clearTimeout(timer); } catch (e) {}
+				if (mySeq !== gSeq) { finish(false); return; }
+				EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000; // nghi proxy 1 phut
+				finish(false);
+			});
+		} catch (e) {
+			try { if (timer) clearTimeout(timer); } catch (e2) {}
+			finish(false);
+		}
+	});
 }
 
 // Tra ve Promise<boolean>: true = dang phat Edge, false = that bai -> fallback
@@ -522,6 +651,10 @@ try {
 		} catch (e) {}
 	}
 } catch (e) {}
+function Text2SpeechResetEdgeCooldown() {
+	EDGE_DOWN_UNTIL = 0;
+	try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {}
+}
 function pickBestBrowserVoice() {
 	try {
 		if (typeof speechSynthesis === 'undefined') return null;
@@ -566,7 +699,17 @@ function Text2SpeechBrowser(word, force, onDone) {
 			if (typeof onDone === 'function') { const f = onDone; onDone = null; try { f(); } catch (e) {} }
 		};
 		try {
-			const bv = pickBestBrowserVoice();
+			let bv = null;
+			// Ton trong voice nguoi dung da chon o Setting (selectedVoiceIdx).
+			// Truoc day luon pickBest -> doi voice source=browser nghe van 1 giong.
+			try {
+				if (typeof Helper_loadInt === 'function' && typeof Helper_SelectedVoiceIdx !== 'undefined') {
+					const idx = Helper_loadInt(Helper_SelectedVoiceIdx, -1);
+					const vs = browserVoicesCache || (browserVoicesCache = speechSynthesis.getVoices() || []);
+					if (idx >= 0 && vs && vs[idx]) bv = vs[idx];
+				}
+			} catch (e) {}
+			if (!bv) bv = pickBestBrowserVoice();
 			if (bv) utter.voice = bv;
 		} catch (e) {}
 		try { utter.pitch = Helper_loadFloat(Helper_AudioPitchKey, 1); } catch (e) { utter.pitch = 1; }
@@ -608,16 +751,26 @@ function Text2Speech(word, force) {
 		googleSpeak(text, mySeq);
 		return;
 	}
-	// Edge mac dinh; loi/timeout -> nghi Edge 3 phut, rot xuong Google
+	// Edge mac dinh: proxy local truoc (tranh Origin/UA block) -> direct WSS -> Google
+	// loi/timeout direct -> nghi Edge 3 phut, rot xuong Google
 	if (Date.now() < EDGE_DOWN_UNTIL) {
 		googleSpeak(text, mySeq);
 		return;
 	}
-	edgeSpeak(text, mySeq).then(function (ok) {
+	edgeViaProxy(text, mySeq).then(function (okProxy) {
 		if (mySeq !== gSeq) return; // da co request moi hon
-		if (ok) return; // dang phat Edge, busy se ha khi audio ended
-		EDGE_DOWN_UNTIL = Date.now() + 3 * 60 * 1000;
-		googleSpeak(text, mySeq);
+		if (okProxy) return; // dang phat Edge qua proxy
+		edgeSpeak(text, mySeq).then(function (ok) {
+			if (mySeq !== gSeq) return;
+			if (ok) return; // dang phat Edge direct
+			try {
+				console.warn('[TTS] Edge direct WSS that bai (thuong do Origin/UA bi chan tu browser).'
+					+ ' Chay "python edge_proxy.py" thay cho "python -m http.server" de nghe dung giong Edge.'
+					+ ' Tam dung Google fallback.');
+			} catch (e) {}
+			EDGE_DOWN_UNTIL = Date.now() + 3 * 60 * 1000;
+			googleSpeak(text, mySeq);
+		});
 	});
 }
 

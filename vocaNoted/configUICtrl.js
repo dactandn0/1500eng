@@ -20,17 +20,24 @@ $scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id:
 $scope.ttsSource = 'edge';
 $scope.EDGE_VOICES = (typeof EDGE_VOICES !== 'undefined') ? EDGE_VOICES : [{ id: 'en-US-AriaNeural', desc: 'Aria' }];
 $scope.edgeVoice = 'en-US-AriaNeural';
+$scope.edgeProxy = '?'; // on | off (chi co khi chay python edge_proxy.py)
 
 $scope.setTtsSource = function () {
 	Helper_saveDB(Helper_TTSSourceKey, $scope.ttsSource);
+	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
+	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
 }
 
 $scope.setEdgeVoice = function () {
 	Helper_saveDB(Helper_EdgeVoiceKey, $scope.edgeVoice);
+	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
+	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
 }
 
 $scope.speechTest = function () {
-	try { Text2Speech('Hello, how are you today? I love learning English.'); } catch (e) {}
+	// force=true: nut Test cung 1 cau bam lai la replay, khong toggle-stop
+	// -> doi voice/source xong bam Test luon nghe giong moi.
+	try { Text2Speech('Hello, how are you today? I love learning English.', true); } catch (e) {}
 }
 
 
@@ -86,6 +93,18 @@ $scope.loadDB = function () {
 	$scope.toastTimeOutLong = Helper_loadFloat(Helper_ToastTimeOutLongKey, HELPER_TOASTER_TIMEOUT_LONG_DEF)
 
 	$scope.selectedVoiceIdx  = Helper_loadInt(Helper_SelectedVoiceIdx, -1)
+
+	try {
+		if (typeof fetch !== 'undefined')
+			fetch('api/edge-status', { cache: 'no-store' }).then(function (r) {
+				$scope.edgeProxy = (r && r.ok) ? 'on' : 'off';
+				try { $scope.$applyAsync(); } catch (e) {}
+			}, function () {
+				$scope.edgeProxy = 'off';
+				try { $scope.$applyAsync(); } catch (e) {}
+			});
+		else $scope.edgeProxy = '?';
+	} catch (e) { $scope.edgeProxy = '?'; }
 };
 
 

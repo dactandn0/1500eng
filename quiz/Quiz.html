@@ -14,8 +14,8 @@
 		.quiz-listen-btn:disabled, .quiz-speak:disabled { opacity:.45; cursor:wait; transform:none; }
 		.quiz-listen.is-clickable { cursor:pointer; }
 		.quiz-listen.is-clickable:hover { border-color:#e6c96c; background:#fff8e1; }
-		.quiz-feedback.is-clickable, .quiz-transcript.is-clickable, .pic-meaning.is-clickable { cursor:pointer; }
-		.quiz-feedback.is-clickable:hover, .quiz-transcript.is-clickable:hover, .pic-meaning.is-clickable:hover { filter:brightness(.985); border-color:#e6c96c; }
+		.quiz-feedback.is-clickable, .quiz-transcript.is-clickable, .pic-meaning.is-clickable, .quiz-question.is-clickable { cursor:pointer; }
+		.quiz-feedback.is-clickable:hover, .quiz-transcript.is-clickable:hover, .pic-meaning.is-clickable:hover, .quiz-question.is-clickable:hover { filter:brightness(.985); border-color:#e6c96c; }
 		.pic-img-wrap { display:flex; align-items:center; justify-content:center; min-height:220px; padding:1rem; background:#fffdf7; border:1px solid #f1e8d0; border-radius:10px; }
 		.pic-img { max-width:100%; max-height:300px; border-radius:10px; border:1px solid #eee5c9; object-fit:contain; background:#fff; }
 		.pic-loading { color:#8b857b; font-size:.9rem; }
@@ -37,6 +37,9 @@
 		</button>
 		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'pic'}" ng-click="setMode('pic')">
 			<i class="fa fa-picture-o" aria-hidden="true"></i> Food &amp; Bugs
+		</button>
+		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'nail'}" ng-click="setMode('nail')">
+			<i class="fa fa-scissors" aria-hidden="true"></i> Nail
 		</button>
 		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'dir'}" ng-click="setMode('dir')">
 			<i class="fa fa-compass" aria-hidden="true"></i> Directions
@@ -109,6 +112,76 @@
 			<div class="quiz-actions quiz-finished-actions">
 				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="quiz.wrong.length" ng-click="retryWrongQuiz()">Retry mistakes</button>
 				<button type="button" class="btn btn-sm btn-quiz" ng-click="startQuiz()">New quiz</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== SECTION 5: NAIL - tu vung nghe Nail (My), 2 chieu EN-VI / VI-EN, khong anh ===== -->
+	<div class="quiz-panel" ng-if="mode === 'nail'">
+		<div class="quiz-panel-heading">
+			<div>
+				<span class="eyebrow">NAIL QUIZ</span>
+				<h2>Từ vựng nghề Nail (Mỹ)</h2>
+			</div>
+			<button type="button" class="btn btn-sm btn-quiz" ng-click="startNail()">
+				<i class="fa fa-refresh" aria-hidden="true"></i> New round
+			</button>
+		</div>
+
+		<p style="margin:.6rem 0 .8rem; color:#8b857b; font-size:.85rem;">
+			Câu hỏi tiếng Anh thì chọn nghĩa Việt, câu hỏi tiếng Việt thì chọn từ tiếng Anh. Trả lời xong bấm loa để nghe.
+		</p>
+
+		<div ng-if="!nail.finished">
+			<div class="quiz-progress">Question {{nail.index + 1}} / {{nail.items.length}} <span>Score: {{nail.score}} &middot; Streak: {{nail.streak}}</span></div>
+			<div class="quiz-direction" ng-if="nail.direction === 'en-vi'">EN &rarr; VI &middot; Pick the correct meaning</div>
+			<div class="quiz-direction" ng-if="nail.direction === 'vi-en'">VI &rarr; EN &middot; Pick the correct word</div>
+			<div class="pic-img-wrap" style="flex-direction:column; gap:.5rem;" ng-if="nail.imgLoading || nail.imgSrc">
+				<span class="pic-loading" ng-if="nail.imgLoading"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Loading image&hellip;</span>
+				<img class="pic-img" ng-if="!nail.imgLoading && nail.imgSrc" ng-src="{{nail.imgSrc}}" alt="{{nail.current.en}}">
+			</div>
+			<div class="quiz-question is-clickable" ng-click="nailSpeak($event, nail.current.en)" title="Tap to listen" role="button" tabindex="0">
+				<span>{{nail.questionText}}</span>
+				<button type="button" class="quiz-speak" ng-click="nailSpeak($event, nail.current.en)" ng-disabled="ttsBusy" title="Listen" aria-label="Listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="quiz-options">
+				<button type="button" class="quiz-option"
+					ng-repeat="opt in nail.options track by $index"
+					ng-click="clickNailOption($event, $index)"
+					ng-attr-title="{{nail.answered ? 'Tap to listen' : 'Choose this answer'}}"
+					ng-class="{'is-correct': nail.answered && $index === nail.correctIdx, 'is-wrong': nail.answered && $index === nail.picked && $index !== nail.correctIdx}">
+					<span class="quiz-option-key">{{'ABCD'[$index]}}</span>
+					<span class="quiz-option-text">{{opt.display}}</span>
+				</button>
+			</div>
+			<div class="quiz-feedback is-good is-clickable" ng-if="nail.answered && nail.picked === nail.correctIdx" ng-click="nailSpeak($event, nail.current.en)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-check-circle" aria-hidden="true"></i> Correct! Keep the streak going.
+			</div>
+			<div class="quiz-feedback is-bad is-clickable" ng-if="nail.answered && nail.picked !== nail.correctIdx" ng-click="nailSpeak($event, nail.current.en)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+				<span>Not quite. Correct answer: <strong>{{nail.current.en}}</strong> &ndash; {{nail.current.vi}}</span>
+			</div>
+			<div class="quiz-actions" ng-if="nail.answered">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextNail()">
+					{{nail.index + 1 >= nail.items.length ? 'See results' : 'Next'}}
+				</button>
+			</div>
+		</div>
+
+		<div class="quiz-finished" ng-if="nail.finished">
+			<strong>Round complete</strong>
+			<span>Score: {{nail.score}} / {{nail.items.length}} &middot; Best streak: {{nail.bestStreak}}</span>
+			<div class="quiz-wrong-list" ng-if="nail.wrong.length">
+				<div class="quiz-wrong-title">Ôn lại các câu sai ({{nail.wrong.length}}):</div>
+				<div class="quiz-wrong-item" ng-repeat="w in nail.wrong track by $index">
+					<strong>{{w.en}}</strong><span>{{w.vi}}</span>
+				</div>
+			</div>
+			<div class="quiz-actions quiz-finished-actions">
+				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="nail.wrong.length" ng-click="retryWrongNail()">Retry mistakes</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="startNail()">New round</button>
 			</div>
 		</div>
 	</div>
@@ -198,12 +271,12 @@
 		</div>
 	</div>
 
-	<!-- ===== SECTION 3: PICTURE - Food / Fruit / Insects (ảnh từ API free, không key) ===== -->
+	<!-- ===== SECTION 3: PICTURE - Food / Fruit / Insects / Nail (ảnh từ API free, không key) ===== -->
 	<div class="quiz-panel" ng-if="mode === 'pic'">
 		<div class="quiz-panel-heading">
 			<div>
 				<span class="eyebrow">PICTURE QUIZ</span>
-				<h2>Món ăn &middot; Trái cây &middot; Côn trùng</h2>
+				<h2>Món ăn &middot; Trái cây &middot; Côn trùng &middot; Nail</h2>
 			</div>
 			<button type="button" class="btn btn-sm btn-quiz" ng-click="startPic()">
 				<i class="fa fa-refresh" aria-hidden="true"></i> New round
@@ -211,14 +284,15 @@
 		</div>
 
 		<p style="margin:.6rem 0 .8rem; color:#8b857b; font-size:.85rem;">
-			Nhìn hình, chọn đúng từ tiếng Anh. Ảnh load từ TheMealDB + Wikipedia (free, không cần key). Trả lời xong bấm loa để nghe.
+			Nhìn hình + nghĩa Việt, chọn đúng từ tiếng Anh. Ảnh load từ TheMealDB + Wikipedia (free, không cần key). Trả lời xong bấm loa để nghe.
 		</p>
 
 		<div class="quiz-type-row">
 			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'all'}" ng-click="setPicType('all')">All</button>
-			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'food'}" ng-click="setPicType('food')">Món ăn</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'food'}" ng-click="setPicType('food')">Foods</button>
 			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'fruit'}" ng-click="setPicType('fruit')">Fruits</button>
 			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'insect'}" ng-click="setPicType('insect')">Insects</button>
+			<button type="button" class="quiz-type-btn" ng-class="{'is-active': pic.type === 'nail'}" ng-click="setPicType('nail')">Nails</button>
 		</div>
 
 		<div ng-if="!pic.finished">
@@ -227,10 +301,11 @@
 				<span class="quiz-kind-badge">{{picKindLabel(pic.current.kind)}}</span>
 				&nbsp;LOOK &middot; Pick the correct word A&ndash;D
 			</div>
-			<div class="pic-img-wrap">
+			<div class="pic-img-wrap" style="flex-direction:column; gap:.5rem;">
 				<span class="pic-loading" ng-if="pic.imgLoading"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Loading image&hellip;</span>
 				<img class="pic-img" ng-if="!pic.imgLoading && pic.imgSrc" ng-src="{{pic.imgSrc}}" alt="{{pic.current.en}}">
-				<span class="pic-loading" ng-if="!pic.imgLoading && !pic.imgSrc">No image &mdash; {{pic.current.en}}</span>
+				<span class="pic-loading" ng-if="!pic.imgLoading && !pic.imgSrc">No image</span>
+				<span class="quiz-kind-badge">{{pic.current.vi}}</span>
 			</div>
 			<div class="quiz-options">
 				<button type="button" class="quiz-option"

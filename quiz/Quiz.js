@@ -1,6 +1,8 @@
 var app = angular.module("quizApp", []);
 app.controller("quizCtrl", function($scope, $rootScope, $timeout, $interval) {
 
+// Du lieu tinh (rounds, voices, streets, pics...): xem quiz/Quiz_Const.js
+
 // Co BUSY cho nut loa: dang phat -> disable nut, click spam bi bo qua.
 // Duoc cap nhat qua poll Text2SpeechIsBusy() (co nay ha khi audio ended/error/stop).
 $scope.ttsBusy = false;
@@ -32,7 +34,7 @@ function qUnique(list) {
 	return out;
 }
 
-$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic' | 'dir'
+$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic' | 'dir' | 'nail'
 $scope.setMode = function (m) {
 	$scope.mode = m;
 	try { Text2SpeechStop(); } catch (e) {}
@@ -73,8 +75,6 @@ $scope.quiz = {
 	wrong: []
 };
 
-const QUIZ_ROUND_SIZE = 20;
-const QUIZ_OPTION_COUNT = 4;
 
 function quizHeadword(word) {
 	try { return Helper_GetVocaFromWordFull(word.full); } catch (e) { return ''; }
@@ -226,65 +226,11 @@ $scope.clickQuizOption = function (ev, idx) {
 // SECTION 2: Listening detail - Address / Birthday / Phone / Spelling
 // Cau hoi: sound + 4 dap an ABCD de gay confuse
 // =====================================================
-const DETAIL_ROUND_SIZE = 20;
 
-const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-const CONF_MONTH = {
-	'January': ['June','July','February'],
-	'February': ['December','November','January'],
-	'March': ['May','August','April'],
-	'April': ['August','July','June'],
-	'May': ['March','July','April'],
-	'June': ['July','January','April'],
-	'July': ['June','January','May'],
-	'August': ['April','October','July'],
-	'September': ['December','November','October'],
-	'October': ['August','November','September'],
-	'November': ['December','September','October'],
-	'December': ['September','November','February']
-};
 
-const STREET_GROUPS = [
-	['Main','Maine','Mason'],
-	['Travis','Tavis','Davis'],
-	['Fannin','Fannon','Cannon'],
-	['San Jacinto','San Antonio','San Felipe'],
-	['Louisiana','Luciana','Indiana'],
-	['Milam','Milan','Miller'],
-	['Westheimer','Westmar','Westmere'],
-	['Kirby','Kerby','Kirkby'],
-	['Shepherd','Sheppard','Sheffield'],
-	['Richmond','Richman','Richland'],
-	['Bellaire','Bel Air','Bella Vista'],
-	['Memorial','Memoral','Mermorial'],
-	['Post Oak','Post Oaks','Pine Oak'],
-	['Montrose','Monroe','Monterey'],
-	['Washington','Warrington','Arlington'],
-	['Katy','Katie','Cady'],
-	['Lamar','Lamor','Lemark'],
-	['Polk','Poke','Park'],
-	['Walker','Waker','Walter'],
-	['Preston','Presten','Houston']
-];
-const STREET_TYPES = ['Street','Avenue','Boulevard','Drive','Lane','Road','Way'];
 // Uu tien Houston / Texas: trumpet weighting bang cach lap lai Houston nhieu lan
-const CITIES = [
-	'Houston, Texas 77002',
-	'Houston, Texas 77006',
-	'Houston, Texas 77054',
-	'Houston, Texas 77082',
-	'Katy, Texas 77494',
-	'Sugar Land, Texas 77479',
-	'Pasadena, Texas 77506',
-	'The Woodlands, Texas 77380',
-	'Dallas, Texas 75201',
-	'Austin, Texas 78701',
-	'San Antonio, Texas 78205',
-	'El Paso, Texas 79901'
-];
 
 // Ma vung dien thoai My (uu tien Texas/Houston)
-const US_AREA_CODES = ['713','281','832','346','214','469','972','512','210','212','213','312','305','404','415','617','718','917'];
 
 // =====================================================
 // Free API (khong key, CORS *). Fail -> fallback data/code local.
@@ -471,23 +417,6 @@ function quizMutateName(name) {
 	return out;
 }
 
-const NAME_GROUPS = [
-	['Anna','Hannah','Emma','Anne'],
-	['Emily','Emilia','Amelia','Emma'],
-	['Daniel','Danielle','Danny','David'],
-	['Michael','Michelle','Mitchell','Matthew'],
-	['John','Joan','Jon','Johnson'],
-	['Smith','Smyth','Smit','Schmidt'],
-	['Brown','Browne','Braun','Brian'],
-	['Johnson','Jonson','Johnston','Jackson'],
-	['Taylor','Tyler','Tailor','Tayla'],
-	['Wilson','Willson','Wilton','William'],
-	['David','Davis','Davies','Daisy'],
-	['Sophia','Sofia','Sophie','Sarah'],
-	['Catherine','Katherine','Kathryn','Katie'],
-	['Steven','Stephen','Stephens','Stewart'],
-	['Brian','Bryan','Ryan','Bryant']
-];
 
 $scope.detail = {
 	type: 'all', // all | address | birthday | phone | spelling
@@ -746,16 +675,6 @@ function genMoney() {
 	return { kind: 'money', speakText: speak, transcript: speak, correct: correct, options: qUnique(opts) };
 }
 
-const BLOOD_TYPES = [
-	{ long: 'A positive', short: 'A+' },
-	{ long: 'A negative', short: 'A-' },
-	{ long: 'B positive', short: 'B+' },
-	{ long: 'B negative', short: 'B-' },
-	{ long: 'AB positive', short: 'AB+' },
-	{ long: 'AB negative', short: 'AB-' },
-	{ long: 'O positive', short: 'O+' },
-	{ long: 'O negative', short: 'O-' }
-];
 function quizConfuseBlood(bt) {
 	// cung nhom chu khac Rh (A+ <-> A-) la bay nham chinh, roi toi khac nhom
 	const sameLetter = BLOOD_TYPES.filter(function (x) { return x.short !== bt.short && x.short.replace(/[+-]/, '') === bt.short.replace(/[+-]/, ''); });
@@ -1033,73 +952,45 @@ $scope.detailKindLabel = function (k) {
 };
 
 // =====================================================
-// SECTION 3: Picture quiz - Mon an / Fruit / Insects
-// Anh tu API free, khong key, CORS *:
-// - Mon an: TheMealDB (chinh) + Wikipedia (phu)
-// - Fruit/Insects: Wikipedia REST summary
-// Docs: https://www.themealdb.com/api.php , https://en.wikipedia.org/api/rest_v1/
+// SECTION 3: Picture quiz - Mon an / Fruit / Insects / Nail
+// Anh tu API free, khong key, CORS *: TheMealDB (mon an) + Wikipedia (con lai)
 // =====================================================
-const PIC_ROUND_SIZE = 20;
 
-const PIC_FOODS = [
-	{ en: 'rice', vi: 'cơm' }, { en: 'noodles', vi: 'mì' },
-	{ en: 'bread', vi: 'bánh mì' }, { en: 'egg', vi: 'trứng' },
-	{ en: 'milk', vi: 'sữa' }, { en: 'cheese', vi: 'phô mai' },
-	{ en: 'butter', vi: 'bơ' }, { en: 'chicken', vi: 'thịt gà' },
-	{ en: 'beef', vi: 'thịt bò' }, { en: 'pork', vi: 'thịt heo' },
-	{ en: 'fish', vi: 'cá' }, { en: 'shrimp', vi: 'tôm' },
-	{ en: 'crab', vi: 'cua' }, { en: 'soup', vi: 'súp' },
-	{ en: 'salad', vi: 'salad' }, { en: 'pizza', vi: 'pizza' },
-	{ en: 'hamburger', vi: 'hamburger' }, { en: 'sandwich', vi: 'sandwich' },
-	{ en: 'cake', vi: 'bánh ngọt' }, { en: 'ice cream', vi: 'kem' },
-	{ en: 'chocolate', vi: 'sô cô la' }, { en: 'candy', vi: 'kẹo' },
-	{ en: 'coffee', vi: 'cà phê' }, { en: 'tea', vi: 'trà' },
-	{ en: 'juice', vi: 'nước ép' }, { en: 'sugar', vi: 'đường' },
-	{ en: 'salt', vi: 'muối' }, { en: 'pepper', vi: 'hạt tiêu' },
-	{ en: 'garlic', vi: 'tỏi' }, { en: 'onion', vi: 'hành' },
-	{ en: 'potato', vi: 'khoai tây' }, { en: 'tomato', vi: 'cà chua' },
-	{ en: 'carrot', vi: 'cà rốt' }, { en: 'spring rolls', vi: 'chả giò' },
-	{ en: 'pho', vi: 'phở' }
-];
-const PIC_FRUITS = [
-	{ en: 'apple', vi: 'táo' }, { en: 'banana', vi: 'chuối' },
-	{ en: 'orange', vi: 'cam' }, { en: 'mango', vi: 'xoài' },
-	{ en: 'pineapple', vi: 'dứa' }, { en: 'watermelon', vi: 'dưa hấu' },
-	{ en: 'grapes', vi: 'nho' }, { en: 'strawberry', vi: 'dâu tây' },
-	{ en: 'lemon', vi: 'chanh vàng' }, { en: 'coconut', vi: 'dừa' },
-	{ en: 'papaya', vi: 'đu đủ' }, { en: 'avocado', vi: 'quả bơ' },
-	{ en: 'peach', vi: 'đào' }, { en: 'pear', vi: 'lê' },
-	{ en: 'cherry', vi: 'anh đào' }, { en: 'kiwi', vi: 'kiwi' },
-	{ en: 'plum', vi: 'mận' }, { en: 'durian', vi: 'sầu riêng' },
-	{ en: 'jackfruit', vi: 'mít' }, { en: 'longan', vi: 'nhãn' },
-	{ en: 'lychee', vi: 'vải' }, { en: 'pomelo', vi: 'bưởi' },
-	{ en: 'tangerine', vi: 'quýt' }, { en: 'apricot', vi: 'mơ' }
-];
-const PIC_INSECTS = [
-	{ en: 'ant', vi: 'kiến' }, { en: 'bee', vi: 'ong' },
-	{ en: 'wasp', vi: 'ong bắp cày' }, { en: 'butterfly', vi: 'bướm' },
-	{ en: 'moth', vi: 'bướm đêm' }, { en: 'mosquito', vi: 'muỗi' },
-	{ en: 'fly', vi: 'ruồi' }, { en: 'spider', vi: 'nhện' },
-	{ en: 'cockroach', vi: 'gián' }, { en: 'beetle', vi: 'bọ cánh cứng' },
-	{ en: 'cricket', vi: 'dế' }, { en: 'grasshopper', vi: 'châu chấu' },
-	{ en: 'ladybug', vi: 'bọ rùa' }, { en: 'dragonfly', vi: 'chuồn chuồn' },
-	{ en: 'termite', vi: 'mối' }, { en: 'firefly', vi: 'đom đóm' },
-	{ en: 'caterpillar', vi: 'sâu bướm' }, { en: 'centipede', vi: 'rết' },
-	{ en: 'scorpion', vi: 'bọ cạp' }, { en: 'flea', vi: 'bọ chét' }
-];
+// Tu vung nghe Nail (My) - lay tu ebooks/spkBook/data/nail/nail.js trong app.
+// Dung cho SECTION 5 (Nail quiz 2 chieu, khong anh).
 
 const PIC_IMG_CACHE = {};
-function picFetchWiki(name) {
+const PIC_WIKI_CACHE = {};
+function picFetchWikiSummary(name) {
+	const key = String(name || '').toLowerCase();
+	if (PIC_WIKI_CACHE[key] !== undefined) return Promise.resolve(PIC_WIKI_CACHE[key]);
 	if (typeof fetch !== 'function') return Promise.resolve(null);
 	const url = 'https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(name);
 	return fetch(url).then(function (r) {
 		if (!r.ok) return null;
 		return r.json();
 	}).then(function (data) {
-		if (data && data.thumbnail && data.thumbnail.source) return data.thumbnail.source;
-		if (data && data.originalimage && data.originalimage.source) return data.originalimage.source;
-		return null;
-	}).catch(function () { return null; });
+		let out = null;
+		try {
+			let img = null;
+			if (data && data.thumbnail && data.thumbnail.source) img = data.thumbnail.source;
+			else if (data && data.originalimage && data.originalimage.source) img = data.originalimage.source;
+			let extract = (data && data.extract) || '';
+			if (extract.length > 220) {
+				const cut = extract.slice(0, 220);
+				const dot = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '));
+				extract = (dot > 80 ? cut.slice(0, dot + 1) : cut).trim() + ' ...';
+			}
+			if (img || extract) out = { img: img, extract: extract };
+		} catch (e) {}
+		PIC_WIKI_CACHE[key] = out;
+		return out;
+	}).catch(function () { PIC_WIKI_CACHE[key] = null; return null; });
+}
+function picFetchWiki(name) {
+	return picFetchWikiSummary(name).then(function (s) {
+		return (s && s.img) || null;
+	});
 }
 function picFetchMeal(name) {
 	if (typeof fetch !== 'function') return Promise.resolve(null);
@@ -1145,8 +1036,153 @@ function picPoolOf(type) {
 	if (!type || type === 'all' || type === 'food') push(PIC_FOODS, 'food');
 	if (!type || type === 'all' || type === 'fruit') push(PIC_FRUITS, 'fruit');
 	if (!type || type === 'all' || type === 'insect') push(PIC_INSECTS, 'insect');
+	if (!type || type === 'all' || type === 'nail') push(PIC_NAILS, 'nail');
 	return out;
 }
+
+// =====================================================
+// SECTION 5: Nail quiz - tu vung nghe Nail (My), 2 chieu, khong anh.
+// EN -> VI: cau hoi tieng Anh, chon nghia Viet. VI -> EN: nguoc lai.
+// =====================================================
+
+$scope.nail = {
+	items: [],
+	index: 0,
+	current: null,
+	direction: 'en-vi', // 'en-vi' | 'vi-en'
+	questionText: '',
+	options: [],
+	correctIdx: -1,
+	picked: -1,
+	answered: false,
+	score: 0,
+	streak: 0,
+	bestStreak: 0,
+	wrong: [],
+	finished: false,
+	imgSrc: '',
+	imgLoading: false
+};
+
+$scope.startNail = function (wrongOnly) {
+	try { Text2SpeechStop(); } catch (e) {}
+	let pool = PIC_NAILS.slice();
+	if (wrongOnly && $scope.nail.wrong.length) {
+		pool = $scope.nail.wrong.slice();
+	}
+	$scope.nail.items = qShuffle(pool.slice()).slice(0, NAIL_ROUND_SIZE);
+	$scope.nail.index = 0;
+	$scope.nail.score = 0;
+	$scope.nail.streak = 0;
+	$scope.nail.bestStreak = 0;
+	$scope.nail.wrong = [];
+	$scope.nail.finished = !$scope.nail.items.length;
+	if ($scope.nail.items.length) $scope.buildNailQuestion();
+	// preload anh truoc (co thi hien, khong co thi thoi)
+	try {
+		if (typeof fetch === 'function') {
+			$scope.nail.items.forEach(function (it) {
+				try { picFetchWiki(it.en); } catch (e) {}
+			});
+		}
+	} catch (e) {}
+};
+
+function nailDistractors(entry, count) {
+	const picked = [];
+	const seen = {};
+	seen[entry.en] = true;
+	const pool = qShuffle(PIC_NAILS.slice());
+	for (let i = 0; i < pool.length && picked.length < count; i++) {
+		if (!seen[pool[i].en]) {
+			seen[pool[i].en] = true;
+			picked.push(pool[i]);
+		}
+	}
+	return picked;
+}
+
+$scope.buildNailQuestion = function () {
+	const entry = $scope.nail.items[$scope.nail.index];
+	if (!entry) { $scope.nail.finished = true; return; }
+	$scope.nail.current = entry;
+	$scope.nail.direction = Math.random() < 0.5 ? 'en-vi' : 'vi-en';
+	$scope.nail.questionText = ($scope.nail.direction === 'en-vi') ? entry.en : entry.vi;
+	const distractors = nailDistractors(entry, NAIL_OPTION_COUNT - 1);
+	const entries = qShuffle([entry].concat(distractors));
+	$scope.nail.options = entries.map(function (e) {
+		return {
+			en: e.en, vi: e.vi,
+			display: ($scope.nail.direction === 'en-vi') ? e.vi : e.en
+		};
+	});
+	$scope.nail.correctIdx = -1;
+	for (let i = 0; i < entries.length; i++) {
+		if (entries[i].en === entry.en) { $scope.nail.correctIdx = i; break; }
+	}
+	$scope.nail.picked = -1;
+	$scope.nail.answered = false;
+	// anh minh hoa (co thi hien, khong co thi an luon, cau hoi van la text)
+	$scope.nail.imgLoading = true;
+	$scope.nail.imgSrc = '';
+	try {
+		picFetchWiki(entry.en).then(function (url) {
+			$timeout(function () {
+				if ($scope.nail.current !== entry) return;
+				$scope.nail.imgSrc = url || '';
+				$scope.nail.imgLoading = false;
+			});
+		});
+	} catch (e) {
+		$scope.nail.imgLoading = false;
+	}
+};
+
+$scope.answerNail = function (idx) {
+	if ($scope.nail.answered || idx < 0) return;
+	$scope.nail.answered = true;
+	$scope.nail.picked = idx;
+	if (idx === $scope.nail.correctIdx) {
+		$scope.nail.score += 1;
+		$scope.nail.streak += 1;
+		if ($scope.nail.streak > $scope.nail.bestStreak) $scope.nail.bestStreak = $scope.nail.streak;
+	} else {
+		$scope.nail.streak = 0;
+		$scope.nail.wrong.push($scope.nail.current);
+	}
+};
+
+$scope.nailSpeak = function (ev, text) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	const word = text || ($scope.nail.current && $scope.nail.current.en) || '';
+	if (!word) return;
+	if (!text && ttsIsBusy()) return;
+	try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)(word); } catch (e) {}
+};
+
+$scope.nextNail = function () {
+	$scope.nail.index += 1;
+	if ($scope.nail.index >= $scope.nail.items.length) {
+		$scope.nail.current = null;
+		$scope.nail.finished = true;
+	} else {
+		$scope.buildNailQuestion();
+	}
+};
+$scope.retryWrongNail = function () { $scope.startNail(true); };
+
+// Click dòng đáp án: chưa trả lời -> chọn; đã trả lời -> phát âm từ tiếng Anh đó
+$scope.clickNailOption = function (ev, idx) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	if (!$scope.nail.answered) { $scope.answerNail(idx); return; }
+	if (ttsIsBusy()) return;
+	const opt = $scope.nail.options[idx];
+	if (opt && opt.en) { try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)(opt.en); } catch (e) {} }
+};
+
+// =====================================================
+// (SECTION 3: Picture quiz - xem phia duoi)
+// =====================================================
 
 $scope.pic = {
 	type: 'all', // all | food | fruit | insect
@@ -1175,6 +1211,7 @@ $scope.picKindLabel = function (k) {
 	if (k === 'food') return 'Mon an';
 	if (k === 'fruit') return 'Fruit';
 	if (k === 'insect') return 'Insect';
+	if (k === 'nail') return 'Nail';
 	return k;
 };
 
@@ -1301,20 +1338,8 @@ $scope.picSpeak = function (ev, text, force) {
 // Ton trong server free: toi da ~1 request/giay.
 // Docs: https://router.project-osrm.org/ , https://www.openstreetmap.org/copyright
 // =====================================================
-const DIR_ROUND_SIZE = 10;
 // Trong so thanh pho: ~70% Houston, Texas; con lai chia deu Dallas / Austin / San Antonio.
-const DIR_CENTERS = [
-	{ id: 'houston', label: 'Houston, Texas', lat: 29.7604, lon: -95.3698, w: 70 },
-	{ id: 'dallas', label: 'Dallas, Texas', lat: 32.7767, lon: -96.7970, w: 10 },
-	{ id: 'austin', label: 'Austin, Texas', lat: 30.2672, lon: -97.7431, w: 10 },
-	{ id: 'sanantonio', label: 'San Antonio, Texas', lat: 29.4241, lon: -98.4936, w: 10 }
-];
 const DIR_OSM = { routes: [], nearby: [], busy: false };
-const DIR_FLIP_MOD = {
-	'left': 'right', 'right': 'left',
-	'slight left': 'slight right', 'slight right': 'slight left',
-	'sharp left': 'sharp right', 'sharp right': 'sharp left'
-};
 
 function dirCenterOf(id) {
 	for (let i = 0; i < DIR_CENTERS.length; i++) {
@@ -1435,10 +1460,6 @@ function dirFetchRoute(center) {
 // la ban (north of...); 2 so nha cung duong: lien ke = next to, chan/le = across from.
 // Docs: https://wiki.openstreetmap.org/wiki/Overpass_API
 // =====================================================
-const DIR_OVERPASS_EPS = [
-	'https://overpass-api.de/api/interpreter',
-	'https://overpass.kumi.systems/api/interpreter'
-];
 function dirOverpassQuery(lat, lon, r) {
 	const sel = [
 		'node["leisure"="park"]["name"]',
@@ -1585,17 +1606,6 @@ function dirMakeNearby(a, b, rel, pa, pb, cityId, altNames) {
 	const text = a + ' is ' + rel + ' ' + b + '.';
 	return { qtype: 'nearby', a: a, b: b, rel: rel, pa: pa, pb: pb, city: cityId, altNames: altNames || [], text: text };
 }
-const DIR_FLIP_REL = {
-	'next to': ['across from', 'behind'],
-	'across from': ['next to', 'behind'],
-	'behind': ['next to', 'across from'],
-	'near': ['far from', 'next to'],
-	'far from': ['near'],
-	'north of': ['south of'], 'south of': ['north of'],
-	'east of': ['west of'], 'west of': ['east of'],
-	'northeast of': ['southwest of'], 'southwest of': ['northeast of'],
-	'northwest of': ['southeast of'], 'southeast of': ['northwest of']
-};
 // bien the gay nham: 0 = doi quan he, 1 = doi ten B, 2 = doi ten A / doi so nha
 function dirNearbyMutate(parsed, idx) {
 	for (let tries = 0; tries < 12; tries++) {
@@ -1649,15 +1659,6 @@ function dirItemFromLive(live) {
 	return dirItemFromParsed(live);
 }
 // sample offline: dia danh Houston that + so nha Texas
-const DIR_LOCAL_POIS = [
-	{ name: 'Memorial Park', cat: 'park' }, { name: 'Hermann Park', cat: 'park' },
-	{ name: 'Discovery Green', cat: 'park' }, { name: 'Buffalo Bayou Park', cat: 'park' },
-	{ name: 'Lamar High School', cat: 'school' }, { name: 'Westside High School', cat: 'school' },
-	{ name: 'Houston Public Library', cat: 'library' }, { name: 'Memorial Hermann Hospital', cat: 'hospital' },
-	{ name: 'Lake Houston', cat: 'lake' }, { name: 'McGovern Lake', cat: 'lake' },
-	{ name: 'Station 8 Fire Station', cat: 'fire station' }, { name: 'Rice University', cat: 'college' }
-];
-const DIR_LOCAL_RELS = ['next to', 'near', 'north of', 'south of', 'east of', 'west of', 'across from'];
 function dirGenLocalNearby(filter) {
 	const center = dirPickCenter(filter);
 	const pool = qShuffle(DIR_LOCAL_POIS.slice());
@@ -1979,6 +1980,7 @@ $scope.startQuiz(false, true);
 $scope.startDetail(false, true);
 $scope.startPic(false);
 $scope.startDir(false, true);
+try { $scope.startNail(); } catch (e) {}
 try { dirEnsureOsm(6); } catch (e) {}
 
 });

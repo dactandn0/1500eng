@@ -11,10 +11,12 @@
 		<button type="button" class="track-page-btn track-legend-btn" ng-click="showTrackLegend=!showTrackLegend" aria-label="Chú thích màu track" title="Chú thích màu track">?</button>
 	</div>
 	<div class="track-legend" ng-show="showTrackLegend">
-		<span><i class="track-dot" style="background:red"></i>HasNote</span>
-		<span><i class="track-dot" style="background:turquoise"></i>BlankScript</span>
-		<span><i class="track-dot track-dot-blink"></i>Test</span>
-		<span><u>End of Ebook</u></span>
+		<span><i class="track-dot" style="background:red"></i>có note</span>
+		<span><i class="track-dot" style="background:turquoise"></i>trống</span>
+		<span><i class="track-dot track-dot-blink"></i>test</span>
+		<span><u>bài cuối CD</u></span>
+		<span>[Ex.] bài tập (True/False/Not Given, Matching)</span>
+		<span>[Img] có ảnh</span>
 	</div>
 	<div class="track-list">
 		<a ng-repeat="title in titles | limitTo:pageSize:(trackPage*pageSize) track by $index"
@@ -37,7 +39,8 @@
 	  	
 	  	<h6 class="accordion toggleClick" ng-click="showLession=!showLession">
 		    <a href>{{story.fTitle}}</a>
-		    <span ng-if="story.hasExercise" class="text-danger">[Ex.]</span>
+		    <span ng-if="story.T_F_NG || story.Match_Heading" class="text-danger">[Ex.]</span>
+		    <span ng-if="story.images && story.images.length" class="text-danger">[Img]</span>
 		</h6>
 		 
 	  	<div class="accordion-content toggleShow" ng-show="showLession">

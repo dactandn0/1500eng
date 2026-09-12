@@ -19,7 +19,7 @@
 
 <div ng-if="story.images && story.images.length > 0" class="d-flex flex-wrap gap-2">
 	<div ng-repeat="img in story.images track by $index">
-		<img src="{{img_root}}/{{img}}.png" class="img-fluid" style="max-width: 250px; max-height: 250px; object-fit: contain;">
+		<img ng-src="{{img_root}}/{{img}}.png" class="img-fluid" style="max-width: 250px; max-height: 250px; object-fit: contain;" onerror="this.style.display='none'">
 	</div>
 </div>
 

@@ -1,4 +1,13 @@
 
+<div class="track-legend-wrap">
+  <button type="button" class="track-page-btn track-legend-btn" ng-click="showBadgeLegend=!showBadgeLegend" aria-label="Chú thích badge" title="Chú thích badge">?</button>
+  <div class="track-legend" ng-show="showBadgeLegend" style="justify-content:flex-start">
+    <span>[Noted] có note</span>
+    <span>[Blank] trống (chưa có script)</span>
+    <span>[Ex.] bài tập (True/False/Not Given, Matching)</span>
+    <span>[Img] có ảnh</span>
+  </div>
+</div>
 <div ng-repeat="obj in titles track by $index" class="mb-2" >
   <h6 class="accordion" >
     <a href 
@@ -9,6 +18,7 @@
       <span ng-if="obj.hasNote">[Noted]</span>
       <span ng-if="obj.blankEn">[Blank]</span>
       <span ng-if="obj.hasExercise">[Ex.]</span>
+      <span ng-if="obj.hasImages">[Img]</span>
       </span>
     </a>
     

@@ -1076,7 +1076,7 @@ const PIC_INSECTS = [
     { en: 'termite queen', vi: 'mối chúa' }, { en: 'termite worker', vi: 'mối thợ' }, { en: 'flea beetle', vi: 'bọ nhảy' }, { en: 'bedbug', vi: 'rệp giường' }, { en: 'head louse', vi: 'chấy đầu' }, { en: 'body louse', vi: 'rận thân' }, { en: 'pubic louse', vi: 'rận mu' }, { en: 'tick', vi: 've' }, { en: 'mite', vi: 'con mạt' }, { en: 'dust mite', vi: 'mạt bụi' },
     { en: 'tarantula', vi: 'nhện tarantula' }, { en: 'black widow', vi: 'nhện góa phụ đen' }, { en: 'wolf spider', vi: 'nhện sói' }, { en: 'jumping spider', vi: 'nhện nhảy' }, { en: 'orb-weaver', vi: 'nhện giăng lưới' }, { en: 'crab spider', vi: 'nhện cua' }, { en: 'funnel-web spider', vi: 'nhện mạng phễu' }, { en: 'cellar spider', vi: 'nhện chân dài' }, { en: 'house spider', vi: 'nhện nhà' }, { en: 'garden spider', vi: 'nhện vườn' },
 ];
-// Tu vung nghe Nail (My) - lay tu ebooks/spkBook/data/nail/nail.js trong app.
+// Tu vung nghe Nail (My) - lay tu subLesson/subLesson_nail_data.js trong app.
 // Dung cho SECTION 5 (Nail quiz 2 chieu, khong anh).
 const PIC_NAILS = [
 	{ en: 'nail tip', vi: 'móng tip' }, { en: 'nail tips', vi: 'tip móng' }, { en: 'nail glue', vi: 'keo dán móng' }, { en: 'nail form', vi: 'form móng' }, { en: 'acrylic liquid', vi: 'dung dịch acrylic' }, { en: 'monomer', vi: 'dung dịch monomer' }, { en: 'dip powder', vi: 'bột nhúng' }, { en: 'dip powder nails', vi: 'móng bột nhúng' }, { en: 'builder gel', vi: 'gel đắp móng' }, { en: 'hard gel', vi: 'gel cứng' },

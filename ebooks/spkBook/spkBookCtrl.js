@@ -3,7 +3,6 @@
 document.write('<script src="./ebooks/spkBook/data/collins/collins_cd12.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/formula/formula.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/speakSameVol5/speakSameVol5.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/spkBook/data/nail/nail.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/tiktok/tiktok.js" type="text/javascript"></script>');
 
 var app = angular.module("spkBookApp", ['ngSanitize']);
@@ -40,11 +39,6 @@ bookRadioChange = function (num, isLoadData = false) {
 		$scope.img_root = imgRootPath + 'speakSameVol5/img/'	
 		$scope.stories = SPEAKING_SAME_VOL5;
 	}
-	if (num===3)
-	{
-		$scope.img_root = imgRootPath + 'nail/img/'	
-		$scope.stories = AMERICAN_NAIL_DATA;
-	}
 	if (num===4)
 	{
 		$scope.img_root = imgRootPath + 'tiktok/img/'	
@@ -64,7 +58,6 @@ $scope.createAudioSrc = function()
 	if ($scope.bookRadio === 0) return rootPath + "collins/mp3/" + mp3File
 	else if ($scope.bookRadio === 1) return rootPath + "formula/mp3/" + mp3File
 	else if ($scope.bookRadio === 2) return rootPath + "speakSameVol5/mp3/" + mp3File
-	else if ($scope.bookRadio === 3) return rootPath + "sos/mp3/" + mp3File
 }
 
 $scope.$on('parent_whenAudioEnded', function(event, message) {
@@ -78,6 +71,7 @@ $scope.fetchStory = function (idx)
 
 $scope.loadData = function () {
 	var cd = Helper_loadInt('Speaking_Ebook', 0);
+	if (cd === 3) cd = 0; // Nail da chuyen sang subLesson
 	bookRadioChange(cd, true);
 	document.spk_book_bForm.bookRadio.value = cd;
 };

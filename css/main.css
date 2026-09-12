@@ -1429,6 +1429,15 @@ input:focus {
   font-weight: 700;
 }
 
+.track-legend-wrap {
+  margin-bottom: 0.5rem;
+}
+
+.track-legend-wrap .track-legend {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
 .track-legend {
   display: flex;
   flex-wrap: wrap;

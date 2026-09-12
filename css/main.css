@@ -1356,17 +1356,59 @@ input:focus {
   box-shadow: 0 4px 10px rgba(191, 151, 45, 0.16);
 }
 
-.track-list {
-  padding: 0.8rem;
+.track-pager {
+  padding: 0.6rem 0.8rem;
   background: #fffdf8;
   border: 1px solid #eee9dc;
   border-radius: 10px;
 }
 
+.track-pager-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.track-page-btn {
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  color: #5f470c;
+  background: linear-gradient(135deg, #fff4c9 0%, #ffe9a2 100%);
+  border: 1px solid #e6c96c;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.track-page-btn:hover {
+  filter: brightness(0.97);
+}
+
+.track-page-info {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #5f470c;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.track-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+
 .track-list a {
   display: inline-block;
   color: #756329;
-  border-radius: 6px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   text-decoration: none;
 }
 
@@ -1374,6 +1416,13 @@ input:focus {
 .track-list a:focus {
   color: #5f470c;
   background: #fff4c9;
+}
+
+.track-list a.is-active {
+  color: #5f470c;
+  background: #fff0b8;
+  border-color: #eadcae;
+  box-shadow: 0 4px 10px rgba(191, 151, 45, 0.16);
 }
 
 .lesson-panel {
@@ -1714,6 +1763,15 @@ input:focus {
   color: #F94AF8;
 }
 
+/* Tu trong list voca cua bai (bold den + highlight vang) */
+.voca-hl {
+  color: #111;
+  font-weight: 700;
+  background: #ABCDEF;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
 #toast-container .toast.toast-info  {
   background-image: none !important;
   background-color: #fffdf7 !important;
@@ -1944,4 +2002,80 @@ input[type="range"]:focus::-moz-range-thumb {
   0% { color: green; }
   50% { color: yellow; }
   70% { color: red; }
+}
+
+/* Vocab list of ebook (includes/vocaOfEbook.html) */
+.voca-ebook-group {
+  background: #fffdf7;
+  border: 1px solid #eee5c9;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(191, 151, 45, 0.08);
+}
+.voca-ebook-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #fff4c9 0%, #ffe9a2 100%);
+  border-bottom: 1px solid #eadcae;
+}
+.voca-ebook-unit {
+  font-weight: 700;
+  color: #5f470c;
+}
+.voca-ebook-count {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: #8b857b;
+  white-space: nowrap;
+}
+.voca-ebook-list {
+  padding: 0.25rem 0;
+}
+.voca-ebook-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px dashed #f1e8d0;
+  cursor: pointer;
+}
+.voca-ebook-row:last-child {
+  border-bottom: none;
+}
+.voca-ebook-row:hover {
+  background: #fff8e1;
+}
+.voca-ebook-idx {
+  flex: 0 0 auto;
+  min-width: 1.7rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #604a0e;
+  background: #fff0b8;
+  border: 1px solid #eadcae;
+  border-radius: 50%;
+}
+.voca-ebook-word {
+  flex: 1 1 auto;
+  min-width: 0;
+  color: #403d37;
+}
+.voca-ebook-ic {
+  flex: 0 0 auto;
+  color: #b08d2a;
+}
+.voca-ebook-row:hover .voca-ebook-ic {
+  color: #5f470c;
+}
+.voca-ebook-sen {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.88rem;
+  color: #23639a;
 }

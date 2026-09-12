@@ -1,13 +1,24 @@
 
-<div class="track-list my-1 mb-4" style="overflow-y: scroll; max-height:200px; height: auto; min-height: 115% !important;">
-	<a ng-repeat="title in titles"
-	ng-click="fetchStory($index);" 
-	ng-class="storyIdx==$index ? 'font-weight-bold' : 'font-weight-normal' "
-	href="" class="p-2 mr-1">
-		<span ng-style="title.ngStyle">
-			{{title.trackRutgon || title.track || $index}}
-		</span>
-	</a>
+<div class="track-pager my-1 mb-4" ng-controller="trackPagerCtrl">
+	<div class="track-pager-bar" ng-show="pageCount() > 1">
+		<button type="button" class="track-page-btn" ng-click="prevPage()" aria-label="Previous page">
+			<i class="fa fa-chevron-left" aria-hidden="true"></i>
+		</button>
+		<span class="track-page-info">{{trackPage + 1}} / {{pageCount()}}</span>
+		<button type="button" class="track-page-btn" ng-click="nextPage()" aria-label="Next page">
+			<i class="fa fa-chevron-right" aria-hidden="true"></i>
+		</button>
+	</div>
+	<div class="track-list">
+		<a ng-repeat="title in titles | limitTo:pageSize:(trackPage*pageSize) track by $index"
+		ng-click="goTrack(trackPage*pageSize + $index);"
+		ng-class="storyIdx===(trackPage*pageSize + $index) ? 'font-weight-bold is-active' : 'font-weight-normal'"
+		href="" class="track-item p-2 mr-1">
+			<span ng-style="title.ngStyle">
+				{{title.trackRutgon || title.track || (trackPage*pageSize + $index)}}
+			</span>
+		</a>
+	</div>
 </div>
 
 <div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-1"></div>

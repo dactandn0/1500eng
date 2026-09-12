@@ -1,15 +1,23 @@
 
-<div ng-show="$root.bVocaOfEbook===true" class="mt-4" id = 'VocaOfEbook'>
-	<div ng-repeat="($index,jsonEle) in $root.vocaEbook track by $index">
-		<i class="color-anim">{{jsonEle.unit}} {{jsonEle.title}}</i>
-		<div ng-repeat="($indexB, voca) in jsonEle.vocas track by $indexB">
-			<span ng-click="vocaEbookSpeech($event, voca, jsonEle.lesson, $indexB, $parent.$index)">{{voca}} 
-				<span 
-					ng-if="$indexB==vocaIdx && $parent.$index==lessonIdx" 
-					ng-bind-html="sentenceForVoca">
-					
+<div ng-show="$root.bVocaOfEbook===true" class="mt-4 voca-ebook" id='VocaOfEbook'>
+	<div class="voca-ebook-group" ng-repeat="($index,jsonEle) in $root.vocaEbook track by $index">
+		<div class="voca-ebook-head">
+			<span class="voca-ebook-unit">{{jsonEle.unit}} {{jsonEle.title}}</span>
+			<span class="voca-ebook-count">{{jsonEle.vocas.length}} words</span>
+		</div>
+		<div class="voca-ebook-list">
+			<div class="voca-ebook-row" ng-repeat="($indexB, voca) in jsonEle.vocas track by $indexB"
+				ng-click="vocaEbookSpeech($event, voca, jsonEle.lesson, $indexB, $parent.$index)"
+				role="button" tabindex="0">
+				<span class="voca-ebook-idx">{{$indexB + 1}}</span>
+				<span class="voca-ebook-word">{{voca}}
+					<span class="voca-ebook-sen"
+						ng-if="$indexB==vocaIdx && $parent.$index==lessonIdx"
+						ng-bind-html="sentenceForVoca">
+					</span>
 				</span>
-			</span>
+				<i class="fa fa-volume-up voca-ebook-ic" aria-hidden="true"></i>
+			</div>
 		</div>
 	</div>
 </div>

@@ -159,14 +159,18 @@ function processStory(story, isAlert = true) {
 		for (let i = 0; i < vocas.length; i++) {
 			let voca = vocas[i].trim();
 
-			// dont bold specical_words
-			const idx = specialWords.findIndex(ele => ele.includes(voca) == true)
+			// dont bold specical_words (so sanh khong phan biet hoa/thuong)
+			const idx = specialWords.findIndex(ele => ele.toLowerCase().includes(voca.toLowerCase()) == true)
 			if (idx >= 0) continue;
 
 			voca = voca.replace(/\[.*\]/g, '').trim();
-			const regex = new RegExp(`\\b${voca}\\b`, 'g')
-			if (voca != 'event')
-				enShow = enShow.replace(regex, '<b>' + voca + '</b>');
+			if (!voca) continue;
+			// escape ky tu regex dac biet trong voca (vd "vitamin C+D", "cuticle (n)")
+			const esc = voca.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+			// 'gi': khong phan biet hoa/thuong; $& giu nguyen casing goc trong bai
+			const regex = new RegExp(`\\b${esc}\\b`, 'gi')
+			if (voca.toLowerCase() != 'event')
+				enShow = enShow.replace(regex, '<b class="voca-hl">$&</b>');
 		}
 	}
 

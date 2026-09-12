@@ -181,10 +181,10 @@ function getFullTile(obj) {
 	// story.L					
 	var ngStyle = {}
 	if (hasNote) ngStyle.color = 'red'
-	if (isBlankEn) ngStyle['color'] = 'gray'
+	if (isBlankEn) ngStyle['color'] = 'turquoise'
 	if (obj.isTest) ngStyle['animation'] = 'color-change 1s infinite'
 	if (obj.end) ngStyle['text-decoration'] = 'underline'
-	if (!isConversation) ngStyle['font-style'] = 'italic'
+	// if (!isConversation) ngStyle['font-style'] = 'italic'
 
 	return {
 		unit: unit,

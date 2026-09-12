@@ -1,10 +1,11 @@
 document.write('<script src="./subLesson/subLesson_data.js" type="text/javascript"></script>');
 document.write('<script src="./subLesson/subLesson_data2.js" type="text/javascript"></script>');
+document.write('<script src="./subLesson/subLesson_data3.js" type="text/javascript"></script>');
 
 var app = angular.module("subLessonApp", ['ngSanitize']);
 app.controller("subLessonCtrl", function($scope, $rootScope, $timeout) {
 
-	var kDATA = SUBLESSON_DATA.concat(SUBLESSON_DATA2);
+	var kDATA = SUBLESSON_DATA3.concat(SUBLESSON_DATA2).concat(SUBLESSON_DATA);
 
 	$scope.img_root = './subLesson/images';
 

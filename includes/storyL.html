@@ -8,6 +8,13 @@
 		<button type="button" class="track-page-btn" ng-click="nextPage()" aria-label="Next page">
 			<i class="fa fa-chevron-right" aria-hidden="true"></i>
 		</button>
+		<button type="button" class="track-page-btn track-legend-btn" ng-click="showTrackLegend=!showTrackLegend" aria-label="Chú thích màu track" title="Chú thích màu track">?</button>
+	</div>
+	<div class="track-legend" ng-show="showTrackLegend">
+		<span><i class="track-dot" style="background:red"></i>HasNote</span>
+		<span><i class="track-dot" style="background:turquoise"></i>BlankScript</span>
+		<span><i class="track-dot track-dot-blink"></i>Test</span>
+		<span><u>End of Ebook</u></span>
 	</div>
 	<div class="track-list">
 		<a ng-repeat="title in titles | limitTo:pageSize:(trackPage*pageSize) track by $index"

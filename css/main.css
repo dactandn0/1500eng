@@ -1425,6 +1425,34 @@ input:focus {
   box-shadow: 0 4px 10px rgba(191, 151, 45, 0.16);
 }
 
+.track-legend-btn {
+  font-weight: 700;
+}
+
+.track-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.8rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  color: #8b857b;
+}
+
+.track-dot {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+  vertical-align: baseline;
+}
+
+.track-dot-blink {
+  background: #5f470c;
+  animation: color-change 1s infinite;
+}
+
 .lesson-panel {
   overflow: hidden;
   border: 1px solid #eee9dc;
@@ -1767,7 +1795,7 @@ input:focus {
 .voca-hl {
   color: #111;
   font-weight: 700;
-  background: #ABCDEF;
+  background: #e2e9ef;
   padding: 0 2px;
   border-radius: 3px;
 }

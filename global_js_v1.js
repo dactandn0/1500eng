@@ -65,6 +65,7 @@ document.write('<small class="note">\
 	' + PHRA_VERB_TAG_BEGIN + 'phraVerb' + PHRA_VERB_TAG_END + ' <br>\
 	' + SPECIAL_WORDS_HL_TAG_BEGIN + '(Special)' + SPECIAL_WORDS_HL_TAG_END + ' <br>\
 	' + SAME_N_V_TAG_BEGIN + 'n = v' + SAME_N_V_TAG_END + ' <br>\
+	' + '<b class="voca-hl">voca</b>' + ' <br>\
 	</small>');
 
 let arrBOTH_COUNT_UNCOUNT = [];

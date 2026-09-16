@@ -1,4 +1,5 @@
-const SUBLESSON_DATA = [{
+const SUBLESSON_DATA = [
+{ category: 'Grammar', content: [{
 		title: "Speaking some special words -ult - au",
 		en: "-ult đọc là ao FE: result, sultan<br>\
 	-au đọc là o: FE: automatic, pause, fault, audio, audition<br>\
@@ -167,5 +168,5 @@ Danh từ bổ nghĩa: real estate<br>\
 Danh từ chính: Companies<br>\
 -> Chia động từ theo danh từ chính"
 	}
-
+] }
 ]

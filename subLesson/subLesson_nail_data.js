@@ -1,12 +1,11 @@
 // Nail 1-9 + Texas copy tu ebooks/spkBook/data/nail/nail.js (giu nguyen ben spkBook).
 // Anh: subLesson/images/ (copy tu ebooks/spkBook/data/nail/img/).
 const SUBLESSON_NAIL_DATA = [
+{ category: 'Nail', content: [
 {
-		unit: 1
-			//	,track:"1.06 - A6"
-			,
-		title: "Nail Tools",
-		en: "\
+unit: 1,
+title: "Nail Tools",
+en: "\
 - Hi, what service are we doing for you today? A full set or a refill?<br>\
 - Could you please wash your hands with soap before we start?<br>\
 - I'm going to trim your nails a bit. Is this length okay for you?<br>\
@@ -390,9 +389,8 @@ const SUBLESSON_NAIL_DATA = [
 	A: Thanks for the warning, I almost smudged it!<br>\
 	"
 	}
-];
-
-const SUBLESSON_TEXAS_DATA = [
+] },
+{ category: 'Texas', content: [
 {
 		title: "Texas",
 		en: "\
@@ -582,4 +580,10 @@ const SUBLESSON_TEXAS_DATA = [
 	Parking garage / Parking lot: Park your car in the multi-story parking garage across the street.<br>\
 	"
 	}
-];
+] } ];
+
+// Ban phang 1D cua SUBLESSON_NAIL_DATA (dung cho search + fetchStory theo index).
+var SUBLESSON_NAIL_FLAT = [];
+SUBLESSON_NAIL_DATA.forEach(function (g) {
+	SUBLESSON_NAIL_FLAT = SUBLESSON_NAIL_FLAT.concat(g.content || []);
+});

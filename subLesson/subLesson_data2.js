@@ -1,4 +1,7 @@
-let SUBLESSON_DATA2 = [
+const SUBLESSON_DATA2 = [
+{ 
+	category: 'Ielts',
+	content: [
 {
 		title: "Lesson 7 - How to write a paragraph (6.0)",
 		en: "Topic: The benefits of learning online at universities<br>\
@@ -277,6 +280,4 @@ What do you think are the possible solutions? More and more people in developing
 		en: WORD_FAMILY_DATA.join('<br>')
 	},
 
-
-
-]
+] } ];

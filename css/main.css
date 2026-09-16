@@ -2062,6 +2062,18 @@ input[type="range"]:focus::-moz-range-thumb {
   font-weight: 700;
   color: #5f470c;
 }
+.voca-ebook-head.is-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+.voca-ebook-head.is-toggle:hover {
+  filter: brightness(0.98);
+}
+.voca-ebook-chev {
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+  color: #8b857b;
+}
 .voca-ebook-count {
   margin-left: auto;
   font-size: 0.75rem;

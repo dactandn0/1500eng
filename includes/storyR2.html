@@ -1,0 +1,43 @@
+
+<div class="track-legend-wrap">
+  <button type="button" class="track-page-btn track-legend-btn" ng-click="showBadgeLegend=!showBadgeLegend" aria-label="Chú thích badge" title="Chú thích badge">?</button>
+  <div class="track-legend" ng-show="showBadgeLegend" style="justify-content:flex-start">
+    <span>[Noted] có note</span>
+    <span>[Blank] trống (chưa có script)</span>
+    <span>[Ex.] bài tập (True/False/Not Given, Matching)</span>
+    <span>[Img] có ảnh</span>
+  </div>
+</div>
+<div ng-repeat="g in groups track by $index" class="mb-3">
+  <div class="voca-ebook-head is-toggle" ng-click="gacc_click(g.startIdx)" role="button" tabindex="0"
+      aria-label="Đóng/mở nhóm {{g.category}}">
+    <span class="voca-ebook-unit">{{g.category}}</span>
+    <span class="voca-ebook-count">{{g.titles.length}} bài</span>
+    <i class="fa voca-ebook-chev" ng-class="gacc_isShow(g.startIdx) ? 'fa-chevron-down' : 'fa-chevron-right'" aria-hidden="true"></i>
+  </div>
+  <div ng-show="gacc_isShow(g.startIdx)">
+  <div ng-repeat="obj in g.titles track by $index" class="mb-2">
+    <h6 class="accordion">
+      <a href
+        ng-class="obj.storyCss"
+        ng-click="acc_click(g.startIdx + $index)">
+        {{g.startIdx + $index + 1}}. {{obj.fTitle}}
+        <span class="text-danger">
+        <span ng-if="obj.hasNote">[Noted]</span>
+        <span ng-if="obj.blankEn">[Blank]</span>
+        <span ng-if="obj.hasExercise">[Ex.]</span>
+        <span ng-if="obj.hasImages">[Img]</span>
+        </span>
+      </a>
+    </h6>
+
+    <div class="accordion-content" ng-if="acc_isShow(g.startIdx + $index)">
+      <p id="content-to-word" title="{{obj.fTitle}}" compile="story.enShow" ng-if="!$root.bShowVi"></p>
+      <p compile="story.viShow" ng-if="$root.bShowVi"></p>
+
+      <div ng-include="'./includes/exercise.html'"></div>
+      <div ng-include="'./includes/html_note.html'"></div>
+    </div> <!-- accordion -->
+  </div>
+  </div>
+</div>

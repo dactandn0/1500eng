@@ -1254,6 +1254,25 @@ input:focus {
   color: #827b70;
 }
 
+.word-examples {
+  grid-column: 1 / -1;
+  margin: 0.15rem 0 0.35rem 2.65rem;
+  padding: 0.55rem 0.7rem;
+  background: #f7fbff;
+  border: 1px solid #dce8f5;
+  border-radius: 9px;
+}
+
+.word-examples .example-sentence {
+  margin-top: 0.35rem;
+}
+
+.word-examples-loading,
+.word-examples-empty {
+  font-size: 0.85rem;
+  color: #8494a2;
+}
+
 .word-empty {
   margin: 0.8rem 0 0.3rem;
   color: #938d83;

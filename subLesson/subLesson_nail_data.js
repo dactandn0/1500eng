@@ -406,8 +406,8 @@ en: "\
 	"
 	},
 {
-		title: "Texas 2",
-		en: "\
+	title: "Texas 2",
+	en: "\
 	Cost of Living & Housing in Houston, Texas<br>\
 	\
 	Houston is famous for offering a big-city lifestyle at a fraction of the cost of other major US hubs like Los Angeles, San Francisco, or New York.<br>\

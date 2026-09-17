@@ -1,11 +1,10 @@
-// TTS simple: Google Translate TTS (free, khong key/login) -> Browser speechSynthesis (offline).
+// TTS: Browser speechSynthesis (offline, chay tot tren Safari/Desktop).
 // Gi nguyen ten ham Text2Speech(word) nen khong can sua cho goi.
 const utter = new SpeechSynthesisUtterance();
 
 let gLastText = '';
-let gSeq = 0; // tang moi lan goi -> request cu (chua xong) bi huy
 
-// Co BUSY: dang phat (hoac dang cho mang) -> Text2SpeechIsBusy() === true.
+// Co BUSY: dang phat -> Text2SpeechIsBusy() === true.
 let ttsBusy = false;
 function ttsSetBusy(v) { ttsBusy = !!v; }
 function Text2SpeechIsBusy() {
@@ -16,43 +15,9 @@ function Text2SpeechIsBusy() {
 	return false;
 }
 
-// Google path state
-let gAudio = null;
-let gQueue = [];
-
-// iOS Safari: audio chi duoc phat trong user-gesture -> mo khoa san.
-let ttsCtx = null;
-function ttsEnsureCtx() {
-	try {
-		if (!ttsCtx) {
-			const AC = window.AudioContext || window.webkitAudioContext;
-			if (AC) ttsCtx = new AC();
-		}
-		if (ttsCtx && ttsCtx.state === 'suspended') {
-			const p = ttsCtx.resume();
-			if (p && typeof p.catch === 'function') p.catch(function () {});
-		}
-	} catch (e) {}
-	return ttsCtx;
-}
-try {
-	['pointerdown', 'touchend', 'click', 'keydown'].forEach(function (ev) {
-		document.addEventListener(ev, ttsEnsureCtx, { passive: true });
-	});
-} catch (e) {}
-
 function Text2SpeechStop() {
-	gSeq++;
-	gQueue = [];
 	gLastText = '';
-	try { ttsClearWd(); } catch (eWd) {}
 	ttsSetBusy(false);
-	if (gAudio) {
-		try { gAudio.pause(); } catch (e) {}
-		try { gAudio.currentTime = 0; } catch (e) {}
-		try { gAudio.onended = null; gAudio.onerror = null; } catch (e) {}
-		gAudio = null;
-	}
 	try {
 		if (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) {
 			speechSynthesis.cancel();
@@ -72,17 +37,17 @@ function Text2SpeechClean(input) {
 	return s;
 }
 
+// Giu de tuong thich: luon tra ve 'browser', migrate gia tri cu (google/puter/edge).
 function Text2SpeechSource() {
 	try {
 		if (typeof Helper_loadStr === 'function' && typeof Helper_TTSSourceKey !== 'undefined') {
-			const v = Helper_loadStr(Helper_TTSSourceKey, 'google');
-			if (v === 'google' || v === 'browser') return v;
-			// migrate gia tri cu (puter/edge) -> google
-			try { Helper_saveDB(Helper_TTSSourceKey, 'google'); } catch (e2) {}
-			return 'google';
+			const v = Helper_loadStr(Helper_TTSSourceKey, 'browser');
+			if (v !== 'browser') {
+				try { Helper_saveDB(Helper_TTSSourceKey, 'browser'); } catch (e2) {}
+			}
 		}
 	} catch (e) {}
-	return 'google';
+	return 'browser';
 }
 
 function Text2SpeechRate() {
@@ -93,112 +58,7 @@ function Text2SpeechRate() {
 }
 
 // =====================================================
-// Google path (chinh) - Google Translate TTS, free, khong key/login.
-// Phat qua <audio> nen khong vuong CORS; chunk <=170 ky tu theo cau.
-// Safari hay chan translate.google.com (treo am tham, khong bao loi) nen:
-//  - co 2 host: googleapis.com (thoang hon) -> google.com du phong;
-//  - watchdog: chunk nao 6s khong play/error thi doi host, het host rot browser.
-// =====================================================
-const GOOGLE_TTS_HOSTS = [
-	'https://translate.googleapis.com',
-	'https://translate.google.com'
-];
-let gHostIdx = 0; // host dang dung
-let gWd = 0; // watchdog timer chong treo
-function ttsClearWd() { try { if (gWd) clearTimeout(gWd); } catch (e) {} gWd = 0; }
-function Text2SpeechGoogleURL(chunk) {
-	const host = GOOGLE_TTS_HOSTS[gHostIdx] || GOOGLE_TTS_HOSTS[0];
-	return host + '/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(chunk);
-}
-function Text2SpeechChunk(text) {
-	const MAX = 170;
-	const parts = [];
-	let cur = '';
-	const sentences = String(text).split(/(?<=[.!?])\s+|;\s*|,\s*(?=. {20,})/);
-	sentences.forEach(function (sen) {
-		sen = (sen || '').trim();
-		if (!sen) return;
-		while (sen.length > MAX) {
-			let cut = sen.lastIndexOf(' ', MAX);
-			if (cut < 40) cut = MAX;
-			parts.push(sen.slice(0, cut));
-			sen = sen.slice(cut).trim();
-		}
-		if ((cur + ' ' + sen).trim().length <= MAX) {
-			cur = (cur + ' ' + sen).trim();
-		} else {
-			if (cur) parts.push(cur);
-			cur = sen;
-		}
-	});
-	if (cur) parts.push(cur);
-	return parts.length ? parts : [text];
-}
-function Text2SpeechPlayQueue(mySeq) {
-	if (mySeq !== gSeq) return;
-	const chunk = gQueue.shift();
-	if (chunk == null) {
-		gAudio = null;
-		ttsSetBusy(false);
-		return;
-	}
-	ttsSetBusy(true);
-	const audio = new Audio();
-	gAudio = audio;
-	try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
-	try { audio.preload = 'auto'; } catch (e) {}
-	let settled = false, started = false;
-	function failChunk() {
-		if (settled || mySeq !== gSeq) return;
-		settled = true;
-		ttsClearWd();
-		try { if (gAudio === audio) gAudio.pause(); } catch (ePause) {}
-		if (gHostIdx < GOOGLE_TTS_HOSTS.length - 1) {
-			// doi host roi phat lai chunk nay, giu queue
-			gHostIdx++;
-			gQueue.unshift(chunk);
-			Text2SpeechPlayQueue(mySeq);
-			return;
-		}
-		// het host -> rot chunk nay xuong browser, cac chunk sau van chay Google
-		try { Text2SpeechBrowser(chunk, true, function () { Text2SpeechPlayQueue(mySeq); }); }
-		catch (e) { Text2SpeechPlayQueue(mySeq); }
-	}
-	audio.onplaying = function () {
-		started = true;
-		try { window.__lastTtsEngine = 'google'; } catch (e) {}
-	};
-	audio.onended = function () {
-		if (settled) return;
-		settled = true;
-		ttsClearWd();
-		Text2SpeechPlayQueue(mySeq);
-	};
-	audio.onerror = function () { failChunk(); };
-	try {
-		audio.src = Text2SpeechGoogleURL(chunk);
-		try { audio.load(); } catch (eLoad) {}
-		const p = audio.play();
-		try {
-			ttsClearWd();
-			gWd = setTimeout(function () {
-				if (!settled && mySeq === gSeq && !started) failChunk();
-			}, 6000);
-		} catch (eWd) {}
-		if (p && typeof p.catch === 'function') {
-			p.catch(function () { failChunk(); });
-		}
-	} catch (e) { failChunk(); }
-}
-function googleSpeak(text, mySeq) {
-	if (mySeq !== gSeq) return;
-	const chunks = Text2SpeechChunk(text.length > 2800 ? text.slice(0, 2800) : text);
-	gQueue = chunks.slice();
-	Text2SpeechPlayQueue(mySeq);
-}
-
-// =====================================================
-// Browser path (offline) - ton trong voice da chon o Setting
+// Browser path - ton trong voice da chon o Setting
 // =====================================================
 let browserVoicesCache = null;
 try {
@@ -286,25 +146,22 @@ function Text2SpeechBrowser(word, force, onDone) {
 function Text2Speech(word, force) {
 	const text = Text2SpeechClean(word);
 	if (!text) return;
-	try { ttsEnsureCtx(); } catch (e) {} // iOS: mo khoa audio ngay trong gesture
 
 	// Click lai cung 1 cau dang doc -> dung (giu hanh vi cu).
 	// force=true (nut loa Quiz): bam lai la replay tu dau, khong toggle-stop.
-	if (!force && text === gLastText && (gAudio || gQueue.length)) {
-		Text2SpeechStop();
-		return;
+	if (!force && text === gLastText) {
+		try {
+			if (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) {
+				Text2SpeechStop();
+				return;
+			}
+		} catch (e) {}
 	}
 	Text2SpeechStop();
 	gLastText = text;
-	const mySeq = ++gSeq;
 	ttsSetBusy(true); // dung co ngay tu luc bam -> click spam ke tiep bi chan
 
-	const src = Text2SpeechSource();
-	if (src === 'browser') {
-		Text2SpeechBrowser(text, force);
-		return;
-	}
-	googleSpeak(text, mySeq);
+	Text2SpeechBrowser(text, force);
 }
 
 // Bam loa Quiz: moi lan bam la replay tu dau (khong toggle-stop nhu Text2Speech thuong)

@@ -15,8 +15,8 @@ $scope.toastTimeOutLong = HELPER_TOASTER_TIMEOUT_LONG_DEF
 $scope.toastTimeOutMax = HELPER_TOASTER_TIMEOUT_MAX_DEF
 $scope.TOAST_MAX_OPTIONS = (typeof TOAST_MAX_OPTIONS !== 'undefined') ? TOAST_MAX_OPTIONS : [30, 45, 60, 90, 120];
 
-$scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id: 'google', desc: 'Google' }, { id: 'browser', desc: 'Browser' }];
-$scope.ttsSource = 'google';
+$scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id: 'browser', desc: 'Browser' }];
+$scope.ttsSource = 'browser';
 $scope.lastEngine = '';
 $scope.BROWSER_VOICES = [];
 $scope.browserVoiceURI = '';
@@ -119,9 +119,9 @@ $scope.setToastTimeOutMed = function () {
 $scope.loadDB = function () {
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
-	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'google')
-	if ($scope.ttsSource !== 'google' && $scope.ttsSource !== 'browser')
-		$scope.ttsSource = 'google'; // migrate puter/edge cu
+	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'browser')
+	if ($scope.ttsSource !== 'browser')
+		$scope.ttsSource = 'browser'; // migrate google/puter/edge cu
 
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 	$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)

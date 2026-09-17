@@ -43,7 +43,7 @@ const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 const Helper_BrowserVoiceKey = 'BrowserVoiceURI'; // voiceURI cua speechSynthesis (Safari/Desktop)
 const Helper_EdgeProxyKey = 'EdgeProxyURL'; // vd https://xxx.ngrok-free.app (trong khi dung GitHub Pages)
-const Helper_TTSSourceKey = 'TTSSource'; // 'edge' (neural, no login) | 'google' | 'browser' (offline)
+const Helper_TTSSourceKey = 'TTSSource'; // 'browser' (offline, Safari/Desktop)
 const Helper_EdgeVoiceKey = 'EdgeVoice';
 const EDGE_VOICES = [
 	{ id: 'en-US-AriaNeural', desc: 'Aria - Female US' },
@@ -56,8 +56,7 @@ const EDGE_VOICES = [
 	{ id: 'en-AU-NatashaNeural', desc: 'Natasha - Female AU' }
 ];
 const TTS_SOURCES = [
-	{ id: 'google', desc: 'Google - free, khong can login (recommended)' },
-	{ id: 'browser', desc: 'Browser - offline, device voice' }
+	{ id: 'browser', desc: 'Browser - offline, device voice (Safari OK)' }
 ];
 const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi;
 const kReplaceWords = [{

@@ -10,7 +10,7 @@ document.write('<script src="./wordCollect/beginner_reading_voca.js" type="text/
 
 
 var app = angular.module("wordCollectApp", []);
-app.controller("wordCollectCtrl", function($scope, $rootScope) {
+app.controller("wordCollectCtrl", function($scope, $rootScope, $timeout, $filter) {
 
 const kSTORIES = $rootScope.VocaToUI || [];
 
@@ -23,6 +23,29 @@ $scope.openCategories = {};
 $scope.allCategoriesOpen = false;
 $scope.wordSearch = '';
 $scope.totalWords = 0;
+$scope.wordPageSize = 10;
+$scope.wordPage = 0;
+
+// words da loc theo search (dung chung cho list + dem trang)
+$scope.filteredWords = function (cat) {
+	try {
+		var arr = (cat && cat.words) || [];
+		if (!$scope.wordSearch) return arr;
+		return $filter('filter')(arr, $scope.wordSearch);
+	} catch (e) { return (cat && cat.words) || []; }
+};
+$scope.wordPageCount = function (cat) {
+	var n = $scope.filteredWords(cat).length;
+	return n <= $scope.wordPageSize ? 1 : Math.ceil(n / $scope.wordPageSize);
+};
+$scope.wordPrevPage = function (cat) {
+	var pc = $scope.wordPageCount(cat);
+	$scope.wordPage = ($scope.wordPage - 1 + pc) % pc;
+};
+$scope.wordNextPage = function (cat) {
+	var pc = $scope.wordPageCount(cat);
+	$scope.wordPage = ($scope.wordPage + 1) % pc;
+};
 
 $scope.saveNoted = function(word) {
  	IndexCtrlScope.saveNoted (word);
@@ -33,12 +56,11 @@ $scope.IsWordSavedBefore = function(word) {
 }
 
 // =====================================================
-// Cau vi du free (click word -> fetch + show; click sentence -> speak)
-// 1) Tatoeba API (no key): results[].text
-// 2) dictionaryapi.dev (no key): meanings[].definitions[].example
-// 3) local stories (san co trong app)
+// Cau vi du local (click word -> show 2 examples; click sentence -> speak)
+// Tim trong stories san co (IndexCtrlScope.fetchSentences), lay 2 cau dau.
 // =====================================================
-$scope.exSent = {}; // headword -> { show, loading, list }
+$scope.exSent = {}; // headword -> { loading, list } (cache, fetch 1 lan)
+$scope.openExHead = null; // headword dang mo example, chi 1 word mo tai 1 thoi diem
 
 $scope.wordHead = function (full) {
 	try {
@@ -50,13 +72,11 @@ $scope.wordHead = function (full) {
 $scope.wordClick = function (ev, word) {
 	try { IndexCtrlScope.Index_Speak(ev, word.full); } catch (e) {}
 	var head = $scope.wordHead(word.full);
-	var slot = $scope.exSent[head];
-	if (!slot) {
-		slot = $scope.exSent[head] = { show: true, loading: true, list: [] };
-		fetchExSentences(head, slot);
-	} else {
-		slot.show = !slot.show;
+	if (!($scope.exSent[head])) {
+		$scope.exSent[head] = { loading: false, list: fetchLocalExamples(head) };
 	}
+	// toggle: dang mo thi dong, nguoc lai dong word khac + mo word nay
+	$scope.openExHead = ($scope.openExHead === head) ? null : head;
 };
 
 $scope.speakSentence = function (ev, sen) {
@@ -69,72 +89,12 @@ $scope.speakSentence = function (ev, sen) {
 	} catch (e) {}
 };
 
-function exApply() { try { $scope.$applyAsync(); } catch (e) {} }
-
-function tatoebaSentences(w) {
-	return fetch('https://tatoeba.org/en/api_v0/search?from=eng&query=' + encodeURIComponent(w) + '&limit=8').then(function (r) {
-		if (!r.ok) throw 0;
-		return r.json();
-	}).then(function (d) {
-		var out = [], seen = {};
-		var esc = w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-		var re = new RegExp('\\b' + esc + '\\b', 'i');
-		((d && d.results) || []).forEach(function (it) {
-			var t = (it && it.text) || '';
-			if (!t || seen[t] || t.length > 140 || !re.test(t)) return;
-			seen[t] = 1;
-			out.push(t);
-		});
-		return out.slice(0, 5);
-	});
-}
-
-function dictApiSentences(w) {
-	return fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(w)).then(function (r) {
-		if (!r.ok) throw 0;
-		return r.json();
-	}).then(function (arr) {
-		var out = [], seen = {};
-		(arr || []).forEach(function (ent) {
-			((ent && ent.meanings) || []).forEach(function (m) {
-				((m && m.definitions) || []).forEach(function (df) {
-					var t = df && df.example;
-					if (t && !seen[t] && t.length <= 140) { seen[t] = 1; out.push(t); }
-				});
-			});
-		});
-		return out.slice(0, 5);
-	});
-}
-
-function fetchExSentences(head, slot) {
-	var finished = false;
-	function done(list) {
-		if (finished) return;
-		finished = true;
-		slot.loading = false;
-		slot.list = list || [];
-		exApply();
-	}
-	function localOnly() {
-		var list = [];
-		try {
-			var r = IndexCtrlScope.fetchSentences(head);
-			if (r && r.length) list = r.slice(0, 5);
-		} catch (e) {}
-		done(list);
-	}
-	var w = String(head == null ? '' : head).trim().toLowerCase();
-	if (!/^[a-z][a-z'\-]*$/.test(w)) { localOnly(); return; }
-	tatoebaSentences(w).then(function (list) {
-		if (list && list.length) { done(list); return null; }
-		throw 0;
-	}).catch(function () {
-		return dictApiSentences(w).catch(function () { return null; });
-	}).then(function (list) {
-		if (list && list.length) { done(list); return null; }
-		throw 0;
-	}).catch(function () { localOnly(); });
+function fetchLocalExamples(head) {
+	try {
+		var r = IndexCtrlScope.fetchSentences(head);
+		if (r && r.length) return r.slice(0, 2);
+	} catch (e) {}
+	return [];
 }
 
 $scope.acc_isShow = function (id) {
@@ -142,15 +102,25 @@ $scope.acc_isShow = function (id) {
 };
 
 $scope.acc_click = function (id) {
-	$scope.openCategories[id] = !$scope.openCategories[id];
+	// single-open: mo header nay thi dong cac header khac
+	var willOpen = !$scope.openCategories[id];
+	$scope.openCategories = {};
+	$scope.wordPage = 0;
+	if (willOpen) $scope.openCategories[id] = true;
 	$scope.allCategoriesOpen = $scope.storyTitles.length > 0 && $scope.storyTitles.every(function (_, index) {
 		return $scope.openCategories[index] === true;
 	});
-	$scope.acc = $scope.openCategories[id] ? id : -1;
-	$scope.words = $scope.storyTitles[id] ? $scope.storyTitles[id].words : [];
-	if ($scope.openCategories[id]) {
-		_scrollIntoView(id);
-		localStorage.setItem("w3000_idx", id);
+	$scope.acc = willOpen ? id : -1;
+	$scope.words = willOpen && $scope.storyTitles[id] ? $scope.storyTitles[id].words : [];
+	if (willOpen) {
+		try { localStorage.setItem("w3000_idx", id); } catch (e) {}
+		// doi accordion render xong roi scroll toi tu dau tien
+		$timeout(function () {
+			try {
+				var el = document.getElementById('wcat-' + id);
+				if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			} catch (e2) {}
+		}, 60);
 	}
 };
 

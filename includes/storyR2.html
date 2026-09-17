@@ -16,7 +16,7 @@
     <i class="fa voca-ebook-chev" ng-class="gacc_isShow(g.startIdx) ? 'fa-chevron-down' : 'fa-chevron-right'" aria-hidden="true"></i>
   </div>
   <div ng-show="gacc_isShow(g.startIdx)">
-  <div ng-repeat="obj in g.titles track by $index" class="mb-2">
+  <div ng-repeat="obj in g.titles track by $index" class="mb-2 sl-story" id="slstory-{{g.startIdx + $index}}">
     <h6 class="accordion">
       <a href
         ng-class="obj.storyCss"

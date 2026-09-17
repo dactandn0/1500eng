@@ -57,6 +57,13 @@ app.controller("subLessonCtrl", function($scope, $rootScope, $timeout) {
 		else {
 			$scope.acc = id;
 			Helper_FetchStory(id, $scope, $rootScope, 'subLe_DATA_idx', false)
+			// doi accordion render xong roi scroll toi bai
+			$timeout(function () {
+				try {
+					var el = document.getElementById('slstory-' + id);
+					if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				} catch (e) {}
+			}, 80);
 		}
 	};
 

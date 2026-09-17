@@ -6,7 +6,7 @@
 	<div class="word-collect-toolbar">
 		<label class="word-search">
 			<i class="fa fa-search" aria-hidden="true"></i>
-			<input type="search" ng-model="wordSearch" placeholder="Search words or meanings..." aria-label="Search words or meanings">
+			<input type="search" ng-model="wordSearch" ng-change="wordPage=0" placeholder="Search words or meanings..." aria-label="Search words or meanings">
 		</label>
 		<div class="word-collect-actions">
 			<button type="button" class="btn btn-sm btn-outline-secondary" ng-click="toggleAll()" ng-attr-aria-label="{{allCategoriesOpen ? 'Close all topics' : 'Open all topics'}}">
@@ -25,7 +25,7 @@
 		<span ng-if="wordSearch">Filtering: <strong>{{wordSearch}}</strong></span>
 	</div>
 
-	<div ng-repeat="category in storyTitles track by $index" class="word-category">
+	<div ng-repeat="category in storyTitles track by $index" class="word-category" id="wcat-{{$index}}">
 		<h6 class="accordion">
 			<a href ng-click="acc_click($index)" ng-class="{'is-open': acc_isShow($index)}">
 				<span class="category-number">{{$index + 1}}</span>
@@ -36,11 +36,21 @@
 		</h6>
 
 		<div class="accordion-content word-category-content" ng-if="acc_isShow($index)">
-			<div ng-repeat="word in category.words | filter:wordSearch track by $index" class="word-row">
+			<div class="track-pager-bar" ng-show="wordPageCount(category) > 1">
+				<button type="button" class="track-page-btn" ng-click="wordPrevPage(category)" aria-label="Previous page">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				</button>
+				<span class="track-page-info">{{wordPage + 1}} / {{wordPageCount(category)}}</span>
+				<button type="button" class="track-page-btn" ng-click="wordNextPage(category)" aria-label="Next page">
+					<i class="fa fa-chevron-right" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div ng-repeat="word in filteredWords(category) | limitTo:wordPageSize:(wordPage*wordPageSize) track by $index" class="word-row">
 				<button type="button" class="btn btn-sm btn-primary vocaNoteBtn word-row-action" ng-show="!IsWordSavedBefore(word.full)" ng-click="saveNoted(word.full)" title="Save word" aria-label="Save word"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
+				<span class="word-idx">{{wordPage*wordPageSize + $index + 1}}</span>
 				<span compile="word.p1" ng-click="wordClick($event, word)" class="word-text word-text-main"></span>
 				<span compile="word.p2" ng-click="showExampleModal(word.full, $event)" class="word-text word-text-detail"></span>
-				<div class="word-examples" ng-if="exSent[wordHead(word.full)] && exSent[wordHead(word.full)].show">
+				<div class="word-examples" ng-if="exSent[wordHead(word.full)] && wordHead(word.full) === openExHead">
 					<div class="word-examples-loading" ng-if="exSent[wordHead(word.full)].loading">
 						<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Loading examples...
 					</div>
@@ -55,7 +65,7 @@
 					</div>
 				</div>
 			</div>
-			<p class="word-empty" ng-if="!(category.words | filter:wordSearch).length">No matching words.</p>
+			<p class="word-empty" ng-if="!filteredWords(category).length">No matching words.</p>
 		</div>
 	</div>
 </section>

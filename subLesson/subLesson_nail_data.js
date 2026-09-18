@@ -3,7 +3,6 @@
 const SUBLESSON_NAIL_DATA = [
 { category: 'Nail', content: [
 {
-unit: 1,
 title: "Nail Tools",
 en: "\
 - Hi, what service are we doing for you today? A full set or a refill?<br>\
@@ -53,7 +52,6 @@ en: "\
 		images: ["drill-bit", "nail-file", "CuticleNipper", "CuticlePusher", "Tweezers", "NailCuticle"]
 	},
 {
-		unit: 2,
 		title: "Nail Tools 2",
 		en: "\
 - I always apply dehydrator and primer before putting on any acrylic or gel. <br>\
@@ -84,7 +82,6 @@ en: "\
 "
 	},
 {
-		unit: 3,
 		title: "Nail Anatomy",
 		en: "\
 - Your natural nail is completely strong and healthy today.<br>\
@@ -109,7 +106,6 @@ en: "\
 "
 	},
 {
-		unit: 4,
 		title: "Shapes & Dimensions",
 		en: "\
 	- Which nail shape do you prefer for your new set today?<br>\
@@ -135,7 +131,6 @@ en: "\
 		images: ["nail_shapes_01", "nail_shapes_02"]
 	},
 {
-		unit: 5,
 		title: "Nail Gel",
 		en: "\
 	- Which shade of gel polish would you like to pick today?<br>\
@@ -159,7 +154,6 @@ en: "\
 	voca: "Gel Polish,Top Coat,Matte Finish,Glitter,Chrome Powder,French Tip,Ombré Gradient,Nail Art,Rhinestones,Gem Gel"
 	},
 {
-		unit: 6,
 		title: "Technical Actions",
 		en: "\
 	- I will trim and file your natural nails before we apply the product.<br>\
@@ -178,10 +172,11 @@ en: "\
 	- Would you like this shade to be a bit lighter or darker than the sample?<br>\
 	- Let me know if you want the acrylic to be thinner or thicker near the apex.<br>\
 	- Do you want this hand to look similar to the picture, or should we try a different color scheme?<br>\
-	- Tell me if you want these middle fingers to be slightly shorter or longer to match the rest.\	"
+	- Tell me if you want these middle fingers to be slightly shorter or longer to match the rest.\
+	",
+	voca: "Trim,File,Soak,Cuticle,Remove,Repair,Reshape,Paint,Cure,Dry,Builder Gel,Fill,Shorten,Buff,Client Comfort,Sensations,Preferences,Comparisons"
 	},
 {
-		unit: 7,
 		title: "Comfort & Physical Sensations",
 		en: "\
 	- Are you feeling comfortable with the chair height and armrest position?<br>\
@@ -202,7 +197,6 @@ en: "\
 	voca: "Client Comfort,Physical Sensations,Style,Aesthetic Preferences,Adjustments,Comparisons"
 	},
 {
-		unit: 8,
 		title: "Small Talk",
 		en: "\
 	Hỏi thăm chung & Thời tiết<br>\

@@ -7,7 +7,7 @@ app.controller("ebookNotedCtrl", function($scope) {
 $scope.notedData = ''
 
 $scope.speech = function (ev) {
-	IndexCtrlScope.Idx_n_L_WSp_(ev)
+	IndexCtrlScope.ClickWordToSpeech(ev)
 }
 
 $scope.initial = function () {

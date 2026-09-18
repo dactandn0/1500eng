@@ -38,7 +38,7 @@ const NOTED_WORD_TAG_BEGIN = '<NOTED_WORD_HL class="_noted_word_hl">';
 const NOTED_WORD_TAG_END = '</NOTED_WORD_HL>';
 
 const kNgClickTagName = 'kkk';
-const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="Idx_n_L_WSp_($event)">';
+const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="ClickWordToSpeech($event)">';
 const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 const Helper_BrowserVoiceKey = 'BrowserVoiceURI'; // voiceURI cua speechSynthesis (Safari/Desktop)

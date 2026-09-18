@@ -300,7 +300,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 		// ng-click word to speech
-		$scope.Idx_n_L_WSp_ = function(event) {
+		$scope.ClickWordToSpeech = function(event) {
 			event.stopPropagation()
 			if ($scope.bTransSentenOnClick && !$rootScope.bShowVi) // dont active in showVi-mode
 			{

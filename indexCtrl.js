@@ -5,6 +5,7 @@ var VocaToUI = WORDS_3K_DATA
 	.concat(word_4000_data_2)
 	.concat(BEGINNER_READING_VOCA)
 	.concat(VOCA_SPECIAL)
+	.concat(NAIL_WORDS_DATA)
 
 var VocaForSearch = VocaToUI
 	.concat(PHRASAL_VERB)
@@ -318,6 +319,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 		getVocaFromDB = function(touchedWord) {
+			// chuan hoa de tra dict: trim + lowercase + bo dau cau dinh kem
+			// (vd dau cau "Almond" hay cuoi cau "almond." van match "almond")
+			const lookup = String(touchedWord == null ? '' : touchedWord).trim().toLowerCase()
+				.replace(/^['"“”‘’\s.,!?;:()\[\]]+|['"“”‘’\s.,!?;:()\[\]]+$/g, '');
 			const wordSynonyms = getWordSynonym(touchedWord)
 			const wordFamily = getWordFamily(touchedWord)
 			const wordSameSounds = getWordSameSound(touchedWord)
@@ -330,7 +335,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				const wordFull = searchData[i]
 				const word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
 
-				if (word === touchedWord || Helper_IsFormOfWord(word, touchedWord)) {
+				if (word === lookup || Helper_IsFormOfWord(word, lookup)) {
 					json_full = wordFull + total
 					found = true
 					break

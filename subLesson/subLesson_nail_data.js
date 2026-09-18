@@ -127,7 +127,7 @@ en: "\
 	- I will check the thickness of the acrylic to make sure it's not too bulky.<br>\
 	- Controlling the thickness around the cuticle area ensures your enhancements look natural and grow out smoothly.\
 	",
-		voca: "Nail Shape,Nail Length,Nail Thickness,Almond,Coffin,Stiletto,Oval,Square,Round,Apex",
+		voca: "Nail Shape,Nail Length,Nail Thickness,Almond Shape,Coffin Shape,Stiletto Shape,Oval Shape,Square Shape,Round,Apex",
 		images: ["nail_shapes_01", "nail_shapes_02"]
 	},
 {

@@ -162,8 +162,9 @@ function getFullTile(obj) {
 	var hasNote = obj.note && obj.note.trim().length > 0
 	var isBlankEn = !obj.en || obj.en.trim().length == 0
 	var hasExercise = (obj.T_F_NG && obj.T_F_NG.trim().length > 0) ||
-		(obj.Match_Heading && obj.Match_Heading.trim().length > 0) ||
-		(obj.images && obj.images.length > 0)
+		(obj.Match_Heading && obj.Match_Heading.trim().length > 0)
+
+	var hasImages = (obj.images && obj.images.length > 0)
 
 	var isConversation = false
 
@@ -193,6 +194,7 @@ function getFullTile(obj) {
 		blankEn: isBlankEn,
 		hasNote: hasNote,
 		hasExercise: hasExercise,
+		hasImages: hasImages,
 		ngStyle: ngStyle,
 		fTitle: track + unit + title
 	}

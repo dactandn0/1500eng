@@ -1,5 +1,5 @@
-// Nail 1-9 + Texas copy tu ebooks/spkBook/data/nail/nail.js (giu nguyen ben spkBook).
-// Anh: subLesson/images/ (copy tu ebooks/spkBook/data/nail/img/).
+// Nail 1-9 (Texas tach rieng: subLesson_texas_data.js).
+// Anh: subLesson/images/.
 const SUBLESSON_NAIL_DATA = [
 { category: 'Nail', content: [
 {
@@ -131,7 +131,8 @@ en: "\
 	- I will check the thickness of the acrylic to make sure it's not too bulky.<br>\
 	- Controlling the thickness around the cuticle area ensures your enhancements look natural and grow out smoothly.\
 	",
-		images: ["nail_shapes"]
+		voca: "Nail Shape,Nail Length,Nail Thickness,Almond,Coffin,Stiletto,Oval,Square,Round,Apex",
+		images: ["nail_shapes_01", "nail_shapes_02"]
 	},
 {
 		unit: 5,
@@ -154,7 +155,8 @@ en: "\
 	- Having an accent nail on each hand is a great way to try art without overdoing it.<br>\
 	- Placing small rhinestones or gems on your ring finger creates a stunning focal accent nail.<br>\
 	- We use thick gem gel to ensure those heavy rhinestones stay secured without snagging.\
-	"
+	",
+	voca: "Gel Polish,Top Coat,Matte Finish,Glitter,Chrome Powder,French Tip,Ombré Gradient,Nail Art,Rhinestones,Gem Gel"
 	},
 {
 		unit: 6,
@@ -196,7 +198,8 @@ en: "\
 	- Should I make these index fingers slightly shorter, or do you prefer them a bit longer to match your middle fingers?<br>\
 	- We can apply one more coat if you want the polish to look darker, or leave it as is if you like it lighter.<br>\
 	- I can lay the acrylic a bit thinner at the edges or build it thicker in the middle for extra structure.\
-	"
+	",
+	voca: "Client Comfort,Physical Sensations,Style,Aesthetic Preferences,Adjustments,Comparisons"
 	},
 {
 		unit: 8,
@@ -313,7 +316,8 @@ en: "\
 	A: Okay, let me take a look before we decide on the service.<br>\
 	Q: I completely understand. Here is our menu with all the prices listed.<br>\
 	A: Thanks, I just wanted to make sure I knew the total beforehand.<br>\
-	"
+	",
+	voca: "Small Talk,Weather,Work,Family,Compliments,Customer Complaints,Nail Design,Nail Color,Nail Shape,Nail Length,Nail Thickness"
 	},
 {
 		title: "Small Talk 2",
@@ -387,202 +391,73 @@ en: "\
 	<br>\
 	Q: Be careful with your phone while the polish is drying!<br>\
 	A: Thanks for the warning, I almost smudged it!<br>\
-	"
-	}
-] },
-{ category: 'Texas', content: [
-{
-		title: "Texas",
-		en: "\
-	Talk about Texas, and the first thing people will tell you is, 'Everything is bigger in Texas' From the massive portion sizes of slow-smoked BBQ and giant pickup trucks cruising down the highways, to the endless open skies and the warm, larger-than-life hospitality of the locals, this state truly lives up to its legendary reputation.<br>\
-	Texas is the second-largest state in the US, right after Alaska. If you enjoy sunny weather and want to avoid brutal, freezing winters, Texas is a fantastic place to be. Land here feels infinite, and because the cost of living and tax setup are much more forgiving compared to California or New York, people have been moving here in droves—especially tight-knit Asian and Vietnamese communities looking for a great quality of life.<br>\
-	When it comes to Texas, you simply can't skip Houston—the absolute beating heart of the state and the fourth-largest city in America. Walking into Houston as a newcomer, you immediately feel a sense of comfort because the diversity is palpable, and the Vietnamese community here is massive, vibrant, and incredibly welcoming.<br>\
-	Areas like Bellaire Boulevard and the Chợ Bến Thành commercial districts feel almost like stepping right back into Vietnam. Rows upon rows of authentic restaurants line the streets—serving everything from steaming bowls of Pho, Bun Bo Hue, and crispy Banh Mi to late-night street food, boba, and traditional desserts. Need a doctor, an accountant, a real estate agent, or a nail salon supply store? You can easily find someone who speaks fluent Vietnamese to help you out from A to Z.<br>\
-	Economically, Houston is a powerhouse. It is world-renowned as the 'Energy Capital of the World' due to its booming oil and gas industry. On top of that, it houses NASA’s famous Johnson Space Center—where space missions are managed—and the Texas Medical Center, which is the largest medical complex in the world.<br>\
-	Because the economy is so diverse, job opportunities are everywhere. Whether you work in healthcare, engineering, run a small business, or build a career in the nail and service industry, Houston offers plenty of room to thrive and achieve your financial goals.<br>\
-	Another huge perk of living in Houston is its mind-blowing food scene. Thanks to its multicultural mix of residents, the city is a haven for foodies. You can't live here without trying authentic Tex-Mex (think sizzling fajitas and cheesy enchiladas) or the famous Viet-Cajun Crawfish—a mouthwatering fusion of Louisiana Cajun spices and rich garlic butter created by local Vietnamese chefs that took the entire country by storm.<br>\
-	Of course, no city is completely perfect. Houston summers can get quite hot and humid, and the area occasionally deals with hurricane season. Also, because the city is so spread out, having a car is an absolute necessity—driving 20 to 30 minutes to get anywhere is completely normal day-to-day routine here.<br>\
-	Overall, Houston and Texas as a whole represent a true land of opportunity: friendly neighbors, strong economic stability, incredible food, and a warm, supportive community that makes living abroad feel remarkably like home.\
-	"
+	",
+	voca: "Small Talk,Travel,Vacation,Food,Movies,Shows,Nail Trends,Inspo,Nail Care,Advice,Personal Habits,In-process Instructions",
 	},
-{
-	title: "Texas 2",
-	en: "\
-	Cost of Living & Housing in Houston, Texas<br>\
-	\
-	Houston is famous for offering a big-city lifestyle at a fraction of the cost of other major US hubs like Los Angeles, San Francisco, or New York.<br>\
-	No State Income Tax: Texas is one of nine US states with no state income tax, meaning you keep more of your paycheck.<br>\
-	Housing & Rent: Housing is generally far more affordable than the national average.<br>\
-	Renting: A nice 1-bedroom apartment ranges from $1,100 to $1,500/month depending on the neighborhood, while 2-bedroom units run around $1,400 to $1,900/month.<br>\
-	Buying: The median home price in Greater Houston sits around $320,000–$350,000, making homeownership achievable much earlier.<br>\
-	Utilities & Groceries: Electricity costs can spike during summer due to air conditioning, averaging $150–$250/month. Groceries are very reasonably priced, especially with large Asian markets (like H Mart and HongKong City Market) keeping competitive prices on fresh produce.<br>\
-	Essential Phrases for Driving & Getting Around Texas<br>\
-	Because Houston is massive (spanning over 600 square miles), owning a vehicle and knowing how to navigate the roads is essential.<br>\
-	\
-	On the Road & Traffic<br>\
-	\
-	Rush hour / Peak hours: Traffic is always brutal on I-10 during evening rush hour.<br>\
-	\
-	Feeder road / Frontage road: Take the feeder road right after you pass the exit.<br>\
-	\
-	Merge: Signal left and merge onto the highway when it's safe.<br>\
-	\
-	Toll road / Tollway: If you take the tollway, you'll save about twenty minutes.<br>\
-	\
-	EZ TAG / Toll pass: Make sure your EZ TAG is mounted on the windshield.<br>\
-	\
-	Bumper-to-bumper: It’s bumper-to-bumper all the way to downtown.<br>\
-	\
-	Gridlock: The accident caused total gridlock on the Beltway.<br>\
-	\
-	Pothole: Watch out for that huge pothole near the right lane!<br>\
-	\
-	Tailgating: Stop tailgating me, there's a red light right ahead!<br>\
-	\
-	Carpool lane / HOV lane: We have three people in the car, so we can use the HOV lane.<br>\
-	\
-	Speed trap: Slow down, there’s usually a speed trap right under this overpass.<br>\
-	\
-	Detour: Follow the detour signs because the main bridge is closed.<br>\
-	\
-	Cut off: That guy completely cut me off without using his blinker!<br>\
-	\
-	Blinker / Turn signal: Don't forget to put your blinker on before turning.<br>\
-	\
-	Pull over: The police officer signaled me to pull over to the side of the road.<br>\
-	\
-	Car Maintenance & Gas Station<br>\
-	\
-	Fill it up: Fill it up with regular gas, please.<br>\
-	\
-	Pump number: Twenty dollars on pump number four, please.<br>\
-	\
-	Unleaded / Premium: Does your car take unleaded or premium gas?<br>\
-	\
-	Oil change: My car is due for an oil change at 5,000 miles.<br>\
-	\
-	Tire pressure / PSI: Check the tire pressure before we start our road trip.<br>\
-	\
-	Flat tire / Spare tire: I got a flat tire on the way home and had to put on the spare.<br>\
-	\
-	Jump-start / Jumper cables: My battery died, do you have jumper cables to give me a jump-start?<br>\
-	\
-	Brake pads: The mechanic said my brake pads need to be replaced soon.<br>\
-	\
-	Windshield wiper fluid: Topping off the windshield wiper fluid only takes a minute.<br>\
-	\
-	Check engine light: My check engine light came on this morning, so I need to bring it to the shop.<br>\
-	\
-	Alignment: The steering wheel shakes a bit, so I think the car needs an alignment.<br>\
-	\
-	Inspection sticker: I need to get my annual state inspection sticker renewed this month.<br>\
-	\
-	Tow truck: The car broke down on the shoulder, so we called a tow truck.<br>\
-	\
-	Car wash / Detailing: I'm going to take the car to the shop for a full interior detailing.<br>\
-	\
-	Radiator coolant: Make sure the radiator coolant level is full before summer hits.<br>\
-	\
-	Market & Grocery Store<br>\
-	\
-	Aisle: Where can I find the olive oil? Which aisle is it in?<br>\
-	\
-	Produce section: The fresh fruits and vegetables are over in the produce section.<br>\
-	\
-	Deli counter: I need to get a pound of sliced turkey from the deli counter.<br>\
-	\
-	Bakery: They bake fresh bread every morning in the bakery department.<br>\
-	\
-	Seafood counter: Is the salmon at the seafood counter wild-caught or farm-raised?<br>\
-	\
-	Express lane: You have less than ten items, so you can use the express lane.<br>\
-	\
-	Self-checkout: The self-checkout line is moving much faster today.<br>\
-	\
-	Checkout lane / Register: Please line up at register number three.<br>\
-	\
-	Paper or plastic?: Will you be needing paper or plastic bags today?<br>\
-	\
-	Cart / Trolley: Grab a shopping cart at the entrance before going in.<br>\
-	\
-	Basket: I only need a few items, so a hand basket is fine.<br>\
-	\
-	On sale / Clearance: These strawberries are on sale for buy-one-get-one-free.<br>\
-	\
-	Expiration date / Best-by date: Always check the expiration date on the milk carton.<br>\
-	\
-	Coupons / Rewards card: Do you have our store rewards card or any digital coupons?<br>\
-	\
-	Restock: They are currently restocking the shelves, so check back shortly.<br>\
-	\
-	Hospital & Medical Clinic<br>\
-	\
-	Emergency Room (ER): He had sharp chest pain, so we rushed him straight to the ER.<br>\
-	\
-	Urgent Care: It’s not a major emergency, so let’s just go to Urgent Care instead.<br>\
-	\
-	Appointment: I made an appointment with my primary doctor for a checkup.<br>\
-	\
-	Co-pay: How much is the co-pay for a specialist visit with my insurance?<br>\
-	\
-	Health insurance card: Please present your photo ID and health insurance card at the front desk.<br>\
-	\
-	Pharmacy / Prescription: I need to pick up my prescription from the CVS pharmacy.<br>\
-	\
-	Over-the-counter (OTC): You don't need a prescription for that painkiller; it's available over-the-counter.<br>\
-	\
-	Symptoms: What symptoms are you experiencing, and when did they start?<br>\
-	\
-	Allergies: Are you allergic to penicillin or any other medications?<br>\
-	\
-	Triage / Vitals: The nurse will check your vitals and blood pressure first.<br>\
-	\
-	X-ray / MRI: The doctor ordered an X-ray to see if the bone is broken.<br>\
-	\
-	Stitches: The cut on his hand was deep, so he needed five stitches.<br>\
-	\
-	Refill: I called the clinic to request a refill on my blood pressure medication.<br>\
-	\
-	Outpatient / Inpatient: It’s an outpatient procedure, so you can go home the same afternoon.<br>\
-	\
-	Medical history: Please fill out this paperwork regarding your personal medical history.<br>\
-	\
-	Street & Navigation<br>\
-	\
-	Intersection: Turn right at the next major intersection after the gas station.<br>\
-	\
-	Crosswalk: Pedestrians always have the right of way at the crosswalk.<br>\
-	\
-	Sidewalk: Make sure the kids stay on the sidewalk and off the street.<br>\
-	\
-	Traffic light / Stoplight: The traffic light turned red just as I reached the line.<br>\
-	\
-	Stop sign: You must come to a complete stop at every stop sign.<br>\
-	\
-	Dead end: Don't turn down that street; it's a dead end.<br>\
-	\
-	One-way street: Be careful, you are driving the wrong way down a one-way street!<br>\
-	\
-	Alleyway / Alley: The trash cans are located in the alleyway behind the building.<br>\
-	\
-	Block: Walk straight for two blocks, then take a left.<br>\
-	\
-	Speed limit: The speed limit in this residential neighborhood is 25 miles per hour.<br>\
-	\
-	Yield: You need to yield to oncoming traffic when entering the roundabout.<br>\
-	\
-	Underpass / Overpass: Drive under the overpass and stay in the middle lane.<br>\
-	\
-	Landmark: The large water tower is a great landmark to help you find the house.<br>\
-	\
-	Parallel parking: I had to do parallel parking between two huge pickup trucks.<br>\
-	\
-	Parking garage / Parking lot: Park your car in the multi-story parking garage across the street.<br>\
-	"
+	{
+		title: "Gel Manicure",
+		en: "\
+	Achieving a perfect gel manicure at home is easier than you might think. With the right tools, a bit of patience, and our comprehensive guide, you can enjoy salon-quality nails without leaving the comfort of your home. Below, we will walk you through the gel manicure at home steps, provide essential gel nail application tips, and help you make the most of your home gel nail kit.<br>\
+	Step 1: Gather Your Materials<br>\
+	Before you start, ensure you have all the necessary items. Here’s what you’ll need in your home gel nail kit:<br>\
+	Nail file and buffer<br>\
+	Cuticle pusher<br>\
+	Lint-free wipes<br>\
+	Gel base coat<br>\
+	Gel color polish<br>\
+	Gel top coat<br>\
+	LED or UV lamp<br>\
+	Isopropyl alcohol<br>\
+	Cuticle oil<br>\
+	Having everything ready will make the process smoother and more enjoyable.<br>\
+	Step 2: Prepare Your Nails<br>\
+	Proper nail preparation is crucial for a long-lasting gel manicure. Follow these gel manicure at home steps to prep your nails:<br>\
+	Clean and Trim: Remove any old polish and trim your nails to your desired length.<br>\
+	Shape and Buff: Shape your nails with a file and gently buff the surface to remove any shine.<br>\
+	Push Back Cuticles: Use a cuticle pusher to gently push back your cuticles. This helps the polish adhere better.<br>\
+	Clean Nails: Wipe your nails with a lint-free wipe soaked in isopropyl alcohol to remove oils and debris.<br>\
+	Step 3: Apply the Base Coat<br>\
+	Applying the base coat correctly is a vital step in your DIY gel nails tutorial.<br>\
+	Thin Layer: Apply a thin, even layer of the gel base coat to each nail, being careful to avoid the skin and cuticles.<br>\
+	Seal the Edge: Seal the free edge of your nails by brushing the base coat across the tip.<br>\
+	Cure Under Lamp: Cure your nails under an LED or UV lamp according to the manufacturer’s instructions (usually 30-60 seconds).<br>\
+	Step 4: Apply the Gel Color<br>\
+	This step involves applying the gel color polish, following these gel nail application tips:<br>\
+	Thin Coats: Apply the gel color polish in thin, even coats. Thick layers can cause bubbling or peeling.<br>\
+	Seal the Edge: Again, seal the free edge of your nails with the polish.<br>\
+	Cure Between Layers: Cure each layer under the lamp. Two to three coats usually provide the best coverage.<br>\
+	Check Coverage: Ensure each nail is fully covered and cured before moving to the next coat.<br>\
+	Step 5: Apply the Top Coat<br>\
+	The top coat seals your color and adds shine:<br>\
+	Even Application: Apply an even layer of the gel top coat, ensuring full coverage.<br>\
+	Seal the Edge: Don’t forget to seal the free edge again.<br>\
+	Final Cure: Cure your nails under the lamp one last time.<br>\
+	Step 6: Finishing Touches<br>\
+	Once your nails are fully cured, follow these steps to finish your DIY gel nails tutorial:<br>\
+	Wipe Residue: Use a lint-free wipe and isopropyl alcohol to remove any sticky residue from the nail surface.<br>\
+	Hydrate Cuticles: Apply cuticle oil to keep your cuticles moisturized and healthy.<br>\
+	Tips for Long-Lasting Gel Manicure<br>\
+	To ensure your gel manicure lasts as long as possible, here are some additional gel nail application tips:<br>\
+	Avoid Water Exposure: Try to keep your nails dry for at least a few hours after application.<br>\
+	Use Gloves: Get used to wearing gloves when doing any activities that involve harsh chemicals, including household chores.<br>\
+	Moisturize Regularly: Keep your hands and cuticles hydrated to prevent your nails from becoming brittle.<br>\
+	Removing Gel Nails<br>\
+	Proper removal is crucial to maintain healthy nails. Avoid peeling off the gel polish, which can damage your nails. Instead, follow these steps:<br>\
+	File the Surface: Gently file the top layer of the gel polish.<br>\
+	Soak in Acetone: Soak cotton balls in acetone, place them directly on your nails, and wrap your fingertips in foil. Let it sit for 10-15 minutes.<br>\
+	Gently Remove: Use a cuticle pusher to gently scrape off the softened gel polish.<br>\
+	Buff and Hydrate: Buff your nails and apply cuticle oil to nourish your nails.<br>\
+	By following these gel manicure at-home steps, you can achieve a stunning, long-lasting gel manicure without visiting a salon. With practice, you’ll become more confident and skilled in your DIY gel nails tutorial. Remember to always take care of your nails and enjoy the process!<br>\
+	Ready to take your skills to the next level? Explore our courses and programs at Cortiva Institute and start your journey to becoming a beauty expert today!<br>\
+	",
+	voca: "Gel Manicure,Base Coat,Top Coat,LED Lamp,UV Lamp,Cuticle Oil,Isopropyl Alcohol,Lint-free Wipes,DIY Gel Nails Tutorial,Gel Nail Application Tips",
+	images: ["gel-manicure"]
 	}
-] } ];
+] 
+}  // end category Nail
+];
 
-// Ban phang 1D cua SUBLESSON_NAIL_DATA (dung cho search + fetchStory theo index).
+// Ban phang 1D (dung cho search + fetchStory theo index).
 var SUBLESSON_NAIL_FLAT = [];
 SUBLESSON_NAIL_DATA.forEach(function (g) {
 	SUBLESSON_NAIL_FLAT = SUBLESSON_NAIL_FLAT.concat(g.content || []);

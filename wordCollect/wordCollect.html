@@ -46,8 +46,8 @@
 				</button>
 			</div>
 			<div ng-repeat="word in filteredWords(category) | limitTo:wordPageSize:(wordPage*wordPageSize) track by $index" class="word-row">
-				<button type="button" class="btn btn-sm btn-primary vocaNoteBtn word-row-action" ng-show="!IsWordSavedBefore(word.full)" ng-click="saveNoted(word.full)" title="Save word" aria-label="Save word"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
 				<span class="word-idx">{{wordPage*wordPageSize + $index + 1}}</span>
+				<button type="button" class="btn btn-sm btn-primary vocaNoteBtn word-row-action" ng-show="!IsWordSavedBefore(word.full)" ng-click="saveNoted(word.full)" title="Save word" aria-label="Save word"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
 				<span compile="word.p1" ng-click="wordClick($event, word)" class="word-text word-text-main"></span>
 				<span compile="word.p2" ng-click="showExampleModal(word.full, $event)" class="word-text word-text-detail"></span>
 				<div class="word-examples" ng-if="exSent[wordHead(word.full)] && wordHead(word.full) === openExHead">

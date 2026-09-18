@@ -246,16 +246,6 @@ function processStory(story, isAlert = true) {
 	const json = getFullTile(story)
 	story.fTitle = json.fTitle
 
-	const images = story.images
-	if (images) {
-		const answerImages = []
-		for (let i = 0; i < images.length; i++) {
-			const image = images[i].replace('-min', '')
-			const answerImage = image + '_ans-min'
-			answerImages.push(answerImage)
-		}
-		story.ans_images = answerImages
-	}
 	return story;
 }
 

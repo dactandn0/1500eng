@@ -1216,7 +1216,7 @@ input:focus {
 
 .word-row {
   display: grid;
-  grid-template-columns: 2rem 2.2rem minmax(8rem, 0.8fr) minmax(0, 1.8fr);
+  grid-template-columns: 2rem 2.2rem minmax(0, 0.8fr) minmax(0, 1.8fr);
   align-items: baseline;
   gap: 0.65rem;
   padding: 0.55rem 0.35rem;
@@ -1249,8 +1249,16 @@ input:focus {
   border-color: #e5c96f;
 }
 
+/* nut Save an (tu da luu): giu o grid, chi mo di chu khong xoa o */
+.word-row-action.ng-hide {
+  display: inline-block !important;
+  visibility: hidden;
+}
+
 .word-text {
   cursor: pointer;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .word-text-main {
@@ -1672,6 +1680,12 @@ input:focus {
     top: 40%;
     right: 2%;
     z-index: 31; 
+  }
+
+  /* Nhom nut canh (showVi.html): noi tren toast (toastr z-index 999999) */
+  .side-actions {
+    position: relative;
+    z-index: 1000001;
   }
 
   .top40 {

@@ -10,6 +10,7 @@ var VocaForSearch = VocaToUI
 	.concat(PHRASAL_VERB)
 	.concat(BAT_QUI_TAC)
 	.concat(SUBLESSON_NAIL_FLAT)
+	.concat(SUBLESSON_TEXAS_FLAT)
 	
 // .concat(IELTS_SYN)
 // .concat(subLesson_DATA)

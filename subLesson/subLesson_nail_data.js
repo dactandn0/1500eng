@@ -127,7 +127,7 @@ en: "\
 	- I will check the thickness of the acrylic to make sure it's not too bulky.<br>\
 	- Controlling the thickness around the cuticle area ensures your enhancements look natural and grow out smoothly.\
 	",
-		voca: "Nail Shape,Nail Length,Nail Thickness,Almond Shape,Coffin Shape,Stiletto Shape,Oval Shape,Square Shape,Round,Apex",
+		voca: "Nail Shape,Nail Length,Nail Thickness,Almond,Coffin,Stiletto,Oval,Square,Round,Apex",
 		images: ["nail_shapes_01", "nail_shapes_02"]
 	},
 {
@@ -444,8 +444,9 @@ en: "\
 	By following these gel manicure at-home steps, you can achieve a stunning, long-lasting gel manicure without visiting a salon. With practice, you’ll become more confident and skilled in your DIY gel nails tutorial. Remember to always take care of your nails and enjoy the process!<br>\
 	Ready to take your skills to the next level? Explore our courses and programs at Cortiva Institute and start your journey to becoming a beauty expert today!<br>\
 	",
-	voca: "Gel Manicure,Base Coat,Top Coat,LED Lamp,UV Lamp,Cuticle Oil,Isopropyl Alcohol,Lint-free Wipes,DIY Gel Nails Tutorial,Gel Nail Application Tips",
-	images: ["gel-manicure"]
+	voca: "Nail file,Gel Manicure,Base Coat,Top Coat,LED Lamp,UV Lamp,Cuticle Oil,Isopropyl Alcohol,Lint-free Wipes,DIY Gel Nails Tutorial,Gel Nail Application Tips",
+	images: ["gel-manicure"],
+	note: "the most of SOMETHING"
 	}
 ] 
 }  // end category Nail

@@ -1,7 +1,7 @@
 
 <div class="mt-2" ng-if="story.note && story.note.split('|').length">
-	<mark class="text-primary">Notes:</mark>
-	<p class="mb-1" ng-repeat="sen in story.note.split('|') track by $index">
-		<span ng-click="Index_NoteVoca_Speak(sen)">{{sen}}</span>
+	<p class="text-primary">Notes:</p>
+	<p class="my-2" ng-repeat="sen in story.note.split('|') track by $index">
+		<span class="my-1" ng-click="Index_NoteVoca_Speak(sen)">{{sen}}</span>
 	</p>
 </div>	

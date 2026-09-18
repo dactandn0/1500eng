@@ -424,7 +424,7 @@ select (v) /sɪˈlekt/ chọn<br>\
 copy (v) /ˈkɒp.i/ sao chép<br>\
 computer (n) /kəmˈpjuː.tər/ máy vi tính<br>\
 laptop (n) /ˈlæp.tɒp/ máy tính xách tay 28<br>\
-file (n) /faɪl/ tệp, tập tin<br>\
+file (n) /faɪl/ tệp, tập tin, cây dũa (verb) Nail<br>\
 battery (n) /ˈbæt.ər.i/ pin<br>\
 click (n) /klɪk/ nhấp chuột<br>\
 type (n) /taɪp/ đánh chữ, gõ chữ<br>\

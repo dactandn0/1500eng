@@ -17,13 +17,14 @@ Gel Nail Application Tips (n) Mẹo sơn móng gel là các bí quyết và lưu
 Nail Shape (n) dáng móng hoặc phom móng là hình dạng tổng thể của móng được dũa theo yêu cầu của khách hàng. <br>\
 Nail Length (n) độ dài móng là chiều dài của móng tính từ gốc móng hoặc đầu ngón tay ra đến đầu móng. <br>\
 Nail Thickness (n) độ dày móng là độ dày của lớp acrylic, gel hoặc móng thật nhằm đảm bảo độ bền và tự nhiên. <br>\
-Almond Shape (n) móng dáng hạnh nhân là kiểu móng có hai bên mạn thon gọn lại và tạo thành một đỉnh bo tròn mềm mại. <br>\
-Coffin Shape (n) móng dáng quan tài (hoặc ballerina) là kiểu móng thon dần về phía đầu móng nhưng kết thúc bằng một cạnh vuông phẳng. <br>\
-Stiletto Shape (n) móng dáng nhọn (móng vuốt) là kiểu móng có phần đầu được dũa rất nhọn và hẹp dần về phía chóp. <br>\
-Oval Shape (n) móng dáng bầu dục là kiểu móng có đầu bo tròn thuôn dài giúp bàn tay nhìn tự nhiên và thon thả hơn. <br>\
-Square Shape (n) móng dáng vuông là kiểu móng có các cạnh bên thẳng đứng và phần đầu móng cắt ngang phẳng góc nét. <br>\
-Round Shape (n) móng dáng tròn là kiểu móng được dũa theo đường cong tự nhiên của đầu ngón tay, rất dễ chăm sóc. <br>\
+Almond (n) móng dáng hạnh nhân là kiểu móng có hai bên mạn thon gọn lại và tạo thành một đỉnh bo tròn mềm mại. <br>\
+Coffin (n) móng dáng quan tài (hoặc ballerina) là kiểu móng thon dần về phía đầu móng nhưng kết thúc bằng một cạnh vuông phẳng. <br>\
+Stiletto (n) móng dáng nhọn (móng vuốt) là kiểu móng có phần đầu được dũa rất nhọn và hẹp dần về phía chóp. <br>\
+Oval (n) móng dáng bầu dục là kiểu móng có đầu bo tròn thuôn dài giúp bàn tay nhìn tự nhiên và thon thả hơn. <br>\
+Square (n) móng dáng vuông là kiểu móng có các cạnh bên thẳng đứng và phần đầu móng cắt ngang phẳng góc nét. <br>\
+Round (n) móng dáng tròn là kiểu móng được dũa theo đường cong tự nhiên của đầu ngón tay, rất dễ chăm sóc. <br>\
 Apex (n) điểm mút (hoặc đỉnh móng) là phần dày nhất nằm ở trung tâm móng giúp chịu lực và nâng đỡ cấu trúc móng nối dài.<br>\
+Cure (v) [Nail] quá trình sấy khô gel hoặc acrylic bằng đèn LED hoặc UV. <br>\
 "
 }
 

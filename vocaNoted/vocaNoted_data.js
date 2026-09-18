@@ -428,7 +428,6 @@ Select (v) /sɪˈlekt/  Chọn<br>\
 Copy (v) /ˈkɒp.i/  Sao chép<br>\
 Computer (n) /kəmˈpjuː.tər/  Máy vi tính<br>\
 Laptop (n) /ˈlæp.tɒp/  Máy tính xách tay 28<br>\
-File (n) /faɪl/  Tệp, tập tin<br>\
 Disk drive (n) /ˈdɪsk ˌdraɪv/  Ổ đĩa<br>\
 Battery (n) /ˈbæt.ər.i/  Pin<br>\
 Click (n) /klɪk/  Nhấp chuột<br>\

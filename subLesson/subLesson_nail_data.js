@@ -446,7 +446,7 @@ en: "\
 	",
 	voca: "Nail file,Gel Manicure,Base Coat,Top Coat,LED Lamp,UV Lamp,Cuticle Oil,Isopropyl Alcohol,Lint-free Wipes,DIY Gel Nails Tutorial,Gel Nail Application Tips",
 	images: ["gel-manicure"],
-	note: "the most of SOMETHING"
+	note: "the most of SOMETHING : tận dụng tối đa"
 	}
 ] 
 }  // end category Nail

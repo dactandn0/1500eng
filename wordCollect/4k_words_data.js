@@ -826,14 +826,7 @@ wound (n) /wuːnd/ vết thương <br>\
 \
 \
 \
-\
-\
-\
 pill (n,v) viên thuốc tây, (v) cướp phá<br>\
-\
-\
-\
-\
 \
 \
 ginger (n) /ˈdʒɪndʒər/ gừng<br>\
@@ -845,18 +838,11 @@ admit (v) thừa nhận<br>\
 criminal (n,a) người tội phạm, có trọng tội<br>\
 \
 \
-\
-\
-\
-\
-\
 occasion (n) /əˈkeɪʒn/ dịp, thời cơ<br>\
 \
 settle (v) giải quyết vấn đề, dịu dần, trầm tỉnh<br>\
 yell (v) /jel/ la hét <br>\
 accuse (v)  /əˈkjuːz/ tố cáo [+Sbody of Ving/N]<br>\
-\
-\
 \
 \
 vent /vent/ (n) lỗ thông hơi<br>\
@@ -866,14 +852,7 @@ firm (a) chắc chắn, kiên cố<br>\
 misinformation (n) /mɪsɪnfərˈmeɪʃn/ thông tin sai lệch<br>\
 \
 \
-\
-\
 surf (n,v) /sɜːrf/ bọt biển, lướt sóng(website)<br>\
-\
-\
-\
-\
-\
 \
 \
 \

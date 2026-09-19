@@ -10,11 +10,8 @@ var VocaToUI = WORDS_3K_DATA
 var VocaForSearch = VocaToUI
 	.concat(PHRASAL_VERB)
 	.concat(BAT_QUI_TAC)
-	.concat(SUBLESSON_NAIL_FLAT)
-	.concat(SUBLESSON_TEXAS_FLAT)
 	
 // .concat(IELTS_SYN)
-// .concat(subLesson_DATA)
 // .concat(NATIONS)
 
 var kAllStories = SPEAKING_SAME_VOL5
@@ -25,7 +22,7 @@ var kAllStories = SPEAKING_SAME_VOL5
 	.concat(lptd_cd2_stories)
 	.concat(lptd_cd3_stories)
 	.concat(lptd_cd4_stories)
-//  .concat(BOOK4K_1)
+ 	.concat(BOOK4K_1)
 // .concat(bridge_cd1)
 //  .concat(bridge_read_data)
 //  .concat(complete_cd1)

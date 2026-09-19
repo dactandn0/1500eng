@@ -22,8 +22,9 @@ $scope.fetchAudio = function() {
 	return $scope.stories[$scope.storyIdx].idx;
 }
 
-$scope.createAudioScr = function() {
+$scope.createAudioSrc = function() {
 	const rr = "./ebooks/words4000/data/words4000_" + $scope.cd + "/" + $scope.fetchAudio() + '.mp3';
+	console.log("createAudioSrc: " + rr);
 	return rr;
 }
 

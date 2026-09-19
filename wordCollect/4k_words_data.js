@@ -76,7 +76,6 @@ hygienic (a) /haɪˈdʒiːnɪk/ vệ sinh<br>\
 uncomfortable (a) /ʌnˈkʌmfərtəbl/ không thoải mái<br>\
 casually (adv) /ˈkæʒuəli/ ngẫu nhiên (informal way)<br>\
 competitiveness (n) /kəmˈpetətɪvnəs/ tính cạnh tranh<br>\
-although (conj) /ɔːlˈðəʊ/ mặc dù<br>\
 sporty (a) /ˈspɔːrti/ thích thể thao<br>\
 weekdays (adv) /ˈwiːkdeɪz/<br>\
 hunt (v) /hʌnt/ săn<br>\
@@ -606,51 +605,13 @@ major (a) /ˈmeɪdʒər/ chính<br>\
 \
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 "
  }, {
  	title: "4k Book2",
  	en: "awful (a) tệ hại(very bad)<br>\
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 spill (v) /spɪl/ làm tràn, làm ngập<br>\
-\
-\
-\
-\
 \
 \
 remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
@@ -658,32 +619,12 @@ remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\
 statue (n) /ˈstætʃuː/ tượng<br>\
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 log (n,v) nhật ký, ghi chép<br>\
-\
-\
-\
 \
 \
 purity (n) /ˈpjʊrəti/ nguyên chất, tinh khiết<br>\
 resonate (v) /ˈrezəneɪt/ cộng hưởng<br>\
 twist (v) /twɪst/ xoắn<br>\
-\
-\
-\
-\
 \
 \
 royalty (n) /ˈrɔɪəlti/ hoàng gia, vương quyền<br>\
@@ -698,22 +639,11 @@ shade (n) bóng râm, tông màu<br>\
 \
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
-\
 silent (a) /ˈsaɪlənt/ im lặng<br>\
 superior (a) /suːˈpɪriər/ cao cấp<br>\
 surround (v) /səˈraʊnd/ vòm<br>\
 thick (a) /θɪk/ dày<br>\
 wrap (v) /ræp/ bao bọc<br>\
-\
-\
 \
 \
 disappoint (v) /ˌdɪsəˈpɔɪnt/ thất vọng<br>\
@@ -746,15 +676,6 @@ definite (a) /ˈdefɪnət/ xác định<br>\
 mean (n,a,v) v. nghĩa là<br>\
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
-\
 achievement (n) /əˈtʃiːvmənt/ thành tích<br>\
 \
 \
@@ -768,26 +689,6 @@ inseparable (a) /ɪnˈseprəbl/ không thể tách rời<br>\
 \
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 trap (n) // bẫy<br>\
 \
 \
@@ -797,25 +698,12 @@ meteor (n) /ˈmiːtiər/ thiên thạch<br>\
 \
 \
 \
-\
-\
-\
-\
-\
 super (a) /ˈsuːpər/ siêu<br>\
-\
-\
-\
-\
 \
 \
 decrease (n,v) /dɪˈkriːs/ giảm<br>\
 \
 insist (v) /ɪnˈsɪst/ kiên trì<br>\
-\
-\
-\
-\
 \
 \
 sue (v) /suː/ kiện tụng<br>\
@@ -837,7 +725,6 @@ phenomenon (n) hiện tượng (số nhiều: phenomena)<br>\
 phenomena (n) những hiện tượng (số ít: phenomenon)<br>\
 drain (n,v) hút, rút, tháo, làm cạn<br>\
 tutor (n) gia sư<br>\
-commit (v) /kəˈmɪt/ cam kết<br>\
 dormitory (n) (plural dormitories) ký túc xá<br>\
 exhaust (n)  /ɪɡˈzɔːst/ khí thải<br>\
 greenhouse (n) /ˈɡriːnhaʊs/ nhà kính<br>\
@@ -857,29 +744,8 @@ committee (n) /kəˈmɪti/ ủy ban<br>\
 dine (v) ăn cơm trưa<br>\
 \
 \
-\
-\
-\
-\
-\
-\
 soil (n) /sɔɪl/ đất<br>\
 unique (a) duy nhất (very special)<br>\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 \
 \
 \
@@ -899,23 +765,6 @@ prime (a) xuất sắc,hảo hạng<br>\
 shift (n) sự thay đổi, đổi chỗ<br>\
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 whether (conj) /ˈweðər/ liệu, dù là<br>\
 beg (v) ăn xin, khẩn cầu<br>\
 beyond (prep) /bɪˈjɑːnd/ vượt trên<br>\
@@ -932,34 +781,6 @@ kindly (a,adv) vui lòng<br>\
 \
 \
 stream (n) /striːm/ suối<br>\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 \
 \
 scale (n,v) (chia) tỷ lệ, vảy (cá), đĩa cân<br>\
@@ -1313,7 +1134,6 @@ pressure (n) /ˈpreʃ.ər/ áp lực<br>\
 probable (adj) /ˈprɒb.ə.bəl/ có thể<br>\
 public (adj/n) /ˈpʌb.lɪk/ công cộng<br>\
 unite (v) /juːˈnaɪt/ đoàn kết<br>\
-associate (v) /əˈsəʊ.si.eɪt/ liên kết<br>\
 factory (n) /ˈfæk.tər.i/ nhà máy<br>\
 feature (n) /ˈfiː.tʃər/ tính năng<br>\
 instance (n) /ˈɪn.stəns/ trường hợp<br>\
@@ -1379,7 +1199,7 @@ amount (n) /əˈmaʊnt/ số lượng<br>\
 belief (n) /bɪˈliːf/ niềm tin<br>\
 center (n) /ˈsen.tər/ trung tâm<br>\
 cost (n/v) /kɒst/ chi phí<br>\
-demonstrate (v) /ˈdem.ən.streɪt/ trình bày<br>\
+demonstrate (v) /ˈdem.ən.streɪt/ trình bày, chứng tỏ (minh)<br>\
 evidence (n) /ˈev.ɪ.dəns/ bằng chứng<br>\
 honesty (n) /ˈɒn.ə.sti/ trung thực<br>\
 idiom (n) /ˈɪd.i.əm/ thành ngữ<br>\
@@ -1457,7 +1277,6 @@ pure (adj) /pjʊər/ thuần khiết<br>\
 relative (n/adj) /ˈrel.ə.tɪv/ tương đối<br>\
 senior (adj/n) /ˈsiː.ni.ər/ cấp cao<br>\
 anger (n) /ˈæŋ.ɡər/ giận giữ<br>\
-bride (n) /braɪd/ cô dâu<br>\
 brief (adj) /briːf/ ngắn gọn<br>\
 chase (v/n) /tʃeɪs/ đuổi theo<br>\
 exchange (v/n) /ɪksˈtʃeɪndʒ/ trao đổi<br>\
@@ -1719,7 +1538,6 @@ invest (v) /ɪnˈvest/ đầu tư<br>\
 practical (adj) /ˈpræk.tɪ.kəl/ thực tế<br>\
 temporary (adj) /ˈtem.pər.ər.i/ tạm thời<br>\
 charitable (adj) /ˈtʃær.ə.tə.bəl/ từ thiện<br>\
-chimney (n) /ˈtʃɪm.ni/ ống khói<br>\
 compensate (v) /ˈkɒm.pən.seɪt/ bù trừ<br>\
 encounter (v/n) /ɪnˈkaʊn.tər/ gặp gỡ<br>\
 exceed (v) /ɪkˈsiːd/ vượt quá<br>\

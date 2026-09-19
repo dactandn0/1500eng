@@ -17,7 +17,6 @@ var VocaForSearch = VocaToUI
 // .concat(subLesson_DATA)
 // .concat(NATIONS)
 
-// for notedEbookCtrl
 var kAllStories = SPEAKING_SAME_VOL5
 	.concat(ENGLAB_BEGIN_DATA_W)
 	.concat(ENGLAB_BEGIN_DATA_R)
@@ -331,16 +330,22 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 			let json_full = ''
 			let found = false
+			let hitCount = 0
+			let totalHits = 0
 			for (let i = 0; i < searchData.length; i++) {
 				const wordFull = searchData[i]
 				const word = Helper_GetVocaFromWordFull(wordFull).toLowerCase();
 
 				if (word === lookup || Helper_IsFormOfWord(word, lookup)) {
-					json_full = wordFull + total
+					totalHits++
+					if (hitCount < 2) {
+						json_full += (hitCount > 0 ? '<br>' : '') + '- ' + wordFull + total
+						hitCount++
+					}
 					found = true
-					break
 				}
 			}
+			if (found) json_full += '<br><small><i>Found ' + totalHits + ' in data</i></small>'
 			if (!found) {
 				json_full = total
 			}

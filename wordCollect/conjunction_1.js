@@ -115,7 +115,6 @@ To put it differently ...<br>\
 For one thing ...<br>\
 As an illustration ...<br>\
 In this case ...<br>\
-For this reason ...<br>\
 To put it another way ...<br>\
 That is to say ...<br>\
 With attention to ...<br>\
@@ -162,7 +161,6 @@ Nguyên nhân kết quả:<br>\
 As a result .....<br>\
 Consequently .....<br>\
 As an effect .....<br>\
-Thus .....<br>\
 So .....<br>\
 The reason why .....<br>\
 Therefore .....<br>\
@@ -172,7 +170,6 @@ For this reason .....<br>\
 Thereby .....<br>\
 Under those circumstances ...<br>\
 In that case ...<br>\
-For this reason ...<br>\
 In effect ...<br>\
 For ...<br>\
 Thus ...<br>\
@@ -216,7 +213,6 @@ As much as ...<br>\
 If ...<br>\
 Provided that ...<br>\
 Because of that ...<br>\
-For this reason ...<br>\
 Unless ...<br>\
 Providing that ...<br>\
 So that ...<br>\

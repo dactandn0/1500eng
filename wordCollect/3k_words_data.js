@@ -208,7 +208,7 @@ schoolmate (n) /ˈskuːl.meɪt/ bạn cùng trường<br>\
 roommate (n) /ˈruːm.meɪt/ bạn cùng phòng<br>\
 soulmate (n) /ˈsəʊl.meɪt/ tri kỷ<br>\
 partner (n) /ˈpɑːt.nər/ cộng sự<br>\
-associate (n) /əˈsəʊ.si.eɪt/ bạn đồng liêu, đồng minh<br>\
+associate (n,v) /əˈsəʊ.si.eɪt/ bạn đồng liêu, đồng minh, liên kết (v)<br>\
 ally (n) /ˈæl.aɪ/ đồng minh<br>\
 companion (n) /kəmˈpæn.jən/ bạn đồng hành<br>\
 friendship (n) /ˈfrend.ʃɪp/ tình bạn<br>\
@@ -606,7 +606,8 @@ landscape (n) /ˈlænd.skeɪp/ phong cảnh"
 },
 {
 title:"wedding",
-en:"bride (n) /braɪd/ cô dâu<br>\
+en:"\
+bride (n) /braɪd/ cô dâu<br>\
 vow (n) /vaʊ/ lời thề<br>\
 groomsman (n) /ˈɡruːmz.mən/ phù rể<br>\
 groom (n) /ɡruːm/ chú rể<br>\

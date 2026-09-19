@@ -1877,7 +1877,7 @@ input:focus {
   font-weight: 700 !important;
   margin-bottom: 0.55rem;
   color: #403d37 !important;
-  font-size: 1rem;
+  font-size: 0.88rem;
   line-height: 1.55;
 }
 
@@ -1899,6 +1899,8 @@ input:focus {
 .toast-message {
   font-weight: 400 !important;
   color: #756d61 !important;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 .toast-message .btn.btn-success {

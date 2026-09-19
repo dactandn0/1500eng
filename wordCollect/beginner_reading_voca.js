@@ -17,7 +17,6 @@ own (adv) sở hữu<br>\
 even if (adv) thậm chí nếu<br>\
 decline (n,v) sự suy thoái, sự suy sụp, suy giảm, làm giảm<br>\
 though (conj) mặc dù<br>\
-although (conj) mặc dù<br>\
 despite (conj) mặc dù<br>\
 of course (adv) tất nhiên<br>\
 so on (adv) vân vân<br>\
@@ -126,7 +125,6 @@ campus /'krempas/ (n) khuôn viên trường<br>\
 confirmation /konfa'meifan/ (n) <br>\
 constant /'konstant/ (a) hằng số<br>\
 deem /di:m/ (v) cho rằng<br>\
-demonstrate /'demanstreit/ (v) chứng tỏ, chứng minh<br>\
 duration/ dju'reifan/ (n) thời gian<br>\
 enrolment (n) /in'raulmant/  ghi danh<br>\
 equivalent (n,a) /i'kwivalant/  tương đương<br>\
@@ -269,7 +267,6 @@ abridge /ǝ'bridg/ (v) tóm tắt<br>\
 appreciate /ǝ'pri:fieit/ (v) đánh giá cao<br>\
 assign /ǝ'sain/ (v) giao<br>\
 clinic /'klinik/(n) phòng khám<br>\
-commit /kǝ'mit/ (v)cam kết<br>\
 drop-in /'dropin/ (n)thả vào<br>\
 frame /freim/ (n)khung<br>\
 handle /'hændl/ (v)xử lý<br>\

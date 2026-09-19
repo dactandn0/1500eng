@@ -238,7 +238,6 @@ Advertising revenue /ˈædvərˌtaɪzɪŋ ˈrɛvənjuː/ Doanh thu quảng cáo<
 Advertising strategy /ˈædvərˌtaɪzɪŋ ˈstrætədʒi/ Chiến lược quảng cáo<br>\
 Alternatives /ɔːlˈtɜːrnətɪvz/ Sự lựa chọn khác<br>\
 Association /əˌsoʊsiˈeɪʃən/ Liên kết<br>\
-Awareness /əˈwɛərnəs/ Nhận thức<br>\
 Billboard /ˈbɪlbɔːrd/ Biển quảng cáo<br>\
 Brand awareness /brænd əˈwɛərnɪs/ Nhận thức về thương hiệu<br>\
 Brand loyalty /brænd ˈlɔɪəlti/ Sự trung thành với thương hiệu<br>\

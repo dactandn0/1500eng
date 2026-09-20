@@ -3,7 +3,6 @@
 document.write('<script src="./ebooks/spkBook/data/collins/collins_cd12.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/formula/formula.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/spkBook/data/speakSameVol5/speakSameVol5.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/spkBook/data/tiktok/tiktok.js" type="text/javascript"></script>');
 
 var app = angular.module("spkBookApp", ['ngSanitize']);
 app.controller("spkBookCtrl", function($scope, $rootScope, $timeout) {
@@ -39,11 +38,6 @@ bookRadioChange = function (num, isLoadData = false) {
 		$scope.img_root = imgRootPath + 'speakSameVol5/img/'	
 		$scope.stories = SPEAKING_SAME_VOL5;
 	}
-	if (num===4)
-	{
-		$scope.img_root = imgRootPath + 'tiktok/img/'	
-		$scope.stories = TIKTOK_EBOOK1_DATA;
-	}
 
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)
 	Helper_saveDB("Speaking_Ebook", num);
@@ -71,7 +65,7 @@ $scope.fetchStory = function (idx)
 
 $scope.loadData = function () {
 	var cd = Helper_loadInt('Speaking_Ebook', 0);
-	if (cd === 3) cd = 0; // Nail da chuyen sang subLesson
+	if (cd === 3 || cd === 4) cd = 0; // Nail -> subLesson, TikTok -> trang tiktok rieng
 	bookRadioChange(cd, true);
 	document.spk_book_bForm.bookRadio.value = cd;
 };

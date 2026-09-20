@@ -58,6 +58,7 @@ var app = angular.module("myApp", [
 	'preCourseApp',
 	'beginnerCourseApp',
 	'spkBookApp',
+	'tiktokApp',
 	'writingvol5App',
 	'completeApp',
 	'tocgApp',
@@ -122,6 +123,10 @@ app.config(function($routeProvider) {
 		.when('/spkBook', {
 			templateUrl: 'ebooks/spkBook/spkBook.html',
 			controller: 'spkBookCtrl'
+		})
+		.when('/tiktok', {
+			templateUrl: 'ebooks/tiktok/tiktok.html',
+			controller: 'tiktokCtrl'
 		})
 		.when('/bridgeL', {
 			templateUrl: 'ebooks/bridge/bridgeL.html',

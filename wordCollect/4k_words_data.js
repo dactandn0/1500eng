@@ -861,11 +861,6 @@ innocent (a) ngây thơ, trong sạch, vô tội<br>\
 minister (n) bộ trưởng<br>\
 \
 \
-\
-\
-\
-\
-\
 twin (n) con sinh đôi, (v) sinh đôi<br>\
 \
 accompany (v) (+to) (+by: passive) đi cùng<br>\

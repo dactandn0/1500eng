@@ -1871,7 +1871,6 @@ Sprawling (a) /ˈsprɔːlɪŋ/ lan rộng<br>\
 Rural (a) /ˈrʊrəl/ Nông thôn<br>\
 Suburbs (n) /ˈsʌbɜːrb/ Ngoại ô (= Outskirts)<br>\
 Tranquil (a) /ˈtræŋkwɪl/ Yên tĩnh<br>\
-Picturesque (a) /ˌpɪktʃəˈresk/ Đẹp như tranh vẽ<br>\
 Close-knit (a) /ˌkləʊs ˈnɪt/ khắn khít, gắn bó<br>\
 Old-fashioned (a) /ˌəʊld ˈfæʃnd/ thuộc xưa cũ<br>\
 Studio apartment (n)<br>\

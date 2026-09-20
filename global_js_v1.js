@@ -251,6 +251,7 @@ function processStory(story, isAlert = true) {
 
 
 Helper_AudioLoop = function(scope, rootScope) {
+	if (!rootScope) rootScope = scope && scope.$root; // phong thu: caller quen truyen
 	if (!rootScope) {
 		alert('Helper_AudioLoop :: rootScope = undefined!')
 		return;

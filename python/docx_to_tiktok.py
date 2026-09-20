@@ -98,7 +98,7 @@ def existing_units(js_src):
 def main():
     print('=== Docx PASSAGE -> tiktok.js ===')
     docx_path = prompt('File .docx: ',
-                       os.path.join(REPO, 'ebooks', 'spkBook', 'data', 'tiktok', 'file sách full tiếng anh.docx'))
+                       os.path.join(REPO, 'ebooks', 'spkBook', 'data', 'tiktok', 'file_tiktok.pdf'))
     js_path = prompt('File tiktok.js: ',
                      os.path.join(REPO, 'ebooks', 'spkBook', 'data', 'tiktok', 'tiktok.js'))
     if not os.path.isfile(docx_path):

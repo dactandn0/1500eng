@@ -1708,7 +1708,6 @@ career (n) /kəˈrɪər/ nghề nghiệp, sự nghiệp<br>\
 intensive course (n) /ɪnˈtɛnsɪv kɔrs/ khóa học cấp tốc<br>\
 commerce (n) /ˈkɑːmɜrs/ thương mại<br>\
 responsible (a) /rɪˈspɒnsəbl/ chịu trách nhiệm<br>\
-communicate (v) /kəˈmjuːnɪkeɪt/ giao tiếp<br>\
 inheritance (n) /ɪnˈhɛrɪtəns/ sự thừa kế<br>\
 fortune (n) /ˈfɔrʧən/ tài sản, vận may<br>\
 online account (n) /ˈɒnlaɪn əˈkaʊnt/ tài khoản trực tuyến<br>\

@@ -42,7 +42,7 @@ bookRadioChange = function (num, isLoadData = false) {
 	if (num===4)
 	{
 		$scope.img_root = imgRootPath + 'tiktok/img/'	
-		$scope.stories = TIKTOK_DATA;
+		$scope.stories = TIKTOK_EBOOK1_DATA;
 	}
 
 	Helper_MakeVoca_Menu_Titles($rootScope, $scope)

@@ -1,4 +1,6 @@
-// for list_noted_voca USE
+// VocaToUI: pool tu vung theo chu de (3K, IELTS 5K, 4000 x2, beginner reading, special, nail).
+// Dung o: trang Word Collection (duyet/hoc theo topic) + Quiz vocabulary (nguon boc cau hoi).
+// Gan len $rootScope.VocaToUI de cac controller con dung chung.
 var VocaToUI = WORDS_3K_DATA
 	.concat(IELTS_5K_DATA)
 	.concat(word_4000_data)
@@ -7,6 +9,8 @@ var VocaToUI = WORDS_3K_DATA
 	.concat(VOCA_SPECIAL)
 	.concat(NAIL_WORDS_DATA)
 
+// VocaForSearch: VocaToUI + cum can tra cuu (phrasal verb, BAT_QUI_TAC).
+// preProcess() tach moi dong en (<br>) thanh searchData[] -> o Search + tra dict khi click tu (getVocaFromDB).
 var VocaForSearch = VocaToUI
 	.concat(PHRASAL_VERB)
 	.concat(BAT_QUI_TAC)
@@ -14,6 +18,8 @@ var VocaForSearch = VocaToUI
 // .concat(IELTS_SYN)
 // .concat(NATIONS)
 
+// kAllStories: pool truyen/bai doc (Vol5 speaking, Englab W/R, Collins, LPTD cd1-4, BOOK4K_1).
+// Dung o: tim cau vi du chua tu (doFetchSentences/fetchSentences) cho toast + modal vi du.
 var kAllStories = SPEAKING_SAME_VOL5
 	.concat(ENGLAB_BEGIN_DATA_W)
 	.concat(ENGLAB_BEGIN_DATA_R)
@@ -23,6 +29,7 @@ var kAllStories = SPEAKING_SAME_VOL5
 	.concat(lptd_cd3_stories)
 	.concat(lptd_cd4_stories)
  	.concat(BOOK4K_1)
+ 	.concat(TIKTOK_EBOOK1_DATA)
 // .concat(bridge_cd1)
 //  .concat(bridge_read_data)
 //  .concat(complete_cd1)

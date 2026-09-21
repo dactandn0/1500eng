@@ -304,6 +304,31 @@ Nhưng sáng hôm sau, tám luống đã hoàn thành! 'Maria, chúng ta không 
 Nhưng vào buổi sáng, họ đã hoàn thành mười hàng! Mỗi ngày họ làm rất nhiều việc. Mỗi đêm, một người khác làm một lượng công việc tương đương. Trong một tuần, toàn bộ cánh đồng đã hoàn thành. 'Ngày mai tôi sẽ bán mùa màng và trả cho lãnh chúa,' Arthur nói. Nhưng sáng hôm đó, mùa màng đã biến mất. Một chiếc túi ở giữa cánh đồng. Trong đó có tiền.<br>\
 'Maria, chúng ta hãy xem ai đã giúp chúng ta làm việc.' Qua một lỗ trên tường, họ nhìn thấy một cảnh tượng buồn cười. Những chú mèo đang nhảy múa trên cánh đồng và ăn ngô! Bây giờ Arthur biết chuyện gì đã xảy ra. Những chú mèo đã làm việc vào ban đêm! Sau đó, Arthur rất tốt với những chú mèo của mình và cho chúng ăn rất nhiều ngô."
 	,voca:"blood,burn,cell,contain,correct,crop,demand,equal,feed,hole,increase, lord,owe,position,raise,responsible,sight,spot,structure,whole",
+},
+{
+	idx:"1.14",
+en:"Magical Book<br>\
+Sarah loved to read. She read novels and poems. She loved the beautiful descriptions and phrases. She loved reading work from poets and novelists. She didn't like video games or technology. She was on the basketball team, but she didn't like sports. Her parents made her play basketball. In fact, Sarah's parents made her do many things. But she didn't want to do those things. She just wanted to sit and read all day.<br>\
+One day, a small book came in the mail. It was for Sarah. The book looked very special. It was printed on sheets of gold. Sarah began to read. The outline of the story was simple. It was about a magical place. Strange things happened there. One example from the book was about a boy who could control people. In one scene, he made his friends tell funny jokes. <br>\
+Sarah loved the book. She read it all the time. Then something strange happened. The book gave Sarah a special power. She could control other people. She was like the boy in the book. During one exam, she made her friend tell silly jokes. Her friend got in trouble.<br>\
+After school, Sarah did not make a direct trip home. On the way, she went to the local store. She wanted to play more tricks on people. She caused problems. She made people fall down. She laughed and had fun.<br>\
+Finally she left and started to walk home. Then she saw something. Her basketball coach was about to walk in front of a bus. He was looking the other way. She had to stop him! She used her power. She controlled him. <br>\
+She made him stop walking. Sarah learned something that day. It was better to help people than make them suffer. So, she put a limit on how she used her power. She did not want to do bad things with it anymore. She only wanted to do good."
+},
+{
+	idx:"1.15",
+	en:"The Big Race<br>\
+A dog saw a group of animals across the road. He walked over to meet them.<br>\
+'What are you doing?' he asked them.<br>\
+'I just sold them tickets to a race between the rabbit and the turtle,' the duck responded.<br>\
+This news excited the dog. He felt fortunate that he happened to be there. 'I don’t have anything to do today,' the dog said. 'I want to buy a ticket, too.'<br>\
+The dog sat down to observe the race. The race would be extreme. It would be many kilometers in length. The rabbit and the turtle stood next to each other.<br>\
+They waited for the race to start. The dog wondered why the turtle agreed to run against the rabbit. Being fast was not a characteristic of turtles. The rabbit was going to win easily.<br>\
+Suddenly, the race began. The rabbit ran extremely quickly. The turtle walked slowly. After a minute, the rabbit looked back. He saw that the turtle was far behind him and was breathing quickly because he was so tired. The rabbit smiled and slowed to a walk.<br>\
+A minute later, the rabbit said, 'I’m winning, so I’ll take a rest.' He sat and began to consume some grass. Then, he let his eyes close. He wasn’t the winner yet. But there was no risk of him losing the race. He went to sleep.<br>\
+Hours later, a loud sound woke him. All of the animals were yelling and looking at the field. He felt fear for the first time. The turtle was almost at the finish line.<br>\
+Now, the rabbit realized his mistake. But the race was over. He gave the turtle an opportunity to win, and the turtle took it. The duck handed the turtle his prize. It was the happiest day of the turtle’s life.<br>\
+The dog was happy for the turtle. 'He isn’t fast,' the dog thought. 'But he tried his best and did something great.'"
 }
 
 

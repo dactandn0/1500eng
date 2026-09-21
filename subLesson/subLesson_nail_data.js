@@ -128,7 +128,7 @@ en: "\
 	- Controlling the thickness around the cuticle area ensures your enhancements look natural and grow out smoothly.\
 	",
 		voca: "Nail Shape,Nail Length,Nail Thickness,Almond,Coffin,Stiletto,Oval,Square,Round,Apex",
-		images: ["nail_shapes_01", "nail_shapes_02"]
+		images: ["nail_shapes_01", "nail_shapes_02", "Almond-Oval-Round"]
 	},
 {
 		title: "Nail Gel",

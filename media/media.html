@@ -1,0 +1,39 @@
+
+
+<section class="study-shell">
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='MEDIA'; studyTitle='Media Viewer'; studyDescription='Watch videos and view images.'; studyStatus='MEDIA'"></div>
+
+	<div class="media-tabs" role="tablist">
+		<button type="button" class="media-tab" ng-class="{'is-active': tab === 'video'}" ng-click="setTab('video')">
+			<i class="fa fa-play-circle" aria-hidden="true"></i> Videos ({{videos.length}})
+		</button>
+		<button type="button" class="media-tab" ng-class="{'is-active': tab === 'image'}" ng-click="setTab('image')">
+			<i class="fa fa-picture-o" aria-hidden="true"></i> Images ({{images.length}})
+		</button>
+	</div>
+
+	<div class="ytb-grid" ng-if="tab === 'video'">
+		<div class="ytb-item" ng-repeat="v in videos track by $index">
+			<div class="ytb-frame">
+				<iframe ng-src="{{trust(v.embed)}}" title="{{v.title}}"
+					frameborder="0" loading="lazy"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+			<div class="ytb-title">{{v.title}}</div>
+		</div>
+	</div>
+	<p class="word-empty" ng-if="tab === 'video' && !videos.length">Chua co video. Them link vao media/media_data.js (YTB_DATA)</p>
+
+	<div class="ytb-grid" ng-if="tab === 'image'">
+		<div class="ytb-item" ng-repeat="v in images track by $index">
+			<div class="ytb-frame ytb-frame-img">
+				<img ng-src="{{v.src}}" alt="{{v.title}}" loading="lazy" onerror="this.style.display='none'">
+			</div>
+			<div class="ytb-title">{{v.title}}</div>
+		</div>
+	</div>
+	<p class="word-empty" ng-if="tab === 'image' && !images.length">Chua co anh. Them link vao media/media_data.js (IMG_DATA)</p>
+
+</section>

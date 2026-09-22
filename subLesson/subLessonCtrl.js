@@ -1,6 +1,6 @@
 document.write('<script src="./subLesson/subLesson_data.js" type="text/javascript"></script>');
 document.write('<script src="./subLesson/subLesson_data2.js" type="text/javascript"></script>');
-document.write('<script src="./subLesson/subLesson_data3.js" type="text/javascript"></script>');
+document.write('<script src="./subLesson/subLesson_american_data.js" type="text/javascript"></script>');
 document.write('<script src="./subLesson/subLesson_nail_data.js" type="text/javascript"></script>');
 document.write('<script src="./subLesson/subLesson_texas_data.js" type="text/javascript"></script>');
 
@@ -8,7 +8,11 @@ var app = angular.module("subLessonApp", ['ngSanitize']);
 app.controller("subLessonCtrl", function($scope, $rootScope, $timeout) {
 
 	// Tat ca data file deu 2D: [{ category, content: [...] }].
-	var GROUPS2D = SUBLESSON_NAIL_DATA.concat(SUBLESSON_TEXAS_DATA).concat(SUBLESSON_DATA3).concat(SUBLESSON_DATA2).concat(SUBLESSON_DATA);
+	var GROUPS2D = SUBLESSON_NAIL_DATA
+					.concat(SUBLESSON_TEXAS_DATA)
+					.concat(SUBLESSON_AMERICAN_DATA)
+					.concat(SUBLESSON_DATA2)
+					.concat(SUBLESSON_DATA);
 	var kDATA = [];
 	GROUPS2D.forEach(function (gd) { kDATA = kDATA.concat((gd && gd.content) || []); });
 

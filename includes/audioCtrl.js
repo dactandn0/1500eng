@@ -119,7 +119,7 @@ app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, 
 // Paging cho danh sach track (includes/storyL.html) - dung chung moi trang ebook.
 // Scope ke thua: doc titles / storyIdx / fetchStory tu controller cua trang.
 app.controller('trackPagerCtrl', ['$scope', function($scope) {
-	$scope.pageSize = 24;
+	$scope.pageSize = 20;
 	$scope.trackPage = 0;
 	function total() { return ($scope.titles && $scope.titles.length) || 0; }
 	$scope.pageCount = function () {

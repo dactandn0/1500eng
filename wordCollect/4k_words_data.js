@@ -611,7 +611,7 @@ major (a) /ˈmeɪdʒər/ chính<br>\
  	en: "awful (a) tệ hại(very bad)<br>\
 \
 \
-spill (v) /spɪl/ làm tràn, làm ngập<br>\
+spill (v, n) /spɪl/ sự/vụ làm tràn, làm ngập<br>\
 \
 \
 remote (a) /rɪˈməʊt/xa, hẻo lánh, vắng vẻ<br>\

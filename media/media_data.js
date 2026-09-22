@@ -1,7 +1,7 @@
 // Danh sach video Youtube: them { title, url } vao YTB_DATA.
 // Ho tro link watch?v=, youtu.be, shorts, embed.
 const YTB_DATA = [
-	{ title: 'Sample video', url: 'https://www.youtube.com/watch?v=d1VBbJPZ9ww' },
+	{ title: 'Shape', url: 'https://www.youtube.com/watch?v=d1VBbJPZ9ww' },
 ];
 
 // Danh sach anh: them { title, src } vao IMG_DATA.

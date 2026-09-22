@@ -924,7 +924,6 @@ Liar (n) /laɪər/ Người nói dối<br>\
 Ambitious (a) /æmˈbɪʃəs/ Tham vọng<br>\
 Extrovert (n) /ˈɛk.strə.vɜːt/ Người hướng ngoại<br>\
 Introvert (n) /ˈɪn.trə.vɜːt/ Người hướng nội<br>\
-funny (a) /'fɅni/ vui tính<br>\
 honest (a) /'pnist/ thật thà<br>\
 fearless (a) /'fiǝlis/ dũng cảm<br>\
 unfriendly (a) /n'frendli/ khó gần<br>\

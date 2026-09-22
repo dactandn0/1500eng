@@ -67,7 +67,7 @@ Once the oil was removed, the birds that had been caught in the oil had to be he
 vi:"Bạn thân nhất của tôi là Katy sống gần một bãi biển cát trắng tuyệt đẹp. Bố mẹ bạn ấy đưa chúng tôi đến đó mỗi mùa hè. Nước biển sạch và mát lạnh. Chúng tôi rất thích thú với những con sóng. Năm ngoái, có một vụ tràn dầu ở bãi biển của Katy. Chúng tôi đã tình nguyện ở bãi biển để dọn sạch dầu và giúp đỡ những chú chim bị mắc kẹt trong vụ tràn dầu.<br>\
 Khi chúng tôi đến bãi biển vào ngày hôm đó, nước biển trơn trượt vì dầu và cát trắng đã chuyển sang màu đen. Cảnh tượng thật xấu xí. Lúc đầu, những người cứu hộ không cho chúng tôi lên bãi biển. Chúng tôi phải đứng quan sát từ xa. Chúng tôi theo dõi khi họ thả một chiếc phao lớn xuống nước, gọi là phao chắn. Thiết bị này giúp ngăn không cho dầu loang ra. Sau khi họ chặn được dầu loang, chúng tôi được phép vào bãi biển để giúp đỡ. Mỗi người chúng tôi được phát một chiếc chổi. Chúng tôi quét dầu thành một đống. Những người công nhân đã chở chúng đi bằng những chiếc xe tải lớn. Tất cả chúng tôi đều làm việc rất chăm chỉ vào ngày hôm đó để khôi phục lại bãi biển.<br>\
 Sau khi dầu được loại bỏ, những chú chim bị dính dầu phải được giúp đỡ. Các công nhân đã chỉ cho chúng tôi cách loại bỏ dầu khỏi cánh của chúng. Sau đó, những chú chim có thể bay đi đến nơi an toàn. Chúng tôi rất tự hào về bản thân mình vào ngày hôm đó. Chúng tôi đã giúp cứu bãi biển xinh đẹp của mình và những chú chim ghé thăm bãi biển.",
-voca:"volunteered,restore,pile,oil,spill,refreshing,remove,rubbish,tractor,destroy,rescue"
+voca:"volunteered,restore,pile,oil spill,refreshing,remove,rubbish,tractor,destroy,rescue,slick,boom,ugly,device,catch"
 },
 {unit:5,title:"The Amazing Amazon"
 ,en:"The Amazon is an amazing river. It is unique in many ways. It is the second longest river in the world. It is 6500 kilometers long. It starts up in the Andes Mountains. Its drainage basin (the area of land that collects water) covers 40 percent of South America. The Amazon River has many small rivers that supply it with water.<br>\
@@ -372,7 +372,7 @@ Sở thích sáng tạo rất phổ biến. Một số sở thích sáng tạo l
 Sưu tầm cũng rất phổ biến. Hầu hết những người sưu tầm trước đây thường mua tiền xu, tem hoặc thẻ bóng chày. Ngày nay, đồ chơi, trò chơi và mô hình xe hơi đang là xu hướng. Những người sưu tầm mua và bán đồ trên Internet. Họ cũng mua sắm trực tuyến tại các cửa hàng trên khắp thế giới.<br>\
 Tận hưởng một trải nghiệm cũng là một sở thích. Một số người nghe nhạc. Những người khác xem phim hoặc đọc sách. Nhiều người đi du lịch hoặc chơi thể thao. Giúp đỡ mọi người là một sở thích. Có những nơi bạn có thể giúp xây nhà cho các gia đình nghèo. Bạn có thể giúp nuôi người vô gia cư tại các bếp ăn từ thiện. Bạn cũng có thể dạy kèm trẻ em hoặc giúp đỡ người già.<br>\
 Sở thích là thứ được thực hiện vì mục đích vui vẻ. Với rất nhiều lựa chọn, không có lý do gì để không tận hưởng sở thích."
-	,voca:"",
+	,voca:"collecting,retire,creative,experience,collectors,trend,Jewelry,tutor,elderly"
 },
 {unit:21,
 	title:"Defense",

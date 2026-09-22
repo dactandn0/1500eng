@@ -221,6 +221,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			word = removeHtmlTags(word)
 			if (word.length >= 2) {
 				Helper_NoteAddWordToDB(word);
+				try { if (typeof SupaSync_save === 'function') SupaSync_save(word, ''); } catch (e) {}
 				if ($location.path().indexOf('vocaNoted') >= 0) {
 					VocaNotedCtrl.loadArray();
 				}
@@ -237,6 +238,31 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		$scope.IsWordSavedBefore = function(word) {
 			return Helper_IsWordSavedBefore(word);
+		}
+
+		// Nut Voca (showVi.html): bat/tat panel + scroll dung unit/story dang mo
+		$scope.toggleVocaOfEbook = function() {
+			$rootScope.bVocaOfEbook = !$rootScope.bVocaOfEbook;
+			if (!$rootScope.bVocaOfEbook) return;
+			// doi ng-show render xong roi moi scroll
+			setTimeout(function() {
+				try {
+					const groups = $rootScope.vocaEbook || [];
+					const cur = $rootScope.currentStory;
+					let idx = -1;
+					if (cur) {
+						for (let i = 0; i < groups.length; i++) {
+							if (groups[i].lesson === cur) { idx = i; break; }
+						}
+					}
+					const container = document.getElementById('VocaOfEbook');
+					if (!container) return;
+					const heads = container.querySelectorAll('.voca-ebook-group');
+					// story dang mo khong co group rieng (lesson khong co voca) -> ve dau panel
+					const target = (idx >= 0 && heads[idx]) ? heads[idx] : container;
+					target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				} catch (e) {}
+			}, 120);
 		}
 
 		$scope.searchTyping = function() {

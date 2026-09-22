@@ -311,6 +311,7 @@ decompose (v) /diː.kəmˈpəʊz/ phân hủy<br>\
 balance (n) /ˈbæl.əns/ sự cân bằng<br>\
 global warming (n) /ɡləʊ.bəl ˈwɔː.mɪŋ/ nóng lên toàn cầu<br>\
 oil slick (n) /ˈɔɪl slɪk/ dầu loang<br>\
+oil spill (n) /ˈɔɪl spɪl/ tràn dầu<br>\
 oil (n) /ɔɪl/ dầu<br>\
 ozone layer (n) /ˈəʊ.zəʊn leɪ.ər/ tầng ozon<br>\
 biodiversity (n) /baɪ.əʊ.daɪˈvɜː.sə.t i/ đa dạng sinh học<br>\
@@ -895,9 +896,13 @@ lazy (a) /'lerzi/ lười biếng <br>\
 stingy (a) /ˈstɪnʤi/ keo kiệt <br>\
 liar (n) /laɪər/ người nói dối<br>\
 ambitious (a) /æmˈbɪʃəs/ tham vọng<br>\
+broom (n) /bruːm/ chổi<br>\
+rescue (n) /ˈres.kjuː/ cứu hộ<br>\
+slick (n,a) /slɪk/ trơn, mượt<br>\
+pile (n) /paɪl/ đống<br>\
 introvert (n) /ˈɪn.trə.vɜːt/ người hướng nội<br>\
 anxiety (n) /æŋˈzaɪəti/ lo lắng<br>\
-funny (a) /'fʌni/ vui tính<br>\
+funny (a) /'fʌni/ Buồn cười, khôi hài, làm bạn phải bật cười (Humorous)<br>\
 honest (a) /'pnist/ thật thà<br>\
 fearless (a) /'fiǝlis/ dũng cảm<br>\
 friendly (a) /'frendli/ thân thiện<br>\
@@ -1690,6 +1695,7 @@ well-trained (a) /wɛl treɪnd/ được đào tạo bài bản",
 	title:"banking",
 en:"retire (v) /rɪˈtaɪər/ nghỉ hưu<br>\
 dismiss (v) /dɪsˈmɪs/ sa thải<br>\
+refreshing (adj) /rɪˈfreʃɪŋ/ dễ chịu, sảng khoái, tươi mát<br>\
 finance (n) /ˈfaɪnæns/ tài chính<br>\
 appointment (n) /əˈpɔɪntmənt/ sự bổ nhiệm, cuộc hẹn<br>\
 multinational (a) /mʌltɪˈnæʃənəl/ đa quốc gia<br>\

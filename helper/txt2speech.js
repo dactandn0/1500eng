@@ -34,6 +34,13 @@ function Text2SpeechClean(input) {
 		s = s.replace(/(<([^>]+)>)/ig, '');
 	}
 	s = s.replace(/&/g, ' and ').replace(/\s+/g, ' ').trim();
+	// Bo IPA /.../ va nhan loai tu (n) (v) (adj) (adv) (n,v)... -> thay bang dau cham (ngat cau)
+	// VD: "Blow my mind (v) /bloU mai maind/ The visual effects..."
+	//  -> "Blow my mind. The visual effects..."
+	s = s.replace(/\/[^\/]+\//g, '.');
+	s = s.replace(/\([A-Za-z]+(?:\s*[,/]\s*[A-Za-z]+)*\)/g, '.');
+	// gon dau cham + khoang trang: "word . . The" -> "word. The"
+	s = s.replace(/\s+\./g, '.').replace(/\.{2,}/g, '.').replace(/\.([A-Za-z])/g, '. $1').replace(/\s+/g, ' ').trim();
 	return s;
 }
 

@@ -309,6 +309,11 @@ Helper_FetchStory = function(idx, scope, rootScope, keySaveDb, isAlert = true) {
 	const story = scope.story;
 	rootScope.storyHasVi = story.vi && story.vi.trim().length > 0;
 	scope.story = processStory(story, isAlert);
+	// nho story dang mo de nut Voca scroll dung unit (indexCtrl.toggleVocaOfEbook)
+	try {
+		rootScope.currentStory = scope.story;
+		rootScope.currentStoryIdx = idx;
+	} catch (e) {}
 }
 
 function IsIgnoreVocaBold(boldWord, hightlightWord) {

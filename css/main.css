@@ -2188,6 +2188,7 @@ input[type="range"]:focus::-moz-range-thumb {
   margin-bottom: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(191, 151, 45, 0.08);
+  scroll-margin-top: 70px; /* navbar fixed-top che mat tieu de khi scrollIntoView */
 }
 .voca-ebook-head {
   display: flex;

@@ -57,8 +57,9 @@ const EDGE_VOICES = [
 	{ id: 'en-AU-NatashaNeural', desc: 'Natasha - Female AU' }
 ];
 const TTS_SOURCES = [
-	{ id: 'edge', desc: 'Edge neural - natural, online (recommended)' },
-	{ id: 'se', desc: 'StreamElements - natural, free, no login (Pages OK)' },
+	{ id: 'edge', desc: 'Edge neural - natural, online (local proxy/Edge browser)' },
+	{ id: 'se', desc: 'StreamElements - hien 401, tam dung' },
+	{ id: 'google', desc: 'Google - online, no login (Pages OK)' },
 	{ id: 'browser', desc: 'Browser - offline, device voice (Safari OK)' }
 ];
 const SE_VOICES = [ // AWS Polly voices qua StreamElements (free, CORS *)

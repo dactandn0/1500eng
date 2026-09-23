@@ -19,6 +19,13 @@ function Text2SpeechStop() {
 	gSeq++;
 	gLastText = '';
 	ttsSetBusy(false);
+	gQueue = [];
+	if (gAudio) {
+		try { gAudio.pause(); } catch (e) {}
+		try { gAudio.currentTime = 0; } catch (e) {}
+		try { gAudio.onended = null; gAudio.onerror = null; } catch (e) {}
+		gAudio = null;
+	}
 	try {
 		if (edgeWS) {
 			edgeWS.onopen = null; edgeWS.onclose = null;
@@ -66,12 +73,12 @@ function Text2SpeechClean(input) {
 	return s;
 }
 
-// Giu de tuong thich: 'edge' | 'se' | 'browser'. Gia tri cu -> browser.
+// Giu de tuong thich: 'edge' | 'se' | 'google' | 'browser'. Gia tri cu -> browser.
 function Text2SpeechSource() {
 	try {
 		if (typeof Helper_loadStr === 'function' && typeof Helper_TTSSourceKey !== 'undefined') {
 			const v = Helper_loadStr(Helper_TTSSourceKey, 'browser');
-			if (v === 'edge' || v === 'se' || v === 'browser') return v;
+			if (v === 'edge' || v === 'se' || v === 'google' || v === 'browser') return v;
 			try { Helper_saveDB(Helper_TTSSourceKey, 'browser'); } catch (e2) {}
 		}
 	} catch (e) {}
@@ -201,7 +208,7 @@ try {
 const EDGE_TRUSTED_TOKEN = '6A5AA1D4EAFF4E9FB37E23D68491D6F4';
 const EDGE_GEC_VERSION = '1-143.0.3650.75';
 
-function Text2SpeechResetEdgeCooldown() { EDGE_DOWN_UNTIL = 0; try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {} try { SE_DOWN_UNTIL = 0; } catch (e2) {} }
+function Text2SpeechResetEdgeCooldown() { EDGE_DOWN_UNTIL = 0; try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {} try { SE_DOWN_UNTIL = 0; } catch (e2) {} try { GOOGLE_DOWN_UNTIL = 0; } catch (e3) {} }
 function revokeEdgeUrl() {
 	if (edgeUrl) { try { URL.revokeObjectURL(edgeUrl); } catch (e) {} edgeUrl = null; }
 }
@@ -694,6 +701,112 @@ function seSpeak(text, mySeq) {
 }
 
 // =====================================================
+// Google Translate TTS (free, no key). Giong don nhung on dinh,
+// chay truc tiep tu browser -> dung duoc tren GitHub Pages.
+let GOOGLE_DOWN_UNTIL = 0;
+let gAudio = null;
+let gQueue = [];
+function Text2SpeechGoogleURL(chunk) {
+	return 'https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(chunk);
+}
+function Text2SpeechChunk(text) {
+	const MAX = 170;
+	const parts = [];
+	let cur = '';
+	const sentences = String(text).split(/(?<=[.!?])\s+|;\s*|,\s*(?=. {20,})/);
+	sentences.forEach(function (sen) {
+		sen = (sen || '').trim();
+		if (!sen) return;
+		while (sen.length > MAX) {
+			let cut = sen.lastIndexOf(' ', MAX);
+			if (cut < 40) cut = MAX;
+			parts.push(sen.slice(0, cut));
+			sen = sen.slice(cut).trim();
+		}
+		if ((cur + ' ' + sen).trim().length <= MAX) {
+			cur = (cur + ' ' + sen).trim();
+		} else {
+			if (cur) parts.push(cur);
+			cur = sen;
+		}
+	});
+	if (cur) parts.push(cur);
+	return parts.length ? parts : [text];
+}
+function googleToBrowser(mySeq, chunk, stage) {
+	const rest = gQueue.slice();
+	gQueue = [];
+	gAudio = null;
+	if (mySeq !== gSeq) return;
+	GOOGLE_DOWN_UNTIL = Date.now() + 2 * 60 * 1000;
+	try {
+		window.__gFail = stage || 'error';
+		window.__lastTtsEngine = 'browser (google ' + (stage || 'error') + ')';
+		console.warn('[TTS] Google that bai buoc ' + (stage || 'error')
+			+ ' (mo URL mp3 tren tab moi de xem code: ' + Text2SpeechGoogleURL((chunk || '').slice(0, 60)) + '). Dung browser tam.');
+	} catch (e) {}
+	try { Text2SpeechBrowser(([chunk].concat(rest)).join(' '), true); }
+	catch (e) { ttsSetBusy(false); }
+}
+function googlePlayQueue(mySeq) {
+	if (mySeq !== gSeq) return;
+	const chunk = gQueue.shift();
+	if (chunk == null) {
+		gAudio = null;
+		ttsSetBusy(false);
+		return;
+	}
+	ttsSetBusy(true);
+	const audio = new Audio();
+	gAudio = audio;
+	try { audio.referrerPolicy = 'no-referrer'; } catch (e) {} // Google 404 neu thay Referer la (localhost/github.io)
+	try { audio.playbackRate = Text2SpeechRate(); } catch (e) {}
+	let settled = false;
+	let played = false;
+	audio.onplaying = function () { played = true; try { window.__lastTtsEngine = 'google'; } catch (e) {} };
+	audio.onended = function () {
+		if (settled) return;
+		settled = true;
+		googlePlayQueue(mySeq);
+	};
+	audio.onerror = function () {
+		if (settled) return;
+		settled = true;
+		googleToBrowser(mySeq, chunk, 'error');
+	};
+	try {
+		audio.src = Text2SpeechGoogleURL(chunk);
+		const pr = audio.play();
+		if (pr && typeof pr.catch === 'function') {
+			pr.catch(function () {
+				if (settled || mySeq !== gSeq) return;
+				settled = true;
+				googleToBrowser(mySeq, chunk, 'blocked');
+			});
+		}
+		// Safari cu: play() khong tra promise. Neu that su bi chan (khong load duoc)
+		// thi rot browser; con dang load thi cho them (tranh chong tieng).
+		const stallCheck = function () {
+			if (settled || mySeq !== gSeq) return;
+			try {
+				if (!played && audio.paused && audio.currentTime === 0 && audio.readyState < 2 && audio.networkState !== 2) {
+					settled = true;
+					googleToBrowser(mySeq, chunk, 'stall');
+				} else if (!played && !settled) {
+					setTimeout(stallCheck, 4000);
+				}
+			} catch (e) {}
+		};
+		setTimeout(stallCheck, 4000);
+	} catch (e) {
+		if (!settled) {
+			settled = true;
+			googleToBrowser(mySeq, chunk, 'blocked');
+		}
+	}
+}
+
+// =====================================================
 // Entry chinh
 // =====================================================
 function Text2Speech(word, force) {
@@ -706,7 +819,7 @@ function Text2Speech(word, force) {
 	if (!force && text === gLastText) {
 		let playing = false;
 		try {
-			playing = (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) || !!edgeAudio || !!edgeWS;
+			playing = (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) || !!edgeAudio || !!edgeWS || !!gAudio || gQueue.length > 0;
 		} catch (e) {}
 		if (playing) {
 			Text2SpeechStop();
@@ -758,6 +871,16 @@ function Text2Speech(word, force) {
 			} catch (e) {}
 			Text2SpeechBrowser(text, force);
 		});
+		return;
+	}
+	if (Text2SpeechSource() === 'google') {
+		if (Date.now() < GOOGLE_DOWN_UNTIL) {
+			Text2SpeechBrowser(text, force);
+			return;
+		}
+		const mySeqG = ++gSeq;
+		gQueue = Text2SpeechChunk(text.length > 2800 ? text.slice(0, 2800) : text);
+		googlePlayQueue(mySeqG);
 		return;
 	}
 	Text2SpeechBrowser(text, force);

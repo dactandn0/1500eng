@@ -137,7 +137,7 @@ $scope.loadDB = function () {
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
 	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'browser')
-	if ($scope.ttsSource !== 'edge' && $scope.ttsSource !== 'se' && $scope.ttsSource !== 'browser')
+	if ($scope.ttsSource !== 'edge' && $scope.ttsSource !== 'se' && $scope.ttsSource !== 'google' && $scope.ttsSource !== 'browser')
 		$scope.ttsSource = 'browser'; // migrate gia tri cu
 	$scope.edgeVoice = 'en-US-AriaNeural'
 	try {

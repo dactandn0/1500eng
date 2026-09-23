@@ -17,6 +17,8 @@ function Text2SpeechIsBusy() {
 
 function Text2SpeechStop() {
 	gSeq++;
+	try { browserSeq++; } catch (e) {}
+	try { browserQueue = []; } catch (e2) {}
 	gLastText = '';
 	ttsSetBusy(false);
 	gQueue = [];
@@ -73,12 +75,12 @@ function Text2SpeechClean(input) {
 	return s;
 }
 
-// Giu de tuong thich: 'edge' | 'se' | 'google' | 'browser'. Gia tri cu -> browser.
+// Giu de tuong thich: 'edge' | 'el' | 'se' | 'google' | 'browser'. Gia tri cu -> browser.
 function Text2SpeechSource() {
 	try {
 		if (typeof Helper_loadStr === 'function' && typeof Helper_TTSSourceKey !== 'undefined') {
 			const v = Helper_loadStr(Helper_TTSSourceKey, 'browser');
-			if (v === 'edge' || v === 'se' || v === 'google' || v === 'browser') return v;
+			if (v === 'edge' || v === 'el' || v === 'se' || v === 'google' || v === 'browser') return v;
 			try { Helper_saveDB(Helper_TTSSourceKey, 'browser'); } catch (e2) {}
 		}
 	} catch (e) {}
@@ -125,6 +127,83 @@ function pickBestBrowserVoice() {
 		return best;
 	} catch (e) { return null; }
 }
+let browserQueue = [];
+let browserSeq = 0;
+// Text dai 1 utter hay bi Chrome/Safari cat ngang -> chia cau ngan, noi queue.
+function browserChunk(text) {
+	const MAX = 200;
+	const out = [];
+	const sentences = String(text).split(/(?<=[.!?])\s+|\n+/);
+	let cur = '';
+	function pushCur() { if (cur.trim()) out.push(cur.trim()); cur = ''; }
+	sentences.forEach(function (sen) {
+		sen = (sen || '').trim();
+		if (!sen) return;
+		while (sen.length > MAX) {
+			let cut = sen.lastIndexOf(' ', MAX);
+			if (cut < 40) cut = MAX;
+			const piece = (cur + ' ' + sen.slice(0, cut)).trim();
+			if (piece.length <= MAX + 50) { cur = piece; }
+			else { pushCur(); cur = sen.slice(0, cut); }
+			sen = sen.slice(cut).trim();
+		}
+		if ((cur + ' ' + sen).trim().length <= MAX) cur = (cur + ' ' + sen).trim();
+		else { pushCur(); cur = sen; }
+	});
+	pushCur();
+	return out.length ? out : [text];
+}
+function browserSetupUtter(chunk) {
+	utter.text = chunk;
+	try {
+		let bv = null;
+		const vs = browserVoicesCache || (browserVoicesCache = speechSynthesis.getVoices() || []);
+		try {
+			if (typeof Helper_loadStr === 'function' && typeof Helper_BrowserVoiceKey !== 'undefined') {
+				const uri = Helper_loadStr(Helper_BrowserVoiceKey, '');
+				if (uri && vs) {
+					for (let i = 0; i < vs.length; i++) {
+						if (vs[i] && vs[i].voiceURI === uri) { bv = vs[i]; break; }
+					}
+				}
+			}
+		} catch (e2) {}
+		if (!bv) bv = pickBestBrowserVoice();
+		if (bv) utter.voice = bv;
+	} catch (e) {}
+	try { utter.pitch = Helper_loadFloat(Helper_AudioPitchKey, 1); } catch (e) { utter.pitch = 1; }
+	try { utter.rate = Text2SpeechRate(); } catch (e) { utter.rate = 1; }
+	utter.volume = 1;
+	utter.lang = 'en-US';
+}
+function browserSpeakNext(mySeq, onDone) {
+	if (mySeq !== browserSeq) return;
+	const chunk = browserQueue.shift();
+	if (chunk == null) {
+		ttsSetBusy(false);
+		if (typeof onDone === 'function') { try { onDone(); } catch (e) {} }
+		return;
+	}
+	ttsSetBusy(true);
+	let started = false;
+	utter.onend = function () {
+		if (mySeq !== browserSeq) return;
+		browserSpeakNext(mySeq, onDone);
+	};
+	utter.onerror = function () {
+		if (mySeq !== browserSeq) return;
+		browserSpeakNext(mySeq, onDone); // chunk loi -> bo qua, doc tiep
+	};
+	try {
+		browserSetupUtter(chunk);
+		try { window.__lastTtsEngine = 'browser'; } catch (e) {}
+		speechSynthesis.speak(utter);
+		started = true;
+	} catch (e) {
+		if (mySeq !== browserSeq) return;
+		browserSpeakNext(mySeq, onDone);
+	}
+}
 function Text2SpeechBrowser(word, force, onDone) {
 	try {
 		if (typeof speechSynthesis === 'undefined') {
@@ -132,43 +211,21 @@ function Text2SpeechBrowser(word, force, onDone) {
 			if (typeof onDone === 'function') onDone();
 			return;
 		}
-		if (speechSynthesis.speaking) {
+		const busyNow = (function () {
+			try { return speechSynthesis.speaking || speechSynthesis.pending || browserQueue.length > 0; }
+			catch (e) { return false; }
+		})();
+		if (busyNow) {
+			browserSeq++;
+			browserQueue = [];
 			try { utter.onend = null; utter.onerror = null; } catch (e) {}
-			speechSynthesis.cancel();
+			try { speechSynthesis.cancel(); } catch (e) {}
 			if (!force && !onDone && word == utter.text) { ttsSetBusy(false); return; }
 		}
-		utter.text = word;
-		utter.onend = function () {
-			ttsSetBusy(false);
-			if (typeof onDone === 'function') { const f = onDone; onDone = null; try { f(); } catch (e) {} }
-		};
-		utter.onerror = function () {
-			ttsSetBusy(false);
-			if (typeof onDone === 'function') { const f = onDone; onDone = null; try { f(); } catch (e) {} }
-		};
-		try {
-			let bv = null;
-			const vs = browserVoicesCache || (browserVoicesCache = speechSynthesis.getVoices() || []);
-			try {
-				if (typeof Helper_loadStr === 'function' && typeof Helper_BrowserVoiceKey !== 'undefined') {
-					const uri = Helper_loadStr(Helper_BrowserVoiceKey, '');
-					if (uri && vs) {
-						for (let i = 0; i < vs.length; i++) {
-							if (vs[i] && vs[i].voiceURI === uri) { bv = vs[i]; break; }
-						}
-					}
-				}
-			} catch (e2) {}
-			if (!bv) bv = pickBestBrowserVoice();
-			if (bv) utter.voice = bv;
-		} catch (e) {}
-		try { utter.pitch = Helper_loadFloat(Helper_AudioPitchKey, 1); } catch (e) { utter.pitch = 1; }
-		try { utter.rate = Text2SpeechRate(); } catch (e) { utter.rate = 1; }
-		utter.volume = 1;
-		utter.lang = 'en-US';
+		browserQueue = browserChunk(word);
+		const mySeq = ++browserSeq;
 		ttsSetBusy(true);
-		try { window.__lastTtsEngine = 'browser'; } catch (e) {}
-		speechSynthesis.speak(utter);
+		browserSpeakNext(mySeq, onDone);
 	} catch (e) {
 		ttsSetBusy(false);
 		if (typeof onDone === 'function') { try { onDone(); } catch (e2) {} }
@@ -208,7 +265,7 @@ try {
 const EDGE_TRUSTED_TOKEN = '6A5AA1D4EAFF4E9FB37E23D68491D6F4';
 const EDGE_GEC_VERSION = '1-143.0.3650.75';
 
-function Text2SpeechResetEdgeCooldown() { EDGE_DOWN_UNTIL = 0; try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {} try { SE_DOWN_UNTIL = 0; } catch (e2) {} try { GOOGLE_DOWN_UNTIL = 0; } catch (e3) {} }
+function Text2SpeechResetEdgeCooldown() { EDGE_DOWN_UNTIL = 0; try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {} try { SE_DOWN_UNTIL = 0; } catch (e2) {} try { GOOGLE_DOWN_UNTIL = 0; } catch (e3) {} try { EL_DOWN_UNTIL = 0; } catch (e4) {} }
 function revokeEdgeUrl() {
 	if (edgeUrl) { try { URL.revokeObjectURL(edgeUrl); } catch (e) {} edgeUrl = null; }
 }
@@ -807,6 +864,98 @@ function googlePlayQueue(mySeq) {
 }
 
 // =====================================================
+// ElevenLabs (BYOK: key free cua nguoi dung, luu local).
+// POST api.elevenlabs.io/v1/text-to-speech/{voice_id} -> mp3.
+// Chay truc tiep tu browser -> dung duoc tren GitHub Pages + phone.
+let EL_DOWN_UNTIL = 0;
+function elKey() {
+	try {
+		if (typeof Helper_loadStr === 'function' && typeof Helper_ELKey !== 'undefined') {
+			return (Helper_loadStr(Helper_ELKey, '') || '').trim();
+		}
+	} catch (e) {}
+	return '';
+}
+function elVoice() {
+	try {
+		if (typeof Helper_loadStr === 'function' && typeof Helper_ELVoiceKey !== 'undefined') {
+			const v = Helper_loadStr(Helper_ELVoiceKey, '21m00Tcm4TlvDq8ikWAM');
+			if (v) return v;
+		}
+	} catch (e) {}
+	return '21m00Tcm4TlvDq8ikWAM';
+}
+function elChunk(text) {
+	const MAX = 900; // tiet kiem quota free
+	const out = [];
+	const sentences = String(text).split(/(?<=[.!?])\s+|\n+/);
+	let cur = '';
+	function pushCur() { if (cur.trim()) out.push(cur.trim()); cur = ''; }
+	sentences.forEach(function (sen) {
+		sen = (sen || '').trim();
+		if (!sen) return;
+		while (sen.length > MAX) {
+			let cut = sen.lastIndexOf(' ', MAX);
+			if (cut < 40) cut = MAX;
+			const piece = (cur + ' ' + sen.slice(0, cut)).trim();
+			if (piece.length <= MAX + 100) { cur = piece; }
+			else { pushCur(); cur = sen.slice(0, cut); }
+			sen = sen.slice(cut).trim();
+		}
+		if ((cur + ' ' + sen).trim().length <= MAX) cur = (cur + ' ' + sen).trim();
+		else { pushCur(); cur = sen; }
+	});
+	pushCur();
+	return out.length ? out : [text];
+}
+// Tra ve Promise<boolean>: true = dang phat, false -> fallback browser
+function elSpeak(text, mySeq) {
+	return new Promise(function (resolve) {
+		let settled = false;
+		const finish = function (v) { if (!settled) { settled = true; resolve(v); } };
+		const key = elKey();
+		try {
+			if (typeof fetch === 'undefined' || !key) { finish(false); return; }
+		} catch (e) { finish(false); return; }
+		const guard = setTimeout(function () { finish(false); }, 30000);
+		const done = function (v) { try { clearTimeout(guard); } catch (e) {} finish(v); };
+		try { window.__elFail = ''; } catch (e) {}
+		const chunks = elChunk(text.length > 4500 ? text.slice(0, 4500) : text);
+		const all = [];
+		let i = 0;
+		const next = function () {
+			if (mySeq !== gSeq) { done(false); return; }
+			if (i >= chunks.length) {
+				if (!all.length) { try { window.__elFail = 'empty'; } catch (e) {} done(false); return; }
+				edgePlayBlob(all, mySeq, done, 'el');
+				return;
+			}
+			fetch('https://api.elevenlabs.io/v1/text-to-speech/' + encodeURIComponent(elVoice()), {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json', 'xi-api-key': key, 'Accept': 'audio/mpeg' },
+				body: JSON.stringify({ text: chunks[i++], model_id: 'eleven_multilingual_v2' })
+			}).then(function (resp) {
+				if (mySeq !== gSeq) { done(false); return null; }
+				if (!resp || !resp.ok) throw new Error('el http ' + (resp && resp.status));
+				return resp.arrayBuffer();
+			}).then(function (buf) {
+				if (!buf) return;
+				if (mySeq !== gSeq) { done(false); return; }
+				if (buf.byteLength) all.push(buf);
+				next();
+			}, function (err) {
+				try {
+					const m = String((err && err.message) || '');
+					window.__elFail = m.indexOf('401') >= 0 ? 'key sai (401)' : (m.indexOf('429') >= 0 ? 'het quota (429)' : 'network');
+				} catch (e) { try { window.__elFail = 'failed'; } catch (e2) {} }
+				done(false);
+			});
+		};
+		next();
+	});
+}
+
+// =====================================================
 // Entry chinh
 // =====================================================
 function Text2Speech(word, force) {
@@ -819,7 +968,7 @@ function Text2Speech(word, force) {
 	if (!force && text === gLastText) {
 		let playing = false;
 		try {
-			playing = (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) || !!edgeAudio || !!edgeWS || !!gAudio || gQueue.length > 0;
+			playing = (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking) || !!edgeAudio || !!edgeWS || !!gAudio || gQueue.length > 0 || browserQueue.length > 0;
 		} catch (e) {}
 		if (playing) {
 			Text2SpeechStop();
@@ -881,6 +1030,31 @@ function Text2Speech(word, force) {
 		const mySeqG = ++gSeq;
 		gQueue = Text2SpeechChunk(text.length > 2800 ? text.slice(0, 2800) : text);
 		googlePlayQueue(mySeqG);
+		return;
+	}
+	if (Text2SpeechSource() === 'el') {
+		if (!elKey()) {
+			try { window.__lastTtsEngine = 'browser (chua nhap key)'; } catch (e) {}
+			try { console.warn('[TTS] Chua nhap ElevenLabs key (Setting). Dung browser tam.'); } catch (e2) {}
+			Text2SpeechBrowser(text, force);
+			return;
+		}
+		if (Date.now() < EL_DOWN_UNTIL) {
+			Text2SpeechBrowser(text, force);
+			return;
+		}
+		const mySeqEl = ++gSeq;
+		elSpeak(text, mySeqEl).then(function (ok) {
+			if (mySeqEl !== gSeq) return;
+			if (ok) return; // dang phat ElevenLabs
+			EL_DOWN_UNTIL = Date.now() + 2 * 60 * 1000;
+			try {
+				const st = window.__elFail || 'failed';
+				window.__lastTtsEngine = 'browser (el ' + st + ')';
+				console.warn('[TTS] ElevenLabs that bai (' + st + '), dung browser tam.');
+			} catch (e) {}
+			Text2SpeechBrowser(text, force);
+		});
 		return;
 	}
 	Text2SpeechBrowser(text, force);

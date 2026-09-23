@@ -21,6 +21,9 @@ $scope.EDGE_VOICES = (typeof EDGE_VOICES !== 'undefined') ? EDGE_VOICES : [{ id:
 $scope.edgeVoice = 'en-US-AriaNeural';
 $scope.SE_VOICES = (typeof SE_VOICES !== 'undefined') ? SE_VOICES : [{ id: 'Brian', desc: 'Brian' }];
 $scope.seVoice = 'Brian';
+$scope.EL_VOICES = (typeof EL_VOICES !== 'undefined') ? EL_VOICES : [{ id: '21m00Tcm4TlvDq8ikWAM', desc: 'Rachel' }];
+$scope.elVoice = '21m00Tcm4TlvDq8ikWAM';
+$scope.elKey = '';
 $scope.lastEngine = '';
 $scope.BROWSER_VOICES = [];
 $scope.browserVoiceURI = '';
@@ -39,6 +42,18 @@ $scope.setEdgeVoice = function () {
 
 $scope.setSEVoice = function () {
 	Helper_saveDB(Helper_SEVoiceKey, $scope.seVoice);
+	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
+	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
+}
+
+$scope.setELKey = function () {
+	Helper_saveDB(Helper_ELKey, ($scope.elKey || '').trim());
+	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
+	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
+}
+
+$scope.setELVoice = function () {
+	Helper_saveDB(Helper_ELVoiceKey, $scope.elVoice);
 	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
 	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
 }
@@ -137,7 +152,7 @@ $scope.loadDB = function () {
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
 	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'browser')
-	if ($scope.ttsSource !== 'edge' && $scope.ttsSource !== 'se' && $scope.ttsSource !== 'google' && $scope.ttsSource !== 'browser')
+	if ($scope.ttsSource !== 'edge' && $scope.ttsSource !== 'el' && $scope.ttsSource !== 'se' && $scope.ttsSource !== 'google' && $scope.ttsSource !== 'browser')
 		$scope.ttsSource = 'browser'; // migrate gia tri cu
 	$scope.edgeVoice = 'en-US-AriaNeural'
 	try {
@@ -148,6 +163,16 @@ $scope.loadDB = function () {
 	try {
 		if (typeof Helper_SEVoiceKey !== 'undefined')
 			$scope.seVoice = Helper_loadStr(Helper_SEVoiceKey, 'Brian')
+	} catch (e) {}
+	$scope.elVoice = '21m00Tcm4TlvDq8ikWAM'
+	try {
+		if (typeof Helper_ELVoiceKey !== 'undefined')
+			$scope.elVoice = Helper_loadStr(Helper_ELVoiceKey, '21m00Tcm4TlvDq8ikWAM')
+	} catch (e) {}
+	$scope.elKey = ''
+	try {
+		if (typeof Helper_ELKey !== 'undefined')
+			$scope.elKey = Helper_loadStr(Helper_ELKey, '')
 	} catch (e) {}
 
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)

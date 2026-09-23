@@ -48,6 +48,16 @@
 		</div>
 
 		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-key" aria-hidden="true"></i><span>ElevenLabs (key của bạn)</span><strong>{{elKey ? 'key ok' : 'chưa có key'}}</strong></div>
+			<p>Giọng natural nhất, chạy mọi nơi (Pages/phone). Lấy key free ở elevenlabs.io → dán vào đây (chỉ lưu trên máy bạn).</p>
+			<input type="password" class="form-control setting-select" ng-model="elKey" ng-change="setELKey()"
+				ng-model-options="{ debounce: 800 }" placeholder="xi-api-key..." aria-label="ElevenLabs API key" autocomplete="off">
+			<select class="setting-select mt-2" ng-model="elVoice" ng-change="setELVoice()"
+				ng-options="v.id as v.desc for v in EL_VOICES" aria-label="ElevenLabs voice"></select>
+			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
+		</div>
+
+		<div class="setting-card">
 			<div class="setting-heading"><i class="fa fa-volume-up" aria-hidden="true"></i><span>Browser voice</span></div>
 			<p>Device voice used when source is Browser (works on GitHub Pages + Safari, offline).</p>
 			<select class="setting-select" ng-model="browserVoiceURI" ng-change="setBrowserVoice()"

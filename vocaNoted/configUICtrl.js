@@ -27,32 +27,7 @@ $scope.toggleELKeyVisible = function () { $scope.elKeyVisible = !$scope.elKeyVis
 $scope.keyLinkCopied = false;
 $scope.copyKeyLink = function () {
 	// Copy link co san key de mo tren iPhone (khoi go tay)
-$scope.keyLinkCopied = false;
-$scope.elCheck = '';
-$scope.checkELKey = function () {
-	// Kiem tra key bang API user (khong ton quota): hien tier + so ky tu con lai
-	$scope.elCheck = '...';
-	try { $scope.$applyAsync(); } catch (e) {}
-	try {
-		const k = ($scope.elKey || '').trim();
-		if (!k) { $scope.elCheck = 'Chưa nhập key.'; return; }
-		fetch('https://api.elevenlabs.io/v1/user', { headers: { 'xi-api-key': k } }).then(function (r) {
-			if (!r.ok) throw new Error('HTTP ' + r.status);
-			return r.json();
-		}).then(function (d) {
-			let msg = 'Key OK.';
-			try {
-				const s = (d && d.subscription) || {};
-				msg = 'Key OK (' + (s.tier || '?') + '): đã dùng ' + (s.character_count ?? '?') + '/' + (s.character_limit ?? '?') + ' ký tự.';
-			} catch (e) {}
-			$scope.elCheck = msg;
-			try { $scope.$applyAsync(); } catch (e2) {}
-		}, function (err) {
-			$scope.elCheck = 'Key lỗi: ' + String((err && err.message) || err) + ' (401 = key sai/cũ, 402 = hết quota).';
-			try { $scope.$applyAsync(); } catch (e2) {}
-		});
-	} catch (e) { $scope.elCheck = 'Không gọi được API.'; }
-};
+	$scope.keyLinkCopied = false;
 	try {
 		if (!$scope.elKey) return;
 		const url = location.origin + location.pathname + '#!/configUI?key=' + encodeURIComponent($scope.elKey);
@@ -73,6 +48,40 @@ $scope.checkELKey = function () {
 			done();
 		}
 	} catch (e) {}
+};
+$scope.keyLinkCopied = false;
+$scope.elCheck = '';
+$scope.checkELKey = function () {
+	// console.log('checkELKey: ' + $scope.elKey);
+	// Kiem tra key bang API user (khong ton quota): hien tier + so ky tu con lai
+	$scope.elCheck = '...';
+	try { $scope.$applyAsync(); } catch (e) {}
+	try {
+		const k = ($scope.elKey || '').trim();
+		if (!k) { $scope.elCheck = 'Chưa nhập key.'; return; }
+		fetch('https://api.elevenlabs.io/v1/user', { headers: { 'xi-api-key': k } }).then(function (r) {
+			if (!r.ok) throw new Error('HTTP ' + r.status);
+			return r.json();
+		}).then(function (d) {
+			let msg = 'Key OK.';
+			try {
+				const s = (d && d.subscription) || {};
+				msg = 'Key OK (' + (s.tier || '?') + '): đã dùng ' + (s.character_count ?? '?') + '/' + (s.character_limit ?? '?') + ' ký tự.';
+			} catch (e) {}
+			$scope.elCheck = msg;
+			try { $scope.$applyAsync(); } catch (e2) {}
+			// Kiem them quyen voices de phan biet 401 thieu quyen TTS
+			try {
+				fetch('https://api.elevenlabs.io/v1/voices', { headers: { 'xi-api-key': k } }).then(function (r2) {
+					$scope.elCheck = msg + (r2.ok ? ' Voices OK.' : ' Voices HTTP ' + r2.status + ' (key thieu quyen).');
+					try { $scope.$applyAsync(); } catch (e3) {}
+				}, function () {});
+			} catch (e3) {}
+		}, function (err) {
+			$scope.elCheck = 'Key lỗi: ' + String((err && err.message) || err) + ' (401 = key sai/cũ, 402 = hết quota).';
+			try { $scope.$applyAsync(); } catch (e2) {}
+		});
+	} catch (e) { $scope.elCheck = 'Không gọi được API.'; }
 };
 $scope.lastEngine = '';
 $scope.BROWSER_VOICES = [];

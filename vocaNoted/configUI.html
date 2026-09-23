@@ -41,7 +41,7 @@
 		
 		<div class="setting-card">
 			<div class="setting-heading"><i class="fa fa-key" aria-hidden="true"></i><span>ElevenLabs (key của bạn)</span><strong>{{elKey ? 'key ok' : 'chưa có key'}}</strong></div>
-			<p>Giọng natural nhất, chạy mọi nơi (Pages/phone). Lấy key free ở elevenlabs.io → dán vào đây (chỉ lưu trên máy bạn).</p>
+			<p>Lấy key free ở elevenlabs.io</p>
 			<input type="{{elKeyVisible ? 'text' : 'password'}}" class="form-control setting-select" ng-model="elKey" ng-change="setELKey()"
 				ng-model-options="{ debounce: 800 }" placeholder="xi-api-key..." aria-label="ElevenLabs API key" autocomplete="off">
 			<button class="btn btn-sm btn-secondary mt-2" ng-click="toggleELKeyVisible()">{{elKeyVisible ? 'Hide' : 'Show'}} key</button>

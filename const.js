@@ -56,6 +56,7 @@ const EDGE_VOICES = [
 	{ id: 'en-AU-NatashaNeural', desc: 'Natasha - Female AU' }
 ];
 const TTS_SOURCES = [
+	{ id: 'edge', desc: 'Edge neural - natural, online (recommended)' },
 	{ id: 'browser', desc: 'Browser - offline, device voice (Safari OK)' }
 ];
 const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi;

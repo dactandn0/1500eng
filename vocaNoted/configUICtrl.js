@@ -15,14 +15,23 @@ $scope.toastTimeOutLong = HELPER_TOASTER_TIMEOUT_LONG_DEF
 $scope.toastTimeOutMax = HELPER_TOASTER_TIMEOUT_MAX_DEF
 $scope.TOAST_MAX_OPTIONS = (typeof TOAST_MAX_OPTIONS !== 'undefined') ? TOAST_MAX_OPTIONS : [30, 45, 60, 90, 120];
 
-$scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id: 'browser', desc: 'Browser' }];
+$scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id: 'edge', desc: 'Edge' }, { id: 'browser', desc: 'Browser' }];
 $scope.ttsSource = 'browser';
+$scope.EDGE_VOICES = (typeof EDGE_VOICES !== 'undefined') ? EDGE_VOICES : [{ id: 'en-US-AriaNeural', desc: 'Aria' }];
+$scope.edgeVoice = 'en-US-AriaNeural';
 $scope.lastEngine = '';
 $scope.BROWSER_VOICES = [];
 $scope.browserVoiceURI = '';
 
 $scope.setTtsSource = function () {
 	Helper_saveDB(Helper_TTSSourceKey, $scope.ttsSource);
+	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
+	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
+}
+
+$scope.setEdgeVoice = function () {
+	Helper_saveDB(Helper_EdgeVoiceKey, $scope.edgeVoice);
+	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
 	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
 }
 
@@ -120,8 +129,13 @@ $scope.loadDB = function () {
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
 	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'browser')
-	if ($scope.ttsSource !== 'browser')
-		$scope.ttsSource = 'browser'; // migrate google/puter/edge cu
+	if ($scope.ttsSource !== 'edge' && $scope.ttsSource !== 'browser')
+		$scope.ttsSource = 'browser'; // migrate gia tri cu
+	$scope.edgeVoice = 'en-US-AriaNeural'
+	try {
+		if (typeof Helper_EdgeVoiceKey !== 'undefined')
+			$scope.edgeVoice = Helper_loadStr(Helper_EdgeVoiceKey, 'en-US-AriaNeural')
+	} catch (e) {}
 
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 	$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)

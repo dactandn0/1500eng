@@ -37,23 +37,16 @@
 	</style>
 
 	<div class="quiz-tabs" role="tablist">
-		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'voca'}" ng-click="setMode('voca')">
-			<i class="fa fa-book" aria-hidden="true"></i> Vocabulary
-		</button>
-		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'detail'}" ng-click="setMode('detail')">
-			<i class="fa fa-headphones" aria-hidden="true"></i> Listening Detail
-		</button>
-		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'pic'}" ng-click="setMode('pic')">
-			<i class="fa fa-picture-o" aria-hidden="true"></i> Food &amp; Bugs
-		</button>
-		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'nail'}" ng-click="setMode('nail')">
-			<i class="fa fa-scissors" aria-hidden="true"></i> Nail
-		</button>
-		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'dict'}" ng-click="setMode('dict')">
-			<i class="fa fa-pencil" aria-hidden="true"></i> Dictation
-		</button>
-		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'dir'}" ng-click="setMode('dir')">
-			<i class="fa fa-compass" aria-hidden="true"></i> Directions
+		<select class="quiz-tab" ng-model="mode" ng-change="setMode(mode)" aria-label="Quiz section"
+			style="background:#fff; border:1px solid transparent; flex:2;">
+			<option value="voca">Vocabulary</option>
+			<option value="detail">Listening Detail</option>
+			<option value="pic">Food &amp; Bugs</option>
+			<option value="nail">Nail</option>
+			<option value="dir">Directions</option>
+		</select>
+		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'dict'}" ng-click="setMode('dict')" style="flex:1;">
+			<i class="fa fa-microphone" aria-hidden="true"></i> Dictation
 		</button>
 	</div>
 

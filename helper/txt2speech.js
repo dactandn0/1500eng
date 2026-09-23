@@ -782,21 +782,24 @@ function elIDBPut(key, buf) {
 }
 function elCacheKey(chunk) { return elVoice() + '|' + chunk; }
 // Lay ArrayBuffer 1 chunk: mem -> IDB -> API (roi luu cache). Chi luu khi HTTP ok.
-function elAudioFor(chunk, key) {
-	if (elMemCache.has(key)) {
+// ckey = cache key (voice|text). API key lay rieng qua elKey().
+function elAudioFor(chunk, ckey) {
+	if (elMemCache.has(ckey)) {
 		try {
-			const b = elMemCache.get(key);
+			const b = elMemCache.get(ckey);
 			if (b && b.byteLength) return Promise.resolve(b);
 		} catch (e) {}
 	}
-	return elIDBGet(key).then(function (buf) {
+	return elIDBGet(ckey).then(function (buf) {
 		if (buf && buf.byteLength) {
-			try { elMemCache.set(key, buf); } catch (e) {}
+			try { elMemCache.set(ckey, buf); } catch (e) {}
 			return buf;
 		}
+		const apiKey = elKey();
+		if (!apiKey) throw new Error('el http 401 (chua nhap key)');
 		return fetch('https://api.elevenlabs.io/v1/text-to-speech/' + encodeURIComponent(elVoice()), {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/json', 'xi-api-key': key, 'Accept': 'audio/mpeg' },
+			headers: { 'Content-Type': 'application/json', 'xi-api-key': apiKey, 'accept': 'audio/mpeg' },
 			body: JSON.stringify({ text: chunk, model_id: 'eleven_multilingual_v2' })
 		}).then(function (resp) {
 			if (!resp || !resp.ok) {
@@ -810,8 +813,8 @@ function elAudioFor(chunk, key) {
 			return resp.arrayBuffer();
 		}).then(function (b) {
 			if (b && b.byteLength) {
-				try { elMemCache.set(key, b); } catch (e) {}
-				try { elIDBPut(key, b); } catch (e2) {}
+				try { elMemCache.set(ckey, b); } catch (e) {}
+				try { elIDBPut(ckey, b); } catch (e2) {}
 			}
 			return b;
 		});

@@ -45,12 +45,13 @@
 			<input type="{{elKeyVisible ? 'text' : 'password'}}" class="form-control setting-select" ng-model="elKey" ng-change="setELKey()"
 				ng-model-options="{ debounce: 800 }" placeholder="xi-api-key..." aria-label="ElevenLabs API key" autocomplete="off">
 			<button class="btn btn-sm btn-secondary mt-2" ng-click="toggleELKeyVisible()">{{elKeyVisible ? 'Hide' : 'Show'}} key</button>
-			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-if="elKey" ng-click="copyKeyLink()">{{keyLinkCopied ? 'Copied!' : 'Copy link mang key'}}</button>
+			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-if="elKey" ng-click="copyKeyLink()">{{keyLinkCopied ? 'Copied!' : 'Copy Key'}}</button>
 			<button class="btn btn-sm btn-info mt-2 ml-2" ng-if="elKey" ng-click="checkELKey()">Check key</button>
 			<span class="ml-2" ng-if="elCheck">{{elCheck}}</span>
 			<select class="setting-select mt-2" ng-model="elVoice" ng-change="setELVoice()"
 				ng-options="v.id as v.desc for v in EL_VOICES" aria-label="ElevenLabs voice"></select>
-			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
+			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-click="loadELVoices()">{{elVoicesLoading ? 'Loading...' : 'Reload voices'}}</button>
+			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice EL</button>
 		</div>
 
 		<div class="setting-card">

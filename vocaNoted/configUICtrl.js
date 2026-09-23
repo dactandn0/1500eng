@@ -24,13 +24,52 @@ $scope.elVoice = '21m00Tcm4TlvDq8ikWAM';
 $scope.elKey = '';
 $scope.elKeyVisible = false;
 $scope.toggleELKeyVisible = function () { $scope.elKeyVisible = !$scope.elKeyVisible; };
+$scope.elVoicesLoading = false;
+$scope.loadELVoices = function () {
+	// Tai danh sach giong that tu API (ID cung co the bi doi/xoa) thay vi list cung
+	const k = ($scope.elKey || '').trim();
+	if (!k || typeof fetch === 'undefined') return;
+	$scope.elVoicesLoading = true;
+	fetch('https://api.elevenlabs.io/v1/voices', { headers: { 'xi-api-key': k } }).then(function (r) {
+		if (!r.ok) throw new Error('HTTP ' + r.status);
+		return r.json();
+	}).then(function (d) {
+		const vs = (d && d.voices) || [];
+		if (vs.length) {
+			$scope.EL_VOICES = vs.map(function (v) {
+				let desc = v.name || v.voice_id;
+				const labels = v.labels || {};
+				const bits = [];
+				if (labels.gender) bits.push(labels.gender);
+				if (labels.accent) bits.push(labels.accent);
+				else if (labels.language) bits.push(labels.language);
+				if (bits.length) desc += ' - ' + bits.join(' ');
+				return { id: v.voice_id, desc: desc };
+			});
+			let keep = false;
+			for (let i = 0; i < $scope.EL_VOICES.length; i++) {
+				if ($scope.EL_VOICES[i].id === $scope.elVoice) { keep = true; break; }
+			}
+			if (!keep) {
+				$scope.elVoice = $scope.EL_VOICES[0].id;
+				try { Helper_saveDB(Helper_ELVoiceKey, $scope.elVoice); } catch (e) {}
+			}
+		}
+		$scope.elVoicesLoading = false;
+		try { $scope.$applyAsync(); } catch (e2) {}
+	}, function () {
+		$scope.elVoicesLoading = false;
+		try { $scope.$applyAsync(); } catch (e2) {}
+	});
+};
 $scope.keyLinkCopied = false;
 $scope.copyKeyLink = function () {
 	// Copy link co san key de mo tren iPhone (khoi go tay)
 	$scope.keyLinkCopied = false;
 	try {
 		if (!$scope.elKey) return;
-		const url = location.origin + location.pathname + '#!/configUI?key=' + encodeURIComponent($scope.elKey);
+		//const url = location.origin + location.pathname + '#!/configUI?key=' + encodeURIComponent($scope.elKey);
+		const url = $scope.elKey;
 		const done = function () {
 			$scope.keyLinkCopied = true;
 			try { $scope.$applyAsync(); } catch (e) {}
@@ -113,7 +152,7 @@ $scope.setELVoice = function () {
 
 $scope.speechTest = function () {
 	// force=true: nut Test cung 1 cau bam lai la replay, khong toggle-stop.
-	try { Text2Speech('Hello, how are you today? I love learning English.', true); } catch (e) {}
+	try { Text2Speech('I love English.', true); } catch (e) {}
 	$scope.lastEngine = '...';
 	try {
 		setTimeout(function () {
@@ -222,6 +261,7 @@ $scope.loadDB = function () {
 		if (typeof Helper_ELKey !== 'undefined')
 			$scope.elKey = Helper_loadStr(Helper_ELKey, '')
 	} catch (e) {}
+	if ($scope.elKey) { try { $scope.loadELVoices(); } catch (e) {} }
 
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 	$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)

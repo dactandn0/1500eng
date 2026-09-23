@@ -24,6 +24,29 @@ $scope.elVoice = '21m00Tcm4TlvDq8ikWAM';
 $scope.elKey = '';
 $scope.elKeyVisible = false;
 $scope.toggleELKeyVisible = function () { $scope.elKeyVisible = !$scope.elKeyVisible; };
+$scope.selectAllKey = function (ev) {
+	// Bam vao o key la boi den het de paste de
+	try { if (ev && ev.target && ev.target.select) ev.target.select(); } catch (e) {}
+};
+$scope.pasteKey = function () {
+	try {
+		if (navigator.clipboard && navigator.clipboard.readText) {
+			navigator.clipboard.readText().then(function (t) {
+				$scope.elKey = (t || '').trim();
+				Helper_saveDB(Helper_ELKey, $scope.elKey);
+				try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
+				try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e2) {}
+				try { $scope.$applyAsync(); } catch (e3) {}
+			}, function () {
+				$scope.elCheck = 'Không đọc được clipboard (trình duyệt chặn). Bấm vào ô rồi dán tay (Ctrl+V).';
+				try { $scope.$applyAsync(); } catch (e) {}
+			});
+		} else {
+			$scope.elCheck = 'Trình duyệt không hỗ trợ đọc clipboard. Bấm vào ô rồi dán tay (Ctrl+V).';
+			try { $scope.$applyAsync(); } catch (e) {}
+		}
+	} catch (e) {}
+};
 $scope.elVoicesLoading = false;
 $scope.loadELVoices = function () {
 	// Tai danh sach giong that tu API (ID cung co the bi doi/xoa) thay vi list cung

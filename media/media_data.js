@@ -8,11 +8,13 @@ const YTB_DATA = [
 // - Chi ten file (png/jpeg...): tu hieu media/images/, vd 'pic1.png'
 // - Hoac duong dan day du / link http(s).
 const IMG_DATA = [
-	{ title: 'HangLe SonGel', src: 'HangLe_SonGel.jpg' },
 	{ title: 'HangLe SonGel01', src: 'HangLe_SonGel01.jpg' },
 	{ title: 'HangLe Shape', src: 'HangLe_Shape.jpg' },
 	{ title: 'Gel', src: 'GelPaint.jpg' },
 	{ title: 'shape', src: 'shape.jpg' },
 	{ title: 'nailshape french', src: 'nailshape_french.jpg' },
 	{ title: 'oval almond', src: 'oval_almond.jpg' },
+	{ title: 'BaseTop', src: 'BaseTop.jpg' },
+	{ title: 'HangLe SonGel00', src: 'HangLe_SonGel00.jpg' },
+	{ title: 'SonGel error 1', src: 'SonGel_error_1.jpg' },
 ];

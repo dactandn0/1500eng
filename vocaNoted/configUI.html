@@ -44,8 +44,9 @@
 			<p>Lấy key free ở elevenlabs.io</p>
 			<p><small><i>Key cần quyền: User: Access, Voices: Read (+ text_to_speech để đọc).</i></small></p>
 			<input type="{{elKeyVisible ? 'text' : 'password'}}" class="form-control setting-select" ng-model="elKey" ng-change="setELKey()"
-				ng-model-options="{ debounce: 800 }" placeholder="xi-api-key..." aria-label="ElevenLabs API key" autocomplete="off">
+				ng-model-options="{ debounce: 800 }" ng-click="selectAllKey($event)" placeholder="xi-api-key..." aria-label="ElevenLabs API key" autocomplete="off">
 			<button class="btn btn-sm btn-secondary mt-2" ng-click="toggleELKeyVisible()">{{elKeyVisible ? 'Hide' : 'Show'}} key</button>
+			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-click="pasteKey()">Paste</button>
 			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-if="elKey" ng-click="copyKeyLink()">{{keyLinkCopied ? 'Copied!' : 'Copy Key'}}</button>
 			<button class="btn btn-sm btn-info mt-2 ml-2" ng-if="elKey" ng-click="checkELKey()">Check key</button>
 			<span class="ml-2" ng-if="elCheck">{{elCheck}}</span>

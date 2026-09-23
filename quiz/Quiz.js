@@ -32,7 +32,7 @@ function qUnique(list) {
 	return out;
 }
 
-$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic' | 'dir' | 'nail' | 'dict'
+$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic' | 'dir' | 'nail' | 'dict' | 'speak'
 $scope.setMode = function (m) {
 	$scope.mode = m;
 	try { Text2SpeechStop(); } catch (e) {}
@@ -2283,30 +2283,15 @@ $scope.nextDict = function () {
 };
 $scope.retryWrongDict = function () { $scope.startDict(true); };
 
-// ---- Mic: nhan giong free bang SpeechRecognition cua trinh duyet (khong Puter, khong ton credit) ----
+// ---- Mic chung (free, SpeechRecognition trinh duyet): d = state {micState,heard,hearScore,hearErr,current{words}} ----
 let dictSR = null;
-function dictScoreMatch(heard, cw) {
-	if (!cw || !cw.length) return -1;
-	const uw = String(heard || '').split(/\s+/).map(dictNormW).filter(function (w) { return w; });
-	if (!uw.length) return 0;
-	let i = 0, hit = 0;
-	for (let j = 0; j < uw.length && i < cw.length; j++) {
-		if (uw[j] === cw[i]) { hit++; i++; }
-		else if (i + 1 < cw.length && uw[j] === cw[i + 1]) { i += 2; hit++; } // AI nghe sot 1 tu
-	}
-	return Math.round(hit / cw.length * 100);
-}
-$scope.dictMic = function (ev) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	const d = $scope.dict;
-	if (!d.current) return;
+function micListen(d, isCurrent, onHeard) {
 	const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 	if (!SR) {
 		d.hearErr = 'Trình duyệt không hỗ trợ nhận giọng nói free. Dùng Chrome/Edge hoặc Safari mới.';
 		return;
 	}
 	if (d.micState === 'rec') { try { if (dictSR) dictSR.stop(); } catch (e) {} return; }
-	const target = d.current;
 	d.hearErr = '';
 	d.heard = '';
 	d.hearScore = -1;
@@ -2325,18 +2310,19 @@ $scope.dictMic = function (ev) {
 			const txt = (e.results && e.results[0] && e.results[0][0] && e.results[0][0].transcript) || '';
 			gotResult = true;
 			$timeout(function () {
-				if ($scope.dict.current !== target) return;
+				if (!isCurrent()) return;
 				d.heard = txt || '';
-				d.hearScore = dictScoreMatch(d.heard, target.words);
+				d.hearScore = dictScoreMatch(d.heard, d.current ? d.current.words : []);
 				d.micState = '';
 				if (!d.heard) d.hearErr = 'AI không nghe rõ. Bấm mic nói lại.';
+				else if (typeof onHeard === 'function') { try { onHeard(d.heard, d.hearScore); } catch (e2) {} }
 			});
 		} catch (err) {}
 	};
 	rec.onerror = function (e) {
 		const code = (e && e.error) || '';
 		$timeout(function () {
-			if ($scope.dict.current !== target) return;
+			if (!isCurrent()) return;
 			d.micState = '';
 			if (code === 'not-allowed' || code === 'service-not-allowed')
 				d.hearErr = 'Bị từ chối quyền mic. Cho phép mic rồi thử lại.';
@@ -2348,13 +2334,136 @@ $scope.dictMic = function (ev) {
 	};
 	rec.onend = function () {
 		$timeout(function () {
-			if ($scope.dict.current !== target) return;
+			if (!isCurrent()) return;
 			if (d.micState === 'rec' && !gotResult) d.micState = '';
 		});
 	};
 	try { rec.start(); } catch (e) { d.micState = ''; d.hearErr = 'Không mở được mic.'; return; }
 	setTimeout(function () { try { if (d.micState === 'rec') rec.stop(); } catch (e) {} }, 12000);
+}
+function dictScoreMatch(heard, cw) {
+	if (!cw || !cw.length) return -1;
+	const uw = String(heard || '').split(/\s+/).map(dictNormW).filter(function (w) { return w; });
+	if (!uw.length) return 0;
+	let i = 0, hit = 0;
+	for (let j = 0; j < uw.length && i < cw.length; j++) {
+		if (uw[j] === cw[i]) { hit++; i++; }
+		else if (i + 1 < cw.length && uw[j] === cw[i + 1]) { i += 2; hit++; } // AI nghe sot 1 tu
+	}
+	return Math.round(hit / cw.length * 100);
+}
+// (Mic cua Dictation da tach sang tab Speaking - $scope.speakMic)
+
+
+// =====================================================
+// SECTION 7: Speaking - nhin cau, doc to, AI nghe va cham %.
+// >=70% tinh dung (streak/score), duoi thi vao list on lai.
+// =====================================================
+const SPEAK_ROUND_SIZE = 10;
+const SPEAK_PASS_PCT = 70;
+
+function speakObj(text) {
+	const raw = String(text).split(/\s+/);
+	return { text: text, raw: raw, words: raw.map(dictNormW) };
+}
+
+$scope.speak = {
+	items: [],
+	index: 0,
+	current: null,
+	translated: '',
+	micState: '',
+	heard: '',
+	hearScore: -1,
+	hearErr: '',
+	scored: false,
+	score: 0,
+	streak: 0,
+	bestStreak: 0,
+	wrong: [],
+	finished: false
 };
+
+$scope.startSpeak = function (wrongOnly, noSpeak) {
+	try { Text2SpeechStop(); } catch (e) {}
+	let pool;
+	if (wrongOnly && $scope.speak.wrong.length) {
+		pool = $scope.speak.wrong.slice();
+	} else {
+		pool = dictBuildPool();
+	}
+	$scope.speak.items = qShuffle(pool.slice()).slice(0, SPEAK_ROUND_SIZE);
+	$scope.speak.index = 0;
+	$scope.speak.score = 0;
+	$scope.speak.streak = 0;
+	$scope.speak.bestStreak = 0;
+	$scope.speak.wrong = [];
+	$scope.speak.finished = !$scope.speak.items.length;
+	$scope.buildSpeakQuestion(!noSpeak);
+};
+
+$scope.buildSpeakQuestion = function (autoSpeak) {
+	const text = $scope.speak.items[$scope.speak.index];
+	if (!text) { $scope.speak.finished = true; return; }
+	$scope.speak.current = speakObj(text);
+	$scope.speak.translated = '';
+	$scope.speak.micState = '';
+	$scope.speak.heard = '';
+	$scope.speak.hearScore = -1;
+	$scope.speak.hearErr = '';
+	$scope.speak.scored = false;
+	try { if (dictSR) dictSR.abort(); } catch (e) {}
+	try { dictSR = null; } catch (e) {}
+	// nghia Viet + doc mau
+	try {
+		dictFetchVi(text).then(function (vi) {
+			$timeout(function () {
+				if (!$scope.speak.current || $scope.speak.current.text !== text) return;
+				$scope.speak.translated = vi || '';
+			});
+		});
+	} catch (e) {}
+	if (autoSpeak) {
+		$timeout(function () { $scope.speakPlay(null, true); }, 350);
+	}
+};
+
+$scope.speakPlay = function (ev, isAuto) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	if (!$scope.speak.current) return;
+	if (!isAuto && ttsIsBusy()) return;
+	try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)($scope.speak.current.text); } catch (e) {}
+};
+
+$scope.speakMic = function (ev) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	const d = $scope.speak;
+	if (!d.current) return;
+	const target = d.current;
+	micListen(d, function () { return $scope.speak.current === target; }, function (txt, pct) {
+		if (d.scored) return;
+		d.scored = true;
+		if (pct >= SPEAK_PASS_PCT) {
+			d.score += 1;
+			d.streak += 1;
+			if (d.streak > d.bestStreak) d.bestStreak = d.streak;
+		} else {
+			d.streak = 0;
+			d.wrong.push(target.text);
+		}
+	});
+};
+
+$scope.nextSpeak = function () {
+	$scope.speak.index += 1;
+	if ($scope.speak.index >= $scope.speak.items.length) {
+		$scope.speak.current = null;
+		$scope.speak.finished = true;
+	} else {
+		$scope.buildSpeakQuestion(true);
+	}
+};
+$scope.retryWrongSpeak = function () { $scope.startSpeak(true); };
 
 // init (khong tu phat tieng khi vua mo trang)
 try { quizApiPrefetch(); } catch (e) {}
@@ -2364,6 +2473,7 @@ $scope.startPic(false);
 $scope.startDir(false, true);
 try { $scope.startNail(); } catch (e) {}
 try { $scope.startDict(false, true); } catch (e) {}
+try { $scope.startSpeak(false, true); } catch (e) {}
 try { dirEnsureOsm(6); } catch (e) {}
 
 });

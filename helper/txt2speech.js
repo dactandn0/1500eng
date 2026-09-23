@@ -66,12 +66,12 @@ function Text2SpeechClean(input) {
 	return s;
 }
 
-// Giu de tuong thich: 'edge' (neural) | 'browser' (offline). Gia tri cu -> browser.
+// Giu de tuong thich: 'edge' | 'se' | 'browser'. Gia tri cu -> browser.
 function Text2SpeechSource() {
 	try {
 		if (typeof Helper_loadStr === 'function' && typeof Helper_TTSSourceKey !== 'undefined') {
 			const v = Helper_loadStr(Helper_TTSSourceKey, 'browser');
-			if (v === 'edge' || v === 'browser') return v;
+			if (v === 'edge' || v === 'se' || v === 'browser') return v;
 			try { Helper_saveDB(Helper_TTSSourceKey, 'browser'); } catch (e2) {}
 		}
 	} catch (e) {}
@@ -177,10 +177,31 @@ let edgeAudio = null;
 let edgeUrl = null;
 let edgeWS = null;
 let EDGE_DOWN_UNTIL = 0; // Edge loi -> nghi 2 phut, dung browser
+// iOS Safari: chi cho phat am trong user-gesture -> mo khoa AudioContext san,
+// audio fetch ve sau (mat gesture) thi phat qua WebAudio thay vi <audio>.
+let ttsCtx = null;
+function ttsEnsureCtx() {
+	try {
+		if (!ttsCtx) {
+			const AC = window.AudioContext || window.webkitAudioContext;
+			if (AC) ttsCtx = new AC();
+		}
+		if (ttsCtx && ttsCtx.state === 'suspended') {
+			const p = ttsCtx.resume();
+			if (p && typeof p.catch === 'function') p.catch(function () {});
+		}
+	} catch (e) {}
+	return ttsCtx;
+}
+try {
+	['pointerdown', 'touchend', 'click', 'keydown'].forEach(function (ev) {
+		document.addEventListener(ev, ttsEnsureCtx, { passive: true });
+	});
+} catch (e) {}
 const EDGE_TRUSTED_TOKEN = '6A5AA1D4EAFF4E9FB37E23D68491D6F4';
 const EDGE_GEC_VERSION = '1-143.0.3650.75';
 
-function Text2SpeechResetEdgeCooldown() { EDGE_DOWN_UNTIL = 0; try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {} }
+function Text2SpeechResetEdgeCooldown() { EDGE_DOWN_UNTIL = 0; try { EDGE_PROXY_DOWN_UNTIL = 0; } catch (e) {} try { SE_DOWN_UNTIL = 0; } catch (e2) {} }
 function revokeEdgeUrl() {
 	if (edgeUrl) { try { URL.revokeObjectURL(edgeUrl); } catch (e) {} edgeUrl = null; }
 }
@@ -364,9 +385,24 @@ function edgeOneTurn(ws, ssml) {
 		} catch (e) { done = true; resolved = true; clearTimeout(timer); reject(e); }
 	});
 }
-function edgePlayBlob(parts, mySeq, done) {
+function edgePlayBlob(parts, mySeq, done, tag) {
 	let finished = false;
 	const ok = function (v) { if (!finished) { finished = true; done(v); } };
+	// Safari chan <audio>.play() sau fetch async -> decode phat qua WebAudio
+	const webFallback = function () {
+		try {
+			const bufs = [];
+			let total = 0;
+			for (let i = 0; i < parts.length; i++) {
+				if (parts[i] instanceof ArrayBuffer) { bufs.push(new Uint8Array(parts[i])); total += parts[i].byteLength; }
+			}
+			if (!total) { ok(false); return; }
+			const cat = new Uint8Array(total);
+			let off = 0;
+			bufs.forEach(function (u) { cat.set(u, off); off += u.length; });
+			edgeDecodePlay(cat.buffer, ok);
+		} catch (e) { ok(false); }
+	};
 	try {
 		const blob = new Blob(parts, { type: 'audio/mpeg' });
 		revokeEdgeUrl();
@@ -379,20 +415,77 @@ function edgePlayBlob(parts, mySeq, done) {
 		};
 		audio.onerror = function () {
 			if (audio !== edgeAudio) return;
-			edgeAudio = null; revokeEdgeUrl(); ok(false);
+			edgeAudio = null; revokeEdgeUrl(); webFallback();
 		};
 		try { audio.playbackRate = 1; } catch (e) {}
 		audio.src = edgeUrl;
-		audio.onplaying = function () { try { window.__lastTtsEngine = 'edge'; } catch (e) {} ok(true); };
-		const pr = audio.play();
-		if (pr && typeof pr.catch === 'function') {
-			pr.catch(function () {
-				if (audio !== edgeAudio) return;
-				edgeAudio = null; revokeEdgeUrl(); ok(false);
-			});
+		audio.onplaying = function () { try { window.__lastTtsEngine = tag || 'edge'; } catch (e) {} ok(true); };
+		try {
+			const pr = audio.play();
+			if (pr && typeof pr.catch === 'function') {
+				pr.catch(function () {
+					if (audio !== edgeAudio) return;
+					edgeAudio = null; revokeEdgeUrl(); webFallback();
+				});
+			}
+		} catch (e) {
+			try { edgeAudio = null; revokeEdgeUrl(); } catch (e2) {}
+			webFallback();
 		}
 		setTimeout(function () { ok(true); }, 2000);
 	} catch (e) { ok(false); }
+}
+// Phat ArrayBuffer mp3 qua WebAudio (fallback khi Safari chan <audio>)
+function edgeDecodePlay(ab, done) {
+	let finished = false;
+	const ok = function (v) { if (!finished) { finished = true; done(v); } };
+	try {
+		const ctx = ttsEnsureCtx();
+		if (!ctx || typeof ctx.decodeAudioData !== 'function') { ok(false); return; }
+		const playBuf = function (audioBuf) {
+			try {
+				const src = ctx.createBufferSource();
+				src.buffer = audioBuf;
+				src.connect(ctx.destination);
+				src.onended = function () {
+					try { if (edgeAudio && edgeAudio._wa) edgeAudio = null; } catch (e2) {}
+					ttsSetBusy(false);
+				};
+				ttsSetBusy(true);
+				src.start(0);
+				try {
+					edgeAudio = { _wa: true, pause: function () { try { src.stop(); } catch (e2) {} try { edgeAudio = null; } catch (e3) {} ttsSetBusy(false); } };
+				} catch (e2) {}
+				try { window.__lastTtsEngine = 'edge(webaudio)'; } catch (e3) {}
+				ok(true);
+			} catch (e) { ok(false); }
+		};
+		let buf = ab;
+		try { buf = ab.slice(0); } catch (e) {}
+		try {
+			const p = ctx.decodeAudioData(buf);
+			if (p && typeof p.then === 'function') p.then(playBuf, function () { ok(false); });
+			else ok(false);
+		} catch (e) {
+			// Safari cu: dang callback
+			try { ctx.decodeAudioData(buf, playBuf, function () { ok(false); }); }
+			catch (e2) { ok(false); }
+		}
+	} catch (e) { ok(false); }
+}
+function blobToArrayBuffer(blob) {
+	return new Promise(function (resolve, reject) {
+		try {
+			if (blob && typeof blob.arrayBuffer === 'function') {
+				blob.arrayBuffer().then(resolve, reject);
+				return;
+			}
+			const fr = new FileReader();
+			fr.onload = function () { resolve(fr.result); };
+			fr.onerror = function () { reject(new Error('blob read')); };
+			fr.readAsArrayBuffer(blob);
+		} catch (e) { reject(e); }
+	});
 }
 // =====================================================
 // Edge qua proxy local (python edge_proxy.py -> /api/edge-tts).
@@ -444,38 +537,12 @@ function edgeViaProxy(text, mySeq) {
 					if (mySeq !== gSeq) { finish(false); return; }
 					if (!blob.size) { EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000; finish(false); return; }
 					try { clearTimeout(timer); } catch (e) {}
-					let finished = false;
-					const ok = function (v) { if (!finished) { finished = true; finish(v); } };
-					try {
-						revokeEdgeUrl();
-						edgeUrl = URL.createObjectURL(blob);
-						const audio = new Audio();
-						edgeAudio = audio;
-						audio.onended = function () {
-							if (audio !== edgeAudio) return;
-							edgeAudio = null; revokeEdgeUrl(); ttsSetBusy(false);
-						};
-						audio.onerror = function () {
-							if (audio !== edgeAudio) return;
-							edgeAudio = null; revokeEdgeUrl(); ok(false);
-						};
-						try { audio.playbackRate = 1; } catch (e) {}
-						audio.src = edgeUrl;
-						audio.onplaying = function () { try { window.__lastTtsEngine = 'edge(proxy)'; } catch (e) {} ok(true); };
-						try {
-							const pr = audio.play();
-							if (pr && typeof pr.catch === 'function') {
-								pr.catch(function () {
-									if (audio !== edgeAudio) return;
-									edgeAudio = null; revokeEdgeUrl(); ok(false);
-								});
-							}
-						} catch (e) {
-							try { edgeAudio = null; revokeEdgeUrl(); } catch (e2) {}
-							ok(false);
-						}
-						setTimeout(function () { ok(true); }, 2000);
-					} catch (e) { ok(false); }
+					// Dua ve ArrayBuffer roi phat chung 1 duong (co WebAudio fallback cho Safari)
+					blobToArrayBuffer(blob).then(function (ab) {
+						if (mySeq !== gSeq) { finish(false); return; }
+						if (!ab || !ab.byteLength) { finish(false); return; }
+						edgePlayBlob([ab], mySeq, finish);
+					}, function () { finish(false); });
 				} catch (e) {
 					try { clearTimeout(timer); } catch (e2) {}
 					EDGE_PROXY_DOWN_UNTIL = Date.now() + 60 * 1000;
@@ -544,11 +611,86 @@ function edgeSpeak(text, mySeq) {
 }
 
 // =====================================================
+// StreamElements TTS (free, khong key, CORS *).
+// Chay truc tiep tu browser -> dung duoc tren GitHub Pages (tinh).
+// API: GET https://api.streamelements.com/kappa/v2/speech?voice=Brian&text=...
+let SE_DOWN_UNTIL = 0;
+function seVoice() {
+	try {
+		if (typeof Helper_loadStr === 'function' && typeof Helper_SEVoiceKey !== 'undefined') {
+			const v = Helper_loadStr(Helper_SEVoiceKey, 'Brian');
+			if (v) return v;
+		}
+	} catch (e) {}
+	return 'Brian';
+}
+function seChunk(text) {
+	const MAX = 300; // giu URL ngan
+	const out = [];
+	const sentences = String(text).split(/(?<=[.!?])\s+|\n+/);
+	let cur = '';
+	function pushCur() { if (cur.trim()) out.push(cur.trim()); cur = ''; }
+	sentences.forEach(function (sen) {
+		sen = (sen || '').trim();
+		if (!sen) return;
+		while (sen.length > MAX) {
+			let cut = sen.lastIndexOf(' ', MAX);
+			if (cut < 40) cut = MAX;
+			const piece = (cur + ' ' + sen.slice(0, cut)).trim();
+			if (piece.length <= MAX + 100) { cur = piece; }
+			else { pushCur(); cur = sen.slice(0, cut); }
+			sen = sen.slice(cut).trim();
+		}
+		if ((cur + ' ' + sen).trim().length <= MAX) cur = (cur + ' ' + sen).trim();
+		else { pushCur(); cur = sen; }
+	});
+	pushCur();
+	return out.length ? out : [text];
+}
+// Tra ve Promise<boolean>: true = dang phat, false -> fallback browser
+function seSpeak(text, mySeq) {
+	return new Promise(function (resolve) {
+		let settled = false;
+		const finish = function (v) { if (!settled) { settled = true; resolve(v); } };
+		try {
+			if (typeof fetch === 'undefined') { finish(false); return; }
+		} catch (e) { finish(false); return; }
+		const guard = setTimeout(function () { finish(false); }, 25000);
+		const done = function (v) { try { clearTimeout(guard); } catch (e) {} finish(v); };
+		const chunks = seChunk(text.length > 3000 ? text.slice(0, 3000) : text);
+		const all = [];
+		let i = 0;
+		const next = function () {
+			if (mySeq !== gSeq) { done(false); return; }
+			if (i >= chunks.length) {
+				if (!all.length) { done(false); return; }
+				edgePlayBlob(all, mySeq, done, 'se');
+				return;
+			}
+			const url = 'https://api.streamelements.com/kappa/v2/speech?voice='
+				+ encodeURIComponent(seVoice()) + '&text=' + encodeURIComponent(chunks[i++]);
+			fetch(url).then(function (resp) {
+				if (mySeq !== gSeq) { done(false); return null; }
+				if (!resp || !resp.ok) throw new Error('se http ' + (resp && resp.status));
+				return resp.arrayBuffer();
+			}).then(function (buf) {
+				if (!buf) return;
+				if (mySeq !== gSeq) { done(false); return; }
+				if (buf.byteLength) all.push(buf);
+				next();
+			}, function () { done(false); });
+		};
+		next();
+	});
+}
+
+// =====================================================
 // Entry chinh
 // =====================================================
 function Text2Speech(word, force) {
 	const text = Text2SpeechClean(word);
 	if (!text) return;
+	try { ttsEnsureCtx(); } catch (e) {} // iOS: mo khoa audio ngay trong gesture
 
 	// Click lai cung 1 cau dang doc -> dung (giu hanh vi cu).
 	// force=true (nut loa Quiz): bam lai la replay tu dau, khong toggle-stop.
@@ -587,6 +729,20 @@ function Text2Speech(word, force) {
 				} catch (e) {}
 				Text2SpeechBrowser(text, force);
 			});
+		});
+		return;
+	}
+	if (Text2SpeechSource() === 'se') {
+		if (Date.now() < SE_DOWN_UNTIL) {
+			Text2SpeechBrowser(text, force);
+			return;
+		}
+		const mySeqSe = ++gSeq;
+		seSpeak(text, mySeqSe).then(function (ok) {
+			if (mySeqSe !== gSeq) return;
+			if (ok) return; // dang phat StreamElements
+			SE_DOWN_UNTIL = Date.now() + 2 * 60 * 1000;
+			Text2SpeechBrowser(text, force);
 		});
 		return;
 	}

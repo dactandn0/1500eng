@@ -45,6 +45,7 @@ const Helper_BrowserVoiceKey = 'BrowserVoiceURI'; // voiceURI cua speechSynthesi
 const Helper_EdgeProxyKey = 'EdgeProxyURL'; // vd https://xxx.ngrok-free.app (trong khi dung GitHub Pages)
 const Helper_TTSSourceKey = 'TTSSource'; // 'browser' (offline, Safari/Desktop)
 const Helper_EdgeVoiceKey = 'EdgeVoice';
+const Helper_SEVoiceKey = 'SEVoice';
 const EDGE_VOICES = [
 	{ id: 'en-US-AriaNeural', desc: 'Aria - Female US' },
 	{ id: 'en-US-JennyNeural', desc: 'Jenny - Female US' },
@@ -57,7 +58,18 @@ const EDGE_VOICES = [
 ];
 const TTS_SOURCES = [
 	{ id: 'edge', desc: 'Edge neural - natural, online (recommended)' },
+	{ id: 'se', desc: 'StreamElements - natural, free, no login (Pages OK)' },
 	{ id: 'browser', desc: 'Browser - offline, device voice (Safari OK)' }
+];
+const SE_VOICES = [ // AWS Polly voices qua StreamElements (free, CORS *)
+	{ id: 'Brian', desc: 'Brian - Male US' },
+	{ id: 'Joanna', desc: 'Joanna - Female US' },
+	{ id: 'Matthew', desc: 'Matthew - Male US' },
+	{ id: 'Ivy', desc: 'Ivy - Female US (young)' },
+	{ id: 'Kendra', desc: 'Kendra - Female US' },
+	{ id: 'Salli', desc: 'Salli - Female US' },
+	{ id: 'Joey', desc: 'Joey - Male US' },
+	{ id: 'Justin', desc: 'Justin - Male US (young)' }
 ];
 const rgConversatinal = /^\w*(B|G|W|M)*\d*\s*\:+\s*/gi;
 const kReplaceWords = [{

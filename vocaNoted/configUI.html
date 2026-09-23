@@ -40,6 +40,14 @@
 		</div>
 
 		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>StreamElements voice</span></div>
+			<p>Natural voice used when source is StreamElements. Free, no login, works on GitHub Pages.</p>
+			<select class="setting-select" ng-model="seVoice" ng-change="setSEVoice()"
+				ng-options="v.id as v.desc for v in SE_VOICES" aria-label="StreamElements voice"></select>
+			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
+		</div>
+
+		<div class="setting-card">
 			<div class="setting-heading"><i class="fa fa-volume-up" aria-hidden="true"></i><span>Browser voice</span></div>
 			<p>Device voice used when source is Browser (works on GitHub Pages + Safari, offline).</p>
 			<select class="setting-select" ng-model="browserVoiceURI" ng-change="setBrowserVoice()"

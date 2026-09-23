@@ -388,8 +388,10 @@ function edgeOneTurn(ws, ssml) {
 function edgePlayBlob(parts, mySeq, done, tag) {
 	let finished = false;
 	const ok = function (v) { if (!finished) { finished = true; done(v); } };
+	let played = false; // Safari cu: play() khong tra promise -> chi tin onplaying
 	// Safari chan <audio>.play() sau fetch async -> decode phat qua WebAudio
 	const webFallback = function () {
+		try { window.__seFail = 'play(' + (tag || 'edge') + ')'; } catch (e) {}
 		try {
 			const bufs = [];
 			let total = 0;
@@ -419,7 +421,7 @@ function edgePlayBlob(parts, mySeq, done, tag) {
 		};
 		try { audio.playbackRate = 1; } catch (e) {}
 		audio.src = edgeUrl;
-		audio.onplaying = function () { try { window.__lastTtsEngine = tag || 'edge'; } catch (e) {} ok(true); };
+		audio.onplaying = function () { played = true; try { window.__lastTtsEngine = tag || 'edge'; } catch (e) {} ok(true); };
 		try {
 			const pr = audio.play();
 			if (pr && typeof pr.catch === 'function') {
@@ -432,7 +434,13 @@ function edgePlayBlob(parts, mySeq, done, tag) {
 			try { edgeAudio = null; revokeEdgeUrl(); } catch (e2) {}
 			webFallback();
 		}
-		setTimeout(function () { ok(true); }, 2000);
+		// Het 2s ma chua onplaying -> coi nhu bi chan, ep WebAudio fallback.
+		// (finished = da xong (that bai -> browser) -> khong lam gi them de khoi chong tieng)
+		setTimeout(function () {
+			if (finished) return;
+			if (!played) { try { if (audio === edgeAudio) { edgeAudio = null; revokeEdgeUrl(); } } catch (e) {} webFallback(); }
+			else ok(true);
+		}, 2000);
 	} catch (e) { ok(false); }
 }
 // Phat ArrayBuffer mp3 qua WebAudio (fallback khi Safari chan <audio>)
@@ -657,13 +665,14 @@ function seSpeak(text, mySeq) {
 		} catch (e) { finish(false); return; }
 		const guard = setTimeout(function () { finish(false); }, 25000);
 		const done = function (v) { try { clearTimeout(guard); } catch (e) {} finish(v); };
+		try { window.__seFail = ''; } catch (e) {}
 		const chunks = seChunk(text.length > 3000 ? text.slice(0, 3000) : text);
 		const all = [];
 		let i = 0;
 		const next = function () {
 			if (mySeq !== gSeq) { done(false); return; }
 			if (i >= chunks.length) {
-				if (!all.length) { done(false); return; }
+				if (!all.length) { try { window.__seFail = 'empty'; } catch (e) {} done(false); return; }
 				edgePlayBlob(all, mySeq, done, 'se');
 				return;
 			}
@@ -678,7 +687,7 @@ function seSpeak(text, mySeq) {
 				if (mySeq !== gSeq) { done(false); return; }
 				if (buf.byteLength) all.push(buf);
 				next();
-			}, function () { done(false); });
+			}, function () { try { window.__seFail = 'network'; } catch (e) {} done(false); });
 		};
 		next();
 	});
@@ -742,6 +751,11 @@ function Text2Speech(word, force) {
 			if (mySeqSe !== gSeq) return;
 			if (ok) return; // dang phat StreamElements
 			SE_DOWN_UNTIL = Date.now() + 2 * 60 * 1000;
+			try {
+				const st = window.__seFail || 'failed';
+				window.__lastTtsEngine = 'browser (se ' + st + ')';
+				console.warn('[TTS] StreamElements that bai buoc ' + st + ', dung browser tam.');
+			} catch (e) {}
 			Text2SpeechBrowser(text, force);
 		});
 		return;

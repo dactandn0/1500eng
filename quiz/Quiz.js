@@ -32,7 +32,7 @@ function qUnique(list) {
 	return out;
 }
 
-$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic' | 'dir' | 'nail'
+$scope.mode = 'voca'; // 'voca' | 'detail' | 'pic' | 'dir' | 'nail' | 'dict'
 $scope.setMode = function (m) {
 	$scope.mode = m;
 	try { Text2SpeechStop(); } catch (e) {}
@@ -288,9 +288,8 @@ const US_AREA_CODES = ['713','281','832','346','214','469','972','512','210','21
 
 // =====================================================
 // Free API (khong key, CORS *). Fail -> fallback data/code local.
-// - Name/Phone (Anh/My): randomuser.me (nat=us,gb)
-// - Address (My, nhieu bang/city): random-data-api (chinh) + randomuser US (phu)
-// Docs: https://randomuser.me/documentation , https://random-data-api.com/documentation
+// - Name/Phone/Address (Anh/My): randomuser.me (nat=us,gb)
+// Docs: https://randomuser.me/documentation
 // =====================================================
 const QUIZ_API_CACHE = { entries: [], fetching: false, done: false };
 const QUIZ_ADDR_POOL = { list: [], fetching: false };
@@ -328,38 +327,11 @@ function quizApiPrefetchUsers() {
 		QUIZ_API_CACHE.fetching = false;
 	});
 }
-// Pool dia chi My rieng: random-data-api cho nhieu bang/city (size=30/lan)
+// Pool dia chi My: lay tu randomuser US (kem trong quizApiPrefetchUsers).
+// (random-data-api.com da chet - DNS ERR_NAME_NOT_RESOLVED - nen bo han.)
 function quizApiPrefetchAddr() {
-	if (QUIZ_ADDR_POOL.fetching) return;
 	if (QUIZ_ADDR_POOL.list.length >= 20) return;
-	if (typeof fetch !== 'function') return;
-	QUIZ_ADDR_POOL.fetching = true;
-	fetch('https://random-data-api.com/api/v2/addresses?size=30').then(function (r) {
-		if (!r.ok) throw new Error('addr api ' + r.status);
-		return r.json();
-	}).then(function (data) {
-		const list = Array.isArray(data) ? data : (data ? [data] : []);
-		list.forEach(function (a) {
-			try {
-				const p = quizParseAddrFromRandomData(a);
-				if (p) QUIZ_ADDR_POOL.list.push(p);
-			} catch (e) {}
-		});
-	}).catch(function () {
-		// fail -> randomuser US o tren + fallback local lo lieu
-		try { quizApiPrefetchUsers(); } catch (e) {}
-	}).finally(function () {
-		QUIZ_ADDR_POOL.fetching = false;
-	});
-}
-function quizParseAddrFromRandomData(a) {
-	if (!a) return null;
-	const streetAddr = a.street_address || (((a.building_number || '') + ' ' + (a.street_name || '')).trim()) || null;
-	const city = a.city || null;
-	const state = a.state || null;
-	const zip = a.zip_code || a.zip || a.postcode || '';
-	if (!streetAddr || !city || !state) return null;
-	return { streetAddr: streetAddr, cityFull: city + ', ' + state + ' ' + zip, src: 'rda' };
+	try { quizApiPrefetchUsers(); } catch (e) {}
 }
 function quizParseAddrFromRandomUser(u) {
 	const stNum = (u.location && u.location.street && u.location.street.number) || null;
@@ -583,7 +555,7 @@ function swapDigitsNum(n) {
 }
 
 function genAddress() {
-	// Uu tien 1: dia chi My that tu API (random-data-api + randomuser US) -> nhieu bang/city.
+	// Uu tien 1: dia chi My that tu API (randomuser US) -> nhieu bang/city.
 	// Fail -> fallback local.
 	const api = quizTakeApiAddress();
 	if (api && api.streetAddr && api.cityFull) {
@@ -2121,6 +2093,269 @@ $scope.clickDirOption = function (ev, idx) {
 };
 $scope.retryWrongDir = function () { $scope.startDir(true); };
 
+// =====================================================
+// SECTION 6: Dictation (chinh ta) - nghe cau, go lai, cham tung tu.
+// Nguon cau: tach tu $rootScope.VocaToUI (bai hoc trong app).
+// =====================================================
+const DICT_ROUND_SIZE = 10;
+
+function dictBuildPool() {
+	// NGUON CAU: truyen/bai hoc (AllStories) - KHONG dung VocaToUI (do la list tu vung roi rac).
+	const stories = ($rootScope.AllStories && $rootScope.AllStories.length)
+		? $rootScope.AllStories : ($rootScope.VocaToUI || []);
+	const out = [];
+	for (let k = 0; k < stories.length; k++) {
+		const st = stories[k];
+		if (!st || !st.en) continue;
+		let t = String(st.en).replace(/<br\s*\/?>/gi, '. ');
+		try { t = Helper_RemoveHTMLtag(t); } catch (e) { t = t.replace(/<[^>]*>/g, ' '); }
+		t = t.replace(/\s+/g, ' ').trim();
+		const parts = t.match(/[^.!?]+[.!?]+/g) || [];
+		for (let i = 0; i < parts.length; i++) {
+			let p = parts[i].trim();
+			try { p = p.replace(rgConversatinal, ''); } catch (e) {}
+			p = p.replace(/\s+/g, ' ').trim();
+			p = p.replace(/([.!?])\s*[.!?]+$/g, '$1'); // gon dau cau kep do <br> -> "today?." thanh "today?"
+			if (/[\/():;]/.test(p)) continue; // bo cau co IPA/ngoac/nhan (rac tu vung)
+			const words = p.split(' ');
+			if (words.length < 3 || words.length > 7) continue; // chi cau ngan 3-7 tu
+			if (!/^[A-Z]/.test(p)) continue; // phai bat dau chu hoa (cau van that)
+			if (!/[a-z]/.test(p)) continue; // phai co chu thuong
+			if (p === p.toUpperCase()) continue; // bo tieu de viet hoa het
+			if ((p.match(/,/g) || []).length >= 2) continue; // bo list liet ke "a, b, c"
+			if (!/[A-Za-z]/.test(p)) continue;
+			out.push(p);
+		}
+	}
+	return qUnique(out);
+}
+
+function dictNormW(w) {
+	// So sanh bo qua hoa/thuong + dau cau . , ; ' " ! ? ... o DAU/CUOI tu.
+	// Chi giu dau nhay BEN TRONG tu (don't, can't).
+	let s = String(w || '').toLowerCase();
+	s = s.replace(/[‘’ʼ`]/g, "'"); // chuan hoa nhay cong
+	s = s.replace(/^[^a-z0-9]+|[^a-z0-9]+$/g, '');
+	return s;
+}
+
+// Dich cau sang tieng Viet (Google gtx free, cache theo cau)
+const DICT_TRANS_CACHE = {};
+function dictFetchVi(text) {
+	const key = String(text || '');
+	if (!key) return Promise.resolve('');
+	if (DICT_TRANS_CACHE[key] !== undefined) return Promise.resolve(DICT_TRANS_CACHE[key]);
+	if (typeof fetch !== 'function' || typeof GOOGLE_TRANS_API === 'undefined') return Promise.resolve('');
+	const src = key.length > 900 ? key.slice(0, 900) : key;
+	return fetch(GOOGLE_TRANS_API + encodeURIComponent(src)).then(function (r) {
+		if (!r.ok) return '';
+		return r.json();
+	}).then(function (data) {
+		let out = '';
+		try { out = ((data && data[0]) || []).map(function (seg) { return seg[0]; }).join(''); } catch (e) {}
+		DICT_TRANS_CACHE[key] = out || '';
+		return DICT_TRANS_CACHE[key];
+	}).catch(function () { return ''; });
+}
+
+$scope.dict = {
+	items: [],
+	index: 0,
+	current: null, // { text, words:[norm], raw:[orig] }
+	typed: '',
+	tokens: [],
+	answered: false,
+	perfect: false,
+	translated: '',
+	micState: '', // '' | 'rec' | 'busy'
+	heard: '',
+	hearScore: -1,
+	hearErr: '',
+	score: 0,
+	streak: 0,
+	bestStreak: 0,
+	wrong: [],
+	finished: false
+};
+
+$scope.startDict = function (wrongOnly, noSpeak) {
+	try { Text2SpeechStop(); } catch (e) {}
+	let pool;
+	if (wrongOnly && $scope.dict.wrong.length) {
+		pool = $scope.dict.wrong.slice();
+	} else {
+		pool = dictBuildPool();
+	}
+	$scope.dict.items = qShuffle(pool.slice()).slice(0, DICT_ROUND_SIZE);
+	$scope.dict.index = 0;
+	$scope.dict.score = 0;
+	$scope.dict.streak = 0;
+	$scope.dict.bestStreak = 0;
+	$scope.dict.wrong = [];
+	$scope.dict.finished = !$scope.dict.items.length;
+	$scope.buildDictQuestion(!noSpeak);
+};
+
+$scope.buildDictQuestion = function (autoSpeak) {
+	const text = $scope.dict.items[$scope.dict.index];
+	if (!text) { $scope.dict.finished = true; return; }
+	const raw = String(text).split(/\s+/);
+	$scope.dict.current = { text: text, raw: raw, words: raw.map(dictNormW) };
+	$scope.dict.typed = '';
+	$scope.dict.tokens = [];
+	$scope.dict.answered = false;
+	$scope.dict.perfect = false;
+	$scope.dict.translated = '';
+	$scope.dict.micState = '';
+	$scope.dict.heard = '';
+	$scope.dict.hearScore = -1;
+	$scope.dict.hearErr = '';
+	try { if (dictSR) dictSR.abort(); } catch (e) {} // dung nhan giong do (neu co) khi sang cau
+	try { dictSR = null; } catch (e) {}
+	if (autoSpeak) {
+		$timeout(function () { $scope.dictSpeak(null, true); }, 350);
+	}
+};
+
+$scope.dictSpeak = function (ev, isAuto) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	if (!$scope.dict.current) return;
+	if (!isAuto && ttsIsBusy()) return;
+	try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)($scope.dict.current.text); } catch (e) {}
+};
+
+$scope.checkDict = function () {
+	const d = $scope.dict;
+	if (d.answered || !d.current) return;
+	const cw = d.current.words, raw = d.current.raw;
+	const pairs = String(d.typed || '').split(/\s+/).filter(function (w) { return w; })
+		.map(function (w) { return { raw: w, norm: dictNormW(w) }; })
+		.filter(function (p) { return p.norm; });
+	const uw = pairs.map(function (p) { return p.norm; });
+	const tokens = [];
+	let i = 0, j = 0, correct = 0;
+	while (i < cw.length || j < uw.length) {
+		if (i < cw.length && j < uw.length && cw[i] === uw[j]) {
+			tokens.push({ t: raw[i], cls: 'ok' }); correct++; i++; j++;
+		} else if (i + 1 < cw.length && j < uw.length && cw[i + 1] === uw[j]) {
+			tokens.push({ t: raw[i], cls: 'miss' }); i++; // thieu tu
+		} else if (i < cw.length && j + 1 < uw.length && cw[i] === uw[j + 1]) {
+			tokens.push({ t: pairs[j].raw, cls: 'extra' }); j++; // thua tu
+		} else if (i < cw.length && j < uw.length) {
+			tokens.push({ t: pairs[j].raw, cls: 'bad', want: raw[i] }); i++; j++; // sai tu
+		} else if (i < cw.length) {
+			tokens.push({ t: raw[i], cls: 'miss' }); i++;
+		} else {
+			tokens.push({ t: pairs[j].raw, cls: 'extra' }); j++;
+		}
+	}
+	d.tokens = tokens;
+	d.answered = true;
+	d.perfect = (correct === cw.length && uw.length === cw.length);
+	// dich nghia Viet cau dap an (async, khong block)
+	d.translated = '';
+	try {
+		dictFetchVi(d.current.text).then(function (vi) {
+			$timeout(function () {
+				if ($scope.dict.current !== d.current) return;
+				$scope.dict.translated = vi || '';
+			});
+		});
+	} catch (e) {}
+	if (d.perfect) {
+		d.score += 1;
+		d.streak += 1;
+		if (d.streak > d.bestStreak) d.bestStreak = d.streak;
+	} else {
+		d.streak = 0;
+		d.wrong.push(d.current.text);
+	}
+};
+
+$scope.nextDict = function () {
+	$scope.dict.index += 1;
+	if ($scope.dict.index >= $scope.dict.items.length) {
+		$scope.dict.current = null;
+		$scope.dict.finished = true;
+	} else {
+		$scope.buildDictQuestion(true);
+	}
+};
+$scope.retryWrongDict = function () { $scope.startDict(true); };
+
+// ---- Mic: nhan giong free bang SpeechRecognition cua trinh duyet (khong Puter, khong ton credit) ----
+let dictSR = null;
+function dictScoreMatch(heard, cw) {
+	if (!cw || !cw.length) return -1;
+	const uw = String(heard || '').split(/\s+/).map(dictNormW).filter(function (w) { return w; });
+	if (!uw.length) return 0;
+	let i = 0, hit = 0;
+	for (let j = 0; j < uw.length && i < cw.length; j++) {
+		if (uw[j] === cw[i]) { hit++; i++; }
+		else if (i + 1 < cw.length && uw[j] === cw[i + 1]) { i += 2; hit++; } // AI nghe sot 1 tu
+	}
+	return Math.round(hit / cw.length * 100);
+}
+$scope.dictMic = function (ev) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	const d = $scope.dict;
+	if (!d.current) return;
+	const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+	if (!SR) {
+		d.hearErr = 'Trình duyệt không hỗ trợ nhận giọng nói free. Dùng Chrome/Edge hoặc Safari mới.';
+		return;
+	}
+	if (d.micState === 'rec') { try { if (dictSR) dictSR.stop(); } catch (e) {} return; }
+	const target = d.current;
+	d.hearErr = '';
+	d.heard = '';
+	d.hearScore = -1;
+	let rec = null;
+	try { rec = new SR(); dictSR = rec; }
+	catch (e) { d.hearErr = 'Không mở được mic.'; return; }
+	try {
+		rec.lang = 'en-US';
+		rec.interimResults = false;
+		rec.maxAlternatives = 1;
+	} catch (e) {}
+	let gotResult = false;
+	d.micState = 'rec';
+	rec.onresult = function (e) {
+		try {
+			const txt = (e.results && e.results[0] && e.results[0][0] && e.results[0][0].transcript) || '';
+			gotResult = true;
+			$timeout(function () {
+				if ($scope.dict.current !== target) return;
+				d.heard = txt || '';
+				d.hearScore = dictScoreMatch(d.heard, target.words);
+				d.micState = '';
+				if (!d.heard) d.hearErr = 'AI không nghe rõ. Bấm mic nói lại.';
+			});
+		} catch (err) {}
+	};
+	rec.onerror = function (e) {
+		const code = (e && e.error) || '';
+		$timeout(function () {
+			if ($scope.dict.current !== target) return;
+			d.micState = '';
+			if (code === 'not-allowed' || code === 'service-not-allowed')
+				d.hearErr = 'Bị từ chối quyền mic. Cho phép mic rồi thử lại.';
+			else if (code === 'no-speech')
+				d.hearErr = 'Không nghe thấy tiếng. Nói to, rõ rồi thử lại.';
+			else if (!gotResult)
+				d.hearErr = 'Nghe lỗi' + (code ? ' (' + code + ')' : '') + '. Thử lại.';
+		});
+	};
+	rec.onend = function () {
+		$timeout(function () {
+			if ($scope.dict.current !== target) return;
+			if (d.micState === 'rec' && !gotResult) d.micState = '';
+		});
+	};
+	try { rec.start(); } catch (e) { d.micState = ''; d.hearErr = 'Không mở được mic.'; return; }
+	setTimeout(function () { try { if (d.micState === 'rec') rec.stop(); } catch (e) {} }, 12000);
+};
+
 // init (khong tu phat tieng khi vua mo trang)
 try { quizApiPrefetch(); } catch (e) {}
 $scope.startQuiz(false, true);
@@ -2128,6 +2363,7 @@ $scope.startDetail(false, true);
 $scope.startPic(false);
 $scope.startDir(false, true);
 try { $scope.startNail(); } catch (e) {}
+try { $scope.startDict(false, true); } catch (e) {}
 try { dirEnsureOsm(6); } catch (e) {}
 
 });

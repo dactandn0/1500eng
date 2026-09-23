@@ -198,6 +198,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		// for word3000Ctrl
 		$rootScope.VocaToUI = VocaToUI
 		$rootScope.VocaForSearch = VocaForSearch
+		$rootScope.AllStories = (typeof kAllStories !== 'undefined') ? kAllStories : [];
 
 		$scope.searchDataResult = [];
 		$scope.search = "";

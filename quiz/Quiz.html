@@ -26,6 +26,14 @@
 		.dir-map { margin-top:.6rem; padding:.6rem .8rem; background:#f7fbff; border:1px solid #dce8f5; border-radius:10px; }
 		.dir-map img { max-width:100%; border-radius:8px; border:1px solid #dce8f5; display:block; margin-bottom:.5rem; }
 		.dir-map a { color:#23639a; font-size:.85rem; }
+		.dict-input { width:100%; min-height:76px; padding:.6rem .8rem; border:1px solid #eee5c9; border-radius:10px; background:#fffdf7; font-size:.95rem; color:#3d4c59; }
+		.dict-input:disabled { background:#f4f1ea; }
+		.dict-tokens { margin-top:.6rem; padding:.6rem .8rem; background:#fffdf7; border:1px solid #f1e8d0; border-radius:10px; font-size:.95rem; line-height:1.9; }
+		.dict-tok { display:inline-block; padding:0 .3rem; margin:0 .1rem; border-radius:6px; }
+		.dict-tok-ok { background:#e7f7ee; color:#1e7e46; }
+		.dict-tok-bad { background:#fdecec; color:#c0392b; text-decoration:line-through; }
+		.dict-tok-miss { background:#fff4c9; color:#8a6d00; border:1px dashed #e6c96c; }
+		.dict-tok-extra { background:#f4f1ea; color:#8b857b; text-decoration:line-through; }
 	</style>
 
 	<div class="quiz-tabs" role="tablist">
@@ -40,6 +48,9 @@
 		</button>
 		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'nail'}" ng-click="setMode('nail')">
 			<i class="fa fa-scissors" aria-hidden="true"></i> Nail
+		</button>
+		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'dict'}" ng-click="setMode('dict')">
+			<i class="fa fa-pencil" aria-hidden="true"></i> Dictation
 		</button>
 		<button type="button" class="quiz-tab" ng-class="{'is-active': mode === 'dir'}" ng-click="setMode('dir')">
 			<i class="fa fa-compass" aria-hidden="true"></i> Directions
@@ -186,8 +197,86 @@
 		</div>
 	</div>
 
-	<!-- ===== SECTION 2: LISTENING DETAIL ===== -->
-	<div class="quiz-panel" ng-if="mode === 'detail'">
+	<!-- ===== SECTION 6: DICTATION - nghe cau, go lai, cham tung tu ===== -->
+	<div class="quiz-panel" ng-if="mode === 'dict'">
+		<div class="quiz-panel-heading">
+			<div>
+				<span class="eyebrow">DICTATION</span>
+				<h2>Nghe &middot; Gõ lại &middot; Chấm chính tả</h2>
+			</div>
+			<button type="button" class="btn btn-sm btn-quiz" ng-click="startDict()">
+				<i class="fa fa-refresh" aria-hidden="true"></i> New round
+			</button>
+		</div>
+
+		<p style="margin:.6rem 0 .8rem; color:#8b857b; font-size:.85rem;">
+			Bấm loa để nghe câu (bấm lại để nghe tiếp), gõ những gì nghe được rồi bấm Check hoặc Enter.
+		</p>
+
+		<div ng-if="!dict.finished">
+			<div class="quiz-progress">Sentence {{dict.index + 1}} / {{dict.items.length}} <span>Score: {{dict.score}} &middot; Streak: {{dict.streak}}</span></div>
+			<div class="quiz-listen is-clickable" ng-click="dictSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
+				<button type="button" class="quiz-listen-btn" ng-click="dictSpeak($event, true)" ng-disabled="ttsBusy" title="Tap to listen" aria-label="Tap to listen">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</button>
+				<span>Tap to listen (replay thoải mái), rồi gõ bên dưới</span>
+			</div>
+			<div class="quiz-listen is-clickable" ng-click="dictMic($event)" title="Nói để AI nghe và chấm" role="button" tabindex="0">
+				<button type="button" class="quiz-listen-btn" ng-click="dictMic($event)" title="Speak" aria-label="Speak">
+					<i class="fa fa-microphone" aria-hidden="true"></i>
+				</button>
+				<span ng-if="dict.micState === ''">Tap mic &amp; speak &mdash; AI nghe và chấm phát âm</span>
+				<span ng-if="dict.micState === 'rec'">Đang nghe... bấm để dừng</span>
+				<span ng-if="dict.micState === 'busy'">AI đang nghe...</span>
+			</div>
+			<div class="quiz-transcript" ng-if="dict.heard">AI nghe: &ldquo;{{dict.heard}}&rdquo; <strong ng-if="dict.hearScore >= 0">({{dict.hearScore}}%)</strong></div>
+			<div class="quiz-feedback is-bad" ng-if="dict.hearErr">{{dict.hearErr}}</div>
+			<div style="margin-top:.6rem;">
+				<textarea class="dict-input" ng-model="dict.typed" ng-disabled="dict.answered"
+					ng-keydown="$event.keyCode === 13 && !dict.answered && checkDict()"
+					placeholder="Type what you hear..." aria-label="Type what you hear"></textarea>
+			</div>
+			<div class="quiz-actions" ng-if="!dict.answered" style="margin-top:.6rem;">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="checkDict()">
+					Check
+				</button>
+			</div>
+			<div class="dict-tokens" ng-if="dict.answered">
+				<span class="dict-tok" ng-class="{'dict-tok-ok': t.cls === 'ok', 'dict-tok-bad': t.cls === 'bad', 'dict-tok-miss': t.cls === 'miss', 'dict-tok-extra': t.cls === 'extra'}"
+					ng-repeat="t in dict.tokens track by $index" ng-attr-title="{{t.cls === 'bad' ? ('đúng: ' + t.want) : ''}}">{{t.t}}</span>
+			</div>
+			<div class="quiz-feedback is-good" ng-if="dict.answered && dict.perfect">
+				<i class="fa fa-check-circle" aria-hidden="true"></i> Perfect! Keep the streak going.
+			</div>
+			<div class="quiz-feedback is-bad is-clickable" ng-if="dict.answered && !dict.perfect" ng-click="dictSpeak($event, true)" title="Tap to listen" role="button" tabindex="0">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+				<span>Correct sentence: <strong>{{dict.current.text}}</strong></span>
+			</div>
+			<div class="quiz-transcript" ng-if="dict.answered && dict.translated">Nghĩa: {{dict.translated}}</div>
+			<div class="quiz-actions" ng-if="dict.answered">
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="nextDict()">
+					{{dict.index + 1 >= dict.items.length ? 'See results' : 'Next'}}
+				</button>
+			</div>
+		</div>
+
+		<div class="quiz-finished" ng-if="dict.finished">
+			<strong>Round complete</strong>
+			<span>Score: {{dict.score}} / {{dict.items.length}} &middot; Best streak: {{dict.bestStreak}}</span>
+			<div class="quiz-wrong-list" ng-if="dict.wrong.length">
+				<div class="quiz-wrong-title">Nghe lại các câu sai ({{dict.wrong.length}}):</div>
+				<div class="quiz-wrong-item" ng-repeat="w in dict.wrong track by $index">
+					<strong>{{w}}</strong>
+				</div>
+			</div>
+			<div class="quiz-actions quiz-finished-actions">
+				<button type="button" class="btn btn-sm btn-outline-secondary" ng-if="dict.wrong.length" ng-click="retryWrongDict()">Retry mistakes</button>
+				<button type="button" class="btn btn-sm btn-quiz" ng-click="startDict()">New round</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== SECTION 2: LISTENING DETAIL ===== -->	<div class="quiz-panel" ng-if="mode === 'detail'">
 		<div class="quiz-panel-heading">
 			<div>
 				<span class="eyebrow">LISTENING DETAIL</span>

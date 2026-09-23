@@ -1,10 +1,10 @@
 const SUBLESSON_DATA2 = [
-{ 
-	category: 'Ielts',
-	content: [
-{
-		title: "Lesson 7 - How to write a paragraph (6.0)",
-		en: "Topic: The benefits of learning online at universities<br>\
+	{
+		category: 'Ielts',
+		content: [
+			{
+				title: "Lesson 7 - How to write a paragraph (6.0)",
+				en: "Topic: The benefits of learning online at universities<br>\
 	 I believe that online university courses are a positive development for various reasons. Firstly, they allow learners to study in a flexible way. This means they can work whenever and wherever they feel convenient and cover their materials at their own pace. Secondly, online learning offers open access to anybody who is willing to (sẵn sàng) study, regardless of (bất kể) age, location, ability and background. For example, my uncle, who is 65 years old, has recently enrolled in an online MBA course in a different country, which would have been impossible in the days before Internet-based education.<br>\
 <br>\
 TOPIC SENTENCE:<br>\
@@ -85,10 +85,10 @@ SUPPORTING IDEA 2:<br>\
 Việc có nhận thức về văn hóa giúp trẻ em chuẩn bị cho việc đi du học hoặc cơ hội việc làm tốt hơn đặc biệt trong thời đại toàn cầu hóa khi mà sự hợp tác giữa các quốc gia và các nền văn hóa ngày càng trở nên phổ biến.<br>\
 Thời đại toàn cầu hóa: globalisation era<br>\
 -> YOUR TURN:",
-		note: ""
-	}, {
-		title: "Lesson 8 - Coherence & cohesion (gắn kết và mạch lạc)",
-		en: "1. Định nghĩa:<br>\
+				note: ""
+			}, {
+				title: "Lesson 8 - Coherence & cohesion (gắn kết và mạch lạc)",
+				en: "1. Định nghĩa:<br>\
 Coherence: Sự gắn kết về ý nghĩa<br>\
 Ý tưởng trong đoạn văn/ bài văn gắn kết với nhau và người đọc dễ dàng nhận ra quan điểm, ý kiến của người viết<br>\
 Cohesion: Sự mạch lạc<br>\
@@ -179,9 +179,9 @@ Lưu ý: S + impact(s/es/ed)/ affect (s/es/ed) + Sth : impact hoặc affect đó
 <br>\
 4. DETER /dɪˈtɜː(r)/ SOMEBODY FROM DOING Sth<br>\
 = DISCOURAGE SOMEBODY FROM DOING Sth: Ngăn ai không làm việc gì."
-	}, {
-		title: "Lesson 9 - PROBLEMS - SOLUTIONS ESSAY",
-		en: "More and more people are migrating to cities in search of a better life, but city life can be extremely difficult. Explain some of the difficulties of living in a city. How can governments make urban life better for everyone? <br>\
+			}, {
+				title: "Lesson 9 - PROBLEMS - SOLUTIONS ESSAY",
+				en: "More and more people are migrating to cities in search of a better life, but city life can be extremely difficult. Explain some of the difficulties of living in a city. How can governments make urban life better for everyone? <br>\
 <br>\
 City (n) = urban area <br>\
 <br>\
@@ -271,13 +271,14 @@ FE: It is increasingly common for people to travel overseas due to low-fare airl
 <br>\
 Homework:<br>\
 What do you think are the possible solutions? More and more people in developing countries are purchasing cars for the first time. What problems does this cause?"
-	}, {
-		title: "[Englab] Writing - Homework",
-		en: "",
-		images: ["hw-lesson1", "hw-lesson2", "hw-lesson3", "hw-lesson4", "hw-lesson5", "hw-lesson6", "hw-lesson7", "hw-lesson8"]
-	}, {
-		title: "[Barron] Word Family",
-		en: WORD_FAMILY_DATA.join('<br>')
-	},
+			}, {
+				title: "[Englab] Writing - Homework",
+				en: "",
+				images: ["hw-lesson1", "hw-lesson2", "hw-lesson3", "hw-lesson4", "hw-lesson5", "hw-lesson6", "hw-lesson7", "hw-lesson8"]
+			}, {
+				title: "[Barron] Word Family",
+				en: WORD_FAMILY_DATA.join('<br>')
+			},
 
-] } ];
+		]
+	}];

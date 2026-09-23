@@ -496,6 +496,27 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				}, 250);
 			})(toastTimerId, totalMs);
 
+			// Ghi engine TTS vua phat (Using Eleven/Edge/Browser) vao toast moi nhat
+			setTimeout(function () {
+				try {
+					let eng = '';
+					try { eng = window.__lastTtsEngine || ''; } catch (e) {}
+					if (!eng) return;
+					const nice = eng.indexOf('el') === 0 ? 'Eleven'
+						: (eng.indexOf('edge') === 0 ? 'Edge' : 'Browser');
+					const box = document.getElementById('toast-container');
+					const list = box ? box.querySelectorAll('.toast-info') : [];
+					const last = list.length ? list[list.length - 1] : null;
+					if (last && !last.querySelector('.tts-engine-note')) {
+						const div = document.createElement('div');
+						div.className = 'tts-engine-note';
+						div.style.cssText = 'font-size:.72rem;font-style:italic;opacity:.75;margin-top:.25rem;';
+						div.textContent = 'TTS: ' + nice;
+						last.appendChild(div);
+					}
+				} catch (e) {}
+			}, 1500);
+
 			if (wikiImgId) {
 				wikiThumbUrl(touchedWord).then(function (src) {
 					if (!src) return;

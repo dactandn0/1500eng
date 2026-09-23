@@ -31,7 +31,7 @@
 			<span class="ml-2" ng-if="lastEngine">playing: <strong>{{lastEngine}}</strong></span>
 		</div>
 
-		<div class="setting-card">
+		<div class="setting-card" ng-show="ttsSource === 'edge'">
 			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>Edge voice</span></div>
 			<p>Neural voice used when source is Edge. Needs network; auto-falls back to Browser if blocked.</p>
 			<select class="setting-select" ng-model="edgeVoice" ng-change="setEdgeVoice()"
@@ -39,9 +39,10 @@
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
 		</div>
 		
-		<div class="setting-card">
+		<div class="setting-card" ng-show="ttsSource === 'el'">
 			<div class="setting-heading"><i class="fa fa-key" aria-hidden="true"></i><span>ElevenLabs (key của bạn)</span><strong>{{elKey ? 'key ok' : 'chưa có key'}}</strong></div>
 			<p>Lấy key free ở elevenlabs.io</p>
+			<p><small><i>Key cần quyền: User: Access, Voices: Read (+ text_to_speech để đọc).</i></small></p>
 			<input type="{{elKeyVisible ? 'text' : 'password'}}" class="form-control setting-select" ng-model="elKey" ng-change="setELKey()"
 				ng-model-options="{ debounce: 800 }" placeholder="xi-api-key..." aria-label="ElevenLabs API key" autocomplete="off">
 			<button class="btn btn-sm btn-secondary mt-2" ng-click="toggleELKeyVisible()">{{elKeyVisible ? 'Hide' : 'Show'}} key</button>
@@ -54,7 +55,7 @@
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice EL</button>
 		</div>
 
-		<div class="setting-card">
+		<div class="setting-card" ng-show="ttsSource === 'browser'">
 			<div class="setting-heading"><i class="fa fa-volume-up" aria-hidden="true"></i><span>Browser voice</span></div>
 			<p>Device voice used when source is Browser (works on GitHub Pages + Safari, offline).</p>
 			<select class="setting-select" ng-model="browserVoiceURI" ng-change="setBrowserVoice()"

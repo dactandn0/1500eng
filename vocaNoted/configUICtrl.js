@@ -4,7 +4,7 @@
 var app = angular.module("configUIApp",
 [
 ]);
-app.controller("configUICtrl", function($scope, $rootScope) {
+app.controller("configUICtrl", function($scope, $rootScope, $location) {
 
 $scope.audioPitch = 1.5
 $scope.audioRate = 0.8
@@ -19,11 +19,61 @@ $scope.TTS_SOURCES = (typeof TTS_SOURCES !== 'undefined') ? TTS_SOURCES : [{ id:
 $scope.ttsSource = 'browser';
 $scope.EDGE_VOICES = (typeof EDGE_VOICES !== 'undefined') ? EDGE_VOICES : [{ id: 'en-US-AriaNeural', desc: 'Aria' }];
 $scope.edgeVoice = 'en-US-AriaNeural';
-$scope.SE_VOICES = (typeof SE_VOICES !== 'undefined') ? SE_VOICES : [{ id: 'Brian', desc: 'Brian' }];
-$scope.seVoice = 'Brian';
 $scope.EL_VOICES = (typeof EL_VOICES !== 'undefined') ? EL_VOICES : [{ id: '21m00Tcm4TlvDq8ikWAM', desc: 'Rachel' }];
 $scope.elVoice = '21m00Tcm4TlvDq8ikWAM';
 $scope.elKey = '';
+$scope.elKeyVisible = false;
+$scope.toggleELKeyVisible = function () { $scope.elKeyVisible = !$scope.elKeyVisible; };
+$scope.keyLinkCopied = false;
+$scope.copyKeyLink = function () {
+	// Copy link co san key de mo tren iPhone (khoi go tay)
+$scope.keyLinkCopied = false;
+$scope.elCheck = '';
+$scope.checkELKey = function () {
+	// Kiem tra key bang API user (khong ton quota): hien tier + so ky tu con lai
+	$scope.elCheck = '...';
+	try { $scope.$applyAsync(); } catch (e) {}
+	try {
+		const k = ($scope.elKey || '').trim();
+		if (!k) { $scope.elCheck = 'Chưa nhập key.'; return; }
+		fetch('https://api.elevenlabs.io/v1/user', { headers: { 'xi-api-key': k } }).then(function (r) {
+			if (!r.ok) throw new Error('HTTP ' + r.status);
+			return r.json();
+		}).then(function (d) {
+			let msg = 'Key OK.';
+			try {
+				const s = (d && d.subscription) || {};
+				msg = 'Key OK (' + (s.tier || '?') + '): đã dùng ' + (s.character_count ?? '?') + '/' + (s.character_limit ?? '?') + ' ký tự.';
+			} catch (e) {}
+			$scope.elCheck = msg;
+			try { $scope.$applyAsync(); } catch (e2) {}
+		}, function (err) {
+			$scope.elCheck = 'Key lỗi: ' + String((err && err.message) || err) + ' (401 = key sai/cũ, 402 = hết quota).';
+			try { $scope.$applyAsync(); } catch (e2) {}
+		});
+	} catch (e) { $scope.elCheck = 'Không gọi được API.'; }
+};
+	try {
+		if (!$scope.elKey) return;
+		const url = location.origin + location.pathname + '#!/configUI?key=' + encodeURIComponent($scope.elKey);
+		const done = function () {
+			$scope.keyLinkCopied = true;
+			try { $scope.$applyAsync(); } catch (e) {}
+			setTimeout(function () { $scope.keyLinkCopied = false; try { $scope.$applyAsync(); } catch (e) {} }, 2000);
+		};
+		if (navigator.clipboard && navigator.clipboard.writeText) {
+			navigator.clipboard.writeText(url).then(done, done);
+		} else {
+			const ta = document.createElement('textarea');
+			ta.value = url;
+			document.body.appendChild(ta);
+			ta.select();
+			try { document.execCommand('copy'); } catch (e) {}
+			document.body.removeChild(ta);
+			done();
+		}
+	} catch (e) {}
+};
 $scope.lastEngine = '';
 $scope.BROWSER_VOICES = [];
 $scope.browserVoiceURI = '';
@@ -36,12 +86,6 @@ $scope.setTtsSource = function () {
 
 $scope.setEdgeVoice = function () {
 	Helper_saveDB(Helper_EdgeVoiceKey, $scope.edgeVoice);
-	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
-	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
-}
-
-$scope.setSEVoice = function () {
-	Helper_saveDB(Helper_SEVoiceKey, $scope.seVoice);
 	try { if (typeof Text2SpeechResetEdgeCooldown === 'function') Text2SpeechResetEdgeCooldown(); } catch (e) {}
 	try { if (typeof Text2SpeechStop === 'function') Text2SpeechStop(); } catch (e) {}
 }
@@ -152,17 +196,12 @@ $scope.loadDB = function () {
 	$scope.audioPitch = Helper_loadFloat(Helper_AudioPitchKey, 1.5)
 	$scope.audioRate = Helper_loadFloat(Helper_AudioRateKey, 0.8)
 	$scope.ttsSource = Helper_loadStr(Helper_TTSSourceKey, 'browser')
-	if ($scope.ttsSource !== 'edge' && $scope.ttsSource !== 'el' && $scope.ttsSource !== 'se' && $scope.ttsSource !== 'google' && $scope.ttsSource !== 'browser')
+	if ($scope.ttsSource !== 'edge' && $scope.ttsSource !== 'el' && $scope.ttsSource !== 'browser')
 		$scope.ttsSource = 'browser'; // migrate gia tri cu
 	$scope.edgeVoice = 'en-US-AriaNeural'
 	try {
 		if (typeof Helper_EdgeVoiceKey !== 'undefined')
 			$scope.edgeVoice = Helper_loadStr(Helper_EdgeVoiceKey, 'en-US-AriaNeural')
-	} catch (e) {}
-	$scope.seVoice = 'Brian'
-	try {
-		if (typeof Helper_SEVoiceKey !== 'undefined')
-			$scope.seVoice = Helper_loadStr(Helper_SEVoiceKey, 'Brian')
 	} catch (e) {}
 	$scope.elVoice = '21m00Tcm4TlvDq8ikWAM'
 	try {
@@ -198,6 +237,16 @@ $scope.loadDB = function () {
 
 $scope.$on('$viewContentLoaded', function(){
 	$scope.loadDB();
+	// Nhan key qua URL: mo https://.../#!/configUI?key=API_KEY tren iPhone la tu luu.
+	// Tien: copy tren PC -> gui link qua Zalo/Mail -> mo tren Safari (khoi go tay).
+	try {
+		const k = $location.search().key;
+		if (k && String(k).trim()) {
+			$scope.elKey = String(k).trim();
+			Helper_saveDB(Helper_ELKey, $scope.elKey);
+			$location.search('key', null); // xoa key khoi URL ngay
+		}
+	} catch (e) {}
 	topFunction();
 });
 

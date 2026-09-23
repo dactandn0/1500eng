@@ -38,20 +38,16 @@
 				ng-options="v.id as v.desc for v in EDGE_VOICES" aria-label="Edge voice"></select>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
 		</div>
-
-		<div class="setting-card">
-			<div class="setting-heading"><i class="fa fa-microphone" aria-hidden="true"></i><span>StreamElements voice</span></div>
-			<p>Natural voice used when source is StreamElements. Free, no login, works on GitHub Pages.</p>
-			<select class="setting-select" ng-model="seVoice" ng-change="setSEVoice()"
-				ng-options="v.id as v.desc for v in SE_VOICES" aria-label="StreamElements voice"></select>
-			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>
-		</div>
-
+		
 		<div class="setting-card">
 			<div class="setting-heading"><i class="fa fa-key" aria-hidden="true"></i><span>ElevenLabs (key của bạn)</span><strong>{{elKey ? 'key ok' : 'chưa có key'}}</strong></div>
 			<p>Giọng natural nhất, chạy mọi nơi (Pages/phone). Lấy key free ở elevenlabs.io → dán vào đây (chỉ lưu trên máy bạn).</p>
-			<input type="password" class="form-control setting-select" ng-model="elKey" ng-change="setELKey()"
+			<input type="{{elKeyVisible ? 'text' : 'password'}}" class="form-control setting-select" ng-model="elKey" ng-change="setELKey()"
 				ng-model-options="{ debounce: 800 }" placeholder="xi-api-key..." aria-label="ElevenLabs API key" autocomplete="off">
+			<button class="btn btn-sm btn-secondary mt-2" ng-click="toggleELKeyVisible()">{{elKeyVisible ? 'Hide' : 'Show'}} key</button>
+			<button class="btn btn-sm btn-secondary mt-2 ml-2" ng-if="elKey" ng-click="copyKeyLink()">{{keyLinkCopied ? 'Copied!' : 'Copy link mang key'}}</button>
+			<button class="btn btn-sm btn-info mt-2 ml-2" ng-if="elKey" ng-click="checkELKey()">Check key</button>
+			<span class="ml-2" ng-if="elCheck">{{elCheck}}</span>
 			<select class="setting-select mt-2" ng-model="elVoice" ng-change="setELVoice()"
 				ng-options="v.id as v.desc for v in EL_VOICES" aria-label="ElevenLabs voice"></select>
 			<button class="btn btn-sm btn-primary mt-2" ng-click="speechTest()">Test Voice</button>

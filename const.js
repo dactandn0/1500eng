@@ -45,8 +45,7 @@ const Helper_BrowserVoiceKey = 'BrowserVoiceURI'; // voiceURI cua speechSynthesi
 const Helper_EdgeProxyKey = 'EdgeProxyURL'; // vd https://xxx.ngrok-free.app (trong khi dung GitHub Pages)
 const Helper_TTSSourceKey = 'TTSSource'; // 'browser' (offline, Safari/Desktop)
 const Helper_EdgeVoiceKey = 'EdgeVoice';
-const Helper_SEVoiceKey = 'SEVoice';
-const Helper_ELKey = 'ElevenKey'; // API key ElevenLabs cua nguoi dung (BYOK, luu local)
+const Helper_ELKey = 'sk_9d55b26a2926c75e0e54ceb5e41009eb5ee2abf98217a626'; // API key ElevenLabs cua nguoi dung (BYOK, luu local)
 const Helper_ELVoiceKey = 'ELVoice';
 const EDGE_VOICES = [
 	{ id: 'en-US-AriaNeural', desc: 'Aria - Female US' },
@@ -61,19 +60,7 @@ const EDGE_VOICES = [
 const TTS_SOURCES = [
 	{ id: 'edge', desc: 'Edge neural - natural, online (local proxy/Edge browser)' },
 	{ id: 'el', desc: 'ElevenLabs - natural nhat, key free cua ban (Pages/phone OK)' },
-	{ id: 'se', desc: 'StreamElements - hien 401, tam dung' },
-	{ id: 'google', desc: 'Google - online, no login (hen xui theo mang)' },
 	{ id: 'browser', desc: 'Browser - offline, device voice (Safari OK)' }
-];
-const SE_VOICES = [ // AWS Polly voices qua StreamElements (free, CORS *)
-	{ id: 'Brian', desc: 'Brian - Male US' },
-	{ id: 'Joanna', desc: 'Joanna - Female US' },
-	{ id: 'Matthew', desc: 'Matthew - Male US' },
-	{ id: 'Ivy', desc: 'Ivy - Female US (young)' },
-	{ id: 'Kendra', desc: 'Kendra - Female US' },
-	{ id: 'Salli', desc: 'Salli - Female US' },
-	{ id: 'Joey', desc: 'Joey - Male US' },
-	{ id: 'Justin', desc: 'Justin - Male US (young)' }
 ];
 const EL_VOICES = [ // ElevenLabs premade voices (dung voi key free cua ban)
 	{ id: '21m00Tcm4TlvDq8ikWAM', desc: 'Rachel - Female US' },

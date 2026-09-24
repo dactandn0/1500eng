@@ -231,6 +231,55 @@ class Handler(SimpleHTTPRequestHandler):
     def log_message(self, fmt, *args):
         pass  # bot spam console
 
+    # Ho tro Range requests de seek video/audio local duoc
+    # (http.server chuan khong ho tro -> keo thanh seek liet)
+    def send_head(self):
+        if self.command != 'GET':
+            return super().send_head()
+        import re as _re
+        path = self.translate_path(
+            urllib.parse.urlparse(self.path).path)
+        if not os.path.isfile(path):
+            return super().send_head()
+        rng = self.headers.get('Range')
+        if not rng:
+            return super().send_head()
+        m = _re.match(r'bytes=(\d*)-(\d*)$', rng.strip())
+        if not m:
+            return super().send_head()
+        size = os.path.getsize(path)
+        start = int(m.group(1)) if m.group(1) else 0
+        end = int(m.group(2)) if m.group(2) else size - 1
+        if m.group(1) == '':
+            n = int(m.group(2) or 0)
+            start, end = max(0, size - n), size - 1
+        start = max(0, min(start, size - 1))
+        end = max(start, min(end, size - 1))
+        length = end - start + 1
+        try:
+            f = open(path, 'rb')
+            f.seek(start)
+        except OSError:
+            self.send_error(404)
+            return None
+        self.send_response(206)
+        self.send_header('Content-Type', self.guess_type(path))
+        self.send_header('Content-Length', str(length))
+        self.send_header('Content-Range',
+                         'bytes %d-%d/%d' % (start, end, size))
+        self.send_header('Accept-Ranges', 'bytes')
+        self.end_headers()
+        self.wfile.write(f.read(length))
+        f.close()
+        return None
+
+    def end_headers(self):
+        try:
+            self.send_header('Accept-Ranges', 'bytes')
+        except Exception:
+            pass
+        super().end_headers()
+
     def _send(self, code, body, ctype="application/json; charset=utf-8"):
         if isinstance(body, str):
             body = body.encode("utf-8")

@@ -1,0 +1,73 @@
+<section class="study-shell quiz-page">
+	<div ng-include="'./includes/studyHeader.html'"
+		ng-init="studyEyebrow='WATCH & SHADOW'; studyTitle='Watch'; studyDescription='Xem video, phụ đề chạy theo, chạm dòng để nhảy tới.'; studyStatus='WATCH'"></div>
+
+	<style>
+		.watch-video-wrap { background:#000; border-radius:12px; overflow:hidden; margin-bottom:.8rem; }
+		.watch-video-wrap video { width:100%; max-height:52vh; display:block; background:#000; }
+		.watch-yt-wrap { position:relative; width:100%; padding-bottom:56.25%; background:#000; border-radius:12px; overflow:hidden; margin-bottom:.8rem; }
+		.watch-yt-wrap #watchYt { position:absolute; inset:0; }
+		.watch-yt-wrap #watchYt iframe { width:100%; height:100%; }
+		.watch-row { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:.8rem; align-items:center; }
+		.watch-subs { max-height:46vh; overflow-y:auto; padding:.4rem; background:#fffdf7; border:1px solid #eee5c9; border-radius:12px; -webkit-overflow-scrolling:touch; }
+		.watch-sub { padding:.55rem .7rem; border-radius:10px; border:1px solid transparent; }
+		.watch-sub.is-active { background:#fff0b8; border-color:#e6c96c; }
+		.watch-sub-en { font-size:.95rem; color:#3d4c59; cursor:pointer; }
+		.watch-sub.is-active .watch-sub-en { color:#5f470c; font-weight:700; }
+		.watch-sub-vi { font-size:.82rem; color:#8b857b; margin-top:.15rem; }
+		.watch-sub-meta { display:flex; align-items:center; gap:.5rem; margin-top:.25rem; }
+		.watch-time { font-size:.72rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:999px; padding:.1rem .5rem; }
+		.watch-toggle { padding:.4rem .7rem; border-radius:999px; border:1px solid #eee5c9; background:#fffdf7; color:#756d61; font-size:.8rem; }
+		.watch-toggle.is-on { background:linear-gradient(135deg,#fff4c9 0%,#ffe9a2 100%); border-color:#e6c96c; color:#604a0e; }
+	</style>
+
+	<div class="quiz-type-row my-2">
+		<select class="setting-select" style="flex:1;" ng-model="lessonIdx" ng-change="openLesson(lessonIdx)" aria-label="Chon bai">
+			<option ng-repeat="ls in lessons track by $index" value="{{$index}}">{{ls.title}}</option>
+		</select>
+	</div>
+
+	<div ng-if="!lesson">
+		<p style="color:#8b857b;">Chưa có bài nào. Thêm vào <code>WATCH_DATA</code> trong <code>watch/watchData.js</code> (dùng <code>watch/srt2js.py</code> để chuyển .srt).</p>
+	</div>
+
+	<div ng-if="lesson">
+		<div class="watch-video-wrap" ng-if="lesson.type !== 'youtube' && !isAudio">
+			<video id="watchVideo" controls playsinline preload="metadata"></video>
+		</div>
+		<div class="watch-video-wrap" ng-if="lesson.type !== 'youtube' && isAudio" style="background:#fffdf7;">
+			<audio id="watchAudio" controls preload="metadata" style="width:100%;"></audio>
+		</div>
+		<div class="quiz-feedback is-bad" ng-if="videoErr">{{videoErr}}</div>
+		<div class="watch-yt-wrap" ng-if="lesson.type === 'youtube'">
+			<div id="watchYt"></div>
+		</div>
+
+		<div class="watch-row">
+			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="follow = !follow">
+				<i class="fa fa-magnet" aria-hidden="true"></i> Cuộn theo
+			</button>
+			<span class="watch-time">Nghỉ <input type="number" ng-model="loopDelay" ng-change="setLoopDelay()"
+				min="0" max="10000" step="50" style="width:64px; border:none; background:transparent; text-align:center;" aria-label="Loop delay ms"> ms</span>
+		</div>
+
+		<div class="watch-subs">
+			<div class="watch-sub" id="wsub{{$index}}" ng-class="{'is-active': $index === curIdx}"
+				ng-repeat="sub in lesson.subs track by $index" ng-click="seekSub(sub, $event)" role="button" tabindex="0">
+				<div class="watch-sub-en">{{sub.en}}</div>
+				<div class="watch-sub-vi" ng-if="sub.vi">{{sub.vi}}</div>
+				<div class="watch-sub-meta">
+					<span class="watch-time">{{fmtTime(sub.t)}}</span>
+					<span class="watch-time" ng-if="$index === loopIdx"><i class="fa fa-repeat" aria-hidden="true"></i> loop</span>
+					<button type="button" class="quiz-speak" ng-click="toggleLoop($event, $index)" ng-attr-title="{{loopIdx === $index ? 'Tắt lặp' : 'Lặp dòng này'}}" aria-label="Loop line"
+						ng-style="loopIdx === $index && {'background':'linear-gradient(135deg,#fff4c9 0%,#ffe9a2 100%)','border-color':'#e6c96c'}">
+						<i class="fa fa-repeat" aria-hidden="true"></i>
+					</button>
+					<button type="button" class="quiz-speak" ng-click="speakSub($event, sub)" title="Nghe câu này" aria-label="Nghe câu này">
+						<i class="fa fa-volume-up" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

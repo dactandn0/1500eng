@@ -37,8 +37,9 @@ const SPECIAL_WORDS_HL_TAG_END = '</advHL>';
 const NOTED_WORD_TAG_BEGIN = '<NOTED_WORD_HL class="_noted_word_hl">';
 const NOTED_WORD_TAG_END = '</NOTED_WORD_HL>';
 
-const kNgClickTagName = 'kkk';
-const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="ClickWordToSpeech($event)">';
+const Helper_LoopDelayKey = 'WatchLoopDelay';
+const HELPER_LOOP_DELAY_DEF = 400;
+const kNgClickTagName = 'kkk';const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="ClickWordToSpeech($event)">';
 const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';
 const Helper_BrowserVoiceKey = 'BrowserVoiceURI'; // voiceURI cua speechSynthesis (Safari/Desktop)

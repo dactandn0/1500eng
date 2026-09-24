@@ -60,7 +60,7 @@ window.RANGE = function(min, max, step) {
 	return input;
 };
 
-document.write('<small class="note">\
+document.write('<small class="note" id="grammarLegend">\
 	' + UNCOUNT_TAG_BEGIN + 'uncount.n' + UNCOUNT_TAG_END + ' <br>\
 	' + PHRA_VERB_TAG_BEGIN + 'phraVerb' + PHRA_VERB_TAG_END + ' <br>\
 	' + SPECIAL_WORDS_HL_TAG_BEGIN + '(Special)' + SPECIAL_WORDS_HL_TAG_END + ' <br>\

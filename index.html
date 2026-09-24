@@ -80,6 +80,8 @@
   <script type="text/javascript" src="ebooks/englab/preCourse/preCourseCtrl.js?v=20260923-4"></script>
   <script type="text/javascript" src="ebooks/englab/beginnerCourse/beginnerCourseCtrl.js?v=20260923-4"></script>
   <script type="text/javascript" src="vocaNoted/vocaNotedCtrl.js?v=20260923-4"></script>
+  <script type="text/javascript" src="watch/watchData.js?v=20260923-4"></script>
+  <script type="text/javascript" src="watch/watchCtrl.js?v=20260923-4"></script>
   <script type="text/javascript" src="indexCtrl.js?v=20260923-4"></script>
   <script type="text/javascript" src="vocaNoted/configUICtrl.js?v=20260923-4"></script>
   
@@ -126,6 +128,7 @@
           </div>
         </li>
         <li class="nav-item "><a class="nav-link" ng-href="#!subLesson">Lesson</a></li>
+        <li class="nav-item "><a class="nav-link" ng-href="#!watch">Watch</a></li>
         <li class="nav-item "><a class="nav-link" ng-href="#!media">Media</a></li>
         <li class="nav-item dropdown">
         	<a class="nav-link dropdown-toggle" id="subNotedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -226,6 +229,7 @@
 
   <button
         ng-click="Export2Doc()" 
+        ng-show="!$root.hideFloatBtns"
         type="button"
         class="fixed-right top80 opa btn btn-sm btn-success"
         >

@@ -71,6 +71,7 @@ var app = angular.module("myApp", [
 	'barron600RApp','barron600LApp',
 	*/
 	'subLessonApp',
+	'watchApp',
 	'lptdApp',
 	'wordCollectApp', 'quizApp', 'words4000App',
 	'modalApp', 'audioApp', 'audioLoopRadioApp',
@@ -120,6 +121,10 @@ app.config(function($routeProvider) {
 		.when('/subLesson', {
 			templateUrl: 'subLesson/subLesson.html',
 			controller: 'subLessonCtrl'
+		})
+		.when('/watch', {
+			templateUrl: 'watch/watch.html',
+			controller: 'watchCtrl'
 		})
 		.when('/spkBook', {
 			templateUrl: 'ebooks/spkBook/spkBook.html',
@@ -209,6 +214,13 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		// clear Search data when routed
 		$scope.$on('$routeChangeSuccess', function($event, next, current) {
 			$scope.clearSearch();
+			// An nut noi + legend ngu phap khi o Watch/Quiz cho gon
+			try {
+				const p = ($location.path() || '');
+				$rootScope.hideFloatBtns = (p === '/watch' || p === '/quiz');
+				const lg = document.getElementById('grammarLegend');
+				if (lg) lg.style.display = $rootScope.hideFloatBtns ? 'none' : '';
+			} catch (e) {}
 		});
 
 		$scope.clearSearch = function() {

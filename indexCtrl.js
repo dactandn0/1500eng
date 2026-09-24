@@ -353,6 +353,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		// ng-click word to speech
 		$scope.ClickWordToSpeech = function(event) {
+			console.log("ClickWordToSpeech: " + event.target.innerText)
 			event.stopPropagation()
 			if ($scope.bTransSentenOnClick && !$rootScope.bShowVi) // dont active in showVi-mode
 			{
@@ -409,25 +410,26 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		ngClickSpeechShowToast = function(touchedWord, isLongText) {
+		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS) {
 			navigator.clipboard.writeText(touchedWord);
 			const result = getVocaFromDB(touchedWord)
 			// luon goi GOOGLE TRANS API + ghep voi dict trong data (neu co)
 			Helper_GG_API($http, touchedWord).then(res => {
 				let vietnamese = '';
 				try { vietnamese = res.data[0][0][0]; } catch (e) { vietnamese = ''; }
-				doShowToast((isLongText ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, isLongText, touchedWord);
+				doShowToast((IgnoreShowTouched ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord);
 				GOOGLE_ERROR_SHOWN = false; // reset
 			}, err => {
 				// Google loi: van show dict neu co; chua co dict thi bao loi 1 lan
 				if (result.found) {
-					doShowToast(result.full, isLongText, touchedWord);
+					doShowToast(result.full, IgnoreShowTouched, touchedWord);
 				} else if (!GOOGLE_ERROR_SHOWN) {
 					GOOGLE_ERROR_SHOWN = true;
 					doShowToast('Google Translate API Error!', false, "");
 				}
 			});
-			Text2Speech(touchedWord);
+			// PlayTTS default true; false -> chi show VI, khong phat TTS
+			if (PlayTTS !== false) Text2Speech(touchedWord);
 		}
 
 		ngClickSpeechShowToastUseNode = function(pNode) {

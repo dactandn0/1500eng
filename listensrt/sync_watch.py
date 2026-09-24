@@ -115,17 +115,29 @@ def get_model(name):
     return WhisperModel(name, device=device, compute_type=compute)
 
 
-def transcribe(video_path, model, lang, beam):
+def transcribe(video_path, model, lang, beam, word_times=True):
     tmp = tempfile.NamedTemporaryFile(suffix='.wav', delete=False)
     tmp.close()
     try:
         extract_audio(video_path, tmp.name)
-        segments, _ = model.transcribe(tmp.name, beam_size=beam, language=lang)
+        segments, _ = model.transcribe(tmp.name, beam_size=beam, language=lang,
+                                       word_timestamps=word_times)
         out = []
         for seg in segments:
             t = seg.text.strip()
-            if t:
-                out.append((format_time(seg.start), format_time(seg.end), t))
+            if not t:
+                continue
+            s, e = seg.start, seg.end
+            if word_times:
+                # end cau = tu cuoi cung (+0.15s) thay vi het segment (toan silence thua)
+                try:
+                    ws = [w for w in (seg.words or []) if w.word.strip()]
+                    if ws:
+                        s = ws[0].start
+                        e = ws[-1].end + 0.15
+                except Exception:
+                    pass
+            out.append((format_time(s), format_time(e), t))
         return out
     finally:
         try:
@@ -270,6 +282,8 @@ def main():
     ap.add_argument('--model', default='base')
     ap.add_argument('--lang', default='en')
     ap.add_argument('--beam', type=int, default=5)
+    ap.add_argument('--no-word-times', action='store_true',
+                    help='tat word timestamps (nhanh hon chut, nhung gio e kem chuan)')
     ap.add_argument('--force', action='store_true', help='lam lai ca video da co .srt')
     ap.add_argument('--only', nargs='*', default=[],
                     help='chi xu ly cac file nay (stem, VD: --only 08VOA 09VOA)')
@@ -354,7 +368,8 @@ def main():
                     model = get_model(a.model)
                 print('📄 %s ...' % vf)
                 try:
-                    segs = transcribe(os.path.join(a.media_dir, vf), model, a.lang, a.beam)
+                    segs = transcribe(os.path.join(a.media_dir, vf), model, a.lang, a.beam,
+                                      word_times=(not a.no_word_times))
                 except Exception as e:
                     print('   ❌ transcribe loi: %s' % e)
                     continue

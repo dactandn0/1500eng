@@ -1,6 +1,6 @@
 <section class="study-shell quiz-page">
 	<div ng-include="'./includes/studyHeader.html'"
-		ng-init="studyEyebrow='WATCH & SHADOW'; studyTitle='Watch'; studyDescription='Xem video, phụ đề chạy theo, chạm dòng để nhảy tới.'; studyStatus='WATCH'"></div>
+		ng-init="studyEyebrow='LISTENING LAB'; studyTitle='Listen with Subtitle'; studyDescription='Xem video/Audio, phụ đề chạy theo, chạm dòng để nhảy tới.'; studyStatus='TRY HARD'"></div>
 
 	<style>
 		.watch-video-wrap { background:#000; border-radius:12px; overflow:hidden; margin-bottom:.8rem; }
@@ -63,7 +63,8 @@
 			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="follow = !follow">
 				<i class="fa fa-magnet" aria-hidden="true"></i> Cuộn theo
 			</button>
-			<span class="watch-time">Nghỉ <input type="number" ng-model="loopDelay" ng-change="setLoopDelay()"
+
+			<span class="watch-time">Loop Delay <input type="number" ng-model="loopDelay" ng-change="setLoopDelay()"
 				min="0" max="10000" step="50" style="width:64px; border:none; background:transparent; text-align:center;" aria-label="Loop delay ms"> ms</span>
 		</div>
 

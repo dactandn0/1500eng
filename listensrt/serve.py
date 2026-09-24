@@ -4,7 +4,7 @@
 serve.py - static server thay `python -m http.server`, CO ho tro Range requests.
 Can de seek video/audio local (http.server chuan khong ho tro Range -> seek liet).
 
-Dung: python watch/serve.py [port]   (phuc vu thu muc goc repo)
+Dung: python listensrt/serve.py [port]   (phuc vu thu muc goc repo)
 """
 import os
 import re

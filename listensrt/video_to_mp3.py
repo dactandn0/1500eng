@@ -5,12 +5,12 @@ video_to_mp3.py - tach audio mp3 nhe tu video (de khoi push mp4 nang len GitHub)
 App Watch chay thang file mp3 + sub (sync_watch.py ho tro audio san).
 
 Dung:
-    python watch/video_to_mp3.py watch/media/English_1.mp4
-    python watch/video_to_mp3.py watch/media/English_1.mp4 --out watch/media/English_1-small.mp3
-    python watch/video_to_mp3.py watch/media/English_1.mp4 --bitrate 96k --rate 22050
+    python listensrt/video_to_mp3.py listensrt/media/English_1.mp4
+    python listensrt/video_to_mp3.py listensrt/media/English_1.mp4 --out listensrt/media/English_1-small.mp3
+    python listensrt/video_to_mp3.py listensrt/media/English_1.mp4 --bitrate 96k --rate 22050
 
     # xong chay tiep:
-    python watch/sync_watch.py   (tu transcribe mp3 + sync vao watchData.js)
+    python listensrt/sync_watch.py   (tu transcribe mp3 + sync vao listensrtData.js)
 
 Mac dinh: mono, 16kHz, 64kbit (~0.5MB/phut) - vua nhe vua du cho Whisper + nghe.
 """
@@ -52,7 +52,7 @@ def main():
         sys.exit('❌ ffmpeg loi.')
     mb = os.path.getsize(out) / 1e6
     src_mb = os.path.getsize(a.video) / 1e6
-    print('✅ %.2fMB (goc %.1fMB). Tiep: python watch/sync_watch.py' % (mb, src_mb))
+    print('✅ %.2fMB (goc %.1fMB). Tiep: python listensrt/sync_watch.py' % (mb, src_mb))
 
 
 if __name__ == '__main__':

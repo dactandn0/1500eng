@@ -19,16 +19,32 @@
 		.watch-time { font-size:.72rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:999px; padding:.1rem .5rem; }
 		.watch-toggle { padding:.4rem .7rem; border-radius:999px; border:1px solid #eee5c9; background:#fffdf7; color:#756d61; font-size:.8rem; }
 		.watch-toggle.is-on { background:linear-gradient(135deg,#fff4c9 0%,#ffe9a2 100%); border-color:#e6c96c; color:#604a0e; }
+		.quiz-speak.is-on { background:#e7f7ee !important; border-color:#bfe6cf !important; color:#1e7e46 !important; }
+		.lesson-drop { position:absolute; top:100%; left:0; right:0; z-index:50; max-height:240px; overflow-y:auto;
+			background:#fffdf7; border:1px solid #eee5c9; border-radius:10px; margin-top:.25rem;
+			box-shadow:0 8px 20px rgba(191,151,45,.18); -webkit-overflow-scrolling:touch; }
+		.lesson-drop-item { padding:.55rem .8rem; font-size:.9rem; color:#3d4c59; cursor:pointer; }
+		.lesson-drop-item.is-active { background:#fff0b8; color:#5f470c; font-weight:700; }
+		.lesson-drop-item.is-empty { color:#8b857b; font-style:italic; cursor:default; }
 	</style>
 
 	<div class="quiz-type-row my-2">
-		<select class="setting-select" style="flex:1;" ng-model="lessonIdx" ng-change="openLesson(lessonIdx)" aria-label="Chon bai">
-			<option ng-repeat="ls in lessons track by $index" value="{{$index}}">{{ls.title}}</option>
-		</select>
+		<div style="flex:1; position:relative;">
+			<input class="setting-select" style="width:100%;" ng-model="lessonSearch"
+				ng-focus="lessonDropOpen = true" ng-blur="closeLessonDrop()" ng-change="lessonDropOpen = true"
+				ng-click="selectAllLesson($event)"
+				placeholder="Tìm bài..." aria-label="Tim bai" autocomplete="off">
+			<div class="lesson-drop" ng-show="lessonDropOpen">
+				<div class="lesson-drop-item" ng-class="{'is-active': c.i === lessonIdx}"
+					ng-repeat="c in lessonChoices | filter:lessonSearch track by $index"
+					ng-mousedown="pickLesson(c)">{{c.title}}</div>
+				<div class="lesson-drop-item is-empty" ng-if="!(lessonChoices | filter:lessonSearch).length">Không thấy bài nào</div>
+			</div>
+		</div>
 	</div>
 
 	<div ng-if="!lesson">
-		<p style="color:#8b857b;">Chưa có bài nào. Thêm vào <code>WATCH_DATA</code> trong <code>watch/watchData.js</code> (dùng <code>watch/srt2js.py</code> để chuyển .srt).</p>
+		<p style="color:#8b857b;">Chưa có bài nào. Thêm vào <code>LISTEN_DATA</code> trong <code>listensrt/listensrtData.js</code> (dùng <code>listensrt/srt2js.py</code> để chuyển .srt).</p>
 	</div>
 
 	<div ng-if="lesson">
@@ -58,14 +74,11 @@
 				<div class="watch-sub-vi" ng-if="sub.vi">{{sub.vi}}</div>
 				<div class="watch-sub-meta">
 					<span class="watch-time">{{fmtTime(sub.t)}}</span>
-					<span class="watch-time" ng-if="$index === loopIdx"><i class="fa fa-repeat" aria-hidden="true"></i> loop<span ng-if="loopCount > 0"> ×{{loopCount}}</span></span>
-					<button type="button" class="quiz-speak" ng-click="toggleLoop($event, $index)" ng-attr-title="{{loopIdx === $index ? 'Tắt lặp' : 'Lặp dòng này'}}" aria-label="Loop line"
-						ng-style="loopIdx === $index && {'background':'linear-gradient(135deg,#fff4c9 0%,#ffe9a2 100%)','border-color':'#e6c96c'}">
+					<button type="button" class="quiz-speak" ng-class="{'is-on': loopIdx === $index}"
+						ng-click="toggleLoop($event, $index)" ng-attr-title="{{loopIdx === $index ? 'Tắt lặp (×' + loopCount + ')' : 'Lặp dòng này'}}" aria-label="Loop line">
 						<i class="fa fa-repeat" aria-hidden="true"></i>
 					</button>
-					<button type="button" class="quiz-speak" ng-click="speakSub($event, sub)" title="Nghe câu này" aria-label="Nghe câu này">
-						<i class="fa fa-volume-up" aria-hidden="true"></i>
-					</button>
+					<button type="button" class="quiz-speak" ng-if="!sub.vi" ng-click="showVi($event, sub)" title="Xem nghĩa Việt" aria-label="Nghĩa Việt">vi</button>
 				</div>
 			</div>
 		</div>

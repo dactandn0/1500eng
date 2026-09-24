@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:17,000
+This is the VOA Special English Economics report. Microsoft has fought legal battles with officials in Europe and the United States over competition in the personal computer market.
+
+2
+00:00:17,000 --> 00:00:24,000
+But at the end of March Microsoft accused Google of being anti-competitive.
+
+3
+00:00:24,000 --> 00:00:34,000
+A complaint to the European Commission accused Google of unfairly controlling the internet search market in Europe.
+
+4
+00:00:34,000 --> 00:00:45,000
+Google was already talking to the Commission about the issue and said it was happy to explain to anyone how its business works.
+
+5
+00:00:45,000 --> 00:00:56,000
+But Google also faced other issues. Gmail users in China began reporting problems with Google's email service in late February.
+
+6
+00:00:56,000 --> 00:01:07,000
+The problems came as news of the revolutions in the Arab world filled the internet and there were online calls for protests in China.
+
+7
+00:01:07,000 --> 00:01:20,000
+Google said the government was interfering with its email service. Chinese foreign ministry spokeswoman Zhang Yu called those accusations unacceptable.
+
+8
+00:01:20,000 --> 00:01:31,000
+But Google spokeswoman Jessica Powell said this is a government blockage carefully designed to look like the problem is with Gmail.
+
+9
+00:01:31,000 --> 00:01:41,000
+Google is the world leader in internet search. But in China, the biggest search engine is by do.
+
+10
+00:01:41,000 --> 00:01:50,000
+And in late March China's largest internet media company Sina dropped Google's search engine from its website.
+
+11
+00:01:50,000 --> 00:01:54,000
+Sina said it would use its own technology.
+
+12
+00:01:54,000 --> 00:02:04,000
+An estimated 450 million Chinese are online about half of all internet users in Asia.
+
+13
+00:02:04,000 --> 00:02:15,000
+In 2010 Google said a cyber attack from China had attempted to get information from the Gmail accounts of human rights activists.
+
+14
+00:02:15,000 --> 00:02:19,000
+Google also expressed concerns about censorship.
+
+15
+00:02:19,000 --> 00:02:26,000
+So Google relocated its Chinese search engine from the mainland to Hong Kong.
+
+16
+00:02:26,000 --> 00:02:30,000
+In March Google also faced new problems at home.
+
+17
+00:02:30,000 --> 00:02:37,000
+A federal judge in New York ruled against its plan to put millions of books online.
+
+18
+00:02:37,000 --> 00:02:43,000
+Google wants to create a digital library of all the world's books.
+
+19
+00:02:43,000 --> 00:02:53,000
+It reached a $125 million deal in 2008 with groups representing writers and publishers.
+
+20
+00:02:53,000 --> 00:03:01,000
+Google agreed to create a system to pay copyright holders when their works are used online.
+
+21
+00:03:01,000 --> 00:03:06,000
+But Judge Denny Chen rejected the proposed settlement.
+
+22
+00:03:06,000 --> 00:03:12,000
+He said it would give Google monopoly control of the book's search market.
+
+23
+00:03:12,000 --> 00:03:17,000
+But he left open the possibility for a new plan.
+
+24
+00:03:17,000 --> 00:03:26,000
+On a similar issue by do in China said it removed almost 3 million documents from its library.
+
+25
+00:03:26,000 --> 00:03:36,000
+Writers have complained that by do did not have permission for their works to appear on its document sharing site.
+
+26
+00:03:36,000 --> 00:03:41,000
+For VOA Special English, I'm Alex Villarreal.
+
+27
+00:03:41,000 --> 00:03:51,000
+You can read and listen to our programs about business and other subjects at VOAspecialEnglish.com.
+
+28
+00:03:51,000 --> 00:03:59,000
+And click on the classroom for interactive exercises for English learners.
+

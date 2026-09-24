@@ -1,0 +1,128 @@
+1
+00:00:00,000 --> 00:00:05,000
+This is the VOA Special English Technology Report.
+
+2
+00:00:05,000 --> 00:00:12,000
+An American Space Company says a powerful new rocket should be ready for a test launch
+
+3
+00:00:12,000 --> 00:00:15,000
+by the end of next year.
+
+4
+00:00:15,000 --> 00:00:21,000
+The company is Space Exploration Technologies or Space X.
+
+5
+00:00:21,000 --> 00:00:25,000
+Its new rocket is called the Falcon Heavy.
+
+6
+00:00:25,000 --> 00:00:31,000
+Company officials say it will be able to transport satellites or spacecraft,
+
+7
+00:00:31,000 --> 00:00:36,000
+weighing up to 53 metric tons into orbit.
+
+8
+00:00:36,000 --> 00:00:43,000
+That load weight is double the capacity of NASA Space Shuttles.
+
+9
+00:00:43,000 --> 00:00:48,000
+The Space Agency is retiring its shuttles after 30 years.
+
+10
+00:00:48,000 --> 00:00:53,000
+Elon Musk is the Chief Executive Officer of SpaceX.
+
+11
+00:00:54,000 --> 00:01:02,000
+He says 53 metric tons is more than the weight of a fully loaded Boeing 737,
+
+12
+00:01:02,000 --> 00:01:07,000
+with 136 passengers, luggage, and fuel.
+
+13
+00:01:07,000 --> 00:01:16,000
+It's more payload capability than any space vehicle in history, he says, apart from the Saturn V.
+
+14
+00:01:16,000 --> 00:01:25,000
+NASA used Saturn V rockets during its Apollo and Skylab programs in the 1960s and 70s.
+
+15
+00:01:25,000 --> 00:01:34,000
+A Saturn V launched the Apollo 11 mission that landed the first humans on the moon in 1969.
+
+16
+00:01:34,000 --> 00:01:44,000
+The rockets were removed from service in 1973, but they remain the most powerful ever built.
+
+17
+00:01:44,000 --> 00:01:51,000
+Elon Musk says the Falcon Heavy will be the second most powerful rocket ever.
+
+18
+00:01:51,000 --> 00:01:59,000
+He says it was designed to do more than carry satellites and other equipment into space.
+
+19
+00:01:59,000 --> 00:02:06,000
+He says the rocket was designed to meet NASA's ratings for human flight safety.
+
+20
+00:02:07,000 --> 00:02:14,000
+So it could someday be used to carry astronauts and other travelers into space.
+
+21
+00:02:14,000 --> 00:02:26,000
+Mr. Musk says the Falcon Heavy could also be used for missions like carrying a robotic lander to collect samples from Mars.
+
+22
+00:02:26,000 --> 00:02:33,000
+He says a mission like that requires a great amount of lift capability.
+
+23
+00:02:33,000 --> 00:02:40,000
+The lander has to reach Mars and still have enough fuel to return to Earth.
+
+24
+00:02:40,000 --> 00:02:47,000
+The first launch is planned from the company's launch site at Vandenberg Air Force Base in California.
+
+25
+00:02:47,000 --> 00:02:57,000
+A launch from Cape Canaveral, Florida is expected in late 2013 or 2014.
+
+26
+00:02:57,000 --> 00:03:04,000
+In time, SpaceX hopes to launch 10 Falcon Heavy rockets a year.
+
+27
+00:03:04,000 --> 00:03:11,000
+It says the rocket should reduce launch costs to about $2,000 a kilogram.
+
+28
+00:03:11,000 --> 00:03:17,000
+That is about one-tenth the cost of carrying loads and orbit on a space shuttle.
+
+29
+00:03:17,000 --> 00:03:30,000
+SpaceX already has a billion-and-a-half dollar deal with NASA to use a smaller rocket to transport cargo to the International Space Station.
+
+30
+00:03:30,000 --> 00:03:42,000
+The rocket is the Falcon 9 and the deal is for after the two last shuttles, Endeavor and Atlantis are retired this year.
+
+31
+00:03:42,000 --> 00:03:46,000
+For VOA Special English, I'm Carolyn Prasuti.
+
+32
+00:03:46,000 --> 00:04:00,000
+For more ways to learn American English and stay informed every day, go to VOASpecialEnglish.com from your computer or mobile device.
+

@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:07,000
+I'm Alex Villarreal with the VOA Special English Technology Report.
+
+2
+00:00:07,000 --> 00:00:14,000
+Builders in developing countries are often not required to build strong buildings.
+
+3
+00:00:14,000 --> 00:00:21,000
+So, when a disaster strikes, the damage is often widespread.
+
+4
+00:00:21,000 --> 00:00:28,000
+Yet Japan is one of the most developed countries in the world.
+
+5
+00:00:28,000 --> 00:00:38,000
+Still, the March 11 earthquake and tsunami waves destroyed more than 14,000 buildings.
+
+6
+00:00:38,000 --> 00:00:46,000
+Brady Cox is an assistant professor of civil engineering at the University of Arkansas.
+
+7
+00:00:46,000 --> 00:00:58,000
+He is also an earthquake expert with an organization called Geotechnical Extreme Events Reconnaissance or Gear.
+
+8
+00:00:58,000 --> 00:01:02,000
+The group studies major disasters.
+
+9
+00:01:02,000 --> 00:01:11,000
+Professor Cox says Japan has one of the best building code systems in the world.
+
+10
+00:01:11,000 --> 00:01:21,000
+However, he says this earthquake was huge, one of the top five earthquakes in recorded history.
+
+11
+00:01:21,000 --> 00:01:28,000
+So, anytime there is an earthquake that large, there is going to be damage.
+
+12
+00:01:28,000 --> 00:01:32,000
+The Quake measured magnitude 9.
+
+13
+00:01:32,000 --> 00:01:43,000
+He says one thing many people don't understand is that building codes are meant to prevent loss of life in earthquakes.
+
+14
+00:01:43,000 --> 00:01:49,000
+That doesn't mean that the buildings won't have major damage.
+
+15
+00:01:49,000 --> 00:02:05,000
+Mr. Cox says Japan has invested a lot in seismic research and design since a magnitude 7.5 earthquake in Nigata in 1964.
+
+16
+00:02:05,000 --> 00:02:13,000
+That same year, a 9.2 quake shook the American state of Alaska.
+
+17
+00:02:13,000 --> 00:02:23,000
+He says those two earthquakes opened up a lot of new research on something called soil liquefaction.
+
+18
+00:02:23,000 --> 00:02:36,000
+Soil liquefaction is the process by which the strength or stiffness of soil is weakened by an event like the shaking of an earthquake.
+
+19
+00:02:36,000 --> 00:02:40,000
+The soil begins to move like liquid.
+
+20
+00:02:40,000 --> 00:02:49,000
+Professor Cox says the first step to designing an earthquake-resistant building is to study the soil.
+
+21
+00:02:49,000 --> 00:03:02,000
+Then, the structural engineers take that information and decide the details of the construction, such as, is this going to be a steel structure?
+
+22
+00:03:02,000 --> 00:03:06,000
+Is it going to be reinforced concrete?
+
+23
+00:03:06,000 --> 00:03:11,000
+How will the framing of the building be designed?
+
+24
+00:03:11,000 --> 00:03:21,000
+A team from Geotechnical Extreme Events Reconnaissance is going to Japan to examine the destruction.
+
+25
+00:03:21,000 --> 00:03:28,000
+Mr. Cox says they will also be working on rebuilding efforts.
+
+26
+00:03:28,000 --> 00:03:39,000
+They want to make sure that schools, hospitals, police and fire stations and government buildings are rebuilt well.
+
+27
+00:03:39,000 --> 00:03:52,000
+Mr. Cox and other members of gear went to Haiti after the powerful earthquake last year and continued to work with Haitian officials.
+
+28
+00:03:52,000 --> 00:03:58,000
+For VOA Special English, I'm Alex Villarreal.
+

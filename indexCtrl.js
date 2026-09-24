@@ -71,7 +71,7 @@ var app = angular.module("myApp", [
 	'barron600RApp','barron600LApp',
 	*/
 	'subLessonApp',
-	'watchApp',
+	'listensrtApp',
 	'lptdApp',
 	'wordCollectApp', 'quizApp', 'words4000App',
 	'modalApp', 'audioApp', 'audioLoopRadioApp',
@@ -122,9 +122,9 @@ app.config(function($routeProvider) {
 			templateUrl: 'subLesson/subLesson.html',
 			controller: 'subLessonCtrl'
 		})
-		.when('/watch', {
-			templateUrl: 'watch/watch.html',
-			controller: 'watchCtrl'
+		.when('/listensrt', {
+			templateUrl: 'listensrt/listensrt.html',
+			controller: 'listensrtCtrl'
 		})
 		.when('/spkBook', {
 			templateUrl: 'ebooks/spkBook/spkBook.html',
@@ -217,7 +217,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			// An nut noi + legend ngu phap khi o Watch/Quiz cho gon
 			try {
 				const p = ($location.path() || '');
-				$rootScope.hideFloatBtns = (p === '/watch' || p === '/quiz');
+				$rootScope.hideFloatBtns = (p === '/listensrt' || p === '/quiz');
 				const lg = document.getElementById('grammarLegend');
 				if (lg) lg.style.display = $rootScope.hideFloatBtns ? 'none' : '';
 			} catch (e) {}

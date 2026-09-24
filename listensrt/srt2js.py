@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 """
 srt2js.py - chuyen .srt (+ .srt tieng Viet, optional) thanh entry cho
-watch/watchData.js (module Watch).
+listensrt/listensrtData.js (module Watch).
 
 Dung:
-    python srt2js.py lesson1.en.srt lesson1.vi.srt --id lesson1 --title "Bai 1" --src watch/media/lesson1.mp4
+    python srt2js.py lesson1.en.srt lesson1.vi.srt --id lesson1 --title "Bai 1" --src listensrt/media/lesson1.mp4
     python srt2js.py lesson1.en.srt --id lesson1 --title "Bai 1" --youtube aqz-KE-bpKQ
 
-    -> in ra khoi JS, copy paste vao mang WATCH_DATA trong watch/watchData.js
-       (video mp4 thi copy file vao watch/media/).
+    -> in ra khoi JS, copy paste vao mang LISTEN_DATA trong listensrt/listensrtData.js
+       (video mp4 thi copy file vao listensrt/media/).
 """
 import argparse
 import re
@@ -58,7 +58,7 @@ def main():
     ap.add_argument('vi_srt', nargs='?', default=None, help='.srt tieng Viet (optional)')
     ap.add_argument('--id', required=True)
     ap.add_argument('--title', default='')
-    ap.add_argument('--src', default='', help='VD: watch/media/lesson1.mp4')
+    ap.add_argument('--src', default='', help='VD: listensrt/media/lesson1.mp4')
     ap.add_argument('--youtube', default='', help='videoId YouTube (thay cho --src)')
     a = ap.parse_args()
 
@@ -71,7 +71,7 @@ def main():
     if a.youtube:
         typ, src = 'youtube', a.youtube
     else:
-        typ, src = 'file', (a.src or ('watch/media/%s.mp4' % a.id))
+        typ, src = 'file', (a.src or ('listensrt/media/%s.mp4' % a.id))
 
     print('\t{')
     print('\t\tid: %s,' % js_str(a.id))
@@ -85,7 +85,7 @@ def main():
               % (s, e, js_str(t), js_str(v)))
     print('\t\t]')
     print('\t},')
-    print('// %d dong phu de -> paste vao WATCH_DATA' % len(en), file=sys.stderr)
+    print('// %d dong phu de -> paste vao LISTEN_DATA' % len(en), file=sys.stderr)
 
 
 if __name__ == '__main__':

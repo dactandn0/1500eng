@@ -1,14 +1,33 @@
-var app = angular.module("watchApp", []);
-app.controller("watchCtrl", function($scope, $rootScope, $timeout, $interval, $sce) {
+var app = angular.module("listensrtApp", ['toastr']);
+app.controller("listensrtCtrl", function($scope, $rootScope, $timeout, $interval, $sce, toastr) {
 
-$scope.lessons = (typeof WATCH_DATA !== 'undefined') ? WATCH_DATA.slice() : [];
+$scope.lessons = (typeof LISTEN_DATA !== 'undefined') ? LISTEN_DATA.slice() : [];
 // order: so nho len truoc. Khong co order -> xuong cuoi (giu thu tu cu).
 $scope.lessons.sort(function (a, b) {
 	const oa = (a && typeof a.order === 'number') ? a.order : 1e9;
 	const ob = (b && typeof b.order === 'number') ? b.order : 1e9;
 	return oa - ob;
 });
-$scope.lessonIdx = '0';
+// bIgnored: 1 -> an khoi dropbox (0/khong co -> hien)
+$scope.lessonChoices = $scope.lessons.map(function (ls, i) {
+	return { i: i, title: ls.title, show: !(ls && ls.bIgnored) };
+}).filter(function (c) { return c.show; });
+$scope.lessonIdx = ($scope.lessonChoices.length ? $scope.lessonChoices[0].i : 0);
+$scope.lessonSearch = '';
+$scope.lessonDropOpen = false;
+$scope.pickLesson = function (c) {
+	if (!c) return;
+	$scope.lessonSearch = c.title;
+	$scope.lessonDropOpen = false;
+	$scope.openLesson(c.i);
+};
+$scope.closeLessonDrop = function () {
+	$timeout(function () { $scope.lessonDropOpen = false; }, 150);
+};
+$scope.selectAllLesson = function (ev) {
+	// Bam vao o tim la boi den het de go de
+	try { if (ev && ev.target && ev.target.select) ev.target.select(); } catch (e) {}
+};
 $scope.lesson = null;
 $scope.curIdx = -1;
 $scope.follow = true;
@@ -63,9 +82,10 @@ function teardown() {
 $scope.openLesson = function (i) {
 	try { Text2SpeechStop(); } catch (e) {}
 	teardown();
-	$scope.lessonIdx = String(i);
-	$scope.lesson = $scope.lessons[i] || null;
+	$scope.lessonIdx = +i || 0;
+	$scope.lesson = $scope.lessons[$scope.lessonIdx] || null;
 	$scope.curIdx = -1;
+	$scope.lessonSearch = ($scope.lesson && $scope.lesson.title) || '';
 	$scope.videoErr = '';
 	$scope.videoUrl = null;
 	$scope.isAudio = false;
@@ -345,10 +365,21 @@ $scope.toggleLoop = function (ev, idx) {
 		if (sub) $scope.seekSub(sub, null, true);
 	}
 };
-$scope.speakSub = function (ev, sub) {
+// Nut "vi": hien toast nghia Viet (co san thi dung, khong thi dich)
+$scope.showVi = function (ev, sub) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	if (!sub || !sub.en) return;
-	try { (typeof Text2SpeechReplay === 'function' ? Text2SpeechReplay : Text2Speech)(sub.en); } catch (e) {}
+	const done = function (vi) {
+		try { toastr.info(vi || '(chua co nghia Viet)', sub.en, { allowHtml: true }); } catch (e) {}
+	};
+	if (sub.vi) { done(sub.vi); return; }
+	try {
+		if (typeof dictFetchVi === 'function') {
+			dictFetchVi(sub.en).then(function (vi) {
+				$timeout(function () { done(vi); });
+			}, function () { $timeout(function () { done(''); }); });
+		} else done('');
+	} catch (e) { done(''); }
 };
 
 $scope.fmtTime = function (s) {
@@ -372,6 +403,7 @@ $scope.$on('$viewContentLoaded', function () {
 });
 
 // mo bai dau tien
-if ($scope.lessons.length) $scope.openLesson(0);
+// mo bai dau tien KHONG bi ignore
+if ($scope.lessonChoices.length) $scope.openLesson($scope.lessonChoices[0].i);
 
 });

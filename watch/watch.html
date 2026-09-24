@@ -58,7 +58,7 @@
 				<div class="watch-sub-vi" ng-if="sub.vi">{{sub.vi}}</div>
 				<div class="watch-sub-meta">
 					<span class="watch-time">{{fmtTime(sub.t)}}</span>
-					<span class="watch-time" ng-if="$index === loopIdx"><i class="fa fa-repeat" aria-hidden="true"></i> loop</span>
+					<span class="watch-time" ng-if="$index === loopIdx"><i class="fa fa-repeat" aria-hidden="true"></i> loop<span ng-if="loopCount > 0"> ×{{loopCount}}</span></span>
 					<button type="button" class="quiz-speak" ng-click="toggleLoop($event, $index)" ng-attr-title="{{loopIdx === $index ? 'Tắt lặp' : 'Lặp dòng này'}}" aria-label="Loop line"
 						ng-style="loopIdx === $index && {'background':'linear-gradient(135deg,#fff4c9 0%,#ffe9a2 100%)','border-color':'#e6c96c'}">
 						<i class="fa fa-repeat" aria-hidden="true"></i>

@@ -13,6 +13,7 @@ $scope.lesson = null;
 $scope.curIdx = -1;
 $scope.follow = true;
 $scope.loopIdx = -1; // index dong dang loop (-1 = tat)
+$scope.loopCount = 0; // dem so vong da lap
 $scope.loopDelay = (typeof HELPER_LOOP_DELAY_DEF !== 'undefined') ? HELPER_LOOP_DELAY_DEF : 400;
 try {
 	if (typeof Helper_LoopDelayKey !== 'undefined' && typeof Helper_loadInt === 'function') {
@@ -69,6 +70,7 @@ $scope.openLesson = function (i) {
 	$scope.videoUrl = null;
 	$scope.isAudio = false;
 	$scope.loopIdx = -1;
+	$scope.loopCount = 0;
 	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
 	if (!$scope.lesson) return;
 	// trust 1 lan duy nhat -> ng-src on dinh, khong bi digest reset lien tuc
@@ -248,8 +250,10 @@ function tick(t) {
 			loopTimer = setTimeout(function () {
 				loopTimer = null;
 				try {
-					if ($scope.loopIdx >= 0 && $scope.lesson && $scope.lesson.subs[$scope.loopIdx])
+					if ($scope.loopIdx >= 0 && $scope.lesson && $scope.lesson.subs[$scope.loopIdx]) {
+						$scope.loopCount += 1;
 						$scope.seekSub($scope.lesson.subs[$scope.loopIdx], null, true);
+					}
 				} catch (e) {}
 			}, _delay);
 		}
@@ -274,6 +278,7 @@ $scope.seekSub = function (sub, ev, autoplay) {
 		const subs0 = $scope.lesson && $scope.lesson.subs;
 		if (subs0 && $scope.loopIdx >= 0 && subs0.indexOf(sub) !== $scope.loopIdx) {
 			$scope.loopIdx = -1;
+			$scope.loopCount = 0;
 			try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
 		}
 	} catch (e) {}
@@ -331,9 +336,11 @@ $scope.toggleLoop = function (ev, idx) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	if ($scope.loopIdx === idx) {
 		$scope.loopIdx = -1;
+		$scope.loopCount = 0;
 		try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
 	} else {
 		$scope.loopIdx = idx;
+		$scope.loopCount = 0;
 		const sub = $scope.lesson && $scope.lesson.subs[idx];
 		if (sub) $scope.seekSub(sub, null, true);
 	}

@@ -508,7 +508,7 @@ provide the perfect conditions for <br>\
 Tips<br>\
 1. Nên dùng giới từ chỉ thời gian 1 cách chính xác<br>\
 At + giờ trong ngày, sự kiện lễ hội và với 'dawn' (bình minh), noon, night, midnight, dusk (hoàng hôn), Christmas<br>\
-- The train will arrive at 9 p.m.<br>\
+- The train will arrive at 9 pm.<br>\
 - The streets are always busy at Christmas.<br>\
 On + được sử dụng với thứ, ngày cụ thể<br>\
 - I'm often late to work on Mondays.<br>\
@@ -517,7 +517,7 @@ In + được sử dụng với năm, mùa, tháng và các phần trong ngày<b
 - She said (xed) she would give you a call in the evening.<br>\
 - For me, Australia is far too hot in the summer.<br>\
 By được sử dụng để chỉ ra rằng hoạt động được hoàn thành hoặc kết thúc bằng một điểm thời gian nào đó.<br>\
-- I usually start to feel tired by 10 p.m<br>\
+- I usually start to feel tired by 10 pm<br>\
 - All the leaves on the trees will have fallen by November.<br>\
 During: được dùng để nói về một điều gì đó diễn ra trong một khoảng thời gian nhất định và có thể sử dụng với các buổi trong ngày, mùa và các lễ hội ( không phải một điểm thời gian như 'noon')<br>\
 - The best time to do exercise is during the morning break.<br>\

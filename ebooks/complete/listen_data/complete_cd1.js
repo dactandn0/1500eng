@@ -29,7 +29,7 @@ Ngay phía sau đó trên cùng một tầng, những người muốn hít thở
 },
 {
 	track:"3.T18",
-	en:"Now for some further details. This voyage is an overnight trip. The ship leaves port at 7 p.m and the journey takes just over 12 hours and 45 minutes, reaching our destination at about eight tomorrow morning. This is for the convenience of those wishing to catch the nine o'clock train, which leaves from the ferry terminal.<br>\
+	en:"Now for some further details. This voyage is an overnight trip. The ship leaves port at 7 pm and the journey takes just over 12 hours and 45 minutes, reaching our destination at about eight tomorrow morning. This is for the convenience of those wishing to catch the nine o'clock train, which leaves from the ferry terminal.<br>\
 Passengers with children in their party are informed that there is a special section in the restaurant with kids' food and a play area. People with children are encouraged to turn up early to get a place, as the section is very popular.<br>\
 Make this a trip to remember. Here at the information desk, you can obtain a souvenir ship's key ring for four euros fifty; you can upgrade from a tourist-class cabin to a first-class cabin; and you can get your train tickets here, which will save you time queuing in the station tomorrow morning. If you buy them on the ship, you can get them for 20 percent off.<br>\
 For those using the lounge and wishing to check their email, there's a wireless connection, but you'll have to bring your own laptop. You can also watch the latest TV programmes there or in the coffee bar next to the restaurant.<br>\

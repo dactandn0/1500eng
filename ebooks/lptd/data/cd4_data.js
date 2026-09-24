@@ -69,7 +69,7 @@ M2: Did you hear the weather report, Jenny? It looks like it'll be a clear weeke
 W2: That's almost unbelievable! I'm really looking forward to getting out of the city and camping under the stars. But we'd better get our stuff ready tonight, Paul, if we're planning to leave tomorrow right after work.<br>\
 M2: Yes, we'll need our tent, sleeping bags, camping stove, and a cooler for the drinks. What about food?<br>\
 W2: Let's stop at a store and pick up some groceries on the way out.<br>\
-M2: Sounds good. Well, we'd better get packing if we want to be ready to go by 5:00 p.m. tomorrow."
+M2: Sounds good. Well, we'd better get packing if we want to be ready to go by 5:00 pm tomorrow."
 	,vi:"Phần I<br>\
 W1: Và bây giờ, đến lượt Barry với dự báo thời tiết của chúng ta cho cuối tuần này. Cuối tuần này thế nào, Barry? Riêng tôi, tôi biết mình đang mong chờ bầu trời quang đãng. Hai tuần qua thậm chí còn mưa nhiều hơn bình thường ở Seattle.<br>\
 M1: Vâng, Sue, người dân Seattle sẽ rất vui khi biết rằng đợt mưa này cuối cùng cũng sắp kết thúc. Mặc dù hôm nay thỉnh thoảng có mưa rào, nhưng đến tối nay mọi thứ sẽ khô ráo, và sáng thứ Sáu sẽ quang đãng và nắng. Thời tiết đẹp này sẽ kéo dài cho đến cuối tuần, với nhiệt độ dao động từ 55 đến 75 độ, vì vậy mọi người có thể cất ô đi. Quay lại với bạn, Sue.<br>\

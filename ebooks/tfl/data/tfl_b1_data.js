@@ -446,15 +446,15 @@ On the 16th."
 	en:"1.<br>\
 This is Dr. Costello's office. We're calling to change your dental appointment to August 3rd at 9:30 in the morning. Thank you.<br>\
 2.<br>\
-Hi, Don. It's Sue. I'm calling about Cindy's birthday party. It's on July 28th at 8 p.m. Are you free? I'll call you later.<br>\
+Hi, Don. It's Sue. I'm calling about Cindy's birthday party. It's on July 28th at 8 pm. Are you free? I'll call you later.<br>\
 3.<br>\
 Hello, Don. This is Aunt Betty. How are you, darling? Listen, I'm coming to town next month and I'd love to see you. I'm arriving on August the tenth at 11:15 in the morning. I'll call you from the airport. Bye!<br>\
 4.<br>\
 Hi, Don. This is Ted. Listen, we can't play tennis on Saturday. Are you free Sunday afternoon, July 26th, around three?<br>\
 5.<br>\
-Hello, Don. This is Francis. I'll be back from my trip on Tuesday, September 22nd. Let's meet in my office that Tuesday around 6 p.m., okay? Let me know.<br>\
+Hello, Don. This is Francis. I'll be back from my trip on Tuesday, September 22nd. Let's meet in my office that Tuesday around 6 pm., okay? Let me know.<br>\
 6.<br>\
-This is Star Travel. We've booked your flight to New Orleans for next month. You leave on August 2nd on flight 101 from Kennedy Airport at 2 p.m."
+This is Star Travel. We've booked your flight to New Orleans for next month. You leave on August 2nd on flight 101 from Kennedy Airport at 2 pm."
 	,vi:""
 	,voca:"",
 },
@@ -785,7 +785,7 @@ I don't like jogging or doing anything too energetic. I prefer taking walks. I l
 3<br>\
 I am a big football fan, but I only watch it on TV. I can't stand playing it! There are great games to watch on the weekend. I also enjoy watching tennis. I'd like to learn someday, but I don't like to sweat. I love chess and often play with my younger sister. She's really good at it and usually wins. On the weekends, I love to play video games with some of my friends.<br>\
 4<br>\
-I just love to exercise! I like many different sports. Let's see... I like swimming a lot. I get up very early, around 5 a.m., and swim for two hours from Monday to Friday. I also enjoy basketball and play with a group of friends from work every Tuesday night. And I've also started playing golf this year. Before playing, I go jogging to warm up.<br>\
+I just love to exercise! I like many different sports. Let's see... I like swimming a lot. I get up very early, around 5 am, and swim for two hours from Monday to Friday. I also enjoy basketball and play with a group of friends from work every Tuesday night. And I've also started playing golf this year. Before playing, I go jogging to warm up.<br>\
 5<br>\
 I enjoy exercise, but I don't do it as much as I should. I meet a friend every Wednesday and we play tennis. I'm not a very good player, but it's fun and we usually play for an hour. On weekends, I like to bicycle in our neighborhood. I guess I spend an hour or two doing that. Oh, and I love baseball, but only watching it while sitting on the couch eating popcorn!"
 	,vi:"1<br>\

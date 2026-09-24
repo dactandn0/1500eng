@@ -32,6 +32,7 @@
 
   
   <script type="text/javascript" src="helper/dbFunc.js?v=20260923-4"></script>
+  <script type="text/javascript" src="helper/mediaZoom.js?v=20260923-4"></script>
   <script type="text/javascript" src="helper/supaSync.js?v=20260923-4"></script>
   <script type="text/javascript" src="helper/helper.js?v=20260923-4"></script>
   <script type="text/javascript" src="helper/txt2speech.js?v=20260923-4"></script>
@@ -232,6 +233,18 @@
    </button>
 
     </div> <!-- container -->
+
+    <!-- Image zoom overlay (helper/mediaZoom.js): click bat ky anh nao de phong to -->
+    <div id="imgZoomOverlay" class="img-zoom-overlay" style="display:none">
+      <button type="button" id="imgZoomClose" class="img-zoom-x" aria-label="Close">×</button>
+      <div class="img-zoom-btns">
+        <button type="button" id="imgZoomMinus" aria-label="Zoom out">−</button>
+        <button type="button" id="imgZoomPlus" aria-label="Zoom in">+</button>
+      </div>
+      <div id="imgZoomStage" class="img-zoom-stage">
+        <img id="imgZoomImg" class="img-zoom-img" alt="">
+      </div>
+    </div>
     
     <p style="height:15vh"></p>
 </body>

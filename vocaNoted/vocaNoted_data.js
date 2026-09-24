@@ -866,7 +866,7 @@ smoky (a) /ˈsməʊki/  xông khói",
 },
 {
 title:"Natural disasters",
-en:"Snowstorm (n) /ˈsnəʊstɔːrm/ bão tuyết<br>\
+en:"\
 Typhoon (n) /taɪˈfuːn/ bão<br>\
 Tsunami (n) /tsuːˈnɑːmi/ sóng thần<br>\
 landslide (n) /ˈlændslaɪd/ sạt lở đất<br>\
@@ -877,7 +877,6 @@ Flood (n) /flʌd/ Lũ lụt<br>\
 Drought (n) draʊt/ Hạn hán<br>\
 Famine (n) /ˈfæmɪn/ Nạn đói<br>\
 Avalanche (n) /ˈævəˌlæntʃ/ Tuyết lở<br>\
-Blizzard (n) /ˈblɪzərd/ Bão tuyết<br>\
 Tornado (n) /tɔrˈneɪdoʊ/ Lốc xoáy<br>\
 Forest fire (n) /ˈfɔːrɪst ˌfaɪər/ Cháy rừng<br>\
 Hurricane (n) /ˈhɜːrɪˌkeɪn/ Bão<br>\

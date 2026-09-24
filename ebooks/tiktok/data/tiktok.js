@@ -93,7 +93,7 @@ b. I am interested in your community development projects because I really care 
 c. I am writing to apply for a volunteer position at the local center for community development.<br>\
 d. Currently, all my Sunday afternoons are free, and I will be able to help at the center if I am chosen.<br>\
 e. I look forward to hearing from you.<br>\
-f. I am always available for an interview on any weekday after 4.30 p.m. or at weekends."
+f. I am always available for an interview on any weekday after 4.30 pm. or at weekends."
 },
 {
 unit: 10,
@@ -352,7 +352,7 @@ b. I am interested in your community development projects because I really care 
 c. I am writing to apply for a volunteer position at the local center for community development. <br>\
 d. Currently, all my Sunday afternoons are free, and I will be able to help at the center if I am chosen. <br>\
 e. I look forward to hearing from you. <br>\
-f. I am always available for an interview on any weekday after 4:30 p.m. or at weekends."
+f. I am always available for an interview on any weekday after 4:30 pm. or at weekends."
 },
 {
 unit:39
@@ -367,7 +367,7 @@ f. They may learn how to socialize with others, or learn how to cooperate in a d
 {
 unit:40
 ,title:"PASSAGE 40"
-,en:"City Golf Course encourages reservations. Only one reservation per call. For weekdays, call one full day in advance. Call Wednesday between 5 and 8 p.m. for Saturday and Thursday between 5 and 8 p.m. for Sunday. <br>\
+,en:"City Golf Course encourages reservations. Only one reservation per call. For weekdays, call one full day in advance. Call Wednesday between 5 and 8 pm. for Saturday and Thursday between 5 and 8 pm. for Sunday. <br>\
 Anyone making reservations is expected to check in with the pro shop a quarter hour prior to tee time."
 },
 {

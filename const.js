@@ -39,7 +39,7 @@ const NOTED_WORD_TAG_END = '</NOTED_WORD_HL>';
 
 const Helper_LoopDelayKey = 'WatchLoopDelay';
 const Helper_ListenLessonKey = 'ListenLessonId';
-const HELPER_LOOP_DELAY_DEF = 400;
+const HELPER_LOOP_DELAY_DEF = 0;
 const kNgClickTagName = 'kkk';const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="ClickWordToSpeech($event)">';
 const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';

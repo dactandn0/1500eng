@@ -69,6 +69,8 @@ let videoEl = null;
 let ytPlayer = null;
 let pollTimer = null;
 let seekGraceUntil = 0; // bo qua timeupdate cu ngay sau khi seek (tranh highlight nhay ve dau)
+let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, chi nhan khi toi noi
+let seekSince = 0;
 let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
 let loopTimer = null; // hen gio replay khi loop 1 dong
 let programPause = false; // pause do CODE (loop) -> bo qua pause handler
@@ -99,6 +101,7 @@ $scope.openLesson = function (i) {
 	// reset loop TRUOC teardown (event seeking async tu load() toi sau phai thay loop da tat)
 	$scope.loopIdx = -1;
 	$scope.loopCount = 0;
+	seekTarget = null;
 	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
 	try { Text2SpeechStop(); } catch (e2) {}
 	teardown();
@@ -154,6 +157,7 @@ function setupPlayer(retry) {
 					if (videoEl._watchEN) videoEl.removeEventListener('ended', videoEl._watchEN);
 					if (videoEl._watchER) videoEl.removeEventListener('error', videoEl._watchER);
 					if (videoEl._watchLD) videoEl.removeEventListener('loadeddata', videoEl._watchLD);
+					if (videoEl._watchSD) videoEl.removeEventListener('seeked', videoEl._watchSD);
 					if (videoEl._watchPA) videoEl.removeEventListener('pause', videoEl._watchPA);
 					if (videoEl._watchPL) videoEl.removeEventListener('play', videoEl._watchPL);
 				} catch (e) {}
@@ -187,6 +191,11 @@ function setupPlayer(retry) {
 				videoEl.addEventListener('ended', videoEl._watchEN);
 				videoEl.addEventListener('error', videoEl._watchER);
 				videoEl.addEventListener('loadeddata', videoEl._watchLD);
+				// seek xong -> mo khoa tick ngay (khong doi timeupdate toi noi)
+				videoEl._watchSD = function () {
+					try { seekTarget = null; } catch (e) {}
+				};
+				videoEl.addEventListener('seeked', videoEl._watchSD);
 				// pause tay -> huy replay dang cho (play lai se hen moi qua tick)
 				videoEl._watchPA = function () {
 					if (programPause) { programPause = false; return; }
@@ -199,15 +208,24 @@ function setupPlayer(retry) {
 				};
 				videoEl.addEventListener('play', videoEl._watchPL);
 				videoEl._watchSK = function () {
-					// seeking trong 3s sau thao tac code (seek/load/nap bai) -> bo qua.
-					// Chi user keo tay that (xa thao tac code) moi tat loop.
-					try { if (Date.now() - lastProgMediaAt < 3000) return; } catch (e) {}
-					if ($scope.loopIdx >= 0) {
-						$scope.loopIdx = -1;
-						$scope.loopCount = 0;
-						try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
-						try { $scope.$applyAsync(); } catch (e2) {}
-					}
+					// seeking do CODE (da dem truoc) -> tru va bo qua
+					try { if (expectSeeks > 0) { expectSeeks--; } } catch (e) {}
+					// Tat loop CHI KHI vi tri hien tai NAM NGOAI dong loop.
+					// (seeking gia tu load()/replay nam trong dong -> bo qua.
+					//  keo tay that nhay ra ngoai -> tat loop ngay ca khi counter con du.)
+					try {
+						if ($scope.loopIdx >= 0) {
+							const ls = $scope.lesson && $scope.lesson.subs;
+							const lo = ls && ls[$scope.loopIdx];
+							let ct = -1;
+							try { ct = videoEl.currentTime; } catch (e2) { ct = -1; }
+							if (lo && ct >= 0 && ct >= (lo.t || 0) - 0.6 && ct <= (lo.e || 0) + 1.5) return;
+							$scope.loopIdx = -1;
+							$scope.loopCount = 0;
+							try { clearTimeout(loopTimer); loopTimer = null; } catch (e3) {}
+							try { $scope.$applyAsync(); } catch (e4) {}
+						}
+					} catch (e) {}
 				};
 				videoEl.addEventListener('seeking', videoEl._watchSK);
 				videoEl._watchBound = $scope.lesson.src;
@@ -304,6 +322,12 @@ function scrollPanelTo(idx) {
 function tick(t) {
 	if (!$scope.lesson || !$scope.lesson.subs) return;
 	if (Date.now() < seekGraceUntil) return; // dang seek: bo event cu
+	// seek cham (file nang): chua toi noi thi bo het tick cu, khong cho giat highlight/scroll ve
+	if (seekTarget !== null) {
+		if (Math.abs(t - seekTarget) < 1.0) { seekTarget = null; }
+		else if (Date.now() - seekSince > 8000) { seekTarget = null; }
+		else return;
+	}
 	const subs = $scope.lesson.subs;
 	let idx = -1;
 	for (let i = 0; i < subs.length; i++) {
@@ -413,6 +437,9 @@ $scope.seekSub = function (sub, ev, autoplay) {
 		}
 	} catch (e) {}
 	const t = Math.max(0, (sub.t || 0) + 0.01);
+	// khoa tick cho toi khi seek toi noi (seek cham thi timeupdate cu khong giat ve)
+	seekTarget = t;
+	seekSince = Date.now();
 	// optimistic update ngay: highlight dung dong, ke timeupdate cu (khong scroll)
 	try {
 		const subs = $scope.lesson && $scope.lesson.subs;
@@ -448,10 +475,19 @@ $scope.seekSub = function (sub, ev, autoplay) {
 		const doSeek = function () {
 			try { videoEl.currentTime = t; } catch (e) {}
 			if (autoplay !== false) {
-				try {
-					const p = videoEl.play();
-					if (p && typeof p.catch === 'function') p.catch(function () {});
-				} catch (e) {}
+				// play() lan dau hay rot (mat gesture sau async) -> thu lai vai lan
+				let tries = 0;
+				const tryPlay = function () {
+					try {
+						const p = videoEl.play();
+						if (p && typeof p.catch === 'function') p.catch(function () {
+							if (++tries < 3) setTimeout(tryPlay, 350);
+						});
+					} catch (e) {
+						if (++tries < 3) setTimeout(function () { tryPlay(); }, 350);
+					}
+				};
+				tryPlay();
 			}
 		};
 		if (videoEl.readyState === 0) {
@@ -511,9 +547,11 @@ $scope.showVi = function (ev, sub) {
 // Seek chu dong (code) vs user keo thanh tua native:
 // keo tay trong luc loop -> TAT loop. Danh dau THOI DIEM thay vi dem event
 // (load()/metadata cham van dung; event toi tre bao lau cung dung).
-let lastProgMediaAt = 0;
+// Dem seek CHU DONG: goi markProgMedia() truoc moi currentTime/load.
+// seeking toi (ke ca tre/muon) thi tru 1 va bo qua.
+let expectSeeks = 0;
 function markProgMedia() {
-	try { lastProgMediaAt = Date.now(); } catch (e) {}
+	try { expectSeeks++; } catch (e) {}
 }
 
 $scope.fmtTime = function (s) {

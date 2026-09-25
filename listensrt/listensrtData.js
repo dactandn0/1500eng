@@ -960,7 +960,7 @@ const LISTEN_DATA = [
 			{ t: 1739.00, e: 1741.00, en: 'Do their parents tell them to stop?', vi: '' },
 			{ t: 1741.00, e: 1744.00, en: 'Do they say you are not perfect?', vi: '' },
 			{ t: 1744.00, e: 1747.00, en: 'No, they cheer for every small sound.', vi: '' },
-			{ t: 1747.00, e: 1750.00, en: 'They celebrate the brave effort of trying.', vi: '' },
+			{ t: 1747.00, e: 1749.50, en: 'They celebrate the brave effort of trying.', vi: '' },
 			{ t: 1750.00, e: 1752.00, en: 'You must be that parent to yourself.', vi: '' },
 			{ t: 1752.00, e: 1756.00, en: 'Give yourself strict permission to be imperfect.', vi: '' },
 			{ t: 1756.00, e: 1760.00, en: 'Let your tongue practice without any judgment.', vi: '' },

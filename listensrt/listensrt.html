@@ -11,9 +11,9 @@
 		.watch-row { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:.8rem; align-items:center; }
 		.watch-subs { max-height:46vh; overflow-y:auto; padding:.4rem; background:#fffdf7; border:1px solid #eee5c9; border-radius:12px; -webkit-overflow-scrolling:touch; }
 		.watch-sub { padding:.55rem .7rem; border-radius:10px; border:1px solid transparent; }
-		.watch-sub.is-active { background:#fff0b8; border-color:#e6c96c; }
+		.watch-sub.is-active { background:#f5f5f5; border-color:#e6c96c; }
 		.watch-sub-en { font-size:.95rem; color:#3d4c59; cursor:pointer; }
-		.watch-sub.is-active .watch-sub-en { color:#5f470c; font-weight:700; }
+		.watch-sub.is-active .watch-sub-en { color:#5f470c; font-weight:500; }
 		.watch-sub-vi { font-size:.82rem; color:#8b857b; margin-top:.15rem; }
 		.watch-sub-meta { display:flex; align-items:center; gap:.5rem; margin-top:.25rem; }
 		.watch-time { font-size:.72rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:999px; padding:.1rem .5rem; }
@@ -24,7 +24,7 @@
 		@keyframes watchNowIn { from { opacity:.15; } to { opacity:1; } }
 		.watch-sub { transition: background-color .4s ease, border-color .4s ease; }
 		.watch-sub-en { transition: color .4s ease; }
-		.watch-sub.row-anim { animation: rowFlash .5s ease; }
+		/*.watch-sub.row-anim { animation: rowFlash .5s ease; }*/
 		@keyframes rowFlash { 0% { background-color:#ffe9a2; } 100% { background-color:transparent; } }
 		.quiz-speak.is-on { background:#e7f7ee !important; border-color:#bfe6cf !important; color:#1e7e46 !important; }
 		.lesson-drop { position:absolute; top:100%; left:0; right:0; z-index:50; max-height:240px; overflow-y:auto;

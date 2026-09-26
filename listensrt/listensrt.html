@@ -19,6 +19,13 @@
 		.watch-time { font-size:.72rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:999px; padding:.1rem .5rem; }
 		.watch-toggle { padding:.4rem .7rem; border-radius:999px; border:1px solid #eee5c9; background:#fffdf7; color:#756d61; font-size:.8rem; }
 		.watch-toggle.is-on { background:linear-gradient(135deg,#fff4c9 0%,#ffe9a2 100%); border-color:#e6c96c; color:#604a0e; }
+		.watch-now { flex:1; min-width:0; font-size:.85rem; color:#5f470c; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+		.watch-now.watch-anim { animation: watchNowIn 1.45s ease; }
+		@keyframes watchNowIn { from { opacity:.15; } to { opacity:1; } }
+		.watch-sub { transition: background-color .4s ease, border-color .4s ease; }
+		.watch-sub-en { transition: color .4s ease; }
+		.watch-sub.row-anim { animation: rowFlash .5s ease; }
+		@keyframes rowFlash { 0% { background-color:#ffe9a2; } 100% { background-color:transparent; } }
 		.quiz-speak.is-on { background:#e7f7ee !important; border-color:#bfe6cf !important; color:#1e7e46 !important; }
 		.lesson-drop { position:absolute; top:100%; left:0; right:0; z-index:50; max-height:240px; overflow-y:auto;
 			background:#fffdf7; border:1px solid #eee5c9; border-radius:10px; margin-top:.25rem;
@@ -61,8 +68,9 @@
 
 		<div class="watch-row">
 			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="toggleFollow()">
-				<i class="fa fa-magnet" aria-hidden="true"></i> Cuộn theo
+				<i class="fa fa-magnet" aria-hidden="true"></i>&nbsp;Auto follow
 			</button>
+			<span class="ml-1 watch-now" ng-if="lesson && lesson.subs[curIdx]">▶ {{lesson.subs[curIdx].en}}</span>
 		</div>
 
 		<div class="watch-subs">

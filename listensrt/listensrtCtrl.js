@@ -305,8 +305,28 @@ function copySubEn(sub) {
 		}
 	} catch (e) {}
 }
+// Ep chay lai animation moi lan doi cau (keyframes chi tu chay khi element moi sinh)
+function replayCurAnim(idx) {
+	try {
+		const nows = document.querySelectorAll('.watch-now');
+		for (let k = 0; k < nows.length; k++) {
+			nows[k].classList.remove('watch-anim');
+			void nows[k].offsetWidth;
+			nows[k].classList.add('watch-anim');
+		}
+		if (idx >= 0) {
+			const el = document.getElementById('wsub' + idx);
+			if (el) {
+				el.classList.remove('row-anim');
+				void el.offsetWidth;
+				el.classList.add('row-anim');
+			}
+		}
+	} catch (e) {}
+}
 // Cuon PANEL sub (chi trong div.watch-subs, khong cuon ca trang)
-function scrollPanelTo(idx) {	try {
+function scrollPanelTo(idx) {
+	try {
 		const panels = document.querySelectorAll('.watch-subs');
 		const el = document.getElementById('wsub' + idx);
 		if (!el || !panels.length) return;
@@ -410,6 +430,7 @@ function tick(t) {
 			$scope.curIdx = li;
 			try { $scope.$applyAsync(); } catch (e) {}
 			copySubEn(subs[li]);
+			replayCurAnim(li);
 		}
 		if ($scope.follow) scrollPanelTo(li);
 		return;
@@ -418,6 +439,7 @@ function tick(t) {
 	$scope.curIdx = idx;
 	try { $scope.$applyAsync(); } catch (e) {}
 	copySubEn(subs[idx]);
+	replayCurAnim(idx);
 	if (idx >= 0 && $scope.follow) scrollPanelTo(idx);
 }
 
@@ -451,6 +473,7 @@ $scope.seekSub = function (sub, ev, autoplay) {
 				seekGraceUntil = Date.now() + 600;
 				try { $scope.$applyAsync(); } catch (e) {}
 				copySubEn(sub);
+				replayCurAnim(ti);
 			}
 		}
 	} catch (e) {}

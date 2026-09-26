@@ -60,12 +60,9 @@
 		</div>
 
 		<div class="watch-row">
-			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="follow = !follow">
+			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="toggleFollow()">
 				<i class="fa fa-magnet" aria-hidden="true"></i> Cuộn theo
 			</button>
-
-			<span class="watch-time">Loop Delay <input type="number" ng-model="loopDelay" ng-change="setLoopDelay()"
-				min="0" max="10000" step="50" style="width:64px; border:none; background:transparent; text-align:center;" aria-label="Loop delay ms"> ms</span>
 		</div>
 
 		<div class="watch-subs">

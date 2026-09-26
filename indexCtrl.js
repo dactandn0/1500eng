@@ -418,14 +418,15 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				let vietnamese = '';
 				try { vietnamese = res.data[0][0][0]; } catch (e) { vietnamese = ''; }
 				doShowToast((IgnoreShowTouched ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord);
-				GOOGLE_ERROR_SHOWN = false; // reset
+				//GOOGLE_ERROR_SHOWN = false; // reset
 			}, err => {
 				// Google loi: van show dict neu co; chua co dict thi bao loi 1 lan
 				if (result.found) {
 					doShowToast(result.full, IgnoreShowTouched, touchedWord);
-				} else if (!GOOGLE_ERROR_SHOWN) {
-					GOOGLE_ERROR_SHOWN = true;
-					doShowToast('Google Translate API Error!', false, "");
+				} else //if (!GOOGLE_ERROR_SHOWN) 
+				{
+					//GOOGLE_ERROR_SHOWN = true;
+					doShowToast(' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> <span class="text-danger">error</span>', false, "");
 				}
 			});
 			// PlayTTS default true; false -> chi show VI, khong phat TTS

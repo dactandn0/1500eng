@@ -213,7 +213,7 @@ def js_str(s):
 
 
 def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefix='', order=None):
-    stem = os.path.splitext(video_file)[0]
+    stem = os.path.splitext(os.path.basename(video_file))[0]  # id = ten file (khong duong dan)
     lines = ['\t{',
              '\t\tid: %s,' % js_str(stem),
              '\t\tbIgnored: 0,']
@@ -304,8 +304,14 @@ def main():
 
     if not os.path.isdir(a.media_dir):
         sys.exit('❌ Khong co thu muc: %s' % a.media_dir)
-    videos = sorted(f for f in os.listdir(a.media_dir)
-                    if f.lower().endswith(MEDIA_EXTS))
+    videos = []
+    for root, _, files in os.walk(a.media_dir):
+        for fn in files:
+            if fn.lower().endswith(MEDIA_EXTS):
+                # giu duong dan tuong doi (subfolder) de src/srt map dung
+                rel = os.path.relpath(os.path.join(root, fn), a.media_dir).replace(os.sep, '/')
+                videos.append(rel)
+    videos = sorted(videos)
     # mp4 nao da co mp3/wav cung ten thi ignore mp4 (nhe repo, khoi push video nang)
     aud_stems = {os.path.splitext(f)[0] for f in videos
                  if f.lower().endswith(AUDIO_EXTS)}
@@ -320,7 +326,8 @@ def main():
     if a.only:
         want = {w.lower() for w in a.only}
         videos = [vf for vf in videos
-                  if os.path.splitext(vf)[0].lower() in want or vf.lower() in want]
+                  if os.path.splitext(vf)[0].lower() in want or vf.lower() in want
+                  or os.path.splitext(os.path.basename(vf))[0].lower() in want]
         if not videos:
             sys.exit('❌ --only khong khop file nao.')
     if not videos:

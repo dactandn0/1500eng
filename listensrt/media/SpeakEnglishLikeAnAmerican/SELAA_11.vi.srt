@@ -1,0 +1,72 @@
+1
+00:00:02,279 --> 00:00:05,850
+Bài học 11. Bob đưa ra một món hời lớn.
+
+2
+00:00:06,599 --> 00:00:11,370
+Carol từ chợ làng gọi Bob để thảo luận về những chiếc bánh quy hảo hạng của Susan.
+
+3
+00:00:12,039 --> 00:00:15,790
+Carolyn Bob thảo luận về số tiền Bob sẽ nhận được cho mỗi chiếc bánh quy.
+
+4
+00:00:17,059 --> 00:00:19,250
+Chào, thế nào rồi?
+
+5
+00:00:19,940 --> 00:00:22,349
+Được rồi, cảm ơn Carol. Bạn khỏe không?
+
+6
+00:00:22,859 --> 00:00:27,910
+Không thể phàn nàn. Bob, tôi đã có cơ hội để nghiền nát một số con số.
+
+7
+00:00:27,760 --> 00:00:31,089
+Tôi có thể trả cho bạn 50 xu cho mỗi cookie.
+
+8
+00:00:31,739 --> 00:00:35,949
+Không còn nghi ngờ gì nữa. Với mức giá đó, nó không xứng đáng với thời gian của chúng tôi.
+
+9
+00:00:36,359 --> 00:00:39,350
+Chỉ riêng các thành phần đã khiến chúng tôi mất 30 xu cho mỗi chiếc bánh quy.
+
+10
+00:00:40,340 --> 00:00:46,009
+Được rồi, hãy để tôi làm dịu thỏa thuận. 60 xu cho mỗi cookie?
+
+11
+00:00:46,780 --> 00:00:50,409
+Carol, vợ tôi và tôi cần kiếm sống từ công việc kinh doanh này.
+
+12
+00:00:50,259 --> 00:00:54,210
+Được rồi, được rồi. Bạn đã vặn cánh tay của tôi.
+
+13
+00:00:54,820 --> 00:00:59,549
+Tôi sẽ trả bạn 75 cent cho mỗi cookie. Cầm lấy hoặc bỏ đi.
+
+14
+00:00:59,859 --> 00:01:02,429
+Bây giờ bạn đang nói chuyện. Chúng tôi sẽ lấy nó.
+
+15
+00:01:02,920 --> 00:01:05,690
+Anh là một món hời khó nhằn, Bob.
+
+16
+00:01:06,400 --> 00:01:08,390
+Có, nhưng chúng tôi làm một chiếc bánh quy ngon.
+
+17
+00:01:09,019 --> 00:01:11,050
+Hãy để quả bóng lăn.
+
+18
+00:01:11,659 --> 00:01:16,450
+Mang cho tôi 2.000 bánh quy vào sáng thứ Hai lúc 9 giờ sáng
+

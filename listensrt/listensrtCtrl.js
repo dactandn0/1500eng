@@ -97,6 +97,45 @@ $scope.toggleNote = function (ev, idx) {
 		$timeout(function () { try { scrollPanelTo($scope.openNoteIdx); } catch (e) {} }, 120);
 	}
 };
+// Star: luu dong sub yeu thich. Key localStorage: lstStar_<lessonId>-<subIdx>.
+// Vao route / doi bai -> load lai de set icon on/off.
+$scope.starMap = {}; // idx -> true (bai hien tai)
+function starKey(idx) {
+	try {
+		const id = ($scope.lesson && $scope.lesson.id) || '';
+		if (!id && id !== 0) return null;
+		return 'lstStar_' + id + '-' + idx;
+	} catch (e) { return null; }
+}
+function loadStars() {
+	$scope.starMap = {};
+	try {
+		const id = ($scope.lesson && $scope.lesson.id) || '';
+		const pre = 'lstStar_' + id + '-';
+		for (let i = 0; i < localStorage.length; i++) {
+			const k = localStorage.key(i);
+			if (k && k.indexOf(pre) === 0) {
+				const idx = parseInt(k.slice(pre.length), 10);
+				if (!isNaN(idx)) $scope.starMap[idx] = true;
+			}
+		}
+	} catch (e) {}
+}
+$scope.isStarred = function (idx) { try { return !!$scope.starMap[idx]; } catch (e) { return false; } };
+$scope.toggleStar = function (ev, idx) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	try {
+		if ($scope.starMap[idx]) {
+			delete $scope.starMap[idx];
+			const k = starKey(idx);
+			if (k) localStorage.removeItem(k);
+		} else {
+			$scope.starMap[idx] = true;
+			const k = starKey(idx);
+			if (k) Helper_saveDB(k, '1');
+		}
+	} catch (e) {}
+};
 $scope.videoErr = '';
 $scope.videoUrl = null; // trusted 1 lan/khi doi bai (tranh reload loop)
 $scope.isAudio = false; // true khi lesson la file tieng (mp3/wav...)
@@ -151,6 +190,7 @@ $scope.openLesson = function (i) {
 	} catch (e) {}
 	$scope.curIdx = -1;
 	$scope.openNoteIdx = -1; // doi bai -> dong het note cu
+	loadStars(); // doi bai -> load star tu local de set icon on/off
 	$scope.lessonSearch = ($scope.lesson && $scope.lesson.title) || '';
 	$scope.showScript = false;
 	try {

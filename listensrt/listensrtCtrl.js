@@ -42,6 +42,33 @@ $scope.selectAllLesson = function (ev) {
 	// Bam vao o tim la boi den het de go de
 	try { if (ev && ev.target && ev.target.select) ev.target.select(); } catch (e) {}
 };
+// Dieu huong dropbox bang phim tren PC: len/xuong doi highlight, Enter chon, Esc dong
+$scope.lessonActive = 0;
+$scope.filteredLessons = function () {
+	const q = ($scope.lessonSearch || '').toLowerCase().trim();
+	if (!q) return $scope.lessonChoices;
+	return $scope.lessonChoices.filter(function (c) { return (c.title || '').toLowerCase().indexOf(q) >= 0; });
+};
+$scope.lessonKey = function (ev) {
+	const key = ev.which || ev.keyCode;
+	const list = $scope.filteredLessons();
+	if (key === 40) { // Down
+		ev.preventDefault();
+		$scope.lessonDropOpen = true;
+		$scope.lessonActive = Math.min(list.length - 1, $scope.lessonActive + 1);
+	} else if (key === 38) { // Up
+		ev.preventDefault();
+		$scope.lessonDropOpen = true;
+		$scope.lessonActive = Math.max(0, $scope.lessonActive - 1);
+	} else if (key === 13) { // Enter
+		ev.preventDefault();
+		const pick = list[$scope.lessonActive] || list[0];
+		if (pick) $scope.pickLesson(pick);
+		else $scope.lessonDropOpen = false;
+	} else if (key === 27) { // Esc
+		$scope.lessonDropOpen = false;
+	}
+};
 $scope.lesson = null;
 $scope.curIdx = -1;
 $scope.follow = true;

@@ -195,6 +195,9 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		$rootScope.$on('$routeChangeStart', function() {
 			$rootScope.bVocaOfEbook = false;
 			$rootScope.vocaEbook = [];
+			// doi route -> tat nut Show Vi con sot tu ebook (storyHasVi chi set khi mo unit)
+			$rootScope.storyHasVi = false;
+			$rootScope.bShowVi = 0;
 		});
 
 

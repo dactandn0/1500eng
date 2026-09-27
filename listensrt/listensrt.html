@@ -82,7 +82,7 @@
 			<div class="watch-sub" id="wsub{{$index}}" ng-class="{'is-active': $index === curIdx}"
 				ng-repeat="sub in lesson.subs track by $index" ng-click="seekSub(sub, $event)" role="button" tabindex="0">
 				<div class="watch-sub-en">{{sub.en}}</div>
-				<div class="watch-sub-vi" ng-if="sub.vi">{{sub.vi}}</div>
+				<div class="watch-sub-vi" ng-if="sub.vi">{{$index+1}}. {{sub.vi}}</div>
 				<div class="watch-sub-meta">
 					<span class="watch-time">{{fmtTime(sub.t)}}</span>
 					<button type="button" class="quiz-speak" ng-class="{'is-on': loopIdx === $index}"

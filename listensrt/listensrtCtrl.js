@@ -640,8 +640,22 @@ $scope.fmtTime = function (s) {
 	return m + ':' + String(s % 60).padStart(2, '0');
 };
 
+// Thanh watch-row: cuon xuong qua 80px -> dock day man hinh (opa .7 qua CSS),
+// ve dau trang -> ve cho cu (opa 1)
+function updateRowDock() {
+	try {
+		const row = document.querySelector('.watch-row-sticky');
+		if (!row) return;
+		const y = window.pageYOffset || document.documentElement.scrollTop || 0;
+		if (y > 80) row.classList.add('is-docked');
+		else row.classList.remove('is-docked');
+	} catch (e) {}
+}
+try { window.addEventListener('scroll', updateRowDock, { passive: true }); } catch (e) {}
+
 $scope.$on('$destroy', function () {
 	teardown();
+	try { window.removeEventListener('scroll', updateRowDock); } catch (e) {}
 	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
 	try { Text2SpeechStop(); } catch (e) {}
 });
@@ -652,6 +666,7 @@ $scope.$on('$viewContentLoaded', function () {
 		if ($scope.lesson) $timeout(function () { setupPlayer(); }, 50);
 	} catch (e) {}
 	topFunction();
+	try { updateRowDock(); } catch (e) {}
 });
 
 // Debug: chay trong Console khi loop/seek hong -> paste ket qua

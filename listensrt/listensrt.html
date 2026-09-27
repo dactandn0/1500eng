@@ -11,6 +11,8 @@
 		.watch-row { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:.8rem; align-items:center; }
 		.watch-subs { max-height:46vh; overflow-y:auto; padding:.4rem; background:#fffdf7; border:1px solid #eee5c9; border-radius:12px; -webkit-overflow-scrolling:touch; }
 		.watch-sub { padding:.55rem .7rem; border-radius:10px; border:1px solid transparent; }
+		.watch-script { max-height:46vh; overflow-y:auto; padding:.8rem 1rem; background:#fffdf7; border:1px solid #eee5c9; border-radius:12px;
+			white-space:pre-line; font-size:.9rem; line-height:1.75; color:#3d4c59; -webkit-overflow-scrolling:touch; }
 		.watch-sub.is-active { background:#f5f5f5; border-color:#e6c96c; }
 		.watch-sub-en { font-size:.95rem; color:#3d4c59; cursor:pointer; }
 		.watch-sub.is-active .watch-sub-en { color:#5f470c; font-weight:500; }
@@ -65,15 +67,18 @@
 		<div class="watch-yt-wrap" ng-if="lesson.type === 'youtube'">
 			<div id="watchYt"></div>
 		</div>
-
 		<div class="watch-row">
 			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="toggleFollow()">
 				<i class="fa fa-magnet" aria-hidden="true"></i>&nbsp;Auto follow
 			</button>
+			<button type="button" class="watch-toggle" ng-class="{'is-on': showScript}" ng-click="toggleScript()" ng-if="lessonNotes">
+				<i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;ShowScript
+			</button>
 			<span class="ml-1 watch-now" ng-if="lesson && lesson.subs[curIdx]">▶ {{lesson.subs[curIdx].en}}</span>
 		</div>
 
-		<div class="watch-subs">
+		<div class="watch-script" ng-if="showScript && lessonNotes !== ''">{{lessonNotes}}</div>
+		<div class="watch-subs" ng-show="!showScript">
 			<div class="watch-sub" id="wsub{{$index}}" ng-class="{'is-active': $index === curIdx}"
 				ng-repeat="sub in lesson.subs track by $index" ng-click="seekSub(sub, $event)" role="button" tabindex="0">
 				<div class="watch-sub-en">{{sub.en}}</div>

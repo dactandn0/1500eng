@@ -212,14 +212,109 @@ def js_str(s):
     return "'" + s.replace('\\', '\\\\').replace("'", "\\'") + "'"
 
 
-def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefix='', order=None):
+def natural_key(s):
+    return [int(t) if t.isdigit() else t.lower() for t in re.split(r'(\d+)', s)]
+
+
+def to_sec(ts):
+    m = re.match(r'(\d+):(\d+):(\d+)[,.](\d+)', str(ts).strip())
+    if not m:
+        return 0.0
+    h, mi, se, ms = map(int, m.groups())
+    return h * 3600 + mi * 60 + se + ms / 1000.0
+
+
+def fmt(x):
+    h, r = divmod(int(x), 3600)
+    m, s = divmod(r, 60)
+    return '%02d:%02d:%02d' % (h, m, s)
+
+
+def apply_gap(merged, gap):
+    # 2 chieu (chi data sync, khong sua .srt):
+    #  1) e thua cham t cau sau -> lui e (VD e=1542, next t=1542 -> e=1541.7)
+    #  2) t chong len e cau truoc (dinh duoi tu) -> day t tre (VD t=957.0 -> 957.3)
+    # Giu toi thieu 0.5s/cau. Giu nguyen cac field sau.
+    if gap <= 0 or len(merged) < 2:
+        return merged
+    out = [list(m) for m in merged]
+    for i in range(len(out) - 1):
+        ns = to_sec(out[i + 1][0])
+        e = to_sec(out[i][1])
+        cap = ns - gap
+        floor = to_sec(out[i][0]) + 0.5
+        if e > cap and cap >= floor:
+            out[i][1] = format_time(cap)
+    for i in range(1, len(out)):
+        pe = to_sec(out[i - 1][1])
+        t = to_sec(out[i][0])
+        e = to_sec(out[i][1])
+        if t < pe:
+            nt = min(pe + 0.3, e - 0.5)
+            if nt > t:
+                out[i][0] = format_time(nt)
+    return [tuple(m) for m in out]
+
+
+def check_segments(vf, merged):
+    # Bao cau nghi van: chong lan / am gio / qua ngan / cach xa. Chi sua tay may dong nay.
+    warns = []
+    segs = [(to_sec(s), to_sec(e), t) for s, e, t in merged]
+    for i, (s, e, t) in enumerate(segs):
+        tag = t.split(' ||| ')[0][:42]
+        if e <= s:
+            warns.append('  ! #%d am gio (t>=e): %s..%s "%s"' % (i + 1, s, e, tag))
+        elif e - s < 0.6:
+            warns.append('  ! #%d qua ngan (%.1fs): "%s"' % (i + 1, e - s, tag))
+        if i > 0:
+            ps, pe, _ = segs[i - 1]
+            if s < pe - 0.05:
+                warns.append('  ! #%d chong cau truoc (t=%s < e=%s): "%s"'
+                            % (i + 1, fmt(s), fmt(pe), tag))
+            elif s - pe > 7:
+                warns.append('  ! #%d cach cau truoc %.0fs (co the thieu cau): "%s"'
+                            % (i + 1, s - pe, tag))
+    return warns
+
+
+def parse_existing(content):
+    # Doc entry cu de GIU title/order/bIgnored sua tay khi sync lai
+    out = {}
+    for m in re.finditer(r"\{\s*id: '((?:[^'\\]|\\.)*)'(.*?)\n\t\},", content, flags=re.S):
+        eid, body = m.group(1), m.group(2)
+        t = re.search(r"\n\t\ttitle: ('(?:[^'\\]|\\.)*'),", body)
+        o = re.search(r"\n\t\torder: (\d+),", body)
+        b = re.search(r"\n\t\tbIgnored: (\d+),", body)
+        out[eid] = {
+            'title_raw': t.group(1) if t else None,
+            'order': int(o.group(1)) if o else None,
+            'bIgnored': int(b.group(1)) if b else 0,
+        }
+    return out
+
+
+def render_title(template, stem, default_title):
+    # {num02}: so trong ten file, pad 2 (SELAA_1 -> 01). {num}, {stem}, {title}
+    if not template:
+        return None
+    m = re.search(r'(\d+)', stem)
+    num = m.group(1) if m else ''
+    return template.replace('{num02}', num.zfill(2)).replace('{num}', num or '?') \
+        .replace('{stem}', stem).replace('{title}', default_title)
+
+
+def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefix='', order=None,
+             title=None, bignored=0, title_raw=None):
     stem = os.path.splitext(os.path.basename(video_file))[0]  # id = ten file (khong duong dan)
     lines = ['\t{',
              '\t\tid: %s,' % js_str(stem),
-             '\t\tbIgnored: 0,']
+             '\t\tbIgnored: %d,' % (bignored or 0)]
     if order is not None:
         lines.append('\t\torder: %d,' % order)
-    lines.append('\t\ttitle: %s,' % js_str(title_prefix + stem_title(stem)))
+    if title_raw is not None:
+        lines.append('\t\ttitle: %s,' % title_raw)  # giu nguyen sua tay
+    else:
+        lines.append('\t\ttitle: %s,' % js_str(title if title is not None else title_prefix + stem_title(stem)))
     lines += ["\t\ttype: 'file',",
               '\t\tsrc: %s,' % js_str(src_prefix + video_file),
               '\t\tsubs: [']
@@ -235,7 +330,8 @@ def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefi
     return '\n'.join(lines)
 
 
-def sync_data(data_js, video_files):
+def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/media/',
+              title_prefix='', order_start=None, title_template='', title_match=''):
     with open(data_js, encoding='utf-8') as f:
         content = f.read()
     if START_MARK not in content or END_MARK not in content:
@@ -246,12 +342,15 @@ def sync_data(data_js, video_files):
         content = (content[:idx] + START_MARK + '\n' + END_MARK + '\n'
                    + content[idx:])
         print('ℹ Tu them markers AUTO-SYNC vao %s' % data_js)
+    keep = parse_existing(content)  # giu title/order/bIgnored sua tay
     blocks = []
     total_subs = 0
-    for vf in sorted(video_files):
+    all_warns = []
+    ord_no = order_start
+    for vf in sorted(video_files, key=natural_key):
         base = os.path.splitext(vf)[0]
-        segs_en = load_srt(os.path.join(os.path.dirname(data_js), 'media', base + '.srt'))
-        segs_vi = load_srt(os.path.join(os.path.dirname(data_js), 'media', base + '.vi.srt'))
+        segs_en = load_srt(os.path.join(media_dir, base + '.srt'))
+        segs_vi = load_srt(os.path.join(media_dir, base + '.vi.srt'))
         vi_by_en = {}
         for s, e, t in segs_vi:
             vi_by_en.setdefault((s, e), t)
@@ -261,11 +360,27 @@ def sync_data(data_js, video_files):
             if v.startswith('[LOI DICH]'):
                 v = ''  # dich loi -> de trong, app hien EN (chay --retranslate sau)
             merged.append((s, e, t + ' ||| ' + v))
+        merged = apply_gap(merged, gap)
+        for w in check_segments(vf, merged):
+            all_warns.append('  [%s] %s' % (vf, w))
         if not merged:
             print('   ⏭ %s: chua co .srt -> bo qua (chay transcribe truoc)' % vf)
             continue
         total_subs += len(merged)
-        blocks.append(entry_js(vf, merged))
+        stem = os.path.splitext(os.path.basename(vf))[0]
+        old = keep.get(stem, {})
+        if title_template and (not title_match or title_match.lower() in vf.lower()):
+            title, title_raw = render_title(title_template, stem, stem_title(stem)), None
+        elif old.get('title_raw'):
+            title, title_raw = None, old['title_raw']  # giu sua tay
+        else:
+            title, title_raw = None, None
+        blocks.append(entry_js(vf, merged, src_prefix,
+                               title_prefix if title is None and title_raw is None else '',
+                               ord_no if ord_no is not None else old.get('order'),
+                               title, old.get('bIgnored', 0), title_raw))
+        if ord_no is not None:
+            ord_no += 1
     new_section = START_MARK + '\n' + '\n'.join(blocks) + '\n' + END_MARK if blocks \
         else START_MARK + '\n' + END_MARK
     pattern = re.compile(re.escape(START_MARK) + r'.*?' + re.escape(END_MARK), re.S)
@@ -273,6 +388,12 @@ def sync_data(data_js, video_files):
     with open(data_js, 'w', encoding='utf-8') as f:
         f.write(content)
     print('✅ Sync %d video, %d dong sub -> %s' % (len(blocks), total_subs, data_js))
+    if all_warns:
+        print('🔍 Cau nghi van (sua tay trong .srt roi sync lai):')
+        for w in all_warns[:40]:
+            print(w)
+        if len(all_warns) > 40:
+            print('  ... con %d cau' % (len(all_warns) - 40))
 
 
 def main():
@@ -291,6 +412,12 @@ def main():
                     help='tien to src trong data (VD: ebooks/lptd/data/cd1/ de dung file goc)')
     ap.add_argument('--title-prefix', default='',
                     help='tien to title (VD: "LPTD CD1 - ")')
+    ap.add_argument('--title-template', default='',
+                    help='mau title: {num02} so pad-2 trong ten file (VD: "SpeakEnglishLikeAnAmerican {num02}")')
+    ap.add_argument('--title-match', default='',
+                    help='chi ap template cho file chua chu nay (VD: SELAA). Trong thi ap het')
+    ap.add_argument('--gap', type=float, default=0.3,
+                    help='cat e thua + day t tre khoi vung chong lan, giay (default 0.3, 0 = tat)')
     ap.add_argument('--order-start', type=int, default=None,
                     help='danh order tu so nay, tang dan theo file')
     ap.add_argument('--no-vi', action='store_true',
@@ -403,7 +530,9 @@ def main():
                         print('   ⚠ %d/%d cau loi dich (chay --retranslate sau)' % (bad, len(vis)))
             print('   🎉 xong %s' % vf)
 
-    sync_data(a.data_js, videos_all)
+    sync_data(a.data_js, a.media_dir, videos_all, a.gap,
+              a.src_prefix, a.title_prefix, a.order_start,
+              a.title_template, a.title_match)
 
 
 if __name__ == '__main__':

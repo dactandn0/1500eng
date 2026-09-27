@@ -45,10 +45,15 @@ $scope.selectAllLesson = function (ev) {
 $scope.lesson = null;
 $scope.curIdx = -1;
 $scope.follow = true;
+$scope.showScript = false;
+$scope.lessonNotes = '';
 $scope.toggleFollow = function () {
 	// phai qua ham (ghi thang scope cha): nut nam trong ng-if (scope con),
 	// gán trực tiếp sẽ tạo biến shadow, nút bấm mà tick không thấy
 	$scope.follow = !$scope.follow;
+};
+$scope.toggleScript = function () {
+	$scope.showScript = !$scope.showScript;
 };
 $scope.loopIdx = -1; // index dong dang loop (-1 = tat)
 $scope.loopCount = 0; // dem so vong da lap
@@ -105,6 +110,10 @@ $scope.openLesson = function (i) {
 	} catch (e) {}
 	$scope.curIdx = -1;
 	$scope.lessonSearch = ($scope.lesson && $scope.lesson.title) || '';
+	$scope.showScript = false;
+	try {
+		$scope.lessonNotes = ($scope.lesson && typeof LISTEN_NOTES !== 'undefined' && LISTEN_NOTES[$scope.lesson.id]) || '';
+	} catch (e) { $scope.lessonNotes = ''; }
 	$scope.videoErr = '';
 	$scope.videoUrl = null;
 	$scope.isAudio = false;

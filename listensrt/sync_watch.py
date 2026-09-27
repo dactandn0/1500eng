@@ -3,7 +3,7 @@
 """
 sync_watch.py - pipeline 1 lenh cho module Watch:
   1. Quet video trong watch/media (.mp4/.mkv/.mov/.webm)
-  2. Video nao thieu .srt -> faster-whisper tao EN, deep_translator dich VI
+  2. Video nao thieu .srt -> faster-whisper tao EN (VI de trong, tu dich tay)
   3. Sync vao listensrt/listensrtData.js (chi viet vung AUTO-SYNC, giu entry tay/Youtube)
   4. ID = ten file video (khong duoi) de de mapping.
 
@@ -146,64 +146,6 @@ def transcribe(video_path, model, lang, beam, word_times=True):
             pass
 
 
-def translate_all(texts):
-    """Dich list EN -> VI: Google truoc, rot xuong MyMemory (free, khac ha tang).
-    Batch neu lib ho tro, retry + delay tranh rate-limit."""
-    import time as _time
-    from deep_translator import GoogleTranslator
-    tr = GoogleTranslator(source='auto', target='vi')
-    if not texts:
-        return []
-    # thu batch (deep_translator moi)
-    if hasattr(tr, 'translate_batch'):
-        for attempt in range(3):
-            try:
-                got = tr.translate_batch(texts)
-                if got and len(got) == len(texts):
-                    return [g if g else t for g, t in zip(got, texts)]
-            except Exception as e:
-                if attempt == 2:
-                    print('   ⚠ batch fail, dich le: %s' % str(e)[:120])
-                continue
-    # MyMemory du phong (Google hay chan IP): khoi tao 1 lan
-    mm = None
-    try:
-        from deep_translator import MyMemoryTranslator
-        mm = MyMemoryTranslator(source='english us', target='vietnamese')
-    except Exception as e:
-        print('   ⚠ khong co MyMemory fallback: %s' % str(e)[:100])
-
-    def via_mymemory(t):
-        if not mm:
-            return None
-        for _ in range(2):
-            try:
-                g = mm.translate(t)
-                if g and 'QUERY LENGTH LIMIT' not in g and 'INVALID' not in g.upper():
-                    return g
-            except Exception:
-                continue
-            _time.sleep(0.5)
-        return None
-
-    out = []
-    for t in texts:
-        done = None
-        for _ in range(3):
-            try:
-                g = tr.translate(t)
-                if g:
-                    done = g
-                    break
-            except Exception:
-                continue
-        if done is None:
-            done = via_mymemory(t)
-        out.append(done if done else '[LOI DICH] ' + t)
-        _time.sleep(0.4)  # Google gioi han ~5 req/s
-    return out
-
-
 def stem_title(stem):
     return re.sub(r'\s+', ' ', stem.replace('_', ' ').replace('-', ' ')).strip().title()
 
@@ -277,11 +219,46 @@ def check_segments(vf, merged):
     return warns
 
 
+def _js_unescape(s):
+    return s.replace('\\\\', '\x00').replace("\\'", "'").replace('\\"', '"').replace('\\`', '`') \
+        .replace('\\n', '\n').replace('\x00', '\\')
+
+
+def _qmatch(m, base):
+    # tra (inner, raw gom quote goc) tu 1 trong 3 nhom ', ", `
+    for gi in (base, base + 1, base + 2):
+        if m.group(gi) is not None:
+            q = ["'", '"', '`'][gi - base]
+            return m.group(gi), q + m.group(gi) + q
+    return '', "''"
+
+
+def parse_notes(content):
+    # Doc note cu theo cau EN de giu lai khi sync.
+    # Chiu moi kieu viet: note:'..' / note : ".." / note: `..`, truoc hay sau en.
+    out = {}
+    sq = r"'((?:[^'\\]|\\.)*)'"
+    dq = r'"((?:[^"\\]|\\.)*)"'
+    bq = r'`((?:[^`\\]|\\.)*)`'
+    val = r'(?:%s|%s|%s)' % (sq, dq, bq)
+    for m in re.finditer(r"en: %s[^}]*?note\s*:\s*%s" % (val, val), content):
+        en, _ = _qmatch(m, 1)
+        note, raw = _qmatch(m, 4)
+        if _js_unescape(en) and note:
+            out.setdefault(_js_unescape(en), raw)
+    for m in re.finditer(r"note\s*:\s*%s[^}]*?en: %s" % (val, val), content):
+        note, raw = _qmatch(m, 1)
+        en, _ = _qmatch(m, 4)
+        if _js_unescape(en) and note:
+            out.setdefault(_js_unescape(en), raw)
+    return out
+
+
 def parse_existing(content):
     # Doc entry cu de GIU title/order/bIgnored sua tay khi sync lai
     out = {}
-    for m in re.finditer(r"\{\s*id: '((?:[^'\\]|\\.)*)'(.*?)\n\t\},", content, flags=re.S):
-        eid, body = m.group(1), m.group(2)
+    for m in re.finditer(r"(\{\s*id: '((?:[^'\\]|\\.)*)'(.*?)\n\t\},)", content, flags=re.S):
+        full, eid, body = m.group(1), m.group(2), m.group(3)
         t = re.search(r"\n\t\ttitle: ('(?:[^'\\]|\\.)*'),", body)
         o = re.search(r"\n\t\torder: (\d+),", body)
         b = re.search(r"\n\t\tbIgnored: (\d+),", body)
@@ -289,6 +266,8 @@ def parse_existing(content):
             'title_raw': t.group(1) if t else None,
             'order': int(o.group(1)) if o else None,
             'bIgnored': int(b.group(1)) if b else 0,
+            'raw': full,
+            'has_subs': bool(re.search(r'\{ t:', body)),
         }
     return out
 
@@ -304,7 +283,7 @@ def render_title(template, stem, default_title):
 
 
 def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefix='', order=None,
-             title=None, bignored=0, title_raw=None):
+             title=None, bignored=0, title_raw=None, notes=None):
     stem = os.path.splitext(os.path.basename(video_file))[0]  # id = ten file (khong duong dan)
     lines = ['\t{',
              '\t\tid: %s,' % js_str(stem),
@@ -318,13 +297,16 @@ def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefi
     lines += ["\t\ttype: 'file',",
               '\t\tsrc: %s,' % js_str(src_prefix + video_file),
               '\t\tsubs: [']
-    for s, e, t in segments_vi:
+    for j, (s, e, t) in enumerate(segments_vi):
         m = re.match(r'(\d+):(\d+):(\d+)[,.](\d+)', s)
         ts = int(m.group(1)) * 3600 + int(m.group(2)) * 60 + int(m.group(3)) + int(m.group(4)) / 1000.0
         m = re.match(r'(\d+):(\d+):(\d+)[,.](\d+)', e)
         te = int(m.group(1)) * 3600 + int(m.group(2)) * 60 + int(m.group(3)) + int(m.group(4)) / 1000.0
         en, _, vi = t.partition(' ||| ')
-        lines.append('\t\t\t{ t: %.2f, e: %.2f, en: %s, vi: %s },' % (ts, te, js_str(en), js_str(vi)))
+        line = '\t\t\t{ t: %.2f, e: %.2f, en: %s, vi: %s' % (ts, te, js_str(en), js_str(vi))
+        if notes and j < len(notes) and notes[j]:
+            line += ', note: %s' % notes[j]  # raw verbatim tu lan truoc
+        lines.append(line + ' },')
     lines.append('\t\t]')
     lines.append('\t},')
     return '\n'.join(lines)
@@ -343,6 +325,7 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
                    + content[idx:])
         print('ℹ Tu them markers AUTO-SYNC vao %s' % data_js)
     keep = parse_existing(content)  # giu title/order/bIgnored sua tay
+    old_notes = parse_notes(content)  # giu note theo cau EN
     blocks = []
     total_subs = 0
     all_warns = []
@@ -358,13 +341,23 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
         for s, e, t in segs_en:
             v = vi_by_en.get((s, e), '')
             if v.startswith('[LOI DICH]'):
-                v = ''  # dich loi -> de trong, app hien EN (chay --retranslate sau)
+                v = ''  # giu cho trong, app hien EN
             merged.append((s, e, t + ' ||| ' + v))
         merged = apply_gap(merged, gap)
         for w in check_segments(vf, merged):
             all_warns.append('  [%s] %s' % (vf, w))
+        # note cu theo cau EN (ke ca khi sync lai)
+        notes = [old_notes.get(t.split(' ||| ')[0], '') for (s, e, t) in merged]
         if not merged:
-            print('   ⏭ %s: chua co .srt -> bo qua (chay transcribe truoc)' % vf)
+            # khong con .srt: giu nguyen entry cu (neu co) thay vi xoa bai
+            stem0 = os.path.splitext(os.path.basename(vf))[0]
+            old0 = keep.get(stem0, {})
+            if old0.get('raw'):
+                blocks.append(old0['raw'])
+                total_subs += len(re.findall(r'\{ t:', old0['raw']))
+                print('   📌 %s: khong co .srt -> giu entry cu trong data' % vf)
+            else:
+                print('   ⏭ %s: chua co .srt -> bo qua (chay transcribe truoc)' % vf)
             continue
         total_subs += len(merged)
         stem = os.path.splitext(os.path.basename(vf))[0]
@@ -378,7 +371,7 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
         blocks.append(entry_js(vf, merged, src_prefix,
                                title_prefix if title is None and title_raw is None else '',
                                ord_no if ord_no is not None else old.get('order'),
-                               title, old.get('bIgnored', 0), title_raw))
+                               title, old.get('bIgnored', 0), title_raw, notes))
         if ord_no is not None:
             ord_no += 1
     new_section = START_MARK + '\n' + '\n'.join(blocks) + '\n' + END_MARK if blocks \
@@ -420,12 +413,6 @@ def main():
                     help='cat e thua + day t tre khoi vung chong lan, giay (default 0.3, 0 = tat)')
     ap.add_argument('--order-start', type=int, default=None,
                     help='danh order tu so nay, tang dan theo file')
-    ap.add_argument('--with-vi', action='store_true',
-                    help='bat dich VI tu dong (mac dinh TAT - tu dich tay/VSCode cho chuan idioms)')
-    ap.add_argument('--vi-max-minutes', type=float, default=10,
-                    help='(chi khi --with-vi) video dai hon so phut nay thi tu bo dich VI (default 10, 0 = luon dich)')
-    ap.add_argument('--retranslate', action='store_true',
-                    help='chi dich lai VI tu EN .srt co san (khong transcribe)')
     ap.add_argument('--sync-only', action='store_true', help='chi sync .srt co san, khong transcribe')
     a = ap.parse_args()
 
@@ -462,31 +449,26 @@ def main():
     print('🎬 %d video trong %s' % (len(videos), a.media_dir))
 
     model = None
-    if a.retranslate:
-        for vf in videos:
-            base = os.path.splitext(vf)[0]
-            srt_en = os.path.join(a.media_dir, base + '.srt')
-            if not os.path.exists(srt_en):
-                print('⏭ %s: chua co EN .srt -> bo qua' % vf)
-                continue
-            print('🌐 Dich lai VI: %s ...' % vf)
-            segs = load_srt(srt_en)
-            vis = translate_all([t for _, _, t in segs])
-            bad = sum(1 for v in vis if v.startswith('[LOI DICH]'))
-            if bad >= len(vis) and vis:
-                print('   ❌ dich that bai het. De mai/chuyen mang roi chay lai.')
-            else:
-                write_srt(os.path.join(a.media_dir, base + '.vi.srt'),
-                          [(s, e, v) for (s, e, _), v in zip(segs, vis)])
-                print('   🎉 xong (%d/%d loi)' % (bad, len(vis)) if bad else '   🎉 xong, khong loi')
-    elif not a.sync_only:
+    if not a.sync_only:
         check_ffmpeg()
+        # entry da co subs trong data + khong .srt -> giu, khong transcribe lai
+        old_keep_main = {}
+        try:
+            with open(a.data_js, encoding='utf-8') as _f:
+                old_keep_main = parse_existing(_f.read())
+        except Exception:
+            pass
         for vf in videos:
             base = os.path.splitext(vf)[0]
             srt_en = os.path.join(a.media_dir, base + '.srt')
             srt_vi = os.path.join(a.media_dir, base + '.vi.srt')
             if os.path.exists(srt_en) and os.path.exists(srt_vi) and not a.force:
                 print('✅ %s: da co EN+VI -> bo qua' % vf)
+                continue
+            stem_main = os.path.splitext(os.path.basename(vf))[0]
+            if not os.path.exists(srt_en) and not a.force \
+                    and old_keep_main.get(stem_main, {}).get('has_subs'):
+                print('📌 %s: khong co .srt nhung data da co subs -> giu, khong transcribe' % vf)
                 continue
             segs = None
             if os.path.exists(srt_en) and not a.force:
@@ -511,23 +493,9 @@ def main():
                 print('   ⚠ khong co segment -> bo qua')
                 continue
             write_srt(srt_en, segs)
-            dur = media_duration(os.path.join(a.media_dir, vf))
-            skip_vi = (not a.with_vi) or (a.vi_max_minutes > 0 and dur > a.vi_max_minutes * 60)
-            if skip_vi:
-                print('   EN: %d dong (%.1f phut) -> bo dich VI' % (len(segs), dur / 60))
+            print('   EN: %d dong' % len(segs))
+            if not os.path.exists(srt_vi):
                 write_srt(srt_vi, [(s, e, '') for s, e, _ in segs])
-            else:
-                print('   EN: %d dong -> dich VI...' % len(segs))
-                vis = translate_all([t for _, _, t in segs])
-                bad = sum(1 for v in vis if v.startswith('[LOI DICH]'))
-                if bad >= len(vis):
-                    # tat ca loi (mang chan) -> KHONG ghi file de lan sau dich lai
-                    print('   ❌ dich that bai het (%d cau). De mai/chuyen mang roi chay --retranslate %s'
-                          % (len(vis), os.path.splitext(vf)[0]))
-                else:
-                    write_srt(srt_vi, [(s, e, v) for (s, e, _), v in zip(segs, vis)])
-                    if bad:
-                        print('   ⚠ %d/%d cau loi dich (chay --retranslate sau)' % (bad, len(vis)))
             print('   🎉 xong %s' % vf)
 
     sync_data(a.data_js, a.media_dir, videos_all, a.gap,

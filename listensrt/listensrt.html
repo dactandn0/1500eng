@@ -17,6 +17,12 @@
 		.watch-sub-en { font-size:.95rem; color:#3d4c59; cursor:pointer; }
 		.watch-sub.is-active .watch-sub-en { color:#5f470c; font-weight:500; }
 		.watch-sub-vi { font-size:.82rem; color:#8b857b; margin-top:.15rem; }
+		.watch-note { max-height:0; overflow:hidden; opacity:0;
+			transition:max-height .35s ease, opacity .3s ease, margin .3s ease;
+			margin:0; padding:0 .6rem; font-size:.85rem; line-height:1.7; color:#5f470c;
+			background:#fff8e1; border-radius:8px; white-space:pre-line; }
+		.watch-note.open { max-height:340px; opacity:1; margin-top:.45rem; padding:.55rem .6rem; overflow-y:auto;
+			border:1px solid #f1e8d0; -webkit-overflow-scrolling:touch; }
 		.watch-sub-meta { display:flex; align-items:center; gap:.5rem; margin-top:.25rem; }
 		.watch-time { font-size:.72rem; color:#23639a; background:#edf6ff; border:1px solid #cfe3f6; border-radius:999px; padding:.1rem .5rem; }
 		.watch-toggle { padding:.4rem .7rem; border-radius:999px; border:1px solid #eee5c9; background:#fffdf7; color:#756d61; font-size:.8rem; }
@@ -90,7 +96,9 @@
 						<i class="fa fa-repeat" aria-hidden="true"></i>
 					</button>
 					<button type="button" class="quiz-speak" ng-if="!sub.vi" ng-click="showVi($event, sub)" title="Xem nghĩa Việt" aria-label="Nghĩa Việt">vi</button>
+					<button type="button" class="quiz-speak" ng-if="sub.note" ng-click="toggleNote($event, $index)" title="Xem note" aria-label="Note">Note</button>
 				</div>
+				<div class="watch-note" ng-class="{'open': openNoteIdx === $index}" ng-if="sub.note">{{sub.note}}</div>
 			</div>
 		</div>
 	</div>

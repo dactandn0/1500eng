@@ -57,6 +57,20 @@ $scope.toggleScript = function () {
 };
 $scope.loopIdx = -1; // index dong dang loop (-1 = tat)
 $scope.loopCount = 0; // dem so vong da lap
+$scope.openNoteIdx = -1; // index dong dang mo note (-1 = dong het)
+$scope.toggleNote = function (ev, idx) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	$scope.openNoteIdx = ($scope.openNoteIdx === idx) ? -1 : idx;
+	if ($scope.openNoteIdx >= 0) {
+		// mo xong cuon nhe toi dong note
+		$timeout(function () {
+			try {
+				const el = document.getElementById('wsub' + $scope.openNoteIdx);
+				if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+			} catch (e) {}
+		}, 120);
+	}
+};
 $scope.videoErr = '';
 $scope.videoUrl = null; // trusted 1 lan/khi doi bai (tranh reload loop)
 $scope.isAudio = false; // true khi lesson la file tieng (mp3/wav...)

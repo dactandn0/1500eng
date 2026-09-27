@@ -420,10 +420,10 @@ def main():
                     help='cat e thua + day t tre khoi vung chong lan, giay (default 0.3, 0 = tat)')
     ap.add_argument('--order-start', type=int, default=None,
                     help='danh order tu so nay, tang dan theo file')
-    ap.add_argument('--no-vi', action='store_true',
-                    help='bo dich VI (chi EN). Phu hop video dai / von tieng Anh tot')
+    ap.add_argument('--with-vi', action='store_true',
+                    help='bat dich VI tu dong (mac dinh TAT - tu dich tay/VSCode cho chuan idioms)')
     ap.add_argument('--vi-max-minutes', type=float, default=10,
-                    help='video dai hon so phut nay thi tu bo dich VI (default 10, 0 = luon dich)')
+                    help='(chi khi --with-vi) video dai hon so phut nay thi tu bo dich VI (default 10, 0 = luon dich)')
     ap.add_argument('--retranslate', action='store_true',
                     help='chi dich lai VI tu EN .srt co san (khong transcribe)')
     ap.add_argument('--sync-only', action='store_true', help='chi sync .srt co san, khong transcribe')
@@ -512,7 +512,7 @@ def main():
                 continue
             write_srt(srt_en, segs)
             dur = media_duration(os.path.join(a.media_dir, vf))
-            skip_vi = a.no_vi or (a.vi_max_minutes > 0 and dur > a.vi_max_minutes * 60)
+            skip_vi = (not a.with_vi) or (a.vi_max_minutes > 0 and dur > a.vi_max_minutes * 60)
             if skip_vi:
                 print('   EN: %d dong (%.1f phut) -> bo dich VI' % (len(segs), dur / 60))
                 write_srt(srt_vi, [(s, e, '') for s, e, _ in segs])

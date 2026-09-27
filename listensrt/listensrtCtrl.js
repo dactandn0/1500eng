@@ -57,18 +57,17 @@ $scope.toggleScript = function () {
 };
 $scope.loopIdx = -1; // index dong dang loop (-1 = tat)
 $scope.loopCount = 0; // dem so vong da lap
-$scope.openNoteIdx = -1; // index dong dang mo note (-1 = dong het)
+// 1 note tai 1 thoi diem (accordion): mo Note B -> Note A tu dong.
+// Bam lai nut Note cua dong dang mo -> dong. Doi bai -> dong het.
+$scope.openNoteIdx = -1;
 $scope.toggleNote = function (ev, idx) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	$scope.openNoteIdx = ($scope.openNoteIdx === idx) ? -1 : idx;
 	if ($scope.openNoteIdx >= 0) {
-		// mo xong cuon nhe toi dong note
-		$timeout(function () {
-			try {
-				const el = document.getElementById('wsub' + $scope.openNoteIdx);
-				if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-			} catch (e) {}
-		}, 120);
+		// mo xong cuon nhe panel toi dong note (chi cuon panel sub, khong cuon ca trang)
+		// + tam dung follow-scroll 1.5s de panel kip toi note roi AutoFollow chay tiep
+		noteScrollGraceUntil = Date.now() + 1500;
+		$timeout(function () { try { scrollPanelTo($scope.openNoteIdx); } catch (e) {} }, 120);
 	}
 };
 $scope.videoErr = '';
@@ -79,6 +78,7 @@ let videoEl = null;
 let ytPlayer = null;
 let pollTimer = null;
 let seekGraceUntil = 0; // bo qua timeupdate cu ngay sau khi seek (tranh highlight nhay ve dau)
+let noteScrollGraceUntil = 0; // sau khi mo note: tam dung follow-scroll 1.5s de panel kip cuon toi note
 let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, chi nhan khi toi noi
 let seekSince = 0;
 let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
@@ -123,6 +123,7 @@ $scope.openLesson = function (i) {
 			Helper_saveDB(Helper_ListenLessonKey, $scope.lesson.id || '');
 	} catch (e) {}
 	$scope.curIdx = -1;
+	$scope.openNoteIdx = -1; // doi bai -> dong het note cu
 	$scope.lessonSearch = ($scope.lesson && $scope.lesson.title) || '';
 	$scope.showScript = false;
 	try {
@@ -348,6 +349,8 @@ function replayCurAnim(idx) {
 	} catch (e) {}
 }
 // Cuon PANEL sub (chi trong div.watch-subs, khong cuon ca trang)
+// Vua mo note -> tam nghi follow-scroll 1.5s (de thay duoc note), het grace AutoFollow chay lai
+function followPausedForNote() { try { return Date.now() < noteScrollGraceUntil; } catch (e) { return false; } }
 function scrollPanelTo(idx) {
 	try {
 		const panels = document.querySelectorAll('.watch-subs');
@@ -455,7 +458,8 @@ function tick(t) {
 			copySubEn(subs[li]);
 			replayCurAnim(li);
 		}
-		if ($scope.follow) scrollPanelTo(li);
+		// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
+		if ($scope.follow && !followPausedForNote()) scrollPanelTo(li);
 		return;
 	}
 	if (idx === $scope.curIdx) return;
@@ -463,7 +467,8 @@ function tick(t) {
 	try { $scope.$applyAsync(); } catch (e) {}
 	copySubEn(subs[idx]);
 	replayCurAnim(idx);
-	if (idx >= 0 && $scope.follow) scrollPanelTo(idx);
+	// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
+	if (idx >= 0 && $scope.follow && !followPausedForNote()) scrollPanelTo(idx);
 }
 
 // Cham 1 dong phu de -> video nhay ve time do (+ phat tiep)

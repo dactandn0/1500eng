@@ -13,16 +13,16 @@ $scope.lessonChoices = $scope.lessons.map(function (ls, i) {
 	return { i: i, title: ls.title, show: !(ls && ls.bIgnored) };
 }).filter(function (c) { return c.show; });
 $scope.lessonIdx = ($scope.lessonChoices.length ? $scope.lessonChoices[0].i : 0);
-// Nho bai dang mo (theo id cho chac) -> mo lai dung bai
+// Nho bai dang mo (1 key 'lstLesson' = '<tenLesson>|<subIdx>') -> dropbox tu chon dung bai
 try {
-	if (typeof Helper_ListenLessonKey !== 'undefined' && typeof Helper_loadStr === 'function') {
-		const savedId = Helper_loadStr(Helper_ListenLessonKey, '');
-		if (savedId) {
-			for (let k = 0; k < $scope.lessonChoices.length; k++) {
-				if ($scope.lessons[$scope.lessonChoices[k].i].id === savedId) {
-					$scope.lessonIdx = $scope.lessonChoices[k].i;
-					break;
-				}
+	const raw0 = localStorage.getItem('lstLesson') || '';
+	const bar0 = raw0.lastIndexOf('|');
+	if (bar0 > 0) {
+		const lid = raw0.slice(0, bar0);
+		for (let k = 0; k < $scope.lessonChoices.length; k++) {
+			if (String($scope.lessons[$scope.lessonChoices[k].i].id) === lid) {
+				$scope.lessonIdx = $scope.lessonChoices[k].i;
+				break;
 			}
 		}
 	}
@@ -141,7 +141,9 @@ $scope.copySubs = function (ev) {
 		copyTextToClipboard(text, function () {
 			try {
 				if (lastCopyToast) toastr.clear(lastCopyToast);
-				lastCopyToast = toastr.info(msg, 'Copied');
+				lastCopyToast = toastr.info(msg, 
+					//'Copied'
+			);
 			} catch (e) {}
 		});
 	} catch (e) {}
@@ -161,27 +163,56 @@ $scope.toggleNote = function (ev, idx) {
 		$timeout(function () { try { scrollPanelTo($scope.openNoteIdx); } catch (e) {} }, 120);
 	}
 };
-// Star: luu dong sub yeu thich. Key localStorage: lstStar_<lessonId>-<subIdx>.
+// Star: luu dong sub yeu thich. Gom 1 key duy nhat 'lstStar' = JSON {<lessonId>:[idx,...]}.
 // Vao route / doi bai -> load lai de set icon on/off.
 $scope.starMap = {}; // idx -> true (bai hien tai)
-function starKey(idx) {
+function readStarStore() {
 	try {
-		const id = ($scope.lesson && $scope.lesson.id) || '';
-		if (!id && id !== 0) return null;
-		return 'lstStar_' + id + '-' + idx;
-	} catch (e) { return null; }
+		const raw = localStorage.getItem('lstStar');
+		if (!raw) return {};
+		const o = JSON.parse(raw);
+		return (o && typeof o === 'object') ? o : {};
+	} catch (e) { return {}; }
+}
+function writeStarStore(o) {
+	try { localStorage.setItem('lstStar', JSON.stringify(o)); } catch (e) {}
+}
+function lessonStarId() {
+	try { return String(($scope.lesson && $scope.lesson.id) || ''); } catch (e) { return ''; }
 }
 function loadStars() {
 	$scope.starMap = {};
 	try {
-		const id = ($scope.lesson && $scope.lesson.id) || '';
-		const pre = 'lstStar_' + id + '-';
+		// migrate 1 lan key cu kieu lstStar_<id>-<idx> -> gom vao JSON roi xoa key cu
+		const olds = [];
 		for (let i = 0; i < localStorage.length; i++) {
 			const k = localStorage.key(i);
-			if (k && k.indexOf(pre) === 0) {
-				const idx = parseInt(k.slice(pre.length), 10);
-				if (!isNaN(idx)) $scope.starMap[idx] = true;
-			}
+			if (k && k.indexOf('lstStar_') === 0) olds.push(k);
+		}
+		if (olds.length) {
+			const store = readStarStore();
+			olds.forEach(function (k) {
+				try {
+					const rest = k.slice('lstStar_'.length);
+					const dash = rest.lastIndexOf('-');
+					if (dash > 0) {
+						const lid = rest.slice(0, dash);
+						const idx = parseInt(rest.slice(dash + 1), 10);
+						if (lid && !isNaN(idx)) {
+							store[lid] = store[lid] || [];
+							if (store[lid].indexOf(idx) < 0) store[lid].push(idx);
+						}
+					}
+				} catch (e2) {}
+				try { localStorage.removeItem(k); } catch (e3) {}
+			});
+			writeStarStore(store);
+		}
+		const id = lessonStarId();
+		const arr = readStarStore()[id] || [];
+		for (let j = 0; j < arr.length; j++) {
+			const idx = parseInt(arr[j], 10);
+			if (!isNaN(idx)) $scope.starMap[idx] = true;
 		}
 	} catch (e) {}
 }
@@ -189,15 +220,20 @@ $scope.isStarred = function (idx) { try { return !!$scope.starMap[idx]; } catch 
 $scope.toggleStar = function (ev, idx) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	try {
+		const id = lessonStarId();
+		if (!id) return;
+		const store = readStarStore();
+		let arr = store[id] || [];
 		if ($scope.starMap[idx]) {
 			delete $scope.starMap[idx];
-			const k = starKey(idx);
-			if (k) localStorage.removeItem(k);
+			arr = arr.filter(function (v) { return parseInt(v, 10) !== idx; });
 		} else {
 			$scope.starMap[idx] = true;
-			const k = starKey(idx);
-			if (k) Helper_saveDB(k, '1');
+			if (arr.indexOf(idx) < 0) arr.push(idx);
 		}
+		if (arr.length) store[id] = arr;
+		else delete store[id];
+		writeStarStore(store);
 	} catch (e) {}
 };
 $scope.videoErr = '';
@@ -247,10 +283,19 @@ $scope.openLesson = function (i) {
 	teardown();
 	$scope.lessonIdx = +i || 0;
 	$scope.lesson = $scope.lessons[$scope.lessonIdx] || null;
-	// luu bai dang mo
+	// giu subIdx cu de resume (doc TRUOC khi ghi de key; doi bai khac -> resumeIdx = -1)
+	let resumeIdx = -1;
 	try {
-		if ($scope.lesson && typeof Helper_ListenLessonKey !== 'undefined')
-			Helper_saveDB(Helper_ListenLessonKey, $scope.lesson.id || '');
+		const rawOld = localStorage.getItem('lstLesson') || '';
+		const barOld = rawOld.lastIndexOf('|');
+		if (barOld > 0 && $scope.lesson && rawOld.slice(0, barOld) === String($scope.lesson.id)) {
+			const r = parseInt(rawOld.slice(barOld + 1), 10);
+			if (!isNaN(r)) resumeIdx = r;
+		}
+	} catch (e) {}
+	// luu bai dang mo NGAY LAP TUC: 'lstLesson' = '<id>|-1' (chua nghe sub nao; sub chay se ghi de subIdx)
+	try {
+		if ($scope.lesson) localStorage.setItem('lstLesson', $scope.lesson.id + '|-1');
 	} catch (e) {}
 	$scope.curIdx = -1;
 	$scope.openNoteIdx = -1; // doi bai -> dong het note cu
@@ -273,6 +318,29 @@ $scope.openLesson = function (i) {
 		}
 	} catch (e) {}
 	$timeout(function () { setupPlayer(); }, 100);
+	// resume: ve lai sub dang nghe truoc do (highlight + cuon panel + dua video ve moc gio, khong autoplay)
+	$timeout(function () {
+		try {
+			if (!$scope.lesson || !$scope.lesson.subs) return;
+			// don key cu ('listenSrt', 'listenSrt|<id>', 'ListenLessonId') -> chi giu 'lstLesson'
+			try {
+				try { localStorage.removeItem('listenSrt'); } catch (e1) {}
+				try { localStorage.removeItem('ListenLessonId'); } catch (e2) {}
+				const olds = [];
+				for (let i = 0; i < localStorage.length; i++) {
+					const k = localStorage.key(i);
+					if (k && k.indexOf('listenSrt|') === 0) olds.push(k);
+				}
+				olds.forEach(function (k) { try { localStorage.removeItem(k); } catch (e3) {} });
+			} catch (e0) {}
+			const saved = resumeIdx; // da doc giu tu dau openLesson (key gio la '<id>|-1')
+			if (isNaN(saved) || saved < 0 || !$scope.lesson.subs[saved]) return;
+			$scope.seekSub($scope.lesson.subs[saved], null, false);
+			scrollPanelTo(saved);
+			lastSavedSub = -2; // ep ghi lai key (vua bi openLesson ghi de |-1)
+			saveSubPos(saved);
+		} catch (e) {}
+	}, 800);
 };
 
 function mediaEl() {
@@ -483,6 +551,16 @@ function replayCurAnim(idx) {
 // Cuon PANEL sub (chi trong div.watch-subs, khong cuon ca trang)
 // Vua mo note -> tam nghi follow-scroll 1.5s (de thay duoc note), het grace AutoFollow chay lai
 function followPausedForNote() { try { return Date.now() < noteScrollGraceUntil; } catch (e) { return false; } }
+// Nho vi tri sub dang nghe: 1 key duy nhat 'lstLesson' = '<tenLesson>|<subIdx>' (chi bai gan nhat)
+let lastSavedSub = -2;
+function saveSubPos(idx) {
+	try {
+		if (idx === lastSavedSub) return;
+		lastSavedSub = idx;
+		const id = ($scope.lesson && $scope.lesson.id) || '';
+		localStorage.setItem('lstLesson', id + '|' + idx);
+	} catch (e) {}
+}
 function scrollPanelTo(idx) {
 	try {
 		const panels = document.querySelectorAll('.watch-subs');
@@ -589,6 +667,7 @@ function tick(t) {
 			try { $scope.$applyAsync(); } catch (e) {}
 			copySubEn(subs[li]);
 			replayCurAnim(li);
+			saveSubPos(li);
 		}
 		// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
 		if ($scope.follow && !followPausedForNote()) scrollPanelTo(li);
@@ -599,6 +678,7 @@ function tick(t) {
 	try { $scope.$applyAsync(); } catch (e) {}
 	copySubEn(subs[idx]);
 	replayCurAnim(idx);
+	saveSubPos(idx);
 	// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
 	if (idx >= 0 && $scope.follow && !followPausedForNote()) scrollPanelTo(idx);
 }
@@ -631,6 +711,7 @@ $scope.seekSub = function (sub, ev, autoplay) {
 			if (ti >= 0) {
 				$scope.curIdx = ti;
 				seekGraceUntil = Date.now() + 600;
+				saveSubPos(ti);
 				try { $scope.$applyAsync(); } catch (e) {}
 				copySubEn(sub);
 				replayCurAnim(ti);

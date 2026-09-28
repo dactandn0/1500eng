@@ -112,6 +112,23 @@ function copyTextToClipboard(text, done) {
 	} catch (e3) {}
 	done();
 }
+// iPhone/man hep: toast Copy dung div custom top-center; desktop dung toastr nhu cu
+function isNarrowCopyToast() {
+	try {
+		const ua = (navigator.userAgent || '');
+		if (/iPhone|iPod/i.test(ua)) return true;
+		if (window.innerWidth && window.innerWidth <= 640) return true;
+	} catch (e) {}
+	return false;
+}
+$scope.copyToastMsg = '';
+let copyToastTimer = null;
+$scope.showCopyToast = function (msg) {
+	$scope.copyToastMsg = msg;
+	try { $scope.$applyAsync(); } catch (e) {}
+	try { if (copyToastTimer) $timeout.cancel(copyToastTimer); } catch (e2) {}
+	copyToastTimer = $timeout(function () { $scope.copyToastMsg = ''; }, 2500);
+};
 $scope.copyLabel = function () {
 	if ($scope.copyStep <= 0) return 'all';
 	try {
@@ -138,12 +155,14 @@ $scope.copySubs = function (ev) {
 			msg = 'Copied ' + (a + 1) + '-' + b + '/' + subs.length;
 		}
 		$scope.copyStep = (step + 1) % (chunks + 1);
+		copyLock = true; // khoa auto-copy cua tick de giu nguyen clipboard vua copy
 		copyTextToClipboard(text, function () {
 			try {
-				if (lastCopyToast) toastr.clear(lastCopyToast);
-				lastCopyToast = toastr.info(msg, 
-					//'Copied'
-			);
+				if (isNarrowCopyToast()) $scope.showCopyToast(msg);
+				else {
+					if (lastCopyToast) toastr.clear(lastCopyToast);
+					lastCopyToast = toastr.info(msg, 'Copied');
+				}
 			} catch (e) {}
 		});
 	} catch (e) {}
@@ -520,9 +539,13 @@ function startPoll() {
 	}, 250);
 }
 
-// Sub chay/chuyen sang dong nao -> dua EN vao clipboard luon
+// Sub chay/chuyen sang dong nao -> dua EN vao clipboard luon.
+// copyLock: bam nut Copy chunk -> khoa auto-copy (tick) de khoi ghi de clipboard vua copy;
+// click sub thu cong thi mo khoa + copy nhu thuong.
+let copyLock = false;
 function copySubEn(sub) {
 	try {
+		if (copyLock) return;
 		if (!sub || !sub.en) return;
 		if (navigator.clipboard && navigator.clipboard.writeText) {
 			navigator.clipboard.writeText(sub.en).catch(function () {});
@@ -686,7 +709,7 @@ function tick(t) {
 // Cham 1 dong phu de -> video nhay ve time do (+ phat tiep)
 // Bam sang dong KHAC thi tat loop cu (tranh bi giat ve)
 $scope.seekSub = function (sub, ev, autoplay) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} copyLock = false; } // click sub tay -> mo khoa, copy nhu thuong
 	if (!sub) return;
 	try {
 		const subs0 = $scope.lesson && $scope.lesson.subs;

@@ -1894,7 +1894,7 @@ input:focus {
 #btn_back_to_top {
 	display: none;
 	position: fixed;
-	bottom: 45px;
+	bottom: 125px;
 	left: 18px;
 	z-index: 31;
 	font-size: 18px;

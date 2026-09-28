@@ -2,8 +2,27 @@
 	<div ng-include="'./includes/studyHeader.html'"
 		ng-init="studyEyebrow='LISTENING LAB'; studyTitle='Listen with Subtitle'; studyDescription='Xem video/Audio, phụ đề chạy theo, chạm dòng để nhảy tới.'; studyStatus='TRY HARD'">
 	</div>
+	<div class="copy-toast" ng-show="copyToastMsg">{{copyToastMsg}}</div>
 
 	<style>
+		/* toast rieng nut Copy: top-center (iPhone/man hep), tu thay the + tu tat sau 2.5s */
+		.copy-toast {
+			position: fixed;
+			top: 12px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1099999;
+			background: rgba(43, 40, 31, .94);
+			color: #fff8e1;
+			padding: .55rem 1rem;
+			border-radius: 10px;
+			font-size: .85rem;
+			border: 1px solid #e6c96c;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+			max-width: 92vw;
+			text-align: center;
+		}
+
 		.watch-video-wrap {
 			background: #000;
 			border-radius: 12px;
@@ -100,6 +119,19 @@
 		.quiz-page .study-status {
 			padding: .25rem .55rem;
 			font-size: .68rem;
+		}
+
+		/* iPhone/hep: header chi hien eyebrow */
+		@media (max-width: 640px) {
+			.quiz-page .study-header {
+				padding: .3rem .6rem;
+				border-radius: 8px;
+			}
+
+			.quiz-page .study-header h1,
+			.quiz-page .study-status {
+				display: none;
+			}
 		}
 
 		.watch-subs {

@@ -71,7 +71,7 @@ $scope.lessonKey = function (ev) {
 };
 $scope.lesson = null;
 $scope.curIdx = -1;
-$scope.follow = true;
+$scope.follow = false;
 $scope.showScript = false;
 $scope.lessonNotes = '';
 $scope.toggleFollow = function () {
@@ -147,7 +147,7 @@ $scope.copySubs = function (ev) {
 		const step = $scope.copyStep || 0;
 		let text = '', msg = '';
 		if (step <= 0) {
-			text = subs.map(function (s) { return s.en; }).join('\n');
+			text = subs.map(function (s) { return s.en; }).join('\n');	
 			msg = 'Copied all (' + subs.length + ' lines)';
 		} else {
 			const a = (step - 1) * n, b = Math.min(subs.length, a + n);
@@ -399,7 +399,15 @@ function setupPlayer(retry) {
 					try { tick(videoEl.currentTime || 0); } catch (e) {}
 				};
 				videoEl._watchEN = function () {
-					try { $scope.$applyAsync(); } catch (e) {}
+					try {
+						// het file -> ve sub 0 (dau bai), dung yen cho user bam play
+						const subs = ($scope.lesson && $scope.lesson.subs) || [];
+						if (subs.length) {
+							$scope.seekSub(subs[0], null, false);
+							if ($scope.follow) scrollPanelTo(0);
+						}
+						$scope.$applyAsync();
+					} catch (e) {}
 				};
 				videoEl._watchER = function () {
 					try {
@@ -695,6 +703,19 @@ function tick(t) {
 		// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
 		if ($scope.follow && !followPausedForNote()) scrollPanelTo(li);
 		return;
+	}
+	// het sub cuoi (con duoi file van chay) -> quay ve sub 0 (dau bai). Pause thi thoi.
+	const lastSub = subs[subs.length - 1];
+	if (lastSub && lastSub.e && t >= lastSub.e + 0.5) {
+		let playingNow = true;
+		try {
+			if (ytPlayer && ytPlayer.getPlayerState) playingNow = (ytPlayer.getPlayerState() === 1);
+			else { const me0 = mediaEl(); playingNow = !!(me0 && !me0.paused && !me0.ended); }
+		} catch (e) {}
+		if (playingNow && subs.length) {
+			$scope.seekSub(subs[0], null, false); // seek giu nguyen play -> bai lap lien mach
+			return;
+		}
 	}
 	if (idx === $scope.curIdx) return;
 	$scope.curIdx = idx;

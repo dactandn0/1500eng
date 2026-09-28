@@ -38,6 +38,7 @@ const NOTED_WORD_TAG_BEGIN = '<NOTED_WORD_HL class="_noted_word_hl">';
 const NOTED_WORD_TAG_END = '</NOTED_WORD_HL>';
 
 const Helper_ListenLessonKey = 'ListenLessonId';
+const Helper_ListenChunkKey = 'listenNoChunkCopied'; // so cau copy moi cum o Listen (2-10, Setting)
 const kNgClickTagName = 'kkk';const kNgClickTagOpen = '<' + kNgClickTagName + ' ng-click="ClickWordToSpeech($event)">';
 const kNgClickTagClose = '</' + kNgClickTagName + '>';
 const Helper_SelectedVoiceIdx = 'SelectedVoiceIdx';

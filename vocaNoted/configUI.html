@@ -80,6 +80,12 @@
 			<p>Seconds moved by the back and forward buttons.</p>
 			<input type="range" class="setting-range" min="1" max="20" step="1" ng-model="$root.adjAudioTime" ng-change="setAdjAudioTime()" aria-label="Audio seek step">
 		</div>
+
+		<div class="setting-card">
+			<div class="setting-heading"><i class="fa fa-copy" aria-hidden="true"></i><span>Listen copy chunk</span><strong>{{listenChunk}}</strong></div>
+			<p>Số subtitles được copy khi mỗi lần Click ở ListenStr.</p>
+			<input type="range" class="setting-range" min="2" max="10" step="1" ng-model="listenChunk" ng-change="setListenChunk()" aria-label="Listen copy chunk">
+		</div>
 	</div>
 
 	<div class="settings-grid settings-grid-trio">

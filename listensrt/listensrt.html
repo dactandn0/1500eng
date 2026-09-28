@@ -46,6 +46,14 @@
 			align-items: center;
 		}
 
+		/* cum 3 nut can phai cho thuan ngon tay phai */
+		.watch-row-btns {
+			display: flex;
+			gap: .4rem;
+			margin-left: auto;
+			align-items: center;
+		}
+
 		/* thanh AutoFollow/ShowScript + cau dang chay: thuong o vi tri cu (opa 1),
 		   cuon xuong -> dock day man hinh (opa .7) */
 		.watch-row-sticky {
@@ -269,6 +277,15 @@
 			color: #1e7e46 !important;
 		}
 
+		.star-btn.is-on {
+			background: #fff4c9 !important;
+			border-color: #e6c96c !important;
+		}
+
+		.star-btn.is-on .fa {
+			color: #e6a200 !important;
+		}
+
 		.lesson-drop {
 			position: absolute;
 			top: 100%;
@@ -326,7 +343,8 @@
 
 	<div ng-if="!lesson">
 		<p style="color:#8b857b;">Chưa có bài nào. Thêm vào <code>LISTEN_DATA</code> trong
-			<code>listensrt/listensrtData.js</code> (dùng <code>listensrt/srt2js.py</code> để chuyển .srt).</p>
+			<code>listensrt/listensrtData.js</code> (dùng <code>listensrt/srt2js.py</code> để chuyển .srt).
+		</p>
 	</div>
 
 	<div ng-if="lesson">
@@ -338,15 +356,25 @@
 			<div id="watchYt"></div>
 		</div>
 		<div class="watch-row watch-row-sticky">
-			<audio id="watchAudio" ng-if="lesson.type !== 'youtube' && isAudio" controls preload="metadata" style="flex:1 1 auto; min-width:140px;"></audio>
-			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="toggleFollow()">
-				<i class="fa fa-magnet" aria-hidden="true"></i>&nbsp;Follow
-			</button>
-			<button type="button" class="watch-toggle" ng-class="{'is-on': showScript}" ng-click="toggleScript()"
-				ng-if="lessonNotes">
-				<i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;Script
-			</button>
+			<audio id="watchAudio" ng-if="lesson.type !== 'youtube' && isAudio" controls preload="metadata"
+				style="flex:1 1 100%;">
+			</audio>
 			<span class="ml-1 watch-now" ng-if="lesson && lesson.subs[curIdx]">▶ {{lesson.subs[curIdx].en}}</span>
+			<div class="watch-row-btns">
+				<button type="button" class="watch-toggle" ng-click="copySubs($event)"
+					title="Copy sub: full -> từng cụm -> full" aria-label="Copy subtitles">
+					<i class="fa fa-copy" aria-hidden="true"></i>&nbsp;Copy {{copyLabel()}}
+				</button>
+				<button type="button" class="watch-toggle" ng-class="{'is-on': showScript}" ng-click="toggleScript()"
+					ng-if="lessonNotes" title="Show script" aria-label="Show script">
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+				</button>
+
+				<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="toggleFollow()"
+					title="Auto follow" aria-label="Auto follow">
+					<i class="fa fa-magnet" aria-hidden="true"></i>
+				</button>
+			</div>
 		</div>
 
 		<div class="watch-script" ng-if="showScript && lessonNotes !== ''">{{lessonNotes}}</div>
@@ -373,8 +401,9 @@
 							title="Xem nghĩa Việt" aria-label="Nghĩa Việt">vi</button>
 						<button type="button" class="quiz-speak" ng-class="{'is-on': openNoteIdx === $index}"
 							ng-if="sub.note" ng-click="toggleNote($event, $index)" title="Xem note"
-							aria-label="Note">Note</button>
-						<button type="button" class="quiz-speak" ng-class="{'is-on': isStarred($index)}"
+							aria-label="Note"><span class="fa fa-file-text-o" aria-hidden="true"></span></button>
+						<!-- [Note] -->
+						<button type="button" class="quiz-speak star-btn" ng-class="{'is-on': isStarred($index)}"
 							ng-click="toggleStar($event, $index)" title="Lưu dòng này" aria-label="Save line">
 							<i class="fa" ng-class="isStarred($index) ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i>
 						</button>

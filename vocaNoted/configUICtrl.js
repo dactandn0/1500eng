@@ -8,6 +8,7 @@ app.controller("configUICtrl", function($scope, $rootScope, $location) {
 
 $scope.audioPitch = 1.5
 $scope.audioRate = 0.8
+$scope.listenChunk = 2 // so cau copy moi cum o Listen (slider 2-10)
 
 $scope.toastTimeOut = HELPER_TOASTER_TIMEOUT_DEF
 $scope.toastTimeOutMed = HELPER_TOASTER_TIMEOUT_MED_DEF
@@ -244,6 +245,13 @@ $scope.setAdjAudioTime = function () {
 	Helper_saveDB(Helper_AdjAudioTimeKey, $rootScope.adjAudioTime);
 }
 
+$scope.setListenChunk = function () {
+	let v = parseInt($scope.listenChunk, 10);
+	if (!(v >= 2 && v <= 10)) v = 2;
+	$scope.listenChunk = v;
+	Helper_saveDB(Helper_ListenChunkKey, v);
+}
+
 $scope.setToastTimeOut = function () {
 	Helper_saveDB(Helper_ToastTimeOutKey, $scope.toastTimeOut);
 }
@@ -288,6 +296,13 @@ $scope.loadDB = function () {
 
 	$rootScope.audio_repeatNum = Helper_loadFloat(Helper_RepeatNumKey, HELPER_REPEAT_NUM_DEF)
 	$rootScope.adjAudioTime = Helper_loadInt(Helper_AdjAudioTimeKey, HELPER_ADJ_AUDIO_TIME_DEF)
+	let chunkV = 2
+	try {
+		if (typeof Helper_ListenChunkKey !== 'undefined')
+			chunkV = Helper_loadInt(Helper_ListenChunkKey, 2)
+	} catch (e) {}
+	if (!(chunkV >= 2 && chunkV <= 10)) chunkV = 2;
+	$scope.listenChunk = chunkV
 	$scope.toastTimeOut = Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF)
 	$scope.toastTimeOutMed = Helper_loadFloat(Helper_ToastTimeOutMedKey, HELPER_TOASTER_TIMEOUT_MED_DEF)
 	$scope.toastTimeOutLong = Helper_loadFloat(Helper_ToastTimeOutLongKey, HELPER_TOASTER_TIMEOUT_LONG_DEF)

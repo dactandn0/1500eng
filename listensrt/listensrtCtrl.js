@@ -82,6 +82,70 @@ $scope.toggleFollow = function () {
 $scope.toggleScript = function () {
 	$scope.showScript = !$scope.showScript;
 };
+// Nut copy ke Script: xoay vong copy full -> tung cum N cau (N = listenNoChunkCopied 2-10) -> ve full.
+$scope.copyStep = 0; // 0 = lan toi copy full; >=1 = copy cum thu copyStep
+let lastCopyToast = null; // toast Copy dang mo -> mo moi thi clear cu truoc
+function getChunkN() {
+	try {
+		let n = 2;
+		if (typeof Helper_ListenChunkKey !== 'undefined' && typeof Helper_loadInt === 'function')
+			n = Helper_loadInt(Helper_ListenChunkKey, 2);
+		n = parseInt(n, 10);
+		if (!(n >= 2 && n <= 10)) n = 2;
+		return n;
+	} catch (e) { return 2; }
+}
+function copyTextToClipboard(text, done) {
+	try {
+		if (navigator.clipboard && navigator.clipboard.writeText) {
+			navigator.clipboard.writeText(text).then(done, done);
+			return;
+		}
+	} catch (e) {}
+	try {
+		const ta = document.createElement('textarea');
+		ta.value = text;
+		document.body.appendChild(ta);
+		ta.select();
+		try { document.execCommand('copy'); } catch (e2) {}
+		document.body.removeChild(ta);
+	} catch (e3) {}
+	done();
+}
+$scope.copyLabel = function () {
+	if ($scope.copyStep <= 0) return 'all';
+	try {
+		const subs = ($scope.lesson && $scope.lesson.subs) || [];
+		const total = Math.max(1, Math.ceil(subs.length / getChunkN()));
+		return $scope.copyStep + '/' + total;
+	} catch (e) { return String($scope.copyStep); }
+};
+$scope.copySubs = function (ev) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	try {
+		const subs = ($scope.lesson && $scope.lesson.subs) || [];
+		if (!subs.length) return;
+		const n = getChunkN();
+		const chunks = Math.max(1, Math.ceil(subs.length / n));
+		const step = $scope.copyStep || 0;
+		let text = '', msg = '';
+		if (step <= 0) {
+			text = subs.map(function (s) { return s.en; }).join('\n');
+			msg = 'Copied all (' + subs.length + ' lines)';
+		} else {
+			const a = (step - 1) * n, b = Math.min(subs.length, a + n);
+			text = subs.slice(a, b).map(function (s) { return s.en; }).join('\n');
+			msg = 'Copied ' + (a + 1) + '-' + b + '/' + subs.length;
+		}
+		$scope.copyStep = (step + 1) % (chunks + 1);
+		copyTextToClipboard(text, function () {
+			try {
+				if (lastCopyToast) toastr.clear(lastCopyToast);
+				lastCopyToast = toastr.info(msg, 'Copied');
+			} catch (e) {}
+		});
+	} catch (e) {}
+};
 $scope.loopIdx = -1; // index dong dang loop (-1 = tat)
 $scope.loopCount = 0; // dem so vong da lap
 // 1 note tai 1 thoi diem (accordion): mo Note B -> Note A tu dong.
@@ -190,6 +254,7 @@ $scope.openLesson = function (i) {
 	} catch (e) {}
 	$scope.curIdx = -1;
 	$scope.openNoteIdx = -1; // doi bai -> dong het note cu
+	$scope.copyStep = 0; // doi bai -> copy lai tu full
 	loadStars(); // doi bai -> load star tu local de set icon on/off
 	$scope.lessonSearch = ($scope.lesson && $scope.lesson.title) || '';
 	$scope.showScript = false;

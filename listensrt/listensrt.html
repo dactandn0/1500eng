@@ -333,14 +333,12 @@
 		<div class="watch-video-wrap" ng-if="lesson.type !== 'youtube' && !isAudio">
 			<video id="watchVideo" controls playsinline preload="metadata"></video>
 		</div>
-		<div class="watch-video-wrap" ng-if="lesson.type !== 'youtube' && isAudio" style="background:#fffdf7;">
-			<audio id="watchAudio" controls preload="metadata" style="width:100%;"></audio>
-		</div>
 		<div class="quiz-feedback is-bad" ng-if="videoErr">{{videoErr}}</div>
 		<div class="watch-yt-wrap" ng-if="lesson.type === 'youtube'">
 			<div id="watchYt"></div>
 		</div>
 		<div class="watch-row watch-row-sticky">
+			<audio id="watchAudio" ng-if="lesson.type !== 'youtube' && isAudio" controls preload="metadata" style="flex:1 1 auto; min-width:140px;"></audio>
 			<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="toggleFollow()">
 				<i class="fa fa-magnet" aria-hidden="true"></i>&nbsp;Follow
 			</button>

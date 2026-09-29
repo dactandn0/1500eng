@@ -260,7 +260,7 @@ def parse_notes(content):
 DEFAULT_SPLITS = [
     ('music', 'lst_data_music.js', 'LISTEN_DATA_MUSIC'),
     ('tiktok', 'lst_data_tiktok.js', 'LISTEN_DATA_TIKTOK'),
-    ('EnglishConversation_Premium_2nd', 'lst_data_conversation.js', 'LISTEN_DATA_CONVERSATION'),
+    ('EnglishConversation_Premium_2nd', 'lst_data_enc.js', 'LISTEN_DATA_ENC'),
     ('SpeakEnglishLikeAnAmerican', 'lst_data_selaa.js', 'LISTEN_DATA_SELAA'),
     ('VOA', 'lst_data_voa.js', 'LISTEN_DATA_VOA'),
     ('.', 'lst_data_voa.js', 'LISTEN_DATA_VOA'),

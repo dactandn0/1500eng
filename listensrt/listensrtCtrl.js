@@ -420,7 +420,7 @@ function setupPlayer(retry) {
 							const a = String(src).split('/').pop(), b = String($scope.lesson.src).split('/').pop();
 							if (a !== b) return;
 						}
-						$scope.videoErr = 'Không tải được video. Nếu mở từ GitHub Pages: file mp4 chưa được push lên (git add watch/media).';
+						$scope.videoErr = 'VIDEO FILE NOT FOUND  (git add watch/media).';
 						$scope.$applyAsync();
 					} catch (e) {}
 				};

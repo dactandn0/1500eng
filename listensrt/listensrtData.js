@@ -12,7 +12,7 @@
 //   lst_data_selaa.js -> LISTEN_DATA_SELAA (SpeakEnglishLikeAnAmerican/)
 //   lst_data_music.js -> LISTEN_DATA_MUSIC (music/)
 //   lst_data_tiktok.js -> LISTEN_DATA_TIKTOK (tiktok/)
-//   lst_data_conversation.js -> LISTEN_DATA_CONVERSATION (EnglishConversation_Premium_2nd/)
+//   lst_data_enc.js -> LISTEN_DATA_ENC (EnglishConversation_Premium_2nd/)
 // Thu tu concat = thu tu hien trong app (sort theo order, thieu order giu nguyen).
 const LISTEN_DATA =
 	// tam an nhom VOA (chua uu tien hoc) - bo comment dong duoi de hoc lai
@@ -20,5 +20,5 @@ const LISTEN_DATA =
 	(typeof LISTEN_DATA_SELAA !== 'undefined' ? LISTEN_DATA_SELAA : [])
 	.concat(typeof LISTEN_DATA_MUSIC !== 'undefined' ? LISTEN_DATA_MUSIC : [])
 	.concat(typeof LISTEN_DATA_TIKTOK !== 'undefined' ? LISTEN_DATA_TIKTOK : [])
-	.concat(typeof LISTEN_DATA_CONVERSATION !== 'undefined' ? LISTEN_DATA_CONVERSATION : [])
+	.concat(typeof LISTEN_DATA_ENC !== 'undefined' ? LISTEN_DATA_ENC : [])
 	;

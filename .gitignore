@@ -4,7 +4,7 @@ listensrt/media/**/*.mp4
 listensrt/media/**/*.mkv
 listensrt/media/**/*.mov
 listensrt/media/**/*.webm
-listensrt/media/**/*.mp3
+# listensrt/media/**/*.mp3
 listensrt/media/**/*.wav
 listensrt/media/**/*.m4a
 listensrt/media/**/*.ogg

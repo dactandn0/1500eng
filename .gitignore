@@ -1,1 +1,16 @@
-/listensrt/media/*.mp4
+# Media nang + subtitle sinh tu dong: khong push (chay localhost giu file local).
+# De quy toan bo subfolder trong listensrt/media/.
+listensrt/media/**/*.mp4
+listensrt/media/**/*.mkv
+listensrt/media/**/*.mov
+listensrt/media/**/*.webm
+listensrt/media/**/*.mp3
+listensrt/media/**/*.wav
+listensrt/media/**/*.m4a
+listensrt/media/**/*.ogg
+listensrt/media/**/*.oga
+listensrt/media/**/*.aac
+listensrt/media/**/*.flac
+listensrt/media/**/*.wma
+listensrt/media/**/*.srt
+__pycache__/

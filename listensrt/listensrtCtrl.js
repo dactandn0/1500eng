@@ -145,17 +145,23 @@ $scope.copySubs = function (ev) {
 		const n = getChunkN();
 		const chunks = Math.max(1, Math.ceil(subs.length / n));
 		const step = $scope.copyStep || 0;
-		let text = '', msg = '';
+		let text = '', msg = '', chunkStart = -1;
 		if (step <= 0) {
-			text = subs.map(function (s) { return s.en; }).join('\n');	
+			text = subs.map(function (s) { return s.en; }).join('\n');
 			msg = 'Copied all (' + subs.length + ' lines)';
 		} else {
 			const a = (step - 1) * n, b = Math.min(subs.length, a + n);
 			text = subs.slice(a, b).map(function (s) { return s.en; }).join('\n');
 			msg = 'Copied ' + (a + 1) + '-' + b + '/' + subs.length;
+			chunkStart = a; // sub dau chunk -> cuon panel toi (copy all thi thoi)
 		}
 		$scope.copyStep = (step + 1) % (chunks + 1);
 		copyLock = true; // khoa auto-copy cua tick de giu nguyen clipboard vua copy
+		if (chunkStart >= 0) {
+			// copy chunk -> cuon panel toi sub dau chunk, nghi follow-scroll 1.5s de kịp nhìn
+			noteScrollGraceUntil = Date.now() + 1500;
+			$timeout(function () { try { scrollPanelTo(chunkStart); } catch (e2) {} }, 120);
+		}
 		copyTextToClipboard(text, function () {
 			try {
 				if (isNarrowCopyToast()) $scope.showCopyToast(msg);

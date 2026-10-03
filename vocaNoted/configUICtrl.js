@@ -8,7 +8,7 @@ app.controller("configUICtrl", function($scope, $rootScope, $location) {
 
 $scope.audioPitch = 1.5
 $scope.audioRate = 0.8
-$scope.listenChunk = 2 // so cau copy moi cum o Listen (slider 2-10)
+$scope.listenChunk = 5 // so cau copy moi cum o Listen (slider 2-10)
 
 $scope.toastTimeOut = HELPER_TOASTER_TIMEOUT_DEF
 $scope.toastTimeOutMed = HELPER_TOASTER_TIMEOUT_MED_DEF

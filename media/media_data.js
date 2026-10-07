@@ -23,4 +23,5 @@ const IMG_DATA = [
 	{ title: 'TG Full NgocTrai', src: 'TG_Full_NgocTrai.jpg' },
 	{ title: 'TG Raised Chrome', src: 'TG_Raised_Chrome.jpg' },
 	{ title: 'TG Sample', src: 'TG_Sample.jpg' },
+	{ title: 'TG Full Gel GS', src: 'TG_Full_Gel-GS.jpg' },
 ];

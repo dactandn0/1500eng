@@ -17,15 +17,19 @@
 // Thu tu concat = thu tu hien trong app (sort theo order, thieu order giu nguyen).
 //
 // Bat/tat nhom o LISTEN_GROUPS_ON (true = hoc, false = an). Label chay o header tu sinh theo.
+
 const LISTEN_GROUP_NAMES = { VOA: 'VOA', SELA: 'SELAA', MUSIC: 'Music', TIKTOK: 'TikTok', ENC: 'ENC', SSV5: 'SSV5' };
-const LISTEN_GROUPS_ON = { VOA: false, SELA: true, MUSIC: true, TIKTOK: true, ENC: true, SSV5: true };
+
+const LISTEN_GROUPS_ON = { VOA: false, SELAA: true, MUSIC: true, TIKTOK: true, ENC: true, SSV5: true };
+
 const LISTEN_DATA = []
 	.concat(LISTEN_GROUPS_ON.VOA && typeof LISTEN_DATA_VOA !== 'undefined' ? LISTEN_DATA_VOA : [])
-	.concat(LISTEN_GROUPS_ON.SELA && typeof LISTEN_DATA_SELA !== 'undefined' ? LISTEN_DATA_SELA : [])
+	.concat(LISTEN_GROUPS_ON.SELAA && typeof LISTEN_DATA_SELAA !== 'undefined' ? LISTEN_DATA_SELAA : [])
 	.concat(LISTEN_GROUPS_ON.MUSIC && typeof LISTEN_DATA_MUSIC !== 'undefined' ? LISTEN_DATA_MUSIC : [])
 	.concat(LISTEN_GROUPS_ON.TIKTOK && typeof LISTEN_DATA_TIKTOK !== 'undefined' ? LISTEN_DATA_TIKTOK : [])
 	.concat(LISTEN_GROUPS_ON.ENC && typeof LISTEN_DATA_ENC !== 'undefined' ? LISTEN_DATA_ENC : [])
 	.concat(LISTEN_GROUPS_ON.SSV5 && typeof LISTEN_DATA_SSV5 !== 'undefined' ? LISTEN_DATA_SSV5 : []);
+
 const LISTEN_GROUPS_LABEL = Object.keys(LISTEN_GROUPS_ON)
 	.filter(function (k) { return LISTEN_GROUPS_ON[k]; })
 	.map(function (k) { return LISTEN_GROUP_NAMES[k] || k; }).join('    •    ');

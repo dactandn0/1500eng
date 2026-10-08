@@ -1738,6 +1738,37 @@ input:focus {
   z-index: 31;
 }
 
+/* Cum audio ebook (audioLoopRadio + <audio>): sticky day man hinh, giong listensrt */
+.ebook-audio-sticky {
+  position: sticky;
+  bottom: 0;
+  z-index: 40;
+  background: #fffdf7;
+  border: 1px solid #eee5c9;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding: .4rem .6rem;
+  margin-bottom: .5rem;
+}
+.ebook-audio-sticky audio {
+  width: 100%;
+  display: block;
+  margin-top: .3rem;
+}
+/* cuon xuong -> dock day man hinh (giong listensrt watch-row-sticky) */
+.ebook-audio-sticky.is-docked {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  max-width: 980px;
+  margin: 0 auto;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -6px 20px rgba(72, 64, 42, 0.12);
+}
+
 .btn-audio-adj {
   color: red;
   background-color: #ffccdd;
@@ -1770,7 +1801,7 @@ input:focus {
     position: fixed; 
     top: 40%;
     right: 2%;
-    z-index: 31; 
+    z-index: 999; 
   }
 
   /* Nhom nut canh (showVi.html): noi tren toast (toastr z-index 999999) */

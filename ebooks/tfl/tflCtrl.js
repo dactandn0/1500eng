@@ -2,7 +2,6 @@
 
 document.write('<script src="./ebooks/tfl/data/tfl_b1_data.js" type="text/javascript"></script>');
 document.write('<script src="./ebooks/tfl/data/tfl_b2_data.js" type="text/javascript"></script>');
-document.write('<script src="./ebooks/tfl/data/spell_data.js" type="text/javascript"></script>');
 
 var app = angular.module("tflApp", []);
 app.controller("tflCtrl", function($scope, $rootScope, $timeout ) {
@@ -16,10 +15,10 @@ $scope.img_root = './ebooks/tfl/data/images/' ;
 let keyU = 'tfl_u_'
 
 window.tflBookChange = function (num) {
-	// VOA (book 3) da chuyen sang module ListenSrt -> may cu luu book=3 thi ve book 1
-	if (num === 3 || typeof num === 'undefined') num = 1;
+	// VOA (book 3) da chuyen sang module ListenSrt + Spell (book 0) da xoa ->
+	// may cu luu book=3/0 thi ve book 1
+	if (num === 3 || num === 0 || typeof num === 'undefined') num = 1;
 	switch (num) {
-		case 0: $scope.stories = SPELL_DATA; break;
 		case 1: $scope.stories = tfl_b1_stories; break;
 		case 2: $scope.stories = tfl_b2_stories; break;
 		default: $scope.stories = tfl_b1_stories; num = 1; break;
@@ -45,7 +44,6 @@ $scope.styleTrack = function(trackId) {
 $scope.createAudioSrc = function() {
 	let book
 	let track
-	if ($scope.KBook==0) { book = 'spell'; track = $scope.story.track }
 	if ($scope.KBook==1) { book = 'tfl_b1'; track = $scope.story.track }
 	if ($scope.KBook==2) { book = 'tfl_b2'; track = $scope.story.track }
 	if ($scope.KBook==3) { book = 'tfl_b1'; track = $scope.story.track }

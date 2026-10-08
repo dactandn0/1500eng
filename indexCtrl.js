@@ -18,10 +18,9 @@ var VocaForSearch = VocaToUI
 // .concat(IELTS_SYN)
 // .concat(NATIONS)
 
-// kAllStories: pool truyen/bai doc (Vol5 speaking, Englab W/R, Collins, LPTD cd1-4, BOOK4K_1).
+// kAllStories: pool truyen/bai doc (Englab W/R, Collins, LPTD cd1-4, BOOK4K_1).
 // Dung o: tim cau vi du chua tu (doFetchSentences/fetchSentences) cho toast + modal vi du.
-var kAllStories = SPEAKING_SAME_VOL5
-	.concat(ENGLAB_BEGIN_DATA_W)
+var kAllStories = ENGLAB_BEGIN_DATA_W
 	.concat(ENGLAB_BEGIN_DATA_R)
 	.concat(collins_cd12)
 	.concat(lptd_cd1_stories)

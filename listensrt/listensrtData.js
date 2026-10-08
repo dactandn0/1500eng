@@ -13,6 +13,7 @@
 //   lst_data_music.js -> LISTEN_DATA_MUSIC (music/)
 //   lst_data_tiktok.js -> LISTEN_DATA_TIKTOK (tiktok/)
 //   lst_data_enc.js -> LISTEN_DATA_ENC (EnglishConversation_Premium_2nd/)
+//   lst_data_ssv5.js -> LISTEN_DATA_SSV5 (Speaking_Sample_Vol5/ 1.1-1.10)
 // Thu tu concat = thu tu hien trong app (sort theo order, thieu order giu nguyen).
 const LISTEN_DATA =
 	// tam an nhom VOA (chua uu tien hoc) - bo comment dong duoi de hoc lai
@@ -21,4 +22,5 @@ const LISTEN_DATA =
 	.concat(typeof LISTEN_DATA_MUSIC !== 'undefined' ? LISTEN_DATA_MUSIC : [])
 	.concat(typeof LISTEN_DATA_TIKTOK !== 'undefined' ? LISTEN_DATA_TIKTOK : [])
 	.concat(typeof LISTEN_DATA_ENC !== 'undefined' ? LISTEN_DATA_ENC : [])
+	.concat(typeof LISTEN_DATA_SSV5 !== 'undefined' ? LISTEN_DATA_SSV5 : [])
 	;

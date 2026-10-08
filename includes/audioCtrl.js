@@ -13,16 +13,57 @@ app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, 
 		$scope.audio = null;
 	});
 
-	var audioDuration = 0;
+	var audioDuration = 0; // giu cho (truoc dung cho slider, gio <audio> native tu co seekbar)
+
+	// Cuon xuong qua 80px -> dock thanh audio xuong day man hinh (giong listensrt)
+	function updateEbookDock() {
+		try {
+			const bar = document.querySelector('.ebook-audio-sticky');
+			if (!bar) return;
+			const y = window.pageYOffset || document.documentElement.scrollTop || 0;
+			if (y > 80) bar.classList.add('is-docked');
+			else bar.classList.remove('is-docked');
+		} catch (e) {}
+	}
+	try { window.addEventListener('scroll', updateEbookDock, { passive: true }); } catch (e) {}
+	$scope.$on('$destroy', function() {
+		try { window.removeEventListener('scroll', updateEbookDock); } catch (e) {}
+	});
 
 	$scope.bPlaying = false;
 	$scope.bPause = false;
 	$scope.audio;
 	kCurrTime = 0; // for pause()
 
-	$scope.backSound = function(mul) {
-		$scope.audio.currentTime += $rootScope.adjAudioTime * mul;
+	function bindAudioEnded(el) {
+		try {
+			if (!el || el._ebookBound) return;
+			el._ebookBound = true;
+			el.addEventListener('ended', function() {
+				$scope.stopSound();
+				$scope.$emit('parent_whenAudioEnded');
+			});
+		} catch (e) {}
 	}
+
+	let loadedAudioSrc = null; // src da nap vao element (getAttribute tra URL tuyet doi -> khong so sanh attr)
+	function loadAudioEl(src) {
+		try {
+			if (!src || src === loadedAudioSrc) return document.getElementById('ebookAudio');
+			const el = document.getElementById('ebookAudio');
+			if (!el) return null;
+			loadedAudioSrc = src;
+			el.src = src;
+			el.load();
+			bindAudioEnded(el);
+			return el;
+		} catch (e) { return null; }
+	}
+
+	// audio hien mac dinh: doi story (audioSrc doi) -> nap lai element, khong autoplay
+	$scope.$watch(function() { return $rootScope.audioSrc; }, function(src) {
+		loadAudioEl(src);
+	});
 
 	$scope.$on("child_stopSound", function(event, data) {
 		$scope.stopSound();
@@ -32,19 +73,6 @@ app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, 
 		$scope.playFullSound();
 	});
 
-
-	$scope.pauseSound = function() {
-		if (!$scope.audio) return;
-		$scope.bPause = !$scope.bPause;
-
-		if ($scope.bPause === true) {
-			$scope.audio.pause();
-			kCurrTime = $scope.audio.currentTime;
-		} else {
-			$scope.audio.currentTime = kCurrTime;
-			$scope.audio.play();
-		}
-	}
 
 	$scope.stopSound = function() {
 		if ($scope.audio) {
@@ -64,47 +92,20 @@ app.controller('AudioCtrl', ['$scope', '$rootScope', 'toastr', function($scope, 
 			$scope.stopSound();
 			return;
 		}
-		$scope.audio = new Audio($rootScope.audioSrc);
-		$scope.audio.loop = false;
-		window.playResult = $scope.audio.play();
-
-		$scope.audio.addEventListener('timeupdate', $scope.setupSeekbar);
-		$scope.audio.addEventListener('loadedmetadata', () => {
-			audioDuration = $scope.audio.duration;
-		});
-
-		$scope.bPlaying = true;
-		$scope.bPause = false;
-		$scope.$evalAsync();
-
-		$scope.audio.addEventListener("ended", function() {
-			$scope.stopSound();
-			$scope.$emit('parent_whenAudioEnded')
-		});
-		playResult.catch(e => {
-			toastr.error(e)
-			$scope.stopSound();
-		});
-	}
-
-	// for html call event
-	setAudioTime = function() {
-		if ($scope.audio && $scope.bPlaying) {
-			var valBar = document.getElementById('slider').value;
-			var val = audioDuration * valBar / 100.0
-			$scope.audio.currentTime = val
-		}
-	}
-
-	$scope.calAudioBarUI = function() {
-		if ($scope.audio) {
-			var ratio = $scope.audio.currentTime * 100 / audioDuration;
-			document.getElementById('slider').value = Math.floor(ratio)
-		}
-	}
-
-	$scope.setupSeekbar = function() {
-		$scope.calAudioBarUI()
+		// <audio> hien mac dinh (khong nut Play): lay element, gan src hien tai + play
+		try {
+			const el = loadAudioEl($rootScope.audioSrc);
+			if (!el) return;
+			$scope.audio = el;
+			$scope.bPlaying = true;
+			$scope.bPause = false;
+			$scope.$evalAsync();
+			const pr = el.play();
+			if (pr && pr.catch) pr.catch(e => {
+				toastr.error(e)
+				$scope.stopSound();
+			});
+		} catch (e) { $scope.stopSound(); }
 	}
 
 	$scope.loadData = function() {}

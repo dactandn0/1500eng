@@ -2,7 +2,7 @@
 const tfl_b1_stories = [
 {
 	title:" Names and Titles",
-	track:"01.02",
+	track:"1.2",
 	en:"1<br>\
 A My name is Maria Carter and I have a reservation.<br>\
 B Is that M-A-R-Y C-A-R-T-E-R?<br>\
@@ -45,7 +45,7 @@ B Yes, it is. I hate it!"
 	,voca:"",
 },
 {
-	track:"01.03",
+	track:"1.3",
 	en:"1<br>\
 A Hello.<br>\
 B Hello. Can I speak to Cindy, please?<br>\
@@ -87,7 +87,7 @@ B It's okay. I'll call back."
 	,voca:"",
 },
 {
-	track:"01.04",
+	track:"1.4",
 	en:"1<br>\
 I'd like you to meet my friend, David Wilson.<br>\
 Hi, David. Nice to meet you.<br>\
@@ -119,7 +119,7 @@ Hello, Dr. Steinberg. I'm glad to meet you. I've heard great things about you."
 },
 {
 	title:"Describing People",
-	track:"02.02",
+	track:"2.2",
 	en:"1<br>\
 A So is your boss young?<br>\
 B He's in his thirties, I guess. About 35.<br>\
@@ -153,7 +153,7 @@ A Yeah. He sings in a rock band, I think."
 	,voca:"",
 },
 {
-	track:"02.03",
+	track:"2.3",
 	en:"1<br>\
 What does your girlfriend look like, Tony?<br>\
 Cindy? Oh, she's tall. And she's got long, dark brown hair.<br>\
@@ -175,7 +175,7 @@ Really? I'd like to meet her."
 	,voca:"",
 },
 {
-	track:"02.04",
+	track:"2.4",
 	en:"1<br>\
 It's my little boy! We were looking for some pants for my husband. Now I can't find him.<br>\
 Don't worry, ma'am. We'll find him. How old is he?<br>\
@@ -216,7 +216,7 @@ Thanks a lot!"
 },
 {
 	title:"Clothes",
-	track:"03.02",
+	track:"3.2",
 	en:"1<br>\
 Which one is David?<br>\
 David? There he is. He's wearing a jacket and tie. And he's got reddish-blond hair. Okay. Thanks.<br>\
@@ -290,7 +290,7 @@ Ken đâu rồi?<br>\
 	,voca:"",
 },
 {
-	track:"03.03",
+	track:"3.3",
 	en:"1<br>\
 How are the pants, sir?<br>\
 I think they're too short. What do you think?<br>\
@@ -320,7 +320,7 @@ Too big? Let me find a smaller size."
 	,voca:"",
 },
 {
-	track:"03.04",
+	track:"3.4",
 	en:"1<br>\
 Sonia was very well dressed. She had on a jacket and a long, dark blue skirt. She was also wearing a yellow blouse. She wasn't carrying a bag, but she did have a small wallet with her. Oh, and I remember she had nice gold earrings. I also remember her shoes. She was wearing black shoes with very high heels.<br>\
 2<br>\
@@ -341,7 +341,7 @@ Bà Graham trông thực sự ổn. Bà mặc một chiếc váy dài màu đỏ
 },
 {
 	title:"Time",
-	track:"04.02",
+	track:"4.2",
 	en:"1<br>\
 Excuse me, what's the time?<br>\
 Uh, it's ten fifteen.<br>\
@@ -369,7 +369,7 @@ Class starts at eight. I've only got ten minutes!"
 	,voca:"",
 },
 {
-	track:"04.03",
+	track:"4.3",
 	en:"1<br>\
 You are listening to Star Radio at 90.9 on your FM dial. The station with the best classic rock in town. The time is 7:15. Time for more classic rock...<br>\
 2<br>\
@@ -390,7 +390,7 @@ This is your station for easy listening, KABC. The time right now is going on 5:
 	,voca:"",
 }
 ,{
-	track:"04.04",
+	track:"4.4",
 	en:"1.<br>\
 Thank you for calling Cinema World. Our box office opens every afternoon at 2:30. Today in Cinema A, we are showing Holiday in Rome, starring Gina Jones. Show times are 3:40, 5:45, 7:55, and 10:15.<br>\
 2.<br>\
@@ -406,7 +406,7 @@ In Cinema D, we are showing The Alien from Saturn. Show times are 3:20, 5:10, 7:
 },
 {
 	title:"Dates",
-	track:"05.02",
+	track:"5.2",
 	en:"1<br>\
 Have you been here long?<br>\
 No, we arrived a few days ago, on the first of the month.<br>\
@@ -442,7 +442,7 @@ On the 16th."
 	,voca:"",
 },
 {
-	track:"05.03",
+	track:"5.3",
 	en:"1.<br>\
 This is Dr. Costello's office. We're calling to change your dental appointment to August 3rd at 9:30 in the morning. Thank you.<br>\
 2.<br>\
@@ -459,7 +459,7 @@ This is Star Travel. We've booked your flight to New Orleans for next month. You
 	,voca:"",
 },
 {
-	track:"05.04",
+	track:"5.4",
 	en:"1.<br>\
 Isn't it your birthday this month, Ted?<br>\
 Hey! It was a month ago.<br>\
@@ -488,7 +488,7 @@ Oh, that sounds nice."
 },
 {
 	title:"Jobs",
-	track:"06.02",
+	track:"6.2",
 	en:" 1.<br>\
  I'm a salesperson. I sell computers. I like my job. It's really interesting. And I meet lots of interesting people.<br>\
  2.<br>\
@@ -516,7 +516,7 @@ Oh, that sounds nice."
 	,voca:"",
 },
 {
-	track:"06.03",
+	track:"6.3",
 	en:"1.<br>\
 Hi, Ted.<br>\
 Oh, hi.<br>\
@@ -560,7 +560,7 @@ I'm sorry to hear that!"
 	,voca:"",
 },
 {
-	track:"06.04",
+	track:"6.4",
 	en:"1<br>\
 So how do you like your job, Bill?<br>\
 Well, it was okay at first, but now, after two years, I don't like it.<br>\
@@ -647,7 +647,7 @@ Nhưng tiền boa thì tuyệt. Nhưng thực ra tôi nên sớm tìm một côn
 },
 {
 	title:"Sports and Exercise",
-	track:"07.02",
+	track:"7.2",
 	en:"1<br>\
 Do you play sports on the weekend, Rita?<br>\
 No, I hate sports.<br>\
@@ -723,7 +723,7 @@ Có chứ. Tôi đi bộ rất nhiều.<br>\
 	,voca:"",
 },
 {
-	track:"07.03",
+	track:"7.3",
 	en:"1<br>\
 Your muscles are so big, Dave. What do you do to get them so big?<br>\
 Well, I go to the gym every day after work, and on Saturdays, too. I love it. Do you work out?<br>\
@@ -777,7 +777,7 @@ Vậy, bạn có tập thể dục không?<br>\
 	,voca:"",
 },
 {
-	track:"07.04",
+	track:"7.4",
 	en:"1<br>\
 I think exercise is so important to good health. There is a really good sports club near my school. During the week, I play tennis there for an hour before school starts. On weekends, I usually work out at the gym near my house for a few hours. I also play baseball with some friends from school. It's so much fun!<br>\
 2<br>\
@@ -802,7 +802,7 @@ Tôi thích tập thể dục, nhưng tôi không tập nhiều như tôi nên l
 },
 {
 	title:"Locations",
-	track:"08.02",
+	track:"8.2",
 	en:"1<br>\
 Mom, have you seen my magazine?<br>\
 I think it's in the living room on top of the TV.<br>\
@@ -821,7 +821,7 @@ Oh, yeah. That's right."
 	,voca:"",
 },
 {
-	track:"08.03",
+	track:"8.3",
 	en:"1<br>\
 Do you think I should put the magazine rack next to the window?<br>\
 No. Not next to the window. I'd put it in the corner next to the sofa. It will look nice there.<br>\
@@ -889,7 +889,7 @@ Có lẽ chúng ta có thể đặt bàn ăn dựa vào tường, đối diện 
 	,voca:"against,plant stand,next to,in front of,across from,in the corner,in the far left corner",
 },
 {
-	track:"08.04",
+	track:"8.4",
 	en:"1<br>\
 Do these magazines go on the bookshelf?<br>\
 Yes. Put them on the bookshelf, please. On the top is fine.<br>\
@@ -968,7 +968,7 @@ Tôi có nên để nó ở đâu đó không?<br>\
 },
 {
 	title:"The Family",
-	track:"09.02",
+	track:"9.2",
 	en:"1<br>\
 That's me in the middle. That's my oldest niece, Betsy, on the left. She's in her second year of college. And that's my nephew, on the right. He's just finished high school.<br>\
 Oh, he's handsome.<br>\
@@ -1032,7 +1032,7 @@ Bố bên trái.<br>\
 	,voca:"",
 },
 {
-	track:"09.03",
+	track:"9.3",
 	en:"1<br>\
 Do you have any brothers and sisters, Stephanie?<br>\
 No brothers. I wish I did. But I've got three sisters.<br>\
@@ -1063,7 +1063,7 @@ No, I'm an only child. It's just me and my parents."
 	,voca:"",
 },
 {
-	track:"09.04",
+	track:"9.4",
 	en:"1.<br>\
 Both of my parents are taller than me. My dad is pretty tall, but my brother is even taller than my dad. Together they look like a basketball team! My sister and I are the short ones in the family.<br>\
 2.<br>\
@@ -1092,7 +1092,7 @@ Tôi thích đi du lịch. Mẹ tôi và tôi đến một nơi khác nhau mỗi
 },
 {
 	title:"Entertainment",
-	track:"10.02",
+	track:"10.2",
 	en:"1<br>\
 So do you think we should go and see it?<br>\
 Yes, I think so. I hear it's very good. My friend said the story is great. And I love Arnold Schwarzenegger.<br>\
@@ -1126,7 +1126,7 @@ Great idea."
 	,voca:"",
 },
 {
-	track:"10.03",
+	track:"10.3",
 	en:"1<br>\
 Hello.<br>\
 Hi, Penny. This is Bob.<br>\
@@ -1169,7 +1169,7 @@ Oh, I'd love to, but I can't tonight. I have too much work to do."
 	,voca:"",
 },
 {
-	track:"10.04",
+	track:"10.4",
 	en:"1<br>\
 Bobby, would you like to go out for dinner Thursday?<br>\
 Thursday? Oh, I'd love to, but I have to meet my sister for dinner.<br>\
@@ -1229,7 +1229,7 @@ Tốt. Chúng ta đi sau giờ làm nhé.<br>\
 	,voca:"",
 },{
 	title:"Prices",
-	track:"11.02",
+	track:"11.2",
 	en:"1<br>\
 Can I help you?<br>\
 Yes, how much are these shoes?<br>\
@@ -1263,7 +1263,7 @@ Hmm. Well, I'll think about it."
 	,vi:""
 	,voca:"",
 },{
-	track:"11.03",
+	track:"11.3",
 	en:"1.<br>\
 Lets see. Soup. Thats two for a dollar. And a bottle of shampoo—$6,50. So that comes to $7,50 and your change is $12,50.<br>\
 2.<br>\
@@ -1280,7 +1280,7 @@ Is this all? Okay. Lets see. Now the magazines are $6,25. And youre taking the b
 	,voca:"",
 },
 {
-	track:"11.04",
+	track:"11.4",
 	en:"1.<br>\
 I could never buy a car at home because we pay a very high tax on cars. Only rich people can really afford to buy a car at home. Here in the US, I drive a nice new car and I can easily afford it. You don’t have to be rich to own a car, which is great.<br>\
 2.<br>\
@@ -1308,7 +1308,7 @@ Hầu hết mọi người gửi con đến trường tư ở nhà vì trường
 	,voca:"",
 },{
 	title:"Restaurants",
-	track:"12.02",
+	track:"12.2",
 	en:"1<br>\
 Are you ready to order?<br>\
 Yes, I'd like to start with the salad, please.<br>\
@@ -1336,7 +1336,7 @@ No, thanks."
 	,voca:"",
 },
 {
-	track:"12.03",
+	track:"12.3",
 	en:"1<br>\
 There you are, sir. Two slices of pizza and a large cola.<br>\
 Thank you. Hmm.<br>\
@@ -1376,7 +1376,7 @@ Yeah. I think I can make better spaghetti than this."
 	,voca:"",
 },
 {
-	track:"12.04",
+	track:"12.4",
 	en:"1<br>\
 I went to a new steak restaurant last night that opened near my house. I love trying new places. To start the meal, I had an interesting appetizer. It was some kind of seafood with a spicy sauce on it… Mmm! The main dish, of course, was steak. It was very small and a little tough, though.<br>\
 However, the vegetables were great—nice and fresh, but not too oily. The final thing was the best—the dessert! It was apple pie with a lot of ice cream on it. I know that I shouldn't eat so many sweets, but it was delicious!<br>\
@@ -1400,7 +1400,7 @@ Cuối cùng, tôi gọi một bát lớn sô cô la mousse. Nó giống hệt n
 	,voca:"",
 },{
 	title:"Small Talk",
-	track:"13.02",
+	track:"13.2",
 	en:"1<br>\
 Oh, hello, Bob. I haven't seen you in ages. How is everything with you these days?<br>\
 2<br>\
@@ -1421,7 +1421,7 @@ How have you been? And how's your family? It's so nice to see you again."
 	,voca:"",
 },
 {
-	track:"13.03",
+	track:"13.3",
 	en:"1<br>\
 Hey, how's it going? Are you enjoying the party?<br>\
 Yes, I am. The people here are really nice.<br>\
@@ -1462,7 +1462,7 @@ Yeah, almost everyone."
 	,voca:"",
 },
 {
-	track:"13.04",
+	track:"13.4",
 	en:"1<br>\
 Hey, I was just talking to Cindy. Did you know she’s had a really good job in a computer company for a long time?<br>\
 Really?<br>\
@@ -1533,7 +1533,7 @@ Tôi nghĩ là tôi sẽ thấy vậy. Cảm ơn bạn đã cho tôi biết."
 },
 {
 	title:"Vacations",
-	track:"14.02",
+	track:"14.2",
 	en:"1<br>\
 Did you have a good vacation?<br>\
 Not bad. I decided not to go away. I just stayed home and watched TV.<br>\
@@ -1586,7 +1586,7 @@ It was all right until I lost all my money!"
 	,voca:"",
 },
 {
-	track:"14.03",
+	track:"14.3",
 	en:"1<br>\
 Did you have a nice vacation?<br>\
 It was nothing special. The weather was terrible.<br>\
@@ -1627,7 +1627,7 @@ A month! You're lucky!"
 	,voca:"",
 },
 {
-	track:"14.04",
+	track:"14.4",
 	en:"1<br>\
 Is this you?<br>\
 Yes, it is.<br>\
@@ -1659,7 +1659,7 @@ Yes, we did. It was really very comfortable to travel in. We slept in it, too."
 },
 {
 	title:"Apartment Living",
-	track:"15.02",
+	track:"15.2",
 	en:"1<br>\
 What's your apartment like, Ken?<br>\
 It's comfortable, but it's pretty small. It's only got one room.<br>\
@@ -1693,7 +1693,7 @@ Oh."
 	,voca:"",
 },
 {
-	track:"15.03",
+	track:"15.3",
 	en:"1<br>\
 Does the kitchen have everything you need, like a stove and a refrigerator?<br>\
 It's got a stove but it doesn't have a refrigerator. I need to buy one.<br>\
@@ -1727,7 +1727,7 @@ Cảm ơn, có lẽ tôi sẽ đến."
 	,voca:"",
 },
 {
-	track:"15.04",
+	track:"15.4",
 	en:"1<br>\
 The bookshelf looks really good in the living room. And the TV is just fine. When I find a stereo, I'm going to put it in the bookshelf. I don't have a stereo now because I want to find a cheap one. I'm going to check out the sales next week. I've got a dinner table, but I still need a sofa. Now I have to sit at the dinner table to watch TV. My living room is small, so I want a small sofa.<br>\
 2<br>\
@@ -1748,7 +1748,7 @@ Giá sách thì tốt, mặc dù có lẽ hơi lớn so với phòng khách. Tô
 },
 {
 	title:"Movies",
-	track:"16.02",
+	track:"16.2",
 	en:"1<br>\
 What kind of movies do you like, Sue?<br>\
 Let me see. Well, I really like science-fiction and action movies.<br>\
@@ -1798,7 +1798,7 @@ Tôi cũng vậy."
 	,voca:"",
 },
 {
-	track:"16.03",
+	track:"16.3",
 	en:"1<br>\
 It's one of the funniest movies I've seen. It's about this weird family that goes on a European vacation. But it's a vacation where everything goes wrong. First, they lose all their luggage, then they end up in the wrong city by mistake. After that, someone thinks they are bank robbers and there's this crazy car chase. If you want a good laugh, you should see it.<br>\
 Yeah, I've had a busy week. It sounds like the kind of movie I need to see.<br>\
@@ -1832,7 +1832,7 @@ Này, nghe có vẻ thú vị. Tôi thích những bộ phim như vậy."
 	,voca:"",
 },
 {
-	track:"16.04",
+	track:"16.4",
 	en:"1<br>\
 What's that new movie like? Is it a drama?<br>\
 Kind of. This volcano suddenly comes up out of the ocean in San Francisco, so this family is trying to get away from it. It's a good story, though. Pretty scary and very realistic.<br>\
@@ -1900,7 +1900,7 @@ Tuyệt."
 	,voca:"",
 },{
 	title:"The Weather",
-	track:"17.02",
+	track:"17.2",
 	en:"1<br>\
 And here is today's weather forecast for the international traveler. Let's start with Beijing. It will be a cold day in Beijing today, and windy. The low will be zero and the high will be 6 degrees.<br>\
 2<br>\
@@ -1915,7 +1915,7 @@ In Taipei it will be cloudy, wet, and hot today. The low will be 20 degrees and 
 	,voca:"",
 },
 {
-	track:"17.03",
+	track:"17.3",
 	en:"1<br>\
 Are you going out?<br>\
 Yes. Later. What's the weather like outside?<br>\
@@ -1967,7 +1967,7 @@ Không đời nào! Trời quá lạnh đối với tôi.<br>\
 	,voca:"",
 },
 {
-	track:"17.04",
+	track:"17.4",
 	en:"1<br>\
 How's the weather?<br>\
 The temperature is going down, and it's turned very windy. I think it's going to rain a lot tonight.<br>\
@@ -1999,7 +1999,7 @@ It sure is. We're going to have a really bad snowstorm. Let's not go out today."
 },
 {
 	title:"Shopping",
-	track:"18.02",
+	track:"18.2",
 	en:"1<br>\
 I think these are too big. Do you have a smaller pair?<br>\
 Yes, we do. What size are those?<br>\
@@ -2067,7 +2067,7 @@ Tôi có thể chơi bản này không? Tôi muốn nghe trước khi mua.<br>\
 	,voca:"",
 },
 {
-	track:"18.03",
+	track:"18.3",
 	en:"1<br>\
 Could I help you with anything today, ma'am?<br>\
 Well, I really like this blouse. Do you have it in another design?<br>\
@@ -2108,7 +2108,7 @@ Oh, that's too bad."
 	,voca:"",
 },
 {
-	track:"18.04",
+	track:"18.4",
 	en:"1<br>\
 Can I try on that shirt, please?<br>\
 This one?<br>\
@@ -2189,7 +2189,7 @@ Tôi không nghĩ chúng ngọt lắm. Những quả nhỏ hơn thường ngọt
 },
 {
 	title:"Using the Telephone",
-	track:"19.02",
+	track:"19.2",
 	en:"1<br>\
 Hello.<br>\
 Hello, Joe?<br>\
@@ -2231,7 +2231,7 @@ Sure. Hold on and I'll get him."
 	,voca:"",
 },
 {
-	track:"19.03",
+	track:"19.3",
 	en:"1<br>\
 Hello.<br>\
 Hello, can I speak to Anne, please?<br>\
@@ -2279,7 +2279,7 @@ Bye!"
 	,voca:"",
 },
 {
-	track:"19.04",
+	track:"19.4",
 	en:"1<br>\
 Hello.<br>\
 Hi, Jenny. This is David. How are things?<br>\
@@ -2340,7 +2340,7 @@ Sure."
 	,voca:"",
 },{
 	title:"Describing Things",
-	track:"20.02",
+	track:"20.2",
 	en:"1<br>\
 Hello. City Taxi.<br>\
 Yes, I left a briefcase in a taxi coming back from the airport.<br>\
@@ -2366,7 +2366,7 @@ Sorry. They're not here."
 	,vi:""
 	,voca:"",
 },{
-	track:"20.03",
+	track:"20.3",
 	en:"1<br>\
  I wear it instead of sunglasses because sunglasses make me look so stupid. I always wear it when it's sunny outside. If I don't wear it, the sun hurts my eyes. It's not too good on windy days, though.<br>\
  2<br>\
@@ -2382,7 +2382,7 @@ They're very comfortable for jogging or walking. That's good because I jog and w
 	,vi:""
 	,voca:"",
 },{
-	track:"20.04",
+	track:"20.4",
 	en:"1<br>\
  It's a brown leather one. I keep all my money and my credit cards in it. I usually keep it in my back pocket. It probably fell out when I was getting off the bus. I hope I get it back because it also has my ID card in it, and that's very important.<br>\
  2<br>\
@@ -2410,7 +2410,7 @@ Tôi nghĩ nó ở trong cặp của tôi. Tôi thường để nó ở đó khi
 	,voca:"",
 },{
 	title:"Directions",
-	track:"21.02",
+	track:"21.2",
 	en:"1<br>\
 Excuse me. Where's the post office?<br>\
 The post office? Go straight for two blocks and then turn left. It's on the left.<br>\
@@ -2450,7 +2450,7 @@ Có. Đi phố đầu tiên bên trái. Đi qua ngã tư tiếp theo. Bạn sẽ
 	,voca:"",
 },
 {
-	track:"21.03",
+	track:"21.3",
 	en:"1<br>\
 Excuse me. Is there a bank near here?<br>\
 Yes, there is. Go straight up Third Street for two blocks and turn right on Pine Street. The bank is on the right.<br>\
@@ -2491,7 +2491,7 @@ Bạn có thể chỉ cho tôi cách đến Bảo tàng Nghệ thuật không?<b
 Bảo tàng Nghệ thuật? Tất nhiên rồi. Đi lên Đường Third hai dãy nhà rồi rẽ trái vào Đường Pine. Đi đến cuối dãy nhà. Bảo tàng ở bên trái bạn, góc đường Second và Đường Pine."
 	,voca:"",
 },{
-	track:"21.04",
+	track:"21.4",
 	en:"1.<br>\
 So when you come out of the subway, look for a tall glass building. That's a hotel. Walk past that for two blocks and you'll see a small street on the right. That's my street. There's a grocery store on the corner. Go down the street and my place is the fourth house on the left. Maybe bring some CDs with you, because I don't have any dance music for the party.<br>\
 2<br>\
@@ -2511,7 +2511,7 @@ Tôi sống trong một tòa nhà chung cư gần trường trung học. Xuống
 	,voca:"",
 },{
 	title:"People We Know",
-	track:"22.02",
+	track:"22.2",
 	en:"1<br>\
 So tell me about your new friend, Cindy. What's she like?<br>\
 She's really neat. She's great to be with because she makes me laugh all the time.<br>\
@@ -2577,7 +2577,7 @@ Thật tuyệt. Và cô ấy cũng tặng tôi một món quà tuyệt vời và
 	,voca:"",
 },
 {
-	track:"22.03",
+	track:"22.3",
 	en:"1<br>\
 Mr. Grant is really funny, isn't he? He loves telling jokes. And he's so easygoing.<br>\
 I know. Then there's Mrs. Grant. She never seems to smile. I wonder why she's so serious all the time.<br>\
@@ -2635,7 +2635,7 @@ Họ có vẻ là cặp đôi hoàn hảo."
 	,voca:"",
 },
 {
-	track:"22.04",
+	track:"22.4",
 	en:"1<br>\
 Hey, Anne, there's a guy in my Spanish class who's really cool. He's really friendly and easy to talk to. He just always seems happy.<br>\
 Oh, really? He must have a lot of friends.<br>\
@@ -2701,7 +2701,7 @@ Tôi chắc là anh ấy có nhiều bạn gái. Anh ấy luôn rủ một cô g
 	,voca:"",
 },{
 	title:"Places",
-	track:"23.02",
+	track:"23.2",
 	en:"1<br>\
 How do you like where you're living?<br>\
 Oh, I love it. There's so much to do here. And I have a lot of friends here, too.<br>\
@@ -2741,7 +2741,7 @@ Một số thứ thì ổn. Các nhà hàng khá ngon và hệ thống tàu đi�
 	,voca:"",
 },
 {
-	track:"23.03",
+	track:"23.3",
 	en:"1<br>\
 So tell me about Tokyo. What's it like?<br>\
 I love it. There are so many great things to do. I'm busy all the time.<br>\
@@ -2793,7 +2793,7 @@ Chắc chắn rồi. Đó là lý do tại sao tôi thích nó. Rất nhiều ng
 	,voca:"",
 },
 {
-	track:"23.04",
+	track:"23.4",
 	en:"1<br>\
 New York has great museums, and so does Washington. But Washington feels more serious because the government is there, so it isn’t as exciting as New York. Washington is more beautiful for sure, and the restaurants are cheaper there. But you know, I love theater, and New York has the best! Washington is okay, but I love New York!<br>\
 2<br>\
@@ -2813,7 +2813,7 @@ Melbourne nhỏ hơn Sydney. Nơi đây có nhiều tòa nhà cổ kính đáng 
 	,voca:"",
 },{
 	title:"Health",
-	track:"24.02",
+	track:"24.2",
 	en:"1<br>\
 What happened to your foot, Joanne?<br>\
 Oh, I hurt it when I was playing soccer.<br>\
@@ -2877,7 +2877,7 @@ Xin lỗi, tôi không nghe thấy bạn nói gì. Tôi bị đau tai khi tập 
 	,voca:"",
 },
 {
-	track:"24.03",
+	track:"24.3",
 	en:"1<br>\
 I have an awful backache. I was lifting heavy weights at the gym yesterday and I think I must have pulled a muscle. If it doesn't get better soon, I'll have to see the doctor.<br>\
 2<br>\
@@ -2901,7 +2901,7 @@ Tuần trước tôi làm vườn và bị đứt chân. Vết cắt khá sâu n
 	,voca:"",
 },
 {
-	track:"24.04",
+	track:"24.4",
 	en:"1<br>\
 I've really been having trouble sleeping lately.<br>\
 That's too bad.<br>\

@@ -30,8 +30,10 @@
 	</div>
 </div>
 
-<div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-1"></div>
-<div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
+<div class="ebook-audio-sticky">
+	<div ng-include="'./includes/audioLoopRadio.html'" ng-controller="audioLoopRadioCtrl" class="mb-1"></div>
+	<div ng-include="'./includes/audio.html'" ng-controller="AudioCtrl"></div>
+</div>
 
 <div class="lesson-panel card mt-2" ng-init="showLession=1;showScript=1">
 	<div class="card-body">

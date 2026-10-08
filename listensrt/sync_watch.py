@@ -261,6 +261,7 @@ DEFAULT_SPLITS = [
     ('music', 'lst_data_music.js', 'LISTEN_DATA_MUSIC'),
     ('tiktok', 'lst_data_tiktok.js', 'LISTEN_DATA_TIKTOK'),
     ('EnglishConversation_Premium_2nd', 'lst_data_enc.js', 'LISTEN_DATA_ENC'),
+    ('Speaking_Sample_Vol5', 'lst_data_ssv5.js', 'LISTEN_DATA_SSV5'),
     ('SpeakEnglishLikeAnAmerican', 'lst_data_selaa.js', 'LISTEN_DATA_SELAA'),
     ('VOA', 'lst_data_voa.js', 'LISTEN_DATA_VOA'),
     ('.', 'lst_data_voa.js', 'LISTEN_DATA_VOA'),

@@ -28,6 +28,11 @@ try {
 	}
 } catch (e) {}
 $scope.lessonSearch = '';
+// nhom bai dang bat (chu chay o header): lay tu LISTEN_GROUPS_LABEL trong data
+$scope.groupLabel = '';
+try {
+	if (typeof LISTEN_GROUPS_LABEL !== 'undefined') $scope.groupLabel = LISTEN_GROUPS_LABEL;
+} catch (e) {}
 $scope.lessonDropOpen = false;
 $scope.pickLesson = function (c) {
 	if (!c) return;

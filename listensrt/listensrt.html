@@ -3,8 +3,32 @@
 		ng-init="studyEyebrow='LISTENING LAB'; studyTitle='Listen with Subtitle'; studyDescription='Xem video/Audio, phụ đề chạy theo, chạm dòng để nhảy tới.'; studyStatus='TRY HARD'">
 	</div>
 	<div class="copy-toast" ng-show="copyToastMsg">{{copyToastMsg}}</div>
+	<div class="listen-groups" ng-if="groupLabel" title="Nhóm bài đang bật">
+		<span>{{groupLabel}}&nbsp;&nbsp;</span>
+	</div>
 
 	<style>
+		/* chu chay ten nhom bai dang bat (gon, duoi header) */
+		.listen-groups {
+			overflow: hidden;
+			white-space: nowrap;
+			font-size: .72rem;
+			color: #a77b18;
+			background: #fffdf7;
+			border: 1px solid #eee5c9;
+			border-radius: 999px;
+			padding: .15rem .6rem;
+			margin: .35rem 0;
+		}
+		.listen-groups span {
+			display: inline-block;
+			padding-left: 100%;
+			animation: groupsSlide 15s linear infinite;
+		}
+		@keyframes groupsSlide {
+			from { transform: translateX(0); }
+			to { transform: translateX(-100%); }
+		}
 		/* toast rieng nut Copy: top-center (iPhone/man hep), tu thay the + tu tat sau 2.5s */
 		.copy-toast {
 			position: fixed;
@@ -363,7 +387,7 @@
 			<input class="setting-select" style="width:100%;" ng-model="lessonSearch"
 				ng-focus="lessonDropOpen = true; lessonActive = 0" ng-blur="closeLessonDrop()"
 				ng-change="lessonDropOpen = true; lessonActive = 0" ng-keydown="lessonKey($event)"
-				ng-click="selectAllLesson($event)" placeholder="Tìm bài..." aria-label="Tim bai" autocomplete="off">
+				ng-click="selectAllLesson($event)" placeholder="Find lession..." aria-label="Tim bai" autocomplete="off">
 			<div class="lesson-drop" ng-show="lessonDropOpen">
 				<div class="lesson-drop-item"
 					ng-class="{'is-active': c.i === lessonIdx, 'is-hover': $index === lessonActive}"

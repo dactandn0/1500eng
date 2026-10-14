@@ -24,4 +24,7 @@ const IMG_DATA = [
 	{ title: 'TG Raised Chrome', src: 'TG_Raised_Chrome.jpg' },
 	{ title: 'TG Sample', src: 'TG_Sample.jpg' },
 	{ title: 'TG Full Gel GS', src: 'TG_Full_Gel-GS.jpg' },
+	{ title: 'CatEyes hoadon', src: 'CatEyes_hoadon.jpg' },
+	{ title: 'ombre Sponge theory', src: 'ombre_Sponge_theory.jpg' },
+	{ title: 'ombre practice', src: 'ombre_practice.jpg' },
 ];

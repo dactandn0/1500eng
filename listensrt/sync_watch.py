@@ -315,7 +315,7 @@ def write_group_file(path, const, blocks):
         os.makedirs(os.path.dirname(path), exist_ok=True)
     except Exception:
         pass
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, 'w', encoding='utf-8', newline='') as f:
         f.write(content)
 
 
@@ -329,6 +329,7 @@ def parse_existing(content):
         b = re.search(r"\n\t\tbIgnored: (\d+),", body)
         f = re.search(r"\n\t\tdata_finished: (\d+),", body)
         out[eid] = {
+            'id': eid,
             'title_raw': t.group(1) if t else None,
             'order': int(o.group(1)) if o else None,
             'bIgnored': int(b.group(1)) if b else 0,
@@ -350,10 +351,11 @@ def render_title(template, stem, default_title):
 
 
 def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefix='', order=None,
-             title=None, bignored=0, title_raw=None, notes=None):
-    stem = os.path.splitext(os.path.basename(video_file))[0]  # id = ten file (khong duong dan)
+             title=None, bignored=0, title_raw=None, notes=None, eid=None):
+    stem = os.path.splitext(os.path.basename(video_file))[0]  # id mac dinh = ten file
+    eid = eid or stem  # giu id cu (da rename tay, VD: CD1-0) neu co
     lines = ['\t{',
-             '\t\tid: %s,' % js_str(stem),
+             '\t\tid: %s,' % js_str(eid),
              '\t\tbIgnored: %d,' % (bignored or 0)]
     if order is not None:
         lines.append('\t\torder: %d,' % order)
@@ -379,6 +381,35 @@ def entry_js(video_file, segments_vi, src_prefix='listensrt/media/', title_prefi
     return '\n'.join(lines)
 
 
+def find_old(keep, keep_by_src, vf, src_prefix):
+    """Tim entry cu: uu tien khop src tuyet doi (giu id rename tay),
+    roi moi toi stem (mac dinh). Tra ve {} neu khong thay."""
+    try:
+        hit = keep_by_src.get(src_prefix + vf)
+        if hit:
+            return hit
+    except Exception:
+        pass
+    try:
+        stem = os.path.splitext(os.path.basename(vf))[0]
+        return keep.get(stem, {})
+    except Exception:
+        return {}
+
+
+def build_src_map(keep):
+    """src trong entry -> info (de khop ca khi id da doi ten)."""
+    out = {}
+    for eid, info in (keep or {}).items():
+        try:
+            m = re.search(r"src: '((?:[^'\\]|\\.)*)'", info.get('raw', ''))
+            if m:
+                out[_js_unescape(m.group(1))] = info
+        except Exception:
+            pass
+    return out
+
+
 def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/media/',
               title_prefix='', order_start=None, title_template='', title_match='',
               splits=None, force=False):
@@ -397,6 +428,7 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
         keep.update(parse_existing(c))
         for k, v in parse_notes(c).items():
             old_notes.setdefault(k, v)
+    keep_by_src = build_src_map(keep)
     grouped = {}  # (path, const) -> [blocks]
     all_warns = []
     ord_no = order_start
@@ -407,8 +439,7 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
             continue
         gblocks = grouped.setdefault(target, [])
         # data_finished=1 (fix tay) -> giu nguyen entry, khong dung .srt (tru --force)
-        stem_fin = os.path.splitext(os.path.basename(vf))[0]
-        old_fin = keep.get(stem_fin, {})
+        old_fin = find_old(keep, keep_by_src, vf, src_prefix)
         if old_fin.get('finished') and not force and old_fin.get('raw'):
             gblocks.append(old_fin['raw'])
             print('   🔒 %s: data_finished=1 -> giu nguyen entry' % vf)
@@ -432,8 +463,7 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
         notes = [old_notes.get(t.split(' ||| ')[0], '') for (s, e, t) in merged]
         if not merged:
             # khong con .srt: giu nguyen entry cu (neu co) thay vi xoa bai
-            stem0 = os.path.splitext(os.path.basename(vf))[0]
-            old0 = keep.get(stem0, {})
+            old0 = find_old(keep, keep_by_src, vf, src_prefix)
             if old0.get('raw'):
                 gblocks.append(old0['raw'])
                 print('   📌 %s: khong co .srt -> giu entry cu trong data' % vf)
@@ -441,7 +471,7 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
                 print('   ⏭ %s: chua co .srt -> bo qua (chay transcribe truoc)' % vf)
             continue
         stem = os.path.splitext(os.path.basename(vf))[0]
-        old = keep.get(stem, {})
+        old = find_old(keep, keep_by_src, vf, src_prefix)
         if title_template and (not title_match or title_match.lower() in vf.lower()):
             title, title_raw = render_title(title_template, stem, stem_title(stem)), None
         elif old.get('title_raw'):
@@ -451,7 +481,8 @@ def sync_data(data_js, media_dir, video_files, gap=0.3, src_prefix='listensrt/me
         gblocks.append(entry_js(vf, merged, src_prefix,
                                title_prefix if title is None and title_raw is None else '',
                                ord_no if ord_no is not None else old.get('order'),
-                               title, old.get('bIgnored', 0), title_raw, notes))
+                               title, old.get('bIgnored', 0), title_raw, notes,
+                               old.get('id')))
         if ord_no is not None:
             ord_no += 1
     for (path, const), gblocks in grouped.items():

@@ -72,6 +72,7 @@ var app = angular.module("myApp", [
 	'subLessonApp',
 	'listensrtApp',
 	'lptdApp',
+	'lptdListenApp',
 	'wordCollectApp', 'quizApp', 'words4000App',
 	'modalApp', 'audioApp', 'audioLoopRadioApp',
 	'ngSanitize', 'ngRoute', 'toastr'
@@ -113,17 +114,21 @@ app.config(function($routeProvider) {
 			controller: 'writingvol5Ctrl'
 		})
 		//    .when('/lptd', {
-		.when('/', {
-			templateUrl: 'ebooks/lptd/lptd.html',
-			controller: 'lptdCtrl'
-		})
+		// .when('/', {
+		// 	templateUrl: 'ebooks/lptd/lptd.html',
+		// 	controller: 'lptdCtrl'
+		// })
 		.when('/subLesson', {
 			templateUrl: 'subLesson/subLesson.html',
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'listensrt/listensrt.html',
+			templateUrl: 'includes/baseListenSubtitle.html',
 			controller: 'listensrtCtrl'
+		})
+		.when('/', {
+			templateUrl: 'includes/baseListenSubtitle.html',
+			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {
 			templateUrl: 'ebooks/spkBook/spkBook.html',
@@ -216,10 +221,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		// clear Search data when routed
 		$scope.$on('$routeChangeSuccess', function($event, next, current) {
 			$scope.clearSearch();
-			// An nut noi + legend ngu phap khi o Watch/Quiz cho gon
+			// An nut noi (Sentence/Download) + legend ngu phap khi o Watch/Quiz/lptdListen cho gon
 			try {
 				const p = ($location.path() || '');
-				$rootScope.hideFloatBtns = (p === '/listensrt' || p === '/quiz');
+				$rootScope.hideFloatBtns = (p === '/listensrt' || p === '/quiz' || p === '/lptdListen');
 				const lg = document.getElementById('grammarLegend');
 				if (lg) lg.style.display = $rootScope.hideFloatBtns ? 'none' : '';
 			} catch (e) {}

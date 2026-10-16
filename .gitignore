@@ -13,4 +13,6 @@ listensrt/media/**/*.aac
 listensrt/media/**/*.flac
 listensrt/media/**/*.wma
 listensrt/media/**/*.srt
+# srt sinh tu dong trong ebooks (VD: ebooks/lptd) - data js moi la nguon that
+ebooks/**/*.srt
 __pycache__/

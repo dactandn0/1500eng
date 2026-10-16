@@ -20,7 +20,7 @@
 
 const LISTEN_GROUP_NAMES = { VOA: 'VOA', SELA: 'SELAA', MUSIC: 'Music', TIKTOK: 'TikTok', ENC: 'ENC', SSV5: 'SSV5' };
 
-const LISTEN_GROUPS_ON = { VOA: false, SELAA: true, MUSIC: true, TIKTOK: true, ENC: true, SSV5: true };
+const LISTEN_GROUPS_ON = { VOA: true, SELAA: true, MUSIC: true, TIKTOK: true, ENC: true, SSV5: true };
 
 const LISTEN_DATA = []
 	.concat(LISTEN_GROUPS_ON.VOA && typeof LISTEN_DATA_VOA !== 'undefined' ? LISTEN_DATA_VOA : [])

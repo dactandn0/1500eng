@@ -14,11 +14,23 @@ function ytbId(url) {
 	return m ? m[1] : '';
 }
 
+function fbEmbed(url) {
+	// Facebook reel/watch/video -> dung plugin player chinh chu
+	// VD: https://www.facebook.com/reel/1383894739973300
+	try {
+		const u = String(url || '');
+		if (/facebook\.com\/(reel|watch|.*\/videos?)/i.test(u)) {
+			return 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(u);
+		}
+	} catch (e) {}
+	return '';
+}
+
 $scope.videos = (typeof YTB_DATA !== 'undefined' ? YTB_DATA : []).map(function (v) {
 	var id = ytbId(v.url);
 	return {
-		title: v.title || id,
-		embed: id ? 'https://www.youtube.com/embed/' + id : ''
+		title: v.title || id || v.url,
+		embed: id ? 'https://www.youtube.com/embed/' + id : fbEmbed(v.url)
 	};
 });
 

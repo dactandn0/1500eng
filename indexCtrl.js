@@ -195,6 +195,9 @@ app.config(function($routeProvider) {
 app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$rootScope', '$http',
 	function($scope, appAlert, $location, toastr, $rootScope, $http) {
 
+		// Nut noi showVi.html (Voca / Show Vi / Sentence / Download) CHI HIEN o cac route nay.
+		// Muon them trang: them path vao mang (VD: '/lptd').
+		const FLOAT_BTNS_ROUTES = ['/completeL', '/tfl', '/tiktok', '/book4k'];
 
 		$rootScope.$on('$routeChangeStart', function() {
 			$rootScope.bVocaOfEbook = false;
@@ -221,10 +224,11 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		// clear Search data when routed
 		$scope.$on('$routeChangeSuccess', function($event, next, current) {
 			$scope.clearSearch();
-			// An nut noi (Sentence/Download) + legend ngu phap khi o Watch/Quiz/lptdListen cho gon
+			// Nut noi + legend ngu phap: mac dinh AN, chi hien o FLOAT_BTNS_ROUTES
 			try {
 				const p = ($location.path() || '');
-				$rootScope.hideFloatBtns = (p === '/listensrt' || p === '/quiz' || p === '/lptdListen');
+				$rootScope.showFloatBtns = FLOAT_BTNS_ROUTES.indexOf(p) >= 0;
+				$rootScope.hideFloatBtns = !$rootScope.showFloatBtns;
 				const lg = document.getElementById('grammarLegend');
 				if (lg) lg.style.display = $rootScope.hideFloatBtns ? 'none' : '';
 			} catch (e) {}

@@ -1,7 +1,8 @@
-// Danh sach video Youtube: them { title, url } vao YTB_DATA.
-// Ho tro link watch?v=, youtu.be, shorts, embed.
+// Danh sach video Youtube + Facebook: them { title, url } vao YTB_DATA.
+// Ho tro link watch?v=, youtu.be, shorts, embed + facebook reel/watch/video.
 const YTB_DATA = [
 	{ title: 'Shape', url: 'https://www.youtube.com/watch?v=d1VBbJPZ9ww' },
+	{ title: 'SmallTalk', url: 'https://www.facebook.com/reel/1383894739973300' },
 ];
 
 // Danh sach anh: them { title, src } vao IMG_DATA.

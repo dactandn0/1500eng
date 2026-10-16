@@ -222,7 +222,7 @@
         </div>
       </section>
       
-      <div ng-include="'./includes/showVi.html'" ></div>
+      <div ng-if="$root.showFloatBtns" ng-include="'./includes/showVi.html'" ></div>
       <div ng-include="'./includes/vocaOfEbook.html'" ></div>
       <div ng-show="!$root.bVocaOfEbook">
         <div class="my-3" ng-view></div>
@@ -237,14 +237,7 @@
         <i class="fa fa-arrow-up"></i>
 	 </button>
 
-  <button
-        ng-click="Export2Doc()" 
-        ng-show="!$root.hideFloatBtns"
-        type="button"
-        class="fixed-right top80 opa btn btn-sm btn-success"
-        >
-        <i class="fa fa-download"></i>
-   </button>
+
 
     </div> <!-- container -->
 

@@ -59,8 +59,25 @@ $scope.closeLessonDrop = function () {
 	$timeout(function () { $scope.lessonDropOpen = false; }, 150);
 };
 $scope.selectAllLesson = function (ev) {
-	// Bam vao o tim la boi den het de go de
-	try { if (ev && ev.target && ev.target.select) ev.target.select(); } catch (e) {}
+	// PC: bam vao o tim la boi den het de go de. iPhone/tablet: thoi (cam ung boi den rat kho chiu)
+	try {
+		if (('ontouchstart' in window) || (navigator.maxTouchPoints > 0)) return;
+		if (ev && ev.target && ev.target.select) ev.target.select();
+	} catch (e) {}
+};
+// Nut ‹ › canh Copy: qua bai truoc/sau trong dropbox (vong tron)
+$scope.stepLesson = function (ev, dir) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	try {
+		const list = $scope.lessonChoices || [];
+		if (!list.length) return;
+		let pos = 0;
+		for (let k = 0; k < list.length; k++) {
+			if (list[k].i === $scope.lessonIdx) { pos = k; break; }
+		}
+		pos = (pos + dir + list.length) % list.length;
+		$scope.pickLesson(list[pos]);
+	} catch (e) {}
 };
 // Dieu huong dropbox bang phim tren PC: len/xuong doi highlight, Enter chon, Esc dong
 $scope.lessonActive = 0;
@@ -150,7 +167,7 @@ $scope.showCopyToast = function (msg) {
 	copyToastTimer = $timeout(function () { $scope.copyToastMsg = ''; }, 2500);
 };
 $scope.copyLabel = function () {
-	if ($scope.copyStep <= 0) return 'all';
+	if ($scope.copyStep <= 0) return 'All';
 	try {
 		const subs = ($scope.lesson && $scope.lesson.subs) || [];
 		const total = Math.max(1, Math.ceil(subs.length / getChunkN()));
@@ -740,6 +757,7 @@ function tick(t) {
 		} catch (e) {}
 		if (playingNow && subs.length) {
 			$scope.seekSub(subs[0], null, false); // seek giu nguyen play -> bai lap lien mach
+			if ($scope.follow) scrollPanelTo(0); // curIdx da = 0 (optimistic) nen tick sau return -> phai cuon ngay
 			return;
 		}
 	}

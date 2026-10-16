@@ -98,6 +98,11 @@
 			align-items: center;
 		}
 
+		/* cum ‹ › can trai (ghi de margin-left:auto) */
+		.watch-row-btns-left {
+			margin-left: 0;
+		}
+
 		/* thanh AutoFollow/ShowScript + cau dang chay: thuong o vi tri cu (opa 1),
 		   cuon xuong -> dock day man hinh (opa .7) */
 		.watch-row-sticky {
@@ -416,11 +421,15 @@
 			<audio id="watchAudio" ng-if="lesson.type !== 'youtube' && isAudio" controls preload="metadata"
 				style="flex:1 1 100%;">
 			</audio>
+			<div class="watch-row-btns watch-row-btns-left">
+				<button type="button" class="watch-toggle" ng-click="stepLesson($event, -1)" title="Bai truoc" aria-label="Previous lesson">‹</button>
+				<button type="button" class="watch-toggle" ng-click="stepLesson($event, 1)" title="Bai sau" aria-label="Next lesson">›</button>
+			</div>
 			<span class="ml-1 watch-now" ng-if="lesson && lesson.subs[curIdx]">▶ {{lesson.subs[curIdx].en}}</span>
 			<div class="watch-row-btns">
 				<button type="button" class="watch-toggle" ng-click="copySubs($event)"
 					title="Copy sub: full -> từng cụm -> full" aria-label="Copy subtitles">
-					<i class="fa fa-copy" aria-hidden="true"></i>&nbsp;Copy {{copyLabel()}}
+					<i class="fa fa-copy" aria-hidden="true"></i>&nbsp;{{copyLabel()}}
 				</button>
 				<button type="button" class="watch-toggle" ng-class="{'is-on': showScript}" ng-click="toggleScript()"
 					ng-if="lessonNotes" title="Show script" aria-label="Show script">

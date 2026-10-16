@@ -427,7 +427,8 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			// luon goi GOOGLE TRANS API + ghep voi dict trong data (neu co)
 			Helper_GG_API($http, touchedWord).then(res => {
 				let vietnamese = '';
-				try { vietnamese = res.data[0][0][0]; } catch (e) { vietnamese = ''; }
+				// Google tra nhieu segment (moi cau 1 segment) -> ghep het, khong lay cau dau
+				try { vietnamese = (res.data[0] || []).map(function (seg) { return seg[0] || ''; }).join(''); } catch (e) { vietnamese = ''; }
 				doShowToast((IgnoreShowTouched ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord);
 				//GOOGLE_ERROR_SHOWN = false; // reset
 			}, err => {

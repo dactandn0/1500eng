@@ -506,11 +506,21 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			const toastTimerId = 'toastTimer' + (++wikiImgSeq);
 			content = '<span id="' + toastTimerId + '" class="toast-timer"></span>' + content;
 
-			toastr.info(btnSave, content, {
+			const t = toastr.info(btnSave, content, {
 				allowHtml: true,
 				progressBar: true,
-				timeOut: totalMs
+				timeOut: totalMs,
+				tapToDismiss: true
 			});
+			// Bấm vào toast tự tắt (tránh bị dính: angular-toastr cũ chỉ dừng timer
+			// khi rê chuột chứ không luôn tắt khi click).
+			try {
+				if (t && t.el && t.el[0]) {
+					t.el[0].addEventListener('click', function () {
+						try { toastr.remove(t.toastId); } catch (e2) {}
+					});
+				}
+			} catch (e) {}
 
 			(function (id, total) {
 				const t0 = Date.now();

@@ -512,8 +512,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				timeOut: totalMs,
 				tapToDismiss: true
 			});
-			// Bấm vào toast tự tắt (tránh bị dính: angular-toastr cũ chỉ dừng timer
-			// khi rê chuột chứ không luôn tắt khi click).
+			// Click vao toast tu tat
 			try {
 				if (t && t.el && t.el[0]) {
 					t.el[0].addEventListener('click', function () {
@@ -521,6 +520,17 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 					});
 				}
 			} catch (e) {}
+			// Click NGOAI toast (2 ben trai phai...) dong tat ca toast dang mo
+			if (!window.__toastOutsideClickBound) {
+				document.addEventListener('click', function (e) {
+					try {
+						if (e.target && e.target.closest && e.target.closest('.toast')) return; // click trong toast -> bo qua
+						const toasts = document.querySelectorAll('.toast');
+						if (toasts.length) toastr.clear();
+					} catch (ex) {}
+				});
+				window.__toastOutsideClickBound = true;
+			}
 
 			(function (id, total) {
 				const t0 = Date.now();

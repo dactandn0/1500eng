@@ -18,15 +18,11 @@ var VocaForSearch = VocaToUI
 // .concat(IELTS_SYN)
 // .concat(NATIONS)
 
-// kAllStories: pool truyen/bai doc (Englab W/R, Collins, LPTD cd1-4, BOOK4K_1).
+// kAllStories: pool truyen/bai doc (Englab W/R, Collins, BOOK4K_1).
 // Dung o: tim cau vi du chua tu (doFetchSentences/fetchSentences) cho toast + modal vi du.
 var kAllStories = ENGLAB_BEGIN_DATA_W
 	.concat(ENGLAB_BEGIN_DATA_R)
 	.concat(collins_cd12)
-	.concat(lptd_cd1_stories)
-	.concat(lptd_cd2_stories)
-	.concat(lptd_cd3_stories)
-	.concat(lptd_cd4_stories)
  	.concat(BOOK4K_1)
  	.concat(TIKTOK_EBOOK1_DATA)
 // .concat(bridge_cd1)
@@ -53,7 +49,6 @@ var app = angular.module("myApp", [
 	// 'ebookNotedApp',
 	'configUIApp',
 	'f2fApp',
-	'tflApp',
 	'preCourseApp',
 	'beginnerCourseApp',
 	'spkBookApp',
@@ -71,7 +66,7 @@ var app = angular.module("myApp", [
 	*/
 	'subLessonApp',
 	'listensrtApp',
-	'lptdApp',
+	'tflListenApp',
 	'lptdListenApp',
 	'wordCollectApp', 'quizApp', 'words4000App',
 	'modalApp', 'audioApp', 'audioLoopRadioApp',
@@ -101,9 +96,9 @@ app.config(function($routeProvider) {
 			templateUrl: 'ebooks/f2f/f2f.html',
 			controller: 'f2fCtrl'
 		})
-		.when('/tfl', {
-			templateUrl: 'ebooks/tfl/tfl.html',
-			controller: 'tflCtrl'
+		.when('/tflListen', {
+			templateUrl: 'ebooks/TacticsForListening/tflListen.html',
+			controller: 'tflListenCtrl'
 		})
 		.when('/book4k', {
 			templateUrl: 'ebooks/words4000/words4000.html',
@@ -113,11 +108,6 @@ app.config(function($routeProvider) {
 			templateUrl: 'ebooks/writingvol5/writingvol5.html',
 			controller: 'writingvol5Ctrl'
 		})
-		//    .when('/lptd', {
-		// .when('/', {
-		// 	templateUrl: 'ebooks/lptd/lptd.html',
-		// 	controller: 'lptdCtrl'
-		// })
 		.when('/subLesson', {
 			templateUrl: 'subLesson/subLesson.html',
 			controller: 'subLessonCtrl'
@@ -197,7 +187,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		// Nut noi showVi.html (Voca / Show Vi / Sentence / Download) CHI HIEN o cac route nay.
 		// Muon them trang: them path vao mang (VD: '/lptd').
-		const FLOAT_BTNS_ROUTES = ['/completeL', '/tfl', '/tiktok', '/book4k'];
+		const FLOAT_BTNS_ROUTES = ['/completeL', '/tiktok', '/book4k'];
 
 		$rootScope.$on('$routeChangeStart', function() {
 			$rootScope.bVocaOfEbook = false;

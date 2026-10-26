@@ -60,6 +60,8 @@ def main():
     ap.add_argument('--title', default='')
     ap.add_argument('--src', default='', help='VD: listensrt/media/lesson1.mp4')
     ap.add_argument('--youtube', default='', help='videoId YouTube (thay cho --src)')
+    ap.add_argument('--order', type=int, default=None, help='so thu tu (nho len truoc)')
+    ap.add_argument('--bignored', type=int, default=None, help='1 = an khoi dropbox')
     a = ap.parse_args()
 
     en = parse_srt(a.en_srt)
@@ -75,6 +77,10 @@ def main():
 
     print('\t{')
     print('\t\tid: %s,' % js_str(a.id))
+    if a.bignored is not None:
+        print('\t\tbIgnored: %d,' % a.bignored)
+    if a.order is not None:
+        print('\t\torder: %d,' % a.order)
     print('\t\ttitle: %s,' % js_str(a.title or a.id))
     print('\t\ttype: %s,' % js_str(typ))
     print('\t\tsrc: %s,' % js_str(src))

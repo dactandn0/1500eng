@@ -21,8 +21,8 @@ app.controller("tflListenCtrl", function($scope, $rootScope, baseListenSubtitle)
 		header: {
 			eyebrow: 'LISTENING LAB',
 			title: 'TFL Listen',
-			desc: 'Tactics for Listening - Basic & Developing 1-24. Nghe + phụ đề chạy theo, chạm dòng để nhảy tới.',
-			status: 'TFL • Basic & Developing'
+			desc: 'Tactics for Listening - Basic, Developing & Expanding 1-24. Nghe + phụ đề chạy theo, chạm dòng để nhảy tới.',
+			status: 'TFL • Basic / Developing / Expanding'
 		}
 	});
 });

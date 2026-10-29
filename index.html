@@ -26,7 +26,7 @@
 
   <!-- TTS: Browser speechSynthesis (offline, Safari OK), xem helper/txt2speech.js -->
 
-  <link rel="stylesheet" type="text/css" href="css/main.css?v=20260928-1">
+  <link rel="stylesheet" type="text/css" href="css/main.css?v=20261027-7">
 
   <script type="text/javascript" src="const.js?v=20260928-1"></script>
 
@@ -92,7 +92,7 @@
   <script type="text/javascript" src="listensrt/listensrtCtrl.js?v=20260928-1"></script>
   <script type="text/javascript" src="ebooks/lptd/lptdListenCtrl.js?v=20260928-1"></script>
   <script type="text/javascript" src="ebooks/TacticsForListening/tflListenCtrl.js?v=20261027-3"></script>
-  <script type="text/javascript" src="indexCtrl.js?v=20260928-1"></script>
+  <script type="text/javascript" src="indexCtrl.js?v=20261027-7"></script>
   <script type="text/javascript" src="vocaNoted/configUICtrl.js?v=20260928-1"></script>
   
 </head>
@@ -221,7 +221,26 @@
           <span class="vocabulary-word" ng-click="Index_Speak($event, word)">{{word}}</span>
         </div>
       </section>
-      
+
+      <section class="lesson-results" ng-if="lessonSearchResult.length">
+        <div class="lesson-results-heading">
+          <span><i class="fa fa-headphones" aria-hidden="true"></i> Matching lessons</span>
+          <small>{{lessonSearchTotal}} result{{lessonSearchTotal === 1 ? '' : 's'}}</small>
+        </div>
+        <div class="lesson-row" ng-repeat="ls in lessonSearchResult track by $index">
+          <div class="lesson-meta">
+            <span class="lesson-module">{{ls.moduleLabel}}</span>
+            <span class="lesson-title">{{ls.title}}</span>
+            <span class="lesson-snippet" ng-if="ls.snippet">{{ls.snippet}}</span>
+          </div>
+          <button type="button" class="btn btn-sm lesson-open"
+            ng-click="openLessonSearch(ls)"
+            aria-label="Open {{ls.title}}">
+            Open <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
       <div ng-if="$root.showFloatBtns" ng-include="'./includes/showVi.html'" ></div>
       <div ng-include="'./includes/vocaOfEbook.html'" ></div>
       <div ng-show="!$root.bVocaOfEbook">

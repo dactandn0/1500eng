@@ -44,6 +44,58 @@ function preProcess() {
 }
 preProcess();
 
+function isSearchWordChar(ch) {
+	return /[a-z0-9_]/i.test(ch);
+}
+function hasWholeWord(haystack, needle) {
+	if (!haystack || !needle) return false;
+	let pos = haystack.indexOf(needle);
+	while (pos >= 0) {
+		const beforeOk = pos === 0 || !isSearchWordChar(haystack.charAt(pos - 1));
+		const end = pos + needle.length;
+		const afterOk = end >= haystack.length || !isSearchWordChar(haystack.charAt(end));
+		if (beforeOk && afterOk) return true;
+		pos = haystack.indexOf(needle, pos + 1);
+	}
+	return false;
+}
+
+const kLessonSearchIndex = [];
+function addLessonSearchData(data, moduleLabel, route, posKey, moduleAlias) {
+	const moduleKey = removeVietnameseTones((moduleLabel + ' ' + (moduleAlias || '')).toLowerCase());
+	(data || []).forEach(function (ls) {
+		if (!ls || ls.bIgnored) return;
+		const title = String(ls.title || ls.id || '');
+		const subItems = [];
+		const subs = ls.subs || [];
+		for (let i = 0; i < subs.length; i++) {
+			const en = String((subs[i] && subs[i].en) || '');
+			const vi = String((subs[i] && subs[i].vi) || '');
+			if (!en && !vi) continue;
+			subItems.push({
+				idx: i,
+				en: en,
+				vi: vi,
+				enKey: en ? removeVietnameseTones(en.toLowerCase()) : '',
+				viKey: vi ? removeVietnameseTones(vi.toLowerCase()) : ''
+			});
+		}
+		kLessonSearchIndex.push({
+			id: ls.id,
+			title: title,
+			titleKey: removeVietnameseTones(title.toLowerCase()),
+			moduleKey: moduleKey,
+			subItems: subItems,
+			moduleLabel: moduleLabel,
+			route: route,
+			posKey: posKey
+		});
+	});
+}
+addLessonSearchData(typeof LISTEN_DATA !== 'undefined' ? LISTEN_DATA : [], 'ListenSrt', '/listensrt', 'lstLesson', 'Listen with Subtitle');
+addLessonSearchData(typeof LISTEN_DATA_LPTD !== 'undefined' ? LISTEN_DATA_LPTD : [], 'LPTD', '/', 'lstLptdLesson', 'Listening Practice Through Dictation');
+addLessonSearchData(typeof LISTEN_DATA_TFL !== 'undefined' ? LISTEN_DATA_TFL : [], 'TFL', '/tflListen', 'lstTflLesson', 'TacticsForListening Tactics for Listening');
+
 var app = angular.module("myApp", [
 	'vocaNotedApp',
 	// 'ebookNotedApp',
@@ -182,8 +234,8 @@ app.config(function($routeProvider) {
 		});
 }); // route
 
-app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$rootScope', '$http',
-	function($scope, appAlert, $location, toastr, $rootScope, $http) {
+app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$rootScope', '$http', '$route',
+	function($scope, appAlert, $location, toastr, $rootScope, $http, $route) {
 
 		// Nut noi showVi.html (Voca / Show Vi / Sentence / Download) CHI HIEN o cac route nay.
 		// Muon them trang: them path vao mang (VD: '/lptd').
@@ -208,6 +260,8 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		$scope.searchDataResult = [];
 		$scope.search = "";
 		$scope.sentenceSearches = [];
+		$scope.lessonSearchResult = [];
+		$scope.lessonSearchTotal = 0;
 
 		$scope.bTransSentenOnClick = 0;
 
@@ -228,6 +282,8 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			$scope.search = '';
 			$scope.searchDataResult = [];
 			$scope.sentenceSearches = [];
+			$scope.lessonSearchResult = [];
+			$scope.lessonSearchTotal = 0;
 			// document.getElementById("searchTyping").focus();
 		};
 
@@ -279,17 +335,97 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}, 120);
 		}
 
+		$scope.searchLessons = function (search) {
+			const q = String(search || '').trim();
+			$scope.lessonSearchResult = [];
+			$scope.lessonSearchTotal = 0;
+			if (q.length < 2) return;
+
+			const hits = [];
+			for (let i = 0; i < kLessonSearchIndex.length; i++) {
+				const ls = kLessonSearchIndex[i];
+				let score = -1;
+				let snippet = '';
+				let subIdx = 0;
+				if (ls.titleKey === q) {
+					score = 0;
+				} else if (ls.titleKey.indexOf(q) === 0) {
+					score = 1;
+				} else if (ls.titleKey.indexOf(q) >= 0) {
+					score = 2;
+				} else {
+					for (let j = 0; j < ls.subItems.length; j++) {
+						const it = ls.subItems[j];
+						if (it.enKey && hasWholeWord(it.enKey, q)) {
+							score = 3;
+							snippet = it.en;
+							subIdx = it.idx;
+							break;
+						}
+						if (it.viKey && hasWholeWord(it.viKey, q)) {
+							score = 3;
+							snippet = it.vi;
+							subIdx = it.idx;
+							break;
+						}
+					}
+					if (score < 0 && hasWholeWord(ls.moduleKey, q)) score = 4;
+				}
+				if (score >= 0) hits.push({ ls: ls, score: score, snippet: snippet, subIdx: subIdx });
+			}
+
+			hits.sort(function (a, b) {
+				if (a.score !== b.score) return a.score - b.score;
+				return a.ls.title.localeCompare(b.ls.title);
+			});
+			$scope.lessonSearchTotal = hits.length;
+			$scope.lessonSearchResult = hits.slice(0, 50).map(function (h) {
+				let snippet = h.snippet || '';
+				if (snippet.length > 140) snippet = snippet.slice(0, 137) + '...';
+				return {
+					id: h.ls.id,
+					title: h.ls.title,
+					moduleLabel: h.ls.moduleLabel,
+					route: h.ls.route,
+					posKey: h.ls.posKey,
+					snippet: snippet,
+					subIdx: h.subIdx
+				};
+			});
+		};
+
+		$scope.openLessonSearch = function (ls) {
+			if (!ls) return;
+			const subIdx = (typeof ls.subIdx === 'number' && ls.subIdx >= 0) ? ls.subIdx : 0;
+			try { localStorage.setItem(ls.posKey, String(ls.id) + '|' + subIdx); } catch (e) {}
+			$scope.clearSearch();
+			$scope.$evalAsync(function() {
+				try {
+					if ($location.path() === ls.route) {
+						$route.reload();
+					} else {
+						$location.path(ls.route);
+					}
+				} catch (e) {
+					try { $location.path(ls.route); } catch (e2) {}
+				}
+			});
+		};
+
 		$scope.searchTyping = function() {
 			$scope.sentenceSearches = [];
-			if (searchData.length == 0) return true;
+			const raw = ($scope.search || '').trim();
+			const search = raw ? removeVietnameseTones(raw.toLowerCase()) : '';
+			$scope.searchLessons(search);
+
 			$scope.searchDataResult = [];
-			if ($scope.search.length <= 2) return;
-			const search = removeVietnameseTones($scope.search.toLowerCase());
+			if (searchData.length == 0) return true;
+			if (search.length <= 2) return;
 			for (let i = 0; i < searchData.length; i++) {
 				const dataVN = searchData[i];
 				const data = removeVietnameseTones(dataVN.toLowerCase());
 
-				if (data.includes(search)) {
+				if (hasWholeWord(data, search)) {
 					$scope.searchDataResult.push(dataVN);
 				}
 

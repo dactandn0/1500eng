@@ -6,7 +6,7 @@ var app = angular.module("tflListenApp", ['toastr', 'baseListenApp']);
 app.directive('tflListenPage', function() {
 	return {
 		restrict: 'A',
-		templateUrl: './includes/baseListenSubtitle.html',
+		templateUrl: './includes/baseListenSubtitle.html?v=20261101-3',
 		scope: false
 	};
 });

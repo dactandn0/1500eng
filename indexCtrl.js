@@ -165,11 +165,11 @@ app.config(function($routeProvider) {
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'includes/baseListenSubtitle.html',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-3',
 			controller: 'listensrtCtrl'
 		})
 		.when('/', {
-			templateUrl: 'includes/baseListenSubtitle.html',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-3',
 			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {
@@ -489,10 +489,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 		// ng-click word to speech
-		$scope.ClickWordToSpeech = function(event) {
+		$scope.ClickWordToSpeech = function(event, forceWord) {
 			console.log("ClickWordToSpeech: " + event.target.innerText)
 			event.stopPropagation()
-			if ($scope.bTransSentenOnClick && !$rootScope.bShowVi) // dont active in showVi-mode
+			if ($scope.bTransSentenOnClick && !$rootScope.bShowVi && !forceWord) // dont active in showVi-mode
 			{
 				let pNode = event.target
 				do {

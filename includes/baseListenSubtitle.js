@@ -109,6 +109,7 @@ $scope.lessonKey = function (ev) {
 $scope.lesson = null;
 $scope.curIdx = -1;
 $scope.follow = true;
+$scope.touchSpeech = false;
 $scope.showScript = false;
 $scope.lessonNotes = '';
 $scope.toggleFollow = function () {
@@ -119,6 +120,32 @@ $scope.toggleFollow = function () {
 $scope.toggleScript = function () {
 	$scope.showScript = !$scope.showScript;
 };
+$scope.toggleTouchSpeech = function () {
+	$scope.touchSpeech = !$scope.touchSpeech;
+};
+function escapeHtmlText(s) {
+	return String(s == null ? '' : s)
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#39;');
+}
+function wrapTouchWords(text) {
+	const s = String(text || '');
+	const re = /[A-Za-z0-9\u00C0-\u024F]+(?:['’][A-Za-z0-9\u00C0-\u024F]+)*/g;
+	let out = '';
+	let last = 0;
+	let m;
+	while ((m = re.exec(s))) {
+		out += escapeHtmlText(s.slice(last, m.index));
+		out += '<kkk ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(m[0]) + '</kkk>';
+		last = m.index + m[0].length;
+	}
+	out += escapeHtmlText(s.slice(last));
+	return out;
+}
+
 // Nut copy ke Script: xoay vong copy full -> tung cum N cau (N = listenNoChunkCopied 2-10) -> ve full.
 $scope.copyStep = 0; // 0 = lan toi copy full; >=1 = copy cum thu copyStep
 let lastCopyToast = null; // toast Copy dang mo -> mo moi thi clear cu truoc
@@ -860,6 +887,24 @@ $scope.seekSub = function (sub, ev, autoplay) {
 	} catch (e) {}
 };
 
+$scope.subtitleDisplayHtml = function (sub) {
+	if (!sub) return '';
+	if (sub.enSafe === undefined) sub.enSafe = escapeHtmlText(sub.en);
+	if (!$scope.touchSpeech) return sub.enSafe;
+	if (sub.enTouch === undefined) sub.enTouch = wrapTouchWords(sub.en);
+	return sub.enTouch;
+};
+$scope.subtitleWordSpeech = function (ev, sub) {
+	if (!$scope.touchSpeech) return;
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	if (!ev) return;
+	let word = '';
+	try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) {}
+	if (!word) return;
+	try {
+		if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word);
+	} catch (e) {}
+};
 // Nut loop tren MOI dong sub: bat -> loop dong do mai (nghi theo delay), bam lai -> tat
 $scope.toggleLoop = function (ev, idx) {
 	console.log('toggleLoop', idx, $scope.loopIdx);

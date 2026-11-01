@@ -440,6 +440,11 @@
 					title="Auto follow" aria-label="Auto follow">
 					<i class="fa fa-magnet" aria-hidden="true"></i>
 				</button>
+
+				<button type="button" class="watch-toggle" ng-click="toggleTouchSpeech()"
+					title="Touch word/sentence" aria-label="Touch word/sentence">
+					<span ng-bind="touchSpeech ? '[W]' : '[S]'"></span>
+				</button>
 			</div>
 		</div>
 
@@ -450,7 +455,8 @@
 				tabindex="0">
 				<div class="watch-sub-top">
 					<div class="watch-sub-main">
-						<div class="watch-sub-en">{{sub.en}}</div>
+						<div class="watch-sub-en" compile="subtitleDisplayHtml(sub)"
+							ng-click="subtitleWordSpeech($event, sub)"></div>
 						<div class="watch-sub-vi">{{$index+1}}. {{sub.vi}}</div>
 						<div class="watch-sub-meta">
 							<span class="watch-time">{{fmtTime(sub.t)}}</span>

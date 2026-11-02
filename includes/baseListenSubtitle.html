@@ -441,8 +441,11 @@
 					<i class="fa fa-magnet" aria-hidden="true"></i>
 				</button>
 
-				<button type="button" class="watch-toggle" ng-click="toggleTouchSpeech()"
-					title="Touch word/sentence" aria-label="Touch word/sentence">
+				<button type="button"
+					class="watch-toggle"
+					ng-click="toggleTouchSpeech()"
+					title="Touch word/sentence"
+					aria-label="Touch word/sentence">
 					<span ng-bind="touchSpeech ? '[W]' : '[S]'"></span>
 				</button>
 			</div>
@@ -457,9 +460,11 @@
 					<div class="watch-sub-main">
 						<div class="watch-sub-en" compile="subtitleDisplayHtml(sub)"
 							ng-click="subtitleWordSpeech($event, sub)"></div>
-						<div class="watch-sub-vi">{{$index+1}}. {{sub.vi}}</div>
-						<div class="watch-sub-meta">
-							<span class="watch-time">{{fmtTime(sub.t)}}</span>
+						<div class="watch-sub-vi">
+							<button type="button" class="quiz-speak star-btn watch-time" ng-class="{'is-on': isStarred($index)}"
+							ng-click="toggleStar($event, $index)" title="Lưu dòng này" aria-label="Save line">{{$index+1}}</button>
+							<!-- <span class="watch-time">{{fmtTime(sub.t)}}</span>&nbsp; -->
+							{{sub.vi}}
 						</div>
 					</div>
 					<div class="watch-sub-actions">
@@ -475,10 +480,6 @@
 							ng-if="sub.note" ng-click="toggleNote($event, $index)" title="Xem note"
 							aria-label="Note"><span class="fa fa-file-text-o" aria-hidden="true"></span></button>
 						<!-- [Note] -->
-						<button type="button" class="quiz-speak star-btn" ng-class="{'is-on': isStarred($index)}"
-							ng-click="toggleStar($event, $index)" title="Lưu dòng này" aria-label="Save line">
-							<i class="fa" ng-class="isStarred($index) ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i>
-						</button>
 					</div>
 				</div>
 				<div class="watch-note" ng-class="{'open': openNoteIdx === $index}" ng-if="sub.note">{{sub.note}}</div>

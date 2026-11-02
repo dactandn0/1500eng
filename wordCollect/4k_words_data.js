@@ -973,7 +973,8 @@ valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
  const word_4000_data_2 = [{
  	title: "4k Book4",
  	en: "healthcare (n) /ˈhelθ ker/ chăm sóc sức khỏe <br>\
-population (n)  /pɑːpjuˈleɪʃn/ dân số (số nhiều = nhóm dân số) <br>\
+population (n)  /pɑːpjuˈleɪʃn/ dân số<br>\
+populations (n)  /pɑːpjuˈleɪʃns/ nhóm dân cư, các quần thể <br>\
 industrialisation (n) /ɪnˌdʌstriələˈzeɪʃn/ công nghiệp hóa <br>\
 historical (a) /hɪˈstɔːrəkl/ lịch sử<br>\
 less (a) chút ít (so sánh hơn của a little) + uncount.N/Adj <br>\

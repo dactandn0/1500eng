@@ -93,8 +93,8 @@ function addLessonSearchData(data, moduleLabel, route, posKey, moduleAlias) {
 	});
 }
 addLessonSearchData(typeof LISTEN_DATA !== 'undefined' ? LISTEN_DATA : [], 'ListenSrt', '/listensrt', 'lstLesson', 'Listen with Subtitle');
-addLessonSearchData(typeof LISTEN_DATA_LPTD !== 'undefined' ? LISTEN_DATA_LPTD : [], 'LPTD', '/', 'lstLptdLesson', 'Listening Practice Through Dictation');
-addLessonSearchData(typeof LISTEN_DATA_TFL !== 'undefined' ? LISTEN_DATA_TFL : [], 'TFL', '/tflListen', 'lstTflLesson', 'TacticsForListening Tactics for Listening');
+addLessonSearchData(typeof LISTEN_DATA_LPTD !== 'undefined' ? LISTEN_DATA_LPTD : [], 'LPTD', '/', 'lstLptdLesson', 'LPTD');
+addLessonSearchData(typeof LISTEN_DATA_TFL !== 'undefined' ? LISTEN_DATA_TFL : [], 'TFL', '/tflListen', 'lstTflLesson', 'TacticsForListening');
 
 var app = angular.module("myApp", [
 	'vocaNotedApp',
@@ -165,11 +165,11 @@ app.config(function($routeProvider) {
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-4',
 			controller: 'listensrtCtrl'
 		})
 		.when('/', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-4',
 			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {

@@ -44,19 +44,18 @@ try {
 		}
 	}
 } catch (e) {}
-$scope.lessonSearch = '';
+$scope.lessonPicker = { q: '', open: false, active: 0 };
 // nhom bai dang bat (chu chay o header): lay tu LISTEN_GROUPS_LABEL trong data
 $scope.groupLabel = '';
 $scope.groupLabel = cfg.groupLabel || '';
-$scope.lessonDropOpen = false;
 $scope.pickLesson = function (c) {
 	if (!c) return;
-	$scope.lessonSearch = c.title;
-	$scope.lessonDropOpen = false;
+	$scope.lessonPicker.q = c.title;
+	$scope.lessonPicker.open = false;
 	$scope.openLesson(c.i);
 };
 $scope.closeLessonDrop = function () {
-	$timeout(function () { $scope.lessonDropOpen = false; }, 150);
+	$timeout(function () { $scope.lessonPicker.open = false; }, 150);
 };
 $scope.selectAllLesson = function (ev) {
 	// PC: bam vao o tim la boi den het de go de. iPhone/tablet: thoi (cam ung boi den rat kho chiu)
@@ -80,9 +79,8 @@ $scope.stepLesson = function (ev, dir) {
 	} catch (e) {}
 };
 // Dieu huong dropbox bang phim tren PC: len/xuong doi highlight, Enter chon, Esc dong
-$scope.lessonActive = 0;
 $scope.filteredLessons = function () {
-	const q = ($scope.lessonSearch || '').toLowerCase().trim();
+	const q = ($scope.lessonPicker.q || '').toLowerCase().trim();
 	if (!q) return $scope.lessonChoices;
 	return $scope.lessonChoices.filter(function (c) { return (c.title || '').toLowerCase().indexOf(q) >= 0; });
 };
@@ -91,19 +89,19 @@ $scope.lessonKey = function (ev) {
 	const list = $scope.filteredLessons();
 	if (key === 40) { // Down
 		ev.preventDefault();
-		$scope.lessonDropOpen = true;
-		$scope.lessonActive = Math.min(list.length - 1, $scope.lessonActive + 1);
+		$scope.lessonPicker.open = true;
+		$scope.lessonPicker.active = Math.min(list.length - 1, $scope.lessonPicker.active + 1);
 	} else if (key === 38) { // Up
 		ev.preventDefault();
-		$scope.lessonDropOpen = true;
-		$scope.lessonActive = Math.max(0, $scope.lessonActive - 1);
+		$scope.lessonPicker.open = true;
+		$scope.lessonPicker.active = Math.max(0, $scope.lessonPicker.active - 1);
 	} else if (key === 13) { // Enter
 		ev.preventDefault();
-		const pick = list[$scope.lessonActive] || list[0];
+		const pick = list[$scope.lessonPicker.active] || list[0];
 		if (pick) $scope.pickLesson(pick);
-		else $scope.lessonDropOpen = false;
+		else $scope.lessonPicker.open = false;
 	} else if (key === 27) { // Esc
-		$scope.lessonDropOpen = false;
+		$scope.lessonPicker.open = false;
 	}
 };
 $scope.lesson = null;
@@ -390,7 +388,7 @@ $scope.openLesson = function (i) {
 	$scope.openNoteIdx = -1; // doi bai -> dong het note cu
 	$scope.copyStep = 0; // doi bai -> copy lai tu full
 	loadStars(); // doi bai -> load star tu local de set icon on/off
-	$scope.lessonSearch = ($scope.lesson && $scope.lesson.title) || '';
+	$scope.lessonPicker.q = ($scope.lesson && $scope.lesson.title) || '';
 	$scope.showScript = false;
 	try {
 		$scope.lessonNotes = ($scope.lesson && typeof LISTEN_NOTES !== 'undefined' && LISTEN_NOTES[$scope.lesson.id]) || '';

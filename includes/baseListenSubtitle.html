@@ -348,6 +348,23 @@
 			color: #e6a200 !important;
 		}
 
+		.watch-lesson-search {
+			position: relative;
+			flex: 1 1 100%;
+			min-width: 0;
+		}
+
+		.watch-lesson-search .lesson-drop {
+			min-width: 240px;
+		}
+
+		.watch-row-sticky.is-docked .lesson-drop {
+			top: auto;
+			bottom: 100%;
+			margin-top: 0;
+			margin-bottom: .25rem;
+		}
+
 		.lesson-drop {
 			position: absolute;
 			top: 100%;
@@ -386,22 +403,17 @@
 			font-style: italic;
 			cursor: default;
 		}
-	</style>
 
-	<div class="quiz-type-row my-2">
-		<div style="flex:1; position:relative;">
-			<input class="setting-select" style="width:100%;" ng-model="lessonSearch"
-				ng-focus="lessonDropOpen = true; lessonActive = 0" ng-blur="closeLessonDrop()"
-				ng-change="lessonDropOpen = true; lessonActive = 0" ng-keydown="lessonKey($event)"
-				ng-click="selectAllLesson($event)" placeholder="Find lession..." aria-label="Tim bai" autocomplete="off">
-			<div class="lesson-drop" ng-show="lessonDropOpen">
-				<div class="lesson-drop-item"
-					ng-class="{'is-active': c.i === lessonIdx, 'is-hover': $index === lessonActive}"
-					ng-repeat="c in filteredLessons() track by c.i" ng-mousedown="pickLesson(c)">{{c.title}}</div>
-				<div class="lesson-drop-item is-empty" ng-if="!filteredLessons().length">Không thấy bài nào</div>
-			</div>
-		</div>
-	</div>
+		@media (max-width: 640px) {
+			.watch-row-sticky {
+				gap: .3rem;
+			}
+
+			.watch-row-sticky .watch-toggle {
+				padding: .35rem .5rem;
+			}
+		}
+	</style>
 
 	<div ng-if="!lesson">
 		<p style="color:#8b857b;">Chưa có bài nào. Thêm vào <code>LISTEN_DATA</code> trong
@@ -418,6 +430,18 @@
 			<div id="watchYt"></div>
 		</div>
 		<div class="watch-row watch-row-sticky">
+			<div class="watch-lesson-search">
+				<input class="setting-select" style="width:100%;" ng-model="lessonPicker.q"
+					ng-focus="lessonPicker.open = true; lessonPicker.active = 0" ng-blur="closeLessonDrop()"
+					ng-change="lessonPicker.open = true; lessonPicker.active = 0" ng-keydown="lessonKey($event)"
+					ng-click="selectAllLesson($event)" placeholder="Find lession..." aria-label="Tim bai" autocomplete="off">
+				<div class="lesson-drop" ng-show="lessonPicker.open">
+					<div class="lesson-drop-item"
+						ng-class="{'is-active': c.i === lessonIdx, 'is-hover': $index === lessonPicker.active}"
+						ng-repeat="c in filteredLessons() track by c.i" ng-mousedown="pickLesson(c)">{{c.title}}</div>
+					<div class="lesson-drop-item is-empty" ng-if="!filteredLessons().length">Không thấy bài nào</div>
+				</div>
+			</div>
 			<audio id="watchAudio" ng-if="lesson.type !== 'youtube' && isAudio" controls preload="metadata"
 				style="flex:1 1 100%;">
 			</audio>

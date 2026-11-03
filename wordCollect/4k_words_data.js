@@ -972,7 +972,7 @@ valentine (n) /ˈvæləntaɪn/ lễ tình nhân"
 
  const word_4000_data_2 = [{
  	title: "4k Book4",
- 	en: "healthcare (n) /ˈhelθ ker/ chăm sóc sức khỏe <br>\
+ 	en: "healthcare (n) /ˈhelθ ker/ chăm sóc sức khỏe, dịch vụ y tế <br>\
 population (n)  /pɑːpjuˈleɪʃn/ dân số<br>\
 populations (n)  /pɑːpjuˈleɪʃns/ nhóm dân cư, các quần thể <br>\
 industrialisation (n) /ɪnˌdʌstriələˈzeɪʃn/ công nghiệp hóa <br>\
@@ -1532,6 +1532,7 @@ offense (n) /əˈfens/ tội lỗi<br>\
 overlook (v) /ˌəʊ.vəˈlʊk/ bỏ qua<br>\
 repay (v) /rɪˈpeɪ/ trả lại<br>\
 satisfactory (adj) /ˌsæt.ɪsˈfæk.tər.i/ thỏa đáng<br>\
+help (n,v) /hɛlp/ giúp đỡ, help + someone + (to) V, help + (to) V<br>\
 shepherd (n) /ˈʃep.əd/ người chăn cừu\
 "
 

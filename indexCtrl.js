@@ -165,11 +165,11 @@ app.config(function($routeProvider) {
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-10',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-11',
 			controller: 'listensrtCtrl'
 		})
 		.when('/', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-10',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-11',
 			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {

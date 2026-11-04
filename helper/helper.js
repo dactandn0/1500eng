@@ -201,7 +201,7 @@ function getFullTile(obj) {
 }
 
 async function Helper_GG_API($http, input) {
-	let url = GOOGLE_TRANS_API + input
+	let url = GOOGLE_TRANS_API + encodeURIComponent(input || '')
 	return $http({
 		method: 'GET',
 		url: url

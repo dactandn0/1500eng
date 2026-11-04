@@ -217,6 +217,47 @@
 			border-color: #eeb6b6;
 		}
 
+		.watch-sub {
+			position: relative;
+		}
+
+		.watch-sub.is-loop-range {
+			border-color: #f0d98a;
+		}
+
+		.watch-sub.is-loop-a,
+		.watch-sub.is-loop-b {
+			border-color: #e6c96c;
+		}
+
+		.watch-sub.is-loop-a::before,
+		.watch-sub.is-loop-b::after {
+			position: absolute;
+			top: -.42rem;
+			z-index: 2;
+			min-width: 1.05rem;
+			height: 1.05rem;
+			padding: 0 .18rem;
+			border-radius: 999px;
+			background: #fff4c9;
+			border: 1px solid #e6c96c;
+			color: #604a0e;
+			font-size: .62rem;
+			font-weight: 700;
+			line-height: 1rem;
+			text-align: center;
+		}
+
+		.watch-sub.is-loop-a::before {
+			content: 'A';
+			right: 1.75rem;
+		}
+
+		.watch-sub.is-loop-b::after {
+			content: 'B';
+			right: .45rem;
+		}
+
 		.watch-sub-en {
 			font-size: .95rem;
 			color: #3d4c59;
@@ -455,6 +496,13 @@
 					title="Copy sub: full -> từng cụm -> full" aria-label="Copy subtitles">
 					<i class="fa fa-copy" aria-hidden="true"></i>&nbsp;{{copyLabel()}}
 				</button>
+				<button type="button" class="watch-toggle" ng-class="{'is-on': loopMode === 'range'}"
+					ng-click="toggleRangeLoop($event)"
+					ng-attr-title="{{loopMode === 'range' ? (loopB < 0 ? 'Chọn dòng B cho đoạn lặp' : 'Tắt lặp A-B (×' + loopCount + ')') : 'Lặp đoạn A-B'}}"
+					aria-label="Loop range A-B">
+					<span ng-bind="rangeLoopLabel()"></span>
+				</button>
+
 				<button type="button" class="watch-toggle" ng-class="{'is-on': showScript}" ng-click="toggleScript()"
 					ng-if="lessonNotes" title="Show script" aria-label="Show script">
 					<i class="fa fa-file-text-o" aria-hidden="true"></i>
@@ -477,7 +525,11 @@
 
 		<div class="watch-script" ng-if="showScript && lessonNotes !== ''">{{lessonNotes}}</div>
 		<div class="watch-subs" ng-show="!showScript">
-			<div class="watch-sub" id="wsub{{$index}}" ng-class="{'is-active': $index === curIdx}"
+			<div class="watch-sub" id="wsub{{$index}}"
+				ng-class="{'is-active': $index === curIdx,
+					'is-loop-a': loopMode === 'range' && loopA === $index,
+					'is-loop-b': loopMode === 'range' && loopB === $index,
+					'is-loop-range': loopMode === 'range' && loopB >= 0 && $index >= loopStart && $index <= loopEnd}"
 				ng-repeat="sub in lesson.subs track by $index" ng-click="seekSub(sub, $event)" role="button"
 				tabindex="0">
 				<div class="watch-sub-top">

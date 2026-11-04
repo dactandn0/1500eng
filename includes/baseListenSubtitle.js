@@ -235,8 +235,13 @@ $scope.copySubs = function (ev) {
 		});
 	} catch (e) {}
 };
-$scope.loopIdx = -1; // index dong dang loop (-1 = tat)
-$scope.loopCount = 0; // dem so vong da lap
+$scope.loopMode = 'off';
+$scope.loopIdx = -1;
+$scope.loopA = -1;
+$scope.loopB = -1;
+$scope.loopStart = -1;
+$scope.loopEnd = -1;
+$scope.loopCount = 0;
 // 1 note tai 1 thoi diem (accordion): mo Note B -> Note A tu dong.
 // Bam lai nut Note cua dong dang mo -> dong. Doi bai -> dong het.
 $scope.openNoteIdx = -1;
@@ -331,13 +336,59 @@ let videoEl = null;
 let ytPlayer = null;
 let pollTimer = null;
 let seekGraceUntil = 0; // bo qua timeupdate cu ngay sau khi seek (tranh highlight nhay ve dau)
+let loopSeekGraceUntil = 0; // bo qua seeking event cu khi loop tu seek
 let noteScrollGraceUntil = 0; // sau khi mo note: tam dung follow-scroll 1.5s de panel kip cuon toi note
 let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, chi nhan khi toi noi
 let seekSince = 0;
 let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
-let loopTimer = null; // hen gio replay khi loop 1 dong
-let programPause = false; // pause do CODE (loop) -> bo qua pause handler
-let userPaused = false; // pause do USER bam tay
+let loopTimer = null;
+let programPause = false;
+let userPaused = false;
+let destroyed = false;
+
+function clearLoopTimer() {
+	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
+}
+
+function resetLoop() {
+	$scope.loopMode = 'off';
+	$scope.loopIdx = -1;
+	$scope.loopA = -1;
+	$scope.loopB = -1;
+	$scope.loopStart = -1;
+	$scope.loopEnd = -1;
+	$scope.loopCount = 0;
+	clearLoopTimer();
+}
+
+$scope.rangeLoopLabel = function () {
+	if ($scope.loopMode !== 'range') return 'A-B';
+	return $scope.loopB < 0 ? 'A→B' : 'A-B';
+};
+
+$scope.toggleRangeLoop = function (ev) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	const idx = $scope.curIdx;
+	if (idx < 0) return;
+	if ($scope.loopMode === 'range') {
+		if ($scope.loopB < 0) {
+			if (idx === $scope.loopA) { resetLoop(); return; }
+			$scope.loopB = idx;
+			$scope.loopStart = Math.min($scope.loopA, $scope.loopB);
+			$scope.loopEnd = Math.max($scope.loopA, $scope.loopB);
+			$scope.loopCount = 0;
+			const subs = $scope.lesson && $scope.lesson.subs;
+			if (subs && subs[$scope.loopStart]) $scope.seekSub(subs[$scope.loopStart], null, true);
+		} else {
+			resetLoop();
+		}
+		return;
+	}
+	resetLoop();
+	$scope.loopMode = 'range';
+	$scope.loopA = idx;
+	$scope.loopB = -1;
+};
 
 $scope.trustSrc = function (src) {
 	try { return $sce.trustAsResourceUrl(src); } catch (e) { return src; }
@@ -361,11 +412,8 @@ function teardown() {
 }
 
 $scope.openLesson = function (i) {
-	// reset loop TRUOC teardown (event seeking async tu load() toi sau phai thay loop da tat)
-	$scope.loopIdx = -1;
-	$scope.loopCount = 0;
+	resetLoop();
 	seekTarget = null;
-	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
 	try { Text2SpeechStop(); } catch (e2) {}
 	teardown();
 	$scope.lessonIdx = +i || 0;
@@ -404,10 +452,11 @@ $scope.openLesson = function (i) {
 			$scope.isAudio = /\.(mp3|wav|m4a|ogg|oga|aac|flac|wma)$/i.test($scope.lesson.src || '');
 		}
 	} catch (e) {}
-	$timeout(function () { setupPlayer(); }, 100);
+	$timeout(function () { if (!destroyed) setupPlayer(); }, 100);
 	// resume: ve lai sub dang nghe truoc do (highlight + cuon panel + dua video ve moc gio, khong autoplay)
 	$timeout(function () {
 		try {
+			if (destroyed) return;
 			if (!$scope.lesson || !$scope.lesson.subs) return;
 			// don key cu ('listenSrt', 'listenSrt|<id>', 'ListenLessonId') -> chi giu POS_KEY
 			try {
@@ -422,6 +471,9 @@ $scope.openLesson = function (i) {
 			} catch (e0) {}
 			const saved = resumeIdx; // da doc giu tu dau openLesson (key gio la '<id>|-1')
 			if (isNaN(saved) || saved < 0 || !$scope.lesson.subs[saved]) return;
+			if ($scope.loopMode !== 'off') return;
+			if ($scope.curIdx >= 0 && $scope.curIdx !== saved) return;
+			if (seekTarget !== null) return;
 			$scope.seekSub($scope.lesson.subs[saved], null, false);
 			scrollPanelTo(saved);
 			lastSavedSub = -2; // ep ghi lai key (vua bi openLesson ghi de |-1)
@@ -437,6 +489,7 @@ function mediaEl() {
 }
 
 function setupPlayer(retry) {
+	if (destroyed) return;
 	if (!$scope.lesson) return;
 	if ($scope.lesson.type === 'youtube') {
 		setupYouTube(retry);
@@ -503,7 +556,7 @@ function setupPlayer(retry) {
 				videoEl.addEventListener('loadeddata', videoEl._watchLD);
 				// seek xong -> mo khoa tick ngay (khong doi timeupdate toi noi)
 				videoEl._watchSD = function () {
-					try { seekTarget = null; } catch (e) {}
+					try { seekTarget = null; loopSeekGraceUntil = 0; } catch (e) {}
 				};
 				videoEl.addEventListener('seeked', videoEl._watchSD);
 				// pause tay -> huy replay dang cho (play lai se hen moi qua tick)
@@ -519,20 +572,26 @@ function setupPlayer(retry) {
 				videoEl.addEventListener('play', videoEl._watchPL);
 				videoEl._watchSK = function () {
 					// seeking do CODE (da dem truoc) -> tru va bo qua
-					try { if (expectSeeks > 0) { expectSeeks--; } } catch (e) {}
-					// Tat loop CHI KHI vi tri hien tai NAM NGOAI dong loop.
-					// (seeking gia tu load()/replay nam trong dong -> bo qua.
-					//  keo tay that nhay ra ngoai -> tat loop ngay ca khi counter con du.)
+					let progSeek = false;
+					try { if (expectSeeks > 0) { expectSeeks--; progSeek = true; } } catch (e) {}
+					// Tat loop CHI KHI vi tri hien tai NAM NGOAI doan loop.
+					// Seeking chu dong co the ban event voi currentTime CU -> bo qua.
 					try {
-						if ($scope.loopIdx >= 0) {
-							const ls = $scope.lesson && $scope.lesson.subs;
+						if (Date.now() < loopSeekGraceUntil) return;
+						let ct = -1;
+						try { ct = videoEl.currentTime; } catch (e2) { ct = -1; }
+						if (progSeek && seekTarget !== null && ct >= 0 && Math.abs(ct - seekTarget) > 1.0) return;
+						const ls = $scope.lesson && $scope.lesson.subs;
+						if ($scope.loopMode === 'line' && $scope.loopIdx >= 0) {
 							const lo = ls && ls[$scope.loopIdx];
-							let ct = -1;
-							try { ct = videoEl.currentTime; } catch (e2) { ct = -1; }
 							if (lo && ct >= 0 && ct >= (lo.t || 0) - 0.6 && ct <= (lo.e || 0) + 1.5) return;
-							$scope.loopIdx = -1;
-							$scope.loopCount = 0;
-							try { clearTimeout(loopTimer); loopTimer = null; } catch (e3) {}
+							resetLoop();
+							try { $scope.$applyAsync(); } catch (e4) {}
+						} else if ($scope.loopMode === 'range' && $scope.loopStart >= 0 && $scope.loopEnd >= 0) {
+							const lo = ls && ls[$scope.loopStart];
+							const hi = ls && ls[$scope.loopEnd];
+							if (lo && hi && ct >= 0 && ct >= (lo.t || 0) - 0.6 && ct <= (hi.e || 0) + 1.5) return;
+							resetLoop();
 							try { $scope.$applyAsync(); } catch (e4) {}
 						}
 					} catch (e) {}
@@ -688,14 +747,28 @@ function tick(t) {
 		if (t >= subs[i].t - 0.15) idx = i;
 		else break;
 	}
-	// loop 1 dong: HEN GIO dung hinh dung cuoi cau, nghi im lang du delay roi phat lai.
-	// (Ban cu: delay chi tri hoan lenh seek, video van chay lot sang cau B -> noise.)
-	if ($scope.loopIdx >= 0 && subs[$scope.loopIdx] && subs[$scope.loopIdx].e) {
-		const li = $scope.loopIdx;
-		const endT = subs[li].e;
+	// loop: hen gio dung hinh o cuoi doan, nghi im lang roi phat lai tu dau doan.
+	const loopEnd = (function () {
+		if ($scope.loopMode === 'line' && $scope.loopIdx >= 0) {
+			return { endIdx: $scope.loopIdx, restartIdx: $scope.loopIdx, line: true };
+		}
+		if ($scope.loopMode === 'range' && $scope.loopStart >= 0 && $scope.loopEnd >= 0) {
+			return { endIdx: $scope.loopEnd, restartIdx: $scope.loopStart, line: false };
+		}
+		return null;
+	})();
+	if (loopEnd && subs[loopEnd.endIdx] && subs[loopEnd.endIdx].e) {
+		const endIdx = loopEnd.endIdx;
+		const restartIdx = loopEnd.restartIdx;
+		const isLine = loopEnd.line;
+		const endT = subs[endIdx].e;
+		const stillActive = function () {
+			if (isLine) return $scope.loopMode === 'line' && $scope.loopIdx === endIdx;
+			return $scope.loopMode === 'range' && $scope.loopStart === restartIdx && $scope.loopEnd === endIdx;
+		};
 		const pauseMedia = function () {
 			programPause = true;
-			setTimeout(function () { programPause = false; }, 1500); // an toan neu pause event ko toi
+			setTimeout(function () { programPause = false; }, 1500);
 			try {
 				if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
 				else { const me = mediaEl(); if (me) me.pause(); }
@@ -708,26 +781,23 @@ function tick(t) {
 				return !!(me && !me.paused && !me.ended);
 			} catch (e) { return true; }
 		};
-		// toi gio: dung hinh ngay + hen phat lai sau delay (im lang tuyet doi)
 		const beginPause = function () {
 			loopTimer = null;
 			try {
-				if ($scope.loopIdx !== li) return;
-				if (!$scope.lesson || $scope.lesson.subs[li] !== subs[li]) return;
-				if (!mediaPlaying()) return; // user pause roi -> thoi
+				if (!stillActive()) return;
+				if (!$scope.lesson || $scope.lesson.subs[endIdx] !== subs[endIdx]) return;
+				if (!mediaPlaying()) return;
 				pauseMedia();
 				loopTimer = setTimeout(function () {
 					loopTimer = null;
 					try {
-						if ($scope.loopIdx !== li) return;
-						if (!$scope.lesson || $scope.lesson.subs[li] !== subs[li]) return;
+						if (!stillActive()) return;
+						if (!$scope.lesson || $scope.lesson.subs[endIdx] !== subs[endIdx]) return;
 						$scope.loopCount += 1;
-						$scope.seekSub(subs[li], null, true);
-						// watchdog: play() doi khi bi reject am tham -> video dung im.
-						// 1.2s sau van pause (ma khong phai user pause) thi play lai.
+						$scope.seekSub(subs[restartIdx], null, true);
 						setTimeout(function () {
 							try {
-								if ($scope.loopIdx !== li) return;
+								if (!stillActive()) return;
 								if (userPaused) return;
 								const me = mediaEl();
 								if (me && me.paused && !me.ended) {
@@ -741,16 +811,14 @@ function tick(t) {
 			} catch (e) {}
 		};
 		if (t >= endT - 0.03) {
-			// sat/dung cuoi cau. NHUNG: neu video dang pause (user pause)
-			// thi DE YEN cho timer cu, khong duoc xoa + hen lai.
 			let playingNow = true;
 			try {
 				if (ytPlayer && ytPlayer.getPlayerState) playingNow = (ytPlayer.getPlayerState() === 1);
 				else { const me0 = mediaEl(); playingNow = !!(me0 && !me0.paused && !me0.ended); }
 			} catch (e) {}
 			if (!playingNow) {
-				if ($scope.curIdx !== li) {
-					$scope.curIdx = li;
+				if (isLine && $scope.curIdx !== endIdx) {
+					$scope.curIdx = endIdx;
 					try { $scope.$applyAsync(); } catch (e2) {}
 				}
 				return;
@@ -758,19 +826,19 @@ function tick(t) {
 			if (loopTimer) { try { clearTimeout(loopTimer); } catch (e) {} loopTimer = null; }
 			beginPause();
 		} else if (!loopTimer) {
-			// chua toi: hen truoc theo thoi gian con lai de cat dung gio
 			loopTimer = setTimeout(beginPause, Math.max(0, (endT - t) * 1000));
 		}
-		if ($scope.curIdx !== li) {
-			$scope.curIdx = li;
-			try { $scope.$applyAsync(); } catch (e) {}
-			copySubEn(subs[li]);
-			replayCurAnim(li);
-			saveSubPos(li);
+		if (isLine) {
+			if ($scope.curIdx !== endIdx) {
+				$scope.curIdx = endIdx;
+				try { $scope.$applyAsync(); } catch (e) {}
+				copySubEn(subs[endIdx]);
+				replayCurAnim(endIdx);
+				saveSubPos(endIdx);
+			}
+			if ($scope.follow && !followPausedForNote()) scrollPanelTo(endIdx);
+			return;
 		}
-		// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
-		if ($scope.follow && !followPausedForNote()) scrollPanelTo(li);
-		return;
 	}
 	// het sub cuoi (con duoi file van chay) -> quay ve sub 0 (dau bai). Pause thi thoi.
 	const lastSub = subs[subs.length - 1];
@@ -799,17 +867,19 @@ function tick(t) {
 // Cham 1 dong phu de -> video nhay ve time do (+ phat tiep)
 // Bam sang dong KHAC thi tat loop cu (tranh bi giat ve)
 $scope.seekSub = function (sub, ev, autoplay) {
+	if (destroyed) return;
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} copyLock = false; } // click sub tay -> mo khoa, copy nhu thuong
 	if (!sub) return;
 	try {
 		const subs0 = $scope.lesson && $scope.lesson.subs;
-		if (subs0 && $scope.loopIdx >= 0 && subs0.indexOf(sub) !== $scope.loopIdx) {
-			$scope.loopIdx = -1;
-			$scope.loopCount = 0;
-			try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
+		const targetIdx = subs0 ? subs0.indexOf(sub) : -1;
+		if (subs0 && $scope.loopMode === 'line' && $scope.loopIdx >= 0 && targetIdx !== $scope.loopIdx) {
+			resetLoop();
+		} else if (subs0 && $scope.loopMode === 'range' && $scope.loopEnd >= 0) {
+			if (targetIdx < $scope.loopStart || targetIdx > $scope.loopEnd) resetLoop();
+			else clearLoopTimer();
 		} else {
-			// cung dong (replay/tu bam lai): xoa timer cu de tick hen lai chinh xac
-			try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
+			clearLoopTimer();
 		}
 	} catch (e) {}
 	const t = Math.max(0, (sub.t || 0) + 0.01);
@@ -851,6 +921,7 @@ $scope.seekSub = function (sub, ev, autoplay) {
 			}
 		} catch (e) {}
 		markProgMedia(); // seek chu dong -> seeking toi muon bao lau cung bo qua
+		loopSeekGraceUntil = Date.now() + 1500;
 		const doSeek = function () {
 			try { videoEl.currentTime = t; } catch (e) {}
 			if (autoplay !== false) {
@@ -905,16 +976,13 @@ $scope.subtitleWordSpeech = function (ev, sub) {
 };
 // Nut loop tren MOI dong sub: bat -> loop dong do mai (nghi theo delay), bam lai -> tat
 $scope.toggleLoop = function (ev, idx) {
-	console.log('toggleLoop', idx, $scope.loopIdx);
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	if ($scope.loopIdx === idx) {
-		$scope.loopIdx = -1;
-		$scope.loopCount = 0;
-		try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
-	} else 
-	{
+	if ($scope.loopMode === 'line' && $scope.loopIdx === idx) {
+		resetLoop();
+	} else {
+		resetLoop();
+		$scope.loopMode = 'line';
 		$scope.loopIdx = idx;
-		$scope.loopCount = 0;
 		const sub = $scope.lesson && $scope.lesson.subs[idx];
 		if (sub) $scope.seekSub(sub, null, true);
 	}
@@ -971,6 +1039,7 @@ function updateRowDock() {
 try { window.addEventListener('scroll', updateRowDock, { passive: true }); } catch (e) {}
 
 $scope.$on('$destroy', function () {
+	destroyed = true;
 	teardown();
 	try { window.removeEventListener('scroll', updateRowDock); } catch (e) {}
 	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
@@ -993,7 +1062,9 @@ window[cfg.dbgName || '__watchDbg'] = function () {
 		const me = mediaEl();
 		return {
 			lesson: ($scope.lesson && $scope.lesson.title) || null,
-			curIdx: $scope.curIdx, loopIdx: $scope.loopIdx, loopCount: $scope.loopCount,
+			curIdx: $scope.curIdx, loopMode: $scope.loopMode, loopIdx: $scope.loopIdx,
+			loopA: $scope.loopA, loopB: $scope.loopB, loopStart: $scope.loopStart,
+			loopEnd: $scope.loopEnd, loopCount: $scope.loopCount,
 			hasEl: !!me,
 			elTag: me && me.tagName,
 			srcAttr: me && me.getAttribute('src'),

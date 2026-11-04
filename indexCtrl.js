@@ -547,6 +547,38 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
+		function escapeToastText(text) {
+			return String(text == null ? '' : text).replace(/[&<>"']/g, function (ch) {
+				return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+			});
+		}
+
+		function googleErrText(err) {
+			try {
+				if (typeof err === 'string') return escapeToastText(err);
+				const parts = [];
+				if (err) {
+					if (err.status != null) {
+						parts.push('HTTP ' + err.status + (err.statusText ? ' ' + err.statusText : ''));
+					}
+					if (err.xhrStatus) parts.push(err.xhrStatus);
+					let data = err.data;
+					if (data != null) {
+						if (typeof data !== 'string') {
+							try { data = JSON.stringify(data); } catch (e) { data = String(data); }
+						}
+						data = String(data).replace(/\s+/g, ' ').trim();
+						if (data.length > 240) data = data.slice(0, 240) + '...';
+						if (data) parts.push(data);
+					}
+					if (!parts.length && err.message) parts.push(err.message);
+				}
+				return escapeToastText(parts.join(' | ') || 'unknown error');
+			} catch (e) {
+				return 'unknown error';
+			}
+		}
+
 		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS) {
 			navigator.clipboard.writeText(touchedWord);
 			const result = getVocaFromDB(touchedWord)
@@ -558,13 +590,15 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				doShowToast((IgnoreShowTouched ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord);
 				//GOOGLE_ERROR_SHOWN = false; // reset
 			}, err => {
+				try { console.error('Google translate error', err); } catch (e) {}
+				const ggErr = googleErrText(err);
 				// Google loi: van show dict neu co; chua co dict thi bao loi 1 lan
 				if (result.found) {
-					doShowToast(result.full, IgnoreShowTouched, touchedWord);
+					doShowToast(result.full + '<br><span class="text-danger">Google: ' + ggErr + '</span>', IgnoreShowTouched, touchedWord);
 				} else //if (!GOOGLE_ERROR_SHOWN) 
 				{
 					//GOOGLE_ERROR_SHOWN = true;
-					doShowToast(' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> <span class="text-danger">error</span>', false, "");
+					doShowToast(' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> <span class="text-danger">error: ' + ggErr + '</span>', true, "");
 				}
 			});
 			// PlayTTS default true; false -> chi show VI, khong phat TTS

@@ -128,7 +128,7 @@ app.config(function($routeProvider) {
 	$routeProvider
 		//	.when('/', { templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl' }) 
 		.when('/configUI', {
-			templateUrl: 'vocaNoted/configUI.html',
+			templateUrl: 'vocaNoted/configUI.html?v=20261104-1',
 			controller: 'configUICtrl'
 		})
 		.when('/vocaNoted', {
@@ -165,11 +165,11 @@ app.config(function($routeProvider) {
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-11',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261104-3',
 			controller: 'listensrtCtrl'
 		})
 		.when('/', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261101-11',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261104-3',
 			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {

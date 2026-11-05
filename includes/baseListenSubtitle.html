@@ -493,7 +493,8 @@
 			<span class="ml-1 watch-now" ng-if="lesson && lesson.subs[curIdx]">▶ {{lesson.subs[curIdx].en}}</span>
 			<div class="watch-row-btns">
 				<button type="button" class="watch-toggle" ng-click="copySubs($event)"
-					title="Copy sub: full -> từng cụm -> full" aria-label="Copy subtitles">
+					ng-attr-title="{{copyLabel() === 'A+B' ? 'Copy all subtitles in A-B' : 'Copy all subtitles'}}"
+					aria-label="Copy subtitles">
 					<i class="fa fa-copy" aria-hidden="true"></i>&nbsp;{{copyLabel()}}
 				</button>
 				<button type="button" class="watch-toggle" ng-class="{'is-on': loopMode === 'range'}"

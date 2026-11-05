@@ -144,19 +144,8 @@ function wrapTouchWords(text) {
 	return out;
 }
 
-// Nut copy ke Script: xoay vong copy full -> tung cum N cau (N = listenNoChunkCopied 2-10) -> ve full.
-$scope.copyStep = 0; // 0 = lan toi copy full; >=1 = copy cum thu copyStep
+// Nut copy ke Script: copy full, hoac copy toan bo sub trong doan A-B khi dang lap.
 let lastCopyToast = null; // toast Copy dang mo -> mo moi thi clear cu truoc
-function getChunkN() {
-	try {
-		let n = 2;
-		if (typeof Helper_ListenChunkKey !== 'undefined' && typeof Helper_loadInt === 'function')
-			n = Helper_loadInt(Helper_ListenChunkKey, 2);
-		n = parseInt(n, 10);
-		if (!(n >= 2 && n <= 10)) n = 2;
-		return n;
-	} catch (e) { return 2; }
-}
 function copyTextToClipboard(text, done) {
 	try {
 		if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -192,38 +181,29 @@ $scope.showCopyToast = function (msg) {
 	copyToastTimer = $timeout(function () { $scope.copyToastMsg = ''; }, 2500);
 };
 $scope.copyLabel = function () {
-	if ($scope.copyStep <= 0) return 'All';
-	try {
-		const subs = ($scope.lesson && $scope.lesson.subs) || [];
-		const total = Math.max(1, Math.ceil(subs.length / getChunkN()));
-		return $scope.copyStep + '/' + total;
-	} catch (e) { return String($scope.copyStep); }
+	const subs = ($scope.lesson && $scope.lesson.subs) || [];
+	if ($scope.loopMode === 'range' && $scope.loopA >= 0 && $scope.loopB >= 0 && subs[$scope.loopA] && subs[$scope.loopB])
+		return 'A+B';
+	return 'All';
 };
 $scope.copySubs = function (ev) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	try {
 		const subs = ($scope.lesson && $scope.lesson.subs) || [];
 		if (!subs.length) return;
-		const n = getChunkN();
-		const chunks = Math.max(1, Math.ceil(subs.length / n));
-		const step = $scope.copyStep || 0;
-		let text = '', msg = '', chunkStart = -1;
-		if (step <= 0) {
+		const aIdx = $scope.loopA, bIdx = $scope.loopB;
+		const hasRange = $scope.loopMode === 'range' && aIdx >= 0 && bIdx >= 0 && subs[aIdx] && subs[bIdx];
+		let text = '', msg = '';
+		if (hasRange) {
+			const start = Math.min(aIdx, bIdx), end = Math.max(aIdx, bIdx);
+			const lines = subs.slice(start, end + 1).map(function (s) { return s.en; });
+			text = lines.join('\n');
+			msg = 'Copied A+B (' + lines.length + ' lines)';
+		} else {
 			text = subs.map(function (s) { return s.en; }).join('\n');
 			msg = 'Copied all (' + subs.length + ' lines)';
-		} else {
-			const a = (step - 1) * n, b = Math.min(subs.length, a + n);
-			text = subs.slice(a, b).map(function (s) { return s.en; }).join('\n');
-			msg = 'Copied ' + (a + 1) + '-' + b + '/' + subs.length;
-			chunkStart = a; // sub dau chunk -> cuon panel toi (copy all thi thoi)
 		}
-		$scope.copyStep = (step + 1) % (chunks + 1);
 		copyLock = true; // khoa auto-copy cua tick de giu nguyen clipboard vua copy
-		if (chunkStart >= 0) {
-			// copy chunk -> cuon panel toi sub dau chunk, nghi follow-scroll 1.5s de kịp nhìn
-			noteScrollGraceUntil = Date.now() + 1500;
-			$timeout(function () { try { scrollPanelTo(chunkStart); } catch (e2) {} }, 120);
-		}
 		copyTextToClipboard(text, function () {
 			try {
 				if (isNarrowCopyToast()) $scope.showCopyToast(msg);
@@ -434,7 +414,6 @@ $scope.openLesson = function (i) {
 	} catch (e) {}
 	$scope.curIdx = -1;
 	$scope.openNoteIdx = -1; // doi bai -> dong het note cu
-	$scope.copyStep = 0; // doi bai -> copy lai tu full
 	loadStars(); // doi bai -> load star tu local de set icon on/off
 	$scope.lessonPicker.q = ($scope.lesson && $scope.lesson.title) || '';
 	$scope.showScript = false;
@@ -675,7 +654,7 @@ function startPoll() {
 }
 
 // Sub chay/chuyen sang dong nao -> dua EN vao clipboard luon.
-// copyLock: bam nut Copy chunk -> khoa auto-copy (tick) de khoi ghi de clipboard vua copy;
+// copyLock: bam nut Copy -> khoa auto-copy (tick) de khoi ghi de clipboard vua copy;
 // click sub thu cong thi mo khoa + copy nhu thuong.
 let copyLock = false;
 function copySubEn(sub) {

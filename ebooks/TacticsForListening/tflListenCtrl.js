@@ -6,7 +6,7 @@ var app = angular.module("tflListenApp", ['toastr', 'baseListenApp']);
 app.directive('tflListenPage', function() {
 	return {
 		restrict: 'A',
-		templateUrl: './includes/baseListenSubtitle.html?v=20261101-11',
+		templateUrl: './includes/baseListenSubtitle.html?v=20261104-3',
 		scope: false
 	};
 });
@@ -22,7 +22,7 @@ app.controller("tflListenCtrl", function($scope, $rootScope, baseListenSubtitle)
 			eyebrow: 'LISTENING LAB',
 			title: 'TFL Listen',
 			desc: 'Tactics for Listening - Basic, Developing & Expanding 1-24. Nghe + phụ đề chạy theo, chạm dòng để nhảy tới.',
-			status: 'TFL • Basic / Developing / Expanding'
+			status: 'Tactics for listening'
 		}
 	});
 });

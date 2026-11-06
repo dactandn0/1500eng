@@ -168,13 +168,39 @@
 			max-height: 65vh;
 			overflow-y: auto;
 			padding: .4rem;
+			padding-bottom: 10vh;
 			background: #fffdf7;
 			border: 1px solid #eee5c9;
 			border-radius: 5px;
 			-webkit-overflow-scrolling: touch;
 		}
 
+		.watch-subs-inner.is-bounce-top {
+			animation: watchSubsBounceTop .22s cubic-bezier(.22, .61, .36, 1);
+		}
+		.watch-subs-inner.is-bounce-bottom {
+			animation: watchSubsBounceBottom .22s cubic-bezier(.22, .61, .36, 1);
+		}
+		@keyframes watchSubsBounceTop {
+			0% { transform: translateY(0); }
+			35% { transform: translateY(5px); }
+			70% { transform: translateY(-1px); }
+			100% { transform: translateY(0); }
+		}
+		@keyframes watchSubsBounceBottom {
+			0% { transform: translateY(0); }
+			35% { transform: translateY(-5px); }
+			70% { transform: translateY(1px); }
+			100% { transform: translateY(0); }
+		}
+		@media (prefers-reduced-motion: reduce) {
+			.watch-subs-inner.is-bounce-top,
+			.watch-subs-inner.is-bounce-bottom {
+				animation: none;
+			}
+		}
 		.watch-sub {
+			margin-top: .2rem;
 			padding: .55rem .7rem;
 			border-radius: 10px;
 			border: 1px solid transparent;
@@ -526,6 +552,7 @@
 
 		<div class="watch-script" ng-if="showScript && lessonNotes !== ''">{{lessonNotes}}</div>
 		<div class="watch-subs" ng-show="!showScript">
+			<div class="watch-subs-inner">
 			<div class="watch-sub" id="wsub{{$index}}"
 				ng-class="{'is-active': $index === curIdx,
 					'is-loop-a': loopMode === 'range' && loopA === $index,
@@ -560,6 +587,7 @@
 					</div>
 				</div>
 				<div class="watch-note" ng-class="{'open': openNoteIdx === $index}" ng-if="sub.note">{{sub.note}}</div>
+			</div>
 			</div>
 		</div>
 	</div>

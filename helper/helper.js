@@ -201,11 +201,30 @@ function getFullTile(obj) {
 }
 
 async function Helper_GG_API($http, input) {
-	let url = GOOGLE_TRANS_API + encodeURIComponent(input || '')
+	const q = encodeURIComponent(input || '')
+	const fallback = function () {
+		return $http({
+			method: 'GET',
+			url: GOOGLE_TRANS_API_FALLBACK + q
+		}).then(function (res) {
+			try {
+				const data = res.data
+				if (Array.isArray(data)) {
+					const text = data.map(function (row) { return Array.isArray(row) ? row[0] : ''; }).filter(Boolean).join(' ')
+					if (text) res.data = [[[text, input || '', null, null, 10]], null, null]
+				}
+			} catch (e) {}
+			return res
+		})
+	}
 	return $http({
 		method: 'GET',
-		url: url
-	})
+		url: GOOGLE_TRANS_API + q
+	}).then(function (res) {
+		let text = ''
+		try { text = (res.data[0] || []).map(function (seg) { return seg[0] || ''; }).join('') } catch (e) {}
+		return text ? res : fallback()
+	}, fallback)
 }
 
 

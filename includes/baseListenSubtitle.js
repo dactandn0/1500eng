@@ -174,12 +174,47 @@ function isNarrowCopyToast() {
 }
 $scope.copyToastMsg = '';
 let copyToastTimer = null;
+let wrapCountdownTimer = null;
+let wrapCountdownActive = false;
 $scope.showCopyToast = function (msg) {
 	$scope.copyToastMsg = msg;
 	try { $scope.$applyAsync(); } catch (e) {}
 	try { if (copyToastTimer) $timeout.cancel(copyToastTimer); } catch (e2) {}
 	copyToastTimer = $timeout(function () { $scope.copyToastMsg = ''; }, 2500);
 };
+function clearWrapCountdown() {
+	const had = wrapCountdownActive || !!wrapCountdownTimer;
+	wrapCountdownActive = false;
+	try { if (wrapCountdownTimer) clearTimeout(wrapCountdownTimer); } catch (e) {}
+	wrapCountdownTimer = null;
+	if (!had) return;
+	$scope.copyToastMsg = '';
+	try { if (copyToastTimer) { $timeout.cancel(copyToastTimer); copyToastTimer = null; } } catch (e2) {}
+	try { $scope.$applyAsync(); } catch (e3) {}
+}
+function startWrapCountdown(seconds) {
+	if (wrapCountdownActive) return;
+	wrapCountdownActive = true;
+	let left = Math.max(1, Math.ceil(seconds || 0));
+	const show = function () {
+		$scope.copyToastMsg = 'Replaying in ' + left + '...';
+		try { $scope.$applyAsync(); } catch (e) {}
+		try { if (copyToastTimer) { $timeout.cancel(copyToastTimer); copyToastTimer = null; } } catch (e2) {}
+	};
+	const step = function () {
+		wrapCountdownTimer = null;
+		left -= 1;
+		if (left > 0) {
+			show();
+			wrapCountdownTimer = setTimeout(step, 1000);
+		} else {
+			$scope.copyToastMsg = '';
+			try { $scope.$applyAsync(); } catch (e) {}
+		}
+	};
+	show();
+	wrapCountdownTimer = setTimeout(step, 1000);
+}
 $scope.copyLabel = function () {
 	const subs = ($scope.lesson && $scope.lesson.subs) || [];
 	if ($scope.loopMode === 'range' && $scope.loopA >= 0 && $scope.loopB >= 0 && subs[$scope.loopA] && subs[$scope.loopB])
@@ -322,12 +357,14 @@ let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, 
 let seekSince = 0;
 let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
 let loopTimer = null;
+const WRAP_DELAY_MS = 2000;
 let programPause = false;
 let userPaused = false;
 let destroyed = false;
 
 function clearLoopTimer() {
 	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
+	clearWrapCountdown();
 }
 
 function resetLoop() {
@@ -484,6 +521,7 @@ function setupPlayer(retry) {
 			}
 			return;
 		}
+		setupWatchSubsBounce();
 		if (videoEl._watchBound !== $scope.lesson.src) {
 				// go listener cu (doi bai) de khoi nhan doi timeupdate
 				try {
@@ -501,6 +539,7 @@ function setupPlayer(retry) {
 				videoEl._watchEN = function () {
 					try {
 						// het file -> ve sub 0 (dau bai), dung yen cho user bam play
+						if ($scope.loopMode === 'off' && loopTimer) return;
 						const subs = ($scope.lesson && $scope.lesson.subs) || [];
 						if (subs.length) {
 							$scope.seekSub(subs[0], null, false);
@@ -541,8 +580,9 @@ function setupPlayer(retry) {
 				// pause tay -> huy replay dang cho (play lai se hen moi qua tick)
 				videoEl._watchPA = function () {
 					if (programPause) { programPause = false; return; }
+					if (videoEl.ended) return;
 					userPaused = true;
-					try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
+					clearLoopTimer();
 				};
 				videoEl.addEventListener('pause', videoEl._watchPA);
 				videoEl._watchPL = function () {
@@ -622,6 +662,7 @@ function setupYouTube(retry) {
 		}
 		return;
 	}
+	setupWatchSubsBounce();
 	ensureYtApi(function () {
 		try {
 			if (!$scope.lesson || $scope.lesson.type !== 'youtube') return;
@@ -707,6 +748,42 @@ function scrollPanelTo(idx) {
 		const pr = panel.getBoundingClientRect();
 		const er = el.getBoundingClientRect();
 		panel.scrollTop += (er.top - pr.top) - (panel.clientHeight / 2 - er.height / 2);
+	} catch (e) {}
+}
+
+let watchBounceTimer = null;
+let watchBouncePanel = null;
+function bounceWatchSubs(panel, dir) {
+	try {
+		const inner = panel.querySelector('.watch-subs-inner');
+		if (!inner) return;
+		inner.classList.remove('is-bounce-top', 'is-bounce-bottom');
+		void inner.offsetWidth;
+		inner.classList.add(dir === 'top' ? 'is-bounce-top' : 'is-bounce-bottom');
+		if (watchBounceTimer) clearTimeout(watchBounceTimer);
+		watchBounceTimer = setTimeout(function () {
+			inner.classList.remove('is-bounce-top', 'is-bounce-bottom');
+			watchBounceTimer = null;
+		}, 260);
+	} catch (e) {}
+}
+function setupWatchSubsBounce() {
+	try {
+		const panels = document.querySelectorAll('.watch-subs');
+		const panel = panels[panels.length - 1];
+		if (!panel || panel._watchBounce) return;
+		panel._watchBounce = function (ev) {
+			if (ev.defaultPrevented || ev.ctrlKey || ev.shiftKey) return;
+			const dy = ev.deltaY || 0;
+			if (!dy || panel.scrollHeight <= panel.clientHeight + 1) return;
+			const atTop = panel.scrollTop <= 0;
+			const atBottom = panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 1;
+			if ((dy < 0 && atTop) || (dy > 0 && atBottom)) {
+				if (!watchBounceTimer) bounceWatchSubs(panel, dy < 0 ? 'top' : 'bottom');
+			}
+		};
+		panel.addEventListener('wheel', panel._watchBounce, { passive: true });
+		watchBouncePanel = panel;
 	} catch (e) {}
 }
 
@@ -821,16 +898,38 @@ function tick(t) {
 	}
 	// het sub cuoi (con duoi file van chay) -> quay ve sub 0 (dau bai). Pause thi thoi.
 	const lastSub = subs[subs.length - 1];
-	if (lastSub && lastSub.e && t >= lastSub.e + 0.5) {
-		let playingNow = true;
-		try {
-			if (ytPlayer && ytPlayer.getPlayerState) playingNow = (ytPlayer.getPlayerState() === 1);
-			else { const me0 = mediaEl(); playingNow = !!(me0 && !me0.paused && !me0.ended); }
-		} catch (e) {}
-		if (playingNow && subs.length) {
-			$scope.seekSub(subs[0], null, false); // seek giu nguyen play -> bai lap lien mach
-			if ($scope.follow) scrollPanelTo(0); // curIdx da = 0 (optimistic) nen tick sau return -> phai cuon ngay
-			return;
+	if (lastSub && lastSub.e && idx === subs.length - 1 && $scope.loopMode === 'off') {
+		const wrapAt = lastSub.e + (WRAP_DELAY_MS / 1000);
+		const mediaPaused = function () {
+			try {
+				if (ytPlayer && ytPlayer.getPlayerState) return ytPlayer.getPlayerState() === 2;
+				const me0 = mediaEl();
+				return !!(me0 && me0.paused && !me0.ended);
+			} catch (e) { return false; }
+		};
+		if (t >= wrapAt) {
+			clearWrapCountdown();
+			if (loopTimer) { try { clearTimeout(loopTimer); } catch (e) {} loopTimer = null; }
+			if (!mediaPaused() && subs.length) {
+				$scope.seekSub(subs[0], null, true);
+				if ($scope.follow) scrollPanelTo(0);
+				return;
+			}
+		} else {
+			if (!loopTimer) {
+				loopTimer = setTimeout(function () {
+					loopTimer = null;
+					try {
+						if (!$scope.lesson || $scope.lesson.subs[subs.length - 1] !== lastSub) { clearWrapCountdown(); return; }
+						if ($scope.loopMode !== 'off') { clearWrapCountdown(); return; }
+						if (mediaPaused()) { clearWrapCountdown(); return; }
+						clearWrapCountdown();
+						$scope.seekSub(subs[0], null, true);
+						if ($scope.follow) scrollPanelTo(0);
+					} catch (e) {}
+				}, Math.max(0, (wrapAt - t) * 1000));
+			}
+			if (t >= lastSub.e) startWrapCountdown(wrapAt - t);
 		}
 	}
 	if (idx === $scope.curIdx) return;
@@ -1021,7 +1120,13 @@ $scope.$on('$destroy', function () {
 	destroyed = true;
 	teardown();
 	try { window.removeEventListener('scroll', updateRowDock); } catch (e) {}
-	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
+	try {
+		if (watchBouncePanel && watchBouncePanel._watchBounce) watchBouncePanel.removeEventListener('wheel', watchBouncePanel._watchBounce);
+		if (watchBounceTimer) clearTimeout(watchBounceTimer);
+		watchBounceTimer = null;
+		watchBouncePanel = null;
+	} catch (e) {}
+	clearLoopTimer();
 	try { Text2SpeechStop(); } catch (e) {}
 });
 
@@ -1032,6 +1137,7 @@ $scope.$on('$viewContentLoaded', function () {
 	} catch (e) {}
 	topFunction();
 	try { updateRowDock(); } catch (e) {}
+	try { setupWatchSubsBounce(); } catch (e) {}
 });
 
 // Debug: chay trong Console khi loop/seek hong -> paste ket qua

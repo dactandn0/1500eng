@@ -1,7 +1,8 @@
 const HELPER_FOR_TEST = false;
 
 
-const GOOGLE_TRANS_API = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=vi&dt=t&q=";
+const GOOGLE_TRANS_API = "https://translate.googleapis.com/translate_a/single?client=at&sl=auto&tl=vi&dt=t&q=";
+const GOOGLE_TRANS_API_FALLBACK = "https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=auto&tl=vi&q=";
 let GOOGLE_ERROR_SHOWN = false;
 
 const Helper_AudioPitchKey = 'AudioPitch';

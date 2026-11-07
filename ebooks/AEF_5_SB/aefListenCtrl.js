@@ -8,7 +8,7 @@ app.controller("aefListenCtrl", function($scope, $rootScope, baseListenSubtitle)
 		dbgName: '__aefDbg',
 		header: {
 			eyebrow: 'LISTENING LAB',
-			title: 'AEF 5 SB Listen',
+			title: 'American English File v3 Student Book 5',
 			desc: 'American English File 5 Student Book audio - 10 units.',
 			status: 'AEF 5 SB - 10 Units'
 		}

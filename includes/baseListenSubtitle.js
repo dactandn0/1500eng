@@ -324,6 +324,20 @@ function loadStars() {
 	} catch (e) {}
 }
 $scope.isStarred = function (idx) { try { return !!$scope.starMap[idx]; } catch (e) { return false; } };
+$scope.starOnly = false;
+$scope.toggleStarOnly = function (ev) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	$scope.starOnly = !$scope.starOnly;
+};
+$scope.hasStarredSubs = function () {
+	try {
+		const subs = ($scope.lesson && $scope.lesson.subs) || [];
+		for (let i = 0; i < subs.length; i++) {
+			if ($scope.starMap[i]) return true;
+		}
+	} catch (e) {}
+	return false;
+};
 $scope.toggleStar = function (ev, idx) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	try {
@@ -454,6 +468,7 @@ $scope.openLesson = function (i) {
 	loadStars(); // doi bai -> load star tu local de set icon on/off
 	$scope.lessonPicker.q = ($scope.lesson && $scope.lesson.title) || '';
 	$scope.showScript = false;
+	$scope.starOnly = false;
 	try {
 		$scope.lessonNotes = ($scope.lesson && typeof LISTEN_NOTES !== 'undefined' && LISTEN_NOTES[$scope.lesson.id]) || '';
 	} catch (e) { $scope.lessonNotes = ''; }

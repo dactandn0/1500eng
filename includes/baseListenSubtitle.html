@@ -90,6 +90,19 @@
 			align-items: center;
 		}
 
+		.watch-audio-row {
+			display: flex;
+			align-items: center;
+			gap: .4rem;
+			flex: 1 1 100%;
+			min-width: 0;
+		}
+
+		.watch-audio-row audio {
+			flex: 1 1 auto;
+			min-width: 0;
+		}
+
 		/* cum 3 nut can phai cho thuan ngon tay phai */
 		.watch-row-btns {
 			display: flex;
@@ -173,6 +186,12 @@
 			border: 1px solid #eee5c9;
 			border-radius: 5px;
 			-webkit-overflow-scrolling: touch;
+		}
+
+		.watch-sub-empty {
+			padding: .8rem;
+			color: #8b857b;
+			font-style: italic;
 		}
 
 		.watch-subs-inner.is-bounce-top {
@@ -479,6 +498,11 @@
 			.watch-row-sticky .watch-toggle {
 				padding: .35rem .5rem;
 			}
+
+			.watch-audio-row.has-star-filter audio {
+				/* flex: 0 0 50%; */
+				width: 50%;
+			}
 		}
 	</style>
 
@@ -509,9 +533,17 @@
 					<div class="lesson-drop-item is-empty" ng-if="!filteredLessons().length">Không thấy bài nào</div>
 				</div>
 			</div>
-			<audio id="watchAudio" ng-if="lesson.type !== 'youtube' && isAudio" controls preload="metadata"
-				style="flex:1 1 100%;">
-			</audio>
+			<div class="watch-audio-row" ng-if="lesson.type !== 'youtube' && isAudio"
+				ng-class="{'has-star-filter': lesson.subs && lesson.subs.length}">
+				<audio id="watchAudio" controls preload="metadata"></audio>
+				<button type="button" class="watch-toggle watch-star-filter"
+					ng-if="lesson.subs && lesson.subs.length"
+					ng-class="{'is-on': starOnly}" ng-click="toggleStarOnly($event)"
+					ng-attr-title="{{starOnly ? 'Hiện tất cả phụ đề' : 'Chỉ hiện phụ đề đã lưu (star)'}}"
+					ng-attr-aria-pressed="{{starOnly ? 'true' : 'false'}}" aria-label="Only starred subtitles">
+					<i class="fa" ng-class="{'fa-star': starOnly, 'fa-star-o': !starOnly}" aria-hidden="true"></i>
+				</button>
+			</div>
 			<div class="watch-row-btns watch-row-btns-left">
 				<button type="button" class="watch-toggle" ng-click="stepLesson($event, -1)" title="Bai truoc" aria-label="Previous lesson">‹</button>
 				<button type="button" class="watch-toggle" ng-click="stepLesson($event, 1)" title="Bai sau" aria-label="Next lesson">›</button>
@@ -554,12 +586,15 @@
 		<div class="watch-script" ng-if="showScript && lessonNotes !== ''">{{lessonNotes}}</div>
 		<div class="watch-subs" ng-show="!showScript && lesson.subs && lesson.subs.length">
 			<div class="watch-subs-inner">
+			<div class="watch-sub-empty" ng-if="starOnly && !hasStarredSubs()">Chưa có dòng nào được đánh dấu star.</div>
+			<div class="watch-sub-wrap" ng-repeat="sub in lesson.subs track by $index">
 			<div class="watch-sub" id="wsub{{$index}}"
 				ng-class="{'is-active': $index === curIdx,
 					'is-loop-a': loopMode === 'range' && loopA === $index,
 					'is-loop-b': loopMode === 'range' && loopB === $index,
 					'is-loop-range': loopMode === 'range' && loopB >= 0 && $index >= loopStart && $index <= loopEnd}"
-				ng-repeat="sub in lesson.subs track by $index" ng-click="seekSub(sub, $event)" role="button"
+				ng-if="!starOnly || isStarred($index)"
+				ng-click="seekSub(sub, $event)" role="button"
 				tabindex="0">
 				<div class="watch-sub-top">
 					<div class="watch-sub-main">
@@ -588,6 +623,7 @@
 					</div>
 				</div>
 				<div class="watch-note" ng-class="{'open': openNoteIdx === $index}" ng-if="sub.note">{{sub.note}}</div>
+			</div>
 			</div>
 			</div>
 		</div>

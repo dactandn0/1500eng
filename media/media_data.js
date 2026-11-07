@@ -4,6 +4,7 @@ const YTB_DATA = [
 	{ title: 'Shape', url: 'https://www.youtube.com/watch?v=d1VBbJPZ9ww' },
 	{ title: 'SmallTalk', url: 'https://www.facebook.com/reel/1383894739973300' },
 	{ title: 'Chạy máy', url: 'https://www.facebook.com/reel/4452084235117857' },
+	{ title: 'Chạy máy2', url: 'https://www.facebook.com/reel/2532057850650597' },
 ];
 
 // Danh sach anh: them { title, src } vao IMG_DATA.
@@ -36,4 +37,5 @@ const IMG_DATA = [
 	{ title: 'ombre Brush', src: 'ombre_Brush.jpg' },
 	{ title: 'shape HL', src: 'shape_HL.jpg' },
 	{ title: 'shape oval almond', src: 'shape_oval_almond.jpg' },
+	{ title: 'drill destroy', src: 'drill_destroy.png' },
 ];

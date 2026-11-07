@@ -95,6 +95,7 @@ function addLessonSearchData(data, moduleLabel, route, posKey, moduleAlias) {
 addLessonSearchData(typeof LISTEN_DATA !== 'undefined' ? LISTEN_DATA : [], 'ListenSrt', '/listensrt', 'lstLesson', 'Listen with Subtitle');
 addLessonSearchData(typeof LISTEN_DATA_LPTD !== 'undefined' ? LISTEN_DATA_LPTD : [], 'LPTD', '/', 'lstLptdLesson', 'LPTD');
 addLessonSearchData(typeof LISTEN_DATA_TFL !== 'undefined' ? LISTEN_DATA_TFL : [], 'TFL', '/tflListen', 'lstTflLesson', 'TacticsForListening');
+addLessonSearchData(typeof LISTEN_DATA_AEF_5_SB !== 'undefined' ? LISTEN_DATA_AEF_5_SB : [], 'AEF 5 SB', '/aef5SBListen', 'lstAefLesson', 'AEF 5 SB');
 
 var app = angular.module("myApp", [
 	'vocaNotedApp',
@@ -120,6 +121,7 @@ var app = angular.module("myApp", [
 	'listensrtApp',
 	'tflListenApp',
 	'lptdListenApp',
+	'aefListenApp',
 	'wordCollectApp', 'quizApp', 'words4000App',
 	'modalApp', 'audioApp', 'audioLoopRadioApp',
 	'ngSanitize', 'ngRoute', 'toastr'
@@ -152,6 +154,10 @@ app.config(function($routeProvider) {
 			templateUrl: 'ebooks/TacticsForListening/tflListen.html',
 			controller: 'tflListenCtrl'
 		})
+		.when('/aef5SBListen', {
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261106-5',
+			controller: 'aefListenCtrl'
+		})
 		.when('/book4k', {
 			templateUrl: 'ebooks/words4000/words4000.html',
 			controller: 'words4000Ctrl'
@@ -165,11 +171,11 @@ app.config(function($routeProvider) {
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261106-4',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261106-5',
 			controller: 'listensrtCtrl'
 		})
 		.when('/', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261106-4',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261106-5',
 			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {

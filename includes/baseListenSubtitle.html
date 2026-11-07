@@ -518,12 +518,12 @@
 			</div>
 			<span class="ml-1 watch-now" ng-if="lesson && lesson.subs[curIdx]">▶ {{lesson.subs[curIdx].en}}</span>
 			<div class="watch-row-btns">
-				<button type="button" class="watch-toggle" ng-click="copySubs($event)"
+				<button type="button" class="watch-toggle" ng-if="lesson.subs && lesson.subs.length" ng-click="copySubs($event)"
 					ng-attr-title="{{copyLabel() === 'A+B' ? 'Copy all subtitles in A-B' : 'Copy all subtitles'}}"
 					aria-label="Copy subtitles">
 					<i class="fa fa-copy" aria-hidden="true"></i>&nbsp;{{copyLabel()}}
 				</button>
-				<button type="button" class="watch-toggle" ng-class="{'is-on': loopMode === 'range'}"
+				<button type="button" class="watch-toggle" ng-if="lesson.subs && lesson.subs.length" ng-class="{'is-on': loopMode === 'range'}"
 					ng-click="toggleRangeLoop($event)"
 					ng-attr-title="{{loopMode === 'range' ? (loopB < 0 ? 'Chọn dòng B cho đoạn lặp' : 'Tắt lặp A-B (×' + loopCount + ')') : 'Lặp đoạn A-B'}}"
 					aria-label="Loop range A-B">
@@ -535,13 +535,14 @@
 					<i class="fa fa-file-text-o" aria-hidden="true"></i>
 				</button>
 
-				<button type="button" class="watch-toggle" ng-class="{'is-on': follow}" ng-click="toggleFollow()"
+				<button type="button" class="watch-toggle" ng-if="lesson.subs && lesson.subs.length" ng-class="{'is-on': follow}" ng-click="toggleFollow()"
 					title="Auto follow" aria-label="Auto follow">
 					<i class="fa fa-magnet" aria-hidden="true"></i>
 				</button>
 
 				<button type="button"
 					class="watch-toggle"
+					ng-if="lesson.subs && lesson.subs.length"
 					ng-click="toggleTouchSpeech()"
 					title="Touch word/sentence"
 					aria-label="Touch word/sentence">
@@ -551,7 +552,7 @@
 		</div>
 
 		<div class="watch-script" ng-if="showScript && lessonNotes !== ''">{{lessonNotes}}</div>
-		<div class="watch-subs" ng-show="!showScript">
+		<div class="watch-subs" ng-show="!showScript && lesson.subs && lesson.subs.length">
 			<div class="watch-subs-inner">
 			<div class="watch-sub" id="wsub{{$index}}"
 				ng-class="{'is-active': $index === curIdx,

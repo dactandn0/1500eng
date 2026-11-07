@@ -3,7 +3,7 @@
 """
 sync_watch.py - pipeline 1 lenh cho module Watch:
   1. Quet video trong watch/media (.mp4/.mkv/.mov/.webm)
-  2. Video nao thieu .srt -> faster-whisper tao EN (VI de trong, tu dich tay)
+  2. Video nao thieu .srt -> faster-whisper tao EN (khong tao .vi.srt)
   3. Sync vao listensrt/data/lst_data_*.js theo folder media (chi viet vung AUTO-SYNC,
     giu entry tay/Youtube + title/note sua tay). listensrtData.js chi concat cac nhom.
   4. ID = ten file video (khong duoi) de de mapping.
@@ -582,10 +582,13 @@ def main():
         for vf in videos:
             base = os.path.splitext(vf)[0]
             srt_en = os.path.join(a.media_dir, base + '.srt')
-            srt_vi = os.path.join(a.media_dir, base + '.vi.srt')
-            if os.path.exists(srt_en) and os.path.exists(srt_vi) and not a.force:
-                print('✅ %s: da co EN+VI -> bo qua' % vf)
-                continue
+            segs = None
+            if os.path.exists(srt_en) and not a.force:
+                segs = load_srt(srt_en)
+                if segs:
+                    print('✅ %s: da co EN -> bo qua' % vf)
+                    continue
+                print('📄 %s: EN .srt rong/hong -> transcribe lai' % vf)
             stem_main = os.path.splitext(os.path.basename(vf))[0]
             if not a.force and old_keep_main.get(stem_main, {}).get('finished'):
                 print('🔒 %s: data_finished=1 -> bo qua transcribe + srt' % vf)
@@ -594,15 +597,6 @@ def main():
                     and old_keep_main.get(stem_main, {}).get('has_subs'):
                 print('📌 %s: khong co .srt nhung data da co subs -> giu, khong transcribe' % vf)
                 continue
-            segs = None
-            if os.path.exists(srt_en) and not a.force:
-                # Co EN roi -> dung luon, khong transcribe lai
-                segs = load_srt(srt_en)
-                if segs:
-                    print('📄 %s: dung EN .srt co san (%d dong)' % (vf, len(segs)))
-                else:
-                    print('📄 %s: EN .srt rong/hong -> transcribe lai' % vf)
-                    segs = None
             if segs is None:
                 if model is None:
                     model = get_model(a.model)
@@ -618,8 +612,6 @@ def main():
                 continue
             write_srt(srt_en, segs)
             print('   EN: %d dong' % len(segs))
-            if not os.path.exists(srt_vi):
-                write_srt(srt_vi, [(s, e, '') for s, e, _ in segs])
             print('   🎉 xong %s' % vf)
 
     splits = [parse_split(s) for s in a.split] or DEFAULT_SPLITS

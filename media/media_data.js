@@ -3,8 +3,9 @@
 const YTB_DATA = [
 	{ title: 'Shape', url: 'https://www.youtube.com/watch?v=d1VBbJPZ9ww' },
 	{ title: 'SmallTalk', url: 'https://www.facebook.com/reel/1383894739973300' },
-	{ title: 'Chạy máy', url: 'https://www.facebook.com/reel/4452084235117857' },
-	{ title: 'Chạy máy2', url: 'https://www.facebook.com/reel/2532057850650597' },
+	{ title: 'Drill_1', url: 'https://www.facebook.com/reel/4452084235117857' },
+	{ title: 'Drill_2', url: 'https://www.facebook.com/reel/2532057850650597' },
+	{ title: 'Nipper', url: 'https://www.facebook.com/reel/2323648461813683' },
 ];
 
 // Danh sach anh: them { title, src } vao IMG_DATA.

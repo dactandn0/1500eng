@@ -39,4 +39,7 @@ const IMG_DATA = [
 	{ title: 'shape HL', src: 'shape_HL.jpg' },
 	{ title: 'shape oval almond', src: 'shape_oval_almond.jpg' },
 	{ title: 'drill destroy', src: 'drill_destroy.png' },
+	{ title: 'CatDa TayThat (1)', src: 'CatDa_TayThat (1).jpg' },
+	{ title: 'CatDa TayThat (2)', src: 'CatDa_TayThat (2).jpg' },
+	{ title: 'CatDa TayThat (3)', src: 'CatDa_TayThat (3).jpg' },
 ];

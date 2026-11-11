@@ -11962,9 +11962,8 @@ const LISTEN_DATA_TFL_EXP = [
 		src: 'ebooks/TacticsForListening/data/mp3/expanding/17-24/23_2.mp3',
 		subs: [
 			{ t: 0.00, e: 7.13, en: 'Page 91, Track 33, Listening 2, 1.', vi: 'Trang 91, Track 33, Luyện nghe 2, 1.' },
-			{ t: 8.22, e: 13.17, en: 'I was looking at some dishes in a department store yesterday when I dropped and broke', vi: 'Tôi đang xem một số món ăn trong cửa hàng thời trang hôm qua khi tôi làm rơi và vỡ' },
-			{ t: 13.02, e: 13.55, en: '1.', vi: '1.' },
-			{ t: 13.92, e: 18.83, en: 'I thought for sure they\'d ask me to pay for it, but the sales clerk was nice and said', vi: 'Tôi nghĩ chắc chắn họ sẽ yêu cầu tôi trả tiền cho nó, nhưng nhân viên bán hàng đã rất tốt và nói' },
+			{ t: 8.22, e: 13.55, en: 'I was looking at some dishes in a department store yesterday when I dropped and broke one', vi: 'Tôi đang xem một số món ăn trong cửa hàng thời trang hôm qua khi tôi làm rơi và vỡ một cái' },
+			{ t: 13.92, e: 18.83, en: 'I thought for sure they\'d ask me to pay for it, but the sales clerk was nice and said', vi: 'Tôi nghĩ chắc chắn họ sẽ yêu cầu tôi trả tiền, nhưng nhân viên bán hàng đã rất tốt và nói' },
 			{ t: 18.68, e: 19.61, en: 'I didn\'t have to.', vi: 'Tôi không cần phải.' },
 			{ t: 21.40, e: 22.07, en: '2.', vi: '2.' },
 			{ t: 22.82, e: 26.85, en: 'I went out for dinner with my girlfriend last night at this Italian restaurant.', vi: 'Tối qua tôi đi ăn tối với bạn gái tại nhà hàng Ý này.' },
@@ -12136,7 +12135,12 @@ const LISTEN_DATA_TFL_EXP = [
 			{ t: 51.88, e: 57.57, en: 'a couple of years. I guess this is the effect of that global warming I keep hearing about in', vi: 'vài năm trở lại đây. Tôi đoán đây là tác động của biến đổi khí hậu mà tôi luôn nghe nói về trong' },
 			{ t: 57.42, e: 63.41, en: 'the news. That\'s why we\'ve decided to move to Chicago. There\'s plenty of snow and', vi: 'tin tức. Đó là lý do tại sao chúng tôi đã quyết định chuyển đến Chicago.Ở đó có rất nhiều tuyết và' },
 			{ t: 63.26, e: 69.47, en: 'rain up there. Three. When did the world get so crazy?', vi: 'mưa ở đó. 3. Khi nào thế giới lại trở nên điên rồ vậy?' },
-			{ t: 70.10, e: 76.11, en: 'That\'s what I\'d like to know. For years, I thought everything was fine. Now all I read', vi: 'Đó là điều tôi muốn biết. Trong nhiều năm, tôi nghĩ mọi thứ đều ổn cả. Giờ thì tất cả những gì tôi đọc' },
+			{ t: 70.10, e: 75.31, en: 'That\'s what I\'d like to know. For years, I thought everything was fine. Now all I read', vi: 'Đó là điều tôi muốn biết. Trong nhiều năm, tôi nghĩ mọi thứ đều ổn cả. Giờ thì tất cả những gì tôi đọc' },
+			{ t: 76.00, e: 80.61, en: 'about in the newspaper is countries fighting each other, dropping bombs and terrible things', vi: '' },
+			{ t: 80.60, e: 87.00, en: 'like that. You know what I did about it? I stopped reading the newspaper. Now, whenever', vi: '' },
+			{ t: 87.03, e: 92.60, en: 'I want to read something, I just pick up one of those sports magazines. No bad news', vi: '' },
+			
+			
 			{ t: 92.40, e: 99.51, en: 'in there. 4. It\'s almost impossible to get across the city', vi: 'trong đó. 4. Việc đi qua thành phố gần như là điều không thể trong vòng chưa đầy một giờ rưỡi vào giờ cao điểm. Có quá nhiều xe cộ trên đường.' },
 			{ t: 99.36, e: 104.09, en: 'in less than an hour and a half during rush hour. There are too many cars on the roads.', vi: 'trong vòng chưa đầy một giờ rưỡi vào giờ cao điểm. Có quá nhiều xe cộ trên đường.' },
 			{ t: 104.54, e: 110.21, en: 'There are only two freeways, and they just can\'t handle all the traffic. The only thing that', vi: 'Chỉ có hai con đường cao tốc, và chúng không thể xử lý được toàn bộ giao thông. Điều duy nhất di chuyển nhanh trong thành phố này là tàu điện ngầm. Đó là lý do tôi đã thuê một căn hộ ngay cạnh ga tàu điện ngầm.' },

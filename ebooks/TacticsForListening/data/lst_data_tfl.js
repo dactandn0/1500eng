@@ -12125,7 +12125,7 @@ const LISTEN_DATA_TFL_EXP = [
 		subs: [
 			{ t: 0.00, e: 4.57, en: 'Page 95. Track 38. Listening too.', vi: 'Trang 95. Track 38. Nghe cũng vậy.' },
 			{ t: 6.72, e: 12.37, en: '1. I grew up around here, and the river has always been really polluted.', vi: '1. Tôi lớn lên ở đây, và con sông luôn bị ô nhiễm rất nghiêm trọng.' },
-			{ t: 12.96, e: 17.83, en: 'Industries were dumping all sorts of chemicals and waste into the water, so the river really', vi: 'Các nhà máy đã đổ đầy loại hóa chất và chất thải vào nước, vì vậy con sông thực sự' },
+			{ t: 12.96, e: 17.83, en: 'Industries were dumping all sorts of chemicals and waste into the water, so the river really', vi: 'Các ngành CN/ lĩnh vực sản xuất/KD đã đổ đầy loại hóa chất và chất thải vào nước, vì vậy con sông thực sự' },
 			{ t: 17.68, e: 24.11, en: 'smelled bad. You wouldn\'t even think of swimming in it. Well, I decided to do something about', vi: 'hôi thối. Bạn sẽ không bao giờ nghĩ đến việc bơi trong nó. Thật vậy, tôi quyết định làm gì đó về' },
 			{ t: 23.96, e: 28.95, en: 'it. My neighbors and I wrote a letter to the mayor asking him to force these industries', vi: 'nó. Tôi và hàng xóm đã viết một lá thư gửi cho thị trưởng yêu cầu ông ấy buộc các nhà máy' },
 			{ t: 28.80, e: 33.55, en: 'to clean up the river. I really hope the government listens to us and takes action.', vi: 'dọn dẹp con sông. Tôi thực sự hy vọng chính phủ lắng nghe chúng tôi và hành động.' },
@@ -12136,11 +12136,9 @@ const LISTEN_DATA_TFL_EXP = [
 			{ t: 57.42, e: 63.41, en: 'the news. That\'s why we\'ve decided to move to Chicago. There\'s plenty of snow and', vi: 'tin tức. Đó là lý do tại sao chúng tôi đã quyết định chuyển đến Chicago.Ở đó có rất nhiều tuyết và' },
 			{ t: 63.26, e: 69.47, en: 'rain up there. Three. When did the world get so crazy?', vi: 'mưa ở đó. 3. Khi nào thế giới lại trở nên điên rồ vậy?' },
 			{ t: 70.10, e: 75.31, en: 'That\'s what I\'d like to know. For years, I thought everything was fine. Now all I read', vi: 'Đó là điều tôi muốn biết. Trong nhiều năm, tôi nghĩ mọi thứ đều ổn cả. Giờ thì tất cả những gì tôi đọc' },
-			{ t: 76.00, e: 80.61, en: 'about in the newspaper is countries fighting each other, dropping bombs and terrible things', vi: '' },
-			{ t: 80.60, e: 87.00, en: 'like that. You know what I did about it? I stopped reading the newspaper. Now, whenever', vi: '' },
-			{ t: 87.03, e: 92.60, en: 'I want to read something, I just pick up one of those sports magazines. No bad news', vi: '' },
-			
-			
+			{ t: 76.00, e: 80.61, en: 'about in the newspaper is countries fighting each other, dropping bombs and terrible things', vi: 'về trong báo chí là các nước đang chiến đấu với nhau, ném bom và những điều kinh khủng như vậy.' },
+			{ t: 80.60, e: 87.00, en: 'like that. You know what I did about it? I stopped reading the newspaper. Now, whenever', vi: 'như vậy. Bạn biết tôi đã làm gì về điều đó không? Tôi đã ngừng đọc báo. Giờ đây, bất cứ khi nào' },
+			{ t: 87.03, e: 92.60, en: 'I want to read something, I just pick up one of those sports magazines. No bad news', vi: 'tôi muốn đọc điều gì đó, tôi chỉ cần lấy một trong những tạp chí thể thao đó. Không có tin xấu' },
 			{ t: 92.40, e: 99.51, en: 'in there. 4. It\'s almost impossible to get across the city', vi: 'trong đó. 4. Việc đi qua thành phố gần như là điều không thể trong vòng chưa đầy một giờ rưỡi vào giờ cao điểm. Có quá nhiều xe cộ trên đường.' },
 			{ t: 99.36, e: 104.09, en: 'in less than an hour and a half during rush hour. There are too many cars on the roads.', vi: 'trong vòng chưa đầy một giờ rưỡi vào giờ cao điểm. Có quá nhiều xe cộ trên đường.' },
 			{ t: 104.54, e: 110.21, en: 'There are only two freeways, and they just can\'t handle all the traffic. The only thing that', vi: 'Chỉ có hai con đường cao tốc, và chúng không thể xử lý được toàn bộ giao thông. Điều duy nhất di chuyển nhanh trong thành phố này là tàu điện ngầm. Đó là lý do tôi đã thuê một căn hộ ngay cạnh ga tàu điện ngầm.' },
@@ -12152,8 +12150,8 @@ const LISTEN_DATA_TFL_EXP = [
 			{ t: 144.46, e: 150.81, en: 'instead of buying frozen prepared dinners in plastic trays and cardboard boxes, I buy fresh', vi: 'thay vì mua các bữa ăn sẵn đóng gói trong những chiếc khay nhựa và hộp giấy, tôi mua thực phẩm tươi sống.' },
 			{ t: 150.66, e: 157.37, en: 'meats and produce. I also take my own cup to the coffee shop so I don\'t have to use paper cups.', vi: 'thịt và rau củ tươi sống. Tôi cũng mang ly cá nhân của mình đến quán cà phê để không phải dùng ly giấy.' },
 			{ t: 158.36, e: 167.93, en: 'Creating less garbage is really the only solution. 6. In the future, everyone will have to live in', vi: 'Tạo ra ít rác thải hơn thực sự là giải pháp duy nhất chỉ còn lại cho chúng ta trong tương lai.' },
-			{ t: 167.78, e: 173.23, en: 'giant high-rise buildings if they want to live in cities. These new buildings might be a hundred', vi: '' },
-			{ t: 173.08, e: 179.87, en: 'stories tall or more. If cities keep getting bigger, the only way they can expand is upward.', vi: '' },
+			{ t: 167.78, e: 173.23, en: 'giant high-rise buildings if they want to live in cities. These new buildings might be a hundred', vi: 'tòa nhà chọc trời nếu họ muốn sống ở thành phố. Những tòa nhà mới này có thể cao một trăm' },
+			{ t: 173.08, e: 179.87, en: 'stories tall or more. If cities keep getting bigger, the only way they can expand is upward.', vi: 'lầu hoặc nhiều hơn. Nếu các thành phố tiếp tục lớn lên, cách duy nhất để chúng mở rộng là lên cao.' },
 			{ t: 180.36, e: 185.43, en: 'I can\'t stand crowded cities myself. That\'s why I moved to a small town in the country.', vi: 'Tôi không thể chịu được các thành phố đông đúc. Đó là lý do tôi đã chuyển đến một thị trấn nhỏ ở vùng nông thôn.' },
 		]
 	},

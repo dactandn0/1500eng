@@ -6,6 +6,8 @@ const YTB_DATA = [
 	{ title: 'Drill_1', url: 'https://www.facebook.com/reel/4452084235117857' },
 	{ title: 'Drill_2', url: 'https://www.facebook.com/reel/2532057850650597' },
 	{ title: 'Nipper', url: 'https://www.facebook.com/reel/2323648461813683' },
+	{ title: 'SquareShape', url: 'https://www.facebook.com/reel/1509325754525698' },
+	{ title: 'NhặtDa', url: 'https://www.facebook.com/reel/987666564006459' },
 ];
 
 // Danh sach anh: them { title, src } vao IMG_DATA.

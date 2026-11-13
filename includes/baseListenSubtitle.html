@@ -103,6 +103,10 @@
 			min-width: 0;
 		}
 
+		.watch-audio-row .watch-toggle {
+			flex: 0 0 auto;
+		}
+
 		/* cum 3 nut can phai cho thuan ngon tay phai */
 		.watch-row-btns {
 			display: flex;
@@ -500,7 +504,13 @@
 			}
 
 			.watch-audio-row.has-star-filter audio {
+				flex: 0 0 50%;
 				width: 50%;
+			}
+
+			.watch-audio-row .watch-subs-scroll {
+				padding-left: .45rem;
+				padding-right: .45rem;
 			}
 		}
 	</style>
@@ -541,6 +551,18 @@
 					ng-attr-title="{{starOnly ? 'Hiện tất cả phụ đề' : 'Chỉ hiện phụ đề đã lưu (star)'}}"
 					ng-attr-aria-pressed="{{starOnly ? 'true' : 'false'}}" aria-label="Only starred subtitles">
 					<i class="fa" ng-class="{'fa-star': starOnly, 'fa-star-o': !starOnly}" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="watch-toggle watch-subs-scroll"
+					ng-if="lesson.subs && lesson.subs.length"
+					ng-click="scrollSubsTop($event)"
+					title="Lên phụ đề đầu" aria-label="Scroll to first subtitle">
+					<i class="fa fa-arrow-up" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="watch-toggle watch-subs-scroll"
+					ng-if="lesson.subs && lesson.subs.length"
+					ng-click="scrollSubsBottom($event)"
+					title="Xuống phụ đề cuối" aria-label="Scroll to last subtitles">
+					<i class="fa fa-arrow-down" aria-hidden="true"></i>
 				</button>
 			</div>
 			<div class="watch-row-btns watch-row-btns-left">

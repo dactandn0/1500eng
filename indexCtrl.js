@@ -157,11 +157,11 @@ app.config(function($routeProvider) {
 			controller: 'tflListenCtrl'
 		})
 		.when('/aef5SBListen', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261109-1',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261113-1',
 			controller: 'aefListenCtrl'
 		})
 		.when('/friendsListen', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261109-1',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261113-1',
 			controller: 'friendsListenCtrl'
 		})
 		.when('/book4k', {
@@ -177,11 +177,11 @@ app.config(function($routeProvider) {
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261109-1',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261113-1',
 			controller: 'listensrtCtrl'
 		})
 		.when('/', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261109-1',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261113-1',
 			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {

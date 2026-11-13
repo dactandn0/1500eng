@@ -367,6 +367,7 @@ let pollTimer = null;
 let seekGraceUntil = 0; // bo qua timeupdate cu ngay sau khi seek (tranh highlight nhay ve dau)
 let loopSeekGraceUntil = 0; // bo qua seeking event cu khi loop tu seek
 let noteScrollGraceUntil = 0; // sau khi mo note: tam dung follow-scroll 1.5s de panel kip cuon toi note
+let manualScrollGraceUntil = 0; // sau khi bam nut scroll: tam dung follow-scroll de khong bi keo ve
 let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, chi nhan khi toi noi
 let seekSince = 0;
 let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
@@ -742,8 +743,10 @@ function replayCurAnim(idx) {
 	} catch (e) {}
 }
 // Cuon PANEL sub (chi trong div.watch-subs, khong cuon ca trang)
-// Vua mo note -> tam nghi follow-scroll 1.5s (de thay duoc note), het grace AutoFollow chay lai
-function followPausedForNote() { try { return Date.now() < noteScrollGraceUntil; } catch (e) { return false; } }
+// Vua mo note / vua bam nut scroll -> tam nghi follow-scroll, het grace AutoFollow chay lai
+function followPausedForNote() {
+	try { return Date.now() < noteScrollGraceUntil || Date.now() < manualScrollGraceUntil; } catch (e) { return false; }
+}
 // Nho vi tri sub dang nghe: 1 key duy nhat POS_KEY = '<tenLesson>|<subIdx>' (chi bai gan nhat)
 let lastSavedSub = -2;
 function saveSubPos(idx) {
@@ -765,6 +768,31 @@ function scrollPanelTo(idx) {
 		panel.scrollTop += (er.top - pr.top) - (panel.clientHeight / 2 - er.height / 2);
 	} catch (e) {}
 }
+// Nut len: dua panel ve dau danh sach phu de dang hien thi.
+$scope.scrollSubsTop = function (ev) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	manualScrollGraceUntil = Date.now() + 1800;
+	try {
+		const panels = document.querySelectorAll('.watch-subs');
+		if (!panels.length) return;
+		panels[panels.length - 1].scrollTop = 0;
+	} catch (e) {}
+};
+// Nut xuong: dua panel toi dong ke cuoi (last - 1), tinh ca khi dang loc star.
+$scope.scrollSubsBottom = function (ev) {
+	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
+	manualScrollGraceUntil = Date.now() + 1800;
+	try {
+		const subs = ($scope.lesson && $scope.lesson.subs) || [];
+		if (!subs.length) return;
+		const visible = [];
+		for (let i = 0; i < subs.length; i++) {
+			if (!$scope.starOnly || $scope.isStarred(i)) visible.push(i);
+		}
+		if (!visible.length) return;
+		scrollPanelTo(visible[Math.max(0, visible.length - 2)]);
+	} catch (e) {}
+};
 
 let watchBounceTimer = null;
 let watchBouncePanel = null;

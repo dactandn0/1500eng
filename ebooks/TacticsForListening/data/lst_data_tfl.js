@@ -12082,6 +12082,7 @@ const LISTEN_DATA_TFL_EXP = [
 		order: 372,
 		title: 'TFL Exp 24_1',
 		type: 'file',
+		highlight: "lifespan,live longer",
 		src: 'ebooks/TacticsForListening/data/mp3/expanding/17-24/24_1.mp3',
 		subs: [
 			{ t: 0.00, e: 1.45, en: 'Unit 24', vi: 'Bài 24' },

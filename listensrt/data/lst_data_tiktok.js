@@ -978,10 +978,11 @@ const LISTEN_DATA_TIKTOK = [
 		title: 'TikTok - Terminal 1',
 		type: 'file',
 		src: 'listensrt/media/tiktok/Terminal_1.mp3',
+		highlight: "on board flight, securely fastened,takeoff, carry-on luggage, overhead bins, enjoy your flight,seat backs, tray tables, upright position",
 		subs: [
 			{ t: 2.34, e: 7.53, en: 'Ladies and gentlemen, welcome on board flight VN889 to Melbourne.', vi: '' },
 			{ t: 7.88, e: 12.38, en: 'We are currently first in line for takeoff, and are expected to be in the air in approximately', vi: '' },
-			{ t: 12.68, e: 13.69, en: 'five minutes.', vi: '' },
+			{ t: 12.68, e: 13.69, en: '5 minutes.', vi: '' },
 			{ t: 14.30, e: 18.63, en: 'Please make sure your seat backs and tray tables are in their full upright position.', vi: '' },
 			{ t: 19.28, e: 23.74, en: 'Make sure your seat belt is securely fastened, and all carry-on luggage is stowed underneath', vi: '' },
 			{ t: 24.04, e: 26.65, en: 'the seat in front of you or in the overhead bins.', vi: '' },
@@ -995,9 +996,10 @@ const LISTEN_DATA_TIKTOK = [
 		title: 'TikTok - Terminal 2',
 		type: 'file',
 		src: 'listensrt/media/tiktok/Terminal_2.mp3',
+		highlight: "further, patience,flight delayed, estimated departure time, gate information, flight information screens, severe weather conditions",
 		subs: [
 			{ t: 2.22, e: 9.49, en: 'Attention passengers. Flight VN218 to Singapore has been delayed due to severe weather conditions.', vi: '' },
-			{ t: 10.20, e: 13.51, en: 'The new estimated departure time is 9.40 pm.', vi: '' },
+			{ t: 10.20, e: 13.51, en: 'The new estimated departure time is 9:40 pm.', vi: '' },
 			{ t: 14.44, e: 20.02, en: 'Passengers are advised to remain near Gate 12 and check the flight information screens for further updates.', vi: '' },
 			{ t: 20.32, e: 23.65, en: 'We apologize for the delay and thank you for your patience.', vi: '' },
 		]
@@ -1008,6 +1010,7 @@ const LISTEN_DATA_TIKTOK = [
 		title: 'TikTok - Terminal 3',
 		type: 'file',
 		src: 'listensrt/media/tiktok/Terminal_3.mp3',
+		highlight: "transfer passengers, transfer desk, onward boarding pass, departure hall, connecting flight gate, departure time",
 		subs: [
 			{ t: 0.00, e: 7.75, en: 'Ladies and gentlemen, welcome to the airport. For transfer passengers, please follow the purple directional signs to the transfer desk.', vi: '' },
 			{ t: 8.08, e: 14.03, en: 'If you have already obtained your onward boarding pass, please proceed directly to the departure hall.', vi: '' },

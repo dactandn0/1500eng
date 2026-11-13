@@ -313,6 +313,11 @@
 			cursor: pointer;
 		}
 
+		.watch-sub-en .watch-hl {
+			color: #ee02e2;
+			/* font-weight: 700; */
+		}
+
 		.watch-sub.is-active .watch-sub-en {
 			color: #5f470c;
 			font-weight: 500;
@@ -378,6 +383,30 @@
 			background: linear-gradient(135deg, #fff4c9 0%, #ffe9a2 100%);
 			border-color: #e6c96c;
 			color: #604a0e;
+		}
+
+		.watch-touch-toggle {
+			min-width: 2.7rem;
+			font-weight: 700;
+			letter-spacing: .04em;
+			transition: background .2s ease, color .2s ease, border-color .2s ease,
+				box-shadow .2s ease, transform .15s ease;
+		}
+
+		.watch-touch-toggle.is-on {
+			background: linear-gradient(135deg, #ff9f43 0%, #e67e22 100%);
+			border-color: #c9650f;
+			color: #fff;
+			box-shadow: 0 0 0 2px rgba(230, 126, 34, .18), 0 2px 8px rgba(230, 126, 34, .38);
+			transform: translateY(-1px);
+		}
+
+		.watch-touch-toggle.is-on span {
+			text-shadow: 0 1px 1px rgba(0, 0, 0, .16);
+		}
+
+		.watch-touch-toggle:active {
+			transform: translateY(0) scale(.96);
 		}
 
 		.watch-now {
@@ -594,11 +623,13 @@
 				</button>
 
 				<button type="button"
-					class="watch-toggle"
+					class="watch-toggle watch-touch-toggle"
 					ng-if="lesson.subs && lesson.subs.length"
+					ng-class="{'is-on': touchSpeech}"
 					ng-click="toggleTouchSpeech()"
 					title="Touch word/sentence"
-					aria-label="Touch word/sentence">
+					aria-label="Touch word/sentence"
+					ng-attr-aria-pressed="{{touchSpeech ? 'true' : 'false'}}">
 					<span ng-bind="touchSpeech ? '[W]' : '[S]'"></span>
 				</button>
 			</div>

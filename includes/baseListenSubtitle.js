@@ -129,16 +129,90 @@ function escapeHtmlText(s) {
 		.replace(/"/g, '&quot;')
 		.replace(/'/g, '&#39;');
 }
-function wrapTouchWords(text) {
+let highlightRawCache = null;
+let highlightSeqCache = null;
+function wordTokens(text) {
 	const s = String(text || '');
 	const re = /[A-Za-z0-9\u00C0-\u024F]+(?:['’][A-Za-z0-9\u00C0-\u024F]+)*/g;
-	let out = '';
-	let last = 0;
+	const out = [];
 	let m;
 	while ((m = re.exec(s))) {
-		out += escapeHtmlText(s.slice(last, m.index));
-		out += '<kkk ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(m[0]) + '</kkk>';
-		last = m.index + m[0].length;
+		out.push({ text: m[0], lower: m[0].toLowerCase(), start: m.index, end: m.index + m[0].length });
+	}
+	return out;
+}
+function getLessonHighlightSeqs() {
+	const raw = ($scope.lesson && $scope.lesson.highlight);
+	const key = Array.isArray(raw) ? raw.join(',') : String(raw == null ? '' : raw);
+	if (key === highlightRawCache) return highlightSeqCache;
+	highlightRawCache = key;
+	const seqs = [];
+	key.split(',').forEach(function (part) {
+		const tokens = wordTokens(part).map(function (t) { return t.lower; });
+		if (tokens.length) seqs.push(tokens);
+	});
+	highlightSeqCache = seqs;
+	return seqs;
+}
+function markHighlightTokens(tokens, seqs) {
+	const marks = new Array(tokens.length);
+	for (let i = 0; i < marks.length; i++) marks[i] = false;
+	if (!seqs || !seqs.length) return marks;
+	for (let s = 0; s < seqs.length; s++) {
+		const seq = seqs[s];
+		for (let i = 0; i + seq.length <= tokens.length; i++) {
+			let ok = true;
+			for (let j = 0; j < seq.length; j++) {
+				if (tokens[i + j].lower !== seq[j]) { ok = false; break; }
+			}
+			if (ok) {
+				for (let j = 0; j < seq.length; j++) marks[i + j] = true;
+			}
+		}
+	}
+	return marks;
+}
+function highlightHtml(text, seqs) {
+	const s = String(text || '');
+	if (!seqs || !seqs.length) return escapeHtmlText(s);
+	const tokens = wordTokens(s);
+	const marks = markHighlightTokens(tokens, seqs);
+	if (marks.indexOf(true) < 0) return escapeHtmlText(s);
+	let out = '';
+	let last = 0;
+	let i = 0;
+	while (i < tokens.length) {
+		const t = tokens[i];
+		out += escapeHtmlText(s.slice(last, t.start));
+		if (!marks[i]) {
+			out += escapeHtmlText(t.text);
+			last = t.end;
+			i++;
+			continue;
+		}
+		let j = i;
+		while (j + 1 < tokens.length && marks[j + 1]) j++;
+		const start = tokens[i].start;
+		const end = tokens[j].end;
+		out += '<span class="watch-hl">' + escapeHtmlText(s.slice(start, end)) + '</span>';
+		last = end;
+		i = j + 1;
+	}
+	out += escapeHtmlText(s.slice(last));
+	return out;
+}
+function wrapTouchWords(text, seqs) {
+	const s = String(text || '');
+	const tokens = wordTokens(s);
+	const marks = markHighlightTokens(tokens, seqs);
+	let out = '';
+	let last = 0;
+	for (let i = 0; i < tokens.length; i++) {
+		const t = tokens[i];
+		out += escapeHtmlText(s.slice(last, t.start));
+		const cls = marks[i] ? ' class="watch-hl"' : '';
+		out += '<kkk' + cls + ' ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</kkk>';
+		last = t.end;
 	}
 	out += escapeHtmlText(s.slice(last));
 	return out;
@@ -1079,9 +1153,20 @@ $scope.seekSub = function (sub, ev, autoplay) {
 
 $scope.subtitleDisplayHtml = function (sub) {
 	if (!sub) return '';
+	const hl = getLessonHighlightSeqs();
 	if (sub.enSafe === undefined) sub.enSafe = escapeHtmlText(sub.en);
-	if (!$scope.touchSpeech) return sub.enSafe;
-	if (sub.enTouch === undefined) sub.enTouch = wrapTouchWords(sub.en);
+	if (!$scope.touchSpeech) {
+		if (!hl.length) return sub.enSafe;
+		if (sub.enSafeHlKey !== highlightRawCache) {
+			sub.enSafeHl = highlightHtml(sub.en, hl);
+			sub.enSafeHlKey = highlightRawCache;
+		}
+		return sub.enSafeHl;
+	}
+	if (sub.enTouch === undefined || sub.enTouchHlKey !== highlightRawCache) {
+		sub.enTouch = wrapTouchWords(sub.en, hl);
+		sub.enTouchHlKey = highlightRawCache;
+	}
 	return sub.enTouch;
 };
 $scope.subtitleWordSpeech = function (ev, sub) {

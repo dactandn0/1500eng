@@ -52,6 +52,10 @@ def js_str(s):
     return "'" + s.replace('\\', '\\\\').replace("'", "\\'") + "'"
 
 
+def normalize_highlight(s):
+    return ','.join(w.strip() for w in str(s or '').split(',') if w.strip())
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('en_srt', help='.srt tieng Anh')
@@ -62,6 +66,7 @@ def main():
     ap.add_argument('--youtube', default='', help='videoId YouTube (thay cho --src)')
     ap.add_argument('--order', type=int, default=None, help='so thu tu (nho len truoc)')
     ap.add_argument('--bignored', type=int, default=None, help='1 = an khoi dropbox')
+    ap.add_argument('--highlight', default='', help='tu can to mau, cach nhau bang dau phay (VD: hello,goodbye)')
     a = ap.parse_args()
 
     en = parse_srt(a.en_srt)
@@ -82,6 +87,7 @@ def main():
     if a.order is not None:
         print('\t\torder: %d,' % a.order)
     print('\t\ttitle: %s,' % js_str(a.title or a.id))
+    print('\t\thighlight: %s,' % js_str(normalize_highlight(a.highlight)))
     print('\t\ttype: %s,' % js_str(typ))
     print('\t\tsrc: %s,' % js_str(src))
     print('\t\tsubs: [')

@@ -11,7 +11,6 @@
 //   lst_data_voa.js   -> LISTEN_DATA_VOA   (VOA + bai le goc media/)
 //   lst_data_sela.js  -> LISTEN_DATA_SELA  (SpeakEnglishLikeAnAmerican/)
 //   lst_data_music.js -> LISTEN_DATA_MUSIC (music/)
-//   lst_data_tiktok.js -> LISTEN_DATA_TIKTOK (tiktok/)
 //   lst_data_enc.js -> LISTEN_DATA_ENC (EnglishConversation_Premium_2nd/)
 //   lst_data_ssv5.js -> LISTEN_DATA_SSV5 (Speaking_Sample_Vol5/ 1.1-1.10)
 // Thu tu concat = thu tu hien trong app (sort theo order, thieu order giu nguyen).
@@ -20,7 +19,8 @@
 
 const LISTEN_GROUP_NAMES = { VOA: 'VOA', SELA: 'SELAA', MUSIC: 'Music', TIKTOK: 'TikTok', ENC: 'ENC', SSV5: 'SSV5' };
 
-const LISTEN_GROUPS_ON = { VOA: true, SELAA: true, MUSIC: true, TIKTOK: true, ENC: true, SSV5: true };
+// TikTok da tach sang module rieng TiktokListen -> khong concat vao ListenSrt.
+const LISTEN_GROUPS_ON = { VOA: true, SELAA: true, MUSIC: true, TIKTOK: false, ENC: true, SSV5: true };
 
 const LISTEN_DATA = []
 	.concat(LISTEN_GROUPS_ON.VOA && typeof LISTEN_DATA_VOA !== 'undefined' ? LISTEN_DATA_VOA : [])

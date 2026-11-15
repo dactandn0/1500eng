@@ -96,6 +96,7 @@ addLessonSearchData(typeof LISTEN_DATA !== 'undefined' ? LISTEN_DATA : [], 'List
 addLessonSearchData(typeof LISTEN_DATA_LPTD !== 'undefined' ? LISTEN_DATA_LPTD : [], 'LPTD', '/', 'lstLptdLesson', 'LPTD');
 addLessonSearchData(typeof LISTEN_DATA_TFL !== 'undefined' ? LISTEN_DATA_TFL : [], 'TFL', '/tflListen', 'lstTflLesson', 'TacticsForListening');
 addLessonSearchData(typeof LISTEN_DATA_AEF_5_SB !== 'undefined' ? LISTEN_DATA_AEF_5_SB : [], 'AEF 5 SB', '/aef5SBListen', 'lstAefLesson', 'AEF 5 SB');
+addLessonSearchData(typeof LISTEN_DATA_AEF_5_WB !== 'undefined' ? LISTEN_DATA_AEF_5_WB : [], 'AEF 5 WB', '/aef5WBListen', 'lstAefWbLesson', 'AEF 5 WB');
 addLessonSearchData(typeof LISTEN_DATA_FRIENDS !== 'undefined' ? LISTEN_DATA_FRIENDS : [], 'Friends', '/friendsListen', 'lstFriendsLesson', 'Friends Listening');
 addLessonSearchData(typeof LISTEN_DATA_TIKTOK !== 'undefined' ? LISTEN_DATA_TIKTOK : [], 'TikTok', '/tiktokListen', 'lstTiktokLesson', 'TikTok Listening');
 
@@ -124,6 +125,7 @@ var app = angular.module("myApp", [
 	'tflListenApp',
 	'lptdListenApp',
 	'aefListenApp',
+	'aefWbListenApp',
 	'friendsListenApp',
 	'tiktokListenApp',
 	'wordCollectApp', 'quizApp', 'words4000App',
@@ -161,6 +163,10 @@ app.config(function($routeProvider) {
 		.when('/aef5SBListen', {
 			templateUrl: 'includes/baseListenSubtitle.html?v=20261113-3',
 			controller: 'aefListenCtrl'
+		})
+		.when('/aef5WBListen', {
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261113-3',
+			controller: 'aefWbListenCtrl'
 		})
 		.when('/friendsListen', {
 			templateUrl: 'includes/baseListenSubtitle.html?v=20261113-3',

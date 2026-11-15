@@ -142,12 +142,15 @@ function wordTokens(text) {
 	return out;
 }
 function getLessonHighlightSeqs() {
-	const raw = ($scope.lesson && $scope.lesson.highlight);
-	const key = Array.isArray(raw) ? raw.join(',') : String(raw == null ? '' : raw);
+	const raw = (typeof getUniqueHighlights === 'function')
+		? getUniqueHighlights()
+		: ((typeof lst_highlight !== 'undefined') ? lst_highlight : '');
+	const parts = Array.isArray(raw) ? raw : String(raw == null ? '' : raw).split(/[\n,]+/);
+	const key = parts.join('\u0001');
 	if (key === highlightRawCache) return highlightSeqCache;
 	highlightRawCache = key;
 	const seqs = [];
-	key.split(',').forEach(function (part) {
+	parts.forEach(function (part) {
 		const tokens = wordTokens(part).map(function (t) { return t.lower; });
 		if (tokens.length) seqs.push(tokens);
 	});

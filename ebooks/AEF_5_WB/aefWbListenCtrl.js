@@ -7,10 +7,10 @@ app.controller("aefWbListenCtrl", function($scope, $rootScope, baseListenSubtitl
 		groupLabel: 'AEF 5 WB',
 		dbgName: '__aefWbDbg',
 		header: {
-			eyebrow: 'LISTENING LAB',
-			title: 'American English File v3 WB 5',
-			desc: 'American English File 5 WB - 10 units.',
-			status: 'AEF 5 WB - 10 Units'
+			eyebrow: 'American English File v3',
+			title: 'WorkBook 5',
+			desc: '10 units.',
+			status: '10 Units'
 		}
 	});
 });

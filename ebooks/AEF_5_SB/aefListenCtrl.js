@@ -7,10 +7,10 @@ app.controller("aefListenCtrl", function($scope, $rootScope, baseListenSubtitle)
 		groupLabel: 'AEF 5 SB',
 		dbgName: '__aefDbg',
 		header: {
-			eyebrow: 'LISTENING LAB',
-			title: 'American English File v3 Student Book 5',
-			desc: 'American English File 5 Student Book audio - 10 units.',
-			status: 'AEF 5 SB - 10 Units'
+			eyebrow: 'American English File v3',
+			title: 'Student Book 5',
+			desc: '10 units.',
+			status: '10 Units'
 		}
 	});
 });

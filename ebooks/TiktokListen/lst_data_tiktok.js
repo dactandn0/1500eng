@@ -872,7 +872,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_2',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_2',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_2.mp3',
@@ -898,7 +897,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_3',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_3',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_3.mp3',
@@ -915,7 +913,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_4',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_4',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_4.mp3',
@@ -926,7 +923,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_5',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_5',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_5.mp3',
@@ -959,7 +955,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_6',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_6',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_6.mp3',
@@ -1005,7 +1000,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_7',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_7',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_7.mp3',
@@ -1020,7 +1014,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_8',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_8',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_8.mp3',
@@ -1036,7 +1029,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_9',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_9',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_9.mp3',
@@ -1058,7 +1050,6 @@ const LISTEN_DATA_TIKTOK = [
 	{
 		id: 'tiktok_KhanhVy_10',
 		bIgnored: 0,
-		highlight: '',
 		title: 'KhanhVy_10',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/KhanhVy_10.mp3',
@@ -1186,7 +1177,6 @@ const LISTEN_DATA_TIKTOK = [
 		title: 'Terminal 1',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/Terminal_1.mp3',
-		highlight: "on board flight, securely fastened,takeoff, carry-on luggage, overhead bins, enjoy your flight,seat backs, tray tables, upright position",
 		subs: [
 			{ t: 2.34, e: 7.53, en: 'Ladies and gentlemen, welcome on board flight VN889 to Melbourne.', vi: '' },
 			{ t: 7.88, e: 12.38, en: 'We are currently first in line for takeoff, and are expected to be in the air in approximately', vi: '' },
@@ -1204,7 +1194,6 @@ const LISTEN_DATA_TIKTOK = [
 		title: 'Terminal 2',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/Terminal_2.mp3',
-		highlight: "further, patience,flight delayed, estimated departure time, gate information, flight information screens, severe weather conditions",
 		subs: [
 			{ t: 2.22, e: 9.49, en: 'Attention passengers. Flight VN218 to Singapore has been delayed due to severe weather conditions.', vi: '' },
 			{ t: 10.20, e: 13.51, en: 'The new estimated departure time is 9:40 pm.', vi: '' },
@@ -1218,7 +1207,6 @@ const LISTEN_DATA_TIKTOK = [
 		title: 'Terminal 3',
 		type: 'file',
 		src: 'ebooks/TiktokListen/data/Terminal_3.mp3',
-		highlight: "transfer passengers, transfer desk, onward boarding pass, departure hall, connecting flight gate, departure time",
 		subs: [
 			{ t: 0.00, e: 7.75, en: 'Ladies and gentlemen, welcome to the airport. For transfer passengers, please follow the purple directional signs to the transfer desk.', vi: '' },
 			{ t: 8.08, e: 14.03, en: 'If you have already obtained your onward boarding pass, please proceed directly to the departure hall.', vi: '' },

@@ -11847,7 +11847,6 @@ const LISTEN_DATA_TFL_EXP = [
 		order: 364,
 		title: 'TFL Exp 22_3',
 		type: 'file',
-		highlight: "Egyptians,fermentation,carbon dioxide,scientific,cultures,vitamins,protein,substance,bacteria,reacted",
 		src: 'ebooks/TacticsForListening/data/mp3/expanding/17-24/22_3.mp3',
 		subs: [
 			{ t: 0.00, e: 4.61, en: 'Page 88. Track 29. Listening 3.', vi: 'Trang 88. Track 29. Luyện nghe 3.' },
@@ -11877,7 +11876,6 @@ const LISTEN_DATA_TFL_EXP = [
 		order: 365,
 		title: 'TFL Exp 22_4',
 		type: 'file',
-		highlight: "vitamins,vegetables,carrots,cooking,pizza,a lot of,more,pieces",
 		src: 'ebooks/TacticsForListening/data/mp3/expanding/17-24/22_4.mp3',
 		subs: [
 			{ t: 0.00, e: 4.03, en: 'Page 89. Track 30. Pronunciation.', vi: 'Trang 89. Track 30. Phát âm.' },
@@ -12084,7 +12082,6 @@ const LISTEN_DATA_TFL_EXP = [
 		order: 372,
 		title: 'TFL Exp 24_1',
 		type: 'file',
-		highlight: "lifespan,live longer",
 		src: 'ebooks/TacticsForListening/data/mp3/expanding/17-24/24_1.mp3',
 		subs: [
 			{ t: 0.00, e: 1.45, en: 'Unit 24', vi: 'Bài 24' },
@@ -12124,7 +12121,6 @@ const LISTEN_DATA_TFL_EXP = [
 		order: 373,
 		title: 'TFL Exp 24_2',
 		type: 'file',
-		highlight: "polluted,industries,chemicals,mayor,government,action,smelled bad,think of doing,clean up,takes action,fluffy,couple of years,effect,global warming,Chicago,world get so crazy,for years,fight each other,drop bombs,terrible things, pick up,get across,less than,subway,take an apartment,right next to,garbage,landfills,buried,giant,room to,create less garbage,packaged foods,frozen,prepared dinners,plastic trays,cardboard boxes,fresh meats,produce,instead of,bring my own cup,coffee shop,paper cups,solution,in the future,high-rise buildings,stories tall,expand upward,can't stand,crowded,small town,in the country",
 		src: 'ebooks/TacticsForListening/data/mp3/expanding/17-24/24_2.mp3',
 		subs: [
 			{ t: 0.00, e: 4.57, en: 'Page 95. Track 38. Listening too.', vi: 'Trang 95. Track 38. Nghe cũng vậy.' },

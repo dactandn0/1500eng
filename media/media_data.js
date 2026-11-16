@@ -21,9 +21,7 @@ const IMG_DATA = [
 	{ title: 'SonGel error 1', src: 'SonGel_error_1.jpg' },
 	{ title: 'TG Full Color', src: 'TG_Full_Color.jpg' },
 	{ title: 'TG Full NgocTrai', src: 'TG_Full_NgocTrai.jpg' },
-	{ title: 'TG Raised Chrome', src: 'TG_Raised_Chrome.jpg' },
 	{ title: 'TG Sample', src: 'TG_Sample.jpg' },
-	{ title: 'TG Full Gel GS', src: 'TG_Full_Gel-GS.jpg' },
 	{ title: 'ombre Sponge theory', src: 'ombre_Sponge_theory.jpg' },
 	{ title: 'hoadon2', src: 'hoadon2.jpg' },
 	{ title: 'hoadon3', src: 'hoadon3.jpg' },
@@ -45,4 +43,6 @@ const IMG_DATA = [
 	{ title: 'CatDa TayThat (1)', src: 'CatDa_TayThat (1).jpg' },
 	{ title: 'CatDa TayThat (2)', src: 'CatDa_TayThat (2).jpg' },
 	{ title: 'CatDa TayThat (3)', src: 'CatDa_TayThat (3).jpg' },
+	{ title: 'TG GS Raised', src: 'TG_GS_Raised.jpg' },
+	{ title: 'TG GS Sink', src: 'TG_GS_Sink.jpg' },
 ];

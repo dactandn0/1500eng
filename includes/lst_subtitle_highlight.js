@@ -61,7 +61,9 @@ expand
 upward
 on-word
 can't stand
-on board flight
+beverage
+on board 
+flight
 securely 
 fastened
 attendant
@@ -69,14 +71,12 @@ takeoff
 technology
 carry-on luggage
 overhead bins
-enjoy your flight
 seat backs
 tray tables
 of the most
 upright position
 further
 patience
-flight
 estimated departure time
 flight information screens
 severe weather conditions

@@ -385,6 +385,17 @@
 			color: #f51c1c;
 		}
 
+		.watch-doc-btn {
+			display: inline-flex;
+			align-items: center;
+			gap: .22rem;
+		}
+
+		.watch-doc-btn .fa-file-word-o {
+			font-size: .85rem;
+			color: #2b579a;
+		}
+
 		.watch-touch-toggle {
 			min-width: 2.7rem;
 			font-weight: 700;
@@ -592,6 +603,12 @@
 					ng-click="scrollSubsBottom($event)"
 					title="Xuống phụ đề cuối" aria-label="Scroll to last subtitles">
 					<i class="fa fa-arrow-down" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="watch-toggle watch-doc-btn"
+					ng-if="lesson.subs && lesson.subs.length"
+					ng-click="exportLessonDoc($event)"
+					title="Tải bài học (Word)" aria-label="Download lesson Word">
+					<i class="fa fa-file-word-o" aria-hidden="true"></i>
 				</button>
 			</div>
 			<div class="watch-row-btns watch-row-btns-left">

@@ -44,8 +44,6 @@ landfills
 buried
 create less garbage
 packaged foods
-frozen
-prepared dinners
 plastic trays
 cardboard boxes
 fresh meats
@@ -57,7 +55,6 @@ paper cups
 in the future
 high-rise buildings
 stories tall
-expand 
 upward
 on-word
 can't stand
@@ -77,10 +74,7 @@ of the most
 upright position
 further
 patience
-estimated departure time
-flight information screens
-severe weather conditions
-transfer
+severe
 passenger
 onward boarding pass
 connecting flight gate

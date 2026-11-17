@@ -1234,6 +1234,49 @@ $scope.fmtTime = function (s) {
 	return m + ':' + String(s % 60).padStart(2, '0');
 };
 
+function escapeDocHtml(s) {
+	return String(s == null ? '' : s)
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;');
+}
+
+$scope.exportLessonDoc = function (ev) {
+	if (ev) {
+		try { ev.preventDefault(); } catch (e) {}
+		try { ev.stopPropagation(); } catch (e2) {}
+	}
+	const lesson = $scope.lesson;
+	if (!lesson) return;
+	const title = lesson.title || 'lesson';
+	const rows = (lesson.subs || []).map(function (sub) {
+		const en = escapeDocHtml(sub && sub.en);
+		const vi = escapeDocHtml(sub && sub.vi);
+		return '<p>' + en + (vi ? '<br><i>' + vi + '</i>' : '') + '</p>';
+	}).join('');
+	const prev = document.getElementById('content-to-word');
+	if (prev) prev.id = 'content-to-word-prev';
+	const temp = document.createElement('div');
+	temp.id = 'content-to-word';
+	temp.setAttribute('title', title);
+	temp.style.display = 'none';
+	temp.innerHTML = rows || '<p></p>';
+	document.body.appendChild(temp);
+	const wasVoca = $rootScope.bVocaOfEbook;
+	$rootScope.bVocaOfEbook = false;
+	try {
+		if (typeof $scope.Export2Doc === 'function') $scope.Export2Doc();
+		else {
+			try { toastr.error('Khong tim thay ham Export2Doc'); } catch (e) {}
+		}
+	} finally {
+		$rootScope.bVocaOfEbook = wasVoca;
+		if (temp.parentNode) temp.parentNode.removeChild(temp);
+		if (prev) prev.id = 'content-to-word';
+	}
+};
+
 // Thanh watch-row: cuon xuong qua 80px -> dock day man hinh (opa .7 qua CSS),
 // ve dau trang -> ve cho cu (opa 1)
 function updateRowDock() {

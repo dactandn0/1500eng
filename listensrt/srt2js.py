@@ -10,6 +10,9 @@ Dung:
 
     -> in ra khoi JS, copy paste vao mang LISTEN_DATA trong listensrt/listensrtData.js
        (video mp4 thi copy file vao listensrt/media/).
+
+Cue chi co so thu tu (VD "1.") duoc gop vao cue ke tiep: t lay tu cue so,
+e lay tu cue ke tiep.
 """
 import argparse
 import re
@@ -22,6 +25,28 @@ def parse_time(s):
         raise ValueError('bad timestamp: %r' % s)
     h, mi, se, ms = map(int, m.groups())
     return h * 3600 + mi * 60 + se + ms / 1000.0
+
+
+NUMERIC_LABEL_RE = re.compile(r'^\d+\.?$')
+
+
+def merge_numbered_cues(cues):
+    # Cue chi co so thu tu (VD "1.") -> gop vao cue ke tiep, lay t cua cue so
+    # va e cua cue ke tiep. Cue so dung truoc cue so khac / cue cuoi giu nguyen.
+    out = []
+    i = 0
+    while i < len(cues):
+        s, e, text = cues[i]
+        if (NUMERIC_LABEL_RE.match(text) and i + 1 < len(cues)
+                and not NUMERIC_LABEL_RE.match(cues[i + 1][2])):
+            ns, ne, next_text = cues[i + 1]
+            label = text if text.endswith('.') else text + '.'
+            out.append((s, ne, label + ' ' + next_text))
+            i += 2
+            continue
+        out.append((s, e, text))
+        i += 1
+    return out
 
 
 def parse_srt(path):
@@ -45,7 +70,7 @@ def parse_srt(path):
         if not text:
             continue
         out.append((parse_time(start_s), parse_time(end_s), text))
-    return out
+    return merge_numbered_cues(out)
 
 
 def js_str(s):

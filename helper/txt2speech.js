@@ -6,7 +6,12 @@ let gLastText = '';
 
 // Co BUSY: dang phat -> Text2SpeechIsBusy() === true.
 let ttsBusy = false;
-function ttsSetBusy(v) { ttsBusy = !!v; }
+let ttsMixMedia = false;
+let ttsMixMediaPending = false;
+function ttsSetBusy(v) {
+	ttsBusy = !!v;
+	if (!ttsBusy) ttsMixMedia = false;
+}
 function Text2SpeechIsBusy() {
 	if (ttsBusy) return true;
 	try {
@@ -250,11 +255,7 @@ function ttsEnsureCtx() {
 	} catch (e) {}
 	return ttsCtx;
 }
-try {
-	['pointerdown', 'touchend', 'click', 'keydown'].forEach(function (ev) {
-		document.addEventListener(ev, ttsEnsureCtx, { passive: true });
-	});
-} catch (e) {}
+
 const EDGE_TRUSTED_TOKEN = '6A5AA1D4EAFF4E9FB37E23D68491D6F4';
 const EDGE_GEC_VERSION = '1-143.0.3650.75';
 
@@ -461,6 +462,7 @@ function edgePlayBlob(parts, mySeq, done, tag) {
 			edgeDecodePlay(cat.buffer, ok);
 		} catch (e) { ok(false); }
 	};
+	if (ttsMixMedia) { webFallback(); return; }
 	try {
 		const blob = new Blob(parts, { type: 'audio/mpeg' });
 		revokeEdgeUrl();
@@ -536,6 +538,11 @@ function edgeDecodePlay(ab, done) {
 			catch (e2) { ok(false); }
 		}
 	} catch (e) { ok(false); }
+}
+// W mode: uu tien WebAudio de TTS mix cung audio subtitle tren iOS.
+function Text2SpeechMixMedia(word, force) {
+	ttsMixMediaPending = true;
+	try { Text2Speech(word, force); } catch (e) { ttsMixMediaPending = false; ttsMixMedia = false; }
 }
 function blobToArrayBuffer(blob) {
 	return new Promise(function (resolve, reject) {
@@ -864,8 +871,13 @@ function elSpeak(text, mySeq) {
 // =====================================================
 function Text2Speech(word, force) {
 	const text = Text2SpeechClean(word);
-	if (!text) return;
-	try { ttsEnsureCtx(); } catch (e) {} // iOS: mo khoa audio ngay trong gesture
+	const mixMedia = ttsMixMediaPending;
+	ttsMixMediaPending = false;
+	if (!text) { ttsMixMedia = false; return; }
+	const source = Text2SpeechSource();
+	if (source === 'edge' || source === 'el') {
+		try { ttsEnsureCtx(); } catch (e) {}
+	}
 
 	// Click lai cung 1 cau dang doc -> dung (giu hanh vi cu).
 	// force=true (nut loa Quiz): bam lai la replay tu dau, khong toggle-stop.
@@ -880,10 +892,11 @@ function Text2Speech(word, force) {
 		}
 	}
 	Text2SpeechStop();
+	ttsMixMedia = mixMedia;
 	gLastText = text;
 	ttsSetBusy(true); // dung co ngay tu luc bam -> click spam ke tiep bi chan
 
-	if (Text2SpeechSource() === 'edge') {
+	if (source === 'edge') {
 		if (Date.now() < EDGE_DOWN_UNTIL) {
 			Text2SpeechBrowser(text, force);
 			return;
@@ -907,7 +920,7 @@ function Text2Speech(word, force) {
 		});
 		return;
 	}
-	if (Text2SpeechSource() === 'el') {
+	if (source === 'el') {
 		if (!elKey()) {
 			try { window.__lastTtsEngine = 'browser (chua nhap key)'; } catch (e) {}
 			try { console.warn('[TTS] Chua nhap ElevenLabs key (Setting). Dung browser tam.'); } catch (e2) {}

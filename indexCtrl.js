@@ -603,7 +603,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS) {
+		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS, MixMedia) {
 			navigator.clipboard.writeText(touchedWord);
 			const result = getVocaFromDB(touchedWord)
 			// luon goi GOOGLE TRANS API + ghep voi dict trong data (neu co)
@@ -626,7 +626,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				}
 			});
 			// PlayTTS default true; false -> chi show VI, khong phat TTS
-			if (PlayTTS !== false) Text2Speech(touchedWord);
+			if (PlayTTS !== false) {
+				if (MixMedia && typeof Text2SpeechMixMedia === 'function') Text2SpeechMixMedia(touchedWord);
+				else Text2Speech(touchedWord);
+			}
 		}
 
 		ngClickSpeechShowToastUseNode = function(pNode) {
@@ -860,14 +863,14 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			const preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
 			const postHtml = "</body></html>";
 
-			let html = ''
-			let _DOM = document.getElementById('VocaOfEbook')
-			let title = 'voca_of_ebook'
+			let html = '';
+			let _DOM = document.getElementById('VocaOfEbook');
+			let title = 'voca_of_ebook';
 			if (!$rootScope.bVocaOfEbook) {
-				_DOM = document.getElementById('content-to-word')
-				title = _DOM.getAttribute("title");
+				_DOM = document.getElementById('content-to-word');
+				if (!_DOM) return;
+				title = _DOM.getAttribute("title") || 'lesson';
 			}
-
 
 			html = title + '<hr>' + _DOM.innerHTML.replaceAll('[X]', '').replaceAll('[Ex]', '');
 			html = preHtml + html + postHtml;
@@ -875,29 +878,43 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			const blob = new Blob(['\ufeff', html], {
 				type: 'application/msword'
 			});
-			const url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+			let filename = String(title).replace(/[\\/:*?"<>|]+/g, '_').trim();
+			if (!filename) filename = 'lesson';
+			filename += '.doc';
 
-			// Specify file name
-			// let path = $location.path().replace('/', '')
-			const filename = title + '.doc'
-
-			// Create download link element
-			const downloadLink = document.createElement("a");
-
-			document.body.appendChild(downloadLink);
-
-			if (navigator.msSaveOrOpenBlob) {
-				navigator.msSaveOrOpenBlob(blob, filename);
-			} else {
-				// Create a link to the file
+			const downloadBlob = function() {
+				if (navigator.msSaveOrOpenBlob) {
+					navigator.msSaveOrOpenBlob(blob, filename);
+					return;
+				}
+				const url = URL.createObjectURL(blob);
+				const downloadLink = document.createElement("a");
 				downloadLink.href = url;
-				// Setting the file name
 				downloadLink.download = filename;
-				//triggering the function
+				downloadLink.style.display = 'none';
+				document.body.appendChild(downloadLink);
 				downloadLink.click();
-			}
+				setTimeout(function() {
+					if (downloadLink.parentNode) downloadLink.parentNode.removeChild(downloadLink);
+					URL.revokeObjectURL(url);
+				}, 10000);
+			};
 
-			document.body.removeChild(downloadLink);
+			const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+				(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+			if (isIOS && typeof File !== 'undefined' && navigator.share && navigator.canShare) {
+				try {
+					const file = new File([blob], filename, { type: 'application/msword' });
+					if (navigator.canShare({ files: [file] })) {
+						navigator.share({ files: [file], title: title }).catch(function(err) {
+							if (err && err.name === 'AbortError') return;
+							downloadBlob();
+						});
+						return;
+					}
+				} catch (e) {}
+			}
+			downloadBlob();
 		}
 
 	}

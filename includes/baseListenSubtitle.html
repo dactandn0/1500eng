@@ -420,6 +420,18 @@
 			transform: translateY(0) scale(.96);
 		}
 
+		.watch-touch-toggle.is-shake {
+			animation: watchTouchShake .32s ease;
+		}
+
+		@keyframes watchTouchShake {
+			0%, 100% { transform: translateY(-1px) translateX(0) rotate(0); }
+			20% { transform: translateY(-1px) translateX(-2px) rotate(-3deg); }
+			40% { transform: translateY(-1px) translateX(2px) rotate(3deg); }
+			60% { transform: translateY(-1px) translateX(-1.5px) rotate(-2deg); }
+			80% { transform: translateY(-1px) translateX(1.5px) rotate(2deg); }
+		}
+
 		.watch-now {
 			flex: 1;
 			min-width: 0;
@@ -467,6 +479,29 @@
 			background: #e7f7ee !important;
 			border-color: #bfe6cf !important;
 			color: #1e7e46 !important;
+		}
+
+		.watch-loop-btn {
+			position: relative;
+		}
+
+		.watch-loop-count {
+			position: absolute;
+			bottom: -.6rem;
+			left: -.6rem;
+			min-width: .95rem;
+			height: .95rem;
+			padding: 0 .18rem;
+			border-radius: 999px;
+			background: #f51c1c;
+			color: #fff;
+			font-size: .55rem;
+			font-weight: 700;
+			line-height: .95rem;
+			text-align: center;
+			box-sizing: border-box;
+			pointer-events: none;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, .18);
 		}
 
 		.star-btn.is-on {
@@ -677,11 +712,12 @@
 						</div>
 					</div>
 					<div class="watch-sub-actions">
-						<button type="button" class="quiz-speak" ng-class="{'is-on': loopIdx === $index}"
+						<button type="button" class="quiz-speak watch-loop-btn" ng-class="{'is-on': loopMode === 'line' && loopIdx === $index}"
 							ng-click="toggleLoop($event, $index)"
-							ng-attr-title="{{loopIdx === $index ? 'Tắt lặp (×' + loopCount + ')' : 'Lặp dòng này'}}"
+							ng-attr-title="{{loopMode === 'line' && loopIdx === $index ? 'Tắt lặp lần ' + (loopCount + 1) : 'Lặp dòng này'}}"
 							aria-label="Loop line">
 							<i class="fa fa-repeat" aria-hidden="true"></i>
+							<span class="watch-loop-count" ng-if="loopMode === 'line' && loopIdx === $index">{{loopCount + 1}}</span>
 						</button>
 						<button type="button" class="quiz-speak" ng-click="showVi($event, sub)"
 							title="Xem nghĩa Việt" aria-label="Nghĩa Việt">vi</button>

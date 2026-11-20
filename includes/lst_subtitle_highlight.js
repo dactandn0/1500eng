@@ -66,8 +66,9 @@ fastened
 attendant
 takeoff
 technology
-carry-on luggage
-overhead bins
+carry-on
+luggage
+probably
 seat backs
 tray tables
 of the most
@@ -76,8 +77,7 @@ further
 patience
 severe
 passenger
-onward boarding pass
-connecting flight gate
+boarding pass
 departure
 `;
 

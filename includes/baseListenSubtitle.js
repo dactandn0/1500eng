@@ -108,6 +108,7 @@ $scope.lesson = null;
 $scope.curIdx = -1;
 $scope.follow = true;
 $scope.touchSpeech = false;
+$scope.touchCount = 0;
 $scope.showScript = false;
 $scope.lessonNotes = '';
 $scope.toggleFollow = function () {
@@ -118,8 +119,38 @@ $scope.toggleFollow = function () {
 $scope.toggleScript = function () {
 	$scope.showScript = !$scope.showScript;
 };
+let touchShakeTimer = null;
+function stopTouchShake() {
+	try { if (touchShakeTimer) clearTimeout(touchShakeTimer); } catch (e) {}
+	touchShakeTimer = null;
+	try {
+		const btns = document.querySelectorAll('.watch-touch-toggle');
+		for (let i = 0; i < btns.length; i++) btns[i].classList.remove('is-shake');
+	} catch (e) {}
+}
+function shakeTouchToggle() {
+	try {
+		const btns = document.querySelectorAll('.watch-touch-toggle');
+		for (let i = 0; i < btns.length; i++) {
+			const btn = btns[i];
+			btn.classList.remove('is-shake');
+			void btn.offsetWidth;
+			btn.classList.add('is-shake');
+		}
+		if (touchShakeTimer) clearTimeout(touchShakeTimer);
+		touchShakeTimer = setTimeout(function () {
+			touchShakeTimer = null;
+			const list = document.querySelectorAll('.watch-touch-toggle');
+			for (let i = 0; i < list.length; i++) list[i].classList.remove('is-shake');
+		}, 420);
+	} catch (e) {}
+}
 $scope.toggleTouchSpeech = function () {
 	$scope.touchSpeech = !$scope.touchSpeech;
+	if (!$scope.touchSpeech) {
+		$scope.touchCount = 0;
+		stopTouchShake();
+	}
 };
 function escapeHtmlText(s) {
 	return String(s == null ? '' : s)
@@ -449,7 +480,7 @@ let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, 
 let seekSince = 0;
 let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
 let loopTimer = null;
-const WRAP_DELAY_MS = 2000;
+const WRAP_DELAY_MS = 3000;
 let programPause = false;
 let userPaused = false;
 let destroyed = false;
@@ -1237,6 +1268,8 @@ $scope.subtitleWordSpeech = function (ev, sub) {
 	let word = '';
 	try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) {}
 	if (!word) return;
+	$scope.touchCount += 1;
+	if ($scope.touchCount >= 2) shakeTouchToggle();
 	const mediaPlaying = isWatchMediaPlaying();
 	const source = (typeof Text2SpeechSource === 'function') ? Text2SpeechSource() : 'browser';
 	const mixMedia = mediaPlaying && (source === 'edge' || source === 'el');

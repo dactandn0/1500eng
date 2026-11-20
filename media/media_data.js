@@ -45,4 +45,5 @@ const IMG_DATA = [
 	{ title: 'CatDa TayThat (3)', src: 'CatDa_TayThat (3).jpg' },
 	{ title: 'TG GS Raised', src: 'TG_GS_Raised.jpg' },
 	{ title: 'TG GS Sink', src: 'TG_GS_Sink.jpg' },
+	{ title: 'Shapes', src: 'Shapes.png' },
 ];

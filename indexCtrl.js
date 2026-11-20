@@ -161,19 +161,19 @@ app.config(function($routeProvider) {
 			controller: 'tflListenCtrl'
 		})
 		.when('/aef5SBListen', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261117-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261120-3',
 			controller: 'aefListenCtrl'
 		})
 		.when('/aef5WBListen', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261117-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261120-3',
 			controller: 'aefWbListenCtrl'
 		})
 		.when('/friendsListen', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261117-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261120-3',
 			controller: 'friendsListenCtrl'
 		})
 		.when('/tiktokListen', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261117-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261120-3',
 			controller: 'tiktokListenCtrl'
 		})
 		.when('/book4k', {
@@ -189,11 +189,11 @@ app.config(function($routeProvider) {
 			controller: 'subLessonCtrl'
 		})
 		.when('/listensrt', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261117-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261120-3',
 			controller: 'listensrtCtrl'
 		})
 		.when('/', {
-			templateUrl: 'includes/baseListenSubtitle.html?v=20261117-3',
+			templateUrl: 'includes/baseListenSubtitle.html?v=20261120-3',
 			controller: 'lptdListenCtrl'
 		})
 		.when('/spkBook', {

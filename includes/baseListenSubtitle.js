@@ -628,6 +628,31 @@ function mediaEl() {
 	} catch (e) { return null; }
 }
 
+function isWatchMediaPlaying() {
+	try {
+		if ($scope.lesson && $scope.lesson.type === 'youtube') {
+			const state = ytPlayer && ytPlayer.getPlayerState ? ytPlayer.getPlayerState() : -1;
+			return state === 1 || state === 3;
+		}
+		const el = mediaEl();
+		return !!(el && !el.paused && !el.ended);
+	} catch (e) { return false; }
+}
+
+function routeWatchMediaToTtsCtx() {
+	try {
+		if ($scope.lesson && $scope.lesson.type === 'youtube') return;
+		const el = mediaEl();
+		if (!el || el._ttsMediaSrc) return;
+		if (typeof ttsEnsureCtx !== 'function') return;
+		const ctx = ttsEnsureCtx();
+		if (!ctx || typeof ctx.createMediaElementSource !== 'function') return;
+		const src = ctx.createMediaElementSource(el);
+		src.connect(ctx.destination);
+		el._ttsMediaSrc = src;
+	} catch (e) {}
+}
+
 function setupPlayer(retry) {
 	if (destroyed) return;
 	if (!$scope.lesson) return;
@@ -1214,8 +1239,12 @@ $scope.subtitleWordSpeech = function (ev, sub) {
 	if (!word) return;
 	$scope.touchCount += 1;
 	if ($scope.touchCount >= 2) shakeTouchToggle();
+	const mediaPlaying = isWatchMediaPlaying();
+	const source = (typeof Text2SpeechSource === 'function') ? Text2SpeechSource() : 'browser';
+	const mixMedia = mediaPlaying && (source === 'edge' || source === 'el');
+	if (mixMedia) routeWatchMediaToTtsCtx();
 	try {
-		if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word, false, true);
+		if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word, false, true, mixMedia);
 	} catch (e) {}
 };
 // Nut loop tren MOI dong sub: bat -> loop dong do mai (nghi theo delay), bam lai -> tat

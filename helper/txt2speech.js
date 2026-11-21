@@ -6,8 +6,10 @@ let gLastText = '';
 
 // Co BUSY: dang phat -> Text2SpeechIsBusy() === true.
 let ttsBusy = false;
+let ttsMixMedia = false;
 function ttsSetBusy(v) {
 	ttsBusy = !!v;
+	if (!ttsBusy) ttsMixMedia = false;
 }
 function Text2SpeechIsBusy() {
 	if (ttsBusy) return true;
@@ -200,6 +202,7 @@ function browserSpeakNext(mySeq, onDone) {
 	}
 }
 function Text2SpeechBrowser(word, force, onDone) {
+	ttsMixMedia = false;
 	try {
 		if (typeof speechSynthesis === 'undefined') {
 			ttsSetBusy(false);
@@ -459,6 +462,7 @@ function edgePlayBlob(parts, mySeq, done, tag) {
 			edgeDecodePlay(cat.buffer, ok);
 		} catch (e) { ok(false); }
 	};
+	if (ttsMixMedia) { webFallback(); return; }
 	try {
 		const blob = new Blob(parts, { type: 'audio/mpeg' });
 		revokeEdgeUrl();
@@ -534,6 +538,9 @@ function edgeDecodePlay(ab, done) {
 			catch (e2) { ok(false); }
 		}
 	} catch (e) { ok(false); }
+}
+function Text2SpeechMixMedia(word, force) {
+	try { Text2Speech(word, force, true); } catch (e) {}
 }
 function blobToArrayBuffer(blob) {
 	return new Promise(function (resolve, reject) {
@@ -860,7 +867,7 @@ function elSpeak(text, mySeq) {
 // =====================================================
 // Entry chinh
 // =====================================================
-function Text2Speech(word, force) {
+function Text2Speech(word, force, mixMedia) {
 	const text = Text2SpeechClean(word);
 	if (!text) return;
 	const source = Text2SpeechSource();
@@ -881,6 +888,7 @@ function Text2Speech(word, force) {
 		}
 	}
 	Text2SpeechStop();
+	ttsMixMedia = !!mixMedia;
 	gLastText = text;
 	ttsSetBusy(true); // dung co ngay tu luc bam -> click spam ke tiep bi chan
 

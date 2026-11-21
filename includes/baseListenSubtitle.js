@@ -145,12 +145,19 @@ function shakeTouchToggle() {
 		}, 420);
 	} catch (e) {}
 }
+function setWatchAudioSessionType() {
+	try {
+		if (!navigator.audioSession) return;
+		navigator.audioSession.type = $scope.touchSpeech ? 'ambient' : 'auto';
+	} catch (e) {}
+}
 $scope.toggleTouchSpeech = function () {
 	$scope.touchSpeech = !$scope.touchSpeech;
 	if (!$scope.touchSpeech) {
 		$scope.touchCount = 0;
 		stopTouchShake();
 	}
+	setWatchAudioSessionType();
 };
 function escapeHtmlText(s) {
 	return String(s == null ? '' : s)
@@ -626,6 +633,20 @@ function mediaEl() {
 	try {
 		return document.getElementById('watchVideo') || document.getElementById('watchAudio');
 	} catch (e) { return null; }
+}
+
+function primeWatchMediaForTts() {
+	try {
+		if ($scope.lesson && $scope.lesson.type === 'youtube') {
+			if (ytPlayer && ytPlayer.getPlayerState && ytPlayer.getPlayerState() === 2) ytPlayer.playVideo();
+			return;
+		}
+		const el = mediaEl();
+		if (el && !el.paused && !el.ended) {
+			const p = el.play();
+			if (p && typeof p.catch === 'function') p.catch(function () {});
+		}
+	} catch (e) {}
 }
 
 function isWatchMediaPlaying() {
@@ -1237,12 +1258,14 @@ $scope.subtitleWordSpeech = function (ev, sub) {
 	let word = '';
 	try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) {}
 	if (!word) return;
+	try { if (navigator.audioSession) navigator.audioSession.type = 'ambient'; } catch (e) {}
 	$scope.touchCount += 1;
 	if ($scope.touchCount >= 2) shakeTouchToggle();
 	const mediaPlaying = isWatchMediaPlaying();
 	const source = (typeof Text2SpeechSource === 'function') ? Text2SpeechSource() : 'browser';
 	const mixMedia = mediaPlaying && (source === 'edge' || source === 'el');
 	if (mixMedia) routeWatchMediaToTtsCtx();
+	if (mediaPlaying) primeWatchMediaForTts();
 	try {
 		if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word, false, true, mixMedia);
 	} catch (e) {}
@@ -1356,6 +1379,7 @@ try { window.addEventListener('scroll', updateRowDock, { passive: true }); } cat
 
 $scope.$on('$destroy', function () {
 	destroyed = true;
+	try { if (navigator.audioSession) navigator.audioSession.type = 'auto'; } catch (e) {}
 	teardown();
 	try { window.removeEventListener('scroll', updateRowDock); } catch (e) {}
 	try {

@@ -603,7 +603,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS, MixMedia) {
+		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS) {
 			navigator.clipboard.writeText(touchedWord);
 			const result = getVocaFromDB(touchedWord)
 			// luon goi GOOGLE TRANS API + ghep voi dict trong data (neu co)
@@ -627,8 +627,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			});
 			// PlayTTS default true; false -> chi show VI, khong phat TTS
 			if (PlayTTS !== false) {
-				if (MixMedia && typeof Text2SpeechMixMedia === 'function') Text2SpeechMixMedia(touchedWord);
-				else Text2Speech(touchedWord);
+				Text2Speech(touchedWord);
 			}
 		}
 

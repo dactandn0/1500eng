@@ -6,11 +6,8 @@ let gLastText = '';
 
 // Co BUSY: dang phat -> Text2SpeechIsBusy() === true.
 let ttsBusy = false;
-let ttsMixMedia = false;
-let ttsMixMediaPending = false;
 function ttsSetBusy(v) {
 	ttsBusy = !!v;
-	if (!ttsBusy) ttsMixMedia = false;
 }
 function Text2SpeechIsBusy() {
 	if (ttsBusy) return true;
@@ -462,7 +459,6 @@ function edgePlayBlob(parts, mySeq, done, tag) {
 			edgeDecodePlay(cat.buffer, ok);
 		} catch (e) { ok(false); }
 	};
-	if (ttsMixMedia) { webFallback(); return; }
 	try {
 		const blob = new Blob(parts, { type: 'audio/mpeg' });
 		revokeEdgeUrl();
@@ -538,11 +534,6 @@ function edgeDecodePlay(ab, done) {
 			catch (e2) { ok(false); }
 		}
 	} catch (e) { ok(false); }
-}
-// W mode: uu tien WebAudio de TTS mix cung audio subtitle tren iOS.
-function Text2SpeechMixMedia(word, force) {
-	ttsMixMediaPending = true;
-	try { Text2Speech(word, force); } catch (e) { ttsMixMediaPending = false; ttsMixMedia = false; }
 }
 function blobToArrayBuffer(blob) {
 	return new Promise(function (resolve, reject) {
@@ -871,9 +862,7 @@ function elSpeak(text, mySeq) {
 // =====================================================
 function Text2Speech(word, force) {
 	const text = Text2SpeechClean(word);
-	const mixMedia = ttsMixMediaPending;
-	ttsMixMediaPending = false;
-	if (!text) { ttsMixMedia = false; return; }
+	if (!text) return;
 	const source = Text2SpeechSource();
 	if (source === 'edge' || source === 'el') {
 		try { ttsEnsureCtx(); } catch (e) {}
@@ -892,7 +881,6 @@ function Text2Speech(word, force) {
 		}
 	}
 	Text2SpeechStop();
-	ttsMixMedia = mixMedia;
 	gLastText = text;
 	ttsSetBusy(true); // dung co ngay tu luc bam -> click spam ke tiep bi chan
 

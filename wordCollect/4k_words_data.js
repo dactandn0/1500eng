@@ -411,7 +411,7 @@ empty (a) /ˈempti/ trống rỗng<br>\
 gather (v) /ˈɡæðər/ tập hợp<br>\
 item (n) /ˈaɪtəm/ đồ dùng, món đồ, mục<br>\
 offer (v) /ˈɔːfər/ cung cấp<br>\
-product (n) /ˈprɑːdʌkt/ sản phẩm<br>\
+product (n,v) /ˈprɑːdʌkt/ (n) sản phẩm, (v) sản xuất<br>\
 property (n) /ˈprɑːpərti/ tài sản (= asset)<br>\
 purchase (n,v) /ˈpɜːrtʃəs/ việc mua, mua<br>\
 tool (n) /tuːl/ công cụ<br>\
@@ -1116,7 +1116,7 @@ involve (v) /ɪnˈvɒlv/ liên quan<br>\
 medicine (n) /ˈmed.sən/ thuốc<br>\
 mix (v/n) /mɪks/ pha trộn<br>\
 period (n) /ˈpɪə.ri.əd/ thời kỳ<br>\
-produce (v) /prəˈdʒuːs/ sản xuất<br>\
+produce (n,v) /prəˈdʒuːs/ (n) nông sản, (v) sản xuất<br>\
 range (n) /reɪndʒ/ phạm vi<br>\
 recognize (v) /ˈrek.əɡ.naɪz/ nhận ra<br>\
 regular (adj) /ˈreɡ.jə.lər/ thường xuyên<br>\

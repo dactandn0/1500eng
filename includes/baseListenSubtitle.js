@@ -204,7 +204,15 @@ function markHighlightTokens(tokens, seqs) {
 		for (let i = 0; i + seq.length <= tokens.length; i++) {
 			let ok = true;
 			for (let j = 0; j < seq.length; j++) {
-				if (tokens[i + j].lower !== seq[j]) { ok = false; break; }
+				const a = tokens[i + j].lower;
+				const b = seq[j];
+				let matched = (a === b);
+				if (!matched && typeof highlightTokenMatches === 'function') {
+					matched = highlightTokenMatches(b, a, true);
+				} else if (!matched && typeof highlightPluralForm === 'function') {
+					matched = highlightPluralForm(b) === a || highlightPluralForm(a) === b;
+				}
+				if (!matched) { ok = false; break; }
 			}
 			if (ok) {
 				for (let j = 0; j < seq.length; j++) marks[i + j] = true;

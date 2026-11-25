@@ -259,9 +259,17 @@ function wrapTouchWords(text, seqs) {
 	for (let i = 0; i < tokens.length; i++) {
 		const t = tokens[i];
 		out += escapeHtmlText(s.slice(last, t.start));
-		const cls = marks[i] ? ' class="watch-hl"' : '';
-		out += '<kkk' + cls + ' ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</kkk>';
-		last = t.end;
+		if (!marks[i]) {
+			out += '<kkk ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</kkk>';
+			last = t.end;
+			continue;
+		}
+		let j = i;
+		while (j + 1 < tokens.length && marks[j + 1]) j++;
+		const phrase = s.slice(tokens[i].start, tokens[j].end);
+		out += '<hl_word class="watch-hl" data-phrase="' + escapeHtmlText(phrase) + '" ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(phrase) + '</hl_word>';
+		last = tokens[j].end;
+		i = j;
 	}
 	out += escapeHtmlText(s.slice(last));
 	return out;
@@ -1264,7 +1272,15 @@ $scope.subtitleWordSpeech = function (ev, sub) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	if (!ev) return;
 	let word = '';
-	try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) {}
+	if (ev && ev.target && typeof ev.target.closest === 'function') {
+		const phraseEl = ev.target.closest('hl_word');
+		if (phraseEl && phraseEl.getAttribute) {
+			word = phraseEl.getAttribute('data-phrase') || phraseEl.textContent || '';
+		}
+	}
+	if (!word) {
+		try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) {}
+	}
 	if (!word) return;
 	try { if (navigator.audioSession) navigator.audioSession.type = 'ambient'; } catch (e) {}
 	$scope.touchCount += 1;

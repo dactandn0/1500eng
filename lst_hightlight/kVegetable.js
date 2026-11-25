@@ -14,7 +14,6 @@ const kVegetableNouns = [
 'zucchini',        // bí ngòi
 'pumpkin',         // bí đỏ
 'butternut squash',// bí hồ lô
-'squash',          // bí (nói chung)
 'bell pepper',     // ớt chuông
 'chili pepper',    // ớt
 'corn',            // ngô/bắp

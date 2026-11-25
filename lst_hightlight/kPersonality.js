@@ -77,7 +77,7 @@ const kPersonalityNouns = [
 	'Optimistic',
 	'Adventurous',
 	'Curious',
-	'Open-minded',		
+	'Open-minded',
 	'Patient',
 	'Stubborn',
 	'Outgoing',
@@ -134,5 +134,10 @@ const kPersonalityNouns = [
 	'good listener',
 	'kind'
 ].map(function (name) {
-	return { name: name, category_name: 'Personality', color: '#8e24aa', noun: name === 'good listener' };
+	return {
+		name: name,
+		category_name: 'Personality',
+		color: '#8e24aa',
+		noun: name === 'good listener'
+	};
 });

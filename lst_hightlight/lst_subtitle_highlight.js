@@ -148,7 +148,9 @@ const kOther = filterUniqueHighlights(lst_highlight).map(function (name) {
 });
 
 lst_highlight = (typeof kVegetable !== 'undefined' ? kVegetable : [])
-	.concat(typeof kPersonality !== 'undefined' ? kPersonality : [], kOther);
+	.concat(typeof kPersonality !== 'undefined' ? kPersonality : [])
+	.concat(typeof kClothAccessory !== 'undefined' ? kClothAccessory : [])
+	.concat(kOther);
 
 function filterUniqueHighlights(raw) {
 	const seen = Object.create(null);
@@ -364,5 +366,5 @@ function getHighlightCategory(word) {
 			}
 		}
 	}
-	return found ? { name: found.category_name, color: found.color } : null;
+	return found ? { name: found.category_name, color: found.color || '#ee02e2' } : null;
 }

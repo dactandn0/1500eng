@@ -313,11 +313,6 @@
 			cursor: pointer;
 		}
 
-		.watch-sub-en .watch-hl {
-			color: #ee02e2;
-			/* font-weight: 700; */
-		}
-
 		.watch-sub.is-active .watch-sub-en {
 			color: #5f470c;
 			font-weight: 500;
@@ -413,6 +408,18 @@
 		}
 
 		.watch-touch-toggle.is-on span {
+			text-shadow: 0 1px 1px rgba(0, 0, 0, .16);
+		}
+
+		.watch-touch-toggle.is-s {
+			background: linear-gradient(135deg, #1f9d55 0%, #38c172 100%);
+			border-color: #178044;
+			color: #fff;
+			box-shadow: 0 0 0 2px rgba(31, 157, 85, .16), 0 2px 8px rgba(31, 157, 85, .32);
+			transform: translateY(-1px);
+		}
+
+		.watch-touch-toggle.is-s span {
 			text-shadow: 0 1px 1px rgba(0, 0, 0, .16);
 		}
 
@@ -677,7 +684,7 @@
 				<button type="button"
 					class="watch-toggle watch-touch-toggle"
 					ng-if="lesson.subs && lesson.subs.length"
-					ng-class="{'is-on': touchSpeech}"
+					ng-class="{'is-on': touchSpeech, 'is-s': !touchSpeech}"
 					ng-click="toggleTouchSpeech()"
 					title="Touch word/sentence"
 					aria-label="Touch word/sentence"

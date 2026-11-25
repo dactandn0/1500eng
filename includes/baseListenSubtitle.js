@@ -243,7 +243,14 @@ function highlightHtml(text, seqs) {
 		while (j + 1 < tokens.length && marks[j + 1]) j++;
 		const start = tokens[i].start;
 		const end = tokens[j].end;
-		out += '<span class="watch-hl">' + escapeHtmlText(s.slice(start, end)) + '</span>';
+		const phrase = s.slice(start, end);
+		let color = '';
+		if (typeof getHighlightCategory === 'function') {
+			const cat = getHighlightCategory(phrase);
+			if (cat && cat.color) color = cat.color;
+		}
+		const style = color ? ' style="color:' + escapeHtmlText(color) + '"' : '';
+		out += '<span class="watch-hl"' + style + '>' + escapeHtmlText(phrase) + '</span>';
 		last = end;
 		i = j + 1;
 	}
@@ -267,7 +274,13 @@ function wrapTouchWords(text, seqs) {
 		let j = i;
 		while (j + 1 < tokens.length && marks[j + 1]) j++;
 		const phrase = s.slice(tokens[i].start, tokens[j].end);
-		out += '<hl_word class="watch-hl" data-phrase="' + escapeHtmlText(phrase) + '" ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(phrase) + '</hl_word>';
+		let color = '';
+		if (typeof getHighlightCategory === 'function') {
+			const cat = getHighlightCategory(phrase);
+			if (cat && cat.color) color = cat.color;
+		}
+		const style = color ? ' style="color:' + escapeHtmlText(color) + '"' : '';
+		out += '<hl_word class="watch-hl"' + style + ' data-phrase="' + escapeHtmlText(phrase) + '" ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(phrase) + '</hl_word>';
 		last = tokens[j].end;
 		i = j;
 	}

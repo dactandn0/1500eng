@@ -703,7 +703,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			let wikiImgId = null;
 			if (!isLongText && /^[A-Za-z][A-Za-z'\-]*$/.test(touchedWord || '')) {
 				wikiImgId = 'toastWikiImg' + (++wikiImgSeq);
-				content = '<img id="' + wikiImgId + '" class="toast-wiki-img" style="display:none" alt="">' + content;
+				//content = '<img id="' + wikiImgId + '" class="toast-wiki-img" style="display:none" alt="">' + content;
 			}
 
 			// Timer đếm ngược (tiny) + progress bar đã bật ở options

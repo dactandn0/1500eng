@@ -18,9 +18,7 @@ function getWordSameSound(word)
 			break
 		}
 	}
-	var rr = arr.join()
-	//console.log(rr)
-	if (rr.length > 0) rr = ' [s. ' + rr + ']'
+	var rr = arr.map(e => e.trim()).filter(Boolean).join(' · ')
 	return rr
 }
 

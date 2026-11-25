@@ -107,7 +107,7 @@ $scope.lessonKey = function (ev) {
 $scope.lesson = null;
 $scope.curIdx = -1;
 $scope.follow = true;
-$scope.touchSpeech = false;
+$scope.touchWord = false;
 $scope.touchCount = 0;
 $scope.showScript = false;
 $scope.lessonNotes = '';
@@ -148,12 +148,12 @@ function shakeTouchToggle() {
 function setWatchAudioSessionType() {
 	try {
 		if (!navigator.audioSession) return;
-		navigator.audioSession.type = $scope.touchSpeech ? 'ambient' : 'auto';
+		navigator.audioSession.type = $scope.touchWord ? 'ambient' : 'auto';
 	} catch (e) {}
 }
 $scope.toggleTouchSpeech = function () {
-	$scope.touchSpeech = !$scope.touchSpeech;
-	if (!$scope.touchSpeech) {
+	$scope.touchWord = !$scope.touchWord;
+	if (!$scope.touchWord) {
 		$scope.touchCount = 0;
 		stopTouchShake();
 	}
@@ -180,34 +180,56 @@ function wordTokens(text) {
 	return out;
 }
 function getLessonHighlightSeqs() {
-	const raw = (typeof getUniqueHighlights === 'function')
-		? getUniqueHighlights()
-		: ((typeof lst_highlight !== 'undefined') ? lst_highlight : '');
+	const raw = (typeof getHighlightEntries === 'function')
+		? getHighlightEntries()
+		: ((typeof getUniqueHighlights === 'function')
+			? getUniqueHighlights()
+			: ((typeof lst_highlight !== 'undefined') ? lst_highlight : ''));
 	const parts = Array.isArray(raw) ? raw : String(raw == null ? '' : raw).split(/[\n,]+/);
-	const key = parts.join('\u0001');
+	const key = parts.map(function (part) {
+		if (typeof part === 'string') return part;
+		return [part.name || '', part.category_name || '', part.color || '', part.noun ? '1' : '0'].join('\u0002');
+	}).join('\u0001');
 	if (key === highlightRawCache) return highlightSeqCache;
 	highlightRawCache = key;
 	const seqs = [];
 	parts.forEach(function (part) {
-		const tokens = wordTokens(part).map(function (t) { return t.lower; });
-		if (tokens.length) seqs.push(tokens);
+		const entry = (typeof part === 'string')
+			? { name: part, category_name: '', color: '' }
+			: part;
+		const tokens = wordTokens(entry.name).map(function (t) { return t.lower; });
+		if (tokens.length) seqs.push({
+			tokens: tokens,
+			name: entry.name || tokens.join(' '),
+			category_name: entry.category_name || '',
+			color: entry.color || '',
+			noun: entry.noun === true
+		});
 	});
 	highlightSeqCache = seqs;
 	return seqs;
 }
 function markHighlightTokens(tokens, seqs) {
 	const marks = new Array(tokens.length);
-	for (let i = 0; i < marks.length; i++) marks[i] = false;
+	for (let i = 0; i < marks.length; i++) marks[i] = null;
 	if (!seqs || !seqs.length) return marks;
 	for (let s = 0; s < seqs.length; s++) {
 		const seq = seqs[s];
-		for (let i = 0; i + seq.length <= tokens.length; i++) {
+		const seqTokens = Array.isArray(seq.tokens) ? seq.tokens : seq;
+		if (!seqTokens || !seqTokens.length) continue;
+		for (let i = 0; i + seqTokens.length <= tokens.length; i++) {
 			let ok = true;
-			for (let j = 0; j < seq.length; j++) {
-				if (tokens[i + j].lower !== seq[j]) { ok = false; break; }
+			for (let j = 0; j < seqTokens.length; j++) {
+				const canPlural = seq.noun === true && j === seqTokens.length - 1;
+				const matched = (typeof highlightTokenMatches === 'function')
+					? highlightTokenMatches(seqTokens[j], tokens[i + j].lower, canPlural)
+					: seqTokens[j] === tokens[i + j].lower;
+				if (!matched) { ok = false; break; }
 			}
 			if (ok) {
-				for (let j = 0; j < seq.length; j++) marks[i + j] = true;
+				for (let j = 0; j < seqTokens.length; j++) {
+					if (!marks[i + j]) marks[i + j] = seq;
+				}
 			}
 		}
 	}
@@ -218,7 +240,7 @@ function highlightHtml(text, seqs) {
 	if (!seqs || !seqs.length) return escapeHtmlText(s);
 	const tokens = wordTokens(s);
 	const marks = markHighlightTokens(tokens, seqs);
-	if (marks.indexOf(true) < 0) return escapeHtmlText(s);
+	if (!marks.some(function (mark) { return !!mark; })) return escapeHtmlText(s);
 	let out = '';
 	let last = 0;
 	let i = 0;
@@ -231,11 +253,15 @@ function highlightHtml(text, seqs) {
 			i++;
 			continue;
 		}
+		const meta = marks[i];
 		let j = i;
-		while (j + 1 < tokens.length && marks[j + 1]) j++;
+		while (j + 1 < tokens.length && marks[j + 1] &&
+			marks[j + 1].category_name === meta.category_name &&
+			marks[j + 1].color === meta.color) j++;
 		const start = tokens[i].start;
 		const end = tokens[j].end;
-		out += '<span class="watch-hl">' + escapeHtmlText(s.slice(start, end)) + '</span>';
+		const style = meta.color ? ' style="color:' + escapeHtmlText(meta.color) + '"' : '';
+		out += '<span class="watch-hl"' + style + '>' + escapeHtmlText(s.slice(start, end)) + '</span>';
 		last = end;
 		i = j + 1;
 	}
@@ -251,8 +277,16 @@ function wrapTouchWords(text, seqs) {
 	for (let i = 0; i < tokens.length; i++) {
 		const t = tokens[i];
 		out += escapeHtmlText(s.slice(last, t.start));
-		const cls = marks[i] ? ' class="watch-hl"' : '';
-		out += '<kkk' + cls + ' ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</kkk>';
+		const meta = marks[i];
+		const cls = meta ? ' class="watch-hl"' : '';
+		const style = meta && meta.color ? ' style="color:' + escapeHtmlText(meta.color) + '"' : '';
+		const phrase = meta ? (meta.name || (Array.isArray(meta.tokens) ? meta.tokens.join(' ') : '')) : '';
+		const data = meta
+			? ' data-category="' + escapeHtmlText(meta.category_name || '') +
+				'" data-color="' + escapeHtmlText(meta.color || '') + '"' +
+				(phrase ? ' data-phrase="' + escapeHtmlText(phrase) + '"' : '')
+			: '';
+		out += '<kkk' + cls + style + data + ' ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</kkk>';
 		last = t.end;
 	}
 	out += escapeHtmlText(s.slice(last));
@@ -1237,7 +1271,7 @@ $scope.subtitleDisplayHtml = function (sub) {
 	if (!sub) return '';
 	const hl = getLessonHighlightSeqs();
 	if (sub.enSafe === undefined) sub.enSafe = escapeHtmlText(sub.en);
-	if (!$scope.touchSpeech) {
+	if (!$scope.touchWord) {
 		if (!hl.length) return sub.enSafe;
 		if (sub.enSafeHlKey !== highlightRawCache) {
 			sub.enSafeHl = highlightHtml(sub.en, hl);
@@ -1252,12 +1286,38 @@ $scope.subtitleDisplayHtml = function (sub) {
 	return sub.enTouch;
 };
 $scope.subtitleWordSpeech = function (ev, sub) {
-	if (!$scope.touchSpeech) return;
+	console.log('function = subtitleWordSpeech | ev =', ev);
+	console.log('function = subtitleWordSpeech | sub =', sub);
+	console.log('function = subtitleWordSpeech | touchWord = ', $scope.touchWord);
+	
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	if (!ev) return;
 	let word = '';
 	try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) {}
-	if (!word) return;
+
+	console.log('---- subtitleWordSpeech word = ', word);
+	if ($scope.touchWord && !word) return;
+
+	copyTextToClipboard(word);
+
+	let categoryName = '';
+	let categoryColor = '';
+	let phrase = '';
+	if ($scope.touchWord) {
+		try {
+			let el = ev.target;
+			if (el && el.closest) {
+				const phraseEl = el.closest('[data-phrase]');
+				if (phraseEl && phraseEl.getAttribute) phrase = phraseEl.getAttribute('data-phrase') || '';
+				el = el.closest('[data-category]');
+			}
+			if (el && el.getAttribute) {
+				categoryName = el.getAttribute('data-category') || '';
+				categoryColor = el.getAttribute('data-color') || '';
+			}
+		} catch (e) {}
+		if (phrase) word = phrase;
+	}
 	try { if (navigator.audioSession) navigator.audioSession.type = 'ambient'; } catch (e) {}
 	$scope.touchCount += 1;
 	if ($scope.touchCount >= 2) shakeTouchToggle();
@@ -1267,7 +1327,7 @@ $scope.subtitleWordSpeech = function (ev, sub) {
 	if (mixMedia) routeWatchMediaToTtsCtx();
 	if (mediaPlaying) primeWatchMediaForTts();
 	try {
-		if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word, false, true, mixMedia);
+		if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word, false, true, mixMedia, categoryName, categoryColor);
 	} catch (e) {}
 };
 // Nut loop tren MOI dong sub: bat -> loop dong do mai (nghi theo delay), bam lai -> tat

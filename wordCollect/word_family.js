@@ -82,11 +82,6 @@ let WORD_FAMILY_DATA = [
 ]
 
 
-
-
-
-
-
 function getWordFamily(word)
 {
 	word = word.toLowerCase()
@@ -101,9 +96,7 @@ function getWordFamily(word)
 			break
 		}
 	}
-	var rr = arr.join()
-//	console.log(rr)
-	if (rr.length > 0) rr = ' [f. ' + rr + ']'
+	var rr = arr.map(e => e.trim()).filter(Boolean).join(' · ')
 	return rr
 }
 

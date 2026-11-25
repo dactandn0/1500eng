@@ -532,6 +532,12 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		}
 
+		function wordHintRow(label, text) {
+			if (!text) return ''
+			return '<div class="toast-hint-row"><span class="toast-hint-label">' + escapeToastText(label) +
+				'</span><span class="toast-hint-value">' + escapeToastText(text) + '</span></div>'
+		}
+
 		getVocaFromDB = function(touchedWord) {
 			// chuan hoa de tra dict: trim + lowercase + bo dau cau dinh kem
 			// (vd dau cau "Almond" hay cuoi cau "almond." van match "almond")
@@ -540,8 +546,13 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			const wordSynonyms = getWordSynonym(touchedWord)
 			const wordFamily = getWordFamily(touchedWord)
 			const wordSameSounds = getWordSameSound(touchedWord)
-
-			const total = wordFamily + wordSynonyms + wordSameSounds
+			const hintHtml = (wordFamily || wordSynonyms || wordSameSounds)
+				? '<div class="toast-hints">' +
+					wordHintRow('Family', wordFamily) +
+					wordHintRow('Synonyms', wordSynonyms) +
+					wordHintRow('Same sound', wordSameSounds) +
+				'</div>'
+				: ''
 
 			let json_full = ''
 			let found = false
@@ -554,15 +565,15 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				if (word === lookup || Helper_IsFormOfWord(word, lookup)) {
 					totalHits++
 					if (hitCount < 2) {
-						json_full += (hitCount > 0 ? '<br>' : '') + '- ' + wordFull + total
+						json_full += (hitCount > 0 ? '<br>' : '') + '- ' + wordFull
 						hitCount++
 					}
 					found = true
 				}
 			}
-			if (found) json_full += '<br><small><i>Found ' + totalHits + ' in data</i></small>'
+			if (found) json_full += hintHtml + '<br><small><i>Found ' + totalHits + ' in data</i></small>'
 			if (!found) {
-				json_full = total
+				json_full = hintHtml
 			}
 
 			return {
@@ -603,26 +614,29 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS, MixMedia) {
+		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS, MixMedia, CategoryName, CategoryColor) {
 			navigator.clipboard.writeText(touchedWord);
+			let category = null;
+			if (CategoryName) category = { name: CategoryName, color: CategoryColor || '' };
+			else if (typeof getHighlightCategory === 'function') category = getHighlightCategory(touchedWord);
 			const result = getVocaFromDB(touchedWord)
 			// luon goi GOOGLE TRANS API + ghep voi dict trong data (neu co)
 			Helper_GG_API($http, touchedWord).then(res => {
 				let vietnamese = '';
 				// Google tra nhieu segment (moi cau 1 segment) -> ghep het, khong lay cau dau
 				try { vietnamese = (res.data[0] || []).map(function (seg) { return seg[0] || ''; }).join(''); } catch (e) { vietnamese = ''; }
-				doShowToast((IgnoreShowTouched ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord);
+				doShowToast((IgnoreShowTouched ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord, category);
 				//GOOGLE_ERROR_SHOWN = false; // reset
 			}, err => {
 				try { console.error('Google translate error', err); } catch (e) {}
 				const ggErr = googleErrText(err);
 				// Google loi: van show dict neu co; chua co dict thi bao loi 1 lan
 				if (result.found) {
-					doShowToast(result.full + '<br><span class="text-danger">Google: ' + ggErr + '</span>', IgnoreShowTouched, touchedWord);
+					doShowToast(result.full + '<br><span class="text-danger">Google: ' + ggErr + '</span>', IgnoreShowTouched, touchedWord, category);
 				} else //if (!GOOGLE_ERROR_SHOWN) 
 				{
 					//GOOGLE_ERROR_SHOWN = true;
-					doShowToast(' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> <span class="text-danger">error: ' + ggErr + '</span>', true, "");
+					doShowToast(' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> <span class="text-danger">error: ' + ggErr + '</span>', true, "", category);
 				}
 			});
 			// PlayTTS default true; false -> chi show VI, khong phat TTS
@@ -674,12 +688,16 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				: Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF);
 		}
 
-		function doShowToast(content, isLongText, touchedWord) {
+		function doShowToast(content, isLongText, touchedWord, category) {
 			let btnSave = '<button class="btn btn-sm btn-success" onclick="saveFromToastr()">Save</button>'
 			let toasterTimeout = toastTimeoutFor(touchedWord, isLongText);
 			if (isLongText || Helper_IsWordSavedBefore(touchedWord)) {
 				btnSave = ''
 			} else saveFromToastVal = content;
+			if (category && category.name) {
+				const categoryColor = category.color || '#ee02e2';
+				content = '<span class="hl-category-badge" style="color:' + escapeToastText(categoryColor) + ';font-weight:600">[' + escapeToastText(category.name) + ']</span><br>' + content;
+			}
 
 			// Chế độ click one-word: nhúng sẵn placeholder ảnh, fetch xong điền đúng toast này
 			let wikiImgId = null;

@@ -410,9 +410,8 @@ function getWordSynonym(word)
 			break
 		}
 	}
-	var rr = arr.join()
-	if (rr.length > 0) rr = ' [syn. ' + rr + ']'
-		return rr
+	var rr = arr.map(e => e.trim()).filter(Boolean).join(' · ')
+	return rr
 }
 
 

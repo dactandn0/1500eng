@@ -2112,6 +2112,35 @@ input:focus {
   line-height: 1.5;
 }
 
+.toast-hints {
+  margin-top: 0.45rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed #e8dfc8;
+}
+
+.toast-hint-row {
+  display: flex;
+  gap: 0.4rem;
+  align-items: baseline;
+  margin-top: 0.15rem;
+  line-height: 1.35;
+}
+
+.toast-hint-label {
+  flex: 0 0 auto;
+  min-width: 4.8rem;
+  color: #8a6d1a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.toast-hint-value {
+  color: #5f574a;
+  font-size: 0.8rem;
+}
+
 .toast-message .btn.btn-success {
   color: #604a0e;
   background: linear-gradient(135deg, #fff4c9 0%, #ffe9a2 100%);

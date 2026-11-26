@@ -1,4 +1,4 @@
-const kClothAccessoryNouns = [
+const kClothAccessory = [
     'jacket',			// áo khoác
     'tie',				// cà vạt
     'shirt',			// váy
@@ -8,10 +8,10 @@ const kClothAccessoryNouns = [
     'dress',			// váy
     'skirt',			// váy
     'pants',			// quần
-    'socks',			// tất
-    'shoe',				// giày
-    'boot',				// bốt	
-    'sandal',			// dép		
+    'sock',			    // tất
+    'shoes',			// giày
+    'boots',			// bốt	
+    'sandals',			// dép		
     'sneaker',					
     'hat',				// mũ
     'scarf',			// khăn quàng
@@ -102,8 +102,6 @@ const kClothAccessoryNouns = [
     'nightgown',		// váy ngủ
     'tights',			// quần tất (số nhiều)
     'stocking'			// tất dài, vớ dài
-];
-
-const kClothAccessory = kClothAccessoryNouns.map(function (name) {
-	return { name: name, category_name: 'ClothAccessory', color: '#ffee00', noun: true };
+].map(function (name) {
+	return { name: name, category_name: 'ClothAccessory', color: '#003cff', noun: true };
 });

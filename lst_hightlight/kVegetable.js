@@ -79,7 +79,7 @@ const kVegetable = [
   ...kVegetableNouns.map((name) => ({
     name,
     category_name: 'Vegetable',
-    color: '#54be76',
+    color: '#ff5303',
     noun: true,
   })),
   ...kVegetableOthers.map((name) => ({

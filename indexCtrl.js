@@ -532,10 +532,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		}
 
-		function wordHintRow(label, text) {
+		function wordHintRow(label, text, allowHtml) {
 			if (!text) return ''
 			return '<div class="toast-hint-row"><span class="toast-hint-label">' + escapeToastText(label) +
-				'</span><span class="toast-hint-value">' + escapeToastText(text) + '</span></div>'
+				'</span><span class="toast-hint-value">' + (allowHtml ? text : escapeToastText(text)) + '</span></div>'
 		}
 
 		getVocaFromDB = function(touchedWord) {
@@ -549,7 +549,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			const hintHtml = (wordFamily || wordSynonyms || wordSameSounds)
 				? '<div class="toast-hints">' +
 					wordHintRow('Family', wordFamily) +
-					wordHintRow('Synonyms', wordSynonyms) +
+					wordHintRow('Synonyms', wordSynonyms, true) +
 					wordHintRow('Same sound', wordSameSounds) +
 				'</div>'
 				: ''
@@ -620,12 +620,13 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			if (CategoryName) category = { name: CategoryName, color: CategoryColor || '' };
 			else if (typeof getHighlightCategory === 'function') category = getHighlightCategory(touchedWord);
 			const result = getVocaFromDB(touchedWord)
+			const usBadge = (typeof getWordUsBadge === 'function') ? getWordUsBadge(touchedWord) : ''
 			// luon goi GOOGLE TRANS API + ghep voi dict trong data (neu co)
 			Helper_GG_API($http, touchedWord).then(res => {
 				let vietnamese = '';
 				// Google tra nhieu segment (moi cau 1 segment) -> ghep het, khong lay cau dau
 				try { vietnamese = (res.data[0] || []).map(function (seg) { return seg[0] || ''; }).join(''); } catch (e) { vietnamese = ''; }
-				doShowToast((IgnoreShowTouched ? '' : touchedWord) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord, category);
+				doShowToast((IgnoreShowTouched ? '' : touchedWord + usBadge) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord, category);
 				//GOOGLE_ERROR_SHOWN = false; // reset
 			}, err => {
 				try { console.error('Google translate error', err); } catch (e) {}

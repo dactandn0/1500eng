@@ -424,20 +424,18 @@ doubt (n) /daʊt/ nghi ngờ<br>\
 \
 foreign (a) /ˈfɔːrən/ nước ngoài<br>\
 \
-\
 international (a) /ɪntərˈnæʃnəl/ quốc tế<br>\
 adversity (n) /ædˈvɜːsəti/ bất hạnh, khó khăn, vận đen<br>\
 righteous (a) /ˈraɪtʃəs/ chính nghĩa, công lý<br>\
-opposition (n) /ˌɑːpəˈzɪʃn/ sự phản đối<br>\
+opposition (n) /ˌɑːpəˈzɪʃn/ sự phản đối, tương phản, đối lập<br>\
+therapy (n) /ˈθerəpi/ sự trị liệu, điều trị<br>\
+\
 lawyer (n) /ˈlɔɪər/ luật sư<br>\
 mention (n,v) /ˈmenʃn/ đề cập<br>\
 failure (n) /ˈfeɪljər/ sự thất bại,người bất tài<br>\
 policy (n) /ˈpɑːləsi/ chính sách<br>\
 social (a) /ˈsəʊʃl/ xã hội<br>\
 speech (n) /spiːtʃ/ bài phát biểu<br>\
-\
-\
-\
 \
 \
 consider (v) /kənˈsɪdər/ cân nhắc, được xem [take into account]<br>\

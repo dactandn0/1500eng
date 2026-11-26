@@ -476,6 +476,12 @@ let SynonymData = [
 		mean: "theo đuổi"
 	},
 	{
+		words: "major /ˈmeɪdʒər/ | main /meɪn/ | primary /ˈpraɪmeri/ | significant /sɪɡˈnɪfɪkənt/",
+		us: "major|main",
+		type: "a",
+		mean: "chính, chủ yếu, quan trọng"
+	},
+	{
 		words: "find /faɪnd/ | seek /siːk/ | look for",
 		us: "look for",
 		type: "v",
@@ -722,7 +728,7 @@ function StripSynonymIpa(text) {
 }
 function UsFlagBadgeHtml() {
 	return '<span class="us-badge" title="Từ thông dụng ở Mỹ" aria-label="Từ thông dụng ở Mỹ">' +
-		'<svg viewBox="0 0 20 14" aria-hidden="true" focusable="false">' +
+		'<svg width="20" height="14" viewBox="0 0 20 14" aria-hidden="true" focusable="false">' +
 		'<rect width="20" height="14" fill="#fff"/>' +
 		'<g fill="#b22234">' +
 		'<rect y="0" width="20" height="1.08"/><rect y="2.15" width="20" height="1.08"/>' +

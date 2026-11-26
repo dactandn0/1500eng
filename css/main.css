@@ -2143,8 +2143,10 @@ input:focus {
 
 .us-badge {
   display: inline-block;
-  width: 16x;
-  height: 12px;
+  flex: 0 0 auto;
+  width: 23px;
+  height: 16px;
+  box-sizing: border-box;
   margin-left: 0.15rem;
   vertical-align: -3px;
   border: 1px solid rgba(0, 0, 0, 0.15);

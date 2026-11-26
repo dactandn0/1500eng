@@ -1,11 +1,7 @@
 // VocaToUI: pool tu vung theo chu de (3K, IELTS 5K, 4000 x2, beginner reading, special, nail).
 // Dung o: trang Word Collection (duyet/hoc theo topic) + Quiz vocabulary (nguon boc cau hoi).
 // Gan len $rootScope.VocaToUI de cac controller con dung chung.
-var VocaToUI = WORDS_3K_DATA
-	.concat(IELTS_5K_DATA)
-	.concat(word_4000_data)
-	.concat(word_4000_data_2)
-	.concat(BEGINNER_READING_VOCA)
+var VocaToUI = VOCABULARY_DATA
 	.concat(VOCA_SPECIAL)
 	.concat(NAIL_WORDS_DATA)
 

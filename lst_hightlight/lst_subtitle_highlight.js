@@ -343,29 +343,19 @@ function getHighlightCategory(word) {
 	if (!key) return null;
 	const keyTokens = key.split(/\s+/);
 	const entries = getHighlightEntries();
-	let found = null;
 	for (let i = 0; i < entries.length; i++) {
 		const entry = entries[i];
 		const entryTokens = entry.name.toLowerCase().split(/\s+/);
-		let exact = entryTokens.length === keyTokens.length;
-		if (exact) {
-			for (let j = 0; j < entryTokens.length; j++) {
-				const canPlural = entry.noun === true && j === entryTokens.length - 1;
-				if (!highlightTokenMatches(entryTokens[j], keyTokens[j], canPlural)) {
-					exact = false;
-					break;
-				}
-			}
-		}
-		if (exact) return { name: entry.category_name, color: entry.color };
+		if (entryTokens.length !== keyTokens.length) continue;
+		let exact = true;
 		for (let j = 0; j < entryTokens.length; j++) {
 			const canPlural = entry.noun === true && j === entryTokens.length - 1;
-			if (highlightTokenMatches(entryTokens[j], key, canPlural)) {
-				if (!found) found = entry;
-				else if (found.category_name !== entry.category_name) return null;
+			if (!highlightTokenMatches(entryTokens[j], keyTokens[j], canPlural)) {
+				exact = false;
 				break;
 			}
 		}
+		if (exact) return { name: entry.category_name, color: entry.color || '#ee02e2' };
 	}
-	return found ? { name: found.category_name, color: found.color || '#ee02e2' } : null;
+	return null;
 }

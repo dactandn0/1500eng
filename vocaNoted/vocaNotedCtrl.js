@@ -1,6 +1,4 @@
 
-document.write('<script src="./vocaNoted/vocaNoted_data.js" type="text/javascript"></script>');
-
 var app = angular.module("vocaNotedApp", []);
 app.controller("vocaNotedCtrl", function($scope) {
 VocaNotedCtrl = $scope;

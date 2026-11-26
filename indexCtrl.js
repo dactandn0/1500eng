@@ -543,9 +543,9 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			// (vd dau cau "Almond" hay cuoi cau "almond." van match "almond")
 			const lookup = String(touchedWord == null ? '' : touchedWord).trim().toLowerCase()
 				.replace(/^['"“”‘’\s.,!?;:()\[\]]+|['"“”‘’\s.,!?;:()\[\]]+$/g, '');
-			const wordSynonyms = getWordSynonym(touchedWord)
-			const wordFamily = getWordFamily(touchedWord)
-			const wordSameSounds = getWordSameSound(touchedWord)
+			const wordSynonyms = (typeof getWordSynonym === 'function') ? getWordSynonym(lookup) : ''
+			const wordFamily = (typeof getWordFamily === 'function') ? getWordFamily(lookup) : ''
+			const wordSameSounds = (typeof getWordSameSound === 'function') ? getWordSameSound(lookup) : ''
 			const hintHtml = (wordFamily || wordSynonyms || wordSameSounds)
 				? '<div class="toast-hints">' +
 					wordHintRow('Family', wordFamily) +

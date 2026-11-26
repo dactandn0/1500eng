@@ -544,9 +544,14 @@
 	   ];
 
 	$scope.playSound = function (path) {
-	    var audio = new Audio("sounds/" + path +'.mp3');
-	    audio.loop = false;
-	    audio.play();
+	    var text = String(path == null ? '' : path).replace(/[-_]+/g, ' ').trim();
+	    if (!text || !window.speechSynthesis) return;
+	    try {
+	        window.speechSynthesis.cancel();
+	        var utterance = new SpeechSynthesisUtterance(text);
+	        utterance.lang = 'en-US';
+	        window.speechSynthesis.speak(utterance);
+	    } catch (e) {}
 	}
 
 	$scope.stopSound = function () {

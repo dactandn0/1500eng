@@ -92,7 +92,7 @@ function getWordFamily(word)
 		if (IsExisted(words, word))
 		{
 			arr = words.split('|')
-			arr = arr.filter(e => e != word)
+			arr = arr.filter(e => !IsSameLookupWord(e, word))
 			break
 		}
 	}

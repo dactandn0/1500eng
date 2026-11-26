@@ -396,17 +396,48 @@ let SynonymData = [
 ]
 
 
+function LookupWordKey(word)
+{
+	return String(word == null ? '' : word).toLowerCase()
+		.replace(/\/[^\/]*\//g, ' ')
+		.replace(/\([^)]*\)/g, ' ')
+		.replace(/[.,!?;:"“”‘’()[\]{}]/g, ' ')
+		.replace(/\s+/g, ' ')
+		.trim()
+}
+
+function LookupWordForms(word)
+{
+	const key = LookupWordKey(word)
+	if (!key) return []
+	const forms = [key]
+	if (key.length > 3) {
+		if (key.slice(-3) == 'ies') forms.push(key.slice(0, -3) + 'y')
+		if (key.slice(-2) == 'es') forms.push(key.slice(0, -2))
+		if (key.slice(-1) == 's' && key.slice(-2) != 'ss') forms.push(key.slice(0, -1))
+	}
+	return forms.filter(Boolean)
+}
+
+function IsSameLookupWord(a, b)
+{
+	const fa = LookupWordForms(a)
+	const fb = LookupWordForms(b)
+	return fa.some(e => fb.indexOf(e) >= 0)
+}
+
 function getWordSynonym(word)
 {
-	word = word.toLowerCase()
+	const lookup = LookupWordKey(word)
+	if (!lookup) return ''
 	var arr = []
 	for (var i = 0; i < SynonymData.length; i++) 
 	{
 		let words = SynonymData[i].words;
-		if (IsExisted(words, word))
+		if (IsExisted(words, lookup))
 		{
 			arr = words.split('|')
-			arr = arr.filter(e => e.indexOf(word) == -1)
+			arr = arr.filter(e => !IsSameLookupWord(e, lookup))
 			break
 		}
 	}
@@ -417,10 +448,12 @@ function getWordSynonym(word)
 
 function IsExisted(seq, word)
 {
-	let seqs = seq.split('|')
-	const idx = seqs.findIndex(ele => ele.replace(/\(.*\)/,'').replace(/\/.*\//, '').trim() == word)
-	//console.log('IsExisted: ' + idx)
-	return idx >= 0
+	const targets = LookupWordForms(word)
+	if (!targets.length) return false
+	return String(seq == null ? '' : seq).split('|').some(function (ele) {
+		const forms = LookupWordForms(ele)
+		return forms.some(function (f) { return targets.indexOf(f) >= 0 })
+	})
 }
 
 getWordSynonym('convenient')

@@ -240,7 +240,7 @@ function wordTokens(text) {
 function getLessonHighlightSeqs() {
 	const raw = (typeof getUniqueHighlights === 'function')
 		? getUniqueHighlights()
-		: ((typeof lst_highlight !== 'undefined') ? lst_highlight : '');
+		: ((typeof kApp_Categories !== 'undefined') ? kApp_Categories : '');
 	const parts = Array.isArray(raw) ? raw : String(raw == null ? '' : raw).split(/[\n,]+/);
 	const key = parts.join('\u0001');
 	if (key === highlightRawCache) return highlightSeqCache;

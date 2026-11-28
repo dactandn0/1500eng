@@ -1372,7 +1372,6 @@ app.factory('baseListenSubtitle', ['$timeout', '$interval', '$sce', 'toastr',
 					if (!sub) return '';
 					const hl = getLessonHighlightSeqs();
 					if (sub.enSafe === undefined) sub.enSafe = escapeHtmlText(sub.en);
-					console.log("hl", hl);
 					if (!$scope.touchSpeech) {
 						if (!hl.length) return sub.enSafe;
 						if (sub.enSafeHlKey !== highlightRawCache) {

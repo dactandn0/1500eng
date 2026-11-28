@@ -306,8 +306,8 @@ function getHighlightEntries() {
 	const raw = Array.isArray(kApp_Categories)
 		? kApp_Categories
 		: String(kApp_Categories == null ? '' : kApp_Categories).split(/[\n,]+/);
-	const seen = Object.create(null);
-	const entries = [];
+		const seenByCategory = Object.create(null);
+		const entries = [];
 	raw.forEach(function (item) {
 		const isObj = item && typeof item === 'object';
 		const categoryName = isObj ? String(item.category_name || item.category || 'Other') : 'Other';
@@ -326,9 +326,9 @@ function getHighlightEntries() {
 				color: '#ee02e2',
 				noun: false
 			};
-		const key = entry.name.toLowerCase();
-		if (!entry.name || seen[key]) return;
-		seen[key] = true;
+		const key = String(categoryName || 'Other').toLowerCase() + '\u0000' + entry.name.toLowerCase();
+		if (!entry.name || seenByCategory[key]) return;
+		seenByCategory[key] = true;
 		entries.push(entry);
 	});
 	return entries;
@@ -338,12 +338,13 @@ function getUniqueHighlights() {
 	return getHighlightEntries().map(function (entry) { return entry.name; });
 }
 
-function getHighlightCategory(word) {
+function getHighlightCategories(word) {
 	const key = String(word == null ? '' : word).trim().toLowerCase()
 		.replace(/^[^a-z0-9\u00C0-\u024F]+|[^a-z0-9\u00C0-\u024F]+$/g, '');
-	if (!key) return null;
+	if (!key) return [];
 	const keyTokens = key.split(/\s+/);
 	const entries = getHighlightEntries();
+	const matches = [];
 	for (let i = 0; i < entries.length; i++) {
 		const entry = entries[i];
 		const entryTokens = entry.name.toLowerCase().split(/\s+/);
@@ -356,7 +357,22 @@ function getHighlightCategory(word) {
 				break;
 			}
 		}
-		if (exact) return { name: entry.category_name, color: entry.color || '#ee02e2' };
+		if (exact) {
+			matches.push({ name: entry.category_name, color: entry.color || '#ee02e2' });
+		}
 	}
-	return null;
+	const seen = Object.create(null);
+	const out = [];
+	for (const m of matches) {
+		const k = String(m.name || '').toLowerCase();
+		if (!k || seen[k]) continue;
+		seen[k] = true;
+		out.push(m);
+	}
+	return out;
 }
+function getHighlightCategory(word) {
+	const cats = getHighlightCategories(word);
+	return cats.length ? cats[0] : null;
+}
+

@@ -3,1534 +3,1574 @@
 // Template html 2 trang giu rieng (chi khac header). Search/data goc khong doi.
 var app = angular.module('baseListenApp', []);
 app.factory('baseListenSubtitle', ['$timeout', '$interval', '$sce', 'toastr',
-function($timeout, $interval, $sce, toastr) {
-	return {
-		create: function($scope, $rootScope, cfg) {
-			cfg = cfg || {};
-			const POS_KEY = cfg.posKey || 'lstLesson';
-			const STAR_KEY = cfg.starKey || 'lstStar';
-			const UI_STATE_KEY = cfg.stateKey || (POS_KEY + '_uiState');
-			// header rieng tung trang (template html dung chung)
-			try {
-				const h = cfg.header || {};
-				$scope.studyEyebrow = h.eyebrow || '';
-				$scope.studyTitle = h.title || '';
-				$scope.studyDescription = h.desc || '';
-				$scope.studyStatus = h.status || '';
-			} catch (e) {}
-
-$scope.lessons = (cfg.data || []).slice();
-// order: so nho len truoc. Khong co order -> xuong cuoi (giu thu tu cu).
-$scope.lessons.sort(function (a, b) {
-	const oa = (a && typeof a.order === 'number') ? a.order : 1e9;
-	const ob = (b && typeof b.order === 'number') ? b.order : 1e9;
-	return oa - ob;
-});
-// bIgnored: 1 -> an khoi dropbox (0/khong co -> hien)
-$scope.lessonChoices = $scope.lessons.map(function (ls, i) {
-	return { i: i, title: ls.title, show: !(ls && ls.bIgnored) };
-}).filter(function (c) { return c.show; });
-$scope.lessonIdx = ($scope.lessonChoices.length ? $scope.lessonChoices[0].i : 0);
-// Nho bai dang mo (1 key POS_KEY = '<tenLesson>|<subIdx>') -> dropbox tu chon dung bai
-try {
-	const raw0 = localStorage.getItem(POS_KEY) || '';
-	const bar0 = raw0.lastIndexOf('|');
-	if (bar0 > 0) {
-		const lid = raw0.slice(0, bar0);
-		for (let k = 0; k < $scope.lessonChoices.length; k++) {
-			if (String($scope.lessons[$scope.lessonChoices[k].i].id) === lid) {
-				$scope.lessonIdx = $scope.lessonChoices[k].i;
-				break;
-			}
-		}
-	}
-} catch (e) {}
-$scope.lessonPicker = { q: '', open: false, active: 0 };
-// nhom bai dang bat (chu chay o header): lay tu LISTEN_GROUPS_LABEL trong data
-$scope.groupLabel = '';
-$scope.groupLabel = cfg.groupLabel || '';
-$scope.pickLesson = function (c) {
-	if (!c) return;
-	$scope.lessonPicker.q = c.title;
-	$scope.lessonPicker.open = false;
-	$scope.openLesson(c.i);
-};
-$scope.closeLessonDrop = function () {
-	$timeout(function () { $scope.lessonPicker.open = false; }, 150);
-};
-$scope.selectAllLesson = function (ev) {
-	// PC: bam vao o tim la boi den het de go de. iPhone/tablet: thoi (cam ung boi den rat kho chiu)
-	try {
-		if (('ontouchstart' in window) || (navigator.maxTouchPoints > 0)) return;
-		if (ev && ev.target && ev.target.select) ev.target.select();
-	} catch (e) {}
-};
-// Nut ‹ › canh Copy: qua bai truoc/sau trong dropbox (vong tron)
-$scope.stepLesson = function (ev, dir) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	try {
-		const list = $scope.lessonChoices || [];
-		if (!list.length) return;
-		let pos = 0;
-		for (let k = 0; k < list.length; k++) {
-			if (list[k].i === $scope.lessonIdx) { pos = k; break; }
-		}
-		pos = (pos + dir + list.length) % list.length;
-		$scope.pickLesson(list[pos]);
-	} catch (e) {}
-};
-// Dieu huong dropbox bang phim tren PC: len/xuong doi highlight, Enter chon, Esc dong
-$scope.filteredLessons = function () {
-	const q = ($scope.lessonPicker.q || '').toLowerCase().trim();
-	if (!q) return $scope.lessonChoices;
-	return $scope.lessonChoices.filter(function (c) { return (c.title || '').toLowerCase().indexOf(q) >= 0; });
-};
-$scope.lessonKey = function (ev) {
-	const key = ev.which || ev.keyCode;
-	const list = $scope.filteredLessons();
-	if (key === 40) { // Down
-		ev.preventDefault();
-		$scope.lessonPicker.open = true;
-		$scope.lessonPicker.active = Math.min(list.length - 1, $scope.lessonPicker.active + 1);
-	} else if (key === 38) { // Up
-		ev.preventDefault();
-		$scope.lessonPicker.open = true;
-		$scope.lessonPicker.active = Math.max(0, $scope.lessonPicker.active - 1);
-	} else if (key === 13) { // Enter
-		ev.preventDefault();
-		const pick = list[$scope.lessonPicker.active] || list[0];
-		if (pick) $scope.pickLesson(pick);
-		else $scope.lessonPicker.open = false;
-	} else if (key === 27) { // Esc
-		$scope.lessonPicker.open = false;
-	}
-};
-$scope.lesson = null;
-$scope.curIdx = -1;
-$scope.follow = true;
-$scope.touchSpeech = false;
-$scope.touchCount = 0;
-$scope.showScript = false;
-$scope.lessonNotes = '';
-let savedLoopState = null;
-function readUiState() {
-	try {
-		const raw = localStorage.getItem(UI_STATE_KEY);
-		if (!raw) return null;
-		const data = JSON.parse(raw);
-		return (data && typeof data === 'object') ? data : null;
-	} catch (e) { return null; }
-}
-function saveUiState() {
-	try {
-		const data = {
-			follow: !!$scope.follow,
-			touchSpeech: !!$scope.touchSpeech,
-			loop: null
-		};
-		if ($scope.loopMode === 'range' && $scope.loopA >= 0 && $scope.loopB >= 0 && $scope.lesson) {
-			data.loop = {
-				lessonId: String($scope.lesson.id),
-				a: $scope.loopA,
-				b: $scope.loopB,
-				start: $scope.loopStart,
-				end: $scope.loopEnd
-			};
-		}
-		localStorage.setItem(UI_STATE_KEY, JSON.stringify(data));
-	} catch (e) {}
-}
-function restoreUiState() {
-	const data = readUiState();
-	if (!data) return;
-	if (typeof data.follow === 'boolean') $scope.follow = data.follow;
-	if (typeof data.touchSpeech === 'boolean') $scope.touchSpeech = data.touchSpeech;
-	savedLoopState = data.loop || null;
-	setWatchAudioSessionType();
-}
-function restoreSavedLoop() {
-	if (destroyed) return;
-	const lp = savedLoopState;
-	if (!lp || !$scope.lesson) return;
-	if (String(lp.lessonId) !== String($scope.lesson.id)) return;
-	const subs = $scope.lesson.subs || [];
-	const a = parseInt(lp.a, 10);
-	const b = parseInt(lp.b, 10);
-	if (isNaN(a) || isNaN(b) || a < 0 || b < 0 || !subs[a] || !subs[b]) return;
-	if ($scope.loopMode !== 'off') return;
-	$scope.loopMode = 'range';
-	$scope.loopA = a;
-	$scope.loopB = b;
-	$scope.loopStart = Math.min(a, b);
-	$scope.loopEnd = Math.max(a, b);
-	$scope.loopCount = 0;
-	try { $scope.$applyAsync(); } catch (e) {}
-}
-restoreUiState();
-$scope.toggleFollow = function () {
-	// phai qua ham (ghi thang scope cha): nut nam trong ng-if (scope con),
-	// gán trực tiếp sẽ tạo biến shadow, nút bấm mà tick không thấy
-	$scope.follow = !$scope.follow;
-	saveUiState();
-};
-$scope.toggleScript = function () {
-	$scope.showScript = !$scope.showScript;
-};
-let touchShakeTimer = null;
-function stopTouchShake() {
-	try { if (touchShakeTimer) clearTimeout(touchShakeTimer); } catch (e) {}
-	touchShakeTimer = null;
-	try {
-		const btns = document.querySelectorAll('.watch-touch-toggle');
-		for (let i = 0; i < btns.length; i++) btns[i].classList.remove('is-shake');
-	} catch (e) {}
-}
-function shakeTouchToggle() {
-	try {
-		const btns = document.querySelectorAll('.watch-touch-toggle');
-		for (let i = 0; i < btns.length; i++) {
-			const btn = btns[i];
-			btn.classList.remove('is-shake');
-			void btn.offsetWidth;
-			btn.classList.add('is-shake');
-		}
-		if (touchShakeTimer) clearTimeout(touchShakeTimer);
-		touchShakeTimer = setTimeout(function () {
-			touchShakeTimer = null;
-			const list = document.querySelectorAll('.watch-touch-toggle');
-			for (let i = 0; i < list.length; i++) list[i].classList.remove('is-shake');
-		}, 420);
-	} catch (e) {}
-}
-function setWatchAudioSessionType() {
-	try {
-		if (!navigator.audioSession) return;
-		navigator.audioSession.type = $scope.touchSpeech ? 'ambient' : 'auto';
-	} catch (e) {}
-}
-$scope.toggleTouchSpeech = function () {
-	$scope.touchSpeech = !$scope.touchSpeech;
-	if (!$scope.touchSpeech) {
-		$scope.touchCount = 0;
-		stopTouchShake();
-	}
-	setWatchAudioSessionType();
-	saveUiState();
-};
-function escapeHtmlText(s) {
-	return String(s == null ? '' : s)
-		.replace(/&/g, '&amp;')
-		.replace(/</g, '&lt;')
-		.replace(/>/g, '&gt;')
-		.replace(/"/g, '&quot;')
-		.replace(/'/g, '&#39;');
-}
-let highlightRawCache = null;
-let highlightSeqCache = null;
-function wordTokens(text) {
-	const s = String(text || '');
-	const re = /[A-Za-z0-9\u00C0-\u024F]+(?:['’][A-Za-z0-9\u00C0-\u024F]+)*/g;
-	const out = [];
-	let m;
-	while ((m = re.exec(s))) {
-		out.push({ text: m[0], lower: m[0].toLowerCase(), start: m.index, end: m.index + m[0].length });
-	}
-	return out;
-}
-function getLessonHighlightSeqs() {
-	const raw = (typeof getUniqueHighlights === 'function')
-		? getUniqueHighlights()
-		: ((typeof kApp_Categories !== 'undefined') ? kApp_Categories : '');
-	const parts = Array.isArray(raw) ? raw : String(raw == null ? '' : raw).split(/[\n,]+/);
-	const key = parts.join('\u0001');
-	if (key === highlightRawCache) return highlightSeqCache;
-	highlightRawCache = key;
-	const seqs = [];
-	parts.forEach(function (part) {
-		const tokens = wordTokens(part).map(function (t) { return t.lower; });
-		if (tokens.length) seqs.push(tokens);
-	});
-	highlightSeqCache = seqs;
-	return seqs;
-}
-function markHighlightTokens(tokens, seqs) {
-	const marks = new Array(tokens.length);
-	for (let i = 0; i < marks.length; i++) marks[i] = false;
-	if (!seqs || !seqs.length) return marks;
-	for (let s = 0; s < seqs.length; s++) {
-		const seq = seqs[s];
-		for (let i = 0; i + seq.length <= tokens.length; i++) {
-			let ok = true;
-			for (let j = 0; j < seq.length; j++) {
-				const a = tokens[i + j].lower;
-				const b = seq[j];
-				let matched = (a === b);
-				if (!matched && typeof highlightTokenMatches === 'function') {
-					matched = highlightTokenMatches(b, a, true);
-				} else if (!matched && typeof highlightPluralForm === 'function') {
-					matched = highlightPluralForm(b) === a || highlightPluralForm(a) === b;
-				}
-				if (!matched) { ok = false; break; }
-			}
-			if (ok) {
-				for (let j = 0; j < seq.length; j++) marks[i + j] = true;
-			}
-		}
-	}
-	return marks;
-}
-function highlightHtml(text, seqs) {
-	const s = String(text || '');
-	if (!seqs || !seqs.length) return escapeHtmlText(s);
-	const tokens = wordTokens(s);
-	const marks = markHighlightTokens(tokens, seqs);
-	if (marks.indexOf(true) < 0) return escapeHtmlText(s);
-	let out = '';
-	let last = 0;
-	let i = 0;
-	while (i < tokens.length) {
-		const t = tokens[i];
-		out += escapeHtmlText(s.slice(last, t.start));
-		if (!marks[i]) {
-			out += escapeHtmlText(t.text);
-			last = t.end;
-			i++;
-			continue;
-		}
-		let j = i;
-		while (j + 1 < tokens.length && marks[j + 1]) j++;
-		const start = tokens[i].start;
-		const end = tokens[j].end;
-		const phrase = s.slice(start, end);
-		let color = '';
-		if (typeof getHighlightCategory === 'function') {
-			const cat = getHighlightCategory(phrase);
-			if (cat && cat.color) color = cat.color;
-		}
-		const style = color ? ' style="color:' + escapeHtmlText(color) + '"' : '';
-		out += '<span class="watch-hl"' + style + '>' + escapeHtmlText(phrase) + '</span>';
-		last = end;
-		i = j + 1;
-	}
-	out += escapeHtmlText(s.slice(last));
-	return out;
-}
-function wrapTouchWords(text, seqs) {
-	const s = String(text || '');
-	const tokens = wordTokens(s);
-	const marks = markHighlightTokens(tokens, seqs);
-	let out = '';
-	let last = 0;
-	for (let i = 0; i < tokens.length; i++) {
-		const t = tokens[i];
-		out += escapeHtmlText(s.slice(last, t.start));
-		if (!marks[i]) {
-			out += '<kkk ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</kkk>';
-			last = t.end;
-			continue;
-		}
-		let j = i;
-		while (j + 1 < tokens.length && marks[j + 1]) j++;
-		const phrase = s.slice(tokens[i].start, tokens[j].end);
-		let color = '';
-		if (typeof getHighlightCategory === 'function') {
-			const cat = getHighlightCategory(phrase);
-			if (cat && cat.color) color = cat.color;
-		}
-		const style = color ? ' style="color:' + escapeHtmlText(color) + '"' : '';
-		out += '<hl_word class="watch-hl"' + style + ' data-phrase="' + escapeHtmlText(phrase) + '" ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(phrase) + '</hl_word>';
-		last = tokens[j].end;
-		i = j;
-	}
-	out += escapeHtmlText(s.slice(last));
-	return out;
-}
-
-// Nut copy ke Script: copy full, hoac copy toan bo sub trong doan A-B khi dang lap.
-let lastCopyToast = null; // toast Copy dang mo -> mo moi thi clear cu truoc
-function copyTextToClipboard(text, done) {
-	try {
-		if (navigator.clipboard && navigator.clipboard.writeText) {
-			navigator.clipboard.writeText(text).then(done, done);
-			return;
-		}
-	} catch (e) {}
-	try {
-		const ta = document.createElement('textarea');
-		ta.value = text;
-		document.body.appendChild(ta);
-		ta.select();
-		try { document.execCommand('copy'); } catch (e2) {}
-		document.body.removeChild(ta);
-	} catch (e3) {}
-	done();
-}
-// iPhone/man hep: toast Copy dung div custom top-center; desktop dung toastr nhu cu
-function isNarrowCopyToast() {
-	try {
-		const ua = (navigator.userAgent || '');
-		if (/iPhone|iPod/i.test(ua)) return true;
-		if (window.innerWidth && window.innerWidth <= 640) return true;
-	} catch (e) {}
-	return false;
-}
-$scope.copyToastMsg = '';
-let copyToastTimer = null;
-let wrapCountdownTimer = null;
-let wrapCountdownActive = false;
-$scope.showCopyToast = function (msg) {
-	$scope.copyToastMsg = msg;
-	try { $scope.$applyAsync(); } catch (e) {}
-	try { if (copyToastTimer) $timeout.cancel(copyToastTimer); } catch (e2) {}
-	copyToastTimer = $timeout(function () { $scope.copyToastMsg = ''; }, 2500);
-};
-function clearWrapCountdown() {
-	const had = wrapCountdownActive || !!wrapCountdownTimer;
-	wrapCountdownActive = false;
-	try { if (wrapCountdownTimer) clearTimeout(wrapCountdownTimer); } catch (e) {}
-	wrapCountdownTimer = null;
-	if (!had) return;
-	$scope.copyToastMsg = '';
-	try { if (copyToastTimer) { $timeout.cancel(copyToastTimer); copyToastTimer = null; } } catch (e2) {}
-	try { $scope.$applyAsync(); } catch (e3) {}
-}
-function startWrapCountdown(seconds) {
-	if (wrapCountdownActive) return;
-	wrapCountdownActive = true;
-	let left = Math.max(1, Math.ceil(seconds || 0));
-	const show = function () {
-		$scope.copyToastMsg = 'Replaying in ' + left + '...';
-		try { $scope.$applyAsync(); } catch (e) {}
-		try { if (copyToastTimer) { $timeout.cancel(copyToastTimer); copyToastTimer = null; } } catch (e2) {}
-	};
-	const step = function () {
-		wrapCountdownTimer = null;
-		left -= 1;
-		if (left > 0) {
-			show();
-			wrapCountdownTimer = setTimeout(step, 1000);
-		} else {
-			$scope.copyToastMsg = '';
-			try { $scope.$applyAsync(); } catch (e) {}
-		}
-	};
-	show();
-	wrapCountdownTimer = setTimeout(step, 1000);
-}
-$scope.copyLabel = function () {
-	const subs = ($scope.lesson && $scope.lesson.subs) || [];
-	if ($scope.loopMode === 'range' && $scope.loopA >= 0 && $scope.loopB >= 0 && subs[$scope.loopA] && subs[$scope.loopB])
-		return 'A+B';
-	return 'All';
-};
-$scope.copySubs = function (ev) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	try {
-		const subs = ($scope.lesson && $scope.lesson.subs) || [];
-		if (!subs.length) return;
-		const aIdx = $scope.loopA, bIdx = $scope.loopB;
-		const hasRange = $scope.loopMode === 'range' && aIdx >= 0 && bIdx >= 0 && subs[aIdx] && subs[bIdx];
-		let text = '', msg = '';
-		if (hasRange) {
-			const start = Math.min(aIdx, bIdx), end = Math.max(aIdx, bIdx);
-			const lines = subs.slice(start, end + 1).map(function (s) { return s.en; });
-			text = lines.join('\n');
-			msg = 'Copied A+B (' + lines.length + ' lines)';
-		} else {
-			text = subs.map(function (s) { return s.en; }).join('\n');
-			msg = 'Copied all (' + subs.length + ' lines)';
-		}
-		copyLock = true; // khoa auto-copy cua tick de giu nguyen clipboard vua copy
-		copyTextToClipboard(text, function () {
-			try {
-				if (isNarrowCopyToast()) $scope.showCopyToast(msg);
-				else {
-					if (lastCopyToast) toastr.clear(lastCopyToast);
-					lastCopyToast = toastr.info(msg, 'Copied');
-				}
-			} catch (e) {}
-		});
-	} catch (e) {}
-};
-$scope.loopMode = 'off';
-$scope.loopIdx = -1;
-$scope.loopA = -1;
-$scope.loopB = -1;
-$scope.loopStart = -1;
-$scope.loopEnd = -1;
-$scope.loopCount = 0;
-// 1 note tai 1 thoi diem (accordion): mo Note B -> Note A tu dong.
-// Bam lai nut Note cua dong dang mo -> dong. Doi bai -> dong het.
-$scope.openNoteIdx = -1;
-$scope.toggleNote = function (ev, idx) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	$scope.openNoteIdx = ($scope.openNoteIdx === idx) ? -1 : idx;
-	if ($scope.openNoteIdx >= 0) {
-		// mo xong cuon nhe panel toi dong note (chi cuon panel sub, khong cuon ca trang)
-		// + tam dung follow-scroll 1.5s de panel kip toi note roi AutoFollow chay tiep
-		noteScrollGraceUntil = Date.now() + 1500;
-		$timeout(function () { try { scrollPanelTo($scope.openNoteIdx); } catch (e) {} }, 120);
-	}
-};
-// Star: luu dong sub yeu thich. Gom 1 key duy nhat STAR_KEY = JSON {<lessonId>:[idx,...]}.
-// Vao route / doi bai -> load lai de set icon on/off.
-$scope.starMap = {}; // idx -> true (bai hien tai)
-function readStarStore() {
-	try {
-		const raw = localStorage.getItem(STAR_KEY);
-		if (!raw) return {};
-		const o = JSON.parse(raw);
-		return (o && typeof o === 'object') ? o : {};
-	} catch (e) { return {}; }
-}
-function writeStarStore(o) {
-	try { localStorage.setItem(STAR_KEY, JSON.stringify(o)); } catch (e) {}
-}
-function lessonStarId() {
-	try { return String(($scope.lesson && $scope.lesson.id) || ''); } catch (e) { return ''; }
-}
-function loadStars() {
-	$scope.starMap = {};
-	try {
-		// migrate 1 lan key cu kieu lstStar_<id>-<idx> -> gom vao JSON roi xoa key cu
-		const olds = [];
-		for (let i = 0; i < localStorage.length; i++) {
-			const k = localStorage.key(i);
-			if (k && k.indexOf('lstStar_') === 0) olds.push(k);
-		}
-		if (olds.length) {
-			const store = readStarStore();
-			olds.forEach(function (k) {
+	function ($timeout, $interval, $sce, toastr) {
+		return {
+			create: function ($scope, $rootScope, cfg) {
+				cfg = cfg || {};
+				const POS_KEY = cfg.posKey || 'lstLesson';
+				const STAR_KEY = cfg.starKey || 'lstStar';
+				const UI_STATE_KEY = cfg.stateKey || (POS_KEY + '_uiState');
+				// header rieng tung trang (template html dung chung)
 				try {
-					const rest = k.slice('lstStar_'.length);
-					const dash = rest.lastIndexOf('-');
-					if (dash > 0) {
-						const lid = rest.slice(0, dash);
-						const idx = parseInt(rest.slice(dash + 1), 10);
-						if (lid && !isNaN(idx)) {
-							store[lid] = store[lid] || [];
-							if (store[lid].indexOf(idx) < 0) store[lid].push(idx);
+					const h = cfg.header || {};
+					$scope.studyEyebrow = h.eyebrow || '';
+					$scope.studyTitle = h.title || '';
+					$scope.studyDescription = h.desc || '';
+					$scope.studyStatus = h.status || '';
+				} catch (e) { }
+
+				$scope.lessons = (cfg.data || []).slice();
+				// order: so nho len truoc. Khong co order -> xuong cuoi (giu thu tu cu).
+				$scope.lessons.sort(function (a, b) {
+					const oa = (a && typeof a.order === 'number') ? a.order : 1e9;
+					const ob = (b && typeof b.order === 'number') ? b.order : 1e9;
+					return oa - ob;
+				});
+				// bIgnored: 1 -> an khoi dropbox (0/khong co -> hien)
+				$scope.lessonChoices = $scope.lessons.map(function (ls, i) {
+					return { i: i, title: ls.title, show: !(ls && ls.bIgnored) };
+				}).filter(function (c) { return c.show; });
+				$scope.lessonIdx = ($scope.lessonChoices.length ? $scope.lessonChoices[0].i : 0);
+				// Nho bai dang mo (1 key POS_KEY = '<tenLesson>|<subIdx>') -> dropbox tu chon dung bai
+				try {
+					const raw0 = localStorage.getItem(POS_KEY) || '';
+					const bar0 = raw0.lastIndexOf('|');
+					if (bar0 > 0) {
+						const lid = raw0.slice(0, bar0);
+						for (let k = 0; k < $scope.lessonChoices.length; k++) {
+							if (String($scope.lessons[$scope.lessonChoices[k].i].id) === lid) {
+								$scope.lessonIdx = $scope.lessonChoices[k].i;
+								break;
+							}
 						}
 					}
-				} catch (e2) {}
-				try { localStorage.removeItem(k); } catch (e3) {}
-			});
-			writeStarStore(store);
-		}
-		const id = lessonStarId();
-		const arr = readStarStore()[id] || [];
-		for (let j = 0; j < arr.length; j++) {
-			const idx = parseInt(arr[j], 10);
-			if (!isNaN(idx)) $scope.starMap[idx] = true;
-		}
-	} catch (e) {}
-}
-$scope.isStarred = function (idx) { try { return !!$scope.starMap[idx]; } catch (e) { return false; } };
-$scope.starOnly = false;
-$scope.toggleStarOnly = function (ev) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	$scope.starOnly = !$scope.starOnly;
-};
-$scope.hasStarredSubs = function () {
-	try {
-		const subs = ($scope.lesson && $scope.lesson.subs) || [];
-		for (let i = 0; i < subs.length; i++) {
-			if ($scope.starMap[i]) return true;
-		}
-	} catch (e) {}
-	return false;
-};
-$scope.toggleStar = function (ev, idx) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	try {
-		const id = lessonStarId();
-		if (!id) return;
-		const store = readStarStore();
-		let arr = store[id] || [];
-		if ($scope.starMap[idx]) {
-			delete $scope.starMap[idx];
-			arr = arr.filter(function (v) { return parseInt(v, 10) !== idx; });
-		} else {
-			$scope.starMap[idx] = true;
-			if (arr.indexOf(idx) < 0) arr.push(idx);
-		}
-		if (arr.length) store[id] = arr;
-		else delete store[id];
-		writeStarStore(store);
-	} catch (e) {}
-};
-$scope.videoErr = '';
-$scope.videoUrl = null; // trusted 1 lan/khi doi bai (tranh reload loop)
-$scope.isAudio = false; // true khi lesson la file tieng (mp3/wav...)
-
-let videoEl = null;
-let ytPlayer = null;
-let pollTimer = null;
-let seekGraceUntil = 0; // bo qua timeupdate cu ngay sau khi seek (tranh highlight nhay ve dau)
-let loopSeekGraceUntil = 0; // bo qua seeking event cu khi loop tu seek
-let noteScrollGraceUntil = 0; // sau khi mo note: tam dung follow-scroll 1.5s de panel kip cuon toi note
-let manualScrollGraceUntil = 0; // sau khi bam nut scroll: tam dung follow-scroll de khong bi keo ve
-let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, chi nhan khi toi noi
-let seekSince = 0;
-let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
-let loopTimer = null;
-const WRAP_DELAY_MS = 3000;
-let programPause = false;
-let userPaused = false;
-let destroyed = false;
-
-function clearLoopTimer() {
-	try { clearTimeout(loopTimer); loopTimer = null; } catch (e) {}
-	clearWrapCountdown();
-}
-
-function resetLoop() {
-	$scope.loopMode = 'off';
-	$scope.loopIdx = -1;
-	$scope.loopA = -1;
-	$scope.loopB = -1;
-	$scope.loopStart = -1;
-	$scope.loopEnd = -1;
-	$scope.loopCount = 0;
-	clearLoopTimer();
-}
-
-$scope.rangeLoopLabel = function () {
-	if ($scope.loopMode !== 'range') return 'A-B';
-	return $scope.loopB < 0 ? 'A→B' : 'A-B';
-};
-
-$scope.toggleRangeLoop = function (ev) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	const idx = $scope.curIdx;
-	if (idx < 0) return;
-	if ($scope.loopMode === 'range') {
-		if ($scope.loopB < 0) {
-			if (idx === $scope.loopA) { resetLoop(); saveUiState(); return; }
-			$scope.loopB = idx;
-			$scope.loopStart = Math.min($scope.loopA, $scope.loopB);
-			$scope.loopEnd = Math.max($scope.loopA, $scope.loopB);
-			$scope.loopCount = 0;
-			const subs = $scope.lesson && $scope.lesson.subs;
-			if (subs && subs[$scope.loopStart]) $scope.seekSub(subs[$scope.loopStart], null, true);
-			saveUiState();
-		} else {
-			resetLoop();
-			saveUiState();
-		}
-		return;
-	}
-	resetLoop();
-	$scope.loopMode = 'range';
-	$scope.loopA = idx;
-	$scope.loopB = -1;
-	saveUiState();
-};
-
-$scope.trustSrc = function (src) {
-	try { return $sce.trustAsResourceUrl(src); } catch (e) { return src; }
-};
-
-function stopPoll() {
-	try { if (pollTimer) $interval.cancel(pollTimer); } catch (e) {}
-	pollTimer = null;
-}
-function teardown() {
-	stopPoll();
-	setupForSrc = null;
-	try {
-		if (ytPlayer && ytPlayer.destroy) ytPlayer.destroy();
-	} catch (e) {}
-	ytPlayer = null;
-	try {
-		if (videoEl) { videoEl.pause(); videoEl.removeAttribute('src'); videoEl.load(); }
-	} catch (e) {}
-	videoEl = null;
-}
-
-$scope.openLesson = function (i) {
-	resetLoop();
-	seekTarget = null;
-	try { Text2SpeechStop(); } catch (e2) {}
-	teardown();
-	$scope.lessonIdx = +i || 0;
-	$scope.lesson = $scope.lessons[$scope.lessonIdx] || null;
-	// giu subIdx cu de resume (doc TRUOC khi ghi de key; doi bai khac -> resumeIdx = -1)
-	let resumeIdx = -1;
-	try {
-		const rawOld = localStorage.getItem(POS_KEY) || '';
-		const barOld = rawOld.lastIndexOf('|');
-		if (barOld > 0 && $scope.lesson && rawOld.slice(0, barOld) === String($scope.lesson.id)) {
-			const r = parseInt(rawOld.slice(barOld + 1), 10);
-			if (!isNaN(r)) resumeIdx = r;
-		}
-	} catch (e) {}
-	// luu bai dang mo NGAY LAP TUC: POS_KEY = '<id>|-1' (chua nghe sub nao; sub chay se ghi de subIdx)
-	try {
-		if ($scope.lesson) localStorage.setItem(POS_KEY, $scope.lesson.id + '|-1');
-	} catch (e) {}
-	$scope.curIdx = -1;
-	$scope.openNoteIdx = -1; // doi bai -> dong het note cu
-	loadStars(); // doi bai -> load star tu local de set icon on/off
-	$scope.lessonPicker.q = ($scope.lesson && $scope.lesson.title) || '';
-	$scope.showScript = false;
-	$scope.starOnly = false;
-	try {
-		$scope.lessonNotes = ($scope.lesson && typeof LISTEN_NOTES !== 'undefined' && LISTEN_NOTES[$scope.lesson.id]) || '';
-	} catch (e) { $scope.lessonNotes = ''; }
-	$scope.videoErr = '';
-	$scope.videoUrl = null;
-	$scope.isAudio = false;
-	if (!$scope.lesson) return;
-	// trust 1 lan duy nhat -> ng-src on dinh, khong bi digest reset lien tuc
-	try {
-		if ($scope.lesson.type !== 'youtube') {
-			$scope.videoUrl = $sce.trustAsResourceUrl($scope.lesson.src);
-			$scope.isAudio = /\.(mp3|wav|m4a|ogg|oga|aac|flac|wma)$/i.test($scope.lesson.src || '');
-		}
-	} catch (e) {}
-	$timeout(function () { if (!destroyed) setupPlayer(); }, 100);
-	// resume: ve lai sub dang nghe truoc do (highlight + cuon panel + dua video ve moc gio, khong autoplay)
-	$timeout(function () {
-		try {
-			if (destroyed) return;
-			if (!$scope.lesson || !$scope.lesson.subs) return;
-			// don key cu ('listenSrt', 'listenSrt|<id>', 'ListenLessonId') -> chi giu POS_KEY
-			try {
-				try { localStorage.removeItem('listenSrt'); } catch (e1) {}
-				try { localStorage.removeItem('ListenLessonId'); } catch (e2) {}
-				const olds = [];
-				for (let i = 0; i < localStorage.length; i++) {
-					const k = localStorage.key(i);
-					if (k && k.indexOf('listenSrt|') === 0) olds.push(k);
-				}
-				olds.forEach(function (k) { try { localStorage.removeItem(k); } catch (e3) {} });
-			} catch (e0) {}
-			const saved = resumeIdx; // da doc giu tu dau openLesson (key gio la '<id>|-1')
-			if (isNaN(saved) || saved < 0 || !$scope.lesson.subs[saved]) return;
-			if ($scope.loopMode !== 'off') return;
-			if ($scope.curIdx >= 0 && $scope.curIdx !== saved) return;
-			if (seekTarget !== null) return;
-			$scope.seekSub($scope.lesson.subs[saved], null, false);
-			scrollPanelTo(saved);
-			lastSavedSub = -2; // ep ghi lai key (vua bi openLesson ghi de |-1)
-			saveSubPos(saved);
-		} catch (e) {}
-	}, 800);
-};
-
-function mediaEl() {
-	try {
-		return document.getElementById('watchVideo') || document.getElementById('watchAudio');
-	} catch (e) { return null; }
-}
-
-function primeWatchMediaForTts() {
-	try {
-		if ($scope.lesson && $scope.lesson.type === 'youtube') {
-			if (ytPlayer && ytPlayer.getPlayerState && ytPlayer.getPlayerState() === 2) ytPlayer.playVideo();
-			return;
-		}
-		const el = mediaEl();
-		if (el && !el.paused && !el.ended) {
-			const p = el.play();
-			if (p && typeof p.catch === 'function') p.catch(function () {});
-		}
-	} catch (e) {}
-}
-
-function isWatchMediaPlaying() {
-	try {
-		if ($scope.lesson && $scope.lesson.type === 'youtube') {
-			const state = ytPlayer && ytPlayer.getPlayerState ? ytPlayer.getPlayerState() : -1;
-			return state === 1 || state === 3;
-		}
-		const el = mediaEl();
-		return !!(el && !el.paused && !el.ended);
-	} catch (e) { return false; }
-}
-
-function routeWatchMediaToTtsCtx() {
-	try {
-		if ($scope.lesson && $scope.lesson.type === 'youtube') return;
-		const el = mediaEl();
-		if (!el || el._ttsMediaSrc) return;
-		if (typeof ttsEnsureCtx !== 'function') return;
-		const ctx = ttsEnsureCtx();
-		if (!ctx || typeof ctx.createMediaElementSource !== 'function') return;
-		const src = ctx.createMediaElementSource(el);
-		src.connect(ctx.destination);
-		el._ttsMediaSrc = src;
-	} catch (e) {}
-}
-
-function setupPlayer(retry) {
-	if (destroyed) return;
-	if (!$scope.lesson) return;
-	if ($scope.lesson.type === 'youtube') {
-		setupYouTube(retry);
-		return;
-	}
-	try {
-		videoEl = mediaEl();
-		if (!videoEl) {
-			// template chua render xong (lan dau vao route) -> thu lai vai lan
-			retry = retry || 0;
-			if (retry < 8) {
-				$timeout(function () { setupPlayer(retry + 1); }, 200);
-			}
-			return;
-		}
-		setupWatchSubsBounce();
-		if (videoEl._watchBound !== $scope.lesson.src) {
-				// go listener cu (doi bai) de khoi nhan doi timeupdate
-				try {
-					if (videoEl._watchTU) videoEl.removeEventListener('timeupdate', videoEl._watchTU);
-					if (videoEl._watchEN) videoEl.removeEventListener('ended', videoEl._watchEN);
-					if (videoEl._watchER) videoEl.removeEventListener('error', videoEl._watchER);
-					if (videoEl._watchLD) videoEl.removeEventListener('loadeddata', videoEl._watchLD);
-					if (videoEl._watchSD) videoEl.removeEventListener('seeked', videoEl._watchSD);
-					if (videoEl._watchPA) videoEl.removeEventListener('pause', videoEl._watchPA);
-					if (videoEl._watchPL) videoEl.removeEventListener('play', videoEl._watchPL);
-				} catch (e) {}
-				videoEl._watchTU = function () {
-					try { tick(videoEl.currentTime || 0); } catch (e) {}
+				} catch (e) { }
+				$scope.lessonPicker = { q: '', open: false, active: 0 };
+				// nhom bai dang bat (chu chay o header): lay tu LISTEN_GROUPS_LABEL trong data
+				$scope.groupLabel = '';
+				$scope.groupLabel = cfg.groupLabel || '';
+				$scope.pickLesson = function (c) {
+					if (!c) return;
+					$scope.lessonPicker.q = c.title;
+					$scope.lessonPicker.open = false;
+					$scope.openLesson(c.i);
 				};
-				videoEl._watchEN = function () {
+				$scope.closeLessonDrop = function () {
+					$timeout(function () { $scope.lessonPicker.open = false; }, 150);
+				};
+				$scope.selectAllLesson = function (ev) {
+					// PC: bam vao o tim la boi den het de go de. iPhone/tablet: thoi (cam ung boi den rat kho chiu)
 					try {
-						// het file -> ve sub 0 (dau bai), dung yen cho user bam play
-						if ($scope.loopMode === 'off' && loopTimer) return;
+						if (('ontouchstart' in window) || (navigator.maxTouchPoints > 0)) return;
+						if (ev && ev.target && ev.target.select) ev.target.select();
+					} catch (e) { }
+				};
+				// Nut ‹ › canh Copy: qua bai truoc/sau trong dropbox (vong tron)
+				$scope.stepLesson = function (ev, dir) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					try {
+						const list = $scope.lessonChoices || [];
+						if (!list.length) return;
+						let pos = 0;
+						for (let k = 0; k < list.length; k++) {
+							if (list[k].i === $scope.lessonIdx) { pos = k; break; }
+						}
+						pos = (pos + dir + list.length) % list.length;
+						$scope.pickLesson(list[pos]);
+					} catch (e) { }
+				};
+				// Dieu huong dropbox bang phim tren PC: len/xuong doi highlight, Enter chon, Esc dong
+				$scope.filteredLessons = function () {
+					const q = ($scope.lessonPicker.q || '').toLowerCase().trim();
+					if (!q) return $scope.lessonChoices;
+					return $scope.lessonChoices.filter(function (c) { return (c.title || '').toLowerCase().indexOf(q) >= 0; });
+				};
+				$scope.lessonKey = function (ev) {
+					const key = ev.which || ev.keyCode;
+					const list = $scope.filteredLessons();
+					if (key === 40) { // Down
+						ev.preventDefault();
+						$scope.lessonPicker.open = true;
+						$scope.lessonPicker.active = Math.min(list.length - 1, $scope.lessonPicker.active + 1);
+					} else if (key === 38) { // Up
+						ev.preventDefault();
+						$scope.lessonPicker.open = true;
+						$scope.lessonPicker.active = Math.max(0, $scope.lessonPicker.active - 1);
+					} else if (key === 13) { // Enter
+						ev.preventDefault();
+						const pick = list[$scope.lessonPicker.active] || list[0];
+						if (pick) $scope.pickLesson(pick);
+						else $scope.lessonPicker.open = false;
+					} else if (key === 27) { // Esc
+						$scope.lessonPicker.open = false;
+					}
+				};
+				$scope.lesson = null;
+				$scope.curIdx = -1;
+				$scope.follow = true;
+				$scope.touchSpeech = false;
+				$scope.touchCount = 0;
+				$scope.showScript = false;
+				$scope.lessonNotes = '';
+				let savedLoopState = null;
+				function readUiState() {
+					try {
+						const raw = localStorage.getItem(UI_STATE_KEY);
+						if (!raw) return null;
+						const data = JSON.parse(raw);
+						return (data && typeof data === 'object') ? data : null;
+					} catch (e) { return null; }
+				}
+				function saveUiState() {
+					try {
+						const data = {
+							follow: !!$scope.follow,
+							touchSpeech: !!$scope.touchSpeech,
+							loop: null
+						};
+						if ($scope.loopMode === 'range' && $scope.loopA >= 0 && $scope.loopB >= 0 && $scope.lesson) {
+							data.loop = {
+								lessonId: String($scope.lesson.id),
+								a: $scope.loopA,
+								b: $scope.loopB,
+								start: $scope.loopStart,
+								end: $scope.loopEnd
+							};
+						}
+						localStorage.setItem(UI_STATE_KEY, JSON.stringify(data));
+					} catch (e) { }
+				}
+				function restoreUiState() {
+					const data = readUiState();
+					if (!data) return;
+					if (typeof data.follow === 'boolean') $scope.follow = data.follow;
+					if (typeof data.touchSpeech === 'boolean') $scope.touchSpeech = data.touchSpeech;
+					savedLoopState = data.loop || null;
+					setWatchAudioSessionType();
+				}
+				function restoreSavedLoop() {
+					if (destroyed) return;
+					const lp = savedLoopState;
+					if (!lp || !$scope.lesson) return;
+					if (String(lp.lessonId) !== String($scope.lesson.id)) return;
+					const subs = $scope.lesson.subs || [];
+					const a = parseInt(lp.a, 10);
+					const b = parseInt(lp.b, 10);
+					if (isNaN(a) || isNaN(b) || a < 0 || b < 0 || !subs[a] || !subs[b]) return;
+					if ($scope.loopMode !== 'off') return;
+					$scope.loopMode = 'range';
+					$scope.loopA = a;
+					$scope.loopB = b;
+					$scope.loopStart = Math.min(a, b);
+					$scope.loopEnd = Math.max(a, b);
+					$scope.loopCount = 0;
+					try { $scope.$applyAsync(); } catch (e) { }
+				}
+				restoreUiState();
+				$scope.toggleFollow = function () {
+					// phai qua ham (ghi thang scope cha): nut nam trong ng-if (scope con),
+					// gán trực tiếp sẽ tạo biến shadow, nút bấm mà tick không thấy
+					$scope.follow = !$scope.follow;
+					saveUiState();
+				};
+				$scope.toggleScript = function () {
+					$scope.showScript = !$scope.showScript;
+				};
+				let touchShakeTimer = null;
+				function stopTouchShake() {
+					try { if (touchShakeTimer) clearTimeout(touchShakeTimer); } catch (e) { }
+					touchShakeTimer = null;
+					try {
+						const btns = document.querySelectorAll('.watch-touch-toggle');
+						for (let i = 0; i < btns.length; i++) btns[i].classList.remove('is-shake');
+					} catch (e) { }
+				}
+				function shakeTouchToggle() {
+					try {
+						const btns = document.querySelectorAll('.watch-touch-toggle');
+						for (let i = 0; i < btns.length; i++) {
+							const btn = btns[i];
+							btn.classList.remove('is-shake');
+							void btn.offsetWidth;
+							btn.classList.add('is-shake');
+						}
+						if (touchShakeTimer) clearTimeout(touchShakeTimer);
+						touchShakeTimer = setTimeout(function () {
+							touchShakeTimer = null;
+							const list = document.querySelectorAll('.watch-touch-toggle');
+							for (let i = 0; i < list.length; i++) list[i].classList.remove('is-shake');
+						}, 420);
+					} catch (e) { }
+				}
+				function setWatchAudioSessionType() {
+					try {
+						if (!navigator.audioSession) return;
+						navigator.audioSession.type = $scope.touchSpeech ? 'ambient' : 'auto';
+					} catch (e) { }
+				}
+				$scope.toggleTouchSpeech = function () {
+					$scope.touchSpeech = !$scope.touchSpeech;
+					if (!$scope.touchSpeech) {
+						$scope.touchCount = 0;
+						stopTouchShake();
+					}
+					setWatchAudioSessionType();
+					saveUiState();
+				};
+				function escapeHtmlText(s) {
+					return String(s == null ? '' : s)
+						.replace(/&/g, '&amp;')
+						.replace(/</g, '&lt;')
+						.replace(/>/g, '&gt;')
+						.replace(/"/g, '&quot;')
+						.replace(/'/g, '&#39;');
+				}
+				let highlightRawCache = null;
+				let highlightSeqCache = null;
+				function wordTokens(text) {
+					const s = String(text || '');
+					const re = /[A-Za-z0-9\u00C0-\u024F]+(?:['’][A-Za-z0-9\u00C0-\u024F]+)*/g;
+					const out = [];
+					let m;
+					while ((m = re.exec(s))) {
+						out.push({ text: m[0], lower: m[0].toLowerCase(), start: m.index, end: m.index + m[0].length });
+					}
+					return out;
+				}
+				function getLessonHighlightSeqs() {
+					const raw = (typeof getUniqueHighlights === 'function')
+						? getUniqueHighlights()
+						: ((typeof kApp_Categories !== 'undefined') ? kApp_Categories : '');
+					const parts = Array.isArray(raw) ? raw : String(raw == null ? '' : raw).split(/[\n,]+/);
+					const key = parts.join('\u0001');
+					if (key === highlightRawCache) return highlightSeqCache;
+					highlightRawCache = key;
+					const seqs = [];
+					parts.forEach(function (part) {
+						const tokens = wordTokens(part).map(function (t) { return t.lower; });
+						if (tokens.length) seqs.push(tokens);
+					});
+					highlightSeqCache = seqs;
+					return seqs;
+				}
+				function markHighlightTokens(tokens, seqs) {
+					const marks = new Array(tokens.length);
+					for (let i = 0; i < marks.length; i++) marks[i] = false;
+					if (!seqs || !seqs.length) return marks;
+					for (let s = 0; s < seqs.length; s++) {
+						const seq = seqs[s];
+						for (let i = 0; i + seq.length <= tokens.length; i++) {
+							let ok = true;
+							for (let j = 0; j < seq.length; j++) {
+								const a = tokens[i + j].lower;
+								const b = seq[j];
+								let matched = (a === b);
+								if (!matched && typeof highlightTokenMatches === 'function') {
+									matched = highlightTokenMatches(b, a, true);
+								} else if (!matched && typeof highlightPluralForm === 'function') {
+									matched = highlightPluralForm(b) === a || highlightPluralForm(a) === b;
+								}
+								if (!matched) { ok = false; break; }
+							}
+							if (ok) {
+								for (let j = 0; j < seq.length; j++) marks[i + j] = true;
+							}
+						}
+					}
+					return marks;
+				}
+				function highlightHtml(text, seqs) {
+					const s = String(text || '');
+					if (!seqs || !seqs.length) return escapeHtmlText(s);
+					const tokens = wordTokens(s);
+					const marks = markHighlightTokens(tokens, seqs);
+					if (marks.indexOf(true) < 0) return escapeHtmlText(s);
+					let out = '';
+					let last = 0;
+					let i = 0;
+					while (i < tokens.length) {
+						const t = tokens[i];
+						out += escapeHtmlText(s.slice(last, t.start));
+						if (!marks[i]) {
+							out += escapeHtmlText(t.text);
+							last = t.end;
+							i++;
+							continue;
+						}
+						let j = i;
+						while (j + 1 < tokens.length && marks[j + 1]) j++;
+						const start = tokens[i].start;
+						const end = tokens[j].end;
+						const phrase = s.slice(start, end);
+						let color = '';
+						if (typeof getHighlightCategory === 'function') {
+							const cat = getHighlightCategory(phrase);
+							if (cat && cat.color) color = cat.color;
+						}
+						const style = color ? ' style="color:' + escapeHtmlText(color) + '"' : '';
+						out += '<span class="watch-hl"' + style + '>' + escapeHtmlText(phrase) + '</span>';
+						last = end;
+						i = j + 1;
+					}
+					out += escapeHtmlText(s.slice(last));
+					return out;
+				}
+
+				function wrapTouchWords(text, seqs) {
+					const s = String(text || '');
+					const tokens = wordTokens(s);
+
+					const marks = markHighlightTokens(tokens, seqs);
+					let out = '';
+					let last = 0;
+
+					for (let i = 0; i < tokens.length; i++) {
+						const t = tokens[i];
+						out += escapeHtmlText(s.slice(last, t.start));
+
+						if (!marks[i]) {
+							out += '<kkk ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</kkk>';
+							last = t.end;
+							continue;
+						}
+
+						let j = i;
+						while (j + 1 < tokens.length && marks[j + 1]) j++;
+						const isMulti = j > i;
+						let phrase = '';
+						let color = '';
+
+						if (!isMulti) {
+							phrase = t.text;
+							if (typeof getHighlightCategory === 'function') {
+								const cat = getHighlightCategory(phrase);
+								if (cat && cat.color) color = cat.color;
+							}
+						} else {
+							const phraseTokens = tokens.slice(i, j + 1).map(tok => tok.lower);
+							const matchedSeq = seqs
+								? seqs.find(seq => seq.length === phraseTokens.length && seq.every((v, idx) => v === phraseTokens[idx]))
+								: null;
+							if (matchedSeq) {
+								phrase = s.slice(tokens[i].start, tokens[j].end);
+								if (typeof getHighlightCategory === 'function') {
+									const cat = getHighlightCategory(phrase);
+									if (cat && cat.color) color = cat.color;
+								}
+							} else if (typeof getHighlightCategory === 'function') {
+								// Không khớp cụm seqs: fallback lấy màu theo từ hiện tại (t.text)
+								const cat = getHighlightCategory(t.text);
+								if (cat && cat.color) color = cat.color;
+							}
+						}
+
+						const style = color ? ' style="color:' + escapeHtmlText(color) + '"' : '';
+
+						if (!isMulti) {
+							out += '<hl_word class="watch-hl"' + style + ' data-phrase="' + escapeHtmlText(phrase) + '" ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(phrase) + '</hl_word>';
+							last = t.end;
+						} else if (phrase) {
+							out += '<hl_word class="watch-hl"' + style + ' data-phrase="' + escapeHtmlText(phrase) + '" ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(phrase) + '</hl_word>';
+							last = tokens[j].end;
+							i = j;
+						} else {
+							// Hai từ liền kề đều có mark nhưng không tạo thành cụm từ trong seqs:
+							// xử lý từ hiện tại (t.text) rồi để vòng lặp đi tiếp sang từ kế tiếp (i + 1)
+							out += '<hl_word class="watch-hl"' + style + ' data-phrase="' + escapeHtmlText(t.text) + '" ng-click="subtitleWordSpeech($event, sub)">' + escapeHtmlText(t.text) + '</hl_word>';
+							last = t.end;
+						}
+					}
+
+					out += escapeHtmlText(s.slice(last));
+					return out;
+				}
+
+				// Nut copy ke Script: copy full, hoac copy toan bo sub trong doan A-B khi dang lap.
+				let lastCopyToast = null; // toast Copy dang mo -> mo moi thi clear cu truoc
+				function copyTextToClipboard(text, done) {
+					try {
+						if (navigator.clipboard && navigator.clipboard.writeText) {
+							navigator.clipboard.writeText(text).then(done, done);
+							return;
+						}
+					} catch (e) { }
+					try {
+						const ta = document.createElement('textarea');
+						ta.value = text;
+						document.body.appendChild(ta);
+						ta.select();
+						try { document.execCommand('copy'); } catch (e2) { }
+						document.body.removeChild(ta);
+					} catch (e3) { }
+					done();
+				}
+				// iPhone/man hep: toast Copy dung div custom top-center; desktop dung toastr nhu cu
+				function isNarrowCopyToast() {
+					try {
+						const ua = (navigator.userAgent || '');
+						if (/iPhone|iPod/i.test(ua)) return true;
+						if (window.innerWidth && window.innerWidth <= 640) return true;
+					} catch (e) { }
+					return false;
+				}
+				$scope.copyToastMsg = '';
+				let copyToastTimer = null;
+				let wrapCountdownTimer = null;
+				let wrapCountdownActive = false;
+				$scope.showCopyToast = function (msg) {
+					$scope.copyToastMsg = msg;
+					try { $scope.$applyAsync(); } catch (e) { }
+					try { if (copyToastTimer) $timeout.cancel(copyToastTimer); } catch (e2) { }
+					copyToastTimer = $timeout(function () { $scope.copyToastMsg = ''; }, 2500);
+				};
+				function clearWrapCountdown() {
+					const had = wrapCountdownActive || !!wrapCountdownTimer;
+					wrapCountdownActive = false;
+					try { if (wrapCountdownTimer) clearTimeout(wrapCountdownTimer); } catch (e) { }
+					wrapCountdownTimer = null;
+					if (!had) return;
+					$scope.copyToastMsg = '';
+					try { if (copyToastTimer) { $timeout.cancel(copyToastTimer); copyToastTimer = null; } } catch (e2) { }
+					try { $scope.$applyAsync(); } catch (e3) { }
+				}
+				function startWrapCountdown(seconds) {
+					if (wrapCountdownActive) return;
+					wrapCountdownActive = true;
+					let left = Math.max(1, Math.ceil(seconds || 0));
+					const show = function () {
+						$scope.copyToastMsg = 'Replaying in ' + left + '...';
+						try { $scope.$applyAsync(); } catch (e) { }
+						try { if (copyToastTimer) { $timeout.cancel(copyToastTimer); copyToastTimer = null; } } catch (e2) { }
+					};
+					const step = function () {
+						wrapCountdownTimer = null;
+						left -= 1;
+						if (left > 0) {
+							show();
+							wrapCountdownTimer = setTimeout(step, 1000);
+						} else {
+							$scope.copyToastMsg = '';
+							try { $scope.$applyAsync(); } catch (e) { }
+						}
+					};
+					show();
+					wrapCountdownTimer = setTimeout(step, 1000);
+				}
+				$scope.copyLabel = function () {
+					const subs = ($scope.lesson && $scope.lesson.subs) || [];
+					if ($scope.loopMode === 'range' && $scope.loopA >= 0 && $scope.loopB >= 0 && subs[$scope.loopA] && subs[$scope.loopB])
+						return 'A+B';
+					return 'All';
+				};
+				$scope.copySubs = function (ev) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					try {
 						const subs = ($scope.lesson && $scope.lesson.subs) || [];
-						if (subs.length) {
-							$scope.seekSub(subs[0], null, false);
-							if ($scope.follow) scrollPanelTo(0);
+						if (!subs.length) return;
+						const aIdx = $scope.loopA, bIdx = $scope.loopB;
+						const hasRange = $scope.loopMode === 'range' && aIdx >= 0 && bIdx >= 0 && subs[aIdx] && subs[bIdx];
+						let text = '', msg = '';
+						if (hasRange) {
+							const start = Math.min(aIdx, bIdx), end = Math.max(aIdx, bIdx);
+							const lines = subs.slice(start, end + 1).map(function (s) { return s.en; });
+							text = lines.join('\n');
+							msg = 'Copied A+B (' + lines.length + ' lines)';
+						} else {
+							text = subs.map(function (s) { return s.en; }).join('\n');
+							msg = 'Copied all (' + subs.length + ' lines)';
 						}
-						$scope.$applyAsync();
-					} catch (e) {}
+						copyLock = true; // khoa auto-copy cua tick de giu nguyen clipboard vua copy
+						copyTextToClipboard(text, function () {
+							try {
+								if (isNarrowCopyToast()) $scope.showCopyToast(msg);
+								else {
+									if (lastCopyToast) toastr.clear(lastCopyToast);
+									lastCopyToast = toastr.info(msg, 'Copied');
+								}
+							} catch (e) { }
+						});
+					} catch (e) { }
 				};
-				videoEl._watchER = function () {
+				$scope.loopMode = 'off';
+				$scope.loopIdx = -1;
+				$scope.loopA = -1;
+				$scope.loopB = -1;
+				$scope.loopStart = -1;
+				$scope.loopEnd = -1;
+				$scope.loopCount = 0;
+				// 1 note tai 1 thoi diem (accordion): mo Note B -> Note A tu dong.
+				// Bam lai nut Note cua dong dang mo -> dong. Doi bai -> dong het.
+				$scope.openNoteIdx = -1;
+				$scope.toggleNote = function (ev, idx) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					$scope.openNoteIdx = ($scope.openNoteIdx === idx) ? -1 : idx;
+					if ($scope.openNoteIdx >= 0) {
+						// mo xong cuon nhe panel toi dong note (chi cuon panel sub, khong cuon ca trang)
+						// + tam dung follow-scroll 1.5s de panel kip toi note roi AutoFollow chay tiep
+						noteScrollGraceUntil = Date.now() + 1500;
+						$timeout(function () { try { scrollPanelTo($scope.openNoteIdx); } catch (e) { } }, 120);
+					}
+				};
+				// Star: luu dong sub yeu thich. Gom 1 key duy nhat STAR_KEY = JSON {<lessonId>:[idx,...]}.
+				// Vao route / doi bai -> load lai de set icon on/off.
+				$scope.starMap = {}; // idx -> true (bai hien tai)
+				function readStarStore() {
 					try {
-						// chi bao loi that (404): src khop bai hien tai + NO_SOURCE.
-						// Bo qua error gia khi dang doi src (teardown/load).
-						const src = videoEl.getAttribute('src') || videoEl.currentSrc || '';
-						if (!src || videoEl.networkState !== 3) return;
-						if (src.indexOf($scope.lesson.src) < 0 && $scope.lesson.src.indexOf(src) < 0) {
-							// src la URL tuyet doi sau khi resolve: so sanh duoi file
-							const a = String(src).split('/').pop(), b = String($scope.lesson.src).split('/').pop();
-							if (a !== b) return;
-						}
-						$scope.videoErr = 'VIDEO FILE NOT FOUND  (git add watch/media).';
-						$scope.$applyAsync();
-					} catch (e) {}
-				};
-				videoEl._watchLD = function () {
-					try {
-						if ($scope.videoErr) { $scope.videoErr = ''; $scope.$applyAsync(); }
-					} catch (e) {}
-				};
-				videoEl.addEventListener('timeupdate', videoEl._watchTU);
-				videoEl.addEventListener('ended', videoEl._watchEN);
-				videoEl.addEventListener('error', videoEl._watchER);
-				videoEl.addEventListener('loadeddata', videoEl._watchLD);
-				// seek xong -> mo khoa tick ngay (khong doi timeupdate toi noi)
-				videoEl._watchSD = function () {
-					try { seekTarget = null; loopSeekGraceUntil = 0; } catch (e) {}
-				};
-				videoEl.addEventListener('seeked', videoEl._watchSD);
-				// pause tay -> huy replay dang cho (play lai se hen moi qua tick)
-				videoEl._watchPA = function () {
-					if (programPause) { programPause = false; return; }
-					if (videoEl.ended) return;
-					userPaused = true;
-					clearLoopTimer();
-				};
-				videoEl.addEventListener('pause', videoEl._watchPA);
-				videoEl._watchPL = function () {
-					userPaused = false;
-				};
-				videoEl.addEventListener('play', videoEl._watchPL);
-				videoEl._watchSK = function () {
-					// seeking do CODE (da dem truoc) -> tru va bo qua
-					let progSeek = false;
-					try { if (expectSeeks > 0) { expectSeeks--; progSeek = true; } } catch (e) {}
-					// Tat loop CHI KHI vi tri hien tai NAM NGOAI doan loop.
-					// Seeking chu dong co the ban event voi currentTime CU -> bo qua.
-					try {
-						if (Date.now() < loopSeekGraceUntil) return;
-						let ct = -1;
-						try { ct = videoEl.currentTime; } catch (e2) { ct = -1; }
-						if (progSeek && seekTarget !== null && ct >= 0 && Math.abs(ct - seekTarget) > 1.0) return;
-						const ls = $scope.lesson && $scope.lesson.subs;
-						if ($scope.loopMode === 'line' && $scope.loopIdx >= 0) {
-							const lo = ls && ls[$scope.loopIdx];
-							if (lo && ct >= 0 && ct >= (lo.t || 0) - 0.6 && ct <= (lo.e || 0) + 1.5) return;
-							resetLoop();
-							try { $scope.$applyAsync(); } catch (e4) {}
-						} else if ($scope.loopMode === 'range' && $scope.loopStart >= 0 && $scope.loopEnd >= 0) {
-							const lo = ls && ls[$scope.loopStart];
-							const hi = ls && ls[$scope.loopEnd];
-							if (lo && hi && ct >= 0 && ct >= (lo.t || 0) - 0.6 && ct <= (hi.e || 0) + 1.5) return;
-							resetLoop();
-							try { $scope.$applyAsync(); } catch (e4) {}
-						}
-					} catch (e) {}
-				};
-				videoEl.addEventListener('seeking', videoEl._watchSK);
-				videoEl._watchBound = $scope.lesson.src;
-			}
-			// Chi nap src khi bai DOI (tranh reset video khi viewContentLoaded goi lai).
-			// Nap lai giua chung se dua currentTime ve 0 -> highlight nhay ve subs[0].
-			if (setupForSrc !== $scope.lesson.src) {
-				try {
-					markProgMedia(); // nap bai moi -> seeking ke tiep la chu dong
-					videoEl.pause();
-					videoEl.removeAttribute('src');
-					videoEl.load();
-					videoEl.src = $scope.lesson.src;
-					videoEl.load();
-					setupForSrc = $scope.lesson.src;
-				} catch (e) {}
-			}
-		} catch (e) {}
-	}
-
-function ensureYtApi(cb) {	try {
-		if (window.YT && window.YT.Player) { cb(); return; }
-		window.__ytQueue = window.__ytQueue || [];
-		window.__ytQueue.push(cb);
-		if (!document.getElementById('ytApiTag')) {
-			const tag = document.createElement('script');
-			tag.id = 'ytApiTag';
-			tag.src = 'https://www.youtube.com/iframe_api';
-			document.head.appendChild(tag);
-			window.onYouTubeIframeAPIReady = function () {
-				try {
-					(window.__ytQueue || []).forEach(function (fn) { try { fn(); } catch (e) {} });
-					window.__ytQueue = [];
-				} catch (e) {}
-			};
-		}
-	} catch (e) {}
-}
-
-function setupYouTube(retry) {
-	if (!document.getElementById('watchYt')) {
-		// template chua render xong -> thu lai
-		retry = retry || 0;
-		if (retry < 8) {
-			$timeout(function () { setupYouTube(retry + 1); }, 200);
-		}
-		return;
-	}
-	setupWatchSubsBounce();
-	ensureYtApi(function () {
-		try {
-			if (!$scope.lesson || $scope.lesson.type !== 'youtube') return;
-			if (ytPlayer && ytPlayer._watchVid === $scope.lesson.src) return; // da tao roi
-			try {
-				if (ytPlayer && ytPlayer.destroy) ytPlayer.destroy();
-			} catch (e) {}
-			ytPlayer = null;
-			ytPlayer = new YT.Player('watchYt', {
-				width: '100%',
-				videoId: $scope.lesson.src,
-				playerVars: { rel: 0 },
-				events: {
-					onReady: function () { startPoll(); }
+						const raw = localStorage.getItem(STAR_KEY);
+						if (!raw) return {};
+						const o = JSON.parse(raw);
+						return (o && typeof o === 'object') ? o : {};
+					} catch (e) { return {}; }
 				}
-			});
-			try { ytPlayer._watchVid = $scope.lesson.src; } catch (e) {}
-			startPoll();
-		} catch (e) {}
-	});
-}
-
-function startPoll() {
-	stopPoll();
-	pollTimer = $interval(function () {
-		try {
-			if (ytPlayer && ytPlayer.getCurrentTime) tick(ytPlayer.getCurrentTime() || 0);
-		} catch (e) {}
-	}, 250);
-}
-
-// Sub chay/chuyen sang dong nao -> dua EN vao clipboard luon.
-// copyLock: bam nut Copy -> khoa auto-copy (tick) de khoi ghi de clipboard vua copy;
-// click sub thu cong thi mo khoa + copy nhu thuong.
-let copyLock = false;
-function copySubEn(sub) {
-	try {
-		if (copyLock) return;
-		if (!sub || !sub.en) return;
-		if (navigator.clipboard && navigator.clipboard.writeText) {
-			navigator.clipboard.writeText(sub.en).catch(function () {});
-		}
-	} catch (e) {}
-}
-// Ep chay lai animation moi lan doi cau (keyframes chi tu chay khi element moi sinh)
-function replayCurAnim(idx) {
-	try {
-		const nows = document.querySelectorAll('.watch-now');
-		for (let k = 0; k < nows.length; k++) {
-			nows[k].classList.remove('watch-anim');
-			void nows[k].offsetWidth;
-			nows[k].classList.add('watch-anim');
-		}
-		if (idx >= 0) {
-			const el = document.getElementById('wsub' + idx);
-			if (el) {
-				el.classList.remove('row-anim');
-				void el.offsetWidth;
-				el.classList.add('row-anim');
-			}
-		}
-	} catch (e) {}
-}
-// Cuon PANEL sub (chi trong div.watch-subs, khong cuon ca trang)
-// Vua mo note / vua bam nut scroll -> tam nghi follow-scroll, het grace AutoFollow chay lai
-function followPausedForNote() {
-	try { return Date.now() < noteScrollGraceUntil || Date.now() < manualScrollGraceUntil; } catch (e) { return false; }
-}
-// Nho vi tri sub dang nghe: 1 key duy nhat POS_KEY = '<tenLesson>|<subIdx>' (chi bai gan nhat)
-let lastSavedSub = -2;
-function saveSubPos(idx) {
-	try {
-		if (idx === lastSavedSub) return;
-		lastSavedSub = idx;
-		const id = ($scope.lesson && $scope.lesson.id) || '';
-		localStorage.setItem(POS_KEY, id + '|' + idx);
-	} catch (e) {}
-}
-function scrollPanelTo(idx) {
-	try {
-		const panels = document.querySelectorAll('.watch-subs');
-		const el = document.getElementById('wsub' + idx);
-		if (!el || !panels.length) return;
-		const panel = panels[panels.length - 1];
-		const pr = panel.getBoundingClientRect();
-		const er = el.getBoundingClientRect();
-		panel.scrollTop += (er.top - pr.top) - (panel.clientHeight / 2 - er.height / 2);
-	} catch (e) {}
-}
-// Nut len: dua panel ve dau danh sach phu de dang hien thi.
-$scope.scrollSubsTop = function (ev) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	$scope.follow = false;
-	saveUiState();
-	manualScrollGraceUntil = Date.now() + 1800;
-	try {
-		const panels = document.querySelectorAll('.watch-subs');
-		if (!panels.length) return;
-		panels[panels.length - 1].scrollTop = 0;
-	} catch (e) {}
-};
-// Nut xuong: dua panel toi dong ke cuoi (last - 1), tinh ca khi dang loc star.
-$scope.scrollSubsBottom = function (ev) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	$scope.follow = false;
-	saveUiState();
-	manualScrollGraceUntil = Date.now() + 1800;
-	try {
-		const subs = ($scope.lesson && $scope.lesson.subs) || [];
-		if (!subs.length) return;
-		const visible = [];
-		for (let i = 0; i < subs.length; i++) {
-			if (!$scope.starOnly || $scope.isStarred(i)) visible.push(i);
-		}
-		if (!visible.length) return;
-		scrollPanelTo(visible[Math.max(0, visible.length - 2)]);
-	} catch (e) {}
-};
-
-let watchBounceTimer = null;
-let watchBouncePanel = null;
-function bounceWatchSubs(panel, dir) {
-	try {
-		const inner = panel.querySelector('.watch-subs-inner');
-		if (!inner) return;
-		inner.classList.remove('is-bounce-top', 'is-bounce-bottom');
-		void inner.offsetWidth;
-		inner.classList.add(dir === 'top' ? 'is-bounce-top' : 'is-bounce-bottom');
-		if (watchBounceTimer) clearTimeout(watchBounceTimer);
-		watchBounceTimer = setTimeout(function () {
-			inner.classList.remove('is-bounce-top', 'is-bounce-bottom');
-			watchBounceTimer = null;
-		}, 260);
-	} catch (e) {}
-}
-function setupWatchSubsBounce() {
-	try {
-		const panels = document.querySelectorAll('.watch-subs');
-		const panel = panels[panels.length - 1];
-		if (!panel || panel._watchBounce) return;
-		panel._watchBounce = function (ev) {
-			if (ev.defaultPrevented || ev.ctrlKey || ev.shiftKey) return;
-			const dy = ev.deltaY || 0;
-			if (!dy || panel.scrollHeight <= panel.clientHeight + 1) return;
-			const atTop = panel.scrollTop <= 0;
-			const atBottom = panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 1;
-			if ((dy < 0 && atTop) || (dy > 0 && atBottom)) {
-				if (!watchBounceTimer) bounceWatchSubs(panel, dy < 0 ? 'top' : 'bottom');
-			}
-		};
-		panel.addEventListener('wheel', panel._watchBounce, { passive: true });
-		watchBouncePanel = panel;
-	} catch (e) {}
-}
-
-// t = giay hien tai -> highlight + auto-scroll + loop-line
-function tick(t) {
-	if (!$scope.lesson || !$scope.lesson.subs) return;
-	if (Date.now() < seekGraceUntil) return; // dang seek: bo event cu
-	// seek cham (file nang): chua toi noi thi bo het tick cu, khong cho giat highlight/scroll ve
-	if (seekTarget !== null) {
-		if (Math.abs(t - seekTarget) < 1.0) { seekTarget = null; }
-		else if (Date.now() - seekSince > 8000) { seekTarget = null; }
-		else return;
-	}
-	const subs = $scope.lesson.subs;
-	let idx = -1;
-	for (let i = 0; i < subs.length; i++) {
-		if (t >= subs[i].t - 0.15) idx = i;
-		else break;
-	}
-	// loop: hen gio dung hinh o cuoi doan, nghi im lang roi phat lai tu dau doan.
-	const loopEnd = (function () {
-		if ($scope.loopMode === 'line' && $scope.loopIdx >= 0) {
-			return { endIdx: $scope.loopIdx, restartIdx: $scope.loopIdx, line: true };
-		}
-		if ($scope.loopMode === 'range' && $scope.loopStart >= 0 && $scope.loopEnd >= 0) {
-			return { endIdx: $scope.loopEnd, restartIdx: $scope.loopStart, line: false };
-		}
-		return null;
-	})();
-	if (loopEnd && subs[loopEnd.endIdx] && subs[loopEnd.endIdx].e) {
-		const endIdx = loopEnd.endIdx;
-		const restartIdx = loopEnd.restartIdx;
-		const isLine = loopEnd.line;
-		const endT = subs[endIdx].e;
-		const stillActive = function () {
-			if (isLine) return $scope.loopMode === 'line' && $scope.loopIdx === endIdx;
-			return $scope.loopMode === 'range' && $scope.loopStart === restartIdx && $scope.loopEnd === endIdx;
-		};
-		const pauseMedia = function () {
-			programPause = true;
-			setTimeout(function () { programPause = false; }, 1500);
-			try {
-				if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
-				else { const me = mediaEl(); if (me) me.pause(); }
-			} catch (e) {}
-		};
-		const mediaPlaying = function () {
-			try {
-				if (ytPlayer && ytPlayer.getPlayerState) return (ytPlayer.getPlayerState() === 1);
-				const me = mediaEl();
-				return !!(me && !me.paused && !me.ended);
-			} catch (e) { return true; }
-		};
-		const beginPause = function () {
-			loopTimer = null;
-			try {
-				if (!stillActive()) return;
-				if (!$scope.lesson || $scope.lesson.subs[endIdx] !== subs[endIdx]) return;
-				if (!mediaPlaying()) return;
-				pauseMedia();
-				loopTimer = setTimeout(function () {
-					loopTimer = null;
+				function writeStarStore(o) {
+					try { localStorage.setItem(STAR_KEY, JSON.stringify(o)); } catch (e) { }
+				}
+				function lessonStarId() {
+					try { return String(($scope.lesson && $scope.lesson.id) || ''); } catch (e) { return ''; }
+				}
+				function loadStars() {
+					$scope.starMap = {};
 					try {
-						if (!stillActive()) return;
-						if (!$scope.lesson || $scope.lesson.subs[endIdx] !== subs[endIdx]) return;
-						$scope.loopCount += 1;
-						$scope.seekSub(subs[restartIdx], null, true);
-						setTimeout(function () {
+						// migrate 1 lan key cu kieu lstStar_<id>-<idx> -> gom vao JSON roi xoa key cu
+						const olds = [];
+						for (let i = 0; i < localStorage.length; i++) {
+							const k = localStorage.key(i);
+							if (k && k.indexOf('lstStar_') === 0) olds.push(k);
+						}
+						if (olds.length) {
+							const store = readStarStore();
+							olds.forEach(function (k) {
+								try {
+									const rest = k.slice('lstStar_'.length);
+									const dash = rest.lastIndexOf('-');
+									if (dash > 0) {
+										const lid = rest.slice(0, dash);
+										const idx = parseInt(rest.slice(dash + 1), 10);
+										if (lid && !isNaN(idx)) {
+											store[lid] = store[lid] || [];
+											if (store[lid].indexOf(idx) < 0) store[lid].push(idx);
+										}
+									}
+								} catch (e2) { }
+								try { localStorage.removeItem(k); } catch (e3) { }
+							});
+							writeStarStore(store);
+						}
+						const id = lessonStarId();
+						const arr = readStarStore()[id] || [];
+						for (let j = 0; j < arr.length; j++) {
+							const idx = parseInt(arr[j], 10);
+							if (!isNaN(idx)) $scope.starMap[idx] = true;
+						}
+					} catch (e) { }
+				}
+				$scope.isStarred = function (idx) { try { return !!$scope.starMap[idx]; } catch (e) { return false; } };
+				$scope.starOnly = false;
+				$scope.toggleStarOnly = function (ev) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					$scope.starOnly = !$scope.starOnly;
+				};
+				$scope.hasStarredSubs = function () {
+					try {
+						const subs = ($scope.lesson && $scope.lesson.subs) || [];
+						for (let i = 0; i < subs.length; i++) {
+							if ($scope.starMap[i]) return true;
+						}
+					} catch (e) { }
+					return false;
+				};
+				$scope.toggleStar = function (ev, idx) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					try {
+						const id = lessonStarId();
+						if (!id) return;
+						const store = readStarStore();
+						let arr = store[id] || [];
+						if ($scope.starMap[idx]) {
+							delete $scope.starMap[idx];
+							arr = arr.filter(function (v) { return parseInt(v, 10) !== idx; });
+						} else {
+							$scope.starMap[idx] = true;
+							if (arr.indexOf(idx) < 0) arr.push(idx);
+						}
+						if (arr.length) store[id] = arr;
+						else delete store[id];
+						writeStarStore(store);
+					} catch (e) { }
+				};
+				$scope.videoErr = '';
+				$scope.videoUrl = null; // trusted 1 lan/khi doi bai (tranh reload loop)
+				$scope.isAudio = false; // true khi lesson la file tieng (mp3/wav...)
+
+				let videoEl = null;
+				let ytPlayer = null;
+				let pollTimer = null;
+				let seekGraceUntil = 0; // bo qua timeupdate cu ngay sau khi seek (tranh highlight nhay ve dau)
+				let loopSeekGraceUntil = 0; // bo qua seeking event cu khi loop tu seek
+				let noteScrollGraceUntil = 0; // sau khi mo note: tam dung follow-scroll 1.5s de panel kip cuon toi note
+				let manualScrollGraceUntil = 0; // sau khi bam nut scroll: tam dung follow-scroll de khong bi keo ve
+				let seekTarget = null; // dang seek toi giay nay -> tick cu (vi tri cu) thi bo, chi nhan khi toi noi
+				let seekSince = 0;
+				let setupForSrc = null; // src da nap xong -> setupPlayer goi lai (viewContentLoaded) thi KHONG reset
+				let loopTimer = null;
+				const WRAP_DELAY_MS = 3000;
+				let programPause = false;
+				let userPaused = false;
+				let destroyed = false;
+
+				function clearLoopTimer() {
+					try { clearTimeout(loopTimer); loopTimer = null; } catch (e) { }
+					clearWrapCountdown();
+				}
+
+				function resetLoop() {
+					$scope.loopMode = 'off';
+					$scope.loopIdx = -1;
+					$scope.loopA = -1;
+					$scope.loopB = -1;
+					$scope.loopStart = -1;
+					$scope.loopEnd = -1;
+					$scope.loopCount = 0;
+					clearLoopTimer();
+				}
+
+				$scope.rangeLoopLabel = function () {
+					if ($scope.loopMode !== 'range') return 'A-B';
+					return $scope.loopB < 0 ? 'A→B' : 'A-B';
+				};
+
+				$scope.toggleRangeLoop = function (ev) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					const idx = $scope.curIdx;
+					if (idx < 0) return;
+					if ($scope.loopMode === 'range') {
+						if ($scope.loopB < 0) {
+							if (idx === $scope.loopA) { resetLoop(); saveUiState(); return; }
+							$scope.loopB = idx;
+							$scope.loopStart = Math.min($scope.loopA, $scope.loopB);
+							$scope.loopEnd = Math.max($scope.loopA, $scope.loopB);
+							$scope.loopCount = 0;
+							const subs = $scope.lesson && $scope.lesson.subs;
+							if (subs && subs[$scope.loopStart]) $scope.seekSub(subs[$scope.loopStart], null, true);
+							saveUiState();
+						} else {
+							resetLoop();
+							saveUiState();
+						}
+						return;
+					}
+					resetLoop();
+					$scope.loopMode = 'range';
+					$scope.loopA = idx;
+					$scope.loopB = -1;
+					saveUiState();
+				};
+
+				$scope.trustSrc = function (src) {
+					try { return $sce.trustAsResourceUrl(src); } catch (e) { return src; }
+				};
+
+				function stopPoll() {
+					try { if (pollTimer) $interval.cancel(pollTimer); } catch (e) { }
+					pollTimer = null;
+				}
+				function teardown() {
+					stopPoll();
+					setupForSrc = null;
+					try {
+						if (ytPlayer && ytPlayer.destroy) ytPlayer.destroy();
+					} catch (e) { }
+					ytPlayer = null;
+					try {
+						if (videoEl) { videoEl.pause(); videoEl.removeAttribute('src'); videoEl.load(); }
+					} catch (e) { }
+					videoEl = null;
+				}
+
+				$scope.openLesson = function (i) {
+					resetLoop();
+					seekTarget = null;
+					try { Text2SpeechStop(); } catch (e2) { }
+					teardown();
+					$scope.lessonIdx = +i || 0;
+					$scope.lesson = $scope.lessons[$scope.lessonIdx] || null;
+					// giu subIdx cu de resume (doc TRUOC khi ghi de key; doi bai khac -> resumeIdx = -1)
+					let resumeIdx = -1;
+					try {
+						const rawOld = localStorage.getItem(POS_KEY) || '';
+						const barOld = rawOld.lastIndexOf('|');
+						if (barOld > 0 && $scope.lesson && rawOld.slice(0, barOld) === String($scope.lesson.id)) {
+							const r = parseInt(rawOld.slice(barOld + 1), 10);
+							if (!isNaN(r)) resumeIdx = r;
+						}
+					} catch (e) { }
+					// luu bai dang mo NGAY LAP TUC: POS_KEY = '<id>|-1' (chua nghe sub nao; sub chay se ghi de subIdx)
+					try {
+						if ($scope.lesson) localStorage.setItem(POS_KEY, $scope.lesson.id + '|-1');
+					} catch (e) { }
+					$scope.curIdx = -1;
+					$scope.openNoteIdx = -1; // doi bai -> dong het note cu
+					loadStars(); // doi bai -> load star tu local de set icon on/off
+					$scope.lessonPicker.q = ($scope.lesson && $scope.lesson.title) || '';
+					$scope.showScript = false;
+					$scope.starOnly = false;
+					try {
+						$scope.lessonNotes = ($scope.lesson && typeof LISTEN_NOTES !== 'undefined' && LISTEN_NOTES[$scope.lesson.id]) || '';
+					} catch (e) { $scope.lessonNotes = ''; }
+					$scope.videoErr = '';
+					$scope.videoUrl = null;
+					$scope.isAudio = false;
+					if (!$scope.lesson) return;
+					// trust 1 lan duy nhat -> ng-src on dinh, khong bi digest reset lien tuc
+					try {
+						if ($scope.lesson.type !== 'youtube') {
+							$scope.videoUrl = $sce.trustAsResourceUrl($scope.lesson.src);
+							$scope.isAudio = /\.(mp3|wav|m4a|ogg|oga|aac|flac|wma)$/i.test($scope.lesson.src || '');
+						}
+					} catch (e) { }
+					$timeout(function () { if (!destroyed) setupPlayer(); }, 100);
+					// resume: ve lai sub dang nghe truoc do (highlight + cuon panel + dua video ve moc gio, khong autoplay)
+					$timeout(function () {
+						try {
+							if (destroyed) return;
+							if (!$scope.lesson || !$scope.lesson.subs) return;
+							// don key cu ('listenSrt', 'listenSrt|<id>', 'ListenLessonId') -> chi giu POS_KEY
+							try {
+								try { localStorage.removeItem('listenSrt'); } catch (e1) { }
+								try { localStorage.removeItem('ListenLessonId'); } catch (e2) { }
+								const olds = [];
+								for (let i = 0; i < localStorage.length; i++) {
+									const k = localStorage.key(i);
+									if (k && k.indexOf('listenSrt|') === 0) olds.push(k);
+								}
+								olds.forEach(function (k) { try { localStorage.removeItem(k); } catch (e3) { } });
+							} catch (e0) { }
+							const saved = resumeIdx; // da doc giu tu dau openLesson (key gio la '<id>|-1')
+							if (isNaN(saved) || saved < 0 || !$scope.lesson.subs[saved]) return;
+							if ($scope.loopMode !== 'off') return;
+							if ($scope.curIdx >= 0 && $scope.curIdx !== saved) return;
+							if (seekTarget !== null) return;
+							$scope.seekSub($scope.lesson.subs[saved], null, false);
+							scrollPanelTo(saved);
+							lastSavedSub = -2; // ep ghi lai key (vua bi openLesson ghi de |-1)
+							saveSubPos(saved);
+						} catch (e) { }
+					}, 800);
+				};
+
+				function mediaEl() {
+					try {
+						return document.getElementById('watchVideo') || document.getElementById('watchAudio');
+					} catch (e) { return null; }
+				}
+
+				function primeWatchMediaForTts() {
+					try {
+						if ($scope.lesson && $scope.lesson.type === 'youtube') {
+							if (ytPlayer && ytPlayer.getPlayerState && ytPlayer.getPlayerState() === 2) ytPlayer.playVideo();
+							return;
+						}
+						const el = mediaEl();
+						if (el && !el.paused && !el.ended) {
+							const p = el.play();
+							if (p && typeof p.catch === 'function') p.catch(function () { });
+						}
+					} catch (e) { }
+				}
+
+				function isWatchMediaPlaying() {
+					try {
+						if ($scope.lesson && $scope.lesson.type === 'youtube') {
+							const state = ytPlayer && ytPlayer.getPlayerState ? ytPlayer.getPlayerState() : -1;
+							return state === 1 || state === 3;
+						}
+						const el = mediaEl();
+						return !!(el && !el.paused && !el.ended);
+					} catch (e) { return false; }
+				}
+
+				function routeWatchMediaToTtsCtx() {
+					try {
+						if ($scope.lesson && $scope.lesson.type === 'youtube') return;
+						const el = mediaEl();
+						if (!el || el._ttsMediaSrc) return;
+						if (typeof ttsEnsureCtx !== 'function') return;
+						const ctx = ttsEnsureCtx();
+						if (!ctx || typeof ctx.createMediaElementSource !== 'function') return;
+						const src = ctx.createMediaElementSource(el);
+						src.connect(ctx.destination);
+						el._ttsMediaSrc = src;
+					} catch (e) { }
+				}
+
+				function setupPlayer(retry) {
+					if (destroyed) return;
+					if (!$scope.lesson) return;
+					if ($scope.lesson.type === 'youtube') {
+						setupYouTube(retry);
+						return;
+					}
+					try {
+						videoEl = mediaEl();
+						if (!videoEl) {
+							// template chua render xong (lan dau vao route) -> thu lai vai lan
+							retry = retry || 0;
+							if (retry < 8) {
+								$timeout(function () { setupPlayer(retry + 1); }, 200);
+							}
+							return;
+						}
+						setupWatchSubsBounce();
+						if (videoEl._watchBound !== $scope.lesson.src) {
+							// go listener cu (doi bai) de khoi nhan doi timeupdate
+							try {
+								if (videoEl._watchTU) videoEl.removeEventListener('timeupdate', videoEl._watchTU);
+								if (videoEl._watchEN) videoEl.removeEventListener('ended', videoEl._watchEN);
+								if (videoEl._watchER) videoEl.removeEventListener('error', videoEl._watchER);
+								if (videoEl._watchLD) videoEl.removeEventListener('loadeddata', videoEl._watchLD);
+								if (videoEl._watchSD) videoEl.removeEventListener('seeked', videoEl._watchSD);
+								if (videoEl._watchPA) videoEl.removeEventListener('pause', videoEl._watchPA);
+								if (videoEl._watchPL) videoEl.removeEventListener('play', videoEl._watchPL);
+							} catch (e) { }
+							videoEl._watchTU = function () {
+								try { tick(videoEl.currentTime || 0); } catch (e) { }
+							};
+							videoEl._watchEN = function () {
+								try {
+									// het file -> ve sub 0 (dau bai), dung yen cho user bam play
+									if ($scope.loopMode === 'off' && loopTimer) return;
+									const subs = ($scope.lesson && $scope.lesson.subs) || [];
+									if (subs.length) {
+										$scope.seekSub(subs[0], null, false);
+										if ($scope.follow) scrollPanelTo(0);
+									}
+									$scope.$applyAsync();
+								} catch (e) { }
+							};
+							videoEl._watchER = function () {
+								try {
+									// chi bao loi that (404): src khop bai hien tai + NO_SOURCE.
+									// Bo qua error gia khi dang doi src (teardown/load).
+									const src = videoEl.getAttribute('src') || videoEl.currentSrc || '';
+									if (!src || videoEl.networkState !== 3) return;
+									if (src.indexOf($scope.lesson.src) < 0 && $scope.lesson.src.indexOf(src) < 0) {
+										// src la URL tuyet doi sau khi resolve: so sanh duoi file
+										const a = String(src).split('/').pop(), b = String($scope.lesson.src).split('/').pop();
+										if (a !== b) return;
+									}
+									$scope.videoErr = 'VIDEO FILE NOT FOUND  (git add watch/media).';
+									$scope.$applyAsync();
+								} catch (e) { }
+							};
+							videoEl._watchLD = function () {
+								try {
+									if ($scope.videoErr) { $scope.videoErr = ''; $scope.$applyAsync(); }
+								} catch (e) { }
+							};
+							videoEl.addEventListener('timeupdate', videoEl._watchTU);
+							videoEl.addEventListener('ended', videoEl._watchEN);
+							videoEl.addEventListener('error', videoEl._watchER);
+							videoEl.addEventListener('loadeddata', videoEl._watchLD);
+							// seek xong -> mo khoa tick ngay (khong doi timeupdate toi noi)
+							videoEl._watchSD = function () {
+								try { seekTarget = null; loopSeekGraceUntil = 0; } catch (e) { }
+							};
+							videoEl.addEventListener('seeked', videoEl._watchSD);
+							// pause tay -> huy replay dang cho (play lai se hen moi qua tick)
+							videoEl._watchPA = function () {
+								if (programPause) { programPause = false; return; }
+								if (videoEl.ended) return;
+								userPaused = true;
+								clearLoopTimer();
+							};
+							videoEl.addEventListener('pause', videoEl._watchPA);
+							videoEl._watchPL = function () {
+								userPaused = false;
+							};
+							videoEl.addEventListener('play', videoEl._watchPL);
+							videoEl._watchSK = function () {
+								// seeking do CODE (da dem truoc) -> tru va bo qua
+								let progSeek = false;
+								try { if (expectSeeks > 0) { expectSeeks--; progSeek = true; } } catch (e) { }
+								// Tat loop CHI KHI vi tri hien tai NAM NGOAI doan loop.
+								// Seeking chu dong co the ban event voi currentTime CU -> bo qua.
+								try {
+									if (Date.now() < loopSeekGraceUntil) return;
+									let ct = -1;
+									try { ct = videoEl.currentTime; } catch (e2) { ct = -1; }
+									if (progSeek && seekTarget !== null && ct >= 0 && Math.abs(ct - seekTarget) > 1.0) return;
+									const ls = $scope.lesson && $scope.lesson.subs;
+									if ($scope.loopMode === 'line' && $scope.loopIdx >= 0) {
+										const lo = ls && ls[$scope.loopIdx];
+										if (lo && ct >= 0 && ct >= (lo.t || 0) - 0.6 && ct <= (lo.e || 0) + 1.5) return;
+										resetLoop();
+										try { $scope.$applyAsync(); } catch (e4) { }
+									} else if ($scope.loopMode === 'range' && $scope.loopStart >= 0 && $scope.loopEnd >= 0) {
+										const lo = ls && ls[$scope.loopStart];
+										const hi = ls && ls[$scope.loopEnd];
+										if (lo && hi && ct >= 0 && ct >= (lo.t || 0) - 0.6 && ct <= (hi.e || 0) + 1.5) return;
+										resetLoop();
+										try { $scope.$applyAsync(); } catch (e4) { }
+									}
+								} catch (e) { }
+							};
+							videoEl.addEventListener('seeking', videoEl._watchSK);
+							videoEl._watchBound = $scope.lesson.src;
+						}
+						// Chi nap src khi bai DOI (tranh reset video khi viewContentLoaded goi lai).
+						// Nap lai giua chung se dua currentTime ve 0 -> highlight nhay ve subs[0].
+						if (setupForSrc !== $scope.lesson.src) {
+							try {
+								markProgMedia(); // nap bai moi -> seeking ke tiep la chu dong
+								videoEl.pause();
+								videoEl.removeAttribute('src');
+								videoEl.load();
+								videoEl.src = $scope.lesson.src;
+								videoEl.load();
+								setupForSrc = $scope.lesson.src;
+							} catch (e) { }
+						}
+					} catch (e) { }
+				}
+
+				function ensureYtApi(cb) {
+					try {
+						if (window.YT && window.YT.Player) { cb(); return; }
+						window.__ytQueue = window.__ytQueue || [];
+						window.__ytQueue.push(cb);
+						if (!document.getElementById('ytApiTag')) {
+							const tag = document.createElement('script');
+							tag.id = 'ytApiTag';
+							tag.src = 'https://www.youtube.com/iframe_api';
+							document.head.appendChild(tag);
+							window.onYouTubeIframeAPIReady = function () {
+								try {
+									(window.__ytQueue || []).forEach(function (fn) { try { fn(); } catch (e) { } });
+									window.__ytQueue = [];
+								} catch (e) { }
+							};
+						}
+					} catch (e) { }
+				}
+
+				function setupYouTube(retry) {
+					if (!document.getElementById('watchYt')) {
+						// template chua render xong -> thu lai
+						retry = retry || 0;
+						if (retry < 8) {
+							$timeout(function () { setupYouTube(retry + 1); }, 200);
+						}
+						return;
+					}
+					setupWatchSubsBounce();
+					ensureYtApi(function () {
+						try {
+							if (!$scope.lesson || $scope.lesson.type !== 'youtube') return;
+							if (ytPlayer && ytPlayer._watchVid === $scope.lesson.src) return; // da tao roi
+							try {
+								if (ytPlayer && ytPlayer.destroy) ytPlayer.destroy();
+							} catch (e) { }
+							ytPlayer = null;
+							ytPlayer = new YT.Player('watchYt', {
+								width: '100%',
+								videoId: $scope.lesson.src,
+								playerVars: { rel: 0 },
+								events: {
+									onReady: function () { startPoll(); }
+								}
+							});
+							try { ytPlayer._watchVid = $scope.lesson.src; } catch (e) { }
+							startPoll();
+						} catch (e) { }
+					});
+				}
+
+				function startPoll() {
+					stopPoll();
+					pollTimer = $interval(function () {
+						try {
+							if (ytPlayer && ytPlayer.getCurrentTime) tick(ytPlayer.getCurrentTime() || 0);
+						} catch (e) { }
+					}, 250);
+				}
+
+				// Sub chay/chuyen sang dong nao -> dua EN vao clipboard luon.
+				// copyLock: bam nut Copy -> khoa auto-copy (tick) de khoi ghi de clipboard vua copy;
+				// click sub thu cong thi mo khoa + copy nhu thuong.
+				let copyLock = false;
+				function copySubEn(sub) {
+					try {
+						if (copyLock) return;
+						if (!sub || !sub.en) return;
+						if (navigator.clipboard && navigator.clipboard.writeText) {
+							navigator.clipboard.writeText(sub.en).catch(function () { });
+						}
+					} catch (e) { }
+				}
+				// Ep chay lai animation moi lan doi cau (keyframes chi tu chay khi element moi sinh)
+				function replayCurAnim(idx) {
+					try {
+						const nows = document.querySelectorAll('.watch-now');
+						for (let k = 0; k < nows.length; k++) {
+							nows[k].classList.remove('watch-anim');
+							void nows[k].offsetWidth;
+							nows[k].classList.add('watch-anim');
+						}
+						if (idx >= 0) {
+							const el = document.getElementById('wsub' + idx);
+							if (el) {
+								el.classList.remove('row-anim');
+								void el.offsetWidth;
+								el.classList.add('row-anim');
+							}
+						}
+					} catch (e) { }
+				}
+				// Cuon PANEL sub (chi trong div.watch-subs, khong cuon ca trang)
+				// Vua mo note / vua bam nut scroll -> tam nghi follow-scroll, het grace AutoFollow chay lai
+				function followPausedForNote() {
+					try { return Date.now() < noteScrollGraceUntil || Date.now() < manualScrollGraceUntil; } catch (e) { return false; }
+				}
+				// Nho vi tri sub dang nghe: 1 key duy nhat POS_KEY = '<tenLesson>|<subIdx>' (chi bai gan nhat)
+				let lastSavedSub = -2;
+				function saveSubPos(idx) {
+					try {
+						if (idx === lastSavedSub) return;
+						lastSavedSub = idx;
+						const id = ($scope.lesson && $scope.lesson.id) || '';
+						localStorage.setItem(POS_KEY, id + '|' + idx);
+					} catch (e) { }
+				}
+				function scrollPanelTo(idx) {
+					try {
+						const panels = document.querySelectorAll('.watch-subs');
+						const el = document.getElementById('wsub' + idx);
+						if (!el || !panels.length) return;
+						const panel = panels[panels.length - 1];
+						const pr = panel.getBoundingClientRect();
+						const er = el.getBoundingClientRect();
+						panel.scrollTop += (er.top - pr.top) - (panel.clientHeight / 2 - er.height / 2);
+					} catch (e) { }
+				}
+				// Nut len: dua panel ve dau danh sach phu de dang hien thi.
+				$scope.scrollSubsTop = function (ev) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					$scope.follow = false;
+					saveUiState();
+					manualScrollGraceUntil = Date.now() + 1800;
+					try {
+						const panels = document.querySelectorAll('.watch-subs');
+						if (!panels.length) return;
+						panels[panels.length - 1].scrollTop = 0;
+					} catch (e) { }
+				};
+				// Nut xuong: dua panel toi dong ke cuoi (last - 1), tinh ca khi dang loc star.
+				$scope.scrollSubsBottom = function (ev) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					$scope.follow = false;
+					saveUiState();
+					manualScrollGraceUntil = Date.now() + 1800;
+					try {
+						const subs = ($scope.lesson && $scope.lesson.subs) || [];
+						if (!subs.length) return;
+						const visible = [];
+						for (let i = 0; i < subs.length; i++) {
+							if (!$scope.starOnly || $scope.isStarred(i)) visible.push(i);
+						}
+						if (!visible.length) return;
+						scrollPanelTo(visible[Math.max(0, visible.length - 2)]);
+					} catch (e) { }
+				};
+
+				let watchBounceTimer = null;
+				let watchBouncePanel = null;
+				function bounceWatchSubs(panel, dir) {
+					try {
+						const inner = panel.querySelector('.watch-subs-inner');
+						if (!inner) return;
+						inner.classList.remove('is-bounce-top', 'is-bounce-bottom');
+						void inner.offsetWidth;
+						inner.classList.add(dir === 'top' ? 'is-bounce-top' : 'is-bounce-bottom');
+						if (watchBounceTimer) clearTimeout(watchBounceTimer);
+						watchBounceTimer = setTimeout(function () {
+							inner.classList.remove('is-bounce-top', 'is-bounce-bottom');
+							watchBounceTimer = null;
+						}, 260);
+					} catch (e) { }
+				}
+				function setupWatchSubsBounce() {
+					try {
+						const panels = document.querySelectorAll('.watch-subs');
+						const panel = panels[panels.length - 1];
+						if (!panel || panel._watchBounce) return;
+						panel._watchBounce = function (ev) {
+							if (ev.defaultPrevented || ev.ctrlKey || ev.shiftKey) return;
+							const dy = ev.deltaY || 0;
+							if (!dy || panel.scrollHeight <= panel.clientHeight + 1) return;
+							const atTop = panel.scrollTop <= 0;
+							const atBottom = panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 1;
+							if ((dy < 0 && atTop) || (dy > 0 && atBottom)) {
+								if (!watchBounceTimer) bounceWatchSubs(panel, dy < 0 ? 'top' : 'bottom');
+							}
+						};
+						panel.addEventListener('wheel', panel._watchBounce, { passive: true });
+						watchBouncePanel = panel;
+					} catch (e) { }
+				}
+
+				// t = giay hien tai -> highlight + auto-scroll + loop-line
+				function tick(t) {
+					if (!$scope.lesson || !$scope.lesson.subs) return;
+					if (Date.now() < seekGraceUntil) return; // dang seek: bo event cu
+					// seek cham (file nang): chua toi noi thi bo het tick cu, khong cho giat highlight/scroll ve
+					if (seekTarget !== null) {
+						if (Math.abs(t - seekTarget) < 1.0) { seekTarget = null; }
+						else if (Date.now() - seekSince > 8000) { seekTarget = null; }
+						else return;
+					}
+					const subs = $scope.lesson.subs;
+					let idx = -1;
+					for (let i = 0; i < subs.length; i++) {
+						if (t >= subs[i].t - 0.15) idx = i;
+						else break;
+					}
+					// loop: hen gio dung hinh o cuoi doan, nghi im lang roi phat lai tu dau doan.
+					const loopEnd = (function () {
+						if ($scope.loopMode === 'line' && $scope.loopIdx >= 0) {
+							return { endIdx: $scope.loopIdx, restartIdx: $scope.loopIdx, line: true };
+						}
+						if ($scope.loopMode === 'range' && $scope.loopStart >= 0 && $scope.loopEnd >= 0) {
+							return { endIdx: $scope.loopEnd, restartIdx: $scope.loopStart, line: false };
+						}
+						return null;
+					})();
+					if (loopEnd && subs[loopEnd.endIdx] && subs[loopEnd.endIdx].e) {
+						const endIdx = loopEnd.endIdx;
+						const restartIdx = loopEnd.restartIdx;
+						const isLine = loopEnd.line;
+						const endT = subs[endIdx].e;
+						const stillActive = function () {
+							if (isLine) return $scope.loopMode === 'line' && $scope.loopIdx === endIdx;
+							return $scope.loopMode === 'range' && $scope.loopStart === restartIdx && $scope.loopEnd === endIdx;
+						};
+						const pauseMedia = function () {
+							programPause = true;
+							setTimeout(function () { programPause = false; }, 1500);
+							try {
+								if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
+								else { const me = mediaEl(); if (me) me.pause(); }
+							} catch (e) { }
+						};
+						const mediaPlaying = function () {
+							try {
+								if (ytPlayer && ytPlayer.getPlayerState) return (ytPlayer.getPlayerState() === 1);
+								const me = mediaEl();
+								return !!(me && !me.paused && !me.ended);
+							} catch (e) { return true; }
+						};
+						const beginPause = function () {
+							loopTimer = null;
 							try {
 								if (!stillActive()) return;
-								if (userPaused) return;
-								const me = mediaEl();
-								if (me && me.paused && !me.ended) {
-									const p = me.play();
-									if (p && typeof p.catch === 'function') p.catch(function () {});
+								if (!$scope.lesson || $scope.lesson.subs[endIdx] !== subs[endIdx]) return;
+								if (!mediaPlaying()) return;
+								pauseMedia();
+								loopTimer = setTimeout(function () {
+									loopTimer = null;
+									try {
+										if (!stillActive()) return;
+										if (!$scope.lesson || $scope.lesson.subs[endIdx] !== subs[endIdx]) return;
+										$scope.loopCount += 1;
+										$scope.seekSub(subs[restartIdx], null, true);
+										setTimeout(function () {
+											try {
+												if (!stillActive()) return;
+												if (userPaused) return;
+												const me = mediaEl();
+												if (me && me.paused && !me.ended) {
+													const p = me.play();
+													if (p && typeof p.catch === 'function') p.catch(function () { });
+												}
+											} catch (e) { }
+										}, 1200);
+									} catch (e) { }
+								}, 0);
+							} catch (e) { }
+						};
+						if (t >= endT - 0.03) {
+							let playingNow = true;
+							try {
+								if (ytPlayer && ytPlayer.getPlayerState) playingNow = (ytPlayer.getPlayerState() === 1);
+								else { const me0 = mediaEl(); playingNow = !!(me0 && !me0.paused && !me0.ended); }
+							} catch (e) { }
+							if (!playingNow) {
+								if (isLine && $scope.curIdx !== endIdx) {
+									$scope.curIdx = endIdx;
+									try { $scope.$applyAsync(); } catch (e2) { }
 								}
-							} catch (e) {}
-						}, 1200);
-					} catch (e) {}
-				}, 0);
-			} catch (e) {}
-		};
-		if (t >= endT - 0.03) {
-			let playingNow = true;
-			try {
-				if (ytPlayer && ytPlayer.getPlayerState) playingNow = (ytPlayer.getPlayerState() === 1);
-				else { const me0 = mediaEl(); playingNow = !!(me0 && !me0.paused && !me0.ended); }
-			} catch (e) {}
-			if (!playingNow) {
-				if (isLine && $scope.curIdx !== endIdx) {
-					$scope.curIdx = endIdx;
-					try { $scope.$applyAsync(); } catch (e2) {}
+								return;
+							}
+							if (loopTimer) { try { clearTimeout(loopTimer); } catch (e) { } loopTimer = null; }
+							beginPause();
+						} else if (!loopTimer) {
+							loopTimer = setTimeout(beginPause, Math.max(0, (endT - t) * 1000));
+						}
+						if (isLine) {
+							if ($scope.curIdx !== endIdx) {
+								$scope.curIdx = endIdx;
+								try { $scope.$applyAsync(); } catch (e) { }
+								copySubEn(subs[endIdx]);
+								replayCurAnim(endIdx);
+								saveSubPos(endIdx);
+							}
+							if ($scope.follow && !followPausedForNote()) scrollPanelTo(endIdx);
+							return;
+						}
+					}
+					// het sub cuoi (con duoi file van chay) -> quay ve sub 0 (dau bai). Pause thi thoi.
+					const lastSub = subs[subs.length - 1];
+					if (lastSub && lastSub.e && idx === subs.length - 1 && $scope.loopMode === 'off') {
+						const wrapAt = lastSub.e + (WRAP_DELAY_MS / 1000);
+						const mediaPaused = function () {
+							try {
+								if (ytPlayer && ytPlayer.getPlayerState) return ytPlayer.getPlayerState() === 2;
+								const me0 = mediaEl();
+								return !!(me0 && me0.paused && !me0.ended);
+							} catch (e) { return false; }
+						};
+						if (t >= wrapAt) {
+							clearWrapCountdown();
+							if (loopTimer) { try { clearTimeout(loopTimer); } catch (e) { } loopTimer = null; }
+							if (!mediaPaused() && subs.length) {
+								$scope.seekSub(subs[0], null, true);
+								if ($scope.follow) scrollPanelTo(0);
+								return;
+							}
+						} else {
+							if (!loopTimer) {
+								loopTimer = setTimeout(function () {
+									loopTimer = null;
+									try {
+										if (!$scope.lesson || $scope.lesson.subs[subs.length - 1] !== lastSub) { clearWrapCountdown(); return; }
+										if ($scope.loopMode !== 'off') { clearWrapCountdown(); return; }
+										if (mediaPaused()) { clearWrapCountdown(); return; }
+										clearWrapCountdown();
+										$scope.seekSub(subs[0], null, true);
+										if ($scope.follow) scrollPanelTo(0);
+									} catch (e) { }
+								}, Math.max(0, (wrapAt - t) * 1000));
+							}
+							if (t >= lastSub.e) startWrapCountdown(wrapAt - t);
+						}
+					}
+					if (idx === $scope.curIdx) return;
+					$scope.curIdx = idx;
+					try { $scope.$applyAsync(); } catch (e) { }
+					copySubEn(subs[idx]);
+					replayCurAnim(idx);
+					saveSubPos(idx);
+					// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
+					if (idx >= 0 && $scope.follow && !followPausedForNote()) scrollPanelTo(idx);
 				}
-				return;
-			}
-			if (loopTimer) { try { clearTimeout(loopTimer); } catch (e) {} loopTimer = null; }
-			beginPause();
-		} else if (!loopTimer) {
-			loopTimer = setTimeout(beginPause, Math.max(0, (endT - t) * 1000));
-		}
-		if (isLine) {
-			if ($scope.curIdx !== endIdx) {
-				$scope.curIdx = endIdx;
-				try { $scope.$applyAsync(); } catch (e) {}
-				copySubEn(subs[endIdx]);
-				replayCurAnim(endIdx);
-				saveSubPos(endIdx);
-			}
-			if ($scope.follow && !followPausedForNote()) scrollPanelTo(endIdx);
-			return;
-		}
-	}
-	// het sub cuoi (con duoi file van chay) -> quay ve sub 0 (dau bai). Pause thi thoi.
-	const lastSub = subs[subs.length - 1];
-	if (lastSub && lastSub.e && idx === subs.length - 1 && $scope.loopMode === 'off') {
-		const wrapAt = lastSub.e + (WRAP_DELAY_MS / 1000);
-		const mediaPaused = function () {
-			try {
-				if (ytPlayer && ytPlayer.getPlayerState) return ytPlayer.getPlayerState() === 2;
-				const me0 = mediaEl();
-				return !!(me0 && me0.paused && !me0.ended);
-			} catch (e) { return false; }
-		};
-		if (t >= wrapAt) {
-			clearWrapCountdown();
-			if (loopTimer) { try { clearTimeout(loopTimer); } catch (e) {} loopTimer = null; }
-			if (!mediaPaused() && subs.length) {
-				$scope.seekSub(subs[0], null, true);
-				if ($scope.follow) scrollPanelTo(0);
-				return;
-			}
-		} else {
-			if (!loopTimer) {
-				loopTimer = setTimeout(function () {
-					loopTimer = null;
-					try {
-						if (!$scope.lesson || $scope.lesson.subs[subs.length - 1] !== lastSub) { clearWrapCountdown(); return; }
-						if ($scope.loopMode !== 'off') { clearWrapCountdown(); return; }
-						if (mediaPaused()) { clearWrapCountdown(); return; }
-						clearWrapCountdown();
-						$scope.seekSub(subs[0], null, true);
-						if ($scope.follow) scrollPanelTo(0);
-					} catch (e) {}
-				}, Math.max(0, (wrapAt - t) * 1000));
-			}
-			if (t >= lastSub.e) startWrapCountdown(wrapAt - t);
-		}
-	}
-	if (idx === $scope.curIdx) return;
-	$scope.curIdx = idx;
-	try { $scope.$applyAsync(); } catch (e) {}
-	copySubEn(subs[idx]);
-	replayCurAnim(idx);
-	saveSubPos(idx);
-	// vua mo note (1.5s) -> tam dung follow-scroll de panel kip toi note, sau do AutoFollow chay tiep
-	if (idx >= 0 && $scope.follow && !followPausedForNote()) scrollPanelTo(idx);
-}
 
-// Cham 1 dong phu de -> video nhay ve time do (+ phat tiep)
-// Bam sang dong KHAC thi tat loop cu (tranh bi giat ve)
-$scope.seekSub = function (sub, ev, autoplay) {
-	if (destroyed) return;
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} copyLock = false; } // click sub tay -> mo khoa, copy nhu thuong
-	if (!sub) return;
-	try {
-		const subs0 = $scope.lesson && $scope.lesson.subs;
-		const targetIdx = subs0 ? subs0.indexOf(sub) : -1;
-		if (subs0 && $scope.loopMode === 'line' && $scope.loopIdx >= 0 && targetIdx !== $scope.loopIdx) {
-			resetLoop();
-			saveUiState();
-		} else if (subs0 && $scope.loopMode === 'range' && $scope.loopEnd >= 0) {
-			if (targetIdx < $scope.loopStart || targetIdx > $scope.loopEnd) {
-				resetLoop();
-				saveUiState();
-			} else clearLoopTimer();
-		} else {
-			clearLoopTimer();
-		}
-	} catch (e) {}
-	const t = Math.max(0, (sub.t || 0) + 0.01);
-	// khoa tick cho toi khi seek toi noi (seek cham thi timeupdate cu khong giat ve)
-	seekTarget = t;
-	seekSince = Date.now();
-	// optimistic update ngay: highlight dung dong, ke timeupdate cu (khong scroll)
-	try {
-		const subs = $scope.lesson && $scope.lesson.subs;
-		if (subs) {
-			const ti = subs.indexOf(sub);
-			if (ti >= 0) {
-				$scope.curIdx = ti;
-				seekGraceUntil = Date.now() + 600;
-				saveSubPos(ti);
-				try { $scope.$applyAsync(); } catch (e) {}
-				copySubEn(sub);
-				replayCurAnim(ti);
-			}
-		}
-	} catch (e) {}
-	try {
-		if (ytPlayer && ytPlayer.seekTo) {
-			ytPlayer.seekTo(t, true);
-			if (autoplay !== false) { try { ytPlayer.playVideo(); } catch (e) {} }
-			return;
-		}
-	} catch (e) {}
-	// Lay element MOI (video hoac audio, khong tin bien cu) + doi metadata neu chua co
-	try {
-		videoEl = mediaEl() || videoEl;
-		if (!videoEl) return;
-		// Tu va: element mat src (ng-if render lai...) -> nap lai tu lesson
-		try {
-			const hasSrc = videoEl.getAttribute('src') || videoEl.currentSrc;
-			if (!hasSrc && $scope.lesson && $scope.lesson.src) {
-				videoEl.src = $scope.lesson.src;
-				try { videoEl.load(); } catch (e2) {}
-			}
-		} catch (e) {}
-		markProgMedia(); // seek chu dong -> seeking toi muon bao lau cung bo qua
-		loopSeekGraceUntil = Date.now() + 1500;
-		const doSeek = function () {
-			try { videoEl.currentTime = t; } catch (e) {}
-			if (autoplay !== false) {
-				// play() lan dau hay rot (mat gesture sau async) -> thu lai vai lan
-				let tries = 0;
-				const tryPlay = function () {
+				// Cham 1 dong phu de -> video nhay ve time do (+ phat tiep)
+				// Bam sang dong KHAC thi tat loop cu (tranh bi giat ve)
+				$scope.seekSub = function (sub, ev, autoplay) {
+					if (destroyed) return;
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } copyLock = false; } // click sub tay -> mo khoa, copy nhu thuong
+					if (!sub) return;
 					try {
-						const p = videoEl.play();
-						if (p && typeof p.catch === 'function') p.catch(function () {
-							if (++tries < 3) setTimeout(tryPlay, 350);
-						});
-					} catch (e) {
-						if (++tries < 3) setTimeout(function () { tryPlay(); }, 350);
+						const subs0 = $scope.lesson && $scope.lesson.subs;
+						const targetIdx = subs0 ? subs0.indexOf(sub) : -1;
+						if (subs0 && $scope.loopMode === 'line' && $scope.loopIdx >= 0 && targetIdx !== $scope.loopIdx) {
+							resetLoop();
+							saveUiState();
+						} else if (subs0 && $scope.loopMode === 'range' && $scope.loopEnd >= 0) {
+							if (targetIdx < $scope.loopStart || targetIdx > $scope.loopEnd) {
+								resetLoop();
+								saveUiState();
+							} else clearLoopTimer();
+						} else {
+							clearLoopTimer();
+						}
+					} catch (e) { }
+					const t = Math.max(0, (sub.t || 0) + 0.01);
+					// khoa tick cho toi khi seek toi noi (seek cham thi timeupdate cu khong giat ve)
+					seekTarget = t;
+					seekSince = Date.now();
+					// optimistic update ngay: highlight dung dong, ke timeupdate cu (khong scroll)
+					try {
+						const subs = $scope.lesson && $scope.lesson.subs;
+						if (subs) {
+							const ti = subs.indexOf(sub);
+							if (ti >= 0) {
+								$scope.curIdx = ti;
+								seekGraceUntil = Date.now() + 600;
+								saveSubPos(ti);
+								try { $scope.$applyAsync(); } catch (e) { }
+								copySubEn(sub);
+								replayCurAnim(ti);
+							}
+						}
+					} catch (e) { }
+					try {
+						if (ytPlayer && ytPlayer.seekTo) {
+							ytPlayer.seekTo(t, true);
+							if (autoplay !== false) { try { ytPlayer.playVideo(); } catch (e) { } }
+							return;
+						}
+					} catch (e) { }
+					// Lay element MOI (video hoac audio, khong tin bien cu) + doi metadata neu chua co
+					try {
+						videoEl = mediaEl() || videoEl;
+						if (!videoEl) return;
+						// Tu va: element mat src (ng-if render lai...) -> nap lai tu lesson
+						try {
+							const hasSrc = videoEl.getAttribute('src') || videoEl.currentSrc;
+							if (!hasSrc && $scope.lesson && $scope.lesson.src) {
+								videoEl.src = $scope.lesson.src;
+								try { videoEl.load(); } catch (e2) { }
+							}
+						} catch (e) { }
+						markProgMedia(); // seek chu dong -> seeking toi muon bao lau cung bo qua
+						loopSeekGraceUntil = Date.now() + 1500;
+						const doSeek = function () {
+							try { videoEl.currentTime = t; } catch (e) { }
+							if (autoplay !== false) {
+								// play() lan dau hay rot (mat gesture sau async) -> thu lai vai lan
+								let tries = 0;
+								const tryPlay = function () {
+									try {
+										const p = videoEl.play();
+										if (p && typeof p.catch === 'function') p.catch(function () {
+											if (++tries < 3) setTimeout(tryPlay, 350);
+										});
+									} catch (e) {
+										if (++tries < 3) setTimeout(function () { tryPlay(); }, 350);
+									}
+								};
+								tryPlay();
+							}
+						};
+						if (videoEl.readyState === 0) {
+							const onMeta = function () {
+								try { videoEl.removeEventListener('loadedmetadata', onMeta); } catch (e) { }
+								doSeek();
+							};
+							try { videoEl.addEventListener('loadedmetadata', onMeta); } catch (e) { }
+							try { videoEl.load(); } catch (e2) { }
+							setTimeout(function () {
+								try { if (videoEl && videoEl.readyState === 0) videoEl.load(); } catch (e3) { }
+							}, 1500);
+						} else {
+							doSeek();
+						}
+					} catch (e) { }
+				};
+
+				$scope.subtitleDisplayHtml = function (sub) {
+					if (!sub) return '';
+					const hl = getLessonHighlightSeqs();
+					if (sub.enSafe === undefined) sub.enSafe = escapeHtmlText(sub.en);
+					if (!$scope.touchSpeech) {
+						if (!hl.length) return sub.enSafe;
+						if (sub.enSafeHlKey !== highlightRawCache) {
+							sub.enSafeHl = highlightHtml(sub.en, hl);
+							sub.enSafeHlKey = highlightRawCache;
+						}
+						return sub.enSafeHl;
+					}
+					if (sub.enTouch === undefined || sub.enTouchHlKey !== highlightRawCache) {
+						sub.enTouch = wrapTouchWords(sub.en, hl);
+						sub.enTouchHlKey = highlightRawCache;
+					}
+					return sub.enTouch;
+				};
+				$scope.subtitleWordSpeech = function (ev, sub) {
+					if (!$scope.touchSpeech) return;
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					if (!ev) return;
+					let word = '';
+					if (ev && ev.target && typeof ev.target.closest === 'function') {
+						const phraseEl = ev.target.closest('hl_word');
+						if (phraseEl && phraseEl.getAttribute) {
+							word = phraseEl.getAttribute('data-phrase') || phraseEl.textContent || '';
+						}
+					}
+					if (!word) {
+						try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) { }
+					}
+					if (!word) return;
+					try { if (navigator.audioSession) navigator.audioSession.type = 'ambient'; } catch (e) { }
+					$scope.touchCount += 1;
+					if ($scope.touchCount >= 2) shakeTouchToggle();
+					const mediaPlaying = isWatchMediaPlaying();
+					const source = (typeof Text2SpeechSource === 'function') ? Text2SpeechSource() : 'browser';
+					const mixMedia = mediaPlaying && (source === 'edge' || source === 'el');
+					if (mixMedia) routeWatchMediaToTtsCtx();
+					if (mediaPlaying) primeWatchMediaForTts();
+					try {
+						if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word, false, true, mixMedia);
+					} catch (e) { }
+				};
+				// Nut loop tren MOI dong sub: bat -> loop dong do mai (nghi theo delay), bam lai -> tat
+				$scope.toggleLoop = function (ev, idx) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					if ($scope.loopMode === 'line' && $scope.loopIdx === idx) {
+						resetLoop();
+					} else {
+						resetLoop();
+						$scope.loopMode = 'line';
+						$scope.loopIdx = idx;
+						const sub = $scope.lesson && $scope.lesson.subs[idx];
+						if (sub) $scope.seekSub(sub, null, true);
+					}
+					saveUiState();
+				};
+				// Nut "vi": chay pipeline ClickWordToSpeech (toast dict + TTS cau tieng Anh).
+				// Ham goc o indexCtrl scope khac (khong ke thua) nhung ngClickSpeechShowToast la global.
+				$scope.showVi = function (ev, sub) {
+					if (ev) { try { ev.stopPropagation(); } catch (e) { } }
+					if (!sub || !sub.en) return;
+					try {
+						if (typeof ngClickSpeechShowToast === 'function') { ngClickSpeechShowToast(sub.en, true, false); return; }
+					} catch (e) { }
+					// fallback: toast nghia Viet
+					const done = function (vi) {
+						try { toastr.info(vi || '(chua co nghia Viet)', sub.en, { allowHtml: true }); } catch (e) { }
+					};
+					if (sub.vi) { done(sub.vi); return; }
+					try {
+						if (typeof dictFetchVi === 'function') {
+							dictFetchVi(sub.en).then(function (vi) {
+								$timeout(function () { done(vi); });
+							}, function () { $timeout(function () { done(''); }); });
+						} else done('');
+					} catch (e) { done(''); }
+				};
+
+				// Seek chu dong (code) vs user keo thanh tua native:
+				// keo tay trong luc loop -> TAT loop. Danh dau THOI DIEM thay vi dem event
+				// (load()/metadata cham van dung; event toi tre bao lau cung dung).
+				// Dem seek CHU DONG: goi markProgMedia() truoc moi currentTime/load.
+				// seeking toi (ke ca tre/muon) thi tru 1 va bo qua.
+				let expectSeeks = 0;
+				function markProgMedia() {
+					try { expectSeeks++; } catch (e) { }
+				}
+
+				$scope.fmtTime = function (s) {
+					s = Math.max(0, Math.floor(s || 0));
+					const m = Math.floor(s / 60);
+					return m + ':' + String(s % 60).padStart(2, '0');
+				};
+
+				function escapeDocHtml(s) {
+					return String(s == null ? '' : s)
+						.replace(/&/g, '&amp;')
+						.replace(/</g, '&lt;')
+						.replace(/>/g, '&gt;')
+						.replace(/"/g, '&quot;');
+				}
+
+				$scope.exportLessonDoc = function (ev) {
+					if (ev) {
+						try { ev.preventDefault(); } catch (e) { }
+						try { ev.stopPropagation(); } catch (e2) { }
+					}
+					const lesson = $scope.lesson;
+					if (!lesson) return;
+					const title = lesson.title || 'lesson';
+					const rows = (lesson.subs || []).map(function (sub) {
+						const en = escapeDocHtml(sub && sub.en);
+						const vi = escapeDocHtml(sub && sub.vi);
+						return '<p>' + en + (vi ? '<br><i>' + vi + '</i>' : '') + '</p>';
+					}).join('');
+					const prev = document.getElementById('content-to-word');
+					if (prev) prev.id = 'content-to-word-prev';
+					const temp = document.createElement('div');
+					temp.id = 'content-to-word';
+					temp.setAttribute('title', title);
+					temp.style.display = 'none';
+					temp.innerHTML = rows || '<p></p>';
+					document.body.appendChild(temp);
+					const wasVoca = $rootScope.bVocaOfEbook;
+					$rootScope.bVocaOfEbook = false;
+					try {
+						if (typeof $scope.Export2Doc === 'function') $scope.Export2Doc();
+						else {
+							try { toastr.error('Khong tim thay ham Export2Doc'); } catch (e) { }
+						}
+					} finally {
+						$rootScope.bVocaOfEbook = wasVoca;
+						if (temp.parentNode) temp.parentNode.removeChild(temp);
+						if (prev) prev.id = 'content-to-word';
 					}
 				};
-				tryPlay();
+
+				// Thanh watch-row: cuon xuong qua 80px -> dock day man hinh (opa .7 qua CSS),
+				// ve dau trang -> ve cho cu (opa 1)
+				function updateRowDock() {
+					try {
+						const row = document.querySelector('.watch-row-sticky');
+						if (!row) return;
+						const y = window.pageYOffset || document.documentElement.scrollTop || 0;
+						if (y > 80) row.classList.add('is-docked');
+						else row.classList.remove('is-docked');
+					} catch (e) { }
+				}
+				try { window.addEventListener('scroll', updateRowDock, { passive: true }); } catch (e) { }
+
+				$scope.$on('$destroy', function () {
+					destroyed = true;
+					try { if (navigator.audioSession) navigator.audioSession.type = 'auto'; } catch (e) { }
+					teardown();
+					try { window.removeEventListener('scroll', updateRowDock); } catch (e) { }
+					try {
+						if (watchBouncePanel && watchBouncePanel._watchBounce) watchBouncePanel.removeEventListener('wheel', watchBouncePanel._watchBounce);
+						if (watchBounceTimer) clearTimeout(watchBounceTimer);
+						watchBounceTimer = null;
+						watchBouncePanel = null;
+					} catch (e) { }
+					clearLoopTimer();
+					try { Text2SpeechStop(); } catch (e) { }
+				});
+
+				// template render xong (lan dau vao route) -> setup lai cho chac
+				$scope.$on('$viewContentLoaded', function () {
+					try {
+						if ($scope.lesson) $timeout(function () { setupPlayer(); }, 50);
+					} catch (e) { }
+					topFunction();
+					try { updateRowDock(); } catch (e) { }
+					try { setupWatchSubsBounce(); } catch (e) { }
+				});
+
+				// Debug: chay trong Console khi loop/seek hong -> paste ket qua
+				// Debug Console: JSON.stringify(window[cfg.dbgName || '__watchDbg']())
+				window[cfg.dbgName || '__watchDbg'] = function () {
+					try {
+						const me = mediaEl();
+						return {
+							lesson: ($scope.lesson && $scope.lesson.title) || null,
+							curIdx: $scope.curIdx, loopMode: $scope.loopMode, loopIdx: $scope.loopIdx,
+							loopA: $scope.loopA, loopB: $scope.loopB, loopStart: $scope.loopStart,
+							loopEnd: $scope.loopEnd, loopCount: $scope.loopCount,
+							hasEl: !!me,
+							elTag: me && me.tagName,
+							srcAttr: me && me.getAttribute('src'),
+							currentSrc: me && me.currentSrc && String(me.currentSrc).slice(-50),
+							readyState: me && me.readyState, paused: me && me.paused,
+							time: me && me.currentTime,
+							bound: me && me._watchBound
+						};
+					} catch (e) { return { err: String(e) }; }
+				};
+
+				// mo bai dau tien KHONG bi ignore (uu tien bai da luu truoc do)
+				if ($scope.lessons.length) $scope.openLesson($scope.lessonIdx);
+				$timeout(function () { restoreSavedLoop(); }, 900);
+
 			}
 		};
-		if (videoEl.readyState === 0) {
-			const onMeta = function () {
-				try { videoEl.removeEventListener('loadedmetadata', onMeta); } catch (e) {}
-				doSeek();
-			};
-			try { videoEl.addEventListener('loadedmetadata', onMeta); } catch (e) {}
-			try { videoEl.load(); } catch (e2) {}
-			setTimeout(function () {
-				try { if (videoEl && videoEl.readyState === 0) videoEl.load(); } catch (e3) {}
-			}, 1500);
-		} else {
-			doSeek();
-		}
-	} catch (e) {}
-};
-
-$scope.subtitleDisplayHtml = function (sub) {
-	if (!sub) return '';
-	const hl = getLessonHighlightSeqs();
-	if (sub.enSafe === undefined) sub.enSafe = escapeHtmlText(sub.en);
-	if (!$scope.touchSpeech) {
-		if (!hl.length) return sub.enSafe;
-		if (sub.enSafeHlKey !== highlightRawCache) {
-			sub.enSafeHl = highlightHtml(sub.en, hl);
-			sub.enSafeHlKey = highlightRawCache;
-		}
-		return sub.enSafeHl;
-	}
-	if (sub.enTouch === undefined || sub.enTouchHlKey !== highlightRawCache) {
-		sub.enTouch = wrapTouchWords(sub.en, hl);
-		sub.enTouchHlKey = highlightRawCache;
-	}
-	return sub.enTouch;
-};
-$scope.subtitleWordSpeech = function (ev, sub) {
-	if (!$scope.touchSpeech) return;
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	if (!ev) return;
-	let word = '';
-	if (ev && ev.target && typeof ev.target.closest === 'function') {
-		const phraseEl = ev.target.closest('hl_word');
-		if (phraseEl && phraseEl.getAttribute) {
-			word = phraseEl.getAttribute('data-phrase') || phraseEl.textContent || '';
-		}
-	}
-	if (!word) {
-		try { word = Helper_getTouchTextEvent(ev) || ''; } catch (e) {}
-	}
-	if (!word) return;
-	try { if (navigator.audioSession) navigator.audioSession.type = 'ambient'; } catch (e) {}
-	$scope.touchCount += 1;
-	if ($scope.touchCount >= 2) shakeTouchToggle();
-	const mediaPlaying = isWatchMediaPlaying();
-	const source = (typeof Text2SpeechSource === 'function') ? Text2SpeechSource() : 'browser';
-	const mixMedia = mediaPlaying && (source === 'edge' || source === 'el');
-	if (mixMedia) routeWatchMediaToTtsCtx();
-	if (mediaPlaying) primeWatchMediaForTts();
-	try {
-		if (typeof ngClickSpeechShowToast === 'function') ngClickSpeechShowToast(word, false, true, mixMedia);
-	} catch (e) {}
-};
-// Nut loop tren MOI dong sub: bat -> loop dong do mai (nghi theo delay), bam lai -> tat
-$scope.toggleLoop = function (ev, idx) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	if ($scope.loopMode === 'line' && $scope.loopIdx === idx) {
-		resetLoop();
-	} else {
-		resetLoop();
-		$scope.loopMode = 'line';
-		$scope.loopIdx = idx;
-		const sub = $scope.lesson && $scope.lesson.subs[idx];
-		if (sub) $scope.seekSub(sub, null, true);
-	}
-	saveUiState();
-};
-// Nut "vi": chay pipeline ClickWordToSpeech (toast dict + TTS cau tieng Anh).
-// Ham goc o indexCtrl scope khac (khong ke thua) nhung ngClickSpeechShowToast la global.
-$scope.showVi = function (ev, sub) {
-	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
-	if (!sub || !sub.en) return;
-	try {
-		if (typeof ngClickSpeechShowToast === 'function') { ngClickSpeechShowToast(sub.en, true, false); return; }
-	} catch (e) {}
-	// fallback: toast nghia Viet
-	const done = function (vi) {
-		try { toastr.info(vi || '(chua co nghia Viet)', sub.en, { allowHtml: true }); } catch (e) {}
-	};
-	if (sub.vi) { done(sub.vi); return; }
-	try {
-		if (typeof dictFetchVi === 'function') {
-			dictFetchVi(sub.en).then(function (vi) {
-				$timeout(function () { done(vi); });
-			}, function () { $timeout(function () { done(''); }); });
-		} else done('');
-	} catch (e) { done(''); }
-};
-
-// Seek chu dong (code) vs user keo thanh tua native:
-// keo tay trong luc loop -> TAT loop. Danh dau THOI DIEM thay vi dem event
-// (load()/metadata cham van dung; event toi tre bao lau cung dung).
-// Dem seek CHU DONG: goi markProgMedia() truoc moi currentTime/load.
-// seeking toi (ke ca tre/muon) thi tru 1 va bo qua.
-let expectSeeks = 0;
-function markProgMedia() {
-	try { expectSeeks++; } catch (e) {}
-}
-
-$scope.fmtTime = function (s) {
-	s = Math.max(0, Math.floor(s || 0));
-	const m = Math.floor(s / 60);
-	return m + ':' + String(s % 60).padStart(2, '0');
-};
-
-function escapeDocHtml(s) {
-	return String(s == null ? '' : s)
-		.replace(/&/g, '&amp;')
-		.replace(/</g, '&lt;')
-		.replace(/>/g, '&gt;')
-		.replace(/"/g, '&quot;');
-}
-
-$scope.exportLessonDoc = function (ev) {
-	if (ev) {
-		try { ev.preventDefault(); } catch (e) {}
-		try { ev.stopPropagation(); } catch (e2) {}
-	}
-	const lesson = $scope.lesson;
-	if (!lesson) return;
-	const title = lesson.title || 'lesson';
-	const rows = (lesson.subs || []).map(function (sub) {
-		const en = escapeDocHtml(sub && sub.en);
-		const vi = escapeDocHtml(sub && sub.vi);
-		return '<p>' + en + (vi ? '<br><i>' + vi + '</i>' : '') + '</p>';
-	}).join('');
-	const prev = document.getElementById('content-to-word');
-	if (prev) prev.id = 'content-to-word-prev';
-	const temp = document.createElement('div');
-	temp.id = 'content-to-word';
-	temp.setAttribute('title', title);
-	temp.style.display = 'none';
-	temp.innerHTML = rows || '<p></p>';
-	document.body.appendChild(temp);
-	const wasVoca = $rootScope.bVocaOfEbook;
-	$rootScope.bVocaOfEbook = false;
-	try {
-		if (typeof $scope.Export2Doc === 'function') $scope.Export2Doc();
-		else {
-			try { toastr.error('Khong tim thay ham Export2Doc'); } catch (e) {}
-		}
-	} finally {
-		$rootScope.bVocaOfEbook = wasVoca;
-		if (temp.parentNode) temp.parentNode.removeChild(temp);
-		if (prev) prev.id = 'content-to-word';
-	}
-};
-
-// Thanh watch-row: cuon xuong qua 80px -> dock day man hinh (opa .7 qua CSS),
-// ve dau trang -> ve cho cu (opa 1)
-function updateRowDock() {
-	try {
-		const row = document.querySelector('.watch-row-sticky');
-		if (!row) return;
-		const y = window.pageYOffset || document.documentElement.scrollTop || 0;
-		if (y > 80) row.classList.add('is-docked');
-		else row.classList.remove('is-docked');
-	} catch (e) {}
-}
-try { window.addEventListener('scroll', updateRowDock, { passive: true }); } catch (e) {}
-
-$scope.$on('$destroy', function () {
-	destroyed = true;
-	try { if (navigator.audioSession) navigator.audioSession.type = 'auto'; } catch (e) {}
-	teardown();
-	try { window.removeEventListener('scroll', updateRowDock); } catch (e) {}
-	try {
-		if (watchBouncePanel && watchBouncePanel._watchBounce) watchBouncePanel.removeEventListener('wheel', watchBouncePanel._watchBounce);
-		if (watchBounceTimer) clearTimeout(watchBounceTimer);
-		watchBounceTimer = null;
-		watchBouncePanel = null;
-	} catch (e) {}
-	clearLoopTimer();
-	try { Text2SpeechStop(); } catch (e) {}
-});
-
-// template render xong (lan dau vao route) -> setup lai cho chac
-$scope.$on('$viewContentLoaded', function () {
-	try {
-		if ($scope.lesson) $timeout(function () { setupPlayer(); }, 50);
-	} catch (e) {}
-	topFunction();
-	try { updateRowDock(); } catch (e) {}
-	try { setupWatchSubsBounce(); } catch (e) {}
-});
-
-// Debug: chay trong Console khi loop/seek hong -> paste ket qua
-// Debug Console: JSON.stringify(window[cfg.dbgName || '__watchDbg']())
-window[cfg.dbgName || '__watchDbg'] = function () {
-	try {
-		const me = mediaEl();
-		return {
-			lesson: ($scope.lesson && $scope.lesson.title) || null,
-			curIdx: $scope.curIdx, loopMode: $scope.loopMode, loopIdx: $scope.loopIdx,
-			loopA: $scope.loopA, loopB: $scope.loopB, loopStart: $scope.loopStart,
-			loopEnd: $scope.loopEnd, loopCount: $scope.loopCount,
-			hasEl: !!me,
-			elTag: me && me.tagName,
-			srcAttr: me && me.getAttribute('src'),
-			currentSrc: me && me.currentSrc && String(me.currentSrc).slice(-50),
-			readyState: me && me.readyState, paused: me && me.paused,
-			time: me && me.currentTime,
-			bound: me && me._watchBound
-		};
-	} catch (e) { return { err: String(e) }; }
-};
-
-// mo bai dau tien KHONG bi ignore (uu tien bai da luu truoc do)
-if ($scope.lessons.length) $scope.openLesson($scope.lessonIdx);
-$timeout(function () { restoreSavedLoop(); }, 900);
-
-		}
-	};
-}]);
+	}]);

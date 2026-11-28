@@ -623,8 +623,9 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				}
 			} catch (e) { }
 			let category = null;
-			if (CategoryName) category = { name: CategoryName, color: CategoryColor || '' };
-			else if (typeof getHighlightCategory === 'function') category = getHighlightCategory(touchedWord);
+			if (CategoryName) category = [{ name: CategoryName, color: CategoryColor || '' }];
+			else if (typeof getHighlightCategories === 'function') category = getHighlightCategories(touchedWord);
+			else if (typeof getHighlightCategory === 'function') category = getHighlightCategory(touchedWord) ? [getHighlightCategory(touchedWord)] : [];
 			const result = getVocaFromDB(touchedWord)
 			const usBadge = (typeof getWordUsBadge === 'function') ? getWordUsBadge(touchedWord) : ''
 			// luon goi GOOGLE TRANS API + ghep voi dict trong data (neu co)
@@ -696,9 +697,13 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			if (isLongText || Helper_IsWordSavedBefore(touchedWord)) {
 				btnSave = ''
 			} else saveFromToastVal = content;
-			if (category && category.name) {
-				const categoryColor = category.color || '#ee02e2';
-				content = '<span class="hl-category-badge" style="color:' + escapeToastText(categoryColor) + ';font-weight:600">[' + escapeToastText(category.name) + ']</span><br>' + content;
+			const cats = Array.isArray(category) ? category : (category ? [category] : []);
+			if (cats.length) {
+				const badges = cats.map(cat => {
+					const catColor = cat.color || '#ee02e2';
+					return '<span class="hl-category-badge" style="color:' + escapeToastText(catColor) + ';font-weight:600">[' + escapeToastText(cat.name) + ']</span>';
+				}).join('');
+				content = badges + '<br>' + content;
 			}
 
 			// Chế độ click one-word: nhúng sẵn placeholder ảnh, fetch xong điền đúng toast này

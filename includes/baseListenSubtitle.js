@@ -349,7 +349,7 @@ app.factory('baseListenSubtitle', ['$timeout', '$interval', '$sce', 'toastr',
 						} else {
 							const phraseTokens = tokens.slice(i, j + 1).map(tok => tok.lower);
 							const matchedSeq = seqs
-								? seqs.find(seq => seq.length === phraseTokens.length && seq.every((v, idx) => v === phraseTokens[idx]))
+								? seqs.find(seq => seq.length === phraseTokens.length && seq.every((v, idx) => highlightTokenMatches(v, phraseTokens[idx], true)))
 								: null;
 							if (matchedSeq) {
 								phrase = s.slice(tokens[i].start, tokens[j].end);

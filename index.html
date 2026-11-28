@@ -258,20 +258,15 @@
 
       <section class="lesson-results" ng-if="lessonSearchResult.length">
         <div class="lesson-results-heading">
-          <span><i class="fa fa-headphones" aria-hidden="true"></i> Matching lessons</span>
+          <span><i class="fa fa-headphones" aria-hidden="true"></i> Matching (Click to open)</span>
           <small>{{lessonSearchTotal}} result{{lessonSearchTotal === 1 ? '' : 's'}}</small>
         </div>
-        <div class="lesson-row" ng-repeat="ls in lessonSearchResult track by $index">
+        <div class="lesson-row" ng-repeat="ls in lessonSearchResult track by $index" ng-click="openLessonSearch(ls)">
           <div class="lesson-meta">
             <span class="lesson-module">{{ls.moduleLabel}}</span>
             <span class="lesson-title">{{ls.title}}</span>
             <span class="lesson-snippet" ng-if="ls.snippet">{{ls.snippet}}</span>
-          </div>
-          <button type="button" class="btn btn-sm lesson-open"
-            ng-click="openLessonSearch(ls)"
-            aria-label="Open {{ls.title}}">
-            Open <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </button>
+          </div>                                                                            
         </div>
       </section>
 

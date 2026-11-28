@@ -611,7 +611,19 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS, MixMedia, CategoryName, CategoryColor) {
-			navigator.clipboard.writeText(touchedWord);
+			// Start TTS first: clipboard/dictionary/Google failures must not kill speech.
+			if (PlayTTS !== false) {
+				try {
+					if (MixMedia && typeof Text2SpeechMixMedia === 'function') Text2SpeechMixMedia(touchedWord);
+					else Text2Speech(touchedWord);
+				} catch (e) {}
+			}
+			try {
+				if (navigator.clipboard && navigator.clipboard.writeText) {
+					const p = navigator.clipboard.writeText(touchedWord);
+					if (p && typeof p.catch === 'function') p.catch(function () {});
+				}
+			} catch (e) {}
 			let category = null;
 			if (CategoryName) category = { name: CategoryName, color: CategoryColor || '' };
 			else if (typeof getHighlightCategory === 'function') category = getHighlightCategory(touchedWord);
@@ -636,11 +648,6 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 					doShowToast(' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> <span class="text-danger">error: ' + ggErr + '</span>', true, "", category);
 				}
 			});
-			// PlayTTS default true; false -> chi show VI, khong phat TTS
-			if (PlayTTS !== false) {
-				if (MixMedia && typeof Text2SpeechMixMedia === 'function') Text2SpeechMixMedia(touchedWord);
-				else Text2Speech(touchedWord);
-			}
 		}
 
 		ngClickSpeechShowToastUseNode = function(pNode) {

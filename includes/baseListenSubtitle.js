@@ -9,6 +9,7 @@ function($timeout, $interval, $sce, toastr) {
 			cfg = cfg || {};
 			const POS_KEY = cfg.posKey || 'lstLesson';
 			const STAR_KEY = cfg.starKey || 'lstStar';
+			const UI_STATE_KEY = cfg.stateKey || (POS_KEY + '_uiState');
 			// header rieng tung trang (template html dung chung)
 			try {
 				const h = cfg.header || {};
@@ -111,10 +112,66 @@ $scope.touchSpeech = false;
 $scope.touchCount = 0;
 $scope.showScript = false;
 $scope.lessonNotes = '';
+let savedLoopState = null;
+function readUiState() {
+	try {
+		const raw = localStorage.getItem(UI_STATE_KEY);
+		if (!raw) return null;
+		const data = JSON.parse(raw);
+		return (data && typeof data === 'object') ? data : null;
+	} catch (e) { return null; }
+}
+function saveUiState() {
+	try {
+		const data = {
+			follow: !!$scope.follow,
+			touchSpeech: !!$scope.touchSpeech,
+			loop: null
+		};
+		if ($scope.loopMode === 'range' && $scope.loopA >= 0 && $scope.loopB >= 0 && $scope.lesson) {
+			data.loop = {
+				lessonId: String($scope.lesson.id),
+				a: $scope.loopA,
+				b: $scope.loopB,
+				start: $scope.loopStart,
+				end: $scope.loopEnd
+			};
+		}
+		localStorage.setItem(UI_STATE_KEY, JSON.stringify(data));
+	} catch (e) {}
+}
+function restoreUiState() {
+	const data = readUiState();
+	if (!data) return;
+	if (typeof data.follow === 'boolean') $scope.follow = data.follow;
+	if (typeof data.touchSpeech === 'boolean') $scope.touchSpeech = data.touchSpeech;
+	savedLoopState = data.loop || null;
+	setWatchAudioSessionType();
+}
+function restoreSavedLoop() {
+	if (destroyed) return;
+	const lp = savedLoopState;
+	if (!lp || !$scope.lesson) return;
+	if (String(lp.lessonId) !== String($scope.lesson.id)) return;
+	const subs = $scope.lesson.subs || [];
+	const a = parseInt(lp.a, 10);
+	const b = parseInt(lp.b, 10);
+	if (isNaN(a) || isNaN(b) || a < 0 || b < 0 || !subs[a] || !subs[b]) return;
+	if ($scope.loopMode !== 'off') return;
+	$scope.loopMode = 'range';
+	$scope.loopA = a;
+	$scope.loopB = b;
+	$scope.loopStart = Math.min(a, b);
+	$scope.loopEnd = Math.max(a, b);
+	$scope.loopCount = 0;
+	try { $scope.$applyAsync(); } catch (e) {}
+}
+restoreUiState();
 $scope.toggleFollow = function () {
 	// phai qua ham (ghi thang scope cha): nut nam trong ng-if (scope con),
 	// gán trực tiếp sẽ tạo biến shadow, nút bấm mà tick không thấy
 	$scope.follow = !$scope.follow;
+	saveUiState();
 };
 $scope.toggleScript = function () {
 	$scope.showScript = !$scope.showScript;
@@ -158,6 +215,7 @@ $scope.toggleTouchSpeech = function () {
 		stopTouchShake();
 	}
 	setWatchAudioSessionType();
+	saveUiState();
 };
 function escapeHtmlText(s) {
 	return String(s == null ? '' : s)
@@ -548,15 +606,17 @@ $scope.toggleRangeLoop = function (ev) {
 	if (idx < 0) return;
 	if ($scope.loopMode === 'range') {
 		if ($scope.loopB < 0) {
-			if (idx === $scope.loopA) { resetLoop(); return; }
+			if (idx === $scope.loopA) { resetLoop(); saveUiState(); return; }
 			$scope.loopB = idx;
 			$scope.loopStart = Math.min($scope.loopA, $scope.loopB);
 			$scope.loopEnd = Math.max($scope.loopA, $scope.loopB);
 			$scope.loopCount = 0;
 			const subs = $scope.lesson && $scope.lesson.subs;
 			if (subs && subs[$scope.loopStart]) $scope.seekSub(subs[$scope.loopStart], null, true);
+			saveUiState();
 		} else {
 			resetLoop();
+			saveUiState();
 		}
 		return;
 	}
@@ -564,6 +624,7 @@ $scope.toggleRangeLoop = function (ev) {
 	$scope.loopMode = 'range';
 	$scope.loopA = idx;
 	$scope.loopB = -1;
+	saveUiState();
 };
 
 $scope.trustSrc = function (src) {
@@ -955,6 +1016,7 @@ function scrollPanelTo(idx) {
 $scope.scrollSubsTop = function (ev) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	$scope.follow = false;
+	saveUiState();
 	manualScrollGraceUntil = Date.now() + 1800;
 	try {
 		const panels = document.querySelectorAll('.watch-subs');
@@ -966,6 +1028,7 @@ $scope.scrollSubsTop = function (ev) {
 $scope.scrollSubsBottom = function (ev) {
 	if (ev) { try { ev.stopPropagation(); } catch (e) {} }
 	$scope.follow = false;
+	saveUiState();
 	manualScrollGraceUntil = Date.now() + 1800;
 	try {
 		const subs = ($scope.lesson && $scope.lesson.subs) || [];
@@ -1181,9 +1244,12 @@ $scope.seekSub = function (sub, ev, autoplay) {
 		const targetIdx = subs0 ? subs0.indexOf(sub) : -1;
 		if (subs0 && $scope.loopMode === 'line' && $scope.loopIdx >= 0 && targetIdx !== $scope.loopIdx) {
 			resetLoop();
+			saveUiState();
 		} else if (subs0 && $scope.loopMode === 'range' && $scope.loopEnd >= 0) {
-			if (targetIdx < $scope.loopStart || targetIdx > $scope.loopEnd) resetLoop();
-			else clearLoopTimer();
+			if (targetIdx < $scope.loopStart || targetIdx > $scope.loopEnd) {
+				resetLoop();
+				saveUiState();
+			} else clearLoopTimer();
 		} else {
 			clearLoopTimer();
 		}
@@ -1319,6 +1385,7 @@ $scope.toggleLoop = function (ev, idx) {
 		const sub = $scope.lesson && $scope.lesson.subs[idx];
 		if (sub) $scope.seekSub(sub, null, true);
 	}
+	saveUiState();
 };
 // Nut "vi": chay pipeline ClickWordToSpeech (toast dict + TTS cau tieng Anh).
 // Ham goc o indexCtrl scope khac (khong ke thua) nhung ngClickSpeechShowToast la global.
@@ -1462,6 +1529,7 @@ window[cfg.dbgName || '__watchDbg'] = function () {
 
 // mo bai dau tien KHONG bi ignore (uu tien bai da luu truoc do)
 if ($scope.lessons.length) $scope.openLesson($scope.lessonIdx);
+$timeout(function () { restoreSavedLoop(); }, 900);
 
 		}
 	};

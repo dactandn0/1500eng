@@ -2,7 +2,6 @@
 // Dung o: trang Word Collection (duyet/hoc theo topic) + Quiz vocabulary (nguon boc cau hoi).
 // Gan len $rootScope.VocaToUI de cac controller con dung chung.
 var VocaToUI = VOCABULARY_DATA
-	.concat(VOCA_SPECIAL)
 	.concat(NAIL_WORDS_DATA)
 
 // VocaForSearch: VocaToUI + cum can tra cuu (phrasal verb, BAT_QUI_TAC).
@@ -10,8 +9,7 @@ var VocaToUI = VOCABULARY_DATA
 var VocaForSearch = VocaToUI
 	.concat(PHRASAL_VERB)
 	.concat(BAT_QUI_TAC)
-	
-// .concat(IELTS_SYN)
+	.concat(SYNONYMS)
 // .concat(NATIONS)
 
 // kAllStories: pool truyen/bai doc (Englab W/R, Collins, BOOK4K_1).
@@ -19,8 +17,8 @@ var VocaForSearch = VocaToUI
 var kAllStories = ENGLAB_BEGIN_DATA_W
 	.concat(ENGLAB_BEGIN_DATA_R)
 	.concat(collins_cd12)
- 	.concat(BOOK4K_1)
- 	.concat(TIKTOK_EBOOK1_DATA)
+	.concat(BOOK4K_1)
+	.concat(TIKTOK_EBOOK1_DATA)
 // .concat(bridge_cd1)
 //  .concat(bridge_read_data)
 //  .concat(complete_cd1)
@@ -128,7 +126,7 @@ var app = angular.module("myApp", [
 	'modalApp', 'audioApp', 'audioLoopRadioApp',
 	'ngSanitize', 'ngRoute', 'toastr'
 ]);
-app.config(function($routeProvider) {
+app.config(function ($routeProvider) {
 	$routeProvider
 		//	.when('/', { templateUrl: 'wordCollect/wordCollect.html', controller: 'wordCollectCtrl' }) 
 		.when('/configUI', {
@@ -255,13 +253,13 @@ app.config(function($routeProvider) {
 }); // route
 
 app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$rootScope', '$http', '$route',
-	function($scope, appAlert, $location, toastr, $rootScope, $http, $route) {
+	function ($scope, appAlert, $location, toastr, $rootScope, $http, $route) {
 
 		// Nut noi showVi.html (Voca / Show Vi / Sentence / Download) CHI HIEN o cac route nay.
 		// Muon them trang: them path vao mang (VD: '/lptd').
 		const FLOAT_BTNS_ROUTES = ['/completeL', '/tiktok', '/book4k'];
 
-		$rootScope.$on('$routeChangeStart', function() {
+		$rootScope.$on('$routeChangeStart', function () {
 			$rootScope.bVocaOfEbook = false;
 			$rootScope.vocaEbook = [];
 			// doi route -> tat nut Show Vi con sot tu ebook (storyHasVi chi set khi mo unit)
@@ -286,7 +284,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		$scope.bTransSentenOnClick = 0;
 
 		// clear Search data when routed
-		$scope.$on('$routeChangeSuccess', function($event, next, current) {
+		$scope.$on('$routeChangeSuccess', function ($event, next, current) {
 			$scope.clearSearch();
 			// Nut noi + legend ngu phap: mac dinh AN, chi hien o FLOAT_BTNS_ROUTES
 			try {
@@ -295,10 +293,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				$rootScope.hideFloatBtns = !$rootScope.showFloatBtns;
 				const lg = document.getElementById('grammarLegend');
 				if (lg) lg.style.display = $rootScope.hideFloatBtns ? 'none' : '';
-			} catch (e) {}
+			} catch (e) { }
 		});
 
-		$scope.clearSearch = function() {
+		$scope.clearSearch = function () {
 			$scope.search = '';
 			$scope.searchDataResult = [];
 			$scope.sentenceSearches = [];
@@ -307,11 +305,11 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			// document.getElementById("searchTyping").focus();
 		};
 
-		$scope.saveNoted = function(word, isFromToastr) {
+		$scope.saveNoted = function (word, isFromToastr) {
 			word = removeHtmlTags(word)
 			if (word.length >= 2) {
 				Helper_NoteAddWordToDB(word);
-				try { if (typeof SupaSync_save === 'function') SupaSync_save(word, ''); } catch (e) {}
+				try { if (typeof SupaSync_save === 'function') SupaSync_save(word, ''); } catch (e) { }
 				if ($location.path().indexOf('vocaNoted') >= 0) {
 					VocaNotedCtrl.loadArray();
 				}
@@ -326,16 +324,16 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		$scope.IsWordSavedBefore = function(word) {
+		$scope.IsWordSavedBefore = function (word) {
 			return Helper_IsWordSavedBefore(word);
 		}
 
 		// Nut Voca (showVi.html): bat/tat panel + scroll dung unit/story dang mo
-		$scope.toggleVocaOfEbook = function() {
+		$scope.toggleVocaOfEbook = function () {
 			$rootScope.bVocaOfEbook = !$rootScope.bVocaOfEbook;
 			if (!$rootScope.bVocaOfEbook) return;
 			// doi ng-show render xong roi moi scroll
-			setTimeout(function() {
+			setTimeout(function () {
 				try {
 					const groups = $rootScope.vocaEbook || [];
 					const cur = $rootScope.currentStory;
@@ -351,7 +349,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 					// story dang mo khong co group rieng (lesson khong co voca) -> ve dau panel
 					const target = (idx >= 0 && heads[idx]) ? heads[idx] : container;
 					target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-				} catch (e) {}
+				} catch (e) { }
 			}, 120);
 		}
 
@@ -417,9 +415,9 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		$scope.openLessonSearch = function (ls) {
 			if (!ls) return;
 			const subIdx = (typeof ls.subIdx === 'number' && ls.subIdx >= 0) ? ls.subIdx : 0;
-			try { localStorage.setItem(ls.posKey, String(ls.id) + '|' + subIdx); } catch (e) {}
+			try { localStorage.setItem(ls.posKey, String(ls.id) + '|' + subIdx); } catch (e) { }
 			$scope.clearSearch();
-			$scope.$evalAsync(function() {
+			$scope.$evalAsync(function () {
 				try {
 					if ($location.path() === ls.route) {
 						$route.reload();
@@ -427,12 +425,12 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 						$location.path(ls.route);
 					}
 				} catch (e) {
-					try { $location.path(ls.route); } catch (e2) {}
+					try { $location.path(ls.route); } catch (e2) { }
 				}
 			});
 		};
 
-		$scope.searchTyping = function() {
+		$scope.searchTyping = function () {
 			$scope.sentenceSearches = [];
 			const raw = ($scope.search || '').trim();
 			const search = raw ? removeVietnameseTones(raw.toLowerCase()) : '';
@@ -452,7 +450,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			} // for
 		}
 
-		$scope.findSameWord = function() {
+		$scope.findSameWord = function () {
 			for (let i = 0; i < searchData.length - 1; i++) {
 				const word1 = Helper_GetVocaFromWordFull(searchData[i]);
 				if (word1.length == 0) continue;
@@ -466,18 +464,18 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		window.saveFromToastr = function() {
+		window.saveFromToastr = function () {
 			if (saveFromToastVal.trim().length > 0)
 				$scope.saveNoted(saveFromToastVal, true)
 		}
 
 		// search
-		$scope.Index_Speak = function(event, word) {
+		$scope.Index_Speak = function (event, word) {
 			word = Helper_GetVocaFromWordFull(word)
 			ngClickSpeechShowToast(word)
 		}
 
-		$scope.Index_NoteVoca_Speak = function(word) {
+		$scope.Index_NoteVoca_Speak = function (word) {
 			word = word.replace(/\/.*\//gi, '').replace(/\:.+\:/gi, '.')
 			const parts = word.split(' ')
 			let concatWord = ''
@@ -492,7 +490,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 		// vocaEbook Touch
-		$scope.vocaEbookSpeech = function(event, voca, lesson, idx, idxParent) {
+		$scope.vocaEbookSpeech = function (event, voca, lesson, idx, idxParent) {
 			event.stopPropagation()
 			const sentences = doFetchSentences(voca, [lesson])
 			if (sentences) {
@@ -504,12 +502,12 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 
-		$scope.toggleTransSenten = function() {
+		$scope.toggleTransSenten = function () {
 			$scope.bTransSentenOnClick = !$scope.bTransSentenOnClick
 		}
 
 		// ng-click word to speech
-		$scope.ClickWordToSpeech = function(event, forceWord) {
+		$scope.ClickWordToSpeech = function (event, forceWord) {
 			console.log("ClickWordToSpeech: " + event.target.innerText)
 			event.stopPropagation()
 			if ($scope.bTransSentenOnClick && !$rootScope.bShowVi && !forceWord) // dont active in showVi-mode
@@ -534,7 +532,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				'</span><span class="toast-hint-value">' + (allowHtml ? text : escapeToastText(text)) + '</span></div>'
 		}
 
-		getVocaFromDB = function(touchedWord) {
+		getVocaFromDB = function (touchedWord) {
 			// chuan hoa de tra dict: trim + lowercase + bo dau cau dinh kem
 			// (vd dau cau "Almond" hay cuoi cau "almond." van match "almond")
 			const lookup = String(touchedWord == null ? '' : touchedWord).trim().toLowerCase()
@@ -544,9 +542,9 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			const wordSameSounds = (typeof getWordSameSound === 'function') ? getWordSameSound(lookup) : ''
 			const hintHtml = (wordFamily || wordSynonyms || wordSameSounds)
 				? '<div class="toast-hints">' +
-					wordHintRow('Family', wordFamily) +
-					wordHintRow('Synonyms', wordSynonyms, true) +
-					wordHintRow('Same sound', wordSameSounds) +
+				wordHintRow('Family', wordFamily) +
+				wordHintRow('Synonyms', wordSynonyms, true) +
+				wordHintRow('Same sound', wordSameSounds) +
 				'</div>'
 				: ''
 
@@ -610,20 +608,20 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}
 		}
 
-		ngClickSpeechShowToast = function(touchedWord, IgnoreShowTouched, PlayTTS, MixMedia, CategoryName, CategoryColor) {
+		ngClickSpeechShowToast = function (touchedWord, IgnoreShowTouched, PlayTTS, MixMedia, CategoryName, CategoryColor) {
 			// Start TTS first: clipboard/dictionary/Google failures must not kill speech.
 			if (PlayTTS !== false) {
 				try {
 					if (MixMedia && typeof Text2SpeechMixMedia === 'function') Text2SpeechMixMedia(touchedWord);
 					else Text2Speech(touchedWord);
-				} catch (e) {}
+				} catch (e) { }
 			}
 			try {
 				if (navigator.clipboard && navigator.clipboard.writeText) {
 					const p = navigator.clipboard.writeText(touchedWord);
-					if (p && typeof p.catch === 'function') p.catch(function () {});
+					if (p && typeof p.catch === 'function') p.catch(function () { });
 				}
-			} catch (e) {}
+			} catch (e) { }
 			let category = null;
 			if (CategoryName) category = { name: CategoryName, color: CategoryColor || '' };
 			else if (typeof getHighlightCategory === 'function') category = getHighlightCategory(touchedWord);
@@ -634,10 +632,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				let vietnamese = '';
 				// Google tra nhieu segment (moi cau 1 segment) -> ghep het, khong lay cau dau
 				try { vietnamese = (res.data[0] || []).map(function (seg) { return seg[0] || ''; }).join(''); } catch (e) { vietnamese = ''; }
-				doShowToast((IgnoreShowTouched ? '' : touchedWord + usBadge) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' +result.full, IgnoreShowTouched, touchedWord, category);
+				doShowToast((IgnoreShowTouched ? '' : touchedWord + usBadge) + ' <span class="gg-badge" title="Translated by Google"><i class="fa fa-google" aria-hidden="true"></i></span> ' + vietnamese + '<br>' + result.full, IgnoreShowTouched, touchedWord, category);
 				//GOOGLE_ERROR_SHOWN = false; // reset
 			}, err => {
-				try { console.error('Google translate error', err); } catch (e) {}
+				try { console.error('Google translate error', err); } catch (e) { }
 				const ggErr = googleErrText(err);
 				// Google loi: van show dict neu co; chua co dict thi bao loi 1 lan
 				if (result.found) {
@@ -650,7 +648,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			});
 		}
 
-		ngClickSpeechShowToastUseNode = function(pNode) {
+		ngClickSpeechShowToastUseNode = function (pNode) {
 			let touched = pNode.innerText;
 			touched = touched.replace(/^\w*(B|G|W|M)*\d*\s*\:+\s*/gi, '').replace(/;/gi, ',').replace(/&/gi, 'and') // remove W: M:
 
@@ -658,8 +656,8 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 			pNode.style.textDecoration = 'underline'
 			setTimeout(() => {
-					pNode.style.textDecoration = ''
-				}, Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000 // s
+				pNode.style.textDecoration = ''
+			}, Helper_loadFloat(Helper_ToastTimeOutKey, HELPER_TOASTER_TIMEOUT_DEF) * 1000 // s
 			);
 		}
 
@@ -667,7 +665,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		function toastWordCount(s) {
 			let t = String(s == null ? '' : s);
-			try { t = Helper_RemoveHTMLtag(t); } catch (e) {}
+			try { t = Helper_RemoveHTMLtag(t); } catch (e) { }
 			t = t.replace(/&/g, ' ').replace(/\s+/g, ' ').trim();
 			if (!t) return 0;
 			return t.split(' ').length;
@@ -725,10 +723,10 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			try {
 				if (t && t.el && t.el[0]) {
 					t.el[0].addEventListener('click', function () {
-						try { toastr.remove(t.toastId); } catch (e2) {}
+						try { toastr.remove(t.toastId); } catch (e2) { }
 					});
 				}
-			} catch (e) {}
+			} catch (e) { }
 			// Click NGOAI toast (2 ben trai phai...) dong tat ca toast dang mo
 			if (!window.__toastOutsideClickBound) {
 				document.addEventListener('click', function (e) {
@@ -736,7 +734,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 						if (e.target && e.target.closest && e.target.closest('.toast')) return; // click trong toast -> bo qua
 						const toasts = document.querySelectorAll('.toast');
 						if (toasts.length) toastr.clear();
-					} catch (ex) {}
+					} catch (ex) { }
 				});
 				window.__toastOutsideClickBound = true;
 			}
@@ -756,7 +754,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			setTimeout(function () {
 				try {
 					let eng = '';
-					try { eng = window.__lastTtsEngine || ''; } catch (e) {}
+					try { eng = window.__lastTtsEngine || ''; } catch (e) { }
 					if (!eng) return;
 					const nice = eng.indexOf('el') === 0 ? 'Eleven'
 						: (eng.indexOf('edge') === 0 ? 'Edge' : 'Browser');
@@ -770,7 +768,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 						div.textContent = 'TTS: ' + nice;
 						last.appendChild(div);
 					}
-				} catch (e) {}
+				} catch (e) { }
 			}, 1500);
 
 			if (wikiImgId) {
@@ -797,7 +795,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			}).catch(function () { return null; });
 		}
 
-		$scope.showExampleModal = function(wordFull, event) {
+		$scope.showExampleModal = function (wordFull, event) {
 			const sentences = $scope.fetchSentences(wordFull);
 			if (!sentences) {
 				event.target.style.color = 'red';
@@ -815,12 +813,12 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 
 		};
 
-		$scope.showConfirmModal = function(wordFull, date) {
+		$scope.showConfirmModal = function (wordFull, date) {
 			appAlert.confirm({
 				title: 'Confirm delete!',
 				message: 'Do you want to delete this record ?',
 				dataSent: wordFull,
-			}, function(isOk) {
+			}, function (isOk) {
 				if (isOk) {
 					if (wordFull.indexOf("all") >= 0)
 						VocaNotedCtrl.removeAllNoted();
@@ -830,7 +828,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			});
 		};
 
-		doFetchSentences = function(word, StoriesData) {
+		doFetchSentences = function (word, StoriesData) {
 			if (word === '') return 0;
 
 			const word_s_es = Helper_N_V_Add_S_ES(word);
@@ -860,28 +858,28 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 		}
 
 		// wordFull like:  Sea n /siː/ Biển
-		$scope.fetchSentences = function(wordFull) {
+		$scope.fetchSentences = function (wordFull) {
 			const word = Helper_GetVocaFromWordFull(wordFull);
 			return doFetchSentences(word, kAllStories)
 		}
 
-		$scope.fetchSentenceSearch = function() {
+		$scope.fetchSentenceSearch = function () {
 			$scope.sentenceSearches = $scope.fetchSentences($scope.search);
 		}
 
-		$scope.loadData = function() {
+		$scope.loadData = function () {
 			if (HELPER_FOR_TEST) $scope.findSameWord();
 		};
 
 
 
-		$scope.$on('$viewContentLoaded', function() {
+		$scope.$on('$viewContentLoaded', function () {
 			$scope.loadData();
 
 		}) // viewContentLoaded
 
 
-		$scope.Export2Doc = function() {
+		$scope.Export2Doc = function () {
 			const preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
 			const postHtml = "</body></html>";
 
@@ -904,7 +902,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 			if (!filename) filename = 'lesson';
 			filename += '.doc';
 
-			const downloadBlob = function() {
+			const downloadBlob = function () {
 				if (navigator.msSaveOrOpenBlob) {
 					navigator.msSaveOrOpenBlob(blob, filename);
 					return;
@@ -916,7 +914,7 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				downloadLink.style.display = 'none';
 				document.body.appendChild(downloadLink);
 				downloadLink.click();
-				setTimeout(function() {
+				setTimeout(function () {
 					if (downloadLink.parentNode) downloadLink.parentNode.removeChild(downloadLink);
 					URL.revokeObjectURL(url);
 				}, 10000);
@@ -928,13 +926,13 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 				try {
 					const file = new File([blob], filename, { type: 'application/msword' });
 					if (navigator.canShare({ files: [file] })) {
-						navigator.share({ files: [file], title: title }).catch(function(err) {
+						navigator.share({ files: [file], title: title }).catch(function (err) {
 							if (err && err.name === 'AbortError') return;
 							downloadBlob();
 						});
 						return;
 					}
-				} catch (e) {}
+				} catch (e) { }
 			}
 			downloadBlob();
 		}
@@ -942,13 +940,13 @@ app.controller("indexCtrl", ['$scope', 'appAlert', '$location', 'toastr', '$root
 	}
 ]); //end of ctrl
 
-app.directive('compile', ['$compile', function($compile) {
-	return function(scope, element, attrs) {
+app.directive('compile', ['$compile', function ($compile) {
+	return function (scope, element, attrs) {
 		scope.$watch(
-			function(scope) {
+			function (scope) {
 				return scope.$eval(attrs.compile);
 			},
-			function(value) {
+			function (value) {
 				element.html(value);
 				$compile(element.contents())(scope);
 			}
@@ -958,7 +956,7 @@ app.directive('compile', ['$compile', function($compile) {
 
 
 // ht tps://github.com/Foxandxss/angular-toastr
-app.config(function(toastrConfig) {
+app.config(function (toastrConfig) {
 	angular.extend(toastrConfig, {
 		autoDismiss: true,
 		containerId: 'toast-container',

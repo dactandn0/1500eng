@@ -1,4 +1,4 @@
-var IELTS_SYN = [{ title: "Ielts Synonyms", en: "" }];
+var SYNONYMS = [{ title: "Ielts Synonyms", en: "" }];
 
 let SynonymData = [
 	{

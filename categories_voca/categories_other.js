@@ -1,5 +1,5 @@
 
-let lst_highlight = `
+let kApp_Categories = `
 Egyptians
 fermentation
 carbon dioxide
@@ -144,13 +144,14 @@ once
 later on
 `;
 
-const kOther = filterUniqueHighlights(lst_highlight).map(function (name) {
+const kOther = filterUniqueHighlights(kApp_Categories).map(function (name) {
 	return { name: name, category_name: 'Other', color: '#ee02e2', noun: false };
 });
 
-lst_highlight = (typeof kVegetable !== 'undefined' ? kVegetable : [])
+kApp_Categories = (typeof kVegetable !== 'undefined' ? kVegetable : [])
 	.concat(typeof kPersonality !== 'undefined' ? kPersonality : [])
 	.concat(typeof kClothAccessory !== 'undefined' ? kClothAccessory : [])
+	.concat(typeof kExpressions !== 'undefined' ? kExpressions : [])
 	.concat(kOther);
 
 function filterUniqueHighlights(raw) {
@@ -302,9 +303,9 @@ function highlightTokenMatches(entryToken, textToken, allowPlural) {
 }
 
 function getHighlightEntries() {
-	const raw = Array.isArray(lst_highlight)
-		? lst_highlight
-		: String(lst_highlight == null ? '' : lst_highlight).split(/[\n,]+/);
+	const raw = Array.isArray(kApp_Categories)
+		? kApp_Categories
+		: String(kApp_Categories == null ? '' : kApp_Categories).split(/[\n,]+/);
 	const seen = Object.create(null);
 	const entries = [];
 	raw.forEach(function (item) {
